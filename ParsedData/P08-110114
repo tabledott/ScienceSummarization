@@ -1,0 +1,8 @@
+nored, we can still see that the chance for the overall best candidate to fall out of the beam is largely increased.
+    Since the search space growth is exponential, increasing the fixed beam size is not effective in solving the problem.
+    To solve the above problems, we developed a multiple beam search algorithm, which compares candidates only with complete tagged words, and enables the size of the search space to scale with the input size.
+    The algorithm is shown in Figure 2.
+    In this decoder, an agenda is assigned to each character in the input sentence, recording the B best segmented and tagged partial candidates ending with the character.
+    The input sentence is still processed incrementally.
+    However, now when a character is processed, existing partial candidates ending with any previous characters are available.
+    Therefore, the decoder enumerates all possible tagged words ending with the current character, and combines each word with the partial candidates ending with its previous char

@@ -1,0 +1,11 @@
+e of the sub-tree, our method is not limited by the constraints (identical layer and ancestors for the matchable nodes, as discussed in Section 2) in Culotta and Sorensen (2004).
+    Moreover, the difference between our method and Bunescu and Mooney (2005) is that their kernel is defined on the shortest path between two entities instead of the entire subtrees.
+    However, the path does not maintain the tree structure information.
+    In addition, their kernel requires the two paths to have the same length.
+    Such constraint is too strict.
+    (1) Speed Issue: The recursively-defined convolution kernel is much slower compared to feature-based classifiers.
+    In this paper, the speed issue is solved in three ways.
+    First, the inclusion of the entity kernel makes the composite kernel converge fast.
+    Furthermore, we find that the small portion (PT) of a full parse tree can effectively represent a relation instance.
+    This significantly improves the speed.
+    Finally, the parse tree kernel requires ex

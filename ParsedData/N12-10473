@@ -1,0 +1,8 @@
+domization plays a different role in each tuner, we also suggest a new method for testing an optimizer&#8217;s stability (Clark et al., 2011), which sub-samples the tuning set instead of varying a random seed.
+  
+  
+    We begin by establishing some notation.
+    We view our training set as a list of triples [f, R, &#163;]Z1, where f is a source-language sentence, R is a set of targetlanguage reference sentences, and &#163; is the set of all reachable hypotheses; that is, each e &#8712; Ei is a target-language derivation that can be decoded from fi.
+    The function ~hi(e) describes e&#8217;s relationship to its source fi using features that decompose into the decoder.
+    A linear model w~ scores derivations according to their features, meaning that the decoder solves: Assuming we wish to optimize our decoder&#8217;s BLEU score (Papineni et al., 2002), the natural objective of learning would be to find a w~ such that BLEU([e(~w), R]n1) is maximal.
+    In most machine learning papers, this would be the point 

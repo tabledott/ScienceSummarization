@@ -1,0 +1,9 @@
+Frequently-capitalized tokens.
+    Microbloggers are inconsistent in their use of capitalization, so we compiled gazetteers of tokens which are frequently capitalized.
+    The likelihood of capitalization for a token is computed as Ncap&#65533;&#65533;C N&#65533;C , where N is the token count, Ncap is the capitalized token count, and a and C are the prior probability and its prior weight.7 We compute features for membership in the top N items by this metric, for N E {1000, 2000, 3000, 5000,10000, 20000}.
+    TAGDICT: Traditional tag dictionary.
+    We add features for all coarse-grained tags that each word occurs with in the PTB8 (conjoined with their frequency rank).
+    Unlike previous work that uses tag dictionaries as hard constraints, we use them as soft constraints since we expect lexical coverage to be poor and the Twitter dialect of English to vary significantly from the PTB domains.
+    This feature may be seen as a form of type-level domain adaptation.
+    DISTSIM: Distributional similarity.
+    Whe

@@ -1,0 +1,10 @@
+nditional random field (CRF) sequence model, which allows for globally optimal training and decoding (Lafferty et al., 2001).
+    The inference algorithms are tractable and efficient, thereby avoiding the need for heuristics.
+    The CRF is conditioned on both the source and target sentences, and therefore supports large sets of diverse and overlapping features.
+    Furthermore, the model allows regularisation using a prior over the parameters, a very effective and simple method for limiting over-fitting.
+    We use a similar graphical structure to the directed hidden Markov model (HMM) from GIZA++ (Och and Ney, 2003).
+    This models one-to-many alignments, where each target word is aligned with zero or more source words.
+    Many-to-many alignments are recoverable using the standard techniques for superimposing predicted alignments in both translation directions.
+    The paper is structured as follows.
+    Section 2 presents CRFs for word alignment, describing their form and their inference techniques.
+    

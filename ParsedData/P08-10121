@@ -1,0 +1,8 @@
+nts.
+    These word-level alignments are most often obtained using Expectation Maximization on the conditional generative models of Brown et al. (1993) and Vogel et al.
+    (1996).
+    As these word-level alignment models restrict the word alignment complexity by requiring each target word to align to zero or one source words, results are improved by aligning both source-to-target as well as target-to-source, then heuristically combining these alignments.
+    Finally, the set of phrases consistent with the word alignments are extracted from every sentence pair; these form the basis of the decoding process.
+    While this approach has been very successful, poor wordlevel alignments are nonetheless a common source of error in machine translation systems.
+    A natural solution to several of these issues is unite the word-level and phrase-level models into one learning procedure.
+    Ideally, such a procedure would remedy the deficiencies of word-level alignment models, including the strong restrictions on the f

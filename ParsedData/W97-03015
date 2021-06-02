@@ -1,0 +1,8 @@
+&amp;quot; if and only if it is a constituent whose children consist solely of POS tags.
+    Starting from the left, CHUNK assigns each (word,POS tag) pair a &amp;quot;chunk&amp;quot; tag, either Start X, Join X, or Other.
+    Figure 3 shows the result after the second pass.
+    The chunk tags are then used for chunk detection, in which any consecutive sequence of words vim wn (m &lt; n) are grouped into a &amp;quot;fiat&amp;quot; chunk X if tom has been assigned Start X and wn,fi wn have all been assigned Join X.
+    The result of chunk detection, shown in figure 4, is a forest of trees and serves as the input to the third pass.
+    The third pass always alternates between the use of BUILD and CHECK, and completes any remaining constituent structure.
+    BUILD decides whether a tree will start a new constituent or join the incomplete constituent immediately to its left.
+    Accordingly, it annotates the tree with either Start X, where X is any constituent label, or with Join X, where X matches the label of t

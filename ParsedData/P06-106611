@@ -1,0 +1,13 @@
+se, the lazy algorithm runs recursively on the shared forest.
+    It finds the second-best of the final derivation, which makes its children to find their secondbest, and children&#8217;s children&#8217;s second-best, until the leaf node&#8217;s second-best.
+    Then it finds the thirdbest, forth-best, and so on.
+    In all our experiments, we set k = 200.
+    The decoder is implemented in C++.
+    Using the pruning settings described above, without the kbest list generation, it takes about 6 seconds to translate a sentence of average length 28.3 words on a 2GHz Linux system with 4G RAM memory.
+  
+  
+    In this section, we discuss how to create a maximum entropy based reordering model.
+    As described above, we defined the reordering model Q on the three factors: order o, block A1 and block A2.
+    The central problem is, given two neighbor blocks A1 and A2, how to predicate their order o &#8712; {straight, inverted}.
+    This is a typical problem of two-class classification.
+    To be consistent with the w

@@ -1,0 +1,8 @@
+e balance, we consider both possible difference vectors from a pair.
+    For example, given the candidate space of Figure 1, since g(1,1) &gt; g(1, 3), we would add ([&#8722;4, 3], +) and ([4, &#8722;3], &#8722;) to our training set.
+    We can then feed this training data directly to any off-the-shelf classification tool that returns a linear classifier, in order to obtain a weight vector w that optimizes the above condition.
+    This weight vector can then be used directly by the MT system in the subsequent candidate generation phase.
+    The exact loss function ls,(Hw, G) optimized depends on the choice of classifier.4 Typical approaches to pairwise ranking enumerate all difference vectors as training data.
+    For tuning however, this means O(|I |&#8727; J2max) vectors, where Jmax is the cardinality of the largest J(i).
+    Since I and Jmax commonly range in the thousands, a full enumeration would produce billions of feature vectors.
+    Out of tractability considerations, we sample from the space of diff

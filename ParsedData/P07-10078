@@ -1,0 +1,9 @@
+g we have access to an &#8220;oracle&#8221; which determines the predominant sense, or most frequent sense (MFS), of each noun in our WSJ test data perfectly, and we assign this most frequent sense to each noun in the test data, we will have achieved an accuracy of 61.1% as shown in the column MFS accuracy of Table 1.
+    Finally, we note that we have an average of 310 BC training examples and 406 WSJ adaptation examples per noun.
+  
+  
+    For our experiments, we use naive Bayes as the learning algorithm.
+    The knowledge sources we use include parts-of-speech, local collocations, and surrounding words.
+    These knowledge sources were effectively used to build a state-of-the-art WSD program in one of our prior work (Lee and Ng, 2002).
+    In performing WSD with a naive Bayes classifier, the sense s assigned to an example with features f1, ... , fn is chosen so as to maximize: In our domain adaptation study, we start with a WSD system built using training examples drawn from BC.
+    We then investigate the 

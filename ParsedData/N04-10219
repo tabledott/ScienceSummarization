@@ -1,0 +1,8 @@
+lation: 1Note that due to the corpus-level holistic nature of the BLEU score it is not trivial to compute the optimal set of oracle translations.
+    We use a greedy search algorithm for the oracle translations that might find only a local optimum.
+    Empirically, we do not observe a dependence on the starting point, hence we believe that this does not pose a significant problem. n-best list.
+    The avBLEUr3 scores are computed with respect to three reference translations averaged over the four different choices of holding out one reference.
+    The first method provides the theoretical upper bound of what BLEU score can be obtained by rescoring a given nbest list.
+    Using this method with a 1000-best list, we obtain oracle translations that outperform the BLEU score of the human translations.
+    The oracle translations achieve 113% against the human BLEU score on the test data (Table 1), while the first best translations obtain 79.2% against the human BLEU score.
+    The second method uses a different r

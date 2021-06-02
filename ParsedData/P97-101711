@@ -1,0 +1,10 @@
+two symbols (a a) instead of just one (aa).
+    This scheme is attractive because Japanese sequences are almost always longer than English sequences.
+    Our WFST is learned automatically from 8,000 pairs of English/Japanese sound sequences, e.g., ( (S AA K ER) &#8212; (s a kk a a)).
+    We were able to produce' these pairs by manipulating a small Englishkatakana glossary.
+    For each glossary entry, we converted English words into English sounds using the previous section's model, and we converted katakana words into Japanese sounds using the next section's model.
+    We then applied the estimationmaximization (EM) algorithm (Baum, 1972) to generate symbol-mapping probabilities, shown in Figure 1.
+    Our EM training goes like this: 1.
+    For each English/Japanese sequence pair, compute all possible alignments between their elements.
+    In our case, an alignment is a drawing that connects each English sound with one or more Japanese sounds, such that all Japanese sounds are covered and no lines cross.
+   

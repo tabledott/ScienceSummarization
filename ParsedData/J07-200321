@@ -1,0 +1,9 @@
+ly, without any conversion to Chomsky normal form.
+    The axioms, inference rules, and goals for the basic decoder are shown in Figure 3.
+    Its time complexity is O(n3), just as CKY&#8217;s is.
+    Because this algorithm does not yet incorporate a language model, let us call it the &#8722;LM parser.
+    The actual search procedure is given by the pseudocode in Figure 4.
+    It organizes the proved items into an array chart whose cells chart[X, i, j] are sets of items.
+    The cells are ordered such that every item comes after its possible antecedents: smaller spans before larger spans, and X items before S items (because of the unary rule S &#8594; &#65533;X 1 , X 1 )).
+    Then the parser can proceed by visiting the chart cells in order and trying to prove all the items for each cell.
+    Whenever it proves a new item, it adds the item to the Search procedure for the &#8722;LM parser. appropriate chart cell; in order to reconstruct the derivations later, it must also store, with each item, a tuple of back

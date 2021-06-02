@@ -1,0 +1,7 @@
+s, it is intuitive that we might only need to remember the relevant bits of information from only the last (d + 1) trees on stack instead of the whole stack, because they provide all the relevant information for the features, and thus determine the costs.
+    For shift, this suffices as the stack grows on the right; but for reduce actions the stack shrinks, and in order still to maintain d + 1 trees, we have to know something about the history.
+    This is exactly why we needed the full stack for vanilla shift-reduce parsing in the first place, and why dynamic programming seems hard here.
+    To solve this problem we borrow the idea of &#8220;graph-structured stack&#8221; (GSS) from Tomita (1991).
+    Basically, each state p carries with it a set &#960;(p) of predictor states, each of which can be combined with p in a reduction step.
+    In a shift step, if state p generates state q (we say &#8220;p predicts q&#8221; in Earley (1970) terms), then p is added onto &#960;(q).
+    When two equivalent shifted stat

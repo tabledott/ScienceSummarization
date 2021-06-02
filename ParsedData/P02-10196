@@ -1,0 +1,9 @@
+ picks the partition boun cy, the probability that she mistypes this word as boun cie will be P(boun ! boun)P(cie ! cy).
+    The probability P(wjr) is estimated as the maximum over all partitions of r of the probability that w is generated from r given that partition.
+    We use this method to build an error model for letter strings and a separate error model for phone sequences.
+    Two models are learned; one model LTR (standing for &#8220;letter&#8221;) has a set of substitution probabilities P(a !
+    ,) where a and , are character strings, and another model PH (for &#8220;phone&#8221;) has a set of substitution probabilities P(a !
+    ,) where a and , are phone sequences.
+    We learn these two models on the same data set of misspellings and correct words.
+    For LTR, we use the training data as is and run the Brill and Moore training algorithm over it to learn the parameters of LTR.
+    For PH, we convert the misspelling/correctword pairs into pairs of pronunciations of the misspelling and the correct 

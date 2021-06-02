@@ -1,0 +1,5 @@
+llback-Leibler (KL) divergence as a distance function.
+    Unfortunately it is not possible to cluster based directly on the context distributions for two reasons: first the data is too sparse to estimate the context distributions adequately for any but the most frequent words, and secondly some words which intuitively are very similar (Schi_itze's example is 'a' and 'an') have radically different context distributions.
+    Both of these problems can be overcome in the normal way by using clusters: approximate the context distribution as being a probability distribution over ordered pairs of clusters multiplied by the conditional distributions of the words given the clusters : I use an iterative algorithm, starting with a trivial clustering, with each of the K clusters filled with the kth most frequent word in the corpus.
+    At each iteration, I calculate the context distribution of each cluster, which is the weighted average of the context distributions of each word in the cluster.
+    The distribution is c

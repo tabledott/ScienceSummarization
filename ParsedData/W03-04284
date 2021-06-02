@@ -1,0 +1,10 @@
+ce.
+    For example, (PERSON, 2) can only transition to the next state (PERSON, 3) or the final state (PERSON, F).
+    Final states can only transition to beginning states, like (other, 1).
+    For emissions, we must estimate a quantity of the form , for example, .1 We use an -gram model of order .2 The -gram estimates are smoothed via deleted interpolation.
+    Given this model, we can do Viterbi decoding in the standard way.
+    To be clear on what this model does and does not capture, we consider a few examples ( indicates a space).
+    First, we might be asked for .
+    In this case, we know both that we are in the middle of a location that begins with Denv and also that the preceding context was to.
+    In essence, encoding into the state lets us distinguish the beginnings of phrases, which lets us model trends like named entities (all the classes besides other) generally starting with capital letters in English.
+    Second, we may be asked for quantities like , which allows us to model the ends of phras

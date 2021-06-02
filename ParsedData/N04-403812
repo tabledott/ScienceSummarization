@@ -1,0 +1,8 @@
+mproved with larger dictionaries, however, the largest dictionary will still have coverage problems, therefore, there is a role for a data-driven approach such as SVM-TOK.
+    An analysis of the confusion matrix for SVM-TOK shows that the most confusion occurs with the PREF2 class.
+    This is hardly surprising since PREF2 is an infix category, and thus has two ambiguous boundaries.
+    Results: Table 3 shows the results obtained with the SVM based POS tagger, SVM-POS, and the results obtained with a simple baseline, BASELINE, where the most frequent POS tag associated with a token from the training set is assigned to it in the test set.
+    If the token does not occur in the training data, the token is assigned the NN tag as a default tag.
+    Discussion: The performance of SVM-POS is better than the baseline BASELINE.
+    50% of the errors encountered result from confusing nouns, NN, with adjectives, JJ, or vice versa.
+    This is to be expected since these two categories are confusable in Arabic leading to

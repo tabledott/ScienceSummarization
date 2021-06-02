@@ -1,0 +1,6 @@
+  Every model has a specific set of free parameters.
+    For example, the parameters 0 for Model 4 consist of lexicon, alignment, and fertility parameters: To train the model parameters 0, we use a maximum-likelihood approach, as described in equation (4), by applying the EM algorithm (Baum 1972).
+    The different models are trained in succession on the same data; the final parameter values of a simpler model serve as the starting point for a more complex model.
+    In the E-step of Model 1, the lexicon parameter counts for one sentence pair (e, f) are calculated: Here, N(e, f) is the training corpus count of the sentence pair (f, e).
+    In the M-step, the lexicon parameters are computed: Similarly, the alignment and fertility probabilities can be estimated for all other alignment models (Brown, Della Pietra, Della Pietra, and Mercer 1993).
+    When bootstrapping from a simpler model to a more complex model, the simpler model is used to weigh the alignments, and the counts are accumulated for the parameters

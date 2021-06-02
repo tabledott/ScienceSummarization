@@ -1,0 +1,9 @@
+cellent noise filter for the decision procedure.
+    The Word Alignment Filter is particularly useful when oracle lists are available to identify a large number of translation pairs that can be used to partition sentences.
+    Using a LCSR cut-off of 0.58 (optimized using BiBLE, of course), cognates were found for 23% of the source tokens in the training corpus (counting punctuation).
+    47% of the source tokens were found in the MRBD.
+    Although there was some overlap, an average of 63% of the words in each sentence were paired up with a cognate or with a translation found in the MRBD, leaving few candidate translations for the remaining 37%.
+    The oracles lists often supplied more than one match per word.
+    For instance, several determiners or prepositions in the French sentence often matched the same word in the English sentence.
+    When this happened, the current implementation of the Word Alignment Filter used several heuristics to choose at most one partitioning locus per word.
+    For example, 

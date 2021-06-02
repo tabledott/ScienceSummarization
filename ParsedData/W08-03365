@@ -1,0 +1,7 @@
+ocabulary (OOV) words, but these can hurt MT performance, when they could have been split into subparts from which the meaning of the whole can be roughly compositionally derived.
+    (iii) Conversely, splitting OOV words into noncompositional subparts can be very harmful to an MT system: it is better to produce such OOV items than to split them into unrelated character sequences that are known to the system.
+    One big source of such OOV words is named entities.
+    (iv) Since the optimal granularity of words for phrase-based MT is unknown, we can benefit from a model which provides a knob for adjusting average word size.
+    We build several different models to address these issues and to improve segmentation for the benefit of MT.
+    First, we emphasize lexicon-based features in a feature-based sequence classifier to deal with segmentation inconsistency and over-generating OOV words.
+    Having lexicon-based features reduced the MT training lexicon by 29.5%, reduced the MT test data OOV rate by 34.1%, an

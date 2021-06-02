@@ -1,0 +1,7 @@
+lly are independent enough for effective co-training to be possible; in the results section we show that the Collins-CFG parser is able to learn useful information from the output of the LTAG parser.
+    Figure 3 shows how the performance of the Collins-CFG parser varies as the amount of manually annotated training data (from the Wall Street Journal (WSJ) Penn Treebank (Marcus et al., 1993)) is increased.
+    The graph shows a rapid growth in accuracy which tails off as increasing amounts of training data are added.
+    The learning curve shows that the maximum payoff from co-training is likely to occur between 500 and 1,000 sentences.
+    Therefore we used two sizes of seed data: 500 and 1,000 sentences, to see if cotraining could improve parser performance using these small amounts of labelled seed data.
+    For reference, Figure 4 shows a similar curve for the LTAG parser.
+    Each parser was first initialized with some labelled seed data from the standard training split (sections 2 to 21) of the WSJ Penn 

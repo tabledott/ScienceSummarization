@@ -1,0 +1,8 @@
+sub LPR problems, min{cx : x &#8712; S&#8745;{xi = 0}} and min{cx : x &#8712; S&#8745;{xi = 1}}.
+    Since any feasible solution provides an upper bound and any LPR solution generates a lower bound, the search tree can be effectively cut.
+    Another strategy of dealing with non integer points, which is often combined with branch &amp; bound, is called cutting plane.
+    When a non integer solution is given by LPR, it adds a new linear constraint that makes the non integer point infeasible, while still keeps the optimal integer solution in the feasible region.
+    As a result, the feasible region is closer to the ideal polyhedron, which is the convex hull of feasible integer solutions.
+    The most famous cutting plane algorithm is Gomory&#8217;s fractional cutting plane method (Wolsey, 1998), which can be shown that only finite number of additional constraints are needed.
+    Moreover, researchers develop different cutting plane algorithms for different types of ILP problems.
+    One example is (Wang and Reg

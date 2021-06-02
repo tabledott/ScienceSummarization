@@ -1,0 +1,5 @@
+rformed by a program that processed the output of the tagger.
+    The program had two parts: a finite state parser ran through the text, parsing auxiliary sequences and noting complements after verbs and collecting histogram-type statistics for the appearance of verbs in various contexts.
+    A second process of statistical filtering then took the raw histograms and decided the best guess for what subcategorization frames each observed verb actually had.
+    The finite state parser The finite state parser essentially works as follows: it scans through text until it hits a verb or auxiliary, it parses any auxiliaries, noting whether the verb is active or passive, and then it parses complements following the verb until something recognized as a terminator of subcategorized arguments is reached.11 Whatever has been found is entered in the histogram.
+    The parser includes a simple NP recognizer (parsing determiners, possessives, adjectives, numbers and compound nouns) and various other rules to recognize certai

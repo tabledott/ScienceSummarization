@@ -1,0 +1,7 @@
+ of the SCFG rule with the additional cost c&#8242; being the cost of this rule.
+    These two deductive systems represent the search space of decoding without a language model.
+    When one is instantiated for a particular input string, it defines a set of derivations, called a forest, represented in a compact structure that has a structure of a graph in the phrase-based case, or more generally, a hypergraph in both cases.
+    Accordingly we call items like (&#8226;&#8226;&#8226;&#8226;&#8226;) and (VP1,6) nodes in the forest, and instantiated deductions like we call hyperedges that connect one or more antecedent nodes to a consequent node.
+    To integrate with a bigram language model, we can use the dynamic-programming algorithms of Och and Ney (2004) and Wu (1996) for phrase-based and SCFG-based systems, respectively, which we may think of as doing a finer-grained version of the deductions above.
+    Each node v in the forest will be split into a set of augmented items, which we call +LM items.
+    For ph

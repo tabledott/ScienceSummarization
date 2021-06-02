@@ -1,0 +1,11 @@
+e information from T and H alone, we also supply relevant background knowledge in the form of first-order axioms.
+			Instead of giving justFOL(DRS(T);DRS(H)) to the theorem prover, we sup ply it with (BK ? FOL(DRS(T);DRS(H))) where BK is short for the relevant background knowledge.
+			We generate background knowledge using threekinds of sources: generic knowledge, lexical knowl edge, and geographical knowledge.
+			Axioms forgeneric knowledge cover the semantics of possessives, active-passive alternation, and spatial knowledge.
+			There are about 20 different axioms in the current system and these are the only manually gener ated axioms.
+			An example is ?e?x?y(event(e)?agent(e,x)?in(e,y)?in(x,y)) which states that if an event is located in y, then so is the agent of that event.
+			Lexical knowledge is created automatically from WordNet.
+			A hyponymy relation between two 630 synsets A and B is converted into ?x(A(x)?B(x)).
+			Two synset sisters A and B are translated into ?x(A(x)?
+			?B(x)).
+			Here the predi

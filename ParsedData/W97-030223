@@ -1,0 +1,7 @@
+pace.
+    Later, we show experiments with up to six thresholds.
+    Since we don't have time to parse with one million parameter combinations, we need a better search algorithm.
+    Ideally, we would like to be able to pick a performance level (in terms of either entropy or precision and recall) and find the best set of thresholds for achieving that performance level as quickly as possible.
+    If this is our goal, then a normal gradient descent technique won't work, since we can't use such a technique to optimize one function of a set of variables (time as a function of thresholds) while holding another one constant (performance) .3 We wanted a metric of performance which would be sensitive to changes in threshold values.
+    In particular, our ideal metric would be strictly increasing as our thresholds loosened, so that every loosening of threshold values would produce a measurable increase in performance.
+    The closer we get to this ideal, the fewer sentences we need to test during parameter optimization

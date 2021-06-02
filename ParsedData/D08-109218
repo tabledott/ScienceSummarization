@@ -1,0 +1,7 @@
+to the model&#8217;s performance, we did an ablation study, removing one group of features at a time.
+    Table 2 shows the F1 scores on the bilingual development data resulting from training with each group of features removed.7 Note that though head word features seemed to be detrimental in our rapid training setup, earlier testing had shown a positive effect, so we reran the comparison using our full training setup, where we again saw an improvement when including these features.
+    To find a good value of the c parameter for training set pruning we tried several different values, using our rapid training setup and testing on the dev set.
+    The results are shown in Table 3.
+    We selected 25 as it showed the best performance/speed tradeoff, on average performing as well as if we had done no pruning at all, while requiring only a quarter the memory and CPU time.
+    We also tried several different values of the rank cutoff for test set pruning, using the full training setup and testing on the dev set.
+ 

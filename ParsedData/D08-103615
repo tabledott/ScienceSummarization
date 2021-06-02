@@ -1,0 +1,8 @@
+ blocked Gibbs sampler is a straight-forward application of the Metropoliswithin-Gibbs approach proposed by Johnson et al. (2007) for PCFGs, so we only sketch it here.
+    We iterate through the sentences of the training data, resampling the states for each sentence conditioned on the state-to-state transition counts n and stateto-word emission counts n0 for the other sentences in the corpus.
+    This is done by first computing the parameters 0* and 0* of a proposal HMM using (7). scribed above to produce a proposal state sequence t* for the words in the sentence.
+    Finally, we use a Metropolis-Hastings accept-reject step to decide whether to update the current state sequence for the sentence with the proposal t*, or whether to keep the current state sequence.
+    In practice, with all but the very smallest training corpora the acceptance rate is very high; the acceptance rate for all of our collapsed blocked Gibbs samplers was over 99%.
+  
+  
+    The previous section described six different unsupervised es

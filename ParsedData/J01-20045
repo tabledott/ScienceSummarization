@@ -1,0 +1,6 @@
+ill be able to calculate generative joint probabilities for entire strings; however, it will not be able to calculate probabilities for each word conditioned on previously generated words, unless each derivation generates the words in the string in exactly the same order.
+    For example, suppose that there are two possible verbs that could be the head of a sentence.
+    For a head-first parser, some derivations will have the first verb as the head of the sentence, and the second verb will be generated after the first; hence the second verb's probability will be conditioned on the first verb.
+    Other derivations will have the second verb as the head of the sentence, and the first verb's probability will be conditioned on the second verb.
+    In such a scenario, there is no way to decompose the joint probability calculated from the set of derivations into the product of conditional probabilities using the chain rule.
+    Of course, the joint probability can be used as a language model, but it cannot be inter

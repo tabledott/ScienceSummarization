@@ -1,0 +1,5 @@
+se matrix M are of the form (m, q, LM), where m is a rule-FSM, q a state of m, and LM is a multiset of lifting conditions as defined in Section 4.
+    An entry (m, q, LM) in a square M(i, j) of the parse matrix means that the sub-word wi &#8226; &#8226; &#8226; wj of the entry can be analyzed by in up to state q (i.e., it matches the beginning of an LP rule), but that nodes corresponding to the lifting rules in LM are being lifted from the subtrees spanning wz &#8226; &#8226; &#8226; wj.
+    Put differently, in this bottomup view LM represents the set of nodes which have a syntactic governor in the subtree spanning ID, &#8226; &#8226; w3 and a lifting rule, but are still looking for a linear governor.
+    Suppose we have an entry in the parse matrix M of the form (m, q, L).
+    As we traverse the Crule-FSM m, we recognize one by one the linear dependents of a node of category C. Call this governor n. The action of adding a new entry to the parse matrix corresponds to adding a single new linear dependent to n.

@@ -1,0 +1,6 @@
+nts or not, based on a bundle of features including the list above, but also the following: the preceding, first, last, and following tag in the span, pairs of tags such as preceding-first, last-following, preceding-following, first-last, and the entire tag sequence.
+    Tag features on the test sets were taken from a pretagging of the sentence by the tagger described in Toutanova et al. (2003).
+    While the flat classifier alone was quite poor (P 78.77 / R 63.94 / F1 70.58), the resulting max-margin model (LEXICAL+AUX) scored 89.12 F1.
+    To situate these numbers with respect to other models, the parser in Collins (1999), which is generative, lexicalized, and intricately smoothed scores 88.69 over the same train/test configuration.
+    It is worth considering the cost of this kind of method.
+    At training time, discriminative methods are inherently expensive, since they all involve iteratively checking current model performance on the training set, which means parsing the training set (usually many times

@@ -1,0 +1,7 @@
+age pairs.
+    On the French-English Hansards task, using the same training/testing setup as our work, they achieve an AER of 5.4 with Model 4 features, and 10.7 without (compared to 5.29 and 6.99 for our CRF).
+    One of the strengths of the CRF MAP estimation is the powerful smoothing offered by the prior, which allows us to avoid heuristics such as early stopping and hand weighted loss-functions that were needed for the maximum-margin model.
+    Liu et al. (2005) used a conditional log-linear model with similar features to those we have employed.
+    They formulated a global model, without making a Markovian assumption, leading to the need for a sub-optimal heuristic search strategies.
+    Ittycheriah and Roukos (2005) trained a discriminative model on a corpus of ten thousand word aligned Arabic-English sentence pairs that outperformed a GIZA++ baseline.
+    As with other approaches, they proposed a model which didn&#8217;t allow a tractably optimal solution and thus had to resort to a heuristic beam sear

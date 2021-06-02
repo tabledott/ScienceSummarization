@@ -1,0 +1,10 @@
+ation about the negation signal, the paired token, their contexts, and the tokens in between.
+    Feature selection experiments were carried out with the memory-based learning classifier.
+    Features were selected based on their gain ratio, starting with all the features and eliminating the least informative features.
+    We also performed experiments applying the feature selection process reported in Tjong Kim Sang et al. (2005), a bi-directional hill climbing process.
+    However, experiments with this method did not produce a better selection of features.
+    The features of the first three classifers are: right.
+    The fourth classifier, a metalearner, is also a CRF as implemented in CRF++.
+    The features of this classifier are: Negation signals in the BioScope corpus always have one consecutive block of scope tokens, including the signal token itself.
+    However, the classifiers only predict the first and last element of the scope.
+    We need to process the output of the classifers in order to buil

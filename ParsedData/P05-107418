@@ -1,0 +1,7 @@
+phrase probability we sum over different target language phrases.
+    Therefore the English phrases that are aligned with the different German phrases (which themselves maybe indicative of different word senses) are mingled.
+    Performance may be degraded since paraphrases that reflect different senses of the original phrase, and which therefore have a different meaning, are included in the same candidate set.
+    We therefore performed an experiment to see whether improvement could be had by limiting the candidate paraphrases to be the same sense as the original phrase in each test sentence.
+    To do this, we used the fact that our test sentences were drawn from a parallel corpus.
+    We limited phrases to the same word sense by constraining the candidate paraphrases to those that aligned with the same target language phrase.
+    Our basic paraphrase calculation was therefore: Using the foreign language phrase to identify the word sense is obviously not applicable in monolingual settings, but acts as a con

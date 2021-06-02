@@ -1,0 +1,9 @@
+ween Spanish and Danish, Dutch, Finnish, French, German, Italian, Portuguese, and Swedish to generate our Spanish paraphrases, and did similarly for the French paraphrases.
+    We manage the parallel corpora with a suffix array -based data structure (Callison-Burch et al., 2005).
+    We calculated paraphrase probabilities using the Bannard and CallisonBurch (2005) method, summarized in Equation 3.
+    Source language phrases that included names and numbers were not paraphrased.
+    For each paraphrase that had translations in the phrase table, we added additional entries in the phrase table containing the original phrase and the paraphrase&#8217;s translations.
+    We augmented the baseline model by incorporating the paraphrase probability into an additional feature function which assigns values as follows: p(f2|f1) If phrase table entry (e, f1) is generated from (e, f2)
+  
+  
+    Just as we did in the baseline system, we performed minimum error rate training to set the weights of the nine feature functions i

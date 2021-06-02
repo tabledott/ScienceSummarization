@@ -1,0 +1,8 @@
+nalize false positives that fall within k sentences of a true boundary.
+    Notation is as in Figure 2. algorithm has made at least one false negative (missing boundary) error, but it is not penalized for this error under Pk.
+    The size of the segment plays a role in the amount that a false positive within the segment or a false negative at its boundary is penalized.
+    Let us consider false negatives (missing boundaries) first.
+    As seen above, with average size segments, the penalty for a false negative is k. For larger segments, it remains at k&#8212;it cannot be any larger than that, since for a given position i there can be at most k intervals of length k that include that position.
+    As segment size gets smaller, however, the false negative penalty changes.
+    Suppose we have two segments, A and B, and the algorithm misses the boundary between them.
+    Then the algorithm will be penalized k times if Size(A)+ Size(B) &gt; 2k, that is, as long as each segment is about half the average size or lar

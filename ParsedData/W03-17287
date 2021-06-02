@@ -1,0 +1,9 @@
+ the two taggers.
+    The Maximum Entropy Markov Model (MEMM) has been successfully used in some tagging problems.
+    MEMM models are capable of utilizing a large set of features that generative models cannot use.
+    On the other hand, MEMM approaches scan the input incrementally as generative models do.
+    The Maximum Entropy Markov Model used in POS-tagging is described in detail in (Ratnaparkhi, 1996) and the LMR tagger here uses the same probability model.
+    The probability model is defined over , where is the set of possible contexts or &#8221;histories&#8221; and is the set of possible tags.
+    The model&#8217;s joint probability of a history and a tag is defined as where is a normalization constant, are the model parameters and are known as features, where .
+    Each feature has a corresponding parameter , that effectively serves as a &#8221;weight&#8221; of this feature.
+    In the training process, given a sequence of characters and their LMR tags as training data, the purpose is to determine t

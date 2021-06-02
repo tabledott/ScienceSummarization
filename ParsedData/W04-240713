@@ -1,0 +1,6 @@
+is case, there are no features corresponding to TOP.DEP and TOP.RIGHT, since the relevant dependencies can never be present atdecision time.
+			The final feature (LOOK) is a simple looka head, using the part-of-speech of the next plus one input token.
+			In the experiments reported below, we have used two different parser state models, one called the lexical model, which includes all nine features, and one called the non-lexical model, where the two lexical features TOP and NEXT are omitted.
+			For both these models, wehave used memory-based learning with different parame ter settings, as implemented TiMBL.
+			For comparison, we have included an earlier classifier that uses the same features as the non-lexical model, butwhere prediction is based on maximum conditional likeli hood estimation.
+			This classifier always predicts the most probable transition given the state and the most probable dependency type given the transition and the state, withconditional probabilities being estimated by the empirical dist

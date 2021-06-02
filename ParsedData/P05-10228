@@ -1,0 +1,7 @@
+g algorithms for PCFGs require O(m2) dynamic programming states, where m is the length of the sentence, so an n-best parsing algorithm requires O(nm2).
+    However things get much worse when the grammar is bilexicalized.
+    As shown by Eisner (Eisner and Satta, 1999) the dynamic programming algorithms for bilexicalized PCFGs require O(m3) states, so a n-best parser would require O(nm3) states.
+    Things become worse still in a parser like the one described in Charniak (2000) because it conditions on (and hence splits the dynamic programming states according to) features of the grandparent node in addition to the parent, thus multiplying the number of possible dynamic programming states even more.
+    Thus nobody has implemented this version.
+    There is, however, one particular feature of the Charniak parser that mitigates the space problem: it is a &#8220;coarse-to-fine&#8221; parser.
+    By &#8220;coarse-to-fine&#8221; we mean that it first produces a crude version of the parse using coarse-grained dynam

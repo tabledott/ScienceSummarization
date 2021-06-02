@@ -1,0 +1,9 @@
+o model this, we impose an exponential prior on the distance (number of mentions) between a pronoun and its antecedent, with weight &#8722;1.4 This is similar to Haghighi and Klein&#8217;s treatment of salience, but simpler.
+    Syntactic relations among mentions often suggest coreference.
+    Incorporating such relations into our MLN is straightforward.
+    We illustrate this with two examples: apposition and predicate nominals.
+    We introduce a predicate for apposition, Appo(x, y), where x, y are mentions, and which is true iff y is an appositive of x.
+    We then add the rule Appo(x, y) ==&gt; (InClust(x, c) &lt;---&gt; InClust(y, c)) which ensures that x, y are in the same cluster if y is an appositive of x.
+    Similarly, we introduce a predicate for predicate nominals, PredNom(x, y), and the corresponding rule.5 The weights of both rules can be learned from data with a positive prior mean.
+    For simplicity, in this paper we treat them as hard constraints.
+    We also consider a rule-based system tha

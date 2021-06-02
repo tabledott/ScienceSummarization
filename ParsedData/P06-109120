@@ -1,0 +1,8 @@
+are not able to rigorously prove fast convergence rate for this approximation, it works well in practice, as Figure 2 shows.
+    Theoretically this is because points achieving large values in Eq.
+    6 tend to have higher chances to become the top-ranked decoder output as well.
+    The SGDbased on-line training algorithm described in Section 3, is carried out after each decoding step to generate the weight vector for the subsequent decoding step.
+    Since this training step is carried out on a single machine, it dominates the overall computation time.
+    Since each iteration adds a single relevant alternative to the set , computation time increases with the number of training iterations: the initial model is trained in a few minutes, while training the model after the -th iteration takes up to hours for the most complex models.
+    Table 3 presents experimental results in terms of uncased BLEU 6.
+    Two re-ordering restrictions are tested, i.e. monotone decoding (&#8217;MON&#8217;), and local block re-orde

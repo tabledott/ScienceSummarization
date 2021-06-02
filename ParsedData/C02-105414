@@ -1,0 +1,19 @@
+refore, 569,994 vectors were classified in51.11 seconds.
+			The initialization time can be disre garded because we can reuse the above coefficents.
+			Consequently, XQK is 224.8 (=11,488.13/51.11) times faster than TinySVM for OTHER.
+			TinySVM took 6 hours to process all the word classes, whereas XQK took only 17 minutes.
+			XQK is 102 times faster than SVM-Light 3.50 which took 1.2 days.
+	
+	
+			XQK makes the classifiers faster, but mem ory requirement increases from ? ? / ?1) ?  to ? ? / ?1) ?  ?
+			 !fl# z%?r where ? (=15) is the num ber of non-zero elements in 7  . Therefore, removal.
+			of useless features would be beneficial.
+			Conven tional SVMs do not tell us how an individual feature works because weights are given not to features but to 4687  . However, the above weights ( ? ?
+			 and ???
+			) clarify how a feature or a feature pair works.
+			We can use this fact for feature selection after the training.
+			We simplify ( ) by removing all features ? that satisfy ??
+			} 8???
+			Z??
+			]?f???
+			} ?

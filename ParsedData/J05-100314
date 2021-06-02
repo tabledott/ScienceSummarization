@@ -1,0 +1,8 @@
+nditional probabilities P(y I x) through a definition where d1... dn are again the decisions made in building a parse, and F is a function that groups histories into equivalence classes.
+    Note that x is added to the domain of F (the context on which decisions are conditioned).
+    See Ratnaparkhi (1997) for one example of a method using this approach.
+    Figure 1 illustrates this process.
+    Each of the above decisions has an associated probability conditioned on the left-hand side of the rule (VP(saw)) and other information in some cases.
+    History-based approaches lead to models in which the log-probability of a parse tree can be written as a linear sum of parameters ak multiplied by features hk.
+    Each feature hk(x, y) is the count of a different &#8220;event&#8221;or fragment within the tree.
+    As an example, consider a PCFG with rules (Ak&#8212;&gt;Ok) for 1 &lt; k &lt; m. If hk(x,y) is the number of times (Ak&#8212;&gt;Ok) is seen in the tree, and ak = log P(OklAk) is the parameter associated

@@ -1,0 +1,7 @@
+he forest bottom-up and explores all possible +LM deductions along each hyperedge.
+    The theoretical running time of this algorithm is O(|F||T|(m&#8722;1)) for phrase-based models, and O(|F||T|4(m&#8722;1)) for binary-branching SCFG-based models, where |F |is the size of the forest, and |T| is the number of possible target-side words.
+    Even if we assume a constant number of translations for each word in the input, with a trigram model, this still amounts to O(n11) for SCFG-based models and O(2nn2) for phrase-based models.
+  
+  
+    Cube pruning (Chiang, 2007) reduces the search space significantly based on the observation that when the above method is combined with beam search, only a small fraction of the possible +LM items at a node will escape being pruned, and moreover we can select with reasonable accuracy those top-k items without computing all possible items first.
+    In a nutshell, cube pruning works on the &#8722;LM forest, keeping at most k +LM items at each node, and uses the k-best parsing A

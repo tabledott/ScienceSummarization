@@ -1,0 +1,8 @@
+ctually grist for Japanese transliterators.
+    For example, people rarely transliterate auxiliary verbs, but surnames are often transliterated.
+    We have approximated such a model by removing high-frequency words like has, an, are, am, were, their, and does, plus unlikely words corresponding to Japanese sound bites, like coup and oh.
+    We also built a separate word sequence model containing only English first and last names.
+    If we know (from context) that the transliterated phrase is a personal name, this model is more precise.
+    The next WFST converts English word sequences into English sound sequences.
+    We use the English phoneme inventory from the on-line CMU Pronunciation Dictiofederal I 0.0013 nary, minus the stress marks.2 This gives a total of 40 sounds, including 14 vowel sounds (e.g., AA, AE, UW), 25 consonant sounds (e.g., K, HH, R), plus one special symbol (PAUSE).
+    The dictionary has pronunciations for 110,000 words, and we organized a tree-based WFST from it: Note that we insert 

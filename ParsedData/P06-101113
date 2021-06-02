@@ -1,0 +1,11 @@
+agments.
+    The lower part of the figure shows the source and target sentence together with their alignment.
+    Above are displayed the initial signal and the filtered signal.
+    The circles indicate which fragments of the target sentence are selected by the procedure. translated; for this, we employ the distribution.
+    Thus, for each non-linked target word , we look for the source word least likely to be its nontranslation: .
+    If exists, we set the signal value for to ; otherwise, we set it to .
+    This is the initial signal.
+    We obtain the filtered signal by applying an averaging filter, which sets the value at each point to be the average of several values surrounding it.
+    In our experiments, we use the surrounding 5 values, which produced good results on a development set.
+    We then simply retain the &#8220;positive fragments&#8221; of , i.e. those fragments for which the corresponding filtered signal values are positive.
+    However, this approach will often produce short &#8220;positive

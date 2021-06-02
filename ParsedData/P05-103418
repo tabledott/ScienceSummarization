@@ -1,0 +1,8 @@
+ by the decoder.
+    We use an order-independent hash table where two trees are considered equal if they have the same tree structure and lexical choices after sorting each child list into a canonical order.
+    A simpler alternate approach would be to compare bags-ofwords.
+    However since our possible orderings are bound by the induced tree structure, we might overzealously prune a candidate with a different tree structure that allows a better target order.
+    The following optimizations do not preserve optimality, but work well in practice.
+    Instead of keeping the full list of translation candidates for a given input node, we keep a topscoring subset of the candidates.
+    While the decoder is no longer guaranteed to find the optimal translation, in practice the quality impact is minimal with a list size 10 (see Table 5.6).
+    Variable-sized n-best lists: A further speedup can be obtained by noting that the number of translations using a given treelet pair is exponential in the number of subtrees of 

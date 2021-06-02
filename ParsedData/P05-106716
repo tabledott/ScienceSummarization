@@ -1,0 +1,8 @@
+ion probability.
+    For efficiency reasons, we use maximum approximation for (3).
+    Instead of summing over all the possible decompositions, we only search for the best decomposition as follows: where, letting root(v) denote the root word of v , P(v  |Parent(v)) = P(root(v)  |root (Parent(v))) (6) The prior probability of tree decomposition is An analogy between our model and a Hidden Markov Model (Figure 7) may be helpful.
+    In Eq.
+    (4), P(u  |v) is analogous to the emission probably P(oi  |si) in an HMM.
+    In Eq.
+    (5), P(v  |Parent(v)) is analogous to the transition probability P(si  |si&#8722;1) in So bringing equations (4) to (9) together, the best translation would maximize: Observing the similarity between our model and a HMM, our dynamic programming decoding algorithm is in spirit similar to the Viterbi algorithm except that instead of being sequential the decoding is done on trees in a top down fashion.
+    As to the relative orders of the ETs, we currently choose not to reorder the child

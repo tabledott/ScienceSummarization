@@ -1,0 +1,6 @@
+   It thus runs n times during the course of parsing a sentence of length n. We use the simple dynamic programming algorithm in Figure 3.
+    There are 0(n2) nodes in the chart, and each node is examined exactly three times, so the run time of this algorithm is 0(n2).
+    The first section of the algorithm works forwards, computing, for each i, f [i], which contains the score of the best sequence covering terminals ti...ti-i Thus f[n+1] contains the score of the best sequence covering the whole sentence, maxi, P(L).
+    The algorithm works analogously to the Viterbi algorithm for HMMs.
+    The second section is analogous, but works backwards, computing b[i], which contains the score of the best sequence covering terminals ti.-tn&#8226; Once we have computed the preceding arrays, computing maxi,liveL P(L) is straightforward.
+    We simply want the score of the best sequence covering the nodes to the left of N, f[Nstart], times the score of the node itself, times the score of the best sequence of nodes fromN is

@@ -1,0 +1,5 @@
+with a branch for every possible outcome of 16 The manually derived segmentation algorithm evaluates boundary assignment incrementally, i.e., utterance-by-utterance, after computing the features for the current utterance (or FICU).
+    This allows relative information about previous boundaries to be used in deriving the global.pro feature.
+    By allowing machine learning to use global.pro, we are testing whether characterizing the use of referring expressions (certain pronouns) in terms of relative knowledge about segments (whether the current referent was already mentioned in the current segment) is useful for classifying the current boundary site.
+    Although none of the other features are derived using classification knowledge of any other potential boundary sites, note that global.pro does not encode the boundary/nonboundary classification of the particular site in question.
+    Furthermore, even when machine learning does not use global.pro (as with the &amp;quot;Learning 2&amp;quot; algorithm discusse

@@ -1,0 +1,9 @@
+wo-step approach to contextual polarity dis ambiguation.
+			For the first step, we concentrate on whether clue instances are neutral or polar in context (where polar in context refers to having a contextual polarity that is positive, negative or both).
+			For the second step, we take all clue instances marked aspolar in step one, and focus on identifying their contextual polarity.
+			For both steps, we develop classi fiers using the BoosTexter AdaBoost.HM (Schapire and Singer, 2000) machine learning algorithm with5000 rounds of boosting.
+			The classifiers are evalu ated in 10-fold cross-validation experiments.
+			6.3.1 Neutral-Polar Classification The neutral-polar classifier uses 28 features, listed in Table 3.
+			Word Features: Word context is a bag of three word tokens: the previous word, the word itself, and the next word.
+			The prior polarity and reliability class are indicated in the lexicon.Modification Features: These are binary rela tionship features.
+			The first four involve relationships with th

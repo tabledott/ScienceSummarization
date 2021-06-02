@@ -1,0 +1,6 @@
+interpretation, as denoting a &amp;quot;typical&amp;quot; ratio between the mutual information values of each of the two words with another third word.
+    The metric is reflexive (sim(w, w) = 1), symmetric (sim(wi, w2) = sim(w2, wi)), but is not transitive (the values of sim(wi, w2) and sim(w2, w3) do not imply anything on the value of sim(wi, w3)).
+    The left column of Table 3 lists the six most similar words to the word 'aspects' according to this metric, based on our corpus.
+    More examples of similarity were shown in Figure 1.
+    The estimation method of section 3 requires that we identify the most similar words of a given word w. Doing this by computing the similarity between w and each word in the lexicon is computationally very expensive (o(l2), where 1 is the size of the lexicon, and 0(1 ) to do this in advance for all the words in the lexicon).
+    To account for this problem we developed a simple heuristic that searches for words that are potentially similar to w, using thresholds on mutual in

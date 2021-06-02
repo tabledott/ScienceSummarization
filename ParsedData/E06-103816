@@ -1,0 +1,10 @@
+g parses given in Figure 2.
+    In particular, lets consider the feature representation f(x,3,6).
+    That is, the feature representation of making Ralph and after adjacent in the compression and dropping the prepositional phrase on Tuesday.
+    The first set of features we consider are over dependency trees.
+    For every dropped word we add a feature indicating the POS of the words parent in the tree.
+    For example, if the dropped words parent is root, then it typically means it is the main verb of the sentence and unlikely to be dropped.
+    We also add a conjunction feature of the POS tag of the word being dropped and the POS of its parent as well as a feature indicating for each word being dropped whether it is a leaf node in the tree.
+    We also add the same features for the two adjacent words, but indicating that they are part of the compression.
+    For the phrase-structure features we find every node in the tree that subsumes a piece of dropped text and is not a child of a similar node.
+    In thi

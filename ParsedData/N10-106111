@@ -1,0 +1,9 @@
+n Mi, i = 1, ... , n For each property r, there is a hyper-parameter &#945;r which interpolates between selecting a word from the entity list Lr and drawing from the underlying type property distribution Br.
+    Intuitively, a small value of &#945;r indicates that an entity prefers to re-use a small number of words for property r. This is typically the case for proper and nominal heads as well as modifiers.
+    At the other extreme, setting &#945;r to 1 indicates the property isn&#8217;t particular to the entity itself, but rather only on its type.
+    We set &#945;r to 1 for pronoun heads as well as for the governor of the head properties.
+  
+  
+    Our learning procedure involves finding parameters and assignments which are likely under our model&#8217;s posterior distribution P(E, Z, T, 9C|M, X).
+    The model is modularized in such a way that running EM on all variables simultaneously would be very difficult.
+    Therefore, we adopt a variational approach which optimizes various subgroups of the variables

@@ -1,0 +1,9 @@
+   Both Pk and WD appear to solve the problem of underpenalizing false positives, but WD has the added benefit of being more stable across variations in segment size distribution.
+    Thus, WD essentially solves Problems 1, 2, and 3.
+    Table 1c shows that for the FNP segmentation (in which both false positives and false negatives occur), there is a disparity between the performances of Pk and WD.
+    It appears that Pk is harsher in this situation.
+    From the above discussion, we know that WD is more lenient in situations where a false negative and a false positive occur near each other (where &#8220;near&#8221; means within a distance of k2) than Pk is.
+    However, Pk is more lenient for pure false positives that occur close to boundaries.
+    Thus, it is not immediately clear why Pk is harsher in this situation, but a more detailed look provides the answer.
+    Let us begin the analysis by trying to explain why Pk scores for the FNP segmentation make sense.
+    The FNP segmentation places both false ne

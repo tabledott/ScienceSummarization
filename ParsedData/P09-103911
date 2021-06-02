@@ -1,0 +1,6 @@
+nstraints that forbid some arc configurations.
+    Their formulation includes an exponential number of constraints&#8212;one for each possible cycle.
+    Since it is intractable to throw in all constraints at once, they propose a cuttingplane algorithm, where the cycle constraints are only invoked when violated by the current solution.
+    The resulting algorithm is still slow, and an arc-factored model is used as a surrogate during training (i.e., the hard constraints are only used at test time), which implies a discrepancy between the model that is optimized and the one that is actually going to be used.
+    Here, we propose ILP formulations that eliminate the need for cycle constraints; in fact, they require only a polynomial number of constraints.
+    Not only does our model allow expert knowledge to be injected in the form of constraints, it is also capable of learning soft versions of those constraints from data; indeed, it can handle features that are not arc-factored (correlating, for example, sibling

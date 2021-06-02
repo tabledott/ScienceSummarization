@@ -1,0 +1,11 @@
+rase-based models are limited to se quences of words as their units with no access to additional linguistic knowledge.
+			Factors allow for richer translation models, for example, the gender or tense of a word can be expressed.
+			Factors also allow the model to generalise, for example, the lemma of a word could be used to generalise to unseen inflected forms.
+			The factored translation model combines features in a log-linear fashion (Och, 2003).
+			The most likely target sentence t?
+			is calculated using the decision rule in Equation 1: t?
+			= argmax t { M?
+			m=1 ?mhm(s Fs 1 , t Ft 1 ) } (1) t?
+			M? m=1 ?mhm(s Fs 1 , t Ft 1 ) (2) where M is the number of features, hm(s Fs 1 , t Ft 1 ) are the feature functions over the factors, and ? are the weights which combine the features which areoptimised using minimum error rate training (Venu gopal and Vogel, 2005).
+			Each function depends on a vector sFs1 of source factors and a vector t Ft1 of tar get factors.
+			An example of a factored model used in upcomin

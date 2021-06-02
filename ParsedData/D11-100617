@@ -1,0 +1,9 @@
+ses.
+    Let a = {(s(1), t(1)), ... , (s(n), t(n))} be an alignment where s(i) is a word in the source sentence xs (not necessarily the ith word) and t(i) is similarly a word in the target sentence xt (again, not necessarily the ith word).
+    The notation (s(i), t(i)) E a indicates two words are the ith aligned pair in a.
+    We define the ALIGN function to encode the Direct Correspondence Assumption (DCA) from Hwa et al. (2005): has now been lexicalized and is working in the space of target language sentences.
+    Next, the algorithm iterates over the sentences in the parallel corpus.
+    It parses the English sentence with an English parser (line 8, again a lexicalized parser).
+    It then uses the current target language parameter vector to create a k-best parse list for the target sentence (line 9).
+    From this list, it selects the parse whose dependencies align most closely with the English parse via the pre-specified alignment (line 10, also see below for the definition of the ALIGN function).
+    It

@@ -1,0 +1,6 @@
+to address the problem of rare words aligning to too many words, at each interation of EM we smooth all the translation probability estimates by adding virtual counts according to a uniform probability distribution over all target words.
+    This prevents the model from becoming too confident about the translation probabilities for rare source words on the basis of very little evidence.
+    To estimate the smoothed probabilties we use the following formula: where C(t, s) is the expected count of s generating t, C(s) is the corresponding marginal count for s, |V  |is the hypothesized size of the target vocabulary V , and n is the added count for each target word in V .
+    |V  |and n are both free parameters in this equation.
+    We could take |V  |simply to be the total number of distinct words observed in the target language training, but we know that the target language will have many words that we have never observed.
+    We arbitrarily chose |V  |to be 100,000, which is somewhat more than the total number

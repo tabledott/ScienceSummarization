@@ -1,0 +1,5 @@
+t tree sequence that also appear in tree sequence to be evaluated.
+    It is straightforward to use the PCFG estimation techniques described in Section 2 to estimate PCFGs from the result of applying these transformations to sections 221 of the Penn II WSJ corpus.
+    The resulting PCFGs can be used with a parser to obtain maximum-likelihood parse trees for the POS tag yields of the trees of the heldout test corpus (section 22 of the WSJ corpus).
+    While the resulting parse trees can be compared to the trees in the test corpus using the precision and recall measures described above, the results would not be meaningful as the parse trees reflect a different tree representation to that used in the test corpus, and thus are not directly comparable with the test corpus trees.
+    For example, the node labels used in the PCFG induced from trees produced by applying the parent transform are pairs of categories from the original Penn II WSJ tree bank, and so the labeled precision and recall measures obtained by co

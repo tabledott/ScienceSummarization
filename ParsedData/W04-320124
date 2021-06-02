@@ -1,0 +1,7 @@
+).
+    In our experiments, 10-20 iterations were generally required for convergence (except the BASIC model, which took about 100 iterations.)
+    There are several nice aspects of the approach described here.
+    First, it is driven by the repeated extraction, over the training examples, of incorrect parses which the model currently prefers over the true parses.
+    The procedure that provides these parses need not sum over all parses, nor even necessarily find the Viterbi parses, to function.
+    This allows a range of optimizations not possible for CRF-like approaches which must extract feature expectations from the entire set of parses.7 Nonetheless, generative approaches 7One tradeoff is that this approach is more inherently sequential and harder to parallelize. are vastly cheaper to train, since they must only collect counts from the training set.
+    On the other hand, the max-margin approach does have the potential to incorporate many new kinds of features over the input, and the current feature set a

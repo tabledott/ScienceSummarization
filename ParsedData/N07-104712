@@ -1,0 +1,8 @@
+ase, the system has only graphemes available to predict phonemes, so there is no information about letter chunk boundaries.
+    We cannot simply merge any two letters that have appeared as a letter chunk in the training data.
+    For example, although the letter pair sh is usually pronounced as a single phoneme in English (e.g. gash [ g ae f ]), this is not true universally (e.g. gasholder [ g ae s h o l d @ r ]).
+    Therefore, we implement a letter chunk prediction model to provide chunk boundaries given only graphemes.
+    In our system, a bigram letter chunking prediction automatically discovers double letters based on instance-based learning (Aha et al., 1991).
+    Since the many-to-many alignments are drawn from 1-0, 1-1, 1-2, 2-0, and 2-1 relationships, each letter in a word can form a chunk with its neighbor or stand alone as a chunk itself.
+    We treat the chunk prediction as a binary classification problem.
+    We generate all the bigrams in a word and determine whether each bigram should be a chun

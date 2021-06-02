@@ -1,0 +1,8 @@
+j, mk) represents a preceding cluster cj and a discourse-old mention mk and consists of cluster-level features formed from predicates.
+    Unlike in an entity-mention model, however, in a cluster ranker, (1) a training instance is created between each discourse-old mention mk and each of its preceding clusters; and (2) since we are training a model for ranking clusters, the assignment of class values to training instances is similar to that of a mention ranker.
+    Specifically, the class value of a training instance i(cj, mk) created for mk is the rank of cj among the competing clusters, which is 2 if mk belongs to cj, and 1 otherwise.
+    Applying the learned cluster ranker to a test text is similar to applying a mention ranker.
+    Specifically, the mentions are processed in a left-to-right manner.
+    For each active mention mk, we first apply an independently-trained classifier to determine if mk is discourse-new.
+    If so, mk will not be resolved.
+    Otherwise, we create test instances for mk by pairi

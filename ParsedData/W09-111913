@@ -1,0 +1,10 @@
+#8220;blinker&#8221; are assigned the PER label.
+    However, in general, this is not always the case; for example we might see in the same document the word sequences &#8220;Australia&#8221; and &#8220;The bank of Australia&#8221;.
+    The first instance should be labeled as LOC, and the second as ORG.
+    We consider three approaches proposed in the literature in the following sections.
+    Before continuing the discussion, we note that we found that adjacent documents in the CoNLL03 and the MUC7 datasets often discuss the same entities.
+    Therefore, we ignore document boundaries and analyze global dependencies in 200 and 1000 token windows.
+    These constants were selected by hand after trying a small number of values.
+    We believe that this approach will also make our system more robust in cases when the document boundaries are not given.
+    (Chieu and Ng, 2003) used features that aggregate, for each document, the context tokens appear in.
+    Sample features are: the longest capitilized sequence of

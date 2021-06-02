@@ -1,0 +1,6 @@
+ed in the text, t1 ... t,,, the corresponding terms, L1 ... L,,, their respective lengths,4 and L the length of the text, the adapted metric is expressed as follows, combining frequency (freq(ti)) of a term ti and the compactness of its underlying chain: 3The latter parameter might seem controversial at first, and one might assume that longer chains should receive a higher score.
+    However we point out that in a linear model of discourse, chains that almost span the entire text are barely indicative of any structure (assuming boundaries are only hypothesized where chains start and end).
+    4All lengths are expressed in number of sentences.
+    In the second part of the algorithm, we combine information from all term repetitions to compute a lexical cohesion score at each sentence break (or, in the case of spoken conversations, speaker turn break).
+    This step of our algorithm is very similar in spirit to TextTiling (Hearst, 1994).
+    The idea is to work with two adjacent analysis windows, each of fixed 

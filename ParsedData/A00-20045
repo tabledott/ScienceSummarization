@@ -1,0 +1,11 @@
+eil and Denos, 1992).
+    'The contrast of the image has been adjusted to highlight the image features.
+    Each value in the similarity matrix is replaced by its rank in the local region.
+    The rank is the number of neighbouring elements with a lower similarity value.
+    Figure 2 shows an example of image ranking using a 3 x 3 rank mask with output range {0, 8).
+    For segmentation, we used a 11 x 11 rank mask.
+    The output is expressed as a ratio r (equation 2) to circumvent normalisation problems (consider the cases when the rank mask is not contained in the image).
+    # of elements with a lower value To demonstrate the effect of image ranking, the process was applied to the matrix shown in figure 1 to produce figure 32.
+    Notice the contrast has been improved significantly.
+    Figure 4 illustrates the more subtle effects of our ranking scheme. r(x) is the rank (1 x 11 mask) of (x) which is a sine wave with decaying mean, amplitude and frequency (equation 3).
+    The final process determines the 

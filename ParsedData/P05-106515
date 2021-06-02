@@ -1,0 +1,10 @@
+was split for LM and SVM training were unsuccessful due to the small size of the resulting data sets.
+    Thus we made use of the Britannica and CNN articles to train models of three n-gram orders on &#8220;child&#8221; text and &#8220;adult&#8221; text.
+    This resulted in 12 LM perplexity features per article based on trigram, bigram and unigram LMs trained on Britannica (adult), Britannica Elementary, CNN (adult) and CNN abridged text.
+    For training SVMs, we used the SVMUght toolkit developed by Joachims (1998b).
+    Using development data, we selected the radial basis function kernel and tuned parameters using cross validation and grid search as described in (Hsu et al., 2003).
+  
+  
+    We divide the Weekly Reader corpus described in Section 3 into separate training, development, and test sets.
+    The number of articles in each set is shown in Table 3.
+    The development data is used as a test set for comparing classifiers, tuning parameters, etc, and the results presented in this section are based

@@ -1,0 +1,8 @@
+r model is arc-factored, so we can sum over all DCS trees in ZL(x) using dynamic programming.
+    However, in order to learn, we need to sum over {z &#8712; ZL(x) : JzKw = y}, and unfortunately, the additional constraint JzKw = y does not factorize.
+    We therefore resort to beam search.
+    Specifically, we truncate each Ci,j to a maximum of K candidates sorted by decreasing score based on parameters &#952;.
+    Let &#732;ZL,&#952;(x) be this approximation of ZL(x).
+    Our learning algorithm alternates between (i) using the current parameters &#952; to generate the K-best set &#732;ZL,&#952;(x) for each training example x, and (ii) optimizing the parameters to put probability mass on the correct trees in these sets; sets containing no correct answers are skipped.
+    Formally, let &#732;O(&#952;, &#952;') be the objective function O(&#952;) with ZL(x) &#732;ZL,&#952;I(x).
+    We optimize &#732;O(&#952;,&#952;') by setting &#952;(0) = 0~ and iteratively solving &#952;(t+1) = argmax&#952; &#732;O(&#952;, &#9

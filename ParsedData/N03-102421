@@ -1,0 +1,8 @@
+f sentence quality.
+    Recall the example of &#8220;bad&#8221; path we gave in Section 1: the battle of last week&#8217;s fighting took at least 12 people lost their people died in the fighting last week&#8217;s fighting.
+    Our 4-gram based language model will not find any fault with this sentence.
+    Notice, however, that some words (such as &#8220;fighting&#8221; and &#8220;people&#8221;) appear at least twice in this path, although they are not repeated in any of the source sentences.
+    These erroneous repetitions indicate mis-alignment.
+    By measuring the frequency of words that are mistakenly repeated, we can now examine quantitatively whether a direct application of the MSA algorithm suffers from different constituent orderings as we expected.
+    For each sentence group, we get a list of words that never appear more than once in any sentence in this group.
+    Given a word from this list and the FSA built from this group, we count the total number of paths that contain this word (C) and the num

@@ -1,0 +1,9 @@
+ Since it is usually the case that a right-hand operator has stronger scope over a left-hand one, we evaluate strings containing operators from right to left.
+    To illustrate, New York's MOMA and the Victoria and Albert Museum in London is first evaluated for splitting on in.
+    Since the left and right substrings do not satisfy any conditions, we proceed to the next operator on the left &#8212; and.
+    Because of the strong scope of Museum, as mentioned above, no splitting occurs.
+    Next, the second and from the right is evaluated.
+    It causes a split because it is immediately preceded by an all-capitalized word.
+    We have found this simple typographical heuristic to be powerful and surprisingly accurate.
+    Ambiguous operators form recursive structures and so the splitting heuristics apply recursively to name sequences until no more splitting conditions hold.
+    New York's MOMA is further split at 's because of a heuristic that checks for place names on the left of a possessive pronoun or a comm

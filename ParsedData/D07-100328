@@ -1,0 +1,8 @@
+ithm, allowing fuzzy word align ments through WordNet expansion; both results are reported.The second baseline is the approximate tree matching work by Punyakanok et al (2004).
+			Their algorithm measures the similarity between ?q and ?a by computing tree edit distance.
+			Our replication is close to the algorithm they describe, with one subtle difference.
+			Punyakanok et al used answer-typing in computing edit distance; this is not available in our dataset (and our method does not explicitly carry out answer-typing).
+			Their heuristics for reformulating questions into statements were not replicated.
+			Wedid, however, apply WordNet type-checking and ap proximate, penalized lexical matching.
+			Both results are reported.
+			28 development set test set training dataset model MAP MRR MAP MRR 100 manually-judged TreeMatch 0.4074 0.4458 0.3814 0.4462 +WN 0.4328 0.4961 0.4189 0.4939 Cui et al 0.4715 0.6059 0.4350 0.5569 +WN 0.5311 0.6162 0.4271 0.5259 Jeopardy (base only) 0.5189 0.5788 0.4828 0.5571 Jeopardy 0.6

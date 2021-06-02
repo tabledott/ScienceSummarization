@@ -1,0 +1,7 @@
+gs, and report notable improvements for different languages during development.
+			The improvements for each language from step 1 (baseline) to step 2 (parsing algorithm) and step 3 (feature model and learning algorithm) can be tracked in table 1.3 2.1 Parsing Algorithm.
+			MaltParser implements several parsing algorithms, but for the Single Malt system we stick to the one used by Nivre et al (2006), which performs labeled projective dependency parsing in linear time, using a stack to store partially processed tokens and an input queue of remaining tokens.
+			There are three basic parameters that can be varied for this algorithm: 1.
+			Arc order: The baseline algorithm is arc-.
+			eager, in the sense that right dependents are attached to their head as soon as possible, but there is also an arc-standard version, where theattachment of right dependents has to be postponed until they have found all their own de pendents.
+			The arc-standard order was found 3Complete specifications of all parameter settings for a

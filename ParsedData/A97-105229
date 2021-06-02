@@ -1,0 +1,8 @@
+mmar&#8212;the proportion of sentences for which at least one analysis is found&#8212;is 79% when applied to the Susanne corpus (Sampson, 1995), a 138K word treebanked and balanced subset of the Brown corpus.
+    Wide coverage is important since information is acquired only from successful parses.
+    The combined throughput of the parsing components on a Sun UltraSparc 1/140 is around 50 words per CPU second.
+    The extractor takes as input the ranked analyses from the probabilistic parser.
+    It locates the subanalyses around the predicate, finding the constituents identified as complements inside each subanalysis, and the subject clause preceding it.
+    Instances of passive constructions are recognized and treated specially.
+    The extractor returns the predicate, the VSUBCAT value, and just the heads of the complements (except in the case of PPs, where it returns the PSUBCAT value, the preposition head, and the heads of the PP's complements).
+    The subcategorization classes recognized by the classif

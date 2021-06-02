@@ -1,0 +1,7 @@
+ suspect (and will finish in the future work) that using manual alignments would result in a better correlation, though for the main parsing results (see below) we can only afford automatic alignments in order for our approach to be widely applicable to any bitext.
+  
+  
+    We incorporate the three bilingual features (again, with automatic alignments) into the baseline parser, retrain it, and test its performance on the English dev set, with varying beam size.
+    Table 8 shows that bilingual constraints help more with larger beams, from almost no improvement with the deterministic mode (k=1) to +0.5% better with the largest beam (k=16).
+    This could be explained by the fact that beam-search is more robust than the deterministic mode, where in the latter, if our bilingual features misled the parser into a mistake, there is no chance of getting back, while in the former multiple configurations are being pursued in parallel.
+    In terms of speed, both parsers run proportionally slower with larger beams, as 

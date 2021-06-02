@@ -1,0 +1,10 @@
+s.
+    As a baseline, we trained language models on random subsets of the Gigaword corpus of approximately equal size to the data sets produced by the cutoffs we selected for the cross-entropy difference scores.
+    Next, we scored all the Gigaword sentences by the cross-entropy according to the Europarl-trained model alone.
+    As we noted above, this is equivalent to the indomain perplexity scoring method used by Lin et al. (1997) and Gao et al.
+    (2002).
+    Finally, we implemented Klakow&#8217;s (2000) method, scoring each Gigaword sentence by removing it from the Gigaword corpus and computing the difference in the log likelihood of the Europarl corpus according to unigram models trained on the Gigaword corpus with and without that sentence.
+    With the latter two methods, we chose cutoff points in the resulting scores to produce data sets approximately equal in size to those obtained using our selection method.
+  
+  
+    For all four selection methods, plots of test set perplexity vs. the number of tr

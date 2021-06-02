@@ -1,0 +1,7 @@
+l attempt to build the syntactic structure incrementally while traversing the sentence left-to-right.
+    The model will assign a probability P(W,T) to every sentence W with every possible POStag assignment, binary branching parse, nonterminal label and headword annotation for every constituent of T. Let W be a sentence of length n words to which we have prepended &lt;s&gt; and appended &lt;/s&gt; so that wo =&lt;s&gt; and w,,&#177;1 =&lt;/s&gt;.
+    Let Wk be the word k-prefix wo wk of the sentence and Wk Tk the word-parse k-prefix.
+    To stress this point, a word-parse k-prefix contains &#8212; for a given parse &#8212; only those binary subtrees whose span is completely included in the word k-prefix, excluding wo =&lt;s&gt;.
+    Single words along with their POStag can be regarded as root-only trees.
+    Figure 2 shows a word-parse k-prefix; h_O h_{-m} are the exposed heads, each head being a pair(headword, nonterminal label), or (word, POStag) in the case of a root-only tree.
+    A complete parse &#8212;

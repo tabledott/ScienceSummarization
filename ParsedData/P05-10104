@@ -1,0 +1,8 @@
+de still has a cost that exponentially grows with the number of &#8217;s daughters because we must sum up the probabilities of combinations of latent annotation symbols for a node with daughters.
+    We thus took a kind of transformation/detransformation approach, in which a tree is binarized before parameter estimation and restored to its original form after parsing.
+    The details of the binarization are explained in Section 4.
+    Using syntactically annotated corpora as training data, we can estimate the parameters of a PCFGLA model using an EM algorithm.
+    The algorithm is a special variant of the inside-outside algorithm of Pereira and Schabes (1992).
+    Several recent work also use similar estimation algorithm as ours, i.e, inside-outside re-estimation on parse trees (Chiang and Bikel, 2002; Shen, 2004).
+    The rest of this section precisely defines PCFGLA models and briefly explains the estimation algorithm.
+    The derivation of the estimation algorithm is largely omitted; see Pereira and Schabe

@@ -1,0 +1,8 @@
+stribution defined by the model.
+    This is still a gravely inefficient process, however.
+    Random sampling may be a good way to estimate the shape of a probability distribution, but it is not an efficient way to do what we want: find the maximum.
+    However, we cannot just transition greedily to higher probability sequences at each step, because the space is extremely non-convex.
+    We can, however, borrow a technique from the study of non-convex optimization and use simulated annealing (Kirkpatrick et al., 1983).
+    Geman and Geman (1984) show that it is easy to modify a Gibbs Markov chain to do annealing; at time t we replace the distribution in (1) with where c = {c0, ... , cT} defines a cooling schedule.
+    At each step, we raise each value in the conditional distribution to an exponent and renormalize before sampling from it.
+    Note that when c = 1 the distribution is unchanged, and as c &#8594; 0 the distribution becomes sharper, and when c = 0 the distribution places all of its mass on the ma

@@ -1,0 +1,5 @@
+terpolation we model P(x|N(1) ... N(k)) as a weighted average of two distributions &#955;1P1(x|N(1), ... , N(k)) + &#955;2P2(x|N(1), ... , N(k&#8722;1)), where the distribution P2 makes an independence assumption by dropping the conditioning event N(k).
+    In a PCFG a nonterminal N can encode a collection of conditioning events N(1) ... N(k), and BN determines a distribution conditioned on N(1) ... N(k) over events represented by the rules r &#8712; RN.
+    For example, in EVG the nonterminal L1 encodes three separate pieces of conditioning information: the direction d = left, the head part-of-speech H = NN, and the argument position v = 0; BL1&#8594;YJJ NNL represents the probability of generating JJ as the first left argument of NN.
+    Suppose in EVG we are interested in smoothing P(A | d, H, v) with a component that excludes the head conditioning event.
+    Using linear interpolation, this would be: We will estimate PCFG rules with linearly interpolated probabilities by creating a tied PCFG which is exte

@@ -1,0 +1,9 @@
+ almost all parsers of interest.
+    One parsing algorithm that would seem particularly difficult to describe is Tomita's graph-structured-stack LR parsing algorithm.
+    This algorithm at first glance bears little resemblance to other parsing algorithms.
+    Despite this lack of similarity, Sikkel (1993) gives an item-based description for a Tomita-style parser for the Boolean semiring, which is also more efficient than Tomita's algorithm.
+    Sikkel's parser can be easily converted to our format, where it can be used for w-continuous semirings in general.
+    Graham, Harrison, and Ruzzo (1980) describe a parser similar to Earley's, but with several speedups that lead to significant improvements.
+    Essentially, there are three improvements in the GHR parser.
+    First, epsilon productions are precomputed; second, unary productions are precomputed; and, finally, completion is separated into two steps, allowing better dynamic programming.
+    Goodman (1998) gives a full item-based description of a GHR parser

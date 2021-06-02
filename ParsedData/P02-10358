@@ -1,0 +1,10 @@
+ccur in part because, besides minor modifications to match the bracketing for special constructions, e.g., negated infinitives, the grammar was not altered to mirror the idiosyncrasies of the WSJ bracketing.
+    To increase robustness, the standard grammar has been augmented with a FRAGMENT grammar.
+    This grammar parses the sentence as well-formed chunks specified by the grammar, in particular as Ss, NPs, PPs, and VPs.
+    These chunks have both c-structures and f-structures corresponding to them.
+    Any token that cannot be parsed as one of these chunks is parsed as a TOKEN chunk.
+    The TOKENs are also recorded in the c- and f-structures.
+    The grammar has a fewest-chunk method for determining the correct parse.
+    For example, if a string can be parsed as two NPs and a VP or as one NP and an S, the NP-S option is chosen.
+    A sample FRAGMENT c-structure and f-structure are shown in Fig.
+    1 for wsj 0231.mrg (The golden share was scheduled to expire at the beginning of), an incomplete sentence; t

@@ -1,0 +1,5 @@
+ Given the probability model p(t  |s), consider the call dev1 in this paper.
+    The search algorithm imple- distribution over all possible valid translations t for mented in the decoder is a dynamic-programming a particular input sentence s. We can initialize beam-search algorithm. this probability distribution to the uniform distribuAfter the main decoding step, rescoring with ad- tion for each sentence s in the unlabeled data U. ditional models is performed.
+    The system generates Thus, this distribution over translations of sentences a 5,000-best list of alternative translations for each from U will have the maximum entropy.
+    Under source sentence.
+    These lists are rescored with the certain precise conditions, as described in (Abney, following models: (a) the different models used in 2004), we can analyze Algorithm 1 as minimizing the decoder which are described above, (b) two dif- the entropy of the distribution over translations of U. ferent features based on IBM Model 1 (Brown et al., However, 

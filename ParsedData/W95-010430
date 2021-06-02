@@ -1,0 +1,7 @@
+ the following collocations: To some extent, all of these collocations conflict with walk.
+    Collocation (1) is the most blatant case; if it matches the target context, this logically implies that the context word walk will match.
+    If collocation (2) matches, this guarantees that one of the possible tags of walk will be present nearby the target word, thereby elevating the probability that walk will match within +k words.
+    If collocation (3) matches, this guarantees that there are two positions nearby the target word that are incompatible with walk, thereby reducing the probability that walk will match.
+    If we were to treat all of these cases as conflicts, we would end up losing a great deal of (potentially useful) evidence.
+    Instead, we adopt the more relaxed policy of only flagging the most egregious conflicts - here, the one between collocation (1) and walk.
+    In general, we will say that a collocation and a context word conflict if the collocation contains an explicit test for the context 

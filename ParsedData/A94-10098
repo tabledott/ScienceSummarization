@@ -1,0 +1,10 @@
+gether points to heuristics for making effective use of training and reestimation, together with some directions for further research.
+    Work similar to that described here has been carried out by Merialdo (1994), with broadly similar conclusions.
+    We will discuss this work below.
+    The principal contribution of this work is to separate the effect of the lexical and transition parameters of the model, and to show how the results vary with different degree of similarity between the training and test data.
+  
+  
+    The experiments were conducted using two taggers, one written in C at Cambridge University Computer Laboratory, and the other in C++ at Sharp Laboratories.
+    Both taggers implement the FB, Viterbi and BW algorithms.
+    For training from a hand-tagged corpus, the model is estimated by counting the number of transitions from each tag i to each tag j, the total occurrence of each tag i, and the total occurrence of word w with tag i.
+    Writing these as f(i, j), f(i) and f(i, w) respectively,

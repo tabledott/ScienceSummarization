@@ -1,0 +1,10 @@
+y paths that derive c from X.
+    This is the justification for the way these probabilities can be used in modified prediction and completion steps, described next.
+    4.7.2 Prediction with null productions.
+    Prediction is mediated by the left-corner relation.
+    For each X occurring to the right of a dot, we generate states for all Y that are reachable from X by way of the X &#8212;&gt;L Y relation.
+    This reachability criterion has to be extended in the presence of null productions.
+    Specifically, if X has a production X ---&gt; Y,_i Y,A then Y, is a left corner of X iff Yi, &#8226;&#8226;&#8226; , Y,_1 all have a nonzero probability of expanding to &#8364;.
+    The contribution of such a production to the left-corner probability P(X --&gt;L Y1) is The old prediction procedure can now be modified in two steps.
+    First, replace the old PL relation by the one that takes into account null productions, as sketched above.
+    From the resulting PL compute the reflexive transitive closure RL, and use 

@@ -1,0 +1,8 @@
+rithms due to the large number of fine grained senses, generally 8 to 12 per word.
+    The small volume of data combined with large number of possible senses leads to very small set of examples for most of the senses.
+    As a result, prior to clustering we filter the training and test data independently such that any instance that uses a sense that occurs in less than 10% of the available instances for a given word is removed.
+    We then eliminate any words that have less than 90 training instances after filtering.
+    This process leaves us with a set of 24 SENSEVAL-2 words, which includes the 14 nouns, 6 adjectives and 4 verbs that are shown in Table 1.
+    In creating our evaluation standard, we assume that each instance will be assigned to at most a single cluster.
+    Therefore if an instance has multiple correct senses associated with it, we treat the most frequent of these as the desired tag, and ignore the others as possible correct answers in the test data.
+    The Line, Hard and Serve corpora do n

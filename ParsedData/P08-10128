@@ -1,0 +1,9 @@
+x, distributions with fewer non-zero parameters.
+    Starting from the model from Section 2, we propose the following Bayesian extension, where A &#8212; Dir(B) means the random variable A is distributed according to a Dirichlet with parameter B: The parameters &#945;X and &#945;C control the sparsity of the two distributions in our model.
+    One is the distribution of the three possible branching choices.
+    The other is the distribution of the phrase pairs. &#945;C is crucial, since the multinomial it is controlling has a high dimension.
+    By adjusting &#945;C to a very small number, we hope to place more posterior mass on parsimonious solutions with fewer but more confident and general phrase pairs.
+    Having defined the Bayesian model, it remains to decide the inference procedure.
+    We chose Variational Bayes, for its procedural similarity to EM and ease of implementation.
+    Another potential option would be Gibbs sampling (or some other sampling technique).
+    However, in experiments in unsuper

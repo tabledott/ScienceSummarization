@@ -1,0 +1,7 @@
+erest, we can avoid sampling it directly by marginalizing it out, yielding a collapsed sampler.
+    We utilize variable blocking by jointly sampling multiple segmentation and alignment decisions.
+    We also collapse our Gibbs sampler in the standard way, by using predictive posteriors marginalized over all possible draws from the Dirichlet processes (resulting in Chinese Restaurant Processes).
+    Resampling For each bilingual phrase, we resample each word in the phrase in turn.
+    For word w in language E, we consider at once all possible segmentations, and for each segmentation all possible alignments.
+    We keep fixed the previously sampled segmentation decisions for all other words in the phrase as well as sampled alignments involving morphemes in other words.
+    We are thus considering at once: all possible segmentations of w along with all possible alignments involving morphemes in w with some subset of previously sampled languageF morphemes.3 The sampling formulas are easily derived as products of 

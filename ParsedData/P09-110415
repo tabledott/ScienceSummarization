@@ -1,0 +1,9 @@
+ and accepts any number of (&#183;, f) foreign terminal alignments.
+    An analogous set of grammar rules exists for the inverted case (see Figure 2(d) for an illustration).
+    Given this normal form, we can efficiently compute model expectations over ITG alignments without double counting.5 To our knowledge, the alteration of the normal form to accommodate null emissions is novel to this work.
+    A crucial obstacle for using the likelihood objective is that a given a* may not be in the alignment family.
+    As in our alteration to MIRA (Section 3), we could replace a* with a minimal loss in-class alignment a*&#65533;.
+    However, in contrast to MIRA, the likelihood objective will implicitly penalize proposed alignments which have loss equal to a*&#65533;.
+    We opt instead to maximize the probability of the set of alignments M(a*) which achieve the same optimal in-class loss.
+    Concretely, let m* be the minimal loss achievable relative to a* in A.
+    Then, When a* is an ITG alignment (i.e., m* is 0), 

@@ -1,0 +1,11 @@
+ion best analysis used as both directions (approximation to EM) input to bilingual parsing dency parser.
+    TX is a tag and WX is a word.
+    P indicates the parent, A the previous child, and C the nextgenerated child.
+    D is the direction (left or right).
+    The last two templates correspond to stopping.
+    0.
+    If a feature is never seen in training data, we give it the same weight as the minimum-valued feature from the training set (Bmin).
+    To handle out-of-vocabulary (OOV) words, we treat any word seen for the first time in the final 300 sentences of the training corpus as OOV.
+    The model is smoothed using a Gaussian prior with unit variance on every weight.
+    Because the left and right children of a parent are independent of each other, our model can be described as a weighted split head automaton grammar (Eisner and Satta, 1999).
+    This allowed us to use Eisner and Satta&#8217;s O(n3) parsing algorithm to speed up training.4 This speedup could not, however, be applied to the bilingual p

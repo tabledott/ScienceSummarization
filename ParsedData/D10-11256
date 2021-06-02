@@ -1,0 +1,9 @@
+ularly simple definition of f(y) is f(y) = E(i,j)E-T y(i, j)&#952;(i, j) where &#952;(i, j) is the score for dependency (i, j).
+    Models with this form are often referred to as arc-factored models.
+    In this case the optimal parse tree y* can be found efficiently using MST algorithms (McDonald et al., 2005).
+    This paper describes algorithms that compute y* for more complex definitions of f(y); in this section, we focus on algorithms for models that capture interactions between sibling dependencies.
+    To this end, we will find it convenient to define the following notation.
+    Given a vector y, define Hence y|i specifies the set of modifiers to word i; note that the vectors y|i for i = 0 ... n form a partition of the full set of variables.
+    We then assume that f(y) takes the form Thus f(y) decomposes into a sum of terms, where each fi considers modifiers to the i&#8217;th word alone.
+    In the general case, finding y* = argmaxyEY f(y) under this definition of f(y) is an NP-hard problem.
+    Howev

@@ -1,0 +1,9 @@
+ quadruples are disambiguated or SDT =3.
+    The above algorithm can be described as iterative clustering, because at first, the nearest quadruples are matched and disambiguated.
+    Then, the similarity distance threshold is raised, and the process repeats itself in the next iteration.
+    If a word is not successfully disambiguated, it is assigned its first, Le. the most frequent sense.
+    The reason for starting with the best matches is that these tend to provide better disambiguations.
+    Consider, for example, the following set of quadruples: At first, the algorithm tries to disambiguate quadruple Q1 .
+    Starting with the verb, the algorithm searches for other quadruples which have the quadruple distance (see below) smaller than the current similarity distance threshold.
+    For SDT-0 this means only for quadruples with all the words with semantic distance 0, i.e. synonyms.
+    There are no matches found for Q1 and the algorithm moves to Q2, fmding quadruple Q4 as the only one matching such criteria.

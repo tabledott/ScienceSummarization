@@ -1,0 +1,9 @@
+to be fair, we kept the total number of columns at 8,000.
+    In step 4, we selected the top 8,000 patterns (instead of the top 4,000), distinguishing the pattern &#8220;word1 P word2&#8221; from the pattern &#8220;word2 P word1&#8221; (instead of considering them equivalent).
+    Thus a pattern P with a high frequency is likely to appear in two columns, in both possible orders, but a lower frequency pattern might appear in only one column, in only one possible order.
+    These changes resulted in a slight decrease in performance.
+    Recall dropped from 56.1% to 55.3% and precision dropped from 56.8% to 55.9%.
+    The decrease is not statistically significant.
+    However, the modified algorithm no longer obeys equation (8).
+    Although dropping symmetry appears to cause no significant harm to the performance of the algorithm on the SAT questions, we prefer to retain symmetry, to ensure that equation (8) is satisfied.
+    Note that, if A:B::C:D, it does not follow that B:A::C:D. For example, it is false tha

@@ -1,0 +1,7 @@
+ uses a value of N=20 for the first iteration, which allows a variety of patterns to be considered, yet is small enough that all of the patterns are strongly associated with the category.1 The purpose of the pattern pool is to narrow down the field of candidates for the lexicon.
+    Basilisk collects all noun phrases (NPs) extracted by patterns in the pattern pool and puts the head noun of each NP into the candidate word pool.
+    Only these nouns are considered for addition to the lexicon.
+    As the bootstrapping progresses, using the same value N=20 causes the candidate pool to become stagnant.
+    For example, let&#8217;s assume that Basilisk performs perfectly, adding only valid category words to the lexicon.
+    After some number of iterations, all of the valid category members extracted by the top 20 patterns will have been added to the lexicon, leaving only non-category words left to consider.
+    For this reason, the pattern pool needs to be infused with new patterns so that more nouns (extractions) 

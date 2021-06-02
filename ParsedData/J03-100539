@@ -1,0 +1,6 @@
+ardinality histogram pruning is denoted by nc: If the numbers of active hypotheses for each coverage set C and cardinality c, N(C) and N(c), exceed the above thresholds, only the partial hypotheses with the highest translation probabilities are retained (e.g., we may use nc = 1,000 for the coverage histogram pruning).
+    The third type of pruning conducted observation pruning: The number of words that may be produced by a source word f is limited.
+    For each source language word f the list of its possible translations e is sorted according to where puni(e) is the unigram probability of the target language word e. Only the best no target words e are hypothesized during the search process (e.g., during the experiments to hypothesize, the best no = 50 words was sufficient.
+    In this section, we describe the implementation of the beam search algorithm presented in the previous sections and show how it is applied to the full set of IBM-4 model parameters.
+    3.9.1 Baseline DP Implementation.
+    The implemen

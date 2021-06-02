@@ -1,0 +1,6 @@
+the model is approximate is that we are associating probabilities with the context-free backbone of the unification grammar.
+    Successful unification of features at parse time does not affect the probability of a (partial) analysis, while unification failure, in effect, sets the probability of any such analysis to zero.
+    As long as we only use the probabilistic model to rank successful analyses, this is not particularly problematic.
+    However, parser control regimes that attempt some form of best-first search using probabilistic information associated with transitions might not yield the desired result given this property.
+    For example, it is not possible to use Viterbi-style optimization of search for the maximally probable parse because this derivation may contain a sub-analysis that will be pruned locally before a subsequent unification failure renders the current most probable analysis impossible.
+    In general, the current breadth-first probabilistic parser is more efficient than its nonprobab

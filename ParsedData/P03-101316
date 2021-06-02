@@ -1,0 +1,8 @@
+s model gains only about 1%.
+    Perfect tagging results in a performance increase of over 10% for the models with grammatical functions.
+    This is not surprising, as the perfect tags (but not the TnT tags) include grammatical function labels.
+    However, we also observe a dramatic reduction in coverage (to about 65%).
+    We added grammatical functions to both the baseline model and the C&amp;R model, as we predicted that this would allow the model to better capture the wordorder facts of German.
+    However, this prediction was not borne out: performance with grammatical functions (on TnT tags) was slightly worse than without, and coverage dropped substantially.
+    A possible reason for this is sparse data: a grammar augmented with grammatical functions contains many additional categories, which means that many more parameters have to be estimated using the same training set.
+    On the other hand, a performance increase occurs if the tagger also provides grammatical function labels (simulated in the pe

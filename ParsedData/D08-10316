@@ -1,0 +1,7 @@
+l. (2007) introduced a model that predicts whether a pair of equivalence classes should be merged, using features computed over all the mentions in both classes.
+    Since the number of possible classes is exponential in the number of mentions, they use heuristics to select training examples.
+    Our method does not require determining which equivalence classes should be considered as examples.
+    Learning the pairwise scoring function pc is a crucial issue for the pairwise coreference model.
+    We apply machine learning techniques to learn from examples a function pc that takes as input an ordered pair of mentions (a, m) such that a precedes m in the document, and produces as output a value that is interpreted as the conditional probability that m and a belong in the same equivalence class.
+    The ACE training data provides the equivalence classes for mentions.
+    However, for some pairs of mentions from an equivalence class, there is little or no direct evidence in the text that the mentions are corefer

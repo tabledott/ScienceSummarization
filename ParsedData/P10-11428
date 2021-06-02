@@ -1,0 +1,6 @@
+gorithm for constructing a coreference partition.
+    As noted above, the primary purpose of training instance creation is to reduce class skewness.
+    Many heuristic instance creation methods have been proposed, among which Soon et al.&#8217;s (1999; 2001) is arguably the most popular choice.
+    Given an anaphoric noun phrase3, NPk, Soon et al.&#8217;s method creates a positive instance between NPk and its closest preceding antecedent, NPj, and a negative instance by pairing NPk with each of the intervening NPs, NPj+1, ..., NPk&#8722;1.
+    With an eye towards improving the precision of a coreference resolver, Ng and Cardie (2002c) propose an instance creation method that involves a single modification to Soon et al.&#8217;s method: if NPk is non-pronominal, a positive instance should be formed between NPk and its closest preceding nonpronominal antecedent instead.
+    This modification is motivated by the observation that it is not easy for a human, let alone a machine learner, to learn from a positive in

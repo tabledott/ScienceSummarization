@@ -1,0 +1,7 @@
+mostly be used as stacks.
+    The transition set T for the non-projective, list-based parser is defined in Figure 7 and contains four types of transitions: 1.
+    Transitions LEFT-ARCnl (for any dependency label l) add a dependency arc (j, l, i) to A, where i is the head of the list &#955;1 and j is the first node in the buffer &#946;.
+    In addition, they move i from the list &#955;1 to the list &#955;2.
+    They have as a precondition that the token i is not the artificial root node and does not already have a head.
+    In addition, there must not be a path from i to j in the graph G = ({0,1,...,n},A).5 The non-projective, list-based parser essentially builds a dependency graph by considering every pair of nodes (i, j) (i &lt; j) and deciding whether to add a dependency arc between them (in either direction), although the SHIFT transition allows it to skip certain pairs.
+    More precisely, if i is the head of &#955;1 and j is the first node in the buffer &#946; when a SHIFT transition is performed, then a

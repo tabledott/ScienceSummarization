@@ -1,0 +1,8 @@
+parser associates a parse with a score v&#952;(y), which is a linear function of the feature values f(y).
+    That is, each feature fj is associated with a weight &#952;j, and the feature values and weights define the score v&#952;(y) of each parse y as follows: Given a string s, the reranking parser&#8217;s output &#710;y(s) on string s is the highest scoring parse in the n-best parses Y(s) for s, i.e., The feature weight vector &#952; is estimated from the labelled training corpus as described in section 4.
+    Because we use labelled training data we know the correct parse y?
+    (s) for each sentence s in the training data.
+    The correct parse y?
+    (s) is not always a member of the n-best parser&#8217;s output Y(s), but we can identify the parses Y+(s) in Y(s) with the highest f-scores.
+    Informally, the estimation procedure finds a weight vector &#952; that maximizes the score v&#952;(y) of the parses y E Y+(s) relative to the scores of the other parses in Y(s), for each s in the training data.
+  

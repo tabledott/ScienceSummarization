@@ -1,0 +1,11 @@
+e ? BS(v) do . for all incoming hyperarcs 4: D?1(v)?
+			min?(D?1(v), ?e, 1?)
+			update Figure 3: The generic 1-best Viterbi algorithm item (or equivalently, a vertex in hypergraph) can appear twice in an Earley derivation because of the prediction rule (see Figure 2 for an example).
+			The k-best derivations problem has potentially more applications in tree generation (Knight and Graehl,2005), which can not be modeled by hyperpaths.
+			But de tailed discussions along this line are out of the scope of this paper.
+	
+	
+			The traditional 1-best Viterbi algorithm traverses the hypergraph in topological order and for each vertex v, calculates its 1-best derivation D1(v) using all incoming hy perarcs e ? BS(v) (see Figure 3).
+			If we take the arity ofthe hypergraph to be constant, then the overall time com plexity of this algorithm is O(|E|).
+			4.1 Algorithm 0: na??ve.
+			Following (Goodman, 1999; Mohri, 2002), we isolate two basic operations in line 4 of the 1-best algorithm that 56 can be generalized in order t

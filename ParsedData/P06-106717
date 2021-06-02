@@ -1,0 +1,8 @@
+ith the minimum cost as in (Tillmann and Ney, 2003) and (Koehn, 2004) .
+    The distortion cost is added to the log-linear mixture of the hypothesis extension in a fashion similar to the language model cost.
+    A hypothesis covers a subset of the source words.
+    The final translation is a hypothesis that covers all source words and has the minimum cost among all possible 9 hypotheses that cover all source words.
+    A hypothesis h is extended by matching the phrase dictionary against source word sequences in the input sentence that are not covered in h. The cost of the new hypothesis C(hn w) = C(h) + C(e), where C(e) is the cost of this extension.
+    The main components of the cost of extension e can be defined by the following equation: where CLM(e) is the language model cost, CTM (e) is the translation model cost, and CD(e) is the distortion cost.
+    The extension cost depends on the hypothesis being extended, the phrase being used in the extension, and the source word positions being covered.
+    The 

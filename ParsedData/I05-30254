@@ -1,0 +1,7 @@
+ry (OOV) words.
+  Segmenting a text with many OOV words tends to result in lower accuracy.
+  We ad- dress the problem of OOV words in two ways: using an external dictionary containing a list of predefined words, and using additional training corpora which are not segmented according to the same segmentation standard.
+  1.2 External Dictionary If a sequence of characters in a sentence matches a word in an existing dictionary, it may be a clue that the sequence of characters should be segmented as one word.
+  We used an online dictionary from Peking University downloadable from the Internet2, consisting of about 108,000 words of length one to four characters.
+  If there is some sequence of neighboring characters around C0 in the sentence that matches a word in this dictionary, then we greedily choose the longest such matching word W in the dictionary.
+  Let t0 be the boundary tag of C0 in W , L the number of characters in W , and C1(C?1) be the character 2http://ccl.pku.edu.cn/doubtfire/Course/ Chinese%20Inform

@@ -1,0 +1,9 @@
+umber of assigned entries exceeds n, or the accumulated probability exceeds c. If this procedure does not assign a lexical entry necessary to produce a correct parse (i.e., an oracle lexical entry), it is added to the list of lexical entries.
+    It should be noted that oracle lexical entries are given by the HPSG treebank.
+    This assures that the filtering method does not exclude correct parse trees from parse forests.
+    Figure 19 shows an example of filtering the lexical entries assigned to saw.
+    With c = 0.95, four lexical entries are assigned.
+    Although the lexicon includes other lexical entries, such as a verbal entry taking a sentential complement (p = 0.01 in the figure), they are filtered out.
+    Although this method reduces the time required for parsing a treebank, this approximation causes bias in the training data and results in lower accuracy.
+    The tradeoff between parsing cost and accuracy will be examined experimentally in Section 5.4.
+    We have several ways to integrate p&#175; 

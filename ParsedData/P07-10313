@@ -1,0 +1,8 @@
+y resolves NPs dominating MWEs or NEs.
+    Understanding base-NP structure is important, since otherwise parsers will propose nonsensical noun phrases like Force contract by default and pass them onto downstream components.
+    For example, Question Answering (QA) systems need to supply an NP as the answer to a factoid question, often using a parser to identify candidate NPs to return to the user.
+    If the parser never generates the correct sub-NP structure, then the system may return a nonsensical answer even though the correct dominating noun phrase has been found.
+    Base-NP structure is also important for annotated data derived from the Penn Treebank.
+    For instance, CCGbank (Hockenmaier, 2003) was created by semi-automatically converting the Treebank phrase structure to Combinatory Categorial Grammar (CCG) (Steedman, 2000) derivations.
+    Since CCG derivations are binary branching, they cannot directly represent the flat structure of the Penn Treebank base-NPs.
+    Without the correct bracketing in

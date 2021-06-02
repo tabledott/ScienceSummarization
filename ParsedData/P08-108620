@@ -1,0 +1,8 @@
+   (11).
+    The weights are trained using minimum error rate training (Och, 2003) with BLEU score as the objective function.
+    The dev and test data sets contain parts of the 2003, 2004 and 2005 Arabic NIST MT evaluation sets among other parallel data.
+    The blind test data used is the &#8220;NIST&#8221; part of the 2006 Arabic-English NIST MT evaluation set, and is not included in the training data.
+    For the first experiment we trained predictive class-based 5-gram models using clusterings with 64, 128, 256 and 512 clusters1 on the en target data.
+    We then added these models as additional features to the log linear model of the Arabic-English machine translation system.
+    The word-based language model used by the system in these experiments is a 5-gram model also trained on the en target data set.
+    Table 1 shows the BLEU scores reached by the translation system when combining the different class-based models with the word-based model in comparison to the BLEU scores by a system using only the

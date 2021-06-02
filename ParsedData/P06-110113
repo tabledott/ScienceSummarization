@@ -1,0 +1,5 @@
+ predicting the hypernym relationship are obtained by parsing a large corpus of newswire and encyclopedia text with MINIPAR (Lin, 1998).
+    From the resulting dependency trees the evidence EHij for each word pair (i, j) is constructed; the evidence takes the form of a vector of counts of occurrences that each labeled syntactic dependency path was found as the shortest path connecting i and j in some dependency tree.
+    The labeled training set is constructed by labeling the collected feature vectors as positive &#8220;known hypernym&#8221; or negative &#8220;known non-hypernym&#8221; examples using WordNet 2.0; 49,922 feature vectors were labeled as positive training examples, and 800,828 noun pairs were labeled as negative training examples.
+    The model for predicting P(Hij|EHij ) is then trained using logistic regression, predicting the noun-pair hypernymy label from WordNet from the feature vector of lexico-syntactic patterns.
+    The hypernym classifier described above predicts the probability of the 

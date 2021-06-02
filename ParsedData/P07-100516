@@ -1,0 +1,6 @@
+ only one chunk e3e4e5 via its alignment with e3.
+    Since &#8220;every month&#8221; is a sub-sequence of the chunk and also contains the word e3 (&#8220;every&#8221;), it is noted as a candidate translation.
+    Later, it is determined that the most number of words any candidate translation has is two words.
+    Since among all the 2-word candidate translations, the translation &#8220;every month&#8221; has the highest translation probability as assigned by the WSD classifier, it is chosen as the best matching translation for the chunk. matchWSD is then invoked for c2, which is aligned to only one chunk e3e4e5.
+    However, since this chunk has already been examined by c1 with which it is considered as a phrase, no further matching is done for c2.
+    Next, matchWSD is invoked for c3, which is aligned to both chunks of R. The English phrases &#8220;go to&#8221; and &#8220;to&#8221; are among the list of translations proposed by the WSD system for c3, and they are eventually chosen as the best matching trans

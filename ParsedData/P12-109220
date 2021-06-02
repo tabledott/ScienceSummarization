@@ -1,0 +1,8 @@
+cribe each step in detail.
+			In step 1, in order to make sure we select a diverse list of words, we consider three attributes of a word: frequency in a corpus, number of parts of speech, and number of synsets according to WordNet.
+			For frequency, we divide words into three groups, top 2,000 most frequent, between 2,000 and 5,000, and between 5,000 to 10,000 based on occurrences in Wikipedia.
+			For number of parts of speech, we group words based on their number of possible parts of speech (noun, verb or adjective), from 1 to 3.
+			We also group words by their number of synsets: [0,5],[6,10], [11, 20], and [20, max].
+			Finally, we sam ple at most 15 words from each combination in the Cartesian product of the above groupings.
+			In step 2, for each of the words selected in step 1, we want to choose the other word so that the paircaptures an interesting relationship.
+			Similar to Manandhar et al (2010), we use WordNet to first ran domly select one synset of the first word, we then construct a set of words i

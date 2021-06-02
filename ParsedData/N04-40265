@@ -1,0 +1,9 @@
+ing data, block has been seen times with left orientation, and with right orientation, i.e. it is always involved in swapping.
+    This intuition is formalized using unigram counts with orientation.
+    The orientation model is related to the distortion model in (Brown et al., 1993), but we do not compute a block alignment during training.
+    We rather enumerate all relevant blocks in some order.
+    Enumeration does not allow us to capture position dependent distortion probabilities, but we can compute statistics about adjacent block predecessors.
+    Our baseline model is the unigram monotone model described in (Tillmann and Xia, 2003).
+    Here, we select blocks from word-aligned training data and unigram block occurrence counts are computed: all blocks for a training sentence pair are enumerated in some order and we count how often a given block occurs in the parallel training data 1.
+    The training algorithm yields a list of about blocks per training sentence pair.
+    In this paper, we make extended 

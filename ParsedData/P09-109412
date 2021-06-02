@@ -1,0 +1,9 @@
+introduce the detail of the approach.
+    We assign the score &#8220;1&#8221; for any pair of paraphrase collocations.
+    PT-5 contains 238,882 pairs of paraphrase collocations.
+    To estimate parameters &#955;k(1 &lt; k &lt; K), &#955;lm, and &#955;um, we adopt the approach of minimum error rate training (MERT) that is popular in SMT (Och, 2003).
+    In SMT, however, the optimization objective function in MERT is the MT evaluation criteria, such as BLEU.
+    As we analyzed above, the BLEU-style criteria cannot be adapted in SPG.
+    We therefore introduce a new optimization objective function in this paper.
+    The basic assumption is that a paraphrase should contain as many correct unit replacements as possible.
+    Accordingly, we design the following criteria: Replacement precision (rp): rp assesses the precision of the unit replacements, which is defined as rp = cdev(+r)/cdev(r), where cdev(r) is the total number of unit replacements in the generated paraphrases on the development set. cdev(+r) is the 

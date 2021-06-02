@@ -1,0 +1,10 @@
+are 45).
+  
+  
+    To apply co-training, the base NP classification task must first be factored into views.
+    For the JOB instances (vectors of part-of-speech tags indexed from &#8212;k to k) a view corresponds to a subset of the set of indices {&#8212;k, , k} .
+    The most natural views are perhaps {&#8212;k, , Of and {0, , k}, indicating that one classifier looks at the focus tag and the tags to its left, while the other looks at the focus tag and the tags to its right.
+    Note that these views certainly violate the desideratum of conditional independence between view features since both include the focus tag.
+    Other views, such as left/right views omitting the focus tag, for example, may be more theoretically attractive, but we found that the left/right views including focus proved most effectual in practice.
+    The JOB tagging task requires some minor modifications to the CT algorithm.
+    First, it is impractical for the co-training classifiers to predict labels for each instance from the enormou

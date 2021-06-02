@@ -1,0 +1,10 @@
+roduct of the probabilities of all rules in the derivation D. F is the product of PD and a look-ahead probability, LAP(S,w,), which is a measure of the likelihood of the stack S rewriting with w, at its left corner.
+    We can define a derives relation, denoted between two candidate analyses as follows.
+    (D, S, PD, F, w'n = (D' , S' , Pp, F' w) if and only if12 The parse begins with a single candidate analysis on the priority queue: ), st$, 1, 1, 4).
+    Next, the top ranked candidate analysis, C = (D, 5, PD, F, wr,l), is popped from the priority queue.
+    If S = $ and w, = Vs), then the analysis is complete.
+    Otherwise, all C' such that C C' are pushed onto the priority queue.
+    We implement this as a beam search.
+    For each word position i, we have a separate priority queue H, of analyses with look-ahead w,.
+    When there are &amp;quot;enough&amp;quot; analyses by some criteria (which we will discuss below) on priority queue H,+1, all candidate analyses remaining on H, are discarded.
+    Since w

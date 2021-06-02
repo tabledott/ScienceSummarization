@@ -1,0 +1,8 @@
+ on the entropy of the probability distribution over all parses returned by the parser.
+    Other possible selection methods include selecting examples that one parser scored highly and another parser scored lowly, and methods based on disagreements on the label between the two parsers.
+    These methods build on the idea that the newly labelled data should not only be reliably labelled by the teacher, but also be as useful as possible for the student.
+    The pseudo-code for the co-training process is given in Figure 1, and consists of two different parsers and a central control that interfaces between the two parsers and the data.
+    At each co-training iteration, a small set of sentences is drawn from a large pool of unlabelled sentences and stored in a cache.
+    Both parsers then attempt to parse every sentence in the cache.
+    Next, a subset of the sentences newly labelled by one parser is added to the training data of the other parser, and vice versa.
+    The general control flow of our system is sim

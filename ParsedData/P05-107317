@@ -1,0 +1,8 @@
+ture uses the actual predicate lemma in addition to &#8220;voice:active&#8221;.
+    Additionally, we define variations of these feature templates that concatenate the label sequence with features of individual nodes.
+    We experimented with variations, and found that including the phrase type and the head of a directly dominating PP &#8211; if one exists &#8211; was most helpful.
+    We also add a feature that detects repetitions of the same label in a candidate argument sequence, together with the phrase types of the nodes labeled with that label.
+    For example, (NP-ARG0,WHNP-ARG0) is a common pattern of this form.
+    Frame Features: Another very effective class of features we defined are features that look at the label of a single argument node and internal features of other argument nodes.
+    The idea of these features is to capture knowledge about the label of a constituent given the syntactic realization of all arguments of the verb.
+    This is helpful to capture syntactic alternations, such as the

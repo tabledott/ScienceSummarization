@@ -1,0 +1,8 @@
+ximum context length and maintains statistics for this and all shorter contexts.
+    The maximum is five in most of the experiments below, and statistics are maintained for models of order 5, 4, 3, 2, 1, and 0.
+    These are not stored separately; they are all kept in a single trie structure.
+    PPM incorporates a simple and highly effective method to combine the predictions of the models of different order&#8212;often called the problem of &amp;quot;backoff.&amp;quot; To encode the next symbol, it starts with the maximum-order model (order 5).
+    If that model contains a prediction for the upcoming character, the character is transmitted according to the order 5 distribution.
+    Otherwise, both encoder and decoder escape down to order 4.
+    There are two possible situations.
+    If the order 5 context&#8212;that is, the preceding five-character sequence&#8212;has not been encountered before, then escape to order 4 is inevitable, and both encoder and decoder can deduce that fact without requiring any comm

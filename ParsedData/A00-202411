@@ -1,0 +1,8 @@
+e first mathematically formulated the problem, reducing it to a problem of finding, for each word in a summary sentence, a document position that it most likely comes from.
+    The position of a word in a document is uniquely identified by the position of the sentence where the word appears, and the position of the word within the sentence.
+    Based on the observation of cut and paste practice by humans, we produced a set of general heuristic rules.
+    Sample heuristic rules include: two adjacent words in a summary sentence are most likely to come from two adjacent words in the original document; adjacent words in a summary sentence are not very likely to come from sentences that are far apart in the original document.
+    We use these heuristic rules to create a Hidden Markov Model.
+    The Viterbi algorithm (Viterbi, 1967) is used to efficiently find the most likely document position for each word in the summary sentence.
+    Figure 2 shows sample output of the program.
+    For the given summary sentence,

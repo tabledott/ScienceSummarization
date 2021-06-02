@@ -1,0 +1,7 @@
+ restarts and repairs using the terminology of Shriberg [15].
+    The disfluencies include repetitions and substitutions, italicized in (1a) and (1b) respectively.
+    Restarts and repairs are indicated by disfluency tags &#8216;[&#8217;, &#8216;+&#8217; and &#8216;]&#8217; in the disfluency POS-tagged Switchboard corpus, and by EDITED nodes in the tree-tagged corpus.
+    This section describes a procedure for automatically identifying words corrected by a restart or repair, i.e., words that 1Indeed, [17] suggests that filled pauses tend to indicate clause boundaries, and thus may be a help in parsing. are dominated by an EDITED node in the treetagged corpus.
+    This method treats the problem of identifying EDITED nodes as a word-token classification problem, where each word token is classified as either edited or not.
+    The classifier applies to words only; punctuation inherits the classification of the preceding word.
+    A linear classifier trained by a greedy boosting algorithm [16] is used to predict 

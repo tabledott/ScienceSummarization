@@ -1,0 +1,8 @@
+ne billion words of English, used by the syntax-based system, and one on two billion words of English, used by Hiero.
+    Modified Kneser-Ney smoothing (Chen and Goodman, 1998) was applied to all language models.
+    The language models are represented using randomized data structures similar to those of Talbot et al. (2007).
+    Our tuning set (2010 sentences) and test set (1994 sentences) were drawn from newswire data from the NIST 2004 and 2005 evaluations and the GALE program (with no overlap at either the segment or document level).
+    For the source-side syntax features, we used the Berkeley parser (Petrov et al., 2006) to parse the Chinese side of both sets.
+    We implemented the source-side context features for Hiero and the target-side syntax features for the syntax-based system, and the discount features for both.
+    We then ran MIRA on the tuning set with 20 parallel learners for Hiero and 73 parallel learners for the syntax-based system.
+    We chose a stopping iteration based on the BLEU score

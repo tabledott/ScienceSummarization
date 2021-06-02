@@ -1,0 +1,6 @@
+Since we are dealing with few parameters and have sufficiently many training instances, using more advanced training algorithms is unlikely to bring significant improvements.
+    We test the performance of the classifier by generating test instances from a different parallel corpus (also around 5,000 sentence pairs) and checking how many of these instances are correctly classified.
+    We prepare the test set by creating the Cartesian product of the sentences in the test parallel corpus and applying the word-overlap filter (we do not perform any balancing).
+    Although we apply the filter, we still conceptually classify all pairs from the Cartesian product in a two-stage classification process: all pairs discarded by the filter are classified as &#8221;non-parallel,&#8221; and for the rest, we obtain predictions from the classifier.
+    Since this is how we apply the system on truly unseen data, this is the process in whose performance we are interested.
+    We measure the performance of the classification p

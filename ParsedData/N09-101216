@@ -1,0 +1,10 @@
+inals to be annotated with both the word and part-of-speech of the head.
+    We first remove the old rules YH &#8212;* LH RH for each H E VT. Then we mark each nonterminal which is annotated with a part-of-speech as also annotated with its head, with a single exception: YH.
+    We add a new nonterminal YH,h for each H E VT, h E Vw, and the rules YH &#8212;* YH,h and YH,h &#8212;* LH,h RH,h.
+    The rule YH &#8212;* YH,h corresponds to selecting the word, given its part-ofspeech.
+  
+  
+    In supervised estimation one common smoothing technique is linear interpolation, (Jelinek, 1997).
+    This section explains how linear interpolation can be represented using a PCFG with tied rule probabilities, and how one might estimate smoothing parameters in an unsupervised framework.
+    In many probabilistic models it is common to estimate the distribution of some event x conditioned on some set of context information P(x|N(1) ... N(k)) by smoothing it with less complicated conditional distributions.
+    Using linear in

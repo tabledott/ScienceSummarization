@@ -1,0 +1,9 @@
+language, and moreover the immediate-dominance (ID) productions would typically be more complex than binary-branching.
+    This significantly increases time complexity, compared to our BTG model.
+    Although it is not mentioned in their paper, the time complexity for ID/LP parsing rises exponentially with the length of production right-hand-sides, due to the number of permutations.
+    ITGs avoid this with their restriction to inversions, rather than permutations, and BTGs further minimize the grammar size.
+    We have also confirmed empirically that our models would not be feasible under general permutations.
+    Assume the number of translations per word is bounded by some constant.
+    Then the maximum size of E(s,t) is proportional to t &#8212; s. The asymptotic time complexity for the translation algorithm is thus bounded by 0(T7).
+    Note that in practice, actual performance is improved by the sparseness of the translation matrix.
+    An interesting connection has been suggested to direct parsing for 

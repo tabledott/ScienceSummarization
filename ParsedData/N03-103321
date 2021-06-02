@@ -1,0 +1,5 @@
+t as/INX as/IN &#8211; since the tag sequence probabilities do not give strong reasons to disprefer the most common tagging of as (it is tagged as IN over 80% of the time).
+    However, the model 3W+TAGS, which uses two right tags and the two surrounding words in addition, made only 8 errors of this kind, and model BEST made only 6 errors.
+    Most of the models presented here use a set of unknown word features basically inherited from (Ratnaparkhi, 1996), which include using character n-gram prefixes and suffixes (for n up to 4), and detectors for a few other prominent features of words, such as capitalization, hyphens, and numbers.
+    Doing error analysis on unknown words on a simple tagging model (with (t0, t&#8722;1), (t0, t&#8722;1, t&#8722;2), and (w0, t0) features) suggested several additional specialized features that can usefully improve performance.
+    By far the most significant is a crude company name detector which marks capitalized words followed within 3 words by a company name suffix like Co

@@ -1,0 +1,8 @@
+ phrase (e.g., &amp;quot;np&amp;quot; or &amp;quot;vp&amp;quot;), it also annotates the thematic role of a phrase (e.g., &amp;quot;subject&amp;quot; or &amp;quot;object&amp;quot;).
+    There are five steps in the reduction program: Step 1: Syntactic parsing.
+    We first parse the input sentence using the ESG parser and produce the sentence parse tree.
+    The operations in all other steps are performed based on this parse tree.
+    Each following step annotates each node in the parse tree with additional information, such as syntactic or context importance, which are used later to determine which phrases (they are represented as subtrees in a parse tree) can be considered extraneous and thus removed.
+    Step 2: Grammar checking.
+    In this step, we determine which components of a sentence must not be deleted to keep the sentence grammatical.
+    To do this, we traverse the parse tree produced in the first step in top-down order and mark, for each node in the parse tree, which of its children are grammatica

@@ -1,0 +1,8 @@
+ dip is noise in the parse trees added by cotraining.
+    Pierce and Cardie (2001) noted a similar behaviour when they co-trained shallow parsers. upper curve is for 1,000 sentences labelled data from Brown plus 100 WSJ sentences; the lower curve only uses 1,000 sentences from Brown.
+    The second co-training experiment was the same as the first, except that more seed data was used: the first 1,000 sentences from sections 2-21 of the Treebank.
+    Figure 7 gives the results, and, for comparison, also shows the previous performance curve for the 500 seed set experiment.
+    The key observation is that the benefit of co-training is greater when the amount of seed material is small.
+    Our hypothesis is that, when there is a paucity of initial seed data, coverage is a major obstacle that co-training can address.
+    As the amount of seed data increases, coverage becomes less of a problem, and the co-training advantage is diminished.
+    This means that, when most sentences in the testing set can be parsed, sub

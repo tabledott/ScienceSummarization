@@ -1,0 +1,11 @@
+he sum of the individual words&#8217; IC.
+    The calculation of the IC was done as described for the ante ic feature.
+  
+  
+    All experiments were performed using the decision tree learner RPART (Therneau &amp; Atkinson, 1997), which is a CART (Breiman et al., 1984) reimplementation for the S-Plus and R statistical computing environments (we use R, Ihaka &amp; Gentleman (1996), see http://www.r-project.org).
+    We used the standard pruning and control settings for RPART (cp=0.0001, minsplit=20, minbucket=7).
+    All results reported were obtained by performing 20-fold crossvalidation.
+    In the prediction phase, the trained classifier is exposed to unlabeled instances of test data.
+    The classifier&#8217;s task is to label each instance.
+    When an instance is labeled as coreferring, the IDs of the anaphor and antecedent are kept in a response list for the evaluation according to Vilain et al. (1995).
+    For determining the relevant feature set we followed an iterative procedure similar to the wrappe

@@ -1,0 +1,17 @@
+?which?
+			SBAR 1 false 0.9984 ?which?
+			SBAR 2 true 0.0835 ?which?
+			SBAR 2 false 0.9165 Table 3: Segmentation Feature Table (SFT) Actually, we do not use the direct constituent of a word in the parse tree.
+			In our example, the directconstituent of the word ?which?
+			is ?WHNP?.
+			In stead, we use Alg.
+			1 to calculate the constituentof a word.
+			Alg.
+			1 returns ?SBAR?
+			as the adjusted constituent for ?which?.
+			Moreover, di rectly using the length of the complex sentenceis affected by the data sparseness problem.
+			In stead, we use iLength as the feature which is calculated as iLength = ceiling( comLengthavgSimLength), where comLength is the length of the complex sentence and avgSimLength is the average length of simple sentences in the training dataset.
+			The ?Prob.?
+			column shows the probabilities obtained after training on our dataset.
+			Algorithm 1 adjustConstituent(word, tree) constituent?
+			word.father; father ? constituent.father; while father 6= NULL AND constituent is the most lef

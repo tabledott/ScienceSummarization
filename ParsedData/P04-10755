@@ -1,0 +1,7 @@
+e and semantic trigger features (Shen et al. 2003).
+    The semantic trigger features consist of some special head nouns for an entity class which is supplied by users.
+    Furthermore, a window (size = 7), which represents the local context of the target word w, is also used to classify w. However, for active learning in NER, it is not reasonable to select a single word without context for human to label.
+    Even if we require human to label a single word, he has to make an addition effort to refer to the context of the word.
+    In our active learning process, we select a word sequence which consists of a machine-annotated named entity and its context rather than a single word.
+    Therefore, all of the measures we propose for active learning should be applied to the machineannotated named entities and we have to further study how to extend the measures for words to named entities.
+    Thus, the active learning in SVMbased NER will be more complex than that in simple classification tasks, such as text clas

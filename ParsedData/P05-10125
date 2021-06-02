@@ -1,0 +1,10 @@
+been seen in namedentity extraction and shallow parsing.
+    Besides simplicity, our method is efficient and accurate, as we demonstrate experimentally on English and Czech treebank data.
+  
+  
+    In what follows, the generic sentence is denoted by x (possibly subscripted); the ith word of x is denoted by xi.
+    The generic dependency tree is denoted by y.
+    If y is a dependency tree for sentence x, we write (i, j) E y to indicate that there is a directed edge from word xi to word xj in the tree, that is, xi is the parent of xj.
+    T = {(xt, yt)}t_1 denotes the training data.
+    We follow the edge based factorization method of Eisner (1996) and define the score of a dependency tree as the sum of the score of all edges in the tree, where f(i, j) is a high-dimensional binary feature representation of the edge from xi to xj.
+    For example, in the dependency tree of Figure 1, the following feature would have a value of 1: In general, any real-valued feature may be used, but we use binary features for simp

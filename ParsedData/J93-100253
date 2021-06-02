@@ -1,0 +1,5 @@
+ LR parser faces an indeterminacy when it enters a state in which there is more than one possible action, given the current lookahead.
+    In a particular state there cannot be more than one shift or accept action, but there can be several reduce actions, each specifying a reduction with a different rule.
+    When parsing, each shift or reduce choice must lead to a different final structure, and so the indeterminacy represents a point of syntactic ambiguity (although it may not correspond to a genuinely global syntactic ambiguity in the input, on account of the limited amount of lookahead).
+    In the ANLT grammar and lexicon, lexical ambiguity is at least as pervasive as structural ambiguity.
+    A naive implementation of an interactive LR parser would ask the user the correct category for each ambiguous word as it was shifted; many open-class words are assigned upwards of twenty lexical categories by the ANLT lexicon with comparatively fine distinctions between them, so this strategy would be completely imp

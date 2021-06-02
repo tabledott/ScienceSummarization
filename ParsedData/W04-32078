@@ -1,0 +1,7 @@
+r described by Eisner&#8217;s (1996) model C, but instead of the rules receiving conditional probabilities, we use a log-linear model and allow arbitrary weights.
+    The model does not predict POS tags; it assumes they are given, even in test.
+    Note that the dynamic program used for inference of bilexical parses is indifferent to the origin of the rule weights; they could be log-probabilities or arbitrary numbers, as in our model.
+    The parsing algorithm need not change to accommodate the new parameterization.
+    In this model, the probability of a (sentence, tree) pair (E, T) is given by: where 0 are the model parameters and f is a vector function such that fi is equal to the number of times a feature (e.g., a production rule) fires in (E, T).
+    Parameter estimation consists of selecting weights 0 to maximize the conditional probability of the correct parses given observed sentences:3 Another important advantage of moving to log-linear models is the simple handling of data sparseness.
+    The featur

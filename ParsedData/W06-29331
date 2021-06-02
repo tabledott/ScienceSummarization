@@ -1,0 +1,5 @@
+ first proposed for unlabeled dependency parsing by Nivre (2003) and extended to labeled dependency parsing by Nivre et al. (2004).
+    The algorithm builds a labeled dependency graph in one left-to-right pass over the input, using a stack to store partially processed tokens and adding arcs using four elementary actions (where top is the token on top of the stack and next is the next token): Although the parser only derives projective graphs, the fact that graphs are labeled allows non-projective dependencies to be captured using the pseudoprojective approach of Nivre and Nilsson (2005) .
+    Another limitation of the parsing algorithm is that it does not assign dependency labels to roots, i.e., to tokens having HEAD=0.
+    To overcome this problem, we have implemented a variant of the algorithm that starts by pushing an artificial root token with ID=0 onto the stack.
+    Tokens having HEAD=0 can now be attached to the artificial root in a RIGHT-ARC(r) action, which means that they can be assigned any label.

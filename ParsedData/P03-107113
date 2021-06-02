@@ -1,0 +1,5 @@
+ the Brown corpus was built by Choi (2000) to evaluate several domain-independent segmentation algorithms.
+    We reuse the same test corpus for our evaluation, in addition to two other test corpora we constructed to test how segmenters scale across genres and how they perform with texts with various number of segments.7 We designed two test corpora, each of 500 documents, using concatenated texts extracted from the TDT and WSJ corpora, ranging from 4 to 22 in number of segments.
+    LCseg depends on several parameters.
+    Parameter tuning was performed on three tuning corpora of one thousand texts each.8 We performed searches for the optimal settings of the four tunable parameters introduced above; the best performance was achieved with h = 11 (hiatus length for dividing a chain into parts), k = 2 (analysis window size), plimit = 0.1 and &#945;= 2 (thresholding limits for the hypothesized boundaries).
+    As shown in Table 1, our algorithm is significantly better than (Choi, 2000) (labeled C99) on all three

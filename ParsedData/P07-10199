@@ -1,0 +1,8 @@
+ts of the antecedent items.
+    Then we know that D1(v) = (D1(u1),D1(u2)), the upper-left corner of the grid.
+    Moreover, we know that D2(v) is the better of (D1(u1), D2(u2)) and (D2(u1),D1(u2)), the two neighbors of the upper-left corner.
+    We continue in this way (see Figure 1(b)&#8211;(d)), enumerating the consequent items best-first while keeping track of a relatively small number of candidates (shaded cells in Figure 1(b), cand in Figure 2) for the next-best item.
+    However, when we take into account the combination costs, this grid is no longer monotonic in general, and the above algorithm will not always enumerate items in best-first order.
+    We can see this in the first iteration in Figure 1(b), where an item with score 2.5 has been enumerated even though there is an item with score 2.4 still to come.
+    Thus we risk making more search errors than the full-integration method, but in practice the loss is much less significant than the speedup.
+    Because of this disordering, we do not put the

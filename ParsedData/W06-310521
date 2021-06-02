@@ -1,0 +1,9 @@
+ion model weights during decoding does not close the performance gap between OH and OEM.
+    In light of the low entropy of OEM, we could hope to improve translations by retaining entropy.
+    There are several strategies we have considered to achieve this.
+    Broadly, we have tried two approaches: combining OEM and OH via heuristic interpolation methods and modifying the training loop to limit determinism.
+    The simplest strategy to increase entropy is to interpolate the heuristic and learned phrase tables.
+    Varying the weight of interpolation showed an improvement over the heuristic of up to 0.01 for 100k sentences.
+    A more modest improvement of 0.003 for 25k training sentences appears in table 1.
+    In another experiment, we interpolated the output of each iteration of EM with its input, thereby maintaining some entropy from the initialization parameters.
+    BLEU score increased to a maximum of 0.394 using this technique with 100k training sentences, outperforming the heuristic by a slim margin 

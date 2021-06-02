@@ -1,0 +1,5 @@
+ansitivity constraints are a useful source of information, which can and should be incorporated into an ILP-based coreference system.
+    For this goal, we put aside the anaphoricity classifier and focus on the pairwise classifier and transitivity constraints.
+    We build a pairwise logistic classifier, trained on all pairs of mentions, and then at test time we use an ILP solver equipped with transitivity constraints to find the most likely legal assignment to the variables which represent the pairwise decisions.1 Our results show a significant improvement compared to the naive use of the pairwise classifier.
+    Other work on global models of coreference (as opposed to pairwise models) has included: Luo et al. (2004) who used a Bell tree whose leaves represent possible partitionings of the mentions into entities and then trained a model for searching the tree; McCallum and Wellner (2004) who defined several conditional random field-based models; Ng (2005) who took a reranking approach; and Culotta et al.
+  

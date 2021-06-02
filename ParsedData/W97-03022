@@ -1,0 +1,9 @@
+refer to this kind of parser as a bottom-up chart parser.
+    The parser fills in a cell in the chart by examining the nonterminals in lower, shorter cells, and combining these nonterminals according to the rules of the grammar.
+    The more nonterminals there are in the shorter cells, the more combinations of nonterminals the parser must consider.
+    In some grammars, such as PCFGs, probabilities are associated with the grammar rules.
+    This introduces problems, since in many PCFGs, almost any combination of nonterminals is possible, perhaps with some low probability.
+    The large number of possibilities can greatly slow parsing.
+    On the other hand, the probabilities also introduce new opportunities.
+    For instance, if in a particular cell in the chart there is some nonterminal that generates the span with high probability, and another that generates that span with low probability, then we can remove the less likely nonterminal from the cell.
+    The less likely nonterminal will probably not be part

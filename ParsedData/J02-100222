@@ -1,0 +1,8 @@
+nces k units apart are incorrectly labeled as being in different segments, rather than directly reflecting the competence of the algorithm.
+    Although perfect algorithms score 0, and various degenerate ones score 0.5, numerical interpretation and comparison are difficult because it is not clear how the scores are scaled.
+  
+  
+    It turns out that a simple change to the error metric algorithm remedies most of the problems described above, while retaining the desirable characteristic of penalizing near misses less than pure false positives and pure false negatives.
+    The amended metric, which we call WindowDiff, works as follows: for each position of the probe, simply compare the number of reference segmentation boundaries that fall in this interval (ri) with the number of boundaries that are assigned by the algorithm (ai).
+    The algorithm is penalized if ri =&#65533; ai (which is computed as |ri &#8722; ai |&gt; 0).
+    More formally, where b(i, j) represents the number of boundaries between positions 

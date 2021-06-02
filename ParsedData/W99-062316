@@ -1,0 +1,8 @@
+et that gives us a fair evaluation of the Bayes models, and the Bayes switching model performs significantly better than its non-parametric counterpart.
+    The constituent voting and na&#239;ve Bayes techniques are equivalent because the parameters learned in the training set did not sufficiently discriminate between the three parsers.
+    Table 4 shows how much the Bayes switching technique uses each of the parsers on the test set.
+    Parser 3, the most accurate parser, was chosen 71% of the time, and Parser 1, the least accurate parser was chosen 16% of the time.
+    Ties are rare in Bayes switching because the models are fine-grained &#8212; many estimated probabilities are involved in each decision.
+    In the interest of testing the robustness of these combining techniques, we added a fourth, simple nonlexicalized PCFG parser.
+    The PCFG was trained from the same sections of the Penn Treebank as the other three parsers.
+    It was then tested on section 22 of the Treebank in conjunction with the othe

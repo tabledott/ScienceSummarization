@@ -1,0 +1,6 @@
+ ARG descendants.
+    Subsequently, we will talk about maximizing the sum of the logs of local probabilities rather than the product of local probabilities, which is equivalent.
+    The dynamic program works from the leaves of the tree up and finds a best assignment for each subtree, using already computed assignments for its children.
+    Suppose we want the most likely consistent assignment for subtree t with child trees t1, ... , tk each storing the most likely consistent assignment of its nodes, as well as the log-probability of the ALLNONE assignment: the assignment of NONE to all nodes in the tree.
+    The most likely assignment for t is the one that corresponds to the maximum of: Performance of local model on ALL arguments when enforcing the non-overlapping constraint or not.
+    The log-probability of the ALLNONE assignment for a tree t is the log-probability of assigning the root node of t to NONE plus the sum of the log-probabilities of the ALLNONE assignments of the child subtrees of t. Propagating

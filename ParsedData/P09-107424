@@ -1,0 +1,8 @@
+belong to class C are resolved correctly by taking the correct clustering for them from the gold standard.
+    Starting with this correct partial clustering, we run our classifier on all ordered pairs of CEs for which the second CE is of class C, essentially asking our coreference resolver to determine whether each member of class C is coreferent with each of its preceding CEs.
+    We then count the number of unique correct/incorrect links that the system introduced on top of the correct partial clustering and compute precision, recall, and F1 score.
+    This scoring function directly measures the impact of each resolution class on the overall MUC score.
+    Table 4 shows the results of our resolution class analysis on the test portions of the six data sets.
+    The # columns show the frequency counts for each resolution class, and the % columns show the distributions of the classes in each corpus (i.e.
+    17% of all resolutions in the MUC6 corpus were in the PN-e class).
+    The scr columns show the MUCRC s

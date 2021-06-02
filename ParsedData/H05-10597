@@ -1,0 +1,8 @@
+ if we have these four types of lo cal classifiers, we can consider any decompositionstructures in the decoding stage.
+			These local classi fiers can be obtained by training with corresponding neighboring tag information.
+			Training the first twotypes of classifiers is exactly the same as the training of popular left-to-right and right-to-left sequen tial classification models respectively.
+			If we take a second-order markov assumption, we need to train 16 types of local classifiers because each of the four neighboring tags of a classificationtarget has two possibilities of availability.
+			In gen eral, if we take a k-th order markov assumption, we need to train 22k types of local classifies.
+			2.1 Polynomial Time Inference.
+			This section describes an algorithm to find the de composition structure and tag sequence that give the highest probability.
+			The algorithm for the first-order case is an adaptation of the algorithm for decodingthe best sequence on a bidirectional dependency net work introduced b

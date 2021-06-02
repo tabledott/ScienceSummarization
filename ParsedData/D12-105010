@@ -1,0 +1,9 @@
+.
+    Neural Language Model Another perhaps less well-known approach to meaning representation is to represent words as continuous vectors of parameters.
+    Such word vectors can be obtained with an unsupervised neural language model (NLM, Bengio (2001); Collobert and Weston (2008)) which jointly learns an embedding of words into a vector space and uses these vectors to predict how likely a word is, given its context.
+    We induced word embeddings with Collobert and Weston (2008)&#8217;s neural language model.
+    The model is discriminative and non-probabilistic.
+    Each word i &#8712; D (the vocabulary) is embedded into a d-dimensional space using a lookup table LTW(&#183;): where W &#8712; Rd&#215;|D |is a matrix of parameters to be learned.
+    Wi &#8712; Rd is the i-th column of W and d is the word vector size to be chosen by the user.
+    The parameters W are automatically trained during the learning process using backpropagation.
+    Specifically, at each training update, the model reads an n-gram x

@@ -1,0 +1,8 @@
+dest gain was reported after re-training his parser on 30 million words.
+    The results are shown in Figure 5.
+    Here, both parsers were initialised with the first 500 sentences from the standard training split (sections 2 to 21) of the WSJ Penn Treebank.
+    Subsequent unlabelled sentences were also drawn from this split.
+    During each round of self-training, 30 sentences were parsed by each parser, and each parser was retrained upon the 20 self-labelled sentences which it scored most highly (each parser using its own joint probability (equation 1) as the score).
+    The results vary significantly between the Collins-CFG and the LTAG parser, which lends weight to the argument that the two parsers are largely independent of each other.
+    It also shows that, at least for the Collins-CFG model, a minor improvement in performance can be had from selftraining.
+    The LTAG parser, by contrast, is hurt by self-training The first co-training experiment used the first 500 sentences from sections 2-21 of the T

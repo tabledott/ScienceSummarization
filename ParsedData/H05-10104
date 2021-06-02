@@ -1,0 +1,10 @@
+Model 4 predic tions as features, we achieve an absolute AER of 5.4 on the English-French Hansards alignmenttask, a relative reduction of 22% in AER over intersected Model 4 alignments and, to our knowl edge, the best AER result published on this task.
+	
+	
+			We model the alignment prediction task as a maximum weight bipartite matching problem, where nodes correspond to the words in the two sentences.
+			For simplicity, we assume here that each word aligns to one or zero words in the other sentence.
+			The edge weight s jkrepre sents the degree to which word j in one sentencecan translate into the word k in the other sen tence.
+			Our goal is to find an alignment that maximizes the sum of edge scores.
+			We represent a matching using a set of binary variables y jk that are set to 1 if word j is assigned to word k in the other sentence, and 0 otherwise.
+			The score of an assignment is the sum of edge scores: s(y) = ? jk s jk y jk . The maximum weight bi-.
+			partite matching problem, arg maxy?Y s(y), canbe so

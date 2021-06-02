@@ -1,0 +1,7 @@
+Boolean &#8216;language model&#8217; test: have we seen some fragment of language before?
+    This does not use any frequency information.
+    The Boolean BF-LM is a standard BF containing all n-grams of a certain length in the training corpus, Strain.
+    It implements the following binary feature function in a log-linear decoder, Separate Boolean BF-LMs can be included for different order n and assigned distinct log-linear weights that are learned as part of a minimum error rate training procedure (see Section 4).
+    The log-frequency BF-LM implements a multinomial feature function in the decoder that returns the value associated with an n-gram by Algorithm 2.
+    Sub-sequence filtering can be performed by using the minimum value returned by lower-order models as an upper-bound on the higher-order models.
+    By boosting the score of hypotheses containing ngrams observed in the training corpus while remaining agnostic for unseen n-grams (with the exception of errors), these feature functions have more in c

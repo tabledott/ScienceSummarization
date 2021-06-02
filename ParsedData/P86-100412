@@ -1,0 +1,8 @@
+sociated with components using the hasprop relationship, are are inherited by anything of the same type.
+    The main components of the system: cpu, power_supply, disk, printer, peripherals, etc., are indicated by haspart relations, such as haspart(b4700,cpu), ha.spart(b4700,power_supply), haspart(b4700,disk),,etc.
+    These parts are themselves divided into subparts which are also indicated by haspart relations, such as haspart(power_supply, converter).
+    This method of representation results in a general description of a computer system.
+    Specific machines represent INSTANCES of this general representation.
+    When a particular report is being processed, id relations are created by noun phrase semantics to associate the specific computer parts being mentioned with the part descriptions from the general machine representation.
+    So a particular B4700 would be indicated by predicates such as these: id(b4700,systeml), id(cpu,cpul), id(power_supply,power_supply1), etc.
+    Noun phrase semantics is calle

@@ -1,0 +1,5 @@
+&amp;quot; can be encoded with O(n2) constraints.
+  
+  
+    We report experiments on seven languages, six (Danish, Dutch, Portuguese, Slovene, Swedish and Turkish) from the CoNLL-X shared task (Buchholz and Marsi, 2006), and one (English) from the CoNLL-2008 shared task (Surdeanu et al., 2008).8 All experiments are evaluated using the unlabeled attachment score (UAS), using the default settings.9 We used the same arc-factored features as McDonald et al. (2005) (included in the MSTParser toolkit10); for the higher-order models described in &#167;3.3&#8211;3.5, we employed simple higher order features that look at the word, part-of-speech tag, and (if available) morphological information of the words being correlated through the indicator variables.
+    For scalability (and noting that some of the models require O(|V  |&#65533; |A|) constraints and variables, which, when A = V 2, grows cubically with the number of words), we first prune the base graph by running a simple algorithm that ranks the k-best candidat

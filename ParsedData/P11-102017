@@ -1,0 +1,8 @@
+we simply use BLEU with multiple references.
+    The large number of reference paraphrases capture a wide space of sentences with equivalent meanings.
+    While the set of reference sentences can of course never be exhaustive, our data collection method provides a natural distribution of common phrases that might be used to describe an action or event.
+    A tight cluster with many similar parallel descriptions suggests there are only few common ways to express that concept.
+    In addition to measuring semantic adequacy and fluency using BLEU, we also need to measure lexical dissimilarity with the source sentence.
+    We introduce a new scoring metric PINC that measures how many n-grams differ between the two sentences.
+    In essence, it is the inverse of BLEU since we want to minimize the number of n-gram overlaps between the two sentences.
+    Specifically, for source sentence s and candidate sentence c: where N is the maximum n-gram considered and ngrams and n-grams are the lists of n-grams in the source

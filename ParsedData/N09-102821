@@ -1,0 +1,10 @@
+t from crawling the web to build 4gram language models.
+    We also collected about 10K English sentences from the web randomly.
+    Among them, 9.5K are used as evaluation data.
+    Those sentences were translated by humans to all 5 SOV languages studied in this paper.
+    Each sentence has only one reference translation.
+    We split them into 3 subsets: dev contains 3,500 sentences, test contains 1,000 sentences and the rest of 5,000 sentences are used in a blindtest set.
+    The dev set is used to perform MERT training, while the test set is used to select trained weights due to some nondeterminism of MERT training.
+    We use IBM BLEU (Papineni et al., 2002) to evaluate our translations and use character level BLEU for Korean and Japanese.
+    We first compare our precedence rules based preprocessing reordering with the maximum entropy based lexicalized reordering model.
+    In Table 3, Baseline is our system with both a distance distortion model and the maximum entropy based lexicalized reordering model

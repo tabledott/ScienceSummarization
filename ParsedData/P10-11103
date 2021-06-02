@@ -1,0 +1,7 @@
+epending on which one of the two items becomes the head after reduction.
+    This procedure is known as &#8220;arc-standard&#8221; (Nivre, 2004), and has been engineered to achieve state-of-the-art parsing accuracy in Huang et al. (2009), which is also the reference parser in our experiments.2 More formally, we describe a parser configuration by a state (j, S) where S is a stack of trees s0, s1, ... where s0 is the top tree, and j is the queue head position (current word q0 is wj).
+    At each step, we choose one of the three actions: Note that the shorthand notation txt&#8242; denotes a new tree by &#8220;attaching tree t&#8242; as the leftmost child of the root of tree t&#8221;.
+    This procedure can be summarized as a deductive system in Figure 1.
+    States are organized according to step &#8467;, which denotes the number of actions accumulated.
+    The parser runs in linear-time as there are exactly 2n&#8722;1 steps for a sentence of n words.
+    As an example, consider the sentence &#8220;I saw AZ with

@@ -1,0 +1,10 @@
+ is not surprising, though, since adding &#8220;too much&#8221; NANC overwhelms the more accurate BROWN or WSJ counts.
+    By weighting the counts from each corpus appropriately, this problem can be avoided.
+    Another way to incorporate labeled data is to tune the parser back-off parameters on it.
+    Bacchiani et al. (2006) report that tuning on held-out BROWN data gives a large improvement over tuning on WSJ data.
+    The improvement is mostly (but not entirely) in precision.
+    We do not see the same improvement (Figure 1) but this is likely due to differences in the parsers.
+    However, we do see a similar improvement for parsing accuracy once NANC data has been added.
+    The reranking parser generally sees an improvement, but it does not appear to be significant.
+    We have shown that the WSJ-trained reranker is actually quite portable to the BROWN fiction domain.
+    This is surprising given the large number of features (over a million in the case of the WSJ reranker) tuned to adjust for errors ma

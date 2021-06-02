@@ -1,0 +1,7 @@
+his has shown to produce good tagging results, especially when dealing with incomplete dictionaries.
+    We follow a simple approach using just one of the features used in (Toutanova and Johnson, 2008) for assigning tag possibilities to every unknown word.
+    We first identify the top-100 suffixes (up to 3 characters) for words in the dictionary.
+    Using the word/tag pairs from the dictionary, we train a simple probabilistic model that predicts the tag given a particular suffix (e.g., P(VBG I ing) = 0.97, P(N I ing) = 0.0001, ...).
+    Next, for every unknown word &#8220;w&#8221;, the trained P(tag I suffix) model is used to predict the top 3 tag possibilities for &#8220;w&#8221; (using only its suffix information), and subsequently this word along with its 3 tags are added as a new entry to the lexicon.
+    We do this for every unknown word, and eventually we have a dictionary containing entries for all the words.
+    Once the completed lexicon (containing both correct entries for words in the lexicon and

@@ -1,0 +1,7 @@
+ltiplied by 2 to account for PRO&#8217;s use of two examples (positive and negative) for each sampled pair.
+    This sum of hinge-losses is 0 only if each pair is separated by a model score of 1.
+    Given [S]Z1, this convex objective can be optimized using any binary SVM.2 Unlike MIRA, the margin here is fixed to 1; cost enters into PRO through its sampling routine, which performs a large uniform sample and then selects a subset of pairs with large BLEU differentials.
+    The PRO loss uses a sum over pairs in place of MIRA&#8217;s max, which allows PRO to bypass oracle selection, and to optimize with off-the-shelf classifiers.
+    This sum is potentially a weakness, as PRO receives credit for each correctly ordered pair in its sample, and these pairs are not equally relevant to the final BLEU score.
+    Minimum risk training (MR) interprets w~ as a probabilistic model, and optimizes expected BLEU.
+    We focus on expected sentence costs (Och, 2003; Zens et al., 2007; Li and Eisner, 2009), as this risk is sim

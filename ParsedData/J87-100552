@@ -1,0 +1,11 @@
+ved induction step for pull.
+    This concludes the proof of the induction step and the theorem.
+    The second and third criteria follow from the presumed well-formedness of a and Theorem 2 which demonstrates that gen maintains well-formedness.
+    The fourth and fifth criteria we argue informally as follows: Since no complex terms occur in g (by Corollary 1), we can assume that every complex term t in a was applied (i.e., the first argument of apply) at some time in the processing of a.
+    But if it was applied, then it must have been an applicable term occurring in the wff it was applied to (as the only call to apply is of this form).
+    Then the call to subst in apply will not be vacuous, the quantifier will bind the same variable as t and will outscope the position held by t in a.
+    Thus the fourth criterion holds.
+    Also note that all quantifiers in ,13 are either the result of such an application or were in a originally.
+    Thus the fifth criterion follows immediately as well.
+  
+

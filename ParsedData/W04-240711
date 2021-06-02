@@ -1,0 +1,10 @@
+Nivre, 2004).
+			Moreover, the memory-based approach can easily handle multi-class classification, unlike the support vector machines used by Yamada and Matsumoto (2003).
+			For the experiments reported in this paper, we have used the software package TiMBL (Tilburg MemoryBased Learner), which provides a variety of metrics, al gorithms, and extra functions on top of the classical knearest neighbor classification kernel, such as value distance metrics and distance weighted class voting (Daele mans et al, 2003).
+	
+	
+			3.1 Target Function and Approximation.
+			The function we want to approximate is a mapping f from parser configurations to parser actions, where each action consists of a transition and (unless the transition is Shift or Reduce) a dependency type: f : Config ? {LA,RA,RE, SH} ?
+			(R ? {nil})Here Config is the set of all possible parser configura tions and R is the set of dependency types as before.
+			However, in order to make the problem tractable, we try to learn a function f?
+			whose domain i

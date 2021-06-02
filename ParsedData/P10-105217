@@ -1,0 +1,7 @@
+ides an additional speed up of about 20%.
+    Processing very large feature vectors, up to billions of components, is problematic in many ways.
+    Sparsity has been used here to speed up forwardbackward, but we have made no attempt to accelerate the computation of the OWL-QN updates, which are linear in the size of the parameter vector.
+    Of the three algorithms, BCD is the most affected by increases in the number of features, or more precisely, in the number of features blocks, where one block correspond to a specific test of the observation.
+    In the worst case scenario, each block may require to visit all the training instances, yielding terrible computational wastes.
+    In practice though, most blocks only require to process a small fraction of the training set, and the actual complexity depends on the average number of blocks per observations.
+    Various strategies have been tried to further accelerate BCD, such as processing blocks that only visit one observation in parallel and updating simultan

@@ -1,0 +1,8 @@
+rtant patterns in r; the remaining patterns will be ignored.
+    This reduces the length of the row vectors, but the cosine is the dot product of normalized vectors (all vectors are normalized to unit length; see equation (7)), so the change to the vector lengths has no impact; only the angle of the vectors is important.
+    If most of the semantic content is in the N largest elements of r, then setting the remaining elements to zero should have relatively little impact.
+    Table 18 shows the performance as N varies from 1 to 3,000.
+    The precision and recall are significantly below the baseline LRA until N &#8805; 300 (95% confidence, Fisher Exact Test).
+    In other words, for a typical SAT analogy question, we need to examine the top 300 patterns to explain why LRA selected one choice instead of another.
+    We are currently working on an extension of LRA that will explain with a single pattern why one choice is better than another.
+    We have had some promising results, but this work is not yet mature

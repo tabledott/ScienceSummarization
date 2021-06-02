@@ -1,0 +1,8 @@
+of weights (features), which aims to save space by sharing values in the weight vector (Blum., 2006; Rahimi and Recht, 2008).
+			The Hash Kernel shares values when collisions occur that can be considered as an approximation of the kernel function, because a weight might be adapted due to more than one feature.
+			If the approximation works well then we would need only a relatively small weight vector otherwise we need a larger weight vector to reduce the chance of collisions.
+			In an experiments, we compared two hash functions and different hash sizes.
+			We selected for the comparison a standard hash function (h1) and a custom hash function (h2).
+			The idea for the custom hash function h2 is not to overlap the values of the feature sequence number and the edge label with other values.
+			These values are stored at the beginning of a long number, which represents a feature.
+			h1 ? |(l xor(l ? 0xffffffff00000000 &gt;&gt; 32))% size|3 h2 ? |(l xor ((l &gt;&gt; 13) ? 0xffffffffffffe000) xor ((l &gt;&gt; 24) ?

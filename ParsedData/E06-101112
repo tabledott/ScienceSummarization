@@ -1,0 +1,8 @@
+l not hurt performance.
+    Even in freer-word order languages such as Czech, almost all non-projective dependency trees are primarily projective, modulo a few nonprojective edges.
+    Thus, if our inference algorithm starts with the highest scoring projective parse, the best non-projective parse only differs by a small number of edge transformations.
+    Furthermore, it is easy to show that each iteration of the loop takes O(n2) time, resulting in a O(n3 + Mn2) runtime algorithm.
+    In practice, the approximation terminates after a small number of transformations and we do not need to bound the number of iterations in our experiments.
+    We should note that this is one of many possible approximations we could have made.
+    Another reasonable approach would be to first find the highest scoring first-order non-projective parse, and then re-arrange edges based on second order scores in a similar manner to the algorithm we described.
+    We implemented this method and found that the results were slightly wors

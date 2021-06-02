@@ -1,0 +1,9 @@
+we use Model 2 as the starting point, we observe a significant improvement when we use the neighborhood alignments and the pegged alignments.
+    If we use only the Viterbi alignment, the results are significantly worse than using additionally the neighborhood of the Viterbi alignment.
+    If we use HMM as the starting point, we observe a much smaller effect.
+    We conclude that using more alignments in training is a way to avoid a poor local optimum.
+    Table 8 shows the computing time for performing one iteration of the EM algorithm.
+    Using a larger set of alignments increases the training time for Model 4 and Model 5 significantly.
+    Since using the pegging alignments yields only a moderate improvement in performance, all following results are obtained by using the neighborhood of the Viterbi alignment without pegging.
+    Tables 9 and 10 show the effect on the alignment error rate of smoothing the alignment and fertility probabilities.
+    We observe a significant improvement when we smooth the ali

@@ -1,0 +1,6 @@
+ choose a bracketing B according to some distribution P(B) and then generate the sentence given that bracketing: Given B, we fill in each span independently.
+    The context and yield of each span are independent of each other, and generated conditionally on the constituency Bij of that span.
+    The distribution P(&#945;ij |Bij) is a pair of multinomial distributions over the set of all possible yields: one for constituents (Bij = c) and one for distituents (Bij = d).
+    Similarly for P(xij |Bij) and contexts.
+    The marginal probability assigned to the sentence S is given by summing over all possible bracketings of S: P(S) = Y-B P(B)P(S|B).2 To induce structure, we run EM over this model, treating the sentences S as observed and the bracketings B as unobserved.
+    The parameters 2 of 2Viewed as a model generating sentences, this model is deficient, placing mass on yield and context choices which will not tile into a valid sentence, either because specifications for positions conflict or because yields of

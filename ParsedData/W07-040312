@@ -1,0 +1,10 @@
+as two main advantages over the JPTM.
+    Most significantly, we gain polynomialtime algorithms for both Viterbi alignment and EM expectation, through the use of ITG parsing and inside-outside algorithms.
+    These phrasal ITG algorithms are no more expensive asymptotically than their word-to-word counterparts, since each potential phrase needs to be analyzed anyway during constituent construction.
+    We hypothesize that using these methods in place of heuristic search and sampling will improve the phrasal translation model learned by EM.
+    Also, we can easily incorporate links to 0 by including the symbol among our terminals.
+    To minimize redundancy, we allow only single tokens, not phrases, to align to 0.
+    The JPTM does not allow links to 0.
+    The phrasal ITG also introduces two new complications.
+    ITG Viterbi and inside-outside algorithms have polynomial complexity, but that polynomial is O(n6), where n is the length of the longer sentence in the pair.
+    This is too slow to train on large d

@@ -1,0 +1,8 @@
+owing equation: In steps 5 and 6 of the LRA algorithm (Section 5.5), we ensure that the matrix X is symmetrical, so that equation (8) is necessarily true for LRA.
+    The matrix is designed so that the row vector for A:B is different from the row vector for B:A only by a permutation of the elements.
+    The same permutation distinguishes the row vectors for C:D and D:C. Therefore the cosine of the angle between A:B and C:D must be identical to the cosine of the angle between B:A and D:C (see equation (7)).
+    To discover the consequences of this design decision, we altered steps 5 and 6 so that symmetry is no longer preserved.
+    In step 5, for each word pair A:B that appears in the input set, we only have one row.
+    There is no row for B:A unless B:A also appears in the input set.
+    Thus the number of rows in the matrix dropped from 17,232 to 8,616.
+    In step 6, we no longer have two columns for each pattern P, one for &#8220;word1 P word2&#8221; and another for &#8220;word2 P word1.&#8221; However, 

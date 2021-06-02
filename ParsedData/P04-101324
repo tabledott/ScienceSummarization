@@ -1,0 +1,6 @@
+trained with the generative criteria.
+    The network being trained was then used to choose its top 10 parses from this list, and training was performed on these 10 parses and the correct parse.6 This reduced the time necessary to choose the top parses during training, and helped focus the early stages of training on learning relevant discriminations.
+    Once the training of these networks was complete, we tested both their ability to parse on their own and their ability to re-rank the top We determined appropriate training parameters and network size based on intermediate validation results and our previous experience.7 We trained several networks for each of the GSSN models and chose the best ones based on their validation performance.
+    We then trained one network for each of the DGSSN models and for the DSSN model.
+    The best post-word beam width was determined on the validation set, which was 5 for the DSSN model and 100 for the other models.
+    To avoid repeated testing on the standard testing set

@@ -1,0 +1,7 @@
+individual characters being assigned the same POS tag t. For example, when estimating the probability of &#8220;WTWU&#8221; being tagged NR, we find the product of the probability of &#8220;WT&#8221; being tagged NR, &#8220;W&#8221; being tagged NR, and &#8220;U&#8221; being tagged NR.
+    That is, we enforce the constraint that all characters within a segmented word in the presegmented input sentence must have the same POS tag.
+    10-fold CV for CTB is repeated for this POS tagger.
+    Figure 4 shows the detailed POS tagging accuracy.
+    With a one-at-a-time, character-based POS tagger, the average POS tagging accuracy improved to 91.7%, 7.6% higher than that achieved by the one-at-a-time, word-based POS tagger.
+    The average training timing was 55 minutes, while testing took about 50 seconds.
+    Figure 4: POS tagging accuracy using one-at-atime, character-based POS tagger When a paired t-test was carried out to compare character-based and word-based one-ata-time approaches, the character-based approach

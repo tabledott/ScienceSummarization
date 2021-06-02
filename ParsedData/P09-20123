@@ -1,0 +1,7 @@
+on treebanks, especially the Wall Street Journal (WSJ) portion of the Penn Treebank.
+    Once the model is defined, relevant events can simply be counted in the training data.
+    In contrast, there are no treebanks annotated with TSG derivations, and a treebank parse tree of n nodes is ambiguous among 2n possible derivations.
+    One solution would be to manually annotate a treebank with TSG derivations, but in addition to being expensive, this task requires one to know what the grammar actually is.
+    Part of the thinking motivating TSGs is to let the data determine the best set of subtrees.
+    One approach to grammar-learning is DataOriented Parsing (DOP), whose strategy is to simply take all subtrees in the training data as the grammar (Bod, 1993).
+    Bod (2001) did this, approximating &#8220;all subtrees&#8221; by extracting from the Treebank 400K random subtrees for each subtree height ranging from two to fourteen, and compared the performance of that grammar to that of a heuristically pruned &#8220;

@@ -1,0 +1,8 @@
+ Error Analysis To better understand the limitations of REVERB, we performed a detailed analysis of its errors in precision (incorrect extractions returned by REVERB) and its errors in recall (correct extractions that REVERB missed).
+    Table 5 summarizes the types of incorrect extractions that REVERB returns.
+    We found that 65% of the incorrect extractions returned by REVERB were cases where a relation phrase was correctly identified, but the argument-finding heuristics failed.
+    The remaining errors were cases where REVERB extracted an incorrect relation phrase.
+    One common mistake that REVERB made was extracting a relation phrase that expresses an n-ary relationship via a ditransitive verb.
+    For example, given the sentence Table 6: The majority of extractions that were missed by REVERB were cases where the correct relation phrase was found, but the arguments were not correctly identified.
+    &#8220;I gave him 15 photographs,&#8221; REVERB extracts (I, gave, him).
+    These errors are due to th

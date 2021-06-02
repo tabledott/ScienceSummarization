@@ -1,0 +1,9 @@
+ariant of the Maximum Bleu training procedure proposed by Och (2003).
+    The phrase-based-like submodels have been proved useful in phrase-based approaches to SMT (Och and Ney, 2004).
+    The first two syntaxbased submodels implement a &#8220;fused&#8221; translation and lexical grounded distortion model (proot) and a syntax-based distortion model (pcfg).
+    The indicator submodels are used to determine the extent to which our system prefers lexicalized vs. nonlexicalized rules; simple vs. composed rules; and high vs. low count rules.
+  
+  
+    We decode with each of our SPMT models using a straightforward, bottom-up, CKY-style decoder that builds English syntactic constituents on the top of Chinese sentences.
+    The decoder uses a binarized representation of the rules, which is obtained via a syncronous binarization procedure (Zhang et al., 2006).
+    The CKY-style decoder computes the probability of English syntactic constituents in a bottom up fashion, by log-linearly interpolating all the submodel scor

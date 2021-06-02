@@ -1,0 +1,16 @@
+ant feature for assessing readabil ity (Schwarm and Ostendorf, 2005).
+			We train a trigram LM using the simple sentences in PWKP and calculate the PPL with SRILM.
+			TSM gets the best PPL score.
+			From this table, we can conclude that TSM achieves better overall readability than the baseline systems.
+			PPL(text) = P (w1w2...wN )?
+			1 N (6)There are still some important issues to be con sidered in future.
+			Based on our observations, the current model performs well for word substitution and segmentation.
+			But the completion of the new sentences is still problematic.
+			For example, we copy the dependent NP to the new sentences.
+			This may break the coherence between sentences.
+			Abetter solution would be to use a pronoun to replace the NP.
+			Sometimes, excessive droppings oc cur, e.g., ?older?
+			and ?twin?
+			are dropped in ?She has an older brother and a twin brother...?.
+			This results in a problematic sentence: ?She has anbrother and a brother...?.
+			There are also some er rors which stem from 

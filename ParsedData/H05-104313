@@ -1,0 +1,11 @@
+with a product feature will occur in its vicinity.
+			This idea is similar to that of (Kim and Hovy, 2004) and (Hu and Liu, 2004), but instead of using a window of size k or the output of a noun phrase chunker, OPINE takes advantage of the syntactic dependencies computed by theMINIPAR parser.
+			Our intuition is embodied by 10 ex traction rules, some of which are shown in Table 4.
+			If an explicit feature is found in a sentence, OPINE applies the extraction rules in order to find the heads of potentialopinion phrases.
+			Each head word together with its modi 341 fiers is returned as a potential opinion phrase1.
+			Extraction Rules Examples if ?(M,NP = f)?
+			po = M (expensive) scanner if ?(S = f, P,O)?
+			po = O lamp has (problems) if ?(S, P,O = f)?
+			po = P I (hate) this scanner if ?(S = f, P,O)?
+			po = P program (crashed) Table 4: Examples of Domain-independent Rules forthe Extraction of Potential Opinion Phrases.
+			Nota tion: po=potential opinion, M=modifier, NP=noun phrase,S=subject, P=predicate, O=ob

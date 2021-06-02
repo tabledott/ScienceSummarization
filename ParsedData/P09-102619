@@ -1,0 +1,11 @@
+he debate that are significantly related to either of the topics.
+    We find semantic relatedness of each noun in the post with the two main topics of the debate by calculating the Pointwise Mutual Information (PMI) between the term and each topic over the entire web corpus.
+    We use the API provided by the Measures of Semantic Relatedness (MSR)4 engine for this purpose.
+    The MSR engine issues Google queries to retrieve documents and finds the PMI between any two given words.
+    Table 3 lists PMIs between the topics and the words from Table 2.
+    Each noun k is assigned to the topic with the higher PMI score.
+    That is, if Next, the polarity-target pairs are found for the post, as before, and Equations 10 and 11 are used to assign a side to the post as in the OpTopic system, except that here, related nouns are also counted as instances of their associated topics.
+  
+  
+    In our task, it is desirable to make a prediction for all the posts; hence #relevant = #Total posts.
+    This results in Recall 

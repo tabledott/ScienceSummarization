@@ -1,0 +1,6 @@
+ pair, C and D. We wish to measure the relational similarity between R1 and R2.
+    The relations R1 and R2 are not given to us; our task is to infer these hidden (latent) relations and then compare them.
+    In the VSM approach to relational similarity (Turney and Littman 2005), we create vectors, r1 and r2, that represent features of R1 and R2, and then measure the similarity of R1 and R2 by the cosine of the angle 0 between r1 and r2: We create a vector, r, to characterize the relationship between two words, X and Y, by counting the frequencies of various short phrases containing X and Y. Turney and Littman (2005) use a list of 64 joining terms, such as of, for, and to, to form 128 phrases that contain X and Y, such as X of Y, Y of X, X for Y, Y for X, X to Y, and Y to X.
+    These phrases are then used as queries for a search engine and the number of hits (matching documents) is recorded for each query.
+    This process yields a vector of 128 numbers.
+    If the number of hits for a query is x, then the c

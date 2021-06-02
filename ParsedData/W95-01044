@@ -1,0 +1,10 @@
+ for their), and usage errors (between for among).
+    These errors are not detected by conventional spell checkers, as they only notice errors resulting in non-words.
+    We treat context-sensitive spelling correction as a. task of word disambiguation.
+    The ambiguity among words is modelled by confusion sets.
+    A confusion set C = {w1, wn} means that each word wi in the set is ambiguous with each other word in the set.
+    Thus if C = { desert, dessert}, then when the spelling-correction program sees an occurrence of either desert or dessert in the target document, it takes it to be ambiguous between desert and dessert, and tries to infer from the context which of the two it should be.
+    This treatment requires a collection of confusion sets to start with.
+    There are several ways to obtain such a collection.
+    One is based on finding words in the dictionary that are one typo away from each other [Mays et at., 19911.1 Another finds words that have the same or similar pronunciations.
+    Since this

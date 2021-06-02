@@ -1,0 +1,12 @@
+ories per word), K 20 for the category dictionary, and a 0001 for the parser.
+    A time-out was applied so that the parser was stopped if any sentence took longer than 2 CPU minutes to parse.
+    With these parameters, 2 098 of the 2 352 sentences received some analysis, with 206 timing out and 48 failing to parse.
+    To deal with the 48 no-analysis cases, the cut-off for the category-dictionary, K, was increased to 100.
+    Of the 48 cases, 23 sentences then received an analysis.
+    To deal with the 206 time-out cases, 0 was increased to 005, which resulted in 181 of the 206 sentences then receiving an analysis, with 18 failing to parse, and 7 timing out.
+    So overall, almost 98% of the 2 352 unseen sentences were given some analysis.
+    To return a single dependency structure, we chose the most probable structure from the S dcl categories spanning the whole sentence.
+    If there was no such category, all categories spanning the whole string were considered.
+  
+  
+    To measure the performance of the

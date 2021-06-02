@@ -1,0 +1,7 @@
+ocks.
+    During decoding, we view translation as a block segmentation process, where the input sentence is segmented from left to right and the target sentence is generated from bottom to top, one block at a time.
+    A monotone block sequence is generated except for the possibility to handle some local phrase re-ordering.
+    In this local re-ordering model (Tillmann and Zhang, 2005; Kumar and Byrne, 2005) a block with orientation is generated relative to its predecessor block .
+    During decoding, we maximize the score of a block orientation sequence where is a block, is its predecessor block, and eft ight eutral is a threevalued orientation component linked to the block : a block is generated to the left or the right of its predecessor block , where the orientation of the predecessor block is ignored.
+    Here, is the number of blocks in the translation.
+    We are interested in learning the weight vector from the training data. is a high-dimensional binary feature representation of the block orientation

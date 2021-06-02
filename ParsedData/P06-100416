@@ -1,0 +1,8 @@
+orpus consists of a set of concatenated segments randomly sampled from the Brown corpus.
+    The length of the segments in this corpus ranges from three to eleven sentences.
+    It is important to note that the lexical transitions in these concatenated texts are very sharp, since the segments come from texts written in widely varying language styles on completely different topics.
+    We use the Pk and WindowDiff measures to evaluate our system (Beeferman et al., 1999; Pevzner and Hearst, 2002).
+    The Pk measure estimates the probability that a randomly chosen pair of words within a window of length k words is inconsistently classified.
+    The WindowDiff metric is a variant of the Pk measure, which penalizes false positives on an equal basis with near misses.
+    Both of these metrics are defined with respect to the average segment length of texts and exhibit high variability on real data.
+    We follow Choi (2000) and compute the mean segment length used in determining the parameter k on each reference te

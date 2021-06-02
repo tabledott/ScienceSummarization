@@ -1,0 +1,11 @@
+uation (3), ignoring the score from the local model.
+    In our experiments, we noticed that for larger values of N, the performance of our re-ranking model PrSRL decreased.
+    This was probably due to the fact that at test time the local classifier produces very poor argument frames near the bottom of the top n for large n. Because the re-ranking model is trained on relatively few good argument frames, it cannot easily rule out very bad frames.
+    It makes sense then to incorporate the local model into our final score.
+    Our final score is given by: where &#945; is a tunable parameter determining the amount of influence the local score has on the final score (we found &#945; = 1.0 to work best).
+    Such interpolation with a score from a first-pass model was also used for parse re-ranking in (Collins 2000).
+    Given this score, at test time we choose among the top n local assignments L1,.
+    .
+    .
+    , Ln according to: We compare the performance of joint re-ranking models and local models.
+    We us

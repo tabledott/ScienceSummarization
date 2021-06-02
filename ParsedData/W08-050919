@@ -1,0 +1,10 @@
+ in the tuning set.
+    However, the major difference in the training comes from fixing the HMM bug in GIZA++, as mentioned before.
+    To profile the speed of the system according to the number of CPUs it use, we ran MGIZA++ on 1, 2 and 4 CPUs of the same speed.
+    When it runs on 1 CPU, the speed is the same as for the original GIZA++.
+    Table 7 and Figure 5 show the running time of each stage: When using 4 CPUs, the system uses only 41% time comparing to one thread.
+    Comparing to PGIZA++, MGIZA++ does not have as high an acceleration rate.
+    That is mainly because of the required locking mechanism.
+    However the acceleration is also significant, especially for small training corpora, as we will see in next experiment.
+    In order to compare the acceleration rate of PGIZA++ and MGIZA++, we also ran PGIZA++ in the same dataset as described in the previous section with 4 children.
+    To avoid the delay of starting the children processes, we chose to use ssh to start remote tasks directly, instead 

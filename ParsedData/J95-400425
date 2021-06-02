@@ -1,0 +1,6 @@
+s is examined once for every pair of tags X and Y, finding the best transformation whose rewrite changes tag X to tag Y.
+    For every word in the corpus whose environment matches the triggering environment, if the word has tag X and X is the correct tag, then making this transformation will result in an additional tagging error, so we increment the number of errors caused when making the transformation given the part-of-speech tag of the previous word (lines 8 and 9).
+    If X is the current tag and Y is the correct tag, then the transformation will result in one less error, so we increment the number of improvements caused when making the transformation given the part-of-speech tag of the previous word (lines 6 and 7).
+    In certain cases, a significant increase in speed for training the transformationbased tagger can be obtained by indexing in the corpus where different transformations can and do apply.
+    For a description of a fast index-based training algorithm, see Ramshaw and Marcus (1994).
+    In f

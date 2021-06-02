@@ -1,0 +1,7 @@
+s slower.
+    Figure 8 shows the parse time in seconds for each test sentence.
+    The observed time complexity of our DP parser is in fact linear compared to the superlinear complexity of Charniak, MST (McDonald et al., 2005b), and Berkeley parsers.
+    Additional techniques such as semi-supervised learning (Koo et al., 2008) and parser combination (Zhang and Clark, 2008) do achieve accuracies equal to or higher than ours, but their results are not directly comparable to ours since they have access to extra information like unlabeled data.
+    Our technique is orthogonal to theirs, and combining these techniques could potentially lead to even better results.
+    We also test our final parser on the Penn Chinese Treebank (CTB5).
+    Following the set-up of Duan et al. (2007) and Zhang and Clark (2008), we split CTB5 into training (secs 001-815 and 10011136), development (secs 886-931 and 11481151), and test (secs 816-885 and 1137-1147) sets, assume gold-standard POS-tags for the input, and use the head rules 

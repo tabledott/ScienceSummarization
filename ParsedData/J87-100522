@@ -1,0 +1,9 @@
+m II form.
+    Computational Linguistics, Volume 13, Numbers 1-2, January-June 1987 51 Jerry R. Hobbs and Stuart M. Shieber An Algorithm for Generating Quantifier Seopings The function apply(term, form) returns a wff consisting of the given complex term term applied to a form form in which it occurs.
+    In addition, the restriction of the complex term is recursively scoped. function apply(term,form); let &lt;quant var restrict&gt; := term return wff(quant, var, pull(restrict,false), subst(var,term,form)).
+    For the deterministic version of the algorithm, there are five special language constructs.
+    The unary predicate empty(set) returns true if and only if set is empty.
+    Paired braces &amp;quot;I ... I&amp;quot; constitute a set-forming operator.
+    The binary function union applies its second argument (a lambda expression) to each of the elements of its first argument (a set).
+    It returns a corresponding set of the values of the individual applications.
+    The binary infix operator U returns th

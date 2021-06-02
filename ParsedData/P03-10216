@@ -1,0 +1,8 @@
+tutions, insertions, deletions needed to transform the hypothesis into the closest of the given reference translations.
+    BLEU score: This criterion computes the geometric mean of the precision of-grams of various lengths between a hypothesis and a set of reference translations multiplied by a factor BP that penalizes short sentences: NIST score: This criterion computes a weighted precision of-grams between a hypothesis and a set of reference translations multiplied by a factor BP&#8217; that penalizes short sentences: Heredenotes the weighted precision ofgrams in the translation.
+    We use .
+    Both, NIST and BLEU are accuracy measures, and thus larger values reflect better translation quality.
+    Note that NIST and BLEU scores are not additive for different sentences, i.e. the score for a document cannot be obtained by simply summing over scores for individual sentences.
+    It includes an argmax operation (Eq.
+    6).
+    Therefore, it is not possible to compute a gradient and we cannot use gradient d

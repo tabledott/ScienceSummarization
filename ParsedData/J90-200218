@@ -1,0 +1,11 @@
+n brief, it works like this: given some initial estimate of the parameters, we can compute the probability of any particular alignment.
+    We can then re-estimate the parameters by weighing each possible alignment according to its probability as determined by the initial guess of the parameters.
+    Repeated iterations of this process lead to parameters that assign ever greater probability to the set of sentence pairs that we actually observe.
+    This algorithm leads to a local maximum of the probability of the observed pairs as a function of the parameters of the model.
+    There may be many such local maxima.
+    The particular one at which we arrive will, in general, depend on the initial choice of parameters.
+  
+  
+    In our first experiment, we test our ability to estimate parameters for the translation model.
+    We chose as our English vocabulary the 9,000 most common words in the English part of the Hansard data, and as our French vocabulary the 9,000 most common French words.
+    For the purposes 

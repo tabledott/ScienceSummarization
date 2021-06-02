@@ -1,0 +1,12 @@
+l-and-error process of repeated interaction with the user.
+    Reinforcement learning is applied very differently in dialogue systems compared to our setup.
+    In some respects, our task is more easily amenable to reinforcement learning.
+    For instance, we are not interacting with a human user, so the cost of interaction is lower.
+    However, while the state space can be designed to be relatively small in the dialogue management task, our state space is determined by the underlying environment and is typically quite large.
+    We address this complexity by developing a policy gradient algorithm that learns efficiently while exploring a small subset of the states.
+  
+  
+    Our task is to learn a mapping between documents and the sequence of actions they express.
+    Figure 2 shows how one example sentence is mapped to three actions.
+    Mapping Text to Actions As input, we are given a document d, comprising a sequence of sentences (u1, ... , ut), where each ui is a sequence of words.
+    Our goal is to ma

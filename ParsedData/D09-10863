@@ -1,0 +1,9 @@
+ences in different styles.
+    But fortunately, we can automatically obtain a noisy form of the necessary paired-tree training data.
+    A parser trained on the source corpus can parse the sentences in our target corpus, yielding trees (or more generally, probability distributions over trees) in the source style.
+    We will then learn a tree transformation model relating these noisy source trees to our known trees in the target style.
+    This model should enable us to convert the original large source corpus to target style, giving us additional training data in the target style.
+    For many target languages, however, we do not have the luxury of a large parsed &#8220;source corpus&#8221; in the language, even one in a different style or domain as above.
+    Thus, we may seek other forms of data to augment our small target corpus.
+    One option would be to leverage unannotated text (McClosky et al., 2006; Smith and Eisner, 2007).
+    But we can also try to transfer syntactic information from a parsed sour

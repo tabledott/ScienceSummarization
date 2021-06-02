@@ -1,0 +1,8 @@
+nd gradient vector for the normal-form model are as follows: where dj is the the gold standard derivation for sentence Sj and B(Sj) is the set of possible derivations for Sj.
+    Note that the empirical expectation in (7) is simply a count of the number of times the feature appears in the gold-standard derivations.
+  
+  
+    The packed charts perform a number of roles: they are a compact representation of a very large number of CCG derivations; they allow recovery of the highest scoring parse or dependency structure without enumerating all derivations; and they represent an instance of what Miyao and Tsujii (2002) call a feature forest, which is used to efficiently estimate a log-linear model.
+    The idea behind a packed chart is simple: equivalent chart entries of the same type, in the same cell, are grouped together, and back pointers to the daughters indicate how an individual entry was created.
+    Equivalent entries form the same structures in any subsequent parsing.
+    Since the packed charts are used

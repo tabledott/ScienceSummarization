@@ -1,0 +1,6 @@
+6;C represents the core content of a document set.
+    Intuitively, &#966;C does not include words which are common amongst several document collections (modeled with the BACKGROUND topic), or words which don&#8217;t appear across many documents (modeled with the DOCSPECIFIC topic).
+    Also, because topics are tied together at the sentence level, words which frequently occur with other content words are more likely to be considered content words.
+    We ran our topic model over the DUC 2006 document collections and estimated the distribution &#966;C(&#183;) for each document set.15 Then we extracted a summary using the KLSUM criterion with our estimated &#966;C in place of the the raw unigram distribution.
+    Doing so yielded 6.3 R-2 without stop words (see TOPICSUM in table 1); while not a statistically significant improvement over KLSUM, it is our first model which outperforms SUMBASIC with statistical significance.
+    Daum&#180;e III and Marcu (2006) explore a topic model similar to ours for query-focus

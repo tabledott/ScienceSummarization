@@ -1,0 +1,9 @@
+eputy chairman], [VB be], [MD will], and [NP His duties].
+  3.2 Argument Identification The argument identification stage utilizes binary classification to identify whether a candidate is an argument or not.
+  When full parsing is available, we train and apply the binary classifiers on the constituents supplied by the pruning stage.
+  When only shallow parsing is available, the system does not have a pruning stage, and also does not have constituents to begin with.
+  Therefore, conceptually, the system has to consider all possible subsequences (i.e., consecutive words) in a sentence as potential argument candidates.
+  We avoid this by using a learning scheme that utilizes two classifiers, one to predict the beginnings of possible arguments, and the other the ends.
+  The predictions are combined to form argument candidates.
+  However, we can employ a simple heuristic to filter out some candidates that are obviously not arguments.
+  The final predication includes those that do not violate the following constrai

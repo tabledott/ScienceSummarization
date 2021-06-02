@@ -1,0 +1,8 @@
+008).
+    These models jointly learn an embedding of words into a vector space and use these vectors to predict how likely a word occurs given its context.
+    After learning via gradient ascent the word vectors capture syntactic and semantic information from their co-occurrence statistics.
+    In both cases we can use the resulting matrix of word vectors L for subsequent tasks as follows.
+    Assume we are given a sentence as an ordered list of m words.
+    Each word has an associated vocabulary index k into the embedding matrix which we use to retrieve the word&#8217;s vector representation.
+    Mathematically, this look-up operation can be seen as a simple projection layer where we use a binary vector b which is zero in all positions except at the kth index, In the remainder of this paper, we represent a sentence (or any n-gram) as an ordered list of these vectors (x1, ... , xm).
+    This word representation is better suited to autoencoders than the binary number representations used in previous related au

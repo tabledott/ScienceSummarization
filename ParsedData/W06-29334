@@ -1,0 +1,7 @@
+ertain threshold t. Pseudo-projective parsing was proposed by Nivre and Nilsson (2005) as a way of dealing with non-projective structures in a projective data-driven parser.
+    We projectivize training data by a minimal transformation, lifting non-projective arcs one step at a time, and extending the arc label of lifted arcs using the encoding scheme called HEAD by Nivre and Nilsson (2005), which means that a lifted arc is assigned the label rTh, where r is the original label and h is the label of the original head in the nonprojective dependency graph.
+    Non-projective dependencies can be recovered by applying an inverse transformation to the output of the parser, using a left-to-right, top-down, breadthfirst search, guided by the extended arc labels rTh assigned by the parser.
+    This technique has been used without exception for all languages.
+  
+  
+    Since the projective parsing algorithm and graph transformation techniques are the same for all data sets, our optimization efforts have been focused o

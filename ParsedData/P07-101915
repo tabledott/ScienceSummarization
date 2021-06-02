@@ -1,0 +1,9 @@
+case of Figure 3(b), where the top-left cell current bin (#2) into longer ones.
+    (b) In Cubit, hypotheses in previous bins are fed via hyperedge bundles (solid arrows) into a priority queue (shaded triangle), which empties into the current bin (#5).
+    (2.5) is worse than the current bound of 2.2.
+    The update of bound in each iteration (line 10) can be efficiently implemented by using another heap with the same contents as cand but prioritized by h instead.
+    In practice this is a negligible overhead on top of cube pruning.
+    We now turn to the problem of estimating the heuristic function h,o,,,bo.
+    In practice, computing true lower bounds of the combination costs is too slow and would compromise the speed up gained from cube growing.
+    So we instead use a much simpler method that just calculates the minimum combination cost of each hyperedge in the top-i derivations of the root node in &#8722;LM decoding.
+    This is just an approximation of the true lower bound, and bad estimates can lead to

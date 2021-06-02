@@ -1,0 +1,8 @@
+nown erroneous output, which has its score set to zero.
+    The internal EBMT scores range from 0 being perfect to 10,000 being worthless; but the scores are nonlinear.
+    So a region selected by a threshold is converted linearly into scores ranging from zero to a normalized maximum EBMT score.
+    The normalization levels were empirically determined in the initial experiment by having several individuals judge the comparative average quality of the outputs in an actual translation run.
+    In every case, the base score produced by the scoring functions is currently multiplied by the length of the candidate in words, on the assumption that longer items are better.
+    We intend to test a variety of functions in order to find the right contribution of the length factor.
+    Figure 3 presents the chart walk algorithm used to produce a single, best, non-overlapping, contiguous combination (cover) of the available component translations, assuming correct component quality scores.
+    The code is organized as a r

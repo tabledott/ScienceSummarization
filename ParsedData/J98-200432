@@ -1,0 +1,6 @@
+ng with a particular previous tag is the same as the probability of that nonterminal appearing in any sentence containing that tag.
+    We can then count the probability-weighted occurrences of a nonterminal given the previous tag as follows: That is, for each sentence that contains the previous tag tj_i, we increment our count by the probability of the nonterminal Nk occurring immediately following ti_i in that sentence.
+    Since we have a complete parse, the inside and outside probabilities and the sentence probability can be easily computed.
+    We can also obtain the count C(ti_i) simply by counting the number of sentences in which that tag appears in position j - 1.
+    We then obtain the conditional probability for the left boundary statistic as follows: The right boundary statistic is computed in the corresponding way.
+    For the experiment using the treebank grammar, these statistics were obtained by counting directly from the Wall Street Journal treebank corpus, just as the grammar rules and trigra

@@ -1,0 +1,8 @@
+aining corpora; this turns out to be important as the size of the training data for the different distributions varies greatly.
+    The first distribution is defined over the words in source sentences (i.e., that do not contain reparandums or interregnums).
+    Pn(repair|W) is the probability of a repair beginning after a word W in the source sentence X; it is estimated from the training sentences with reparandums and interregnums removed.
+    Here and in what follows, W ranges over E &#57740; {$}, where &#8216;$&#8217; is a distinguished beginning-ofsentence marker.
+    For example, Pn(repair|flight) is the probability of a repair beginning after the word flight.
+    Note that repairs are relatively rare; in our training data Pn(repair) &#57739; 0.02, which is a fairly strong bias against repairs.
+    The other distributions are defined over aligned reparandum/repair strings, and are estimated from the aligned repairs extracted from the training data.
+    In training we ignored all overlapping repairs (i.e.,

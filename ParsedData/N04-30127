@@ -1,0 +1,8 @@
+lable that allow for the inclusion of existing measures in Perl source code, and also for the development of new measures.
+    When an existing measure is to be used, an object of that measure must be created via the new() method.
+    Then the getRelatedness() method can be called for a pair of word senses, and this will return the relatedness value.
+    For example, the program in Figure 2 creates an object of the lin measure, and then finds the similarity between the first sense of the noun car (automobile) and the second sense of the noun bus (network bus).
+    WordNet::Similarity enables detailed tracing that shows a variety of diagnostic information specific to each of the different kinds of measures.
+    For example, for the measures that rely on path lengths (lch, wup, path) the tracing shows all the paths found between the concepts.
+    Tracing for the information content measures (res, lin, jcn) includes both the paths between concepts as well as the least common subsumer.
+    Tracing for the hso mea

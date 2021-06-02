@@ -1,0 +1,8 @@
+ the relative frequency estimator conditioning on left hand sides: p(rhs(r)|lhs(r)) = f(r) ? r?:lhs(r?)=lhs(r) f(r ?)
+			(5)f(r) represents the number of times rule r oc curred in the derivations of the training corpus.
+			One of the major negative consequences of extracting only minimal rules from a corpus is that an estimator such as Equation 5 can become extremely biased.
+			This again can be observed from Figure 3.
+			In the minimal-rule extraction ofGHKM, only three rules are extracted from the example corpus, i.e. rules r2, r3, and r4.
+			Let?s as sume now that the triple (pi, f1,a1) is represented 99 times, and (pi, f2,a2) only once.
+			Given a tree pi, the model trained on that corpus can generate the two strings a?b?c? and b?a?c? only through two derivations, r3 ? r4 and r2, respectively.
+			Since all rules in that example have probability 1, and 5If each tree fragment in pi is the lhs of some rule in R, then we have |?| = 2n, where n is the number of nodes of the frontier set F ? G (each node is a b

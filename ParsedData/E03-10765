@@ -1,0 +1,11 @@
+ve study of such transformations is carried out by Langer [1998] for German.
+    To summarize: We try to cover the entire length of the compound with known words and fillers between words.
+    An algorithm to break up words in such a manner could be implemented using dynamic programming, but since computational complexity is not a problem, we employ an exhaustive recursive search.
+    To speed up word matching, we store the known words in a hash based on the first three letters.
+    Also, we restrict known words to words of at least length three.
+    For the word Aktionsplan, we find the following splitting options: We arrive at these splitting options, since all the parts &#8212; aktionsplan, aktions, aktion, akt, ion, and plan &#8212; have been observed as whole words in the training corpus.
+    These splitting options are the basis of our work.
+    In the following we discuss methods that pick one of them as the correct splitting of the compound.
+  
+  
+    The more frequent a word occurs in a training corp

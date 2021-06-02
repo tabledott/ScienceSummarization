@@ -1,0 +1,7 @@
+h parser and word aligner.
+    The sourcelanguage English dependency parser was trained on the Wall Street Journal, where it achieved 91% dependency accuracy on development data.
+    However, it was only 80.3% accurate when applied to our task, the English side of the ECTB.7 After parsing the source side of the bitext, we train a parser on the annotated target side, using QG features described above (&#167;2).
+    Both the monolingual target-language parser and the projected parsers are trained to optimize conditional likelihood of the target trees t' with ten iterations of stochastic gradient ascent.
+    In Figure 3, we plot the performance of the target-language parser on held-out bitext.
+    Although projection performance is, not surprisingly, better if we know the true source trees at training and test time, even with the 1-best output of the source parser, QG features help produce a parser as accurate asq one trained on twice the amount of monolingual data.
+    In ablation experiments, we included bilin

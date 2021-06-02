@@ -1,0 +1,8 @@
+st estimate of the grammar probabilities, leading to overfitting.
+    Therefore, it would be to our advantage to split the latent annotations only where needed, rather than splitting them all as in Matsuzaki et al. (2005).
+    In addition, if all symbols are split equally often, one quickly (4 split cycles) reaches the limits of what is computationally feasible in terms of training time and memory usage.
+    Consider the comma POS tag.
+    We would like to see only one sort of this tag because, despite its frequency, it always produces the terminal comma (barring a few annotation errors in the treebank).
+    On the other hand, we would expect to find an advantage in distinguishing between various verbal categories and NP types.
+    Additionally, splitting symbols like the comma is not only unnecessary, but potentially harmful, since it needlessly fragments observations of other symbols&#8217; behavior.
+    It should be noted that simple frequency statistics are not sufficient for determining how often to spli

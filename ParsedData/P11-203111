@@ -1,0 +1,12 @@
+.
+    Different values of this statistic can suggest methodological improvements.
+    For example, a large ssel indicates that more replications will be necessary to draw reliable inferences from experiments on this test set, so a larger test set may be helpful.
+    To compute ssel, assume we have n independent optimization runs which produced weight vectors that were used to translate a test set n times.
+    The test set has ` segments with references R = (R1, R2, ... , Rt).
+    Let X = (X1, X2, ... , Xn) where each Xi = (Xi1, Xi2, .
+    .
+    .
+    , Xit) is the list of translated segments from the ith optimization run list of the ` translated segments of the test set.
+    For each hypothesis output Xi, we construct k bootstrap replicates by drawing ` segments uniformly, with replacement, from Xi, together with its corresponding reference.
+    This produces k virtual test sets for each optimization run i.
+    We designate the score of the jth virtual test set of the ith optimization run with mij. si In the 

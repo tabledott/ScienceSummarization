@@ -1,0 +1,10 @@
+Note that &#181;k and &#963;2k affect only the regional word distributions 7 jk.
+    An advantage of the logistic normal is that the variational parameters over &#181;k are available in closed form, where J indicates the number of regions.
+    The expectation of the base topic &#181; incorporates the prior and the average of the generated region-topics&#8212; these two components are weighted respectively by the expected variance of the region-topics (&#963;2k) and the prior topical variance b2.
+    The posterior variance V(&#181;) is a harmonic combination of the prior variance b2 and the expected variance of the region topics.
+    The variational distribution over the region-topic variance &#963;2k has Gamma parameters.
+    These parameters cannot be updated in closed form, so gradient optimization is again required.
+    The derivation of these updates is more involved, and is left for a forthcoming appendix.
+  
+  
+    Variational scheduling and initialization are important aspects of any hierarchical gener

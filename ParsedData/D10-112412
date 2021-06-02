@@ -1,0 +1,6 @@
+ distribution q(&#951;jk) is written h&#951;jki, while the variance (uniform across i) of q(&#951;) is written V(&#951;jk).
+    To update the mean parameter h&#951;jki, we maximize the contribution to the variational bound L from the relevant terms: 7Thanks to the naive mean field assumption, we can marginalize over z by first decomposing across all Nd words and then summing over q(z). with the first term representing the likelihood of the observed words (recall that &#946; is computed deterministically from &#951;) and the second term corresponding to the prior.
+    The likelihood term requires the expectation hlog &#946;i, but this is somewhat complicated by the normalizer EWi exp(&#951;(i)), which sums over all terms in the vocabulary.
+    As in previous work on logistic normal topic models, we use a Taylor approximation for this term (Blei and Lafferty, 2006a).
+    The prior on &#951; is normal, so the contribution from the second term of the objective (Equation 1) is jk &#8722; &#181;ki))2i.
+    We intro

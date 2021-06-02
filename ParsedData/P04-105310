@@ -1,0 +1,8 @@
+SON-GPE domain.
+    Before making context vectors, we eliminate stop words, words in parallel expressions, and expressions peculiar to particular source documents (examples of these are given below), because these expressions would introduce noise in calculating similarities.
+    A context vector for each NE pair consists of the bag of words formed from all intervening words from all co-occurrences of two named entities.
+    Each word of a context vector is weighed by tf*idf, the product of term frequency and inverse document frequency.
+    Term frequency is the number of occurrences of a word in the collected context words.
+    The order of co-occurrence of the named entities is also considered.
+    If a word occurred times in context and times in context , the term frequency of the word is defined as , where and are named entities.
+    We think that this term frequency of a word in different orders would be effective to detect the direction of a relation if the arguments of a relation have the same NE types

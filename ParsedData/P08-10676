@@ -1,0 +1,6 @@
+g function: In n-best reranking, cand(s) is simply a set of n-best parses from the baseline parser, that is, cand(s) = {y1, y2, ... , yn}.
+    Whereas in forest reranking, cand(s) is a forest implicitly representing the set of exponentially many parses.
+    As usual, we define the score of a parse y to be the dot product between a high dimensional feature representation and a weight vector w: where the feature extractor f is a vector of d functions f = (f1, ... , fd), and each feature fj maps a parse y to a real number fj(y).
+    Following (Charniak and Johnson, 2005), the first feature f1(y) = log Pr(y) is the log probability of a parse from the baseline generative parser, while the remaining features are all integer valued, and each of them counts the number of times that a particular configuration occurs in parse y.
+    For example, one such feature f2000 might be a question &#8220;how many times is a VP of length 5 surrounded by the word &#8216;has&#8217; and the period?
+    &#8221; which is an instance o

@@ -1,0 +1,8 @@
+ckspace&amp;quot; key to correct previously input words.
+    In the case in which these words have already been processed by the parser, the parser must be able to &amp;quot;unparse&amp;quot; the words, without parsing the sentence from the beginning all over again.
+    To implement unparsing, the parser needs to store system status each time a word is parsed.
+    Fortunately, this can be nicely done with our parsing algorithm; only pointers to the graph-structured stack and the parse forest need to be stored.
+    It should be noted that our parsing algorithm is not the only algorithm that parses a sentence strictly from left to right; Other left-to-right algorithms include Earley's (1970) algorithm, the active chart parsing algorithm (Winograd 1983), and a breadth-first version of ATN (Woods 1970).
+    Despite the availability of left-to-right algorithms, surprisingly few on-line parsers exist.
+    NLMenu (Tennant et al. 1983) adopted on-line parsing for a menu-based system but not for typed inputs.
+    In t

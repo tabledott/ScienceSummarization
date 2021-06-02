@@ -1,0 +1,8 @@
+ally generate a set of natural language queries and response pairs {(x, r)} by executing the annotated logical forms on the database.
+    Using this data we construct an automatic feedback function as described in Section 3.
+    Domain knowledge Our learning approaches require an initial weight vector as input.
+    In order to provide an initial starting point, we initialize the weight vector using a similar procedure to the one used in (Zettlemoyer and Collins, 2007) to set weights for three features and a bias term.
+    The weights were developed on the training set using the feedback function to guide our choices.
+    Underlying Learning Algorithms In the direct approach the base linear classifier we use is a linear kernel Support Vector Machine with squaredhinge loss.
+    In the aggressive approach we define our base structured learner to be a structural Support Vector Machine with squared-hinge loss and use hamming distance as the distance function.
+    We use a custom implementation to optimize the obje

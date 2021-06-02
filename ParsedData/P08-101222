@@ -1,0 +1,8 @@
+rations of word-based ITG using EM or VB.
+    The charts were then pruned further by applying the non-compositional constraint from the Viterbi alignment links of that model.
+    Finally we ran 10 iterations of phrase-based ITG over the residual charts, using EM or VB, and extracted the Viterbi alignments.
+    For translation, we used the standard phrasal decoding approach, based on a re-implementation of the Pharaoh system (Koehn, 2004).
+    The output of the word alignment systems (GIZA++ or ITG) were fed to a standard phrase extraction procedure that extracted all phrases of length up to 7 and estimated the conditional probabilities of source given target and target given source using relative frequencies.
+    Thus our phrasal ITG learns only the minimal non-compositional phrases; the standard phrase-extraction algorithm learns larger combinations of these minimal units.
+    In addition the phrases were annotated with lexical weights using the IBM Model 1 tables.
+    The decoder also used a trigram languag

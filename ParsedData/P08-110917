@@ -1,0 +1,8 @@
+tate being produced by a second order Markov process.
+    For the WSJ15 runs, each active state was annotated with only its first child, which is equivalent to a first order Markov process.
+    See Table 5 for the number of states and rules produced.
+    For both WSJ15 and WSJ40, we trained a generative model; a discriminative model, which used lexicon features, but no grammar features other than the rules themselves; and a feature-based model which had access to all features.
+    For the length 15 data we also did experiments in which we relaxed the grammar.
+    By this we mean that we added (previously unseen) rules to the grammar, as a means of smoothing.
+    We chose which rules to add by taking existing rules and modifying the parent annotation on the parent of the rule.
+    We used stochastic gradient descent for if some child is a verb tag, then rule, with that child replaced by the word Unaries which span one word: (r,w) (r,ds(w)) (b(p(r)),w) (b(p(r)),ds(w)) these experiments; the length 15 models had

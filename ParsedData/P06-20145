@@ -1,0 +1,10 @@
+nclude incorrect parses, systematic violations such as not &#8212;* ne ... pas, paraphrases, and linguistic exceptions.
+    We aim to create an alignment system that obeys cohesion constraints most of the time, but can violate them when necessary.
+    Unfortunately, Cherry and Lin&#8217;s beam search solution does not lend itself to a soft cohesion constraint.
+    The imperfect beam search may not be able to find the optimal alignment under a soft constraint.
+    Furthermore, it is not clear what penalty to assign to crossings, or how to learn such a penalty from an iterative training process.
+    The remainder of this paper will develop a complete alignment search that is aware of cohesion violations, and use discriminative learning technology to assign a meaningful penalty to those violations.
+  
+  
+    We require an alignment search that can find the globally best alignment under its current objective function, and can account for phrasal cohesion in this objective.
+    IBM Models 1 and 2, HMM (Vogel et al

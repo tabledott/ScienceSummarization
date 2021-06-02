@@ -1,0 +1,9 @@
+es.
+    Here we have a slight complexity: by the notation, one would expect such emissions to have probability 1, since nothing else can be emitted from a final state.
+    In practice, we have a special stop symbol in our n-gram counts, and the probability of emitting a space from a final state is the probability of the n-gram having chosen the stop character.3 models.
+    The value was the empirically optimal order.
+    3This can be cleaned up conceptually by considering the entire process to have been a hierarchical HMM (Fine et al., 1998), where the -gram model generates the entire phrase, followed by a tier pop up to the phrase transition tier.
+    Using this model, we tested two variants, one in which preceding context was discarded (for example, was turned into ), and another where context was used as outlined above.
+    For comparison, we also built a first-order word-level HMM; the results are shown in table 1.
+    We give F both per-category and overall.
+    The word-level model and the (context disa

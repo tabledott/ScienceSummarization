@@ -1,0 +1,8 @@
+etter escape local optima, each time a new word token is encounFigure 1: Hierarchical structure of the segmentation of the words linja-auton and autonkuljettajallakaan.
+    The boxes represent chunks.
+    Boxes with bold text are morphs, and are part of the codebook.
+    The numbers above each box are the split location (to the left of the colon sign) and the occurrence count of the chunk (to the right of the colon sign). tered, it is resegmented, whether or not this word has been observed before.
+    If the word has been observed (i.e. the corresponding chunk is found in the hierarchical structure), we first remove the chunk and decrease the counts of all its children.
+    Chunks with zero count are removed (remember that removal of leaf nodes corresponds to removal of morphs from the codebook).
+    Next, we increase the count of the observed word chunk by one and re-insert it as an unsplit chunk.
+    Finally, we apply the recursive splitting to the chunk, which may lead to a new, different segmentation of t

@@ -1,0 +1,5 @@
+e not literal translations.
+    Thus, the results for sentence alignments include many incorrect alignments.
+    To discriminate between correct and incorrect alignments, we take advantage of the similarity in article alignments containing sentence alignments so that the sentence alignments in a similar article alignment will have a high value.
+    We define SntScore(JZ, EZ) = AVSIM(J, E) x SIM(JZ, EZ) SntScore(JZ, EZ) is the similarity in the i-th alignment, (JZ, EZ), in article alignment J and E. When we compare the validity of two sentence alignments in the same article alignment, the rank order of sentence alignments obtained by applying SntScore is the same as that of SIM because they share a common AVSIM.
+    However, when we compare the validity of two sentence alignments in different article alignments, SntScore prefers the sentence alignment with the more similar (high AVSIM) article alignment even if their SIM has the same value, while SIM cannot discriminate between the validity of two sentence ali

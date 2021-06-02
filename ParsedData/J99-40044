@@ -1,0 +1,7 @@
+rticular derivation, equal to the product of the rule probabilities used in the derivation, or to associate a probability with a set of derivations, A w,. equal to the sum of the probabilities of the individual derivations.
+    We call this latter probability the inside probability of i,A,j.
+    We can rewrite the CKY algorithm to compute the inside probabilities, as shown in Figure 2 (Baker 1979; Lan i and Young 1990).
+    Notice how similar the inside algorithm is to the recognition algorithm: essentially, all that has been done is to substitute + for V, x for A, and P(A w5) and P(A &#8212;&gt; BC) for TRUE.
+    For many parsing algorithms, this, or a similarly simple modification, is all that is needed to create a probabilistic version of the algorithm.
+    On the other hand, a simple substitution is not always sufficient.
+    To give a trivial example, if in the CKY recognition algorithm we had written chart[s, A, s+1] := chart[s, A, s+1] v chart[s, B, s+t] A chart[s+t, C, s+1]; instead of the less natura

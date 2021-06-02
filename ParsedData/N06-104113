@@ -1,0 +1,8 @@
+   In order to break initial symmetry we initialized our potentials to be near one, with some random noise.
+    To evaluate in this setting, model labels must be mapped to target labels.
+    We followed the common approach in the literature, greedily mapping each model label to a target label in order to maximize per-position accuracy on the dataset.
+    The results of BASE, reported in table 1, depend upon random initialization; averaging over 10 runs gave an average per-position accuracy of 41.3% on the larger training set.
+    We automatically extracted the prototype list by taking our data and selecting for each annotated label the top three occurring word types which were not given another label more often.
+    This resulted in 116 prototypes for the 193K token setting.3 For comparison, there are 18,423 word types occurring in this data.
+    Incorporating the prototype list in the simplest possible way, we fixed prototype occurrences in the data to their respective annotation labels.
+    In this case, th

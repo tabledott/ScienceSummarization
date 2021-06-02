@@ -1,0 +1,7 @@
+since there are not enough items on the stack for reduction.
+    At step (3), we perform a reduceL, making word &#8220;I&#8221; a modifier of &#8220;saw&#8221;; after that the stack contains a single word and we have to shift the next word &#8220;Bill&#8221; (step 4).
+    Now we face a shift-reduce conflict: we can either combine &#8220;saw&#8221; and &#8220;Bill&#8221; in a reduceR action (5a), or shift &#8220;Bill&#8221; (5b).
+    We will use features extracted from the configuration to resolve the conflict.
+    For example, one such feature could be a bigram st o st&#8722;1, capturing how likely these two words are combined; see Table 2 for the complete list of feature templates we use in this baseline parser.
+    We argue that this kind of shift-reduce conflicts are the major source of parsing errors, since the other type of conflict, reduce-reduce conflict (i.e., whether left or right) is relatively easier to resolve given the part-of-speech information.
+    For example, between a noun and an adjective, 

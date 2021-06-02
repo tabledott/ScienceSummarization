@@ -1,0 +1,8 @@
+utput string (and hence an upper bound on the size of both DSyntS and SSyntS).
+    At each node, each rule in the appropriate grammar (deep- or surface-syntactic) must be checked against the subtree rooted at that node.
+    This tree matching is in the general case exponential in n. However, in fact it is dependent on two variables, the maximal size of grammar rules in the grammar (or n, whichever is greater), and the branching factor (maximum number of daughter nodes for a node) of the input representation.
+    Presumably because of deeper facts about language, the grammar rules are quite small.
+    The current grammar does not have any rules with more than three nodes.
+    This reduces the tree matching algorithm to polynomial in n. Furthermore, while the branching factor of the input tree can in theory be n &#8212; 1, in practice it will be much smaller.
+    For example, all the input trees used in the tests discussed above have branching factors of no more than 5.
+    We thus obtain de-facto linear perfor

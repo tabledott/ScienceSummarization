@@ -1,0 +1,7 @@
+orphological and contextual information Tries provide an effective, efficient and flexible data structure for storing both contextual and morphological patterns and statistics.
+    First, they are very compact representations.
+    Second, they support a natural hierarchical smoothing procedure for distributional class statistics.
+    We consider characterbased tries, in which each node contains a probability distribution (when working with tokenized text, two distributions are considered in each node, one for tokens and one for types).
+    The distribution stored at each node contain the probability of each name class given the history ending at that node.
+    Each distribution also has two standard classes, named &amp;quot;questionable&amp;quot; (unassigned probability mass in terms of entity classes, to be motivated below) and &amp;quot;non-entity&amp;quot;.
+    To simplify the notations, we will refer to a start and end point bounded portion of text being analyzed (in order to determine if it represents a 

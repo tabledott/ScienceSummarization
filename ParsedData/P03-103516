@@ -1,0 +1,7 @@
+by a character bigram model as follows: (1) Generate the family name sub-string SF, with the probability P(SF|F); (2) Generate the given name sub-string SG, with the probability P(SG|G) (or P(SG1|G1)); and (3) Generate the second given name, with the probability P(SG2|SG1,G2).
+    For example, the generative probability of the string &#26446;&#20426;&#29983; given that it is a PN would be estimated as P(&#26446;&#20426;&#29983;|PN) = P(&#26446;|F)P(&#20426;|G1)P(&#29983;|&#20426;,G2).
+    Unlike PNs, there are no patterns for LNs.
+    We assume that a LN candidate is generated given S&#8217; (which is less than 10 characters long), if one of the following conditions is satisfied: (1) S&#8217; is an entry in the LN list (which contains 30,000 LNs); (2) S&#8217; ends in a keyword in a 120-entry LN keyword list such as &#24066; &#8216;city&#8217;5.
+    The probability P(S&#8217;|LN) is computed by a character bigram model.
+    Consider a string &#20044;&#33487;&#37324;&#27743; &#8216;Wusuli river&#8217;.
+    It 

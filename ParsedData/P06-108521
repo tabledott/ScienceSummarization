@@ -1,0 +1,6 @@
+er DP.5 As in the unigram model, we never deal with Hw or G directly.
+    By integrating over them, we get a distribution over bigram frequencies that can be understood in terms of the CRP.
+    Now, each word type w is associated with its own restaurant, which represents the distribution over words that follow w. Different restaurants are not completely independent, however: the labels on the tables in the restaurants are all chosen from a common base distribution, which is another CRP.
+    To understand the HDP model in terms of a grammar, we consider $ as a special word type, so that wi ranges over E&#8727; U J$J.
+    After observing w&#8722;i, the HDP grammar is as shown in Figure 4, where h&#8722;i = (w&#8722;i, z&#8722;i); t$, tE&#8727;, and twi are the total number of tables (across all words) labeled with $, non-$, and wi, respectively; t = t$ + tE&#8727; is the total number of tables; and n(wi&#8722;1,wi) is the number of occurrences of the bigram (wi&#8722;1, wi).
+    We have suppressed the superscri

@@ -1,0 +1,6 @@
+ults of our unigram experiments suggested that word segmentation could be improved by taking into account dependencies between words.
+    To test this hypothesis, we extended our model to incorporate bigram dependencies using a hierarchical Dirichlet process (HDP) (Teh et al., 2005).
+    Our approach is similar to previous n-gram models using hierarchical Pitman-Yor processes (Goldwater et al., 2006; Teh, 2006).
+    The HDP is appropriate for situations in which there are multiple distributions over similar sets of outcomes, and the distributions are believed to be similar.
+    In our case, we define a bigram model by assuming each word has a different distribution over the words that follow it, but all these distributions are linked.
+    The definition of our bigram language model as an HDP is That is, P(wi|wi&#8722;1 = w) is distributed according to Hw, a DP specific to word w. Hw is linked to the DPs for all other words by the fact that they share a common base distribution G, which is generated from anoth

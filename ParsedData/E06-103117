@@ -1,0 +1,10 @@
+cter level.
+    To normalize this distance into a range from 0 (for identical words) to 1 (for completely different words), we divide the absolute distance by the length of the Levenshtein alignment path.
+    Another character-based substitution cost function we studied is based on the common prefix length of both words.
+    In English, different tenses of the same verb share the same prefix; which is usually the stem.
+    The same holds for different cases, numbers and genders of most nouns and adjectives.
+    However, it does not hold if verb prefixes are changed or removed.
+    On the other hand, the common prefix length is sensitive to critical prefixes such as &#8220;mis-&#8221; for the same reason.
+    Consequently, the common prefix length, normalized by the average length of both words, gives a reasonable measure for the similarity of two words.
+    To transform the normalized common prefix length into costs, this fraction is then subtracted from 1.
+    More sophisticated methods could be considered f

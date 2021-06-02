@@ -1,0 +1,7 @@
+ential model to predict each morphological feature separately (such as the ones we have listed in Figure 2), but he trains different models for each ambiguity left unresolved by the morphological analyzer, rather than training general models.
+    For all languages, the use of a morphological analyzer results in tagging error reductions of at least 50%.
+    We depart from Haji&#711;c&#8217;s work in several respects.
+    First, we work on Arabic.
+    Second, we use this approach to also perform tokenization.
+    Third, we use the SVM-based Yamcha (which uses Viterbi decoding) rather than an exponential model; however, we do not consider this difference crucial and do not contrast our learner with others in this paper.
+    Fourth, and perhaps most importantly, we do not use the notion of ambiguity class in the feature classifiers; instead we investigate different ways of using the results of the individual feature classifiers in directly choosing among the options produced for the word by the morphological anal

@@ -1,0 +1,7 @@
+ linear programming.
+    Our first example is weighted CFG parsing.
+    We assume a context-free grammar, in Chomsky normal form, with a set of non-terminals N. The grammar contains all rules of the form A &#8212;* B C and A &#8212;* w where A, B, C E N and w E V (it is simple to relax this assumption to give a more constrained grammar).
+    For rules of the form A &#8212;* w we refer to A as the part-of-speech tag for w. We allow any non-terminal to be at the root of the tree.
+    Given a sentence with n words, w1, w2,... wn, a parse tree is a set of rule productions of the form hA &#8594; B C, i, k, ji where A, B, C &#8712; N, and 1 &#8804; i &#8804; k &lt; j &#8804; n. Each rule production represents the use of CFG rule A &#8594; B C where nonterminal A spans words wi ... wj, non-terminal B spans words wi ... wk, and non-terminal C spans words wk+1 ... wj.
+    There are O(|N|3n3) such rule productions.
+    Each parse tree corresponds to a subset of these rule productions, of size n &#8722; 1, that forms a 

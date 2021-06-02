@@ -1,0 +1,7 @@
+wo needs have motivated some of the research in NER in the last decade, several other fundamental decisions must be made.
+    These include: what model to use for sequential inference, how to represent text chunks and what inference (decoding) algorithm to use.
+    Despite the recent progress in NER, the effort has been dispersed in several directions and there are no published attempts to compare or combine the recent advances, leading to some design misconceptions and less than optimal performance.
+    In this paper we analyze some of the fundamental design challenges and misconceptions that underlie the development of an efficient and robust NER system.
+    We find that BILOU representation of text chunks significantly outperforms the widely adopted BIO.
+    Surprisingly, naive greedy inference performs comparably to beamsearch or Viterbi, while being considerably more computationally efficient.
+    We analyze several approaches for modeling non-local dependencies proposed in the literature and find that n

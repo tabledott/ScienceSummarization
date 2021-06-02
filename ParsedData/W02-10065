@@ -1,0 +1,7 @@
+here ( ) is the POS of theth token to the left (right) of , and is the POS of .
+    A token can be a word or a punctuation symbol, and each of these neighboring tokens must be in the same sentence as .
+    We use a sentence segmentation program (Reynar and Ratnaparkhi, 1997) and a POS tagger (Ratnaparkhi, 1996) to segment the tokens surrounding into sentences and assign POS tags to these tokens.
+    For example, to disambiguate the word bars in the POS-tagged sentence &#8220;Reid/NNP saw/VBD me/PRP looking/VBG at/IN the/DT iron/NN bars/NNS ./.&#8221;, the POS feature vector is where denotes For this knowledge source, we consider all single words (unigrams) in the surrounding context of , and these words can be in a different sentence from .
+    For each training or test example, the SENSEVAL data sets provide up to a few sentences as the surrounding context.
+    In the results reported in this paper, we consider all words in the provided context.
+    Specifically, all tokens in the surrounding context of are 

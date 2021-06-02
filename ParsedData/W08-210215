@@ -1,0 +1,9 @@
+ed through either the first-order model (Eq.
+    2) or the second-order model (Eq.
+    3).
+    For the first-order model, the methods described in (Eisner, 2000) can be used for the parsing algorithm.
+    In Eisner&#8217;s algorithms for dependency parsing each word in the input has left and right finitestate (weighted) automata, which generate the left and right modifiers of the word in question.
+    We make use of this idea of automata, and also make direct use of the method described in section 4.2 of (Eisner, 2000) that allows a set of possible senses for each word in the input string.
+    In our use of the algorithm, each possible sense for a word corresponds to a different possible spine that can be associated with that word.
+    The left and right automata are used to keep track of the last position in the spine that was adjoined into on the left/right of the head respectively.
+    We can make use of separate left and right automata&#8212;i.e., the grammar is splittable&#8212;because left and right mod

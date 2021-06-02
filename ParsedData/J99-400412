@@ -1,0 +1,10 @@
+itions.
+    The side condition, [i, A &#8212;&gt; a &#8226; BO, j], provides the top-down filtering, ensuring that only items that might be used later by the completion rule can be predicted, while the main condition, R(B &#8212;&gt; 7), provides the probability of the relevant rule.
+    The side condition is interpreted in a Boolean fashion, while the main condition's actual probability is used.
+    Unlike the CKY algorithm, Barley's algorithm can handle grammars with epsilon (e), unary, and n-ary branching rules.
+    In some cases, this can significantly complicate parsing.
+    For instance, given unary rules A &#8212;+ B and B A, a cycle exists.
+    This kind of cycle may allow an infinite number of different derivations, requiring an infinite summation to compute the inside probabilities.
+    The ability of item-based parsers to handle these infinite loops with relative ease is a major attraction.
+    This paper will simplify the development of new parsers in three important ways.
+    First, it will simpl

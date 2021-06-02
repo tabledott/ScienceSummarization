@@ -1,0 +1,8 @@
+ effectively.
+    Given the performance numbers on the individual layers cited earlier, (i) seems unlikely, and we hope that further research in how best to leverage these layers will result in models that can benefit from them more definitively.
+    In order to check how stringent the official, exact match scoring is, we also performed a relaxed scoring.
+    Unlike ACE and MUC, the OntoNotes data does not have manually annotated minimum spans that a mention must contain to be considered correct.
+    However, OntoNotes does have manual syntactic analysis in the form of the Treebank.
+    Therefore, we decided to approximate the minimum spans by using the head words of the mentions using the gold standard syntax tree.
+    If the response mention contained the head word and did not exceed the true mention boundary, then it was considered correct &#8211; both from the point of view of mention detection, and coreference resolution.
+    The scores using this relaxed strategy for the open and closed track submission

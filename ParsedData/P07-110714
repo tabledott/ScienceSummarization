@@ -1,0 +1,9 @@
+o a non-person, it will be biased towards being used with persons.
+    This model gives substantially improved predictions: 64.1 Fi on our development data.
+    As can be seen in figure 2(b), this model does correct the systematic problem of pronouns being considered their own entities.
+    However, it still does not have a preference for associating pronominal references to entities which are in any way local.
+    We would like our model to capture how mention types are generated for a given entity in a robust and somewhat language independent way.
+    The choice of entities may reasonably be considered to be independent given the mixing weights Q, but how we realize an entity is strongly dependent on context (Ge et al., 1998).
+    In order to capture this in our model, we enrich it as shown in figure 4.
+    As we proceed through a document, generating entities and their mentions, we maintain a list of the active entities and their saliences, or activity scores.
+    Every time an entity is mentioned, we incr

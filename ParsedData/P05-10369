@@ -1,0 +1,12 @@
+ (with count of 3) and NP &#8594; DT JJ NN (with count of 4), yielding a sum of 7.
+    Finally, P(NP &#8594; DT NN  |NP &#8594; DT NN) = 4/7.
+    The count of NP &#8594; DT NN = 4, and since the short (NP &#8594; DT NN) is the same as above, the count of the possible long versions is again 7.
+    In this way, we approximate Pexpand(l  |s) without parallel data.
+    Since some of these &#8220;training&#8221; pairs are likely to be fairly poor compressions, due to the artificiality of the construction, we restrict generation of short sentences to not allow deletion of the head of any subtree.
+    None of the special rules are applied.
+    Other than the above changes, the unsupervised model matches our supervised version.
+    As will be shown, this rule is not constraining enough and allows some poor compressions, but it is remarkable that any sort of compression can be achieved without training data.
+    Later, we will describe additional constraints that help even more.
+  
+  
+    Because the supervised versio

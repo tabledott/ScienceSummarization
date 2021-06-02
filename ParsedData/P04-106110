@@ -1,0 +1,7 @@
+hat make them isomorphic to dependency grammars, with the terminal alphabet being simply partsof-speech.
+    Here, the rule probabilities are equivalent to P(Y|X, right) and P(Y|X, left) respectively.2 The actual experiments in Carroll and Charniak (1992) do not report accuracies that we can compare to, but they suggest that the learned grammars were of extremely poor quality.
+    With hindsight, however, the main issue in their experiments appears to be not their model, but that they randomly initialized the production (attachment) probabilities.
+    As a result, their learned grammars were of very poor quality and had high variance.
+    However, one nice property of their structural constraint, which all dependency models share, is that the symbols in the grammar are not symmetric.
+    Even with a grammar in which the productions are initially uniform, a symbol X can only possibly have non-zero posterior likelihood over spans which contain a matching terminal X.
+    Therefore, one can start with uniform rew

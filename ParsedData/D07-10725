@@ -1,0 +1,11 @@
+components have equal probability.
+			For each mixture component z ? {1, . . .
+			,K}, the parameters of the component ?z aredrawn from some prior G0.
+			Given the model param eters (?,?), the data points are generated i.i.d. by first choosing a component and then generating from a data model F parameterized by that component.
+			In document clustering, for example, each datapoint xi is a document represented by its term frequency vector.
+			Each component (cluster) z has multinomial parameters ?z which specifies adistribution F (?;?z) over words.
+			It is custom ary to use a conjugate Dirichlet prior G0 =Dirichlet(??, . . .
+			over the multinomial parameters, which can be interpreted as adding ???1 pseu docounts for each word.
+			2.2 DP mixture model.
+			We now consider the extension of the Bayesian finite mixture model to a nonparametric Bayesian mixture model based on the Dirichlet process.
+			We focus on the stick-breaking representation (Sethuraman,1994) of the Dirichlet process instead of the stochastic

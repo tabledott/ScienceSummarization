@@ -1,0 +1,11 @@
+   Resnik's model was trained on the primary corpus (59,608 sentences).
+  
+  
+    In this section we describe experiments comparing the similarity-based model for selectional preferences to Resnik's WordNet-based model and to an EM-based clustering model3.
+    For the similarity-based model we test the five similarity metrics and three weighting schemes listed in section 3.
+    Like Rooth et al. (1999) we evaluate selectional preference induction approaches in a pseudodisambiguation task.
+    In a test set of pairs (rp, w), each headword w is paired with a confounder w' chosen randomly from the BNC according to its frequency4.
+    Noun headwords are paired with noun confounders in order not to disadvantage Resnik's model, which only works with nouns.
+    The headword/confounder pairs are only computed once and reused in all crossvalidation runs.
+    The task is to choose the more likely role headword from the pair (w, w').
+    In the main part of the experiment, we count a pair as covered if both w and w' are

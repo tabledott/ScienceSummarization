@@ -1,0 +1,8 @@
+For example, in Figure 2 note that every pair of English and French words under the verb phrase is aligned.
+    This will generate five crossings, one each between the pairs VBP-PP, IN-NP, NP -PP, NN-DT, and IN-NP .
+    However, what is really happening is that the whole verb phrase is first being moved without crossing anything else and then being translated as a unit.
+    For our purposes we want to count this example as producing zero crossings.
+    To accomplish this, we defined a simple heuristic to detect phrasal translations so we can filter them if desired.
+    After calculating the French spans from the English parses and alignment information, we counted crossings for all pairs of child constituents in each constituent in the sentence, maintaining separate counts for those involving the head constituent of the phrase and for crossings involving modifiers only.
+    We did this while varying conditions along two axes: alignment type and phrasal translation filtering.
+    Recalling the two different ty

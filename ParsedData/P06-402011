@@ -1,0 +1,7 @@
+pecifications of the relation type for some relations and the initial or underlying logical relation of the grammatical subject in constructions such as passive.
+    We determine for each sentence the relations in the test set which are correct at each level of the relational hierarchy.
+    A relation is correct if the head and dependent slots are equal and if the other slots are equal (if specified).
+    If a relation is incorrect at a given level in the hierarchy it may still match for a subsuming relation (if the remaining slots all match); for example, if a ncmod relation is mislabelled with zmod, it will be correct for all relations which subsume both ncmod and zmod, e.g. mod.
+    Similarly, the GR will be considered incorrect for zmod and all relations that subsume zmod but not ncmod.
+    Thus, the evaluation scheme calculates unlabelled dependency accuracy at the dependency (most general) level in the hierarchy.
+    The micro-averaged precision, recall and F1 score are calculated from the counts for al

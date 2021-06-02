@@ -1,0 +1,9 @@
+9).
+    For this study, we used an English graph where the node set V was based on all n-grams up to length 10 extracted from 4 billion web pages.
+    This list was filtered to 20 million candidate phrases using a number of heuristics including frequency and mutual information of word boundaries.
+    A context vector for each candidate phrase was then constructed based on a window of size six aggregated over all mentions of the phrase in the 4 billion documents.
+    The edge set E was constructed by first, for each potential edge (vi, vj), computing the cosine similarity value between context vectors.
+    All edges (vi, vj) were then discarded if they were not one of the 25 highest weighted edges adjacent to either node vi or vj.
+    This serves to both reduce the size of the graph and to eliminate many spurious edges for frequently occurring phrases, while still keeping the graph relatively connected.
+    The weight of the remaining edges was set to the corresponding cosine similarity value.
+    Since this g

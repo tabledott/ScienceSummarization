@@ -1,0 +1,9 @@
+shly structured, badly trained, or redundant with the other features.
+    For each sentence xi in our training corpus S, we are given Ki possible analyses yi,i, ... yi,K,.
+    (These may be all of the possible translations or parse trees; or only the Ki most probable under some other model; or only a random sample of size Ki.)
+    Each analysis has a vector of real-valued features (i.e., factors, or experts) denoted fi,k.
+    The score of the analysis yi,k is &#952; &#183; fi,k, the dot product of its features with a parameter vector &#952;.
+    For each sentence, we obtain a normalized probability distribution over the Ki analyses as We wish to adjust this model&#8217;s parameters &#952; to minimize the severity of the errors we make when using it to choose among analyses.
+    A loss function Ly*(y) assesses a penalty for choosing y when y&#8727; is correct.
+    We will usually write this simply as L(y) since y&#8727; is fixed and clear from context.
+    For clearer exposition, we assume below that the total

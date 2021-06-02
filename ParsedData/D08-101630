@@ -1,0 +1,7 @@
+r log-linear models, Since V&#952;Fm(A) only depends on the assignment A&#8217;s values for variables that are connected to Fm in the factor graph, its expectation under p(A) depends only on the marginalization of p(A) to those variables jointly.
+    Fortunately, BP provides an estimate of that marginal distribution, namely, its belief about the factor Fm, given W and 0 (&#167;4.2).25 Note that the hard constraints do not depend on 0 at all; so their summands in equation (10) will be 0.
+    We employ stochastic gradient descent (Bottou, 2003), since this does not require us to compute the objective function itself but only to (approximately) estimate its gradient as explained above.
+    Alternatively, given any of the MAP decoding procedures from &#167;6, we could use an error-driven learning method such as the perceptron or MIRA.26
+  
+  
+    We asked: (1) For projective parsing, where higherorder factors have traditionally been incorporated into slow but exact dynamic programming (DP), what are the comparati

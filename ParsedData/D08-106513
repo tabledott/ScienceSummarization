@@ -1,0 +1,7 @@
+ a first order Taylor-series approximation to what we call the corpus log(BLEU) gain: the change in corpus log(BLEU) contributed by the sentence relative to not including that sentence in the corpus.
+    Let r be the reference length of the corpus, c0 the candidate length, and {cnj1 &lt; n &lt; 41 the number of n-gram matches.
+    Then, the corpus BLEU score B(r, c0, cn) can be defined as follows (Papineni et al., 2001): where we have ignored On, the difference between the number of words in the candidate and the numthe (max, +) semiri ber of n-grams.
+    If L is the average sentence length in the corpus, &#916;n Pz&#65533; (n &#8722; 1)c&#65533;L .
+    The corpus log(BLEU) gain is defined as the change in log(BLEU) when a new sentence&#8217;s (E0) statistics are added to the corpus statistics: where the counts in B0 are those of B plus those for the current sentence.
+    We will assume that the brevity penalty (first term in the above approximation) does not change when adding the new sentence.
+    In experi

@@ -1,0 +1,8 @@
+    Ideally, we need to build a wordcharacter hybrid model that effectively learns the characteristics of unknown words (with characterlevel nodes) as well as those of known words (with word-level nodes).
+    We can directly estimate the statistics of known words from an annotated corpus where a sentence is already segmented into words and assigned POS tags.
+    If we select the correct path yt that corresponds to the annotated sentence, it will only consist of word-level nodes that do not allow learning for unknown words.
+    We therefore need to choose character-level nodes as correct nodes instead of word-level nodes for some words.
+    We expect that those words could reflect unknown words in the future.
+    Baayen and Sproat (1996) proposed that the characteristics of infrequent words in a training corpus resemble those of unknown words.
+    Their idea has proven effective for estimating the statistics of unknown words in previous studies (Ratnaparkhi, 1996; Nagata, 1999; Nakagawa, 2004).
+    We adopt Ba

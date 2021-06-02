@@ -1,0 +1,10 @@
+er and Singer, 2003; Chiang et al., 2009) on a tuning set of about 3000 sentences of newswire from NIST MT evaluation data and GALE development data, disjoint from the training data.
+    We optimized feature weights on 90% of this and held out the other 10% to determine when to stop.
+  
+  
+    Table 3 shows the scores on our development sets and test sets, which are about 3000 and 2000 sentences, respectively, of newswire drawn from NIST MT evaluation data and GALE development data and disjoint from the tuning data.
+    For Chinese, we first tried increasing the distortion limit from 10 words to 20.
+    This limit controls how deeply nested the tree structures built by the decoder are, and we want to see whether adding syntactic information leads to more complex structures.
+    This change by itself led to an increase in the BLEU score.
+    We then compared against two systems using tree-to-tree grammars.
+    Using exact tree-to-tree extraction, we got a much smaller grammar, but decreased accuracy on all but

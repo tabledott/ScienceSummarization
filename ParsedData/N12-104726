@@ -1,0 +1,11 @@
+optimizers is the availability of an explicit regularization term A.
+    To measure the impact of this parameter, we designed a feature set explicitly for overfitting.
+    This set uses our Big Fr-En features, with the count bin template modified to distinguish each joint count observed in the tuning set.
+    These new features, which expand the set to 20k+ features, should generalize poorly.
+    We tested MR and SVM on our Fr-En data using this feature set, varying their respective regularization parameters by factors of 10.
+    We compared this to Batch Lattice MIRA&#8217;s step-size cap C, which controls its regularization (Martins et al., 2010).
+    The results are shown in Figure 1.
+    Looking at the tuning scores, one can see that A affords much greater control over tuning performance than MIRA&#8217;s C. Looking at test scores, MIRA&#8217;s narrow band of regularization appears to be just about right; however, there is no reason to expect this to always be the case.
+  
+  
+    We have presented three n

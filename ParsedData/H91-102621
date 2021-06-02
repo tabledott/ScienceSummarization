@@ -1,0 +1,13 @@
+ scored with X. logprob (match I slope j) J Using Bayes rule, the prob(matchlslopej) is rewritten as prob( slope ~ Imatch) prob ( match).
+  Both terms were estimated empirically.
+  The second term is determined by the fan-in, the number of possible matches that a particular j value might play a role in.
+  In this example, most of the j values had a fan-in of 1.
+  However, the two instances of et had a fan-in of 2 because they could match either of the two instances of and.
+  The score is smaller for both of these uses of et because there is more uncertainty.
+  We considered three cases: the fan-in is 1, 2 or many.
+  The log prob(match) in each of these three cases is -0.05, --0.34 and ---0.43, respectively.
+  The first term is also determined empirically.
+  The score is maximized for a slope of 1, In this case, log prob(slopelmatch) is --0.46.
+  The score falls off rapidly with larger or smaller slopes.
+  The dynamic programming optimization is also given the choice to match an English word to NULL.
+  I f  th

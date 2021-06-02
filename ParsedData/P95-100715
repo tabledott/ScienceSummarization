@@ -1,0 +1,10 @@
+o estimate the parameters.
+    Since these are expressed in terms of categories rather than words, it is necessary to combine the counts of words to arrive at estimates.
+    In all cases the estimates used are: Here ambig(w) is the number of categories in which w appears.
+    It has the effect of dividing the evidence from a training instance across all possible categories for the words.
+    The normaliser ensures that all parameters for a head noun sum to unity.
+    Given the high level descriptions in section 1.3 it remains only to formalise the decision process used to analyse a noun compound.
+    Each test compound presents a set of possible analyses and the goal is to choose which analysis is most likely.
+    For three word compounds it suffices to compute the ratio of two probabilities, that of a left-branching analysis and that of a right-branching one.
+    If this ratio is greater than unity, then the left-branching analysis is chosen.
+    When it is less than unity, a right-branching analysis is chos

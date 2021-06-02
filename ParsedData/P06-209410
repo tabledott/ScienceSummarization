@@ -1,0 +1,12 @@
+re columns to have at least three filled instances and delete tables with fewer than three rows.
+    These thresholds are empirically determined using training data.
+  
+  
+    We conducted the experiments using the 1995 New York Times as the corpus.
+    The queries used for system development and threshold tuning were created by the authors, while queries based on the set of event types in the ACE extraction evaluations were used for testing.
+    A total of 31 test queries were used; we discarded several queries which were ambiguous or uncertain.
+    The test queries were derived from the example sentences for each event type in the ACE guidelines .
+    Examples of queries are shown in the Appendix.
+    At the moment, the whole process takes about 15 minutes on average for each query on a Pentium 2.80GHz processor running Linux.
+    The corpus was analyzed in advance by a POS tagger, NE tagger and dependency analyzer.
+    The processing and counting of sub-trees takes the majority (more than 90%) of the time.

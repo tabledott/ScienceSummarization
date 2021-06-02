@@ -1,0 +1,11 @@
+ Portuguese and 4 hours for Czech.
+    Parsing is also very fast, with an average throughput of 200 sentences per second: Table 1 reports parse time for parsing each whole test set.
+    Using Memory Based Learning increases considerably the parsing time, while as expected learning time is quite shorter.
+    On the other hand MBL achieves an improvement up to 5% in accuracy, as shown in detail in Table 1.
+    Shift/Reduce, one to decide which Reduce action and a third one to choose the dependency in case of Left/Right action For details on the CoNLL-X shared task and the measurements see (Buchholz, et al. 2006).
+  
+  
+    I performed several experiments to tune the parser.
+    I also tried alternative machine learning algorithms, including SVM, Winnow, Voted Perceptron.
+    The use of SVM turned out quite impractical since the technique does not scale to the size of training data involved: training an SVM with such a large number of features was impossible for any of the larger corpora.
+    For smaller ones, e

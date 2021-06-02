@@ -1,0 +1,9 @@
+red instances.
+    This means that 900,000 Freebase relation instances are used in training, and 900,000 are held out.
+    These experiments used 800,000 Wikipedia articles in the training phase and 400,000 different articles in the testing phase.
+    For human evaluation experiments, all 1.8 million relation instances are used in training.
+    Again, we use 800,000 Wikipedia articles in the training phase and 400,000 different articles in the testing phase.
+    For all our experiments, we only extract relation instances that do not appear in our training data, i.e., instances that are not already in Freebase.
+    Our system needs negative training data for the purposes of constructing the classifier.
+    Towards this end, we build a feature vector in the training phase for an &#8216;unrelated&#8217; relation by randomly selecting entity pairs that do not appear in any Freebase relation and extracting features for them.
+    While it is possible that some of these entity pairs on the 102 largest relations we u

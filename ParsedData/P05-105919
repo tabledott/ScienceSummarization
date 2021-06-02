@@ -1,0 +1,6 @@
+    To verify the safety of the tic-tac-toe pruning technique, we applied it to the unlexicalized ITG using the same beam ratio (10&#8722;5) and found that the AER on the test data was not changed.
+    However, whether or not the top-k lexical head pruning technique is equally safe remains a question.
+    One noticeable implication of this technique for training is the reliance on initial probabilities of lexical pairs that are discriminative enough.
+    The comparison of results for ITG and LITG in Table 2 and the fact that AER began to rise after only one iteration of training seem to indicate that keeping few distinct lexical heads caused convergence on a suboptimal set of parameters, leading to a form of overfitting.
+    In contrast, overfitting did not seem to be a problem for LITG in the unpruned experiment of Table 1, despite the much larger number of parameters for LITG than for ITG and the smaller training set.
+    We also want to point out that for a pair of long sentences, it would be hard to refle

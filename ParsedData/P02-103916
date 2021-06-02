@@ -1,0 +1,9 @@
+d (syn and syn-nozf) are our decoders.
+    Both used the same decoding algorithm and pruning as described in the previous sections, except that syn-nozf allowed no zero-fertility insertions.
+    The average decoding speed was about 100 seconds6 per sentence for both syn and syn-nozf.
+    As an overall decoding performance measure, we used the BLEU metric (Papineni et al., 2002).
+    This measure is a geometric average of n-gram accuracy, adjusted by a length penalty factor LP.7 The n-gram accuracy (in percentage) is shown in Table 1 as P1/P2/P3/P4 for unigram/bigram/trigram/4-gram.
+    Overall, our decoder performed better than the IBM system, as indicated by the higher BLEU score.
+    We obtained better n-gram accuracy, but the lower LP score penalized the overall score.
+    Interestingly, the system with no explicit zero-fertility word insertion (syn-nozf) performed better than the one with zerofertility insertion (syn).
+    It seems that most zerofertility words were already included in the phrasal transla

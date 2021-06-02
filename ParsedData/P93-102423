@@ -1,0 +1,7 @@
+eases monotonically.
+    The test set relative entropy decreases to a minimum at 206 clusters, and then starts increasing, suggesting that larger models are overtrained.
+    The new noun test set is intended to test whether clusters based on the 1000 most frequent nouns are useful classifiers for the selectional properties of nouns in general.
+    Since the nouns in the test set pairs do not occur in the training set, we do not have their cluster membership probabilities that are needed in the asymmetric model.
+    Instead, for each noun n in the test set, we classify it with respect to the clusters by setting where p&#8222; is the empirical conditional verb distribution for n given by the test set.
+    These cluster membership estimates were then used in the asymmetric model and the test set relative entropy calculated as before.
+    As the figure shows, the cluster model provides over one bit of information about the selectional properties of the new nouns, but the overtraining effect is even sharper than f

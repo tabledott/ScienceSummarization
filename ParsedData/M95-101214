@@ -1,0 +1,8 @@
+ser is done.
+  It is important to note that the search strategy in the phraser differs significantly from that in standar d parsers.
+  In standard parsing, one searches for any and all rules whose antecedents might apply given the stat e of the parsers chart : all these rules become candidates for application, and indeed they all are applie d (modulo higher-order search control) .
+  In our phraser, only the current rule in a rule sequence is tested: the rule is applied wherever this test succeeds, and the rule is never revisited at any subsequent stage of processing .
+  After the final rule of a sequence is run, no further processing occurs .
+  The language of phraser rule s The language of the phraser rules is as simple as their control strategy .
+  Rules can test lexemes to the left and right of the phrase, or they can look at the lexemes in the phrase .
+  Tests in turn can be part-of-speech queries, literal lexeme matches, tests for the presence of neighboring phrases, or the application of predicates that

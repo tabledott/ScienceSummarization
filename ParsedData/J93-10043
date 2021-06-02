@@ -1,0 +1,9 @@
+ character lengths.
+    The program uses the fact that longer sentences in one language tend to be translated into longer sentences in the other language, and that shorter sentences tend to be translated into shorter sentences.
+    A probabilistic score is assigned to each proposed correspondence of sentences, based on the scaled difference of lengths of the two sentences (in characters) and the variance of this difference.
+    This probabilistic score is used in a dynamic programming framework to find the maximum likelihood alignment of sentences.
+    It is remarkable that such a simple approach works as well as it does.
+    An evaluation was performed based on a trilingual corpus of economic reports issued by the Union Bank of Switzerland (UBS) in English, French, and German.
+    The method correctly aligned all but 4% of the sentences.
+    Moreover, it is possible to extract a large subcorpus that has a much smaller error rate.
+    By selecting the best-scoring 80% of the alignments, the error rate is redu

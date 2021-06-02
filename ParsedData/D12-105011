@@ -1,0 +1,9 @@
+ = (w1,...,wn) from the corpus.
+    The n-gram is paired with a corrupted n-gram x&#732; = (w1,..., &#732;wn) where &#732;wn =6 wn is chosen uniformly from the vocabulary.
+    The model concatenates the learned embeddings of the n words and predicts a score for the n-gram sequence using the learned embeddings as features.
+    The training criterion is that n-grams that are present in the training corpus must have a score at least some margin higher than the corrupted n-grams.
+    The model learns via gradient descent over the neural network parameters and the embedding lookup table.
+    Word vectors are stored in a word embedding matrix which captures syntactic and semantic information from co-occurrence statistics.
+    As these representations are learned, albeit in an unsupervised manner, one would hope that they capture word meanings more succinctly, compared to the simpler distributional representations that are merely based on co-occurrence.
+    We trained the neural language model on the BNC.
+    We opt

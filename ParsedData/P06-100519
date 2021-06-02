@@ -1,0 +1,6 @@
+challenging pronoun resolution instances.
+    We encode the semantic compatibility between a noun and its parse tree parent (and grammatical relationship with the parent) using mutual information (MI) (Church and Hanks, 1989).
+    Suppose we are determining whether ham is a suitable antecedent for the pronoun it in eat it.
+    We calculate the MI as: Although semantic compatibility is usually only computed for possessive-noun, subject-verb, and verb-object relationships, we include 121 different kinds of syntactic relationships as parsed in our news corpus.3 We collected 4.88 billion parent:rel:node triples, including over 327 million possessive-noun values, 1.29 billion subject-verb and 877 million verb-direct object.
+    We use small probability values for unseen Pr(parent:rel:node), Pr(parent:rel), and Pr(node) cases, as well as a default MI when no relationship is parsed, roughly optimized for performance on the training set.
+    We include both the MI between the noun and the pronoun&#8217;s parent as we

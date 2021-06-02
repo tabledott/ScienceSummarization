@@ -1,0 +1,7 @@
+ can subsequently be learned.
+  
+  
+    In this section, we derive a simple probabilistic model for acquiring training data for a given learning task, and use it to motivate our approach to weakly supervised hedge classification.
+    Given: Aim: Infer a set of training samples T for each concept class yi such that bx E 7[Y (x) = yi] Now, it follows that bxET[Y (x)=yi] is satisfied in the case that bxET[P(yi|x)=1], which leads to a model in which T is initialised to Si and then iteratively augmented with the unlabelled sample(s) for which the posterior probability of class membership is maximal.
+    Formally: An interesting observation is the importance of the sample prior P(xj) in the denominator, often ignored for classification purposes because of its invariance to class.
+    We can expand further by = arg max j marginalising over the classes in the denominator in expression 2, yielding: so we are left with the class priors and classconditional likelihoods, which can usually be estimated directly from the d

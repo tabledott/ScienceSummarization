@@ -1,0 +1,9 @@
+eature for each phrase-table.
+    All three feature sets improve over the standard source-target system, while the interpolated features provided the best overall performance.
+    The relatively poorer performance of the separate model is perhaps surprising, as it is able to differentially weight the component distributions; this is probably due to MERT not properly handling the larger feature sets.
+    In all subsequent experiments we report results using linear interpolation.
+    As a proof of concept, we first assessed the effect of triangulation on corpora consisting of 10,000 sentence bitexts.
+    We expect triangulation to deliver performance gains on small corpora, since a large number of phrase-table entries will be unseen.
+    In Table 2 each entry shows the BLEU score when using the standard phrase-table and the absolute improvement when using triangulation.
+    Here we have used three languages for triangulation (it U {de, en, es, fr}\{s, t}).
+    The source-target languages were chosen so as to mi

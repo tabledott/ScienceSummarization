@@ -1,0 +1,9 @@
+ at the start of a sentence, and it occurs in the list of frequent lower-cased words, then it would be mapped to the feature 1-1-A.
+    The word with each character mapped to its .
+    For example, G.M. would be mapped to A.A., and Animal would be mapped to Aaaaaa.
+    The word with each character mapped to its type, but repeated consecutive character types are not repeated in the mapped string.
+    For example, Animal would be mapped to Aa, G.M. would again be mapped to A.A..
+    The tagger was applied and trained in the same way as described in (Ratnaparkhi 1996).
+    The feature templates described above are used to create a set of binary features , where is the tag, and is the &#8220;history&#8221;, or context.
+    An example is if t = S and the word being tagged = &#8220;Mr.&#8221; otherwise , defining a conditional distribution over the tags given a history as The parameters are trained using Generalized Iterative Scaling.
+    Following (Ratnaparkhi 1996), we only include features which occur 5 times or

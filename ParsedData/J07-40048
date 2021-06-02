@@ -1,0 +1,7 @@
+timization algorithms such as BFGS can converge much faster than iterative scaling algorithms (including Improved Iterative Scaling; Della Pietra, Della Pietra, and Lafferty 1997).
+    Despite the use of a packed representation, the complete set of derivations for the sentences in the training data requires up to 25 GB of RAM for some of the models in this article.
+    There are a number of ways to solve this problem.
+    Possibilities include using a subset of the training data; repeatedly parsing the training data for each iteration of the estimation algorithm; or reading the packed charts from disk for each iteration.
+    These methods are either too slow or sacrifice parsing performance, and so we use a parallelized version of BFGS running on an 18-node Beowulf cluster to perform the estimation.
+    Even given the large number of derivations and the large feature sets in our models, the estimation time for the best-performing model is less than three hours.
+    This gives us a practical framework for deve

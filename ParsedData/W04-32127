@@ -1,0 +1,8 @@
+ese considerations, we will adopt a three-stage architecture: Stage 1: To save training time, we use a simple algorithm to filter out constituents that are clearly not semantic arguments to the predicate in question.
+    Stage 2: We then classify the candidates derived from the first stage as either semantic arguments or non-arguments.
+    Stage 3: Finally we run a multi-category classifier to classify the constituents that are labeled as arguments into one of the classes plus NULL.
+    Step 1: Designate the predicate as the current node and collect its sisters (constituents attached at the same level as the predicate) unless its sisters are coordinated with the predicate.
+    If a sister is a PP, also collect its immediate children. each argument of the verb.
+    There are again two experiment conditions.
+    In the first experiment, the constituents that are arguments to a verb is already known, and the task is only to assign the correct semantic role label to the constituents.
+    In the second experiment,

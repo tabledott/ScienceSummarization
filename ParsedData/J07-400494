@@ -1,0 +1,6 @@
+arge impact on the accuracy of the resulting models: If the &#946; value is too large, then the training algorithm does not have enough incorrect derivations to &#8220;discriminate against&#8221;; if the &#946; value is too small, then this introduces too many incorrect derivations into the training process, and can lead to impractical memory requirements.
+    For some sentences, the packed charts can become very large.
+    The supertagging approach we adopt for training differs from that used for testing and follows the original approach of Clark, Hockenmaier, and Steedman (2002): If the size of the chart exceeds some threshold, the value of &#946; is increased, reducing ambiguity, and the sentence is supertagged and parsed again.
+    The threshold which limits the size of the charts was set at 300,000 individual entries.
+    (This is the threshold used for training; a higher value was used for testing.)
+    For a small number of long sentences the threshold is exceeded even at the largest &#946; value; thes

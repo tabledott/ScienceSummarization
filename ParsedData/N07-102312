@@ -1,0 +1,6 @@
+in rule.
+    One key issue is to make linguistically plausible assumptions to determine which conditioning variables in the terms should be deleted.
+    Following our discussion in the first part of this section, we may start by making an order-s Markov approximation centered around the head, i.e., we condition each binary variable (e.g., kir) on a context of up to s sister constituents between the current constituent and the head (e.g., (Ri&#8722;s, ... , Ri)).
+    In order to incorporate bilexical dependencies between the head and each modifier, we also condition all modifier probabilities on head variables H (and kh).
+    These assumptions are overall quite similar to the ones made in Markovized parsing models.
+    If we assume that all other conditioning variables in Equation 6 are irrelevant, we write: Note that it is important to condition deletions on both constituent histories (Ri&#8722;s, ... , Ri) and nondeletion histories (ki&#8722;s r , ... , ki&#8722;1 r ); otherwise we would be unable to perform

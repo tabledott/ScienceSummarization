@@ -1,0 +1,11 @@
+des.
+    In other words, only conventional phrases can be extracted, of length up to 5.
+    These phrases are combined using the glue rules only, which makes the grammar equivalent to a conventional phrase-based model with monotone translation.
+    Thus this system represents the nearest phrase-based equivalent to our model, to provide a controlled test of the effect of hierarchical phrases.
+    We performed minimum-error-rate training separately on Hiero and Hiero Monotone to maximize their BLEU scores on the development set; the feature weights for Hiero are shown in Table 6.
+    The beam settings used for both decoders were R = 30, b = 30 for X cells, R = 30, b = 15 for S cells, b = 100 for rules, and e = 3.
+    On the test set, we found that Hiero improves over both baselines in all three tests (see Table 7).
+    All improvements are statistically significant (p &lt; 0.01) using the sign test as described by Collins, Koehn, and Ku&#711;cerov&#180;a (2005).
+  
+  
+    Syntax-based statistical machine transl

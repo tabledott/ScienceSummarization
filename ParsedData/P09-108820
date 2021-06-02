@@ -1,0 +1,7 @@
+ring) into English.
+    We use the GIZA++ implementation of IBM Model 4 (Brown et al., 1993; Och and Ney, 2003) coupled with the phrase extraction heuristics of Koehn et al. (2003) and the SCFG rule extraction heuristics of Chiang (2007) as our benchmark.
+    All the SCFG models employ a single X non-terminal, we leave experiments with multiple non-terminals to future work.
+    Our hypothesis is that our grammar based induction of translation units should benefit language pairs with significant reordering more than those with less.
+    While for mostly monotone translation pairs, such as Arabic-English, the benchmark GIZA++-based system is well suited due to its strong monotone bias (the sequential Markov model and diagonal growing heuristic).
+    We conduct experiments on both small and large corpora to allow a range of alignment qualities and also to verify the effectiveness of our distributed approximation of the Bayesian inference.
+    The samplers are initialised with trees created from GIZA++ Model 4 al

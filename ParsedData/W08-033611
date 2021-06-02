@@ -1,0 +1,8 @@
+ver, having a basic segmenter like MaxMatch still gives the phrase-based MT system a win over the character-based segmentation (treating each Chinese character as a word).
+    We will refer to the characterbased segmentation as CharBased.
+    In Table 1, we can see that on the Chinese word segmentation task, having MaxMatch is obviously better than not trying to identify Chinese words at all (CharBased).
+    As for MT performance, in Table 1 we see that having a segmenter, even as sim2Different phrase extraction heuristics might affect the results.
+    In our experiments, grow-diag outperforms both one-tomany and many-to-one for both MaxMatch and CharBased.
+    We report the results only on grow-diag. ple as MaxMatch, can help phrase-based MT system by about 1.37 BLEU points on all 1082 sentences of the test data (MT05).
+    Also, we tested the performance on 828 sentences of MT05 where all elements are in vocabulary3 for both MaxMatch and CharBased.
+    MaxMatch achieved 32.09 BLEU and CharBased achieved 30.

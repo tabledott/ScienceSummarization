@@ -1,0 +1,10 @@
+g module takes long sequences of ambiguity classes as input.
+    It uses the Baum-Welch algorithm to produce a trained HMM, an input to the tagging module.
+    Training is typically performed on a sample of the corpus at hand, with the trained HMM being saved for subsequent use on the corpus at large.
+    The tagging module buffers sequences of ambiguity classes between sentence boundaries.
+    These sequences are disambiguated by computing the maximal path through the HMM with the Viterbi algorithm.
+    Operating at sentence granularity provides fast throughput without loss of accuracy, as sentence boundaries are unambiguous.
+    The resulting sequence of tags is used to select the appropriate stems.
+    Pairs of stems and tags are subsequently emitted.
+    The tagger may function as a complete analysis component, providing tagged text to search and indexing components, or as a sub-system of a more elaborate analysis, such as phrase recognition.
+    The problem of tokenization has been well addressed by much

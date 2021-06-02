@@ -1,0 +1,9 @@
+n begins to increase again.
+    See Section 5 for discussion of these results.
+    The precision and recall also decrease as 77 increases.
+    Note that, because we used a binarized grammer for parsing, the trees produced by the parser contain binarized labels rather than the labels in the treebank.
+    In order to calculate precision and recall. we &amp;quot;debinarized&amp;quot; the parser's output and then calculated the figures as usual.
+    These results suggest two further questions: Is the higher accuracy with lower 77 due in part to the higher number of edges popped?
+    If so, can we gain accuracy with higher i by letting the parser continue past the first parse (i.e. pop more edges)?
+    To answer these questions, we ran the parser again, this time allowing it to continue parsing until it had popped 20 times as many edges as needed to reach the first parse.
+    The results of this experiment are shown in Figure 3, where we plot (precision + recall)/2 (henceforth &amp;quot;accuracy&amp;quot;) as a fu

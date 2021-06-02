@@ -1,0 +1,12 @@
+ed-link pruning will prevent the aligner from forming any alignments at all.
+    However, these two potential problems cancel each other out.
+    Sentence pairs containing non-ITG translations will tend to have high-confidence links that are also not ITG-compatible.
+    Our EM learner will simply skip these sentence pairs during training, avoiding pollution of our training data.
+    We can use a linear-time algorithm (Zhang et al., 2006) to detect non-ITG movement in our high-confidence links, and remove the offending sentence pairs from our training corpus.
+    This results in only a minor reduction in training data; in our French-English training set, we lose less than 1%.
+    In the experiments described in Section 5, all systems that do not use ITG will take advantage of the complete training set.
+  
+  
+    Any phrasal translation model can be used for two tasks: translation modeling and phrasal word alignment.
+    Previous work on JPTM has focused on only the first task.
+    We are interested in phrasal 

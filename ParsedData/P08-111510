@@ -1,0 +1,8 @@
+ word lattice, a further constraint must be enforced ensuring that there is always a path from the starting node of the translation extension&#8217;s source to the node representing the nearest right edge of the already-translated material, as well as a path from the ending node of the translation extension&#8217;s source to future translated spans.
+    Figure 3 illustrates the problem.
+    If [0,1] is translated, the decoder must not consider translating [2,3] as a possible extension of this hypothesis since there is no path from node 1 to node 2 and therefore the span [1,2] would never be covered.
+    In the parser that forms the basis of the hierarchical decoder described in Section 2.3, no such restriction is necessary since grammar rules are processed in a strictly left-to-right fashion without any skips.
+  
+  
+    In both hierarchical and phrase-based models, the distance between words in the source sentence is used to limit where in the target sequence their translations will be generated.
+    In phras

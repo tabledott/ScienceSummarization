@@ -1,0 +1,8 @@
+ Baldridge (2007), which was also based on a naive pairwise classifier.
+    They used an ILP solver to find an assignment for the variables, but as they note at the end of Section 5.1, it is equivalent to taking all links for which the classifier returns a probability &gt; 0.5, and so the ILP solver is not really necessary.
+    We also include their JOINTILP numbers, however that system makes use of an additional anaphoricity classifier.
+    For all three corpora, the ILP model beat both baselines for the cluster f-score, Rand index, and variation of information metrics.
+    Using the V metric, the ILP system and the D&amp;B-STYLE baseline performed about the same on the MUC-6 corpus, though for both ACE corpora, the ILP system was the clear winner.
+    When using the MUC scorer, the ILP system always did worse than the D&amp;B-STYLE baseline.
+    However, this is precisely because the transitivity constraints tend to yield smaller clusters (which increase precision while decreasing recall).
+    Remember that

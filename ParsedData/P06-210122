@@ -1,0 +1,8 @@
+ent; minimum error using Och&#8217;s linesearch method; and annealed minimum risk.
+    As our development data for training 0, we used 200 sentence pairs for each language pair.
+    Since our methods can be tuned with hyperparameters, we used performance on a separate 200sentence held-out set to choose the best hyperparameter values.
+    The hyperparameter levels for each method were distribution on [&#8722;1, 1] x [&#8722;1, 1] x &#8226; &#8226; &#8226; , when optimizing 0 at an iteration of step 4.10 by half at each step; then we quenched by doubling -y at each step.
+    (We also ran experiments with quadratic regularization with all Qd at 0.5, 1, or 2 (&#167;4) in addition to the entropy constraint.
+    Also, instead of the entropy constraint, we simply annealed on -y while adding a quadratic regularization term.
+    None of these regularized models beat the best setting of standard deterministic annealing on heldout or test data.)
+    Final results on a separate 2000-sentence test set are shown in table 1

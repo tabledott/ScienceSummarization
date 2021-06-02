@@ -1,0 +1,7 @@
+network classifiers.
+  For the sense resolution problem, each sense is repre- sented by a single vector constructed from the training contexts for that sense.
+  A vector in the space defined by the training contexts is also constructed for each test context.
+  To select a sense for a test context, the inner product between its vector and each of the sense vectors is computed, and the sense whose inner product is the largest is chosen.
+  The components of the vectors are weighted to reflect the relative importance of the concepts in the text.
+  The weighting method was designed to favor concepts that occur frequently in exactly one sense.
+  The weight of a concept c is computed as follows: Let n, : number of times c occurs in sense s p = n , /  ~senses  n, d : difference between the two largest n, (if difference is 0, d is set to 1) thenw,  = p*min(n , ,d ) For example, if a concept occurs 6 times in the training contexts of sense 1, and zero times in the other five sets of contexts, then its weights in the si

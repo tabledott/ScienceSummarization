@@ -1,0 +1,9 @@
+ated sen tences for found.v. In default of not assigning anyrole labels for found.v, our model employs the rela tion paths for the semantically related establish.v. Preprocessing Here we summarize the steps ofour QA system preceding the assignment of semantic structure and answer extraction.
+			For each ques tion, we recognize its expected answer type (e.g., in Q: Which record company is Fred Durst with?
+			wewould expect the answer to be an ORGANIZATION ).
+			Answer types are determined using classi fication rules similar to Li and Roth (2002).
+			We alsoreformulate questions into declarative sentences fol lowing the strategy proposed in Brill et al (2002).
+			The reformulated sentences are submitted as queries to an IR engine for retrieving sentences with relevant answers.
+			Specifically, we use the Lemur Toolkit3, a state-of-the-art language model-driven search engine.
+			We work only with the 50 top-rankedsentences as this setting performed best in previ ous experiments of our QA system.
+			We also add t

@@ -1,0 +1,6 @@
+    We have investigated a number of approaches to mixture-based adaptation using genres for Chinese to English translation.
+    The most successful is to weight component models in proportion to maximum-likelihood (EM) weights for the current text given an ngram language model mixture trained on corpus components.
+    This resulted in gains of around one BLEU point.
+    A more sophisticated approach that attempts to transform and combine multiple distance metrics did not yield positive results, probably due to an unsucessful optmization procedure.
+    Other conclusions are: linear mixtures are more tractable than loglinear ones; LM-based metrics are better than VS-based ones; LM adaptation works well, and adding an adapted TM yields no improvement; cross-domain adaptation is optimal, but dynamic adaptation is a good fallback strategy; and source granularity at the genre level is better than the document or test-set level.
+    In future work, we plan to improve the optimization procedure for parameterized wei

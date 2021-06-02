@@ -1,0 +1,5 @@
+has the highest edge posterior probability relative to its predecessors on the path E; there is exactly one such edge on each lattice path E. We note that f(e, w, E) relies on the full path E which means that it cannot be computed based on local statistics.
+    We therefore approximate the quantity f(e, w, E) with f*(e, w,G) that counts the edge e with n-gram w that has the highest arc posterior probability relative to predecessors in the entire lattice G. f*(e, w,G) can be computed locally, and the n-gram posterior probability based on f* can be determined as follows: Algorithm 3 MBR Decoding on Lattices (Algorithm 3).
+    However, there are important differences when computing the n-gram posterior probabilities (Step 3).
+    In this inside pass, we now maintain both n-gram prefixes and suffixes (up to the maximum order &#8722;1) on each hypergraph node.
+    This is necessary because unlike a lattice, new ngrams may be created at subsequent nodes by concatenating words both to the left and the right side of 

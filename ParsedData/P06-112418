@@ -1,0 +1,8 @@
+u) assigned xul.
+    In the Chinese restaurant metaphor, this is the index of the table which the lth customer sat at in the restaurant corresponding to Gu.
+    If xul has value w, it can only be assigned to draws from G&#960;(u) that has value w as well.
+    This can either be a preexisting draw with value w, or it can be a new draw taking on value w. The relevant probabilities are given in the functions DrawWord(u) and WordProb(u,w), where we treat xul as the last word drawn from Gu.
+    This gives: where the superscript &#8722;ul means the corresponding set of variables or counts with xul excluded.
+    The parameters &#920; are sampled using an auxiliary variable sampler as detailed in (Teh, 2006).
+    The overall sampling scheme for an n-gram hierarchical Pitman-Yor language model takes O(nT) time and requires O(M) space per iteration, where T is the number of words in the training set, and M is the number of unique n-grams.
+    During test time, the computational cost is O(nI), since the predictive proba

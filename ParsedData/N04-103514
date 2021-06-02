@@ -1,0 +1,10 @@
+cial: they are examples of frontier graph fragments.
+    We first define the frontier set of an alignment graph to be the set of nodes n that satisfy the following property: for every node n' of the alignment graph that is connected to n but is neither an ancestor nor a descendant of n, span(n') n closure(span(n)) = 0.
+    We then define a frontier graph fragment of an alignment graph to be a graph fragment such that the root and all sinks are in the frontier set.
+    Frontier graph fragments have the property that the spans of the sinks of the fragment are each contiguous and form a partition of the span of the root, which is also contiguous.
+    This allows the following transformation process: take the tree part of the fragment (i.e. project the fragment on T).
+    This forms the output of the rule.
+    Figure 6 shows the rules derived from the given graph fragments.
+    We have the following result.
+    Theorem 1 Rules constructed according to the above procedure are in PA(S, T).
+    Rule extraction: Algo

@@ -1,0 +1,8 @@
+on will require running DIRT on the GENIA text, but we were not able to obtain the source code.
+    We thus resorted to using the latest DIRT database released by the author, which contains paths extracted from a large corpus with more than 1GB of text.
+    This puts DIRT in a very advantageous position compared with other systems.
+    In our experiments, we used the top three similar paths, as including more results in very low precision.
+    USP: We built a system for knowledge extraction and question answering on top of USP.
+    It generated Stanford dependencies (de Marneffe et al., 2006) from the input text using the Stanford parser, and then fed these to USP-Learn11, which produced an MLN with learned weights and the MAP semantic parses of the input sentences.
+    These MAP parses formed our knowledge base (KB).
+    To answer questions, the system first parses the questions12 using USP-Parse with the learned MLN, and then matches the question parse to parses in the KB by testing subsumption (i.e., a que

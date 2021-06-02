@@ -1,0 +1,7 @@
+method that leverages high-confidence links by pruning all spans that are inconsistent with a provided alignment.
+    This is similar to the constraint used in the C-JPTM, but we do not just eliminate those spans as potential phrase-to-phrase links: we never consider any ITG parse that builds a non-terminal over a pruned span.2 This fixed-link pruning will speed up both Viterbi alignment and EM training by reducing the number of analyzed spans, and so long as we trust our high-confidence links, it will do so harmlessly.
+    We demonstrate the effectiveness of this pruning method experimentally in Section 5.1.
+    Our remaining concern is the ITG constraint.
+    There are some alignments that we just cannot build, and sentence pairs requiring those alignments will occur.
+    These could potentially pollute our training data; if the system is unable to build the right alignment, the counts it will collect from that pair must be wrong.
+    Furthermore, if our high-confidence links are not ITG-compatible, our fix

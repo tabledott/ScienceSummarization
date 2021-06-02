@@ -1,0 +1,8 @@
+the modified n-gram precisions.5,6 Experimentally, we obtain the best correlation with monolingual human judgments using a maximum n-gram order of 4, although 3-grams and 5-grams give comparable results.
+    A candidate translation should be neither too long nor too short, and an evaluation metric should enforce this.
+    To some extent, the n-gram precision already accomplishes this.
+    N-gram precision penalizes spurious words in the candidate that do not appear in any of the reference translations.
+    Additionally, modified precision is penalized if a word occurs more frequently in a candidate translation than its maximum reference count.
+    This rewards using a word as many times as warranted and penalizes using a word more times than it occurs in any of the references.
+    However, modified n-gram precision alone fails to enforce the proper translation length, as is illustrated in the short, absurd example below.
+    Because this candidate is so short compared to the proper length, one expects to find

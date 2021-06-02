@@ -1,0 +1,8 @@
+vements, we drop this constraint for the candidate translation.
+    That is, only the words in the reference sentence have to be covered exactly once, whereas those in the candidate sentence can be covered zero, one, or multiple times.
+    Dropping the constraints makes an efficient computation of the distance possible.
+    We drop the constraints for the candidate sentence and not for the reference sentence because we do not want any information contained in the reference to be omitted.
+    Moreover, the reference translation will not contain unnecessary repetitions of blocks.
+    The new measure &#8211; which will be called CDER in the following &#8211; can thus be seen as a measure oriented towards recall, while measures like BLEU are guided by precision.
+    The CDER is based on the CDCD distance2 introduced in (Lopresti and Tomkins, 1997).
+    The authors show there that the problem of finding the optimal solution can be solved in O(I2 &#183; L) time, where I is the length of the candidate sentence and L

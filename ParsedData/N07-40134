@@ -1,0 +1,12 @@
+s representing the same relation.
+    Also, as with all information extraction systems, it can extract multiple names for the same object.
+    The RESOLVER system performs an unsupervised clustering of TEXTRUNNER's extractions to create sets of synonymous entities and relations.
+    RESOLVER uses a novel, unsupervised probabilistic model to determine the probability that any pair of strings is co-referential, given the tuples that each string was extracted with.
+    (Yates and Etzioni, 2007)
+  
+  
+    TEXTRUNNER builds an inverted index of the extracted tuples, and spreads it across a cluster of machines.
+    This architecture supports fast, interactive, and powerful relational queries.
+    Users may enter words in a relation or entity, and TEXTRUNNER quickly returns the entire set of extractions matching the query.
+    For example, a query for &#8220;Newton&#8221; will return tuples like (Newton, invented, calculus).
+    Users may opt to query for all tuples matching synonyms of the keyword input, and may al

@@ -1,0 +1,8 @@
+nd Satta, 2006) and iterated fixpoint equations.
+    We then parse with each refinement, in sequence, much along the lines of Charniak et al. (2006), except with much more complex and automatically derived intermediate grammars.
+    Thresholds are automatically tuned on heldout data, and the final system parses up to 100 times faster than the baseline PCFG parser, with no loss in test set accuracy.
+    In Sec.
+    4, we consider the well-known issue of inference objectives in split PCFGs.
+    As in many model families (Steedman, 2000; Vijay-Shanker and Joshi, 1985), split PCFGs have a derivation / parse distinction.
+    The split PCFG directly describes a generative model over derivations, but evaluation is sensitive only to the coarser treebank symbols.
+    While the most probable parse problem is NP-complete (Sima&#8217;an, 1992), several approximate methods exist, including n-best reranking by parse likelihood, the labeled bracket algorithm of Goodman (1996), and a variational approximation introduced in M

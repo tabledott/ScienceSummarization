@@ -1,0 +1,6 @@
+ written corpus, and training the phones model for each word type, given transcripted wave file), and then combined together (in a hierarchical model).
+    Morphological disambiguation over uncertain morphemes, on the other hand, deals with both morpheme segmentation and the tagging of each morpheme with its morphological features.
+    Modeling morpheme segmentation, within a given word, without its morphology features would be insufficient.
+    (2) The supervised resources of ASR are not available for morphological disambiguation: we don&#8217;t have a model of morphological features sequences (equivalent to the language model of ASR) nor a tagged corpus (equivalent to the transcripted wave files of ASR).
+    These two differences require a design which combines the two dimensions of the problem, in order to support unsupervised learning (and searching) of morpheme sequences and their morphological features, simultaneously.
+    Parameter Estimation We present a variation of the Baum-Welch algorithm (Baum, 19

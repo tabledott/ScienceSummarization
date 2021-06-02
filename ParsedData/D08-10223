@@ -1,0 +1,7 @@
+ually perform better than these linguistically sophisticated counterparts.
+    To alleviate this problem, an obvious idea is to extract rules from k-best parses instead.
+    However, a k-best list, with its limited scope, has too few variations and too many redundancies (Huang, 2008).
+    This situation worsens with longer sentences as the number of possible parses grows exponentially with the sentence length and a k-best list will only capture a tiny fraction of the whole space.
+    In addition, many subtrees are repeated across different parses, so it is also inefficient to extract rules separately from each of these very similar trees (or from the cross-product of k2 similar tree-pairs in tree-to-tree models).
+    We instead propose a novel approach that extracts rules from packed forests (Section 3), which compactly encodes many more alternatives than kbest lists.
+    Experiments (Section 5) show that forestbased extraction improves BLEU score by over 1 point on a state-of-the-art tree-to-string system (L

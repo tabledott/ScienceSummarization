@@ -1,0 +1,6 @@
+= (w0, w1, ... , wn) starts with the artificial root node 0 on the stack &#963;, all the nodes corresponding to real words in the buffer &#946;, and an empty set A of dependency arcs; it ends as soon as the buffer &#946; is empty.
+    The transitions used by stack-based parsers are essentially composed of two types of actions: adding (labeled) arcs to A and manipulating the stack &#963; and input buffer &#946;.
+    By combining such actions in different ways, we can construct transition systems that implement different parsing strategies.
+    We will now define two such systems, which we call arc-standard and arc-eager, respectively, adopting the terminology of Abney and Johnson (1991).
+    The transition set T for the arc-standard, stack-based parser is defined in Figure 3 and contains three types of transitions: Arc-standard transition sequence for the English sentence in Figure 2.
+    The arc-standard parser is the closest correspondent to the familiar shift-reduce parser for context-free grammars (Aho, Se

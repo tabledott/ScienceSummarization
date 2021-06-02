@@ -1,0 +1,12 @@
+allow Parsing Prec Rec F1 Prec Rec F1 Gold 86.22 87.40 86.81 ?
+  0.59 84.14 85.31 84.72 ?
+  0.63 Auto 84.21 85.04 84.63 ?
+  0.63 86.17 84.02 85.08 ?
+  0.63 an argument; the other classifier is to predict the end (E) of an argument.
+  If the product of probabilities of a pair of S and E predictions is larger than a predefined threshold, then this pair is considered as an argument candidate.
+  The threshold used here was obtained by using the validation set.
+  Both classifiers use very similar features to those used by the argument identifier as explained in Section 3.2, treating the target word as a constituent.
+  Particularly, the features are predicate, POS tag of the predicate, voice, context words, POS tags of the context words, chunk pattern, clause relative position, and shallow-path.
+  The headword and its POS tag are replaced by the target word and its POS tag.
+  The comparison of using the classifiers and the heuristics is shown in Table 7.
+  Even without the knowledge of the constituent boundaries, t

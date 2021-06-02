@@ -1,0 +1,6 @@
+ is on investigating the utility of similarity information.
+    In our particular rating-inference setting, it so happens that the basis for our pairwise similarity measure can be incorporated as an item-specific feature, but we view this as a tangential issue.
+    That being said, preliminary experiments show that metric labeling can be better, barely (for test-set-optimal parameter settings for both algorithms: significantly better results for one author, four-class case; statistically indistinguishable otherwise), although one needs to determine an appropriate weight for the PSP feature to get good performance.
+    Q: You defined the &#8220;metric transformation&#8221; function as the identity function , imposing greater loss as the distance between labels assigned to two similar items increases.
+    Can you do just as well if you penalize all non-equal label assignments by the same amount, or does the distance between labels really matter?
+    A: You&#8217;re asking for a comparison to the Potts model, wh

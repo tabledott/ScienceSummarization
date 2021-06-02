@@ -1,0 +1,8 @@
+probabilities of the aligned words.
+    The training corpus for alignment is created from a test corpus of N sentences (usually a few hundred) translated by all of the involved MT engines.
+    However, the effective size of the training corpus is larger than N, since all pairs of different hypotheses have to be aligned.
+    Thus, the effective size of the training corpus is M &#183; (M &#8722;1) &#183; N. The single-word based lexicon probabilities p(en|em) are initialized with normalized lexicon counts collected over the sentence pairs (En, Em) on this corpus.
+    Since all of the hypotheses are in the same language, we count co-occurring equal words, i. e. if en is the same word as em.
+    In addition, we add a fraction of a count for words with identical prefixes.
+    The initialization could be furthermore improved by using word classes, part-of-speech tags, or a list of synonyms.
+    The model parameters are trained iteratively in an unsupervised manner with the EM algorithm using the GIZA++ toolkit (Och

@@ -1,0 +1,7 @@
+as a cut near the leaves, which is likely to overfit the data, and a more general (simple) model near the root, which is likely to underfit the data.
+    MDL looks ideally suited to the task of model selection, since it is designed to deal with precisely this trade-off.
+    The simplicity of a model is measured using the model description length, which is an information-theoretic term and denotes the number of bits required to encode the model.
+    The fit to the data is measured using the data description length, which is the number of bits required to encode the data (relative to the model).
+    The overall description length is the sum of the model description length and the data description length, and the MDL principle is to select the model with the shortest description length.
+    We used McCarthy&#8217;s (2000) implementation of MDL.
+    So that every noun is represented at a leaf node, McCarthy does not remove parts of the hierarchy, as Li and Abe do, but instead creates new leaf nodes for each synse

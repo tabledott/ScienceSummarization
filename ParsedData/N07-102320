@@ -1,0 +1,7 @@
+t incorporating robust smoothing techniques.
+    Different smoothing techniques were evaluated with our models, and we found that interpolated Witten-Bell discounting was the method that performed best.
+    We used relative frequency estimates for each of the models presented in Section 2.2 (i.e., ph, pl, pr), and trained pl separately from pr.
+    We interpolated our most specific models (lexical heads, POS tags, ancestor and sister annotation) with lower-order models.7 Automatic evaluation on development sets is performed using word-level classification accuracy, i.e., the number of words correctly classified as being either deleted or not deleted, divided by the total number of words.
+    In our first evaluation, we experimented with different horizontal and vertical Markovizations (Table 1).
+    First, it appears that vertical annotation is moderately helpful.
+    It provides gains in accuracy ranging from .5% to .9% for v = 1 over a simpler models (v = 0), but higher orders (v &gt; 1) have a tendency to 

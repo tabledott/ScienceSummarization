@@ -1,0 +1,9 @@
+d for Simplicity-DOP is that all subtrees should be assigned equal probabilities.
+    Then the shortest derivation is equal to the most probable derivation and can be computed by standard Viterbi optimization, which can be seen as follows: if each subtree has a probability p then the probability of a derivation involving n subtrees is equal to pn, and since 0&lt;p&lt;1, the derivation with the fewest subtrees has the greatest probability.
+    For SL-DOP and LS-DOP, we first compute either n likeliest or n simplest trees by means of Viterbi optimization.
+    Next, we either select the simplest tree among the n likeliest ones (for SL DOP) or the likeliest tree among the n simplest ones (for LS-DOP).
+    In our experiments, n will never be larger than 1,000.
+  
+  
+    For our experiments we used the standard division of the WSJ (Marcus et al. 1993), with sections 2 through 21 for training (approx.
+    40,000 sentences) and section 23 for testing (2416 sentences 100 words); section 22 was used as development set.

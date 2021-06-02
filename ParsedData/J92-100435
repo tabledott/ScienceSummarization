@@ -1,0 +1,7 @@
+he FLOAT-OBJECT Slot is occupied, it means that there is a gap somewhere in the future that will ultimately be filled by the partial parse contained in the FLOAT-OBJECT.
+    The process of getting into the FLOAT-OBJECT slot (which is analogous to the Hold register) requires two steps, executed independently by two different nodes.
+    The first node, the generator, fills the CURRENT-FOCUS slot with the subparse returned to it by its children.
+    The second node, the activator, moves the CURRENT-FOCUS into the FLOAT-OBJECT position, for its children, during the top-down cycle.
+    It also requires that the FLOAT-OBJECT be absorbed somewhere among its descendants by a designated absorber node, a condition that is checked during the bottom-up cycle.
+    The CURRENT-FOCUS only gets passed along to siblings and their descendants, and hence is unavailable to activators at higher levels of the parse tree.
+    That is to say, the CURRENT-FOCUS is a feature, like verb-mode, that is blocked when an [end] node is encou

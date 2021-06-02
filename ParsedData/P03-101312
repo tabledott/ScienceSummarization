@@ -1,0 +1,11 @@
+s to heuristically determine the head, as is standard practice for the Penn Treebank.
+    The lexicalized model proposed by Collins (1997) (henceforth Collins model) was re-implemented by one of the authors.
+    For training, empty categories were removed from the training data, as the model cannot handle them.
+    The same head finding strategy was applied as for the C&amp;R model.
+    In this experiment, only head-head statistics were used (see (5)).
+    The original Collins model uses sister-head statistics for non-recursive NPs.
+    This will be discussed in detail in Section 5.
+    Training and Testing For all three models, the model parameters were estimated using maximum likelihood estimation.
+    Both Lopar and the Collins model use various backoff distributions to smooth the estimates.
+    The reader is referred to Schmid (2000) and Collins (1997) for details.
+    For the C&amp;R model, we used a cutoff of one for rule frequencies Prule and lexical choice frequencies Pchoice (the cutoff value was opt

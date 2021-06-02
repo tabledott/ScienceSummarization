@@ -1,0 +1,8 @@
+As discussed in previous work, there are strong dependencies among the labels of the semantic argument nodes of a verb.
+    A drawback of local models is that, when they decide the label of a parse tree node, they cannot use information about the labels and features of other nodes in the tree.
+    Furthermore, these dependencies are highly nonlocal.
+    For instance, to avoid repeating argument labels in a frame, we need to add a dependency from each node label to the labels of all other nodes.
+    A factorized sequence model that assumes a finite Markov horizon, such as a chain Conditional Random Field (Lafferty et al., 2001), would not be able to encode such dependencies.
+    The need for Re-ranking For argument identification, the number of possible assignments for a parse tree with n nodes is 2n.
+    This number can run into the hundreds of billions for a normal-sized tree.
+    For argument labeling, the number of possible assignments is Pt&#65533; 201, if m is the number of arguments of a verb (typically

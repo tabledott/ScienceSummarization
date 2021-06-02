@@ -1,0 +1,7 @@
+the arguments supplied by the argument identification stage.
+    To reduce the excessive candidates mistakenly output by the previous stage, the classifier can also classify the argument as NULL (&#8220;not an argument&#8221;) to discard the argument.
+    The features used here are the same as those used in the argument identification stage with the following additional features.
+    The purpose of this stage is to incorporate some prior linguistic and structural knowledge, such as &#8220;arguments do not overlap&#8221; or &#8220;each verb takes at most one argument of each type.&#8221; This knowledge is used to resolve any inconsistencies of argument classification in order to generate final legitimate predictions.
+    We use the inference process introduced by (Punyakanok et al., 2004).
+    The process is formulated as an integer linear programming (ILP) problem that takes as inputs the confidences over each type of the arguments supplied by the argument classifier.
+    The output is the optimal solution th

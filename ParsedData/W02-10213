@@ -1,0 +1,8 @@
+obability have not been stored.
+    To overcome this problem, we enhance the bookkeeping concept and generate a word graph as described in Section 3.3.
+    If we want to generate a word graph, we have to store both alternatives in the bookkeeping when two hypotheses are recombined.
+    Thus, an entry in the bookkeeping structure may have several backpointers to different preceding entries.
+    The bookkeeping structure is no longer a tree but a network where the source is the bookkeeping entry with zero covered source sentence positions and the sink is a node accounting for complete hypotheses (see Figure 3).
+    This leads us to the concept of word graph nodes and edges containing the following information: &#8212; the probabilities according to the different models: the language model and the translation submodels, &#8212; the backpointer to the preceding bookkeeping entry.
+    After the pruning in beam search, all hypotheses that are no longer active do not have to be kept in the bookkeeping structure.
+   

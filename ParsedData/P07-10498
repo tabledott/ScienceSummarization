@@ -1,0 +1,10 @@
+ee represented by a shortest common cover link set will be skewed - every subtree must have a short branch.
+    It seems that this is indeed a property of the syntax of natural languages.
+    Building this restriction into the syntactic representation considerably reduces the search space for both parsing and learning.
+  
+  
+    To calculate a shortest common cover link for an utterance, I will use an incremental parser.
+    Incrementality means that the parser reads the words of the utterance one by one and, as each word is read, the parser is only allowed to add links which have one of their ends at that word.
+    Words which have not yet been read are not available to the parser at this stage.
+    This restriction is inspired by psycholinguistic research which suggests that humans process language incrementally (Crocker et al., 2000).
+    If the incrementality of the parser roughly resembles that of human processing, the result is a significant restriction of parser search space which does not lead to too 

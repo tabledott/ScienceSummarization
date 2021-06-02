@@ -1,0 +1,10 @@
+temming slightly improved both accuracy and performance.
+    Only CPOSTAG were used.
+    PHEAD/PDEPREL were not used.
+    FEATS were used to extract a single token combining gender, number, person and case, through a language specific algorithm.
+    The selection of features to be used in the parser is controlled by a number of parameters.
+    For example, the parameter PosFeatures determines for which tokens the POS tag will be included in the context, PosLeftChi7dren determines how many left outermost children of a token to consider, PastActions tells how many previous actions to include as features.
+    The settings used in the submitted runs are listed below and configure the parser for not using any word forms.
+    Positive numbers refer to input tokens, negative ones to token on the stack.
+    The context for POS tags consisted of 1 token left and 3 tokens to the right of the focus words, except for Czech and Chinese were 2 tokens to the left and 4 tokens to the right were used.
+    These values were ch

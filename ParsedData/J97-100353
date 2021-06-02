@@ -1,0 +1,9 @@
+inclusive.
+    The lexical score is computed as follows.
+    For each token-sequence gap i, create a text interval b of length w * 2 (where w is the length of the token-sequences) centered around i, and let b be subdivided into two equal-length parts, b1 and b2, where b1 where NumNewTerms(b) returns the number of terms in interval b seen for the first time in the text.
+    Boundary identification is done identically for all lexical scoring methods, and assigns a depth score, the depth of the valley (if one occurs), to each token-sequence gap.
+    The depth score corresponds to how strongly the cues for a subtopic changed on both sides of a given token-sequence gap and is based on the distance from the peaks on both sides of the valley to that valley.
+    Figure 4 illustrates.
+    In Figure 4(a), the depth score at gap a2 is (yai &#8212; y42) (Ya3 Ya2).
+    Relatively &amp;quot;deeper&amp;quot; valleys receive higher scores than shallower ones.
+    More formally, for a given token-sequence gap i, the program r

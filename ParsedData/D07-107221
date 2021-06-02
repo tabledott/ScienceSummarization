@@ -1,0 +1,9 @@
+ of the M-step; however, optimizing q(?)
+			has no analogue in EM.
+			We summarize each of these updates below (see (Liang et al, 2007) for complete derivations).
+			Parse trees q(z): The distribution over parse treesq(z) can be summarized by the expected suffi cient statistics (rule counts), which we denote as C(z ? zl zr) for binary productions and C(z ? x) for emissions.
+			We can compute these expected counts using dynamic programming as in the E-step of EM.
+			While the classical E-step uses the current ruleprobabilities ?, our mean-field approximation in volves an entire distribution q(?).
+			Fortunately, wecan still handle this case by replacing each rule probability with a weight that summarizes the uncer tainty over the rule probability as represented by q. We define this weight in the sequel.
+			It is a common perception that Bayesian inference is slow because one needs to compute integrals.
+			Our mean-field inference algorithm is a counterexample:because we can represent uncertainty over rule prob

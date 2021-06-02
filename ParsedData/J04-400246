@@ -1,0 +1,7 @@
+nguage word position j.
+    In the following, we develop various heuristic functions r(Z) of increasing complexity.
+    The simplest realization of a heuristic function r(Z) takes into account only the prior probability of an alignment template instantiation: The language model can be incorporated by considering that for each target word there exists an optimal language model probability: Here, we assume a trigram language model.
+    In general, it is necessary to maximize over all possible different language model histories.
+    We can also combine the language model and the lexicon model into one heuristic function: To include the phrase alignment probability in the heuristic function, we compute the minimum sum of all jump widths that is needed to complete the translation.
+    This sum can be computed efficiently using the algorithm shown in Figure 8.
+    Then, an admissible heuristic function for the jump width is obtained by Combining all the heuristic functions for the various models, we obtain as final

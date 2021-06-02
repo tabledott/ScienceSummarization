@@ -1,0 +1,10 @@
+each iteration the parallel sums are combined to give a master sum.
+    Producing a master operation across a cluster using MPI is a reduce operation.
+    In our case, every node needs to be holding a copy of the master sum, so we use an all reduce operation.
+    The MPI library handles all aspects of the parallelization, including finding the optimal way of summing across the nodes of the Beowulf cluster (typically it is done using a tree algorithm).
+    In fact, the parallelization only adds around twenty lines of code to the single-process implementation.
+    Because of the simplicity of the parellel communication between the nodes, parallelizing the estimation code is an example of an embarrassingly parallel problem.
+    One difficult aspect of the parallel implementation is that debugging can be much harder, in which case it is often easier to test a non-MPI version of the program first.
+  
+  
+    For the normal-form model, the Viterbi algorithm is used to find the most probable derivation from a packed 

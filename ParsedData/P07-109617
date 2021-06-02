@@ -1,0 +1,11 @@
+e negative samples are exactly those we will face during inference with the current weight vector.
+    In our experiments, we have used Averaged Perceptron (Collins, 2002; Freund and Schapire, 1999) and Perceptron with margin (Krauth and M&#180;ezard, 1987) to improve performance.
+  
+  
+    Tsuruoka and Tsujii (2005) proposed a bidirectional POS tagger, in which the order of inference is handled with the easiest-first heuristic.
+    Gim&#180;enez and M`arquez (2004) combined the results of a left-toright scan and a right-to-left scan.
+    In our model, the order of inference is dynamically incorporated into the training of the local classifier.
+    Toutanova et al. (2003) reported a POS tagger based on cyclic dependency network.
+    In their work, the order of inference is fixed as from left to right.
+    In this approach, large beam width is required to maintain the ambiguous hypotheses.
+    In our approach, we can handle tokens that we are most confident about first, so that our system does not need a large

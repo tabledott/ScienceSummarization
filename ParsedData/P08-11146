@@ -1,0 +1,6 @@
+n quality based on word-level correspondences (Koehn et al., 2003), and a rule penalty allowing the model to learn a preference for longer or shorter derivations; see (Chiang, 2007) for details.
+    These features are combined using a log-linear model, with each synchronous rule contributing to the total log-probability of a derived hypothesis.
+    Each Ai is a weight associated with feature Oi, and these weights are typically optimized using minimum error rate training (Och, 2003).
+    When looking at Hiero rules, which are acquired automatically by the model from parallel text, it is easy to find many cases that seem to respect linguistically motivated boundaries.
+    For example, seems to capture the use of jingtian/this year as a temporal modifier when building linguistic constituents such as noun phrases (the election this year) or verb phrases (voted in the primary this year).
+    However, it is important to observe that nothing in the Hiero framework actually requires nonterminal symbols to cover lingu

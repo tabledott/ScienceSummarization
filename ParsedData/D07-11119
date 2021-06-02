@@ -1,0 +1,10 @@
+f the actions taken in its derivation.
+			To find the most probable parse tree according to the probabilistic LR model, we use a best-first strategy.
+			This involves an extension of the deter ministic shift-reduce into a best-first shift-reduce algorithm.
+			To describe this extension, we first in troduce a new data structure Ti that represents a parser state, which includes a stack Si, a queue Qi, and a probability Pi.
+			The deterministic algorithm is a special case of the probabilistic algorithm where we have a single parser state T0 that contains S0 and Q0, and the probability of the parser state is 1.
+			The best-first algorithm, on the other hand,.
+			keeps a heap H containing multiple parser states T0...
+			Tm.
+			These states are ordered in the heap ac cording to their probabilities, which are determined by multiplying the probabilities of each of the parser actions that resulted in that parser state.
+			The heap H is initialized to contain a single parser state T0, which contains a stack S0, a queue

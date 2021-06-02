@@ -1,0 +1,7 @@
+ring positions in the generation process.
+  This can be done by positioning all lemmas at a single position.
+  Thus we need insert the lexicon only once, each word being inserted at the single position, e.g., [0, sonny ,  0].
+  Although this simplifies the set of initial items, by eliminating index- ing based on string position we remove the feature of tabular parsing methods such as Earleys algorithm that makes parsing reasonably effi- cient.
+  The generation behavior exhibited is therefore not goal-directed; once the lexicon is inserted many phrases might be built that could not contribute in any way to a sentence with the appropriate mean- ing.
+  In order to direct the behavior of the generator towards a goal meaning, we can modify the priority function so that it is partial; not every item will be assigned a priority and those that are not will never be added to the table (or agenda) at all.
+  The filter we have been using assigns priorities only to items that might contribute semantically to the goal mea

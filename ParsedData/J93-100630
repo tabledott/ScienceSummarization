@@ -1,0 +1,6 @@
+is pair is unlikely to be the result of a spurious match.
+    Note that the number of comparisons of the words in two sentences is quadratic only in the number of words in a sentence, which can be assumed to be not a function of the length of the text.
+    Because of the constraint on the maximum deviation from the diagonal as outlined above, the computational complexity of the algorithm is bound by 0(n\/7) in each pass.
+    Our definition of the similarity between a pair of words is complicated by the fact that the two texts have unequal lengths and that the AST allows more than one correspondence, which means that we cannot simply take the inner product of the vector representations of the word's occurrences.
+    Instead, we use as a measure of similarity:3 where c is the number of corresponding positions, and NT(x) is the number of occurrences of the word x in the text T. This is essentially Dice's coefficient (Rijsbergen 1979).
+    Technically, the value of c is the cardirtality of the largest set of pair

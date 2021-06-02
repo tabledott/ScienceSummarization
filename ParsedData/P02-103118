@@ -1,0 +1,6 @@
+mation sources, beginning with the problem of assigning the correct role in the case where the boundaries of the arguments in the sentence are known, and then turning to the problem of finding arguments in the sentence.
+    When the argument boundaries are known, the grammatical relationship of the the constituent to the predicate turns out to be of little value.
+    Removing the path feature from the system described above results in only a small degradation in performance, from 82.3% to 81.7%.
+    While the path feature serves to distinguish subjects from objects, the combination of the constituent position before or after the predicate and the active/passive voice feature serves the same purpose.
+    However, this result still makes use of the parser output for finding the constituent's head word.
+    We implemented a simple algorithm to guess the argument's head word from the chunked output: if the argument begins at a chunk boundary, taking the last word of the chunk, and in all other cases, taking the f

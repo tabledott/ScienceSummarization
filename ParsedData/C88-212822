@@ -1,0 +1,9 @@
+e meaning).
+  Under this parameterization, the architecture serves as a generator for the grammar, generating sentences with the intended meaning.
+  By changing the priority function, the order in which possibilities are pursued in generation can be controlled, thereby modeling depth-first strategies, breadth-first strategies, and so forth.
+  Of course, as described, this approach to generation is sorely inade- quate for several reasons.
+  First, it requires that we initially insert the entire lexicon into the agenda t arbitrary numbers of string positions.
+  Not only is it infeasible to insert the lexicon so many times (indeed, even once is too much) but it also leads to massive redundancy in generation.
+  The same phrase may be generated starting at many dif- ferent positions.
+  For parsing, keeping track of which positions phrases occur at is advantageous; for generation, once a phrase is generated, we want to be able to use it in a variety of places.
+  A simple solution to this problem is to ignore the st

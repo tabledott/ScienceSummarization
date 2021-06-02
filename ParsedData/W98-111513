@@ -1,0 +1,8 @@
+ edges, we check to see if a matching constituent (i.e. a constituent with the same head, start, and end points) already exists in either the agenda or the chart.
+    If there is no match, we simply add the new edge to the agenda.
+    If there is a match but the old parse of Nild, is better than the new one, we discard the new parse.
+    Finally, if we have found a better parse of N.4, we add the new edge to the agenda, removing the old one if it has not already been popped.
+    We tested the parser on section section 22 of the WSJ text with various normalization constants .77, working on each sentence only until we reached the first full parse.
+    For each sentence we recorded the number of popped edges needed to reach the first parse, and the precision and recall of that parse.
+    The average number of popped edges to first parse as a function of q is shown in Figure 1, and the average precision and recall are shown in Figure 2.
+    The number of popped edges decreases as ij increases from 1.0 to 1.7, the

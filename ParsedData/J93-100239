@@ -1,0 +1,6 @@
+l N2 categories specified for this feature (e.g.
+    N2 [CONJ EITHER], N2 [CONJ NULL] ) are generalized to the same category.
+    This results in the backbone rules, when parsing either kim or lee helps, being unable, after forming a N2 [CONJ EITHER] for either kim, to discriminate between the alternatives of preparing to iterate this constituent (as in the phrase kim, lee, or sandy helps where kim would be N2 [CONJ NULL] ), or shifting the next word or to start a new constituent.
+    We solve this problem by declaring CONJ to be a feature that may not have a variable value in an element of the disjoint category set.
+    This directs the system to expand out each unification grammar rule that has a category containing this feature with a variable value into a number of rules fully specified for the feature, and to create backbone rules for each of these.
+    There are eight possible values for CONJ in the grammar, so the general rule for forming a nominal conjunct given above, for example, ends up being repre

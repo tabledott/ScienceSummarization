@@ -1,0 +1,6 @@
+add features which measure the lexical similarity between a constituent and a logical symbol&#8217;s surface forms (as defined by the lexicon).
+    Two metrics are used: stemmed word match and a similarity metric based on WordNet (Miller et al., 1990) which allows our model to account for words not in the lexicon.
+    The WordNet metric measures similarity based on synonymy, hyponymy and meronymy (Do et al., 2010).
+    In the case where the constituent is a preposition, which are notorious for being ambiguous, we add a feature that considers the current lexical context (one word to the left and right) in addition to word similarity.
+    Second-order decision features 4b2 Determining how to compose two logical symbols relies on syntactic information, in our model we use the dependency tree (Klein and Manning, 2003) of the input sentence.
+    Given a second-order decision Q1-s,dt, the dependency feature takes the normalized distance between the head words in the constituents c and d. A set of features also indi

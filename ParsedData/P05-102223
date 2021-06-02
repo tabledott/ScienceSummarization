@@ -1,0 +1,7 @@
+, ... , fm).
+    We use a MaxEnt estimator to find the feature weights &#710;0, where L is the loss function and R is a regularization penalty term: The training data D = (s1, ... , sn,) is a sequence of sentences and their correct parses y?
+    (s1), ... , y?(sn).
+    We used the 20-fold crossvalidation technique described in Collins (2000) to compute the n-best parses Y(s) for each sentence s in D. In general the correct parse y?
+    (s) is not a member of Y(s), so instead we train the reranker to identify one of the best parses Y+(s) = arg maxy&#8712;Y(s) Fy,,(s)(y) in the n-best parser&#8217;s output, where Fy,,(y) is the Parseval f-score of y evaluated with respect to y?.
+    Because there may not be a unique best parse for each sentence (i.e., |Y+(s) |&gt; 1 for some sentences s) we used the variant of MaxEnt described in Riezler et al. (2002) for partially labelled training data.
+    Recall the standard MaxEnt conditional probability model for a parse y E Y: The loss function LD proposed in Riezler et 

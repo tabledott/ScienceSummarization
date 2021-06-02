@@ -1,0 +1,8 @@
+  It then handles various special cases, such as words with initial &amp;quot;$&amp;quot;, contractions, special symbols, and capitalized words.
+    The word's ending is then checked against a suffix list of about 450 strings.
+    The lists were derived from lexicostatistics of the Brown Corpus.
+    If TAGGIT has not assigned some tag(s) after these several steps, &amp;quot;the word is tagged NN, VB, or JJ [that is, as being three-ways ambiguous], in order that the disambiguation routine may have something to work with&amp;quot; (Greene and Rubin (1971), p. 25).
+    After tagging, TAGGIT applies a set of 3300 context frame rules.
+    Each rule, when its context is satisfied, has the effect of deleting one or more candidates from the list of possible tags for one word.
+    If the number of candidates is reduced to one, disambiguation is considered successful subject to human post-editing.
+    Each rule can include a scope of up to two unambiguous words on each side of the ambiguous word to which the rule is be

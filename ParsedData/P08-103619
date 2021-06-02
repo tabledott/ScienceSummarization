@@ -1,0 +1,9 @@
+ for each aspects.
+    As a result, we would expect these topics to correspond to the service, location, and rooms aspects respectively.
+    Unigram and bigram features were used in the sentiment predictors in the MAS model.
+    Before applying the topic models we removed punctuation and also removed stop words using the standard list of stop words,8 however, all the words and punctuation were used in the sentiment predictors.
+    It does not take many chain iterations to discover initial topics.
+    This happens considerably faster than the appropriate weights of the sentiment predictor being learned.
+    This poses a problem, because, in the beginning, the sentiment predictors are not accurate enough to force the model to discover appropriate topics associated with each of the rated aspects.
+    And as soon as topic are formed, aspect sentiment predictors cannot affect them anymore because they do not have access to the true words associated with their aspects.
+    To combat this problem we first train the 

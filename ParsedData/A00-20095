@@ -1,0 +1,8 @@
+ smoothed by assigning them a very small default probability.
+    Once all the parameters have been estimated, the model has been trained and can be used as a classifier to perform disambiguation by determining the most probable sense for an ambiguous word, given the context in which it occurs.
+    The contextual features used in this paper are binary and indicate if a given word occurs within some number of words to the left or right of the ambiguous word.
+    No additional positional information is contained in these features; they simply indicate if the word occurs within some number of surrounding words.
+    Punctuation and capitalization are removed from the windows of context.
+    All other lexical items are included in their original form; no stemming is performed and non-content words remain.
+    This representation of context is a variation on the bag-of-words feature set, where a single window of context includes words that occur to both the left and right of the ambiguous word.
+    An early use of 

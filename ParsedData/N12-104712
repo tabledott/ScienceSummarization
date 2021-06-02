@@ -1,0 +1,6 @@
+ al. (2008) involve substantial inter-process communication, which may not be easily supported by all clusters.
+    McDonald et al. (2010) suggest a simpler distributed strategy that is amenable to map-reduce-like frameworks, which interleaves online training on shards with weight averaging across shards.
+    This strategy has been adopted by Moses (Hasler et al., 2011), and it is the one we adopt in our MIRA implementation.
+    However, online training using the decoder may not be necessary for good performance.
+    The success of MERT, PRO and MR indicates that their shared search approximation is actually quite reasonable.
+    Therefore, we propose Batch MIRA, which sits exactly where MERT sits in the standard tuning architecture, greatly simplifying parallelization: where BatchMIRA() trains the SMT-adapted MIRA algorithm to completion on the current approximation &#163;, without parallelization.3 The only change we make to MIRA is to replace the hope-fear decoding of sentences with the hope-fear re-rankin

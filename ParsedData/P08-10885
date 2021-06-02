@@ -1,0 +1,8 @@
+he arbitrary covariance parameter FS &#65533;: 0 explains the sourcespecific variations which are not captured by WS; it does not play an explicit role in inference.
+    The target fT (tj) is generated analogously using WT and FT, conditionally independent of the source given zi,j (see figure 2).
+    For each of the remaining unmatched source word types si which have not yet been generated, we draw the word type features from a baseline normal distribution with variance &#963;2IdS, with hyperparameter &#963;2 &#187; 0; unmatched target words are similarly generated.
+    If two word types are truly translations, it will be better to relate their feature vectors through the latent space than to explain them independently via the baseline distribution.
+    However, if a source word type is not a translation of any of the target word types, we can just generate it independently without requiring it to participate in the matching.
+  
+  
+    Given our probabilistic model, we would like to maximize the log-likelihoo

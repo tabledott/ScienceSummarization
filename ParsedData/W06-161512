@@ -1,0 +1,10 @@
+by applying the mapping 0.
+    We then use a standard discriminative learner on the augmented feature vector.
+    For training instance t, the augmented feature vector will contain all the original features xt plus the new shared features 0xt.
+    If we have designed the pivots well, then 0 should encode correspondences among features from different domains which are important for the supervised task, and the classifier we train using these new features on the source domain will perform well on the target domain.
+  
+  
+    Structural correspondence learning uses the techniques of alternating structural optimization (ASO) to learn the correlations among pivot and non-pivot features.
+    Ando and Zhang (2005a) describe several free paramters and extensions to ASO, and we briefly address our choices for these here.
+    We set h, the dimensionality of our low-rank representation to be 25.
+    As in Ando and Zhang (2005a), we observed that setting h between 20 and 100 did not change results significantly, and a lo

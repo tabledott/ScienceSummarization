@@ -1,0 +1,8 @@
+OUN de NOUN phrases beginning with mois, such as mois de mai (month of May) are more likely to be translated word for word.
+    Template 3 features are useful in dealing with translating NOUN de NOUN phrases in which the interchange decision is influenced by both nouns.
+    For example, NOUN de NOUN phrases ending in interet are sometimes translated word for word, as in conflit d'interet (conflict of interest) and are sometimes interchanged, as in taux d'interet (interest rate).
+    We used the feature-selection algorithm of section 4 to construct a maximum entropy model from candidate features derived from templates 1, 2, and 3.
+    The model was grown on 10,000 training events randomly selected from the Hansard corpus.
+    The final model contained 358 constraints.
+    To test the model, we constructed a NOUN de NOUN word-reordering module which interchanges the order of the nouns if p( interchange lx) &gt; 0.5 and keeps the order the same otherwise.
+    Table 9 compares performance on a suite of test data 

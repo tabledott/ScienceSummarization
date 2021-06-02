@@ -1,0 +1,6 @@
+itional entropy of the gold standard tags given the derived HMM tags.
+    Table 6 shows the results of this evaluation on some English data for various numbers of states.
+    As can be seen, increasing the number of states of the model does not reduce the conditional entropy of the gold standard tags; rather it increases the lexical ambiguity of the model H(TIW).
+    This is because the states of the HMM will not necessarily correspond directly to syntactic categories &#8212; rather they correspond to sets of words that occur in particular positions &#8212; for example the model might have a state that corresponds to a noun that occurs before a main verb, and a separate state that corresponds to a noun after a main verb.
+    One explanation for this is that the output function from each state of the HMM is a multinomial distribution over the vocabulary which is too powerful since it can memorise any set of words &#8212; thus there is no penalty for the same word being produced by many different states.
+    Th

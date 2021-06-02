@@ -1,0 +1,6 @@
+uot; can be represented as NP &amp;quot; S # VP # V, with &amp;quot; indicating upward movement in the parse tree and # downward movement.
+    The other features used were the identity of the target word and the identity of the constituent's head word.
+    The probability distributions calculated from the training data were P(fejpath), P(fejpath, t), and P(fejh, t), where fe indicates an event where the parse constituent in question is a frame element, path the path through the parse tree from the target word to the parse constituent, t the identity of the target word, and h the head word of the parse constituent.
+    By varying the probability threshold at which a decision is made, one can plot a precision/recall curve as shown in Figure 5.
+    P(fejpath, t) performs relatively poorly due to fragmentation of the training data (recall only about 30 sentences are available for each target word).
+    While the lexical statistic P(fejh, t) alone is not useful as a classifier, using it in linear interpolation wit

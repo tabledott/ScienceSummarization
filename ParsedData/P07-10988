@@ -1,0 +1,8 @@
+ering subparts, the resulting feature space is usually very large.
+    A tree kernel (TK) function which computes the number of common subtrees between two syntactic parse trees has been given in (Collins and Duffy, 2002).
+    Unfortunately, such subtrees are subject to the constraint that their nodes are taken with all or none of the children they have in the original tree.
+    This makes the TK function not well suited for the PAS trees defined above.
+    For instance, although the two PASs of Figure 1 share most of the subtrees rooted in the PAS node, Collins and Duffy&#8217;s kernel would compute no match.
+    In the next section we describe a new kernel derived from the above tree kernel, able to evaluate the meaningful substructures for PAS trees.
+    Moreover, as a single PAS may not be sufficient for text representation, we propose a new kernel that combines the contributions of different PASs.
+    Given two trees T1 and T2, let {f1, f2, ..} = F be the set of substructures (fragments) and Ii(n) be equ

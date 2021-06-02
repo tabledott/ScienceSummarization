@@ -1,0 +1,8 @@
+n the sentence level, unlike (Pang et al., 2002) and (Turney, 2002); we employ a significantly larger set of seed words, and we explore as indicators of orientation words from syntactic classes other than adjectives (nouns, verbs, and adverbs).
+  
+  
+    To separate documents that contain primarily opinions from documents that report mainly facts, we applied Naive Bayes', a commonly used supervised machine-learning algorithm.
+    This approach presupposes the availability of at least a collection of articles with pre-assigned opinion and fact labels at the document level; fortunately, Wall Street Journal articles contain such metadata by identifying the type of each article as Editorial, Letter to editor, Business and News.
+    These labels are used only to provide the correct classification labels during training and evaluation, and are not included in the feature space.
+    We used as features single words, without stemming or stopword removal.
+    Naive Bayes assigns a document to the class that maximizes 

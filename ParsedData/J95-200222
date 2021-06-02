@@ -1,0 +1,8 @@
+ty, and to keep the analogy to the HMM terminology of which this is a generalization.'
+    Note that for scanned states, a is always a probability, since by definition a scanned state can occur only once along a path.
+    The inner probabilities, on the other hand, represent the probability of generating a substring of the input from a given nonterminal, using a particular production.
+    Inner probabilities are thus conditional on the presence of a given nonterminal X with expansion starting at position k, unlike the forward probabilities, which include the generation history starting with the initial state.
+    The inner probabilities as defined here correspond closely to the quantities of the same name in Baker (1979).
+    The sum of -y of all states with a given LHS X is exactly Baker's inner probability for X.
+    The following is essentially a restatement of Lemma 2 in terms of forward and inner probabilities.
+    It shows how to obtain the sentence and string probabilities we are interested in, provide

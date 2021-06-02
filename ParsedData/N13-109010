@@ -1,0 +1,9 @@
+ies of the RNN vectors and the new vectors, and restricted the test set and word vectors to those.
+    This resulted in a 36k word vocabulary, and a test set with 6632 questions.
+    Turian&#8217;s Collobert and Weston based vectors do poorly on this task, whereas the Hierarchical Log-Bilinear Model vectors of (Mnih and Hinton, 2009) do essentially as well as the RNN vectors.
+    These representations were trained on 37M words of data and this may indicate a greater robustness of the HLBL method.
+    We conducted similar experiments with the semantic test set.
+    For each target word pair in a relation category, the model measures its relational similarity to each of the prototypical word pairs, and then uses the average as the final score.
+    The results are evaluated using the two standard metrics defined in the task, Spearman&#8217;s rank correlation coefficient p and MaxDiff accuracy.
+    In both cases, larger values are better.
+    To compare to previous systems, we report the average over all 69 relat

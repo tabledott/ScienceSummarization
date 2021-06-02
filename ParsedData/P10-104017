@@ -1,0 +1,10 @@
+nts, we remove gazetteers and non-local features (Krishnan &amp; Manning, 2006).
+    However, we also run experiments that include these features, to understand if the information they provide mostly overlaps with that of the word representations.
+    After each epoch over the training set, we measured the accuracy of the model on the development set.
+    Training was stopped after the accuracy on the development set did not improve for 10 epochs, generally about 50&#8211;80 epochs total.
+    The epoch that performed best on the development set was chosen as the final model.
+    We use the following baseline set of features When using the lexical features, we normalize dates and numbers.
+    For example, 1980 becomes *DDDD* and 212-325-4751 becomes *DDD**DDD*-*DDDD*.
+    This allows a degree of abstraction to years, phone numbers, etc.
+    This delexicalization is performed separately from using the word representation.
+    That is, if we have induced an embedding for 12/3/2008 , we will use the embedding of 

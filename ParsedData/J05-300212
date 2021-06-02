@@ -1,0 +1,8 @@
+to be useful for determining which sentences are important for single-document summarization (Barzilay and Elhadad 1997; Silber and McCoy 2002).
+    In the multidocument scenario, lexical chains can be adapted for theme ranking based on the salience of theme sentences within their original documents.
+    Specifically, a theme that has many sentences ranked high by lexical chains as important for a single-document summary is, in turn, given a higher salience score for the multidocument summary.
+    In our implementation, a salience score for a theme is computed as the sum of lexical chain scores of each sentence in a theme.
+    Once we filter out the themes that have a low rank, the next task is to order the selected themes into coherent text.
+    Our ordering strategy aims to capture chronological order of the main events and ensure coherence.
+    To implement this strategy in MultiGen, we select for each theme the sentence which has the earliest publication time (theme time stamp).
+    To increase the cohere

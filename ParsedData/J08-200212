@@ -1,0 +1,7 @@
+deling of joint dependencies by looking at longer-distance context, by defining richer features over the sequence of labels and input features, and by estimating the model parameters discriminatively.
+    A system which can integrate longer-distance dependencies is that of Punyakanok et al. (2004) and Punyakanok, Roth, and Yih (2005).
+    The idea is to build a semantic role labeling system that is based on local classifiers but also uses a global component that ensures that several linguistically motivated global constraints on argument frames are satisfied.
+    The constraints are categorical and specified by hand.
+    For example, one global constraint is that the argument phrases cannot overlap&#8212;that is, if a node is labeled with a non-NONE label, all of its descendants have to be labeled NONE.
+    The proposed framework is integer linear programming (ILP), which makes it possible to find the most likely assignment of labels to all nodes of the parse tree subject to specified constraints.
+    Solving

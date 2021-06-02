@@ -1,0 +1,7 @@
+ed in Figure 4.
+    CHECK-INDEF uses the function CHECK-DISJ, defined in Figure 5, to check the compatibility of each disjunction with the DG structure given by the parameter cond.
+    The compatibility of two DGs can be checked by almost the same procedure as unification, but the two structures being checked are not actually merged as they are in unification.
+    In the third major step, if any disjunctions remain, and it is necessary to do so, disjuncts of different disjunctions are considered in groups, to check whether they are compatible together.
+    This step is performed by the function NWISECONSISTENCY, defined in Figure 6.
+    When the parameter n to NWISE-CONSISTENCY has the value 1, then one disjunct is checked for compatibility with all other disjunctions of the description in a pairwise manner.
+    The pairwise manner of checking compatibility can be generalized to groups of any size by increasing the value of the parameter n. While this third step of the algorithm is necessary in order to insur

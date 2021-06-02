@@ -1,0 +1,8 @@
+ining a version of Model 1 with only one null word per sentence, the parameters have their normal interpretation, since we are multiplying the standard probability estimates by 1.
+  
+  
+    Normally, the translation probabilities of Model 1 are initialized to a uniform distribution over the target language vocabulary to start iterating EM.
+    The unspoken justification for this is that EM training of Model 1 will always converge to the same set of parameter values from any set of initial values, so the intial values should not matter.
+    But this is only the case if we want to obtain the parameter values at convergence, and we have strong reasons to believe that these values do not produce the most accurate sentence alignments.
+    Even though EM will head towards those values from any initial position in the parameter space, there may be some starting points we can systematically find that will take us closer to the optimal parameter values for alignment accuracy along the way.
+    To test whether a better

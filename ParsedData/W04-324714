@@ -1,0 +1,9 @@
+to implement other methods.
+    The MEAD summarizer consists of three components.
+    During the first step, the feature extractor, each sentence in the input document (or cluster of documents) is converted into a feature vector using the user-defined features.
+    Second, the feature vector is converted to a scalar value using the combiner.
+    At the last stage known as the reranker, the scores for sentences included in related pairs are adjusted upwards or downwards based on the type of relation between the sentences in the pair.
+    Reranker penalizes the sentences that are similar to the sentences already included in the summary so that a better information coverage is achieved.
+    Three default features that comes with the MEAD distribution are Centroid, Position and Length.
+    Position is the normalized value of the position of a sentence in the document such that the first sentence of a document gets the maximum Position value of 1, and the last sentence gets the value 0.
+    Length is not a real fe

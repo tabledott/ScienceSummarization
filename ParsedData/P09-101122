@@ -1,0 +1,8 @@
+is eliminated all but 1.5% of the record candidates per sentence, while maintaining an oracle alignment F1 score of 88.7.
+    Guessing a single random record for each sentence yields an F1 of 12.0.
+    A reasonable heuristic which uses weighted number- and string-matching achieves 26.7.
+    Due to the much greater complexity of this domain, Model 2 was easily misled as it tried without success to find a coherent segmentation of the fields.
+    We therefore created a variant, Model 2&#8217;, where we constrained each field to generate exactly one word.
+    To train Model 2&#8217;, we ran 5 iterations of EM where each sentence is assumed to have exactly one record, followed by 5 iterations where the constraint was relaxed to also allow record boundaries at punctuation and the word and.
+    We did not experiment with Model 3 since the discourse structure on records in this domain is not at all governed by a simple Markov model on record types&#8212;indeed, most regions do not refer to any records at all.
+    We 

@@ -1,0 +1,9 @@
+ated using the normalized feature vector from the triple containing the sentence, alignment and logical form as input and the feedback as the label.
+    This training example is added to the working set of training examples for this input sentence (line 6).
+    All the feedback training examples are used to train a binary classifier whose weight vector is used in the next iteration (line 8).
+    The algorithm repeats until no new unique training examples are added to any of the working sets for any input sentence.
+    Although the number of possible training examples is very large, in practice the algorithm is efficient and converges quickly.
+    Note that this approach is capable of using a wide variety of linear classifiers as the base learner (line 8).
+    A policy is required to specify the nature of the working set of training examples (Bl) used for training the base classifier.
+    This is pertinent in line 6 of the algorithm.
+    Possible policies include: allowing duplicates in the working set (i.e., 

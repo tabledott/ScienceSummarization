@@ -1,0 +1,8 @@
+lation.
+    Unlike speech recognition, there are many correct translations for any given foreign sentence.
+    These correct translations differ not only in their word choice but also in the order in which the words occur.
+    WER is generally seen as inadequate for evaluation for machine translation as it fails to combine knowledge from multiple reference translations and also fails to model the reordering of words and phrases in translation.
+    TER addresses the latter failing of WER by allowing block movement of words, called shifts. within the hypothesis.
+    Shifting a phrase has the same edit cost as inserting, deleting or substituting a word, regardless of the number of words being shifted.
+    While a general solution to WER with block movement is NP-Complete (Lopresti and Tomkins, 1997), TER addresses this by using a greedy search to select the words to be shifted, as well as further constraints on the words to be shifted.
+    These constraints are intended to simulate the way in which a human edito

@@ -1,0 +1,9 @@
+en predicted as LAST.
+    - If one token has been predicted as FIRST and more than one as LAST, the sequence will end with the first token predicted as LAST after the token predicted as FIRST, if there is one.
+    - If one token has been predicted as LAST and more than one as FIRST, the sequence will start at the hedge signal.
+    - If no token has been predicted as FIRST and more than one as LAST, the sequence will start at the hedge cue and will end at the first token predicted as LAST after the hedge signal.
+  
+  
+    The results provided for the abstracts part of the corpus have been obtained by performing 10-fold cross validation experiments, whereas the results provided for papers and clinical reports have been obtained by training on the full abstracts subcorpus and testing on the papers and clinical reports subcorpus.
+    The latter experiment is therefore a test of the robustness of the system when applied to different text types within the same domain.
+    The evaluation is made using the precision 

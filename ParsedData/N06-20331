@@ -1,0 +1,9 @@
+   In the first stage, m different parsers analyze an input sentence, each producing a syntactic structure.
+    In the second stage, a parsing algorithm is applied to the original sentence, taking into account the analyses produced by each parser in the first stage.
+    Our approach produces results with accuracy above those of the best individual parsers on both dependency and constituent parsing of the standard WSJ test set.
+  
+  
+    In dependency reparsing we focus on unlabeled dependencies, as described by Eisner (1996).
+    In this scheme, the syntactic structure for a sentence with n words is a dependency tree representing head-dependent relations between pairs of words.
+    When m parsers each output a set of dependencies (forming m dependency structures) for a given sentence containing n words, the dependencies can be combined in a simple wordby-word voting scheme, where each parser votes for the head of each of the n words in the sentence, and the head with most votes is assigned to each word.
+    T

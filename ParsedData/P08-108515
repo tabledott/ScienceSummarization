@@ -1,0 +1,7 @@
+p(t|w) we use either a uniform distribution based on the tags allowed in the dictionary, or the estimate obtained by using the modified Levinger et al. algorithm.
+    We use contexts of the form LR=w_1, w+1 (the neighbouring words).
+    We estimate p(w|c) and p(c|w) via relative frequency over all the events w1, w2, w3 occurring at least 10 times in the corpus. allow(t, w) follows the dictionary.
+    Because of the wide coverage of the Hebrew lexicon, we take RELc to be C (all available contexts).
+    We run a series of experiments with 8 distinct initial conditions, as shown in Table 1: our baseline (Uniform) is the uniform distribution over all tags provided by the KC analyzer for each word.
+    The Syntagmatic initial conditions add the p(t|t_1, t+1) constraints described above to the uniform baseline.
+    The Morphology-Based and Linear-Context initial conditions are computed as described above, while the Morph+Linear is the result of applying the linear-context algorithm over initial values computed by t

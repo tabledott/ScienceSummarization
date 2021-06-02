@@ -1,0 +1,6 @@
+ be also ambiguous.
+    Which sense do we therefore choose?
+    The second problem is that there may, in fact, be no exact match in the training corpus for the context surrounding words and their relations.
+    To overcome both of these problems we have applied the concept of semantic distance discussed above.
+    Every possible sense of all the related context words is evaluated and the best match.Chosen5.
+    The proposed unsupervised similarity-based iterative algorithm for the word sense disambiguation of the training corpus looks as follows: &amp;quot;-for each quadruple Q in the training set: for each ambiguous word in the quadruple: * among the remaining quadruples find a set S of similar quadruples (those with quadruple distance &lt; SDT) for each non-empty set S: * choose the nearest similar quadruple from the set S * disambiguate the ambiguous word to the nearest sense of the corresponding word of the chosen nearest quadruple * increase the Similarity Distance Threshold SDT = SDT + 0.1 Until all the

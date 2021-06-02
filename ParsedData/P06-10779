@@ -1,0 +1,11 @@
+ntactic hierarchical phrase pairs (Chiang, 2005) with tree structure on the source side.
+    At the same time, we face the risk of losing some useful non-syntactic phrase pairs.
+    For example, the phrase pair +{' AOL ALA H President Bush made can never be obtained in form of TAT from the TSA in Figure 3 because there is no subtree for that source string.
+  
+  
+    We approach the decoding problem as a bottom-up beam search.
+    To translate a source sentence, we employ a parser to produce a parse tree.
+    Moving bottomup through the source parse tree, we compute a list of candidate translations for the input subtree rooted at each node with a postorder transversal.
+    Candidate translations of subtrees are placed in stacks.
+    Figure 4 shows the organization of candidate translation stacks.
+    A candidate translation contains the following information: A TAT z is usable to a parse tree T if and only if T(z) is rooted at the root of T and covers part of nodes of T. Given a parse tree T, we find all usabl

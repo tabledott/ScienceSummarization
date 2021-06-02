@@ -1,0 +1,11 @@
+lly growing feature space to reduce the number of supervised training examples.
+  
+  
+    In essence, the algorithm we present uses temporal alignment as a supervision signal to iteratively train a transliteration model.
+    On each iteration, it selects a list of top ranked transliteration candidates for each NE according to the current model (line 6).
+    It then uses temporal alignment (with thresholding) to re-rank the list and select the best transliteration candidate for the next round of training (lines 8, and 9).
+    Once the training is complete, lines 4 through 10 are executed without thresholding for each constituent NE word.
+    If a dictionary is available, transliteration candidate lists on line 6 are augmented with translations.
+    We then combine the best candidates (as chosen on line 8, without thresholding) into complete target language NE.
+    Finally, we discard transliterations which do not actually appear in the target corpus.
+    Input: Bilingual, comparable corpus ( ,&#10013;), set of

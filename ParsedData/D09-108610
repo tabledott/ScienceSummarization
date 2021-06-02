@@ -1,0 +1,8 @@
+uct of weights w with features f and g: &#65533; wjgj(t,t0,a,w,w0) + j The features f look only at target words and dependencies.
+    In the conditional models of &#167;3 and &#167;6, these features are those of an edge-factored dependency parser (McDonald et al., 2005).
+    In the generative models of &#167;5, f has the form of a dependency model with valence (Klein and Manning, 2004).
+    All models, for instance, have a feature template that considers the parts of speech of a potential parent-child relation.
+    In order to benefit from the source language, we also need to include bilingual features g. When scoring a candidate target dependency link from word x &#8594; y, these features consider the relationship of their corresponding source words x0 and y0.
+    (The correspondences are determined by the alignment a.)
+    For instance, the source tree t0 may contain the link x0 &#8594; y0, which would cause a feature for monotonic projection to fire for the x &#8594; y edge.
+    If, on the other hand, y0 &

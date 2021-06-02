@@ -1,0 +1,8 @@
+ modular architecture, one where each module is a filter, partial tagger, or feature extractor.
+    The architecture of the system is represented in Figure 2.
+    This system currently incorporates a single filter (part-of-speech filter), three partial taggers (simulated annealing, subject codes, selectional restrictions) and a single feature extractor (collocation extractor).
+    Sense tagger architecture.
+    Before the filters or partial taggers are applied, the text is tokenized, lemmatized, split into sentences, and part-of-speech tagged, again using Brill's tagger.
+    A named entity identifier is then run over the text to mark and categorize proper names, which will provide information for the selectional restrictions partial tagger (see Section 4.4).
+    These preprocessing stages are carried out by modules from Sheffield University's Information Extraction system, LaSIE, and are described in more detail by Gaizauskas et al. (1996).
+    Our system disambiguates only the content words in the text, and 

@@ -1,0 +1,10 @@
+ (2009), we chose a model size so that all benchmarks fit comfortably in main memory.
+    Benchmarks use the package&#8217;s binary format; our code is also the fastest at building a binary file.
+    As noted in Section 4.4, disk cache state is controlled by reading the entire binary file before each test begins.
+    For RandLM, we used the settings in the documentation: 8 bits per value and false positive probability 1 256.
+    We evaluate the time and memory consumption of each data structure by computing perplexity on 4 billion tokens from the English Gigaword corpus (Parker et al., 2009).
+    Tokens were converted to vocabulary identifiers in advance and state was carried from each query to the next.
+    Table 1 shows results of the benchmark.
+    Compared to decoding, this task is cache-unfriendly in that repeated queries happen only as they naturally occur in text.
+    Therefore, performance is more closely tied to the underlying data structure than to the cache.
+    In fact, we found that enabling IRST

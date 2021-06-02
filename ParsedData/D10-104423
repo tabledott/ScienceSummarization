@@ -1,0 +1,6 @@
+in an out-of-domain corpus in order to improve in-domain performance.
+    Each out-of-domain phrase pair is characterized by a set of simple features intended to reflect how useful it will be.
+    The features are weighted within a logistic model to give an overall weight that is applied to the phrase pair&#8217;s frequency prior to making MAP-smoothed relative-frequency estimates (different weights are learned for each conditioning direction).
+    These estimates are in turn combined linearly with relative-frequency estimates from an in-domain phrase table.
+    Mixing, smoothing, and instance-feature weights are learned at the same time using an efficient maximum-likelihood procedure that relies on only a small in-domain development corpus.
+    We obtained positive results using a very simple phrase-based system in two different adaptation settings: using English/French Europarl to improve a performance on a small, specialized medical domain; and using non-news portions of the NIST09 training material to imp

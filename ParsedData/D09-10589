@@ -1,0 +1,9 @@
+ior over the &#952;j,a parameters.
+    This section describes the full parameter estimation method.
+    The input to the algorithm is a set of labeled examples {xi, yi}Ni=1, a set of unlabeled examples {x0i}Mi=1, a feature-vector definition f(x, y), and a partition of f into k feature vectors r1 ... rk which underly the generative models.
+    The output from the algorithm is a parameter vector w, a set of generative models q1 ... qk, and parameters v1 ... vk, which define a probabilistic dependency parsing model through Eqs.
+    1 and 2.
+    The learning algorithm proceeds in three steps: Step 1: Estimation of a Fully Supervised Model.
+    We choose the initial value q0 of the generative models to be the uniform distribution, i.e., we set &#952;j,a = 1/dj for all j, a.
+    We then define the regularized log-likelihood function for the labeled examples, with the generative model fixed at q0, to be: This is a conventional regularized log-likelihood function, as commonly used in CRF models.
+    The parameter C &

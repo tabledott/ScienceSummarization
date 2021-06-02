@@ -1,0 +1,5 @@
+ model (Lafferty et al., 2001), with features as defined by McDonald et al. (2005), to define a distribution P(y|x) where the parse structures y are dependency structures with labels that are triples of nonterminals.
+    In this case we could define which can be computed with inside-outside style algorithms, applied to the data structures from (Eisner, 2000).
+    The complexity of training and applying such a model is again O(Gn3), where G is the number of possible labels, and the number of possible labels (triples of non-terminals) is around G = 1000 in the case of treebank parsing; this value for G is still too large for the method to be efficient.
+    Instead, we train three separate models &#181;1, &#181;2, and &#181;3 for the three different positions in the non-terminal triples.
+    We then take &#181;(x, h, m, l) to be a product of these three models, for example we would calculate &#181;(x, h, m, (VP VBD NP)) = &#181;1(x, h, m, (VP)) x &#181;2(x, h, m, (VBD)) x&#181;3(x, h, m, (NP)) Training the three

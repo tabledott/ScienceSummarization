@@ -1,0 +1,7 @@
+
+    Unfortunately, this term can also refer to the frequency above which words are considered known.
+    As it happens, the unknown-word threshold Collins uses in his parser for English is six, not five.14 To be absolutely unambiguous, words that occur fewer than six times, which is to say, words that occur five times or fewer, in the data are considered &#8220;unknown.&#8221; words into the parsing model, then, is simply to map all low-frequency words in the training data to some special +UNKNOWN+ token before counting top-level events for parameter estimation (where &#8220;low-frequency&#8221; means &#8220;below the unknown-word threshold&#8221;).
+    Collins&#8217; trainer actually does not do this.
+    Instead, it does not directly modify any of the words in the original training trees and proceeds to break up these unmodified trees into the top-level events.
+    After these events have been collected 13 This phrase was taken from a comment in one of Collins&#8217; preprocessing Perl scripts.
+    14 As w

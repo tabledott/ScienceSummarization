@@ -1,0 +1,7 @@
+to best choose a prior for this problem.
+    This basic algorithm needs no parameters.
+    If desired, it is possible to tune the frequency of selection, by changing the variance of P(MIS) (or the variance of P(ai = a IS) for each parameter), where larger variances increase the rate of disagreement among the committee members.
+    We implemented this effect by employing a temperature parameter t, used as a multiplier of the variance of the posterior parameter distribution.
+    A more general algorithm results from allowing (i) a larger number of committee members, k, in order to sample P(MIS) more precisely, and (ii) more refined example selection criteria.
+    This gives the following general sequential selection algorithm, executed for each unlabeled input example e: It is easy to see that two member sequential selection is a special case of general sequential selection, where any disagreement is considered sufficient for selection.
+    In order to instantiate the general algorithm for larger committees, we

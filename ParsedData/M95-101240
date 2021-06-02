@@ -1,0 +1,9 @@
+d step, names that are designated as aliases are recorded as such .
+  Template generation We mentioned above that the inferential architecture that we have adopted here is in good part motivate d by a desire to simplify template generation .
+  Indeed, template generation consists of nothing more than reading out the relevant propositions from the database .
+  For the TE task, this means identifying person and organization individuals by matching on person(x) o r organization(y) .
+  For each so-matching semantic individual, we create a skeletal template .
+  The skeleton is initialized with name and alias strings that were attached to the semantic individuals during name merging .
+  I t is further fleshed out by looking up related facts that hold of the matched individual, e.g., has-location(y, z ) for organizations or has-title(x, w) for persons .
+  These facts are literally just read out of the database .
+  Finalization routines are then invoked on the near-final template to fill the ORG TYPE slot and to norm

@@ -1,0 +1,6 @@
+ses the k-best parsing Algorithm 2 of Huang and Chiang (2005) to speed up the computation.
+    When combining the subderivations along a hyperedge e to form a new subtree y&#8242; = (e, j), we also compute its unit non-local feature values fN((e, j)) (line 25).
+    A priority queue (heap in Pseudocode 3) is used to hold the candidates for the next-best derivation, which is initialized to the set of best derivations along each hyperedge (lines 7 to 9).
+    Then at each iteration, we pop the best derivation (lines 12), and push its successors back into the priority queue (line 14).
+    Analogous to the language model cost in forest rescoring, the unit feature cost here is a non-monotonic score in the dynamic programming backbone, and the derivations may thus be extracted out-of-order.
+    So a buffer buf is used to hold extracted derivations, which is sorted at the end (line 15) to form the list of top-k derivations D(v) of node v. The complexity of this algorithm is O(E + V k log kJV) (Huang and Chiang, 2005),

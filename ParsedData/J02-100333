@@ -1,0 +1,8 @@
+actors.
+    During Phase 2, one property after another is rejected.
+    For example, the property BUD is rejected because it does not remove any distractors.
+    The first property that is true of all elements of S while also removing distractors is P U W. This property removes all distractors at once, causing the algorithm to end with L = {POODLE U WHITE} as the complete description.
+    If we modify the example by letting [[BLACK]] = {a, c} (rather than {a, b, c}) and S = {b, c, d, e} (rather than S = {a, b, d, e}), then the description L = {BLACK U POODLE} is found.
+    D&amp;RBoolean is incremental not only within a phase, but also from one phase to the next, which causes shorter disjunctions to be favored over longer ones.
+    Once a property has been selected, it will not be abandoned even if properties selected during later phases make it logically superfluous.
+    As a result, one may generate descriptions like X n (Y U Z) (e.g., white (cats and dogs)) in a situation where Y U Z (e.g., cats and dogs) 

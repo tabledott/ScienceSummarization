@@ -1,0 +1,8 @@
+for possible synonyms, and the other modifiers provide finer grain distinctions used to rank possible synonyms.
+    Figure 4 shows the 5 canonical attributes for pants.
+    This canonical vector is a better general description of the term pants, since similar terms are likely to appear as the direct object of wear, even though it still contains the idiomatic attributes (direct-obj, wet) and (direct-obj, scare).
+    One final difficulty this example shows is that attributes like (direct-obj, get) are not informative.
+    We know this because (direct-obj, get) appears with 8769 different terms, which means the algorithm may perform a large number of unnecessary full comparisons since (direct-obj, get) could be a canonical attribute for many terms.
+    To avoid this problem, we apply a maximum cutoff on the number of terms the attribute appears with.
+    With limited experimentation, we have found that TTESTLOG is the best weight function for selecting canonical attributes.
+    This may be because the extra log2

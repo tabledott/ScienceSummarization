@@ -1,0 +1,7 @@
+ey are only returned by the morphological analyzer when they are marked overtly in orthography, but they are not disambiguated in case they are not overtly marked.
+    The features are indefiniteness (presence of nunation), idafa (possessed), case, and mood.
+    First, for each of the 14 morphological features and for each possible value (including &#8216;NA&#8217; if applicable), we define a binary machine learning feature which states whether in any morphological analysis for that word, the feature has that value.
+    This gives us 58 machine learning features per word.
+    In addition, we define a second set of features which abstracts over the first set: for all features, we state whether any morphological analysis for that word has a value other than &#8216;NA&#8217;.
+    This yields a further 11 machine learning features (as 3 morphological features never have the value &#8216;NA&#8217;).
+    In addition, we use the untokenized word form and a binary feature stating whether there is an analysis or not.

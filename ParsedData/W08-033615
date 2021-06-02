@@ -1,0 +1,9 @@
+ased are inherently shorter than MaxMatch, having the same distortion limit means CharBased is limited to a smaller context than MaxMatch.
+    To make a fairer comparison, we set the linear distortion limit in Moses to unlimited, removed the lexicalized reordering model, and retested both systems.
+    With this setting, MaxMatch is 0.46 BLEU point better than CharBased (29.62 to 29.16) on MT03.
+    This result suggests that having word segmentation does affect how the reordering model works in a phrasebased system.
+    Hypothesis 2.
+    Better Segmentation Performance Should Lead to Better MT Performance Observation We have shown in Hypothesis 1 that it is helpful to segment Chinese texts into words first.
+    In order to decide a segmenter to use, the most intuitive thing to do is to find one that gives higher F measure on segmentation.
+    Our experiments show that higher F measure does not necessarily lead to higher BLEU score.
+    In order to contrast with the simple maximum matching lexicon-based model (

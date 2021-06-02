@@ -1,0 +1,7 @@
+ by pruning chart items that have low posterior probability under a simpler grammar.
+    Charniak et al. (2006) pre-parse with a sequence of grammars which are coarser than (parentannotated) treebank grammars.
+    However, we also work with grammars which are already heavily split, up to half as split as the final grammar, because we found the computational cost for parsing with the simple X-bar grammar to be insignificant compared to the costs for parsing with more refined grammars.
+    For a final grammar G = Gn, we compute estimates for the n projections Gn&#8722;1,... , G0 =X-Bar, where Gi = &#960;i(G) as described in the previous section.
+    Additionally we project to a grammar G&#8722;1 in which all nonterminals, except for the preterminals, have been collapsed.
+    During parsing, we start of by exhaustively computing the inside/outside scores with G&#8722;1.
+    At each stage, chart items with low posterior probability are removed from the chart, and we proceed to compute inside/outside scores with t

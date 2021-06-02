@@ -1,0 +1,9 @@
+e for each value.
+			The motivation was that a tree which predicts a single value (say verb) does notfragment the data with tests which are only relevant for the distinction of two other values (e.g. ar ticle and possessive pronoun).
+			2 Furthermore, we observed that such two-class decision trees require no optimization of the pruning threshold (see also section 2.2.)The tree induction algorithm only considers bi nary tests, which check whether some particular attribute is present or not.
+			The best test for each node is selected with the standard information gaincriterion.
+			The recursive tree building process ter minates if the information gain is 0.
+			The decision tree is pruned with the pruning criterion described below.
+			Since the tagger creates a separate tree for eachattribute, the probabilities of a set of competing at tributes such as masculine, feminine, and neuter will not exactly sum up to 1.
+			To understand why,assume that there are three trees for the gender attributes.
+			Two of them (sa

@@ -1,0 +1,7 @@
+ test sentences, and to allow a fair comparison with other CCG parsers, extra rules were encoded in the parser (but we emphasise these were only used to obtain the section 23 test data; they were not used to parse unseen data as part of the testing).
+    This resulted in 2,365 dependency structures for section 23 (98.5% of the full section), and 1,825 (95.5%) dependency structures for section 00.
+    The first stage in parsing the test data is to apply the supertagger.
+    We use the novel strategy developed in Clark and Curran (2004): first assign a small number of categories (approximately 1.4) on average to each word, and increase the number of categories if the parser fails to find an analysis.
+    We were able to parse 98.9% of section 23 using this strategy.
+    Clark and Curran (2004) shows that this supertagging method results in a highly efficient parser.
+    For the normal-form model we returned the dependency structure for the most probable derivation, applying the two types of normal-form constrai

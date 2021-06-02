@@ -1,0 +1,6 @@
+feature appears in a syntactic analysis.1 Abney calls the feature functions frequency functions and, like Abney, we will not always distinguish between a feature and its corresponding frequency function.
+    There are practical difficulties with Abney&#8217;s proposal, in that finding the maximumlikelihood solution during estimation involves calculating expectations of feature values, which are sums over the complete space of possible analyses.
+    Abney suggests a Metropolis-Hastings sampling procedure for calculating the expectations, but does not experiment with an implementation.
+    Johnson et al. (1999) propose an alternative solution, which is to maximize the conditional likelihood function.
+    In this case the likelihood function is the product of the conditional probabilities of the syntactic analyses in the data, each probability conditioned on the respective sentence.
+    The advantage of this method is that calculating the conditional feature expectations only requires a sum over the syntactic an

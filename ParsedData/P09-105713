@@ -1,0 +1,8 @@
+and taggings.
+    We run EM for multiple passes, and in each pass we alternately constrain either the grammar model or the dictionary model.
+    The procedure is simple and proceeds as follows: We notice significant gains in tagging performance when applying this technique.
+    The tagging accuracy increases at each step and finally settles at a high of 91.6%, which outperforms the existing state-of-the-art systems for the 45-tag set.
+    The system achieves a better accuracy than the 88.6% from Smith and Eisner (2005), and even surpasses the 91.4% achieved by Goldberg et al. (2008) without using any additional linguistic constraints or manual cleaning of the dictionary.
+    Figure 5 shows the tagging performance achieved at each step.
+    We found that it is the elimination of incorrect entries from the dictionary (and grammar) and not necessarily the initialization weights from previous EM training, that results in the tagging improvements.
+    Initializing the last trained dictionary or grammar at each ste

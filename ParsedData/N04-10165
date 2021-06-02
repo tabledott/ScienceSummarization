@@ -1,0 +1,11 @@
+nouns in order to make it possible to recognize simple NPs.
+    This insertion was limited to a/an, the, and the empty determiner (for bare plurals).
+    All queries (other than the ones using the NEAR operator) were performed as exact matches (using quotation marks in Altavista).
+    All search terms were submitted to the search engine in lower case.
+    If a query consists of a single, highly frequent word (such as the), Altavista will return an error message.
+    In these cases, we set the web count to a large constant (108).
+    This problem is limited to unigrams, which were used in some of the models detailed below.
+    Sometimes the search engine fails to return a hit for a given n-gram (for any of its morphological variants).
+    We smooth zero counts by setting them to .5.
+    For all tasks, the web-based models are compared against identical models whose parameters were estimated from the BNC (Burnard, 1995).
+    The BNC is a static 100M word corpus of British English, which is about 1000 times smal

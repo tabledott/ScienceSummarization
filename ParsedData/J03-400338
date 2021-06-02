@@ -1,0 +1,7 @@
+test data that have not been seen in training are deterministically assigned the POS tag that is assigned by the tagger described in Ratnaparkhi (1996).
+    As a preprocessing step, the tagger is used to decode each test data sentence.
+    All other words are tagged during parsing, the output from Ratnaparkhi&#8217;s tagger being ignored.
+    The POS tags allowed for each word are limited to those that have been seen in training data for that word (any tag/word pairs not seen in training would give an estimate of zero in the PL2 and PR2 distributions).
+    The model is fully integrated, in that part-of-speech tags are statistically generated along with words in the models, so that the parser will make a statistical decision as to the most likely tag for each known word in the sentence.
+    The parsing algorithm for the models is a dynamic programming algorithm, which is very similar to standard chart parsing algorithms for probabilistic or weighted grammars.
+    The algorithm has complexity O(n5), where n is 

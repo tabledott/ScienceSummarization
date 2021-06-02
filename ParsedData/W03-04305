@@ -1,0 +1,7 @@
+l model).
+    Let S be a set of FSM states, each of which is associated with a label, l E L, (such as ORG).
+    Let s = (s1, s2, ...sT) be some sequence of states, (the values on T output nodes).
+    By the Hammersley-Clifford theorem, CRFs define the conditional probability of a state sequence given an input sequence to be where Zo is a normalization factor over all state sequences, fk(st&#8722;1, st, o, t) is an arbitrary feature function over its arguments, and &#955;k is a learned weight for each feature function.
+    A feature function may, for example, be defined to have value 0 in most cases, and have value 1 if and only if st&#8722;1 is state #1 (which may have label OTHER), and st is state #2 (which may have label LOCATION), and the observation at position t in o is a word appearing in a list of country names.
+    Higher &#955; weights make their corresponding FSM transitions more likely, so the weight &#955;k in this example should be positive.
+    More generally, feature functions can ask powerfull

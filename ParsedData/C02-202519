@@ -1,0 +1,7 @@
+s is the preferred parse in the treebank, we compute the accuracy on this sentence as 1/m.
+  Since our approach of defining the probability of anal- yses using derivation trees is different from the tradi- tional approach of learning PCFG grammars from phrase structure trees, a comparison of the two is probably in order.
+  We tested the model PCFG-GP defined over the corresponding phrase structure trees and its average ac- curacy was 65.65% which is much lower than the accu- racy of the same model over derivation trees (71.73%).
+  This result suggests that the information about grammar constructions is very helpful for parse disambiguation.
+  Method Task tag sel.
+  Random 90.13% 25.81% Tagger unigram 96.75% 44.15% trigram 97.87% 47.74% oracle 100.00% 54.59% PCFG simple 97.40% 66.26% grandparent 97.43% 71.73% combined 98.08% 74.03% Table 2: Performance of the HMM and PCFG models for the tag and parse selection tasks (accuracy).
+  The results in Table 2 indicate that high disambigua- tion accuracy can be achiev

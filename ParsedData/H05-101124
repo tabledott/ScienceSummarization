@@ -1,0 +1,6 @@
+gned all the sentences of length100 or less in our 500,000 sentence pair corpus, us ing an N -best value of 20 and a maximum allowable score difference of 125000.
+			We collected link counts and co-occurrence counts from these alignments for estimating conditional link probabilities.
+			We trained CLP-based models from these counts for a range of values for the discount used in the conditional link probability estimation, finding a value of 0.4 to be a roughly optimal value of the discount parameter for the development set.
+			We also trained a CLP-based model using the conditional link probabilities from the heuristic alignment model mentioned previously.
+			In training both CLP-based models, we also used an N -best value of 20 and an unbounded allowable score difference in the alignment search.
+			We evaluated three models on the final test data: the LLR-based model (LLR) and the two CLP-based models, one with conditional link probabilities from 86 Alignment Recall Precision AER LLR 0.829 0.848 0.160 CLP 1 

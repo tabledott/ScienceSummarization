@@ -1,0 +1,12 @@
+
+  
+  
+    We will now consider how to apply this learning model to the hedge classification task.
+    As discussed earlier, the speculative/non-speculative distinction hinges on the presence or absence of a few hedge cues within the sentence.
+    Working on this premise, all features are ranked according to their probability of &#8216;hedge cue-ness&#8217;: which can be computed directly using (4) and (6).
+    The m most probable features are then selected from each sentence to compute (5) and the rest are ignored.
+    This has the dual benefit of removing irrelevant features and also reducing dependence between features, as the selected features will often be nonlocal and thus not too tightly correlated.
+    Note that this idea differs from traditional feature selection in two important ways: side effect of skewing the posterior estimates in favour of the spec class, but is admissible for the purposes of ranking and classification by posterior thresholding (see next section).
+  
+  
+    The weakly supervised

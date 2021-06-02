@@ -1,0 +1,9 @@
+ms in the corpus.
+    Given the frequency counts for uni-, bi-, and trigrams, the weights can be very efficiently determined with a processing time linear in the number of different trigrams.
+    The algorithm is given in figure 1.
+    Note that subtracting 1 means taking unseen data into account.
+    Without this subtraction the model would overfit the training data and would generally yield worse results.
+    Currently, the method of handling unknown words that seems to work best for inflected languages is a suffix analysis as proposed in (Samuelsson, 1993).
+    Tag probabilities are set according to the word's ending.
+    The suffix is a strong predictor for word classes, e.g., words in the Wall Street Journal part of the Penn Treebank ending in able are adjectives (.11) in 98% of the cases (e.g. fashionable, variable) , the rest of 2% are nouns (e.g. cable, variable).
+    The probability distribution for a particular suffix is generated from all words in the training set that share the same suffix of some

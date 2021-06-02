@@ -1,0 +1,8 @@
+   The time needed to perform the M-step is dominated by re-normalizing the lexicon probabilities.
+    The worst case time complexity is O(|VF  |&#8727; |VE|), where |VF  |is the size of the source vocabulary and |VE |is the size of the target vocabulary.
+    Therefore, the time complexity of the M-step is polynomial in the vocabulary size, which typically grows logarithmic in corpus size.
+    As a result, the alignment stage consumes most of the overall processing time when the number of sentences is large.
+    Because the parameters are only updated during the M-step, it will be no difference in the result whether we perform the word alignment in the Estep sequentially or in parallel2.
+    These character2However, the rounding problem will make a small differistics make it possible to build parallel versions of GIZA++.
+    Figure 2 shows the basic idea of parallel GIZA++.
+    While working on the required modification to GIZA++ to run the alignment step in parallel we identified a bug, which needed to be fi

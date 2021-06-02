@@ -1,0 +1,9 @@
+7;s parser (2000) and syntactic parse trees from the PennTree bank.
+    Our statistical model assigns a segmenting probability for each word , where boundary, no-boundary .
+    Because our model is concerned with discourse segmentation at sentence level, we define boundary , i.e., the sentence boundary is always a discourse boundary as well.
+    Our model uses both lexical and syntactic features for determining the probability of inserting discourse boundaries.
+    We apply canonical lexical head projection rules (Magerman, 1995) in order to lexicalize syntactic trees.
+    For each word , the upper-most node with lexical head which has a right sibling node determines the features on the basis of which we decide whether to insert a discourse boundary.
+    We denote such node , and the features we use are node , its parent , and the siblings of .
+    In the example in Figure 2, we determine whether to insert a discourse boundary after the word says using as features node and its children and .
+    We use our co

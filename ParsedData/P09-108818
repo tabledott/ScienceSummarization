@@ -1,0 +1,7 @@
+r small corpora we re-sample the hyperparameter after every pass through the corpus, for larger experiments we only re-sample every 20 passes.
+    While employing a collapsed Gibbs sampler allows us to efficiently perform inference over the massive space of possible grammars, it induces dependencies between all the sentences in the training corpus.
+    These dependencies make it difficult to scale our approach to larger corpora by distributing it across a number of processors.
+    Recent work (Newman et al., 2007; Asuncion et al., 2008) suggests that good practical parallel performance can be achieved by having multiple processors independently sample disjoint subsets of the corpus.
+    Each process maintains a set of rule counts for the entire corpus and communicates the changes it has made to its section of the corpus only after sampling every sentence in that section.
+    In this way each process is sampling according to a slightly &#8216;out-of-date&#8217; distribution.
+    However, as we confirm in Secti

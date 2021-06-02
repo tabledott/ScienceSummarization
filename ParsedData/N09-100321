@@ -1,0 +1,6 @@
+sted that MCR16 does indeed perform as well as MCR30g on the similar pairs subset.
+    We believe that this deviation could be due to the method used to construct the similarity dataset, which includes some pairs of loosely related pairs labeled as unrelated.
+    Concerning the techniques based on distributional similarities, the method based on context windows provides the best results for similarity, and the bagof-words representation outperforms most of the other techniques for relatedness.
+    In order to gain an insight on which would be the upper bound that we could obtain when combining our methods, we took the output of three systems (bag of words with window size 10, context window with size 4, and the WN30g run).
+    Each of these outputs is a ranking of word pairs, and we implemented an oracle that chooses, for each pair, the rank that is most similar to the rank of the pair in the gold-standard.
+    The outputs of the oracle have a Spearman correlation of 0.97 for RG and 0.92 for WordSim353, which

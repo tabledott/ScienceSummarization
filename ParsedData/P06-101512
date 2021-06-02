@@ -1,0 +1,5 @@
+se and one that extracts many instances.
+    The recall of a pattern p can be approximated by the fraction of input instances that are extracted by p. Since it is non-trivial to estimate automatically the precision of a pattern, we are wary of keeping patterns that generate many instances (i.e., patterns that generate high recall but potentially disastrous precision).
+    Hence, we desire patterns that are highly associated with the input instances.
+    Pointwise mutual information (Cover and Thomas 1991) is a commonly used metric for measuring this strength of association between two events x and y: We define the reliability of a pattern p, r&#960;(p), as its average strength of association across each input instance i in I, weighted by the reliability of each instance i: where r&#953;(i) is the reliability of instance i (defined below) and maxpmi is the maximum pointwise mutual information between all patterns and all instances. r&#960;(p) ranges from [0,1].
+    The reliability of the manually supplied seed

@@ -1,0 +1,6 @@
+d dependency parser, which was shown to improve the accuracy of a transition-based parser by Zhang and Clark (2008).
+    However, while their features were limited to certain first- and second-order factors, we use features over second- and third-order factors as found in the parsers of Bohnet and Kuhn (2012).
+    These features are scored as soon as the factors are completed, using a technique that is similar to what Hatori et al. (2011) call delayed features, although they use it for part-of-speech tags in the lookahead while we use it for subgraphs of the dependency tree.
+    Cluster features, finally, are features over word clusters, as first used by Koo et al. (2008), which replace part-of-speech tag features.2 We use a hash kernel to map features to weights.
+    It has been observed that most of the computing time in feature-rich parsers is spent retrieving the index of each feature in the weight vector (Bohnet, 2010).
+    This is usually done via a hash table, but significant speedups can be achieved b

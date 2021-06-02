@@ -1,0 +1,8 @@
+, phrase extraction produced 10% more phrase pairs, and the final translation system showed a loss in translation performance (BLEU score) below 1% relative.
+    Given this outcome we decided to apply the faster procedure in all experiments.
+    Once monolingual adaptation data is automatically translated, we can use the synthetic parallel corpus to estimate new language, translation, and re-ordering models.
+    Such models can either replace or be combined with the original models of the SMT system.
+    There is another simple option which is to concatenate the synthetic parallel data with the original training data and re-build the system.
+    We did not investigate this approach because it does not allow to properly balance the contribution of different data sources, and also showed to underperform in preliminary work.
+    Concerning the combination of models, in the following we explain how Moses was extended to manage multiple translation models (TMs) and multiple re-ordering models (RMs).
+    In Moses, 

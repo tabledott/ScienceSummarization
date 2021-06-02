@@ -1,0 +1,9 @@
+rable, we can assume a word that occurs in a certain context should have a translation that occurs in a similar context.
+    Context, as we understand it here, is defined by the frequencies of context words in surrounding positions.
+    This local context has to be translated into the other language, and we can search the word with the most similar context.
+    This idea has already been investigated in earlier work.
+    Rapp [1995, 1999] proposes to collect counts over words occurring in a four word window around the target word.
+    For each occurrence of a target word, counts are collected over how often certain context words occur in the two positions directly ahead of the target word and the two following positions.
+    The counts are collected separately for each position and then entered into in a context vector with an dimension for each context word in each position.
+    Finally, the raw counts are normalized, so that for each of the four word positions the vector values add up to one.
+    Vector com

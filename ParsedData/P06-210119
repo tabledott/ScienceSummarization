@@ -1,0 +1,7 @@
+N + 1 summands: where Pn is the precision of the n-gram elements in the decoding.7 As is standard in MT research, we take wn = 1/N and N = 4.
+    The first term in the BLEU score is the log brevity penalty, a continuous function of A1 (the total number of unigram tokens in the decoded corpus) that fires only if A1 &lt; r (the average word count of the reference corpus).
+    We again use a Taylor series to approximate the expected log brevity penalty.
+    We mention an alternative way to compute (say) the expected precision C/A: integrate numerically over the joint density of C and A.
+    How can we obtain this density?
+    As (C, A) = Ei(ci, ai) is a sum of independent random length-2 vectors, its mean vector and 2 x 2 covariance matrix can be respectively found by summing the means and covariance matrices of the (ci, ai), each exactly computed from the distribution (5) over Ki hypotheses.
+    We can easily approximate (C, A) by the (continuous) bivariate normal with that mean and covariance matrix8&#8212;or 

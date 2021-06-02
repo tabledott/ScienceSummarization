@@ -1,0 +1,7 @@
+ractice, we apply them to the Penn WSJ Treebank (Marcus et al., 1993) and the Prague Dependency Treebank (Haji&#711;c et al., 2001; Haji&#711;c, 1998).6 We use standard training, validation, and test splits7 to facilitate comparisons.
+    Accuracy is measured with unlabeled attachment score (UAS): the percentage of words with the correct head.8
+  
+  
+    Our parsing algorithms can be applied to scores originating from any source, but in our experiments we chose to use the framework of structured linear models, deriving our scores as: SCOREPART(x, p) = w &#183; f(x, p) Here, f is a feature-vector mapping and w is a vector of associated parameters.
+    Following standard practice for higher-order dependency parsing (McDonald and Pereira, 2006; Carreras, 2007), Models 1 and 2 evaluate not only the relevant third-order parts, but also the lower-order parts that are implicit in their third-order factorizations.
+    For example, Model 1 defines feature mappings for dependencies, siblings, grandchildren, and grand-s

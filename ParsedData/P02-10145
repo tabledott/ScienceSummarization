@@ -1,0 +1,7 @@
+efer in the associated training text.
+    We follow the procedure employed in Soon et al. to create the training data: we rely on coreference chains from the MUC answer keys to create (1) a positive instance for each anaphoric noun phrase, NP&#9988; , and its closest preceding antecedent, NP&#9986; ; and (2) a negative instance for NP&#9988; paired with each of the intervening NPs, NP&#9986; , NP&#9986; , , NP&#9988; .
+    This method of negative instance selection is further described in Soon et al. (2001); it is designed to operate in conjunction with their method for creating coreference chains, which is explained next.
+    Applying the classifier to create coreference chains.
+    After training, the decision tree is used by a clustering algorithm to impose a partitioning on all NPs in the test texts, creating one cluster for each set of coreferent NPs.
+    As in Soon et al., texts are processed from left to right.
+    Each NP encountered, NP&#9988; , is compared in turn to each preceding NP, NP&#9986; , f

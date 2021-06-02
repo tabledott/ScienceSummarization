@@ -1,0 +1,7 @@
+o use the precomputed context summary formulation.
+    Second, for the projection XBAR, we tried collapsing all the incomplete states of each complete state to a single state (so NP&#8594; &#183; CC NP and NP&#8594; &#183; PP would both become NP').
+    This turned out to be ineffective, since most productions then had merged probability 1.
+    For our current grammar, the best estimate of this type was one we called F, for filter, which collapsed all complete (passive) symbols together, but did not collapse any terminal symbols.
+    So, for example, a state like NP&#8594; &#183; CC NP CC NP would become X&#8594; &#183; CC X CC X (see section 3.3 for a description of our grammar encodings).
+    This estimate has an interesting behavior which is complementary to the context summary estimates.
+    It does not indicate well when an edge would be moderately expensive to integrate into a sentence, but it is able to completely eliminate certain edges which are impossible to integrate into a full parse (for example 

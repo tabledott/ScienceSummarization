@@ -1,0 +1,5 @@
+) algorithm: n iterations, where the first iteration involves n feature extraction operations and n heap insertions, and each subsequent iteration involves k feature extractions and heap updates.
+    We note that the dominating factor in polynomialtime discriminative parsers, is by far the featureextraction and score calculation.
+    It makes sense to compare parser complexity in terms of these operations only.4 Table 1 compares the complexity of our 4Indeed, in our implementation we do not use a heap, and opt instead to find the argmax using a simple O(n) max operation.
+    This O(n2) algorithm is faster in practice than the heap based one, as both are dominated by the O(n) feature extraction, while the cost of the O(n) max calculationis negligible compared to the constants involved in heap maintenance.
+    In terms of feature extraction and score calculation operations, our algorithm has the same cost as traditional shift-reduce (MALT) parsers, and is an order of magnitude more efficient than graph-based (M

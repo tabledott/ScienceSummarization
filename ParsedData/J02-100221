@@ -1,0 +1,6 @@
+a distance &gt; 2k from the actual boundary between the first and second reference segments.
+    The penalty is large because the metric catches both the false negative and the false positive errors.
+    The segmentations assigned by Algorithms A-0 and A-2 are treated as discussed earlier in conjunction with Problem 1: the one assigned by Algorithm A-0 has a false negative and thus incurs a penalty of k, and the one assigned by Algorithm A-2 has a false positive, and thus incurs a penalty of &lt; k. Finally, consider the segmentations assigned by Algorithms A-1 and A-3, and suppose that both contain an incorrect boundary some small distance e from the actual one.
+    Then the penalty for Algorithm A-1 is e, while the penalty for Algorithm A-3 is 2e.
+    This should not be the case; Algorithm A-1 should be penalized more than Algorithm A-3, since a near-miss error is better than a pure false positive, even if it is close to the boundary.
+    Pk is nonintuitive because it measures the probability that two sente

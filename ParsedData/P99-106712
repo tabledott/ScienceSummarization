@@ -1,0 +1,7 @@
+e several, one for each position within the window.
+    For example, if we have chosen the window size 2, we would compute a first co-occurrence vector for the case that word A is two words ahead of another word B, a second vector for the case that word A is one word ahead of word B, a third vector for A directly following B, and a fourth vector for A following two words after B.
+    If we added up these four vectors, the result would be the co-occurrence vector as obtained when not taking word order into account.
+    However, this is not what we do.
+    Instead, we combine the four vectors of length n into a single vector of length 4n.
+    Since preliminary experiments showed that a window size of 3 with consideration of word order seemed to give somewhat better results than other window types, the results reported here are based on vectors of this kind.
+    However, the computational methods described below are in the same way applicable to window sizes of any length with or without consideration of word or

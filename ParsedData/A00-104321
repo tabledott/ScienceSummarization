@@ -1,0 +1,12 @@
+nd using a training corpus.
+    They are then stored in a table and loaded at running time.
+    Step 5: Final Decision.
+    The final reduction decisions are based on the results from all the earlier steps.
+    To decide which phrases to remove, the system traverses the sentence parse tree, which now have been annotated with different types of information from earlier steps, in the top-down order and decides which subtrees should be removed, reduced or unchanged.
+    A subtree (i.e., a phrase) is removed only if it is not grammatically obligatory, not the focus of the local context (indicated by a low importance score), and has a reasonable probability of being removed by humans.
+    Figure 1 shows sample output of the reduction program.
+    The reduced sentences produced by humans are also provided for comparison.
+  
+  
+    We define a measure called success rate to evaluate the performance of our sentence reduction program.
+    Original sentence : When it arrives sometime next year in new TV sets, the V-chi

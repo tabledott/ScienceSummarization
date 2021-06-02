@@ -1,0 +1,9 @@
+excessive splitting, e.g., t + alo for talo (cf.
+    English h + ouse for house). with their respective correct morphemic analyses.
+    We assume that the segmentation algorithm has split the word bigger into the morphs bigg + er, hours&#8217; into hour + s + &#8217; and puutaloja into puu + t + alo + ja.
+    Alignment procedure.
+    We align the morph sequence with the morphemic label sequence using dynamic programming, namely Viterbi alignment, to find the best sequence of mappings between morphs and morphemic labels.
+    Each possible pair of morph/morphemic label has a distance associated with it.
+    For each segmented word, the algorithm searches for the alignment that minimizes the total alignment distance for the word.
+    The distance d(M, L) for a pair of morph M and label L is given by: where cM,L is the number of word tokens in which the morph M has been aligned with the label L; and cM is the number of word tokens that contain the morph M in their segmentation.
+    The distance measure can be tho

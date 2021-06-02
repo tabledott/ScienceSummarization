@@ -1,0 +1,7 @@
+urations, and at each step try to extend them by applying one of the three actions.
+    We then dump the best k new configurations from the buffer back Pseudocode 1 beam-search shift-reduce parsing. into the agenda for the next step.
+    The complexity of this algorithm is O(nk), which subsumes the determinstic mode as a special case (k = 1).
+    To train the parser we need an &#8220;oracle&#8221; or goldstandard action sequence for gold-standard dependency trees.
+    This oracle turns out to be non-unique for the three-action system (also non-unique for the four-action system), because left dependents of a head can be reduced either before or after all right dependents are reduced.
+    For example, in Figure 2, &#8220;I&#8221; is a left dependent of &#8220;saw&#8221;, and can in principle wait until &#8220;Bill&#8221; and &#8220;with&#8221; are reduced, and then finally combine with &#8220;saw&#8221;.
+    We choose to use the heuristic of &#8220;shortest stack&#8221; that always prefers reduceL over shift, w

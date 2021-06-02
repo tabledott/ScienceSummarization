@@ -1,0 +1,10 @@
+foreign words and build up a tree, which we call a decoded tree.
+    An example is shown in Figure 2.
+    The decoded tree is built up in the foreign language word order.
+    To obtain a tree in the English order, we apply the reverse of the reorder operation (back-reordering) using the information associated to the rule expanded by the r-table.
+    In Figure 2, the numbers in the dashed oval near the top node shows the original english order.
+    Then, we obtain an English parse tree by removing the leaf nodes (foreign words) from the backreordered tree.
+    Among the possible decoded trees, we pick the best tree in which the product of the LM probability (the prior probability of the English tree) and the TM probability (the probabilities associated pairs of English parse trees and foreign sentences. with the rules in the decoded tree) is the highest.
+    The use of an LM needs consideration.
+    Theoretically we need an LM which gives the prior probability of an English parse tree.
+    However, we can appr

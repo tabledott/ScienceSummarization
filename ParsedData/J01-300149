@@ -1,0 +1,8 @@
+es X and Y.
+    This measure is calculated using the weighted overlap metric shown in (8), which calculates the total distance by computing the sum of the distance between each position in the feature vector.
+    From (9) we can see that TiMBL treats numeric and symbolic features differently.
+    For numeric features, the unweighted distance is computed as the difference between the values for that feature in each instance, divided by the maximum possible distance computed over all pairs of instances in the database.'
+    For symbolic features, the unweighted distance is 0 if they are identical, and 1 otherwise.
+    For both numeric and symbolic features, this distance is multiplied by the weight for the particular feature, based on the Gain Ratio measure introduced by Quinlan (1993).
+    This is a measure of the difference in uncertainty between the situations with and without knowledge of the value of that feature, as in (10).
+    Where C is the set of classifications, v ranges over all values of the featur

@@ -1,0 +1,9 @@
+.
+    Table 1 shows the word lattice from Figure 1 represented in matrix form as hF, p, Ri.
+    Chiang (2005) introduced hierarchical phrase-based translation models, which are formally based on synchronous context-free grammars (SCFGs).
+    Translation proceeds by parsing the input using the source language side of the grammar, simultaneously building a tree on the target language side via the target side of the synchronized rules.
+    Since decoding is equivalent to parsing, we begin by presenting a parser for word lattices, which is a generalization of a CKY parser for lattices given in Cheppalier et al. (1999).
+    Following Goodman (1999), we present our lattice parser as a deductive proof system in Figure 2.
+    The parser consists of two kinds of items, the first with the form [X &#8212;* &#945; &#8226; Q, i, j] representing rules that have yet to be completed and span node i to node j.
+    The other items have the form [X, i, j] and indicate that non-terminal X spans [i, j].
+    As with sentence parsi

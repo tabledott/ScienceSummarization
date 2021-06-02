@@ -1,0 +1,8 @@
+come these sparse-data problems is to break down the generation of the RHS of each rule into a sequence of smaller steps, and then to make independence assumptions to reduce the number of parameters in the model.
+    The decomposition of rules should aim to meet two criteria.
+    First, the steps should be small enough for the parameter estimation problem to be feasible (i.e., in terms of having sufficient training data to train the model, providing that smoothing techniques are used to mitigate remaining sparse-data problems).
+    Second, the independence assumptions made should be linguistically plausible.
+    In the next sections we describe three statistical parsing models that have an increasing degree of linguistic sophistication.
+    Model 1 uses a decomposition of which parameters corresponding to lexical dependencies are a natural result.
+    The model also incorporates a preference for right-branching structures through conditioning on &#8220;distance&#8221; features.
+    Model 2 extends the decompo

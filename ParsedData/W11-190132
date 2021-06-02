@@ -1,0 +1,7 @@
+ce the stock re-ranker crashes when run on nbest parses containing NMLs, because it has not seen that tag in training, we could not make use of it.
+    Word Sense We trained a word sense tagger using a SVM classifier and contextual word and part of speech features on all the training portion of the OntoNotes data.
+    The OntoNotes 4.0 corpus comprises a total of 14,662 sense definitions across 4877 verb and noun lemmas13.
+    The distribution of senses per lemma is as shown in Table 6.
+    Table 7 shows the performance of this classifier over both the verbs and nouns in the CoNLL-2011 test set.
+    Again this performance is not directly comparable to any reported in the literature before, and it seems lower then performances reported on previous versions of OntoNotes because this is over all the genres of OntoNotes, and aggregated over both verbs and nouns in the CoNLL-2011 test set.
+    Propositions To predict propositional structure, ASSERT14 (Pradhan et al., 2005) was used, retrained also on all the train

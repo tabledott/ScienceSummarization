@@ -1,0 +1,15 @@
+ation in categories and states.
+    We use a 5-tuple (LF, LN, h, RN, RF) to represent the category of a dependency structure. h represents the head.
+    LF and RF represent the farthest two children on the left and right sides respectively.
+    Similarly, LN and RN represent the nearest two children on the left and right sides respectively.
+    The three types of categories are as follows.
+    Similar operations as described in Section 2.2 are used to keep track of the head and boundary child nodes which are then used to compute depLM scores in decoding.
+    Due to the limit of space, we skip the details here.
+  
+  
+    8.
+    Discount on ill-formed dependency structures We have eight features in our system.
+    The values of the first four features are accumulated on the rules used in a translation.
+    Following (Chiang, 2005), we also use concatenation rules like X &#8212;* XX for backup.
+    The 5th feature counts the number of concatenation rules used in a translation.
+    In our system, we allow substit

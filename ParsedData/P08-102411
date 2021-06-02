@@ -1,0 +1,8 @@
+) using L-BFGS (Malouf, 2002; Sha and Pereira, 2003).
+    This method has been demonstrated to be effective for (non-convex) log-linear models with latent variables (Clark and Curran, 2004; Petrov et al., 2007).
+    Each L-BFGS iteration requires the objective value and its gradient with respect to the model parameters.
+    These are calculated using inside-outside inference over the feature forest defined by the SCFG parse chart of f yielding the partition function, ZA(f), required for the log-likelihood, and the marginals, required for its derivatives.
+    Efficiently calculating the objective and its gradient requires two separate packed charts, each representing a derivation forest.
+    The first one is the full chart over the space of possible derivations given the source sentence.
+    The inside-outside algorithm over this chart gives the marginal probabilities for each chart cell, from which we can find the feature expectations.
+    The second chart contains the space of derivations which produce the r

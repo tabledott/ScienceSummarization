@@ -1,0 +1,9 @@
+ically similar.
+    Figure 2 shows an example list of NEs and their possible Russian transliterations.
+    Approaches that attempt to use these two characteristics separately to identify NEs across languages would have significant shortcomings.
+    Transliteration based approaches require a good model, typically handcrafted or trained on a clean set of transliteration pairs.
+    On the other hand, time sequence similarity based approaches would incorrectly match words which happen to have similar time signatures (e.g.
+    Taliban and Afghanistan in recent news).
+    We introduce an algorithm we call co-ranking which exploits these observations simultaneously to match NEs on one side of the bilingual corpus to their counterparts on the other.
+    We use a Discrete Fourier Transform (Arfken, 1985) based metric for computing similarity of time distributions, and we score NEs similarity with a linear transliteration model.
+    For a given NE in one language, the transliteration model chooses a top ranked list of 

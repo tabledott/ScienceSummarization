@@ -1,0 +1,9 @@
+lasses.
+  
+  
+    Nouns, adjectives and verbs are disambiguated by finding the sense (nc, vc, or ac) with the maximum probability estimate in the given context.
+    The method disambiguates nouns and verbs to the WordNet synset level and adjectives to a coarse-grained level of WordNet synsets linked by the similar-to relation, as described previously.
+    Nouns are disambiguated when they occur as subjects or direct objects and when modified by adjectives.
+    We obtain a probability estimate for each nc to which the target noun belongs, using the distribution of the TCM associated with the co-occurring verb or adjective and the grammatical relationship.
+    Li and Abe used TCMs for the task of structural disambiguation.
+    To obtain probability estimates for noun senses occurring at classes beneath hypernyms on the cut, Li and Abe used the probability estimate at the nc' on the cut divided by the number of ns descendants, as we do when finding r during training, so the probability estimate is shared equally

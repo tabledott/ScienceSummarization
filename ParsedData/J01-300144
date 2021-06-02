@@ -1,0 +1,9 @@
+s implementation, the correct subject category is estimated by applying (6), which maximizes the sum of a Bayesian term (the fraction on the right) over all possible subject categories (SCat) for the ambiguous word over the words in its context (w).
+    A context of 50 words on either side of the ambiguous word is used.
+    Yarowsky assumed the prior probability of each subject category to be constant, so the value Pr(SCat) has no effect on the maximization in (6), and (7) was in effect being maximized.
+    By including a general pragmatic code to deal with the lack of coverage, we created an extremely skewed distribution of codes across senses and Yarowsky's assumption that subject codes occur with equal probability is unlikely to be useful in this application.
+    We gained a rough estimate of the probability of each subject category by determining the proportion of senses in LDOCE to which it was assigned and applying the maximum likelihood estimate.
+    It was found that results improved when the
+  
+  
+  

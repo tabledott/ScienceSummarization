@@ -1,0 +1,7 @@
+g experiments is: t?
+			M? m=1 ?mhm(sw, twc) (3) where sw means the model depends on (s)ource (w)ords, and twc means the model generates (t)arget (w)ords and (c)cg supertags.
+			The model is shown graphically in Figure 1.
+			WordWord CCG SOURCE TARGETFigure 1.
+			Factored translation with source words deter mining target words and CCG supertagsFor our experiments we used the following fea tures: the translation probabilities Pr(sFs1 |t Ft 1 ) and Pr(tFt1 |s Fs 1 ), the lexical weights (Koehn et al, 2003) lex(sFs1 |t Ft 1 ) and lex(t Ft 1 |s Fs 1 ), and a phrase penalty e, which allows the model to learn a preference for longer or shorter phrases.
+			Added to these features 10 is the word penalty e?1 which allows the model to learn a preference for longer or shorter sentences, the distortion model d that prefers monotone word order, and the language model probability Pr(t).
+			All these features are logged when combined in the log-linear model in order to retain the impact of very unlikely translations or sequ

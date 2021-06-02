@@ -1,0 +1,7 @@
+y about 2-4% while the precision numbers decreased by less, from 0.5-2%.
+    In our third experiment, we evaluated whether the learned patterns can improve the coverage of the highprecision subjectivity classifier (HP-Subj), to complete the bootstrapping loop depicted in the top-most dashed line of Figure 1.
+    Our hope was that the patterns would allow more sentences from the unannotated text collection to be labeled as subjective, without a substantial drop in precision.
+    For this experiment, we selected the learned extraction patterns that had 01&gt; 10 and 02&gt; 1.0 on the training set, since these seemed likely to be the most reliable (high precision) indicators of subjectivity.
+    We modified the HP-Subj classifier to use extraction patterns as follows.
+    All sentences labeled as subjective by the original HP-Subj classifier are also labeled as subjective by the new version.
+    For previously unlabeled sentences, the new version classifies a sentence as subjective if (1) it contains two or more

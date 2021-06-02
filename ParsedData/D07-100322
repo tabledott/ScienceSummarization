@@ -1,0 +1,9 @@
+zed as uniform disdard applications of log-linear models apply con ditional maximum likelihood estimation, which for our case involves using an empirical distribution p?over question-answer pairs (and their trees) to opti mize as follows: max ? ?
+			q,?q,a,?a p?(q, ?q,a, ?a) log p?(q, ?q | a, ?a) ? ??
+			P x p?(q,?q,x|a,?a) (8) Note the hidden variable x being summed out; that makes the optimization problem non-convex.
+			Thissort of problem can be solved in principle by conditional variants of the Expectation-Maximization al gorithm (Baum et al, 1970; Dempster et al, 1977; Meng and Rubin, 1993; Jebara and Pentland, 1999).
+			We use a quasi-Newton method known as L-BFGS(Liu and Nocedal, 1989) that makes use of the gradient of the above function (straightforward to com pute, but omitted for space).
+	
+	
+			To evaluate our model, we conducted experiments using Text REtrieval Conference (TREC) 8?13 QA dataset.8 5.1 Experimental Setup.
+			The TREC dataset contains questions and answer patterns, as well as a pool o

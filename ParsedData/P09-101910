@@ -1,0 +1,8 @@
+ski sum.
+    Nodes of Type &#8220;V&#8221;: The operation performed at nodes of type &#8220;V&#8221; computes the convex hull over the union of the envelopes propagated over the incoming edges.
+    This operation is a &#8220;max&#8221; operation and it is identical to the algorithm described in (Macherey et al., 2008) for phrase lattices.
+    Algorithm 2 contains the pseudo code.
+    The complete algorithm then works as follows: Traversing all nodes in x bottom-up in topological order, we proceed for each node v E V over its incoming hyperedges and combine in each such hyperedge e the envelopes associated with the tail nodes T(e) by computing their sum according to Algorithm 1 (n-operation).
+    For each incoming hyperedge e, the resulting envelope is then expanded by applying the rule re to its constituent line segments.
+    The envelopes associated with different incoming hyperedges of node v are then combined and reduced according to Algorithm 2 (V-operation).
+    By construction, the envelope at the root 

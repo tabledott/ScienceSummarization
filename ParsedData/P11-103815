@@ -1,0 +1,8 @@
+sed on our evaluation dataset (see Section 5.1).
+    The recall for lexical edit distance with T, &lt; 2 is moderately high, but it is unable to detect the correct candidate for about one quarter of words.
+    The combination of the lexical and phonemic strategies with T, &lt; 2 V Tp &lt; 2 is more impressive, but the number of candidates has also soared.
+    Note that increasing the edit distance further in both cases leads to an explosion in the average number of candidates, with serious computational implications for downstream processing.
+    Thankfully, T, &lt; 2 V Tp &lt; 1 leads to an extra increment in recall to 88.8%, with only a slight increase in the average number of candidates.
+    Based on these results, we use T, &lt; 2VTp &lt; 1 as the basis for confusion set generation.
+    Examples of ill-formed words where we are unable to generate the standard lexical form are clippings such as fav &#8220;favourite&#8221; and convo &#8220;conversation&#8221;.
+    In addition to generating the confusion set

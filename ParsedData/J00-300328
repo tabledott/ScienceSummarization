@@ -1,0 +1,7 @@
+xample, the second DA tag in Table 1 would be predicted by a trigram discourse grammar using the fact that the same speaker previously uttered a YES-No-QUESTION, which in turn was preceded by the start-of-conversation.
+    A computationally convenient type of discourse grammar is an n-gram model based on DA tags, as it allows efficient decoding in the HMM framework.
+    We trained standard backoff n-gram models (Katz 1987), using the frequency smoothing approach of Witten and Bell (1991).
+    Models of various orders were compared by their perplexities, i.e., the average number of choices the model predicts for each tag, conditioned on the preceding tags.
+    Table 5 shows perplexities for three types of models: P(U), the DAs alone; P(U, T), the combined DA/speaker ID sequence; and P(UIT), the DAs conditioned on known speaker IDs (appropriate for the Switchboard task).
+    As expected, we see an improvement (decreasing perplexities) for increasing n-gram order.
+    However, the incremental gain of a trigram i

@@ -1,0 +1,9 @@
+ll patterns that extract &#8220;Peru&#8221; and computes the average number of known locations extracted by those patterns.
+    Let&#8217;s assume that the three patterns shown below extract &#8220;Peru&#8221; and that the underlined words are known locations.
+    &#8220;Peru&#8221; would receive a score of (2+3+2)/3 = 2.3.
+    Intuitively, this means that patterns that extract &#8220;Peru&#8221; also extract, on average, 2.3 known location words.
+    Unfortunately, this scoring function has a problem.
+    The average can be heavily skewed by one pattern that extracts a large number of category members.
+    For example, suppose word w is extracted by 10 patterns, 9 which do not extract any category members but the tenth extracts 50 category members.
+    The average number of category members extracted by these patterns will be 5.
+    This is misleading because the only evidence linking word w with the semantic category is a single, high-frequency extraction pattern (which may extract words that belong to othe

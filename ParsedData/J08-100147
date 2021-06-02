@@ -1,0 +1,9 @@
+resentation orderings within a domain.
+    Topics refer to text spans of varying granularity and length.
+    Barzilay and Lee used sentences in their experiments, but clauses or paragraphs would also be possible.
+    Barzilay and Lee (2004) employed their content models to find a high-probability ordering for a document whose sentences had been randomly shuffled.
+    Here, we use content models for the simpler coherence ranking task.
+    Given two text permutations, we estimate their likelihood according to their HMM model and select the text with the highest probability.
+    Because the two candidates contain the same set of sentences, the assumption is that a more probable text corresponds to an ordering that is more typical for the domain of interest.
+    In our experiments, we built two content models, one for the Accidents corpus and one for the Earthquake corpus.
+    Although these models are trained in an unsupervised fashion, a number of parameters related to the model topology (i.e., number of states

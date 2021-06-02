@@ -1,0 +1,6 @@
+ojection defined by equation (2) correspond to a hard assignment variant of this probabilistic formulation when the source clustering is fixed.
+    Combining all four factors results in the joint monolingual and cross-lingual objective function The intuition of this approach is that the clusterings CS and CT are forced to jointly explain the source and target data, treating the word alignments as a form of soft constraints.
+    We approximately optimize (3) with the alternating procedure in Algorithm 1, in which we iteratively maximize LS and LT , keeping the other factors fixed.
+    In this way we can generate cross-lingual clusterings using all the monolingual data while forcing the clusterings to obey the word alignment constraints.
+    We refer to the clusters induced with this method as X-LINGUAL CLUSTERS.
+    In practice we found that each unconstrained monolingual run of the exchange algorithm (lines &#8224; Optimized via the exchange algorithm keeping the cluster of projected words fixed and only clus

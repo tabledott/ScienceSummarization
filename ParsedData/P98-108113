@@ -1,0 +1,8 @@
+benchmark and recall measures which percentage of the tokens tagged X in the benchmark are also tagged X by the tagger.
+    When abstracting away from individual tags, precision and recall are equal and measure how many tokens are tagged correctly; in this case we also use the more generic term accuracy.
+    6In our experiment, a random selection from among the winning tags is made whenever there is a tie.
+    But we have even more information on how well the taggers perform.
+    We not only know whether we should believe what they propose (precision) but also know how often they fail to recognize the correct tag (recall).
+    This information can be used by forcing each tagger also to add to the vote for tags suggested by the opposition, by an amount equal to 1 minus the recall on the opposing tag (Precision-Recall).
+    As it turns out, all voting systems outperform the best single tagger, E.7 Also, the best voting system is the one in which the most specific information is used, Precision-Recall.
+    Howev

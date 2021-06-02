@@ -1,0 +1,9 @@
+features Fi used in the decoder.
+    All the feature weights (As) were trained using our implementation of Minimum Error Rate Training (Och, 2003).
+    The final translation T&#65533; is the T with the highest total score.
+    5Namely, N1N2N3, N1N3N2, N2N1N3, N2N3N1, N3N1N2, and N3N2N1, if the child nodes in the original order are N1, N2, and N3. where r is one of the six reordering patterns for 3-ary nodes.
+    It is observed in pilot experiments that, for a lot of long sentences containing several clauses, only one of the clauses is reordered.
+    That is, our greedy reordering algorithm (c.f. section 4) has a tendency to focus only on a particular clause of a long sentence.
+    The problem was remedied by modifying our decoder such that it no longer translates a sentence at once; instead the new decoder does: Step 1 is done by checking the parse tree if there are any IP or CP nodes7 immediately under the root node.
+    If yes, then all these IPs, CPs, and the remaining segments are treated as clauses.
+    

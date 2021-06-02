@@ -1,0 +1,6 @@
+that returns a value between 0 and 1 inclusive and indicates the degree of incompatibility of f for N Pi and NP; and w1 denotes the relative importance of compatibility w.r.t. feature f. The incompatibility functions and corresponding weights are listed in Table 2.2 In general, weights are chosen to represent linguistic knowledge about coreference.
+    Terms with a weight of oo represent filters that rule out impossible antecedents: Two noun phrases can never corefer when they have incompatible values for that term's feature.
+    In the current version of our system, the NUMBER, PROPER NAME, SEMANTIC CLASS, GENDER, and ANIMACY features operate as coreference filters.
+    Conversely, terms with a weight of &#8212;oo force coreference between two noun phrases with compatible values for that term's feature.
+    The APPOSITIVE and WORDS-SUBSTRING terms operate in this fashion in the current distance metric.
+    Terms with a weight of r &#8212; the clustering radius threshold &#8212; implement a preference that tw

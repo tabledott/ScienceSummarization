@@ -1,0 +1,7 @@
+ any of the extended target) as its subject; we generate a feature arg1_v_wi.
+    For example, for the target iPhone in the tweet &#8220;iPhone works better with the CellBand&#8221;, we will generate the feature &#8220;arg1_v_well&#8221;.
+    Moreover, if any word included in the generated target-dependent features is modified by a negation9, then we will add a prefix &#8220;neg-&#8221; to it in the generated features.
+    For example, for the target iPhone in the tweet &#8220;iPhone does not work better with the CellBand&#8221;, we will generate the features &#8220;arg1_v_neg-well&#8221; and &#8220;neg-work_it_arg1&#8221;.
+    To overcome the sparsity of target-dependent features mentioned above, we design a special binary feature indicating whether or not the tweet contains at least one of the above target-dependent features.
+    Target-dependent features are binary features, each of which corresponds to the presence of the feature in the tweet.
+    If the feature is present, the entry will be 1; otherwise 

@@ -1,0 +1,7 @@
+ding level use the following features: The OOV scores are relative to the most common 100, 200 and 500 words in the lowest grade level (grade 2) 2.
+    For each article, we calculated the percentage of a) all word instances (tokens) and b) all unique words (types) not on these lists, resulting in three token OOV rate features and three type OOV rate features per article.
+    The parse features are generated using the Charniak parser (Charniak, 2000) trained on the standard Wall Street Journal Treebank corpus.
+    We chose to use this standard data set as we do not have any domain-specific treebank data for training a parser.
+    Although clearly there is a difference between news text for adults and news articles intended for children, inspection of some of the resulting parses showed good accuracy.
+    Ideally, the language model scores would be for LMs from domain-specific training data (i.e. more Weekly Reader data.)
+    However, our corpus is limited and preliminary experiments in which the training data 

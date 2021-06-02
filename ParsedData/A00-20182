@@ -1,0 +1,9 @@
+robabilistic generative parsers is how they compute p(r), and it is to that topic we turn next.
+  
+  
+    The model assigns a probability to a parse by a top-down process of considering each constituent c in Ir and for each c first guessing the pre-terminal of c, t(c) (t for &amp;quot;tag&amp;quot;), then the lexical head of c, h(c), and then the expansion of c into further constituents e(c).
+    Thus the probability of a parse is given by the equation where 1(c) is the label of c (e.g., whether it is a noun phrase (np), verb-phrase, etc.) and H (c) is the relevant history of c &#8212; information outside c that our probability model deems important in determining the probability in question.
+    Much of the interesting work is determining what goes into H (c).
+    Whenever it is clear to which constituent we are referring we omit the (c) in, e.g., h(c).
+    In this notation the above equation takes the following form: Next we describe how we assign a probability to the expansion e of a constituent.
+    In Se

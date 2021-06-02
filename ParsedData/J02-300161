@@ -1,0 +1,5 @@
+ve.
+    The number of values possible for the latent cluster variable was set to 256.
+    (Comparable results were found with 64 clusters; the use of deterministic annealing prevents large numbers of clusters from resulting in overfitting.)
+    The soft clustering of nouns thus generated is used as follows: for each example in the frame element&#8211;annotated training data, probabilities for values of the hidden cluster variable were calculated using Bayes&#8217; rule: The clustering was applied only to noun phrase constituents; the distribution P(n  |c) from the clustering is used as a distribution P(h  |c) over noun head words.
+    Using the cluster probabilities, a new estimate of P(r  |c, pt, t) is calculated for cases where pt, the phrase type or syntactic category of the constituent, is NP: &#65533; where j is an index ranging over the frame elements in the training set and their associated features pt, t, h and their semantic roles r. During testing, a smoothed estimate of the head word&#8211;based ro

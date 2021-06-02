@@ -1,0 +1,7 @@
+stop processing the subtree of a constituent whenever the amount of work exceeds that user-specified limit.
+    The subtree is discarded, and the parser will move on to another subtree.
+    This guarantees that parsing will be finished within reasonable limits of time and memory but at a cost of possibly lower accuracy if it causes the best analysis of a constituent to be discarded.
+    As a separate parameter, XLE also lets the user limit the length of medial constituents, i.e., constituents that do not appear at the beginning or the end of a sentence (ignoring punctuation).
+    The rationale behind this heuristic is to limit the weight of constituents in the middle of the sentence but still to allow sentence-final heavy constituents.
+    This discards constituents in a somewhat more principled way as it tries to capture the psycholinguistic tendency to avoid deep center-embedding.
+    When limiting the length of medial constituents, cubictime parsing is possible for sentences up to that length, even with a 

@@ -1,0 +1,9 @@
+put was evaluated.
+			Grammar Extraction Our grammar usedrules extracted directly from our compression cor pus (the training partition, 480 sentences) and a bilingual corpus (see Table 2 for examples).
+			Theformer corpus was word-aligned using the Berke ley aligner (Liang et al, 2006) initialised with a lexicon of word identity mappings, and parsed with Bikel?s (2002) parser.
+			From this we extracted grammar rules following the technique described in Cohn and Lapata (2007).
+			For the pivot grammarwe use the French-English Europarl v2 which con tains approximately 688K sentences.
+			Again, the corpus was aligned using the Berkeley aligner and the English side was parsed with Bikel?s parser.
+			Weextracted tree-to-string rules using our implementation of the GHKM method.
+			To ameliorate the effects of poor alignments on the grammar, we re moved singleton rules before pivoting.
+			In addition to the two grammars described, wescanned the source trees in the compression cor pus and included STSG rules to copy 

@@ -1,0 +1,9 @@
+oring graph.
+    This type of model has been used by, among others, Eisner (1996), McDonald et al. (2005a), and Nakagawa (2007).
+    In transition-based parsing, we instead learn a model for scoring transitions from one parser state to the next, conditioned on the parse history, and perform parsing by greedily taking the highest-scoring transition out of every parser state until we have derived a complete dependency graph.
+    This approach is represented, for example, by the models of Yamada and Matsumoto (2003), Nivre et al. (2004), and Attardi (2006).
+    Theoretically, these approaches are very different.
+    The graph-based models are globally trained and use exact inference algorithms, but define features over a limited history of parsing decisions.
+    The transitionbased models are essentially the opposite.
+    They use local training and greedy inference algorithms, but define features over a rich history of parsing decisions.
+    This is a fundamental trade-off that is hard to overcome by tractable 

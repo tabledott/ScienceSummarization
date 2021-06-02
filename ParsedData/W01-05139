@@ -1,0 +1,11 @@
+ting the two most probable substrings in order to form the larger unit.
+    Since it can be computed rapidly with low memory costs, we use this approximation.
+    Two additional issues need addressing before evaluation.
+    The first regards document sourcing.
+    If an n-gram appears in multiple sources (eg., Congressional Record versus Associated Press), its likelihood of accuracy should increase.
+    This is particularly true if we are looking for MWU headwords for a general versus specialized dictionary.
+    Phrases that appear in one source may in fact be general MWUs, but frequently, they are text-specific units.
+    Hence, precision gained by excluding single-source n-grams may be worth losses in recall.
+    We will measure this trade-off.
+    Second, evaluating with punctuation as words and applying no filtering mechanism may unfairly bias against some algorithms.
+    Pre- or post-processing of n-grams with a linguistic filter has shown to improve some induction algorithms&#8217; performance (Daille, 

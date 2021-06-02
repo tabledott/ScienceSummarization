@@ -1,0 +1,10 @@
+characters.
+    For the distributional similarity information, we had to first train a distributional similarity model.
+    We trained the model described in (Clark, 2000), with code downloaded from his website, on several hundred million words from the British national corpus, and the English Gigaword corpus.
+    The model we trained had 200 clusters, and we used it to assign each word in the training and test data to one of the clusters.
+    For the named entity features, we used a fairly standard feature set, similar to those described in (Finkel et al., 2005).
+    For parse features, we used the exact same features as described in (Finkel and Manning, 2008).
+    When computing those features, we removed all of the named entity information from the rules, so that these features were just over the parse information and not at all over the named entity information.
+    Lastly, we have the joint features.
+    We included as features each augmented rule and each augmented label.
+    This allowed the model to l

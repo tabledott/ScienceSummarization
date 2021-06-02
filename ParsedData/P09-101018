@@ -1,0 +1,7 @@
+hallenging and engaging enough to warrant posting textual tutorials.8 A sample puzzle and tutorial are shown in Figure 3.
+    The environment is defined by the state of the grid.
+    The only command is clear, which takes a parameter specifying the orientation (row or column) and grid location of the line segment to be removed.
+    The challenge in this domain is to segment the text into the phrases describing each action, and then correctly identify the line segments from references such as &#8220;the bottom four from the second column from the left.&#8221; For this domain, we use two sets of binary features on state-action pairs (s, a).
+    First, for each vocabulary word w, we define a feature that is one if w is the last word of a&#8217;s consumed words W'.
+    These features help identify the proper text segmentation points between actions.
+    Second, we introduce features for pairs of vocabulary word w and attributes of action a, e.g., the line orientation and grid locations of the squares that a would

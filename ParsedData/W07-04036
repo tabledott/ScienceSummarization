@@ -1,0 +1,8 @@
+icate L(E, F, C) that determines if a bag of cepts C can be bilingually permuted to create the sentence pair (E, F), the probability of a sentence pair is: If left unconstrained, (1) will consider every phrasal segmentation of E and F, and every alignment between those phrases.
+    Later, a distortion model based on absolute token positions is added to (1).
+    The JPTM faces several problems when scaling up to large training sets: all co-occurring phrases observed in the bitext.
+    This is far too large to fit in main memory, and can be unwieldly for storage on disk.
+    Marcu and Wong (2002) address point 2 with a lexicon constraint; monolingual phrases that are above a length threshold or below a frequency threshold are excluded from the lexicon.
+    Point 3 is handled by hill-climbing to a likely phrasal alignment and sampling around it.
+    However, point 1 remains unaddressed, which prevents the model from scaling to large data sets.
+    Birch et al. (2006) handle point 1 directly by reducing the size 

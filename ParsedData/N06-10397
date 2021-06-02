@@ -1,0 +1,8 @@
+act multiple relations by choosing entity types.
+    We assume that we can find such relations by trying all possible combinations from a set of entities we have chosen in advance; some combinations might represent a hurricane and government relation, and others might represent a place and its casualties.
+    To ensure that an article can have several different relations, we let each article belong to several different clusters.
+    In a real-world situation, only using basic patterns sometimes gives undesired results.
+    For example, &#8220;(President) Bush flew to Texas&#8221; and &#8220;(Hurricane) Katrina flew to New Orleans&#8221; both have a basic pattern &#8220;flew to&#8221; in common, so &#8220;Bush&#8221; and &#8220;Katrina&#8221; would be put into the same column.
+    But we want to separate them in different tables.
+    To alleviate this problem, we put an additional restriction on clustering.
+    We use a bag-of-words approach to discriminate two articles: if the word-based similarity between tw

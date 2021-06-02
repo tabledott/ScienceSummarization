@@ -1,0 +1,7 @@
+, we first compare the different models with their performance on the validation set.
+    Standard measures of accuracy are shown in table 1.8 The largest accuracy difference is between the parser with the discriminative probability model (DSSN-Freq&gt;5) and those with the generative probability model, despite the larger vocabulary of the former.
+    This demonstrates the difficulty of estimating the parameters of a discriminative probability model.
+    There is also a clear effect of vocabulary size, but there is a slightly larger effect of training method.
+    When tested in the same way as they were trained (for reranking), the parsers which were trained with a discriminative criteria achieve a 7% and 8% reduction in error rate over their respective parsers with the same generative probability model.
+    When tested alone, these DGSSN parsers perform only slightly better than their respective GSSN parsers.
+    Initial experiments on giving these networks exposure to parses outside the top 20 parses of the

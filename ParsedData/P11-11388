@@ -1,0 +1,12 @@
+ch can be modeled by augmenting 0 on per-problem basis.
+  
+  
+    In this section, we present our global D2W system, which solves the optimization problem in Eq.
+    3.
+    We refer to the system as GLOW, for Global Wikification.
+    We use GLOW as a test bed for evaluating local and global approaches for D2W.
+    GLOW combines a powerful local model &#966; with an novel method for choosing an accurate disambiguation context V, which as we show in our experiments allows it to outperform the previous state of the art.
+    We represent the functions &#966; and &#968; as weighted sums of features.
+    Specifically, we set: where each feature &#966;i(m, t) captures some aspect of the relatedness between the mention m and the Wikipedia title t. Feature functions &#968;i(t, t&#8242;) are defined analogously.
+    We detail the specific feature functions utilized in GLOW in following sections.
+    The coefficients wi are learned using a Support Vector Machine over bootstrapped training data from Wikipedia, as describ

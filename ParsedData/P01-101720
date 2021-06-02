@@ -1,0 +1,6 @@
+odels depends critically on which of these explanations is correct: if (1) we should collect more data, if (2) we should just live with the tandem grammar-trigram models, and if (3) we should create better parsers.
+    Based upon a few observations on sentences from the development corpus for which the trigram model gave higher probabilities we hypothesized that reason (3), bungled parses, is primary.
+    To test this we performed the following experiment.
+    We divide the sentences from the test corpus into two groups, ones for which the trigram model performs better, and the ones for which the grammar model does better.
+    We then collect labeled precision and recall statistics (the standard parsing performance measures) separately for each group.
+    If our hypothesis is correct we expect the &#8220;grammar higher&#8221; group to have more accurate parses than the trigram-higher group as the poor parse would cause poor grammar perplexity for the sentence, which would then be worse than the trigram perple

@@ -1,0 +1,9 @@
+ a simple explanation or description of the relation between A and B.
+    For example, suppose the word pair ostrich:bird maps to the row vector r. It would be pleasing to look in r and find that the largest element corresponds to the pattern &#8220;is the largest&#8221; (i.e., &#8220;ostrich is the largest bird&#8221;).
+    Unfortunately, inspection of r reveals no such convenient patterns.
+    We hypothesize that the semantic content of a vector is distributed over the whole vector; it is not concentrated in a few elements.
+    To test this hypothesis, we modified step 10 of LRA.
+    Instead of projecting the 8,000 dimensional vectors into the 300 dimensional space UkEk, we use the matrix UkEkVTk .
+    This matrix yields the same cosines as UkEk, but preserves the original 8,000 dimensions, making it easier to interpret the row vectors.
+    For each row vector in UkEkVTk , we select the N largest values and set all other values to zero.
+    The idea here is that we will only pay attention to the N most impo

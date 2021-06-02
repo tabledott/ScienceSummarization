@@ -1,0 +1,7 @@
+erivatives, we walk through each rule, and span/split, and add the outside log-score of the parent, the inside log-score(s) of the child(ren), and the log-score for that rule and span/split.
+    Zs is subtracted from this value to get the normalized log probability of that rule in that position.
+    Using the probabilities of each rule application, over each span/split, we can compute the expected feature values (the second term in Equation 4), by multiplying this probability by the value of the feature corresponding to the weight for which we are computing the partial derivative.
+    The process is analogous to the computation of partial derivatives in linear chain CRFs.
+    The complexity of the algorithm for a particular sentence is O(n3), where n is the length of the sentence.
+    Unlike (Taskar et al., 2004), our algorithm has the advantage of being easily parallelized (see footnote 7 in their paper).
+    Because the computation of both the log likelihood and the partial derivatives involves summing over

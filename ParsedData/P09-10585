@@ -1,0 +1,10 @@
+with dashed boxes), and the transitions from T to B nodes are also forbidden.
+    These nodes and transitions are ignored during the lattice construction processing.
+    In the training phase, since several paths (marked in bold) can correspond to the correct analysis in the annotated corpus, we need to select one correct path yt as a reference for training.2 The next section describes our strategies for dealing with this issue.
+    With this search space representation, we can consistently handle unknown words with character-level nodes.
+    In other words, we use word-level nodes to identify known words and character-level nodes to identify unknown words.
+    In the testing phase, we can use a dynamic programming algorithm to search for the most likely path out of all candidate paths.
+  
+  
+    In this section, we describe our strategies for selecting the correct path yt in the training phase.
+    As shown in Figure 1, the paths marked in bold can represent the correct annotation of the segmented sentence.

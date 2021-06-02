@@ -1,0 +1,8 @@
+nal distributions.
+    Phrasal SCFG models are subject to a degenerate maximum likelihood solution in which all probability mass is placed on long, or whole sentence, phrase translations (DeNero et al., 2006).
+    Therefore, careful consideration must be given when specifying the P1 distribution on terminals in order to counter this behavior.
+    To construct a prior over string pairs, first we define the probability of a monolingual string (s): P0X (s) = PPoisson(|s|; 1) X where the PPoisson(k; 1) is the probability under a Poisson distribution of length k given an expected length of 1, while VX is the vocabulary size of language X.
+    This distribution has a strong bias towards short strings.
+    In particular note that generally a string of length k will be less probable than two of length k2, a property very useful for finding &#8216;minimal&#8217; translation units.
+    This contrasts with a geometric distribution in which a string of length k will be more probable than its segmentations.
+    We define 

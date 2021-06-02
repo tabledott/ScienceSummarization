@@ -1,0 +1,10 @@
+en visits a node R, searches in its children and finds the node set D which are in the same phrase with R according Algorithm 1 Pseudo-Code for constructing the phrase dependency tree INPUT: OUTPUT: phrase dependency tree T = (V , E ) where to the shallow parsing result.
+    Compacts D and R into a single node.
+    Then traverses all the remaining children in the same way.
+    The algorithm is shown in Alg.
+    1.
+    The output of the algorithm is still a tree, for we only cut edges which are compacted into a phrase, the connectivity is keeped.
+    Note that there will be inevitable disagrees between shallow parser and lexical dependency parser, the algorithm implies that we simply follow the result of the latter one: the phrases from shallow parser will not appear in the final result if they cannot be found in the procedure.
+    Consider the following example: Fig.2 shows the procedure of phrase dependency parsing.
+    Fig.2(a) is the result of the lexical dependency parser.
+    Shallow parsers result is sh

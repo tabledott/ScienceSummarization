@@ -1,0 +1,10 @@
+ces.
+    For example, in our model, E and F are symmetrical.
+    Furthermore, we model P(l|e, f') and P (l|e, f'') as unrelated values, whereas the IBM model would associate them in the translation probabilities t(f'|e) and t(f''|e) through the constraint E f t(f|e) = 1.
+    Unfortunately, by conditionalizing on both words, we eliminate a large inductive bias.
+    This prevents us from starting with uniform probabilities and estimating parameters with EM.
+    This is why we must supply the model with a noisy initial alignment, while IBM can start from an unaligned corpus.
+    In the IBM framework, when one needs the model to take new information into account, one must create an extended model which can base its parameters on the previous model.
+    In our model, new information can be incorporated modularly by adding features.
+    This makes our work similar to maximum entropy-based machine translation methods, which also employ modular features.
+    Maximum entropy can be used to improve IBM-style translatio

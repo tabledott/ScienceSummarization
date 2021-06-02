@@ -1,0 +1,10 @@
+bed by a deterministic finite state machine.
+			?(bk?11 ) is the state arrived at by bk?11 ; we will use ?k?1 to denote ?(bk?11 ).We will investigate phrase reordering by restrict ing the maximum allowable jump to 1 phrase and to 2 phrases; we will refer to these reordering models as MJ-1 and MJ-2.
+			In the first case, bk ? {0,+1,?1} while in the second case, bk ? {0,+1,?1,+2,?2}.
+			2.2 Reordering WFST for MJ-1.
+			We first present the Finite State Machine of the phrase reordering process (Fig 3) which has twoequivalence classes (FSM states) for any given his tory bk?11 ; ?(b k?1 1 ) ? {1, 2}.
+			A jump of +1 has to be followed by a jump of ?1, and 1 is the start and end state; this ensures ?K k=1 bk = 0.
+			1 b=+1 b=?1 b=0 2 Figure 3: Phrase reordering process for MJ-1.
+			Under this restriction, the probability of the jump bk (Eqn 5) can be simplified as P (bk|xk, uk, ?(b k?1 1 )) = (6)?
+			?1(xk, uk) bk = +1, ?k?1 = 1 1 ? ?1(xk, uk) bk = 0, ?k?1 = 1 1 bk = ?1, ?k?1 = 2.
+			There is a single parameter jum

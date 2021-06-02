@@ -1,0 +1,9 @@
+meter matrices W (AB) that appear in it.
+    The main difference between backpropagation in standard RNNs and SURNNs is that the derivatives at each node only add to the overall derivative of the specific matrix at that node.
+    For more details on backpropagation through RNNs, see Socher et al. (2010) The objective function is not differentiable due to the hinge loss.
+    Therefore, we generalize gradient ascent via the subgradient method (Ratliff et al., 2007) which computes a gradient-like direction.
+    Let &#952; = (X, W(&#183;&#183;), v(&#183;&#183;)) E RM be a vector of all M model parameters, where we denote W(&#183;&#183;) as the set of matrices that appear in the training set.
+    The subgradient of Eq.
+    3 becomes: where &#710;ymax is the tree with the highest score.
+    To minimize the objective, we use the diagonal variant of AdaGrad (Duchi et al., 2011) with minibatches.
+    For our parameter updates, we first define gT E RM&#215;1 to be the subgradient at time step &#964; and Gt = Et T=1 gTg

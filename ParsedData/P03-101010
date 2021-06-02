@@ -1,0 +1,9 @@
+
+    Let JZ and EZ be the words of Japanese and English sentences for i-th alignment.
+    The similarity6 between JZ and EZ is: where a one-to-one correspondence between Japanese and English words.
+    JZ and EZ are obtained as follows.
+    We use ChaSen to morphologically analyze the Japanese sentences and extract content words, which consists of JZ.
+    We use Brill&#8217;s tagger (Brill, 1992) to POS-tag the English sentences, extract content words, and use WordNet&#8217;s library7 to obtain lemmas of the words, which consists of EZ.
+    We use simple heuristics to obtain JZ x EZ, i.e., a one-to-one correspondence between the words in JZ and EZ, by looking up JapaneseEnglish and English-Japanese dictionaries made up by combining entries in the EDR Japanese-English bilingual dictionary and the EDR English-Japanese bilingual dictionary.
+    Each of the constructed dictionaries has over 300,000 entries.
+    We evaluated the implemented program against a corpus consisting of manually aligned Japanese and Engli

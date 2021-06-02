@@ -1,0 +1,10 @@
+tions.
+    The initial distribution was not the uniform distribution over binary trees Pbin(B).
+    That was undesirable as an initial point because, combinatorily, almost all trees are relatively balanced.
+    On the other hand, in language, we want to allow unbalanced structures to have a reasonable chance to be discovered.
+    Therefore, consider the following uniformsplitting process of generating binary trees over k terminals: choose a split point at random, then recursively build trees by this process on each side of the split.
+    This process gives a distribution Psplit which puts relatively more weight on unbalanced trees, but only in a very general, non language-specific way.
+    This distribution was not used in the model itself, however.
+    It seemed to bias too strongly against balanced structures, and led to entirely linear-branching structures.
+    The smoothing used was straightforward.
+    For each yield &#945; or context x, we added 10 counts of that item as a constituent and 50 as a distit

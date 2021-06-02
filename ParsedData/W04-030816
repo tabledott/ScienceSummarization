@@ -1,0 +1,6 @@
+e stack, and this is the function of the Reduce transition.
+    Thus, we can say that the action performed by the Right-Reduce transition in the standard bottom-up algorithm is performed by a Right-Arc transition in combination with a subsequent Reduce transition in the arc-eager algorithm.
+    And since the RightArc and the Reduce can be separated by an arbitrary number of transitions, this permits the incremental parsing of arbitrary long rightdependent chains.
+    Defining incrementality is less straightforward for the arc-eager algorithm than for the standard bottom-up algorithm.
+    Simply considering the size of the stack will not do anymore, since the stack may now contain sequences of tokens that form connected components of the dependency graph.
+    On the other hand, since it is no longer necessary to shift both tokens to be combined onto the stack, and since any tokens that are popped off the stack are connected to some token on the stack, we can require that the graph (5, AS) should be connected a

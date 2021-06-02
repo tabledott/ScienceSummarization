@@ -1,0 +1,10 @@
+  For this task, we use only the BLEU and NIST scores.
+    Both scores are computed caseinsensitive with respect to four reference translations using the mteval-v11b tool1.
+    For the NIST task, we use the BLEU score as primary criterion which is optimized on the NIST 2002 evaluation set using the Downhill Simplex algorithm (Press et al., 2002).
+    Note that only the eight or nine model scaling factors of Equation 2 are optimized using the Downhill Simplex algorithm.
+    The feature weights of the reordering model are trained using the GIS algorithm as described in Section 4.4.
+    We use a state-of-the-art baseline system which would have obtained a good rank in the last NIST evaluation (NIST, 2005).
+    The translation results for the NIST task are presented in Table 8.
+    We observe consistent improvements of the BLEU score on all evaluation sets.
+    The overall improvement due to reordering ranges from 1.2% to 2.0% absolute.
+    The contribution of the maximum-entropy based reordering model to this im

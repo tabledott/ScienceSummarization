@@ -1,0 +1,10 @@
+
+    We thus create a classification problem: given two articles, is article 1 more readable than article 2?
+    For each pair of texts whose readability ratings on the 1 to 5 scale differed by at least 0.5, we form one data point for the ranking problem, resulting in 243 examples.
+    The predictors are the differences between the two articles&#8217; features.
+    For classification, we used WEKA&#8217;s linear support vector implementation (SMO) and performance was evaluated using 10-fold cross-validation.
+    The classification results are shown in Table 7.
+    When all features are used for prediction, the accuracy is high, 88.88%.
+    The length of the article can serve as a baseline feature&#8212;longer articles are ranked lower by the assessors, so this feature can be taken as baseline indicator of readability.
+    Only six features used by themselves lead to accuracies higher than the length baseline.
+    These results indicate that the most important individual factors in the readability ranking task

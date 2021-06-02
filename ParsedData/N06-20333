@@ -1,0 +1,9 @@
+ructure indicates that an edge should be created, the corresponding weights are simply added.
+    As long as at least one of the m initial structures is a well-formed dependency structure, the directed graph created this way will be connected.
+    Once this graph is created, we reparse the sentence using a dependency parsing algorithm such as, for example, one of the algorithms described by McDonald et al. (2005).
+    Finding the optimal dependency structure given the set of weighted dependencies is simply a matter of finding the maximum spanning tree (MST) for the directed weighted graph, which can be done using the Chu-Liu/Edmonds directed MST algorithm (Chu &amp; Liu, 1965; Edmonds, 1967).
+    The maximum spanning tree maximizes the votes for dependencies given the constraint that the resulting structure must be a tree.
+    If projectivity (no crossing branches) is desired, Eisner&#8217;s (1996) dynamic programming algorithm (similar to CYK) for dependency parsing can be used instead.
+  
+  
+    In constitu

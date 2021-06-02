@@ -1,0 +1,9 @@
+quently mentioned in large corpora.
+    Conversely, relations mentioned once or twice are not likely to be important.
+    Our basic idea is as follows: We show an example in Figure 1.
+    First, we find the pair of ORGANIZATIONs (ORG) A and B, and the pair of ORGANIZATIONs (ORG) C and D, after we run the named entity tagger on our newspaper corpus.
+    We collect all instances of the pair A and B occurring within a certain distance of one another.
+    Then, we accumulate the context words intervening between A and B, such as &#8220;be offer to buy&#8221;, &#8220;be negotiate to acquire&#8221;.3 In same way, we also accumulate context words intervening between C and D. If the set of contexts of A and B and those of C and D are similar, these two pairs are placed into the same cluster.
+    A &#8211; B and C &#8211; D would be in the same relation, in this case, merger and acquisition (M&amp;A).
+    That is, we could discover the relation between these ORGANIZATIONs.
+    Our proposed method is fully unsupervised

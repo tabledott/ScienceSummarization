@@ -1,0 +1,9 @@
+Person &#8211; we assign person attributes only to pronouns.
+    However, we do not enforce this constraint when linking two pronouns if one appears within quotes.
+    This is a simple heuristic for speaker detection, e.g., I and she point to the same person in &#8220;[I] voted my conscience,&#8221; [she] said.
+    Animacy &#8211; we set animacy attributes using: (a) a static list for pronouns; (b) NER labels, e.g., PERSON is animate whereas LOCATION is not; and (c) a dictionary boostrapped from the web (Ji and Lin, 2009).
+    NER label &#8211; from the Stanford NER.
+    If we cannot detect a value, we set attributes to unknown and treat them as wildcards, i.e., they can match any other value.
+    This final model raises the pairwise recall of our system almost 22 percentage points, with only an 8 point drop in pairwise precision.
+    Table 2 shows that similar behavior is measured for all other metrics.
+    After all passes have run, we take the transitive closure of the generated clusters as the system outp

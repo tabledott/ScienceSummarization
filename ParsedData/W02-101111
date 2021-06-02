@@ -1,0 +1,8 @@
+ee standard algorithms: Naive Bayes classification, maximum entropy classification, and support vector machines.
+    The philosophies behind these three algorithms are quite different, but each has been shown to be effective in previous text categorization studies.
+    To implement these machine learning algorithms on our document data, we used the following standard bag-of-features framework.
+    Let {f1, ... , fmj be a predefined set of m features that can appear in a document; examples include the word &#8220;still&#8221; or the bigram &#8220;really stinks&#8221;.
+    Let ni(d) be the number of times fi occurs in document d. Then, each document d is represented by the document vector d':= (n1(d), n2(d), ... , nm(d)).
+    One approach to text classification is to assign to a given document d the class c* = arg maxc P(c  |d).
+    We derive the Naive Bayes (NB) classifier by first observing that by Bayes&#8217; rule, where P(d) plays no role in selecting c*.
+    To estimate the term P(d  |c), Naive Bayes deco

@@ -1,0 +1,6 @@
+m likelihood estimation framework, we start with a parameterized model family p(y|x; &#952;), and then find the best model parameter &#952;* that maximizes the expected log likelihood of the data: Since we do not know the distribution p(x, y), we maximize the empirical log likelihood instead: Note that since we use the empirical distribution p(x, y) to approximate p(x, y), the estimated &#952;* is dependent on p(x, y).
+    In general, as long as we have sufficient labeled data, this approximation is fine because the unlabeled instances we want to classify are from the same p(x, y).
+    Let us now turn to the case of domain adaptation where the unlabeled instances we want to classify are from a different distribution than the labeled instances.
+    Let ps(x, y) and pt(x, y) be the true underlying distributions for the source and the target domains, respectively.
+    Our general idea is to use ps(x, y) to approximate pt(x, y) so that we can exploit the labeled examples in the source domain.
+    If we factor p(x

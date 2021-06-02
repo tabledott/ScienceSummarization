@@ -1,0 +1,8 @@
+, even when v is small.
+			Note that because the counts are passed through f , the updated values for ??
+			and ??
+			in (4) are in general not normalized; this is because the variational free energy is only an upper bound on the negative log likelihood (Beal, 2003).We found that in general VB performed much bet ter than GS.
+			Computationally it is very similar to EM, and each iteration takes essentially the same time as an EM iteration.
+			Again, we experimented with annealing in the hope of speeding convergence,but could not find an annealing schedule that significantly lowered the variational free energy (the quan tity that VB optimizes).
+			While we had hoped that theBayesian prior would bias VB toward a common solution, we found the same sensitivity to initial condi tions as we found with EM, so just as for EM, we ran the estimator for 1,000 iterations with 10 different random initializations for each combination of prior parameters.
+			Table 1 presents the results of VB runs with several different valu

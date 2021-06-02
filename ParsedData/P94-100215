@@ -1,0 +1,9 @@
+g at a peak will have a score of zero since neither of its neighbors is higher than it.)
+    These new scores, called depth scores, corresponding to how sharp a change occurs on both sides of the tokensequence gap, are then sorted.
+    Segment boundaries are assigned to the token-sequence gaps with the largest corresponding scores, adjusted as necessary to correspond to true paragraph breaks.
+    A proviso check is done that prevents assignment of very close adjacent segment boundaries.
+    Currently there must be at least three intervening token-sequences between boundaries.
+    This helps control for the fact that many texts have spurious header information and single-sentence paragraphs.
+    The algorithm must determine how many segments to assigned to a document, since every paragraph is a potential segment boundary.
+    Any attempt to make an absolute cutoff is problematic since there would need to be some correspondence to the document style and length.
+    A cutoff based on a particular valley depth is

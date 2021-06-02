@@ -1,0 +1,8 @@
+grammars.
+    The present method has several compelling advantages.
+    Unlike reranking methods, which consider only a pre-pruned selection of &#8220;good&#8221; parses, our method is an end-to-end discriminative model over the full space of parses.
+    This distinction can be very significant, as the set of n-best parses often does not contain the true parse.
+    For example, in the work of Collins (2000), 41% of the correct parses were not in the candidate pool of &#8212;30-best parses.
+    Unlike previous dynamic programming approaches, which were based on maximum entropy estimation, our method incorporates an articulated loss function which penalizes larger tree discrepancies more severely than smaller ones.1 Moreover, like perceptron-based learning, it requires only the calculation of Viterbi trees, rather than expectations over all trees (for example using the inside-outside algorithm).
+    In practice, it converges in many fewer iterations than CRF-like approaches.
+    For example, while our approach 

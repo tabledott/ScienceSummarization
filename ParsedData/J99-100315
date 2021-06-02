@@ -1,0 +1,8 @@
+s candidate points of correspondence within the search rectangle that satisfy the supplied matching predicate, as explained in Section 4.2.
+    In the recognition phase, SIMR invokes the chain recognition heuristic to select the most likely chain of true points of correspondence (TPCs) among the generated points.
+    The most likely chain of TPCs is the set of points whose geometric arrangement most resembles the typical arrangement of TPCs.
+    The parameters of the chain recognition heuristic are optimized on a small training bitext.
+    If no suitable chains are found, the search rectangle is proportionally expanded by the minimum possible amount and the generation-recognition cycle is repeated.
+    The rectangle keeps expanding until at least one acceptable chain is found.
+    If more than one acceptable chain is found in the same cycle, SIMR accepts the chain whose points are least dispersed around its least-squares line.
+    Each time SIMR accepts a chain, it moves the search rectangle to another region

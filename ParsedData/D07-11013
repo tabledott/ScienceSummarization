@@ -1,0 +1,7 @@
+head token, 957 lh m ccch mi mo Figure 1: A factor in the higher-order parsing model.
+			m ? [1 . . .
+			n] is the index of the modifier token, and l ? [1 . . .
+			L] is the label of the dependency.
+			The value h = 0 is used for dependencies where the head is a special root-symbol of the sentence.
+			We denote by T (x) the set of all possible dependency structures for a sentence x. In this paper, we restrict to projective dependency trees.
+			The dependency tree computed by the parser for a given sentence is: y?(x) = arg max y?T (x) ? f?y score(w,x, f) The parsing model represents a structure y as a set offactors, f ? y, and scores each factor using param eters w. In a first-order model a factor corresponds to a single labeled dependency, i.e. f = ?h, m, l?.The features of the model are defined through a feature function ?1(x, h, m) which maps a sentence to gether with an unlabeled dependency to a feature vector in Rd1 . The parameters of the model are acollection of vectors wl1 ? Rd1 , one for each pos sibl

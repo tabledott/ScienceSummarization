@@ -1,0 +1,11 @@
+ dependency tree for Single-best MIRA training and testing.
+			based on edge factorization as described in Section 3.2.
+			We use the Chu-Liu-Edmonds algorithm to find the best tree for the test data.
+			4.1 Results.
+			Results are shown in Table 1.
+			There are two mainmetrics.
+			The first and most widely recognized is Ac curacy, which measures the number of words that correctly identified their parent in the tree.
+			Completemeasures the number of sentences in which the re sulting tree was completely correct.Clearly, there is an advantage in using the ChuLiu-Edmonds algorithm for Czech dependency pars 528 Czech-A Czech-B Accuracy Complete Accuracy CompleteCOLL1999 82.8 - - N&amp;N2005 80.0 31.8 - McD2005 83.3 31.3 74.8 0.0 Single-best MIRA 84.1 32.2 81.0 14.9 Factored MIRA 84.4 32.3 81.5 14.3 Table 1: Dependency parsing results for Czech.
+			Czech-B is the subset of Czech-A containing only sentences with at least one non-projective dependency.
+			ing.
+			Even though less than 2% of all dependenciesare non-

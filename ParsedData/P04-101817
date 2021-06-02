@@ -1,0 +1,10 @@
+using the official MUC score (Vilain et al., 1995) and ECM-F.
+    The MUC score counts the common links between the reference and the system output.
+  
+  
+    The official performance metric for the ACE task is ACE-value.
+    ACE-value is computed by first calculating the weighted cost of entity insertions, deletions and substitutions; The cost is then normalized against the cost of a nominal coreference system which outputs no entities; The ACE-value is obtained by subtracting the normalized cost from .
+    Weights are designed to emphasize NAME entities, while PRONOUN entities (i.e., an entity consisting of only pronominal mentions) carry very low weights.
+    A perfect coreference system will get a ACE-value while a system outputs no entities will get a ACE-value.
+    Thus, the ACE-value can be interpreted as percentage of value a system has, relative to the perfect system.
+    Since the ACE-value is an entity-level metric and is weighted heavily toward NAME entities, we also measure our system&#8217;s per

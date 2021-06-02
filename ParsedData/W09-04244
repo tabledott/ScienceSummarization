@@ -1,0 +1,6 @@
+lel and distributed decoding, and bloom filter language models.
+    Below we give a short description about the main functions implemented in our Joshua toolkit.
+    Rather than inducing a grammar from the full parallel training data, we made use of a method proposed by Kishore Papineni (personal communication) to select the subset of the training data consisting of sentences useful for inducing a grammar to translate a particular test set.
+    This method works as follows: for the development and test sets that will be translated, every n-gram (up to length 10) is gathered into a map W and associated with an initial count of zero.
+    Proceeding in order through the training data, for each sentence pair whose source-to-target length ratio is within one standard deviation of the average, if any n-gram found in the source sentence is also found in W with a count of less than k, the sentence is selected.
+    When a sentence is selected, the count of every n-gram in W that is found in the source sentence is incr

@@ -1,0 +1,11 @@
+ example of detecting conjunctive structures.
+    In a long Japanese sentence two or more CSs often exist, overlapping with each other.
+    In such cases, we have to adjust their relations in a sentence after their scopes have been detected.
+    This adjustment is done by checking relations in all pairs of CSs and merging all the relations.
+    Through this adjustment process, CSs consisting of three or more conjuncts are detected.
+    Furthermore, CSs with incorrect relations, if they exist, are found, and retrials of detecting their scopes are done.
+    As a result of this adjustment process, we get a reduced sentence form.
+    The details of these processes will be given in the following section.
+    The scope of a CS is represented by a three-tuple: {position of SB, position of KB, position of EB}.
+    Let us suppose that two CSs exist in a sentence; the prior one, X, has a scope represented by {xl, x2, x3}, and the posterior one, Y, has a scope represented by {yl, y2, y3} (see Figure 9).
+    When two CSs

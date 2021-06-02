@@ -1,0 +1,10 @@
+    The search strategy we use is a variant of the stack algorithm for sequential decoding (Anderson and Mohan 1984).
+    As new nodes are generated, an ordered list is maintained of the best paths generated so far.
+    Only the best path is extended.
+    The metric used to evaluate a path is the number of bits required for the segmentation sequence it represents, when compressed by the PPM model.
+    It is necessary to delete paths from the list in order to make room for newly generated ones.
+    We remove all paths that were more than m nodes shorter than the best path so far, where m is the order of the PPM model (5 in our experiments).
+    We reasoned that it is extremely unlikely&#8212;at least for natural language sequences&#8212;that such a path would ever grow to outperform the current best path, because it already lags behind in code length despite the fact that m further letters must be encoded.
+  
+  
+    Before describing experiments to assess the success of the new word segmentation method, we fir

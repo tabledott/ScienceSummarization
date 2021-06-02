@@ -1,0 +1,9 @@
+essage is a probability distribution over values v of V , normalized by a scaling constant n. Alternatively, messages may be left as unnormalized distributions, choosing n =&#65533; 1 only as needed to prevent over- or underflow.
+    Messages are initialized to uniform distributions.
+    Whenever we wish, we may compute the beliefs at V and F: These beliefs do not truly characterize the expected behavior of Gibbs sampling (&#167;4.1), since the products in (5)&#8211;(6) make conditional independence assumptions that are valid only if the factor graph is acyclic.
+    Furthermore, on cyclic (&#8220;loopy&#8221;) graphs, BP might only converge to a local optimum (Weiss and Freedman, 2001), or it might not converge at all.
+    Still, BP often leads to good, fast approximations.
+  
+  
+    One iteration of standard BP simply updates all the messages as in equations (3)&#8211;(4): one message per edge of the factor graph.
+    Therefore, adding new factors to the model increases the runtime per iteration additively, 

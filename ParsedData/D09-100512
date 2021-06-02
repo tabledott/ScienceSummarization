@@ -1,0 +1,10 @@
+)(s/Z) gives their covariance.
+    Example 1: r(d) is the length of the translation corresponding to derivation d (arranged by setting re to the number of target-side terminal words in the SCFG rule associated with e).
+    Then r/Z is the expected hypothesis length.
+    Example 2: r(d) evaluates the loss of d compared to a reference translation, using some additively decomposable loss function.
+    Then r/Z is the risk (expected loss), which is useful in minimum-risk training.
+    Example 3: r(d) is the number of times that a certain feature fires on d. Then r/Z is the expected feature count, which is useful in maximum-likelihood training.
+    We will generalize later in Section 4 to allow r(d) to be a vector of features.
+    Example 4: Suppose r(d) and s(d) are identical and both compute hypothesis length.
+    Then the second-order statistic t/Z is the second moment of the length distribution, so the variance of hypothesis length can be found as t/Z &#8722; (r/Z)2.
+    We will use the semiring parsing framew

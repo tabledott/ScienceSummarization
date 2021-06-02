@@ -1,0 +1,6 @@
+  Culotta and Sorensen (2004) described a slightly generalized version of this kernel based on dependency trees.
+    Since their kernel is a recursive match from the root of a dependency tree down to the leaves where the entity nodes reside, a successful match of two relation examples requires their entity nodes to be at the same depth of the tree.
+    This is a strong constraint on the matching of syntax so it is not surprising that the model has good precision but very low recall.
+    In their solution a bag-of-words kernel was used to compensate for this problem.
+    In our approach, more flexible kernels are used to capture regularization in syntax, and more levels of syntactic information are considered.
+    Kambhatla (2004) described a Maximum Entropy model using features from various syntactic sources, but the number of features they used is limited and the selection of features has to be a manual process.1 In our model, we use kernels to incorporate more syntactic information and let a Support Vector 

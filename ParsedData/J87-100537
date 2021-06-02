@@ -1,0 +1,9 @@
+e path from Form to the Term.
+    Form ==&gt; an expression in the logical form language Term &lt;== a top-level term in Form (that is, a term embedded in no other term) which is not free in any variable bound along the path from Form to the Term.
+    BlockingVars ==&gt; a list of variables bound along the path so far % A term is an applicable top-level term... applicable_term(term(Q,V,R),term(Q,V,R), BVs) % if it meets the definition. not(free_in(BVs, R)).
+    % An applicable term of the restriction or body of a quantifier is applicable % only if the variable bound by the quantifier is not free in the term. applicable_term(wff(Quant,[Var,Restrict,Body]),Term, BVs) :quantifier(Quant), !, (applicable_term(Restrict,Term,[VarIBVs]); applicable_term(Body,Term,[VarIBV0).
+    % Note the absence of a rule looking for applicable terms inside of % complex terms.
+    This limits applicable terms to be top-level.
+  
+  
+    The following is the core of a COMMON LISP implementation of the deterministic algorithm which inc

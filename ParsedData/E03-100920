@@ -1,0 +1,8 @@
+is suggests a solution that is to replace the multinomial distribution by a weaker distribution such as the Hidden Markov Models we have used before.
+    This gives us a two-level HMM: a HMM where each state corresponds to a word, and where the output function is a HMM where each state corresponds to a letter.
+    This relates to two other approaches that we are aware of (Fine et al., 1998) and (Weber et al., 2001).
+    Table 7 shows a simple evaluation of this approach; we can see that this does not suffer from the same drawback as the previous approach though the results are still poor compared to the other approaches, and in fact are consistently worse than the baselines of Table 1.
+    The problem here is that we are restricted to using quite small HMMs which are insufficiently powerful to memorise large chunks of the vocabulary, and in addition the use of the Forward-Backward algorithm is more computationally expensive &#8212; by at least a factor of the number of states.
+  
+  
+    We have applied severa

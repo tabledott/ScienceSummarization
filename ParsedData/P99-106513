@@ -1,0 +1,6 @@
+so included the person, gender, and number values were tested without yielding any further improvement, presumably because the damage from sparse data outweighed the value of the additional information present.
+    An entirely different approach, rather than searching by hand for effective tagsets, would be to use clustering to derive them automatically.
+    We explored two different methods, bottom-up and topdown, for automatically deriving POS tag sets based on counts of governing and dependent tags extracted from the parse trees that the parser constructs from the training data.
+    Neither tested approach resulted in any improvement in parsing performance compared to the hand-designed &amp;quot;two letter&amp;quot; tagset, but the implementations of each were still only preliminary, and a clustered tagset more adroitly derived might do better.
+    One final issue regarding POS tags was how to deal with the ambiguity between possible tags, both in training and test.
+    In the training data, there was a ch

@@ -1,0 +1,9 @@
+use the combined data for both translation model and language model training.
+    In our situation, however, the out-of-domain training data overwhelms the in-domain training data due to the sheer relative size.
+    Hence, we do not expect the best performance from this simplistic approach.
+    One way to force a drift to the jargon of the target domain is the use of the language model.
+    In our next setup, we used only in-domain data for training the language model.
+    This enables the system to use all the translation knowledge from the combined corpus, but it gives a preference to word choices that are dominant in the in-domain training data.
+    Essentially, the goal of our subsequent approaches is to make use of all the training data, but to include a preference for the in-domain jargon by giving more weight to the in-domain training data.
+    This and the next approach explore methods to bias the language model, while the final approach biases the translation model.
+    We trained two language models

@@ -1,0 +1,6 @@
+ (si), as shown in Figure 3, where PrNB sub (s) denotes Naive Bayes&#8217; estimate of the probability that sentence s is subjective; or, we can use the weights produced by the SVM classifier instead.7 If we set all the association scores to zero, then the minimum-cut classification of the sentences is the same as that of the basic subjectivity detector.
+    Alternatively, we incorporate the degree of proximity between pairs of sentences, controlled by three parameters.
+    The threshold T specifies the maximum distance two sentences can be separated by and still be considered proximal.
+    The and ind2(si) = 1 &#8722; ind1(si).
+    Note that scaling is employed only for consistency; the algorithm itself does not require probabilities for individual scores. non-increasing function f(d) specifies how the influence of proximal sentences decays with respect to distance d; in our experiments, we tried f(d) = 1, e1&#8722;d, and 1/d2.
+    The constant c controls the relative influence of the association scores: a l

@@ -1,0 +1,10 @@
+.
+    As we outperform this model in the complete dictionary case, it seems that the advantage of this model is due to its much stronger ambiguity class model, and not its Bayesian components.
+    Also note that while we outperform this model when using the 19-tags tagset, it is slightly better in the original 17-tags setting.
+    It could be that the reliance of the LDA models on observed surface features instead of hidden state features is beneficial avoiding the misleading V-V transitions.
+    We also list the performance of our best models with a slightly more realistic dictionary setting: we take our dictionary to include information for all words occurring in section 0-18 of the WSJ corpus (43208 words).
+    We then train on the entire unannotated corpus, and test on sections 22-24 &#8211; the standard train/test split for supervised English POS tagging.
+    We achieve accuracy of 92.85% for the 19tags set, and 91.3% for the complete 46-tags tagset.
+  
+  
+    We have demonstrated that unsupervised POS t

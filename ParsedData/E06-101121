@@ -1,0 +1,7 @@
+t, even using an approximate non-projective algorithm.
+    The second-order nonprojective model accuracy of 85.2% is the highest reported accuracy for a single parser for these data.
+    Similar results were obtained by Hall and N&#180;ov&#180;ak (2005) (85.1% accuracy) who take the best output of the Charniak parser extended to Czech and rerank slight variations on this output that introduce non-projective edges.
+    However, this system relies on a much slower phrase-structure parser as its base model as well as an auxiliary reranking module.
+    Indeed, our second-order projective parser analyzes the test set in 16m32s, and the non-projective approximate parser needs 17m03s to parse the entire evaluation set, showing that runtime for the approximation is completely dominated by the initial call to the second-order projective algorithm and that the post-process edge transformation loop typically only iterates a few times per sentence.
+    For our experiments we used the Danish Dependency Treebank v1.0.
+    

@@ -1,0 +1,5 @@
+andard to take the output of the algorithm to be the last sample produced, and evaluate those parses.
+    In some other applications of nonparametric Bayesian inference involving latent structure (e.g., clustering) it is difficult to usefully exploit multiple samples, but that is not the case here.
+    In maximum marginal decoding we map each sample parse tree t onto its corresponding word segmentation s, marginalizing out irrelevant detail in t. (For example, the collocation-syllable adaptor grammar contains a syllabification and collocational structure that is irrelevant for word segmentation).
+    Given a set of sample parse trees for a sentence we compute the set of corresponding word segmentations, and return the one that occurs most frequently (this is a sampling approximation to the maximum probability marginal structure).
+    For each setting in the experiments described in Table 1 we ran 8 samplers for 2,000 iterations (i.e., passes through the training data), and kept the sample parse trees from eve

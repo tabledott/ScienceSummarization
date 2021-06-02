@@ -1,0 +1,8 @@
+ is defined only for NPs, has only two values (S, corresponding to subjects, and VP, corresponding to objects).
+    In cases in which the path feature includes an S or VP ancestor of an NP node as part of the path to the target word, the gov feature is a function of the path feature.
+    This is the case most of the time, including for our prototypical subject (VBTVPTStNP) and object (VBTVPtNP) paths.
+    Of the 35,138 frame elements identified as NPs by the parser, only 4% have a path feature that does not include a VP or S ancestor.
+    One such example is shown in Figure 6, where the small clause &#8220;the remainder renting ...&#8221; has no S node, giving a path feature from renting to the remainder of VBTVPTNPtNP.
+    The value of the gov feature here is VP, as the algorithm finds the VP of the sentence&#8217;s main clause as it follows parent links up the tree.
+    The feature is spurious in this case, because the main VP is not headed by, or relevant to, the target word renting.
+    Systems based on t

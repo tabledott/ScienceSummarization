@@ -1,0 +1,9 @@
+he verb-intervening predicate recursively on the first-order Markov process generating modifying nonterminals: and similarly for right modifiers.
+    What is considered to be a verb?
+    While this is not spelled out, as it happens, a verb is any word whose part-of-speech tag is one of {VB, VBD, VBG, VBN, VBP, VBZ}.
+    That is, the cv predicate returns true only for these preterminals and false for all other preterminals.
+    Crucially, this set omits MD, which is the marker for modal verbs.
+    Another crucial point about the vi predicate is that it does not include verbs that appear within base NPs.
+    Put another way, in order to emulate Collins&#8217; model, we need to amend the definition of cv by stipulating that cv(NPB) = false.
+    One oddity of Collins&#8217; trainer that we mention here for the sake of completeness is that it skips certain training trees.
+    For &#8220;odd historical reasons,&#8221;13 the trainer skips all trees with more than 500 tokens, where a token is considered in this conte

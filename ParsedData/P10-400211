@@ -1,0 +1,9 @@
+ without altering the underlying hypergraph.
+    Although Viterbi and k-best extraction algorithms are often expressed as INSIDE algorithms with the tropical semiring, cdec provides a separate derivation extraction framework that makes use of a &lt; operator (Huang and Chiang, 2005).
+    Thus, many of the semiring types define not only the elements shown in Table 1 but T::operator&lt; as well.
+    The k-best extraction algorithm is also parameterized by an optional predicate that can filter out derivations at each node, enabling extraction of only derivations that yield different strings as in Huang et al. (2006).
+  
+  
+    Two training pipelines are provided with cdec.
+    The first, called Viterbi envelope semiring training, VEST, implements the minimum error rate training (MERT) algorithm, a gradient-free optimization technique capable of maximizing arbitrary loss functions (Och, 2003).
+    Rather than computing an error surface using kbest approximations of the decoder search space, cdec&#8217;s implement

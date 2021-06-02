@@ -1,0 +1,8 @@
+mining if one event is before or other, we achieve 72.1% accuracy on Timebank.
+    The above approach is a two-stage machine learning architecture.
+    In the first stage, the model uses supervised machine learning to label temporal attributes of events, including tense, grammatical aspect, and aspectual class.
+    This first stage classifier relies on features such as neighboring part of speech tags, neighboring auxiliaries and modals, and WordNet synsets.
+    We use SVMs (Chambers et al. (2007) uses Naive Bayes) and see minor performance boosts on Timebank.
+    These imperfect classifications, combined with other linguistic features, are then used in a second stage to classify the temporal relationship between two events.
+    Other features include event-event syntactic properties such as the syntactic dominance relations between the two events, as well as new bigram features of tense, aspect and class (e.g.
+    &#8220;present past&#8221; if the first event is in the present, and the second past), and wheth

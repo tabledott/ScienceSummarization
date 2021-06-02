@@ -1,0 +1,9 @@
+d mentions to their counterparts in the annotated data.
+    We resolve coreference on unannotated text as follows: First we detect mention heads following a state of the art chunking approach (Punyakanok and Roth, 2001) using standard features.
+    This results in a 90% F1 head detector.
+    Next, we detect the extent boundaries for each head using a learned classifier.
+    This is followed by determining whether a mention is a proper name, common noun phrase, prenominal modifier, or pronoun using a learned mention type classifier that.
+    Finally, we apply our coreference algorithm described above.
+    To evaluate, we align the heads of the detected mentions to the gold standard heads greedily based on number of overlapping words.
+    We choose not to impute errors to the coreference system for mentions that were not detected or for spuriously detected mentions (following Ji et al. (2005) and others).
+    Although this evaluation is lenient, given that the mention detection component performs at over 90% F1

@@ -1,0 +1,9 @@
+the highest scoring tree will be the correct tree: g&#952;(xi) = yi and its score will be larger up to a margin to other possible trees y&#710; E Y(xi): s(CVG(&#952;, xi, yi)) &gt;&#8212; s(CVG(&#952;, xi, &#710;y)) + A(yi, &#710;y).
+    This leads to the regularized risk function for m Intuitively, to minimize this objective, the score of the correct tree yi is increased and the score of the highest scoring incorrect tree y&#710; is decreased.
+    For ease of exposition, we first describe how to score an existing fully labeled tree with a standard RNN and then with a CVG.
+    The subsequent section will then describe a bottom-up beam search and its approximation for finding the optimal tree.
+    Assume, for now, we are given a labeled parse tree as shown in Fig.
+    2.
+    We define the word representations as (vector, POS) pairs: ((a, A), (b, B), (c, C)), where the vectors are defined as in Sec.
+    3.1 and the POS tags come from a PCFG.
+    The standard RNN essentially ignores all POS tags and syntactic ca

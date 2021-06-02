@@ -1,0 +1,5 @@
+ollowing standard practice, we decompose the estimate of P(e&#8242;|c&#8242;) as P(e&#8242;|c&#8242;) _ Ili P(e&#8242;i|c&#8242;i).
+    Here, e&#8242;i is the ith subsequence of the English phone string, and c&#8242;i is the ith subsequence of the Chinese phone string.
+    Since Chinese transliteration attempts to match the syllablesized characters to equivalent sounding spans of the English language, we fix the c&#8242;i to be syllables, and let the e&#8242;i range over all possible subsequences of the English phone string.
+    For training data we have a small list of 721 names in Roman script and their Chinese equivalent.3 Pronunciations for English words are obtained using the Festival text-tospeech system (Taylor et al., 1998); for Chinese, we use the standard pinyin transliteration of the characters.
+    English-Chinese pairs in our training dictionary were aligned using the alignment algorithm from (Kruskal, 1999), and a hand-derived set of 21 rules-of-thumb: for example, we have rules that encode the 

@@ -1,0 +1,5 @@
+gned todeal with cases where words are in some sense miss ing in the input.
+			For example, in the string flights Boston to New York, one style of analysis would assume that the preposition from had been deleted from the position before Boston.The first set of rules is generated from the follow ing role-hypothesising type shifting rules template: NP : c ? N\N : ?f.?x.f(x) ? p(x, c) (TR) This rule can be applied to any NP with semantics c, and any arity-two function p such that the secondargument of p has the same type as c. By ?any?
+			aritytwo function, we mean any of the arity-two func tions seen in training data.
+			We define features within the feature-vector f that are sensitive to the number of times these rules are applied in a parse; a separate feature is defined for each value of p. In practice, in our experiments most rules of this form have p as the semantics of some preposition, for example from or to.
+			A typical example of a use of this rule would be the following: flights boston to new york N 

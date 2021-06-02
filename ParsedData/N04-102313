@@ -1,0 +1,8 @@
+efinitions for the loss function.
+    As far as linear classifiers are concerned, we want to maintain a larger margin in translations of high ranks and a smaller margin in translations of low ranks.
+    For example, The reason is that the scoring function will be penalized There are quite a few linear classifiers1 that can separate samples with large margin, such as SVMs (Vapnik, 1998), Boosting (Schapire et al., 1997), Winnow (Zhang, 2000) and Perceptron (Krauth and Mezard, 1987).
+    The performance of SVMs is superior to other linear classifiers because of their ability to margin maximization.
+    However, SVMs are extremely slow in training since they need to solve a quadratic programming search.
+    For example, SVMs even cannot be used to train on the whole Penn Treebank in parse reranking (Shen and Joshi, 2003).
+    Taking this into account, we use perceptron-like algorithms, since the perceptron algorithm is fast in training which allow us to do experiments on real-world data.
+    Its large margin ver

@@ -1,0 +1,11 @@
+d indeed verify these expectations.
+  
+  
+    We have found that the Pk error metric for text segmentation algorithms is affected by the variation of segment size distribution, becoming slightly more lenient as the variance increases.
+    It penalizes false positives significantly less than false negatives, particularly if the false positives are uniformly distributed throughout the document.
+    It penalizes near-miss errors more than pure false positives of equal magnitude.
+    Finally, it fails to take into account situations in which multiple boundaries occur between the two sides of the probe, and it often misses or underpenalizes mistakes in small segments.
+    We proposed two modifications to tackle these problems.
+    The first, which we call Pk, simply doubles the false positive penalty.
+    This solves the problem of overpenalizing false negatives, but it is not effective at dealing with the other problems.
+    The second, which we call WindowDiff (WD), counts the number of boundaries between the tw

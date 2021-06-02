@@ -1,0 +1,11 @@
+, the goal of pruning and argument identification is to identify argument candidates for a given verb predicate.
+    The system only classifies the argument candidates into their types during the argument classification stage.
+    Linguistic and structural constraints are incorporated in the inference stage to resolve inconsistent global predictions.
+    The inference stage can take as its input the output of the argument classification of a single system or of multiple systems.
+    We explain the inference for multiple systems in Sec.
+    2.
+    Only the constituents in the parse tree are considered as argument candidates.
+    In addition, our system exploits the heuristic introduced by (Xue and Palmer, 2004) to filter out very unlikely constituents.
+    The heuristic is a recursive process starting from the verb whose arguments are to be identified.
+    It first returns the siblings of the verb; then it moves to the parent of the verb, and collects the siblings again.
+    The process goes on until it reache

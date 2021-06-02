@@ -1,0 +1,9 @@
+ approximation method, with an optional step to perform complete consistency checking when necessary.
+    Given two feature-descriptions, the strategy of the unification algorithm is to unify the definite components of the descriptions first, and examine the compatibility of indefinite components later.
+    Disjuncts are eliminated from the description when they are inconsistent with definite information.
+    This strategy avoids exploring disjuncts more than once when they are inconsistent with definite information.
+    The exact algorithm is described in Figure 3.
+    It has three major steps.
+    In the first step, the definite components of the two descriptions are unified together, producing a DG structure, new-def, which represents the definite information of the result.
+    This step can be performed by existing unification algorithms for DGs.
+    In the second step, the indefinite components of both descriptions are checked for compatibility with new-def, using the function CHECK-INDEF, which is defin

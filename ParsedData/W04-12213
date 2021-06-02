@@ -1,0 +1,5 @@
+e functions.
+    For example, a feature may have a value of 0 in most cases, but given the text &#8220;the ATPase&#8221; it has the value 1 along the transition where si_1 corresponds to a state with the label OTHER, si corresponds to a state with the label PROTEIN, and fj is the feature function WORD=ATPase E o at position i in the sequence.
+    Other feature functions that could have the value 1 along this transition are CAPITALIZED, MIXEDCASE, and SUFFIX=ase.
+    Intuitively, the learned feature weight &#955;j for each feature fj should be positive for features that are correlated with the target label, negative for features that are anti-correlated with the label, and near zero for relatively uninformative features.
+    These weights are set to maximize the conditional log likelihood of labeled sequences in a training set D = f(o, l)(1), ... , (o, l)(n)&#65533;: When the training state sequences are fully labeled and unambiguous, the objective function is convex, thus the model is guaranteed to find the o

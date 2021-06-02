@@ -1,0 +1,8 @@
+ce of the frequency correlation method is in general much worse, which is not surprising, given the fact that terms may be correlated merely because they are topically related.
+    Since the two methods exploit complementary resources, it is natural to see if we can improve performance by combining the two methods.
+    Indeed, intuitively the best candidate is the one that has a good pronunciation alignment as well as a correlated frequency distribution with the English name.
+    We evaluated two strategies for combining the two methods.
+    The first strategy is to use the phonetic model to filter out (clearly impossible) candidates and then use the frequency correlation method to rank the candidates.
+    The second is to combine the scores of these two methods.
+    Since the correlation coefficient has a maximum value of 1, we normalize the phonetic correspondence score by dividing all scores by the maximum score so that the maximum normalized value is also 1.
+    We then take the average of the two scores 

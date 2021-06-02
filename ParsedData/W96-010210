@@ -1,0 +1,7 @@
+feature relevance values than the the lowest value of the disambiguating features) are not stored in the tree.
+    In our tagging application, this means that only context feature values that actually contribute to disambiguation are used in the construction of the tree.
+    Leaf nodes contain the unique class label corresponding to a path in the tree.
+    Nonterminal nodes contain information about the most probable or default classification given the path thus far, according to the bookkeeping information on class occurrences maintained by the tree construction algorithm.
+    This extra information is essential when using the tree for classification.
+    Finding the classification of a new case involves traversing the tree (i.e., matching all feature values of the test case with arcs in the order of the overall feature information gain), and either retrieving a classification when a leaf is reached, or using the default classification on the last matching non-terminal node if a feature-value match fails.
+  

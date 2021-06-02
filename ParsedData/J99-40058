@@ -1,0 +1,9 @@
+tions 1 ... 1.. Model 1 Channel Parameters: c(m 1/) and s(f le).
+    Given a source sentence e of length 1: Because the same e may produce the same f by means of many different alignments, we must sum over all of them to obtain P(fle): Figure 2 illustrates naive EM training for Model 1.
+    If we compute P(fle) once per iteration, outside the &amp;quot;for a&amp;quot; loops, then the complexity is 0(m/m) per sentence pair, per iteration.
+    More efficient 0(/m) training was devised by Brown et al. (1993).
+    Instead of proWe next consider decoding.
+    We seek a string e that maximizes P(e If), or equivalently maximizes P(e) &#8226; P(fle).
+    A naive algorithm would evaluate all possible source strings, whose lengths are potentially unbounded.
+    If we limit our search to strings at most twice the length m of our observed French, then we have a naive 0(m2v2m) method: Given a string f of length m We may now hope to find a way of reorganizing this computation, using tricks like the ones above.
+    Unfortun

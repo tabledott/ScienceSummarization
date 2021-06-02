@@ -1,0 +1,10 @@
+many parsing errors.
+    The adjacency property described in the previous section makes shortest common cover link sets especially suitable for incremental parsing.
+    Consider the example given in figure 2.
+    When the word the is read, the parser can already construct a link from know to the without worrying about the continuation of the sentence.
+    This link is part of the correct parse whether the sentence turns out to be I know the boy or I know the boy sleeps.
+    A dependency parser, on the other hand, cannot make such a decision before the end of the sentence is reached.
+    If the sentence is I know the boy then a dependency link has to be created from know to boy while if the sentence is I know the boy sleeps then such a link is wrong.
+    This problem is known in psycholinguistics as the problem of reanalysis (Sturt and Crocker, 1996).
+    Assume the incremental parser is processing a prefix (x1, ... , xk) of an utterance and has already deduced a set of links L for this prefix.
+    It can now 

@@ -1,0 +1,9 @@
+mpare these two probabilities across the submodels and we scale all model probabilities to be compatible with those of Model 2 composed.
+    With this scaling procedure into place, we produce 6,000 non-unique nbest lists for all sentences in our development corpus, using all SPMT submodels.
+    We concatenate the lists and we learn a new combination of weights that maximizes the Bleu score of the combined nbest list using the same development corpus we used for tuning the individual systems (Och, 2003).
+    We use the new weights in order to rerank the nbest outputs on the test corpus.
+  
+  
+    We evaluate our models on a Chinese to English machine translation task.
+    We use the same training corpus, 138.7M words of parallel Chinese-English data released by LDC, in order to train several statistical-based MT systems: In all systems, we use a rule extraction algorithm that limits the size of the foreign/source phrases to four words.
+    For all systems, we use a Kneser-Ney (1995) smoothed trigram language m

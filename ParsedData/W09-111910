@@ -1,0 +1,9 @@
+served in the POS tagging task (Toutanova et al., 2003; Roth and Zelenko, 1998).
+    The implications are subtle.
+    First, due to the second-order of the model, the greedy decoding is over 100 times faster than Viterbi.
+    The reason is that with the BILOU encoding of four NE types, each token can take 21 states (O, B-PER, I-PER , U-PER, etc.).
+    To tag a token, the greedy policy requires 21 comparisons, while the Viterbi requires 213, and this analysis carries over to the number of classifier invocations.
+    Furthermore, both beamsearch and Viterbi require transforming the predictions of the classifiers to probabilities as discussed in (NiculescuMizil and Caruana, 2005), incurring additional time overhead.
+    Second, this result reinforces the intuition that global inference over the second-order HMM features does not capture the non-local properties of the task.
+    The reason is that the NEs tend to be short chunks separated by multiple &#8220;outside&#8221; tokens.
+    This separation &#8220;breaks

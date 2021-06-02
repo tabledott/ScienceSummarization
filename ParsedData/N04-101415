@@ -1,0 +1,8 @@
+hat dictate the choice of rules in a complete X-derivation.
+    Figure 3 shows derivation trees for a particular transducer.
+    In order to generate derivation trees for X automatically, we build a modified transducer X&#8242;.
+    This new transducer produces derivation trees on its output instead of normal output trees.
+    X&#8242; is That is, the original rhs of rules are flattened into a tree of depth 1, with the root labeled by the original rule, and all the non-expanding A-labeled nodes of the rhs removed, so that the remaining children are the nonterminal yield in left to right order.
+    Derivation trees deterministically produce a single weighted output tree.
+    The derived transducer X&#8242; nicely produces derivation trees for a given input, but in explaining an observed (input/output) pair, we must restrict the possibilities further.
+    Because the transformations of an input subtree depend only on that subtree and its state, we can (Algorithm 1) build a compact wRTG that produces exactly the

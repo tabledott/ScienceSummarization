@@ -1,0 +1,8 @@
+rminal is generated conditioning on +TOP+ (which has a prior probability of 1.0) using a parameter from the class PTOP.
+    This special parameter class is mentioned in a footnote in chapter 7 of Collins&#8217; thesis.
+    There are actually two parameter classes used to generated observed roots, one for generating the partially lexicalized root nonterminal, which we call PTOPNT, and the other for generating the headword of the entire sentence, which we call PTOPw.
+    Table 3 gives the unpublished back-off structure of these two additional parameter classes.
+    Note that PTOPw backs off to simply estimating &#710;p(w  |t).
+    Technically, it should be estimating &#710;pNT(w  |t), which is to say the probability of a word&#8217;s occurring with a tag in the space of lexicalized nonterminals.
+    This is different from the last level of back-off in the modifier headword parameter classes, which is effectively estimating &#710;p(w  |t) in the space of lexicalized preterminals.
+    The difference is that in th

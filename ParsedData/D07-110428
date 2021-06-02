@@ -1,0 +1,9 @@
+e concerned with.
+			The first case consists of all patterns prefixed with X . The paths to nodes representing these patterns 982 will all contain the X-edge originating at the rootnode.
+			All of these paths form the shadow subtree.
+			Path construction in this subtree proceeds dif ferently.
+			Because they are lexically identical to theirsuffixes, they are automatically extended if their suffix paths are active, and they inherit location infor mation of their suffixes.
+			The second case consists of all patterns suffixedwith X . Whenever we successfully find a new pat tern ?, we automatically extend it with an X edge,provided that ?X is allowed by the model con straints.
+			The node pointed to by this edge inheritsits location information from its parent node (repre senting the maximal prefix ?).
+			Note that both special cases occur for patterns in the form XuX . 5.5 Memory Requirements.
+			As shown in Callison-Burch et al (2005), we must keep an array for the source text F , its suffix array,the target te

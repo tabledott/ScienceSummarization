@@ -1,0 +1,9 @@
+ts.
+    The NIST BLEU-4 is a variant of BLEU (Papineni et al., 2002) and is computed as where is the precision of -grams in the hypothesis given the reference and is a brevity penalty.
+    The -gram counts from multiple references are accumulated in estimating the precisions.
+    All system combination methods presented in this paper may be tuned to directly optimize either one of these automatic evaluation metrics.
+    The tuning uses -best lists of hypotheses with various feature scores.
+    The feature scores may be combined with tunable weights forming an arbitrary scoring function.
+    As the derivatives of this function are not usually available, Brent&#8217;s modification of Powell&#8217;s method (Brent, 1973) may be used to find weights that optimize the appropriate evaluation metric in the re-scored -best list.
+    The optimization starts at a random initial point in the -dimensional parameter space, first searching through an initial set of basis vectors.
+    As searching repeatedly through the set 

@@ -1,0 +1,8 @@
+ part-of-speech tagging process.
+    Our main interest is in how the advantage of one rule set over another will affect the tagging performance.
+    Therefore, we performed an evaluation of the impact of the word guessers on tagging accuracy.
+    In this evaluation we used the cascading guesser with two different taggers: a c++ implemented bigram HMM tagger akin to one described in Kupiec (1992) and the rule-based tagger of Brill (1995).
+    Because of the similarities in the algorithms with the LISP implemented Xerox tagger, we could directly use the Xerox guessing rule set with the HMM tagger.
+    Brill's tagger came pretrained on the Brown Corpus and had a corresponding guessing component.
+    This gave us a search-space of four basic combinations: the HMM tagger equipped with the Xerox guesser, the Brill tagger with its original guesser, the HMM tagger with our cascading (Prefix+Suffix&#176;+Suffixl+Ending-c*) guesser and the Brill tagger with the cascading guesser.
+    We also tried hybrid tagging using 

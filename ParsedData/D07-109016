@@ -1,0 +1,14 @@
+ as intermediate keys (hence we use wi?n+1iin the table).
+			All unigrams are duplicated in every reduce shard.
+			Because the reducer function receives intermediate keys in sorted order it can com pute smoothed probabilities for all n-gram orders with simple book-keeping.
+			Katz Backoff requires similar additional steps.
+			The largest models reported here with Kneser-Ney Smoothing were trained on 31 billion tokens.
+			For Stupid Backoff, we were able to use more than 60 times of that amount.
+	
+	
+			Our goal is to use distributed language models in tegrated into the first pass of a decoder.
+			This mayyield better results than n-best list or lattice rescoring (Ney and Ortmanns, 1999).
+			Doing that for lan guage models that reside in the same machine as the decoder is straight-forward.
+			The decoder accesses n-grams whenever necessary.
+			This is inefficient in a distributed system because network latency causes aconstant overhead on the order of milliseconds.
+			On board memory is around 10,000 times fast

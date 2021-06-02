@@ -1,0 +1,6 @@
+e based to part-of-speech tags and syntactic chunks, and then to features based on Treebank-based syntactic parses of the source and target sentences.
+  
+  
+    The goal is the translation of a text given in some source language into a target language.
+    We are given a source (&#8216;Chinese&#8217;) sentence f = fJ1 = f1, ... , fj, ... , fJ, which is to be translated into a target (&#8216;English&#8217;) sentence e = eI1 = e1, ... , ei, ... , eI Among all possible target sentences, we will choose the sentence with the highest probability: As an alternative to the often used source-channel approach (Brown et al., 1993), we directly model the posterior probability Pr(eI1 fJ1 ) (Och and Ney, 2002) using a log-linear combination of feature functions.
+    In this framework, we have a set of M feature functions hm(eI1, fJ1 ), m = 1, ... , M. For each feature function, there exists a model parameter Am, m = 1, ... , M. The direct translation probability is given by: We obtain the following decision rule: The stand

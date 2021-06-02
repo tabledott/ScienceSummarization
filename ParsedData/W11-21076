@@ -1,0 +1,7 @@
+th in each sentence.
+    Any word occurring less than length positions after a match start is considered covered by the match.
+    The exact and paraphrase matchers support all five WMT languages while the stem matcher is limited to English, French, German, and Spanish and the synonym matcher is limited to English.
+    Once matches are identified, the final alignment is resolved as the largest subset of all matches meeting the following criteria in order of importance: Given an alignment, the metric score is calculated as follows.
+    Content and function words are identified in the hypothesis (hc, hf) and reference (rc, rf) according to the function word lists described in Section 2.3.
+    For each of the matchers (mi), count the number of content and function words covered by matches of this type in the hypothesis (mi(hc), mi(hf)) and reference (mi(rc), mi(rf)).
+    Calculate weighted precision and recall using matcher weights (wi...wn) and content-function word weight (&#948;): The parameterized harmonic m

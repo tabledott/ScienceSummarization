@@ -1,0 +1,8 @@
+nt a more precise determinant for extraction.
+    For the early work, it was determined that a Boolean discriminate would suffice provided that the operators AND and OR were implemented.
+    It was also necessary to provide the ability to organize queries through the use of parentheses.
+    We opted for the Boolean indexing as opposed to vector indexing (Buckley et al.1998) because Boolean indexing increases the recall at the expense of precision.
+    That works well for us since we control the retrieval precision with the PARAGRAPH operator which provides document filtering.
+    In addition, the Boolean indexing requires less processing time than vector indexing, and this becomes important when the collection size increases.
+    To facilitate the identification of the document sources, the engine was required to put the document id in front of each line in the document.
+    The index creation includes the following steps: normalize the SGML tags, eliminate extraneous characters, identify the words within eac

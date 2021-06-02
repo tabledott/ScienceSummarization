@@ -1,0 +1,8 @@
+r tree.
+			4.2 Dynamic Programming.
+			Given q, the score for an answer is simply p(q, ?q | a, ?a).
+			Computing the score requires summing over alignments and can be done efficiently by bottom-up dynamic programming.
+			Let S(j, `) refer to the score of ? jq, assuming that the parent of qj , ?q(j).par , is aligned to a`.
+			The base case, for leaves of ?q, is: S(j, `) = (4) p#kids(0 | qj , left) ? p#kids(0 | qj , right) ? m? k=0 pkid (qj , ?q(j).lab | q?q(j) , `, k, ?a) Note that k ranges over indices of answer-words to be aligned to qj . The recursive case is S(i, `) = (5) p#kids(|{j : ?q(j) = i, j &lt; i}| | qj , left) ?p#kids(|{j : ?q(j) = i, j &gt; i}| | qj , right) ? m? k=0 pkid (qi, ?q(i).lab | q?q(i), `, k, ?a) ? ?
+			j:?q(j)=i S(j, k) Solving these equations bottom-up can be done in O(nm2) time and O(nm) space; in practice this is very efficient.
+			In our experiments, computing the value of a question-answer pair took two seconds on average.5 We turn next to the details of pkid , the core of the mod

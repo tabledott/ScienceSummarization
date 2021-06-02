@@ -1,0 +1,11 @@
+
+    But the main advantage is that the complexity of the new subgraph isomorphism algorithm is only quadratic in the number of vertices of the input referring graph.
+    Note that with this approach we do not lose information from the scene graph, nor do we lose completeness.
+    In sum, the basic approach to subgraph isomorphisms is NP-complete, but there exist various reformulations of the problem that can be solved more efficiently.
+    Deciding which (combination) of these is the most suitable in practice, however, is beyond the scope of this article.
+    Finally, it is worth stressing that the NP-completeness is due to the presence of edges representing relations between different vertices.
+    If we restrict the approach to properties (looping edges), testing for subgraph isomorphisms becomes trivial.
+  
+  
+    In this section we give a high-level sketch of the graph-based generation algorithm.
+    The algorithm (called makeReferringExpression) consists of two main components, a subgraph construction a

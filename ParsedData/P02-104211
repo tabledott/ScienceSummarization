@@ -1,0 +1,7 @@
+obability mass to dependency structures not licensed by the grammar.
+    The parser analyses a sentence in two stages.
+    First, in order to limit the number of categories assigned to each word in the sentence, a &#8220;supertagger&#8221; (Bangalore and Joshi, 1999) assigns to each word a small number of possible lexical categories.
+    The supertagger (described in Clark (2002)) assigns to each word all categories whose probabilities are within some constant factor, &#946;, of the highest probability category for that word, given the surrounding context.
+    Note that the supertagger does not provide a single category sequence for each sentence, and the final sequence returned by the parser (along with the dependencies) is determined by the probability model described in the previous section.
+    The supertagger is performing two roles: cutting down the search space explored by the parser, and providing the categorysequence model in equation 8.
+    The supertagger consults a &#8220;category dictionary&#8221

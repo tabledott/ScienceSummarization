@@ -1,0 +1,11 @@
+% LR, and 82.6% Fl.
+    We then ran the same model on the test set used in previous work (Bikel and Chiang, 2000; Chiang and Bikel, 2002).
+    Results are shown in Table 4.
+  
+  
+    The trends we obtained are different enough from previous work to merit discussion.
+    As shown in Table 4, previous work on CTB parsing consistently achieved higher results on precision than on recall.
+    This is consonant with our initial experiments in CTB PCFG parsing: on the development set, a vanilla PCFG showed a 7% precision/recall split in favor of precision (the split for our small WSJ training set is 4.2% in the same direction).
+    We suspect that this is due to the low branching factor in the CTB, which increases the potential reward from the parser's perspective for picking flatter structures.
+    Simply splitting punctuation along the lines of English, combined with PCFG markovization and the introduction of a dependency model factor, reduced the LP/LR split to 1.1%.
+    From there to our final model, nearly all 

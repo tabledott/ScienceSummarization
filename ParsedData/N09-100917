@@ -1,0 +1,8 @@
+o be constrained to be within a family of tractable and manageable distributions, yet rich enough to represent good approximations of the true posterior.
+    &#8220;Best approximation&#8221; is defined as the KL divergence between q(&#952;, y) and p(&#952;, y I x, &#181;, E, S).
+    Our variational inference algorithm uses a meanfield assumption: q(&#952;, y) = q(&#952;)q(y).
+    The distribution q(&#952;) is assumed to be a LN distribution with all off-diagonal covariances fixed at zero (i.e., the variational parameters consist of a single mean &#732;&#181;k,i and a single variance &#732;&#963;2k,i for each &#952;k,i).
+    There is an additional variational parameter, &#732;&#950;k per multinomial, which is the result of an additional variational approximation because of the lack of conjugacy of the LN distribution to the multinomial distribution.
+    The distribution q(y) is assumed to be defined by a DMV with unnormalized probabilities &#732;&#968;.
+    Inference optimizes the bound B given in Fig.
+    3 (

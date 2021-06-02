@@ -1,0 +1,7 @@
+Language Modeling Toolkit to train two trigram language models with modified Kneser&#8211;Ney smoothing (Kneser and Ney 1995; Chen and Goodman 1998): one on 2.8 billion words from the English Gigaword corpus, and the other on the English side of the parallel text (28 million words).
+    Table 5 shows the average decoding time on part of the development set for the three LM-incorporation methods described in Section 5.3, on a single processor of a dual 3 GHz Xeon machine.
+    For these experiments, only the Gigaword language model was used.
+    We set b = 30, R = 1 for X cells, b = 15, R = 1 for S cells, and b = 100 for rules except where noted in Table 5.
+    Note that values for R and e are only meaningful relative to the scale of the feature weights; here, the language model weight was 0.06.
+    The feature weights were obtained by minimum-error-rate training using the cube-pruning (e = 0.1) decoder.
+    For the LM rescoring decoder, parsing and k-best list generation used feature weights optimized for the 

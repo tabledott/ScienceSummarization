@@ -1,0 +1,6 @@
+ropose a simple solution to this problem: we remove all and only those twinless system mentions that are singletons before applying B3 and CEAF.
+    The reason is simple: since the coreference resolver has successfully identified these mentions as singletons, it should not be penalized, and removing them allows us to avoid such penalty.
+    Note that we only remove twinless (as opposed to all) system mentions that are singletons: this allows us to reward a resolver for successful identification of singleton mentions that have twins, thus overcoming a major weakness of and common criticism against the MUC scorer.
+    Also, we retain twinless system mentions that are nonsingletons, as the resolver should be penalized for identifying spurious coreference relations.
+    On the other hand, we do not remove twinless mentions in the key partition, as we want to ensure that the resolver makes the correct (non-)coreference decisions for them.
+    We believe that our proposal addresses Stoyanov et al.&#8217;s (2009) pr

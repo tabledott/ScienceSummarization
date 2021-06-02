@@ -1,0 +1,20 @@
+ maps a parse tree y to its associated logical form.
+			Initialization: Set parameters w to initial values described in section 6.2.
+			Set ? = ?0.
+			Algorithm: ? For t = 1 . . .
+			T, i = 1 . . .
+			n : Step 1: (Check correctness) ? Let y?
+			= argmaxy?GEN(xi;?)
+			w ? f(xi, y) . ? If L(y?) = zi, go to the next example.
+			Step 2: (Lexical generation) ? Set ? = ? ?
+			GENLEX(xi, zi) . ? Let y?
+			= argmaxy?GEN(xi,zi;?)
+			w ? f(xi, y) . ? Define ?i to be the set of lexical entries in y?.
+			Set lexicon to ? = ? ?
+			?i . Step 3: (Update parameters) ? Let y?
+			= argmaxy?GEN(xi;?)
+			w ? f(xi, y) . ? If L(y?) 6= zi : ? Set w = w + f(xi, y?)
+			f(xi, y?)
+			Output: Lexicon ? together with parameters w. Figure 4: An online learning algorithm.
+			updates, which are simpler and cheaper to compute.As in ZC05, the algorithm assumes an initial lex icon ?0 that contains two types of entries.
+			First, we compile entries such as Boston := NP : boston for entities such as cities, times and month-names that occur in th

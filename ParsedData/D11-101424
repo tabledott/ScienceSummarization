@@ -1,0 +1,9 @@
+217;m still dancing round my room!
+    Baseline 3: Word Vectors We can ignore the RAE tree structure and only train softmax layers directly on the pre-trained words in order to influence the word vectors.
+    This is followed by an SVM trained on the average of the word vectors.
+    We also experimented with latent Dirichlet allocation (Blei et al., 2003) but performance was very low.
+    Table 3 shows the results for predicting the class with the most votes.
+    Even the approach that is based on sentiment lexica and other resources is outperformed by our model by almost 3%, showing that for tasks involving complex broad-range human sentiment, the often used sentiment lexica lack in coverage and traditional bag-of-words representations are not powerful enough.
+    We now turn to evaluating our distributionprediction approach.
+    In both this and the previous maximum label task, we backprop using the gold multinomial distribution as a target.
+    Since we maximize likelihood and because we want to predict a 

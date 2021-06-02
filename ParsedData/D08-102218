@@ -1,0 +1,7 @@
+forest-based decoding (Mi et al., 2008).
+    To test the effect of forest-based rule extraction, we parse the training set into parse forests and use three levels of pruning thresholds: pe = 2, 5, 8.
+    Figure 6 plots the extraction speed and translation quality of forest-based extraction with various pruning thresholds, compared to 1-best and 30-best baselines.
+    Using more than one parse tree apparently improves the BLEU score, but at the cost of much slower extraction, since each of the top-k trees has to be processed individually although they share many common subtrees.
+    Forest extraction, by contrast, is much faster thanks to packing and produces consistently better BLEU scores.
+    With pruning threshold pe = 8, forest-based extraction achieves a (case insensitive) BLEU score of 0.2533, which is an absolute improvement of 1.0% points over the 1-best baseline, and is statistically significant using the sign-test of Collins et al. (2005) (p &lt; 0.01).
+    This is also 0.5 points better than (and t

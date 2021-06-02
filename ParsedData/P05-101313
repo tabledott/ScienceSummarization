@@ -1,0 +1,6 @@
+ion is based on six word tokens, the two topmost tokens on the stack, and the next four input tokens.
+    For each token, three types of features may be taken into account: the word form; the part-of-speech assigned by an automatic tagger; and labels on previously assigned dependency arcs involving the token &#8211; the arc from its head and the arcs to its leftmost and rightmost dependent, respectively.
+    Except for the left3The graphs satisfy all the well-formedness conditions given in section 2 except (possibly) connectedness.
+    For robustness reasons, the parser may output a set of dependency trees instead of a single tree. most dependent of the next input token, dependency type features are limited to tokens on the stack.
+    The prediction based on these features is a knearest neighbor classification, using the IB1 algorithm and k = 5, the modified value difference metric (MVDM) and class voting with inverse distance weighting, as implemented in the TiMBL software package (Daelemans et al., 2003).
+ 

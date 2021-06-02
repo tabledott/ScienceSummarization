@@ -1,0 +1,10 @@
+ltering is based on the strength of the context and its frequency.
+    The strength of positive context is defined as , where is the number of times context surrounds positive examples (paraphrase pairs) and is the frequency of the context .
+    Strength of the negative context is defined in a symmetrical manner.
+    For the positive and the negative categories we select rules ( in our experiments) with the highest frequency and strength higher than the predefined threshold of 95%.
+    Examples of selected context rules are shown in Figure 4.
+    The parameter of the contextual classifier is a context length.
+    In our experiments we found that a maximal context length of three produces best results.
+    We also observed that for some rules a shorter context works better.
+    Therefore, when recording contexts around positive and negative examples, we record all the contexts with length smaller or equal to the maximal length.
+    Because our corpus consists of translations of several books, created by differ

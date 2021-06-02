@@ -1,0 +1,9 @@
+e procedure elects this option, then a constant, log prob(NULL), is added to the score.
+  This value is set so that the matching procedure will avoid making hard decisions when it isnt sure.
+  For example, the 5 ~h English word (in) could have been matched with 16 ~h French word (en), but it didnt do so because log prob(NULL) was more than the score of such a radical reordering.
+  We have found that -5 is a good 156 setting for log prob(match).
+  If we set the value much higher, then the matching procedure attempts to reorder the text too much.
+  If we set the value much lower, then the matching procedure does not attempt to reorder the text enough.
+  This matching procedure works remarkably well.
+  As mentioned above, based on a sample of 800 sentences, we estimate that the procedure matches 61% of the English words with some French word, and about 95% of these pairs match the English word with the appropriate French word.
+  All but one of these rrors of commission involved a function word, usually one surro

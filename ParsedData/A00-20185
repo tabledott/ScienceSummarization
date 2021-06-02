@@ -1,0 +1,8 @@
+ such models, a zeroorder Markov grammar, each label on the righthand side is generated conditioned only on / &#8212; that is, according to the distributions p(Li j1), p(M I 1), and p(Ri I 1).
+    More generally, one can condition on the m previously generated labels, thereby obtaining an mth-order Markov grammar.
+    So, for example, in a second-order Markov PCFG, L2 would be conditioned on L1 and M. In our complete model, of course, the probability of each label in the expansions is also conditioned on other material as specified in Equation 1, e.g., p(e t, h, H).
+    Thus we would use p(L2 I L1, M, 1, t, h, H).
+    Note that the As on both ends of the expansion in Expression 2 are conditioned just like any other label in the expansion.
+  
+  
+    The major problem confronting the author of a generative parser is what information to use to condition the probabilities required in the model, and how to smooth the empirically obtained probabilities to take the sting out of the sparse data problems that are inev

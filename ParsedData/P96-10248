@@ -1,0 +1,8 @@
+.
+    When building an actual system, one should use the metric most appropriate for the problem.
+    For instance, if one were creating a database query system, such as an ATIS system, then the Labelled Tree (Viterbi) metric would be most appropriate.
+    A single error in the syntactic representation of a query will likely result in an error in the semantic representation, and therefore in an incorrect database query, leading to an incorrect result.
+    For instance, if the user request &amp;quot;Find me all flights on Tuesday&amp;quot; is misparsed with the prepositional phrase attached to the verb, then the system might wait until Tuesday before responding: a single error leads to completely incorrect behavior.
+    Thus, the Labelled Tree criterion is appropriate.
+    On the other hand, consider a machine assisted translation system, in which the system provides translations, and then a fluent human manually edits them.
+    Imagine that the system is given the foreign language equivalent of &amp;quot;His 

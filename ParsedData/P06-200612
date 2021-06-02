@@ -1,0 +1,8 @@
+oughly quadratic in the length of the input to create a packed parse forest represented as a graphstructured stack.
+    The statistical disambiguation phase is trained on Susanne treebank bracketings, producing a probabilistic generalized LALR(1) parser (e.g.
+    Inui et al., 1997) which associates probabilities with alternative actions in the LR table.
+    The parser is passed as input the sequence of most probable lemma-affix-tags found by the tagger.
+    During parsing, probabilities are assigned to subanalyses based on the the LR table actions that derived them.
+    The n-best (i.e. most probable) parses are extracted by a dynamic programming procedure over subanalyses (represented by nodes in the parse forest).
+    The search is efficient since probabilities are associated with single nodes in the parse forest and no weight function over ancestor or sibling nodes is needed.
+    Probabilities capture structural context, since nodes in the parse forest partially encode a configuration of the graph-structur

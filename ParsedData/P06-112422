@@ -1,0 +1,9 @@
+ibbs sampler.
+    Since the posterior is well-behaved and the sampler converges quickly, we only used 125 iterations for burn-in, and 175 iterations to collect posterior samples.
+    On the full training set with n = 3 this took about 1.5 hours.
+    Perplexities on the test set are given in Table 1.
+    As expected, HDLM gives the worst performance, while HPYLM performs better than IKN.
+    Perhaps surprisingly HPYLM performs slightly worse than MKN.
+    We believe this is because HPYLM is not a perfect model for languages and as a result posterior estimates of the parameters are not optimized for predictive performance.
+    On the other hand parameters in the Kneser-Ney variants are optimized using cross-validation, so are given optimal values for prediction.
+    To validate this conjecture, we also experimented with HPYCV, a hierarchical Pitman-Yor language model where the parameters are obtained by fitting them in a slight generalization of IKN where the strength parameters &#952;|&#8222;|&#8217;s are allo

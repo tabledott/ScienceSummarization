@@ -1,0 +1,9 @@
+ two works differ in many particulars, we stress here the ways in which they are similar, and similar in ways that differ from the approach taken in this paper.
+    In both cases the grammar based language model computes the probability of the next word based upon the previous words of the sentence.
+    More specifically, these grammar-based models compute a subset of all possible grammatical relations for the prior words, and then compute Also, when computing the probability of the next word, both models condition on the two prior heads of constituents.
+    Thus, like a trigram model, they use information about triples of words.
+    Neither of these models uses an immediatehead parser.
+    Rather they are both what we will call strict left-to-right parsers.
+    At each sentence position in strict left-to-right parsing one computes the probability of the next word given the previous words (and does not go back to modify such probabilities).
+    This is not possible in immediate-head parsing.
+    Sometimes the

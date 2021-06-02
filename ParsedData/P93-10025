@@ -1,0 +1,9 @@
+d a model for English-to-French translaassuming that successive sentences translate independently of each other.
+    This value should be relatively large, since F1 is a good translation of El and (F2, F3) is a good translation of E2.
+    Another possible alignment A2 is one where E1 maps to nothing and E2 maps to F1, F2, and F3.
+    We get This value should be fairly low, since the alignment does not map the English sentences to their translations.
+    Hence, if our translation model is accurate we will have In general, the more sentences that are mapped to their translations in an alignment A, the higher the value of P(Y , AV).
+    We can extend this idea to produce an alignment algorithm given a translation model.
+    In particular, we take the alignment of a corpus (C, .T) to be the alignment A that maximizes P(..r , Ale).
+    The more accurate the translation model, the more accurate the resulting alignment will be.
+    However, because the parameters are all of the form P (FAL') where E is a sentence, t

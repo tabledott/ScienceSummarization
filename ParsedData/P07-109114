@@ -1,0 +1,9 @@
+reordering patterns as n increases.
+    The form of reordering rules, and the calculation of reordering probability for a particular node, can also be generalized easily.6 The only problem for the generalized reordering knowledge is that, as there are more classes, data sparseness becomes more severe.
+  
+  
+    The last three sections explain how the S &#8212;*nxS' part of formula 2 is done.
+    The S'&#8212;*T part is simply done by our re-implementation of PHARAOH (Koehn, 2004).
+    Note that nonmonotonous translation is used here since the distance-based model is needed for local reordering.
+    For the nxT &#8212;* T&#65533; part, the factors in consideration include the score of T returned by the decoder, and the reordering probability Pr(S &#8212;* S').
+    In order to conform to the log-linear model used in the decoder, we integrate the two factors by defining the total score of T as formula 3: The first term corresponds to the contribution of syntax-based reordering, while the second term that of the 

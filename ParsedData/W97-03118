@@ -1,0 +1,8 @@
+eated as an NCC: Induce two translation models, a trial translation model that involves the candidate NCC and a base translation model that does not.
+    If the value of the objective function is higher in the trial model than in the base model, then the NCC is valid; otherwise it is not.
+    In theory, this test can be repeated for each sequence of words in the text.
+    In practice, texts contain an enormous number of word sequences (Brown et al., 1992), only a tiny fraction of which are NCCs, and it takes considerable computational effort to induce each translation model.
+    Therefore, it is necessary to test many NCCs on each pair of translation models.
+    Suppose we induce a trial translation model from texts E and F involving a number of NCCs in the language S of E, and compare it to a base translation model without any of those NCCs.
+    We would like to keep the NCCs that caused a net increase in the objective function I and discard those that caused a net decrease.
+    We need some method of assign

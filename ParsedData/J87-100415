@@ -1,0 +1,11 @@
+sing algorithm that is guided by LR parsing tables.
+    The major extension is that nodes in the chart contain more information (LR state numbers) than in conventional chart parsing.
+    In this paper, however, we describe the algorithm as a generalized LR parsing algorithm only.
+    So far, we have focussed on how to accept or reject a sentence.
+    In practice, however, the parser must not only accept or reject sentences but also build the syntactic structure(s) of the sentence (parse forest).
+    The next section describes how to represent the parse forest and how to build it with our parsing algorithm.
+  
+  
+    Our parsing algorithm is an all-path parsing algorithm; that is, it produces all possible parses in case an input sentence is ambiguous.
+    Such all-path parsing is of ten needed in natural language processing to manage temporarily or absolutely ambiguous input sentences.
+    The ambiguity (the number of parses) of a sentence may grow exponentially as the length of a sentence grows (Church and Pa

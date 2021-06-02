@@ -1,0 +1,11 @@
+Again, dependencies tend to decrease performance.
+    On the other hand, combining features that have similar performance on their own is beneficial.
+    We obtain the best performance overall with a two layered model combining topical (+10w) and local (+5w) contexts.
+    Table 3 replicates the same suite of experiments on the BNC corpus.
+    The general trends are similar.
+    Some interesting differences are apparent, however.
+    The sparser layers, notably word n-grams and dependencies, fare comparatively worse.
+    This is expected, since the more precise, local, information is likely to vary strongly across domains.
+    Even when both domains refer to the same sense of a word, it is likely to be used in a different immediate context, and local contextual information learned in one domain will be less effective in the other.
+    Another observable difference is that the combined model without the dependency layer does slightly better than each of the single layers.
+    The 1w+pg combination improves over

@@ -1,0 +1,8 @@
+, the Dice score often over-estimates the association between common words.
+    For instance, the words the and of both score highly when combined with either le or de, simply because these common words frequently co-occur.
+    The GIZA++ models can be used to provide better translation scores, as they enforce competition for alignment beween the words.
+    For this reason, we used the translation probability distribution from Model 1 in addition to the DICE scores.
+    Model 1 is a simple position independent model which can be trained quickly and is often used to bootstrap parameters for more complex models.
+    It models the conditional probability distribution: where p(f|e) are the word translation probabilities.
+    We use both the Dice value and the Model 1 translation probability as real-valued features for each candidate pair, as well as a normalised score over all possible candidate alignments for each target word.
+    We derive a feature from both the Dice and Model 1 translation scores to allow com

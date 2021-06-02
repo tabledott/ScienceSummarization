@@ -1,0 +1,8 @@
+atures cannot model.
+    Since such features typically occur infrequently, the training set consistency must be good enough to yield reliable statistics.
+    Otherwise the specialized features will model noise and perform poorly on test data.
+    Such features can be designed for those words which are especially problematic for the model.
+    The top errors of the model (over the training set) are shown in Table 7; clearly, the model has trouble with the words that and about, among others.
+    As hypothesized in the introduction, better features on the context surrounding that and about should correct the tagging mistakes for these two words, assuming that the tagging errors are due to an impoverished feature set, and not inconsistent data.
+    Specialized features for a given word are constructed by conjoining certain features in the baseline model with a question about the word itself.
+    The features which ask about previous tags and surrounding words now additionally ask about the identity of the current

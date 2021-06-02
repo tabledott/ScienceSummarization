@@ -1,0 +1,10 @@
+t.
+    K&amp;M did not have a true syntax-based language model to use as we have.
+    Thus they divided the language model into two parts.
+    Part one assigns probabilities to the grammar rules using a probabilistic contextfree grammar, while part two assigns probabilities to the words using a bi-gram model.
+    As they acknowledge in (Knight and Marcu, 2002), the word bigram probabilities are also included in the PCFG probabilities.
+    So in their versions of Figures 3 and 4 they have both p(toys  |nns) (from the PCFG) and p(toys  |buy) for the bigram probability.
+    In this model, the probabilities do not sum to one, because they pay the probabilistic price for guessing the word &#8220;toys&#8221; twice, based upon two different conditioning events.
+    Based upon this language model, they prefer shorter sentences.
+    To reiterate this section&#8217;s argument: A noisy channel model is not by itself an appropriate model for sentence compression.
+    In fact, the most likely short sentence will, in gener

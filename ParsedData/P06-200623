@@ -1,0 +1,7 @@
+for applications.
+    There are over 5K num features in DepBank so the overall microaveraged scores for a system will be significantly affected by accuracy on num.
+    We expected our system, which incorporates a tagger with good empirical (97.1%) accuracy on the test data, to recover this feature with 95% accuracy or better, as it will correlate with tags NNx1 and NNx2 (where &#8216;x&#8217; represents zero or more capitals in the CLAWS tagset).
+    However, DepBank treats the majority of prenominal modifiers as adjectives rather than nouns and, therefore, associates them with an adegree rather than a num feature.
+    The PoS tag selected depends primarily on the relative lexical probabilities of each tag for a given lexical item recorded in the tagger lexicon.
+    But, regardless of this lexical decision, the correct GR is recovered, and neither adegree(positive) or num(sg) add anything semantically-relevant when the lexical item is a nominal premodifier.
+    A strategy which only provided a num feature for

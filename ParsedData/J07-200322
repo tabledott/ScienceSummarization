@@ -1,0 +1,7 @@
+-pointers to the antecedents from which the item was deduced (for axioms, an empty tuple is used).
+    If two items are added to a cell that are equivalent except for their weights or back-pointers, then they are merged (in the MT decoding literature, this is also known as hypothesis recombination), with the merged item taking its weight and back-pointers from the better of the two equivalent items.
+    (However, if we are interested in finding the k-best derivations, the merged item gets the multiset of all the tuples of back-pointers from the equivalent items.
+    These backpointers are used below in Section 5.2.)
+    The algorithm in Figure 4 does not completely search the space of proofs, because it has a constraint that prohibits any X from spanning a substring longer than a fixed limit &#923; on the French side, corresponding to the maximum length constraint on initial rules during training.
+    This gives the decoding algorithm an asymptotic time complexity of O(n).
+    In principle &#923; should match

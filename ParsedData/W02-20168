@@ -1,0 +1,7 @@
+at works as a binary classifier, since the cascaded chunking model parses a sentence deterministically only deciding whether or not the current segment modifies the segment on its immediate right hand side.
+    Probabilities of dependencies are not always necessary for the cascaded chunking model.
+    Linguistic features that are supposed to be effective in Japanese dependency analysis are: head words and their parts-of-speech tags, functional words and inflection forms of the words that appear at the end of segments, distance between two segments, existence of punctuation marks.
+    As those are solely defined by the pair of segments, we refer to them as the static features.
+    Japanese dependency relations are heavily constrained by such static features since the inflection forms and postpositional particles constrain the dependency relation.
+    However, when a sentence is long and there are more than one possible dependency, static features, by themselves cannot determine the correct dependency.
+    To c

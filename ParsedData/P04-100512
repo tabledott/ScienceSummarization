@@ -1,0 +1,5 @@
+ training data.
+    In order to estimate these weights we need to know the TAG derivation of each sentence in the training data.
+    In order to uniquely determine this we need the not just the locations of each reparandum, interregnum and repair (which are annotated in the corpus) but also the crossing dependencies between the reparandum and repair words, as indicated in Figure 1.
+    We obtain these by aligning the reparandum and repair strings of each repair using a minimum-edit distance string aligner with the following alignment costs: aligning identical words costs 0, aligning words with the same POS tag costs 2, an insertion or a deletion costs 4, aligning words with POS tags that begin with the same letter costs 5, and an arbitrary substitution costs 7.
+    These costs were chosen so that a substitution will be selected over an insertion followed by a deletion, and the lower cost for substitutions involving POS tags beginning with the same letter is a rough and easy way of establishing a preference fo

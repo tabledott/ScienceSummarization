@@ -1,0 +1,10 @@
+recall Precision = Rc/R Recall = Rc/Kwhere Rc is number of correct answers in the response, R the total number of answers in the re sponse, and K the total number of answers in the key.
+			For the relaxed scoring scheme, precision and recall are defined as Precision = Rcw/R Recall = Rcw/K where Rcw reflects the weighted number of correctanswers.
+			A response is not simply counted as 1 (correct) or 0 (incorrect), but is assigned one of the val ues in table 1.
+			B O A B-O O-A V B 1 0 0 0.5 0 0.33 O 0 1 0 0.5 0.5 0.33 A 0 0 1 0 0.5 0.33 B-O 0.5 0.5 0 1 0.5 0.67 O-A 0 0.5 0.5 0.5 1 0.67 V 0.33 0.33 0.33 0.67 0.67 1 Table 1: Evaluation weights This scheme gives partial credit for disjunctions,but not so much that non-commitment edges out pre cise assignments.
+			For example, assigning VAGUE as the relation type for every temporal relation results in a precision of 0.33.
+			77
+	
+	
+			Six teams participated in the TempEval tasks.
+			Three of the teams used statistics exclusively, one used arule-based system and th

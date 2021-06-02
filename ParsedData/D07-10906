@@ -1,0 +1,6 @@
+on ends at either unigrams or at the uniform distri bution for zero-grams.
+			We introduce a similar but simpler scheme,named Stupid Backoff 1 , that does not generate nor malized probabilities.
+			The main difference is that we don?t apply any discounting and instead directly use the relative frequencies (S is used instead of P to emphasize that these are not probabilities but scores): S(wi|wi?1i?k+1) = ? ?
+			f(wii?k+1) f(wi?1i?k+1) if f(wii?k+1) &gt; 0 ?S(wi|wi?1i?k+2) otherwise (5) 1The name originated at a time when we thought that such a simple scheme cannot possibly be good.
+			Our view of the scheme changed, but the name stuck.
+			859In general, the backoff factor ? may be made to depend on k. Here, a single value is used and heuris tically set to ? = 0.4 in all our experiments2 . The recursion ends at unigrams: S(wi) = f(wi) N (6) with N being the size of the training corpus.Stupid Backoff is inexpensive to calculate in a dis tributed environment while approaching the quality of Kneser-Ney smoothing 

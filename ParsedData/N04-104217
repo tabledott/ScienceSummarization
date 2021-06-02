@@ -1,0 +1,10 @@
+t abstract.
+    Interestingly, HMM performs much better on abstract field (98% versus 93.8% F-measure) which pushes the overall accuracy up.
+    A better comparison can be made by comparing the field-based F-measures.
+    Here, in comparison to the SVM, CRFs improve the F1 measure from 89.7% to 93.9%, an error reduction of 36%.
+    The results of different regularization methods are summarized in Table (3).
+    Setting Gaussian variance of features depending on feature count performs better, from 90.5% to 91.2%, an error reduction of 7%, when only using supported features, and an error reduction of 9% when using supported and unsupported features.
+    Results are averaged over 5 random runs, with an average variance of 0.2%.
+    In our experiments we found the Gaussian prior to consistently perform better than the others.
+    Surprisingly, exponential prior hurts the performance significantly.
+    It over penalizes the likelihood (significantly increasing cost&#8212;defined as negative penalized log-likelihoo

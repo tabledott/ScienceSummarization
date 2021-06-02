@@ -1,0 +1,7 @@
+to compute CORE ID, we compare the following sets of labeled spans: Classification Measures (CLS).
+    These are performance on argument spans which were also guessed to be argument spans (but possibly the exact label was wrong).
+    In other words, these measures ignore the ARG vs. NONE confusions.
+    They ignore all spans, which were incorrectly labeled NONE, or incorrectly labeled with an argument label, when the correct label was NONE.
+    This is different from &#8220;classification accuracy&#8221; used in previous work to mean the accuracy of the system in classifying spans when the correct set of argument spans is given.
+    To compute CLS measures, we remove all spans from Sguessed and Scorrect that do not occur in both sets, and compare the resulting sets.
+    For example, to compute the ALL CLS measures, we need to compare the following sets of labeled spans: The rest of the spans were removed from both sets because they were labeled NONE according to one of the labelings and non-NONE according to 

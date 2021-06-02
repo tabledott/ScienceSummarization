@@ -1,0 +1,7 @@
+rmalization was performed.
+    It is likely that further processing, such as lemmatization, might be useful, producing smaller and better language models, but this was not evaluated for this paper.
+    Content selection requires that the system learn a model of the relationship between the appearance of some features in a document and the appearance of corresponding features in the summary.
+    This can be modeled by estimating the likelihood of some token appearing in a summary given that some tokens (one or more, possibly different tokens) appeared in the document to be summarized.
+    The very simplest, &#8220;zero-level&#8221; model for this relationship is the case when the two tokens in the document and the summary are identical.
+    This can be computed as the conditional probability of a word occurring in the summary given that the word appeared in the document: where and represent the bags of words that the headline and the document contain.
+    Once the parameters of a content selection model have b

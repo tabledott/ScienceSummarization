@@ -1,0 +1,6 @@
+ Models (HMMs).
+    Since our goal here is to compare algorithms rather than achieve the best performance, we keep the models simple by ignoring morphology and capitalization (two very strong cues in English) and treat each word as an atomic entity.
+    This means that the model parameters 0 consist of the HMM stateto-state transition probabilities and the state-to-word emission probabilities.
+    In virtually all statistical approaches the parameters 0 are chosen or estimated on the basis of training data d. This paper studies unsupervised estimation, so d = w = (w1, ... , wn) consists of a sequence of words wi containing all of the words of training corpus appended into a single string, as explained below.
+    Maximum Likelihood (ML) is the most common estimation method in computational linguistics.
+    A Maximum Likelihood estimator sets the parameters to the value 0&#65533; that makes the likelihood Ld of the data d as large as possible: In this paper we use the Inside-Outside algorithm, which is a specia

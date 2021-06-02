@@ -1,0 +1,6 @@
+i-class classification.
+			1046 kernel with degree 2.
+			Probabilities were estimated for SVM outputs using the method described in (Platt, 1999), but accuracy improvements were not observed during development when these esti mated probabilities were used instead of simply the single best action given by the classifier (with probability 1.0), so in practice the SVM parsing models we used were deterministic.
+			At test time, each input sentence is parsed using each of the three LR models, and the three result ing dependency structures are combined according to the maximum-spanning-tree parser combination scheme6 (Sagae and Lavie, 2006a) where each de pendency proposed by each of the models has the same weight (it is possible that one of the more sophisticated weighting schemes proposed by Sa gae and Lavie may be more effective, but these were not attempted).
+			The combined dependency tree is the final analysis for the input sentence.
+			Although it is clear that fine-tuning could provide accuracy improvements

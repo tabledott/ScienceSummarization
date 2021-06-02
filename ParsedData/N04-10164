@@ -1,0 +1,5 @@
+ tasks in the present paper: Literal queries use the quoted n-gram directly as a search term for Altavista (e.g., the bigram history changes expands to the query &amp;quot;history changes&amp;quot;).
+    Near queries use Altavista&#8217;s NEAR operator to expand the n-gram; a NEAR b means that a has to occur in the same ten word window as b; the window is treated as a bag of words (e.g., history changes expands to &amp;quot;history&amp;quot; NEAR &amp;quot;changes&amp;quot;).
+    Inflected queries are performed by expanding an n-gram into all its morphological forms.
+    These forms are then submitted as literal queries, and the resulting hits are summed up (e.g., history changes expands to &amp;quot;history change&amp;quot;, &amp;quot;histories change&amp;quot;, &amp;quot;history changed&amp;quot;, etc.).
+    John Carroll&#8217;s suite of morphological tools (morpha, morphg, and ana) was used to generate inflected forms of verbs and nouns.2 In certain cases (detailed below), determiners were inserted before 

@@ -1,0 +1,14 @@
+thereby obtaining slightly improved alignments.
+    2.
+    For each translation direction we calculate the Viterbi-alignment of the translation models determined in the previous step.
+    Thus we get two alignment vectors crj1. and bf for each sentence.
+    We increase the quality of the alignments by combining the two alignment vectors into one alignment matrix using the following method.
+    A1 = {(aj , j)lj = 1 .
+    .
+    .
+    J} and A2 = {(i,bi)li = 1 ... /} denote the set of links in the two Viterbi-alignments.
+    In a first step the intersection A = A1 n A2 is determined.
+    The elements within A are justified by both Viterbi-alignments and are therefore very reliable.
+    We now extend the alignment A iteratively by adding links (i, j) occurring only in A1 or in A2 if they have a neighbouring link already in A or if neither the word fi nor the word ei are aligned in A.
+    The alignment (i, j) has the neighbouring links (i &#8212; 1,j), (i, j &#8212; 1), (i + 1,j), and (i, j + 1).
+    In the Verbmo

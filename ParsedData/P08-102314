@@ -1,0 +1,7 @@
+003), and apply the tree-to-string rule extraction algorithm (Galley et al., 2006; Liu et al., 2006), which resulted in 346K translation rules.
+    Note that our rule extraction is still done on 1-best parses, while decoding is on k-best parses or packed forests.
+    We also use the SRI Language Modeling Toolkit (Stolcke, 2002) to train a trigram language model with Kneser-Ney smoothing on the English side of the bitext.
+    We use the 2002 NIST MT Evaluation test set as our development set (878 sentences) and the 2005 NIST MT Evaluation test set as our test set (1082 sentences), with on average 28.28 and 26.31 words per sentence, respectively.
+    We evaluate the translation quality using the case-sensitive BLEU-4 metric (Papineni et al., 2002).
+    We use the standard minimum error-rate training (Och, 2003) to tune the feature weights to maximize the system&#8217;s BLEU score on the dev set.
+    On dev and test sets, we prune the Chinese parse forests by the forest pruning algorithm in Section 3.4 with a th

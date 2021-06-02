@@ -1,0 +1,10 @@
+ld be P(profits I NP, S, rose).
+    This nonterminal could expand with any of the rules S &#8594; 0 in the grammar.
+    The rule probability is defined as P(S &#8594; 0|rose, S, VP).
+    So the rule probability depends on the nonterminal being expanded, its headword, and also its parent.
+    The next few sections give further explanation of the differences between Charniak&#8217;s models and the models in this article. features of Charniak&#8217;s model.
+    First, the rule probabilities are conditioned on the parent of the nonterminal being expanded.
+    Our models do not include this information, although distinguishing recursive from nonrecursive NPs can be considered a reduced form of this information.
+    (See section 7.3.2 for a discussion of this distinction; the arguments in that section are also motivation for Charniak&#8217;s choice of conditioning on the parent.)
+    Second, Charniak uses word-class information to smooth probabilities and reports a 0.35% improvement from this feature.
+    Finally, 

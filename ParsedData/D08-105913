@@ -1,0 +1,11 @@
+here n is the length of the sentence.
+    Therefore, the decoder has linear time complexity, given a fixed beam size.
+    Because the same transition actions as the MaltParser are used to build each item, the projectivity of the output dependency tree is ensured.
+    We use a linear model to score each transition action, given a context: N0t, but not STwt or STwN0w), we combine features manually.
+    As with the graph-based parser, we use the discriminative perceptron (Collins, 2002) to train the transition-based model (see Figure 5).
+    It is worth noticing that, in contrast to MaltParser, which trains each action decision individually, our training algorithm globally optimizes all action decisions for a parse.
+    Again, &#8220;early update&#8221; and averaging parameters are applied to the training process.
+  
+  
+    The graph-based and transition-based approaches adopt very different views of dependency parsing.
+    McDonald and Nivre (2007) showed that the MSTParser and MaltParser produce different erro

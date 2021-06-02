@@ -1,0 +1,6 @@
+ngs such as boosting of decision trees or neural networks, it is generally not feasible to perform an exhaustive search (with O(m) time complexity) for the feature which has the greatest impact on the exponential7 loss function.
+    Instead, an approximate search is performed.
+    In boosting approaches, this approximate search is achieved through a protocol in which at each round of boosting, a &#8220;distribution&#8221;over the training examples is maintained.
+    The distribution can be interpreted as assigning an importance weight to each training example, most importantly giving higher weight to examples which are incorrectly classified.
+    At each round of boosting the distribution is passed to an algorithm such as a decision tree or neural network learning method, which attempts to return a feature (a decision tree, or a neural network parameter setting) which has a relatively low error rate with respect to the distribution.
+    The feature that is returned is then incorporated into the linear combina

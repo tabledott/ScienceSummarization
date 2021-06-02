@@ -1,0 +1,8 @@
+obtain some idea of whether the schemes were converging, we performed the following oracle experiment.
+    We took the CCG derivations from CCGbank corresponding to the sentences in DepBank, and forced the parser to produce goldstandard derivations, outputting the newly created GRs.
+    Treating the DepBank GRs as a gold-standard, and comparing these with the CCGbank GRs, gave precision and recall scores of only 76.23% and 79.56% respectively (using the RASP evaluation tool).
+    Thus given the current mapping, the perfect CCGbank parser would achieve an F-score of only 77.86% when evaluated against DepBank.
+    On inspecting the output, it was clear that a number of general rules could be applied to bring the schemes closer together, which was implemented as a post-processing script.
+    The first set of changes deals with coordination.
+    One significant difference between DepBank and CCGbank is the treatment of coordinations as arguments.
+    Consider the example The president and chief executive officer 

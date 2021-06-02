@@ -1,0 +1,8 @@
+tch involves a network-to-network alignment problem rather than sequence-to-sequence.
+    When we first integrated this recognizer with TINA, we used a &amp;quot;wire&amp;quot; connection, in that the recognizer produced a single best output, which was then passed to TINA for parsing.
+    A simple word-pair grammar constrained the search space.
+    If the parse failed, then the sentence was rejected.
+    We have since improved the interface by incorporating a capability in the recognizer to propose additional solutions in turn once the first one fails to parse (Zue et al. 1991) To produce these &amp;quot;N-best&amp;quot; alternatives, we make use of a standard A* search algorithm (Hart 1968, Jelinek 1976).
+    Both the A* and the Viterbi search are left-to-right search algorithms.
+    However, the A* search is contrasted with the Viterbi search in that the set of active hypotheses take up unequal segments of time.
+    That is, when a hypothesis is scoring well it is allowed to procede forward, whereas poorer 

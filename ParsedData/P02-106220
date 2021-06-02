@@ -1,0 +1,9 @@
+used the development set to pick the best values for tunable parameters in each algorithm.
+    For boosting, the main parameter to pick is the number of rounds, .
+    We ran the algorithm for a total of 300,000 rounds, and found that the optimal value for F-measure on the development set occurred after 83,233 rounds.
+    For the voted perceptron, the representation was taken to be a vector where is a parameter that influences the relative contribution of the log-likelihood term versus the other features.
+    A value of was found to give the best results on the development set.
+    Figure 5 shows the results for the three methods on the test set.
+    Both of the reranking algorithms show significant improvements over the baseline: a 15.6% relative reduction in error for boosting, and a 17.7% relative error reduction for the voted perceptron.
+    In our experiments we found the voted perceptron algorithm to be considerably more efficient in training, at some cost in computation on test examples.
+    Another att

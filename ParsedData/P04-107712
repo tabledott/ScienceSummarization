@@ -1,0 +1,7 @@
+ions that try to maximize their precision scores, BLEU adds a brevity penalty, BP, to the formula: Where |c |is the length of the candidate translation and |r |is the length of the reference translation.
+    The BLEU formula is then written as follows: The weighting factor, wn, is set at 1/N.
+    Although BLEU has been shown to correlate well with human assessments, it has a few things that can be improved.
+    First the subjective application of the brevity penalty can be replaced with a recall related parameter that is sensitive to reference length.
+    Although brevity penalty will penalize candidate translations with low recall by a factor of e(1|r|/|c|), it would be nice if we can use the traditional recall measure that has been a well known measure in NLP as suggested by Melamed (2003).
+    Of course we have to make sure the resulting composite function of precision and recall is still correlates highly with human judgments.
+    Second, although BLEU uses high order n-gram (n&gt;1) matches to favor cand

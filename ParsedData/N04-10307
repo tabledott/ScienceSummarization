@@ -1,0 +1,10 @@
+ng n binary classifiers for a n-class problem.Since the training time taken by SVMs scales exponen tially with the number of examples, and about 80% of the nodes in a syntactic tree have NULL argument labels, we found it efficient to divide the training process into two stages, while maintaining the same accuracy: 1.
+			Filter out the nodes that have a very high probabil-.
+			ity of being NULL.
+			A binary NULL vs NON-NULL classifier is trained on the entire dataset.
+			A sigmoid function is fitted to the raw scores to convert the scores to probabilities as described by (Platt, 2000).
+			2.
+			The remaining training data is used to train OVA.
+			classifiers, one of which is the NULL-NON-NULL classifier.With this strategy only one classifier (NULL vs NON NULL) has to be trained on all of the data.
+			The remaining OVA classifiers are trained on the nodes passed by thefilter (approximately 20% of the total), resulting in a con siderable savings in training time.
+			In the testing stage, we do not perform any fi

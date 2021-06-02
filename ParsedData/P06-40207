@@ -1,0 +1,9 @@
+e exploited in customisation and in parse ranking.
+    Users can specify that certain rules should not be used and so to some extent tune the parser to different genres without the need for retraining.
+    The current version of the grammar finds at least one parse rooted in S for about 85% of the Susanne corpus (used for grammar development), and most of the remainder consists of phrasal fragments marked as independent text sentences in passages of dialogue.
+    The coverage of our WSJ test data is 84%.
+    In cases where there is no parse rooted in S, the parser returns a connected sequence of partial parses covering the input.
+    The criteria are partial parse probability and a preference for longer but non-lexical combinations (Kiefer et al., 1999).
+    A non-deterministic LALR(1) table is constructed automatically from a CF &#8216;backbone&#8217; compiled from the feature-based grammar.
+    The parser builds a packed parse forest using this table to guide the actions it performs.
+    Probabilities are a

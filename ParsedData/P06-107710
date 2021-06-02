@@ -1,0 +1,8 @@
+e TATs.
+    Given a usable TAT z, if T(z) is equal to T, then 5(z) is a candidate translation of T. If T(z) covers only a portion of T, we have to compute a list of candidate translations for T by replacing the non-terminals of 5(z) with candidate translations of the corresponding uncovered subtrees.
+    For example, when computing the candidate translations for the tree rooted at node 8, the TAT used in Figure 5 covers only a portion of the parse tree in Figure 4.
+    There are two uncovered subtrees that are rooted at node 2 and node 7 respectively.
+    Hence, we replace the third symbol with the candidate translations in stack 2 and the first symbol with the candidate translations in stack 7.
+    At the same time, the feature values and probabilities are also accumulated for the new candidate translations.
+    To speed up the decoder, we limit the search space by reducing the number of TATs used for each input node.
+    There are two ways to limit the TAT table size: by a fixed limit (tatTable-limit) of ho

@@ -1,0 +1,9 @@
+ joint, discriminative model that we use, which is a feature-based CRF-CFG parser operating over tree structures augmented with NER information.
+    We then discuss in detail how we make use of the recently developed OntoNotes corpus both for training and testing the model, and then finally present the performance of the model and some discussion of what causes its superior performance, and how the model relates to prior work.
+  
+  
+    When constructing a joint model of parsing and named entity recognition, it makes sense to think about how the two distinct levels of annotation may help one another.
+    Ideally, a named entity should correspond to a phrase in the constituency tree.
+    However, parse trees will occasionally lack some explicit structure, such as with right branching NPs.
+    In these cases, a named entity may correspond to a contiguous set of children within a subtree of the entire parse.
+    The one thing that should never happen is for a named entity span to have crossing brackets with any 

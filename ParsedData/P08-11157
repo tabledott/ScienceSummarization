@@ -1,0 +1,8 @@
+ng, the goal is a deduction that covers the spans of the entire input lattice [5, 0, |V  |&#8722; 1].
+    The three inference rules are: 1) match a terminal symbol and move across one edge in the lattice 2) move across an E-edge without advancing the dot in an incomplete rule 3) advance the dot across a nonterminal symbol given appropriate antecedents.
+    A target language model is necessary to generate fluent output.
+    To do so, the grammar is intersected with an n-gram LM.
+    To mitigate the effects of the combinatorial explosion of non-terminals the LM intersection entails, we use cube-pruning to only consider the most promising expansions (Chiang, 2007).
+    A second important class of translation models includes those based formally on FSTs.
+    We present a description of the decoding process for a word lattice using a representative FST model, the phrase-based translation model described in Koehn et al. (2003).
+    Phrase-based models translate a foreign sentence f into the target language e by bre

@@ -1,0 +1,9 @@
+propriate quantifier.
+    Thus, applying the term &lt;q x r(x) &gt; to a wff containing that complex term, say, p( &lt;q x r(x) &gt; ), yields the quantified wff Computational Linguistics, Volume 13, Numbers 1-2, January-June 1987 49 Jerry R. Hobbs and Stuart M. Shieber An Algorithm for Generating Quantifier Scopings q(x, r(x), p(x)).
+    This is the primitive operation by which complex terms are removed from a wff and quantified wffs are introduced.
+    It is implemented by the function apply.
+    The generation of a scoping from a wff proceeds in two stages.
+    First, the opaque argument positions within the wff are scoped.
+    The function pull-opaque-args performs this task by replacing wffs in opaque argument positions by a (full or partial) scoping of the original wff.
+    For instance, if p were a predicate opaque in its only argument, then, for the wff p(s( &lt;q x r(x) &gt; )), pullopaque-args would generate the wff p(q(x, r(x), s(x))) or the unchanged wff p(s( &lt; q x r(x) &gt; )).
+    In the form

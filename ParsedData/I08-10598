@@ -1,0 +1,7 @@
+a classifier for preposition choice and determiner choice.
+			Currently we train decision tree classifiers with the WinMine toolkit (Chickering 2002).
+			We also experimented with linear SVMs, but decision trees performed better overall and training and parameter optimization were considerably more efficient.
+			Before training the classifiers, we perform feature ablation by imposing a count cutoff of 10, and by limiting the number of features to the top 75K features in terms of log likelihood ratio (Dunning 1993).
+			We train two separate classifiers for both determiners and preposition: ? decision whether or not a determiner/preposition should be present (presence/absence or pa classifier) ? decision which determiner/preposition is the most likely choice, given that a determiner/preposition is present (choice or ch classifier) In the case of determiners, class values for the ch classifier are a/an and the.
+			Preposition choice (equivalent to the ?confusion set?
+			of a contextual speller) is limited to a s

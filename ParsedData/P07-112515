@@ -1,0 +1,9 @@
+ learner returns a labelled data set for each class, from which a classifier can be trained.
+    We can easily derive a classifier using the estimates from our learning model by: where a is an arbitrary threshold used to control the precision/recall balance.
+    For comparison purposes, we also use Joachims&#8217; SVMlight (Joachims, 1999).
+  
+  
+    To examine the practical efficacy of the learning and classification models we have presented, we use the following experimental method: The batch size for each iteration is set to 0.001 * |U|.
+    After each learning iteration, we compute the precision/recall BEP for the spec class using both classifiers trained on the current labelled data.
+    We use BEP because it helps to mitigate against misleading results due to discrepancies in classification threshold placement.
+    Disadvantageously, BEP does not measure a classifier&#8217;s performance across the whole of the recall/precision spectrum (as can be obtained, for instance, from receiver-operating character

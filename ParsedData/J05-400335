@@ -1,0 +1,11 @@
+allel only those pairs for which the classifier probability is above a certain threshold.
+    In the experiments from Section 4.1, we use the (default) threshold of 0.5, while in Section 4.2 we use 0.7.
+  
+  
+    Our main goal is to extract, from an in-domain comparable corpus, parallel training data that improves the performance of an out-of-domain-trained SMT system.
+    Thus, we evaluate our extracted corpora by showing that adding them to the out-of-domain training data of a baseline MT system improves its performance.
+    We first evaluate the extracted corpora presented in Section 4.1.
+    The extraction system used to obtain each of those corpora made use of a certain initial out-of-domain parallel corpus.
+    We train a Baseline MT system on that initial corpus.
+    We then train another MT system (which we call PlusExtracted) on the initial corpus plus the extracted corpus.
+    In order to compare the quality of our extracted data with that of human-translated data from the same domain, we also train

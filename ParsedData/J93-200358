@@ -1,0 +1,9 @@
+e threshold as iterations progress, fewer and fewer probabilities survive.
+    By the final iteration, only 1, 658, 364 probabilities survive, an average of about 39 French words for each English word.
+    Although the entire t array has 2, 437, 020, 096 entries, and we need to store it twice, once as probabilities and once as counts, it is clear from the preceeding remarks that we need never deal with more than about 25 million counts or about 12 million probabilities.
+    We store these two arrays using standard sparse matrix techniques.
+    We keep counts as pairs of bytes, but allow for overflow into 4 bytes if necessary.
+    In this way, it is possible to run the training program in less than 100 megabytes of memory.
+    While this number would have seemed extravagant a few years ago, today it is available at modest cost in a personal workstation.
+    As we have described, when the In model is neither Model 1 nor Model 2, we evaluate the count sums over only some of the possible alignments.
+    Many of t

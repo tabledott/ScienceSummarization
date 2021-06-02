@@ -1,0 +1,9 @@
+e weightings of WSJ and NANC data.
+    One hypothesis we consider is that the reranked NANC data incorporated some of the features from the reranker.
+    If this were the case, we would not see an improvement when evaluating a reranking parser on the same models.
+    In Table 2, we see that the new NANC data contains some information orthogonal to the reranker and improves parsing accuracy of the reranking parser.
+    Up to this point, we have only considered giving our true training data a relative weight of one.
+    Increasing the weight of the Wall Street Journal data should improve, or at least not hurt, parsing performance.
+    Indeed, this is the case for both the parser (figure not shown) and reranking parser (Figure 1).
+    Adding more weight to the Wall Street Journal data ensures that the counts of our events will be closer to our more accurate data source while still incorporating new data from NANC.
+    While it appears that the performance still levels off after adding about one million sentences

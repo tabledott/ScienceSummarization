@@ -1,0 +1,7 @@
+uot;Controls&amp;quot; and &amp;quot;computerized&amp;quot;), the first tag is not the K-best tags and probabilities. correct one.
+    However, in all instances the correct tag is included in the set.
+    Note the first word, &amp;quot;Bailey,&amp;quot; is unknown to the system, therefore, all of the open class tags are possible.
+    In order to reduce the ambiguity further, we tested various ways to limit how many tags were returned based on their probabilities.
+    Often one tag is very likely and the others, while possible, are given a low probability, as in the word &amp;quot;in&amp;quot; above.
+    Therefore, we tried removing all tags whose probability was less than some arbitrary threshold (similar to de Marcken's &amp;quot;factor&amp;quot;), for example removing all tags whose likelihood is more than e2 less likely than the most likely tag.
+    So only tags within the threshold 2.0 of the most likely would be included (i.e., if the most likely tag had a log probability of &#8212;0.19, only tags with a

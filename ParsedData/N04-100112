@@ -1,0 +1,5 @@
+, a highly inflected language, has linguistic peculiarities that affect any mention detection system.
+    An important aspect that needs to be addressed is segmentation: which style should be used, how to deal with the inherent segmentation ambiguity of mention names, especially persons and locations, and, finally, how to handle the attachment of pronouns to stems.
+    Arabic blank-delimited words are composed of zero or more prefixes, followed by a stem and zero or more suffixes.
+    Each prefix, stem or suffix will be called a token in this discussion; any contiguous sequence of tokens can represent a mention.
+    For example, the word &#8220;trwmAn&#8221; (translation: &#8220;Truman&#8221;) could be segmented in 3 tokens (for instance, if the word was not seen in the training data): trwmAn t rwm An which introduces ambiguity, as the three tokens form really just one mention, and, in the case of the word &#8220;tmnEh&#8221;, which has the segmentation tmnEh t mnE h the first and third tokens should both be 

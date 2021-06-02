@@ -1,0 +1,7 @@
+thi, and Ullman 1986).
+    The LEFT-ARCl and RIGHTARCsl transitions correspond to reduce actions, replacing a head-dependent structure with its head, whereas the SHIFT transition is exactly the same as the shift action.
+    One peculiarity of the transitions, as defined here, is that the &#8220;reduce&#8221; transitions apply to one node on the stack and one node in the buffer, rather than two nodes on the stack.
+    The reason for this formulation is to facilitate comparison with the arc-eager parser described in the next section and to simplify the definition of terminal configurations.
+    By way of example, Figure 4 shows the transition sequence needed to parse the English sentence in Figure 2.
+    Theorem 1 The arc-standard, stack-based algorithm is correct for the class of projective dependency forests.
+    To show the soundness of the algorithm, we show that the dependency graph defined by the initial configuration, Gcs(x) = (Vx, 0), is a projective dependency forest, and that every transition preserve

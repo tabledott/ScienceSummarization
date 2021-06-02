@@ -1,0 +1,8 @@
+scribed in Section 4.4.
+    Ideally, this model predicts the start position of the next phrase.
+    But as predicting the exact position is rather difficult, we group the possible start positions into classes.
+    In the simplest case, we use only two classes.
+    One class for the positions to the left and one class for the positions to the right.
+    As a refinement, we can use four classes instead of two: 1) one position to the left, 2) more than one positions to the left, 3) one position to the right, 4) more than one positions to the right.
+    In general, we use a parameter D to specify 2 &#183; D classes of the types: Let cj,j&#8242; denote the orientation class for a movement from source position j to source position j&#8242; as illustrated in Figure 1.
+    In the case of two orientation classes, cj,j&#8242; is defined as: r left, if j&#8242; &lt; j cj,j&#8242; =right, if j&#8242; &gt; j Then, the reordering model has the form p(cj,j&#8242;|fJ1 , eI1, i, j) A well-founded framework for directly modeli

@@ -1,0 +1,6 @@
+ data that corresponds to a given set of attributes.
+    Its performance is intended to serve as a baseline result to the more sophisticated models discussed later.
+    Specifically, nlgi(A) returns the phrase that corresponds to the attribute set A: [empty string] TA = where TA are the phrases that have occurred with A in the training data, and where C(phrase, A) is the training data frequency of the natural language phrase phrase and the set of attributes A. NLG1 will fail to generate anything if A is a novel combination of attributes.
+    The surface generation system NLG2 assumes that the best choice to express any given attribute-value set is the word sequence with the highest probability that mentions all of the input attributes exactly once.
+    When generating a word, it uses local information, captured by word n-grams, together with certain non-local information, namely, the subset of the original attributes that remain to be generated.
+    The local and non-local information is integrated with use o

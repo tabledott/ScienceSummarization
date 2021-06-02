@@ -1,0 +1,6 @@
+ator is made substantially stronger if baseNPs are reduced to a single word.
+    Second, it means that words internal to baseNPs are not included in the co-occurrence counts in training data.
+    Otherwise, in a phrase like 'The Securities and Exchange Commission closed yesterday', pre-modifying nouns like 'Securities' and 'Exchange' would be included in cooccurrence counts, when in practice there is no way that they can modify words outside their baseNP.
+    The baseNP model can be viewed as tagging the gaps between words with S(tart), C(ontinue), E(nd), B(etween) or N(u11) symbols, respectively meaning that the gap is at the start of a BaseNP, continues a BaseNP, is at the end of a BaseNP, is between two adjacent baseNPs, or is between two words which are both not in BaseNPs.
+    We call the gap before the ith word Gi (a sentence with n words has n &#8212; 1 gaps).
+    For example, [ John Smith] [ the president ] of [ IBM ] has announced [ his resignation] [ yesterday ] John C Smith B the C president E of S

@@ -1,0 +1,8 @@
+
+    In our experiments, we used a corpus of sentences each with one word that the system did not know.
+    To create the corpus, we began with a corpus of sentences known to parse from a personnel question-answering domain.
+    We then replaced one word in each sentence with an undefined word.
+    For example, in the following sentence, the word &amp;quot;contact&amp;quot; is undefined in the system: Who in Division Four is the contact for MIT?
+    That word has both a noun and a verb part of speech; however, the pattern of parts of speech of the words surrounding &amp;quot;contact&amp;quot; causes the tri-tag model to return a high probability that the word is a noun.
+    Using unification variables for all possible features of a noun, the parser produces multiple parses.
+    Applying the context-free rule probabilities to select the most probable of the resulting parses allows the system to conclude both syntactic and semantic facts about &amp;quot;contact.&amp;quot; Syntactically, the system discovers tha

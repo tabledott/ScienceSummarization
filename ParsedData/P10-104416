@@ -1,0 +1,10 @@
+ of expectations over the posterior distribution as opposed to estimating maximum likelihood parameters.
+    In addition, the integration allows the use of sparse priors, which are typically more appropriate for natural language data.
+    In all experiments we use hyperparameters &#945; = 771 = 772 = 0.1.
+    We generated initial code for our samplers using the Hierarchical Bayes Compiler (Daume III, 2007).
+    There are several advantages to using topic models for our task.
+    First, they naturally model the class-based nature of selectional preferences, but don&#8217;t take a pre-defined set of classes as input.
+    Instead, they compute the classes automatically.
+    This leads to better lexical coverage since the issue of matching a new argument to a known class is side-stepped.
+    Second, the models naturally handle ambiguous arguments, as they are able to assign different topics to the same phrase in different contexts.
+    Inference in these models is also scalable &#8211; linear in both the size of 

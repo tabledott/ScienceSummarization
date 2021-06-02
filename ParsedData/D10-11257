@@ -1,0 +1,9 @@
+er for certain definitions of fi, it is possible to efficiently compute argmaxy|i&#8712;Zi fi(y|i) for any value of i, typically using dynamic programming.
+    (Here we use Zi to refer to the set of all possible values for y|i: specifically, Z0 = {0,1}n and for i =&#65533; 0, Zi = {0,1}n&#8722;1.)
+    In these cases we can efficiently compute where Z = {z : z|i E Zi for i = 0 ... n} by simply computing z&#8727;|i = argmaxz|i&#8712;Zi fi(z|i) for i = 0 ... n. Eq.
+    3 can be considered to be an approximation to Eq.
+    1, where we have replaced Y with Z.
+    We will make direct use of this approximation in the dual decomposition parsing algorithm.
+    Note that Y C Z, and in all but trivial cases, Y is a strict subset of Z.
+    For example, a structure z E Z could have z(i, j) = z(j, i) = 1 for some (i, j); it could contain longer cycles; or it could contain words that do not modify exactly one head.
+    Nevertheless, with suitably powerful functions fi&#8212;for example functions based on discriminative mode

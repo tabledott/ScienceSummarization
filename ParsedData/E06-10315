@@ -1,0 +1,10 @@
+d candidate sentence, the higher we want the measure to evaluate the distance between these sentences.
+    State-of-the-art evaluation measures for MT penalize movement of blocks rather severely: ngram based scores such as BLEU or NIST still yield a high unigram precision if blocks are reordered.
+    For higher-order n-grams, though, the precision drops.
+    As a consequence, this affects the overall score significantly.
+    WER, which is based on Levenshtein distance, penalizes the reordering of blocks even more heavily.
+    It measures the distance by substitution, deletion and insertion operations for each word in a relocated block.
+    PER, on the other hand, ignores the ordering of the words in the sentences completely.
+    This often leads to an overly optimistic assessment of translation quality.
+    The approach we pursue in this paper is to extend the Levenshtein distance by an additional operation, namely block movement.
+    The number of blocks in a sentence is equal to the number of gaps among the

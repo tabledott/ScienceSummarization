@@ -1,0 +1,9 @@
+ighly correlated with the source collocation.
+    Finally, Champollion produces as the translation the largest group of words having a high correlation with the source collocation.
+    More precisely, for a given source collocation, Champollion initially identifies a set S of k words that are highly correlated with the source collocation.
+    This operation is described in detail in Section 5.1 below.
+    Champollion assumes that the target collocation is a combination of some subset of these words.
+    Its search space at this point thus consists of the powerset P(S) of S containing 2k elements.
+    Instead of computing a correlation factor for each of the 2&amp;quot; elements with the source collocation, Champollion searches a part of this space in an iterative manner.
+    Champollion first forms all pairs of words in S, evaluates the correlation between each pair and the source collocation using the Dice coefficient, and keeps only those pairs that score above some threshold.
+    Subsequently, it construct

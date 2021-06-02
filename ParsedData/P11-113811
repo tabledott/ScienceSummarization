@@ -1,0 +1,8 @@
+tract all mentions that can refer to Wikipedia titles, and to construct a set of disambiguation candidates for each mention.
+    Following previous work, we use Wikipedia hyperlinks to perform these steps.
+    GLOW utilizes an anchortitle index, computed by crawling Wikipedia, that maps each distinct hyperlink anchor text to its target Wikipedia titles.
+    For example, the anchor text &#8220;Chicago&#8221; is used in Wikipedia to refer both to the city in Illinois and to the movie.
+    Anchor texts in the index that appear in document d are used to supplement the mention set M in Step 1 of the GLOW algorithm in Figure 2.
+    Because checking all substrings Table 1: Ranker features.
+    I[ti_tj] is an indicator variable which is 1 iff ti links to t1 or vise-versa.
+    I[ti&#8212;tj] is 1 iff the titles point to each other. in the input text against the index is computationally inefficient, we instead prune the search space by applying a publicly available shallow parser and named entity recognition system.3 W

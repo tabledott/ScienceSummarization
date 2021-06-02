@@ -1,0 +1,9 @@
+d the results on a test corpus, manually annotated by 2 taggers according to the guidelines we published and checked for agreement.
+    The test corpus contains about 30K words.
+    We compared two unsupervised models over this data set: Word model [W], and Morpheme model [M].
+    We also tested two different sets of initial conditions.
+    Uniform distribution [Uniform]: For each word, each analysis provided by the analyzer is estimated with an equal likelihood.
+    Context Free approximation [CF]: We applied the CF algorithm of Levinger et al. (1995) to estimate the likelihood of each analysis.
+    Table 3 reports the results of full morphological disambiguation.
+    For each morpheme and word models, three types of models were tested: [1] First-order HMM, [2-] Partial second-order HMM only state transitions were modeled (excluding B2 matrix), [2] Second-order HMM (including the B2 matrix).
+    Analysis If we consider the tagger which selects the most probable morphological analysis for each word in the tex

@@ -1,0 +1,9 @@
+asses remain.
+    Often, we find that for classes obtained in this way the average mutual information can be made larger by moving some words from one class to another.
+    Therefore, after having derived a set of classes from successive merges, we cycle through the vocabulary moving each word to the class for which the resulting partition has the greatest average mutual information.
+    Eventually no potential reassignment of a word leads to a partition with greater average mutual information.
+    At this point, we stop.
+    It may be possible to find a partition with higher average mutual information by simultaneously reassigning two or more words, but we regard such a search as too costly to be feasible.
+    To make even this suboptimal algorithm practical one must exercise a certain care in implementation.
+    There are approximately (V-02/2 merges that we must investigate to carry out the ith step.
+    The average mutual information remaining after any one of them is the sum of (V &#8212; 02 terms, each 

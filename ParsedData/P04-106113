@@ -1,0 +1,11 @@
+model with valence).
+    We begin at the ROOT.
+    In the standard way, each head generates a series of nonSTOP arguments to one side, then a STOP argument to that side, then non-STOP arguments to the other side, then a second STOP.
+    For example, in the dependency structure in figure 1, we first generate a single child of ROOT, here fell.
+    Then we recurse to the subtree under fell.
+    This subtree begins with generating the right argument in.
+    We then recurse to the subtree under in (generating September to the right, a right STOP, and a left STOP).
+    Since there are no more right arguments after in, its right STOP is generated, and the process moves on to the left arguments offell.
+    In this process, there are two kinds of derivation events, whose local probability factors constitute the model&#8217;s parameters.
+    First, there is the decision at any point whether to terminate (generate STOP) or not: PSTOP(STOP1h, dir, adj).
+    This is a binary decision conditioned on three things: the head 

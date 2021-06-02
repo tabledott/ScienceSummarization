@@ -1,0 +1,10 @@
+del has better oracle rates than the WSJ model (McClosky et al., 2006) for both the WSJ and BROWN domains.
+    In this section, we compare the output of the WSJ+NANC-trained and BROWN-trained reranking parsers.
+    We use evalb to calculate how similar the two sets of output are on a bracket level.
+    Table 7 shows various statistics.
+    The two parsers achieved an 88.0% f-score between them.
+    Additionally, the two parsers agreed on all brackets almost half the time.
+    The part of speech tagging agreement is fairly high as well.
+    Considering they were created from different corpora, this seems like a high level of agreement.
+    We conducted randomization tests for the significance of the difference in corpus f-score, based on the randomization version of the paired sample ttest described by Cohen (1995).
+    The null hypothesis is that the two parsers being compared are in fact behaving identically, so permuting or swapping the parse trees produced by the parsers for of NANC sentences added under f

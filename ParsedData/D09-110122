@@ -1,0 +1,7 @@
+ng it with each of its preceding clusters.
+    The test instances are then presented to the ranker, and mk is linked to the cluster that is assigned the highest value by the ranker.
+    Note that these partial clusters preceding mk are formed incrementally based on the predictions of the ranker for the first k&#8722;1 mentions; no gold-standard coreference information is used in their formation.
+    The cluster ranker described above can be used to determine which preceding cluster a discourseold mention should be linked to, but it cannot be used to determine whether a mention is discoursenew or not.
+    The reason is simple: all the training instances are generated from discourse-old mentions.
+    Hence, to jointly learn discourse-new detection and coreference resolution, we must train the ranker using instances generated from both discourse-old and discourse-new mentions.
+    Specifically, when training the ranker, we provide each active mention with the option to start a new cluster by creating an addition

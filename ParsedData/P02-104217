@@ -1,0 +1,7 @@
+ parser, we compared the dependencies output by the parser with those in the gold standard, and computed precision and recall figures over the dependencies.
+    Recall that a dependency is defined as a 4-tuple: a head of a functor, a functor category, an argument slot, and a head of an argument.
+    Figures were calculated for labelled dependencies (LP,LR) and unlabelled dependencies (UP,UR).
+    To obtain a point for a labelled dependency, each element of the 4-tuple must match exactly.
+    Note that the category set we are using distinguishes around 400 distinct types; for example, tensed transitive buy is treated as a distinct category from infinitival transitive buy.
+    Thus this evaluation criterion is much more stringent than that for a standard pos-tag label-set (there are around 50 pos-tags used in the Penn Treebank).
+    To obtain a point for an unlabelled dependency, the heads of the functor and argument must appear together in some relation (either as functor or argument) for the relevant sentence

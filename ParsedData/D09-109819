@@ -1,0 +1,9 @@
+es in each of the 1500 random copies.
+    For sets that contained fewer than 200 items, we only generated trials for seed sizes smaller than the set size.
+    The resulting trial dataset consists of 20,220 trials3.
+    Set expansion systems consist of an expansion algorithm (such as the one described in Section 4.1) as well as a corpus (such as Wikipedia, a news corpus, or a web crawl).
+    For a given system, each of the 20,220 trials described in the previous section are expanded.
+    In our work, we limited the total number of system expansions, per trial, to 1000.
+    Before judgment of an expanded set, we first collapse each instance that is a variant of another (determined using the variants in our gold standard) into one single instance (keeping the highest system score)4.
+    Then, each expanded instance is judged as correct or incorrect automatically against the gold standard described in Section 5.1.
+    Our experiments in Section 6 consist of precision vs. recall or precision vs. rank curves, where

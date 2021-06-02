@@ -1,0 +1,9 @@
+our algorithm has true runtime 0(Tn3), as shown previously.
+    In the DOP model, a sentence cannot be given an exactly correct parse unless all productions in the correct parse occur in the training set.
+    Thus, we can get an upper bound on performance by examining the test corpus and finding which parse trees could not be generated using only productions in the training corpus.
+    Unfortunately, while Bod provided us with his data, he did not specify which sentences were test and which were training.
+    We can however find an upper bound on average case performance, as well as an upper bound on the probability that any particular level of performance could be achieved.
+    Bod randomly split his corpus into test and training.
+    According to his thesis (Bod, 1995a, page 64), only one of his 75 test sentences had a correct parse which could not be generated from the training data.
+    This turns out to be very surprising.
+    An analysis of Bod's data shows that at least some of the difference in perfor

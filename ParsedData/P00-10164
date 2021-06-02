@@ -1,0 +1,8 @@
+d data contains much redundant information.
+    By intelligently choosing the training examples which get passed to the learner, it is possible to provide the necessary amount of information with less data.
+    Active learning attempts to perform this intelligent sampling of data to reduce annotation costs without damaging performance.
+    In general, these methods calculate the usefulness of an example by first having the learner classify it, and then seeing how uncertain that classification was.
+    The idea is that the more uncertain the example, the less well modeled this situation is, and therefore, the more useful it would be to have this example annotated.
+    Seung, Opper and Sompolinsky (1992) and Freund et al. (1997) proposed a theoretical queryby-committee approach.
+    Such an approach uses multiple models (or a committee) to evaluate the data, and candidates for annotation (or queries) are drawn from the pool of examples in which the models disagree.
+    Furthermore, Freund et al. prove that, und

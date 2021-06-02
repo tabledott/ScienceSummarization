@@ -1,0 +1,8 @@
+ministically, in the order they appear in the list.
+    As a simple example, if race appears in the corpus most frequently as a noun, it will initially be mistagged as a noun in the sentence: We can race all day long.
+    The rule Change a tag from NOUN to VERB if the previous tag is a MODAL would be applied to the sentence, resulting in the correct tagging.
+    The environments used for changing a tag are the words and tags within a window of three words.
+    For our experiments, we used a publicly available implementation of transformation-based tagging,2 retrained on our training set.
+    The maximum-entropy framework is a probabilistic framework where a model is found that is consistent with the observed data and is maximally agnostic with respect to all parameters for which no data exists.
+    It is a nice framework for combining multiple constraints.
+    Whereas the transformation-based tagger enforces multiple constraints by having multiple rules fire, the maximum-entropy tagger can have all of these c

@@ -1,0 +1,10 @@
+mbiguous target word is then classified by finding all collocations that match its context.
+    Each collocation provides some degree of evidence for each word in the confusion set.
+    This evidence is combined using Hayes' rule.
+    In the end, the wi with the highest probability, given the evidence, is selected.
+    A new complication arises for collocations, however, in that collocations, unlike context words, cannot be assumed independent.
+    Consider, for example, the following collocations for desert: PREP the in the the These collocations are highly interdependent &#8212; we will say they conflict.
+    To deal with this problem, we invoke our earlier observation that there is no need to use all the evidence.
+    If two pieces of evidence conflict, we simply eliminate one of them, and base our decision on the rest of the evidence.
+    We identify conflicts by the heuristic that two collocations conflict if they overlap.
+    The overlapping portion is the factor they have in common, and thus represents

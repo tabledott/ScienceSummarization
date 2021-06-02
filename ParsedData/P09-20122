@@ -1,0 +1,8 @@
+ subtrees with terminal symbols can be viewed as learning dependencies among the words in the subtree, obviating the need for the manual specification (Magerman, 1995) or automatic inference (Chiang and Bikel, 2002) of lexical dependencies.
+    Following standard notation for PCFGs, the probability of a derivation d in the grammar is given as where each r is a rule used in the derivation.
+    Under a regular CFG, each parse tree uniquely idenfifies a derivation.
+    In contrast, multiple derivations in a TSG can produce the same parse; obtaining the parse probability requires a summation over all derivations that could have produced it.
+    This disconnect between parses and derivations complicates both inference and learning.
+    The inference (parsing) task for TSGs is NP-hard (Sima&#8217;an, 1996), and in practice the most probable parse is approximated (1) by sampling from the derivation forest or (2) from the top k derivations.
+    Grammar learning is more difficult as well.
+    CFGs are usually trained 

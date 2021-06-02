@@ -1,0 +1,7 @@
+coring No computationally expensive -best lists are generated during training: for each input sentence a single block sequence is generated on each iteration over the training data.
+    &#10101;block sequences are represented by high dimensional feature vectors using the binary features defined below and the translation process is handled as a multi-class classification problem in which each block sequence represents a possible class.
+    The effect of this training procedure can be seen in Figure 2: each decoding step on the training data adds a high-scoring block sequence to the discriminative training and decoding performance on the training data is improved after each iteration (along with the test data decoding performance).
+    A theoretical justification for the novel training procedure is given in Section 3.
+    We now define the feature components for the block bigram feature vector in Eq.
+    1.
+    Although the training algorithm can handle realvalued features as used in (Och, 2003; Tillmann and Zh

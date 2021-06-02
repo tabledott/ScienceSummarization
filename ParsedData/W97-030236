@@ -1,0 +1,11 @@
+g experiments.
+    The goal of a good thresholding algorithm is to trade off correctness for increased speed.
+    We must thus measure both correctness and speed, and there are some subtleties to measuring each.
+    First, the traditional way of measuring correctness is with metrics such as precision and recall.
+    Unfortunately, there are two problems with these measures.
+    First, they are two numbers, neither useful without the other.
+    Second, they are subject to considerable noise.
+    In pilot experiments, we found that as we changed our thresholding values monotonically, precision and recall changed non-monotonically (see Figure 11).
+    We attribute this to the fact that we must choose a single parse from our parse forest, and, as we tighten a thresholding parameter, we may threshold out either good or bad parses.
+    Furthermore, rather than just changing precision or recall by a small amount, a single thresholded item may completely change the shape of the resulting tree.
+    Thus, precision and

@@ -1,0 +1,6 @@
+ uses a combination of binary classifiers for each entailment direction.
+    The classifiers use both monolingual alignment features based on METEOR (Banerjee and Lavie, 2005) alignments (translations obtained from Google Translate), and cross-lingual alignment features based on GIZA++ (Och and Ney, 2000) (word alignments learned on Europarl).
+    ICT [pivoting, compositional] (Meng et al., 2012) adopts a pivoting method (using Google Translate and an in-house hierarchical MT system), and the open source EDITS system (Kouylekov and Negri, 2010) to calculate similarity scores between monolingual English pairs.
+    Separate unidirectional entailment judgments obtained from binary classifier are combined to return one of the four valid CLTE judgments.
+    JU-CSE-NLP [pivoting, compositional] (Neogi et al., 2012) uses Microsoft Bing translator7 to produce monolingual English pairs.
+    Separate lexical mapping scores are calculated (from T1 to T2 and vice-versa) considering different types of information and simi

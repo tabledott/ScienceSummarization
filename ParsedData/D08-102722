@@ -1,0 +1,7 @@
+ty of the true label for a new example, worker judgments are integrated via Bayes rule, yielding the posteri The worker response likelihoods P(ywJx = Y ) and P(ywJx = N) can be directly estimated from frequencies of worker performance on gold standard examples.
+    (If we used maximum likelihood estimation with no Laplace smoothing, then each ywJx is just the worker&#8217;s empirical confusion matrix.)
+    For MAP label estimation, the above equation describes a weighted voting rule: each worker&#8217;s vote is weighted by their log likelihood ratio for their given response.
+    Intuitively, workers who are more than 50% accurate have positive votes; workers whose judgments are pure noise have zero votes; and anticorrelated workers have negative votes.
+    (A simpler form of the model only considers accuracy rates, thus weighting worker votes by log 1 accw .
+    But we accw use the full unconstrained multinomial model here.)
+    5.1.1 Example tasks: RTE-1 and event annotation We used this model to improve acc

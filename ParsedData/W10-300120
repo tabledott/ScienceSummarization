@@ -1,0 +1,6 @@
+entence-level certainty, cue or scope annotations.
+    The XML format enabled us to provide more detailed information about the documents such as segment boundaries and types (e.g. section titles, figure captions) and it is the straightforward format to represent nested scopes.
+    Nested scopes have overlapping text spans which may contain cues for multiple scopes (there were 1058 occurrences in the training and evaluation datasets together).
+    The XML format utilizes id-references to determine the scope of a given cue.
+    Nested constructions are rather complicated to represent in the standard IOB format, moreover, we did not want to enforce a uniform tokenization.
+    To support the processing of the data files, reader and writer software modules were developed and offered to the participants for the uCompare (Kano et al., 2009) framework. uCompare provides a universal interface (UIMA) and several text mining and natural language processing tools (tokenizers, POS taggers, syntactic parsers, etc.) for ge

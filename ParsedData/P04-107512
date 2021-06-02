@@ -1,0 +1,10 @@
+and may be regarded as a Entity Given a set of machine-annotated named entities NESet = {NE1, .
+    .., NEN}, the representativeness of a named entity NEi in NESet is quantified by its density.
+    The density of NEi is defined as the average similarity between NEi and all the other entities NEj in NESet as follows.
+    If NEi has the largest density among all the entities in NESet, it can be regarded as the centroid of NESet and also the most representative examples in NESet.
+    Diversity criterion is to maximize the training utility of a batch.
+    We prefer the batch in which the examples have high variance to each other.
+    For example, given the batch size 5, we try not to select five repetitious examples at a time.
+    To our knowledge, there is only one work (Brinker 2003) exploring this criterion.
+    In our task, we propose two methods: local and global, to make the examples diverse enough in a batch.
+    For a global consideration, we cluster all named entities in NESet based on the similarity mea

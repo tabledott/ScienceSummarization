@@ -1,0 +1,7 @@
+    With a categorical CFG chart parser run to exhaustion, it does not matter in what order one removes edges from the agenda; all edges involved in full parses of the sentence will be constructed at some point.
+    A cubic time bound follows straightforwardly by simply testing for edge existence, ensuring that we never process an edge twice.
+    With PCFG parsing, there is a subtlety involved.
+    In addition to knowing whether edges can be constructed, we also want to know the scores of edges&#8217; best parses.
+    Therefore, we record estimates of best-parse scores, updating them as better parses are found.
+    If, during parsing, we find a new, better way to construct some edge e that has previously been entered into the chart, we may also have found a better way to construct any edges which have already been built using e. Best-first parsers deal with this by allowing an upward propagation, which updates such edges&#8217; scores (Caraballo and Charniak, 1998).
+    If run to exhaustion, all edges&#8217; 

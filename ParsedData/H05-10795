@@ -1,0 +1,8 @@
+ ?liquidator?).
+			No word sense disambiguation is performed and all synsets for a particular lemma are considered.In addition, each lemma in the hypothesis is as signed its inverse document frequency, accessing the Web as corpus via the GoogleAPI, as its weight.
+			This standard procedure allows us to assign more importance to less frequent words.
+			The overlap measure wnoverlap between text and hypothesis is initialised as zero.
+			Should a lemma in the hypothesis be related to a lemma in the text, its weight is added to wnoverlap, otherwise it is ignored.
+			In the end wnoverlap is normalised by dividing it by the sum of all weights of the lemmas in the hypothesis.
+			This ensures that wnoverlap isalways a real number between 0 and 1 and also en sures independence of the length of the hypothesis.
+			Apart from wnoverlap we take into account length (as measured by number of lemmas) of text and hypothesis, because in most of the observed cases for true entailments the hypothesis is shorter than the text as 

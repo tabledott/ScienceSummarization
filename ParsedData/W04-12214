@@ -1,0 +1,12 @@
+ptimal weight settings in terms of LL(D).
+    Once these settings are found, the labeling for an new, unlabeled sequence can be done using a modified Viterbi algorithm.
+    CRFs are presented in more complete detail by Lafferty et al. (2001).
+    These experiments use the MALLET implementation of CRFs (McCallum, 2002), which uses a quasi-Newton method called L-BFGS to find these feature weights efficiently.
+  
+  
+    One property that makes feature based statistical models like CRFs so attractive is that they reduce the problem to finding an appropriate feature set.
+    This section outlines the two main types of features used in these experiments.
+    The simplest and most obvious feature set is the vocabulary from the training data.
+    Generalizations over how these words appear (e.g. capitalization, affixes, etc.) are also important.
+    The present model includes training vocabulary, 17 orthographic features based on regular expressions (e.g.
+    ALPHANUMERIC, HASDASH, ROMANNUMERAL) as well as prefixes a

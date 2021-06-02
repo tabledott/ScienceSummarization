@@ -1,0 +1,7 @@
+ ttl-21, org-22) j-o-23) person(pers-24)  "Mr. Dooner" successor((pers-24) succ-25 ) One approach to contextualizing the succession clause in this text would require first resolving th e pronominal subject "He" to "Mr. James" and then exploiting any job change facts that held about thi s antecedent.
+  An equally effective approach, and simpler, is to ignore the pronoun and reason directly from th e successor fact to any contextualizing job-out fact .
+  The rule that accomplishes this i s job-in(pers-a, ttl, org) &lt;?
+  successor((pers-a) succ) + job-out-in-context?
+  ((succ, job-out) x-1) + job-out((pers-b, ttl, org) x-2 ) The mysterious-looking job-out-in-context?
+  predicate implements a simple discourse model : it is true just in case its second argument is the most immediate job-out fact in the context of its first argument .
+  Context- encoding facts are not explicitly present in the database, as their numbers would be legion, but are instantiate d "on demand" when a rule attempts to match such a fact .

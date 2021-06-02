@@ -1,0 +1,7 @@
+the general-domain corpus sentences using: and again taking the lowest-scoring sentences.
+    This criterion biases towards sentences that are both like the in-domain corpus and unlike the average of the general-domain corpus.
+    For this experiment we reused the in-domain LM from the previous method, and trained a second LM on a random subset of 35k sentences from the Chinese side of the general corpus, except using the same vocabulary as the indomain LM.
+    In addition to using these two monolingual criteria for MT data selection, we propose a new method that takes in to account the bilingual nature of the problem.
+    To this end, we sum cross-entropy difference over each side of the corpus, both source and target: [HI&#8722;src(s)&#8722;HO&#8722;src(s)]+[HI&#8722;tgt(s)&#8722;HO&#8722;tgt(s)] (3) Again, lower scores are presumed to be better.
+    This approach reuses the source-side language models from Section 4.2, but requires similarly-trained ones over the English side.
+    Again, the vocabulary of 

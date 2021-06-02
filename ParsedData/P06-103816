@@ -1,0 +1,13 @@
+ in each window separately.
+    We now have a set of categories for each window.
+    For the final set, we select only those categories that appear in at least two of the windows.
+    This technique reduces noise at the potential cost of lowering coverage.
+    However, the numbers of categories discovered and words they contain is still very large (see Section 5), so windowing achieves higher precision without hurting coverage in practice.
+    The complexity of the merge stage is O(|V |) times the average number of categories per word times the average number of words per category.
+    The latter two are small in practice, so complexity amounts to O(|V |).
+  
+  
+    Lexical acquisition algorithms are notoriously hard to evaluate.
+    We have attempted to be as thorough as possible, using several languages and both automatic and human evaluation.
+    In the automatic part, we followed as closely as possible the methodology and data used in previous work, so that meaningful comparisons could be made.
+    We per

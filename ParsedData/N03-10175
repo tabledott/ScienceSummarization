@@ -1,0 +1,12 @@
+an existing hypothesis by the translation of a phrase as follows: A sequence of untranslated foreign words and a possible English phrase translation for them is selected.
+    The English phrase is attached to the existing English output sequence.
+    The foreign words are marked as translated and the probability cost of the hypothesis is updated.
+    The cheapest (highest probability) final hypothesis with no untranslated foreign words is the output of the search.
+    The hypotheses are stored in stacks.
+    The stack contains all hypotheses in which foreign words have been translated.
+    We recombine search hypotheses as done by Och et al. [2001].
+    While this reduces the number of hypotheses stored in each stack somewhat, stack size is exponential with respect to input sentence length.
+    This makes an exhaustive search impractical.
+    Thus, we prune out weak hypotheses based on the cost they incurred so far and a future cost estimate.
+    For each stack, we only keep a beam of the best hypotheses.
+   

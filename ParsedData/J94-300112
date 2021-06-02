@@ -1,0 +1,7 @@
+e transition label &amp;quot;other&amp;quot; abbreviates the set of labels a:a,b:b, ...z:z, the identity pairs formed from all symbols that belong to the alphabet but are not mentioned explicitly in this particular rule.
+    This diagram shows no transition over the pair N:N and the transducer therefore blocks if it sees N on both tapes.
+    This is another abbreviatory convention that is typically used in implementations to reduce transducer storage requirements, and we use it here to simplify the state diagrams we draw.
+    In formal treatments such as the one we present below, the transition function is total and provides for transitions from every state over every pair of symbols.
+    Any transition we do not show in these diagrams in fact terminates at a single nonfinal state, the &amp;quot;failure&amp;quot; state, which we also do not show.
+    Figure 3 is the more complicated transducer that models the obligatory behavior of Rule 1 (N &#8212;&gt; m/ +[labial]).
+    This machine blocks in state 1 if it 

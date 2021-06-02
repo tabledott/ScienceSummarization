@@ -1,0 +1,6 @@
+se disambiguation, TroFi makes use of an existing similarity-based word-sense disambiguation algorithm developed by (Karov &amp; Edelman, 1998), henceforth KE.
+    The KE algorithm is based on the principle of attraction: similarities are calculated between sentences containing the word we wish to disambiguate (the target word) and collections of seed sentences (feedback sets) (see also Section 3.1).
+    A target set sentence is considered to be attracted to the feedback set containing the sentence to which it shows the highest similarity.
+    Two sentences are similar if they contain similar words and two words are similar if they are contained in similar sentences.
+    The resulting transitive similarity allows us to defeat the knowledge acquisition bottleneck &#8211; i.e. the low likelihood of finding all possible usages of a word in a single corpus.
+    Note that the KE algorithm concentrates on similarities in the way sentences use the target literal or nonliteral word, not on similarities in the meaning

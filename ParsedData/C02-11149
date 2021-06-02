@@ -1,0 +1,10 @@
+ 1 Let A be a set of nodes and let N(A), the neighbours of A, be the nodes which are linked to any a ? A.
+			(So N(A) = ? a?AN(a).)
+			The best new node is taken to be the node b ? N(A)\A with the highest proportion of links to N(A).
+			More precisely, for each u ? N(A)\A, let the affinity between u and A be given by the ratio |N(u) ?N(A)| |N(u)| . The best new node b ? N(A) \ A is the node which maximises this affinity score.
+			This algorithm has been built into an on-line demonstration where the user inputs a givenseed word and can then see the cluster of re lated words being gradually assembled.
+			The algorithm is particularly effective atavoiding infections arising from spurious co occurrences and from ambiguity.
+			Consider, forexample, the graph built around the word ap ple in Figure 6.
+			Suppose that we start with the seed-list apple, orange, banana.
+			However many times the string ?Apple and Novell?
+			occurs in the corpus, the novell node will not be addedto this list because it doesn?t have a li

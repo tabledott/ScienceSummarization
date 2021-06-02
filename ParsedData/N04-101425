@@ -1,0 +1,12 @@
+y epsilon word-translation rules in favor of more syntactically-controlled ones, e.g.
+    : - r NP(DT(the),x0:NN) &#8594; q x0 We can make many such changes without modifying the training procedure, as long as we stick to tree automata.
+  
+  
+    Tree substitution grammars or TSG (Schabes, 1990) are equivalent to regular tree grammars. xR transducers are similar to (weighted) Synchronous TSG, except that xR can copy input trees (and transform the copies differently), but does not model deleted input subtrees.
+    (Eisner, 2003) discusses training for Synchronous TSG.
+    Our training algorithm is a generalization of forwardbackward EM training for finite-state (string) transducers, which is in turn a generalization of the original forwardbackward algorithm for Hidden Markov Models.
+  
+  
+    Thanks to Daniel Gildea and Kenji Yamada for comments on a draft of this paper, and to David McAllester for helping us connect into previous work in automata theory.
+  
+

@@ -1,0 +1,5 @@
+d entity information (and omitted the NamedEntity nodes), and a linear chain CRF using just the named entity information.
+    Both the baseline parser and CRF were trained using the exact same features as the joint model, and all were optimized using stochastic gradient descent.
+    The full results can be found in Table 2.
+    Parse trees were scored using evalB (the extra NamedEntity nodes were ignored when computing evalB for the joint model), and named entities were scored using entity F-measure (as in the CoNLL 2003 conlleval).5 While the main benefit of our joint model is the ability to get a consistent output over both types of annotations, we also found that modeling the parse 4These datasets all consistently use the new conventions for treebank annotation, while the seventh WSJ portion is currently still annotated in the original 1990s style, and so we left the WSJ portion aside.
+    5Sometimes the parser would be unable to parse a sentence (less than 2% of sentences), due to restrictions in part of 

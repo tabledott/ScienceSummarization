@@ -1,0 +1,8 @@
+roperty that we call phrasal coherence.
+    Any links that destroy this property would lead to excessive node merging, a major cause of overfitting.
+    Since building a model that strictly observes phrasal coherence often requires rules that model the reordering of tree nodes, our goal is to bootstrap the learning process by using a simpler, word-based alignment model that produces a generally coherent alignment, and then remove links that would cause excessive node merging before rule extraction takes place.
+    Given an alignment, a, we count the number of links that would prevent a rule from being extracted for each production in the MR parse.
+    Then the total sum for all productions is obtained, denoted by v(a).
+    A greedy procedure is employed that repeatedly removes a link a E a that would maximize v(a) &#8212; v(a\{a}) &gt; 0, until v(a) cannot be further reduced.
+    A link w H r is never removed if the translation probability, Pr(r|w), is greater than a certain threshold (0.9).
+    To replenish 

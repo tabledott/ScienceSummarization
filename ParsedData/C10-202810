@@ -1,0 +1,10 @@
+cenarios3: ? ????????????????????????
+			1 count(p) : Exact match ? all the pattern components appear in the sentence in correct order without any additional words.
+			count(p) : Sparse match ? same as exact match but additional non-matching words can be inserted between pattern components.
+			??n N?count(p) : Incomplete match ? only n &gt; 1 of N pattern components appear in the sentence, while some non-matching words can be inserted in-between.
+			At least one of the appearing components should be a HFW.
+			0 : No match ? nothing or only a single pattern component appears in the sentence.
+			0 ? ?
+			1 and 0 ? ?
+			1 are parameters we use to assign reduced scores for imperfect matches.Since the patterns we use are relatively long, ex act matches are uncommon, and taking advantageof partial matches allows us to significantly re duce the sparsity of the feature vectors.
+			We used ? = ? = 0.1 in all experiments.This pattern based framework was proven effi cient for sarcasm detection in (Tsur et al, 2010; 2Not

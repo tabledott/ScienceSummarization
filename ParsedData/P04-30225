@@ -1,0 +1,10 @@
+; and &#8220;OTHER-ROLE&#8221;).
+    We explicitly model the argument order of mentions.
+    Thus, when comparing mentions and , we distinguish between the case where -citizen-Of- and -citizen-Of- .
+    We thus model the extraction as a classification problem with 49 classes, two for each relation subtype and a &#8220;NONE&#8221; class for the case where the two mentions are not related.
+    For each pair of mentions, we compute several feature streams shown below.
+    All the syntactic features are derived from the syntactic parse tree and the dependency tree that we compute using a statistical parser trained on the PennTree Bank using the Maximum Entropy framework (Ratnaparkhi, 1999).
+    The feature streams are: Words The words of both the mentions and all the words in between.
+    Entity Type The entity type (one of PERSON, ORGANIZATION, LOCATION, FACILITY, Geo-Political Entity or GPE) of both the mentions.
+    Mention Level The mention level (one of NAME, NOMINAL, PRONOUN) of both the mentions.
+    Overl

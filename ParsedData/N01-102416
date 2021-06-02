@@ -1,0 +1,6 @@
+ic choose to accept as valid relationships only those vector fIW=UwDk, where Uw represents the row of U corresponding to w and Dk indicates that only the top k diagonal entries of D have been preserved.
+    As a last comment, one would like to be able to obtain a separate semantic vector for every word (not just those in the top N).
+    SVD computations can be expensive and impractical for large values of N. Yet due to the fact that U and VT are orthogonal matrices, we can start with a matrix of reasonablesized N and &#8220;fold in&#8221; the remaining terms, which is the approach we have followed.
+    For details about folding in terms, the reader is referred to Manning and Sch&#252;tze (1999, p. 563).
+    To correlate these semantic vectors, we use normalized cosine scores (NCSs) as we had illustrated before (Schone and Jurafsky (2000)).
+    The normalized cosine score between two words w1 and w2 is determined by first computing cosine values between each word&#8217;s semantic vector and 200 other randomly 

@@ -1,0 +1,9 @@
+ications that exceed this cutoff are actually classified as legitimate.
+    Figure 2 shows a plot of the precision/recall tradeoff as this threshold is changed.
+    As the threshold is raised, precision increases while recall decreases.
+    Based on this graph we choose to set the threshold at 0.9.
+    Applying the Decision Tree algorithm with Bagging, using the pre-determined threshold, to the held out test set of 500 examples extracted with the CN/PN pattern yields a precision of .95 and a recall of .718.
+    Under these same conditions, but applied to a held out test set of 500 examples extracted with the APOS pattern, the filter has a precision of .95 and a recall of .92.
+    The CN/PN and APOS filters were used to extract concept-instance pairs from unstructured text.
+    The approximately 15GB of newspaper text (described above) was passed through the regular expression patterns and filtered through their appropriate learned classifier.
+    The output of this process is approximately 2,000,000 concept-i

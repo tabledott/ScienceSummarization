@@ -1,0 +1,5 @@
+s of parses.
+    We have implemented a unification version of Schabes' (1991a) chart-based LR-like parser (which is polynomial in sentence length for CF grammars), but experiments with the ANLT grammar suggest that it offers no practical advantages over our Tomita-style parser, and Schabes' table construction algorithm yields less fine-grained and, therefore, less predictive parse tables.
+    Nevertheless, searching the parse forest exhaustively to recover each distinct analysis proved computationally intractable for sentences over about 22 words in length.
+    Wright, Wrigley, and Sharman (1991) describe a Viterbi-like algorithm for unpacking parse forests containing probabilities of (sub-)analyses to find the n-best analyses, but this approach does not generalize (except in a heuristic way) to our approach in which unification failure on the different extensions of packed nodes (resulting from differing super- or subanalyses) cannot be computed 'locally.'
+    In subsequent work (Carroll and Briscoe 1992) we

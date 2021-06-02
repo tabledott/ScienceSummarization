@@ -1,0 +1,10 @@
+ibed above) for each possible tag, i.e. not just the ones suggested by the component taggers.
+    If a tag pair T1-T2 has never been observed in Tune, we fall back on information on the individual taggers, viz, the probability of each tag Tx given that the tagger suggested tag Ti.
+    Note that with this method (and those in the next section) a tag suggested by a minority (or even none) of the taggers still has a chance to win.
+    In principle, this could remove the restriction of gain only in 2-2 and 1-1-1-1 cases.
+    In practice, the chance to beat a majority is very slight indeed and we should not get our hopes up too high that this should happen very often.
+    When used on Test, the pairwise voting strategy (TagPair) clearly outperforms the other voting strategies,8 but does not yet approach the level where all tying majority votes are handled correctly (98.31%).
+  
+  
+    From the measurements so far it appears that the use of more detailed information leads to a better accuracy improvement.
+    It ou

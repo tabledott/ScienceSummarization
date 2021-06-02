@@ -1,0 +1,8 @@
+ieval toolkit' (Ogilvie and Callan, 2001); each document in the source language is translated word-for-word and turned into a query, which is run against the collection of target language documents.
+    The top 20 results are retrieved and paired with the query document.
+    We then take all sentence pairs from these document pairs and run them through the second step in the pipeline, the candidate selection filter.
+    This step discards pairs which have very few words that are translations of each other.
+    To all remaining sentence pairs we apply the fragment detection method (described in Section 2.3), which produces the output of the system.
+    We use two probabilistic lexicons, learned automatically from the same initial parallel corpus.
+    The first one, GIZA-Ler, is obtained by running the GIZA++2 implementation of the IBM word alignment models (Brown et al., 1993) on the initial parallel corpus.
+    One of the characteristics of this lexicon is that each source word is associated with many possibl

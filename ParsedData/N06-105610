@@ -1,0 +1,8 @@
+ng a mapping of words from one language to another, word alignments define a bilingual lexicon.
+    Using word alignments to induce a lexicon is not a new idea (Och and Ney, 2003).
+    Indeed, attempts have been made to directly apply machine translation systems to the problem of semantic parsing (Papineni et al., 1997; Macherey et al., 2001).
+    However, these systems make no use of the MRL grammar, thus allocating probability mass to MR translations that are not even syntactically well-formed.
+    Here we present a lexical induction algorithm that guarantees syntactic well-formedness of MR translations by using the MRL grammar.
+    The basic idea is to train a statistical word alignment model on the training set, and then form a lexicon by extracting transformation rules from the K = 10 most probable word alignments between the training sentences and their MRs.
+    While NL words could be directly aligned with MR tokens, this is a bad approach for two reasons.
+    First, not all MR tokens carry specific me

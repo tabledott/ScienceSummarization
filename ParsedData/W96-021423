@@ -1,0 +1,9 @@
+00 times faster.
+    Of course, some of this difference may be due to differences in implementation, so this estimate is fairly rough.
+    Furthermore, we believe Bod's analysis of his parsing algorithm is flawed.
+    Letting G represent grammar size, and &#8364; represent maximum estimation error, Bod correctly analyzes his runtime as O(Gn3E-2).
+    However, Bod then neglects analysis of this &#8364; -2 term, assuming that it is constant.
+    Thus he concludes that his algorithm runs in polynomial time.
+    However, for his algorithm to have some reasonable chance of finding the most probable parse, the number of times he must sample his data is at least inversely proportional to the conditional probability of that parse.
+    For instance, if the maximum probability parse had probability 1/50, then he would need to sample at least 50 times to be reasonably sure of finding that parse.
+    Now, we note that the conditional probability of the most probable parse tree will in general decline exponentially with s

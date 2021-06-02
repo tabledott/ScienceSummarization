@@ -1,0 +1,10 @@
+; = i, but only through c(i &#8722; i0).
+    We parameterize the distortion c(&#183;) using a multinomial distribution over 11 offset buckets c(&lt;_ &#8722;5), c(&#8722;4),.
+    .. , c(4), c(&gt; 5).3 We use three sets of distortion parameters, one for transitioning into the first state, one for transitioning out of the last state, and one for all other transitions.
+    This works better than using a single set of parameters or ignoring the transitions at the two ends.
+  
+  
+    To motivate our joint training approach, we first consider the standard practice of intersecting alignments.
+    While the English and French sentences play a symmetric role in the word alignment task, sequence-based models are asymmetric: they are generative models of the form p(f  |e) (E&#8212;*F), or p(e  |f) (F&#8212;*E) by reversing the roles of source and target.
+    In general, intersecting the alignment predictions of two independently-trained directional models reduces AER, e.g., from 11% to 7% for HMM models (Table 2).
+    

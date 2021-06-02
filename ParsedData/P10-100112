@@ -1,0 +1,8 @@
+describe our first third-order parsing algorithm.
+    Model 1 decomposes each tree into a set of grand-sibling parts&#8212;combinations of sibling parts and grandchild parts.
+    Specifically, a grand-sibling is a 4-tuple of indices (g, h, m, s) where (h, m, s) is a sibling part and (g, h, m) and (g, h, s) are grandchild parts.
+    For example, in Figure 1, the words &#8220;must,&#8221; &#8220;report,&#8221; &#8220;sales,&#8221; and &#8220;immediately&#8221; form a grand-sibling part.
+    In order to parse this factorization, we introduce sibling g-spans Shm,s, which are composed of a normal sibling span Sm,s and an external index h, with the implication that (h, m, s) forms a valid sibling part.
+    Figure 6 provides a graphical specification of the dynamic-programming algorithm for Model 1.
+    The overall structure of the algorithm resembles the second-order sibling parser, with the addition of grandparent indices; as in Model 0, the grandparent indices can be set deterministically in all cases.
+    Note t

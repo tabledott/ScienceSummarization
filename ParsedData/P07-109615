@@ -1,0 +1,6 @@
+matically adopt the gold standard action on this span.
+    Instead, in the next step, the top hypothesis of another span might be selected based on the score of action, which means that it becomes the most favorable action according to the updated weights.
+    As a second aspect, if the action score of a gold standard hypothesis is higher than that of any others, this hypothesis and the corresponding span are guaranteed to be selected at line 8 of Algorithm 2.
+    The reason for this is that the scores of the context hypotheses of a gold standard hypothesis must be no less than those of other hypotheses of the same span.
+    This could be shown recursively with respect to Equation 1, because the context hypotheses of a gold standard hypothesis are also compatible with the gold standard.
+    Furthermore, if we take (xi = f(p'.G.A) &#8722; f(p'.S.T.A), yi = +1) as a positive sample, and (xj = f(p'.S.T.A) &#8722; f(p'.G.A), yj = &#8722;1) as a negative sample, the weight updates at lines 13 and 14 are a stochast

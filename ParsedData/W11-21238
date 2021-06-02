@@ -1,0 +1,10 @@
+ay is the vocabulary identifier.
+    This has the effect of randomly permuting vocabulary identifiers, meeting the requirements of interpolation search when vocabulary identifiers are used as keys.
+    While sorted arrays could be used to implement the same data structure as PROBING, effectively making m = 1, we abandoned this implementation because it is slower and larger than a trie implementation.
+    The trie data structure is commonly used for language modeling.
+    Our TRIE implements the popular reverse trie, in which the last word of an n-gram is looked up first, as do SRILM, IRSTLM&#8217;s inverted variant, and BerkeleyLM except for the scrolling variant.
+    Figure 1 shows an example.
+    Nodes in the trie are based on arrays sorted by vocabulary identifier.
+    We maintain a separate array for each length n containing all n-gram entries sorted in suffix order.
+    Therefore, for n-gram wn1 , all leftward extensions wn0 are an adjacent block in the n + 1-gram array.
+    The record for wn1 stores the

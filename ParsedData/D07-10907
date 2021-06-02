@@ -1,0 +1,11 @@
+for large amounts of data.
+			The lack of normalization in Eq.
+			(5) does not affect the functioning of the language model in the presentsetting, as Eq.
+			(1) depends on relative rather than ab solute feature-function values.
+	
+	
+			We use the MapReduce programming model (Dean and Ghemawat, 2004) to train on terabytes of data and to generate terabytes of language models.
+			In this programming model, a user-specified map function processes an input key/value pair to generate a set of intermediate key/value pairs, and a reduce function aggregates all intermediate values associated withthe same key.
+			Typically, multiple map tasks operate independently on different machines and on different parts of the input data.
+			Similarly, multiple re duce tasks operate independently on a fraction of the intermediate data, which is partitioned according to the intermediate keys to ensure that the same reducer sees all values for a given key.
+			For additional details,such as communication among machines, data struc tur

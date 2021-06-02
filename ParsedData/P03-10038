@@ -1,0 +1,9 @@
+s pair, we tokenize the question, we parse the answer sentence, we identify the question terms and answer in the parse tree, and then we make a &amp;quot;cut&amp;quot; in the tree that satisfies the following conditions: Condition a) ensures that the question terms will be identified in the sentence.
+    Condition b) helps learn answer types.
+    Condition c) brings the sentence closer to the question by compacting portions that are syntactically far from question terms and answer.
+    And finally the importance of lexical cues around question terms and answer motivates condition d).
+    For the question-answer pair in Figure 1, the algorithm above generates the following training example: Q: When did Elvis Presley die ?
+    SA: Presley died PP PP in A_DATE, and SNT.
+    Figure 2 represents graphically the conditions that led to this training example being generated.
+    Our algorithm for generating training pairs implements deterministically the first two steps in our generative story.
+    The algorithm is c

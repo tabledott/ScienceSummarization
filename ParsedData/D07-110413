@@ -1,0 +1,14 @@
+per computation.
+			Cumulative lookup time was dominated by a very small fraction of the computations (Fig.
+			1).
+			As expected, further analysis showed that these expensive computations all involved one or more very frequent subpatterns.
+			In the worst cases a single collocation took severalseconds to compute.
+			However, there is a silver lining.
+			Patterns follow a Zipf distribution, so the number of pattern types that cause the problem is actu ally quite small.
+			The vast majority of patterns arerare.
+			Therefore, our solution focuses on computa tions where one or more of the component patternsis frequent.
+			Assume that we are computing a collo Computations (ranked by time) C u m u l a t i v e T i m e ( s ) 300K 150K Figure 1: Ranked computations vs. cumulative time.
+			A small fraction of all computations account for most of the computational time.
+			cation of pattern w1X...Xwi and pattern wi+1, and we know all locations of each.
+			There are three cases.
+			If both patterns are frequent, we reso

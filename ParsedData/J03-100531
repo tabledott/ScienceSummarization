@@ -1,0 +1,8 @@
+e expanded into a partial hypothesis in state Move and vice versa.
+    If the coverage set for the newly generated hypothesis covers a contiguous initial block of source positions, the state Initial is entered.
+    No other state S is considered as a successor state in this case (hence the use of the continue statement in the procedural description).
+    The set of successor hypotheses Succ by which to extend the partial hypothesis (S, C, j) is computed using the constraints defined by the values for numskip, widthskip, nummove, and widthmove, as explained in the Appendix.
+    In particular, a source position k is discarded for extension if the &#8220;window&#8221; restrictions are violated.
+    Within the restrictions all possible successors are computed.
+    It can be observed that the set of successors, as computed in Table 3, is never empty.
+    Procedural description to compute the set Succ of successor hypotheses by which to extend a partial hypothesis (S, C, j). input: partial hypothesis (S, C, j) outp

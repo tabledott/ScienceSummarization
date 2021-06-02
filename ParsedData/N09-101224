@@ -1,0 +1,8 @@
+en et al. (2008), we train on sections 2-21, used 22 as a held-out development corpus, and present results evaluated on section 23.
+    The models were all trained using Variational Bayes, and initialized as described in Section 5.
+    To evaluate, we follow Cohen et al. (2008) in using the mean of the variational posterior Dirichlets as a point estimate &#175;&#952;&#8242;.
+    For the unsmoothed models we decode by selecting the Viterbi parse given &#175;&#952;&#8242;, or argmaxtP (t|s, &#175;&#952;&#8242;).
+    For the smoothed models we find the Viterbi parse of the unsmoothed CFG, but use the smoothed probabilities.
+    We evaluate against the gold standard dependencies for section 23, which were extracted from the phrase structure trees using the standard rules by Yamada and Matsumoto (2003).
+    We measure the percent accuracy of the directed dependency edges.
+    For the lexicalized model, we replaced all words that were seen fewer than 100 times with &#8220;UNK.&#8221; We ran each of our systems 10 t

@@ -1,0 +1,7 @@
+nes, trains, and automobiles), appositives (the plane, a twin-engined Cessna) and noun compounds (pickup truck).
+    Our algorithm focuses exclusively on these constructions.
+    Because the relationship between nouns in a compound is quite different than that between nouns in the other constructions, the algorithm consists of two separate components: one to deal with conjunctions, lists, and appositives; and the other to deal with noun compounds.
+    All compound nouns in the former constructions are represented by the head of the compound.
+    We made the simplifying assumptions that a compound noun is a string of consecutive nouns (or, in certain cases, adjectives - see discussion below), and that the head of the compound is the rightmost noun.
+    To identify conjunctions, lists, and appositives, we first parsed the corpus, using an efficient statistical parser (Charniak et al., 1998), trained on the Penn Wall Street Journal Treebank (Marcus et al., 1993).
+    We defined cooccurrence in these construction

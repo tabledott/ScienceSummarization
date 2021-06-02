@@ -1,0 +1,7 @@
+gher than the &amp;quot;true&amp;quot; perplexity that would be assigned with a properly normalized distribution.
+    In other words, renormalizing would make our perplexity measure lower still.
+    The hope, however, is that the improved parsing model provided by our conditional probability model will cause the distribution over structures to be more peaked, thus enabling us to capture more of the total probability mass, and making this a fairly snug upper bound on the perplexity.
+    One final note on assigning probabilities to strings: because this parser does garden path on a small percentage of sentences, this must be interpolated with another estimate, to ensure that every word receives a probability estimate.
+    In our trials, we used the unigram, with a very small mixing coefficient: following words since the denominator is zero.
+    Thus, Chelba and Jelinek (1998a, 1998b) also used a parser to help assign word probabilities, via the structured language model outlined in Section 3.2.
+    They trained

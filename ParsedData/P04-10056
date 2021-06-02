@@ -1,0 +1,9 @@
+an potentially begin before any word of X.
+    When a repair has begun, the channel model incrementally processes the succeeding words from the start of the repair.
+    Before each succeeding word either the repair can end or else a sequence of words can be inserted in the reparandum.
+    At the end of each repair, a (possibly null) interregnum is appended to the reparandum.
+    The intuition motivating the channel model design is that the words inserted into the reparandum are very closely related those in the repair.
+    Indeed, in our training data over 60% of the words in the reparandum are exact copies of words in the repair; this similarity is strong evidence of a repair.
+    The channel model is designed so that exact copy reparandum words will have high probability.
+    We assume that X is a substring of Y , i.e., that the source sentence can be obtained by deleting words from Y , so for a fixed observed sentence there are only a finite number of possible source sentences.
+    However, the number of s

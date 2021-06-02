@@ -1,0 +1,11 @@
+ P(lk|Ck) can be approximated by P(lk|eik, fjk, FTk).
+    Let C0k = {eik, fjk}&#8746;FTk.
+    P(lk|C0k) can then be decomposed using the same derivation as above.
+    In the second line of this derivation, we can drop eik and fjk from C0k, leaving only FTk, because they are implied by the events which the probabilities are conditionalized on.
+    Now, we are left with the task of approximating P (FTk|lk) and P(FTk|eik,fjk).
+    To do so, we will assume that for all ft &#8712; FTk, ft is conditionally independent given either lk or (eik, fjk).
+    This allows us to approximate alignment probability P(A|E, F) as follows: represent the context of lk.
+    Note that both the context Ck and the link lk imply the occurrence of eik and fjk.
+    We can rewrite P (lk|Ck) as: In any context, only a few features will be active.
+    The inner product is understood to be only over those features ft that are present in the current context.
+    This approximation will cause P(A|E, F) to no longer be awell-behaved probability

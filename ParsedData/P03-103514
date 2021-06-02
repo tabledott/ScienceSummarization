@@ -1,0 +1,7 @@
+nformation gain-like metric described in (Chien, 1997; Gao et al., 2002) to estimate how likely a candidate is to form a morphologically derived word, and remove &#8216;bad&#8217; candidates.
+    The basic idea behind the metric is that a Chinese word should appear as a stable sequence in the corpus.
+    That is, the components within the word are strongly correlated, while the components at both ends should have low correlations with words outside the sequence.
+    (3) Linguistic selection.
+    We finally manually check the remaining candidates, and construct the morph-lexicon, where each entry is tagged by its morphological pattern.
+    We consider four types of named entities: person names (PN), location names (LN), organization names (ON), and transliterations of foreign names (FN).
+    Because any character strings can be in principle named entities of one or more types, to limit the number of candidates for a more effective search, we generate named entity candidates, given an input string, in two steps

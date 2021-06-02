@@ -1,0 +1,8 @@
+ion 4.2.
+    For example, we can have features like ( 1 if t = DT &#8743; t+2 = JJ Sl 0 otherwise, We maintain the top two states with the highest hypothesis scores, if the beam width is set to two.
+    We have Similarly, we compute the top hypotheses and states for span [1, 2].
+    Suppose now the hypothesis with the highest action score is h251.
+    Then we update P by adding [2, 5] and removing [2, 2] and [4, 5], which are covered by [2, 5].
+    We also update Q by removing [2,5] and [1, 2],2 and add new candidate span [1, 5] resulting in The algorithm is especially designed in such a way Algorithm 2 Guided Learning Algorithm that, at each step, some new span is added to P or else some spans already present in P are extended by some token(s).
+    Furthermore, no pair of overlapping spans is ever found in P, and the number of pairs of overlapping spans that may be found in Q is always bounded by a constant.
+    This means that the algorithm performs at most n iterations, and its running time is therefore O(

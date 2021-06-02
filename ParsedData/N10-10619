@@ -1,0 +1,6 @@
+ng centering (Grosz et al., 1995), nearness (Hobbs, 1978), and deterministic constraints, which have all been utilized in prior coreference work (Soon et al., 1999; Ng and Cardie, 2002).
+    In order to combine these cues, we take a log-linear, feature-based approach and parametrize s7r(i, j; X) = exp{7rTfX(i, j)}, where fX(i, j) is a feature vector over mention positions i and j, and 7r is a parameter vector; the features may freely condition on X.
+    We utilize the following features between a mention and an antecedent: tree distance, sentence distance, and the syntactic positions (subject, object, and oblique) of the mention and antecedent.
+    Features for starting a new entity include: a definiteness feature (extracted from the mention&#8217;s determiner), the top CFG rule of the mention parse node, its syntactic role, and a bias feature.
+    These features are conjoined with the mention form (nominal or pronoun).
+    Additionally, we restrict pronoun antecedents to the current and last two sentences, a

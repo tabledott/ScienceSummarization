@@ -1,0 +1,8 @@
+gned).
+    Other language-specific orthographic clues could potentially affect this initial probability mass assignment.
+    When no tokenization is applied, we have to consider possible starting and ending points.
+    Therefore, the strings (which, for simplicity, we will refer as well as tokens) introduced in the prefix morphological trie and the ones introduced in the suffix trie may differ.
+    The left context of each token is introduced, letters in reverse order, in the left context trie, with pointers to the token in the morphlogical prefix trie; the right context of each token is introduced, in normal order, in the right context trie, keeping pointers to the token in the suffix trie.
+    The distributions along the paths are modified according to the a priori distribution of the targeted token.
+    This stage is the core bootstrapping phase of the algorithm.
+    In essence, as contextual models become better estimated, they identify additional named entities with increasing confidence, allowing reesti

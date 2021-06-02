@@ -1,0 +1,7 @@
+ treebank.
+    As a first step, all sections were parsed, and the packed parse forests unpacked and stored.
+    For discriminative estimation, this data set was restricted to sentences which receive a full parse (in contrast to a FRAGMENT or SKIMMED parse) for both its partially labeled and its unlabeled variant.
+    Furthermore, only sentences 2An alternative numerical method would be a combination of iterative scaling techniques with a conditional EM algorithm (Jebara and Pentland, 1998).
+    However, it has been shown experimentally that conjugate gradient techniques can outperform iterative scaling techniques by far in running time (Minka, 2001). which received at most 1,000 parses were used.
+    From this set, sentences of which a discriminative learner cannot possibly take advantage, i.e. sentences where the set of parses assigned to the partially labeled string was not a proper subset of the parses assigned the unlabeled string, were removed.
+    These successive selection steps resulted in a final tra

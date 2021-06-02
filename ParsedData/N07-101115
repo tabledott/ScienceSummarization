@@ -1,0 +1,8 @@
+ion, LASO uses a binary classification loss function that labels each candidate structure as correct or incorrect.
+    Thus, each LASO training example contains all candidate predictions, whereas our training examples contain only the highest scoring incorrect prediction and the highest scoring correct prediction.
+    Our experiments show the advantages of this ranking-based loss function.
+    Additionally, we provide an empirical study to quantify the effects of different example generation and loss function decisions.
+    Collins and Roark (2004) present an incremental perceptron algorithm for parsing that uses &#8220;early update&#8221; to update the parameters when an error is encountered.
+    Our method uses a similar &#8220;early update&#8221; in that training examples are only generated for the first mistake made during prediction.
+    However, they do not investigate rank-based loss functions.
+    Others have attempted to train global scoring functions using Gibbs sampling (Finkel et al., 2005), messa

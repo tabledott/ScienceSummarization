@@ -1,0 +1,7 @@
+tribution Qi drawn from a DP centered on Q0 with concentration parameter &#945;.
+    Up to the point where entities are chosen, this formulation follows the basic hierarchical Dirichlet process prior of Teh et al. (2006).
+    Once the entities are chosen, our model for the realization of the mentions is as before.
+    This model is depicted graphically in figure 5.
+    Although it is possible to integrate out Q0 as we did the individual Qi, we instead choose for efficiency and simplicity to sample the global mixture distribution Q0 from the posterior distribution P(Q0|Z).8 The mention generation terms in the model and sampler are unchanged.
+    In the full hierarchical model, our equation (1) for sampling entities, ignoring the salience component of section 3.4, becomes: where Qz0 is the probability of the entity z under the sampled global entity distribution and Qu0 is the unknown component mass of this distribution.
+    The HDP layer of sharing improves the model&#8217;s predictions to 72.5 F1 on our develo

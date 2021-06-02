@@ -1,0 +1,10 @@
+istad, 1998).
+    Like the previous heuristic, this is based on the idea that features predicting named entities are more useful than features predicting the default.
+    Note that this method of feature selection would probably break down if we tried to incorporate general compound features into our model as described in the previous section.
+    The model currently has about 24,000 features when trained on 350 articles of text.
+    If we even considered all pairs of features as potential compound features, the 0(n2) compound features which we could build from our atomic features would undoubtedly yield an unacceptable slowdown in the model's performance.
+    Clearly a more sophisticated feature selection routine such as the ones in (Berger et al., 1996), or (Berger and Printz, 1998) would be required in this case.
+  
+  
+    After having trained the features of an M.E. model and assigned the proper weight (a values) to each of the features, decoding (i.e.
+    &amp;quot;marking up&amp;quot;) a new piece of te

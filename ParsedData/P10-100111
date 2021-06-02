@@ -1,0 +1,9 @@
+
+    The algorithm progresses from small widths to large in the usual manner, but after defining the endpoints (i, j) there is an additional loop that enumerates all possible grandparents.
+    Since each derivation is defined by three fixed indices (the g-span) and one free index (the split point), the complexity of the algorithm is O(n4) time and O(n3) space.
+    Note that the grandparent indices cause each gspan to have non-contiguous structure.
+    For example, in Figure 4(a) the words between g and h will be controlled by some other g-span.
+    Due to these discontinuities, the correctness of the Model 0 dynamic-programming algorithm may not be immediately obvious.
+    While a full proof of correctness is beyond the scope of this paper, we note that each structure on the right-hand side of Figure 4 lies completely within the structure on the left-hand side.
+    This nesting of structures implies, in turn, that the usual properties required to ensure the correctness of dynamic programming hold.
+    We now 

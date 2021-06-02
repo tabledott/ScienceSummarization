@@ -1,0 +1,12 @@
+.
+    The basic idea of this method is to apply a maximum-likelihood approach to the joint probability of the parallel training corpus.
+    The resulting optimization criterion for the bilingual word classes is similar to the one used in monolingual maximumlikelihood word clustering.
+    5.
+    We count all phrase-pairs of the training corpus which are consistent with the alignment matrix determined in step 2.
+    A phrase-pair is consistent with the alignment if the words within the source phrase are only aligned to words within the target phrase.
+    Thus we obtain a count n(z) of how often an alignment template occurred in the aligned training corpus.
+    The probability of using an alignment template needed by Eq.
+    (5) is estimated by relative frequency: Fig.
+    3 shows some of the extracted alignment templates.
+    The extraction algorithm does not perform a selection of good or bad alignment templates - it simply extracts all possible alignment templates.
+    For decoding we use the following search

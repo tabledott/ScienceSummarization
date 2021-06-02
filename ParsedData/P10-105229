@@ -1,0 +1,10 @@
+ when a feature testing a n-gram is active, in most cases, the features for all embedded k-grams are also selected.
+    Based on this observation, we have designed an incremental training strategy for the POS tagging task, where more specific features are progressively incorporated into the model if the corresponding less specific feature is active.
+    This experiment used BCD, which is the most memory efficient algorithm.
+    The first iteration only includes tests on the current word.
+    During the second iteration, we add tests on bigram of words, on suffixes and prefixes up to length 4.
+    After four iterations, we throw in features testing word trigrams, subject to the corresponding unigram block being active.
+    After 6 iterations, we finally augment the model with windows of length 5, subject to the corresponding trigram being active.
+    After 10 iterations, the model contains about 4 billion features, out of which 400,000 are active.
+    It achieves an error rate of 2.63% (resp.
+    2.78%) on the

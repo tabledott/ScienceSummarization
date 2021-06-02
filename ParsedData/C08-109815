@@ -1,0 +1,7 @@
+t among words with the same set of possible tags as w, then the smoothed probability of t given w is defined as follows: p(t|w) = f(w, t) + Np(t|[w]) f(w) + NThe smoothed estimates of p(tag|word) are di vided by the prior probability p(tag) of the tag and used instead of p(word|tag).
+			5 4.2 Unknown Words.
+			The lexical probabilities of unknown words areobtained as follows: The unknown words are di vided into four disjoint classes 6with numeric ex pressions, words starting with an upper-case letter, words starting with a lower-case letter, and a fourthclass for the other words.
+			The tagger builds a suf fix trie for each class of unknown words using the known word types from that class.
+			The maximal length of the suffixes is 7.
+			The suffix tries are pruned until (i) all suffixeshave a frequency of at least 5 and (ii) the information gain multiplied by the suffix frequency and di 5 p(word|tag) is equal to p(tag|word)p(word)/p(tag) and p(word) is a constant if the tokenization is unambiguous.
+			Therefor

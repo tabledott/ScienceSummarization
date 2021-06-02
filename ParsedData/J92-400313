@@ -1,0 +1,6 @@
+gram language model.
+    Given training text, tr, the maximum likelihood estimates of the parameters of a 1-gram class model are where by C(c) we mean the number of words in tf for which the class is c. From these equations, we see that, since c = r(w), Pr (w) = Pr (w I c) Pr (c) = C(w)/T.
+    For a 1-gram class model, the choice of the mapping it has no effect.
+    For a 2-gram class model, the sequential maximum likelihood estimates of the order-2 parameters maximize Pr (tII ti) or, equivalently, log Pr(tr I t1) and are given by By definition, Pr (ci c2) = Pr (ci) Pr (c2 I ci), and so, for sequential maximum likelihood estimation, we have Since C(ci ) and Ec c(cio are the numbers of words for which the class is ci in the strings ti. and tiT-1 respectively, the final term in this equation tends to 1 as T tends to infinity.
+    Thus, Pr (ci c2) tends to the relative frequency of ci c2 as consecutive classes in the training text.
+    Therefore, since Ew c(ww2)/(T&#8212; 1) tends to the relative frequency of w2

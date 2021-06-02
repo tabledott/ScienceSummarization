@@ -1,0 +1,8 @@
+ are passed through a common preproccessing step, which relabels preterminal nodes dominating auxiliary verbs and transitive verbs.
+    The preprocessing step relabels auxiliary verbs and transitive verbs in all trees seen by the algorithm.
+    This relabelling is deterministic and depends only on the terminal (i.e., the word) and its preterminal label.
+    Auxiliary verbs such as is and being are relabelled as either a AUX or AUXG respectively.
+    The relabelling of auxiliary verbs was performed primarily because Charniak&#8217;s parser (which produced one of the test corpora) produces trees with such labels; experiments (on the development section) show that auxiliary relabelling has little effect on the algorithm&#8217;s performance.
+    The transitive verb relabelling suffixes the preterminal labels of transitive verbs with &#8220; t&#8221;.
+    For example, in Figure 1 the verb likes is relabelled VBZ t in this step.
+    A verb is deemed transitive if its stem is followed by an NP without any grammatica

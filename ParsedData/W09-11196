@@ -1,0 +1,11 @@
+act phrase boundaries and measure performance using token-level F1.
+    Webpages - we have assembled and manually annotated a collection of 20 webpages, including personal, academic and computer-science conference homepages.
+    The dataset contains 783 entities (96loc, 223-org, 276-per, 188-misc).
+    Evaluation: The named entities in the webpages were highly ambiguous and very different from the named entities seen in the training data.
+    For example, the data included sentences such as : &#8220;Hear, O Israel, the Lord our God, the Lord is one.&#8221; We could not agree on whether &#8220;O Israel&#8221; should be labeled as ORG, LOC, or PER.
+    Similarly, we could not agree on whether &#8220;God&#8221; and &#8220;Lord&#8221; is an ORG or PER.
+    These issues led us to report token-level entity-identification F1 score for this dataset.
+    That is, if a named entity token was identified as such, we counted it as a correct prediction ignoring the named entity type.
+  
+  
+    In this section we introduce 

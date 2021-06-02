@@ -1,0 +1,10 @@
+ection) corpus using the dependency parser Minipar (Lin, 1994).
+    We identify all nouns.
+    For each noun we take the grammatical context of the noun as identified by Minipar5.
+    We do not use grammatical features in the web corpus since parsing is generally not easily web scalable.
+    This kind of feature set does not seem to affect our results.
+    Curran and Moens (2002) also report comparable results for Minipar features and simple word based proximity features.
+    Table 1 gives the characteristics of both corpora.
+    Since we use grammatical context, the feature set is considerably larger than the simple word based proximity feature set for the newspaper corpus.
+    Having collected all nouns and their features, we now proceed to construct feature vectors (and values) for nouns from both corpora using mutual information (Church and Hanks, 1989).
+    We first construct a frequency count vector C(e) = (ce1, ce2, ..., cek), where k is the total number of features and cef is the frequency count of fe

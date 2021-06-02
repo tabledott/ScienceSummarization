@@ -1,0 +1,8 @@
+t our main results on this split.
+    To facilitate the comparison of our results to those reported by (Cohen and Smith, 2007) we use their data set in which 177 empty and &#8220;malformed&#8221;7 were removed.
+    The first 3770 trees of the resulting set then were used for training, and the last 418 are used testing.
+    (we ignored the 419 trees in their development set.)
+    Morphological Analyzer Ideally, we would use an of-the-shelf morphological analyzer for mapping each input token to its possible analyses.
+    Such resources exist for Hebrew (Itai et al., 2006), but unfortunately use a tagging scheme which is incompatible with the one of the Hebrew Treebank.s For this reason, we use a data-driven morphological analyzer derived from the training data similar to (Cohen and Smith, 2007).
+    We construct a mapping from all the space-delimited tokens seen in the training sentences to their corresponding analyses.
+    Lexicon and OOV Handling Our data-driven morphological-analyzer proposes analyses for un

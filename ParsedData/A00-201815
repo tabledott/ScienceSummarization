@@ -1,0 +1,7 @@
+the second pass to see expansions not present in the training corpus.
+    We use the gathered statistics for all observed words, even those with very low counts, though obviously our deleted interpolation smoothing gives less emphasis to observed probabilities for rare words.
+    We guess the preterminals of words that are not observed in the training data using statistics on capitalization, hyphenation, word endings (the last two letters), and the probability that a given pre-terminal is realized using a previously unobserved word.
+    As noted above, the probability model uses five smoothed probability distributions, one each for Li, M,Ri,t, and h. The equation for the (unsmoothed) conditional probability distribution for t is given in Equation 7.
+    The other four equations can be found in a longer version of this paper available on the author's website (www.cs.brown.eduhiec).
+    L and R are conditioned on three previous labels so we are using a third-order Markov grammar.
+    Also, the label of the pare

@@ -1,0 +1,8 @@
+small amounts of target domain training data.
+    In this case, we make use of the out-of-domain data by using features of the source domain tagger&#8217;s predictions in training and testing the target domain tagger (Florian et al., 2004).
+    Though other methods for incorporating small amounts of training data in the target domain were available, such as those proposed by Chelba and Acero (2004) and by Daum&#180;e III and Marcu (2006), we chose this method for its simplicity and consistently good performance.
+    We use as features the current predicted tag and all tag bigrams in a 5-token window around the current token.
+    Figure 6(a) plots tagging accuracy for varying amounts of MEDLINE training data.
+    The two horizontal lines are the fixed accuracies of the SCL WSJ-trained taggers using one thousand and forty thousand sentences of training data.
+    The five learning curves are for taggers trained with varying amounts of target domain training data.
+    They use features on the outputs of taggers f

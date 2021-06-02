@@ -1,0 +1,9 @@
+ of any word in the corpus containing a sense marked with that code.
+    Disambiguation is carried out by examining the same 100 word context window for an ambiguous word and comparing it against the models for each of its possible categories.
+    Further details may be found in Yarowsky (1992).
+    Yarowsky reports 92% correct disambiguation over 12 test words, with an average of three possible Roget large categories.
+    However, LDOCE has a higher level of average ambiguity and does not contain as complete a thesaural hierarchy as Roget, so we would not expect such good results when the algorithm is adapted to LDOCE.
+    Consequently, we implemented the approach as a partial tagger.
+    The algorithm identifies the most likely pragmatic code and returns the set of senses which are marked with that code.
+    In LDOCE, several senses of a word may be marked with the same pragmatic code, so this partial tagger may return more than one sense for an ambiguous word.
+    The final disambiguation module is the onl

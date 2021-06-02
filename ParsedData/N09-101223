@@ -1,0 +1,13 @@
+ence (as measured by likelihood of a held-out data set); the other models are pruned away.
+    In this paper we use B = 20 and M = 50.
+    For the bth setting, we draw a random sample from the prior &#175;&#952;(b).
+    We set the initial Q(t) = P(t|s,&#175;&#952;(b)) which can be calculated using the Expectation-Maximization E-Step.
+    Q(&#175;&#952;) is then initialized using the standard VB M-step.
+    For the Lexicalized-EVG, we modify this procedure slightly, by first running MB smoothed EVG models for 40 iterations each and selecting the best model in each cohort as before; each L-EVG distribution is initialized from its corresponding EVG distribution.
+    The new P(A|h, H, d, v) distributions are set initially to their corresponding P(A|H, d, v) values.
+  
+  
+    We trained on the standard Penn Treebank WSJ corpus (Marcus et al., 1993).
+    Following Klein and Manning (2002), sentences longer than 10 words after removing punctuation are ignored.
+    We refer to this variant as WSJ10.
+    Following Coh

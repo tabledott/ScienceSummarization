@@ -1,0 +1,6 @@
+y associated with Eisner&#8217;s dynamic programming parsing algorithm and with the Markovian assumptions made explicitly by his generative model.
+    We next show how similar features 6Actually, any logical condition can be encoded with linear constraints involving binary variables; see e.g.
+    Clarke and Lapata (2008) for an overview.
+    7By sibling features we mean features that depend on pairs of sibling arcs (i.e., of the form (i, j) and (i, k)); by grandparent features we mean features that depend on pairs of grandparent arcs (of the form (i, j) and (j, k)). can be incorporated in our model by adding &#8220;dynamic&#8221; constraints to our ILP.
+    Define: zfirst child , ij 0 otherwise. but this would yield a constraint matrix with O(n4) non-zero elements.
+    Instead, we define auxiliary variables &#946;jk and &#947;ij: sibl ijk z &#947;i(j+1)&#8804; &#947;ij +zij analogously for the case n Then, we have that The following constraints encode the logical relations for the auxiliary vari Auxiliary var

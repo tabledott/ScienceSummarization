@@ -1,0 +1,6 @@
+ the fact that the lexicon becomes smaller and smaller with each models (see Table 2.
+    PGIZA++, in small amount of data, Because MGIZA++ is more convenient to integrate into other packages, we modified the Moses system to use MGIZA++.
+    We use the Europal EnglishSpanish dataset as training data, which contains 900 thousand sentence pairs, 20 million English words and 20 million Spanish words.
+    We trained the English-to-Spanish system, and tuned the system on two datasets, the WSMT 2006 Europal test set (TUNE1) and the WSMT news commentary devtest set 2007 (TUNE2).
+    Then we used the first parameter set to decode WSMT 2006 Europal test set (TEST1) and used the second on WSMT news commentary test set 2007 (TEST2)6.
+    Table 6 shows the comparison of BLEU scores of both systems. listed in Table 6: Note that when decoding using the phrase table resulting from training with MGIZA++, we used the parameter tuned for a phrase table generated from GIZA++ alignment, which may be the cause of lower BLEU score

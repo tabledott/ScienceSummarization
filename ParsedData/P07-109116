@@ -1,0 +1,14 @@
+If no, then the entire input is treated as one single clause.
+    Step 2 and step 3(a)(i) still follow the algorithm in section 4.
+    Step 3(a)(ii) is trivial, but there is a subtle point about the calculation of language model score: the language model score of a translated clause is not independent from other clauses; it should take into account the last few words of the previous translated clause.
+    The best translated clause T&#65533; (C0i) is selected in step 3(a)(iii) by equation 3.
+    In step 4 the best translation Tj is
+  
+  
+    Our experiments are about Chinese-to-English translation.
+    The NIST MT-2005 test data set is used for evaluation.
+    (Case-sensitive) BLEU-4 (Papineni et al., 2002) is used as the evaluation metric.
+    The test set and development set of NIST MT-2002 are merged to form our development set.
+    The training data for both reordering knowledge and translation table is the one for NIST MT-2005.
+    The GIGAWORD corpus is used for training language model.
+    The Chinese 

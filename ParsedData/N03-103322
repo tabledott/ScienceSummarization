@@ -1,0 +1,8 @@
+. or Inc.
+    This suggests that further gains could be made by incorporating a good named entity recognizer as a preprocessor to the tagger (reversing the most common order of processing in pipelined systems!
+    ), and is a good example of something that can only be done when using a conditional model.
+    Minor gains come from a few additional features: an allcaps feature, and a conjunction feature of words that are capitalized and have a digit and a dash in them (such words are normally common nouns, such as CFC-12 or F/A-18).
+    We also found it advantageous to use prefixes and suffixes of length up to 10.
+    Together with the larger templates, these features contribute to our unknown word accuracies being higher than those of previously reported taggers.
+    With so many features in the model, overtraining is a distinct possibility when using pure maximum likelihood estimation.
+    We avoid this by using a Gaussian prior (aka quadratic regularization or quadratic penalization) which resists high featu

@@ -1,0 +1,10 @@
+rain the cardinality of the output nonterminals, which is accomplished by the role templates in the term.
+    Translator CT scans only the input components.
+    Terminal productions with active output components are simply loaded from the grammar, and their LHSs are added to the chart without d-span information.
+    Composition proceeds as before, except that there are no constraints on the role templates in the output dimensions &#8211; the role templates in are free variables.
+    In summary, Logic CT differs from Logic C as follows: Items store no position information (d-spans) for the output components.
+    For the output components, the Scan inferences are replaced by Load inferences, which are not constrained by the input.
+    The Compose inference does not constrain the d-spans of the output components.
+    (Though it still constrains their cardinality.)
+    We have constructed a translator from a synchronous parser merely by relaxing some constraints on the output dimensions.
+    Logic C is just Logic

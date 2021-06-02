@@ -1,0 +1,9 @@
+glish-Arabic and English-Korean generative transliteration models, respectively.
+    (Knight and Graehl, 1997) build a generative model for backward transliteration from Japanese to English.
+    While generative models are often robust, they tend to make independence assumptions that do not hold in data.
+    The discriminative learning framework argued for in (Roth, 1998; Roth, 1999) as an alternative to generative models is now used widely in NLP, even in the context of word alignment (Taskar et al., 2005; Moore, 2005).
+    We make use of it here too, to learn a discriminative transliteration model that requires little knowledge of the target language.
+  
+  
+    In essence, the algorithm we present uses temporal alignment as a supervision signal to iteratively train a discriminative transliteration model, which can be viewed as a distance metric between and English NE and a potential transliteration.
+    On each iteration, it selects a set of transliteration candidates for each NE according to the current mo

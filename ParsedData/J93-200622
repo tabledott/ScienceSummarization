@@ -1,0 +1,7 @@
+h word an ordered list of tags, marked by their probability using the Forward Backward algorithm (Baum and Eagon 1967).
+    That yields a more precise method of determining the probability of each possible tag since it sums over all possible tag sequences, taking into account the entire sentence and not just the preceding tags.
+    The Forward Backward algorithm is normally used in unsupervised training to estimate the model that finds the maximum likelihood of the parameters of that model.
+    The exact probability of a particular tag given a particular word is computed directly by the product of the &amp;quot;forward&amp;quot; and &amp;quot;backward&amp;quot; probabilities to that tag, divided by the probability of the word sequence given this model.
+    Figure 3 shows k-best tagging output, with the correct tag for each word marked in bold.
+    Note that the probabilities are in natural log base e. Thus for each difference of 1, there is a factor of 2.718 in the probability.
+    In two of the words (&amp;q

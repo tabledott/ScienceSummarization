@@ -1,0 +1,10 @@
+ of remember &#8594; Lebanon.
+    Finally, naturally occurring bitexts contain some number of free or erroneous translations.
+    Machine translation researchers often seek to strike these examples from their training corpora; &#8220;free&#8221; translations are not usually welcome from an MT system.
+  
+  
+    First, we consider the problem of parser projection when there are zero target-language trees available.
+    As in much other work on unsupervised parsing, we try to learn a generative model that can predict target-language sentences.
+    Our novel contribution is to condition the probabilities of the generative actions on the dependency parse of a source-language translation.
+    Thus, our generative model is a quasi-synchronous grammar, exactly as in (Smith and Eisner, 2006a).3 When training on target sentences w, therefore, we tune the model parameters to maximize not Et p(t, w) as in ordinary EM, but rather Et p(t, w, a  |t', w').
+    We hope that this conditional EM training will drive the model to

@@ -1,0 +1,7 @@
+asure can be the length of the longest matched prefix (LMP) or the length of the longest common subsequence (LCS) between them.
+    Then, this raw similarity measure is transformed to a surface similarity score between 0 and 1 through an exponential mapping, where is computed as and is the raw similarity measure of ej&#8217; ei, which is the length of the LMP or LCS of ej&#8217; and ei. and p is a smoothing factor that characterizes the mapping, Thus as p approaches infinity, backs off to the exact match model.
+    We found the smoothed similarity model of (4) yields slightly better results than the exact match model.
+    Both LMP- and LCS- based methods achieve similar performance but the computation of LMP is faster.
+    Therefore, we only report results of the LMP-based smoothed similarity model.
+    The distortion model, which specifies the transition probabilities of the HMM, models the first-order dependencies of word ordering.
+    In bilingual HMM-based word alignment, it is commonly assumed that trans

@@ -1,0 +1,6 @@
+feature/value data, and nodes rooting this data into document content (in this case text). text into simple tokens, such as numbers, punctuation, symbols, and words of different types (e.g. with an initial capital, all upper case, etc.).
+    The aim is to limit the work of the tokeniser to maximise efficiency, and enable greater flexibility by placing the burden of analysis on the grammars.
+    This means that the tokeniser does not need to be modified for different applications or text types. splitter a cascade of finitestate transducers which segments the text into sentences.
+    This module is required for the tagger.
+    Both the splitter and tagger are domainand application-independent. a modified version of the Brill tagger, which produces a part-of-speech tag as an annotation on each word or symbol.
+    Neither the splitter nor the tagger are a mandatory part of the NE system, but the annotations they produce can be used by the grammar (described below), in order to increase its power and coverage. of 

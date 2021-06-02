@@ -1,0 +1,8 @@
+&#8722;LM model, but rescoring used the same weights as the other experiments.
+    We tested the rescoring method (k = 103 and 104), the intersection method, and the cube-pruning method (e = 0, 0.1, and 0.2).
+    The LM rescoring decoder (k = 104) is the fastest but has the poorest BLEU score.
+    Identifying and rescoring the k-best derivations is very quick; the execution time is dominated by reconstructing the output strings for the k-best derivations, so it is possible that further optimization could reduce these times.
+    The intersecting decoder has the best score but runs very slowly.
+    Finally, the cubepruning decoder runs almost as fast as the rescoring decoder and translates almost as well as the intersecting decoder.
+    Among these tests, e = 0.1 gives the best results, but in general the optimal setting will depend on the other beam settings and the scale of the feature weights.
+    We compared Hiero against two baselines: the state-of-the-art phrase-based system ATS (Och et al. 2004; Thayer e

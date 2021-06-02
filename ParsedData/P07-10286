@@ -1,0 +1,7 @@
+d tuples (p, rp, w).
+    We will be using the similarity metrics shown in Table 1: Cosine, the Dice and Jaccard coefficients, and Hindle's (1990) and Lin's (1998) mutual information-based metrics.
+    We write f for frequency, I for mutual information, and R(w) for the set of arguments rp for which w occurs as a headword.
+    In this paper we only study corpus-based metrics.
+    The sim function can equally well be in)stantiated with a WordNet-based metric (for an overview see Budanitsky and Hirst (2006)), but we restrict our experiments to corpus-based metrics (a) in the interest of greatest possible resource-independence and (b) in order to be able to shape the similarity metric by the choice of generalization corpus.
+    For the headword weights wtrp(w), the simplest possibility is to assume a uniform weight distribution, i.e. wtrp(w) = 1.
+    In addition, we test a frequency-based weight, i.e. wtrp(w) = f(w, rp), and inverse document frequency, which weighs a word according to its discriminativity: num. w

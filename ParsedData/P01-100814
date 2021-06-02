@@ -1,0 +1,6 @@
+araphrases.
+    Identical words play two roles in this process: first, they are used to learn context rules; second, identical words are used in application of these rules, because the rules contain information about the equality of words in context.
+    This method of co-training has been previously applied to a variety of natural language tasks, such as word sense disambiguation (Yarowsky, 1995), lexicon construction for information extraction (Riloff and Jones, 1999), and named entity classification (Collins and Singer, 1999).
+    In our case, the co-training process creates a binary classifier, which predicts whether a given pair of phrases makes a paraphrase or not.
+    Our model is based on the DLCoTrain algorithm proposed by (Collins and Singer, 1999), which applies a co-training procedure to decision list classifiers for two independent sets of features.
+    In our case, one set of features describes the paraphrase pair itself, and another set of features corresponds to contexts in which paraphrases o

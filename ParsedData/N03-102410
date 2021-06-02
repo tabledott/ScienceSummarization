@@ -1,0 +1,12 @@
+
+    We simply traverse the parse forest top-down and create alternative paths for every merged node.
+    For example, the parse forest in Figure 5 is mapped into the FSA shown at the bottom of the same figure.
+    In the FSA, there is a word associated with each edge.
+    Different paths between any two nodes are assumed to be paraphrases of each other.
+    Each path that starts from the BEGIN node and ends at the END node corresponds to either an original input sentence or a paraphrase sentence.
+    Squeezing.
+    Since we adopted a very strict matching criterion in top-down merging, a small difference in the syntactic structure of two trees prevents some legitimate mergings from taking place.
+    This behavior is also exacerbated by errors in syntactic parsing.
+    Hence, for instance, three edges labeled detroit at the leftmost of the top FSA in Figure 6 were kept apart.
+    To compensate for this effect, our algorithm implements an additional step, which we call squeezing.
+    If two different edges that

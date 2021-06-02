@@ -1,0 +1,11 @@
+ture applying GIS to globally optimised models such as conditional random fields, e.g.
+    Sha and Pereira (2003).
+    As an alternative to GIS, we have implemented a parallel version of our L-BFGS code using the Message Passing Interface (MPI) standard.
+    L-BFGS over forests can be parallelised, using the method described in Clark and Curran (2003) to calculate the feature expectations.
+    The L-BFGS algorithm, run to convergence on the cluster, takes 479 iterations and 2 hours for the normal-form model, and 1,550 iterations and roughly 17 hours for the dependency model.
+  
+  
+    For the normal-form model, the Viterbi algorithm is used to find the most probable derivation.
+    For the dependency model, the highest scoring dependency structure is required.
+    Clark and Curran (2003) outlines an algorithm for finding the most probable dependency structure, which keeps track of the highest scoring set of dependencies for each node in the chart.
+    For a set of equivalent entries in the chart (a disjunctiv

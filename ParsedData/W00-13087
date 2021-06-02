@@ -1,0 +1,8 @@
+Special feature templates exist for rare words in the training data, to increase the model's prediction capacity for unknown words.
+    The actual feature templates for this model are shown in the next table.
+    They are a subset of the features used in Ratnaparkhi (1996).
+    No.
+    Feature Type Template General feature templates can be instantiated by arbitrary contexts, whereas rare feature templates are instantiated only by histories where the current word wi is rare.
+    Rare words are defined to be words that appear less than a certain number of times in the training data (here, the value 7 was used).
+    In order to be able to throw out features that would give misleading statistics due to sparseness or noise in the data, we use two different cutoff values for general and rare feature templates (in this implementation, 5 and 45 respectively).
+    As seen in Table 1 the features are conjunctions of a boolean function on the history h and a boolean function on the tag t. Features whose first conjuncts 

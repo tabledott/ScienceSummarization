@@ -1,0 +1,10 @@
+ch linking property in P a real valued strength.
+    For each Awi , #(Awi ) is the count of the adjacency point: the number of times the adjacency point was updated.
+    Based on this count, I also define a normalized version of Awi : Awi (l) = Awi (l)&#65533;#(Aw i ).
+    Given a sequence of training utterances (Ut)0&lt;t, the learner constructs a sequence of lexicons (Ls)0&lt;s beginning with the zero lexicon L0 (which assigns a zero strength to all labels and linking properties).
+    At each step, the learner uses the parsing function PL, based on the previously learned lexicon Ls to extend the parse L of an utterance Ut.
+    It then uses the result of this parse step (together with the lexicon Ls) to create a new lexicon Ls+1 (it may be that Ls = Ls+1).
+    This operation is a lexicon update.
+    The process then continues with the new lexicon Ls+1.
+    Any of the lexicons Ls constructed by the learner may be used for parsing any utterance U, but as s increases, parsing accuracy should improve.
+    This l

@@ -1,0 +1,10 @@
+as a pattern-matching task, acquiring symbolic patterns that rely on both thesyntax and lexical semantics of a sentence.
+			We hy pothesized that a combination of the two techniques would perform better than either one alone.Section 3 describes the CRF approach to identify ing opinion sources and the features that the systemuses.
+			Section 4 then presents a new variation of Au toSlog, AutoSlog-SE, which generates IE patterns toextract sources.
+			Section 5 describes the hybrid sys tem: we encode the IE patterns as additional features in the CRF model.
+			Finally, Section 6 presents our experimental results and error analysis.
+	
+	
+			Random FieldsWe defined the problem of opinion source identification as a sequence tagging task via CRFs as fol lows.
+			Given a sequence of tokens, x = x1x2...xn, we need to generate a sequence of tags, or labels, y = y1y2...yn.
+			We define the set of possible labelvalues as ?S?, ?T?, ?-?, where ?S? is the first to ken (or Start) of a source, ?T? is a non-initial token (i.e., a

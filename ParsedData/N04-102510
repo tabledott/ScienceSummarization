@@ -1,0 +1,9 @@
+s, we obtain: where log Z represents combined factors involving passage length and the uniform prior P(Gi) which, according to our assumptions, do not influence the prediction outcome and may be ignored.
+    The sum in (3) is easily computed: for each token in T, we simply look up its log probability in the language model of Gi and sum over all tokens to obtain the total likelihood of the passage given the grade.
+    We do this for all language models, and select the one with maximum likelihood.
+    An example of the set of log-likelihoods calculated across all 12 grade models, with a maximum point clearly evident, is shown in Figure 2.
+  
+  
+    Given the above theoretical model, we describe two further aspects of our classification method: smoothing and feature selection.
+    We will likely see some types in test documents that are missing or rarely seen in our training documents.
+    This is a well-known issue in language model applications, and it is standard to compensate for this sparseness by smoothing

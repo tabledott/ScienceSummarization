@@ -1,0 +1,8 @@
+final belief about the TREE factor is a distribution over such assignments, in which a tree&#8217;s probability is proportional to the probability of its edge weights gLij (incoming messages).
+    We could simply return the mode of this distribution (found by using a 1-best first-order parser) or the k-best trees, or take samples.
+    21There are no NOCROSSje factors with f = j.
+    22We still treat CHILDSEQi as a global factor and compute all its correct outgoing messages on a single BP iteration, via serial forward and backward sweeps through the subfactors.
+    Handling the subfactors in parallel, (3)&#8211;(4), would need O(n) iterations.
+    23Ignoring the treatment of boundary symbols &#8220;#&#8221; (see &#167;3.4).
+    In our experiments, we actually take the edge weights to be not the messages &#65533;qLij from the links, def &#65533;bLij = log bLij(true)/bLij(false)).
+    These are passed into a fast algorithm for maximum spanning tree (Tarjan, 1977) or maximum projective spanning tree (Eisner, 1996

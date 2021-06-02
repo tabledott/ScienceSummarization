@@ -1,0 +1,7 @@
+ty class according to part-of-speech (POS) information of the word.
+    That is, given a part-of-speech tag set POS, we produce new |POS |classes, &#8220;Op&#8221; p &#8712; POS.
+    Since we use a POS tagger that outputs 45 Penn Treebank&#8217;s POS tags in this paper, we have new 45 sub-classes which correspond to nonentity regions such as &#8220;O-NNS&#8221; (plural nouns), &#8220;OJJ&#8221; (adjectives), and &#8220;O-DT&#8221; (determiners).
+    Splitting by POS information seems useful for improving the system accuracy as well, because in the named entity recognition we must discriminate between nouns in named entities and nouns in ordinal noun phrases.
+    In the experiments, we show this class splitting technique not only enables the feasible training but also improves the accuracy.
+    In addition to the standard features, we explore word cache feature and HMM state feature, mainly to solve the data sparseness problem.
+    Although the GENIA corpus is the largest annotated corpus for the biomedical do

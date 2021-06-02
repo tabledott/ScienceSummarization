@@ -1,0 +1,12 @@
+d is in our opinion lexicon ? a set of words that indicate the presence of an opinion.
+			We do the same for neighboring words in a [?1,+1] window.Additionally, we include for xi a feature that in dicates the opinion subclass associated with xi, ifavailable from the lexicon.
+			(e.g., ?bless?
+			is clas sified as ?moderately subjective?
+			according to the lexicon, while ?accuse?
+			and ?berate?
+			are classified more specifically as ?judgments?.)
+			The lexicon is initially populated with approximately 500 opinionwords 3 from (Wiebe et al, 2002), and then aug mented with opinion words identified in the training data.
+			The training data contains manually producedphrase-level annotations for all expressions of opinions, emotions, etc.
+			(Wiebe et al, 2005).
+			We col lected all content words that occurred in the training set such that at least 50% of their occurrences were in opinion annotations.
+			Dependency tree features For each token xi, we create features based on the parse tree produced by the Collin

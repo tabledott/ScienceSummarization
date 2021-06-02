@@ -1,0 +1,7 @@
+graphic similarities (e.g. coast to costas), and 30 were difficult to categorize and fell into none of these categories.
+    Since many of our &#8216;errors&#8217; actually represent valid translation pairs not contained in our extracted dictionary, we supplemented our evaluation lexicon with one automatically derived from 100k sentences of parallel Europarl data.
+    We ran the intersected HMM wordalignment model (Liang et al., 2008) and added (s, t) to the lexicon if s was aligned to t at least three times and more than any other word.
+    Evaluating against the union of these lexicons yielded 98.0 p0.33, a significant improvement over the 92.3 using only the Wiktionary lexicon.
+    Of the true errors, the most common arose from semantically related words which had strong context feature correlations (see table 4(b)).
+    We also explored the relationships our model learns between features of different languages.
+    We projected each source and target feature into the shared canonical space, and for each p

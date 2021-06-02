@@ -1,0 +1,5 @@
+cted incrementally by shifting the first two tokens onto the stack, then reducing &#8211; with Right-Reduce in (2&#8211;3) and Left-Reduce in (4&#8211;5) &#8211; and then shifting and reducing again &#8211; with Right-Reduce in (2) and (4) and LeftReduce in (3) and (5).
+    By contrast, the three remaining trees all require that three tokens are Initialization hnil, W, &#8709;i Termination hS, nil, Ai Left-Reduce hwjwi|S, I, Ai &#8594; hwj|S, I, A &#8746; {(wj, wi)}i &#172;&#8707;wk(wk, wi) &#8712; A Right-Reduce hwjwi|S, I, Ai &#8594; hwi|S, I, A &#8746; {(wi, wj)}i &#172;&#8707;wk(wk, wj) &#8712; A Shift hS, wi|I, Ai &#8594; hwi|S, I, Ai shifted onto the stack before the first reduction.
+    However, the reason why we cannot parse the structure incrementally is different in (1) compared to (6&#8211;7).
+    In (6&#8211;7) the problem is that the first two tokens are not connected by a single arc in the final dependency graph.
+    In (6) they are sisters, both being dependents on the third token; in (7) the f

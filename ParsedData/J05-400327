@@ -1,0 +1,6 @@
+ve training examples are clean parallel sentence pairs, with high word overlap (since the pairs with low overlap are filtered out); thus, the classification decision frontier is pushed towards &#8220;goodlooking&#8221; alignments.
+    The low recall results are partly due to the word-overlap filter (the first stage of the classification process), which discards many parallel pairs.
+    If we don&#8217;t apply the filter before the classifier, the recall results increase by about 20% (with no loss in precision).
+    However, the filter plays a very important role in keeping the extraction pipeline robust and efficient (as shown in Figure 7, the filter discards 99% of the candidate pairs), so this loss of recall is a price worth paying.
+    Classifier evaluations using different subsets of features show that most of the classifier performance comes from the general features together with the alignment features concerning the percentage and number of words that have no connection.
+    However, we expect that in 

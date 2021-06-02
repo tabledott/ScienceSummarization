@@ -1,0 +1,6 @@
+ combinations over three different learners (C4.5, Ripper, and Maxent), three sampling methods, two feature sets (Soon et al., 2001; Ng and Cardie, 2002b), and three clustering algorithms (Best-First, Closest-First, and aggressivemerge).
+    The features used by the reranker are of two types: (i) partition-based features which are here simple functions of the local features, and (ii) method-based features which simply identify the coreference system used for generating the given partition.
+    Although this approach leads to significant gains on the both the MUC and the ACE datasets, it has some weaknesses.
+    Most importantly, the different systems employed for generating the different partitions are all instances of the local classification approach, and they all use very similar features.
+    This renders them likely to make the same types of errors.
+    The ILP approach could in fact be integrated with these other approaches, potentially realizing the advantages of multiple global systems, with ILP condu

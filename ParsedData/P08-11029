@@ -1,0 +1,6 @@
+ addition, even though these higher grams were managed to be used, there still remains another problem: as the current predication relies on the results of prior ones, the decoding procedure has to resort to approximate inference by maintaining a list of N-best candidates at each predication position, which evokes a potential risk to depress the training.
+    To alleviate the drawbacks, we propose a cascaded linear model.
+    It has a two-layer architecture, with a perceptron as the core and another linear model as the outside-layer.
+    Instead of incorporating all features into the perceptron directly, we first trained the perceptron using character-based features, and several other sub-models using additional ones such as word or POS n-grams, then trained the outside-layer linear model using the outputs of these sub-models, including the perceptron.
+    Since the perceptron is fixed during the second training step, the whole training procedure need relative small time and memory cost.
+    The outside-layer

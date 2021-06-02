@@ -1,0 +1,5 @@
+is that the anaphor becomes a member of the COREF class already associated with its antecedent.
+			In our implementation, COREF classes are repre- sented as objects in the Common Lisp Object System which contain information about the COREF class as a whole, including canonical form (typically deter- mined by the discourse referent which introduces the class), membership, and, most importantly, salience (discussed below).
+			1 The connection between a dis- course referent and its COREF class is mediated through the COREF object as follows: every discourse referent includes an information parameter which is a pointer to a COREF object; discourse referents which have been determined to be coreferential share the same COREF value (and so literally point to the same object).
+			Imple- menting coreference in this way provides a means of getting from any discourse referent in a COREF class to information about the class as a whole.
+			2.2.2 Salience The information parameter of a COREF object most cru- cial to anaph

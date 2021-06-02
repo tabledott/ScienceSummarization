@@ -1,0 +1,7 @@
+tation.
+    Each grid rendering j of a document di is represented by a feature vector d3(xij) = (p1(xij), p2(xij),..., pm(xij)), where m is the number of all predefined entity transitions, and pt(xij) the probability of transition t in grid xij.
+    Note that considerable latitude is available when specifying the transition types to be included in a feature vector.
+    These can be all transitions of a given length (e.g., two or three) or the most frequent transitions within a document collection.
+    An example of a feature space with transitions of length two is illustrated in Table 3.
+    The training set consists of ordered pairs of renderings (xij,xik), where xij and xik are renderings of the same document di, and xij exhibits a higher degree of coherence than xik.
+    Without loss of generality, we assume j &gt; k. The goal of the training procedure is to find a parameter vector w&#65533; that yields a &#8220;ranking score&#8221; function w&#65533; &#183; d3(xij), which minimizes the number of violation

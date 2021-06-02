@@ -1,0 +1,7 @@
+ntly highest scoring valid action.1 We then proceed to parse the sentence with the updated values.
+    The process repeats until a valid action is chosen.
+    Note that each single update does not guarantee that the next chosen action is valid, or even different than the previously selected action.
+    Yet, this is still an aggressive update procedure: we do not leave a sentence until our parameters vector parses it cor1We considered 3 variants of this scheme: (1) using the highest scoring valid action, (2) using the leftmost valid action, and (3) using a random valid action.
+    The 3 variants achieved nearly identical accuracy, while (1) converged somewhat faster than the other two. rectly, and we do not proceed from one partial parse to the next until w&#65533; predicts a correct location/action pair.
+    However, as the best ordering, and hence the best attachment point is not known to us, we do not perform a single aggressive update step.
+    Instead, our aggressive update is performed incrementally in a

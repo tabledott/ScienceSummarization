@@ -1,0 +1,8 @@
+The non-directional parser avoids error propagation by not making the initial error.
+    On average, the non-directional parser manages to assign correct heads to over 60% of the tokens before making its first error.
+    The MST parser would have ranked 5th in the shared task, and NONDIR would have ranked 7th.
+    The better ranking systems in the shared task are either higher-order global models, beam-search based systems, or ensemble-based systems, all of which are more complex and less efficient than the NONDIR parser.
+    Parse Diversity The parses produced by the nondirectional parser are different than the parses produced by the graph-based and left-to-right parsers.
+    To demonstrate this difference, we performed an Oracle experiment, in which we combine the output of several parsers by choosing, for each sentence, the parse with the highest score.
+    Results are presented in Table 4.
+    A non-oracle blending of MALT+MST+NONDIR using Sagae and Lavie&#8217;s (2006) simplest combination method assigni

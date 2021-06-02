@@ -1,0 +1,9 @@
+query language can be readas if processing a list which gets modified by various functions.
+			From the innermost expression go ing outwards it means: the state of Texas, the list containing all the states next to the state of Texas and the list of all the rivers which flow throughthese states.
+			This list is finally returned as the an swer.
+			1http://www.robocup.org/ NL: ?Which rivers run through the states bordering Texas??
+			Functional query language: answer(traverse(next to(stateid(?texas?)))) Parse tree of the MR in functional query language: ANSWER answer RIVER TRAVERSE traverse STATE NEXT TO next to STATE STATEID stateid ?texas?
+			Productions: ANSWER ? answer(RIVER) RIVER ? TRAVERSE(STATE) STATE ? NEXT TO(STATE) STATE ? STATEID TRAVERSE ? traverse NEXT TO ? next to STATEID ? stateid(?texas?)
+			Figure 2: An example of an NL query and its MR in a functional query language with its parse tree.
+			KRISP does semantic parsing using the notion of a semantic derivation of an NL sentence.
+			Inthe followi

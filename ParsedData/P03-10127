@@ -1,0 +1,13 @@
+ link probability P(lk|eik, fjk) as it has an intuitive appeal of allowing more certain links to provide context for others.
+    We store probabilities in two tables.
+    The first table stores link probabilities P(lk|eik, fjk).
+    It has an entry for every word pair that was linked at least once in the training corpus.
+    Its size is the same as the translation table in the IBM models.
+    The second table stores feature probabilities, P(ft|lk) and P(ft|eik, fjk).
+    For every linked word pair, this table has two entries for each active feature.
+    In the worst case this table will be of size 2x|FT |x|E|x|F|.
+    In practice, it is much smaller as most contexts activate only a small number of features.
+    In the next subsection we will walk through a simple example of this probability model in action.
+    We will describe the features used in our implementation of this model in Section 3.2.
+    Figure 1 shows an aligned corpus consisting of one sentence pair.
+    Suppose that we are concerned with only 

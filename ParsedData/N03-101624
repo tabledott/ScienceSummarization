@@ -1,0 +1,8 @@
+ edge (for us, this represents a factor of approximately 2 in memory savings).
+    Moreover, the context summary estimates require only a single table lookup per edge, while the accelerated version of F requires only a rapid quadratic scan of the input per sentence (less than 1% of parse time per sentence), followed by a table lookup per edge.
+    The complex FOMs in (Charniak et al., 1998) require somewhat more online computation to assemble.
+    It is interesting that SXR is so much more effective than SXL; this is primarily because of the way that the rules have been encoded.
+    If we factor the rules in the other direction, we get the opposite effect.
+    Also, when combined with F, the difference in their performance drops from 10.3% to 0.8%; F is a right-filter and is partially redundant when added to SXR, but is orthogonal to SXL.
+    A disadvantage of admissibility for the context summary estimates is that, necessarily, they are overly optimistic as to the contents of the outside context.
+    The lar

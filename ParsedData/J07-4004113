@@ -1,0 +1,8 @@
+Carroll, and Watson (2006) split the 700 sentences in DepBank into a test and development set, but the latter only consists of 140 sentences which we found was not enough to reliably create the transformation.
+    There are some development files in the RASP release which provide examples of the GRs, which we used when possible, but these only cover a subset of the CCG lexical categories.
+    Our solution to this problem was to convert the gold-standard dependencies from CCGbank into GRs and use these to develop the transformation.
+    So we did inspect the annotation in DepBank, and compared it to the transformed CCG dependencies, but only the gold-standard CCG dependencies.
+    Thus the parser output was never used during this process.
+    We also ensured that the dependency mapping and the post-processing are general to the GRs scheme and not specific to the test set.
+    Table 14 gives some examples of the dependency mapping.
+    Because the number of sentences annotated with GRs is so small, the only oth

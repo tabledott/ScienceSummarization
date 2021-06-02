@@ -1,0 +1,6 @@
+ad of the position of the dependent). that the Single head constraint is satisfied, while the Reduce transition can only be applied if the token on top of the stack already has a head.
+    The Shift transition is the same as before and can be applied as long as the input list is non-empty.
+    Comparing the two algorithms, we see that the Left-Arc transition of the arc-eager algorithm corresponds directly to the Left-Reduce transition of the standard bottom-up algorithm.
+    The only difference is that, for reasons of symmetry, the former applies to the token on top of the stack and the next input token instead of the two topmost tokens on the stack.
+    If we compare Right-Arc to Right-Reduce, however, we see that the former performs no reduction but simply shifts the newly attached right-dependent onto the stack, thus making it possible for this dependent to have rightdependents of its own.
+    But in order to allow multiple right-dependents, we must also have a mechanism for popping right-dependents off th

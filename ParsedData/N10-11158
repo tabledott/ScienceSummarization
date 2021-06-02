@@ -1,0 +1,8 @@
+533; &#183; O(x), where O(x) is a feature representation and w&#65533; is a weight vector.
+    We write Oact(i) to denote the feature representation extracted for action act at location i.
+    The model is trained using a variant of the structured perceptron (Collins, 2002), similar to the algorithm of (Shen et al., 2007; Shen and Joshi, 2008).
+    As usual, we use parameter averaging to prevent the perceptron from overfitting.
+    The training algorithm is initialized with a zero parameter vector w. The algorithm makes several passes over the data.
+    At each pass, we apply the training procedure given in Algorithm 2 to every sentence in the training set.
+    At training time, each sentence is parsed using the parsing algorithm and the current w. Whenever an invalid action is chosen by the parsing algorithm, it is not performed (line 6).
+    Instead, we update the parameter vector w&#65533; by decreasing the weights of the features associated with the invalid action, and increasing the weights for the curre

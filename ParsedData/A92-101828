@@ -1,0 +1,11 @@
+ns.
+    These biases may be specified either as sets or as set complements.
+    Biases are implemented by replacing the disfavored probabilities with a small constant (machine epsilon) and redistributing mass to the other possibilities.
+    This has the effect of disfavoring the indicated outcomes without disallowing them; sufficient converse data can rehabilitate these values.
+  
+  
+    In support of this and other work, we have developed a system architecture for text access [Cutting et al., 1991].
+    This architecture defines five components for such systems: corpus, which provides text in a generic manner; analysis, which extracts terms from the text; index which stores term occurrence statistics; and search, which utilizes these statistics to resolve queries.
+    The part-of-speech tagger described here is implemented as an analysis module.
+    Figure 1 illustrates the overall architecture, showing the tagger analysis implementation in detail.
+    The tagger itself has a modular architecture, isolating 

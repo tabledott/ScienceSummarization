@@ -1,0 +1,6 @@
+s of the sentences themselves.
+    Algorithms 1 and 2 summarize the basic TroFi version of the KE algorithm.
+    Note that p(w, s) is the unigram probability of word w in sentence s, normalized by the total number of words in s. In practice, initializing s-simI0 in line (2) of Algorithm 1 to 0 and then updating it from w-simo means that each target sentence is still maximally similar to itself, but we also discover additional similarities between target sentences.
+    We further enhance the algorithm by using Sum of Similarities.
+    To implement this, in Algorithm 2 we change line (2) into: Esy s-simL(sx, sy) &gt; Esy s-simN(sx, sy) Although it is appropriate for fine-grained tasks like word-sense disambiguation to use the single highest similarity score in order to minimize noise, summing across all the similarities of a target set sentence to the feedback set sentences is more appropriate for literal/nonliteral clustering, where the usages could be spread across numerous sentences in the feedback sets.
+   

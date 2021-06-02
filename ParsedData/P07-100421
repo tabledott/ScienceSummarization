@@ -1,0 +1,9 @@
+e-aligned with each other and all translate into the same target language.
+    One language pair creates data for another language pair and can be naturally used in a (Blum and Mitchell, 1998)-style co-training algorithm.
+    Experiments on the EuroParl corpus show a decrease in WER.
+    However, the selection algorithm applied there is actually supervised because it takes the reference translation into account.
+    Moreover, when the algorithm is run long enough, large amounts of co-trained data injected too much noise and performance degraded.
+    Self-training for SMT was proposed in (Ueffing, 2006).
+    An existing SMT system is used to translate the development or test corpus.
+    Among the generated machine translations, the reliable ones are automatically identified using thresholding on confidence scores.
+    The work which we presented here differs from (Ueffing, 2006) as follows: fidence estimation used there, we applied importance sampling and combined it with confidence estimation for transductive

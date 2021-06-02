@@ -1,0 +1,7 @@
+nces, a sentence generation capability, and a design framework that easily accomodates parallel implementations.
+    It is a two-step procedure to acquire a grammar from a specific set of sentences.
+    The rule set is first built up gradually, by parsing the sentences one-by-one, adding rules and/or constraints as needed.
+    Once a full set of sentences has been parsed in this fashion, the parse trees from the sentences are automatically converted to the sequence of rules used to parse each sentence.
+    The training of both the rule set and the probability assignments is then established directly in a second pass from the provided set of parsed sentences; i.e., the parsed sentences are the grammar.
+    Generation mode uses the same routines as those used by the parser, but chooses a small subset of the permissible paths based on the outcome of a random-number generator, rather than exploring all paths and relying on an input word stream to resolve the correct one.
+    Since all of the arcs have assigned pr

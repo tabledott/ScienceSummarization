@@ -1,0 +1,6 @@
+ry, it introduces a lifted dependent.
+    Besides introducing a linear dependent LD, a 1-rule should make sure that the syntactic governor of LD will be introduced at a later stage of the derivation, and prevent it to introduce LD as its syntactic dependent, otherwise non projective nodes would be introduced twice, a first time by their linear governor and a second time by their syntactic governor.
+    This condition is represented in the rule by means of a constraint on the categories found along the lifting path.
+    This condition, which we call the lifting condition, is represented by the regular expression LG &#8226; w SG.
+    The regular expression representing the lifting condition is enriched with a dot separating, on its left, the part of the lifting path which has already been introduced during the rewriting and on its right the part which is still to be introduced for the rewriting to be valid.
+    The dot is an unperfect way of representing the current state in a finite state automaton equivalent 

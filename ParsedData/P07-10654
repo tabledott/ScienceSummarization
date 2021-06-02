@@ -1,0 +1,10 @@
+hen N &#187; n. The only significant storage used by a BF consists of a bit array of size m. This is initially set to hold zeroes.
+    To train the filter we hash each item in the set k times using distinct hash functions h1, h2, ..., hk.
+    Each function is assumed to be independent from each other and to map items in the universe to the range 1 to m uniformly at random.
+    The k bits indexed by the hash values for each item are set to 1; the item is then discarded.
+    Once a bit has been set to 1 it remains set for the lifetime of the filter.
+    Distinct items may not be hashed to k distinct locations in the filter; we ignore collisons.
+    Bits in the filter can, therefore, be shared by distinct items allowing significant space savings but introducing a non-zero probability of false positives at test time.
+    There is no way of directly retrieving or ennumerating the items stored in a BF.
+    At test time we wish to discover whether a given item was a member of the original set.
+    The filter is quer

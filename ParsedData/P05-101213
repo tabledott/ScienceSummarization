@@ -1,0 +1,7 @@
+very specific features over words and partof-speech tags to less sparse features over just partof-speech tags.
+    These features are added for both the entire words as well as the 5-gram prefix if the word is longer than 5 characters.
+    Using just features over the parent-child node pairs in the tree was not enough for high accuracy, because all attachment decisions were made outside of the context in which the words occurred.
+    To solve this problem, we added two other types of features, which can be seen in Table 1c.
+    Features of the first type look at words that occur between a child and its parent.
+    These features take the form of a POS trigram: the POS of the parent, of the child, and of a word in between, for all words linearly between the parent and the child.
+    This feature was particularly helpful for nouns identifying their parent, since node. p-pos: POS of parent node. c-pos: POS of child node. p-pos+1: POS to the right of parent in sentence. p-pos-1: POS to the left of parent. c-pos+1

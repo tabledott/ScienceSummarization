@@ -1,0 +1,13 @@
+anings.
+    For example, in CLANG, parentheses and braces are delimiters that are semantically vacuous.
+    Such tokens are not supposed to be aligned with any words, and inclusion of these tokens in the training data is likely to confuse the word alignment model.
+    Second, MR tokens may exhibit polysemy.
+    For instance, the CLANG predicate pt has three meanings based on the types of arguments it is given: it specifies the xy-coordinates (e.g.
+    (pt 0 0)), the current position of the ball (i.e.
+    (pt ball)), or the current position of a player (e.g.
+    (pt our 4)).
+    Judging from the pt token alone, the word alignment model would not be able to identify its exact meaning.
+    A simple, principled way to avoid these difficulties is to represent an MR using a sequence of productions used to generate it.
+    Specifically, the sequence corresponds to the top-down, left-most derivation of an MR.
+    Figure 4 shows a partial word alignment between the sample sentence and the linearized parse of its MR.
+ 

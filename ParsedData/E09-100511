@@ -1,0 +1,9 @@
+en vi and the concepts associated to the rest of the words in the context, vj E Uj=,4i Conceptsj.
+    Let mdpvi be the set of these shortest paths.
+    This BFS computation is repeated for every concept of every word in the input context, storing mdpvi accordingly.
+    At the end, we obtain a set of minimum length paths each of them having a different concept as a source.
+    The disambiguation graph GD is then just the union of the vertices and edges of the shortest paths, GD = Umi=1{mdpv,/vj E Conceptsi}.
+    The disambiguation graph GD is thus a subgraph of the original GKB graph obtained by computing the shortest paths between the concepts of the words co-occurring in the context.
+    Thus, we hypothesize that it captures the most relevant concepts and relations in the knowledge base for the particular input context.
+    Once the GD graph is built, we compute the traditional PageRank algorithm over it.
+    The intuition behind this step is that the vertices representing the correct concepts will be more r

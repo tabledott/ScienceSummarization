@@ -1,0 +1,11 @@
+ alignments for use with the surface heuristic.
+    Following the lead of (Fraser and Marcu, 2006), we hand-aligned the first 100 sentence pairs of our training set according to the Blinker annotation guidelines (Melamed, 1998).
+    We did not differentiate between sure and possible links.
+    We report precision, recall and balanced F-measure (Och and Ney, 2003).
+    For comparison purposes, we include the results of three types of GIZA++ combination, including the grow-diag-final heuristic (GDF).
+    We tested our phrasal ITG with fixed link pruning, and then added the non-compositional constraint (NCC).
+    During development we determined that performance levels off for both of the ITG models after 3 EM iterations.
+    The results are shown in Table 2.
+    The first thing to note is that GIZA++ Intersection is indeed very high precision.
+    Our confidence in it as a constraint is not misplaced.
+    We also see that both phrasal models have significantly higher recall than any of the GIZA++ alignments, ev

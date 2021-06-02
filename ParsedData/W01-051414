@@ -1,0 +1,5 @@
+e segment length in T. p(samelTr, k) and p(diffiTr, k) refer to the likelihood of sentence sz and sz&#177;k belonging to the same and different topic segment(s) in Tk p(samelTr, Tp, diff, k) is the probability of a miss, i.e. sz and sz&#177;k are about different topics in Tk but they belong to the same topic segment in T. p(difflTr, Tp, same, k) is the probability of false alarm, i.e. two sentences are about the same topic in Tr but they belong to different segments in T. Equation 5 combines these four measures to calculate p(errorlTr, Tp, k), the probability of segmentation errors.
+    The error rate of an algorithm is computed as the average of p(errorlTr, Tp, k) for a test set.
+    A low error rate implies high segmentation accuracy. p(diffl , Tp , same, k)p(samelTr, k) This test procedure is not perfect.
+    First, assessing the accuracy of an algorithm in an artificial task is inferior to a test that uses human segmented text.
+    However, this approach does allow us to conduct a large-scale comparative 

@@ -1,0 +1,8 @@
+ the data, including words that do not occur in the training data at all.
+    Figure 5 shows how the conditional entropy varies with respect to the frequency for these models.
+    As can be seen the use of morphological information improves the preformance markedly for rare words, and that this effect reduces as the frequency increases.
+    Note that the use of the frequency information worsens the performance for rare words according to this evaluation &#8212; this is because the rare words are much more tightly grouped into just a few clusters, thus the entropy of the cluster tags is lower.
+    Table 5 shows a qualitative evaluation of some of the clusters produced by the best performing model for 64 clusters on the WSJ data set.
+    We selected the 10 clusters with the largest number of zero frequency word types in.
+    We examined each cluster and chose a simple regular expression to describe it, and calculated the precision and recall for words of all frequency, and for words of zero frequency.
+    Note 

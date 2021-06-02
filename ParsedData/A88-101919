@@ -1,0 +1,11 @@
+g a set of 2*2*2*1=8 possible assignments of parts of Each of the eight sequences are then scored by the product of the lexical probabilities and the contextual probabilities, and the best sequence is selected.
+    In this case, the first sequence is by far the best.
+    In fact, it is not necessary to enumerate all possible assignments because the scoring function cannot see more than two words away.
+    In other words, in the process of enumerating part of speech sequences, it is possible in some cases to know that some sequence cannot possibly compete with another and can therefore be abandoned.
+    Because of this fact, only 0(n) paths will be enumerated.
+    Let us illustrate this optimization with an example: Find all assignments of parts of speech to &amp;quot;bird&amp;quot; and score the partial sequence.
+    Henceforth, all scores are to be interpreted as log probabilities.
+  
+  
+    Find all assignments of parts of speech to &amp;quot;a&amp;quot; and score.
+    At this point, there are two paths: (-

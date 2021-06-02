@@ -1,0 +1,10 @@
+
+    The target dependency tree created in this process may not read off in the same order as the target string, since our alignments do not enforce phrasal cohesion.
+    For instance, consider the projection of the parse in Figure 1 using the word alignment in Figure 2a.
+    Our algorithm produces the dependency tree in Figure 2b.
+    If we read off the leaves in a left-to-right in-order traversal, we do not get the original input string: de d&#233;marrage appears in the wrong place.
+    A second reattachment pass corrects this situation.
+    For each node in the wrong order, we reattach it to the lowest of its ancestors such that it is in the correct place relative to its siblings and parent.
+    In Figure 2c, reattaching d&#233;marrage to et suffices to produce the correct order.
+    From the aligned pairs of dependency trees we extract all pairs of aligned source and target treelets along with word-level alignment linkages, up to a configurable maximum size.
+    We also keep treelet counts for maximum lik

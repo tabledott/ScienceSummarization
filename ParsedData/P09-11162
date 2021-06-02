@@ -1,0 +1,10 @@
+ed training.
+    Under this approach, even if a word is not found in the training data, it may still fire cluster-based features as long as it shares cluster assignments with some words in the labeled data.
+    Since the clusters are obtained without any labeled data, they may not correspond directly to concepts that are useful for decision making in the problem domain.
+    However, the supervised learning algorithms can typically identify useful clusters and assign proper weights to them, effectively adapting the clusters to the domain.
+    This method has been shown to be quite successful in named entity recognition (Miller et al. 2004) and dependency parsing (Koo et al., 2008).
+    In this paper, we present a semi-supervised learning algorithm that goes a step further.
+    In addition to word-clusters, we also use phraseclusters as features.
+    Out of context, natural language words are often ambiguous.
+    Phrases are much less so because the words in a phrase provide contexts for one another.
+    Consid

@@ -1,0 +1,10 @@
+ments on EuroParl to explore the behavior of the transductive learning algorithm.
+    In all experiments reported in this subsection, the test set was used as unlabeled data.
+    The selection and scoring was carried out using importance sampling with normalized scores.
+    In one set of experiments, we used the 100K and 150K training sentences filtered according to n-gram coverage over the test set.
+    We fully re-trained the phrase tables on these data and 8,000 test sentence pairs sampled from 20-best lists in each iteration.
+    The results on the test set can be seen in Figure 1.
+    The BLEU score increases, although with slight variation, over the iterations.
+    In total, it increases from 24.1 to 24.4 for the 100K filtered corpus, and from 24.5 to 24.8 for 150K, respectively.
+    Moreover, we see that the BLEU score of the system using 100K training sentence pairs and transductive learning is the same as that of the one trained on 150K sentence pairs.
+    So the information extracted from untranslat

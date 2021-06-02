@@ -1,0 +1,6 @@
+d model: ScoreG(y) = &#934;G(y) &#183; ~wG We therefore combine the two models to give: Concatenating the feature vectors &#934;G(y) and &#934;T(y) to give a global feature vector &#934;C(y), and the weight vectors ~wG and ~wT to give a weight vector ~wC, the combined model can be written as: which is a linear model with exactly the same form as both sub-models, and can be trained with the perceptron algorithm in Figure 1.
+    Because the global feature vectors from the sub models are concatenated, the feature set for the combined model is the union of the sub model feature sets.
+    Second, the transition-based decoder can be used for the combined system.
+    Both the graph-based decoder in Figure 2 and the transition-based decoder in Figure 4 construct a parse tree incrementally.
+    However, the graph-based decoder works on a per-word basis, adding links without using transition actions, and so is not appropriate for the combined model.
+    The transition-based algorithm, on the other hand, uses state item

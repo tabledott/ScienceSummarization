@@ -1,0 +1,8 @@
+r two reasons: (i) they are general enough to enable the decoder escape local maxima and modify in a non-trivial manner a given alignment in order to produce good translations; (ii) they are relatively inexpensive (timewise).
+    The most time consuming operations in the decoder are swapSegments, translateOneOrTwoWords, and translateAndInsert.
+    SwapSegments iterates over all possible non-overlapping span pairs that can be built on a sequence of length .
+    TranslateOneOrTwoWords iterates over alignments, where is the size of the French sentence andis the number of translations we associate with each word (in our implementation, we limit this number to the top 10 translations).
+    TranslateAndInsert iterates over alignments, where is the size of the list of words with high probability of having fertility 0 (1024 words in our implementation).
+  
+  
+    Knight (1999) likens MT decoding to finding optimal tours in the Traveling Salesman Problem (Garey and Johnson, 1979)&#8212;choosing a good word order for d

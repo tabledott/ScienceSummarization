@@ -1,0 +1,7 @@
+f which 5,000 are positive (i.e., belong to class &#8221;parallel&#8221;) and the rest are negative.
+    One drawback of this approach is that the resulting training set is very imbalanced, i.e., it has many more negative examples than positive ones.
+    Classifiers trained on such data do not achieve good performance; they generally tend to predict the majority class, i.e., classify most sentences as non-parallel (which has indeed been the case in our experiments).
+    Our solution to this is to downsample, i.e., eliminate a number of (randomly selected) negative instances.
+    Another problem is that the large majority of sentence pairs in the Cartesian product have low word overlap (i.e., few words that are translations of each other).
+    As explained in Section 2 (and shown in Figure 2), when extracting data from a comparable corpus, we only apply the classifier on the output of the word-overlap filter.
+    Thus, low-overlap sentence pairs, which would be discarded by the filter, are unlikely to be usefu

@@ -1,0 +1,8 @@
+ to chunking, combining different word representations on NER seems gives larger improvements on the test F1.
+    On NER, Brown clusters are superior to the word embeddings.
+    Since much of the NER F1 is derived from decisions made over rare words, we suspected that Brown clustering has a superior representation for rare words.
+    Brown makes a single hard clustering decision, whereas the embedding for a rare word is close to its initial value since it hasn&#8217;t received many training updates (see Footnote 2).
+    Figure 3 shows the total number of per-token errors incurred on the test set, depending upon the frequency of the word token in the unlabeled data.
+    For NER, Figure 3 (b) shows that most errors occur on rare words, and that Brown clusters do indeed incur fewer errors for rare words.
+    This supports our hypothesis that, for rare words, Brown clustering produces better representations than word embeddings that haven&#8217;t received sufficient training updates.
+    For chunking, Brown clust

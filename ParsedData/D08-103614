@@ -1,0 +1,10 @@
+butions in (5).
+    The samplers that Goldwater and Griffiths (2007) and Johnson (2007) describe are pointwise collapsed Gibbs samplers.
+    Figure 1 gives the sampling distribution for this sampler.
+    As Johnson et al. (2007) explains, samples of the HMM parameters 0 and 0 can be obtained using (5) if required.
+    The blocked Gibbs samplers differ from the pointwise Gibbs samplers in that they resample the POS tags for an entire sentence at a time.
+    Besag (2004) describes the well-known dynamic programming algorithm (based on the Forward-Backward algorithm) for sampling a state sequence t given the words w and the transition and emission probabilities 0 and 0.
+    At each iteration the explicit blocked Gibbs sampler resamples 0 and 0 using (5), just as the explicit pointwise sampler does.
+    Then it uses the new HMM parameters to resample the states t for the training corpus using the algorithm just mentioned.
+    This can be done in parallel for each sentence in the training corpus.
+    The collapsed

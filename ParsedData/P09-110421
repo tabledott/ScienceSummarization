@@ -1,0 +1,9 @@
+competitive thresholding heuristic of DeNero and Klein (2007).
+    On this data set, our block ITG models make substantial performance improvements over the HMM, and moreover these results do translate into downstream improvements in BLEU score for the Chinese-English language pair.
+    Because of this, we will briefly describe the features used for these models in detail.
+    For features on one-by-one cells, we consider Dice, the distance features from (Taskar et al., 2005), dictionary features, and features for the 50 most frequent lexical pairs.
+    We also trained an HMM aligner as described in DeNero and Klein (2007) and used the posteriors of this model as features.
+    The first two columns of Table 2 illustrate these features for ITG and one-to-one matchings.
+    For our block ITG models, we include all of these features, along with variants designed for many-to-one blocks.
+    For example, we include the average Dice of all the cells in a block.
+    In addition, we also created three new block-speci

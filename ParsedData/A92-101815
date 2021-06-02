@@ -1,0 +1,8 @@
+a lexicon and a suitably large sample of ordinary text, taggers can be built with minimal effort, even for other languages, such as French (e.g., [Kupiec, 1992]).
+    The use of ambiguity classes and a first-order model reduces the number of parameters to be estimated without significant reduction in accuracy (discussed in section 5).
+    This also enables a tagger to be reliably trained using only moderate amounts of text.
+    We have produced reasonable results training on as few as 3,000 sentences.
+    Fewer parameters also reduce the time required for training.
+    Relatively few ambiguity classes are sufficient for wide coverage, so it is unlikely that adding new words to the lexicon requires retraining, as their ambiguity classes are already accommodated.
+    Vocabulary independence is achieved by predicting categories for words not in the lexicon, using both context and suffix information.
+    Probabilities corresponding to category sequences that never occurred in the training data are assigned small,

@@ -1,0 +1,8 @@
+le x = John saw Mary, with directed graph representation Gx, root saw John Mary 10 9 9 30 3020 3 0 11 The first step of the algorithm is to find, for each word, the highest scoring incoming edge root saw John Mary30 3020 If the result were a tree, it would have to be the maximum spanning tree.
+			However, in this case we have a cycle, so we will contract it into a single node and recalculate edge weights according to Figure 3.
+			root saw John Mary 40 9 30 31 wjs The new vertex wjs represents the contraction of vertices John and saw.
+			The edge from wjs to Mary is 30 since that is the highest scoring edge from any vertex in wjs.
+			The edge from root into wjs is set to40 since this represents the score of the best span ning tree originating from root and including only the vertices in wjs.
+			The same leads to the edge from Mary to wjs.
+			The fundamental property of the Chu-Liu-Edmonds algorithm is that an MST in thisgraph can be transformed into an MST in the orig inal graph (Leonidas, 2003).
+			Thus, we r

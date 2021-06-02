@@ -1,0 +1,8 @@
+ 
+  
+    Because the pseudo in-domain data should be kept separate from the in-domain data, one must train multiple translation models in order to advantageously use the general-domain corpus.
+    We now examine how best to combine these models.
+    A common approach to managing multiple translation models is to interpolate them, as in (Foster and Kuhn, 2007) and (L&#168;u et al., 2007).
+    We tested the linear interpolation of the in- and general-domain translation models as follows: Given one model which assigns the probability P1(t|s) to the translation of source string s into target string t, and a second model which assigns the probability P2(t|s) to the same event, then the interpolated translation probability is: Here A is a tunable weight between 0 and 1, which we tested in increments of 0.1.
+    Linear interpolation of phrase tables was shown to improve performance over the individual models, but this still may not be the most effective use of the translation models.
+    We next tested the approach 

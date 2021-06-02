@@ -1,0 +1,11 @@
+gmentations, while Pk only asks whether the two sentences are in the same segment or not.
+    Pk and WindowDiff are penalties, so lower values indicate better segmentations.
+    We use the evaluation source code provided by Malioutov and Barzilay (2006).
+    System configuration We evaluate our Bayesian approach both with and without cue phrases.
+    Without cue phrases, we use the dynamic programming inference described in section 3.3.
+    This system is referred to as BAYESSEG in Table 1.
+    When adding cue phrases, we use the Metropolis-Hastings model described in 4.1.
+    Both basic and linguisticallymotivated proposal distributions are evaluated (see Section 4.2); these are referred to as BAYESSEGCUE and BAYESSEG-CUE-PROP in the table.
+    For the sampling-based systems, results are averaged over five runs.
+    The initial configuration is obtained from the dynamic programming inference, and then 100,000 sampling iterations are performed.
+    The final segmentation is obtained by annealing the last 25,0

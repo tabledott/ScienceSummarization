@@ -1,0 +1,6 @@
+d to construct a series of data sets, or graphs, which represent different scenarios corresponding to a given combination of values of P and k. To do this, we construct a random graph by randomly assigning 50 nodes to the two possible orientations.
+    Because we don't have frequency and morphology information on these abstract nodes, we cannot predict whether two nodes are of the same or different orientation.
+    Rather, we randomly assign links between nodes so that, on average, each node participates in k links and 100 x P% of all links connect nodes of the same orientation.
+    Then we consider these links as identified by the link prediction algorithm as connecting two nodes with the same orientation (so that 100 x P% of these predictions will be correct).
+    This is equivalent to the baseline link classification method, and provides a lower bound on the performance of the algorithm actually used in our system (Section 5).
+    Because of the lack of actual measurements such as frequency on these abstra

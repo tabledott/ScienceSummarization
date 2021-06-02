@@ -1,0 +1,7 @@
+) Initially, we use a greedy word segmentor6 to annotate the corpus, and obtain an initial context model based on the initial annotated corpus; (2) we re-annotate the corpus using the obtained models; and (3) re-train the context model using the re-annotated corpus.
+    Steps 2 and 3 are iterated until the performance of the system converges.
+    In the above approach, the quality of the context model depends to a large degree upon the quality of the initial annotated corpus, which is however not satisfied due to two problems.
+    First, the greedy segmentor cannot deal with the segmentation ambiguities, and even after iterations, these ambiguities can only be partially resolved.
+    Second, many factoids and named entities cannot be identified using the greedy word segmentor which is based on the dictionary.
+    To solve the first problem, we use two methods to resolve segmentation ambiguities in the initial segmented training data.
+    We classify word segmentation ambiguities into two classes: overlap ambi

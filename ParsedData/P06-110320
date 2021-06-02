@@ -1,0 +1,13 @@
+&#8217;s correlation measures.
+    We perturbed the Russian side of the corpus in the following way.
+    Articles from each day were randomly moved (with uniform probability) within a -day window.
+    We ran single word NE temporal sequence matching alone on the perturbed corpora using each of the three measures (Table 1).
+    Some accuracy drop due to misalignment could be accommodated for by using a larger temporal bin for collecting occurrence counts.
+    We tried various (sliding) window size for a perturbed corpus with (Table 2).
+    DFT metric outperforms the other measures significantly in most cases.
+    NEs tend to have distributions with few pronounced peaks.
+    If two such distributions are not well aligned, we expect both Pearson and Cosine measures to produce low scores, whereas the DFT metric should catch their similarities in the frequency domain.
+  
+  
+    We have proposed a novel algorithm for cross lingual multi-word NE discovery in a bilingual weakly temporally aligned corpus.
+    We have 

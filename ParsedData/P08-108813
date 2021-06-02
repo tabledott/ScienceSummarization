@@ -1,0 +1,10 @@
+section, we explore feature representations of word types in our model.
+    Recall that f&#65533;(&#183;) and fT (&#183;) map source and target word types to vectors in RdS and RdT, respectively (see section 2).
+    The features used in each representation are defined identically and derived only from the appropriate monolingual corpora.
+    For a concrete example of a word type to feature vector mapping, see figure 2.
+    For closely related languages, such as English and Spanish, translation pairs often share many orthographic features.
+    One direct way to capture orthographic similarity between word pairs is edit distance.
+    Running EDITDIST (see section 4.3) on ENES-W yielded 61.1 p0.33, but precision quickly degrades for higher recall levels (see EDITDIST in table 1).
+    Nevertheless, when available, orthographic clues are strong indicators of translation pairs.
+    We can represent orthographic features of a word type w by assigning a feature to each substring of length G 3.
+    Note that MCCA can 

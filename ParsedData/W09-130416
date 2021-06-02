@@ -1,0 +1,8 @@
+ have used the same features used for the system that finds the scope of negation.
+    The features of the first three classifers are: The fourth classifier, a metalearner, is also a CRFs as implemented in CRF++.
+    The features of this classifier are: Hedge cues in the BioScope corpus always scope over a consecutive block of tokens, including the cue token itself.
+    However, the classifiers only predict the first and last element of the scope.
+    We need to process the output of the classifers in order to build the complete sequence of tokens that constitute the scope.
+    We apply the following postprocessing: (5) - If one token has been predicted as FIRST and one as LAST, the sequence is formed by the tokens between first and last.
+    - If one token has been predicted as FIRST and none has been predicted as LAST, the sequence is formed by the token predicted as FIRST.
+    - If one token has been predicted as LAST and none as FIRST, the sequence will start at the hedge cue and it will finish at the tok

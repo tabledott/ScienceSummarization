@@ -1,0 +1,12 @@
+t.
+  Each possible labeling of the argument is associated with a variable which is then used to set up the inference procedure.
+  However, the final predictionwill be likely dominated by the system that producesmore candidates, which is system B in this example.
+  The reason is that our objective function is the sum of the probabilities of all the candidate assignments.
+  This bias can be corrected by the following observation.
+  Although system A only has two candidates, a1 and a4, it can be treated as if it also has two additional phantom candidates, a2 and a3, where a2 and b2 refer to the same phrase, and so do a3 and b3.
+  Similarly, system B has a phantom candidate b4 that corresponds to a4.
+  Because systemA does not really generate a2 and a3, we can assume that these two phantom candidates are predicted by it as ?null?
+  (i.e., not an argument).
+  We assign the same prior distribution to each phantom candidate.
+  In particular, the probability of the ?null?
+  class is set to be 0.55 based on empirical 

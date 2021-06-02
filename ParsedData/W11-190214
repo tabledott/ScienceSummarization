@@ -1,0 +1,9 @@
+tion algorithm.
+    We show results before and after coreference resolution and post-processing (when singleton mentions are removed).
+    We also list results with gold and predicted linguistic annotations (i.e., syntactic parses and named entity recognition).
+    The table shows that the recall of our approach is 92.8% (if gold annotations are used) or 87.9% (with predicted annotations).
+    In both cases, precision is low because our algorithm generates many spurious mentions due to its local nature.
+    However, as the table indicates, many of these mentions are removed during post-processing, because they are assigned to singleton clusters during coreference resolution.
+    The two main causes for our recall errors are lack of recognition of event mentions (e.g., verbal mentions such as growing) and parsing errors.
+    Parsing errors often introduce incorrect mention boundaries, which yield both recall and precision errors.
+    For example, our system generates the predicted mention, the working meeting 

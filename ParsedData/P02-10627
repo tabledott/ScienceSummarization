@@ -1,0 +1,8 @@
+ more in training data.
+    In decoding, we use a beam search to recover 20 candidate tag sequences for each sentence (the sentence is decoded from left to right, with the top 20 most probable hypotheses being stored at each point).
+    As a baseline we trained a model on the full 53,609 sentences of training data, and decoded the 14,717 sentences of test data.
+    This gave 20 candidates per The parameters of the model are for test sentence, along with their probabilities.
+    The baseline method is to take the most probable candidate for each test data sentence, and then to calculate precision and recall figures.
+    Our aim is to come up with strategies for reranking the test data candidates, in such a way that precision and recall is improved.
+    In developing a reranking strategy, the 53,609 sentences of training data were split into a 41,992 sentence training portion, and a 11,617 sentence development set.
+    The training portion was split into 5 sections, and in each case the maximum-entropy tagger w

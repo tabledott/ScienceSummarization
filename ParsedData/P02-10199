@@ -1,0 +1,7 @@
+ne level but it is much bigger and is the dictionary we used for learning our final letter-to-phone model.
+    The NETtalk dictionary has been designed so that each letter correspond to at most one phone, so a word is always longer, or of the same length as, its pronunciation.
+    The alignment algorithm has to decide which of the letters correspond to phones and which ones correspond to nothing (i.e., are silent).
+    For example, the entry in NETtalk (when we remove the empties, which contain information for phone level alignment) for the word able is ABLE e b L. The correct alignment is A/e B/b L/L E/&#8211;, where &#8211; denotes the empty phone.
+    In the Microsoft Speech dictionary, on the other hand, each letter can naturally correspond to 0, 1, or 2 phones.
+    For example, the entry in that dictionary for able is ABLE ey b ax l. The correct alignment is A/ey B/b L/ax&amp;l E/&#8211;.
+    If we also allowed two letters as a group to correspond to two phones as a group, the correct alignment might be 

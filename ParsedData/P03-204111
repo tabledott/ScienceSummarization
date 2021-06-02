@@ -1,0 +1,10 @@
+ regarded here as a set of (input, output) pairs.
+    T.E' is a version of T.E in which d has been been replaced by t.r.
+    A probabilistic TSG also includes a function p(t  |q), which, for each state q, gives a conditional probability distribution over the elementary trees t with root state q.
+    The generation process uses this distribution to randomly choose which tree t to substitute at a frontier node of T having state q.
+    The initial value of T is chosen from p(t | Start).
+    Thus, the probability of a given derivation is a product of p(t  |q) terms, one per chosen elementary tree.
+    There is a natural analogy between (probabilistic) TSGs and (probabilistic) CFGs.
+    An elementary tree t with root state q and frontier states ql ... qk (for k &gt; 0) is analogous to a CFG rule q &#8594; t ql ... qk.
+    (By including t as a terminal symbol in this rule, we ensure that distinct elementary trees t with the same states correspond to distinct rules.)
+    Indeed, an equivalent definition of the gener

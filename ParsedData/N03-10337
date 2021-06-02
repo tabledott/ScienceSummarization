@@ -1,0 +1,8 @@
+consider a case of observation bias (Klein and Manning, 2002) for a first-order left-toright CMM.
+    The word to has only one tag (TO) in the PTB tag set.
+    The TO tag is often preceded by nouns, but rarely by modals (MD).
+    In a sequence will to fight, that trend indicates that will should be a noun rather than a modal verb.
+    However, that effect is completely lost in a CMM like (a): P(twill |will, hstarti) prefers the modal tagging, and P(TO|to, twill) is roughly 1 regardless of twill.
+    While the model has an arrow between the two tag positions, that path of influence is severed.3 The same problem exists in the other direction.
+    If we use the symmetric rightto-left model, fight will receive its more common noun tagging by symmetric reasoning.
+    However, the bidirectional model (c) discussed in the next section makes both directions available for conditioning at all locations, using replicated models of P(t0|t&#8722;1, t+1, w0), and will be able to get this example correct.4 While the structu

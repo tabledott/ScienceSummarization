@@ -1,0 +1,8 @@
+ehn, 2005; Tiedemann, 2007) and compared several measures of dependency conservation.
+    For the English-Bulgarian corpus, we observed that 71.9% of the edges we projected were edges in the corpus, and we projected on average 2.7 edges per sentence (out of 5.3 tokens on average).
+    For Spanish, we saw conservation of 64.4% and an average of 5.9 projected edges per sentence (out of 11.5 tokens on average).
+    As these numbers illustrate, directly transferring information one dependency edge at a time is unfortunately error prone for two reasons.
+    First, parser and word alignment errors cause much of the transferred information to be wrong.
+    We deal with this problem by constraining groups of edges rather than a single edge.
+    For example, in some sentence pair we might find 10 edges that have both end points aligned and can be transferred.
+    Rather than requiring our target language parse to contain each of the 10 edges, we require that the expected number of edges from this set is at least 10q, 

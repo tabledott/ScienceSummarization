@@ -1,0 +1,6 @@
+the ith cut of word w, of length 1, cuts it into a stem t of length i and suffix of length 1 &#8212; i, then the probability of that cut is defined as where wj,k refers to the substring of w from the jth to the kth letter.
+    Probability mass for the stem and the suffix in each such cut is then augmented by an amount equal to the frequency of word w times the probability of the cut.
+    After several iterations (approximately four), estimated probabilities stabilize, and each word is analyzed on the basis of the cut with the largest probability.
+    This initially plausible approach fails because it always prefers an analysis in which either the stem or (more often) the suffix consists of a single letter.
+    More importantly, the probability that a sequence of one or more word-final letters is a suffix is very poorly modeled by the sequence's frequency.'
+    To put the point another way, even the initial heuristic analyzing one particular word must take into account all of the other analyses in a more artic

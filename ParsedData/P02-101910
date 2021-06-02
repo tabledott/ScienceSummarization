@@ -1,0 +1,8 @@
+A/ey B/b LE/ax&amp;l, but that would make it harder for the machine learning algorithm.
+    Our alignment algorithm is an implementation of hard EM (Viterbi training) that starts off with heuristically estimated initial parameters for P (phonesIletter) and, at each iteration, finds the most likely alignment for each word given the parameters and then re-estimates the parameters collecting counts from the obtained alignments.
+    Here phones ranges over sequences of 0 (empty), 1, and 2 phones for the Microsoft Speech dictionary and 0 or 1 phones for NETtalk.
+    The parameters P (phonesIletter) were initialized by amethod similar to the one proposed in (Daelemans and van den Bosch, 1996).
+    Word frequencies were not taken into consideration here as the dictionary contains no frequency information.
+    The method we started with was the N-gram model of Fisher (1999).
+    From training data, it learns rules that predict the pronunciation of a letter based on m letters of left and n letters of right context.
+  

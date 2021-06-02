@@ -1,0 +1,5 @@
+ a uniform distribution of word-forword alignment patterns after a Poisson distribution of target string&#8217;s possible lengths, following Brown et al. (1993).
+    As an alternative, the E operator can be replaced by the max operator as the inside operator over the translation probabilities above, meaning that we use the Model 1 Viterbi probability as our estimate, rather than the total Model 1 probability.2 A naive implementation would take O(n6) steps of computation, because there are O(n4) cells, each of which takes O(n2) steps to compute its Model 1 probability.
+    Fortunately, we can exploit the recursive nature of the cells.
+    Let INS(l, m, i, j) denote the major factor of our Model 1 estimate of a cell&#8217;s inside probability, Ht&#8712;(i,j) Es&#8712;{0,(l,m)} t(ft  |es).
+    It turns out that one can compute cells of width one (i = j) in constant time from a cell of equal width and lower height: Similarly, one can compute cells of width greater than one by combining a cell of one smaller width

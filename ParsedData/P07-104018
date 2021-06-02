@@ -1,0 +1,10 @@
+plicated, so gradient-based optimization methods may not be used.
+    In this work, modified Powell&#8217;s method as proposed by (Brent, 1973) is used.
+    The algorithm explores better weights iteratively starting from a set of initial weights.
+    First, each dimension is optimized using a grid-based line minimization algorithm.
+    Then, a new direction based on the changes in the objective function is estimated to speed up the search.
+    To improve the chances of finding a global optimum, 19 random perturbations of the initial weights are used in parallel optimization runs.
+    Since the -best list represents only a small portion of all hypotheses in the confusion network, the optimized weights from one iteration may be used to generate a new -best list from the lattice for the next iteration.
+    Similarly, weights which maximize BLEU or METEOR may be optimized.
+    The same Powell&#8217;s method has been used to estimate feature weights of a standard feature-based phrasal MT decoder in (Och, 2003).
+  

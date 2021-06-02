@@ -1,0 +1,10 @@
+ four different filters, used with six different sizes of training corpora.
+    These four filters fall into three categories: predicate filters, oracle filters and alignment filters.
+    A predicate filter is one where the candidate translation pair (S, T) must satisfy some predicate in order to pass the filter.
+    Various predicate filters are discussed in [Wu94].
+    An oracle filter is useful when a list of likely translation pairs is available a priori.
+    Then, if the translation pair (S, T) occurs in this oracle list, it is reasonable to filter out all other translation pairs involving S or T in the same sentence pair.
+    An alignment filter is based on the relative positions of S and T in their respective texts[Dag93].
+    The decision procedure used to select lexicon entries from the multiset of candidate translation pairs is a variation of the method presented in [Ga191a].
+    [Dun93] found binomial log-likelihood ratios to be relatively accurate when dealing with rare tokens.
+    This statistic 

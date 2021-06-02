@@ -1,0 +1,11 @@
+d index for each n, up to the maximum n used by the model.
+			The memory cost is one length-|T | array per index.
+			In order to avoid the full n|T | cost in memory, our implementation uses a mixed strategy.
+			We keep a precomputed inverted index only for unigrams.For bigrams and larger n-grams, we generate the in dex on the fly using stratified trees.
+			This results in a superlinear algorithm for intersection.
+			However,we can exploit the fact that we must compute col locations multiple times for each input n-gram by caching the sorted set after we create it (The cachingstrategy is described in ?5.4).
+			Subsequent computations involving this n-gram can then be done in lin ear or sublinear time.
+			Therefore, the cost of building the inverted index on the fly is amortized over a large number of computations.
+			7We combine this step with the other precomputations that require a pass over the data, thereby removing a redundant O(|T |) term from the startup cost.
+			980 5.4 Efficient Enumeration.
+			A major

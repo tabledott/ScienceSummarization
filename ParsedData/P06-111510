@@ -1,0 +1,5 @@
+the most probable partial derivation E?n,s[i..j] considers all possible subtrees whose root production has n as its LHS non terminal and which cover s from index i to j.Mathematically, the most probable partial deriva tion E?n,s[i..j] is recursively defined as: E?n,s[i..j] = makeTree( argmax pi = n ? n1..nt ? G, (p1, .., pt) ? partition(s[i..j], t) (Ppi(s[i..j]) ? k=1..t P (E?nk,pk )))where partition(s[i..j], t) is a function which returns the set of all partitions of s[i..j] with t elements including their permutations.
+			A parti tion of a substring s[i..j] with t elements is a t?tuple containing t non-overlapping substrings of s[i..j] which give s[i..j] when concatenated.
+			For example, (?the states bordering?, ?Texas ??)is a partition of the substring ?the states bordering Texas ??
+			with 2 elements.
+			The proce duremakeTree(pi, (p1, .., pt)) constructs a partial derivation tree by making pi as its root production and making the most probable partial derivationtrees found through the recursion as child

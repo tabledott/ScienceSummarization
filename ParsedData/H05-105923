@@ -1,0 +1,7 @@
+tions.
+			The biggest difference between ourapproach and such voting methods is that the lo cal classifier in our bidirectional inference methodscan have rich information for decision.
+			Also, vot ing methods generally need many tagging processes to be run on a sentence, which makes it difficult to build a fast tagger.Our algorithm can be seen as an ensemble classi fier by which we choose the highest probability oneamong the different taggers with all possible decom position structures.
+			Although choosing the highest probability one is seemingly natural and one of the simplest ways for combining the outputs of differenttaggers, one could use a different method (e.g. sum ming the probabilities over the outputs which share the same label sequence).
+			Investigating the methods for combination should be an interesting direction of future work.
+			As for the computational cost for training, our methods require us to train 22n types of classifiers when we adopt an nth order markov assumption.
+			Inmany cases a 

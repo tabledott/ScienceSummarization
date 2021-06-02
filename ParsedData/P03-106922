@@ -1,0 +1,8 @@
+and lemmatized nouns (VTNL), verb-related dependencies (VD), noun-related dependencies (ND), verb and noun dependencies (VDND), and all available dependencies (AD).
+    For comparison we also report the naive baseline of generating a random oder (BR).
+    As can be seen from Table 3 the best performing features are NL and VDND.
+    This is not surprising given that NL encapsulates notions of entity-based coherence, which is relatively important for our domain.
+    A lot of texts are about a particular entity (company or individual) and their properties.
+    The feature VDND subsumes several other features and does expectedly better: it captures entity-based coherence, the interrelations among verbs, the structure of sentences and also preserves information about argument structure (who is doing what to whom).
+    The distance between the orders produced by the model and the original texts increases when all types of dependencies are Feature T StdDev Min Max taken into account.
+    The feature space becomes to

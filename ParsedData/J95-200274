@@ -1,0 +1,10 @@
+o a prioritized queue.
+    The queue orders states by their start indices, highest first.
+    This is because states corresponding to later expansions always have to be completed first before they can lead to the completion of expansions earlier on in the derivation.
+    For each start index, the entries are managed as a first-in, first-out queue, ensuring that the dependency graph formed by the states is traversed in breadth-first order.
+    The completion pass can now be implemented as follows.
+    Initially, all complete states from the previous scanning step are inserted in the queue.
+    States are then removed from the front of the queue and used to complete other states.
+    Among the new states thus produced, complete ones are again added to the queue.
+    The process iterates until no more states remain in the queue.
+    Because the computation of probabilities already includes chains of unit productions, states derived from such productions need not be queued, which also ensures that the iteration t

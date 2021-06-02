@@ -1,0 +1,8 @@
+ non-zero values, ensuring that the model will accept any sequence of tokens, while still providing the most likely tagging.
+    By using the fact that words are typically associated with only a few part-ofspeech categories, and carefully ordering the computation, the algorithms have linear complexity (section 3.3).
+  
+  
+    The hidden Markov modeling component of our tagger is implemented as an independent module following the specification given in [Levinson et al., 1983], with special attention to space and time efficiency issues.
+    Only first-order modeling is addressed and will be presumed for the remainder of this discussion.
+    In brief, an HMM is a doubly stochastic process that generates sequence of symbols S ={Sl,S2, , ST}, S,EW 1 &lt;i&lt; T, where W is some finite set of possible symbols, by composing an underlying Markov process with a state-dependent symbol generator (i.e., a Markov process with noise).'
+    Th Markov process captures the notion of sequence depen dency and is described by a 

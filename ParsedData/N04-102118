@@ -1,0 +1,9 @@
+rage parse log probability of the oracle or the reference translations.
+    Hence, it turns out that the parser is actually assigning higher probabilities to the ungrammatical MT output than to the presumably grammatical human translations.
+    One reason for that is that the MT output uses fewer unseen words and typically more frequent words which lead to a higher language model probability.
+    We also performed experiments to balance this effect by dividing the parser probability by the word unigram probability and using this &#8217;normalized parser probability&#8217; as a feature function, but also this did not yield improvements.
+    A tree-to-string model is one of several syntaxbased translation models used.
+    The model is a conditional probability p(f|T(e)).
+    Here, we used a model defined by Yamada and Knight (2001) and Yamada and Knight (2002).
+    Internally, the model performs three types of operations on each node of a parse tree.
+    First, it reorders the child nodes, such as changing VP &

@@ -1,0 +1,7 @@
+n P and recall R, the balance F-measure is defined as: F = 2PR/(P + R).
+    For convenience of comparing with others, we focus only on the close test, which means that any extra resource is forbidden except the designated training corpus.
+    In order to test the performance of the lexical-target templates and meanwhile determine the best iterations over the training corpus, we randomly chosen 2, 000 shorter sentences (less than 50 words) as the development set and the rest as the training set (84, 294 sentences), then trained a perceptron model named NON-LEX using only nonlexical-target features and another named LEX using both the two kinds of features.
+    Figure 3 shows their learning curves depicting the F-measure on the development set after 1 to 10 training iterations.
+    We found that LEX outperforms NON-LEX with a margin of about 0.002 at each iteration, and its learning curve reaches a tableland at iteration 7.
+    Then we trained LEX on each of the four corpora for 7 iterations.
+    Test results l

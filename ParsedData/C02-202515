@@ -1,0 +1,8 @@
+(We restrict attention in the test corpus to sentences that are ambiguous according to the grammar, that is, for which the parse selection task is nontrivial.)
+  We examine four models: an HMM tagging model, a simple PCFG, a PCFG with grandparent annotation, and a hybrid model that combines predictions from the PCFG and the tagger.
+  These models will be described in more detail presently.
+  The tagger that we have implemented is a standard tri- gram HMM tagger, defining a joint probability distribu- tion over the preterminal sequences and yields of these trees.
+  Trigram probabilities are smoothed by linear in- terpolation with lower-order models.
+  For comparison, we present the performance of a unigram tagger and an upper-bound oracle tagger that knows the true tag se- quence and scores highest the parses that have the correct preterminal sequence.
+  The PCFG models define probability distributions over the trees of derivational types corresponding to the HPSG analyses of sentences.
+  A PCFG model has para

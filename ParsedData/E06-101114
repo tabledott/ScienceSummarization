@@ -1,0 +1,10 @@
+dency graphs involving multiple parents are well established in the literature (Hudson, 1984).
+    Unfortunately, the problem of finding the dependency structure with highest score in this setting is intractable (Chickering et al., 1994).
+    To create an approximate parsing algorithm for dependency structures with multiple parents, we start with our approximate second-order nonprojective algorithm outlined in Figure 4.
+    We use the non-projective algorithm since the Danish Dependency Treebank contains a small number of non-projective arcs.
+    We then modify lines 7-10 of this algorithm so that it looks for the change in parent or the addition of a new parent that causes the highest change in overall score and does not create a cycle2.
+    Like before, we make one change per iteration and that change will depend on the resulting score of the new tree.
+    Using this simple new approximate parsing algorithm, we train a new parser that can produce multiple parents.
+  
+  
+    In this section, we review the wo

@@ -1,0 +1,8 @@
+frontier (line 5), front = tails(e) \ admset.
+    A fragment is complete if its frontier is empty (line 9), otherwise we pop one frontier node u to expand, spin off new fragments by following hyperedges of u, and update the frontier (lines 14-16), until all active fragments are complete and open queue is empty (line 7).
+    A single parse tree can also be viewed as a trivial forest, where each node has only one incoming hyperedge.
+    So the Galley et al. (2004) algorithm for tree-based rule extraction (Sec.
+    2.2) can be considered a special case of our algorithm, where the queue open always contains one single active fragment.
+    In tree-based extraction, for each sentence pair, each rule extracted naturally has a count of one, which will be used in maximum-likelihood estimation of rule probabilities.
+    However, a forest is an implicit collection of many more trees, each of which, when enumerated, has its own probability accumulated from of the parse hyperedges involved.
+    In other words, a forest ca

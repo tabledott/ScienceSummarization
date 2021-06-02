@@ -1,0 +1,7 @@
+e to epsilon.
+    Every production in the xRS transducer has an associated weight and corresponds to exactly one of the model parameters.
+    There are several benefits to this xRS formulation.
+    First, it clarifies the model, in the same way that (Knight and Al-Onaizan, 1998; Kumar and Byrne, 2003) elucidate other machine translation models in easily-grasped FST terms.
+    Second, the model can be trained with generic, off-the-shelf tools&#8212;versus the alternative of working out model-specific re-estimation formulae and implementing custom training software.
+    Third, we can easily extend the model in interesting ways.
+    For example, we can add productions for multi-level and lexical re-ordering: - r NP(x0:NP, PP(IN(of), x1:NP)) &#8594; q x1, no, q x0 We can add productions for phrasal translations: - r NP(JJ(big), NN(cars)) &#8594; ooki, kuruma This can now include crucial non-constituent phrasal translations: - r S(NP(PRO(there),VP(VB(are), x0:NP) &#8594; q x0, ga, arimasu We can also eliminate man

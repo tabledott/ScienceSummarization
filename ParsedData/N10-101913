@@ -1,0 +1,7 @@
+(as measured by how close to the root the decision tree uses the feature) follows the order in which features are listed.
+    In contrast to the training data for the primary models, the meta-classifier is trained on errorannotated data from the Cambridge University Press Learners&#8217; Corpus (CLC).
+    The version of CLC that we have licensed currently contains a total of 20 million words from learner English essays written as part of one of Cambridge&#8217;s English Language Proficiency Tests (ESOL) &#8211; at all proficiency levels.
+    The essays are annotated for error type, erroneous span and suggested correction.
+    We first perform a random split of the essays into 70% training, 20% test and 10% for parameter tuning.
+    Next, we create error-specific training, tuning and test sets by performing a number of cleanup steps on the data.
+    First, we correct all errors that were flagged as being spelling errors, since we presume that the user will perform a spelling check on the data before proceeding

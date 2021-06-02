@@ -1,0 +1,11 @@
+easure to evaluate narrative knowledge.
+    We use years 1994-2004 (1,007,227 documents) of the Gigaword Corpus (Graff, 2002) for training2.
+    We parse the text into typed dependency graphs with the Stanford Parser (de Marneffe et al., 2006)3, recording all verbs with subject, object, or prepositional typed dependencies.
+    We use the OpenNLP4 coreference engine to resolve the entity mentions.
+    For each document, the verb pairs that share coreferring entities are recorded with their dependency types.
+    Particles are included with the verb.
+    We used 10 news stories from the 1994 section of the corpus for development.
+    The stories were hand chosen to represent a range of topics such as business, sports, politics, and obituaries.
+    We used 69 news stories from the 2001 (year selected randomly) section of the corpus for testing (also removed from training).
+    The test set documents were randomly chosen and not preselected for a range of topics.
+    From each document, the entity involved in the 

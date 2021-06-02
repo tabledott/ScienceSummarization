@@ -1,0 +1,9 @@
+nce pairs (provided to us by David Burkett, p.c.).
+    This aligner outputs &#8220;soft alignments&#8221;, i.e., posterior probabilities for each source-target word pair.
+    We use a pruning threshold of 0.535 to remove low-confidence alignment links,6 and use the remaining links as hard alignments; we leave the use of alignment probabilities to future work.
+    For simplicity reasons, in the following experiments we always supply gold-standard POS tags as part of the input to the parser.
+    Before evaluating our bilingual approach, we need to verify empirically the two assumptions we made about the parser in Sections 2 and 3: baseline model (k = 1) on English dev set.
+    &#8220;sh &#8882; re&#8221; means &#8220;should shift, but reduced&#8221;.
+    Shiftreduce conflicts overwhelmingly dominate.
+    Hypothesis 1 is verified in Table 6, where we count all the first mistakes the baseline parser makes (in the deterministic mode) on the English dev set (273 sentences).
+    In shift-reduce parsing, further mist

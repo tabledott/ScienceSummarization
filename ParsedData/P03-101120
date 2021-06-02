@@ -1,0 +1,9 @@
+.
+    This improvement in speed allows longer sentences and more data to be used in training syntax-based models.
+    We found that when training on sentences of up 60 words, the tree-to-tree alignment was 20 times faster than tree-to-string alignment.
+    For reasons of speed, Yamada and Knight (2002) limited training to sentences of length 30, and were able to use only one fifth of the available Chinese-English parallel corpus.
+  
+  
+    Our loosely tree-based alignment techniques allow statistical models of machine translation to make use of syntactic information while retaining the flexibility to handle cases of non-isomorphic source and target trees.
+    This is achieved with a clone operation parameterized in such a way that alignment probabilities can be computed with no increase in asymptotic computational complexity.
+    We present versions of this technique both for tree-to-string models, making use of parse trees for one of the two languages, and tree-to-tree models, which make use of parallel pars

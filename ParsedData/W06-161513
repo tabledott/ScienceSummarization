@@ -1,0 +1,12 @@
+wer dimensionality translated to faster run-time.
+    We also implemented both of the extensions described in Ando and Zhang (2005a).
+    The first is to only use positive entries in the pivot predictor weight vectors to compute the SVD.
+    This yields a sparse representation which saves both time and space, and it also performs better.
+    The second is to compute block SVDs of the matrix W, where one block corresponds to one feature type.
+    We used the same 58 feature types as Ratnaparkhi (1996).
+    This gave us a total of 1450 projection features for both semisupervised ASO and SCL.
+    We found it necessary to make a change to the ASO algorithm as described in Ando and Zhang (2005a).
+    We rescale the projection features to allow them to receive more weight from a regularized discriminative learner.
+    Without any rescaling, we were not able to reproduce the original ASO results.
+    The rescaling parameter is a single number, and we choose it using heldout data from our source domain.
+    In all ou

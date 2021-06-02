@@ -1,0 +1,9 @@
+l for the negation of the input.
+			If the model builder finds a model for ?FOL(DRS(T))?FOL(DRS(H)) (= ?A) we know that there can?t be a proof for its negation (hence no entailment).
+			And if the model builder is able to generate a model for FOL(DRS(T);DRS(H)) (= ?B)we know that T and H are consistent (maybe entailment).
+			(In practice, this is also a good way to termi nate the search for proofs or models: if the theorem prover finds a proof for ??, we can halt the model builder to try and find a model for ?
+			(because there won?t be one), and vice versa.)
+			Another attractive property of a model builder is that it outputs a model for its input formula (only of course if the input is satisfiable).
+			A model is here the logical notion of a model, describing a situation in which the input formula is true.
+			Formally, a model is a pair ?D,F ? where D is the set of entities in thedomain, and F a function mapping predicate sym bols to sets of domain members.
+			For instance, the model returned for fol(drs(T)

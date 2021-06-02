@@ -1,0 +1,10 @@
+uited for one argument class, for example, core arguments, tend to hurt performance on some adjunctive arguments.
+    Therefore, we thought that selecting subsets of features for each argument class might improve performance.
+    To achieve this, we performed a simple feature selection procedure.
+    For each argument, we started with the set of features introduced by (Gildea and Jurafsky, 2002).
+    We pruned this set by training classifiers after leaving out one feature at a time and checking its performance on a development set.
+    We used the x2 significance while making pruning decisions.
+    Following that, we added each of the other features one at a time to the pruned baseline set of features and selected ones that showed significantly improved performance.
+    Since the feature selection experiments were computationally intensive, we performed them using 10k training examples.
+    SVMs output distances not probabilities.
+    These distances may not be comparable across classifiers, especially if dif

@@ -1,0 +1,7 @@
+obability of the tags t3,k are approximated using two different distributions, once in the numerator where we use the PCFG probabilities, and once in the denominator, where we use the bi-tag probabilities.
+    One fact noted by C&amp;C, but not discussed in their paper, is that typically the bitag model gives higher probabilities for a tag sequence than does the PCFG distribution.
+    For any single tag t3, the difference is not much, but as we use Equation 4 to compute our FOM for larger constituents, the numerator becomes smaller and smaller with respect to the denominator, effectively favoring smaller constituents.
+    To avoid this one needs to normalize the two distributions to produce more similar results.
+    We have empirically measured the normalization factor and found that the bi-tag distribution produces probabilities that are approximately 1.3 times those produced by the PCFG distribution, on a per-word basis.
+    We correct for this by making the PCFG probability of a known tag ri &gt; 1.
+    Th

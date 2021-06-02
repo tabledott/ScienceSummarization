@@ -1,0 +1,7 @@
+y of organizing the space of NP partitions.
+    Informally, a node in the ith level of a Bell tree corresponds to an ithorder partial partition (i.e., a partition of the first i NPs of the given document), and the ith level of the tree contains all possible ith-order partial partitions.
+    Hence, a leaf node contains a complete partition of the NPs, and the goal is to search for the leaf node that contains the most probable partition.
+    The search starts at the root, and a partitioning of the NPs is incrementally constructed as we move down the tree.
+    Specifically, based on the coreference decisions it has made in the first i&#8722;1 levels of the tree, the algorithm determines at the ith level whether the ith NP should start a new cluster, or to which preceding cluster it should be assigned.
+    While many coreference clustering algorithms have been developed, there have only been a few attempts to compare their effectiveness.
+    For example, Ng and Cardie (2002c) report that bestfirst clustering is b

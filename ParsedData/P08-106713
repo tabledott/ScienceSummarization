@@ -1,0 +1,5 @@
+an instance of the bottom-up Viterbi algorithm, which traverses the hypergraph in a topological order, and at each node v, calculates its 1-best derivation using each incoming hyperedge e E IN(v).
+    The cost of e, c(e), is the score of its Pseudocode 2 Exact Decoding with Local Features Pseudocode 3 Cube Pruning for Non-local Features (pre-computed) local features w &#183; fL(e).
+    This algorithm has a time complexity of O(E), and is almost identical to traditional chart parsing, except that the forest might be more than binary-branching.
+    For non-local features, we adapt cube pruning from forest rescoring (Chiang, 2007; Huang and Chiang, 2007), since the situation here is analogous to machine translation decoding with integrated language models: we can view the scores of unit nonlocal features as the language model cost, computed on-the-fly when combining sub-constituents.
+    Shown in Pseudocode 3, cube pruning works bottom-up on the forest, keeping a beam of at most k derivations at each node, and u

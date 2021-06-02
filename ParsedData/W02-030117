@@ -1,0 +1,6 @@
+1) proposed to use as features the Viterbi state sequence of a hidden Markov model (HMM) to prevent the data sparseness problem in the maximum entropy tagging model.
+    An HMM is trained with a large number of unannotated texts by using an unsupervised learning method.
+    Because the number of states of the HMM is usually made smaller than |V|, the Viterbi states give smoothed but maximally informative representations of word patterns tuned for the domain, from which the raw texts are taken.
+    The HMM feature is defined in the same way as the word feature as follows. hmmk,i = { 1 if the Viterbi state for Wk is the ith state in the HMM&#8217;s states W 0 otherwise (HMMfeature) In the experiments, we train an HMM using raw MEDLINE abstracts in the GENIA corpus, and show that the HMM state feature can improve the accuracy.
+    Towards practical named entity recognition using SVMs, we have tackled the following implementation issues.
+    It would be impossible to carry out the experiments in a reasonable time

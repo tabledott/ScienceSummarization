@@ -1,0 +1,9 @@
+nts are correlated with subsequent pauses.
+    We use a simplification of these results to develop a baseline algorithm for identifying boundaries in our corpus using pauses.
+    The input to our pause segmentation algorithm is a sequential list of all prosodic phrases constituting a given narrative, with pauses (and their durations) noted.
+    The output is a set of boundaries B, represented as ordered pairs of adjacent phrases (Pn,Pn+1), such that there is a pause between Pn and P+1.
+    Unlike Grosz and Hirschberg, we do not currently take phrase duration into account.
+    In addition, since our segmentation task is not hierarchical, we do not note whether phrases begin, end, suspend, or resume segments.
+    Figure 2 shows boundaries (PAUSE) assigned by the algorithm.
+    Table 3 shows the average performance of the pause algorithm for statistically validated boundaries.
+    Recall is 92% (a=.008; max=1; min=.73), precision is 18% (a=.002; max=.25; min=.09), fallout is 54% (a-=.004), and error is 49% (cr=.

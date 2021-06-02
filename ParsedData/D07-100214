@@ -1,0 +1,7 @@
+les tend to have more annotations in Framenet and consequently are considered more probable.
+			We measure sim(Rw,RSR), by adapting a string kernel to our task.
+			Our hypothesis is that the more common substrings two dependency paths have, the more similar they are.
+			The string kernel we used is similar to Leslie (2002) and defined asthe sum of weighted common dependency relation subsequences between Rw and RSR.
+			For efficiency, we consider only unigram and bigram sub sequences.
+			Subsequences are weighted by a metricakin to t f ? id f which measures the degree of asso ciation between a candidate SR and the dependency relation r present in the subsequence: weightSR(r) = fr ? log ( 1+ Nnr ) (3) where fr is the frequency of r occurring in SR; N is the total number of SRs evoked by a given frame; and nr is the number of SRs containing r. For each frame element we thus generate a set of semantic role assignments Set(SRA).
+			This initialassignment can be usefully represented as a com plete bipartite graph i

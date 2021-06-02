@@ -1,0 +1,7 @@
+terminal nodes of the decision trees are smoothed with the parent node probabilities (which themselves were smoothed in the same way).
+			The smoothing is implemented by adding the weighted class probabilities p p (c) of theparent node to the frequencies f(c) before normal izing them to probabilities: p(c) = f(c) + ?p p (c) ? + ? c f(c)The weight ? was fixed to 1 after a few experiments on development data.
+			This smoothing strat egy is closely related to Witten-Bell smoothing.
+			The probabilities are normalized by dividing them by the total probability of all attribute values of the respective feature (see section 2.1).
+			The best tag sequence is computed with theViterbi algorithm.
+			The main differences of our tag ger to a standard trigram tagger are that the order of the Markov model (the k in equation 1) is not fixed 4 This is the reason why the attribute tests in figure 1 used complex attributes such as ART.Nom rather than Nom.
+			and that the context probability p(t i |t i?1 i?k) is internally compu

@@ -1,0 +1,6 @@
+In our experiments we double the weights of Learners A and D. In our example, this results in sentence 3 now being correctly attracted to the nonliteral set.
+    Even before voting, we attempt to improve the correctness of initial attractions through the use of SuperTags, which allows us to add internal structure information to the bag-of-words feature lists.
+    SuperTags (Bangalore &amp; Joshi, 1999) encode a great deal of syntactic information in a single tag (each tag is an elementary tree from the XTAG English Tree Adjoining Grammar).
+    In addition to a word&#8217;s part of speech, they also encode information about its location in a syntactic tree &#8211; i.e. we learn something about the surrounding words as well.
+    We devised a SuperTag trigram composed of the SuperTag of the target word and the following two words and their SuperTags if they contain nouns, prepositions, particles, or adverbs.
+    This is helpful in cases where the same set of features can be used as part of both literal and nonli

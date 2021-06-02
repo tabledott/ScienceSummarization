@@ -1,0 +1,6 @@
+mate the probability of a string, because the string probability is simply the sum over the beam, which is a subset of the possible derivations.
+    By utilizing a figure of merit to identify promising analyses, we are simply focusing our attention on those parses that are likely to have a high probability, and thus we are increasing the amount of probability mass that we do capture, of the total possible.
+    It is not part of the probability model itself.
+    Since each word is (almost certainly, because of our pruning strategy) losing some probability mass, the probability model is not &amp;quot;proper &amp;quot;&#8212;the sum of the probabilities over the vocabulary is less than one.
+    In order to have a proper probability distribution, we would need to renormalize by dividing by some factor.
+    Note, however, that this renormalization factor is necessarily less than one, and thus would uniformly increase each word's probability under the model, that is, any perplexity results reported below will be hi

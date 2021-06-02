@@ -1,0 +1,7 @@
+ion of the patterns in a text, acknowledging that some bad examples may leak through.
+    The concept-instance pairs extracted using the above patterns are very noisy.
+    In samples of approximately 5000 pairs, 79% of the APOS extracted relations were legitimate, and only 45% of the CN/PN extracted relations were legitimate.
+    This noise is primarily due to overgeneralization of the patterns (e.g., &#8220;Berlin Wall, the end of the Cold War,&#8221;) and to errors in the part of speech tagger (e.g., &#8220;Winnebago/CN Industries/PN&#8221;).
+    Further, some extracted relations were considered either incomplete (e.g., &#8220;political commentator Mr. Bruce&#8221;) or too general (e.g., &#8220;meeting site Bourbon Street&#8221;) to be useful.
+    For the purposes of learning a filter, these patterns were treated as illegitimate.
+    In order to filter out these noisy conceptinstance pairs, 5000 outputs from each pattern were hand tagged as either legitimate or illegitimate, and used to train a binary class

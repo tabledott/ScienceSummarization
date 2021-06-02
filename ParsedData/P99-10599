@@ -1,0 +1,6 @@
+e runtime is 0(n4 max(P, IVO)).
+    By comparison, the CKY algorithm uses only the first type of item, and relies on rules whose inputs are pairs Such rules can be instantiated in 0(n5) different ways for a fixed grammar, yielding 0(n5) time complexity.
+    The new algorithm saves a factor of n by combining those two constituents in two steps, one of which is insensitive to k and abstracts over its possible values, the other of which is insensitive to h' and abstracts over its possible values.
+    It is straightforward to turn the new 0(n4) recognition algorithm into a parser for stochastic bilexical CFCs (or other weighted bilexical CFGs).
+    In a stochastic CFG, each nonterminal A[a] is accompanied by a probability distribution over productions of the form A[a] &#8212;&gt; a.
+    A parse is just a derivation (proof tree) of lhn and its probability&#8212;like that of any derivation we find&#8212;is defined as the product of the probabilities of all productions used to condition inference rules in the proof 

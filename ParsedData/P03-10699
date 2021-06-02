@@ -1,0 +1,8 @@
+ therefore smooth the observed frequencies using back-off smoothing (Katz, 1987).
+    To illustrate with an example consider the text in Figure 1 which has three sentences S1, S2, S3, each represented by their respective features denoted by letters.
+    The probability P(S3|S2) will be calculated by taking the product of P(h|e), P(h |f), P(h|g), P(i|e), P(i |f), and P(i|g).
+    To obtain P(h|e), we need f(h,e) and f(e) which can be estimated in Figure 1 by counting the number of edges connecting e and h and the number of edges starting from e, respectively.
+    So, P(h|e) will be 0.16 given that f(h,e) is one and f(e) is six (see the normalization in (5)).
+    Once we have collected the counts for our features we can determine the order for a new text that we haven&#8217;t encountered before, since some of the features representing its sentences will be familiar.
+    Given a text with N sentences there are N! possible orders.
+    The set of orders can be represented as a complete graph, where the set of verti

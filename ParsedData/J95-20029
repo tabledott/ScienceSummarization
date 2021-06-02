@@ -1,0 +1,10 @@
+Greek letters A, it, v. The empty string is denoted by E.
+  
+  
+    An Earley parser is essentially a generator that builds left-most derivations of strings, using a given set of context-free productions.
+    The parsing functionality arises because the generator keeps track of all possible derivations that are consistent with the input string up to a certain point.
+    As more and more of the input is revealed, the set of possible derivations (each of which corresponds to a parse) can either expand as new choices are introduced, or shrink as a result of resolved ambiguities.
+    In describing the parser it is thus appropriate and convenient to use generation terminology.
+    The parser keeps a set of states for each position in the input, describing all pending derivations.2 These state sets together form the Earley chart.
+    A state is of the where X is a nonterminal of the grammar, A and it are strings of nonterminals and/or terminals, and i and k are indices into the input string.
+    States are derived 

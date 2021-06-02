@@ -1,0 +1,8 @@
+18We choose K=3 in our experiments, but one could flexibly general content of the document collection and each 0Ci represents specific sub-stories.
+    As with TOPICSUM, each sentence has a distribution &#968;T over topics (BACKGROUND, DOCSPECIFIC, CONTENT).
+    When BACKGROUND or DOCSPECIFIC topics are chosen, the model works exactly as in TOPICSUM.
+    However when the CONTENT topic is drawn, we must decide whether to emit a general content word (from 0C0) or from one of the specific content distributions (from one of 0Ci for i = 1, ... , K).
+    The generative story of TOPICSUM is altered as follows in this case: &#8226; General or Specific?
+    We must first decide whether to use a general or specific content word.
+    Each sentence draws a binomial distribution &#968;G determining whether a CONTENT word in the sentence will be drawn from the general or a specific topic distribution.
+    Reflecting the intuition that the earlier sentences in a document19 describe the general content of a story, we bias &#

@@ -1,0 +1,7 @@
+in this case maybe the two CC tags required to complete the NP are not present in the future context).
+    A close approximation to the F estimate can also be computed online especially quickly during parsing.
+    Since we are parsing with the Penn treebank covering grammar, almost any (phrasal) non-terminal can be built over almost any span.
+    As discussed in Klein and Manning (2001b), the only source of constraint on what edges can be built where is the tags in the rules.
+    Therefore, an edge with a label like NP&#8212; &#183; CC NP CC NP can essentially be built whenever (and only whenever) two CC tags are in the edge&#8217;s right context, one of them being immediately to the right.
+    To the extent that this is true, F can be approximated by simply scanning for the tag configuration required by a state&#8217;s local rule, and returning 0 if it is present and &#8212;oo otherwise.
+    This is the method we used to implement F; exactly parsing with the projected grammar was much slower and did not resu

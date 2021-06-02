@@ -1,0 +1,9 @@
+his inaccuracy by first preprocessing a headline to correct the capitalization before passing it into the pipeline of NLP modules.
+    Only those markables in the headline that appear in the text body as proper names have their capitalization changed to match those found in the text body.
+    All other headline markables are changed to lowercase.
+    Consider a coreference chain Al - A2 - A3 - A4 found in an annotated training document.
+    Only pairs of noun phrases in the chain that are immediately adjacent (i.e., Al A2, A2 - A3, and A3 - A4) are used to generate the positive training examples.
+    The first noun phrase in a pair is always considered the antecedent, while the second is the anaphor.
+    On the other hand, negative training examples are extracted as follows.
+    Between the two members of each antecedent-anaphor pair, there are other markables extracted by our language-processing modules that either are not found in any coreference chain or appear in other chains.
+    Each of them is then pai

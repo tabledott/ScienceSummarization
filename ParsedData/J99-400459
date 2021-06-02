@@ -1,0 +1,8 @@
+
+    However, we can use the algorithm of Shieber, Schabes, and Pereira to compute all of the items that are derivable, and to store all of the dependencies between the items.
+    Then we perform a topological sort on the items.
+    The time complexity of both the agenda parser and the topological sort will be proportional to the number of dependencies, which will be proportional to the optimal time complexity.
+    Unfortunately, we still have the space complexity problem, since again, the space used will be proportional to the number of dependencies, rather than to the number of items.
+    The third approach to bucketing is to create algorithm-specific bucketing code; this results in parsers with both optimal time and optimal space complexity.
+    For instance, in a CKY-style parser, we can simply create one bucket for each length, and place each item into the bucket for its length.
+    For some algorithms, such as Earley's algorithm, special-purpose code for bucketing might have to be combined with code to 

@@ -1,0 +1,8 @@
+thm selects as the antecedent of NP&#9985; its closest preceding coreferent NP.
+    If no such NP exists, then NP&#9985; is assumed to be non-anaphoric (i.e., no antecedent is selected).
+    On the other hand, the best-first clustering algorithm selects as the antecedent of NP&#9985; the closest NP with the highest coreference likelihood value from its set of preceding coreferent NPs.
+    If this set is empty, then no antecedent is selected for NP&#9985; .
+    Since the most likely antecedent is chosen for each NP, best-first clustering may produce partitions with higher precision than closest-first clustering.
+    Finally, in aggressive-merge clustering, each NP is merged with all of its preceding coreferent NPs.
+    Since more merging occurs in comparison to the previous two algorithms, aggressive-merge clustering may yield partitions with higher recall.
+    Table 1 summarizes the previous work on coreference resolution that employs the learning algorithms, clustering algorithms, feature sets, and instance 

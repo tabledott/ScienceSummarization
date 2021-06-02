@@ -1,0 +1,7 @@
+s (m? 1)-length prefix.
+			They observe that the region of the suffix array containing all suffixes prefixed by ua is a subset of the region containingthe suffixes prefixed by u. Therefore, if we enumer ate the phrases of our sentence in such a way that we always search for u before searching for ua, wecan restrict the binary search for ua to the range con taining the suffixes prefixed by u. If the search for u fails, we do not need to search for ua at all.
+			They show that this approach leads to some time savings for phrase search, although the gains are relatively modest since the search for contiguous phrases is not very expensive to begin with.
+			However, the potential savings in the discontiguous case are much greater.
+			5.4.2 Improvements and Extensions We can improve on the Zhang-Vogel algorithm.
+			An m-length contiguous phrase aub depends not only on the existence of its prefix au, but also on the existence of its suffix ub.
+			In the contiguous case, we cannot use this information to restrict the

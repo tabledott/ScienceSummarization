@@ -1,0 +1,9 @@
+@SUBJ) IF (IC AUXMOD HEAD); To get the full benefit of the parser, it is also useful to name the valency slot in the rule.
+    This has two effects: (1) the valency slot is unique, i.e. no more than one subject is linked to a finite verb', and (2) we can explicitly state in rules which kind of valency slots we expect to be filled.
+    The rule thus is of the form:
+  
+  
+    IF (IC AUXMOD HEAD = subject); The rule above works well in an unambiguous context but there is still need to specify more tolerant rules for ambiguous contexts.
+    The rule differs from the previous rule in that it leaves the other readings of the noun intact and only adds a (possible) subject dependency, while both the previous rules disambiguated the noun reading also.
+    But especially in the rule above, the contextual test is far from being sufficient to select the subject reading reliably.
+    Instead, it leaves open a possibility to attach a dependency from another syntactic function, i.e. the dependency relations remain ambiguous

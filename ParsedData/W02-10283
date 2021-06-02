@@ -1,0 +1,9 @@
+silisk (Bootstrapping Approach to SemantIc Lexicon Induction using Semantic Knowledge) is a weakly supervised bootstrapping algorithm that automatically generates semantic lexicons.
+    Figure 1 shows the high-level view of Basilisk&#8217;s bootstrapping process.
+    The input to Basilisk is an unannotated text corpus and a few manually defined seed words for each semantic category.
+    Before bootstrapping begins, we run an extraction pattern learner over the corpus which generates patterns to extract every noun phrase in the corpus.
+    The bootstrapping process begins by selecting a subset of the extraction patterns that tend to extract the seed words.
+    We call this the pattern pool.
+    The nouns extracted by these patterns become candidates for the lexicon and are placed in a candidate word pool.
+    Basilisk scores each candidate word by gathering all patterns that extract it and measuring how strongly those contexts are associated with words that belong to the semantic category.
+    The five best ca

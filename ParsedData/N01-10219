@@ -1,0 +1,9 @@
+tions compatible with the prefix seen so far.
+    By the correspondence between derivations and Earley paths, one would need only to compute the sum of all paths that are constrained by the observed prefix.
+    But this can be done in the course of parsing by storing the current prefix probability in each state.
+    Then, when a new state is added by some parser operation, the contribution from each antecedent state &#8211; each previous state linked by some parser operation &#8211; is summed in the new state.
+    Knowing the prefix probability at each state and then summing for all parser operations that result in the same new state efficiently counts all possible derivations.
+    Predicting a rule corresponds to multiplying by that rule&#8217;s probability.
+    Scanning does not alter any probabilities.
+    Completion, though, requires knowing y, the inside probability, which records how probable was the inner structure of some recognized phrasal node.
+    When a state is completed, a bottom-up confirmation

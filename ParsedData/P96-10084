@@ -1,0 +1,9 @@
+nterpretation and discourse.
+  
+  
+    Given a string of input words W and a discourse history H, the task of a statistical language understanding system is to search among the many possible discourse-dependent meanings MD for the most likely meaning Mo: Mo = arg max P(MD I W, H).
+    Directly modeling P(MD I W, H) is difficult because the gap that the model must span is large.
+    A common approach in non-statistical natural language systems is to bridge this gap by introducing intermediate representations such as parse structure and pre-discourse sentence meaning.
+    Introducing these intermediate levels into the statistical framework gives: where T denotes a semantic parse tree, and Ms denotes prediscourse sentence meaning.
+    This expression can be simplified by introducing two independence assumptions: Now, since P(W) is constant for any given word string, the problem of finding meaning MD that maximizes We now introduce a third independence assumption: 3.
+    The probability of words W does not depend

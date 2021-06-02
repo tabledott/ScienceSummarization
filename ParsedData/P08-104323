@@ -1,0 +1,8 @@
+known tokens as described in Section 5.
+    We use the HSPELL9 (Har&#8217;el and Kenigsberg, 2004) wordlist as a lexeme-based lexicon for pruning segmentations involving invalid segments.
+    Models that employ this strategy are denoted hsp.
+    To control for the effect of the HSPELL-based pruning, we also experimented with a morphological analyzer that does not perform this pruning.
+    For these models we limit the options provided for OOV words by not considering the entire token as a valid segmentation in case at least some prefix segmentation exists.
+    This analyzer setting is similar to that of (Cohen and Smith, 2007), and models using it are denoted nohsp, Parser and Grammar We used BitPar (Schmid, 2004), an efficient general purpose parser,10 together with various treebank grammars to parse the input sentences and propose compatible morphological segmentation and syntactic analysis.
+    We experimented with increasingly rich grammars read off of the treebank.
+    Our first model is GTplain, a PCFG 

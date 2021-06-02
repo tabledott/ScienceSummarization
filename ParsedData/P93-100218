@@ -1,0 +1,10 @@
+ve logarithm of its probability.
+    The probability of an alignment is inversely related to the sum of the distances associated with its component sentence beads.
+    Given the size of existing bilingual corpora and the computation necessary to evaluate the probability of a sentence bead, a quadratic algorithm is still too profligate.
+    However, most alignments are one-to-one, so we can reap great benefits through intelligent thresholding.
+    By considering only a subset of all possible alignments, we reduce the computation to a linear one.
+    Dynamic programming consists of incrementally finding the best alignment of longer and longer prefixes of the bilingual corpus.
+    We prune all alignment prefixes that have a substantially lower probability than the most probable alignment prefix of the same length.
+    Deletions are automatically handled within the standard dynamic programming framework.
+    However, because of thresholding, we must handle large deletions using a separate mechanism.
+    Because l

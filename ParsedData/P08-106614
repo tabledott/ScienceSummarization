@@ -1,0 +1,14 @@
+an replace X by X2, but not by X1 based on the definition of category operations.
+    Now we explain how we get the string-todependency rules from training data.
+    The procedure is similar to (Chiang, 2007) except that we maintain tree structures on the target side, instead of strings.
+    Given sentence-aligned bi-lingual training data, we first use GIZA++ (Och and Ney, 2003) to generate word level alignment.
+    We use a statistical CFG parser to parse the English side of the training data, and extract dependency trees with Magerman&#8217;s rules (1995).
+    Then we use heuristic rules to extract transferrules recursively based on the GIZA alignment and the target dependency trees.
+    The rule extraction procedure is as follows.
+    All the 4-tuples (P?
+    ',&#65533; phrase alignments, where source phrase P ?
+    ',&#65533; &#65533;is e under alignment3 A, and D, the dependency structure for P m,n e , is well-formed.
+    All valid phrase templates are valid rules templates.
+  
+  
+    Let (Pi,j f , Pm,n 

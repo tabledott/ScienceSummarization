@@ -1,0 +1,8 @@
+  Thus, in these simple systems, the order of processing items is relatively unimportant, as long as some simple constraints are met.
+    On the other hand, for a semiring such as the inside semiring, there are important ordering constraints: we cannot compute the inside value of an item until the inside values of all of its children have been computed.
+    Thus, we need to impose an ordering on the items, in such a way that no item precedes any item on which it depends.
+    We will assign each item x to a &amp;quot;bucket&amp;quot; B, writing bucket(x) = B and saying that item x is associated with B.
+    We order the buckets in such a way that if item y depends on item x, then bucket(x) &lt; bucket(y).
+    For some pairs of items, it may be that both depend, directly or indirectly, on each other; we associate these items with special &amp;quot;looping&amp;quot; buckets, whose values may require infinite sums to compute.
+    We will also call a bucket looping if an item associated with it depends on itself.
+ 

@@ -1,0 +1,8 @@
+sequent query will match the full context.
+    If the log backoff of wnf is also zero (it may not be in filtered models), then wf should be omitted from the state.
+    This logic applies recursively: if wnf+1 similarly does not extend and has zero log backoff, it too should be omitted, terminating with a possibly empty context.
+    We indicate whether a context with zero log backoff will extend using the sign bit: +0.0 for contexts that extend and &#8722;0.0 for contexts that do not extend.
+    RandLM and SRILM also remove context that will not extend, but SRILM performs a second lookup in its trie whereas our approach has minimal additional cost.
+    Section 4.1 explained that state s is stored by applications with partial hypotheses to determine when they can be recombined.
+    In this section, we extend state to optimize left-to-right queries.
+    All language model queries issued by machine translation decoders follow a left-to-right pattern, starting with either the begin of sentence token or null contex

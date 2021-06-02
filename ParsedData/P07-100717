@@ -1,0 +1,8 @@
+ predominant sense in the WSJ evaluation data, si has a sense prior of pi in the WSJ data and has ni BC training examples.
+    Taking ni examples to represent a sense prior of pi, we proportionally determine the number of BC examples to gather for other senses s according to their respective sense priors in WSJ.
+    If there are insufficient training examples in BC for some sense s, whatever available examples of s are used.
+    This approach gives an average of 195 BC training examples for the 21 nouns.
+    With this new set of training examples, we perform adaptation using active learning and obtain the a-truePrior curve in Figure 2.
+    The a-truePrior curve shows that by ensuring that the sense priors in the BC training data adhere as much as possible to the sense priors in the WSJ data, we start off with a higher WSD accuracy.
+    However, the performance is no different from the a curve after 35% of adaptation examples are added.
+    A possible reason might be that by strictly adhering to the sense prio

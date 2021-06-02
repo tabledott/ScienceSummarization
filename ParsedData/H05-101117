@@ -1,0 +1,7 @@
+s an extra pruning heuristic we use in theLLR-based model.
+			In generating the list of associ ation types to be used in aligning a given sentence pair, we use only association types which have the best association score for this sentence pair for one of the word types involved in the association.
+			Weinitially explored limiting the number of associations considered for each word type simply as an ef ficiency heuristic, but we were surprised to discover that the most extreme form of such pruning actually reduced alignment error rate over any less restrictive form or not pruning on this basis at all.
+	
+	
+			We optimize the feature weights using a modified version of averaged perceptron learning as described by Collins (2002).
+			Starting with an initial set of feature weight values, perceptron learning iterates through the annotated training data multiple times,comparing, for each sentence pair, the best align ment ahyp according to the current model with the reference alignment aref . At each sentence pair, 

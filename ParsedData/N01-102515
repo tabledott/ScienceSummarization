@@ -1,0 +1,14 @@
+ed by the maximum distance from the origin.
+    2.
+    We consider two parsing directions (Forward/Backward) for each representation, i.e. systems for a single training data set.
+    Then, we employ SVMs training using these independent chunk representations.
+    Leave-One-Out bound for each of 8 systems.
+    As for cross validation, we employ the steps 1 and 2 for each divided training data, and obtain the weights.
+    4.
+    We test these 8 systems with a separated test data set.
+    Before employing weighted voting, we have to convert them into a uniform representation, since the tag sets used in individual 8 systems are different.
+    For this purpose, we re-convert each of the estimated results into 4 representations (IOB1/IOB2/IOE2/IOE1).
+    5.
+    We employ weighted voting of 8 systems with respect to the converted 4 uniform representations and the 4 voting schemes respectively.
+    Finally, we have (types of uniform representations) 4 (types of weights) results for our experiments.
+    Although we ca

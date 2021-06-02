@@ -1,0 +1,8 @@
+nman&#8221;), S3 has one skip-bigram match with S1 (&#8220;the gunman&#8221;), and S4 has two skip-bigram matches with S1 (&#8220;police killed&#8221;, &#8220;the gunman&#8221;).
+    Given translations X of length m and Y of length n, assuming X is a reference translation and Y is a candidate translation, we compute skip-bigram-based F-measure as follows: Where SKIP2(X,Y) is the number of skip-bigram matches between X and Y, &#223; controlling the relative importance of Pskip2 and Rskip2, and C is the combination function.
+    We call the skip-bigram-based Fmeasure, i.e.
+    Equation 18, ROUGE-S.
+    Using Equation 18 with &#223; = 1 and S1 as the reference, S2&#8217;s ROUGE-S score is 0.5, S3 is 0.167, and S4 is 0.333.
+    Therefore, S2 is better than S3 and S4, and S4 is better than S3.
+    This result is more intuitive than using BLEU-2 and ROUGE-L. One advantage of skip-bigram vs. BLEU is that it does not require consecutive matches but is still sensitive to word order.
+    Comparing skip-bigram with LCS,

@@ -1,0 +1,13 @@
+ic wordlevel bigram features.
+    These features aim to capture all the possible combinations of word and POS bigrams.
+    Templates TB0-TB6 are the types of characters for bigrams.
+    For example, (TE(w&#8722;1), TB(w0)) captures the change of character types from the end character in the previous word to the beginning character in the current word.
+    Note that if one of the adjacent nodes is a character-level node, we use the template CB0 that represents POS bigrams.
+    In our preliminary experiments, we found that if we add more features to non-word-level bigrams, the number of features grows rapidly due to the dense connections between non-word-level nodes.
+    However, these features only slightly improve performance over using simple POS bigrams.
+    For Seg, a token is considered to be a correct one if the word boundary is correctly identified.
+    For Seg &amp; Tag, both the word boundary and its POS tag have to be correctly identified to be counted as a correct token.
+    F1 =
+  
+  
+    Previous 

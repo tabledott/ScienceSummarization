@@ -1,0 +1,7 @@
+ machine translation system [Koehn et al., 2003; Koehn, 2004].
+    We train this system on the Europarl corpus, a parallel corpus in 11 European languages of 20-30 million words per language [Koehn, 2002].
+    Since the focus of this paper is the comparison of the performance of different systems, we need a set of translation systems.
+    Here, we resort to a trick: Instead of comparing different machine translation methods trained on the same training data, we train the same machine translation method on different parallel copora: language pairs with English as the target language and any of the 10 other languages as the source language.
+    Then, we assemble a test set that is sentence aligned across all 11 languages.
+    During evaluation, the, say, Spanish-English and Danish-English system each translate a sentence that correspond to the same English reference translation.
+    Hence, we can compare how well the English output of the Spanish-English translation system matches the reference sentence vs. how

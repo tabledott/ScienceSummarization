@@ -1,0 +1,10 @@
+rite p(y|x; w, v, q) to refer to the conditional distribution under parameter values w, v, q.
+    We will describe a three-step parameter estimation method that: 1) initializes the q functions (generative models) to be uniform distributions, and estimates parameter values w and v from labeled data; 2) induces new functions q1 ... qk from unlabeled data, based on the distribution defined by the w, v, q values from step (1); 3) re-estimates w and v on the labeled examples, keeping the q1 .
+    .
+    . qk from step (2) fixed.
+    The end result is a model that combines supervised training with generative models induced from unlabeled data.
+    We now describe how the generative models q1 .
+    .
+    . qk are defined, and how they are induced from unlabeled data.
+    These models make direct use of the feature-vector definition f(x, y) used in the original, fully supervised, dependency parser.
+    The first step is to partition the d features in f(x, y) into k separate feature vectors, r1(x, y) ... rk(x, y) (with

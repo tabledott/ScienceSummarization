@@ -1,0 +1,5 @@
+age-passing&#8221; discipline offers a principled way for higher-order features to incrementally adjust the numerical edge weights that are fed to a fast first-order parser.
+    Thus the first-order parser is influenced by higher-order interactions among edges&#8212;but not asymptotically slowed down by considering the interactions itself.
+    BP&#8217;s behavior in our setup can be understood intuitively as follows.
+    Inasmuch as the first-order parser finds that edge e is probable, the higher-order features will kick in and discourage other edges e' to the extent that they prefer not to coexist with e.2 Thus, the next call to the first-order parser assigns lower probabilities to parses that contain these e'.
+    (The method is approximate because a first-order parser must equally penalize all parses containing e', even those that do not in fact contain e.) This behavior is somewhat similar to parser stacking (Nivre and McDonald, 2008; Martins et al., 2008), in which a first-order parser derives some of it

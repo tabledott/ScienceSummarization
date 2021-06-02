@@ -1,0 +1,9 @@
+ our experiments would be redundant.
+    Finally, we did not use the KL divergence because it requires a smoothed base language model.
+  
+  
+    We evaluated the similarity functions introduced in the previous section on a binary decision task, using the same experimental framework as in our previous preliminary comparison (Dagan et al., 1999).
+    That is, the data consisted of the verb-object cooccurrence pairs in the 1988 Associated Press newswire involving the 1000 most frequent nouns, extracted via Church's (1988) and Yarowsky's processing tools.
+    587,833 (80%) of the pairs served as a training set from which to calculate base probabilities.
+    From the other 20%, we prepared test sets as follows: after discarding pairs occurring in the training data (after all, the point of similarity-based estimation is to deal with unseen pairs), we split the remaining pairs into five partitions, and replaced each nounverb pair (n, v1) with a noun-verb-verb triple (n, vi, v2) such that P(v2) P(vi).
+    The task fo

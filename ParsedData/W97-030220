@@ -1,0 +1,5 @@
+of the algorithms need to be changed. of the form N &#8212;&gt; NIA NI+1,1 in the first pass that wasn't thresholded out by multi-pass thresholding, beam thresholding, etc., we consider every descendant production instance, that is, all those of the form NP Ni; NkZ;1,i , for appropriate values of p, q, r. This algorithm is given in Figure 4, which uses a current pass matrix Chart to keep track of nonterminals in the current pass, and a previous pass matrix, Prey Chart to keep track of nonterminals in the previous pass.
+    We use one additional optimization, keeping track of the descendants of each nonterminal in each cell in PrevChart which are in the corresponding cell of Chart.
+    We tried multiple-pass thresholding in two different ways.
+    In the first technique we tried, productioninstance thresholding, we remove from consideration in the second pass the descendants of all production instances whose combined inside-outside probability falls below a threshold.
+    In the second technique, node threshol

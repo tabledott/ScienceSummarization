@@ -1,0 +1,5 @@
+ation process can proceed in all branches.
+    By doing so, word pairs can appear at all levels of the final parse tree in contrast with the unlexicalized parse tree in which the word pairs are generated only at the bottom.
+    The binary rules are lexicalized rather than bilexicalized.1 This is a trade-off between complexity and expressiveness.
+    After our lexicalization, the number of lexical rules, thus the number of parameters in the statistical model, is still at the order of O(|V ||T |), where |V  |and |T  |are the vocabulary sizes of the 1In a sense our rules are bilexicalized in that they condition on words from both languages; however they do not capture head-modifier relations within a language. two languages.
+    Given a bilingual sentence pair, a synchronous parse can be built using a two-dimensional extension of chart parsing, where chart items are indexed by their nonterminal X, head word pair e/f if specified, beginning and ending positions l, m in the source language string, and beginning an

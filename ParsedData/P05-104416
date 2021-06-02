@@ -1,0 +1,9 @@
+ q is any fixed (untrained) distribution over lengths.
+    When the vocabulary E is the set of words in a natural language, it is never fully known; approximations for defining LENGTH = Em include using observed E from the training set (as we do) or adding a special OOV symbol.
+  
+  
+    We compare CE (using neighborhoods from &#167;4) with EM on POS tagging using unlabeled data.
+    Our experiments are inspired by those in Merialdo (1994); we train a trigram tagger using only unlabeled data, assuming complete knowledge of the tagging dictionary.5 In our experiments, we varied the amount of data available (12K&#8211;96K words of WSJ), the heaviness of smoothing, and the estimation criterion.
+    In all cases, training stopped when the relative change in the criterion fell below 10&#8722;4 between steps (typically G 100 steps).
+    For this corpus and tag set, on average, a tagger must decide between 2.3 tags for a given token.
+    The generative model trained by EM was identical to Merialdo&#8217;s: a second-

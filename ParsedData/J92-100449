@@ -1,0 +1,6 @@
+ the grammar from TIMIT to the RM task.
+    A set of 791 sentences within the RM task have been designated as training sentences, and a separate set of 200 sentences as the test set.
+    We built a subset grammar from the 791 parsed training sentences, and then used this grammar to test coverage and perplexity on the unseen test sentences.
+    The grammar could parse 100% of the training sentences and 84% of the test sentences.
+    A formula for the test set perplexity (Lee 1989) is:13 where the wi are the sequence of all words in all sentences, N is the total number of words, including an &amp;quot;end&amp;quot; word after each sentence, and P(w, I w,_1,...wi) is the probability of the ith word given all preceding words.14 If all words are assumed equally likely, then P(w, I w,_1,...w1) can be determined by counting all the words that could follow each word in the sentence, along all workable partial theories.
+    If the grammar contains probability estimates, then these can be used in place of the equally l

@@ -1,0 +1,10 @@
+990) that lacks the adjunction operation.
+    (It is also equivalent to top-down tree transducers.)
+    What, then, is new here?
+    First, we know of no previous attempt to learn the &#8220;chunk-to-chunk&#8221; mappings.
+    That is, we do not know at training time how the tree pair of section 1 was derived, or even what it was derived from.
+    Our approach is to reconstruct all possible derivations, using dynamic programming to decompose the tree pair into aligned pairs of elementary trees in all possible ways.
+    This produces a packed forest of derivations, some more probable than others.
+    We use an efficient inside-outside algorithm to do Expectation-Maximization, reestimating the model by training on all derivations in proportion to their probabilities.
+    The runtime is quite low when the training trees are fully specified and elementary trees are bounded in size.1 Second, it is not a priori obvious that one can reasonably use STSG instead of the slower but more powerful STAG.
+    TSG can be par

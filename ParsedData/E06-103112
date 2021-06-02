@@ -1,0 +1,8 @@
+calculation takes three steps for each l: i0 There is always an optimal dCD alignment path that does not contain any deletion edges, because each deletion can be replaced by a long jump, at the same costs.
+    This is different for a dLJ path, because here each candidate word must be covered exactly once.
+    Assume now that the candidate sentence consists of I words and the reference sentence consists of L words, with I &gt; L. Then, at most L candidate words can be covered by substitution or identity edges.
+    Therefore, the remaining candidate words (at least I &#8722; L) must be covered by deletion edges.
+    This means that at least I &#8722;L deletion edges will be found in any dLJ path, which leads to dLJ &#8722; dCD &#8805; I &#8722; L in this case.
+    Consequently, the length difference between the two sentences gives us a useful miscoverage penalty lplen: This penalty is independent of the dCD alignment path.
+    Thus, an optimal dCD alignment path is optimal for dCD + lplen as well.
+    Therefore

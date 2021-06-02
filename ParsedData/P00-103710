@@ -1,0 +1,10 @@
+ would simply be the number of times substring occurs in the text corpus.
+    But if we are training from a set of {si, wi} tuples and not given an associated corpus, we can do the following: (a) From a large collection of representative text, count the number of occurrences of .
+    Since the rate of errors varies widely and is difficult to measure, we can only crudely approximate it.
+    Fortunately, we have found empirically that the results are not very sensitive to the value chosen.
+    Essentially, we are doing one iteration of the Expectation-Maximization algorithm (Dempster, Laird et al. 1977).
+    The idea is that contexts that are useful will accumulate fractional counts across multiple instances, whereas contexts that are noise will not accumulate significant counts.
+  
+  
+    Given a string s, where s o D , we want to return argmaxw P(w  |s)P(w  |context) .
+    Our approach will be to return an n-best list of candidates according to the error model, and then rescore these candidates by taking into

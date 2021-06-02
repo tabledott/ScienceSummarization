@@ -1,0 +1,11 @@
+e only operation we need of its parent distribution G&#960;(u) is to draw words from it too.
+    Since G&#960;(u) is itself distributed according to a Pitman-Yor process, we can use another Chinese restaurant process to draw words from that.
+    This is recursively applied until we need draws from the global mean distribution G0, which is easy since it is just uniform.
+    We refer to this as the hierarchical Chinese restaurant process.
+    Let us introduce some notations.
+    For each context u we have a sequence of words xu1, xu2, .. . drawn i.i.d. from Gu and another sequence of words yu1, yu2, ... drawn i.i.d. from the parent distribution G&#960;(u).
+    We use l to index draws from Gu and k to index the draws from G&#960;(u).
+    Define tuwk = 1 if yuk takes on value w, and tuwk = 0 otherwise.
+    Each word xul is assigned to one of the draws yuk from G&#960;(u).
+    If yuk takes on value w define cuwk as the number of words xul drawn from Gu assigned to yuk, otherwise let cuwk = 0.
+    Finally we denote

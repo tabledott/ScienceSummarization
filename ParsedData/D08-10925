@@ -1,0 +1,10 @@
+ce are denoted by v (v').
+    Our model is a general log-linear (maximum entropy) distribution over triples (t, a, t') for sentence pairs (s, s'): Features are thus defined over (t, a, t') triples; we discuss specific features below.
+  
+  
+    To use our model, we need features of a triple (t, a, t') which encode both the monolingual quality of the trees as well as the quality of the alignment between them.
+    We introduce a variety of features in the next sections.
+    To capture basic monolingual parse quality, we begin with a single source and a single target feature whose values are the log likelihood of the source tree t and the target tree t', respectively, as given by our baseline monolingual parsers.
+    These two features are called SOURCELL and TARGETLL respectively.
+    It is certainly possible to augment these simple features with what would amount to monolingual reranking features, but we do not explore that option here.
+    Note that with only these two features, little can be learned: all posi

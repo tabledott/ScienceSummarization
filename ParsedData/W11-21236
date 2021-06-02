@@ -1,0 +1,8 @@
+l n-grams of the same order into a single giant hash table.
+    This differs from other implementations (Stolcke, 2002; Pauls and Klein, 2011) that use hash tables as nodes in a trie, as explained in the next section.
+    Our implementation permits jumping to any n-gram of any length with a single lookup; this appears to be unique among language model implementations.
+    Sorted arrays store key-value pairs in an array sorted by key, incurring no space overhead.
+    SRILM&#8217;s compact variant, IRSTLM, MITLM, and BerkeleyLM&#8217;s sorted variant are all based on this technique.
+    Given a sorted array A, these other packages use binary search to find keys in O(log |A|) time.
+    We reduce this to O(log log |A|) time by evenly distributing keys over their range then using interpolation search4 (Perl et al., 1978).
+    Interpolation search formalizes the notion that one opens a dictionary near the end to find the word &#8220;zebra.&#8221; Initially, the algorithm knows the array begins at b +&#8212; 0 and e

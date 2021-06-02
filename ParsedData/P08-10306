@@ -1,0 +1,7 @@
+ in the advance on Baghdad and take control of Umm Qasr, despite a fierce sandstorm which slows another flank.
+    ...
+    The baseline event tagger is not able to detect &#8220;advance&#8221; as a &#8220;Movement_Transport&#8221; event trigger because there is no pattern &#8220;advance towards [Place]&#8221; in the ACE training corpora (&#8220;advance&#8221; by itself is too ambiguous).
+    The training data, however, does include the pattern &#8220;advance on [Place]&#8221;, which allows the instance of &#8220;advance&#8221; in the related documents to be successfully identified with high confidence by pattern matching as an event.
+    This provides us much stronger &#8220;feedback&#8221; confidence in tagging &#8216;advance&#8217; in the test sentence as a correct trigger.
+    On the other hand, if a word is not tagged as an event trigger in most related documents, then it&#8217;s less likely to be correct in the test sentence despite its high local confidence.
+    For example, in a document about &#8220;a

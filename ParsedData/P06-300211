@@ -1,0 +1,8 @@
+raph of clusters are treated differently, depending on their origin: clusters of partition 1 are added to the result, as they are believed to contain important closed word class groups.
+    Dropouts from partitioning 2 are left out, as they mostly consist of small, yet semantically motivated word sets.
+    Combining both partitionings in this way, we arrive at about 200-500 clusters that will be further used as a lexicon for tagging.
+    A lexicon is constructed from the merged partitionings, which contains one possible tag (the cluster ID) per word.
+    To increase text coverage, it is possible to include those words that dropped out in the distributional step for partitioning 1 into the lexicon.
+    It is assumed that these words dropped out because of ambiguity.
+    From a graph with a lower similarity threshold s (here: such that the graph contained 9,500 target words), we obtain the neighbourhoods of these words one at a time.
+    The tags of those neighbours &#8211; if known &#8211; provide a distributi

@@ -1,0 +1,11 @@
+evant than any of the words in its context.
+    We therefore weigh each feature with its information gain; a number expressing the average amount of reduction of training set information entropy when knowing the value of the feature (Daelemans &amp; van de Bosch, 1992, Quinlan, 1993; Hunt et al. 1966) (Equation 3).
+    We will call this algorithm IB-IG.
+  
+  
+    Memory-based learning is an expensive algorithm: of each test item, all feature values must be compared to the corresponding feature values of all training items.
+    Without optimisation, it has an asymptotic retrieval complexity of 0(NF) (where N is the number of items in memory, and F the number of features).
+    The same asymptotic complexity is of course found for memory storage in this approach.
+    We use IGTrees (Daelemans et al. 1996) to compress the memory.
+    IGTree is a heuristic approximation of the IB-IG algorithm.
+    IGTree combines two algorithms: one for compressing a case base into a trees, and one for retrieving classification in

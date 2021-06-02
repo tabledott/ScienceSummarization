@@ -1,0 +1,9 @@
+ith n-best reranking.
+    For example, even if we double the size of the n-best list to 100, the performance only goes up by 0.06% (Table 3).
+    In fact, the 100best oracle is only 0.5% higher than the 50-best one (see Fig.
+    4).
+    In addition, the feature extraction step in 100-best reranking produces huge data files and takes 44 hours in total, though this part can be parallelized.8 On two CPUs, 100-best reranking takes 25 hours, while our forest-reranker can also finish in 26 hours, with a much smaller disk space.
+    Indeed, this demonstrates the severe redundancies as another disadvantage of n-best lists, where many subtrees are repeated across different parses, while the packed forest reduces space dramatically by sharing common sub-derivations (see Fig.
+    4).
+    To put our results in perspective, we also compare them with other best-performing systems in Table 4.
+    Our final result (91.7) is better than any previously reported system trained on the Treebank, although 7It is surprising that 50

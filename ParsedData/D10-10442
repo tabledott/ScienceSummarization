@@ -1,0 +1,9 @@
+ion.
+    We introduce several new ideas.
+    First, we aim to explicitly characterize examples from OUT as belonging to general language or not.
+    Previous approaches have tried to find examples that are similar to the target domain.
+    This is less effective in our setting, where IN and OUT are disparate.
+    The idea of distinguishing between general and domain-specific examples is due to Daum&#180;e and Marcu (2006), who used a maximum-entropy model with latent variables to capture the degree of specificity.
+    Daum&#180;e (2007) applies a related idea in a simpler way, by splitting features into general and domain-specific versions.
+    This highly effective approach is not directly applicable to the multinomial models used for core SMT components, which have no natural method for combining split features, so we rely on an instance-weighting approach (Jiang and Zhai, 2007) to downweight domain-specific examples in OUT.
+    Within this framework, we use features intended to capture degree of generality

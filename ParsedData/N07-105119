@@ -1,0 +1,11 @@
+ficient per sample.
+    Note that for split grammars, a posterior parse sample can be drawn by sampling a derivation and projecting away the substates.
+    Fig.
+    2 shows the results of the following experiment.
+    We constructed 10-best lists from the full grammar G in Sec.
+    2 using the parser of Petrov et al. (2006).
+    We then took the same grammar and extracted 500-sample lists using the method of Finkel et al. (2006).
+    The minimum risk parse candidate was selected for various loss functions.
+    As can be seen, in most cases, risk minimization reduces test-set loss of the relevant quantity.
+    Exact match is problematic, however, because 500 samples is often too few to draw a match when a sentence has a very flat posterior, and so there are many all-way ties.2 Since exact match permits a non-sampled calculation of the expected risk, we show this option as well, which is substantially superior.
+    This experiment highlights that the correct procedure for exact match is to find the most probabl

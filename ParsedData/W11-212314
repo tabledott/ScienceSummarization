@@ -1,0 +1,8 @@
+plemented in their scrolling variant, which is a trie annotated with forward and backward pointers.
+    The hash variant is a reverse trie with hash tables, a more memory-efficient version of SRILM&#8217;s default.
+    While the paper mentioned a sorted variant, code was never released.
+    The compressed variant uses block compression and is rather slow as a result.
+    A direct-mapped cache makes BerkeleyLM faster on repeated queries, but their fastest (scrolling) cached version is still slower than uncached PROBING, even on cache-friendly queries.
+    For all variants, we found that BerkeleyLM always rounds the floating-point mantissa to 12 bits then stores indices to unique rounded floats.
+    The 1-bit sign is almost always negative and the 8-bit exponent is not fully used on the range of values, so in practice this corresponds to quantization ranging from 17 to 20 total bits.
+    Lossy compressed models RandLM (Talbot and Osborne, 2007) and Sheffield (Guthrie and Hepple, 2010) offer better memory consum

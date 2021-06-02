@@ -1,0 +1,7 @@
+e partitions of a sample into test versus training data.
+    We performed 10 runs of the learning program, each using 9 of the 10 training narratives for that run's training set (for learning the tree) and the remaining narrative for testing.
+    Note that for each iteration of the crossvalidation, the learning process begins from scratch and thus each training and testing set are still disjoint.
+    While this method does not make sense for humans, computers can truly ignore previous iterations.
+    For sample sizes in the hundreds (our 10 narratives provide 1004 examples) 10-fold cross-validation often provides a better performance estimate than the hold-out method (Weiss and Kulikowski 1991).
+    Results using crossvalidation are shown in Table 10, and are better than the estimates obtained using the hold-out method (Table 9), with the major improvement coming from precision.
+    Finally, Table 11 shows the results from a set of additional machine learning experiments, in which more conservative definition

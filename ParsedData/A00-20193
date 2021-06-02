@@ -1,0 +1,8 @@
+al model for each sense.
+    They identify the intended sense of a word in a novel sentence by extracting its contextual cues and selecting the most similar word sense model (e.g., Leacock, Chodorow and Miller (1998), Yarowsky (1993)).
+    Golding (1995) showed how methods used for WSD (decision lists and Bayesian classifiers) could be adapted to detect errors resulting from common spelling confusions among sets such as there, their, and they're.
+    He extracted contexts from correct usage of each confusable word in a training corpus and then identified a new occurrence as an error when it matched the wrong context.
+    However, most grammatical errors are not the result of simple word confusions.
+    This complicates the task of building a model of incorrect usage.
+    One approach we considered was to proceed without such a model: represent appropriate word usage (across senses) in a single model and compare a novel example to that model.
+    The most appealing part of this formulation was that we could by

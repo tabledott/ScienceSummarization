@@ -1,0 +1,9 @@
+ heuristic filter, this one will reject some perfectly valid candidates.
+    If a more precise bitext map is desired, some of these valid chains can be recovered during an extra sweep through the bitext space.
+    Since bitext maps are mostly injective, valid chains that are rejected by the angle deviation filter usually occur between two accepted chains, as shown in Figure 7.
+    If Chains C and D are accepted as valid, then the slope of the TBM between the end of Chain C and the start of Chain D must be much closer to the slope of Chain X than to the slope of the main diagonal.
+    Chain X should be accepted.
+    During a second pass through the bitext space, SIMR searches for sandwiched chains in any space between two accepted chains that is large enough to accommodate another chain.
+    This subspace of the bitext space will have its own main diagonal.
+    The slope of this local main diagonal can be quite different from the slope of the global main diagonal.
+    An additional search through the bitext sp

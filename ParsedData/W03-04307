@@ -1,0 +1,7 @@
+lues, &#945;t(si), to be the &#8220;unnormalized probability&#8221; of arriving in state si given the observations (o1, ...ot).
+    We set &#945;0(s) equal to the probability of starting in each state s, and recurse: !
+    The backward procedure and the remaining details of Baum-Welch are defined similarly.
+    Zo is then Ps &#945;T(s).
+    The Viterbi algorithm for finding the most likely state sequence given the observation sequence can be correspondingly modified from its HMM form.
+    The weights of a CRF, A={&#955;, ...}, are set to maximize the conditional log-likelihood of labeled sequences in some training set, D = {(o, l)(1), ...(o, l)(j), ...(o, l)(N)}: where the second sum is a Gaussian prior over parameters (with variance &#963;) that provides smoothing to help cope with sparsity in the training data.
+    When the training labels make the state sequence unambiguous (as they often do in practice), the likelihood function in exponential models such as CRFs is convex, so there are no local maxima, an

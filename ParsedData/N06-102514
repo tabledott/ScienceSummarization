@@ -1,0 +1,8 @@
+ng features.
+    WIKI RELATEDNESS BEST the highest relatedness score from all (CREi,n, CREj,m) category pairs.
+    WIKI RELATEDNESS AVG the average relatedness score from all (CREi,n, CREj,m) category pairs.
+    The last semantic knowledge enhancement for the baseline system uses SRL information.
+    In our experiments we use the ASSERT parser (Pradhan et al., 2004), an SVM based semantic role tagger which uses a full syntactic analysis to automatically identify all verb predicates in a sentence together with their semantic arguments, which are output as PropBank arguments (Palmer et al., 2005).
+    It is often the case that the semantic arguments output by the parser do not align with any of the previously identified noun phrases.
+    In this case, we pass a semantic role label to a RE only when the two phrases share the same head.
+    Labels have the form &#8220;ARG1 pred1 ... ARGn predn&#8221; for n semantic roles filled by a constituent, where each semantic argument label is always defined with respect to

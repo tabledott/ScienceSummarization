@@ -1,0 +1,8 @@
+ distributed among contexts t&#732; in proportion to c(&#732;t), giving final estimates: where p(&#732;t) = c(&#732;t)/ Et&#65533; c(&#732;t).
+  
+  
+    Fixed-discount methods subtract a fixed discount D from all non-zero counts, and distribute the resulting probability mass according to a smoothing distribution (Kneser and Ney, 1995).
+    We use an interpolated version of fixed-discount proposed by (Chen and Goodman, 1998) rather than the original backoff version.
+    For phrase pairs with nonzero counts, this distribution has the general form: where pb(&#732;s|&#732;t) is the smoothing distribution.
+    Normalization constraints fix the value of &#945;(&#732;t): where cg is a modified count value used to replace c in subsequent relative-frequency estimates, and nc is the number of events having count c. An intuitive motivation for this formula is that it approximates relative-frequency estimates made by successively leaving out each event in the corpus, and then averaging the results (N&#180;adas, 1985).
+  

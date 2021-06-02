@@ -1,0 +1,7 @@
+ach element (i,j) is initially the best score of any single chart compoD 2 nent covering the input region from word i to word j. Dashes indicate that no one component covers exNote that this array is a different data structure from the chart. actly that region.
+    (In rows 1 through 7, the array has not yet been operated on, so it still shows its initial state.)
+    After processing (see rows 9 through 22), each element is the score for the best set of components covering the input from word i to word j (the best cover for this substring)2.
+    (Only a truncated score is shown for each element in the figure, for readability.
+    There is also a list of best components associated with each element.)
+    The array is upper triangular since the starting position of a component i must be less than or equal to its ending position j.
+    For any position, the score is calculated based on a combination of scores in the row to its left and in the column below it, versus the previous contents of the array cell for it

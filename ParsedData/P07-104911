@@ -1,0 +1,12 @@
+d between the prefix hx1, ... , xk&#8722;1i and xk.
+    It then adds the link with the strongest positive weight and repeats the process (adding a link can change the set of links which may be added).
+    When all possible links are assigned a zero weight by the parser, the parser reads the next word of the utterance and repeats the process.
+    This is a greedy algorithm which optimizes every step separately.
+  
+  
+    The weight function which assigns a weight to a candidate link is lexicalized: the weight is calculated based on the lexical entries of the words which are to be connected by the link.
+    It is the task of the learning algorithm to learn the lexicon.
+    The lexicon stores for each word x a lexical entry.
+    Each such lexical entry is a sequence of adjacency points, holding statistics relevant to the decision whether to link x to some other word.
+    These statistics are given as weights assigned to labels and linking properties.
+    Each adjacency point describes a different link based at x

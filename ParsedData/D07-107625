@@ -1,0 +1,8 @@
+and 4400 rela tion instances.
+			That is, all the reported performances in this paper on the ACE RDC 2004 corpus are evalu ated using 5-fold cross validation on the entire corpus . Both corpora are parsed using Charniak?s parser (Charniak, 2001) with the boundaries of all the entity mentions kept 4 . We iterate over all pairs of entity mentions occurring in the same sentence to generate potential relation instances5.
+			In our experimentation, SVM (SVMLight, Joachims(1998)) is selected as our classifier.
+			For efficiency, we apply the one vs. others strategy, which builds K classifiers so as to separate one class from all others.
+			The training parameters are chosen using cross-validation on the ACE RDC 2003 training data.
+			In particular, l in our tree kernel is fine-tuned to 0.5.
+			This suggests that about 50% dis count is done as our tree kernel moves down one level in computing ])2[],1[( 11 ii nnD . 4.2 Experimental Results.
+			First, we systematically evaluate the context-sensitive convolution tree k

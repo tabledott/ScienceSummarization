@@ -1,0 +1,10 @@
+ service, location and rooms, respectively.
+    The remaining sentences were not relevant to any of the rated aspects.
+    We compared two models.
+    The first model uses the first three topics of MAS to extract relevant mentions based on the probability of that topic/aspect being present in the sentence.
+    To obtain these probabilities we used estimators based on the proportion of words in the sentence assigned to an aspects&#8217; topic and normalized within local topics.
+    To improve the reliability of the estimator we produced 100 samples for each document while keeping assignments of the topics to all other words in the collection fixed.
+    The probability estimates were then obtained by averaging over these samples.
+    We did not perform any model selection on the basis of the hand-labeled data, and tested only a single model of each type.
+    For the second model we trained a maximum entropy classifier, one per each aspect, using 10-fold cross validation and unigram/bigram features.
+    Note tha

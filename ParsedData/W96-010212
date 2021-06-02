@@ -1,0 +1,10 @@
+endent from the number of training cases, and therefore especially useful for large case bases.
+    Storage requirements are proportional to N (compare 0(N * F) for IB1).
+    Finally, the cost of building the tree on the basis of a set of cases is proportional to N * log(V) * F in the worst case (compare 0(N) for training in IB1).
+    In practice, for our part-of-speech tagging experiments, IGTree retrieval is 100 to 200 times faster than normal memory-based retrieval, and uses over 95% less memory.
+  
+  
+    The architecture takes the form of a tagger generator given a corpus tagged with the desired tag set, a POS tagger is generated which maps the words of new text to tags in this tag set according to the same systematicity.
+    The construction of a POS tagger for a specific corpus is achieved in the following way.
+    Given an annotated corpus, three datastructures are automatically extracted: a lexicon, a case base for known words (words occurring in the lexicon), and a case base for unknown words.
+    C

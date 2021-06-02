@@ -1,0 +1,9 @@
+   No model is created for the training corpus, and the raw examples are not converted to any other representation.
+    Consider the following examplel .
+    Suppose we want to decide whether the candidate sequence is a noun phrase (NP) by comparing it to the training corpus.
+    A good match would be if the entire sequence appears as-is several times in the corpus.
+    However, due to data sparseness, an exact match cannot always be expected.
+    A somewhat weaker match may be obtained if we consider sub-parts of the candidate sequence (called tiles).
+    For example, suppose the corpus contains noun phrase instances with the following structures: The first structure provides positive evidence that the sequence &amp;quot;DT ADJ ADJ NM&amp;quot; is a possible NP prefix while the second structure provides evidence for &amp;quot;ADJ NN NNP&amp;quot; being an NP suffix.
+    Together, these two training instances provide positive evidence that covers the entire candidate.
+    Considering evidence for sub-parts of

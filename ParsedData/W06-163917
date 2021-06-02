@@ -1,0 +1,5 @@
+ more interesting task.
+    We approach the problem of classifying references by representing each reference with a wordpresence vector derived from a window of text surrounding the reference.8 In the training set, we classify each reference connecting two speakers with a positive or negative label depending on whether the two voted the same way on the bill under discussion9.
+    These labels are then used to train an SVM classifier, the output of which is subsequently used to create weights on agreement links in the test set as follows.
+    Let d(r) denote the distance from the vector representing reference r to the agreement-detector SVM&#8217;s decision plane, and let u, be the standard deviation of d(r) over all references in the debate in question.
+    We then define the strength agr of the agreement link corresponding to the reference as: agr(r) def = { 0 d(r) &lt; Bagr; &#945; &#183; d(r)/4u, Bagr &lt; d(r) &lt; 4u,; &#945; d(r) &gt; 4u, The free parameter &#945; specifies the relative importance of th

@@ -1,0 +1,8 @@
+ sentence-level subjectivity classification (Wiebe et al., 1999).
+    Row (1) shows a Naive Bayes classifier that uses unigram bag-ofwords features, with one binary feature for the absence or presence in the sentence of each word that appeared during training.
+    Pang et al. (2002) reported that a similar experiment produced their best results on a related classification task.
+    The difference in accuracy between Rows (1) and (2) is not statistically significant (Bag-of-Word&#8217;s higher precision is balanced by WBO&#8217;s higher recall).
+    Next, we trained a Naive Bayes classifier using only the SubjNoun features.
+    This classifier achieved good precision (77%) but only moderate recall (64%).
+    Upon further inspection, we discovered that the subjective nouns are good subjectivity indicators when they appear, but not every subjective sentence contains one of them.
+    And, relatively few sentences contain more than one, making it difficult to recognize contextual effects (i.e., multiple clues in a

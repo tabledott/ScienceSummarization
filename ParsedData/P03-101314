@@ -1,0 +1,11 @@
+ handling of unknown words.
+    In Lopar, a POS tag distribution for unknown words has to be specified, which is then used to tag unknown words in the test data.
+    The Collins model treats any word seen fewer than five times in the training data as unseen and uses an external POS tagger to tag unknown words.
+    In order to make the models comparable, we used a uniform approach to unknown words.
+    All models were run on POS-tagged input; this input was created by tagging the test set with a separate POS tagger, for both known and unknown words.
+    We used TnT (Brants, 2000), trained on the Negra training set.
+    The tagging accuracy was 97.12% on the development set.
+    In order to obtain an upper bound for the performance of the parsing models, we also ran the parsers on the test set with the correct tags (as specified in Negra), again for both known and unknown words.
+    We will refer to this mode as &#8216;perfect tagging&#8217;.
+    All models were evaluated using standard PARSEVAL measures.
+    W

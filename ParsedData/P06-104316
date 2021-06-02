@@ -1,0 +1,9 @@
+de in the 50best lists by the first-stage parser.
+    It would seem the corrections memorized by the reranker are not as domain-specific as we might expect.
+    As further evidence, we present the results of applying the WSJ model to the Switchboard corpus &#8212; a domain much less similar to WSJ than BROWN.
+    In Table 4, we see that while the parser&#8217;s performance is low, self-training and reranking provide orthogonal benefits.
+    The improvements represent a 12% error reduction with no additional in-domain data.
+    Naturally, in-domain data and speech-specific handling (e.g. disfluency modeling) would probably help dramatically as well.
+    Finally, to compare against a model fully trained on BROWN data, we created a BROWN reranker.
+    We parsed the BROWN training set with 20-fold cross-validation, selected features that occurred 5 times or more in the training set, and fed the 50-best lists from the parser to a numerical optimizer to estimate feature weights.
+    The resulting reranker model had

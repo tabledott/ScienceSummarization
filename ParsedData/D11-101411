@@ -1,0 +1,10 @@
+utes a potential parent node and a score.
+    This process repeats until it hits the last pair of words in the sentence: (c1, c2) = (xm&#8722;1, xm).
+    Next, it selects the pair which had the lowest reconstruction error (ETec) and its parent representation p will represent this phrase and replace both children in the sentence word list.
+    For instance, consider the sequence (x1, x2, x3, x4) and assume the lowest ETec was obtained by the pair (x3, x4).
+    After the first pass, the new sequence then consists of (x1, x2, p(3,4)).
+    The process repeats and treats the new vector p(3,4) like any other input vector.
+    For instance, subsequent states could be either: (x1,p(2,(3,4))) or (p(1,2),p(3,4)).
+    Both states would then finish with a deterministic choice of collapsing the remaining two states into one parent to obtain (p(1,(2,(3,4)))) or (p((1,2),(3,4))) respectively.
+    The tree is then recovered by unfolding the collapsing decisions.
+    The resulting tree structure captures as much of the single

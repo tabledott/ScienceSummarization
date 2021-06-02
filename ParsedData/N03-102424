@@ -1,0 +1,9 @@
+   For each sentence group, we hold out one sentence as test sentence, and try to evaluate how much of it can be predicted from the other 10 sentences.
+    We compare two different ways of estimating the predictive power.
+    (a) we compute the edit distance between the test sentence and the other 10 sentences in the set.
+    The minimum of this distance is ed(input).
+    (b) we use dynamic programming to efficiently compute the minimum distance (ed(FSA)) between the test sentence and all the paths in the FSA built from the other 10 sentences.
+    The smaller the edit distance is, the better we are predicting a test sentence.
+    Mathematically, the difference between these two measures ed(input) &#8722; ed(FSA) characterizes how much is gained in predictive power by building the FSA.
+    We carry out the experiment described above in a &#8220;leave-one-out&#8221; fashion (i.e. each sentence serves as a test sentence once).
+    Now let edgain be the average of ed(input) &#8722; ed(FSA) over the 11 runs for a 

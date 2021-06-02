@@ -1,0 +1,9 @@
+  A final compression is obtained by pruning the derived tree.
+    All leaf-node daughters of a mother node that have the same class as that node are removed from the tree, as their class information does not contradict the default class information already present at the mother node.
+    Again, this compression does not affect IGTree's generalisation performance.
+    The recursive algorithms for tree construction (except the final pruning) and retrieval are given in Figures 1 and 2.
+    For a detailed discussion, see Daelemans et al. (1996).
+    The asymptotic complexity of IGTree (i.e, in the worst case) is extremely favorable.
+    Complexity of searching a query pattern in the tree is proportional to F * log(V), where F is the number of features (equal to the maximal depth of the tree), and V is the average number of values per feature (i.e., the average branching factor in the tree).
+    In IB1, search complexity is 0(N * F) (with N the number of stored cases).
+    Retrieval by search in the tree is indep

@@ -1,0 +1,13 @@
+e.
+    Given the fact that the I/O demand will not increase as fast as the size of corpus grows, PGIZA++ can only provide significant speed up when the size of each training corpus chunk is large enough so that the alignment time is significantly longer than normalization time.
+    Also, one obvious drawback of PGIZA++ is its complexity in setting up the environment.
+    One has to write scripts specially for the scheduler/resource management software.
+    Balancing the load of each child process is another issue.
+    If any one of the corpus chunks takes longer to complete, the master has to wait for it.
+    In other words, the speed of PGIZA++ is actually determined by the slowest child process.
+  
+  
+    Another implementation of parallelism is to run several alignment threads in a single process.
+    The threads share the same address space, which means it can access the model parameters concurrently without any I/O overhead.
+    The main thread spawns a number of threads, using the same entry function.
+ 

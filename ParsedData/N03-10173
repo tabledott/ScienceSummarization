@@ -1,0 +1,8 @@
+ to reformulate the translation probability for translating a foreign sentence into English as This allows for a language model and a separate translation model . argmax argmax During decoding, the foreign input sentence is segmented into a sequence of phrases .
+    We assume a uniform probability distribution over all possible segmentations.
+    Each foreign phrase in is translated into an English phrase .
+    The English phrases may be reordered.
+    Phrase translation is modeled by a probability distribution .
+    Recall that due to the Bayes rule, the translation direction is inverted from a modeling standpoint.
+    Reordering of the English output phrases is modeled by a relative distortion probability distribution , where denotes the start position of the foreign phrase that was translated into the th English phrase, and denotes the end position of the foreign phrase translated into the th English phrase.
+    In all our experiments, the distortion probability distribution is trained using a joint probab

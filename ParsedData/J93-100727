@@ -1,0 +1,9 @@
+ries, and the task of selecting sentences containing w. The first task is not simple and is still an open problem.
+    It is not enough to look for a period followed by a blank space as, for example, abbreviations and acronyms such as S.B.F., U.S.A., and A.T.M. often pose a problem.
+    The basic algorithm for isolating sentences is described and implemented by a finite-state recognizer.
+    Our implementation could easily be improved in many ways.
+    For example, it performs poorly on acronyms and often considers them as end of sentences; giving it a list of currently used acronyms such as N.B.A., E.I.K., etc., would significantly improve its performance.
+    Input: Output of Step 1.1, i.e., a set of tagged sentences containing w. Output: A list of words w, with frequency information on how w and w, co-occur.
+    This includes the raw frequency as well as the breakdown into frequencies for each possible position.
+    See Table 2 for example outputs.
+    Description: For each input sentence containing w, we 

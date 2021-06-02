@@ -1,0 +1,10 @@
+ssifier discussed in the previous section, and let p(i,j) = log(1 &#8722; p(i,j)), be the log probability that they are not coreferent.
+    Our objective function is then the log probability of a particular (possibly illegal) variable assignment: We add binary constraints on each of the variables: x(i,j) E 10, 11.
+    We also add constraints, over each triple of mentions, to enforce transitivity: This constraint ensures that whenever x(zj) = x(j&#65533;k) = 1 it must also be the case that x(z&#65533;k) = 1.
+  
+  
+    We used lp solve3 to solve our ILP optimization problems.
+    We ran experiments on two datasets.
+    We used the MUC-6 formal training and test data, as well as the NWIRE and BNEWS portions of the ACE (Phase 2) corpus.
+    This corpus had a third portion, NPAPER, but we found that several documents where too long for lp solve to find a solution.4 We added named entity (NE) tags to the data using the tagger of Finkel et al. (2005).
+    The ACE data is already annotated with NE tags, so when they 

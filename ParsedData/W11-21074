@@ -1,0 +1,8 @@
+uitable for other MT or NLP software.
+    Commonly used metrics such as BLEU and earlier versions of Meteor make no distinction between content and function words.
+    This can be problematic for ranking-based evaluations where two system outputs can differ by a single word, such as mistranslating either a main verb or a determiner.
+    To improve Meteor&#8217;s discriminative power in such cases, we introduce a function word list for each WMT language and a new 6 parameter to adjust the relative weight given to content words (any word not on the list) versus function words (see Section 3).
+    Function word lists are estimated according to relative frequency in large monolingual corpora.
+    For each language, we pool freely available WMT 2011 data consisting of Europarl (Koehn, 2005), news (sentence-uniqued), and news commentary data.
+    Any word with relative frequency of 10&#8722;3 or greater is added to the function word list.
+    Table 2 lists corpus size and number of function words learned for each l

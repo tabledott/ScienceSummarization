@@ -1,0 +1,11 @@
+e in which the weak learner can afford to exhaustively search through the space of possible features.
+    Future work on reranking approaches might consider other approaches&#8212;such as boosting of decision trees&#8212;which can effectively consider more complex features.
+  
+  
+    This section describes how the ideas from classification problems can be extended to reranking tasks.
+    A baseline statistical parser is used to generate N-best output both for its training set and for test data sentences.
+    Each candidate parse for a sentence is represented as a feature vector which includes the log-likelihood under the baseline model, as well as a large number of additional features.
+    The additional features can in principle be any predicates over sentence/tree pairs.
+    Evidence from the initial loglikelihood and the additional features is combined using a linear model.
+    Parameter estimation becomes a problem of learning how to combine these different sources of information.
+    The boosting algorit

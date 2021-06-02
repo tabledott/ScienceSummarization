@@ -1,0 +1,8 @@
+ious section.
+    REVERB first identifies relation phrases that satisfy the syntactic and lexical constraints, and then finds a pair of NP arguments for each identified relation phrase.
+    The resulting extractions are then assigned a confidence score using a logistic regression classifier.
+    This algorithm differs in three important ways from previous methods (Section 2).
+    First, the relation phrase is identified &#8220;holistically&#8221; rather than word-by-word.
+    Second, potential phrases are filtered based on statistics over a large corpus (the implementation of our lexical constraint).
+    Finally, REVERB is &#8220;relation first&#8221; rather than &#8220;arguments first&#8221;, which enables it to avoid a common error made by previous methods&#8212;confusing a noun in the relation phrase for an argument, e.g. the noun deal in made a deal with.
+    REVERB takes as input a POS-tagged and NPchunked sentence and returns a set of (x, r, y) extraction triples.2 Given an input sentence s, REVERB uses

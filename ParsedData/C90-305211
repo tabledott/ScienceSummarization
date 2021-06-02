@@ -1,0 +1,15 @@
+ we will start from the small ex- ample of DCG presented in [Pereira nd Warren 80] and show how this grammar (Fig.2) can be written in TFS.
+  294 sentenee(s(NP, VP)) --+ noun_phrase(Num,NP), verb_phrmse(Num,VV).
+  noun_phrasetNum , np(Det,Noun)) -+ determiner(Nnm,Det),  noun(Nnm,Nonn).
+  noun_phrase(singular,np(Name)) --~ name(Name).
+  verb..phrase(Num,vp(TV,NP)) ~ trans_verb(Num,TV),noun_phrasc(N1,NP).
+  determiner(Num,det(W)) --~ [W], is_determiner(W,Num).
+  noun(Num,n(l~oot)) --+[W], is_noun(W,Num,Root).
+  name(name(W)) --* [W], is_name(W).
+  trans_verb(Num,tv(Root)) ~ [W], is_trans(W,Num,Root).
+  (Figure 2) is_determiner(all, p ural).
+  is_noun(man, singular, ma isJ~oun(men, phlral, man).
+  is_trans(likes,singular, ike) is_trans(like, plural, like).
+  In a specification like this, there are three different kinds of information mixed together.
+  Take for exam- ple the rule "noun_phrase(Num, np(Det, Noun)) determiner(Num, Det), noun(Num, Noun)".
+  In "this rule we find: 1. a specification of a set of wcll-f

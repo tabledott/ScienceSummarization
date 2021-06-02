@@ -1,0 +1,11 @@
+ssifies relations in WordNet as having direction, and then establishes the relatedness between two concepts A and B by finding a path that is neither too long nor that changes direction too often.
+    The lesk and vector measures incorporate information from WordNet glosses.
+    The lesk measure finds overlaps between the glosses of concepts A and B, as well as concepts that are directly linked to A and B.
+    The vector measure creates a co&#8211;occurrence matrix for each word used in the WordNet glosses from a given corpus, and then represents each gloss/concept with a vector that is the average of these co&#8211;occurrence vectors.
+  
+  
+    WordNet::Similarity can be utilized via a command line interface provided by the utility program similarity.pl.
+    This allows a user to run the measures interactively.
+    In addition, there is a web interface that is based on this utility.
+    WordNet::Similarity can also be embedded within Perl programs by including it as a module and calling its methods.
+    The 

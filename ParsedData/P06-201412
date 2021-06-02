@@ -1,0 +1,7 @@
+  We also assume that our 1F(x, y) decomposes in such a way that the features can guide a search to recover the structure y from x.
+    That is: is computable, where Y is the set of all possible structures, and w is a vector that assigns weights to each component of IF(x, y). w is the parameter vector we will learn using our SVM.
+    Now the learning task begins to look straightforward: we are working with vectors, and the task of building a structure y has been recast as an argmax operator.
+    Our learning goal is to find a w so that the correct structure is found: Vi, Vy E Y \ yi : (w, 'Pi(yi)) &gt; (w, 'Pi(y)) (2) where xi is the ith training example, yi is its correct structure, and 1&amp;i(y) is short-hand for IF(xi, y).
+    As several w will fulfill (2) in a linearly separable training set, the unique max-margin objective is defined to be the w that maximizes the minimum distance between yi and the incorrect structures in Y.
+    This learning framework also incorporates a notion of structured loss.
+   

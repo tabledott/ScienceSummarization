@@ -1,0 +1,11 @@
+.
+			Onthe other hand, when we trained the cubic ker nel classifiers by using only features that appeared three times or more (without considering weights), TinySVM?s classification time was reduced by only 14% and the F-measure was slightly degraded to86.85%.
+			Therefore, we expect XQK-FS to be use ful as a feature selection method for other kernels when such kernels give much better results than the quadratic kernel.
+	
+	
+			Since training of 33 classifiers also takes a longtime, it is difficult to try various combinations of pa rameters and features.
+			Here, we present a solution for this problem.
+			In the training time, calculation of B???Dr   B??$Dr ?  B??D@  for various  ? s is dominant.
+			Conventional systems save time by caching the results.
+			By analyzing TinySVM?s classifier, we found that they can be calculated more efficiently.
+			For sparse vectors, most SVM classifiers (e.g., SVM-Light) use a sparse dot product algorithm (Platt, 1999) that compares non-zero elements of  and those of 7  to ge

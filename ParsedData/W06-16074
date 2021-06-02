@@ -1,0 +1,5 @@
+
+  
+  
+    Given a source sentence s, our phrase-based SMT system tries to find the target sentence t&#710; that is the most likely translation of s. To make search more efficient, we use the Viterbi approximation and seek the most likely combination of t and its alignment a with s, rather than just the most likely t: where a = (&#732;s1, &#732;t1, j1), ..., (&#732;sK, &#732;tK, jK); &#732;tk are target phrases such that t = &#732;t1 ... &#732;tK; &#732;sk are source phrases such that s = &#732;sj1 ... &#732;sjK; and &#732;sk is the translation of the kth target phrase &#732;tk. where each fi(s, t, a) is a feature function, and weights Ai are set using Och&#8217;s algorithm (Och, 2003) to maximize the system&#8217;s BLEU score (Papineni et al., 2001) on a development corpus.
+    The features used in this study are: the length of t; a single-parameter distortion penalty on phrase reordering in a, as described in (Koehn et al., 2003); phrase translation model probabilities; and trigram language model probabilit

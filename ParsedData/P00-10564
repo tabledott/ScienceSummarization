@@ -1,0 +1,10 @@
+parameters the counts are: Correspondingly, the alignment and fertility probabilities can be estimated.
+    The models IBM-1, IBM-2 and HMM have a particularly simple mathematical form so that the EM algorithm can be performed exactly, i.e. in the E-step it is possible to efficiently consider all alignments.
+    For the HMM we do this using the Baum-Welch algorithm (Baum, 1972).
+    Since there is no efficient way in the fertility models IBM-3 to 5 to avoid the explicit summation over all alignments in the EMalgorithm, the counts are collected only over a subset of promising alignments.
+    For IBM3, IBM-4 and IBM-5 we perform the count collection only over a small number of good alignments.
+    In order to keep the training fast we can take into account only a small fraction of all alignments.
+    We will compare three different possibilities of using subsets of different size:
+  
+  
+    This work has been partially supported as part of the Verbmobil project (contract number 01 IV 701 T4) by the German Feder

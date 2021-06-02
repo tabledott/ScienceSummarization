@@ -1,0 +1,10 @@
+most events was selected as the protagonist.
+    For this evaluation, we only look at verbs.
+    All verb clauses involving the protagonist are manually extracted and translated into the narrative events (verb,dependency).
+    Exceptions that are not included are verbs in headlines, quotations (typically not part of a narrative), &#8220;be&#8221; properties (e.g. john is happy), modifying verbs (e.g. hurried to leave, only leave is used), and multiple instances of one event.
+    The original test set included 100 documents, but those without a narrative chain at least five events in length were removed, leaving 69 documents.
+    Most of the removed documents were not stories, but genres such as interviews and cooking recipes.
+    An example of an extracted chain is shown in figure 2.
+    We evalute with Narrative Cloze using leave-oneout cross validation, removing one event and using the rest to generate a ranked list of guesses.
+    The test dataset produces 740 cloze tests (69 narratives with 740 events).
+ 

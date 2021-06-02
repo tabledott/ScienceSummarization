@@ -1,0 +1,8 @@
+ accuracy.
+    We also ignored features over triples of words since this would explode the size of the feature space.
+    We evaluate dependencies on per word accuracy, which is the percentage of words in the sentence with the correct parent in the tree, and on complete dependency analysis.
+    In our evaluation we exclude punctuation for English and include it for Czech and Danish, which is the standard.
+    To create data sets for English, we used the Yamada and Matsumoto (2003) head rules to extract dependency trees from the WSJ, setting sections 2-21 as training, section 22 for development and section 23 for evaluation.
+    The models rely on part-of-speech tags as input and we used the Ratnaparkhi (1996) tagger to provide these for the development and evaluation set.
+    These data sets are exclusively projective so we only compare the projective parsers using the exact projective parsing algorithms.
+    The purpose of these experiments is to gauge the overall benefit from including second-order features

@@ -1,0 +1,7 @@
+nto account a pseudo-count prior, expressed through R. This can also be viewed as a form of smoothing.
+    A similar approach is taken with regards to the prior probability p(si|s&#8722;i,a).
+    In this case, however, all layers must be considered: Here &#955;l is the weight for the contribution of layer l, and &#945;l is the portion of the Dirichlet prior for the sense distribution &#952; in the current layer.
+    Treating each layer individually, we integrate over the possible values of &#952;, obtaining a similar count-based term: where #l(si) indicates the number of elements in layer l assigned the sense si, #l indicates the number of elements in layer l, i.e., the size of the layer and S the number of senses.
+    To distribute the pseudo counts represented by &#945; in a reasonable fashion among the layers, we define &#945;l = #l #m &#183; &#945; where #m = &#8721;l #l, i.e., the total size of the instance.
+    This distributes &#945; according to the relative size of each layer in the instance.
+    Pla

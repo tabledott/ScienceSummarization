@@ -1,0 +1,10 @@
+states in the second pass may be non-trivial.
+    To solve both these problems, only states at word transitions are saved.
+    That is, from pass to pass, only information about where words are likely to start and end is used for thresholding.
+    We can use an analogous algorithm for multiple-pass parsing.
+    In particular, we can use two grammars, one fast and simple and the other slower, more complicated, and more accurate.
+    Rather than using the forward and backward probabilities of speech recognition, we use the analogous inside and outside probabilities, /3(NA) and a(NA) respectively.
+    Rememthat ' s the probability that NA is in the correct parse (given, as always, the model and the string).
+    Thus, we run our first pass, computing this expression for each node.
+    We can then eliminate from consideration in our later passes all nodes for which the probability of being in the correct parse was too small in the first pass.
+    Of course, for our second pass to be more accurate, it will probably

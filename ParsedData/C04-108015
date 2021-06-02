@@ -1,0 +1,8 @@
+usly mentioned, we train the transition model until it reaches convergence on a heldout set.
+			We then use this model, keeping it fixed, to train the lexical probabilities, until they eventually converge on heldout data.
+			5.3 Results.
+			We implemented this technique for the Kupiec, Merialdo and Contextualized HMM taggers.
+			From our training data, we were able to extract data for on the order of 10,000 unique unambiguous tag sequences which were then be used for better initializing the state transition probabilities.
+			As shown in Table 2, this method improved tagging accuracy of the Merialdo and contextual taggers over traditional simultaneous HMM training, reducing error by 0.4 in the case of Merialdo and 0.7 for the contextual HMM part-of-speech tagger.
+			HMM Tagger Simultaneous Model Training Sequential Model Training Merialdo 93.9 94.3 Contextualized 94.0 94.7 Kupiec 95.9 95.9 Table 2: Effects of HMM Training on Tagger Accuracy In this paradigm, tagging accuracy of the Kupiec HMM did not change.
+	

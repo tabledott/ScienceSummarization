@@ -1,0 +1,11 @@
+ed baseline and ASO in the case where we have no labeled data in the target domain.
+    Section 7.2 gives results for the case where we have some limited data in the target domain.
+    In this case, we use classifiers as features as described in Florian et al. (2004).
+    Finally, we show in Section 7.3 that our SCL PoS tagger improves the performance of a dependency parser on the target domain.
+    For the results in this section, we trained a structural correspondence learner with 100,000 sentences of unlabeled data from the WSJ and 100,000 sentences of unlabeled biomedical data.
+    We use as pivot features words that occur more than 50 times in both domains.
+    The supervised baseline does not use unlabeled data.
+    The ASO baseline is an implementation of Ando and Zhang (2005b).
+    It uses 200,000 sentences of unlabeled MEDLINE data but no unlabeled WSJ data.
+    For ASO we used as auxiliary problems words that occur more than 500 times in the MEDLINE unlabeled data.
+    Figure 5(a) plots the accuraci

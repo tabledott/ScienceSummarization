@@ -1,0 +1,11 @@
+rated by at most N intervening words.
+    We collect the intervening words between two named entities for each co-occurrence.
+    These words, which are stemmed, could be regarded as the context of the pair of named entities.
+    Different orders of occurrence of the named entities are also considered as different contexts.
+    For example, and are collected as different contexts, where and represent named entities.
+    Less frequent pairs of NEs should be eliminated because they might be less reliable in learning relations.
+    So we have set a frequency threshold to remove those pairs.
+    We adopt a vector space model and cosine similarity in order to calculate the similarities between the set of contexts of NE pairs.
+    We only compare NE pairs which have the same NE types, e.g., one PERSON &#8211; GPE pair and another PERSON &#8211; GPE pair.
+    We define a domain as a pair of named entity types, e.g., the PERSON-GPE domain.
+    For example, we have to detect relations between PERSON and GPE in the PER

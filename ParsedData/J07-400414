@@ -1,0 +1,6 @@
+s a global model, in which a single log-linear model is defined over the complete space of attribute&#8211;value structures.
+    Abney&#8217;s motivation for using log-linear models is to overcome various problems in applying models based on PCFGs directly to attributevalue grammars.
+    A further motivation for using global models is that these do not suffer from the label bias problem (Lafferty, McCallum, and Pereira 2001), which is a potential problem for Ratnaparkhi&#8217;s approach.
+    Abney defines the following model for a syntactic analysis w: where fi(w) is a feature, or feature function, and &#946;i is its corresponding weight; Z is a normalizing constant, also known as the partition function.
+    In much work using loglinear models in NLP, including Ratnaparkhi&#8217;s, the features of a model are indicator functions which take the value 0 or 1.
+    However, in Abney&#8217;s models, and in the models used in this article, the feature functions are integer valued and count the number of times some 

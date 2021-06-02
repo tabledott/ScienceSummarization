@@ -1,0 +1,6 @@
+ntropies, because HI(s)&#8722;HN(s) is just a length-normalized version of log(P(s|I)) &#8722; log(P(s|N)), with the sign reversed.
+    The reason that we need to normalize for length is that the value of log(P(s|I)) &#8722; log(P(s|N)) tends to correlate very strongly with text segment length.
+    If the candidate text segments vary greatly in length&#8212;e.g., if we partition N into sentences&#8212; this correlation can be a serious problem.
+    We estimated this effect on a 1000-sentence sample of our experimental data described below, and found the correlation between sentence log probability difference and sentence length to be r = &#8722;0.92, while the cross-entropy difference was almost uncorrelated with sentence length (r = 0.04).
+    Hence, using sentence probability ratios or log probability differences as our scoring function would result in selecting disproportionately very short sentences.
+    We tested this in an experiment not described here in detail, and found it not to be significantly bet

@@ -1,0 +1,9 @@
+ue described by Collins (2002) yields a reasonable model.
+    On the Chinese NIST data, however, where almost no alignment is in A1-1, the update rule from Equation (2) is completely unstable, and even the averaged model does not yield high-quality results.
+    We instead use a variant of MIRA similar to Chiang et al. (2008).
+    First, rather than update towards the hand-labeled alignment a*, we update towards an alignment which achieves minimal loss within the family.4 We call this bestin-class alignment a*&#65533;.
+    Second, we perform lossaugmented inference to obtain a.
+    This yields the modified QP, where a&#65533; = arg max aEA wt &#183; O(x, a) + AL(a, a*&#65533;) By setting A = 0, we recover the MIRA update from Equation (2).
+    As A grows, we increase our preference that a&#65533; have high loss (relative to a*&#65533;) rather than high model score.
+    With this change, MIRA is stable, but still performs suboptimally.
+    The reason is that initially the score for all alignments is low, so we 

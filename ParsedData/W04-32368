@@ -1,0 +1,8 @@
+word &#8220;&#24052;&#36187;&#32599;&#32435;&#8221;, then &#8220;&#24052;&#36187; &#32599;&#32435;&#8221; will be re-segmented as &#8220;&#24052;&#36187;&#32599;&#32435; &#8221;.
+    To evaluate the accuracy of our word segmenter, we carried out 10-fold cross validation (CV) on the 250K-word Penn Chinese Treebank (CTB) (Xia et al., 2000) version 3.0.
+    The Java opennlp maximum entropy package from sourceforge1 was used in our implementation, and training was done with a feature cutoff of 2 and 100 iterations.
+    The accuracy of word segmentation is measured by recall (R), precision (P), and Fmeasure (2RP /(R + P) ).
+    Recall is the proportion of correctly segmented words in the gold-standard segmentation, and precision is the proportion of correctly segmented words in word segmenter&#8217;s output.
+    Figure 1 gives the word segmentation Fmeasure of our word segmenter based on 10-fold CV on the 250K-word CTB.
+    Our word segmenter achieves an average F-measure of 95.1%.
+    This accuracy compares favor

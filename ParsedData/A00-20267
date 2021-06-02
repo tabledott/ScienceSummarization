@@ -1,0 +1,6 @@
+f features in a maximum entropy probability model, and a highly pruned search procedure attempts to find the best scoring word sequence according to the model.
+    The probability model in NLG2 is a conditional distribution over V U * stop*, where V is the generation vocabulary and where *stop* is a special &amp;quot;stop&amp;quot; symbol.
+    The generation vocabulary V consists of all the words seen in the training data.
+    The form of the maximum entropy probability model is identical to the one used in (Berger et al., 1996; Ratnaparkhi, 1998): where wi ranges over V U *stop* and {wi-i wi-2, attri} is the history, where wi denotes the ith word in the phrase, and attri denotes the attributes that remain to be generated at position i in the phrase.
+    The h, where f3 (a, b) E {0,1}, are called features and capture any information in the history that might be useful for estimating P(wt iwi-1, wi-2, attri).
+    The features used in NLG2 are described in the next section, and the feature weights ai, obtained 

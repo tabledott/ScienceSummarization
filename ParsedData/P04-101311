@@ -1,0 +1,6 @@
+s analogous to the hidden state of a Hidden Markov Model.
+    As long as the hidden representation for position i &#8722; 1 is always used to compute the hidden representation for position i, any information about the entire sequence could be passed from hidden representation to hidden representation and be included in the hidden representation of that sequence.
+    When these representations are then used to estimate probabilities, this property means that we are not making any a priori hard independence assumptions (although some independence may be learned from the data).
+    The difference between SSNs and most other recurrent neural network architectures is that SSNs are specifically designed for processing structures.
+    When computing the history representation h(d1,..., di&#8722;1), the SSN uses not only the previous history representation h(d1,..., di&#8722;2), but also uses history representations for earlier positions which are particularly relevant to choosing the next parser decision di.
+    Thi

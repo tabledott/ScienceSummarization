@@ -1,0 +1,8 @@
+ng the exact best alignment.
+    Instead we use an incremental beam search, combined with a node ordering heuristic, to do approximate global search in the space of possible alignments.
+    We have experimented with several alternative search techniques, and found that the solution quality is not very sensitive to the specific search procedure used.
+    Our scoring measure is designed to favor alignments which align semantically similar subgraphs, irrespective of polarity.
+    For this reason, nodes receive high alignment scores when the words they represent are semantically similar.
+    Synonyms and antonyms receive the highest score, and unrelated words receive the lowest.
+    Our hand-crafted scoring metric takes into account the word, the lemma, and the part of speech, and searches for word relatedness using a range of external resources, including WordNet, precomputed latent semantic analysis matrices, and special-purpose gazettes.
+    Alignment scores also incorporate local edge scores, which are based 

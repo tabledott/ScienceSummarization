@@ -1,0 +1,9 @@
+ables in &#946; must be renamed before function application takes place.
+    Each non-terminal Aj in &#946; is followed by a list of arguments, xj _ (xj1, ... , xjkj ).
+    During parsing, Aj must be rewritten by a &#955;-function fj of arity kj.
+    Like SCFG, a derivation starts with a pair of co-indexed start symbols and ends when all nonterminals have been rewritten.
+    To compute the yield of a derivation, each fj is applied to its corresponding arguments xj to obtain an MR string free of &#955;operators with logical variables properly named.
+    As a concrete example, Figure 2(b) shows an MR parse tree that corresponds to the English parse, [What is the [smallest [state] [by area]]], based on the A-SCFG rules in Figure 3.
+    To compute the yield of this MR parse tree, we start from the leaf nodes: apply Ax1.state(x1) to the argument (x1), and Ax1.Ax2.area(x1,x2) to the arguments (x1, x2).
+    This results in two MR strings: state(x1) and area(x1,x2).
+    Substituting these MR strings for the FORM nont

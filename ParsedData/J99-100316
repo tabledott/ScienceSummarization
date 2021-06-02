@@ -1,0 +1,10 @@
+ of the bitext space to search for the next chain.
+    SIMR employs a simple heuristic to select regions of the bitext space to search.
+    To a first approximation, true bitext maps are monotonically increasing functions.
+    This means that if SIMR accepts one chain, it should look for others either above and to the right or below and to the left of the one it has just found.
+    All SIMR needs is a place to start the trace, and a good place to start is at the beginning.
+    Since the origin of the bitext space is always a TPC, the first search rectangle is anchored at the origin.
+    Subsequent search rectangles are anchored at the top right corner of the previously found chain, as shown in Figure 2.
+    The expanding rectangle search strategy makes SIMR robust in the face of TBM discontinuities.
+    Figure 2 shows a segment of the TBM that contains a vertical gap (an omission in the text on the x-axis).
+    As the search rectangle grows, it will eventually intersect with the TBM, even if the discontinuity

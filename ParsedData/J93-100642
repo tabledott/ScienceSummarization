@@ -1,0 +1,7 @@
+ne starts at the root, and follows the branch corresponding to its first character to another node.
+    From there, the branch for the second character is followed to a third node, and so on, until either the whole string has been matched, or it has been discovered not to be in the set.
+    If it is in the set, then the node reached after matching its last character contains whatever information the structure contains for it.
+    The economy of the scheme lies in the fact that a node containing information about a string also serves as a point on the way to longer strings of which the given one is a prefix.
+    In this application, two items of information are stored with a string, namely the number of textual words in which it occurs as a prefix and as a suffix.
+    There is a function from potential break points in words to numbers whose value is maximized to choose the best point at which to break.
+    If p and s are the potential prefix and suffix, respectively, and P(p) and S(s) are the number of words i

@@ -1,0 +1,7 @@
+ The paraphrase probability (as above) combined with the language model probability calculated for the sentence with the phrase replaced with the paraphrase.
+    3.
+    Extraction Constraints &#8211; This condition selected the best paraphrase according to Equation 10.
+    It chooses the single best paraphrase over all labels.
+    Conditions 3 and 5 only apply the syntactic constraints at the phrase extraction stage, and do not require that the paraphrase have the same syntactic label as the phrase in the sentence that it is being subtituted into. corresponds to Equation 8, which selects the highest probability paraphrase which matches at least one of the syntactic labels of the phrase in the test sentence.
+    Conditions 5&#8211;8 apply the syntactic constraints both and the phrase extraction and at the substitution stages. condition corresponds to Equation 9, which averages over all of the syntactic labels for the phrase in the sentence, instead of choosing the single one which maximizes the probability.
+  

@@ -1,0 +1,7 @@
+t does not actively steer the bootstrapping in a more promising direction.
+    A more intelligent way to handle multiple categories is to incorporate knowledge about other categories directly into the scoring function.
+    We modified Basilisk&#8217;s scoring function to prefer words that have strong evidence for one category but little or no evidence for competing categories.
+    Each word wi in the candidate word pool receives a score for category ca based on the following formula: where AvgLog is the candidate scoring function used previously by Basilisk (see Equation 3) and the max function returns the maximum AvgLog value over all competing categories.
+    For example, the score for each candidate LOCATION word will be its AvgLog score for the LOCATION category minus its maximum AvgLog score for all other categories.
+    A word is ranked highly only if it has a high score for the targeted category and there is little evidence that it belongs to a different category.
+    This has the effect of steering th

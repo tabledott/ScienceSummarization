@@ -1,0 +1,8 @@
+training data.
+    For the same reasons, the context only model is also static.
+    In this case there is a possible bootstrapping path using alternating left and right context to expand coverage to new contexts, but this tends to be not robust and was not pursued.
+    Interestingly, recall for morphology only is typically much higher than in the context only case.
+    The reason for this is that the morphology models are full hierarchically smoothed character tries rather than word token tries, and hence have much denser initial statistics for small training data sets, proving greater partial matching potential for previously unseen words.
+    In an effort to test the contribution of the full iterative boostrapping, the &amp;quot;context and morphology only&amp;quot; results , are based on the combination of all 4 tries, but Without any bootstrapping.
+    Thus they are trained exclusively on the 150-300 training examples.
+    Performance for the combined sources is in all cases greater than for the morpholog

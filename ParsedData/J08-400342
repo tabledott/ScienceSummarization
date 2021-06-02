@@ -1,0 +1,7 @@
+ = ({0,1, ... , n}, 0), satisfies ROOT, SINGLEHEAD, and ACYCLICITY, and that none of the four transitions may lead to a violation of these constraints.
+    (The transitions SHIFT&#955; and NO-ARCn do not modify the graph at all, and LEFT-ARCnl and RIGHT-ARCnl have explicit preconditions to prevent this.)
+    For completeness, we need to show that for any sentence x and dependency forest Gx = (Vx, Ax) for x, there is a transition sequence C0,m such that Gcm = Gx.
+    Using the same idea as in Proof 1, we prove this by induction on the length JxJ of x = (w0, w1,... , wn).
+    Basis: If JxJ = 1, then the only dependency forest for x is G = ({0}, 0) and Gcm = Gx for C0,m = (cs(x)).
+    Inductive step: Assume that the claim holds if JxJ &lt; p (for some p &gt; 1) and assume that JxJ = p + 1 and Gx = (Vx,Ax) (Vx = {0, 1,...,p}).
+    As in Proof 1, we may now assume that there exists a transition sequence C0,q for the sentence x' = (w0,w1,wp&#8722;1) and subgraph Gx, = (Vx &#8722; {p},A&#8722;p), but the terminal co

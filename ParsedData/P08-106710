@@ -1,0 +1,6 @@
+ng that some features which seem complicated at the first sight are indeed local.
+    For example, the WordEdges feature in Fig.
+    2(c), which classifies a node by its label, span length, and surrounding words, is still local since all these information are encoded either in the node itself or in the input sentence.
+    In contrast, it would become non-local if we replace the surrounding words by surrounding POS 2In case multiple candidates get the same highest F-score, we choose the parse with the highest log probability from the baseline parser to be the oracle parse (Collins, 2000). tags, which are generated dynamically.
+    More formally, we split the feature extractor f = (f1, ... , fd) into f = (fL; fN) where fL and fN are the local and non-local features, respectively.
+    For the former, we extend their domains from parses to hyperedges, where f(e) returns the value of a local feature f E fL on hyperedge e, and its value on a parsey factors across the hyperedges (local productions), and we can pre-c

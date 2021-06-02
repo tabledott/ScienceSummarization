@@ -1,0 +1,7 @@
+ of w appearing as the lith word can be conditioned on the entire history w1, ... , wk-1, the quantity of available training data limits the usable context to about two words but which two?
+    A trigram model chooses wk-1 and wk-2 and works quite well; a model which chose wk-7 and wk-11 would probably work less well.
+    But (Chelba and Jelinek, 1998) chooses the lexical heads of the two previous constituents as determined by a shift-reduce parser, and works better than a trigram model.
+    Thus the (virtual) grammar serves to structure the history so that the two most useful words can be chosen, even though the structure of the problem itself is entirely linear.
+    Similarly, nothing about the parsing problem requires that we construct any structure other than phrase structure.
+    But beginning with (Magerman, 1995) statistical parsers have used bilexical dependencies with great success.
+    Since these dependencies are not encoded in plain phrase-structure trees, the standard approach has been to let the

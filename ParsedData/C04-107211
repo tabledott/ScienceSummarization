@@ -1,0 +1,8 @@
+ighted Longest Common.
+			Subsequence LCS has many nice properties as we have described in the previous sections.
+			Unfortunately, the basic LCS also has a problem that it does not differentiate LCSes of different spatial relations within their embedding sequences.
+			For example, given a reference sequence X and two candidate sequences Y1 and Y2 as follows: X: [A B C D E F G] Y1: [A B C D H I K] Y2: [A H B K C I D] Y1 and Y2 have the same ROUGE-L score.
+			However, in this case, Y1 should be the better choice than Y2 because Y1 has consecutive matches.
+			To improve the basic LCS method, we can simply remember the length of consecutive matches encountered so far to a regular two dimensional dynamic program table computing LCS.
+			We call this weighted LCS (WLCS) and use k to indicate the length of the current consecutive matches ending at words xi and yj.
+			Given two sentences X and Y, the recurrent relations can be written as follows: (1) If xi = yj Then // the length of consecutive matches at // position

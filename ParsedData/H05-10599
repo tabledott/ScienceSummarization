@@ -1,0 +1,11 @@
+?1, ti, ti+1?, ?di?1, di?)
+			{ if (di?1 = L &amp; di = L) return P (ti|ti+1, o); if (di?1 = L &amp; di = R) return P (ti|o); if (di?1 = R &amp; di = L) return P (ti|ti?1ti+1, o); if (di?1 = R &amp; di = R) return P (ti|ti?1, o); } Figure 2: Pseudo-code for bidirectional inference for the first-order conditional markov models.
+			di is the direction of the edge between ti and ti+1.
+			classifier by taking into account the directions of the adjacent edges of the classification target.
+			The second-order case is similar but slightly morecomplex.
+			Figure 3 shows the algorithm.
+			The recur sive function needs to consider the directions of the four adjacent edges of the classification target, and maintain the directions of the two neighboring edgesto enumerate all possible edge directions.
+			In addi tion, the algorithm rules out cycles in the structure.
+			2.2 Decoding with the Easiest-First Strategy.
+			We presented a polynomial time decoding algorithm in the previous section.
+			However, polynomial time is 

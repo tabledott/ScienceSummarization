@@ -1,0 +1,7 @@
+ from Q.
+    Entity z is then associated with a multinomial emission distribution over head words with parameters Oh, which are drawn from a symmetric Dirichlet over possible mention heads with concentration AH.2 Note that here the X for a mention consists only of the mention head H. As we enrich our models, we simultaneously develop an accompanying Gibbs sampling procedure to obtain samples from P(Z|X).3 For now, all heads H are observed and all parameters (Q and 0) can be integrated out analytically: for details see Teh et al. (2006).
+    The only sampling is for the values of Zi,j, the entity index of mention j in document i.
+    The relevant conditional distribution is:4 where Hi,j is the head of mention j in document i.
+    Expanding each term, we have the contribution of the prior: 2In general, we will use a subscripted A to indicate concentration for finite Dirichlet distributions.
+    Unless otherwise specified, A concentration parameters will be set to a&#8722;4 and omitted from diagrams.
+    3One co

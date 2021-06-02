@@ -1,0 +1,8 @@
+word without considering other assignments may not satisfy the main goal of finding a set of phonemes that work together to form a word.
+    A trigram phoneme prediction with constraint satisfaction inference (Van Den Bosch and Canisius, 2006) was proposed to improve on local predictions.
+    From each letter unit, it predicts a trigram class that has the target phoneme in the middle surrounded by its neighboring phonemes.
+    The phoneme sequence is generated in such a way that it satisfies the trigram, bigram and unigram constraints.
+    The overlapping predictions improve letter-to-phoneme performance mainly by repairing imperfect one-to-one alignments.
+    However, the trigram class prediction tends to be more complex as it increases the number of target classes.
+    For English, there are only 58 unigram phoneme classes but 13,005 tri-gram phoneme classes.
+    The phoneme combinations in the tri-gram classes are potentially confusing to the prediction model because the model has more target classes in it

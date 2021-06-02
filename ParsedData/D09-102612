@@ -1,0 +1,6 @@
+ correspondence between the labels and topics, the model can display automatic topical summaries for each label k in terms of the topic-specific distribution &#946;k.
+    Similarly, since the model assigns a label zz to each word wz in the document d automatically, we can now extract portions of the document relevant to each label k (it would be all words wz E w(d) such that zz = k).
+    In addition, we can use the topic distribution &#952;(d) to rank the user specified labels in the order of their relevance to the document, thereby also eliminating spurious ones if necessary.
+    Finally, we note that other less restrictive variants of the proposed L-LDA model are possible.
+    For example, one could consider a version that allows topics that do not correspond to the label set of a given document with a small probability, or one that allows a common background topic in all documents.
+    We did implement these variants in our preliminary experiments, but they did not yield better performance than L-LDA in th

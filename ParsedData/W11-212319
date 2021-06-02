@@ -1,0 +1,9 @@
+t for mid-sentence fragments.
+    Storing state therefore becomes a time-space tradeoff; for example, we store state with partial hypotheses in Moses but not with each phrase.
+    To optimize left-to-right queries, we extend state to store backoff information: where m is the minimal context from Section 4.1 and b is the backoff penalty.
+    Because b is a function, no additional hypothesis splitting happens.
+    As noted in Section 1, our code finds the longest matching entry wnf for query p(wn|s(wn&#8722;1 f ) The probability p(wn|wn&#8722;1 f ) is stored with wnf and the backoffs are immediately accessible in the provided state s(wn&#8722;1 When our code walks the data structure to find wnf , it visits wnn, wnn&#8722;1, ... , wnf .
+    Each visited entry wni stores backoff b(wni ).
+    These are written to the state s(wn1) and returned so that they can be used for the following query.
+    Saving state allows our code to walk the data structure exactly once per query.
+    Other packages walk their respective

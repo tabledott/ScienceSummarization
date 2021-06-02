@@ -1,0 +1,8 @@
+IBM Model 1 (Brown et al., 1993), followed by six iterations of the HMM model (Vogel et al., 1996) in both directions.
+    We then intersect word alignments to generate one-to-one alignments.
+    All of our parsing models are based on the transition-based dependency parsing paradigm (Nivre, 2008).
+    Specifically, all models use an arc-eager transition strategy and are trained using the averaged perceptron algorithm as in Zhang and Clark (2008) with a beam size of 8.
+    The features used by all models are: the part-of-speech tags of the first four words on the buffer and of the top two words on the stack; the word identities of the first two words on the buffer and of the top word on the stack; the word identity of the syntactic head of the top word on the stack (if available).
+    All feature conjunctions are included.
+    For treebanks with non-projective trees we use the pseudo-projective parsing technique to transform the treebank into projective structures (Nivre and Nilsson, 2005).
+    We focus on usi

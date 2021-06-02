@@ -1,0 +1,6 @@
+r aligning words whose POS tags come from the same broad class, e.g., it results in aligning singular and plural nouns, present and past participles, etc.
+    While we did not evaluate the quality of the alignments since they are not in themselves the object of this exercise, they seem to be fairly good.
+    From our training data we estimate a number of conditional probability distributions.
+    These estimated probability distributions are the linear interpolation of the corresponding empirical distributions from the main sub-corpus using various subsets of conditioning variables (e.g., bigram models are mixed with unigram models, etc.) using Chen&#8217;s bucketing scheme Chen and Goodman (1998).
+    As is commonly done in language modelling, the interpolation coefficients are determined by maximizing the likelihood of the held out data counts using EM.
+    Special care was taken to ensure that all distributions over words ranged over (and assigned non-zero probability to) every word that occurred in the tr

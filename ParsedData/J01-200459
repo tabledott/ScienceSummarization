@@ -1,0 +1,8 @@
+extra training beyond that done for parsing.
+    The hope was expressed above that our reported perplexity would be fairly close to the &amp;quot;true&amp;quot; perplexity that we would achieve if the model were properly normalized, i.e., that the amount of probability mass that we lose by pruning is small.
+    One way to test this is the following: at each point in the sentence, calculate the conditional probability of each word in the vocabulary given the previous words, and sum them.'
+    If there is little loss of probability mass, the sum should be close to one.
+    We did this for the first 10 sentences in the test corpus, a total of 213 words (including the end-of-sentence markers).
+    One of the sentences was a failure, so that 12 of the word probabilities (all of the words after the point of the failure) were not estimated by our model.
+    Of the remaining 201 words, the average sum of the probabilities over the 10,000-word vocabulary was 0.9821, with a minimum of 0.7960 and a maximum of 0.9997.
+  

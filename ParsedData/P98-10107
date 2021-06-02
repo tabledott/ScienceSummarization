@@ -1,0 +1,8 @@
+portion of the sentence between the brackets is the candidate (as above), while the portion before and after the candidate is its context.
+    (Although we describe the algorithm here for the general case of unlimited context, for computational reasons our implementation only considers a limited amount of context on either side of the candidate.)
+    This subsection describes how to compute the score of a situated candidate from the training corpus.
+    The idea of the MBSL scoring algorithm is to construct a tiling of subsequences of a situated candidate which covers the entire candidate.
+    We consider as tiles subsequences of the situated candidate which contain a bracket.
+    (We thus consider only tiles within or adjacent to the candidate that also include a candidate boundary.)
+    Each tile is assigned a score based on its occurrence in the training memory.
+    Since brackets correspond to the boundaries of potential target instances, it is important to consider how the bracket positions in the tile c

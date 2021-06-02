@@ -1,0 +1,8 @@
+ performs global inference based on their output rather than formulating a new inference procedure for solving the basic task.
+    Second, the ILP approach supports inference over multiple classifiers, without having to fiddle with special parameterization.
+    Third, it is much more efficient than conditional random fields, especially when long-distance features are utilized (Roth and Yih, 2005).
+    Finally, it is straightforward to create categorical global constraints with ILP; this is done in a declarative manner using inequalities on the assignments to indicator variables.
+    This paper focuses on the first problem, and proposes to model anaphoricity determination and coreference resolution as a joint task, wherein the decisions made by each locally trained model are mutually constrained.
+    The presentation of the ILP model proceeds in two steps.
+    In the first, intermediary step, we simply use ILP to find a global assignment based on decisions made by the coreference classifier alone.
+    The resu

@@ -1,0 +1,6 @@
+ees with different depths are calculated and their arithmetic mean is computed as the syntax tree based metric, which we denote as &#8220;subtree metric&#8221; STM: where D is the maximum depth of subtrees considered, count(t) denotes the number of times subtree t appears in the candidate&#8217;s syntax tree, and countclip(t) denotes the clipped number of times t appears in the references&#8217; syntax trees.
+    Clipped here means that, for a given subtree, the count computed from the hypothesis syntax tree can not exceed the maximum number of times the subtree occurs in any single reference&#8217;s syntax tree.
+    A simple example with one hypothesis and one reference is shown in Figure 2.
+    Setting the maximum depth to 3, we go through the hypothesis syntax tree and compute the fraction of subtrees with different depths.
+    For the 1-depth subtrees, we get S, NP, VP, PRON, V, NP which also appear in the reference syntax tree.
+    Since PRON only occurs once in the reference, its clipped count should be

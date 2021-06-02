@@ -1,0 +1,8 @@
+ns may not impact the overall score if they are left as singletons, which are discarded by our post-processing step.
+    Therefore, our mention detection algorithm focuses on attaining high recall rather than high precision.
+    We achieve our goal based on the list of sieves sorted by recall (from highest to lowest).
+    Each sieve uses syntactic parse trees, identified named entity mentions, and a few manually written patterns based on heuristics and OntoNotes specifications (Hovy et al., 2006; Pradhan et al., 2007).
+    In the first and highest recall sieve, we mark all noun phrase (NP), possessive pronoun, and named entity mentions in each sentence as candidate mentions.
+    In the following sieves, we remove from this set all mentions that match any of the exclusion rules below: of 8 words, e.g., there, ltd., hmm.
+    Note that the above rules extract both mentions in appositive and copulative relations, e.g., [[Yongkang Zhou], the general manager] or [Mr. Savoca] had been [a consultant... ].
+    These r

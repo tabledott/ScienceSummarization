@@ -1,0 +1,10 @@
+all).
+    Because we are dealing with multiple layers, there is an element of overlap involved.
+    Therefore, each of the word-window layers, despite relatively high informativeness on its own, does not cause as much damage when it is absent, since the other layers compensate for the topical and local information.
+    The absence of the word n-gram layer, which provides specific local information, does not make a great impact when the 1w and pg layers are present.
+    Finally, we can see that the extremely sparse dependency layer is detrimental to the multi-layer model as a whole, and its removal increases performance.
+    The sparsity of the data in this layer means that there is often little information on which to base a decision.
+    In these cases, the layer contributes a close-to-uniform estimation of the sense distribution, which confuses the combined model.
+    Other layer combinations obtained similar results.
+    Table 2 (right side) shows the most informative two and three layer combinations.
+    

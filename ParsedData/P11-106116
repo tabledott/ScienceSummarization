@@ -1,0 +1,6 @@
+gurations z for a sentence x, resulting in a non-convex objective.
+    To optimize this function, we used L-BFGS, a quasi-Newton method (Liu and Nocedal, 1989).
+    For English POS tagging, BergKirkpatrick et al. (2010) found that this direct gradient method performed better (&gt;7% absolute accuracy) than using a feature-enhanced modification of the Expectation-Maximization (EM) algorithm (Dempster et al., 1977).8 Moreover, this route of optimization outperformed a vanilla HMM trained with EM by 12%.
+    We adopted this state-of-the-art model because it makes it easy to experiment with various ways of incorporating our novel constraint feature into the log-linear emission model.
+    This feature ft incorporates information from the smoothed graph and prunes hidden states that are inconsistent with the thresholded vector tx.
+    The function A : F &#8212;* C maps from the language specific fine-grained tagset F to the coarser universal tagset C and is described in detail in &#167;6.2: Note that when tx(y) = 1

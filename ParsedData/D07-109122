@@ -1,0 +1,6 @@
+known surface form, on balance it seems to be disadvantage to throw away sur face form information.To overcome this problem, we introduce an al ternative path model: Translation options in this model may come either from the surface form modelor from the lemma/morphology model we just de scribed.
+			For surface forms with rich evidence in the training data, we prefer surface form mappings, and for surface forms with poor or no evidence in the training data we decompose surface forms into lemma and morphology information and map theseseparately.
+			The different translation tables form dif ferent components in the log-linear model, whose weights are set using standard minimum error rate training methods.The alternative path model outperforms the sur face form model with POS LM, with an BLEU scoreof 19.47% vs. 19.05%.
+			The test set has 3276 un known word forms vs 2589 unknown lemmas (out of 26,898 words).
+			Hence, the lemma/morph model is able to translate 687 additional words.
+			6.3 Use of Automatic Word C

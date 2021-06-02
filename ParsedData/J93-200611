@@ -1,0 +1,7 @@
+f a particular tag given the preceding tag, e.g., how likely is the tag VBD on the second word in the above example, given that the previous word was tagged NNS.
+    A tri-tag model predicts the relative likelihood of a particular tag given the two preceding tags, e.g., how likely is the tag RB on the third word in the above example, given that the two previous words were tagged NNS and VBD.
+    While the bi-tag model is faster at processing time, the tri-tag model has a lower error rate.
+    The algorithm for supervised training is straightforward.
+    One counts for each possible pair of tags, the number of times that the pair was followed by each possible third tag.
+    The number of times a given third tag t' occurs after tags 1-1 and t2 divided by the number of times t1 and t2 are followed by any third tag is an estimate of the probability of p(t' I t2, t1).
+    One also estimates from the training data the conditional probability of each particular word given a known tag (e.g., how likely is the word &a

@@ -1,0 +1,6 @@
+uce ac tions can be taken, parsing terminates and the input is rejected.
+			In such cases, the remaining items in S contain partial analyses for contiguous segments of the input.
+			2.2 A Probabilistic LR Model for Dependen cy Parsing In the traditional LR algorithm, parser states are placed onto the stack, and an LR table is consulted to determine the next parser action.
+			In our case, the parser state is encoded as a set of features de rived from the contents of the stack S and queue Q, and the next parser action is determined according to that set of features.
+			In the deterministic case described above, the procedure used for determin ing parser actions (a classifier, in our case) returns a single action.
+			If, instead, this procedure returns a list of several possible actions with corresponding probabilities, we can then parse with a model simi lar to the probabilistic LR models described by Briscoe and Carroll (1993), where the probability of a parse tree is the product of the probabilities of each o

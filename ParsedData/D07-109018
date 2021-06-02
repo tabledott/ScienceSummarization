@@ -1,0 +1,10 @@
+nguage model.
+			from other features) decides which hypotheses to keep in the search graph.
+			When using a distributed language model, the decoder first tentatively extends all current hypotheses, taking note of which n-grams are required to score them.
+			These are queued up for transmission as a batch request.
+			When the scores are returned, the decoder re-visits all of these tentative hypotheses, assigns scores, and re-prunes the searchgraph.
+			It is then ready for the next round of exten sions, again involving queuing the n-grams, waiting for the servers, and pruning.
+			The process is illustrated in Figure 2 assuming a trigram model and a decoder policy of pruning tothe four most promising hypotheses.
+			The four ac tive hypotheses (indicated by black disks) at time t are: There is, There may, There are, and There were.
+			The decoder extends these to form eight new nodes at time t + 1.
+			Note that one of the arcs is labeled ,indicating that no target-language word was gener ated when the source-lang

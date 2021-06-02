@@ -1,0 +1,7 @@
+ 500,000 most frequent words in this corpus.
+    Note that we did not use the English side of the parallel corpus as language model training data.
+    To tune the system parameters we used News Test Set from WMT08 (Callison-Burch et al., 2008), which consists of 2,051 sentence pairs with 43 thousand English words and 46 thousand French words.
+    This is in-domain data that was gathered from the same news sources as the WMT09 test set.
+    The translation scores for four different systems are reported in Table 1.5 Baseline: In this system, we use the GIZA++ toolkit (Och and Ney, 2003), a suffix-array architecture (Lopez, 2007), the SRILM toolkit (Stolcke, 2002), and minimum error rate training (Och, 2003) to obtain word-alignments, a translation model, language models, and the optimal weights for combining these models, respectively.
+    Minimum Bayes Risk Rescoring: In this system, we re-ranked the n-best output of our baseline system using Minimum Bayes Risk (Kumar and Byrne, 2004).
+    We re-score the top 

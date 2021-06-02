@@ -1,0 +1,9 @@
+ of xi (5) tokens in the window c = (xi&#8722;2, xi&#8722;1, xi, xi+1, xi+2) (6) capitalization pattern in the window c (7) conjunction of c and yi&#8722;1.
+    Most NER systems use additional features, such as POS tags, shallow parsing information and gazetteers.
+    We discuss additional features in the following sections.
+    We note that we normalize dates and numbers, that is 12/3/2008 becomes *Date*, 1980 becomes *DDDD* and 212-325-4751 becomes *DDD*-*DDD*-*DDDD*.
+    This allows a degree of abstraction to years, phone numbers, etc.
+    Our baseline NER system uses a regularized averaged perceptron (Freund and Schapire, 1999).
+    Systems based on perceptron have been shown to be competitive in NER and text chunking (Kazama and Torisawa, 2007b; Punyakanok and Roth, 2001; Carreras et al., 2003) We specify the model and the features with the LBJ (Rizzolo and Roth, 2007) modeling language.
+    We now state the four fundamental design decisions in NER system which define the structure of this paper.
+    Key

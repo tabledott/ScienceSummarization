@@ -1,0 +1,8 @@
+ corpus, that are unambiguous in the training corpus.
+    The list comprises the following negation signals: absence, absent, fail, failure, impossible, lack, loss, miss, negative, neither, never, no, none, nor, not, unable, without.
+    Instances with this negation signals are directly assigned their class.
+    The classifier predicts the class of the rest of tokens.
+    In this phase three classifiers predict whether a token is the first token in the scope sequence, the last, or neither.
+    A fourth classifier is a metalearner that uses the predictions of the three classifiers to predict the scope classes.
+    The three object classifiers that provide input to the metalearner were trained using the following machine learning methods: in CRF++-0.51 (Lafferty et al., 2001).
+    CRFs define a conditional probability distribution over label sequences given a particular observation sequence rather than a joint distribution over label and observation sequences, and are reported to avoid the label bias problem of

@@ -1,0 +1,9 @@
+ of English and French strings, and (3) a decoder.
+    The decoder takes a previously unseen sentenceand tries to find the that maximizes P(ef), or equivalently maximizes P(e)P(fe).
+    Brown et al. (1993) introduced a series of TMs based on word-for-word substitution and reordering, but did not include a decoding algorithm.
+    If the source and target languages are constrained to have the same word order (by choice or through suitable pre-processing), then the linear Viterbi algorithm can be applied (Tillmann et al., 1997).
+    If re-ordering is limited to rotations around nodes in a binary tree, then optimal decoding can be carried out by a high-polynomial algorithm (Wu, 1996).
+    For arbitrary word-reordering, the decoding problem is NP-complete (Knight, 1999).
+    A sensible strategy (Brown et al., 1995; Wang and Waibel, 1997) is to examine a large subset of likely decodings and choose just from that.
+    Of course, it is possible to miss a good translation this way.
+    If the decoder returns ebut ther

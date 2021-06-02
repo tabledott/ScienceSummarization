@@ -1,0 +1,11 @@
+o answers for the human metric, in which case the system receives zero points for the question.
+    This occurs 11% of the time in our test corpus.
+    The question is still counted, meaning that the system receives a penalty in these cases.
+    Thus the highest score a system could achieve for HumSent is 89%.
+    Given that our current system can only respond with sentences from the text, this penalty is appropriate.
+    The automated routine for preparing the answer key in AutSent selects as the answer key the sentence(s) with the highest recall (here sentence 1).
+    Thus only sentence 1 would be counted as a correct answer.
+    We have implemented all three metrics.
+    HumSent and AutSent are comparable with human benchmarks, since they provide a binary score, as would a teacher for a student's answer.
+    In contrast, the precision and recall scores of P&amp;R lack such a straightforward comparability.
+    However, word recall from P&amp;R (called AnsWdRecall in Figure 3) closely mimics the scores of Hu

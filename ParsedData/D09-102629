@@ -1,0 +1,7 @@
+istinct words into their respective label vocabularies, so we expect that Labeled-LDA&#8217;s performance as a text classifier would improve on collections with more semantically diverse labels.
+    We also applied our method to text classification on the del.icio.us dataset, where the documents are naturally multiply labeled (more than 89%) and where the tags are less inherently similar than in the Yahoo subcategories.
+    Therefore we expect Labeled LDA to do better credit assignment on this subset and consequently to show improved performance as a classifier, and indeed this is the case.
+    We evaluated L-LDA and multiple one-vs-rest SVMs on 4000 documents with the 20 tag subset described in Section 3.
+    L-LDA and multiple one-vs-rest SVMs were trained on the first 80% of documents and evaluated on the remaining 20%, with results averaged across 10 random permutations of the dataset.
+    The results are shown in Table 4.
+    We tuned the SVMs&#8217; shared cost parameter C(= 10.0) and selected raw term 

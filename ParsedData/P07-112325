@@ -1,0 +1,9 @@
+ shows the performance of the two classifiers on the MPQA corpus as reported in (Wiebe and Riloff, 2005).
+    Note that 55% of the sentences in the MPQA corpus are subjective &#8211; which represents the baseline for this data set.
+    The two OpinionFinder classifiers are used to label the training corpus.
+    After removing the 504 test sentences, we are left with 10,628 sentences that are automatically annotated for subjectivity.
+    Table 6 shows the number of subjective and objective sentences obtained with each classifier.
+    Next, the OpinionFinder annotations are projected onto the Romanian training sentences, which are then used to develop a probabilistic classifier for the automatic labeling of subjectivity in Romanian sentences.
+    Similar to, e.g., (Pang et al., 2002), we use a Naive Bayes algorithm trained on word features cooccurring with the subjective and the objective classifications.
+    We assume word independence, and we use a 0.3 cut-off for feature selection.
+    While recent work has 

@@ -1,0 +1,7 @@
+en in Table 2 are inaccurate, so whenever the estimate of m is less than c we replace m by c in this calculation).
+    This pruning removes approximately 2,000 patterns, leaving 9,000 patterns.
+    The match value is obtained by making a second pre-order traversal through a version of the training data from which empty nodes are removed.
+    It turns out that subtle differences in how the match value is obtained make a large difference to the algorithm&#8217;s performance.
+    Initially we defined the match value of a pattern to be the number of subtrees that match that pattern in the training corpus.
+    But as explained above, the earlier substitution of a deeper pattern may prevent smaller patterns from applying, so this simple definition of match value undoubtedly over-estimates the number of times shallow patterns might apply.
+    To avoid this over-estimation, after we have matched all patterns against a node of a training corpus tree we determine the correct pattern (if any) to apply in order to recove

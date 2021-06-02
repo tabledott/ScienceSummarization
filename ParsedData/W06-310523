@@ -1,0 +1,10 @@
+ very spiked probabilities in OEM, but also boosts the probability of short phrases to encourage their use.
+    With k = 2.5, this smoothing approach improves BLEU by .007 using 25k training sentences, nearly equaling the heuristic (table 1).
+  
+  
+    Re-estimating phrase translation probabilities using a generative model holds the promise of improving upon heuristic techniques.
+    However, the combinatorial properties of a phrase-based generative model have unfortunate side effects.
+    In cases of true ambiguity in the language pair to be translated, parameter estimates that explain the ambiguity using segmentation variables can in some cases yield higher data likelihoods by determinizing phrase translation estimates.
+    However, this behavior in turn leads to errors at decoding time.
+    We have also shown that some modest benefit can be obtained from re-estimation through the blunt instrument of interpolation.
+    A remaining challenge is to design more appropriate statistical models which tie segmenta

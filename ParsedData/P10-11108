@@ -1,0 +1,5 @@
+e top two trees on stack, as well as the tags of their left- and rightmost children, plus the root tag of the third tree s2, and finally the word and tag of the queue head q0 and the state form &#8467; : hi, j, sd...s0i: (c, v, &#960;) &#8467;: step; c, v: prefix and inside costs; &#960;: predictor states where &#958; = w &#183; fsh(j, sd...s0), and &#948; = &#958;&#8242; + &#955;, with &#958;&#8242; = w &#183; fsh(i, s&#8242;d...s&#8242;0) and &#955; = w &#183; ffex (j, sd...s0). tag of the next word q1.
+    Since the queue is static information to the parser (unlike the stack, which changes dynamically), we can use j to replace features from the queue.
+    So in general we write if the feature window looks at top d + 1 trees on stack, and where fz(sz) extracts kernel features from tree sz (0 &#8804; i &#8804; d).
+    For example, for the full model in Table 1(a) we have where d = 2, f2(x) = x.t, and f1(x) = f0(x) = (x.w, x.t, x.lc.t, x.rc.t) (see Table 1(c)).
+    Now that we have the kernel feature function

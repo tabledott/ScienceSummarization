@@ -1,0 +1,9 @@
+rejection confidence to be larger when the mistake y is more severe, i.e.
+    L(xi, yi, y) is large.
+    We can express this desideratum as an optimization problem: where Li,y = L(xi, yi, y).
+    This quadratic program aims to separate each y &#8712; G(xi) from the target parse yi by a margin that is proportional to the loss L(xi, yi, y).
+    After a standard transformation, in which maximizing the margin is reformulated as minimizing the scale of the weights (for a fixed margin of 1), we get the following program: The addition of non-negative slack variables Si allows one to increase the global margin by paying a local penalty on some outlying examples.
+    The constant C dictates the desired trade-off between margin size and outliers.
+    Note that this formulation has an exponential number of constraints, one for each possible parse y for each sentence i.
+    We address this issue in section 4.
+    In SVMs, the optimization problem is solved by working with the dual of a quadratic program analogous to Eq.

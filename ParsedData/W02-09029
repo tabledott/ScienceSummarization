@@ -1,0 +1,10 @@
+parison is done by adding all absolute differences of all components.
+    Fung and Yee [1998] propose a similar approach: They count how often another word occurs in the same sentence as the target word.
+    The counts are then normalized by a using the tf/idf method which is often used in information retrieval [Jones, 1979].
+    The need for translating the context poses a chicken-and-egg problem: If we already have a translation lexicon we can translate the context vectors.
+    But we can only construct a translation lexicon with this approach if we are already able to translate the context vectors.
+    Theoretically, it is possible to use these methods to build a translation lexicon from scratch [Rapp, 1995].
+    The number of possible mappings has complexity O(n!
+    ), and the computing cost of each mapping has quadratic complexity O(n2).
+    For a large number of words n &#8211; at least more than 10,000, maybe more than 100,000 &#8211; the combined complexity becomes prohibitively expensive.
+    Becaus

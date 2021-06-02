@@ -1,0 +1,9 @@
+7 first guesses the lexical head of a constituent and then, given the head, guesses the PCFG rule used to expand the constituent in question.
+    In contrast, the current parser first guesses the head's pre-terminal, then the head, and then the expansion.
+    It turns out that usefulness of this process had already been discovered by Collins [10], who in turn notes (personal communication) that it was previously used by Eisner [12].
+    However, Collins in [10] does not stress the decision to guess the head's pre-terminal first, and it might be lost on the casual reader.
+    Indeed, it was lost on the present author until he went back after the fact and found it there.
+    In Figure 2 we show that this one factor improves performance by nearly 2%.
+    It may not be obvious why this should make so great a difference, since most words are effectively unambiguous.
+    (For example, part-ofspeech tagging using the most probable preterminal for each word is 90% accurate [8].)
+    We believe that two factors contri

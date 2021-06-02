@@ -1,0 +1,7 @@
+alculated with respect to the K current clusters and a further ground cluster of all unclassified words: each distribution therefore has (K + 1)2 parameters.
+    For every word that occurs more than 50 times in the corpus, I calculate the context distribution, and then find the cluster with the lowest KL divergence from that distribution.
+    I then sort the words by the divergence from the cluster that is closest to them, and select the best as being the members of the cluster for the next iteration.
+    This is repeated, gradually increasing the number of words included at each iteration, until a high enough proportion has been clustered, for example 80%.
+    After each iteration, if the distance between two clusters falls below a threshhold value, the clusters are merged, and a new cluster is formed from the most frequent unclustered word.
+    Since there will be zeroes in the context distributions, they are smoothed using Good-Turing smoothing(Good, 1953) to avoid singularities in the KL divergence.
+    A

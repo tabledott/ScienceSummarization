@@ -1,0 +1,8 @@
+ration of this bias would improve performance.
+    On the other hand, the SSN may have no trouble in discovering the concept of lexical head itself, in which case incorporating this bias would have little effect.
+    To investigate this issue, we trained several SSN parsers with an explicit representation of phrasal head.
+    Results are shown in the lower panel of table 2.
+    The first model (head identification) includes a fifth type of parser action, head attach, which is used to identify the head child of each node in the tree.
+    Although incorrectly identifying the head child does not effect the performance for these evaluation measures, forcing the parser to learn this identification results in some loss in performance, as compared to the SSN-Freq 200 model.
+    This is to be expected, since we have made the task harder without changing the inductive bias to exploit the notion of head.
+    The second model (head word) uses the identification of the head child to determine the lexical head of the phra

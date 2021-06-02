@@ -1,0 +1,7 @@
+only entries which are part of a derivation spanning the whole sentence are relevant.
+    These entries can be found by traversing the chart top-down, starting with the entries which span the sentence.
+    Individual entries in a cell are the conjunctive nodes, which are either (lexical category, word) pairs at the leaves, or have been obtained by combining two equivalence classes (or applying a unary rule to an equivalence class).
+    The equivalence classes of individual entries are the disjunctive nodes.
+    And finally, the equivalence classes at the roots of the CCG derivations are the root disjunctive nodes.
+    For each feature function defined over parses (see Section 4) there is a corresponding feature function defined over conjunctive nodes, that is, for each fi : &#8486; -4 N there is a corresponding fi : C -4 N which counts the number of times feature fi appears on a particular conjunctive node.
+    The value of fi for a parse is then the sum of the values offi for each conjunctive node in the par

@@ -1,0 +1,10 @@
+on.
+    For comparison, we also included the results from IBM Model 1 and Model 4.
+    The numbers of iterations for the training of the IBM models were chosen to be the turning points of AER changing on the cross-validation data.
+  
+  
+    As shown by the numbers in Table 1, the full lexicalized model produced promising alignment results on sentence pairs that have no more than 15 words on both sides.
+    However, due to its prohibitive O(n8) computational complexity, our C++ implementation of the unpruned lexicalized model took more than 500 CPU hours, which were distributed over multiple machines, to finish one iteration of training.
+    The number of CPU hours would increase to a point that is unacceptable if we doubled the average sentence length.
+    Some type of pruning is a must-have.
+    Our pruned version of LITG controlled the running time for one iteration to be less than 1200 CPU hours, despite the fact that both the number of sentences and the average length of sentences were more than doubled.

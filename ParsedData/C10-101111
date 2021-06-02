@@ -1,0 +1,8 @@
+oops of Algorithm 1.
+			We had to measure the times for the feature extractionin the parsing algorithm, since in the training al gorithm, the time can only be measured together with the time for storing the features.
+			The table contains additional figures for the total training time and parsing scores.1 The parsing algorithm itself only required, to our surprise, 12.5 ms (tp) for a English sentence 1We use a Intel Nehalem i7 CPU 3.33 Ghz.
+			With turbo mode on, the clock speed was 3.46 Ghz.
+			91 on average, while the feature extraction needs 1223 ms. To extract the features takes about100 times longer than to build a projective dependency tree.
+			The feature extraction is already implemented efficiently.
+			It uses only numbers to rep resent features which it combines to a long integer number and then maps by a hash table2 to a 32bit integer number.
+			The parsing algorithm uses the integer number as an index to access the weights in the vectors ??w and ??v .The complexity of the parsing algorithm is usu 

@@ -1,0 +1,12 @@
+ (1993) and Dagan, Church, and Gale (1993).
+    Later, Fung and McKeown (1994) improved on K-Vec by employing relative position offsets, instead of a fixed model of co-occurrence.
+    This strategy made the algorithm more robust for noisier bitexts.
+  
+  
+    SIMR borrows several insights from previous work.
+    Like the algorithms of Gale and Church (1991a) and Brown, Lai, and Mercer (1991), SIMR exploits the correlation between the lengths of mutual translations.
+    Like char_align (Church 1993), SIMR infers bitext maps from likely points of correspondence between the two texts, points that are plotted in a two-dimensional space of possibilities.
+    Unlike previous methods, SIMR greedily searches for only a small chain of correspondence points at a time.
+    The search begins in a small search rectangle in the bitext space, whose diagonal is parallel to the main diagonal.
+    The search for each chain alternates between a generation phase and a recognition phase.
+    In the generation phase, SIMR generate

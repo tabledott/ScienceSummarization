@@ -1,0 +1,6 @@
+ is scored based only on the set of instances that have been generated and identified as &#8220;trusted&#8221; at that point in the bootstrapping process.
+    To use productivity information, we must adopt a different procedure because we need to know not only who generated each candidate, but also the complete set of instances that the candidate itself can generate.
+    We adopted a two-step process that can use both popularity and productivity information in a hyponym pattern linkage graph to assess the quality of candidate instances.
+    First, we perform reckless bootstrapping for a class name and seed until no new instances are generated.
+    Second, we assign a score to each node in the graph using a scoring function that takes into account both the in-degree (popularity) and out-degree (productivity) of each node.
+    We experimented with four different scoring functions, some of which were motivated by work on word sense disambiguation to identify the most &#8220;important&#8221; node in a graph conta

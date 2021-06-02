@@ -1,0 +1,6 @@
+TRAND&#8217;s structure-based filter consistently throws out around one-third of the candidate document pairs it has found in order to maintain its precision in the 98&#8211;100% range.
+    It does so by respecting parameter thresholds that were determined manually using English-Spanish development data; the same parameters seem to have worked reasonably well not only for EnglishSpanish, but also for English-French and English-Chinese pairs.
+    It is possible, however, that classification can be tuned for better performance.
+    In order to investigate this possibility, we took a machine-learning approach: We used the four structural values (dp, n, r, and p) as features characterizing each document pair and treated the problem as a binary decision task, using supervised learning to make an attempt at better predicting human judgments.
+    Using the English-French data, we constructed a ninefold cross-validation experiment using decision tree induction to predict the class assigned by the human judges.
+    Th

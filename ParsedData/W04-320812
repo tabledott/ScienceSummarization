@@ -1,0 +1,11 @@
+are calculated for all possible Chinese-English document pairs, and bilingual documents with similarities above a certain threshold are considered to be comparable.
+    For very-non-parallel corpora, this document-matching step also serves as topic alignment.
+    Again based on the &#8220;find-topic-extract-sentence&#8221; principle, we extract parallel sentences from the matched English and Chinese documents.
+    Each sentence is again represented as word vectors.
+    For each extracted document pair, pair-wise cosine similarities are calculated for all possible Chinese-English sentence pairs.
+    Sentence pairs above a set threshold are considered parallel and extracted from the documents.
+    Sentence similarity is based on the number of words in the two sentences that are translations of each other.
+    The better our bilingual lexicon is, the more accurate the sentence similarity will be.
+    In the following section, we discuss how to find new word translations.
+    5.4.
+    EM lexical learning from mat

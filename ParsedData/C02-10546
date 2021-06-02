@@ -1,0 +1,19 @@
+zes a sen tence into words and adds POS tags.
+			ChaSen uses about 90 POS tags such as common-noun and location-name.
+			Since most unknown words are proper nouns, ChaSen?s parameters for unknownwords are modified for better results.
+			Then, a char acter type tag is added to each word.
+			It uses 17character types such as all-kanji and small integer.
+			See Isozaki (2001) for details.
+			Now, Japanese NE recognition is solved by theclassification of words (Sekine et al, 1998; Borth wick, 1999; Uchimoto et al, 2000).
+			For instance, the words in ?President George Herbert Bush saidClinton is . . .
+			are classified as follows: ?President?
+			= OTHER, ?George?
+			= PERSON-BEGIN, ?Her bert?
+			= PERSON-MIDDLE, ?Bush?
+			= PERSON-END, ?said?
+			= OTHER, ?Clinton?
+			= PERSON-SINGLE, ?is? = OTHER.
+			In this way, the first word of a person?s name is labeled as PERSON-BEGIN.
+			The last word is labeled as PERSON-END.
+			Other words in the nameare PERSON-MIDDLE.
+			If a person?s name is expressed by a single word, 

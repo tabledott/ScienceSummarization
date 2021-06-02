@@ -1,0 +1,10 @@
+   Our syntactic features are similar to those used in Snow et al. (2005).
+    They consist of the conjunction of: A window node is a node connected to one of the two entities and not part of the dependency path.
+    We generate one conjunctive feature for each pair of left and right window nodes, as well as features which omit one or both of them.
+    Thus each syntactic row in Table 3 represents a single syntactic feature.
+    Every feature contains, in addition to the content described above, named entity tags for the two entities.
+    We perform named entity tagging using the Stanford four-class named entity tagger (Finkel et al., 2005).
+    The tagger provides each word with a label from {person, location, organization, miscellaneous, none}.
+    Rather than use each of the above features in the classifier independently, we use only conjunctive features.
+    Each feature consists of the conjunction of several attributes of the sentence, plus the named entity tags.
+    For two features to match, all of the

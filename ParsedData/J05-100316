@@ -1,0 +1,8 @@
+rary features hk, without having to worry about formulating a derivation that included these features.
+    To take a concrete example, consider part-of-speech tagging using a hidden Markov model (HMM).
+    We might have the intuition that almost every sentence has at least one verb and therefore that sequences including at least one verb should have increased scores under the model.
+    Encoding this constraint in a compact way in an HMM takes some ingenuity.
+    The obvious approach&#8212;to add to each state the information about whether or not a verb has been generated in the history&#8212;doubles The sequence of decisions involved in generating the right-hand side of a lexical rule. the number of states (and parameters) in the model.
+    In contrast, it would be trivial to implement a feature hk(x,y) which is 1 if y contains a verb, 0 otherwise.
+    We now turn to machine-learning methods for the ranking task.
+    In this section we review two methods for binary classification problems: logistic regressio

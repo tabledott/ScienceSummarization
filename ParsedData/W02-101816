@@ -1,0 +1,7 @@
+ of operations that modify locally the aligment/translation built until a given time.
+    These operations replace the English side of an alignment with phrases of different probabilities, merge and break existing concepts, and swap words across concepts.
+    The probability p(E) is computed using a simple trigram language model that was trained using the CMU Language Modeling Toolkit (Clarkson and Rosenfeld, 1997).
+    The language model is estimated at the word (not phrase) level.
+    Figure 3 shows the steps taken by our decoder in order to find the translation of sentence &#8220;je vais me arr&#710;eter l`a .&#8221; Each intermediate translation in Figure 3 is preceded by its probability and succeded by the operation that changes it to yield a translation of higher probability.
+    5 Evaluation To evaluate our system, we trained both Giza (IBM Model 4) (Al-Onaizan et al., 1999) and our joint probability model on a French-English parallel corpus of 100,000 sentence pairs from the Hansard corpus.
+    The se

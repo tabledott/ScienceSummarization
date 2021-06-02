@@ -1,0 +1,10 @@
+lly trusts the labels of entity classifier, and only the relation predictions may be different from the basic relation classifier.
+    In other words, LP is able to enhance the performance of entity classification, which is impossible for pipeline.
+    The final approach, Omniscience, tests the conceptual upper bound of this entity/relation classification problem.
+    It also trains the two classifiers separately as the basic approach.
+    However, it assumes that the entity classifier knows the correct relation labels, and similarly the relation classifier knows the right entity labels as well.
+    This additional information is then used as features in training and testing.
+    Note that this assumption is totally unrealistic.
+    Nevertheless, it may give us a hint that how much a global inference can achieve.
+    Tables 2 &amp; 3 show the performance of each approach in F&#946;=1 using 5-fold cross-validation.
+    The results show that LP performs consistently better than basic and pipeline, both in entit

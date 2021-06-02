@@ -1,0 +1,7 @@
+passes over the input string, Nivre and Scholz use a simplified version of the algorithm described here, which handles only (labeled or unlabeled) dependency structures.
+    Additionally, our parser is in some ways similar to the maximum-entropy parser of Ratnaparkhi (1997).
+    Ratnaparkhi&#8217;s parser uses maximumentropy models to determine the actions of a shiftreduce-like parser, but it is capable of pursuing several paths and returning the top-K highest scoring parses for a sentence.
+    Its observed time is linear, but parsing is somewhat slow, with sentences of length 20 or more taking more than one second to parse, and sentences of length 40 or more taking more than three seconds.
+    Our parser only pursues one path per sentence, but it is very fast and of comparable accuracy (see section 4).
+    In addition, Ratnaparkhi&#8217;s parser uses a more involved algorithm that allows it to work with arbitrary branching trees without the need of the binarization transform employed here.
+    It breaks the 

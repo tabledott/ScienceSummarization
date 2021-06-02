@@ -1,0 +1,8 @@
+(Och, 2003) to set weights for the four components of the log-linear model: language model, phrase translation model, distortion model, and word-length feature.
+    The weights are optimized over the BLEU metric (Papineni et al., 2001).
+    The Portage decoder, Canoe, is a dynamic-programming beam search algorithm, resembling the algorithm described in (Koehn, 2004a).
+    All of the training data we use is available from the Linguistic Data Consortium (LDC).
+    We use an Arabic-English parallel corpus of about 5 million words for translation model training data.4 We created the English language model from the English side of the parallel corpus together with 116 million words from the English Gigaword Corpus (LDC2005T12) and 128 million words from the English side of the UN Parallel corpus (LDC2004E13).
+    English preprocessing comprised down-casing, separating punctuation from words and splitting off &#8220;&#8217;s&#8221;.
+    Arabic preprocessing was varied using the proposed schemes and techniques.
+    

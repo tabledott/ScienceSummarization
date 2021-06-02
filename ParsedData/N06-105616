@@ -1,0 +1,10 @@
+the removed links, links from the most probable reverse alignment, a&#65533; (obtained by treating the source language as target, and vice versa), are added to a, as long as a remains n-to-1, and v(a) is not increased.
+  
+  
+    Once a lexicon is acquired, the next task is to learn a probabilistic model for the semantic parser.
+    We propose a maximum-entropy model that defines a conditional probability distribution over derivations (d) given the observed NL string (e): where fi is a feature function, and Z&#955;(e) is a normalizing factor.
+    For each rule r in the lexicon there is a feature function that returns the number of times r is used in a derivation.
+    Also for each word w there is a feature function that returns the number of times w is generated from word gaps.
+    Generation of unseen words is modeled using an extra feature whose value is the total number of words generated from word gaps.
+    The number of features is quite modest (less than 3,000 in our experiments).
+    A similar feature s

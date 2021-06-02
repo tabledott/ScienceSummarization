@@ -1,0 +1,11 @@
+s from the classifier.
+    Instead, it selects the best phoneme sequence from a set of possible local predictions by taking advantage of the phoneme language model, which is trained on the phoneme sequences in the training data.
+  
+  
+    We evaluated our approaches on CMUDict, Brulex, and German, Dutch and English Celex corpora (Baayen et al., 1996).
+    The corpora (except English Celex) are available as part of the Letterto-Phoneme Conversion PRONALSYL Challenge1.
+    For the English Celex data, we removed duplicate words as well as words shorter than four letters.
+    Table 2 shows the number of words and the language of each corpus.
+    For all of our experiments, our local classifier for predicting phonemes is the instance-based learning IB1 algorithm (Aha et al., 1991) implemented in the TiMBL package (Daelemans et al., 2004).
+    The HMM technique is applied as post processing to the instance-based learning to provide a sequence prediction.
+    In addition to comparing one-toone and many-to-many align

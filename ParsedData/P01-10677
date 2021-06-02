@@ -1,0 +1,15 @@
+be the training algorithm.
+    This section formally describes our translation model.
+    To make this paper comparable to (Brown et al., 1993), we use English-French notation in this section.
+    We assume that an English parse tree is transformed into a French sentence.
+    Let the English parse tree consist of nodes , and let the output French sentence consist of French words .
+    Three random variables, ,, and are channel operations applied to each node.
+    Insertion is an operation that inserts a French word just before or after the node.
+    The insertion can be none, left, or right.
+    Also it decides what French word to insert.
+    Reorder is an operation that changes the order of the children of the node.
+    If a node has three children, e.g., there are ways to reorder them.
+    This operation applies only to non-terminal nodes in the tree.
+    Translation is an operation that translates a terminal English leaf word into a French word.
+    This operation applies only to terminal nodes.
+    Note t

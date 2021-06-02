@@ -1,0 +1,5 @@
+rase translation model probabilities; and 4-gram language model probabilities logp(t), using Kneser-Ney smoothing as implemented in the SRILM toolkit.
+    Phrase translation model probabilities are features of the form: log p(s|t,a) &#8776; EKk=1 log p(gk|&#65533;tk).
+    We use two different estimates for the conditional probabilities p(&#65533;t|g) and p(g|&#65533;t): relative frequencies and &#8220;lexical&#8221; probabilities as described in (Zens and Ney, 2004).
+    In both cases, the &#8220;forward&#8221; phrase probabilities p(&#65533;t|s) are not used as features, but only as a filter on the set of possible translations: for each source phrase s&#65533; that matches some ngram in s, only the 30 top-ranked translations t according to p(&#65533;t|g) are retained.
+    To derive the joint counts c(g, t) from which p(s|&#65533; and p(&#65533;t|s) are estimated, we use the phrase induction algorithm described in (Koehn et al., 2003), with symmetrized word alignments generated using IBM model 2 (Brown et al.

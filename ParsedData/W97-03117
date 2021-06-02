@@ -1,0 +1,8 @@
+le example of how recognition of NCCs increases the mutual information of translation models.
+    The English word &amp;quot;balance&amp;quot; is most often translated into French as &amp;quot;equilibre&amp;quot; and &amp;quot;sheet&amp;quot; usually becomes &amp;quot;feuille.&amp;quot; However, a &amp;quot;balance sheet&amp;quot; is a &amp;quot;bilan.&amp;quot; A translation model that doesn't recognize &amp;quot;balance sheet&amp;quot; as an NCC would distribute the translation probabilities of &amp;quot;bilan&amp;quot; over multiple English words, as shown in the Incorrect Model.
+    The Incorrect Model is uncertain about how &amp;quot;bilan&amp;quot; should be translated.
+    On the other hand, the Correct Model, which recognizes &amp;quot;balance sheet&amp;quot; as an NCC is completely certain about its translation.
+    As a result, the mutual information pf the Incorrect Model is
+  
+  
+    An explicit objective function immediately leads to a simple test of whether a given sequence of words should be tr

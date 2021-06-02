@@ -1,0 +1,7 @@
+Our goal is to find the decoder that has the best performance over all translations.
+    This is measured through Bayes-Risk : The expectation is taken under the true distribution that describes translations of human quality.
+    Given a loss function and a distribution, it is well known that the decision rule that minimizes the BayesRisk is given by (Bickel and Doksum, 1977; Goel and Byrne, 2000): We shall refer to the decoder given by this equation as the Minimum Bayes-Risk (MBR) decoder.
+    The MBR decoder can be thought of as selecting a consensus translation: For each sentence, Equation 3 selects the translation that is closest on an average to all the likely translations and alignments.
+    The closeness is measured under the loss function of interest.
+    This optimal decoder has the difficulties of search (minimization) and computing the expectation under the true distribution.
+    In practice, we will consider the space of translations to be an -best list of translation alternatives generated under 

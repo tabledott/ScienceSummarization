@@ -1,0 +1,6 @@
+s, so unlike G&amp;J, we can also es timate the probability of argument sets not seen in the training data.
+			We first convert the raw SVM scores to probabilities using a sigmoid function.
+			Then, for each sentence being parsed, we generate an argument latticeusing the n-best hypotheses for each node in the syn tax tree.
+			We then perform a Viterbi search through the lattice using the probabilities assigned by the sigmoid as the observation probabilities, along with the language model probabilities, to find the maximum likelihood path through the lattice, such that each node is either assigned a value belonging to the PROPBANK ARGUMENTs, or NULL.
+			CORE ARGs/ P R F1 Hand-corrected parses (%) (%) Baseline w/o overlaps 90.0 86.1 88.0 Common predicate 90.8 86.3 88.5 Specific predicate lemma 90.5 87.4 ?88.9Table 5: Improvements on the task of argument identifi cation and tagging after performing a search through the argument lattice.
+			The search is constrained in such a way that no two NON-NULL nodes overla

@@ -1,0 +1,8 @@
+w a definition of in this way.
+    In general the lack of per-sentence scores makes it challenging to apply significance tests to Bleu scores.2 To get around this problem, we make the following approximation.
+    For any test sentence , we calculate as follows.
+    First, we define to be the Bleu score for the test corpus when translated by the baseline model.
+    Next, we define to be the Bleu score when all sentences other than are translated by the baseline model, and where itself is translated by the reordered model.
+    We then define If If If Note that strictly speaking, this definition of is not valid, as it depends on the entire set of sample points rather than alone.
+    However, we believe it is a reasonable approximation to an ideal 2The lack of per-sentence scores means that it is not possible to apply standard statistical tests such as the sign test or the ttest (which would test the hypothesis , where is the expected value under ).
+    Note that previous work (Koehn, 2004; Zhang and Vogel, 2004)

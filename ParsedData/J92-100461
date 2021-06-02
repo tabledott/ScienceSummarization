@@ -1,0 +1,7 @@
+e, it creates a blank frame and inserts it into a &amp;quot;topic&amp;quot; slot in the frame that was handed to it.
+    It passes the blank frame to its children, who will then fill it appropriately, labeling it as a QSET or as a REFERENCE.
+    It then passes along to the right sibling the same frame that was handed to it from above, with the completed topic slot filled with the information delivered by the children.
+    The raw frame that is realized through the treewalk is post-processed to simplify some of the structure, as well as to augment or interpret expressions such as relative time.
+    For example, the predicate modifier in &amp;quot;flights leaving at ten a.m.&amp;quot; is simplified from a predicate leave to a modifier slot labeled departure-time.
+    An expression such as &amp;quot;next Tuesday&amp;quot; is interpreted relative to today's date to fill in an actual month, date, and year.
+    Following this post-analysis step, the frame is merged with references contained in a history record, to 

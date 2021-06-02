@@ -1,0 +1,11 @@
+thm to find the optimal parameters.
+    Using all three thresholding methods together, and the parameter search algorithm, we achieved our best results, running an estimated 30 times faster than traditional beam search, at the same performance level.
+  
+  
+    The first, and simplest, technique we will examine is beam thresholding.
+    While this technique is used as part of many search algorithms, beam thresholding with PCFGs is most similar to beam thresholding as used in speech recognition.
+    Beam thresholding is often used in statistical parsers, such as that of Collins (1996).
+    Consider a nonterminal X in a cell covering the span of terminals ti...tk.
+    We will refer to this as node INT-?(,. since it corresponds to a potential node in the final parse tree.
+    Recall that in beam thresholding, we compare nodes Nik and Nrk covering the same span.
+    If one node is much more likely than the other, then it is unlikely that the less probable node will be part of the correct parse, and we can remove i

@@ -1,0 +1,7 @@
+chains, we need to extract them out of the dependency trees.
+    Figure 3 gives an algorithm which recursively extracts the headword chains in a dependency tree from short to long.
+    Having the headword chains, the headword chain based metric is computed in a manner similar to BLEU, but using n-grams of dependency chains rather than n-grams in the linear order of the sentence.
+    For every hypothesis, the fractions of headword chains which also appear in the reference dependency trees are averaged as the final score.
+    Using HWCM to denote the headword chain based metric, it is computed as follows: where D is chosen as the maximum length chain considered.
+    We may also wish to consider dependency relations over more than two words that are contiguous but not in a single ancestor chain in the dependency tree.
+    For this reason, the two methods described in section 3.1 are used to compute the similarity of dependency trees between the MT hypothesis and its references, and the corresponding metrics are 

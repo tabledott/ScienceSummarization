@@ -1,0 +1,9 @@
+5 nouns, we are able to measure cosine similarity between every pair of them to within an average error margin of 0.027.
+    This algorithm is also highly memory efficient since we can represent every vector by only a few thousand bits.
+    Also the randomization process makes the the algorithm easily parallelizable since each processor can independently contribute a few bits for every vector.
+    We initially obtain a list of bit streams for all the vectors (nouns) from our web corpus using the randomized algorithm described in Section 3 (Steps 1 to 3).
+    The next step involves the calculation of hamming distance.
+    To evaluate the quality of this search algorithm we again randomly choose 100 vectors (nouns) from our collection.
+    For each of these 100 vectors we manually calculate the hamming distance with all other vectors in the collection.
+    We only retain those pairs of vectors whose cosine distance (as manually calculated) is above 0.15.
+    This similarity list is used as the gold standard tes

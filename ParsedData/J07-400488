@@ -1,0 +1,8 @@
+the chart bottom-up, starting with constituents spanning a single word, incrementally increasing the span until the whole sentence is covered.
+    Because the constituents are built in order of span size, at any point in the process all the sub-constituents which could be used to create a particular new constituent must be present in the chart.
+    Hence dynamic programming can be used to prevent the need for backtracking during the parsing process.
+    There is a trade-off between the size and coverage of the grammar and the efficiency of the parser.
+    One of our main goals in this work has been to develop a parser which can provide analyses for the vast majority of linguistic constructions in CCGbank, but is also efficient enough for large-scale NLP applications.
+    In this section we describe some of the decisions we made when implementing the grammar, with this trade-off in mind.
+    First, the lexical category set we use does not contain all the categories in Sections 02&#8211;21 of CCGbank.
+    Apply

@@ -1,0 +1,8 @@
+ever, for this tree the probabilities of each node being correct are S: 100%; A: 50%; and 8: 50%.
+    The expected value of L is 2.0, the highest of any tree.
+    This tree therefore optimizes the Labelled Recall Rate.
+    We now derive an algorithm for finding the parse that maximizes the expected Labelled Recall Rate.
+    We do this by expanding expression (2) out into a probabilistic form, converting this into a recursive equation, and finally creating an equivalent dynamic programming algorithm.
+    We begin by rewriting expression (2), expanding out the expected value operator, and removing the A, B, C, D, E, F The four trees are c, which is the same for all TG, and so plays no role in the maximization.
+    Now, given a PCFG with start symbol S, the following equality holds: By rearranging the summation in expression (5) and then substituting this equality, we get At this point, it is useful to introduce the Inside and Outside probabilities, due to Baker (1979), and explained by Lan and Young (1990).
+   

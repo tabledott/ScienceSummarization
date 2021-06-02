@@ -1,0 +1,8 @@
+scribes the conditioning variables used in the EDITED classifier.
+    Many of the variables are defined in terms of what we call a rough copy.
+    Intuitively, a rough copy identifies repeated sequences of words that might be restarts or repairs.
+    Punctuation is ignored for the purposes of defining a rough copy, although conditioning variables indicate whether the rough copy includes punctuation.
+    A rough copy in a tagged string of words is a substring of the form &#945;1Q-y&#945;2, where: The set of free-inal words includes all partial words (i.e., ending in a hyphen) and a small set of conjunctions, adverbs and miscellanea, such as and, or, actually, so, etc.
+    The set of interregnum strings consists of a small set of expressions such as uh, you know, I guess, I mean, etc.
+    We search for rough copies in each sentence starting from left to right, searching for longer copies first.
+    After we find a rough copy, we restart searching for additional rough copies following the free final string of th

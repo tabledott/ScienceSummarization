@@ -1,0 +1,10 @@
+few hypotheses outside the 1000-best list which are selected by lattice MBR.
+    Finally, we show how the performance of lattice MBR changes as a function of the lattice density.
+    The lattice density is the average number of arcs per word and can be varied using Forward-Backward pruning (Sixtus and Ortmanns, 1999).
+    Figure 2 reports the average number of lattice paths and BLEU scores as a function of lattice density.
+    The results show that Lattice MBR performance generally improves when the size of the lattice is increased.
+    However, on zhen, there is a small drop beyond a density of 10.
+    This could be due to low quality (low posterior probability) hypotheses that get included at the larger densities and result in a poorer estimate of the expected BLEU score.
+    On aren and enzh, there are some gains beyond a lattice density of 30.
+    These gains are relatively small and come at the expense of higher memory usage; we therefore work with a lattice density of 30 in all our experiments.
+    We n

@@ -1,0 +1,9 @@
+ng distribution, then when we sum over data completions, we will only involve bracketings which correspond to valid binary trees.
+    This restriction is the basis for our algorithm.
+    We now essentially have our induction algorithm.
+    We take P(B) to be Pbin(B), so that all binary trees are equally likely.
+    We then apply the EM algorithm: E-Step: Find the conditional completion likelihoods P(BIS, O) according to the current O. M-Step: Fix P(B|S, O) and find the O' which maximizes EB P(BIS, O) logP(S, BIO').
+    The completions (bracketings) cannot be efficiently enumerated, and so a cubic dynamic program similar to the inside-outside algorithm is used to calculate the expected counts of each yield and context, both as constituents and distituents.
+    Relative frequency estimates (which are the ML estimates for this model) are used to set O'.
+    To begin the process, we did not begin at the Estep with an initial guess at O.
+    Rather, we began at the M-step, using an initial distribution over comple

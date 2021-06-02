@@ -1,0 +1,11 @@
+ determine Pexpand(l  |s) changes because we no longer have a parallel text.
+    We create joint rules using only the first section (0.mrg) of the Penn Treebank.
+    We count all probabilistic context free grammar (PCFG) expansions, and then match up similar rules as unsupervised joint events.
+    We change Equation 2 to calculate Pexpand(s  |l) without parallel data.
+    First, let us define svo (shorter version of) to be: r1 svo r2 iff the righthand side of r1 is a subsequence of the righthand side of r2.
+    Then define This is best illustrated by a toy example.
+    Consider a corpus with just 7 rules: 3 instances of NP &#8594; DT JJNN and 4 instances of NP &#8594; DT NN.
+    P(NP &#8594; DT JJ NN  |NP &#8594; DT JJ NN) = 1.
+    To determine this, you divide the count of NP &#8594; DT JJ NN = 3 by all the possible long versions of NP &#8594; DT JJNN = 3.
+    P(NP &#8594; DT JJNN  |NP &#8594; DT NN) = 3/7.
+    The count of NP &#8594; DT JJNN = 3, and the possible long versions of NP &#8594; DT NN are itself

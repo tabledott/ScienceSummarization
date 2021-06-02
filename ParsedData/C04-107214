@@ -1,0 +1,13 @@
+arying from 1.1 to 2.0 with 0.1 increment.
+			ROUGE-W is the same as ROUGE-L when ? is set to 1.
+			In the next section, we introduce the skip-bigram co-occurrence statistics.
+			3.3 ROUGE-S: Skip-Bigram Co-Occurrence.
+			Statistics Skip-bigram is any pair of words in their sentence order, allowing for arbitrary gaps.
+			Skip-bigram cooccurrence statistics measure the overlap of skip bigrams between a candidate translation and a set of reference translations.
+			Using the example given in Section 3.1: S1.
+			police killed the gunman S2.
+			police kill the gunman S3.
+			the gunman kill police S4.
+			the gunman police killed each sentence has C(4,2)2 = 6 skip-bigrams.
+			For example, S1 has the following skip-bigrams: (?police killed?, ?police the?, ?police gunman?, ?killed the?, ?killed gunman?, ?the gunman?)
+			Given translations X of length m and Y of length n, assuming X is a reference translation and Y is a candidate translation, we compute skip-bigram based F-measure as follows: Rskip2 )2,( ),(2 mC YXSKIP

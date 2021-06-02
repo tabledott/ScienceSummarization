@@ -1,0 +1,9 @@
+ent tagsets, we could not apply the pretrained Stanford tagger to our data.
+    Instead, we retrained it on our labeled data, using a standard set of features: words within a 5-word window, word shapes in a 3-word window, and up to length-3 prefixes, length-3 suffixes, and prefix/suffix pairs.10 The Stanford system was regularized using a Gaussian prior of a2 = 0.5 and our system with a Gaussian prior of a2 = 5.0, tuned on development data.
+    The results are shown in Table 2.
+    Our tagger with the full feature set achieves a relative error reduction of 25% compared to the Stanford tagger.
+    We also show feature ablation experiments, each of which corresponds to removing one category of features from the full set.
+    In Figure 1, we show examples that certain features help solve.
+    Underlined tokens are incorrect in a specific ablation, but are corrected in the full system (i.e. when the feature is added).
+    The &#8722;TAGDICT ablation gets elects, Governor, and next wrong in tweet (a).
+    These wo

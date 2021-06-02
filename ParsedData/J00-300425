@@ -1,0 +1,6 @@
+or, equivalently, that minimizes the number of bits required to represent the text according to that model.
+    The following Viterbi-style algorithm can be used to solve this problem.
+    Beginning at the initial state, the procedure traces through the model, recording at each state the highest probability of reaching that state from the beginning.
+    Thus the two descendants of the start node, nodes to and t., are assigned the probability of o and conditioned in each case on t being the prior character, respectively.
+    As more arcs are traversed, the associated probabilities are multiplied: thus the node .0 receives the product of the probability of &#8226; conditioned on t and of o conditioned on When the node ob is reached, it is assigned the greater of the probabilities associated with the two incoming transitions, and so on throughout the model.
+    This is the standard dynamic programming technique of storing with each state the result of the best way of reaching that state, and using this result to

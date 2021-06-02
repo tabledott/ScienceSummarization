@@ -1,0 +1,6 @@
+pproach to two baselines: first, Model 1; and second, a naive integration method that enforces the hard constraint that Model 1 must only consider de11We use a reimplementation that is a slight modification of Collins Model 1, with very similar performance, and which uses the TAG formalism of Carreras et al. (2008). pendencies seen in the first-best output from the dependency parser.
+    Table 2 shows all three results.
+    The dual decomposition method gives a significant gain in precision and recall over the naive combination method, and boosts the performance of Model 1 to a level that is close to some of the best single-pass parsers on the Penn treebank test set.
+    Dependency accuracy is also improved over the Koo et al. (2008) model, in spite of the relatively low dependency accuracy of Model 1 alone.
+    Figure 5 shows performance of the approach as a function of K, the maximum number of iterations of dual decomposition.
+    For this experiment, for cases where the method has not converged for k &lt; 

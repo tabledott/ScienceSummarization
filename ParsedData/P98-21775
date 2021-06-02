@@ -1,0 +1,7 @@
+ by a single token, the text is converted to lower case, and the morphology database is used to find the base forms of the verbs and nouns.
+    The extracted head word tuples differ from the training data used in previous supervised attempts in an important way.
+    In the supervised case, both of the potential sites, namely the verb v and the noun n are known before the attachment is resolved.
+    In the unsupervised case discussed here, the extraction heuristic only finds what it thinks are unambiguous cases of prepositional phrase attachment.
+    Therefore, there is only one possible attachment site for the preposition, and either the verb v or the noun n does not exist, in the case of noun-attached preposition or a verb-attached preposition, respectively.
+    This extraction heuristic loosely resembles a step in the bootstrapping procedure used to get training data for the classifier of (Hindle and Rooth, 1993).
+    In that step, unambiguous attachments from the FIDDITCH parser's output are initially used

@@ -1,0 +1,10 @@
+-word information as possible (in order to allow reconstructing the word vectors) but does not necessarily follow standard syntactic constraints.
+    We also experimented with a method that finds better solutions to Eq.
+    5 based on CKY-like beam search algorithms (Socher et al., 2010; Socher et al., 2011) but the performance is similar and the greedy version is much faster.
+    Weighted Reconstruction.
+    One problem with simply using the reconstruction error of both children equally as describe in Eq.
+    4 is that each child could represent a different number of previously collapsed words and is hence of bigger importance for the overall meaning reconstruction of the sentence.
+    For instance in the case of (x1,p(2,(3,4))) one would like to give more importance to reconstructing p than x1.
+    We capture this desideratum by adjusting the reconstruction error.
+    Let n1, n2 be the number of words underneath a current potential child, we re-define the reconstruction error to be Length Normalization.
+   

@@ -1,0 +1,13 @@
+ger than |D|.
+			In our implementation we sim ply check for the condition ?|Q| log |D| &lt; |D| to decide whether we should use double binary search or the merge algorithm.
+			This check is applied in the recursive cases as well as for the initial inputs.
+			Thevariable ? can be adjusted for performance.
+			We de termined experimentally that a good value for this parameter is 0.3.
+			5.3 Obtaining Sorted Sets.
+			Double binary search requires that its input sets be in sorted order.
+			However, the suffix array returnsmatchings in lexicographical order, not numeric or der.
+			The algorithm of Rahman et al (2006) deals with this problem by inserting the unordered items into a stratified tree.
+			This requires O(n log log |T |) time for n items.
+			If we used the same strategy, our algorithm would no longer be sublinear.An alternative is to precompute all n-gram occur rences in order and store them in an inverted index.
+			This can be done in one pass over the data.
+			7 This approach requires a separate inverte

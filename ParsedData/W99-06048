@@ -1,0 +1,8 @@
+tten: For the training of the above model parameters, we use the maximum likelihood criterion in the so-called maximum approximation.
+    When aligning the words in parallel texts (for IndoEuropean language pairs like Spanish-English, French-English, Italian-German,...), we typically observe a strong localization effect.
+    In many cases, although not always, there is an even stronger restriction: over large portions of the source string, the alignment is monotone.
+    In this approach, we first assume that the alignments satisfy the monotonicity requirement.
+    Within the translation search, we will introduce suitably restricted permutations of the source string, to satisfy this requirement.
+    For the alignment model, the monotonicity property allows only transitions from a3_1 to ai with a jump width 6: 6 a3 &#8212; ai_i E ICI, 1, 21.
+    Theses jumps correspond to the following three cases (6 = 0, 1, 2): new target word is generated.
+    &#8226; 8 = 2 (skip transition = non-aligned word): This case corr

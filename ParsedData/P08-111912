@@ -1,0 +1,11 @@
+gories, or proper names that include uncapitalized words (e.g., &#8220;United States of America&#8221;).
+    These limitations could be easily overcome by incorporating a noun phrase (NP) chunker and extracting NPs.
+    Each new class member is then used as a seed instance in the bootstrapping loop.
+    We implemented this process as breadth-first search, where each &#8220;ply&#8221; of the search process is the result of bootstrapping the class members learned during the previous iteration as seed instances for the next one.
+    During each iteration, we issue a new web query and add the newly extracted class members to the queue for the next cycle.
+    We run this bootstrapping process for a fixed number of iterations (search ply), or until no new class members are produced.
+    We will refer to this process as reckless bootstrapping because there are no checks of any kind.
+    Every term extracted by the pattern is assumed to be a class member.
+  
+  
+    Table 1 shows the results for 4 iterations of reckle

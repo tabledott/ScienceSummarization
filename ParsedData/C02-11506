@@ -1,0 +1,8 @@
+nsisted of the classes: Person, Location, Organization, Date, Quantity, Duration, Lin ear Measure.
+			The rules used in the classification were of the following forms: ? If a query starts with Who or Whom: type Person.
+			If a query starts with Where: type Location.
+			If a query contains Which or What, the head noun phrase determines the class, as for What X questions.While the rules used have large coverage and rea sonable accuracy, they are not sufficient to supportfine-grained classification.
+			One difficulty in supporting fine-grained classification is the need to ex tract from the questions finer features that require syntactic and semantic analysis of questions, and possibly, many of them.
+			The approach we adoptedis a multi-level learning approach: some of our fea tures rely on finer analysis of the questions that are outcomes of learned classifiers; the QC module then applies learning with these as input features.
+			2.1 Classification Standard.
+			Earlier works have suggested various standards of 

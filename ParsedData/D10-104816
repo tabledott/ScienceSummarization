@@ -1,0 +1,7 @@
+k: Cluster head match &#8211; the mention head word matches any head word in the antecedent cluster.
+    Note that this feature is actually more relaxed than naive head matching between mention and antecedent candidate because it is satisfied when the mention&#8217;s head matches the head of any entity in the candidate&#8217;s cluster.
+    We constrain this feature by enforcing a conjunction with the features below.
+    Word inclusion &#8211; all the non-stop4 words in the mention cluster are included in the set of non-stop words in the cluster of the antecedent candidate.
+    This heuristic exploits the property of discourse that it is uncommon to introduce novel information in later mentions (Fox, 1993).
+    Typically, mentions of the same entity become shorter and less informative as the narrative progresses.
+    For example, the two mentions in ... intervene in the [Florida Supreme Court]&#8217;s move ... does look like very dramatic change made by [the Florida court] point to the same entity, but the two

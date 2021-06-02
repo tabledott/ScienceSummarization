@@ -1,0 +1,6 @@
+count for the guide features over the MaltParser output.
+    The specific features used by MSTMalt are given in table 1.
+    All features are conjoined with the part-of-speech tags of the words involved in the dependency to allow the guided parser to learn weights relative to different surface syntactic environments.
+    Though MSTParser is capable of defining features over pairs of arcs, we restrict the guide features over single arcs as this resulted in higher accuracies during preliminary experiments.
+    The transition-based model, MaltParser, learns a scoring function s(c, t) E R over configurations and transitions.
+    The set of training instances for this learning problem is the set of pairs (c, t) such that t is the correct transition out of c in the transition sequence that derives the correct dependency graph Gx for some sentence x in the training set T. Each training instance (c, t) is represented by a feature vector f(c, t) E Rk, where features are defined in terms of arbitrary properties of the 

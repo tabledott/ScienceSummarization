@@ -1,0 +1,12 @@
+e LCS of the concepts, and then scales that by the sum of the depths of the individual concepts.
+    The depth of a concept is simply its distance to the root node.
+    The measure path is a baseline that is equal to the inverse of the shortest path between two concepts.
+    WordNet::Similarity supports two hypothetical root nodes that can be turned on and off.
+    When on, one root node subsumes all of the noun concepts, and another subsumes all of the verb concepts.
+    This allows for similarity measures to be applied to any pair of nouns or verbs.
+    If the hypothetical root nodes are off, then concepts must be in the same physical hierarchy for a measurement to be taken.
+  
+  
+    Measures of relatedness are more general in that they can be made across part of speech boundaries, and they are not limited to considering is-a relations.
+    There are three such measures in the package: hso (Hirst and St-Onge, 1998), lesk (Banerjee and Pedersen, 2003), and vector (Patwardhan, 2003).
+    The hso measures cla

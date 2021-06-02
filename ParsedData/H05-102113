@@ -1,0 +1,11 @@
+nventory.
+			164 We employ the EM algorithm to obtain Maximum Likelihood (ML) estimates of the reordering model parameters.
+			Applying EM to the MJ-1 reordering model gives the following ML parameter estimates for each phrase-pair (u, x).
+			??1(x, u) = Cx,u(0,+1) Cx,u(0,+1) + Cx,u(0, 0) .
+			(13) Cx,u(?, b) is defined for ? = 1, 2 and b = ?1, 0,+1.
+			Any permissible phrase alignment of a sentence pair corresponds to a bK1 sequence, which in turn specifies a ?K1 sequence.
+			Cx,u(?, b) is the expected number of times the phrase-pair x, u isaligned with a jump of b phrases when the jump history is ?.
+			We do not use full EM but a Viterbi train ing procedure that obtains the counts for the best (Viterbi) alignments.
+			If a phrase-pair (x, u) is never seen in the Viterbi alignments, we back-off to a flat parameter ?1(x, u) = 0.05.
+			The ML parameter estimates for the MJ-2 modelare given in Table 2, with Cx,u(?, b) defined similarly.
+			In our training scenario, we use WFST op erations to obtain Viterbi phra

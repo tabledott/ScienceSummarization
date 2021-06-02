@@ -1,0 +1,8 @@
+tagger generators and the test set to test the resulting tagger.
+    For the combiners, a more complex strategy must be followed, since combiner training must be done on material unseen by the base taggers involved.
+    Rather than setting apart a fixed combiner training set, we use a ninefold training strategy.9 The 90% training set is split into nine equal parts.
+    Each part is tagged with component taggers that have been trained on the other eight parts.
+    All results are then concatenated for use in combiner training, so that, in contrast to our earlier work, all of the training set is effectively available for the training of the combiner.
+    Finally, the resulting combiners are tested on the test set.
+    Since the test set is identical for all methods, we can compute the statistical significance of the results using McNemar's chi-squared test (Dietterich 1998).
+    As we will see, the increase in combiner training set size (90% of the corpus versus the fixed 10% tune set in the earlier experiments

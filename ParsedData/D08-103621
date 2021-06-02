@@ -1,0 +1,7 @@
+on the values of the hyperparameters &#945; and &#945;', with larger values leading to much faster convergence.
+    This is not surprising, as the &#945; and &#945;' specify how likely the samplers are to consider novel tags, and therefore directly influence the sampler&#8217;s mobility.
+    However, in our experiments the best results are obtained in most settings with small values for &#945; and &#945;', usually between 0.1 and 0.0001.
+    In terms of time to convergence, on larger data sets we found that the blocked samplers were generally faster than the pointwise samplers, and that the explicit samplers (which represented and sampled 0 and 0) were faster than the collapsed samplers, largely because the time saved in not computing probabilities on the fly overwhelmed the time spent resampling the parameters.
+    Of course these experiments only scratch the surface of what is possible.
+    Figure 6 shows that pointwise-samplers initially converge faster, but are overtaken later by the blocked samplers.
+   

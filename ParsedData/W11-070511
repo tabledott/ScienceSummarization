@@ -1,0 +1,9 @@
+
+    For example, lol is translated to laughing out loud.
+    We pre-process all the tweets as follows: a) replace all the emoticons with a their sentiment polarity by looking up the emoticon dictionary, b) replace all URLs with a tag ||U||, c) replace targets (e.g.
+    &#8220;@John&#8221;) with tag ||T||, d) replace all negations (e.g. not, no, never, n&#8217;t, cannot) by tag &#8220;NOT&#8221;, and e) replace a sequence of repeated characters by three characters, for example, convert coooooooool to coool.
+    We do not replace the sequence by only two characters since we want to differentiate between the regular usage and emphasized usage of the word.
+    Acronym English expansion gr8, gr8t great lol laughing out loud rotf rolling on the floor bff best friend forever We present some preliminary statistics about the data in Table 3.
+    We use the Stanford tokenizer (Klein and Manning, 2003) to tokenize the tweets.
+    We use a stop word dictionary3 to identify stop words.
+    All the other words which are f

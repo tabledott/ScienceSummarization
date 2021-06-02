@@ -1,0 +1,8 @@
+n a non-uniform t distribution, phrase-to-phrase alignments have different weights and there are no other tricks one can apply to collect fractional counts over all possible alignments in polynomial time.
+    Starting with step 3 of the algorithm in Figure 2, for each sentence pair in a corpus, we greedily produce an initial alignment by linking together phrases so as to create concepts that have high t probabilities.
+    We then hillclimb towards the Viterbi alignment of highest probability by breaking and merging concepts, swapping words between concepts, and moving words across concepts.
+    We compute the probabilities associated with all the alignments we generate during the hillclimbing process and collect t counts over all concepts in these alignments.
+    We apply this Viterbi-based EM training procedure for a few iterations.
+    The first iterations estimate the alignment probabilities using Model 1.
+    The rest of the iterations estimate the alignment probabilities using Model 2.
+    During trainin

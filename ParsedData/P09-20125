@@ -1,0 +1,6 @@
+it.
+    This type of requirement is common in NLP tasks that require searching for a hidden segmentation, and in the following sections we apply it to learning a TSG from the Penn Treebank.
+    prior2 For an excellent introduction to collapsed Gibbs sampling with a DP prior, we refer the reader to Appendix A of Goldwater et al. (2009), which we follow closely here.
+    Our training data is a set of parse trees T that we assume was produced by an unknown TSG g with probability Pr(T |g).
+    Using Bayes&#8217; rule, we can compute the probability of a particular hypothesized grammar as Pr(g) is a distribution over grammars that expresses our a priori preference for g. We use a set of Dirichlet Process (DP) priors (Ferguson, 1973), one for each nonterminal X E N, the set of nonterminals in the grammar.
+    A sample from a DP is a distribution over events in an infinite sample space (in our case, potential subtrees in a TSG) which takes two parameters, a base measure and a concentration parameter: The base measur

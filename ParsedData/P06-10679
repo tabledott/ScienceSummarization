@@ -1,0 +1,11 @@
+r more words).
+    This models phrasal movement better since words tend to move in blocks and not independently.
+    The distortion is conditioned on classes of the aligned source and target words.
+    The entire source and target vocabularies are reduced to a small number of classes (e.g., 50) for the purpose of estimating those parameters.
+    Similarly, (Koehn et al., 2003) propose a relative distortion model to be used with a phrase decoder.
+    The model is defined in terms of the difference between the position of the current phrase and the position of the previous phrase in the source sentence.
+    It does not conillustrate word positions in the sentence.
+    The indices in the reordered English denote word position in the original English order. sider the words in those positions.
+    The distortion model we propose assigns a probability distribution over possible relative jumps conditioned on source words.
+    Conditioning on the source words allows for a much more fine-grained model.
+    For instanc

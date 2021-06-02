@@ -1,0 +1,9 @@
+ent annotations, leaving to the user the task of guessing what a good starting annotation might be.
+    We take a different, fully automated approach.
+    We start with a completely unannotated X-bar style grammar as described in Section 1.1.
+    Since we will evaluate our grammar on its ability to recover the Penn Treebank nonterminals, we must include them in our grammar.
+    Therefore, this initialization is the absolute minimum starting grammar that includes the evaluation nonterminals (and maintains separate grammar symbols for each of them).5 It is a very compact grammar: 98 symbols,6 236 unary rules, and 3840 binary rules.
+    However, it also has a very low parsing performance: 65.8/59.8 LP/LR on the development set.
+    Beginning with this baseline grammar, we repeatedly split and re-train the grammar.
+    In each iteration we initialize EM with the results of the smaller grammar, splitting every previous annotation symbol in two and adding a small amount of randomness (1%) to break the symmetry.
+   

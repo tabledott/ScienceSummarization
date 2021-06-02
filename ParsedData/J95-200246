@@ -1,0 +1,8 @@
+i.e., the samples are assumed to be distributed identically and independently.
+    The two steps of this algorithm can be briefly characterized as follows.
+    E-step: Compute expectations for how often each grammar rule is used, given the corpus D and the current grammar parameters (rule probabilities).
+    M-step: Reset the parameters so as to maximize the likelihood relative to the expected rule counts found in the E-step.
+    This procedure is iterated until the parameter values (as well as the likelihood) converge.
+    It can be shown that each round in the algorithm produces a likelihood that is at least as high as the previous one; the EM algorithm is therefore guaranteed to find at least a local maximum of the likelihood function.
+    EM is a generalization of the well-known Baum&#8212;Welch algorithm for HMM estimation (Baum et al. 1970); the original formulation for the case of SCFGs is attributable to Baker (1979).
+    For SCFGs, the E-step involves computing the expected number of times each produ

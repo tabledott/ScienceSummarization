@@ -1,0 +1,8 @@
+rease robustness, the standard grammar is augmented with a FRAGMENT grammar.
+    This allows sentences to be parsed as well-formed chunks specified by the grammar, in particular as Ss, NPs, PPs, and VPs, with unparsable tokens possibly interspersed.
+    These chunks have both c-structures and f-structures corresponding to them.
+    The grammar has a fewest-chunk method for determining the correct parse.
+    The grammar incorporates a version of Optimality Theory that allows certain (sub)rules in the grammar to be prefered or disprefered based on OT marks triggered by the (sub)rule (Frank et al., 1998).
+    The Complete version of the grammar uses all of the (sub)rules in a multi-pass system that depends on the ranking of the OT marks in the rules.
+    For example, topicalization is disprefered, but the topicalization rule will be triggered if no other parse can be built.
+    A one-line rewrite of the Complete grammar creates a Core version of the grammar that moves the majority of the OT marks into the NOGOOD

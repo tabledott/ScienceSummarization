@@ -1,0 +1,10 @@
+dy this, we retrain each SVMs for a binary classification task.
+    Here, we detect, but do not classify, relations.
+    This allows us to combine all positive relation instances into one class, which provides us more training samples to estimate the class boundary.
+    We then threshold our output to achieve an optimal operating point.
+    As seen in Table 5, this method of relation detection outperforms that of the multi-class classifier.
+    We then use these binary classifiers in a cascading scheme as follows: First, we use the binary SVM to detect possible relations.
+    Then, we use the SVM trained only on positive relation instances to classify each predicted relation.
+    These results are shown in Table 6.
+    The first result of interest is that the sparse tree kernel, K0, does not perform as well as the contiguous tree kernel, K1.
+    Suspecting that noise was introduced by the non-matching nodes allowed in the sparse tree kernel, we performed the experiment with different values for the decay fact

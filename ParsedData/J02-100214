@@ -1,0 +1,8 @@
+e the correct solution, since segment size will vary from the average, and false positives are not necessarily uniformly distributed throughout the document.
+    Another important problem with the Pk metric is that it allows some errors to go unpenalized.
+    In particular, it does not take into account the number of segment boundaries between the two ends of the probe.
+    (See Figure 4.)
+    Let r; indicate the number of boundaries between the ends of the probe according to the reference segmentation, and let a; indicate the number of boundaries proposed by some text segmentation algorithm for the same stretch of text.
+    If r; = 1 (the reference segmentation indicates one boundary) and a; = 2 (the algorithm marks two boundaries within this range), then the algorithm makes at least one false positive (spurious boundary) error.
+    However, the evaluation metric Pk does not assign a penalty in this situation.
+    Similarly, if r; = 2 and a; = 1, the An illustration of the fact that the Pk metric fails to pe

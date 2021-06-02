@@ -1,0 +1,12 @@
+st?
+			word to tag is the word for which the classifier outputs the highest probability.
+			In finding the easiest word, we use the appropriate local classifier according to the availability of the neighboring tags.
+			Therefore,in the first iteration, we always use the local classi fiers trained with no contextual tag information (i.e.
+			(P (ti|o)).
+			Then, for example, if t3 has been tagged in the first iteration in a three-word sentence, we use P (t2|t3o) to compute the probability for tagging t2 in the second iteration (as in Figure 1 (b)).
+			A naive implementation of this algorithm requires O(n2) invocations of local classifiers, where n is the number of the words in the sentence, because we need to update the probabilities over the words ateach iteration.
+			However, a k-th order Markov as sumption obviously allows us to skip most of the probability updates, resulting in O(kn) invocations of local classifiers.
+			This enables us to build a very efficient tagger.
+	
+	
+			For local classifiers, we used 

@@ -1,0 +1,7 @@
+o articles is too small, we do not bring them together into the same cluster (i.e. table).
+    We exclude names from the similarity calculation at this stage because we want to link articles about the same type of event, not the same instance.
+    In addition, we use the frequency of each basic pattern to compute the similarity of relations, since basic patterns like &#8220;say&#8221; or &#8220;have&#8221; appear in almost every article and it is dangerous to rely on such expressions.
+    In the above explanation, we have assumed that we can obtain enough basic patterns from an article.
+    However, the actual number of basic patterns that one can find from a single article is usually not enough, because the number of sentences is rather small in comparison to the variation of expressions.
+    So having two articles that have multiple basic patterns in common is very unlikely.
+    We extend the number of articles for obtaining basic patterns by using a cluster of comparable articles that report the same event

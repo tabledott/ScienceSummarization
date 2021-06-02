@@ -1,0 +1,9 @@
+ feature ftd(&#8722;1, det).
+    These two features will work together to increase the probability of this correct link.
+    In contrast, the incorrect link (thea, les) will have only ftd(+3, det), which will work to lower the link probability, since most determiners are located beDue to our use of constraints, when seeking the highest probability alignment, we cannot rely on a method such as dynamic programming to (implicitly) search the entire alignment space.
+    Instead, we use a best-first search algorithm (with constant beam and agenda size) to search our constrained space of possible alignments.
+    A state in this space is a partial alignment.
+    A transition is defined as the addition of a single link to the current state.
+    Any link which would create a state that does not violate any constraint is considered to be a valid transition.
+    Our start state is the empty alignment, where all words in E and F are linked to null.
+    A terminal state is a state in which no more links can be added witho

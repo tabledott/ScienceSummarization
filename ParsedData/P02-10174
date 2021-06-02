@@ -1,0 +1,8 @@
+y aggregating over only valid, complete parses of each sentence, they naturally incorporate the constraint that constituents cannot cross &#8211; the bracketing decisions made by the grammar must be coherent.
+    The Carroll and Charniak experiments had two primary causes for failure.
+    First, random initialization is not always good, or necessary.
+    The parameter space is riddled with local likelihood maxima, and starting with a very specific, but random, grammar should not be expected to work well.
+    We duplicated their experiments, but used a uniform parameter initialization where all productions were equally likely.
+    This allowed the interaction between the grammar and data to break the initial symmetry, and resulted in an induced grammar of higher quality than Carroll and Charniak reported.
+    This grammar, which we refer to as DEP-PCFG will be evaluated in more detail in section 4.
+    The second way in which their experiment was guaranteed to be somewhat unencouraging is that a delexicalized 

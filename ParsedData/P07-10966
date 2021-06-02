@@ -1,0 +1,8 @@
+s simple example has shown the advantage of adopting a flexible search strategy.
+    However, it is still unclear how we maintain the hypotheses, how we keep candidates and accepted labels and spans, and how we employ dynamic programming.
+    We will answer these questions in the formal definition of the inference algorithm in the next section.
+    Terminology: Let the input sequence be w1w2 &#183; &#183; &#183; wn.
+    For each token wz, we are expected to assign a label tz E T, with T the label set.
+    A subsequence wz &#183; &#183; &#183; wj is called a span, and is denoted [i, j].
+    Each span p considered by the algorithm is associated with one or more hypotheses, that is, sequences over T having the same length as p. Part of the label sequence of each hypothesis is used as a context for labeling tokens outside the span p. For example, if a tri-gram model is adopted, we use the two labels on the left boundary and the two labels on the right boundary of the hypothesis for labeling outside tokens.
+    Th

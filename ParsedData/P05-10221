@@ -1,0 +1,6 @@
+ quality parses; the maximum probability parse trees (according to the parser&#8217;s model) have an f-score of 0.897 on section 23 of the Penn Treebank (Charniak, 2000), which is still state-of-the-art.
+    However, the 50 best (i.e., the 50 highest probability) parses of a sentence often contain considerably better parses (in terms of f-score); this paper describes a 50-best parsing algorithm with an oracle f-score of 96.8 on the same data.
+    The reranker attempts to select the best parse for a sentence from the 50-best list of possible parses for the sentence.
+    Because the reranker only has to consider a relatively small number of parses per sentences, it is not necessary to use dynamic programming, which permits the features to be essentially arbitrary functions of the parse trees.
+    While our reranker does not achieve anything like the oracle f-score, the parses it selects do have an f-score of 91.0, which is considerably better than the maximum probability parses of the n-best parser.
+    In more

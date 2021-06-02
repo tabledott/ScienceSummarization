@@ -1,0 +1,7 @@
+ a Wikipedia title collection W, titles t1 and t2 with a set of incoming links L1, and L2 respectively, PMI and NGD are defined as follows: The NGD and the PMI measures can also be computed over the set of outgoing links, and we include these as features as well.
+    We also included a feature indicating whether the articles each link to one another.
+    Lastly, rather than taking the sum of the relatedness scores as suggested by Eq.
+    3, we use two features: the average and the maximum relatedness to V. We expect the average to be informative for many documents.
+    The intuition for also including the maximum relatedness is that for longer documents that may cover many different subtopics, the maximum may be more informative than the average.
+    We have experimented with other semantic features, such as category overlap or cosine similarity between the TF-IDF summaries of the titles, but these did not improve performance in our experiments.
+    The complete set of global features used in GLOW is given in

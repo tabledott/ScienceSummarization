@@ -1,0 +1,8 @@
+he Morphology-based method.
+    We repeat these last 3 models with the addition of the syntagmatic constraints (Synt+Morph).
+    For each of these, we first compare the computed p(tjw) against a gold standard distribution, taken from the test corpus (90K tokens), according to the measure used by (Levinger et al., 1995) (Dist).
+    On this measure, we confirm that our improved morpholexical approximation improves the results reported by Levinger et al. from 74% to about 80% on a richer tagset, and on a much larger test set (90K vs. 3,400 tokens).
+    We then report on the effectiveness of p(tjw) as a context-free tagger that assigns to each word the most likely tag, both for full morphological analysis (3,561 tags) (Full) and for the simpler task of token segmentation and POS tag selection (36 tags) (Seg+Pos).
+    The best results on this task are 80.8% and 87.5% resp. achieved on the Morph+Linear initial conditions.
+    Finally, we test effectiveness of the initial conditions with EM-HMM learning.
+    We reac

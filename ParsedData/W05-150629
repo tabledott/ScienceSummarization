@@ -1,0 +1,8 @@
+ narrower 10?3 beam and further applied a cell limit of 100,6 but, as we will show below, this has a detrimental effect on the quality of the output.
+			We therefore omit thismethod from our speed comparisons, and use our imple mentation of Algorithm 0 (na??ve) as the baseline.
+			We implemented our k-best Algorithms 0, 1, and 3 on top of Bikel?s parser and conducted experiments on a 2.4GHz 64-bit AMD Opteron with 32 GB memory.
+			The pro gram is written in Java 1.5 running on the Sun JVM in server mode with a maximum heap size of 5 GB.
+			For thisexperiment, we used sections 02?21 of the Penn Tree bank (PTB) (Marcus et al, 1993) as the training data andsection 23 (2416 sentences) for evaluation, as is now stan dard.
+			We ran Bikel?s parser using its settings to emulate Model 2 of (Collins, 2003).
+			5.1.1 Efficiency We tested our algorithms under various conditions.
+			We first did a comparison of the average parsing time per sentence of Algorithms 0, 1, and 3 on section 23, withk ? 10000 for the standard b

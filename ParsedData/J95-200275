@@ -1,0 +1,8 @@
+erminates.
+    A similar queuing scheme, with the start index order reversed, can be used for the reverse completion step needed in the computation of outer probabilities (Section 5.2).
+    B.3 Efficient Parsing with Large Sparse Grammars During work with a moderate-sized, application-specific natural language grammar taken from the BeRP speech system (Jurafsky, Wooters, Tajchman, Segal, Stolcke, Foster, and Morgan 1994) we had an opportunity to optimize our implementation of the algorithm.
+    Below we relate some of the lessons learned in the process.
+    B.3.1 Speeding up matrix inversions.
+    Both prediction and completion steps make use of a matrix R defined as a geometric series derived from a matrix P. Both P and R are indexed by the nonterminals in the grammar.
+    The matrix P is derived from the SCFG rules and probabilities (either the left-corner relation or the unit production relation).
+    For an application using a fixed grammar the time taken by the precomputation of left-corner and unit prod

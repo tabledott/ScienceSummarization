@@ -1,0 +1,7 @@
+how many times each rule has been seen.
+    Following Och and others, we use heuristics to hypothesize a distribution of possible rules as though we observed them in the training data, a distribution that does not necessarily maximize the likelihood of the training data.5 Och&#8217;s method gives a count of one to each extracted phrase pair occurrence.
+    We likewise give a count of one to each initial phrase pair occurrence, then distribute its weight equally among the rules obtained by subtracting subphrases from it.
+    Treating this distribution as our observed data, we use relative-frequency estimation to obtain P(&#947;  |&#945;) and P(&#945;  |&#947;).
+    Finally, the parameters &#955;i of the log-linear model (18) are learned by minimumerror-rate training (Och 2003), which tries to set the parameters so as to maximize the BLEU score (Papineni et al. 2002) of a development set.
+    This gives a weighted synchronous CFG according to (22) that is ready to be used by the decoder.
+    4 This feature uses

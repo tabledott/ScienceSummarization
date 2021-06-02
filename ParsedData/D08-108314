@@ -1,0 +1,7 @@
+ion variables, and (b) depend only on the input x, so that zi = argmaxziw&#183; f(x, zi, i), where f(x, zi, i) is the feature vector encoding around the ith word (described on the next page).
+    Once we determine the intermediate decision variables, we apply the heuristic rules motivated by compositional semantics (from Table 2) in order to obtain the final polarity y of x.
+    That is, y = C(x, z), where C is the function that applies the compositional inference, either COMPOPR or COMPOMC.
+    For training, there are two issues we need to handle: the first issue is dealing with the hidden variables z.
+    Because the structure of compositional inference C does not allow dynamic programming, it is intractable to perform exact expectationmaximization style training that requires enumerating all possible values of the hidden variables z.
+    Instead, we propose a simple and tractable training rule based on the creation of a soft gold standard for z.
+    In particular, we exploit the fact that in our task, we c

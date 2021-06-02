@@ -1,0 +1,11 @@
+han 5 times in the training data.
+    The first two kinds of features encode prefixes and suffixes less than length 5, and the remaining rare word features encode other morphological characteristics.
+    These features are important for tagging unknown and rare words.
+    The remaining features are the word, POS tag, and NE tag history features, using a window size of 2.
+    Note that the NEi&#8722;2NEi&#8722;1 feature is a composite feature of both the previous and previous-previous NE tags.
+    Table 2 lists the extra features used in our final system.
+    These features have been shown to be useful in other NER systems.
+    The additional orthographic features have proved useful in other systems, for example Carreras et al. (2002), Borthwick (1999) and Zhou and Su (2002).
+    Some of the rows in Table 2 describe sets of contextual predicates.
+    The wi is only digits predicates apply to words consisting of all digits.
+    They encode the length of the digit string with separate predicates for lengths 1&#8

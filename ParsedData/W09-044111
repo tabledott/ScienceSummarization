@@ -1,0 +1,7 @@
+edits needed to align the two phrases according to TERp.
+    In effect, the probability of the paraphrase is used to determine how much to discount the alignment of the two phrases.
+    Specifically, the cost of a phrase substitution between the reference phrase, p1 and the hypothesis phrase p2 is: where w1, w2, w3, and w4 are the 4 free parameters of the edit cost, edit(p1,p2) is the edit cost according to TERp of aligning p1 to p2 (excluding phrase substitutions) and Pr(p1,p2) is the probability of paraphrasing p1 as p2, obtained from the TERp phrase table.
+    The w parameters of the phrase substitution cost may be negative while still resulting in a positive phrase substitution cost, as w2 is multiplied by the log probability, which is always a negative number.
+    In practice this term will dominate the phrase substitution edit cost.
+    This edit cost for phrasal substitutions is, therefore, specified by four parameters, w1, w2, w3 and w4.
+    Only paraphrases specified in the TERp phrase table are cons

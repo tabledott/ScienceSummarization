@@ -1,0 +1,10 @@
+ new input text (for decoding).
+    For phrase translation models (Och and Ney 2002), we induce additional merge/deletion analysis on the basis of base noun phrase parsing of Arabic.
+    One major asymmetry between Arabic and English is caused by more frequent use of the determiner Al# in Arabic compared with its counterpart the in English.
+    We apply Al#-deletion to Arabic noun phrases so that only the first occurrence of Al# in a noun phrase is retained.
+    All instances of Al# occurring before a proper noun &#8211; as in Al# qds, whose literal translation is the Jerusalem &#8211; are also deleted.
+    Unlike the automatic induction of morphological analysis described in 3.2.1, Al#-deletion analysis is manually induced.
+  
+  
+    System performances are evaluated on LDCdistributed Multiple Translation Arabic Part I consisting of 1,043 segments derived from AFP and Xinhua newswires.
+    Translation qualities are measured by uncased BLEU (Papineni et al. 2002) with 4 reference translations, sysids: ahb, ah

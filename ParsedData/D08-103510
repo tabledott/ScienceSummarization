@@ -1,0 +1,9 @@
+ probability mass on a compact subset of words.
+    Language models that spread their probability mass over a broad set of words will induce a lower likelihood.
+    This is consistent with the principle of lexical cohesion.
+    Thus far, we have described a segmentation in terms of two parameters: the segment indices z, and the set of language models &#920;.
+    For the task of segmenting documents, we are interested only in the segment indices, and would prefer not to have to search in the space of language models as well.
+    We consider two alternatives: taking point estimates of the language models (Section 3.1), and analytically marginalizing them out (Section 3.2).
+    One way to handle the language models is to choose a single point estimate for each set of segmentation points z.
+    Suppose that each language model is drawn from a symmetric Dirichlet prior: &#952;j &#8212; Dir(&#952;0).
+    Let nj be a vector in which each element is the sum of the lexical counts over all the sentences in segment j: n

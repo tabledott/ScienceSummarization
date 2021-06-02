@@ -1,0 +1,7 @@
+ bottom-up according to the grammar rules.
+    When the parsing cost3 comes only from the features within a subtree (TM cost, in our case), the parser will find the optimal tree by keeping the single best subtree for each tuple.
+    When the cost depends on the features outside of a subtree, we need to keep all the subtrees for possible different outside features (boundary words for the trigram LM cost) to obtain the optimal tree.
+    Instead of keeping all the subtrees, we only retain subtrees within a beam width for each input-substring.
+    Since the outside features are not considered for the beam pruning, the optimality of the parse is not guaranteed, but the required memory size is reduced. t-table pruning: Given a foreign (Chinese) sentence to the decoder, we only consider English wordsfor each foreign word such that P is high.
+    In addition, only limited part-of-speech labels are considered to reduce the number of possible decoded-tree structures.
+    Thus we only use the top-5 (,) pairs ranked by N

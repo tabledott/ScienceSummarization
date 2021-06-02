@@ -1,0 +1,9 @@
+v both derive from the node q. Denote the nonterminal label on q by f(q).
+    Then for any node q = (s, t, u, v), define as the maximum probability of any derivation from i that successfully parses both es t and cu v. Then the best parse of the sentence pair has probability 60,T,o,v(S).
+    The algorithm computes 60,T,o,v(S) using the following recurrences.
+    Note that we generalize argmax to the case where maximization ranges over multiple indices, by making it vector-valued.
+    Also note that [] and 0 are simply constants, written mnemonically.
+    The condition (S - s)(t - S) + (U - u)(v - U) 0 is a way to specify that the substring in one, but not both, languages may be split into an empty string f and the substring itself; this ensures tha t the recursion terminates, but permits words that have no match in the other language to map to an &#8364; instead.
+  
+  
+    Initialize by setting the root of the parse tree to qi = (0, T, 0, V) and its nonterminal label to t(qi) = S. The remaining descendants in 

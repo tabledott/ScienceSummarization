@@ -1,0 +1,7 @@
+.
+    In this article we take a different approach, by using a supertagger (Bangalore and Joshi 1999) to perform step one.
+    Clark and Curran (2004a) describe the supertagger, which uses log-linear models to define a distribution over the lexical category set for each local five-word context containing the target word (Ratnaparkhi 1996).
+    The features used in the models are the words and POS tags in the five-word window, plus the two previously assigned lexical categories to the left.
+    The conditional probability of a sequence of lexical categories, given a sentence, is then defined as the product of the individual probabilities for each category.
+    The most probable lexical category sequence can be found efficiently using a variant of the Viterbi algorithm for HMM taggers.
+    We restrict the categories which can be assigned to a word by using a tag dictionary: for words seen at least k times in the training data, the tagger can only assign categories which have been seen with the word in the data.

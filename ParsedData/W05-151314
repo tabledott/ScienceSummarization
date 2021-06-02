@@ -1,0 +1,7 @@
+usual reduce actions into smaller pieces (CHECK and BUILD), and uses two separate passes (not including the POS tagging pass) for determining chunks and higher syntactic structures separately.
+    Finally, there have been other deterministic shift-reduce parsers introduced recently, but their levels of accuracy have been well below the stateof-the-art.
+    The parser in Kalt (2004) uses a similar algorithm to the one described here, but the classification task is framed differently.
+    Using decision trees and fewer features, Kalt&#8217;s parser has significantly faster training and parsing times, but its accuracy is much lower than that of our parser.
+    Kalt&#8217;s parser achieves precision and recall of about 77% and 76%, respectively (with automatically tagged text), compared to our parser&#8217;s 86% (see section 4).
+    The parser of Wong and Wu (1999) uses a separate NP-chunking step and, like Ratnaparkhi&#8217;s parser, does not require a binary transracy, and time required to parse the test set.
+ 

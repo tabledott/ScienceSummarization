@@ -1,0 +1,6 @@
+ntions to the set of Wikipedia titles W = {t1, ... , t|W|}.
+    Often, mentions correspond to a concept without a Wikipedia page; we treat this case by adding a special null title to the set W. The D2W task can be visualized as finding a many-to-one matching on a bipartite graph, with mentions forming one partition and Wikipedia titles the other (see Figure 1).
+    We denote the output matching as an N-tuple &#915; = (t1, ... , tN) where ti is the output disambiguation for mention mi.
+    A local D2W approach disambiguates each mention mi separately.
+    Specifically, let 0(mi, tj) be a score function reflecting the likelihood that the candidate title tj E W is the correct disambiguation for mi E M. A local approach solves the following optimization problem: Local D2W approaches, exemplified by (Bunescu and Pasca, 2006) and (Mihalcea and Csomai, 2007), utilize 0 functions that assign higher scores to titles with content similar to that of the input document.
+    We expect, all else being equal, that the corre

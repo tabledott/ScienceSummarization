@@ -1,0 +1,7 @@
+nt for a single engineer to label with minimal effort.
+    For reasons of space, for each target domain we show adaptation from only the two domains on which SCL-MI performed the worst relative to the supervised baseline.
+    For example, the book domain shows only results from electronics and kitchen, but not DVDs.
+    As a baseline, we used the label of the source domain classifier as a feature in the target, but did not use any SCL features.
+    We note that the baseline is very close to just using the source domain classifier, because with only 50 target domain instances we do not have enough data to relearn all of the parameters in w. As we can see, though, relearning the 50 parameters in v is quite helpful.
+    The corrected model always improves over the baseline for every possible transfer, including those not shown in the figure.
+    The idea of using the regularizer of a linear model to encourage the target parameters to be close to the source parameters has been used previously in domain adaptation

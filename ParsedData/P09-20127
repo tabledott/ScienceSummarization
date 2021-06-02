@@ -1,0 +1,5 @@
+dicates whether the subtree rooted at that node (a height one CFG rule, at minimum) is part of the subtree containing its parent.
+    The Gibbs sampler considers every non-terminal, non-root node c of each parse tree in turn, freezing the rest of the training data and randomly choosing whether to join the subtrees above c and rooted at c (outcome h1) or to split them (outcome h2) according to the probability ratio &#966;(h1)/(&#966;(h1) + &#966;(h2)), where &#966; assigns a probability to each of the outcomes (Figure 2).
+    Let sub(n) denote the subtree above and including node n and sub(n) the subtree rooted at n; o is a binary operator that forms a single subtree from two adjacent ones.
+    The outcome probabilities are: where t = sub(c) o sub(c).
+    Under the CRP, the subtree probability &#952;(t) is a function of the current state of the rest of the training corpus, the appropriate base measure Groot(t), and the concentration parameter &#945;: where zt is the multiset of subtrees in the frozen portion o

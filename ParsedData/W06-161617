@@ -1,0 +1,9 @@
+rpus has been part-of-speech tagged using a Memory-Based-Tagger (Daelemans et al., 1996).
+    It consists of 13,300 sentences with an average length of 14.6 tokens.
+    The data is non-projective, more specifically 5.4% of all dependencies are crossed by at least one other dependency.
+    It contains approximately 6000 sentences more than the Alpino corpus used by Malouf and van Noord (2004).
+    The training set was divided into a 10% development set (dev) while the remaining 90% is used as a training and cross-validation set (cross).
+    Feature sets, constraints and training parameters were selected through training on cross and optimising against dev.
+    Our final accuracy scores and runtime evaluations were acquired using a nine-fold crossvalidation on cross All our experiments were conducted on a Intel Xeon with 3.8 Ghz and 4Gb of RAM.
+    We used the open source Mixed Integer Programming library lp solve4 to solve the Integer Linear Programs.
+    Our code ran in Java and called the JNIwrapper around t

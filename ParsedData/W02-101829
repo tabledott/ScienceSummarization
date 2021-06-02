@@ -1,0 +1,10 @@
+l 1 is fairly unsophisticated, we have found that it produces in practice fairly good alignments.
+    However, this model is clearly unsuited for translating unseen sentences as it imposes no constraints on the ordering of the phrases associated with a given concept.
+    In order to account for this, we modify slightly the generative process in Model 1 so as to account for distortions.
+    The generative story of Model 2 is this: a pair of phrases , according to the distribution , whereandeach contain at least one word.
+    Remove then from. betweenand , wheregives the length of the phrase.
+    We hence create the alignment between the two phrasesand with probability where is a position-based distortion distribution.
+    Model 2 implements an absolute position-based distortion model, in the style of IBM Model 3.
+    We have tried many types of distortion models.
+    We eventually settled for the model discussed here because it produces better translations during decoding.
+    Since the number of factors invol

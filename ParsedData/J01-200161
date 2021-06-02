@@ -1,0 +1,9 @@
+l for at least one word.
+    For each stem, we make a list of those suffixes that appear with it, and we call an alphabetized list of such suffixes (separated by an arbitrary symbol, such as period) the stem's signature; we may think of it as a miniparadigm.
+    For example, in one English corpus, the stems despair, pity, appeal, and insult appear with the suffixes ing and ingly.
+    However, they also appear as freestanding words, and so we use the word NULL, to indicate a zero suffix.
+    Thus their signature is NULL.ing.ingly.
+    Similarly, the stems assist and ignor are assigned the signature ance.ant.ed.ing in a certain corpus.
+    Because each stem is associated with exactly one signature, we will also use the term signature to refer to the set of affixes along with the associated set of stems when no ambiguity arises.
+    We establish a data structure of all signatures, keeping track for each signature of which stems are associated with that signature.
+    As an initial heuristic, subject to correctio

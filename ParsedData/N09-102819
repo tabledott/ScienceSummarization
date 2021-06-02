@@ -1,0 +1,9 @@
+ 
+  
+    We carried out all our experiments based on a stateof-the-art phrase-based statistical machine translation system.
+    When training a system for English to any of the 5 SOV languages, the word alignment step includes 3 iterations of IBM Model-1 training and 2 iterations of HMM training.
+    We do not use Model-4 because it is slow and it does not add much value to our systems in a pilot study.
+    We use the standard phrase extraction algorithm (Koehn et.al., 2003) to get all phrases up to length 5.
+    In addition to the regular distance distortion model, we incorporate a maximum entropy based lexicalized phrase reordering model (Zens and Ney, 2006) as a feature used in decoding.
+    In this model, we use 4 reordering classes (+1, &gt; 1, &#8722;1, &lt; &#8722;1) and words from both source and target as features.
+    For source words, we use the current aligned word, the word before the current aligned word and the next aligned word; for target words, we use the previous two words in the immediate 

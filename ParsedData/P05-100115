@@ -1,0 +1,8 @@
+n is essentially the same as SVD-ASO in Figure 1, but with the SVD step performed separately for each group.
+    See (Ando and Zhang, 2004) for the precise formulation.
+    In addition, we regularize only those components of wt which correspond to the non-negative part of ut.
+    The motivation is that positive weights are usually directly related to the target concept, while negative ones often yield much less specific information representing &#8216;the others&#8217;.
+    The resulting extension, in effect, only uses the positive components ofUin the SVD computation.
+    As is commonly done, we encode chunk information into word tags to cast the chunking problem to that of sequential word tagging.
+    We perform Viterbistyle decoding to choose the word tag sequence that maximizes the sum of tagging confidence values.
+    In all settings (including baseline methods), the loss function is a modification of the Huber&#8217;s robust loss for regression: L(p, y) = max (0,1 &#8212; py)2 if py &gt; &#8212;1; and &

@@ -1,0 +1,10 @@
+parable corpora.
+    One simple way to alleviate this problem is to bootstrap: after we&#8217;ve extracted some in-domain data, we can use it to learn a new dictionary and go back and extract again.
+    Bootstrapping was also successfully applied to this problem by Fung and Cheung (2004).
+    We performed bootstrapping iterations starting from two very small corpora: 100k English tokens and 1M English tokens, respectively.
+    After each iteration, we trained MT performance improvements for Chinese-English.
+    (and evaluated) an MT system on the initial data plus the data extracted in that iteration.
+    We did not use any of the data extracted in previous iterations since it is mostly a subset of that extracted in the current iteration.
+    We iterated until there were no further improvements in MT performance on our development data.
+    Figures 10 and 11 show the sizes of the data extracted at each iteration, for both initial corpus sizes.
+    Iteration 0 is the one that uses the dictionary learned from t

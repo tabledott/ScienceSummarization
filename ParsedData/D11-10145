@@ -1,0 +1,9 @@
+egimes.
+    These representations can then be used for subsequent tasks.
+    We first describe neural word representations and then proceed to review a related recursive model based on autoencoders, introduce our recursive autoencoder (RAE) and describe how it can be modified to jointly learn phrase representations, phrase structure and sentiment distributions.
+    We represent words as continuous vectors of parameters.
+    We explore two settings.
+    In the first setting we simply initialize each word vector x E Rn by sampling it from a zero mean Gaussian distribution: x &#8212; N(0, U2).
+    These word vectors are then stacked into a word embedding matrix L E Rn&#215;|V |, where |V  |is the size of the vocabulary.
+    This initialization works well in supervised settings where a network can subsequently modify these vectors to capture certain label distributions.
+    In the second setting, we pre-train the word vectors with an unsupervised neural language model (Bengio et al., 2003; Collobert and Weston, 2

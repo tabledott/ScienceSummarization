@@ -1,0 +1,7 @@
+ template, it is possible that the parser will use other trees to produce the correct bracketing.
+    We used a CKY-style parser similar to the one described in (Schabes and Waters, 1996), with a modification to ensure completeness (because foot nodes are treated as empty, which CKY prohibits) and another to reduce useless substitutions.
+    We also extended the parser to simulate sister-adjunction as regular adjunction and compute the flag f which distinguishes the first modifier from subsequent modifiers.
+    We use a beam search, computing the score of an item [TI, i, j] by multiplying it by the prior probability P(TI) (Goodman, 1997); any item with score less than 10-5 times that of the best item in a cell is pruned.
+    Following (Collins, 1997), words occurring fewer than four times in training were replaced with the symbol *UNKNOWN* and tagged with the output of the part-of-speech tagger described in (Ratnaparkhi, 1996).
+    Tree templates occurring only once in training were ignored entirely.
+    We f

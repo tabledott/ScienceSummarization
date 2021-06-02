@@ -1,0 +1,8 @@
+tion and MT decoding.
+    One way to improve the consistency of the CRF model is to make use of external lexicons (which are not part of the segmentation training data) to add lexicon-based features.
+    All the features we use are listed in Table 6.
+    Our linguistic features are adopted from (Ng and Low, 2004) and (Tseng et al., 2005).
+    There are three categories of features: character identity n-grams, morphological and character reduplication features.
+    Our lexicon-based features are adopted from (Shi and Wang, 2007), where LBegin(C0), LMid(C0) and LEnd(C0) represent the maximum length of words found in a lexicon that contain the current character as either the first, middle or last character, and we group any length equal or longer than 6 together.
+    The linguistic features help capturing words that were unseen to the segmenter; while the lexicon-based features constrain the segmenter with external knowledge of what sequences are likely to be words.
+    We built a CRF segmenter with all the feat

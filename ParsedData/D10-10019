@@ -1,0 +1,6 @@
+sentence of n words w1 ... wn to a tag sequence t1 ... tn, where each ti is chosen from a set T of possible tags.
+    We assume a trigram tagger, where a tag sequence is represented through decisions h(A, B) &#8594; C, ii where A, B, C &#8712; T, and i &#8712; {3 ... n}.
+    Each production represents a transition where C is the tag of word wi, and (A, B) are the previous two tags.
+    The index set for tagging is Itag = {h(A,B) &#8594; C,ii : A,B,C &#8712; T, 3 &#8804; i &#8804; n} Note that we do not need transitions for i = 1 or i = 2, because the transition h(A, B) &#8594; C, 3i specifies the first three tags in the sentence.5 Each tag sequence is represented as a vector z = {zr : r &#8712; Itag}, and we denote the set of valid tag sequences, a subset of {0,1}|z1ag|, as Z.
+    Given a parameter vector 0 = {0r : r &#8712; Itag}, the optimal tag sequence is arg maxzEZ z &#183; 0.
+    As a modification to the above approach, we will find it convenient to introduce extended index sets for both the CFG and POS

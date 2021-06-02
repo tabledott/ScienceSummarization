@@ -1,0 +1,6 @@
+es an interpretation function / for mapping constants and predicates into domain individuals and relations.
+    Also left implicit is a function assigning values to variables, which is required for the evaluation of lambda abstracts as characteristic functions.
+    Constructs in the 'standard' predicate logic subset of QLF receive their semantics with the usual evaluation rules, for example: The evaluation rule for a formula F with a scoping variable instantiated to [1,3, .] and containing a term T=term(I,C,R,Q,A) is as follows: &#8226; [[[1)3,...] :F]]=1 iff [[Q(R' ,F')]]=1, and 0 otherwise, where Ft' is X-(and(R(X),X=A))[X/I], and F' is X&amp;quot;( [3, ..
+    .
+    ]:and(F,X=A))[X/T, X/I] This evaluation rule states that a formula with a scoping constraint list may be evaluated by 'discharging' the term for the first index on the list with respect to a formula with a reduced scoping constraint.
+    The rule discharges the term by abstracting over occurrences of the term and its index, and applying the gene

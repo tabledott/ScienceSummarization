@@ -1,0 +1,7 @@
+ter.
+    For example, consider the QLF of &#8220;Utah borders Idaho&#8221; and assume that the current partition is Ax2x3.borders(n1) &#8743; nsubj(n1, x2) &#8743; dobj(n1, x3), Utah(n2), Idaho(n3).
+    Then the following partition is A-reducible from the first part in the above partition: Ax3.borders(n1) &#8743; nsubj(n1, n2) &#8743; Utah(n2) &#8743; dobj(n1, x3), Idaho(n3).
+    Whether this new partition is feasible depends on whether the core form of the new part Ax3.borders(n1) &#8743; nsubj(n1, n2) &#8743; Utah(n2) &#8743; dobj(n1, x3) (i.e. borders(n1) &#8743; nsubj(n1, n2) &#8743; Utah(n2)) is contained in some lambda-form cluster.
+    Algorithm 1 gives pseudo-code for our algorithm.
+    Given part p, finding partitions that are Areducible from p and feasible can be done in time O(5T), where 5 is the size of the clustering in the number of core forms and T is the maximum number of atoms in a core form.
+    We omit the proof here but point out that it is related to the unordered subtree matching problem

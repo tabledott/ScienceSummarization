@@ -1,0 +1,7 @@
+CRFs can be reduced into a simple linear combinations over all global features. where LT (hw, ti) and RT (hw, ti) denote a set of tokens each of which connects to the token hw, ti from the left and the right respectively.
+    Note that initial costs of two virtual tokens, &#945;(wbos,tbos) and &#946;(weos,teos), are set to be 1.
+    A normalization constant is then given by Zx = &#945;(weos,teos)(= &#946;(wbos,tbos)).
+    We attempt two types of regularizations in order to avoid overfitting.
+    They are a Gaussian prior (L2norm) (Chen and Rosenfeld, 1999) and a Laplacian prior (L1-norm) (Goodman, 2004; Peng and McCallum, 2004) CRFs are trained using the standard maximum likelihood estimation, i.e., maximizing the loglikelihood L&#923; of a given training set T = {hxj,yji}N j=1, Below, we refer to CRFs with L1-norm and L2norm regularization as L1-CRFs and L2-CRFs respectively.
+    The parameter C E R+ is a hyperparameter of CRFs determined by a cross validation.
+    L1-CRFs can be reformulated into the constr

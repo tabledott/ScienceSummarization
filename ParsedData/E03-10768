@@ -1,0 +1,11 @@
+
+    This would lead us to break up Aktionsplan, but not Freitag.
+    See Figure 2 for illustration of this method.
+    This approach requires a translation lexicon.
+    The easiest way to obtain a translation lexicon is to learn it from a parallel corpus.
+    This can be done with the toolkit Giza [Al-Onaizan et al., 1999], which establishes word-alignments for the sentences in the two languages.
+    With this translation lexicon we can perform the method alluded to above: For each German word, we consider all splitting options.
+    For each splitting option, we check if it has translations on the English side.
+    To deal with noise in the translation table, we demand that the translation probability of the English word given the German word be at least 0.01.
+    We also allow each English word to be considered only once: If it is taken as evidence for correspondence to the first part of the compound, it is excluded as evidence for the other parts.
+    If multiple options match the English, we select the on

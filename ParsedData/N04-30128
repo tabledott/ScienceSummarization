@@ -1,0 +1,8 @@
+sure shows the actual paths found through WordNet, while the tracing for lesk shows the gloss overlaps in WordNet found for the two concepts and their nearby relatives.
+    The vector tracing shows the word vectors that are used to create the gloss vector of a concept.
+  
+  
+    Similarity.pm is the super class of all modules, and provides general services used by all of the measures such as validation of synset identifier input, tracing, and caching of results.
+    There are four modules that provide all of the functionality required by any of the supported measures: PathFinder.pm, ICFinder.pm, DepthFinder.pm, and LCSFinder.pm.
+    PathFinder.pm provides getAllPaths(), which finds all of the paths and their lengths between two input synsets, and getShortestPath() which determines the length of the shortest path between two concepts.
+    ICFinder.pm includes the method IC(), which gets the information content value of a synset. probability() and getFrequency() find the probability and frequency count of a syn

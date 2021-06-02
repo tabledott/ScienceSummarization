@@ -1,0 +1,9 @@
+ Our syntax-based alignment algorithm, whose pseudocode is shown in Figure 4, works in three steps.
+    In the first step (lines 1-5 in Figure 4), we parse every sentence in a sentence group and merge all resulting parse trees into a parse forest.
+    In the second step (line 6), we extract an FSA from the parse forest and then we compact it further using a limited form of bottom-up alignment, which we call squeezing (line 7).
+    In what follows, we describe each step in turn.
+    Top-down merging.
+    Given a sentence group, we pass each of the 11 sentences to Charniak&#8217;s (2000) parser to get 11 parse trees.
+    The first step in the algorithm is to merge these parse trees into one parse-forest-like structure using a top-down process.
+    Let&#8217;s consider a simple case in which the parse forest contains one single tree, Tree 1 in Figure 5, and we are adding Tree 2 to it.
+    Since the two trees correspond to sentences that have the same meaning and since both trees expand an S node into an NP and a

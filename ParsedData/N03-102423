@@ -1,0 +1,7 @@
+an estimate the &#8220;goodness&#8221; of the MT output by measuring the n-gram overlap between the output and the reference set.
+    The higher the overlap, i.e., the closer an output string is to a set of reference translations, the better a translation it is.
+    We hypothesize that our FSAs provide a better representation against which the outputs of MT systems can be evaluated because they encode not just a few but thousands of equivalent semantic formulations of the desired meaning.
+    Ideally, if the FSAs we build accept all and only the correct renderings of a given meaning, we can just give a test sentence to the reference FSA and see if it is accepted by it.
+    Since this is not a realistic expectation, we measure the edit distance between a string and an FSA instead: the smaller this distance is, the closer it is to the meaning represented by the FSA.
+    To assess whether our FSAs are more appropriate representations for evaluating the output of MT systems, we perform the following experiment.
+ 

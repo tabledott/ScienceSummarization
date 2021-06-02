@@ -1,0 +1,8 @@
+entences that have been annotated by humans as part of the Penn BioIE project (PennBioIE, 2005).
+    We use the same 561sentence test set in all our experiments.
+    The partof-speech tag set for this data is a superset of the Penn Treebank&#8217;s including the two new tags HYPH (for hyphens) and AFX (for common postmodifiers of biomedical entities such as genes).
+    These tags were introduced due to the importance of hyphenated entities in biomedical text, and are used for 1.8% of the words in the test set.
+    Any tagger trained only on WSJ text will automatically predict wrong tags for those words.
+    Since SCL is really a method for inducing a set of cross-domain features, we are free to choose any feature-based classifier to use them.
+    For our experiments we use a version of the discriminative online large-margin learning algorithm MIRA (Crammer et al., 2006).
+    MIRA learns and outputs a linear classification score, s(x, y; w) = w &#183; f(x, y), where the feature representation f can contain arb

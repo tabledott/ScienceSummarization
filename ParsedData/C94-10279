@@ -1,0 +1,9 @@
+ network is trained on a tagged corpus.
+  Target activations are 0 for all output units, excepted for the unit which corresponds to the correct tag, for which it is 1.
+  A slightly modified version of the backpropaga- tion algorithm with momentum term which has been presented in the last section is used: if the difference between the activation of an output unit j and the cor- responding target output is below a predefined thresh- old (we used 0.1), the error signal ~pJ is set to zero.
+  In this way the network is forced to pay more attention to larger error signals.
+  This resulted in an improvement of the tagging accuracy by more than 1 percent.
+  Network architectures with and without hidden lay- ers have been trained and tested.
+  In general, MLP- networks with hidden layers are more powerful than networks without one, but they also need more train- ing and there is a higher risk of overlearning 4.
+  As will be shown in the next section, the Net-Tagger did not profit from a hidden layer.
+  In both network

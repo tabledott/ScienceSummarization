@@ -1,0 +1,6 @@
+5 are that with syntax alone, the system is quite accurate in detecting repairs, and with syntax and semantics working together, it is accurate at detecting false positives.
+    However, since the coverage of syntax and semantics will always be lower than the coverage of syntax alone, we cannot compare these rates directly.
+    Since multiple repairs and false positives can occur in the same sentence, the pattern matching process is constrained to prefer fewer repairs to more repairs, and shorter repairs to longer repairs.
+    This is done to favor an analysis that deletes the fewest words from a sentence.
+    It is often the case that more drastic repairs would result in a syntactically and semantically well-formed sentence, but not the sentence that the speaker intended.
+    For instance, the sentence &amp;quot;show me &lt;flights&gt; daily flights to boston&amp;quot; could be repaired by deleting the words &amp;quot;flights daily,&amp;quot; and would then yield a grammatical sentence, but in this case the 

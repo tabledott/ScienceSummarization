@@ -1,0 +1,9 @@
+et is used by Zettlemoyer and Collins (2005).
+    Decoding of the model can be done in cubic time with respect to sentence length using the Viterbi algorithm.
+    An Earley chart is used for keeping track of all derivations that are consistent with the input (Stolcke, 1995).
+    The maximum conditional likelihood criterion is used for estimating the model parameters, Ai.
+    A Gaussian prior (a2 = 1) is used for regularizing the model (Chen and Rosenfeld, 1999).
+    Since gold-standard derivations are not available in the training data, correct derivations must be treated as hidden variables.
+    Here we use a version of improved iterative scaling (IIS) coupled with EM (Riezler et al., 2000) for finding an optimal set of parameters.1 Unlike the fully-supervised case, the conditional likelihood is not concave with respect to A, so the estimation algorithm is sensitive to initial parameters.
+    To assume as little as possible, A is initialized to 0.
+    The estimation algorithm requires statistics that depend 

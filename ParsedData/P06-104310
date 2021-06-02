@@ -1,0 +1,11 @@
+the parser and reranker are built from WSJ training data) and parse the sentences from NANC with the 50-best (Charniak and Johnson, 2005) parser.
+    Next, the 50-best parses are reordered by the reranker.
+    Finally, the 1-best parses after reranking are combined with the WSJ training set to retrain the firststage parser.1 McClosky et al. (2006) find that the self-trained models help considerably when parsing WSJ.
+  
+  
+    We use the Charniak and Johnson (2005) reranking parser in our experiments.
+    Unless mentioned otherwise, we use the WSJ-trained reranker (as opposed to a BROWN-trained reranker).
+    To evaluate, we report bracketing f-scores.2 Parser f-scores reported are for sentences up to 100 words long, while reranking parser f-scores are over all sentences.
+    For simplicity and ease of comparison, most of our evaluations are performed on the development section of BROWN.
+    Our first experiment examines the performance of the self-trained parsers.
+    While the parsers are created entirely fr

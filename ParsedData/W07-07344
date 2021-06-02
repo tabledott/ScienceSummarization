@@ -1,0 +1,7 @@
+s an alignment as defined above.
+    If more than one maximal cardinality alignment is found, METEOR selects the alignment for which the word order in the two strings is most similar (the mapping that has the least number of &#8220;crossing&#8221; unigram mappings).
+    The order in which the modules are run reflects wordmatching preferences.
+    The default ordering is to first apply the &#8220;exact&#8221; mapping module, followed by &#8220;porter stemming&#8221; and then &#8220;WN synonymy&#8221;.
+    Once a final alignment has been produced between the system translation and the reference translation, the METEOR score for this pairing is computed as follows.
+    Based on the number of mapped unigrams found between the two strings (m), the total number of unigrams in the translation (t) and the total number of unigrams in the reference (r), we calculate unigram precision P = m/t and unigram recall R = m/r.
+    We then compute a parameterized harmonic mean of P and R (van Rijsbergen, 1979): Precision, recal

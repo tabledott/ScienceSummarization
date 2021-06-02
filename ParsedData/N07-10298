@@ -1,0 +1,9 @@
+ recognition (Siu and Gish, 1999).
+    The logit model, which models the log odds of an event as a linear function of the features, can be used in confidence estimation.
+    The confidence for a system generating a hypothesis may be modeled as (3) where each system has weights , and is the th feature for system and hypothesis .
+    The features used in this work were: If the system did not generate the hypothesis , the confidence is set to zero.
+    To prevent overflow in exponentiating the summation in Equation 3, the features have to be scaled.
+    In the experiments, feature scaling factors were estimated from the tuning data to limit the feature values between .
+    The same scaling factors have to be applied to the features obtained from the test data.
+    The total confidence score of hypothesis is obtained from the system confidences as where is the number of systems generating the hypothesis (i.e., the number of non-zero for ) and is the number of systems.
+    The weights through are constrained to su

@@ -1,0 +1,7 @@
+ot of the tree), the function returns the null value (NULL).
+    We might write another function that returns the nonterminal label of the closest sibling to the left of A, and NULL if no such node exists.
+    We can then condition the probability of the production on the values that were returned by the set of functions.
+    Recall that we are working with a factored grammar, so some of the nodes in the factored tree have nonterminal labels that were created by the factorization, and may not be precisely what we want for conditioning purposes.
+    In order to avoid any confusions in identifying the nonterminal label of a particular rule production in either its factored or rionfactored version, we introduce the function constituent (A) for every nonterminal in the factored grammar Gf, which is simply the label of the constituent whose factorization results in A.
+    For example, in Figure 2, constituent (NP-DT-NN) is simply NP.
+    Note that a function can return different values depending upon the location 

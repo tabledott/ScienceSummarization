@@ -1,0 +1,8 @@
+wise.
+    The co-training algorithm is illustrated in Figure 2.
+    In the algorithm, the class distribution in the labeled data is maintained by balancing the parameter values of p and n at each iteration.
+    The intuition of the co-training algorithm is that if one classifier can confidently predict the class of an example, which is very similar to some of labeled ones, it can provide one more training example for the other classifier.
+    But, of course, if this example happens to be easy to be classified by the first classifier, it does not mean that this example will be easy to be classified by the second classifier, so the second classifier will get useful information to improve itself and vice versa (Kiritchenko and Matwin, 2001).
+    In the co-training algorithm, a basic classification algorithm is required to construct Cen and C,n.
+    Typical text classifiers include Support Vector Machine (SVM), Na&#239;ve Bayes (NB), Maximum Entropy (ME), K-Nearest Neighbor (KNN) , etc.
+    In this study, we adop

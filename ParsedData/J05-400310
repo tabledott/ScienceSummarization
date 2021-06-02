@@ -1,0 +1,10 @@
+e foreign one.
+    This step of the process emphasizes recall rather than precision.
+    For each foreign document, we do not attempt to find the best-matching English document, but rather a set of similar English documents.
+    The subsequent components of the system are robust enough to filter out the extra noise introduced by the selection of additional (possibly bad) English documents.
+    We perform document selection using the Lemur IR toolkit3 (Ogilvie and Callan 2001).
+    We first index all the English documents into a database.
+    For each foreign document, we take the top five translations of each of its words (according to our probabilistic dictionary) and create an English language query.
+    The translation probabilities are only used to choose the word translations; they do not appear in the query.
+    We use the query to run TF-IDF retrieval against the database, take the top 20 English documents returned by Lemur, and pair each of them with the foreign query document.
+    This document match

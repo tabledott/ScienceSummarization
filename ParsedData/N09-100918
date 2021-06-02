@@ -1,0 +1,12 @@
+Eq.
+    3) with respect to the variational parameters.
+    Our variational inference algorithm is derived similarly to that of Cohen et al. (2008).
+    Because we wish to learn the values of &#181; and E, we embed variational inference as the E step within a variational EM algorithm, shown schematically in Fig.
+    4.
+    In our experiments, we use this variational EM algorithm on a training set, and then use the normal experts&#8217; means to get a point estimate for &#952;, the grammar weights.
+    This is called empirical Bayesian estimation.
+    Our approach differs from maximum a posteriori (MAP) estimation, since we re-estimate the parameters of the normal experts.
+    Exact MAP estimation is probably not feasible; a variational algorithm like ours might be applied, though better performance is expected from adjusting the SLN to fit the data.
+  
+  
+    Our experiments involve data from two treebanks: the Wall Street Journal Penn treebank (Marcus et al., 1993) and the Chinese treebank (Xue et al., 2004).

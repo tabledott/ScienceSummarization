@@ -1,0 +1,12 @@
+her variables.
+    Loopy BP works not with random samples but their expectations.
+    Hence it is approximate but tends to converge much faster than Gibbs sampling will mix.
+    It is convenient to visualize an undirected factor graph (Fig.
+    1), in which each factor is connected to the variables it depends on.
+    Many factors may connect to&#8212;and hence influence&#8212;a given variable such as L34.
+    If X is a variable or a factor, N(X) denotes its set of neighbors.
+    Given an input sentence W and a parameter vector &#952;, the collection of factors Fm defines a probability distribution (1).
+    The parser should determine the values of the individual variables.
+    In other words, we would like to marginalize equation (1) to obtain the distribution p(L34) over L34 = true vs. false, the distribution p(T4) over tags, etc.
+    If the factor graph is acyclic, then BP computes these marginal distributions exactly.
+    Given 8Or, more precisely&#8212;this is the tricky part&#8212;based on versions of th

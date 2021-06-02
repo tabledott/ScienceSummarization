@@ -1,0 +1,8 @@
+ a semantic space for representing the meanings of individual words.
+    The semantic space we used in our experiments was built on a lemmatised version of the BNC.
+    Following previous work (Bullinaria and Levy, 2007), we optimized its parameters on a word-based semantic similarity task.
+    The task involves examining the degree of linear relationship between the human judgments for two individual words and vector-based similarity values.
+    We experimented with a variety of dimensions (ranging from 50 to 500,000), vector component definitions (e.g., pointwise mutual information or log likelihood ratio) and similarity measures (e.g., cosine or confusion probability).
+    We used WordSim353, a benchmark dataset (Finkelstein et al., 2002), consisting of relatedness judgments (on a scale of 0 to 10) for 353 word pairs.
+    We obtained best results with a model using a context window of five words on either side of the target word, the cosine measure, and 2,000 vector components.
+    The latter were the most

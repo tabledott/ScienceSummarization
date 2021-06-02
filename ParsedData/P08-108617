@@ -1,0 +1,7 @@
+ering the 0.5 million most frequent words in the vocabulary of an English corpus with 31 billion tokens into 1,000 clusters, one iteration takes approximately 30 minutes on 200 workers.
+    When scaling up the vocabulary and corpus sizes, the current bottleneck of our implementation is loading the current clustering into memory.
+    While the memory requirements decrease with each iteration, during the first few iterations a worker typically still needs approximately 2 GB of memory to load the clustering generated in the previous iteration when training 1,000 clusters on the 31 billion token corpus.
+  
+  
+    We trained a number of predictive class-based language models on different Arabic and English corpora using clusterings trained on the complete data of the same corpus.
+    We use the distributed training and application infrastructure described in (Brants et al., 2007) with modifications to allow the training of predictive class-based models and their application in the decoder of the machine translatio

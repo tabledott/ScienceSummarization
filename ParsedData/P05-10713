@@ -1,0 +1,10 @@
+ &#8216;my&#8217;).
+    In our approach, tokenizing and morphologically tagging (including part-of-speech tagging) are the same operation, which consists of three phases.
+    First, we obtain from our morphological analyzer a list of all possible analyses for the words of a given sentence.
+    We discuss the data and our lexicon in more detail in Section 4.
+    Second, we apply classifiers for ten morphological features to the words of the text.
+    The full list of features is shown in Figure 2, which also identifies possible values and which word classes (POS) can express these features.
+    We discuss the training and decoding of these classifiers in Section 5.
+    Third, we choose among the analyses returned by the morphological analyzer by using the output of the classifiers.
+    This is a non-trivial task, as the classifiers may not fully disambiguate the options, or they may be contradictory, with none of them fully matching any one choice.
+    We investigate different ways of making this choice in Sec

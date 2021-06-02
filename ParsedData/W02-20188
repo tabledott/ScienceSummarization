@@ -1,0 +1,8 @@
+ direction is orthogonal (or, if an approximate line search is used, nearly so) to the previous direction.
+    This leads to a characteristic &#8220;zig-zag&#8221; ascent, with convergence slowing as the maximum is approached.
+    One way of looking at the problem with steepest ascent is that it considers the same search directions many times.
+    We would prefer an algorithm which considered each possible search direction only once, in each iteration taking a step of exactly the right length in a direction orthogonal to all previous search directions.
+    This intuition underlies conjugate gradient methods, which choose a search direction which is a linear combination of the steepest ascent direction and the previous search direction.
+    The step size is selected by an approximate line search, as in the steepest ascent method.
+    Several non-linear conjugate gradient methods, such as the Fletcher-Reeves (cg-fr) and the Polak-Ribi`erePositive (cf-prp) algorithms, have been proposed.
+    While theoretically 

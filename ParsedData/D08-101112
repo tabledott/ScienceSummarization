@@ -1,0 +1,11 @@
+ackbone word that is aligned to no hypothesis word, a null is inserted on the hypothesis side, right after the hypothesis word which is aligned to the immediately preceding backbone word.
+    An example is shown in Fig.
+    3 (b).
+  
+  
+    The two main hypothesis alignment methods for system combination in the previous literature are GIZA++ and TER-based methods.
+    Matusov et al. (2006) proposed using GIZA++ to align words between different MT hypotheses, where all hypotheses of the test corpus are collected to create hypothesis pairs for GIZA++ training.
+    This approach uses the conventional HMM model bootstrapped from IBM Model-1 as implemented in GIZA++, and heuristically combines results from aligning in both directions.
+    System combination based on this approach gives an improvement over the best single system.
+    However, the number of hypothesis pairs for training is limited by the size of the test corpus.
+    Also, MT hypotheses from the same source sentence are correlated with each other and

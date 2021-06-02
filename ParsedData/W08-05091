@@ -1,0 +1,9 @@
+ time is consumed by word alignment (Koehn et al., 2007).
+    Speeding up the word alignment step can dramatically reduces the overall training time, and in turn accelerates the development of SMT systems.
+    With the rapid development of computing hardware, multi-processor servers and clusters become widely available.
+    With parallel computing, processing time (wall time) can often be cut down by one or two orders of magnitude.
+    Tasks, which require several weeks on a single CPU machine may take only a few hours on a cluster.
+    However, GIZA++ was designed to be single-process and single-thread.
+    To make more efficient use of available computing resources and thereby speed up the training of our SMT system, we decided to modify GIZA++ so that it can run in parallel on multiple CPUs.
+    The word alignment models implemented in GIZA++, the so-called IBM (Brown et al., 1993) and HMM alignment models (Vogel et al., 1996) are typical implementation of the EM algorithm (Dempster et al., 1977).
+    That

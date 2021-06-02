@@ -1,0 +1,11 @@
+gorithm performs a hill-climbing search along the feature space.
+    We start with a model based on all available features.
+    Then we train models obtained by removing one feature at a time.
+    We choose the worst performing feature, namely the one whose removal gives the largest improvement based on the MUC score F-measure, and remove it from the model.
+    We then train classifiers removing each of the remaining features separately from the enhanced model.
+    The process is iteratively run as long as significant improvement is observed.
+    Table 2 compares the results between our duplicated Soon baseline and the original system.
+    We assume that the slight improvements of our system are due to the use of current pre-processing components and another classifier.
+    Tables 3 and 4 show a comparison of the performance between our baseline system and the ones incremented with semantic features.
+    Performance improvements are highlighted in bold7.
+    The tables show that semantic features improve syst

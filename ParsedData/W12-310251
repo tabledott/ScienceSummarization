@@ -1,0 +1,5 @@
+e include a set of features which attempt to model translation adequacy using a bilingual topic model built using Latent Dirichlet Allocation.
+    &#8220;DCUSYMC unconstrained&#8221; is based on 308 features including the constrained ones and others extracted using external tools: grammaticality features extracted from the source segments using the TreeTagger part-of-speech tagger, an English precision grammar, the XLE parser and the Brown re-ranking parser and features based on part-of-speech tag counts extracted from the MT output using a Spanish TreeTagger model.
+    Loria (S): Several numerical or boolean features are computed from the source and target sentences and used to train an SVM regression algorithm with linear (&#8220;Loria SVMlinear&#8221;) and radial basis function (&#8220;Loria SVMrbf&#8221;) as kernel.
+    For the radial basis function, a grid search is performed to optimise the parameter -y.
+    The official submission use the baseline features and a number of features proposed in previous 

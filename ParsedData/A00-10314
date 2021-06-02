@@ -1,0 +1,11 @@
+-of-sequence and end-of-sequence markers.
+    Using these additional tags, even if they stem from rudimentary processing of punctuation marks, slightly improves tagging results.
+    This is different from formulas presented in other publications, which just stop with a &amp;quot;loose end&amp;quot; at the last word.
+    If sentence boundaries are not marked in the input, TnT adds these tags if it encounters one of [.!?
+    ;] as a token.
+    Transition and output probabilities are estimated from a tagged corpus.
+    As a first step, we use the maximum likelihood probabilities P which are derived from the relative frequencies: for all t1, t2, t3 in the tagset and w3 in the lexicon.
+    N is the total number of tokens in the training corpus.
+    We define a maximum likelihood probability to be zero if the corresponding nominators and denominators are zero.
+    As a second step, contextual frequencies are smoothed and lexical frequences are completed by handling words that are not in the lexicon (see below).
+   

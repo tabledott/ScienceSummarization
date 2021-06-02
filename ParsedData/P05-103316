@@ -1,0 +1,6 @@
+set as our development set, and the 2003 test set as our test set.
+    Our evaluation metric was BLEU (Papineni et al., 2002), as calculated by the NIST script (version 11a) with its default settings, which is to perform case-insensitive matching of n-grams up to n = 4, and to use the shortest (as opposed to nearest) reference sentence for the brevity penalty.
+    The results of the experiments are summarized in Table 1.
+    The baseline system we used for comparison was Pharaoh (Koehn et al., 2003; Koehn, 2004a), as publicly distributed.
+    We used the default feature set: language model (same as above), p(f&#175;  |&#175;e), p(&#175;e  |f&#175;), lexical weighting (both directions), distortion model, word penalty, and phrase penalty.
+    We ran the trainer with its default settings (maximum phrase length 7), and then used Koehn&#8217;s implementation of minimumerror-rate training (Och, 2003) to tune the feature weights to maximize the system&#8217;s BLEU score on our development set, yielding the values sh

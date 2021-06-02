@@ -1,0 +1,10 @@
+y of the first iteration drops by roughly 10% each time.
+    However, starting at the 6th iteration, the three are with 3% of one another.
+    These numbers suggest that we only need a few initial positive examples to bootstrap the transliteration model.
+    The intuition is the following: the few examples in the initial training set produce features corresponding to substring pairs characteristic for English-Russian transliterations.
+    Model trained on these (few) examples chooses other transliterations containing these same substring pairs.
+    In turn, the chosen positive examples contain other characteristic substring pairs, which will be used by the model to select more positive examples on the next round, and so on.
+  
+  
+    We have proposed a novel algorithm for cross lingual NE discovery in a bilingual weakly temporally aligned corpus.
+    We have demonstrated that using two independent sources of information (transliteration and temporal similarity) together to guide NE extraction gives better per

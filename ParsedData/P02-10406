@@ -1,0 +1,9 @@
+   Similarly, the modified unigram precision in Example 2 is 2/7, even though its standard unigram precision is 7/7.
+    Modified n-gram precision is computed similarly for any n: all candidate n-gram counts and their corresponding maximum reference counts are collected.
+    The candidate counts are clipped by their corresponding reference maximum value, summed, and divided by the total number of candidate ngrams.
+    In Example 1, Candidate 1 achieves a modified bigram precision of 10/17, whereas the lower quality Candidate 2 achieves a modified bigram precision of 1/13.
+    In Example 2, the (implausible) candidate achieves a modified bigram precision of 0.
+    This sort of modified n-gram precision scoring captures two aspects of translation: adequacy and fluency.
+    A translation using the same words (1-grams) as in the references tends to satisfy adequacy.
+    The longer n-gram matches account for fluency.
+    4 2.1.1 Modified n-gram precision on blocks of text How do we compute modified n-gram precisio

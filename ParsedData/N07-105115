@@ -1,0 +1,9 @@
+he next, more refined grammar, using the projections &#960;i&#8594;i&#8722;1 to map between symbols in Gi and Gi&#8722;1.
+    In each pass, we skip chart items whose projection into the previous stage had a probability below a stagespecific threshold, until we reach G = Gn (after seven passes in our case).
+    For G, we do not prune but instead return the minimum risk tree, as will be described in Sec.
+    4.
+    Fig.
+    2 shows the (unlabeled) bracket posteriors after each pass and demonstrates that most constructions can be ruled out by the simpler grammars, greatly reducing the amount of computation for the following passes.
+    The pruning thresholds were empirically determined on a held out set by computing the most likely tree under G directly (without pruning) and then setting the highest pruning threshold for each stage that would not prune the optimal tree.
+    This setting also caused no search errors on the test set.
+    We found our projected grammar estimates to be at least equally well suited f

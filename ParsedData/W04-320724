@@ -1,0 +1,9 @@
+sistently beats the PCFG on its own, they offer slight, complementary improvements on small training datasets of 32 and 64 sentences (Table 7).
+    The bilingual parser without the English head span filter gives a small recall improvement on average at similar precision.
+    Neither of these differences is significant when measured with a paired-sample t-test.
+    In contrast, the parser with the English head span filter sacrifices significantly on recall for a small but significant gain in precision at the 0.01 level.
+    Crossing brackets at all levels are significantly lower with the English head span filter.
+    We can describe this effect as a filtering of Korean constituents by the English model and word alignments.
+    Constituents that are not strongly evident on the English side are simply removed.
+    On small training datasets, this effect is positive: although good constituents are lost so that recall is poor compared to the PCFG, precision and crossing brackets are improved.
+    As one would expe

@@ -1,0 +1,12 @@
+t work as well in the context of evaluating cross document coreference.
+    There are two main reasons.
+    1.
+    The algorithm does not give any credit for separating out singletons (entities that occur in chains consisting only of one element, the entity itself) from other chains which have been identified.
+    This follows from the convention in coreference annotation of not identifying those entities that are markable as possibly coreferent with other entities in the text.
+    Rather, entities are only marked as being coreferent if they actually are coreferent with other entities in the text.
+    This shortcoming could be easily enough overcome with different annotation conventions and with minor changes to the algorithm, but it is worth noting.
+    2.
+    All errors are considered to be equal.
+    The MUC scoring algorithm penalizes the precision numbers equally for all types of errors.
+    It is our position that, for certain tasks, some coreference errors do more damage than others.
+    Consider the f

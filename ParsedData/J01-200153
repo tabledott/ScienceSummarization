@@ -1,0 +1,5 @@
+us.
+    That is, we need bootstrapping heuristics that enable us to go from a corpus to such a morphology.
+    As we shall see, it is not in fact difficult to come up with a plausible initial morphology, but I would like to consider first an approach which, though it might seem like the most natural one to try, fails, and for an interesting reason.
+    The problem we wish to solve can be thought of as one suited to an expectationmaximization (EM) approach (Dempster, Laird, and Rubin 1977).
+    Along such a line, each word w of length N would be initially conceived of as being analyzed in N different ways, cutting the word into stem + suffix after i letters, 1 &lt; i &lt; N, with each of these N analyses being assigned probability mass of [w] N[W] Goldsmith Unsupervised Learning of the Morphology of a Natural Language That probability mass is then summed over the resulting set of stems and suffixes, and on successive iterations, each of the N cuts into stem + suffix is weighted by its probability; that is, if 

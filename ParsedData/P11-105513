@@ -1,0 +1,9 @@
+ignment for each sentence-level extraction variable Zi, ignoring the deterministic dependencies.
+    The optimal setting for the aggregate variables Y is then simply the assignment that is consistent with these extractions.
+    The time complexity is O(|R |- |S|).
+    Predicting sentence level extractions given weak supervision facts, arg maxz p(z|x, y; &#952;), is more challenging.
+    We start by computing extraction scores &#934;extract(xi, zi) for each possible extraction assignment Zi = zi at each sentence xi E S, and storing the values in a dynamic programming table.
+    Next, we must find the most likely assignment z that respects our output variables y.
+    It turns out that this problem is a variant of the weighted, edge-cover problem, for which there exist polynomial time optimal solutions.
+    Let G = (&#163;, V = VS U Vy) be a complete weighted bipartite graph with one node vSi E VS for each sentence xi E S and one node vyr E Vy for each relation r E R where yr = 1.
+    The edge weights are given 

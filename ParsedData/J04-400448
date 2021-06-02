@@ -1,0 +1,5 @@
+ioned only on its part of speech. order to capture the most data for the crucial last level of back-off, Collins uses words that occur on either side of the headword, resulting in a general estimate &#710;p(w I t), as opposed to &#710;pLw(wLi I tLi).
+    Accordingly, in our emulation of Collins&#8217; model, we replace the left- and right-word parameter classes with a single modifier headword generation parameter class that, as with (11), includes a boolean side component that is deleted from the last level of back-off (see Table 2).
+    Even with this change, there is still a problem.
+    Every headword in a lexicalized parse tree is the modifier of some other headword&#8212;except the word that is the head of the entire sentence (i.e., the headword of the root nonterminal).
+    In order to properly duplicate Collins&#8217; model, an implementation must take care that the P(w I t) model includes counts for these important headwords.29 The low-frequency word Fido is mapped to +UNKNOWN+, but only when it is ge

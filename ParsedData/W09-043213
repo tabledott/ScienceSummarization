@@ -1,0 +1,8 @@
+ of features.
+    Furthermore, the first approach of Moses for model combination shrinks the size of the phrase table, while the second one enlarges it.
+    The set of features of the new TM is the union of the features of all single TMs.
+    Straightforwardly, all feature values are well-defined.
+    The second method corresponds to building one new TM SU, whose set is the union of all given sets: SU = {( &#65533;f, &#65533;e)  |&#65533;j ( f, E) E Sj} Again, the set of features of the new TM is the union of the features of all single TMs; but for a phrase pair (&#65533;f, E) belonging to SU \Sj, the feature values h(&#65533;f, E; Sj) are undefined.
+    In these undefined situations, Moses provides a default value of 0, which is the highest available score, as the feature values come from probabilistic distributions and are expressed as logarithms.
+    Henceforth, a phrase pair belonging to all original sets is penalized with respect to phrase pairs belonging to few of them only.
+    To address this drawback

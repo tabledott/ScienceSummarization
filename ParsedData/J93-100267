@@ -1,0 +1,7 @@
+ applied.
+    This state is used together with the resultant nonterminal to define the state transition in the goto part of the parse table.
+    Thus, this move corresponds to associating probabilities with transitions in the automaton rather than with actions in the action part of the table.
+    For example, a reduction of pronoun to NP in subject position in the parse table for Grammar 1 in Figure 2 always results in the parser returning to state 0 (from which the goto table deterministically prescribes a transition to state 7 with nonterminal NP).
+    Reduction to NP of a pronoun in object position always results in the parser returning to state 11.
+    Thus training on a corpus with more subject than nonsubject pronominal NPs will now result in a probabilistic preference for reductions that return to 'pre-subject' states with 'post-subject' lookaheads.
+    Of course, this does not mean that it will be impossible to devise grammars in which reductions cannot be kept distinct that might, in principle, have 

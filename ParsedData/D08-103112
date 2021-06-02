@@ -1,0 +1,11 @@
+ the two mentions.
+    We thus measure distance (quantized as multiple boolean features of the form [distance &gt; i]) for all i up to the distance and less than some maximum, using units of compatible mentions, and whether the mentions are in the same sentence.
+    We also detect apposition (mentions separated by a comma).
+    For details, see Table 3.
+    We determine the relationship of any pair of modifiers that share a hypernym.
+    Each aligned pair may have one of the following relations: match, substring, synonyms, hypernyms, antonyms, or mismatch.
+    Mismatch is defined as none of the above.
+    We restrict modifiers to single nouns and adjectives occurring before the head noun phrase.
+    Modifier Names If the mentions are both modified by other proper names, use a basic coreference classifier to determine whether the modifiers are coreferential.
+    This basic classifier is trained using Mention Types, String Relations, Semantic Features, Apposition, Relative Pronoun, and Both Speak.
+    For each 

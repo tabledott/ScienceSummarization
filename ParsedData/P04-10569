@@ -1,0 +1,6 @@
+ey should all have label-value 0.
+    This type of constraint is enforced by the overlap template whose M operator matches any two overlapping candidate entities, and which connects their label nodes (specified in S) through a potential node with a potential function cb that allows at most one of them to have label-value 1, as illustrated in Table 2.
+    Continuing with the previous example, because 'gintathione S' and 'S - transferase' are two overlapping entities, the factor graph model will contain an overlap potential node connected to the label nodes of these two entities.
+    An alternative solution for the overlap template is to create a potential node for each token position that is covered by at least two candidate entities in the document, and connect it to their label nodes.
+    The difference in this case is that the potential node will be connected to a variable number of entity label nodes.
+    However this second approach has the advantage of creating fewer potential nodes in the document facto

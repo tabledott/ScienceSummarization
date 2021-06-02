@@ -1,0 +1,9 @@
+ata tradeoff for each data size.
+    In addition, the development test data is used to optimize typically very few parameters, so in practice small held-out sets are generally adequate, and perhaps can be avoided altogether with techniques such as deleted estimation.
+    In this section, we discuss the details of our implementations of various smoothing techniques.
+    Due to space limitations, these descriptions are not comprehensive; a more complete discussion .is presented in Chen (1996).
+    The titles of the following sections include the mnemonic we use to refer to the implementations in later sections.
+    Unless otherwise specified, for those smoothing models defined recursively in terms of lower-order models, we end the recursion by taking the n = 0 distribution to be the uniform distribution Pu(w) = VIVI.
+    For each method, we highlight the parameters (e.g., An and 6 below) that can be tuned to optimize performance.
+    Parameter values are determined through training on held-out data.
+    For our

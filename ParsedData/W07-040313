@@ -1,0 +1,10 @@
+ata sets without massive parallelization.
+    Also, ITG algorithms explore their alignment space perfectly, but that space has been reduced by the ITG constraint described in Section 2.3.
+    We will address each of these issues in the following two subsections.
+    First, we address the problem of scaling ITG to large data.
+    ITG dynamic programming algorithms work by analyzing each bitext span only once, storing its value in a table for future use.
+    There are O(n4) of these spans, and each analysis takes O(n2) time.
+    An effective approach to speeding up ITG algorithms is to eliminate unlikely spans as a preprocessing step, assigning them 0 probability and saving the time spent processing them.
+    Past approaches have pruned spans using IBM Model 1 probability estimates (Zhang and Gildea, 2005) or using agreement with an existing parse tree (Cherry and Lin, 2006).
+    The former is referred to as tic-tac-toe pruning because it uses both inside and outside estimates.
+    We propose a new ITG pruning 

@@ -1,0 +1,8 @@
+ in a round-robin fashion, holding approximations to the others fixed.
+    We first describe the variable groups, then the updates which optimize them in turn.
+    Decomposition: We decompose the entity variables E into types, T, one for each entity, and word lists, L, one for each entity and property.
+    We decompose the mentions M into referring mentions (propers and nominals), Mr, and pronominal mentions, Mp (with sizes nr and np respectively).
+    The entity assignments Z are similarly divided into Zr and Zp components.
+    For pronouns, rather than use Zp, we instead work with the corresponding antecedent variables, denoted Ap, and marginalize over antecedents to obtain Zp.
+    With these variable groups, we would like to approximation our model posterior P(T, L, Zr, Ap, -r, 7rJM, X) using a simple factored representation.
+    Our variational approximation takes the following form: We use a mean field approach to update each of the RHS factors in turn to minimize the KL-divergence between the current va

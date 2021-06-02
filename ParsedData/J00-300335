@@ -1,0 +1,6 @@
+mework is modified such that the recognizer's acoustic information (spectral features) A appear as the evidence.
+    We compute P(A I U) by decomposing it into an acoustic likelihood P(A I W) and a word-based likelihood P(WI U), and summing over all word sequences: poi = poi w, u)p(wl u) = E poi w)p(wi (6) The second line is justified under the assumption that the recognizer acoustics (typically, cepstral coefficients) are invariant to DA type once the words are fixed.
+    Note that this is another approximation in our modeling.
+    For example, different DAs with common words may be realized by different word pronunciations.
+    Figure 2 shows the Bayes network resulting from modeling recognizer acoustics through word hypotheses under this independence assumption; note the added W, variables (that have to be summed over) in comparison to Figure 1.
+    The acoustic likelihoods P(A I W) correspond to the acoustic scores the recognizer outputs for every hypothesized word sequence W. The summation over all W mus

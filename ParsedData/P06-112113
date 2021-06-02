@@ -1,0 +1,6 @@
+istent ways of attaching unaligned words of f, and build valid derivations in accordance to these attachments.We use a table or-dforest[x, y, c] to store OR nodes, in which each OR-node can be uniquely defined by a syntactic category c and a span [x, y](which may cover unaligned words of f).
+			This ta ble is used to prevent the same partial derivation to be followed multiple times (the in-degrees of OR-nodes generally become large with composedrules).
+			Furthermore, to avoid over-generating un aligned words, the root and variables in each rule are represented with their spans.
+			For example, inFigure 2(b), the second and third child of the top most OR-node respectively span across [4-5][6-8] and [4-6][7-8] (after constituent reordering).
+			In the former case, ? will eventually be realized in an NP, and in the latter case, in a VP.
+			The preprocessing step consists of assigning spans and complement spans to nodes of G, in the first case by a bottom-up exploration of the graph, and in the latter by a top-d

@@ -1,0 +1,7 @@
+cide, as Model 4 is an imperfect model of the translation process&#8212;i.e., there is no guarantee that a numerically optimal decoding is actually a good translation.
+    Suppose a decoder outputs, while the optimal decoding turns out to be.
+    Then we consider six possible outcomes: no error (NE) : , and is a perfect , andis a perfect translation, whileis not. harmless search error (HSE): , butandare both perfectly good translations. compound error (CE): , and neither is a perfect translation.
+    Here, &#8220;perfect&#8221; refers to a human-judged translation that transmits all of the meaning of the source sentence using flawless target-language syntax.
+    We have found it very useful to have several decoders on hand.
+    It is only through IP decoder output, for example, that we can know the stack decoder is returning optimal solutions for so many sentences (see Table 1).
+    The IP and stack decoders enabled us to quickly locate bugs in the greedy decoder, and to implement extensions to the basic gree

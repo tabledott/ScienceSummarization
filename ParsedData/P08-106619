@@ -1,0 +1,13 @@
+utions of dependency structures with unmatched categories, but there is a discount for such substitutions.
+    We tune the weights with several rounds of decoding-optimization.
+    Following (Och, 2003), the k-best results are accumulated as the input of the optimizer.
+    Powell&#8217;s method is used for optimization with 20 random starting points around the weight vector of the last iteration.
+    Rescoring We rescore 1000-best translations (Huang and Chiang, 2005) by replacing the 3-gram LM score with the 5-gram LM score computed offline.
+  
+  
+    We carried out experiments on three models.
+    We take the replicated Hiero system as our baseline because it is the closest to our string-todependency model.
+    They have similar rule extraction and decoding algorithms.
+    Both systems use only one non-terminal label in rules.
+    The major difference is in the representation of target structures.
+    We use dependency structures instead of strings; thus, the comparison will show the contribution of using d

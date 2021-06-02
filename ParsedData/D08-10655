@@ -1,0 +1,5 @@
+ity model (Bickel and Doksum, 1977).
+    We begin with a review of MBR decoding for Statistical Machine Translation (SMT).
+    Statistical MT (Brown et al., 1990; Och and Ney, 2004) can be described as a mapping of a word sequence F in the source language to a word sequence E in the target language; this mapping is produced by the MT decoder S(F).
+    If the reference translation E is known, the decoder performance can be measured by the loss function L(E, S(F)).
+    Given such a loss function L(E, E') between an automatic translation E' and the reference E, and an underlying probability model P(E|F), the MBR decoder has the following form (Goel and Byrne, 2000; Kumar and Byrne, 2004): where R(E') denotes the Bayes risk of candidate translation E' under the loss function L. If the loss function between any two hypotheses can be bounded: L(E, E') G Lmax, the MBR decoder can be rewritten in terms of a gain function G(E, E') = Lmax &#8722; L(E, E'): We are interested in performing MBR decoding under a sentence-l

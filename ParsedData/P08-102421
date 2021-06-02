@@ -1,0 +1,8 @@
+s well behind the regularised maxtranslation model.
+    From this we can conclude that the maximum likelihood model is overfitting the training set.
+    We suggest that is a result of the degenerate solutions of the conditional maximum likelihood estimate, as described in DeNero et al. (2006).
+    Here we assert that our regularised maximum a posteriori model avoids such solutions.
+    This is illustrated in Table 2, which shows the conditional probabilities for rules, obtained by locally normalising the rule feature weights for a simple grammar extracted from the ambiguous pair of sentences presented in DeNero et al. (2006).
+    The first column of conditional probabilities corresponds to a maximum likelihood estimate, i.e., without regularisation.
+    As expected, the model finds a degenerate solution in which overlapping rules are exploited in order to minimise the entropy of the rule translation distributions.
+    The second column shows the solution found by our model when regularised by a Gaussian prior

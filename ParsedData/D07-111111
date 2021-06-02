@@ -1,0 +1,7 @@
+rack of the CoNLL 2007 shared task, we trained three LR models as follows.
+			The first LR model for each language uses maximum entropy classification (Berger et al, 1996) to determine possible parser actions and their probabilities4.
+			To control overfitting in the MaxEnt models, we used box-type in equality constraints (Kazama and Tsujii, 2003).
+			The second LR model for each language also uses MaxEnt classification, but parsing is performed backwards, which is accomplished simply by reversing the input string before parsing starts.
+			Sa gae and Lavie (2006a) and Zeman and ?abokrtsk?
+			(2005) have observed that reversing the direction of stepwise parsers can be beneficial in parser combinations.
+			The third model uses support vector machines 5 (Vapnik, 1995) using the polynomial 4 Implementation by Yoshimasa Tsuruoka, available at http://www-tsujii.is.s.u-tokyo.ac.jp/~tsuruoka/maxent/ 5 Implementation by Taku Kudo, available at http://chasen.org/~taku/software/TinySVM/ and all vs. all was used for mult

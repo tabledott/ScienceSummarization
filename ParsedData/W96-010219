@@ -1,0 +1,8 @@
+ right, gives good results.
+    We will call this case representation pdassst:3 three suffix letters (s), one prefix letter (p), one left disambiguated context words (d), and one ambiguous right context word (a).
+    As the chance of an unknown word being a function word is small, and cases representing function words may interfere with correct classification of open-class words, only open-class words are used during construction of the unknown words case base.
+    Table 2 shows part of the case base for unknown words.
+    Figure 3 shows the architecture of the tagger-generator: a tagger is produced by extracting a lexicon and two case-bases from the tagged example corpus.
+    During tagging, the control is the following: words are looked up in the lexicon and separated into known and unknown words.
+    They are retrieved from the known words case base and the unknown words case base, respectively.
+    In both cases, context is used, in the case of unknown words, the first and three last letters of the word a

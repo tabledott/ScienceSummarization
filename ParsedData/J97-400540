@@ -1,0 +1,8 @@
+th probability 13&#8222; where A is the weight of rule &#8211;&#247; e,.
+    Now we can sample from the initial distribution pa by performing stochastic derivations.
+    At the beginning of Section 3, we sketched how to generate dags from an AV grammar G via nondeterministic derivations.
+    We defined the initial distribution in terms of weights 0 attached to the rules of G. We can convert the nondeterministic derivations discussed at the beginning of Section 3 into stochastic derivations by choosing rule X with probability 0, when expanding a node labeled X.
+    Some derivations fail, but throwing away failed derivations has the effect of renormalizing the weight function, so that we generate a dag x with probability po(x), as desired.
+    The Metropolis-Hastings algorithm provides us with a means of converting the sampler for the initial distribution po(x) into a sampler for the field distribution q(x).
+    Generally, let p(.) be a distribution for which we have a sampler.
+    We wish to construct a sample

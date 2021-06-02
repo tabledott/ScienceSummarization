@@ -1,0 +1,9 @@
+gger.
+    When abstracting away from individual tags, precision and recall are equal (at least if the tagger produces exactly one tag per token) and measure how many tokens are tagged correctly; in this case we also use the more generic term accuracy.
+    We will call the voting method where each tagger is weighted by its general quality TotPrecision, i.e., each tagger votes its overall precision.
+    To allow for more detailed interactions, each tagger is weighted by the quality in relation to the current situation, i.e., each tagger votes its precision on the tag it suggests (TagPrecision).
+    This way, taggers that are accurate for a particular type of ambiguity can act as specialized experts.
+    The information about each tagger's quality is derived from a cross-validation of its results on the combiner training set.
+    The precise setup for deriving the training data is described in more detail below, in Section 3.
+    We have access to even more information on how well the taggers perform.
+    We not

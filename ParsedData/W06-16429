@@ -1,0 +1,9 @@
+ head of a syntactic tree3.
+    However, this limitation reduces the recall of sentiment analysis to a very low level.
+    In the example (7) above, utsukushii is the head of the tree, while those initial clauses in (9) to (11) below are not.
+    In order to achieve higher recall while maintaining high precision, we apply two types of syntactic patterns, modality patterns and conjunctive patterns4, to the tree structures from the full-parsing.
+    Modality patterns match some auxiliary verbs or corresponding sentence-final expressions, to allow for specific kinds of modality and negation.
+    One of the typical patterns is [ v to omou] (`I think v ')5, which allows utsukushii in (9) to be a proposition.
+    Also negation is handled with a modality pattern, such as [ v nai] (`not v ').
+    In this case a neg feature is attached to the proposition to identify utsukushii in (10) as a negated proposition.
+    On the other hand, no proposition is identified in (11) due to the deliberate absence of a pattern [ v to

@@ -1,0 +1,10 @@
+ers, where 0 &lt; Ai &lt; 1.
+    We use the smoothing method described in Bikel et al. (1997), which is derived from a method described in Witten and Bell (1991).
+    First, say that the most specific estimate e1 = n1 f1 ; that is, f1 is the value of the denominator count in the relative frequency estimate.
+    Second, define u1 to be the number of distinct outcomes seen in the f1 events in training data.
+    The variable u1 can take any value from one to f1 inclusive.
+    Then we set Analogous definitions for f2 and u2 lead to A2 = f2 f2+5u2 .
+    The coefficient five was chosen to maximize accuracy on the development set, section 0 of the treebank (in practice it was found that any value in the range 2&#8211;5 gave a very similar level of performance).
+    All words occurring less than six times14 in training data, and words in test data that have never been seen in training, are replaced with the UNKNOWN token.
+    This allows the model to handle robustly the statistics for rare or new words.
+    Words in 

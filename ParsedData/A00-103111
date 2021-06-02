@@ -1,0 +1,10 @@
+i is a capitalized word and false otherwise.
+    These flags are added to the contextual probability distributions.
+    Instead of and equations (3) to (5) are updated accordingly.
+    This is equivalent to doubling the size of the tagset and using different tags depending on capitalization.
+    The processing time of the Viterbi algorithm (Rabiner, 1989) can be reduced by introducing a beam search.
+    Each state that receives a 6 value smaller than the largest 6 divided by some threshold value 0 is excluded from further processing.
+    While the Viterbi algorithm is guaranteed to find the sequence of states with the highest probability, this is no longer true when beam search is added.
+    Nevertheless, for practical purposes and the right choice of 0, there is virtually no difference between the algorithm with and without a beam.
+    Empirically, a value of 0 = 1000 turned out to approximately double the speed of the tagger without affecting the accuracy.
+    The tagger currently tags between 30,000 and 60

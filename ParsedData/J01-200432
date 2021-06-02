@@ -1,0 +1,5 @@
+he POS of the closest c-commanding lexical head to A, which it finds by walking the parse tree; if the left-hand side of the rule is not a POS, then the algorithm returns (at level 4) the closest sibling to the left of the parent of constituent (A).
+    The functions that we have chosen for this paper follow from the intuition (and experience) that what helps parsing is different depending on the constituent that is being expanded.
+    POS nodes have lexical items on the right-hand side, and hence can bring into the model some of the head-head dependencies that have been shown to be so effective.
+    If the POS is leftmost within its constituent, then very often the lexical item is sensitive to the governing category to which it is attaching.
+    For example, if the POS is a preposition, then its probability of expanding to a particular word is very different if it is attaching to a noun phrase than if it is attaching to a verb phrase, and perhaps quite different depending on the head of the constituent to wh

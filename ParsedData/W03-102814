@@ -1,0 +1,10 @@
+ frequency and the collection frequency were not weighted together, but kept as two distinct features.
+    In addition, the real values were not discretised, only rounded off to two decimals, thus more decisionmaking was handed over to the algorithm.
+    The collection frequency was calculated for the three data sets separately.
+    In addition, experiments with a fourth feature were performed.
+    This is the POS tag or tags assigned to the term by the same partial parser used for finding the chunks and the tag patterns.
+    When a term consists of several tokens, the tags are treated like a sequence.
+    As an example, an extracted phrase like random JJ excitations NNS gets the atomic feature value JJ NNS.
+    In case a term occurs more than once in the document, the tag or tag sequence assigned is the most frequently occurring one for that term in the entire document.
+    In case of a draw, the first occurring one is assigned.
+    As usual in machine learning, the input to the learning algorithm consists o

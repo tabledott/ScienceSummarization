@@ -1,0 +1,6 @@
+off weights are derived from linear interpolation weights or discounting techniques such as Good-Turing.
+    In order to ensure that the model's probabilities still sum to one, the backoff weight a must be adjusted whenever a parameter is removed from the model.
+    In the Seymore/Rosenfeld approach, parameters are pruned according to the following criterion: where p'(elh') represents the new backed off probability estimate after removing p(eIh) from the model and adjusting the backoff weight, and N(e, h) is the count in the training data.
+    This criterion aims to prune probabilities that are similar to their backoff estimates, and that are not frequently used.
+    As shown by Stolcke (1998), this criterion is an approximation of the relative entropy between the original and pruned distributions, but does not take into account the effect of changing the backoff weight on other events' probabilities.
+    Adjusting the threshold 0 below which parameters are pruned allows us to successively remove more and mor

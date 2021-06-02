@@ -1,0 +1,9 @@
+relation is replaced with NP.
+    In addition, the relation is &#8220;normalized&#8221; to some extent.
+    First, all POS tags are replaced with the token TAG, so that POS-tagging errors do not lead to errors in dependencies.17 Second, any complement markings on the parent or head nonterminal are removed.
+    For example, (NP-C, NPB, PP, R) is replaced by (NP, NPB, PP, R).
+    This prevents parsing errors where a complement has been mistaken to be an adjunct (or vice versa), leading to more than one dependency error.
+    As an example, in Figure 12, if the NP the man with the telescope was mistakenly identified as an adjunct, then without normalization, this would lead to two dependency errors: Both the PP dependency and the verb-object relation would be incorrect.
+    With normalization, only the verb-object relation is incorrect.
+    Under this definition, gold-standard and parser-output trees can be converted to sets of dependencies, and precision and recall can be calculated on these dependencies.
+    De

@@ -1,0 +1,10 @@
+mation of Yarowsky and Ngai (2001).
+    We tried two versions of our graph-based approach: feature after the first stage of label propagation (Eq.
+    1).
+    Because many foreign word types are not aligned to an English word (see Table 3), and we do not run label propagation on the foreign side, we expect the projected information to have less coverage.
+    Furthermore we expect the label distributions on the foreign to be fairly noisy, because the graph constraints have not been taken into account yet.
+    Our oracles took advantage of the labeled treebanks: While we tried to minimize the number of free parameters in our model, there are a few hyperparameters that need to be set.
+    Fortunately, performance was stable across various values, and we were able to use the same hyperparameters for all languages.
+    We used C = 1.0 as the L2 regularization constant in (Eq.
+    10) and trained both EM and L-BFGS for 1000 iterations.
+    When extracting the vector t, used to compute the constraint feature from th

@@ -1,0 +1,6 @@
+is much lower than what has been reported for WSJ Section 23.
+    This could be attributed to two factors: i) the fact that we had to compromise on the training method, but more importantly because ii) the newswire in OntoNotes not only contains WSJ data, but also Xinhua news.
+    One could try to verify using just the WSJ portion of the data, but it would be hard as it is not only a subset of the documents that the performance has been reported on previously, but also the annotation has been significantly revised; it includes propositions for be verbs missing from the original PropBank, and the training data is a subset of the original data as well.
+    Table 8 shows the detailed performance numbers.
+    In addition to automatically predicting the arguments, we also trained a classifier to tag PropBank frameset IDs in the data using the same word sense module as mentioned earlier.
+    OntoNotes 4.0 contains a total of 7337 framesets across 5433 verb lemmas.15 An overwhelming number of them are monosemous, bu

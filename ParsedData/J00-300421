@@ -1,0 +1,7 @@
+ng to a coding requirement of 5.1 bits.
+    However, if exclusion was exploited, both encoder and decoder will recognize that escape from order 1 to order 0 is inevitable because the order 1 model adds no characters that were not already predicted by the order 2 model.
+    Thus the coding probabilities will be (1/2, 1,3/18) with exclusion, reducing the total code space for b to 3.6 bits.
+    An important special case of the exclusion policy occurs at the lowest-level model: for example, the x at the end of the previous paragraph would finally be encoded with a probability of 1/250 rather than 1/256 because characters that have already occurred can never be predicted in the order &#8212;1 context.
+    One slight further improvement to PPM is incorporated in the experiments: deterministic scaling (Teahan 1998).
+    Although it probably has negligible effect on our overall results, we record it here for completeness.
+    Experiments show that in deterministic contexts, for which d =- 1, the probability that the 

@@ -1,0 +1,9 @@
+g corpus.
+    We now discuss how this expectation is computed.
+    When rescoring, we assume that we simply wish to combine, in some way, statistics of whole sentences4 to arrive at the overall loss for the corpus.
+    We consider evaluation metrics for natural language tasks from two broadly applicable classes: linear and nonlinear.
+    A linear metric is a sum (or other linear combination) of the loss or gain on individual sentences.
+    Accuracy&#8212;in dependency parsing, part-of-speech tagging, and other labeling tasks&#8212;falls into this class, as do recall, word error rate in ASR, and the crossing-brackets metric in parsing.
+    Thanks to the linearity of expectation, we can easily compute our expected loss in equation (6) by adding up the expected loss on each sentence.
+    Some other metrics involve nonlinear combinations over the sentences of the corpus.
+    One common example is precision, P def = Pi ci/Pi ai, where ci is the number of correctly posited elements, and ai is the total number of po

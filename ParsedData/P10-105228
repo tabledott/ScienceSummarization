@@ -1,0 +1,8 @@
+oves of almost a half point as compared to the best Nettalk system.
+    For the POS tagging task, BCD appears to be unpractically slower to train than the others approaches (SGD takes about 40min to train, OWLQN about 1 hour) due the simultaneous increase in the sequence length and in the number of observations.
+    As a result, one iteration of BCD typically requires to repeatedly process over and over the same sequences: on average, each sequence is visited 380 times when we use the baseline feature set.
+    This technique should reserved for tasks where the number of blocks is small, or, as below, when memory usage is an issue.
+    In many tasks, the ambiguity of tokens can be reduced by looking up increasingly large windows of local context.
+    This strategy however quickly runs into a combinatorial increase of the number of features.
+    A side note of the Nettalk experiments is that when using embedded features, the active feature set tends to reflect this hierarchical organization.
+    This means that

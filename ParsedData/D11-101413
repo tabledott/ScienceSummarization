@@ -1,0 +1,6 @@
+ One of the goals of RAEs is to induce semantic vector representations that allow us to compare n-grams of different lengths.
+    The RAE tries to lower reconstruction error of not only the bigrams but also of nodes higher in the tree.
+    Unfortunately, since the RAE computes the hidden representations it then tries to reconstruct, it can just lower reconstruction error by making the hidden layer very small in magnitude.
+    To prevent such undesirable behavior, we modify the hidden layer such that the resulting parent representation always has length one, after computing p as in Eq.
+    2, we simply set: p = p ||p||.
+    So far, the RAE was completely unsupervised and induced general representations that capture the semantics of multi-word phrases.In this section, we extend RAEs to a semi-supervised setting in order to predict a sentence- or phrase-level target distribution t.1 One of the main advantages of the RAE is that each node of the tree built by the RAE has associated with it a distributed vector re

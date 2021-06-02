@@ -1,0 +1,5 @@
+n algorithm for estimating &#955;0 and &#920; for JESS-CM.
+    This paper considers a situation where there are many more unlabeled data M than labeled data N, that is, N &lt;&lt; M. This means that the calculation cost for unlabeled data is dominant.
+    Thus, in order to make the overall parameter estimation procedure Input: training data D = {Dl, Du} where labeled data Dl = {(xn, yn)}Nn=1, scalable for handling large scale unlabeled data, we only perform one step of MDF estimation for each t as explained on 3. in Figure 1.
+    In addition, the calculation cost for estimating parameters of embedded joint PMs (HMMs) is independent of the number of HMMs, J, that we used (Suzuki et al., 2007).
+    As a result, the cost for calculating the JESS-CM parameters, &#955;0 and &#920;, is essentially the same as executing T iterations of the MML estimation for a single HMM using the EM algorithm plus T + 1 time optimizations of the MAP estimation for a conventional supervised CRF if it converged when t = T. In additio

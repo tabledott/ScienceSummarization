@@ -1,0 +1,13 @@
+ 1).
+    Only two parameters have to be optimized due to the constraint that the have to sum to .
+    The default model is defined as: .
+    Straightforward normalization over all successor blocks in Eq.
+    2 and in Eq.
+    3 is not feasible: there are tens of millions of possible successor blocks .
+    In future work, normalization over a restricted successor set, e.g. for a given source input sentence, all blocks that match this sentence might be useful for both training and decoding.
+    The segmentation model in Eq.
+    1 naturally prefers translations that make use of a smaller number of blocks which leads to a smaller number of factors in Eq.
+    1.
+    Using fewer &#8217;bigger&#8217; blocks to carry out the translation generally seems to improve translation performance.
+    Since normalization does not influence the number of blocks used to carry out the translation, it might be less important for our segmentation model.
+    We use a DP-based beam search procedure similar to the one presented in (Til

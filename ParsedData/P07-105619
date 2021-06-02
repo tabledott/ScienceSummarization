@@ -1,0 +1,10 @@
+. (2006) and use the Huber loss as a proxy for the A-distance.
+    Our procedure is as follows: Given two domains, we compute the SCL representation.
+    Then we create a data set where each instance Ox is labeled with the identity of the domain from which it came and train a linear classifier.
+    For each pair of domains we compute the empirical average per-instance Huber loss, subtract it from 1, and multiply the result by 100.
+    We refer to this quantity as the proxy A-distance.
+    When it is 100, the two domains are completely distinct.
+    When it is 0, the two domains are indistinguishable using a linear classifier.
+    Figure 3 is a correlation plot between the proxy A-distance and the adaptation error.
+    Suppose we wanted to label two domains out of the four in such a way as to minimize our error on all the domains.
+    Using the proxy A-distance as a criterion, we observe that we would choose one domain from either books or DVDs, but not both, since then we would not be able to adequately cover

@@ -1,0 +1,10 @@
+nto multiple stages, first estimating a distribution over all possible tags shift shift , and then estimating a distribution over the possible tag-word pairs given the correct tag shift shift .
+    This means that only estimates for the tag-word pairs with the correct tag need to be computed.
+    We also reduced the computational cost of terminal prediction by replacing the very large number of lower frequency tag-word pairs with tag-&#8220;unknown-word&#8221; pairs, which are also used for tag-word pairs which were not in the training set.
+    We do not do any morphological analysis of unknown words, although we would expect some improvement in performance if we did.
+    A variety of frequency thresholds were tried, as reported in section 6.
+  
+  
+    The most novel aspect of our parsing model is the way in which the representation of the derivation history is computed.
+    Choosing this representation is a challenge for any history-based statistical parser, because the history is of unbounded size.
+    Logl

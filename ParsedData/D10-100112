@@ -1,0 +1,6 @@
+per.
+    With this in mind, we note that we have efficient methods for the inference problems of tagging and parsing alone, and that our combined objective almost separates into these two independent problems.
+    In fact, if we drop the y(i, t) = z(i, t) constraints from the optimization problem, the problem splits into two parts, each of which can be efficiently solved using dynamic programming: solves the harder optimization problem using an existing CFG parser and trigram tagger.
+    After each iteration the algorithm adjusts the weights u(i, t); these updates modify the objective functions for the two models, encouraging them to agree on the same POS sequence.
+    In section 6.1 we will show that the variables u(i, t) are Lagrange multipliers enforcing agreement constraints, and that the algorithm corresponds to a (sub)gradient method for optimization of a dual function.
+    The algorithm is easy to implement: all that is required is a decoding algorithm for each of the two models, and simple additive up

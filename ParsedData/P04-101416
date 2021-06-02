@@ -1,0 +1,6 @@
+ set for the normal-form model is the same except that, following Hockenmaier and Steedman (2002), the dependency features are defined in terms of the local rule instantiations, by adding the heads of the combining categories to the rule instantiation features.
+    Again there are 3 additional distance feature types, as above, which only include the head of the resulting category.
+    We had hoped that by modelling the predicate-argument dependencies produced by the parser, rather than local rule dependencies, we would improve performance.
+    However, using the predicate-argument dependencies in the normal-form model instead of, or in addition to, the local rule dependencies, has not led to an improvement in parsing accuracy.
+    Only features which occurred more than once in the training data were included, except that, for the dependency model, the cutoff for the rule features was 9 and the counting was performed across all derivations, not just the gold-standard derivation.
+    The normal-form model has 4

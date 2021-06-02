@@ -1,0 +1,8 @@
+lean BF for various order n-gram sets from the Gigaword Corpus with the same underlying false positive rate (0.125).
+    The additional space required by our scheme for storing frequency information is less than a factor of 2 compared to the standard BF.
+    Figure 7 shows the number and size of frequency estimation errors made by our log-frequency BF scheme and a non-redundant scheme that stores only the exact quantised count.
+    We presented 500K negatives to the filter and recorded the frequency of overestimation errors of each size.
+    As shown in Section 3.1, the probability of overestimating an item&#8217;s frequency under the log-frequency BF scheme decays exponentially in the size of this overestimation error.
+    Although the non-redundant scheme requires fewer items be stored in the filter and, therefore, has a lower underlying false positive rate (0.076 versus 0.
+    159), in practice it incurs a much higher error rate (0.717) with many large errors.
+    Figure 9 shows the impact of sub-sequence 

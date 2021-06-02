@@ -1,0 +1,8 @@
+on the shape of the paths between nodes in the text graph which correspond to adjacent nodes in the hypothesis graph.
+    Preserved edges receive the highest score, and longer paths receive lower scores.
+    In the final stage of processing, we make a decision about whether or not the hypothesis is entailed by the text, conditioned on the typed dependency graphs, as well as the best alignment between them.
+    Because we have a data set of examples that are labeled for entailment, we can use techniques from supervised machine learning to learn a classifier.
+    We adopt the standard approach of defining a featural representation of the problem and then learning a linear decision boundary in the feature space.
+    We focus here on the learning methodology; the next section covers the definition of the set of features.
+    Defined in this way, one can apply any statistical learning algorithm to this classification task, such as support vector machines, logistic regression, or naive Bayes.
+    We used a logistic

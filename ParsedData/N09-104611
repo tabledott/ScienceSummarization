@@ -1,0 +1,5 @@
+ttice using the forward-backward algorithm.
+    By finding the best score overall, we can then prune edges using a threshold criterion; i.e., edges whose score is some factor &#945; away from the global best edge score.
+    Our model defines a conditional probability distribution over virtually all segmentations of a word w. To train our model, we wish to maximize the likelihood of the segmentations contained in the reference lattices by moving probability mass away from the segmentations that are not in the reference lattice.
+    Thus, we wish to minimize the following objective (which can be computed using the forward algorithm over the unpruned hypothesis lattices): To compute these values, the first expectation is computed using forward-backward inference over the full lattice.
+    To compute the second expectation, the full lattice is intersected with the reference lattice Ri, and then forward-backward inference is redone.2 We use the standard quasi-Newtonian method L-BFGS to optimize the model (Liu et a

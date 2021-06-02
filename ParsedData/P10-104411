@@ -1,0 +1,6 @@
+proach as follows: we treat each relation as a document whose contents consist of a bags of words corresponding to all the noun phrases observed as arguments of the relation in our corpus.
+    Formally, LDA generates each argument in the corpus of relations as follows: for each topic t = 1... T do Generate Ot according to symmetric Dirichlet distribution Dir(,q). for each relation r = 1... |R |do Generate 0r according to Dirichlet distribution Dir(&#945;). for each tuple i = 1... Nr do Generate zr,i from Multinomial(Or).
+    Generate the argument ar,i from multiOne weakness of IndependentLDA is that it doesn&#8217;t jointly model a1 and a2 together.
+    Clearly this is undesirable, as information about which topics one of the arguments favors can help inform the topics chosen for the other.
+    For example, class pairs such as (team, game), (politician, political issue) form much more plausible selectional preferences than, say, (team, political issue), (politician, game).
+    As a more tightly coupled altern

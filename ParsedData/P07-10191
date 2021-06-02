@@ -1,0 +1,6 @@
+rom the expressive power of the translation model: for example, a phrase- or word-based model with full reordering has exponential complexity (Knight, 1999).
+    The language model also, if fully integrated into the decoder, introduces an expensive overhead for maintaining target-language boundary words for dynamic programming (Wu, 1996; Och and Ney, 2004).
+    In practice, one must prune the search space aggressively to reduce it to a reasonable size.
+    A much simpler alternative method to incorporate the LM is rescoring: we first decode without the LM (henceforth &#8722;LM decoding) to produce a k-best list of candidate translations, and then rerank the k-best list using the LM.
+    This method runs much faster in practice but often produces a considerable number of search errors since the true best translation (taking LM into account) is often outside of the k-best list.
+    Cube pruning (Chiang, 2007) is a compromise between rescoring and full-integration: it rescores k subtranslations at each node of t

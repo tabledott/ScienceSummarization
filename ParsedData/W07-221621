@@ -1,0 +1,7 @@
+ations over the entire training set, where p(x&#945;) is typically set to 1/|T |.
+    A generative probabilistic dependency model over some alphabet E consists of parameters pkx,y associated with each dependency from word x E E to word y E E with label lk E L. In addition, we impose 0 &lt; pkx,y &lt; 1 and the normalization conditions k = 1 for each x E E. We define a enerative probability model p over trees T E T (G.) and a sentence x = x0x1 &#183; &#183; &#183; xn conditioned on the sentence length, which is always known, We assume that p(T |n) = &#946; is uniform.
+    This model is studied specifically by Paskin (2001).
+    In this model, one can view the sentence as being generated recursively in a top-down process.
+    First, a tree is generated from the distribution p(T |n).
+    Then starting at the root of the tree, every word generates all of its modifiers independently in a recursive breadthfirst manner.
+    Thus, pkx,y represents the probability of the word x generating its modifier y with label lk.

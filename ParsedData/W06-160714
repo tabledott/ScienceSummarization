@@ -1,0 +1,6 @@
+  A practical difficulty in implementing GoodTuring smoothing is that the nc are noisy for large c. For instance, there may be only one phrase pair that occurs exactly c = 347,623 times in a large corpus, and no pair that occurs c = 347,624 times, leading to cg(347, 623) = 0, clearly not what is intended.
+    Our solution to this problem is based on the technique described in (Church s&#65533; where n1+(*, &#732;t) is the number of phrases s&#732; for which c(&#732;s, &#732;t) &gt; 0.
+    We experimented with two choices for the smoothing distribution pb(&#732;s|&#732;t).
+    The first is a plain unigram p(&#732;s), and the second is the Kneser-Ney lower-order distribution: ie, the proportion of unique target phrases that s&#732; is associated with, where n1+(&#732;s, *) is defined analogously to n1+(*, &#732;t).
+    Intuitively, the idea is that source phrases that co-occur with many different target phrases are more likely to appear in new contexts.
+    For both unigram and Kneser-Ney smoothing distribution

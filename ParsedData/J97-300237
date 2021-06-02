@@ -1,0 +1,7 @@
+r this grammar, a series of nested constituents with the same orientation will always have a left-heavy derivation.
+    The guarantee that parsing will produce a tail-recursive tree facilitates easily identification of those nesting levels that are associative (and therefore arbitrary), so that those levels can be &amp;quot;flattened&amp;quot; by a postprocessing stage after parsing into non-normal form trees like the one in Figure 9(c).
+    The algorithm proceeds bottom-up, eliminating as many brackets as possible, by making use of the associativity equivalences [[AB]C] ,=s [ABC] and ((AB)C) (ABC).
+    The singleton bidirectionality and flipping commutativity equivalences (see Lemma 4) can also be applied whenever they render the associativity equivalences applicable.
+    Experiment.
+    Approximately 2,000 sentence-pairs with both English and Chinese lengths of 30 words or less were extracted from our corpus and bracketed using the algorithm described.
+    Several additional criteria were used to filter out

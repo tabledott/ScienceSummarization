@@ -1,0 +1,8 @@
+ems should be processed.
+    This approach also dramatically reduces the work done during parsing, though it, too, gives no guarantee that the first parse returned is the actual Viterbi parse (nor does it maintain a worst-case cubic time bound).
+    We discuss best-first parsing further in section 3.3.
+    Both of these speed-up techniques are based on greedy models of parser actions.
+    The beam search greedily prunes partial parses at each beam stage, and a best-first FOM greedily orders parse item exploration.
+    If we wish to maintain optimality in a search procedure, the obvious thing to try is A* methods (see for example Russell and Norvig, 1995).
+    We apply A* search to a tabular itembased parser, ordering the parse items based on a combination of their known internal cost of construction and a conservative estimate of their cost of completion (see figure 1).
+    A* search has been proposed and used for speech applications (Goel and Byrne, 1999, Corazza et al., 1994); however, it has been little us

@@ -1,0 +1,8 @@
+akhutdinov (2008) provide an unbiased estimator for P(h&#8727;|w), which is calculated using the stationary distribution of the Gibbs sampler.
+    Given the infrastructure necessary for the Conversation+Topic model described above, it is straightforward to also implement a Bayesian version of of the conversation model described in Section 3.1.
+    This amounts to replacing the add-x smoothing of dialogue act emission and transition probabilities with (potentially sparse) Dirichlet priors, and replacing EM with Gibbs sampling.
+    There is reason to believe that integrating out multinomials and using sparse priors will improve the performance of the conversation model, as improvements have been observed when using a Bayesian HMM for unsupervised part-of-speech tagging (Goldwater and Griffiths, 2007).
+  
+  
+    Evaluating automatically discovered dialogue acts is a difficult problem.
+    Unlike previous work, our model automatically discovers an appropriate set of dialogue acts for a new medium; these acts will

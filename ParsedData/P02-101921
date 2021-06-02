@@ -1,0 +1,8 @@
+ the original dataset the pairs for which we did not have the correct word in the pronunciation dictionary.
+    Both models LTR and PH were trained on the same training set.
+    The interpolation weight that the combined model CMB uses is also set on the training set to maximize the classification accuracy.
+    At test time we do not search through all possible words r in the dictionary to find the one maximizing SeoreCMB(wjr).
+    Rather, we compute the combination score only for candidate words r that are in the top N according to the PLTR(wjr) or are in the top N according to PPH(pron wjpron r) for any of the pronunciations of r from the dictionary and any of the pronunciations for w that were proposed by the letter-to-phone model.
+    The letter-to-phone model returned for each w the 3 most probable pronunciations only.
+    Our performance was better when we considered the top 3 pronunciations of w rather than a single most likely hypothesis.
+    That is probably due to the fact that the 3-best accuracy o

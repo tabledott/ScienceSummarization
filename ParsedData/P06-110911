@@ -1,0 +1,7 @@
+&#176; t', for some t'.
+    Here the appropriate t' is defined to be tf &#8722; t. A state st is connected backward to all states stb such that t = tb &#176; t', for some t'.
+    Again, t' is defined to be t &#8722; tb.
+    The construction of the state lattice and assignment of transition probabilities according to the ML-DOP model is called the forward pass.
+    The probability of a given state, P(s), is referred to as &#945;(s).
+    The forward probability of a state st is computed recursively The backward probability of a state, referred to as &#946;(s), is calculated according to the following recursive formula: where the backward probability of the goal state is set equal to the forward probability of the goal state, &#946;(sT) = &#945;(sT).
+    The update formula for the count of a subtree t is (where r(t) is the root label of t): The updated probability distribution, P'(t  |r(t)), is defined to be In practice, ML-DOP starts out by assigning the same relative frequencies to the subtrees as DOP1, which 

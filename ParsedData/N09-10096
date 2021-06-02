@@ -1,0 +1,7 @@
+#8221; (DMV), due to Klein and Manning (2004).
+    DMV defines a probabilistic grammar for unlabeled, projective dependency structures.
+    Klein and Manning (2004) achieved their best results with a combination of DMV with a model known as the &#8220;constituent-context model&#8221; (CCM).
+    We do not experiment with CCM in this paper, because it does not fit directly in a Bayesian setting (it is highly deficient) and because state-of-the-art unsupervised dependency parsing results have been achieved with DMV alone (Smith, 2006).
+    Using the notation above, DMV defines x = (x1,x2, ..., xn) to be a sentence. x0 is a special &#8220;wall&#8221; symbol, $, on the left of every sentence.
+    A tree y is defined by a pair of functions yleft and yright (both 10, 1, 2,..., n} __+ 2{1,2,...,n}) that map each word to its sets of left and right dependents, respectively.
+    Here, the graph is constrained to be a projective tree rooted at x0 = $: each word except $ has a single parent, and there are no cycles or cro

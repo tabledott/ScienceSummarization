@@ -1,0 +1,7 @@
+in the previous section.
+    All changes a worker makes to the clustering are accumulated locally in delta data structures.
+    At the end of the iteration all deltas are merged and applied to the previous clustering, resulting in the complete clustering loaded in the next iteration.
+    This algorithm fits well into the MapReduce programming model (Dean and Ghemawat, 2004) that we used for our implementation.
+    While the greedy non-distributed exchange algorithm is guaranteed to converge as each exchange increases the log likelihood of the assumed bigram model, this is not necessarily true for the distributed exchange algorithm.
+    This stems from the fact that the change in log likelihood is calculated by each worker under the assumption that no other changes to the clustering are performed by other workers in this iteration.
+    However, if in each iteration only a rather small and randomly chosen subset of all words are considered for exchange, the intuition is that the remaining words still define the

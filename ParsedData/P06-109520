@@ -1,0 +1,9 @@
+ts of closing the TLINKs produced by GTag&#8217;s annotation and then training ME from the resulting data.
+    The results here are evaluated against a held-out test set.
+    We can see that even after closure, the baseline of learning from unclosed human annotations is much poorer than ME-C, and is in fact substantially worse than the majority class on event ordering.
+    This means that for preprocessing new data sets to produce noisily annotated data for this classification task, it is far better to use machinelearning from closed human annotations rather than machine-learning from closed annotations produced by an intuitive baseline.
+  
+  
+    Our approach of classifying pairs independently during learning does not take into account dependencies between pairs.
+    For example, a classifier may label &lt;X, Y&gt; as BEFORE.
+    Given the pair &lt;X, Z&gt;, such a classifier has no idea if &lt;Y, Z&gt; has been classified as BEFORE, in which case, through closure, &lt;X, Z&gt; should be classified as BEFORE

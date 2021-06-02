@@ -1,0 +1,10 @@
+lusions are based on experiments conducted with smaller data sets, and that with larger data sets partitional algorithms are not only faster but lead to better results.
+    In particular, Zhao and Karypis recommend a hybrid approach known as Repeated Bisections.
+    This overcomes the main weakness with partitional approaches, which is the instability in clustering solutions due to the choice of the initial random centroids.
+    Repeated Bisections starts with all instances in a single cluster.
+    At each iteration it selects one cluster whose bisection optimizes the chosen criteria function.
+    The cluster is bisected using standard K-means method with K=2, while the criteria function maximizes the similarity between each instance and the centroid of the cluster to which it is assigned.
+    As such this is a hybrid method that combines a hierarchical divisive approach with partitioning.
+  
+  
+    We use 24 of the 73 words in the SENSEVAL-2 sense&#8211; tagged corpus, and the Line, Hard and Serve sense&#821

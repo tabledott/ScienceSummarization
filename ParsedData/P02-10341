@@ -1,0 +1,9 @@
+ibes how the perceptron andvoted perceptron algorithms can be used for pars ing and tagging problems.
+			Crucially, the algorithmscan be efficiently applied to exponential sized repre sentations of parse trees, such as the ?all subtrees?
+			(DOP) representation described by (Bod 1998), or a representation tracking all sub-fragments of a taggedsentence.
+			It might seem paradoxical to be able to ef ficiently learn and apply a model with an exponential number of features.1 The key to our algorithms is the 1Although see (Goodman 1996) for an efficient algorithm for the DOP model, which we discuss in section 7 of this paper.
+			?kernel?
+			trick ((Cristianini and Shawe-Taylor 2000) discuss kernel methods at length).
+			We describe how the inner product between feature vectors in these representations can be calculated efficiently using dynamic programming algorithms.
+			This leads topolynomial time2 algorithms for training and applying the perceptron.
+			The kernels we describe are related to the kernels over dis

@@ -1,0 +1,6 @@
+m this partial alignment we increase the counts for the following outbound, inbound, and pair distortions: Po(&#948; = +2|f10), Pi(&#948; = +2|f300). and Pp(&#948; = +2|f10, f300).
+    Formally, our distortion model components are defined as follows: where fi is a foreign word (i.e., Arabic in our case), &#948; is the step size, and C(&#948;|fi) is the observed count of this parameter over all word alignments in the training data.
+    The value for &#948;, in theory, ranges from &#8722;max to +max (where max is the maximum source sentence length observed), but in practice only a small number of those step sizes are observed in the training data, and hence, have non-zero value).
+    In order to use these probability distributions in our decoder, they are then turned into costs.
+    The outbound distortion cost is defined as: where P3(&#948;) is a smoothing distribution 7 and &#945; is a linear-mixture parameter 8.
+    The inbound and pair costs (Ci(&#948;|fi) and Cp(&#948;|fi, fj)) can be defined in a similar 

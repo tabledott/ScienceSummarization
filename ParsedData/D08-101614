@@ -1,0 +1,5 @@
+ocally consistent: e.g., the beliefs at factors TAGLINKij and TAGLINKik must both imply9 the same belief about variable Ti, their common neighbor.
+    This iterated negotiation among the factors is handled by message passing along the edges of the factor graph.
+    A message to or from a variable is a (possibly unnormalized) probability distribution over the values of that variable.
+    The variable V sends a message to factor F, saying &#8220;My other neighboring factors G jointly suggest that I have posterior distribution qV ,F (assuming that they are sending me independent evidence).&#8221; Meanwhile, factor F sends messages to V , saying, &#8220;Based on my factor function and the messages received from my other neighboring variables U about their values (and assuming that those messages are independent), I suggest you have posterior distribution rF,V over your values.&#8221; To be more precise, BP at each iteration k (until convergence) updates two kinds of messages: from factors to variables.
+    Each m

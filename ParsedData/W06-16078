@@ -1,0 +1,8 @@
+ making independence assumptions about the words s in &#732;s.
+    The other possibility, which is similar in spirit to ngram LM lower-order estimates, is to combine estimates made by replacing words in t&#732; with wildcards, as proposed in section 3.4.
+    Although we explored a variety of black-box and glass-box smoothing distributions, we only tried two combination techniques: linear interpolation, which we used for black-box smoothing, and loglinear interpolation, which we used for glass-box smoothing.
+    For black-box smoothing, we could have used a backoff scheme or an interpolation scheme.
+    Backoff schemes have the form: pb(&#732;s |&#732;t) is a smooth backoff distribution, and &#964; is a threshold above which counts are considered reliable.
+    Typically, &#964; = 1 and ph(&#732;s |&#732;t) is version of &#732;p(&#732;s|&#732;t) modified to reserve some probability mass for unseen events.
+    Interpolation schemes have the general form: where &#945; and &#946; are combining coefficients.
+    As

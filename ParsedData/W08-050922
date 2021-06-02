@@ -1,0 +1,10 @@
+GIZA++ will not perform as good as MGIZA++ on small-size corpora.
+    However, PGIZA++ has good performance on large data, and should be considered when building very large scale systems.
+  
+  
+    The paper describes two parallel implementations of the well-known and widely used word alignment tool GIZA++.
+    PGIZA++ does alignment on a number of independent processes, uses network file system to collect counts, and performs normalization by a master process.
+    MGIZA++ uses a multi-threading mechanism to utilize multiple cores and avoid network transportation.
+    The experiments show that the two implementation produces similar results with original GIZA++, but lead to a significant speed-up in the training process.
+    With compatible interface, MGIZA++ is suitable for a drop-in replacement for GIZA++, while PGIZA++ can utilize huge computation resources, which is suitable for building large scale systems that cannot be built using a single machine.
+    However, improvements can be made on both versions

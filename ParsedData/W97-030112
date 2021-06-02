@@ -1,0 +1,6 @@
+usual: if a is an action from CHECK Let deriv(T) = {al, ,a,,} be the derivation of a parse T, where T is not necessarily complete, and where each ai is an action of some tree-building procedure.
+    By design, the tree-building procedures guarantee that {al, , an} is the only derivation for the parse T. Then the score of T is merely the product of the conditional probabilities of the individual actions in its derivation: where bi is the context in which ai was decided.
+  
+  
+    The search heuristic attempts to find the best parse T*, defined as: where trees(S) are all the complete parses for an input sentence S. The heuristic employs a breadth-first search (BFS) which does not explore the entire frontier, but rather, explores only at most the top K scoring incomplete parses in the frontier, and terminates when it has found M complete parses, or when all the hypotheses have been exhausted.
+    Furthermore, if {al ... an} are the possible actions for a given procedure on a derivation with context b, and they a

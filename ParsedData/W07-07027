@@ -1,0 +1,14 @@
+ences.
+			One of the strengths of the factored model is it allows for n-gram distributions over factors on the target.
+			We call these distributions sequence models.
+			By analogy with language models, for example, we can construct a bigram sequence model as follows: p(f1, f2, . . .
+			fn) = p(f1) n?
+			i=2 p(fi|f(i?1)) where f is a factor (eg.
+			CCG supertags) and n is the length of the string.
+			Sequence models over POS tags or supertags are smaller than language modelsbecause they have restricted lexicons.
+			Higher or der, more powerful sequence models can therefore be used.
+			Applying multiple factors in the source can lead to sparse data problems.
+			One solution is to break down the translation into smaller steps and translate each factor separately like in the following model where source words are translated separately to the source supertags: t?
+			M? m=1 ?mhm(sw, tw) + N?
+			n=1 ?nhn(sc, tw) However, in many cases multiple dependenciesare desirable.
+			For instance translating CCG supertags ind

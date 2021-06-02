@@ -1,0 +1,10 @@
+h one additional context anchor, in order to improve its specificity.
+    This anchor is chosen as the highest tf &#183;idf scoring phrase in the sentence, if it exists.
+    In the previous example, &#8216;pregnancy&#8217; is selected.
+    STEP (4) filters out bad candidate anchor sets by two different criteria.
+    STEP (4.A) maintains only candidates with absolute Web frequency within a threshold range [MINSETF, MAXSETF], to guarantee an appropriate specificity-generality level.
+    STEP (4.B) guarantees sufficient (directional) association between the candidate anchor set c and Tp, by estimating where freqW is Web frequency and P is the pivot.
+    We maintain only candidates for which this probability falls within a threshold range [SETMINP, SETMAXP].
+    Higher probability often corresponds to a strong linguistic collocation between the candidate and Tp, without any semantic entailment.
+    Lower probability indicates coincidental cooccurrence, without a consistent semantic relation.
+    The remaining can

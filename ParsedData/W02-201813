@@ -1,0 +1,7 @@
+2001; Balay et al., 1997; Balay et al., 2002).
+    PETSc offers data structures and routines for parallel and sequential storage, manipulation, and visualization of very large sparse matrices.
+    For any of the estimation techniques, the most expensive operation is computing the probability distribution q and the expectations Eq[f] for each iteration.
+    In order to make use of the facilities provided by PETSc, we can store the training data as a (sparse) matrix F, with rows corresponding to events and columns to features.
+    Then given a parameter vector &#952;, the unnormalized probabilities &#729;q0 are the matrix-vector product: and the feature expectations are the transposed matrix-vector product: By expressing these computations as matrix-vector operations, we can take advantage of the high performance sparse matrix primitives of PETSc.
+    For the comparison, we implemented both Generalized and Improved Iterative Scaling in C++ using the primitives provided by PETSc.
+    For the other optimization t

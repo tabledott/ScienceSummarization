@@ -1,0 +1,8 @@
+ur model also has a connection to entropy, and situates entropy-based segmentation within a Bayesian framework.
+    Equation 1 defines the objective function as a product across sentences; using equations 3-5 we can decompose this across segments instead.
+    Working in logarithms, The last line substitutes in the logarithm of equation 5.
+    Setting B0 = 0 and rearranging equation 2, we obtain nj,i = Nj&#65533;Bj,i, with Nj = PW i nj,i, the total number of words in segment j.
+    Substituting this into equation 6, we obtain where H(Bj) is the negative entropy of the multinomial Bj.
+    Thus, with B0 = 0, the log conditional probability in equation 6 is optimized by a segmentation that minimizes the weighted sum of entropies per segment, where the weights are equal to the segment lengths.
+    This result suggests intriguing connections with prior work on the relationship between entropy and discourse structure (e.g., Genzel and Charniak, 2002; Sporleder and Lapata, 2006).
+    The previous subsection uses poin

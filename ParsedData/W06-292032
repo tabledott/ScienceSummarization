@@ -1,0 +1,5 @@
+efix of FORM iLEMMA, POSTAG, FEATS only for back-off smoothing All data sets except German and Swedish had different values for CPOSTAG and POSTAG, although the granularity varied widely.
+    Again, there are different approaches to dealing with the redundancy: By design, a FEATS column value has internal structure.
+    Splitting it at the &#8216;|&#8217;30 results in a set of components.
+    The following approaches have been used: When deciding whether there should be a dependency relation between tokens i and j, all parsers use at least information about these two tokens.
+    In addition, the following sources of information can be used (see Table 4): token context (tc): a limited number (determined by the window size) of tokens directly preceding or following i or j; children: information about the already found children of i and j; siblings: in a set-up where the decision is not &#8220;is there a relation between i and j&#8221; but &#8220;is i the head of j&#8221; or in a separate labeling step, the sibl

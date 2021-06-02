@@ -1,0 +1,9 @@
+ distinguish types of capitalization and all other words such as punctuation marks.
+    In particular, the FirstWord feature arises from the fact that if a word is capitalized and is the first word of the sentence, we have no good information as to why it is capitalized (but note that AllCaps and CapPeriod are computed before FirstWord, and take precedence.)
+    This sub-feature is language dependent.
+    Fortunately, the feature computation is an extremely small part of the implementation.
+    This kind of internal sub-feature has been widely used in machine-learning systems, such as BBN's IdendiFinder and New York Univ.
+    's MENE.
+    The rationale behind this sub-feature is clear: a) capitalization gives good evidence of NEs in Roman languages; b) Numeric symbols can automatically be grouped into categories.
+    2) 2 f is the semantic classification of important triggers, as seen in Table 3, and is unique to our system.
+    It is based on the intuitions that important triggers are useful for NER and can 

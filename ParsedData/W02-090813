@@ -1,0 +1,8 @@
+ow frequency potential synonyms can eliminate many unnecessary comparisons.
+    Figure 2 presents both the performance of the system using direct match evaluation (left axis) and execution times (right axis) for increasing cutoffs.
+    This test was performed using JACCARD and the TTEST and LIN98A weight functions.
+    The first feature of note is that as we increase the minimum cutoff to 30, the direct match results improve for TTEST, which is probably a result of the TTEST weakness on low frequency counts.
+    Initially, the execution time is rapidly reduced by small increments of the minimum cutoff.
+    This is because Zipf&#8217;s law applies to relations, and so by small increments of the cutoff we eliminate many terms from the tail of the distribution.
+    There are only 29,737 terms when the cutoff is 30; 88,926 terms when the cutoff is 5; and 246,067 without a cutoff, and because the extraction algorithm is O(n2m), this results in significant efficiency gains.
+    Since extracting only 70 thesaurus te

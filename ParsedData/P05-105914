@@ -1,0 +1,8 @@
+l probabilties are equal on the first iteration, giving us no basis to make pruning decisions.
+    So, in our experiments, we initialize the head generation probabilities of the form P(X(e/f)  |X) to be the same as P(e/f  |C) from the result of the unlexicalized ITG training.
+    Even though we have controlled the number of parameters of the model to be at the magnitude of O(|V ||T |), the problem of data sparseness still renders a smoothing method necessary.
+    We use backing off smoothing as the solution.
+    The probabilities of the unary head generation rules are in the form of P(X(e/f)  |X).
+    We simply back them off to the uniform distribution.
+    The probabilities of the binary rules, which are conditioned on lexicalized nonterminals, however, need to be backed off to the probabilities of generalized rules in the following forms: where * stands for any lexical pair.
+    For instance, where The more often X(e/f) occurred, the more reliable are the estimated conditional probabilities with the conditi

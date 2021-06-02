@@ -1,0 +1,7 @@
+ full expressions are used as input to the description extraction module, which uses them to find candidate sentences in the corpus for extracting descriptions.
+    Since the need for a description may arise at a later time than when the entity was found and may require searching new text, the description finder must first locate these expressions in the text.
+    These representations are fed to CREP, which extracts noun phrases on either side of the entity (either pre-modifiers or appositions) from the news corpus.
+    The finite-state grammar for noun phrases that we use represents a variety of different syntactic structures for both pre-modifiers and appositions.
+    Thus, they may range from a simple noun (e.g., &amp;quot;president Bill Clinton&amp;quot;) to a much longer expression (e.g., &amp;quot;Gilberto Rodriguez Orejuela, the head of the Cali cocaine cartel&amp;quot;).
+    Other forms of descriptions, such as relative clauses, are the focus of ongoing implementation.
+    Table 2 shows some of the d

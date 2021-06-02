@@ -1,0 +1,6 @@
+    The system uses polynomial kernels of degree 2 (UU best) and 3 (UU bltk) as well as two different types of tree kernels for constituency and dependency trees, respectively.
+    The SVM margin/error trade-off, the mixture proportion between tree kernels and polynomial kernels and the degree of the polynomial kernels were optimised using grid search with 5-fold cross-validation over the training set.
+    TCD (R, S): &#8220;TCD M5P-resources-only&#8221; uses only the baseline features, while &#8220;TCD M5Pall&#8221; uses the baseline and additional features.
+    A number of metrics (used as features in TCD M5P-all) were proposed which work in the following way: given a sentence to evaluate (source sentence for complexity or target sentence for fluency), it is compared against some reference data using similarity measures (various metrics which compare distributions of n-grams).
+    The training data was used as reference, along with the Google ngrams dataset.
+    Several learning methods were tested using We

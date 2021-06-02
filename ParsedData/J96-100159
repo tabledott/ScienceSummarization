@@ -1,0 +1,8 @@
+ch of these sentences.
+    The frequency of each word (in sentences) is also computed at this stage.
+    Thus, all the necessary information is collected from the corpus database at this preprocessing phase with only one pass over the corpus file.
+    At the translation phase, only the indices are accessed.
+    For the translation phase, we developed an algorithm that avoids computing the Dice coefficient for French words when the result must necessarily fall below the threshold.
+    Using the index file on the English part of the corpus, we collect all French sentences that match the source collocation, and produce a list of all words that appear in these sentences, together with their frequency (in sentences) in this subset of the French corpus.
+    This operation takes only a few seconds to perform, and yields a list of a few thousand French words.
+    The list also contains the local frequency of these words (i.e., frequency within this subset of the French corpus), and is sorted by this frequency in decr

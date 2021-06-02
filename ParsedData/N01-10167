@@ -1,0 +1,7 @@
+onditioning variables in more detail; they include variables indicating the POS tag of the preceding word, the tag of the following word, whether or not the word token appears in a &#8220;rough copy&#8221; as explained below, etc.
+    The goal of the classifier is to predict the value of Y given values for X1, ... , Xm.
+    The classifier makes its predictions based on the occurence of combinations of conditioning variable/value pairs called features.
+    A feature F is a set of variable-value pairs (Xj, xj), with xj E Xj.
+    Our classifier is defined in terms of a finite number n of features F1, ... , Fn, where n &#8776; 106 in our classifiers.2 Each feature Fi defines an associated random boolean variable where (X=x) takes the value 1 if X = x and 0 otherwise.
+    That is, Fi = 1 iff Xj = xj for all (Xj,xj) E Fi.
+    Our classifier estimates a feature weight &#945;i for each feature Fi, that is used to define the prediction variable Z: The prediction made by the classifier is sign(Z) = Z/|Z|, i.e., &#8722;

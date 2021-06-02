@@ -1,0 +1,11 @@
+e probabilities p(t?|s?) are not used as features, but only as a filter on the set of possible translations: for each source phrase s?
+			that matches some ngram in s, only the 30 top-ranked translations t?
+			according to p(t?|s?) are retained.
+			Oneof the reviewers has pointed out correctly that tak ing only the top 30 translations will interact with the subject under study; however, this pruning technique has been used as a way of controlling the width of our beam search and rebalancing search parameters would have complicated this study and taken it away from our standard practice.
+			The phrase translation model probabilities are smoothed according to one of several techniques as described in (Foster et al, 2006) and identified in the discussion below.
+			2.2 Significance testing using two by two.
+			contingency tables Each phrase pair can be thought of as am n,m-gram (s?, t?)
+			where s?
+			is an n-gram from the source side of the corpus and t?
+			is an m-gram from the target side of the corpus.
+			We 

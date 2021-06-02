@@ -1,0 +1,6 @@
+ased approaches is to recast coreference resolution as a binary classification task.
+    Specifically, a classifier is first trained to determine whether two NPs in a document are co-referring or not.
+    A separate clustering mechanism then coordinates the possibly contradictory pairwise coreference classification decisions and constructs a partition on the given set of NPs, with one cluster for each set of coreferent NPs.
+    Though reasonably successful, this &#8220;standard&#8221; approach is not as robust as one may think.
+    First, design decisions such as the choice of the learning algorithm and the clustering procedure are apparently critical to system performance, but are often made in an ad-hoc and unprincipled manner that may be suboptimal from an empirical point of view.
+    Second, this approach makes no attempt to search through the space of possible partitions when given a set of NPs to be clustered, employing instead a greedy clustering procedure to construct a partition that may be far from 

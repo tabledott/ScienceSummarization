@@ -1,0 +1,11 @@
+the baseline NER system, and raise the fundamental questions underlying robust and efficient design.
+    These questions define the outline of this paper.
+    NER is typically viewed as a sequential prediction problem, the typical models include HMM (Rabiner, 1989), CRF (Lafferty et al., 2001), and sequential application of Perceptron or Winnow (Collins, 2002).
+    That is, let x = (x1,... , xN) be an input sequence and y = (y1, ... , yN) be the output sequence.
+    The sequential prediction problem is to estimate the probabilities P(yi|xi&#8722;k .
+    .
+    . xi+l, yi&#8722;m .
+    .
+    . yi&#8722;1), where k, l and m are small numbers to allow tractable inference and avoid overfitting.
+    This conditional probability distribution is estimated in NER using the following baseline set of features (Zhang and Johnson, 2003): (1) previous two predictions yi&#8722;1 and yi&#8722;2 (2) current word xi (3) xi word type (all-capitalized, is-capitalized, all-digits, alphanumeric, etc.)
+    (4) prefixes and suffixes

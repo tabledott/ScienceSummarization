@@ -1,0 +1,12 @@
+on is that when Nt,l is very small, the estimation is not accurate.
+    The challenge here is that pt(y|xt,u k ; B) is unknown to us, thus we need to estimate it.
+    One possibility is to approximate it with a model B&#65533; learned from Ds and Dt,l.
+    For example, we can set pt(y|x, B) = p(y|x; B).
+    Alternatively, we can also set pt(y|x, B) to 1 if y = arg maxy0 p(y'|x; B) and 0 otherwise.
+  
+  
+    The theoretical analysis we give in Section 2 suggests that one way to solve the domain adaptation problem is through instance weighting.
+    We propose a framework that incorporates instance pruning in Section 2.2 and the three approximations in Section 2.3.
+    Before we show the formal framework, we first introduce some weighting parameters and explain the intuitions behind these parameters.
+    First, for each (xsi , ysi ) E Ds, we introduce a parameter &#945;i to indicate how likely pt(ys i |xsi) is close to ps(ysi |xsi ).
+    Large &#945;i means the two probabilities are close, and therefore we can t

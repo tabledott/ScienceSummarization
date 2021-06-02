@@ -1,0 +1,5 @@
+rd 2004), we apply a maximum entropy model to HPSG parse disambiguation.
+    The probability, p(t|w), of producing parse result t of a given sentence w is defined as where where p0(t|w) is a reference distribution (usually assumed to be a uniform distribution) and T(w) is a set of parse candidates assigned to w. The feature function fi(t,w) represents the characteristics of t and w, and the corresponding model parameter &#955;i is its weight.
+    Model parameters that maximize the log-likelihood of the training data are computed using a numerical optimization method (Malouf 2002).
+    Estimation of the model requires a set of pairs (tw, T(w)), where tw is the correct parse for a sentence w. Whereas tw is provided by a treebank, T(w) has to be computed by parsing each w in the treebank.
+    Previous studies assumed T(w) could be enumerated; however, this assumption is impractical because the size of T(w) is exponentially related to the length of w. Our solution here is to apply the feature forest model of Sect

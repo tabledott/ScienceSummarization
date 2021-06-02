@@ -1,0 +1,9 @@
+s currently set to 0.05.
+    Figure 1 pulls together the points of the preceding discussion into an outline of the method of context words.
+    In the training phase, it identifies a list of context words that are useful for discriminating among the words in the confusion set.
+    At run time, it estimates the probability of each word in the confusion set.
+    It starts with the prior probabilities, and multiplies them by the likelihood of each context word from its list that appears in the &#177;k-word window of the target word.
+    Finally, it selects the word in the confusion set with the greatest probability.
+    The main parameter to tune for the method of context words is k, the half-width of the context window.
+    Previous work [Yarowsky, 1994] shows that smaller values of k (3 or 4) work well for resolving local syntactic ambiguities, while larger values (20 to 50) are suitable for resolving semantic ambiguities.
+    We tried the values 3, 6, 12, and 24 on some practice confusion sets (not shown here

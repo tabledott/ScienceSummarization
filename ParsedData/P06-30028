@@ -1,0 +1,9 @@
+n the final partitioning, although they might form word classes of their own2.
+    This is done in step 4.
+    We argue that assigning separate word classes for high frequency words is a more robust choice then trying to disambiguate them while tagging.
+    Lexicon size for partitioning 1 is limited by the computational complexity of step 2, which is time-quadratic in the number of target words.
+    For adding words with lower frequencies, we pursue another strategy.
+    Partitioning 2: Medium and low frequency words As noted in (Dunning, 1993), log-likelihood statistics are able to capture word bi-gram regularities.
+    Given a word, its neighbouring cooccurrences as ranked by the log-likelihood reflect the typical immediate contexts of the word.
+    Regarding the highest ranked neighbours as the profile of the word, it is possible to assign similarity scores between two words A and B according to how many neighbours they share, i.e. to what extent the profiles of A and B overlap.
+    This directly induces a

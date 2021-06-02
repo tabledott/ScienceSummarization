@@ -1,0 +1,9 @@
+, Sent-H).
+    A subgoal for the generation of a node node(np/NP, Sent-P) will result.
+    To this subgoal, the second rule will apply, leading to a subgoal for generation of the node node(det(N)/NP, Sent-P1), which itself, by virtue of the third rule, leads to another instance of the NP node generation subgoal.
+    Of course, the loop may now be repeated an arbitrary number of times.
+    Graphing the tree being constructed by the traversal of this algorithm, as in Figure 1, immediately exhibits the potential for nontermination in the control structure.
+    (The repeated goals along the left branch are presented in boldface in the figure.
+    Dashed lines indicate portions of the tree yet to be generated.)
+    This is an instance of the general problem familiar from logic programming that a logic program may not terminate when called with a goal less instantiated than what was intended by the program's designer.
+    Several researchers have noted that a different ordering of the branches in the top-down trave

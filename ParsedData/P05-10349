@@ -1,0 +1,7 @@
+he target sentence.
+    Oneto-one alignments project directly to create a target tree isomorphic to the source.
+    Many-to-one alignments project similarly; since the &#8216;many&#8217; source nodes are connected in the tree, they act as if condensed into a single node.
+    In the case of one-to-many alignments we project the source node to the rightmost2 of the &#8216;many&#8217; target words, and make the rest of the target words dependent on it.
+    2 If the target language is Japanese, leftmost may be more appropriate. startup properties and options propri&#233;t&#233;s et options de d&#233;marrage Unaligned target words3 are attached into the dependency structure as follows: assume there is an unaligned word tj in position j.
+    Let i &lt; j and k &gt; j be the target positions closest to j such that ti depends on tk or vice versa: attach tj to the lower of ti or tk.
+    If all the nodes to the left (or right) of position j are unaligned, attach tj to the left-most (or right-most) word that is aligned.

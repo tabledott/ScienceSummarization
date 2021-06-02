@@ -1,0 +1,8 @@
+gue treebank.
+    We use feature sets that are very similar to those described in Carreras (2007).
+    We use marginalbased pruning, using marginals calculated from an arc-factored spanning tree model using the matrixtree theorem (McDonald and Satta, 2007; Smith and Smith, 2007; Koo et al., 2007).
+    In all of our experiments we set the value K, the maximum number of iterations of dual decomposition in Figures 1 and 2, to be 5,000.
+    If the algorithm does not terminate&#8212;i.e., it does not return (y(k), z(k)) within 5,000 iterations&#8212;we simply take the parse y(k) with the maximum value of f(y(k)) as the output from the algorithm.
+    At first sight 5,000 might appear to be a large number, but decoding is still fast&#8212;see Sections 7.3 and 7.4 for discussion.2 The strategy for choosing step sizes &#945;k is described in Appendix A, along with other details.
+    We first discuss performance in terms of accuracy, success in recovering an exact solution, and parsing speed.
+    We then describe addit

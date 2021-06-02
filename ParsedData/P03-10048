@@ -1,0 +1,9 @@
+it takes O(|X|) to calculate (1 + |Xj n X|)d and there are a total of |SV  |support examples.
+    Given an item i E F, if we know in advance the set of support examples which contain item i E F, we do not need to calculate |Xj n X |for all support examples.
+    This is a naive extension of Inverted Indexing in Information Retrieval.
+    Figure 1 shows the pseudo code of the algorithm PKI.
+    The function h(i) is a pre-compiled table and returns a set of support examples which contain item i.
+    The complexity of the PKI is O(|X |&#183; B + |SV |), where B is an average of |h(i) |over all item i E F. The PKI can make the classification speed drastically faster when B is small, in other words, when feature space is relatively sparse (i.e., B &#171; |SV |).
+    The feature space is often sparse in many tasks in NLP, since lexical entries are used as features.
+    The algorithm PKI does not change the final accuracy of the classification.
+    Using Lemma 1, we can represent the decision function (5) in an expli

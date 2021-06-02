@@ -1,0 +1,10 @@
+goal logical form.
+    It is exactly this mismatch between structure of the traversal and structure of the problem premise that accounts for the profligacy of these approaches when used for generation.
+    Thus, for generation, we want a traversal order geared to the premise of the generation problem, that is, to the semantic structure of the sentence.
+    The new algorithm is designed to reflect such a traversal strategy respecting the semantic structure of the string being generated, rather than the string itself.
+  
+  
+    Given an analysis tree for a sentence, we define the pivot node as the lowest node in the tree such that it and all higher nodes up to the root have the same semantics.
+    Intuitively speaking, the pivot serves as the semantic head of the root node.
+    Our traversal will proceed both top-down and bottom-up from the pivot, a sort of semantic-headdriven traversal of the tree.
+    The choice of this traversal allows a great reduction in the search for rules used to build the analysis tree

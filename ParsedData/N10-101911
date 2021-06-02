@@ -1,0 +1,5 @@
+ Products of the above ratios/deltas and classifier choice/presence probabilities Type of operation: deletion, insertion, substitution (3 features) For each preposition/article choice: P(choice): 13 features for prepositions (12 prepositions and other for a preposition not in that set), 2 for articles Original token: none (for insertion) or the original preposition/article (13 features for prepositions, 2 for articles) Suggested token: none (for deletion) or the suggested preposition/article (13 features for prepositions, 2 for articles) The total number of features is 63 for prepositions and 36 for articles.
+    The meta-classifier is trained by collecting suggested corrections from the primary models on the error annotated data.
+    The error-annotation provides the binary class label, i.e. whether the suggested revision is correct or incorrect.
+    If the suggested revision matches an annotated correction, it counts as correct, if it does not match it counts as incorrect.
+    To give an example, the top th

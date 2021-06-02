@@ -1,0 +1,6 @@
+asserman 2004) describe feature selection approaches for log-linear models applied to NLP problems.
+    Earlier work (Berger, Della Pietra, and Della Pietra 1996; Ratnaparkhi 1998; Della Pietra, Della Pietra, and Lafferty 1997) suggested methods that added a feature at a time to the model and updated all parameters in the current model at each step (for more detail, see section 3.3).
+    Assuming that selection of a feature takes one pass over the training set and that fitting a model takes p passes over the training set, these methods require f x (p + 1) passes over the training set, where f is the number of features selected.
+    In our experiments, f z 10,000.
+    It is difficult to estimate the value for p, but assuming (very conservatively) that p = 2, selecting 10,000 features would require 30,000 passes over the training set.
+    This is around 1,000 times as much computation as that required for the efficient boosting algorithm applied to our data, suggesting that the feature selection methods in Berg

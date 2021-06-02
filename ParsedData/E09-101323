@@ -1,0 +1,11 @@
+ the &#945; hyperparameter was set to 0.02.
+    This was optimized in an independent tuning experiment which used the Senseval 2 (Preiss and Yarowsky, 2001) and Senseval 3 (Mihalcea and Edmonds, 2004) datasets.
+    We experimented with &#945; values ranging from 0.005 to 1.
+    The &#946; parameter was set to 0.1 (in all layers).
+    This value is often considered optimal in LDA-related models (Griffiths and Steyvers, 2002).
+    For simplicity, we used uniform weights for the layers.
+    The Gibbs sampler was run for 2,000 iterations.
+    Due to the randomized nature of the inference procedure, all reported results are average scores over ten runs.
+    Our experiments used the same number of senses for all the words, since tuning this number individually for each word would be prohibitive.
+    We experimented with values ranging from three to nine senses.
+    Figure 3 shows the results obtained for different numbers of senses when the model is trained on the WSJ (in-domain) and BNC (out-ofdomain) corpora, res

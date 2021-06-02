@@ -1,0 +1,8 @@
+  The other lexical probability estimates follow the same pattern.
+    The contextual probability, the probability of observing part of speech X given the following two parts of speech Y and Z, is estimated by dividing the trigram frequency XYZ by the bigram frequency YZ.
+    Thus, for example, the probability of observing a verb before an article and a noun is estimated to be the ratio of the freq(VB, AT, NN) over the freq(AT, NN) or 3412/53091 = 0.064.
+    The probability of observing a noun in the same context is estimated as the ratio of freq(NN, AT, NN) over 53091 or 629/53091 = 0.01.
+    The other contextual probability estimates follow the same pattern.
+    A search is performed in order to find the assignment of part of speech tags to words that optimizes the product of the lexical and contextual probabilities.
+    Conceptually, the search enumerates all possible assignments of parts of speech to input words.
+    In this case, there are four input words, three of which are two ways ambiguous, producin

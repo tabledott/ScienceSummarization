@@ -1,0 +1,12 @@
+sume they are wrong but with a special caveat for proper nouns.
+    WordNet includes few proper noun MWUs.
+    Yet several algorithms produce large numbers of proper nouns.
+    This biases against them.
+    One could contend that all proper nouns MWUs are valid, but we disagree.
+    Although such may be MWUs, they are not necessarily MRD headwords; one would not include every proper noun in a dictionary, but rather, those needing definitions.
+    To overcome this, we will have two scoring modes.
+    The first, &#8220;S&#8221; mode (standing for some) discards any proposed capitalized n-gram whose uncapitalized version is not in WordNet.
+    The second mode &#8220;N&#8221; (for none) disregards all capitalized n-grams.
+    Table 3 illustrates algorithmic performance as compared to the 2610 MWUs from WordNet.
+    The first double column illustrates &#8220;out-of-the-box&#8221; performance on all 177,331 possible n-grams.
+    The second double column shows cross-sourcing: only hypothesizing MWUs that appear in a

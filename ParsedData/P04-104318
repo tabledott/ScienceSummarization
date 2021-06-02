@@ -1,0 +1,10 @@
+ for the Automatic Labeling of Semantic Roles.
+    We considered 18 of the most frequent roles and we mapped together those having the same name.
+    Only verbs are selected to be predicates in our evaluations.
+    Moreover, as it does not exist a fixed split between training and testing, we selected randomly 30% of sentences for testing and 70% for training.
+    Additionally, 30% of training was used as a validation-set.
+    The sentences were processed using Collins&#8217; parser (Collins, 1997) to generate parse-trees automatically.
+    The classifier evaluations were carried out using the SVM-light software (Joachims, 1999) available at svmlight.joachims.org with the default polynomial kernel for standard feature evaluations.
+    To process PAF and SCF, we implemented our own kernels and we used them inside SVM-light.
+    The classification performances were evaluated using the f1 measure7 for single arguments and the accuracy for the final multi-class classifier.
+    This latter choice allows us to compa

@@ -1,0 +1,9 @@
+Charniak uses 30 million words of text for unsupervised training.
+    A parser is trained from the treebank and used to parse this text; statistics are then collected from this machine-parsed text and merged with the treebank statistics to train a second model.
+    This gives a 0.5% improvement in performance.
+    Charniak&#8217;s dependency parameters are conditioned on less information.
+    As noted previously, whereas our parameters are PL2(lwi  |Li, lti, c, p, P, H, w, t, &#8710;, LC), Charniak&#8217;s parameters in our notation would be PL2(lwi  |Li, P, w).
+    The additional information included in our models is as follows: H The head nonterminal label (VP in the previous profits/rose example).
+    At first glance this might seem redundant: For example, an S will usually take a VP as its head.
+    In some cases, however, the head label can vary: For example, an S can take another S as its head in coordination cases. lti, t The POS tags for the head and modifier words.
+    Inclusion of these tags allows 

@@ -1,0 +1,6 @@
+tokens.
+    To implement our data selection method we required one language model trained on the Europarl training data and one trained on the Gigaword data.
+    To make these language models comparable, and to show the feasibility of optimizing the fit to the in-domain data without training a model on the entire Gigaword corpus, we trained the Gigaword language model for data selection on a random sample of the Gigaword corpus of a similar size to that of the Europarl training data: 1,874,051 sentences, 48,459,945 tokens.
+    To further increase the comparability of these Europarl and Gigaword language models, we restricted the vocabulary of both models to the tokens appearing at least twice in the Europarl training data, treating all other tokens as instances of &lt;UNK&gt;.
+    With this vocabulary, 4-gram language models were trained on both the Europarl training data and the Gigaword random sample using backoff absolute discounting (Ney et al. 1994), with a discount of 0.7 used for all N-gram lengths.
+  

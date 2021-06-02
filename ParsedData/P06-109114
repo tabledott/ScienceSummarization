@@ -1,0 +1,12 @@
+ples, we do well on the whole sample space.
+    In our case, as long as we do well on the relevant set, the decoder will perform well.
+    Since the relevant set depends on the decoder parameter , and the decoder parameter is optimized on the relevant set, it is necessary to estimate them jointly using an iterative algorithm.
+    The basic idea is to start with a decoding parameter , and estimate the corresponding relevant set; we then update based on the relevant set, and iterate this process.
+    The procedure is outlined in Table 1.
+    We intentionally leave the implementation details of the (*) step and (**) step open.
+    Moreover, in this general algorithm, we do not have to assume that has the form of Eq.
+    1.
+    A natural question concerning the procedure is its convergence behavior.
+    It can be shown that under mild assumptions, if we pick in (*) an alternative for each ( ) such that then the procedure converges to the solution of Eq.
+    3.
+    Moreover, the rate of convergence depends only on

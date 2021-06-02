@@ -1,0 +1,8 @@
+son), company names (Goldman, Sachs &amp; Co), and organization names (Federal Reserve).
+    This multiword analysis was chosen because many applications do not require the internal structure of names, and the identification of named entities is now typically carried out by a separate non-syntactic pre-processing module.
+    This was captured for the LFG parser by using named entity markup and for the Collins parser by creating complex word forms with a single POS tag (section 5).
+  
+  
+    A conversion routine was required for each system to transform its output so that it could be compared to the DEPBANK dependencies.
+    While it is relatively straightforward to convert LFG f-structures to the dependency bank format because the f-structure is effectively a dependency format, it is more difficult to transform the output trees of the Model 3 Collins parser in a way that fairly allocates both credits and penalties.
+    LFG Conversion We discarded the LFG tree structures and used a general rewriting system pre

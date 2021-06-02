@@ -1,0 +1,6 @@
+thms that sample from this distribution using Markov chain Monte Carlo (MCMC).
+			MCMC algorithms construct a Markov chainwhose states s ? S are the objects we wish to sam ple.
+			The state space S is typically astronomicallylarge ? in our case, the state space includes all pos sible parses of the entire training corpus w ? and the transition probabilities P(s?|s) are specified via ascheme guaranteed to converge to the desired distri bution ?(s) (in our case, the posterior distribution).
+			We ?run?
+			the Markov chain (i.e., starting in initialstate s0, sample a state s1 from P(s?|s0), then sample state s2 from P(s?|s1), and so on), with the prob ability that the Markov chain is in a particular state, P(si), converging to ?(si) as i ??.After the chain has run long enough for it to ap proach its stationary distribution, the expectation E?[f ] of any function f(s) of the state s will be approximated by the average of that function over the set of sample states produced by the algorithm.
+			For example, in our 

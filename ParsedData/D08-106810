@@ -1,0 +1,7 @@
+than previous MCMC algorithms like Gibbs sampling, making efficient sampling possible on a scale that was previAlgorithm 1 MC-SAT(clauses, weights, num samples) x(c) Satisfy(hard clauses) for i 1 to num samples do M 0 for all ck E clauses satisfied by x(z&#8722;1) do With probability 1 &#8212; e&#8722;lk add ck to M ously out of reach.
+    Algorithm 1 gives pseudo-code for MC-SAT.
+    At iteration i &#8212; 1, the factor 0k for clause ck is either elk if ck is satisfied in x(z&#8722;1), or 1 otherwise.
+    MC-SAT first samples the auxiliary variable uk uniformly from (0, 0k), then samples a new state uniformly from the set of states that satisfy 0k &gt; uk for all k (the slice).
+    Equivalently, for each k, with probability 1 &#8212; e&#8722;lk the next state must satisfy ck.
+    In general, we can factorize the probability distribution in any way that facilitates inference, sample the uk&#8217;s, and make sure that the next state is drawn uniformly from solutions that satisfy 0k &gt; uk for all factors.
+   

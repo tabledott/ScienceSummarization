@@ -1,0 +1,9 @@
+e is applied.
+    Again, observing the Viterbi alignments, the top-20 frequent contexts cover over 60% of the cases, so we allow insertions only in these contexts.
+    This kind of context sensitive insertion is possible because the decoder builds a syntactic tree.
+    Such selective insertion by syntactic context is not easy for The pruning techniques shown above use extra statistics from the training corpus, such as P, P , and Prule.
+    These statistics may be considered as a part of the LM P , and such syntactic probabilities are essential when we mainly use trigrams for the LM.
+    In this respect, the pruning is useful not only for reducing the search space, but also improving the quality of translation.
+    We also use statistics from the Viterbi alignments, such as the phrase translation frequency and the zero-fertility context frequency.
+    These are statistics which are not modeled in the TM.
+    The frequency count is essentially a joint probability P , while the TM uses a conditional probability 

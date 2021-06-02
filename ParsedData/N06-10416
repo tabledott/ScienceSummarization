@@ -1,0 +1,9 @@
+e engineering.
+  
+  
+    In the present work, we consider the problem of learning sequence models over text.
+    For each document x = [xi], we would like to predict a sequence of labels y = [yi], where xi E X and yi E Y.
+    We construct a generative model, p(x, y|0), where 0 are the model&#8217;s parameters, and choose parameters to maximize the log-likelihood of our observed data D: We take our model family to be chain-structured Markov random fields (MRFs), the undirected equivalent of HMMs.
+    Our joint probability model over (x, y) is given by where &#966;(c) is a potential over a clique c, taking the form exp {&#952;T f(c)}, and f(c) is the vector of features active over c. In our sequence models, the cliques are over the edges/transitions (yi&#8722;1, yi) and nodes/emissions (xi, yi).
+    See figure 3 for an example from the English POS tagging domain.
+    Note that the only way an MRF differs from a conditional random field (CRF) (Lafferty et al., 2001) is that the partition function is no longer ob

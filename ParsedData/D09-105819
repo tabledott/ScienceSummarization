@@ -1,0 +1,7 @@
+ion accuracy on unla3Training, development, and test data in PDT already contains POS tags assigned by the &#8216;feature-based tagger&#8217;. beled dependency parsing.
+    We ignore the parentpredictions of punctuation tokens for English, while we retain all the punctuation tokens for Czech.
+    These settings match the evaluation setting in previous work such as (McDonald et al., 2005a; Koo et al., 2008).
+    We used the method proposed by (Carreras, 2007) for our second-order parsing model.
+    Since this method only considers projective dependency structures, we &#8220;projectivized&#8221; the PDT training data in the same way as (Koo et al., 2008).
+    We used a non-projective model, trained using an application of the matrix-tree theorem (Koo et al., 2007; Smith and Smith, 2007; McDonald and Satta, 2007) for the first-order Czech models, and projective parsers for all other models.
+    As shown in Section 2, SS-SCMs with 1st-order parsing models have two tunable parameters, C and q, corresponding to the

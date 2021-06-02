@@ -1,0 +1,9 @@
+rd pairs by calculating the cosine of the corresponding row vectors in UkEk.
+    The row vector for each word pair has been projected from the original 8,000 dimensional space into a new 300 dimensional space.
+    The value k = 300 is recommended by Landauer and Dumais (1997) for measuring the attributional similarity between words.
+    We investigate other values in Section 6.4.
+    Therefore we have (num filter + 1)2 ways to compare a version of A:B with a version of C:D. Look for the row vectors in UkEk that correspond to the versions of A:B and the versions of C:D and calculate the (num filter + 1)2 cosines (in our experiments, there are 16 cosines).
+    For example, suppose A:B is quart:volume and C:D is mile:distance.
+    Table 10 gives the cosines for the sixteen combinations.
+    12.
+    Calculate relational similarity: The relational similarity between A:B and C:D is the average of the cosines, among the (num filter + 1)2 cosines from step 11, that are greater than or equal to the cosine of the origi

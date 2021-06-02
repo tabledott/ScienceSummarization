@@ -1,0 +1,9 @@
+he training set, 227 rank sets are required.
+    Therefore, treating a rank tuple as a single label is not a viable option for this task.
+    We also find that reviews with full agreement across rank aspects are quite common in our corpus, accounting for 38% of the training data.
+    Thus an agreementbased approach is natural and relevant.
+    A rank of 5 is the most common rank for all aspects and thus a prediction of all 5&#8217;s gives a MAJORITY baseline and a natural indication of task difficulty.
+    Evaluation Measures We evaluate our algorithm and the baseline using ranking loss (Crammer and Singer, 2001; Basilico and Hofmann, 2004).
+    Ranking loss measures the average distance between the true rank and the predicted rank.
+    Formally, given N test instances (x1, y1), ..., (xN, yN) of an m-aspect ranking problem and the corresponding predictions &#710;y1, ..., &#710;yN, ranking loss is defined as Et,i |y[i]t_&#710;y[i]t|.
+    Lower values of this measure cormN respond to a better performance of the

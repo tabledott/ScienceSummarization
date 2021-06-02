@@ -1,0 +1,11 @@
+word spans whose syntactic types differ.
+    Keyword checking.
+    The matching process described above appears quite strict &#8211; the expansions must match exactly for two nodes to be merged.
+    But consider the following parse trees: 1.
+    (S (NP1 people)(VP1 were killed in this battle)) 2.
+    (S (NP2 this battle)(VP2 killed people)) If we applied the algorithm described above, we would mistakenly align NP1 with NP2 and V P1 with V P2 &#8212; the algorithm described so far makes no use of lexical information.
+    To prevent such erroneous alignments, we also implement a simple keyword checking procedure.
+    We note that since the word &#8220;battle&#8221; appears in both V P1 and NP2, this can serve as an evidence against the merging of (NP1, NP2) and (V P1, V P2).
+    A similar argument can be constructed for the word &#8220;people&#8221;.
+    So in this example we actually have double evidence against merging; in general, one such clue suffices to stop the merging.
+    Our keyword checking procedure

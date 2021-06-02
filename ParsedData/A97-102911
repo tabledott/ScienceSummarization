@@ -1,0 +1,6 @@
+uestion arises how the system should deal with unknown words, since there are three ways in which they can appear in a bigram: as the current word, as the previous word or as both.
+    A good answer is to train a separate, unknown word&#8211;model off of held-out data, to gather statistics of unknown words occurring in the midst of known words.
+    Typically, one holds out 10-20% of one's training for smoothing or unknown word&#8211;training.
+    In order to overcome the limitations of a small amount of training data&#8212;particularly in Spanish&#8212;we hold out 50% of our data to train the unknown word&#8211; model (the vocabulary is built up on the first 50%), save these counts in training data file, then hold out the other 50% and concatentate these bigram counts with the first unknown word&#8211;training file.
+    This way, we can gather likelihoods of an unknown word appearing in the bigram using all available training data.
+    This approach is perfectly valid, as we art trying to estimate that which 

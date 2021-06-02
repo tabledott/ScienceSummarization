@@ -1,0 +1,6 @@
+ongs only to one sense.
+    In this case, for a given sense wz we use only those distributionally similar words with whom wz has the highest similarity score across all the senses of w. We refer to this case as similarityselected, as opposed to similarity-all, which refers to the use of all distributionally similar words for all senses.
+    Once we have a list of similar words associated with each sense wsz and the corresponding similarity scores sim(wszi dswj), we use an annotated corpus to assign subjectivity scores to the senses.
+    The corpus we use is the MPQA Opinion Corpus, which consists of over 10,000 sentences from the world press annotated for subjective expressions (all three types of subjective expressions described in Section 2).6 Algorithm 1 is our method for calculating sense subjectivity scores.
+    The subjectivity score is a value in the interval [-1,+1] with +1 corresponding to highly subjective and -1 corresponding to highly objective.
+    It is a sum of sim scores, where sim(wi,dswj) is

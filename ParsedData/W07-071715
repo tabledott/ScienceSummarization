@@ -1,0 +1,7 @@
+een linear and loglinear mixing frameworks, with uniform weights used in the linear mixture.
+    Both types of mixture model are better than the baseline, but the linear mixture is slightly better than the loglinear mixture.
+    This is quite surprising, because these results are on the development set: the loglinear model tunes its component weights on this set, whereas the linear model only adjusts global LM and TM weights.
+    We speculated that this may have been due to non-smooth component models, and tried various smoothing schemes, including Kneser-Ney phrase table smoothing similar to that described in (Foster et al., 2006), and binary features to indicate phrasepair presence within different components.
+    None helped, however, and we conclude that the problem is most likely that Och&#8217;s algorithm is unable to find a good maximimum in this setting.
+    Due to this result, all experiments we describe below involve linear mixtures only.
+    Table 3 compares the performance of all distance metrics 

@@ -1,0 +1,7 @@
+&#8212;we make a random choice between the two parses.
+    9 This is not necessarily a significant issue if an application using the output from the parser is sensitive to improvements in evaluation measures such as precision and recall that give credit for partial matches between the parser&#8217;s output and the correct parse.
+    In this case, it is important only that the precision/ recall for xi,1 is significantly higher than that of the baseline parser, that is, that there is some &#8220;head room&#8221;for the reranking module in terms of precision and recall.
+    10 In particular, this restriction allows closed-form parameter updates for the models based on ExpLoss that we consider.
+    Note that features tracking the counts of different rules can be simulated through several features which take value one if a rule is seen &gt; 1 time, &gt; 2 times &gt; 3 times, and so on.
+    4.2.1 Ranking Errors and Margins.
+    The loss functions we consider are all related to the number of ranking errors a functio

@@ -1,0 +1,11 @@
+reas most of the event anchoring (Event-Time) links are INCLUDES.
+    The lack of TLINK coverage in human annotation could be helped by preprocessing, provided it meets some threshold of accuracy.
+    Given the availability of a corpus like OTC, it is natural to try a machine learning approach to see if it can be used to provide that preprocessing.
+    However, the noise in the corpus and the sparseness of links present challenges to a learning approach.
+  
+  
+    There are several sub-problems related to inferring event anchoring and event ordering.
+    Once a tagger has tagged the events and times, the first task (A) is to link events and/or times, and the second task (B) is to label the links.
+    Task A is hard to evaluate since, in the absence of massive preprocessing, many links are ignored by the human in creating the annotated corpora.
+    In addition, a program, as a baseline, can trivially link all tagged events and times, getting 100% recall on Task A.
+    We focus here on Task B, the labeling task

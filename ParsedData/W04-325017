@@ -1,0 +1,8 @@
+he benefit of this assumption is clear: We only have to translate (say, 300) sentences.
+    We will now provide empirical evidence that we can make this assumption. true BLEU on 100 broad samples of 300 sentences: Assuming the 30,000 sentence BLEU as true score, three mistakes (3%) are made: on test set no.
+    10, 81, and 88 fidence intervals computed for 100 test sets of 300 sentences.
+    For each of the 100 test sets, we compute the confidence interval as described before: We repeatedly (1000 times) generate BLEU scores on test sets of 300 sentences drawn from this one test set of 300 sentences.
+    We use the 1000 BLEU scores to estimate the confidence interval.
+    We drop the top 25 and bottom 25 BLEU scores, so that the displayed interval ranges from the 26th best BLEU score to the 975th best.
+    For the first test set, we obtain a confidence interval of [26.5,30.7], for the second test set a confidence interval of [27.5,33.0], and so on.
+    We do not know the true BLEU score for this system, which 

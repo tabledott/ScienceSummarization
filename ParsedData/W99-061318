@@ -1,0 +1,7 @@
+e to encode the second constraint as one of minimizing some measure of the distance between the distributions given by the two learners.
+    The question of what soft function to pick, and how to design' algorithms which optimize it, is an open question, but appears to be a promising way of looking at the problem.
+    The DL-CoTrain algorithm can be motivated as being a greedy method of satisfying the above 2 constraints.
+    At each iteration the algorithm increases the number of rules, while maintaining a high level of agreement between the spelling and contextual decision lists.
+    Inspection of the data shows that at n = 2500, the two classifiers both give labels on 44,281 (49.2%) of the unlabeled examples, and give the same label on 99.25% of these cases.
+    So the success of the algorithm may well be due to its success in maximizing the number of unlabeled examples on which the two decision lists agree.
+    In the next section we present an alternative approach that builds two classifiers while attemp

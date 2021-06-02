@@ -1,0 +1,8 @@
+ compared with the direct transfer model (en-dir. in Table 1), we can see that there is an improvement for every single language, reducing relative error by 8% on average (57.0% to 60.4%) and up to 18% for Dutch (60.8 to 67.8%).
+    One could wonder whether the true power of the projection model comes from the re-lexicalization step &#8211; lines 3-6 of the algorithm.
+    However, if just this step is run, then the average UAS only increases from 57.0% to 57.4%, showing that most of the improvement comes from the projection stage.
+    Note that the results in Table 1 indicate that parsers using predicted part-of-speech tags are only slightly worse than the parsers using gold tags (about 2-3% absolute), showing that these methods are robust to tagging errors.
+  
+  
+    The previous section focused on transferring an English parser to a new target language.
+    However, there are over 20 treebanks available for a variety of language groups including Indo-European, Altaic (including Japanese), Semitic, and Sino-

@@ -1,0 +1,8 @@
+uff=ing).
+    L+suff=W,S The word appears just after word W, with suffix 5 (L+suff=have,ed).
+    R+suff=S,W The word appears just before word W, with suffix 5 (R+suff=ing,to) wsuf=S1,S2 The word suffix is 51, the same stem is seen with suffix 52 (wsuf=E,s). suffs=SG The word stem appears with the 5G group of suffixes (suffs=ed,ing,s).
+    We consider a word to have a suffix only if the word stem appears with a different suffix somewhere in the text.
+    We implemented a primitive stemmer for extracting the suffixes while preserving a usable stem by taking care of few English orthography rules (handling, e.g., , bigger &#8594; big er, nicer &#8594; nice er, happily &#8594; happy ly, picnicking &#8594; picnic ing).
+    For the immediate context W in the templates L+suff,R+suff, we consider only the 20 most frequent tokens in the corpus.
+    Linear-Context-based p(t|w) approximation We expect the context based approximation to be particularly useful in English.
+    We use the following 3 context templates: LL=w_

@@ -1,0 +1,6 @@
+, and that it is essential to use TREE during training.
+    At test time, the weaker but still global EXACTLY1 may suffice (followed by MBR decoding to eliminate cycles), for total time O(n2).
+    Table 3 includes NOT2, which takes O(n3) time, merely to demonstrate how the BP approximation becomes more accurate for training and decoding when we join the simple NOT2 constraints into more global ATMOST1 constraints.
+    This does not change the distribution (1), but makes BP enforce stronger local consistency requirements at the factors, relying less on independence assumptions.
+    In general, one can get better BP approximations by replacing a group of factors F,,t(A) with their product.30 The above experiments concern gold-standard 30In the limit, one could replace the product (1) with a single all-purpose factor; then BP would be exact&#8212;but slow.
+    (In constraint satisfaction, joining constraints similarly makes arc consistency slower but better at eliminating impossible values.) accuracy under a giv

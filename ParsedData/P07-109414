@@ -1,0 +1,7 @@
+el.
+    The probabil- sample will provide a good MAP estimate. ity of generating a particular trigram tag sequence 3 Fixed Hyperparameter Experiments (likewise, output) depends on the number of times 3.1 Method that sequence (output) has been generated previ- Our initial experiments follow in the tradition begun ously.
+    Importantly, trigrams (and outputs) remain by Merialdo (1994), using a tag dictionary to conexchangeable: the probability of a set of trigrams strain the possible parts of speech allowed for each (outputs) is the same regardless of the order in which word.
+    (This also fixes Wt, the number of possible it was generated.
+    The property of exchangeability is words for tag t.) The dictionary was constructed by crucial to the inference algorithm we describe next. listing, for each word, all tags found for that word in 747 the entire WSJ treebank.
+    For the experiments in this section, we used a 24,000-word subset of the treebank as our unlabeled training corpus.
+    54.5% of the tokens in 

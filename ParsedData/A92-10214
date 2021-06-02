@@ -1,0 +1,10 @@
+proving its performance.
+    The tagger initially tags by assigning each word its most likely tag, estimated by examining a large tagged corpus, without regard to context.
+    In both sentences below, run would be tagged as a verb: The run lasted thirty minutes.
+    3.
+    One of the two preceding (following) words is tagged We run three miles every day.
+    The initial tagger has two procedures built in to improve performance; both make use of no contextual information.
+    One procedure is provided with information that words that were not in the training corpus and are capitalized tend to be proper nouns, and attempts to fix tagging mistakes accordingly.
+    This information could be acquired automatically (see below), but is prespecified in the current implementation.
+    In addition, there is a procedure which attempts to tag words not seen in the training corpus by assigning such words the tag most common for words ending in the same three letters.
+    For example, blahblahous would be tagged as an adje

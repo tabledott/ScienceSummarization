@@ -1,0 +1,10 @@
+by a Gaussian with a mean of 0 and standard deviation of 102.
+    We have found it useful to make use of three filters to deal with robustness issues.
+    Empirically, we found that both high frequency and low frequency words caused difficulties and therefore connections involving these words are filtered out.
+    The thresholds are set to exclude the most frequent function words and punctuations, as well as words with less than 3 occurrences.
+    In addition, following a similar filter by Brown et al., small values of t( f le) are set to 0 after each iteration of the EM algorithm because these small values often correspond to inappropriate translations.
+    Finally, connections to null are ignored.
+    Such connections model French words that are often omitted in the English translation.
+    However, because of OCR errors and other sources of noise, it was decided that this phenomenon was too difficult to model.
+    Some words will not be aligned because of these heuristics.
+    It may not be necessary, howe

@@ -1,0 +1,6 @@
+e use the predictive class bigram model introduced by Uszkoreit and Brants (2008).
+    The two models are very similar, but whereas the former takes classto-class transitions into account, the latter directly models word-to-class transitions.
+    By ignoring classto-class transitions, an approximate maximum likelihood clustering can be found efficiently with the distributed exchange algorithm (Uszkoreit and Brants, 2008).
+    This is a useful property, as we later develop an algorithm for inducing cross-lingual word clusters that calls this monolingual algorithm as a subroutine.
+    More formally, let C : V H 1, ... , K be a (hard) clustering function that maps each word type from the vocabulary, V, to one of K cluster identities.
+    With the model of Uszkoreit and Brants (2008), the likelihood of a sequence of word tokens, w = (wi)mi=1, with wi E V U {S}, where S is a designated start-ofsegment symbol, factors as Compare this to the model of Brown et al. (1992): By incorporating cross-lingual cluster featur

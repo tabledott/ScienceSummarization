@@ -1,0 +1,9 @@
+e taggers based on a pure HMM is that developed at Xerox (Cutting et al., 1992).
+    An important aspect of this tagger is that it will give good accuracy with a minimal amount of manually tagged training data.
+    96% accuracy correct assignment of tags to word token, compared with a human annotator, is quoted, over a 500000 word corpus.
+    The Xerox tagger attempts to avoid the need for a hand-tagged training corpus as far as possible.
+    Instead, an approximate model is constructed by hand, which is then improved by BW re-estimation on an untagged training corpus.
+    In the above example, 8 iterations were sufficient.
+    The initial model set up so that some transitions and some tags in the lexicon are favoured, and hence having a higher initial probability.
+    Convergence of the model is improved by keeping the number of parameters in the model down.
+    To assist in this, low frequency items in the lexicon are grouped together into equivalence classes, such that all words in a given equivalence clas

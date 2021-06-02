@@ -1,0 +1,9 @@
+uilt with default settings, 1.2% of n + 1-grams were missing their ngram suffix.
+    This causes a problem for reverse trie implementations, including SRILM itself, because it leaves n+1-grams without an n-gram node pointing to them.
+    We resolve this problem by inserting an entry with probability set to an otherwise-invalid value (&#8722;oc).
+    Queries detect the invalid probability, using the node only if it leads to a longer match.
+    By contrast, BerkeleyLM&#8217;s hash and compressed variants will return incorrect results based on an n &#8722;1-gram.
+    Floating point values may be stored in the trie exactly, using 31 bits for non-positive log probability and 32 bits for backoff5.
+    To conserve memory at the expense of accuracy, values may be quantized using q bits per probability and r bits per backoff6.
+    We allow any number of bits from 2 to 25, unlike IRSTLM (8 bits) and BerkeleyLM (17&#8722;20 bits).
+    To quantize, we use the binning method (Federico and Bertoldi, 2006) that sorts values

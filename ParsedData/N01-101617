@@ -1,0 +1,7 @@
+ are correct (as defined below).
+    Then precision = C/M and recall = C/N.
+    A constituent c is correct if there exists a constituent d in the gold standard such that: In 2 and 3 above we introduce an equivalence relation -r between string positions.
+    We define -r to be the smallest equivalence relation satisfying a -r b for all pairs of string positions a and b separated solely by punctuation symbols.
+    The parsing literature uses -r rather than = because it is felt that two constituents should be considered equal if they disagree only in the placement of, say, a comma (or any other sequence of punctuation), where one constituent includes the punctuation and the other excludes it.
+    Our new metric, &#8220;relaxed edited labeled precision/recall&#8221; is identical to relaxed labeled precision/recall except for two modifications.
+    First, in the gold standard all non-terminal subconstituents of an EDITED node are removed and the terminal constituents are made immediate children of a single EDITED 

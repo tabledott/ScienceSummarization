@@ -1,0 +1,6 @@
+more complex translation TSP correspond roughly to triples (e', e, j), the notation for which is given below.
+    The final path output by the translation algorithm will contain exactly one triple (e', e, j) for each source position j.
+    The algorithm processes subsets of partial hypotheses with coverage sets C of increasing cardinality c. For a trigram language model, the partial hypotheses are of the form (e', e, C, j), where e', e are the last two target words, C is a coverage set for the already covered source positions, and j is the last covered position.
+    The target word sequence that ends in e', e is stored as a back pointer to the predecessor partial hypothesis (and recursively to its predecessor hypotheses) and is not shown in the notation.
+    Each distance in the TSP now corresponds to the negative logarithm of the product of the translation, distortion, and language model probabilities.
+    The following input: source language string f1 &#183; &#183; &#183; fj &#183; &#183; &#183; fJ Here, j'

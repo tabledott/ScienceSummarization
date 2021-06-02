@@ -1,0 +1,11 @@
+utility of adding additional in-domain training data from WSJ.
+    In the baseline approach, the additional WSJ examples are randomly selected.
+    With active learning (Lewis and Gale, 1994), we use uncertainty sampling as shown in Figure 1.
+    In each iteration, we train a WSD system on the available training data and apply it on the WSJ adaptation examples.
+    Among these WSJ examples, the example predicted with the lowest confidence is selected and removed from the adaptation data.
+    The correct label is then supplied for this example and it is added to the training data.
+    Note that in the experiments reported in this paper, all the adaptation examples are already preannotated before the experiments start, since all the WSJ adaptation examples come from the DSO corpus which have already been sense-annotated.
+    Hence, the annotation of an example needed during each adaptation iteration is simulated by performing a lookup without any manual annotation.
+  
+  
+    We also employ a technique known as 

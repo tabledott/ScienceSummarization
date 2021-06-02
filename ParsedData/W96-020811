@@ -1,0 +1,6 @@
+these studies, the data for the contentvector and neural-network methods was first reduced by ignoring case and reducing words to stems (e.g. computer(s), computing, computation(al), etc. are all conflated to the feature comput) and removing a set of about 570 highfrequency stopwords (e.g. the, by, you, etc.).
+    Similar preprocessing was performed for the current experiments, but we can not guarantee identical results.
+    The result was a set of 2,094 examples equally distributed across the six senses where each example was described using 2,859 binary features each representing the presence or absence of a particular word stem in the current or immediately preceding sentence.
+    The current experiments test a total of seven different learning algorithms with quite different biases.
+    This section briefly describes each of these algorithms.
+    Except for C4.5, which uses the C code provided by QuinIan (1993), all of these methods are implemented in Common Lisp and available on-line at http://www.cs.ute

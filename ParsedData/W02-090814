@@ -1,0 +1,10 @@
+rms takes about 43 minutes with a minimum cutoff of 5, the efficiency/performance trade-off is particularly important from the perspective of implementing a practical extraction system.
+  
+  
+    Even with a minimum cutoff of 30 as a reasonable compromise between speed and accuracy, extracting a thesaurus for 70 terms takes approximately 20 minutes.
+    If we want to extract a complete thesaurus for 29,737 terms left after the cutoff has been applied, it would take approximately one full week of processing.
+    Given that the size of the training corpus could be much larger (cf.
+    Curran and Moens (2002)), which would increase both number of attributes for each term and the total number of terms above the minimum cutoff, this is not nearly fast enough.
+    The problem is that the time complexity of thesaurus extraction is not practically scalable to significantly larger corpora.
+    Although the minimum cutoff helps by reducing n to a reasonably small value, it does not constrain m in any way.
+    In fact, 

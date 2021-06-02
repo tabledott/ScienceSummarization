@@ -1,0 +1,6 @@
+s in the rule: c1, c2, and c3 will represent the Chinese words &#8220;4&#8221;, &#8220;&#65533;&#8221;, and &#8220;YI&#8221; respectively.
+    Similarly, e1, e2, e3, e4, and e5 will represent the English words go, to, every, month, and to respectively.
+    Hence, Rule (2) has two chunks: e1e2 and e3e4e5.
+    When the rule is extracted from the parallel corpus, it has these alignments between the words of its Chinese and English portion: {c1&#8211;e3,c2&#8211;e4,c3&#8211;e1,c3&#8211;e2,c3&#8211;e5}, which means that c1 is aligned to e3, c2 is aligned to Input: rule R considered during decoding with its own associated cOstR e4, and c3 is aligned to e1, e2, and e5.
+    Although all words are aligned here, in general for a rule, some of its Chinese or English words may not be associated with any alignments.
+    In our experiment, c1c2 as a phrase has a list of translations proposed by the WSD system, including the English phrase &#8220;every month&#8221;. matchWSD will first be invoked for c1, which is aligned to

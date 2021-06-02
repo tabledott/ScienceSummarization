@@ -1,0 +1,6 @@
+rior knowledge into the learned model, rather than allowing the data to brush it away.
+    Our experiments demonstrate that the proposed approach is robust to inaccurate approximation of the prior knowledge (assigning the same penalty to all the pi ).
+    We note that in the presence of constraints, the inference procedure (for finding the output y that maximizes the cost function) is usually done with search techniques (rather than Viterbi decoding, see (Toutanova et al., 2005; Roth and Yih, 2005) for a discussion), we chose beamsearch decoding.
+    The semi-supervised learning with constraints is done with an EM-like procedure.
+    We initialize the model with traditional supervised learning (ignoring the constraints) on a small labeled set.
+    Given an unlabeled set U, in the estimation step, the traditional EM algorithm assigns a distribution over labeled assignments Y of each x E U, and in the maximization step, the set of model parameters is learned from the distributions assigned in the estimation ste

@@ -1,0 +1,8 @@
+ord, and l is the label of the dependency.
+    We use h = 0 for the root of the sentence.
+    We assume access to a set of labeled training examples, {xz, yz}Z_'1, and in addition a set of unlabeled examples, {xz}M1.
+    In conditional log-linear models for dependency parsing (which are closely related to conditional random fields (Lafferty et al., 2001)), a distribution over dependency structures for a sentence x is defined as follows: Here f(x, h, m, l) is a feature vector representing the dependency (h, m, l) in the context of the sentence x (see for example (McDonald et al., 2005a)).
+    In this paper we extend the definition of g(x, y) to include features that are induced from unlabeled data.
+    Specifically, we define to the dj-dimensional feature vector rj(x, h, m, l).
+    The parameters of this model are &#952;j,1 ... &#952;j,dj; they form a multinomial distribution, with the constraints that &#952;j,a &gt; 0, and Pa &#952;j,a = 1.
+    This model can be viewed as a very simple (naiveBayes) model that

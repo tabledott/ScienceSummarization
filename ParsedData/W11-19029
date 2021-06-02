@@ -1,0 +1,8 @@
+wo mentions headed by proper nouns as coreferent if they have the same head word and satisfy the following constraints: Not i-within-i - same as Raghunathan et al. (2010).
+    No location mismatches - the modifiers of two mentions cannot contain different location named entities, other proper nouns, or spatial modifiers.
+    For example, [Lebanon] and [southern Lebanon] are not coreferent.
+    No numeric mismatches - the second mention cannot have a number that does not appear in the antecedent, e.g., [people] and [around 200 people] are not coreferent.
+    In addition to the above, a few more rules are added to get better performance for predicted mentions.
+    Pronoun distance - sentence distance between a pronoun and its antecedent cannot be larger than 3.
+    Bare plurals - bare plurals are generic and cannot have a coreferent antecedent.
+    We first extend the above system with two new sieves that exploit semantics from WordNet, Wikipedia infoboxes, and Freebase records, drawing on previous coreference 

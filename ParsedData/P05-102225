@@ -1,0 +1,9 @@
+ance improvements, so we used the default PETSc/TAO setting for our experiments here.
+  
+  
+    We evaluated the performance of our reranking parser using the standard PARSEVAL metrics.
+    We n-best trees f-score New 0.9102 Collins 0.9037 best trees, with weights estimated from sections 2&#8211; 21 and the regularizer constant c adjusted for optimal f-score on section 24 and evaluated on sentences of length less than 100 in section 23. trained the n-best parser on sections 2&#8211;21 of the Penn Treebank, and used section 24 as development data to tune the mixing parameters of the smoothing model.
+    Similarly, we trained the feature weights &#952; with the MaxEnt reranker on sections 2&#8211;21, and adjusted the regularizer constant c to maximize the f-score on section 24 of the treebank.
+    We did this both on the trees supplied to us by Michael Collins, and on the output of the n-best parser described in this paper.
+    The results are presented in Table 3.
+    The n-best parser&#8217;s most probable pa

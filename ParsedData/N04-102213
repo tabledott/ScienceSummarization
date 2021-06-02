@@ -1,0 +1,8 @@
+a baseline translation model.
+    Of course, we do not have access to the true distribution over translations.
+    We therefore use statistical translation models (Och, 2002) to approximate the distribution . tion 3) on the -best List is implemented as and .
+    This is a rescoring procedure that searches for consensus under a given loss function.
+    The posterior probability of each hypothesis in the -best list is derived from the joint probability assigned by the baseline translation model.
+    The conventional Maximum A Posteriori (MAP) decoder can be derived as a special case of the MBR decoder by considering a loss function that assigns a equal cost (say 1) to all misclassifications.
+    Under the 0/1 loss function, the decoder of Equation 3 reduces to the MAP decoder MAP This illustrates why we are interested in MBR decoders based on other loss functions: the MAP decoder is optimal with respect to a loss function that is very harsh.
+    It does not distinguish between different types of translation err

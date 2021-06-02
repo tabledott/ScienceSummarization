@@ -1,0 +1,7 @@
+rase-based decoding, a +LM item has the form (v a) where a is the last word of the hypothesis.
+    Thus a +LM version of Deduction (1) might be: where the score of the resulting +LM item w&#8242; = w + c &#8722; log Plm(with  |talk) now includes a combination cost due to the bigrams formed when applying the phrase-pair.
+    Similarly, a +LM item in SCFG-based models has the form (va*b), where a and b are boundary words of the hypothesis string, and &#8902; is a placeholder symbol for an elided part of that string, indicating that a possible translation of the part of the input spanned by v starts with a and ends with b.
+    An example +LM version of Deduction (2) is: where w = w1 +w2 +c&#8242;&#8722;log Plm(with  |talk) with a similar combination cost formed in combining adjacent boundary words of antecedents.
+    This scheme can be easily extended to work with a general ngram model (Chiang, 2007).
+    The experiments in this paper use trigram models.
+    The conventional full-integration approach traverses t

@@ -1,0 +1,5 @@
+uction matrices may not be crucial, since it occurs offline.
+    There are cases, however, when that cost should be minimized, e.g., when rule probabilities are iteratively reestimated.
+    Even if the matrix P is sparse, the matrix inversion can be prohibitive for large numbers of nonterminals n. Empirically, matrices of rank n with a bounded number p of nonzero entries in each row (i.e., p is independent of n) can be inverted in time 0(n2), whereas a full matrix of size n x n would require time 0(n3).
+    In many cases the grammar has a relatively small number of nonterminals that have productions involving other nonterminals in a left-corner (or the RHS of a unit production).
+    Only those nonterminals can have nonzero contributions to the higher powers of the matrix P. This fact can be used to substantially reduce the cost of the matrix inversion needed to compute R. Let P' be a subset of the entries of P. namely, only those elements indexed by nonterminals that have a nonempty row in P. For example, for

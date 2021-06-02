@@ -1,0 +1,11 @@
+order HMM.
+    We smoothed using a flat Dirichlet prior with single parameter A for all distributions (A-values from 0 to 10 were tested).6 The model was initialized uniformly.
+    The log-linear models trained by CE used the same feature set, though the feature weights are no longer log-probabilities and there are no sum-to-one constraints.
+    In addition to an unsmoothed trial, we tried diagonal Gaussian priors (quadratic penalty) with u2 ranging from 0.1 to 10.
+    The models were initialized with all Bj = 0.
+    Unsupervised model selection.
+    For each (criterion, dataset) pair, we selected the smoothing trial that gave the highest estimation criterion score on a 5K-word development set (also unlabeled).
+    Results.
+    The plot in Fig.
+    2 shows the Viterbi accuracy of each criterion trained on the 96K-word dataset as smoothing was varied; the table shows, for each (criterion, dataset) pair the performance of the selected A or u2 and the one chosen by an oracle.
+    LENGTH, TRANS1, and DELORTRANS1 

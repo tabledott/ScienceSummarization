@@ -1,0 +1,11 @@
+oth terminals and nonterminals).
+  
+  
+    In this section, we answer two empirical questions.
+    It has been shown by Shapiro and Stephens (1991) and Wu (1997, Sec.
+    4) that the percentage of binarizable cases over all permutations of length n quickly approaches 0 as n grows (see Figure 6).
+    However, for machine translation, it is more meaningful to compute the ratio of binarizable rules extracted from real text.
+    Our rule set is obtained by first doing word alignment using GIZA++ on a Chinese-English parallel corpus containing 50 million words in English, then parsing the English sentences using a variant of Collins parser, and finally extracting rules using the graph-theoretic algorithm of Galley et al. (2004).
+    We did a &#8220;spectrum analysis&#8221; on the resulting rule set with 50,879,242 rules.
+    Figure 6 shows how the rules are distributed against their lengths (number of nonterminals).
+    We can see that the percentage of non-binarizable rules in each bucket of the same length does 

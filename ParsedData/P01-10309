@@ -1,0 +1,11 @@
+ decodings.
+    Fortunately, by using more than one stack, we can eliminate this effect.
+    In a multistack decoder, we employ more than one stack to force hypotheses to compete fairly.
+    More specifically, we have one stack for each subset of input words.
+    This way, a hypothesis can only be pruned if there are other, better, hypotheses that represent the same portion of the input.
+    With more than one stack, however, how does a multistack decoder choose which hypothesis to extend during each iteration?
+    We address this issue by simply taking one hypothesis from each stack, but a better solution would be to somehow compare hypotheses from different stacks and extend only the best ones.
+    The multistack decoder we describe is closely patterned on the Model 3 decoder described in the (Brown et al., 1995) patent.
+    We build solutions incrementally by applying operations to hypotheses.
+    There are four operations: Add adds a new English word and aligns a single French word to it.
+    AddZfert add

@@ -1,0 +1,9 @@
+word in the Hebrew data is 1.8 and is 1.7 in Arabic.
+    For the bilingual models which employs probabilistic string-edit distance as a prior on abstract morphemes, we parameterize the string-edit model with the chart of Semitic consonant relationships listed on page xxiv of (Thackston, 1999).
+    All pairs of corresponding letters are given equal substitution probability, while all other letter pairs are given substitution probability of zero.
+    Evaluation Methods Following previous work, we evaluate the performance of our automatic segmentation algorithm using F-score.
+    This measure is the harmonic mean of recall and precision, which are calculated on the basis of all possible segmentation points.
+    The evaluation is performed on a random set of 1/5 of the parallel phrases which is unseen during the training phase.
+    During testing, we do not allow the models to consider any multilingual evidence.
+    This restriction allows us to simulate future performance on purely monolingual data.
+    Baseline

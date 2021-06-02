@@ -1,0 +1,7 @@
+estimator.
+			In this paper, we in troduce a measure of semantic relatedness based on thedivergence of the distinct stationary distributions result ing from random walks centered at different positions in the word graph.
+			We believe we are the first to define such a measure.
+	
+	
+			Our model is based on a random walk of a particle through a simple directed graphG = (V,E)whose nodes V and edges E are extracted from WordNet version 2.1.
+			Formally, we define the probability n(t)i of finding the particle at node ni ? V at time t as the sum of all ways in which the particle could have reached ni from any other node at the previous time-step: n(t)i = ? nj?V n(t?1)j P (ni | nj)where P (ni | nj) is the conditional probability of moving to ni given that the particle is at nj . In partic ular, we construct the transition distribution such that P (ni | nj) &gt; 0 whenever WordNet specifies a local link relationship of the form j ? i. Note that this randomwalk is a Markov chain because the transition probabilities at

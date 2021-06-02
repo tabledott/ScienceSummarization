@@ -1,0 +1,10 @@
+llection ek = (ek,1, ek,2, .
+    .
+    .
+    , ek,nk) of lexical edit instances, repeats allowed, where ek,i = A &#8211;* a means that phrase A in one version was changed to a in the next, A =&#65533; a; e.g., &#8220;stands for&#8221; &#8211;* &#8220;is the same as&#8221;.
+    (We defer detailed description of how we extract lexical edit instances from data to &#167;3.1.)
+    We denote the collection of ~dk in ComplexEW and SimpleEW as C and S, respectively.
+    There are at least four possible edit operations: fix (o1), simplify (o2), no-op (o3), or spam (o4).
+    However, for this initial work we assume P(o4) = 0.4 Let P(oi  |A) be the probability that oi is applied to A, and P(a  |A, oi) be the probability of A &#8211;* a given that the operation is oi.
+    The key quantities of interest are P(o2  |A) in S, which is the probability that A should be simplified, and P(a  |A, o2), which yields proper simplifications of A.
+    We start with an equation that models the probability that a phrase A is edited into

@@ -1,0 +1,7 @@
+3; Qws, o, vs).
+    Adjacent positions &#8722;1 and +1 have a weight of 2; other positions have a weight of 1.
+    Likewise we gather a distribution over target words and contexts for each target headword P(o, vt|wt).
+    Using an IBM Model 1 word translation table P(vt|vs) estimated on the seed parallel corpus, we estimate a cross-lingual context distribution as fine the similarity of a words ws and wt as one minus the Jensen-Shannon divergence of the distributions over positions and target words.2 Given this small set of feature functions, we train the weights of a log-linear ranking model for P(wt|ws, T, S), based on the word-level annotated Wikipedia article pairs.
+    After a model is trained, we generate a new translation table Pl,(t|s) which is defined as Pl,,(t|s) &#8733; EtET,sCS P(t|s,T,S).
+    The summation is over occurrences of the source and target word in linked Wikipedia articles.
+    This new translation table is used to define another HMM word-alignment model (together with distortion probab

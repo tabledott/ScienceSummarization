@@ -1,0 +1,5 @@
+ation counts.
+    As mentioned in Section 3, instead of generating each modifier independently, the model conditions the generation of modifiers on certain aspects of the history.
+    One such function of the history is the distance metric.
+    One of the two components of this distance metric is what we will call the &#8220;verb intervening&#8221; feature, which is a predicate vi that is true if a verb has been generated somewhere in the surface string of the previously generated modifiers on the current side of the head.
+    For example, in Figure 7, when generating the right-hand +STOP+ nonterminal child of the VP, the vi predicate is true, because one of the previously generated modifiers on the right side of the head dominates a verb, continue.12 More formally, this feature is most easily defined in terms of a recursively defined cv (&#8220;contains verb&#8221;) predicate, which is true if and only if a node dominates a verb: Bikel Intricacies of Collins&#8217; Parsing Model Referring to (2), we define t

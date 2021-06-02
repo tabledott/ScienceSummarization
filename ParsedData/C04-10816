@@ -1,0 +1,9 @@
+ system achieves top performance in two of the runs, and a state-of-the-art per formance on average.
+			This indicates that CRFs are a viable model for robust Chinese word segmentation.
+	
+	
+			Conditional random fields (CRFs) are undirected graphical models trained to maximize a conditional probability (Lafferty et al, 2001).
+			A common special-case graph structure is a linear chain, which corresponds to a finite state machine, and is suitablefor sequence labeling.
+			A linear-chain CRF with parameters ? = {?1, ...}
+			defines a conditional proba bility for a state (label) sequence y = y1...yT (for example, labels indicating where words start or have their interior) given an input sequence x = x1...xT (for example, the characters of a Chinese sentence) to be P?(y|x) = 1Zx exp ( T?
+			t=1 ? k ?kfk(yt?1, yt,x, t) ) , (1) where Zx is the per-input normalization that makes the probability of all state sequences sum to one;fk(yt?1, yt,x, t) is a feature function which is of ten binary-valued, but can be real-valu

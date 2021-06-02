@@ -1,0 +1,11 @@
+amework.
+    Section 4 describes and evaluates the expanded feature set.
+    We conclude with related and future work in Section 5.
+  
+  
+    Our baseline coreference system attempts to duplicate both the approach and the knowledge sources employed in Soon et al. (2001).
+    More specifically, it employs the standard combination of classification and clustering described above.
+    Building an NP coreference classifier.
+    We use the C4.5 decision tree induction system (Quinlan, 1993) to train a classifier that, given a description of two NPs in a document, NP&#9986; and NP&#9988; , decides whether or not they are coreferent.
+    Each training instance represents the two NPs under consideration and consists of the 12 Soon et al. features, which are described in Table 1.
+    Linguistically, the features can be divided into four groups: lexical, grammatical, semantic, and positional.2 The classification associated with a training instance is one of COREFERENT or NOT COREFERENT depending on whether the NPs co-r

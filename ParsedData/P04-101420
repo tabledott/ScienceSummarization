@@ -1,0 +1,6 @@
+ score for a dependency &#57744; is the sum of the probabilities of those derivations producing &#57744;.
+    This latter sum can be calculated efficiently using inside and outside scores: (12) where &#57741;c is the inside score and &#57748;c is the outside score for node c (see Clark and Curran (2003)); C is the set of conjunctive nodes in the packed chart for sentence S and deps(c) is the set of dependencies on conjunctive node c. The intuition behind the expected recall score is that a dependency structure scores highly if it has dependencies produced by high scoring derivations.4 The algorithm which finds &#57737;max is a simple variant on the Viterbi algorithm, efficiently finding a derivation which produces the highest scoring set of dependencies.
+  
+  
+    Gold standard dependency structures were derived from section 00 (for development) and section 23 (for testing) by running the parser over the derivations in CCGbank, some of which the parser could not process.
+    In order to increase the number of

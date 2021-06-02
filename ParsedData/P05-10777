@@ -1,0 +1,11 @@
+ step could be considered as dimensionality reduction wherein we reduce a vector in k dimensions to that of d bits while still preserving the cosine distance between them.
+    To calculate the fast hamming distance, we use the search algorithm PLEB (Point Location in Equal Balls) first proposed by Indyk and Motwani (1998).
+    This algorithm was further improved by Charikar (2002).
+    This algorithm involves random permutations of the bit streams and their sorting to find the vector with the closest hamming distance.
+    The algorithm given in Charikar (2002) is described to find the nearest neighbor for a given vector.
+    We modify it so that we are able to find the top B closest neighbor for each vector.
+    We omit the math of this algorithm but we sketch its procedural details in the next section.
+    Interested readers are further encouraged to read Theorem 2 from Charikar (2002) and Section 3 from Indyk and Motwani (1998).
+  
+  
+    In the previous section, we introduced the theory for calculation of 

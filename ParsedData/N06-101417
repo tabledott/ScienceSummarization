@@ -1,0 +1,7 @@
+itializing the HMM with model 1 parameters alleviates this problem.
+    On the other hand, if we jointly train two HMMs starting from a uniform initialization, the HMMs converge to a surprisingly good solution.
+    On the full training set, training two HMMs jointly from uniform initialization yields 5.7% AER, only slightly higher than 5.2% AER using model 1 initialization.
+    We suspect that the agreement term of the objective forces the two HMMs to avoid many local optima that each one would have on its own, since these local optima correspond to posteriors over alignments that would be very unlikely to agree.
+    We also observed that jointly trained HMMs converged very quickly&#8212;in 5 iterations&#8212;and did not exhibit overfitting with increased iterations.
+    Common errors The major source of remaining errors are recall errors that come from the shortcomings of the HMM model.
+    The E&#8594;F model gives 0 probability to any many-to-one alignments and the F&#8594;E model gives 0 probability to an

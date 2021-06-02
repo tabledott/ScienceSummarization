@@ -1,0 +1,11 @@
+property.
+    Entities: An entity is a specific individual or object in the world.
+    Entities are always latent in text.
+    Where a mention has a single word for each property, an entity has a list of signature words.
+    Formally, entities are mappings from properties r E R to lists Lr of &#8220;canonical&#8221; words which that entity uses for that property.
+    For instance in Figure 1(b), the list of nominal heads for the Barack Obama entity includes &#8220;president.&#8221; Types: Coreference systems often make a mention / entity distinction.
+    We extend this hierarchy to include types, which represent classes of entities (PERSON, ORGANIZATION, and so on).
+    Types allow the sharing of properties across entities and mediate the generation of entities in our model (Section 3.1).
+    See Figure 1(c) for a concrete example.
+    We represent each type T as a mapping between properties r and pairs of multinomials (Br, fr).
+    Together, these distributions control the lists Lr for entities of that type.

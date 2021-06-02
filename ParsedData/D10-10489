@@ -1,0 +1,8 @@
+ience by ranking higher noun phrases that are closer to the top of the parse tree (Haghighi and Klein, 2009).
+    If the sentence containing the anaphoric mention contains multiple clauses, we repeat the above heuristic separately in each S* constituent, starting with the one containing the mention.
+    Previous Sentence &#8211; For all nominal mentions we sort candidates in the previous sentences using rightto-left breadth-first traversal.
+    This guarantees syntactic salience and also favors document proximity.
+    For pronominal mentions, we sort candidates in previous sentences using left-to-right traversal in order to favor subjects.
+    Subjects are more probable antecedents for pronouns (Kertz et al., 2006).
+    For example, this ordering favors the correct candidate (pepsi) for the mention they: [pepsi] says it expects to double [quaker]&#8217;s snack food growth rate. after a month-long courtship, [they] agreed to buy quaker oats...
+    In a significant departure from previous work, each model in ou

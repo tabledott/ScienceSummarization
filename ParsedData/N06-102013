@@ -1,0 +1,9 @@
+    We performed several types of analysis to better understand why the new model performs better.
+    We first look at global changes, and then at changes at the sentence level.
+    It is important to keep in mind that while the reranker seems to be key to our performance improvement, the reranker per se never sees the extra data.
+    It only sees the 50-best lists produced by the first-stage parser.
+    Thus, the nature of the changes to this output is important.
+    We have already noted that the first-stage parser&#8217;s one-best has significantly improved (see Table 1).
+    In Table 4, we see that the 50-best oracle rate also improves from 95.5% for the original first-stage parser, to 96.4% for our final model.
+    We do not show it here, but if we self-train using first-stage one-best, there is no change in oracle rate.
+    The first-stage parser also becomes more &#8220;decisive.&#8221; The average (geometric mean) of 1092(Pr(1best) / Pr(50th-best)) (i.e. the ratios between the probabilities in log sp

@@ -1,0 +1,11 @@
+ for comparison, and note that we are again achieving gains against a more competitive baseline system.
+    For all experiments involving Gibbs sampling, we used a linear cooling schedule.
+    For the CoNLL dataset we collected 200 samples per trial, and for the CMU Seminar Announcements we collected 100 samples.
+    We report the average of all trials, and in all cases we outperform the baseline with greater than 95% confidence, using the standard t-test.
+    The trials had low standard deviations - 0.083% and 0.007% and high minimun F-scores - 86.72%, and 92.28% - for the CoNLL and CMU Seminar Announcements respectively, demonstrating the stability of our method.
+    The biggest drawback to our model is the computational cost.
+    Taking 100 samples dramatically increases test time.
+    Averaged over 3 runs on both Viterbi and Gibbs, CoNLL testing time increased from 55 to 1738 seconds, and CMU Seminar Announcements testing time increases from 189 to 6436 seconds.
+  
+  
+    Several authors have successfully

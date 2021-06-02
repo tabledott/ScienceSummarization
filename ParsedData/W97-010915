@@ -1,0 +1,7 @@
+
+    The verb buy in Q2 is disambiguated to the sense which is nearest to the sense of purchase in Q4, i.e. min(dist(buy,purchase))&#8212;dist(BUY-1,PURCHASE-1).0.
+    The noun company cannot be disambiguated, because the matched nearest quadruple Q4 contains the same noun and such a disambiguation is not allowed; the description million is monosemous.
+    Same process is called for all the remaining quadruples but further disambigaution with SDT41 is not possible (the verb purchase in Q4 has only one sense in WordNet and therefore there is no need for disambiguation; the noun company cannot be disambiguated against the same word).
+    The iteration threshold is increased by 0.1 and the algorithm starts again with the first quadruple.
+    No match is found for Q1 for any word and we have to move to quadruple Q2.
+    Its verb is already disambiguated, therefore the algorithm looks for all the quadruples which have the quadruple distance for nouns below the SDT of OA and which contain similar nouns (see definit

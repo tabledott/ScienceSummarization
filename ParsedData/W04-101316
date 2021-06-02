@@ -1,0 +1,7 @@
+ skip-bigram counts all in-order matching word pairs while LCS only counts one longest common subsequence.
+    Applying skip-bigram without any constraint on the distance between the words, spurious matches such as &#8220;the the&#8221; or &#8220;of in&#8221; might be counted as valid matches.
+    To reduce these spurious matches, we can limit the maximum skip distance, dskip, between two in-order words that is allowed to form a skip-bigram.
+    For example, if we set dskip to 0 then ROUGE-S is equivalent to bigram overlap Fmeasure.
+    If we set dskip to 4 then only word pairs of at most 4 words apart can form skip-bigrams.
+    Adjusting Equations 16, 17, and 18 to use maximum skip distance limit is straightforward: we only count the skip-bigram matches, SKIP2(X,Y), within the maximum skip distance and replace denominators of Equations 16, C(m,2), and 17, C(n,2), with the actual numbers of within distance skip-bigrams from the reference and the candidate respectively.
+    One potential problem for ROUGE-S is

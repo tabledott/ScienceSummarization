@@ -1,0 +1,5 @@
+ately only full scopings are desired, an additional argument to pull and apply-terms controls whether partial scopings are to be returned.
+    When this flag, complete?, is true, apply-terms, and hence pull, will return only expressions in which no more complex terms remain to be applied, for example, only the last two of the five readings above.
+    Finally, the restrictions of the complex terms may themselves contain complex terms and must be scoped themselves.
+    The apply function therefore recursively generates the scopings for the restriction by calling pull on that restriction, and a quantified wff is generated for each possible partial or complete scoping of the restriction.
+    Schematically, in the simplest case, for the A subsequent application of the remaining complex term will yield the &amp;quot;wide scope&amp;quot; reading q2(y, r2(y), qi(x, ri(xty), p(x)) The disallowed readings produced by the &amp;quot;all permutations&amp;quot; algorithm are never produced by this algorithm, because it is 

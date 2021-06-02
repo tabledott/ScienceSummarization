@@ -1,0 +1,12 @@
+al options for how to do this combination.
+    In the following, we use two numbers for each analysis.
+    First, the agreement is the number of classifiers agreeing with the analysis.
+    Second, the weighted agreement is the sum, over all classifiers, of the classification confidence measure of that value that agrees with the analysis.
+    The agreement, but not the weighted agreement, uses Yamcha&#8217;s Viterbi decoding. sifier agrees with the analysis, and with what confidence level.
+    In addition, we use the word form.
+    (The reason we use Ripper here is because it allows us to learn lower bounds for the confidence score features, which are real-valued.)
+    In training, only the correct analysis is good.
+    If exactly one analysis is classified as good, we choose that, otherwise we use Maj to choose.
+    &#8226; The baseline (BL) chooses the analysis most commonly assigned in TR1 to the word in question.
+    For unseen words, the choice is made randomly.
+    In all cases, any remaining ties are re

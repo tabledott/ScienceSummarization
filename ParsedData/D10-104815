@@ -1,0 +1,8 @@
+tion as an acronym of another if its text equals the sequence of upper case characters in the other mention.
+    We will adopt better solutions for acronym detection in future work (Schwartz, 2003).
+    Demonym &#8211; one of the mentions is a demonym of the other, e.g., [Israel] ... [Israeli].
+    For demonym detection we use a static list of countries and their gentilic forms from Wikipedia.3 All the above features are extremely precise.
+    As shown in Table 2 the pairwise precision of the sieve after adding these features is over 95% and recall increases 5 points.
+    Linking a mention to an antecedent based on the naive matching of their head words generates a lot of spurious links because it completely ignores possibly incompatible modifiers (Elsner and Charniak, 2010).
+    For example, Yale University and Harvard University have similar head words, but they are obviously different entities.
+    To address this issue, this pass implements several features that must all be matched in order to yield a lin

@@ -1,0 +1,8 @@
+pontaneous spoken language.
+    We have implemented a component to detect and correct a large subclass of these disfluencies (called repairs, or self-corrections) where the speaker intends that the meaning of the utterance be gotten by deleting one or more words.
+    Often, the speaker gives clues of their intention by repeating words or adding cue words that signal the repair: (1) a.
+    How many American airline flights leave Denver on June June tenth. b.
+    Can you give me information on all the flights from San Francisco no from Pittsburgh to San Francisco on Monday.
+    The mechanism used in Gemini to detect and correct repairs is currently applied as a fallback if no semantically acceptable interpretation is found for the complete utterance.
+    The mechanism finds sequences of identical or related words, possibly separated by a cue word (for example, oh or no) that might indicate the presence of a repair, and deletes the first occurrence of the matching portion.
+    Since there may be several such seq

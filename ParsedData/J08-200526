@@ -1,0 +1,7 @@
+ programming (ILP) to generate the global label assignment.
+  3.4.1 Constraints over Argument Labeling.
+  Formally, the argument classifiers attempt to assign labels to a set of arguments, S1:M, indexed from 1 toM.
+  Each argument Si can take any label from a set of argument labels, P , and the indexed set of arguments can take a set of labels, c1:M ?
+  If we assume that the classifiers return a score score(Si = ci) that corresponds to the likelihood of argument Si being labeled ci then, given a sentence, the unaltered inference task is solved by maximizing the overall score of the arguments, c?1:M = argmax c1:M?PM score(S1:M = c1:M) = argmax c1:M?PM M ?
+  i=1 score(Si = ci) (1) In the presence of global constraints derived from linguistic information and struc- tural considerations, our system seeks to output a legitimate labeling that maximizes this score.
+  Specifically, it can be thought of as if the solution space is limited through the use of a filter function, F , which eliminates many argument labelin

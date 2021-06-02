@@ -1,0 +1,8 @@
+620/2 on average&#8212;to ensure it is not semantically redundant.
+    (Additional comparisons are needed to reject parses other than the lucky 48,620.)
+    Adding a parse can therefore take exponential time.
+    Structure sharing does not appear to help: parses that are grouped in a parse forest have only their syntactic category in common, not their meaning.
+    Karttunen's approach must tease such parses apart and compare their various meanings individually against each new candidate.
+    By contrast, the method proposed below is purely syntactic&#8212;just like any &amp;quot;ordinary&amp;quot; parser&#8212;so it never needs to unpack a subforest, and can run in polynomial time. standard constituents are allowed when necessary: (8c) is in normal form (cf.
+    (1)).
+    It is not hard to see that (7a) eliminates all but right-branching parses of &amp;quot;forward chains&amp;quot; like A/B B/C C or A/B/C C/D D/E/F/G G/H, and that (7b) eliminates all but left-branching parses of &amp;quot;backward chains.&amp

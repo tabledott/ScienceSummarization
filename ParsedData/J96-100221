@@ -1,0 +1,8 @@
+ical methods can be used to calculate A*.
+    One simple method is coordinate-wise ascent, in which A* is computed by iteratively maximizing 41(A) one coordinate at a time.
+    When applied to the maximum entropy problem, this technique yields the popular Brown algorithm (Brown 1959).
+    Other general purpose methods that can be used to maximize T(A) include gradient ascent and conjugate gradient.
+    An optimization method specifically tailored to the maximum entropy problem is the iterative scaling algorithm of Darroch and Ratcliff (1972).
+    We present here a version of this algorithm specifically designed for the problem at hand; a proof of the monotonicity and convergence of the algorithm is given in Della Pietra et al. (1995).
+    The algorithm is applicable whenever the feature functions f,(x,y) are nonnegative: This is, of course, true for the binary-valued feature functions we are considering here.
+    The algorithm generalizes the Darroch-Ratcliff procedure, which requires, in addition to the nonn

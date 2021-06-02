@@ -1,0 +1,12 @@
+aded.
+    While Bengston and Roth (2008) do not report on the full system mention task, they do report on the more optimistic setting where mention detection is performed but non-gold mentions are removed for evaluation using an oracle.
+    On this more lenient setting, they report 78.4 B3 on the A04CU test set.
+    Our model yields 80.3.
+  
+  
+    We now discuss errors and improvements made by our system.
+    One frequent source of error is the merging of mentions with explicitly contrasting modifiers, such as new president and old president.
+    While it is not unusual for a single entity to admit multiple modifiers, the particular modifiers new and old are incompatible in a way that new and popular 9Note that we are still penalized for marking a spurious mention coreferent with an annotated one.
+    10Haghighi and Klein (2009) reports on true mentions; here, we report performance on automatically detected mentions. are not.
+    Our model does not represent the negative covariance between these modifiers.
+ 

@@ -1,0 +1,7 @@
+es, interpreted as log probabilities, many of which have their own internal parameters and objectives.
+    The toplevel weights are trained to maximize a metric such as BLEU on a small development set of approximately 1000 sentence pairs.
+    Thus, provided at least this amount of IN data is available&#8212;as it is in our setting&#8212;adapting these weights is straightforward.
+    We focus here instead on adapting the two most important features: the language model (LM), which estimates the probability p(wIh) of a target word w following an ngram h; and the translation models (TM) p(slt) and p(t1s), which give the probability of source phrase s translating to target phrase t, and vice versa.
+    We do not adapt the alignment procedure for generating the phrase table from which the TM distributions are derived.
+    The natural baseline approach is to concatenate data from IN and OUT.
+    Its success depends on the two domains being relatively close, and on the OUT corpus not being so large as to overwhelm th

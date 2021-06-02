@@ -1,0 +1,9 @@
+odel of (Collins 97) had conditioning variables that allowed the model to learn a preference for dependencies which do not cross verbs.
+    From the results in table 3, adding this condition improved accuracy by about 0.9% on the development set.
+    The parser of (Collins 96) used punctuation as an indication of phrasal boundaries.
+    It was found that if a constituent Z (...XY...) has two children X and Y separated by a punctuation mark, then Y is generally followed by a punctuation mark or the end of sentence marker.
+    The parsers of (Collins 96,97) encoded this as a hard constraint.
+    In the Czech parser we added a cost of -2.5 (log probability)2 to structures that violated this constraint.
+    The model of section 3 made the assumption that modifiers are generated independently of each other.
+    This section describes a hi gram model, where the context is increased to consider the previously generated modifier ((Eisner 96) also describes use of bigram statistics).
+    The right-hand-side of a rule 

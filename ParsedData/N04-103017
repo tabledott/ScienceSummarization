@@ -1,0 +1,8 @@
+n the argument identifi cation and classification tasks when added to the baseline system.
+			We tried two other ways of generalizing the head word:i) adding the head word cluster as a feature, and ii) replac ing the head word with a named entity if it belonged toany of the seven named entities mentioned earlier.
+			Neither method showed any improvement.
+			We also tried gen eralizing the path feature by i) compressing sequences of identical labels, and ii) removing the direction in the path, but none showed any improvement on the baseline.
+			8.1 Argument Sequence Information.
+			In order to improve the performance of their statistical ar gument tagger, G&amp;J used the fact that a predicate is likely to instantiate a certain set of arguments.
+			We use a similar strategy, with some additional constraints: i) argument ordering information is retained, and ii) the predicate is considered as an argument and is part of the sequence.
+			We achieve this by training a trigram language model onthe argument sequence

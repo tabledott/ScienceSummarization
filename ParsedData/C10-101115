@@ -1,0 +1,11 @@
+Hash Kernel for structured data uses a hash function h : J ? {1...n} to index ?, cf.
+			Shi etal.
+			(2009).
+			maps the observations X to a feature space.
+			We define ?(x, y) as the numeric fea ture representation indexed by J . Let ?k(x, y) = ?j(x, y) the hash based feature?index mapping,where h(j) = k. The process of parsing a sen tence xi is to find a parse tree yp that maximizes a scoring function argmaxyF (xi, y).
+			The learning problem is to fit the function F so that the errors of the predicted parse tree y are as low as possible.
+			The scoring function of the Hash Kernel is F (x, y) = ??w ? ?(x, y) where ??w is the weight vector and the size of ??w is n. Algorithm 2 shows the update function of the Hash Kernel.
+			We derived the update function from the update function of MIRA (Crammer et 92 Algorithm 2: Update of the Hash Kernel // yp = arg maxyF (xi, y) update(??w,??v , xi, yi, yp, ?) ?
+			= ?(yi, yp) // number of wrong labeled edges if ? &gt; 0 then ??u ?
+			(?(xi, yi)?
+			?(xi, yp)) ? = ??(F (

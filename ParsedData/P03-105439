@@ -1,0 +1,8 @@
+nt-tense verbs do not generally take bare infinitive VP complements.
+    To allow the finite/non-finite distinction, and other verb type distinctions, SPLIT-VP annotated all VP nodes with their head tag, merging all finite forms to a single tag VBF.
+    In particular, this also accomplished Charniak&#8217;s gerund-VP marking.
+    This was extremely useful, bringing the cumulative F1 to 85.72%, 2.66% absolute improvement (more than its solo improvement over the baseline).
+    Error analysis at this point suggested that many remaining errors were attachment level and conjunction scope.
+    While these kinds of errors are undoubtedly profitable targets for lexical preference, most attachment mistakes were overly high attachments, indicating that the overall right-branching tendency of English was not being captured.
+    Indeed, this tendency is a difficult trend to capture in a PCFG because often the high and low attachments involve the very same rules.
+    Even if not, attachment height is not modeled by a PCFG

@@ -1,0 +1,12 @@
+nfusion network may be represented as a standard word lattice with all paths traveling via all nodes.
+    The links in this lattice represent the alternative words (including nulls) at the corresponding position in the string.
+    Confusion network decoding may be viewed as finding the highest scoring path through this lattice with summing all word scores along the path.
+    The standard lattice decoding algorithms may also be used to generate -best lists from the confusion network.
+    The simplest way to introduce system weights is to accumulate system-specific scores along the paths and combine these scores linearly with the weights.
+    The system weights may be tuned using Powell&#8217;s method on -best lists as described in Section 2.
+    The word-level combination tuning can be summarized as follows: 7.
+    Re-rank the -best list using the new weights.
+    Testing the word-level combination has the same steps as the tuning apart from steps 6 and 7.
+  
+  
+    Six systems trained on all data available fo

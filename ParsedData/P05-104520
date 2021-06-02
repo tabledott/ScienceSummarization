@@ -1,0 +1,7 @@
+ incorporated a label consistency constraint into probabilistic sequence model named entity recognition systems.
+    Mikheev et al. (1999) and Finkel et al.
+    (2004) incorporate label consistency information by using adhoc multi-stage labeling procedures that are effective but special-purpose.
+    Malouf (2002) and Curran and Clark (2003) condition the label of a token at a particular position on the label of the most recent previous instance of that same token in a prior sentence of the same document.
+    Note that this violates the Markov property, but is achieved by slightly relaxing the requirement of exact inference.
+    Instead of finding the maximum likelihood sequence over the entire document, they classify one sentence at a time, allowing them to condition on the maximum likelihood sequence of previous sentences.
+    This approach is quite effective for enforcing label consistency in many NLP tasks, however, it permits a forward flow of information only, which is not sufficient for all cases of int

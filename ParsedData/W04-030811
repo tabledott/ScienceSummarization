@@ -1,0 +1,8 @@
+irst is the grandparent of the second.
+    And in pure dependency parsing without nonterminal symbols, every reduction requires that one of the tokens reduced is the head of the other(s).
+    This holds necessarily, regardless of the algorithm used, and is the reason why it is impossible to achieve strict incrementality in dependency parsing as defined here.
+    However, it is worth noting that (2&#8211;3), which are the mirror images of (6&#8211;7) can be parsed incrementally, even though they contain adjacent tokens that are not linked by a single arc.
+    The reason is that in (2&#8211;3) the reduction of the first two tokens makes the third token adjacent to the first.
+    Thus, the defining characteristic of the problematic structures is that precisely the leftmost tokens are not linked directly.
+    The case of (1) is different in that here the problem is caused by the strict bottom-up strategy, which requires each token to have found all its dependents before it is combined with its head.
+    For left-

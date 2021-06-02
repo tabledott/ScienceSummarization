@@ -1,0 +1,9 @@
+on and sophisticated smoothing techniques, as well as training on larger training sets.
+    In this section, we present the details and the performance evaluation of this model.
+    In a unigram model, a word is always associated with the supertag that is most preferred by the word, irrespective of the context in which the word appears.
+    An alternate method that is sensitive to context is the n-gram model.
+    The n-gram model takes into account the contextual dependency probabilities between supertags within a window of n words in associating supertags to words.
+    Thus, the most probable supertag sequence for an n-word sentence is given by: = argmaxTPr(Ti, T2, .
+    .
+    &#8226; , TN) * Pr(Wi, W2/ &#8226; / WN T1, T2/ &#8226; .
+    &#8226; TN) (3) where Ti is the supertag for word K. To compute this using only local information, we approximate, assuming that the probability of a word depends only on its supertag and also use an n-gram (trigram, in this case) approximation The term Pr(T, ITi_2, Ti_i) is

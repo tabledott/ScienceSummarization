@@ -1,0 +1,10 @@
+fficiently, using MST inference. for some (i, j); these updates modify the objective functions for the two decoding steps, and intuitively encourage the y(k) and z(k) variables to be equal.
+    Recall that the main difficulty in solving Eq.
+    4 was the z = y constraints.
+    We deal with these constraints using Lagrangian relaxation (Lemar&#180;echal, 2001).
+    We first introduce Lagrange multipliers u = {u(i, j) : (i, j) E Z}, and define the Lagrangian This follows because if y = z, the right term in Eq.
+    6 is zero for any value of u.
+    The dual objective L(u) is obtained by omitting the y = z constraint: i,j Since L(u) maximizes over a larger space (y may not equal z), we have that L&#8727; G L(u) (compare this to Eq.
+    7).
+    The dual problem, which our algorithm optimizes, is to obtain the tightest such upper bound, The dual objective L(u) is convex, but not differentiable.
+    However, we can use a subgradient method to derive an algorithm that is similar to gradient descent, and which minimiz

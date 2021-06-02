@@ -1,0 +1,10 @@
+e entity in partial or abbreviated forms.
+    To help in recognizing the shorter versions of the entities, we maintain a history of unigram word features.
+    If a token is encountered again, the word unigram features of the previous instances are added as features for the current instance as well.
+    We have a total of 48 feature templates.
+    In comparison, there are 79 templates in (Suzuki and Isozaki, 2008).
+    Part-of-speech tags were used in the topranked systems in CoNLL 2003, as well as in many follow up studies that used the data set (Ando and Zhang 2005; Suzuki and Isozaki 2008).
+    Our system does not need this information to achieve its peak performance.
+    An important advantage of not needing a POS tagger as a preprocessor is that the system is much easier to adapt to other languages, since training a tagger often requires a larger amount of more extensively annotated data than the training data for NER.
+    We used hard clustering with 1-word context windows for NER.
+    For each input tok

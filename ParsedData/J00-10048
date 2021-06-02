@@ -1,0 +1,6 @@
+ng any empty squares on this tape.
+    The cost of a derivation of an input string to an output string by a weighted head transducer is the sum of the costs of transitions taken in the derivation.
+    We can now define the string-to-string transduction function for a head transducer to be the function that maps an input string to the output string produced by the lowest-cost valid derivation taken over all initial states and initial symbols.
+    (Formally, the function is partial in that it is not defined on an input when there are no derivations or when there are multiple outputs with the same minimal cost.)
+    In the transducers produced by the training method described in this paper, the source and target positions are in the set {-1, 0,1}, though we have also used handcoded transducers (Alshawi and Xia 1997) and automatically trained transducers (Alshawi and Douglas 2000) with a larger range of positions.
+    The operation of a traditional left-to-right transducer can be simulated by a head transducer by

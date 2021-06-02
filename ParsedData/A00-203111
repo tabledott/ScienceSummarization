@@ -1,0 +1,12 @@
+tly-labelled constituents.
+    We believe the latter number (`nonull') to be a better performance metric, as it is not overwhelmed by the large number of untagged constituents.
+    Both are reported below.
+  
+  
+    There are, it seems, two reasonable baselines for this and future work.
+    First of all, most constituents in the corpus have no tags at all, so obviously one baseline is to simply guess no tag for any constituent.
+    Even for the most common type of function tag (grammatical), this method performs with 87% accuracy.
+    Thus the with-null accuracy of a function tagger needs to be very high to be significant here.
+    The second baseline might be useful in examining the no-null accuracy values (particularly the recall): always guess the most common tag in a category.
+    This means that every constituent gets labelled with `--SBJ-TMP-TPC-CLR' (meaning that it is a topicalised temporal subject that is 'closely related' to its verb).
+    This combination of tags is in fact entirely illegal by the 

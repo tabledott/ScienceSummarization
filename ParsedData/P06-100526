@@ -1,0 +1,11 @@
+gender/number.
+    It would be interesting to see whether performance could be improved by adding WordNet and web-mined features.
+    Path coreference itself could conceivably be determined with a search engine.
+    Gender is our most powerful probabilistic feature.
+    In fact, inspecting our system&#8217;s decisions, gender often rules out coreference regardless of path coreference.
+    This is not surprising, since we based the acquisition of C(p) on gender.
+    That is, our bootstrapping assumption was that the majority of times these paths occur, gender indicates coreference or lack thereof.
+    Thus when they occur in our test sets, gender should often sufficiently indicate coreference.
+    Improving the orthogonality of our features remains a future challenge.
+    Nevertheless, note the decrease in performance on each of the datasets when C(p) is excluded (#5).
+    This is compelling evidence that path coreference is valuable in its own right, beyond its ability to bootstrap extensive and reliable gend

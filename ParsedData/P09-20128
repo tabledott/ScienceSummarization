@@ -1,0 +1,9 @@
+f the training corpus sharing the same root as t, and countzt(t) is the count of subtree t among them.
+  
+  
+    We used the standard split for the Wall Street Journal portion of the Treebank, training on sections 2 to 21, and reporting results on sentences with no more than forty words from section 23.
+    We compare with three other grammars.
+    We note two differences in our work that explain the large difference in scores for the minimal grammar from those reported by Bod: (1) we did not implement the smoothed &#8220;mismatch parsing&#8221;, which permits lexical leaves of subtrees to act as wildcards, and (2) we approximate the most probable parse with the top single derivation instead of the top 1,000.
+    Rule probabilities for all grammars were set with relative frequency.
+    The Gibbs sampler was initialized with the spinal grammar derivations.
+    We construct sampled grammars in two ways: by summing all subtree counts from the derivation states of the first i sampling iterations together with cou

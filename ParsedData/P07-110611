@@ -1,0 +1,11 @@
+tence.
+    (Except for the last example in the last iteration, when each dimension of &#964; is updated, no matter whether the decoder output is correct or not).
+    Denote the sth dimension in each vector before processing the nth example in the tth iteration as &#945;n&#8722;1,t s , &#963;n&#8722;1,t and &#964;n&#8722;1,t (n&#964;,s,t&#964;,s).
+    = that the decoder output zn,t is different from the training example yn.
+    Now &#945;n,t We found that this lazy update method was significantly faster than the naive method.
+  
+  
+    The decoder reads characters from the input sentence one at a time, and generates candidate segmentations incrementally.
+    At each stage, the next incoming character is combined with an existing candidate in two different ways to generate new candidates: it is either appended to the last word in the candidate, or taken as the start of a new word.
+    This method guarantees exhaustive generation of possible segmentations for any input sentence.
+    Two agendas are used: the sou

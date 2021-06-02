@@ -1,0 +1,5 @@
+meters that generate trees in Collins&#8217; model are estimates of conditional probabilities.
+    Even though the following overview of parameter classes presents only the maximal contexts of the conditional probability estimates, it is important to bear in mind that the model always makes use of smoothed probability estimates that are the linear interpolation of several raw maximum-likelihood estimates, using various amounts of context (we explore smoothing in detail in Section 6.8).
+    In Sections 4.5 and 4.9, we saw how the raw Treebank nonterminal set is expanded to include nonterminals augmented with -A and -g. Although it is not made explicit in Collins&#8217; thesis, Collins&#8217; model uses two mapping functions to remove these augmentations when including nonterminals in the history contexts of conditional probabilities.
+    Presumably this was done to help alleviate sparse-data problems.
+    We denote the &#8220;argument removal&#8221; mapping function as alpha and the &#8220;gap removal&#8221; m

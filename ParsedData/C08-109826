@@ -1,0 +1,6 @@
+thod out-performed state-of-the-art POS taggers on fine-grained POS tagging even if only a trigram context was used.Schmid (1994) and M`arquez (1999) used decision trees for the estimation of contextual tag prob abilities, but without a decomposition of the tagprobability.
+			Magerman (1994) applied probabilistic decision trees to parsing, but not with a genera tive model.Provost &amp; Domingos (2003) noted that well known decision tree induction algorithms such as C4.5 (Quinlan, 1993) or CART (Breiman et al,1984) fail to produce accurate probability esti mates.
+			They proposed to grow the decision trees to their maximal size without pruning, and to smooth the probability estimates with add-1 smoothing (also known as the Laplace correction).
+			Ferri et al (2003) describe a more complex backoffsmoothing method.
+			Contrary to them, we applied pruning and found that some pruning (threshold=6) gives better results than no pruning (threshold=0).
+			Another difference is that we used N twoclass trees with normal

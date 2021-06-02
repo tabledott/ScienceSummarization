@@ -1,0 +1,10 @@
+es.
+    To cope with this constraints, we simply expand all features as a binary-value taking either 0 or 1.
+    By taking all words and POS tags appearing in the training data as features, the total dimension of feature vector becomes as large as 92837.
+    Generally, we need vast computational complexity and memories to handle such a huge dimension of vectors.
+    In fact, we can reduce these complexity considerably by holding only indices and values of non-zero elements, since the feature vectors are usually sparse, and SVMs only require the evaluation of dot products of each feature vectors for their training.
+    In addition, although we could apply some cut-off threshold for the number of occurrence in the training set, we decided to use everything, not only POS tags but also words themselves.
+    The reasons are that we simply do not want to employ a kind of &amp;quot;heuristics&amp;quot;, and SVMs are known to have a good generalization performance even with very large features.
+  
+  
+    We have appl

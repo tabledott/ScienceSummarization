@@ -1,0 +1,8 @@
+mple tree.
+			Node 1 has two children, 2 and 3, each of which has one observed terminal child.
+			We use L(i) and R(i) to denote the left and right children of node i. In the HMM, the transition parameters of a statespecify a distribution over single next states; similarly, the binary production parameters of a gram mar symbol must specify a distribution over pairs of grammar symbols for its children.
+			We adapt theHDP machinery to tie these binary production distri butions together.
+			The key difference is that now wemust tie distributions over pairs of grammar sym bols together via distributions over single grammar symbols.
+			Another difference is that in the HMM, at each time step, both a transition and a emission are made, whereas in the PCFG either a binary production or an emission is chosen.
+			Therefore, each grammar symbol must also have a distribution over the type of rule to apply.
+			In a CNF PCFG, there are only two types of rules, but this can be easily generalized to include unary production

@@ -1,0 +1,12 @@
+d an additional knowledge source that can be used in training.
+    We assume that the dictionary is a list of word strings (e, f).
+    The entries for each language can be a single word or an entire phrase.
+    To integrate a dictionary into the EM algorithm, we compare two different methods: In this section, A(e) is an additional parameter describing the size of the sample that is used to estimate the model p(f  |e).
+    This count is then used instead of N(e, f) in the EM algorithm as shown in equation (35).
+    As a result, only dictionary entries that indeed occur in the training corpus have a large effect in training.
+    The motivation behind this is to avoid a deterioration of the alignment as a result of out-of-domain dictionary entries.
+    Every entry in the dictionary that does co-occur in the training corpus can be assumed correct and should therefore obtain a high count.
+    We set &#181;&#8722; = 0.
+  
+  
+    In this section, we describe various methods for performing a symmetrization of our dir

@@ -1,0 +1,7 @@
+ollowing, we describe in detail the initialization step, the derivation of the support function formula and the use of neighborhood features.RL Initialization Step OPINE uses a version of Turney?s PMI-based approach (Turney, 2003) in order to de rive the initial probability estimates (P (l(w) = L)(0)) for a subset S of the words.
+			OPINE computes a SO score so(w) for each w in S as the difference between the PMI of w with positive keywords (e.g., ?excellent?)
+			and the PMI of w with negative keywords (e.g., ?awful?).When so(w) is small, or w rarely co-occurs with the key words, w is classified as neutral.
+			If so(w) &gt; 0, then w is positive, otherwise w is negative.
+			OPINE then uses the labeled S set in order to compute prior probabilities P (l(w) = L), L ? {pos, neg, neutral} by computing the ratio between the number of words in S labeled Land |S|.
+			Such probabilities are used as initial probabil ity estimates associated with the labels of the remaining words.
+			Support Function The support functio

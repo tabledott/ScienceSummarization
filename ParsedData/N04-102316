@@ -1,0 +1,10 @@
+llel by sharing the same weight vector .
+    The margin is defined on the distance between the top items and the bottom items in each cluster, as shown in Figure 1.
+    Let be the feature vector of the translation of the sentence, and be the rank for this translation among all the translations for the sentence.
+    Then the set of training samples is: where is the number of clusters and is the length of ranks for each cluster.
+    Let be a linear function, where is the feature vector of a translation, and is a weight vector.
+    We construct a hypothesis function with as follows. where is a function that takes a list of scores for the candidate translations computed according to the evaluation metric and returns the rank in that list.
+    For example .
+    The splitting algorithm searches a linear function that successfully splits the top -ranked and bottom -ranked translations for each sentence, where .
+    Formally, let for any linear function .
+    We look for the function such that which means that can su

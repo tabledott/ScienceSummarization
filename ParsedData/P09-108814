@@ -1,0 +1,7 @@
+ monolingual parse tree sampling described in Johnson et al. (2007)).
+    A problem with this approach is that building the derivation forest would take O(|f|3|e|3) time, which would be impractical for long sentences.
+    Instead we develop a collapsed Gibbs sampler (Teh et al., 2006) which draws new samples by making local changes to the derivations used in a previous sample.
+    After a period of burn in, the derivations produced by the sampler will be drawn from the posterior distribution, p(d|x).
+    The advantage of this algorithm is that we only store the current derivation for each training sentence pair (together these constitute the state of the sampler), but never need to reason over derivation forests.
+    By integrating over (collapsing) the parameters we only store counts of rules used in the current sampled set of derivations, thereby avoiding explicitly representing the possibly infinite space of translation pairs.
+    We define two operators for our Gibbs sampler, each of which re-samples loca

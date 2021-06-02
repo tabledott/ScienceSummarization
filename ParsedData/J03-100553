@@ -1,0 +1,10 @@
+5;LM ,: 15.
+    This scaling factor is employed because the language model probabilities are more reliably estimated than the acoustic probabilities.
+    Following this use of a language model scaling factor in speech recognition, such a factor is introduced into statistical MT, too.
+    The optimization criterion in equation (1) is modified as follows: where p(eI1) is the language model probability of the target language sentence.
+    In the experiments presented here, a trigram language model is used to compute p(eI1).
+    The effect of the language model scaling factor &#945;LM is studied on the TEST-331 test set.
+    A minimum mWER is obtained for &#945;LM = 0.8, as reported in Tillmann (2001).
+    Unlike in speech recognition, the translation model probabilities seem to be estimated as reliably as the language model probabilities in statistical MT.
+    A second scaling factor &#945;D is introduced for the distortion model probabilities p(j I j&#65533;,J).
+    A minimum mWER is obtained for &#945;D = 0.4,

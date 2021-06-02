@@ -1,0 +1,7 @@
+.
+    The forward values of many of the items in our parser related to unary and epsilon productions can be computed off-line, once per grammar, which is an idea due to Stolcke (1993).
+    Since reverse values require entire strings, the reverse values of these items cannot be computed until the input string is known.
+    Because we use a single item-based description for precomputed items and nonprecomputed items, and for forward and reverse values, this combination of off-line and on-line computation is easily and compactly specified.
+    We can apply the same techniques to grammar transformations that we have so far applied to parsing.
+    Consider a grammar transformation, such as the Chomsky normal form (CNF) grammar transformation, which takes a grammar with epsilon, unary, and n-ary branching productions, and converts it into one in which all productions are of the form A &#8212;&gt; BC or A &#8212;&gt; a.
+    For any sentence w1 ... wn its value under the original grammar in the Boolean semiring (TRUE

@@ -1,0 +1,6 @@
+r framework gets (possibly incomplete) clustering information for each mention from the earlier coreference models in the multi-pass system.
+    In other words, each mention mi may already be assigned to a cluster Cj containing a set of mentions: Cj = {mj1, ... , mj&#65533;}; mi E Cj.
+    Unassigned mentions are unique members of their own cluster.
+    We use this information in several ways: Attribute sharing &#8211; Pronominal coreference resolution (discussed later in this section) is severely affected by missing attributes (which introduce precision errors because incorrect antecedents are selected due to missing information) and incorrect attributes (which introduce recall errors because correct links are not generated due to attribute mismatch between mention and antecedent).
+    To address this issue, we perform a union of all mention attributes (e.g., number, gender, animacy) in a given cluster and share the result with all cluster mentions.
+    If attributes from different mentions contradict each ot

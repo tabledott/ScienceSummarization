@@ -1,0 +1,10 @@
+else accumulate an exact representation of its (discrete) probability mass function by a sequence of numerical convolutions.
+  
+  
+    We tested the above training methods on two different tasks: dependency parsing and phrasebased machine translation.
+    Since the basic setup was the same for both, we outline it here before describing the tasks in detail.
+    In both cases, we start with 8 to 10 models (the &#8220;experts&#8221;) already trained on separate training data.
+    To find the optimal coefficients 0 for a loglinear combination of these experts, we use separate development data, using the following procedure due to Och (2003): Our experiments simply compare three procedures at step 4.
+    We may either Since these different optimization procedures will usually find different 0 at step 4, their K-best lists will diverge after the first iteration.
+    For final testing, we selected among several variants of each procedure using a separate small heldout set.
+    Final results are reported for a larger

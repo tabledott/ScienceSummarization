@@ -1,0 +1,5 @@
+tioned on the source, f, is given by: where Hk(d, e, f) = rEd Here k ranges over the model&#8217;s features, and &#923; = {Ak} are the model parameters (weights for their corresponding features).
+    The feature functions Hk are predefined real-valued functions over the source and target sentences, and can include overlapping and non-independent features of the data.
+    The features must decompose with the derivation, as shown in (2).
+    The features can reference the entire source sentence coupled with each rule, r, in a derivation.
+    The distribution is globally normalised by the partition function, ZA(f), which sums out the numerator in (1) for every derivation (and therefore every translation) of f: Given (1), the conditional probability of a target translation given the source is the sum over all of its derivations: where O(e, f) is the set of all derivations of the target sentence e from the source f. Most prior work in SMT, both generative and discriminative, has approximated the sum over derivatio

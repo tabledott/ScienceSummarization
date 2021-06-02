@@ -1,0 +1,6 @@
+ for Wikipedia and Gigaword corpora, using pruned tf-idf and k2 features.2 In general pruned tf-idf features yield higher correlation than k2 features.
+    Using AvgSim, the multi-prototype approach (K &gt; 1) yields higher correlation than the single-prototype approach (K = 1) across all corpora and feature types, achieving state-of-the-art results with pruned tf-idf features.
+    This result is statistically significant in all cases for tf-idf and for K E [2,10] on Wikipedia and K &gt; 4 on Gigaword for k2 features.3 MaxSim yields similar performance when K &lt; 10 but performance degrades as K increases.
+    It is possible to circumvent the model-selection problem (choosing the best value of K) by simply combining the prototypes from clusterings of different sizes.
+    This approach represents words using both semantically broad and semantically tight prototypes, similar to hierarchical clustering.
+    Table 1 and Figure 2 (squares) show the result of such a combined approach, where the prototypes for clus

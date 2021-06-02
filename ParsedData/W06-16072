@@ -1,0 +1,5 @@
+-likelihood estimation from relative frequencies is used to obtain conditional probabilities (Koehn et al., 2003), eg, p(&#732;s|&#732;t) = c(&#732;s, &#732;t)/ Es&#732; c(&#732;s, &#732;t) (since the estimation problems for p(&#732;s|&#732;t) and p(&#732;t|&#732;s) are symmetrical, we will usually refer only to p(&#732;s|&#732;t) for brevity).
+    The most obvious example of the overfitting this causes can be seen in phrase pairs whose constituent phrases occur only once in the corpus.
+    These are assigned conditional probabilities of 1, higher than the estimated probabilities of pairs for which much more evidence exists, in the typical case where the latter have constituents that cooccur occasionally with other phrases.
+    During decoding, overlapping phrase pairs are in direct competition, so estimation biases such as this one in favour of infrequent pairs have the potential to significantly degrade translation quality.
+    An excellent discussion of smoothing techniques developed for ngram language mod

@@ -1,0 +1,6 @@
+le ongoing stories like the SARS crisis tend to produce very large and unfocused clusters.
+    To extract likely paraphrase sentence pairs from these clusters, we used edit distance (Levenshtein 1966) over words, comparing all sentences pairwise within a cluster to find the minimal number of word insertions and deletions transforming the first sentence into the second.
+    Each sentence was normalized to lower case, and the pairs were filtered to reject: A total of 139K non-identical sentence pairs were obtained.
+    Mean Levenshtein distance was 5.17; mean sentence length was 18.6 words.
+    To this corpus we applied the word alignment algorithms available in Giza++ (Och &amp; Ney, 2000), a freely available implementation of IBM Models 1-5 (Brown, 1993) and the HMM alignment (Vogel et al, 1996), along with various improvements and modifications motivated by experimentation by Och &amp; Ney (2000).
+    In order to capture the many-to-many alignments that identify correspondences between idioms and other phras

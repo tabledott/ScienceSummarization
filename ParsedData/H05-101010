@@ -1,0 +1,12 @@
+			2.2 The extragradient method.
+			For saddle-point problems, a well-known solution strategy is the extragradient method (Ko rpelevich, 1976), which is closely related to projected-gradient methods.
+			The gradient of the objective in Equation 2 is given by: ? i F i (z i ? y i ) (with respect to w) and F i w + c i (with respect to each z i).
+			We de note the Euclidean projection of a vector onto Z i as P Z i (v) = arg minu?Z i||v ? u|| and pro jection onto the ball ||w|| ? ?
+			as P ?
+			(w) = ?w/max(?, ||w||).
+			75An iteration of the extragradient method con sists of two very simple steps, prediction: w?t+1 = P ?
+			(wt + ? k ? i F i (y i ? zt i )); z?t+1 i = P Z i (zt i + ? k (F i wt + c i )); and correction: wt+1 = P ?
+			(wt + ? k ? i F i (y i ? z?t+1 i )); zt+1 i = P Z i (zt i + ? k (F i w?t+1 + c i )), where ? k are appropriately chosen step sizes.
+			The method is guaranteed to converge linearly to a solution w?, z?
+			(Korpelevich, 1976; He and Liao, 2002; Taskar et al, 2005b).
+			Please see www.cs

@@ -1,0 +1,7 @@
+mbiguation, as demonstrated in the first evaluation.
+    Ideally, this evaluation should be carried out using a large set of held out data, which would provide good estimates for the true probabilities of the pairs in the test sets.
+    The estimation method should then use a much smaller training corpus, in which none of the example pairs occur, and then should try to recover the probabilities that are known to us from the held out data.
+    However, such a setting requires that the held out corpus would be several times larger than the training corpus, while the latter should be large enough for robust application of the estimation method.
+    This was not feasible with the size of our corpus, and the rather noisy data we had.
+    To avoid this problem, we obtained the set of pairs with high probability from the training corpus, selecting pairs that occur at least 5 times.
+    We then deleted these pairs from the data base that is used by the estimation method, forcing the method to recover their probabilit

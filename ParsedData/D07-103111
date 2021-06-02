@@ -1,0 +1,5 @@
+atic speedup by working directly with probabilities and rescaling after each ob servation to avoid underflow, rather than workingwith log probabilities (thanks to Yoshimasa Tsu 298 0.35 0.37 0.39 0.41 0.43 0.45 0.47 0 250 500 750 10001 to -1 a ccura cy IterationFigure 2: Variation in 1-to-1 accuracy with increas ing iterations for 10 EM runs from different random starting points.
+			ruoka for pointing this out).
+			Since we evaluatedthe accuracy of the estimated tags after each iteration, it was important that decoding be done effi ciently as well.
+			While most researchers use Viterbidecoding to find the most likely state sequence, maximum marginal decoding (which labels the observa tion xi with the state yi that maximizes the marginal probability P(yi|x, ?, ?)) is faster because it re-uses the forward and backward tables already constructed by the Forward-Backward algorithm.
+			Moreover, in separate experiments we found that the maximum marginal state sequence almost always scored higherthan the Viterbi sta

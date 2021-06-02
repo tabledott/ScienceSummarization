@@ -1,0 +1,10 @@
+itate full parsing.
+  A clause, on the other hand, is the clausal constituent as defined by the treebank standard.
+  An example of chunks and clauses is shown in Figure 1.
+  3.1 Pruning When the full parse tree of a sentence is available, only the constituents in the parse tree are considered as argument candidates.
+  Our system exploits the heuristic rules introduced by Xue and Palmer (2004) to filter out simple constituents that are very unlikely to be arguments.
+  This pruning method is a recursive process starting from the target verb.
+  It first returns the siblings of the verb as candidates; then it moves to the parent of the verb, and collects the siblings again.
+  The process goes on until it reaches the root.
+  In addition, if a constituent is a PP (prepositional phrase), its children are also collected.
+  For example, in Figure 1, if the predicate (target verb) is assume, the pruning heuristic will output: [PP by John Smith who has been elected deputy chairman], [NP John Smith who has been elected d

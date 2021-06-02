@@ -1,0 +1,9 @@
+ation process first generates a derivation tree from this derivation CFG, and then combines its terminal nodes t (which are elementary trees) into the derived tree T.
+  
+  
+    Given a a grammar G and a derived tree T, we may be interested in constructing the forest of T&#8217;s possible derivation trees (as defined above).
+    We call this tree parsing, as it finds ways of decomposing T into elementary trees.
+    Given a node c E T.v, we would like to find all the potential elementary subtrees t of T whose root t.r could have contributed c during the derivation of T. Such an elementary tree is said to fit c, in the sense that it is isomorphic to some subgraph of T rooted at c. The following procedure finds an elementary tree t that fits c. Freely choose a connected subgraph U of T such that U is rooted at c (or is empty).
+    Let t.V i be the vertex set of U.
+    Let t.E be the set of outgoing edges from nodes in t.Vi to their children, that is, t.E = T.E n (t.V i x T.V ).
+    Let t.&#65533; be the restricti

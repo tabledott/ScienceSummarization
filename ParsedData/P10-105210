@@ -1,0 +1,7 @@
+amounts to reparameterizing &#952;k as &#952;k = &#952;+k &#8722;&#952;&#8722;k , where &#952;+k and &#952;&#8722;k are positive.
+    The `1 penalty thus becomes &#961;1(&#952;+ &#8722; &#952;&#8722;).
+    In this formulation, the objective function recovers its smoothness and can be optimized with conventional algorithms, subject to domain constraints.
+    Optimization is straightforward, but the number of parameters is doubled and convergence is slow (Andrew and Gao, 2007): the procedure lacks a mechanism for zeroing out useless parameters.
+    A more efficient strategy is the orthant-wise quasi-Newton (OWL-QN) algorithm introduced in (Andrew and Gao, 2007).
+    The method is based on the observation that the `1 norm is differentiable when restricted to a set of points in which each coordinate never changes its sign (an &#8220;orthant&#8221;), and that its second derivative is then zero, meaning that the `1 penalty does not change the Hessian of the objective on each orthant.
+    An OWL-QN update then simpl

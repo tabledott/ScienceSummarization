@@ -1,0 +1,7 @@
+ng performance by increasing the model size.
+    However, both the memory size and the training time are more than linear in , and the training time for the largest ( ) models was about 15 hours for the models created using CENTER-PARENT, CENTER-HEAD, and LEFT and about 20 hours for the model created using RIGHT.
+    To deal with larger (e.g., = 32 or 64) models, we therefore need to use a model search that reduces the number of parameters while maintaining the model&#8217;s performance, and an approximation during training to reduce the training time.
+    The relationships between the average parse time and parsing performance using the three parsing methods described in Section 3 are shown in Figure 8.
+    A model created using CENTER-PARENT with was used throughout this experiment.
+    The data points were made by varying configurable parameters of each method, which control the number of candidate parses.
+    To create the candidate parses, we first parsed input sentences using a PCFG4, using beam thresho

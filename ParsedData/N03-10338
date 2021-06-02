@@ -1,0 +1,10 @@
+res in figure 1(a) and (b) are wellunderstood graphical models with well-known semantics, figure 1(c) is not a standard Bayes&#8217; net, precisely because the graph has cycles.
+    Rather, it is a more general dependency network (Heckerman et al., 2000).
+    Each node represents a random variable along with a local conditional probability model of that variable, conditioned on the source variables of all incoming arcs.
+    In this sense, the semantics are the same as for standard Bayes&#8217; nets.
+    However, because the graph is cyclic, the net does not correspond to a proper factorization of a large joint probability estimate into local conditional factors.
+    Consider the two-node cases shown in figure 2.
+    Formally, for the net in (a), we can write P(a, b) = P(a)P(b|a).
+    For (b) we write P(a, b) = P(b)P(a|b).
+    However, in (c), the nodes A and B carry the information P(a|b) and P(b|a) respectively.
+    The chain rule doesn&#8217;t allow us to reconstruct P(a, b) by multiplying these two quantit

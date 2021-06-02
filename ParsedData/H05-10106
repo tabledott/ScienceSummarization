@@ -1,0 +1,8 @@
+odel in multiple ways, includ ing using conditional likelihood estimation, anaveraged perceptron update (see which matchings are proposed and adjust the weights ac cording to the difference between the guessed and target structures (Collins, 2002)), or inlarge-margin fashion.
+			Conditional likelihood es timation using a log-linear model P (y | x) = 1 Z w (x) exp{wf(x,y)} requires summing over all matchings to compute the normalization Zw(x), which is #P-complete (Valiant, 1979).
+			In ourexperiments, we therefore investigated the aver aged perceptron in addition to the large-margin method outlined below.
+			2.1 Large-margin estimation.
+			We follow the large-margin formulation of Taskar et al (2005a).
+			Our input is a set of training instances {(x i ,y i )}m i=1, where each in stance consists of a sentence pair x i and a target 74 alignment y i . We would like to find parameters.
+			w that predict correct alignments on the train ing data: y i = arg max ?y i ?Y i wf(x i , y?
+			i ), ?i, where Y i is the spac

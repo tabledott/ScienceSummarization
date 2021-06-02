@@ -1,0 +1,10 @@
+ing both linguistic and structural knowledge, such as ?arguments do not overlap?
+  or ?each verb takes at most one argument of each type.?
+  This knowledge is useful to resolve any incon- sistencies of argument classification in order to generate final legitimate predictions.
+  We design an inference procedure that is formalized as a constrained optimization problem, represented as an integer linear program (Roth and Yih 2004).
+  It takes as input the argument classifiers?
+  confidence scores for each type of argument, along with a list of constraints.
+  The output is the optimal solution that maximizes the lin- ear sum of the confidence scores, subject to the constraints that encode the domain knowledge.
+  The inference stage can be naturally extended to combine the output of several different SRL systems, as we will show in Section 5.
+  In this section we first introduce the constraints and formalize the inference problem for the semantic role labeling task.
+  We then demonstrate how we apply integer linear

@@ -1,0 +1,11 @@
+two minor complexities that need to be noted.
+    The first relates to the inside probability 0(N:4).
+    C&amp;C approximate it with the sum of the probabilities of all the parses for Nlk found at that point in the parse.
+    This in turn requires a somewhat complicated scheme to avoid repeatedly re-evaluating Equation 4 whenever a new parse is found.
+    In this paper we adopt a slightly simpler method.
+    We approximate )3(Nk) by the most probable parse for Ni,k, rather than the sum of all the parses. j We justify this on the grounds that our parser eventually returns the most probable parse, so it seems reasonable to base our metric on its value.
+    This also simplifies updating 13(N3,k) when new parses are found for Nk.
+    Our algorithm compares the probability of the new parse to the best already found for Ni 4.
+    If the old one is higher, nothing need be done.
+    If the new one is higher, it is simply added to the agenda.
+    The second complexity has to do with the fact that in Equation 4 the pr

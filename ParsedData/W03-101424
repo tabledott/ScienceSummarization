@@ -1,0 +1,8 @@
+Obj classifier initially labeled roughly 17,000 sentences as objective.
+    In order to keep the training set relatively balanced, we used all 17,000 objective sentences and 17,000 of the subjective sentences as training data for the extraction pattern learner.
+    17,073 extraction patterns were learned that have frequency &gt; 2 and Pr(subjective  |patterni) &gt; .60 on the training data.
+    We then wanted to determine whether the extraction patterns are, in fact, good indicators of subjectivity.
+    To evaluate the patterns, we applied different subsets of them to a test set to see if they consistently occur in subjective sentences.
+    This test set consists of 3947 sentences, 54% of which are subjective.
+    Figure 4 shows sentence recall and pattern (instancelevel) precision for the learned extraction patterns on the test set.
+    In this figure, precision is the proportion of pattern instances found in the test set that are in subjective sentences, and recall is the proportion of subjective sentences 

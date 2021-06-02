@@ -1,0 +1,5 @@
+andard, then the number of dependencies recalled in &#960; is |&#960; &#8745; &#960;i|.
+    Because we do not know which &#960;i is the gold standard, then we calculate the expected recall by summing the recall of &#960; relative to each &#960;i, weighted by the probability of &#960;i.
+    The expression can be expanded further: The reason for this manipulation is that the expected recall score for &#960; is now written in terms of a sum over the individual dependencies in &#960;, rather than a sum over each dependency structure for S. The inner sum is over all derivations which contain a particular individual dependency &#964;.
+    Thus the final score for a dependency structure &#960; is a sum of the scores for each dependency &#964; in &#960;; and the score for a dependency &#964; is the sum of the probabilities of those derivations producing &#964;.
+    This latter sum can be calculated efficiently using inside and outside scores: where &#966;c is the inside score and &#968;c is the outside score for node

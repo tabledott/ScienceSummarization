@@ -1,0 +1,12 @@
+ in any particular syntactic relationship with disease, but because it belongs to the class of instances that does.
+    The input to our labeling algorithm is a list of semantic classes, in the form of clusters of words, which may be generated from any source.
+    In our experiments, we used the clustering outputs of CBC (Pantel and Lin 2002).
+    The output of the system is a ranked list of concept names for each semantic class.
+    In the first phase of the algorithm, we extract feature vectors for each word that occurs in a semantic class.
+    Phase II then uses these features to compute grammatical signatures of concepts using the CBC algorithm.
+    Finally, we use simple syntactic patterns to discover class names from each class' signature.
+    Below, we describe these phases in detail.
+    We represent each word (concept instance) by a feature vector.
+    Each feature corresponds to a context in which the word occurs.
+    For example, &amp;quot;catch _&amp;quot; is a verbobject context.
+    If the word 

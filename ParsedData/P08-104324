@@ -1,0 +1,7 @@
+learned from the treebank after removing all functional features from the syntactic categories.
+    In our second model GTvpi we also distinguished finite and non-finite verbs and VPs as 10Lattice parsing can be performed by special initialization of the chart in a CKY parser (Chappelier et al., 1999).
+    We currently simulate this by crafting a WCFG and feeding it to BitPar.
+    Given a PCFG grammar G and a lattice L with nodes n1 ... nk, we construct the weighted grammar GL as follows: for every arc (lexeme) l E L from node ni to node nj, we add to GL the rule [l --+ tni, tni+1, ... , tnj_1] with a probability of 1 (this indicates the lexeme l spans from node ni to node nj).
+    GL is then used to parse the string tn1 ... tnk_1, where tni is a terminal corresponding to the lattice span between node ni and ni+1.
+    Removing the leaves from the resulting tree yields a parse for L under G, with the desired probabilities.
+    We use a patched version of BitPar allowing for direct input of probabilities instea

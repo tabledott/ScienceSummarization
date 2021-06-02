@@ -1,0 +1,9 @@
+e define a pattern as an ordered sequence of high frequency words and slots for content words.
+			Following (Davidov and Rappoport, 2008), the FH and FC thresholds were set to 1000 words per million (upper bound for FC) and 100 words per million (lower bound for FH )2.
+			The patterns allow 2?6 HFWs and 1?5 slots forCWs.
+			To avoid collection of patterns which capture only a part of a meaningful multiword ex pression, we require patterns to start and to end with a HFW.
+			Thus a minimal pattern is of the form [HFW] [CW slot] [HFW].
+			For each sentenceit is possible to generate dozens of different pat terns that may overlap.
+			As with words and n-gram features, we do not treat as features any patterns which appear in less than 0.5% of the training set sentences.
+			Since each feature vector is based on a singlesentence (tweet), we would like to allow approximate pattern matching for enhancement of learn ing flexibility.
+			The value of a pattern feature is estimated according the one of the following four s

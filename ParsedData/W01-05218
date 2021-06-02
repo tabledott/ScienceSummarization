@@ -1,0 +1,8 @@
+-head) child.
+    (The head word of a parent is the same as the head word of its head child.)
+    Because this is the only part of the model that involves pairs of words, it is also where the bulk of the parameters are found.
+    The large number of possible pairs of words in the vocabulary make the training data necessarily sparse.
+    In order to avoid assigning zero probability to unseen events, it is necessary to smooth the training data.
+    The Collins model uses linear interpolation to estimate probabilities from empirical distributions of varying specificities: where P&#65533; represents the empirical distribution derived directly from the counts in the training data.
+    The interpolation weights A1, A2 are chosen as a function of the number of examples seen for the conditioning events and the number of unique values seen for the predicted variable.
+    Only the first distribution in this interpolation scheme involves pairs of words, and the third component is simply the probability of a word given i

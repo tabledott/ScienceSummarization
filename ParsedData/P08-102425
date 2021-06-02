@@ -1,0 +1,9 @@
+imising discriminative model more often produces quite fluent translations, yet not in ways that would lead to an increase in BLEU score.9 This could be considered a side-effect of optimising likelihood rather than BLEU.
+    Scaling In Figure 6 we plot the scaling characteristics of our models.
+    The systems shown in the graph use the full grammar extracted on the 170k sentence corpus.
+    The number of sentences upon which the iterative training algorithm is used to estimate the parameters is varied from 10k to the maximum 130K for which our model can reproduce the reference translation.
+    As expected, the more data used to train the system, the better the performance.
+    However, as the performance is still increasing significantly when all the parseable sentences are used, it is clear that the system&#8217;s performance is suffering from the large number (40k) of sentences that are discarded before training.
+  
+  
+    We have shown that explicitly accounting for competing derivations yields translatio

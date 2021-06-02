@@ -1,0 +1,9 @@
+raining data and uses some heuristics to align SL phrases with TL ones.
+    From such alignment it can extract rewriting patterns, of which the units are words and POSs.
+    The learned rewriting rules are then applied to rewrite SL sentences before monotonous translation.
+    Despite the encouraging results reported in these papers, the two attempts share the same shortcoming that their reordering is deterministic.
+    As pointed out in (Al-Onaizan and Papineni, 2006), these strategies make hard decisions in reordering which cannot be undone during decoding.
+    That is, the choice of reordering is independent from other translation factors, and once a reordering mistake is made, it cannot be corrected by the subsequent decoding.
+    To overcome this weakness, we suggest a method to &#8216;soften&#8217; the hard decisions in preprocessing.
+    The essence is that our preprocessing module generates n-best S's rather than merely one S'.
+    A variety of reordered SL sentences are fed to the decoder so that the

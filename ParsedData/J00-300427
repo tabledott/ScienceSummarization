@@ -1,0 +1,9 @@
+be created.
+    During creation, probability values can be assigned to the nodes, and back pointers inserted to record the best path to each node.
+    The illustration in Figure 6 is for an order 1 model, but exactly the same procedure applies for higher-order PPM models.
+    Our implementation uses a slight variant of the above procedure for finding the optimal place to insert spaces.
+    At each stage, we consider the possibility of adding either the next character, or the next character followed by a space.
+    This generates the structure shown in Figure 7.
+    Starting with the null string, both t and t&#8226; are generated as successor states.
+    From each of these states, either o or o. can be added, and these yield the next states shown.
+    The procedure continues, growing the trellis structure using an incremental strategy similar to that illustrated in Figure 6, but modified to take into account the new growth strategy of adding either the next character or the next character followed by a space.

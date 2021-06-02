@@ -1,0 +1,8 @@
+ of the generated paraphrases.
+    We also investigated the pros and cons of collecting paraphrases using video annotation rather than directly eliciting them.
+    We built 4 paraphrase systems by training English to English translation models using Moses (Koehn et al., 2007) with the default settings.
+    Using our paraphrase corpus to train and to test, we divided the sentence clusters associated with each video into 90% for training and 10% for testing.
+    We restricted our attention to sentences produced from the Tier-2 tasks in order to avoid excessive noise in the datasets, resulting in 28,785 training sentences and 3,367 test sentences.
+    To construct the training examples, we randomly paired each sentence with 1, 5, 10, or all parallel descriptions of the same video segment.
+    This corresponds to 28K, 143K, 287K, and 449K training pairs respectively.
+    For the test set, we used each sentence once as the source sentence with all parallel descriptions as references (there were 16 references on av

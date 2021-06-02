@@ -1,0 +1,10 @@
+ over the non-UN bitext on C-E.
+			Finally we use Minimum Error Training(MET) (Och, 2003) to train log-linear scaling fac tors that are applied to the WFSTs in Equation 1.
+			04news (04n) is used as the MET training set.
+			Table 8 reports the performance of the system.Row 1 gives the performance without phrase re ordering and Row 2 shows the effect of the MJ-1 VT model.
+			The MJ-1 VT model is used in an initial decoding pass with the four-gram LM to generate translation lattices.
+			These lattices are then rescored under parameters obtained using MET (MET-basic), and 1000-best lists are generated.
+			The 1000-best lists are augmented with IBM Model-1 (Brown et al., 1993) scores and then rescored with a second setof MET parameters.
+			Rows 3 and 4 show the perfor mance of the MET-basic and MET-IBM1 models.
+			We observe that the maximum likelihood phrasereordering model (MJ-1 VT) yields significantly improved translation performance relative to the mono tone phrase order translation baseline.
+			This confirm

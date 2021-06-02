@@ -1,0 +1,5 @@
+tree that is constructed by the greedy RAE: Let &#952; = (W (1), b(1), W(2), b(1), Wlabel, L) be the set of our model parameters, then the gradient becomes: To compute this gradient, we first greedily construct all trees and then derivatives for these trees are computed efficiently via backpropagation through structure (Goller and K&#168;uchler, 1996).
+    Because the algorithm is greedy and the derivatives of the supervised cross-entropy error also modify the matrix W(1), this objective is not necessarily continuous and a step in the gradient descent direction may not necessarily decrease the objective.
+    However, we found that L-BFGS run over the complete training data (batch mode) to minimize the objective works well in practice, and that convergence is smooth, with the algorithm typically finding a good solution quickly.
+    The error at each nonterminal node is the weighted sum of reconstruction and cross-entropy errors, The hyperparameter &#945; weighs reconstruction and cross-entropy error.
+    When 

@@ -1,0 +1,8 @@
+nses of a verb (although the techniques do allow such a distinction) and that each use of a noun is assumed to correspond to exactly one concept.4
+  
+  
+    This section explains how a set of concepts, or class, from WordNet can be used to estimate the probability of an individual concept.
+    More specifically, we explain how a set of concepts c', where c' is some hypernym of concept c, can be used to estimate p(c  |v, r).
+    (Recall that c' denotes the set of concepts dominated by c', including c' itself.)
+    One possible approach would be simply to substitute c' for the individual concept c. This is a poor solution, however, since p(c'  |v, r) is the conditional probability that some noun denoting a concept in c' appears in position r of verb v. For example, p((animal)  |run,subj) is the probability that some noun denoting a kind of animal appears in the subject position of the verb run.
+    Probabilities of sets of concepts are obtained by summing over the concepts in the set: This means that p((animal)

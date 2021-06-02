@@ -1,0 +1,10 @@
+over all the morph tokens that comprise the source text.
+    The cost of the codebook is simply the length in bits needed to represent each morph separately as a string of characters, summed over the morphs in the codebook.
+    The length in characters of the morph mj is denoted by l(mj) and k is the number of bits needed to code a character (we have used a value of 5 since that is sufficient for coding 32 lower-case letters).
+    For p(mi) we use the ML estimate, i.e., the token count of mi divided by the total count of morph tokens.
+    The online search algorithm works by incrementally suggesting changes that could improve the cost function.
+    Each time a new word token is read from the input, different ways of segmenting it into morphs are evaluated, and the one with minimum cost is selected.
+    Recursive segmentation.
+    The search for the optimal morph segmentation proceeds recursively.
+    First, the word as a whole is considered to be a morph and added to the codebook.
+    Next, every possible spl

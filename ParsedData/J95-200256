@@ -1,0 +1,6 @@
+n finite-state parsing (especially speech decoding) one often makes use of the forward probabilities for pruning partial parses before having seen the entire input.
+    Pruning is formally straightforward in Earley parsers: in each state set, rank states according to their a values, then remove those states with small probabilities compared to the current best candidate, or simply those whose rank exceeds a given limit.
+    Notice this will not only omit certain parses, but will also underestimate the forward and inner probabilities of the derivations that remain.
+    Pruning procedures have to be evaluated empirically since they invariably sacrifice completeness and, in the case of the Viterbi algorithm, optimality of the result.
+    While Earley-based on-line pruning awaits further study, there is reason to believe the Earley framework has inherent advantages over strategies based only on bottom-up information (including so-called &amp;quot;over-the-top&amp;quot; parsers).
+    Context-free forward probabili

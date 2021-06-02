@@ -1,0 +1,7 @@
+on as the expected counts ignoring nodes deeper than depth k (i.e. the roots are all the root symbol, so c0(root) = 1).
+    In our experiments this method converged within around 25 iterations; this is unsurprising, since the treebank contains few nodes deeper than 25 and our base grammar G seems to have captured this property.
+    Once we have the expected counts of symbols in G, the expected counts of their projections mated directly using similar recurrences, or given by one-step equations: This process very rapidly computes the estimates for a projection of a grammar (i.e. in a few seconds for our largest grammars), and is done once during initialization of the parser.
+    Recall that our final state-split grammars G come, by their construction process, with an ontogeny of grammars Gi where each grammar is a (partial) splitting of the preceding one.
+    This gives us a natural chain of projections &#960;i&#8594;j which projects backwards along this ontogeny of grammars (see Fig.
+    1).
+    Of course, tra

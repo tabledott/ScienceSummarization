@@ -1,0 +1,7 @@
+rking is simple: When a node (e.g., size in Figure 5) is marked (e.g., with relation C), we simply put the relation r, current denotation d and child c&#8217;s denotation into the store of column 1: The execute operation Xi(d) processes columns i in reverse order.
+    It suffices to define Xi(d) for a single column i.
+    There are three cases: Extraction (d.ri = E) In the basic version, the denotation of a tree was always the set of consistent values of the root node.
+    Extraction allows us to return the set of consistent values of a marked non-root node.
+    Formally, extraction simply moves the i-th column to the front: Xi(d) = d[i, &#8722;(i, &#248;)]{&#945;1 = &#248;}.
+    For example, in Figure 4(a), before execution, the denotation of the DCS tree is hh{[(CA, OR), (OR)],... }; &#248;; (E, Qhstatei&#65533;w, &#248;)ii; after applying X1, we have hh{[(OR)], ... }; &#248;ii.
+    Generalized Quantification (d.ri = Q) Generalized quantifiers are predicates on two sets, a restrictor A and a nuclear scope B

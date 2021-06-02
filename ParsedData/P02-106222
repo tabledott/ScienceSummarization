@@ -1,0 +1,9 @@
+e maximum-entropy model would be to introduce new features which indicated whether the tagging decision in the history creates a particular global feature.
+    For example, we could introduce a feature if t = N and this decision creates an LWLC=1 feature otherwise As an example, this would take the value if its was tagged as N in the following context,
+  
+  
+    because tagging its as N in this context would create an entity whose last word was not capitalized, i.e., University for.
+    Similar features could be created for all of the global features introduced in this paper.
+    This example also illustrates why this approach is unlikely to improve the performance of the maximum-entropy tagger.
+    The parameter associated with this new feature can only affect the score for a proposed sequence by modifying at the point at which .
+    In the example, this means that the LWLC=1 feature can only lower the score for the segmentation by lowering the probability of tagging its as N. But its has almost probably of 

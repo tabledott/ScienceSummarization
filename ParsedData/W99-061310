@@ -1,0 +1,8 @@
+unsupervised case we first describe the supervised version of the algorithm: Input to the learning algorithm: n labeled examples of the form (xi, y&#8222;). y, is the label of the ith example (given that there are k possible labels, y, is a member of y = {1 ... 0). xi is a set of mi features {x,1, Xi2 .
+    .
+    .
+    Xim, } associated with the ith example.
+    Each xii is a member of X, where X is a set of possible features.
+    Output of the learning algorithm: a function h:Xxy [0, 1] where h(x, y) is an estimate of the conditional probability p(y1x) of seeing label y given that feature x is present.
+    Alternatively, h can be thought of as defining a decision list of rules x y ranked by their &amp;quot;strength&amp;quot; h(x, y).
+    The label for a test example with features x is then defined as In this paper we define h(x, y) as the following function of counts seen in training data: Count(x,y) is the number of times feature x is seen with label y in training data, Count(x) = EyEy Count(x, y). a is a s

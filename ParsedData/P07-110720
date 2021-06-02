@@ -1,0 +1,9 @@
+ least-square procedure.
+    The values for these coefficients were not changed for the experiments on the test sets.
+    Our main evaluation is on the standard MUC-6 formal test set.10 The standard experimental setup for this data is a 30/30 document train/test split.
+    Training our system on all 60 documents of the training and test set (as this is in an unsupervised system, the unlabeled test documents are present at training time), but evaluating only on the test documents, gave 63.9 F1 and is labeled MUC-6 in table 2(a).
+    One advantage of an unsupervised approach is that we can easily utilize more data when learning a model.
+    We demonstrate the effectiveness of this fact by evaluating on the MUC-6 test documents with increasing amounts of unannotated training data.
+    We first added the 191 documents from the MUC-6 dryrun training set (which were not part of the training data for official MUC-6 evaluation).
+    This model gave 68.0 F1 and is labeled +DRYRUN-TRAIN in table 2(a).
+    We then added

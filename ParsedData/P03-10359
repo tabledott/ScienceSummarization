@@ -1,0 +1,8 @@
+ to Eq.
+    2 would give the context model too little weight.
+    Second, as seen in Figure 2, the class models of different word classes are constructed in different ways (e.g. name entity models are n-gram models trained on corpora, and factoid models are compiled using linguistic knowledge).
+    Therefore, the quantities of class model probabilities are likely to have vastly different dynamic ranges among different word classes.
+    One way to balance these probability quantities is to add several class model weight CW, each for one word class, to adjust the class model probability P(S|C) to P(S|C)CW.
+    In our experiments, these class model weights are determined empirically to optimize the word segmentation performance on a development set.
+    Given the source-channel models, the procedure of word segmentation in our system involves two steps: First, given an input string S, all word candidates are generated (and stored in a lattice).
+    Each candidate is tagged with its word class and the class 2 In 

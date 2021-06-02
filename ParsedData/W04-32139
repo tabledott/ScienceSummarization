@@ -1,0 +1,11 @@
+ value on the matching score.
+  
+  
+    Once slots are initialized as above, our algorithm uses an iteratively updated probability model for role labelling.
+    The probability model predicts the role for a slot given certain conditioning information.
+    We use a backoff approach with three levels of specificity of probabilities.
+    If a candidate role fails to meet the threshold of evidence (counts towards that probability) for a given level, we backoff to the next level.
+    For any given slot, we use the most specific level that reaches the evidence threshold for any of the candidates.
+    We only use information at a single level to compare candidates for a single slot.
+    We assume the probability of a role for a slot is independent of other slots; we do not ensure a consistent role assignment across an instance of a verb.
+    Our most specific probability uses the exact combination of verb, slot, and noun filling that slot, yielding .2 2We use only the head noun of potential arguments, not the full N

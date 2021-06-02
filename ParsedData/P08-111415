@@ -1,0 +1,8 @@
+t, pruning 4gram and 5-gram singletons.
+    For minimum error rate training and development we used the NIST MTeval MT03 set.
+    Table 2 presents our results.
+    We first evaluated translation performance using the NIST MT06 (nisttext) set.
+    Like Chiang (2005), we find that the original, undifferentiated constituency feature (Chiang05) introduces a negligible, statistically insignificant improvement over the baseline.
+    However, we find that several of the finer-grained constraints (IP=, VP=, VP+, QP+, and NP=) achieve statistically significant improvements over baseline (up to .74 BLEU), and the latter three also improve significantly on the undifferentiated constituency feature.
+    By combining multiple finer-grained syntactic features, we obtain significant improvements of up to 1.65 BLEU points (NP_, VP2, IP2, all-labels_, and XP+).
+    We also obtained further gains using combinations of features that had performed well; e.g., condition IP2.VP2.NP_ augments the baseline features with IP2 and VP2 

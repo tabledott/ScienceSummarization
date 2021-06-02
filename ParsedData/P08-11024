@@ -1,0 +1,7 @@
+) denotes character sequence ranges from Cl to Cr.
+    We can see that segmentation and POS tagging task is to divide a character sequence into several subsequences and label each of them a POS tag.
+    It is a better idea to perform segmentation and POS tagging jointly in a uniform framework.
+    According to Ng and Low (2004), the segmentation task can be transformed to a tagging problem by assigning each character a boundary tag of the following four types: We can extract segmentation result by splitting the labelled result into subsequences of pattern s or bm*e which denote single-character word and multicharacter word respectively.
+    In order to perform POS tagging at the same time, we expand boundary tags to include POS information by attaching a POS to the tail of a boundary tag as a postfix following Ng and Low (2004).
+    As each tag is now composed of a boundary part and a POS part, the joint S&amp;T problem is transformed to a uniform boundary-POS labelling problem.
+    A subsequence of boundary-

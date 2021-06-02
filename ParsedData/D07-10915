@@ -1,0 +1,9 @@
+rphology part-of-speech word word morphologyFigure 2: Example factored model: morphologi cal analysis and generation, decomposed into three mapping steps (translation of lemmas, translation ofpart-of-speech and morphological information, gen eration of surface forms).
+	
+	
+			One example to illustrate the short-comings of thetraditional surface word approach in statistical machine translation is the poor handling of morphology.
+			Each word form is treated as a token in it self.
+			This means that the translation model treats, say, the word house completely independent of the word houses.
+			Any instance of house in the training data does not add any knowledge to the translation of houses.
+			In the extreme case, while the translation of house may be known to the model, the word housesmay be unknown and the system will not be able to translate it.
+			While this problem does not show up as stronglyin English ? due to the very limited morphological inflection in English ? it does constitute a sig nificant proble

@@ -1,0 +1,8 @@
+ned on one million words, only the first 82 transformations are needed.
+    To see whether lexicalized transformations were contributing to the transformationbased tagger accuracy rate, we first trained the tagger using the nonlexical transformation template subset, then ran exactly the same test.
+    Accuracy of that tagger was 97.0%.
+    Adding lexicalized transformations resulted in a 6.7% decrease in the error rate (see table 1).16 We found it a bit surprising that the addition of lexicalized transformations did not result in a much greater improvement in performance.
+    When transformations are allowed to make reference to words and word pairs, some relevant information is probably missed due to sparse data.
+    We are currently exploring the possibility of incorporating word classes into the rule-based learner, in hopes of overcoming this problem.
+    The idea is quite simple.
+    Given any source of word class information, such as WordNet (Miller 1990), the learner is extended such that a rule is allo

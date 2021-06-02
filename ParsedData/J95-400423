@@ -1,0 +1,6 @@
+d on Markov models, the lexicon consists of probabilities of the somewhat counterintuitive but proper form P(WORD I TAG).
+    In the transformationbased tagger, the lexicon is simply a list of all tags seen for a word in the training corpus, with one tag labeled as the most likely.
+    Below we show a lexical entry for the word half in the transformation-based tagger.1&#176; half: CD DT JJ NN PDT RB VB This entry lists the seven tags seen for half in the training corpus, with NN marked as the most likely.
+    Below are the lexical entries for half in a Markov model tagger, extracted from the same corpus: It is difficult to make much sense of these entries in isolation; they have to be viewed in the context of the many contextual probabilities.
+    First, we will describe a nonlexicalized version of the tagger, where transformation templates do not make reference to specific words.
+    In the nonlexicalized tagger, the transformation templates we use are: Change tag a to tag b when: where a, b, z and w are var

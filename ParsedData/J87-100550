@@ -1,0 +1,11 @@
+apply-terms. pull-opaque-args(a): If a is not a wff, then the proof is trivial.
+    Otherwise, there are two cases, depending on whether the predicate in a, p, is or is not a quantifier.
+    If p is not a quantifier, then the result follows immediately from the induction hypothesis for pull and pullopaque-args.
+    If p is a quantifier, then let a = p(x,r,$).
+    The output 13 then is wff(p, pull-opaque-args(x), pullopaque-args(r), pull-opaque-args(s)).
+    The first call to pull-opaque-args merely returns x.
+    Now by an argument similar to that given in the subproof for apply, the unbound variables in a can be exhaustively divided into u, and u, depending on whether they occur in r and s. Depending on whether x occurs in r, U(r) = fx1 U u, or U(r) = ur.
+    Similarly, U(s) = {x} U u, or U(s) = u,.
+    Suppose the second and third calls to pull-opaque-args return r' and s' respectively.
+    By the induction hypotheses U(I) = U(r) and U(s') = U(s).
+    If the quantification of x in a is not vacuous, then x o

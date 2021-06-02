@@ -1,0 +1,9 @@
+istic synchronous context-free grammar (SCFG).
+    Currently, it only handles SCFGs of the kind extracted by Heiro (Chiang, 2007), but is easily extensible to more general SCFGs (e.g., (Galley et al., 2006)) and closely related formalisms like synchronous tree substitution grammars (Eisner, 2003).
+    Chart parsing: Given a source sentence to decode, the decoder generates a one-best or k-best translations using a CKY algorithm.
+    Specifically, the decoding algorithm maintains a chart, which contains an array of cells.
+    Each cell in turn maintains a list of proven items.
+    The parsing process starts with the axioms, and proceeds by applying the inference rules repeatedly to prove new items until proving a goal item.
+    Whenever the parser proves a new item, it adds the item to the appropriate chart cell.
+    The item also maintains backpointers to antecedent items, which are used for k-best extraction.
+    Pruning: Severe pruning is needed in order to make the decoding computationally feasible for SCFG

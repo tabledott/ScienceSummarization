@@ -1,0 +1,5 @@
+ path containing the n-gram, and intersect that automaton with the lattice to find the set of paths containing the n-gram (&#163;w in Equation 7).
+    Suppose &#163; represent the weighted lattice, we compute3: &#163;w = &#163; n (w w E*), where w = (E* w E*) is the language that contains all strings that do not contain the n-gram w. The posterior probability p(wj&#163;) of n-gram w can be computed as a ratio of the total weights of paths in &#163;w to the total weights of paths in the original lattice (Equation 7).
+    For each n-gram w E N, we then construct an automaton that accepts an input E with weight equal to the product of the number of times the ngram occurs in the input (#w(E)), the n-gram factor &#952;w from Equation 6, and the posterior probability p(wj&#163;).
+    The automaton corresponds to the weighted regular expression (Karttunen et al., 1996): w(w/(&#952;wp(wj&#163;)) w)*.
+    We successively intersect each of these automata with an automaton that begins as an unweighted copy of the lattic

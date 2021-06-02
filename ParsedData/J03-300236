@@ -1,0 +1,6 @@
+ translational similarity is generic to different sources of lexical translation information.
+    An important feature is that it can be used with any symmetric translation model in which events can be divided into those that both sides of a bitext have in common and those that affect only one side.
+    The measure is simplified by assuming that all links in a given translation lexicon are equiprobable.
+    The assumption reduces the formula for tsim to number of two-word links in best matching (4) number of links in best matching The key reason to compute tsim under the equiprobability assumption is that we need not compute the MWBM, but may find just the maximum cardinality bipartite matching (MCBM), since all potential links have the same weight.
+    An O(e.V/v) (or &#65533; O(|X |- |Y |- |X |+ |Y|) for this purpose) algorithm exists for MCBM (Ahuja, Magnati, and Orlin 1993).
+    For example, if the matching shown in Figure 4 is the MCBM (for some translation lexicon), then tsim(X, Y) = 47 under the simpli

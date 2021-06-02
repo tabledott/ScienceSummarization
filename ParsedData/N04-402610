@@ -1,0 +1,10 @@
+ we use testing data provided by LDC, which consists of sentences with Arabic words with reference translations.
+    As a blind test set, we use MT 03 Arabic-English DARPA evaluation test set consisting of sentences with Arabic words.
+    Three systems are evaluated in our experiments: is the baseline block unigram model without re-ordering.
+    Here, monotone block alignments are generated: the blocks have only left predecessors (no blocks are swapped).
+    This is the model presented in (Tillmann and Xia, 2003).
+    For the model, the sentence is translated mostly monotonously, and only neighbor blocks are allowed to be swapped (at most block is skipped).
+    The model allows for the same block swapping as the model, but additionally uses the orientation component described in Section 2: the block swapping is controlled where .
+    The are not optimized separately, rather we define: by the unigram orientation counts.
+    The and models use the block bigram model in Eq.
+    3: all blocks are generated with n

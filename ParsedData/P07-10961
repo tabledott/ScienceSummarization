@@ -1,0 +1,11 @@
+ input of the later tasks.
+    HMM and MaxEnt Markov Model are examples of this method.
+    Lafferty et al. (2001) showed that this approach suffered from the so called label bias problem (Bottou, 1991).
+    They proposed Conditional Random Fields (CRF) as a general solution for sequence classification.
+    CRF models a sequence as an undirected graph, which means that all the individual tasks are solved simultaneously.
+    Taskar et al. (2003) improved the CRF method by employing the large margin method to separate the gold standard sequence labeling from incorrect labellings.
+    However, the complexity of quadratic programming for the large margin approach prevented it from being used in large scale NLP tasks.
+    Collins (2002) proposed a Perceptron like learning algorithm to solve sequence classification in the traditional left-to-right order.
+    This solution does not suffer from the label bias problem.
+    Compared to the undirected methods, the Perceptron like algorithm is faster in training.
+    In 

@@ -1,0 +1,8 @@
+iables over the set of parts of speech.
+    To learn a transformation, the learner, in essence, tries out every possible transformation,&amp;quot; and counts the number of tagging errors after each one is applied.
+    After all possible transformations have been tried, the transformation that resulted in the greatest error reduction is chosen.
+    Learning stops when no transformations can be found whose application reduces errors beyond some prespecified threshold.
+    In the experiments described below, processing was done left to right.
+    For each transformation application, all triggering environments are first found in the corpus, and then the transformation triggered by each triggering environment is carried out.
+    The search is data-driven, so only a very small percentage of possible transformations really need be examined.
+    In figure 3, we give pseudocode for the learning algorithm in the case where there is only one transformation template: In each learning iteration, the entire training corpu

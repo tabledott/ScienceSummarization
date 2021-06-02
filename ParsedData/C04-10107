@@ -1,0 +1,19 @@
+s the token on top of the stack, n is the next input token, w is any word, and r, r?
+			R): 1.
+			Left-Arc: In a configuration ?t|S,n|I,A?, if.
+			there is no arc (w, r, t) ? A, extend A with(n, r?, t) and pop the stack, giving the configu ration ?S,n|I,A?{(n, r?, t)}?.
+			2.
+			Right-Arc: In a configuration ?t|S,n|I,A?, if.
+			there is no arc (w, r, n) ? A, extend A with (t, r?, n) and push n onto the stack, giving the configuration ?n|t|S,I,A?{(t, r?, n)}?.
+	
+	
+			is an arc (w, r, t)?A, pop the stack, giving the configuration ?S,I,A?.
+	
+	
+			n onto the stack, giving the configuration ?n|S,I,A?.
+			2We use nil to denote the empty list and a|A to denote a list with head a and tail A. TH.POS   ? T.DEP . . .
+			TL.POS   ? TL.DEP . . .
+			T.POS T.LEX   ? TR.DEP . . .
+			TR.POS . . .
+			NL.POS   ? NL.DEP . . .
+			N.POS N.LEX L1.POS L2.POS L3.POS T = Top of the stack N = Next input token TL = Leftmost dependent of T TR = Rightmost dependent of T NL = Leftmost dependent of N Li = Next plus i input token X.LEX = Wor

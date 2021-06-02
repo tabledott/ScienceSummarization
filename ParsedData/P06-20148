@@ -1,0 +1,10 @@
+tree must exist for which the alignment maintains phrasal cohesion.
+    Figure 2 shows a word alignment and the corresponding tree found by an ITG parser.
+    Wu (1997) provides anecdotal evidence that only incorrect alignments are eliminated by ITG constraints.
+    In our French-English data set, an ITG rules out only 0.3% of necessary links beyond those already eliminated by the one-to-one constraint (Cherry and Lin, 2006).
+    An ITG will search all alignments that conform to a possible binary constituency tree.
+    We wish to confine that search to a specific n-array dependency tree.
+    Fortunately, Wu (1997) provides a method to have an ITG respect a known partial structure.
+    One can seed the ITG parse chart so that spans that do not agree with the provided structure are assigned a value of &#8212;oc before parsing begins.
+    The result is that no constituent is ever constructed with any of these invalid spans.
+    In the case of phrasal cohesion, the invalid spans correspond to spans of the English

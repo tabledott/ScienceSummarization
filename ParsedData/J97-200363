@@ -1,0 +1,10 @@
+e interesting applications in speech recognition, some of which we briefly point out below.
+    String-to-weight transducers are found at several stages of speech recognition.
+    Phone lattices, language models, and word lattices are typically represented by such transducers.
+    Weights in these graphs correspond to negative logarithms of probabilities.
+    They are added along a path.
+    For a given string, there might be many different paths in a transducer.
+    Only the minimum of the total weights of these paths is considered relevant.
+    Thus, the main operations involved in the interpretation of these transducers are addition and min, namely those of the tropical semiring.
+    Thus, the algorithms we defined in the previous sections apply to speech recognition.
+    The domain of the speech recognition systems above signal processing can be represented by a composition of finite-state transducers outputting weights, or both strings and weights (Pereira and Riley 1996; Mohri, Pereira, and Riley 1996):

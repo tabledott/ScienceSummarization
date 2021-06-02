@@ -1,0 +1,6 @@
+additional advantages over previously presented isolated solutions.
+    Most probabilistic parsers are based on a generalization of bottom-up chart parsing, such as the CYK algorithm.
+    Partial parses are assembled just as in nonprobabilistic parsing (modulo possible pruning based on probabilities), while substring probabilities (also known as &amp;quot;inside&amp;quot; probabilities) can be computed in a straightforward way.
+    Thus, the CYK chart parser underlies the standard solutions to problems (1) and (4) (Baker 1979), as well as (2) (Jelinek 1985).
+    While the Jelinek and Lafferty (1991) solution to problem (3) is not a direct extension of CYK parsing, the authors nevertheless present their algorithm in terms of its similarities to the computation of inside probabilities.
+    In our algorithm, computations for tasks (1) and (3) proceed incrementally, as the parser scans its input from left to right; in particular, prefix probabilities are available as soon as the prefix has been seen, and are upda

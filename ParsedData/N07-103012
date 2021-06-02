@@ -1,0 +1,8 @@
+full coreference resolution system.
+    It is worth noting that previous work tends to be vague in both these respects: details on mention filtering or providing performance figures for markable identification are rarely given.
+    Following common practice, results are given in terms of recall and precision according to the standard model-theoretic metric (Vilain et al., 1995).
+    This method operates by comparing the equivalence classes defined by the resolutions produced by the system with the gold standard classes: these are the two &#8220;models&#8221;.
+    Roughly, the scores are obtained by determining the minimal perturbations brought to one model in order to map it onto the other model.
+    Recall is computed by trying to map the predicted chains onto the true chains, while precision is computed the other way around.
+    We test significant differences with paired t-tests (p &lt; .05).
+    The anaphoricity classifier has an average accuracy of 80.2% on the three ACE datasets (using a threshold of .5

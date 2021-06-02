@@ -1,0 +1,9 @@
+cause it takes the exact probability as heuristic, i.e. the probability of the partial hypothesis multiplied with the rest cost estimation yields the actual probability of the complete hypothesis.
+    Thus, the N best hypothesis are extracted from the graph without additional overhead of finding sentences with a lower probability.
+    Of course, the hypotheses must not be recombined during this search.
+    We have to keep every partial hypothesis in the priority queue in order to determine the N best sentences.
+    Otherwise, we might lose one of them by recombination.
+    The graph error rate is computed by determining that sentence in the word graph that has the minimum Levenstein distance to a given reference.
+    Thus, it is a lower bound for the word error rate and gives a measurement of what can be achieved by rescoring with more complex models.
+    The calculation of the graph error rate is performed by a dynamic programming based algorithm.
+    Its space complexity is the number of graph nodes times t

@@ -1,0 +1,12 @@
+rface forms can overfit the training data and lead to poor predictions on the test data.
+    To alleviate this problem, we use two generalized features of the surface forms.
+    The first is the beginning and end characters of the surface (A0&#8211;A7).
+    For example, (AB(w0)) denotes the beginning character of the current word w0, and (AB(w0), AE(w0)) denotes the beginning and end characters in the word.
+    The second is the types of beginning and end characters of the surface (T0&#8211;T7).
+    We define a set of general character types, as shown in Table 4.
+    Templates C0&#8211;C6 are basic character-level unigram features taken from (Nakagawa, 2004).
+    These templates operate over a window of f2 characters.
+    The features include characters (C0), pairs of characters (C1&#8211;C2), character types (C3), and pairs of character types (C4&#8211;C5).
+    In addition, we add pairs of characters and character types (C6).
+    Bigram features: Table 3 shows our bigram features.
+    Templates B0-B9 are bas

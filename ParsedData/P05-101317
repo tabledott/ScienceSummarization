@@ -1,0 +1,6 @@
+pecial arc labels) and to training directly on non-projective dependency graphs.
+    Evaluation metrics used are Attachment Score (AS), i.e. the proportion of tokens that are attached to the correct head, and Exact Match (EM), i.e. the proportion of sentences for which the dependency graph exactly matches the gold standard.
+    In the labeled version of these metrics (L) both heads and arc labels must be correct, while the unlabeled version (U) only considers heads.
+    The first thing to note is that projectivizing helps in itself, even if no encoding is used, as seen from the fact that the projective baseline outperforms the non-projective training condition by more than half a percentage point on attachment score, although the gain is much smaller with respect to exact match.
+    The second main result is that the pseudo-projective approach to parsing (using special arc labels to guide an inverse transformation) gives a further improvement of about one percentage point on attachment score.
+    With respect

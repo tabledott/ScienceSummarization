@@ -1,0 +1,7 @@
+  Specifically, under weak assumptions we can view the inference problem as the following optimization problem, which aims to minimize the objective function that is the sum of the following two cost functions.
+    Assignment cost: the cost of deviating from the assignment of the variables V given by the classifiers.
+    The specific cost function we use is defined as follows: Let l be the label assigned to variable u &#8712; V. If the marginal probability estimation is p = P(fu = l), then the assignment cost cu(l) is &#8722; log p. Constraint cost: the cost imposed by breaking constraints between neighboring nodes.
+    The specific cost function we use is defined as follows: Consider two entity nodes Ei, Ej and its corresponding relation node Rij; that is, Ei = N 1(Rij) and Ej = N2(Rij).
+    The constraint cost indicates whether the labels are consistent with the constraints.
+    In particular, we use: d1(fEi, fRij ) is 0 if (fRij, fEi) &#8712; C1; otherwise, d1(fEi, fRij) is &#8734; 2.
+    Similarly, we use

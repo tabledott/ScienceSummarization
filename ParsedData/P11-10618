@@ -1,0 +1,6 @@
+ent similarity functions to define the edge weights among the foreign vertices and between vertices from different languages.
+    Our monolingual similarity function (for connecting pairs of foreign trigram types) is the same as the one used by Subramanya et al. (2010).
+    We briefly review it here for completeness.
+    We define a symmetric similarity function K(uZ7 uj) over two foreign language vertices uZ7 uj E Vf based on the co-occurrence statistics of the nine feature concepts given in Table 1.
+    Each feature concept is akin to a random variable and its occurrence in the text corresponds to a particular instantiation of that random variable.
+    For each trigram type x2 x3 x4 in a sequence x1 x2 x3 x4 x5, we count how many times that trigram type co-occurs with the different instantiations of each concept, and compute the point-wise mutual information (PMI) between the two.5 The similarity between two trigram types is given by summing over the PMI values over feature instantiations that they have in 

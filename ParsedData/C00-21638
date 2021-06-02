@@ -1,0 +1,7 @@
+It models a jump distance j - j   (for con- secutive English words) while in the HMM a jump distance i - i   (for consecutive French words) is mod- eled.
+  Tile full description of Model 4 (Brown et al., 1993) is rather complica.ted as there have to be con- sidered tile cases that English words have fertility larger than one and that English words have fertil- ity zero.
+  For training of Model 3 and Model 4, we use an extension of the program GlZA (A1-Onaizan et al., 1999).
+  Since there is no efficient way in these mod- els to avoid tile explicit summation over all align- ments in the EM-algorithin, the counts are collected only over a subset of promising alignments.
+  It is not known an efficient algorithm to compute the Viterbi alignment for the Models 3 and 4.
+  Therefore, the Viterbi alignment is comlmted only approximately using the method described in (Brown et al., 1993).
+  The models 1-4 are trained in succession with the tinal parameter values of one model serving as the starting point tbr the next.

@@ -1,0 +1,7 @@
+   Using a set of non-negative parameters {c(i &#8722; i')}, we can write the alignment probabilities in the form This form ensures that the alignment probabilities satisfy the normalization constraint for each conditioning word position it, it = 1, ... , I.
+    This model is also referred to as a homogeneous HMM (Vogel, Ney, and Tillmann 1996).
+    A similar idea was suggested by Dagan, Church, and Gale (1993).
+    In the original formulation of the hidden Markov alignment model, there is no empty word that generates source words having no directly aligned target word.
+    We introduce the empty word by extending the HMM network by I empty words e2I I+1.
+    The target word ei has a corresponding empty word ei+I (i.e., the position of the empty word encodes the previously visited target word).
+    We enforce the following constraints on the transitions in the HMM network (i &#8804; I, it &#8804; I) involving the empty word e0:1 The parameter p0 is the probability of a transition to the empty word, which has 

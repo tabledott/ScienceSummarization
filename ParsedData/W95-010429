@@ -1,0 +1,9 @@
+list of all features, sorted by decreasing strength.
+    It classifies an ambiguous target word by matching each feature in the list in turn against the target context.
+    Instead of stopping at the first matching feature, however, it traverses the entire list, combining evidence from all matching features, and resolving conflicts where necessary.
+    This method is essentially the same as the one for collocations (see Figure 2), except that it uses context words as well as collocations for the features.
+    The only new wrinkle is in checking for conflicts between features (in step (2) at run time), as there are now two kinds of features to consider.
+    If both features are context words, we say the features never conflict (as in the method of context words).
+    If both features are collocations, we say they conflict if they overlap (as in the method of collocations).
+    The new case is if one feature is a context word, and the other is a collocation.
+    Consider, for example, the context word walk, and

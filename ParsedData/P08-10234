@@ -1,0 +1,6 @@
+this process works.
+    The Chinese sentence (a) is first parsed into tree (b), which will be converted into an English string in 5 steps.
+    First, at the root node, we apply rule r1 preserving top-level word-order between English and Chinese, (Liu et al., 2007) was a misnomer which actually refers to a set of several unrelated subtrees over disjoint spans, and should not be confused with the standard concept ofpackedforest. which results in two unfinished subtrees in (c).
+    Then rule r2 grabs the B`ushisubtree and transliterate it Similarly, rule r3 shown in Figure 1 is applied to the VP subtree, which swaps the two NPBs, yielding the situation in (d).
+    This rule is particularly interesting since it has multiple levels on the source side, which has more expressive power than synchronous context-free grammars where rules are flat.
+    More formally, a (tree-to-string) translation rule (Huang et al., 2006) is a tuple (t, s, 0), where t is the source-side tree, whose internal nodes are labeled by nonterm

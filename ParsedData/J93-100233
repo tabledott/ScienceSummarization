@@ -1,0 +1,6 @@
+  Our approach, described below, not only extracts unification information from complex categories, but is computationally tractable for realistic sized grammars and also safe from inconsistency.
+    We start with a unification grammar and automatically construct a CF 'backbone' of rules containing categories with atomic names and an associated 'residue' of feature name-value pairs.
+    Each backbone grammar rule is generally in direct one-to-one correspondence with a single unification grammar rule.
+    The LR parse table is then constructed from the CF backbone grammar.
+    The parser is driven by this table, but in addition when reducing a sequence of constituents the parser performs the unifications specified in the relevant unification grammar rule to form the category representing the higher-level constituent, and the derivation fails if one of the unifications fails.
+    Our parser is thus similar to Tomita's (1987), except that it performs unifications rather than invoking CF rule augmentations; howev

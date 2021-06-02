@@ -1,0 +1,10 @@
+ best compression.
+    This table can be filled in O(n2).
+    This algorithm is really an extension of Viterbi to the case when scores factor over dynamic substrings of the text (Sarawagi and Cohen, 2004; McDonald et al., 2005a).
+    As such, we can use back-pointers to reconstruct the highest scoring compression as well as k-best decoding algorithms.
+    This decoding algorithm is dynamic with respect to compression rate.
+    That is, the algorithm will return the highest scoring compression regardless of length.
+    This may seem problematic since longer compressions might contribute more to the score (since they contain more bigrams) and thus be preferred.
+    However, in Section 3.2 we define a rich feature set, including features on words dropped from the compression that will help disfavor compressions that drop very few words since this is rarely seen in the training data.
+    In fact, it turns out that our learned compressions have a compression rate very similar to the gold standard.
+    That said, t

@@ -1,0 +1,12 @@
+er of times).
+    Thus for every vector we have q different bit permutations for the original bit stream.
+    2The jumbling is performed by a mapping of the bit index as directed by the random permutation function.
+    For a given permutation, we reorder the bit indexes of all vectors in similar fashion.
+    This process could be considered as column reording of bit vectors.
+    B of its closest neighbors in the sorted list.
+    If the hamming distance is below a certain predetermined threshold, we output the pair of vectors with their cosine similarity (as calculated by equation 4).
+    Thus, B is the beam parameter of the search.
+    This step takes O(n), since we can assume B, q, d to be a constant.
+    Why does the fast hamming distance algorithm work?
+    The intuition is that the number of bit streams, d, for each vector is generally smaller than the number of vectors n (ie. d &lt;&lt; n).
+    Thus, sorting the vectors lexicographically after jumbling the bits will likely bring vectors with lower hammin

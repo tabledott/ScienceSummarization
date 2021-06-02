@@ -1,0 +1,7 @@
+and MT decoding is the lack of reliable heuristics in MT.
+    A heuristic is used in A* search to estimate the cost of completing a partial hypothesis.
+    A good heuristic makes it possible to accurately compare the value of different partial hypotheses, and thus to focus the search in the most promising direction.
+    The left-to-right restriction in SR makes it possible to use a simple yet reliable class of heuristics which estimate cost based on the amount of input left to decode.
+    Partly because of the absence of left-to-right correspondence, MT heuristics are significantly more difficult to develop (Wang and Waibel, 1997).
+    Without a heuristic, a classic stack decoder is ineffective because shorter hypotheses will almost always look more attractive than longer ones, since as we add words to a hypothesis, we end up multiplying more and more terms to find the probability.
+    Because of this, longer hypotheses will be pushed off the end of the stack by shorter ones even if they are in reality better

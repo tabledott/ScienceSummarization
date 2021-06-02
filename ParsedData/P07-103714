@@ -1,0 +1,6 @@
+urce sentence (a kind of Viterbi approach to avoid the complex optimization involving the sum over supertag sequences).
+    The distortion and word penalty models are the same as those used in the baseline PBSMT model.
+    Supertagged Language Model The &#8216;language model&#8217; PST (t, 5T) is a supertagger assigning probabilities to sequences of word&#8211;supertag pairs.
+    The language model is further smoothed by log-linear interpolation with the baseline language model over word sequences.
+    Supertags in Phrase Tables The supertagged phrase translation probability consists of a combination of supertagged components analogous to their counterparts in the baseline model (equation (3)), i.e. it consists of P(s  |t, 5T), its reverse and a word-level probability.
+    We smooth this probability by log-linear interpolation with the factored backoff version P(s  |t)P(s  |ST), where we import the baseline phrase table probability and exploit the probability of a source phrase given the target supertag seque

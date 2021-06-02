@@ -1,0 +1,9 @@
+ token it was originated from.
+    Our smoothing procedure takes into account all the aforementioned aspects and works as follows.
+    We first make use of our morphological analyzer to find all segmentation possibilities by chopping off all prefix sequence possibilities (including the empty prefix) and construct a lattice off of them.
+    The remaining arcs are marked OOV.
+    At this stage the lattice path corresponds to segments only, with no PoS assigned to them.
+    In turn we use two sorts of heuristics, orthogonal to one another, to prune segmentation possibilities based on lexical and grammatical constraints.
+    We simulate lexical constraints by using an external lexical resource against which we verify whether OOV segments are in fact valid Hebrew lexemes.
+    This heuristics is used to prune all segmentation possibilities involving &#8220;lexically improper&#8221; segments.
+    For the remaining arcs, if the segment is in fact a known lexeme it is tagged as usual, but for the OOV arcs which are va

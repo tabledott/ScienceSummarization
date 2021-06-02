@@ -1,0 +1,5 @@
+ transition t out of a configuration c can be used to capture not only formal constraints on transitions &#8211; such as the fact that it is impossible to perform a SHIFTp transition with an empty buffer or illegal to perform a LEFT-ARCd transition with the special root node on top of the stack &#8211; but also to filter out unlikely dependency labels or tags.
+    Thus, in the experiments later on, we will typically constrain the parser so that SHIFTp is permissible only if p is one of the k best part-of-speech tags with a score no more than &#945; below the score of the 1-best tag, as determined by a preprocessing tagger.
+    We also filter out instances of LEFT-ARCd and RIGHT-ARCd, where d does not occur in the training data for the predicted part-ofspeech tag combination of the head and dependent.
+    This procedure leads to a significant speed up.
+    In order to learn a weight vector w from a training set {(xj, yj)1 j=1 of sentences with their tagged dependency trees, we use a variant of the structured p

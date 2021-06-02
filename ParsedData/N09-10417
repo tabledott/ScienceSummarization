@@ -1,0 +1,6 @@
+    We address optimizing equation (2) as well as summary sentence ordering in section 4.
+    KLSUM yields 6.0 R-2 without stop words, beating SUMBASIC but not with statistical significance.
+    It is worth noting however that KLSUM&#8217;s performance matches SUMFOCUS (Vanderwende et al., 2007), the highest R-2 performing system at DUC 2006.
+    As mentioned in section 3.2, the raw unigram distribution PD(&#183;) may not best reflect the content of D for the purpose of summary extraction.
+    We propose TOPICSUM, which uses a simple LDA-like topic model (Blei et al., 2003) similar to Daum&#180;e III and Marcu (2006) to estimate a content distribu10In order to ensure finite values of KL-divergence we smoothe PS(&#183;) so that it has a small amount of mass on all document set words. tion for summary extraction.11 We extract summary sentences as before using the KLSUM criterion (see equation (2)), plugging in a learned content distribution in place of the raw unigram distribution.
+    First, we describe our to

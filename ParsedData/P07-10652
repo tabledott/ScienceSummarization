@@ -1,0 +1,5 @@
+er (Bloom (1970); BF), a simple space-efficient randomised data structure for representing sets, may be used to represent statistics from larger corpora and for higher-order n-grams to complement a conventional smoothed trigram model within an SMT decoder.
+    1 The space requirements of a Bloom filter are quite spectacular, falling significantly below informationtheoretic error-free lower bounds while query times are constant.
+    This efficiency, however, comes at the price of false positives: the filter may erroneously report that an item not in the set is a member.
+    False negatives, on the other hand, will never occur: the error is said to be one-sided.
+    In this paper, we show that a Bloom filter can be used effectively for language modelling within an SMT decoder and present the log-frequency Bloom filter, an extension of the standard Boolean BF that takes advantage of the Zipf-like distribution of corpus statistics to allow frequency information to be associated with n-grams in the filter in a spa

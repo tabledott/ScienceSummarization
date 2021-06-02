@@ -1,0 +1,12 @@
+pair.
+    For each pair, we compute the Euclidean distance between the original input and its reconstruction: This model of a standard autoencoder is boxed in Fig.
+    2.
+    Now that we have defined how an autoencoder can be used to compute an n-dimensional vector representation (p) of two n-dimensional children (c1, c2), we can describe how such a network can be used for the rest of the tree.
+    Essentially, the same steps repeat.
+    Now that y1 is given, we can use Eq.
+    2 to compute y2 by setting the children to be (c1, c2) = (x2, y1).
+    Again, after computing the intermediate parent vector y2, we can assess how well this vector capture the content of the children by computing the reconstruction error as in Eq.
+    4.
+    The process repeat until the full tree is constructed and we have a reconstruction error at each nonterminal node.
+    This model is similar to the RAAM model (Pollack, 1990) which also requires a fixed tree structure.
+    Now, assume there is no tree structure given for the input 

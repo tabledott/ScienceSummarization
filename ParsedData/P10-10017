@@ -1,0 +1,5 @@
+d indices (the boundaries of the span) and a third free index (the split point), the parsing algorithm requires O(n3) time and O(n2) space (Eisner, 1996; McAllester, 1999).
+    As remarked by Eisner (1996) and McDonald and Pereira (2006), it is possible to rearrange the dynamic-programming structures to conform to an improved factorization that decomposes each tree into sibling parts&#8212;pairs of dependencies with a shared head.
+    Specifically, a sibling part consists of a triple of indices (h, m, s) where (h, m) and (h, s) are dependencies, and where s and m are successive modifiers to the same side of h. In order to parse this factorization, the secondorder parser introduces a third type of dynamicprogramming structure: sibling spans, which represent the region between successive modifiers of some head.
+    Formally, we denote a sibling span as S,,,,, where s and m are a pair of modifiers involved in a sibling relationship.
+    Modified versions of sibling spans will play an important role in the new pa

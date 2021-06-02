@@ -1,0 +1,8 @@
+the output of the HMM tagger as the input to Brill's final state tagger, but it gave poorer results than either of the taggers and we decided not to consider this tagging option.
+    We evaluated the taggers with the guessing components on all fifteen subcorpora of the Brown Corpus, one after another.
+    The HMM tagger was trained on the Brown Corpus in such a way that the subcorpus used for the evaluation was not seen at the training phase.
+    All the hapax words and capitalized words with frequency less than 20 were not seen at the training of the cascading guesser.
+    These words were not used in the training of the tagger either.
+    This means that neither the HMM tagger nor the cascading guesser had been trained on the texts and words used for evaluation.
+    We do not know whether the same holds for the Brill tagger and the Brill and Xerox guessers since we took them pretrained.
+    For words that the guessing components failed to guess, we applied the standard method of classifying them as common n

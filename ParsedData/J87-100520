@@ -1,0 +1,10 @@
+rm, or a quantifier operator, respectively.
+    In the nondeterministic version of the algorithm, there are three special language constructs.
+    The unary predicate exists(expression) evaluates its argument nondeterministically to a value and returns true if and only if there exist one or more values for the expression.
+    The binary operator &amp;quot;ail b&amp;quot; nondeterministically returns one of its arguments (a or b).
+    The function term(form) nondeterministically returns a complex term in form.
+    Finally, the function applicable-term(form) nondeterministically returns a complex term in form that can be applied to form.
+    The nondeterministic version of the algorithm is as follows.
+    The function gen(form) nondeterministically returns a valid full scoping of the formula form. function gen (form); return pull(form,true).
+    The function pull(form,complete?) nondeterministically returns a valiciscoping of the formula form.
+    If complete? is true, then only full scopings are returned; othe

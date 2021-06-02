@@ -1,0 +1,8 @@
+ted as a product of attribute probabili ties.
+			In order to increase the speed, the tagger also applies a beam-search strategy which prunes allsearch paths whose probability is below the prob ability of the best path times a threshold.
+			With a threshold of 10 ?3or lower, the influence of prun ing on the tagging accuracy was negligible.
+			4.1 Supplementary Lexicon.
+			The tagger may use an external lexicon which sup plies entries for additional words which are not found in the training corpus, and additional tags for words which did occur in the training data.
+			If anexternal lexicon is provided, the lexical probabili ties are smoothed as follows: The tagger computes the average tag probabilities of all words with the same set of possible POS tags.
+			The Witten-Bellmethod is then applied to smooth the lexical prob abilities with the average probabilities.
+			If the word w was observed with N different tags, and f(w, t) is the joint frequency of w and POS tag t, and p(t|[w]) is the average probability of 

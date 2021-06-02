@@ -1,0 +1,5 @@
+ 1.
+    Linear weights are difficult to incorporate into the standard MERT procedure because they are &#8220;hidden&#8221; within a top-level probability that represents the linear combination.1 Following previous work (Foster and Kuhn, 2007), we circumvent this problem by choosing weights to optimize corpus loglikelihood, which is roughly speaking the training criterion used by the LM and TM themselves.
+    For the LM, adaptive weights are set as follows: where &#945; is a weight vector containing an element &#945;i for each domain (just IN and OUT in our case), pi are the corresponding domain-specific models, and &#732;p(w, h) is an empirical distribution from a targetlanguage training corpus&#8212;we used the IN dev set for this.
+    It is not immediately obvious how to formulate an equivalent to equation (1) for an adapted TM, because there is no well-defined objective for learning TMs from parallel corpora.
+    This has led previous workers to adopt ad hoc linear weighting schemes (Finch and Sumita, 2008

@@ -1,0 +1,6 @@
+le links.In light of our claims about the ease of optimiz ing the models, we should make some commentson the time need to train the parameters.
+			Our current implementation of the alignment search is writ ten in Perl, and is therefore quite slow.
+			Alignmentof our 500,000 sentence pair corpus with the LLR based mode took over a day on a 2.8 GHz PentiumIV workstation.
+			Nevertheless, the parameter opti mization was still quite fast, since it took only a few iterations over our 224 sentence pair developmentset.
+			With either the LLR-based or CLP-based models, one combined learning/evaluation pass of per ceptron training always took less than two minutes, and it never took more that six passes to reach thelocal optimum we took to indicate convergence.
+			To tal training time was greater since we used multiple runs of perceptron learning with different learningrates for the LLR-based model and different condi tional link probability discounts for CLP 1 , but total training time for each model was around an ho

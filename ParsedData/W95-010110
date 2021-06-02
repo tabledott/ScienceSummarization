@@ -1,0 +1,9 @@
+curacy that results from applying a transformation.
+    With unsupervised learning, the learner does not have a gold standard training corpus with which accuracy can be measured.
+    Instead, we can try to use information from the distribution of unambiguous words to find reliable disambiguating contexts.
+    In each learning iteration, the score of a transformation is computed based on the current tagging of the training set.
+    Recall that this is completely unsupervised.
+    Initially, each word in the training set is tagged with all tags allowed for that word, as indicated in the dictionary.
+    In later learning iterations, the training set is transformed as a result of applying previously learned transformations.
+    To score the transformation: Change the tag of a word from x to Y in context C, where Y E x, we do the following.
+    For each tag Z E X, where freq(Y) is the number of occurrences of words unambiguously tagged with tag Y in the corpus, freq(Z) is the number of occurrences of words unambig

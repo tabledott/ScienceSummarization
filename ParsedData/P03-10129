@@ -1,0 +1,8 @@
+c intuitions.
+    The reader will note that our alignment model as described above has very few factors to prevent undesirable alignments, such as having all French words align to the same English word.
+    To guide the model to correct alignments, we employ two constraints to limit our search for the most probable alignment.
+    The first constraint is the one-to-one constraint (Melamed, 2000): every word (except the null words eo and fo) participates in exactly one link.
+    The second constraint, known as the cohesion constraint (Fox, 2002), uses the dependency tree (Mel&#8217;&#711;cuk, 1987) of the English sentence to restrict possible link combinations.
+    Given the dependency tree TE, the alignment can induce a dependency tree for F (Hwa et al., 2002).
+    The cohesion constraint requires that this induced dependency tree does not have any crossing dependencies.
+    The details about how the cohesion constraint is implemented are outside the scope of this paper.3 Here we will use a simple example to i

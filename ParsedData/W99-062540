@@ -1,0 +1,9 @@
+mitive in the composite feature.
+    For each pair of text units, we compute a vector of primitive and composite feature values.
+    To determine whether the units match overall, we employ a machine learning algorithm, RIPPER [Cohen 1996], a widely used and effective rule induction system.
+    RIPPER is trained over a corpus of manually marked pairs of units; we discuss the specifics of our corpus and of the annotation process in the next session.
+    We experiment with varying RIPPER's loss ratio, which measures the cost of a false positive relative to that of a false negative (where we view &amp;quot;similar&amp;quot; as the positive class), and thus controls the relative weight of precision versus recall.
+    This is an important step in dealing with the sparse data problem; most text units are not similar, given our restrictive definition, and thus positive instances are rare.
+  
+  
+    For evaluation, we use a set of articles already classified into topical subsets which we obtained from the Reuters part

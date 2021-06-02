@@ -1,0 +1,9 @@
+licable moves leads to acceptance; in an universal state the ATM accepts if all the applicable moves lead to acceptance.
+    An ATM may be thought of as spawning independent processes for each applicable move.
+    A k-tape ATM, M, has a read-only input tape and k read-write work tapes.
+    A step of an ATM consists of reading a symbol from each tape and optionally moving each head to the left or right one tape cell.
+    A configuration of M consists of a state of the finite control, the nonblank contents of the input tape and k work tapes, and the position of each head.
+    The space of a configuration is the sum of the lengths of the nonblank tape contents of the k work tapes.
+    M works in space S(n) if for every string that M accepts no configuration exceeds space S(n).
+    It has been shown in (Chandra et al., 1981) that if M works in space log n then there is a deterministic TM which accepts the same language in polynomial time.
+    In the next section, we show how an ATM can accept the strings generate

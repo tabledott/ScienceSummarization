@@ -1,0 +1,12 @@
+ each word is similar to the lexicon which was used by Cutting et al.
+  it has three parts: a fullform lexicon, a suffix lexicon and a default enlry.
+  No documentation f tile construction algorithm of the su[lix lexicon in (Cutting et al., 1992) was available.
+  Thus, a new method based on information theoretic principles was developed.
+  During the lookup of a word in the lexicon of the Net-Tagger, the fifllform lexicon is searched first.
+  If the word is found there, the corresponding tag prob- ability vector is returned.
+  Otherwise, the uppercase letters of the word are turned to lowercase, and the search in the fullform lexicon is repeated.
+  If it fails again, the suIfix lexicon is searched next.
+  If none of the previous teps has been snccessfull, tile default en- try of the lexicon is returned.
+  The fullform lexicon was created from a tagged training corpus (some 2 million words of the Penn Treebank Corpus).
+  First, the number of occurrences of each word/tag pair was counted.
+  Afterwards, those ta

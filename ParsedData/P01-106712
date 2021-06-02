@@ -1,0 +1,10 @@
+ counting over a subset of possible alignments. modified in the following way.
+    First, to reduce the number of parameters in the model, each node was re-labelled with the POS of the node&#8217;s head word, and some POS labels were collapsed.
+    For example, labels for different verb endings (such as VBD for -ed and VBG for -ing) were changed to the same label VB.
+    There were then 30 different node labels, and 474 unique child label sequences.
+    Second, a subtree was flattened if the node&#8217;s head-word was the same as the parent&#8217;s headword.
+    For example, (NN1 (VB NN2)) was flattened to (NN1 VB NN2) if the VB was a head word for both NN1 and NN2.
+    This flattening was motivated by various word orders in different languages.
+    An English SVO structure is translated into SOV in Japanese, or into VSO in Arabic.
+    These differences are easily modeled by the flattened subtree (NN1 VB NN2), rather than (NN1 (VB NN2)).
+    We ran 20 iterations of the EM algorithm as described in Section 2.2

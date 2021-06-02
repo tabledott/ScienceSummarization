@@ -1,0 +1,9 @@
+and POS tagging model that uses exactly the same source of information as the baseline system, by applying the feature templates from the baseline word segmentor and POS tagger.
+    No extra knowledge is used by the joint model.
+    However, because word segmentation and POS tagging are performed simultaneously, POS information participates in word segmentation.
+    We formulate joint word segmentation and POS tagging as a single problem, which maps a raw Chinese sentence to a segmented and POS tagged output.
+    Given an input sentence x, the output F(x) satisfies: where GEN(x) represents the set of possible outputs for x.
+    Score(y) is computed by a feature-based linear model.
+    Denoting the global feature vector for the tagged sentence y with 4b(y), we have: where w&#65533; is the parameter vector in the model.
+    Each element in w&#65533; gives a weight to its corresponding element in 4b(y), which is the count of a particular feature over the whole sentence y.
+    We calculate the w&#65533; value by 

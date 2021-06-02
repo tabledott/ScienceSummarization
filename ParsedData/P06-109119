@@ -1,0 +1,12 @@
+rmat.
+    A block sequence generated at decoding step is used in all subsequent training steps , where .
+    The block sequence training data after the-th decoding step is given as , where the size of the relevant alternative set is .
+    Although in order to achieve fast convergence with a theoretical guarantee, we should use Eq.
+    6 to update the relevant set, in reality, this idea is difficult to implement because it requires a more costly decoding step.
+    Therefore in Table 2, we adopt an approximation, where the relevant set is updated by adding the decoder output at each stage.
+    In this way, we are able to treat the decoding scheme as a black box.
+    One way to approximate Eq.
+    6 is to generate multiple decoding outputs and pick the most relevant points based on Eq.
+    6.
+    Since the -best list generation is computationally costly, only a single block sequence is generated for each training sentence pair, reducing the memory requirements for the training algorithm as well.
+    Although we 

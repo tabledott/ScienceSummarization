@@ -1,0 +1,9 @@
+mination of its cluster membership.
+    In this case, under the assumption that the word is unambiguous, which is only valid for comparatively rare words, we can use Bayes's rule to calculate the posterior probability that it is in each class, using as a prior probability the distribution of rare words in each class.
+    This incorporates the fact that rare words are much more likely to be adjectives or nouns than, for example, pronouns.
+  
+  
+    I used 12 million words of the British National Corpus as training data, and ran this algorithm with various numbers of clusters (77, 100 and 150).
+    All of the results in this paper are produced with 77 clusters corresponding to the number of tags in the CLAWS tagset used to tag the BNC, plus a distinguished sentence boundary token.
+    In each case, the clusters induced contained accurate classes corresponding to the major syntactic categories, and various subgroups of them such as prepositional verbs, first names, last names and so on.
+    Appendix A shows the 

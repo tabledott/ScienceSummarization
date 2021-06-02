@@ -1,0 +1,6 @@
+ respect to the size of the vocabulary, which makes this model attractive for vocabularies of a very large size.
+    The triclass model by itself allows any word to have any tag.
+    However, if we have a dictionary that specifies the list of possible tags for each word, we can use this information to constrain the model: if t is not a valid tag for the word w, then we are sure that There are thus at most as many nonzero values for the k probabilities as there are possible pairs (word, tag) allowed in the dictionary.
+    If we have some tagged text available we can compute the number of times N(w,t) a given word w appears with the tag t, and the number of times N(ti, t2, t3) the sequence (t1, t2, t3) appears in this text.
+    We can then estimate the probabilities h and k by computing the relative frequencies of the corresponding events on this data: These estimates assign a probability of zero to any sequence of tags that did not occur in the training data.
+    But such sequences may occur if we consider oth

@@ -1,0 +1,8 @@
+  From each foreign document and set of associated English documents, we take all possible sentence pairs and pass them through a word-overlap filter.
+    The filter verifies that the ratio of the lengths of the two sentences is no greater than two.
+    It then checks that at least half the words in each sentence have a translation in the other sentence, according to the dictionary.
+    Pairs that do not fulfill these two conditions are discarded.
+    The others are passed on to the parallel sentence selection stage.
+    This step removes most of the noise (i.e., pairs of non-parallel sentences) introduced by our recall-oriented document selection procedure.
+    It also removes good pairs that fail to pass the filter because the dictionary does not contain the necessary entries; but those pairs could not have been handled reliably anyway, so the overall effect of the filter is to improve the precision and robustness of the system.
+    However, the filter also accepts many wrong pairs, because the word-overlap

@@ -1,0 +1,11 @@
+espond to a single phrasal node in the entire tree.
+    We then augment the labels of the phrasal node and its descendents with the type of named entity.
+    We also distinguish between the root node of an entity, and the descendent nodes.
+    See Figure 1 for an illustration.
+    This representation has several benefits, outlined below.
+    The OntoNotes data does not contain any nested entities.
+    Consider the named entity portions of the rules seen in the training data.
+    These will look, for instance, like none &#8594; none person, and organization &#8594; organization organization.
+    Because we only allow named entity derivations which we have seen in the data, nested entities are impossible.
+    However, there is clear benefit in a representation allowing nested entities.
+    For example, it would be beneficial to recognize that the United States Supreme Court is a an organization, but that it also contains a nested GPE.1 Fortunately, if we encounter data which has been annotated with nested entit

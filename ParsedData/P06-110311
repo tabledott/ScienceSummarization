@@ -1,0 +1,11 @@
+pus.
+    For Russian, two words were considered variants of the same NE if they share a prefix of size five or longer.
+    Each unique word had its own equivalence class for the English side of the corpus, although, in principal, ideas such as in (Li et al., 2004) could be incorporated.
+    A cumulative distribution was then collected for such equivalence classes.
+    Unlike most of the previous work considering generative transliteration models, we take the discriminative approach.
+    We train a linear model to decide whether a word is a transliteration of an NE .
+    The words in the pair are partitioned into a set of substrings and up to a particular length (including the empty string ).
+    Couplings of the substrings from both sets produce features we use for training.
+    Note that couplings with the empty string represent insertions/omissions.
+    Consider the following example: ( , ) = (powell, pauel).
+    We build a feature vector from this example in the following manner: First, we split both words

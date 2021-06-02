@@ -1,0 +1,10 @@
+e(s) with the most splits and use word frequencies as the ultimate tie-breaker.
+    While this method works well for the examples Aktionsplan and Freitag, it failed in our experiments for words such as Grundrechte (English: basic rights).
+    This word should be broken into the two parts Grund and Rechte.
+    However, Grund translates usually as reason or foundation.
+    But here we are looking for a translation into the adjective basic or fundamental.
+    Such a translation only occurs when Grund is used as the first part of a compound.
+    To account for this, we build a second translation lexicon as follows: First, we break up German words in the parallel corpus with the frequency method.
+    Then, we train a translation lexicon using Giza from the parallel corpus with split German and unchanged English.
+    Since in this corpus Grund is often broken off from a compound, we learn the translation table entry GrundE4basic.
+    By joining the two translation lexicons, we can apply the same method, but this ti

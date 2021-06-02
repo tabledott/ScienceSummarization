@@ -1,0 +1,8 @@
+ directly.
+    The most obvious way of making explicit use of the gradient is by Cauchy&#8217;s method, or the method of steepest ascent.
+    The gradient of a function is a vector which points in the direction in which the function&#8217;s value increases most rapidly.
+    Since our goal is to maximize the log-likelihood function, a natural strategy is to shift our current estimate of the parameters in the direction of the gradient via the update rule: where the step size &#945;(k) is chosen to maximize L(&#952;(k) +&#948;(k)).
+    Finding the optimal step size is itself an optimization problem, though only in one dimension and, in practice, only an approximate solution is required to guarantee global convergence.
+    Since the log-likelihood function is concave, the method of steepest ascent is guaranteed to find the global maximum.
+    However, while the steps taken on each iteration are in a very narrow sense locally optimal, the global convergence rate of steepest ascent is very poor.
+    Each new search

@@ -1,0 +1,7 @@
+#183;, where h&#952; is a conditional It is also possible to use this EM approach for discriminative training, where we wish to maximize Hi P(yi  |xi) and f&#952;(x, y) is a conditional FST that defines P(y  |x).
+    The trick is to instead train a joint model g o f&#952;, where g(xi) defines P(xi), thereby maximizing Hi P(xi) &#183; P(yi  |xi).
+    (Of course, the method of this paper can train such compositions.)
+    If x1,... xn are fully observed, just define each g(xi) = 1/n.
+    But by choosing a more general model of g, we can also handle incompletely observed xi: training g o f&#952; then forces g and f&#952; to cooperatively reconstruct a distribution over the possible inputs and do discriminative training of f&#952; given those inputs.
+    (Any parameters of g may be either frozen before training or optimized along with the parameters of f&#952;.)
+    A final possibility is that each xi is defined by a probabilistic FSA that already supplies a distribution over the inputs; then we consider xi o f&#9

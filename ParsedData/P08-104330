@@ -1,0 +1,9 @@
+l syntactic evidence disagrees with evidence based on local linear context, the two models compete with one another, despite the fact that the PCFG takes also local context into account.
+    In addition, as the CRF and PCFG look at similar sorts of information from within two inherently different models, they are far from independent and optimizing their product is meaningless.
+    Cohen and Smith approach this by introducing the &#945; hyperparameter, which performs best when optimized independently for each sentence (cf.
+    Oracle results).
+    In contrast, our morphological probabilities are based on a unigram, lexeme-based model, and all other (local and non-local) contextual considerations are delegated to the PCFG.
+    This fully generative model caters for real interaction between the syntactic and morphological levels as a part of a single coherent process.
+  
+  
+    Employing a PCFG-based generative framework to make both syntactic and morphological disambiguation decisions is not only theoretically

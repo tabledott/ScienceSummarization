@@ -1,0 +1,6 @@
+imates for values with positive counts and gives small positive estimates for values with a zero count.
+    For simplicity, we describe here the approximation of P(ai = aiIS) for the unsmoothed estimator3.
+    We approximate the posterior P(ai = ai IS) by first assuming that the multinomial is a collection of independent binomials, each of which corresponds to a single value ui of the multinomial; we then normalize the values so that they sum to 1.
+    For each such binomial, we approximate P(ai = ai IS) as a truncated normal distribution (restricted to [0,1]), with estimated mean /./.
+    =1*- and variance o-2 = To generate a particular multinomial distribution, we randomly choose values for the binomial parameters ai from their approximated posterior distributions (using the simple sampling method given in (Press et al., 1988, p. 214)), and renormalize them so that they sum to 1.
+    Finally, to generate a random HMM given statistics S, we choose values independently for the parameters of each multinomial, 

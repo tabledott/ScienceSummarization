@@ -1,0 +1,9 @@
+ the language modeling problem as one of computing the probability of a single word given all of the words that precede it in a sentence.
+    At any point in the sentence, we must know the probability of an object word, sr given a history, sis2 .
+    .
+    . s3_.
+    Because there are so many histories, we cannot simply treat each of these probabilities as a separate parameter.
+    One way to reduce the number of parameters is to place each of the histories into an equivalence class in some way and then to allow the probability of an object word to depend on the history only through the equivalence class into which that history falls.
+    In an n-gram model, two histories are equivalent if they agree in their final n &#8212;1 words.
+    Thus, in a bigram model, two histories are equivalent if they end in the same word and in a trigram model, two histories are equivalent if they end in the same two words.
+    While n-gram models are linguistically simpleminded, they have proven quite valuable in speech recogni

@@ -1,0 +1,10 @@
+ecoder, very long distance reordering is not allowed because of efficiency considerations.
+    Therefore, it is very difficult in general to translate English into Korean with proper word order.
+    However, knowing the dependency parse trees of the English sentences may simplify the reordering problem significantly.
+    In the simple example in Figure 1, if we analyze the English sentence and know that &#8220;John&#8221; is the subject, &#8220;can hit&#8221; is the verb and &#8220;the ball&#8221; is the object, we can reorder the English into SOV order.
+    The resulting sentence &#8220;John the ball can hit .&#8221; will only need monotonic translation.
+    This motivates us to use a dependency parser for English to perform the reordering.
+  
+  
+    Figure 2 shows the dependency tree for the example sentence in the previous section.
+    In this parse, the verb &#8220;hit&#8221; has four children: a subject noun &#8220;John&#8221;, an auxiliary verb &#8220;can&#8221;, an object noun &#8220;ball&#8221; and a 

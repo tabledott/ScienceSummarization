@@ -1,0 +1,7 @@
+, they suggest the following two views: (1) the words contained in the text of the page; for example, research interests or publications; (2) the words contained in links pointing to the page; for example, my advisor.
+    The intuition behind Blum and Mitchell's cotraining algorithm CT' (Figure 1) is that two views of the data can be used to train two classifiers that can help each other.
+    Each classifier is trained using one view of the labeled data.
+    Then it predicts labels for instances of the unlabeled data.
+    By selecting its most confident predictions and adding the corresponding instances with their predicted labels to the labeled data, each classifier can add to the other's available training data.
+    Continuing the above example, web pages pointed to by my advisor links can be used to train the page classifier, while web pages about research interests and publications can be used to train the link classifier.
+    Initial studies of co-training focused on the applicability of the co-training 

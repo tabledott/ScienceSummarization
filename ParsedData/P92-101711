@@ -1,0 +1,5 @@
+ will use rule Ap Aq Ar, and (6) estimates the probability that an occurrence of Ap in a compatible derivation of a string in in C will be rewritten to kn.
+    These are the best current estimates for the binary and unary rule probabilities.
+    The process is then repeated with the reestimated probabilities until the increase in the estimated probability of the training text given the model becomes negligible, or, what amounts to the same, the decrease in the cross entropy estimate (negative log probability) becomes negligible.
+    Note that for comparisons with the original algorithm, we should use the cross-entropy estimate H(W, G) of the unbracketed text W with respect to the grammar G, not (8).
+    Each of the three steps of an iteration of the original inside-outside algorithm &#8212; computation of inside probabilities, computation of outside probabilities and rule probability reestimation &#8212; takes time 0(1w13) for each training sentence w. Thus, the whole algorithm is 0(1w I) on each training sen

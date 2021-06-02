@@ -1,0 +1,9 @@
+lmost types.
+    A sequence of good text (I) goes into the channel, and a sequence of corrupted text (0) comes out the other end.
+    How can an automatic procedure recover the good input text, I, from the corrupted output, 0?
+    In principle, one can recover the most likely input, I, by hypothesizing all possible input texts, I, and selecting the input text with the highest score, Pr(I I 0).
+    Symbolically, where ARGMAX finds the argument with the maximum score.
+    The prior probability, Pr(I), is the probability that I will be presented at the input to the channel.
+    In speech recognition, it is the probability that the talker utters I; in spelling correction (Damerau 1964; Kukich 1992), it is the probability that the typist intends to type I.
+    In practice, the prior probability is unavailable, and consequently, we have to make do with a model of the prior probability, such as the trigram model.
+    The parameters of the language model are usually estimated by computing various statistics over a la

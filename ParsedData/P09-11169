@@ -1,0 +1,9 @@
+ can be done totally independently.
+    The algorithm fits nicely into the MapReduce paradigm for parallel programming (Dean and Ghemawat, 2004).
+    The most straightforward MapReduce implementation of K-Means would be to have mappers perform Step ii and reducers perform Step iii.
+    The keys of intermediate pairs are cluster ids and the values are feature vectors of elements assigned to the corresponding cluster.
+    When the number of elements to be clustered is very large, sorting the intermediate pairs in the shuffling stage can be costly.
+    Furthermore, when summing up a large number of features vectors, numerical underflow becomes a potential problem.
+    A more efficient and numerically more stable method is to compute, for each input partition, the partial vector sums of the elements belonging to each cluster.
+    When the whole partition is done, the mapper emits the cluster ids as keys and the partial vector sums as values.
+    The reducers then aggregate the partial sums to compute the centroid

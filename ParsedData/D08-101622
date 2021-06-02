@@ -1,0 +1,8 @@
+ b(A) is now 7r times the total weight of all trees, where the weight of a given tree is the product of the gLij values of its n edges.
+    In step 2, the marginal belief b(Lij = true) is now 7r times the total weight of all trees having edge i &#8594; j.
+    We perform these combinatorial sums by calling a first-order parsing algorithm, with edge weights qij.
+    Thus, as outlined in &#167;2, a first-order parser is called each time we propagate through the global TREE or PTREE constraint, using edge weights that include the first-order LINK factors but also multiply in any current messages from higher-order factors.
+    The parsing algorithm simultaneously computes the partition function b(), and all O(n2) marginal beliefs b(Lij = true).
+    For PTREE (projective), it is the inside-outside version of a dynamic programming algorithm (Eisner, 1996).
+    For TREE (nonprojective), Koo et al. (2007) and Smith and Smith (2007) show how to employ the matrix-tree theorem.
+    In both cases, the total time is O(n3).

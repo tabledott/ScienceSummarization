@@ -1,0 +1,11 @@
+the score of a block sequence with orientation as a product of block bigram scores: where is a block and is a three-valued orientation component linked to the block (the orientation of the predecessor block is ignored.).
+    A block has right orientation ( ) if it has a left adjacent predecessor.
+    Accordingly, a block has left orientation ( ) if it has a right adjacent predecessor.
+    If a block has neither a left or right adjacent predecessor, its orientation is neutral ( ).
+    The neutral orientation is not modeled explicitly in this paper, rather it is handled as a default case as explained below.
+    In Fig.
+    1, the orientation sequence is , i.e. block and block are generated using left orientation.
+    During decoding most blocks have right orientation , since the block translations are mostly monotone.
+    We try to find a block sequence with orientation that maximizes .
+    The following three types of parameters are used to model the block bigram score in Eq.
+    1: Two unigram count-based mod

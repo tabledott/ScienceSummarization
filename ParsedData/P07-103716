@@ -1,0 +1,8 @@
+ composition operators.
+    The n-gram language model over supertags applies a kind of statistical &#8216;compositionality check&#8217; but due to smoothing effects this could mask crucial violations of the compositionality operators of the grammar formalism (CCG in this case).
+    It is interesting to observe the effect of integrating into the language model a penalty imposed when formal compostion operators are violated.
+    We combine the n-gram language model with a penalty factor that measures the number of encountered combinatory operator violations in a sequence of supertags (cf.
+    Figure 2).
+    For a supertag sequence of length (L) which has (V ) operator violations (as measured by the CCG system), the language model P will be adjusted as P* = P x (1 &#8722; &#65533;i ).
+    This is of course no longer a simple smoothed maximum-likelihood estimate nor is it a true probability.
+    Nevertheless, this mechanism provides a simple, efficient integration of a global compositionality (grammaticality) mea

@@ -1,0 +1,9 @@
+ting dependency trees contain some NE class names as leaf nodes.
+    This is crucial to identifying common patterns, and to applying these patterns to new text.
+    The procedure retrieves a set of documents that describe the events of the scenario of interest, the relevant document set.
+    A set of narrative sentences describing the scenario is selected to create a query for the retrieval.
+    Any IR system of sufficient accuracy can be used at this stage.
+    For this experiment, we retrieved the documents using CRL&#8217;s stochasticmodel-based IR system (Murata et al., 1999).
+    Given the dependency trees of parsed sentences in the relevant document set, all the possible subtrees can be candidates for extraction patterns.
+    The ranking of pattern candidates is inspired by TF/IDF scoring in IR literature; a pattern is more relevant when it appears more in the relevant document set and less across the entire collection of source documents.
+    The right-most expansion base subtree discovery algorithm (A

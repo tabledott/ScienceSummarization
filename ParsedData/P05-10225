@@ -1,0 +1,7 @@
+    This is fine if one only wants the first-best, but obviously it does not directly enumerate the n-best parses.
+    However, Collins (Collins, 2000; Collins and Koo, in submission) has created an nbest version of his parser by turning off dynamic programming (see the user&#8217;s guide to Bikel&#8217;s re-implementation of Collins&#8217; parser, http://www.cis.upenn.edu/ dbikel/software.html#statparser).
+    As with Roark&#8217;s parser, it is necessary to add a beam-width constraint to make the search tractable.
+    With a beam width of 1000 the parser returns something like a 50-best list (Collins, personal communication), but the actual number of parses returned for each sentences varies.
+    However, turning off dynamic programming results in a loss in efficiency.
+    Indeed, Collins&#8217;s n-best list of parses for section 24 of the Penn tree-bank has some sentences with only a single parse, because the n-best parser could not find any parses.
+    Now there are two known ways to produce n-best parses

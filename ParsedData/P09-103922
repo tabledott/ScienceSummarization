@@ -1,0 +1,7 @@
+e parents for each word in the sentence (we set k = 10); this reduces the number of candidate arcs to |A |= kn.11 This strategy is similar to the one employed by Carreras et al. (2008) to prune the search space of the actual parser.
+    The ranker is a local model trained using a max-margin criterion; it is arc-factored and not subject to any structural constraints, so it is very fast.
+    The actual parser was trained via the online structured passive-aggressive algorithm of Crammer et al. (2006); it differs from the 1-best MIRA algorithm of McDonald et al.
+    (2005) by solving a sequence of loss-augmented inference problems.12 The number of iterations was set to 10.
+    The results are summarized in Table 1; for the sake of comparison, we reproduced three strong 8We used the provided train/test splits except for English, for which we tested on the development partition.
+    For training, sentences longer than 80 words were discarded.
+    For testing, all sentences were kept (the longest one has length 118)

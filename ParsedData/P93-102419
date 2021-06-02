@@ -1,0 +1,10 @@
+ diverge, giving rise to two daughters of c. Our clustering procedure is thus as follows.
+    We start with very low 0 and a single cluster whose centroid is the average of all noun distributions.
+    For any given 0, we have a current set of leaf clusters corresponding to the current free energy (local) minimum.
+    To refine such a solution, we search for the lowest which is the critical value for some current leaf cluster splits.
+    Ideally, there is just one split at that critical value, but for practical performance and numerical accuracy reasons we may have several splits at the new critical point.
+    The splitting procedure can then be repeated to achieve the desired number of clusters or model cross-entropy.
+  
+  
+    All our experiments involve the asymmetric model described in the previous section.
+    As explained there, our clustering procedure yields for each value of 0 a set Cp of clusters minimizing the free energy F, and the asymmetric model for estimates the conditional verb distribution fo

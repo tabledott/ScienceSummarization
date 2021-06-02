@@ -1,0 +1,10 @@
+m guessing (but not significantly).
+    It appears that the designers of the SAT questions deliberately chose distractors that would thwart these two strategies.
+    With 374 questions and six word pairs per question (one stem and five choices), there are 2,244 pairs in the input set.
+    In step 2, introducing alternate pairs multiplies the number of pairs by four, resulting in 8,976 pairs.
+    In step 5, for each pair A:B, we add B:A, yielding 17,952 pairs.
+    However, some pairs are dropped because they correspond to zero vectors (they do not appear together in a window of five words in the WMTS corpus).
+    Also, a few words do not appear in Lin&#8217;s thesaurus, and some word pairs appear twice in the SAT questions (e.g., lion:cat).
+    The sparse matrix (step 7) has 17,232 rows (word pairs) and 8,000 columns (patterns), with a density of 5.8% (percentage of nonzero values).
+    Table 13 gives the time required for each step of LRA, a total of almost 9 days.
+    All of the steps used a single CPU on a 

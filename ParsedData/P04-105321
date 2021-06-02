@@ -1,0 +1,10 @@
+ext in this way will have to be carefully evaluated.
+    It is future work to determine the best context word length.
+    We tried single linkage and average linkage as well as complete linkage for making clusters.
+    Complete linkage was the best clustering method because it yielded the highest F-measure.
+    Furthermore, for the other two clustering methods, the threshold of cosine similarity producing the best F-measure was different in the two domains.
+    In contrast, for complete linkage the optimal threshold was almost the same in the two domains.
+    The best threshold of cosine similarity in complete linkage was determined to be just above 0; when this threshold reaches 0, the F-measure drops suddenly because the pairs need not share any words.
+    A threshold just above 0 means that each combination of NE pairs in the same cluster shares at least one word in common &#8212; and most of these common words were pertinent to the relations.
+    We consider that this is relevant to context word length.
+ 

@@ -1,0 +1,8 @@
+ple of two texts with links is illustrated in Figure 4.
+    Next, we desire to compute the probability of the most probable link sequence that could have accounted for the two texts.6 The probability of a link sequence is simply the product of the probabilities p of the links it contains.
+    As noted by Melamed (2000), the problem of finding the best set of links is the maximum-weighted bipartite matching (MWBM) problem: Given a weighted bipartite graph G = (V1 U V2, E) with edge weights ci,j(i E V1,j E V2), find a matching M C_ E such that each vertex has at most one edge in M and Ee&#8712;M ci,j is maximized.
+    The fastest known MWBM algorithm runs in O(ve+v2 log v) time (Ahuja, Magnati, and Orlin 1993).
+    Applied to this problem, that is O(max(|X|, |Y|)3), where X and Y are the text lengths in words.
+    To use MWBM to find the most probable link sequence, let the L1 words be V1 and the L2 words be V2.
+    If two words x, y have p(x, y) &gt; 0, an edge exists between them with weight logp(x,y).
+    If

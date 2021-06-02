@@ -1,0 +1,8 @@
+-2, i-1) where wi is the word appearing at i-th word, ti is the POS tag of wi, and ci is the (extended) chunk label at i-th word.
+    Since the chunk labels are not given in the test data, they are decided dynamically during the tagging of chunk labels.
+    This technique can be regarded as a sort of Dynamic Programming (DP) matching, in which the best answer is searched by maximizing the total certainty score for the combination of tags.
+    In using DP matching, we decided to keep not all ambiguities but a limited number of them.
+    This means that a beam search is employed, and only the top N candidates are kept for the search for the best chunk tags.
+    The algorithm scans the test data from left to right and calls the SVM classifiers for all pairs of chunk tags for obtaining the certainty score.
+    We defined the certainty score as the number of votes for the class (tag) obtained through the pairwise voting.
+    Since SVMs are vector based classifier, they accept only numerical values for their featur

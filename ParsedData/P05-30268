@@ -1,0 +1,9 @@
+ions.
+    When the decoder chooses to extend a hypothesis by selecting word w from original system A, the decoder marks w as used.
+    The decoder then proceeds to identify and mark as used a word in each of the other original systems.
+    If w is aligned to words in any of the other original translation systems, then the words that are aligned with w are also marked as used.
+    For each system that does not have a word that aligns with w, the decoder establishes an artificial alignment between w and a word in this system.
+    The intuition here is that this artificial alignment corresponds to a different translation of the same source-language word that corresponds to w. The choice of an artificial alignment cannot violate constraints that are imposed by alignments that were found by the matcher.
+    If no artificial alignment can be established, then no word from this system will be marked as used.
+    The decoder repeats this process for each of the original translations.
+    Since the order in which the 

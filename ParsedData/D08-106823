@@ -1,0 +1,12 @@
+ and head for m should satisfy wm,c, + wm,c,,t, &gt; log(u).
+    We extended SampleSAT so that when it considers flipping any variable involved in such constraints (e.g., c or t above), it ensures that their new values still satisfy these constraints.
+    The final clustering is found using the MaxWalkSAT weighted satisfiability solver (Kautz et al., 1997), with the appropriate extensions.
+    We first ran a MaxWalkSAT pass with only finite-weight formulas, then ran another pass with all formulas.
+    We found that this significantly improved the quality of the results that MaxWalkSAT returned.
+  
+  
+    We implemented our method as an extension to the Alchemy system (Kok et al., 2007).
+    Since our learning uses sampling, all results are the average of five runs using different random seeds.
+    Our optimization problem is not convex, so initialization is important.
+    The core of our model (head mixture) tends to cluster non-pronouns with the same head.
+    Therefore, we initialized by setting all weights

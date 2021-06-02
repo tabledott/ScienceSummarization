@@ -1,0 +1,10 @@
+ge TER score of one hypothesis against all other hypotheses was used as follows This may be viewed as the MBR hypothesis under TER given uniform target sentence posterior distribution (Sim et al., 2007).
+    It is also possible to compute the MBR hypothesis under BLEU.
+    Finding the MBR hypothesis requires computing the TER against all hypotheses to be aligned.
+    It was found that aligning more than one hypothesis ( ) from each system to the skeleton improves the combination outputs.
+    However, only the rank-1 hypotheses were considered as skeletons due to the complexity of the TER alignment.
+    The confidence score assigned to each word was chosen to be where the was based on the rank of the aligned hypothesis in the system&#8217;s best.
+    This was found to yield better scores than simple votes.
+    The word-level combination method described so far does not require any tuning.
+    To allow a variety of outputs with different degrees of confidence to be combined, system weights may be used.
+    A co

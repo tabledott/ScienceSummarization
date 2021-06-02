@@ -1,0 +1,5 @@
+erceptron, introduced by Collins (2002), which makes N iterations over the training data and updates the weight vector for every sentence xj where the highest scoring parse y* is different from yj.
+    More precisely, we use the passive-aggressive update of Crammer et al. (2006): where We also use the early update strategy found beneficial for parsing in several previous studies (Collins and Roark, 2004; Zhang and Clark, 2008; Huang and Sagae, 2010), which means that, during learning, we terminate the beam search as soon as the hypothesis corresponding to the gold parse yj falls out of the beam and update with respect to the partial transition sequence constructed up to that point.
+    Finally, we use the standard technique of averaging over all weight vectors, as originally proposed by Collins (2002).
+    As already noted, the feature representation f(x, y) of an input sentence x with parse y decomposes into feature representations f(c, t) for the transitions t(c) needed to derive y from cs(x).
+    Features 

@@ -1,0 +1,6 @@
+this representation is described in (Gale et al., 1992), where word sense disambiguation is performed with a Naive Bayesian classifier.
+    The work in this paper differs in that there are two windows of context, one representing words that occur to the left of the ambiguous word and another for those to the right.
+    The left and right windows of context have nine different sizes; 0, 1, 2, 3, 4, 5, 10, 25, and 50 words.
+    The first step in the ensemble approach is to train a separate Naive Bayesian classifier for each of the 81 possible combination of left and right window sizes.
+    Naive_Bayes (1,r) represents a classifier where the model parameters have been estimated based on frequency counts of shallow lexical features from two windows of context; one including 1 words to the left of the ambiguous word and the other including r words to the right.
+    Note that Naive_Bayes (0,0) includes no words to the left or right; this classifier acts as a majority classifier that assigns every instance of an amb

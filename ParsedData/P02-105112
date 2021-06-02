@@ -1,0 +1,10 @@
+n/transliteration scores.
+    The score for a given candidate is given by a modified IBM Model 1 probability (Brown et al., 1993) as follows: where is the length of , is the length of , is a scaling factor based on the number of matches of found, and is the index of the English word aligned with according to alignment .
+    The probability is a linear combination of the transliteration and translation score, where the translation score is a uniform probability over all dictionary entries for .
+    The scored matches form the list of translation candidates.
+    For example, the candidate list for h&#728; ly&#711;g&#8221; includes Bay ofPigs and Gulf ofPigs.
+  
+  
+    Once a ranked list of translation candidates is generated for a given phrase, several monolingual English resources are used to help re-rank the list.
+    The candidates are re-ranked according to the following equation: (6) where is the re-scoring factor used.
+    Straight Web Counts: (Grefenstette, 1999) used phrase Web frequency to disambiguate

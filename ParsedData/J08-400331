@@ -1,0 +1,8 @@
+he first node in the buffer &#946;.
+    In addition, they pop the stack &#963;.
+    They have as a precondition that the token i is not the artificial root node 0 and does not already have a head.
+    Transitions Transitions for the arc-eager, stack-based parsing algorithm.
+    The arc-eager parser differs from the arc-standard one by attaching right dependents (using RIGHT-ARCel transitions) as soon as possible, that is, before the right dependent has found all its right dependents.
+    As a consequence, the RIGHT-ARCel transitions cannot replace the head-dependent structure with the head, as in the arc-standard system, but must store both the head and the dependent on the stack for further processing.
+    The dependent can be popped from the stack at a later time through the REDUCE transition, which completes the reduction of this structure.
+    The arc-eager system is illustrated in Figure 6, which shows the transition sequence needed to parse the English sentence in Figure 2 with the same output as the ar

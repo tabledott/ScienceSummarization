@@ -1,0 +1,11 @@
+uch simple sentence was parsed using Minipar (Lin, 1998).
+    From the parses we extracted all dependency paths between nouns that contain only words present in the TEXTRUNNER relation string.
+    These dependency paths were then matched against each pair in the DIRT database, and all pairs of associated relations were collected producing about 26,000 inference rules.
+    Following Pantel et al. (2007) we randomly sampled 100 inference rules.
+    We then automatically filtered out any rules which contained a negation, or for which the antecedent and consequent contained a pair of antonyms found in WordNet (this left us with 85 rules).
+    For each rule we collected 10 random instances of the antecedent, and generated the consequent.
+    We randomly sampled 300 of these inferences to hand-label.
+  
+  
+    In figure 5 we compare the precision and recall of LDA-SP against the top two performing systems described by Pantel et al. (ISP.IIM-V and ISP.JIM, both using the CBC clusters (Pantel, 2003)).
+    We find tha

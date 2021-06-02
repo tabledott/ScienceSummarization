@@ -1,0 +1,9 @@
+we can generate dags from an AV grammar much as proposed by Brew and Eisele.
+    If we ignore failed derivations, the process of dag generation is completely analogous to the process of tree generation from a stochastic CFG&#8212;indeed, in the limiting case in which none of the rules contain constraints, the grammar is a CFG.
+    To obtain an initial distribution, we associate a weight with each rule, the weights for rules with a common left-hand side summing to one.
+    The probability of a dag is proportional to the product of weights of rules used to generate it.
+    (Renormalization is necessary because of the failed derivations.)
+    We estimate weights using the ERF method: we estimate the weight of a rule as the relative frequency of the rule in the training corpus, among rules with the same left-hand side.
+    The resulting initial distribution (the ERF distribution) is not the maximum-likelihood distribution, as we know.
+    But it can be taken as a useful first approximation.
+    Intuitively, we be

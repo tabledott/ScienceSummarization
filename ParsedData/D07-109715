@@ -1,0 +1,10 @@
+two non-projective parsers.
+			2.
+			Feature models were adjusted with respect to.
+			the most obvious differences in parsing strategy (e.g., by deleting features that could never be informative for a given parser).
+			3.
+			Learning algorithm parameters were adjusted.
+			to speed up training (e.g., by always splitting the training data into smaller sets).
+			Having trained all parsers on 90% of the training data for each language, the weights wci for each parser i and coarse part of speech c was determined by the labeled attachment score on the remaining 10% of the data.
+			This means that the results obtained in the dry run were bound to be overly optimistic for the Blended parser, since it was then evaluated on the same data set that was used to tune the weights.
+			Finally, we want to emphasize that the time for developing the Blended parser was severely limited, which means that several shortcuts had to be taken, such as optimizing learning algorithm parametersfor speed rather than accuracy and using ext

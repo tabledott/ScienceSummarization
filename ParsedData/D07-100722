@@ -1,0 +1,9 @@
+ed statistical models, and presents the advantages of being freely available and widely used.The phrase bilexicon is derived from the inter section of bidirectional IBM Model 4 alignments,obtained with GIZA++ (Och and Ney, 2003), aug mented to improve recall using the grow-diag-finalheuristic.
+			The language model is trained on the English side of the corpus using the SRI language mod eling toolkit (Stolcke, 2002).
+			The loglinear model weights are learned using Chiang?s implementation of the maximum BLEUtraining algorithm (Och, 2003), both for the base line, and the WSD-augmented system.
+			Due totime constraints, this optimization was only con ducted on the IWSLT task.
+			The weights used in the WSD-augmented NIST model are based on the best IWSLT model.
+			Given that the two tasks are quite different, we expect further improvements on the WSD-augmented system after running maximum BLEU optimization for the NIST task.
+	
+	
+			Using WSD predictions in SMT yields better trans lation quality on all test sets,

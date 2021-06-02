@@ -1,0 +1,8 @@
+ss whether the goal described in the instructions is achieved, i.e., the folder is deleted.
+    The key idea of our approach is to leverage the validation process as the main source of supervision to guide learning.
+    This form of supervision allows us to learn interpretations of natural language instructions when standard supervised techniques are not applicable, due to the lack of human-created annotations.
+    Reinforcement learning is a natural framework for building models using validation from an environment (Sutton and Barto, 1998).
+    We assume that supervision is provided in the form of a reward function that defines the quality of executed actions.
+    During training, the learner repeatedly constructs action sequences for a set of given documents, executes those actions, and observes the resulting reward.
+    The learner&#8217;s goal is to estimate a policy &#8212; a distribution over actions given instruction text and environment state &#8212; that maximizes future expected reward.
+    Our poli

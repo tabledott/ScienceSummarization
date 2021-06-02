@@ -1,0 +1,6 @@
+this are not clear, but the Gaussian prior may not be enough to keep the optimization from making weight adjustments that slighly improve training log-likelihood but cause large F score fluctuations.
+    We used the development test set mentioned in Section 4.1 to set the prior and the number of iterations.
+    The standard evaluation metrics for a chunker are precision P (fraction of output chunks that exactly match the reference chunks), recall R (fraction of reference chunks returned by the chunker), and their harmonic mean, the F1 score F1 = 2 * P * R/(P + R) (which we call just F score in what follows).
+    The relationships between F score and labeling error or log-likelihood are not direct, so we report both F score and the other metrics for the models we tested.
+    For comparisons with other reported results we use F score.
+    Ideally, comparisons among chunkers would control for feature sets, data preparation, training and test procedures, and parameter tuning, and estimate the statistical signific

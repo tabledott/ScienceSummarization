@@ -1,0 +1,11 @@
+he CoNLL data set and evaluation measure shows that our upper bound in performance because of this rule is approximately 99.0 F-Measure on ALL arguments.
+  
+  
+    We proceed to describe our models incorporating dependencies between labels of nodes in the parse tree.
+    As we discussed briefly before, the dependencies we would like to model are highly non-local.
+    A factorized sequence model that assumes a finite Markov horizon, such as a chain CRF (Lafferty, McCallum, and Pereira 2001), would not be able to encode such dependencies.
+    We define a CRF with a much richer dependency structure.
+    Motivation for Re-Ranking.
+    For argument identification, the number of possible assignments for a parse tree with n nodes is 2n.
+    This number can run into the hundreds of billions for a normal-sized tree.
+    For argument labeling, the number of possible assignments is &#8776; 20m, if m is the number of arguments of a verb (typically between 2 and 5), and 20 is the approximate number of possible labels if c

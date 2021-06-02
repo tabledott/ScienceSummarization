@@ -1,0 +1,7 @@
+tions.
+    The tree structure still enables us to compute denotations efficiently based on (1) and (2).
+    The basic version of DCS described thus far handles a core subset of language.
+    But consider Figure 4: (a) is headed by borders, but states needs to be extracted; in (b), the quantifier no is syntactically dominated by the head verb borders but needs to take wider scope.
+    We now present the full version of DCS which handles this type of divergence between syntactic and semantic scope.
+    The key idea that allows us to give semanticallyscoped denotations to syntactically-scoped trees is as follows: We mark a node low in the tree with a mark relation (one of E, Q, or C).
+    Then higher up in the tree, we invoke it with an execute relation Xi to create the desired semantic scope.2 This mark-execute construct acts non-locally, so to maintain compositionality, we must augment the denotation d = JzKw to include any information about the marked nodes in z that can be accessed by an execute relation lat

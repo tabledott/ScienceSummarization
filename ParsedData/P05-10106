@@ -1,0 +1,10 @@
+ymbol attached to the-th non-terminal node.
+    We do not assume any structured parametrizations in and ; that is, each and is itself a parameter to be tuned.
+    Therefore, an annotation symbol, say, , generally does not express any commonalities among the complete non-terminals annotated by , such as .
+    The probability of a complete parse tree is defined as (2) where is the label of the root node of and denotes the multiset of annotated CFG rules used in the generation of .
+    We have the probability of an observable tree by marginalizing out the latent annotation symbols in : where is the number of non-terminal nodes in .
+    The sum in Eq.
+    3 can be calculated using a dynamic programming algorithm analogous to the forward algorithm for HMMs.
+    For a sentence and its parse tree , backward probabilities are recursively computed for the-th non-terminal node and for each .
+    In the definition below, denotes the non-terminal label of the-th node.
+    If node is a pre-terminal node above a terminal s

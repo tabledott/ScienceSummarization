@@ -1,0 +1,8 @@
+adient descent simultaneously over the neural network parameters and the embedding lookup table.
+    We implemented the approach of Collobert and Weston (2008), with the following differences: The log-bilinear model (Mnih &amp; Hinton, 2007) is a probabilistic and linear neural model.
+    Given an n-gram, the model concatenates the embeddings of the n &#8722; 1 first words, and learns a linear model to predict the embedding of the last word.
+    The similarity between the predicted embedding and the current actual embedding is transformed into a probability by exponentiating and then normalizing.
+    Mnih and Hinton (2009) speed up model evaluation during training and testing by using a hierarchy to exponentially filter down the number of computations that are performed.
+    This hierarchical evaluation technique was first proposed by Morin and Bengio (2005).
+    The model, combined with this optimization, is called the hierarchical log-bilinear (HLBL) model. n-gram is corrupted.
+    In Bengio et al. (2009), 

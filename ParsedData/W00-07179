@@ -1,0 +1,7 @@
+lasses produced, and more formal statistical methods.
+    Comparison against existing tag-sets is not meaningful &#8212; one set of tags chosen by linguists would score very badly against another without this implying any fault as there is no 'gold standard'.
+    I therefore chose to use an objective statistical measure, the perplexity of a very simple finite state model, to compare the tags generated with this clustering technique against the BNC tags, which uses the CLAWS-4 tag set (Leech et al., 1994) which had 76 tags.
+    I tagged 12 million words of BNC text with the 77 tags, assigning each word to the cluster with the highest a posteriori probability given its prior cluster distribution and its context.
+    I then trained 2nd-order Markov models (equivalently class trigram models) on the original BNC tags, on the outputs from my algorithm (CDC), and for comparision on the output from the Brown algorithm.
+    The perplexities on held-out data are shown in table 3.
+    As can be seen, the perplexity is l

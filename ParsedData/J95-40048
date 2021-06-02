@@ -1,0 +1,6 @@
+r to make it better resemble the truth.
+    There are two components to a transformation: a rewrite rule and a triggering environment.
+    An example of a rewrite rule for part-of-speech tagging is: and an example of a triggering environment is: The preceding word is a determiner.
+    Taken together, the transformation with this rewrite rule and triggering environment when applied to the word can would correctly change the mistagged: where A, B and C can be either terminals or nonterminals.
+    One possible set of triggering environments is any combination of words, part-of-speech tags, and nonterminal labels within and adjacent to the subtree.
+    Using this rewrite rule and the triggering environment A = the, the bracketing: ( the ( boy ate ) ) would become: ( ( the boy) ate) In all of the applications we have examined to date, the following greedy search is applied for deriving a list of transformations: at each iteration of learning, the transformation is found whose application results in the best score 

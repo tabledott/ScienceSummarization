@@ -1,0 +1,8 @@
+cted answer type (EAT).
+    Keywords &#8211; along with the question&#8217;s EAT &#8211; are then used by a PR module to retrieve a ranked list of paragraphs which may contain answers to the question.
+    These paragraphs are then sent to an AP module, which extracts an exact candidate answer from each passage and then ranks each candidate answer according to the likelihood that it is a correct answer to the original question.
+    Method 1.
+    In Method 1, each of a ranked list of answers that do not meet the minimum conditions for TE are removed from consideration and then re-ranked based on the entailment confidence (a real-valued number ranging from 0 to 1) assigned by the TE system to each remaining example.
+    The system then outputs a new set of ranked answers which do not contain any answers that are not entailed by the user&#8217;s question.
+    Table 1 provides an example where Method 1 could be used to make the right prediction for a set of answers.
+    Even though Al was ranked in sixth position,

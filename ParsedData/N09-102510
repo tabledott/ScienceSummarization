@@ -1,0 +1,8 @@
+sh side, but no words on the source Chinese side.
+    Sample syntaxbased insertion rules are: We notice that our decoder, however, frequently fails to insert words like is and are, which often have no equivalent in the Chinese source.
+    We also notice that the-insertion rules sometimes have a good effect, as in the translation &#8220;in the bloom of youth,&#8221; but other times have a bad effect, as in &#8220;people seek areas of the conspiracy.&#8221; Each time the decoder uses (or fails to use) an insertion rule, it incurs some risk.
+    There is no guarantee that the interaction of the rule probabilities and the language model provides the best way to manage this risk.
+    We therefore provide MIRA with a feature for each of the most common English words appearing in insertion rules, e.g., insert-the and insert-is.
+    There are 35 such features.
+    We now turn to features that make use of source-side context.
+    Although these features capture dependencies that cross boundaries between rules, they ar

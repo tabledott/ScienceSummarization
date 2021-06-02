@@ -1,0 +1,6 @@
+uage model, where the probability of a word sequence is approximated by the product of the probabilities of seeing each term given its immediate left context.
+    Probabilities for sequences that have not been seen in the training data are estimated using back-off weights (Katz, 1987).
+    As mentioned earlier, in principle, surface linearization calculations can be carried out with respect to any textual spans from characters on up, and could take into account additional information at the phrase level.
+    They could also, of course, be extended to use higher order n-grams, providing that sufficient numbers of training headlines were available to estimate the probabilities.
+    Even though content selection and summary structure generation have been presented separately, there is no reason for them to occur independently, and in fact, in our current implementation, they are used simultaneously to contribute to an overall weighting scheme that ranks possible summary candidates against each other.
+    Thus, t

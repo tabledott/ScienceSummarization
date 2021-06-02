@@ -1,0 +1,7 @@
+lexicon probability for POS tags in both languages.
+    In IBM models as well as HMM models, when one needs the model to take new information into account, one must create an extended model which can base its parameters on the previous model.
+    In log-linear models, however, new information can be easily incorporated.
+    We use a POS Tags Transition Model as a feature function.
+    This feature learns POS Tags transition probabilities from held-out data (via simple counting) and then applies the learned distributions to the ranking of various word alignments.
+    We define eT = eT1I = eT1, ... , eTi, ... , eTI and fT = fT1J = fT1, ... , fTj, ... , fTJ as POS tag sequences of the sentence pair e and f. POS Tags Transition Model is formally described as: where a is an element of a, a(i) is the corresponding source position of a and a(j) is the target position.
+    Hence, the feature function is: We still distinguish between two translation directions to use POS tags Transition Model as feature functions: tre

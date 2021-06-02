@@ -1,0 +1,6 @@
+d sentences, we insert only subtrees whose top node aligns with one of the nodes in a basis tree.8 We further constrain the insertion procedure by inserting only trees that appear in at least half of the sentences of a theme.
+    These two constituent-level restrictions prevent the algorithm from generating overly long, unreadable sentences.9 Finally, subtrees which are not part of the intersection are pruned off the basis tree.
+    However, removing all such subtrees may result in an ungrammatical or semantically flawed sentence; for example, we might create a sentence without a subject.
+    This overpruning may happen if either the input to the fusion algorithm is noisy or the alignment has failed to recognize similar subtrees.
+    Therefore, we perform a more conservative pruning, deleting only the self-contained components which can be removed without leaving ungrammatical sentences.
+    As previously observed in the literature (Mani, Gates, and Bloedorn 1999; Jing and McKeown 2000), such components inclu

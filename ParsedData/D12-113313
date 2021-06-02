@@ -1,0 +1,5 @@
+may refer to any aspect of a configuration, as encoded in the stack E, the buffer B, the arc set A and the labelings 7r and S. In addition, we assume that each word w in the input is assigned up to k candidate part-of-speech tags 7ri(w) with corresponding scores s(7ri(w)). use Ei and Bi to denote the ith token in the stack E and buffer B, respectively, with indexing starting at 0, and we use the following functors to extract properties of a token: &#960;i() = ith best tag; s(&#960;i()) = score of ith best tag; &#960;() = finally predicted tag; w() = word form; pi() = word prefix of i characters; si() = word suffix of i characters.
+    Score differences are binned in discrete steps of 0.05.
+    The bulk of features used in our system are taken from Zhang and Nivre (2011), although with two important differences.
+    First of all, like Hatori et al. (2011), we have omitted all features that presuppose an arc-eager parsing order, since our transition system defines an arc-standard order.
+    Secondly, any featur

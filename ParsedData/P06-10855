@@ -1,0 +1,8 @@
+problem stems from the fact that the model assumes a uniform prior over hypotheses.
+    We then present the MBDP model, which uses a non-uniform prior but is difficult to extend beyond the unigram case.
+    NGS assumes that each utterance is generated independently via a standard n-gram model.
+    For simplicity, we will discuss the unigram version of the model here, although our argument is equally applicable to the bigram and trigram versions.
+    The unigram model generates an utterance u according to the grammar in Figure 1, so where u consists of the words w1 ... wn and p$ is the probability of the utterance boundary marker $.
+    This model can be used to find the highest probability segmentation hypothesis h given the data d by using Bayes&#8217; rule: NGS assumes a uniform prior P(h) over hypotheses, so its goal is to find the solution that maximizes the likelihood P(djh).
+    Using this model, NGS&#8217;s approximate search technique delivers competitive results.
+    However, the true maximum likelih

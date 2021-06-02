@@ -1,0 +1,10 @@
+mes, but did not obtain a set of weights that produced consistent significant improvements.
+    See Section 8 for altern &#945; ate approaches to setting C. Table 4 shows the results of each kernel within an SVM.
+    (We augment the LibSVM3 implementation to include our dependency tree kernel.)
+    Note that, although training was done over all 24 relation subtypes, we evaluate only over the 5 high-level relation types.
+    Thus, classifying a RESIDENCE relation as a LOCATED relation is deemed correct4.
+    Note also that K0 is not included in Table 4 because of burdensome computational time.
+    Table 4 shows that precision is adequate, but recall is low.
+    This is a result of the aforementioned class imbalance &#8211; very few of the training examples are relations, so the classifier is less likely to identify a testing instances as a relation.
+    Because we treat every pair of mentions in a sentence as a possible relation, our training set contains fewer than 15% positive relation instances.
+    To reme

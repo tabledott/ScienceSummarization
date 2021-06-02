@@ -1,0 +1,9 @@
+ specific relationships between the clue instance and other sentiment clues it may be related to.
+    If the clue instance and its parent in the dependency tree share an obj, adj, mod, or vmod relationship, the modifies polarity feature is set to the prior polarity of the parent.
+    If the parent is not in the prior-polarity lexicon, its prior polarity is considered neutral.
+    If the clue instance is at the root of the tree and has no parent, the value of the feature is notmod.
+    The modified by polarity feature is similar, looking for adj, mod, and vmod relationships and other sentiment clues in the children of the clue instance.
+    The conj polarity feature determines if the clue instance is in a conjunction.
+    If so, the value of this feature is its sibling&#8217;s prior polarity.
+    As before, if the sibling is not in the Wilson, Wiebe, and Hoffmann Recognizing Contextual Polarity lexicon, its prior polarity is neutral.
+    If the clue instance is not in a conjunction, the value for this feature 

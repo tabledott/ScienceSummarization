@@ -1,0 +1,9 @@
+cing these values in Equation 4 we obtain the following: #m+S&#183;&#945; Putting it all together, we arrive at the final update equation for the Gibbs sampling: Note that when dealing with a single layer, Equation 8 collapses to: where #m(si) indicates the number of elements (e.g., words) in the context window assigned to sense si.
+    This is identical to the update equation in the original, word-based LDA model.
+    The sampling algorithm gives direct estimates of s for every context element.
+    However, in view of our task, we are more interested in estimating &#952;, the sense-context distribution which can be obtained as in Equation 7, but taking into account all sense assignments, without removing assignment i.
+    Our system labels each instance with the single, most probable sense.
+  
+  
+    In this section we discuss our experimental set-up for assessing the performance of the model presented above.
+    We give details on our training procedure, describe our features, and explain how our system out

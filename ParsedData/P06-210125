@@ -1,0 +1,8 @@
+oximation from &#167;5.
+    We found this to perform significantly better on BLEU evaluation than if we trained with a &#8220;linearized&#8221; BLEU that summed per-sentence BLEU scores (as used in minimum Bayes risk decoding by Kumar and Byrne (2004)).
+    We trained dependency parsers for three different languages: Bulgarian, Dutch, and Slovenian.11 Input sentences to the parser were already tagged for parts of speech.
+    Each parser employed 10 experts, each parameterized as a globally normalized loglinear model (Lafferty et al., 2001).
+    For example, the 9th component of the feature vector fz&#65533;k (which described the kth parse of the ith sentence) was the log of that parse&#8217;s normalized probability according to the 9th expert.
+    Each expert was trained separately to maximize the conditional probability of the correct parse given the sentence.
+    We used 10 iterations of gradient ascent.
+    To speed training, for each of the first 9 iterations, the gradient was estimated on a (different) s

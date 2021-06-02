@@ -1,0 +1,10 @@
+tionary).
+    We propose an alternative approach: we learn a ranking model, which, for each sentence in the source document, selects either a sentence in the target document that it is parallel to, or &#8220;null&#8221;.
+    This formulation of the problem avoids the class imbalance issue of the binary classifier.
+    In both the binary classifier approach and the ranking approach, we use a Maximum Entropy classifier, following Munteanu and Marcu (2005).
+    In Wikipedia article pairs, it is common for parallel sentences to occur in clusters.
+    A global sentence alignment model is able to capture this phenomenon.
+    For both parallel and comparable corpora, global sentence alignments have been used, though the alignments were monotonic (Gale and Church, 1991; Moore, 2002; Zhao and Vogel, 2002).
+    Our model is a first order linear chain Conditional Random Field (CRF) (Lafferty et al., 2001).
+    The set of source and target sentences are observed.
+    For each source sentence, we have a hidden variable in

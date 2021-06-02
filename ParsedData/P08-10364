@@ -1,0 +1,8 @@
+thesize that the most predictive features of an aspect rating are features derived from the text segments discussing the corresponding aspect.
+    Motivated by these observations, we construct a joint statistical model of text and sentiment ratings.
+    The model is at heart a topic model in that it assigns words to a set of induced topics, each of which may represent one particular aspect.
+    The model is extended through a set of maximum entropy classifiers, one per each rated aspect, that are used to pre2E.g., http://zagat.com and http://tripadvisor.com. dict the sentiment rating towards each of the aspects.
+    However, only the words assigned to an aspects corresponding topic are used in predicting the rating for that aspect.
+    As a result, the model enforces that words assigned to an aspects&#8217; topic are predictive of the associated rating.
+    Our approach is more general than the particular statistical model we consider in this paper.
+    For example, other topic models can be used as a part of

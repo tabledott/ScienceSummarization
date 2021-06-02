@@ -1,0 +1,7 @@
+ing with grammars that strongly violated the independence assumptions of global thresholding.
+    One especially interesting possibility is to apply multiple-pass techniques to formalisms that require &gt;&gt; 0(n3) parsing time, such as Stochastic Bracketing Transduction Grammar (SBTG) (Wu, 1996) and Stochastic Tree Adjoining Grammars (STAG) (Resnik, 1992; Schabes, 1992).
+    SBTG is a contextfree-like formalism designed for translation from one language to another; it uses a four dimensional chart to index spans in both the source and target language simultaneously.
+    It would be interesting to try speeding up an SBTG parser by running an 0(n3) first pass on the source language alone, and using this to prune parsing of the full SBTG.
+    The STAG formalism is a mildly context-sensitive formalism, requiring 0 (n6 ) time to parse.
+    Most STAG productions in practical grammars are actually context-free.
+    The traditional way to speed up STAG parsing is to use the context-free subset of an STAG to form a 

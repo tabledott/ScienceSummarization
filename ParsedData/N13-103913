@@ -1,0 +1,7 @@
+    This allows sharing of statistical strength between similar clusters.
+    Using prefix features of hierarchical clusters in this way was similarly found to be effective for named-entity recognition (Turian et al., 2010) and Twitter POS tagging (Ritter et al., 2011).
+    When checking to see if a word is associated with a cluster, the tagger first normalizes the word using the same techniques as described in &#167;3.1, then creates a priority list of fuzzy match transformations of the word by removing repeated punctuation and repeated characters.
+    If the normalized word is not in a cluster, the tagger considers the fuzzy matches.
+    Although only about 3% of the tokens in the development set (&#167;6) did not appear in a clustering, this method resulted in a relative error decrease of 18% among such word tokens.
+    Besides unsupervised word clusters, there are two other sets of features that contain generalized lexical class information.
+    We use the tag dictionary feature from Gimpel et al., which 

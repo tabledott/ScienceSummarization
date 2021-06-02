@@ -1,0 +1,8 @@
+ SNoW learning architecture (Roth, 1998), that is available at the same site.
+    This set of English NEs was hand-pruned to remove incorrectly classified words to obtain 978 single word NEs.
+    In order to reduce running time, some limited preprocessing was done on the Russian side.
+    All classes, whose temporal distributions were close to uniform (i.e. words with a similar likelihood of occurrence throughout the corpus) were deemed common and not considered as NE candidates.
+    Unique words were grouped into 15,594 equivalence classes, and 1,605 of those classes were discarded using this method.
+    Insertions/omissions features were not used in the experiments as they provided no tangible benefit for the languages of our corpus.
+    Unless mentioned otherwise, the transliteration model was initialized with a subset of 254 pairs of NEs and their transliteration equivalence classes.
+    Negative examples here and during the rest of the training were pairs of randomly selected non-NE English and Russian w

@@ -1,0 +1,7 @@
+   We leave exploration of structural annealing with CE to future work.
+    Experiment: Segmentation Bias within CE.
+    For (language, N) pairs where CE was effective, we trained models using CE with a fixedQ segmentation model.
+    Across conditions (Q E [&#8722;1,1]), these models performed very badly, hypothesizing extremely local parse trees: typically over 90% of dependencies were length 1 and pointed in the same direction, compared with the 60&#8211;70% length-1 rate seen in gold standards.
+    To understand why, consider that the CE goal is to maximize the score of a sentence and all its segmentations while minimizing the scores of neighborhood sentences and their segmentations.
+    An ngram model can accomplish this, since the same n-grams are present in all segmentations of x, and (some) different n-grams appear in N(x) (for LENGTH and DELETEORTRANSPOSE1).
+    A bigram-like model that favors monotone branching, then, is not a bad choice for a CE learner that must account for segmentations of x and N

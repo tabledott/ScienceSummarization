@@ -1,0 +1,10 @@
+ord-based to ensure our results are independent of Chinese tokenizations (although our language models are word-based).
+    The BLEU scores are based on single reference and up to 4-gram precisions (r1n4).
+    Feature weights of both systems are tuned on the same data set.3 For Pharaoh, we use the standard minimum error-rate training (Och, 2003); and for our system, since there are only two independent features (as we always fix &#945; = 1), we use a simple grid-based line-optimization along the language-model weight axis.
+    For a given languagemodel weight Q, we use binary search to find the best length penalty A that leads to a length-ratio closest to 1 against the reference.
+    The results are summarized in Table 1.
+    The rescored translations are better than the 1-best results from the direct model, but still slightly worse than Pharaoh.
+  
+  
+    This paper presents an adaptation of the classic syntax-directed translation with linguisticallymotivated formalisms for statistical MT.
+    Currently we a

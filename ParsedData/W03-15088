@@ -1,0 +1,8 @@
+ names.
+    A trigram language model on the GIF vocabulary is estimated with the CMU toolkit, using Good-Turing smoothing and Katz back-off.
+    Note that due to the smoothing, this language model does not necessarily assign zero probability to an illegal GIF sequence, e.g., one containing two consecutive initials.
+    This causes the first translation system to sometimes, though very rarely, produce GIF sequences which do not correspond to any pin-yin sequence.
+    We make an ad hoc correction of such sequences when mapping a GIF sequence to pin-yin, which is otherwise trivial for all legal sequences of initials and finals.
+    Specifically, a final e or i or a is tried, in that order, between consecutive initials until a legitimate sequence of pin-yin symbols obtains.
+    The language model required for translating pinyin sequences to Chinese characters is relatively straightforward.
+    A character trigram model with Good-Turing discounting and Katz back-off is estimated from the list of transliterated nam

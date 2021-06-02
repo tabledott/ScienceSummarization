@@ -1,0 +1,9 @@
+r extracted noun phrases are recorded.
+    Figure 2 shows the bootstrapping process that follows, which we explain in the following sections.
+    The first step in the bootstrapping process is to score the extraction patterns based on their tendency to extract known category members.
+    All words that are currently defined in the semantic lexicon are considered to be category members.
+    Basilisk scores each pattern using the RlogF metric that has been used for extraction pattern learning (Riloff, 1996).
+    The score for each pattern is computed as: where Fi is the number of category members extracted by patterni and Ni is the total number of nouns extracted by patterni.
+    Intuitively, the RlogF metric is a weighted conditional probability; a pattern receives a high score if a high percentage of its extractions are category members, or if a moderate percentage of its extractions are category members and it extracts a lot of them.
+    The top N extraction patterns are put into a pattern pool.
+    Basilisk

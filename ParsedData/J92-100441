@@ -1,0 +1,8 @@
+aint filtering operations.
+    At low levels of the parse tree it seems more efficient to label the categories, whereas information that must pass through higher levels of the hierarchy is better done through constraint filters.
+    As an example, consider the sentence, &amp;quot;(what street), is the Hyatt on (t,)?&amp;quot; shown in Figure 4.
+    The [q-subject] places &amp;quot;What street&amp;quot; into the CURRENT-FOCUS slot, but this unit is activated to FLOAT-OBJECT status by the subsequent [be-question].
+    The [subject] node refills the now empty CURRENT-FOCUS with &amp;quot;the Hyatt.&amp;quot; The node [a-street], an absorber, can accept the FLOAT-OBJECT as a solution, but only if there is tight agreement in semantics; i.e., it requires the identifier Street.
+    Thus a sentence such as &amp;quot;What restaurant is the Hyatt on?&amp;quot; would fail on semantic grounds.
+    Furthermore, the node [on-street] imposes strict semantic restrictions on the CURRENT-FOCUS.
+    Thus the sentence &amp;quot;

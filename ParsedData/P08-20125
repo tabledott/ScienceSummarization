@@ -1,0 +1,7 @@
+ it assigns probability mass to nonsensical clusterings.
+    Specifically, it will allow Prior work (Soon et al., 2001; Denis and Baldridge, 2007) has generated training data for pairwise classifiers in the following manner.
+    For each mention, work backwards through the preceding mentions in the document until you come to a true coreferent mention.
+    Create negative examples for all intermediate mentions, and a positive example for the mention and its correct antecedent.
+    This approach made sense for Soon et al. (2001) because testing proceeded in a similar manner: for each mention, work backwards until you find a previous mention which the classifier thinks is coreferent, add a link, and terminate the search.
+    The COREF-ILP model of Denis and Baldridge (2007) took a different approach at test time: for each mention they would work backwards and add a link for all previous mentions which the classifier deemed coreferent.
+    This is equivalent to finding the most likely assignment to each x(i,j) in

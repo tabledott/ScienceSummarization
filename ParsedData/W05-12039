@@ -1,0 +1,7 @@
+    For a given pair of text segments, we start by creating sets of open-class words, with a separate set created for nouns, verbs, adjectives, and adverbs.
+    In addition, we also create a set for cardinals, since numbers can also play an important role in the understanding of a text.
+    Next, we try to determine pairs of similar words across the sets corresponding to the same open-class in the two text segments.
+    For nouns and verbs, we use a measure of semantic similarity based on WordNet, while for the other word classes we apply lexical matching1.
+    For each noun (verb) in the set of nouns (verbs) belonging to one of the text segments, we try to identify the noun (verb) in the other text segment that has the highest semantic similarity (maxSim), according to one of the six measures of similarity described in Section 2.1.
+    If this similarity measure results in a score greater than 0, then the word is added to the set of similar words for the corresponding word class WSpo32.
+    The remaining wor

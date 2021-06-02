@@ -1,0 +1,12 @@
+he DP mixture model (Section 2.2) and use it as a building block for developing nonparametric structured versions of the HMM (Section 2.3) and PCFG (Section 2.4).
+			Our presentation highlights the similarities between these models so that each step along this progression reflects only the key differences.
+			2.1 Bayesian finite mixture model.
+			We begin by describing the Bayesian finite mixture model to establish basic notation that will carry over the more complex models we consider later.
+			Bayesian finite mixture model ? ?
+			Dirichlet(?, . . .
+			, ?) [draw component probabilities] For each component z ? {1, . . .
+			,K}: ??z ? G0 [draw component parameters] For each data point i ? {1, . . .
+			, n}: ?zi ? Multinomial(?)
+			[choose component] ?xi ? F (?;?zi) [generate data point]The model has K components whose prior dis tribution is specified by ? = (?1, . . .
+			, ?K).
+			The Dirichlet hyperparameter ? controls how uniformthis distribution is: as ? increases, it becomes in creasingly likely that the 

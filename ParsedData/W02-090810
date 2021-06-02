@@ -1,0 +1,13 @@
+erms we create a gold standard from the union of the synonyms from the three thesauri.
+    With this gold standard in place, it is possible to use precision and recall measures to evaluate the quality of the extracted thesaurus.
+    To help overcome the problems of direct comparisons we use several measures of system performance: direct matches (DIRECT), inverse rank (INVR), and precision of the top n synonyms (P(n)), for n = 1, 5 and 10.
+    INVR is the sum of the inverse rank of each matching synonym, e.g. matching synonyms at ranks 3, 5 and 28 give an inverse rank score of
+  
+  
+    1 5 + 128, and with at most 200 synonyms, the maximum INVR score is 5.878.
+    Precision of the top n is the percentage of matching synonyms in the top n extracted synonyms.
+    There are a total of 23207 synonyms for the 70 terms in the gold standard.
+    Each measure is averaged over the extracted synonym lists for all 70 thesaurus terms.
+  
+  
+    For computational practicality, we assume that the performance behaviour of me

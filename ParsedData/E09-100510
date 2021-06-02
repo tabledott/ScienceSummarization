@@ -1,0 +1,8 @@
+ target word to be disambiguated, we just choose its associated concept in G with maximal score.
+    In our experiments we build a context of at least 20 content words for each sentence to be disambiguated, taking the sentences immediately before and after it in the case that the original sentence was too short.
+    We follow the algorithm presented in (Agirre and Soroa, 2008), which we explain here for completeness.
+    The main idea of the subgraph method is to extract the subgraph of GKB whose vertices and relations are particularly relevant for a given input context.
+    Such a subgraph is called a &#8220;disambiguation subgraph&#8221; GD, and it is built in the following way.
+    For each word Wi in the input context and each concept vi E Conceptsi, a standard breathfirst search (BFS) over GKB is performed, starting at node vi.
+    Each run of the BFS calculates the minimum distance paths between vi and the rest of concepts of GKB .
+    In particular, we are interested in the minimum distance paths betwe

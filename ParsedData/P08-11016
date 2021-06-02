@@ -1,0 +1,9 @@
+ only; and baseline POStagger to refer to the Collins tagger which performs POS tagging only (given segmentation).
+    The features used by the baseline segmentor are shown in Table 1.
+    The features used by the POS tagger, some of which are different to those from Collins (2002) and are specific to Chinese, are shown in Table 2.
+    The word segmentation features are extracted from word bigrams, capturing word, word length and character information in the context.
+    The word length features are normalized, with those more than 15 being treated as 15.
+    The POS tagging features are based on contextual information from the tag trigram, as well as the neighboring three-word window.
+    To reduce overfitting and increase the decoding speed, templates 4, 5, 6 and 7 only include words with less than 3 characters.
+    Like the baseline segmentor, the baseline tagger also normalizes word length features.
+    Templates 15 and 16 in Table 2 are inspired by the CTBMorph feature templates in Tseng et al. (2005), w

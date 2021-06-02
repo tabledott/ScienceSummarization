@@ -1,0 +1,10 @@
+ical method for co-training POS taggers, and investigate the extent to which example selection based on the work of Dasgupta et al. and Abney can be effective.
+  
+  
+    The two POS taggers used in the experiments are TNT, a publicly available Markov model tagger (Brants, 2000), and a reimplementation of the maximum entropy (ME) tagger MXPOST (Ratnaparkhi, 1996).
+    The ME tagger, which we refer to as C&amp;C, uses the same features as MXPOST, but is much faster for training and tagging (Curran and Clark, 2003).
+    Fast training and tagging times are important for the experiments performed here, since the bootstrapping process can require many tagging and training iterations.
+    The model used by TNT is a standard tagging Markov model, consisting of emission probabilities, and transition probabilities based on trigrams of tags.
+    It also deals with unknown words using a suffix analysis of the target word (the word to be tagged).
+    TNT is very fast for both training and tagging.
+    The C&amp;C tagger d

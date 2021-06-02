@@ -1,0 +1,10 @@
+ 2The experimental difference of the two alternatives was small.
+    For our results, we used the max version. with a cell of width one: Figure 3(b) and (c) illustrate the inductive computation indicated by the two equations.
+    Each of the O(n4) inductive steps takes one additive or multiplicative computation.
+    A similar dynammic programing technique can be used to efficiently compute the outside component of the figure of merit.
+    Hence, the algorithm takes just O(n4) steps to compute the figure of merit for all cells in the chart.
+    Once the cells have been scored, there can be many ways of pruning.
+    In our experiments, we applied beam ratio pruning to each individual bucket of cells sharing a common source substring.
+    We prune cells whose probability is lower than a fixed ratio below the best cell for the same source substring.
+    As a result, at least one cell will be kept for each source substring.
+    We safely pruned more than 70% of cells using 10&#8722;5 as the beam ratio for sentence

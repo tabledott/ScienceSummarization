@@ -1,0 +1,8 @@
+stantiation of a rule takes place only at the time that the next sibling is the distinguished [end] node, a special node that signifies a return to the level of the parent.
+    The rule can be acquired by tracing back through the left siblings, until the distinguished [start] node is encountered, although this is not done in practice until the entire parse is completed.
+    The parse nodes contain a set of features whose values will be modified through the unification process.
+    All modifications to features are made nondestructively by copying a parse node each time a hypothesis is updated.
+    Thus each independent hypothesis is associated with a particular parse node that contains all of the relevant feature information for that hypothesis.
+    As a consequence, all hypotheses can be pursued in parallel, and no explicit backtracking is ever done.
+    Control is repeatedly passed to the currently most probable hypothesis, until a complete sentence is found and all of the input stream is accounted for.
+   

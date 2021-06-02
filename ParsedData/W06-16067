@@ -1,0 +1,7 @@
+ples in order to induce xRS rules for several models.
+    In our simplest model, we assume that each tuple (7r, F, A) in our automatically annotated corpus could be produced by applying a combination of minimally syntactified, lexicalized, phrase-based compatible xRS rules, and minimal/necessary, non-lexicalized xRS rules.
+    We call a rule non-lexicalized whenever it does not have any directly aligned source-to-target words.
+    Rules r9&#8211;r12 in Figure 1 are examples of non-lexicalized rules.
+    Minimally syntactified, lexicalized, phrasebased-compatible xRS rules are extracted via a simple algorithm that finds for each foreign phrase FZj , the smallest xRS rule that is consistent with the foreign phrase FZj , the English syntactic tree 7r, and the alignment A.
+    The algorithm finds for each foreign/source phrase span its projected span on the English side and then traverses the English parse tree bottom up until it finds a node that subsumes the projected span.
+    If this node has children that fa

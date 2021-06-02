@@ -1,0 +1,8 @@
+to an approximation because the true objective function was hard to normalize.
+    Stepping back from EM, we may generally envision parameter estimation for probabilistic modeling as pushing probability mass toward the training examples.
+    We must consider not only where the learner pushes the mass, but also from where the mass is taken.
+    In this paper, we describe an alternative to EM: contrastive estimation (CE), which (unlike EM) explicitly states the source of the probability mass that is to be given to an example.1 One reason is to make normalization efficient.
+    Indeed, CE generalizes EM and other practical techniques used to train log-linear models, including conditional estimation (for the supervised case) and Riezler&#8217;s approximation (for the unsupervised case).
+    The other reason to use CE is to improve accuracy.
+    CE offers an additional way to inject domain knowledge into unsupervised learning (Smith and Eisner, 2005).
+    CE hypothesizes that each positive example in training impl

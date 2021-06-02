@@ -1,0 +1,9 @@
+indicates that there is an np-movement out of the VP whose root node is ilo.
+    The movement attributes are generated at the parent node of the initial trace.
+    For example, V:NP is a node representing normal transitive verbs which take an NP as complement.
+    When V:NP receives an item representing the passive sense of the word eaten, V:NP creates another item &lt; [i, i] , ((cat v) -npbarrier +nppg (np-atts (cat n))), 0&gt; This item will not be combined with any item from NP node because the NP complement is assumed to be an np-trace.
+    The item is then sent to nodes dominating V:NP.
+    As the item propagates further, the attributes is carried with it, simulating the effect of movement.
+    The np-movement land at IP node when the IP node combines an item from subject NP and another item from Ibar with np-movement attributes.
+    A precondition on the landing is that the attributes of the former can be unified with the value of np-atts of the latter.
+    Wh-movements are dealt with by attributes whp

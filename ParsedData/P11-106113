@@ -1,0 +1,5 @@
+ion After running label propagation (LP), we compute tag probabilities for foreign word types x by marginalizing the POS tag distributions of foreign trigrams ui = x&#8722; x x+ over the left and right context words: where the qi (i = 1, ... , |Vf|) are the label distributions over the foreign language vertices and &#181; and &#957; are hyperparameters that we discuss in &#167;6.4.
+    We use a squared loss to penalize neighboring vertices that have different label distributions: kqi &#8722; qjk2 = Ey(qi(y) &#8722; qj(y))2, and additionally regularize the label distributions towards the uniform distribution U over all possible labels Y.
+    It can be shown that this objective is convex in q.
+    The first term in the objective function is the graph smoothness regularizer which encourages the distributions of similar vertices (large wij) to be similar.
+    The second term is a regularizer and encourages all type marginals to be uniform to the extent that is allowed by the first two terms (cf. maximum entropy p

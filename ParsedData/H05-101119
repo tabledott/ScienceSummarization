@@ -1,0 +1,8 @@
+eature weights fixed to their average values for the previous learning pass, to evaluate current performance of the model.
+			We iterate this pro cedure until a local optimum is found.Next, we used a fixed weight of 1.0 for the wordassociation feature, which we expect to be most im portant feature in the model.
+			Allowing all weights tovary allows many equivalent sets of weights that dif fer only by a constant scale factor.
+			Fixing one weight eliminates a spurious apparent degree of freedom.
+			This necessitates, however, employing a version ofperceptron learning that uses a learning rate parameter.
+			As described by Collins, the perceptron up date rule involves incrementing each weight by the difference in the feature values being compared.
+			Ifthe feature values are discrete, however, the mini mum difference may be too large compared to theunweighted association score.
+			We therefore multiply the feature value difference by a learning rate pa rameter ? to allow smaller increments when needed: ?i ? ?i 

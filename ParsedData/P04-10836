@@ -1,0 +1,12 @@
+vector .2 The items contain d-spans, rather than ordinary spans, because sions of a vector.
+    E.g., is a vector spanning dimensions 1 through .
+    See Melamed (2003) for definitions of cardinality, d-span, and the operators and .
+    Parser C needs to know all the boundaries of each item, not just the outermost boundaries.
+    Some (but not all) dimensions of an item can be inactive, denoted , and have an empty d-span ().
+    The input to Parser C is a tuple of parallel texts, with lengths .
+    The notation indicates that the Goal item must span the input from the left of the first word to the right of the last word in each component .
+    Thus, the Goal item must be contiguous in all dimensions.
+    Parser C begins with an empty chart.
+    The only inferences that can fire in this state are those with no antecedent items (though they can have antecedent production rules).
+    In Logic C, is the value that the grammar assigns to the terminal production .
+    The range of this value depends on the semiring

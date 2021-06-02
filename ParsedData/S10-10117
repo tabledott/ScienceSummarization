@@ -1,0 +1,10 @@
+by explicitly measuring its homogeneity and its completeness.
+    Homogeneity refers to the degree that each cluster consists of data points primarily belonging to a single GS class, while completeness refers to the degree that each GS class consists of data points primarily assigned to a single cluster (Rosenberg and Hirschberg, 2007).
+    Let h be homogeneity and c completeness.
+    V-Measure is the harmonic mean of h and c, i.e.
+    V M = 2&#183;h&#183;c h+c .
+    Homogeneity.
+    The homogeneity, h, of a clustering solution is defined in Formula 1, where H(S|K) is the conditional entropy of the class distribution given the proposed clustering and H(S) is the class entropy.
+    When H(S|K) is 0, the solution is perfectly homogeneous, because each cluster only contains data points that belong to a single class.
+    However in an imperfect situation, H(S|K) depends on the size of the dataset and the distribution of class sizes.
+    Hence, instead of taking the raw conditional entropy, V-Measure normalises it

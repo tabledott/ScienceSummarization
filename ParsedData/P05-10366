@@ -1,0 +1,8 @@
+ we only generate short versions for which we have rules.
+    If we have never before seen the long version, we leave it alone, and in the rare case when we never see the long version as an expansion of itself, we allow only the short version.
+    We do not use a packed tree structure, because we make far fewer sentences.
+    Additionally, as we are traversing the list of rules to compress the sentences, we keep the list capped at the 100 compressions with the highest Pexpand(l  |s).
+    We eventually truncate the list to the best 25, still based upon Pexpand(l  |s).
+    One difficulty in the use of training data is that so many compressions cannot be modeled by our simple method.
+    The rules it does model, immediate constituent deletion, as in taking out the ADVP , of S &#8594; ADVP , NP VP ., are certainly common, but many good deletions are more structurally complicated.
+    One particular type of rule, such as NP(1) &#8594; NP(2) CC NP(3), where the parent has at least one child with the same label as i

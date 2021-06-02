@@ -1,0 +1,8 @@
+ class, and there are no constraints placed on the parameters of these multinomials besides being positive and summing to one.
+    This means that all the standard estimation methods (e.g.
+    Expectation Maximization, Variational Bayes) extend directly to tied PCFGs.
+    Maximum likelihood estimation provides a point estimate of &#175;&#952;.
+    However, often we want to incorporate information about &#952;&#175; by modeling its prior distribution.
+    As a prior, for each N&#175; E JV&#175; we will specify a Dirichlet distribution over &#952;N&#175; with hyperparameters &#945; &#175;N.
+    The Dirichlet has the density function: Thus the prior over &#952; is a product of Dirichlets,which is conjugate to the PCFG likelihood function (Johnson et al., 2007).
+    That is, the posterior P(&#175;&#952;|s, t, &#945;) is also a product of Dirichlets, also factoring into a Dirichlet for each nonterminal &#175;N, where the parameters &#945;&#175;r are augmented by the number of times rule r&#175; is observed in tree

@@ -1,0 +1,10 @@
+d y&#8727; = argmaxy&#8712;Y h(y), which can be easily solved using dynamic programming and MST, respectively.
+    Thus, it is these constraints that complicate the optimization.
+    Our approach gets around this difficulty by introducing new variables, u(i, j), that serve to enforce agreement between the y(i, j) and z(i, j) variables.
+    In the next section we will show that these u(i, j) variables are actually Lagrange multipliers for the z(i, j) = y(i, j) constraints.
+    Our parsing algorithm is shown in Figure 1.
+    At each iteration k, the algorithm finds y(k) E Y using an MST algorithm, and z(k) E i through separate decoding of the (n + 1) sibling models.
+    The u(k) variables are updated if y(k)(i, j) =&#65533; z(k)(i, j) 1This is equivalent to Eq.
+    1 when &#947;(i, j) = 0 for all (i, j).
+    In some cases, however, it is convenient to have a model with non-zero values for the &#947; variables; see the Appendix.
+    Note that this definition of h(y) allows argmaxy&#8712;Y h(y) to be calculated e

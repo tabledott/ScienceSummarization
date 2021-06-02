@@ -1,0 +1,9 @@
+model to induce large numbers of plausible semantic and syntactic clusters.
+    Both approaches have two flaws: they cannot deal well with ambiguity, though Schiitze addresses this issue partially, and they do not cope well with rare words.
+    Since rare and ambiguous words are very common in natural language, these limitations are serious.
+  
+  
+    Whereas earlier methods all share the same basic intuition, i.e. that similar words occur in similar contexts, I formalise this in a slightly different way: each word defines a probability distribution over all contexts, namely the probability of the context given the word.
+    If the context is restricted to the word on either side, I can define the context distribution to be a distribution over all ordered pairs of words: the word before and the word after.
+    The context distribution of a word can be estimated from the observed contexts in a corpus.
+    We can then measure the similarity of words by the similarity of their context distributions, using the Ku

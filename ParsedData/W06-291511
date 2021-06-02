@@ -1,0 +1,9 @@
+e naive Bayes model.
+    S is naturally modeled as a binomial variable, where &#964; is the parameter of S. S represents how likely it is that a sentence strongly conveys a perspective.
+    We call this model the Latent Sentence Perspective Model (LSPM) because S is not directly observed.
+    The graphical model representation of LSPM is shown in Figure 2.
+    To use LSPM to identify the perspective of a new document D with unknown sentence perspectives S, we calculate posterior probabilities by summing out possible combinations of sentence perspective in the document and parameters.
+    As before, we resort to MCMC methods to sample from the posterior distributions, given in Equations (5) and (6).
+    As is often encountered in mixture models, there is an identifiability issue in LSPM.
+    Because the values of S can be permuted without changing the likelihood function, the meanings of s0 and s1 are ambiguous.
+    In Figure 3a, four &#952; values are used to represent the four possible combinations of docume

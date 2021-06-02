@@ -1,0 +1,9 @@
+ 1 lists all the parameter tables needed in each stage and their data structures1.
+    Among these models, the lexicon probability table (TTable) is the largest.
+    It should contain all the p(fi7 ej) entries, which means the table will have an entry for every distinct source and target word pair fi7 ej that co-occurs in at least one sentence pair in the corpus.
+    However, to keep the size of this table manageable, low probability entries are pruned.
+    Still, when training the alignment models on large corpora this statistical lexicon often consumes several gigabytes of memory.
+    The computation time of aligning a sentence pair obviously depends on the sentence length.
+    E.g. for IBM 1 that alignment is O(J &#8727; I), for the HMM alignment it is O(J + I2), with J the number of words in the source sentence and I the number of words in the target sentence.
+    However, given that the maximum sentence length is fixed, the time complexity of the E-step grows linearly with the number of sentence pairs.
+ 

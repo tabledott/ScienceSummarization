@@ -1,0 +1,10 @@
+ the six sources.
+    Mention extractor.
+    We evaluate each coreference model using both true mentions (i.e., gold standard mentions4) and system mentions (i.e., automatically identified mentions).
+    To extract system mentions from a test text, we trained a mention extractor on the training texts.
+    Following Florian et al. (2004), we recast mention extraction as a sequence labeling task, where we assign to each token in a test text a label that indicates whether it begins a mention, is inside a mention, or is outside a mention.
+    Hence, to learn the extractor, we create one training instance for each token in a training text and derive its class value (one of b, i, and o) from the annotated data.
+    Each instance represents wi, the token under consideration, and consists of 29 linguistic features, many of which are modeled after the systems of Bikel et al. (1999) and Florian et al.
+    (2004), as described below.
+    Lexical (7): Tokens in a window of 7: {wi&#8722;3, ... , wi+3}.
+    Capitalization 

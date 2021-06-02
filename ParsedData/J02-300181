@@ -1,0 +1,7 @@
+feature in the baseline system, it was found beneficial to use the subcat feature only for NP constituents.
+    Combining the FEG priors and subcategorization feature into a single system resulted in performance of 81.6%, no improvement over using FEG priors without subcategorization.
+    We suspect that the two seemingly different approaches in fact provide similar information.
+    For example, in our hypothetical example of the sentence He opened the door vs. the sentence The door opened, the verb open would have high priors for the FEGs {AGENT, THEME} and {THEME}, but a low prior for {AGENT}.
+    In sentences with only one candidate frame element (the subject in The door closed), the use of the FEG prior will cause it to be labeled THEME, even when the feature probabilities prefer labeling a subject as AGENT.
+    Thus the FEG prior, by representing the set of arguments the predicate is likely to take, essentially already performs the function of the subcategorization feature.
+    The FEG prior allows us to

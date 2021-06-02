@@ -1,0 +1,8 @@
+ser, Model 0, factors each dependency tree into a set of grandchild parts&#8212;pairs of dependencies connected head-to-tail.
+    Specifically, a grandchild part is a triple of indices (g, h, m) where (g, h) and (h, m) are dependencies.3 In order to parse this factorization, we augment both complete and incomplete spans with grandparent indices; for brevity, we refer to these augmented structures as g-spans.
+    Formally, we denote a complete g-span as Ch,e, where Ch,e is a normal complete span and g is an index lying outside the range [h, e], with the implication that (g, h) is a dependency.
+    Incomplete g-spans are defined analogously and are denoted as Ih,..
+    Figure 4 depicts complete and incomplete gspans and provides a graphical specification of the SCOREG is the scoring function for grandchild parts.
+    We use the g-span identities as shorthand for their chart entries (e.g., Igi,j refers to the entry containing the maximum score of that g-span).
+    Model 0 dynamic-programming algorithm.
+    The a

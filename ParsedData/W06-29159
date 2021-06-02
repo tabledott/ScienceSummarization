@@ -1,0 +1,10 @@
+binary random variable Sm,n.
+    To evaluate Sm,n, how strongly a sentence reflects a particular perspective, we calculate the following conditional probability.
+    We model the process of generating documents from a particular perspective as follows: First, the parameters &#960; and &#952; are sampled once from prior distributions for the whole corpus.
+    Beta and Dirichlet are chosen because they are conjugate priors for binomial and multinomial distributions, respectively.
+    We set the hyperparameters &#945;&#960;, &#946;&#960;, and &#945;&#952; to one, resulting in non-informative priors.
+    A document perspective Dn is then sampled from a binomial distribution with the parameter &#960;.
+    The value of Dn is either d0 (Israeli) or d1 (Palestinian).
+    Words in the document are then sampled from a multinomial distribution, where Ln is the length of the document.
+    A graphical representation of the model is shown in Figure 1.
+    The model described above is commonly known as a naive Bayes (NB) mo

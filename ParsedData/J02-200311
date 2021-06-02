@@ -1,0 +1,7 @@
+  |run,subj) is likely to be much greater than p((dog) | run,subj) and thus is not a good approximation of p((dog)  |run,subj).
+    What can be done, though, is to condition on sets of concepts.
+    If it can be shown that p(v  |c', r), for some hypernym c' of c, is a reasonable approximation of p(v  |c, r), then we have a way of estimating p(c  |v, r).
+    The probability p(v  |c, r) can be obtained from p(c  |v, r) using Bayes&#8217; theorem: Since p(c  |r) and p(v  |r) are conditioned on the argument slot only, we assume these can be estimated satisfactorily using relative frequency estimates.
+    Alternatively, a standard smoothing technique such as Good-Turing could be used.5 This leaves p(v | c, r).
+    Continuing with the (dog) example, the proposal is to estimate p(run  |(dog),subj) using a relative-frequency estimate of p(run  |(animal),subj) or an estimate based on a similar, suitably chosen class.
+    Thus, assuming this choice of class, p((dog)  |run,subj) would be approximated as follows: The fol

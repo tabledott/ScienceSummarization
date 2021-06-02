@@ -1,0 +1,6 @@
+ernative parser for use with stable grammars for batch parsing of large bodies of text.
+    The existing chart parser, although slower, has been retained since it is more suited to grammar development, because of the speed with which modifications to the grammar can be compiled and its better debugging facilities (Boguraev et al. 1988).
+    Our nondeterministic LR parser is based on Kipps' (1989) reformulation of Tomita's (1987) parsing algorithm and uses a graph-structured stack in the same way.
+    Our parser is driven by the LALR(1) state table computed from the backbone grammar, but in addition on each reduction the parser performs the unifications appropriate to the unification grammar version of the backbone rule involved.
+    The analysis being pursued fails if one of the unifications fails.
+    The parser performs sub-analysis sharing (where if two or more trees have a common sub-analysis, that sub-analysis is represented only once), and local ambiguity packing (in which sub-analyses that have the sam

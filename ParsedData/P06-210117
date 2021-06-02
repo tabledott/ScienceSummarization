@@ -1,0 +1,6 @@
+sited elements, in the decoding of sentence i.
+    (Depending on the task, the elements may be words, bigrams, labeled constituents, etc.)
+    Our goal is to maximize P, so during a step of deterministic annealing, we need to maximize the expectation of P when the sentences are decoded randomly according to equation (5).
+    Although this expectation is continuous and differentiable as a function of 0, unfortunately it seems hard to compute for any given 0.
+    We observe however that an equivalent goal is to minimize &#8722; log P. Taking that as our loss function instead, equation (6) now needs to minimize the expectation of &#8722; log P,5 which decomposes somewhat more nicely: = E[log A] &#8722; E[log C] (8) where the integer random variables A = Pi ai and C = Pi ci count the number of posited and correctly posited elements over the whole corpus.
+    To approximate E[g(A)], where g is any twicedifferentiable function (here g = log), we can approximate g locally by a quadratic, given by the Taylor expansio

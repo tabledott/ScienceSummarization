@@ -1,0 +1,6 @@
+ additional iterations over the data.
+			861 Step 0 Step 1 Step 2 context counting unsmoothed probs and interpol.
+			weights interpolated probabilities Input key wii?n+1 (same as Step 0 output) (same as Step 1 output) Input value f(wii?n+1) (same as Step 0 output) (same as Step 1 output) Intermediate key wii?n+1 wi?1i?n+1 wi?n+1i Sharding wii?n+1 wi?1i?n+1 w i?n+2 i?n+1 , unigrams duplicated Intermediate value fKN (wii?n+1) wi,fKN (wii?n+1) fKN (wii?n+1)?D fKN (wi?1i?n+1) ,?(wi?1i?n+1) Output value fKN (wii?n+1) wi, fKN (wii?n+1)?D fKN (wi?1i?n+1) ,?(wi?1i?n+1) PKN (wi|wi?1i?n+1), ?(wi?1i?n+1) Table 1: Extra steps needed for training Interpolated Kneser-Ney SmoothingKneser-Ney Smoothing counts lower-order n grams differently.
+			Instead of the frequency of the (n? 1)-gram, it uses the number of unique single word contexts the (n?1)-gram appears in.
+			We use fKN(?)
+			to jointly denote original frequencies for the highest order and context counts for lower orders.After the n-gram counting step, we process the

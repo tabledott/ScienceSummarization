@@ -1,0 +1,8 @@
+normalize or disambiguate these mentions.
+    We use eZ E E to denote both an entity and its name (i.e., the tokens in its mention).
+    A relation mention is a sequence of text (including one or more entity mentions) which states that some ground fact r(e) is true.
+    For example, &#8220;Steve Ballmer, CEO of Microsoft, spoke recently at CES.&#8221; contains three entity mentions as well as a relation mention for CEO-of(Steve Ballmer, Microsoft).
+    In this paper we restrict our attention to binary relations.
+    Furthermore, we assume that both entity mentions appear as noun phrases in a single sentence.
+    The task of aggregate extraction takes two inputs, E, a set of sentences comprising the corpus, and an extraction model; as output it should produce a set of ground facts, I, such that each fact r(e) E I is expressed somewhere in the corpus.
+    Sentential extraction takes the same input and likewise produces I, but in addition it also produces a function, F : I &#8212;* P(E), which identifies, for ea

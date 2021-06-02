@@ -1,0 +1,11 @@
+bination of error-specific classifiers and a large generic language model with handtuned heuristics for combining their scores to maximize precision.
+    Finally, Yi et al. (2008) and Hermet et al.
+    (2008) use n-gram counts from the web as a language model approximation to identify likely errors and correction candidates.
+  
+  
+    We combine evidence from the two kinds of datadriven models that have been used for error detection and correction (error-specific classifiers and a language model) through a meta-classifier.
+    We use the term primary models for both the initial errorspecific classifiers and a large generic language model.
+    The meta-classifier takes the output of the primary models (language model scores and class probabilities) as input.
+    Using a meta-classifier for ensemble learning has been proven effective for many machine learning problems (see e.g.
+    Dietterich 1997), especially when the combined models are sufficiently different to make distinct kinds of errors.
+    The meta-cla

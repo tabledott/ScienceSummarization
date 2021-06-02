@@ -1,0 +1,10 @@
+ppropriately extended version of the search algorithm described in Section 5.
+    Using an n-best approximation, we might face the problem that the parameters trained with the GIS algorithm yield worse translation results even on the training corpus.
+    This can happen because with the modified model scaling factors, the n-best list can change significantly and can include sentences that have not been taken into account in training.
+    Using these sentences, the new model parameters might perform worse than the old model parameters.
+    To avoid this problem, we proceed as follows.
+    In a first step, we perform a search, compute an n-best list, and use this n-best list to train the model parameters.
+    Second, we use the new model parameters in a new search and compute a new n-best list, which is combined with the existing n-best list.
+    Third, using this extended n-best list, new model parameters are computed.
+    This process is iterated until the resulting n-best list does not change.
+    In this al

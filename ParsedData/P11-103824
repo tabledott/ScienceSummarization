@@ -1,0 +1,8 @@
+ed words, subject to the task definition outlined in Section 3.1.
+    The total number of ill-formed words contained in the SMS and Twitter datasets were 3849 and 1184, respectively.'
+    The language filtering of Twitter to automatically identify English tweets was based on the language identification method of Baldwin and Lui (2010), using the EuroGOV dataset as training data, a mixed unigram/bigram/trigram byte feature representation, and a skew divergence nearest prototype classifier.
+    We reimplemented the state-of-art noisy channel model of Cook and Stevenson (2009) and SMT approach of Aw et al. (2006) as benchmark methods.
+    We implement the SMT approach in Moses (Koehn et al., 2007), with synthetic training and tuning data of 90,000 and 1000 sentence pairs, respectively.
+    This data is randomly sampled from the 1.5GB of clean Twitter data, and errors are generated according to distribution of SMS corpus.
+    The 10-fold cross-validated BLEU score (Papineni et al., 2002) over this data is 0.81.
+ 

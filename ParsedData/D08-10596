@@ -1,0 +1,9 @@
+extending the deterministic Covington algorithm for projective dependency parsing (Covington, 2001).
+    As shown in Figure 2, the decoder works incrementally, building a state item (i.e. partial parse tree) word by word.
+    When each word is processed, links are added between the current word and its predecessors.
+    Beam-search is applied by keeping the B best items in the agenda at each processing stage, while partial candidates are compared by scores from the graph-based model, according to partial graph up to the current word.
+    Before decoding starts, the agenda contains an empty sentence.
+    At each processing stage, existing partial candidates from the agenda are extended in all possible ways according to the Covington algorithm.
+    The top B newly generated candidates are then put to the agenda.
+    After all input words are processed, the best candidate output from the agenda is taken as the final output.
+    The projectivity of the output dependency trees is guaranteed by the incremental Covi

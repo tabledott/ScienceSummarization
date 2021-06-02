@@ -1,0 +1,8 @@
+ j+1 f j+2 f j+3 Figure 1: An example of sparse features for a phrase translation.with the same source and target sides, only the fre quently observed word alignment is kept to reduce the grammar size.
+			3.2.1 Word Pair FeaturesWord pair features reflect the word correspon dence in a hierarchical phrase.
+			Figure 1 illustratesan example of sparse features for a phrase trans lation pair f j, ..., f j+2 and ei, ..., ei+3 1.
+			From theword alignment encoded in this phrase, we can ex tract word pair features of (ei, f j+1), (ei+2, f j+2) and (ei+3, f j).
+			The bigrams of word pairs are also used to capture the contextual dependency.
+			We assumethat the word pairs follow the target side order ing.
+			For instance, we define ((ei?1, f j?1), (ei, f j+1)),((ei, f j+1), (ei+2, f j+2)) and ((ei+2, f j+2), (ei+3, f j)) in dicated by the arrows in Figure 1.
+			Extracting bigram word pair features followingthe target side ordering implies that the corresponding source side is reordered according to the tar get side.

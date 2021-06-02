@@ -1,0 +1,10 @@
+ntain newswire material, and so the two sources differ from each other in terms of vocabulary and syntactic constructs.
+    1,000 annotated sentences from the Brown section of the Penn Treebank were used as the seed data.
+    Co-training then proceeds using the WSJ.3 Note that no manually created parses in the WSJ domain are used by the parser, even though it is evaluated using WSJ material.
+    In Figure 8, the lower curve shows performance for the CollinsCFG parser (again evaluated on section 0).
+    The difference in corpus domain does not hinder cotraining.
+    The parser performance is boosted from 75% to 77.3%.
+    Note that most of the improvement is within the first 5 iterations.
+    This suggests that the parsing model may be adapting to the vocabulary of the new domain.
+    We also conducted an experiment in which the initial seed data was supplemented with a tiny amount of annotated data (100 manually annotated WSJ sentences) from the domain of the unlabelled data.
+    This experiment simulates the

@@ -1,0 +1,9 @@
+al, patterns.
+    Table 2 shows the distribution of pattern length in the train data.
+    We also did not attempt to extract passivevoice VO relations.
+    The test procedure has two parameters: (a) maximum context size of a candidate, which limits what queries are performed on the memory, and (b) the threshold 9 used for establishing a matching tile, which determines how to make use of the query results.
+    Recall and precision figures were obtained for various parameter values.
+    Fo (van Rijsbergen, 1979), a common measure in information retrieval, was used as a single-figure measure of performance: We use # = 1 which gives no preference to either recall or precision.
+    Table 3 summarizes the optimal parameter settings and results for NP, VO, and SV on the test set.
+    In order to find the optimal values of the context size and threshold, we tried 0.1 &lt; 9 &lt; 0.95, and maximum context sizes of 1,2, and 3.
+    Our experiments used 5-fold cross-validation on the training data to determine the optima

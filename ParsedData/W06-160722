@@ -1,0 +1,8 @@
+05 evaluation (www.nist.gov/speech/tests/mt).
+    These are summarized in table 2.
+    Due to the large size of the out-of-domain UN corpus, we trained one phrasetable on it, and another on all other parallel corpora (smoothing was applied to both).
+    We also used a subset of the English Gigaword corpus to augment the LM training material.
+    Table 3 contains results for the Chinese-English experiments, including fixed-discount with unigram smoothing (FDU), and Koehn-Och-Marcu smoothing with the IBM1 model (KOM-IBM1) as described in section 3.3.
+    As with the broad-coverage experiments, all of the black-box smoothing techniques do significantly better than the RF baseline.
+    However, GT appears to work better in the large-corpus setting: it is statistically indistinguishable from KN3, and both these methods are significantly better than all other fixeddiscount variants, among which there is little difference.
+    Not surprisingly, the two glass-box methods, ZN-IBM1 and KOM-IBM1, do poorly when used on 

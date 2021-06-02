@@ -1,0 +1,9 @@
+4.3%.
+    The results after this improvement are shown in the third row of Table 2.
+    After linearly combining the predictions from the top matching rules we have a probability distribution over phones for each letter.
+    It has been shown that modeling the probability of sequences of phones can greatly reduce the error (Jiang et al., 1997).
+    We learned a trigram phone sequence model and used it to re-score the N-best predictions from the basic model.
+    We computed the score for a sequence of phones given a sequence of letters, as follows: Here the probabilities P (pijl1; l2 ::: ln) are the distributions over phones that we obtain for each letter from combination of the matching rules.
+    The weight a for the phone sequence model was estimated from a held-out set by a linear search.
+    This model further improved our performance and the results it achieves are in the fourth row of Table 2.
+    The final improvement is adding a term from a vowel fourgram language model to equation 1 with a weight ,Q.

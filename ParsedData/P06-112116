@@ -1,0 +1,8 @@
+r(pi|e) is a prob lem equivalent to syntactic parsing and thus is not discussed here.
+			Estimating Pr(f |pi) is the task of syntax-based translation models (SBTM).
+			Given a rule set R, our SBTM makes the common assumption that left-most compositions of xRs rules ?i = r1 ? ...
+			rn are independent from one another in a given derivation ?i ? ?, where ? is the set of all derivations constructible from G = (pi, f ,a) using rules of R. Assuming that ? is the set of all subtree decompositions of pi corresponding to derivations in ?, we define the estimate: Pr(f |pi) = 1 |?| ? ?i??
+			rj??i p(rhs(rj)|lhs(rj)) (3) under the assumption: ? rj?R:lhs(rj)=lhs(ri) p(rhs(rj)|lhs(rj)) = 1 (4) It is important to notice that the probability distribution defined in Equation 3 requires a normalization factor (|?|) in order to be tight, i.e., sum to 1 over all strings fi ? F that can be derived 4We denote general probability distributions with Pr(?)
+			and use p(?)
+			for probabilities assigned by our models.
+			964 Xa Y b a?

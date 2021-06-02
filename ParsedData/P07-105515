@@ -1,0 +1,7 @@
+chosen arbitrarily, but it is usually taken to be the k labelings that have the highest score under the old weight vector w(z) (McDonald et al., 2005).
+    In this manner, the learning algorithm can update its parameters relative to those labelings closest to the decision boundary.
+    Of all the weight vectors that satisfy these constraints, MIRA chooses the one that is as close as possible to the previous weight vector in order to retain information about previous updates.
+    The loss function L(y, y') is a positive real valued function and is equal to zero when y = y'.
+    This function is task specific and is usually the hamming loss for sequence classification problems (Taskar et al., 2003).
+    Experiments with different loss functions for the joint sentence-document model on a development data set indicated that the hamming loss over sentence labels multiplied by the 0-1 loss over document labels worked best.
+    An important modification that was made to the learning algorithm deals with how the k co

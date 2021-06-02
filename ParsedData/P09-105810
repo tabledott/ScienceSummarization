@@ -1,0 +1,7 @@
+ed MIRA (Crammer, 2004), which has the desired accuracy and scalability properties.
+    MIRA combines the advantages of margin-based and perceptron-style learning with an optimization scheme.
+    In particular, we use a generalized version of MIRA (Crammer et al., 2005; McDonald, 2006) that can incorporate k-best decoding in the update procedure.
+    To understand the concept of kbest MIRA, we begin with a linear score function: where w is a weight vector and f is a feature representation of an input x and an output y.
+    Learning a mapping between an input-output pair corresponds to finding a weight vector w such that the best scoring path of a given sentence is the same as (or close to) the correct path.
+    Given a training example (xt, yt), MIRA tries to establish a margin between the score of the correct path s(xt,yt; w) and the score of the best candidate path s(xt, y; w) based on the current weight vector w that is proportional to a loss function L(yt, y).
+    In each iteration, MIRA updates the weigh

@@ -1,0 +1,6 @@
+ steepest-ascent uses the first partial derivative (the gradient) of the objective function to determine parameter updates.
+    L-BFGS improves on steepest-ascent by also considering the second partial derivative (the Hessian).
+    In fact, calculation of the Hessian can be prohibitively expensive, and so L-BFGS estimates this derivative by observing the change in a fixed number of previous gradients (hence the limited memory).
+    Malouf (2002) gives a more thorough description of numerical optimization methods applied to log-linear models.
+    He also presents a convincing demonstration that general purpose numerical optimization methods can greatly outperform iterative scaling methods for many NLP tasks.3 Malouf uses standard numerical computation libraries Clark and Curran Wide-Coverage Efficient Statistical Parsing as the basis of his implementation.
+    One of our aims was to provide a self contained estimation code base, and so we implemented our own version of the L-BFGS algorithm as described in Noce

@@ -1,0 +1,9 @@
+ can extend our experiments not only to the WSJ, but also to the German NEGRA and the Chinese CTB.
+    (Zollmann and Sima'an 2005 propose a different consistent estimator for DOP, which we cannot go into here).
+  
+  
+    Analogous to U-DOP, UML-DOP is an unsupervised generalization of ML-DOP: it first assigns all unlabeled binary trees to a set of sentences and next extracts a large (random) set of subtrees from this tree set.
+    It then reestimates the initial probabilities of these subtrees by ML-DOP on the sentences from a held-out part of the tree set.
+    The training is carried out by dividing the tree set into two equal parts, and reestimating the subtrees from one part on the other.
+    As initial probabilities we use the subtrees' relative frequencies as described in section 2 (smoothed by Good-Turing -- see Bod 1998), though it would also be interesting to see how the model works with other initial parameters, in particular with the usage frequencies proposed by Zuidema (2006).
+    As with U-DOP, t

@@ -1,0 +1,8 @@
+wice as fast as) extracting on 30-best parses.
+    These BLEU score results are summarized in Table 2, which also shows that decoding with forest-extracted rules is less than twice as slow as with 1-best rules, and only fractionally slower than with 30-best rules.
+    We also investigate the question of how often rules extracted from non 1-best parses are used by the decoder.
+    Table 3 shows the numbers of rules extracted from 1-best, 30-best and forest-based extractions, and the numbers that survive after filtering on the dev set.
+    Basically in the forest-based case we can use about twice as many rules as in the 1best case, or about 1.5 times of 30-best extraction.
+    But the real question is, are these extra rules really useful in generating the final (1-best) translation?
+    The last row shows that 16.3% of the rules used in 1-best derivations are indeed only extracted from non 1-best parses in the forests.
+    Note that this is a stronger condition than changing the distribution of rules by conside

@@ -1,0 +1,10 @@
+precision and recall (six times) than the co-occurrence approach on the small 15MB dataset.
+			In fact, only on the 150MB dataset did the co-occurrence system have higher recall.
+			With datasets larger than 150MB, the co occurrence algorithm reduces its running time by filtering out grammatical relationships for words that occurred fewer than k = 40 times and hence recall is affected (in contrast, the pattern-based approach may generate a hyponym for a word that it only sees once).
+			5.3.2 Definition questions Following Fleischman et al (2003), we select the 50 definition questions from the TREC2003 (Voorhees 2003) question set.
+			These questions are of the form ?Who is X??
+			and ?What is X??
+			For each question (e.g., ?Who is Niels Bohr??, ?What is feng shui??)
+			we extract its respective instance (e.g., ?Neils Bohr?
+			and ?feng shui?), look up their corresponding hyponyms from our is-a table, and present the corresponding hyponym as the answer.
+			We compare the results of both our systems with WordN

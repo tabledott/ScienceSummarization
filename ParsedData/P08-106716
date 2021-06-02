@@ -1,0 +1,5 @@
+teger t to ora[v](t), the max. number of matched brackets Pseudocode 4 Forest Oracle Algorithm When node v is combined with another node u along a hyperedge e = ((v, u), w), we need to combine the two oracle functions ora[v] and ora[u] by distributing the test brackets of w between v and u, and optimize the number of matched bracktes.
+    To do this we define a convolution operator &#174; between two functions f and g: where 1 is the indicator function, returning 1 if node w is found in the gold tree y*, in which case we increment the number of matched brackets.
+    We can also express Eq.
+    9 in a purely functional form where 1&#65533; is a translation operator which shifts a function along the axes: Above we discussed the case of one hyperedge.
+    If there is another hyperedge e&#8242; deriving node w, we also need to combine the resulting oracle functions from both hyperedges, for which we define a pointwise addition operator &#174;: Shown in Pseudocode 4, we perform these computations in a bottom-up to

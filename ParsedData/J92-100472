@@ -1,0 +1,10 @@
+mple - in general there would be multiple ways to get to a particular next word, and there are also constraints which kill certain paths and make it necessary to readjust probabilities on the fly.
+    In practice, one must find all possible ways to extend a word sequence, computing total path probability for each one, and then renormalize to assure that with probability 1.0 there is an advance to some next word.
+    It is the normalized probability contribution of all paths that can reach the next word that is used to update the log P calculation.
+  
+  
+    This research has benefited significantly from interactions with Lynette Hirschman and Victor Zue.
+    In addition, Jim Glass, David Goodine, and Christine Pao have all made significant contributions to the programming of the TINA system, for which I am deeply grateful.
+    I would also like to thank several anonymous reviewers for their careful critiques, the outcome of which was a substantially improved document.
+  
+

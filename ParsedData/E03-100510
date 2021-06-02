@@ -1,0 +1,9 @@
+ are bk + 1 different possibilities on the left branch.
+    Similarly, there are ci + 1 possibilities on the right branch.
+    We can create a subtree by choosing any possible left subtree and any possible right subtree.
+    Thus, there are aj= (bk+ 1)(ci + 1) possible subtrees headed by A @j. Goodman then gives a simple small PCFG with the following property: for every subtree in the training corpus headed by A, the grammar will generate an isomorphic subderivation with probability 1/a.
+    Thus, rather than using the large, explicit DOP1 model, one can also use this small PCFG that generates isomorphic derivations, with identical probabilities.
+    Goodman's construction is as follows.
+    For the node in figure 1, the following eight PCFG rules are generated, where the number in parentheses following a rule is its probability.
+    Goodman then shows by simple induction that subderivations headed by A with external nonterminals at the roots and leaves, internal nonterminals elsewhere have probability 1/a.
+ 

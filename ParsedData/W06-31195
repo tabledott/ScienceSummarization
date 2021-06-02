@@ -1,0 +1,11 @@
+n&#8217;s training data contains 75 nonterminals in our standard system, and 4000 nonterminals in the extended-category system.
+    Figure 1 illustrates the annotation and generalization process.
+  
+  
+    We employ a log-linear model to assign costs to the SynCFG.
+    Given a source sentence f, the preferred translation output is determined by computing the lowest-cost derivation (combination of hierarchical and glue rules) yielding f as its source side, where the cost of a derivation R1 o &#183; &#183; &#183; o Rn with respective feature vectors v1, ... , vn E Rm is given by Here, &#955;1, ... , &#955;m are the parameters of the loglinear model, which we optimize on a held-out portion of the training set (2005 development data) using minimum-error-rate training (Och, 2003).
+    We use the following features for our rules:
+  
+  
+    Our SynCFG rules are equivalent to a probabilistic context-free grammar and decoding is therefore an application of chart parsing.
+    Instead of the common method of converting 

@@ -1,0 +1,5 @@
+ to combinations of words w from the Wikipedia vocabulary V and categories c from the Wikipedia taxonomy C:  cos (q; e k ) = cos(q:T; e k :T ) (4)  w;c (q; e k ) =  1 if w2q:T and c2e k :C; 0 otherwise: The weight vector w models the magnitude of each word-category correlation, and can be learned by training on the query dataset described at the beginning of Section 4.
+			We used the kernel version of the large-margin ranking approach from (Joachims, 2002) which solves the optimization 13 problem in Figure 2.
+			The aim of this formulation is to find a weight vector w such that 1) the number of ranking constraints w (q; q:e)  w (q; e k )from the training data that are violated is mini mized, and 2) the ranking function w (q; e k ) generalizes well beyond the training data.
+			minimize: V (w; ) = 1 2 w
+			w+ C P  q;k subject to: w ((q; q:e) 

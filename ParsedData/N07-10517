@@ -1,0 +1,10 @@
+sholds on held-out data.
+    In our method, which we call hierarchical coarseto-fine parsing, we consider a sequence of PCFGs G0, G1,... Gn = G, where each Gi is a refinement of the preceding grammar Gi&#8722;1 and G is the full grammar of interest.
+    Each grammar Gi is related to G = Gn by a projection Trn&#8594;i or Tri for brevity.
+    A projection is a map from the non-terminal (including pre-terminal) symbols of G onto a reduced domain.
+    A projection of grammar symbols induces a projection of rules and therefore entire non-weighted grammars (see Fig.
+    1).
+    In our case, we also require the projections to be sequentially compatible, so that 7ri&#8594;j =7rk&#8594;j07ri&#8594;k.
+    That is, each projection is itself a coarsening of the previous projections.
+    In particular, we take the projection 7ri&#8594;j to be the map that collapses split symbols in round i to their earlier identities in round j.
+    It is straightforward to take a projection 7r and map a CFG G to its induced projection 7r

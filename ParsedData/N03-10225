@@ -1,0 +1,9 @@
+.
+    The purpose of this module is twofold: (1) to compensate for errors in the text parsing and Logic Form transformation phase, such as prepositional attachments and subject/object detection in verbs, (2) to detect correct answers when the NLP and XWN (Extended WordNet) axioms fail to provide all the necessary inferences.
+    During the relaxation, arguments to predicates in the question are incrementally uncoupled, the proof score is reduced, and the justification is re-attempted.
+    The loop between the Justification and the Relaxation modules continues until the proof succeeds, or the proof score is below a predefined threshold.
+    When all the candidate answers are processed, the candidate answers are ranked based on their proof scores, with the output from COGEX being the ranked answers and the answer justifications.
+  
+  
+    A text logic form (LF) is an intermediary step between syntactic parse and the deep semantic form.
+    The LF codification acknowledges syntax-based relationships such as: (1)

@@ -1,0 +1,10 @@
+gorithm, convergence is guaranteed, as in the limit the n-best list will contain all possible translations.
+    In practice, the algorithm converges after five to seven iterations.
+    In our experiments this final n-best list contains about 500&#8211;1000 alternative translations.
+    We might have the problem that none of the given reference translations is part of the n-best list because the n-best list is too small or because the search algorithm performs pruning which in principle limits the possible translations that can be produced given a certain input sentence.
+    To solve this problem, we define as reference translation for maximum-entropy training each sentence that has the minimal number of word errors with respect to any of the reference translations in the n-best list.
+    More details of the training procedure can be found in Och and Ney (2002).
+  
+  
+    In this section, we describe an efficient search architecture for the alignment template model.
+    In general, the search problem for stati

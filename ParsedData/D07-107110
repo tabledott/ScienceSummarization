@@ -1,0 +1,7 @@
+or our approach, and will be one of the baseline models for the experimental comparisons.The input to the ZC05 algorithm is a set of train ing examples (xi, zi) for i = 1 . . .
+			n. Each xi isa sentence, and each zi is a corresponding lambda expression.
+			The output from the algorithm is a pair (w,?)
+			specifying a set of parameter values, and a CCG lexicon.
+			Note that for a given training example (xi, zi), there may be many possible parses y which lead to the correct semantics zi.5 For this reason the training problem is a hidden-variable problem,where the training examples contain only partial information, and the CCG lexicon and parse deriva tions must be learned without direct supervision.
+			A central part of the ZC05 approach is a function GENLEX(x, z) which maps a sentence x together with semantics z to a set of potential lexical entries.
+			The function GENLEX is defined through a set of rules?see figure 2?that consider the expression z, and generate a set of categories that may help in building 

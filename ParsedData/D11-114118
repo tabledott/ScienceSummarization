@@ -1,0 +1,9 @@
+ et al., 2003), each bag of words is associated with a distribution over topics, Multinomial(Oe), and each topic is associated with a distribution over words, Multinomial(ot).
+    In addition, there is a one-to-one mapping between topics and Freebase type dictionaries.
+    These dictionaries constrain Oe, the distribution over topics for each entity string, based on its set of possible types, FB[e].
+    For example, OAmazon could correspond to a distribution over two types: COMPANY, and LOCATION, whereas OApple might represent a distribution over COMPANY, and FOOD.
+    For entities which aren&#8217;t found in any of the Freebase dictionaries, we leave their topic distributions Oe unconstrained.
+    Note that in absence of any constraints LabeledLDA reduces to standard LDA, and a fully unsupervised setting similar to that presented by Elsner et. al.
+    (2009).
+    In detail, the generative process that models our data for Named Entity Classification is as follows: Generate ze,i from Mult(Oe).
+    Generate the

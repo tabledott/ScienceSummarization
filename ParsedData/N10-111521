@@ -1,0 +1,6 @@
+ng each component the same weight, yield an accuracy of 90.8 on the CoNLL 2007 English dataset, making it the highest scoring system among the participants.
+    When we investigate the POS category of mistaken instances, we see that for all parsers, nodes with structures of depth 2 and more which are assigned an incorrect head are predominantly PPs (headed by &#8217;IN&#8217;), followed by NPs (headed by &#8217;NN&#8217;).
+    All parsers have a hard time dealing with PP attachment, but MST parser is better at it than NONDIR, and both are better than MALT.
+    Looking further at the mistaken instances, we notice a tendency of the PP mistakes of the NONDIR parser to involve, before the PP, an NP embedded in a relative clause.
+    This reveals a limitation of our parser: recall that for an edge to be built, the child must first acquire all its own children.
+    This means that in case of relative clauses such as &#8220;I saw the boy [who ate the pizza] with my eyes&#8221;, the parser must decide if the PP &#822

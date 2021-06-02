@@ -1,0 +1,10 @@
+rams score the same as the baseline method.
+    In such cases, the Bayesian hybrid method is clearly better.
+    On the other hand, when the words in the confusion set have different parts of speech - as in, for example, {there, their, they're) trigrams are often better than the Bayesian method.
+    We believe this is because trigrams look not just at a few words on either side of the target word, but at the part-of-speech sequence of the whole sentence.
+    This analysis indicates a complementarity between trigrams and Bayes, and suggests a combination in which trigrams would be applied first, but if trigrams determine that the words in the confusion set have the same part of speech for the sentence at issue, then the sentence would be passed to the Bayesian method.
+    This is a research direction we plan to pursue.
+  
+  
+    The work reported here builds on Yarowsky's use of decision lists to combine two component methods &#8212; context words and collocations.
+    Decision lists pool the evidence from the

@@ -1,0 +1,7 @@
+ring algorithm (Vilain et al., 1995) computes the F1 score (harmonic mean) of precision and recall based on the identifcation of unique coreference links.
+    We use the official MUC scorer implementation for the two MUC corpora and an equivalent implementation for ACE.
+    The B3 algorithm (Bagga and Baldwin, 1998) computes a precision and recall score for each CE: where RCe is the coreference chain to which ce is assigned in the response (i.e. the system-generated output) and KCe is the coreference chain that contains ce in the key (i.e. the gold standard).
+    Precision and recall for a set of documents are computed as the mean over all CEs in the documents and the F1 score of precision and recall is reported.
+    B3 Complications.
+    Unlike the MUC score, which counts links between CEs, B3 presumes that the gold standard and the system response are clusterings over the same set of CEs.
+    This, of course, is not the case when the system automatically identifies the CEs, so the scoring algorithm requires

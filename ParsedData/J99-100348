@@ -1,0 +1,9 @@
+tput causes alignment errors in predictable ways.
+    GSA employs several backing-off heuristics to reduce the number of errors.
+    Typical errors of commission are stray points of correspondence like the one in cell (H,e) in Figure 10.
+    This point indicates that (G,H) and (e,f) should form a 2 x 2 aligned block, whereas the lengths of the component segments suggest that a pair of 1 x 1 blocks is more likely.
+    In a separate development bitext, I have found that SIMR is usually wrong in these cases.
+    To reduce such errors, GSA asks Gale &amp; Church's length-based alignment algorithm (Gale and Church 1991a; Michel Simard, personal communication) for a second opinion on any aligned block that is not 1 x 1.
+    Whenever the length-based algorithm prefers a more fine-grained alignment, its judgement overrules SIMR's.
+    Typical errors of omission are illustrated in Figure 10 by the complete absence of correspondence points between segments (B,C,D) and (b,c).
+    This empty block of segments is sandwich

@@ -1,0 +1,7 @@
+labeled examples.
+    Note that the SSL algorithm appears to be quite sensitive to the similarity measure used to form the graph on which it is based.
+    In the experiments where we used mutual-information weighted word vector similarity (reg+WV and SSL+WV), we notice that reg+WV remained on par with reg+PSP at high labeled set sizes, whereas SSL+WV appears significantly worse in most of these cases.
+    It is clear that PSP is the more reliable similarity measure.
+    SSL uses the similarity measure in more ways than the metric labeling approaches (i.e., SSL&#8217;s graph is denser), so it is not surprising that SSL&#8217;s accuracy would suffer more with an inferior similarity measure.
+    Unfortunately, our SSL approach did not do as well with large labeled set sizes.
+    We believe this is due to two factors: a) the baseline SVM regressor trained on a large labeled set can achieve fairly high accuracy for this difficult task without considering pairwise relationships between examples; b) PSP similarity i

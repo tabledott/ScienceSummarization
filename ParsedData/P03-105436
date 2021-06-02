@@ -1,0 +1,10 @@
+, if we try to annotate categories with any detailed lexical information, many sentences either entirely fail to parse, or have only extremely weird parses.
+    The resulting battle against sparsity means that we can only afford to make a few distinctions which have major distributional impact.
+    Even with the individual-lexeme annotations in this section, the grammar still has only 9255 states compared to the 7619 of the baseline model.
+  
+  
+    At this point, one might wonder as to the wisdom of stripping off all treebank functional tags, only to heuristically add other such markings back in to the grammar.
+    By and large, the treebank out-of-the package tags, such as PP-LOC or ADVP-TMP, have negative utility.
+    Recall that the raw treebank grammar, with no annotation or markovization, had an F1 of 72.62% on our development set.
+    With the functional annotation left in, this drops to 71.49%.
+    The h &lt; 2, v &lt; 1 markovization baseline of 77.77% dropped even further, all the way to 72.87%, whe

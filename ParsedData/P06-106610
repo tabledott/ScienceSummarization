@@ -1,0 +1,10 @@
+ by discarding the derivation with lower score.
+    The second one is the threshold pruning which discards derivations that have a score worse than a times the best score in the same cell.
+    The last one is the histogram pruning which only keeps the top n best derivations for each cell.
+    In all our experiments, we set n = 40, a = 0.5 to get a tradeoff between speed and performance in the development set.
+    Another feature of our decoder is the k-best list generation.
+    The k-best list is very important for the minimum error rate training (Och, 2003a) which is used for tuning the weights A for our model.
+    We use a very lazy algorithm for the k-best list generation, which runs two phases similarly to the one by Huang et al. (2005).
+    In the first phase, the decoder runs as usual except that it keeps some information of weaker derivations which are to be discarded during recombination.
+    This will generate not only the first-best of final derivation but also a shared forest.
+    In the second pha

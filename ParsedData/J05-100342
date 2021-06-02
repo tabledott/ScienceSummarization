@@ -1,0 +1,7 @@
+ definition of Si,j such as that in equation (11) gave improved performance on development data, presumably because it takes into account the relative cost of different ranking errors in trainingdata examples.
+    At this point we have definitions for ExpLoss and LogLoss which are analogous to the definitions in section 3.2 for binary classification tasks.
+    Section 3.3 introduced the idea of feature selection methods; the current section gives a more concrete description of the methods used in our experiments.
+    The goal of feature selection methods is to find a small subset of the features that contribute most to reducing the loss function.
+    The methods we consider are greedy, at each iteration picking the feature hk with additive weight d which has the most impact on the loss function.
+    In general, a separate set of instances is used in cross-validation to choose the stopping point, that is, to decide on the number of features in the model.
+    At this point we introduce some notation concerning 

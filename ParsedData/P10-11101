@@ -1,0 +1,5 @@
+search which includes most incremental parsing methods such as shift-reduce.1 Both have pros and cons: the former performs an exact search (in cubic time) over an exponentially large space, while the latter is much faster (in linear-time) and is psycholinguistically motivated (Frazier and Rayner, 1982), but its greedy nature may suffer from severe search errors, as it only explores a tiny fraction of the whole space even with a beam.
+    Can we combine the advantages of both approaches, that is, construct an incremental parser that runs in (almost) linear-time, yet searches over a huge space with dynamic programming?
+    Theoretically, the answer is negative, as Lee (2002) shows that context-free parsing can be used to compute matrix multiplication, where sub-cubic algorithms are largely impractical.
+    We instead propose a dynamic programming alogorithm for shift-reduce parsing which runs in polynomial time in theory, but linear-time (with beam search) in practice.
+    The key idea is to merge equivalent st

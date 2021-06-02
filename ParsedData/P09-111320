@@ -1,0 +1,10 @@
+ir belonging to that relation.
+    Once all of the entity pairs discovered during testing have been classified, they can be ranked by confidence score and used to generate a list of the n most likely new relation instances.
+    Table 4 shows some high-weight features learned by our system.
+    We discuss the results in the next section.
+  
+  
+    We evaluate labels in two ways: automatically, by holding out part of the Freebase relation data during training, and comparing newly discovered relation instances against this held-out data, and manually, having humans who look at each positively labeled entity pair and mark whether the relation indeed holds between the participants.
+    Both evaluations allow us to calculate the precision of the system for the best N instances.
+    Figure 2 shows the performance of our classifier on held-out Freebase relation data.
+    While held-out evaluation suffers from false negatives, it gives a rough measure of precision without requiring expensive human evaluation, making i

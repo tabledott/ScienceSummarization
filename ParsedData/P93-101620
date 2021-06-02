@@ -1,0 +1,11 @@
+raints is modular because they are defined in class definitions and all the instances of the class and its subclasses inherit these constraints.
+    The object-oriented paradigm allows the subclasses to modify the constraints.
+    The implementation of the parser has been tested with example sentences from Chapters 410, 15-18 of (van Riemsdijk and Williams, 1986).
+    The chapters left out are mostly about logical form and Binding Theory, which have not yet been implemented in the parser.
+    The average parsing time for sentences with 5 to 20 words is below half of a second on a SPARCstation ELC.
+  
+  
+    The attribute vectors used here are similar to those in unification based grammars/parsers.
+    An important difference, however, is that the attribute vectors used here satisfy the unit closure condition (Barton, Jr. et al., 1987, p.257).
+    That is, nonatomic attribute values are vectors that consist only of atomic attribute values.
+    For example: (7a) satisfies the unit closure condition, whereas (7b

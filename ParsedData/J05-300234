@@ -1,0 +1,7 @@
+anguage model derived from a large text collection.
+    We first motivate the need for reordering and rephrasing, then discuss our implementation.
+    For the word-ordering task, we do not have to consider all the possible traversals, since the number of valid traversals is limited by ordering constraints encoded in the fusion lattice.
+    However, the basis lattice does not uniquely determine the ordering: The placement of trees inserted in the basis lattice from other theme sentences is not restricted by the original basis tree.
+    While the ordering of many sentence constituents is determined by their syntactic roles, some constituents, such as time, location and manner circumstantials, are free to move (Elhadad et al. 2001).
+    Therefore, the algorithm still has to select an appropriate order from among different orders of the inserted trees.
+    The process so far produces a sentence that can be quite different from the extracted sentence; although the basis sentences provides guidance for the generati

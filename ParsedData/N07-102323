@@ -1,0 +1,6 @@
+ (from 66.5% to 67.8%) on our optimal Ziff-Davis training corpus (ZD-6).
+    Furthermore, bilexical head-modifier dependencies provide a relatively small improvement of .5% (from 69.8% to 70.3%) over the best model that does not incorporate the lexical head wh.
+    Note that lexical conditioning also helps in the case where the training data is relatively small (ZD-0), though differences are less significant, and bilexical dependencies actually hurt performance.
+    In subsequent experiments, we experimented with different Markovizations and lexical dependency combination, and finally settled with a model (s = 1 and v = 1) incorporating all conditioning variables listed in the last line of Table 2.
+    This final tuning was combined with human inspection of generated outputs, since certain modifications that positively impacted output quality seldom changed accuracies.
+    We finally took the best configuration selected above, and evaluated our model against the noisychannel model of K&amp;M on the 32 test se

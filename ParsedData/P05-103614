@@ -1,0 +1,11 @@
+eleting the parenthetical.
+    Deleting parentheses was never seen in the training data, so it would be extremely unlikely to occur in this case.
+    The unsupervised version, on the other hand, sees both PRN &#8594; lrb NP rrb and PRN &#8594; NP in its training data, and the semi-supervised version capitalizes on this particular unsupervised rule.
+    Example 3 shows an instance of our initial supervised versions performing far worse than the K&amp;M model.
+    The reason is that currently our supervised model only generates compressions that it has seen before, unlike the K&amp;M model, which generates all possible compressions.
+    S &#8594; S , NP VP . never occurs in the training data, and so a good compression does not exist.
+    The unsupervised and semi-supervised versions do better in this case, and the supervised version with the added constraints does even better.
+    Example 4 gives an example of the K&amp;M model being outperformed by all of our other models.
+  
+  
+    To this point our presentat

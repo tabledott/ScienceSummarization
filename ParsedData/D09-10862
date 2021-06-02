@@ -1,0 +1,9 @@
+ndred sentences will achieve mediocre dependency accuracy (the proportion of words that attach to their correct parent).
+    But what if we also had a large number of trees in the CoNLL style (the source corpus)?
+    Ideally they should help train our parser.
+    But unfortunately, a parser that learned to produce perfect CoNLL-style trees would, for example, get both links &#8220;wrong&#8221; when its coordination constructions were evaluated against a Prague-style gold standard (Figure 1).
+    If it were just a matter of this one construction, the obvious solution would be to write a few rules by hand to transform the large source training corpus into the target style.
+    Suppose, however, that there were many more ways that our corpora differed.
+    Then we would like to learn a statistical model to transform one style of tree into another.
+    We may not possess hand-annotated training data for this tree-to-tree transformation task.
+    That would require the two corpora to annotate some of the same sent

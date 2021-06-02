@@ -1,0 +1,12 @@
+respond to horizontal and vertical edges, respectively.
+    Substitutions and identity operations correspond to diagonal edges.
+    Edges between arbitrary grid points from the same row correspond to long jump operations.
+    It is easy to see that dLJ is symmetrical.
+    In the example, the best path contains one deletion edge, one substitution edge, and three long jump edges.
+    Therefore, the long jump distance between the sentences is five.
+    In contrast, the best Levenshtein path contains one deletion edge, four identity and five consecutive substitution edges; the Levenshtein distance between the two sentences is six.
+    The effect of reordering on the BLEU measure is even higher in this example: Whereas 8 of the 10 unigrams from the candidate sentence can be found in the reference sentence, this holds for only 4 bigrams, and 1 trigram.
+    Not a single one of the 7 candidate four-grams occurs in the reference sentence.
+  
+  
+    (Lopresti and Tomkins, 1997) showed that finding an optimal path in a 

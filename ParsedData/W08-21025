@@ -1,0 +1,6 @@
+ork.
+    In reranking approaches, a first-pass parser is used to enumerate a small set of candidate parses for an input sentence; the reranking model, which is a GLM, is used to select between these parses (e.g., (Ratnaparkhi et al., 1994; Johnson et al., 1999; Collins, 2000; Charniak and Johnson, 2005)).
+    A crucial advantage of our approach is that it considers a very large set of alternatives in Y(x), and can thereby avoid search errors that may be made in the first-pass parser.1 Another approach that allows efficient training of GLMs is to use simpler syntactic representations, in particular dependency structures (McDonald et al., 2005).
+    Dependency parsing can be implemented in O(n3) time using the algorithms of Eisner (2000).
+    In this case there is no grammar constant, and parsing is therefore efficient.
+    A disadvantage of these approaches is that they do not recover full, constituent-based syntactic structures; the increased linguistic detail in full syntactic structures may be useful in NLP

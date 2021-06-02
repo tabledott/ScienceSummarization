@@ -1,0 +1,11 @@
+follows.
+			1) We define six coefficients cx and c?x, where x ? {O,S,L} to modify a group of weights as follows.
+			?i, x, wxi := wxi ? cx; ?i, x, w?xi := w?xi ? c?x; In general, increasing cx will promote recall, while increasing c?x will promote precision.Also, setting co &gt; cs will put higher confi dence on the opinion extraction classifier than the source extraction classifier.
+			2) We also define one constant cA to set the weights for auxiliary variable Ai.
+			That is, ?i, wAi := cA.
+			3) Finally, we adjust the confidence of the linkvariable based on n-th-best sequences of the en tity extraction classifiers as follows.
+			?i, wLi,j := wLi,j ? d where d def= 4/(3 + min(m,n)), when Oi is from an m-th sequence and Sj is from a n-th sequence.11 11This will smoothly degrade the confidence of a link based on the entities from higher n-th sequences.
+			Values of d decrease as 4/4, 4/5, 4/6, 4/7....
+	
+	
+			We evaluate our system using the NRRC Multi Perspective Question Answering (MPQA) corpusthat contains 5

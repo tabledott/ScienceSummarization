@@ -1,0 +1,10 @@
+ we use string distance to measure the length of a dependency link and consider the inclusion of a sum-of-lengths feature in the probabilistic model, for learning only.
+    Keeping our original model, we will simply multiply into the probability of each tree another factor that penalizes long dependencies, giving: where y(i) = yleft(i) U yright(i).
+    Note that if &#948; = 0, we have the original model.
+    As &#948; &#8212;* &#8722;oc, the new model p' will favor parses with shorter dependencies.
+    The dynamic programming algorithms remain the same as before, with the appropriate ea|i&#8722;j |factor multiplied in at each attachment between xi and xj.
+    Note that when &#948; = 0, pe - pe.
+    Experiment.
+    We applied a locality bias to the same dependency model by setting &#948; to different we show performance with add-10 smoothing, the all-zero initializer, for three languages with three different initial values 6o.
+    Time progresses from left to right.
+    Note that it is generally best to start 

@@ -1,0 +1,5 @@
+n phrases and thus, like Kupiec, uses sentence alignment, tagging, and a noun phrase recognizer.
+    His work differs in the correlation measure he uses: he compares local frequency of the term (i.e., frequency in sentences containing the term) to global frequency (i.e., frequency in the full corpus), decreasing the resulting score by a weight representing the distance between the actual position of the target term and its expected position in the corpus; this weight is small if the target term is exactly aligned with the source term and larger as the distance increases.
+    His evaluation shows 68% precision and 64% recall.
+    We suspect that the lower precision is due in part to the fact that van der Eijk evaluated all translations produced by the program while Kupiec only evaluated the top 2%.
+    Note that the greatest difference between these two approaches and ours is that van der Eijk and Kupiec only handle noun phrases whereas collocations have been shown to include parts of noun phrases, categories 

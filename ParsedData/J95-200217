@@ -1,0 +1,7 @@
+ all states with terminals to the right of the dot can be scanned, not just those matching the input.
+    (For completed states, the predecessor state is defined to be the complete state from the same state set contributing to the completion.)
+    Note that the definition of path length is somewhat counterintuitive, but is motivated by the fact that only scanned states correspond directly to input symbols.
+    Thus the length of a path is always the same as the length of the input string it generates.
+    A constrained path starting with the initial state contains a sequence of states from state set 0 derived by repeated prediction, followed by a single state from set 1 produced by scanning the first symbol, followed by a sequence of states produced by completion, followed by a sequence of predicted states, followed by a state scanning the second symbol, and so on.
+    The significance of Earley paths is that they are in a one-to-one correspondence with left-most derivations.
+    This will allow us to talk ab

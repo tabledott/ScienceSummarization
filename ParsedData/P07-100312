@@ -1,0 +1,6 @@
+ion in each stage.
+    In selecting these distributions, we aim to maintain the original HMM&#8217;s sensitivity to target word order: This model reduces to the classic HMM distortion model given minimal English trees of only uniformly labeled pre-terminals and a root node.
+    The classic 0-distance distortion would correspond to the STOP probability of the pre-terminal label; all other distances would correspond to MOVE probabilities conditioned on the root label, and the probability of transitioning to the terminal state would correspond to the POP probability of the root label.
+    As in a multinomial-distortion implementation of the classic HMM model, we must sometimes artificially normalize these distributions in the deficient case that certain jumps extend beyond the ends of the local rules.
+    For this reason, MOVE and PUSH are actually parameterized by three values: a node type, a signed distance, and a range of options that dictates a normalization adjustment.
+    Once each tree transition generate

@@ -1,0 +1,9 @@
+re- and post-modifier count, our order model is capable of evaluating a single ordering decision independently from other ordering decisions.
+    One version of the decoder takes advantage of this to severely limit the number of ordering possibilities considered.
+    Instead of considering all interleavings, it considers each potential modifier position in turn, greedily picking the most probable child for that slot, moving on to the next slot, picking the most probable among the remaining children for that slot and so on.
+    The complexity of greedy ordering is linear, but at the cost of a noticeable drop in BLEU score (see Table 5.4).
+    Under default settings our system tries to decode a sentence with exhaustive ordering until a specified timeout, at which point it falls back to greedy ordering.
+  
+  
+    We evaluated the translation quality of the system using the BLEU metric (Papineni et al., 02) under a variety of configurations.
+    We compared against two radically different types of systems to demo

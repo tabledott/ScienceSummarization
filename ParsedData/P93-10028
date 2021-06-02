@@ -1,0 +1,8 @@
+int, consider a model that assumes that all individual words are independent.
+    We take where p(n) is the probability that an English sentence is n words long, p(m) is the probability that a French sentence is m words long, p(ei) is the frequency of the word ei in English, and p(f2) is the frequency of the word h in French.
+    To capture the dependence between individual English words and individual French words, we generate English and French words in pairs in addition to singly.
+    For two words e and f that are mutual translations, instead of having the two terms p(e) and p(f) in the above equation we would like a single term p(e, f) that is substantially larger than p(e)p(f).
+    To this end, we introduce the concept of a word bead.
+    A word bead is either a single English word, a single French word, or a single English word and a single French word.
+    We refer to these as 1:0, 0:1, and 1:1 word beads, respectively.
+    Instead of generating a pair of sentences word by word, we generate sentences 

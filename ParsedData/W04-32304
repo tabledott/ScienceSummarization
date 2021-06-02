@@ -1,0 +1,9 @@
+lect lexicons which contain prior knowledge about word segmentation.
+    We cannot ignore a lexicon since over 90% accuracy can be achieved even using the longest prefix matching with the lexicon.
+    Moreover, B/I tagging produces a number of redundant candidates which makes the decoding speed slower.
+    Traditionally in Japanese morphological analysis, we assume that a lexicon, which lists a pair of a word and its corresponding part-of-speech, is available.
+    The lexicon gives a tractable way to build a lattice from an input sentence.
+    A lattice represents all candidate paths or all candidate sequences of tokens, where each token denotes a word with its partof-speech 1.
+    Figure 1 shows an example where a total of 6 candidate paths are encoded and the optimal path is marked with bold type.
+    As we see, the set of labels to predict and the set of states in the lattice are different, unlike English part-of-speech tagging that word boundary ambiguity does not exist.
+    Formally, the task of Japanese

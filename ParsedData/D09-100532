@@ -1,0 +1,9 @@
+ar parameterization of the model (see Section 7.1 for an example).
+    Similarly, the gradient of risk of (9) is We may compute (Z, r, VZ, Vr) using ke = (pe, peLe, Vpe, LeVpe).
+  
+  
+    We now show how we improve the training of a Hiero MT model by optimizing an objective function that includes entropy and risk.
+    Our objective function could be computed with a first-order expectation semiring, but computing it along with its gradient requires a second-order one.
+    We assume a globally normalized linear model for its simplicity.
+    Each derivation d is scored by where 4b(d) E RI is a vector of features of d. We then define the unnormalized distribution p(d) as where the scale factor &#947; adjusts how sharply the distribution favors the highest-scoring hypotheses.
+    Adjusting &#952; or &#947; changes the distribution p. Minimum error rate training (MERT) (Och, 2003) tries to tune &#952; to minimize the BLEU loss of a decoder that chooses the most probable output according to p. (&#947; has no effect.

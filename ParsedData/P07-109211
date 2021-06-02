@@ -1,0 +1,8 @@
+-intermediate or intermediate-target bitexts can prevent the extraction of a source-target phrase pair.
+    This effect can be seen in Figure 1, where the coverage of the Italian triangulated phrase-table is worse than the standard source-target model, despite the two models using the same sized bitexts.
+    As we explain in the next section, these problems can be ameliorated by using the triangulated phrase-table in conjunction with a standard phrase-table.
+    Finally, another potential problem stems from the independence assumption in (1), which may be an oversimplification and lead to a loss of information.
+    The experiments in Section 5 show that this effect is only mild.
+    Once induced, the triangulated phrase-table can be usefully combined with the standard source-target phrase-table.
+    The simplest approach is to use linear interpolation to combine the two (or more) distributions, as follows: where each joint distribution, pj, has a non-negative weight, Aj, and the weights sum to one.
+    The jo

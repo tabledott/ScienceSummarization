@@ -1,0 +1,12 @@
+n Treebank training set (about 40,000 sentences).
+    Negra sentences are also shorter: they contain, on average, 15 words compared to 22 in the Penn Treebank.
+    We computed learning curves for the unmodified variants (without grammatical functions or parameter pooling) of all three models (on the development set).
+    The result (see Figure 1) shows that there is no evidence for an effect of sparse data.
+    For both the baseline and the C&amp;R model, a fairly high f-score is achieved with only 10% of the training data.
+    A slow increase occurs as more training data is added.
+    The performance of the Collins model is even less affected by training set size.
+    This is probably due to the fact that it does not use rule probabilities directly, but generates rules using a Markov chain.
+  
+  
+    As we saw in the last section, lack of training data is not a plausible explanation for the sub-baseline performance of the lexicalized models.
+    In this experiment, we therefore investigate an alternative hyp

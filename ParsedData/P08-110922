@@ -1,0 +1,8 @@
+mproved both the training time and accuracy of (Taskar et al., 2004).
+    They define a simple linear model, use boosted decision trees to select feature conjunctions, and a line search to optimize the parameters.
+    They use an agenda parser, and define their atomic features, from which the decision trees are constructed, over the entire state being considered.
+    While they make extensive use of features, their setup is much more complex than ours and takes substantially longer to train &#8211; up to 5 days on WSJ15 &#8211; while achieving only small gains over (Taskar et al., 2004).
+    The most recent similar research is (Petrov et al., 2007).
+    They also do discriminative parsing of length 40 sentences, but with a substantially different setup.
+    Following up on their previous work (Petrov et al., 2006) on grammar splitting, they do discriminative parsing with latent variables, which requires them to optimize a non-convex function.
+    Instead of using a stochastic optimization technique, they use 

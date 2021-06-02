@@ -1,0 +1,8 @@
+f the VBD and SBAR in the (VP, VBD, SBAR) head-modifier relation in the above rule.
+    This relation would then generate features (VP, VBD, SBAR, = dist), and (VP, VBD, SBAR, &lt; x) for all dist &lt; x &lt; 9 and (VP, VBD, SBAR, &gt; x) for all 1 &lt; x &lt; dist.
+    Further lexicalization.
+    In order to generate more features, a second pass was made in which all nonterminals were augmented with their lexical heads when these headwords were closed-class words.
+    All features apart from head modifiers, PPs, and distance head modifiers were then generated with these augmented nonterminals.
+    All of these features were initially generated, but only features seen on at least one parse for at least five different sentences were included in the final model (this count cutoff was implemented to keep the number of features down to a tractable number).
+    The ExpLoss method was trained with several values for the smoothing parameter e: {0.0001, 0.00025, 0.0005, 0.00075, 0.001, 0.0025, 0.005, 0.0075}.
+    For

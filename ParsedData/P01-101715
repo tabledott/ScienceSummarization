@@ -1,0 +1,7 @@
+, thus the head above &#8220;monday&#8221; is &#8220;football&#8221;.)
+    This immediately suggests creating a second model that captures some of the trigram-like probabilities that the immediate-bihead model misses.
+    The most obvious extension would be to condition upon not just one&#8217;s parent&#8217;s head, but one&#8217;s grandparent&#8217;s as well.
+    This does capture some of the information we would like, particularly the case heads of noun-phrases inside of prepositional phrases.
+    For example, in &#8220;united states of america&#8221;, the probability of &#8220;america&#8221; is now conditioned not just on &#8220;of&#8221; (the head of its parent) but also on &#8220;states&#8221;.
+    Unfortunately, for most of the cases where trigram really cleans up this revision would do little.
+    Thus, in &#8220;he watched monday night football&#8221; &#8220;monday&#8221; would now be conditioned upon &#8220;football&#8221; and &#8220;watched.&#8221; The addition of &#8220;watched&#8221; is unlikely t

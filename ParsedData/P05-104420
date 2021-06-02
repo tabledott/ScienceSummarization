@@ -1,0 +1,6 @@
+&#8212;this is easy with log-linear models but not with classical generative models.
+    We compared the performance of the best neighborhoods (LENGTH, DELORTRANS1, and TRANS1) from the first experiment, plus EM, using three diluted dictionaries and the original one, on the 24K dataset.
+    A diluted dictionary adds (tag, word) entries so that rare words are allowed with any tag, simulating zero prior knowledge about the word.
+    &#8220;Rare&#8221; might be defined in different ways; we used three definitions: words unseen in the first 500 sentences (about half of the 24K training corpus); singletons (words with count &lt; 1); and words with count &lt; 2.
+    To allow more trials, we projected the original 45 tags onto a coarser set of 17 (e.g., RB* ADV).
+    To take better advantage of the power of loglinear models&#8212;specifically, their ability to incorporate novel features&#8212;we also ran trials augmenting the model with spelling features, allowing exploitation of correlations between parts of the wo

@@ -1,0 +1,6 @@
+rresponding adjective and noun vectors after normalizing them (non-normalized addition was also tried, but it did not work nearly as well as the normalized variant).
+    Multiplicative vectors (mult method) were obtained by componentwise multiplication of the adjective and noun vectors (normalization does not matter here since it amounts to multiplying the composite vector by a scalar, and the cosine similarity measure we use is scale-invariant).
+    Finally, the adj and noun baselines use the adjective and noun vectors, respectively, as surrogates of the AN vector.
+    For the add, mult, adj and noun methods, we ran the tests of Section 6 not only in the SVD-reduced space, but also in the original 10K-dimensional cooccurrence space.
+    Only the mult method achieved better performance in the original space.
+    We conjecture that this is because the SVD dimensions can have negative values, leading to counter-intuitive results with component-wise multiplication (multiplying large opposite-sign values results 

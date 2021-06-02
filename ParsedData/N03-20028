@@ -1,0 +1,9 @@
+phs and stems; 3) a GPB-FLM 3-gram using morphs, stems and backoff function g1; 4) the baseline 2-gram; 5) an FLM 2-gram using morphs; 6) an FLM 2-gram using morphs and stems; and 7) an GPB-FLM 2-gram using morphs and stems.
+    Backoffpath(s) are depicted by listing the parent number(s) in backoff order.
+    As can be seen, the FLM alone might increase perplexity, but the GPB-FLM decreases it.
+    Also, it is possible to obtain a 2-gram with lower perplexity than the optimized baseline 3-gram.
+    The Wall Street Journal (WSJ) data is from the Penn Treebank 2 tagged (&#8217;88-&#8217;89) WSJ collection.
+    Word and POS tag information (Tt) was extracted.
+    The sentence order was randomized to produce 5-fold crossvalidation results using (4/5)/(1/5) training/testing sizes.
+    Other factors included the use of a simple deterministic tagger obtained by mapping a word to its most frequent tag (Ft), and word classes obtained using SRILM&#8217;s ngram-class tool with 50 (Ct) and 500 (Dt) classes.
+    Results a

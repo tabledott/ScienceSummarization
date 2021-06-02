@@ -1,0 +1,12 @@
+ is not trivial.
+    We eliminate duplicate and near duplicate documents by using the algorithm described by Kolcz et al. (2004).
+    This process of duplicate elimination is carried out in linear time and involves the creation of signatures for each document.
+    Signatures are designed so that duplicate and near duplicate documents have the same signature.
+    This algorithm is remarkably fast and has high accuracy.
+    This entire process of removing non English documents and duplicate (and near-duplicate) documents reduces our document set from 70 million web pages to roughly 31 million web pages.
+    This represents roughly 138GB of uncompressed text.
+    We identify all the nouns in the corpus by using a noun phrase identifier.
+    For each noun phrase, we identify the context words surrounding it.
+    Our context window length is restricted to two words to the left and right of each noun.
+    We use the context words as features of the noun vector.
+    We parse a 6 GB newspaper (TREC9 and TREC2002 coll

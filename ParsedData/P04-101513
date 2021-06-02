@@ -1,0 +1,7 @@
+describe the parsing algorithm, and then move on to the baseline feature set for the perceptron model.
+    The input to the parser is a string wn0 , a grammar G, a mapping &#934; from derivations to feature vectors, and a parameter vector &#175;&#945;.
+    The grammar G = (V, T, S&#8224;, &#175;S, C, B) consists of a set of non-terminal symbols V , a set of terminal symbols T, a start symbol S&#8224; E V , an end-ofconstituent symbol S&#175; E V , a set of &#8220;allowable chains&#8221; C, and a set of &#8220;allowable triples&#8221; B. S&#175; is a special empty non-terminal that marks the end of a constituent.
+    Each chain is a sequence of non-terminals followed by a terminal symbol, for example (S&#8224; &#8594; S &#8594; NP &#8594; NN &#8594; Trash).
+    Each &#8220;allowable triple&#8221; is a tuple (X, Y, Z) where X, Y, Z E V .
+    The triples specify which nonterminals Z are allowed to follow a non-terminal Y under a parent X.
+    For example, the triple (S,NP,VP) specifies that a VP can follow an NP

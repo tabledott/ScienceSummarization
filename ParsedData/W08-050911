@@ -1,0 +1,10 @@
+le 2 shows the size of count tables written by each child process in an experiment with 10 million sentence pairs, remember there are more than 10 children writing the the count tables, and the master would have to read all these tables, the amount of I/O is significantly reduced by pruning the count tables.
+    The other issue is the master control script.
+    The script should be able to start processes in other nodes.
+    Therefore the implementation varies according to the software environment.
+    We implemented three versions of scripts based on secure shell, Condor (Thain et al., 2005) and Maui.
+    Also, the master must be notified when a child process finishes.
+    In our implementation, we use signal files in the network file system.
+    When the child process finishes, it will touch a predefined file in a shared folder.
+    The script keeps watching the folder and when all the children have finished, the script runs the normalization process and then starts the next iteration.
+    One of the advant

@@ -1,0 +1,7 @@
+ Also, human translators often transliterate words based on how they are spelled in the source language.
+    For example, Graham is transliterated into Arabic as &#8220; &#729;gr&#175;ah&#175;am&#8221; and not as &#8220; &#729;gr&#175;am&#8221;.
+    To address these limitations, we extend this approach by using a new spelling-based model in addition to the phonetic-based model.
+    The spelling-based model we propose (described in detail in (Al-Onaizan and Knight, 2002)) directly According to this model, the transliteration probability is given by the following equation: maps English letter sequences into Arabic letter sequences with probability , which are trained on a small English/Arabic name list without the need for English pronunciations.
+    Since no pronunciations are needed, this list is easily obtainable for many language pairs.
+    We also extend the model to include a letter trigram model in addition to the word unigram model.
+    This makes it possible to generate words that are not already defin

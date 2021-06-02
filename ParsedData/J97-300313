@@ -1,0 +1,8 @@
+in other approaches, is captured at the disambiguation phase of the tagger itself.
+    The former feature is indirectly captured in our approach.
+    It has been noticed (as in [Weischedel et al., 1993], for example) that capitalized and hyphenated words have a different distribution from other words.
+    Our morphological rules account for this difference by checking the stem of the word.
+    The ending-guessing rules, on the other hand, do not use information about stems.
+    Thus if the ending s predicts that a word can be a plural noun or a 3d form of a verb, the information that this word was capitalized can narrow the considered set of POS-tags to plural proper noun.
+    We therefore decided to collect ending-guessing rules separately for capitalized words, hyphenated words, and all other words.
+    In our experiments, we restricted ourselves to the production of six different guessing-rule sets, which seemed most appropriate for English: As already mentioned, we see features that our guessing-rule sche

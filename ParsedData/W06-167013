@@ -1,0 +1,9 @@
+tation, mapping each (x, y) pair to a vector of feature counts `b(x, y) E IRd, where d is the total number of features.
+    This vector is given by Each individual feature &#966;i typically represents a morphological, contextual, or syntactic property, or also the inter-dependence of consecutive labels.
+    These features are described in detail in Section 4.2.
+    Given an observation sequence x, we make a prediction by maximizing F over the response variables: This involves computing the Viterbi decoding with respect to the parameter vector w E IRd.
+    The complexity of the Viterbi algorithm scales linearly with the length of the sequence.
+    There are different ways of estimating w for the described model.
+    We use the perceptron algorithm for sequence tagging (Collins, 2002).
+    The perceptron algorithm focuses on minimizing the error rate, without involving any normalization factors.
+    This property makes it very efficient which is a desirable feature in a task dealing with a large tagset such as 

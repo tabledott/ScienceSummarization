@@ -1,0 +1,10 @@
+ccuracy (section 4).
+			We discuss the results with a proposal for applying the method to an all-words task, and an analysis of our results in terms of this proposal before concluding with future directions.
+	
+	
+			We use the method described in McCarthy et al (2004) for finding predominant senses from raw text.
+			The method uses a thesaurus obtained from the text by parsing, extracting grammatical relations and then listing each word (  ) with its top  nearest neighbours, where  is a constant.
+			Like McCarthy 2This resource will be made publicly available for research purposes in the near future.
+			et al (2004) we use   and obtain our thesaurus using the distributional similarity metric described by Lin (1998).
+			We use WordNet (WN) as our sense inventory.
+			The senses of a word  are each assigned a ranking score which sums over the distributional similarity scores of the neighbours and weights eachneighbour?s score by a WN Similarity score (Pat wardhan and Pedersen, 2003) between the sense of  and the 

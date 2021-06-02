@@ -1,0 +1,13 @@
+he Penn treebank tagset has 48.
+    The general pattern of the results presented does not vary greatly with the corpus and tagset used.
+  
+  
+    The first experiment concerned the effect of the initial conditions on the accuracy using Baum-Welch re-estimation.
+    A model was trained from a handtagged corpus in the manner described above, and then degraded in various ways to simulate the effect of poorer training, as follows:
+  
+  
+    DO Un-degraded lexical probabilities, calculated from f (i, w) / f (i).
+    D1 Lexical probabilities are correctly ordered, so that the most frequent tag has the highest lexical probability and so on, but the absolute values are otherwise unreliable.
+    D2 Lexical probabilities are proportional to the overall tag frequencies, and are hence independent of the actual occurrence of the word in the training corpus.
+    D3 All lexical probabilities have the same value, so that the lexicon contains no information other than the possible tags for each word.
+    TO Un-degraded transi

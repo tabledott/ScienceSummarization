@@ -1,0 +1,9 @@
+t possibilities at each dynamic programming state, rather than keeping just first best.
+    When combining two constituents to form a larger constituent, we keep the best 50 of the 2500 possibilities they offer.
+    Naturally, if we keep each 50-best list sorted, we do nothing like 2500 operations.
+    The experimental question is whether, in practice, the coarse-to-fine architecture keeps the number of dynamic programming states sufficiently low that space considerations do not defeat us.
+    The answer seems to be yes.
+    We ran the algorithm on section 24 of the Penn WSJ tree-bank using the default pruning settings mentioned above.
+    Table 1 shows how the number of fine-grained dynamic programming states increases as a function of sentence length for the sentences in section 24 of the Treebank.
+    There are no sentences of length greater than 69 in this section.
+    Columns two to four show the number of sentences in each bucket, their average length, and the average number of fine-grained dynamic prog

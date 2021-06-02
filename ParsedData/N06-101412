@@ -1,0 +1,8 @@
+, this new procedure is not guaranteed to increase our joint objective.
+    Nonetheless, our experimental results show that it provides an effective method of achieving model agreement and leads to significant accuracy gains over independent training.
+    Once we have trained two models, either jointly or independently, we must decide how to combine those two models to predict alignments for new sentences.
+    First, let us step back to the case of one model.
+    Typically, the Viterbi alignment argmaxz p(z  |x) is used.
+    An alternative is to use posterior decoding, where we keep an edge (i, j) if the marginal edge rectly in extracting phrases for phrase-based translation.
+    Also, when we want to combine two models for prediction, finding the Viterbi alignment argmaxz p1(z  |x)p2(z  |x) is intractable for HMM models (by a reduction from quadratic assignment), and a hard intersection argmaxz' p1(z1 | x) n argmaxz, p2(z2  |x) might be too sparse.
+    On the other hand, we can threshold the product of two e

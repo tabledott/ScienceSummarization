@@ -1,0 +1,10 @@
+ons a lot of structure is already in place, and this structure can be used in deciding a correct attachment.
+    Our parser follows a similar kind of annotation process: starting from easy attachment decisions, and proceeding to harder and harder ones.
+    When making later decisions, the parser has access to the entire structure built in earlier stages.
+    During the training process, the parser learns its own notion of easy and hard, and learns to defer specific kinds of decisions until more structure is available.
+  
+  
+    Our (projective) parsing algorithm builds the parse tree bottom up, using two kinds of actions: ATTACHLEFT(i) and ATTACHRIGHT(i) .
+    These actions are applied to a list of partial structures p1, ... , pk, called pending, which is initialized with the n words of the sentence w1, ... , wn.
+    Each action connects the heads of two neighbouring structures, making one of them the parent of the other, and removing the daughter from the list of partial structures.
+    ATTACHLEFT(i) adds a 

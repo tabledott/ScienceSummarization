@@ -1,0 +1,6 @@
+produced for all target data, both training and test, so that features for the target parser could refer to them.
+    In this task, we know what the gold-standard source language parses are for any given text, since we can produce them from the original Penn Treebank.
+    We can thus measure the contribution of adaptation loss alone, and the combined loss of imperfect source-domain parsing with adaptation (Table 1).
+    When no target domain trees are available, we simply have the performance of the source domain parser on this out-of-domain data.
+    Training a target-domain parser on as few as 10 sentences shows substantial improvements in accuracy.
+    In the &#8220;gold&#8221; conditions, where the target parser starts with perfect source trees, accuracy approaches 100%; in the realistic &#8220;parse&#8221; conditions, where the target-domain parser gets noisy source-domain parses, the improvements are quite significant but approach a lower ceiling imposed by the performance of the source parser.2 The ada

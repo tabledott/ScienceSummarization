@@ -1,0 +1,12 @@
+  
+  
+    There any many techniques for improving language model speed and reducing memory consumption.
+    For speed, we plan to implement the direct-mapped cache from BerkeleyLM.
+    Much could be done to further reduce memory consumption.
+    Raj and Whittaker (2003) show that integers in a trie implementation can be compressed substantially.
+    Quantization can be improved by jointly encoding probability and backoff.
+    For even larger models, storing counts (Talbot and Osborne, 2007; Pauls and Klein, 2011; Guthrie and Hepple, 2010) is a possibility.
+    Beyond optimizing the memory size of TRIE, there are alternative data structures such as those in Guthrie and Hepple (2010).
+    Finally, other packages implement language model estimation while we are currently dependent on them to generate an ARPA file.
+    While we have minimized forward-looking state in Section 4.1, machine translation systems could also benefit by minimizing backward-looking state.
+    For example, syntactic decoders (Koehn et al.,

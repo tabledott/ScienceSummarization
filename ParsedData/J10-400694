@@ -1,0 +1,9 @@
+s, to account for directionality).
+    Values in the matrix are log- and entropy-transformed using Turney&#8217;s formula.
+    Finally, SVD is applied, reducing the columns to the top 300 latent dimensions (here and subsequently, we use SVDLIBC9 to perform SVD).
+    For simplicity and to make LRA more directly comparable to the DM models, we applied our attributional-neighbor-based smoothing technique (the neighbors for target pair expansion are taken from the best attributional DM model, namely, TypeDM) instead of the more sophisticated one used by Turney.
+    Thus, our LRA implementation differs from Turney&#8217;s original in two aspects: the smoothing method and the source corpus (Turney uses a corpus of more than 50 billion words).
+    Neither variation pertains to inherent differences between LRA and DM.
+    Given the appropriate resources, a DM model could be trained on Turney&#8217;s gigantic corpus, and smoothed with his technique.
+    6.2.1 Solving Analogy Problems.
+    The SAT test set introduced b

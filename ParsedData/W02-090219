@@ -1,0 +1,11 @@
+ the search to the correct translations.
+    A closer look of the spelling and context scores reveals that while the spelling clue allows to learn more correct lexicon entries (140 opposed to 107), the context clue does better with the more frequently used lexicon entries, as found in the test corpus (accuracy of 31.9% opposed to 25.4%).
+    Combining different clues is quite simple: We can simply add up the matching scores.
+    The scores can be weighted.
+    Initially we simply weighted all clues equally.
+    We then changed the weights to see, if we can obtain better results.
+    We found that there is generally a broad range of weights that result in similar performance.
+    When using the spelling clue in combination with others, we found it useful to define a cutoff.
+    If two words agree in 30% of their letters this is generally as bad as if they do not agree in any &#8211; the agreements are purely coincidental.
+    Therefore we counted all spelling scores below 0.3 as 0.3.
+    Combining the context 

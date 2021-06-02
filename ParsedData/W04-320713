@@ -1,0 +1,11 @@
+g-linear trigram model.
+    Overlapping trigram, bigram, and unigram features provide backoff information to deal with data sparseness (Table 3).
+    For each training sentence, we used the FST-encoded morphological dictionary to construct a lattice of possible analyses.
+    The lattice has a &#8220;sausage&#8221; form with all paths joining between each word.
+    We train the feature weights to maximize the weight of the correct path relative to all paths in the lattice.
+    In contrast, Lafferty et al. (2001) train to maximize the the probability of the tags given the words.
+    Over training sentences, maximize: where Ti is the correct tagging for sentence i, Mi is the correct morpheme sequence.
+    There are a few complications.
+    First, the coverage of the FST is of course not universal; in fact, it cannot analyze 4.66% of word types (2.18% of tokens) in the KTB.
+    We tag such words as atomic common nouns (the most common tag).
+    Second, many of the analyses in the KTB are not admitted by the FST: 

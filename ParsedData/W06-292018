@@ -1,0 +1,9 @@
+r CoNLL-X, to Keh-Jiann Chen for answering our questions and to Amit Dubey for converting the treebank.
+    22containing rules such as: the head child of a VP is the leftmost &#8220;to&#8221;, or else the leftmost past tense verb, or else etc. components individually.
+    As Alpino does not provide an internal structure for multiwords, we had to treat multiwords as one token.
+    However, we then lack a proper PoS for the multiword.
+    After much discussion, we decided to assign each multiword the CPOSTAG &#8220;MWU&#8221; (multiword unit) and a POSTAG which is the concatenation of the PoS of all the components as predicted by MBT (separated by an underscore).
+    Likewise, the FEATS are a concatenation of the morphological features of all components.
+    This approach resulted in many different POSTAG values for the training set and even in unseen values in the test set.
+    It remains to be tested whether our approach resulted in data sets better suited for parsing than the original.
+    We used two treeba

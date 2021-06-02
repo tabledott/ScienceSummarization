@@ -1,0 +1,8 @@
+lauses, structure sharing for other derived clauses.
+    When copying, care should be taken not to copy variable-free subterms, but to copy just pointers to those subterms instead.
+    It is very costly to implement subsumption in its full generality.
+    To keep the cost within reasonable bounds, it will be essential to index the derived clauses on at least the predicate symbols they contain &#8212; and probably also, on symbols in certain key argument positions.
+    A simplification of full subsumption checking that would appear adequate to block most redundant steps is to keep track of selected literals that have been used exhaustively to generate instantiation steps.
+    If another selected literal is an instance of one that has been exhaustively explored, there is no need to consider using it as a candidate for instantiation steps.
+    Subsumption would then be only applied to derived unit clauses.
+    A major efficiency problem with Earley deduction is that it is difficult to recognize situations in whi

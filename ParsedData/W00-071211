@@ -1,0 +1,9 @@
+our p values correspond to those words whose offsets from word i are in the intervals [-50,-1] and [1,50], respectively.
+    We also reserve the Nth position as a catch-all position to account for all words that are not in the top (N-1).
+    An important issue to resolve is how large should N be.
+    We would like to be able to incorporate semantics for an arbitrarily large number of words and LSA quickly becomes impractical on large sets.
+    Fortunately, it is possible to build a matrix with a smaller value of N (say, 2500), perform an SVD thereon, and then fold in remaining terms (Manning and Schaze, 1999, p. 563).
+    Since the U and V matrices of an SVD are orthogonal matrices, then UUT=VVT=I.
+    This implies that AV=UD.
+    This means that for a new word, w, one can build a vector a which identifies how w relates to the top N words according to the p different conditions described above.
+    For example, if w were one of the top N words, then a would simply represent w's particular row from the A matri

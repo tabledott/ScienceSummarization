@@ -1,0 +1,7 @@
+y the new words, which otherwise would be segmented into strings of one -character words.
+    When there are multiple segmentations for a sentence, we keep only one that contains the least number of words.
+    The annotated test set contains in total 247,039 tokens (including 205,162 lexicon/morph-lexicon words, 4,347 PNs, 5,311 LNs, 3,850 ONs, and 6,630 factoids, etc.)
+    Our system is measured through multiple precision-recall (P/R) pairs, and F-measures (F&#946;=1, which is defined as 2PR/(P+R)) for each word class.
+    Since the annotated test set is based on a particular lexicon, some of the evaluation measures are meaningless when we compare our system to other systems that use different lexicons.
+    So in comparison with different systems, we consider only the precision-recall of NER and the number of OAS errors (i.e. crossing brackets) because these measures are lexicon independent and there is always a single unambiguous answer.
+    The training corpus for context model contains approximately 80 mi

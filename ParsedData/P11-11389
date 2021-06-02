@@ -1,0 +1,8 @@
+ed in Section 4.5.
+    At a high level, the GLOW system optimizes the objective function in Eq.
+    3 in a two-stage process.
+    We first execute a ranker to obtain the best non-null disambiguation for each mention in the document, and then execute a linker that decides whether the mention should be linked to Wikipedia, or whether instead switching the top-ranked disambiguation to null improves the objective function.
+    As our experiments illustrate, the linking task is the more challenging of the two by a significant margin.
+    Figure 2 provides detailed pseudocode for GLOW.
+    Given a document d and a set of mentions M, we start by augmenting the set of mentions with all phrases in the document that could be linked to Wikipedia, but were not included in M. Introducing these additional mentions provides context that may be informative for the global coherence computation (it has no effect on local approaches).
+    In the second step, we construct for each mention mi a limited set of candidate Wikipedia 

@@ -1,0 +1,9 @@
+ry, they request an appropriate history view object from the history object and then query the history view object to determine whether their firing conditions are satisfied.
+    Note that these history views generally hold information about a limited window around the current token.
+    If the current token is denoted as wo, then our model only holds information about tokens w1 for all history views except the lexical ones.
+    For these views, the window is w-2 &#8226; &#8226; &#8226; W. Future objects, on the other hand, are trivial in that their only piece of data is an integer indicating which of the 29 members of the future space they represent.
+  
+  
+    Features are implemented as binary valued functions which query the history and future objects to determine whether or not they &amp;quot;fire&amp;quot;.
+    In the following sections, we will look at each of MENE's feature classes in turn.
+    While all of MENE's features have binary-valued output, the &amp;quot;binary&amp;quot; features are features 

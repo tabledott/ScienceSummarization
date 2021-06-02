@@ -1,0 +1,8 @@
+USE(&#183;|r) = 1 2''&#8722;1 .
+    Implicit Alignments Note that nowhere do we explicitly assign probabilities to morpheme alignments between parallel phrases.
+    However, our model allows morphemes to be generated in precisely one of two ways: as a lone stray morpheme or as part of a bilingual abstract morpheme pair.
+    Thus, our model implicitly assumes that each morpheme is either unaligned, or aligned to exactly one morpheme in the opposing language.
+    If we are given a parallel phrase with already segmented morphemes we can easily induce the distribution over alignments implied by our model.
+    As we will describe in the next section, drawing from these induced alignment distributions plays a crucial role in our inference procedure.
+    Inference Given our corpus of short parallel bilingual phrases, we wish to make segmentation decisions which yield a set of morphemes with high joint probability.
+    To assess the probability of a potential morpheme set, we need to marginalize over all possible ali

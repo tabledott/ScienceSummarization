@@ -1,0 +1,12 @@
+oring function prefers the (adjective,noun) attachment over the (prep,noun) attachment.
+    Moreover, the attachment (jumped,with), while correct, receives a negative score for the bare preposition &#8220;with&#8221; (Fig.
+    (1.1) - (1.4) ), and a high score once the verb has its subject and the PP &#8220;with joy&#8221; is built (Fig.
+    (1.5) ).
+    Ideally, we would like to score easy and reliable attachments higher than harder less likely attachments, thus performing attachments in order of confidence.
+    This strategy allows us both to limit the extent of error propagation, and to make use of richer contextual information in the later, harder attachments.
+    Unfortunately, this kind of ordering information is not directly encoded in the data.
+    We must, therefore, learn how to order the decisions.
+    We first describe the learning algorithm (Section 4) and a feature representation (Section 5) which enables us to learn an effective scoring function.
+  
+  
+    We use a linear model score(x) = w&#65

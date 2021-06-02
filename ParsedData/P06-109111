@@ -1,0 +1,11 @@
+feature vector as in Eq.
+    1.
+    We note that a good decoder does not necessarily employ a scoring function that approximates the BLEU score.
+    Instead, we only need to make sure that the top-ranked block sequence obtained by the decoder scoring function has a high BLEU score.
+    To formulate this idea, we attempt to find a decoding parameter such that for each sentence in the training data, sequences in with the highest BLEU scores should get scores higher than those with low BLEU scores.
+    Denote by a set of block sequences in with the highest BLEU scores.
+    Our decoded result should lie in this set.
+    We call them the &#8220;truth&#8221;.
+    The set of the remaining sequences is , which we shall refer to as the &#8220;alternatives&#8221;.
+    We look for a weight vector that minimize the following training criterion: where are BLEU scores, are translation scores, and .
+    We refer to this formulation as &#8217;costMargin&#8217; (cost-sensitive margin) method: for each training sentence the &#

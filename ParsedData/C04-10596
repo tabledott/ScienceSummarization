@@ -1,0 +1,10 @@
+ performance.
+			Three bag-of-words query models are proposed and explained in the following sections.
+			2.1 Sentence Retrieval Process.
+			In our sentence retrieval process, the standard tf/idf (term frequency and inverse document frequency) term weighting scheme is used.
+			The queries are built from the translation hypotheses.
+			We follow (Eck, et al, 2004) in considering each sentence in the monolingual corpus as a document, as they have shown that this gives better results compared to retrieving entire news stories.
+			Both the query and the sentences in the text corpus are converted into vectors by assigning a term weight to each word.
+			Then the cosine similarity is calculated proportional to the inner product of the two vectors.
+			All sentences are ranked according to their similarity with the query, and the most similar sentences are used as the data for building the specific language model.
+			In our experiments we use different numbers of similar sentences, ranting from one to several thousand.

@@ -1,0 +1,9 @@
+hat we have described to second-order parsing models.
+    In practice, however, a bottleneck for the method would be the estimation of the generative models on unlabeled data.
+    This step requires calculation of marginals on unlabeled data.
+    Second-order parsing models generally require more costly inference methods for the calculation of marginals, and this increased cost may be prohibitive when large quantities of unlabeled data are employed.
+    We instead make use of a simple &#8216;two-stage&#8217; approach for extending the SS-SCM approach to the second-order parsing model of (Carreras, 2007).
+    In the first stage, we use a first-order parsing model to estimate generative models q1 ... qk from unlabeled data.
+    In the second stage, we incorporate these generative models as features within a second-order parsing model.
+    More precisely, in our approach, we first train a first-order parsing model by Step 1 and 2, exactly as described in Section 2.4, to estimate w0, v0 and q1.
+    Then, we subst

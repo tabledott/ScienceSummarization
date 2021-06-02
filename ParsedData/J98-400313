@@ -1,0 +1,9 @@
+eight to each of its alignments, such that those weights sum to 1.
+    In the case above, each alignment gets a weight of 0.5.
+    PAUSE:pause Our WFST has 99 states and 283 arcs.
+    English sounds (in capitals) with probabilistic mappings to Japanese sound sequences (in lower case), as learned by estimation-maximization.
+    Only mappings with conditional probabilities greater than 1% are shown, so the figures may not sum to 1.
+    We have also built models that allow individual English sounds to be &amp;quot;swallowed&amp;quot; (i.e., produce zero Japanese sounds).
+    However, these models are expensive to compute (many more alignments) and lead to a vast number of hypotheses during WFST composition.
+    Furthermore, in disallowing &amp;quot;swallowing,&amp;quot; we were able to automatically remove hundreds of potentially harmful pairs from our training set, e.g., ( (B AA R B ER SH AA P) 4-* (b aab a a) ).
+    Because no alignments are possible, such pairs are skipped by the learning algorithm; cases lik

@@ -1,0 +1,9 @@
+e alignments of one sentence pair, which could be (I + 1)J alignments in total.
+    While (Och and Ney, 2003) presents algorithm to implement counting over all the alignments for Model 1,2 and HMM, it is prohibitive to do that for Models 3 through 6.
+    Therefore, the counts are only collected for a subset of alignments.
+    For example, (Brown et al., 1993) suggested two different methods: using only the alignment with the maximum probability, the so-called Viterbi alignment, or generating a set of alignments by starting from the Viterbi alignment and making changes, which keep the alignment probability high.
+    The later is called &#8220;pegging&#8221;.
+    (Al-Onaizan et al., 1999) proposed to use the neighbor alignments of the Viterbi alignment, and it yields good results with a minor speed overhead.
+    During training we starts from simple models use the simple models to bootstrap the more complex ones.
+    Usually people use the following sequence: Model 1, HMM, Model 3 and finally Model 4.
+    Table

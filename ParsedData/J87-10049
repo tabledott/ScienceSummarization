@@ -1,0 +1,12 @@
+ more efficient.
+    With this idea, stacks are represented as trees (or a forest).
+    Finally, a further refinement, the graph-structured stack, is described to make the algorithm even more efficient; efficient enough to run in polynomial time.
+    The simplest idea would be to handle multiple entries non-deterministically.
+    We adopt pseudo-parallelism (breadth-first search), maintaining a list of stacks (the Stack List).
+    The pseudo-parallelism works as follows.
+    A number of processes are operated in parallel.
+    Each process has a stack and behaves basically the same as in standard LR parsing.
+    When a process encounters a multiple entry, the process is split into several processes (one for each entry), by replicating its stack.
+    When a process encounters an error entry, the process is killed, by removing its stack from the stack list.
+    All processes are synchronized; they shift a word at the same time so that they always look at the same word.
+    Thus, if a process encounters a shift a

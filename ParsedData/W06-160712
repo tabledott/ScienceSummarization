@@ -1,0 +1,7 @@
+ass-box techniques: Zens-Ney &#8220;noisy-or&#8221; and Koehn-Och-Marcu IBM smoothing.
+    Our experiments tested not only these individual schemes, but also some loglinear combinations of a black-box technique with a glassbox technique.
+    Good-Turing smoothing is a well-known technique (Church and Gale, 1991) in which observed counts c are modified according to the formula: and Gale, 1991).
+    We first take the log of the observed (c, nc) values, and then use a linear least squares fit to log nc as a function of log c. To ensure that the result stays close to the reliable values of nc for large c, error terms are weighted by c, ie: c(log nc &#8722; log n')2, where n' are the fitted values.
+    Our implementation pools all counts c(&#732;s, &#732;t) together to obtain n' (we have not yet tried separate counts based on length of t&#732; as discussed above).
+    It follows directly from (2) that the total count mass assigned to unseen phrase pairs is cg(0)n0 = n1, which we approximate by ni.
+    This mass is

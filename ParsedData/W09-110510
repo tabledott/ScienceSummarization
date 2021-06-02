@@ -1,0 +1,8 @@
+ier predicts whether a token is the first token of a negation signal, inside a negation signal, or outside of it.
+    We use IGTREE as implemented in TiMBL (version 6.1.2) (Daelemans et al., 2007).
+    TiMBL2 is a software package that contains implementations of memory-based learning algorithms like IB1 and IGTREE.
+    We also experimented with IB1, but it produced lower results.
+    The classifier was parameterised by using gain ratio for feature weighting.
+    The instances represent all tokens in the corpus and they have features of the token (lemma) and of the token context: word form, POS, and chunk IOB tag3 of one token to the left and to the right; word form of the second token to the left and to the right.
+    According to the gain ratio scores, the most informative feature is the lemma of the token, followed by the chunk IOB tag of the token to the right, and the features relative to the token to the left.
+    The test file is preprocessed using a list of negation signals extracted from the training

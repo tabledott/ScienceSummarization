@@ -1,0 +1,8 @@
+ set with a finite number of positions).
+    Hence, we may separate order from content:
+  
+  
+    We extend the baseline model with lexical linguistic representations (supertags) both in the language model as well as in the phrase translation model.
+    Before we describe how our model extends the baseline, we shortly review the supertagging approaches in Lexicalized Tree-Adjoining Grammar and Combinatory Categorial Grammar.
+    Here, Pw(t) is the target language model, P(Os|Ot) represents the conditional (order) linear distortion probability, and P(0s|0t) stands for a probabilistic translation model from target language bags of phrases to source language bags of phrases using a phrase translation table.
+    As commonly done in PBSMT, we interpolate these models log-linearly (using different A weights) together with a word penalty weight which allows for control over the length of the target sentence t: For convenience of notation, the interpolation factor for the bag of phrases translation model is shown in 

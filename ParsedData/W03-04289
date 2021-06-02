@@ -1,0 +1,8 @@
+al markov model (CMM), also known as a maximum entropy markov model (McCallum et al., 2000).
+    Previous classification decisions are clearly relevant: for example the sequence Grace Road is a single location, not a person&#8217;s name adjacent to a location (which is the erroneous output of the model in section 3).
+    Adding features representing the previous classification decision ( ) raised the score 2.35% to 85.44%.
+    We found knowing that the previous word was an other wasn&#8217;t particularly useful without also knowing its part-of-speech (e.g., a preceding preposition might indicate a location).
+    Joint tag-sequence features, along with longer distance sequence and tag-sequence features, gave 87.21%.
+    The remaining improvements involved a number of other features which directly targetted observed error types.
+    These features included letter type pattern features (for example 20-month would become d-x for digitlowercase and Italy would become Xx for mixed case).
+    This improved performan

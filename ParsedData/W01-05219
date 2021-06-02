@@ -1,0 +1,9 @@
+ts part of speech.
+    Because the word pair feature is the most specific in the model, it is likely to be the most corpusspecific.
+    The vocabularies used in corpora vary, as do the word frequencies.
+    It is reasonable to expect word co-occurrences to vary as well.
+    In order to test this hypothesis, we removed the distribution &#65533;P(ChwlP, H, Hht, Hhw, C, Cht) from the parsing model entirely, relying on the interpolation of the two less specific distributions in the parser: We performed cross-corpus experiments as before to determine whether the simpler parsing model might be more robust to corpus effects.
+    Results are shown in Table 3.
+    Perhaps the most striking result is just how little the elimination of lexical bigrams affects the baseline system: performance on the WSJ corpus decreases by less than 0.5% absolute.
+    Moreover, the performance of a WSJ-trained system without lexical bigrams on Brown test data is identical to the WSJtrained system with lexical bigrams.
+    Lexical cooccur

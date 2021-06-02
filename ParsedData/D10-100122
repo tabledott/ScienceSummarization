@@ -1,0 +1,7 @@
+ matrices E &#8712; Rq&#215;&#65533; and F &#8712; Rq&#215;l specify q linear &#8220;agreement&#8221; constraints between x1 &#8712; R' and x2 &#8712; Rl.
+    The sets X1, X2 are also specified by linear constraints, X1 = {x1 &#8712; R1 : Ax1 = b, x1 &#8805; 0} and X2 = {x2 &#8712; Rl : Cx2 = d, x2 &#8805; 01, hence the problem is an LP.
+    Note that if we set X1 = conv(Y), X2 = conv(Z), and define E and F to specify the agreement constraints &#181;(i, t) = v(i, t), then we have the LP relaxation in Eq.
+    10.
+    It is natural to apply Lagrangian relaxation in cases where the sub-problems maxx1&#8712;X1 01 &#183; x1 and maxx2&#8712;X2 02 &#183; x2 can be efficiently solved by combinatorial algorithms for any values of 01, 02, but where the constraints Ex1 = Fx2 &#8220;complicate&#8221; the problem.
+    We introduce Lagrange multipliers u &#8712; Rq that enforce the latter set of constraints, giving the Lagrangian: and the dual problem is to find minu&#8712;R' L(u).
+    Because X1 and X2 are defined by line

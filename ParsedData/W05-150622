@@ -1,0 +1,11 @@
+?
+			| e ? BS (v)}, the set of all the top parses from each incoming hyperarc (cf.
+			Algorithm 1).
+			Indeed, it suffices to keep only the top k out of the |BS (v)| candidates in C, which would lead to a significant speedup in the case where |BS (v)| ? k. 4 Now the top derivation in C is the top derivation for v. Then, whenever we remove an element ?e, j?
+			from C, we replace it with the |e| elements {?e, j + bl?
+			| 1 ? l ? |e|} (again, as in Algorithm 1).
+			The full pseudocode for this algorithm is shown in Figure 6.
+			4.4 Algorithm 3: compute mult?k lazily.
+			Algorithm 2 exploited the idea of lazy computation: per forming mult?k only as many times as necessary.
+			But thisalgorithm still calculates a full k-best list for every ver tex in the hypergraph, whereas we are only interested in 3If we maintain a Min-Heap along with the Min-Heap, wecan reduce the per-iteration cost to O(|e| log k), and with Fi bonacci heap we can further improve it to be O(|e| + log k).
+			But these techniques do not change t

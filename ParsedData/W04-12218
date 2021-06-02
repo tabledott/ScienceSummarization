@@ -1,0 +1,8 @@
+til the lexicon grew to roughly 50 entries, though it could probably be more complete.
+    With all this information at the model&#8217;s disposal, it can still be difficult to properly disambiguate between these entities.
+    For example, the acronym &#8220;EPC&#8221; appears in these static lexicons both as a protein (&#8220;eosinophil cationic protein&#8221; [sic]) and as a cell line (&#8220;epithelioma papulosum cyprini&#8221;).
+    Furthermore, a single word like &#8220;transcript&#8221; is sometimes all that disambiguates between RNA and DNA mentions (e.g.
+    &#8220;BMLF1 transcript&#8221;).
+    The CRF can learn weights for these individual words, but it may help to build general, dynamic keyword lexicons that are associated with each label to assist in disambiguating between similar classes (and perhaps boost performance on low-frequency labels, such as RNA and CELL-LINE, for which training data are sparse).
+    These keyword lexicons are generated automatically as follows.
+    All of the labeled ter

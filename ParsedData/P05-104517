@@ -1,0 +1,10 @@
+e speakers.
+    If a phrase is labeled as a speaker, we assume that the last word is the speaker&#8217;s last name, and we penalize for each occurrance of that word which is not also labeled speaker.
+    For the start and end times the penalty is multiplied in based on how many words are in the entity.
+    For the speaker, the penalty is only multiplied in once.
+    We used a hand selected penalty of exp &#8722;4.0.
+  
+  
+    In the previous section we defined two models of non-local structure.
+    Now we would like to incorporate them into the local model (in our case, the trained CRF), and use Gibbs sampling to find the most likely state sequence.
+    Because both the trained CRF and the non-local models are themselves sequence models, we simply combine the two models into a factored sequence model of the following form where M is the local CRF model, L is the new nonlocal model, and F is the factored model.8 In this form, the probability again looks difficult to compute (because of the normalizing factor, 

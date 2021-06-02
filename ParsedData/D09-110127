@@ -1,0 +1,9 @@
+n our coreference experiments.
+    Scoring programs.
+    To score the output of a coreference model, we employ three scoring programs: MUC (Vilain et al., 1995), B3 (Bagga and Baldwin, 1998), and &#966;3-CEAF (Luo, 2005).
+    There is a complication, however.
+    When scoring a response (i.e., system-generated) partition against a key (i.e., gold-standard) partition, a scoring program needs to construct a mapping between the mentions in the response and those in the key.
+    If the response is generated using true mentions, then every mention in the response is mapped to some mention in the key and vice versa; in other words, there are no twinless (i.e., unmapped) mentions (Stoyanov et al., 2009).
+    However, this is not the case when system mentions are used.
+    The aforementioned complication does not arise from the construction of the mapping, but from the fact that Bagga and Baldwin (1998) and Luo (2005) do not specify how to apply B3 and CEAF to score partitions generated from system mentions.
+    We p

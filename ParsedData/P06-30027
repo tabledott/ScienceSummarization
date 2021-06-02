@@ -1,0 +1,8 @@
+s and edges.
+    Further, CW is parameter-free, operates locally and results in a partitioning of the graph, excluding singletons (i.e. nodes without edges).
+    Partitioning 1: High and medium frequency words Four steps are executed in order to obtain partitioning 1: partitioning as one-member clusters.
+    The graph construction in step 2 is conducted by adding an edge between two words a and b with weight w=1/(1-cos(a,b)), if w exceeds a similarity threshold s. The latter influences the number of words that actually end up in the graph and get clustered.
+    It might be desired to cluster fewer words with higher confidence as opposed to running in the danger of joining two unrelated clusters because of too many ambiguous words that connect them.
+    After step 3, we already have a partition of a subset of our target words.
+    The distinctions are normally more fine-grained than existing tag sets.
+    As feature words form the bulk of tokens in corpora, it is clearly desired to make sure that they appear i

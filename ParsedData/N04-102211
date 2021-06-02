@@ -1,0 +1,9 @@
+s both on the parse-trees and the word-to-word alignments, is therefore very different for the two translations (Table 2).
+    While string based metrics such as BLEU, WER and PER are insensitive to the syntactic structure of the translations, BiTree Loss is able to measure this aspect of translation quality, and assigns different scores to the two translations.
+    We provide this example to show how a loss function which makes use of syntactic structure from source and target parse trees, can capture properties of translations that string based loss functions are unable to measure.
+  
+  
+    Statistical Machine Translation (Brown et al., 1990) can be formulated as a mapping of a word sequence in a source language to word sequence in the target language that has a word-to-word alignment relative to.
+    Given the source sentence, the MT decoder produces a target word string with word-to-word alignment .
+    Relative to a reference translation with word alignment, the decoder performance is measured as .
+    

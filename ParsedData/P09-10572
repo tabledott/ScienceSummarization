@@ -1,0 +1,8 @@
+ they all make use of two common model elements.
+    One is a probabilistic n-gram tag model P(ti|ti&#8722;n+1...ti&#8722;1), which we call the grammar.
+    The other is a probabilistic word-given-tag model P(wi|ti), which we call the dictionary.
+    The classic approach (Merialdo, 1994) is expectation-maximization (EM), where we estimate grammar and dictionary probabilities in order to maximize the probability of the observed word sequence: Goldwater and Griffiths (2007) report 74.5% accuracy for EM with a 3-gram tag model, which we confirm by replication.
+    They improve this to 83.9% by employing a fully Bayesian approach which integrates over all possible parameter values, rather than estimating a single distribution.
+    They further improve this to 86.8% by using priors that favor sparse distributions.
+    Smith and Eisner (2005) employ a contrastive estimation technique, in which they automatically generate negative examples and use CRF training.
+    In more recent work, Toutanova and Johnson (2008) p

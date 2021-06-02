@@ -1,0 +1,6 @@
+simple and efficient.
+    Furthermore, prior to language model integration (and distortion model integration, in the case of phrase based translation), pruning is unnecessary for most kinds of models, further simplifying the model-specific code.
+    Once this unscored translation forest has been generated, any non-coaccessible states (i.e., states that are not reachable from the goal node) are removed and the resulting structure is rescored with language models using a user-specified intersection/pruning strategy (&#167;4) resulting in a rescored translation forest and completing phase 1.
+    The second phase of the decoding pipeline (depicted in Figure 2) computes a value from the rescored forest: 1- or k-best derivations, feature expectations, or intersection with a target language reference (sentence or lattice).
+    The last option generates an alignment forest, from which a word alignment or feature expectations can be extracted.
+    Most of these values are computed in a time complexity that is linear i

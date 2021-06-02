@@ -1,0 +1,13 @@
+ PA Algorithm input Training set T = {(x t , y t )} T t=1 Number of iterations N Regularization parameter C Initialize w to zeros repeat N times for (x t , y t ) in T let y?
+  t = argmax y F (x t , y) + ?
+  (y t , y) let ?
+  t )?F (x t ,y t )+?
+  (x,y t )??(x,y?
+  t )) returnwaverage We used a C value of 0.01, and the number of iterations was 6.
+  2.1 Features and Search The feature function ?
+  is a second-order edge- factored representation (McDonald and Pereira, 2006; Carreras, 2007).
+  The second-order repre- sentation allows us to express features not only of head?dependent links, but also of siblings and chil- dren of the dependent.
+  This feature set forces us to adopt the expensive search procedure by Car- reras (2007), which extends Eisner?s span-based dynamic programming algorithm (1996) to allow second-order feature dependencies.
+  Since the cost function ?
+  is based on the cost of single links, this procedure can also be used to find the maximizer of F (x i , y ij )+?
+  (y i , y ij ), which is ne

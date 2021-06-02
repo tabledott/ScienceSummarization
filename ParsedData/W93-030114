@@ -1,0 +1,9 @@
+ problematic.
+    First, since there are no sentence boundaries, there are no direct equivalents for i, j, in and 1.
+    Secondly, there are too many parameters to be estimated, given the limited size of our corpora (one parameter for each combination of i, j, in and 1).
+    Fortunately, these parameters are highly redundant.
+    For example, it is likely that a(i1j, m, 1) will be very close to a(i + 11j+ 1, m, /) and a(i1j, m + 1,1+1).
+    In order to deal with these concerns, we replace probabilities of the form a(iIj, in, 1) with a small set of offset probabilities.
+    We use k to denote the offset between i, an English position which corresponds to the French position j, and the English position which the input alignment I connects to j: k = i &#8212;I(j).
+    An offset probability, o(k), is the probability of having an offset k for some arbitrary connection.
+    According to (8), k ranges between &#8212;w and w. Thus, instead of equation 6, we have where CON is the set of all connections and COArk is th

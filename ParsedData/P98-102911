@@ -1,0 +1,7 @@
+w us to learn what conditions suggest that we should trust one tagger output over another.
+    We used a version of example-based learning to determine whether these tagger differences could be exploited.5 To determine 5 Example-based learning has also been applied succesfully in building a single part of speech tagger the tag of a word, we use the previous word, current word, next word, and the output of each tagger for the previous, current and next word.
+    See Figure 6.
+    For each such context in the training set, we store the probabilities of what correct tags appeared in that context.
+    When the tag distribution for a context has low entropy, it is a very good predictor of the correct tag when the identical environment occurs in unseen data.
+    The problem is that these environments are very specific, and will have low overall recall in a novel corpus.
+    To account for this, we must back off to more general contexts when we encounter an environment in the test set that did not occur in the train

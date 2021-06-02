@@ -1,0 +1,7 @@
+children, m! re-orderings are possible, each of which is assigned a probability Porder conditioned on the syntactic categories of the parent node and its children.
+    As the second step, French words can be inserted at each node of the parse tree.
+    Insertions are modeled in two steps, the first predicting whether an insertion to the left, an insertion to the right, or no insertion takes place with probability Pins, conditioned on the syntactic category of the node and that of its parent.
+    The second step is the choice of the inserted word Pt(f|NULL), which is predicted without any conditioning information.
+    The final step, a French translation of each original English word, at the leaves of the tree, is chosen according to a distribution Pt(f|e).
+    The French word is predicted conditioned only on the English word, and each English word can generate at most one French word, or can generate a NULL symbol, representing deletion.
+    Given the original tree, the re-ordering, insertion, and translation

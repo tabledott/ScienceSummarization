@@ -1,0 +1,6 @@
+imate is a good indicator of the rule accuracy but it frequently suffers from large estimation error due to insufficient training data.
+    For example, if a rule was found to apply just once and the total number of observations was also one, its estimate p has the maximal value (1) but clearly this is not a very reliable estimate.
+    We tackle this problem by calculating the lower confidence limit 711 for the rule estimate, which can be seen as the minimal expected value of p for the rule if we were to draw a large number of samples.
+    Thus with a certain confidence a we can assume that if we used more training data, the rule estimate 19 would be not worse than the irk.
+    The rule estimate then will be taken at its lowest possible value which is the lrL limit itself.
+    First we adjust the rule estimate so that we have no zeros in positive (f9) or negative (1 &#8212; p) outcome probabilities, by adding some floor values to the numerator and denominator: where t(1-a)/2 is a coefficient of the t-distribu

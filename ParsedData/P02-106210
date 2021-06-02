@@ -1,0 +1,9 @@
+se. for is a transformation of , where the transformation is applied in the same way as the final feature type in the maximum entropy tagger.
+    Each character in the word is mapped to its , but repeated consecutive character types are not repeated in the mapped string.
+    For example, Animal would be mapped to Aa in this feature, G.M. would again be mapped to A.A.. for is the same as , but has an additional flag appended.
+    The flag indicates whether or not the word appears in a dictionary of words which appeared more often lower-cased than capitalized in a large corpus of text.
+    In our example, Animal appears in the lexicon, but G.M. does not, so the two values for would be Aa1 and A.A.0 respectively.
+    In addition, and are all defined to be NULL if or .
+    Most of the features we describe are anchored on entity boundaries in the candidate segmentation.
+    We will use &#8220;feature templates&#8221; to describe the features that we used.
+    As an example, suppose that an entity seen in a candida

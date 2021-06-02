@@ -1,0 +1,6 @@
+; which contains, for each word, the set of categories the word was seen with in the data.
+    If a word appears at least K times in the data, the supertagger only considers categories that appear in the word&#8217;s category set, rather than all lexical categories.
+    The second parsing stage applies a CKY bottom-up chart-parsing algorithm, as described in Steedman (2000).
+    The combinatory rules currently used by the parser are as follows: functional application (forward and backward), generalised forward composition, backward composition, generalised backward-crossed composition, and typeraising.
+    There is also a coordination rule which conjoins categories of the same type.6 Type-raising is applied to the categories NP, PP, and Sadj NP (adjectival phrase); it is currently implemented by simply adding pre-defined sets of type-raised categories to the chart whenever an NP, PP or Sadj NP is present.
+    The sets were chosen on the basis of the most frequent type-raising rule instantiations in sections 0

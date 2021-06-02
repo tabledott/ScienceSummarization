@@ -1,0 +1,7 @@
+mate the true distribution by a cruder distribution , and then find the tree with the highest in polynomial time.
+    We first create a packed representation of for a given sentence .2 Then, the approximate distribution is created using the packed forest, and the parameters in are adjusted so that approximates as closely as possible.
+    The form of is that of a product of the parameters, just like the form of a PCFG model, and it enables us to use a Viterbi algorithm to select the tree with the highest .
+    A packed forest is defined as a tuple of , which can be obtained by parsing with beam thresholding, for instance.
+    An approximate distribution on such subsets can be derived in almost the same way as one for from the-th to-th word in .
+    The second component, , is a function on that represents dominance relations among the chart items in ; is a set of possible daughters of if is not a pre-terminal node, and if is a pre-terminal node above .
+    Two parse trees for a sentence and a packed representat

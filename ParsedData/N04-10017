@@ -1,0 +1,9 @@
+ropy classifier.
+    Both methods can integrate arbitrary types of information and make a classification decision by aggregating all information available for a given classification.
+    Before formally describing the methods2, we introduce some notations: let be the set of predicted classes, be the example space and be the feature space.
+    Each example has associated a vector of binary features .
+    We also assume the existence of a training data set and a test set .
+    The RRM algorithm (Zhang et al., 2002) constructs linear classifiers (one for each predicted class), each predicting whether the current example belongs to the class or not.
+    Every such classifier has an associated feature weight vector, , which is learned during the training phase so as to minimize the classification error rate3.
+    At test time, for each example , the model computes a score and labels the example with either the class corresponding to the classifier with the highest score, if above 0, or outside, otherwise.
+    The 

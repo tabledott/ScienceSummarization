@@ -1,0 +1,10 @@
+ly outperforms the combined left/right view.)
+    For initial labeled data, the first L instances of the training data are given their correct labels.
+    We determined the best setting for the parameters of the CT algorithm by testing multiple values: L (initial amount of labeled data) varied from 10 to 5000, then u (pool size) from 200 to 5000, then g (growth size) from 1 to 50.
+    The best setting, in terms of effectiveness of co-training in improving the accuracy of the classifier, was L = 500,u = 1000,g = 5.
+    These values are used throughout the evaluation unless noted otherwise.
+    Co-Training.
+    We observe the progress of the co-training process by determining, at each iteration, the accuracy of the co-training classifiers over the test data.
+    We also record the accuracy of the growing body of labeled data.
+    These measurements can be plotted to depict a learning curve, indicating the progress of cotraining as the classifier accuracy changes.
+    Figure 4 presents two representative curves,

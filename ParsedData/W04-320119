@@ -1,0 +1,8 @@
+ghts according to the discriminative method of section 4.
+    Tag-word production weights were fixed to be the log of the generative P(w|t) model.
+    That is, the only change between GENERATIvE and BAsIC is the use of the discriminative maximum-margin criterion in place of the generative maximum likelihood one.
+    This change alone results in a small improvement (88.20 vs. 87.99 F1).
+    On top of the basic model, we first added lexical features of each span; this gave a LEXICAL model.
+    For a span (s, e) of a sentence x, the base lexical features were: These base features were conjoined with the span length for spans of length 3 and below, since short spans have highly distinct behaviors (see the examples below).
+    The features are lexical in the sense than they allow specific words 5Unary rewrites were compiled into a single compound symbol, so for example a subject-gapped sentence would have label like s+vp.
+    These symbols were expanded back into their source unary chain before parses were evaluat

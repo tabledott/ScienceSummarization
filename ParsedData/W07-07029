@@ -1,0 +1,16 @@
+ract two translation models: t?
+			M? m=1 ?mhm(swc, tw) + N?
+			n=1 ?nhn(sw, tw) (4) One model consists of more specific features m and would return log probabilities, for example log2Pr(tw|swc), if the particular word and supertaghad been seen before in training.
+			Otherwise it re turns ?C, a negative constant emulating log2(0).
+			The other model consist of more general features n and always returns log probabilities, for example log2Pr(tw|sw).
+	
+	
+			CCGs have syntactically rich lexicons and a small set of combinatory operators which assemble the parse-trees.
+			Each word in the sentence is assigned a category from the lexicon.
+			A category may either be atomic (S, NP etc.) or complex (S\S, (S\NP)/NP etc.).
+			Complex categories have the general form?/?
+			or ?\?
+			where ? and ? are themselves cate gories.
+			An example of a CCG parse is given: Peter eats apples NP (S\NP)/NP NP &gt; S\NP &lt; S where the derivation proceeds as follows: ?eats?
+			is combined with ?apples?
+			under the operation of forwar

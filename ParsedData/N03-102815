@@ -1,0 +1,9 @@
+ and = These contraints on the model topology are enforced by giving appropriate features a weight of forcing all the forbidden labelings to have zero probability.
+    Our choice of features was mainly governed by computing power, since we do not use feature selection and all features are used in training and testing.
+    We use the following factored representation for features where i) is a predicate on the input sequence x and current position i and yi) is a predicate on pairs of labels.
+    For instance, DT, NN.&#8221; Because the label set is finite, such a factoring of f(yi&#8722;1, yi, x, i) is always possible, and it allows each input predicate to be evaluated just once for many features that use it, making it possible to work with millions of features on large training sets.
+    Table 1 summarizes the feature set.
+    For a given position i, wi is the word, ti its POS tag, and yi its label.
+    For any label y = c'c, c(y) = c is the corresponding chunk tag.
+    For example, c(OB) = B.
+    The use of 

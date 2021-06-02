@@ -1,0 +1,10 @@
+ies within a confidence interval around the measurement on the test sets.
+    A commonly used level of reliability of the result is 95%, also written as , called p-level.
+    Let us explore this notion on a simpler metric of translation quality than BLEU.
+    A common metric in older machine translation papers is a score from 1 to 5 for each sentence, or even simpler: a human judge deemed a translation either as correct or wrong.
+    If, say, 100 sentence translations are evaluated, and 30 are found correct, what can we say about the true translation quality of the system?
+    Our best guess is 30%, but that may be a few percent off.
+    How much off, is the question to be answered by statistical significance tests.
+    Given a set of sentences, we can compute the sample mean and variance of the individual sentence scores : What we are really interested in, however is the true mean .
+    Let us assume that the sentence scores are distributed according to the normal distribution.
+    This implies that a senten

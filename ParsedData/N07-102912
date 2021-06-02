@@ -1,0 +1,9 @@
+he phrase table entry is increased if several systems agree on the target words.
+    The agreement is measured by four levels of similarity: represents the similarity of a given phrase to all the hypotheses in the system at the similarity level .
+    Basically, if there is a similar phrase in a given hypothesis in the system to the phrase , the similarity score is increased by .
+    Note that each phrase in one hypothesis is similar to another hypothesis at only one similarity level, so one hypothesis can contribute to at only one similarity level.
+    The final confidence of the phrase table entry is defined as (7) where are system weights and are similarity score weights.
+    The parameters through interpolate between the sum, average and maximum of the similarity scores.
+    These interpolation weights and 1.
+    Merge individual -best lists to form a large -best list with unique hypotheses; the system weights are constrained to sum to one.
+    The number of tunable combination weights, in addition to norm

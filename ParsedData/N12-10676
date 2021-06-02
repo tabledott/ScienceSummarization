@@ -1,0 +1,11 @@
+ from the example sentence is shown in Figure 2.
+    Our goal is to find the sequence of edits ei with the maximum overlap with the gold standard.
+    Let L = (V, E) be the edit lattice graph from the last section.
+    We change the cost of each edge whose corsystem feeds a word into PB-SMT pipeline . responding edit has a match in the gold standard to &#8722;(u + 1) &#215; |E|.
+    An edit e matches a gold edit g iff they have the same offsets and e&#8217;s correction is included in g: Then, we perform a single-source shortest path search with negative edge weights from the start to the end vertex1.
+    This can be done efficiently, for example with the Bellman-Ford algorithm (Cormen et al., 2001).
+    As the lattice is acyclic, the algorithm is guaranteed to terminate and return a shortest path.
+    Theorem 1.
+    The set of edits corresponding to the shortest path has the maximum overlap with the gold standard annotation.
+    Proof.
+    Let e = e1, ... , ek be the edit sequence corresponding to the shortes

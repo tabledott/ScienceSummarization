@@ -1,0 +1,8 @@
+, similar to the specification of the arguments of a word in dependency parsing.
+    Let W be the set of words in the corpus.
+    The set of labels L(W) = W &#215; {0, 1} consists of two labels based on every word w: a class label (w, 0) (denoted by [w]) and an adjacency label (w, 1) (denoted by [w ] or [ w]).
+    The two labels (w, 0) and (w, 1) are said to be opposite labels and, for l &#8712; L(W), I write l&#8722;1 for the opposite of l. In addition to the labels, there is also a finite set P = {Stop, In*, In, Out} of linking properties.
+    The Stop specifies the strength of non-attachment, In and Out specify the strength of inbound and outbound links and In* is an intermediate value in the induction of inbound and outbound strengths.
+    A lexicon L is a function which assigns each word w &#8712; W a lexical entry (... , Aw&#8722;2, Aw&#8722;1, Aw1 , Aw2 , ...).
+    Each of the Aw i is an adjacency point.
+    Each Aw i is a function Aw i : L(W) &#8746; P &#8594; R which assigns each label in L(W) and ea

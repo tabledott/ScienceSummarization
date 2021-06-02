@@ -1,0 +1,7 @@
+.
+    In the case of humans, in fact, when a TLINK is posited by both annotators between the same pairs of events or times, the inter-annotator agreement on the labels is a .77 average of P&amp;R.
+    To ensure replicability of results, we assume perfect (i.e., OTC-supplied) events, times, and links.
+    Thus, we can consider TLINK inference as the following classification problem: given an ordered pair of elements X and Y, where X and Y are events or times which the human has related temporally via a TLINK, the classifier has to assign a label in RelTypes.
+    Using RelTypes instead of RelTypes &#8746; {NONE} also avoids the problem of heavily skewing the data towards the NONE class.
+    To construct feature vectors for machine learning, we took each TLINK in the corpus and used the given TimeML features, with the TLINK class being the vector&#8217;s class feature.
+    For replicability by other users of these corpora, and to be able to isolate the effect of components, we used &#8216;perfect&#8217; features

@@ -1,0 +1,6 @@
+verage of the N best scores using N different sets of N-1 references.
+    The Jackknifing procedure is adopted since we often need to compare system and human performance and the reference translations are usually the only human translations available.
+    Using this procedure, we are able to estimate average human performance by averaging N best scores of one reference vs. the rest N-1 references.
+    We then computed average BLEU1-124, GTM with exponents of 1.0, 2.0, and 3.0, NIST, WER, and PER scores over these three sets.
+    Finally we applied ROUGE-L, ROUGE-W with weighting function k1.2, and ROUGE-S without skip distance 4 BLEUN computes BLEU over n-grams up to length N. Only BLEU1, BLEU4, and BLEU12 are shown in Table 1. and fluency: BLEU1, 4, and 12 are BLEU with maximum of 1, 4, and 12 grams, NIST is the NIST score, ROUGE-L is LCS-based F-measure (0 = 1), ROUGE-W is weighted LCS-based F-measure (0 = 1).
+    ROUGE-S* is skip-bigram-based co-occurrence statistics with any skip distance limit, ROUGESN 

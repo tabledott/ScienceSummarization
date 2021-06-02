@@ -1,0 +1,11 @@
+ws (i.e. using multiple measures at the same time).
+    In order to yield the desired performance improvements, it turns out to be essential to filter out irrelevant features.
+    Table 5 shows the relevance of the best performing features on the BNEWS section.
+    As our feature selection mechanism chooses the best set of features by removing them (see Section 4.2), we evaluate the contributions of the remaining features as follows.
+    We start with a baseline system using all the features from Soon et al. (2001) that were not removed in the feature selection process (i.e.
+    DISTANCE).
+    We then train classifiers combining the current feature set with each feature in turn.
+    We then choose the best performing feature based on the MUC score F-measure and add it to the model.
+    We iterate the process until all features are added to the baseline system.
+    The table indicates that all knowledge sources are relevant for coreference resolution, as it includes SRL, WordNet and Wikipedia features.
+    The

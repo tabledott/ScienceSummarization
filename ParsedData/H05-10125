@@ -1,0 +1,8 @@
+
+			To see this, note that in gen erative models an input word can only be aligned toa single state in the search.
+			In our current situation, we are interested in aligning unsegmented Ara bic words and typical words have a few affixes toindicate for example pronouns, definiteness, prepositions and conjunctions.
+			In English these are sepa rate words, and therefore to maximize performance the unsegmented Arabic words serve as states in the search algorithm and we align English words to these states.
+			3.1 Transition Model.
+			The transition model tends to keep the alignmentsclose together and penalizes alignments in which ad jacent words in the target language come from very distant words in the source language.
+			Also, we would like to penalize many English words coming from the same Arabic state; we call this the state visit penalty and will be described later.
+			In this paper, we use a parametric form for the transition model, p(li|li?1) = 1 Z(li?1) [ 1 dist(li, li?1) + 1ns(li) ] (1) 90 where ns(i) re

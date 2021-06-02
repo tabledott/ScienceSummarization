@@ -1,0 +1,11 @@
+ote that Lattice MBR is operating over lattices which are gigantic in comparison to the number of paths in an N-best list.
+    At a lattice density of 30, the lattices in aren contain on an average about 1081 hypotheses!
+    We next examine the role of the scale factor &#945; in lattice MBR decoding.
+    The MBR scale factor determines the flatness of the posterior distribution (Equation 3).
+    It is chosen using a grid search on the dev2 set (Table 1).
+    Figure 3 shows the variation in BLEU scores on eval08 as this parameter is varied.
+    The results show that it is important to tune this factor.
+    The optimal scale factor is identical for all three language pairs.
+    In experiments not reported in this paper, we have found that the optimal scaling factor on a moderately sized development set carries over to unseen test sets.
+    Lattice MBR Decoding (Equation 6) involves computing a posterior probability for each n-gram in the lattice.
+    We would like to speed up the Lattice MBR computation (Sectio

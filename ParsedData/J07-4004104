@@ -1,0 +1,7 @@
+rk by starting with an unrestrictive setting of the supertagger.
+    The first value of &#946; is 0.005; if the parser cannot find a spanning analysis, this is changed to &#946; = 0.001k-150, which increases the average number of categories assigned to a word by decreasing &#946; and increasing the tagdictionary parameter.
+    If the node limit is exceeded at &#946; = 0.005 (for these experiments the node limit is set at 1,000,000), &#946; is changed to 0.01.
+    If the node limit is still exceeded, &#946; is changed to 0.03, and finally to 0.075.
+    The second row corresponds to the new strategy of starting with the most restrictive setting of the supertagger (&#946; = 0.075), and moving through the settings if the parser cannot find a spanning analysis.
+    The table shows that the new strategy has a significant impact on parsing speed, increasing it by a factor of 3 over the earlier approach (given the parameter settings used in these experiments).
+    The penultimate row corresponds to using only one sup

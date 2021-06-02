@@ -1,0 +1,9 @@
+ for g, h, and T could yield improvements.
+    We actually spent months trying to find an optimal combination as well as a strategy for coupling LSA-based scores with the Zscores, but without avail.
+    Another possibility: although LSA can find semantic relationships, it may not make semantic decisions at the level would still expect that the first is related to president, the second relates to crime, and the last relates to Marine.
+    Similarly, tokens such as Johns_Hopkins and Elvis are anaphors for Johns_Hopkins_University and Elvis_Presley, so they should have similar meanings.
+    This begs the question: can induced semantics help at all?
+    The answer is &#8220;yes.&#8221; The key is using LSA where it does best: finding things that are similar &#8212; or substitutable.
+    For every collocation C=X1X2..Xi-1XiXi+1..Xn, we attempt to find other similar patterns in the data, X1X2..Xi-1YXi+1..Xn.
+    If Xi and Y are semantically related, chances are that C is substitutable.
+    Since LSA excels at findi

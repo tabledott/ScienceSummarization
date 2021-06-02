@@ -1,0 +1,5 @@
+ation of the WkTk word-parse we used for the parser model (4) was the same as the one used in (Collins, 1996): It is worth noting that if the binary branching structure developed by the parser were always rightbranching and we mapped the POStag and nonterminal label vocabularies to a single type then our model would be equivalent to a trigram language model.
+    All model components &#8212; WORD-PREDICTOR, TAGGER, PARSER &#8212; are conditional probabilistic models of the type P(y/xi, x2, ,x,2) where y,x1,x2,...,xn, belong to a mixed bag of words, POStags, non-terminal labels and parser operations (y only).
+    For simplicity, the modeling method we chose was deleted interpolation among relative frequency estimates of different orders f&#8222;(.) using a recursive mixing scheme: As can be seen, the context mixing scheme discards items in the context in right-to-left order.
+    The A coefficients are tied based on the range of the count C(xi, , xn).
+    The approach is a standard one which doesn't require an e

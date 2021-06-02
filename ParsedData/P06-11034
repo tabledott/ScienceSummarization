@@ -1,0 +1,10 @@
+ side of the bilingual corpus to their counterparts on the other.
+    We use a Discrete Fourier Transform (Arfken, 1985) based metric for computing similarity of time distributions, and show that it has significant advantages over other metrics traditionally used.
+    We score NEs similarity with a linear transliteration model.
+    We first train a transliteration model on singleword NEs.
+    During training, for a given NE in one language, the current model chooses a list of top ranked transliteration candidates in another language.
+    Time sequence scoring is then used to rerank the list and choose the candidate best temporally aligned with the NE.
+    Pairs of NEs and the best candidates are then used to iteratively train the Once the model is trained, NE discovery proceeds as follows.
+    For a given NE, transliteration model selects a candidate list for each constituent word.
+    If a dictionary is available, each candidate list is augmented with translations (if they exist).
+    Translations will be th

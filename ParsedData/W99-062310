@@ -1,0 +1,10 @@
+ch parse is converted into a set of constituents represented as a tuples: (label, start, end).
+    The set is then compared with the set generated from the Penn Treebank parse to determine the precision and recall.
+    Precision is the portion of hypothesized constituents that are correct and recall is the portion of the Treebank constituents that are hypothesized.
+    For our experiments we also report the mean of precision and recall, which we denote by (P + R)I2 and F-measure.
+    F-measure is the harmonic mean of precision and recall, 2PR/(P + R).
+    It is closer to the smaller value of precision and recall when there is a large skew in their values.
+    We performed three experiments to evaluate our techniques.
+    The first shows how constituent features and context do not help in deciding which parser to trust.
+    We then show that the combining techniques presented above give better parsing accuracy than any of the individual parsers.
+    Finally we show the combining techniques degrade very little 

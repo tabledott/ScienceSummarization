@@ -1,0 +1,7 @@
+ed models can translate multiple words as a unit, and therefore capture non-compositional meaning.
+    Thus, by default if the training data is processed such that, for example, aufnahme, in its sense of recording, is segmented into two words, then more paths in the lattices become plausible translations.
+    However, using a strategy of &#8220;over segmentation&#8221; and relying on phrase models to learn the non-compositional translations has been shown to degrade translation quality significantly on several tasks (Xu et al., 2004; Habash and Sadat, 2006).
+    We thus desire lattices containing as little oversegmentation as possible.
+    We have now have a concept of a &#8220;gold standard&#8221; segmentation lattice for translation: it should contain all linguistically motivated segmentations that also correspond to plausible word-for-word translations into English.
+    Figure 2 shows an example of the reference lattice for the two words we just discussed.
+    For the experiments in this paper, we generate

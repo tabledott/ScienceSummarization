@@ -1,0 +1,10 @@
+ords kernel and tree kernel according to their F-measure in 5-fold cross validation.
+    Although there exist some extensions for tree kernel (Kashima and Koyanagi, 2002), we use the original tree kernel by Collins (Collins and Duffy, 2002), where all subtrees of a tree are used as distinct features.
+    This setting yields a fair comparison in terms of feature space.
+    To extend a binary classifier to a multi-class classifier, we use the one-vs-rest method.
+    Hyperparameters, such as number of iterations K in Boosting and soft-margin parameter C in SVMs were selected by using cross-validation.
+    We implemented SVMs with tree kernel based on TinySVM5 with custom kernels incorporated therein.
+    Table 1 summarizes the results of PHS and MOD tasks.
+    To examine the statistical significance of the results, we employed a McNemar&#8217;s paired test, a variant of the sign test, on the labeling disagreements.
+    This table also includes the results of significance tests.
+    In all tasks and categories, o

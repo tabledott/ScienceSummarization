@@ -1,0 +1,10 @@
+ures our similarity of two events: We run agglomerative clustering with pmi over all event patterns.
+    Merging decisions use the average link score between all new links across two clusters.
+    As with all clustering algorithms, a stopping criterion is needed.
+    We continue merging clusters until any single cluster grows beyond m patterns.
+    We briefly inspected the clustering process and chose m = 40 to prevent learned scenarios from intuitively growing too large and ambiguous.
+    Post-evaluation analysis shows that this value has wide flexibility.
+    For example, the Kidnap and Arson clusters are unchanged in 30 &lt; m &lt; 80, and Bombing unchanged in 30 &lt; m &lt; 50.
+    Figure 1 shows 3 clusters (of 77 learned) that characterize the main template types.
+    Learning a domain often suffers from a lack of training data.
+    The previous section clustered events from the MUC-4 corpus, but its 1300 documents do not provide enough examples of verbs and argument counts to further learn the semantic 

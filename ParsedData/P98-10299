@@ -1,0 +1,9 @@
+    The fact that the errors the taggers make are strongly complementary is very encouraging.
+    If all taggers made the exact same errors, there would obviously be no chance of improving accuracy through classifier combination.
+    However, note that the high complementary rate between tagger errors in itself does not necessarily imply that there is anything to be gained by classifier combination.
+    We ran experiments to determine whether the outputs of the different taggers could be effectively combined.
+    We first explored combination via simple majority-wins voting.
+    Next, we attempted to automatically acquire contextual cues that learned both which tagger to believe in which contexts and what tags are indicated by different patterns of tagger outputs.
+    Both the word environments and the tagger outputs for the word being tagged and its neighbors are used as cues for predicting the proper tag.
+    The simplest combination scheme is to have the classifiers vote.
+    The part of speech that appear

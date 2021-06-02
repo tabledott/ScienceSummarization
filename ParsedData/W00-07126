@@ -1,0 +1,9 @@
+cates that the probability of two words being morphological variants is based upon the probability of their respective changes in orthography and morphosynt act ics .
+  
+  
+    Our algorithm also focuses on inflectional languages.
+    However, with the exception of word segmentation, we provide it no human information and we consider only the impact of semantics.
+    Our approach (see Figure 1) can be decomposed into four components: (1) initially selecting candidate affixes, (2) identifying affixes which are potential morphological variants of each other, (3) computing semantic vectors for words possessing these candidate affixes, and (4) selecting as valid morphological variants those words with similar semantic vectors.
+    To select candidate affixes, we, like Gaussier, identify p-similar words.
+    We insert words into a trie (Figure 2) and extract potential affixes by observing those places in the trie where branching occurs.
+    Figure 2's hypothesized suffixes are NULL, &amp;quot;s,&amp;quot; &amp;quo

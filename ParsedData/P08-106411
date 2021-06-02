@@ -1,0 +1,8 @@
+sented next is implemented using dynamic programming.
+    Due to space limitation, we skip the details here.
+    In order to control the number of rules, we set three constraints for both finally extracted initial and abstract rules: 1) The depth of a tree in a rule is not greater than h .
+    2) The number of non-terminals as leaf nodes is not greater than c .
+    3) The tree number in a rule is not greater than d. In addition, we limit initial rules to have at most seven lexical words as leaf nodes on either side.
+    However, in order to extract long-distance reordering rules, we also generate those initial rules with more than seven lexical words for abstract rules extraction only (not used in decoding).
+    This makes our abstract rules more powerful in handling global structure reordering.
+    Moreover, by configuring these parameters we can implement other translation models easily: 1) STSG-based model when d =1 ; 2) SCFG-based model when d =1 and h = 2 ; 3) phrase-based translation model only (no reor

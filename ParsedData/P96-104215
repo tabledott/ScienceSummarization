@@ -1,0 +1,8 @@
+ need to define (i) a measure for disagreement (Step 3), and (ii) a selection criterion (Step 4).
+    Our approach to measuring disagreement is to use the vote entropy, the entropy of the distribution of classifications assigned to an example ('voted for') by the committee members.
+    Denoting the number of committee members assigning c to e by V(c, e), the vote entropy is: (Dividing by log k normalizes the scale for the number of committee members.)
+    Vote entropy is maximized when all committee members disagree, and is zero when they all agree.
+    In bigram tagging, each example consists of a sequence of several words.
+    In our system, we measure D separately for each word, and use the average entropy over the word sequence as a measurement of disagreement for the example.
+    We use the average entropy rather than the entropy over the entire sequence, because the number of committee members is small with respect to the total number of possible tag sequences.
+    Note that we do not look at the entrop

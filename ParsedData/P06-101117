@@ -1,0 +1,8 @@
+act three datasets: FragmentExtract, SentenceExtract, and Fragment-noLLR.
+    The sizes of the extracted datasets, measured in million English tokens, are presented in Table 2.
+    We evaluate our extracted corpora by measuring their impact on the performance of an SMT system.
+    We use the initial parallel corpora to train Baseline systems; and then train comparative systems using the initial corpora plus: the FragmentExtract corpora; the SentenceExtract corpora; and the FragmentExtract-noLLR corpora.
+    In order to verify whether the fragment and sentence detection method complement each other, we also train a Fragment+Sentence system, on the initial corpus plus FragmentExtract and SentenceExtract.
+    All MT systems are trained using a variant of the alignment template model of Och and Ney (2004).
+    All systems use the same 2 language models: one trained on 800 million English tokens, and one trained on the English side of all our parallel and comparable corpora.
+    This ensures that differences in pe

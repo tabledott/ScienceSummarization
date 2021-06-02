@@ -1,0 +1,8 @@
+ion of each of the (1 + 1)rn possible alignments exactly.
+    For later models, we include the contributions of fewer and fewer alignments.
+    Because most of the probability for each translation is concentrated by these models on a small number of alignments, this suboptimal procedure, mandated by the complexity of the models, yields acceptable results.
+    In the limit, we can contemplate evaluating the expectations using only a single, probable alignment for each translation.
+    When that alignment is the Viterbi alignment, we call this Viterbi training.
+    It is easy to see that Viterbi training converges: at each step, we reestimate parameters so as to make the current set of Viterbi alignments as probable as possible; when we use these parameters to compute a new set of Viterbi alignments, we find either the old set or a set that is yet more probable.
+    Since the probability can never be greater than one, this process must converge.
+    In fact, unlike the EM algorithm in general, it must converge 

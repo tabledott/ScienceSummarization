@@ -1,0 +1,7 @@
+ded a slightly improved accuracy of 53.7%.
+    For this domain, we utilized a slightly different notion of distributional similarity: we are not interested in the syntactic behavior of a word type, but its topical content.
+    Therefore, when we collect context vectors for word types in this domain, we make no distinction by direction or distance and collect counts from a wider window.
+    This notion of distributional similarity is more similar to latent semantic indexing (Deerwester et al., 1990).
+    A natural consequence of this definition of distributional similarity is that many neighboring words will share the same prototypes.
+    Therefore distributional prototype features will encourage labels to persist, naturally giving the &#8220;sticky&#8221; effect of the domain.
+    Adding distributional similarity features to our model (PROTO+SIM) improves accuracy substantially, yielding 71.5%, a 38.4% error reduction over BASE.6 Another feature of this domain that Grenager et al. (2005) take advantage of is 

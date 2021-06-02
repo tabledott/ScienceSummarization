@@ -1,0 +1,8 @@
+equisite for computing entity grids.
+    The same entity may appear in different linguistic forms, e.g., Microsoft Corp., Microsoft, and the company, but should still be mapped to a single entry in the grid.
+    Table 1 exemplifies the entity grid for the text in Table 2 when coreference resolution is taken into account.
+    To automatically compute entity classes, we employ a state-of-the-art noun phrase coreference resolution system (Ng and Cardie, 2002) trained on the MUC (6&#8211;7) data sets.
+    The system decides whether two NPs are coreferent by exploiting a wealth of features that fall broadly into four categories: lexical, grammatical, semantic and positional.
+    Once we have identified entity classes, the next step is to fill out grid entries with relevant syntactic information.
+    We employ a robust statistical parser (Collins, 1997) to determine the constituent structure for each sentence, from which subjects (s), objects (o), and relations other than subject or object (x) are identified.
+    P

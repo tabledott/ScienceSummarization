@@ -1,0 +1,11 @@
+.To utilize the ACE dataset for evaluating entail ment rule applications, we manually represented each ACE event predicate by unary seed templates.
+			For example, the seed templates for Injure are ?A injure?, ?injure V ? and ?injure in T ?.
+			We mapped each event role annotation to the corresponding seed template variable, e.g. ?Agent?
+			to A and ?Victim?
+			to V in the above example.
+			Templatesare matched using a syntactic matcher that han dles simple morpho-syntactic phenomena, as in (Szpektor and Dagan, 2007).
+			A rule application is considered correct if the matched argument is annotated by the corresponding ACE role.
+			For testing binary rule-bases, we automatically generated binary seed templates from any twounary seeds that share the same predicate.
+			For ex ample, for Injure the binary seeds ?A injure V ?, ?A injure in T ? and ?injure V in T ? were automatically generated from the above unary seeds.
+			We performed two adaptations to the ACE dataset to fit it better to our evaluation needs.
+		

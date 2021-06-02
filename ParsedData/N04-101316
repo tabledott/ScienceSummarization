@@ -1,0 +1,6 @@
+ namely calculating feature-values from a parse forest and calculating node weights from a feature forest.
+    Clearly, the first one is more expensive, especially for the extraction of values for non-local feature-functions over large charts.
+    To control the cost of this computation, our stochastic disambiguation system includes a user-specified parameter for bounding the amount of work that is done in calculating feature-values.
+    When the user-specified threshold for feature-value calculation is reached, this computation is discontinued, and the dynamic programming calculation for most-probable-parse search is computed from the current feature-value annotation of the parse forest.
+    Since feature-value computation proceeds incrementally over the feature forest, i.e. for each node that is visited all feature-functions that apply to it are evaluated, a complete feature annotation can be guaranteed for the part of the and/or-forest that is visited until discontinuation.
+    As discussed below, these pa

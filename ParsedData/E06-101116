@@ -1,0 +1,6 @@
+icted graph by a margin proportional to the loss of the predicted graph relative to the training graph, which is the number of words with incorrect parents in the predicted tree (McDonald et al., 2005b).
+    Note that we only impose margin constraints between the single highest-scoring graph and the correct graph relative to the current weight setting.
+    Past work on tree-structured outputs has used constraints for the k-best scoring tree (McDonald et al., 2005b) or even all possible trees by using factored representations (Taskar et al., 2004; McDonald et al., 2005c).
+    However, we have found that a single margin constraint per example leads to much faster training with a negligible degradation in performance.
+    Furthermore, this formulation relates learning directly to inference, which is important, since we want the model to set weights relative to the errors made by an approximate inference algorithm.
+    This algorithm can thus be viewed as a large-margin version of the perceptron algorithm for str

@@ -1,0 +1,7 @@
+association.
+    All the LLR scores for rare words tend to be small; thus we do not put too much confidence in any of the hypothesized word associations for such words.
+    This is exactly the property needed to prevent rare source words from becoming garbage collectors.
+    To maintain this property, for each source word we compute the sum of the LLR scores over all target words, but we then divide every LLR score by the single largest of these sums.
+    Thus the source word with the highest LLR score sum receives a conditional probability distribution over target words summing to 1, but the corresponding distribution for every other source word sums to less than 1, reserving some probability mass for target words not seen with that word, with more probability mass being reserved the rarer the word.
+    There is no guarantee, of course, that this is the optimal way of discounting the probabilities assigned to less frequent words.
+    To allow a wider range of possibilities, we add one more parameter to the m

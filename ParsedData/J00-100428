@@ -1,0 +1,7 @@
+ observations to be the co-occurrences of the substrings in the training bitexts.
+    However, in order that these costs can be comparable to the costs for simple pairings, they are multiplied by the number of words in the source substring of the pairing.
+    The use of compounds in pairings does not require any fundamental changes to the hierarchical alignment dynamic programming algorithm, which simply produces dependency trees with nodes that may be compounds.
+    In the transducer construction phase of the training method, one of the words of a compound is taken to be the primary or &amp;quot;real&amp;quot; headword.
+    (In fact, we take the least common word of a compound to be its head.)
+    An extra chain of transitions is constructed to transduce the other words of compounds, if necessary using transitions with epsilon strings.
+    This compilation means that the transduction algorithm is unaffected by the use of compounds when aligning training data, and there is no need for a separate compound iden

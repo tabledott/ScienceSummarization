@@ -1,0 +1,5 @@
+half our)))))) Here the MR string is said to be a translation of the NL string.
+    Given an input sentence, e, the task of semantic parsing is to find a derivation that yields (e, f), be multiple derivations that yield e (and thus multiple possible translations of e), a mechanism must be devised for discriminating the correct derivation from the incorrect ones.
+    The semantic parsing model of WASP thus consists of an SCFG, G, and a probabilistic model, parameterized by A, that takes a possible derivation, d, and returns its likelihood of being correct given an input sentence, e. The output translation, f*, for a sentence, e, is defined as: where m(d) is the MR string that a derivation d yields, and D(G|e) is the set of all possible derivations of G that yield e. In other words, the output MR is the yield of the most probable derivation that yields e in the NL stream.
+    The learning task is to induce a set of SCFG rules, which we call a lexicon, and a probabilistic model for derivations.
+    A lexicon def

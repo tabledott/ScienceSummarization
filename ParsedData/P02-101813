@@ -1,0 +1,6 @@
+hm also records how often each pattern was seen; this is shown in the &#8220;count&#8221; column of Table 2.
+    The next step of the algorithm determines approximately how many times each pattern can match some subtree of a version of the training corpus from which all empty nodes have been removed (regardless of whether or not the corresponding substitutions would insert empty nodes correctly).
+    This information is shown under the &#8220;match&#8221; column in Table 2, and is used to filter patterns which would most often be incorrect to apply even though they match.
+    If c is the count value for a pattern and m is its match value, then the algorithm discards that pattern when the lower bound of a 67% confidence interval for its success probability (given c successes out of m trials) is less than 1/2.
+    This is a standard technique for &#8220;discounting&#8221; success probabilities from small sample size data (Witten and Frank, 2000).
+    (As explained immediately below, the estimates of c and m giv

@@ -1,0 +1,7 @@
+graph transformation techniques.
+    First, the training data for the parser is projectivized by applying a minimal number of lifting operations (Kahane et al., 1998) and encoding information about these lifts in arc labels.
+    When the parser is trained on the transformed data, it will ideally learn not only to construct projective dependency structures but also to assign arc labels that encode information about lifts.
+    By applying an inverse transformation to the output of the parser, arcs with non-standard labels can be lowered to their proper place in the dependency graph, giving rise 1The dependency graph has been modified to make the final period a dependent of the main verb instead of being a dependent of a special root node for the sentence. to non-projective structures.
+    We call this pseudoprojective dependency parsing, since it is based on a notion of pseudo-projectivity (Kahane et al., 1998).
+    The rest of the paper is structured as follows.
+    In section 2 we introduce the graph transfor

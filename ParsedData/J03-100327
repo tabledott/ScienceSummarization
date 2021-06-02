@@ -1,0 +1,8 @@
+ (i) in Figure 7).
+    Then the function findGraph (see also Figure 6) is called, with parameters d1, bestGraph, and H. To begin with, whether a first non-null bestGraph has been found is checked and, if one has, whether the costs of H (the graph under construction) are higher than the costs of the bestGraph found up to that point.
+    If the costs of H are higher, it is not worth extending H since, due to the monotonicity constraint, it will never end up being cheaper than the current bestGraph.
+    During the first iteration we have no non-null bestGraph, so we continue.
+    Next the set of distractors is calculated.
+    In terms of the graph perspective, this is the set of vertices in the scene graph G (other than the target vertex v) to which the graph H refers.
+    It is easily seen that the initial value of H refers to every vertex in G. Hence, as one would expect, the initial set of distractors is VG\{d1} = {d2,d3,d4}.
+    Then the current set of distractors is checked to determine whether it is empty.

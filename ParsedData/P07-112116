@@ -1,0 +1,8 @@
+nvolve type mismatch.
+    For example, a query can be overly trivial (Figure 7(c)), or involve aggregate functions on a known singleton (Figure 7(d)).
+    The first type of errors can be fixed by type checking.
+    Each m-place predicate is associated with a list of m-tuples showing all valid combinations of entity types that the m arguments can refer to: These m-tuples of entity types are given as domain knowledge.
+    The parser maintains a set of possible entity types for each logical variable introduced in a partial derivation (except those that are no longer visible).
+    If there is a logical variable that cannot refer to any types of entities (i.e. the set of entity types is empty), then the partial derivation is considered invalid.
+    For example, based on the tuples shown above, point(x1) and density(x1, ) cannot be both true, because {POINT} n {COUNTRY, STATE, CITY} = &#8709;.
+    The use of type checking is to exploit the fact that people tend not to ask questions that obviously have no valid answ

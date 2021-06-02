@@ -1,0 +1,9 @@
+.
+    CVGs build on two observations.
+    Firstly, that a lot of the structure and regularity in languages can be captured by well-designed syntactic patterns.
+    Hence, the CVG builds on top of a standard PCFG parser.
+    However, many parsing decisions show fine-grained semantic factors at work.
+    Therefore we combine syntactic and semantic information by giving the parser access to rich syntacticosemantic information in the form of distributional word vectors and compute compositional semantic vector representations for longer phrases (Costa et al., 2003; Menchetti et al., 2005; Socher et al., 2011b).
+    The CVG model merges ideas from both generative models that assume discrete syntactic categories and discriminative models that are trained using continuous vectors.
+    We will first briefly introduce single word vector representations and then describe the CVG objective function, tree scoring and inference.
+    In most systems that use a vector representation for words, such vectors are based on cooc

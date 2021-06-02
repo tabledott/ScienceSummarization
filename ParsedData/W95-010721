@@ -1,0 +1,10 @@
+o be used to match against part-of-speech tags, encoded as Po, P_1, etc.
+    (In other tests, we have explored mixed templates, that match against both word and part-of-speech values, but no mixed templates were used in these experiments.)
+    These 20 word and part-of-speech patterns were then combined with each of the 5 different chunk tag patterns shown on the right side of the table.
+    The cross product of the 20 word and part-of-speech patterns with the 5 chunk tag patterns determined the full set of 100 templates used.
+  
+  
+    The large increase in the number of rule templates in the text chunking application when compared to part-of-speech tagging pushed the training process against the available limits in terms of both space and time, particularly when combined with the desire to work with the largest possible training sets.
+    Various optimizations proved to be crucial to make the tests described feasible.
+    One change in the algorithm is related to the smaller size of the tag set.
+    In Bril

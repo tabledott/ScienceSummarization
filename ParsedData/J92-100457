@@ -1,0 +1,9 @@
+scoring hypotheses are kept on hold.
+    We have thus far developed two versions of the control strategy, a &amp;quot;loosely coupled&amp;quot; system and a &amp;quot;tightly coupled&amp;quot; system.
+    Both versions begin with a Viterbi search all the way to the end of the sentence, resulting in not only the first candidate solution but also partial scores for a large set of other hypotheses.
+    If this first solution fails to parse, then the best-scoring partial theory is allowed to procede forward incrementally.
+    In an A* search, the main issue is how to get an estimate of the score for the unseen portion of the sentence.
+    In our case, we can use the Viterbi path to the end as the estimate of the future score.
+    This path is guaranteed to be the best way to get to the end; however, it may not parse.
+    Hence it is a tight upper bound on the true score for the rest of the sentence.
+    The recognizer can continue to propose hypotheses until one successfully parses, or until a quitting criterion 

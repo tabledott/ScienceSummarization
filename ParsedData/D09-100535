@@ -1,0 +1,5 @@
+ion 6 to compute H(p) and R(p) and their gradients with respect to &#952; and &#947;.16 15Pauls et al. (2009) concurrently developed a method to maximize the expected n-gram counts on a hypergraph using gradient descent.
+    Their objective is similar to the minimum risk objective (though without annealing), and their gradient descent optimization involves in algorithms in computing expected feature/n-gram counts as well as expected products of features and n-gram counts, which can be viewed as instances of our general algorithms with first- and second-order semirings.
+    They focused on tuning only a small number (i.e. nine) of features as in a regular MERT setting, while our experiments involve both a small and a large number of features.
+    16It is easy to verify that the gradient of a function f (e.g. entropy or risk) with respect to &#947; can be written as a weighted sum of gradients with respect to the feature weights &#952;i, i.e.
+    We built a translation model on a corpus for IWSLT 2005 Chinese-t

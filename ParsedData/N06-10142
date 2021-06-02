@@ -1,0 +1,9 @@
+on is commonly employed to improve alignment quality by intersecting alignments induced in each translation direction.
+    It is therefore natural to explore models which are designed from the start with symmetry in mind.
+    In this paper, we introduce a new method for word alignment that addresses the three issues above.
+    Our development is motivated by the observation that intersecting the predictions of two directional models outperforms each model alone.
+    Viewing intersection as a way of finding predictions that both models agree on, we take the agreement idea one step further.
+    The central idea of our approach is to not only make the predictions of the models agree at test time, but also encourage agreement during training.
+    We define an intuitive objective function which incorporates both data likelihood and a measure of agreement between models.
+    Then we derive an EM-like algorithm to maximize this objective function.
+    Because the E-step is intractable in our case, we use a heuristic

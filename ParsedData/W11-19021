@@ -1,0 +1,8 @@
+rence models one at a time from highest to lowest precision.
+    Each tier builds on the entity clusters constructed by previous models in the sieve, guaranteeing that stronger features are given precedence over weaker ones.
+    Furthermore, this model propagates global information by sharing attributes (e.g., gender and number) across mentions in the same cluster.
+    We made three considerable extensions to the Raghunathan et al. (2010) model.
+    First, we added five additional sieves, the majority of which address the semantic similarity between mentions, e.g., using WordNet distance, and shallow discourse understanding, e.g., linking speakers to compatible pronouns.
+    Second, we incorporated a mention detection sieve at the beginning of the processing flow.
+    This sieve filters our syntactic constituents unlikely to be mentions using a simple set of rules on top of the syntactic analysis of text.
+    And lastly, we added a post-processing step, which guarantees that the output of our system is compat

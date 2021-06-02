@@ -1,0 +1,10 @@
+If W is a single-character word, then the single character is assigned tag s).
+  In this way, the dynamic programming algorithm only considers valid tag sequences.
+  After word segmentation is done by the maxi- mum entropy classifier, a post-processing step is applied to correct inconsistently segmented words made up of 3 or more characters.
+  A word W is defined to be inconsistently segmented if the con- catenation of 2 to 6 consecutive words elsewhere in the segmented output document matches W .
+  In the post-processing step, the segmentation of the characters of these consecutive words is changed so that they are segmented as a single word.
+  To illustrate, if the concatenation of 2 consecutive words ?&amp;??
+  in the segmented out- put document matches another word ?&amp;?
+  ?n?, then the 2 consecutive words ?&amp;??
+  will be re-segmented as a single word ?&amp;??
+  3 Evaluation Results We evaluated our Chinese word segmenter in the open track, on all 4 corpora, namely Academia Sinica (AS), City Universi

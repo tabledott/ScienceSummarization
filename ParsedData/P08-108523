@@ -1,0 +1,8 @@
+nd of the initial process computation.
+    For these missing elements, we assign an ambiguity class by a simple ambiguity-class guesser, and set p(t|w) to be uniform over all the tags in the ambiguity class.
+    Our ambiguity-class guesser assigns for each word the set of all open-class tags that appeared with the word suffix in the dictionary.
+    The word suffix is the longest (up to 3 characters) suffix of the word that also appears in the top-100 suffixes in the dictionary.
+    Taggers We test the resulting p(t|w) approximation by training 2 taggers: CF-Tag, a context-free tagger assigning for each word its most probable POS according to p(t|w), with a fallback to the most probable tag in case the word does not appear in the dictionary or if &#8704;t, p(t|w) = 0.
+    EM-HMM, a second-order EM-HMM initialized with the estimated p(t|w).
+    Baselines As baseline, we use two EM-trained HMM taggers, initialized with a uniform p(t|w) for every word, based on the allowed tags in the dictionary.
+    For words no

@@ -1,0 +1,11 @@
+-class instead of 3-class labeling because it is harder.
+    The dataset is divided into four author-specific corpora, containing 1770, 902, 1307, and 1027 documents.
+    We ran experiments individually for each author.
+    Each document is represented as a 10, 11 word-presence vector, normalized to sum to 1.
+    We systematically vary labeled set size |L |E 10.9n, 800, 400, 200,100, 50, 25,12, 6} to observe the effect of semi-supervised learning.
+    |L |= 0.9n is included to match 10-fold cross validation used by (Pang and Lee, 2005).
+    For each |L |we run 20 trials where we randomly split the corpus into labeled and test (unlabeled) sets.
+    We ensure that all four classes are represented in each labeled set.
+    The same random splits are used for all methods, allowing paired t-tests for statistical significance.
+    All reported results are average test set accuracy.
+    We compare our graph-based semi-supervised method with two previously studied methods: regression and metric labeling as in (Pang an

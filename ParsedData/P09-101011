@@ -1,0 +1,9 @@
+ update the estimate of &#952;.
+    Policy gradient algorithms optimize a non-convex objective and are only guaranteed to find a local optimum.
+    However, as we will see, they scale to large state spaces and can perform well in practice.
+    To find the parameters &#952; that maximize the objective, we first compute the derivative of V&#952;.
+    Expanding according to the product rule, we have: where the inner sum is over all time steps t in the current history h. Expanding the inner partial derivative we observe that: which is the derivative of a log-linear distribution.
+    Equation 5 is easy to compute directly.
+    However, the complete derivative of V&#952; in equation 4 is intractable, because computing the expectation would require summing over all possible histories.
+    Instead, policy gradient algorithms employ stochastic gradient ascent by computing a noisy estimate of the expectation using just a subset of the histories.
+    Specifically, we draw samples from p(h|&#952;) by acting in the target

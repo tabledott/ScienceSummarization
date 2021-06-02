@@ -1,0 +1,9 @@
+ of the hidden variables given the observations.
+			In thecase of LDAWN, the hidden variables are the parameters of the K WORDNET-WALKs, the topic assign ments of each word in the collection, and the synset path of each word.
+			In a sense, posterior inference reverses the process described above.
+			Specifically, given a document collection w1:D, the full posterior is p(?1:K ,z1:D,?1:D,?1:D |w1:D, ?, S?)
+			?(?K k=1 p(?k |S?) ?D d=1 p(?d | ?) ?Nd n=1 p(?d,n |?1:K)p(wd,n |?d,n) ) , (1) where the constant of proportionality is the marginal likelihood of the observed data.Note that by encoding the synset paths as a hid den variable, we have posed the WSD problem asa question of posterior probabilistic inference.
+			Fur ther note that we have developed an unsupervised model.
+			No labeled data is needed to disambiguate a corpus.
+			Learning the posterior distribution amounts to simultaneously decomposing a corpus into topics and its words into their synsets.
+			The intuition behind LDAWN is that the words in a t

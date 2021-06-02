@@ -1,0 +1,10 @@
+eature set.
+    Assuming as ground truth the information provided by the document labels and that all sentences inherit the status of their document as opinions or facts, we first train on the entire training set, then use the resulting classifier to predict labels for the training set.
+    The sentences that receive a label different from the assumed truth are then removed, and we train on the remaining sentences.
+    This process is repeated iteratively until no more sentences can be removed.
+    We report results using five feature sets, starting from words alone and adding in bigrams, trigrams, part-of-speech, and polarity.
+  
+  
+    Having distinguished whether a sentence is a fact or opinion, we separate positive, negative, and neutral opinions into three classes.
+    We base this decision on the number and strength of semantically oriented words (either positive or negative) in the sentence.
+    We first discuss how such words are automatically found by our system, and then describe the method by which

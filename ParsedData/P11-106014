@@ -1,0 +1,7 @@
+derspecify L. In particular, our L will not include verbs or prepositions; rather, we rely on the predicates corresponding to those words to be triggered by traces.
+    The augmentation function A takes a set of trees and optionally attaches E and Xi relations to the root (e.g., A(hcityi) = {hcityi , hcity; E:&#248;i}).
+    The filtering function F rules out improperly-typed trees such as hcity; 00:hstateii.
+    To further reduce the search space, F imposes a few additional constraints, e.g., limiting the number of marked nodes to 2 and only allowing trace predicates between arity 1 predicates.
+    Model We now present our discriminative semantic parsing model, which places a log-linear distribution over z &#8712; ZL(x) given an utterance x.
+    Formally, p&#952;(z  |x) &#8733; e&#966;(x,z)T&#952;, where &#952; and &#966;(x, z) are parameter and feature vectors, respectively.
+    As a running example, consider x = city that is in California and z = hcity; 11:hloc; 21:hCAiii, where city triggers city and Calif

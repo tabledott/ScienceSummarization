@@ -1,0 +1,8 @@
+ Section 3.3.
+    In order to compute the confusion matrices described in Section 4.3, we must first construct a representative set of inferences and manually annotate them as correct or incorrect.
+    We randomly selected 100 inference rules of the form pi =&gt; pj from DIRT.
+    For each pattern pi, we then extracted its instances from the Aquaint 1999 AP newswire collection (approximately 22 million words), and randomly selected 10 distinct instances, resulting in a total of 1000 instances.
+    For each instance of pi, applying DIRT&#8217;s inference rule would assert the instance (x, pj, y).
+    Our evaluation tests how well our models can filter these so that only correct inferences are made.
+    To form the gold standard, two human judges were asked to tag each instance (x, pj, y) as correct or incorrect.
+    For example, given a randomly selected inference rule &#8220;X is charged by Y =&gt; Y announced the arrest of X&#8221; and the instance &#8220;Terry Nichols was charged by federal prosecutors&#822

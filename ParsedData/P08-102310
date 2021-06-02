@@ -1,0 +1,8 @@
+r node v. So a translation hyperedge e is a triple (tails(e), head(e), s) where s is the target string from the rule, for example, e3 = ((NPB2,3, NPB5,6), VP1,6, &#8220;held x2 with x1&#8221;).
+    This procedure is summarized in Pseudocode 1.
+    The decoder performs two tasks on the translation forest: 1-best search with integrated language model (LM), and k-best search with LM to be used in minimum error rate training.
+    Both tasks can be done efficiently by forest-based algorithms based on k-best parsing (Huang and Chiang, 2005).
+    For 1-best search, we use the cube pruning technique (Chiang, 2007; Huang and Chiang, 2007) which approximately intersects the translation forest with the LM.
+    Basically, cube pruning works bottom up in a forest, keeping at most k +LM items at each node, and uses the best-first expansion idea from the Algorithm 2 of Huang and Chiang (2005) to speed up the computation.
+    An +LM item of node v has the form (va*b), where a and b are the target-language boundary words.
+   

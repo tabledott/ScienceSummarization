@@ -1,0 +1,12 @@
+ed from the definition of C-arg arguments.
+  Given the predicate, some argument classes are illegal (e.g., predicate stalk can take only A0 or A1).
+  This information can be found in PropBank Frames.
+  1 There are other constraints such as ?exactly one V argument per class,?
+  or ?V?A1?C-V pattern?
+  as introduced by Punyakanok et al.
+  However, we did not find them particularly helpful in our experiments.
+  Therefore, we exclude those constraints in the presentation here.
+  267 Computational Linguistics Volume 34, Number 2 This constraint comes from the fact that different predicates take different types and numbers of arguments.
+  By checking the PropBank Frame file of the target verb, we can exclude some core argument labels.
+  Note that constraints 1, 2, and 3 are actually implemented in the argument identifi- cation stage (see Section 3.2).
+  In addition, they need to be explicitly enforced only when full parsing information is not available because the output of the pruning heuristics never violates the

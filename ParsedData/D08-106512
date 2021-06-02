@@ -1,0 +1,12 @@
+e &#163;h.
+    This automaton must also incorporate the factor &#952;0 of each word.
+    This can be accomplished by intersecting the unweighted lattice with the automaton accepting (E/&#952;0)*.
+    The resulting MBR automaton computes the total expected gain of each path.
+    A path in this automaton that corresponds to the word sequence E' has cost: &#952;0jE'j+EwcAr &#952;w#w(E)p(wj&#163;) (expression within the curly brackets in Equation 6).
+    Finally, we extract the best path from the resulting automaton4, giving the lattice MBR candidate translation according to the gain function (Equation 6).
+  
+  
+    Our Lattice MBR formulation relies on the decomposition of the overall gain function as a sum of local gain functions (Equation 5).
+    We here describe a linear approximation to the log(BLEU score) (Papineni et al., 2001) which allows such a decomposition.
+    This will enable us to rewrite the log(BLEU) as a linear function of n-gram matches and the hypothesis length.
+    Our strategy will be to use

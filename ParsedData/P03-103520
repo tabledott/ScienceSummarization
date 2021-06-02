@@ -1,0 +1,12 @@
+ a character bigram model.
+    Notice that in our system a FN can be a PN, a LN, or an ON, depending on the context.
+    Then, given a FN candidate, three named entity candidates, each for one category, are generated in the lattice, with the class probabilities P(S&#8217;|PN)=P(S&#8217;|LN)=P(S&#8217;|ON)= P(S&#8217;|FN).
+    In other words, we delay the determination of its type until decoding where the context model is used.
+  
+  
+    This section describes the way the class model probability P(C) (i.e. trigram probability) in Eq.
+    2 is estimated.
+    Ideally, given an annotated corpus, where each sentence is segmented into words which are tagged by their classes, the trigram word class probabilities can be calculated using MLE, together with a backoff schema (Katz, 1987) to deal with the sparse data problem.
+    Unfortunately, building such annotated training corpora is very expensive.
+    Our basic solution is the bootstrapping approach described in Gao et al. (2002).
+    It consists of three steps: (1

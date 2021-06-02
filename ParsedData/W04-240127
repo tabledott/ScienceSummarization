@@ -1,0 +1,10 @@
+s divided by the sum of coherent and incoherent predictions.
+    Since the basic and pipeline approaches do not have a global view of the labels of entities and relations, 5% to 25% of the predictions are incoherent.
+    Therefore, the quality is not always good.
+    On the other hand, our global inference procedure, LP, takes the natural constraints into account, so it never generates incoherent predictions.
+    If the relation classifier has the correct entity labels as features, a good learner should learn the constraints as well.
+    As a result, the quality of omniscient is almost as good as LP.
+    Another experiment we did is the forced decision test, which boosts the F1 of &#8220;kill&#8221; relation to 86.2%.
+    Here we consider only sentences in which the &#8220;kill&#8221; relation is active.
+    We force the system to determine which of the possible relations in a sentence (i.e., which pair of entities) has this relation by adding a new linear equality.
+    This is a realistic situation (e.g., in

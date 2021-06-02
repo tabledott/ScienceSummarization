@@ -1,0 +1,8 @@
+ as defined in Eq.
+    3.
+    This function resembles the Q function used in the EM algorithm, where the hidden labels (in our case, dependency structures), are filled in using the conditional distribution p(y|x0i; w, v, q).
+    It is simple to show that the estimates &#952;j,a that maximize the function in Eq.
+    5 can be defined as follows.
+    First, define a vector of expected counts based on w, v, q as Note that it is straightforward to calculate these expected counts using a variant of the inside-outside algorithm (Baker, 1979) applied to the (Eisner, 1996) dependency-parsing data structures (Paskin, 2001) for projective dependency structures, or the matrix-tree theorem (Koo et al., 2007; Smith and Smith, 2007; McDonald and Satta, 2007) for nonprojective dependency structures.
+    The estimates that maximize Eq.
+    5 are then In a slight modification, we employ the following estimates in our model, where &#951; &gt; 1 is a parameter of the model: This corresponds to a MAP estimate under a Dirichlet pr

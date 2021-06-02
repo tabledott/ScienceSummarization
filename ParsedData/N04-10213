@@ -1,0 +1,9 @@
+ard criterion for training such a log-linear model is to maximize the probability of the parallel training corpus consisting of S sentence pairs f(fs, es) : s = 1, ... , S}.
+    However, this does not guarantee optimal performance on the metric of translation quality by which our system will ultimately be evaluated.
+    For this reason, we optimize the parameters directly against the BLEU metric on held-out data.
+    This is a more difficult optimization problem, as the search space is no longer convex.
+    However, certain properties of the BLEU metric can be exploited to speed up search, as described in detail by Och (2003).
+    We use this method of optimizing feature weights throughout this paper.
+    Our baseline MT system is the alignment template system described in detail by Och, Tillmann, and Ney (1999) and Och and Ney (2004).
+    In the following, we give a short description of this baseline model.
+    The probability model of the alignment template system for translating a sentence can be thought o

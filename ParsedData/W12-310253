@@ -1,0 +1,12 @@
+ions via automatic alignments.
+    The resulting features are: the perplexity of each additional language model, according to the two translations, and the ratio between the two perplexities.
+    Additionally, features that estimate the likelihood of the projection of dependency parses on the two translations are encoded.
+    For learning, linear SVM regression is used.
+    Optimization was done via 5-fold cross-validation on a development data.
+    Features are encoded by means of their z-scores, i.e. how many standard deviations the observed value is above or below the mean.
+    A variant of the system, &#8220;UPC-2&#8221; uses an option of SVMLight that removes inconsistent points from the training set and retrains the model until convergence.
+  
+  
+    Here we give the official results for the ranking and scoring subtasks followed by a discussion that highlights the main findings of the task.
+    Table 12 gives the results for the ranking subtask.
+    The table is sorted from best to worse using the Delta

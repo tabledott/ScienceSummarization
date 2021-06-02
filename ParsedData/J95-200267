@@ -1,0 +1,8 @@
+er, as both Kupiec's and our approach is based on state transitions, and dotted productions (Earley states) turn out to be equivalent to RTN states if the RTN is constructed from a CFG.
+  
+  
+    We have presented an Earley-based parser for stochastic context-free grammars that is appealing for its combination of advantages over existing methods.
+    Earley's control structure lets the algorithm run with best-known complexity on a number of grammar subclasses, and no worse than standard bottom-up probabilistic chart parsers on general SCFGs and fully parameterized CNF grammars.
+    Unlike bottom-up parsers it also computes accurate prefix probabilities incrementally while scanning its input, along with the usual substring (inside) probabilities.
+    The chart constructed during parsing supports both Viterbi parse extraction and Baum&#8212; Welch type rule probability estimation by way of a backward pass over the parser chart.
+    If the input comes with (partial) bracketing to indicate phrase structure, this 

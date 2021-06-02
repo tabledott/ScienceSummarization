@@ -1,0 +1,10 @@
+dependency grammar is a very poor model of language, even in a supervised setting.
+    By the F1 measure used in the experiments in section 4, an induced dependency PCFG scores 48.2, compared to a score of 82.1 for a supervised PCFG read from local trees of the treebank.
+    However, a supervised dependency PCFG scores only 53.5, not much better than the unsupervised version, and worse than a right-branching baseline (of 60.0).
+    As an example of the inherent shortcomings of the dependency grammar, it is structurally unable to distinguish whether the subject or object should be attached to the verb first.
+    Since both parses involve the same set of productions, both will have equal likelihood.
+  
+  
+    To exploit the benefits of parameter search, we used a novel model which is designed specifically to enable a more felicitous search space.
+    The fundamental assumption is a much weakened version of classic linguistic constituency tests (Radford, 1988): constituents appear in constituent contexts.
+    A 

@@ -1,0 +1,12 @@
+ language sentence.
+    The translation model links the source language sentence to the target language sentence.
+    It can be further decomposed into alignment and lexicon model.
+    The argmax operation denotes the search problem, i.e. the generation of the output sentence in the target language.
+    We have to maximize over all possible target language sentences.
+    In this paper, we will focus on the alignment problem, i.e. the mapping between source sentence positions and target sentence positions.
+    As the word order in source and target language may differ, the search algorithm has to allow certain word-reorderings.
+    If arbitrary word-reorderings are allowed, the search problem is NP-hard (Knight, 1999).
+    Therefore, we have to restrict the possible reorderings in some way to make the search problem feasible.
+    Here, we will discuss two such constraints in detail.
+    The first constraints are based on inversion transduction grammars (ITG) (Wu, 1995; Wu, 1997).
+    In the following, we will 

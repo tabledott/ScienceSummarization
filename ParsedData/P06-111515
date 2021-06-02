@@ -1,0 +1,7 @@
+assifiers only predict the classof the test example but one can obtain class probability estimates by mapping the distance of the ex ample from the SVM?s separating hyperplane to the range [0,1] using a learned sigmoid function (Platt, 1999).
+			The classifier Cpi then gives us the probabilities Ppi(u).
+			We represent the set of these classifiers by C = {Cpi|pi ? G}.
+			Next, using these classifiers, the extendedEarley?s algorithm, which we call EX TENDED EARLEY in the pseudo-code, is invoked to obtain the ? best semantic derivations for each of the training sentences.
+			The procedure getMR returns the MR for a semantic derivation.
+			At this point, for many training sentences, the resulting most-probable semantic derivation may not give the correct MR. Hence, next, the system collects more refined positive and negative examples to improve the result in the next iteration.
+			It 2We use the LIBSVM package available at: http:// www.csie.ntu.edu.tw/?cjlin/libsvm/ 916 function TRAIN KRISP(training corpus {(si,

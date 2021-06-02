@@ -1,0 +1,8 @@
+t we introduced a new nested NP which contained the entire contents of the original NP except for the POS.
+    The original NP label was then changed to PossNP.
+    This change is motivated by the status of &#8217;s as a phrasal affix or clitic: It is the NP preceding &#8217;s that is structurally equivalent to other NPs, not the larger unit that includes &#8217;s.
+    This change has the additional benefit in this context that more named entities will correspond to a single phrase in the parse tree, rather than a contiguous set of phrases.
+    The data has been annotated with eighteen types of entities.
+    Many of these entity types do not occur very often, and coupled with the relatively small amount of data, make it difficult to learn accurate entity models.
+    Examples are work of art, product, and law.
+    Early experiments showed that it was difficult for even our baseline named entity recognizer, based on a state-of-the-art CRF, to learn these types of entities.3 As a result, we decided to merge all 

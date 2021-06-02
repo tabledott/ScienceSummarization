@@ -1,0 +1,6 @@
+rwise, partial scopings are allowed as well.
+    The function pull-opaque-args(form), when applied to a wff, returns a wff generated from form but with arguments in opaque argument positions replaced by a valid scoping of the original value.
+    Since the recursive call to pull has complete? set to false, the unchanged argument is a nondeterministic possibility, even for opaque argument positions.
+    When applied to any other type of expression (i.e., a term of some sort), form is unchanged. function pull-opaque-args(form); if not(wff.2(form)) then return form else let predicate := predicate(form); The function apply-terms(form, complete?) chooses function apply-terms(form, complete?
+    ); several terms in form nondeterministically and applies if not(exists(term(form))) them to form.
+    If complete? is true, then only full scopings then return form are returned. else let scoped-form := apply-terms(apply(applicable-term(form), form), complete?) in if complete? then return scoped-form else return scoped -for

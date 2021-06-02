@@ -1,0 +1,6 @@
+221;, the last character of W is assigned tag &#8220;e&#8221;, and the intervening characters are assigned tag &#8220;m&#8221;.
+    (If W is a single-character word, then the single character is assigned &#8220;s&#8221;.)
+    In this way, the dynamic programming algorithm only considers valid tag sequences, and we are also able to make use of the W0 C0 feature during testing.
+    After word segmentation is done by the maximum entropy classifier, a post-processing step is applied to correct inconsistently segmented words made up of 3 or more characters.
+    A word W is defined to be inconsistently segmented if the concatenation of 2 to 6 consecutive words elsewhere in the segmented output document matches W. In the post-processing step, the segmentation of the characters of these consecutive words is changed so that they are segmented as a single word.
+    To illustrate, if the concatenation of 2 consecutive words &#8220;&#24052;&#36187; &#32599;&#32435;&#8221; in the segmented output document matches another 

@@ -1,0 +1,13 @@
+tion of the Viterbi probabilities, and the top-down extraction of the best parse.The rest of the paper is organised as follows: Sec tion 2 explains the transformation of the grammar to Chomsky normal form.
+			The following sectionsdescribe the recogniser algorithm (Sec.
+			3), improvements of the recogniser by means of bit-vector op erations (Sec.
+			4), and the generation of parse forests(Sec.
+			5), and Viterbi parses (Sec.
+			6).
+			Section 7 discusses the advantages of the new architecture, Sec tion 8 describes experimental results, and Section 9 summarises the paper.
+	
+	
+			The CKY algorithm requires a grammar in Chom sky normal form where the right-hand side of eachrule either consists of two non-terminals or a single terminal symbol.
+			BitPar uses a modified ver sion of the CKY algorithm allowing also chain rules (rules with a single non-terminal on the right-handside).
+			BitPar expects that the input grammar is al ready epsilon-free and that terminal symbols onlyoccur in unary rules.
+			Rules with m

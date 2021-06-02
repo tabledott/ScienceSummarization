@@ -1,0 +1,6 @@
+ollowing intuition: given a pair of words, with a pair of categories, which are in the same sentence, what is the probability that the words are in a particular dependency relationship?
+    We again follow Collins in defining the following functions, where is the set of words in the data, and is the set of lexical categories.
+    C ab cd for ac and bd is the number of times that word-category pairs ab and cd are in the same word-category sequence in the training data.
+    CR ab cd is the number of times that ab and cd are in the same word-category sequence, with a and c in dependency relation R. FRab cd is the probability that a and c are in dependency relation R, given thatab andcd are in the same word-category sequence.
+    The relative frequency estimate of the probability FRa b c d is as follows: where cai is the lexical category of the argument head ai.
+    The normalising factor ensures that the probabilities for each argument slot sum to one over all the word-category pairs in the sequence.5 This facto

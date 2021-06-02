@@ -1,0 +1,13 @@
+ defined by the arguments that fill it.
+    Thus, we extract all arguments that filled a role in training, regardless of their current syntactic environment.
+    Finally, we filter extractions whose WordNet or named entity label does not match the learned slot&#8217;s type (e.g., a Location does not match a Person).
+  
+  
+    We trained on the 1300 documents in the MUC-4 corpus and tested on the 200 document TST3 and TST4 test set.
+    We evaluate the four string-based slots: perpetrator, physical target, human target, and instrument.
+    We merge MUC&#8217;s two perpetrator slots (individuals and orgs) into one gold Perpetrator slot.
+    As in Patwardhan and Riloff (2007; 2009), we ignore missed optional slots in computing recall.
+    We induced clusters in training, performed IR, and induced the slots.
+    We then extracted entities from the test documents as described in section 5.2.
+    The standard evaluation for this corpus is to report the F1 score for slot type accuracy, ignoring the template type.
+  

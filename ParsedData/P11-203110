@@ -1,0 +1,7 @@
+ain or language for which experimental evidence is being considered.
+    However, with only a single test corpus, we may have unreliable results because of idiosyncrasies in the test set.
+    This can be mitigated in two ways.
+    First, replication of experiments by testing on multiple, non-overlapping test sets can eliminate it directly.
+    Since this is not always practical (more test data may not be availabile), the widely-used bootstrap resampling method (&#167;3) also controls for test set effects by resampling multiple &#8220;virtual&#8221; test sets from a single set, making it possible to infer distributional parameters such as the standard deviation of the translation metric over (very similar) test sets.6 Furthermore, this can be done for each of our optimizer samples.
+    By averaging the bootstrap-estimated standard deviations over optimizer samples, we have a statistic that jointly quantifies the impact of test set effects and optimizer instability on a test set.
+    We call this statistic ssel

@@ -1,0 +1,6 @@
+osition list represents a symbol being repositioned as a 4-tuple x (context, type, symbol, xlist) where context is either 'gap', if the symbol was preceded by `...' in the rule where it originated, or `nogap', if the symbol was preceded by `,'; type may be 'terminal' or `nonterminal', with the obvious meaning; symbol is the symbol proper; x/ist is the remainder of the extraposition list (an empty list being represented by'[ ]').
+    An XG rule is translated into a clause for the predicate corresponding to the leading symbol of the rule.
+    In the case where the XG rule has just a single symbol on the left-hand side, the translation is very similar to that of DCG rules.
+    For example, the rule A terminal t in the right-hand side of a rule translates into a call to the predicate 'terminal', defined below, whose role is analogous to that of 'connects' in DCGs.
+    For example, the rule The translation of a rule with more than one symbol in the left-hand side is a bit more complicated.
+    Informally, each sym

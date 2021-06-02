@@ -1,0 +1,5 @@
+a sets that include a non-negligible proportion of non-projective dependency graphs, it can be expected that the non-projective list-based algorithm will achieve higher accuracy than the strictly projective algorithms.
+    In order to make the comparison more fair, we therefore also evaluate pseudo-projective versions of the latter algorithms, making use of graph transformations in pre- and post-processing to recover nonprojective dependency arcs, following Nivre and Nilsson (2005).
+    For each language, seven different parsers were therefore trained as follows: graphs in the training data were transformed by lifting non-projective arcs to the nearest permissible ancestor of the real head, and augmenting the arc label with the label of the real head.
+    The output of this parser was post-processed by lowering dependency arcs with augmented labels using a top-down, left-to-right, breadth-first search for the first descendant of the head that matches the augmented arc label.
+    This corresponds to the Head c

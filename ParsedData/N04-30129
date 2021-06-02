@@ -1,0 +1,8 @@
+set based on whatever corpus has been used to compute information content.
+    Note that these values are pre&#8211;computed, so these methods are simply reading from an information content file.
+    DepthFinder.pm provides methods that read values that have been pre&#8211;computed by the wnDepths.pl utility.
+    This program finds the depth of every synset in WordNet, and also shows the is&#8211;a hierarchy in which a synset occurs.
+    If a synset has multiple parents, then each possible depth and home hierarchy is returned.
+    The depth of a synset is returned by getDepthOfSynset() and getTaxonomyDepth() provides the maximum depth for a given is&#8211;a hierarchy.
+    LCSFinder.pm provides methods that find the least common subsumer of two concepts using three different criteria.
+    These are necessary since there is multiple inheritance of concepts in WordNet, and different LCS can be selected for a pair of concepts if one or both of them have multiple parents in an is&#8211;a hiearchy. getLCSbyIC() cho

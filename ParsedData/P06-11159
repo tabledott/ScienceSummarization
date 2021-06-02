@@ -1,0 +1,6 @@
+on pi with probability Ppi(u).
+			In the next subsection we will de scribe how KRISP obtains these probabilities using string-kernel based SVM classifiers.
+			Assuming these probabilities are independent of each other,the probability of a semantic derivationD of a sen tence s is then: P (D) = ?
+			(pi,[i..j])?D Ppi(s[i..j]) The task of the semantic parser is to find the most probable derivation of a sentence s. Thistask can be recursively performed using the no tion of a partial derivation En,s[i..j], which stands for a subtree of a semantic derivation tree with n as the left-hand-side (LHS) non-terminal of the root production and which covers s from index i to j. For example, the subtree rooted at the node ?(STATE ? NEXT TO(STATE),[5..9])?
+			inthe derivation shown in figure 3 is a partial deriva tion which would be denoted as ESTATE,s[5..9].
+			Note that the derivation D of sentence s is thensimply Estart,s[1..|s|], where start is the start sym bol of the MRL?s context free grammar, G.Our procedure to find 

@@ -1,0 +1,9 @@
+ends to be several times the average size.
+			Making the shards evenly sized is desirable because the total runtime of the process is determined by the largest shard.
+			The shards are made more balanced by hashing based on the first two words: int ShardForKey(string key, int nshards) { string prefix = FirstTwoWords(key); return Hash(prefix) % nshards; } This requires redundantly storing unigram counts inall shards in order to be able to calculate relative fre quencies within shards.
+			That is a relatively smallamount of information (a few million entries, com pared to up to hundreds of billions of n-grams).
+			5.3 Language Model Generation.
+			The input to the language model generation step is the output of the n-gram generation step: n-gramsand their counts.
+			All information necessary to calculate relative frequencies is available within individ ual shards because of the sharding function.
+			That is everything we need to generate models with Stupid Backoff.
+			More complex smoothing methods require addi

@@ -1,0 +1,9 @@
+the desired goal in such settings.
+    As a result we wanted to model the accuracy of the system on a per-document basis and then build a more global score based on the sum of the user's experiences.
+    Consider the case where the user selects document 6 in Figure 8.
+    This a good outcome with all the relevant documents being found by the system and no extraneous documents.
+    If the user selected document 1, then there are 5 irrelevant documents in the systems output &#8212; precision is quite low then.
+    The goal of our scoring algorithm then is to model the precision and recall on average when looking for more documents about the same person based on selecting a single document.
+    Instead of looking at the links produced by a system, our algorithm looks at the presence/absence of entities from the chains produced.
+    Therefore, we compute the precision and recall numbers for each entity in the document.
+    The numbers computed with respect to each entity in the document are then combined to produ

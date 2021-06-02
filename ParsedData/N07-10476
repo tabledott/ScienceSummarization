@@ -1,0 +1,10 @@
+er produce the phoneme [ ].
+    In this case, one-to-one aligners using null phonemes will produce an incorrect alignment.
+    This can cause problems for the phoneme prediction model by training it to produce a null phoneme from either of the letters n or g. In the double phoneme case, a new phoneme is introduced to represent a combination of two (or more) phonemes.
+    For example, in the word fume with phoneme sequence [ f j u m ], the letter u produces both the [ j ] and [ u ] phonemes.
+    There are two possible solutions for constructing a oneto-one alignment in this case.
+    The first is to create a new phoneme by merging the phonemes [ j ] and [ u ].
+    This requires constructing a fixed list of new phonemes before beginning the alignment process.
+    The second solution is to add a null letter in the grapheme sequence.
+    However, the null letter not only confuses the phoneme prediction model, but also complicates the the phoneme generation phase.
+    For comparison with our many-to-many approach,

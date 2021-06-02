@@ -1,0 +1,9 @@
+ A is a d-link X together with a vector of d-spans a in normal form.
+    The cardinality of an item is the total number of intervals in its d-span vector.
+    Binarized MTG productions can be inferred under generalizations of the ID and LP constraints described in Section 3.
+    We use two helper functions to express these constraints.
+    + is the concatenation operator for d-spans: Given two d-spans, it outputs the union of their intervals in normal form.12 The 0 function computes the role template that describes the relative positions of the intervals in two d-spans.
+    E.g., if v = (1, 3; 8, 9) and a = (7,8), then v + o- = (1, 3; 7, 9) and v 0 o- = [1], [2, 1].
+    Both operators apply componentwise to vectors of d-spans.
+    With their help, we state the composition inference rule of Parser A: The space complexity of Parser A is a function of the maximum number of boundaries stored in its item signatures, and the number INI of nonterminals in the grammar.
+    The maximum number of required boundaries is

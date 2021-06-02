@@ -1,0 +1,12 @@
+ting the random variables).
+    An often-used alternative to EM is a class of socalled Viterbi approximations, which iteratively find the probabilistically-best y&#65533; and then, on each iteration, solve a supervised problem (see Tab.
+    1).
+    Our approach instead maximizes where the &#8220;neighborhood&#8221; N(xi) C_ X is a set of implicit negative examples plus the example xi itself.
+    As in EM, p(xi ..., 0) is found by marginalizing over hidden variables (Eq.
+    1).
+    Note that the x' E N(xi) are not treated as hard negative examples; we merely seek to move probability mass from them to the observed x.
+    The neighborhood of x, N(x), contains examples that are perturbations of x.
+    We refer to the mapping N : X &#8212;* 21 as the neighborhood function, and the optimization of Eq.
+    2 as contrastive estimation (CE).
+    CE seeks to move probability mass from the neighborhood of an observed xi to xi itself.
+    The learner hypothesizes that good models are those which discriminate an observed

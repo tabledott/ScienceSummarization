@@ -1,0 +1,7 @@
+native parsing has given results on sentences of length &lt; 15, but most parsing literature gives results on either sentences of length &lt; 40, or all sentences.
+    To properly situate this work with respect to both sets of literature we trained models on both length &lt; 15 (WSJ15) and length &lt; 40 (WSJ40), and we also tested on all sentences using the WSJ40 models.
+    Our results also provide a context for interpreting previous work which used WSJ15 and not WSJ40.
+    We used a relatively simple grammar with few additional annotations.
+    Starting with the grammar read off of the training set, we added parent annotations onto each state, including the POS tags, resulting in rules such as S-ROOT &#8212;* NP-S VP-S. We also added head tag annotations to VPs, in the same manner as (Klein and Manning, 2003).
+    Lastly, for the WSJ40 runs we used a simple, right branching binarization where each active state is annotated with its previous sibling and first child.
+    This is equivalent to children of a s

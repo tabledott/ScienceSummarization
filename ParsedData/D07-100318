@@ -1,0 +1,12 @@
+el.
+			4.3 Base Model.
+			Our base model factors pkid into three conditional multinomial distributions.
+			pbasekid (qi, ?q(i).lab | q?q(i), `, k, ?a) = p(qi.pos | ak.pos) ? p(qi.ne | ak.ne) ?p(?q(i).lab | config(?q, ?a, i)) (6) where qi.pos is question-word i?s POS label and qi.ne is its named-entity label.
+			config maps question-word i, its parent, and their alignees to a QG configuration as described in Table 1; notethat some configurations are extended with addi tional tree information.
+			The base model does not directly predict the specific words in the question?
+			only their parts-of-speech, named-entity labels, anddependency relation labels.
+			This model is very sim ilar to Smith and Eisner (2006).
+			Because we are interested in augmenting the QG with additional lexical-semantic knowledge, we also estimate pkid by mixing the base model with a model that exploits WordNet (Miller et al, 1990) lexical-semantic relations.
+			The mixture is given by: pkid (?
+			| ?) = ?p base kid (?
+			| ?)+(1??)p ls k

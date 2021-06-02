@@ -1,0 +1,13 @@
+
+    We saw our best results under this condition (27.64).
+  
+  
+    We participated in all categories.
+    Given the four language pairs, with two translation directions and (except for Czech) two test domains, this required us to build 14 translation systems.
+    We had access to a fairly large computer cluster to carry out our experiments over the course of a few weeks.
+    However, speed issues with the decoder and load issues on the crowded cluster caused us to take a few shortcuts.
+    Also, a bug crept in to our EnglishFrench experiments where we used the wrong detokenizer, resulting drop of 2&#8211;3 points in %BLEU.
+    Minimum error rate training is the most timeconsuming aspects of the training process.
+    Due to time constraints, we did not carry out this step for all but the Czech systems (a new language for us).
+    For the other systems, we re-used weight settings from our last year&#8217;s submission.
+    One of the most crucial outcomes of tuning is a proper weight setting for output length,

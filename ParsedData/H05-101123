@@ -1,0 +1,8 @@
+ assigning alternate pairs from the random order to the two subsets.
+			We used one ofthese subsets as a development set for parameter op timization, and held out the other for a final test set.We report the performance of our alignment mod els in terms of precision, recall, and alignment error rate (AER) as defined by Och and Ney (2003): recall = |A ? S| |S| precision = |A ? P | |A| AER = 1?
+			|A ? P |+ |A ? S| |A|+ |S| In these definitions, S denotes the set of alignments annotated as sure, P denotes the set of alignments annotated possible or sure, and A denotes the set ofalignments produced by the method under test.
+			Fol lowing standard practice in the field, we take AER, which is derived from F-measure, as the primary evaluation metric that we are attempting to optimize.
+	
+	
+			We first trained the LLR-based model by perceptronlearning, using an N -best value of 20 and an un bounded allowable score difference in the alignmentsearch, using the development set as annotated train ing data.
+			We then ali

@@ -1,0 +1,5 @@
+ as optimization proceeds.
+    Solving (14) for a given T requires computing the entropy H(p) and risk R(p) and their gradients with respect to &#952; and &#947;. Smith and Eisner (2006) followed MERT in constraining their decoder to only an n-best list, so for them, computing these quantities did not involve dynamic programming.
+    We compare those methods to training on a hypergraph containing exponentially many hypotheses.
+    In this condition, we need our new secondorder semiring methods and must also approximate BLEU (during training only) by an additively decomposable loss (Tromble et al., 2008).15 Our algorithms require that p(d) of (13) is multiplicatively decomposable.
+    It suffices to define 4b(d) def = Ee&#8712;d 4be, so that all features are local to individual hyperedges; the vector 4be indicates which features fire on hyperedge e. Then score(d) of (12) is additively decomposable: We can then set pe = exp(&#947; &#183; scoree), and Vpe = &#947;pe4b(e), and use the algorithms described in Sect

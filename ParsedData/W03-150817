@@ -1,0 +1,7 @@
+sult.
+    We recently received a large list of nearly 2M Chinese-English named-entity pairs from the LDC.
+    As a pilot experiment, we simply added this list to the translation lexicon of the CLIR system, i.e., we &#8220;translated&#8221; those names in our English queries which happened to be available in this LDC list.
+    This happens to cover more than 85% of the previously untranslatable names in our queries.
+    For the remaining names, we continued to use our automatic transliterator.
+    To our surprise, the mAP improvement from 0.501 to 0.506 was statistically insignificant ( -value of 0.421) and the reason why the use of the ostensibly correct transliteration most of the time still does not result in any significant gain in CLIR performance continues to elude us.
+    We conjecture that the fact that the audio has been processed by an automatic speech recognition system, which in all likelihood did not have many of the proper names in question in its vocabulary, may be the cause of this dismal perfo

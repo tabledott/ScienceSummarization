@@ -1,0 +1,9 @@
+ are evaluated by invoking a Lisp procedure.
+  There are several reasons for keeping this rule languag e simple.
+  In the case of hand-crafted rules, it facilitates the process of designing a rule sequence.
+  In the case of machine-learned rules, it restricts the size of the search space on each epoch of the learning regimen, thus making it tractable.
+  In either case, the overall processing power derives as much from the fact that the rule s are sequenced, and feed each other in turn, as it does from the expressiveness of the rule language.
+  144 To make this clearer, consider a simple named entity rule that Is applied to identifying persons.
+  (clef-phraser label  none left-1  phrase ttl label-action person) This rule changes the label of a phrase from none to person if the phrase is bordered on its left by a ttl phrase .
+  On the sample sentence, this rule causes the following relabeling of the phrase around "James" .
+  Yesterday, &lt;none&gt;McCann&lt;/none&gt; made official what had been widely anticipat

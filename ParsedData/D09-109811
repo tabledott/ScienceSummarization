@@ -1,0 +1,7 @@
+ of terms, A = B.
+    Figure 1 outlines our algorithm for computing the similarity between all elements of A and B.
+    Efficient computation of the similarity matrix can be achieved by leveraging the fact that is determined solely by the features shared by and (i.e., = = 0 for any x) an d that most of the feature vectors are very sparse (i.e., most possible contexts never occur for a given term).
+    In this case, calculating f1(x, y) is only required when both feature vectors have a shared non-zero feature, significantly reducing the cost of computation.
+    Determining which vectors share a non-zero feature can easily be achieved by first building an inverted index for the features.
+    The computational cost of this algorithm is &#8721; 2 Ni , where Ni is the number of vectors that have a non-zero ith coordinate.
+    Its worst case time complexity is O(ncv) where n is the number of terms to be compared, c is the maximum number of non-zero coordinates of any vector, and v is the number of vectors that have

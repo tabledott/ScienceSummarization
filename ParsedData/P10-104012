@@ -1,0 +1,9 @@
+ Collobert and Weston (2008) was refined and presented in greater depth in Bengio et al. (2009).
+    The model is discriminative and nonprobabilistic.
+    For each training update, we read an n-gram x = (w1, ... , wn) from the corpus.
+    The model concatenates the learned embeddings of the n words, giving e(w1) &#174; ... &#174; e(wn), where e is the lookup table and &#174; is concatenation.
+    We also create a corrupted or noise n-gram x&#732; = (w1, ... , wn_q, &#732;wn), where &#732;wn # wn is chosen uniformly from the vocabulary.1 For convenience, we write e(x) to mean e(w1) &#174; ... &#174; e(wn).
+    We predict a score s(x) for x by passing e(x) through a single hidden layer neural network.
+    The training criterion is that n-grams that are present in the training corpus like x must have a score at least some margin higher than corrupted n-grams like &#732;x.
+    Specifically: L(x) = max(0, 1&#8722; s(x) + s(&#732;x)).
+    We minimize this loss stochastically over the n-grams in the corpus, doing gr

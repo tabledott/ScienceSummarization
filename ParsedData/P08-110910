@@ -1,0 +1,7 @@
+ each tree individually, the computation can be parallelized by having many clients which each do the computation for one tree, and one central server which aggregates the information to compute the relevant information for a set of trees.
+    Because we use a stochastic optimization method, as discussed in Section 3, we compute the objective for only a small portion of the training data at a time, typically between 15 and 30 sentences.
+    In 2In our case the values in the chart are the clique potentials which are non-negative numbers, but not probabilities. this case the gains from adding additional clients decrease rapidly, because the computation time is dominated by the longest sentences in the batch.
+    Training is also sped up by prefiltering the chart.
+    On the inside pass of the algorithm one will see many rules which cannot actually be tiled into complete parses.
+    In standard PCFG parsing it is not worth figuring out which rules are viable at a particular chart position and which are not.
+    

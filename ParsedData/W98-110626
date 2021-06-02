@@ -1,0 +1,10 @@
+ned, and each word is assigned a category score.
+    The category score is (essentially) the conditional probability that the word appears in a category context.
+    The words are ranked by this score and the top five are dynamically added to the seed word list.
+    This bootstrapping process dynamically grows the seed word list so that each iteration produces a larger category context.
+    After several iterations, the final list of ranked words usually contains many words that belong to the category, especially near the top.
+    The ranked list is presented to a user, who scans down the list and removes any words that do not belong to the category.
+    For more details of this algorithm, see (Riloff and Shepherd, 1997).
+    A flowchart for the case frame generation process appears in Figure 2.
+    AutoSlog-TS produces a ranked list of extraction patterns and our semantic lexicon generator produces a ranked list of words for each category.
+    Generating these lists is fully automatic, but a human must revie

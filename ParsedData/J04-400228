@@ -1,0 +1,9 @@
+lt language model feature, we use a standard backing-off word-based trigram language model (Ney, Generet, and Wessel 1995): The use of the language model feature in equation (18) helps take long-range dependencies better into account.
+    Without this feature, we typically observe that the produced sentences tend to be too short.
+    4.1.6 Conventional Lexicon.
+    We also use a feature that counts how many entries of a conventional lexicon co-occur in the given sentence pair.
+    Therefore, the weight for the provided conventional dictionary can be learned: The intuition is that the conventional dictionary LEX is more reliable than the automatically trained lexicon and therefore should get a larger weight.
+    4.1.7 Additional Features.
+    A major advantage of the log-linear modeling approach used is that we can add numerous features that deal with specific problems of the baseline statistical MT system.
+    Here, we will restrict ourselves to the described set of features.
+    Yet we could use grammatical 

@@ -1,0 +1,7 @@
+ with unit variance.
+    Here we see that the model finds the desired solution in which the true ambiguity of the translation rules is preserved.
+    The intuition is that in order to find a degenerate solution, dispreferred rules must be given large negative weights.
+    However the prior penalises large weights, and therefore the best strategy for the regularised model is to evenly distribute probability mass.
+    Translation comparison Having demonstrated that accounting for derivational ambiguity leads to improvements for our discriminative model, we now place the performance of our system in the context of the standard approach to hierarchical translation.
+    To do this we use our own implementation of Hiero (Chiang, 2007), with the same grammar but with the traditional generative feature set trained in a linear model with minimum BLEU training.
+    The feature set includes: a trigram language model (lm) trained on the English side of the unfiltered Europarl corpus; direct and reverse translation scores

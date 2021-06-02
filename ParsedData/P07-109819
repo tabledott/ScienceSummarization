@@ -1,0 +1,10 @@
+t question/answer relations.
+    In this scenario, the question&#8217;s syntactic structure does not seem to provide much more information than BOW.
+    Secondly, we evaluated the impact of the newly defined PAS and PASN features combined with the best performing previous model, i.e.
+    Q(BOW) + A(PT,BOW).
+    Figure 5 illustrates the F1-measure plots again according to the cost-factor parameter.
+    We observe here that model Q(BOW) + A(PT,BOW,PAS) greatly outperforms model Q(BOW) + A(PT,BOW), proving that the PAS feature is very useful for answer classification, i.e. the improvement is about 2 to 3 points while the difference with the BOW model, i.e.
+    Q(BOW) + A(BOW), exceeds 3 points.
+    The Q(BOW) + A(PT,BOW,PASN) model is not more effective than Q(BOW) + A(PT,BOW,PAS).
+    This suggests either that PAS is more effective than PASN or that when the PT information is added, the PASN contribution fades out.
+    To further investigate the previous issue, we finally compared the contribution of the PAS an

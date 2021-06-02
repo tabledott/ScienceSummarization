@@ -1,0 +1,7 @@
+res 1 and 2) .
+    If the new distribution in one of the nodes on the path of a known token gains a dominant (for example &amp;quot;place&amp;quot;) then the effect of this change is propagated by reestimating other node distributions given this change.
+    Each distribution on the context paths in which that token occurred in the text is modified, by subtracting from the &amp;quot;questionable&amp;quot; mass a quantity proportional to the number of times the respective token was found in that context and adding it to the dominant-position (e.g.
+    &amp;quot;place&amp;quot;) mass.
+    For the newly obtained distributions that gained a dominant (in our example &amp;quot;place&amp;quot;) in the context trie, the bootstrapping procedure is called for all tokens that occurred in that context, and so on, recursively.
+    Here it is very important that we consider raw distributions and not normalize them.
+    For example, if word &amp;quot;Mariana&amp;quot; occurs x times with the right context &amp;quot;merge&amp

@@ -1,0 +1,9 @@
+orpus).
+    Because a spell checker is typically applied right after a word is typed, the language model only used left context.
+    We show the results in Figure 1, where we used the error model with positional information and with a maximum context window of four, and used the language model to rescore the 5 best word candidates returned by the error model.
+    Note that for the case of no language model, the results are lower than the results quoted above (e.g. a 1-best score above of 95.0%, compared to 93.9% in the graph).
+    This is because the results on the Brown Corpus are computed per token, whereas above we were computing results per type.
+    One question we wanted to ask is whether using a good language model would obviate the need for a good error model.
+    In Figure 2, we applied the trigram model to resort the 5-best results of the CG model.
+    We see that while a language model improves results, using the better error model (Figure 1) still gives significantly better results.
+    Using a la

@@ -1,0 +1,8 @@
+hree partial formats can be found in table 1.
+    We have build a baseNP recognizer by training a machine learning algorithm with correct tagged data and testing it with unseen data.
+    The machine learning algorithm we used was a MemoryBased Learning algorithm (MBL).
+    During training it stores a symbolic feature representation of a word in the training data together with its classification (chunk tag).
+    In the testing phase the algorithm compares a feature representation of a test word with every training data item and chooses the classification of the training item which is closest to the test item.
+    In the version of the algorithm that we have used, is 1-IG, the distances between feature representations are computed as the weighted sum of distances between individual features (Daelemans et al., 1998).
+    Equal features are defined to have distance 0, while the distance between other pairs is some feature-dependent value.
+    This value is equal to the information gain of the feature, an informat

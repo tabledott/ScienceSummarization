@@ -1,0 +1,9 @@
+t uses it to generate the n-best parses rather than a single parse.
+    Then a reranking phase uses more detailed features, features which would (mostly) be impossible to incorporate in the initial phase, to reorder the list and pick a possibly different best parse.
+    At first blush one might think that gathering even more fine-grained features from a WSJ treebank would not help adaptation.
+    However, we find that reranking improves the parsers performance from 82.9% to 85.2%.
+    The second technique is self-training &#8212; parsing unlabeled data and adding it to the training corpus.
+    Recent work, (McClosky et al., 2006), has shown that adding many millions of words of machine parsed and reranked LA Times articles does, in fact, improve performance of the parser on the closely related WSJ data.
+    Here we show that it also helps the father-afield Brown data.
+    Adding it improves performance yet-again, this time from 85.2% to 87.8%, for a net error reduction of 28%.
+    It is interesting to compare

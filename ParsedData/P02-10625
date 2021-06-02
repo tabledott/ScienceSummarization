@@ -1,0 +1,9 @@
+ng (Ratnaparkhi 1996), named-entity recognition (Borthwick et.
+    al 1998), and information extraction tasks (McCallum et al. 2000).
+    Thus the maximumentropy tagger we used represents a serious baseline for the task.
+    We used the following features (several of the features were inspired by the approach of (Bikel et. al 1999), an HMM model which gives excellent results on named entity extraction): The word being tagged, the previous word, and the next word.
+    The previous tag, and the previous two tags (bigram and trigram features).
+    A compound feature of three fields: (a) Is the word at the start of a sentence?
+    ; (b) does the word occur in a list of words which occur more frequently as lower case rather than upper case words in a large corpus of text?
+    (c) the type of the first letter of the word, where is defined as &#8216;A&#8217; if is a capitalized letter, &#8216;a&#8217; if is a lower-case letter, &#8216;0&#8217; if is a digit, and otherwise.
+    For example, if the word Animal is seen

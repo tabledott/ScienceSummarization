@@ -1,0 +1,7 @@
+0 sentences), yielding average solve times of less than 0.5 seconds.
+    Our approach converges quickly due to the quality of the scoring function.
+    Its weights have been trained on cycle free data, thus it is more likely to guide the search to a cycle free solution.
+    In the following section we present the objective function Ox, variables Vx and linear constraints Bx and Ix needed for parsing x using Algorithm 1.
+    Vx contains a set of binary variables to represent labelled edges: where n is the number of tokens and the index 0 represents the root token. bestk(i, j) is the set of k labels with highest s(i, j, l). ei,j,l equals 1 if there is a edge (i.e., a dependency) with the label l between token i (head) and j (child), 0 otherwise. k depends on the type of constraints we want to add.
+    For the plain MST problem it is sufficient to set k = 1 and only take the best scoring label for each token pair.
+    However, if we want a constraint which forbids duplicate subjects we need to provide additional

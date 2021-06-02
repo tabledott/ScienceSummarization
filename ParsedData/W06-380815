@@ -1,0 +1,7 @@
+d set sizes.
+    Note that unlike k = c|L|, which decreases as the labeled set size decreases, we let k' remain fixed for all |L|.
+    We set M arbitrarily to a large number 108 to ensure that the ratings of labeled reviews are respected.
+    In addition to using PSP as a similarity measure between reviews, we investigated several alternative similarity measures based on the cosine of word vectors.
+    Among these options were the cosine between the word vectors used to train the SVM regressor, and the cosine between word vectors containing only words with high (top 1000 or top 5000) mutual information values.
+    The mutual information is computed with respect to the positive and negative classes in the 10662-document &#8220;snippet data set.&#8221; Finally, we experimented with using as a similarity measure the cosine between word vectors containing all words, each weighted by its mutual information.
+    We found this measure to be the best among the options tested in pilot trial runs using the metric label

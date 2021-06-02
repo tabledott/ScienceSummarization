@@ -1,0 +1,10 @@
+ posterior probabilities, and a target language model score.
+    The weights of the different scores are optimized w.r.t. classification error rate (CER).
+    The phrase posterior probabilities are determined by summing the sentence probabilities of all translation hypotheses in the N-best list which contain this phrase pair.
+    The segmentation of the sentence into phrases is provided by the decoder.
+    This sum is then normalized by the total probability mass of the N-best list.
+    To obtain a score for the whole target sentence, the posterior probabilities of all target phrases are multiplied.
+    The word posterior probabilities are calculated on basis of the Levenshtein alignment between the hypothesis under consideration and all other translations contained in the Nbest list.
+    For details, see (Ueffing and Ney, 2007).
+    Again, the single values are multiplied to obtain a score for the whole sentence.
+    For NIST, the language model score is determined using a 5-gram model trained on the English

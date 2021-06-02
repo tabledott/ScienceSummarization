@@ -1,0 +1,13 @@
+221; for a &#8220;Life_Die&#8221; event mention.
+    But the same annotation for this mention doesn&#8217;t appear again in the related documents, so we can determine it&#8217;s a spurious argument.
+  
+  
+    Based on the above motivations we propose to incorporate global evidence from a cluster of related documents to refine local decisions.
+    This section gives more details about the baseline withinsentence event tagger, and the information retrieval system we use to obtain related documents.
+    In the next section we shall focus on describing the inference procedure.
+    Figure 1 depicts the general procedure of our approach.
+    EMSet represents a set of event mentions which is gradually updated.
+    We apply within-sentence event extraction to get an initial set of event mentions EMSett , and conduct cross-sentence inference (details will be presented in section 5) to get an updated set of event mentions EMSett .
+  
+  
+    We then use the INDRI retrieval system (Strohman et al., 2005) to obtain the to

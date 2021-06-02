@@ -1,0 +1,13 @@
+ve rare occurring pairs of verbs.
+    The final results use a baseline where all pairs occurring less than 10 times in the training data are removed.
+    Since the verb-only baseline does not use typed dependencies, our narrative model cannot directly compare to this abstracted approach.
+    We thus modified the narrative model to ignore typed dependencies, but still count events with shared arguments.
+    Thus, we calculate the PMI across verbs that share arguments.
+    This approach is called Protagonist.
+    The full narrative model that includes the grammatical dependencies is called Typed Deps.
+  
+  
+    Experiments with varying sizes of training data are presented in figure 3.
+    Each ranked list of candidate verbs for the missing event in Baseline/Protagonist contained approximately 9 thousand candidates.
+    Of the 740 cloze tests, 714 of the removed events were present in their respective list of guesses.
+    This is encouraging as only 3.5% of the events are unseen (or do not meet cutoff thresholds

@@ -1,0 +1,8 @@
+ the edges corresponding to absolute properties (color) should cost less than those corresponding to relative ones (size).
+    This gives us exactly the effect of having a list of preferred attributes ( type, color, size ).
+    It also implies that the type of an object is always included if it is in any way distinguishing.
+    That by itself does not guarantee that type is always included.
+    The incremental nature of the incremental algorithm can be obtained by ordering edges with respect to their costs.
+    Now the cheapest edges (i.e, those expressing type information) should be tried first, and more expensive edges should be tried later.
+    In addition, the algorithm should terminate as soon as it has found a distinguishing graph.
+    This would guarantee that bargain type loops are always included, and the algorithm would output (iii) from Figure 4 instead of (iii) from Another characteristic property of the original incremental algorithm (not discussed in section 2) is the use of a subsumption hierar

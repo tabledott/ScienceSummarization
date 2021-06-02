@@ -1,0 +1,10 @@
+I(yj)) for a pair of adjacent words in the compression.
+    These features were tuned on a development data set.
+  
+  
+    The first set of features are over adjacent words yj&#8722;1 and yj in the compression.
+    These include the part-of-speech (POS) bigrams for the pair, the POS of each word individually, and the POS context (bigram and trigram) of the most recent word being added to the compression, yj.
+    These features are meant to indicate likely words to include in the compression as well as some level of grammaticality, e.g., the adjacent POS features &#8220;JJ&amp;VB&#8221; would get a low weight since we rarely see an adjective followed by a verb.
+    We also add a feature indicating if yj&#8722;1 and yj were actually adjacent in the original sentence or not and we conjoin this feature with the above POS features.
+    Note that we have not included any lexical features.
+    We found during experiments on the development data that lexical information was too sparse and led to overfitting, so we ra

@@ -1,0 +1,13 @@
+oped with an English parser alone.
+    The conditioning features ( , , ) can be anything that is available on a tree, however they should be carefully selected not to cause datasparseness problems.
+    Also, the choice of features may affect the decoding algorithm.
+    In our experiment, a sequence of the child node label was used for , a pair of the node label and the parent label was used for , and the identity of the English word is used for.
+    For example, PPRP-VB2-VB1PRP-VB1-VB2 for the top node in Figure 1.
+    Similarly for the node PRP, Pright, haVB-PRPand Pkarehe.
+    More detailed examples are found in (Yamada and Knight, 2001).
+  
+  
+    In (Yamada and Knight, 2001), the translationis a 1-to-1 lexical translation from an English wordto a foreign word, i.e., .
+    To allow non 1-to-1 translation, such as for idiomatic phrases or compound nouns, we extend the model as follows.
+    First we use fertility as used in IBM models to allow 1-to-N mapping.
+    For N-to-N mapping, we allow direct translati

@@ -1,0 +1,7 @@
+loops.
+    As an example, consider the following simple left-recursive SCFG. where q = 1 &#8212; p. Nonprobabilistically, the prediction loop at position 0 would stop after producing the states corresponding to just two out of an infinity of possible paths.
+    The correct forward probabilities are obtained as a sum of infinitely many terms, accounting for all possible paths of length 1.
+    In these sums each p corresponds to a choice of the first production, each q to a choice of the second production.
+    If we didn't care about finite computation the resulting geometric series could be computed by letting the prediction loop (and hence the summation) continue indefinitely.
+    Fortunately, all repeated prediction steps, including those due to left-recursion in the productions, can be collapsed into a single, modified prediction step, and the corresponding sums computed in closed form.
+    For this purpose we need a probabilistic version of the well-known parsing concept of a left corner, which is also at 

@@ -1,0 +1,12 @@
+ath, and the candidate path with the best score is returned.
+    Admittedly, this criterion may seem a bit ad hoc, but it seems to work well in practice.
+    It has the desirable property that it favors paths with more matches over paths with fewer matches.
+    It also favors shorter paths over longer paths.
+    It might be possible to justify the optimization criterion using a model where the weights are interpreted as variances.
+  
+  
+    The performance of char align is encouraging.
+    The error rates are often very small, usually well within the length of a sentence or the length of a concordance line.
+    The program is currently being used by translators to produce bilingual concordances for terminology research.
+    For this application, it is necessary that the alignment program accept noisy (realistic) input, e.g., raw OCR output, with little or no manual cleanup.
+    It is also highly desirable that the program produce constructive diagnostics when confronted with texts that don't align very well b

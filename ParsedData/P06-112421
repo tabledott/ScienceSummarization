@@ -1,0 +1,6 @@
+ words by six equal increments, while we also experimented with n = 2 and 4 on the full 14 million word training set.
+    We compared the hierarchical Pitman-Yor language model trained using the proposed Gibbs sampler (HPYLM) against interpolated KneserNey (IKN), modified Kneser-Ney (MKN) with maximum discount cut-off c(max) = 3 as recommended in (Chen and Goodman, 1998), and the hierarchical Dirichlet language model (HDLM).
+    For the various variants of Kneser-Ney, we first determined the parameters by conjugate gradient descent in the cross-entropy on the validation set.
+    At the optimal values, we folded the validation set into the training set to obtain the final n-gram probability estimates.
+    This procedure is as recommended in (Chen and Goodman, 1998), and takes approximately 10 minutes on the full training set with n = 3 on a 1.4 Ghz PIII.
+    For HPYLM we inferred the posterior distribution over the latent variables and parameters given both the training and validation sets using the proposed G

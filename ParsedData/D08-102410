@@ -1,0 +1,9 @@
+very far from the translations preferred by the model.
+    What is the set {eij} of translation hypotheses?
+    Ideally we would let it be the set of all possible translations, and let the objective function (1) take all of them into account.
+    This is the approach taken by Taskar et al. (2004), but their approach assumes that the loss function can be decomposed into local loss functions.
+    Since our loss function cannot be so decomposed, we select: The last case is what Crammer et al. (2006) call max-loss updating (where &#8220;loss&#8221; refers to the generalized hinge loss) and Taskar et al.
+    (2005) call lossaugmented inference.
+    The rationale here is that since the objective (1) tries to minimize maxj(l'ij &#8722; Ahij &#183; w'), we should include the translations that have the highest (l'ij &#8722; Ahij &#183; w) in order to approximate the effect of using the whole forest.
+    See Figure 1 again for an illustration of the hypotheses selected for a single sentence.
+    The maxBLEU points in t

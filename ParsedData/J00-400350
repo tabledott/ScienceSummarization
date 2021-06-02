@@ -1,0 +1,6 @@
+that is, the system's indexes and the annotated indexes do not need to be exactly the same as long as they belong to the same coreference chain.
+    In this way, both (40a) and (40b) would be evaluated as correct answers if the corpus is annotated with the links shown in (39).
+    In the end, we still need to check the results manually, because our annotated coreference chains are not complete: our annotators did not annotate all types of anaphoric expressions, so it may happen that the system indicates as antecedent an element outside an annotated coreference chain, such as a bare noun or possessive.
+    In (41), for example, suppose that all references to the house are coreferential: coref(154,140).
+    If NP 135 is indicated as the antecedent for NP 154 in the corpus annotation (so that 140 is not part of the annotated coreference chain), and the system indicates 140 as the antecedent for 154, an error is reported by the automatic evaluation, even though all of these NPs refer to the same entity.
+    A sec

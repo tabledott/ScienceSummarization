@@ -1,0 +1,9 @@
+bles in the experiment: method of translation and whether function words were included.
+    Some applications, such as query translation for CUR, don't care about function words.
+    To get a sense of the relative effectiveness of the different translation model estimation methods when function words are taken out of the equation, I removed from the gold standard all link tokens where one or both of the linked words were closed-class words.
+    Then, I removed all closed-class words (including nonalphabetic symbols) from the models and renormalized the conditional probabilities.
+    The method of translation was either single-best or whole distribution.
+    Singlebest translation is the kind that somebody might use to get the gist of a foreignlanguage document.
+    The input to the task was one side of the gold standard bitext.
+    The output was the model's single best guess about the translation of each word in the input, together with the input word.
+    In other words, each model produced link tokens cons

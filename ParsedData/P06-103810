@@ -1,0 +1,6 @@
+ern candidates to filter asymmetric ones.
+    The first measure (M1) counts the proportion of words that can appear in both slots of the pattern, out of the total number of words.
+    The reasoning here is that if a pattern allows a large percentage of words to participate in both slots, its chances of being a symmetric pattern are greater: M1 filters well patterns that connect words having different parts of speech.
+    However, it may fail to filter patterns that contain multiple levels of asymmetric relationships.
+    For example, in the pattern &#8216;x belongs to y&#8217;, we may find a word B on both sides (&#8216;A belongs to B&#8217;, &#8216;B belongs to C&#8217;) while the pattern is still asymmetric.
+    In order to detect symmetric relationships in a finer manner, for the second and third measures we define 5ymG(P), the symmetric subgraph of G(P), containing only the bidirectional arcs and nodes of G(P): The second and third measures count the proportion of the number of symmetric nodes and edges i

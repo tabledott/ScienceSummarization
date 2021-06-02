@@ -1,0 +1,15 @@
+iterbi alignment.
+    The leftmost column shows how many times they appeared.
+    Most of them are correct.
+    It even detected frequent sentenceto-sentence translations, since we only imposed a relative length limit for phrasal translations (Section 3).
+    However, some of them, such as the one with (in cantonese), are wrong.
+    We expected that these junk phrases could be eliminated by phrase pruning (Section 5), however the junk phrases present many times in the corpus were not effectively filtered out.
+  
+  
+    The BLEU score measures the quality of the decoder output sentences.
+    We were also interested in the syntactic structure of the decoded trees.
+    The leftmost tree in Figure 4 is a decoded tree from the syn-nozf system.
+    Surprisingly, even though the decoded sentence is passable English, the tree structure is totally unnatural.
+    We assumed that a good parse tree gives high trigram probabilities.
+    But it seems a bad parse tree may give good trigram probabilities too.
+    We also not

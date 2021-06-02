@@ -1,0 +1,8 @@
+ge.
+    Our idea of score propagation can now be formulated as the following recursive equation for updating the scores of all the transliteration pairs. where w(k) i is the new score of the pair (ei, ci) after an iteration, while w(k&#8722;1) is its old score i before updating; &#945; &#8712; [0, 1] is a parameter to control the overall amount of propagation (when &#945; = 1, no propagation occurs); P(j|i) is the conditional probability of propagating a score from node (ej, cj, wj) to node (ei, ci, wi).
+    We estimate P (j|i) in two different ways: 1) The number of cooccurrences in the whole collection (Denote as CO).
+    P(j|i) = C(i,j) where MI(i, j) is the mutual information of (ei, ci) and (ej, cj).
+    As we will show, the CO method works better.
+    Note that the transition probabilities between indirect neighbors are always 0.
+    Thus propagation only happens between direct neighbors.
+    This formulation is very similar to PageRank, a link-based ranking algorithm for Web retrieval (Brin and Page, 1

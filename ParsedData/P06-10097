@@ -1,0 +1,9 @@
+While the log-likelihood cannot be maximised for the parameters, A, in closed form, it is a convex function, and thus we resort to numerical optimisation to find the globally optimal parameters.
+    We use L-BFGS, an iterative quasi-Newton optimisation method, which performs well for training log-linear models (Malouf, 2002; Sha and Pereira, 2003).
+    Each L-BFGS iteration requires the objective value and its gradient with respect to the model parameters.
+    These are calculated using forward-backward inference, which yields the partition function, ZA(e, f), required for the log-likelihood, and the pair-wise marginals, pA(at&#8722;1, at|e, f), required for its derivatives.
+    The Viterbi algorithm is used to find the maximum posterior probability alignment for test sentences, a&#8727; = arg maxa pA(a|e,f).
+    Both the forward-backward and Viterbi algorithm are dynamic programs which make use of the Markov assumption to calculate efficiently the exact marginal distributions.
+  
+  
+    Before we can apply o

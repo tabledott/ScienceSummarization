@@ -1,0 +1,7 @@
+common.
+    This is similar to stacking the different feature instantiations into long (sparse) vectors and computing the cosine similarity between them.
+    Finally, note that while most feature concepts are lexicalized, others, such as the suffix concept, are not.
+    Given this similarity function, we define a nearest neighbor graph, where the edge weight for the n most similar vertices is set to the value of the similarity function and to 0 for all other vertices.
+    We use N(u) to denote the neighborhood of vertex u, and fixed n = 5 in our experiments.
+    To define a similarity function between the English and the foreign vertices, we rely on high-confidence word alignments.
+    Since our graph is built from a parallel corpus, we can use standard word alignment techniques to align the English sentences De 5Note that many combinations are impossible giving a PMI value of 0; e.g., when the trigram type and the feature instantiation don&#8217;t have words in common. and their foreign language translations

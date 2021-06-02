@@ -1,0 +1,10 @@
+rs.
+    This more local approach has a number of advantages over computing a global analysis.
+    First, as just noted it is much more efficient to compute these partial analyses rather than to compute global analyses of the entire sentence.
+    Second, there are rare cases in which the same substring functions as both repair and reparandum (i.e., the repair string is itself repaired again).
+    A single global analysis would not be able to capture this (since the TAG channel model does not permit the same substring to be both a reparandum and a repair), but we combine these overlapping repair substring analyses in a post-processing operation to yield an analysis of the whole sentence.
+    (We do insist that the reparandum and interregnum of a repair do not overlap with those of any other repairs in the same analysis).
+  
+  
+    This section describes how we evaluate our noisy model.
+    As mentioned earlier, following Charniak and Johnson (2001) our test data consisted of all Penn III Switchboard tree-bank s

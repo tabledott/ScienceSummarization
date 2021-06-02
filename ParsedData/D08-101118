@@ -1,0 +1,8 @@
+ set after maximumBLEU training.
+    Then during test, we adapt the length of the translation output by adjusting the weight of the word count feature such that the expected output/source length ratio is met.
+    In our experiments, we apply length adaptation to the system combination output at the level of the whole test corpus.
+    The development (dev) set used for system combination parameter training contains 1002 sentences sampled from the previous NIST MT Chinese-to-English test sets: 35% from MT04, 55% from MT05, and 10% from MT06-newswire.
+    The test set is the MT08 Chinese-to-English &#8220;current&#8221; test set, which includes 1357 sentences from both newswire and web-data genres.
+    Both dev and test sets have four references per sentence.
+    As inputs to the system combination, 10-best hypotheses for each source sentence in the dev and test sets are collected from each of the eight single systems.
+    All outputs on the MT08 test set were true-cased before scoring using a log-linear conditi

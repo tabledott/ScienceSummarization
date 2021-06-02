@@ -1,0 +1,7 @@
+r of sentences take longer than two minutes to parse.
+    Thus, in practice we would not see a significant degradation in performance if we were to fall back on the CLE algorithm after two minutes of solving.
+    When we examine the average duration of the first iteration it appears that the majority of the solve time is spent within this iteration.
+    This could be used to justify using the CLE algorithm to find a initial solution as starting point for the ILP solver (see Section 6).
+    Despite the fact that our parser can parse all sentences in a reasonable amount of time, it is still significantly slower than the CLE algorithm.
+    While this is not crucial during decoding, it does make discriminative online training difficult as training requires several iterations of parsing the whole corpus. time (ST) for the cross dataset using varying q values and the Chu-Liu-Edmonds algorithm (CLE) Thus we investigate if it is possible to speed up our inference using a simple approximation.
+    For each token we no

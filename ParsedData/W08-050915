@@ -1,0 +1,11 @@
+ solution.
+    However, for the TTable the size is too large to have multiple copies.
+    Instead, we put a lock on every target word, so only when two thread try to write counts for the same target word will a collisions happen.
+    We also have to put mutual locks on the accumulators used to calculate the alignment perplexity.
+    Each thread outputs the alignment into its own output file.
+    Sentences in these files are not in sequential order.
+    Therefore, we cannot simply concatenate them but rather have to merge them according to the sentence id.
+    Because all the threads within a process share the same address space, no data needs to be transferred, which saves the I/O time significantly.
+    MGIZA++ is more resource-thrifty comparing to PGIZA++, it do not need to load copies of models into memory.
+    In contrast to PGIZA++, MGIZA++ has a much simpler interface and can be treated as a drop-in replacement for GIZA++, except that one needs to run a script to merge the final alignment files.
+    Thi

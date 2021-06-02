@@ -1,0 +1,8 @@
+pitalization.
+    Suppose we use a naive NE tagger that only looks at the word itself.
+    If we consider capitalization, then the instance Bush is represented differently from the instance bush.
+    In the source domain, ps(y = Person|x = Bush) is high while ps(y = Person|x = bush) is low, but in the target domain, pt(y = Person|x = bush) is high.
+    If we ignore the capitalization information, then in both domains p(y = Person|x = bush) will be high provided that the source domain contains much fewer instances of bush than Bush.
+    Adaptation through prior: When we use a parameterized model p(y|x; &#952;) to approximate p(y|x) and estimate &#952; based on the source domain data, we can place some prior on the model parameter &#952; so that the estimated distribution p(y|x; B) will be closer to pt(y|x).
+    Consider again the NE tagging example.
+    If we use capitalization as a feature, in the source domain where capitalization information is available, this feature will be given a large weight in the lea

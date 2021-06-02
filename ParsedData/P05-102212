@@ -1,0 +1,5 @@
+do dynamic programming parsing directly with the fine-grained grammar, but precisely because the fine-grained grammar conditions on a wide variety of non-local contextual information there would be a very large number of different dynamic programming states, so direct dynamic programming parsing with the fine-grained grammar would be very expensive in terms of time and memory.
+    As the second stage parse evaluates all the remaining constituents in all of the contexts in which they appear (e.g., what are the possible grand-parent labels) it keeps track of the most probable expansion of the constituent in that context, and at the end is able to start at the root and piece together the overall best parse.
+    Now comes the easy part.
+    To create a 50-best parser we simply change the fine-grained version of 1-best algorithm in accordance with the &#8220;obvious&#8221; scheme outlined earlier in this section.
+    The first, coarse-grained, pass is not changed, but the second, fine-grained, pass keeps the n-bes

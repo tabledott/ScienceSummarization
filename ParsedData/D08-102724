@@ -1,0 +1,6 @@
+ns.
+    For the purpose of this experiment we create a simple bag-of-words unigram model for predicting affect and valence, similar to the SWAT system (Katz et al., 2007), one of the top-performing systems on the SemEval Affective Text task.7 For each token t in our training set, we assign t a weight for each emotion e equal to the average emotion score observed in each headline H that t participates in. i.e., if Ht is the set of headlines containing the token t, then: With these weights of the individual tokens we may then compute the score for an emotion e of a new headline H as the average score over the set of tokens t E H that we&#8217;ve observed in the training set (ignoring those tokens not in the training set), i.e.
+    : annotators annotators numbers of annotators.
+    The lowest line is for the naive 50% majority voting rule.
+    (This is equivalent to the model under uniform priors and equal accuracies across workers and labels.)
+    Each point is the data set&#8217;s accuracy against the gold lab

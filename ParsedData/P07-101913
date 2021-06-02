@@ -1,0 +1,6 @@
+ped from cand is not guaranteed to be the best of all combinations along this hyperedge (for example, the top-left cell of 2.5 in Figure 1 is not the best in the grid).
+    So we cannot simply enumerate items just as they come off of cand.2 Instead, we need to store up popped items in a buffer buf , just as in cube pruning, and enumerate an item only when we are confident that it will never be surpassed in the future.
+    In other words, we would like to have an estimate of the best item not explored yet (analogous to the heuristic function in A* search).
+    If we can establish a lower bound hcombo(e) on the combination cost of any +LM deduction via hyperedge e, then we can form a monotonic grid (see Figure 3(a)) of lower bounds on the grid of combinations, by using hcombo(e) in place of the true combination cost for each +LM item x in the grid; call this lower bound h(x).
+    Now suppose that the gray-shaded cells in Figure 3(a) are the members of cand.
+    Then the minimum of h(x) over the items in cand, i

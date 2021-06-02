@@ -1,0 +1,11 @@
+ST) parsers.
+    Beam-search decoding for left-toright parsers (Zhang and Clark, 2008) is also linear, but has an additional linear dependence on the beamsize.
+    The reported results in (Zhang and Clark, 2008) use a beam size of 64, compared to our constant of k = 6.
+    Our Python-based implementation5 (the perceptron is implemented in a C extension module) parses about 40 tagged sentences per second on an Intel based MacBook laptop.
+  
+  
+    We evaluate the parser using the WSJ Treebank.
+    The trees were converted to dependency structures with the Penn2Malt conversion program,6 using the headfinding rules from (Yamada and Matsumoto, 2003).7 We use Sections 2-21 for training, Section 22 for development, and Section 23 as the final test set.
+    The text is automatically POS tagged using a trigram HMM based POS tagger prior to training and parsing.
+    Each section is tagged after training the tagger on all other sections.
+    The tagging accuracy of the tagger is 96.5 for the training set and 96.8 for t

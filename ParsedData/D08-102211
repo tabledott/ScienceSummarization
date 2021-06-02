@@ -1,0 +1,8 @@
+ hyperedges at each node.
+    In other words, it becomes nondeterministic how to &#8220;cut&#8221; a forest into tree fragments, which is analogous to the non-deterministic pattern-match in forest-based decoding (Mi et al., 2008).
+    For example there are two parse hyperedges e1 and e2 at the root node in Figure 4.
+    When we follow one of them to grow a fragment, there again will be multiple choices at each of its tail nodes.
+    Like in tree-based case, a fragment is said to be complete if all its leaf nodes are admissible.
+    Otherwise, an incomplete fragment can grow at any non-admissible frontier node v, where following each parse hyperedge at v will split off a new fragment.
+    For example, following e2 at the root node will immediately lead us to two admissible nodes, NPB0, 1 and VP1, 6 (we will highlight admissible nodes by gray shades Algorithm 1 Forest-based Rule Extraction. in this section like in Figures 3 and 4).
+    So this fragment, frag1 = {e2}, is now complete and we can extract a rule, I

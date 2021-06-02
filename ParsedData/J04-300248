@@ -1,0 +1,11 @@
+on piece classes.
+    PSEinsts is the set of PSE instances to be disambiguated (line 1).
+    HiDensity (initialized on line 2) will be the subset of PSEinsts that are retained.
+    In the loop, the density of each PSE instance P is calculated.
+    This is the number of subjective elements that begin or end in the W words preceding or following P (line 6).
+    P is retained if its density is at least T (line 7).
+    Lines 8&#8211;9 of the algorithm assess the precision of the original (PSEinsts) and new (HiDensity) sets of PSE instances.
+    If prec(HiDensity) is greater than prec(PSEinsts), then there is evidence that the number of subjective elements near a PSE instance is related to its subjectivity in context.
+    To create more data points for this analysis, WSJ-SE was split into two (WSJ-SE1 and WSJ-SE2) and annotations of the two judges are considered separately.
+    WSJ-SE2-D, for example, refers to D&#8217;s annotations of WSJ-SE2.
+    The process in Figure 3 was repeated for different parameter setti

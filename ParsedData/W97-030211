@@ -1,0 +1,6 @@
+ Z will be thresholded out, because none is part of such a sequence.
+    Rayner et al. used this insight for a hierarchical, non-recursive grammar, and only used their technique to prune after the first level of the grammar.
+    They computed a score for each sequence as the minimum of the scores of each node in the sequence, and computed a score for each node in the sequence as the minimum of three scores: one based on statistics about nodes to the left, one based on nodes to the right, and one based on unigram statistics.
+    We wanted to extend the work of Rayner et al. to general PCFGs, including those that were recursive.
+    Our approach therefore differs from theirs in many ways.
+    Rayner et al. ignore the inside probabilities of nodes; while this may work after processing only the first level of a grammar, when the inside probabilities will be relatively homogeneous, it could cause problems after other levels, when the inside probability of a node will give important information about its usefulness

@@ -1,0 +1,5 @@
+ can be done in without dramatically increasing computational complexity.
+    For this reason, we introduce a clone operation, which allows a copy of a node from the source tree to be made anywhere in the target tree.
+    After the clone operation takes place, the transformation of source into target tree takes place using the tree decomposition and subtree alignment operations as before.
+    The basic algorithm of the previous section remains unchanged, with the exception that the alignments &#945; between children of two elementary trees can now include cloned, as well as inserted, nodes on the target side.
+    Given that &#945; specifies a new cloned node as a child of Ej, the choice of which node to clone is made as in the tree-to-string model: Because a node from the source tree is cloned with equal probability regardless of whether it has already been &#8220;used&#8221; or not, the probability of a clone operation can be computed under the same dynamic programming assumptions as the basic tree-to-tree m

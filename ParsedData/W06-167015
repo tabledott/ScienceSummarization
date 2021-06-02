@@ -1,0 +1,8 @@
+g the morphological functions of the Wordnet library.
+    The first sense feature (2) is the label predicted for xi by the baseline model, cf.
+    Section 5.3.
+    POS labels (4) were generated using Brants&#8217; TnT tagger (Brants, 2002).
+    POS features of the form pos;[0] extract the first character from the POS label, thus providing a simplified representation of the POS tag.
+    Finally, word shape features (5) are regular expression-like transformation in which each character c of a string s is substituted with X if c is uppercase, if lowercase, c is substituted with x, if c is a digit it is substituted with d and left as it is otherwise.
+    In addition each sequence of two or more identical characters c is substituted with c*.
+    For example, for s = &#8220;Merrill Lynch&amp; Co.&#8221;, sh(s) = Xx * Xx * &amp;Xx.. Exploratory experiments with richer feature sets, including syntactic information, affixes, and topic labels associated with words, did not result in improvements in terms of performance

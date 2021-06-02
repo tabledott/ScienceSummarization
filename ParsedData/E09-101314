@@ -1,0 +1,10 @@
+ to treat each information source (or feature type) individually and then combine all of them together in a unified model.
+    Our underlying assumption is that the context window around the target word can have multiple representations, all of which share the same sense distribution.
+    We illustrate this in Figure 2 where each inner rectangle (layer) corresponds to a distinct feature type.
+    We will naively assume independence between multiple layers, even though this is clearly not the case in our task.
+    The idea here is to model each layer as faithfully as possible to the empirical data while at the same time combining information from all layers in estimating the sense distribution of each target instance.
+  
+  
+    Our inference procedure is based on Gibbs sampling (Geman and Geman, 1984).
+    The procedure begins by randomly initializing all unobserved random variables.
+    At each iteration, each random variable si is sampled from the conditional distribution P(si|s&#8722;i) where s&#8722;i refe

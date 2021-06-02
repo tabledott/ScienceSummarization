@@ -1,0 +1,9 @@
+tinomial &#977;.
+    The model is shown as a plate diagram in Figure 1.
+    Given a vocabulary size W, the generative story is as follows: &#8211; Draw the base topic from a normal distribution with uniform diagonal covariance: &#181;k &#8764; N(a, b2I), &#8211; Draw the regional variance from a Gamma distribution: U2k &#8764;(c, d).
+    &#8211; Generate regional variants: for each region j &lt; J, &#8727; Draw the region-topic &#951;jk from a normal distribution with uniform diagonal covariance: &#951;jk &#8764; N(&#181;k, U2kI).
+    &#8727; Convert &#951;jk into a multinomial distribution over words by exponentiating and normalizing: where the denominator sums over the vocabulary.
+  
+  
+    We apply mean-field variational inference: a fullyfactored variational distribution Q is chosen to minimize the Kullback-Leibler divergence from the true distribution.
+    Mean-field variational inference with conjugate priors is described in detail elsewhere (Bishop, 2006; Wainwright and Jordan, 2008); we restrict our f

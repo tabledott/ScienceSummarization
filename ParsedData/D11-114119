@@ -1,0 +1,7 @@
+ word we,i from Mult(o,;e,i).
+    To infer values for the hidden variables, we apply Collapsed Gibbs sampling (Griffiths and Steyvers, 2004), where parameters are integrated out, and the ze,is are sampled directly.
+    In making predictions, we found it beneficial to consider Otrain e as a prior distribution over types for entities which were encountered during training.
+    In practice this sharing of information across contexts is very beneficial as there is often insufficient evidence in an isolated tweet to determine an entity&#8217;s type.
+    For entities which weren&#8217;t encountered during training, we instead use a prior based on the distribution of types across all entities.
+    One approach to classifying entities in context is to assume that Otrain e is fixed, and that all of the words inside the entity mention and context, w, are drawn based on a single topic, z, that is they are all drawn from Multinomial(o,;).
+    We can then compute the posterior distribution over types in closed form with a

@@ -1,0 +1,9 @@
+rom this set, we count workers.
+    In this example, the pair (X find) and (X apply) shares an argument (they and workers).
+    The pair ((X find),(X apply)) is counted once for narrative chain induction, and ((X find), (X apply), workers) once for argument induction.
+    Figure 1 shows the top occurring words across all event slot pairs in a criminal scenario chain.
+    This chain will be part of a larger narrative schema, described in section 3.4.
+    We now formalize event slot similarity with arguments.
+    Narrative chains as defined in (Chambers and Jurafsky, 2008) score a new event slot (f, g) against a chain of size n by summing over the scores between all pairs: where C is a narrative chain, f is a verb with grammatical argument g, and sim(e, e') is the pointwise mutual information pmi(e, e').
+    Growing a chain by one adds the highest scoring event.
+    We extend this function to include argument types by defining similarity in the context of a specific argument a: where A is a constant weighting f

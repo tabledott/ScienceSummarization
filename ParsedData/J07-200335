@@ -1,0 +1,10 @@
+ke in the k-best algorithm).
+    Supposing a threshold beam of R = 5 and a margin of e = 0.5, we quit upon considering the next item, because, with a score of 7.7, it falls outside the beam by more than e. The rest of the grid is then discarded.
+    The pseudocode is given in Figure 10.
+    The function INFER+LM is used as the &#174; operator; it takes a tuple of antecedent +LM items and returns a consequent +LM item according to the inference rules in Figure 8.
+    The procedure REPARSE+LM takes a &#8722;LM chart chart as input and produces a +LM chart chart'.
+    The variables u, v stand for items in &#8722;LM and u', v', for items in +LM, and the relation v &#65533;i v' is defined as follows: For each cell in the input chart, it takes the single item from the cell and constructs the virtual list L of all of its +LM counterparts (lines 9&#8211;15).
+    Then, it adds the top items of L to the target cell until the cell is judged to be full (lines 16&#8211;20).
+  
+  
+    The implementation of our system, name

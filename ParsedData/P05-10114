@@ -1,0 +1,9 @@
+ a treebank, T(s) is computed by parsing each s in the treebank.
+    Previous studies assumed T(s) could be enumerated; however, the assumption is impractical because the size of T(s) is exponentially related to the length of s. The problem of exponential explosion is inevitable in the wide-coverage parsing of real-world texts because many parse candidates are produced to support various constructions in long sentences.
+  
+  
+    To avoid exponential explosion, we represent T(s) in a packed form of HPSG parse trees.
+    A parse tree of HPSG is represented as a set of tuples (m, 1, r), where m, 1, and r are the signs of mother, left daughter, and right daughter, respectively1.
+    In chart parsing, partial parse candidates are stored in a chart, in which phrasal signs are identified and packed into an equivalence class if they are determined to be equivalent and dominate the same word sequence.
+    A set of parse trees is then represented as a set of relations among equivalence classes.
+    Figure 1 shows a ch

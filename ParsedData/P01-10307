@@ -1,0 +1,10 @@
+h, the best hypothesis, off the stack.
+    If h is a complete sentence, output h and terminate.
+    For each possible next word w, extend h by adding w and push the resulting hypothesis onto the stack.
+    Return to the second step (pop).
+    One crucial difference between the decoding process in speech recognition (SR) and machine translation (MT) is that speech is always produced in the same order as its transcription.
+    Consequently, in SR decoding there is always a simple left-to-right correspondence between input and output sequences.
+    By contrast, in MT the leftto-right relation rarely holds even for language pairs as similar as French and English.
+    We address this problem by building the solution from left to right, but allowing the decoder to consume its input in any order.
+    This change makes decoding significantly more complex in MT; instead of knowing the order of the input in advance, we must consider allpermutations of an-word input sentence.
+    Another important difference between SR 

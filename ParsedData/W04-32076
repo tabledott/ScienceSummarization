@@ -1,0 +1,6 @@
+scriminative training (as we do for the English model, &#167;3.1) or as if they were log-probabilities, using smoothed maximum likelihood estimation (as we do for the Korean model, &#167;3.3).
+    Because we use this model only for inference, it is not necessary to compute a partition function for the combined log-linear model.
+    In addition to the two monolingual syntax models, we add a word-to-word translation model to the mix.
+    In this paper we use a translation model to induce only a single best word matching, but in principle the translation model could be used to weight all possible wordword links, and the parser would solve the joint alignment/parsing problem.2 As a testbed for our experiments, the Penn Korean Treebank (KTB; Han et al., 2002) provides 5,083 Korean constituency trees along with English translations and their trees.
+    The KTB also analyzes Korean words into their component morphemes and morpheme tags, which allowed us to train a morphological disambiguation model.
+    To make the 

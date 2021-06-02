@@ -1,0 +1,7 @@
+ral, the candidate space may have infinitely many source sentences, as well as infinitely many candidate translations per source sentence.
+    In practice, tuning optimizes over a finite subset of source sentences3 and a finite subset of candidate translations as well.
+    The classic tuning architecture used in the dominant MERT approach (Och, 2003) forms the translation subset and learns weight vector w via Algorithm TUNE(s, G): space s = hA, I, J, f, e, xi w.r.t. gold function G. a feedback loop consisting of two phases.
+    Figure 2 shows the pseudocode.
+    During candidate generation, candidate translations are selected from a base candidate space s and added to a finite candidate space s0 called the candidate pool.
+    During optimization, the weight vector w is optimized to minimize loss ls,(Hw, G).
+    For its candidate generation phase, MERT generates the k-best candidate translations for each source sentence according to hw, where w is the weight vector from the previous optimization phase (or an a

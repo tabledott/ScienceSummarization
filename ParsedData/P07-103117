@@ -1,0 +1,10 @@
+bracketed NPs in the Penn Treebank, we now describe our initial experiments on how this additional level of annotation can be exploited.
+    The obvious first task to consider is noun phrase bracketing itself.
+    We implement a similar system to Lauer (1995), described in Section 3, and report on results from our own data and Lauer&#8217;s original set.
+    First, we extracted three word noun sequences from all the ambiguous NPs.
+    If the last three children are nouns, then they became an example in our data set.
+    If there is a NML node containing the first two nouns then it is left-branching, otherwise it is right-branching.
+    Because we are only looking at the right-most part of the NP, we know that we are not extracting any nonsensical items.
+    We also remove all items where the nouns are all part of a named entity to eliminate flat structure cases.
+    Statistics about the new data set and Lauer&#8217;s data set are given in Table 4.
+    As can be seen, the Penn Treebank based corpus is signific

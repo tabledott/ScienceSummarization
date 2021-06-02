@@ -1,0 +1,7 @@
+ased similarity function, designed to indicate how syntactically similar the middle words of the connected trigrams are (&#167;3.2).
+    To establish a soft correspondence between the two languages, we use a second similarity function, which leverages standard unsupervised word alignment statistics (&#167;3.3).3 Since we have no labeled foreign data, our goal is to project syntactic information from the English side to the foreign side.
+    To initialize the graph we tag the English side of the parallel text using a supervised model.
+    By aggregating the POS labels of the English tokens to types, we can generate label distributions for the English vertices.
+    Label propagation can then be used to transfer the labels to the peripheral foreign vertices (i.e. the ones adjacent to the English vertices) first, and then among all of the foreign vertices (&#167;4).
+    The POS distributions over the foreign trigram types are used as features to learn a better unsupervised POS tagger (&#167;5).
+    The following 

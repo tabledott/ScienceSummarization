@@ -1,0 +1,11 @@
+ learning.
+  
+  
+    It is not intuitively clear why the SMT system can learn something from its own output and is improved through semi-supervised learning.
+    There are two main reasons for this improvement: Firstly, the selection step provides important feedback for the system.
+    The confidence estimation, for example, discards translations with low language model scores or posterior probabilities.
+    The selection step discards bad machine translations and reinforces phrases of high quality.
+    As a result, the probabilities of lowquality phrase pairs, such as noise in the table or overly confident singletons, degrade.
+    Our experiments comparing the various settings for transductive learning shows that selection clearly outperforms the method which keeps all generated translations as additional training data.
+    The selection methods investigated here have been shown to be wellsuited to boost the performance of semi-supervised learning for SMT.
+    Secondly, our algorithm constitutes a way of ada

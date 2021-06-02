@@ -1,0 +1,5 @@
+eed up the computation: After each pass, we disable all rules whose positive score is significantly lower than the net score of the best rule for the current pass.
+    A disabled rule is then reenabled whenever enough other changes have been made to the corpus that it seems possible that the score of that rule might have changed enough to bring it back into contention for the top place.
+    This is done by adding some fraction of the changes made in each pass to the positive scores of the disabled rules, and reenabling rules whose adjusted positive scores came within a threshold of the net score of the successful rule on some pass.
+    Note that this heuristic technique introduces some risk of missing the actual best rule in a pass, due to its being incorrectly disabled at the time.
+    However, empirical comparisons between runs with and without rule disabling suggest that conservative use of this technique can produce an order of magnitude speedup while imposing only a very slight cost in terms of suboptima

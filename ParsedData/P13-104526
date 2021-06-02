@@ -1,0 +1,10 @@
+hts, resulting in 66 unary and 882 binary child pairs.
+    Hence, the SU-RNN has 66+882 transformation matrices and scoring vectors.
+    Note that any PCFG, including latent annotation PCFGs (Matsuzaki et al., 2005) could be used.
+    However, since the vectors will capture lexical and semantic information, even simple base PCFGs can be substantially improved.
+    Since the computational complexity of PCFGs depends on the number of states, a base PCFG with fewer states is much faster.
+    Testing on the full WSJ section 22 dev set (1700 sentences) takes roughly 470 seconds with the simple base PCFG, 1320 seconds with our new CVG and 1600 seconds with the currently published Stanford factored parser.
+    Hence, increased performance comes also with a speed improvement of approximately 20%.
+    We fix the same regularization of &#955; = 10&#8722;4 for all parameters.
+    The minibatch size was set to 20.
+    We also cross-validated on AdaGrad&#8217;s learning rate which was eventually set to &#945; = 0.1 and wo

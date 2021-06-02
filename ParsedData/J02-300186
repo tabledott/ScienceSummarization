@@ -1,0 +1,7 @@
+ating the independence assumptions of the chart parser.
+    The use of priors over FEGs further complicates matters by introducing sentence-level features dependent on the entire parse.
+    For these reasons, we use the syntactic parsing model without frame element probabilities to generate a number of candidate parses, compute the best frame element assignment for each, and then choose the analysis with the highest overall probability.
+    The frame element assignments are computed as in Section 7.1, with frame element probabilities being applied to every constituent in the parse.
+    To return a large number of candidate parses, the parser was modified to include constituents in the chart even when they were equivalent, according to the parsing model, to a higher-probability constituent.
+    Rather than choosing a fixed n and keeping the n best constituents for each entry in the chart, we chose a probability threshold and kept all constituents within a margin of the highest-probability constituent.
+    Thus

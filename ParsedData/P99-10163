@@ -1,0 +1,8 @@
+of the nouns in this data using standard bottom-up clustering techniques as follows: Put each noun into its own node.
+    Compute the similarity between each pair of nodes using the cosine method.
+    Find the two most similar nouns and combine them by giving them a common parent (and removing the child nodes from future consideration).
+    We can then compute the new node's similarity to each other node by computing a weighted average of the similarities between each of its children and the other node.
+    In other words, assuming nodes A and B have been combined under a new parent C, the similarity between C and any other node i can be computed as Once again, we combine the two most similar nodes under a common parent.
+    Repeat until all nouns have been placed under a common ancestor.
+    Nouns which have a cosine of 0 with every other noun are not included in the final tree.
+    In practice, we cannot follow exactly that algorithm, because maintaining a list of the cosines between every pair of nodes req

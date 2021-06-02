@@ -1,0 +1,7 @@
+duce the following notation for expected counts: N(i, j, k) indicates the expected count of term i in region j and topic k, and N(j, k) = Ei N(i, j, k).
+    After some calculus, we can write the gradient &#8706;L/&#8706;h&#951;((i)) (2) which has an intuitive interpretation.
+    The first two terms represent the difference in expected counts for term i under the variational distributions q(z, r) and q(z, r,&#946;): this difference goes to zero when &#946;(i) jk perfectly matches N(i, j, k)/N(j, k).
+    The third term penalizes&#951;(i) jkfor deviating from its prior &#181;(i) k , but this penalty is proportional to the expected inverse variance h&#963;&#65533;2 k i.
+    We apply gradient ascent to maximize the objective L. A similar set of calculations gives the gradient for the variance of &#951;; these are described in an forthcoming appendix.
+    The base topic parameters are &#181;k and &#963;2k; in the variational distribution, q(&#181;k) is normally distributed and q(&#963;2k) is Gamma distributed.
+    

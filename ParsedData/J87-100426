@@ -1,0 +1,7 @@
+a sample English grammar that consists of 220 context-free rules and 40 sample sentences taken from actual publications.
+    All programs are run on DEC-20 and written in MacLisp, but not compiled.
+    Although the experiment is informal, the result show that the Tomita algorithm is about 5 to 10 times faster than Earley's algorithm, due to the pre-compilation of the grammar into the LR table.
+    The Earley/Tomita ratio seems to increase as the size of grammar grows as shown in Figure 5.3.
+    Figure 5.4 shows the relationship between the size of a produced sharedpacked forest representation (in terms of the number of nodes) and the ambiguity of its input sentence (the number of possible parses).
+    The sample sentences are created from the following schema. noun verb det noun (prep det noun)n-1 An example sentence with this structure is I saw a man in the park on the hill with a telescope.
+    The result shows that all possible parses can be represented in almost 0(log n) space, where n is the number of po

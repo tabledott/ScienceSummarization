@@ -1,0 +1,7 @@
+we assume that it is the responsibility of the oracle to ensure that the preconditions of any predicted transition are satisfied, we can postpone the discussion of this problem until the end of Section 6.1.
+    Theorem 9 The worst-case space complexity of the non-projective, list-based algorithm is O(n), where n is the length of the input sentence.
+    Proof 9 Given the deterministic parsing algorithm, only one configuration c = (&#955;1, &#955;2, &#946;,A) needs to be stored at any given time.
+    Assuming that a single node can be stored in some constant space, the space needed to store &#955;1, &#955;2, and &#946;, respectively, is bounded by the number of nodes.
+    The same holds for A, given that a single arc can be stored in constant space, because the number of arcs in a dependency forest is bounded by the number of nodes.
+    Hence, the worst-case space complexity is O(n).
+    &#9632; The transition set T for the projective, list-based parser is defined in Figure 9 and contains four types of transiti

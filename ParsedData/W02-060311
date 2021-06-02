@@ -1,0 +1,11 @@
+it of the word into two parts is evaluated.
+    The algorithm selects the split (or no split) that yields the minimum total cost.
+    In case of no split, the processing of the word is finished and the next word is read from input.
+    Otherwise, the search for a split is performed recursively on the two segments.
+    The order of splits can be represented as a binary tree for each word, where the leafs represent the morphs making up the word, and the tree structure describes the ordering of the splits.
+    During model search, an overall hierarchical data structure is used for keeping track of the current segmentation of every word type encountered so far.
+    Let us assume that we have seen seven instances of linja-auton (Engl.
+    &#8217;of [the] bus&#8217;) and two instances of autonkuljettajallakaan (Engl.
+    &#8217;not even by/at/with [the] car driver&#8217;).
+    Figure 1 then shows a possible structure used for representing the segmentations of the data.
+    Each chunk is provided with an occurrence 

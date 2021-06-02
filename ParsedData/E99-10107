@@ -1,0 +1,9 @@
+a single word from one class to another.
+    The algorithm to determine bilingual classes is depicted in Figure 1.
+    If only one word w is moved between the partitions C and C' the change LP(C,n9)&#8212; LP(C',n9) can be computed efficiently looking only at classes C for which ng (w, C) &gt; 0 or ng(C,w) &gt;0.
+    We define Mc, to be the average number of seen predecessor and successor word classes.
+    With the notation I for the number of iterations needed for convergence, B for the number of word bigrams, M for the number of classes and V for the vocabulary size the computational complexity of this algorithm is roughly I (B &#8226; log2 (B IV) +V M &#8226; Mo).
+    A detailed analysis of the complexity can be found in (Martin et al., 1998).
+    The algorithm described above provides only a local optimum.
+    The quality of the resulting local optima can be improved if we accept a short-term degradation of the optimization criterion during the optimization process.
+    We do this in our implementation by

@@ -1,0 +1,7 @@
+; well below that required for a working QA system.
+    The novel idea in Clark, Steedman, and Curran was to create new training data from questions, but to annotate at the lexical category level only, rather than annotate with full derivations.
+    The idea is that, because lexical categories contain so much syntactic information, adapting just the supertagger to the new domain, by training on the new question data, may be enough to obtain good parsing performance.
+    This technique assumes that annotation at the lexical category level can be done relatively quickly, allowing rapid porting of the supertagger.
+    We were able to annotate approximately 1, 000 questions in around a week, which led to an accurate supertagger and, combined with the Penn Treebank parsing model, an accurate parser of questions.
+    There are ways in which this porting technique can be extended.
+    For example, we have developed a method for training the dependency model which requires lexical category data only (Clark and Curran

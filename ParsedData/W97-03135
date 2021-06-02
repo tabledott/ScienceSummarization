@@ -1,0 +1,11 @@
+92).
+    We experimented with larger window sizes and found that the narrow windows more consistently included words related to the target category.
+    Note that this is not exactly a conditional probability because a single word occurrence can belong to more than one context window.
+    For example, consider the sentence: I bought an AK-47 gun and an M-16 rifle.
+    The word M-16 would be in the context windows for both gun and rifle even though there was just one occurrence of it in the sentence.
+    Consequently, the category score for a word can be greater than 1.
+    4.
+    Next, we remove stopwords, numbers, and any words with a corpus frequency &lt; 5.
+    We used a stopword list containing about 30 general nouns, mostly pronouns (e.g., I, he, she, they) and determiners (e.g., this, that, those).
+    The stopwords and numbers are not specific to any category and are common across many domains, so we felt it was safe to remove them.
+    The remaining nouns are sorted by category score and ranked so tha

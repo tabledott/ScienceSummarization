@@ -1,0 +1,8 @@
+systems are processed matters, the decoder produces a separate hypothesis for each order.
+    Each iteration expands the previous set of partial hypotheses, resulting in a large space of complete synthetic hypotheses.
+    Since this space can grow exponentially, pruning based on scoring of the partial hypotheses is applied when necessary.
+    A major component in the scoring of hypothesis translations is a confidence score that is assigned to each of the original translations, which reflects the translation adequacy of the system that produced it.
+    We associate a confidence score with each word in a synthetic translation based on the confidence of the system from which it originated.
+    If the word was contributed by several different original translations, we sum the confidences of the contributing systems.
+    This word confidence score is combined multiplicatively with a score assigned to the word by a trigram language model.
+    The score assigned to a complete hypothesis is its geometric average word

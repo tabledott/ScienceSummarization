@@ -1,0 +1,9 @@
+leprecision floating-point number, if vastly less than in Table 3.
+  
+  
+    In this section, we generalize beyond the above case where p, r, s are R-valued.
+    In general, p may be an element of some other semiring, and r and s may be vectors or other algebraic objects.
+    When r and s are vectors, especially highdimensional vectors, the basic &#8220;inside algorithm&#8221; of Figure 2 will be slow.
+    We will show how to speed it up with an &#8220;inside-outside algorithm.&#8221; In general, for P, R, 5, T, we can define the first-order expectation semiring EP,R = (P &#215; R, &#8853;, &#8855;, 0,1) and the second-order expectation semiring EP,R,S,T = (P &#215; R &#215; 5 &#215; T, &#8853;, &#8855;, 0, 1), using the definitions from Tables 1&#8211;2.
+    But do those definitions remain meaningful, and do they continue to satisfy the semiring axioms?
+    Indeed they do when P = R, R = Rn, 5 = Rm, T = Rn&#215;m, with rs defined as the outer product rsT (a matrix) where sT is the transpose of s. In this way

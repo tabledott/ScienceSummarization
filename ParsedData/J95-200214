@@ -1,0 +1,10 @@
+a trace of Earley parser operation on a sample sentence.
+    Earley's parser can deal with any type of context-free rule format, even with null or &amp;productions, i.e., those that replace a nonterminal with the empty string.
+    Such productions do, however, require special attention, and make the algorithm and its description more complicated than otherwise necessary.
+    In the following sections we assume that no null productions have to be dealt with, and then summarize the necessary changes in Section 4.7.
+    One might choose to simply preprocess the grammar to eliminate null productions, a process which is also described.
+  
+  
+    A stochastic context-free grammar (SCFG) extends the standard context-free formalism by adding probabilities to each production: [p], where the rule probability p is usually written as P(X --4 A).
+    This notation to some extent hides the fact that p is a conditional probability, of production X -4 A being chosen, given that X is up for expansion.
+    The probabilities of

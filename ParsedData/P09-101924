@@ -1,0 +1,12 @@
+f MBR translation is close to that of the MAP translation.
+    In the NIST systems, MERT yields small improvements on top of MBR with default parameters.
+    This is the case for Arabic-English Hiero/SAMT.
+    In all other cases, we see no change or even a slight degradation due to MERT.
+    We hypothesize that the default MBR parameters (Tromble et al., 2008) are well tuned.
+    Therefore there is little gain by additional tuning using MERT.
+    In the multi-language systems, the results show a different trend.
+    We observe that MBR with default parameters results in gains on 18 pairs, no differences on 9 pairs, and losses on 12 pairs.
+    When we optimize MBR features with MERT, the number of language pairs with gains/no changes/drops is 22/5/12.
+    Thus, MERT has a bigger impact here than in the NIST systems.
+    We hypothesize that the default MBR parameters are sub-optimal for some language pairs and that MERT helps to find better parameter settings.
+    In particular, MERT avoids the need for manuall

@@ -1,0 +1,6 @@
+e used to create a weakly supervised approach to pattern acquisition following the general outline provided in Section 2.
+    Each candidate pattern is compared against the set of currently accepted patterns using the measure described in Section 3.1.
+    We experimented with several techniques for ranking candidate patterns based on these scores, including using the best and average score, and found that the best results were obtained when each candidate pattern was ranked according to its score when compared against the centroid vector of the set of currently accepted patterns.
+    We also experimented with several schemes for deciding which of the scored patterns to accept (a full description would be too long for this paper) resulting in a scheme where the four highest scoring patterns whose score is within 0.95 of the best pattern are accepted.
+    Our algorithm disregards any patterns whose corpus occurrences are below a set threshold, &#945;, since these may be due to noise.
+    In addition, a second t

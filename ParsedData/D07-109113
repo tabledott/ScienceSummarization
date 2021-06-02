@@ -1,0 +1,9 @@
+am) is straight-forward.
+			5.2 Combination of Components.
+			As in phrase-based models, factored translation models can be seen as the combination of several components (language model, reordering model,translation steps, generation steps).
+			These compo nents define one or more feature functions that are combined in a log-linear model: p(e|f) = 1 Z exp n?
+			i=1 ?ihi(e, f) (1) Z is a normalization constant that is ignored in practice.
+			To compute the probability of a translation e given an input sentence f, we have to evaluate eachfeature function hi.
+			For instance, the feature func tion for a bigram language model component is (m is the number of words ei in the sentence e): hLM(e, f) = pLM(e) = p(e1) p(e2|e1)..p(em|em?1) (2)Let us now consider the feature functions introduced by the translation and generation steps of fac tored translation models.
+			The translation of the input sentence f into the output sentence e breaks down to a set of phrase translations {(f?j , e?j)}.
+			For a translation step 

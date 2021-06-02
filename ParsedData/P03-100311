@@ -1,0 +1,10 @@
+er.
+    (ii) In order to have more variation of sentences containing the answer, we have automatically extended the first data set using the Web.
+    For every TREC9-10 question/answer pair, we used our Web-based IR to retrieve sentences that overlap with the question terms and contain the answer.
+    We call this data set TREC9-10Web.
+    (iii) The third data set consists of 2381 question/answer pairs collected from http://www.quiz-zone.co.uk.
+    We use the same method to automatically enhance this set by retrieving from the web sentences containing answers to the questions.
+    We call this data set Quiz-Zone.
+    Table 1 shows the size of the three training corpora: To train our QA noisy-channel model, we apply the algorithm described in Section 3.1 to generate training cases for all QA pairs in the three corpora.
+    To help our model learn that it is desirable to copy answer words into the question, we add to each corpus a list of identical dictionary word pairs wiwi.
+    For each corpus, we use GIZA (A

@@ -1,0 +1,8 @@
+h graph edge is labeled with the syntactic relation between the words it connects.
+    TE then substitutes each slot anchor (see section 3.1) in the parse graphs with its corresponding slot variable.
+    Therefore, &#8220;Aspirin stops heart attack?&#8221; will be transformed into &#8216;X stop Y&#8217;.
+    This way all the anchors for a certain slot are unified under the same variable name in all sentences.
+    The parsed sentences related to all of the anchor sets are subsequently merged into a single set of parse graphs S = {P1, P2, ... , Pn} (see P1 and P2 in Figure 2).
+    The core of TE is a General Structure Learning algorithm (GSL) that is applied to the set of parse graphs S resulting from the previous step.
+    GSL extracts single-rooted syntactic DAGs, which are named spanning templates since they must span at least over Na slot variables, and should also appear in at least Nr sentences from S (In our experiments we set Na=2 and Nr=2).
+    GSL learns maximal most general templates: they are spanni

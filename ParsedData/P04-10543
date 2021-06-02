@@ -1,0 +1,9 @@
+ng in many machine learning algorithms.
+    To address this problem, we apply SVMs to the task of relation extraction.
+    SVMs find a boundary between instances of different classes such that the distance between the boundary and the nearest instances is maximized.
+    This characteristic, in addition to empirical validation, indicates that SVMs are particularly robust to over-fitting.
+    Here we are interested in detecting and classifying instances of relations, where a relation is some meaningful connection between two entities (Table 2).
+    We represent each relation instance as an augmented dependency tree.
+    A dependency tree represents the grammatical dependencies in a sentence; we augment this tree with features for each node (e.g. part of speech) We choose this representation because we hypothesize that instances containing similar relations will share similar substructures in their dependency trees.
+    The task of the kernel function is to find these similarities.
+    We define a tree kernel ov

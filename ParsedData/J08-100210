@@ -1,0 +1,7 @@
+ive Scaling (IIS) (Della Pietra, Della Pietra, and Lafferty 1997), and the Limitedmemory Broyden-Fletcher-Goldfarb-Shanno method (L-BFGS) (Nocedal and Wright 1999), have been proposed for parameter estimation.
+    Although the algorithm proposed in the present article is applicable to all of the above algorithms, we used L-BFGS for experiments.
+    However, a computational problem arises in these parameter estimation algorithms.
+    The size of Y(x) (i.e., the number of parse trees for a sentence) is generally very large.
+    This is because local ambiguities in parse trees potentially cause exponential growth in the number of structures assigned to sub-sequences of words, resulting in billions of structures for whole sentences.
+    For example, when we apply rewriting rule S &#8594; NP VP, and the left NP and the right VP, respectively, have n and m ambiguous subtrees, the result of the rule application generates n &#215; m trees.
+    This is problematic because the complexity of parameter estimation is prop

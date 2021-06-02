@@ -1,0 +1,9 @@
+  If two cities have hotels with the same owner x, then we build a third xowned hotel on the border of the two cities.
+    More generally, ifcities all have hotels owned by x, we build new hotels (one for each non-empty, non-singleton subset of the cities) on various city borders and intersections.
+    Finally, we add an extra city representing the sentence boundary.
+    We define a tour of cities as a sequence and hotels (starting at the sentence boundary hotel) that visits each city exactly once before returning to the start.
+    If a hotel sits on the border between two cities, then staying at that hotel counts as visiting both cities.
+    We can view each tour of cities as corresponding to a potential decodinge,a.
+    The owners of the hotels on the tour give us e, while the hotel locations yield a.
+    The next task is to establish real-valued (asymmetric) distances between pairs of hotels, such that the length of any tour is exactly the negative of log(P(e)P(a,fe)).
+    Because log is monotonic, the sho

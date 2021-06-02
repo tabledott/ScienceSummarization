@@ -1,0 +1,5 @@
+her with the weights w, and replacing the real multiplication operator &#215; in line 9 with one that not only multiplies weights but also builds partial translations out of subtranslations.
+    We now turn to the problem of incorporating the language model (LM), describing three methods: first, using the &#8722;LM parser to obtain a k-best list of translations and rescoring it with the LM; second, incorporating the LM directly into the grammar in a construction reminiscent of the intersection of a CFG with a finite-state automaton; third, a hybrid method which we call cube pruning.
+    5.3.1 Rescoring.
+    One easy way to incorporate the LM into the model would be to decode first using the &#8722;LM parser to produce a k-best list of translations, then to rescore the k-best list using the LM.
+    This method has the potential to be very fast: linear in k. However, because the number of possible translations is exponential in n, we may have to set k extremely high in order to find the true best translation (t

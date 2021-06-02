@@ -1,0 +1,9 @@
+es that broadcast the same message to their neighbors.
+    It can be viewed as a simulation of an agent-based social network; for an overview of this field, see (Amblard 2002).
+    The algorithm is outlined in figure 1: initialize: forall vi in V: class(vi)=i; while changes: forall v in V, randomized order: class(v)=highest ranked class in neighborhood of v; Intuitively, the algorithm works as follows in a bottom-up fashion: First, all nodes get different classes.
+    Then the nodes are processed for a small number of iterations and inherit the strongest class in the local neighborhood.
+    This is the class whose sum of edge weights to the current node is maximal.
+    In case of multiple strongest classes, one is chosen randomly.
+    Regions of the same class stabilize during the iteration and grow until they reach the border of a stable region of another class.
+    Note that classes are updated immediately: a node can obtain classes from the neighborhood that were introduced there in the same iteration.
+   

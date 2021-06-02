@@ -1,0 +1,7 @@
+t which they are created; hence all features can be defined in terms of the individual entries which make up the derivations.
+    Calculating E&#923; fi requires summing over all derivations &#969; which include fi for each sentence S in the training data.
+    The key to performing this sum efficiently is to write the sum in terms of inside and outside scores for each conjunctive node.
+    The inside and outside scores can be defined recursively.
+    If the inside score for a conjunctive node c is denoted &#966;c, and the outside score denoted &#968;c, then the expected value of fi can be written as follows: where CS is the set of conjunctive nodes in the packed chart for sentence S. The inside score for a conjunctive node, &#966;c, is defined in terms of the inside scores of c&#8217;s disjunctive node daughters: where &#955; &#183; f (c) = ~i &#955;ifi(c).
+    If the conjunctive node is a leaf node, the inside score is just the exponentiation of the sum of the feature weights on that node.
+    The outside sc

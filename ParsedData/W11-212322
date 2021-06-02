@@ -1,0 +1,9 @@
+ereby placing reads for a single query in the same or adjacent pages.
+    We do not experiment with models larger than physical memory in this paper because TPT is unreleased, factors such as disk speed are hard to replicate, and in such situations we recommend switching to a more compact representation, such as RandLM.
+    In all of our experiments, the binary file (whether mapped or, in the case of most other packages, interpreted) is loaded into the disk cache in advance so that lazy mapping will never fault to disk.
+    This is similar to using the Linux MAP POPULATE flag that is our default loading mechanism.
+  
+  
+    This section measures performance on shared tasks in order of increasing complexity: sparse lookups, evaluating perplexity of a large file, and translation with Moses.
+    Our test machine has two Intel Xeon E5410 processors totaling eight cores, 32 GB RAM, and four Seagate Barracuda disks in software RAID 0 running Linux 2.6.18.
+    Sparse lookup is a key subproblem of language model quer

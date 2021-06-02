@@ -1,0 +1,11 @@
+terpolation).
+    Intuitively, this corresponds to concatenating our training sets, possibly with multiple copies of each to account for weighting.
+    Some notes regarding evaluations: All numbers reported are f-scores2.
+    In some cases, we evaluate only the parser&#8217;s performance to isolate it from the reranker.
+    In other cases, we evaluate the reranking parser as a whole.
+    In these cases, we will use the term reranking parser.
+    Table 1 shows the difference in parser&#8217;s (not reranker&#8217;s) performance when trained on parser-best reranker-best sentences from NANC to WSJ training data.
+    While the reranker was used to produce the reranker-best sentences, we performed this evaluation using only the first-stage parser to parse all sentences from section 22.
+    We did not train a model where we added 2,000k parser-best sentences. output versus reranker-best output.
+    Adding parserbest sentences recreates previous self-training experiments and confirms that it is not beneficial.
+    Ho

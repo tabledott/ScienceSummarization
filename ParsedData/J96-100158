@@ -1,0 +1,8 @@
+officielles.
+    See Figure 2 on page 17 for more details.
+    Considering the size of the corpora that must be handled by Champollion, special care has been taken to minimize the number of disk accesses made during processing.
+    We have experimented on up to two full years of the Hansards corpus, amounting to some 640,000 sentences in each language or about 220 megabytes of uncompressed text.
+    With corpora of this magnitude, Champollion takes between one and two minutes to translate a collocation, thus enabling its practical use as a bilingual lexicography tool.
+    To achieve efficient processing of the corpus database, Champollion is implemented in two phases: the preparation phase and the actual translation phase.
+    The preparation phase reads in the database corpus and indexes it for fast future access using a commercial B-tree package (Informix 1990).
+    Each word in the original corpus is associated with a set of pointers to all the sentences containing it and to the positions of the word in ea

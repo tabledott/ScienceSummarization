@@ -1,0 +1,13 @@
+ source language.
+    During the search, we store backpointers to the maximizing arguments.
+    After performing the search, we can generate the optimum translation.
+    The resulting algorithm has a worst-case complexity of O(J &#183; M &#183; Ve &#183; E).
+    Here, Ve denotes the vocabulary size of the target language and E denotes the maximum number of phrase translation candidates for a source language phrase.
+    Using efficient data structures and taking into account that not all possible target language phrases can occur in translating a specific source language sentence, we can perform a very efficient search.
+    This monotone algorithm is especially useful for language pairs that have a similar word order, e.g.
+    SpanishEnglish or French-English.
+  
+  
+    In the following sections, we will present results on three tasks: Verbmobil, Xerox and Canadian Hansards.
+    Therefore, we will show the corpus statistics for each of these tasks in this section.
+    The training corpus (Train) of each task i

@@ -1,0 +1,8 @@
+n be computed in time proportional to the size of the compact forest.
+    The parser then removes all constituents nij,k whose probability falls below some preset threshold.
+    In the version of this parser available on the web, this threshold is on the order of 10&#8722;4.
+    The unpruned edges are then exhaustively evaluated according to the fine-grained probabilistic model; in effect, each coarse-grained dynamic programming state is split into one or more fine-grained dynamic programming states.
+    As noted above, the fine-grained model conditions on information that is not available in the coarse-grained model.
+    This includes the lexical head of one&#8217;s parents, the part of speech of this head, the parent&#8217;s and grandparent&#8217;s category labels, etc.
+    The fine-grained states investigated by the parser are constrained to be refinements of the coarse-grained states, which drastically reduces the number of fine-grained states that need to be investigated.
+    It is certainly possible to 

@@ -1,0 +1,10 @@
+ followed the averaged perceptron approach of (Collins, 2002).
+    Our decision was based on three criteria.
+    First, the method performed nearly as well as the currently best global discriminative model (Sha and Pereira, 2003), as evaluated on one of the few tasks for which there are any published results (noun phrase chunking).
+    Second, convergence rates appeared favorable, which would facilitate multiple experiments.
+    Finally, and most important, the method appeared far simpler to implement than any of the alternatives. algorithm exactly as described by Collins.
+    However, we did not implement cross-validation to determine when to stop training.
+    Instead, we simply iterated for 5 epochs in all cases, regardless of the training set size or number of features used.
+    Furthermore, we did not implement features that occurred in no training instances, as was done in (Sha and Pereira, 2003).
+    We suspect that these simplifications may have cost several tenths of a point in performance.
+    A set

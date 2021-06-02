@@ -1,0 +1,8 @@
+dants of r in the MR parse are linked to any words.
+    Second is when there is a link from a word w, covered by the pattern for r, to a production r&#8242; outside the sub-parse rooted at r. Rule extraction is forbidden in this case because it would destroy the link between w and r&#8242;.
+    The first case arises when a component of an MR is not realized, e.g. assumed in context.
+    The second case arises when a predicate and its arguments are not realized close enough.
+    Figure 5 shows an example of this, where no rules can be extracted for the penalty-area predicate.
+    Both cases can be solved by merging nodes in the MR parse tree, combining several productions into one.
+    For example, since no rules can be extracted for penalty-area, it is combined with its parent to form REGION &#8594; (left (penalty-area TEAM)), for which the pattern TEAM left penalty area is extracted.
+    The above algorithm is effective only when words linked to an MR predicate and its arguments stay close to each other, a p

@@ -1,0 +1,7 @@
+ion and 0 otherwise.
+    These features enable the learner to learn how to distinguish good and bad partitions based on the systems that generated them, and are particularly useful when some coreference systems perform consistently better than the others.
+    Now, we need to compute the &#8220;class value&#8221; for each training instance, which is a positive integer denoting the rank of the corresponding partition among the 54 candidates generated for the training document under consideration.
+    Recall from the introduction that we want to train our ranking model so that higher scored partitions according to the target coreference scoring program are ranked higher.
+    To this end, we compute the rank of each candidate partition as follows.
+    First, we apply the target scoring program to score each candidate partition against the correct partition derived from the training text.
+    We then assign rank to the -th lowest scored partition.4 Effectively, the learning algorithm learns what a good partition i

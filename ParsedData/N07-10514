@@ -1,0 +1,14 @@
+Johnson, 2005).
+  
+  
+    We consider PCFG grammars which are derived from a raw treebank as in Petrov et al. (2006): A simple X-bar grammar is created by binarizing the treebank trees.
+    We refer to this grammar as G0.
+    From this starting point, we iteratively refine the grammar in stages, as illustrated in Fig.
+    1.
+    In each stage, all symbols are split in two, for example DT might become DT-1 and DT-2.
+    The refined grammar is estimated using a variant of the forward-backward algorithm (Matsuzaki et al., 2005).
+    After a splitting stage, many splits are rolled back based on (an approximation to) their likelihood gain.
+    This procedure gives an ontogeny of grammars Gi, where G = Gn is the final grammar.
+    Empirically, the gains on the English Penn treebank level off after 6 rounds.
+    In Petrov et al. (2006), some simple smoothing is also shown to be effective.
+    It is interesting to note that these grammars capture many of the &#8220;structural zeros&#8221; described by Mohri and Roark

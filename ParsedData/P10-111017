@@ -1,0 +1,13 @@
+e average model score per sentence, higher the better) and speed (average parsing time per sentence), where DP with a beam width of b=16 achieves the same search quality with non-DP at b=64, while being 5 times faster.
+    Fig.
+    5b shows a similar comparison for dependency accuracy.
+    We also test with an edge-factored model (Sec.
+    3.5) using feature templates (1)-(3) in Tab.
+    1, which is a subset of those in McDonald et al. (2005b).
+    As expected, this difference becomes more pronounced (8 times faster in Fig.
+    5c), since the less expressive feature set makes more states &#8220;equivalent&#8221; and mergeable in DP.
+    Fig.
+    5d shows the (almost linear) correlation between dependency accuracy and search quality, confirming that better search yields better parsing.
+    DP achieves better search quality because it expores an exponentially large search space rather than only b trees allowed by the beam (see Fig.
+    6a).
+    As a by-product, DP can output a forest encoding these exponentiall

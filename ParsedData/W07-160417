@@ -1,0 +1,10 @@
+ction in recall (to 0.16).
+    To address the problem of low recall, we have targeted another type of ESL preposition error: extraneous prepositions.
+  
+  
+    Our strategy of training the ME classifier on grammatical, edited text precluded detection of extraneous prepositions as these did not appear in the training corpus.
+    Of the 500-600 errors in the ESL test set, 142 were errors of this type.
+    To identify extraneous preposition errors we devised two rule-based filters which were based on analysis of the development set.
+    Both used POS tags and chunking information.
+    Plural Quantifier Constructions This filter addresses the second most common extraneous preposition error where the writer has added a preposition in the middle of a plural quantifier construction, for example: some ofpeople.
+    This filter works by checking if the target word is preceded by a quantifier (such as &#8220;some&#8221;, &#8220;few&#8221;, or &#8220;three&#8221;), and if the head noun of the quantifier phrase is plural

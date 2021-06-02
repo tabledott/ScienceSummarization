@@ -1,0 +1,7 @@
+, we rank the candidates based on a trigram language model trained over 1.5GB of clean Twitter data, i.e. tweets which consist of all IV words: despite the prevalence of OOV words in Twitter, the sheer volume of the data means that it is relatively easy to collect large amounts of all-IV messages.
+    To train the language model, we used SRILM (Stolcke, 2002) with the -&lt;unk&gt; option.
+    If we truncate the ranking to the top 10% of candidates, the recall drops back to 84% with a 90% reduction in candidates.
+    The next step is to detect whether a given OOV word in context is actually an ill-formed word or not, relative to its confusion set.
+    To the best of our knowledge, we are the first to target the task of ill-formed word detection in the context of short text messages, although related work exists for text with lower relative occurrences of OOV words (Izumi et al., 2003; Sun et al., 2007).
+    Due to the noisiness of the data, it is impractical to use full-blown syntactic or semantic features.
+  

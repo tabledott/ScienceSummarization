@@ -1,0 +1,11 @@
+rch without search errors.
+    The search algorithm should not impose any principal limitations.
+    We also expect that the search algorithm be able to scale up to very long sentences with an acceptable computing time.
+    To meet these aims, it is necessary to have a mechanism that restricts the search effort.
+    We accomplish such a restriction by searching in a breadth-first manner with pruning: beam search.
+    In pruning, we constrain the set of considered translation candidates (the &#8220;beam&#8221;) only to the promising ones.
+    We compare in beam search those hypotheses that cover different parts of the input sentence.
+    This makes the comparison of the probabilities problematic.
+    Therefore, we integrate an admissible estimation of the remaining probabilities to arrive at a complete translation (Section 5.6) (Garcia-Varea, Casacuberta, and Ney 1998; Garcia-Varea et al. 2001), as does the original IBM stack search decoder (Berger et al.
+    1994).
+    All these simplifications ultimately mak

@@ -1,0 +1,10 @@
+ted, and so we investigated the addition of the current word feature for all words, including the rare ones.
+    This resulted in a minor improvement, and gave the best performance on the development data: 96.83%.
+    Table 7 shows the final performance on the test set, using the best configuration on the development data (which we call c&amp;c), compared with MXPOST.
+    The improvement is 0.22% overall (a reduction in error rate of 7.5%) and 1.58% for unknown words (a reduction in error rate of 9.7%).
+    The obvious cost associated with retaining all the features is the significant increase in model size, which slows down both the training and tagging and requires more memory.
+    Table 8 shows the difference in the number of contextual predicates and features between the original and final taggers.
+  
+  
+    To ensure the robustness of our results, we performed 10-fold cross-validation using the whole of the WSJ Penn Treebank.
+    The 24 sections were split into 10 equal components, with 9 used for traini

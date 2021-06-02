@@ -1,0 +1,7 @@
+cit form: where &#915;d(X) = udr=0 Pr(X).
+    The classification algorithm given by (7) will be referred to as PKE.
+    The complexity of PKE is O(|&#915;d(X)|) = O(|X|d), independent on the number of support examples |SV |.
+    To apply the PKE, we first calculate |&#915;d(F) |degree of vectors This calculation is trivial only when we use a Quadratic Kernel, since we just project the original feature space F into F x F space, which is small enough to be calculated by a naive exhaustive method.
+    However, if we, for instance, use a polynomial kernel of degree 3 or higher, this calculation becomes not trivial, since the size of feature space exponentially increases.
+    Here we take the following strategy: Definition 2 w': An approximation of w An approximation of w is given by w' = (w'(s1), w'(s2), ... , w'(s|&#915;d(F)|)), where w'(s) is set to 0 if w(s) is trivially close to 0.
+    (i.e., &#963;neg &lt; w(s) &lt; &#963;pos (&#963;neg &lt; 0, &#963;pos &gt; 0), where &#963;pos and &#963;neg are predefined 

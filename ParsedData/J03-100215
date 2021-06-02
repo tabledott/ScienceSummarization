@@ -1,0 +1,8 @@
+or obtaining word alignments use a function of the similarity between the types of the two languages (Smadja, McKeown, and Hatzivassiloglou 1996; Ker and Chang 1997; Melamed 2000).
+    Frequently, variations of the Dice coefficient (Dice 1945) are used as this similarity function.
+    For each sentence pair, a matrix including the association scores between every word at every position is then obtained: C(e,f) denotes the co-occurrence count of e and f in the parallel training corpus.
+    C(e) and C(f) denote the count of e in the target sentences and the count off in the source sentences, respectively.
+    From this association score matrix, the word alignment is then obtained by applying suitable heuristics.
+    One method is to choose as alignment aj = i for position j the word with the largest association score: A refinement of this method is the competitive linking algorithm (Melamed 2000).
+    In a first step, the highest-ranking word position (i, j) is aligned.
+    Then, the corresponding row and colum

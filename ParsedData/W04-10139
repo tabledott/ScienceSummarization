@@ -1,0 +1,9 @@
+GE-L, S2 has a score of 3/4 = 0.75 and S3 has a score of 2/4 = 0.5, with &#223; = 1.
+    Therefore S2 is better than S3 according to ROUGE-L.
+    This example also illustrated that ROUGE-L can work reliably at sentence level.
+    However, LCS suffers one disadvantage that it only counts the main in-sequence words; therefore, other alternative LCSes and shorter sequences are not reflected in the final score.
+    For example, given the following candidate sentence: S4. the gunman police killed Using S1 as its reference, LCS counts either &#8220;the gunman&#8221; or &#8220;police killed&#8221;, but not both; therefore, S4 has the same ROUGE-L score as S3.
+    ROUGE-2 would prefer S4 than S3.
+    Previous section described how to compute sentence-level LCS-based F-measure score.
+    When applying to summary-level, we take the union LCS matches between a reference summary sentence, ri, and every candidate summary sentence, cj.
+    Given a reference summary of u sentences containing a total of m words and a candida

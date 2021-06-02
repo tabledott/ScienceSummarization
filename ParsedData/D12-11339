@@ -1,0 +1,7 @@
+d all features set to 0.0 (lines 1&#8211;4).
+    In the main loop (lines 5&#8211;13), a set of new hypotheses is derived and stored in the list TMP, which is finally pruned and assigned as the new value of BEAM.
+    The main loop terminates when all hypotheses in BEAM contain terminal configurations, and the dependency tree extracted from the top scoring hypothesis is returned (lines 14&#8211;16).
+    The set of new hypotheses is created in two nested loops (lines 7&#8211;12), where every hypothesis h in BEAM is updated using every permissible transition t for the configuration h.c.
+    The feature representation of the new hypothesis is obtained by adding the feature vector f(t, h.c) for the current configurationtransition pair to the feature vector of the old hypothesis (line 9).
+    Similarly, the score of the new hypothesis is the sum of the score f(t, h.c) &#183; w of the current configuration-transition pair and the score of the old hypothesis (line 10).
+    The feature representation/score of a complet

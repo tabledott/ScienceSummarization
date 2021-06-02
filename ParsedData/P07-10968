@@ -1,0 +1,7 @@
+es of the top hypotheses of the context states.
+    The score of an action h.A is computed through a linear function whose weight vector is w, as where f(h.A) is the feature vector of action h.A, which depends on h.SL and h.SR.
+    Algorithm: Algorithm 1 is the inference algorithm.
+    We are given the input sequence and two parameters, beam width B to determine the number of states maintained for each span, and weight vector w used to compute the score of an action.
+    We first initialize the set P of accepted spans with the empty set.
+    Then we initialize the queue Q of candidate spans with span [i, i] for each token wz, and for each t E T assigned to wz we set Therefore, for each span p, we have a top hypothesis p.S.T, whose score is the highest among all the hypotheses for span p. Hypotheses are started and grown by means of labeling actions.
+    For each hypothesis h associated with a span p we maintain its most recent labeling action h.A, involving some token within p, as well as the states h.SL and 

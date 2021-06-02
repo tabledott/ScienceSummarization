@@ -1,0 +1,9 @@
+problem.
+    While we will be given the candidate attachment sites during testing, the training procedure assumes no a priori information about potential attachment sites.
+    We generate training data from raw text by using a part-of-speech tagger, a simple chunker, an extraction heuristic, and a morphology database.
+    The order in which these tools are applied to raw text is shown in Table 1.
+    The tagger from (Ratnaparkhi, 1996) first annotates sentences of raw text with a sequence of partof-speech tags.
+    The chunker, implemented with two small regular expressions, then replaces simple noun phrases and quantifier phrases with their head words.
+    The extraction heuristic then finds head word tuples and their likely attachments from the tagged and chunked text.
+    The heuristic relies on the observed fact that in English and in languages with similar word order, the attachment site of a preposition is usually located only a few words to the left of the preposition.
+    Finally, numbers are replaced

@@ -1,0 +1,10 @@
+erminal verb node contains vocabulary entries that include settings for verb mode, and for person/number if the verb is finite.
+    The plural form for nouns can be handled through a [ph ] morph for the sake of efficiency.
+    This morph sets the value of number to plural, regardless of its prior setting.
+    It is the job of a parent node to unify that setting with the value delivered by the left siblings of the noun.
+    Some examples may help explain how the constraint mechanism works.
+    Consider, for example, the ill-formed phrase &amp;quot;each boats.&amp;quot; Suppose the grammar has the three rules, ([np] [da] [noun]), ([noun] [root-noun]), and ([noun] -4 [root-noun] [pl]).
+    The lexical item &amp;quot;each&amp;quot; sets the number to singular and passes this value to the [noun] node.
+    The [noun] node blocks transfer of number to its children.
+    &amp;quot;Boat&amp;quot; sets the number to singular, but the [pl] morph overrides this value, returning a plural value to the parent.
+    This plura

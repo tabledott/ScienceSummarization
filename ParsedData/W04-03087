@@ -1,0 +1,6 @@
+remaining) input tokens, and A is the (current) arc relation for the dependency graph.
+    (Since the nodes of the dependency graph are given by the input string, only the arc relation needs to be represented explicitly.)
+    Given an input string W, the parser is initialized to (nil, W, 0) and terminates when it reaches a configuration (5, nil, A) (for any list 5 and set of arcs A).
+    The input string W is accepted if the dependency graph D = (W, A) given at termination is well-formed; otherwise W is rejected.
+    In order to understand the constraints on incrementality in dependency parsing, we will begin by considering the most straightforward parsing strategy, i.e. left-to-right bottom-up parsing, which in this case is essentially equivalent to shift-reduce parsing with a context-free grammar in Chomsky normal form.
+    The parser is defined in the form of a transition system, represented in Figure 3 (where wi and wj are arbitrary word tokens): the two topmost tokens on the stack, wi and wj, by a right-

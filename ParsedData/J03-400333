@@ -1,0 +1,9 @@
+ model.
+    This section describes how punctuation is integrated into the generative models.
+    Our first step is to raise punctuation as high in the parse trees as possible.
+    Punctuation at the beginning or end of sentences is removed from the training/test data altogether.13 All punctuation items apart from those tagged as comma or colon (items such as quotation marks and periods, tagged &#8220; &#8221; or . ) are removed altogether.
+    These transformations mean that punctuation always appears between two nonterminals, as opposed to appearing at the end of a phrase.
+    (See Figure 10 for an example.)
+    A parse tree before and after punctuation transformations.
+    13 As one of the anonymous reviewers of this article pointed out, this choice of discarding the sentence-final punctuation may not be optimal, as the final punctuation mark may well carry useful information about the sentence structure.
+    Punctuation is then treated in a very similar way to coordination: Our intuition is that there is a

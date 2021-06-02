@@ -1,0 +1,14 @@
+dates.
+    In (Daum&#180;e III and Marcu, 2005), the search is resumed after some gold standard compatible hypotheses are inserted into a queue for future expansion, and the weights are updated correspondingly.
+    However, there is no guarantee that the updated weights assign a higher score to those inserted gold standard compatible hypotheses.
+    In our algorithm, the gold standard compatible hypotheses are used for weight update only.
+    As a result, after each sentence is processed, the weight vector can usually successfully predict the gold standard parse.
+    Therefore our learning algorithm is aggressive on weight update.
+    As far as this aspect is concerned, our algorithm is similar to the MIRA algorithm in (Crammer and Singer, 2003).
+    In MIRA, one always knows the correct hypothesis.
+    In our case, we do not know the correct order of operations.
+    So we use our form of weight update to implement aggressive learning.
+  
+  
+    We apply our guided learning algorithm to POS tagging.
+    We ca

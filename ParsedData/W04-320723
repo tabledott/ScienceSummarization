@@ -1,0 +1,8 @@
+an English head word&#8217;s maximal span.
+    This filter will eliminate constituents whose English correspondent is a head word with some (but not all) of its dependents.
+    Such partial English constituents are by-products of the parsing and do not correspond to the modeled syntax.
+    With good word alignments, the English parser can help disambiguate Korean phrase boundaries and overcome erroneous morphological analyses (Table 5).
+    Results without and with the second filter are shown in Table 7.
+    Because larger training datasets lead to larger PCFGs (with more rules), the grammar constant increases.
+    Our bilingual parser implementation is on the cusp of practicality (in terms of memory requirements); when the grammar constant increased, we were unable to parse longer sentences.
+    Therefore the results given for bilingual parsing are on reduced test sets, where a length filter was applied: sentences with |E |+ |F |&gt; T were removed, for varying values of T. While neither bilingual parser con

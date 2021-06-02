@@ -1,0 +1,7 @@
+igns to a target word outside of c, then the root of c is a frontier node.
+    The remaining interior nodes do not generate rules, but can play a secondary role in a translation system.1 The roots of null-aligned constituents are not frontier nodes, but can attach productively to multiple minimal rules.
+    Two transducer rules, t1 &#8212;* s1 and t2 &#8212;* s2, can be combined to form larger translation units by composing t1 and t2 at a shared frontier node and appropriately concatenating s1 and s2.
+    However, no technique has yet been shown to robustly extract smaller component rules from a large transducer rule.
+    Thus, for the purpose of maximizing the coverage of the extracted translation model, we prefer to extract many small, minimal rules and generate larger rules via composition.
+    Maximizing the number of frontier nodes supports this goal, while inducing many aligned interior nodes hinders it.
+    We now turn to the interaction between word alignments and the transducer extraction algorithm.

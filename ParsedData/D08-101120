@@ -1,0 +1,7 @@
+ constrained training condition of NIST MT08 evaluation.
+    These single systems are optimized with maximum-BLEU training on different subsets of the previous NIST MT test data.
+    The bilingual translation models used to compute the semantic similarity are from the worddependent HMMs proposed by He (2007), which are trained on two million parallel sentence-pairs selected from the training corpus allowed by the constrained training condition of MT08.
+    In the IHMM-based method, the smoothing factor for surface similarity model is set to &#961; = 3, the interpolation factor of the overall similarity model is set to &#945; = 0.3, and the controlling factor of the distance-based distortion parameters is set to K=2.
+    These settings are optimized on the dev set.
+    Individual system results and system combination results using both IHMM and TER alignment, on both the dev and test sets, are presented in Table 1.
+    The TER-based hypothesis alignment tool used in our experiments is the publicly available TE

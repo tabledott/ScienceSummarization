@@ -1,0 +1,9 @@
+iguous word to the most frequent sense in the training data.
+    Once the individual classifiers are trained they are evaluated using previously held-out test data.
+    The crucial step in building an ensemble is selecting the classifiers to include as members.
+    The approach here is to group the 81 Naive Bayesian classifiers into general categories representing the sizes of the windows of context.
+    There are three such ranges; narrow corresponds to windows 0, 1 and 2 words wide, medium to windows 3, 4, and 5 words wide, and wide to windows 10, 25, and 50 words wide.
+    There are nine possible range categories since there are separate left and right windows.
+    For example, Naive_Bayes(1,3) belongs to the range category (narrow, medium) since it is based on a one word window to the left and a three word window to the right.
+    The most accurate classifier in each of the nine range categories is selected for inclusion in the ensemble.
+    Each of the nine member classifiers votes for the most probable 

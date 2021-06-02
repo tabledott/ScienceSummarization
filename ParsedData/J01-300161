@@ -1,0 +1,7 @@
+system has processed N words and Pr(cs,) is the probability assigned to the correct sense of word i.
+    This evaluation metric may be useful for disambiguation systems that assign probabilities to each sense, such as those developed by Resnik and Yarowsky, since it provides more information than the exact match metric.
+    However, for systems which simply choose a single sense and do not measure confidence, it provides far less information.
+    When a WSD assigns only one sense to a word and that sense is incorrect, that word is scored as oo.
+    Consequently, the formula in (13) returns oo if there is at least one word in the test set for which the tagger assigns a zero probability to the correct sense.
+    For WSD systems which assign exactly one sense to each word, this metric returns 0 if all words are tagged correctly, and oo otherwise.
+    This metric is potentially very useful for the evaluation of WSD systems that return non-zero probabilities for each possible sense; however, it is not useful for t

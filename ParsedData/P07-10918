@@ -1,0 +1,8 @@
+wledge should enable the preprocessing module to determine how probable the children of N are reordered.3 For simplicity, let us first consider the case of binary nodes only.
+    Let N1 and N2, which yield phrases p1 and p2 respectively, be the child nodes of N. We want to determine the order of p1 and p2 with respect to their TL counterparts, T (p1) and T (p2).
+    The knowledge for making such a decision can be learned from a wordaligned parallel corpus.
+    There are two questions involved in obtaining training instances: For the first question, we adopt a similar method as in (Fox, 2002): given an SL phrase ps = s1 ... si ... sn and a word alignment matrix A, we can enumerate the set of TL words {ti : ticA(si)}, and then arrange the words in the order as they appear in the TL sentence.
+    Let first(t) be the first word in this sorted set and last(t) be the last word.
+    T(ps) is defined as the phrase first(t) ... last(t) in the TL sentence.
+    Note that T (ps) may contain words not in the set {ti}.
+   

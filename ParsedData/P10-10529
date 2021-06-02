@@ -1,0 +1,7 @@
+y performs feature selection, where &#961;1 controls the amount of regularization and the number of extracted features.
+    In the following, we will jointly use both penalty terms, yielding the socalled elastic net penalty (Zhou and Hastie, 2005) which corresponds to the objective function The use of both penalty terms makes it possible to control the number of non zero coefficients and to avoid the numerical problems that might occur in large dimensional parameter settings (see also (Chen, 2009)).
+    However, the introduction of a `1 penalty term makes the optimization of (6) more problematic, as the objective function is no longer differentiable in 0.
+    Various strategies have been proposed to handle this difficulty.
+    We will only consider here exact approaches and will not discuss heuristic strategies such as grafting (Perkins et al., 2003; Riezler and Vasserman, 2004).
+    To deal with `1 penalties, a simple idea is that of (Kazama and Tsujii, 2003), originally introduced for maxent models.
+    It 

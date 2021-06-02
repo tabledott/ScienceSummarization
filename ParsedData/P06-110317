@@ -1,0 +1,9 @@
+s of the algorithm.
+    The weak transliteration model selects the correct transliteration (italicized) as the 24th best transliteration in the first iteration.
+    Time sequence scoring function chooses it to be one of the training examples for the next round of training of the model.
+    By the eighth iteration, the model has improved to select it as a best transliteration.
+    Not all correct transliterations make it to the top of the candidates list (transliteration model by itself is never as accurate as the complete algorithm on Figure 3).
+    That is not required, however, as the model only needs to be good enough to place the correct transliteration anywhere in the candidate list.
+    Not surprisingly, some of the top transliteration candidates start sounding like the NE itself, as training progresses.
+    On Figure 5, candidates for forsyth on iteration 7 include fross and fossett.
+    Once the transliteration model was trained, we ran the algorithm to discover multi-word NEs, augmenting candidate se

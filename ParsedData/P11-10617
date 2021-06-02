@@ -1,0 +1,8 @@
+graph over trigram types, and edge weights based on distributional similarity, to improve a supervised conditional random field tagger.
+    We extend Subramanya et al.&#8217;s intuitions to our bilingual setup.
+    Because the information flow in our graph is asymmetric (from English to the foreign language), we use different types of vertices for each language.
+    The foreign language vertices (denoted by Vf) correspond to foreign trigram types, exactly as in Subramanya et al. (2010).
+    On the English side, however, the vertices (denoted by Ve) correspond to word types.
+    Because all English vertices are going to be labeled, we do not need to disambiguate them by embedding them in trigrams.
+    Furthermore, we do not connect the English vertices to each other, but only to foreign language vertices.4 The graph vertices are extracted from the different sides of a parallel corpus (De, Df) and an additional unlabeled monolingual foreign corpus Ff, which will be used later for training.
+    We use two differ

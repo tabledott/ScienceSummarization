@@ -1,0 +1,8 @@
+to the category returned are removed from consideration.
+    In practice, the filtering is carried out at the same time as the lexical lookup phase and the senses whose grammatical categories do not correspond to the tag assigned are never attached to the ambiguous word.
+    There is also an option of turning off filtering so that all senses are attached regardless of the part-of-speech tag.
+    If none of the dictionary senses for a given word agree with the part-of-speech tag then all are kept.
+    It could be reasonably argued that removing senses is a dangerous strategy since, if the part-of-speech tagger made an error, the correct sense could be removed from consideration.
+    However, the experiments described in Section 3.2 indicate that part-ofspeech information is unlikely to reject the correct sense and can be safely implemented as a filter.
+    Lesk (1986) proposed that WSD could be carried out using an overlap count of content words in dictionary definitions as a measure of semantic closeness.
+   

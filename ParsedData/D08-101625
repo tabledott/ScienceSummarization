@@ -1,0 +1,9 @@
+ion of local subfactors, which pass messages in the ordinary way.22 Roughly speaking,23 at each j &#8712; [1, n], we introduce a new variable Cij&#8212;a hidden state whose value is the position of i&#8217;s previous child, if any (so 0 &#8804; Cij &lt; j).
+    So the ternary subfactor on (Cij, Lij, Ci,j+1) has value 1 if Lij = false and Ci,j+1 = Ci,j; a sibling-bigram score (PAIRiCij,iCi,j+1) if Lij = true and Ci,j+1 = j; and 0 otherwise.
+    The sparsity of this factor, which is 0 almost everywhere, is what gives CHILDSEQi a total runtime of O(n2) rather than O(n3).
+    It is equivalent to forward-backward on an HMM with n observations (the Lij) and n states per observation (the Cj), with a deterministic (thus sparse) transition function.
+  
+  
+    BP computes local beliefs, e.g. the conditional probability that a link Lij is present.
+    But if we wish to output a single well-formed dependency tree, we need to find a single assignment to all the {Lij} that satisfies the TREE (or PTREE) constraint.
+    Our 

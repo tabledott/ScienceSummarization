@@ -1,0 +1,12 @@
+ and N(eT) is the frequency of eT in the development corpus.
+  
+  
+    We use a greedy search algorithm to search the alignment with highest probability in the space of all possible alignments.
+    A state in this space is a partial alignment.
+    A transition is defined as the addition of a single link to the current state.
+    Our start state is the empty alignment, where all words in e and f are assigned to null.
+    A terminal state is a state in which no more links can be added to increase the probability of the current alignment.
+    Our task is to find the terminal state with the highest probability.
+    We can compute gain, which is a heuristic function, instead of probability for efficiency.
+    A gain is defined as follows: exp[EMm= 1 &#955;mhm(a, e, f)] where l = (i, j) is a link added to a.
+    The greedy search algorithm for general loglinear models is formally described as follows: Input: e, f, eT, fT, and D Output: a The above search algorithm, however, is not efficient for our log-linear model

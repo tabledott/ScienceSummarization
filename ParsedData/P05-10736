@@ -1,0 +1,8 @@
+ are trained to classify each node in a parse tree as ARG or NONE, and the classification models are trained to label each argument node in the training set with its specific label.
+    In this way the training set for the classification models is smaller.
+    Note that we don&#8217;t do any hard pruning at the identification stage in testing and can find the exact labeling of the complete parse tree, which is the maximizer of Equation 1.
+    Thus we do not have accuracy loss as in the two-pass hard prune strategy described in (Pradhan et al., 2005).
+    In previous work, various machine learning methods have been used to learn local classifiers for role labeling.
+    Examples are linearly interpolated relative frequency models (Gildea and Jurafsky, 2002), SVMs (Pradhan et al., 2004), decision trees (Surdeanu et al., 2003), and log-linear models (Xue and Palmer, 2004).
+    In this work we use log-linear models for multi-class classification.
+    One advantage of log-linear models over SVMs for us is that they

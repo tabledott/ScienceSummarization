@@ -1,0 +1,13 @@
+d that correctly accounting for the future impact of salience changes to be particularly inefficient.
+    However, ignoring those terms entirely made negligible difference in final accuracy.9
+  
+  
+    We present our final experiments using the full model developed in section 3.
+    As in section 3, we use true mention boundaries and evaluate using the MUC F1 measure (Vilain et al., 1995).
+    All hyperparameters were tuned on the development set only.
+    The document concentration parameter &#945; was set by taking a constant proportion of the average number of mentions in a document across the corpus.
+    This number was chosen to minimize the squared error between the number of proposed entities and true entities in a document.
+    It was not tuned to maximize the F1 measure.
+    A coefficient of 0.4 was chosen.
+    The global concentration coefficient -y was chosen to be a constant proportion of &#945;M, where M is the number of documents in the corpus.
+    We found 0.15 to be a good value using the same

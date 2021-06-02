@@ -1,0 +1,8 @@
+
+			A sharding function determines which shard (chunk of data in the MapReduce framework) the pair is sent to.
+			This ensures that all pairs withthe same key are sent to the same shard.
+			The re duce function receives all pairs that share the same key and sums up the counts.
+			Simplified, the map, sharding and reduce functions do the following: Map(string key, string value) { // key=docid, ignored; value=document array words = Tokenize(value); hash_map&lt;string, int&gt; histo; for i = 1 ..
+			#words histo[words[i]]++; for iter in histo Emit(iter.first, iter.second); } int ShardForKey(string key, int nshards) { return Hash(key) % nshards; } Reduce(string key, iterator values) { // key=term; values=counts int sum = 0; for each v in values sum += ParseInt(v); Emit(AsString(sum)); }Note that the Reduce function emits only the aggregated value.
+			The output key is the same as the intermediate key and automatically written by MapReduce.
+			The computation of counts in the map func tion is a minor optimization 

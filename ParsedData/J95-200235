@@ -1,0 +1,9 @@
+rt as constructed during the parse of aaa with the grammar in (a).
+    The two columns to the right in (b) list the forward and inner probabilities, respectively, for each state.
+    In both a and columns, the &#8226; separates old factors from new ones (as per equations 11, 12 and 13).
+    Addition indicates multiple derivations of the same state.
+    Null productions X &#8212;&gt; E introduce some complications into the relatively straightforward parser operation described so far, some of which are due specifically to the probabilistic aspects of parsing.
+    This section summarizes the necessary modifications to process null productions correctly, using the previous description as a baseline.
+    Our treatment of null productions follows the (nonprobabilistic) formulation of Graham, Harrison, and Ruzzo (1980), rather than the original one in Earley (1970).
+    4.7.1 Computing 1-expansion probabilities.
+    The main problem with null productions is that they allow multiple prediction-completion cycles in be

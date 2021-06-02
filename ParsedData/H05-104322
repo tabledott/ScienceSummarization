@@ -1,0 +1,5 @@
+n computes the probability of each label for word w based on the labels of objects in w?s neighborhood N .Let Ak = {(wj , Lj)|wj ? N} , 0 &lt; k ? 3|N | rep resent one of the potential assignments of labels to the words in N . Let P (Ak)(m) denote the probability of thisparticular assignment at iteration m. The support for la bel L of word w at iteration m is : q(w,L)(m) = 3|N|X k=1 P (l(w) = L|Ak)(m) ? P (Ak)(m)We assume that the labels of w?s neighbors are inde pendent of each other and so the formula becomes: q(w,L)(m) = 3|N|X k=1 P (l(w) = L|Ak)(m)?
+			|N|Y j=1 P (l(wj) = Lj)(m) Every P (l(wj) = Lj)(m) term is the estimate for theprobability that l(wj) = Lj (which was computed at it eration m using the RL update equation).
+			The P (l(w) = L|Ak)(m) term quantifies the influence of a particular label assignment to w?s neighborhood over w?s label.
+			In the following, we describe how we estimate this term.
+			Neighborhood Features Each type of word relationship which constrains the assignment of SO labels t

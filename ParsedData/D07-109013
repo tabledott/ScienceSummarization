@@ -1,0 +1,8 @@
+tional steps (see below).Backoff operations are needed when the full n gram is not found.
+			If r(wi|wi?1i?n+1) is not found, then we will successively look for r(wi|wi?1i?n+2), r(wi|wi?1i?n+3), etc. The language model generation step shards n-grams on their last two words (with unigrams duplicated), so all backoff operations can be done within the same shard (note that the required n-grams all share the same last word wi).
+			5.4 Other Smoothing Methods.
+			State-of-the-art techniques like Kneser-Ney Smoothing or Katz Backoff require additional, more expensive steps.
+			At runtime, the client needs to additionally request up to 4 backoff factors for each 5-gram requested from the servers, thereby multiplying network traffic.
+			We are not aware of a method that always stores the history backoff factors on the same shard as the longer n-gram without duplicating a large fraction of the entries.
+			This means one needs to contact two shards per n-gram instead of just one for Stupid Backoff.
+			Training requires

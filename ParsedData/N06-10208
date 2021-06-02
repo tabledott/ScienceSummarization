@@ -1,0 +1,9 @@
+   NANC contains news articles from various news sources including the Wall Street Journal, though for this paper, we only use articles from the LA Times.
+  
+  
+    We use the reranking parser to produce 50-best parses of unlabeled news articles from NANC.
+    Next, we produce two sets of one-best lists from these 50best lists.
+    The parser-best and reranker-best lists represent the best parse for each sentence according to the parser and reranker, respectively.
+    Finally, we mix a portion of parser-best or rerankerbest lists with the standard Wall Street Journal training data (sections 2-21) to retrain a new parser (but not reranker1) model.
+    The Wall Street Journal training data is combined with the NANC data in the following way: The count of each parsing event is the (optionally weighted) sum of the counts of that event in Wall Street Journal and NANC.
+    Bacchiani et al. (2006) show that count merging is more effective than creating multiple models and calculating weights for each model (model in

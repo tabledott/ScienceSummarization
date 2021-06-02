@@ -1,0 +1,5 @@
+istributionally similar to w (above some threshold).
+    We would like our model to relate the tags of w to those of Sw. One approach to enforcing the distributional assumption in a sequence model is by supplementing the training objective (here, data likelihood) with a penalty term that encourages parameters for which each w&#8217;s posterior distribution over tags is compatible with it&#8217;s prototypes Sw. For example, we might maximize, where t|w is the model&#8217;s distribution of tags for word w. The disadvantage of a penalty-based approach is that it is difficult to construct the penalty term in a way which produces exactly the desired behavior.
+    Instead, we introduce distributional prototypes into the learning process as features in our log-linear model.
+    Concretely, for each prototype z, we introduce a predicate PROTO = z which becomes active at each w for which z E Sw (see figure 3).
+    One advantage of this approach is that it allows the strength of the distributional constraint to be cali

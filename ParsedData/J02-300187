@@ -1,0 +1,8 @@
+ the mechanism is similar to the beam search used to prune nonequivalent edges, but a lower threshold was used for equivalent edges (1e vs. 1 100).
+    Using these pruning parameters, an average of 14.9 parses per sentence were obtained.
+    After rescoring with frame element probabilities, 18% of the sentences were assigned a parse different from the original best parse.
+    Nevertheless, the impact on identification of frame elements was small; results are shown in Table 16.
+    The results show a slight, but not statistically significant, increase in recall of frame elements.
+    One possible reason that the improvement is not greater is the relatively small number of parses per sentence available for rescoring.
+    Unfortunately, the parsing algorithm used to generate n-best parses is inefficient, and generating large numbers of parses seems to be computationally intractable.
+    In theory, the complexity of n-best variations of the Viterbi chart-parsing algorithm is quadratic in n. One can simply expand 

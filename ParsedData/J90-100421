@@ -1,0 +1,9 @@
+y.
+    The top-down base case occurs when the nonchain rule has no nonterminal children; that is, it introduces lexical material only.
+    The bottom-up base case occurs when the pivot and root are trivially connected because they are one and the same node.
+    An interesting side issue arises when there are two right-hand-side elements that are semantically identical to the left-hand-side.
+    This provides some freedom in choosing the semantic head, although the choice is not without ramifications.
+    For instance, in some analyses of NP structure, a rule such as np/NP --&gt; det/NP, nbar/NP. is postulated.
+    In general, a chain rule is used bottom-up from its semantic head and top-down on the non-semantichead siblings.
+    Thus, if a non-semantic-head subconstituent has the same semantics as the left-hand-side, a recursive top-down generation with the same semantics will be invoked.
+    In theory, this can lead to nontermination, unless syntactic factors eliminate the recursion, as they would in the rul

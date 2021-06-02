@@ -1,0 +1,5 @@
+ with various ways of cleanly querying and manipulating the data and allows convenient access to the sense inventory and propbank frame files instead of having to interpret the raw .xml versions.
+    However, maintaining format consistency with earlier CoNLL tasks was deemed convenient for sites that already had tools configured to deal with that format.
+    Therefore, in order to distribute the data so that one could make the best of both worlds, we created a new file type called .conll which logically served as another layer in addition to the .parse, .prop, .name and .coref layers.
+    Each .conll file contained a merged representation of all the OntoNotes layers in the CoNLLstyle tabular format with one line per token, and with multiple columns for each token specifying the input annotation layers relevant to that token, with the final column specifying the target coreference layer.
+    Because OntoNotes is not authorized to distribute the underlying text, and many of the layers contain inline annotation,

@@ -1,0 +1,10 @@
+d) predict features that have good correlation to the target classes, such as words on text tagging/chunking tasks.
+    The second strategy is motivated by co-training.
+    We use two (or more) distinct feature maps:-P1 and 'P2.
+    First, we train a classifier F1 for the target task, using the feature map -P1 and the labeled data.
+    The auxiliary tasks are to predict the behavior of this classifier F1 (such as predicted labels) on the unlabeled data, by using the other feature map P2.
+    Note that unlike co-training, we only use the classifier as a means of creating auxiliary problems that meet the relevancy requirement, instead of using it to bootstrap labels.
+    Ex 3.2 Predict the top-k choices of the classifier.
+    Predict the combination of k (a few) classes to which F1 assigns the highest output (confidence) values.
+    For instance, predict whether F1 assigns the highest confidence values to CLASS1 and CLASS2 in this order.
+    By setting k = 1, the auxiliary task is simply to predict the label pr

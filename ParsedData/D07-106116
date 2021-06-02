@@ -1,0 +1,11 @@
+ to ??1.
+			We experi mented with a range of return probabilities and found that our results were relatively insensitive to this parameter.
+			Our convergence criteria was ? ?v(t?1) ? v(t) ? ?
+			1 &lt; 10?10, which, for our graph with a return probability of ? = .1,was met after about two dozen iterations.
+			This computation takes under two seconds on a modern desktop ma chine.
+			Note that because M is sparse, each iteration of theabove computation is linear in the total number of non zero entries in P , i.e. linear in the total number of edges.
+			Introducing an edge type that is dense would dramatically increase running time.
+			3.3 Model variants.
+			For this paper, we consider three model variants that dif fer based on which subset of the edge types are included 1The frequency-count derived edges are normalized by thelargest column sum.
+			This effectively preserves relative term fre quency information across the graph and causes some columns to sum to less than one.
+			We interpret this lost mass as a

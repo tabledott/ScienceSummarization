@@ -1,0 +1,10 @@
+ and candidate sentences, respectively.
+    We use N = 4 in our evaluations.
+    The PINC score computes the percentage of ngrams that appear in the candidate sentence but not in the source sentence.
+    This score is similar to the Jaccard distance, except that it excludes n-grams that only appear in the source sentence and not in the candidate sentence.
+    In other words, it rewards candidates for introducing new n-grams but not for omitting n-grams from the original sentence.
+    The results for each n are averaged arithmetically.
+    PINC evaluates single sentences instead of entire documents because we can reliably measure lexical dissimilarity at the sentence level.
+    Also notice that we do not put additional constraints on sentence length: while extremely short and extremely long sentences are likely to score high on PINC, they still must maintain semantic adequacy as measured by BLEU.
+    We use BLEU and PINC together as a 2dimensional scoring metric.
+    A good paraphrase, according to our evaluat

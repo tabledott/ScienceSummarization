@@ -1,0 +1,9 @@
+th the exception of the new definition for the scoring function.2 While this model shares information between the different ranking problems, it fails to explicitly model relations between the rank predictions.
+    In contrast, our algorithm uses an agreement model to learn such relations and inform joint predictions.
+  
+  
+    The goal of our algorithm is to find a rank assignment that is consistent with predictions of individual rankers and the agreement model.
+    To this end, we develop the Good Grief decoding procedure that minimizes the dissatisfaction (grief) of individual components with a joint prediction.
+    In this section, we formally define the grief of each component, and a mechanism for its minimization.
+    We then describe our method for joint training of individual rankers that takes into account the Good Grief decoding procedure.
+    In an m-aspect ranking problem, we are given a training sequence of instance-label pairs (x1, y1), ..., (xt, yt), .... Each instance xt is a feature vector in

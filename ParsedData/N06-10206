@@ -1,0 +1,8 @@
+tropy reranker, as described in (Charniak and Johnson, 2005).
+    The reranker takes the 50-best parses for each sentence produced by the first-stage 50best parser and selects the best parse from those 50 parses.
+    It does this using the reranking methodology described in Collins (2000), using a Maximum Entropy model with Gaussian regularization as described in Johnson et al. (1999).
+    Our reranker classifies each parse with respect to 1,333,519 features (most of which only occur on few parses).
+    The features consist of those described in (Charniak and Johnson, 2005), together with an additional 601,577 features.
+    These features consist of the partsof-speech, possibly together with the words, that surround (i.e., precede or follow) the left and right edges of each constituent.
+    The features actually used in the parser consist of all singletons and pairs of such features that have different values for at least one of the best and non-best parses of at least 5 sentences in the training data.
+    Th

@@ -1,0 +1,8 @@
+ many mistakes for both the original and compressed versions.
+    This makes alignment difficult and the channel probability estimates unreliable as a result.
+    On the other hand, the decision tree model does not rely on the trees to align and instead simply learns a tree-totree transformation model to compress sentences.
+    The primary problem with this model is that most of the model features encode properties related to including or dropping constituents from the tree with no encoding of bigram or trigram surface features to promote grammaticality.
+    As a result, the model will sometimes return very short and ungrammatical compressions.
+    Both models rely heavily on the output of a noisy parser to calculate probability estimates for the compression.
+    We argue in the next section that ideally, parse trees should be treated solely as a source of evidence when making compression decisions to be balanced with other evidence such as that provided by the words themselves.
+    Recently Turner and Charni

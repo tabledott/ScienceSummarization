@@ -1,0 +1,9 @@
+ted into English words by looking them up in the EDR Japanese-English bilingual dictionary,2 EDICT, and ENAMDICT,3 which have about 230,000, 100,000, and 180,000 entries, respectively.
+    We select two English words for each of the Japanese words using simple heuristic rules based on the frequencies of English words.
+    We use each of the English articles as a query and search for the Japanese article that is most similar to the query article.
+    The similarity between an English article and a (word-based English translation of) Japanese article is measured by BM25 (Robertson and Walker, 1994).
+    BM25 and its variants have been proven to be quite efficient in information retrieval.
+    Readers are referred to papers by the Text REtrieval Conference (TREC)4, for example.
+    The definition of BM25 is: where J is the set of translated English words of a Japanese article and E is the set of words of an English article.
+    The words are stemmed and stop words are removed.
+    N is the number of Japanese art

@@ -1,0 +1,9 @@
+ the root. applicable_ chain_ rule(Pivot, Parent, Root, RHS) :% choose a chain rule chain_ rule(Parent, RHS, SemHead), % .
+    .
+    . whose sem. head matches pivot unify(Pivot, SemHead), % make sure the categories can connect chained_ nodes(Parent, Root).
+    The information needed to guide the generation (given as the predicates chain_ rule, non_ chain_ rule, and chained_ nodes) can be computed automatically from the grammar.
+    A program to compile a DCG into these tables has in fact been implemented.
+    The details of the process will not be discussed further; interested readers may write to the first author for the required Prolog code.
+    We turn now to a simple example to give a sense of the order of processing pursued by this generation algorithm.
+    As in previous examples, the grammar fragment in Figure 3 uses the infix operator / to separate syntactic and semantic category information, and subcategorization for complements is performed lexically.
+    Consider the generation from the category se

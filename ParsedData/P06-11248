@@ -1,0 +1,9 @@
+(bottom), 10 (middle), 100 (top).
+    Last panel: same, with 0 = 10 and d = 0 (bottom), .5 (middle) and .9 (top). with probability &#952;+dt &#952;+c&#183; (increment t; set ct = 1; draw yt &#8212; G0; set xc&#183;+1 +&#8212; yt).
+    The above generative procedure produces a sequence of words drawn i.i.d. from G, with G marginalized out.
+    It is informative to study the Pitman-Yor process in terms of the behaviour it induces on this sequence of words.
+    Firstly, notice the rich-gets-richer clustering property: the more words have been assigned to a draw from G0, the more likely subsequent words will be assigned to the draw.
+    Secondly, the more we draw from G0, the more likely a new word will be assigned to a new draw from G0.
+    These two effects together produce a power-law distribution where many unique words are observed, most of them rarely.
+    In particular, for a vocabulary of unbounded size and for d &gt; 0, the number of unique words scales as O(0Td) where T is the total number of words.
+   

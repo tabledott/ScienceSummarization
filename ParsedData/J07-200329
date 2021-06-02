@@ -1,0 +1,8 @@
+ slightly different construction proposed by Wu (1996) for inversion transduction grammar and bigram LMs.
+    We present an adaptation of his algorithm to synchronous CFGs with two nonterminals per right-hand side and general m-gram LMs.
+    First, assume that the LM expects a whole sentence to be preceded by (m &#8722; 1) start-of-sentence symbols (s) and followed by a single end-of-sentence symbol (/s).
+    The grammar can be made to do this simply by adding a rule and making S&#8217; the new start symbol.
+    First, we define two functions p and q which operate on strings over T U {*}, where T is the English terminal alphabet, and * is a special placeholder symbol that stands for an elided part of an English string.
+    Values of p and q in the &#8220;cgisf&#8221; example.
+    The function p calculates LM probabilities for all the complete m-grams in a string; the function q elides symbols when all their m-grams have been accounted for.
+    These functions let us correctly calculate the LM score of a sente

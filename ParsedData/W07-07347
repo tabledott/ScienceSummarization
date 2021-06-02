@@ -1,0 +1,9 @@
+modules.
+    We use the freely available Perl implementation packages for Porter stemmers for the three languages (Humphrey, 2007).
+    Unfortunately, we have so far been unable to obtain freely available WordNet resources for these three languages.
+    METEOR versions for Spanish, French and German therefore currently include only &#8220;exact&#8221; and &#8220;stemming&#8221; matching modules.
+    We are investigating the possibility of developing new synonymy modules for the various languages based on alternative methods, which could then be used in place of WordNet.
+    The second main language-specific issue which required adaptation is the tuning of the three parameters within METEOR , described in section 4.
+  
+  
+    The original version of METEOR (Banerjee and Lavie, 2005) has instantiated values for three parameters in the metric: one for controlling the relative weight of precision and recall in computing the Fmean score (a); one governing the shape of the penalty as a function of fragmentation (0)

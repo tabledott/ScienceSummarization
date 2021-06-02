@@ -1,0 +1,8 @@
+1 or +1 depending on the sign of Z.
+    Intuitively, our goal is to adjust the vector of feature weights &#945;&#65533; = (&#945;1, ... , &#945;n) to minimize the expected misclassiication rate E[(sign(Z) =&#65533; Y )].
+    This function is difficult to minimize, so our boosting classifier minimizes the expected Boost loss E[exp(&#8722;Y Z)].
+    As Singer and Schapire [16] point out, the misclassification rate is bounded above by the Boost loss, so a low value for the Boost loss implies a low misclassification rate. b Our classifier estimates the Boost loss as Et[exp(&#8722;Y Z)], where Et[&#183;] is the expectation on the empirical training corpus distribution.
+    The feature weights are adjusted iteratively; one weight is changed per iteration.
+    The feature whose weight is to be changed is selected greedily to minimize the Boost loss using the algorithm described in [7].
+    Training continues for 25,000 iterations.
+    After each iteration the misclassification rate on the development corpus bEd[(sig

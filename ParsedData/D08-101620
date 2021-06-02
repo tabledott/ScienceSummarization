@@ -1,0 +1,7 @@
+rior marginals from an HMM.
+    Note that the marginal belief and both messages are unnormalized distributions over values v of V .
+    F and k are clear from context below, so we simplify the notation so that (7)&#8211;(8) become TRIGRAM must sum over assignments to the tag sequence T. The belief (6) in a given assignment is a product of trigram scores (which play the role of transition weights) and incoming messages qTj (playing the role of emission weights).
+    The marginal belief (7) needed above, b(Ti = t), is found by summing over assignments where Ti = t. All marginal beliefs are computed together in O(ng3) total time by the forward-backward algorithm.16 EXACTLY1j is a sparse hard constraint.
+    Even though there are 2n assignments to its n neighboring variables {Lij}, the factor function returns 1 on only n assignments and 0 on the rest.
+    In fact, for a given i, b(Lij = true) in (7) is defined by (6) to have exactly one non-zero summand, in which A puts Lij = true and all other Ligj = false.
+    

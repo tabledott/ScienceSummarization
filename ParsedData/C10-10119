@@ -1,0 +1,11 @@
+ly, the method stores the feature vectors on the hard disc.
+			The next two loops build the main part of the training algorithm.
+			The outer loop iterates over the number of training epochs, while the innerloop iterates over all training examples.
+			The on line training algorithm considers a single training example in each iteration.
+			The first function in the loop reads the features and computes the weights A for the factors in the sentence xi.
+			A is a set of weight arrays.
+			A = {??w ? ??f h,d,??w ? ??f h,d,s,??w ? ??f h,d,g} The parsing algorithm uses the weight arrays to predict a projective dependency structure yp.
+			The non-projective approximation algorithm has as input the dependency structure and the weightarrays.
+			It rearranges the edges and tries to in crease the total score of the dependency structure.
+			This algorithm builds a dependency structure ya,which might be non-projective.
+			The training al gorithm updates ??w according to the difference between the predicted dependency struct

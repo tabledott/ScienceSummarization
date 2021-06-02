@@ -1,0 +1,8 @@
+Although the log-linear model offers only a small improvement on pair classification than the simpler but prediction rule, it confers the important advantage 5When morphology is to be used as a supplementary predictor, we remove the morphologically related pairs from the training and testing sets. of rating each prediction between 0 and 1.
+    We make extensive use of this in the next phase of our algorithm.
+  
+  
+    The third phase of our method assigns the adjectives into groups, placing adjectives of the same (but unknown) orientation in the same group.
+    Each pair of adjectives has an associated dissimilarity value between 0 and 1; adjectives connected by sameorientation links have low dissimilarities, and conversely, different-orientation links result in high dissimilarities.
+    Adjective pairs with no connecting links are assigned the neutral dissimilarity 0.5.
+    The baseline and but methods make qualitative distinctions only (i.e., same-orientation, differentorientation, or unknown); for them, we

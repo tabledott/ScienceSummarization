@@ -1,0 +1,6 @@
+entary views of the extraction process, it is natural to wonder whether they can be combined to produce a more powerful extractor.
+    In many machine learning settings, the use of an ensemble of diverse classifiers during prediction has been observed to yield higher levels of performance compared to individual algorithms.
+    We now describe an ensemble-based or hybrid approach to RE that leverages the different views offered by open, self-supervised extraction in O-CRF, and lexicalized, supervised extraction in R1-CRF.
+    Stacked generalization, or stacking, (Wolpert, 1992), is an ensemble-based framework in which the goal is learn a meta-classifier from the output of several base-level classifiers.
+    The training set used to train the meta-classifier is generated using a leaveone-out procedure: for each base-level algorithm, a classifier is trained from all but one training example and then used to generate a prediction for the leftout example.
+    The meta-classifier is trained using the predictions of

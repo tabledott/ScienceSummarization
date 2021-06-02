@@ -1,0 +1,7 @@
+ in a final state qf.
+    .
+    The result of applying the transition is to add the following to the set of configurations: [ni , n3, w, v, q', c + ci + c', g] where t' is the target dependency tree formed by adding t1 as the rightmost dependent of t. [n,n',w,v,q,ci, ti] [n,n' , w, v, q,c2,t2] and c2 &gt; cl, the second configuration is removed from the set of configurations.
+    If, after all applicable transitions have been taken, there are configurations spanning the entire input lattice, then the one with the lowest cost is the optimal derivation.
+    When there are no such configurations, we take a pragmatic approach in the translation application and simply concatenate the lowest costing of the minimal length sequences of partial derivations that span the entire lattice.
+    A Viterbi-like search of the graph formed by configurations is used to find the optimal sequence of derivations.
+    One of the advantages of middle-out transduction is that robustness is improved through such use of partial derivat

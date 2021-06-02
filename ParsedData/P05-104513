@@ -1,0 +1,7 @@
+he state sequence s with respect to the observation sequence o.
+    This has the effect of assigning sequences with more violations a lower probability.
+    The particular violation types are defined specifically for each task, and are described in the following two sections.
+    This model, as defined above, is not normalized, and clearly it would be expensive to do so.
+    This doesn&#8217;t matter, however, because we only use the model for Gibbs sampling, and so only need to compute the conditional distribution at a single position i (as defined in Equation 1).
+    One (inefficient) way to compute this quantity is to enumerate all possible sequences differing only at position i, compute the score assigned to each by the model, and renormalize.
+    Although it seems expensive, this computation can be made very efficient with a straightforward memoization technique: at all times we maintain data structures representing the relationship between entity labels and token sequences, from which we can quickly com

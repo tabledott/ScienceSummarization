@@ -1,0 +1,7 @@
+ in the articles, we compute average cosine similarity (F8), word overlap (F9) and word overlap over just nouns and pronouns (F10) between pairs of adjacent sentences5.
+    Each sentence is turned into a vector of word-types, where each type&#8217;s value is its tf-idf (where document frequency is computed over all the articles in the WSJ corpus).
+    The cosine similarity metric is then: None of these features correlate significantly with readability as can be seen from the results in Table 4.
+    The overlap features are particularly bad predictors of readability, with average word/cosine overlap in fact being negatively correlated with readability.
+    The form of reference&#8212;use of pronouns and definite descriptions&#8212;exhibit a higher correlation with readability (0.23), but these values are not significant for the size of our corpus.
+    We use the Brown Coherence Toolkit6 to compute entity grids (Barzilay and Lapata, 2008) for each article.
+    In each sentence, an entity is identified as the su

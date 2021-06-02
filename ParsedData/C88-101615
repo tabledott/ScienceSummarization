@@ -1,0 +1,5 @@
+ pattern $ actually took place.
+  If in the pattern $, f gave rise to e,, augment counter CP(e,,f) by l; if e, gave rise to k sccoudary English words, augment counter CR(k, e,) by 1 ; if e~ is any (secondary) word that was given rise to by e,, augment counter CQ(e~, e,) by 1.
+  Carry out steps 1 and 2 for all sentence pairs of tile training text.
+  Estimate the model probabilities by nornmlizing the correspnndiug counters, i.e., P(e,]f) = CP(ei, f ) /CP( f )  where CP(f) = ECP(e, f ) i R(k] e i) = CR(k, ei)/CR(e,) where CR(ei) = E CR(k, ei) k Q(ejl e i) = CQ(e 1, e,)/CQ(e i) where CQ(e,) = ECQ(ei, e,) J The problem with the above algorithm is that it is circular: ila order to evalnate P(E,$ ] F) one needs to know the probabilities P(e, I)c), R(kl e,), and Q(ejle,) in the first place!
+  Forttmately, the difficulty can be alleviated by use of itcrative re-estimation, which is a technique that starts out by guessing the values of unknown quantities and gradually re-adjusts them so as to account better and better

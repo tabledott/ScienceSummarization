@@ -1,0 +1,8 @@
+not strongly require syntactic latent variables.
+    To focus EM on modeling the syntactic relationships, they conditioned the prediction of w on almost complete knowledge of the lexical items.
+    Similarly, we condition on a source translation of w. Furthermore, our QG model structure makes it easy for EM to learn to exploit the (explicitly represented) syntactic properties of that translation when predicting w. stochastically generates the tag of a new child, conditioned on the head.
+    The parameters of the model are thus of the form where head and child are part-of-speech tags, dir E {left, right}, and adj, stop E {true, false}.
+    ROOT is stipulated to generate a single right child.
+    Bilingual configurations that condition on t', w' (&#167;2) are incorporated into the generative process as in Smith and Eisner (2006a).
+    When the model is generating a new child for word x, aligned to x', it first chooses a configuration and then chooses a source word y' in that configuration.
+    The child y is th

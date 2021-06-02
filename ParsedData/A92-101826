@@ -1,0 +1,8 @@
+terbi algorithm requires storage for the sequence of observations, a vector of current maxes, a scratch array of the same size, and a matrix of i,b indices, for a total proportional to T + N(2 +T) and a grand total (including the model) of T N(N + M +T +3).
+    Again, N and M are fixed.
+    However, T need not be longer than a single sentence, since, as was observed above, the HMM, and hence the Viterbi algorithm, restarts at sentence boundaries.
+    An HMM for part-of-speech tagging can be tuned in a variety of ways.
+    First, the choice of tagset and lexicon determines the initial model.
+    Second, empirical and a priori information can influence the choice of starting values for the Baum-Welch algorithm.
+    For example, counting instances of ambiguity classes in running text allows one to assign non-uniform starting probabilities in A for a particular tag's realization as a particular ambiguity class.
+    Alternatively, one can state a priori that a particular ambiguity class is most likely to be the re

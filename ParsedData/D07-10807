@@ -1,0 +1,11 @@
+.
+			The basic idea is to perform top-down parsing so that the projected target side is generated in a left-to-right manner.
+			The search is guided with a push-down automaton, which keeps track of the span of uncovered source 765word positions.
+			Combined with the rest-cost esti mation aggregated in a bottom-up way, our decoder efficiently searches for the most likely translation.The use of a target normalized form further sim plifies the decoding procedure.
+			Since the rule formdoes not allow any holes for the target side, the integration with an n-gram language model is straightforward: the prefixed phrases are simply concate nated and intersected with n-gram.
+	
+	
+			3.1 Baseline Features.
+			The hierarchical phrase-based translation system employs standard numeric value features: ? n-gram language model to capture the fluency of the target side.
+			Hierarchical phrase translation probabilities in both directions, h(?|?b?) and h(?b?|?), estimated by relative counts, count(?, ?b?).
+			Word-based lexically

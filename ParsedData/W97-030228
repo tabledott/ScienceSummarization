@@ -1,0 +1,11 @@
+at is, we actually run the algorithm multiple times to termination, first changing thresholds by a factor of 16.
+    After a loop is reached at this factor, we lower the factor to 4, then 2. then 1.414, then 1.15.
+    Note that this algorithm is fairly domain independent.
+    It can be used for almost any statistical parsing formalism that uses thresholds, or even for speech recognition.
+  
+  
+    Beam thresholding is a common approach.
+    While we don't know of other systems that have used exactly our techniques, our techniques are certainly similar to those of others.
+    For instance, Collins (1996) uses a form of beam thresholding that differs from ours only in that it doesn't use the prior probability of nonterminals as a factor, and Caraballo and Charniak (1996) use a version with the prior, but with other factors as well.
+    Much of the previous related work on thresholding is in the similar area of priority functions for agenda-based parsers.
+    These parsers try to do &amp;quot;best first&amp;quot

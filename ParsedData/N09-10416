@@ -1,0 +1,6 @@
+ of the raw empirical unigram distribution to represent content significance.
+    For instance, there is no distinction between a word which occurs many times in the same document or the same number of times across several documents.
+    Intuitively, the latter word is more indicative of significant document set content.
+    The KLSUM algorithm introduces a criterion for selecting a summary S given document collection D, where PS is the empirical unigram distribution of the candidate summary S and KL(P Q) represents the Kullback-Lieber (KL) divergence given by divergence between the true distribution P (here the document set unigram distribution) and the approximating distribution Q (the summary distribution).
+    This criterion casts summarization as finding a set of summary sentences which closely match the document set unigram distribution.
+    Lin et al. (2006) propose a related criterion for robust summarization evaluation, but to our knowledge this criteria has been unexplored in summarization systems.

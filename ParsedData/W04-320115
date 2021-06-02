@@ -1,0 +1,6 @@
+nstituent loss function does not exactly correspond to the standard scoring metrics, such as F1 or crossing brackets, but shares the sensitivity to the number of differences between trees.
+    We have not thoroughly investigated the exact interplay between the various loss choices and the various parsing metrics.
+    We used the constituent loss in our experiments. marginals as Qm(&#181;(&#945;)), where &#181;(&#945;) is the vector with components &#181;i,r(&#945;i), and Qm(&#181;) is defined as: where li,r = l(xi, yi, r), &#966;i,r = &#966;(xi, r) and Ii,r = I(xi, yi, r).
+    This follows from substituting the factored definitions of the feature representation &#934; and loss function L together with definition of marginals.
+    Having expressed the objective in terms of a polynomial number of variables, we now turn to the constraints on these variables.
+    The feasible set for &#945; is Now let &#916;m be the space of marginal vectors which are feasible: Then our original optimization problem can be refram

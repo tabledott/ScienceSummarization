@@ -1,0 +1,7 @@
+-domain BC examples, we have also conducted three active learning runs using only WSJ adaptation examples.
+    Using 10%, 20%, and 30% of WSJ adaptation examples to build a classifier, the accuracy of these runs is lower than the active learning a curve and paired t-tests show that the difference is statistically significant at the level of significance 0.01.
+    As mentioned in section 1, research in (Escudero et al., 2000) noted an improvement in accuracy when they adjusted the BC and WSJ datasets such that the proportions of the different senses of each word were the same between BC and WSJ.
+    We can similarly choose BC examples such that the sense priors in the BC training data adhere to the sense priors in the WSJ evaluation data.
+    To gauge the effectiveness of this approach, we first assume that we know the true sense priors of each noun in the WSJ evaluation data.
+    We then gather BC training examples for a noun to adhere as much as possible to the sense priors in WSJ.
+    Assume sense si is the

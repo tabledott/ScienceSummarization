@@ -1,0 +1,8 @@
+es.
+    One type of module, a filter, can be used to remove senses from consideration when a knowledge source identifies them as unlikely in context.
+    Another type can be used when a knowledge source provides evidence for a sense but cannot identify it confidently; we call these partial taggers (in the spirit of McCarthy's notion of &amp;quot;partial information&amp;quot; [McCarthy and Hayes, 19691).
+    The choice of whether to apply a knowledge source as either a filter or a partial tagger depends on whether it is likely to rule out correct senses.
+    If a knowledge source is unlikely to reject the correct sense, then it can be safely implemented as a filter; otherwise implementation as a partial tagger would be more appropriate.
+    In addition, it is necessary to represent the context of ambiguous words so that this information can be used in the disambiguation process.
+    In the system described here these modules are referred to as feature extractors.
+    Our sense tagger is implemented within this

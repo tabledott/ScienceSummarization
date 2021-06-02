@@ -1,0 +1,10 @@
+ (NCC), our example now forms three wordto-word connections, rather than a single phrasal one.
+    The phrases produced with this constraint are very small, and include only non-compositional context.
+    Therefore, we use the constraint only to train models intended for Viterbi alignment, and not when generating phrase tables directly as in Section 4.1.
+  
+  
+    In this section, we first verify the effectiveness of fixed-link pruning, and then test our phrasal ITG, both as an aligner and as a translation model.
+    We train all translation models with a French-English Europarl corpus obtained by applying a 25 token sentence-length limit to the training set provided for the HLT-NAACL SMT Workshop Shared Task (Koehn and Monz, 2006).
+    The resulting corpus has 393,132 sentence pairs.
+    3,376 of these are omitted for ITG methods because their highconfidence alignments have ITG-incompatible constructions.
+    Like our predecessors (Marcu and Wong, 2002; Birch et al., 2006), we apply a lexicon constraint: no 

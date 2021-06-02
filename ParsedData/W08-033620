@@ -1,0 +1,6 @@
+ion, because the three characters are properly segmented from both sides, and they are concatenated with each other.
+    It can also be segmented as &#8220;cx A BC cy&#8221;, which means although the boundary is correct, the first character is separated from the other two.
+    Or, it can be segmented as &#8220;cxA BCcy&#8221;, which means the first character was actually part of the previous word, while BC are the beginning of the next word.
+    Every time a particular word type wi appears in the text, we consider a segmenter more consistent if it can segment wi in the same way every time, but it doesn&#8217;t necessarily have to be the same as the gold standard segmentation.
+    For example, if &#8220;ABC&#8221; is a Chinese person name which appears 100 times in the gold standard data, and one segmenter segment it as cx A BC cy 100 times, then this segmenter is still considered to be very consistent, even if it doesn&#8217;t exactly match the gold standard segmentation.
+    Using this intuition, the conditi

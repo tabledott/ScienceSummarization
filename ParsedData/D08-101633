@@ -1,0 +1,8 @@
+
+    These would be NP-hard to incorporate exactly; DP cannot be used.
+    We used BP with a non-projective TREE factor to train conditional log-linear parsing models of two highly non-projective languages, Danish and Dutch, as well as slightly non-projective English (&#167;8.1).
+    In all three languages, the first-order non-projective parser greatly overpredicts the number of crossing links.
+    We thus added NOCROSS factors, as well as GRAND and CHILDSEQ as before.
+    All of these significantly improve the first-order baseline, though not necessarily cumulatively (Table 2).
+    Finally, Table 2 compares loopy BP to a previously proposed &#8220;hill-climbing&#8221; method for approximate inference in non-projective parsing McDonald and Pereira (2006).
+    Hill-climbing decodes our richest non-projective model by finding the best projective parse under that model&#8212;using slow, higherorder DP&#8212;and then greedily modifies words&#8217; parents until the parse score (1) stops improving. with TREE, deco

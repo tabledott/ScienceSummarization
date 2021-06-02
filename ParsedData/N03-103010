@@ -1,0 +1,11 @@
+ interpolation method for smoothing lexicalized rules to accommodate data sparseness.
+    Once we have the segmenting probabilities given by the statistical model, a straightforward algorithm is used to implement the segmenter.
+    Given a syntactic tree , the algorithm inserts a boundary after each word for which boundary .
+  
+  
+    In the setting presented here, the input to the discourse parser is a Discourse Segmented Lexicalized Syntactic Tree (i.e., a lexicalized syntactic parse tree in which the discourse boundaries have been identified), henceforth called a DS-LST.
+    An example of a DS-LST in the tree in Figure 2.
+    The output of the discourse parser is a discourse parse tree, such as the one presented in Figure 1.
+    As in other statistical approaches, we identify two components that perform the discourse parsing task.
+    The first component is the parsing model, which assigns a probability to every potential candidate parse tree.
+    Formally, given a discourse tree and a set of parameters , 

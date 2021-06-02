@@ -1,0 +1,8 @@
+tch size increases, computational efficiency, in terms of the number of examples examined to attain a given accuracy, decreases tremendously (Figure 2(b)).
+    The ability of committee-based selection to focus on the more informative parts of the training corpus is analyzed in Figure 3.
+    Here we examined the number of lexical and bigram counts that were stored (i.e, were non-zero) during training, using the two member selection algorithm and complete training.
+    As the graphs show, the sample selection method achieves the same accuracy as complete training with fewer lexical and bigram counts.
+    This means that many counts in the data are less useful for correct tagging, as replacing them with smoothed estimates works just as well.'
+    Committee-based selection ignores such counts, focusing on parameters which improve the model.
+    This behavior has the practical advantage of reducing the size of the model significantly (by a factor of three here).
+    Also, the average count is lower in a model cons

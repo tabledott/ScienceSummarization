@@ -1,0 +1,9 @@
+: First, for each type, we use a set of constraints (which are compiled by linguists and are represented as FSTs) to generate only those &#8216;most likely&#8217; candidates.
+    Second, each of the generated candidates is assigned a class model probability.
+    These class models are defined as generative models which are respectively estimated on their corresponding named entity lists using maximum likelihood estimation (MLE), together with smoothing methods4.
+    We will describe briefly the constraints and the class models below.
+    There are two main constraints.
+    (1) PN patterns: We assume that a Chinese PN consists of a family name F and a given name G, and is of the pattern F+G.
+    Both F and G are of one or two characters long.
+    (2) Family name list: We only consider PN candidates that begin with an F stored in the family name list (which contains 373 entries in our system).
+    Given a PN candidate, which is a character string S&#8217;, the class model probability P(S&#8217;|PN) is computed 

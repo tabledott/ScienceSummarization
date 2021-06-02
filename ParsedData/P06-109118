@@ -1,0 +1,9 @@
+coding is much faster than the decoding with block swapping: the monotone decoding takes less than hours and the decoding with swapping takes about an hour.
+    Since the training starts with only the parallel training data and a block set, some initial block sequences have to be generated in order to initialize the global model training: for each input sentence a simple bag of blocks translation is generated.
+    For each input interval that is matched by some block, a single block is added to the bag-of-blocks translation .
+    The order in which the blocks are generated is ignored.
+    For this block set only block and word identity features are generated, i.e. features of type and in Section 2.
+    This step does not require the use of a decoder.
+    The initial block sequence training data contains only a single alternative.
+    The training procedure proceeds by iteratively decoding the training data.
+    After each decoding step, the resulting translation block sequences are stored on disc in binary fo

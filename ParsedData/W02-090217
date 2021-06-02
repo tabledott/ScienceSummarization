@@ -1,0 +1,11 @@
+s.
+    There are many ways one could search for the best set of lexicon entries based on these scores.
+    We could perform an exhaustive search: construct all possible mappings and find the highest combined score of all entries.
+    Since there are O(n!) possible mappings, a brute force approach to this is practically impossible.
+    We therefore employed a greedy search: First we search for the highest score for any word pair.
+    We add this word pair to the lexicon, and drop word pairs that include either the German and English word from further search.
+    Again, we search for the highest score and add the corresponding word pair, drop these words from further search, and so on.
+    This is done iteratively, until all words are used up.
+    Tables 2 and 3 illustrate this process for the spelling and context similarity clues, when applied separately.
+    The results are summarized in Table 5.
+    Recall that for each word that we are trying to map to the other language, a thousand possible target words ex

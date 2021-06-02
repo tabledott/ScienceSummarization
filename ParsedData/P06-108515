@@ -1,0 +1,10 @@
+722; is n&#8722; + 1.
+    Using these equations we can simply proceed through the data, sampling each potential boundary point in turn.
+    Once the Gibbs sampler converges, these samples will be drawn from the posterior distribution P(h1d).
+    In our experiments, we used the same corpus that NGS and MBDP were tested on.
+    The corpus, supplied to us by Brent, consists of 9790 transcribed utterances (33399 words) of childdirected speech from the Bernstein-Ratner corpus (Bernstein-Ratner, 1987) in the CHILDES database (MacWhinney and Snow, 1985).
+    The utterances have been converted to a phonemic representation using a phonemic dictionary, so that each occurrence of a word has the same phonemic transcription.
+    Utterance boundaries are given in the input to the system; other word boundaries are not.
+    Because our Gibbs sampler is slow to converge, we used annealing to speed inference.
+    We began with a temperature of -y = 10 and decreased -y in 10 increments to a final value of 1.
+    A temperature o

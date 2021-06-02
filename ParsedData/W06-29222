@@ -1,0 +1,6 @@
+features that hopefully might apply also when using other learning techniques.
+    I extended the Yamada-Matsumoto parser to handle labeled dependencies: I tried two approaches: using a single classifier to predict pairs of actions and labels and using two separate classifiers, one for actions and one for labels.
+    Finally, I extended the repertoire of actions used by the parser, in order to handle non-projective relations.
+    Tests on the PDT (B&#246;hmov&#224; et al., 2003) show that the added actions are sufficient to handle all cases of non-projectivity.
+    However, since the cases of non-projectivity are quite rare in the corpus, the general learner is not supplied enough of them to learn how to classify them accurately, hence it may be worthwhile to exploit a second classifier trained specifically in handling nonprojective situations.
+    The overall parsing algorithm is an inductive statistical parser, which extends the approach by Yamada and Matsumoto (2003), by adding six new reduce actions for h

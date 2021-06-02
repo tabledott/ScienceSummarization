@@ -1,0 +1,9 @@
+imes, and report the average directed accuracy achieved.
+    The results are shown in Table 1.
+    We compare to work by Cohen et al. (2008) and Cohen and Smith (2009).
+    Looking at Table 1, we can first of all see the benefit of randomized initialization over the harmonic initializer for DMV.
+    We can also see a large gain by adding smoothing to DMV, topping even the logistic normal prior.
+    The unsmoothed EVG actually performs worse than unsmoothed DMV, but both smoothed versions improve even on smoothed DMV.
+    Adding lexical information (L-EVG) yields a moderate further improvement.
+    As the greatest improvement comes from moving to model EVG smoothed-skip-head, we show in Table 2 the most probable arguments for each val, dir, using the mean of the appropriate variational Dirichlet.
+    For d = right, v = 1, P(A|v, d) largely seems to acts as a way of grouping together various verb types, while for d = left, v = 0 the model finds that nouns tend to act as the closest left argument. tion, accordin

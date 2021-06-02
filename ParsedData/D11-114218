@@ -1,0 +1,10 @@
+ set of approximately 1.7 million distinct normalized relation phrases, which are stored in memory at extraction time.
+    As an example of the extraction algorithm in action, consider the following input sentence: Hudson was born in Hampstead, which is a suburb of London.
+    Step 1 of the algorithm identifies three relation phrases that satisfy the syntactic and lexical constraints: was, born in, and is a suburb of.
+    The first two phrases are adjacent in the sentence, so they are merged into the single relation phrase was born in.
+    Step 2 then finds an argument pair for each relation phrase.
+    For was born in, the nearest NPs are (Hudson, Hampstead).
+    For is a suburb of, the extractor skips over the NP which and chooses the argument pair (Hampstead, London).
+    The final output is The extraction algorithm in the previous section has high recall, but low precision.
+    Like with previous open extractors, we want way to trade recall for precision by tuning a confidence threshold.
+    We use a logi

@@ -1,0 +1,6 @@
+ecursive divideand-conquer procedure: to calculate the cover of a region of the input, it is repeatedly split into two parts, at each possible position.
+    Each time, the best possible cover for each part is recursively found, and the two scores are combined to give a score for the chart walk containing the two best subwalks.
+    These different splits are then compared with each other and with components from the chart spanning the whole region (if any), and the overall best result is Without dynamic programming, this would have a D 2 combinatorial time complexity.
+    Dynamic programL 2.5 ming utilizes a large array to store partial results, so that the best cover of any given subsequence is only computed once; the second time that a recursive call would compute the same result, it is retrieved from the array instead.
+    This reduces the time complexity to 0(n3), and in practice it uses an insignificant part of total processing time.
+    G 5 All possible combinations of components are cornD 2 pared: this 

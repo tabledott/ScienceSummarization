@@ -1,0 +1,10 @@
+ernel function K is a mapping tion over the instance x.
+    The kernel function must be symmetric [K(x, y) = K(y, x)] and positivesemidefinite.
+    By positive-semidefinite, we require that the if x1, ... , xn E X, then the n x n matrix G defined by Gij = K(xi, xj) is positive semidefinite.
+    It has been shown that any function that takes the dot product of feature vectors is a kernel function (Haussler, 1999).
+    A simple kernel function takes the dot product of the vector representation of instances being compared.
+    For example, in document classification, each document can be represented by a binary vector, where each element corresponds to the presence or absence of a particular word in that document.
+    Here, Oi(x) = 1 if word i occurs in document x.
+    Thus, the kernel function K(x, y) returns the number of words in common between x and y.
+    We refer to this kernel as the &#8220;bag-of-words&#8221; kernel, since it ignores word order.
+    When instances are more structured, as in the case of d

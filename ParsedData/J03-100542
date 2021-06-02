@@ -1,0 +1,8 @@
+ thresholds described in Section 3.8.)
+    After the extension of all partial hypotheses in S, a pruning step is carried out for the hypotheses in the newly generated set Snew.
+    The pruning is based on two simple sorting steps on the list of partial hypotheses Snew.
+    (Instead of sorting the partial hypotheses, we might have used hashing.)
+    First, the partial hypotheses are sorted according to their translation scores (within the implementation, all probabilities are converted into translation scores by taking the negative logarithm &#8722; log()).
+    Cardinality pruning can then be carried out simply by running down the list of hypotheses, starting with the maximum-probability hypothesis, and applying the cardinality thresholds.
+    Then, the partial hypotheses are sorted a second time according to their coverage set C and their translation score.
+    After this sorting step, all partial hypotheses that cover the same subset of source sentence positions are located in consecutive fragments in the ov

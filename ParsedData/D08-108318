@@ -1,0 +1,9 @@
+of expression is &#8216;medium&#8217; or higher), sentimentbearing (i.e., polarity is &#8216;positive&#8217; or &#8216;negative&#8217;) expressions.8 As a result, we can assume the boundaries of the expressions are given.
+    Performance is reported using 10-fold cross-validation on 400 documents; a separate 135 documents were used as a development set.
+    Based on pilot experiments on the development data, we set parameters for MIRA as follows: slack variable to 0.5, and the number of incorrect labels (constraints) for each parameter update to 1.
+    The number of iterations (epochs) for training is set to 1 for simple classification, and to 4 for classification with compositional inference.
+    We use K = 20 for classification with compositional inference.
+    Results.
+    Performance is reported in Table 3.
+    Interestingly, the heuristic-based methods NEG (82.2%) that only consider function-word negators perform even worse than VOTE (86.5%), which does not consider negators.
+    On the other hand, the N

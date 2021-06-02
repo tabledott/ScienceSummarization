@@ -1,0 +1,9 @@
+ach of the first two steps, a binary SVM classifier is built to perform the classification.
+    To train the classifiers, we use SVM-Light6 with a linear kernel; the default setting is adopted in all experiments.
+    In our approach, rich feature representations are used to distinguish between sentiments expressed towards different targets.
+    In order to generate such features, much NLP work has to be done beforehand, such as tweet normalization, POS tagging, word stemming, and syntactic parsing.
+    In our experiments, POS tagging is performed by the OpenNLP POS tagger7.
+    Word stemming is performed by using a word stem mapping table consisting of about 20,000 entries.
+    We also built a simple rule-based model for tweet normalization which can correct simple spelling errors and variations into normal form, such as &#8220;gooood&#8221; to &#8220;good&#8221; and &#8220;luve&#8221; to &#8220;love&#8221;.
+    For syntactic parsing we use a Maximum Spanning Tree dependency parser (McDonald et al., 2005).
+  

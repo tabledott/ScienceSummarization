@@ -1,0 +1,7 @@
+mation and improvement of the internal morphological models.
+    The additional training data that this yields allows the contextual models to be augmented and reestimated, and the cycle continues until convergence.
+    One approach to this bootstrapping process is to use a standard continuous EM (ExpectationMaximization) family of algorithms (Baum, 1972; Dempster et al., 1977).
+    The proposed approach outlined below is a discrete variant that is much less computationally intensive, and has the advantage of distinguishing between unknown probability distributions and those which are simply evenly distributed.
+    The approach is conservative in that it only utilizes the class estimations for newly classified data in the retraining process if the class probability passes a confidence threshold, as defined below.
+    The concept of confidence threshold can be captured through the following definitions of dominant and semi-dominant.
+    Let us consider a discrete finite probability distribution P = (pi,..-,pn)

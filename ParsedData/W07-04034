@@ -1,0 +1,8 @@
+ent system is powered by the IBM translation models (Brown et al., 1993), in which one sentence generates the other.
+    These models produce only one-to-many alignments: each generated token can participate in at most one link.
+    Many-to-many alignments can be created by combining two GIZA++ alignments, one where English generates Foreign and another with those roles reversed (Och and Ney, 2003).
+    Combination approaches begin with the intersection of the two alignments, and add links from the union heuristically.
+    The grow-diag-final (GDF) combination heuristic (Koehn et al., 2003) adds links so that each new link connects a previously unlinked token.
+    The IBM models that power GIZA++ are trained with Expectation Maximization (Dempster et al., 1977), or EM, on sentence-aligned bitext.
+    A translation model assigns probabilities to alignments; these alignment distributions are used to count translation events, which are then used to estimate new parameters for the translation model.
+    Sampling 

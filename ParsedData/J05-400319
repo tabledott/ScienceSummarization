@@ -1,0 +1,8 @@
+e a version that is augmented with two simple heuristics that attempt to alleviate some of these shortcomings.
+    One possible improvement concerns English words that appear more than once in a sentence.
+    According to the model, a foreign word that prefers to be aligned with such an English word could be equally well aligned with any instance of that word.
+    In such situations, instead of arbitrarily choosing the first instance or a random instance, we attempt to make a &#8221;smarter&#8221; decision.
+    First, we create links only for those English words that appear exactly once; next, for words that appear more than once, we choose which instance to link with so that we minimize the number of crossings with already existing links.
+    The second heuristic attempts to improve the choice of the most likely English translation of a foreign word.
+    Our translation probabilities are automatically learned from parallel data, and we learn values for both t(fj|ei) and t(ei|fj).
+    We can therefore decide 

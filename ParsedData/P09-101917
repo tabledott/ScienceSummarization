@@ -1,0 +1,11 @@
+ to optimize an error criterion (e.g. corpus BLEU) on a training set.
+    The lattice MBR decoder (Equation 3) can be written as a linear model: E&#65533; = argmaxE,Eg &#65533;Ni=0 Bigi(E', F), where g0(E',F) = IE'I and gi(E', F) = The linear approximation to BLEU may not hold in practice for unseen test sets or languagepairs.
+    Therefore, we would like to allow the decoder to backoff to the MAP translation in such cases.
+    To do that, we introduce an additional feature function gN+1(E, F) equal to the original decoder cost for this sentence.
+    A weight assignment of 1.0 for this feature function and zeros for the other feature functions would imply that the MAP translation is chosen.
+    We now have a total of N+2 feature functions which we optimize using MERT to obtain highest BLEU score on a training set.
+  
+  
+    We now describe our experiments to evaluate MERT and MBR on lattices and hypergraphs, and show how MERT can be used to tune MBR parameters.
+    We report results on two tasks.
+    The firs

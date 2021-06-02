@@ -1,0 +1,8 @@
+minimal subset&#8221; of it.
+    The latter&#8217;s performance was quite good, achieving 90.8% F1 score1 on section 23 of the WSJ.
+    This approach is unsatisfying in some ways, however.
+    Instead of heuristic extraction we would prefer a model that explained the subtrees found in the grammar.
+    Furthermore, it seems unlikely that subtrees with ten or so lexical items will be useful on average at test time (Bod did not report how often larger trees are used, but did report that including subtrees with up to twelve lexical items improved parser performance).
+    We expect there to be fewer large subtrees than small ones.
+    Repeating Bod&#8217;s grammar extraction experiment, this is indeed what we find when comparing these two grammars (Figure 1).
+    In summary, we would like a principled (modelbased) means of determining from the data which set of subtrees should be added to our grammar, and we would like to do so in a manner that prefers smaller subtrees but permits larger ones if the data warrants 

@@ -1,0 +1,7 @@
+uity occurs the most when the character-based system is dealing with a rare or unseen character sequence in the training data, and also occurs more often when dealing with transliterations.
+    The reason is that characters composing a transliterated foreign named entity usually doesn&#8217;t preserve their meanings; they are just used to compose a Chinese word that sounds similar to the original word &#8211; much more like using a character segmentation of English words.
+    Another example of this kind is &#8220;&#10056;&#9998;&#10100;&#10150;&#10026;&#10171;&#9991;&#8221; (Alzheimer&#8217;s disease).
+    The MT system using CharBased segmentation tends to translate some characters individually and drop others; while the system using MaxMatch segmentation is more likely to translate it right.
+    The second advantage of having a segmenter like the lexicon-based MaxMatch is that it helps the reordering model.
+    Results in Table 1 are with the linear distortion limit defaulted to 6.
+    Since words in CharB

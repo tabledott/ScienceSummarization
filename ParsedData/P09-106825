@@ -1,0 +1,11 @@
+ count verb pairs and shared arguments over the NYT portion of the Gigaword Corpus (years 1994-2004), approximately one million articles.
+    We parse the text into typed dependency graphs with the Stanford Parser (de Marneffe et al., 2006), recording all verbs with subject, object, or prepositional typed dependencies.
+    Unlike in (Chambers and Jurafsky, 2008), we lemmatize verbs and argument head words.
+    We use the OpenNLP1 coreference engine to resolve entity mentions.
+    The test set is the same as in (Chambers and Jurafsky, 2008).
+    100 random news articles were selected from the 2001 NYT section of the Gigaword Corpus.
+    Articles that did not contain a protagonist with five or more events were ignored, leaving a test set of 69 articles.
+    We used a smaller development set of size 17 to tune parameters.
+    The first evaluation compares untyped against typed narrative event chains.
+    The typed model uses equation 4 for chain clustering.
+    The dotted line &#8216;Chain&#8217; and solid &#821

@@ -1,0 +1,6 @@
+.
+  Figure 2 outlines the processes and the resources that are employed by the implemented system in the analysis of text documents.
+  First, the system splits a document into sentences and truecases the beginning of each sentence, hypothesizing whether the first word is part of an entity or it is capitalized because of orthographic conventions.
+  It also identi- fies titles and hypothesizes the correct case for all words in the titles.
+  This is done based on statistics extracted from a one-billion-word corpus, with back-off to Web statistics.
+  In a second stage, a hybrid named-entity recog- nizer based on capitalization rules, Web statistics, and statistics extracted from the CoNLL 2003 shared task data (Tjong Kim Sang and De Meulder, 2003) identifies the  boundaries of  the entity  mentions in the text and assigns each set of mentions sharing the same surface form a probabil- ity distribution over four labels: Person, Location, Organization, and Miscellaneous.1 The named en- tity recognition component res

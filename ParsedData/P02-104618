@@ -1,0 +1,11 @@
+
+    The prediction of the classifier is the prediction of the first rule in the list that applies.
+    The algorithm constructs a classifier iteratively, beginning with a seed rule.
+    In the variant we consider here, one atomic rule is added at each iteration.
+    An atomic rule F` is chosen only if its precision, Pr[G` = +JF` = +] (as measured using the labels assigned by the current classifier G), exceeds a fixed threshold &#952;.1 Yarowsky does not give an explicit justification for the algorithm.
+    I show here that the algorithm can be justified on the basis of two independence assumptions.
+    In what follows, F represents an atomic rule under consideration, and G represents the current classifier.
+    Recall that Y` is the set of instances whose true label is t, and G` is the set of instances {x : G(x) = t}.
+    We write G&#8727; for the set of instances labeled by the current classifier, that is, {x : G(x) =&#65533; +}.
+    The first assumption is precision independence.
+    Definition 5 Candidate

@@ -1,0 +1,7 @@
+ test examples.
+    In general, such a practice results in higher test accuracy, since the test examples would look a lot closer to the training examples in this case.
+    To address this issue, we took the official SENSEVAL-2 training and test examples of each noun w and combined them together.
+    We then randomly split the data into a new training and a new test set such that no training and test examples come from the same document.
+    The number of training examples in each sense in such a new training set is the same as that in the official training data set of w. A WSD classifier was then trained on this new training set, and tested on this new test set.
+    We conducted 10 random trials, each time splitting into a different training and test set but ensuring that the number of training examples in each sense (and thus the sense distribution) follows the official training set of w. We report the average accuracy of the 10 trials.
+    The accuracy figures for the set of difficult nouns thus obtained ar

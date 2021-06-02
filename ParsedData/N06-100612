@@ -1,0 +1,7 @@
+icularly egregious is the inability to represent quantification and modality.
+    We parse input sentences to phrase structure trees using the Stanford parser (Klein and Manning, 2003), a statistical syntactic parser trained on the Penn TreeBank.
+    To ensure correct parsing, we preprocess the sentences to collapse named entities into new dedicated tokens.
+    Named entities are identified by a CRF-based NER system, similar to that described in (McCallum and Li, 2003).
+    After parsing, contiguous collocations which appear in WordNet (Fellbaum, 1998) are identified and grouped.
+    We convert the phrase structure trees to typed dependency graphs using a set of deterministic handcoded rules (de Marneffe et al., 2006).
+    In these rules, heads of constituents are first identified using a modified version of the Collins head rules that favor semantic heads (such as lexical verbs rather than auxiliaries), and dependents of heads are typed using tregex patterns (Levy and Andrew, 2006), an extension of the tgrep

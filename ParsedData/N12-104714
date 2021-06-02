@@ -1,0 +1,5 @@
+onable by aggregating only those paths corresponding to hope or fear derivations.
+    While MIRA takes a series of local hinge-loss reducing steps, it is also possible to directly minimize the sum of hinge-losses using a batch algorithm, creating a structured SVM (Tsochantaridis et al., 2004).
+    To avoid fixing an oracle before optimization begins, we adapt Yu and Joachim&#8217;s (2009) latent SVM to our task, which allows the oracle derivation for each sentence to vary during training.
+    Again we assume a MERT-like architecture, which approximates &#163; with an &#163; constructed from aggregated k-best lists.
+    Inspired by the local oracle of Liang et al. (2006), we define &#65533;&#163;i* to be an oracle set: Algorithm 1 BatchMIRA input [f, R, &#65533;&#163;]n1, ~w, max epochs J, step cap C, and pseudo-corpus decay &#947;. init Pseudo-corpus BG to small positive counts. init t = 1; ~wt = w~ for j from 1 to J do for i from 1 to n in random order do // Hope-fear decode in &#65533;&#163;i et = arg maxeE

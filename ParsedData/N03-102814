@@ -1,0 +1,9 @@
+ each word with a label indicating whether the word is outside a chunk starts a chunk (B), or continues a chunk (I).
+    For example, the tokens in first li NP chunking results have been reported on two slightly different data sets: the original RM data set of Ramshaw and Marcus (1995), and the modified CoNLL-2000 version of Tjong Kim Sang and Buchholz (2000).
+    Although the chunk tags in the RM and CoNLL-2000 are somewhat different, we found no significant accuracy differences between models trained on these two data sets.
+    Therefore, all our results are reported on the CoNLL-2000 data set.
+    We also used a development test set, provided by Michael Collins, derived from WSJ section 21 tagged with the Brill (1995) POS tagger.
+    Our chunking CRFs have asecond-order Markov dependency between chunk tags.
+    This is easily encoded by making the CRF labels pairs of consecutive chunk tags.
+    That is, the label at position i is yi = where ci is the chunk tag of word i, one of B, or I.
+    Since B must be

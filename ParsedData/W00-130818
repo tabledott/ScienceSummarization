@@ -1,0 +1,13 @@
+he VBNBP and VBD/VBN confusions.
+    Below is the performance on the test set of the resulting model when features for disambiguating verb forms are added to the model of Section 2.
+    The number of VBNBP confusions was reduced by 23.1% as compared to the baseline.
+    The number of VBD/VBN confusions was reduced by 12.3%.
+    96.83% 86.87%
+  
+  
+    As discussed in section 1.3 above, the task of determining RB/RP/IN tags for words like down, out, up is difficult and in particular examples, there are often no good local syntactic indicators.
+    For instance, in (2), we find the exact same sequence of parts of speech, but (2a) is a particle use of on, while (2b) is a prepositional use.
+    Consequently, the accuracy on the rarer RP (particles) category is as low as 41.5% for the Baseline model (cf.
+    Table 4).
+    (2) a. Kim took on the monster. b. Kim sat on the monster.
+    We tried to improve the tagger's capability to resolve these ambiguities through adding information on verbs' preferences to take sp

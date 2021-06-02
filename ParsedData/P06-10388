@@ -1,0 +1,9 @@
+ word appearing less than TC times per a million words4.
+    Now define a meta-pattern as any sequence of HFWs and CWs.
+    In this paper we require that meta-patterns obey the following constraints: (1) at most 4 words; (2) exactly two content words; (3) no two consecutive CWs.
+    The rationale is to see what can be achieved using relatively short patterns and where the discovered categories contain single words only.
+    We will relax these constraints in future papers.
+    Our meta-patterns here are thus of four types: CHC, CHCH, CHHC, and HCHC.
+    In order to focus on patterns that are more likely to provide high quality categories, we removed patterns that appear in the corpus less than TP times per million words.
+    Since we can ensure that the number of HFWs is bounded, the total number of pattern candidates is bounded as well.
+    Hence, this stage can be computed in time linear in the size of the corpus (assuming the corpus has been already pre-processed to allow direct access to a word by its ind

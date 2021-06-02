@@ -1,0 +1,8 @@
+with the model probability given by p(UNKNOWN|mi-1, mi-2) * UNK_Fraction, where UNK_Fraction is 1e-9 determined on empirical grounds.
+    This allows us to segment new words with a high accuracy even with a relatively high number of unknown stems in the language model vocabulary, cf. experimental results in Tables 5 &amp; 6.
+    Step 3: Keep the top N highest scored segmentations.
+    Possible segmentations of a word token are restricted to those derivable from a table of prefixes and suffixes of the language for decoder speed-up and improved accuracy.
+    Table 2 shows examples of atomic (e.g.
+    &#1604;&#1575;, &#1578;&#1575;) and multi-component (e.g.
+    &#1604;&#65166;&#1127;&#65169;&#1608;, &#65166;&#1127;&#65260;&#65175;&#1575;) prefixes and suffixes, along with their component morphemes in native Arabic.3 Each token is assumed to have the structure prefix*-stem-suffix*, and is compared against the prefix/suffix table for segmentation.
+    Given a word token, (i) identify all of the matching prefixes 

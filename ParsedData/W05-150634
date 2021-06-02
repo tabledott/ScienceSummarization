@@ -1,0 +1,10 @@
+rows (exponentially).
+			But we see that the curve for Collins?
+			k-best list goes down for large k (&gt; 40).
+			We suspect this is due to the cell limit of 100 pruning awaypotentially good parses too early in the chart.
+			As sen tences get longer, it is more likely that a lower-probability parse might contribute eventually to the k-best parses.
+			So we infer that Collins?
+			k-best lists have limited quality for large k, and this is demonstrated by the early convergence of its oracle-reranking score.
+			By comparison, our curves of both beam widths continue to grow with k = 100.
+			All these experiments suggest that our k-best parses are of better quality than those from previous k-best parsers, 7The reason the maximum is 101 and not 100 is that Collins merged the 100-best list using a beam of 10?3 with the 1-best list using a beam of 10?4 (Collins, p.c.).
+			60 86 88 90 92 94 96 98 1 2 5 10 20 30 50 70 100 O ra cle F -s co re k (Charniak and Johnson, 2005) This work with beam width 10-4(Collins, 2000) (

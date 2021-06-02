@@ -1,0 +1,16 @@
+label X.
+  REFERENCE CONSISTENCY.
+  If there is a label R-X and the label is inside a relative clause, it must be preceded by a label X.
+  3.3 Global SRL Model Toutanova et al.
+  (2005) have showed that a global model that scores the complete predicate?
+  argument structure can lead to substantial perfor- mance gains.
+  We therefore created a global SRL classifier using the following global features in ad- dition to the features from the pipeline: CORE ARGUMENT LABEL SEQUENCE.
+  The complete sequence of core argument labels.
+  The sequence also includes the predicate and voice, for instance A0+break.01/Active+A1.
+  MISSING CORE ARGUMENT LABELS.
+  The set of core argument labels declared in the Prop- Bank/NomBank frame that are not present in the predicate?argument structure.
+  Similarly to the syntactic submodel, we trained the global SRL model using the online passive?
+  aggressive algorithm.
+  The cost function ?
+  was defined as the number of incorrect links in the predicate?argument structure.
+  The numbe

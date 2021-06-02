@@ -1,0 +1,9 @@
+ the POS tags are given by the morphological analyzer, the PCFG need not predict words (i.e., head morphemes), only POS tags.
+    Rule probabilities were estimated with MLE.
+    Since only the sentence nonterminal S was smoothed (using add-0.1), the grammar could parse any sequence of tags but was relatively sparse, which kept bilingual run-time down.
+    6 When we combine the PCFG with the other models to do joint bilingual parsing, we simply use the logs of the PCFG probabilities as if they were log-linear weights.
+    A PCFG treated this way is a perfectly valid log-linear model; the exponentials of its weights just happen to satisfy certain sum-to-one constraints.
+    In the spirit of joint optimization, we might have also combined the Korean morphology and syntax models into one inference task.
+    We did not do this, largely out of concerns over computational expense (see the discussion of translation models in &#167;3.4).
+    This parser, independent of the bilingual parser, is evaluated in &#167;4.
+  

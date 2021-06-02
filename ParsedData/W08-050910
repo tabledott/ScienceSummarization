@@ -1,0 +1,12 @@
+
+    It includes model files and statistics over the training corpus.
+    Table 1 is a summary of tables used in each model.
+    In addition to these models, the summation of &#8220;sentence weight&#8221; of the whole corpus should be stored.
+    GIZA++ allows assigning a weight wi for each sentence pair si sto indicate the number of occurrence of the sentence pair.
+    The weight is normalized by pi = wi/ Ei wi, so that Ei pi = 1.
+    Then the pi serves as a prior probability in the objective function.
+    As each child processes only see a portion of training data, it is required to calculate and share the Ei wi among the children so the values can be consistent.
+    The tables and count tables of the lexicon probabilities (TTable) can be extremely large if not pruned before being written out.
+    Pruning the count tables when writing them into a file will make the result slightly different.
+    However, as we will see in Section 5, the difference does not hurt translation performance significantly.
+    Tab

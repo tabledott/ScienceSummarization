@@ -1,0 +1,10 @@
+candidates in another language.
+    Time sequence scoring is then used to re-rank the candidates and choose the one best temporally aligned with the NE.
+    That is, we attempt to choose a candidate which is both a good transliteration (according to the current model) and is well aligned with the NE.
+    Finally, pairs of NEs and the best candidates are used to iteratively train the transliteration model.
+    A major challenge inherent in discovering transliterated NEs is the fact that a single entity may be represented by multiple transliteration strings.
+    One reason is language morphology.
+    For example, in Russian, depending on a case being used, the same noun may appear with various endings.
+    Another reason is the lack of transliteration standards.
+    Again, in Russian, several possible transliterations of an English entity may be acceptable, as long as they are phonetically similar to the source.
+    Thus, in order to rely on the time sequences we obtain, we need to be able to group variants of 

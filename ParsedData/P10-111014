@@ -1,0 +1,8 @@
+the combination, while the resulting prefix cost c&#8242; + v + &#948; is the sum of the prefix cost of the predictor state q, the inside cost of the current state p, and the combo cost.
+    Note the prefix cost of q is irrelevant.
+    The combo cost &#948; = &#958;&#8242; + &#955; consists of shift cost &#958;&#8242; of p and reduction cost &#955; of q.
+    The cost in the non-DP shift-reduce algorithm (Fig.
+    1) is indeed a prefix cost, and the DP algorithm subsumes the non-DP one as a special case where no two states are equivalent.
+    As a concrete example, Figure 4 simulates an edge-factored model (Eisner, 1996; McDonald et al., 2005a) using shift-reduce with dynamic programming, which is similar to bilexical PCFG parsing using CKY (Eisner and Satta, 1999).
+    Here the kernel feature function is 5Note that using inside cost v for ordering would be a bad idea, as it will always prefer shorter derivations like in best-first parsing.
+    As in A* search, we need some estimate of &#8220;outside cost&#822

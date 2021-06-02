@@ -1,0 +1,11 @@
+ to characterize with a similarity metric.
+    An improved system might use a different method to detect candidate relations and then use this kernel method to classify the relations.
+  
+  
+    The most immediate extension is to automatically learn the feature compatibility function C(vq, vr).
+    A first approach might use tf-idf to weight each feature.
+    Another approach might be to calculate the information gain for each feature and use that as its weight.
+    A more complex system might learn a weight for each pair of features; however this seems computationally infeasible for large numbers of features.
+    One could also perform latent semantic indexing to collapse feature values into similar &#8220;categories&#8221; &#8212; for example, the words &#8220;football&#8221; and &#8220;baseball&#8221; might fall into the same category.
+    Here, C(vq, vr) might return &#945;1 if vq = vr, and &#945;2 if vq and vr are in the same category, where &#945;1 &gt; &#945;2 &gt; 0.
+    Any method that provides a &#82

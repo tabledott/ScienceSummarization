@@ -1,0 +1,7 @@
+ of distinct words in our target language training data.
+    The value of n is empirically optimized on annotated development test data.
+    This sort of &#8220;add-n&#8221; smoothing has a poor reputation in statistical NLP, because it has repeatedly been shown to perform badly compared to other methods of smoothing higher-order n-gram models for statistical language modeling (e.g., Chen and Goodman, 1996).
+    In those studies, however, add-n smoothing was used to smooth bigram or trigram models.
+    Add-n smoothing is a way of smoothing with a uniform distribution, so it is not surprising that it performs poorly in language modeling when it is compared to smoothing with higher order models; e.g, smoothing trigrams with bigrams or smoothing bigrams with unigrams.
+    In situations where smoothing with a uniform distribution is appropriate, it is not clear that add-n is a bad way to do it.
+    Furthermore, we would argue that the word translation probabilities of Model 1 are a case where there is no clearly 

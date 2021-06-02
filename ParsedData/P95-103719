@@ -1,0 +1,10 @@
+ than the probability of the highest probability completed parse.
+    Using these two search modes, SPATTER guarantees that it will find the highest probability parse.
+    The only limitation of this search technique is that, for sentences which are modeled poorly, the search might exhaust the available memory before completing both phases.
+    However, these search errors conveniently occur on sentences which SPATTER is likely to get wrong anyway, so there isn't much performance lossed due to the search errors.
+    Experimentally, the search algorithm guarantees the highest probability parse is found for over 96% of the sentences parsed.
+  
+  
+    In the absence of an NL system, SPATTER can be evaluated by comparing its top-ranking parse with the treebank analysis for each test sentence.
+    The parser was applied to two different domains, IBM Computer Manuals and the Wall Street Journal.
+    The first experiment uses the IBM Computer Manuals domain, which consists of sentences extracted from IBM computer ma

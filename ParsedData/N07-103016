@@ -1,0 +1,7 @@
+tor variables x(i,j) that are set to 1 if mentions i and j are coreferent, and 0 otherwise.
+    The objective function takes the following form: This is essentially identical to Barzilay and Lapata&#8217;s objective function, except that we consider only pairs in which the i precedes the j (due to the structure of the problem).
+    Also, we minimize rather than maximize due to the fact we transform the model probabilities with &#8722;log (like Roth and Yih (2004)).
+    This preliminary objective function merely guarantees that ILP will find a global assignment that maximally agrees with the decisions made by the coreference classifier.
+    Concretely, this amounts to taking all (and only) those links for which the classifier returns a probability above .5.
+    This formulation does not yet take advantage of information from a classifier that specializes in anaphoricity; this is the subject of the next section.
+    Roth and Yih (2004) use ILP to deal with the joint inference problem of named entity and relatio

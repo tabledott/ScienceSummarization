@@ -1,0 +1,7 @@
+line, but they concatenate the data to their in-domain corpus and report a decrease in performance.
+    We both keep the models separate and reduce their size.
+    A more general method is that of (Matsoukas et al., 2009), who assign a (possibly-zero) weight to each sentence in the large corpus and modify the empirical phrase counts accordingly.
+    Foster et al (2010) further perform this on extracted phrase pairs, not just sentences.
+    While this soft decision is more flexible than the binary decision that comes from including or discarding a sentence from the subcorpus, it does not reduce the size of the model and comes at the cost of computational complexity as well as the possibility of overfitting.
+    Additionally, the most effective features of (Matsoukas et al., 2009) were found to be meta-information about the source documents, which may not be available.
+    Another perplexity-based approach is that taken by Moore and Lewis (2010), where they use the cross-entropy difference as a ranking function

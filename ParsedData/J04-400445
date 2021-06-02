@@ -1,0 +1,6 @@
+ond case in (19) handles the situation in which the history context was never observed in training, that is, where ci = ui = 0, which would yield an undefined value 25 Collins used this technique to ensure that even futures that were never seen with an observed history context would still have some probability mass, albeit a vanishingly small one (Collins, personal communication, January 2003).
+    Another commonly used technique would be to back off to the uniform distribution, which has the desirable property of not producing deficient estimates.
+    As with all of the treebank- or model-specific aspects of the Collins parser, our engine uses equation (16) or (18) depending on the value of a particular run-time setting.
+    26 The smoothing weights can be viewed as confidence values for the probability estimates with which they are multiplied.
+    The Witten-Bell technique crucially makes use of the quantity ni = ui , the average number of transitions from the history context Oi(B) to a possible future.
+   

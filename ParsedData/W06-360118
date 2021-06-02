@@ -1,0 +1,10 @@
+rmation often leads to a blow-up in forest size, which is exponential to the original size in the worst-case.
+    So instead of determinization, here we present a simple-yet-effective extension to the Algorithm 3 of Huang and Chiang (2005) that guarantees to output unique translated strings: This method should work in general for any equivalence relation (say, same derived tree) that can be defined on derivations.
+  
+  
+    Our experiments are on English-to-Chinese translation, the opposite direction to most of the recent work in SMT.
+    We are not doing the reverse direction at this time partly due to the lack of a sufficiently good parser for Chinese.
+    Our training set is a Chinese-English parallel corpus with 1.95M aligned sentences (28.3M words on the English side).
+    We first word-align them by GIZA++, then parse the English side by a variant of Collins (1999) parser, and finally apply the rule-extraction algorithm of Galley et al. (2004).
+    The resulting rule set has 24.7M xRs rules.
+    We also

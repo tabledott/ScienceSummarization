@@ -1,0 +1,8 @@
+an, 2000), which only focuses on binary ILP problems.
+    Although in theory, a search based strategy may need several steps to find the optimal solution, LPR always generates integer solutions in our experiments.
+    This phenomenon may link to the theory of unimodularity.
+    When the coefficient matrix of a given linear program in its standard form is unimodular, it can be shown that the optimal solution to the linear program is in fact integral (Schrijver, 1986).
+    In other words, LPR is guaranteed to produce an integer solution.
+    Theorem 3.1 indicates that if a linear programming problem is in its standard form, then regardless of the cost function and the integral vector b, the optimal solution is an integer if and only if the coefficient matrix A is unimodular.
+    Although the coefficient matrix in our problem is not unimodular, LPR still produces integer solutions for all the (thousands of cases) we have experimented with.
+    This may be due to the fact that the coefficient matrix shares many p

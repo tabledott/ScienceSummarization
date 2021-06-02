@@ -1,0 +1,8 @@
+f -y corresponds to raising the probabilities of h1 and h2 to the power of &#947; 1 prior to sampling.
+    We ran our Gibbs sampler for 20,000 iterations through the corpus (with -y = 1 for the final 2000) and evaluated our results on a single sample at that point.
+    We calculated precision (P), recall (R), and F-score (F) on the word tokens in the corpus, where both boundaries of a word must be correct to count the word as correct.
+    The induced lexicon was also scored for accuracy using these metrics (LP, LR, LF).
+    Recall that our DP model has three parameters: T, p#, and &#945;0.
+    Given the large number of known utterance boundaries, we expect the value of T to have little effect on our results, so we simply fixed T = 2 for all experiments.
+    Figure 3 shows the effects of varying of p# and &#945;0.3 Lower values of p# cause longer words, which tends to improve recall (and thus F-score) in the lexicon, but decrease token accuracy.
+    Higher values of &#945;0 allow more novel words, which also i

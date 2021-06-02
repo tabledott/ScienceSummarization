@@ -1,0 +1,10 @@
+etrieve relevant example sentences illustrating the suggested correction.
+			For each suggestion, we create an exact string query including a small window of context to the left and to the right of the suggested correction.
+			The query is issued to a search engine, and the retrieved results are separated into sentences.
+			Those sentences that contain the string query are added to a list of example candidates.
+			The candidates are then ranked by two initially implemented criteria: Sentence length (shorter examples are preferred in order to reduce cognitive load) and context overlap (sentences that contain additional words from the user input are preferred).
+			We have not yet performed a user study to evaluate the usefulness of the examples provided by the system.
+			Some examples of usage that we retrieve are given below with the query string in boldface: Original: I am teacher from Korea.
+			Suggestion: I am a teacher from Korea.
+			All top 3 examples: I am a teacher.
+			Original: So Smokers have to see d

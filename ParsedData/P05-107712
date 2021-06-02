@@ -1,0 +1,11 @@
+ence instead of using the usual naive cosine distance calculation between every pair of words we can use the algorithm described in Section 3 to make noun clustering web scalable.
+    To test our algorithm we conduct similarity based experiments on 2 different types of corpus: 1.
+    Web Corpus (70 million web pages, 138GB), 2.
+    Newspaper Corpus (6 GB newspaper corpus) We set up a spider to download roughly 70 million web pages from the Internet.
+    Initially, we use the links from Open Directory project3 as seed links for our spider.
+    Each webpage is stripped of HTML tags, tokenized, and sentence segmented.
+    Each document is language identified by the software TextCat4 which implements the paper by Cavnar and Trenkle (1994).
+    We retain only English documents.
+    The web contains a lot of duplicate or near-duplicate documents.
+    Eliminating them is critical for obtaining better representation statistics from our collection.
+    The problem of identifying near duplicate documents in linear time

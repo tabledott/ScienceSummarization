@@ -1,0 +1,7 @@
+S (Zhang et al., 2003).
+    The English sentences are tokenized by a simple tokenizer of ours and POS tagged by a rule-based tagger written by Eric Brill (Brill, 1995).
+    We manually aligned 935 sentences, in which we selected 500 sentences as test corpus.
+    The remaining 435 sentences are used as development corpus to train POS tags transition probabilities and to optimize the model parameters and gain threshold.
+    Provided with human-annotated word-level alignment, we use precision, recall and AER (Och and Ney, 2003) for scoring the viterbi alignments of each model against gold-standard annotated alignments: where A is the set of word pairs aligned by word alignment systems, S is the set marked in the gold standard as &#8221;sure&#8221; and P is the set marked as &#8221;possible&#8221; (including the &#8221;sure&#8221; pairs).
+    In our ChineseEnglish corpus, only one type of alignment was marked, meaning that S = P. In the following, we present the results of loglinear models for word alignment.
+   

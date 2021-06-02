@@ -1,0 +1,7 @@
+arpens it when &#945; &gt; 1.
+    Because a lattice may represent a number of candidates exponential in the size of its state set, it is often impractical to compute the MBR decoder (Equation 1) directly.
+    However, if we can express the gain function G as a sum of local gain functions gi, then we now show that Equation 1 can be refactored and the MBR decoder can be computed efficiently.
+    We loosely call a gain function local if it can be applied to all paths in the lattice via WFSA intersection (Mohri, 2002) without significantly multiplying the number of states.
+    In this paper, we are primarily concerned with local gain functions that weight n-grams.
+    Let N = {w1, ... , w|N|} be the set of n-grams and let a local gain function gw : &#163; x &#163; &#8212;* R, for w E N, be as follows: where &#952;w is a constant, #w(E0) is the number of times that w occurs in E0, and &#948;w(E) is 1 if w E E and 0 otherwise.
+    That is, gw is &#952;w times the number of occurrences of w in E0, or zero if w does 

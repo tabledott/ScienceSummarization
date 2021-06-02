@@ -1,0 +1,10 @@
+ed tree.
+    Formally, the channel probability P is where , , and is a sequence of leaf words of a tree transformed byfrom .
+    The model tables ,, and are called the r-table, n-table, and t-table, respectively.
+    These tables contain the probabilities of the channel operations (,,) conditioned by the features ( , , ).
+    In Figure 1, the r-table specifies the probability of having the second tree (Reordered) given the first tree.
+    The n-table specifies the probability of having the third tree (Inserted) given the second tree.
+    The t-table specifies the probability of having the fourth tree (Translated) given the third tree.
+    The probabilities in the model tables are automatically obtained by an EM-algorithm using pairs of (channel input) and(channel output) as a training corpus.
+    Usually a bilingual corpus comes as pairs of translation sentences, so we need to parse the corpus.
+    As we need to parse sentences on the channel input side only, many X-to-English translation systems can be devel

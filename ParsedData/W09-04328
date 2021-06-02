@@ -1,0 +1,10 @@
+ge model.
+    The following research questions summarize our basic interest in this work:
+  
+  
+    The investigation presented in this paper was carried out with the Moses toolkit (Koehn et al., 2007), a state-of-the-art open-source phrase-based SMT system.
+    We trained Moses in a standard configuration, including a 4-feature translation model, a 7-feature lexicalized re-ordering model, one LM, word and phrase penalties.
+    The translation and the re-ordering model relied on &#8220;grow-diag-final&#8221; symmetrized word-toword alignments built using GIZA++ (Och and Ney, 2003) and the training script of Moses.
+    A 5-gram language model was trained on the target side of the training parallel corpus using the IRSTLM toolkit (Federico et al., 2008), exploiting Modified Kneser-Ney smoothing, and quantizing both probabilities and backoff weights.
+    Decoding was performed applying cube-pruning with a poplimit of 6000 hypotheses.
+    Log-linear interpolations of feature functions were estimated with the para

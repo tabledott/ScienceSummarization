@@ -1,0 +1,5 @@
+nd, for each c, first guessing the pre-terminal of c, t(c) (t for &#8220;tag&#8221;), then the lexical head of c, h(c), and then the expansion of c into further constituents e(c).
+    Thus the probability of a parse is given by the equation where l(c) is the label of c (e.g., whether it is a noun phrase (np), verb phrase, etc.) and H(c) is the relevant history of c &#8212; information outside c that our probability model deems important in determining the probability in question.
+    In [3] H(c) approximately consists of the label, head, and head-part-of-speech for the parent of c: m(c), i(c), and u(c) respectively.
+    One exception is the distribution p(e(c) j l(c), t(c), h(c), H(c)), where H only includes m and u.1 Whenever it is clear to which constituent we are referring we omit the (c) in, e.g., h(c).
+    In this notation the above equation takes the following form: Because this is a point of contrast with the parsers described in the previous section, note that all of the conditional distributions are 

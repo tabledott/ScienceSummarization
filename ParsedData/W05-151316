@@ -1,0 +1,7 @@
+-21 were used for training, section 22 was used for development and tuning of parameters and features, and section 23 was used for testing.
+    Every experiment reported here was performed on a Pentium IV 1.8GHz with 1GB of RAM.
+    Each tree in the training set had empty-node and function tag information removed, and the trees were lexicalized using similar head-table rules as those mentioned in (Collins, 1996).
+    The trees were then converted into trees containing only unary and binary branching, using the binarization transform described in section 2.
+    Classifier training instances of features paired with classes (parser actions) were extracted from the trees in the training set, as described in section 2.3.
+    The total number of training instances was about 1.5 million.
+    The classifier in the SVM-based parser (denoted by SVMpar) uses the polynomial kernel with degree 2, following the work of Yamada and Matsumoto (2003) on SVM-based deterministic dependency parsing, and a one-against-all scheme f

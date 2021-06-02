@@ -1,0 +1,6 @@
+ndent.15 These subcats may be thought of as lists of requirements on a particular side of a head.
+    For example, in Figure 8, after the root node of the tree has been generated (see Section 6.10), the head child VP is generated, conditioning on both the parent label S and the headword of that parent, sat&#8211;VBD.
+    Before any modifiers of the head-child are generated, both a left- and right-subcat frame are generated.
+    In this case, the left subcat is {NP-A} and the right subcat is {}, meaning that there are no required elements to be generated on the right side of the head.
+    Subcats do not specify the order of the required arguments.
+    They are dynamically updated multisets: When a requirement has been generated, it is removed from the multiset, and subsequent modifiers are generated conditioning on the updated multiset.16 The implementation of subcats in Collins&#8217; parser is even more specific: Subcats are multisets containing various numbers of precisely six types of items: NP-A, S-A, SBA

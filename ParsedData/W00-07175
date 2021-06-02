@@ -1,0 +1,10 @@
+t this point we have a preliminary clustering &#8212; no very rare words will be included, and some common words will also not be assigned, because they are ambiguous or have idiosyncratic distributional properties.
+  
+  
+    Ambiguity can be handled naturally within this framework.
+    The context distribution p(w) of a particular ambiguous word w can be modelled as a linear combination of the context distributions of the various clusters.
+    We can find the mixing coefficients by minimising efficients that sum to unity and the qi are the context distributions of the clusters.
+    A minimum of this function can be found using the EM algorithm(Dempster et al., 1977).
+    There are often several local minima &#8212; in practice this does not seem to be a major problem.
+    Note that with rare words, the KL divergence reduces to the log likelihood of the word's context distribution plus a constant factor.
+    However, the observed context distributions of rare words may be insufficient to make a definite deter

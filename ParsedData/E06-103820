@@ -1,0 +1,8 @@
+
+    Our model includes all features, including those that are unsupported.
+    The advantage of this is that the model can learn negative weights for features that are indicative of bad compressions.
+    This is not difficult to do since most features are POS based and the feature set size even with all these features is only 78,923.
+    Having defined a feature encoding and decoding algorithm, the last step is to learn the feature weights w. We do this using the Margin Infused Relaxed Algorithm (MIRA), which is a discriminative large-margin online learning technique shown in Figure 3 (Crammer and Singer, 2003).
+    On each iteration, MIRA considers a single instance from the training set (xt, yt) and updates the weights so that the score of the correct compression, yt, is greater than the score of all other compressions by a margin proportional to their loss.
+    Many weight vectors will satisfy these constraints so we pick the one with minimum change from the previous setting.
+    We define the loss to be 

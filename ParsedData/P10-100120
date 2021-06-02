@@ -1,0 +1,6 @@
+efines dependency parsing models where each word has a set of possible &#8220;senses&#8221; and the parser recovers the best joint assignment of syntax and senses.
+    Our new parsing algorithms could be implemented by defining the &#8220;sense&#8221; of each word as the index of its head.
+    However, when parsing with senses, the complexity of the Eisner (2000) parser increases by factors of O(53) time and O(52) space (ibid., Section 4.2).
+    Since each word has n potential heads, a direct application of the word-sense parser leads to time and space complexities of O(n6) and O(n4), respectively, in contrast to our O(n4) and O(n3).5 Eisner (2000) also uses head automata to score or recognize the dependents of each head.
+    An interesting question is whether these automata could be coerced into modeling the grandparent indices used in our parsing algorithms.
+    However, note that the head automata are defined in a sentenceindependent manner, with two automata per word in the vocabulary (ibid., Section 2).

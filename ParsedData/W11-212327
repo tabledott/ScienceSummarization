@@ -1,0 +1,9 @@
+ses system for the French-English track of the 2011 Workshop on Machine Translation,9 translating the 3003-sentence test set.
+    Based on revision 4041, we modified Moses to print process statistics before terminating.
+    Process statistics are already collected by the kernel (and printing them has no meaningful impact on performance).
+    SRILM&#8217;s compact variant has an incredibly expensive destructor, dwarfing the time it takes to perform translation, and so we also modified Moses to avoiding the destructor by calling exit instead of returning normally.
+    Since our destructor is an efficient call to munmap, bypassing the destructor favors only other packages.
+    The binary language model from Section 5.2 and text phrase table were forced into disk cache before each run.
+    Time starts when Moses is launched and therefore includes model loading time.
+    These conaUses lossy compression. bThe 8-bit quantized variant returned incorrect probabilities as explained in Section 3.
+    It did 402 queries

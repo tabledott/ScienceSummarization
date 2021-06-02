@@ -1,0 +1,9 @@
+each of the internal nodes with a hypernym describing its descendant nouns.
+  
+  
+    Following WordNet, a word A is said to be a hypernym of a word B if native speakers of English accept the sentence &amp;quot;B is a (kind of) A.&amp;quot; To determine possible hypernyms for a particular noun, we use the same parsed text described in the previous section.
+    As suggested in Hearst (1992), we can find some hypernym data in the text by looking for conjunctions involving the word &amp;quot;other&amp;quot;, as in &amp;quot;X, Y, and other Zs&amp;quot; (patterns 3 and 4 in Hearst).
+    From this phrase we can extract that Z is likely a hypernym for both X and Y.
+    This data is extracted from the parsed text, and for each noun we construct a vector of hypernyms, with a value of 1 if a word has been seen as a hypernym for this noun and 0 otherwise.
+    These vectors are associated with the leaves of the binary tree constructed in the previous section.
+    For each internal node of the tree, we construct a vector

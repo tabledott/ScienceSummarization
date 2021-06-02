@@ -1,0 +1,11 @@
+uracy on the RTE-1 and event annotation tasks.
+    (The other categorical task, word sense disambiguation, could not be improved because it already had maximum accuracy.)
+    First we took a sample of annotations giving k responses per example.
+    Within this sample, we trained and tested via 20-fold cross-validation across examples.
+    Worker models were fit using Laplace smoothing of 1 pseudocount; label priors were uniform, which was reasonably similar to the empirical distribution for both tasks. curacy increase, averaged across 2 through 10 annotators.
+    We find a +3.4% gain on event annotation.
+    Finally, we experimented with a similar calibration method for numeric data, using a Gaussian noise model for each worker: ywJx &#8212; N(x + pw, aw).
+    On the affect task, this yielded a small but consistent increases in Pearson correlation at all numbers of annotators, averaging a +0.6% gain.
+  
+  
+    In this section we train a supervised affect recognition system with expert vs. non-expert annotatio

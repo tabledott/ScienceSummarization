@@ -1,0 +1,10 @@
+lience, it uses a more intuitive and simpler definition based on distance, and incorporated it as a prior.
+    Another difference is in identifying heads.
+    For the ACE datasets, Haghighi and Klein used the gold heads; for the MUC-6 dataset, where labels are not available, they crudely picked the rightmost token in a mention.
+    We show that a better way is to determine the heads using head rules in a parser.
+    This improves resolution accuracy and is always applicable.
+    Crucially, our MLN leverages syntactic relations such as apposition and predicate nominals, which are not used by Haghighi and Klein.
+    In our approach, what it takes is just adding two formulas to the MLN.
+    As common in previous work, we assume that true mention boundaries are given.
+    We do not assume any other labeled information.
+    In particular, we do not assume gold name entity recognition (NER) labels, and unlike Haghighi &amp; Klein (2007), we do not assume gold mention types (for ACE datasets, they also used gold hea

@@ -1,0 +1,7 @@
+ecause it is relatively upto-date, and because its sentences tend to make explicit many facts that might be omitted in newswire.
+    Much of the information in Freebase is derived from tabular data from Wikipedia, meaning that Freebase relations are more likely to appear in sentences in Wikipedia.
+    Each sentence of this unstructured text is dependency parsed by MINIPAR to produce a dependency graph.
+    In preprocessing, consecutive words with the same named entity tag are &#8216;chunked&#8217;, so that Edwin/PERSON Hubble/PERSON becomes [Edwin Hubble]/PERSON.
+    This chunking is restricted by the dependency parse of the sentence, however, in that chunks must be contiguous in the parse (i.e., no chunks across subtrees).
+    This ensures that parse tree structure is preserved, since the parses must be updated to reflect the chunking.
+    For held-out evaluation experiments (see section 7.1), half of the instances of each relation are not used in training, and are later used to compare against newly discove

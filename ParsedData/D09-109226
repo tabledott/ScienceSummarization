@@ -1,0 +1,10 @@
+sh, German, Greek, English, Farsi, Finnish, French, Hebrew, Italian, Polish, Russian and Turkish.
+    These versions of Wikipedia were selected to provide a diverse range of language families, geographic areas, and quantities of text.
+    We preprocessed the data by removing tables, references, images and info-boxes.
+    We dropped all articles in non-English languages that did not link to an English article.
+    In the English version of Wikipedia we dropped all articles that were not linked to by any other language in our set.
+    For efficiency, we truncated each article to the nearest word after 1000 characters and dropped the 50 most common word types in each language.
+    Even with these restrictions, the size of the corpus is 148.5 million words.
+    We present results for a PLTM with 400 topics.
+    1000 Gibbs sampling iterations took roughly four days on one CPU with current hardware.
+    As with EuroParl, we can calculate the JensenShannon divergence between pairs of documents within a comparable do

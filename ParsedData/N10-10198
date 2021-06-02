@@ -1,0 +1,7 @@
+ of preposition errors in our learner data.
+    At prediction time, the presence and choice classifiers produce a list of potential changes in preposition/article usage for the given context.
+    Since the application of our system consists of suggesting corrections to a user, we do not consider identity operations where the suggested word choice equals the actual word choice.
+    For a potential preposition/article location where there is no preposition/article, each of the candidates is considered for an insertion operation.
+    For a potential location that contains a preposition/article, the possible operations include deletion of the existing token or substitution with another preposition/article from the candidate set.
+    Training data for the classifiers is a mix of primarily well-formed data sources: There are about 2.5 million sentences, distributed roughly equally across Reuters newswire, Encarta encyclopedia, UN proceedings, Europarl and web-scraped general domain data1.
+    From the total set of 

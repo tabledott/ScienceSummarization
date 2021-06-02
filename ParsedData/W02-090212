@@ -1,0 +1,8 @@
+n respect to 150 so-called peripheral tokens, basically the most frequent words.
+    These counts are collected for each position in a 4-word window around the word in focus.
+    This results in a 600-dimensional vector.
+    Instead of comparing these co-occurrence counts directly, the Spearman rank order correlation is applied: For each position the tokens are compared in frequency and the frequency count is replaced by the frequency rank &#8211; the most frequent token count is replaced by 1, the least frequent by n = 150.
+    The similarity of two context vectors a = (ai) and b = (bi) is then defined by:3 The result of all this is a matrix with similarity scores between all German words, and second one with similarity scores between all English words.
+    Such matrices could also be constructed using the definitions of context we reviewed in the previous section.
+    The important point here is that we have generated a similarity matrix, which we will use now to find new translation word pairs.
+    Again, 

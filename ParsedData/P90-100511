@@ -1,0 +1,11 @@
+ros.
+    A node value corresponding to such a row or a column cannot participate in any solution, so it can be abandoned without further checking.
+    The filtering algorithm identifies such inconsistent values and removes them from the domains.
+    Removing a value from one domain may make another value in another domain inconsistent, so the process is propagated over the network until the network becomes arc consistent.
+    Filtering does not generate solutions, but may significantly reduce the search space.
+    In our example, the constraint network shown in Figure 5 is already arc consistent, so nothing can be done by filtering at this point.
+  
+  
+    To illustrate how we can add new constraints to narrow down the ambiguity, let us introduce additional constraints (G2b-1) and (G2b-2), assuming that appropriate syntactic and/or semantic features are attached to each word and that the function NO is provided to access these features.
+    Note that these constraints are not purely syntactic.
+    Any kind of

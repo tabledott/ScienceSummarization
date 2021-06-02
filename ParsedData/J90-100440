@@ -1,0 +1,11 @@
+eature structure is made at the start of the generation process.
+    Completeness is achieved by testing whether the semantics of the shadow is subsumed by the copy.
+    As it stands, the generation algorithm chooses particular lexical forms on-line.
+    This approach can lead to a certain amount of unnecessary nondeterminism.
+    The choice of a particular form depends on the available semantic and syntactic information.
+    Sometimes there is not enough information available to choose a form deterministically.
+    For instance, the choice of verb form might depend on syntactic features of the verb's subject available only after the subject has been generated.
+    This nondeterminism can be eliminated by deferring lexical choice to a postprocess.
+    Inflectional and orthographical rules are only applied when the generation process is finished and all syntactic features are known.
+    In short, the generator will yield a list of lexical items instead of a list of words.
+    To this list the inflectional and 

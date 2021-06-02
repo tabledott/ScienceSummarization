@@ -1,0 +1,12 @@
+res reparsing the training corpus w. In this section, we describe a component-wise Hastings algorithm for sampling directly fromP(t|w, ?), marginalizing over the produc tion probabilities ?.
+			Transitions between states are produced by sampling parses ti from P(ti|wi, t?i, ?) for each string wi in turn, where t?i = (t1, . . .
+			, ti?1, ti+1, . . .
+			, tn) is the current set of parses for w?i = (w1, . . .
+			, wi?1, wi+1, . . .
+			, wn).
+			Marginalizing over ? effectively means that the production probabilities are updated after each sentence is parsed, so it is reasonable to expect that this algorithm will converge faster than the Gibbs sampler described earlier.
+			While the sampler does not explicitly provide samples of ?, the results outlined in Sections 2.3 and 3 can be used to sample the posterior distribution over ? for each sample of t if required.
+			Let PD(?|?)
+			be a Dirichlet product prior, and let?
+			be the probability simplex for ?.
+			Then by inte grating over the posterior Dirichlet distr

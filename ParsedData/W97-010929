@@ -1,0 +1,8 @@
+  We can argue that the insufficient disambiguation context, sparse data problem and empirically set iteration step in the disambiguating algorithm lead to an unreliable disambiguation.
+    However, it is necessary to maintain the understanding that it is the PP attachment rather than the sense disambiguation that is our primary goal.
+    Additionally, because the words of the input sentences for the PP attachment are to be assigned senses in the same manner, the sense disambiguation error is concealed.
+    Alhouhg the disambiguation of the training set is computationally the most expensive part of the system, it is done only once.
+    The disambiguation of unseen (testing) examples is done by the same algorithm which is modified to exclude the SDT iteration cycles.
+    It is therefore reasonably fast even for real-life applications.
+    The PP attachment using the decision tree is extremely efficient and reliable.
+    We have induced the decision tree separately for each preposition in the training corpus, c

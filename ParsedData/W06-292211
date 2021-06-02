@@ -1,0 +1,8 @@
+.g.
+    Portuguese, training required over 4 days but produced a bad model which could not be used (I tried both the TinySVM (Kudo 2002) and the LIBSVM (Chang and Lin 2001) implementations).
+    Given the speed of the Maximum Entropy classifier, I explored whether increasing the number of features could improve accuracy.
+    I experimented adding various features controlled by the parameters above: none appeared to be effective, except the addition of the previous action.
+    The classifier returns both the action and the label to be assigned.
+    Some experiments were carried out splitting the task among several specialized classifiers.
+    I experimented with: 2. two classifiers: one to decide which action to perform and a second one to choose the dependency in case of Left/Right action None of these variants produced improvements in precision.
+    Only a small improvement in labeled attachment score was noticed using the full, nonspecialized classifier to decide the action but discarding its suggestion for

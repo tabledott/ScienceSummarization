@@ -1,0 +1,8 @@
+ning on those entries in a way similar to an n-gram.
+    In empirical trials, Goddeau used the top two stack entries to condition the word probability.
+    He was able to reduce both sentence and word error rates on the ATIS corpus using this method.
+    The structured language model (SLM) used in Chelba and Jelinek (1998a, 1998b, 1999), Jelinek and Chelba (1999), and Chelba (2000) is similar to that of Goddeau, except that (i) their shift-reduce parser follows a nondeterministic beam search, and (ii) each stack entry contains, in addition to the nonterminal node label, the headword of the constituent.
+    The SLM is like a trigram, except that the conditioning words are taken from the tops of the stacks of candidate parses in the beam, rather than from the linear order of the string.
+    Their parser functions in three stages.
+    The first stage assigns a probability to the word given the left context (represented by the stack state).
+    The second stage predicts the POS given the word and the left context

@@ -1,0 +1,6 @@
+ with 300 independent variables, and the training data (the noun-AN pairs available for each test set adjective) range from about 200 to more than 1K items.
+    We estimate the coefficients using (multivariate) partial least squares regression (PLSR) as implemented in the R pls package (Mevik and Wehrens, 2007).
+    With respect to standard least squares estimation, this technique is more robust against over-training by effectively using a smaller number of orthogonal &#8220;latent&#8221; variables as predictors (Hastie et al., 2009, Section 3.4), and it exploits the multivariate nature of the problem (different regressions for each AN vector dimension to be predicted) when determining the latent dimensions.
+    The number of latent variables to be used in the core regression are a free parameter of PLSR.
+    For efficiency reasons, we did not optimize it.
+    We picked instead 50 latent variables, by the ruleof-thumb reasoning that for any adjective we can use at least 200 noun-AN pairs for training, and the

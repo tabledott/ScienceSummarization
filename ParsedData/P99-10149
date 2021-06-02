@@ -1,0 +1,6 @@
+   We constructed an evaluation corpus of (v, n, v') triples by randomly cutting a test corpus of 3000 (v, n) pairs out of the original corpus of 1280712 tokens, leaving a training corpus of 1178698 tokens.
+    Each noun n in the test corpus was combined with a verb v' which was randomly chosen according to its frequency such that the pair (v', n) did appear neither in the training nor in the test corpus.
+    However, the elements v, v', and n were required to be part of the training corpus.
+    Furthermore, we restricted the verbs and nouns in the evalutation corpus to the ones which occured at least 30 times and at most 3000 times with some verb-functor v in the training corpus.
+    The resulting 1337 evaluation triples were used to evaluate a sequence of clustering models trained from the training corpus.
+    The clustering models we evaluated were parametrized in starting values of the training algorithm, in the number of classes of the model, and in the number of iteration steps, resulting in a sequence 

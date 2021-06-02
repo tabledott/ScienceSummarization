@@ -1,0 +1,7 @@
+ possible English translations for German and Spanish compound nouns.
+    We use normalized Web counts of named entity phrases as the first re-scoring factor used to rescore translation candidates.
+    For the &#8220; klyntwn byl&#8221; example, the top two translation candidates are Bell Clinton with transliteration score and Bill Clinton with score .
+    The Web frequency counts of these two names are: and respectively.
+    This gives &#8220; al-h&#728; n&#175;azyr kyl &#711;gwn.&#8221; The transliteration module proposes Jon and John as possible transliterations for the first name, and Keele and Kyl among others for the last name.
+    The normalized counts for the individual words are: (John, 0.9269), (Jon, 0.0688), (Keele, 0.0032), and (Kyl, 0.0011).
+    To use these normalized counts to score and rank the first name/last name combinations in a way similar to a unigram language model, we would get the following name/score pairs: (John Keele, 0.003), (John Kyl, 0.001), (Jon Keele, 0.0002), and (Jon Kyl, ).

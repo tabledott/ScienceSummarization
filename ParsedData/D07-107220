@@ -1,0 +1,12 @@
+			E z )q(?
+			B z ) } .
+			(5) We further restrict q(?Tz ), q(?
+			E z ), q(?
+			B z ) to be Dirichlet distributions, but allow q(z) to be any multinomial distribution.
+			We constrain q(?)
+			to be a degenerate distribution truncated at K; i.e., ?z = 0 for z &gt; K. While the posterior grammar does havean infinite number of symbols, the exponential decay of the DP prior ensures that most of the probability mass is contained in the first few symbols (Ishwaran and James, 2001).2 While our variational ap proximation q is truncated, the actual PCFG model is not.
+			AsK increases, our approximation improves.
+			2.8 Coordinate-wise ascent.
+			The optimization problem defined by Equation (4)is intractable and nonconvex, but we can use a simple coordinate-ascent algorithm that iteratively op timizes each factor of q in turn while holding the others fixed.
+			The algorithm turns out to be similar in form to EM for an ordinary PCFG: optimizing q(z) is the analogue of the E-step, and optimizing q(?)
+			is the analogue

@@ -1,0 +1,9 @@
+probability is higher than the most probable correct derivation but which do not give the correct MR. Figure 5 shows an example of an in correct derivation.
+			Here the function ?next to?is missing from the MR it produces.
+			The following procedure is used to collect negative ex amples from incorrect derivations.
+			The incorrectderivation and the most probable correct deriva tion are traversed simultaneously starting from the root using breadth-first traversal.
+			The first nodes where their productions differ is detected, and all of the words covered by the these nodes (in bothderivations) are marked.
+			In the correct and incorrect derivations shown in figures 3 and 5 respec tively, the first nodes where the productions differ are ?(STATE ? NEXT TO(STATE), [5..9])?
+			and ?(STATE ? STATEID, [8..9])?.
+			Hence, the union of words covered by them: 5 to 9 (?the states bordering Texas??), will be marked.
+			For each of these marked words, the procedure considers all of the productions which cover it in the tw

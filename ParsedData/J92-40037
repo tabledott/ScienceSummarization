@@ -1,0 +1,8 @@
+am model.
+    We estimate the parameters of an n-gram model by examining a sample of text, tf, which we call the training text, in a process called training.
+    If C(w) is the number of times that the string w occurs in the string 1-T, then for a 1-gram language model the maximum likelihood estimate for the parameter Pr (w) is C(w)/T.
+    To estimate the parameters of an n-gram model, we estimate the parameters of the (n -1)-gram model that it contains and then choose the order-n parameters so as to maximize Pr (tnT trii -1).
+    Thus, the order-n parameters are We call this method of parameter estimation sequential maximum likelihood estimation.
+    We can think of the order-n parameters of an n-gram model as constituting the transition matrix of a Markov model the states of which are sequences of n - 1 words.
+    Thus, the probability of a transition between the state W1W2 &#8226; &#8226; ' Wn-1 and the state w2w3 &#8226; &#8226; &#8226; wn is Pr (w I W1102 &#8226; &#8226; &#8226; wn-i ) .
+    The steady-s

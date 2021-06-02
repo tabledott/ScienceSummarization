@@ -1,0 +1,5 @@
+ollows: For each row i &#8712; {1, ... , Md} and column j &#8712; {1,...,K} : In other words, the ith row of L(d) has an entry of 1 in column j if and only if the ith document label A(d) i is equal to the topic j, and zero otherwise.
+    As the name indicates, we use the L(d) matrix to project the parameter vector of the Dirichlet topic prior &#945; = (&#945;1, ... , &#945;K)T to a lower dimensional vector &#945;(d) as follows: Clearly, the dimensions of the projected vector correspond to the topics represented by the labels of the document.
+    For example, suppose K = 4 and that a document d has labels given by A(d) = {0,1,1, 0} which implies X(d) = {2, 3}, then L(d) Then, 0(d) is drawn from a Dirichlet distribution with parameters &#945;(d) = L(d) &#215; &#945; = (&#945;2, &#945;3)T (i.e., with the Dirichlet restricted to the topics 2 and 3).
+    This fulfills our requirement that the document&#8217;s topics are restricted to its own labels.
+    The projection step constitutes the deterministic step 6 in T

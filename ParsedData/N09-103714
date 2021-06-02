@@ -1,0 +1,11 @@
+riod being part of the entity, and the entity not corresponding to a single phrase.
+    See Figure 2 for an illustration from the data.
+    In this case, we removed the terminating period from the entity, to produce a consistent annotation.
+    Overall, we found that 656 entities, out of 55,665 total, could not be aligned to a phrase, or multiple contiguous children of a node.
+    We identified and corrected the following sources of inconsistencies: Periods and abbreviations.
+    This is the problem described above with the Corp. example.
+    We corrected it by removing the sentence terminating final period from the entity annotation.
+    Determiners and PPs.
+    Noun phrases composed of a nested noun phrase and a prepositional phrase were problematic when they also consisted of a determiner followed by an entity.
+    We dealt with this by flattening the nested NP, as illustrated in Figure 3.
+    As we discussed in Section 2.1, this tree will then be augmented with an additional node for the entity (see Figur

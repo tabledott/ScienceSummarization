@@ -1,0 +1,9 @@
+ed HMM with Classes 77.2 95.9 Table 1: Tag Accuracy of Unsupervised POS Taggers 5.1 Using Unambiguous Tag Sequences To.
+			Initialize Contextual Probabilities First, we used our unfiltered lexicon along with our tagged corpus to extract non-ambiguous tag sequences.
+			Specifically, we looked for trigrams in which all words contained at most one possible part-of-speech tag.
+			We then used these n-grams and their counts to bias the initial estimates of state transitions in the HMM taggers.
+			This approach is similar to that described in Ratnaparhki (1998), who used unambiguous phrasal attachments to train an unsupervised prepositional phrase attachment model.
+			5.2 HMM Model Training Revised.
+			Second, we revised the training paradigm for HMMs, in which lexical and transition probabilities are typically estimated simultaneously.
+			We decided to train the transition model probabilities first, keeping the lexical probabilities constant and uniform.
+			Using the estimates initially biased by the method previo

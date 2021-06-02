@@ -1,0 +1,7 @@
+sing the same algorithm described in Section 3, except we maximize summed 02 link scores (Gale and Church, 1991), rather than alignment probability.
+    This produces a reasonable one-to-one word alignment that we can refine using our probability model.
+    Our use of the one-to-one constraint and the cohesion constraint precludes sampling directly from all possible alignments.
+    These constraints tie words in such a way that the space of alignments cannot be enumerated as in IBM models 1 and 2 (Brown et al., 1993).
+    Taking our lead from IBM models 3, 4 and 5, we will sample from the space of those highprobability alignments that do not violate our constraints, and then redistribute our probability mass among our sample.
+    At each search state in our alignment algorithm, we consider a number of potential links, and select between them using a heuristic completion of the resulting state.
+    Our sample S of possible alignments will be the most probable alignment, plus the greedy completions of the state

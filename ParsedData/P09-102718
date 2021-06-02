@@ -1,0 +1,12 @@
+(EN) and SVM(CN) by averaging the prediction values in the same way with the co-training approach.
+    TSVM(CN): This method applies the transductive SVM with only Chinese features for sentiment classification in the Chinese view.
+    Only English-to-Chinese translation is needed.
+    And the unlabeled set is used.
+    TSVM(EN): This method applies the transductive SVM with only English features for sentiment classification in the English view.
+    Only Chinese-to-English translation is needed.
+    And the unlabeled set is used.
+    TSVM(ENCN1): This method applies the transductive SVM with both English and Chinese features for sentiment classification in the two views.
+    Both English-to-Chinese and Chinese-toEnglish translations are required.
+    And the unlabeled set is used.
+    TSVM(ENCN2): This method combines the results of TSVM(EN) and TSVM(CN) by averaging the prediction values.
+    Note that the first four methods are straightforward methods used in previous work, while the latter four methods are 

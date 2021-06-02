@@ -1,0 +1,8 @@
+ranslation (SMT).
+    Standard ngram language models assign probabilities to translation hypotheses in the target language, typically as smoothed trigram models, e.g.
+    (Chiang, 2005).
+    Although it is well-known that higher-order LMs and models trained on additional monolingual corpora can yield better translation performance, the challenges in deploying large LMs are not trivial.
+    Increasing the order of an n-gram model can result in an exponential increase in the number of parameters; for corpora such as the English Gigaword corpus, for instance, there are 300 million distinct trigrams and over 1.2 billion 5-grams.
+    Since a LM may be queried millions of times per sentence, it should ideally reside locally in memory to avoid time-consuming remote or disk-based look-ups.
+    Against this background, we consider a radically different approach to language modelling: instead of explicitly storing all distinct n-grams, we store a randomised representation.
+    In particular, we show that the Bloom filt

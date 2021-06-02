@@ -1,0 +1,7 @@
+lgorithm with the occurs check.
+    (The default unification in most Prolog systems is unsound in this respect.)
+    The reason is simple.
+    Consider, for example, a grammar with a gap-threading treatment of wh-movement (Pereira 1981; Pereira and Shieber 1985), which might include the rule np(Agr, [np(Agr)/SeminX)/Sem &#8212;&gt; stating that an NP with agreement Agr and semantics Sem can be empty provided that the list of gaps in the NP can be represented as the difference list [np(Agr)/SeminX, that is, the list containing an NP gap with the same agreement features Agr.
+    Because the above rule is a nonchain rule, it will be considered when trying to generate any nongap NP, such as the proper noun np(3-sing,G-G)/john.
+    The base case of connect will try to unify that term with the head of the rule above, leading to the attempted unification of X with [np(Agr)/SemIX], an occurs-check failure that would not be caught by the default Prolog unification algorithm.
+    The base case, incorporating the explic

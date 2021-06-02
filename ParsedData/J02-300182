@@ -1,0 +1,6 @@
+ introduce a dependency between the classifications of the sentence&#8217;s various constituents with a single parameter.
+    Thus, it can handle the alternation of our example without, for example, introducing the role chosen for one constituent as an additional feature in the probability distribution for the next constituent&#8217;s role.
+    It appears that because introducing additional features can further fragment our already sparse data, it is preferable to have a single parameter for the FEG prior.
+    An interesting result reinforcing this conclusion is that some of the argumentstructure features that aided the system when individual frame elements were considered independently are unnecessary when using FEG priors.
+    Removing the features passive and position from the system and using a smaller lattice of only the distributions not employing these features yields an improved performance of 82.8% on the role-labeling task using hand-annotated boundaries.
+    We believe that, because these features 

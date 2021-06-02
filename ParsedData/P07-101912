@@ -1,0 +1,7 @@
+lazy version of Algorithm 2 (see Table 1).
+    Instead of traversing the forest bottom-up, cube growing visits nodes recursively in depth-first order from the root node (Figure 4).
+    First we call LAZYJTHBEST(TOP,1), which uses the same algorithm as cube pruning to find the 1-best +LM item of the root node using the best +LM items of assuming hcombo(e) = 0.1 for this hyperedge; (b) cube growing prevents early ranking of the top-left cell (2.5) as the best item in this grid. the antecedent nodes.
+    However, in this case the best +LM items of the antecedent nodes are not known, because we have not visited them yet.
+    So we recursively invoke LAZYJTHBEST on the antecedent nodes to obtain them as needed.
+    Each invocation of LAZYJTHBEST(v, j) will recursively call itself on the antecedents of v until it is confident that the jth best +LM item for node v has been found.
+    Consider again the case of one hyperedge e. Because of the nonmonotonicity caused by combination costs, the first +LM item ((e,1)) pop

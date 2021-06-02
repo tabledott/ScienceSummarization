@@ -1,0 +1,5 @@
+[start index..end index] if (word, tag) consistent with tagdict: for item E agendas[start index &#8722; 1]: line POS tagger, candidates in the beam are tagged sequences ending with the current word, which can be compared directly with each other.
+    However, for the joint problem, candidates in the beam are segmented and tagged sequences up to the current character, where the last word can be a complete word or a partial word.
+    A problem arises in whether to give POS tags to incomplete words.
+    If partial words are given POS tags, it is likely that some partial words are &#8220;justified&#8221; as complete words by the current POS information.
+    On the other hand, if partial words are not given POS tag features, the correct segmentation for long words can be lost during partial candidate comparison (since many short completed words with POS tags are likely to be preferred to a long incomplete word with no POS tag features).2 Another possible cause is the exponential growth in the number of possible ca

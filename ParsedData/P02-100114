@@ -1,0 +1,13 @@
+ to optimize?
+    Maximum-likelihood estimation guesses 0&#710; to be the 0 maximizing Hi f&#952;(xi, yi).
+    Maximum-posterior estimation tries to maximize P(0)&#183;Hi f&#952;(xi, yi) where P(0) is a prior probability.
+    In a log-linear parameterization, for example, a prior that penalizes feature strengths far from 1 can be used to do feature selection and avoid overfitting (Chen and Rosenfeld, 1999).
+    The EM algorithm (Dempster et al., 1977) can maximize these functions.
+    Roughly, the E step guesses hidden information: if (xi, yi) was generated from the current f&#952;, which FST paths stand a chance of having been the path used?
+    (Guessing the path also guesses the exact input and output.)
+    The M step updates 0 to make those paths more likely.
+    EM alternates these steps and converges to a local optimum.
+    The M step&#8217;s form depends on the parameterization and the E step serves the M step&#8217;s needs.
+    Let f&#952; be Fig.
+    1a and suppose (xi, yi) = (a(a + b)*, xxz).
+    Du

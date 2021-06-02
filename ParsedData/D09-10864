@@ -1,0 +1,9 @@
+ce corpus in another language.
+    This is an extreme case of out-of-domain data.
+    This leads to the second task of this paper: learning a statistical model to transform a syntactic analysis of a sentence in one language into an analysis of its translation.
+    Tree transformations are often modeled with synchronous grammars.
+    Suppose we are given a sentence w' in the &#8220;source&#8221; language and its translation w into the &#8220;target&#8221; language.
+    Their syntactic parses t' and t are presumably not independent, but will tend to have some parallel or at least correlated structure.
+    So we could jointly model the parses t', t and the alignment a between them, with a model of the form p(t, a, t' I w, w').
+    Such a joint model captures how t, a, t' mutually constrain each other, so that even partial knowledge of some of these three variables can help us to recover the others when training or decoding on bilingual text.
+    This idea underlies a number of recent papers on syntax-based align

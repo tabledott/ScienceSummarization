@@ -1,0 +1,8 @@
+se are significantly better than our results for alignment only (Fisher&#8217;s exact test, p &lt; 0.05), indicating that we gain real value from our features.
+    However, the gain over comparable results from other teams is not significant at the p &lt; 0.05 level.
+    A curious observation is that the results for handtuned weights are as good or better than results for learned weights.
+    A possible explanation runs as follows.
+    Most of the features represent high-level patterns which arise only occasionally.
+    Because the training data contains only a few hundred examples, many features are active in just a handful of instances; their learned weights are therefore quite noisy.
+    Indeed, a feature which is expected to favor entailment may even wind up with a negative weight: the modal feature weak yes is an example.
+    As shown in table 3, the learned weight for this feature was strongly negative &#8212; but this resulted from a single training example in which the feature was active but the hypot

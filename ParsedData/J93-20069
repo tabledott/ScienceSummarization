@@ -1,0 +1,9 @@
+umber of probabilities to be estimated.
+    Rather than assuming w, depends on all previous words and all previous tags, one assumes w, depends only on t,.
+    This independence assumption, of course, is not correct.
+    Yet, it so reduces the number of probabilities that must be estimated and therefore so reduces the amount of data needed to estimate probabilities, that it is a worthwhile simplifying assumption.
+    It is an empirical issue whether alternative assumptions would yield significantly better performance.
+    Second, rather than assuming the tag t, depends on the full sequence of previous tags, we can assume that local context is sufficient.
+    Typically, individuals have assumed tag t, depends only on t,_i and t1_2 (a tri-tag model) or only on tz_i (a bi-tag model).
+    This assumed locality is termed a Markov independence assumption.
+    Using a tri-tag model, we then have the following: If we have sufficient training data, we can estimate the tag n-gram sequence of probabilities and the proba

@@ -1,0 +1,7 @@
+ method produces the same number of words as the hand-segmentation, recall and precision both become equal to one minus the error rate.
+    A perfect segmenter will have an error rate of zero and recall and precision of 100%.
+    All these measures can be calculated automatically from a machine-segmented text, along with the hand-segmented gold standard.
+    Both texts are identical except for the points where spaces are inserted: thus we record just the start and end positions of each word in both versions.
+    For example, &amp;quot;A BC AED F&amp;quot; in the machine-segmented version is mapped to (1,1) (2,3) (4,6) (7,7), and &amp;quot;A BC A ED F&amp;quot; in the hand-segmented version becomes (1,1) (2,3) (4,4) (5,6) (7,7).
+    The number of correctly and incorrectly segmented words is counted by comparing these two sets of positions, indicated by matched and mismatched pairs, respectively&#8212;three correct and two incorrect, in this example.
+    It may be helpful for non-Chinese readers to briefly illu

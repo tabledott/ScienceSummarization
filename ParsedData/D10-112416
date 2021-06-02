@@ -1,0 +1,7 @@
+ical information alone.
+    We then run standard latent Dirichlet allocation to obtain estimates of z for each token (ignoring the locations).
+    From this initialization we can compute the first set of expected counts, which are used to obtain initial estimates of all parameters needed to begin variational inference in the full model.
+    The prior a is the expected mean of each topic &#181;; for each term i, we set a(i) = log N(i) &#8722; log N, where N(i) is the total count of i in the corpus and N = Ei N(i).
+    The variance prior b2 is set to 1, and the prior on &#963;2 is the Gamma distribution 9(2, 200), encouraging minimal deviation from the base topics.
+    The symmetric Dirichlet prior on 0 is set to 12, and the symmetric Dirichlet parameter on &#977; is updated from weak hyperpriors (Minka, 2003).
+    Finally, the geographical model takes priors that are linked to the data: for each region, the mean is very weakly encouraged to be near the overall mean, and the covariance prior is set by the avera

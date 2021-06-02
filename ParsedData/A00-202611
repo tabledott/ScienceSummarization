@@ -1,0 +1,6 @@
+equence from leftto-right, where each word is predicted in the context of its syntactically related parent, grandparent, and siblings.
+    NLG3 requires a corpus that has been annotated with tree structure like the sample dependency tree shown in Figure 1.
+    The probability model for NLG3, shown in Figure 2, conditions on the parent, the two closest siblings, the direction of the child relative to the parent, and the attributes that remain to be generated.
+    Just as in NLG2, p is a distribution over V U *stop*, and the Improved Iterative Scaling algorithm is used to find the feature weights a3.
+    The expression chi(w) denotes the ith closest child to the headword w, par(w) denotes the parent of the headword w, dir E {left, right} denotes the direction of the child relative to the parent, and attr,i denotes the attributes that remain to be generated in the tree when headword w is predicting its ith child.
+    For example, in Figure 1, if w =&amp;quot;flights&amp;quot;, then chi (w) =&amp;quot;evening&amp

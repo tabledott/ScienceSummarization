@@ -1,0 +1,7 @@
+, we define a version of the model, NP2, in which NP= and NP+ are both included as features, with separate weights ANP= and ANP+.
+    &#8226; We define a set of &#8220;standard&#8221; linguistic labels containing {CP, IP, NP, VP, PP, ADJP, ADVP, QP, LCP, DNP} and excluding other labels such as PRN (parentheses), FRAG (fragment), etc.8 We define feature XP= as the disjunction of {CP=, IP=, ..., DNP=}; i.e. its value equals 1 for a rule if the span of f exactly covers a constituent having any of the standard labels.
+    The 7Formally, AVP+ simply contributes to the sum in expression (1), as with all features in the model, but weight optimization using minimum error rate training should, and does, automatically assign this feature a negative weight.
+    8We map SBAR and S labels in Arabic parses to CP and IP, respectively, consistent with the Chinese parses.
+    We map Chinese DP labels to NP.
+    DNP and LCP appear only in Chinese.
+    We ran no ADJP experiment in Chinese, because this label virtually aways spa

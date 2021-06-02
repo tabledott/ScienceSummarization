@@ -1,0 +1,9 @@
+at the character in focus.
+    Features: All characters and previous tag decisions within the context.
+    Tag Set: The tag set is B-PRE1, B-PRE2, B-WRD, IWRD, B-SUFF, I-SUFF where I denotes inside a segment, B denotes beginning of a segment, PRE1 and PRE2 are proclitic tags, SUFF is an enclitic, and WRD is the stem plus any affixes and/or the determiner Al.
+    Table 1 illustrates the correct tagging of the example above, w-b-hsnAt-hm, &#8217;and by their virtues&#8217;.
+    We model this task as a 1-of-24 classification task, where the class labels are POS tags from the collapsed tag set in the Arabic TreeBank distribution.
+    The training data is derived from the collapsed POS-tagged Treebank.
+    Input: A sequence of tokens processed from left-to-right.
+    Context: A window of -2/+2 tokens centered at the focus token.
+    Features: Every character -gram, that occurs in the focus token, the 5 tokens themselves, their &#8216;type&#8217; from the set alpha, numeric , and POS tag decisions for previous toke

@@ -1,0 +1,8 @@
+ntence, and article length (F7).3 Article length (F7) was the only significant baseline factor, with correlation of -0.37.
+    Longer articles are perceived as less well-written and harder to read than shorter ones.
+    None of the other baseline metrics were close to being significant predictors of readability.
+    We use a unigram language model, where the probability of an article is: P(wIM) is the probability of word-type w according to a background corpus M, and C(w) is the number of times w appears in the article.
+    The log likelihood of an article is then: Note that this model will be biased in favor of shorter articles.
+    Since each word has probability less than 1, the log probability of each word is less than 0, and hence including additional words decreases the log likelihood.
+    We compensate for this by performing linear regressions with the unigram log likelihood and with the number of words in the article as an additional variable.
+    The question then arises as to what to use as a backgr

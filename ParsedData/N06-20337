@@ -1,0 +1,10 @@
+ill (1999) proposed two parser combination schemes, one that picks an entire tree from one of the parsers, and one that, like ours, builds a new tree from constituents from the initial trees.
+    The latter scheme performed better, producing remarkable results despite its simplicity.
+    The combination is done with a simple majority vote of whether or not constituents should appear in the combined tree.
+    In other words, if a constituent appears at least (m + 1)/2 times in the output of the m parsers, the constituent is added to the final tree.
+    This simple vote resulted in trees with f-score significantly higher than the one of the best parser in the combination.
+    However, the scheme heavily favors precision over recall.
+    Their results on WSJ section 23 were 92.1 precision and 89.2 recall (90.61 f-score), well above the most accurate parser in their experiments (88.6 f-score).
+  
+  
+    In our dependency parsing experiments we used unlabeled dependencies extracted from the Penn Treebank using the

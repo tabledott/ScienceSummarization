@@ -1,0 +1,11 @@
+ble.
+    In Table 2, S0h2, S0l2, S0r2 and N0l2 refer to the head of S0h, the second leftmost modifier and the second rightmost modifier of S0, and the second leftmost modifier of N0, respectively.
+    The new templates include unigram word, POS-tag and dependency labels of S0h2, S0l2, S0r2 and N0l2, as well as POS-tag combinations with S0 and N0.
+    Set of dependency labels with S0 and N0 As a more global feature, we include the set of unique dependency labels from the modifiers of S0 and N0.
+    This information is combined with the word and POS-tag of S0 and N0 to make feature templates.
+    In Table 2, sl and sr stands for the set of labels on the left and right of the head, respectively.
+  
+  
+    Our experiments were performed using the Penn Treebank (PTB) and Chinese Treebank (CTB) data.
+    We follow the standard approach to split PTB3, using sections 2 &#8211; 21 for training, section 22 for development and 23 for final testing.
+    Bracketed sentences from PTB were transformed into dependency format

@@ -1,0 +1,10 @@
+ular target (conditioning) words with wildcards will be smoother than the original relative frequencies.
+    A simple scheme for combining them is just to average: One might also consider progressively replacing the least informative remaining word in the target phrase (using tf-idf or a similar measure).
+    The same idea could be applied in reverse, by replacing particular source (conditioned) words with wildcards.
+    We have not yet implemented this new glass-box smoothing technique, but it has considerable appeal.
+    The idea is similar in spirit to Collins&#8217; backoff method for prepositional phrase attachment (Collins and Brooks, 1995).
+  
+  
+    As mentioned previously, (Chen and Goodman, 1998) give a comprehensive survey and evaluation of smoothing techniques for language modeling.
+    As also mentioned previously, there is relatively little published work on smoothing for statistical MT.
+    For the IBM models, alignment probabilities need to be smoothed for combinations of sentence lengths and 

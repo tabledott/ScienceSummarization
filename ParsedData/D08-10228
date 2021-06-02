@@ -1,0 +1,6 @@
+8220;Bush U with Sharon&#8221;.
+    But contiguity alone is not enough to ensure well-formedness, since there might be words within the span aligned to source words uncovered by the node.
+    So we also define a span s to be faithful to node v if every word in it is only aligned to nodes dominated by v, i.e.
+    : For example, sibling nodes VV and AS in the tree have non-faithful spans (crossed out in the Figure), because they both map to &#8220;held&#8221;, thus neither of them can be translated to &#8220;held&#8221; alone.
+    In this case, a larger tree fragment rooted at VPB has to be extracted.
+    Nodes with non-empty, contiguous, and faithful spans form the admissible set (shaded nodes in the figure), which serve as potential cut-points for rule extraction.3 With the admissible set computed, rule extraction is as simple as a depth-first traversal from the root: we &#8220;cut&#8221; the tree at all admissible nodes to form tree fragments and extract a rule for each fragment, with variables matching the 

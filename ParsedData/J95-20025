@@ -1,0 +1,8 @@
+ted incrementally as it is extended.
+    Tasks (2) and (4) require one more (reverse) pass over the chart constructed from the input.
+    Incremental, left-to-right computation of prefix probabilities is particularly important since that is a necessary condition for using SCFGs as a replacement for finite-state language models in many applications, such a speech decoding.
+    As pointed out by Jelinek and Lafferty (1991), knowing probabilities P(x0 . xi) for arbitrary prefixes xo . xi enables probabilistic prediction of possible follow-words xi+i, as P(xi-Fi Ixo .
+    &#8226; &#8226; xi) = P(xo )/P(xo &#8226; .. xi).
+    These conditional probabilities can then be used as word transition probabilities in a Viterbi-style decoder or to incrementally compute the cost function for a stack decoder (Bahl, Jelinek, and Mercer 1983).
+    Another application in which prefix probabilities play a central role is the extraction of n-gram probabilities from SCFGs (Stolcke and Segal 1994).
+    Here, too, efficient incremen

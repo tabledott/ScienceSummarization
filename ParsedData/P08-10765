@@ -1,0 +1,12 @@
+er. xj = Tj(x) is simply an input x transformed by a predefined function Tj.
+    We assume xj has the same graph structure as x.
+    This means pj(xj, y) can be factorized by the cliques c in G(x, y).
+    That is, pj(xj, y; 0j)=Qc pj(xjc, yc; 0j).
+    Thus, we can incorporate generative models such as Bayesian networks including (1D and 2D) hidden Markov models (HMMs) as these joint PMs.
+    Actually, there is a difference in that generative models are directed graphical models while our conditional PM is an undirected.
+    However, this difference causes no violations when we construct our approach.
+    Let us introduce A0=(A1, ..., AI, AI+1, .
+    .
+    ., AI+J), and h = (f1, ..., fI, log p1, ..., log pJ), which is the concatenation of feature vector f and the loglikelihood of J-joint PMs.
+    Then, we can define a new potential function by embedding the joint PMs; where &#920; = {0j}Jj=1, and hc(yc, x) is h obtained from the corresponding clique c in G(x, y).
+    Since each pj(xjc, yc) has range [0, 1], wh

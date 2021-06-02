@@ -1,0 +1,8 @@
+nd word-segmenting the target side, then applying an off-the-shelf word alignment component to the bitext.
+    The word alignments are used to project the source dependency parses onto the target sentences.
+    From this aligned parallel dependency corpus we extract a treelet translation model incorporating source and target treelet pairs, where a treelet is defined to be an arbitrary connected subgraph of the dependency tree.
+    A unique feature is that we allow treelets with a wildcard root, effectively allowing mappings for siblings in the dependency tree.
+    This allows us to model important phenomena, such as not ... ne...pas.
+    We also train a variety of statistical models on this aligned dependency tree corpus, including a channel model and an order model.
+    To translate an input sentence, we parse the sentence, producing a dependency tree for that sentence.
+    We then employ a decoder to find a combination and ordering of treelet translation pairs that cover the source tree and are optimal acco

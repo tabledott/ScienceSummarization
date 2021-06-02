@@ -1,0 +1,8 @@
+ocal model is not able to represent the count of arguments since the label of each node is decided independently.
+    This feature can very directly and succinctly encode preferences for required arguments and expected number of arguments.
+    As previously observed (Pradhan et al. 2004), including modifying arguments in sequence features is not helpful.
+    This corresponds to the standard linguistic understanding that there are no prevalent constraints on the position or presence of adjuncts in an argument frame, and was confirmed in our experiments.
+    We redefined the whole label sequence features to exclude modifying arguments.
+    The whole label sequence features are the first type of features we add to relax the independence assumptions of the local model.
+    Because these features look at the sequence of labels of all arguments, they capture joint information.
+    There is no limit on the length of the label sequence and thus there is no n-gram Markov order independence assumption (in practice the 

@@ -1,0 +1,7 @@
+
+    In both cases, following standard practice, sentences were stripped of words and punctuation, leaving part-of-speech tags for the unsupervised induction of dependency structure.
+    For English, we train on &#167;2&#8211;21, tune on &#167;22 (without using annotated data), and report final results on &#167;23.
+    For Chinese, we train on &#167;1&#8211;270, use &#167;301&#8211;1151 for development and report testing results on &#167;271&#8211;300.3 To evaluate performance, we report the fraction of words whose predicted parent matches the gold standard corpus.
+    This performance measure is also known as attachment accuracy.
+    We considered two parsing methods after extracting a point estimate for the grammar: the most probable &#8220;Viterbi&#8221; parse (argmaxy p(y  |x, &#952;)) and the minimum Bayes risk (MBR) parse (argminy Ep(y,|x,&#952;)[`(y; x, y')]) with dependency attachment error as the loss function (Goodman, 1996).
+    Performance with MBR parsing is consistently higher than its Viterbi c

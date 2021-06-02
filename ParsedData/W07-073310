@@ -1,0 +1,7 @@
+ which is especially important for the BLEU score.
+    Since the training corpus and tokenization changed, our reused weights are not always optimal in this respect.
+    But only in one case we felt compelled to manually adjust the weight for the word count feature, since the original setup led to a output/reference length ratio of 0.88 on the development test set.
+    For the Europarl test sets, we did not use any domain adaptation techniques, but simply used either just the Europarl training data or the combined data &#8212; whatever gave the higher score on the development test set, although scores differed by only about 0.1&#8211;0.2 %BLEU.
+    In order to be able to re-use the old weights, we were limited to domain adaptation methods that did not change the number of components.
+    We decided to use the interpolated language model method described in Section 2.5.
+    For the different language pairs, optimal interpolation weights differed: We tried to improve performance by increasing some of the limits

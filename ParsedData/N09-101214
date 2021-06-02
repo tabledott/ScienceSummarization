@@ -1,0 +1,11 @@
+ the Shared Logistic Normal prior, which allows different PCFG rule distributions to share components.
+    They use this machinery to investigate smoothing the attachment distributions for (nouns/verbs), and for learning using multiple languages.
+  
+  
+    DMV models the distribution over arguments identically without regard to their order.
+    Instead, we propose to distinguish the distribution over the argument nearest the head from the distribution of subsequent arguments.
+    3 Consider the following changes to the DMV grammar (results shown in Figure 4).
+    First, we will introduce the rule L2H &#8212;* YA L&#8242;H to denote the decision of what argument to generate for positions not nearest to the head.
+    Next, instead of having L&#8242;H expand to HL or L1H, we will expand it to L1H (attach to nearest argument and stop) or L2H (attach to nonnearest argument and continue).
+    We call this the Extended Valence Grammar (EVG).
+    As a concrete example, consider the phrase &#8220;the big hungry dog&#8

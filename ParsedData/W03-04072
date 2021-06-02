@@ -1,0 +1,7 @@
+the Markov model TNT tagger (Brants, 2000) and the maximum entropy C&amp;C tagger (Curran and Clark, 2003).
+    There has been some previous work on boostrapping POS taggers (e.g., Zavrel and Daelemans (2000) and Cucerzan and Yarowsky (2002)), but to our knowledge no previous work on co-training POS taggers.
+    The idea behind co-training the POS taggers is very simple: use output from the TNT tagger as additional labelled data for the maximum entropy tagger, and vice versa, in the hope that one tagger can learn useful information from the output of the other.
+    Since the output of both taggers is noisy, there is a question of which newly labelled examples to add to the training set.
+    The additional data should be accurate, but also useful, providing the tagger with new information.
+    Our work differs from the Blum and Mitchell (1998) formulation of co-training by using two different learning algorithms rather than two independent feature sets (Goldman and Zhou, 2000).
+    Our results show that, when 

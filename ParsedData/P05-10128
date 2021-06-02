@@ -1,0 +1,7 @@
+m is sufficient for both searching the space of dependency parses and, with slight modification, finding the highest scoring tree y for a given sentence x under the edge factorization assumption.
+    Eisner and Satta (1999) give a cubic algorithm for lexicalized phrase structures.
+    However, it only works for a limited class of languages in which tree spines are regular.
+    Furthermore, there is a large grammar constant, which is typically in the thousands for treebank parsers.
+    Figure 3 gives pseudo-code for the generic online learning setting.
+    A single training instance is considered on each iteration, and parameters updated by applying an algorithm-specific update rule to the instance under consideration.
+    The algorithm in Figure 3 returns an averaged weight vector: an auxiliary weight vector v is maintained that accumulates Training data: T = {(xt, yt)}Tt&#65533;1 the values of w after each iteration, and the returned weight vector is the average of all the weight vectors throughout training.

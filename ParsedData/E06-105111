@@ -1,0 +1,6 @@
+ead of sparse subsequences of words, PoS tags, entity and chunk types, or WordNet synsets as in (Bunescu and Mooney, 2005b).
+    More formally, given a relation example R, we represent a pattern P as a row vector where the function tf(ti, P) records how many times a particular token tz is used in P. Note that, this approach differs from the standard bag-ofwords as punctuation and stop words are included in OP, while the entities (with attribute CANDIDATE and OTHER) are not.
+    To improve the classification performance, we have further extended OP to embed n-grams of (contiguous) tokens (up to n = 3).
+    By substituting OP into Equation 1, we obtain the n-gram kernel Kn, which counts common uni-grams, bi-grams, ... , n-grams that two patterns have in common2.
+    The Global Context kernel KGC(R1, R2) is then defined as where KFB, KB and KBA are n-gram kernels that operate on the Fore-Between, Between and Between-After patterns respectively.
+    The type of the candidate interacting entities can provide usefu

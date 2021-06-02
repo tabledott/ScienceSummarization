@@ -1,0 +1,6 @@
+MaxMatch), we built another segmenter with a CRF model.
+    CRF is a statistical sequence modeling framework introduced by Lafferty et al. (2001), and was first used for the Chinese word segmentation task by Peng et al.
+    (2004), who treated word segmentation as a binary decision task.
+    We optimized the parameters with a quasi-Newton method, and used Gaussian priors to prevent overfitting.
+    The probability assigned to a label sequence for a particular sequence of characters by a CRF is given by the equation: x is a sequence of T unsegmented characters, Z(x) is the partition function that ensures that Equation 1 is a probability distribution, { fk}Kk=1 is a set of feature functions, and y is the sequence of binary predictions for the sentence, where the prediction yt = +1 indicates the t-th character of the sequence is preceded by a space, and where yt = &#8722;1 indicates there is none.
+    We trained a CRF model with a set of basic features: character identity features of the current character, previ

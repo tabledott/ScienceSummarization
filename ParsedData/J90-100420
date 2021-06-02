@@ -1,0 +1,8 @@
+.
+    To be able to identify possible pivots, we distinguish a subset of the rules of the grammar, the chain rules, in which the semantics of some right-hand-side element is identical to the semantics of the left-hand-side.
+    The righthand-side element will be called the rule's semantic head.
+    The traversal, then, will work top-down from the pivot using a nonchain rule, for if a chain rule were used, the pivot would not be the lowest node sharing semantics with the root.
+    Instead, the pivot's semantic head would be.
+    After the nonchain rule is chosen, each of its children must be generated recursively.
+    The bottom-up steps to connect the pivot to the root of the analysis tree can be restricted to chain rules only, as the pivot (along with all intermediate nodes) has the same semantics as the root and must therefore be the semantic head.
+    Again, after a chain rule is chosen to move up one node in the tree being constructed, the remaining (nonsemantic-head) children must be generated recursivel

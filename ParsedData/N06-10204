@@ -1,0 +1,13 @@
+ne learner had labelled it.
+    Sarkar (2001) and Steedman et al. (2003) investigated using co-training for parsing.
+    These studies suggest that this type of co-training is most effective when small amounts of labelled training data is available.
+    Additionally, co-training for parsing can be helpful for parser adaptation.
+  
+  
+    Our parsing model consists of two phases.
+    First, we use a generative parser to produce a list of the top n parses.
+    Next, a discriminative reranker reorders the n-best list.
+    These components constitute two views of the data, though the reranker&#8217;s view is restricted to the parses suggested by the first-stage parser.
+    The reranker is not able to suggest new parses and, moreover, uses the probability of each parse tree according to the parser as a feature to perform the reranking.
+    Nevertheless, the reranker&#8217;s value comes from its ability to make use of more powerful features.
+    The first stage of our parser is the lexicalized probabilistic context

@@ -1,0 +1,12 @@
+r training.
+  
+  
+    For all experiments, we used sections 2-20 of the PDTB for training and sections 21-22 for testing.
+    Sections 0-1 were used as a development set for feature design.
+    We ran four binary classification tasks to identify each of the main relations from the rest.
+    As each of the relations besides Expansion are infrequent, we train using equal numbers of positive and negative examples of the target relation.
+    The negative examples were chosen at random.
+    We used all of sections 21 and 22 for testing, so the test set is representative of the natural distribution.
+    The training sets contained: Comparison (1927 positive, 1927 negative), Contingency (3500 each), Expansion3 (6356 each), and Temporal (730 each).
+    The test set contained: 151 examples of Comparison, 291 examples of Contingency, 986 examples of Expansion, 82 examples of Temporal, and 13 examples of No-relation.
+    We used Naive Bayes, Maximum Entropy (MaxEnt), and AdaBoost (Freund and Schapire, 1996) classifiers 

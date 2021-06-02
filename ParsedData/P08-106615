@@ -1,0 +1,7 @@
+e , D1, A) be a valid rule template, and (Pp,q f , Ps,t e , D2, A) a valid phrase alignment, where [p, q] C [i, j], [s, t] C [m, n], D2 is a sub-structure of D1, and at least one word in Pi,j f but not in Pp,q f is aligned.
+    We create a new valid rule template (P0 f, P0e, D0, A), where we obtain Pf0 by replacing Pp,q f with label X in Pi,j f , and obtain Among all valid rule templates, we collect those that contain at most two NTs and at most seven elements in the source as transfer rules in our system.
+    Following previous work on hierarchical MT (Chiang, 2005; Galley et al., 2006), we solve decoding as chart parsing.
+    We view target dependency as the hidden structure of source fragments.
+    The parser scans all source cells in a bottom-up style, and checks matched transfer rules according to the source side.
+    Once there is a completed rule, we build a larger dependency structure by substituting component dependency structures for corresponding NTs in the target dependency structure of rules.
+   

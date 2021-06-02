@@ -1,0 +1,7 @@
+ performance degrades: We use the Pharaoh decoder (Koehn et al., 2003) with the SMT Shared Task baseline system (Koehn and Monz, 2006).
+    Weights for the log-linear model are set using the 500-sentence tuning set provided for the shared task with minimum error rate training (Och, 2003) as implemented by Venugopal and Vogel (2005).
+    Results on the provided 2000sentence development set are reported using the BLEU metric (Papineni et al., 2002).
+    For all methods, we report performance with and without IBM Model 1 features (M1), along with the size of the resulting tables in millions of phrase pairs.
+    The results of all experiments are shown in Table 3.
+    We see that the Phrasal ITG surpasses the CJPTM by more than 2.5 BLEU points.
+    A large component of this improvement is due to the ITG&#8217;s use of inside-outside for expectation calculation, though there are other differences between the two systems.4 This improvement over search and sampling is demonstrated by the ITG&#8217;s larger table siz

@@ -1,0 +1,13 @@
+ f2,.
+    .
+    .
+    , fn.
+    We define a link l(ei, fj) to exist if ei and fj are a translation (or part of a translation) of one another.
+    We define the null link l(ei, f0) to exist if ei does not correspond to a translation for any French word in F. The null link l(e0, fj) is defined similarly.
+    An alignment A for two sentences E and F is a set of links such that every word in E and F participates in at least one link, and a word linked to e0 or f0 participates in no other links.
+    If e occurs in E x times and f occurs in F y times, we say that e and f co-occur xy times in this sentence pair.
+    We define the alignment problem as finding the alignment A that maximizes P(A|E, F).
+    This corresponds to finding the Viterbi alignment in the IBM translation systems.
+    Those systems model P(F, A|E), which when maximized is equivalent to maximizing P(A|E, F).
+    We propose here a system which models P(A|E, F) directly, using a different decomposition of terms.
+    In the IBM models of translation,

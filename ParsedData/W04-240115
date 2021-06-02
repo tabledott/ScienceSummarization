@@ -1,0 +1,8 @@
+le the non integer solution is called rounding, which finds an integer point that is close to the non integer solution.
+    Under some conditions of cost functions, which do not hold here, a well designed rounding algorithm can be shown that the rounded solution is a good approximation to the optimal solution (Kleinberg and Tardos, 1999; Chekuri et al., 2001).
+    Nevertheless, in general, the outcomes of the rounding procedure may not even be a legal solution to the problem.
+    Branch and bound is the method that divides an ILP problem into several LP subproblems.
+    It uses LPR as a subroutine to generate dual (upper and lower) bounds to reduce the search space, and finds the optimal solution as well.
+    When LPR finds a non integer solution, it splits the problem on the non integer variable.
+    For example, suppose variable xi is fractional in an non integer solution to the ILP problem min{cx : x &#8712; S, x &#8712; {0,1}n}, where S is the linear constraints.
+    The ILP problem can be split into two 

@@ -1,0 +1,10 @@
+of the form Lij.
+    The scoring follows the parametrization of a weighted split head-automaton grammar (Eisner and Satta, 1999).
+    If 5 has children 2, 7, 9 under A, then CHILDSEQi is a product of subfactors of the form PAIR5#,57, PAIR57,59, PAIR59,5# (right child sequence) and PAIR5#,52, PAIR52,5# (left child sequence).
+    NOCROSS.
+    A family of O(n2) global constraints.
+    If the parent-to-j link crosses the parent-to-` link, then NOCROSSjt fires with a value that depends only on j and `.
+    (If j and ` do not each have exactly one parent, NOCROSSjt fires with value 0; i.e., it incorporates EXACTLY1j and EXACTLY1t.
+    )7 TAGi is a unary factor that evaluates whether Ti&#8217;s value is consistent with W (especially Wi).
+    TAGLINKij is a ternary version of the LINKij factor whose value depends on Lij, Ti and Tj (i.e., its feature functions consult the tag variables to decide whether a link is likely).
+    One could similarly enrich the other features above to depend on tags and/or link roles; TAGL

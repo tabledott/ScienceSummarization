@@ -1,0 +1,8 @@
+ N(v, c) The very last summation of Eq.
+    (8) now effectively sums over all occurrences of all words and thus cancels out with the first summation of (8) which leads to: In the first summation of Eq.
+    (9), for a given word v only the set of classes which contain at least one word w for which N(v, w) &gt; 0 must be considered, denoted by suc(v).
+    The second summation is equivalent to When exchanging a word w between two classes c and c0, only two summands of the second summation of Eq.
+    (10) are affected.
+    The first summation can be updated by iterating over all bigrams ending in the exchanged word.
+    Throughout one iteration of the algorithm, in which for each word in the vocabulary each possible move to another class is evaluated, this amounts to the number of distinct bigrams in the training corpus B, times the number of clusters N,.
+    Thus the worst case complexity using the modified optimization criterion is in: Using this optimization criterion has two effects on the complexity of the a

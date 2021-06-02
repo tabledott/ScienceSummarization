@@ -1,0 +1,9 @@
+tion: r (ft) = A I I wt I I 2 , where the regularization parameter A is given.
+    For clarity, let ut be a weight vector for problemfsuch that:ut=wt+OTvt.Then, (2) becomes the minimization of the joint empirical risk written as: This minimization can be approximately solved by the following alternating optimization procedure: &#8226;Fix(O,{vt}), and findmpredictors{ut}that minimizes the joint empirical risk (3).
+    &#8226;Fixmpredictors{ut}, and find(O,{vt})that minimizes the joint empirical risk (3).
+    &#8226;Iterate until a convergence criterion is met.
+    In the first step, we train m predictors independently.
+    It is the second step that couples all the problems.
+    Its solution is given by the SVD (singular value decomposition) of the predictor matrix U = [u 1, ... , ur,, ] : the rows of the optimum O are given by the most significant left singular vectors1 of U.
+    Intuitively, the optimum O captures the maximal commonality of the m predictors (each derived from ut).
+    These m predictors are 

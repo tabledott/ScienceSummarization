@@ -1,0 +1,9 @@
+optimized on held-out in-domain data.
+    We are aware of two comparable previous approaches.
+    Lin et al. (1997) and Gao et al.
+    (2002) both used a method similar to ours, in which the metric used to score text segments is their perplexity according to the in-domain language model.
+    The candidate text segments with perplexity less than some threshold are selected.
+    The second previous approach does not explicitly make use of an in-domain language model, but is still applicable to our scenario.
+    Klakow (2000) estimates a unigram language model from the entire non-domain-specific corpus to be selected from, and scores each candidate text segment from that corpus by the change in the log likelihood of the in-domain data according to the unigram model, if that segment were removed from the corpus used to estimate the unigram model.
+    Those segments whose removal would decrease the log likelihood of the in-domain data more than some threshold are selected.
+    Our method is a fairly simple variant

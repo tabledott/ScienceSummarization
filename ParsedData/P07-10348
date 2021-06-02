@@ -1,0 +1,6 @@
+  If pt(x) is very different from ps(x), then we should expect pt(x, y) to be very different from ps(x, y), and therefore different from J5s(x, y).
+    We thus cannot expect the estimated ps(y|x) to work well on the regions where pt(x, y) is high, but ps(x, y) is low.
+    Therefore, in this case, we still need domain adaptation, which we refer to as instance adaptation.
+    Because the need for domain adaptation arises from two different factors, we need different solutions for each factor.
+    If pt(y|x) deviates from ps(y|x) to some extent, we have one of the following choices: It may be the case that if we change the representation of the instances, i.e., if we choose a feature space X0 different from X, we can bridge the gap between the two distributions ps(y|x) and pt(y|x).
+    For example, consider domain adaptive NE recognition where the source domain contains clean newswire data, while the target domain contains broadcast news data that has been transcribed by automatic speech recognition and lacks ca

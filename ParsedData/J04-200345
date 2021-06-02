@@ -1,0 +1,7 @@
+nd combining the resulting alignments into one symmetrized alignment.
+    From this symmetrized alignment, the lexicon probabilities as well as the so-called alignment templates are extracted.
+    The latter are translation patterns which capture phrase-level translation pairs.
+    The following evaluation criteria were used in the experiments: BLEU (Bilingual Evaluation Understudy): This score, proposed by Papineni et al. (2001), is based on the notion of modified n-gram precision, with n &#8712; {1,...,4}: All candidate unigram, bigram, trigram, and four-gram counts are collected and clipped against their corresponding maximum reference counts.
+    The reference n-gram counts are calculated on a corpus of reference translations for each input sentence.
+    The clipped candidate counts are summed and normalized by the total number of candidate ngrams.
+    The geometric mean of the modified precision scores for a test corpus is calculated and multiplied by an exponential brevity penalty factor to penalize too

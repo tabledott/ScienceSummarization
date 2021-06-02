@@ -1,0 +1,8 @@
+ whose head is a token outside the argument boundaries.
+    This heuristic works remarkably well: over 99% of the PropBank arguments in the training corpus have a single token whose head is located outside of the argument boundaries.
+    As a simple example, consider the following annotated text: [sold]PRED [1214 cars]ARG1 [in the U.S.]ARGM-LOC.
+    Using the above heuristic, the head of the ARG1 argument is set to cars, because it has an OBJ dependency to sold, and the head of the ARGMLOC argument is set to in, because it modifies sold through a LOC dependency.
+    While this heuristic processes the vast majority of arguments, there are several cases that require special treatment.
+    We discuss these situations in the remainder of this section.
+    Arguments with several syntactic heads For 0.7% of the semantic arguments, the above heuristic detects several syntactic heads for the given boundary.
+    For example, in the text [it]ARG0 [expects]PRED [its U.S. sales to remain steady at about 1200 cars]ARG1, t

@@ -1,0 +1,6 @@
+e that refers to the part-of-speech tag of a word w in the buffer B will in our system refer to the topscoring tag &#960;1(w), rather than the finally predicted tag.
+    By contrast, for a word in the stack E, part-ofspeech features refer to the tag &#960;(w) chosen when shifting w onto the stack (which may or may not be the same as &#960;1(w)).
+    In addition to the standard features for transitionbased dependency parsing, we have added features specifically to improve the tagging step in the joint model.
+    The templates for these features, which are specified in Figure 3, all involve the ith best tag assigned to the first word of the buffer B (the next word to be shifted in a SHIFTP transition) in combination with neighboring words, word prefixes, word suffixes, score differences and tag rank.
+    Finally, in some experiments, we make use of two additional feature sets, which we call graph features (G) and cluster features (C), respectively.
+    Graph features are defined over the factors of a graph-base

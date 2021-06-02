@@ -1,0 +1,9 @@
+ rules whose net score (positive changes minus negative changes) is maximal is then selected, applied to the corpus, and also written out as the first rule in the learned sequence.
+    This entire learning process is then repeated on the transformed corpus: deriving candidate rules, scoring them, and selecting one with the maximal positive effect.
+    This process is iterated, leading to an ordered sequence of rules, with rules discovered first ordered before those discovered later.
+    The predictions of the model on new text are determined by beginning with the baseline heuristic prediction and then applying each rule in the learned rule sequence in turn.
+  
+  
+    This section discusses how text chunking can be encoded as a tagging problem that can be conveniently addressed using transformational learning.
+    We also note some related adaptations in the procedure for learning rules that improve its performance, taking advantage of ways in which this task differs from the learning of part-of-speech tags.
+ 

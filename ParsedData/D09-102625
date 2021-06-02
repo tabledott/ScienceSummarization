@@ -1,0 +1,11 @@
+ labels appropriate for each document in a test set.
+    Multi-label classification is a well researched problem.
+    Many modern approaches incorporate label correlations (e.g., Kazawa et al. (2004), Ji et al.
+    (2008)).
+    Others, like our algorithm are based on mixture models (such as Ueda and Saito (2003)).
+    However, we are aware of no methods that trade off label-specific word distributions with document-specific label distributions in quite the same way.
+    In Section 2, we discussed learning and inference when labels are observed.
+    In the task of multilabel classification, labels are available at training time, so the learning part remains the same as discussed before.
+    However, inferring the best set of labels for an unlabeled document at test time is more complex: it involves assessing all label assignments and returning the assignment that has the highest posterior probability.
+    However, this is not straight-forward, since there are 2K possible label assignments.
+    To make matters 

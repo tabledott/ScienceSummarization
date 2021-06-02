@@ -1,0 +1,7 @@
+lities by summing: where the summation is over all sequences U whose ith element matches the label in question.
+    The summation is efficiently carried out by the forward-backward algorithm for HMMs (Baum et al. 1970).3 For zeroth-order (unigram) discourse grammars, Viterbi decoding and forwardbackward decoding necessarily yield the same results.
+    However, for higher-order discourse grammars we found that forward-backward decoding consistently gives slightly (up to 1% absolute) better accuracies, as expected.
+    Therefore, we used this method throughout.
+    The formulation presented here, as well as all our experiments, uses the entire conversation as evidence for DA classification.
+    Obviously, this is possible only during off-line processing, when the full conversation is available.
+    Our paradigm thus follows historical practice in the Switchboard domain, where the goal is typically the off-line processing (e.g., automatic transcription, speaker identification, indexing, archival) of entire previ

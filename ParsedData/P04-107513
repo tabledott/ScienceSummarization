@@ -1,0 +1,9 @@
+sure proposed in Section 2.2.2.
+    The named entities in the same cluster may be considered similar to each other, so we will select the named entities from different clusters at one time.
+    We employ a Kmeans clustering algorithm (Jelinek 1997), which is shown in Figure 1.
+    The number of clusters is K Initialization: Randomly equally partition {NE1, ..., NEN} into K initial clusters Cj (j = 1, ... , K).
+    Loop until the number of changes for the centroids of all clusters is less than a threshold In each round, we need to compute the pairwise similarities within each cluster to get the centroid of the cluster.
+    And then, we need to compute the similarities between each example and all centroids to repartition the examples.
+    So, the algorithm is time-consuming.
+    Based on the assumption that N examples are uniformly distributed between the K clusters, the time complexity of the algorithm is about O(N2/K+NK) (Tang et al. 2002).
+    In one of our experiments, the size of the NESet (N) is around 1

@@ -1,0 +1,9 @@
+ovel.
+    If we want to determine the most likely syntactic part of speech or tag for each word in a sentence, we can formulate a probabilistic tagging model.
+    Let us assume that we want to know the most likely tag sequence, T = ft1, t2, .
+    .
+    .
+    , tr,l, given a particular word sequence, where p(T) is the a priori probability of tag sequence T, p(W I T) is the conditional probability of word sequence W occurring given that a sequence of tags T occurred, and p(W) is the unconditioned probability of word sequence W. Then, in principle, we can consider all possible tag sequences, evaluate p(T I W) of each, and choose the tag sequence T that is most likely, i.e., the sequence that maximizes p(T I W).
+    Since W is the same for all hypothesized tag sequences, we can disregard p(W).
+    We can rewrite the probability of each sequence as a product of the conditional probabilities of each word or tag given all of the previous tags.
+    Typically, one makes two simplifying assumptions to cut down on the n

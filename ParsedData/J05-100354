@@ -1,0 +1,8 @@
+ the beam.
+    The number of such parses varies sentence by sentence.
+    In order to gain a representative set of training data, the 36,000 training sentences were parsed in 2,000 sentence chunks, each chunk being parsed with a model trained on the remaining 34,000 sentences (this prevented the initial model from being unrealistically &#8220;good&#8221;on the training sentences).
+    The 4,000 development sentences were parsed with a model trained on the 36,000 training sentences.
+    Section 23 was parsed with a model trained on all 40,000 sentences.
+    In the experiments we used the following definition for the Score of the parse: where F-measure(xi,j) is the F1 score14 of the parse when compared to the goldstandard parse (a value between 0 and 100), and Size(xi,j) is the number of constituents in the gold-standard parse for the ith sentence.
+    Hence the Score function is sensitive to both the accuracy of the parse, and also the number of constituents in the goldstandard parse.
+    The following types o

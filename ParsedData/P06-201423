@@ -1,0 +1,9 @@
+rts an AER of 0.107 using similar features and the same training and test sets.
+    The effect of the hard cohesion constraint has been greatly diminished after discriminative training.
+    Matching and D-ITG correspond to the the entries of the same name in Table 1, only with a much stronger, learned value function v(l).
+    However, in place of a 34% relative error reduction, the hard constraints in the D-ITG produce only a 9% reduction from 0.110 to 0.100.
+    Also note that this time the hard constraints result in a reduction in recall.
+    This indicates that the hard cohesion constraint is providing little guidance not provided by other features, and that it is actually eliminating more sure links than it is helping to find.
+    The soft-constrained SD-ITG, which has access to the D-ITG&#8217;s invalid spans as a feature during SVM training, is fairing substantially better.
+    Its AER of 0.086 represents a 22% relative error reduction compared to the matching system.
+    The improved error rate is caus

@@ -1,0 +1,11 @@
+e in section 3 we discuss a sequence-free maximum-entropy (maxent) classifier which uses -gram substring features.
+    Finally, in section 4 we add additional features to the maxent model, and chain these models into a conditional markov model (CMM), as used for tagging (Ratnaparkhi, 1996) or earlier NER work (Borthwick, 1999).
+  
+  
+    Figure 1 shows a graphical model representation of our character-level HMM.
+    Characters are emitted one at a time, and there is one state per character.
+    Each state&#8217;s identity depends only on the previous state.
+    Each character&#8217;s identity depends on both the current state and on the previous characters.
+    In addition to this HMM view, it may also be convenient to think of the local emission models as type-conditional -gram models.
+    Indeed, the character emission model in this section is directly based on the -gram proper-name classification engine described in (Smarr and Manning, 2002).
+    The primary addition is the state-transition chaining, which

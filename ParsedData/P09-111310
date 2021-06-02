@@ -1,0 +1,10 @@
+e 2.
+  
+  
+    The intuition of our distant supervision approach is to use Freebase to give us a training set of relations and entity pairs that participate in those relations.
+    In the training step, all entities are identified in sentences using a named entity tagger that labels persons, organizations and locations.
+    If a sentence contains two entities and those entities are an instance of one of our Freebase relations, features are extracted from that sentence and are added to the feature vector for the relation.
+    The distant supervision assumption is that if two entities participate in a relation, any sentence that contain those two entities might express that relation.
+    Because any individual sentence may give an incorrect cue, our algorithm trains a multiclass logistic regression classifier, learning weights for each noisy feature.
+    In training, the features for identical tuples (relation, entity1, entity2) from different sentences are combined, creating a richer feature vector.
+    In the

@@ -1,0 +1,9 @@
+hrase Model: Paraphrase generation is a decoding process.
+    The input sentence s is first segmented into a sequence of I units sI1, which are then paraphrased to a sequence of units &#65533;tI1.
+    Let (si, ti) be a pair of paraphrase units, their paraphrase likelihood is computed using a score function Opm(&#65533;si, ti).
+    Thus the paraphrase score ppm(9I1, &#65533;tI1) between s and t is decomposed into: where Apm is the weight of the paraphrase model.
+    Actually, it is defined similarly to the translation model in SMT (Koehn et al., 2003).
+    In practice, the units of a sentence may be paraphrased using different PTs.
+    Suppose we have K PTs, (ski, tki) is a pair of paraphrase units from the k-th PT with the score function Ok(ski, &#65533;tki), then Equation (1) can be rewritten as: where Ak is the weight for Ok(Ski, tki).
+    Equation (2) assumes that a pair of paraphrase units is from only one paraphrase table.
+    However, 1The SPG model applies monotone decoding, which does not contain a re

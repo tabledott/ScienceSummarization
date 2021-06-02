@@ -1,0 +1,8 @@
+s, by 2 BLEU points over the best individual model and 1.3 BLEU over the best interpolated model, which used A = 0.9.
+    We conclude that it can be more effective to not attempt translation model adaptation directly, and instead let the decoder do the work.
+  
+  
+    We presented in Section 5 several methods to improve the performance of a single general-domain translation system by restricting its training corpus on an information-theoretic basis to a very small number of sentences.
+    However, Section 6.3 shows that using two translation models over all the available data (one in-domain, one general-domain) outperforms any single individual translation model so far, albeit only slightly.
+    It is well and good to use the in-domain data to select pseudo in-domain data from the generaldomain corpus, but given that this requires access to an in-domain corpus, one might as well use it.
+    As such, we used the in-domain translation model alongside translation models trained on the subcorpora selected using t

@@ -1,0 +1,14 @@
+eeded as any other common words.
+    After transformation through class-based HMM, word segmentation becomes single-source shortest paths problem.
+    Hence the best choice W# of word segmentation is easy to find using Djikstra's algorithm.
+  
+  
+    Here, we would introduce the operation of some different track.
+    We participate all the closed tracks.
+    As for each closed track, we first extracted all the common words and tokens that appear in the training corpus.
+    Then build the segmentation core lexicons with the words.
+    Those named entity words are classified into different named entities: numeric and time expression, personal names, location names, and transliterated names.
+    According to named entities in the given corpus, we could train both class-based segmentation HMM and rolebased HMM model for unknown word recognition.
+    Therefore, the whole lexical system including unknown word detection is accomplished as shown in Figure 1.
+    We only participate GB code open tracks.
+    Actually, 

@@ -1,0 +1,8 @@
+age over the base models for short and medium distance arcs.
+    With respect to precision, however, there are two clear patterns.
+    First, the graph-based models have better precision than the transition-based models when predicting long arcs, which is compatible with the results of McDonald and Nivre (2007).
+    Secondly, both the guided models have better precision than their base model and, for the most part, also their guide model.
+    In particular MSTMalt outperforms MST and is comparable to Malt for short arcs.
+    More interestingly, MaltMST outperforms both Malt and MST for arcs up to length 9, which provides evidence that MaltMST has learned specifically to trust the guide features from MST for longer dependencies.
+    The reason that accuracy does not improve for dependencies of length greater than 9 is probably that these dependencies are too rare for MaltMST to learn from the guide parser in these situations.
+    Figure 3(b) shows precision (top) and recall (bottom) for dependency arcs at diff

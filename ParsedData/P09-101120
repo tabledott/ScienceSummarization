@@ -1,0 +1,9 @@
+y but is never mentioned in the text.
+    At the same time, there is a correlation between ballstopped and utterances such as pink2 holds onto the ball, which are not aligned to any record in the annotation.
+    As a result, our model incorrectly chooses to align the two.
+    For the weather domain, staged training was necessary to get good results.
+    For Model 1, we ran 15 iterations of EM.
+    For Model 2, we ran 5 iterations of EM on Model 1, followed by 10 iterations on Model 2.
+    For Model 3, we ran 5 iterations of Model 1, 5 iterations of a simplified variant of Model 3 where records were chosen independently, and finally, 5 iterations of Model 3.
+    When going from one model to another, we used the final posterior distributions of the former to initialize the parameters of the latter.6 We also prohibited utterances in Models 2 and 3 from crossing punctuation during inference.
+    Table 5 shows that performance improves substantially in the more sophisticated models, the gains being greater than in

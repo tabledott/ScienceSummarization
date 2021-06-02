@@ -1,0 +1,8 @@
+not exceed 25%.
+    Overall, 99.7% of the rules are binarizable.
+    Even for the 0.3% nonbinarizable rules, human evaluations show that the majority of them are due to alignment errors.
+    It is also interesting to know that 86.8% of the rules have monotonic permutations, i.e. either taking identical or totally inverted order.
+    We did experiments on our CKY-based decoder with two binarization methods.
+    It is the responsibility of the binarizer to instruct the decoder how to compute the language model scores from children nonterminals in each rule.
+    The baseline method is monolingual left-to-right binarization.
+    As shown in Section 1, decoding complexity with this method is exponential in the size of the longest rule and since we postpone all the language model scorings, pruning in this case is also biased. system bleu monolingual binarization 36.25 synchronous binarization 38.44 To move on to synchronous binarization, we first did an experiment using the above baseline system without the 0.3% no

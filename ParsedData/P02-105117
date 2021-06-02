@@ -1,0 +1,11 @@
+is to use the tf.idfmeasure.
+    Others use contextual information that is local to the named entity in question such as the words that precede and/or succeed the named entity or other named entities mentioned closely to the one in question.
+  
+  
+    The re-scoring methods described above assume that the correct translation is in the candidates list.
+    When it is not in the list, the re-scoring will fail.
+    To address this situation, we need to extrapolate from the candidate list.
+    We do this by searching for the correct translation rather than generating it.
+    We do that by using sub-phrases from the candidates list us revised scores of and , respectively, which leads to the correct translation being ranked highest.
+    It is important to consider counts for the full name rather than the individual words in the name to get accurate counts.
+    To illustrate this point consider the person name &#8220; m&#711;gls&#8221; (the Security Council); the House when referring to &#8216; al-nw&#175;ab m&#711;

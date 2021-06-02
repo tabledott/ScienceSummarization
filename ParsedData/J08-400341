@@ -1,0 +1,6 @@
+ll pairs (k, j) such that k &lt; i are ignored.
+    The fact that both the head and the dependent are kept in either &#955;2 or &#946; makes it possible to construct non-projective dependency graphs, because the NO-ARCn transition allows a node to be passed from &#955;1 to &#955;2 even if it does not (yet) have a head.
+    However, an arc can only be added between two nodes i and j if the dependent end of the arc is not the artificial root 0 and does not already have a head, which would violate ROOT and SINGLE-HEAD, respectively, and if there is no path connecting the dependent to the head, which would cause a violation of ACYCLICITY.
+    As an illustration, Figure 8 shows the transition sequence needed to parse the Czech sentence in Figure 1, which has a non-projective dependency graph.
+    The non-projective, list-based algorithm is correct for the class of dependency forests.
+    To show the soundness of the algorithm, we simply observe that the dependency graph defined by the initial configuration, Gc0(x)

@@ -1,0 +1,11 @@
+nce its semantic label, bowner, matchesN8?s semantic label.
+			Next, the MR of the seman tic head is constructed recursively.
+			The semantichead of N3 is clearly N1.
+			Since N1 is a part-ofspeech (POS) node, its semantic label directly de termines its MR, which becomes bowner( ).
+			Once the MR for the head is constructed, the MR of all other (non-head) children are computed recursively,and COMPOSEMR assigns their MR?s to fill the arguments in the head?s MR to construct the com plete MR for the node.
+			Argument constraints areused to determine the appropriate filler for each ar gument.
+			Since, N2 has a null label, the MR of N3 also becomes bowner( ).
+			When computing the MR for N7, N4 is determined to be the head with the MR: player( , ).
+			COMPOSEMR then assigns N5?s MR to fill the team argument and N6?s MR to fill the unum argument to construct N7?s complete MR: player(our, 2).
+			This MR in turn is composed withthe MR for N3 to yield the final MR for the sen tence: bowner(player(our,2)).
+			For MRL?

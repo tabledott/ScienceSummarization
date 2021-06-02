@@ -1,0 +1,7 @@
+ list L of antecedent candidates for P. Let H be the lexical head (generally a verb or a noun) of which P is an argument or an adjunct in the sentence.
+    RAPSTAT computes a statistical score for each element C, of L, on the basis of the frequency, in a corpus, with which Ci occurs in the same grammatical relation with H as P occurs with H in the sentence.
+    The statistical score that RAPSTAT assigns to Ci is intended to model the probability of the event where C, stands in the relevant grammatical relation to H, given the occurrence of C, (but taken independently of the other elements of L).
+    RAPSTAT reevaluates RAP's ranking of the elements of the antecedent candidate list L in a way that combines both the statistical scores and the salience values of the candidates.
+    The elements of L appear in descending order of salience value.
+    RAPSTAT processes L as follows.
+    Initially, it considers the first two elements C1 and C2 of L. If (i) the difference in salience scores between C1 and C2 does not

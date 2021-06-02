@@ -1,0 +1,10 @@
+equence of segment boundaries for each half of a bitext, the Geometric Segment Alignment (GSA) algorithm reduces sets of correspondence points to segment alignments.
+    The algorithm's first step is to perform a transitive closure over the input correspondence relation.
+    For instance, if the input contains (G,e), (H,e), and (H,f), then GSA adds the pairing (G,f).
+    Next, GSA forces all segments to be contiguous: If segment Y corresponds with segments x and z, but not y, the pairing (Y,y) is added.
+    In geometric terms, these two operations arrange all cells that contain points of correspondence into nonoverlapping rectangles, while adding as few cells as possible.
+    The result is an alignment relation.
+    A complete set of TPCs, together with appropriate boundary information, guarantees a perfect alignment.
+    Alas, the points of correspondence postulated by SIMR are neither complete nor noise-free.
+    SIMR makes errors of omission and errors of commission.
+    Fortunately, the noise in SIMR's ou

@@ -1,0 +1,6 @@
+1 shows the relationship between space allocated to the BF models and BLEU score (left) and false positive rate (right) respectively.
+    These experiments do not include the baseline model.
+    We can see a clear correlation between memory / false positive rate and translation performance.
+    Adding 4-grams in the form of a Boolean BF or a log-frequency BF (see Figure 2) improves on the 3gram baseline with little additional memory (around 4MBs) while performing on a par with or above the Europarl 4-gram model with around 10MBs; this suggests that a lossy representation of the unpruned set of 4-grams contains more useful information than a lossless representation of the pruned set.3 As the false positive rate exceeds 0.20 the performance is severly degraded.
+    Adding 3-grams drawn from the whole of the Gigaword corpus rather than simply the Agence France Press section results in slightly improved performance with signficantly less memory than the AFP-KN-3 model (see Figure 3).
+    Figure 4 shows the result

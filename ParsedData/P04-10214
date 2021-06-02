@@ -1,0 +1,7 @@
+paradigm of noisy channel model (NCM).
+    For a given English name E as the observed channel output, one seeks a posteriori the most likely Chinese transliteration C that maximizes P(C|E).
+    Applying Bayes rule, it means to find C to maximize with equivalent effect.
+    To do so, we are left with modeling two probability distributions: P(E|C), the probability of transliterating C to E through a noisy channel, which is also called transformation rules, and P(C), the probability distribution of source, which reflects what is considered good Chinese transliteration in general.
+    Likewise, in C2E backtransliteration, we would find E that maximizes for a given Chinese name.
+    In eqn (1) and (2), P(C) and P(E) are usually estimated using n-gram language models (Jelinek, 1991).
+    Inspired by research results of grapheme-tophoneme research in speech synthesis literature, many have suggested phoneme-based approaches to resolving P(E|C) and P(C|E), which approximates the probability distribution by introducing

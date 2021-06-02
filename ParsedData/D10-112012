@@ -1,0 +1,9 @@
+rrent node.
+    The &#966; distributions are drawn from a symmetric Dirichlet prior.
+    Generating the Tree Structure We now consider how the structure of the tree arises.
+    We follow an approach similar to the widely-referenced DMV model (Klein and Manning, 2004), which forms the basis of the current state-of-the-art unsupervised grammar induction model (Headden III et al., 2009).
+    After a node is drawn we generate children on each side until we produce a designated STOP symbol.
+    We encode more detailed valence information than Klein and Manning (2004) and condition child generation on parent valence.
+    Specifically, after drawing a node we first decide whether to proceed to generate a child or to stop conditioned on the parent symbol and subsymbol and the current context (direction and valence).
+    If we decide to generate a child we follow the previously described process for constructing a node.
+    We can combine the stopping decision with the generation of the child symbol by including a dis

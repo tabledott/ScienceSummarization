@@ -1,0 +1,10 @@
+.
+    First, a combination of the two implementation is reasonable, i.e. running multi-threaded child processes inside PGIZA++&#8217;s architecture.
+    This could reduce the I/O significantly when using the same number of CPUs.
+    Secondly, the mechanism of assigning sentence pairs to the child processes can be improved in PGIZA++.
+    A server can take responsibility to assign sentence pairs to available child processes dynamically.
+    This would avoid wasting any computation resource by waiting for other processes to finish.
+    Finally, the huge model files, which are responsible for a high I/O volume can be reduced by using binary formats.
+    A first implementation of a simple binary format for the TTable resulted in files only about 1/3 in size on disk compared to the plain text format.
+    The recent development of MapReduce framework shows its capability to parallelize a variety of machine learning algorithms, and we are attempting to port word alignment tools to this framework.
+    Currently, the 

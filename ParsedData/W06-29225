@@ -1,0 +1,8 @@
+osen by performing experiments on the training data, using 10% of the sentences as heldout data for development.
+  
+  
+    The parser constructs dependency trees employing a deterministic bottom-up algorithm which performs Shift/Reduce actions while analyzing input sentences in left-to-right order.
+    Using a notation similar to (Nivre and Scholz, 2003), the state of the parser is represented by a quadruple (S, I, T, A), where S is the stack, I is the list of (remaining) input tokens, T is a stack of temporary tokens and A is the arc relation for the dependency graph.
+    Given an input string W, the parser is initialized to ((), W, (), ()), and terminates when it reaches a configuration (S, (), (), A).
+    The parser by Yamada and Matsumoto (2003) used the following actions: Shift in a configuration (S, n|I, T, A), pushes n to the stack, producing the configuration (n|S, I, T, A).
+    Right1 in a configuration (s1|S, n|I, T, A), adds an arc from s1 to n and pops s1 from the stack, producing the configuratio

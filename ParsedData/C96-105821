@@ -1,0 +1,8 @@
+a parent is a legal parse, rooted at the EOS mark (Figure 1).
+  Note that a spans signature must specify whether its endwords have parents.
+  4 Bottom-Up Probabilities Is this one parser really compatible with all three probability models?
+  Yes, but for each model, we must provide a way to keep tr~tck of probabilities as we parse.
+  Bear in mind that models A, B, and C do not themselves pecify probabilities for all spans; intrinsically they give only probabilities for sentences.
+  Mode l  C. Define each spans score to be the product of all probabilities of links within the span.
+  (The link to i from its eth child is asso- ciated with the probability P r ( .
+  When spans a and b are combined and one more link is added, it is easy to compute the resulting spans score: score(a), score(b)./?r(covering l ink)) When a span constitutes a parse of the whole input sentence, its score as just computed proves to be the parse probability, conditional on the tree root EOS, under model C. The highest-probability parse ca

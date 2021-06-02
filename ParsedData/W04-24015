@@ -1,0 +1,8 @@
+e sentence.
+    At the same time, the relation kill constrains its arguments to be people (or at least, not to be locations) and helps to enforce that Oswald and KFJ are likely to be people, while JFK is not.
+    In our model, we first learn a collection of &#8220;local&#8221; predictors, e.g., entity and relation identifiers.
+    At decision time, given a sentence, we produce a global decision that optimizes over the suggestions of the classifiers that are active in the sentence, known constraints among them and, potentially, domain or tasks specific constraints relevant to the current decision.
+    Although a brute-force algorithm may seem feasible for short sentences, as the number of entity variable grows, the computation becomes intractable very quickly.
+    Given n entities in a sentence, there are O(n2) possible relations between them.
+    Assume that each variable (entity or relation) can take l labels (&#8220;none&#8221; is one of these labels).
+    Thus, there are ln2 possible assignments, which is 

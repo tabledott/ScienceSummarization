@@ -1,0 +1,11 @@
+nce summary side.
+    A closely related measure, BLEU, used in automatic evaluation of machine translation, is a precision-based measure.
+    BLEU measures how well a candidate translation matches a set of reference translations by counting the percentage of n-grams in the candidate translation overlapping with the references.
+    Please see Papineni et al. (2001) for details about BLEU.
+    Note that the number of n-grams in the denominator of the ROUGE-N formula increases as we add more references.
+    This is intuitive and reasonable because there might exist multiple good summaries.
+    Every time we add a reference into the pool, we expand the space of alternative summaries.
+    By controlling what types of references we add to the reference pool, we can design evaluations that focus on different aspects of summarization.
+    Also note that the numerator sums over all reference summaries.
+    This effectively gives more weight to matching n-grams occurring in multiple references.
+    Therefore a candidat

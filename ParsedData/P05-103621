@@ -1,0 +1,11 @@
+nnel model than in the source model.
+    In fact, the opposite occurs.
+    The likelihood of almost any constituent deletion is far lower than the probability of the constituents all being left in.
+    This seems surprising, considering that the model we are using has had some success, but it makes intuitive sense.
+    There are far fewer compression alignments than total alignments: identical parts of sentences are almost sure to align.
+    So the most probable short sentence should be very barely compressed.
+    Thus we add a weighting factor to compress our supervised version further.
+    K&amp;M also, in effect, weight shorter sentences more strongly than longer ones based upon their language model.
+    In their papers on sentence compression, they give an example similar to our &#8220;buy large toys&#8221; example.
+    The equation they get for the channel probabilities in their example is similar to the channel probabilities we give in Figures 3 and 4.
+    However their source probabilities are differen

@@ -1,0 +1,9 @@
+sed-class dependent morphemes such as case markers, copula, topicalizers, and conjunctions.
+    Since most of the semantic content resides in the leading head morpheme, we eliminate for word alignment all trailing morphemes, which reduces the KTB&#8217;s vocabulary size from 10,052 to 3,104.
+    Existing morphological processing tools for many languages are often unweighted finite-state transducers that encode the possible analyses for a surface form word.
+    One such tool, klex, is available for Korean (Han, 2004).
+    Unfortunately, while the unweighted FST describes the set of valid analyses, it gives no way to choose among them.
+    We treat this as a noisy channel: Korean morpheme-tag pairs are generated in sequence by some process, then passed through a channel that turns them into Korean words (with loss of information).
+    The channel is given by the FST, but without any weights.
+    To select the best output, we model the source process.
+    We model the sequence of morphemes and their tags as a lo

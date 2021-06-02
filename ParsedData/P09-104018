@@ -1,0 +1,6 @@
+ase.
+    The result for Arabic and Danish can be seen in Figure 5, where black dots represent training sentences (parsed with the oracle) and white dots represent test sentences (parsed with a classifier).
+    For Arabic there is a very clear linear relationship in both cases with very few outliers.
+    Fitting the data with a linear function using the least squares method gives us m = 2.06n (R2 = 0.97) for the training data and m = 2.02n (R2 = 0.98) for the test data, where m is the number of transitions in parsing a sentence of length n. For Danish, there is clearly more variation, especially for the training data, but the least-squares approximation still explains most of the variance, with m = 2.22n (R2 = 0.85) for the training data and m = 2.07n (R2 = 0.96) for the test data.
+    For both languages, we thus see that the classifier-based parsers have a lower mean number of transitions and less variance than the oracle parsers.
+    And in both cases, the expected number of transitions is only marginally gr

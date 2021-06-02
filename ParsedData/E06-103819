@@ -1,0 +1,8 @@
+soft evidence in our model.
+    That is, they represent just another layer of evidence to be considered during training when setting parameters.
+    Thus, if the parses have too much noise, the learning algorithm can lower the weight of the parse features since they are unlikely to be useful discriminators on the training data.
+    This differs from the models of Knight and Marcu (2000), which treat the noisy parses as gold-standard when calculating probability estimates.
+    An important distinction we should make is the notion of supported versus unsupported features (Sha and Pereira, 2003).
+    Supported features are those that are on for the gold standard compressions in the training.
+    For instance, the bigram feature &#8220;NN&amp;VB&#8221; will be supported since there is most likely a compression that contains a adjacent noun and verb.
+    However, the feature &#8220;JJ&amp;VB&#8221; will not be supported since an adjacent adjective and verb most likely will not be observed in any valid compression.

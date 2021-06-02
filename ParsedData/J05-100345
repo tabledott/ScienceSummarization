@@ -1,0 +1,8 @@
+01 and 10 at increments of 0.001 were tested, and the value which minimized the function in equation (12) was chosen.12 Feature selection then proceeds to search for values of the remaining parameters, a1, ... , am.
+    (Note that it might be preferable to also allow a0 to be adjusted as features are added; we leave this to future work.)
+    This requires calculation of the terms BestWt(k, &#175;a) and BestLoss(k, &#175;a) for each feature.
+    For binary-valued features these values have closed-form solutions, which is computationally very convenient.
+    We now describe the form of these updates.
+    See appendix A for how the updates can be derived (the derivation is essentially the same as that in Schapire and Singer [1999]).
+    First, we note that for any feature, [hk(xi,1) &#8212; hk(xi,j)] can take on three values: +1, &#8212;1, or 0 (this follows from our assumption of binary-valued feature values).
+    For each k we define the following sets: Thus A+k is the set of training examples in which the kth

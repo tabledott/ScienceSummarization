@@ -1,0 +1,9 @@
+a Chinese-English machine translation system.
+    We used an automatic syntactic parser (Bikel, 2002) to produce the parallel parse trees.
+    The parser was trained using the Penn English/Chinese Treebanks.
+    We then used the algorithm in (Xia 2001) to convert the phrasal structure trees to dependency trees to acquire the parallel dependency trees.
+    The statistics of the datasets we used are shown as follows: The training set consists of Xinhua newswire data from LDC and the FBIS data (mostly news), both filtered to ensure parallel sentence pair quality.
+    We used the development test data from the 2001 NIST MT evaluation workshop as our test data for the MT system performance.
+    In the testing data, each input Chinese sentence has 4 English translations as references.
+    Our MT system was evaluated using the n-gram based Bleu (Papineni et al., 2002) and NIST machine translation evaluation software.
+    We used the NIST software package &#8220;mteval&#8221; version 11a, configured as case-insensiti

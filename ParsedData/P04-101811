@@ -1,0 +1,6 @@
+  Distance features are computed by taking minimum between mentions in the entity and the active mention.
+    In the ACE data, mentions are annotated with three levels: NAME, NOMINAL and PRONOUN.
+    For each ACE entity, a canonical mention is defined as the longest NAME mention if available; or if the entity does not have a NAME mention, the most recent NOMINAL mention; if there is no NAME and NOMINAL mention, the most recent pronoun mention.
+    In the entity-mention model, &#8220;ncd&#8221;,&#8220;spell&#8221; and &#8220;count&#8221; features are computed over the canonical mention of the in-focus entity and the active mention.
+    Conjunction features are used in the entity-mention model too.
+    The mention-pair model is appealing for its simplicity: features are easy to compute over a pair of menif otherwise Category Features Remark Lexical exact_strm 1 if two mentions have the same spelling; 0 otherwise left_subsm 1 if one mention is a left substring of the other; 0 otherwise right_subsm 1 if one menti

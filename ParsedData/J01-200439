@@ -1,0 +1,6 @@
+&#8222; = ( /s), all parses that are pushed onto 1-4+1 are complete.
+    The parse on H,i+i with the highest probability is returned for evaluation.
+    In the case that no complete parse is found, a partial parse is returned and evaluated.
+    The LAP is the probability of a particular terminal being the next left-corner of a particular analysis.
+    The terminal may be the left corner of the topmost nonterminal on the stack of the analysis or it might be the left corner of the nth nonterminal, after the top n - 1 nonterminals have rewritten to E. Of course, we cannot expect to have adequate statistics for each nonterminal/word pair that we encounter, so we smooth to the POS.
+    Since we do not know the POS for the word, we must sum the LAP for all POS For a PCFG G, a stack S = Ao An$ (which we will write AN and a look-ahead terminal item wi, we define the look-ahead probability as follows: We recursively estimate this with two empirically observed conditional probabilities for every nonterminal A,: 13(A, w

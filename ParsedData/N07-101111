@@ -1,0 +1,11 @@
+ss function.
+  
+  
+    We apply our approach to the noun coreference ACE 2004 data, containing 443 news documents with 28,135 noun phrases to be coreferenced.
+    336 documents are used for training, and the remainder for testing.
+    All entity types are candidates for coreference (pronouns, named entities, and nominal entities).
+    We use the true entity segmentation, and parse each sentence in the corpus using a phrase-structure grammar, as is common for this task.
+    We follow Soon et al. (2001) and Ng and Cardie (2002) to generate most of our features for the Pairwise Model.
+    These include: The First-Order Model includes the following features: &#8226; Enumerate each pair of noun phrases and compute the features listed above.
+    All-X is true if all pairs share a feature X, Most-True-X is true if the majority of pairs share a feature X, and Most-False-X is true if most of the pairs do not share feature X.
+    In addition to the listed features, we also include conjunctions of size 2, for example &#

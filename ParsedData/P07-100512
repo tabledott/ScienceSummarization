@@ -1,0 +1,8 @@
+ciated context-dependent probabilities, which are the probabilities of a Chinese word (phrase) translating into each English phrase, depending on the context of the Chinese word (phrase).
+    After WSD, the ith word ci in every Chinese sentence may have up to 3 sets of associated translations provided by the WSD system: a set of translations for ci as a single word, a second set of translations for ci_1ci considered as a single unit, and a third set of translations for cici+1 considered as a single unit.
+  
+  
+    The following tasks are done for each rule that is considered during decoding: The WSD system is able to predict translations only for a subset of Chinese words or phrases.
+    Hence, we must first identify which parts of the Chinese side of the rule have suggested translations available.
+    Here, we consider substrings of length up to two, and we give priority to longer substrings.
+    Next, we want to know, for each Chinese substring considered, whether the WSD system supports the Chinese-English

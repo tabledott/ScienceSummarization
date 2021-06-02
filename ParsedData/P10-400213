@@ -1,0 +1,6 @@
+el is trained to maximize conditional log likelihood of the training data under a specified grammar.
+    Since log likelihood is differentiable with respect to the feature weights in an exponential model, it is possible to use gradient-based optimization techniques to train the system, enabling the parameterization of the model using millions of sparse features.
+    While this training approach was originally proposed for SCFG-based translation models, it can be used to train any model type in cdec.
+    When used with sequential tagging models, this pipeline is identical to traditional sequential CRF training (Sha and Pereira, 2003).
+    Both the objective (conditional log likelihood) and its gradient have the form of a difference in two quantities: each has one term that is computed over the translation hypergraph which is subtracted from the result of the same computation over the alignment hypergraph (refer to Figures 1 and 2).
+    The conditional log likelihood is the difference in the log partition of th

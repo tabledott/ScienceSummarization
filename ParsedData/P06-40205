@@ -1,0 +1,7 @@
+tally improved to deal with a greater variety of text types, and handle quotation appropriately.
+    Users are able to modify the rules used and recompile the modules.
+    All RASP modules now accept XML mark up (with certain hard-coded assumptions) so that data can be pre-annotated&#8212;for example to identify named entities&#8212;before being passed to the tokeniser, allowing for more domain-dependent, potentially multiword tokenisation and classification prior to tence boundari The morphological analyser is also implemented in Flex, with about 1400 finite-state rules incorporating agreat deal of lexically exceptional data.
+    These rules are compiled into an efficient C program encoding a deterministic finite state transducer.
+    The analyser takes a word form and CLAWS tag and returns a lemma plus any inflectional affixes.
+    The type and token error rate of the current system is less than 0.07% (Minnen, Carroll and Pearce, 2001).
+    The primary systeminternal value of morphological analysis is to en

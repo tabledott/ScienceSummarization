@@ -1,0 +1,10 @@
+of using schedulers.
+    The results are listed in Table 8.
+    There is nearly no speed-up observed, and in Model 1 training, we observe a loss in the speed.
+    Again, by investigating the time spent in normalization, the phenomenon can be explained (Table 9): Even after ruling out the normalization time, the speed up factor is smaller than MGIZA++.
+    That is because of reading models when child processes start and writing models when child processes finish.
+    From the experiment we can conclude that PGIZA++ is more suited to train on large corpora than on small or moderate size corpora.
+    It is also important to determine whether to use PGIZA++ rather than MGIZA++ according to the speed of network storage infrastructure.
+    To compare the difference in final Viterbi alignment output, we counted the number of sentences that have different alignments in these systems.
+    We use GIZA++ with the bug fixed as the reference.
+    The results of all other systems are listed in Table 10: From the comparison

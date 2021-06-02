@@ -1,0 +1,7 @@
+st assume a monotone decomposition of the sentence pair into phrase pairs (considering all phrasal decompositions equally likely), and the probability P(S  |T) is then defined as the product of the each phrasal replacement probability.
+    The target language model was a trigram model using interpolated Kneser-Ney smoothing (Kneser &amp; Ney 1995), trained over all 1.4 million sentences (24 million words) in our news corpus.
+    To generate paraphrases of a given input, a standard SMT decoding approach was used; this is described in more detail below.
+    Prior to decoding, however, the input sentence underwent preprocessing: text was lowercased, tokenized, and a few classes of named-entities were identified using regular expressions.
+    To begin the decoding process, we first constructed a lattice of all possible paraphrases of the source sentence based on our phrasal translation database.
+    Figure 2 presents an example.
+    The lattice was realized as a set of |S |+ 1 vertices v0..v|S |and a set of edges

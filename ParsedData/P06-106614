@@ -1,0 +1,12 @@
+rner.
+    Each corner has four links in four directions: topright, topleft, bottomright, bottomleft, and each link links a set of blocks which have the corner as their vertex.
+    The topright and bottomleft link blocks with the straight order, so we call them STRAIGHT links.
+    Similarly, we call the topleft and bottomright INVERTED links since they link blocks with the inverted order.
+    For convenience, we use b &#8592;&#65533; Z&#10003; to denote that block b is linked by the link Z.
+    Note that the STRAIGHT links can not coexist with the INVERTED links.
+    These definitions are illustrated in Figure 1.
+    The reordering example extraction algorithm is shown in Figure 2.
+    The basic idea behind this algorithm is to register all neighbor blocks to the associated links of corners which are shared by them.
+    To do this, we keep an array to record link information of corners when extracting blocks.
+    Line 4 and 5 are similar to the phrase extraction algorithm by Och (2003b).
+    Different from Och

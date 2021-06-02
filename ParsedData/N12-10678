@@ -1,0 +1,13 @@
+&#8712; ei  |&#8707; g &#8712; gi(match(e, g))}.
+    (6)
+  
+  
+    We experimentally test our M2 method in the context of the HOO shared task.
+    The HOO test data2 consists of text fragments from NLP papers together with manually-created gold-standard corrections (see (Dale and Kilgarriff, 2011) for details).
+    We test our method by re-scoring the best runs of the participating teams3 in the HOO shared task with our M2 scorer and comparing the scores with the official HOO scorer, which simply uses GNU wdiff4 to extract system edits.
+    We obtain each system&#8217;s output and segment it at the sentence level according to the gold standard sentence segmentation.
+    The source sentences, system hypotheses, and corrections are tokenized using the Penn Treebank standard (Marcus et al., 1993).
+    The character edit offsets are automatically converted to token offsets.
+    We set the parameter u to 2, allowing up to two unchanged words per edit.
+    The results are shown in Table 1.
+    Note that the M2 scor

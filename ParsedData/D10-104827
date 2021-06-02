@@ -1,0 +1,8 @@
+ analysis illustrates that our next effort should focus on improving recall.
+    In order to understand the limitations of our current system, we randomly selected 60 recall errors (20 for each mention type) and investigated their causes.
+    Not surprisingly, the causes are unique to each type.
+    For proper nouns, 50% of recall errors are due to mention lengthening, mentions that are longer than their earlier mentions.
+    For example, Washingtonbased USAir appears after USAir in the text, so our head matching components skip it because their high precision depends on disallowing new modifiers as the discourse proceeds.
+    When the mentions were reversed (as is the usual case), they match.
+    The common noun recall errors are very different from proper nouns: 17 of the 20 random examples can be classified as semantic knowledge.
+    These errors are roughly evenly split between recognizing categories of names (e.g., Gitano is an organization name hence it should match the nominal antecedent the company), 

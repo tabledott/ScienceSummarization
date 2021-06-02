@@ -1,0 +1,11 @@
+r RMSE was used for prediction (scoring) and ranking.
+    The contribution of new features was tested by adding them to the baseline features using 5-fold cross-validation.
+    Most features did not result in any improvement over the baseline.
+    The final submission was a combination of all feature sets that showed improvement.
+    SJTU (R, S): The task is treated as a regression problem using the epsilon-SVM method.
+    All features are extracted from the official data, involving no external NLP tools/resources.
+    Most of them come from the phrase table, decoding data and SMT training data.
+    The focus is on special word relations and special phrase patterns, thus several feature templates on this topic are extracted.
+    Since the training data is not large enough to assign weights to all features, methods for estimating common strings or sequences of words are used.
+    The training data is divided in 3/4 for training and 1/4 for development to filter ineffective features.
+    Besides the baseline fe

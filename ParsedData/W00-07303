@@ -1,0 +1,11 @@
+e over conventional statistical learning algorithms, such as Decision Tree, and Maximum Entropy Models, from the following two aspects:
+  
+  
+    The chunks in the CoNLL-2000 shared task are represented with JOB based model, in which every word is to be tagged with a chunk label extended with I (inside a chunk), 0 (outside a chunk) and B (inside a chunk, but the preceding word is in another chunk).
+    Each chunk type belongs to I or B tags.
+    For example, NP could be considered as two types of chunk, I-NP or B-NP.
+    In training data of CoNLL-2000 shared task, we could find 22 types of chunk 1 considering all combinations of JOB-tags and chunk types.
+    We simply formulate the chunking task as a classification problem of these 22 types of chunk.
+    Basically, SVMs are binary classifiers, thus we must extend SVMs to multi-class classifiers in order to classify these 22 types of chunks.
+    It is 'Precisely, the number of combination becomes 23.
+    However, we do not consider I-LST tag since it dose not 

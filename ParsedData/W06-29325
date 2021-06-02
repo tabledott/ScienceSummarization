@@ -1,0 +1,10 @@
+commonalities between a head and its dependents in terms of attributes like gender, case, or number.
+    Not all data sets in our experiments include morphological features, so we use them only when available.
+  
+  
+    The second stage takes the output parse y for sentence x and classifies each edge (i, j) E y with a particular label l(i,j).
+    Ideally one would like to make all parsing and labeling decisions jointly so that the shared knowledge of both decisions will help resolve any ambiguities.
+    However, the parser is fundamentally limited by the scope of local factorizations that make inference tractable.
+    In our case this means we are forced only to consider features over single edges or pairs of edges.
+    However, in a two stage system we can incorporate features over the entire output of the unlabeled parser since that structure is fixed as input.
+    The simplest labeler would be to take as input an edge (i, j) E y for sentence x and find the label with highest score, Doing this for each edge

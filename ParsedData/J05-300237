@@ -1,0 +1,7 @@
+  Linearization of the fusion sentence involves the selection of the best phrasing and placement of auxiliaries as well as the determination of optimal ordering.
+    Since we do not have sufficient semantic information to perform such selection, our algorithm is driven by corpus-derived knowledge.
+    We generate all possible sentences10 from the valid traversals of the fusion lattice and score their likelihood according to statistics derived from a corpus.
+    This approach, originally proposed by Knight and Hatzivassiloglou (1995) and Langkilde and Knight (1998), is a standard method used in statistical generation.
+    We trained a trigram model with Good&#8211;Turing smoothing over 60 megabytes of news articles collected by Newsblaster using the second version CMU&#8211;Cambridge Statistical Language Modeling toolkit (Clarkson and Rosenfeld 1997).
+    The sentence with the lowest length-normalized entropy (the best score) is selected as the verbalization of the fusion lattice.
+    Table 4 shows several ver

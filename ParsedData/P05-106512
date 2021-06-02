@@ -1,0 +1,7 @@
+Myaeng&#8217;s (2002) genre and subject detection work and Boulis and Ostendorf&#8217;s (2005) work on feature selection for topic classification.
+    For our LM classifiers, we followed Boulis and Ostendorf&#8217;s (2005) approach for feature selection and ranked words by their ability to discriminate between classes.
+    Given P(c|w), the probability of class c given word w, estimated empirically from the training set, we sorted words based on their information gain (IG).
+    Information gain measures the difference in entropy when w is and is not included as a feature.
+    The most discriminative words are selected as features by plotting the sorted IG values and keeping only those words below the &#8220;knee&#8221; in the curve, as determined by manual inspection of the graph.
+    In an early experiment, we replaced all remaining words with a single &#8220;unknown&#8221; tag.
+    This did not result in an effective classifier, so in later experiments the remaining words were replaced with a small set of g

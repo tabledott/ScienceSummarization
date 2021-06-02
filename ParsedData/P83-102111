@@ -1,0 +1,9 @@
+ind of mixed top-down bottom-up mechanism that the Earley parsing algorithm provides for context-free grammars.
+    Earley Deduction operates on two sets of definite clauses called the program and the state.
+    The program is just the set of input clauses and remains fixed.
+    The state consists of a set of derived clauses, where each nonunit dause has one of its negative literals selected; the state is continually being added to.
+    Whenever a nonunit clause is added to the state, one of its negative literals is selected.
+    Initially the state contains just the goal statement (with one of its negative literals selected).
+    There are two inference rules, called instantiation and reduction, which can map the current state into a new one by adding a new derived clause.
+    For an instantiation step, there is some clause in the current state whose selected literal unifies with the positive literal of a nonunit clause C in the program.
+    In this case, the derived clause is arj, where o. is a most general

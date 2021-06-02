@@ -1,0 +1,11 @@
+ms are extracted from the training set and separated into five lists (one for each entity class).
+    Stop words, Greek letters, and digits are filtered, and remaining words are tallied for raw frequency counts under each entity class label.
+    These frequencies are then subjected to a x2 test, where the null hypothesis is that a word&#8217;s frequency is the same for a given entity as it is for any other entity of interest (i.e.
+    PROTEIN vs. DNA + RNA + CELL-LINE + CELL-TYPE, such that there is only one degree of freedom).
+    All words for which the null hypothesis is rejected with a p-value &lt; 0.005 are added to the keyword lexicon for its majority class.
+    Some example keywords are listed in table 1.
+  
+  
+    Two experiments were completed in the time allotted: one CRF model using only the orthographic features described in section 3.1, and a second system using all the semantic lexicons from 3.2 as well.
+    Detailed results are presented in table 2.
+    The orthographic model achieves an overal

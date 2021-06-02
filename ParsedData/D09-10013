@@ -1,0 +1,9 @@
+ fragments from their parts.
+    In traditional approaches, the lexical entries and meaningcomposition rules are both manually constructed.
+    Below are sample rules in a definite clause grammar (DCG) for parsing the sentence: &#8220;Utah borders Idaho&#8221;.
+    The first three lines are lexical entries.
+    They are fired upon seeing the individual words.
+    For example, the first rule applies to the word &#8220;borders&#8221; and generates syntactic category Verb with the meaning AyAx.borders(x, y) that represents the nextto relation.
+    Here, we use the standard lambdacalculus notation, where AyAx.borders(x, y) represents a function that is true for any (x, y)pair such that borders(x, y) holds.
+    The last two rules compose the meanings of sub-parts into that of the larger part.
+    For example, after the first and third rules are fired, the fourth rule fires and generates VP[AyAx.borders(x, y)(Idaho)]; this meaning simplifies to Ax.borders(x, Idaho) by the A-reduction rule, which substitutes the arg

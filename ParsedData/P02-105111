@@ -1,0 +1,6 @@
+ names, on the other hand, are either translated (e.g., &#8220; h&#728; z&#175;an&#8221; as Reservoir) or transliterated (e.g., &#8220; t&#711;swzyn&#8221; as Chosin), and it is not clear when a word must be translated and when it must be transliterated.
+    So to generate translation candidates for a given phrase , words in the phrase are first translated using a bilingual dictionary and they are also transliterated.
+    Our candidate generator combines the dictionary entries and n-best transliterations for each word in the given phrase into a regular expression that accepts all possible permutations of word translation/transliteration combinations.
+    In addition to the word transliterations and translations, English zero-fertility words (i.e., words that might not have Arabic equivalents in the named entity phrase such as of and the) are considered.
+    This regular expression is then matched against a large English news corpus.
+    All matches are then scored according to their individual word translatio

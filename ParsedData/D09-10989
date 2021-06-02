@@ -1,0 +1,5 @@
+twise mutual information vector, constructed for each term as follows: PMI(w) = (pmiw1, pmiw2, ..., pmiwm), where pmiwf is the pointwise mutual information between term w and feature f: where cwf is the frequency of feature f occurring for term w, n is the number of unique terms and N is the total number of features for all terms.
+    Term similarities are computed by comparing these pmi context vectors using measures such as cosine, Jaccard, and Dice.
+    Computing the similarity between terms on a large Web crawl is a non-trivial problem, with a worst case cubic running time &#8211; O(n2m) where n is the number of terms and m is the dimensionality of the feature space.
+    Section 2.1 introduces several optimization techniques; below we propose an algorithm for large-scale term similarity computation which calculates exact scores for all pairs of terms, generalizes to several different metrics, and is scalable to a large crawl of the Web.
+    Our optimization strategy follows a generalized sparse-matrix mul

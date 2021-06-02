@@ -1,0 +1,6 @@
+re 10 illustrates the change in log-likelihood of training data 11-&#8222; (p) and withheld data Lph(p).
+    Had the algorithm terminated when the log-likelihood of the withheld data stopped increasing, the final model p would contain slightly less than 40 features.
+    We have employed this segmenting model as a component in a French-English machine translation system in the following manner: The model assigns to each position in the French sentence a score, p(rif t I x), which is a measure of how appropriate a split would be at that location.
+    A dynamic programming algorithm then selects, given the &amp;quot;appropriateness&amp;quot; score at each position and the requirement that no segment may contain more than 10 words, an optimal (or, at least, reasonable) splitting of the sentence.
+    Figure 11 shows the system's segmentation of four sentences selected at random from the Hansard data.
+    We remind the reader to keep in mind when evaluating Figure 11 that the segmenter's task is not to produce logi

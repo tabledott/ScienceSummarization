@@ -1,0 +1,9 @@
+particular type of lexical links the word w has with words in the local context.
+    After an importance score is computed for each word, each phrase in the 'sentence gets a score by adding up the scores of its children nodes in the parse tree.
+    This score indicates how important the phrase is in the local context.
+    Step 4: Corpus evidence.
+    The program uses a corpus consisting of sentences reduced by human professionals and their corresponding original sentences to compute how likely humans remove a certain phrase.
+    The system first parsed the sentences in the corpus using ESG parser.
+    It then marked which subtrees in these parse trees (i.e., phrases in the sentences) were removed by humans.
+    Using this corpus of marked parse trees, we can compute how likely a subtree is removed from its parent node.
+    For example, we can compute the probability that the &amp;quot;when&amp;quot; temporal clause is removed when the main verb is &amp;quot;give&amp;quot;, represented as Prob(&amp;quot;when-c

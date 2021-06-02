@@ -1,0 +1,7 @@
+s an attempt to capture inter-sentential dependencies.
+    Since we don&#8217;t know a priori what the important feature combinations are, we are considering all possible combinations over two sentences.
+    This will admittedly introduce some noise, given that some dependencies will be spurious, but the model can be easily retrained for different domains for which different feature combinations will be important.
+    The probawhere f(a&#57737;i,j&#57738;,a&#57737;i&#8722;1,k&#57738;) is the number of times feature a&#57737;i,j&#57738; is preceded by feature a&#57737;i&#8722;1,k&#57738; in the corpus.
+    The denominator expresses the number of times a&#57737;i&#8722;1,k&#57738; is attested in the corpus (preceded by any feature).
+    The probabilities P(a&#57737;i,j&#57738;|a&#57737;i&#8722;1,k&#57738;) will be unreliable when the frequency estimates for f (a&#57737;i, j&#57738;,a&#57737;i&#8722;1,k&#57738;) are small, and undefined in cases where the feature combinations are unattested in the corpus.
+    We

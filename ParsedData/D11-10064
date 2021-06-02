@@ -1,0 +1,8 @@
+pervised parsers by a significant margin.
+    This result holds in the presence of both gold POS tags as well as automatic tags projected from English.
+    This emphasizes that even for languages with no syntactic resources &#8211; or possibly even parallel data &#8211; simple transfer methods can already be more powerful than grammar induction systems.
+    Next, we use this delexicalized English parser to seed a perceptron learner for the target language.
+    The model is trained to update towards parses that are in high agreement with a source side English parse based on constraints drawn from alignments in the parallel data.
+    We use the augmented-loss learning procedure (Hall et al., 2011) which is closely related to constraint driven learning (Chang et al., 2007; Chang et al., 2010).
+    The resulting parser consistently improves on the directly transferred delexicalized parser, reducing relative errors by 8% on average, and as much as 18% on some languages.
+    Finally, we show that by transferring pa

@@ -1,0 +1,8 @@
+, zn) proceeds by sampling and updating each zi in turn from P(zi  |z&#8722;i), where z&#8722;i = (z1,... , zi&#8722;1, zi+1, ... , zn), i.e., all of the z except zi (Geman and Geman, 1984; Robert and Casella, 2004).
+    We evaluate four different Gibbs samplers in this paper, which vary along two dimensions.
+    First, the sampler can either be pointwise or blocked.
+    A pointwise sampler resamples a single state ti (labeling a single word wi) at each step, while a blocked sampler resamples the labels for all of the words in a sentence at a single step using a dynamic programming algorithm based on the Forward-Backward algorithm.
+    (In principle it is possible to use block sizes other than the sentence, but we did not explore this here).
+    A pointwise sampler requires O(nm) time per iteration, while a blocked sampler requires O(nm2) time per iteration, where m is the number of HMM states and n is the length of the training corpus.
+    Second, the sampler can either be explicit or collapsed.
+    An expli

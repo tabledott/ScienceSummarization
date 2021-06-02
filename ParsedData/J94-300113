@@ -1,0 +1,7 @@
+sees the pair N:m not followed by one of the labials p, b, m. It blocks in state 2 if it encounters the pair N:N followed by a labial on both tapes, thus providing for the situation in which the rule is not applied even though its conditions are satisfied.
+    If it does not block and both tapes are eventually exhausted, it accepts them just in case it is then in one of the final states, 0 or 2, shown as double circles.
+    It rejects the tapes if it ends up in the nonfinal state 1, indicating that the second tape is not a valid translation of the first one.
+    We have described transducers as acceptors of pairs of tapes that stand in a certain relation.
+    But they can also be interpreted asymmetrically, as functions either from more abstract to less abstract strings or the other way around.
+    Either of the tapes can contain an input string, in which case the output will be written on the other.
+    In each transition the machine matches the symbol specified for the input tape and writes the one for the 

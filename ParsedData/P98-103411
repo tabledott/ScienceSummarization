@@ -1,0 +1,6 @@
+ NP parsing of the improvement corpus.
+    The benefit of rule r is given by Br = Cr &#8212; Er where Cr is the number of NPs correctly identified by r, and Er is the number of precision errors for which r is responsible.1 A rule is considered responsible for an error if it was the first rule to bracket part of a reference NP, i.e., an NP in the base NP training corpus.
+    Thus, rules that form erroneous bracketings are not penalized if another rule previously bracketed part of the same reference NP.
+    For example, suppose the fragment containing base NPs Boca Raton, Hot Springs, and Palm Beach is bracketed as shown below. resort towns like [NP, Boca/NNP Raton/NNP , Hot/NNP] [NP, Springs/NNP], and [NP, Palm/NNP Beach/NNP1 Rule (NNP NNP , NNP) brackets NPi; (NNP) brackets NP2; and (NNP NNP) brackets NP3.
+    Rule (NNP NNP , NNP) incorrectly identifies Boca Raton , Hot as a noun phrase, so its score is &#8212;1.
+    Rule (NNP) incorrectly identifies Springs, but it is not held responsible for the error becau

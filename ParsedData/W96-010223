@@ -1,0 +1,8 @@
+ng time saving heuristic implementation of IB1-IG (see Section 3).
+    Table 3 lists the results in generalization accuracy, storage requirements and speed for the three algorithms using a ddf at pattern, a 100,000 word training set, and a 10,000 word test set.
+    In this experiment, accuracy was tested on known words only.
+    The IGTree version turns out to be better or equally good in terms of generalization accuracy, but also is more than 100 times faster for tagging of new words4, and compresses the original case base to 4% of the size of the original case base.
+    This experiment shows that for this problem, we can use IGTree as a time and memory saving approximation of memory-based learning (IB-IG version), without loss in generalization accuracy.
+    The time and speed advantage of IGTree grows with larger training sets.
+    A ten-fold cross-validation experiment on the first two million words of the WSJ corpus shows an average generalization performance of IGTree (on known words only) of 96.3%.
+   

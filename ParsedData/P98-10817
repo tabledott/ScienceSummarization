@@ -1,0 +1,10 @@
+n about the focus word and the two positions before and after, at least for known words.
+    For unknown words, the single position before and after, three suffix letters, and information about capitalization and presence of a hyphen or a digit are used.
+    The fourth and final system is the MXPOST system as described by Ratnaparkhi (19962; henceforth tagger E, for Entropy).
+    It uses a number of word and context features rather similar to system M, and trains a Maximum Entropy model that assigns a weighting parameter to each feature-value and combination of features that is relevant to the estimation of the probability P(taglfeatures).
+    A beam search is then used to find the highest probability tag sequence.
+    Both this system and Brill's system are used with the default settings that are suggested in their documentation.
+  
+  
+    The data we use for our experiment consists of the tagged LOB corpus (Johansson 1986).
+    The corpus comprises about one million words, divided over 500 samples of 2000 w

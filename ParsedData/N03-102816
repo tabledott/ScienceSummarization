@@ -1,0 +1,7 @@
+chunk tags as well as labels provides a form of backoff from the very small feature counts that may arise in a secondorder model, while allowing significant associations between tag pairs and input predicates to be modeled.
+    To save time in some of our experiments, we used only the 820,000 features that are supported in the CoNLL training set, that is, the features that are on at least once.
+    For our highest F score, we used the complete feature set, around 3.8 million in the CoNLL training set, which contains all the features whose predicate is on at least once in the training set.
+    The complete feature set may in principle perform better because it can place negative weights on transitions that should be discouraged if a given predicate is on.
+    As discussed previously, we need a Gaussian weight prior to reduce overfitting.
+    We also need to choose the number of training iterations since we found that the best F score is attained while the log-likelihood is still improving.
+    The reasons for 

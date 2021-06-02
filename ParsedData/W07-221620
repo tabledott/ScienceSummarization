@@ -1,0 +1,7 @@
+ctor f. The denominator, which is exactly the sum over all graph weights, is a normalization constant forcing the conditional probability distribution to sum to one.
+    CRFs set the parameters w to maximize the loglikelihood of the conditional probability over a training set of examples T = {(x&#945;, T&#945;)}|T| This optimization can be solved through a variety of iterative gradient based techniques.
+    Many of these require the calculation of feature expectations over the training set under model parameters for the previous iteration.
+    First, we note that the feature functions factor over edges, i.e., fu(T) = (i,j)k&#8712;ET fu(i,j, k).
+    Because of this, we can use edge expectations to compute the expectation of every feature fu.
+    Let (fu).&#945; represent the expectation of feature fu for the training instance x&#945;, Thus, we can calculate the feature expectation per training instance using the algorithms for computing Z,, and edge expectations.
+    Using this, we can calculate feature expect

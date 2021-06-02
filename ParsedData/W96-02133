@@ -1,0 +1,6 @@
+ Given a sequence of words {w1, , w} and tags {t1, .tn} as training data, define hi as the history available when predicting ti.
+    The parameters {p, ai , &#8226; .. , } are then chosen to maximize the likelihood of the training data using p: This model also can be interpreted under the Maximum Entropy formalism, in which the goal is to maximize the entropy of a distribution subject to certain constraints.
+    Here, the entropy of the distribution p is defined as: where the model's feature expectation is and the observed feature expectation is Ef =Epoi,ti) and where (h1, t1) denotes the observed probability of (hi , ti) in the training data.
+    Thus the constraints force the model to match its feature expectations with those observed in the training data.
+    In practice, I-1 is very large and the model's expectation E fi cannot be computed directly, so the following approximation(Lau et al., 1993) is used: where /3(h1) is the observed probability of the history hi in the training set.
+    It can be shown 

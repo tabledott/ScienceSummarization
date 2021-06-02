@@ -1,0 +1,9 @@
+  Since the parser makes decisions analyzing only a window of tokens of a limited size, it gets confused in creating attachments.
+    I tried to add some global context features, to be able to distinguish these cases, in particular, a count of the number of punctuation marks seen so far, whether punctuation is present between the focus words.
+    None of them helped improving precision and were not used in the submitted runs.
+    Most current parsers for Czech do not perform well on Apos (apposition), Coord (coordination) and ExD (ellipses), but they are not very frequent.
+    The largest number of errors occur on Obj (166), Adv (155), Sb (113), Atr (98).
+    There is also often confusion among these: 33 times Obj instead of Adv, 32 Sb instead of Obj, 28 Atr instead of Adv.
+    The high error rate of J (adjective) is expected, mainly due to coordination problems.
+    The error of R (preposition) is also relatively high.
+    Prepositions are problematic, but their error rate is higher than expected since they 

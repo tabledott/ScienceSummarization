@@ -1,0 +1,11 @@
+ that it does not give any credit to a candidate sentence if the sentence does not have any word pair co-occurring with its references.
+    For example, the following sentence has a ROUGE-S score of zero: S5. gunman the killed police S5 is the exact reverse of S1 and there is no skip bigram match between them.
+    However, we would like to differentiate sentences similar to S5 from sentences that do not have single word cooccurrence with S1.
+    To achieve this, we extend ROUGE-S with the addition of unigram as counting unit.
+    The extended version is called ROUGE-SU.
+    We can also obtain ROUGE-SU from ROUGE-S by adding a begin-of-sentence marker at the beginning of candidate and reference sentences.
+  
+  
+    To assess the effectiveness of ROUGE measures, we compute the correlation between ROUGE assigned summary scores and human assigned summary scores.
+    The intuition is that a good evaluation measure should assign a good score to a good summary and a bad score to a bad summary.
+    The ground truth i

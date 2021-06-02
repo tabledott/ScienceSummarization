@@ -1,0 +1,8 @@
+ task, our largest performance drop was on the ORG_DESRIPTOR SIOt, where we los t ii points of recall and 13 points of precision.
+  This can be largely attributed to knowledge gaps in our phrase r rules for organizational noun phrases .
+  In particular, we were missing a large number of head nouns that would have been required to identify relevant descriptor NPS .
+  On the PERSON_NAME and PERSON_ALIAS Slots, we respectively found a 7 point drop in precision and an 8 point drop in recall .
+  These were due to the same problem, a known flaw that had been left unaddressed i n the days leading to the evaluation .
+  In particular, we had failed to merge short name forms that appeared i n headlines with the longer forms that appeared in the body of the message .
+  For example, "James" in the walkthrough headline field should have been merged with "Robert L. James" in the body of the message .
+  Because these short forms went unmerged, they in turn spawned incorrect person templates, hence the dro p in PERSON and PE

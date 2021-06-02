@@ -1,0 +1,6 @@
+ing two types of models: The first model treats all entities uniformly, whereas the second one discriminates between transitions of salient entities and the rest.
+    We identify salient entities based on their frequency,3 following the widely accepted view that frequency of occurrence correlates with discourse prominence (Givon 1987; Ariel 1988; Hoey 1991; Morris and Hirst 1991).
+    To implement a salience-based model, we modify our feature generation procedure by computing transition probabilities for each salience group separately, and then combining them into a single feature vector.
+    For n transitions with k salience classes, the feature space will be of size n &#215; k. While we can easily build a model with multiple salience classes, we opt for a binary distinction (i.e., k = 2).
+    This is more in line with theoretical accounts of salience (Chafe 1976; Grosz, Joshi, and Weinstein 1995) and results in a moderate feature space for which reliable parameter estimation is possible.
+    Considering a l

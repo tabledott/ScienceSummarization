@@ -1,0 +1,6 @@
+n system.
+    For all models used in our experiments, both wordand class-based, the smoothing method used was Stupid Backoff (Brants et al., 2007).
+    Models with Stupid Backoff return scores rather than normalized probabilities, thus perplexities cannot be calculated for these models.
+    Instead we report BLEU scores (Papineni et al., 2002) of the machine translation system using different combinations of word- and classbased models for translation tasks from English to Arabic and Arabic to English.
+    For English we used three different training data sets: en target: The English side of Arabic-English and Chinese-English parallel data provided by LDC (405 million tokens). en ldcnews: Consists of several English news data sets provided by LDC (5 billion tokens). en webnews: Consists of data collected up to December 2005 from web pages containing primarily English news articles (31 billion tokens).
+    A fourth data set, en web, was used together with the other three data sets to train the large wordbased 

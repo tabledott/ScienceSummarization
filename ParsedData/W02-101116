@@ -1,0 +1,8 @@
+ut of the scope of this study), we randomly selected 700 positive-sentiment and 700 negative-sentiment documents.
+    We then divided this data into three equal-sized folds, maintaining balanced class distributions in each fold.
+    (We did not use a larger number of folds due to the slowness of the MaxEnt training procedure.)
+    All results reported below, as well as the baseline results from Section 4, are the average three-fold cross-validation results on this data (of course, the baseline algorithms had no parameters to tune).
+    To prepare the documents, we automatically removed the rating indicators and extracted the textual information from the original HTML document format, treating punctuation as separate lexical items.
+    No stemming or stoplists were used.
+    One unconventional step we took was to attempt to model the potentially important contextual effect of negation: clearly &#8220;good&#8221; and &#8220;not very good&#8221; indicate opposite sentiment orientations.
+    Adapting a technique 

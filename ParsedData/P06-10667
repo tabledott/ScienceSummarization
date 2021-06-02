@@ -1,0 +1,11 @@
+eordering model Q, we define it on the two consecutive blocks A1 and A2 and their order Under this framework, different reordering models can be designed.
+    In fact, we defined four reordering models in our experiments.
+    The first one is NONE, meaning no explicit reordering features at all.
+    We set n to 1 for all different pairs of blocks and their orders.
+    So the phrasal reordering is totally dependent on the language model.
+    This model is obviously different from the monotone search, which does not use the inverted rule at all.
+    The second one is a distortion style reordering model, which is formulated as where |AZ |denotes the number of words on the source side of blocks.
+    When an &lt; 0, this design will penalize those non-monotone translations.
+    The third one is a flat reordering model, which assigns probabilities for the straight and inverted order.
+    It is formulated as In our experiments on Chinese-English tasks, the probability for the straight order is set at pm = 0.95.
+    

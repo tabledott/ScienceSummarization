@@ -1,0 +1,10 @@
+very of the nonprojective links at parse time.
+  The use of trace labels in the pseudo-projective transfor- mation leads to a proliferation of edge label types: from 69 to 234 in the training set, many of which occur only once.
+  Since the running time of our parser depends on the number of labels, we used only the 20 most frequent trace labels.
+  3 Semantic Submodel Our semantic model consists of three parts: ?
+  A SRL classifier pipeline that generates a list of candidate predicate?argument structures.
+  A constraint system that filters the candidate list to enforce linguistic restrictions on the global configuration of arguments.
+  A global classifier that rescores the predicate?
+  argument structures in the filtered candidate list.
+  Rather than training the models on gold- standard syntactic input, we created an automati- cally parsed training set by 5-fold cross-validation.
+  Training on automatic syntax makes the semantic classifiers more resilient to parsing errors, in par- ticular adjunct labeling er

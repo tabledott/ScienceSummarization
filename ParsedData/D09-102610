@@ -1,0 +1,8 @@
+able 1.
+    The remaining part of the model from steps 7 through 10 are the same as for regular LDA.
+    The dependency of 0 on both &#945; and A is indicated by directed edges from A and &#945; to 0 in the plate notation in Figure 1.
+    This is the only additional dependency we introduce in LDA&#8217;s representation (please compare with Figure 1 in (Blei et al., 2003)).
+    In most applications discussed in this paper, we will assume that the documents are multiply tagged with human labels, both at learning and inference time.
+    When the labels A(d) of the document are observed, the labeling prior &#934; is d-separated from the rest of the model given A(d).
+    Hence the model is same as traditional LDA, except the constraint that the topic prior &#945;(d) is now restricted to the set of labeled topics X(d).
+    Therefore, we can use collapsed Gibbs sampling (Griffiths and Steyvers, 2004) for training where the sampling probability for a topic for position i in a document d in Labeled LDA is given by: wh

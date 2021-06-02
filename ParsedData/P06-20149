@@ -1,0 +1,8 @@
+ sentence that interrupt the phrases established by the provided dependency tree.
+    To put this notion formally, we first define some terms: given a subtree T[Z,k], where i is the left index of the leftmost leaf in T[Z,k] and k is the right index of its rightmost leaf, we say any index j E (i, k) is internal to T[Z,k].
+    Similarly, any index x E/ [i, k] is external to T[Z,k].
+    An invalid span is any span for which our provided tree has a subtree T[Z,k] such that one endpoint of the span is internal to T[Z k] while the other is external to it.
+    Figure 3 illustrates this definition, while Figure 4 shows the invalid spans induced by a simple dependency tree.
+    With these invalid spans in place, the ITG can no longer merge part of a dependency subtree with anything other than another part of the same subtree.
+    Since all ITG movement can be explained by inversions, this constrained ITG cannot interrupt one dependency phrase with part of another.
+    Therefore, the phrasal cohesion of the input depen

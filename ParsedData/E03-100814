@@ -1,0 +1,6 @@
+reebank as seed data, and subsequent unlabelled sentences were drawn from the remainder of these sections.
+    During each co-training round, the LTAG parser parsed 30 sentences, and the 20 labelled sentences with the highest scores (according to the LTAG joint probability) were added to the training data of the Collins-CFG parser.
+    The training data of the LTAG parser was augmented in the same way, using the 20 highest scoring parses from the set of 30, but using the Collins-CFG parser to label the sentences and provide the joint probability for scoring.
+    Figure 6 gives the results for the Collins-CFG parser, and also shows the self-training curve for The upper curve is for co-training between Collins-CFG and LTAG; the lower curve is selftraining for Collins-CFG. comparison.2 The graph shows that co-training results in higher performance than self-training.
+    The graph also shows that co-training performance levels out after around 80 rounds, and then starts to degrade.
+    The likely reason for this

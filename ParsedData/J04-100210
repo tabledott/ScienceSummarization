@@ -1,0 +1,5 @@
+namically obtains a large sample of domain-relevant documents, decomposes them into a bag-of-words representation, stems the words with an implementation of the Porter (1980) stemmer, and finds the ratio of occurrences of each word stem to the total number of stems in the domain corpus.
+    The frequency of each stem in the corpus is compared to its frequency in general English (as recorded in an English-language frequency dictionary [Kilgarriff 2003]).
+    The 400 verb stems with the highest relative frequency (computed as a ratio of the stem&#8217;s frequency in the domain to its frequency in the English frequency dictionary) are considered characteristic.
+    CorMet treats any word form that may be a verb (according to WordNet) as though it is a verb, which biases CorMet toward verbs with common nominal homonyms.
+    Word stems that have high relative frequency in more than one domain, like e-mail and download, are eliminated on the suspicion that they are more characteristic of documents on the Internet i

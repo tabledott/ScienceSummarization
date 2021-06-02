@@ -1,0 +1,10 @@
+ Schabes [1995].
+    Schabes's method can be viewed as performing an abductive inference: given a sentence containing an ambiguous word, it asks which choice wi for that word would best explain the observed sequence of words in the sentence.
+    It answers this question by substituting each wi in turn into the sentence.
+    The wi that produces the highest-probability sentence is selected.
+    Sentence probabilities are calculated using a part-of-speech trigram model.
+    We tried Schabes's method on the usual confusion sets; the results are in the last column of Table 7.
+    It can be seen that trigrams and the Bayesian hybrid method each have their better moments.
+    Trigrams are at their worst when the words in the confusion set have the same part of speech.
+    In this case, trigrams can distinguish between the words only by their prior probabilities this follows from the way the method calculates sentence probabilities.
+    Thus, for {between, among}, for example, where both words are prepositions, trig

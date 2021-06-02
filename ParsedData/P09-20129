@@ -1,0 +1,8 @@
+nts from the Treebank CFG rules (denoted (&#945;, p$,&#8804;i)), and by taking the counts only from iteration i (denoted (&#945;, p$, i)).
+    Our standard CKY parser and Gibbs sampler were both written in Perl.
+    TSG subtrees were flattened to CFG rules and reconstructed afterward, with identical mappings favoring the most probable rule.
+    For pruning, we binned nonterminals according to input span and degree of binarization, keeping the ten highest scoring items in each bin. the significantly larger &#8220;minimal subset&#8221; grammar.
+    The sampled grammars outperform all of them.
+    Nearly all of the rules of the best single iteration sampled grammar (100, 0.8, 500) are lexicalized (50,820 of 60,633), and almost half of them have a height greater than one (27,328).
+    Constructing sampled grammars by summing across iterations improved over this in all cases, but at the expense of a much larger grammar.
+    Figure 3 shows a histogram of subtree size taken from the counts of the subtrees (by token,

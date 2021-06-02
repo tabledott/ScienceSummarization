@@ -1,0 +1,9 @@
+#8212;4py otherwise; with square regularization (A=10-4).
+    One may select other loss functions such as SVM or logistic regression.
+    The specific choice is not important for the purpose of this paper.
+    The training algorithm is stochastic gradient descent, which is argued to perform well for regularized convex ERM learning formulations (Zhang, 2004).
+    As we will show in Section 7.3, our formulation is relatively insensitive to the change inh(rowdimension of the structure matrix).
+    We fixh(for each feature group) to 50, and use it in all settings.
+    The most time-consuming process is the training ofmauxiliary predictors on the unlabeled data (computingUin Figure 1).
+    Fixing the number of iterations to a constant, it runs in linear tomand the number of unlabeled instances and takes hours in our settings that use more than 20 million unlabeled instances.
+    Supervised classifier For comparison, we train a classifier using the same features and algorithm, but without unlabeled data (O=0in effe

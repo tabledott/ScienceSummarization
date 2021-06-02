@@ -1,0 +1,8 @@
+y a unigram Markov model).
+    In supervised dependency parsing, Eisner and Smith (2005) showed that imposing a hard constraint on the whole structure&#8212; specifically that each non-$ dependency arc cross fewer than k words&#8212;can give guaranteed O(nk2) runtime with little to no loss in accuracy (for simple models).
+    This constraint could lead to highly contrived parse trees, or none at all, for some sentences&#8212;both are avoided by the allowance of segmentation into a sequence of trees (each attached to $).
+    The construction of the &#8220;vine&#8221; (sequence of $&#8217;s children) takes only O(n) time once the chart has been assembled.
+    Our broadened hypothesis model is a probabilistic vine grammar with a unigram model over $&#8217;s children.
+    We allow (but do not require) segmentation of sentences, where each independent child of $ is the root of one of the segments.
+    We do not impose any constraints on dependency length.
+    Now the total probability of an n-length sentence x, ma

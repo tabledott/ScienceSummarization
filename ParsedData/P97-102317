@@ -1,0 +1,8 @@
+ge frequency of the words in each group, expecting the group with higher average frequency to contain the positive terms.
+    This aggregation operation increases the precision of the labeling dramatically since indicators for many pairs of words are combined, even when some of the words are incorrectly assigned to their group.
+  
+  
+    Since graph connectivity affects performance, we devised a method of selecting test sets that makes this dependence explicit.
+    Note that the graph density is largely a function of corpus size, and thus can be increased by adding more data.
+    Nevertheless, we report results on sparser test sets to show how our algorithm scales up.
+    We separated our sets of adjectives A (containing 1,336 adjectives) and conjunction- and morphologybased links L (containing 2,838 links) into training and testing groups by selecting, for several values of the parameter a, the maximal subset of A, Aa, which includes an adjective x if and only if there exist at least a links from L between x

@@ -1,0 +1,7 @@
+tion probability conditioned on the source and target position within the alignment template p(e|f, i, j) is interpolated with the position-independent probability p(e|f).
+    Phrase Alignment This feature favors monotonic alignment at the phrase level.
+    It measures the &#8216;amount of non-monotonicity&#8217; by summing over the distance (in the source language) of alignment templates which are consecutive in the target language.
+    Language Model Features As a language model feature, we use a standard backing off word-based trigram language model (Ney, Generet, and Wessel, 1995).
+    The baseline system actually includes four different language model features trained on four different corpora: the news part of the bilingual training data, a large Xinhua news corpus, a large AFP news corpus, and a set of Chinese news texts downloaded from the web.
+    Word/Phrase Penalty This word penalty feature counts the length in words of the target sentence.
+    Without this feature, the sentences produced tend to b

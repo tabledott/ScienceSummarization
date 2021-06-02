@@ -1,0 +1,10 @@
+em by directed edges.
+    For each word in the pair we first compute a personalized PageRank vector of graph G (Haveliwala, 2002).
+    Basically, personalized PageRank is computed by modifying the random jump distribution vector in the traditional PageRank equation.
+    In our case, we concentrate all probability mass in the target word.
+    Regarding PageRank implementation details, we chose a damping value of 0.85 and finish the calculation after 30 iterations.
+    These are default values, and we did not optimize them.
+    Our similarity method is similar, but simpler, to that used by (Hughes and Ramage, 2007), which report very good results on similarity datasets.
+    More details of our algorithm can be found in (Agirre and Soroa, 2009).
+    The algorithm and needed resouces are publicly available1.
+    The WordNet versions that we use in this work are the Multilingual Central Repository or MCR (Atserias et al., 2004) (which includes English WordNet version 1.6 and wordnets for several other languages li

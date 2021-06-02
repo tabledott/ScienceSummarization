@@ -1,0 +1,7 @@
+source software package implementing the MapReduce framework and distributed file system.
+    Hadoop has been shown to scale to several thousands of machines, allowing users to write simple &#8220;map&#8221; and &#8220;reduce&#8221; code, and to seamlessly manage the sophisticated parallel execution of the code.
+    A good primer on MapReduce programming is in (Dean and Ghemawat 2008).
+    Our implementation employs the MapReduce model by using the Map step to start M&#215;N Map tasks in parallel, each caching 1/Mth part of A as an inverted index and streaming 1/Nth part of B through it.
+    The actual inputs are read by the tasks Input: Two matrices A and B of feature vectors.
+    ## Build an inverted index for A (optimiza## tion for data sparseness) for k in non-zero features of A[i]: if k not in AA: AA[k] = empty-set ## append &lt;vector-id, feature-value&gt; ## pairs to the set of non-zero ## values for feature k directly from HDFS (Hadoop Distributed File System).
+    Each part of A is processed N times,

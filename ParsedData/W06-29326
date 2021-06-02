@@ -1,0 +1,7 @@
+ in the tree would produce the final output.
+    Such a model could easily be trained using the provided training data for each language.
+    However, it might be advantageous to know the labels of other nearby edges.
+    For instance, if we consider a head xi with dependents xj1, ... , xjM, it is often the case that many of these dependencies will have correlated labels.
+    To model this we treat the labeling of the edges (i, j1), ... , (i, jM) as a sequence labeling problem, We use a first-order Markov factorization of the score s(l(i,jm), l(i,jm&#65533;1), i, y, x) in which each factor is the score of labeling the adjacent edges (i, jm) and (i, jm&#8722;1) in the tree y.
+    We attempted higher-order Markov factorizations but they did not improve performance uniformly across languages and training became significantly slower.
+    For score functions, we use simple dot products between high dimensional feature representations and a weight vector Assuming we have an appropriate feature representation, we ca

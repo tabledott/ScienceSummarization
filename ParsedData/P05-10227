@@ -1,0 +1,10 @@
+t parse, then find the second-best parse, then the third-best, and so on.
+    The algorithm was originally described for hidden Markov models.
+    Since this first draft of this paper we have become aware of two PCFG implementations of this algorithm (Jimenez and Marzal, 2000; Huang and Chang, 2005).
+    The first was tried on relatively small grammars, while the second was implemented on top of the Bikel re-implementation of the Collins v&#952;(y). parser (Bikel, 2004) and achieved oracle results for 50-best parses similar to those we report below.
+    Here, however, we describe how to find n-best parses in a more straight-forward fashion.
+    Rather than storing a single best parse of each edge, one stores n of them.
+    That is, when using dynamic programming, rather than throwing away a candidate if it scores less than the best, one keeps it if it is one of the top n analyses for this edge discovered so far.
+    This is really very straight-forward.
+    The problem is space.
+    Dynamic programming parsin

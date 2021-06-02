@@ -1,0 +1,9 @@
+ model is sparse, and we want to efficiently find their associated probabilities and backoff penalties.
+    An important subproblem of language model storage is therefore sparse mapping: storing values for sparse keys using little memory then retrieving values given keys using little time.
+    We use two common techniques, hash tables and sorted arrays, describing each before the model that uses the technique.
+    Hash tables are a common sparse mapping technique used by SRILM&#8217;s default and BerkeleyLM&#8217;s hashed variant.
+    Keys to the table are hashed, using for example Austin Appleby&#8217;s MurmurHash2, to integers evenly distributed over a large range.
+    This range is collapsed to a number of buckets, typically by taking the hash modulo the number of buckets.
+    Entries landing in the same bucket are said to collide.
+    Several methods exist to handle collisions; we use linear probing because it has less memory overhead when entries are small.
+    Linear probing places at most one entry in 

@@ -1,0 +1,10 @@
+dvantage is gradually diminished by the negative effect of error propagation due to the greedy inference strategy as sentences and dependencies get longer.
+    MSTParser has a more even distribution of errors, which is expected given that the inference algorithm and feature representation should not prefer one type of arc over another.
+    This naturally leads one to ask: Is it possible to integrate the two models in order to exploit their complementary strengths?
+    This is the topic of the remainder of this paper.
+  
+  
+    There are many conceivable ways of combining the two parsers, including more or less complex ensemble systems and voting schemes, which only perform the integration at parsing time.
+    However, given that we are dealing with data-driven models, it should be possible to integrate at learning time, so that the two complementary models can learn from one another.
+    In this paper, we propose to do this by letting one model generate features for the other.
+    As explained in section 2, b

@@ -1,0 +1,16 @@
+the MIRA algorithmas presented by McDonald et al (2005).
+			An on line learning algorithm considers a single training instance at each update to w. The auxiliary vector v accumulates the successive values of w, so that thefinal weight vector is the average of the weight vec Training data: T = {(xt, yt)}Tt=1 1.
+			w0 = 0; v = 0; i = 0 2.
+			for n : 1..N 3.
+			for t : 1..T 4.
+			min ? ?
+			w(i+1) ? w(i) ? ?
+			s.t. s(xt, yt) ? s(xt, y?)
+			L(yt, y?), ?y? ? dt(xt) 5.
+			v = v + w(i+1) 6.
+			i = i + 1 7.
+			w = v/(N ? T ) Figure 4: MIRA learning algorithm.
+			tors after each iteration.
+			This averaging effect has been shown to help overfitting (Collins, 2002).
+			On each update, MIRA attempts to keep the new weight vector as close as possible to the old weight vector, subject to correctly classifying the instance under consideration with a margin given by the loss of the incorrect classifications.
+			For dependency trees, the loss of a tree is defined to be the number of words with incorrect parents relative to 

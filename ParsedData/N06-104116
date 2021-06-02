@@ -1,0 +1,10 @@
+ire BLIPP corpus.
+    We limited each word to have similarity features for its top 5 most similar prototypes.
+    5Note that the presence of a prototype feature does not ensure every instance of that word type will be given its prototype&#8217;s label; pressure from &#8220;edge&#8221; features or other prototype features can cause occurrences of a word type to be given different labels.
+    However, rare words with a single prototype feature are almost always given that prototype&#8217;s label.
+    This setting, PROTO+SIM, brings the all-tokens accuracy up to 80.5%, which is a 37.5% error reduction over PROTO.
+    For non-prototypes, the accuracy increases to 67.8%, an error reduction of 38.4% over PROTO.
+    The overall error reduction from BASE to PROTO+SIM on all-token accuracy is 66.7%.
+    Table 5 lists the most common confusions for PROTO+SIM.
+    The second, third, and fourth most common confusions are characteristic of fully supervised taggers (though greater in number here) and are difficult.
+    For

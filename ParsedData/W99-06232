@@ -1,0 +1,9 @@
+ach parse hybridization.
+    The substructures that are unanimously hypothesized by the parsers should be preserved after combination, and the combination technique should not foolishly create substructures for which there is no supporting evidence.
+    These two principles guide experimentation in this framework, and together with the evaluation measures help us decide which specific type of substructure to combine.
+    The precision and recall measures (described in more detail in Section 3) used in evaluating Treebank parsing treat each constituent as a separate entity, a minimal unit of correctness.
+    Since our goal is to perform well under these measures we will similarly treat constituents as the minimal substructures for combination.
+    One hybridization strategy is to let the parsers vote on constituents' membership in the hypothesized set.
+    If enough parsers suggest that a particular constituent belongs in the parse, we include it.
+    We call this technique constituent voting.
+    We include a

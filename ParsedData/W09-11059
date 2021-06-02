@@ -1,0 +1,13 @@
+ine.
+  
+  
+    We model the scope finding task as two consecutive classification tasks: a first one that consists of classifying the tokens of a sentence as being at the beginning of a negation signal, inside or outside.
+    This allows the system to find multiword negation signals.
+    The second classification task consists of classifying the tokens of a sentence as being the first element of the scope, the last, or neither.
+    This happens as many times as there are negation signals in the sentence.
+    We have chosen this classification model after experimenting with two additional models that produced worse results: in one case we classifed tokens as being inside or outside of the scope.
+    In another case we classified chunks, instead of tokens, as being inside or outside of the scope.
+  
+  
+    The two classification tasks (identifying negation signals and finding the scope) are implemented using supervised machine learning methods trained on part of the annotated corpus.
+    In this phase, a classif

@@ -1,0 +1,7 @@
+xample, Cause (1-2) indicates that the first noun causes the second, and Cause (2-1) indicates the converse.
+    We ran the experiments creating models that used different levels of the MeSH hierarchy.
+    For example, for the NC flu vaccination, flu maps to the MeSH term D4.808.54.79.429.154.349 and vaccination to G3.770.670.310.890.
+    Flu vaccination for Model 4 would be represented by a vector consisting of the concatenation of the two descriptors showing only the first four levels: D4.808.54.79 G3.770.670.310 (see Table 2).
+    When a word maps to a general MeSH term (like treatment, Y11) zeros are appended to the end of the descriptor to stand in place of the missing values (so, for example, treatment in Model 3 is Y 11 0, and in Model 4 is Y 11 0 0, etc.).
+    The numbers in the MeSH descriptors are categorical values; we represented them with indicator variables.
+    That is, for each variable we calculated the number of possible categories c and then represented an observation of the variable as a s

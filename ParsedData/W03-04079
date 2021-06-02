@@ -1,0 +1,9 @@
+s, rather than smaller units, because this simplifies the experiments and the publicly available version of TNT requires complete tagged sentences for training.
+    It is possible that cotraining with sub-sentential units might be more effective, but we leave this as future work.
+    The co-training process is given in Figure 1.
+    At each stage in the process there is a cache of unlabelled sentences (selected from the total pool of unlabelled sentences) which is labelled by each tagger.
+    The cache size could be increased at each iteration, which is a common practice in the co-training literature.
+    A subset of those sentences labelled by TNT is then added to the training data for C&amp;C, and vice versa.
+    Blum and Mitchell (1998) use the combined set of newly labelled examples for training each view, but we follow Goldman and Zhou (2000) in using separate labelled sets.
+    In the remainder of this section we consider two possible methods for selecting a subset.
+    The cache is cleared after each i

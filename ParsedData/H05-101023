@@ -1,0 +1,8 @@
+nce.Another way of doing the parameter estima tion for this matching task would have been to use an averaged perceptron method, as in Collins (2002).
+			In this method, we merely run our matching algorithm and update weights based on the difference between the predictedand target matchings.
+			However, the perfor mance of the average perceptron learner on the same feature set is much lower, only 8.1, not even breaking the AER of its best single feature (the intersected Model 4 predictions).
+			3.2 Scaling Experiments.
+			We explored the scaling of our method by learn ing on a larger training set, which we created by using GIZA++ intersected bi-directional Model 4 alignments for the unlabeled sentence pairs.
+			We then took the first 5K sentence pairs from these 1.1M Model 4 alignments.
+			This gave us more training data, albeit with noisier labels.
+			On a 3.4GHz Intel Xeon CPU, GIZA++ took 18 hours to align the 1.1M words, while ourmethod learned its weights in between 6 min utes (100 training sentences) and

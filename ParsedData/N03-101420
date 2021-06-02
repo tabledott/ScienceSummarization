@@ -1,0 +1,8 @@
+out significant loss in accuracy, which is crucial to the success of our parser due to the relatively high computational cost of computing probability estimates with a neural network rather than with the simpler methods typically employed in NLP.
+    Our pruning strategy is designed specifically for left-corner parsing.
+    We prune the search space in two different ways, the first applying fixed beam pruning at certain derivation steps and the second restricting the branching factor at all derivation steps.
+    The most important pruning occurs after each word has been shifted onto the stack.
+    When a partial derivation reaches this position it is stopped to see if it is one of the best 100 partial derivations which end in shifting that word.
+    Only a fixed beam of the best 100 derivations are allowed to continue to the next word.
+    Experiments with a variety of post-prediction beam widths confirms that very small validation performance gains are achieved with widths larger than 100.
+    To search the 

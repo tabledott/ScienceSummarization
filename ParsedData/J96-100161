@@ -1,0 +1,6 @@
+cation.
+    Let X and Y stand for the source collocation and the French word under consideration, respectively, at some step of the loop through the word list.
+    At this point, we know the global frequency of the source collocation (fx) and the local frequency of the candidate translation word (fxy), but not the global frequency of the candidate word (fy).
+    We need all these three quantities to compute the Dice coefficient, but while fx is computed once for all Y, and it is very efficient to compute fx y at the same time as the set of sentences matching X is identified, it is more costly to find fy even if a special access structure is maintained.
+    So, we first check whether there is any possibility that this word correlates with the source collocation highly enough to pass the Dice threshold by assuming temporarily that the word does not appear at all outside the sentences matching the source collocation.
+    By setting fy=fxy, we can efficiently compute the Dice coefficient between X and Y under thi

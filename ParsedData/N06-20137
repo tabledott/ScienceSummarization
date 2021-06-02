@@ -1,0 +1,12 @@
+form of preprocessed output; whereas a technique is the method used to create such output.
+    We examine six different schemes and three techniques.
+    The different techniques chosen illustrate three degrees of linguistic knowledge dependence.
+    The first is very light and cheap.
+    The second is more expensive, requiring the use of a morphological analyzer.
+    And the third is yet more expensive than the second; it is a disambiguation system that requires an analyzer and a disambiguated training corpus.
+    REGEX is the baseline technique.
+    It is simply greedy regular expression matching to modify strings and/or split off prefix/suffix substrings that look like clitics indicated by specific schemes.
+    REGEX cannot be used with complex schemes such as EN and MR (see Section 4.2).
+    BAMA, Buckwalter Arabic Morphological Analyzer (Buckwalter, 2002), is used to obtain possible word analyses.
+    Using BAMA prevents incorrect greedy REGEX matches.
+    Since BAMA produces multiple analyses, we always

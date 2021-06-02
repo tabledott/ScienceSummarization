@@ -1,0 +1,11 @@
+, divides into equally sized bins, and averages within each bin.
+    The cost of storing these averages, in bits, is Because there are comparatively few unigrams, we elected to store them byte-aligned and unquantized, making every query faster.
+    Unigrams also have 64-bit overhead for vocabulary lookup.
+    Using cn to denote the number of n-grams, total memory consumption of TRIE, in bits, is plus quantization tables, if used.
+    The size of TRIE is particularly sensitive to F1092 c11, so vocabulary filtering is quite effective at reducing model size.
+  
+  
+    SRILM (Stolcke, 2002) is widely used within academia.
+    It is generally considered to be fast (Pauls 29 &#8722; 1 probabilities and 2' &#8722; 2 non-zero backoffs. and Klein, 2011), with a default implementation based on hash tables within each trie node.
+    Each trie node is individually allocated and full 64-bit pointers are used to find them, wasting memory.
+    The compact variant uses sorted arrays instead of hash tables within each node, s

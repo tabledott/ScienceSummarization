@@ -1,0 +1,8 @@
+ marginals,&#8221; which assess the 1-best assignment consistent with each value of the variable.
+    We can indeed build max-product propagators for our global constraints.
+    PTREE still propagates in O(n3) time: simply change the first-order parser&#8217;s semiring (Goodman, 1999) to use max instead of sum.
+    TREE requires O(n4) time: it seems that the O(n2) max marginals must be computed separately, each requiring a separate call to an O(n2) maximum spanning tree algorithm (Tarjan, 1977).
+    If max-product BP converges, we may simply output each variable&#8217;s favorite value (according to its belief), if unique.
+    However, max-product BP tends to be unstable on loopy graphs, and we may not wish to wait for full convergence in any case.
+    A more robust technique for extracting an assignment is to mimic Viterbi decoding, and &#8220;follow backpointers&#8221; of the max-product computation along some spanning subtree of the factor graph.
+    A slower but potentially more stable alternative is deter

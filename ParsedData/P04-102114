@@ -1,0 +1,9 @@
+ yield an average result, which is called the 13-fold open test.
+    After experiments, we found that each of the 13-fold open tests gave consistent error rates with less than 1% deviation.
+    Therefore, for simplicity, we randomly select one of the 13 subsets, which consists of 2896 entries, as the standard open test set to report results.
+    In the close test, all data entries are used for training and testing.
+    The alignment of transliteration units is done fully automatically along with the n-gram TM training process.
+    To model the boundary effects, we introduce two extra units &lt;s&gt; and &lt;/s&gt; for start and end of each name in both languages.
+    The EM iteration converges at 8th round when no further alignment changes are reported.
+    Next are some statistics as a result of the model training: The most common metric for evaluating an ngram model is the probability that the model assigns to test data, or perplexity (Jelinek, 1991).
+    For a test set W composed of V names, where each nam

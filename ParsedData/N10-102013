@@ -1,0 +1,8 @@
+, breaking our HMM dynamic programing.
+    Therefore we adopt Gibbs sampling as our inference engine.
+    Each hidden variable is sampled in turn, conditioned on a complete assignment of all other hidden variables throughout the data set.
+    Again following LDA convention, we carry out collapsed sampling, where the various multinomials are integrated out, and are never explicitly estimated.
+    This results in a sampling sequence where for each post we first sample its act, and then sample a source for each word in the post.
+    The hidden act and source variables are sampled according to the following transition distributions: These probabilities can be computed analogously to the calculations used in the collapsed sampler for a bigram HMM (Goldwater and Griffiths, 2007), and those used for LDA (Griffiths and Steyvers, 2004).
+    Note that our model contains five hyperparameters.
+    Rather than attempt to set them using an expensive grid search, we treat the concentration parameters as additional hidden va

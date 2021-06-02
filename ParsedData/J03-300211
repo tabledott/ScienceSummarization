@@ -1,0 +1,7 @@
+ and for each English URL, applying all possible rules to generate URLs that might appear on the list of pages for the other language.
+    If such a URL is found, the pair with similar URLs is added to the list of candidate document pairs.
+    For example, suppose an English-Chinese site contains a page with URL (http://mysite.com/english/home en.html), on which one combination of substitutions might produce the URL (http://mysite.com/big5/home ch.html).
+    The original page and the produced URL are probably worth considering as a likely candidate pair.
+    Owing to the combinatorics (an exponential number of possible substitutions), only a fixed number of substitution combinations can be tried per English URL; however, in Section 4.3 we describe a more scalable URL-matching algorithm.
+    Another possible criterion for matching is the use of document lengths.
+    Texts that are translations of one another tend to be similar in length, and it is reasonable to assume that for text E in language 1 and text F i

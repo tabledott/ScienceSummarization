@@ -1,0 +1,6 @@
+ any model whose weights get too large in absolute value.
+    The estimation process can also be thought of in terms of the framework of Della Pietra, Della Pietra, and Lafferty (1997), because setting the gradient in Equation (17) to zero yields the usual maximum entropy constraints, namely that the expected value of each feature is equal to its empirical value (again ignoring the Gaussian prior term).
+    However, in this case the empirical values are themselves expectations, over all derivations leading to each gold-standard dependency structure.
+    For the normal-form model, the training data consists of gold-standard normal-form derivations.
+    The objective function and gradient vector for the normal-form model are: where dj is the the gold-standard normal-form derivation for sentence Sj and &#952;(Sj) is the set of possible derivations for Sj.
+    Note that &#952;(Sj) could contain some non-normal-form derivations; however, because any non-normal-form derivations will be considered incorrect, the res

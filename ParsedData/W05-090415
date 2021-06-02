@@ -1,0 +1,6 @@
+erring to three human translations.
+    Since the three human translations can only cover a small set of possible translations, with the increasing of n-gram length, more and more correct n-grams might not be found in the references, so that the fraction of longer ngrams turns to be less reliable than the short ones and hurts the final scores.
+    In the the corpus-level evaluation of a MT system, the sparse data problem will be less serious than in the sentence-level evaluation, since the overlapping n-grams of all the sentences and their references will be summed up.
+    So in the traditional BLEU algorithm used for corpuslevel evaluation, a maximum n-gram of length 4 or 5 is usually used.
+    A similar trend can be found in syntax tree and dependency tree based metrics, but the decreasing ratios are much lower than BLEU, which indicates that the syntactic metrics are less affected by the sparse data problem.
+    The poor performance of tree-kernel based metrics also confirms our arguments on the sparse dat

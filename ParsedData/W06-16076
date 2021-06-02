@@ -1,0 +1,8 @@
+ts, in order to compensate for data sparsity.
+    In the spirit of ((Hastie et al., 2001), figure 2.11, pg.
+    38) smoothing can be seen as a way of combining the relativefrequency estimate, which is a model with high complexity, high variance, and low bias, with another model with lower complexity, lower variance, and high bias, in the hope of obtaining better performance on new data.
+    There are two main ingredients in all such recipes: some probability distribution that is smoother than relative frequencies (ie, that has fewer parameters and is thus less complex) and some technique for combining that distribution with relative frequency estimates.
+    We will now discuss both these choices: the distribution for carrying out smoothing and the combination technique.
+    In this discussion, we use &#732;p() to denote relative frequency distributions.
+    One can distinguish between two approaches to smoothing phrase tables.
+    Black-box techniques do not look inside phrases but instead treat them as atomi

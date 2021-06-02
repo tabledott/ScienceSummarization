@@ -1,0 +1,9 @@
+ed bywhitespace, followed by an uppercase letter.
+    However the uppercase letter must not be consumed, as it is the first component of the next token.
+    A lookahead mechanism allows us to specify in the sentence-boundary regular expression that the final character matched should not be considered a part of the token.
+    This method meets our stated goals for the overall system.
+    It is efficient, requiring that each character be examined only once (modulo lookahead).
+    It is easily parameterizable, providing the expressive power to concisely define accurate and robust token classes.
+    The lexicon module is responsible for enumerating parts of speech and their associated stems for each word it is given.
+    For the English word &amp;quot;does,&amp;quot; the lexicon might return &amp;quot;do, verb&amp;quot; and &amp;quot;doe, plural-noun.&amp;quot; It is also responsible for identifying ambiguity classes based upon sets of tags.
+    We have employed a three-stage implementation: First, we consult a m

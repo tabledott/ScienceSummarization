@@ -1,0 +1,9 @@
+otation Ao.
+    In Ao, each known word is tagged with its most likely tag in the training set, and each unknown word is tagged as a noun (or proper noun if capitalized).
+    The system then searches through a space of transformation rules (defined by rule templates) in order to reduce the discrepancy between its current annotation and the provided correct one.
+    There are separate templates for known words (mainly based on local word and tag context), and for unknown words (based on suffix, prefix, and other lexical information).
+    The exact features used by this tagger are shown in Table 1.
+    The learner for the unknown words is trained and applied first.
+    Based on its output, the rules for context disambiguation are learned.
+    In each learning step, all instantiations of the rule templates that are present in the corpus are generated and receive a score.
+    The rule that corrects the highest number of errors at step n is selected and applied to the corpus to yield an annotation An, which is then

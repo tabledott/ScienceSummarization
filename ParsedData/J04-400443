@@ -1,0 +1,7 @@
+es can be derived in a number of sensible ways; the technique used by Collins was adapted from that used in Bikel et al. (1997), which makes use of a quantity called the diversity of the history context (Witten and Bell 1991), which is equal to the number of unique futures observed in training for that history context.
+    6.8.1 Deficient Model.
+    As previously mentioned, n back-off levels require n&#8722;1 smoothing weights.
+    Collins&#8217; parser effectively uses n weights, because the estimator always adds an extra, constant-valued estimate to the back-off chain.
+    Collins&#8217; parser hardcodes this extra value to be a vanishingly small (but nonzero) &#8220;probability&#8221; of 10&#8722;19, resulting in smoothed estimates of the form when there are three levels of back-off.
+    The addition of this constant-valued en = 10&#8722;19 causes all estimates in the parser to be deficient, as it ends up throwing away probability mass.
+    More formally, the proof leading to equation (17) no longer holds:

@@ -1,0 +1,7 @@
+
+    The input to the parser is a sentence x with length n. A hypothesis is a triple (x, t, i) such that x is the sentence being parsed, t is a partial or full analysis of that sentence, and i is an integer specifying the number of words of the sentence which have been processed.
+    Each full parse for a sentence will have the form (x, t, n).
+    The initial state is (x, 0, 0) where 0 is a &#8220;null&#8221; or empty analysis.
+    We assume an &#8220;advance&#8221; function ADV which takes a hypothesis triple as input, and returns a set of new hypotheses as output.
+    The advance function will absorb another word in the sentence: this means that if the input to ADV is (x, t, i), then each member of ADV((x, t, i)) will have the form (x, t',i+1).
+    Each new analysis t' will be formed by somehow incorporating the i+1&#8217;th word into the previous analysis t. With these definitions in place, we can iteratively define the full set of partial analyses Hi for the first i words of the sentence as H0(x) = {(x, 0

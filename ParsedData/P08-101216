@@ -1,0 +1,10 @@
+r the nonterminal X, but the expansions of C are limited to generate only 1-1, 1-0, and 0-1 alignments: where E indicates that no word was generated.
+    Broadly speaking, the goal of this section is the same as the previous section, namely, to limit the set of phrase pairs that needs to be considered in the training process.
+    The tic-tac-toe pruning relies on IBM model 1 for scoring a given aligned area.
+    In this part, we use word-based ITG alignments as anchor points in the alignment space to pin down the potential phrases.
+    The scope of iterative phrasal ITG training, therefore, is limited to determining the boundaries of the phrases anchored on the given one-toone word alignments.
+    The heuristic method is based on the NonCompositional Constraint of Cherry and Lin (2007).
+    Cherry and Lin (2007) use GIZA++ intersections which have high precision as anchor points in the bitext space to constraint ITG phrases.
+    We use ITG Viterbi alignments instead.
+    The benefit is two-fold.
+    First of 

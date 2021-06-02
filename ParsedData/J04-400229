@@ -1,0 +1,5 @@
+features that relate certain grammatical dependencies of source and target language.
+    For example, using a function k(&#183;) that counts how many arguments the main verb of a sentence has in the source or target sentence, we can define the following feature, which has a nonzero value if the verb in each of the two sentences has the same number of arguments: In the same way, we can introduce semantic features or pragmatic features such as the dialogue act classification.
+    For the three different tasks on which we report results, we use two different training approaches.
+    For the VERBMOBiL task, we train the model parameters &#955;M1 according to the maximum class posterior probability criterion (equation (4)).
+    For the French&#8211; English HANSARDS task and the Chinese&#8211;English NIST task, we simply tune the model parameters by coordinate descent on held-out data with respect to the automatic evaluation metric employed, using as a starting point the model parameters obtained on the VERBMOBiL 

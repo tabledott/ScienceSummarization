@@ -1,0 +1,8 @@
+ree as the multiplication of the probabilities of each derivation decision conditional on that decision&#8217;s prior derivation history .
+    The neural network is used to estimate the parameters of this probability model.
+    To define the parameters we need to choose the ordering of the decisions in a derivation, such as a top-down or shift-reduce ordering.
+    The ordering which we use here is that of a form of left-corner parser (Rosenkrantz and Lewis, 1970).
+    A left-corner parser decides to introduced a node into the parse tree after the subtree rooted at the node&#8217;s first child has been fully parsed.
+    Then the subtrees for the node&#8217;s remaining children are parsed in their left-to-right order.
+    We use a version of left-corner parsing which first applies right-binarization to the grammar, as is done in (Manning and Carpenter, 1997) except that we binarize down to nullary rules rather than to binary rules.
+    This allows the choice of the children for a node to be done incrementally, 

@@ -1,0 +1,10 @@
+ 1.5%.
+    ML training, Viterbi tagging In ML training we take all the training data available (40,186 sentences) but we only use the word sequences, not the associated tags (except to compute the initial model, as will be described later).
+    This is possible since the FB algorithm is able to train the model using the word sequence only.
+    In the first experiment we took the model made up of uniform distributions as the initial one.
+    The only constraints in this model came from the values k(w It) that were set to zero when the tag t was not possible for the word w (as found in the dictionary).
+    We then ran the FB algorithm and evaluated the quality of the tagging.
+    The results are shown in Figure 1.
+    (Perplexity is a measure of the average branching factor for probabilistic models.)
+    This figure shows that ML training both improves the perplexity of the model and reduces the tagging error rate.
+    However, this error rate remains at a relatively high level&#8212;higher than that obtained w

@@ -1,0 +1,11 @@
+ranking for the Cf for Japanese than for English, but this has no effect on the actual algorithm itself since the Cf ranking is a declarative parameter.
+  The steps of the algorithm given above can be interleaved to improve computa- tional efficiency.
+  A simple implementation is to: ?
+  Never propose a Cf that violates linguistic onstraints on contra-indexing.
+  (In other words, apply the contra-indexing filter as early as possible to avoid Cb-Cf combinations that will be eliminated by that filter,) ?
+  If there are pronouns in an utterance, only propose pronouns as possible Cbs.
+  (Collect he pronouns from the proposed Cfs as Cbs, from Rule 1.)
+  In addition, it is simple to add additional filters to step (2) of the algorithm.
+  For instance, any constraint that is lexically specified such as [?animacy] can be easily applied as a filter.
+  It is also possible to pursue a best first strategy by interleaving steps (1), (2), and (3) so that a CONTINUE will be found without extra processing if one exists.
+  In 

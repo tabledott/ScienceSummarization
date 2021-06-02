@@ -1,0 +1,6 @@
+ans on stack is contiguous, and (b) cR(st, wi), i.e. whether the stack top is contiguous with the current word wi.
+    According to discussions in Section 3, when (a) is contiguous and (b) is not, it is a clear signal for reduce (to combine the top two elements on the stack) rather than shift, and is strongly supported by the data (first line: 1209 reduces vs. 172 shifts); and while when (b) is contiguous and (a) is not, it should suggest shift (combining st and wi before st&#8722;1 and st are combined) rather than reduce, and is mildly supported by the data (second line: 1432 shifts vs. 805 reduces).
+    When (a) and (b) are both contiguous or both discontiguous, it should be considered a neutral signal, and is also consistent with the data (next two lines).
+    So to conclude, this bilingual hypothesis is empirically justified.
+    On the other hand, we would like to note that these correlations are done with automatic word alignments (in our case, from the Berkeley aligner) which can be quite noisy.
+    We

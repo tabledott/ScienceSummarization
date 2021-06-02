@@ -1,0 +1,6 @@
+t uses the original IBM models to derive word-to-word alignments in the corpus of example translations.
+    Heuristics are then used to grow these alignments to encompass phrase-tophrase pairs.
+    The end result of the training process is a lexicon of phrase-to-phrase pairs, with associated costs or probabilities.
+    In translation with the system, a beam search method with left-to-right search is used to find a high scoring translation for an input sentence.
+    At each stage of the search, one or more English words are added to the hypothesized string, and one or more consecutive German words are &#8220;absorbed&#8221; (i.e., marked as having already been translated&#8212;note that each word is absorbed at most once).
+    Each step of this kind has a number of costs: for example, the log probability of the phrase-tophrase correspondance involved, the log probability from a language model, and some &#8220;distortion&#8221; score indicating how likely it is for the proposed words in the English string to be

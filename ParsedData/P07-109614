@@ -1,0 +1,7 @@
+ Hypothesis scores and action scores are calculated with the updated weight vector w. A special aspect of Algorithm 2 is that we maintain two scores: the score of the action represents the confidence for the next move, and the score of the hypothesis represents the overall quality of a partial result.
+    The selection for the next action directly depends on the score of the action, but not on the score of the hypothesis.
+    On the other hand, the score of the hypothesis is used to maintain top partial results for each span.
+    We briefly describe the soundness of the Guided Learning Algorithm in terms of two aspects.
+    First, in Algorithm 2 weight update is activated whenever there exists an incorrect state s, the action score of whose top hypothesis s.T is higher than that of any state in each span.
+    We demote this action and promote the gold standard action on the same span.
+    764 Require: training sequence pairs {(Xr,Yr)11&lt;r&lt;R; Require: beam width B and iterations I; However, we do not auto

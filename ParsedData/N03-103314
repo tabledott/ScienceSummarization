@@ -1,0 +1,5 @@
+equence models attempt to maximize (and has been motivated over doing per-state optimization as being more useful for subsequent linguistic processing: one wants to find a coherent sentence interpretation).
+    Further, while some tag errors matter much more than others, to a first cut getting a single tag wrong in many of the more common ways (e.g., proper noun vs. common noun; noun vs. verb) would lead to errors in a subsequent processor such as an information extraction system or a parser that would greatly degrade results for the entire sentence.
+    Finally, the fact that the measure has much more dynamic range has some appeal when reporting tagging results.
+    The per-state models in this paper are log-linear models, building upon the models in (Ratnaparkhi, 1996) and (Toutanova and Manning, 2000), though some models are in fact strictly simpler.
+    The features in the models are defined using templates; there are different templates for rare words aimed at learning the correct tags for unknown words.

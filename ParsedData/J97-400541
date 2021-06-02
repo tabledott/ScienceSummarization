@@ -1,0 +1,12 @@
+ xl, , xN from a different distribution q(.).
+    Assume that items xl, , xt, are already in the sample, and we wish to choose x1.
+    The sampler for p(.) proposes a new item y.
+    We do not simply add y to the sample&#8212;that would give us a sample from p(.
+    )&#8212;but rather we make a stochastic decision whether to accept the proposal y or reject it.
+    If we accept y, it is added to the sample (xn&#177;i = y), and if we reject y, then xn is repeated (xn+i = xn).
+    The acceptance decision is made as follows: If p(y) &gt; q(y), then y is overrepresented among the proposals.
+    We can quantify the degree of overrepresentation as p(y)/q(y).
+    The idea is to reject y with a probability corresponding to its degree of overrepresentation.
+    However, we do not consider the absolute degree of overrepresentation, but rather the degree of overrepresentation relative to xn.
+    (If y and xr, are equally overrepresented, there is no reason to reject y in favor of xn.)
+    That is, we consider the value I

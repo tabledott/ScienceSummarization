@@ -1,0 +1,12 @@
+y a complex sentence, we start from the root and greedily select the branchwith the highest outside probability.
+			For the sub stitution operation, we also integrate a trigram language model to make the generated sentences more fluent.
+			We train the language model with SRILM (Stolcke, 2002).
+			All the articles from the Simple Wikipedia are used as the training corpus, amounting to about 54 MB.
+	
+	
+			Our evaluation dataset consists of 100 complex sentences and 131 parallel simple sentences from PWKP.
+			They have not been used for training.Four baseline systems are compared in our eval uation.
+			The first is Moses which is a state of the art SMT system widely used as a baseline in MT community.
+			Obviously, the purpose of Mosesis cross-lingual translation rather than monolin 1358 gual simplification.
+			The goal of our comparison is therefore to assess how well a standard SMT system may perform simplification when fed with a proper training dataset.
+			We train Moses with the same part of PWKP as our mo

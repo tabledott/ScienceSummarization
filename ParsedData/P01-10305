@@ -1,0 +1,11 @@
+rage of the positions of its French translations.
+    Non-heads.
+    If the head of English word e is placed in French position j, then its first nonhead is placed in French position k ( j) according to another table d (k&#8211;jclass(f)).
+    The next non-head is placed at position q with probability d (q&#8211;kclass(f)), and so forth.
+    NULL-generated.
+    After heads and non-heads are placed, NULL-generated words are permuted into the remaining vacant slots randomly.
+    If there are NULL-generated words, then any placement scheme is chosen with probability 1/ .
+    These stochastic decisions, starting with e, result in different choices of f and an alignment of f with e. We map an e onto a particulara,f&#10016;pair with probability: d e d NULL where the factors separated bysymbols denote fertility, translation, head permutation, non-head permutation, null-fertility, and null-translation probabilities.1
+  
+  
+    If we observe a new sentence f, then an optimal decoder will search for an e that maximizes

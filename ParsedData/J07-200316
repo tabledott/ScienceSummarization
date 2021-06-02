@@ -1,0 +1,8 @@
+that w(D) does not include the language model, which is extremely important for translation quality.
+    We return to this challenge in Section 5.
+    For our experiments, we use a feature set analogous to the default feature set of Pharaoh (Koehn, Och, and Marcu 2003).
+    The rules extracted from the training bitext have the following features: Finally, for all the rules, there is a word penalty exp(&#8722;#T(&#945;)), where #T just counts terminal symbols.
+    This allows the model to learn a general preference for shorter or longer outputs.
+    In order to estimate the parameters of the phrase translation and lexical-weighting features, we need counts for the extracted rules.
+    For each sentence pair in the training data, there is in general more than one derivation of the sentence pair using the rules extracted from it.
+    Because we have observed the sentence pair but have not observed the derivations, we do not know how many times each derivation has been seen, and therefore we do not actually know 

@@ -1,0 +1,8 @@
+, it may not be clear what the DEFINITION OF SUCCESS is.
+    In particular it is not clear what to do in those cases where an algorithm produces multiple or partial interpretations.
+    In this situation a system might flag the utterance as ambiguous and draw in support from other discourse components.
+    This arises in the present analysis for two reasons: (1) the constraints given by [GJW86] do not always allow one to choose a preferred interpretation, (2) the BFP algorithm proposes equally ranked interpretations in parallel.
+    This doesn't happen with the Hobbs algorithm because it proposes interpretations in a sequential manner, one at a time.
+    We chose to count as a failure those situations in which the BFP algorithm only reduces the number of possible interpretations, but Hobbs algorithm stops with a correct interpretation.
+    This ignores the fact that Hobbs may have rejected a number of interpretations before stopping.
+    We also have not needed to make a decision on how to score an algorithm 

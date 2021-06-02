@@ -1,0 +1,7 @@
+ode, it just adds the word senses associated with the pattern to a dynamic store.
+    Once stored, these senses are then available for the parser to use after it verifies the syntactic constraints of the collocation; if it is successful, it will add preferences for the appropriate senses.
+    Early identification of triggered senses enables the system to use them for cluster matching in the next stage.
+    After the syntactic filtering of senses and the activation of senses triggered by collocations, the next step of preprocessing identifies preferences for senses that invoke currently active clusters (see Section 3.4).
+    A cluster is active if it contains any of the senses under consideration for other words in the current paragraph.
+    The system may also activate certain clusters to represent the general topic of the text.
+    The preprocessor's strategy for assessing cluster-based preferences is to take the set of cluster names invoked by each sense of each content word in the sentence and locate all i

@@ -1,0 +1,12 @@
+eps.
+			First it selects sentences that contain both the topic phrase and holder candidates.
+			Next, the holder-based regions of opinion are delimited.
+			Then the sentence sentiment classifier calculates the polarity of all sentiment-bearing words individually.
+			Finally, the system combines them to produce the holder?s sentiment for the whole sentence.
+			Figure 1 shows the overall system architecture.
+			Section 2.1 describes the word sentiment classifier and Section 2.2 describes the sentence sentiment classifier.
+			2.1 Word Sentiment Classifier.
+			2.1.1 Word Classification Models For word sentiment classification we developed two models.
+			The basic approach is to assemble a small amount of seed words by hand, sorted by polarity into two lists?positive and negative?and then to grow this by adding words obtained from WordNet (Miller et al 1993; Fellbaum et al 1993).
+			We assume synonyms of positive words are mostly positive and antonyms mostly negative, e.g., the positive word ?good?
+			has synonyms

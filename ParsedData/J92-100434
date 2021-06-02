@@ -1,0 +1,10 @@
+    Certain nodes set the mode of the verb either during the top-down or the bottomup cycle.
+    Thus, for example, &amp;quot;have&amp;quot; as an auxiliary verb sets mode to PAST-PARTICIPLE during the bottom-up cycle (i.e., for its right-siblings).
+    The category [gerund] sets the mode to PRESENT-PARTICIPLE during the top-down cycle (for its children).
+    Whenever a [predicate] node is invoked, the verb's mode has always been set by a predecessor.
+    2.5.1 Gaps.
+    The mechanism to deal with gaps resembles in certain respects the Hold register idea of ATNs, but with an important difference, reflecting the design philosophy that no node can have access to information outside of its immediate domain.
+    The mechanism involves two slots that are available in the feature vector of each parse node.
+    These are called the CURRENT-FOCUS and the FLOAT-OBJECT, respectively.
+    The CURRENT-FOCUS slot contains, at any given time, a pointer to the most recently mentioned content phrase in the sentence.
+    If t

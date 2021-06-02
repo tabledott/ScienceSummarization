@@ -1,0 +1,10 @@
+ize the marginal likelihood of our data, summing out the latent variables (r, f, c): where 0 are the parameters of the model (all the multinomial probabilities).
+    We use the EM algorithm to maximize (3), which alternates between the E-step and the M-step.
+    In the E-step, we compute expected counts according to the posterior p(r, f, c  |w, s; 0).
+    In the M-step, we optimize the parameters 0 by normalizing the expected counts computed in the E-step.
+    In our experiments, we initialized EM with a uniform distribution for each multinomial and applied add-0.1 smoothing to each multinomial in the M-step.
+    As with most complex discrete models, the bulk of the work is in computing expected counts under p(r, f, c  |w, s; 0).
+    Formally, our model is a hierarchical hidden semi-Markov model conditioned on s. Inference in the E-step can be done using a dynamic program similar to the inside-outside algorithm.
+  
+  
+    Two important aspects of our model are the segmentation of the text and the modeling of 

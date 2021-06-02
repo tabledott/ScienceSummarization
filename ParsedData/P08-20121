@@ -1,0 +1,9 @@
+luster f-measure.
+  
+  
+    Much recent work on coreference resolution, which is the task of deciding which noun phrases, or mentions, in a document refer to the same real world entity, builds on Soon et al. (2001).
+    They built a decision tree classifier to label pairs of mentions as coreferent or not.
+    Using their classifier, they would build up coreference chains, where each mention was linked up with the most recent previous mention that the classifier labeled as coreferent, if such a mention existed.
+    Transitive closure in this model was done implicitly.
+    If John Smith was labeled coreferent with Smith, and Smith with Jane Smith, then John Smith and Jane Smith were also coreferent regardless of the classifier&#8217;s evaluation of that pair.
+    Much work that followed improved upon this strategy, by improving the features (Ng and Cardie, 2002b), the type of classifier (Denis and Baldridge, 2007), and changing mention links to be to the most likely antecedent rather than the most recent positi

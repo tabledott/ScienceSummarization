@@ -1,0 +1,7 @@
+2,w_1, LR=w_1,w+1 and RR=w+1,w+2.
+    We estimate p(w|c) and p(c|w) by relative frequency over word triplets occurring at least twice in the unannotated training corpus.
+    Combined p(t|w) approximation This approximation combines the morphological and linear context approximations by using all the abovementioned context templates together in the iterative process.
+    For all three p(t|w) approximations, we take RELC to be contexts containing at most 4 tags. allow(t, w) follows the dictionary for known words, and is the set of all open-class POS for unknown words.
+    We take the initial p(t|w) for each w to be uniform over all the dictionary specified tags for w. Accordingly, the initial p(t|w) = 0 for w not in the dictionary.
+    We run the process for 8 iterations.7 Diluted Dictionaries and Unknown Words Some of the missing dictionary elements are assigned a set of possible POS-tags and corresponding probabilities in the p(t|w) estimation process.
+    Other unknown tokens remain with no analysis at the e

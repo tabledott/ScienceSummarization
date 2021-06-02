@@ -1,0 +1,6 @@
+he probability of a tag yt is conditioned on the input sequence x and the tag to its left yt&#8722;1, and is parameterized by a multiclass logistic regression: We use transition features for every pair of labels, and extract base observation features from token t and neighboring tokens, and conjoin them against all K = 25 possible outputs in our coarse tagset (Appendix A).
+    Our feature sets will be discussed below in detail.
+    Decoding.
+    For experiments reported in this paper, we use the O(|x|K2) Viterbi algorithm for prediction; K is the number of tags.
+    This exactly maximizes p(y  |x), but the MEMM also naturally allows a faster O(|x|K) left-to-right greedy decoding: fort = 1... |x|: yt arg maxk p(yt = k  |&#65533;yt&#8722;1, x, t; 3) which we find is 3 times faster and yields similar accuracy as Viterbi (an insignificant accuracy decrease of less than 0.1% absolute on the DAILY547 test set discussed below).
+    Speed is paramount for social media analysis applications&#8212;which often require t

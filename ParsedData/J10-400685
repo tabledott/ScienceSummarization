@@ -1,0 +1,7 @@
+, such as obj+the-j).
+    To find nouns that are highly associated with a verb v when linked by the subject relation, we project the W1xLW2 vectors onto a subspace where all dimensions are mapped to 0 except the dimensions that are labeled with (lsbj, v), where lsbj is a link containing either the string sbj intr or the string sbj tr, and v is the verb.
+    We then measure the length of the noun vectors in this subspace, and pick the top n longest ones as prototypical subjects of the verb.
+    The same operation is performed for the object relation.
+    In our experiments, we set n to 20, but this is of course a parameter that should be explored.
+    We normalize and sum the vectors (in the full W1xLW2 space) of the picked nouns, to obtain a centroid that represents an abstract &#8220;subject prototype&#8221; for the verb (and analogously for objects).
+    The plausibility of an arbitrary noun as the subject (object) of a verb is then measured by the cosine of the noun vector to the subject (object) centroid 

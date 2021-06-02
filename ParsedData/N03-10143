@@ -1,0 +1,10 @@
+performance of a non-lexicalized parser on the Penn Treebank.
+    When a relatively small vocabulary of words is used, performance is only marginally below the best current parser accuracy.
+    If either the biases are reduced or the induced history representations are replaced with hand-crafted features, performance degrades.
+  
+  
+    The parsing system we propose consists of two components, one which estimates the parameters of a probability model for phrase structure trees, and one which searches for the most probable phrase structure tree given these parameters.
+    The probability model we use is generative and history-based.
+    At each step, the model&#8217;s stochastic process generates a characteristic of the tree or a word of the sentence.
+    This sequence of decisions is the derivation of the tree, which we will denote .
+    Because there is a one-to-one mapping from phrase structure trees to our derivations, we can use the chain rule for conditional probabilities to derive the probability of a t

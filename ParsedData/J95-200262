@@ -1,0 +1,6 @@
+ey parser runs with the same linear time and space complexity as an LR parser on grammars of the appropriate LR class, the constant factors involved will be much in favor of the LR parser, as almost all the work has already been compiled into its transition and action table.
+    However, the size of LR parser tables can be exponential in the size of the grammar (because of the number of potential item subsets).
+    Furthermore, if the generalized LR method is used for dealing with nondeterministic grammars (Tomita 1986) the runtime on arbitrary inputs may also grow exponentially.
+    The bottom line is that each application's needs have to be evaluated against the pros and cons of both approaches to find the best solution.
+    From a theoretical point of view, the Earley approach has the inherent appeal of being the more general (and exact) solution to the computation of the various SCFG probabilities.
+    The literature on Earley-based probabilistic parsers is sparse, presumably because of the precedent set 

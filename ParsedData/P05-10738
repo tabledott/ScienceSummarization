@@ -1,0 +1,6 @@
+ will talk about maximizing the sum of the logs of local probabilities rather than the product of local probabilities, which is equivalent.
+    The dynamic program works from the leaves of the tree up and finds a best assignment for each tree, using already computed assignments for its children.
+    Suppose we want the most likely consistent assignment for subtree t with children trees t1, ... , tk each storing the most likely consistent assignment of nodes it dominates as well as the log-probability of the assignment of all nodes it dominates to NONE.
+    The most likely assignment for t is the one that corresponds to the maximum of: Propagating this procedure from the leaves to the root of t, we have our most likely non-overlapping assignment.
+    By slightly modifying this procedure, we obtain the most likely assignment according to and classification models can be chained in a principled way, as in Equation 1.
+    The features we used for local identification and classification models are outlined in Tabl

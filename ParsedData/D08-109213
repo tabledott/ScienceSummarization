@@ -1,0 +1,7 @@
+ with k-best lists, T and T0, produced by monolingual parsers.
+    Since these sets are not guaranteed to contain the gold trees g and g0, our next approximation is to define a set of pseudo-gold trees, following previous work in monolingual parse reranking (Charniak and Johnson, 2005).
+    We define T&#710; ( T&#710;0) as the F1-optimal subset of T (T0).
+    We then modify (4) to reflect the fact that we are seeking to maximize the likelihood of trees in this subset: To reduce the time and space requirements for training, we do not always use the full k-best lists.
+    To prune the set T, we rank all the trees in T from 1 to k, according to their log likelihood under the baseline parsing model, and find the rank of the least likely pseudo-gold tree: Finally, we restrict T based on rank: To prune the list of tree pairs, first we rank them according to the metric: where E is a free parameter of the pruning procedure.
+    The restricted set T0pruned is constructed in the same way.
+    When training, we replace 

@@ -1,0 +1,7 @@
+d alignment, we used GIZA++, following a standard training regimen of five iterations of Model 1, five iterations of the HMM Model, and five iterations of Model 4, in both directions.
+    We then projected the dependency trees and used the aligned dependency tree pairs to extract treelet translation pairs and train the order model as described above.
+    The target language model was trained using only the French side of the corpus; additional data may improve its performance.
+    Finally we trained lambdas via Maximum BLEU (Och, 03) on 250 held-out sentences with a single reference translation, and tuned the decoder optimization parameters (n-best list size, timeouts etc) on the development test set.
+    The same GIZA++ alignments as above were used in the Pharaoh decoder.
+    We used the heuristic combination described in (Och &amp; Ney, 03) and extracted phrasal translation pairs from this combined alignment as described in (Koehn et al., 03).
+    Except for the order model (Pharaoh uses its own ordering a

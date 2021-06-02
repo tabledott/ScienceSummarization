@@ -1,0 +1,7 @@
+e of string-to-weight transducers, which are also used in many areas of computational linguistics.
+    We consider string-to-weight transducers, namely transducers with input strings and output weights.
+    These transducers are used in various domains, such as language modeling, representation of word or phonetic lattices, etc., in the following way: one reads and follows a path corresponding to a given input string and outputs a number obtained by combining the weights along this path.
+    In most applications to natural language processing, the weights are simply added along the path, since they are interpreted as (negative) logarithms of probabilities.
+    In case the transducer is not sequential, that is, when it does not have a deterministic input, one proceeds in the same way for all the paths corresponding to the input string.
+    In natural language processing, specifically in speech processing, one keeps the minimum of the weights associated to these paths.
+    This corresponds to the Viterbi approx

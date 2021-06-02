@@ -1,0 +1,7 @@
+inty instances.
+    While active learning has been shown to work for a number of tasks, the majority of active learning experiments in natural language processing have been conducted using very small seed corpora and sets of unlabeled examples.
+    Therefore, we wish to explore situations where we have, or can afford, a nonnegligible sized training corpus (such as for part-of-speech tagging) and have access to very large amounts of unlabeled data.
+    We can use bagging (Breiman, 1996), a technique for generating a committee of classifiers, to assess the label uncertainty of a potential training instance.
+    With bagging, a variant of the original training set is constructed by randomly sampling sentences with replacement from the source training set in order to produce N new training sets of size equal to the original.
+    After the N models have been trained and run on the same test set, their classifications for each test sentence can be compared for classification agreement.
+    The higher the disagreeme

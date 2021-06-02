@@ -1,0 +1,7 @@
+echniques, we used TAO (the &#8220;Toolkit for Advanced Optimization&#8221;), a library layered on top of the foundation of PETSc for solving nonlinear optimization problems (Benson et al., 2002).
+    TAO offers the building blocks for writing optimization programs (such as line searches and convergence tests) as well as high-quality implementations of standard optimization algorithms (including conjugate gradient and variable metric methods).
+    Before turning to the results of the comparison, two additional points need to be made.
+    First, in order to assure a consistent comparison, we need to use the same stopping rule for each algorithm.
+    For these experiments, we judged that convergence was reached when the relative change in the loglikelihood between iterations fell below a predetermined threshold.
+    That is, each run was stopped when: where the relative tolerance &#949; = 10&#8722;7.
+    For any particular application, this may or may not be an appropriate stopping rule, but is only used here f

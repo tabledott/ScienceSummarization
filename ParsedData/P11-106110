@@ -1,0 +1,6 @@
+ Df.6 Label propagation in the graph will provide coverage and high recall, and we therefore extract only intersected high-confidence (&gt; 0.9) alignments De&#65533;f.
+    Based on these high-confidence alignments we can extract tuples of the form [u H v], where u is a foreign trigram type, whose middle word aligns to an English word type v. Our bilingual similarity function then sets the edge weights in proportion to these tuple counts.
+    So far the graph has been completely unlabeled.
+    To initialize the graph for label propagation we use a supervised English tagger to label the English side of the bitext.7 We then simply count the individual labels of the English tokens and normalize the counts to produce tag distributions over English word types.
+    These tag distributions are used to initialize the label distributions over the English vertices in the graph.
+    Note that since all English vertices were extracted from the parallel text, we will have an initial label distribution for all vertices in 

@@ -1,0 +1,6 @@
+rarchical tagsets.
+    CRFs have a single exponential model for the joint probability of the entire paths given the input sentence, while MEMMs consist of a sequential combination of exponential models, each of which estimates a conditional probability of next tokens given the current state.
+    This minimizes the influences of the label and length bias.
+    As explained in Section 2.1, there is word boundary ambiguity in Japanese, and we choose to use a lattice instead of B/I tagging.
+    This implies that the set of labels and the set of states are different, and the number of tokens #y varies according to a path.
+    In order to accomodate this, we define CRFs for Japanese morphological analysis as the conditional probability of an output path y = ((w1, t1), ... , (w#y, t#y)) given an input sequence x: where Zx is a normalization factor over all candidate paths, i.e., fk(hwi&#8722;1, ti&#8722;1i, hwi, tii) is an arbitrary feature function over i-th token hwi, tii, and its previous token hwi&#8722;1, ti&#87

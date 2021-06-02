@@ -1,0 +1,8 @@
+ype from that of the constituent, then the immediate parent is also the functional parent; otherwise, the functional parent is the functional parent of the immediate parent.
+    The distinction between functional parents and immediate parents arises primarily to cope with unit productions.
+    When unit productions of the form XP2 ---&gt; XP1 occur, the immediate parent of XP1 is XP2.
+    But, in general, the constituent XP2 does not contain enough useful information for ambiguity resolution.
+    In particular, when considering only immediate parents, unit rules such as NP2 &#8212;&#9632; NP1 prevent the probabilistic model from allowing the NP1 constituent to interact with the VP rule which is the functional parent of NP1.
+    When the two parents are identical as it often happens, the duplicate information will be ignored.
+    However, when they differ, the decision tree will select that parental context which best resolves ambiguities.
+    Figure 3 shows an example of the representation of a history in HBG

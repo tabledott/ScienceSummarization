@@ -1,0 +1,10 @@
+nments preceding articles are less so.
+    Another phenomenon is the insertion of &#8220;stepping stone&#8221; alignments.
+    Suppose two edges (i, j) and (i+4, j+4) have a very high probability of being included in an alignment, but the words between them are not good translations of each other.
+    If the intervening English words were null-aligned, we would have to pay a big distortion penalty for jumping 4 positions.
+    On the other hand, if the edge (i+2, j+2) were included, that penalty would be mitigated.
+    The translation cost for forcing that edge is smaller than the distortion cost.
+    To see whether our improvement in AER also improves BLEU score, we aligned 100K EnglishFrench sentences from the Europarl corpus and tested on 3000 sentences of length 5&#8211;15.
+    Using GIZA++ model 4 alignments and Pharaoh (Koehn et al., 2003), we achieved a BLEU score of 0.3035.
+    By using alignments from our jointly trained HMMs instead, we get a BLEU score of 0.3051.
+    While this improvement is very m

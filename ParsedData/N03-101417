@@ -1,0 +1,6 @@
+rom one history representation to another, and thus determines the inductive bias of the system.
+    We have designed top and so that the inductive bias reflects structural locality.
+    Thus, top includes nodes which are structurally local to top .
+    These nodes are the left-corner ancestor of top (which is below top on the stack), top &#8217;s left-corner child (its leftmost child, if any), and top &#8217;s most recent child (which is top , if any).
+    For right-branching structures, the left-corner ancestor is the parent, conditioning on which has been found to be beneficial (Johnson, 1998), as has conditioning on the left-corner child (Roark and Johnson, 1999).
+    Because these inputs include the history representations of both the left-corner ancestor and the most recent child, a derivation step always has access to the history representation from the previous derivation step , and thus (by induction) any information from the entire previous derivation history could in principle be stored in the hist

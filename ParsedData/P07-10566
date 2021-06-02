@@ -1,0 +1,11 @@
+8220;excellent&#8221;).
+    The pivot predictor column weight vectors can be arranged into a matrix W = [wt]e1.
+    Let 0 E Rkxd be the top k left singular vectors of W (here d indicates the total number of features).
+    These vectors are the principal predictors for our weight space.
+    If we chose our pivot features well, then we expect these principal predictors to discriminate among positive and negative words in both domains.
+    At training and test time, suppose we observe a feature vector x.
+    We apply the projection 0x to obtain k new real-valued features.
+    Now we learn a predictor for the augmented instance (x, 0x).
+    If 0 contains meaningful correspondences, then the predictor which uses 0 will perform well in both source and target domains.
+    The efficacy of SCL depends on the choice of pivot features.
+    For the part of speech tagging problem studied by Blitzer et al. (2006), frequently-occurring words in both domains were good choices, since they often correspond to function words su

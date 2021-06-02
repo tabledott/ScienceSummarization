@@ -1,0 +1,7 @@
+re detail.
+    None of these algorithms consider the general Jacquemin (1997) deems pairs of word n-grams as morphologically related if two words in the first ngram have the same first few letters (or stem) as two words in the second n-gram and if there is a suffix for each stem whose length is less than k. He also clusters groups of words having the same kinds of word endings, which gives an added performance boost.
+    He applies his algorithm to a French term list and scores based on sampled, by-hand evaluation.
+    Goldsmith (1997/2000) tries to automatically sever each word in exactly one place in order to establish a potential set of stems and suffixes.
+    He uses the expectation-maximization algorithm (EM) and MDL as well as some triage procedures to help eliminate inappropriate parses for every word in a corpus.
+    He collects the possible suffixes for each stem and calls these signatures which give clues about word classes.
+    With the exceptions of capitalization removal and some word segmentatio

@@ -1,0 +1,8 @@
+There, inside probabilities for all positions and nonterminals are computed, regardless of possible prefixes.
+    Forward and inner probabilities not only subsume the prefix and string probabilities, they are also straightforward to compute during a run of Earley's algorithm.
+    In fact, if it weren't for left-recursive and unit productions their computation would be trivial.
+    For the purpose of exposition we will therefore ignore the technical complications introduced by these productions for a moment, and then return to them once the overall picture has become clear.
+    During a run of the parser both forward and inner probabilities will be attached to each state, and updated incrementally as new states are created through one of the three types of transitions.
+    Both probabilities are set to unity for the initial state 0 .S.
+    This is consistent with the interpretation that the initial state is derived from a dummy production -4 S for which no alternatives exist.
+    Parsing then proceeds as usual

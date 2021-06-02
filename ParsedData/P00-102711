@@ -1,0 +1,5 @@
+ also to generalize this mapping function via a generative probabilistic model.
+    The following section describes the creation of this model, as well as how the context-sensitive probability of each morphological transformation can be used as the fourth alignment similarity measure.
+    At each iteration of the algorithm, this probabilistic mapping function is trained on the table output of the previous iteration, equivalent to the information in Table 1 (e.g.
+    &lt;root,inflection&gt; pairs with optional part-of-speech tags, confidence scores and stemchange+suffix analysis) .6 From this output, we cluster the observed stem changes by the variable-length root context in which they were applied, as illustrated in Table 7.
+    First note that because the triple of &lt;root&gt; + &lt;stemchange&gt; + &lt;suffix&gt; uniquely determines a resulting inflection, one can effectively compute P(inflection I root, suffix, POS) by P(stemchange I root, suffix, POS), i.e. for any root=-ya, suffix=+o- and inflection=-0a

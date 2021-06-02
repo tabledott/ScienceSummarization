@@ -1,0 +1,12 @@
+ coreference resolution algorithm.
+    Incorrectly removing an anaphoric NP means that the coreference resolver would never have a chance to resolve it, on the other hand, non-anaphoric NPs that slip through can still be ruled as non-anaphoric by the coreference resolver.
+    We first evaluated our system using only the syntactic heuristics, which produced only 43% recall, but 92% precision.
+    Although the syntactic heuristics are a reliable way to identify existential definite NPs, they miss 57% of the true existentials.
+  
+  
+    We expected the Si, EHP, and DO methods to increase coverage.
+    First, we evaluated each method independently (on top of the syntactic heuristics).
+    The results appear in rows 2-4 of Figure 7.
+    Each method increased recall to between 61-69%, but decreased precision to 8487%.
+    All of these methods produced a substantial gain in recall at some cost in precision.
+    Next, we tried combining the methods to make sure that they were not identifying exactly the same set of e

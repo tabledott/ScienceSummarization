@@ -1,0 +1,9 @@
+ignments, altered such that they are consistent with our ternary grammar.
+    This is achieved by using the factorisation algorithm of Zhang et al. (2008a) to first create initial trees.
+    Where these factored trees contain nodes with mixed terminals and non-terminals, or more than three non-terminals, we discard alignment points until the node factorises correctly.
+    As the alignments contain many such non-factorisable nodes, these trees are of poor quality.
+    However, all samplers used in these experiments are first &#8216;burnt-in&#8217; for 1000 full passes through the data.
+    This allows the sampler to diverge from its initialisation condition, and thus gives us confidence that subsequent samples will be drawn from the posterior.
+    An expectation over phrase tables and Hiero grammars is built from every 50th sample after the burn-in, up until the 1500th sample.
+    We evaluate the translation models using IBM BLEU (Papineni et al., 2001).
+    Table 1 lists the statistics of the corpora used in 

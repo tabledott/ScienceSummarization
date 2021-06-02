@@ -1,0 +1,8 @@
+ above.
+    In other words, c is ignored if it practically never occurs within the context of any Wi, or if it practically always occurs within the context of every w. In the former case, we have insufficient data to measure its presence; in the latter, its absence.
+    Besides the reason of insufficient data, a second reason to ignore a context word is if it does not help discriminate among the words in the confusion set.
+    For instance, if we are trying to decide between / and me, then the presence of the in the context probably does not help.
+    By ignoring such words, we eliminate a source of noise in our discrimination procedure, as well as reducing storage requirements and run time.
+    To determine whether a context word c is a useful discriminator, we run a chi-square test [Fleiss, 1981] to check for an association between the presence of c and the choice of word in the confusion set.
+    If the observed association is not judged to be significant,3 then c is discarded.
+    The significance level i

@@ -1,0 +1,7 @@
+I to a finite set.
+    A policy of candidate space (A, I, J, f, e, x) is a function that maps each member i E I to a member of J(i).
+    A policy corresponds to a choice of one candidate translation for each source sentence.
+    For the example in Figure 1, policy p1 = 11 &#65533;-+ 2, 2 &#65533;-+ 31 corresponds to the choice of &#8220;he does not go&#8221; for the first source sentence and &#8220;I do not go&#8221; for the second source sentence.
+    Obviously some policies are better than others.
+    Policy p2 = 11 &#65533;-+ 3, 2 &#65533;-+ 11 corresponds to the inferior translations &#8220;she not go&#8221; and &#8220;I go not.&#8221; We assume the MT system distinguishes between policies using a scoring function for candidate translations of the form hw(i, j) = w &#183; x(i, j), where w is a weight vector of the same dimension as feature vector x(i, j).
+    This scoring function extends to a policy p by summing the cost of each of the policy&#8217;s candidate translations: Hw(p) = Ei&#8712;I hw(i, p(i))

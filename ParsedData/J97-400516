@@ -1,0 +1,10 @@
+, let us introduce some terminology and notation.
+    With each rule i in a stochastic context-free grammar is associated a weight A and a function f1 (x) that returns the number of times rule i is used in the derivation of tree x.
+    For example, consider the tree in Figure 2, repeated here in Figure 4 for convenience: Rule 1 is used once and rule 3 is used twice; accordingly fi (x) = 1, We use the notation p[f] to represent the expectation of f under probability distribution p; that is, p[f] = Ex p(x)f(x).
+    The ERF method instructs us to choose the weight for rule i proportional to its empirical expectation fo[f].
+    Algorithmically, we compute the expectation of each rule's frequency, and normalize among rules with the same left-hand side.
+    To illustrate, let us consider corpus (2.1) again.
+    The expectation of each rule frequency fi is a sum of terms f9(x)f,(x).
+    These terms are shown for each tree, in Table 3.
+    For example, in tree xl, rule 1 is used once and rule 3 is used twice.
+    The

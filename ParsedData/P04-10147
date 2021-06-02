@@ -1,0 +1,7 @@
+g (Chen and Rosenfeld, 1999).
+    Hence, given the definition of the probability of a dependency structure (1), the objective function is as follows: where n is the number of features.
+    Rather than have a different smoothing parameter &#57742;i for each feature, we use a single parameter &#57742;.
+    We use a technique from the numerical optimisation literature, the L-BFGS algorithm (Nocedal and Wright, 1999), to optimise the objective function.
+    L-BFGS is an iterative algorithm which requires the gradient of the objective function to be computed at each iteration.
+    The components of the gradient vecThe first two terms in (5) are expectations of feature fi: the first expectation is over all derivations leading to each gold standard dependency structure; the second is over all derivations for each sentence in the training data.
+    Setting the gradient to zero yields the usual maximum entropy constraints (Berger et al., 1996), except that in this case the empirical values are themselves expectations 

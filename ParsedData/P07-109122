@@ -1,0 +1,11 @@
+ight to a hypothesis that moves words across longer distance, which is penalized by the distance-based model.
+    In test (b) distortion limit is set as 0; i.e. reordering is done merely by syntax-based preprocessing.
+    The worse result is not surprising since, after all, preprocessing discards many possibilities and thus reduce the search space of the decoder.
+    Some local reordering model is still needed during decoding.
+    Finally, test (c) shows that translation performance does not improve significantly by raising the number of reorderings.
+    This implies that our approach is very efficient in that only a small value of n is capable of capturing the most important global reordering patterns.
+  
+  
+    This paper proposes a novel, probabilistic approach to reordering which combines the merits of syntax and phrase-based SMT.
+    On the one hand, global reordering, which cannot be accomplished by the phrase-based model, is enabled by the tree operations in preprocessing.
+    On the other hand, local 

@@ -1,0 +1,11 @@
+eously all the blocks that visit all the training instances, leading to a small speed-up on the POS-tagging task.
+    Working with billions of features finally requires to worry also about memory usage.
+    In this respect, BCD is the most efficient, as it only requires to store one K-dimensional vector for the parameter itself.
+    SGD requires two such vectors, one for the parameter and one for storing the zk (see Eq.
+    (8)).
+    In comparison, OWL-QN requires much more memory, due to the internals of the update routines, which require several histories of the parameter vector and of its gradient.
+    Typically, our implementation necessitates in the order of a dozen K-dimensional vectors.
+    Parallelization only makes things worse, as each core will also need to maintain its own copy of the gradient.
+  
+  
+    Our experiments use two standard NLP tasks, phonetization and part-of-speech tagging, chosen here to illustrate two very different situations, and to allow for comparison with results reported els

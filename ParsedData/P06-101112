@@ -1,0 +1,8 @@
+ntence where the signal is mostly positive.
+    This can be achieved by applying a smoothing filter to the signal, and selecting those fragments of the sentence for which the corresponding filtered values are positive.
+    The details of the procedure are presented below, and also illustrated in Figure 5.
+    Let the Romanian sentence be the source sentence , and the English one be the target, .
+    We compute a word alignment by greedily linking each English word with its best translation candidate from the Romanian sentence.
+    For each of the linked target words, the corresponding signal value is the probability of the link (there can be at most one link for each target word).
+    Thus, if target word is linked to source word , the signal value corresponding to is (the distribution described in Section 2.2), i.e. the probability that is the translation of .
+    For the remaining target words, the signal value should reflect the probability that they are not Figure 5: Our approach for detecting parallel fr

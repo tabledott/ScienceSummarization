@@ -1,0 +1,8 @@
+)
+    MERT&#8217;s specialized linesearch addresses the problem that this objective function is piecewise constant, but it does not scale to a large number of parameters.
+    Smith and Eisner (2006) instead propose a differentiable objective that can be optimized by gradient descent: the Bayes risk R(p) of (7).
+    This is the expected loss if one were (hypothetically) to use a randomized decoder, which chooses a hypothesis d in proportion to its probability p(d).
+    If entropy H(p) is large (e.g., small &#947;), the Bayes risk is smooth and has few local minima.
+    Thus, Smith and Eisner (2006) try to avoid local minima by starting with large H(p) and decreasing it gradually during optimization.
+    This is called deterministic annealing (Rose, 1998).
+    As H(p) &#8212;* 0 (e.g., large &#947;), the Bayes risk does approach the MERT objective (i.e. minimizing 1-best error).The objective is minimize R(p) &#8722; T &#183; H(p) (14) where the &#8220;temperature&#8221; T starts high and is explicitly decreased

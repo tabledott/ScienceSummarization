@@ -1,0 +1,12 @@
+either language nor translation model.
+    In performing recombination, Algorithm for breadth-first search with pruning. we obtain a search graph instead of a search tree.
+    The exact criterion for performing recombination for the alignment templates is described in Section 5.5.
+    Theoretically, we could use any graph search algorithm to search the optimal path in the search space.
+    We use a breadth-first search algorithm with pruning.
+    This approach offers very good possibilities for adjusting the trade-off between quality and efficiency.
+    In pruning, we always compare hypotheses that have produced the same number of target words.
+    Figure 7 shows a structogram of the algorithm.
+    As the search space increases exponentially, it is not possible to explicitly represent it.
+    Therefore, we represent the search space implicitly, using the functions Extend and Recombine.
+    The function Extend produces new hypotheses extending the current hypothesis by one word.
+    Some hypotheses might be id

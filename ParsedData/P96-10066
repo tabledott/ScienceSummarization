@@ -1,0 +1,7 @@
+which sense-tagged occurrences of w appear.
+    For each training sentence with an occurrence of w, LEXAS extracts the parts of speech (POS) of words surrounding w, the morphological form of w, the words that frequently co-occur with w in the same sentence, and the local collocations containing w. For disambiguating a noun w, the verb which takes the current noun w as the object is also identified.
+    This set of values form the features of an example, with one training sentence contributing one training example.
+    Subsequently, in the test phase, LEXAS is given new, previously unseen sentences.
+    For a new sentence containing the word w, LEXAS extracts from the new sentence the values for the same set of features, including parts of speech of words surrounding w, the morphological form of w, the frequently co-occurring words surrounding w, the local collocations containing w, and the verb that takes w as an object (for the case when w is a noun).
+    These values form the features of a test example.
+   

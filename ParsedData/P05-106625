@@ -1,0 +1,9 @@
+ has suggested the use of bootstrap tests (Efron and Tibshirani, 1993) for the calculation of confidence intervals for Bleu scores.
+    (Koehn, 2004) gives empirical evidence that these give accurate estimates for Bleu statistics.
+    However, correctness of the bootstrap method relies on some technical properties of the statistic (e.g., Bleu scores) being used (e.g., see (Wasserman, 2004) theorem 8.3); (Koehn, 2004; Zhang and Vogel, 2004) do not discuss whether Bleu scores meet any such criteria, which makes us uncertain of their correctness when applied to Bleu scores.
+    .
+    We can also calculate confidence intervals for the results.
+    Define to be the probability that the reordered system improves on the baseline system, given that the two systems do not have equal performance.
+    The relative frequency estimate of is .
+    Using a normal approximation (e.g., see Example 6.17 from (Wasserman, 2004)) a 95% confidence interval for a sample size of 1785 is , giving a 95% confidence interval of for .
+  

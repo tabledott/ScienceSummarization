@@ -1,0 +1,10 @@
+(of 11 sentences) that contains sentences longer than 45 words is discarded.
+    Next, each sentence in each of the groups is parsed.
+    All the parse trees are then iteratively merged into a shared forest.
+    The merging algorithm proceeds top-down and continues to recursively merge constituent nodes that are expanded identically.
+    It stops upon reaching the leaves or upon encountering the same constituent node expanded using different grammar rules.
+    Figure 5(a) shows how the merging algorithm would work on two simple parse trees.
+    In the figure, it is apparent that the leaves of the forest encode paraphrasing information.
+    However, the merging only allows identical constituents to be considered as paraphrases.
+    In addition, keyword-based heuristics need to be employed to prevent inaccurate merging of constituent nodes due to, say, alternations of active and passive voices among the The merging algorithm.
+    (a) How the merging algorithm works for two simple parse trees to produce a shared

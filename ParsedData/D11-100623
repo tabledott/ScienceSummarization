@@ -1,0 +1,7 @@
+However, some are unexpected, e.g., Greek being the best source language for Dutch, as well as German being one of the worst.
+    This is almost certainly due to different annotation schemes across treebanks.
+    Overall, Table 2 does indicate that there are possible gains in accuracy through the inclusion of additional languages.
+    In order to take advantage of treebanks in multiple languages, our multi-source system simply concatenates the training data from all non-target languages.
+    In other words, the multi-source direct transfer parser for Danish will be trained by first concatenating the training corpora of the remaining eight languages, training a delexicalized parser on this data and then directly using this parser to analyze the Danish test data.
+    For the multi-source projected parser, the procedure is identical to that in Section 3.2 except that we use the multi-source direct transfer model to seed the algorithm instead of the English-only direct transfer model.
+    For these experiments we

@@ -1,0 +1,7 @@
+iffers in a number of ways from TNT.
+    First, it uses a conditional model of a tag sequence given a string, rather than a joint model.
+    Second, ME models are used to define the conditional probabilities of a tag given some context.
+    The advantage of ME models over the Markov model used by TNT is that arbitrary features can easily be included in the context; so as well as considering the target word and the previous two tags (which is the information TNT uses), the ME models also consider the words either side of the target word and, for unknown and infrequent words, various properties of the string of the target word.
+    A disadvantage is that the training times for ME models are usually relatively slow, especially with iterative scaling methods (see Malouf (2002) for alternative methods).
+    Here we use Generalised Iterative Scaling (Darroch and Ratcliff, 1972), but our implementation is much faster than Ratnaparkhi&#8217;s publicly available tagger.
+    The C&amp;C tagger trains in less than 7 min

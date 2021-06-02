@@ -1,0 +1,5 @@
+    We chose to use a bigram language model because, while less semantically appealing, such n-gram language models work remarkably well in practice.
+    Also, as a first research attempt, an n-gram model captures the most general significance of the words in each name-class, without presupposing any specifics of the structure of names, a la the PERSON name-class example, above.
+    More important, either approach is mathematically valid, as long as all transitions out of a given state sum to one.
+    All of this modeling would be for naught were it not for the existence of an efficient algorithm for finding the optimal state sequence, thereby &amp;quot;decoding&amp;quot; the original sequence of name-classes.
+    The number of possible state sequences for N states in an ergodic model for a sentence of m words is Alm, but, using dynamic programming and an appropriate merging of multiple theories when they converge on a particular state&#8212;the Viterbi decoding algorithm&#8212;a sentence can be &amp;quot;dec

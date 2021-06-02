@@ -1,0 +1,12 @@
+s property makes it very simple to integrate MGIZA++ into machine translation packages, such as Moses(Koehn et al., 2007).
+    One major disadvantage of MGIZA++ is also obvious: lack of scalability.
+    Accelerating is limited by the number of CPUs the node has.
+    Compared to PGIZA++ on the speed-up factor by each additional CPU, MGIZA++ also shows some deficiency.
+    Due to the need for synchronization, there are always some CPU time wasted in waiting.
+  
+  
+    For PGIZA++ we performed training on an ChineseEnglish translation task.
+    The dataset consists of approximately 10 million sentence pairs with 231 million Chinese words and 258 million English words.
+    We ran both GIZA++ and PGIZA++ on the same training corpus with the same parameters, then ran Pharaoh phrase extraction on the resulting alignments.
+    Finally, we tuned our translation systems on the NIST MT03 test set and evaluate them on NIST MT06 test set.
+    The experiment was performed on a cluster of several Xeon CPUs, the storage of c

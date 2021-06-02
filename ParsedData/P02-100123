@@ -1,0 +1,8 @@
+ we are manipulating weighted relations, not FSTs.
+    We may combine FSTs, or determinize or minimize them, with any variant of the semiringweighted algorithms.17 As long as the resulting FST computes the right weighted relation, the arrangement of its states, arcs, and labels is unimportant.
+    The same semiring may be used to compute gradients.
+    We would like to find f&#952;(xi, yi) and its gradient with respect to &#952;, where f&#952; is real-valued but need not be probabilistic.
+    Whatever procedures are used to evaluate f&#952;(xi, yi) exactly or approximately&#8212;for example, FST operations to compile f&#952; followed by minimization of (c x xi) o f&#952; o (yi x c)&#8212;can simply be applied over the expectation semiring, replacing each weight p by (p, Vp) and replacing the usual arithmetic operations with &#8853;, &#8855;, etc.18 (2)&#8211;(4) preserve the gradient ((2) is the derivative product rule), so this computation yields (f&#952;(xi, yi), Vf&#952;(xi, yi)).
+  
+  
+    Now for some im

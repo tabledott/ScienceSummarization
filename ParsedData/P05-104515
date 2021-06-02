@@ -1,0 +1,7 @@
+ not hold nearly so strictly in this case.
+    As an example, one document contains references to both The China Daily, a newspaper, and China, the country.
+    Counts of subsequence labelings within a document are listed in Table 4.
+    Note that there are many offdiagonal entries: the China Daily case is the most common, occurring 328 times in the dataset.
+    The penalties used in the long distance constraint model for CoNLL are the Empirical Bayes estimates taken directly from the data (Tables 3 and 4), except that we change counts of 0 to be 1, so that the distribution remains positive.
+    So the estimate of a PER also being an ORG is 5 3151; there were 5 instance of an entity being labeled as both, PER appeared 3150 times in the data, and we add 1 to this for smoothing, because PER-MISC never occured.
+    However, when we have a phrase labeled differently in two different places, continuing with the PER-ORG example, it is unclear if we should penalize it as PER that is also an ORG or an ORG that is als

@@ -1,0 +1,8 @@
+rter words, therefore it is more comparable if we increase the maximum phrase length.
+    During decoding, we incorporate the standard eight feature functions of Moses as well as the lexicalized reordering model.
+    We tuned the parameters of these features with Minimum Error Rate Training (MERT) (Och, 2003) on the NIST MT03 Evaluation data set (919 sentences), and then test the MT performance on NIST MT03 and MT05 Evaluation data (878 and 1082 sentences, respectively).
+    We report the MT performance using the original BLEU metric (Papineni et al., 2001).
+    All BLEU scores in this paper are uncased.
+    The MT training data was subsampled from GALE Year 2 training data using a collection of character 5-grams and smaller n-grams drawn from all segmentations of the test data.
+    Since the MT training data is subsampled with character n-grams, it is not biased towards any particular word segmentation.
+    The MT training data contains 1,140,693 sentence pairs; on the Chinese side there are 60,573,223 non-w

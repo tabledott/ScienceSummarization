@@ -1,0 +1,7 @@
+d activates if there is a to there, a modal verb, or a form of do, let, make, or help (verbs that frequently take a bare infinitive complement).
+    Rather than having a separate feature look at each preceding position, we define one feature that looks at the chosen number of positions to the left.
+    This both increases the scope of the available history for the tagger and provides a better statistic because it avoids fragmentation.
+    We added a similar feature for resolving VBDNBN confusions.
+    It activates if there is a have or be auxiliary form in the preceding several positions (again the value 8 is used in the implementation).
+    The form of these two feature templates was motivated by the structural rules of English and not induced from the training data, but it should be possible to look for &amp;quot;predictors&amp;quot; for certain parts of speech in the preceding words in the sentence by, for example, computing association strengths.
+    The addition of the two feature schemas helped reduce t

@@ -1,0 +1,9 @@
+rser (about 0.6 F-score over labelled dependencies).
+			However, the memory requirement for training the model is now only 4 GB, a reduction of 87% compared with the original approach.
+	
+	
+			The previous section showed how to combine the supertagger and parser for the purpose of creating training data, assuming the correct category for each word is known.
+			In this section we describe our approach to tightly integrating the supertagger and parser for parsing unseen data.
+			Our previous approach to parsing unseen data (Clark et al, 2002; Clark and Curran, 2003) wasto use the least restrictive setting of the supertagger which still allows a reasonable compromise be tween speed and accuracy.
+			Our philosophy was to give the parser the greatest possibility of finding thecorrect parse, by giving it as many categories as pos sible, while still retaining reasonable efficiency.4Another possible solution would be to use sampling meth ods, e.g. Osborne (2000).
+			SUPERTAGGING/PARSING TIME SENTS WORDS CONSTRAINTS SE

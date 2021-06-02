@@ -1,0 +1,8 @@
+ sentences: 75.85 % of the sentences in the clinical reports have 10 or less words, whereas this rate is 3.17 % for abstracts and 11.27 % for papers.
+    The average length of a sentence for clinical reports is 7.73 tokens, whereas for abstracts it is 26.43 and for papers 26.24.
+    Shorter sentences imply shorter scopes.
+    In the scope finding phase, when we process the output of the classifiers to build the complete sequence of tokens that constitute the scope, we give preference to short scopes by choosing as LAST the token classified as LAST that is the closest to the negation signal.
+    A way to make the system better portable to texts with longer sentences would be to optimise the choice of the last token in the scope.
+    Another factor that causes a higher performance on the clinical subcorpus is the frequency of the negation signal no (76.65 %), which has also a high PCS in abstracts, as shown in Table 7.
+    Typical example sentences with this negation signal are shown in (4).
+    Its main charac

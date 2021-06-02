@@ -1,0 +1,11 @@
+ 1 rather than 2.
+    Then we get 6 out of 7 for the 1-depth subtrees.
+    For the 2depth subtrees, we get S&#8594;NP VP, NP&#8594;PRON, and VP&#8594;V NP which also appear in the reference syntax tree.
+    For the same reason, the subtree NP&#8594;PRON can only be counted once.
+    Then we get 3 out of 4 for the 2-depth subtree.
+    Similarly, the fraction of 3-depth subtrees is 1 out of 2.
+    Therefore, the final score of STM is (6/7+3/4+1/2)/3=0.702.
+    While the subtree overlap metric defined above considers only subtrees of a fixed depth, subtrees of other configurations may be important for discriminating good hypotheses.
+    For example, we may want to look for the subtree: to find sentences with transitive verbs, while ignoring the internal structure of the subject noun phrase.
+    In order to include subtrees of all configurations in our metric, we turn to convolution kernels on our trees.
+    Using H(x) to denote the vector of counts of all subtrees found in tree x, for two trees T1 and T2, the in

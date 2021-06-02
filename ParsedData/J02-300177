@@ -1,0 +1,7 @@
+8220;VP &#8594; VB NP&#8221;; on the right it is &#8220;VP &#8594; VB.&#8221; must include every parse constituent with a nonzero probability for P(fei  |fi).
+    To make the computation tractable, we implement a pruning scheme: hypotheses are extended by choosing assignments for one constituent at a time, and only the top m hypotheses are retained for extension by assignments to the next constituent.
+    Here we set m = 10 after experimentation showed that increasing m yielded no significant improvement.
+    Results for the integrated approach are shown in the last row of Table 15.
+    Allowing role assignments to influence boundary identification improves results both on the unlabeled boundary identification task and on the combined identification and labeling task.
+    The integrated approach puts us in a different portion of the precision/recall curve from the results in the first two rows, as it returns a higher number of frame elements (7,736 vs. 5,719).
+    A more direct comparison can be made by lower

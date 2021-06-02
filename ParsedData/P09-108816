@@ -1,0 +1,9 @@
+target split and re-orderings are possible outcomes.
+    The probability for each of these configurations is evaluated (see Figure 3) from which the new configuration is sampled.
+    While the first operator is theoretically capable of exploring the entire derivation forest (by flattening the tree into a single phrase and then splitting), the series of moves required would be highly improbable.
+    To allow for faster mixing we employ the Insert/Delete operator which adds and deletes the parent non-terminal of a pair of adjacent nodes.
+    This is illustrated in Figure 4.
+    The update equations are analogous to those used for the Split/Join operator in Figure 3.
+    In order for this operator to be effective we need to allow greater than binary branching nodes, otherwise deleting a nodes would require sampling from a much larger set of outcomes.
+    Hence our adoption of a ternary branching grammar.
+    Although such a grammar would be very inefficient for a dynamic programming algorithm, it allows our samp

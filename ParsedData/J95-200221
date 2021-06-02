@@ -1,0 +1,8 @@
+.
+    It helps to interpret these quantities in terms of an unconstrained Earley parser that operates as a generator emitting&#8212;rather than recognizing&#8212;strings.
+    Instead of tracking all possible derivations, the generator traces along a single Earley path randomly determined by always choosing among prediction steps according to the associated rule probabilities.
+    Notice that the scanning and completion steps are deterministic once the rules have been chosen.
+    Intuitively, the forward probability ai(kX ).p) is the probability of an Earley generator producing the prefix of the input up to position i -1 while passing through state kX A&#8226;,u, at position i.
+    However, due to left-recursion in productions the same state may appear several times on a path, and each occurrence is counted toward the total a,.
+    Thus, a, is really the expected number of occurrences of the given state in state set i.
+    Having said that, we will refer to a simply as a probability, both for the sake of brevi

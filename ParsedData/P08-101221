@@ -1,0 +1,9 @@
+the desired result.
+    Given an unlimited amount of time, we would tune the prior to maximize end-to-end performance, using an objective function such as BLEU.
+    Unfortunately these experiments are very slow.
+    Since we observed monotonic increases in alignment performance with smaller values of &#945;C, we simply fixed the prior at a very small value (10&#8722;100) for all translation experiments.
+    We do compare VB against EM in terms of final BLEU scores in the translation experiments to ensure that this sparse prior has a significant impact on the output.
+    We also trained a baseline model with GIZA++ (Och and Ney, 2003) following a regimen of 5 iterations of Model 1, 5 iterations of HMM, and 5 iterations of Model 4.
+    We computed Chinese-toEnglish and English-to-Chinese word translation tables using five iterations of Model 1.
+    These values were used to perform tic-tac-toe pruning with &#964;b = 1 &#215; 10&#8722;3 and &#964;3 = 1 &#215; 10&#8722;6.
+    Over the pruned charts, we ran 10 ite

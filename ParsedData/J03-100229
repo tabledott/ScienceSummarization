@@ -1,0 +1,9 @@
+ of the more complex model.
+    In principle, the sum over all (I+ 1)J alignments has to be calculated in the E-step.
+    Evaluating this sum by explicitly enumerating all alignments would be infeasible.
+    Fortunately, Models 1 and 2 and HMM have a particularly simple mathematical form such that the EM algorithm can be implemented efficiently (i.e., in the E-step, it is possible to efficiently evaluate all alignments).
+    For the HMM, this is referred to as the Baum-Welch algorithm (Baum 1972).
+    Since we know of no efficient way to avoid the explicit summation over all alignments in the EM algorithm in the fertility-based alignment models, the counts are collected only over a subset of promising alignments.
+    For Models 3 to 6, we perform the count collection only over a small number of good alignments.
+    To keep the training fast, we consider only a small fraction of all alignments.
+    We compare three different methods for using subsets of varying sizes: In Section 6, we show that by using the HM

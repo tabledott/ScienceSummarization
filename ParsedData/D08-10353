@@ -1,0 +1,7 @@
+ in a generative model in which the text for each segment is produced by a distinct lexical distribution.
+    Lexically-consistent segments are favored by this model because probability mass is conserved for a narrow subset of words.
+    Thus, lexical cohesion arises naturally through the generative process, and other sources of information &#8211; such as cue words &#8211; can easily be incorporated as emissions from the segment boundaries.
+    More formally, we treat the words in each sentence as draws from a language model associated with the topic segment.
+    This is related to topicmodeling methods such as latent Dirichlet allocation (LDA; Blei et al. 2003), but here the induced topics are tied to a linear discourse structure.
+    This property enables a dynamic programming solution to find the exact maximum-likelihood segmentation.
+    We consider two approaches to handling the language models: estimating them explicitly, and integrating them out, using the Dirichlet Compound Multinomial distribution (

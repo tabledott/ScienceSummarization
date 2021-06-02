@@ -1,0 +1,6 @@
+iven yield in the parsing case, or having a root node labeled with given semantic information in the case of generation&#8212;reflect the different premises of the two types of problems.
+    This perspective purposely abstracts issues of nondeterminism in the parsing or generation process, as it assumes an oracle to provide traversal steps that happen to match the ethereal virtual tree being constructed.
+    It is this abstraction that makes it a useful expository device, but should not be taken literally as a description of an algorithm.
+    From this point of view, a naive top-down parser or generator performs a depth-first, left-to-right traversal of the tree.
+    Completion steps in Earley's algorithm, whether used for parsing or generation, correspond to a post-order traversal (with prediction acting as a pre-order filter).
+    The left-to-right traversal order of both of these methods is geared towards the given information in a parsing problem, the string, rather than that of a generation problem, the 

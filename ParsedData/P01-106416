@@ -1,0 +1,9 @@
+n not straightforwardly incorporate features pertaining to a segment itself, such as the average length of segments.
+    Our model, on the other hand, can incorporate this information quite naturally.
+    Suppose that the length of a segment follows a normal distribution , with a mean of and standard deviation of (Ponte and Croft, 1997).
+    Then Equation (13) can be augmented to where .
+    Equation (17) favors segments whose lengths are similar to the average length (in words).
+    Another major difference from their algorithm is that our algorithm does not require training data to estimate probabilities, while their algorithm does.
+    Therefore, our algorithm can be applied to domain-independent texts, while their algorithm is restricted to domains for which training data are available.
+    It would be interesting, however, to compare our algorithm with their algorithm for the case when training data are available.
+    In such a case, our model should be extended to incorporate various features such as th

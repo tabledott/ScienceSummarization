@@ -1,0 +1,6 @@
+d around gerunds, as in the flying planes example.8 Removing null elements simply involves pruning the tree to eliminate any subtree that dominates only null elements.
+    The special trace tag that is inserted in the step that adds gap information (Section 4.5) is excluded, as it is specifically chosen to be something other than the null-element preterminal marker (which is -NONE- in the Penn Treebank).
+    The step in which punctuation is raised is discussed in detail in chapter 7 of Collins&#8217; thesis.
+    The main idea is to raise punctuation&#8212;which is any preterminal subtree in which the part of speech is either a comma or a colon&#8212;to the highest possible point in the tree, so that it always sits between two other nonterminals.
+    Punctuation that occurs at the very beginning or end of a sentence is &#8220;raised away,&#8221; that is, pruned.
+    In addition, any implementation of this step should handle the case in which multiple punctuation elements appear as the initial or final children

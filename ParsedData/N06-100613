@@ -1,0 +1,8 @@
+ pattern language.
+    The nodes in the final graph are then annotated with their associated word, part-of-speech (given by the parser), lemma (given by a finite-state transducer described by Minnen et al. (2001)) and named-entity tag.
+    The purpose of the second phase is to find a good partial alignment between the typed dependency graphs representing the hypothesis and the text.
+    An alignment consists of a mapping from each node (word) in the hypothesis graph to a single node in the text graph, or to null.3 Figure 1 gives the alignment for ID 971.
+    The space of alignments is large: there are O((m + 1)') possible alignments for a hypothesis graph with n nodes and a text graph with m nodes.
+    We define a measure of alignment quality, and a procedure for identifying high scoring alignments.
+    We choose a locally decomposable scoring function, such that the score of an alignment is the sum of the local node and edge alignment scores.
+    Unfortunately, there is no polynomial time algorithm for findi

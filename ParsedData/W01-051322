@@ -1,0 +1,8 @@
+ng semantic correlations, we can compare 52Xi and SLY to see if C is substitutable.
+    We use our earlier approach (Schone and Jurafsky, 2000) for performing the comparison; namely, for every word W, we compute cos(52w, SLR) for 200 randomly chosen words, R. This allows for computation of a correlaton mean (&#181;W) and standard deviation (6W) between W and other words.
+    As before, we then compute a normalized cosine score ( ) between words of interest, defined by With this set-up, we now look for substitutivity.
+    Note that phrases may be substitutable and still be headword if their substitute phrases are themselves MWUs.
+    For example, dioxide in carbon_dioxide is semantically similar to monoxide in carbon_monoxide.
+    Moreover, there are other important instances of valid substitutivity: However, guilty and innocent are semantically related, but pleaded_guilty and pleaded_innocent are not MWUs.
+    We would like to emphasize only ngrams whose substitutes are valid MWUs.
+    To show how we do this 

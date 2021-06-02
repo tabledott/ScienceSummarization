@@ -1,0 +1,6 @@
+to the work in (Lita et al., 2003), we tag each word in a sentence with one of the tags: For training a given capitalizer one needs to convert running text into uniform case text accompanied by the above capitalization tags.
+    For example, PrimeTime continues on ABC .PERIOD Now ,COMMA from Los Angeles ,COMMA Diane Sawyer .PERIOD The text is assumed to be already segmented into sentences.
+    Any sequence labeling algorithm can then be trained for tagging lowercase word sequences with capitalization tags.
+    At test time, the uniform case text to be capitalized is first segmented into sentences1 after which each sentence is tagged.
+    A widespread algorithm used for capitalization is the 1-gram tagger: for every word in a given vocabulary (usually large, 100kwds or more) use the most frequent tag encountered in a large amount of training data.
+    As a special case for automatic capitalization, the most frequent tag for the first word in a sentence is overridden by CAP, thus capitalizing on the fact that t

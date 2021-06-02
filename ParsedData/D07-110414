@@ -1,0 +1,9 @@
+rt to a precomputed intersection (?5.1).
+			We were notaware of any algorithms to substantially im prove the efficiency of this computation when it is requested on the fly, but precomputation can be done in a single pass over the text at decoder startup.
+			If one pattern is frequent and the other is rare,we use an algorithm whose complexity is de pendent mainly on the frequency of the rare pattern (?5.2).
+			It can also be used for pairs of rare patterns when one pattern is much rarer than the other.
+			If both patterns are rare, no special algorithms are needed.
+			Any linear algorithm will suffice.
+			However, for reasons described in ?5.3, our other collocation algorithms depend on sorted sets, so we use a merge algorithm.Finally, in order to cut down on the number of un necessary computations, we use an efficient method to enumerate the phrases to lookup (?5.4).
+			This method also forms the basis of various caching strategies for additional speedups.
+			We analyze the memory use of our algorithms in ?5.

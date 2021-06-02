@@ -1,0 +1,8 @@
+ p is a probability, it often suffers from the underflow problem. r, s, and t may suffer from both underflow and overflow problems, depending on their scales.
+    To address these, we could represent p in the log domain as usual.
+    However, r, s, and t can be positive or negative, and we cannot directly take the log of a negative number.
+    Therefore, we represent real numbers as ordered pairs.
+    Specifically, to represent a = sae`a, we store (sa, fa), where the sa &#8712; {+, &#8722;} is the sign bit of a and the floatingpoint number fa is the natural logarithm of |a|.6 Table 3 shows the &#8220;&#183;&#8221; and &#8220;+&#8221;operations.
+    6An alternative that avoids log and exp is to store a = fa2ea as (fa, ea), where fa is a floating-point number and ea is a sufficiently wide integer.
+    E.g., combining a 32-bit fa with a 32-bit ea will in effect extend fa&#8217;s 8-bit internal exponent to 32 bits by adding ea to it.
+    This gives much more dynamic range than the 11-bit exponent of a 64-bit doub

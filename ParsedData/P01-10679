@@ -1,0 +1,10 @@
+possible values for , , and , respectively.
+    In summary, the probability of getting a French sentence given an English parse tree is P Str where and , P and P , decide the behavior of the translation model, and these are the probabilities we want to estimate from a training corpus.
+    To estimate the model parameters, we use the EM algorithm (Dempster et al., 1977).
+    The algorithm iteratively updates the model parameters to maximize the likelihood of the training corpus.
+    First, the model parameters are initialized.
+    We used a uniform distribution, but it can be a distribution taken from other models.
+    For each iteration, the number of events are counted and weighted by the probabilities of the events.
+    The probabilities of events are calculated from the current model parameters.
+    The model parameters are re-estimated based on the counts, and used for the next iteration.
+    In our case, an event is a pair of a value of a random variable (such as,, or) and a feature value (such as , , or

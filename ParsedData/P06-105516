@@ -1,0 +1,9 @@
+lowing each annotation to specialize in representing only a fraction of the data.
+    The smaller this fraction, the higher the risk of overfitting.
+    Merging, by allowing only the most beneficial annotations, helps mitigate this risk, but it is not the only way.
+    We can further minimize overfitting by forcing the production probabilities from annotations of the same nonterminal to be similar.
+    For example, a noun phrase in subject position certainly has a distinct distribution, but it may benefit from being smoothed with counts from all other noun phrases.
+    Smoothing the productions of each subsymbol by shrinking them towards their common base symbol gives us a more reliable estimate, allowing them to share statistical strength.
+    We perform smoothing in a linear way.
+    The estimated probability of a production px = P(Ax &#8594; By C,) is interpolated with the average over all subsymbols of A.
+    Here, &#945; is a small constant: we found 0.01 to be a good value, but the actual quantity was s

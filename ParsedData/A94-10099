@@ -1,0 +1,9 @@
+ the transition probability from tag i to tag j is estimated as f (i, j)/ f (i) and the lexical probability as f(i, w)/ f (i).
+    Other estimation formulae have been used in the past.
+    For example, CLAWS (Garside et al., 1987) normalises the lexical probabilities by the total frequency of the word rather than of the tag.
+    Consulting the BaumWelch re-estimation formulae suggests that the approach described is more appropriate, and this is confirmed by slightly greater tagging accuracy.
+    Any transitions not seen in the training corpus are given a small, non-zero probability.
+    The lexicon lists, for each word, all of tags seen in the training corpus with their probabilities.
+    For words not found in the lexicon, all open-class tags are hypothesised. with equal probabilities.
+    These words are added to the lexicon at the end of first iteration when re-estimation is being used, so that the probabilities of their hypotheses subsequently diverge from being uniform.
+    To measure the accuracy of the

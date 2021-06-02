@@ -1,0 +1,8 @@
+It searches a given f in all sets and keeps a phrase pair ( f, E) if it belongs to either i) their intersection or ii) their union.
+    The former method corresponds to building one new TM SI, whose set is the intersection of all given sets: phrase-based and lexical-based direct features are defined as follows: Here, &#966;(ek  |fh) is the probability of ek given fh provided by the word-to-word lexicon computed on Sj.
+    The inverted features are defined similarly.
+    The phrase penalty is trivially set to 1.
+    The same approach has been applied to build the union of re-ordering models.
+    In this case, however, the smoothing value is constant and set to 0.001.
+    As concerns as the use of multiple LMs, Moses has a very easy policy, consisting of querying each of them to get the likelihood of a translation hypotheses, and uses all these scores as features.
+    It is worth noting that the exploitation of multiple models increases the number of features of the whole system, because each model adds its set

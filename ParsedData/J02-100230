@@ -1,0 +1,7 @@
+gatives and false positives with probability 0.5.
+    Since we are working with reference segmentations of 1,000 segments, this means 500 missed boundaries and 500 incorrect boundaries.
+    Since the probabilities are uniformly distributed across all segments and all boundaries, on average one would expect the following distribution of errors: A Type A error is a standard false positive, so the average penalty is k2.
+    A Type B error is a standard false negative, so the average penalty is k. It remains to figure out what the average penalty is for a Type C error.
+    Modeling the behavior of the metric, a Type C error occurrence in which a false positive and a false negative are some distance e &lt; k from each other incurs a penalty of 2e, where e is assigned for the false positive and another e is assigned for the false negative.
+    This may range from 0 to 2k, and since error distribution is uniform, the penalty is k on average&#8212;the same as for a regular false negative.
+    To translate this into a

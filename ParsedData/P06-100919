@@ -1,0 +1,7 @@
+while when only the first 4 letters of each word were used it achieved 28.80.5 Table 3 shows the effect of removing each of the feature types in turn from the full model.
+    The most useful features are the Dice and Model 1 values which allow the model to incorporate translation probabilities from the large sentence aligned corpora.
+    This is to be expected as the amount of word aligned data are extremely small, and therefore the model can only estimate translation probabilities for only a fraction of the lexicon.
+    We would expect the dependence on sentence aligned data to decrease as more word aligned data becomes available.
+    The effect of removing the Markov features can be seen from comparing Figures 2 (a) and (b).
+    The model has learnt to prefer alignments that follow the diagonal, thus alignments such as 3 H three and prestation H provision are found, and missalignments such as de H of, which lie well off the diagonal, are avoided.
+    The differing utility of the alignment word pair feature 

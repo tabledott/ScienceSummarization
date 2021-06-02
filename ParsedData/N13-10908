@@ -1,0 +1,6 @@
+ In this method, we assume relationships are present as vector offsets, so that in the embedding space, all pairs of words sharing a particular relation are related by the same constant offset.
+    This is illustrated in Figure 2.
+    In this model, to answer the analogy question a:b c:d where d is unknown, we find the embedding vectors xa, xb, xc (all normalized to unit norm), and compute y = xb &#8722; xa + xc. y is the continuous space representation of the word we expect to be the best answer.
+    Of course, no word might exist at that exact position, so we then search for the word whose embedding vector has the greatest cosine similarity to y and output it: provided.
+    We have explored several related methods and found that the proposed method performs well for both syntactic and semantic relations.
+    We note that this measure is qualitatively similar to relational similarity model of (Turney, 2012), which predicts similarity between members of the word pairs (xb, xd), (x,-, xd) and dis-similarity fo

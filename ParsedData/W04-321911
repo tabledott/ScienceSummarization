@@ -1,0 +1,8 @@
+lexical translation probabilities of the form P(s  |t) by running five iterations of Model 1 on the training corpus.
+    This allows for computing the probability of a sequence of source words S given a sequence of target words T as the sum over all possible alignments of the Model 1 probabilities: (Brown et al. (1993) provides a more detailed derivation of this identity.)
+    Although simple, this approach has proven effective in SMT for several reasons.
+    First and foremost, phrasal scoring by Model 1 avoids the sparsity problems associated with estimating each phrasal replacement probability with MLE (Vogel et al. 2003).
+    Secondly, it appears to boost translation quality in more sophisticated translation systems by inducing lexical triggering (Och et al. 2004).
+    Collocations and other non-compositional phrases receive a higher probability as a whole than they would as independent single word replacements.
+    One further simplification was made.
+    Given that our domain is restricted to the genera

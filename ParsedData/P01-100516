@@ -1,0 +1,6 @@
+classifiers, this time for unsupervised learning.
+    Whereas with active learning we want to choose the most uncertain instances for human annotation, with unsupervised learning we want to choose the instances that have the highest probability of being correct for automatic labeling and inclusion in our labeled training data.
+    In Table 2, we show the test set accuracy (averaged over the four most frequently occurring confusion pairs) as a function of the number of classifiers that agree upon the label of an instance.
+    For this experiment, we trained a collection of 10 na&#239;ve Bayes classifiers, using bagging on a 1-millionword seed corpus.
+    As can be seen, the greater the classifier agreement, the more likely it is that a test sample has been correctly labeled.
+    Since the instances in which all bags agree have the highest probability of being correct, we attempted to automatically grow our labeled training set using the 1-million-word labeled seed corpus along with the collection of na&#239;ve

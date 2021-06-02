@@ -1,0 +1,9 @@
+ersion.
+    Throwing in more features has the effect of making M much more dense, mitigating the benefits of the sparse recursions.
+    Nevertheless, even for very large feature sets, the percentage of zeros in M averages 20% to 30%, and the sparse version remains 10 to 20% faster than the non-sparse one.
+    Note that the non-sparse version is faster with a E' penalty term than with only the E2 term: this is because exp(0) is faster to evaluate than exp(x) when x 7&#65533; 0.
+    Table 4 displays the results achieved on the Nettalk task.
+    The three algorithms yield very comparable accuracy results, and deliver compact models: for the 5-gram+ setting, only 50,000 out of 250 million features are selected.
+    SGD is the fastest of the three, up to twice as fast as OWL-QN and BCD depending on the feature set.
+    The performance it achieves are consistently slightly worst than the other optimizers, and only catch up when the parameters are fine-tuned (see above).
+    There are not so many comparisons for Net

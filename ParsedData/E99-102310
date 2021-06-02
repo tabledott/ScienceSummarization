@@ -1,0 +1,11 @@
+two different parts of the recognition problem.
+    In a second series of experiments we used a &amp;quot;cascaded&amp;quot; classifier.
+    This classifier has two stages (cascades).
+    The first cascade is similar to the classifier described in the first experiment.
+    For the second cascade we added the classifications of the first cascade as extra features.
+    The extra features consisted of the left and the right context of the classification tags.
+    The focus chunk tag (the classification of the current word) accounts for the correct classification in about 95% of the cases.
+    The MBL algorithm assigns a large weight to this input feature and this makes it harder for the other features to contribute to a good result.
+    To avoid this we have refrained from using this tag.
+    Our goal was to find out the optimal number of extra classification tags in the input.
+    We performed 5-fold cross-validation experiments with all combinations of left and right classification tag contexts in the range 0 

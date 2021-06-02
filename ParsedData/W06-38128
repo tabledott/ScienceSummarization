@@ -1,0 +1,7 @@
+is more efficient.
+    Another algorithm that uses only local contexts for time-linear clustering is DBSCAN as, described in (Ester et al. 1996), needing two input parameters (although the authors propose an interactive approach to determine them).
+    DBSCAN is especially suited for graphs with a geometrical interpretation, i.e. the objects have coordinates in a multidimensional space.
+    A quite similar algorithm to CW is MAJORCLUST (Stein &amp; Niggemann 1996), which is based on a comparable idea but converges slower.
+    As CW is a special case of Markov-ChainClustering (MCL) (van Dongen, 2000), we spend a few words on explaining it.
+    MCL is the parallel simulation of all possible random walks up to a finite length on a graph G. The idea is that random walkers are more likely to end up in the same cluster where they started than walking across clusters.
+    MCL simulates flow on a graph by repeatedly updating transition probabilities between all nodes, eventually converging to a transition matrix afte

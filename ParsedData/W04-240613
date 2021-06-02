@@ -1,0 +1,10 @@
+ that hierarchical agglomerative clustering using average link (via McQuitty&#8217;s method) fares well.
+    Thus, we have chosen to use average link/UPGMA as our criteria function for the agglomerative experiments.
+    In similarity space, each instance can be viewed as a node in a weighted graph.
+    The weights on edges joining two nodes indicate their pairwise similarity as measured by the cosine between the context vectors that represent the pair of instances.
+    When agglomerative clustering starts, each node is in its own cluster and is considered to be the centroid of that cluster.
+    At each iteration, average link selects the pair of clusters whose centroids are most similar and merges them into a single cluster.
+    For example, suppose the clusters I and J are to be merged into a single cluster IJ.
+    The weights on all other edges that connect existing nodes to the new node IJ must now be revised.
+    Suppose that Q is such a node.
+    The new weight in the graph is computed by averaging the w

@@ -1,0 +1,12 @@
+n 4) by restricting the maximum order of the n-grams in the procedure.
+    The results (Table 5) show that on aren, there is no degradation if we limit the maximum order of the n-grams to 3.
+    However, on zhen/enzh, there is improvement by considering 4-grams.
+    We can therefore reduce Lattice MBR computations in aren.
+  
+  
+    We have presented a procedure for performing Minimum Bayes-Risk Decoding on translation lattices.
+    This is a significant development in that the MBR decoder operates over a very large number of translations.
+    In contrast, the current N-best implementation of MBR can be scaled to, at most, a few thousands of hypotheses.
+    If the number of hypotheses is greater than, say 20,000, the N-best MBR becomes computationally expensive.
+    The lattice MBR technique is efficient when performed over enormous number of hypotheses (up to 1080) since it takes advantage of the compact structure of the lattice.
+    Lattice MBR gives consistent improvements in translation performance over N

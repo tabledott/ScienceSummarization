@@ -1,0 +1,6 @@
+ctional models do not ignore this influence; in the case of a left-to-right CMM, the influence of t&#8722;1 on t0 is explicit in the P(t0|t&#8722;1, w0) local model, while the influence of t+1 on t0 is implicit in the local model at the next position (via P(t+1|t0, w+1)).
+    The situation is reversed for the right-to-left CMM in figure 1(b).
+    From a seat-of-the-pants machine learning perspective, when building a classifier to label the tag at a certain position, the obvious thing to do is to explicitly include in the local model all predictive features, no matter on which side of the target position they lie.
+    There are two good formal reasons to expect that a model explicitly conditioning on both sides at each position, like figure 1(c) could be advantageous.
+    First, because of smoothing effects and interaction with other conditioning features (like the words), left-to-right factors like P(t0|t&#8722;1, w0) do not always suffice when t0 is implicitly needed to determine t&#8722;1.
+    For example, 

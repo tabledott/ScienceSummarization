@@ -1,0 +1,8 @@
+rsal would, in the case at hand, remedy the nontermination problem.
+    For the example above, the solution is to generate the VP first&#8212;using the goal generate (node(vp(NP)/left(john), P1-[ ]))&#8212;in the course of which the variable NP will become bound so that the generation from node(np/NP, Sent-P1) will terminate.
+    We might allow for reordering of the traversal of the children by sorting the nodes before generating them.
+    This can be simply done, by modifying the first clause of generate.
+    Here, we have introduced a predicate sort_children to reorder the child nodes before generating.
+    Dymetman and Isabelle (1988) propose a node-ordering solution to the top-down nontermination problem; they allow the grammar writer to specify a separate goal ordering for parsing and for generation by annotating the rules by hand.
+    Strzalkowski (1989) develops an algorithm for generating such annotations automatically.
+    In both of these cases, the node ordering is known a priori, and can be though

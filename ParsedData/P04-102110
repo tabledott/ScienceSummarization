@@ -1,0 +1,10 @@
+ models for both transliteration and back-transliteration.
+    Suppose that we have an English name &#945; = x1x2 ...xm and a Chinese transliteration &#946; = y1y2 .
+    .
+    .yn where xi are letters and yj are Chinese characters.
+    Oftentimes, the number of letters is different from the number of Chinese A bilingual dictionary contains entries mapping English names to their respective Chinese transliterations.
+    Like many other solutions in computational linguistics, it is possible to automatically analyze the bilingual dictionary to acquire knowledge in order to map new English names to Chinese and vice versa.
+    Based on the transliteration formulation above, a transliteration model can be built with transliteration unit&#8217;s ngram statistics.
+    To obtain the statistics, the bilingual dictionary needs to be aligned.
+    The maximum likelihood approach, through EM algorithm (Dempster, 1977), allows us to infer such an alignment easily as described in the table below.
+    The Expectation-Maximizat

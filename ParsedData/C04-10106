@@ -1,0 +1,7 @@
+on of dependency graphs and well-formedness conditions, the reader is referred to Nivre (2003).The parsing algorithm used here was first de fined for unlabeled dependency parsing in Nivre (2003) and subsequently extended to labeled graphsin Nivre et al (2004).
+			Parser configurations are rep resented by triples ?S, I,A?, where S is the stack (represented as a list), I is the list of (remaining) input tokens, and A is the (current) arc relation for the dependency graph.
+			(Since in a dependencygraph the set of nodes is given by the input tokens, only the arcs need to be represented explicitly.)
+			Given an input string W , the parser is initial ized to ?nil,W, ??2 and terminates when it reaches a configuration ?S,nil, A?
+			(for any list S and set ofarcs A).
+			The input string W is accepted if the de pendency graph D = (W,A) given at termination is well-formed; otherwise W is rejected.
+			Given an arbitrary configuration of the parser, there are four possible transitions to the next configuration (where t i

@@ -1,0 +1,9 @@
+between the false positive and the relevant correct boundaries; on average, it is k2, assuming a uniform distribution of boundaries across the document.
+    This example shows the consequences of two different locations of false positives: on the left, the penalty is k2; on the right, it is k. Now, consider false positives.
+    A false positive occurs when the algorithm places a boundary at some position where there is no boundary in the reference segmentation.
+    The number of times that this false positive is noted by Pk depends on where exactly inside S2 the false positive occurs.
+    (See Figure 3.)
+    If it occurs in the middle of the segment, the false positive is noted k times (as seen on the right-hand side of Figure 3).
+    If it occurs j &lt; k sentences from the beginning or the end of the segment, the segmentation is penalized j times.
+    Assuming uniformly distributed false positives, on average a false positive is noted 2k times by the metric&#8212;half the rate for false negatives.
+    This 

@@ -1,0 +1,8 @@
+999) which reduces the probability of a subtree by a factor of two for each non-root nonterminal it contains.
+    It easy to see that this is equivalent to reducing the probability of a tree by a factor of four for each pair of nonterminals it contains, resulting in the PCFG reduction in figure 4.
+    Tested on the OVIS corpus, Bonnema et al. 's proposal obtains results that are comparable to Sima'an (1999) -- see Bonnema et al.
+    (1999).
+    This paper presents the first published results with this estimator on the WSJ.
+    By using these PCFG-reductions we can thus parse with all subtrees in polynomial time.
+    However, as mentioned above, efficient parsing does not necessarily mean efficient disambiguation: the exact computation of the most probable parse remains exponential.
+    In this paper, we will estimate the most probable parse by computing the 10,000 most probable derivations by means of Viterbi n-best, from which the most likely parse is estimated by summing up the probabilities of the derivati

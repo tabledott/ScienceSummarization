@@ -1,0 +1,7 @@
+ quality of discovered patterns, (Riloff, 1996) describes a direct evaluation strategy, where precision of the patterns resulting from a given run is established by manual review.
+    (Yangarber et al., 2000) uses an automatic but indirect evaluation of the recognizer : they retrieve a test sub-set from the training corpus and manually judge the relevance of every document in ; one can then obtain standard IR-style recall and precision scores for relative to .
+    In presenting our results, we will discuss both kinds of evaluation.
+    The recall/precision curves produced by the indirect evaluation generally reach some level of recall at which precision begins to drop.
+    This happens because at some point in the learning process the algorithm picks up patterns that are common in , but are not sufficiently specific to alone.
+    These patterns then pick up irrelevant documents, and precision drops.
+    Our goal is to prevent this kind of degradation, by helping the learner stop when precision is still high, 

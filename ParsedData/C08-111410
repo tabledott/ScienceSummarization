@@ -1,0 +1,5 @@
+tors for high-frequency word pairs (traffic:street) are comparable to features in vectors for low-frequency word pairs (water:riverbed).Now that we have a feature vector for each in put word pair, we can apply a standard supervised learning algorithm.
+			In the following experiments, we use a sequential minimal optimization (SMO)support vector machine (SVM) with a radial basis function (RBF) kernel (Platt, 1998), as implemented in Weka (Waikato Environment for Knowl edge Analysis) (Witten and Frank, 1999).4 The algorithm generates probability estimates for each class by fitting logistic regression models to the outputs of the SVM.
+			We disable the normalizationoption in Weka, since the vectors are already nor malized to unit length.
+			We chose the SMO RBF algorithm because it is fast, robust, and it easily handles large numbers of features.For convenience, we will refer to the above algo rithm as PairClass.
+			In the following experiments, PairClass is applied to each of the four problemswith no adjustments

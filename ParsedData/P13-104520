@@ -1,0 +1,9 @@
+533; s(CVG(&#952;, x, &#710;y)) = s .
+    (6) d&#8712;N(&#710;y) The main objective function in Eq.
+    3 includes a maximization over all possible trees max&#710;y&#8712;Y (x).
+    Finding the global maximum, however, cannot be done efficiently for longer sentences nor can we use dynamic programming.
+    This is due to the fact that the vectors break the independence assumptions of the base PCFG.
+    A (category, vector) node representation is dependent on all the words in its span and hence to find the true global optimum, we would have to compute the scores for all binary trees.
+    For a sentence of length n, there are Catalan(n) many possible binary trees which is very large even for moderately long sentences.
+    One could use a bottom-up beam search, keeping a k-best list at every cell of the chart, possibly for each syntactic category.
+    This beam search inference procedure is still considerably slower than using only the simplified base PCFG, especially since it has a small state space (see next se

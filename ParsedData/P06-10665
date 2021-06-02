@@ -1,0 +1,8 @@
+ rules are used to derive the translation During decoding, the source sentence is segmented into a sequence of phrases as in a standard phrase-based model.
+    Then the lexical rule (3) 2 is 2Currently, we restrict phrases x and y not to be null.
+    Therefore neither deletion nor insertion is carried out during decoding.
+    However, these operations are to be considered in our future version of model. used to translate source phrase y into target phrase x and generate a block A.
+    Later, the straight rule (1) merges two consecutive blocks into a single larger block in the straight order; while the inverted rule (2) merges them in the inverted order.
+    These two merging rules will be used continuously until the whole source sentence is covered.
+    When the translation is finished, a tree indicating the hierarchical segmentation of the source sentence is also produced.
+    In the following, we will define the model in a straight way, not in the dynamic programming recursion way used by (Wu, 1996; Zens et

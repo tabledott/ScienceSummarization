@@ -1,0 +1,11 @@
+on of an English phrase to a foreign phrase at non-terminal tree nodes as if is non-terminal.
+    In practice, the phrase lengths (, ) are limited to reduce the model size.
+    In our experiment (Section 5), we restricted them as , to avoid pairs of extremely different lengths.
+    This formula was obtained by randomly sampling the length of translation pairs.
+    See (Yamada, 2002) for details.
+  
+  
+    Our statistical MT system is based on the noisychannel model, so the decoder works in the reverse direction of the channel.
+    Given a supposed channel output (e.g., a French or Chinese sentence), it will find the most plausible channel input (an English parse tree) based on the model parameters and the prior probability of the input.
+    In the syntax-based model, the decoder&#8217;s task is to find the most plausible English parse tree given an observed foreign sentence.
+    Since the task is to build a tree structure from a string of words, we can use a mechanism similar to normal parsing, which builds a

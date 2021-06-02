@@ -1,0 +1,10 @@
+ environment, and use these samples to approximate the expectation in equation 4.
+    In practice, it is often sufficient to sample a single history h for this approximation.
+    Algorithm 1 details the complete policy gradient algorithm.
+    It performs T iterations over the set of documents D. Step 3 samples a history that maps each document to actions.
+    This is done by repeatedly selecting actions according to the current policy, and updating the state by executing the selected actions.
+    Steps 4 and 5 compute the empirical gradient and update the parameters &#952;.
+    In many domains, interacting with the environment is expensive.
+    Therefore, we use two techniques that allow us to take maximum advantage of each environment interaction.
+    First, a history h = (s0, a0, ... , sn) contains subsequences (si, ai,... sn) for i = 1 to n &#8722; 1, each with its own reward value given by the environment as a side effect of executing h. We apply the update from equation 5 for each subsequence.
+    Second

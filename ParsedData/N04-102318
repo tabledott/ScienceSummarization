@@ -1,0 +1,9 @@
+ed to recompute again in the inner loop.
+    Now the complexity of a repeat iteration is , where is the average number of active features in vector .
+    If we updated the weight vector whenever an inconsistent pair was found, the complexity of a loop would be .
+    The following theorem will show that Algorithm 1 will stop in finite steps, outputting a function that splits the training data with a large margin, if the training data is splittable.
+    Due to lack of space, we omit the proof for Theorem 1 in this paper.
+    Theorem 1 Suppose the training samples Let .
+    Then Algorithm 1 makes at most mistakes on the pairwise samples during the Algorithm 2 ordinal regression with uneven margin Require: a positive learning margin .
+    The second algorithm that we will use for MT reranking is the -insensitive ordinal regression with uneven margin, which was proposed in (Shen and Joshi, 2004), as shown in Algorithm 2.
+    In Algorithm 2, the function is used to control the level of insensitivity, and the functi

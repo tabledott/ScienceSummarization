@@ -1,0 +1,11 @@
+Martins et al., 2010).
+    However, exactly what objective hopefear MIRA is optimizing remains an open question.
+    Gimpel and Smith (2012) discuss these issues in greater detail, while also providing an interpretable alternative to MIRA.
+    Introduced by Hopkins and May (2011), Pairwise Ranking Optimization (PRO) aims to handle large feature sets inside the traditional MERT architecture.
+    That is, PRO employs a growing approximation of &#163;i by aggregating the k-best hypotheses from a series of increasingly refined models.
+    This architecture is desirable, as most groups have infrastructure to k-best decode their tuning sets in parallel.
+    For a given approximate &#65533;&#163;i, PRO creates a sample Si of (eg, eb) pairs, such that BLEUi(eg) &gt; BLEUi(eb).
+    It then uses a binary classifier to separate each pair.
+    We describe the resulting loss in terms of an SVM classifier, to highlight similarities with MIRA.
+    In terms of (4), PRO defines where (x)+ = max(0, x).
+    The hinge loss is mu

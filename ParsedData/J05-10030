@@ -1,0 +1,10 @@
+
+  Discriminative Reranking For Natural Language Parsing
+  
+    This article considers approaches which rerank the output of an existing probabilistic parser.
+    The base parser produces a set of candidate parses for each input sentence, with associated probabilities that define an initial ranking of these parses.
+    A second model then attempts to improve upon this initial ranking, using additional features of the tree as evidence.
+    The strength of our approach is that it allows a tree to be represented as an arbitrary set offeatures, without concerns about how these features interact or overlap and without the need to define a derivation or a generative model which takes these features into account.
+    We introduce a new method for the reranking task, based on the boosting approach to ranking problems described in Freund et al. (1998).
+    We apply the boosting method to parsing the Wall Street Journal treebank.
+    The method combined the log-likelihood under a baseline model (that of Collins [1999])

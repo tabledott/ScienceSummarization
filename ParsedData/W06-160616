@@ -1,0 +1,6 @@
+es described in Section 2.3.
+    The decoder is capable of producing nbest derivations and nbest lists (Knight and Graehl, 2005), which are used for Maximum Bleu training (Och, 2003).
+    When decoding the test corpus, the decoder returns the translation that has the most probable derivation; in other words, the sum operator in equation 4 is replaced with an argmax.
+    Combining multiple MT outputs to increase performance is, in general, a difficult task (Matusov et al., 2006) when significantly different engines compete for producing the best outputs.
+    In our case, combining multiple MT outputs is much simpler because the submodel probabilities across the four models described here are mostly identifical, with the exception of the root normalized and CFG-like submodels which are scaled differently &#8211; since Model 2 composed has, for example, more rules than Model 1, the root normalized and CFG-like submodels have smaller probabilities for identical rules in Model 2 composed than in Model 1.
+    We co

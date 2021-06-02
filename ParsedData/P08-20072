@@ -1,0 +1,7 @@
+ists of two word sequences, e and f. A set of phrases {eij} contains all spans eij from between-word positions i to j of e. A link is an aligned pair of phrases, denoted (eij, fkl).'
+    Let a weighted sentence pair additionally include a real-valued function 0 : {eij}x{fkl} &#8212;* R, which scores links.
+    0(eij, fkl) can be sentence-specific, for example encoding the product of a translation model and a distortion model for (eij, fkl).
+    We impose no additional restrictions on 0 for our analysis.
+    An alignment is a set of links.
+    Given a weighted sentence pair, we will consider the space of bijective phrase alignments A: those a C {eij} x {fkl} that use each word token in exactly one link.
+    We first define the notion of a partition: UiSi = T means Si are pairwise disjoint and cover T. Then, we can formally define the set of bijective phrase alignments: Both the conditional model of DeNero et al. (2006) and the joint model of Marcu and Wong (2002) operate in A, as does the phrase-based decoding

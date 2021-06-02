@@ -1,0 +1,10 @@
+ples.
+    AdaBoost.MH can be applied to the problem using these pseudolabels in place of supervised examples.
+    For the experiments in this paper we made a couple of additional modifications to the CoBoost algorithm.
+    The algorithm in Fig.
+    (2) was extended to have an additional, innermost loop over the (3) possible labels.
+    The weak hypothesis chosen was then restricted to be a predictor in favor of this label.
+    Thus at each iteration the algorithm is forced to pick features for the location, person and organization in turn for the classifier being trained.
+    This modification brings the method closer to the DL-CoTrain algorithm described earlier, and is motivated by the intuition that all three labels should be kept healthily populated in the unlabeled examples, preventing one label from dominating &#8212; this deserves more theoretical investigation.
+    We also removed the context-type feature type when using the CoBoost approach.
+    This &amp;quot;default&amp;quot; feature type has 100% 

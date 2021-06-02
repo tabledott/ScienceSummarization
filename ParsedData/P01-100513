@@ -1,0 +1,8 @@
+nt between classifiers, the more useful it would be to have an instance manually labeled.
+    We used the na&#239;ve Bayes classifier, creating 10 classifiers each trained on bags generated from an initial one million words of labeled training data.
+    We present the active learning algorithm we used below.
+    Initialize: Training data consists of X words correctly labeled We initially tried selecting the M most uncertain examples, but this resulted in a sample too biased toward the difficult instances.
+    Instead we pick half of our samples for annotation randomly and the other half from those whose labels we are most uncertain of, as judged by the entropy of the votes assigned to the instance by the committee.
+    This is, in effect, biasing our sample toward instances the classifiers are most uncertain of.
+    We show the results from sample selection for confusion set disambiguation in Figure 4.
+    The line labeled &amp;quot;sequential&amp;quot; shows test set accuracy achieved for different percentag

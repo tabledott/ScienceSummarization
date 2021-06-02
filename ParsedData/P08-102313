@@ -1,0 +1,5 @@
+ decomposes into the product of probabilities of translation rules r E d: Here t and s are the source-side tree and targetside string of rule r, respectively, P(t  |s) and P(s  |t) are the two translation probabilities, and Plex(&#183;) are the lexical probabilities.
+    The only extra term in forest-based decoding is P(t  |Hp) denoting the source side parsing probability of the current translation rule r in the parse forest, which is the product of probabilities of each parse hyperedge ep covered in the pattern-match of t against Hp (which can be recorded at conversion time): Our experiments are on Chinese-to-English translation, and we use the Chinese parser of Xiong et al. (2005) to parse the source side of the bitext.
+    Following Huang (2008), we modify the parser to output a packed forest for each sentence.
+    Our training corpus consists of 31,011 sentence pairs with 0.8M Chinese words and 0.9M English words.
+    We first word-align them by GIZA++ refined by &#8220;diagand&#8221; from Koehn et al. (2

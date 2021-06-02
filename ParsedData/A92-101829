@@ -1,0 +1,12 @@
+behind standard protocols those elements which may vary, enabling easy substitution of alternate implementations.
+    Also illustrated here are the data types which flow between tagger components.
+    As an analysis implementation, the tagger must generate terms from text.
+    In this context, a term is a word stem annotated with part of speech.
+    Text enters the analysis sub-system where the first processing module it encounters is the tokenizer, whose duty is to convert text (a sequence of characters) into a sequence of tokens.
+    Sentence boundaries are also identified by the tokenizer and are passed as reserved tokens.
+    The tokenizer subsequently passes tokens to the lexicon.
+    Here tokens are converted into a set of stems, each annotated with a part-of-speech tag.
+    The set of tags identifies an ambiguity class.
+    The identification of these classes is also the responsibility of the lexicon.
+    Thus the lexicon delivers a set of stems paired with tags, and an ambiguity class.
+    The trainin

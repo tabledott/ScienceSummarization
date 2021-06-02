@@ -1,0 +1,9 @@
+.
+    First we train a lower level word alignment model, then we place hard constraints on the phrasal alignment space using confident word links from this simpler model.
+    Combining the two approaches, we have a staged training procedure going from the simplest unconstrained word based model to a constrained Bayesian word-level ITG model, and finally proceeding to a constrained Bayesian phrasal model.
+  
+  
+    Goldwater and Griffiths (2007) and Johnson (2007) show that modifying an HMM to include a sparse prior over its parameters and using Bayesian estimation leads to improved accuracy for unsupervised part-of-speech tagging.
+    In this section, we describe a Bayesian estimator for ITG: we select parameters that optimize the probability of the data given a prior.
+    The traditional estimation method for word alignment models is the EM algorithm (Brown et al., 1993) which iteratively updates parameters to maximize the likelihood of the data.
+    The drawback of maximum likelihood is obvious for phrase-b

@@ -1,0 +1,8 @@
+rrection to the parameter values at the point that a search error has been made, rather than allowing the parser to continue to the end of the sentence.
+    This is likely to lead to less noisy input to the parameter estimation algorithm; and early update will also improve efficiency, as at the early stages of training the parser will frequently give up after a small proportion of each sentence is processed.
+    It is more difficult to justify from a formal point of view, we leave this to future work.
+    Figure 5 shows the convergence of the training algorithm with neither of the two refinements presented; with just early update; and with both.
+    Early update makes Number of passes over training data an enormous difference in the quality of the resulting model; repeated use of examples gives a small improvement, mainly in recall.
+  
+  
+    The parsing models were trained and tested on treebanks from the Penn Wall St. Journal Treebank: sections 2-21 were kept training data; section 24 was held-out developme

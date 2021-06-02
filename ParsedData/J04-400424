@@ -1,0 +1,7 @@
+ith many of the discovered discrepancies between the thesis and the implementation, we determined the different unknown-word threshold through reverse engineering, in this case, through an analysis of the events output by Collins&#8217; trainer. and counted, the trainer selectively maps low-frequency words when deriving counts for the various context (back-off) levels of the parameters that make use of bilexical statistics.
+    If this mapping were performed uniformly, then it would be identical to mapping low-frequency words prior to top-level event counting; this is not the case, however.
+    We describe the details of this unknown-word mapping in Section 6.9.2.
+    While there is a negligible yet detrimental effect on overall parsing performance when one uses an unknown-word threshold of five instead of six, when this change is combined with the &#8220;obvious&#8221; method for handling unknown words, there is actually a minuscule improvement in overall parsing performance (see Table 5).
+  
+  
+    All para

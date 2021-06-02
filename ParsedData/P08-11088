@@ -1,0 +1,5 @@
+ We call this system MaltParser, or Malt for short, which is also the name of the freely available implementation.3 These models differ primarily with respect to three properties: inference, learning, and feature representation.
+    MaltParser uses an inference algorithm that greedily chooses the best parsing decision based on the current parser history whereas MSTParser uses exhaustive search algorithms over the space of all valid dependency graphs to find the graph that maximizes the score.
+    MaltParser trains a model to make a single classification decision (choose the next transition) whereas MSTParser trains a model to maximize the global score of correct graphs.
+    MaltParser can introduce a rich feature history based on previous parser decisions, whereas MSTParser is forced to restrict features to a single decision or a pair of nearby decisions in order to retain efficiency.
+    These differences highlight an inherent trade-off between global inference/learning and expressiveness of feature represen

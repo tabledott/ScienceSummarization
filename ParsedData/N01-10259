@@ -1,0 +1,12 @@
+urrent token is outside of any chunk.
+    Examples of these five representations are shown in Table 1.
+    If we have to identify the grammatical class of each chunk, we represent them by a pair of an I/O/B/E/S label and a class label.
+    For example, in IOB2 representation, B-VP label is given to a token which represents the beginning of a verb base phrase (VP).
+    Basically, SVMs are binary classifiers, thus we must extend SVMs to multi-class classifiers in order to classify three (B,I,O) or more (B,I,O,E,S) classes.
+    There are two popular methods to extend a binary classification task to that of classes.
+    One is one class vs. all others.
+    The idea is to build classifiers so as to separate one class from all others.
+    The other is pairwise classification.
+    The idea is to build classifiers considering all pairs of classes, and final decision is given by their weighted voting.
+    There are a number of other methods to extend SVMs to multiclass classifiers.
+    For example, Dietterich and Baki

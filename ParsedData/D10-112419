@@ -1,0 +1,7 @@
+tion In a more subtle version of the mixture-of-unigrams model, we model each author as an admixture of regions.
+    Thus, the latent variable attached to each author is no longer an index, but rather a vector on the simplex.
+    This model is equivalent to supervised latent Dirichlet allocation (Blei and McAuliffe, 2007): each topic is associated with equivariant Gaussian distributions over the latitude and longitude, and these topics must explain both the text and the observed geographical locations.
+    For unlabeled authors, we estimate latitude and longitude by estimating the topic proportions and then applying the learned geographical distributions.
+    This is a linear prediction f(2d; a) = (&#65533;zTd alat, 2Td alon) for an author&#8217;s topic proportions zd and topicgeography weights a E R2K.
+    Text Regression We perform linear regression to discriminatively learn the relationship between words and locations.
+    Using term frequency features xd for each author, we predict locations with wordgeog

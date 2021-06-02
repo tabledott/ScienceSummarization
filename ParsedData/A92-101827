@@ -1,0 +1,7 @@
+flection of some subset of its component tags.
+    For example, if an ambiguity class consisting of the open class tags is used for unknown words, one may encode the fact that most unknown words are nouns or proper nouns by biasing the initial probabilities in B.
+    Another biasing of starting values can arises from noting that some tags are unlikely to be followed by others.
+    For example, the lexical item &amp;quot;to&amp;quot; maps to an ambiguity class containing two tags, infinitive-marker and to-aspreposition, neither of which occurs in any other ambiguity class.
+    If nothing more were stated, the HMM would have two states which were indistinguishable.
+    This can be remedied by setting the initial transition probabilities from infinitive-marker to strongly favor transitions to such states as verb-uninflected and adverb.
+    Our implementation allows for two sorts of biasing of starting values: ambiguity classes can be annotated with favored tags; and states can be annotated with favored transitio

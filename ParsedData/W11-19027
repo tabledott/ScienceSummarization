@@ -1,0 +1,7 @@
+uster id, our model will attempt to resolve only m2 and m4.
+    Furthermore, we discard first mentions that start with indefinite pronouns (e.g., some, other) or indefinite articles (e.g., a, an) if they have no antecedents that have the exact same string extents.
+    For each selected mention mi, all previous mentions mi&#8722;1, ... , m1 become antecedent candidates.
+    All sieves traverse the candidate list until they find a coreferent antecedent according to their criteria or reach the end of the list.
+    Crucially, when comparing two mentions, our approach uses information from the entire clusters that contain these mentions instead of using just information local to the corresponding mentions.
+    Specifically, mentions in a cluster share their attributes (e.g., number, gender, animacy) between them so coreference decision are better informed.
+    For example, if a cluster contains two mentions: a group of students, which is singular, and five students, which is plural, the number attribute of the ent

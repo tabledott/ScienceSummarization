@@ -1,0 +1,10 @@
+ the need for trigrams.
+    As for the search problem, we briefly return to this point at the end of the paper.
+    Here we simply note that while search requires that a language model provide probabilities in a left to right fashion, one can easily imagine procedures where these probabilities are revised after new information is found (i.e., the head of the constituent).
+    Note that already our search procedure needs to revise previous most-likely-word hypotheses when the original guess makes the subsequent words very unlikely.
+    Revising the associated language-model probabilities complicates the search procedure, but not unimaginably so.
+    Thus it seems to us that it is worth finding out whether the superior parsing performance of immediate-head parsers translates into improved language models.
+  
+  
+    We have taken the immediate-head parser described in [3] as our starting point.
+    This parsing model assigns a probability to a parse 7 by a topdown process of considering each constituent c in 7 a

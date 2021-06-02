@@ -1,0 +1,8 @@
+koff graph (Figure 1) to depict this issue, which shows the various backoff paths from the all-parents case (top graph node) to the unigram (bottom graph node).
+    Many possible backoff paths could be taken.
+    For example, when all variables are words, the path A &#8722; B &#8722; E &#8722; H corresponds to trigram with standard oldest-first backoff order.
+    The path A &#8722; D &#8722; G &#8722; H is a reverse-time backoff model.
+    This can be seen as a generalization of lattice-based language modeling (Dupont and Rosenfeld, 1997) where factors consist of words and hierarchically derived word classes.
+    In our GPB procedure, either a single distinct path is chosen for each gram or multiple parallel paths are used simultaneously.
+    In either case, the set of backoff path(s) that are chosen are determined dynamically (at &#8220;run-time&#8221;) based on the current values of the variables.
+    For example, a path might consist of nodes A &#8722; (BCD) &#8722; (EF) &#8722; G where node A backs off in

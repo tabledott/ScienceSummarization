@@ -1,0 +1,8 @@
+ular level of granularity is desired.
+    Barzilay and Lee (2004) mask named entities in their content models, forcing their model to cluster topics about earthquakes in general, and not instances of specific earthquakes.
+    This solution is not a good fit for Twitter.
+    As explained in Section 2, Twitter&#8217;s noisiness resists off-the-shelf tools, such as named-entity recognizers and noun-phrase chunkers.
+    Furthermore, we would require a more drastic form of preprocessing in order to mask all topic words, and not just alter the topic granularity.
+    During development, we explored coarse methods to abstract away content while maintaining syntax, such as replacing tokens with either parts-of-speech or automaticallygenerated word clusters, but we found that these approaches degrade model performance.
+    Another approach to filtering out topic information leaves the data intact, but modifies the model to account for topic.
+    To that end, we adopt a Latent Dirichlet Allocation, or LDA, framework (Bl

@@ -1,0 +1,5 @@
+ns this core plus (i) the 26,440 test ANs, (ii) the 16 adjectives and 43 nouns that are components of these ANs and that are not in the core set, and (iii) 2,500 more ANs randomly sampled from those that are attested in the sample corpus, have a noun from the same list used for the test set ANs, and an adjective that occurred at least 5K times in the sample corpus.
+    In total, the extended vocabulary contains 40,999 entries: 8,043 nouns, 4,016 adjectives and 28,940 ANs.
+    Full co-occurrence matrix The 10K lemmas (nouns, adjectives or verbs) that co-occur with the largest number of items in the core vocabulary constitute the dimensions (columns) of our cooccurrence matrix.
+    Using the concatenated corpus, we extract sentence-internal co-occurrence counts of all the items in the extended vocabulary with the 10K dimension words.
+    We then transform the raw counts into Local Mutual Information (LMI) scores (LMI is an association measure that closely approximates the Log-Likelihood Ratio, see Evert (2005))

@@ -1,0 +1,9 @@
+   The final probability table P(l, p) is used to find one-to-one alignments given graphemes and phonemes.
+    We present a many-to-many alignment algorithm that overcomes the limitations of one-to-one aligners.
+    The training of the many-to-many aligner is an extension of the forward-backward training of a one-to-one stochastic transducer presented in (Ristad and Yianilos, 1998).
+    Partial counts are counts of all possible mappings from letters to phonemes that are collected in the -y table, while mapping probabilities (initially uniform) are maintained in the S table.
+    For each grapheme-/phoneme-sequence pair (x, y), the EM-many2many function (Algorithm 1) calls the Expectation-many2many function (Algorithm 2) to collect partial counts.
+    T and V are the lengths of x and y respectively.
+    The maxX and maxY variables are the maximum lengths of subsequences used in a single mapping operation for x and y.
+    (For the task at hand, we set both maxX and maxY to 2.)
+    The Maximization-step function 

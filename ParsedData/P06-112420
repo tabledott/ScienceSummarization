@@ -1,0 +1,10 @@
+ to the predictive probabilities given by interpolated Kneser-Ney.
+    Thus we can interpret interpolated Kneser-Ney as the approximate inference scheme (15,16) in the hierarchical Pitman-Yor language model.
+    Modified Kneser-Ney uses the same values for the counts as in (15,16), but uses a different valued discount for each value of cuw&#183; up to a maximum of c(max).
+    Since the discounts in a hierarchical Pitman-Yor language model are limited to between 0 and 1, we see that modified Kneser-Ney is not an approximation of the hierarchical PitmanYor language model.
+  
+  
+    We performed experiments on the hierarchical Pitman-Yor language model on a 16 million word corpus derived from APNews.
+    This is the same dataset as in (Bengio et al., 2003).
+    The training, validation and test sets consist of about 14 million, 1 million and 1 million words respectively, while the vocabulary size is 17964.
+    For trigrams with n = 3, we varied the training set size between approximately 2 million and 14 million

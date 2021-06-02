@@ -1,0 +1,10 @@
+aling the confidences to sum to one for each system over all words in between nodes and .
+    The system weights are also constrained to sum to one.
+    Equation 6 may be viewed as a log-linear sum of sentencelevel features.
+    The first feature is the sum of word log-posteriors, the second is the LM log-probability, the third is the log-NULL score and the last is the log-length score.
+    The last two terms are not completely independent but seem to help based on experimental results.
+    The number of paths through a confusion network grows exponentially with the number of nodes.
+    Therefore expanding a network with an -gram language model may result in huge lattices if is high.
+    Instead of high order -grams with heavy pruning, a bi-gram may first be used to expand the lattice.
+    After optimizing one set of weights for the expanded confusion network, a second set of weights for best list re-scoring with a higher order -gram model may be optimized.
+    On a test set, the first set of weights is used 

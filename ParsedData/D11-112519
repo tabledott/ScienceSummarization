@@ -1,0 +1,6 @@
+at is available with the Moses system (Koehn et al., 2007).
+    We ran MERT for up to 30 iterations, using k = 1500, and stopping early when 11This constitutes 6,723 features in principle (822 &#8722; 1 since &#8220;unaligned-unaligned&#8221; is not considered) but in practice far fewer co-occurrences were seen.
+    Table 3 shows the number of actual unigram word pair features observed in data. the accumulated k-best list does not change in an iteration.
+    In every tuning iteration we ran MERT once with weights initialized to the last iteration&#8217;s chosen weight set and 19 times with random weights, and chose the the best of the 20 ending points according to G on the development set.
+    The G we optimize is tokenized, lower-cased 4-gram BLEU (Papineni et al., 2002).
+    We for the most part follow the MIRA algorithm for machine translation as described by Chiang et al. (2009)12 but instead of using the 10-best of each of the best hw, hw +g, and hw-g, we use the 30-best according to hw.13 We use the sam

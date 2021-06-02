@@ -1,0 +1,9 @@
+ a long tradition in the field of statistics, refer to Efron and Tibshirani [1994] for a general introduction and Press et al. [2002] for a typical implementation.
+    Some recent papers on statistical machine translation hint on the use of bootstrap resampling for assessing statistical significance of test results [Germann, 2003; Och, 2003; Kumar and Byrne, 2004], but do not lay out their methodology.
+    The intuition behind bootstrap resampling goes as follows: Assume that we can only test translation performance on a test set of sentences.
+    These 300 sentences are randomly drawn from the world.
+    Given a test set, we can compute a BLEU score.
+    Then, we draw a second test set of 300 sentences, and compute its BLEU score.
+    If we do this repeatedly, we get a number of different BLEU scores, not unlike the BLEU scores displayed in Figure 3.
+    If we do this for a large number of test sets (say 1000 times), we can sort the corresponding BLEU scores.
+    If we drop the top 2.5% and bottom 2.5% of BL

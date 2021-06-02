@@ -1,0 +1,7 @@
+ arguments, so adding it to the argument kernel boosted the performance.
+    Setup F shows the performance of adding only dependency kernels to the argument kernel.
+    The performance is not as good as setup B, indicating that dependency information alone is not as crucial as the link sequence. setups.
+    Each setup adds one level of kernels to the previous one except setup F. Evaluated on the ACE training data with 5-fold cross-validation.
+    Fscores marked by * are significantly better than the previous setup (at 95% confidence level).
+    Another observation is that adding the bigram kernel in the presence of all other level of kernels improved both precision and recall, indicating that it helped in both correcting errors in other processing results and providing supplementary information missed by other levels of analysis.
+    In another experiment evaluated on the nwire data only (about half of the training data), adding the bigram kernel improved F-score 0.5% and this improvement is statistically sig

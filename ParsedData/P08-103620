@@ -1,0 +1,6 @@
+sentiment classifiers by assuming that paf,r,z is equal for all the local topics, which effectively ignores the topic model.
+    Then we use the estimated parameters within the topic model.9 Secondly, we modify the sampling algorithm.
+    The conditional probability used in sampling, expression (2), is proportional to the product of two factors.
+    The first factor, d,i &#65533;v,r,z, expresses a preference for topics likely from the co-occurrence information, whereas the second d,i one, pr,z, favors the choice of topics which are predictive of the observable sentiment ratings.
+    We used (pd,i r,z)1+0.sstq in the sampling distribution instead of pr,z, where t is the iteration number. q was chosen to be 4, though the quality of the topics seemed to be indistinguishable with any q between 3 and 10.
+    This can be thought of as having 1 + 0.95tq ratings instead of a single vector assigned to each review, i.e., focusing the model on prediction of the ratings rather than finding the topic labels which are good

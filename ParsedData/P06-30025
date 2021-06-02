@@ -1,0 +1,10 @@
+ partitionings yields a set of word forms belonging to the same derived syntactic category.
+    To gain on text coverage, we add ambiguous high-frequency words that were discarded for partitioning 1 to the lexicon.
+    Finally, we train a Viterbi tagger with this lexicon and augment it with an affix classifier for unknown words.
+    The resulting taggers are evaluated against outputs of supervised taggers for various languages.
+  
+  
+    The method employed here follows the coarse methodology as described in the introduction, but differs from other works in several respects.
+    Although we use 4-word context windows and the top frequency words as features (as in Sch&#252;tze 1995), we transform the cosine similarity values between the vectors of our target words into a graph representation.
+    Additionally, we provide a methdology to identify and incorporate POS-ambiguous words as well as low-frequency words into the lexicon.
+    Let us consider a weighted, undirected graph G(V,E) (v&#8712;V vertices, (vi,v

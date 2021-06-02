@@ -1,0 +1,10 @@
+DEM_NP, while the rest are binary in nature.
+    All the unary features score an F-measure of 0.
+    The binary features with 0 F-measure are DIST, PROPER_NAME, GENDER, SEMCLASS, and NUMBER.
+    The ALIAS, APPOSITIVE, and STR_MATCH features give nonzero F-measure.
+    All these features give rather high precision scores (&gt; 80% for ALIAS, &gt; 65% for STR_MATCH, and &gt; 57% for APPOSITIVE).
+    Since these features are highly informative, we were curious to see how much they contribute to our MUC-6 and MUC-7 results of 62.6% and 60.4%, respectively.
+    Systems ALIAS_STR and ALIAS_STR_APPOS in Table 3 and Table 4 show the results of the experiment.
+    In terms of absolute Fmeasure, the difference between using these three features and using all features is 2.3% for MUC-6 and 1% for MUC-7; in other words, the other nine features contribute just 2.3% and 1% more for each of the MUC years.
+    These nine features will be the first ones to be considered for pruning away by the C5 algorithm.
+    For example, f

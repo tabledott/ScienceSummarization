@@ -1,0 +1,7 @@
+ures listed in Table 6 (CRF-Lex).
+    The external lexicons we used for the lexicon-based features come from various sources including named entities collected from Wikipedia and the Chinese section of the UN website, named entities collected by Harbin Institute of Technology, the ADSO dictionary, EMM News Explorer, Online Chinese Tools, Online Dictionary from Peking University and HowNet.
+    There are 423,224 distinct entries in all the external lexicons.
+    The MT lexicon consistency of CRF-Lex in Table 4 shows that the MT training lexicon size has been reduced by 29.5% and the MT test data OOV rate is reduced by 34.1%.
+    Named entities are an important source for OOV words, and in particular are ones which it is bad to break into pieces (particularly for foreign names).
+    Therefore, we use the proper noun (NR) part-ofspeech tag information from CTB to extend the label sets of our CRF model from 2 to 4 ({beginning of a word, continuation of a word} x {NR, not NR}).
+    This is similar to the &#8220;al

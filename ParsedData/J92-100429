@@ -1,0 +1,7 @@
+ber for the noun &amp;quot;fish.&amp;quot; Furthermore, during the bottom-up cycle, the new value can be the special variable top-down-setting, i.e., the value for that feature that currently occupies the slot in the parse node in question.
+    This has the effect of disconnecting the node from its children, with respect to the feature in question.
+    The logic function is one of AND, OR, or SET, and the cycle is either top-down or bottom-up.
+    A parse node has jurisdiction over its own slots only during the bottom-up cycle.
+    During the top-down cycle, its feature value modifications are manifested only in its descendants.
+    The node retains the values for the features that its parent delivered, and may use these for unifications prior to passing information on to its right siblings.
+    This additional complexity was felt necessary to handle number agreement in questions of the form &amp;quot;Do John and Mary eat out a lot?&amp;quot; Here, the auxiliary verb &amp;quot;do&amp;quot; sets the number to 

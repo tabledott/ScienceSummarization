@@ -1,0 +1,7 @@
+pho-syntactic features.
+    This sieve marks two nominal mentions as coreferent if they are linked by a WordNet lexical chain that traverses hypernymy or synonymy relations.
+    We use all synsets for each mention, but restrict it to mentions that are at most three sentences apart, and lexical chains of length at most four.
+    This sieve correctly links Britain with country, and plane with aircraft.
+    To increase the precision of the above two sieves, we use additional constraints before two mentions can match: attribute agreement (number, gender, animacy, named entity labels), no i-within-i, no location or numeric mismatches (as in Section 2.3.1), and we do not use the abstract entity synset in WordNet, except in chains that include &#8216;organization&#8217;.
+    This sieve matches speakers to compatible pronouns, using shallow discourse understanding to handle quotations and conversation transcripts.
+    Although more complex discourse constraints have been proposed, it has been difficult to show improv

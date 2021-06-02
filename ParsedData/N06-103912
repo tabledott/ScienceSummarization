@@ -1,0 +1,10 @@
+s from unannotated news articles is shown in Figure 4.
+    Theoretically this could be a straight pipeline, but due to the nature of the implementation we process some stages separately and combine them in the later stage.
+    In the following subsection, we explain each component.
+    First of all, we need a lot of news articles from multiple news sources.
+    We created a simple web crawler that extract the main texts from web pages.
+    We observed that the crawler can correctly take the main texts from about 90% of the pages from each news site.
+    We ran the crawler every day on several news sites.
+    Then we applied a simple clustering algorithm to the obtained articles in order to find a set of articles that talk about exactly the same news and form a basic cluster.
+    We eliminate stop words and stem all the other words, then compute the similarity between two articles by using a bag-of-words approach.
+    In news articles, a sentence that appears in the beginning of an article is usually more impo

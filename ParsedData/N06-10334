@@ -1,0 +1,10 @@
+r translation quality (Chiang, 2005).
+    To do bigram-integrated decoding, we need to augment each chart item (X, i, j) with two target-language boundary words u and v to produce a bigram-item like u X v \ , following the dynamic program(i j ming algorithm of Wu (1996).
+    Now the two binarizations have very different effects.
+    In the first case, we first combine NP with PP: where p and q are the scores of antecedent items.
+    This situation is unpleasant because in the targetlanguage NP and PP are not contiguous so we cannot apply language model scoring when we build the VNP-PP item.
+    Instead, we have to maintain all four boundary words (rather than two) and postpone the language model scoring till the next step where VNP-PP is combined with C held &#183;&#183;&#183; meeting l /I to form an S item.
+  
+  
+    We call this binarization method monolingual binarization since it works only on the source-language projection of the rule without respecting the constraints from the other side.
+    This schem

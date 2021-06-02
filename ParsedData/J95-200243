@@ -1,0 +1,9 @@
+he same 0(n3) time and space requirements as the Inside/Outside (I/O) and LRI algorithms.
+    The completion step again dominates the computation, which has to compute probabilities for at most 0(n3) states.
+    By organizing summations (11) and (12) so that 7&amp;quot; are first summed by LHS nonterminals, the entire completion operation can be accomplished in 0(n3).
+    The one-time cost for the matrix inversions to compute the left-corner and unit production relation matrices is also 0(n3).
+  
+  
+    This section discusses extensions to the Earley algorithm that go beyond simple parsing and the computation of prefix and string probabilities.
+    These extensions are all quite straightforward and well supported by the original Earley chart structure, which leads us to view them as part of a single, unified algorithm for solving the tasks mentioned in the introduction.
+    A Viterbi parse for a string x, in a grammar G, is a left-most derivation that assigns maximal probability to x, among all possible deriv

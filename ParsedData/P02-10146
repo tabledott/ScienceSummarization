@@ -1,0 +1,6 @@
+rom right to left.
+    For each pair, a test instance is created as during training and is presented to the coreference classifier, which returns a number between 0 and 1 that indicates the likelihood that the two NPs are coreferent.3 NP pairs with class values above 0.5 are considered COREFERENT; otherwise the pair is considered NOT COREFERENT.
+    The process terminates as soon as an antecedent is found for NP&#9988; or the beginning of the text is reached.
+    We evaluate the Duplicated Soon Baseline system using the standard MUC-6 (1995) and MUC7 (1998) coreference corpora, training the coreference classifier on the 30 &#8220;dry run&#8221; texts, and applying the coreference resolution algorithm on the 20&#8211;30 &#8220;formal evaluation&#8221; texts.
+    The MUC-6 corpus produces a training set of 26455 instances (5.4% positive) from 4381 NPs and a test set of 28443 instances (5.2% positive) from 4565 NPs.
+    For the MUC-7 corpus, we obtain a training set of 35895 instances (4.4% positive) from 5270 N

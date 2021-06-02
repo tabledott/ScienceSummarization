@@ -1,0 +1,7 @@
+resting to note that most methods achieve the bulk of this improvement on the Medium feature set.8 This indicates that MERT begins to show some problems even in an 18-feature setting, which can be mitigated through the use of Lattice MERT.
+    When examining score differentials, recall that the reported scores average over multiple test sets and sub-sampled tuning runs.
+    Using Small features, all of the tested methods are mostly indistinguishable, but as we move to Medium and Big, Batch Lattice MIRA emerges as our method of choice.
+    It is the top scoring system in all Medium settings, and in two of three Big settings (in Big Zh-En, the SVM comes first, with batch lattice MIRA placing second).
+    However, all of the MIRA variants perform similarly, though our implementation of online MIRA is an order of magnitude slower, mostly due to its small number of shards.
+    It is interesting that our batch lattice variant consistently outperforms online MIRA.
+    We attribute this to our parallelization strateg

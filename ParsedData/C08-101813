@@ -1,0 +1,10 @@
+e tree, S(y) = x, and a target tree, T (y), 4and r is a gram mar rule.
+			The ? function scores the derivation and 4 Equation 1 optimises over derivations rather than target trees to allow tractable inference.
+			139 is defined in (2) as a linear function over the rules used.
+			Each rule?s score is an inner product between its feature vector, ?(r,y S), and the model parame ters, ?.
+			The feature functions are set by hand, while the model parameters are learned in training.
+			The maximisation problem in (1) can be solved efficiently using a dynamic program.
+			Derivations will have common sub-structures whenever they transduce the same source sub-tree into a target sub-tree.
+			This is captured in a chart, leading to an efficient bottom-up algorithm.
+			The asymptotic time complexity of this search is O(SR) where S is the number of source nodes andR is the number of rules matching a given node.
+			Training The model is trained using SVM struct , a large margin method for structured output problems (Joachims

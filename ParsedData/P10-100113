@@ -1,0 +1,6 @@
+hat the sibling g-spans are crucial: they allow grand-sibling parts (g, h, m, s) to be read off of Figure 6(b), while simultaneously propagating grandparent indices to smaller g-spans.
+    Like Model 0, Model 1 can be parsed via adaptations of standard chart-parsing techniques; we omit the details for brevity.
+    Despite the move to third-order parts, each derivation is still defined by a g-span and a split point, so that parsing requires only O(n4) time and O(n3) space.
+    Higher-order parsing algorithms have been proposed which extend the second-order sibling factorization to parts containing multiple siblings (McDonald and Pereira, 2006, also see Section 6 for discussion).
+    In this section, we show how our g-span-based techniques can be combined with a third-order sibling parser, resulting in a parser that captures both grand-sibling parts and tri-sibling parts&#8212;4-tuples of indices (h, m, s, t) such that both (h, m, s) and (h, s, t) are sibling parts.
+    In order to parse this factorization, we 

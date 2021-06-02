@@ -1,0 +1,10 @@
+ (7), and (8) are the integral constraints on these binary variables.
+    There are several advantages of representing the problem in an LP formulation.
+    First of all, linear (in)equalities are fairly general and are able to represent many types of constraints (e.g., the decision time constraint in the experiment in Sec.
+    4).
+    More importantly, an ILP problem at this scale can be solved very quickly using current commercial LP/ILP packages, like (Xpress-MP, 2003) or (CPLEX, 2003).
+    We introduce the general strategies of solving an ILP problem here.
+    To solve an ILP problem, a natural idea is to relax the integral constraints.
+    That is, replacing (6), (7), and (8) with: If LPR returns an integer solution, then it is also the optimal solution to the ILP problem.
+    If the solution is non integer, then at least it gives a lower bound to the value of the cost function, which can be used in modifying the problem and getting closer to deriving an optimal integer solution.
+    A direct way to hand

@@ -1,0 +1,11 @@
+ts strength of prediction - the weights are trained to maximise the likelihood of training data.
+    For example (P = of) might have a strong weight for noun attachment, while (V = buy, P = for) would have a strong weight for verb attachment.
+    [RRR94] also allow the model to look at class information, this time the classes were learned automatically froin a corpus.
+    Results of 77.7% (words only) and 81.6% (words and classes) are reported.
+    Crucially they ignore low-count events in training data by imposing a frequency cut-off somewhere between 3 and 5.
+  
+  
+    [KATZ87] describes backed-off n-gram word models for speech recognition.
+    There the task is to estimate the probability of the next word in a text given the (n-1) preceding words.
+    The NILE estimate of this probability would be: But again the denominator f(wi, w2....wn_1) will frequently be zero, especially for large n. The backed-off estimate is a method of combating the sparse data problem.
+    It is defined recursively as follows: El

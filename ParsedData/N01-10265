@@ -1,0 +1,6 @@
+d (uncorrected) data achieves only 82% when evaluated on a held-out test set.
+    More highly lexicalized learning algorithms exhibit even greater potential for overmodeling the specific projection errors of this data.
+    Thus our research has focused on noise-robust techniques for distilling a conservative but effective tagger from this challenging raw projection data.
+    To do so, we (a) downweight or exclude training data segments identified as poorly aligned or likely noise (b) use a conservative bigram learning algorithm, and (c) train the lexical prior and tag-sequence models separately using aggressive generalization techniques.
+    In a standard bigram tagging model, one selects a tag sequence T for a word sequence W by: argmax P(TIW) = P(WIT)P(T) where using standard independence assumptions.
+    Section 4.2.2 will discuss the estimation of P(tilti-i)&#8226; The following section describes the estimation of P(tiiwi), which using Bayes rule and direct (relatively noise-free) measurement of P(w) from

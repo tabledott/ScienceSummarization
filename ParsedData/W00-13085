@@ -1,0 +1,5 @@
+,t) , the joint distribution of contexts and tags, by the product of r, (h), the empirical distribution of histories h, and the conditional distribution p(t I h): p(h,t) p(h) p(t I h) .
+    Then for the example above, our constraints would be the following, for j e {1,2}: This approximation is used to enable efficient computation.
+    The expectation for a feature f is: where H is the space of possible contexts h when predicting a part of speech tag t. Since the contexts contain sequences of words and tags and other information, the space H is huge.
+    But using this approximation, we can instead sum just over the smaller space of observed contexts X in the training sample, because the empirical prior i5(h) is zero for unseen contexts h: The model that is a solution to this constrained optimization task is an exponential (or equivalently, loglinear) model with the parametric form: where the denominator is a normalizing term (sometimes referred to as the partition function).
+    The parameters Xi correspond t

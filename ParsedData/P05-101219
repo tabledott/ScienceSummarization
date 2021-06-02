@@ -1,0 +1,10 @@
+ion sections of this data.
+    The number of sentences in this data set is nearly twice that of the English treebank, leading to a very large number of features &#8212; 13, 450, 672.
+    But again, each instance uses just a handful of these features.
+    For POS tags we used the automatically generated tags in the data set.
+    Though we made no language specific model changes, we did need to make some data specific changes.
+    In particular, we used the method of Collins et al. (1999) to simplify part-of-speech tags since the rich tags used by Czech would have led to a large but rarely seen set of POS features.
+    The model based on MIRA also performs well on Czech, again slightly outperforming averaged perceptron.
+    Unfortunately, we do not know of any other parsing systems tested on the same data set.
+    The Czech parser of Collins et al. (1999) was run on a different data set and most other dependency parsers are evaluated using English.
+    Learning a model from the Czech training data is somewhat p

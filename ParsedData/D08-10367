@@ -1,0 +1,8 @@
+estimator should prove to be superior.
+    However the two point-wise Gibbs samplers investigated here, which resample the label of each word conditioned on the labels of its neighbours (amongst other things) only require O(m) steps per sample (where m is the number of HMM states), while EM, VB and the sentence-blocked Gibbs samplers require O(m2) steps per sample.
+    Thus for HMMs with many states it is possible to perform one or two orders of magnitude more iterations of the point-wise Gibbs samplers in the same run-time as the other samplers, so it is plausible that they would yield better results.
+  
+  
+    There are a number of excellent textbook presentations of Hidden Markov Models (Jelinek, 1997; Manning and Sch&#168;utze, 1999), so we do not present them in detail here.
+    Conceptually, a Hidden Markov Model uses a Markov model to generate the sequence of states t = (t1,... , tn) (which will be interpreted as POS tags), and then generates each word wi conditioned on the corresponding state ti.
+    

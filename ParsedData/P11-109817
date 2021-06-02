@@ -1,0 +1,11 @@
+ approaches.
+    However, 2We use the Stanford Parser at nlp.stanford.edu/software coreference and SPs measure different types of similarity.
+    Coreference is a looser narrative similarity (bombings cause injuries), while SPs capture synonymy (plant and place have similar arguments).
+    We observed that many narrative relations are not synonymous, and vice versa.
+    We thus take the maximum of either cosine score as our final similarity metric between two relations.
+    We then back off to the average of the two cosine scores if the max is not confident (less than 0.7); the average penalizes the pair.
+    We chose the value of 0.7 from a grid search to optimize extraction results on the training set.
+    We use agglomerative clustering with the above pairwise similarity metric.
+    Cluster similarity is the average link score over all new links crossing two clusters.
+    We include the following sparsity penalty r(ca, cb) if there are too few links between clusters ca and cb.
+    This penalizes clusters f

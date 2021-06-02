@@ -1,0 +1,10 @@
+ces x1, ... , xi&#8722;1.
+    When making the prediction for token instance xi, we record the label assignment distribution for all token instances for the same token type in the previous 1000 words.
+    That is, if the token instance is &#8220;Australia&#8221;, and in the previous 1000 tokens, the token type &#8220;Australia&#8221; was twice assigned the label L-ORG and three times the label U-LOC, then the prediction history feature will be: (L &#8722; ORG : 25; U &#8722; LOC: 35).
+    Table 3 summarizes the results.
+    Surprisingly, no single technique outperformed the others on all datasets.
+    The extended prediction history method was the best on CoNLL03 data and MUC7 test set.
+    Context aggregation was the best method for MUC7 development set and two-stage prediction was the best for Webpages.
+    Non-local features proved less effective for MUC7 test set and the Webpages.
+    Since the named entities in Webpages have less context, this result is expected for the Webpages.
+    However, we are unsur

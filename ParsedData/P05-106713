@@ -1,0 +1,13 @@
+   Although the training corpus isn&#8217;t large, the fact that we only have a handful of parameters to fit eased the problem.
+    It is worth noting that the set of derived parallel dependency Elementary Trees is not a full-fledged SDIG yet.
+    Many features in the SDIG formalism such as arguments, head percolation, etc. are not yet filled.
+    We nevertheless use this derived grammar as a Mini-SDIG, assuming the unfilled features as empty by default.
+    A full-fledged SDIG remains a goal for future research.
+  
+  
+    As discussed before (see Figure 1 and 2), the architecture of our syntax based statistical MT system is illustrated in Figure 5.
+    Note that this is a nondeterministic process.
+    The input sentence is first parsed using an automatic parser and a dependency tree is derived.
+    The rest of the pipeline can be viewed as a stochastic tree transducer.
+    The MT decoding starts first by decomposing the input dependency tree in to elementary trees.
+    Several different results of the decomp

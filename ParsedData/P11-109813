@@ -1,0 +1,10 @@
+roles in each cluster.
+    Our solution is to assemble a larger IRcorpus of documents for each cluster.
+    For example, MUC-4 labels 83 documents with Kidnap, but our learned cluster (kidnap, abduct, release, ...) retrieved 3954 documents from a general corpus.
+    We use the Associated Press and New York Times sections of the Gigaword Corpus (Graff, 2002) as our general corpus.
+    These sections include approximately 3.5 million news articles spanning 12 years.
+    Our retrieval algorithm retrieves documents that score highly with a cluster&#8217;s tokens.
+    The document score is defined by two common metrics: word match, and word coverage.
+    A document&#8217;s match score is defined as the average number of times the words in cluster c appear in document d: We define word coverage as the number of seen cluster words.
+    Coverage penalizes documents that score highly by repeating a single cluster word a lot.
+    We only score a document if its coverage, cvg(d, c), is at least 3 words (or less for tiny

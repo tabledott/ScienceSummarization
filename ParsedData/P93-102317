@@ -1,0 +1,5 @@
+on.
+    As a result we can make some inferences with very high confidence, but we cannot make very many of them.
+    In stage three we combine the values produced by the various similarity modules in stage two using a pre-specified algorithm.
+    The output of this stage is a single table of dissimilarity values (as required by the next stage) having one entry for each adjective pair.
+    Currently we have only the two similarity modules described in the previous subsection, so we employ the following simple algorithm: for any pair of adjectives (x,y) do if the adjective-adjective module has no opinion on (x,y) then dissimilarity = 1 - (the similarity reported by the adjective-noun module) else dissimilarity = some constant As can be easily seen, the algorithm has complete confidence in the results of the adjective-adjective module whenever that module has an opinion; when it does not, the algorithm uses the similarity value produced by the adjective-noun module, after a simple linear transformation is applie

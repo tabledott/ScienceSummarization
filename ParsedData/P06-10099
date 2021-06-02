@@ -1,0 +1,7 @@
+ rather than the index itself, which determines whether the feature is active, and thus the sparsity of the index label set is not an issue.
+    One of the main advantages of using a conditional model is the ability to explore a diverse range of features engineered for a specific task.
+    In our CRF model we employ two main types of features: those defined on a candidate aligned pair of words; and Markov features defined on the alignment sequence predicted by the model.
+    Dice and Model 1 As we have access to only a small amount of word aligned data we wish to be able to incorporate information about word association from any sentence aligned data available.
+    A common measure of word association is the Dice coefficient (Dice, 1945): where CE and CF are counts of the occurrences of the words e and f in the corpus, while CEF is their co-occurrence count.
+    We treat these Dice values as translation scores: a high (low) value incidates that the word pair is a good (poor) candidate translation.
+    However

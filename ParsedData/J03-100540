@@ -1,0 +1,6 @@
+tation described here is similar to that used in beam search speech recognition systems, as presented in Ney et al. (1992).
+    The similarities are given mainly in the following: input sentences are processed mainly monotonically from left to right.
+    The algorithm works cardinality-synchronously, meaning that all the hypotheses that are processed cover subsets of source sentence positions of equal cardinality c. Table 4 shows a two-list implementation of the search algorithm given in Table 2 in which the beam pruning is included.
+    The two lists are referred to as S and Snew: S is the list of hypotheses that are currently expanded, and Snew is the list of newly Two-list implementation of a DP-based search algorithm for statistical MT. input: source string f1 &#183; &#183; &#183; fj &#183; &#183; &#183; fJ initial hypothesis lists: S = {($, $, {0}, 0)} generated hypotheses.
+    The search procedure processes subsets of covered source sentence positions of increasing cardinality.
+    The search starts wit

@@ -1,0 +1,13 @@
+ations that have the potential to be the next best derivation in the list.
+			If we picture the input as an |e|-dimensional space, C contains those derivations that 2Actually, we do not need to sort all k|e| elements in order to extract the top k among them; there is an efficient algorithm (Cormen et al, 2001) that can select the kth best element from the k|e| elements in time O(k|e|).
+			So we can improve the overhead to O(ka).have not yet been included in pe, but are on the bound ary with those which have.
+			It is initialized to {?e, 1?}.
+			At each step, we extract the best derivation from C?call it ?e, j??and append it to pe.
+			Then ?e, j?
+			must be replaced in C by its neighbors, {?e, j + bl?
+			| 1 ? l ? |e|} (see Figure 4.2 for an illustration).
+			We implement C as apriority queue (Cormen et al, 2001) to make the extrac tion of its best derivation efficient.
+			At each iteration, there are one E??????-M??
+			and |e| I?????
+			operations.
+			If we use a binary-heap implementation for priority queues

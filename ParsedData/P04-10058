@@ -1,0 +1,8 @@
+ a TAG.
+    One way to guarantee this is to use a finite state language model; this motivates our use of a bigram language model.
+    On the other hand, it seems desirable to use a language model that is sensitive to more global properties of the sentence, and we do this by reranking the initial analysis, replacing the bigram language model with a syntactic parser based model.
+    We do not need to intersect this parser based language model with our TAG channel model since we evaluate each analysis separately.
+    The TAG channel model defines a stochastic mapping of source sentences X into observed sentences Y .
+    There are several ways to define transducers using TAGs such as Shieber and Schabes (1990), but the following simple method, inspired by finite-state transducers, suffices for the application here.
+    The TAG defines a language whose vocabulary is the set of pairs (EU101)x(EU101), where E is the vocabulary of the observed sentences Y .
+    A string Z in this language can be interpreted as a pair

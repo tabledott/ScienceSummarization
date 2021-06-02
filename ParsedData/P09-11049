@@ -1,0 +1,12 @@
+herwise.
+    All null potentials (si, and s&#65533;j) are set to 0.
+    A max-matching under these potentials is generally a minimal loss alignment in the family.
+    The oracle AER computed in this was is 10.1 for A1-1 and 10.2 for AITG.
+    The ABITG alignment family has an oracle AER of 1.2.
+    These basic experiments show that AITG outperforms A1-1 for heuristic alignments, and ABITG provide a much closer fit to true Chinese-English alignments than A1-1.
+  
+  
+    In this and the next section, we discuss learning alignment potentials.
+    As input, we have a training set D = (x1, a&#8727;1), ... , (x, a&#8727;&#65533;) of hand-aligned data, where x refers to a sentence pair.
+    We will assume the score of a alignment is given as a linear function of a feature vector &#966;(x, a).
+    We will further assume the feature representation of an alignment, &#966;(x, a) decomposes as in Equation (1), In the framework of loss-augmented margin learning, we seek a w such that w &#183; &#966;(x, a&#8727;) is larger

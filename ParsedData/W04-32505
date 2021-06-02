@@ -1,0 +1,9 @@
+ other property worth noting is the strong influence of the brevity penalty.
+    Since BLEU is a precision based method, the brevity penalty assures that a system does not only translate fragments of the test set of which it is confident, resulting in high precision.
+    Is has become common practice to include a word penalty component in statistical machine translation system that gives bias to either longer or shorter output.
+    This is especially relevant for the BLEU score that harshly penalizes translation output that is too short.
+    To illustrate this point, see Figure 1.
+    BLEU scores for both Spanish and Portuguese system drop off when a large word penalty is introduced into the translation model, forcing shorter output.
+    This is not the case for a similar metric, GTM, an n-gram precision/recall metric proposed by Melamed et al. [2003] that does not have an explicit brevity penalty.
+    The BLEU metric also works with multiple reference translations.
+    However, we often do not have the luxur

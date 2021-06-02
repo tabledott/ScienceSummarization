@@ -1,0 +1,7 @@
+ticular candidate parse, which carries with it the entire rooted derivation to that point; in a sense, the left-hand side of the rule is annotated with the entire left context, and the rule probabilities can be conditioned on any aspect of this derivation.
+    We do not use the entire left context to condition the rule probabilities, but rather &amp;quot;pick-and-choose&amp;quot; which events in the left context we would like to condition on.
+    One can think of the conditioning events as functions, which take the partial tree structure as an argument and return a value, upon which the rule probability can be conditioned.
+    Each of these functions is an algorithm for walking the provided tree and returning a value.
+    For example, suppose that we want to condition the probability of the rule A &#8212;&gt; a.
+    We might write a function that takes the partial tree, finds the parent of the left-hand side of the rule and returns its node label.
+    If the left-hand side has no parent (i.e., it is at the ro

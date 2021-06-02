@@ -1,0 +1,10 @@
+nment.
+    A, which is more accurate than I.
+    To achieve this goal, we first use I to determine which connections will be considered for A.
+    Let coni,i denote a connection between position j in the French corpus and position i in the English corpus (the super-scripts in cof e are omitted, as there is no notion of sentences).
+    We assume that coni,i is a possible connection only if i falls within a limited window which is centered around 1(j), such that: where w is a predetermined parameter specifying the size of the window (we typically set w to 20 words).
+    Connections that fall outside this window are assumed to have a zero probability.
+    This assumption replaces the assumption of Brown et al. that connections which cross boundaries of aligned sentences have a zero probability.
+    In this new framework, equation 3 becomes: where CONL, and CON.
+    ,e are taken from the set of possible connections, as defined by (8).
+    Turning to Model 2, the parameters of the form a(i1j,m,l) are somewhat more

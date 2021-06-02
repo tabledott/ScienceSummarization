@@ -1,0 +1,7 @@
+ments not reported here, we found that taking into account the brevity penalty at the sentence level can cause large fluctuations in lattice MBR performance on different test sets.
+    We therefore treat only cns as variables.
+    The corpus log BLEU gain is approximated by a first-order vector Taylor series expansion about the initial values of cn. where the partial derivatives are given by where each &#916;cn = c0n &#8722; cn counts the statistic in the sentence of interest, rather than the corpus as a whole.
+    This score is therefore a linear function in counts of words &#916;c0 and n-gram matches &#916;cn.
+    Our approach ignores the count clipping present in the exact BLEU score where a correct n-gram present once in the reference but several times in the hypothesis will be counted only once as correct.
+    Such an approach is also followed in Dreyer et al. (2007).
+    Using the above first-order approximation to gain in log corpus BLEU, Equation 9 implies that &#952;0, &#952;w from Section 3 would ha

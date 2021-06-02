@@ -1,0 +1,9 @@
+ed as the choice of the largest number of classifiers is picked as the answer, with some method being specified for breaking ties.
+    We tried simple voting, using the Maximum Entropy, Transformation-Based and Trigram taggers.
+    In case of ties (all taggers disagree), the Maximum Entropy tagger output is chosen, since this tagger had the highest overall accuracy (this was determined by using a subset of the training set, not by using the test set).
+    The results are shown in Figure 5.
+    Simple voting gives a net reduction in error of 6.9% over the best of the three taggers.
+    This difference is significant at a &gt;99% confidence level.
+    Next, we try to exploit the idiosyncracies of the different taggers.
+    Although the Maximum Entropy, Transformation-based and Trigram taggers use essentially the same types of contextual information for disambiguation, this information is exploited differently in each case.
+    Our hope is that there is some regularity to these differences, which would then allo

@@ -1,0 +1,9 @@
+ compared using BLEU!
+    Implementing an algorithm for optimizing linear weights according to BLEU is high on our list of priorities.
+    The preceding discussion implicitly assumes a single set of counts c(&#732;s, &#732;t) from which conditional distributions are derived.
+    But, as phrases of different lengths are likely to have different statistical properties, it might be worthwhile to break down the global phrasetable into separate phrasetables for each value of |&#732;t |for the purposes of smoothing.
+    Any similar strategy that does not split up 1&#732;s|c(&#732;s, &#732;t) &gt; 01 for any fixed t&#732; can be applied to any smoothing scheme.
+    This is another idea we are eager to try soon.
+    We now describe the individual smoothing schemes we have implemented.
+    Four of them are black-box techniques: Good-Turing and three fixed-discount techniques (fixed-discount interpolated with unigram distribution, Kneser-Ney fixed-discount, and modified Kneser-Ney fixeddiscount).
+    Two of them are gl

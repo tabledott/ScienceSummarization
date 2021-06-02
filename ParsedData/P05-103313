@@ -1,0 +1,8 @@
+(or n best derivations, with little overhead) that generates (f, e) for some e. Note that we find the English yield of the highest-probability single derivation and not necessarily the highest-probability e, which would require a more expensive summation over derivations.
+    We prune the search space in several ways.
+    First, an item that has a score worse than /3 times the best score in the same cell is discarded; second, an item that is worse than the bth best item in the same cell is discarded.
+    Each cell contains all the items standing for X spanning fi/.
+    We choose b and /3 to balance speed and performance on our development set.
+    For our experiments, we set b = 40,/3 = 10&#8722;1 for X cells, and b = 15,/3 = 10&#8722;1 for S cells.
+    We also prune rules that have the same French side (b = 100).
+    The parser only operates on the French-side grammar; the English-side grammar affects parsing only by increasing the effective grammar size, because there may be multiple rules with the same Fre

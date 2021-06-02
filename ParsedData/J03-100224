@@ -1,0 +1,7 @@
+g model Model 6: Here, the interpolation parameter &#945; is employed to weigh Model 4 relative to the hidden Markov alignment model.
+    In our experiments, we use Model 4 instead of Model 5, as it is significantly more efficient in training and obtains better results.
+    In general, we can perform a log-linear combination of several models pk(f,a  |e), k=1,...,Kby The interpolation parameters &#945;k are determined in such a way that the alignment quality on held-out data is optimized.
+    We use a log-linear combination instead of the simpler linear combination because the values of Pr(f,a  |e) typically differ by orders of magnitude for HMM and Model 4.
+    In such a case, we expect the log-linear combination to be better than a linear combination.
+    5, it is straightforward to extend the alignment parameters to include a dependence on the word classes of the surrounding words (Och and Ney 2000).
+    In the hidden Markov alignment model, we allow for a dependence of the position aj on the class of the 

@@ -1,0 +1,11 @@
+r categories as well).
+    To alleviate this problem, we modified the scoring function to compute the average logarithm of the number of category members extracted by each pattern.
+    The logarithm reduces the influence of any single pattern.
+    We will refer to this scoring metric as the AvgLog function, which is defined below.
+    Since log2(1) = 0, we add one to each frequency count so that patterns which extract a single category member contribute a positive value.
+    Using this scoring metric, all words in the candidate word pool are scored and the top five words are added to the semantic lexicon.
+    The pattern pool and the candidate word pool are then emptied, and the bootstrapping process starts over again.
+  
+  
+    Several weakly supervised learning algorithms have previously been developed to generate semantic lexicons from text corpora.
+    Riloff and Shepherd (Riloff and Shepherd, 1997) developed a bootstrapping algorithm that exploits lexical co-occurrence statistics, and Roark and Charniak 

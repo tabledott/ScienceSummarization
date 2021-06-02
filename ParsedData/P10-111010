@@ -1,0 +1,9 @@
+es get merged, their predictor states get combined.
+    In a reduction step, state q tries to combine with every predictor state p &#8712; &#960;(q), and the resulting state r inherits the predictor states set from p, i.e., &#960;(r) = &#960;(p).
+    Interestingly, when two equivalent reduced states get merged, we can prove (by induction) that their predictor states are identical (proof omitted).
+    Figure 3 shows the new deductive system with dynamic programming and GSS.
+    A new state has the form where [i..j] is the span of the top tree s0, and sd..s1 are merely &#8220;left-contexts&#8221;.
+    It can be combined with some predictor state p spanning [k..i] &#8242; &#8242; &#8467;&#8242; h k, i, sd...s0i to form a larger state spanning [k..j], with the resulting top tree being either s1xs0 or s1ys0.
+    This style resembles CKY and Earley parsers.
+    In fact, the chart in Earley and other agenda-based parsers is indeed a GSS when viewed left-to-right.
+    In these parsers, when a state is popped up from 

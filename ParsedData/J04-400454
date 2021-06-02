@@ -1,0 +1,6 @@
+rvives.
+    Chart item equality is closely tied to the generative parameters used to construct theories: We want to treat two chart items as unequal if they represent derivation forests that would be considered unequal according to the output elements and conditioning contexts of the parameters used to generate them, subject to the independence assumptions of the model.
+    For example, for two chart items to be considered equal, they must have the same label (the label of the root of their respective derivation forests&#8217; subtrees), the same headword and tag, and the same left and right subcat.
+    They must also have the same head label (that is, label of the head-child).
+    If a chart item&#8217;s root label is an NP node, its head label is most often an NPB node, given the &#8220;extra&#8221; NP levels that are added during preprocessing to ensure that NPB nodes are always dominated by NP nodes.
+    In such cases, the chart item will contain a back pointer to the chart item that represents the base N

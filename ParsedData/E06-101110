@@ -1,0 +1,11 @@
+constraint.
+    In more detail, line 1 of the algorithm sets y to the highest scoring second-order projective tree.
+    The loop of lines 2&#8211;16 exits only when no further score improvement is possible.
+    Each iteration seeks the single highest-scoring parent change to y that does not break the tree constraint.
+    To that effect, the nested loops starting in lines 4 and 5 enumerate all (i, j) pairs.
+    Line 6 sets y' to the dependency graph obtained from y by changing xj&#8217;s parent to xi.
+    Line 7 checks that the move from y to y' is valid by testing that xj&#8217;s parent was not already xi and that y' is a tree.
+    Line 8 computes the score change from y to y'.
+    If this change is larger than the previous best change, we record how this new tree was created (lines 9-10).
+    After considering all possible valid edge changes to the tree, the algorithm checks to see that the best new tree does have a higher score.
+    If that is the case, we change the tree permanently and re-enter the loop.

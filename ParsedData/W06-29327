@@ -1,0 +1,13 @@
+n find the highest scoring label sequence with Viterbi&#8217;s algorithm.
+    We use the MIRA online learner to set the weights (Crammer and Singer, 2003; McDonald et al., 2005a) since we found it trained quickly and provide good performance.
+    Furthermore, it made the system homogeneous in terms of learning algorithms since that is what is used to train our unlabeled parser (McDonald and Pereira, 2006).
+    Of course, we have to define a set of suitable features.
+    We used the following: dependent have identical values?
+    Is this the left/rightmost dependent for the head?
+    Is this the first dependent to the left/right of the head?
+    Various conjunctions of these were included based on performance on held-out data.
+    Note that many of these features are beyond the scope of the edge based factorizations of the unlabeled parser.
+    Thus a joint model of parsing and labeling could not easily include them without some form of re-ranking or approximate parameter estimation.
+  
+  
+    We trained model

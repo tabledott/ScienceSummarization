@@ -1,0 +1,9 @@
+12/3/2008 , and *DD*/*D*/*DDDD* in the baseline features listed above.
+    Unlike in our chunking experiments, after we chose the best model on the development set, we used that model on the test set too.
+    (In chunking, after finding the best hyperparameters on the development set, we would combine the dev and training set and training a model over this combined set, and then evaluate on test.)
+    The standard evaluation benchmark for NER is the CoNLL03 shared task dataset drawn from the Reuters newswire.
+    The training set contains 204K words (14K sentences, 946 documents), the test set contains 46K words (3.5K sentences, 231 documents), and the development set contains 51K words (3.3K sentences, 216 documents).
+    We also evaluated on an out-of-domain (OOD) dataset, the MUC7 formal run (59K words).
+    MUC7 has a different annotation standard than the CoNLL03 data.
+    It has several NE types that don&#8217;t appear in CoNLL03: money, dates, and numeric quantities.
+    CoNLL03 has MISC, which is not 

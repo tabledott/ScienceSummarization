@@ -1,0 +1,10 @@
+ approximately 700,000 features, which is about half as many as the WSJ trained reranker.
+    This may be due to the smaller size of the BROWN training set or because the feature schemas for the reranker were developed on WSJ data.
+    As seen in Table 5, the BROWN reranker is not a significant improvement over the WSJ reranker for parsing BROWN data.
+  
+  
+    We perform several types of analysis to measure some of the differences and similarities between the BROWN-trained and WSJ-trained reranking parsers.
+    While the two parsers agree on a large number of parse brackets (Section 5.2), there are categorical differences between them (as seen in Section 5.3).
+    Table 6 shows the f-scores of an &#8220;oracle reranker&#8221; &#8212; i.e. one which would always choose the parse with the highest f-score in the n-best list.
+    While the WSJ parser has relatively low f-scores, adding NANC data results in a parser with comparable oracle scores as the parser trained from BROWN training.
+    Thus, the WSJ+NANC mo

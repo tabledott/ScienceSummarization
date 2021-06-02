@@ -1,0 +1,9 @@
+    Ex 3.1 Predict words.
+    Create auxiliary problems by regarding the word at each position as an auxiliary label, which we want to predictfrom the context.
+    For instance, predict whether a word is &#8220;Smith&#8221; or not from its context.
+    This problem is relevant to, for instance, named entity chunking since knowing a word is &#8220;Smith&#8221; helps to predict whether it is part ofa name.
+    One binary classification problem can be created for each possible word value (e.g., &#8220;IBM&#8221;, &#8220;he&#8221;, &#8220;get&#8221;,&#8226;&#8226;J.
+    Hence, many auxiliary problems can be obtained using this idea.
+    More generally, given a feature representation of the input data, we may mask some features as unobserved, and learn classifiers to predict these &#8216;masked&#8217; features based on other features that are not masked.
+    The automatic-labeling requirement is satisfied since the auxiliary labels are observable to us.
+    To create relevant problems, we should choose to (mask an

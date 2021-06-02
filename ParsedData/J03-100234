@@ -1,0 +1,8 @@
+ected statistical alignment models by applying a heuristic postprocessing step that combines the alignments in both translation directions (source to target, target to source).
+    The baseline alignment model does not allow a source word to be aligned with more than one target word.
+    Therefore, lexical correspondences like that of the German compound word Zahnarzttermin with the English dentist&#8217;s appointment cause problems, because a single source word must be mapped to two or more target words.
+    Therefore, the resulting Viterbi alignment of the standard alignment models has a systematic loss in recall.
+    To solve this problem, we perform training in both translation directions (source to target, target to source).
+    As a result, we obtain two alignments aJ1 and bI1 for each pair of sentences in the training corpus.
+    Let A1 = {(aj, j)  |aj &gt; 01 and A2 = {(i, bi)  |bi &gt; 01 denote the sets of alignments in the two Viterbi alignments.
+    To increase the quality of the alignments, we co

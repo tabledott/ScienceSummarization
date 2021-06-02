@@ -1,0 +1,5 @@
+ed the label propagation algorithm, which takes the form in Figure 2 (Zhu and Ghahramani, 2002).
+    Label propagation is an iterative algorithm where each node takes on the weighted average of its neighbour&#8217;s values from the previous iteration.
+    The result is that nodes with many paths to seeds get high polarities due to the influence from their neighbours.
+    The label propagation algorithm is known to have many desirable properties including convergence, a well defined objective function Input: G = (V, E), wig &#8712; [0, 1], P, N Output: pol &#8712; R|V | Initialize: poli = 1.0 for all vi &#8712; P and poli = &#8722;1.0 for all vi &#8712; N and poli = 0.0 &#8704;vi &#8712;&#65533; P &#8746; N (minimize squared error between values of adjacent nodes), and an equivalence to computing random walks through graphs.
+    The primary difference between standard label propagation and the graph propagation algorithm given in Section 2.1, is that a node with multiple paths to a seed will be influenced by a

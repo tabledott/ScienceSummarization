@@ -1,0 +1,6 @@
+s whether a noun phrase is a subject or object given only its position relative to the predicate, identifying complex noun phrases and determining whether they are arguments of a verb may be more difficult without the attachment information provided by the parser.
+    To test this, we implemented a system in which the argument labels were assigned to chunks, with the path feature used by the parse-tree-based system replaced by a number expressing the distance in chunks to the left or right of the predicate.
+    Of the 3990 arguments in our test set, only 39.8% correspond to a single chunk in the flattened sentence representation, giving an upper bound to the performance of this system.
+    In particular, sentential complements (which comprise 11% of the data) and prepositional phrases (which comprise 10%) always correspond to more than one chunk, and therefore cannot be correctly labeled by our system which assigns roles to single chunks.
+    In fact, this system achieves 27.6% precision and 22.0% recall.
+   

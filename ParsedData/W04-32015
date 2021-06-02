@@ -1,0 +1,6 @@
+ y = &#710;y.
+    Given labeled training examples (xi, yi) for i = 1... n, we seek a function f with small expected loss on unseen sentences.
+    The functions we consider take the following linear discriminant form: where (&#183;, &#183;) denotes the vector inner product, w E Rd and &#934; is a feature-vector representation of a parse tree &#934; : X x Y &#8212;* Rd (see examples below).3 Note that this class of functions includes Viterbi PCFG parsers, where the feature-vector consists of the counts of the productions used in the parse, and the parameters w are the logprobabilities of those productions.
+    The traditional method of estimating the parameters of PCFGs assumes a generative grammar that defines P(x, y) and maximizes the joint log-likelihood Ei log P(xi, yi) (with some regularization).
+    A alternative probabilistic approach is to estimate the parameters discriminatively by maximizing conditional loglikelihood.
+    For example, the maximum entropy approach (Johnson, 2001) defines a conditional 

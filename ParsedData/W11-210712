@@ -1,0 +1,10 @@
+rics as well as the versions of Meteor discussed in previous sections.
+    We also tune to a balanced Tuning version of Meteor designed to minimize bias.
+    This data set provides a single set of reference translations for MERT.
+    To account for the variance of MERT, we run end-to-end tuning 3 times for each metric and report the average results on two unseen test sets: newswire and weblog.
+    Test set translations are evaluated using BLEU, TER, and Meteor 1.2.
+    The parameters for each Meteor version are listed in Table 7 while the results are listed in Table 8.
+    The results are fairly consistent across both test sets: the Tuning version of Meteor outperforms BLEU across all metrics while versions of Meteor that perform well on other tasks perform poorly in tuning.
+    This illustrates the differences between evaluation and tuning tasks.
+    In evaluation tasks, metrics are engineered to score 1-best translations from systems most often tuned to BLEU.
+    As listed in Table 7, these parameters are o

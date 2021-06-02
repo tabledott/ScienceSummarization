@@ -1,0 +1,8 @@
+l., 1989).
+    Training generally converged in only a few hundred iterations.
+    In some cases, such as when performing word alignment for translation model construction, lattices cannot be used easily.
+    In these cases, a 1best segmentation (which can be determined from the lattice using the Viterbi algorithm) may be desired.
+    To train the parameters of the model for this condition (which is arguably slightly different from the lattice generation case we just considered), we used the minimum error training (MERT) algorithm on the segmentation lattices to find the parameters that minimized the error on our dev set (Macherey et al., 2008).
+    The error function we used was WER (the minimum number of insertions, substitutions, and deletions along any path in the reference lattice, normalized by the length of this path).
+    The WER on the held-out test set for a system tuned using MERT is 9.9%, compared to 11.1% for maximum likelihood training.
+    We remark that since we did not have the resources to ge

@@ -1,0 +1,5 @@
+editing rules within the context of a deterministic parser.
+    Two features are essential to the self-correction system: 1) every self-correction site (whether it results in the expunction of words or not) is marked by a phonetically identifiable signal placed at the right edge of the potential expunction site; and 2) the expunged part is the left-hand member of a pair of copies, one on each side of the editing signal.
+    The copies may be of three types: 1) identical surface strings, which are edited by a matching rule that applies before syntactic analysis begins; 2) complete constituents, when two constituents of the same type appear in the parser's buffer; or 3) incomplete constituents, when the parser finds itself trying to complete a constituent of the same type as a constituent it has just completed.
+    Whenever two such copies appear in such a configuration, and the first one ends with an editing signal, the first is expunged from further analysis.
+    This editing system has been implemented as pa

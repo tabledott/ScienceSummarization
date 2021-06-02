@@ -1,0 +1,7 @@
+ the refined algorithm will certainly converge no more slowly than the basic algorithm, and may well converge more quickly.
+    As a final note, we used the parameters T1 and T2 to limit the number of passes over examples, the aim being to prevent repeated updates based on outlier examples which are not separable.
+    As before, define yi to be the gold standard parse for the i&#8217;th sentence, and also define yji to be the partial analysis under the gold-standard parse for the first j words of the i&#8217;th sentence.
+    Then if yji V Tj(xi) a search error has been made, and there is no possibility of the gold standard parse yi being in the final set of parses, Tn(xi).
+    We call the following modification to the parsing algorithm during training &#8220;early update&#8221;: if yji V Tj(xi), exit the parsing process, pass yji , Tj(xi) to the parameter estimation method, and move on to the next string in the training set.
+    Intuitively, the motivation behind this is clear.
+    It makes sense to make a co

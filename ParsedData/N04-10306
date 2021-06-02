@@ -1,0 +1,13 @@
+ category (NP, PP, S, etc.) of the phrase/constituent corresponding to the semantic argument.
+			Position ? This is a binary feature identifying whether the phrase is before or after the predicate.?
+			Voice ? Whether the predicate is realized as an ac tive or passive construction.
+			Head Word ? The syntactic head of the phrase.
+			This is calculated using a head word table described by (Magerman, 1994) and modified by (Collins, 1999, Appendix.
+			A).?
+			Sub-categorization ? This is the phrase struc ture rule expanding the predicate?s parent node in the parse tree.
+			For example, in Figure 1, the sub-categorization for the predicate talked is VP?VBD-PP.
+	
+	
+			We formulate the parsing problem as a multi-class clas sification problem and use a Support Vector Machine (SVM) classifier (Hacioglu et al, 2003; Pradhan et al2003).
+			Since SVMs are binary classifiers, we have to con vert the multi-class problem into a number of binary-class problems.
+			We use the ONE vs ALL (OVA) formalism, which involves traini

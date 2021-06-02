@@ -1,0 +1,8 @@
+s associated with this generation step.
+    For the example hybrid tree in Figure 2, we can decompose the probability for generating the hybrid sequence as follows: Note that unigram, bigram, or trigram assumptions can be made here for generating NL words and semantic categories.
+    For example, under a bigram assumption, the second to last term can be written as P(Mc|ma, w1, Mb, w2) &#8801; P(Mc|ma, wk2), where wk2 is the last word in w2.
+    We call such additional information that we condition on, the context.
+    Note that our generative model is different from the synchronous context free grammars (SCFG) in a number of ways.
+    A standard SCFG produces a correspondence between a pair of trees while our model produces a single hybrid tree that represents the correspondence between a sentence and a tree.
+    Also, SCFGs use a finite set of context-free rewrite rules to define the model, where the rules are possibly weighted.
+    In contrast, we make use of the more flexible Markov models at each level of

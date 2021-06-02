@@ -1,0 +1,8 @@
+the subset of nodes in for which we can identify a corresponding node in both and .
+    The Bilingual Parse-Tree (BiTree) Loss Function can then be computed as where is a distance measure between sub-trees and.
+    Specific Bi-tree loss functions are determined through particular choices of.
+    In our experiments, we used a 0/1 loss function between sub-treesand. otherwise We note that other tree-to-tree distance measures can also be used to compute, e.g. the distance function could compare if the subtrees andhave the same headword/non-terminal tag.
+    The Bitree loss function measures the distance between two trees in terms of distances between their corresponding subtrees.
+    In this way, we replace the stringto-string (Levenshtein) alignments (for WER) or-gram matches (for BLEU/PER) with subtree-to-subtree alignments.
+    The Bitree Error Rate (in %) is computed as a ratio of the Bi-tree Loss function to the number of nodes in the set .
+    The complete node-to-node alignment between the parse-tree of t

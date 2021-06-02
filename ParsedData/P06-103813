@@ -1,0 +1,11 @@
+hin another.
+    For example, any pattern of the form CHC is contained in a pattern of the form HCHC (&#8216;x and y&#8217;, &#8216;both x and y&#8217;.)
+    The shared part yields exactly the same subgraph.
+    This policy could be changed for a discovery of finer relationships.
+    The main observation on G is that words that are highly interconnected are good candidates to form a category.
+    This is the same general observation exploited by (Widdows and Dorow, 2002), who try to find graph regions that are more connected internally than externally.
+    We use a different algorithm.
+    We find all strong n-cliques (subgraphs containing n nodes that are all bidirectionally interconnected.)
+    A clique Q defines a category that contains the nodes in Q plus all of the nodes that are (1) at least unidirectionally connected to all nodes in Q, and (2) bidirectionally connected to at least one node in Q.
+    In practice we use 2-cliques.
+    The strongly connected cliques are the bidirectional arcs in G and the

@@ -1,0 +1,9 @@
+n process only graphs with costs lower than five points are worth investigating.
+    In fact, there are only a few distinguishing graphs that cost less than this.
+    After a number of iterations the algorithm will find the cheapest solution (given this particular, simple definition of the cost function), which is (iii) in Figure 7.
+    That this distinguishing graph does not include type information does not necessarily mean that such information should not be realized.
+    It means only that type information is, strictly speaking, not necessary to distinguish the intended referent from the distractors.
+    We return to this issue in Section 5.2.
+    Figure 8 sketches the part of the algorithm that tests for subgraph isomorphism, matchGraphs.
+    This function is called each time the distractor set is calculated.
+    It tests whether the pair (v,H) can refer to (w, G), or put differently, it checks whether there exists an isomorphism 7r such that H C&#960; G with 7r.v = w. The function matchGraphs first dete

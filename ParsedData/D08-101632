@@ -1,0 +1,12 @@
+lly better BP (Fig.
+    2), at least for sentences with n &lt; 75.
+    However, once we add the CHILDSEQ factor, BP is always faster&#8212; dramatically so for longer sentences (Fig.
+    3).
+    More complex models would widen BP&#8217;s advantage.
+    Fig.
+    4 shows the tradeoff between runtime and search error of BP in the former case (GRAND only).
+    To determine BP&#8217;s search error at finding the MBR parse, we measured its dependency accuracy not against the gold standard, but against the optimal MBR parse under the model, which DP is able to find.
+    After 10 iterations, the overall macro-averaged search error compared to O(n4) DP MBR is 0.4%; compared to O(n5) (not shown), 2.4%.
+    More BP iterations may help accuracy.
+    In future work, we plan to compare BP&#8217;s speed-accuracy curve on more complex projective models with the speed-accuracy curve of pruned or reranked DP.
+    The BP approximation can be used to improve the accuracy of non-projective parsing by adding higher-order features.

@@ -1,0 +1,7 @@
+speech tags.
+    Because the underlying grammar (ignoring the additional named entity information) was the same for both the joint and baseline parsers, it is the case that whenever a sentence is unparseable by either the baseline or joint parser it is in fact unparsable by both of them, and would affect the parse scores of both models equally.
+    However, the CRF is able to named entity tag any sentence, so these unparsable sentences had an effect on the named entity score.
+    To combat this, we fell back on the baseline CRF model to get named entity tags for unparsable sentences. and named entities jointly resulted in improved performance on both.
+    When looking at these numbers, it is important to keep in mind that the sizes of the training and test sets are significantly smaller than the Penn Treebank.
+    The largest of the six datasets, CNN, has about one seventh the amount of training data as the Penn Treebank, and the smallest, MNB, has around 500 sentences from which to train.
+    Parse performan

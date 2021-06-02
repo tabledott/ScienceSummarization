@@ -1,0 +1,9 @@
+   The parsers of Yamada and Matsumoto (Y&amp;M) and Nivre and Scholz (N&amp;S) do not produce constituent structures, only dependencies.
+    &#8220;unk&#8221; indicates unknown values.
+    Results for MBLpar and SVMpar using correct POS tags (if automatically produced POS tags are used, accuracy figures drop about 1.5% over all metrics). form.
+    It achieves about 81% precision and 82% recall with gold-standard tags (78% and 79% with automatically tagged text).
+    Wong and Wu&#8217;s parser is further differentiated from the other parsers mentioned here in that it does not use lexical items, working only from part-of-speech tags.
+  
+  
+    We conducted experiments with the parser described in section 2 using two different classifiers: TinySVM (a support vector machine implementation by Taku Kudo)2, and the memory-based learner TiMBL (Daelemans et al., 2004).
+    We trained and tested the parser on the Wall Street Journal corpus of the Penn Treebank (Marcus et al., 1993) using the standard split: sections 2

@@ -1,0 +1,7 @@
+ (&#8220;tried to&#8221;), left =&#8220;VB TO &#8221;, (&#8220;tried to&#8221;), right =&#8220;PRP$ , &#8221;, (&#8220;her,&#8221;) right context$ =&#8220;PRP$ , &#8221;, (&#8220;her,&#8221;).
+    In the next section, we describe how the classifiers for contextual and paraphrasing features are co-trained.
+    Our co-training algorithm has three stages: initialization, training of the contextual classifier and training of the paraphrasing classifiers.
+    Initialization Words which appear in both sentences of an aligned pair are used to create the initial &#8220;seed&#8221; rules.
+    Using identical words, we create a set of positive paraphrasing examples, such as word =tried, word =tried.
+    However, training of the classifier demands negative examples as well; in our case it requires pairs of words in aligned sentences which are not paraphrases of each other.
+    To find negative examples, we match identical words in the alignment against all different words in the aligned sentence, assuming that identical

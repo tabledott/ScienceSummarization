@@ -1,0 +1,6 @@
+tion Probabilities.
+			Computing the probability of a path requires us to take a product over our estimate of the probability from transitioning from i to j for all nodes i and j in the path ?.
+			The other path assignments within this topic, however, play an important role in shaping the transition probabilities.
+			From the perspective of a single node i, only paths that pass through that node affect the probability of u also passing through that node.
+			It?s convenient tohave an explicit count of all of the paths that tran sition from i to j in this topic?s WORDNET-WALK, so we use T?ui,j to represent all of the paths that go from i to j in a topic other than the path currently assigned to u. Given the assignment of all other words to paths, calculating the probability of transitioning from i to j with word u requires us to consider the prior ? and the observations Ti,j in our estimate of the expected value of the probability of transitioning from i to j, ??ui,j = T?ui,j + Si?i,j Si + ? k T ?u i,k .
+			(5)

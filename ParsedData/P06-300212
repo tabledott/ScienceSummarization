@@ -1,0 +1,10 @@
+on of possible tags for these words.
+    Unlike in supervised scenarios, our task is not to train a tagger model from a small corpus of hand-tagged data, but from our clusters of derived syntactic categories and a considerably large, yet unlabeled corpus.
+  
+  
+    We decided to use a simple trigram model without re-estimation techniques.
+    Adopting a standard POS-tagging framework, we maximize the probability of the joint occurrence of tokens (ti) and categories (ci) for a sequence of length n: The transition probability P(ci|ci-1,ci-2) is estimated from word trigrams in the corpus whose elements are all present in our lexicon.
+    The last term of the product, namely P(ci|ti), is dependent on the lexicon3.
+    If the lexicon does not contain (ti), then (ci) only depends on neighbouring categories.
+    Words like these are called out-of-vocabulary (OOV) words.
+    Morphologically motivated add-ons are used e.g. in (Clark, 2003) and (Freitag 2004) to guess a more appropriate category distribution based on a

@@ -1,0 +1,8 @@
+ Consider the case n = 2.
+    To estimate the probabilities P(wi jwi_i) in equation (1), one can acquire a large corpus of text, which we refer to as training data, and take where c(a) denotes the number of times the string a occurs in the text and Ns denotes the total number of words.
+    This is called the maximum likelihood (ML) estimate for P(wilwi_i).
+    While intuitive, the maximum likelihood estimate is a poor one when the amount of training data is small compared to the size of the model being built, as is generally the case in language modeling.
+    For example, consider the situation where a pair of words, or bigram, say burnish the, doesn't occur in the training data.
+    Then, we have PmL(thelburnish) = 0, which is clearly inaccurate as this probability should be larger than zero.
+    A zero bigram probability can lead to errors in speech recognition, as it disallows the bigram regardless of how informative the acoustic signal is.
+    The term smoothing describes techniques for adjusting the maxi

@@ -1,0 +1,7 @@
+hoice.
+    Our first approach to query expansion treats the questions and answers in the question-answer corpus as two distinct languages.
+    That is, the 10 million question-answer pairs extracted from FAQ pages are fed as parallel training data into an SMT training pipeline.
+    This training procedure includes various standard procedures such as preprocessing, sentence and chunk alignment, word alignment, and phrase extraction.
+    The goal of question-answer translation is to learn associations between question words and synonymous answer words, rather than the translation of questions into fluent answers.
+    Thus we did not conduct discriminative training of feature weights for translation probabilities or language model probabilities, but we held out 4,000 questionanswer pairs for manual development and testing of the system.
+    For example, the system was adjusted to account for the difference in sentence length between questions and answers by setting the nullword probability parameter in word alig

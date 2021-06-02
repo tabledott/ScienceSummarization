@@ -1,0 +1,10 @@
+: These values vary depending on the threshold of cosine similarity.
+    As the threshold is decreased, the clusters gradually merge, finally forming one big cluster.
+    We show the results of complete linkage clustering for the PERSON-GPE (PER-GPE) domain in Figure 2 and for the COMPANY-COMPANY (COM-COM) domain in Figure 3.
+    With these metrics, precision fell as the threshold of cosine similarity was lowered.
+    Recall increased until the threshold was almost 0, at which point it fell because the total number of correct pairs in the remaining few big clusters decreased.
+    The best F-measure was 82 in the PER-GPE domain, 77 in the COM-COM domain.
+    In both domains, the best F-measure was found near 0 cosine similarity.
+    Generally, it is difficult to determine the threshold of similarity in advance.
+    Since the best threshold of cosine similarity was almost same in the two domains, we fixed the cosine threshold at a single value just above zero for both domains for simplicity.
+    We also investi

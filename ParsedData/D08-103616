@@ -1,0 +1,7 @@
+timators for HMMs.
+    In this section we compare their performance for English part-ofspeech tagging.
+    One of the difficulties in evaluating unsupervised taggers such as these is mapping the system&#8217;s states to the gold-standard partsof-speech.
+    Goldwater and Griffiths (2007) proposed an information-theoretic measure known as the Variation ofInformation (VI) described by Meil&#711;a (2003) as an evaluation of an unsupervised tagging.
+    However as Goldwater (p.c.) points out, this may not be an ideal evaluation measure; e.g., a tagger which assigns all words the same single part-of-speech tag does disturbingly well under Variation of Information, suggesting that a poor tagger may score well under VI.
+    In order to avoid this problem we focus here on evaluation measures that construct an explicit mapping between the gold-standard part-of-speech tags and the HMM&#8217;s states.
+    Perhaps the most straightforward approach is to map each HMM state to the part-of-speech tag it co-occurs with most 

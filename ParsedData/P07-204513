@@ -1,0 +1,11 @@
+veral steps.
+    Decomposition of the decoding process into various steps means that different factors can be modeled separately.
+    Modeling factors in isolation allows for flexibility in their application.
+    It can also increase accuracy and reduce sparsity by minimizing the number dependencies for each step.
+    For example, we can decompose translating from surface forms to surface forms and lemma, as shown in Figure 3.
+    By allowing the graph to be user definable, we can experiment to find the optimum configuration for a given language pair and available data.
+    The factors on the source sentence are considered fixed, therefore, there is no decoding step which create source factors from other source factors.
+    However, Moses can have ambiguous input in the form of confusion networks.
+    This input type has been used successfully for speech to text translation (Shen et al. 2006).
+    Every factor on the target language can have its own language model.
+    Since many factors, like lemmas and POS 

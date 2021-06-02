@@ -1,0 +1,6 @@
+rily projective if the dependency graph is well-formed).
+    Projectivizing a dependency graph by lifting nonprojective arcs is a nondeterministic operation in the general case.
+    However, since we want to preserve as much of the original structure as possible, we are interested in finding a transformation that involves a minimal number of lifts.
+    Even this may be nondeterministic, in case the graph contains several non-projective arcs whose lifts interact, but we use the following algorithm to construct a minimal projective transformation D0 = (W, A0) of a (nonprojective) dependency graph D = (W, A): The function SMALLEST-NONP-ARC returns the non-projective arc with the shortest distance from head to dependent (breaking ties from left to right).
+    Applying the function PROJECTIVIZE to the graph in Figure 1 yields the graph in Figure 2, where the problematic arc pointing to Z has been lifted from the original head jedna to the ancestor je.
+    Using the terminology of Kahane et al. (1998), we say that 

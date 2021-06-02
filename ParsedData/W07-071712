@@ -1,0 +1,7 @@
+zation constant, so that the Ac&#8217;s sum to 1.
+    In this approach, there are three parameters per distance metric to learn: Qi, ai, and bi.
+    In general, these parameters are also specific to the particular model being adapted, ie the LM or the TM.
+    To optimize these parameters, we fixed global loglinear weights at values obtained with Och&#8217;s algorithm using representative adapted models based on a single distance metric in (3), then used the Downhill Simplex algorithm (Press et al., 2002) to maximize BLEU score on the development corpus.
+    For tractability, we followed standard practice with this technique and considered only monotonic alignments when decoding (Zens and Ney, 2004).
+    The two approaches just described avoid conditioning Ac explicitly on c. This is necessary for dynamic adaptation, since any genre preferences learned from the development corpus cannot be expected to generalize.
+    However, it is not necessary for cross-domain adaptation, where the genre of the development c

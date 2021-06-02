@@ -1,0 +1,6 @@
+ata, adding reasonable constraints on the shape of the models that are looked for reduces the number of free parameters and should improve the quality of the estimates.
+    We tried two different constraints: The tw-constrained ML training is similar to the standard ML training, except that the probabilities p(t/w) are not changed at the end of an iteration.
+    The results in Table 4 show the number of tagging errors when the model is trained with the standard or tw-constrained ML training.
+    They show that the tw-constrained ML training still degrades the RF training, but not as quickly as the standard ML.
+    We have not tested what happens when smaller training data is used to build the initial model. t-constraint This constraint is more difficult to implement than the previous one because the probabilities p(t) are not the parameters of the model, but a combination of these parameters.
+    With the help of R. Polyak we have designed an iterative procedure that allows the likelihood to be improved while

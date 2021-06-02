@@ -1,0 +1,6 @@
+m yield worse alignments even on the development corpus.
+    This can happen because with the modified model scaling factors the n-best list can change significantly and can include alignments that have not been taken into account in training.
+    To avoid this problem, we iteratively combine n-best lists to train model parameters until the resulting n-best list does not change, as suggested by Och (2002).
+    However, as this training procedure is based on maximum likelihood criterion, there is only a loose relation to the final alignment quality on unseen bilingual texts.
+    In practice, having a series of model parameters when the iteration ends, we select the model parameters that yield best alignments on the development corpus.
+    After the bilingual sentences in the development corpus are tokenized (or segmented) and POS tagged, they can be used to train POS tags transition probabilities by counting relative frequencies: N(eHere, NA(fT, eT) is the frequency that the POS tag fT is aligned to POS tag eT

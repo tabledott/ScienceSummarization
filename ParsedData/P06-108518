@@ -1,0 +1,10 @@
+segment words in this way.
+    Collocations violate the unigram assumption in the model, since they exhibit strong word-toword dependencies.
+    The only way the model can capture these dependencies is by assuming that these collocations are in fact words themselves.
+    Why don&#8217;t the MBDP and NGS unigram models exhibit these problems?
+    We have already shown that NGS&#8217;s results are due to its search procedure rather than its model.
+    The same turns out to be true for MBDP.
+    Table 2 shows the probabilider each model of the true solution, the solution with no utterance-internal boundaries, and the solutions found by each algorithm.
+    Best solutions under each model are bold. ties under each model of various segmentations of the corpus.
+    From these figures, we can see that the MBDP model assigns higher probability to the solution found by our Gibbs sampler than to the solution found by Brent&#8217;s own incremental search algorithm.
+    In other words, Brent&#8217;s model does prefer the 

@@ -1,0 +1,6 @@
+an, 2003) and, as the table shows, results in very large charts.Note that, even with this relaxed setting on the su pertagger, the number of categories assigned to each word is only around 3 on average.
+			This suggests that it is only through use of the supertagger that we are able to estimate a log-linear parsing model on all of the training data at all, since without it the memory 3The figures in the table are estimates based on a sample of the nodes in the cluster.
+			requirements would be far too great, even for the entire 64-node cluster.4 The second row shows the reduction in size if the parser is only allowed to combine categorieswhich have combined in the training data.
+			This sig nificantly reduces the number of categories created using the composition rules, and also prevents thecreation of unlikely categories using rule combina tions not seen in CCGbank.
+			The results show thatthe memory and disk usage are reduced by approx imately 25% using these constraints.
+			The third row shows a further re

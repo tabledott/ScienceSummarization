@@ -1,0 +1,7 @@
+ of a relation, I-REL, indicating the continuation of a predicted relation, or O, indicating the token is not believed to be part of an explicit relationship.
+    An illustration is given in Figure 1.
+    The set of features used by O-CRF is largely similar to those used by O-NB and other stateof-the-art relation extraction systems, They include part-of-speech tags (predicted using a separately trained maximum-entropy model), regular expressions (e.g.detecting capitalization, punctuation, etc.
+    ), context words, and conjunctions of features occurring in adjacent positions within six words to the left and six words to the right of the current word.
+    A unique aspect of O-CRF is that O-CRF uses context words belonging only to closed classes (e.g. prepositions and determiners) but not function words such as verbs or nouns.
+    Thus, unlike most RE systems, O-CRF does not try to recognize semantic classes of entities.
+    O-CRF has a number of limitations, most of which are shared with other systems that per

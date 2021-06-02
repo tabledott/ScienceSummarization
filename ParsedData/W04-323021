@@ -1,0 +1,9 @@
+umber of l-errors with MEMMs amounts to 416, which is 70% of total errors, and is even larger than that of naive HMMs (306).
+    This result supports our claim that MEMMs is not sufficient to be applied to Japanese morphological analysis where the length bias is inevitable.
+    Asahara et al. extended the original HMMs by 1) position-wise grouping of POS tags, 2) word-level statistics, and 3) smoothing of word and POS level statistics (Asahara and Matsumoto, 2000).
+    All of these techniques are designed to capture hierarchical structures of POS tagsets.
+    For instance, in the position-wise grouping, optimal levels of POS hierarchies are changed according to the contexts.
+    Best hierarchies for each context are selected by handcrafted rules or automatic error-driven procedures.
+    CRFs can realize such extensions naturally and straightforwardly.
+    In CRFs, position-wise grouping and word-POS smoothing are simply integrated into a design of feature functions.
+    Parameters &#955;k for each feature are

@@ -1,0 +1,10 @@
+ence becomes long.
+    Instead, we build a packed data structure, called a constraint network, that contains all the syntactic structures implicitly.
+    Explicit parse trees can be generated whenever necessary, but it may take a more than exponential computation time.
+    Figure 5 shows the initial constraint network for sentence (5).
+    A node in a constraint network corresponds to a role.
+    Since each word has only one role governor in the grammar G2, the constraint network has five nodes corresponding to the five words in the sentence.
+    In the figure, the node labeled V1 represents the governor role of the word Vi , and so on.
+    A node is associated with a set of possible values that the role can take as its value, called a domain.
+    The domains of the initial constraint network are computed by examining unary constraints ((G2a-1) to (G2a-5) in our example).
+    For example, the modifiee of the role of the word V1 must be ROOT and its label must be nil according to the unary constraint (G2a5), a

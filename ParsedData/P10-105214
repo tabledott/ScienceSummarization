@@ -1,0 +1,7 @@
+ciently processing very-large feature and observation sets requires to pay attention to many implementation details.
+    In this section, we present several optimizations devised to speed up training.
+    For all algorithms, the computation time is dominated by the evaluations of the gradient: our implementation takes advantage of the sparsity to accelerate these computations.
+    Assume the set of bigram features {&#955;y0,y,xt+1}(y0,y)&#8712;Y 2 is sparse with only r(xt+1) &#171; |Y |2 non null values and define al., 2010) explains how computational savings can be obtained using the fact that the vector/matrix products in the recursions above only involve the sparse matrix Mt+1(y0, y).
+    They can thus be computed with exactly r(xt+1) multiplications instead of |Y |2.
+    The same idea can be used when the set {&#181;y,xt+1}y&#8712;Y of unigram features is sparse.
+    Using this implementation, the complexity of the forward-backward procedure for x(&#65533;) can be made proportional to the average number o

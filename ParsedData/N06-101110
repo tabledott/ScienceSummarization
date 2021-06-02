@@ -1,0 +1,9 @@
+s and up to a particular length (including the empty string ).
+    Couplings of the substrings from both sets produce features we use for training.
+    Note that couplings with the empty string represent insertions/omissions.
+    Consider the following example: ( ,) We build a feature vector by coupling substrings from the two sets: We use the observation that transliteration tends to preserve phonetic sequence to limit the number of couplings.
+    For example, we can disallow the coupling of substrings whose starting positions are too far apart: thus, we might not consider a pairing in the above example.
+    In our experiments, we paired substrings if their positions in their respective words differed by -1, 0, or 1.
+    We use the perceptron (Rosenblatt, 1958) algorithm to train the model.
+    The model activation provides the score we use to select best transliterations on line 6.
+    Our version of perceptron takes examples with a variable number of features; each example is a set of all features seen so 

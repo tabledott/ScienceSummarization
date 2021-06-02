@@ -1,0 +1,8 @@
+ges would assign it a much lower score.
+    This problem is made worse by the fact that Bleu equally weights all items in the reference sentences (Babych and Hartley, 2004).
+    Therefore omitting content-bearing lexical items does not carry a greater penalty than omitting function words.
+    The problem is further exacerbated by Bleu not having any facilities for matching synonyms or lexical variants.
+    Therefore words in the hypothesis that did not appear in the references (such as when and taken in the hypothesis from Table 1) can be substituted with arbitrary words because they do not contribute towards the Bleu score.
+    Under Bleu, we could just as validly use the words black and helicopters as we could when and taken.
+    The lack of recall combined with naive token identity means that there can be overlap between similar items in the multiple reference translations.
+    For example we can produce a translation which contains both the words carry and take even though they arise from the same source 

@@ -1,0 +1,8 @@
+ing formula: where CSreal,i and CScalc,i are the cosine similarity scores calculated using the traditional (equation 1) and randomized (equation 4) technique respectively. i is the index over all pairs of elements that have C5real,Z &gt;= 0.15 We calculate the error (errora,,) for various values of d, the total number of unit random vectors r used in the process.
+    The results are reported in Table 26.
+    As we generate more random vectors, the error rate decreases.
+    For example, generating 10 random vectors gives us a cosine error of 0.4432 (which is a large number since cosine similarity ranges from 0 to 1.)
+    However, generation of more random vectors leads to reduction in error rate as seen by the values for 1000 (0.0493) and 10000 (0.0156).
+    But as we generate more random vectors the time taken by the algorithm also increases.
+    We choose d = 3000 random vectors as our optimal (time-accuracy) cut off.
+    It is also very interesting to note that by using only 3000 bits for each of the 655,49

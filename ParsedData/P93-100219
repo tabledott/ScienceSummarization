@@ -1,0 +1,8 @@
+exical information is used, correct alignments receive vastly greater probabilities than incorrect alignments.
+    Consequently, thresholding is generally very aggressive and our search beam in the dynamic programming array is narrow.
+    However, when there is a large deletion in one of the parallel corpora, consistent lexical correspondences disappear so no one alignment has a much higher probability than the others and our search beam becomes wide.
+    When the search beam reaches a certain width, we take this to indicate the beginning of a deletion.
+    To identify the end of a deletion, we search linearly through both corpora simultaneously.
+    All occurrences of words whose frequency is below a certain value are recorded in a hash table.
+    Whenever we notice the occurrence of a rare word in one corpus and its translation in the other, we take this as a candidate location for the end of the deletion.
+    For each candidate location, we examine the forty sentences following the occurrence of the rare w

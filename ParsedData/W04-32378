@@ -1,0 +1,6 @@
++1, ti&#8722;1, ti&#8722;2}.
+    We note that the probability model is causal in the sequencing of tags (the probability assignment for ti only depends on previous tags ti&#8722;1, ti&#8722;2) which allows for efficient algorithms that search for the most likely tag sequence T&#8727;(W) = arg maxT P(T |W) as well as ensures a properly normalized conditional probability model P(T|W).
+    The probability P(ti|xi(W,T i&#8722;1 1 )) is modeled using a maximum entropy model.
+    The next section briefly describes the training procedure; for details the reader is referred to (Berger et al., 1996).
+    The sufficient statistics that are extracted from the training data are tuples the tag assigned in context xi(W, T i&#8722;1 1 ) = {wi, wi&#8722;1, wi+1, ti&#8722;1, ti&#8722;2} and # denotes the count with which this event has been observed in the training data.
+    By way of example, the event associated with the first word in the example in Section 2 is (*bdw* denotes a special boundary type): MXC 1 currentword=pri

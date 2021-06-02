@@ -1,0 +1,9 @@
+ The size of the translation tables made optimal bilingual parsing prohibitive by exploding the number of possible analyses.
+    We therefore resorted to using GIZA++&#8217;s hypothesized alignments.
+    Since the IBM models only hypothesize one-to-many alignments from target to source, we trained using each side of the bitext as source and target in turn.
+    We could then produce two kinds of alignment graphs by taking either the intersection or the union of the links in the two GIZA++ alignment graphs.
+    All words not in the resulting alignment graph are set to align to &#8709;.
+    Our bilingual parser deals only in one-to-one alignments (mappings); the intersection graph yields a mapping.
+    The union graph yields a set of links which may permit different one-to-one mappings.
+    Using the union graph therefore allows for flexibility in the word alignments inferred by the bilingual parser, but this comes at computational expense (because more analyses are permitted).
+    Even with over 20,000 sentence

@@ -1,0 +1,6 @@
+ i-1 and j-1 k = w(i-1,j-1) c(i,j) = c(i-1,j-1) + f(k+1) ? f(k) // remember the length of consecutive // matches at position i, j w(i,j) = k+1 (2) Otherwise If c(i-1,j) &gt; c(i,j-1) Then c(i,j) = c(i-1,j) w(i,j) = 0 // no match at i, j Else c(i,j) = c(i,j-1) w(i,j) = 0 // no match at i, j (3) WLCS(X,Y) = c(m,n) Where c is the dynamic programming table, 0 &lt;= i &lt;= m, 0 &lt;= j &lt;= n, w is the table storing the length of consecutive matches ended at c table position i and j, and f is a function of consecutive matches at the table position, c(i,j).
+			Notice that by providing different weighting function f, we can parameterize the WLCS algorithm to assign different credit to consecutive in-sequence matches.
+			The weighting function f must have the property that f(x+y) &gt; f(x) + f(y) for any positive integers x and y. In other words, consecutive matches are awarded more scores than non-consecutive matches.
+			For example, f(k)-=-?k ? ?
+			when k &gt;= 0, and ?, ? &gt; 0.
+			This function charges a gap 

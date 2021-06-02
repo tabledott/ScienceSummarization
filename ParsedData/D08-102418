@@ -1,0 +1,9 @@
+hese features are similar to Marton and Resnik&#8217;s X= and X+, except that our set includes features for WHNP, PRT, and PRN.
+  
+  
+    In addition to parser-based syntactic constraints, which were introduced in prior work, we introduce a completely new set of features aimed at improving the modeling of reordering within Hiero.
+    Again, the feature definition gives rise to a larger number of features than one would expect to train successfully using MERT.
+    In a phrase-based model, reordering is performed both within phrase pairs and by the phrasereordering model.
+    Both mechanisms are able to learn that longer-distance reorderings are more costly than shorter-distance reorderings: phrase pairs, because phrases that involve more extreme reorderings will (presumably) have a lower count in the data, and phrase reordering, because models are usually explicitly dependent on distance.
+    By contrast, in a hierarchical model, all reordering is performed by a single mechanism, the rules of the grammar.
+    

@@ -1,0 +1,9 @@
+r shares some support vectors with other classifiers.
+    By storing the bodies of all support vectors together and letting each classifier have only the weights, we can greatly reduce the size of the classifier.
+    The sharing of support vectors also can be exploited to accelerate the classification by caching the value of the kernel function between a support vector and a classifiee sample.
+  
+  
+    To conduct experiments, we divided 670 abstracts of the GENIA corpus (Ver.
+    1.1) into the training part (590 abstracts; 4,487 sentences; 133,915 words) and the test part (80 abstracts; 622 sentences; 18,211 words).6 Texts are tokenized by using Penn Treebank&#8217;s tokenizer.
+    An HMM for the HMM state features was trained with raw abstracts of the GENIA corpus (39,116 sentences).7 The number of states is 160.
+    The vocabulary for the word feature is constructed by taking the most frequent 10,000 words from the above raw abstracts, the prefix/suffix/prefix list by taking the most frequent 10,000 prefix

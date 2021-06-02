@@ -1,0 +1,7 @@
+tion (see figure 2(a)).
+    While an entity-specific multinomial distribution over heads makes sense for proper, and some nominal, mention heads, it does not make sense to generate pronominal mentions this same way.
+    I.e., all entities can be referred to by generic pronouns, the choice of which depends on entity properties such as gender, not the specific entity.
+    We therefore enrich an entity&#8217;s parameters 0 to contain not only a distribution over lexical heads 0h, but also distributions (0t, 09, 0n) over properties, where 0t parametrizes a distribution over entity types (PER, LOC, ORG, MISC), and 09 for gender (MALE, FEMALE, NEUTER), and 0n for number (SG, PL).7 We assume each of these property distributions is drawn from a symmetric Dirichlet distribution with small concentration parameter in order to encourage a peaked posterior distribution.
+    Previously, when an entity z generated a mention, it drew a head word from 0hz .
+    It now undergoes a more complex and structured process.
+    It fi

@@ -1,0 +1,7 @@
+ist, they are often much more poorly estimated (and in many cases there may be no relevant data left in the residual on which to compute the distribution of accent patterns for a given collocation).
+    In contrast, the global probabilities are better estimated but less relevant.
+    A reasonable compromise is to interpolate between the two, where the interpolated estimate is # x global + -y x residual.
+    When the residual probabilities are based on a large training set and are well estimated, -y should dominate, while in cases the relevant residual is small or non-existent, # should dominate.
+    If always # = 0 and -y = 1 (exclusive use of the residual), the result is a degenerate (strictly right-branching) decision tree with severe sparse data problems.
+    Alternately, if one assumes that likelihood ratios for a given collocation are functionally equivalent at each line of a decision list, then one could exclusively use the global (always = 1 and 7 = 0).
+    This is clearly the easiest and fastest appro

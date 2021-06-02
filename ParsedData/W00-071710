@@ -1,0 +1,9 @@
+ower with the model trained on data tagged with the new algorithm.
+    This does not imply that the new tagset is better; it merely shows that it is capturing statistical significant generalisations.
+    In absolute terms the perplexities are rather high; I deliberately chose a rather crude model without backing off and only the minimum amount of smoothing, which I felt might sharpen the contrast.
+  
+  
+    The work of Chater and Finch can be seen as similar to the work presented here given an independence assumption.
+    We can model the context distribution as being the product of independent distributions for each relative position; in this case the KL divergence is the sum of the divergences for each independent distribution.
+    This independence assumption is most clearly false when the word is ambiguous; this perhaps explains the poor performance of these algorithms with ambiguous words.
+    The new algorithm currently does not use information about the orthography of the word, an important source of i

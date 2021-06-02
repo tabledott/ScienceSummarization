@@ -1,0 +1,9 @@
+ that a small number of seed words are given.
+    In other words, we know beforehand the semantic orientations of those given words.
+    We incorporate this small labeled dataset by modifying the previous update rule.
+    Instead of QE(x, W) in Equation (2), we use the following function H(Q, x, W) : where [t] is 1 if t is negative, otherwise 0, and xz is calculated with the right-hand-side of Equation (6), where the penalty term &#945;(xi &#8722; ai)2 in Equation (10) is ignored.
+    We choose Q that minimizes this value.
+    However, when a large amount of labeled data is unavailable, the value of pseudo leave-one-out error rate is not reliable.
+    In such cases, we use magnetization m for hyper-parameter prediction: where L is the set of seed words, ai is the orientation of seed word i, and &#945; is a positive constant.
+    This expression means that if xi (i E L) is different from ai, the state is penalized.
+    Using function H, we obtain the new update rule for xi (i E L) : i and anew iare the average

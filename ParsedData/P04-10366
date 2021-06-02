@@ -1,0 +1,9 @@
+ thesaurus are words themselves, rather than senses.
+    In order to associate the neighbours with senses we make use of another notion of similarity, &#8220;semantic similarity&#8221;, which exists between senses, rather than words.
+    We experiment with several WordNet Similarity measures (Patwardhan and Pedersen, 2003) which aim to capture semantic relatedness within
+  
+  
+    In order to find the predominant sense of a target word we use a thesaurus acquired from automatically parsed text based on the method of Lin (1998).
+    This provides the nearest neighbours to each target word, along with the distributional similarity score between the target word and its neighbour.
+    We then use the WordNet similarity package (Patwardhan and Pedersen, 2003) to give us a semantic similarity measure (hereafter referred to as the WordNet similarity measure) to weight the contribution that each neighbour makes to the various senses of the target word.
+    To find the first sense of a word ( ) we take each sense in t

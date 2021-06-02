@@ -1,0 +1,11 @@
+abelled data to annotate unlabeled data.
+    Examples of this include self-training (Charniak, 1997) and co-training (Blum and Mitchell, 1998; Steedman et al., 2003).
+    Finally, there are &#8220;unsupervised&#8221; strategies where no data is labeled and all annotations (including the grammar itself) must be discovered (Klein and Manning, 2002).
+    Semi-supervised and unsupervised methods are important because good labeled data is expensive, whereas there is no shortage of unlabeled data.
+    While some domain-language pairs have quite a bit of labelled data (e.g. news text in English), many other categories are not as fortunate.
+    Less unsupervised methods are more likely to be portable to these new domains, since they do not rely as much on existing annotations.
+  
+  
+    A simple method of incorporating unlabeled data into a new model is self-training.
+    In self-training, the existing model first labels unlabeled data.
+    The newly labeled data is then treated as truth and combined with the actual 

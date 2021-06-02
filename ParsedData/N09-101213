@@ -1,0 +1,8 @@
+ning initializer, which is decreased during learning.
+    The second technique is structural annealing (Smith and Eisner, 2006; Smith, 2006) which penalizes long dependencies initially, gradually weakening the penalty during estimation.
+    If hand-annotated dependencies on a held-out set are available for parameter selection, this performs far better than EM; however, performing parameter selection on a held-out set without the use of gold dependencies does not perform as well.
+    Cohen et al. (2008) investigate using Bayesian Priors with DMV.
+    The two priors they use are the Dirichlet (which we use here) and the Logistic Normal prior, which allows the model to capture correlations between different distributions.
+    They initialize using the harmonic initializer of Klein and Manning (2004).
+    They find that the Logistic Normal distribution performs much better than the Dirichlet with this initialization scheme.
+    Cohen and Smith (2009), investigate (concurrently with our work) an extension of this,

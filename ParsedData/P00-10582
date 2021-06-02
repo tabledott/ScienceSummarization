@@ -1,0 +1,7 @@
+ lexical heads percolate up the tree, so that when one lexical head is immediately dominated by another, it is understood to be dependent on it.
+    Effectively, a dependency structure is made parasitic on the phrase structure so that they can be generated together by a context-free model.
+    However, this solution is not ideal.
+    Aside from cases where context-free derivations are incapable of encoding both constituency and dependency (which are somewhat isolated and not of great interest for statistical parsing) there are common cases where percolation of single heads is not sufficient to encode dependencies correctly for example, relative clause attachment or raising/auxiliary verbs (see Section 3).
+    More complicated grammar transformations are necessary.
+    A more suitable approach is to employ a grammar formalism which produces structural descriptions that can encode both constituency and dependency.
+    Lexicalized TAG is such a formalism, because it assigns to each sentence not only a parse tree

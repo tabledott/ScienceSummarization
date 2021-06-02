@@ -1,0 +1,12 @@
+s a close bracket.
+    Thus the statistics of all the covers may be efficiently computed by traversing the cover graph.
+  
+  
+    The MBSL scoring algorithm searches the training corpus for each subsequence of the sentence in order to find matching tiles.
+    Implementing this search efficiently is therefore of prime importance.
+    We do so by encoding the training corpus using suffix trees (Edward and McCreight, 1976), which provide string searching in time which is linear in the length of the searched string.
+    Inspired by Satta (1997), we build two suffix trees for retrieving the positive and total counts for a tile.
+    The first suffix tree holds all pattern instances from the training corpus surrounded by bracket symbols and a fixed amount of context.
+    Searching a given tile (which includes a bracket symbol) in this tree yields the positive count for the tile.
+    The second suffix tree holds an unbracketed version of the entire training corpus.
+    This tree is used for searching the POS sequence

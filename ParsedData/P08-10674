@@ -1,0 +1,7 @@
+mmon sub-derivations.
+    Such a forest has a structure of a hypergraph (Klein and Manning, 2001; Huang and Chiang, 2005), where items like PP3,6 are called nodes, and deductive steps like (*) correspond to hyperedges.
+    More formally, a forest is a pair (V, E), where V is the set of nodes, and E the set of hyperedges.
+    For a given sentence w1:l = w1 ... wl, each node v E V is in the form of Xz,j, which denotes the recognition of nonterminal X spanning the substring from positions i through j (that is, wz+1 ... wj).
+    Each hyperedge e E E is a pair (tails(e), head(e)), where head(e) E V is the consequent node in the deductive step, and tails(e) E V &#8727; is the list of antecedent nodes.
+    For example, the hyperedge for deduction (*) is notated: We also denote IN(v) to be the set of incoming hyperedges of node v, which represent the different ways of deriving v. For example, in the forest in Figure 1, IN(VP1,6) is {e1, e2}, with e2 = ((VBD1,2, NP2,6), VP1,6).
+    We call jej the arity of hyperedge e

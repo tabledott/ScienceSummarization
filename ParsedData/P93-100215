@@ -1,0 +1,8 @@
+rsion is used to reduce computational complexity.
+    We use an incremental variation of the algorithm to reduce the number of passes through the corpus required.
+    In the EM algorithm, an expectation phase, where counts on the corpus are taken using the current estimates of the parameters, is alternated with a maximization phase, where parameters are re-estimated based on the counts just taken.
+    Improved parameters lead to improved counts which lead to even more accurate parameters.
+    In the incremental version of the EM algorithm we use, instead of re-estimating parameters after each complete pass through the corpus, we re-estimate parameters after each sentence.
+    By re-estimating parameters continually as we take counts on the corpus, we can align later sections of the corpus more reliably based on alignments of earlier sections.
+    We can align a corpus with only a single pass, simultaneously producing alignments and updating the model as we proceed.
+    More specifically, we initialize paramet

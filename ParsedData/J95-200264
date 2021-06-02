@@ -1,0 +1,6 @@
+ performs a computation that is isomorphic to that of inside probabilities shown here.
+    Schabes (1991) adds both inner and outer probabilities to Earley's algorithm, with the purpose of obtaining a generalized estimation algorithm for SCFGs.
+    Both of these approaches are restricted to grammars without unbounded ambiguities, which can arise from unit or null productions.
+    Dan Jurafsky (personal communication) wrote an Earley parser for the Berkeley Restaurant Project (BeRP) speech understanding system that originally computed forward probabilities for restricted grammars (without left-corner or unit production recursion).
+    The parser now uses the method described here to provide exact SCFG prefix and next-word probabilities to a tightly coupled speech decoder (Jurafsky, Wooters, Segal, Stolcke, Fosler, Tajchman, and Morgan 1995).
+    An essential idea in the probabilistic formulation of Earley's algorithm is the collapsing of recursive predictions and unit completion chains, replacing both with loo

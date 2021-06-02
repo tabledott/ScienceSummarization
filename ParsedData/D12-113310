@@ -1,0 +1,7 @@
+e parse y for x with transition sequence C0,m is thus the sum of the feature representations/scores of the configurationtransition pairs in C0,m: Finally, the configuration of the new hypothesis is obtained by evaluating t(h.c) (line 11).
+    The new hypothesis is then inserted into TMP in score-sorted order (line 12).
+    The pruning parameters b1 and b2 determine the number of hypotheses allowed in the beam and at the same time control the tradeoff between syntactic and morphological ambiguity.
+    First, we extract the b1 highest scoring hypotheses with distinct dependency trees.
+    Then we extract the b2 highest scoring remaining hypotheses, which will typically be tagging variants of dependency trees that are already in the beam.
+    In this way, we prevent the beam from getting filled up with too many tagging variants of the same dependency tree, which was found to be harmful in preliminary experiments.
+    One final thing to note about the inference algorithm is that the notion of permissibility for a

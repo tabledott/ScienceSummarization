@@ -1,0 +1,11 @@
+&#8220;begun&#8221; are siblings in English and not in direct dependency, the QG features still leverage this indirect projection.
+    We start by describing the features we use to augment conditional and generative parsers when scoring pairs of trees (&#167;2).
+    Then we discuss in turn monolingual (&#167;3) and cross-lingual (&#167;4) parser adaptation.
+    Finally, we present experiments on cross-lingual parser projection in conditions when no target language trees are available for training (&#167;5) and when some trees are available (&#167;6).
+  
+  
+    What should our model of source and target trees look like?
+    In our view, traditional approaches based on synchronous grammar are problematic both computationally and linguistically.
+    Full inference takes O(n6) time or worse (depending on the grammar formalism).
+    Yet synchronous models only consider a limited hypothesis space: e.g., parses must be projective, and alignments must decompose according to the recursive parse structure.
+    (For exa

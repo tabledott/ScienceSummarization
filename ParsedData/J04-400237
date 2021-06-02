@@ -1,0 +1,9 @@
+f target language sentences.
+    Each hypothesis is the translation of a part of the source language sentence.
+    A hypothesis is extended by appending one target word.
+    The set of all hypotheses can be structured as a graph with a source node representing the sentence start, goal nodes representing complete translations, and intermediate nodes representing partial translations.
+    There is a directed edge between hypotheses n1 and n2 if the hypothesis n2 is obtained by appending one word to hypothesis n1.
+    Each edge has associated costs resulting from the contributions of all feature functions.
+    Finally, our search problem can be reformulated as finding the optimal path through this graph.
+    &#732; In the first step, we determine the set of all source phrases in f for which an applicable alignment template exists.
+    Every possible application of an alignment template z = (FJy1 , EI~1 , &#732;A) to a subsequence f j+J&#65533;&#8722;1 of the source sentence is called an alignment j template inst

@@ -1,0 +1,5 @@
+n be viewed as a virtual weighted k-best list with a huge k. So a rule extracted from a non 1-best parse, i.e., using non 1-best hyperedges, should be penalized accordingly and should have a fractional count instead of a unit one, similar to the E-step in EM algorithms.
+    Inspired by the parsing literature on pruning (Charniak and Johnson, 2005; Huang, 2008) we penalize a rule r by the posterior probability of its tree fragment frag = lhs(r).
+    This posterior probability, notated &#945;&#946;(frag), can be computed in an InsideOutside fashion as the product of three parts: the outside probability of its root node, the probabilities of parse hyperedges involved in the fragment, and the inside probabilities of its leaf nodes, where &#945;(&#183;) and &#946;(&#183;) denote the outside and inside probabilities of tree nodes, respectively.
+    For example in Figure 4, where TOP denotes the root node of the forest.
+    Like in the M-step in EM algorithm, we now extend the maximum likelihood estimation to fracti

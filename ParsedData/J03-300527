@@ -1,0 +1,9 @@
+thin quotation marks (see Section 2.3 for details).
+    This means that we miss any nonadjacent matches, even though a chunker or parser (such as the one used for extracting BNC or NANTC bigrams) would find them.
+    An example is an adjectivenoun bigram in which an adverbial intervenes between the adjective and the noun (see Table 1).
+    Furthermore, the absence of tagging, chunking, and parsing can also generate false positives, in particular for queries containing words with part-of-speech ambiguity.
+    (Recall that our bigram selection procedure ensures that the predicate word, but not the argument word, is unambiguous in terms of its POS tagging in the BNC.)
+    As an example, consider process directory, which in our data set is a noun-noun bigram (see Table 2).
+    One of the matches returned by Google is (8), in which process is a verb.
+    Another example is fund membrane, which is a noun-noun bigram in our data set but matches (9) in Google.
+    Keller and Lapata Web Frequencies for Unseen Bigrams 

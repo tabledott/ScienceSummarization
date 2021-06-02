@@ -1,0 +1,7 @@
+  Depending on how many splits were reversed, we could reduce the grammar size at the cost of little or no loss of performance, or even a gain.
+    We found that merging 50% of the newly split symbols dramatically reduced the grammar size after each splitting round, so that after 6 SM cycles, the grammar was only 17% of the size it would otherwise have been (1043 vs. 6273 subcategories), while at the same time there was no loss in accuracy (Figure 3).
+    Actually, the accuracy even increases, by 1.1% at 5 SM cycles.
+    The numbers of splits learned turned out to not be a direct function of symbol frequency; the numbers of symbols for both lexical and nonlexical tags after 4 SM cycles are given in Table 2.
+    Furthermore, merging makes large amounts of splitting possible.
+    It allows us to go from 4 splits, equivalent to the 24 = 16 substates of Matsuzaki et al. (2005), to 6 SM iterations, which take a few days to run on the Penn Treebank.
+    Splitting nonterminals leads to a better fit to the data by al

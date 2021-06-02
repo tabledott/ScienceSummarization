@@ -1,0 +1,11 @@
+two versions of Section 23, one supertagged with SEM-TAG and the other with SYNT-TAG.
+    The results are shown in Table 3.
+    Evaluation is performed on dependencies excluding leafnode punctuation.
+    Each dependency is evaluated according to both whether the correct head and dependent is related as well as whether they both receive the correct part of speech tag.
+    The F-measure scores, in the 70% range, are relatively low compared to Collins (1999) which has a corresponding score of around 90%.
+    This is perhaps to be expected because Collins (1999) is based on a full parser.
+    Note also that the accuracy of LDA is highly dependent on the accuracy of the supertagged input.
+    This explains, for example, the fact that the accuracy on SEM-TAG supertagged input is lower than the accuracy with SYNT-TAG supertagged input.
+    The output of LDA is a partial dependency parse annotated with TAG structures.
+    We can use this output to predict semantic roles of arguments.
+    The manner in which this is d

@@ -1,0 +1,8 @@
+some values of (i, j).
+    Example 3: Grandparent/Sibling Models An important class of models that satisfy Assumption 2 are defined as follows.
+    Again, for a vector y|i define l1 ... lp to be the sequence of left modifiers to word i under y|i, and r1 ... rq to be the set of right modifiers.
+    Define k&#8727; to the value for k such that y&#8593;(k, i) = 1.
+    Then the model is defined as follows: This is very similar to the bigram-sibling model, but with the modification that the gL and gR functions depend in addition on the value for k&#8727;.
+    This allows these functions to model grandparent dependencies such as (k&#8727;, i, lj) and sibling dependencies such as (i, lj&#8722;1, lj).
+    Finding z&#8727;|i under the definition can be accomplished in O(n3) time, by decoding the model using dynamic programming separately for each of the O(n) possible values of k&#8727;, and picking the value for k&#8727; that gives the maximum value under these decodings.
+    A dual-decomposition algorithm for models 

@@ -1,0 +1,10 @@
+ were used to prevent overfitting and a quasi-Newton method was used for pa rameter optimization.
+			The probability assigned to a label sequence for a particular sequence of characters by a CRF is given by the equation below: ( ) ( )??
+			?Cc k c cXYkkXZ XYP f ,,exp)( 1| ??
+			Y is the label sequence for the sentence, X is the sequence of unsegmented characters, Z(X) is a normalization term, fk is a feature function, and c indexes into characters in the sequence being labeled.
+			A CRF allows us to utilize a large number of n-gram features and different state sequence 168 based features and also provides an intuitive framework for the use of morphological features.
+	
+	
+			3.1 Features.
+			The linguistic features used in our model fall into three categories: character identity n-grams,morphological and character reduplication fea tures.
+			For each state, the character identity features (Ng &amp; Low 2004, Xue &amp; Shen 2003, Goh et al 2003) are represented using feature functions that key off of the identit

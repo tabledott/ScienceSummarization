@@ -1,0 +1,8 @@
+ of spans and a simple finite state machine: any span (l, m) can be represented by a sequence of l OUTSIDE columns, followed by m&#8722;l+1 INSIDE columns, followed by n &#8722; m + 1 OUTSIDE columns.
+    This simple machine has the restricted form described in Figure 1c: it has three states, L, M, and R; each transition generates either an OUTSIDE column O or an INSIDE column I.
+    The cost of generating an OUTSIDE at position a is O(a) = P(ta|NULL) + &amp;0[i,j] P(ta|sb); likewise the cost of generating an INSIDE column Directly computing O and I would take time O(n2) for each source span, leading to an overall runtime of O(n4).
+    Luckily there are faster ways to find the inside and outside scores.
+    First we can precompute following arrays in O(n2) time and space: I(a).
+    Thus we have linear time updates for O and I.
+    We can then find the best scoring sequence using the familiar Viterbi algorithm.
+    Let S[a, Q] be the cost of the best scoring sequence ending at in state Q at time a: phism betwe

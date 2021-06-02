@@ -1,0 +1,7 @@
+by computing their similarity matrix based on pairwise cosines, and feeding it to the widely used CLUTO toolkit (Karypis 2003).
+    We use CLUTO&#8217;s built-in repeated bisections with global optimization method, accepting all of CLUTO&#8217;s default values for this method.
+    Cluster quality is evaluated by percentage purity, one of the standard clustering quality measures returned by CLUTO (Zhao and Karypis 2003).
+    If nir is the number of items from the i-th true (gold standard) class that were assigned to the r-th cluster, n the total number of items, and k the number of clusters, then Expressed in words, for each cluster we count the number of items that belong to the true class that is most represented in the cluster, and then we sum these counts across clusters.
+    The resulting sum is divided by the total number of items so that, in the best case (perfect clusters), purity will be 1 (in percentage terms, 100%).
+    As cluster quality deteriorates, purity approaches 0.
+    For the models where w

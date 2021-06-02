@@ -1,0 +1,9 @@
+t set consisting of 506 sentence pairs as development set.
+    We obtained high-precision word alignments using the way described in Section 3.1.
+    Then we ran our reordering example extraction algorithm to output blocks of length at most 7 words on the Chinese side together with their internal alignments.
+    We also limited the length ratio between the target and source language (max(|s|, |t|)/min(|s|, |t|)) to 3.
+    After extracting phrases, we calculated the phrase translation probabilities and lexical translation probabilities in both directions for each bilingual phrase.
+    For the minimum-error-rate training, we reimplemented Venugopal&#8217;s trainer 3 (Venugopal et al., 2005) in C++.
+    For all experiments, we ran this trainer with the decoder iteratively to tune the weights As to maximize the BLEU score on the development set.
+    We shared the same phrase translation tables between Pharaoh and our system since the two systems use the same features of phrases.
+    In fact, we extracted more phr

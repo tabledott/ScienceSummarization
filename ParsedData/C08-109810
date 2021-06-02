@@ -1,0 +1,11 @@
+text attribute is ?1:ART.Nom?
+			which states that the preceding tag is an article with the attribute ?Nom?.
+			?1:ART?
+			is also a valid attribute specification, but ?1:Nom?
+			is not.
+			The tagger further restricts the set of possible test attributes by requiring that some attribute ofthe POS tag at position i-k (i=position of the predicted POS tag, k ? 1) must have been used be fore an attribute of the POS tag at position i-(k+1) may be examined.
+			This restriction improved the tagging accuracy for large contexts.
+			2.2 Pruning Criterion.
+			The tagger applies 3the critical-value pruning strat egy proposed by (Mingers, 1989).
+			A node ispruned if the information gain of the best test mul tiplied by the size of the data subsample is below a given threshold.
+			To illustrate the pruning, assume that D is the data of the current node with 50 positive and 25 negative elements, and that D 1 (with 20 positive and 20 negative elements) and D 2(with 30 posi tive and 5 negative elements) are the two subsets in

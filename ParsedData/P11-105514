@@ -1,0 +1,7 @@
+by c((vSi , vyr )) def= &#934;extract(xi, zi).
+    Our goal is to select a subset of the edges which maximizes the sum of their weights, subject to each node vSi E VS being incident to exactly one edge, and each node vr E Vy being incident to at least one edge. y Exact Solution An exact solution can be obtained by first computing the maximum weighted bipartite matching, and adding edges to nodes which are not incident to an edge.
+    This can be computed in time O(|V|(|&#163; |+ |V |log |V|)), which we can rewrite as O((|R |+ |S|)(|R||S |+ (|R |+ |S|) log(|R |+ |S|))).
+    Approximate Solution An approximate solution can be obtained by iterating over the nodes in Vy, and each time adding the highest weight incident edge whose addition doesn&#8217;t violate a constraint.
+    The running time is O(|R||S|).
+    This greedy search guarantees each fact is extracted at least once and allows any additional extractions that increase the overall probability of the assignment.
+    Given the computational advantage, we 

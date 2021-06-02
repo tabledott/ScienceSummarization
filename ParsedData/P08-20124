@@ -1,0 +1,9 @@
+  (2006) who use a probabilistic first-order logic model.
+  
+  
+    For this task we are given a document which is annotated with a set of mentions, and the goal is to cluster the mentions which refer to the same entity.
+    When describing our model, we build upon the notation used by Denis and Baldridge (2007).
+    Our baseline systems are based on a logistic classifier over pairs of mentions.
+    The probability of a pair of mentions takes the standard logistic form: where mi and mj correspond to mentions i and 3 respectively; f(mi, mj) is a feature function over a pair of mentions; 0 are the feature weights we wish to learn; and x(i j) is a boolean variable which takes value 1 if mi and mj are coreferent, and 0 if they are not.
+    The log likelihood of a document is the sum of the log likelihoods of all pairs of mentions: (2) where m is the set of mentions in the document, and x is the set of variables representing each pairwise coreference decision x(i,j).
+    Note that this model is degenerate, because

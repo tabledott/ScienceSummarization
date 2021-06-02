@@ -1,0 +1,7 @@
+ssions.
+    Example (8) shows that if the time expression Sunday were removed, it would make room below the 10-word threshold for another important piece of information.
+    The final step, iterative shortening, removes linguistically peripheral material&#8212;through successive deletions&#8212;until the sentence is shorter than a given threshold.
+    We took the threshold to be 10 for the DUC task, but it is a configurable parameter.
+    Also, given that the human-generated headlines tended to retain earlier material more often than later material, much of our iterative shortening is focused on deleting the rightmost phrasal categories until the length is below threshold.
+    There are four types of iterative shortening rules.
+    The first type is a rule we call &#8220;XP-over-XP,&#8221; which is implemented as follows: In constructions of the form [XP [XP ...] ...] remove the other children of the higher XP, where XP is NP, VP or S. This is a linguistic generalization that allowed us apply a single rule to

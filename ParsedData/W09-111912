@@ -1,0 +1,11 @@
+IO and BILOU.
+    The BIO scheme suggests to learn classifiers that identify the Beginning, the Inside and the Outside of the text segments.
+    The BILOU scheme suggests to learn classifiers that identify the Beginning, the Inside and the Last tokens of multi-token chunks as well as Unit-length chunks.
+    The BILOU scheme allows to learn a more expressive model with only a small increase in the number of parameters to be learned.
+    Table 2 compares the end system&#8217;s performance with BIO and BILOU.
+    Examining the results, we reach two conclusions: (1) choice of encoding scheme has a big impact on the system performance and (2) the less used BILOU formalism significantly outperforms the widely adopted BIO tagging scheme.
+    We use the BILOU scheme throughout the paper.
+  
+  
+    The key intuition behind non-local features in NER has been that identical tokens should have identical label assignments.
+    The sample text discussed in the introduction shows one such example, where all occurrences of &

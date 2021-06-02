@@ -1,0 +1,12 @@
+son/Org, Physical Object, or Other.
+    A syntactic function is labeled as a class if 20% of its arguments appear under the corresponding WordNet synset3, or if the NER system labels them as such.
+    Once labeled by type, we separately cluster the syntactic functions for each role type.
+    For instance, Person functions are clustered separate from Physical Object functions.
+    Figure 2 shows some of the resulting roles.
+    Finally, since agglomerative clustering makes hard decisions, related events to a template may have been excluded in the initial event clustering stage.
+    To address this problem, we identify the 200 nearby events to each event cluster.
+    These are simply the top scoring event patterns with the cluster&#8217;s original events.
+    We add their syntactic functions to their best matching roles.
+    This expands the coverage of each learned role.
+    Varying the 200 amount does not lead to wide variation in extraction performance.
+    Once induced, the roles are evaluated by their enti

@@ -1,0 +1,9 @@
+bly useful features.
+    We investigated scoring each remaining type based on its estimated ability to predict (positively or negatively) a particular grade.
+    We used a form of Log-Odds Ratio, which has been shown to give superior performance for multinomial na&#239;ve Bayes classifiers (Mladenic and Grobelnik, 1998).
+    Our modified Log-Odds measure computes the largest absolute change in loglikelihood between a given grade and all other grades.
+    We tried various thresholds for our Log-Odds measure and found that the highest accuracy was achieved by using all remaining features.
+    We found that we could reduce prediction variance with two changes to the model.
+    First, rather than choosing the single most likely grade language model, we calculate the average grade level of the top N results, weighted by the relative differences in likelihood (essentially the expected class).
+    The tradeoff is a small bias toward the middle grades.
+    All results reported here use this averaging method, with N=2

@@ -1,0 +1,8 @@
+ increasing this value had no effect on accuracy or convergence and was detrimental to speed; for SGD, the learning rate parameter was tuned manually.
+    Note that we have not spent much time optimizing the values of p1 and p2.
+    Based on a pilot study on Nettalk, we found that taking p1 = .5 and p2 in the order of 10&#8722;5 to yield nearly optimal performance, and have used these values throughout.
+    Our first benchmark is the word phonetization task, using the Nettalk dictionary (Sejnowski and Rosenberg, 1987).
+    This dataset contains approximately 20,000 English word forms, their pronunciation, plus some prosodic information (stress markers for vowels, syllabic parsing for consonants).
+    Grapheme and phoneme strings are aligned at the character level, thanks to the use of a &#8220;null sound&#8221; in the latter string when it is shorter than the former; likewise, each prosodic mark is aligned with the corresponding letter.
+    We have derived two test conditions from this database.
+    The first

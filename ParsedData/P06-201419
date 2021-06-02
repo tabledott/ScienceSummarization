@@ -1,0 +1,10 @@
+ed in Section 3.2.
+    These are the only features that can be active for nonterminal productions.
+    A terminal production rl that corresponds to a link l is given that link&#8217;s features from the matching system: OT (rl) = O(l).
+    Terminal productions ro corresponding to unaligned tokens are given blank feature vectors: OT(ro) = 0.
+    The SVM requires complete IF vectors for the correct training structures.
+    Unfortunately, our training set contains gold standard alignments, not ITG parse trees.
+    The gold standard is divided into sure and possible link sets 5 and P (Och and Ney, 2003).
+    Links in 5 must be included in a correct alignment, while P links are optional.
+    We create ITG trees from the gold standard using the following sorted priorities during tree construction: This creates trees that represent high scoring alignments, using a minimal number of invalid spans.
+    Only the span and inversion counts of these trees will be used in training, so we need not achieve a perfect tree stru

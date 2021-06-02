@@ -1,0 +1,15 @@
+e arguments of the same type, such as point.num(num,num), which is a kind of point that represents a field coordinate in CLANG.
+			In this case, extra nodes are inserted in the treewith new type concepts that are unique for each ar gument.
+			An example is shown in Figure 4 in whichthe additional type concepts num1 and num2 are in troduced.
+			Again, during parsing, context will be used to determine the correct type for a given word.
+			The point label of the root node of Figure 4 is the concept that includes all kinds of points in CLANG.
+			Once a predicate has all of its arguments filled, we 11 ,0.5 , ?RRB?
+			?RRB??null ?LRB?
+			0.1 CD?num CD?num ?LRB??point.num PRN?point CD?num1 CD?num2Figure 4: Adding new types to disambiguate argu ments.
+			use the most general CLANG label for its concept (e.g. point instead of point.num).
+			This generality avoids sparse data problems during training.
+	
+	
+			5.1 Collins Head-Driven Model 2.
+			Collins?
+			head-driven model 2 is a generative, lexi calized model of stati

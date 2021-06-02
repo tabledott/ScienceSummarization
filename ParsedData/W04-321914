@@ -1,0 +1,7 @@
+ between those vertices; each edge was labeled with a sequence of words and a real number.
+    Thus a edge connecting vertex vi to vj labeled with the sequence of words w1..wk and the real number p indicates that the source words si+1 to sj can be replaced by words w1..wk with probability p. Our replacement database was stored as a trie with words as edges, hence populating the lattice takes worst case O(n2) time.
+    Finally, since source and target languages are identical, we added an identity mapping for each source word si: an edge from vi-1 to vi with label si and a uniform probability u.
+    This allows for handling unseen words.
+    A high u value permits more conservative paraphrases.
+    We found the optimal path through the lattice as scored by the product of the replacement model and the trigram language model.
+    This algorithm reduces easily to the Viterbi algorithm; such a dynamic programming approach guarantees an efficient optimal search (worst case O(kn), where n is the maximal target length

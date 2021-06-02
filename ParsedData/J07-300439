@@ -1,0 +1,6 @@
+n difficult to analyze, and the annotation is not very consistent.
+    The CCGbank manual lists heuristics that we used to infer additional structure.
+    For example, if a node is labeled FRAG, and there is only one daughter (and potentially an end-of-sentence punctuation mark), as in the first example, we treat the tree as if it was labeled with the label of its daughter (NP in this case).
+    Parentheticals.
+    Parentheticals are insertions that are often enclosed in parentheses, or preceded by a dash.
+    Unless the parenthetical element itself is of a type that could be a modifier by itself (e.g., a PP), we assume that the opening parenthesis or first dash takes the parenthetical element as argument and yields a modifier of the appropriate type: (NP (NP the third-highest) (PP-LOC in the developing world))) This results in the following derivation, which ignores the fact that parentheses are usually balanced (Nunberg 1990): &#8211; the third-highest in the developing world We use a similar treatment for 

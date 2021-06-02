@@ -1,0 +1,15 @@
+t Overlap Score may vary depending on the number of runs used inthe experiment, such mapping eliminates the vari ability in the score values introduced with changesin the number of runs performed.
+			In order to ac complish this normalization, we used the value ofthe Net Overlap Score as a parameter in the stan dard fuzzy membership S-function (Zadeh, 1975; Zadeh, 1987).
+			This function maps the absolute values of the Net Overlap Score onto the interval from 0 to 1, where 0 corresponds to the absence of membership in the category of sentiment (in our case, these will be the neutral words) and 1 reflects the highest degree of membership in this category.
+			The function can be defined as follows: S(u;?, ?, ?) = ? ?
+			0 for u ? ?
+			2(u??
+			)2 for?
+			u ? ?
+			1?
+			2(u??
+			)2 for ? ?
+			u ? ?
+			1 for u ? ?
+			where u is the Net Overlap Score for the word and ?, ?, ? are the three adjustable parameters: ? is set to 1, ? is set to 15 and ?, which represents a crossover point, is defined as ? = (?
+			+ ?)/2 

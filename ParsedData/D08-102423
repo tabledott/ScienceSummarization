@@ -1,0 +1,6 @@
+ syntactic parses for this data, we tokenized it according to the Arabic Treebank standard using AMIRA (Diab et al., 2004), parsed it with the Stanford parser (Klein and Manning, 2003), and then forced the trees back into the MT system&#8217;s tokenization.1 We ran both MERT and MIRA on the tuning set using 20 parallel processors.
+    We stopped MERT when the score on the tuning set stopped increasing, as is common practice, and for MIRA, we used the development set to decide when to stop training.2 In our runs, MERT took an average of 9 passes through the tuning set and MIRA took an average of 8 passes.
+    (For comparison, Watanabe et al. report decoding their tuning data of 663 sentences 80 times.)
+    Table 1 shows the results of our experiments with the training methods and features described above.
+    All significance testing was performed against the first line (MERT baseline) using paired bootstrap resampling (Koehn, 2004).
+    First of all, we find that MIRA is competitive with MERT when both use th

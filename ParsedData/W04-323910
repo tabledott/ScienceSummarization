@@ -1,0 +1,7 @@
+he rightmost path and the size of the label set is 3 (= |G|), a total of 9 trees are enumerated from the original tree t. Note that rightmost extension preserves the prefix ordering of nodes in t (i.e., nodes at positions 1..|t |are preserved).
+    By repeating the process of rightmost-extension recursively, we can create a search space in which all trees drawn from the set G are enumerated.
+    Figure 3 shows a snapshot of such a search space.
+    Rightmost extension defines a canonical search space in which one can enumerate all subtrees from a given set of trees.
+    We here consider an upper bound of the gain that allows subspace pruning in this canonical search space.
+    The following theorem, an extension of Morhishita (Morhishita, 2002), gives a convenient way of computing a tight upper bound on gain(ht', yi) for any super-tree t' of t. We can efficiently prune the search space spanned by right most extension using the upper bound of gain u(t).
+    During the traverse of the subtree lattice built by t

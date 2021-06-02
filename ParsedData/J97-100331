@@ -1,0 +1,9 @@
+btopic change.
+    The blocks act as moving windows over the text.
+    Several sentences can be contained within a block, but the blocks shift by only one sentence at a time.
+    Thus if there are k sentences within a block, each sentence occurs in k *2 score computations (except for sentences at the extreme ends of the text).
+    The current version of the block algorithm computes scores in a very simple manner, as the inner product of two vectors, where a vector contains the number of times each lexical item occurs in its corresponding block.
+    The inner product is normalized to make the score fall between 0 and 1, inclusive.
+    Figure 3(a) shows the computation of the scores at the gaps between sentences 2 and 3, between 4 and 5, and between 6 and 7.
+    The scores shown are simple, unnormalized inner products of the frequencies of the terms in the blocks.
+    For example the gap between sentences 2 and 3 gets assigned a score of 8 computed as 2 * 1 (for A) +1 * 1 (for B) +2 * 1 (for C) +1 * 1 (for D) +

@@ -1,0 +1,6 @@
+ristics are used to inject more structure when the Penn Treebank gives only flat constituents, as is often the case for conjuncts, e.g., (NP the new phone book and tour guide), and QP constituents, e.g., (QP more than 300).
+    Then for each grammatical relation, patterns are defined over the phrase structure parse tree using the tree-expression syntax defined by tregex (Levy and Andrew, 2006).
+    Conceptually, each pattern is matched against every tree node, and the matching pattern with the most specific grammatical relation is taken as the type of the dependency.
+    The automatic extraction of the relations is not infallible.
+    For instance, in the sentence Behind their perimeter walls lie freshly laundered flowers, verdant grass still sparkling from the last shower, yew hedges in an ecstasy of precision clipping (BNC), the system will erroneously retrieve apposition relations between flowers and grass, as well as between flowers and hedges whereas these should be conj and relations.
+    The system is 

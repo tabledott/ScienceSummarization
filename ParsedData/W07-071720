@@ -1,0 +1,7 @@
+ar approach, but apply it at the sentence level, and use it for language model as well as translation model adaptation.
+    They rely on a perplexity heuristic to determine an optimal size for the relevant subset.
+    Zhao et al (2004) apply a slightly different sentence-level strategy to language model adaptation, first generating an nbest list with a baseline system, then finding similar sentences in a monolingual target-language corpus.
+    This approach has the advantage of not limiting LM adaptation to a parallel corpus, but the disadvantage of requiring two translation passes (one to generate the nbest lists, and another to translate with the adapted model).
+    Ueffing (2006) describes a self-training approach that also uses a two-pass algorithm.
+    A baseline system generates translations that, after confidence filtering, are used to construct a parallel corpus based on the test set.
+    Standard phrase-extraction techniques are then applied to extract an adapted phrase table from the system&#8217;s 

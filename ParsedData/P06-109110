@@ -1,0 +1,10 @@
+ the target translations).
+    The block consists of target phrase &#8217;violate&#8217; and source phrase &#8217;tnthk&#8217; otherwise &#8217;Lebanese&#8217; is a word in the target phrase of block and &#8217;AllbnAny&#8217; is a word in the source phrase otherwise &#10107;goal of the training is to find a weight vector such that for each training sentence , the corresponding decoder outputs which has the maximum BLEU score among all based on Eq.
+    2.
+    In other words, if maximizes the scoring function , then also maximizes the BLEU metric.
+    Based on the description, a simple idea is to learn the BLEU score for each candidate block sequence .
+    That is, we would like to estimate such that .
+    This can be achieved through least squares regression.
+    It is easy to see that if we can find a weight vector that approximates , then the decoding-rule in Eq.
+    2 automatically maximizes the BLEU score.
+    However, it is usually difficult to estimate reliably based only on a linear combination of the 

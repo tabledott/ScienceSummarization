@@ -1,0 +1,8 @@
+  ?, which forces the engine to return only documents in which the whole terms T1 and T2 appear.
+  We then count the number of times the snippets of the top N = 200 search results returned contain the term T0 and compare it with an empirically obtained threshold to hypothesize whether T0 is the mention of one entity or encompasses the mentions of two entities, T1 and T2.
+  As Wacholder et al.
+  (1997) noted, it is fairly common for one of the mentions of an entity in a document to be a long, typical surface form of that entity (e.g., ?George W.
+  ), while the other mentions are shorter surface forms (e.g., ?Bush?).
+  Therefore, before attempting to solve the semantic ambiguity, the system hypothesizes in-document coreferences and maps short surface forms to longer surface forms with the same dominant label (for example, ?Brown?/PERSON can be mapped to ?Michael Brown?/PERSON).
+  Acronyms are also re- solved in a similar manner when possible.
+  In the third stage, the contextual and category in- formation extra

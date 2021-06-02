@@ -1,0 +1,9 @@
+can more accurately model the errors people make.
+    A formal presentation of our model follows.
+    Let Part(w) be the set of all possible ways of partitioning string w into adjacent (possibly null) substrings.
+    For a particular partition R&#8712;Part(w), where |R|=j (R consists of j contiguous segments), let Ri be the ith segment.
+    Under our model, One particular pair of alignments for s and w induces a set of edits that derive s from w. By only considering the best partitioning of s and w, we can simplify this to: We do not yet have a good way to derive P(R  |w), and in running experiments we determined that poorly modeling this distribution gave slightly worse performance than not modeling it at all, so in practice we drop this term.
+  
+  
+    To train the model, we need a training set consisting of {si, wi} string pairs, representing spelling errors si paired with the correct spelling of the word wi.
+    We begin by aligning the letters in si with those in wi based on minimizing the edit distance 

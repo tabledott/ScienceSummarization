@@ -1,0 +1,9 @@
+sider the following set-up: Training data is a set of example input/output pairs.
+    In tagging we would have training examples where each is a sentence and each is the correct sequence of tags for that sentence.
+    We assume some way of enumerating a set of candidates for a particular sentence.
+    We use to denote the&#8217;th candidate for the&#8217;th sentence in training data, and to denote the set of candidates for .
+    In this paper, the top outputs from a maximum entropy tagger are used as the set of candidates.
+    Without loss of generality we take to be the candidate for which has the most correct tags, i.e., is closest to being correct.3 is the probability that the base model assigns to .
+    We define We assume a set of additional features, for .
+    The features could be arbitrary functions of the candidates; our hope is to include features which help in discriminating good candidates from bad ones.
+    Finally, the parameters of the model are a vector of parameters, ranking function is defin

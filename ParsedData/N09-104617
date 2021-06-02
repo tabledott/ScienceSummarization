@@ -1,0 +1,7 @@
+le 3.
+    We note that in all language pairs, the 1BEST segmentation variant of the training data results in a significant reduction in types.
+    Word alignment was carried out by running Giza++ implementation of IBM Model 4 initialized with 5 iterations of Model 1, 5 of the HMM aligner, and 3 iterations of Model 4 (Och and Ney, 2003) in both directions and then symmetrizing using the grow-diag-final-and heuristic (Koehn et al., 2003).
+    For each language pair, the corpus was aligned twice, once in its non-segmented variant and once using the single-best segmentation variant.
+    For translation, we used a bottom-up parsing decoder that uses cube pruning to intersect the language model with the target side of the synchronous grammar.
+    The grammar rules were extracted from the word aligned parallel corpus and scored as described in Chiang (2007).
+    The features used by the decoder were the English language model log probability, log f(&#175;e |&#175;f), the &#8216;lexical translation&#8217; log probabi

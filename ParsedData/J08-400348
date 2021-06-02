@@ -1,0 +1,8 @@
+on cp&#8722;&#8710;(p) &#8712; C0,m such that cp&#8722;&#8710;(p) = (&#955;1, &#955;2, j|&#946;, Acp&#8722;&#8710;(p) ) (i.e., the first configuration where j is the first node in the buffer).
+    Basis: If &#8710;(p) = 0, then i and j are adjacent and &#928;(p, i, j) holds vacuously.
+    Inductive step: Assume that &#928;(p, i, j) holds if &#8710;(p) &#8804; q (for some q &gt; 0) and that &#8710;(p) = q + 1.
+    Now consider the transition tp that results in configuration cp.
+    For the projective, list-based algorithm, there are only two cases to consider, because if tp = RIGHT-ARCpl (for some l) or tp = SHIFT then &#8710;(p) = 0, which contradicts our assumption that &#8710;(p) &gt; q &gt; 0.
+    (This follows because there is no transition that moves a node back to the buffer.)
+    Case 1: If tp = LEFT-ARCpl (for some l), then there is a node k such that i &lt; k &lt; j, (j,l, k) &#8712; Acp, cp&#8722;1 = (&#955;1|i|k, &#955;2, j|&#946;, Acp&#8722; {(j,l,k)}), and cp = (&#955;1|i, [ ],j|&#946;,Acp).
+    

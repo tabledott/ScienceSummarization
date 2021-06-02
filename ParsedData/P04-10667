@@ -1,0 +1,5 @@
+ation present in the target sentence only 10% of the time in our training data, and thus has an estimated translation probability of around 0.1 for this target word.
+    Since the rare source word has no other occurrences in the data, EM training is free to assign whatever probability distribution is required to maximize the joint probability of this sentence pair.
+    Even if the rare word also needs to be used to generate its actual translation in the sentence pair, a relatively high joint probability will be obtained by giving the rare word a probability of 0.5 of generating its true translation and 0.5 of spuriously generating the translation of the frequent source word.
+    The probability of this incorrect alignment will be higher than that obtained by assigning a probability of 1.0 to the rare word generating its true translation, and generating the true translation of the frequent source word with a probability of 0.1.
+    The usual fix for over-fitting problems of this type in statistical NLP is to s

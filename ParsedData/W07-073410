@@ -1,0 +1,8 @@
+ure in order to avoid over-fitting.
+    When n systems were available for a particular language, we train the parameters n times, leaving one system out in each training, and pooling the segments from all other systems.
+    The final parameter values are calculated as the mean of the n sets of trained parameters that were obtained.
+    When evaluating a set of parameters on test data, we compute segment-level correlation with human judgments for each of the systems in the test set and then report the mean over all systems.
+    The optimal parameter values found are somewhat different than our previous metric parameters (lower values for all three parameters).
+    The new parameters result in moderate but noticeable improvements in correlation with human judgments on both training and testing data.
+    Tests for statistical significance using bootstrap sampling indicate that the differences in correlation levels are all significant at the 95% level.
+    Another interesting observation is that precision receive

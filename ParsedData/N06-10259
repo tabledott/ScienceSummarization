@@ -1,0 +1,7 @@
+we use include path length based measures (Rada et al., 1989; Wu &amp; Palmer, 1994; Leacock &amp; Chodorow, 1998), as well as ones based on information content (Resnik, 1995; Jiang &amp; Conrath, 1997; Lin, 1998).
+    In our case, the measures are obtained by computing the similarity scores between the head lemmata of each potential antecedent-anaphor pair.
+    In order to overcome the sense disambiguation problem, we factorise over all possible sense pairs: given a candidate pair, we take the cross product of each antecedent and anaphor sense to form pairs of synsets.
+    For each measure WN SIMILARITY, we compute the similarity score for all synset pairs, and create the following features.
+    WN SIMILARITY BEST the highest similarity score from all (SENSEREi&#65533;ry,,, SENSEREj&#65533;m) synset pairs.
+    WN SIMILARITY AVG the average similarity score from all (SENSEREi&#65533;ry,,, SENSEREj&#65533;m) synset pairs.
+    Pairs containing REs which cannot be mapped to WordNet synsets are assumed to have a 

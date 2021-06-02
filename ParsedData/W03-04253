@@ -1,0 +1,7 @@
+ in Section 4; a full description of the algorithms and their properties is beyond the scope of this paper &#8211; the reader is instead referred to the original articles.
+    This classifier is described in detail in (Zhang and Johnson, 2003, this volume), along with a comprehensive evaluation of its performance, and therefore is not presented here.
+    The MaxEnt classifier computes the posterior class probability of an example by evaluating the normalized product of the weights active for the particular example.
+    The model weights are trained using the improved iterative scaling algorithm (Berger et al., 1996).
+    To avoid running in severe over-training problems, a feature cutoff of 4 is applied before the model weights are learned.
+    At decoding time, the best sequence of classifications is identified with the Viterbi algorithm.
+    Transformation-based learning is an error-driven algorithm which has two major steps: it starts by assigning some classification to each example, and then automatically

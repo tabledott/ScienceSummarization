@@ -1,0 +1,9 @@
+ith taga when it should have been tagged with tagb in the patch corpus.
+    Next, for each error triple, it is determined which instantiation of a template from the prespecified set of pdtch templates results in the greatest error reduction.
+    Currently, the patch templates are: Change tag a to tag b when: 8.
+    The previous word is (is not) capitalized.
+    For each error triple &lt; taga,tagb, number &gt; and patch, we compute the reduction in error which results from applying the patch to remedy the mistagging of a word as taga when it should have been tagged tagb.
+    We then compute the number of new errors caused by applying the patch; that is, the number of times the patch results in a word being tagged as tagb when it should be tagged taga.
+    The net improvement is calculated by subtracting the latter value from the former.
+    For example, when the initial tagger tags the patch corpus, it mistags 159 words as verbs when they should be nouns.
+    If the patch change the tag from verb to noun if o

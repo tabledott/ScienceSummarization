@@ -1,0 +1,8 @@
+gned to work on normally-distributed data (Manning and Schiitze, 1999, p. 565), we operate on Zscores rather than counts.
+    Lastly, instead of generating a term-document matrix, we build a term-term matrix.
+    Schiitze (1993) achieved excellent performance at classifying words into quasi-partof-speech classes by building and performing an SVD on an Nx4N term-term matrix, M(i,Np+j).
+    The indices i and j represent the top N highest frequency words.
+    The p values range from 0 to 3 representing whether the word indexed by j is positionally offset from the word indexed by i by -2, -1, +1, or +2, respectively.
+    For example, if &amp;quot;the&amp;quot; and &amp;quot;people&amp;quot; were respectively the 1st and 100th highest frequency words, then upon seeing the phrase &amp;quot;the people,&amp;quot; Schiitze's approach would increment the counts of M(1,2N+100) and M(100,N+1).
+    We used Schfitze's general framework but tailored it to identify local semantic information.
+    We built an Nx2N matrix and 

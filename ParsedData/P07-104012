@@ -1,0 +1,10 @@
+s, given the th source sentence was given by (5) word-level decoding.
+    For example, two synonymous words may be aligned to other words not already aligned, which may result in repetitive output.
+    Second, the additive confidence scores in Equation 5 have no probabilistic meaning and cannot therefore be combined with language model scores.
+    Language model expansion and re-scoring may help by increasing the probability of more grammatical hypotheses in decoding.
+    Third, the system weights are independent of the skeleton selection.
+    Therefore, a hypothesis from a system with a low or zero weight may be chosen as the skeleton.
+  
+  
+    To address the issue with ungrammatical hypotheses and allow language model expansion and re-scoring, the hypothesis confidence computation is modified.
+    Instead of summing arbitrary confidence scores as in Equation 5, word posterior probabilities are used as follows where is the number of nodes in the confusion network for the source sentence ,is the number of tr

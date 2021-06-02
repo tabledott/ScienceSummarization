@@ -1,0 +1,6 @@
+).
+    The experiments below used the ForwardBackward algorithm (Jelinek, 1997), which is a dynamic programming algorithm for calculating the likelihood and the expectations in (2) in O(nm2) time, where n is the number of words in the training corpus and m is the number of HMM states.
+    Variational Bayesian inference attempts to find a function Q(t, &#952;, &#966;) that minimizes an upper bound (3) to the negative log likelihood.
+    The upper bound (3) is called the Variational Free Energy.
+    We make a &#8220;mean-field&#8221; assumption that the posterior can be well approximated by a factorized model Q in which the state sequence t does not covary with the model parameters &#952;, &#966;: The calculus of variations is used to minimize the KL divergence between the desired posterior distribution and the factorized approximation.
+    It turns out that if the likelihood and conjugate prior belong to exponential families then the optimal Q1 and Q2 do too, and there is an EM-like iterative procedure that fi

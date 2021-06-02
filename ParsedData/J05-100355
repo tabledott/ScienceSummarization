@@ -1,0 +1,17 @@
+f features were included in the model.
+    We will use the rule VP &#8212;&gt; PP VBD NP NP SBAR with head VBD as an example.
+    Note that the output of our baseline parser produces syntactic trees with headword annotations (see Collins [1999]) for a description of the rules used to find headwords).
+    Two-level rules.
+    Same as Rules, but also including the entire rule above the rule.
+    Two-level bigrams.
+    Same as Bigrams, but also including the entire rule above the rule.
+    Trigrams.
+    All trigrams within the rule.
+    The example rule would contribute the trigrams (VP, STOP, PP, VBD!
+    ), (VP, PP, VBD!, NP), (VP, VBD!, NP, NP), (VP, NP, NP, SBAR), and (VP,NP, SBAR, STOP) (! is used to mark the head of the rule).
+    Grandparent bigrams.
+    Same as Bigrams, but also including the nonterminal above the bigrams.
+    Lexical bigrams.
+    Same as Bigrams, but with the lexical heads of the two nonterminals also included.
+    Head Modifiers.
+    All head-modifier pairs, with the grandparent nonter

@@ -1,0 +1,13 @@
+between LSA dimensionality, training data and accuracy.
+    Our new algorithm, CWM, was used in this experiment.
+    The method is identical to C99 except the stemming algorithm has been disabled and LSA is used in the formulation of the similarity matrix.
+    Ten LSA spaces were examined.
+    Each space is characterised by the training data and its dimensionality. s and p imply the LSA space was trained on sentences and paragraphs, respectively.
+    The values {100, 200, 300, 400, 500} represent the dimensionality of the trained space.
+    For instance, &amp;quot;p, 400&amp;quot; is a 400-dimensional space that was trained on paragraphs.
+    Like C99, +r implies ranking is applied to the similarity matrix.
+    +b means CWM finds the ten most prominent boundaries.
+    Let ji be the column average.
+    Test results (table 4) show ranked LSA (column 4) has the lowest error rate.
+    The raw values (column 1 and 3) performed well.
+    The 1% difference in accuracy implies the termination strategy works well with

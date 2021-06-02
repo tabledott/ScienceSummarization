@@ -1,0 +1,7 @@
+; Foster and Kuhn, 2007; L&#168;u et al., 2007).
+    However, we note that the final conditional estimates p(s|t) from a given phrase table maximize the likelihood of joint empirical phrase pair counts over a word-aligned corpus.
+    This suggests a direct parallel to (1): where &#732;p(s, t) is a joint empirical distribution extracted from the IN dev set using the standard procedure.2 An alternative form of linear combination is a maximum a posteriori (MAP) combination (Bacchiani et al., 2004).
+    For the TM, this is: where cI(s, t) is the count in the IN phrase table of pair (s, t), po(s|t) is its probability under the OUT TM, and cI(t) = &amp;quot;s, cI(s', t).
+    This is motivated by taking &#946; po(s|t) to be the parameters of a Dirichlet prior on phrase probabilities, then maximizing posterior estimates p(s|t) given the IN corpus.
+    Intuitively, it places more weight on OUT when less evidence from IN is available.
+    To set &#946;, we used the same criterion as for &#945;, over a dev corpus: The M

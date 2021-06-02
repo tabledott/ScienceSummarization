@@ -1,0 +1,10 @@
+hm which uses the cosine coefficient instead of dot density for measuring similarity.
+    It incorporates the optimisations described in section 3.4.
+    R98(,&#8222;,d0t) is the modularised version of R98 for experimenting with different similarity measures.
+    R98(,,,,&#8222;) uses a variant of Kozima's semantic similarity measure (Kozima, 1993) to compute block similarity.
+    Word similarity is a function of word cooccurrence statistics in the given document.
+    Words that belong to the same sentence are considered to be related.
+    Given the co-occurrence frequencies f (wi, wi), the transition probability matrix t is computed by equation 10.
+    Equation 11 defines our spread activation scheme. s denotes the word similarity matrix, x is the number of activation steps and norm(y) converts a matrix y into a transition matrix. x = 5 was used in the experiment.
+    Experimental result (table 4) shows the cosine coefficient and our spread activation method improved segmentation accuracy.
+    The speed opti

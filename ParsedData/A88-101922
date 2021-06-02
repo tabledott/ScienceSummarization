@@ -1,0 +1,10 @@
+ parsed into noun phrases by laborious semi-automatic means (with considerable help from Eva Ejerhed).
+    It took about a man-week to prepare the training material.
+    The stochastic parser is given a sequence of parts of speech as input and is asked to insert brackets corresponding to the beginning and end of noun phrases.
+    Conceptually, the parser enumerates all possible parsings of the input and scores each of them by the precedence probabilities.
+    Consider, for example, the input sequence: NN VB.
+    There are 5 possible ways to bracket this sequence (assuming no recursion): Each of these parsings is scored by multiplying 6 precedence probabilities, the probability of an open/close bracket appearing (or not appearing) in any one of the three positions (before the NN, after the NN or after the VB).
+    The parsing with the highest score is returned as output.
+    A small sample of the output is given in the appendix.
+    The method works remarkably well considering how simple it is.
+    There is so

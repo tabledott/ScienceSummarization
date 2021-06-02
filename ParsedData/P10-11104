@@ -1,0 +1,8 @@
+ Joe&#8221; in Figure 2.
+    At step (4), we face a shiftreduce conflict: either combine &#8220;saw&#8221; and &#8220;Al&#8221; in a rey action (5a), or shift &#8220;with&#8221; (5b).
+    To resolve this conflict, there is a cost c associated with each state so that we can pick the best one (or few, with a beam) at each step.
+    Costs are accumulated in each step: as shown in Figure 1, actions sh, rex, and rey have their respective costs &#958;, &#955;, and &#961;, which are dot-products of the weights w and features extracted from the state and the action.
+    We view features as &#8220;abstractions&#8221; or (partial) observations of the current state, which is an important intuition for the development of dynamic programming in Section 3.
+    Feature templates are functions that draw information from the feature window (see Tab.
+    1(b)), consisting of the top few trees on the stack and the first few words on the queue.
+    For example, one such feature templatef100 = s0.w o q0.t is a conjunction of two 

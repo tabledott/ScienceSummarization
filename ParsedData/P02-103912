@@ -1,0 +1,6 @@
+otice that P is a model parameter, and that Pand P are obtained from the parsed training corpus. phrase pruning: We only consider limited pairs ( Section 2).
+    The pair must appear more than once in the Viterbi alignments4 of the training corpus.
+    Then we use the top-10 pairs ranked similarly to t-table pruning above, except we replace PP with P and use trigrams to estimate P .
+    By this pruning, we effectively remove junk phrase pairs, most of which come from misaligned sentences or untranslated phrases in the training corpus. r-table pruning: To reduce the number of rules for the decoding grammar, we use the top-N rules ranked by PrulePreord so that PrulePreord , where Pruleis a prior probability of the rule (in the original English order) found in the parsed English corpus, and Preordis the reordering probability in the TM.
+    The product is a rough estimate of how likely a rule is used in decoding.
+    Because only a limited number of reorderings are used in actual translation, a small number of r

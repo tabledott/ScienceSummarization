@@ -1,0 +1,10 @@
+ent to a phrase to consider longer contexts than a single word.
+    Although one may argue longer n-grams can also capture this information, the sparseness of n-grams means that long ngram features are rarely useful in practice.
+    We can easily use multiple clusterings in feature extraction.
+    This allows us to side-step the matter of choosing the optimal value k in the KMeans clustering algorithm.
+    Even though the phrases include single token words, we create word clusters with the same clustering algorithm as well.
+    The reason is that the phrase list, which comes from query logs, does not necessarily contain all the single token words in the documents.
+    Furthermore, due to tokenization differences between the query logs and the documents, we systematically missed some words, such as hyphenated words.
+    When creating the word clusters, we do not rely on a predefined list.
+    Instead, any word above a minimum frequency threshold is included.
+    In their dependency parser with cluster-based fe

@@ -1,0 +1,10 @@
+o 89.5%).
+    We experimented with iteratively reestimating parameters, as was done in the original formulation in (Church and Gale 1991).
+    Doing so resulted in a slight degradation in performance.
+    The data we are using is much cleaner than that used in (Church and Gale 1991) which probably explains why reestimation benefited them in their experiments and did not give any benefit to the error models in our experiments.
+    Next, we explore what happens to our results as we add a language model.
+    In order to get errors in context, we took the Brown Corpus and found all occurrences of all words in our test set.
+    Then we mapped these words to the incorrect spellings they were paired with in the test set, and ran our spell checker to correct the misspellings.
+    We used two language models.
+    The first assumed all words are equally likely, i.e. the null language model used above.
+    The second used a trigram language model derived from a large collection of on-line text (not including the Brown C

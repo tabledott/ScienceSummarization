@@ -1,0 +1,7 @@
+utput of Open IE systems such as TEXTRUNNER and WOE: incoherent extractions and uninformative extractions.
+    Incoherent extractions are cases where the extracted relation phrase has no meaningful interpretation (see Table 1 for examples).
+    Incoherent extractions arise because the learned extractor makes a sequence of decisions about whether to include each word in the relation phrase, often resulting in incomprehensible predictions.
+    To solve this problem, we introduce a syntactic constraint: every multi-word relation phrase must begin with a verb, end with a preposition, and be a contiguous sequence of words in the sentence.
+    Thus, the identification of a relation phrase is made in one fell swoop instead of on the basis of multiple, word-by-word decisions.
+    Uninformative extractions are extractions that omit critical information.
+    For example, consider the sentence &#8220;Faust made a deal with the devil.&#8221; Previous Open IE systems return the uninformative (Faust, made, a deal) instead 

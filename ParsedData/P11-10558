@@ -1,0 +1,6 @@
+h where extraction decisions are almost entirely driven by sentence-level reasoning.
+    However, defining the Yr random variables and tying them to the sentencelevel variables, Zi, provides a direct method for modeling weak supervision.
+    We can simply train the model so that the Y variables match the facts in the database, treating the Zi as hidden variables that can take any value, as long as they produce the correct aggregate predictions.
+    This approach is related to the multi-instance learning approach of Riedel et al. (2010), in that both models include sentence-level and aggregate random variables.
+    However, their sentence level variables are binary and they only have a single aggregate variable that takes values r E R U {none}, thereby ruling out overlapping relations.
+    Additionally, their aggregate decisions make use of Mintzstyle aggregate features (Mintz et al., 2009), that collect evidence from multiple sentences, while we use r(e1, e2) for r E R and ei E E. Given this form of supervisi

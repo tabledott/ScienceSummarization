@@ -1,0 +1,8 @@
+ined importance, probably because more structure is available in the input to represent.
+    In principle, we would have to construct one instance for each possible pair of a verb and a focus word in the sentence.
+    However, we restrict instances to those where there is at most one other verb/VP chunk between the verb and the focus, in case the focus precedes the verb, and no other verb in case the verb precedes the focus.
+    This restriction allows, for example, for a relative clause on the subject (as in our example sentence).
+    In the training data, 97.9% of the related pairs fulfill this condition (when counting VP chunks).
+    Experiments on the training data showed that increasing the admitted number of intervening VP chunks slightly increases recall, at the cost of precision.
+    Having constructed all instances from the test data and from a training set with the same level of partial structure, we first train the IGTree algorithm, and then let it classify the test instances.
+    Then, for each te

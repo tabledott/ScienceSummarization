@@ -1,0 +1,6 @@
+ the same test sentence should not affect the corpus f-scores.
+    By estimating the proportion of permutations that result in an absolute difference in corpus f-scores at least as great as that observed in the actual output, we obtain a distributionfree estimate of significance that is robust against parser and evaluator failures.
+    The results of this test are shown in Table 8.
+    The table shows that the BROWN reranker is not significantly different from the WSJ reranker.
+    In order to better understand the difference between the reranking parser trained on Brown and the WSJ+NANC/WSJ reranking parser (a reranking parser with the first-stage trained on WSJ+NANC and the second-stage trained on WSJ) on Brown data, we constructed a logistic regression model of the difference between the two parsers&#8217; fscores on the development data using the R statistical package5.
+    Of the 2,078 sentences in the development data, 29 sentences were discarded because evalb failed to evaluate at least one of the pars

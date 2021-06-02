@@ -1,0 +1,12 @@
+k and Johnson (2005) use coarse-to-fine parsing on top of the Charniak (2000) parser and get 50-best lists for section 23.
+			Figure 9(a) compares the results of oracle reranking.
+			Collins?
+			curve converges at around k = 50 while ours continues to increase.
+			With a beam width of 10?4 and k = 100, our parser plus oracle reaches an F-score of96.4%, compared to Collins?
+			94.9%.
+			Charniak and John son?s work, however, is based on a completely different parser whose 1-best F-score is 1.5 points higher than the1-bests of ours and Collins?, making it difficult to com pare in absolute numbers.
+			So we instead compared the relative improvement over 1-best.
+			Figure 9(b) shows that our work has the largest percentage of improvement in terms of F-score when k &gt; 20.
+			To further explore the impact of Collins?
+			cell limit on the quality of k-best lists, we plotted average number of parses for a given sentence length (Figure 10).
+			Generally speaking, as input sentences get longer, the number of parses g

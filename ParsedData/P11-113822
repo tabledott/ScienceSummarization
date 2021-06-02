@@ -1,0 +1,7 @@
+l components of GLOW, we use multiple distinct metrics for evaluation.
+    Ranker accuracy, which measures the performance of the ranker alone, is computed only over those mentions with a non-null gold disambiguation that appears in the candidate set.
+    It is equal to the fraction of these mentions for which the ranker returns the correct disambiguation.
+    Thus, a perfect ranker should achieve a ranker accuracy of 1.0, irrespective of limitations of the candidate generator.
+    Linker accuracy is defined as the fraction of all mentions for which the linker outputs the correct disambiguation (note that, when the title produced by the ranker is incorrect, this penalizes linker accuracy).
+    Lastly, we evaluate our whole system against other baselines using a previously-employed &#8220;bag of titles&#8221; (BOT) evaluation (Milne and Witten, 2008b).
+    In BOT, we compare the set of titles output for a document with the gold set of titles for that document (ignoring duplicates), and utilize standard precisi

@@ -1,0 +1,7 @@
+rward-Backward pruning (Sixtus and Ortmanns, 1999) so that the average numbers of arcs per word (lattice density) is 30.
+    For N-best MBR, we use N-best lists of size 1000.
+    To match the loss function, Lattice MBR is performed at the word level for aren/zhen and at the character level for enzh.
+    Our lattice MBR is implemented using the Google OpenFst library.6 In our experiments, p, r (Equation 12) have values of 0.85/0.72, 0.80/0.62, and 0.63/0.48 for aren, zhen, and enzh respectively.
+    We note that Lattice MBR provides gains of 0.21.0 BLEU points over N-best MBR, which in turn gives 0.2-0.6 BLEU points over MAP.
+    These gains are obtained on top of a baseline system that has competitive performance relative to the results reported in the NIST 2008 Evaluation.7 This demonstrates the effectiveness of lattice MBR decoding as a realization of MBR decoding which yields substantial gains over the N-best implementation.
+    The gains from lattice MBR over N-best MBR could be due to a combination of fa

@@ -1,0 +1,11 @@
+a k-best list, but discarded potentially better translations in the past iter ations.
+			An experiment has been undertaken using a small development set together with sparse features for the reranking of a k-best translation (Watanabe et al,2006a).
+			They relied on a variant of a voted perceptron, and achieved significant improvements.
+			How ever, their work was limited to reranking, thus the improvement was relative to the performance of the baseline system, whether or not there was a good translation in a list.
+			In our work, the sparse features are directly integrated into the DP-based search.
+			The design of the sparse features was inspired by Zens and Ney (2006).
+			They exploited theword alignment structure inside the phrase translation pairs for discriminatively training a reordering model in their phrase-based translation.
+			The re ordering model simply classifies whether to perform monotone decoding or not.
+			The trained model is treated as a single feature function integrated in Eq.
+			1.
+			O

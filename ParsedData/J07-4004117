@@ -1,0 +1,8 @@
+e preposition is PP/(S[ng]\NP), then the GR is xcomp; thus in The future depends on building cooperation the relation between the verb and preposition is (xcomp depends on).
+    There are a number of CCG dependencies with similar constraints, many of them covering the iobj/xcomp distinction.
+    The second difficulty in creating the transformation is that not all the GRs are binary relations, whereas the CCG dependencies are all binary.
+    The primary example of this is to-infinitival constructions.
+    For example, in the sentence The company wants to wean itself away from expensive gimmicks, the CCG parser produces two dependencies relating wants, to and wean, whereas there is only one GR: (xcomp to wants wean).
+    The final row of Table 15 gives an example.
+    We implement this constraint by introducing a %k variable into the GR template which denotes the argument of the category in the constraint column (which, as before, is the lexical category of the word filling the argument slot).
+    In the exampl

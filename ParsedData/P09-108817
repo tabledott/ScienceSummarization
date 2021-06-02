@@ -1,0 +1,8 @@
+ler to permute the internal structure of the trees more easily.
+    Our model is parameterised by a vector of hyperparameters, &#945; = which control the sparsity assumption over various model parameters.
+    We could optimise each concentration parameter on the training corpus by hand, however this would be quite an onerous task.
+    Instead we perform inference over the hyperparameters following Goldwater and Griffiths (2007) by defining a vague gamma prior on each concentration parameter, &#945;x &#8212; Gamma(10&#8722;4,104).
+    This hyper-prior is relatively benign, allowing the model to consider a wide range of values for the hyperparameter.
+    We sample a new value for each &#945;x using a log-normal distribution with mean &#945;x and variance 0.3, which is then accepted into the distribution p(&#945;x|d, &#945;&#8722;) using the MetropolisHastings algorithm.
+    Unlike the Gibbs updates, this calculation cannot be distributed over a cluster (see Section 4.4) and thus is very costly.
+    Therefore fo

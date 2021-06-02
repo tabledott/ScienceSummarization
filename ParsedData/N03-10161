@@ -1,0 +1,8 @@
+ 
+    PCFG parsing algorithms with worst-case cubic-time bounds are well-known.
+    However, when dealing with wide-coverage grammars and long sentences, even cubic algorithms can be far too expensive in practice.
+    Two primary types of methods for accelerating parse selection have been proposed.
+    Roark (2001) and Ratnaparkhi (1999) use a beam-search strategy, in which only the best n parses are tracked at any moment.
+    Parsing time is linear and can be made arbitrarily fast by reducing n. This is a greedy strategy, and the actual Viterbi (highestprobability) parse can be pruned from the beam because, while it is globally optimal, it may not be locally optimal at every parse stage.
+    Chitrao and Grishman (1990), Caraballo and Charniak (1998), Charniak et al. (1998), and Collins (1999) describe best-first parsing, which is intended for a tabular item-based framework.
+    In best-first parsing, one builds a figure-of-merit (FOM) over parser items, and uses the FOM to decide the order in which agenda it

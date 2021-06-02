@@ -1,0 +1,9 @@
+s position.
+    So the array must be filled from the bottom-up, and left to right.
+    Intuitively, this is because larger regions must be built up from smaller regions within them.
+    For example, to calculate element (8,10), we compute the length-weighted averages of the scores of the best walks over the pair of elements (8,8) and (9,10) versus the pair (8,9) and (10,10), and compare them with the scores of any single chart components going from 8 to 10 (there were none), and take the maximum.
+    Referring to Figure 2 again, this corresponds to a choice between combining the translations of (8,8) VIASA and (9,10) contaba con versus combining the (not shown) translations of (8,9) VIASA contaba and (10,10) con.
+    (This (8,9) element was itself previously built up from single word components.)
+    Thus, we compare (2*1+ 10*2)/3 = 7.33 with (3.5*2+2*1)/3 = 3.0 and select the first, 7.33.
+    The first wins because contaba con has a high score as an idiom from the glossary.
+    Figure 5 shows the final array

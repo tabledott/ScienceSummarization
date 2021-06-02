@@ -1,0 +1,7 @@
+et, we first estimate the probability of a random word belonging to a subhierarchy (a synset and its hyponyms).
+			We use the frequency counts of synsets in the SemCor corpus (Landes, Leacock, Tengi 1998) to estimate the probability of a subhierarchy.
+			Since SemCor is a fairly small corpus, the frequency counts of the synsets in the lower part of the WordNet hierarchy are very sparse.
+			We smooth the probabilities by assuming that all siblings are equally likely given the parent.
+			A class is then defined as the maximal subhierarchy with probability less than a threshold (we used e-2).
+			We used Minipar 1 (Lin 1994), a broad coverage English parser, to parse about 1GB (144M words) of newspaper text from the TREC collection (1988 AP Newswire, 1989-90 LA Times, and 1991 San Jose Mercury) at a speed of about 500 words/second on a PIII-750 with 512MB memory.
+			We collected the frequency counts of the grammatical relationships (contexts) output by Minipar and used them to compute the pointwise mutual informa

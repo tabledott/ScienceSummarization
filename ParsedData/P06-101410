@@ -1,0 +1,9 @@
+exical chains (Morris and Hirst, 1991).
+    SSI performs disambiguation in an iterative fashion, by maintaining a set C of senses as a semantic context.
+    Initially, C = V (the entire set of senses of words in C).
+    At each step, for each sense S in C, the algorithm calculates a score of the degree of connectivity between S and the other senses in C: where IC(S, S') is the set of interconnections between senses S and S'.
+    The contribution of a single interconnection is given by the reciprocal of its length, calculated as the number of edges connecting its ends.
+    The overall degree of connectivity is then normalized by the number of contributing interconnections.
+    The highest ranking sense S of word w is chosen and the senses of w are removed from the semantic context C. The algorithm terminates when either C = &#8709; or there is no sense such that its score exceeds a fixed threshold.
+    Given a word w, semantic matching is performed in two steps.
+    First, for each dictionary D E {WORDNET, ODE

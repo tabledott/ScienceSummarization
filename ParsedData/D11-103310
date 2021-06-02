@@ -1,0 +1,7 @@
+ighlight the data selection work, we used an out-of-the-box Moses framework using GIZA++ (Och and Ney, 2003) and MERT (Och, 2003) to train and tune the machine translation systems.
+    The only exception was the phrase table for the large out-of-domain system trained on 12m sentence pairs, which we trained on a cluster using a word-dependent HMM-based alignment (He, 2007).
+    We used the Moses decoder to produce all the system outputs, and scored them with the NIST mt-eval31a 4 tool used in the IWSLT evalutation.
+    Our work depends on the use of language models to rank sentences in the training corpus, in addition to their normal use during machine translation tuning and decoding.
+    We used the SRI Language Modeling Toolkit (Stolcke, 2002) was used for LM training in all cases: corpus selection, MT tuning, and decoding.
+    We constructed 4gram language models with interpolated modified Kneser-Ney discounting (Chen and Goodman, 1998), and set the GoodTuring threshold to 1 for trigrams.
+    The in-domain 

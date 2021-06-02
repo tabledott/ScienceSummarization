@@ -1,0 +1,9 @@
+ to use this algorithm with a variety of CKY-based decoders: here, we are using it in conjunction with both the Hiero decoder and our syntax-based decoder.
+  
+  
+    In this section, we describe the new features introduced on top of our baseline systems.
+    Discount features Both of our systems calculate several features based on observed counts of rules in the training data.
+    Though the syntax-based system uses Good-Turing discounting when computing the P(e, c) feature, we find, as noted above, that it uses quite a few one-count rules, suggesting that their probabilities have been overestimated.
+    We can directly attack this problem by adding features counti that reward or punish rules seen i times, or features count[i,j] for rules seen between i and j times.
+    String-to-tree MT offers some unique levers to pull, in terms of target-side features.
+    Because the system outputs English trees, we can analyze output trees on the tuning set and design new features to encourage the decoder to produce more

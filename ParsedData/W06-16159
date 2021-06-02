@@ -1,0 +1,9 @@
+we showed example pivot features of type &lt;the token on the right&gt;.
+    We also use pivot features of type &lt;the token on the left&gt; and &lt;the token in the middle&gt;.
+    In practice there are many thousands of pivot features, corresponding to instantiations of these three types for frequent words in both domains.
+    We choose m pivot features, which we index with E. From each pivot feature we create a binary classification problem of the form &#8220;Does pivot feature E occur in this instance?&#8221;.
+    One such example is &#8220;Is &lt;the token on the right&gt; required?&#8221; These binary classification problems can be trained from the unlabeled data, since they merely represent properties of the input.
+    If we represent our features as a binary vector x, we can solve these problems using m linear predictors.
+    Note that these predictors operate on the original feature space.
+    This step is shown in line 2 of Figure 3.
+    Here L(p, y) is a real-valued loss function for binary classi

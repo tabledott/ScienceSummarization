@@ -1,0 +1,7 @@
+ng trained and tested on only the sentences of length &lt; 15 words.
+    Aside from the length restriction, we used the standard splits: sections 2-21 for training (9753 sentences), 22 for development (603 sentences), and 23 for final testing (421 sentences).
+    As a baseline, we trained a CNF transformation of the unlexicalized model of Klein and Manning (2003) on this data.
+    The resulting grammar had 3975 non-terminal symbols and contained two kinds of productions: binary nonterminal rewrites and tag-word rewrites.5 The scores for the binary rewrites were estimated using unsmoothed relative frequency estimators.
+    The tagging rewrites were estimated with a smoothed model of P(w|t), also using the model from Klein and Manning (2003).
+    Figure 3 shows the performance of this model (GENERATIvE): 87.99 F1 on the test set.
+    For the BAsIC max-margin model, we used exactly the same set of allowed rewrites (and therefore the same set of candidate parses) as in the generative case, but estimated their wei

@@ -1,0 +1,5 @@
+e generalizes to the case where we have n nonterminals in a SCFG rule, and the decoder conservatively assumes nothing can be done on language model scoring (because target-language spans are non-contiguous in general) until the real nonterminal has been recognized.
+    In other words, targetlanguage boundary words from each child nonterminal of the rule will be cached in all virtual nonterminals derived from this rule.
+    In the case of m-gram integrated decoding, we have to maintain 2(m &#8722; 1) boundary words for each child nonterminal, which leads to a prohibitive overall complexity of O(|w|3+2n(m&#8722;1)), which is exponential in rule size (Huang et al., 2005).
+    Aggressive pruning must be used to make it tractable in practice, which in general introduces many search errors and adversely affects translation quality.
+    In the second case, however: Here since PP and VP are contiguous (but swapped) in the target-language, we can include the language model score by adding Pr(with  |meeting), and the r

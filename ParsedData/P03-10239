@@ -1,0 +1,9 @@
+actic, semantic and positional relationships of an anaphor and any one of its candidates.
+    Besides, the feature set may also contain intercandidate features characterizing the relationships between the pair of candidates, e.g. the distance between the candidates in the number distances or paragraphs.
+    Based on the feature vectors generated for each anaphor encountered in the training data set, a classifier can be trained using a certain machine learning algorithm, such as C4.5, RIPPER, etc.
+    Given the feature vector of a test instance inst(ci, cj , ana ) (i &gt; j), the classifier returns the positive class indicating that Ci is preferred to Cj as the antecedent of ana; or negative indicating that Cj is preferred.
+    Let CR( inst(ci , cj , ana)) denote the classification result for an instance inst(ci, cj , ana ) .
+    The antecedent of an anaphor is identified using the algorithm shown in Figure 1.
+  
+  
+    Input: ana: the anaphor under consideration candidate_set: the set of antecedent candidates

@@ -1,0 +1,7 @@
+ rather than just cross-entropy.
+    We apply this criterion for the first time to the task of selecting training data for machine translation systems.
+    We furthermore extend this idea for MT-specific purposes.
+    In addition to improving the performance of a single general model with respect to a target domain, there is significant interest in using two translation models, one trained on a larger general-domain corpus and the other on a smaller in-domain corpus, to translate in-domain text.
+    After all, if one has access to an in-domain corpus with which to select data from a general-domain corpus, then one might as well use the in-domain data, too.
+    The expectation is that the larger general-domain model should dominate in regions where the smaller in-domain model lacks coverage due to sparse (or non-existent) ngram counts.
+    In practice, most practical systems also perform target-side language model adaptation (Eck et al., 2004); we eschew this in order to isolate the effects of translation mode

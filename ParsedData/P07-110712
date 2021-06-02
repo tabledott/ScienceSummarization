@@ -1,0 +1,8 @@
+rst draws an entity type T, a gender G, a number N from the distributions 0t, 09, and 0n, respectively.
+    Once the properties are fetched, a mention type M is chosen (proper, nominal, pronoun), according to a global multinomial (again with a symmetric Dirichlet prior and parameter AM).
+    This corresponds to the (temporary) assumption that the speaker makes a random i.i.d. choice for the type of each mention.
+    Our head model will then generate a head, conditioning on the entity, its properties, and the mention type, as shown in figure 3(b).
+    If M is not a pronoun, the head is drawn directly from the entity head multinomial with parameters 0hz .
+    Otherwise, it is drawn based on a global pronoun head distribution, conditioning on the entity properties and parametrized by 9.
+    Formally, it is given by: Although we can observe the number and gender draws for some mentions, like personal pronouns, there are some for which properties aren&#8217;t observed (e.g., it).
+    Because the entity property dr

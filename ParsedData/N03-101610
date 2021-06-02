@@ -1,0 +1,9 @@
+lity &#946; + a never increases.
+    The proof of this is very similar to the proof of the uniform-cost case in Klein and Manning (2001a), and so we omit it for space reasons (it can be found in Klein and Manning, 2002).
+    Concretely, we can use b + a as the edge priority, provided a is an admissible, monotonic estimate of &#945;.
+    We will still have a correct algorithm, and even rough heuristics can dramatically cut down the number of edges processed (and therefore total work).
+    We next discuss several estimates, describe how to compute them efficiently, and show the edge savings when parsing Penn treebank WSJ sentences.
+  
+  
+    When parsing with a PCFG G, each edge e = X:[i, j] spans some interval [i, j] of the sentence and is labeled 2The example here shows a bottom-up construction of a parse tree.
+    However, the present algorithm and estimates work just as well for top-down chart parsing, given suitable active items as nodes; see (Klein and Manning, 2001a). by some grammar symbol (or state) X.

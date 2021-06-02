@@ -1,0 +1,7 @@
+ariant we made use of.
+    The limitation of this approach is that as the amount and variety of training data increases, the optimal segmentation strategy changes: more aggressive segmentation results in fewer OOV tokens, but automatic evaluation metrics indicate lower translation quality, presumably because the smaller units are being translated less idiomatically (Habash and Sadat, 2006).
+    Lattices allow the decoder to make decisions about what granularity of segmentation to use subsententially.
+    In our experiments we used two state-of-the-art Chinese word segmenters: one developed at Harbin Institute of Technology (Zhao et al., 2001), and one developed at Stanford University (Tseng et al., 2005).
+    In addition, we used a character-based segmentation.
+    In the remaining of this paper, we use cs for character segmentation, hs for Harbin segmentation and ss for Stanford segmentation.
+    We built two types of lattices: one that combines the Harbin and Stanford segmenters (hs+ss), and one which uses 

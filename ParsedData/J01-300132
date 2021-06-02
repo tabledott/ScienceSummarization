@@ -1,0 +1,8 @@
+the part-ofspeech tags are used to decide which are content words.
+    There is no attempt to disambiguate any of the words identified as part of a named entity.
+    These are excluded because they have already been analyzed semantically by means of the classification added by the named entity identifier (see Section 4.4).
+    Another reason for not attempting WSD on named entities is that when words are used as names they are not being used in any of the senses listed in a dictionary.
+    For example, Rose and May are names but there are no senses in LDOCE for this usage.
+    It may be possible to create a dummy entry in the set of LDOCE senses indicating that the word is being used as a name, but then the sense tagger would simply repeat work carried out by the named entity identifier.
+    We take the part-of-speech tags assigned by the Brill tagger and use a manually created mapping to translate these to the corresponding LDOCE grammatical category (see Section 3.2).
+    Any senses which do not correspond 

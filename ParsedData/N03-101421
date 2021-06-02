@@ -1,0 +1,10 @@
+space of derivations in between two words we do a best-first search.
+    This search is not restricted by a beam width, but a limit is placed on the search&#8217;s branching factor.
+    At each point in a partial derivation which is being pursued by the search, only the 10 best alternative decisions are considered for continuing that derivation.
+    This was done because we found that the best-first search tended to pursue a large number of alternative labels for a nonterminal before pursuing subsequent derivation steps, even though only the most probable labels ended up being used in the best derivations.
+    We found that a branching factor of 10 was large enough that it had virtually no effect on the validation accuracy.
+  
+  
+    We used the Penn Treebank (Marcus et al., 1993) to perform empirical experiments on this parsing model.
+    To sion on the testing set. test the effects of varying vocabulary sizes on performance and tractability, we trained three different models.
+    The simplest model (&#8220;

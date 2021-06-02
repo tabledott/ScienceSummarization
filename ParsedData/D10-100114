@@ -1,0 +1,9 @@
+directly Here (i, j) represents a dependency with head wi and modifier wj (i = 0 corresponds to the root symbol in the parse).
+    We use D &#8838; {0, 1}|I'dep |to denote the set of valid projective dependency parses.
+    The second model we use is a lexicalized CFG.
+    Each symbol in the grammar takes the form A(h) where A &#8712; N is a non-terminal, and h &#8712; {1... n} is an index specifying that wh is the head of the constituent.
+    Rule productions take the form hA(a) &#8594; B(b) C(c), i, k, ji where b &#8712; {i ... k}, c &#8712; {(k + 1) ... j}, and a is equal to b or c, depending on whether A receives its head-word from its left or right child.
+    Each such rule implies a dependency (a, b) if a = c, or (a, c) if a = b.
+    We take Ihead to be the index set of all such rules, and I0head = Ihead &#8746; Ifirst to be the extended index set.
+    We define H &#8838; {0, 1}|I'head |to be the set of valid parse trees.
+    The integrated parsing problem is then to find where R = {(y, d) : y &#8712; H,

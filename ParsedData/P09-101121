@@ -1,0 +1,10 @@
+ the Robocup domain.
+    Figure 5 shows the predictions of the three models on an example.
+    Model 1 is only able to form isolated (but not completely inaccurate) associations.
+    By modeling segmentation, Model 2 accounts for the intermediate words, but errors are still made due to the lack of Markov structure.
+    Model 3 remedies this.
+    However, unexpected structures are sometimes learned.
+    For example, the temperature.time=6-21 field indicates daytime, which happens to be perfectly correlated with the word high, although high intuitively should be associated with the temperature.max field.
+    In these cases of high correlation (Table 2 provides another example), it is very difficult to recover the proper alignment without additional supervision.
+    In order to scale up our models to the NFL domain, we first pruned for each sentence the records which have either no numerical values (e.g., 23, 23-10, 2/4) nor name-like words (e.g., those that appear only capitalized in the text) in common.
+    Th

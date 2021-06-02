@@ -1,0 +1,11 @@
+are shown over five-fold cross-validation.
+    Over 65% of word tokens are ambiguous.
+    The accuracy of the first tag in each word affects the PCFG and the accuracy of the first morpheme affects the translation model (under our aggressive morphological lemmatization). an abysmal 2.5%&#8211;3.6%.
+    7
+  
+  
+    Having trained each part of the model, we bring them together in a unified dynamic program to perform inference on the bilingual text as described in &#167;2.
+    In order to experiment easily with different algorithms, we implemented all the morphological disambiguation and parsing models in this paper in Dyna, a new language for weighted dynamic programming (Eisner et al., 2004).
+    For parameter estimation, we used the complementary DynaMITE tool.
+    Just as CKY parsing starts with words in its chart, the dynamic program chart for the bilingual parser is seeded with the links given in the hypothesized word alignment.
+    All our current results are optimal under the model, but as we scale up to 

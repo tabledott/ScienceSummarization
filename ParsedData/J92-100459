@@ -1,0 +1,6 @@
+meaning representation form that can be used to perform whatever operations the user intended by speaking the sentence.
+    We currently achieve this translation step in a second-pass treewalk through the completed parse tree.
+    Although the generation of semantic frames could be done on the fly as the parse is being proposed, it seems inappropriate to go through all of that extra work for large numbers of incorrect partial theories, due to the uncertainty as to the identity of the terminal word strings inherent in spoken input.
+    We have taken the point of view that all syntactic and semantic information can be represented uniformly in strictly hierarchical structures in the parse tree.
+    Thus the parse tree contains nodes such as [subject] and [dir-object] that represent structural roles, as well as nodes such as [on-street] and [a-school] representing specific semantic categories.
+    There are no separate semantic rules off to the side; rather, the semantic information is encoded directly as names a

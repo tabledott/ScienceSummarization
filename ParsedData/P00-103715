@@ -1,0 +1,8 @@
+n we allow the equivalent set of edit operations to those used in (Church and Gale 1991).
+    This is a proper superset of the set of edits where the maximum window is zero and a proper subset of the edits where the maximum window is one.
+    The CG model is essentially equivalent to the Church and Gale error model, except (a) the models above can posit an arbitrary number of edits and (b) we did not do parameter reestimation (see below).
+    Next, we measured how much we gain by conditioning on the position of the edit relative to the source word.
+    These results are shown in Table 2.
+    As we expected, positional information helps more when using a richer edit set than when using only single character edits.
+    For a maximum window size of 0, using positional information gives a 13% relative improvement in 1-best accuracy, whereas for a maximum window size of 4, the gain is 22%.
+    Our full strength model gives a 52% relative error reduction on 1-best accuracy compared to the CG model (95.0% compared t

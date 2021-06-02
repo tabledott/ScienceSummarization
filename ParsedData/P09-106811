@@ -1,0 +1,9 @@
+ltaneously with narrative chains by finding salient words that represent coreferential arguments.
+    We record counts of arguments that are observed with each pair of event slots, build the referential set for each word from its coreference chain, and then represent each observed argument by the most frequent head word in its referential set (ignoring pronouns and mapping entity mentions with person pronouns to a constant PERSON identifier).
+    As an example, the following contains four worker mentions: But for a growing proportion of U.S. workers, the troubles really set in when they apply for unemployment benefits.
+    Many workers find their benefits challenged.
+    The four bolded terms are coreferential and (hopefully) identified by coreference.
+    Our algorithm chooses the head word of each phrase and ignores the pronouns.
+    It then chooses the most frequent head word as the most salient mention.
+    In this example, the most salient term is workers.
+    If any pair of event slots share arguments f

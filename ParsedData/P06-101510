@@ -1,0 +1,8 @@
+ration plus one.
+    In general, we expect that the set of patterns is formed by those of the previous iteration plus a new one.
+    Yet, new statistical evidence can lead the algorithm to discard a pattern that was previously discovered.
+    In this phase, Espresso retrieves from the corpus the set of instances I that match any of the patterns in P. In Section 3.2, we propose a principled measure of instance reliability, rt, for ranking instances.
+    Next, Espresso filters incorrect instances using the algorithm proposed in Section 3.3 and then selects the highest scoring m instances, according to rt, as input for the subsequent iteration.
+    We experimentally set m=200.
+    In small corpora, the number of extracted instances can be too low to guarantee sufficient statistical evidence for the pattern discovery phase of the next iteration.
+    In such cases, the system enters an expansion phase, where instances are expanded as follows: Web expansion: New instances of the patterns in P are retrieved from the

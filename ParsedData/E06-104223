@@ -1,0 +1,6 @@
+; sit above the baseline.
+    The dip is due to the fact that while TroFi can generate some beneficial similarities between words related by context, it can also generate some detrimental ones.
+    When we use sum of similarities, it is possible for the transitively discovered indirect similarities between a target nonliteral sentence and all the sentences in a feedback set to add up to more than a single direct similarity between the target sentence and a single feedback set sentence.
+    This is not possible with highest similarity because a single sentence would have to show a higher similarity to the target sentence than that produced by sharing an identical word, which is unlikely since transitively discovered similarities generally do not add up to 1.
+    So, although highest similarity occasionally produces better results than using sum of similarities, on average we can expect to get better results with the latter.
+    In this experiment alone, we get an average f-score of 46.3% for the sum of similar

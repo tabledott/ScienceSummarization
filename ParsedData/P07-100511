@@ -1,0 +1,8 @@
+ining example for the Chinese phrase, with the corresponding English phrase of the grammar rule as its translation.
+    Hence, unlike traditional WSD where the sense classes are tied to a specific sense inventory, our &#8220;senses&#8221; here consist of the English phrases extracted as translations for each Chinese phrase.
+    Since the extracted training data may be noisy, for each Chinese phrase, we remove English translations that occur only once.
+    Furthermore, we only attempt WSD classification for those Chinese phrases with at least 10 training examples.
+    Using the WSD classifier described in Section 2, we classified the words in each Chinese source sentence to be translated.
+    We first performed WSD on all single Chinese words which are either noun, verb, or adjective.
+    Next, we classified the Chinese phrases consisting of 2 consecutive Chinese words by simply treating the phrase as a single unit.
+    When performing classification, we give as output the set of English translations with asso

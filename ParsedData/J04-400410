@@ -1,0 +1,7 @@
+nal step, head-finding, is actually required by some of the previous steps in certain cases; in our implementation, we selectively employ a head-finding module during the first 10 steps where necessary.
+    A few of the preprocessing steps rely on the notion of a coordinated phrase.
+    In this article, the conditions under which a phrase is considered coordinated are slightly more detailed than is described in Collins&#8217; thesis.
+    A node represents a coordinated phrase if In the Penn Treebank, a coordinating conjunction is any preterminal node with the label CC.
+    This definition essentially picks out all phrases in which the head-child is truly conjoined to some other phrase, as opposed to a phrase in which, say, there is an initial CC, such as an S that begins with the conjunction but.
+    As a preprocessing step, pruning of unnecessary nodes simply removes preterminals that should have little or no bearing on parser performance.
+    In the case of the English Treebank, the pruned subtrees are all 

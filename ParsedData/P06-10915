@@ -1,0 +1,8 @@
+ather than predicting local block neighbors as in (Tillmann and Zhang, 2005) , here the model parameters are trained in a global setting.
+    Starting with a simple model, the training data is decoded multiple times: the weight vector is trained to discriminate block sequences with a high translation score against block sequences with a high BLEU score 2.
+    The high BLEU scoring block sequences are obtained as follows: the regular phrase-based decoder is modified in a way that it uses the BLEU score as optimization criterion (independent of any translation model).
+    Here, searching for the highest BLEU scoring block sequence is restricted to local re-ordering as is the model-based decoding (as shown in Fig.
+    1).
+    The BLEU score is computed with respect to the single reference translation provided by the parallel training data.
+    A block sequence with an average BLEU score of about is obtained for each training sentence 3.
+    The &#8217;true&#8217; maximum BLEU block sequence as well as the high s

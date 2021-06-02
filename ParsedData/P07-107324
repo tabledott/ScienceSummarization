@@ -1,0 +1,7 @@
+d to find other pairs of entities exhibiting the same relation.
+    Ideally, the user would only need to provide positive pairs.
+    Sentences containing one of the relation arguments could be extracted from the web, and likely negative sentence examples automatically created by pairing this entity with other named entities mentioned in the sentence.
+    In this scenario, the training set can contain both false positive and false negative noise.
+    One useful side effect is that Type I bias is partially removed &#8211; some bias still remains due to combinations of at least two words, each correlated with a different argument of the relation.
+    We are also investigating methods for reducing Type II bias, either by modifying the word weights, or by integrating an appropriate measure of word distribution across positive bags directly in the objective function for the MIL problem.
+    Alternatively, implicit negative evidence can be extracted from sentences in positive bags by exploiting the fact that, beside

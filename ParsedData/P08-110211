@@ -1,0 +1,7 @@
+t, a 4-gram POS language model functioning as the product of statetransition probabilities in HMM, and a word-POS co-occurrence model describing how much probably a word sequence coexists with a POS sequence.
+    As shown in Figure 1, the character-based perceptron is used as the inside-layer linear model and sends its output to the outside-layer.
+    Besides the output of the perceptron, the outside-layer also receive the outputs of the word LM, the POS LM, the co-occurrence model and a word count penalty which is similar to the translation length penalty in SMT.
+    Language model (LM) provides linguistic probabilities of a word sequence.
+    It is an important measure of fluency of the translation in SMT.
+    Formally, an n-gram word LM approximates the probability of a word sequence W = w1:m with the following product: Notice that a bi-gram POS LM functions as the product of transition probabilities in HMM.
+    Given a training corpus with POS tags, we can train a word-POS co-occurrence model to approxima

@@ -1,0 +1,6 @@
+lamed defines a probability distribution P(links(u, v)|cooc(u, v), A+, A&#8722;) which appears to make our work redundant.
+    However, this distribution refers to the probability that two word types u and v are linked links(u, v) times in the entire corpus.
+    Our distribution P(l|e, f) refers to the probability of linking a specific co-occurrence of the word tokens e and f. In Melamed&#8217;s work, these probabilities are used to compute a score based on a probability ratio.
+    In our work, we use the probabilities directly.
+    By far the most prominent probability models in machine translation are the IBM models and their extensions.
+    When trying to determine whether two words are aligned, the IBM models ask, &#8220;What is the probability that this English word generated this French word?&#8221; Our model asks instead, &#8220;If we are given this English word and this French word, what is the probability that they are linked?&#8221; The distinction is subtle, yet important, introducing many differen

@@ -1,0 +1,6 @@
+ed by the generator is that the original translations are considered in principle to be word synchronous in the sense that selecting a word from one original translation normally implies &#8220;marking&#8221; a corresponding word in each of the other original translations as &#8220;used&#8221;.
+    The way this is determined is explained below.
+    Two partial hypotheses that have the same partial translation, but have a different set of words that have been accounted for are considered different.
+    A hypothesis is considered &#8220;complete&#8221; if the next word chosen to extend the hypothesis is the explicit end-of-sentence marker from one of the original translation strings.
+    At the start of hypothesis generation, there is a single hypothesis, which has the empty string as its partial translation and where none of the words in any of the original translations are marked as used.
+    In each iteration, the decoder extends a hypothesis by choosing the next unused word from one of the original translat

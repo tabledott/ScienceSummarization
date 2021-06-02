@@ -1,0 +1,11 @@
+  Section 6 shows experimental results.
+    Section 7 discusses LM issues, and is followed by conclusions.
+  
+  
+    The syntax-based TM defined by (Yamada and Knight, 2001) assumes an English parse tree as a channel input.
+    The channel applies three kinds of stochastic operations on each node : reordering children nodes (), inserting an optional extra word to the left or right of the node (), and translating leaf words ().1 These operations are independent of each other and are conditioned on the features ( , , ) of the node.
+    Figure 1 shows an example.
+    The child node sequence of the top node VB is reordered from PRP-VB1-VB2 into PRP-VB2-VB1 as seen in the second tree (Reordered).
+    An extra word ha is inserted at the leftmost node PRP as seen in the third tree (Inserted).
+    The English word He under the same node is translated into a foreign word kare as seen in the fourth tree (Translated).
+    After these operations, the channel emits a foreign word sentenceby taking the leaves of the modifi

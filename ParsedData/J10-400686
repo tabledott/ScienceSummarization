@@ -1,0 +1,6 @@
+in W1xLW2 space.
+    Crucially, the algorithm can provide plausibility scores for nouns that do not co-occur with the target verb in the corpus, by looking at how close they are to the centroid of nouns that do often co-occur with the verb.
+    The corpus may contain neither eat topinambur nor eat sympathy, but the topinambur vector will likely be closer to the prototypical eat object vector than the one of sympathy would be.
+    It is worth stressing that the whole process relies on a single W1xLW2 matrix: This space is first used to identify typical subjects (or objects) of a verb via subspacing, then to construct centroid vectors for the verb subject (object) prototypes, and finally to measure the distance of nouns to these centroids.
+    Our method is essentially the same, save for implementation and parameter choice details, as the one proposed by Pad&#180;o, Pad&#180;o, and Erk (2007), in turn inspired by Erk (2007).
+    However, they treat the identification of typical argument fillers of a verb as an 

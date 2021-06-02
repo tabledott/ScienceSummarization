@@ -1,0 +1,5 @@
+s will converge faster to the optimum (on average).
+    Yet, it is known from worst case complexity theory that solving a general ILP is NP-hard; hence, these solvers may not scale well with the sentence length.
+    Merely considering the LP-relaxed version of the problem at test time is unsatisfactory, as it may lead to a fractional solution (i.e., a solution whose components indexed by arcs, z = (z-)-EA, are not all integer), which does not correspond to a valid dependency tree.
+    We propose the following approximate algorithm to obtain an actual parse: first, solve the LP relaxation (which can be done in polynomial time with interior-point methods); then, if the solution is fractional, project it onto the feasible set Y(x).
+    Fortunately, the Euclidean projection can be computed in a straightforward way by finding a maximal arborescence in the directed graph whose weights are defined by z (we omit the proof for space); as we saw in &#167;2.2, the ChuLiu-Edmonds algorithm can do this in polynomial time.

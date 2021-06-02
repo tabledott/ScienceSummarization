@@ -1,0 +1,8 @@
+was used to estimate dependencies between all co-occuring (source word, target word) pairs.
+    For each source word S, target words were ranked by their dependence with S. The top N target words in the rank-ordering for S formed the entry for S in the N-best lexicon.
+    In other words, the relative magnitude of dependence between S and its candidate translations was used as a maximum likelihood estimator of the translations of S. The POS Filter is a predicate filter.
+    It is based on the idea that word pairs that are good translations of each other are likely to be the same parts of speech in their respective languages.
+    For example, a noun in one language is very unlikely to be translated as a verb in another language.
+    Therefore, candidate translation pairs involving different parts of speech should be filtered out.
+    This heuristic should not be taken too far, however, in light of the imperfection of today's tagging technology.
+    For instance, particles are often confused with prepositions an

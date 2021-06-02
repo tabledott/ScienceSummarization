@@ -1,0 +1,7 @@
+trees and production rules (respectively).
+    C4.5 generates an unpruned decision tree, which is then analyzed by C4.5rules to generate a set of pruned production rules (it tries to find the most useful subset of them).
+    The advantage of pruned rules over decision trees is that they are easier to analyze, and allow combination of features in the same rule (feature interactions are explicit).
+    The greedy nature of decision rule learning algorithms implies that a large set of features can lead to bad performance and generalization capability.
+    It is desirable to remove redundant and irrelevant features, especially in our case since we have little data labeled with topic shifts; with a large set of features, we would risk overfitting the data.
+    We tried to restrict ourselves to features whose inclusion is motivated by previous work (pauses, speech rate) and added features that are specific to multi-speaker speech (overlap, changes in speaker activity).
+    Cue phrases: previous work on segmentation 

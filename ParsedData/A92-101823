@@ -1,0 +1,10 @@
+ady conveniently factored so that the dependence on bj(St+i ) is outside the inner sum.
+    Hence, if k is the average number of non-zero entries in each row of B, the cost of computing equation 1 can be reduced to 0(kTN).
+    Equations 2-4 can be similarly reduced by switching the order of iteration.
+    For example, in equation 2, rather than for a given t computing ot(i) for each i one at a time, one can accumulate terms for all i in parallel.
+    The net effect of this rewriting is to place a b3(St+i) = 0 check outside the innermost iteration.
+    Equations 3 and 4 submit to a similar approach.
+    Equation 5 is already only 0(N).
+    Hence, the overall cost of training can be reduced to 0(kTN), which, in our experience, amounts to an order of magnitude speedup.
+    4 The time complexity of the Viterbi algorithm can also be reduced to 0(kTN) by noting that b3 (S) can be factored out of the maximization of equation 6.
+    Adding up the sizes of the probability matrices A, B, and H, it is easy to see that t

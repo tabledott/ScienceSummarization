@@ -1,0 +1,10 @@
+ed test sentences is equivalent to having an additional 50K sentence pairs.
+    In a second set of experiments, we used the whole EuroParl corpus and the sampled sentences for fully re-training the phrase tables in each iteration.
+    We ran the algorithm for three iterations and the BLEU score increased from 25.3 to 25.6.
+    Even though this is a small increase, it shows that the unlabeled data contains some information which can be explored in transductive learning.
+    In a third experiment, we applied the mixture model idea as explained in Section 3.2.
+    The initially learned phrase table was merged with the learned phrase table in each iteration with a weight of A = 0.1.
+    This value for A was found based on cross validation on a development set.
+    We ran the algorithm for 20 iterations and BLEU score increased from 25.3 to 25.7.
+    Since this is very similar to the result obtained with the previous method, but with an additional parameter A to optimize, we did not use mixture models on NIST.
+   

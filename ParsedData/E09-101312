@@ -1,0 +1,9 @@
+atures as word-like elements.
+    In other words, we could simply assume that the contexts we wish to model are the union of all our features.
+    Although straightforward, this solution is undesirable.
+    It merges the distributions of distinct feature categories into a single one, and is therefore conceptually incorrect, and can affect the performance of the model.
+    For instance, parts-ofspeech (which have few values, and therefore high probability), would share a distribution with words (which are much sparser).
+    Layers containing more elements (e.g.
+    10 word window) would overwhelm rectangles represent different sources (layers) of information.
+    All layers share the same, instancespecific, sense distribution (0), but each have their own (multinomial) sense-feature distribution (&#65533;).
+    Shaded nodes represent observed features f; these can be words, parts of speech, collocations or dependencies. unconditional joint distribution P(s) of the unobserved variables (provided certain criteria

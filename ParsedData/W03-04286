@@ -1,0 +1,9 @@
+bled) character-level model are intended as a rough minimal pair, in that the only information crossing phrase boundaries was the entity type, isolating the effects of character- vs word-level modeling (a more precise minimal pair is examined in section 3).
+    Switching to the character model raised the overall score greatly, from 74.5% to 82.2%.
+    On top of this, context helped, but substantially less, bringing the total to 83.2%.
+    We did also try to incorporate gazetteer information by adding -gram counts from gazetteer entries to the training counts that back the above character emission model.
+    However, this reduced performance (by 2.0% with context on).
+    The supplied gazetteers appear to have been built from the training data and so do not increase coverage, and provide only a flat distribution of name phrases whose empirical distributions are very spiked.
+  
+  
+    Given the amount of improvement from using a model backed by character -grams instead of word -grams, the immediate question is 

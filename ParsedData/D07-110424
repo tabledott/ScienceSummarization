@@ -1,0 +1,7 @@
+ to both the maximal prefix and maximal suffix of any phrase that we might consider.
+			5.4.3 Prefix Trees and Suffix Links Our search optimizations are easily captured in a prefix tree data structure augmented with suffix links.Formally, a prefix tree is an unminimized determin istic finite-state automaton that recognizes all of thepatterns in some set.
+			Each node in the tree repre8Except when ? = X , in which case a and b must be collo cated within a window defined by the phrase length constraints.
+			981 ab b c cX X (1)(2) (3) d (4) d a b b c cX X (1)(2) (3) d (4) d a b b c cX X (1)(2) (3) d (4) d a b b c cX X (1)(2) (3) d (4) d X e a c d Case 1 Case 2 Figure 2: Illustration of prefix tree construction showing a partial prefix tree, including suffix links.
+			Suppose we are interested in pattern abXcd, represented by node (1).
+			Its prefix is represented by node (2), and node (2)?s suffix is represented by node (3).
+			Therefore, node (1)?s suffix is represented by the node pointed to by the d-edge from

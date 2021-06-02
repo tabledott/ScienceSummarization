@@ -1,0 +1,9 @@
+n G(P), respectively: All three measures yield values in [0, 1], and in all three a higher value indicates more symmetry.
+    M2 and M3 are obviously correlated, but they capture different aspects of a pattern&#8217;s nature: M3 is informative for highly interconnected but small word categories (e.g., month names), while M2 is useful for larger categories that are more loosely connected in the corpus.
+    We use the three measures as follows.
+    For each measure, we prepare a sorted list of all candidate patterns.
+    We remove patterns that are not in the top ZT (we use 100, see Section 5) in any of the three lists, and patterns that are in the bottom ZB in at least one of the lists.
+    The remaining patterns constitute our final list of symmetric patterns.
+    We do not rank the final list, since the category discovery algorithm of the next section does not need such a ranking.
+    Defining and utilizing such a ranking is a subject for future work.
+    A sparse matrix representation of each graph can be c

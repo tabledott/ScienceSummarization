@@ -1,0 +1,10 @@
+ grammatical trees.
+    Rule overlap features While individual rules observed in decoder output are often quite reasonable, two adjacent rules can create problems.
+    For example, a rule that has a variable of type IN (preposition) needs another rule rooted with IN to fill the position.
+    If the second rule supplies the wrong preposition, a bad translation results.
+    The IN node here is an overlap point between rules.
+    Considering that certain nonterminal symbols may be more reliable overlap points than others, we create a binary feature for each nonterminal.
+    A rule like: will have feature rule-root-IN set to 1 and all other rule-root features set to 0.
+    Our rule root features range over the original (non-split) nonterminal set; we have 105 in total.
+    Even though the rule root features are locally attached to individual rules&#8212;and therefore cause no additional problems for the decoder search&#8212;they are aimed at problematic rule/rule interactions.
+    Bad single-level rewrites Someti

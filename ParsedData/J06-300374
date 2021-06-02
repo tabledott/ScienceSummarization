@@ -1,0 +1,7 @@
+nce between a pair and its potential neighbors, and LRA is itself determined in an unsupervised fashion (i.e., LRA does not need labeled data).
+    Each SAT question has five choices, so answering 374 SAT questions required calculating 374 x 5 x 16 = 29,920 cosines.
+    The factor of 16 comes from the alternate pairs, step 11 in LRA.
+    With the noun-modifier pairs, using leave-one-out cross-validation, each test pair has 599 choices, so an exhaustive application of LRA would require calculating 600 x 599 x 16 = 5,750,400 cosines.
+    To reduce the amount of computation required, we first find the 30 nearest neighbors for each pair, ignoring the alternate pairs (600 x 599 = 359,400 cosines), and then apply the full LRA, including the alternates, to just those 30 neighbors (600 x 30 x 16 = 288, 000 cosines), which requires calculating only 359,400 + 288, 000 = 647,400 cosines.
+    There are 600 word pairs in the input set for LRA.
+    In step 2, introducing alternate pairs multiplies the number of pairs by fo

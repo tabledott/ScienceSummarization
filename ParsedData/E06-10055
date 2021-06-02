@@ -1,0 +1,7 @@
+Em); n =&#65533; m. In the following subsections, we will explain the word alignment procedure, the reordering approach, and the construction of confusion networks.
+    The word alignment is performed in analogy to the training procedure in SMT.
+    The difference is that the two sentences that have to be aligned are in the same language.
+    We consider the conditional probability Pr(En|Em) of the event that, given Em, another hypothesis En is generated from the Em.
+    Then, the alignment between the two hypotheses is introduced as a hidden variable: This probability is then decomposed into the alignment probability Pr(A|Em) and the lexicon probability Pr(En|A, Em): As in statistical machine translation, we make modelling assumptions.
+    We use the IBM Model 1 (Brown et al., 1993) (uniform distribution) and the Hidden Markov Model (HMM, first-order dependency, (Vogel et al., 1996)) to estimate the alignment model.
+    The lexicon probability of a sentence pair is modelled as a product of single-word based 

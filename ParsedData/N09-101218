@@ -1,0 +1,7 @@
+nded by adding rules that select between the main distribution P1 and the backoff distribution P2, and also rules that correspond to draws from those distributions.
+    We will make use of tied rule probabilities to make the independence assumption in the backoff distribution.
+    We still use the original grammar to parse the sentence.
+    However, we estimate the parameters in the extended grammar and then translate them back into the original grammar for parsing.
+    More formally, suppose B &#8838; N is a set of nonterminals (called the backoff set) with conditioning events N(1) ... N(k&#8722;1) in common (differing in a conditioning event N(k)), and with rule sets of the same cardinality.
+    If G is our model&#8217;s PCFG, we can define a new tied PCFG G&#8242; = (N&#8242;, T , S, R&#8242;, O), where N&#8242; = N &#8746; {Nb&#8467;  |N &#8712; B, E &#8712; {1, 2}}, meaning for each nonterminal N in the backoff set we add two nonterminals Nb1, Nb2 representing each distribution P1 and P2.
+    The new rul

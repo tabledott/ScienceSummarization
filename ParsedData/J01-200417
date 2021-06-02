@@ -1,0 +1,6 @@
+e divided into two rough groups: those that use the grammar as a language model, and those that use a parser to uncover phrasal heads standing in an important relation (c-command) to the current word.
+    The approach that we will subsequently present uses the probabilistic grammar as its language model, but only includes probability mass from those parses that are found, that is, it uses the parser to find a subset of the total set of parses (hopefully most of the high-probability parses) and uses the sum of their probabilities as an estimate of the true probability given the grammar.
+    As mentioned in Section 2.1, a PCFG defines a probability distribution over strings of words.
+    One approach to syntactic language modeling is to use this distribution directly as a language model.
+    There are efficient algorithms in the literature (Jelinek and Lafferty 1991; Stolcke 1995) for calculating exact string prefix probabilities given a PCFG.
+    The algorithms both utilize a left-corner matrix, which can be c

@@ -1,0 +1,9 @@
+untime (Huang and Chiang, 2005).
+    A more common approach is to factor the structure of the output space to yield a polynomial set of local constraints (Taskar et al., 2003; Taskar et al., 2004).
+    One such factorization for dependency trees It is trivial to show that if these O(n2) constraints are satisfied, then so are those in (1).
+    We implemented this model, but found that the required training time was much larger than the k-best formulation and typically did not improve performance.
+    Furthermore, the k-best formulation is more flexible with respect to the loss function since it does not assume the loss function can be factored into a sum of terms for each dependency.
+    Finally, we need a suitable feature representation f(i, j) for each dependency.
+    The basic features in our model are outlined in Table 1a and b.
+    All features are conjoined with the direction of attachment as well as the distance between the two words being attached.
+    These features represent a system of backoff from 

@@ -1,0 +1,10 @@
+able features, and excludes the traditional hidden states sequence.
+    In Hebrew, Levinger et al. (1995) introduced the similar-words algorithm for estimating p(t|w) from unlabeled data, which we describe below.
+    Our method uses this algorithm as a first step, and refines the approximation by introducing additional linguistic constraints and an iterative refinement step.
+  
+  
+    The most common model for unsupervised learning of stochastic processes is Hidden Markov Models (HMM).
+    For the case of tagging, the states correspond to the tags ti, and words wi are emitted each time a state is visited.
+    The parameters of the model can be estimated by applying the Baum-Welch EM algorithm (Baum, 1972), on a large-scale corpus of unlabeled text.
+    The estimated parameters are then used in conjunction with Viterbi search, to find the most probable sequence of tags for a given sentence.
+    In this work, we follow Adler (2007) and use a variation of second-order HMM in which the probability of a tag is con

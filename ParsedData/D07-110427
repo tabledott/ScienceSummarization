@@ -1,0 +1,9 @@
+ch for a pattern, we use location infor mation from its parent node, which represents its maximal prefix.
+			Assuming that the node representsphrase ?b, we find the node representing its max imal suffix by following the b-edge from the node pointed to by its parent node?s suffix link.
+			If the node pointed to by this suffix link is inactive, we can mark the node inactive without running a search.
+			When a node is marked inactive, we discontinue search for phrases that are prefixed by the path it represents.
+			The algorithm is illustrated in Figure 2.
+			5.4.4 Special Cases for Phrases with GapsA few subtleties arise in the extraction of hierarchical patterns.
+			Gaps are allowed to occur at the be ginning or end of a phrase.
+			For instance, we mayhave a source phrase Xu or uX or even XuX . Al though each of these phrases requires its own path in the prefix tree, they are lexically identical to phrase u. An analogous situation occurs with the patterns XuXv, uXvX , and uXv.
+			There are two cases that we ar

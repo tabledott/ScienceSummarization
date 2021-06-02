@@ -1,0 +1,7 @@
+nto/IN combat/NN_VB zones/NNS ./.
+    Transformation Templates The learner currently has four transformation templates.
+    They are: Change the tag of a word from x to Y if: Transformations are used differently in the unsupervised learner than in the supervised learner.
+    Here, a transformation will reduce the uncertainty as to the correct tag of a word in a particular context, instead of changing one tag to another.
+    So all learned transformations will have the form: Change the tag of a word from x to Y in context C where x is a set of two or more part of speech tags, and Y- is a single part of speech tag, such that Y E X.
+    Below we list some transformations that were actually learned by the system.
+    Change the tag: From NN_VB_VBP to VBP if the previous tag is NNS From NN_VB to VB if the previous tag is MD From JJ_NNP to JJ if the following tag is NNS Scoring Criterion When using supervised transformation-based learning to train a part of speech tagger, the scoring function is just the tagging ac

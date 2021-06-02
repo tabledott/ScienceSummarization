@@ -1,0 +1,9 @@
+ed to the number of categories in the chart, and a more restrictive setting of the supertagger was reverted to if the limit was exceeded.
+    In this article we consider the opposite approach: Start with a very restrictive setting of the supertagger, and only assign more categories if the parser cannot find an analysis spanning the sentence.
+    In this way the parser interacts much more closely with the supertagger.
+    In effect, the parser is using the grammar to decide if the categories provided by the supertagger are acceptable, and if not the parser requests more categories.
+    The advantage of this adaptive supertagging approach is that parsing speeds are much higher, without any corresponding loss in accuracy.
+    Section 10.3 gives results for the speed of the parser.
+    The algorithm used to build the packed charts is the CKY chart parsing algorithm (Kasami 1965; Younger 1967) described in Steedman (2000).
+    The CKY algorithm applies naturally to CCG because the grammar is binary.
+    It builds 

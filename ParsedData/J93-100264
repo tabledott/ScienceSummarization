@@ -1,0 +1,5 @@
+ already associated with a CFG and describes techniques for distributing those probabilities around the LR parse table in such a way that a probabilistic ranking of alternative analyses can be computed quickly at parse time, and probabilities assigned to analyses will be identical to those defined by the original probabilistic CFG.
+    However, our method of constructing the training corpus allows us to associate probabilities with an LR parse table directly, rather than simply with rules of the grammar.
+    An LR parse state encodes information about the left and right context of the current parse.
+    Deriving probabilities relative to the parse context will allow the probabilistic parser to distinguish situations in which identical rules reapply in different ways across different derivations or apply with differing probabilities in different contexts.
+    Semi-automatic parsing of the training corpus yields a set of LR parse histories that are used to construct the probabilistic version of the LALR(1) pars

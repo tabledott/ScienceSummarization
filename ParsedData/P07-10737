@@ -1,0 +1,8 @@
+te for training datasets that contain just a few, very large bags.
+    In a multi-instance kernel approach, only bags (and not instances) are considered as training examples, which means that the number of support vectors is going to be upper bounded by the number of training bags.
+    Taking the bags from Table 1 as a sample training set, the decision function is going to be specified by at most seven parameters: the coefficients for at most six support vectors, plus an optional bias parameter.
+    A hypothesis space characterized by such a small number of parameters is likely to have insufficient capacity.
+    Based on these observations, we decided to transform the MIL problem into a standard supervised problem as described above.
+    The use of this approach is further motivated by its simplicity and its observed competitive performance on very diverse datasets (Ray and Craven, 2005).
+    Let X be the set of bags used for training, Xp C X the set of positive bags, and Xn C X the set of negative bags.
+    

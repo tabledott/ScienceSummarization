@@ -1,0 +1,12 @@
+oximate it with an n-gram LM, which is wellstudied and widely implemented.
+    We will discuss this point later in Section 7.
+    If we use a trigram model for the LM, a convenient implementation is to first build a decodedtree forest and then to pick out the best tree using a trigram-based forest-ranking algorithm as described in (Langkilde, 2000).
+    The ranker uses two leftmost and rightmost leaf words to efficiently calculate the trigram probability of a subtree, and finds the most plausible tree according to the trigram and the rule probabilities.
+    This algorithm finds the optimal tree in terms of the model probability &#8212; but it is not practical when the vocabulary size and the rule size grow.
+    The next section describes how to make it practical.
+  
+  
+    We use our decoder for Chinese-English translation in a general news domain.
+    The TM becomes very huge for such a domain.
+    In our experiment (see Section 6 for details), there are about 4M non-zero entries in the trained table.
+    Ab

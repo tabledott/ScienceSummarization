@@ -1,0 +1,8 @@
+i.e., the percentage of tokens with correct HEAD, and label accuracy, i.e., the percentage of tokens with correct DEPREL.
+    The semantic propositions are evaluated by converting them to semantic dependencies, i.e., we create a semantic dependency from every predicate to all its individual arguments.
+    These dependencies are labeled with the labels of the corresponding arguments.
+    Additionally, we create a semantic dependency from each predicate to a virtual ROOT node.
+    The latter dependencies are labeled with the predicate senses.
+    This approach guarantees that the semantic dependency structure conceptually forms a single-rooted, connected (but not necessarily acyclic) graph.
+    More importantly, this scoring strategy implies that if a system assigns the incorrect predicate sense, it still receives some points for the arguments correctly assigned.
+    For example, for the correct proposition: verb.01: ARG0, ARG1, ARGM-TMP the system that generates the following output for the same argument token

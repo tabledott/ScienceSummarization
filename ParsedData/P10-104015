@@ -1,0 +1,8 @@
+ fact, many off-the-shelf CRF implementations now replicate Sha and Pereira (2003), including their choice of feature set: We use CRFsuite because it makes it simple to modify the feature generation code, so one can easily add new features.
+    We use SGD optimization, and enable negative state features and negative transition features.
+    (&#8220;feature.possible transitions=1, feature.possible states=1&#8221;) Table 1 shows the features in the baseline chunker.
+    As you can see, the Brown and embedding features are unigram features, and do not participate in conjunctions like the word features and tag features do.
+    Koo et al. (2008) sees further accuracy improvements on dependency parsing when using word representations in compound features.
+    The data comes from the Penn Treebank, and is newswire from the Wall Street Journal in 1989.
+    Of the 8936 training sentences, we used 1000 randomly sampled sentences (23615 words) for development.
+    We trained models on the 7936 training partition sentenc

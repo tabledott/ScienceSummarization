@@ -1,0 +1,7 @@
+est of the graph through its edges.
+    This can be done using machine learning, graph algorithms or more heuristic means.
+    The specific algorithm used in this study is given in Figure 1, which is distinct from common graph propagation algorithms, e.g., label propagation (see Section 2.3).
+    The output is a polarity vector pol E RIVE such that poli is the polarity score for the ith candidate phrase (or the ith node in G).
+    In particular, we desire pol to have the following semantics: { &gt; 0 ith phrase has positive polarity &#65533; 0 ith phrase has negative polarity = 0 ith phrase has no sentiment Intuitively, the algorithm works by computing both a positive and a negative polarity magnitude for each node in the graph, call them pol+i and pol-i.
+    These values are equal to the sum over the max weighted path from every seed word (either positive or negative) to node vi.
+    Phrases that are connected to multiple positive seed words through short yet highly weighted paths will receive high positive 

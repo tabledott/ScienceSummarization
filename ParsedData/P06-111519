@@ -1,0 +1,10 @@
+o derivations.
+			The nodes of the productions which cover a marked word in the incorrect derivationbut not in the correct derivation are used to col lect negative examples.
+			In the example, the node ?(TRAVERSE?traverse,[1..7])?
+			will be used to collect a negative example (i.e. the words 1to 7 ??which rivers run through the states bordering?
+			will be a negative example for the production TRAVERSE?traverse) because the pro duction covers the marked words ?the?, ?states?
+			and ?bordering?
+			in the incorrect derivation butnot in the correct derivation.
+			With this as a neg ative example, hopefully in the next iteration, theprobability of this derivation will decrease significantly and drop below the probability of the cor rect derivation.
+			In each iteration, the positive examples from the previous iteration are first removed so thatnew positive examples which lead to better cor rect derivations can take their place.
+			However,negative examples are accumulated across iterations for better accuracy bec

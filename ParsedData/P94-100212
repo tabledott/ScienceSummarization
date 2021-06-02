@@ -1,0 +1,9 @@
+eaks within the text.
+    Closed-class and other very frequent words are eliminated from the analysis.
+    After tokenization, the next step is the comparison of adjacent pairs of blocks of token-sequences for overall lexical similarity.
+    Another important parameter for the algorithm is the blocksize: the number of tokensequences that are grouped together into a block to be compared against an adjacent group of token-sequences.
+    This value, labeled k, varies slightly from text to text; as a heuristic it is the average paragraph length (in token-sequences).
+    In practice, a value of k = 6 works well for many texts.
+    Actual paragraphs are not used because their lengths can be highly irregular, leading to unbalanced comparisons.
+    Similarity values are computed for every tokensequence gap number; that is, a score is assigned to token-sequence gap i corresponding to how similar the token-sequences from token-sequence i&#8212;k through i are to the token-sequences from i +1 to i+ k +1.
+    Note that t

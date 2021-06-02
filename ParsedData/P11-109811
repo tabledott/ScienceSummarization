@@ -1,0 +1,9 @@
+ that detonate and destroy belong in the same cluster representing a bombing.
+    Vector-based approaches are often adopted to represent words as feature vectors and compute their distance with cosine similarity.
+    Unfortunately, these approaches typically learn clusters of synonymous words that can miss detonate and destroy.
+    Our goal is to instead capture world knowledge of cooccuring events.
+    We thus adopt an assumption that closeness in the world is reflected by closeness in a text&#8217;s discourse.
+    We hypothesize that two patterns are related if they occur near each other in a document more often than chance.
+    Let g(wi, wj) be the distance between two events (1 if in the same sentence, 2 in neighboring, etc).
+    Let %dist(wi, wj) be the distance-weighted frequency of where d is a document in the set of all documents D. The base 4 logarithm discounts neighboring sentences by 0.5 and within the same sentence scores 1.
+    Using this definition of distance, pointwise mutual information meas

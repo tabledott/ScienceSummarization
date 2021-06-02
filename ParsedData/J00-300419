@@ -1,0 +1,7 @@
+ is be, and the upcoming symbol has already been seen once in this context, the order 2 model is used for encoding in this case, and the encoding probability is 1/2.
+    Thus the symbol o would be encoded in 1 bit.
+    If the next character, instead of o, were t, this has not been seen in the current order 2 context (which is still be).
+    Consequently an order 2 escape event is coded (probability 1/2, again in the be context), and the context is truncated to e. Checking the order 1 model, the upcoming character t has not been seen in this context, so an order 1 escape event is coded (probability 1/2 in the e context) and the context is truncated to the null context, corresponding to the order 0 model.
+    The character t is finally encoded in this model, with probability 5/26.
+    Thus three encodings occur for this one character, with probabilities 1/2, 1/2, and 5/26 respectively, which together amount to just over 5 bits of information.
+    If the upcoming character had been x instead of t, a final level 

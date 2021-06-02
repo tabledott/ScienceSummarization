@@ -1,0 +1,9 @@
+fier.
+			As shows in Table 1, combining sentiments in a sentence can be tricky.
+			We are interested in the sentiments of the Holder about the Claim.
+			Manual analysis showed that such sentiments can be found most reliably close to the Holder; without either Holder or Topic/Claim nearby as anchor points, even humans sometimes have trouble reliably determining the source of a sentiment.
+			We therefore included in the algorithm steps to identify the Topic (through direct matching, since we took it as given) and any likely opinion Holders (see Section 2.2.1).
+			Near each Holder we then identified a region in which sentiments would be considered; any sentiments outside such a region we take to be of undetermined origin and ignore (Section 2.2.2).
+			We then defined several models for combining the sentiments expressed within a region (Section 2.2.3).
+			2.2.1 Holder Identification We used BBN?s named entity tagger IdentiFinder to identify potential holders of an opinion.
+			We considered PERSON and ORGANIZATIO

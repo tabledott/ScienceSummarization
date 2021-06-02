@@ -1,0 +1,10 @@
+lgorithm, the log ratio threshold is initially set high and gradually reduced until it reaches 0.
+    In the case of remaining ties, we assign the role for which is highest.
+    Because our evidence count and log ratio restrictions may not be met even when we have a very good candidate for a slot, we reduce the evidence count threshold to the minimum value of 1 when the log ratio threshold reaches 1.3 By this point, we assume competitor candidates have been given sufficient opportunity to amass the relevant counts.
+    Algorithm 1 shows the bootstrapping algorithm.
+    Algorithm 1 Bootstrapping Algorithm 1: Perform Frame Matching to determine the slots to be labelled, along with their candidate lists of roles.
+    2: Let be the set of annotated slots; .
+    Let be the set of unannotated slots, initially all slots.
+    Let be the set of newly annotated slots; .
+    3: Add to each slot whose role assignment is unambiguous&#8212;whose candidate list has one element.
+    Set to and set to (where and remove/add el

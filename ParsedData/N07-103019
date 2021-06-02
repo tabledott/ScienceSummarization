@@ -1,0 +1,9 @@
+tructure of this objective function is very similar to Roth and Yih&#8217;s, except that we do not utilize constraint costs in the objective function itself.
+    Roth and Yih use these to make certain combinations impossible (like a location being an argument to a spouse of relation); we enforce such effects in the constraint equations instead.
+    The joint objective function (5) does not constrain the assignment of the xhi,ji and yj variables to be consistent with one another.
+    To enforce consistency, we add further constraints.
+    In what follows, Mj is the set of all mentions preceding mention j in the document.
+    Resolve only anaphors: if a pair of mentions hi, ji is coreferent (xhi,ji=1), then mention j must be anaphoric (yj=1).
+    These constraints thus directly relate the two tasks.
+    By formulating the problem this way, the decisions of the anaphoricity classifier are not taken on faith as they were with AC-CASCADE.
+    Instead, we optimize over consideration of both possibilities in the obj

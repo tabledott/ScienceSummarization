@@ -1,0 +1,8 @@
+only add links which have one of their ends at xk and it may never remove any links.
+    From the definitions in section 2.2 it is possible to derive an exact characterization of the links which may be added at each step such that the resulting link set represents some bracketing.
+    It can be shown that any shortest common cover link set can be constructed incrementally under these conditions.
+    As the full specification of these conditions is beyond the scope of this paper, I will only give the main condition, which is based on adjacency.
+    It states that a link may be added from x to y only if for every z between x and y there is a path of links (in L) from x to z but no link from z to y.
+    In the example in figure 2 this means that when the word sleeps is first read, a link to sleeps can be created from know, the and boy but not from I.
+    Given these conditions, the parsing process is simple.
+    At each step, the parser calculates a nonnegative weight (section 5) for every link which may be adde

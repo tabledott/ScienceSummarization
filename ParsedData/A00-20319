@@ -1,0 +1,8 @@
+the test corpus (treebank section 23), and applied a postprocessing step to add function tags.
+    For each constituent in the tree, we calculated the likelihood of each function tag according to the feature tree in figure 4, and for each category (see figure 2) we assigned the most likely function tag (which might be the null tag).
+    2The reader will note that the 'features' listed in the tree are in fact not boolean-valued; each node in the given tree can be assumed to stand for a chain of boolean features, one per potential value at that node, exactly one of which will be true.
+  
+  
+    To evaluate our results, we first need to determine what is 'correct'.
+    The definition we chose is to call a constituent correct if there exists in the correct parse a constituent with the same start and end points, label, and function tag (or lack thereof).
+    Since we treated each of the four function tag categories as a separate feature for the purpose of tagging, evaluation was also done on a per-category basis.

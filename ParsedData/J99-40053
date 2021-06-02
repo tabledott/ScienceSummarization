@@ -1,0 +1,12 @@
+ilities of the tag pairs inside it.
+    Target strings are English sentences, e.g., w1 wm.
+    The channel model assumes each tag is probabilistically replaced by a word (e.g., noun by dog) without considering context.
+    More concretely, we have: We can assign parts-of-speech to a previously unseen word sequence w1 ...
+    Win by finding the sequence ti ... 4, that maximizes P(ti ... tm I wi ... Wm).
+    By Bayes' rule, we can equivalently maximize P(ti ... tm)&#8226;P(wi ... Wm' ti .
+    .
+    .
+    G), which we can calculate directly from the b and s tables above.
+    Three interesting complexity problems in the source-channel framework are: The first problem is solved in 0(m) time for part-of-speech tagging&#8212;we simply count tag pairs and word/tag pairs, then normalize.
+    The second problem seems to require enumerating all 0(e) potential source sequences to find the best, but can actually be solved in 0(mv2) time with dynamic programming.
+    We turn to the third problem in the context of another a

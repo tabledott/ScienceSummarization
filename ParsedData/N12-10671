@@ -1,0 +1,10 @@
+ measure between a set of proposed system edits and a set of humanannotated gold-standard edits (Leacock et al., 2010).
+    Unfortunately, evaluation is complicated by the fact that the set of edit operations for a given system hypothesis is ambiguous.
+    This is due to two reasons.
+    First, the set of edits that transforms one string into another is not necessarily unique, even at the token level.
+    Second, edits can consist of longer phrases which introduce additional ambiguity.
+    To see how this can affect evaluation, consider the following source sentence and system hypothesis from the recent Helping Our Own (HOO) shared task (Dale and Kilgarriff, 2011) on grammatical error correction: Source: Our baseline system feeds word into PB-SMT pipeline.
+    Hypot.
+    : Our baseline system feeds a word into PB-SMT pipeline.
+    The HOO evaluation script extracts the system edit (c &#8212;* a), i.e., inserting the article a.
+    Unfortunately, the gold-standard annotation instead contains the edits (word &#

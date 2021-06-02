@@ -1,0 +1,6 @@
+he alignment between En and the primary hypothesis E,,t used for reordering is computed as a function of words in the secondary translation En with minimal costs, with an additional constraint that identical words in En can not be all aligned to the same word in E,,t.
+    This constraint is necessary to avoid that reordered hypotheses with e. g. multiple consecutive articles &#8220;the&#8221; would be produced if fewer articles were used in the primary hypothesis.
+    The new word order for En is obtained through sorting the words in En by the indices of the words in E,,t to which they are aligned.
+    Two words in En which are aligned to the same word in E,,t are kept in the original order.
+    After reordering each secondary hypothesis En, we determine M &#8722; 1 monotone one-to-one alignments between E,,t and En, n = 1, ... , M; n =6 m. In case of many-toone connections of words in En to a single word in E,,t, we only keep the connection with the lowest alignment costs.
+    The one-to-one alignments are c

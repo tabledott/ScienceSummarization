@@ -1,0 +1,10 @@
+ial scopings are allowed as well.
+    The function pull-opaque-args(form) returns a set of all wffs generated from form, but with arguments in opaque argument positions replaced by a valid scoping of the original value.
+    Since the recursive call to pull has complete? set to false, the unchanged argument is a possibility even for opaque argument positions.
+    When applied to any other type of expression (i.e., a term of some sort), the argument is unchanged.
+    The function apply-terms (form, complete?) returns a set of scopings of form constituting all of the ways of choosing several terms in form and applying them to form.
+    If complete? is true, then only the full scopings are returned.
+    The function apply(term, form) returns a set of all wffs consisting of the given complex term term applied to the form form in which it occurs, with the restriction of the complex term recursively scoped in all possible ways. function apply(term,form); let (quant var restrict) := term in return
+  
+  
+    Since the

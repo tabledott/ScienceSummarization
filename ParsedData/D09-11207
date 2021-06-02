@@ -1,0 +1,9 @@
+s.
+    This system yields a rather low 48.9 pairwise F1 (see BASE-FLAT in Table 2).
+    There are many, primarily recall, errors made choosing antecedents for all mention types which we will address by adding syntactic and semantic constraints.
+    In this section, we enrich the syntactic representation and information in our system to improve results.
+    We first focus on fixing the pronoun antecedent choices.
+    A common error arose from the use of mention head distance as a poor proxy for discourse salience.
+    For instance consider the example in Figure 1, the mention America is closest to its in flat mention distance, but syntactically Nintendo ofAmerica holds a more prominent syntactic position relative to the pronoun which, as Hobbs (1977) argues, is key to discourse salience.
+    Mapping Mentions to Parse Nodes: In order to use the syntactic position of mentions to determine anaphoricity, we must associate each mention in the document with a parse tree node.
+    We parse all document sentences with

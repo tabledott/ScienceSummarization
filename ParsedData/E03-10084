@@ -1,0 +1,8 @@
+maximise the agreement of the two parsers over unlabelled data, using a similar approach to that given by Abney.
+    This would be computationally very expensive for parsers, however, and we therefore propose some practical heuristics for determining which labelled examples to add to the training set for each parser.
+    Our approach is to decompose the problem into two steps.
+    First, each parser assigns a score for every unlabelled sentence it parsed according to some scoring function, f, estimating the reliability of the label it assigned to the sentence (e.g. the probability of the parse).
+    Note that the scoring functions used by the two parsers do not necessarily have to be the same.
+    Next, a selection method decides which parser is retrained upon which newly parsed sentences.
+    Both scoring and selection phases are controlled by a simple incremental algorithm, which is detailed in section 3.2.
+    An ideal scoring function would tell us the true accuracy rates (e.g., combined labelled precisio

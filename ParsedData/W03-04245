@@ -1,0 +1,15 @@
+211;4 and a single predicate for lengths greater than 4.
+    Titlecase applies to words with an initial uppercase letter followed by all lowercase (e.g.
+    Mr).
+    Mixedcase applies to words with mixed lower- and uppercase (e.g.
+    CityBank).
+    The length predicates encode the number of characters in the word from 1 to 15, with a single predicate for lengths greater than 15.
+    The next set of contextual predicates encode extra information about NE tags in the current context.
+    The memory NE tag predicate (see e.g.
+    Malouf (2002)) records the NE tag that was most recently assigned to the current word.
+    The use of beam-search tagging means that tags can only be recorded from previous sentences.
+    This memory is cleared at the beginning of each document.
+    The unigram predicates (see e.g.
+    Tsukamoto et al. (2002)) encode the most probable tag for the next words in the window.
+    The unigram probabilities are relative frequencies obtained from the training data.
+    This feature enables us

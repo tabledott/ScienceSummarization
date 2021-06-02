@@ -1,0 +1,7 @@
+ Rn and the label yt is a vector of m ranks in Ym, where Y = 11, .., k} is the set of possible ranks.
+    The ith component of yt is the rank for the ith aspect, and will be denoted by y[i]t. The goal is to learn a mapping from instances to rank sets, H : X &#8212;* Ym, which minimizes the distance between predicted ranks and true ranks.
+    Our m-aspect ranking model contains m+1 components: ((w[1], b[1]), ..., (w[m], b[m]), a).
+    The first m components are individual ranking models, one for each aspect, and the final component is the agreement model.
+    For each aspect i E 1...m, w[i] E Rn is a vector of weights on the input features, and b[i] E Rk&#8722;1 is a vector of boundaries which divide the real line into k intervals, corresponding to the k possible ranks.
+    The default prediction of the aspect ranking model simply uses the ranking rule of the PRank algorithm.
+    This rule predicts the rank r such that b[i]r&#8722;1 &lt; scorei(x) &lt; b[i]r.3 The value scorei(x) can be defined simply as the d

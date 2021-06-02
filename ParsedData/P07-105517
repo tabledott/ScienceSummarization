@@ -1,0 +1,7 @@
+ benefit from an analysis on the paragraph level as well as the sentence and document levels.
+    One possible model for this case is given in Figure 4, which essentially inserts an additional layer between the sentence and document level from the original model.
+    Sentence level analysis is dependent on neighbouring sentences as well as the paragraph level analysis, and the paragraph analysis is dependent on each of the sentences within it, the neighbouring paragraphs, and the document level analysis.
+    This can be extended to an arbitrary level of fine-to-coarse sentiment analysis by simply inserting new layers in this fashion to create more complex hierarchical models.
+    The advantage of using hierarchical models of this form is that they are nested, which keeps inference tractable.
+    Observe that each pair of adjacent levels in the model is equivalent to the original model from Figure 1.
+    As a result, the scores of the every label at each node in the graph can be calculated with a straight-forw

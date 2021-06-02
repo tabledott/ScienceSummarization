@@ -1,0 +1,9 @@
+en scores are better if the parser is also trained on the POS tagger's suggestions, rather than on the human annotator's correct tags.
+    Training on the correct tags results in 1% worse performance.
+    Even though the POS tagger's tags are less accurate, they are more like what the parser will be using in the test data, and that turns out to be the key point.
+    On the other hand, if the parser allows all possible dictionary tags for unknown words in test material, then it pays to train on the actual correct tags.
+    In initial tests, this combination of training on the correct tags and allowing all dictionary tags for unknown test words somewhat outperformed the alternative of using the POS tagger's predictions both for training and for unknown test words.
+    When tested with the final version of the parser on the full development set, those two strategies performed at the same level.
+  
+  
+    We ran three versions of the parser over the final test set: the baseline version, the full model with all ad

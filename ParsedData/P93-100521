@@ -1,0 +1,9 @@
+onsistent with the Treebank and considered the resulting sentence-tree pair as an event.
+    Note that the grammar parse will also provide the lexical head structure of the parse.
+    Then, we extracted using leftmost derivation order tuples of a history (truncated to the definition of a history in the HBG model) and the corresponding rule used in expanding a node.
+    Using the resulting data set we built a decision tree by classifying histories to locally minimize the entropy of the rule template.
+    With a training set of about 9000 sentencetree pairs, we had about 240,000 tuples and we grew a tree with about 40,000 nodes.
+    This required 18 hours on a 25 MIPS RISC-based machine and the resulting decision tree was nearly 100 megabytes.
+    The HBG model employs two types of parents, the immediate parent and the functional parent.
+    The immediate parent is the constituent that immediately dominates the constituent being predicted.
+    If the immediate parent of a constituent has a different syntactic t

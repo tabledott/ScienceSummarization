@@ -1,0 +1,7 @@
+s for the translation probabilities, and repeat the process, until it converges.
+    This iterative process is known as the EM algorithm and has been shown to converge to a stationary point (Baum, 1972; Dempster et al., 1977).
+    Moreover, Brown et a/. show that Model 1 has a unique maximum, and therefore, in this special case, the EM algorithm is guaranteed to converge to the maximum likelihood solution, and does not depend on the initial guess.
+    Model 2 Model 2 improves upon model 1 by making use of the positions within an alignment.
+    For instance, it is much more likely that the first word of an English sentence will be connected to a word near the beginning of the corresponding French sentence, than to some word near the end of the French sentence.
+    Model 2 enhances Model 1 with the assumption that the probability of a connection, con, depends also on j and i (the positions in f and e), as well as on m and 1 (the lengths of the two sentences).
+    This dependence is expressed through the term a(

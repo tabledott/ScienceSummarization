@@ -1,0 +1,9 @@
+e length of the target string, and J is the length of the source string.
+    Among all possible target strings, we will choose the string with the highest probability as given by Bayes&#8217; Architecture of the statistical translation approach based on Bayes&#8217; decision rule.
+    Pr(eI1) is the language model of the target language, whereas Pr l eI1) is the string translation model.
+    The language model probability is computed using a trigram language model.
+    The string translation probability Pr(fJ1  |eI1) is modeled using a series of five models of increasing complexity in training.
+    Here, the model used for the translation experiments is the IBM-4 model.
+    This model uses the same parameter set as the IBM-5 model, which in preliminary experiments did not yield better translation results.
+    The actual implementation used during the experiments is described in AlOnaizan et al. (1999) and in Och and Ney (2000).
+    The argmax operation denotes the search problem (i.e., the generation of the o

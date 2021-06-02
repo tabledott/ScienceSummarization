@@ -1,0 +1,7 @@
+ That is, the parameter determines how to split up the infinite nonterminal domain into a finite set of equivalence classes that can be used for parsing.
+    By doing so, we have an optimal compromise: Whatever part of the feature structure is significant we distinguish in the equivalence classes by setting the parameter appropriately, so the information is used in parsing.
+    But because there are only a finite number of equivalence classes, parsing algorithms guided in this way will terminate.
+    The technique we use to form equivalence classes is restriction, which involves taking a quotient of the domain with respect to a restrictor.
+    The restrictor thus serves as the sole repository of grammar-dependent information in the algorithm.
+    By tuning the restrictor, the set of equivalence classes engendered can be changed, making the algorithm more or less efficient at guiding the parse.
+    But independent of the restrictor, the algorithm will be correct, since it is still doing parsing over a finite d

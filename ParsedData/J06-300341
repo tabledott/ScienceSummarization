@@ -1,0 +1,8 @@
+e is that we can find near analogies for the original pairs, such that the near analogies co-occur more frequently in the corpus.
+    The danger is that the alternates may have different relations from the originals.
+    The filtering steps above aim to reduce this risk.
+    In our experiments, the input set contains from 600 to 2,244 word pairs.
+    The output similarity measure is based on cosines, so the degree of similarity can range from &#8722;1 (dissimilar; 0 = 180&#176;) to +1 (similar; 0 = 0&#176;).
+    Before applying SVD, the vectors are completely non-negative, which implies that the cosine can only range from 0 to +1, but SVD introduces negative values, so it is possible for the cosine to be negative, although we have never observed this in our experiments.
+    In the following experiments, we use a local copy of the WMTS (Clarke, Cormack, and Palmer 1998; Terra and Clarke 2003).4 The corpus consists of about 5 x 1010 English words, gathered by a Web crawler, mainly from US academic Web sites.
+  

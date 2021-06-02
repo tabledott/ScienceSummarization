@@ -1,0 +1,6 @@
+cess begins with a word-aligned corpus: a set of triples (f, e, &#8212;), where f is a French sentence, e is an English sentence, and &#8212; is a (many-to-many) binary relation between positions off and positions of e. The word alignments are obtained by running GIZA++ (Och and Ney 2000) on the corpus in both directions, and forming the union of the two sets of word alignments.
+    We then extract from each word-aligned sentence pair a set of rules that are consistent with the word alignments.
+    This can be thought of in two steps.
+    First, we identify initial phrase pairs using the same criterion as most phrase-based systems (Och and Ney 2004), namely, there must be at least one word inside one phrase aligned to a word inside the other, but no word inside one phrase can be aligned to a word outside the other phrase.
+    For example, suppose our training data contained the fragment Example derivation of a synchronous CFG.
+    Numbers above arrows are rules used at each step. with word alignments as shown

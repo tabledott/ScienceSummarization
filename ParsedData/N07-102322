@@ -1,0 +1,7 @@
+S, ancestor annotation, and head category.
+    For pl and pr, we removed first: lexical head, lexical head of the modifier, head POS, head POS of the modifier, sister annotation (Li deleted before kil), kh, category of the head, category of the modifier.
+    We experimented with different deletion interpolation orderings, and this ordering appears to work quite well in practice, and was used in all experiments reported in this paper. assessed the usefulness of lexical and POS annotation (setting s and v to 0).
+    In the table, we use M to denote any of the modifiers Li or Ri, and c, t, w respectively represent syntactic constituent, POS, and lexical conditioning.
+    While POS annotation is clearly advantageous compared to using only syntactic categories, adding lexical variables to the model also helps.
+    As is shown in the table, it is especially important to know the lexical head of the modifier we are attempting to delete.
+    The addition of wm to conditioning variables provides an improvement of 1.3%

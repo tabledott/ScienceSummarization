@@ -1,0 +1,10 @@
+ymbol , then .
+    Otherwise, let and be the two daughter nodes of.
+    Then Using backward probabilities, is calculated as .
+    We define forward probabilities , which are used in the estimation described below, as follows: If node is the root node (i.e., = 1), then .
+    If node has a right sibling , let be the mother node of.
+    Then If node has a left sibling, is defined analogously.
+    We now derive the EM algorithm for PCFG-LA, which estimates the parameters .
+    Let be the training set of parse trees and be the labels of non-terminal nodes in .
+    Like the derivations of the EM algorithms for other latent variable models, the update formulas for the parameters, which update the parameters from to , are obtained by constrained optimization of , which is defined as where and denote probabilities under and , and is the conditional probability of latent annotation symbols given an observed tree , i.e., .
+    Using the Lagrange multiplier method and re-arranging the results using the backward and forwa

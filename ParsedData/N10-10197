@@ -1,0 +1,5 @@
+h as lexical features (word), part-ofspeech tags, and a handful of &#8220;custom features&#8221;, for example lexical head of governing VP or governed NP (as determined by part-of-speech-tag based heuristics).
+    For both articles and prepositions, we employ two classifiers: the first determines the probability that a preposition/article is present in a given context (presence classifier), the second classifier determines the probability that a specific article or preposition is chosen (choice classifier).
+    A training event for the presence classifier is any noun phrase boundary that is a potential location for a preposition or article.
+    Whether a location is an NP boundary and a potential site for an article/preposition is determined by a simple heuristic based on part-of-speech tags.
+    The candidates for article choice are the and a/an, and the choice for prepositions is limited to twelve very frequent prepositions (in, at, on, for, since, with, to, by, about, from, of, as) which account for 86.2 %

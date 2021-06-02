@@ -1,0 +1,5 @@
+ake the approach of actually calculating an estimate of the conditional probability because it differs minimally from the generative probability model.
+    In this form, the distinction between our two models is sometimes referred to as &#8220;joint versus conditional&#8221; (Johnson, 2001; Klein and Manning, 2002) rather than &#8220;generative versus discriminative&#8221; (Ng and Jordan, 2002).
+    As with the generative model, we use the chain rule to decompose the entire conditional probability into a sequence of probabilities for individual parser decisions, where yield(dj,..., dk) is the sequence of words wi from the shift(wi) actions in dj,..., dk.
+    Note that d1,..., di&#8722;1 specifies yield(d1,..., di&#8722;1), so it is sufficient to only add yield(di,..., dm) to the conditional in order for the entire input sentence to be included in the conditional.
+    We will refer to the string yield(di,..., dm) as the lookahead string, because it represents all those words which have not yet been reached by 

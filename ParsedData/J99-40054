@@ -1,0 +1,10 @@
+pplication: cryptanalysis.
+  
+  
+    In a substitution cipher, a plaintext message like HELLO WORLD is transformed into a ciphertext message like EOPPX YXAPF via a fixed letter-substitution table.
+    As with tagging, we can assume an alphabet of v source tokens, a bigram source model, a substitution channel model, and an m-token coded text.
+    If the coded text is annotated with corresponding English, then building source and channel models is trivially 0(m).
+    Comparing the situation to part-of-speech tagging: Then the problem becomes one of acquiring a channel model, i.e., a table s(f le) with an entry for each code-letter/plaintext-letter pair.
+    Starting with an initially uniform table, we can use the estimation-maximization (EM) algorithm to iteratively revise s(f. le) so as to increase the probability of the observed corpus P(f).
+    Figure 1 shows a naive EM implementation that runs in 0(mvin) time.
+    There is an efficient 0(mv2) EM implementation based on dynamic programming that accomplishes 

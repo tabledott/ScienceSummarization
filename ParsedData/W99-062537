@@ -1,0 +1,8 @@
+ion of feature values.
+    The first is for text length (measured in words), where each feature value is normalized by the size of the textual units in the pair.
+    Thus, for a pair of textual units A and B, the feature values are divided by: This operation removes potential bias in favor of longer text units.
+    The second type of normalization we examined was based on the relative frequency of occurrence of each primitive.
+    This is motivated by the fact that infrequently matching primitive elements are likely to have a higher impact on similarity than primitives which match more frequently.
+    We perform this normalization in a manner similar to the IDF part of TF*IDF [Salton 1989].
+    Every primitive element is associated with a value which is the number of textual units in which the primitive appeared in the corpus.
+    For a primitive element which compares single words, this is the number of textual units which contain that word in the corpus; for a noun phrase, this is the number of textual unit

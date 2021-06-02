@@ -1,0 +1,8 @@
+., the adapted nonterminals and their adaptors), and seated at a new table.
+    This means that in batch initialization each initial parse tree is randomly generated without any adaptation at all.
+    Incremental initialization assigns the initial parse trees ti to sentences wi in order, updating the adaptor grammar as it goes.
+    That is, ti is sampled from P(t wi,t1, ... , ti&#8722;1).
+    This is easy to do in the context of Gibbs sampling, since this distribution is a minor variant of the distribution P(ti I t&#8722;i, wi) used during Gibbs sampling itself.
+    Incremental initialization is greedier than batch initialization, and produces initial sample trees with much higher probability.
+    As Table 1 shows, across all grammars and conditions after 2,000 iterations incremental initialization produces samples with much better word segmentation token f-score than does batch initialization, with the largest improvement on the unigram adaptor grammar.
+    However, incremental initialization results in samp

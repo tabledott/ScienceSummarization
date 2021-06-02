@@ -1,0 +1,5 @@
+raphy weights a E R2W: f(xd; a) = (xTd alat, Weights are trained to minimize the sum of squared Euclidean distances, subject to L1 regularization: The minimization problem decouples into two separate latitude and longitude models, which we fit using the glmnet elastic net regularized regression package (Friedman et al., 2010), which obtained good results on other text-based prediction tasks (Joshi et al., 2010).
+    Regularization parameters were tuned on the development set.
+    The L1 penalty outperformed L2 and mixtures of L1 and L2.
+    Note that for both word-level linear regression here, and the topic-level linear regression in SLDA, the choice of squared Euclidean distance dovetails with our use of spatial Gaussian likelihoods in the geographic topic models, since optimizing a is equivalent to maximum likelihood estimation under the assumption that locations are drawn from equivariant circular Gaussians centered around each f(xd; a) linear prediction.
+    We experimented with decorrelating the location

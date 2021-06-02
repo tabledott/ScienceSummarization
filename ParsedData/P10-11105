@@ -1,0 +1,10 @@
+atomic features s0.w and q0.t, capturing the root word of the top tree s0 on the stack, and the part-of-speech tag of the current head word q0 on the queue.
+    See Tab.
+    1(a) for the list of feature templates used in the full model.
+    Feature templates are instantiated for a specific state.
+    For example, at step (4) in Fig.
+    2, the above template f100 will generate a feature instance More formally, we denote f to be the feature function, such that f(j, S) returns a vector of feature instances for state (j, S).
+    To decide which action is the best for the current state, we perform a threeway classification based on f(j, S), and to do so, we further conjoin these feature instances with the action, producing action-conjoined instances like We denote fsh(j, S), frer (j, S), and fres, (j, S) to be the conjoined feature instances, whose dotproducts with the weight vector decide the best action (see Eqs.
+    (1-3) in Fig.
+    1).
+    To improve on strictly greedy search, shift-reduce parsing is often e

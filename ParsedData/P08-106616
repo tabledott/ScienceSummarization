@@ -1,0 +1,8 @@
+ Hypothesis dependency structures are organized in a shared forest, or AND-OR structures.
+    An ANDf aligned to Pm,n e , we mean all words in Pi,j f are either aligned to words in Pm,n e or unaligned, and vice versa.
+    Furthermore, at least one word in Pi,j structure represents an application of a rule over component OR-structures, and an OR-structure represents a set of alternative AND-structures with the same state.
+    A state means a n-tuple that characterizes the information that will be inquired by up-level AND-structures.
+    Supposing we use a traditional tri-gram language model in decoding, we need to specify the leftmost two words and the rightmost two words in a state.
+    Since we only have a single NT X in the formalism described above, we do not need to add the NT label in states.
+    However, we need to specify one of the three types of the dependency structure: fixed, floating on the left side, or floating on the right side.
+    This information is encoded in the category of the dependency 

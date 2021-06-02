@@ -1,0 +1,8 @@
+r semirings, such as the counting semiring, or derivation forest semiring, more complicated computations are required, including the detection of loops.
+    Finally, for the inside semiring, in most cases only approximate techniques can be used, although in some cases, matrix inversion can be used.
+    Thus, the actual parsing algorithm, if specified procedurally, can vary quite a bit depending on the semiring.
+    On the other hand, using our techniques makes infinite sums easier to deal with in two ways.
+    First, these difficult problems are separated out, relegated conceptually to the parser interpreter, where they can be ignored by the constructor of the parsing algorithm.
+    Second, because they are separated out, they can be solved once, rather than again and again.
+    Both of these advantages make it significantly easier to construct parsers.
+    Even in the case where, for efficiency, loops are precomputed offline, as in GHR parsing, the same item-based representation and interpreter can be used.

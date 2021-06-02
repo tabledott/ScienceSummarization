@@ -1,0 +1,9 @@
+y smoothing the similarity metric.
+    When comparing two sentences, we also take into account similarity between their immediate neighborhoods.
+    The smoothing is achieved by adding counts of words that occur in adjoining sentences to the current sentence feature vector.
+    These counts are weighted in accordance to their distance from the current sentence: e&#8722;&#945;(j&#8722;i)sj, where si are vectors of word counts, and &#945; is a parameter that controls the degree of smoothing.
+    In the formulation above we use sentences as our nodes.
+    However, we can also represent graph nodes with non-overlapping blocks of words of fixed length.
+    This is desirable, since the lecture transcripts lack sentence boundary markers, and short utterances can skew the cosine similarity scores.
+    The optimal length of the block is tuned on a heldout development set.
+    Lexical Weighting Previous research has shown that weighting schemes play an important role in segmentation performance (Ji and Zha, 2003; Choi 

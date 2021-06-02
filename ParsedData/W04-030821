@@ -1,0 +1,5 @@
+rser that uses the arc-eager parsing algorithm in combination with a memory-based classifier for predicting the next transition.
+    In experiments reported in Nivre et al. (2004), a parsing accuracy of 85.7% (unlabeled attachment score) was achieved, using data from a small treebank of Swedish (Einarsson, 1976), divided into a training set of 5054 sentences and a test set of 631 sentences.
+    However, in the present context, we are primarily interested in the incrementality of the parser, which we measure by considering the number of connected components in (5, As) at different stages during the parsing of the test data.
+    The results can be found in Table 1, where we see that out of 16545 configurations used in parsing 613 sentences (with a mean length of 14.0 words), 68.9% have zero or one connected component on the stack, which is what we require of a strictly incremental parser.
+    We also see that most violations of incrementality are fairly mild, since more than 90% of all configurations have no mo

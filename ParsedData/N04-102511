@@ -1,0 +1,9 @@
+ the frequencies in the trained models.
+    To do this, we adjust our type probability estimates by shifting part of the model&#8217;s probability mass from observed types to unseen and rare types.
+    We first apply smoothing to each grade&#8217;s language model individually.
+    We use a technique called Simple Good-Turing smoothing, which is a popular method for natural language applications.
+    We omit the details here, which are available in Gale and Sampson (1995).
+    Next, we apply smoothing across grade language models.
+    This is a departure from standard text classification methods, which treat the classes as independent.
+    For reading difficulty, however, we hypothesize that nearby grade models are in fact highly related, so that even if a type is unobserved in one grade&#8217;s training data, we can estimate its probability in the model by interpolating estimates from nearby grade models.
+    For example, suppose we wish to estimate P(w|G) for a type w in a grade model G. If the type w occurs

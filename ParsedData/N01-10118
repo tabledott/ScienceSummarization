@@ -1,0 +1,8 @@
+ make up the bigram.
+    Pointwise Mutual Information quantifies how often two words occur together in a bigram (the numerator) relative to how often they occur overall in the corpus (the denominator).
+    However, there is a curious limitation to pointwise Mutual Information.
+    A bigram w1w2 that occurs n11 times in the corpus, and whose component words w1 and w2 only occur as a part of that bigram, will result in increasingly strong measures of association as the value of n11 decreases.
+    Thus, the maximum pointwise Mutual Information in a given corpus will be assigned to bigrams that occur one time, and whose component words never occur outside that bigram.
+    These are usually not the bigrams that prove most useful for disambiguation, yet they will dominate a ranked list as determined by pointwise Mutual Information.
+    The Dice Coefficient overcomes this limitation, and can be defined as follows: When n11 = n1+ = n+1 the value of Dice(w1, w2) will be 1 for all values n11.
+    When the value of n11 

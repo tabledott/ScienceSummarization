@@ -1,0 +1,5 @@
+l's tagger (Brill, 1993c), an initial calculation in each pass computes the confusion matrix for the current tag assignments and sorts the entries of that [old-tag x new-tag] matrix, so that candidate rules can then be processed in decreasing order of the maximum possible benefit for any rule changing, say, old tag I to new tag J.
+    The search for the best-scoring rule can then be halted when a cell of the confusion matrix is reached whose maximum possible benefit is less than the net benefit of some rule already encountered.
+    The power of that approach is dependent on the fact that the confusion matrix for part-ofspeech tagging partitions the space of candidate rules into a relatively large number of classes, so that one is likely to be able to exclude a reasonably large portion of the search space.
+    In a chunk tagging application, with only 3 or 4 tags in the effective tagset, this approach based on the confusion matrix offers much less benefit.
+    However, even though the confusion matrix does not

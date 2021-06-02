@@ -1,0 +1,8 @@
+ in this case &#8211; Table 2 presents the average results obtained by this method, together with the variance obtained over 30 trials.
+    To make the decision deterministically, the weights associated with the classifiers can be chosen as Ai (w) = Pi (error).
+    In this method, presented in Table 2 as weighted voting, better performing classifiers will have a higher impact in the final classification.
+    In the voting methods, each classifier gave its entire vote to one class &#8211; its own output.
+    However, Equation (2) allows for classifiers to give partial credit to alternative classifications, through the probability Pi (C|w, Ci).
+    In our experiments, this value is computed through 5fold cross-validation on the training data.
+    The space of possible choices for C, w and Ci is large enough to make the estimation unreliable, so we use two approximations, named Model 1 and Model 2 in Table 2: Pi (C|w, Ci) = Pi (C|w)and Pi (C|w, Ci) = Pi (C|Ci), respectively.
+    On the development data, the form

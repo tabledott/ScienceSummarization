@@ -1,0 +1,11 @@
+ edge in F indicates a possible edge in the transformed MR parse tree.
+    Intuitively, two concepts are closely related if they involve the same logical variables, and therefore, should be placed close together in the MR parse tree.
+    By keeping occurrences of a logical variable in close proximity in the MR parse tree, we also avoid unnecessary variable bindings in the extracted rules.
+    Step 2.
+    Remove edges from F whose inclusion in the MR parse tree would prevent the NL and MR parse trees from being isomorphic.
+    Step 3.
+    Add edges to F to make sure that a spanning tree for F exists.
+    Steps 4&#8211;6.
+    Assign edge weights based on word distance, find a minimum spanning tree, T, for F, then regroup the conjuncts based on T. The choice of T reflects the intuition that words that occur close together in a sentence tend to be semantically related.
+    This procedure is repeated for all conjunctions that appear in a logical form.
+    Rules are then extracted from the same input alignment used

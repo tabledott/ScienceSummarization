@@ -1,0 +1,11 @@
+orpus is assumed to represent the test domain.
+    Therefore, we also experimented with using Downhill Simplex optimization to directly learn the set of linear weights Ac that yield maximum BLEU score on the development corpus.
+    A final variant on setting linear mixture weights is a hybrid between cross-domain and dynamic adaptation.
+    In this approach, both the global loglinear weights and, if they are being used, the mixture parameters Qi, ai, bi are set to characterize the test domain as in cross-domain adaptation.
+    When translating, however, distances to the current source text are used in (3) or (4) instead of distances to the indomain development corpus.
+    This obviously limits the metrics used to ones that depend only on source text.
+  
+  
+    All experiments were run on the NIST MT evaluation 2006 Chinese data set.
+    Table 1 summarizes the corpora used.
+    The training corpus was divided into seven components according to genre; in all cases these were identical to LDC corpora, with the e

@@ -1,0 +1,8 @@
+tures are selected from a pool of eighteen different features that have been previously acknowledged as good indicators of word sense, including: part of speech of the ambiguous word itself, surrounding words and their parts of speech, keywords in context, noun before and after, verb before and after, and others.
+    An iterative forward search algorithm identifies at each step the feature that leads to the highest cross-validation precision computed on the training data.
+    More details on this system can be found in (Mihalcea, 2002b).
+    The second classifier is a COnstraint-BAsed Language Tagger (COBALT).
+    The system treats every training example as a set of soft constraints on the sense of the word of interest.
+    WordNet glosses, hyponyms, hyponym glosses and other WordNet data is also used to create soft constraints.
+    Currently, only &#8220;keywords in context&#8221; type of constraint is implemented, with weights accounting for the distance from the target word.
+    The tagging is performed by

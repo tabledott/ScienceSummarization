@@ -1,0 +1,8 @@
+artially processed nodes and a buffer Q, containing the remaining input.
+    Transitions in such a system add arcs to the dependency graph and manipulate the stack and buffer.
+    One example is the transition system defined by Nivre (2003), which parses a sentence x = wo, wi, ... , w,,, in O(n) time.
+    To learn a scoring function on transitions, these systems rely on discriminative learning methods, such as memory-based learning or support vector machines, using a strictly local learning procedure where only single transitions are scored (not complete transition sequences).
+    The main advantage of these models is that features are not restricted to a limited number of graph arcs but can take into account the entire dependency graph built so far.
+    The major disadvantage is that the greedy parsing strategy may lead to error propagation.
+    The specific transition-based model studied in this work is that presented by Nivre et al. (2006), which uses support vector machines to learn transition scores.
+   

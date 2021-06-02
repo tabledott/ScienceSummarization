@@ -1,0 +1,7 @@
+m in agenda based parsing problem as finding the highest scoring tree y from all possible outputs given an input x: where GEN(x) denotes the set of possible parses for the input x.
+    To repeat our earlier comments, in this paper we do not consider the method of finding the arg max to be part of the definition of graph-based parsing, only the fact that the dependency graph itself is being scored, and factored into scores attached to the dependency links.
+    The score of an output parse y is given by a linear model: where 4b(y) is the global feature vector from y and w is the weight vector of the model.
+    We use the discriminative perceptron learning algorithm (Collins, 2002; McDonald et al., 2005) to train the values of w. The algorithm is shown in Figure 1.
+    Averaging parameters is a way to reduce overfitting for perceptron training (Collins, 2002), and is applied to all our experiments.
+    While the MSTParser uses exact-inference (Eisner, 1996), we apply beam-search to decoding.
+    This is done by 

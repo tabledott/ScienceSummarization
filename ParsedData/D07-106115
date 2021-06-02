@@ -1,0 +1,8 @@
+llation of relevant relatedness informationabout all nodes extracted from WordNet and is not tailored for computing a stationary distribution for any specific word.
+			In order to compute the stationary distribu tion vdog#n for a walk centered around the TokenPOS ?dog#n,?
+			we first define an initial distribution v(0)dog#n that places all the probability mass in the single vector entry corresponding to ?dog#n.?
+			Then at every step of the walk, we will return to v(0) with probability ?.
+			Intuitively, this return probability captures the notion that nodes close to?dog#n? should be given higher weight, and also guaran tees that the stationary distribution exists and is unique(Bremaud, 1999).
+			The stationary distribution v is com puted via an iterative update algorithm: v(t) = ?v(0) + (1?
+			?)Mv(t?1) Because the walk may return to the initial distribution v(0) at any step with probability ?, we found that v(t) converges to its unique stationary distribution v(?)
+			in anumber of steps roughly proportional

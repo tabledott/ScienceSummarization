@@ -1,0 +1,8 @@
+s that he uses a beam width of 105.
+    As it happens, the beam width for his thesis experiments was 104.
+    Interestingly, there is a negligible difference in overall parsing accuracy when this wider beam is used (see Table 5).
+    An interesting modification to the standard beam in Collins&#8217; parser is that for chart items representing NP or NP-A derivations with more than one child, the beam is expanded to be 104 &#183; e3.
+    We suspect that Collins made this modification after he added the base NP model, to handle the greater perplexity associated with NPs.
+    The second form of pruning employed is a comma constraint.
+    Collins observed that in the Penn Treebank data, 96% of the time, when a constituent contained a comma, the word immediately following the end of the constituent&#8217;s span was either a comma or the end of the sentence.
+    So for speed reasons, the decoder rejects all theories that would generate constituents that violate this comma constraint.31 There is a subtlety to Collins

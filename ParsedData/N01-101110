@@ -1,0 +1,9 @@
+ different possible senses.
+    Each feature selected during the search process is represented by a node in the learned decision tree.
+    Each node represents a choice point between a number of different possible values for a feature.
+    Learning continues until all the training examples are accounted for by the decision tree.
+    In general, such a tree will be overly specific to the training data and not generalize well to new examples.
+    Therefore learning is followed by a pruning step where some nodes are eliminated or reorganized to produce a tree that can generalize to new circumstances.
+    Test instances are disambiguated by finding a path through the learned decision tree from the root to a leaf node that corresponds with the observed features.
+    An instance of an ambiguous word is disambiguated by passing it through a series of tests, where each test asks if a particular bigram occurs in the available window of context.
+    We also include three benchmark learning algorithms in this study: the

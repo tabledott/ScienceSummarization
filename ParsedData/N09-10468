@@ -1,0 +1,6 @@
+ehn et al., 2008), they are problematic for two reasons.
+    First, there is no principled way to incorporate additional features (such as phonotactics) which might be useful to determining whether a word break should occur.
+    Second, the heuristic scoring offers little insight into which segmentations should be included in a lattice.
+    We would like our model to consider a wide variety of segmentations of any word (including perhaps hypothesized morphemes that are not in the dictionary), to make use of a rich set of features, and to have a probabilistic interpretation of each hypothesized split (to incorporate into the downstream decoder).
+    We decided to use the class of maximum entropy models, which are probabilistically sound, can make use of possibly many overlapping features, and can be trained efficiently (Berger et al., 1996).
+    We thus define a model of the conditional probability distribution Pr(sN1 Iw), where w is a surface form and sN1 is the segmented form consisting of N segments as: Nex

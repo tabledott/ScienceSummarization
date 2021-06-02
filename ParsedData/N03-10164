@@ -1,0 +1,9 @@
+olves grammar summarization, which, to our knowledge, is entirely novel.
+    We present the estimates that we use, along with algorithms to efficiently calculate them, and illustrate their effectiveness in a tabular PCFG parsing algorithm, applied to Penn Treebank sentences.
+  
+  
+    An agenda-based PCFG parser operates on parse items called edges, such as NP:[0,2], which denote a grammar symbol over a span.
+    The parser maintains two data structures: a chart or table, which records edges for which (best) parses have already been found, and an agenda of newly-formed edges waiting to be processed.
+    The core loop involves removing an edge from the agenda and combining that edge with edges already in the chart to create new edges.
+    For example, NP:[0,2] might be removed from the agenda, and, if there were a rule S &#8594; NP VP and VP:[2,8] was already entered into the chart, the edge S:[0,8] would be formed, and added to the agenda if it were not in the chart already.
+    The way an A* parser differs f

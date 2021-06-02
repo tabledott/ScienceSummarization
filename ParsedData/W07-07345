@@ -1,0 +1,7 @@
+l and Fmean are based on singleword matches.
+    To take into account the extent to which the matched unigrams in the two strings are in the same word order, METEOR computes a penalty for a given alignment as follows.
+    First, the sequence of matched unigrams between the two strings is divided into the fewest possible number of &#8220;chunks&#8221; such that the matched unigrams in each chunk are adjacent (in both strings) and in identical word order.
+    The number of chunks (ch) and the number of matches (m) is then used to calculate a fragmentation fraction: frag = ch/m.
+    The penalty is then computed as: The value of y determines the maximum penalty (0 &lt; y &lt; 1).
+    The value of 0 determines the functional relation between fragmentation and the penalty.
+    Finally, the METEOR score for the alignment between the two strings is calculated as: score = (1 &#8722; Pen) &#183; Fmean In all previous versions of METEOR , the values of the three parameters mentioned above were set to be: a = 0.9, 0 = 3.

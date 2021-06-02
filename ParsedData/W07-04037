@@ -1,0 +1,9 @@
+of the alignment space.
+    This is f) will cover accomplished by constraining the JPTM to only use phrase pairs that are consistent with a highconfidence word alignment, which is provided by GIZA++ intersection.
+    We refer to this constrained JPTM as a C-JPTM.
+    This strikes an interesting middle ground between the surface heuristic described in Section 2.1 and the JPTM.
+    Like the surface heuristic, a word alignment is used to limit the phrase pairs considered, but the C-JPTM reasons about distributions over phrasal alignments, instead of taking flat counts.
+    The consistency constraint allows them to scale their C-JPTM up to 700,000 sentence pairs.
+    With this constraint in place, the use of hill-climbing and sampling during EM training becomes one of the largest remaining weaknesses of the C-JPTM.
+    Like the JPTM, stochastic synchronous grammars provide a generative process to produce a sentence and its translation simultaneously.
+    Inversion transduction grammar (Wu, 1997), or ITG, is a wel

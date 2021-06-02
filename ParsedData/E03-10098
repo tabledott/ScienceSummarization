@@ -1,0 +1,7 @@
+bjective function we try to maximise will be the likelihood of some model &#8212; i.e. the probability of the data with respect to the model.
+    The simplest candidate for the model is the class bigram model, though the approach can also be extended to class trigram models.
+    Suppose we have a corpus of length N, , wN.
+    We can assume an additional sentence boundary token.
+    Then the class bigram model defines the probability of the next word given the history as P(wi IOC') = P(wilg(wi))P(9(wi-1)1g(wi-2)) It is not computationally feasible to search through all possible partitions of the vocabulary to find the one with the highest value of the likelihood; we must therefore use some search algorithm that will give us a local optimum.
+    We follow (Ney et al., 1994; Martin et al., 1998) and use an exchange algorithm similar to the k-means algorithm for clustering.
+    This algorithm iteratively improves the likelihood of a given clustering by moving each word from its current cluster to the cluster that

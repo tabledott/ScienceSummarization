@@ -1,0 +1,7 @@
+work using these databases (Ng &amp; Cardie, 2002; Daum&#180;e &amp; Marcu, 2005; Ponzetto &amp; Strube, 2006; Ng, 2007; Yang &amp; Su, 2007; Bengston &amp; Roth, 2008; Huang et al., 2009; inter alia).
+    Since the input to a sieve is a collection of mention clusters built by the previous (more precise) sieves, we need to link mention clusters (rather than individual mentions) to records in these three knowledge bases.
+    The following steps generate a query for these resources from a mention cluster.
+    First, we select the most representative mention in a cluster by preferring mentions headed by proper nouns to mentions headed by common nouns, and nominal mentions to pronominal ones.
+    In case of ties, we select the longer string.
+    For example, the mention selected from the cluster {President George W. Bush, president, he} is President George W. Bush.
+    Second, if this mention returns nothing from the knowledge bases, we implement the following query relaxation algorithm: (a) remove the text follo

@@ -1,0 +1,7 @@
+ enumerated items directly into D(v); instead, we collect items in a buffer (buf in Figure 2) and re-sort the buffer into D(v) after it has accumulated k items.1 In general the grammar may have multiple rules that share the same source side but have different target sides, which we have treated here as separate k-best +LM rescoring.. . only at the root node on-the-fly at each node on-the-fly at each node hyperedges in the &#8722;LM forest.
+    In Hiero, these hyperedges are processed as a single unit which we call a hyperedge bundle.
+    The different target sides then constitute a third dimension of the grid, forming a cube of possible combinations (Chiang, 2007).
+    Now consider that there are many hyperedges that derive v, and we are only interested the top +LM items of v over all incoming hyperedges.
+    Following Algorithm 2, we initialize the priority queue cand with the upper-left corner item from each hyperedge, and proceed as above.
+    See Figure 2 for the pseudocode for cube pruning.
+    We use th

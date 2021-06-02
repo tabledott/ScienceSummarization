@@ -1,0 +1,10 @@
+e general framework for optimizing highly interdependent parameter sets.
+    Simulated annealing requires an objective function to optimize.
+    The objective function for bitext mapping should measure the difference between the TBM and the interpolated bitext maps produced with the current parameter set.
+    In geometric terms, the difference is a distance.
+    The TBM consists of a set of TPCs.
+    The distance between a bitext map and each TPC can be defined in a number of ways.
+    The simplest metrics are the horizontal distance or the vertical distance, but these metrics measure the error with respect to only one language or the other.
+    A more robust average is the distance perpendicular to the main diagonal.
+    In order to penalize large errors more heavily, root mean squared (RMS) distance, rather than mean distance, should be minimized.
+    There is a slight complication in the computation of distances between two partial functions, in that linear interpolation is not well-defined for nonmonotoni

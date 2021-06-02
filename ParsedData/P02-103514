@@ -1,0 +1,6 @@
+ngs in a discriminative estimation setting. rameters which make the two expectations in the last equation equal, i.e. which adjust the model parameters to put all the weight on the parses consistent with the annotations, modulo a penalty term from the Gaussian prior for too large or too small weights.
+    Since a closed form solution for such parameters is not available, numerical optimization methods have to be used.
+    In our experiments, we applied a conjugate gradient routine, yielding a fast converging optimization algorithm where at each iteration the negative log-likelihood P(&#955;) and the gradient vector have to be evaluated.2 For our task the gradient takes the form: The derivatives in the gradient vector intuitively are again just a difference of two expectations Note also that this expression shares many common terms with the likelihood function, suggesting an efficient implementation of the optimization routine.
+  
+  
+    The basic training data for our experiments are sections 02-21 of the WSJ

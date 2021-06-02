@@ -1,0 +1,6 @@
+ Gigaword corpus, and on French&#8211;English, we use the trigram model which was provided for the NAACL 2006 shared task.
+    The Select function in Algorithm 1 is used to create the additional training data Ti which will be used in the next iteration i + 1 by Estimate to augment the corpus use sentences original bilingual training data.
+    We use the following selection functions: Importance Sampling: For each sentence s in the set of unlabeled sentences U, the Labeling step in Algorithm 1 generates an N-best list of translations, and the subsequent Scoring step assigns a score for each translation t in this list.
+    The set of generated translations for all sentences in U is the event space and the scores are used to put a probability distribution over this space, simply by renormalizing the scores described in Section 3.3.
+    We use importance sampling to select K translations from this distribution.
+    Sampling is done with replacement which means that the same translation may be chosen several times

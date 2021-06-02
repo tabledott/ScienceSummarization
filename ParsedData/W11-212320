@@ -1,0 +1,10 @@
+ data structures once to find wnf and again to find {b(wn&#8722;1 i )}f&#8722;1 i=1if necessary.
+    In both cases, SRILM walks its trie an additional time to minimize context as mentioned in Section 4.1.
+    BerkeleyLM uses states to optimistically search for longer n-gram matches first and must perform twice as many random accesses to retrieve backoff information.
+    Further, it needs extra pointers in the trie, increasing model size by 40%.
+    This makes memory usage comparable to our PROBING model.
+    The PROBING model can perform optimistic searches by jumping to any n-gram without needing state and without any additional memory.
+    However, this optimistic search would not visit the entries necessary to store backoff information in the outgoing state.
+    Though we do not directly compare state implementations, performance metrics in Table 1 indicate our overall method is faster.
+    Only IRSTLM does not support threading.
+    In our case multi-threading is trivial because our data structures are re

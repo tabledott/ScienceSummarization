@@ -1,0 +1,7 @@
+S trigrams only.
+    Our third-order feature mappings fgsib and ftsib consist of four types of features.
+    First, we define 4-gram features that characterize the four relevant indices using words and POS tags; examples include POS 4-grams and mixed 4-grams with one word and three POS tags.
+    Second, we define 4gram context features consisting of POS 4-grams augmented with adjacent POS tags: for example, fgsib(x, g, h, m, s) includes POS 7-grams for the tags at positions (g, h, m, s, g+1, h+1, m+1).
+    Third, we define backed-offfeatures that track bigram and trigram interactions which are absent in the lower-order feature mappings: for example, ftsib(x, h, m, s, t) contains features predicated on the trigram (m, s, t) and the bigram (m, t), neither of which exist in any lower-order part.
+    Fourth, noting that coordinations are typically annotated as grand-siblings (e.g., &#8220;report purchases and sales&#8221; in Figure 1), we define coordination features for certain grand-sibling parts.
+    For examp

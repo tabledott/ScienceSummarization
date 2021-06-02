@@ -1,0 +1,11 @@
+e whether the alignment score is &#8220;good&#8221; or &#8220;bad&#8221; by computing the sigmoid function of the distance between the alignment score and hard-coded &#8220;good&#8221; and &#8220;bad&#8221; reference values.
+  
+  
+    We present results based on the First PASCAL RTE Challenge, which used a development set containing 567 pairs and a test set containing 800 pairs.
+    The data sets are balanced to contain equal numbers of yes and no answers.
+    The RTE Challenge recommended two evaluation metrics: raw accuracy and confidence weighted score (CWS).
+    The CWS is computed as follows: for each positive integer k up to the size of the test set, we compute accuracy over the k most confident predictions.
+    The CWS is then the average, over k, of these partial accuracies.
+    Like raw accuracy, it lies in the interval [0, 1], but it will exceed raw accuracy to the degree that predictions are well-calibrated.
+    Several characteristics of the RTE problems should be emphasized.
+    Examples are deri

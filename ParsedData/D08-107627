@@ -1,0 +1,7 @@
+3 BLEU points.
+    Although this performance loss is recouped after the 5th iteration, the initial decline makes the line optimization under N-best MERT more fragile since the optimum found at the end of the training procedure is affected by the initial performance drop rather than by the choice of the initial start weights.
+    Lattice MERT on the other hand results in a significantly faster convergence speed and reaches its optimum already in the 5th iteration.
+    For lattice MERT, we used a graph density of 40 arcs per phrase which corresponds to an N-best size of more than two octillionp2~1027qentries.
+    This huge number of alternative candidate translations makes updating the weights under lattice MERT more reliable and robust and, compared to N-best MERT, it becomes less likely that the same feature weight needs to be picked again and adjusted in subsequent iterations.
+    Figure 4 shows the evolution of the BLEU score on the zhen-dev1 corpus using lattice MERT with 5 weights updates per iteration.
+ 

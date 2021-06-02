@@ -1,0 +1,8 @@
+
+    G0(w) is the a priori probability of word w: before observing any data, we believe word w should occur with probability G0(w).
+    In practice this is usually set uniformly G0(w) = 1/V for all w E W. Both &#952; and d can be understood as controlling the amount of variability around G0 in different ways.
+    When d = 0 the Pitman-Yor process reduces to a Dirichlet distribution with parameters &#952;G0.
+    There is in general no known analytic form for the density of PY(d, &#952;, G0) when the vocabulary is finite.
+    However this need not deter us as we will instead work with the distribution over sequences of words induced by the Pitman-Yor process, which has a nice tractable form and is sufficient for our purpose of language modelling.
+    To be precise, notice that we can treat both G and G0 as distributions over W, where word w E W has probability G(w) (respectively G0(w)).
+    Let x1, x2, ... be a sequence of words drawn independently and identically (i.i.d.) from G. We shall describe the Pitman-Y

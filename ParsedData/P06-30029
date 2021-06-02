@@ -1,0 +1,7 @@
+ graph, which can be again clustered by CW.
+    This procedure is parametrised by a loglikelihood threshold and the minimum number of left and right neighbours A and B share in order to draw an edge between them in the resulting graph.
+    For experiments, we chose a minimum log-likelihood of 3.84 (corresponding to statistical dependence on 5% level), and at least four shared neighbours of A and B on each side.
+    Only words with a frequency rank higher than 2,000 are taken into account.
+    Again, we obtain several hundred clusters, mostly of open word classes.
+    For computing partitioning 2, an efficient algorithm like CW is crucial: the graphs 2 This might even be desired, e.g. for English not. as used for the experiments consisted of 52,857/691,241 (English), 85,827/702,349 (Finnish) and 137,951/1,493,571 (German) nodes/edges.
+    The procedure to construct the graphs is faster than the method used for partitioning 1, as only words that share at least one neighbour have to be compared and therefore can

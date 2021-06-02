@@ -1,0 +1,10 @@
+-domain and out-of-domain language models.
+    We included them as two separate features, whose weights are set with minimum error rate training.
+    The relative weight for each model is set directly by optimizing translation performance.
+    Finally, besides biasing the language model to a specific target domain, we may also bias the translation model.
+    Here, we take advantage of a feature of the Moses decoder&#8217;s factored translation model framework.
+    In factored translation models, the representation of words is extended to a vector of factors (e.g., surface form, lemma, POS, morphology).
+    The mapping of an input phrase to an output phrase is decomposed into several translation and generation steps, each using a different translation or generation table, respectively.
+    Such a decomposition is called a decoding path.
+    A more recent feature of the factored translation model framework is the possible use of multiple alternative decoding paths.
+    This alternate decoding path model was dev

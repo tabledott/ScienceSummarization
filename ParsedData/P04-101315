@@ -1,0 +1,7 @@
+iteria value is close to the optimum can be found.
+    The three parsing models differ in the criteria the neural networks are trained to optimize.
+    Two of the neural networks are trained using the standard maximum likelihood approach of optimizing the same probability which they are estimating, one generative and one discriminative.
+    For the generative model, this means maximizing the total joint probability of the parses and the sentences in the training corpus.
+    For the discriminative model, this means maximizing the conditional probability of the parses in the training corpus given the sentences in the training corpus.
+    To make the computations easier, we actually minimize the negative log of these probabilities, which is called cross-entropy error.
+    Minimizing this error ensures that training will converge to a neural network whose outputs are estimates of the desired probabilities.2 For each parse in the training corpus, Backpropagation training involves first computing the probability wh

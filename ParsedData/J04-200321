@@ -1,0 +1,9 @@
+nding German sentence, namely, the main part of the verb and the separated prefix.
+    To solve the problem of separated prefixes, all separable word forms of verbs are extracted from the training corpus.
+    The resulting list contains entries of the form prefix|main.
+    In all clauses containing a word matching a main part and a word matching the corresponding prefix part occurring at the end of the clause, the prefix is prepended to the beginning of the main part.
+  
+  
+    In general, the probabilistic lexicon resulting from training the translation model contains all word forms occurring in the training corpus as separate entries, not taking into account whether or not they are inflected forms of the same lemma.
+    Bearing in mind that typically more than 40% of the word forms are seen only once in training (see, for example, Table 5), it is obvious that for many words, learning the correct translations is difficult.
+    Furthermore, new input sentences are expected to contain unknown word forms, for w

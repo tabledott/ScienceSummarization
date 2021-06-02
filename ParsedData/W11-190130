@@ -1,0 +1,7 @@
+peakers of a given utterance, whereas in weblogs or newsgroups it does so as the writer, or commenter of a particular article or thread.
+    This information provides an important clue for correctly linking anaphoric pronouns with the right antecedents.
+    This information could be automatically deduced, but since it would add additional complexity to the already complex task, we decided to provide oracle information of this metadata both during training and testing.
+    In other words, speaker and author identification was not treated as an annotation layer that needed to be predicted.
+    This information was provided in the form of another column in the .conll table.
+    There were some cases of interruptions and interjections that ideally would associate parts of a sentence to two different speakers, but since the frequency of this was quite small, we decided to make an assumption of one speaker/writer per sentence.
+    The predicted annotation layers were derived using automatic models trained using cro

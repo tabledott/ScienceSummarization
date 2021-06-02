@@ -1,0 +1,9 @@
+o that parse tree.
+    The probability of the parse tree is the sum of the probabilities of the derivations.
+    Given our example, there are two different ways to generate the parse tree each with probability t, so that the parse tree has probability t .
+    This parse tree is most probable.
+    Bod (1993c) shows how to approximate this most probable parse using a Monte Carlo algorithm.
+    The algorithm randomly samples possible derivations, then finds the tree with the most sampled derivations.
+    Bod shows that the most probable parse yields better performance than the most probable derivation on the exact match criterion.
+    Khalil Sima'an (1996) implemented a version of the DOP model, which parses efficiently by limiting the number of trees used and by using an efficient most probable derivation model.
+    His experiments differed from ours and Bod's in many ways, including his use of a different version of the ATIS corpus; the use of word strings, rather than part of speech strings; and the fact that

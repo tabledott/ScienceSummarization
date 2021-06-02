@@ -1,0 +1,5 @@
+ alignments in the E-step of the EM algorithm instead of enumerating all (I + 1)J alignments.
+    This small subset of alignments is the set of neighboring alignments of the best alignment that can be found by a greedy search algorithm.
+    We use two operators to transform alignments: The move operator m[i,j](a) changes aj := i, and the swap operator s[j1,j2](a) exchanges aj1 and aj2.
+    The neighborhood N(a) of an alignment a is then defined as the set of all alignments that differ by one move or one swap from alignment a: For one step of the greedy search algorithm, we define the following hill-climbing operator (for Model 3), which yields for an alignment a the most probable alignment b(a) in the neighborhood N(a): Similarly, we define a hill-climbing operator for the other alignment models.
+    A straightforward count collection procedure for a sentence pair (f,e) following the description in Brown, Della Pietra, Della Pietra, and Mercer (1993) is as follows:5 (d) Increase the counts for p1: A major par

@@ -1,0 +1,12 @@
+xplain the technical details in the next section.
+  
+  
+    We have reduced the problem of binarizing an SCFG rule into the problem of binarizing its permutation.
+    This problem can be cast as an instance of synchronous ITG parsing (Wu, 1997).
+    Here the parallel string pair that we are parsing is the integer sequence (1...n) and its permutation (7r(1)...7r(n)).
+    The goal of the ITG parsing is to find a synchronous tree that agrees with the alignment indicated by the permutation.
+    In fact, as demonstrated previously, some permutations may have more than one binarization patterns among which we only need one.
+    Wu (1997, Sec.
+    7) introduces a non-ambiguous ITG that prefers left-heavy binary trees so that for each permutation there is a unique synchronous derivation (binarization pattern).
+    However, this problem has more efficient solutions.
+    Shapiro and Stephens (1991, p. 277) informally present an iterative procedure where in each pass it scans the permuted sequence from left to right and

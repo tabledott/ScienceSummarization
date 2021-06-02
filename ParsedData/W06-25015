@@ -1,0 +1,8 @@
+ by creating a Word Space, which is a co&#8211;occurrence matrix where each row can be viewed as a first order context vector.
+    Each cell in this matrix represents the frequency with which two words occur near one another in a corpus of text.
+    The Word Space is usually quite large and sparse, since there are many words in the corpus and most of them don&#8217;t occur near each other.
+    In order to reduce the dimensionality and the amount of noise, non&#8211;content stop words such as the, for, a, etc. are excluded from being rows or columns in the Word Space.
+    Given a Word Space, a context can then be represented by second order co&#8211;occurrences (context vector).
+    This is done by finding the resultant of the first order context vectors corresponding to each of the words in that context.
+    If a word in a context does not have a first order context vector created for it, or if it is a stop word, then it is excluded from the resultant.
+    For example, suppose we have the following context: T

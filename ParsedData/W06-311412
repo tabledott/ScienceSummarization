@@ -1,0 +1,7 @@
+ evaluation metrics.
+    We computed BLEU scores for each submission with a single reference translation.
+    For each sentence, we counted how many n-grams in the system output also occurred in the reference translation.
+    By taking the ratio of matching n-grams to the total number of n-grams in the system output, we obtain the precision pn for each n-gram order n. These values for n-gram precision are combined into a BLEU score: The formula for the BLEU metric also includes a brevity penalty for too short output, which is based on the total number of words in the system output c and in the reference r. BLEU is sensitive to tokenization.
+    Because of this, we retokenized and lowercased submitted output with our own tokenizer, which was also used to prepare the training and test data.
+    Confidence Interval: Since BLEU scores are not computed on the sentence level, traditional methods to compute statistical significance and confidence intervals do not apply.
+    Hence, we use the bootstrap resampling met

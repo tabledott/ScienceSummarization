@@ -1,0 +1,11 @@
+re given in Table 2.
+    The table shows the baseline 3-gram and 2-gram perplexities, and three GPB-FLMs.
+    Model A uses the true by-hand tag information from the Treebank.
+    To simulate conditions during first-pass decoding, Model B shows the results using the most frequent tag, and Model C uses only the two data-driven word classes.
+    As can be seen, the bigram perplexities are significantly reduced relative to the baseline, almost matching that of the baseline trigram.
+    Note that none of these reduced perplexity bigrams were possible without using one of the novel backoff functions.
+  
+  
+    The improved perplexity bigram results mentioned above should ideally be part of a first-pass recognition step of a multi-pass speech recognition system.
+    With a bigram, the decoder search space is not large, so any appreciable LM perplexity reductions should yield comparable word error reductions for a fixed set of acoustic scores in a fzrstpass.
+    For N-best or lattice generation, the oracle error shou

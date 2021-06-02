@@ -1,0 +1,12 @@
+ I to the range 1 to 25.
+  
+  
+    In searching for the sentence S that maximizes Pr(S) Pr( TI S), we face the difficulty that there are simply too many sentences to try.
+    Instead, we must carry out a suboptimal search.
+    We do so using a variant of the stack search that has worked so well in speech recognition (Bahl et al. 1983).
+    In a stack search, we maintain a list of partial alignment hypotheses.
+    Initially, this list contains only one entry corresponding to the hypothesis that the target sentence arose in some way from a sequence of source words that we do not know.
+    In the alignment notation introduced earlier, this entry might be (Jean aime MarieI*) where the asterisk is a place holder for an unknown sequence of source words.
+    The search proceeds by iterations, each of which extends some of the most promising entries on the list.
+    An entry is extended by adding one or more additional words to its hypothesis.
+    For example, we might extend the initial entry above to one or more of

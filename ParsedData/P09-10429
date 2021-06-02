@@ -1,0 +1,7 @@
+peech tags x is given by where r(x) is the part of speech tag of the root of the parse tree z, z is an edge from parent zp to child zc in direction zd, either left or right, and vz indicates valency&#8212;false if zp has no other children further from it in direction zd than zc, true otherwise.
+    The valencies vr/vl are marked as true if x has any children on the left/right in z, false otherwise.
+  
+  
+    Gra&#231;a et al. (2008) introduce an estimation framework that incorporates side-information into unsupervised problems in the form of linear constraints on posterior expectations.
+    In grammar transfer, our basic constraint is of the form: the expected proportion of conserved edges in a sentence pair is at least &#951; (the exact proportion we used was 0.9, which was determined using unlabeled data as described in Section 5).
+    Specifically, let Cx be the set of directed edges projected from English for a given sentence x, then given a parse z, the proportion of conserved edges is f (x, z) = |CX |Ez

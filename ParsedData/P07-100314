@@ -1,0 +1,7 @@
+sition of the technique.
+    In the E-step, we employ the forward-backward algorithm and current parameters to find expected counts for each potential pair of links in each training pair.
+    In this familiar dynamic programming approach, we must compute the distortion probabilities for each pair of English positions.
+    The minimal path between two leaves in a tree can be computed efficiently by first finding the path from the root to each leaf, then comparing those paths to find the nearest common ancestor and a path through it &#8211; requiring time linear in the height of the tree.
+    Computing distortion costs independently for each pair of words in the sentence imposed a computational overhead of roughly 50% over the original HMM model.
+    The bulk of this increase arises from the fact that distortion probabilities in this model must be computed for each unique tree, in contrast to the original HMM which has the same distortion probabilities for all sentences of a given length.
+    In the M-step, we 

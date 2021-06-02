@@ -1,0 +1,6 @@
+cy trees.
+    In Figure 4, we define an oracle function o for the system Su, which implements this &#8220;sort and parse&#8221; strategy and predicts the optimal transition t out of the current configuration c, given the target dependency tree G = (Vx, A) and the projective order &lt;G.
+    The oracle predicts LEFT-ARCl or RIGHT-ARCl if the two top nodes on the stack should be connected by an arc and if the dependent node of this arc is already connected to all its dependents; it predicts SWAP if the two top nodes are not in projective order; and it predicts SHIFT otherwise.
+    This is the oracle that has been used to generate training data for classifiers in the experimental evaluation in Section 4.
+    Let us now consider the time complexity of the extended system Su = (C, Tu, cs, Ct) and let us begin by observing that 2n is still a lower bound on the number of transitions required to reach a terminal configuration.
+    A sequence of 2n transitions occurs when no SWAP transitions are performed, in which ca

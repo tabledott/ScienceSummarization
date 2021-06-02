@@ -1,0 +1,6 @@
+s relevance is determined by first assigning each position to a node in the parse tree, namely the node which is on the top of the parser&#8217;s stack when that decision is made.
+    Then the relevant earlier positions are chosen based on the structural locality of the current decision&#8217;s node to the earlier decisions&#8217; nodes.
+    In this way, the number of representations which information needs to pass through in order to flow from history representation i to history representation j is determined by the structural distance between i&#8217;s node and j&#8217;s node, and not just the distance between i and j in the parse sequence.
+    This provides the neural network with a linguistically appropriate inductive bias when it learns the history representations, as explained in more detail in (Henderson, 2003b).
+    When computing the lookahead representation l(yield(di,..., dm)), there is no structural information available to tell us which positions are most relevant to choosing the decision di.
+   

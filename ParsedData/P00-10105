@@ -1,0 +1,10 @@
+een tokenized into words and sentences and tagged for part-of-speech.
+    The program passes each sentence first to a module that identifies time expressions, and then to another module (SC) that resolves selfcontained time expressions.
+    The program then takes the entire document and passes it to a discourse processing module (DP) which resolves context-dependent time expressions (indexicals as well as other expressions).
+    The DP module tracks transitions in temporal focus, uses syntactic clues, and various other knowledge sources.
+    The module uses a notion of Reference Time to help resolve context-dependent expressions.
+    Here, the Reference Time is the time a context-dependent expression is relative to.
+    In our work, the reference time is assigned the value of either the Temporal Focus or the document (creation) date.
+    The Temporal Focus is the time currently being talked about in the narrative.
+    The initial reference time is the document date.
+    We now discuss the modules that assign 

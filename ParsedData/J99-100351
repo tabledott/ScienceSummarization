@@ -1,0 +1,8 @@
+ more common.
+    Before comparing bitext alignment algorithms in terms of accuracy, it is important to compare their asymptotic running times.
+    In order to run a quadratic-time alignment algorithm in a reasonable amount of time on a large bitext, the bitext must be presegmented into a set of smaller bitexts.
+    When a bitext contains no easily recognizable &amp;quot;anchors,&amp;quot; such as paragraphs or sections, this first-pass alignment must be done manually.
+    Given a reasonably good bitext map, GSA's expected running time is linear in the number of input segment boundaries.
+    In all the bitexts on which GSA was trained and tested, the points of correspondence in SIMR's output were sufficiently dense and accurate that GSA backed off to a quadratic-time alignment algorithm only for very small aligned blocks.
+    For example, when the seed translation lexicon was used in SIMR's matching predicate, the largest aligned block that needed to be realigned was 5 x 5 segments.
+    Without the seed trans

@@ -1,0 +1,9 @@
+ing-toweight transducer, each path of which corresponds to a sentence.
+    The weight of the path can be interpreted as a negative log of the probability of that sentence given the sequence of acoustic observations (utterance).
+    Such acyclic string-to-weight transducers are called word lattices.
+    For a given utterance, the word lattice obtained in such a way contains many paths labeled with the possible sentences and their associated weights.
+    A word lattice often contains a lot of redundancy: many paths correspond to the same sentence but with different weights.
+    Word lattices can be directly searched to find the most probable sentences, those which correspond to the best paths, the paths with the smallest weights.
+    Figure 18 shows a word lattice obtained in speech recognition for the 2,000-word ARPA ATIS Task.
+    It corresponds to the following utterance: Which flights leave Detroit and arrive at Saint Petersburg around nine am?
+    Clearly the lattice is complex; it contains about 83 millio

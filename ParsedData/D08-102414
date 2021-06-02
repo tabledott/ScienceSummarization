@@ -1,0 +1,6 @@
+esearch introduced by Chiang (2005) and improved on by Marton and Resnik (2008).
+    A hierarchical phrase-based translation model is based on synchronous context-free grammar, but does not normally use any syntactic information derived from linguistic knowledge or treebank data: it uses translation rules that span any string of words in the input sentence, without regard for parser-defined syntactic constituency boundaries.
+    Chiang (2005) experimented with a constituency feature that rewarded rules whose source language side exactly spans a syntactic constituent according to the output of an external source-language parser.
+    This feature can be viewed as a soft syntactic constraint: it biases the model toward translations that respect syntactic structure, but does not force it to use them.
+    However, this more syntactically aware model, when tested in Chinese-English translation, did not improve translation performance.
+    Recently, Marton and Resnik (2008) revisited the idea of constituency feature

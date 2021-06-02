@@ -1,0 +1,9 @@
+  In int erp-held-out , the A's are trained using held-out interpolation on one of the development test sets.
+    In interp-del-int, the A's are trained using the relaxed deleted interpolation technique described by Jelinek and Mercer, where one word is deleted at a time.
+    In interp-del-int, we bucket an n-gram according to its count before deletion, as this turned out to significantly improve performance.
+    (new-avg-count and new-one-count) The implementation new-avg-count, corresponding to smoothing method average-count, is identical to interp-held-out except that we use the novel bucketing scheme described in section 3.1.
+    In the implementation new-one-count, we have different parameters 3,, and 7&#8222; in equation (4) for each n.
+  
+  
+    In Figure 2, we display the performance of the interp-baseline method for bigram and trigram models on TIPSTER, Brown, and the WSJ subset of TIPSTER.
+    In Figures 3-6, we display the relative performance of various smoothing techniques with respect to the bas

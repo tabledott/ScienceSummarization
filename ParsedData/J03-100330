@@ -1,0 +1,8 @@
+rmines whether the looping edges starting from vertex v match those of w. If EH(v, v) is not a subset of EG(w,w) (e.g., v is a dog and w is a doghouse), we can immediately discard the matching.
+    Otherwise we start with the matching 7r.v = w and try to expand it recursively.
+    At each recursion step a fresh and as yet unmatched vertex y from VH is selected that is adjacent to one of the vertices in the current domain of 7r (notated dom(7r)).
+    For each y we calculate the set Z of possible vertices in G to which y can be Sketch of the function testing for subgraph isomorphism (matchGraphs). matched.
+    This set consists of all the vertices in G that have the same looping edges as y and the same edges to and from other vertices in the domain of the current matching function 7r.
+    Formally: (The H.neighbors(y) are the vertices in H that are adjacent to y, that is, those vertices that are connected to y by an edge.)
+    The matching can now possibly be extended with 7r.y = z, for each z &#8712; Z.
+    Th

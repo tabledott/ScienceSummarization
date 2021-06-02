@@ -1,0 +1,9 @@
+pattern accuracy will decline.
+    To deal with this problem, we arrange different learners, for different scenarios to train simultaneously on each iteration.
+    Each learner stores its own bag of good patterns, and each assigns its own relevance, , to the documents.
+    Documents that are &#8220;ambiguous&#8221; will have high relevance in more than one scenario.
+    Now, given multiple learners, we can refine the measure of pattern precision in Eq.
+    4 for scenario , to take into account the negative evidence&#8212;i.e., how much weight the documents matched by the pattern received in other scenarios: If the candidate is not considered for acceptance.
+    Equations 6 and 5 imply that the learner will disfavor a pattern if it has too much opposition from other scenarios.
+    The algorithm proceeds as long as two or more scenarios are still learning patterns.
+    When the number of surviving scenarios drops to one, learning terminates, since, running unopposed, the surviving scenario is may start learning

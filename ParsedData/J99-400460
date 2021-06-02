@@ -1,0 +1,10 @@
+make sure all and only derivable items are considered (using triggering techniques described by Shieber, Schabes, and Pereira) in order to achieve optimal performance.
+    Once we have the bucketing, the parsing step is fairly simple.
+    The basic algorithm appears in Figure 10.
+    We simply loop over each item in each bucket.
+    There are two types of buckets: looping buckets, and nonlooping buckets.
+    If the current bucket is a looping bucket, we compute the infinite sum needed to determine the bucket's values; in a working system, we substitute semiring-specific code for this section, as described in Section 3.2.
+    If the bucket is not a looping bucket, we simply compute all of the possible instantiations that could contribute to the values of items in that bucket.
+    Finally, we return the value of the goal item.
+    The reverse semiring parser interpreter is very similar to the forward semiring parser interpreter.
+    The differences are that in the reverse semiring parser interpreter, we travers

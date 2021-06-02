@@ -1,0 +1,7 @@
+   If we start with the rule VP &#8594; VBZ NP PP PP, it will be broken into several stages, each a binary or unary rule, which conceptually represent a head-outward generation of the right hand size, as shown in figure 1.
+    The bottom layer will be a unary over the head declaring the goal: (VP: [VBZ]) &#8594; VBZ.
+    The square brackets indicate that the VBZ is the head, while the angle brackets (X) indicates that the symbol (X) is an intermediate symbol (equivalently, an active or incomplete state).
+    The next layer up will generate the first rightward sibling of the head child: (VP: [VBZ]... NP) &#8594; (VP: [VBZ]) NP.
+    Next, the PP is generated: (VP: [VBZ]... PP) &#8594; (VP: [VBZ]... NP) PP.
+    We would then branch off left siblings if there were any.7 Finally, we have another unary to finish the VP.
+    Note that while it is convenient to think of this as a head-outward process, these are just PCFG rewrites, and so the actual scores attached to each rule will correspond to a downward generation

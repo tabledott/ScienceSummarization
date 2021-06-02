@@ -1,0 +1,10 @@
+tioned earlier, the problem with beam thresholding is that it can only threshold out the worst nodes of a cell.
+    It cannot threshold out an entire cell, even if there are no good nodes in it.
+    To remedy this problem, we introduce a novel thresholding technique, global thresholding.
+    The key insight of global thresholding is due to Rayner and Carter (1996).
+    Rayner et al. noticed that a particular node cannot be part of the correct parse if there are no nodes in adjacent cells.
+    In fact, it must be part of a sequence of nodes stretching from the start of the string to the end.
+    In a probabilistic framework where almost every node will have some (possibly very small) probability, we can rephrase this requirement as being that the node must be part of a reasonably probable sequence.
+    Figure 2 shows an example of this insight.
+    Nodes A, B, and C will not be thresholded out, because each is part of a sequence from the beginning to the end of the chart.
+    On the other hand, nodes X, Y, and

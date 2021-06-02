@@ -1,0 +1,7 @@
+(over all derivations leading to each gold standard dependency structure).
+    The estimation process attempts to make the expectations equal, by putting as much mass as possible on the derivations leading to the gold standard structures.1 The Gaussian prior term penalises any model whose weights get too large in absolute value.
+    Calculation of the feature expectations requires summing over all derivations for a sentence, and summing over all derivations leading to a gold standard dependency structure.
+    In both cases there can be exponentially many derivations, and so enumerating all derivations is not possible (at least for wide-coverage automatically extracted grammars).
+    Clark and Curran (2003) show how the sum over the complete derivation space can be performed efficiently using a packed chart and a variant of the inside-outside algorithm.
+    Section 5 shows how the same technique can also be applied to all derivations leading to a gold standard dependency structure.
+    The objective function a

@@ -1,0 +1,7 @@
+ to the substring of w that the edge is designated to cover.
+    However, this is not a requirement.
+    For example, German compounds frequently have so-called Fugenelemente, one or two characters that &#8220;glue together&#8221; the primary morphemes in a compound.
+    Since we permit these characters to be deleted, then an edge where they are deleted will have fewer characters than the coverage indicated by the edge&#8217;s starting and ending vertices.
+    Except for the minimum segment length restriction, our model defines probabilities for all segmentations of an input word, making the resulting segmentation lattices are quite large.
+    Since large lattices are costly to deal with during translation (and may lead to worse translations because poor segmentations are passed to the decoder), we prune them using forward-backward pruning so as to contain just the highest probability paths (Sixtus and Ortmanns, 1999).
+    This works by computing the score of the best path passing through every edge in the la

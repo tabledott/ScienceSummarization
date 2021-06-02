@@ -1,0 +1,9 @@
+looking centers (see Walker et al. (1998)).
+    Ranking is first applied to learning-based coreference resolution by Connolly et al. (1994; 1997), where a model is trained to rank two candidate antecedents.
+    Each training instance corresponds to the NP to be resolved, NP/,, as well as two candidate antecedents, NP&#65533; and NPj, one of which is an antecedent of NP,, and the other is not.
+    Its class value indicates which of the two candidates is better.
+    This model is referred to as the tournament model by Iida et al. (2003) and the twin-candidate model by Yang et al.
+    (2003; 2008b).
+    To resolve an NP during testing, one way is to apply the model to each pair of its candidate antecedents, and the candidate that is classified as better the largest number of times is selected as its antecedent.
+    Advances in machine learning have made it possible to train a mention ranker that ranks all of the candidate antecedents simultaneously.
+    While mention rankers have consistently outperformed the me

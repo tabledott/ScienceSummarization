@@ -1,0 +1,8 @@
+first phrase can be replaced with each word of the second phrase.
+    This computation uses the lexical replacement probabilities computed in Step 2.
+    Now that a set of scored phrasal pairs has been extracted, these pairs can be used to generate paraphrases for any unseen sentence.
+    Generation proceeds by creating a lattice for the given sentence.
+    Given a sentence E, the lattice is populated as follows: Figure 6 shows an example lattice.
+    Once the lattice has been constructed, it is straightforward to extract the 1-best paraphrase by using a dynamic programming algorithm such as Viterbi decoding and extracting the optimal path from the lattice as scored by the product of an n-gram language model and the replacement model.
+    In addition, as with SMT decoding, it is also possible to extract a list of n-best paraphrases from the lattice by using the appropriate algorithms (Soong and Huang 1990; Mohri and Riley 2002).
+    Quirk, Brockett, and Dolan (2004) borrow from the statistical machine transla

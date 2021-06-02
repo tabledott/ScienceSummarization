@@ -1,0 +1,9 @@
+e.
+    To represent the logical form in Figure 4, we use its linearized parse&#8212;a list of MRL productions that generate the logical form, in top-down, left-most order (cf.
+    Figure 2(a)).
+    Since the MRL grammar is unambiguous, every logical form has a unique linearized parse.
+    We assume the alignment to be n-to-1, where each word is linked to at most one MRL production.
+    Rules are extracted in a bottom-up manner, starting with MRL productions at the leaves of the MR parse tree, e.g.
+    FORM &#8212;* state(x1) in Figure 2(a).
+    Given an MRL production, A &#8212;* Q, a rule A &#8212;* (&#945;, Axi1 ... Axik.Q) is extracted such that: (1) &#945; is the NL phrase linked to the MRL production; (2) xi1, ... , xik are the logical variables that appear in Q and outside the current leaf node in the MR parse tree.
+    If xi1, ... , xik were not bound by A, they would become free variables in Q, subject to renaming during function application (and therefore, invisible to the rest of the logical form).

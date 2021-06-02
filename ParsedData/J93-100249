@@ -1,0 +1,6 @@
+ conventional parser and to have the analyst select the correct parse from the set returned (or reject them all).
+    However, this approach places a great load on the analyst, who will routinely need to examine large numbers of parses for given sentences.
+    In addition, computation of all possible analyses is likely to be expensive and, in the limit, intractable.
+    Briscoe (1987) demonstrates that the structure of the search space in parse derivations makes a left-to-right, incremental mode of parse selection most efficient.
+    For example, in noun compounds analyzed using a recursive binary-branching rule (N N N) the number of analyses correlates with the Catalan series (Church and Patil, 1982), so a 3-word compound has 2 analyses, 4 has 5, 5 has 14, 9 has 1430, and so forth.
+    However, Briscoe (1987:154f) shows that with a simple bounded context parser (with one word lookahead) set up to request help whenever a parse indeterminacy arises, it is possible to select any of the 14 analyses of a 5-word c

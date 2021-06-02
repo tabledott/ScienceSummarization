@@ -1,0 +1,8 @@
+g that RU sees a large gain as it is a highly inflected language, making observations of lexical features far more sparse.
+    Some languages, e.g., FR, NL, and ZH see much smaller gains.
+    One likely culprit is a divergence between the tokenization schemes used in the treebank and in our unlabeled data, which for Indo-European languages is closely related to the Penn Treebank tokenization.
+    For example, the NL treebank contains many multi-word tokens that are typically broken apart by our automatic tokenizer.
+    The NER results, in terms of F1 measure, are listed in Table 4.
+    Introducing word cluster features for NER reduces relative errors on the test set by 21% (39% on the development set) on average.
+    Broken down per language, reductions on the test set vary from substantial for NL (30%) and EN (26%), down to more modest for DE (17%) and ES (12%).
+    The addition of cluster features most markedly improve recognition of the PER category, with an average error reduction on the test set of 44%, 

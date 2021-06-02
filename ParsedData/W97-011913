@@ -1,0 +1,12 @@
+words.
+  
+  
+    The evaluation on the WSJ/WSJ English/English corpus is intended as a pilot test on the discriminative power of the Word Relation Matrix.
+    This non-parallel corpus has minimal content and style differences.
+    Furthermore, using such an English/English test set, the output can be evaluated automatically&#8212;a translated pair is considered correct if they are identical English words.
+    307 seed words are chosen according to their occurrence frequency (400-3900) to minimize the number of function words.
+    However, a frequency of 3900 in a corpus of 1.5M words is quite high.
+    As a result, a segment delimited by two punctuations is used as the context window size.
+    Furthermore, the frequent nature of the seed words led to our choice of the Euclidean Distance, instead of the Cosine Measure.
+    The choices of segment size, seed words, and Euclidean Distance measure are all direct consequences of the atypical nature of the English/English pilot test set.
+    We selected a test set o

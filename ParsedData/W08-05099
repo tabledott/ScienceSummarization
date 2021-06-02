@@ -1,0 +1,12 @@
+xed.
+    When training the HMM model, the matrix for the HMM trellis will not be initialized if the target sentence has only one word.
+    Therefore some random numbers are added to the counts.
+    This bug will also crash the system when linking against pthread library.
+    We observe different alignment and slightly lower perplexity after fixing the bug 3.
+  
+  
+    A natural idea of parallelizing GIZA++ is to separate the alignment and normalization procedures, and spawn multiple alignment processes.
+    Each process aligns a chunk of the pre-partitioned corpus and outputs partial counts.
+    A master process takes these counts and combines them, and produces the normalized model parameters for the next iteration.
+    The architecture of PGIZA++ is shown in Figure 3. ence in the results even when processing the sentences sequentially, but in different order.
+    In order to ensure that the next iteration has the correct model, all the information that may affect the alignment needs to be stored and shared.

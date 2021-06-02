@@ -1,0 +1,5 @@
+ In this bottom up procedure, the score for each node consists of summing two elements: First, a single linear unit that scores the parent vector and second, the log probability of the PCFG for the rule that combines these two children: where P(P1 -+ B C) comes from the PCFG.
+    This can be interpreted as the log probability of a discrete-continuous rule application with the following factorization: Note, however, that due to the continuous nature of the word vectors, the probability of such a CVG rule application is not comparable to probabilities provided by a PCFG since the latter sum to 1 for all children.
+    Assuming that node p1 has syntactic category P1, we compute the second parent vector via: The score of the last parent in this trigram is computed via: The above scores (Eq.
+    4) are used in the search for the correct tree for a sentence.
+    The goodness of a tree is measured in terms of its score and the CVG score of a complete tree is the sum of the scores at each node: &#65533; &#65533;pd&#65

@@ -1,0 +1,7 @@
+: a goal (scheduling the appointment) and a method.
+    The method instance also has two attributes: a precondition (expressed by the sentence beginning 'Before starting') and a sequence of steps (presented by the enumerated list).
+    Preconditions and steps are procedures in their turn, so they may have methods as well as goals.
+    Eventually we arrive at sub-procedures for which no method is specified: it is assumed that the reader of the manual will be able to click on the Insert button without being told how.
+    Since in DRAFTER-H every output text is based on a procedure, a newly initialised knowledge base is seeded with a single procedure instance for which the goal and method are undefined.
+    In Prolog notation, we can represent such a knowledge base by the following assertions: procedure (prod 1) . goal (procl, A) . method (proc I. , B) .
+    Here prod l is an identifier for the procedure instance; the assertion procedure (prod) means that this is an instance of type procedure; and the assertion 

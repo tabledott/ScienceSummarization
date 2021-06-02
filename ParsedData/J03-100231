@@ -1,0 +1,6 @@
+Della Pietra, Della Pietra, and Mercer (1993), the alignment model for nonempty words is deficient, but the alignment model for the empty word is nondeficient.
+    Hence, the EM algorithm can increase likelihood by simply aligning more and more words with the empty word.3 Therefore, we modify Models 3 and 4 slightly, such that the empty word also has a deficient alignment model.
+    The alignment probability is set to p(j  |i, J) = 1/J for each source word aligned with the empty word.
+    Another remedy, adopted in Och and Ney (2000), is to choose a value for the parameter p1 of the empty-word fertility and keep it fixed.
+    To overcome the problem of overfitting on the training data and to enable the models to cope better with rare words, we smooth the alignment and fertility probabilities.
+    For the alignment probabilities of the HMM (and similarly for Models 4 and 5), we perform an interpolation with a uniform distribution p(i  |j,I) = 1/I using an interpolation parameter &#945;: For the fertility proba

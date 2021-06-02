@@ -1,0 +1,10 @@
+monolingual phrase can be used by any phrasal model unless it occurs at least five times.
+    High-confidence alignments are provided by intersecting GIZA++ alignments trained in each direction with 5 iterations each of Model 1, HMM, and Model 4.
+    All GIZA++ alignments are trained with no sentence-length limit, using the full 688K corpus.
+    To measure the speed-up provided by fixed-link pruning, we timed our phrasal inside-outside algorithm on the first 100 sentence pairs in our training set, with and without pruning.
+    The results are shown in Table 1.
+    Tic-tac-toe pruning is included for comparison.
+    With fixed-link pruning, on average 95% of the possible spans are pruned, reducing running time by two orders of magnitude.
+    This improvement makes ITG training feasible, even with large bitexts.
+    The goal of this experiment is to compare the Viterbi alignments from the phrasal ITG to gold standard human alignments.
+    We do this to validate our noncompositional constraint and to select good

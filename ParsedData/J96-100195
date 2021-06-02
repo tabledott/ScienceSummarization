@@ -1,0 +1,8 @@
+purposefully limiting ourselves to source collocations of frequencies higher than 10, containing individual words with frequencies higher than 15.
+    Analysis of the effects of our thresholds.
+    Various thresholds are used in Champollion's algorithm to reduce the search space.
+    A threshold too low would significantly slow down the search as, according to Zipf's law (Zipf 1949), the number of terms occurring n times in a general English corpus is a decreasing function of n2.
+    Unfortunately, sometimes this filtering step causes Champollion to miss a valid translation.
+    For example, one of the incorrect translations made by Champollion is that important factor was translated into facteur (factor) alone instead of the proper translation facteur important.
+    The error is due to the fact that the French word important did not pass the first step of the algorithm as its Dice coefficient with important factor was too low.
+    Important occurs a total of 858 times in the French part of the corpus and onl

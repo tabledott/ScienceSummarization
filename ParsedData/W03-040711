@@ -1,0 +1,8 @@
+igure 2.
+    The current tagger is the one being retrained, while the other tagger is kept static.
+    The co-training process uses the selection method for selecting sentences from the cache (which has been labelled by one of the taggers).
+    Note that during the selection process, we repeatedly sample from all possible subsets of the cache; this is done by first randomly choosing the size of the subset and then randomly choosing sentences based on the size.
+    The number of subsets we consider is determined by the number of times the loop is traversed in Figure 2.
+    If TNT is being trained on the output of C&amp;C, then the most recent version of C&amp;C is used to measure agreement (and vice versa); so we first attempt to improve one tagger, then the other, rather than both at the same time.
+    The agreement rate of the taggers on unlabelled sentences is the per-token agreement rate; that is, the number of times each word in the unlabelled set of sentences is assigned the same tag by both taggers.
+   

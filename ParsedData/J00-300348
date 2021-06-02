@@ -1,0 +1,7 @@
+ic LMs encode the average number of words per utterance indirectly through n-gram parameters, but still accurately enough to violate independence in a significant way (Finke et al. 1998).
+    As discussed in Section 8, this problem is best addressed by joint lexical-prosodic models.
+    We need to allow for the fact that the models combined in Equation 8 give estimates of differing qualities.
+    Therefore, we introduce an exponential weight a on P(F, ILO that controls the contribution of the prosodic likelihood to the overall likelihood.
+    Finally, a second exponential weight /3 on the combined likelihood controls its dynamic range relative to the discourse grammar scores, partially compensating for any correlation between the two likelihoods.
+    The revised combined likelihood estimate thus becomes: In our experiments, the parameters a and 13 were optimized using twofold jackknifing.
+    The test data was split roughly in half (without speaker overlap), each half was used to separately optimize the param

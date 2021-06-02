@@ -1,0 +1,8 @@
+ed a tunable Gaussian prior as a smoothing method.
+    The best parameter value is found by searching in the [0,10] interval with step value of 0.5 for the variance parameter yielding the highest MUC score F-measure on the development data.
+    Coreference resolution is viewed as a binary classification task: given a pair of REs, the classifier has to decide whether they are coreferent or not.
+    The MaxEnt model produces a probability for each category y (coreferent or not) of a candidate pair, conditioned on the context x in which the candidate occurs.
+    The conditional probability is calculated by: where fi(x, y) is the value of feature i on outcome y in context x, and Ai is the weight associated with i in the model.
+    Zx is a normalization constant.
+    The features used in our model are all binary-valued feature functions (or indicator functions), e.g.
+    In our system, a set of pre-processing components including a POS tagger (Gim&#180;enez &amp; M`arquez, 2004), NP chunker (Kudoh &amp; Matsumoto,

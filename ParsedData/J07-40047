@@ -1,0 +1,8 @@
+easible.
+    To solve this problem, we have adapted the dynamic programming method of Miyao and Tsujii (2002) to packed CCG charts.
+    A packed chart efficiently represents all derivations for a sentence.
+    The dynamic programming method uses inside and outside scores to calculate expectations, similar to the inside&#8211;outside algorithm for estimating the parameters of a PCFG from unlabeled data (Lari and Young 1990).
+    Generalized Iterative Scaling (Darroch and Ratcliff 1972) is a common choice in the NLP literature for estimating a log-linear model (e.g., Ratnaparkhi 1998; Curran and Clark 2003).
+    Initially we used generalized iterative scaling (GIS) for the parsing models described here, but found that convergence was extremely slow; Sha and Pereira (2003) present a similar finding for globally optimized log-linear models for sequences.
+    As an alternative to GIS, we use the limited-memory BFGS algorithm (Nocedal and Wright 1999).
+    As Malouf (2002) demonstrates, general purpose numerical op

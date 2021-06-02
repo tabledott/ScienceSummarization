@@ -1,0 +1,7 @@
+ seq is that link only retains the &#8220;important&#8221; words in seq in terms of syntax.
+    For example, all noun phrases occurring in seq are replaced by their heads.
+    Words and constituent types in a stop list, such as time expressions, are also removed.
+    A token T is defined as a string triple, where word, pos and base are strings representing the word, part-of-speech and morphological base form of T. Entity is a token augmented with other attributes, where tk is the token associated with E; type, subtype and mtype are strings representing the entity type, subtype and mention type of E. The subtype contains more specific information about an entity.
+    For example, for a GPE entity, the subtype tells whether it is a country name, city name and so on.
+    Mention type includes NAM, NOM and PRO.
+    It is worth pointing out that we always treat an entity as a single token: for a nominal, it refers to its head, such as boys in the two boys; for a proper name, all the words are connected into one to

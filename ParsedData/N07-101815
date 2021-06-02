@@ -1,0 +1,8 @@
+ibutions we have: P(t|?)
+			PG(t|?)PD(?|?)d? = ? A?N C(?A + fA(t)) C(?A) (3) where C was defined in Equation 2.
+			Because weare marginalizing over ?, the trees ti become depen dent upon one another.
+			Intuitively, this is because wi may provide information about ? that influences how some other string wj should be parsed.
+			We can use Equation 3 to compute the conditional probability P(ti|t?i, ?) as follows: P(ti|t?i, ?) = P(t|?)
+			P(t?i|?)
+			= ? A?N C(?A + fA(t)) C(?A + fA(t?i)) Now, if we could sample from P(ti|wi, t?i, ?) = P(wi|ti)P(ti|t?i, ?) P(wi|t?i, ?) we could construct a Gibbs sampler whose states were the parse trees t. Unfortunately, we don?t evenknow if there is an efficient algorithm for calculating P(wi|t?i, ?), let alne an efficient sampling al gorithm for this distribution.Fortunately, this difficulty is not fatal.
+			A Hast ings sampler for a probability distribution ?(s) is an MCMC algorithm that makes use of a proposal distribution Q(s?|s) from which it draws samples, and uses an acce

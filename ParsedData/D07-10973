@@ -1,0 +1,12 @@
+msi.vxu.se/users/nivre/research/MaltParser.html.
+			933 strategy for the Single Malt parser was as follows: 1.
+			Define a good baseline system with the same.
+			parameter settings for all languages.
+			2.
+			Tune parsing algorithm parameters once and.
+			for all for each language (with baseline settingsfor feature model and learning algorithm pa rameters).
+			parameters in an interleaved fashion for each language.
+			We used nine-fold cross-validation on 90% of the training data for all languages with a training set sizesmaller than 300,000 tokens and an 80%?10% train devtest split for the remaining languages (Catalan, Chinese, Czech, English).
+			The remaining 10% of the data was in both cases saved for a final dry run, where the parser was trained on 90% of the data for each language and tested on the remaining (fresh) 10%.
+			We consistently used the labeled attachment score (LAS) as the single optimization criterion.
+			Below we describe the most important parameters in each group, define baseline settin

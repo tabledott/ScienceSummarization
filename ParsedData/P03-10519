@@ -1,0 +1,7 @@
+is of a manually segmented corpus, the performance may be improved by iteratively expanding the stem vocabulary and retraining the language model on a large automatically segmented Arabic corpus.
+    Given a small manually segmented corpus and a large unsegmented corpus, segmenter development proceeds as follows.
+    Initialization: Develop the seed segmenter Segmenter0 trained on the manually segmented corpus Corpus0, using the language model vocabulary, Vocab0, acquired from Corpus0.
+    Iteration: For i = 1 to N, N = the number of partitions of the unsegmented corpus Vocabi-1, creating an expanded vocabulary Vocabi. iii.
+    Develop Segmenteri trained on Corpus0 through Corpusi with Vocabi.
+    Optimal Performance Identification: Identify the Corpusi and Vocabi, which result in the best performance, i.e. system training with Corpusi+1 and Vocabi+1 does not improve the performance any more.
+    Unsupervised acquisition of new stems from an automatically segmented new corpus is a three-step process: (i) sele

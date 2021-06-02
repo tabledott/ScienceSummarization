@@ -1,0 +1,11 @@
+e-by-sentence is easier to work with.
+    Token-level offsets.
+    In our work, the start and end of an edit are given as token offsets, while the HOO data uses character offsets.
+    Character offsets make the evaluation procedure very brittle as a small change, e.g., an additional whitespace character, will affect all subsequent edits.
+    Character offsets also introduce ambiguities in the annotation, e.g., whether a comma is part of the preceding token.
+    Alternative scoring.
+    The HOO shared task defines three different scores: detection, recognition, and correction.
+    Effectively, all three scores are F1 measures and only differ in the conditions on when an edit is counted as valid.
+    Additionally, each score is reported under a &#8220;with bonus&#8221; alternative, where a system receives rewards for missed optional edits.
+    The F1 measure defined in Section 2.3 is equivalent to correction without bonus.
+    Our method can be used to compute detection and recognition scores and scores with bo

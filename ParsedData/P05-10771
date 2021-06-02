@@ -1,0 +1,12 @@
+o avenues.
+    Handling terabytes of data requires more efficient algorithms than are currently used in NLP.
+    We propose a web scalable solution to clustering nouns, which employs randomized algorithms.
+    In doing so, we are going to explore the literature and techniques of randomized algorithms.
+    All clustering algorithms make use of some distance similarity (e.g., cosine similarity) to measure pair wise distance between sets of vectors.
+    Assume that we are given n points to cluster with a maximum of k features.
+    Calculating the full similarity matrix would take time complexity n2k.
+    With large amounts of data, say n in the order of millions or even billions, having an n2k algorithm would be very infeasible.
+    To be scalable, we ideally want our algorithm to be proportional to nk.
+    Fortunately, we can borrow some ideas from the Math and Theoretical Computer Science community to tackle this problem.
+    The crux of our solution lies in defining Locality Sensitive Hash (LSH) functions.
+  

@@ -1,0 +1,12 @@
+e-model perplexity of the unsupervised corpus.
+    In practice, we observed no significant differences in accuracy when using one or the other in our experiments.
+    All experimental results given in this paper are with the Spatter clustering algorithm.
+    The result of running the clustering algorithm is a binary tree, where each word occupies a single leaf node, and where each leaf node contains a single word.
+    The root node defines a cluster containing the entire vocabulary.
+    Interior nodes represent intermediate size clusters containing all of the words that they dominate.
+    Thus, nodes higher in the tree correspond to larger word clusters, while lower nodes correspond to smaller clusters.
+    A particular word can be assigned a binary string by following the traversal path from the root to its leaf, assigning a 0 for each left branch, and a 1 for each right branch.
+    The following are example bit strings from the Spatter clustering algorithm:
+  
+  
+    To implement discriminative training, we

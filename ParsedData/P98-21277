@@ -1,0 +1,6 @@
+ity sim(wi , w2) between two words w1 and w2 as follows: We parsed a 64-million-word corpus consisting of the Wall Street Journal (24 million words), San Jose Mercury (21 million words) and AP Newswire (19 million words).
+    From the parsed corpus, we extracted 56.5 million dependency triples (8.7 million unique).
+    In the parsed corpus, there are 5469 nouns, 2173 verbs, and 2632 adjectives/adverbs that occurred at least 100 times.
+    We computed the pairwise similarity between all the nouns, all the verbs and all the adjectives/adverbs, using the above similarity measure.
+    For each word, we created a thesaurus entry which contains the top-N1 words that are most similar to it.2 The thesaurus entry for word w has the following format: where pos is a part of speech, we is a word, se=sim(w, ) and se's are ordered in descending order.
+    For example, the top-10 words in the noun, verb, and adjective entries for the word &amp;quot;brief&amp;quot; are shown below: brief (noun): affidavit 0.13, petition 0.05

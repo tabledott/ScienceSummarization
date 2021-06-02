@@ -1,0 +1,12 @@
+ update, will be the tagger with the highest score for .
+    .
+    .
+    The where .
+    The boosting algorithm chooses the feature/update pair which is optimal in terms of minimizing the loss function, i.e., and then makes the update .
+    Figure 2 shows an algorithm which implements this greedy procedure.
+    See (Collins 2000) for a full description of the method, including justification that the algorithm does in fact implement the update in Eq.
+    1 at each iteration.4 The algorithm relies on the following arrays: Thus is an index from features to correct/incorrect candidate pairs where the &#8217;th feature takes value on the correct candidate, and value on the incorrect candidate.
+    The array is a similar index from features to examples.
+    The arrays and are reverse indices from training examples to features.
+    Figure 3 shows the training phase of the perceptron algorithm, originally introduced in (Rosenblatt 1958).
+    The algorithm maintains a parameter vector , which is initially set to be al

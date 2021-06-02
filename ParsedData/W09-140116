@@ -1,0 +1,9 @@
+17; parsing model (Bikel, 2004) and trained on PTB, and the reranking parser of (Charniak and Johnson, 2005) with the self-trained biomedical parsing model of (McClosky and Charniak, 2008)4.
+    We also applied the GDep5, native dependency parser trained on the GENIA Treebank (Tateisi et al., 2005), and a version of the C&amp;C CCG deep parser6 adapted to biomedical text (Rimell and Clark, 2008).
+    The text of all documents was segmented and tokenized using the GENIA Sentence Splitter and the GENIA Tagger, provided by U-Compare.
+    The same segmentation was enforced for all parsers, which were run using default settings.
+    Both the native output of each parser and a representation in the popular Stanford Dependency (SD) format (de Marneffe et al., 2006) were provided.
+    The SD representation was created using the Stanford tools7 to convert from the PTB scheme, the custom conversion introduced by (Rimell and Clark, 2008) for the C&amp;C CCG parser, and a simple format-only conversion for GDep.
+  
+  
+   

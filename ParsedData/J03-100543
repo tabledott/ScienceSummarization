@@ -1,0 +1,9 @@
+erall list of partial hypotheses.
+    Coverage pruning is carried out in a single run over the list of partial hypotheses: For each fragment corresponding to the same coverage set C, the coverage pruning threshold is applied.
+    The partial hypotheses that survive the two pruning stages are then written into the so-called bookkeeping array (Ney et al. 1992).
+    For the next expansion step, the set S is set to the newly generated list of hypotheses.
+    Finally, the target translation is constructed from the bookkeeping array.
+    3.9.2 Details for IBM-4 Model.
+    In this section, we outline how the DP-based beam search approach can be carried out using the full set of IBM-4 parameters.
+    (More details can be found in Tillmann [2001] or in the cited papers.)
+    First, the full set of IBM-4 parameters does not make the simplifying assumption given in Section 3.1, namely, that source and target sentences are of equal length: Either a target word e may be aligned with several source words (its fertility is 

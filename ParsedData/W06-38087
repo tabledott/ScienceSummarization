@@ -1,0 +1,9 @@
+he relative weight between labeled neighbors and unlabeled neighbors; &#945; is roughly the relative weight given to semi-supervised (nondongle) edges.
+    We can find the closed-form solution to the optimization problem.
+    Defining an n x n matrix W, Let W = max(W, WT) be a symmetrized version of this matrix.
+    Let D be a diagonal degree matrix with Note that we define a node&#8217;s degree to be the sum of its edge weights.
+    Let A = D &#8722; W be the combinatorial Laplacian matrix.
+    Let C be a diagonal dongle This is a quadratic function in f. Setting the gradient to zero, aL(f)/af = 0 , we find the minimum loss function Because C has strictly positive eigenvalues, the inverse is well defined.
+    All our semi-supervised learning experiments use (7) in what follows.
+    Before moving on to experiments, we note an interesting connection to the supervised learning method in (Pang and Lee, 2005), which formulates rating inference as a metric labeling problem (Kleinberg and Tardos, 2002).
+    Conside

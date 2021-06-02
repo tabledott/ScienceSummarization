@@ -1,0 +1,8 @@
+		We show that our multi-prototype model improves upon thesingle-prototype version and outperforms other neu ral language models and baselines on this dataset.
+	
+	
+			Model In this section, we describe the training objective of our model, followed by a description of the neural network architecture, ending with a brief description of our model?s training method.
+			2.1 Training Objective.
+			Our model jointly learns word representations while learning to discriminate the next word given a short word sequence (local context) and the document (global context) in which the word sequence occurs.Because our goal is to learn useful word representa tions and not the probability of the next word given previous words (which prohibits looking ahead), our model can utilize the entire document to provide global context.
+			Given a word sequence s and document d inwhich the sequence occurs, our goal is to discrim inate the correct last word in s from other random words.
+			We compute scores g(s, d) and g(sw, d) where sw i

@@ -1,0 +1,8 @@
+y (Toutanova et al, 2003), which originates from the Viterbi decoding algorithm for second-order markov models.Figure 2 shows a polynomial time decoding algorithm for our bidirectional inference.
+			It enumer ates all possible decomposition structures and tag sequences by recursive function calls, and finds the highest probability sequence.
+			Polynomial time isachieved by caching.
+			Note that for each local clas sification, the function chooses the appropriate local function bestScore() { return bestScoreSub(n+2, ?end, end, end?, ?L,L?); } function bestScoreSub(i+1, ?ti?1, ti, ti+1?, ?di?1, di?)
+			{ // memorization if (cached(i+1, ?ti?1, ti, ti+1?, ?di?1, di?)) return cache(i+1, ?ti?1, ti, ti+1?, ?di?1, di?); // left boundary case if (i = -1) if (?ti?1, ti, ti+1?
+			= ?start, start, start?)
+			return 1; else return 0; // recursive case P = localClassification(i, ?ti?1, ti, ti+1?, ?di?1, di?); return maxdi?2 maxti?2 P?
+			bestScoreSub(i, ?ti?2, ti?1, ti?, ?di?2, di?1?); } function localClassification(i, ?ti

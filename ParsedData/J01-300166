@@ -1,0 +1,8 @@
+e source separately, we implemented a set of simple disambiguation algorithms, each of which uses the output from a single partial tagger.
+    Each algorithm takes the result of its partial tagger and checks it against the disambiguated text to see if it is correct.
+    If the partial tagger returns more than one sense, as do the simulated annealing, subject code and selectional preference taggers, the first sense is taken to break the tie.
+    For the partial tagger based on Yarowsky's subject-code algorithm, we choose the sense with the highest saliency value.
+    If more than one sense has been assigned the maximum value, the tie is again broken by choosing the first sense.
+    Therefore, each partial tagger returns a single sense and the exact match metric is used to determine the proportion of tokens for which that tagger returns the correct sense.
+    The part-of-speech filter is run before the partial taggers make their decision and so they only consider the set of senses it did not remove.
+    The res

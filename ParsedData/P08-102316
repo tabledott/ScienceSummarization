@@ -1,0 +1,7 @@
+onsistently better BLEU scores.
+    With pruning threshold p = 12, it achieved a BLEU score of 0.2485, which is an absolute improvement of 1.6% points over the 1-best baseline, and is statistically significant using the sign-test of Collins et al. (2005) (p &lt; 0.01).
+    We also investigate the question of how often the ith-best parse tree is picked to direct the translation (i = 1, 2, ...), in both k-best and forest decoding schemes.
+    A packed forest can be roughly viewed as a (virtual) &#8734;-best list, and we can thus ask how often is a parse beyond top-k used by a forest, which relates to the fundamental limitation of k-best lists.
+    Figure 5 shows that, the 1-best parse is still preferred 25% of the time among 30-best trees, and 23% of the time by the forest decoder.
+    These ratios decrease dramatically as i increases, but the forest curve has a much longer tail in large i.
+    Indeed, 40% of the trees preferred by a forest is beyond top-30, 32% is beyond top-100, and even 20% beyond top-1000.

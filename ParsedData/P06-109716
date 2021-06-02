@@ -1,0 +1,10 @@
+ building SMT systems and measuring resulting BLEU scores, and then searching for an appropriate &#945; setting.
+    We searched &#945; = 0.1, 0.2, ..., 0.9 and set &#945; so that the resulting F-measure tracks BLEU to the best extent possible.
+    The best settings were &#945; = 0.2 for Arabic/English and &#945; = 0.7 for French/English, and these settings of &#945; were used for every result reported in this paper.
+    See (Fraser and Marcu, 2006) for further details.
+  
+  
+    Previous work on discriminative training for wordalignment differed most strongly from our approach in that it generally views word-alignment as a supervised task.
+    Examples of this perspective include (Liu et al., 2005; Ittycheriah and Roukos, 2005; Moore, 2005; Taskar et al., 2005).
+    All of these also used knowledge from one of the IBM Models in order to obtain competitive results with the baseline (with the exception of (Moore, 2005)).
+    We interleave discriminative training with EM and are therefore performing semi-superv

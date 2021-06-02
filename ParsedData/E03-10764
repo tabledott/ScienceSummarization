@@ -1,0 +1,12 @@
+9981 usually provide a variety of splitting options and leave it to the subsequent application to pick the best choice.
+  
+  
+    Compounds are created by joining existing words together.
+    Thus, to enumerate all possible splittings of a compound, we consider all splits into known words.
+    Known words are words that exist in a training corpus, in our case the European parliament proceedings consisting of 20 million words of German [Koehn, 2002].
+    When joining words, filler letters may be inserted at the joint.
+    These are called Fugenelemente in German.
+    Recall the example of Aktionsplan, where the letter s was inserted between Aktion and Plan.
+    Since there are no simple rules for when such letters may be inserted we allow them between any two words.
+    As fillers we allow s and es when splitting German words, which covers almost all cases.
+    Other transformations at joints include dropping of letters, such as when Schweigen and Minute are joined into Schweigeminute, dropping an n. A extensi

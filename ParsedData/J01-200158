@@ -1,0 +1,9 @@
+ occurrence of the word-final bigram t#, one occurrence of the word-final trigram nt# , and so forth; we stop at 6-grams, on the grounds that no grammatical morphemes require more than five letters in the languages we are dealing with.
+    We also require that the n-gram in question be a proper substring of its word.
+    We employ as a rough indicator of likelihood that such an n-gram n1 n2.. nk is a grammatical morpheme the measure: Total count of k-grams log [ni][n21 .
+    .
+    .
+    [nk]' which we may refer to as the weighted mutual information.
+    We choose the top 100 n-grams on the basis of this measure as our set of candidate suffixes.
+    We should bear in mind that this ranking will be guaranteed to give incorrect results as well as correct ones; for example, while ing is very highly ranked in an English corpus, ting and ng will also be highly ranked, the former because so many stems end in t, the latter because all ings end in ng, but of the three, only ing is a morpheme in English.
+    We then pa

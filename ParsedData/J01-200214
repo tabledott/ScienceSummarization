@@ -1,0 +1,7 @@
+ only know whether we should believe what they propose (precision) but know as well how often they fail to recognize the correct tag (1 &#8212; recall).
+    This information can be used by forcing each tagger to add to the vote for tags suggested by the opposition too, by an amount equal to 1 minus the recall on the opposing tag (Precision-Recall).
+    As an example, suppose that the MXPOST tagger suggests DT and the HMM tagger TnT suggests CS (two possible tags in the LOB tagset for the token that).
+    If MXPOST has a precision on DT of 0.9658 and a recall on CS of 0.8927, and TnT has a precision on CS of 0.9044 and a recall on DT of 0.9767, then DT receives a 0.9658 + 0.0233 = 0.9991 vote and CS a 0.9044 + 0.1073 = 1.0117 vote.
+    Note that simple voting combiners can never return a tag that was not suggested by a (weighted) majority of the component taggers.
+    As a result, they are restricted to the combination of taggers that all use the same tagset.
+    This is not the case for all the following (arb

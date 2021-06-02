@@ -1,0 +1,8 @@
+the n-gram.
+    When the arity of the edge is 2, a rule has the general form aX1bX2c, where X1 and X2 are sequences from tail nodes.
+    As a result, we need to consider all new sequences which can be created by the cross-product of the n-grams on the two tail nodes.
+    E.g. if X1 = {c, cd, d} and X2 = {f, g}, then a total of six sequences will result.
+    In practice, such a cross-product is not prowhere P(e|G) is the posterior probability of a lattice edge.
+    The algorithm to perform Lattice MBR is given in Algorithm 3.
+    For each node t in the lattice, we maintain a quantity Score(w, t) for each n-gram w that lies on a path from the source node to t. Score(w, t) is the highest posterior probability among all edges on the paths that terminate on t and contain n-gram w. The forward pass requires computing the n-grams introduced by each edge; to do this, we propagate n-grams (up to maximum order &#8722;1) terminating on each node.
+    We next extend the Lattice MBR decoding algorithm (Algorithm 3) to res

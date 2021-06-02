@@ -1,0 +1,7 @@
+or multi-class classification.
+    Because of the large number of training instances, we used Yamada and Matsumoto&#8217;s idea of splitting the training instances into several parts according to POS tags, and training classifiers on each part.
+    This greatly reduced the time required to train the SVMs, but even with the splitting of the training set, total training time was about 62 hours.
+    Training set splitting comes with the cost of reduction in accuracy of the parser, but training a single SVM would likely take more than one week.
+    Yamada and Matsumoto experienced a reduction of slightly more than 1% in dependency accuracy due to training set splitting, and we expect that a similar loss is incurred here.
+    When given perfectly tagged text (gold tags extracted from the Penn Treebank), SVMpar has labeled constituent precision and recall of 87.54% and 87.61%, respectively, and dependency accuracy of 90.3% over all sentences in the test set.
+    The total time required to parse the entire test set 

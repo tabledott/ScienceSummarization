@@ -1,0 +1,5 @@
+e feature vector for a sentence and parse tree (x, y) decomposes into a sum of the feature vectors for its parts: In CFGs, the function O(x, r) can be any function mapping a rule production and its position in the sentence x, to some feature vector representation.
+    For example, O could include features which identify the rule used in the production, or features which track the rule identity together with features of the words at positions s, m, e, and neighboring positions in the sentence x.
+    In addition, we assume that the loss function L(x, y, &#710;y) also decomposes into a sum of local loss functions l(x, y, r) over parts, as follows: One approach would be to define l(x, y, r) to be 0 only if the non-terminal A spans words s ... e in the derivation y and 1 otherwise.
+    This would lead to L(x, y, &#710;y) tracking the number of &#8220;constituent errors&#8221; in &#710;y, where a constituent is a tuple such as (A, s, e, i).
+    Another, more strict definition would be to define l(x, y, r) to be 0 i

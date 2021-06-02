@@ -1,0 +1,6 @@
+ticle can move as if it were recursively looking up words in a dictionary, stepping from Synsets to the Synsets used to define them.
+			Because WordNet?s gloss definitions are not sense-tagged,the particle must make an intermediate step to a To kenPOS contained in the gloss definition and then to a Synset representing a particular sense of that TokenPOS.
+			The availability of sense-tagged glosseswould eliminate the noise introduced by this inter mediate step.
+			The particle can reach both Synsets and TokenPOS nodes in this variant, but some parts of the graph are not reachable from other parts.
+			This model incorporates much of the same information as the gloss-based WordNet measures (Banerjee and Pedersen, 2003; Patwardhan and Pedersen, 2006) but differs in that it considers many more glosses than just those in the immediate neighborhoods of the candidate words.
+			MarkovJoined This variant is the natural combination of the above two; we construct the graph containing WordNet relation edges, Synset overla

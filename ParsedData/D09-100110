@@ -1,0 +1,11 @@
+ting point for semantic processing, as they already exhibit much of the relation-argument structure at the lexical level.
+    USP first uses a deterministic procedure to convert dependency trees into quasi-logical forms (QLFs).
+    The QLFs and their sub-formulas have natural lambda forms, as will be described later.
+    Starting with clusters of lambda forms at the atom level, USP recursively builds up clusters of larger lambda forms.
+    The final output is a probability distribution over lambda-form clusters and their compositions, as well as the MAP semantic parses of training sentences.
+    In the remainder of the section, we describe the details of USP.
+    We first present the procedure for generating QLFs from dependency trees.
+    We then introduce their lambda forms and clusters, and show how semantic parsing works in this setting.
+    Finally, we present the Markov logic network (MLN) used by USP.
+    In the next sections, we present efficient algorithms for learning and inference with this MLN.
+  

@@ -1,0 +1,10 @@
+ not type) actually used in parsing WSJ&#167;23.
+    Parsing with the &#8220;minimal subset&#8221; grammar uses highly lexicalized subtrees, but they do not improve accuracy.
+    We examined sentence-level F1 scores and found that the use of larger subtrees did correlate with accuracy; however, the low overall accuracy (and the fact that there are so many of these large subtrees available in the grammar) suggests that such rules are overfit.
+    In contrast, the histogram of subtree sizes used in parsing with the sampled grammar matches the shape of the histogram from the grammar itself.
+    Gibbs sampling with a DP prior chooses smaller but more general rules.
+  
+  
+    Collapsed Gibbs sampling with a DP prior fits nicely with the task of learning a TSG.
+    The sampled grammars are model-based, are simple to specify and extract, and take the expected shape over subtree size.
+    They substantially outperform heuristically extracted grammars from previous work as well as our novel spinal grammar, and can do 

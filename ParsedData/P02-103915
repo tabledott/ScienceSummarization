@@ -1,0 +1,13 @@
+P .
+    Utilizing statistics outside of a model is an important idea for statistical machine translation in general.
+    For example, a decoder in (Och and Ney, 2000) uses alignment template statistics found in the Viterbi alignments.
+  
+  
+    This section describes results from our experiment using the decoder as described in the previous section.
+    We used a Chinese-English translation corpus for the experiment.
+    After discarding long sentences (more than 20 words in English), the English side of the corpus consisted of about 3M words, and it was parsed with Collins&#8217; parser (Collins, 1999).
+    Training the TM took about 8 hours using a 54-node unix cluster.
+    We selected 347 short sentences (less than 14 words in the reference English translation) from the held-out portion of the corpus, and they were used for evaluation.
+    Table 1 shows the decoding performance for the test sentences.
+    The first system ibm4 is a reference system, which is based on IBM Model4.
+    The second and the thir

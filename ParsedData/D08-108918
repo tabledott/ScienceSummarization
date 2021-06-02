@@ -1,0 +1,6 @@
+or, this is an O(n) operation).
+			Hence, the incorporation of the hierarchical models described in the paper into a phrase-based decoder preserves the O(n2) running time.
+			In practice, we observe based on a set of experiments for Chinese-English and Arabic-English translation that our phrase-based decoder is on average only 1.35 times slower when it is running using hierarchical reordering features and the shift-reduce parser.We finally note that the decoding algorithm presented in this section can only be applied left-to right if the decoder itself is operating left-to-right.In order to predict orientations relative to the rightto-left hierarchical reordering model, we must resort to approximations at decoding time.
+			We experi mented with different approximations, and the one that worked best (in the experiments discussed in Section 6) is described as follows.
+			First, we note that an analysis of the alignment grid often reveals that certain orientations are impossible.
+			For instance, the block issue

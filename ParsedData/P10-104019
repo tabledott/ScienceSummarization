@@ -1,0 +1,12 @@
+present in MUC7.
+    To evaluate on MUC7, we perform the following postprocessing steps prior to evaluation: These postprocessing steps will adversely affect all NER models across-the-board, nonetheless allowing us to compare different models in a controlled manner.
+  
+  
+    Unlabeled data is used for inducing the word representations.
+    We used the RCV1 corpus, which contains one year of Reuters English newswire, from August 1996 to August 1997, about 63 millions words in 3.3 million sentences.
+    We left case intact in the corpus.
+    By comparison, Collobert and Weston (2008) downcases words and delexicalizes numbers.
+    We use a preprocessing technique proposed by Liang, (2005, p. 51), which was later used by Koo et al. (2008): Remove all sentences that are less than 90% lowercase a&#8211;z.
+    We assume that whitespace is not counted, although this is not specified in Liang&#8217;s thesis.
+    We call this preprocessing step cleaning.
+    In Turian et al. (2009), we found that all word representati

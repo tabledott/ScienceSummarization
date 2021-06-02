@@ -1,0 +1,7 @@
+an assumption rather than a certainty that &amp;quot;Adam Kluver&amp;quot; is a company, is represented explicitly, and later processing components try to resolve the uncertainty.
+    If no suitable context is found anywhere in the text to decide what sort of Named Entity &amp;quot;Adam Kluver&amp;quot; is, the system can check other resources, e.g. a list of known company names and apply compositional phrasal grammars for different categories.
+    Such grammars for instance can state that if a sequence of capitalized words ends with the word &amp;quot;Ltd.&amp;quot; it is a name of organization or if a known first name is followed by an unknown capitalized word this is a person name.
+    In our muc system, we implemented this approach as a staged combination of a rule-based system with probabilistic partial matching.
+    We describe each stage in turn.
+    In the first step, the system applies sure-fire grammar rules.
+    These rules combine internal and external evidence, and only fire when a possible candi

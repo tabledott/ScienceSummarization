@@ -1,0 +1,9 @@
+ Thus, we can perform garbage collection and remove all those bookkeeping entries that cannot be reached from the backpointers of the active hypotheses.
+    This reduces the size of the bookkeeping structure significantly.
+    An example of a word graph can be seen in Figure 3.
+    To keep the presentation simple, we chose an example without reordering of sentence positions.
+    The words on the edges are the produced target words, and the bitvectors in the nodes show the covered source sentence positions.
+    If an edge is labeled with two words, this means that the first English word has no equivalence in the source sentence, like 'just' and 'have' in Figure 3.
+    The reference translation 'what did you say ?' is contained in the graph, but it has a slightly lower probability than the sentence 'what do you say ?
+    ', which is then chosen by the single best search.
+    The recombination of hypotheses can be seen in the nodes with two or more incoming edges: those hypotheses have been recombined, because t

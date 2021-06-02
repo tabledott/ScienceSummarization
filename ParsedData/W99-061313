@@ -1,0 +1,8 @@
+s algorithm to that of (Yarowsky 95).
+    The core of Yarowsky's algorithm is as follows: where h is defined by the formula in equation 2, with counts restricted to training data examples that have been labeled in step 2.
+    Set the decision list to include all rules whose (smoothed) strength is above some threshold Pmin.
+    There are two differences between this method and the DL-CoTrain algorithm: spelling and contextual features, alternating between labeling and learning with the two types of features.
+    Thus an explicit assumption about the redundancy of the features &#8212; that either the spelling or context alone should be sufficient to build a classifier &#8212; has been built into the algorithm.
+    To measure the contribution of each modification, a third, intermediate algorithm, Yarowsky-cautious was also tested.
+    Yarowsky-cautious does not separate the spelling and contextual features, but does have a limit on the number of rules added at each stage.
+    (Specifically, the limit n starts at

@@ -1,0 +1,6 @@
+ span and a split point, Model 2 can be parsed in O(n4) time and O(n3) space.
+    It should be noted that unlike Model 1, Model 2 produces grand-sibling parts only for the outermost pair of grandchildren,4 similar to the behavior of the Carreras (2007) parser.
+    In fact, the resemblance is more than passing, as Model 2 can emulate the Carreras (2007) algorithm by &#8220;demoting&#8221; each third-order part into a second-order part: SCOREGS(x, g, h, m, s) = SCOREG(x, g, h, m) SCORETS(x, h, m, s, t) = SCORES(x, h, m, s) where SCOREG, SCORES, SCOREGS and SCORETS are the scoring functions for grandchildren, siblings, grand-siblings and tri-siblings, respectively.
+    The emulated version has the same computational complexity as the original, so there is no practical reason to prefer it over the original.
+    Nevertheless, the relationship illustrated above highlights the efficiency of our approach: we are able to recover third-order parts in place of second-order parts, at no additional cost.
+    The technique

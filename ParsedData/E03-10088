@@ -1,0 +1,13 @@
+ilar to the algorithm described by Blum and Mitchell; however, there are some differences in our treatment of the training data.
+    First, the cache is flushed at each iteration: instead of only replacing just those sentences moved from the cache, the entire cache is refilled with new sentences.
+    This aims to ensure that the distribution of sentences in the cache is representative of the entire pool and also reduces the possibility of forcing the central control to select training examples from an entire set of unreliably labelled sentences.
+    Second, we do not require the two parsers to have the same training sets.
+    This allows us to explore several selection schemes in addition to the one proposed by Blum and Mitchell.
+  
+  
+    In order to conduct co-training experiments between statistical parsers, it was necessary to choose two parsers that generate comparable output but use different statistical models.
+    We therefore chose the following parsers:
+  
+  
+    parser (Collins, 1999), model 2.
+   

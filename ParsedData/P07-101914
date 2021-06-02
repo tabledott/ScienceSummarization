@@ -1,0 +1,7 @@
+n this example, min{2.2, 5.1} = 2.2 is a lower bound on the cost of any item in the future for the hyperedge e. Indeed, if cand contains items from multiple hyperedges for a single consequent node, this is still a valid lower bound.
+    More formally: Lemma 1.
+    For each node v in the forest, the term is a lower bound on the true cost of any future item that is yet to be explored for v. Proof.
+    For any item x that is not explored yet, the true cost c(x) &gt; h(x), by the definition of h. And there exists an item y E cand[v] along the same hyperedge such that h(x) &gt; h(y), due to the monotonicity of h within the grid along one hyperedge.
+    We also have h(y) &gt; bound by the definition of bound.
+    Therefore c(x) &gt; bound.
+    Now we can safely pop the best item from buf if its true cost MIN(buf ) is better than bound and pass it up to the consequent node (lines 21&#8211;23); but otherwise, we have to wait for more items to accumulate in buf to prevent a potential search error, for example, in the 

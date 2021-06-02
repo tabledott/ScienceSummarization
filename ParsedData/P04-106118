@@ -1,0 +1,7 @@
+ directed dependencies were correct (63.7% ignoring direction).
+    To our knowledge, this is the first published result to break the adjacent-word heuristic (at 33.6% for this corpus).
+    Verbs are the sentence heads, prepositions take following noun phrases as arguments, adverbs attach to verbs, and so on.
+    The most common source of discrepancy between the test dependencies and the model&#8217;s guesses is a result of the model systematically choosing determiners as the heads of noun phrases, while the test trees have the rightmost noun as the head.
+    The model&#8217;s choice is supported by a good deal of linguistic research (Abney, 1987), and is sufficiently systematic that we also report the scores where the NP headship rule is changed to percolate determiners when present.
+    On this adjusted metric, the score jumps hugely to 55.7% directed (and 67.9% undirected).
+    This model also works on German and Chinese at above-baseline levels (55.8% and 54.2% undirected, respectively), with no modificat

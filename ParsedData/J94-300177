@@ -1,0 +1,5 @@
+s.
+    With a slight abuse of notation, we now let them act as cover symbols standing for the sets of left and right brackets {&lt;, &lt;, &lt;} and {&gt;, &gt;, &gt;1 respectively, and we let m be the combined set &lt;U&gt;.
+    A substring on the input side of the replacement is then a missed left-to-right application if it matches the simple pattern &lt;0&gt;.
+    Thus, we can force obligatory application of a left-to-right rule by requiring that the strings on the input side of its replacement contain no such substrings, or, to put it in formal terms, that the input strings belong to the regular language Obligatory(, &lt;,&gt;), where Obligatory is defined by the following operator: By symmetry, a missed application of a right-to-left rule matches the pattern &lt;0&#176;.&gt;, and Obligatory(0, &lt;,&gt;) is the appropriate input filter to disallow all such substrings.
+    Note that the obligatory operator involves only regular languages and not relations so that the result is still regular despite the co

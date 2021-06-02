@@ -1,0 +1,9 @@
+ement its activity score by 1, and every time we move to generate the next mention, all activity scores decay by a constant factor of 0.5.
+    This gives rise to an ordered list of entity activations, L, where the rank of an entity decays exponentially as new mentions are generated.
+    We call this list a salience list.
+    Given a salience list, L, each possible entity z has some rank on this list.
+    We discretize these ranks into five buckets S: TOP (1), HIGH (23), MID (4-6), LOW (7+), and NONE.
+    Given the entity choices Z, both the list L and buckets S are deterministic (see figure 4).
+    We assume that the mention type M is conditioned on S as shown in figure 4.
+    We note that correctly sampling an entity now requires that we incorporate terms for how a change will affect all future salience values.
+    This changes our sampling equation for existing entities: where the product ranges over future mentions in the document and Si,j, is the value of future salience feature given the setting of all e

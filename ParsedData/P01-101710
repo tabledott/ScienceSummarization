@@ -1,0 +1,6 @@
+onstant) for its distributions so the numbers it returns are not true probabilities.
+    We noted there that if we replaced the &#8220;max-ent inspired&#8221; feature with standard deleted interpolation smoothing, we took a significant hit in performance.
+    We have now found several ways to overcome this problem, including some very efficient ways to compute partition functions for this class of models.
+    In the end, however, this was not necessary, as we found that we could obtain equally good performance by &#8220;hand-crafting&#8221; our interpolation smoothing rather than using the &#8220;obvious&#8221; method (which performs poorly).
+    Secondly, as noted in [2], the parser encourages right branching with a &#8220;bonus&#8221; multiplicative factor of 1.2 for constituents that end at the right boundary of the sentence, and a penalty of 0.8 for those that do not.
+    This is replaced by explicitly conditioning the events in the expansion of Equation 6 on whether or not the constituent is at the right

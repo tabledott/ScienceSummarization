@@ -1,0 +1,7 @@
+ actions, just as with atomic preterminal categories.
+    In order not to overload the user with spurious choices concerning local ambiguities, the parser does not request help immediately after it reaches a parse action conflict.
+    Instead the parser pursues each option in a limited breadth-first fashion and only requests help with analysis paths that remain active.
+    In our current system this type of lookahead is limited to up to four indeterminacies ahead.
+    Such checking is cheap in terms of machine resources and very effective in cutting down both the number of choice points the user is forced to consider and also the average number of options in each one.
+    Table 3 shows the reduction in user interaction achieved by increasing the amount of lookahead in our system.
+    Computation of the backbone grammar generates extra rules (as previously described to deal with lexical categories used as rule mothers and daughters specified to be repeatable an indefinite number of times) that do not correspon

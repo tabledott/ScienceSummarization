@@ -1,0 +1,11 @@
+ train an improved parser.
+  
+  
+    We have found it useful to define our statistical model in terms of features.
+    A 'feature', in this context, is a boolean-valued function, generally over parse tree nodes and either node labels or lexical items.
+    Features can be fairly simple and easily read off the tree (e.g.
+    'this node's label is X', 'this node's parent's label is Y'), or slightly more complex (`this node's head's partof-speech is Z').
+    This is concordant with the usage in the maximum entropy literature (Berger et al., 1996).
+    When using a number of known features to guess an unknown one, the usual procedure is to calculate the value of each feature, and then essentially look up the empirically most probable value for the feature to be guessed based on those known values.
+    Due to sparse data, some of the features later in the list may need to be ignored; thus the probability of an unknown feature value would be estimated as where P refers to an empirically observed probability.
+    Of 

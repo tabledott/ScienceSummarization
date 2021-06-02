@@ -1,0 +1,9 @@
+ependency information in decoding.
+    All models are tuned on BLEU (Papineni et al., 2001), and evaluated on both BLEU and Translation Error Rate (TER) (Snover et al., 2006) so that we could detect over-tuning on one metric.
+    We used part of the NIST 2006 ChineseEnglish large track data as well as some LDC corpora collected for the DARPA GALE program (LDC2005E83, LDC2006E34 and LDC2006G05) as our bilingual training data.
+    It contains about 178M/191M words in source/target.
+    Hierarchical rules were extracted from a subset which has about 35M/41M words5, and the rest of the training data were used to extract phrasal rules as in (Och, 2003; Chiang, 2005).
+    The English side of this subset was also used to train a 3-gram dependency LM.
+    Traditional 3-gram and 5-gram LMs were trained on a corpus of 6G words composed of the LDC Gigaword corpus and text downloaded from Web (Bulyko et al., 2007).
+    We tuned the weights on NIST MT05 and tested on MT04.
+    Table 1 shows the number of transfer rules ex

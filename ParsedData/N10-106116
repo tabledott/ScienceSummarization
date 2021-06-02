@@ -1,0 +1,8 @@
+   Hypotheses are extended via adding a new mention to an existing entity or creating a new one.
+    For our experiments, we limited the number of hypotheses on the beam to the top fifty and did not notice an improvement in model score from increasing beam size.
+    Updating pronominal antecedents ri(A?
+    'i ) and entity types qk(Tk): These updates are straightforward instantiations of the mean-field update (2).
+    To produce our final coreference partitions, we assign each referring mention to the entity given by the &#948;r factor and each pronoun to the most likely entity given by the ri.
+    In order to facilitate learning, some factors are initially set to fixed heuristic values and only learned in later iterations.
+    Initially, the assignment factors &#948;r and {ri} are fixed.
+    For &#948;r, we use a deterministic entity assignment Zr, similar to the Haghighi and Klein (2009)&#8217;s SYN-CONSTR setting: each referring mention is coreferent with any past mention with the same head or in a determi

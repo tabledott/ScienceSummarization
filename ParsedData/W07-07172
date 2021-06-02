@@ -1,0 +1,8 @@
+s dividing the training corpus into different components, training a model on each part, then weighting each model appropriately for the current context.
+    Mixture modeling is a simple framework that encompasses many different variants, as described below.
+    It is naturally fairly low dimensional, because as the number of sub-models increases, the amount of text available to train each, and therefore its reliability, decreases.
+    This makes it suitable for discriminative SMT training, which is still a challenge for large parameter sets (Tillmann and Zhang, 2006; Liang et al., 2006).
+    Techniques for assigning mixture weights depend on the setting.
+    In cross-domain adaptation, knowledge of both source and target texts in the in-domain sample can be used to optimize weights directly.
+    In dynamic adaptation, training poses a problem because no reference text is available.
+    Our solution is to construct a multi-domain development sample for learning parameter settings that are intended to generali

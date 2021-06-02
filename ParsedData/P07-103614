@@ -1,0 +1,8 @@
+p.
+    However, in the presence of constraints, assigning the complete distributions in the estimation step is infeasible since the constraints reshape the distribution in an arbitrary way.
+    As in existing methods for training a model by maximizing a linear cost function (maximize likelihood or discriminative maximization), the distribution over y is represented as the set of scores assigned to it; rather than considering the score assigned to all y's, we truncate the distribution to the top K assignments as returned by the search.
+    Given a set of K top assignments yi, , yK, we approximate the estimation step by assigning uniform probability to the top K candidates, and zero to the other output sequences.
+    We denote this algorithm top-K hard EM.
+    In this paper, we use beamsearch to generate K candidates according to (1).
+    Our training algorithm is summarized in Figure 2.
+    Several things about the algorithm should be clarified: the Top-K-Inference procedure in line 7, the learning procedure i

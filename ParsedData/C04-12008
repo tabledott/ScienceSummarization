@@ -1,0 +1,7 @@
+ture (list word) of sentiment class c which is also a member of the synonym set of w, and count(fk,synset(w)) is the total number of occurrences of fk in the synonym set of w. P(c) is the number of words in class c divided by the total number of words considered.
+			This model derives from document classification.
+			We used the synonym and antonym lists obtained from Wordnet instead of learning word sets from a corpus, since the former is simpler and does not require manually annotated data for training.
+			Equation (3) shows the second model for a word sentiment classifier.
+			(3) )( ),( )(maxarg )|()(maxarg)|(maxarg 1 ccount csyncount cP cwPcPwcP n i i c cc ? == = To compute the probability P(w|c) of word w given a sentiment class c, we count the occurrence of w?s synonyms in the list of c. The intuition is that the more synonyms occuring in c, the more likely the word belongs.
+			We computed both positive and negative sentiment strengths for each word and compared their relative magnitudes.
+			Table 2 sho

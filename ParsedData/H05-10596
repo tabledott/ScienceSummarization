@@ -1,0 +1,7 @@
+ags on both sides when deciding t2.
+			If, for example, the second word is difficult to tag (e.g.an unknown word), we might as well take the de composition structure (c) because the local classifier 468 can use rich information when deciding the tag of the most difficult word.
+			In general if we have ann-word sentence and adopt a first-order markov assumption, we have 2n?1 possible ways of decomposition because each of the n ? 1 edges in the cor responding graph has two directions (left-to-right or right-to-left).
+			Our bidirectional inference method is to consider all possible decomposition structures and choose the ?best?
+			structure and tag sequence.
+			We will show inthe next section that this is actually possible in poly nomial time by dynamic programming.As for the training, let us look at the equa tions of four different decompositions above.
+			You can notice that there are only four types of local conditional probabilities: P (ti|ti?1o), P (ti|ti+1o), P (ti|ti?1ti+1o), and P (ti|o).This means that

@@ -1,0 +1,7 @@
+e instead as follows: we created 100 job IDs.
+    For each data predicate p (e.g., language), we add each possible tuple (e.g., (job37, Java)) to w(p) independently with probability 0.8.
+    We used the same training-test splits as Zettlemoyer and Collins (2005) (600+280 for GEO and 500+140 for JOBS).
+    During development, we further held out a random 30% of the training sets for validation.
+    Our lexical triggers L include the following: (i) predicates for a small set of &#8776; 20 function words (e.g., (most, argmax)), (ii) (x, x) for each value predicate x in w (e.g., (Boston, Boston)), and (iii) predicates for each POS tag in {JJ, NN, NNS} (e.g., (JJ, size), (JJ, area), etc.
+    ).3 Predicates corresponding to verbs and prepositions (e.g., traverse) are not included as overt lexical triggers, but rather in the trace predicates L(E).
+    We also define an augmented lexicon L+ which includes a prototype word x for each predicate appearing in (iii) above (e.g., (large, size)), which cancels the predicate

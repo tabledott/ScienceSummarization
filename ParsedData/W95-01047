@@ -1,0 +1,8 @@
+tes occurrences of words w1 through wn from the context.
+    The methods handle multiple confusion sets by applying the same technique to each confusion set independently.
+    Each method involves a training phase and a test phase.
+    The performance figures given below are based on training each method on the 1-million-word Brown corpus [Kut&amp;quot;era and Francis, 1967] and testing it on a 3/4-million-word corpus of Wall Street Journal text [Marcus et al., 1993].
+    The baseline method disambiguates words w1 through wn by simply ignoring the context, and always guessing that the word should be whichever wi occurred most often in the training corpus.
+    For instance, if C = {desert, dessert}, and desert occurred more often than dessert in the training corpus, then the method will predict that every occurrence of desert or dessert in the test corpus should be changed to (Or left as) desert.
+    Table 1 shows the performance of the baseline method for 18 confusion sets.
+    This collection of confusion se

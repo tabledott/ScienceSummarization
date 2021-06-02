@@ -1,0 +1,9 @@
+language models, minimizing time and space costs.
+    Queries take the form p(wn|wn&#8722;1 1 ) where wn1 is an n-gram.
+    Backoff-smoothed models estimate this probability based on the observed entry with longest matching history wnf , returning where the probability p(wn|wn&#8722;1 f ) and backoff penalties b(wn&#8722;1 i ) are given by an already-estimated model.
+    The problem is to store these two values for a large and sparse set of n-grams in a way that makes queries efficient.
+    Many packages perform language model queries.
+    Throughout this paper we compare with several packages: SRILM 1.5.12 (Stolcke, 2002) is a popular toolkit based on tries used in several decoders.
+    IRSTLM 5.60.02 (Federico et al., 2008) is a sorted trie implementation designed for lower memory consumption.
+    MITLM 0.4 (Hsu and Glass, 2008) is mostly designed for accurate model estimation, but can also compute perplexity.
+    RandLM 0.2 (Talbot and Osborne, 2007) stores large-scale models in less memory using randomize

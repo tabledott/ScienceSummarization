@@ -1,0 +1,10 @@
+other set of heuristics are used to save time.
+    The dots are weighted to adjust for the fact that some matches are much more interesting than others.
+    Matches are weighted inversely by the frequency of the token.
+    Thus, low frequency tokens (e.g., content words) contribute more to the dotplot than high frequency tokens (e.g., function words).
+    This weighting improves the quality of the results, but more importantly, it makes it possible to save time by ignoring the less important dots (e.g., those corresponding to tokens with a frequency greater than 100).
+    This heuristic is extremely important, especially for large input files.
+    See Church and Helfman (to appear) for more details and fragments of c code.
+    The final step is to find the best path of dots.
+    A sub&#8212; optimal heuristic search (with forward pruning) is used to find the path with the largest average weight.
+    That is, each candidate path is scored by the sum of the weights along the path, divided by the length of the p

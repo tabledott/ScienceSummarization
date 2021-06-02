@@ -1,0 +1,9 @@
+uency to each other through that context.
+    Figure 4 shows the F1 score for various methods of parsing.
+    RANDOM chooses a tree uniformly at random from the set of binary trees.4 This is the unsupervised baseline.
+    DEP-PCFG is the result of duplicating the experiments of Carroll and Charniak (1992), using EM to train a dependencystructured PCFG.
+    LBRANCH and RBRANCH choose the left- and right-branching structures, respectively.
+    RBRANCH is a frequently used baseline for supervised parsing, but it should be stressed that it encodes a significant fact about English structure, and an induction system need not beat it to claim a degree of success.
+    CCM is our system, as described above.
+    SUP-PCFG is a supervised PCFG parser trained on a 90-10 split of this data, using the treebank grammar, with the Viterbi parse rightbinarized.5 UBOUND is the upper bound of how well a binary system can do against the treebank sentences, which are generally flatter than binary, limiting the maximum precision.
+  

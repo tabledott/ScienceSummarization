@@ -1,0 +1,7 @@
+.
+    They communicate with each other by passing messages in the reverse direction of the links in the network.
+    The messages contains items.
+    An item is a triplet that describes a structure: &lt;surface-string, attribute-values, sources&gt;, where surface-string is an integer interval [i, j] denoting the i'th to j'th word in the input sentence. attribute-values specify syntactic features, such as cat, plu, case, of the root node of the structure described by the item. sources component is the set of items that describe the immediate sub-structures.
+    Therefore, by tracing the sources of an item, a complete structure can be retrieved.
+    The location of the item in the network determines the syntactic category of the structure.
+    For example, [Nip the ice-cream] in the sentence &amp;quot;the ice-cream was eaten&amp;quot; is represented by an item i4 at NP node (see Figure 2): &lt;[0,1], ((cat n) -plu (nform norm) -cm +theta), {i1 i3}&gt; An item represents the root node of a structure and contains

@@ -1,0 +1,7 @@
+simple word-overlapbased filter (Section 2.2), thus obtaining candidate sentence pairs.
+    The candidates are presented to a maximum entropy (ME) classifier (Section 2.3) that decides whether the sentences in each pair are mutual translations of each other.
+    The resources required by the system are minimal: a bilingual dictionary and a small amount of parallel data (used for training the ME classifier).
+    The dictionaries used in our experiments are learned automatically from (out-of-domain) parallel corpora;2 thus, the only resource used by our system consists of parallel sentences.
+    2 If such a resource is unavailable, other dictionaries can be used.
+    Our comparable corpus consists of two large, non-parallel, news corpora, one in English and the other in the foreign language of interest (in our case, Chinese or Arabic).
+    The parallel sentence extraction process begins by selecting, for each foreign article, English articles that are likely to contain sentences that are parallel to those in th

@@ -1,0 +1,10 @@
+d (2004) review several related models, but argue they have various shortcomings and emphasize instead the importance of having a gold standard.
+    Here we take an approach based on gold standard labels, using a small amount of expert-labeled training data in order to correct for the individual biases of different non-expert annotators.
+    The idea is to recalibrate worker&#8217;s responses to more closely match expert behavior.
+    We focus on categorical examples, though a similar method can be used with numeric data.
+    Following Dawid and Skene, we model labels and workers with a multinomial model similar to Naive Bayes.
+    Every example i has a true label xi.
+    For simplicity, assume two labels {Y, N}.
+    Several different workers give labels yi1, yi2, ... yiW.
+    A worker&#8217;s conditional probability of response is modeled as multinomial, and we model each worker&#8217;s judgment as conditionally independent of other workers given the true label xi, i.e.
+    : To infer the posterior probabili

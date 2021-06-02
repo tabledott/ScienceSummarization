@@ -1,0 +1,10 @@
+py Markov models (MEMMs) and conditional random fields (CRFs), they found that CRFs, which make use of observation features from both the past and future, outperformed HMMs which in turn outperformed MEMMs.
+	
+	
+			In a traditional HMM tagger, the probability of transitioning into a state representing tag ti is computed based on the previous two tags ti-1 and ti 2, and the probability of a word wi is conditioned only on the current tag ti.
+			This formulation ignores dependencies that may exist between a word and the part-of-speech tags of the words which precede and follow it.
+			For example, verbs which subcategorize strongly for a particular part-of speech but can also be tagged as nouns or pronouns (e.g. ?thinking that?)
+			may benefit from modeling dependencies on future tags.
+			To model this relationship, we now estimate the probability of a word wi based on tags ti-1 and ti-+1.
+			This change in structure, which we will call a contextualized HMM, is depicted in Figure 1.
+			This type of structure is an

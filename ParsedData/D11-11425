@@ -1,0 +1,9 @@
+en uses the learned extractor to label each word between the two arguments as part of the relation phrase or not.
+    The extractor is applied to the successive sentences in the corpus, and the resulting extractions are collected.
+    This method faces several challenges.
+    First, the training phase requires a large number of labeled training examples (e.g., 200, 000 heuristicallylabeled sentences for TEXTRUNNER and 300, 000 for WOE).
+    Heuristic labeling of examples obviates hand labeling but results in noisy labels and distorts the distribution of examples.
+    Second, the extraction step is posed as a sequence-labeling problem, where each word is assigned its own label.
+    Because each assignment is uncertain, the likelihood that the extracted relation phrase is flawed increases with the length of the sequence.
+    Finally, the extractor chooses an extraction&#8217;s arguments heuristically, and cannot backtrack over this choice.
+    This is problematic when a word that belongs in the relation phrase 

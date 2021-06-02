@@ -1,0 +1,11 @@
+ used in a similar way.
+    The inflection type is translated to an HPSG type.
+    These types interact with the inflectional rules in the grammar such that the default entries are inflected just as 'known' words would be.
+    In addition to the preprocessing done by ChaSen, an additional (shallow) preprocessing tool recognizes numbers, date expressions, addresses, email addresses, URLs, telephone numbers and currency expressions.
+    The output of the preprocessing tool replaces these expressions in the string with placeholders.
+    The placeholders are parsed by the grammar using special placeholder lexical entries.
+  
+  
+    The grammar is aimed at working with realworld data, rather than at experimenting with linguistic examples.
+    Therefore, robustness and performance issues play an important role.
+    While grammar development is carried out in the LKB (Copestake 2002), processing (both in the application domain and for the purposes of running test suites) is done with the highly efficient PET parser 

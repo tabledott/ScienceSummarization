@@ -1,0 +1,10 @@
+ constructing Q.
+    It then considers edges from the node i to the node j.
+    Now, assume that there is only a single edge from i to j and that that edge has a weight of 1.
+    Furthermore assume that this edge is the only edge directed into the node j.
+    In this case Q should be modified so that Qjj = 1, Qij = &#8722;1, and Qi0j = 0, Vi' =&#65533; i, j (by the Matrix Tree Theorem).
+    The value of Zx under this new Q will be equivalent to the weight of all trees containing the single edge from i to j with a weight of 1.
+    For a specific edge (i, j)k its expectation is simply wk ijZx, since we can factor out the weight 1 edge from i to j in all the trees that contribute to Zx and multiply through the actual weight for the edge.
+    The algorithm then reconstructs Q and continues.
+    Following the work of Koo et al. (2007) and Smith and Smith (2007), it is possible to compute all expectations in O(n3 + |L|n2) through matrix inversion.
+    To make this paper self contained, we report here their algorith

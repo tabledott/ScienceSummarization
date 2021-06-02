@@ -1,0 +1,10 @@
+y: we split the unlabeled parallel text into two portions.
+    We trained a models with different rl on one portion and ran it on the other portion.
+    We chose the model with the highest fraction of conserved constraints on the second portion. up to at least 40 thousand sentences.
+    Using the straightforward approach outlined above is a dramatic improvement over the standard link-left baseline (and the unsupervised generative model as we discuss below), however it doesn&#8217;t have any information about the annotation guidelines used for the testing corpus.
+    For example, the Bulgarian corpus has an unusual treatment of nonfinite clauses.
+    Figure 4 shows an example.
+    We see that the &#8220;,qa&#8221; is the parent of both the verb and its object, which is different than the treatment in the English corpus.
+    We propose to deal with these annotation dissimilarities by creating very simple rules.
+    For Spanish, we have three rules.
+    The first rule sets main verbs to dominate auxiliary verbs.

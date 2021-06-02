@@ -1,0 +1,13 @@
+n training data.
+    An alternative, proposed in Charniak (1997), is to limit parsing to those contextfree rules seen in training data.
+    A lexicalized rule is predicted in two steps.
+    First, the whole context-free rule is generated.
+    Second, the lexical items are filled in.
+    The probability of a rule is estimated as19 The estimation technique used in Charniak (1997) for the CF rule probabilities interpolates several estimates, the lowest being P(Ln ... L1HR1 ... Rm)  |P).
+    Any rules not seen in training data will be assigned zero probability with this model.
+    Parse trees in test data will be limited to include rules seen in training.
+    A problem with this approach is coverage.
+    As shown in this section, many test data sentences will require rules that have not been seen in training.
+    This gives motivation for breaking down rules into smaller components.
+    This section motivates the need to break down rules from four perspectives.
+    First, we discuss how the Penn Treebank annotati

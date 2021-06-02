@@ -1,0 +1,8 @@
+deration remains: if we computed the brevity penalty sentence by sentence and averaged the penalties, then length deviations on short sentences would be punished harshly.
+    Instead, we compute the brevity penalty over the entire corpus to allow some freedom at the sentence level.
+    We first compute the test corpus&#8217; effective reference length, r, by summing the best match lengths for each candidate sentence in the corpus.
+    We choose the brevity penalty to be a decaying exponential in r/c, where c is the total length of the candidate translation corpus.
+    We take the geometric mean of the test corpus&#8217; modified precision scores and then multiply the result by an exponential brevity penalty factor.
+    Currently, case folding is the only text normalization performed before computing the precision.
+    We first compute the geometric average of the modified n-gram precisions, pn, using n-grams up to length N and positive weights wn summing to one.
+    Next, let c be the length of the candidate 

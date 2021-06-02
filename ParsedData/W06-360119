@@ -1,0 +1,7 @@
+ use the SRI Language Modeling Toolkit (Stolcke, 2002) to train a Chinese trigram model with Knesser-Ney smoothing on the Chinese side of the parallel corpus.
+    Our evaluation data consists of 140 short sentences (&lt; 25 Chinese words) of the Xinhua portion of the NIST 2003 Chinese-to-English evaluation set.
+    Since we are translating in the other direction, we use the first English reference as the source input and the Chinese as the single reference.
+    We implemented our system as follows: for each input sentence, we first run Algorithm 1, which returns the 1-best translation and also builds the derivation forest of all translations for this sentence.
+    Then we extract the top 5000 non-duplicate translated strings from this forest and rescore them with the trigram model and the length penalty.
+    We compared our system with a state-of-the-art phrase-based system Pharaoh (Koehn, 2004) on the evaluation data.
+    Since the target language is Chinese, we report character-based BLEU score instead of w

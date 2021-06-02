@@ -1,0 +1,11 @@
+tring e The empty string denotes the reordering restriction in which (short: MON) no reordering is allowed.
+    S 01 04 M 02 10 This string describes the German-to-English word reordering.
+    (short: GE) Up to one word may be skipped for at most 4 positions, and up to two words may be moved up to 10 positions.
+    S 02 10 M 01 04 This string describes the English-to-German word reordering.
+    (short: EG) Up to two words may be skipped for at most 10 positions and up to one word may be moved for up to 4 positions.
+    S 03 INF This string describes the IBM-style word reordering (short: S3) given in Section 3.6.
+    Up to three words may be skipped for an unrestricted number of positions.
+    No words may be moved.
+    S INF INF or These strings denote the word re-ordering without M INF INF restrictions.
+    (short: NO) The word reordering strings can be directly used as input parameters to the DP-based search procedure to test different reordering restrictions within a single implementation.
+    Acknowledgme

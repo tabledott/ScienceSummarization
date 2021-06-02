@@ -1,0 +1,6 @@
+ining data (39832 sentences), section 22 as the development set (1700 sentences), and section 23 as the test set (2416 sentences).
+    Following (Charniak and Johnson, 2005), the training set is split into 20 folds, each containing about 1992 sentences, and is parsed by the Charniak parser with a model trained on sentences from the remaining 19 folds.
+    The development set and the test set are parsed with a model trained on all 39832 training sentences.
+    We implemented both n-best and forest reranking systems in Python and ran our experiments on a 64bit Dual-Core Intel Xeon with 3.0GHz CPUs.
+    Our feature set is summarized in Table 2, which closely follows Charniak and Johnson (2005), except that we excluded the non-local features Edges, NGram, and CoPar, and simplified Rule and NGramTree features, since they were too complicated to compute.4 We also added four unlexicalized local features from Collins (2000) to cope with data-sparsity.
+    Following Charniak and Johnson (2005), we extracted the featur

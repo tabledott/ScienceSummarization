@@ -1,0 +1,9 @@
+ based on A-calculus.
+    While reasonably effective, it can be improved in several ways.
+    In this section, we focus on improving lexical acquisition.
+    To see why the current lexical acquisition algorithm can be problematic, consider the word alignment in Figure 5 (for the sentence pair in Figure 1(b)).
+    No rules can be extracted for the state predicate, because the shortest NL substring that covers the word states and the argument string Texas, i.e. states bordering Texas, contains the word bordering, which is linked to an MRL production outside the MR sub-parse rooted at state.
+    Rule extraction is forbidden in this case because it would destroy the link between bordering and next to.
+    In other words, the NL and MR parse trees are not isomorphic.
+    This problem can be ameliorated by transforming the logical form of each training sentence so that the NL and MR parse trees are maximally isomorphic.
+    This is possible because some of the operators used in the logical forms, notably the conjun

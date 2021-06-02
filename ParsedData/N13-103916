@@ -1,0 +1,12 @@
+ctuation characters into a single token per character.
+    We rewrote twokenize (O&#8217;Connor et al., 2010), a rule-based tokenizer, emoticon, and URL detector, for use in the tagger.
+    Emoticons are especially challenging, since they are open-class and productive.
+    We revise O&#8217;Connor et al.&#8217;s regular expression grammar that describes possible emoticons, adding a grammar of horizontal emoticons (e.g.
+    -_-), known as &#8220;Eastern-style,&#8221;11 though we observe high usage in English-speaking Twitter (Fig.
+    2, G2&#8211;G3).
+    We also add a number of other improvements to the patterns.
+    Because this system was used as preprocessing for the word clustering experiment in &#167;3, we were able to infer the emoticon clusters in Fig.
+    2.
+    Furthermore, whether a token matches the emoticon pattern is also used as a feature in the tagger (&#167;2).
+    URL recognition is also difficult, since the http:// is often dropped, resulting in protocol-less URLs like about.me.
+    We add r

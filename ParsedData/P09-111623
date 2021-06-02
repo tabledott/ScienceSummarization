@@ -1,0 +1,9 @@
+r&#8217;s centroid is among the top-50 most similar centroids to the phrase (by cosine similarity), and the similarity is greater than 0.04.
+    Given a query, we first retrieve all its phrases (allowing overlap) and the clusters they belong to.
+    For each of these clusters, we sum the cluster&#8217;s similarity to all the phrases in the query and select the top-N as features for the logistic regression classifier (N=150 in our experiments).
+    When we extract features from multiple clusterings, the selection of the top-N clusters is done separately for each clustering.
+    Once a cluster is selected, its similarity values are ignored.
+    Using the numerical feature values in our experiments always led to worse results.
+    We suspect that such features make the optimization of the objective function much more difficult.
+    Table 7 contains the evaluation results of various configurations of our system.
+    Here, bow indicates the use of bag-of-words features; WN refers to word clusters of size N; and PN

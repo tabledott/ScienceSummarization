@@ -1,0 +1,8 @@
+nge is to scale up this EM train ing to large data sets.
+			We have been able to runEM for 50 iterations on our Chinese-English 54 million word corpus.
+			The derivation forests for this corpus contain 2.2 billion nodes; the largest forest contains 1.1 million nodes.
+			The outcome is to assign probabilities to over 254 million rules.Our EM runs with either lhs normalization or lhs root normalization.
+			In the former case, each lhs has an average of three corresponding rhs?s that compete with each other for probability mass. 5 Model coverage.
+			We now present some examples illustrating the benefit of composed rules.
+			We trained three p(rhs(ri)|lhs(ri)) models on a 54 million-word English-Chinese parallel corpus (Table 2): the first one (Cm) with only minimal rules, and the twoothers (C3 and C4) additionally considering com posed rules with no more than three, respectively four, internal nodes in lhs(ri).
+			We evaluated these models on a section of the NIST 2002 evaluation corpus, for which we built deriv

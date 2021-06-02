@@ -1,0 +1,9 @@
+ds.
+    Ponte and Croft (1996) introduce two models for word segmentation: word-based and bigram models.
+    Both utilize probabilistic automata.
+    In the word-based method, a suffix tree of words in the lexicon is used to initialize the model.
+    Each node is associated with a probability, which is estimated by segmenting training text using the longest match strategy.
+    This makes the segmenter easy to transplant to new languages.
+    The bigram model uses the lexicon to initialize probability estimates for each bigram, and the probability with which each bigram occurs, and uses the Baum-Welch algorithm (Rabiner 1989) to update the probabilities as the training text is processed.
+    Hockenmaier and Brew (1998) present an algorithm, based on Palmer's (1997) experiments, that applies a symbolic machine learning technique&#8212;transformation-based error-driven learning (Brill 1995)&#8212;to the problem of Chinese word segmentation.
+    Using a set of rule templates and four distinct initial-state annota

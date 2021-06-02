@@ -1,0 +1,11 @@
+ its predecessors .
+  As illustrated in Fig.
+  r, below, processing is still divided int o three main steps : a UNIX- and c-based preprocess, a Lisp-based syntactic analysis, and a Lisp-based inferenc e phase.
+  Beyond these coarse-grain similarities, the system diverges significantly from earlier incarnations .
+  We replaced our categorial grammar pseudo-parser, as suggested above .
+  We also redesigned the preprocess fro m the ground up .
+  Only the inferential back end of the system is largely unchanged .
+  The internal module-by-module architecture of the current Alembic is illustrated in Fig .
+  The central innovation in the system is its approach to syntactic analysis, which is now performed through a sequence of phrase-finding rules that are processed by a simple interpreter .
+  The interpreter has somewhat less recognition power than a finite-state machine, and operates by successively relabeling the input according t o the rule actions?more on this below.
+  In support of the syntactic phrase finder, 

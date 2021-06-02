@@ -1,0 +1,12 @@
+here lij denotes the link between word i and word j, and d(i) denotes the degree of word i, which means the number of words linked with word i.
+    Two words without connections are regarded as being connected by a link of weight 0.
+    We call this network the gloss network (G).
+    We construct another network, the glossthesaurus network (GT), by linking synonyms, antonyms and hypernyms, in addition to the the above linked words.
+    Only antonym links are in DL.
+    We enhance the gloss-thesaurus network with cooccurrence information extracted from corpus.
+    As mentioned in Section 2, Hatzivassiloglou and McKeown (1997) used conjunctive expressions in corpus.
+    Following their method, we connect two adjectives if the adjectives appear in a conjunctive form in the corpus.
+    If the adjectives are connected by &#8220;and&#8221;, the link belongs to SL.
+    If they are connected by &#8220;but&#8221;, the link belongs to DL.
+    We call this network the gloss-thesaurus-corpus network (GTC).
+    We suppose

@@ -1,0 +1,12 @@
+ification for equation (3), and the reader is referred to Della Pietra, Della Pietra, and Lafferty (1995) for details.
+    Solving (3) yields improved weights, but it does not necessarily immediately yield the globally best weights.
+    We can obtain the globally best weights by iterating.
+    Set A 6,,A, for all i, and solve equation (3) again.
+    Repeat until the weights no longer change.
+    As with equation (2), solving equation (3) is straightforward if L(G) is small enough to enumerate, but not if L(G) is large.
+    In that case, we must use random sampling.
+    We generate a representative mini-corpus and estimate expectations by counting in the mini-corpus.
+    (See Appendix 2.)
+    We have seen that random sampling is necessary both to set the initial weight for features under consideration and to adjust all weights after a new feature is adopted.
+    Random sampling involves creating a corpus that is representative of a given model distribution q(x).
+    To take a very simple example, a fair coin c

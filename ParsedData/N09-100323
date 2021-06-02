@@ -1,0 +1,11 @@
+that in the gold-standard the first pair has a lower score than the second pair.
+    We have trained a SVM to classify pairs of pairs, and use its output to rank the entries in both datasets.
+    It uses a polynomial kernel with degree 4.
+    We did not have a held-out set, so we used the standard settings of Weka, without trying to modify parameters, e.g.
+    C. Each word pair is scored with the number of pairs that were considered to have less similarity using the SVM.
+    The results using 10-fold crossvalidation are shown in Table 6.
+    A combination of all methods produces the best results reported so far for both datasets, statistically significant for RG.
+  
+  
+    Contrary to the WordSim353 dataset, common practice with the RG dataset has been to perform the evaluation with Pearson correlation.
+    In our believe Pearson is less informative, as the Pearson correlation suffers much when the scores of two systems are not linearly correlated, something which happens often given due to the different natu

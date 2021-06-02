@@ -1,0 +1,12 @@
+s are based on prior polarity of words.
+    For obtaining the prior polarity of words, we take motivation from work by Agarwal et al. (2009).
+    We use Dictionary of Affect in Language (DAL) (Whissel, 1989) and extend it using WordNet.
+    This dictionary of about 8000 English language words assigns every word a pleasantness score (E R) between 1 (Negative) - 3 (Positive).
+    We first normalize the scores by diving each score my the scale (which is equal to 3).
+    We consider words with polarity less than 0.5 as negative, higher than 0.8 as positive and the rest as neutral.
+    If a word is not directly found in the dictionary, we retrieve all synonyms from Wordnet.
+    We then look for each of the synonyms in DAL.
+    If any synonym is found in DAL, we assign the original word the same pleasantness score as its synonym.
+    If none of the synonyms is present in DAL, the word is not associated with any prior polarity.
+    For the given data we directly found prior polarity of 81.1% of the words.
+    We fin

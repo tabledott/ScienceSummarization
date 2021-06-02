@@ -1,0 +1,11 @@
+lt with before we can actually begin parsing.
+    A semiring parser computes the values of items in the order of the buckets they fall into.
+    Thus, before we can begin parsing, we need to know which items fall into which buckets, and the ordering of those buckets.
+    There are three approaches to determining the buckets and ordering that we will discuss in this section.
+    The first approach is a simple, brute-force enumeration of all items, derivable or not, followed by a topological sort.
+    This approach will have suboptimal time and space complexity for some item-based descriptions.
+    The second approach is to use an agenda parser in the Boolean semiring to determine the derivable items and their dependencies, and to then perform a topological sort.
+    This approach has optimal time complexity, but typically suboptimal space complexity.
+    The final approach is to use bucketing code specific to the item-based interpreter.
+    This achieves optimal performance for additional programming effort.
+ 

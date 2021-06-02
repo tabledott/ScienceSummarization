@@ -1,0 +1,7 @@
+PP modification, in addition to the two-level representations used in the treebank.
+    (Note that this is not a criticism of the use of this representation in a treebank, but of modeling such a representation with a PCFG).
+    This raises the question: how should a parse tree be interpreted that does not fit the representational scheme used to construct the treebank training data?
+    As noted above, the WSJ corpus represents PP modification to NPs using the twolevel representation.
+    The PCFG estimated from sections 2-21 of this corpus contains the following two productions: These productions generate the two-level representations of one and two PP adjunctions to NP, as explained above.
+    However, the second of these productions will never be used in a maximum-likelihood parse, as the parse of sequence NP PP PP involving two applications of the first rule has a higher estimated likelihood.
+    In fact, all of the productions of the form NP NP Pr where n&gt; 1 in the PCFG induced from sections 2-21 of th

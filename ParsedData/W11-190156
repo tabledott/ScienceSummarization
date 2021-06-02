@@ -1,0 +1,6 @@
+sier for the systems to generate better entities given gold mentions.
+    Although, ideally, one would expect a perfect mention detection score, it is the case that one of the two systems &#8211; lee &#8211; did not get a 100% Recall.
+    This could possibly be owing to unlinked singletons that were removed in post-processing.
+    The lee system developers also ran a further experiment where both gold mentions for the elements of the coreference chains and also gold annotations for all the other layers were available to the system.
+    Surprisingly, the improvement in coreference performance from having gold annotation of the other layers was almost negligible.
+    This suggests that either: i) the automatic models are predicting those layers well enough that switching to gold doesn&#8217;t make much difference; ii) information from the other layers does not provide much leverage for coreference resolution; or iii) current coreference models are not capable of utilizing the information from these other layers

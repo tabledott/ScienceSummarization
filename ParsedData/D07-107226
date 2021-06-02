@@ -1,0 +1,10 @@
+G fails to do so because it has no built-in con trol over grammar complexity.
+			From the grammar in Figure 6, we generated 2000 trees.
+			The two terminalsymbols always have the same subscript, but we col lapsed Xi to X in the training data.
+			We trained the HDP-PCFG-GR, with truncation K = 20, for bothS and X for 100 iterations.
+			We set al hyperparame ters to 1.
+			Figure 7 shows that the HDP-PCFG-GR recoversthe original grammar, which contains only 4 sub symbols, leaving the other 16 subsymbols unused.
+			The standard PCFG allocates all the subsymbols to fit the exact co-occurrence statistics of left and right terminals.Recall that a rule weight, as defined in Equation (9), is analogous to a rule probability for stan dard PCFGs.
+			We say a rule is effective if its weight is at least 10?6 and its left hand-side has posterior is also at least 10?6.
+			In general, rules with weightsmaller than 10?6 can be safely pruned without af fect parsing accuracy.
+			The standard PCFG uses all 20 subsymbols of both S

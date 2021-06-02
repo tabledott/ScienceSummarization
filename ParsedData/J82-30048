@@ -1,0 +1,8 @@
+d separately in sequence or interleaved together.
+    Most parsers find the set of parse trees by starting with the empty set and adding to it each time they find a new possibility.
+    We make the observation that in certain situations it would be much more efficient to work in the other direction, starting from the universal set (i.e, the set of all binary trees) and ruling trees out when the parser decides that they cannot be parses.
+    Ruling-out is easier when the set of parse trees is closer to the universal set and ruling-in is easier when the set of parse trees is closer to the empty set.
+    Rulingout is particularly suited for &amp;quot;every way ambiguous&amp;quot; constructions such as prepositional phrases that have just as many parse trees as there are binary trees over the terminal elements.
+    Since every tree is a parse, the parser doesn't have to rule any of them out.
+    In some sense, this is a formalization of an idea that has been in the literature for some time.
+    That is, it has be

@@ -1,0 +1,9 @@
+s which contain partial parse trees, and so provides all the information needed by the graph-based parser (i.e. dependency graphs), and hence the combined system.
+    In summary, we build the combined parser by using a global linear model, the union of feature templates and the decoder from the transition-based parser.
+  
+  
+    We evaluate the parsers using the English and Chinese Penn Treebank corpora.
+    The English data is prepared by following McDonald et al. (2005).
+    Bracketed sentences from the Penn Treebank (PTB) 3 are split into training, development and test sets as shown in Table 4, and then translated into dependency structures using the head-finding rules from Yamada and Matsumoto (2003).
+    Before parsing, POS tags are assigned to the input sentence using our reimplementation of the POStagger from Collins (2002).
+    Like McDonald et al. (2005), we evaluate the parsing accuracy by the precision of lexical heads (the percentage of input words, excluding punctuation, that have been assigned t

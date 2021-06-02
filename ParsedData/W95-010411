@@ -1,0 +1,7 @@
+likelihood term, p(e_k, ,c_1, c1,.
+    , eklwi), is difficult to estimate from training data &#8212; we would have to count situations in which the entire context was previously observed around word wi, which raises a severe sparse-data problem.
+    Instead, therefore, we assume that the presence of one word in the context is independent of the presence of any other word.
+    This lets us decompose the likelihood into a product: Gale et al. [1994] provide evidence that this is in fact a reasonable approximation.
+    We still have the problem, however, of estimating the individual p(cjiwi) probabilities from our training corpus.
+    The straightforward way would be to use a maximum likelihood estimate &#8212; we would count M, the total number of occurrences of wi in the training corpus, and m, the number of such occurrences for which ci occurred within &#177;k words, and we would then take the ratio mi/Mi.2 Unfortunately, we may not have enough training data to get an accurate estimate this way.
+    Gale et a

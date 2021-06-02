@@ -1,0 +1,12 @@
+s completes the discussion of the distance measure.
+    Prob(match I 6) is computed as an (irrelevant) constant times Prob(6 I match)Prob(match).
+    Prob(match) is computed using the values in Table 5.
+    Prob(6 I match) is computed by assuming that Prob(6 I match) -= 2(1 - Prob(I61)), where Prob(16I) has a standard normal distribution.
+    We first calculate 6 as (12 - /ic)/ V/is2 and then Prob(I61) is computed by integrating a standard normal distribution.
+    See the c-function two_side_distance in the appendix for an example of a c-code implementation of these calculations.
+    The distance function d, represented in the program as two_side_clistance, is defined in a general way to allow for insertions, deletion, substitution, etc.
+    The function takes four arguments: xl, yi, X2, Y2.
+  
+  
+    The algorithm is summarized in the following recursion equation.
+    Let si, i = 1 &#8226; &#8226; &#8226; I, be the sentences of one language, and ti, j = 1- &#8226; &#8226; J, be the translations of those sent

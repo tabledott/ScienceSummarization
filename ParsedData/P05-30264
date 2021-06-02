@@ -1,0 +1,11 @@
+ngine synthetic translations.
+    Section 3 describes the experimental setup used to evaluate our approach, and section 4 presents the results of the evaluation.
+    Our conclusions and directions for future work are presented in section 5.
+  
+  
+    Our Multi-Engine Machine Translation (MEMT) system operates on the single &#8220;top-best&#8221; translation output produced by each of several MT systems operating on a common input sentence.
+    MEMT first aligns the words of the different translation systems using a word alignment matcher.
+    Then, using the alignments provided by the matcher, the system generates a set of synthetic sentence hypothesis translations.
+    Each hypothesis translation is assigned a score based on the alignment information, the confidence of the individual systems, and a language model.
+    The hypothesis translation with the best score is selected as the final output of the MEMT combination.
+    The task of the matcher is to produce a wordto-word alignment between the words of tw

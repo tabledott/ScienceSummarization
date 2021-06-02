@@ -1,0 +1,12 @@
+nguage model, three for the translation model, and one for word penalty) are tuned.
+    In the &#8220;large&#8221; model, 21k additional unigram and bigram features are used. system.
+    In this stage, we add 21k additional unigram and bigram target-side language model features (cf.
+    Li and Khudanpur (2008)).
+    For example, a specific bigram &#8220;the cat&#8221; can be a feature.
+    Note that the total score by the baseline system is also a feature in the second-stage model.
+    With these features and the 40k hypergraphs, we run the MR training to obtain the optimal weights.
+    During test time, a similar procedure is followed.
+    For a given test sentence, the baseline system first generates a hypergraph, and then the hypergraph is reranked by the second-stage model.
+    The last row in Table 5 reports the BLEU scores.
+    Clearly, adding more features improves (statistically significant) the case with only five features.
+    We plan to incorporate more informative features described by Chiang et a

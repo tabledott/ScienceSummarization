@@ -1,0 +1,7 @@
+remely simple, involving only about 90 word forms (not counting numbers and wind directions) and a small handful of different syntactic structures.
+    Systems and texts evaluated: We evaluated four pCRU generators and the SUMTIME system, operating in Hybrid mode (Section 2.3) for better comparability because the pCRU generators do not perform content determination.
+    A base pCRU generator was created semiautomatically by running a chunker over the corpus, extracting generation rules and adding some higher-level rules taking care of aggregation, elision etc.
+    This base generator was then trained on 9/10 of the corpus (the training data).
+    5 different random divisions of the corpus into training and testing data were used (i.e. all results were validated by 5-fold hold-out cross-validation).
+    Additionally, a back-off 2-gram model with GoodTuring discounting and no lexical classes was built from the same training data, using the SRILM toolkit (Stolcke, 2002).
+    Forecasts were then generated for all

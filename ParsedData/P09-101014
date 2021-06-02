@@ -1,0 +1,12 @@
+ns one when h matches the annotation for the document being analyzed, and zero otherwise.
+    Policy gradient performs stochastic gradient ascent on the objective from equation 2, performing one update per document.
+    For document d, this objective becomes: where hd is the history corresponding to the annotated action sequence.
+    Thus, with this reward policy gradient is equivalent to stochastic gradient ascent with a maximum likelihood objective.
+    At the other extreme, when annotations are completely unavailable, learning is still possible given informative feedback from the environment.
+    Crucially, this feedback only needs to correlate with action sequence quality.
+    We detail environment-based reward functions in the next section.
+    As our results will show, reward functions built using this kind of feedback can provide strong guidance for learning.
+    We will also consider reward functions that combine annotated supervision with environment feedback.
+  
+  
+    We study two applications of o

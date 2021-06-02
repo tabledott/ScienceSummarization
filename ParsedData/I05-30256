@@ -1,0 +1,7 @@
+n standards exist, the differences are limited, and many words are still segmented in the same way across two different segmentation standards.
+  As such, in our work, we attempt to incorporate corpora from other segmentation standards as ad- ditional training data, to help reduce the OOV problem.
+  Specifically, the steps taken are: 1.
+  Perform training with maximum entropy modeling using the original training corpus D0 annotated in a given segmentation stan- dard.
+  Use the trained word segmenter to segment another corpus D annotated in a different segmentation standard.
+  Suppose a Chinese character C in D is as- signed a boundary tag t by the word seg- menter with probability p. If t is identical to the boundary tag of C in the gold-standard 162 annotated corpus D, and p is less than some threshold ?, then C (with its surrounding context in D) is used as additional training data.
+  Add all such characters C as additional train- ing data to the original training corpus D0, and train a new word segmenter u

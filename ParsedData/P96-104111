@@ -1,0 +1,8 @@
+ll Street Journal (WSJ), and San Jose Mercury News (SJM) data, yielding 123, 84, and 43 million words respectively.
+    We created two distinct vocabularies, one for the Brown corpus and one for the TIPSTER data.
+    The former vocabulary contains all 53,850 words occurring in Brown; the latter vocabulary consists of the 65,173 words occurring at least 70 times in TIPSTER.
+    For each experiment, we selected three segments of held-out data along with the segment of training data.
+    One held-out segment was used as the test data for performance evaluation, and the other two were used as development test data for optimizing the parameters of each smoothing method.
+    Each piece of held-out data was chosen to be roughly 50,000 words.
+    This decision does not reflect practice very well, as when the training data size is less than 50,000 words it is not realistic to have so much development test data available.
+    However, we made this decision to prevent us having to optimize the training versus held-out d

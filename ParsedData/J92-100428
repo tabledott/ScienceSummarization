@@ -1,0 +1,9 @@
+ CURRENT-FOCUS (defined later) from its subparse, which would be passed along passively to the verb &amp;quot;go.&amp;quot; The verb would then simply consult the CURRENT-FOCUS (regardless of its source) to establish the identity of its subject.
+    The procedure works as follows.
+    In the absence of any explicit instructions from its grammar node, a parse node simply passes along all features to the immediate relative (first child in the top-down cycle, and right sibling during the bottom-up cycle).
+    Any constraints specified by the grammar node result in a modification of certain feature values.
+    The modifications are specified through a four-tuple of (feature-name new-value logic-function cycle).
+    The possible features include person and number, case, determiner (DEFINITE, INDEFINITE, PROPER, etc.
+    ), mode (ROOT, FINITE, etc.
+    ), and a semantic category bit map.
+    The new value, entered as a bit pattern, could be a single value, such as SINGULAR, or could be multiple valued as in the num

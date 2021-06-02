@@ -1,0 +1,11 @@
+over the alternative of simply emitting a count of one for each tokenized word in the array.
+			Figure 1 shows an example for3 input documents and 2 reduce shards.
+			Which re ducer a particular term is sent to is determined by ahash function, indicated by text color.
+			The exact par titioning of the keys is irrelevant; important is that all pairs with the same key are sent to the same reducer.
+			5.2 Generation of n-Grams.
+			The process of n-gram generation is similar to vo cabulary generation.
+			The main differences are thatnow words are converted to IDs, and we emit n grams up to some maximum order instead of single 860 Figure 1: Distributed vocabulary generation.words.
+			A simplified map function does the follow ing: Map(string key, string value) { // key=docid, ignored; value=document array ids = ToIds(Tokenize(value)); for i = 1 ..
+			#ids for j = 0 ..
+			maxorder-1 Emit(ids[i-j ..
+			i], "1"); } Again, one may optimize the Map function by first aggregating counts over some section of the data and t

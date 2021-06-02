@@ -1,0 +1,6 @@
+ many paraphrases that were produced by the baseline method for the sample.
+    In addition to applying syntactic constraints to our phrase extraction algorithm, we can also apply them when we substitute a paraphrase into a sentence.
+    To do so, we limit the paraphrases to be the same syntactic type as the phrase that it is replacing, based on the syntactic labels that are derived from the phrase tree for a test sentence.
+    Since each phrase normally has a set of different CCG labels (instead of a single non-termal symbol) we need a way of choosing which label to use when applying the constraint.
+    There are several different possibilities for choosing among labels.
+    We could simultaneously choose the best paraphrase and the best label for the phrase in the parse tree of the test sentence: Alternately, we could average over all of the labels that are generated for the phrase in the parse tree: The potential drawback of using Equations 8 and 9 is that the CCG labels for a particular sentence significa

@@ -1,0 +1,8 @@
+ to a specific worker.
+    However, instead of keeping this assignment constant throughout all iterations, after each iteration the vocabulary is partitioned anew so that all words from any given cluster are considered by the same worker in the next iteration.
+    The intuition behind this heuristic is that as the clustering becomes more coherent, the information each worker has about groups of similar words is becoming increasingly accurate.
+    In our experiments this heuristic lead to almost monotone convergence in log-likelihood.
+    It also reduced the number of iterations required to converge by up to a factor of three.
+    The runtime of the distributed exchange algorithm depends highly on the number of distinct bigrams in the training corpus.
+    When clustering the approximately 1.5 million word vocabulary of a 405 million token English corpus into 1,000 clusters, one iteration takes approximately 5 minutes using 50 workers based on standard hardware running the Linux operating system.
+    When clust

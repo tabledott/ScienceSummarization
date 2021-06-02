@@ -1,0 +1,8 @@
+  The rules are of the following form: Here Lm stands for a sequence of m letters to the left of T and Rn is a sequence of n letters to the right.
+    The number of letters in the context to the left and right varies.
+    We used from 0 to 4 letters on each side.
+    For example, two rules learned for the letter B were: [AB.B.OT &#8212;&#65533; &#8212; 1.0] and [B &#8212;&#65533; b .96 &#8212; .04], meaning that in the first context the letter B is silent with probability 1.0, and in the second it is pronounced as b with probability .96 and is silent with probability .04.
+    Training this model consists of collecting counts for the contexts that appear in the data with the selected window size to the left and right.
+    We collected counts for all configurations Lm.T.Rn for m E {0, 1, 2, 3, 41, n E {0, 1, 2, 3, 41 that occurred in the data.
+    The model is applied by choosing for each letter T the most probable translation as predicted by the most specific rule for the context of occurrence of the letter.
+ 

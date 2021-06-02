@@ -1,0 +1,7 @@
+), (ii) the relations are compatible (antonymy and happens-before), where presence of one does not imply or rule out presence of the other, and (iii) the relations are incompatible (similarity and antonymy).
+    It is not uncommon for our algorithm to identify presence of several relations, with different strengths.
+    To produce the most likely output, we use semantics of compatibility of the relations to output the most likely one(s).
+    The rules are as follows: If the frequency was too low (less than 10 on the pattern &amp;quot;X * Y&amp;quot; OR &amp;quot;Y * X&amp;quot; OR &amp;quot;X * * Y&amp;quot; OR &amp;quot;Y * * X&amp;quot;), output that the statements are unrelated and stop.
+    If happens-before is detected, output presence of happens-before (additional relation may still be output, if detected).
+    If happens-before is not detected, ignore detection of enablement (because enablement is more specific than happens-before, but is sometimes falsely detected in the absence of happens-before).
+  

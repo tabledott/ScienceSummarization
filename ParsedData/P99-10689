@@ -1,0 +1,7 @@
+each other in order to obtain the best alignments.3 It then computes the correlation between the lengths of these non-markup text chunks.
+    As is well known, there is a reliably linear relationship in the lengths of text translations &#8212; small pieces of source text translate to small pieces of target text, medium to medium, and large to large.
+    Therefore we can apply a standard statistical hypothesis test, and if p &lt; .05 we can conclude that the lengths are reliably correlated and accept the page pair as likely to be translations of each other.
+    Otherwise, this candidate page pair is filtered out.4 2An anonymous reviewer observes that diff has no preference for aligning chunks of similar lengths, which in some cases might lead to a poor alignment when a good one exists.
+    This could result in a failure to identify true translations and is worth investigating further.
+    3Chunk tokens with exactly equal lengths are excluded; see (Resnik, 1998) for reasons and other details of the algorithm.
+ 

@@ -1,0 +1,8 @@
+sonably well to unseen test data from other sources.
+    First, smoothing across classes greatly reduces the training data required for individual grade models.
+    By &#8216;borrowing&#8217; word frequency data from nearby grades, the effective number of types for each grade model is multiplied by a factor of five or more.
+    This helps explain the type coverage of about 90% on our test data.
+    Second, because we are interested in the relative likelihoods of grade levels, accurate relative type probabilities are more important than absolute probabilities.
+    Indeed, trying to learn absolute type probabilities would be undesirable since it would fit the model too closely to whatever specific topics were in the training set.
+    The important functions of relative likelihood appear to be general indicators such as the grade when a word is first introduced into usage, whether it generally increases or decreases with grade level, and whether it is most frequent in a particular grade range.
+    Further study 

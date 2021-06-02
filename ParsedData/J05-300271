@@ -1,0 +1,7 @@
+ed Returns: Given two dependency trees, NodeCompare finds their optimal alignment that maps two top nodes of the tree one to another.
+    The function returns the score of the alignment and the mapping itself. begin node-sim &lt;-- NodeSim(tree1.top, tree2.top) ; /*If one of the trees is of height one, return the NodeSim score between two tops */ if is leaf(tree1) or is leaf(tree2) then return (node-sim, (tree1, tree2)) ; else /*Find an optimal alignment of the children nodes */ res &lt;-- MapChildren(tree1, tree2) ; /*The alignment score is computed as a sum of the similarity of top nodes and the score of the optimal alignment of node.
+    The tree alignment is assembled by adding a pair of top nodes to the optimal alignment of their children.
+    */ return (node-sim + res.score, (tree1.top, tree2.top) U res.map) ;
+  
+  
+    We are grateful to Eli Barzilay, Michael Collins, No`emie Elhadad, Julia Hirschberg, Mirella Lapata, Lillian Lee, Smaranda Muresan, and the anonymous reviewers for helpful comments and c

@@ -1,0 +1,9 @@
+oach is outlined in Figure 1.
+    Assuming that we have an algorithm for generating cross-lingual word clusters (see Section 4.2), we can augment the delexicalized parsing algorithm to use these word cluster features at training and testing time.
+    In order to further motivate the proposed approach, consider the accuracy of the supervised English parser.
+    A parser with lexical, part-of-speech and cluster features achieves 90.7% LAS (see Table 3).
+    If we remove all lexical and cluster features, the same parser achieves 83.1%.
+    However, if we add back just the cluster features, the accuracy jumps back up to 89.5%, which is only 1.2% below the full system.
+    Thus, if we can accurately learn cross-lingual clusters, there is hope of regaining some of the accuracy lost due to the delexicalization process.
+    Our first method for inducing cross-lingual clusters has two stages.
+    First, it clusters a source language (S) as in the monolingual case, and then projects these clusters to a target language 

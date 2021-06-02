@@ -1,0 +1,6 @@
+ons.
+    Joint parsing with a simplest synchronous context-free grammar (Wu, 1997) is O(n6) as opposed to the monolingual O(n3) time.
+    To make things worse, languages are non-isomorphic, i.e., there is no 1to-1 mapping between tree nodes, thus in practice one has to use more expressive formalisms such as synchronous tree-substitution grammars (Eisner, 2003; Galley et al., 2004).
+    In fact, rather than joint parsing per se, Burkett and Klein (2008) resort to separate monolingual parsing and bilingual reranking over k2 tree pairs, which covers a tiny fraction of the whole space (Huang, 2008).
+    We instead propose a much simpler alternative, bilingually-constrained monolingual parsing, where a source-language parser is extended to exploit the reorderings between languages as additional observation, but not bothering to build a tree for the target side simultaneously.
+    To illustrate the idea, suppose we are parsing the sentence Both are possible, but with a Chinese translation the choice becomes clear (

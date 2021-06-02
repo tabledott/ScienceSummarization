@@ -1,0 +1,11 @@
+ node (3), which is node (4).
+			There are two cases.
+			In case 1, node (4) is inactive, so we can mark node (1) inactive and stop.
+			In case 2, node (4) is active, so we compute the collocation of abXc and bXcd with information stored at nodes (2) and (4), using either a precomputed intersection, double binary search, or merge, depending on the size of the sets.
+			If the result is empty, we mark the node inactive.
+			Otherwise, we store the results at node (1) and add its successor patterns to the frontier for the next iteration.
+			This includes all patterns containing exactly one more terminal symbol than the current pattern.
+			sents the prefix of a unique pattern from the set that is specified by the concatenation of the edge labels along the path from the root to that node.
+			A suffix link is a pointer from a node representing path a?
+			to the node representing path ?.
+			We will use this data structure to record the set of patterns that we have searched for and to cache information for those that 

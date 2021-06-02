@@ -1,0 +1,9 @@
+al translations.
+    The equiprobability assumption helps to counteract this; in fact one could apply scoring techniques from information retrieval and cross-lingual information retrieval in weighting the lexicon.
+    We leave this area of exploration to future work.
+    Melamed (2000) used a greedy approximation to MWBM called competitive linking.
+    Competitive linking iteratively selects the edge with the highest weight, links the two vertices of the edge, then removes them from the graph.
+    (Ties are broken at random.)
+    A heap-based implementation of competitive linking runs in O(max(|X|, |Y|) log max(|X|, |Y|)).
+    Under the equiprobability assumption, all the weights are the same, so that competitive linking proceeds simply by randomly making legal links (those allowed by the translation lexicon) until no more can be made.
+    If definition (4) is applied to pairs of documents in the same language, with a &#8220;translation lexicon&#8221; defined by the identity relation, then tsim is a variant o

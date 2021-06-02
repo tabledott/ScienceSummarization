@@ -1,0 +1,7 @@
+produced using the PCFG back to the Penn II tree representations, and compares these trees to the held-out test trees using the labeled precision and recall trees.
+    This transformation/detransformation process is depicted in Figure 9.
+    It has the virtue that all precision and recall measures involve trees using the Penn II tree representations, but it does involve an additional detransformation step.
+    It is straightforward to define detransformers for all of the tree transformations described in this section except for the flattening transform.
+    The difficulty in this case is that several different Penn II format trees may map onto the same flattened tree, as mentioned above.
+    The detransformer for the flattening transform was obtained by recording for each distinct local tree in the flattened tree representation of the training corpus the various tree fragments in the Penn II format training corpus it could have been derived from.
+    The detransformation of a flattened tree is effected by rep

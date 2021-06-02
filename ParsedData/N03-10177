@@ -1,0 +1,10 @@
+    During translation, future costs for uncovered foreign words can be quickly computed by consulting this table.
+    If a hypothesis has broken sequences of untranslated foreign words, we look up the cost for each sequence and take the product of their costs.
+    The beam size, e.g. the maximum number of hypotheses in each stack, is fixed to a certain number.
+    The number of translation options is linear with the sentence length.
+    Hence, the time complexity of the beam search is quadratic with sentence length, and linear with the beam size.
+    Since the beam size limits the search space and therefore search quality, we have to find the proper trade-off between speed (low beam size) and performance (high beam size).
+    For our experiments, a beam size of only 100 proved to be sufficient.
+    With larger beams sizes, only few sentences are translated differently.
+    With our decoder, translating 1755 sentence of length 5-15 words takes about 10 minutes on a 2 GHz Linux system.
+    In other words, we a

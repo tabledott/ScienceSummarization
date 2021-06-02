@@ -1,0 +1,8 @@
+ach word with context to one of the classes that represent region information and named entity&#8217;s semantic class.
+    Several representations to encode region information are proposed and examined (Ramshaw and Marcus, 1995; Uchimoto et al., 2000; Kudo and Matsumoto, 2001).
+    In this paper, we employ the simplest BIO representation, which is also used in (Yamada et al., 2000).
+    We modify this representation in Section 5.1 in order to accelerate the SVM training.
+    In the BIO representation, the region information is represented as the class prefixes &#8220;B-&#8221; and &#8220;I-&#8221;, and a class &#8220;O&#8221;.
+    B- means that the current word is at the beginning of a named entity, I- means that the current word is in a named entity (but not at the beginning), and O means the word is not in a named entity.
+    For each named entity class C, class B-C and I-C are produced.
+    Therefore, if we have N named entity classes, the BIO representation yields 2N + 1 classes, which will be the targets

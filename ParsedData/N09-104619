@@ -1,0 +1,7 @@
+ a lowercased and tokenized (but not segmented) version of the test data is translated using the grammar derived from a nonsegmented training data.
+    In the 1BEST condition, the single best segmentation &#710;sN1 that maximizes Pr(sN1 Iw) is chosen for each word using the MERTtrained model (the German model for German, and the language-neutral model for Hungarian and Turkish).
+    This variant is translated using a grammar induced from a parallel corpus that has also been segmented according to the same decision rule.
+    In the LATTICE condition, we constructed segmentation lattices using the technique described in Section 3.1.
+    For all languages pairs, we used d = 2 as the pruning density parameter (which corresponds to the highest F-score on the held out test set).
+    Additionally, if the unsegmented form of the word was removed from the lattice during pruning, it was restored to the lattice with zero weight.
+    Table 4 summarizes the results of the translation experiments comparing the three input 

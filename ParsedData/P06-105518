@@ -1,0 +1,7 @@
+   The second approximation that Matsuzaki et al. (2005) present is the Viterbi parse under a new sentence-specific PCFG, whose rule probabilities are given as the solution of a variational approximation of the original grammar.
+    However, their rule probabilities turn out to be the posterior probability, given the sentence, of each rule being used at each position in the tree.
+    Their algorithm is therefore the labelled recall algorithm of Goodman (1996) but applied to rules.
+    That is, it returns the tree whose expected number of correct rules is maximal.
+    Thus, assuming one is interested in a per-position score like F1 (which is its own debate), this method of parsing is actually more appropriate than finding the most likely parse, not simply a cheap approximation of it, and it need not be derived by a variational argument.
+    We refer to this method of parsing as the max-rule parser.
+    Since this method is not a contribution of this paper, we refer the reader to the fuller presentations in Goo

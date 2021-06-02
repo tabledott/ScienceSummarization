@@ -1,0 +1,6 @@
+on, recall, and F1 measures.
+    In BOT, the set of titles is collected from the mentions hyperlinked in the gold annotation.
+    That is, if the gold annotation is { (China, People&#8217;s Republic of China), (Taiwan, Taiwan), (Jiangsu, Jiangsu)} of the number of generated disambiguation candidates.
+    Listed is the fraction of identified mentions m whose target disambiguation t is among the top k candidates ranked in descending order of P(t|m). and the predicted anotation is: { (China, People&#8217;s Republic of China), (China, History of China), (Taiwan, null), (Jiangsu, Jiangsu), (republic, Government)} , then the BOT for the gold annotation is: {People&#8217;s Republic of China, Taiwan, Jiangsu} , and the BOT for the predicted annotation is: {People&#8217;s Republic of China, History of China, Jiangsu} .
+    The title Government is not included in the BOT for predicted annotation, because its associate mention republic did not appear as a mention in the gold annotation.
+    Both the precision and the re

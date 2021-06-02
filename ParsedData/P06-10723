@@ -1,0 +1,9 @@
+x0 is a special &#8220;wall&#8221; symbol, $, on the left of every sentence.
+    A tree y is defined by a pair of functions yleft and yright (both {0, 1, 2,..., n} --, 211,2,...,n1) that map each word to its sets of left and right dependents, respectively.
+    The graph is constrained to be a projective tree rooted at $: each word except $ has a single parent, and there are no cycles or crossing dependencies.2 yleft(0) is taken to be empty, and yright(0) contains the sentence&#8217;s single head.
+    Let yi denote the subtree rooted at position i.
+    The probability P(yi  |xi) of generating this subtree, given its head word xi, is defined recursively: where firsty(j) is a predicate defined to be true iff xj is the closest child (on either side) to its parent xi.
+    The probability of the entire tree is given by pe(x, y) = P(y0  |$).
+    The parameters O are the conditional distributions pstop and pchild.
+    Experimental baseline: EM.
+    Following common practice, we always replace words by part-ofspeech (

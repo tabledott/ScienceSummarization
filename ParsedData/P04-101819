@@ -1,0 +1,6 @@
+ll entity-mention model has about features, due to less number of conjunction features and training examples.
+    Coreference results on the true mentions of the Devtest, Feb02, and Sep02 test sets are tabulated in Table 3.
+    These numbers are obtained with a fixed search beam and pruning threshold (widening the search beam or using a smaller pruning threshold did not change results significantly).
+    The mention-pair model in most cases performs better than the mention-entity model by both ACE-value and ECM-F measure although none of the differences is statistically significant (pair-wise t-test) at p-value .
+    Note that, however, the mention-pair model uses times more features than the entity-pair model.
+    We also observed that, because the score between the infocus entity and the active mention is computed by (9) in the mention-pair model, the mention-pair sometimes mistakenly places a male pronoun and female pronoun into the same entity, while the same mistake is avoided in the entity-mention model

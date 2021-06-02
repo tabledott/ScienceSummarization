@@ -1,0 +1,9 @@
+r function.
+    The mapping is formally defined as follows.
+    The above method allows for the tractable estimation of log-linear models on exponentially-many HPSG parse trees.
+    However, despite the development of methods to improve HPSG parsing efficiency (Oepen et al., 2002a), the exhaustive parsing of all sentences in a treebank is still expensive.
+    Our idea is that we can omit the computation of parse trees with low probabilities in the estimation stage because T(s) can be approximated with parse trees with high probabilities.
+    To achieve this, we first prepared a preliminary probabilistic model whose estimation did not require the parsing of a treebank.
+    The preliminary model was used to reduce the search space for parsing a training treebank.
+    The preliminary model in this study is a unigram model, p(tIs) = FJwEs p(1I w), where w E s is a word in the sentence s, and 1 is a lexical entry assigned to w. This model can be estimated without parsing a treebank.
+    Given this model, we restri

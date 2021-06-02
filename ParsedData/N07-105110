@@ -1,0 +1,8 @@
+cted trees: P(7r(T)|G).
+    The proofs of the general case are given in Corazza and Satta (2006), but the resulting procedure is quite intuitive.
+    Given a (fully observed) treebank, the maximumlikelihood estimate for the probability of a rule X &#8212;* Y Z would simply be the ratio of the count of X to the count of the configuration X &#8212;* Y Z.
+    If we wish to find the estimate which has minimum divergence to an infinite distribution P(T), we use the same formula, but the counts become expected counts: with unaries estimated similarly.
+    In our specific case, X, Y, and Z are symbols in 7r(G), and the expectations are taken over G&#8217;s distribution of 7rprojected trees, P(7r(T)|G).
+    We give two practical methods for obtaining these expectations below.
+    Concretely, we can now estimate the minimum divergence parameters of 7r(G) for any projection 7r and PCFG G if we can calculate the expectations of the projected symbols and rules according to P(7r(T)|G).
+    The simplest option is to sample

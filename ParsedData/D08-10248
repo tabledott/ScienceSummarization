@@ -1,0 +1,6 @@
+ns and select the highest-BLEU translation from it.
+    The intuition is that due to noise in the training data or reference translations, a high-BLEU translation may actually use peculiar rules which it would be undesirable to encourage the model to use.
+    Hence, in local updating, the search for the highest-BLEU translation is limited to the n translations with the highest model score, where n must be determined experimentally.
+    Here, we introduce a new oracle-translation selection method, formulating the intuition behind local updating as an optimization problem: Instead of choosing the highest-BLEU translation from an n-best list, we choose the translation that maximizes a combination of (approximate) BLEU and the model.
+    We can also interpret (10) in the following way: we want e&#8727; to be the max-BLEU translation, but we also want to minimize (1).
+    So we balance these two criteria against each other: where (B(e) &#8722; h(e) &#183; w) is that part of (1) that depends on e&#8727;, and &#181;

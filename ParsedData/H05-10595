@@ -1,0 +1,7 @@
+osition are widely usedin various tagging problems in natural language pro cessing.
+			The issue with such decompositions is that you have only the information about the preceding(or following) tags when performing local classifi cation.
+			From the viewpoint of local classification, we want to give the classifier as much information as possible because the information about neighboring tags is useful in general.
+			As an example, consider the situation where we are going to annotate a three-word sentence withpart-of-speech tags.
+			Figure 1 shows the four possi ble ways of decomposition.
+			They correspond to the following equations: (a) P (t1...t3|o) = P (t1|o)P (t2|t1o)P (t3|t2o) (5) (b) P (t1...t3|o) = P (t3|o)P (t2|t3o)P (t1|t2o) (6) (c) P (t1...t3|o) = P (t1|o)P (t3|o)P (t2|t3t1o) (7) (d) P (t1...t3|o) = P (t2|o)P (t1|t2o)P (t3|t2o) (8)(a) and (b) are the standard left-to-right and rightto-left decompositions.
+			Notice that in decomposi tion (c), the local classifier can use the information about the t

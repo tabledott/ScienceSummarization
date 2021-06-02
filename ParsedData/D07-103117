@@ -1,0 +1,6 @@
+ since they are conjugate to multinomials, which simplifies both the mathematical and computational aspects of theproblem.
+			The precise form of the model we investi gated is: ?y | ?y ? Dir(?y) ?y | ?x ? Dir(?x) yi | yi?1 = y ? Multi(?y) xi | yi = y ? Multi(?y)Informally, ?y controls the sparsity of the state-to state transition probabilities while ?x controls thesparsity of the state-to-observation emission proba bilities.
+			As ?x approaches zero the prior strongly prefers models in which each hidden state emitsas few words as possible.
+			This captures the intu ition that most word types only belong to one POS,since the minimum number of non-zero state-toobservation transitions occurs when each observa tion type is emitted from only one state.
+			Similarly, as ?y approaches zero the state-to-state transitions become sparser.There are two main techniques for Bayesian esti mation of such models: Markov Chain Monte Carlo(MCMC) and Variational Bayes (VB).
+			MCMC en compasses a broad range of sampling techniq

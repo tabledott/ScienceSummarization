@@ -1,0 +1,7 @@
+ses for subjectivity.
+    The evaluation of the algorithm is performed against the gold standard of 64 words (354 word senses) using Judge 1&#8217;s annotations, as described in Section 3.
+    For each sense of each word in the set of 64 ambiguous words, we use Algorithm 1 to determine a subjectivity score.
+    A subjectivity label is then assigned depending on the value of this score with respect to a pre-selected threshold.
+    While a threshold of 0 seems like a sensible choice, we perform the evaluation for different thresholds ranging across the [-1,+1] interval, and correspondingly determine the precision of the algorithm at different points of recall7.
+    Note that the word senses for which none of the distributionally similar words are found in the MPQA corpus are not Specifically, in the list of word senses ranked by their subjectivity score, we assign a subjectivity label to the top N word senses.
+    The precision is then determined as the number of correct subjectivity label assignments out of al

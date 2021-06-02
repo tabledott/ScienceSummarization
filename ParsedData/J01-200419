@@ -1,0 +1,5 @@
+ model.
+    A shift-reduce parser operates from left to right using a stack and a pointer to the next word in the input string.9 Each stack entry consists minimally of a nonterminal label.
+    The parser performs two basic operations: (i) shifting, which involves pushing the POS label of the next word onto the stack and moving the pointer to the following word in the input string; and (ii) reducing, which takes the top k stack entries and replaces them with a single new entry, the nonterminal label of which is the left-hand side of a rule in the grammar that has the k top stack entry labels on the right-hand side.
+    For example, if there is a rule NP --&gt; DT NN, and the top two stack entries are NN and DT, then those two entries can be popped off of the stack and an entry with the label NP pushed onto the stack.
+    Goddeau (1992) used a robust deterministic shift-reduce parser to condition word probabilities by extracting a specified number of stack entries from the top of the current state, and conditio

@@ -1,0 +1,8 @@
+This alignment pattern was observed in our test set and corrected by our model.
+  
+  
+    To allow for this preference, we present a novel conditional alignment model of a foreign (source) sentence f = {f1, ..., fJ} given an English (target) sentence e = {e1,..., eI} and a target tree structure t. Like the classic IBM models (Brown et al., 1994), our model will introduce a latent alignment vector a = {a1,..., aJ} that specifies the position of an aligned target word for each source word.
+    Formally, our model describes p(a, f|e, t), but otherwise borrows heavily from the HMM alignment model of Ney and Vogel (1996).
+    The HMM model captures the intuition that the alignment vector a will in general progress across the sentence e in a pattern which is mostly local, perhaps with a few large jumps.
+    That is, alignments are locally monotonic more often than not.
+    Formally, the HMM model factors as: where j_ is the position of the last non-null-aligned source word before position j, pt is a lexical transfe

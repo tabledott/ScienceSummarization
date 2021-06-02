@@ -1,0 +1,7 @@
+y feature-extractor in our system and is based on collocations.
+    A set of 10 collocates are extracted for each ambiguous word in the text: first word to the left, first word to the right, second word to the left, second word to the right, first noun to the left, first noun to the right, first verb to the left, first verb to the right, first adjective to the left, and first adjective to the right.
+    Some of these types of collocation were also used by Brown et al. (1991) and Yarowsky (1993) (see Section 2.3).
+    All collocates are searched for within the sentence which contains the ambiguous word.
+    If some particular collocation does not exist for an ambiguous word, for example if it is the first or last word in a sentence, then a null value (NoColl) is stored instead.
+    Rather than storing the surface form of the cooccurrence, morphological roots are stored instead, as this allows for a smaller set of collocations, helping to cope with data sparseness.
+    The surface form of the ambiguous word is 

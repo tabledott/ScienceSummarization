@@ -1,0 +1,10 @@
+.
+    The last stage performs all possible parser operations (reducing stack entries and shifting the new word).
+    When there is no more parser work to be done (or, in their case, when the beam is full), the following word is predicted.
+    And so on until the end of the string.
+    Each different POS assignment or parser operation is a step in a derivation.
+    Each distinct derivation path within the beam has a probability and a stack state associated with it.
+    Every stack entry has a nonterminal node label and a designated headword of the constituent.
+    When all of the parser operations have finished at a particular point in the string, the next word is predicted as follows: For each derivation in the beam, the headwords of the two topmost stack entries form a trigram with the conditioned word.
+    This interpolated trigram probability is then multiplied by the normalized probability of the derivation, to provide that derivation's contribution to the probability of the word.
+    More precisely, for 

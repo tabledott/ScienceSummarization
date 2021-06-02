@@ -1,0 +1,10 @@
+discovered by SVD-ASO appears crucial to achieve appreciable improvements.
+  
+  
+    For semi-supervised learning, the idea is to create many auxiliary prediction problems (relevant to the task) from unlabeled data so that we can learn the shared structureO(useful for the task) using the ASO algorithm.
+    In particular, we want to create auxiliary problems with the following properties: .Automatic labeling: we need to automatically generate various &#8220;labeled&#8221; data for the auxiliary problems from unlabeled data.
+    &#8226;Relevancy: auxiliary problems should be related to the target problem.
+    That is, they should share a certain predictive structure.
+    The final classifier for the target task is in the form of (1), a linear predictor for structural learning.
+    We fixO(learned from unlabeled data through auxiliary problems) and optimize weight vectorswandv on the given labeled data.
+    We summarize this semisupervised learning procedure below. f = arg min f E &#65533;&#65533;1 L(f(o Xi)&gt;

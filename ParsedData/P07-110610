@@ -1,0 +1,6 @@
+he averaged parameters &#947;, the training algorithm in Figure 1 can be modified by keeping a total parameter vector &#963;n,t = E &#945;n,t, which is updated using &#945; after each training example.
+    After the final iteration, &#947; is computed as &#963;n,t/NT.
+    In the averaged perceptron algorithm, &#947; is used instead of &#945; as the final parameter vector.
+    With a large number of features, calculating the total parameter vector &#963;n,t after each training example is expensive.
+    Since the number of changed dimensions in the parameter vector &#945; after each training example is a small proportion of the total vector, we use a lazy update optimization for the training process.1 Define an update vector &#964; to record the number of the training sentence n and iteration t when each dimension of the averaged parameter vector was last updated.
+    Then after each training sentence is processed, only update the dimensions of the total parameter vector corresponding to the features in the sen

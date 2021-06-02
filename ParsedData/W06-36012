@@ -1,0 +1,8 @@
+ specified by a syntax-directed translation schema (SDTS), which is essentially a synchronous context-free grammar (SCFG) that generates two languages simultaneously.
+    An SDTS also induces a translator, a device that performs the transformation from input string to output string.
+    In this context, an SD translator consists of two components, a sourcelanguage parser and a recursive converter which is usually modeled as a top-down tree-to-string transducer (G&#180;ecseg and Steinby, 1984).
+    The relationship among these concepts is illustrated in Fig.
+    1.
+    This paper adapts the idea of syntax-directed translator to statistical machine translation (MT).
+    We apply stochastic operations at each node of the source-language parse-tree and search for the best derivation (a sequence of translation steps) that converts the whole tree into some target-language string with the highest probability.
+    However, the structural divergence across languages often results in nonisomorphic parse-trees that is b

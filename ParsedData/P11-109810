@@ -1,0 +1,11 @@
+to cluster these patterns to learn the domain&#8217;s core events.
+    We consider two unsupervised algorithms: Latent Dirichlet Allocation (LDA) (Blei et al., 2003), and agglomerative clustering based on word distance.
+  
+  
+    LDA is a probabilistic model that treats documents as mixtures of topics.
+    It learns topics as discrete distributions (multinomials) over the event patterns, and thus meets our needs as it clusters patterns based on co-occurrence in documents.
+    The algorithm requires the number of topics to be known ahead of time, but in practice this number is set relatively high and the resulting topics are still useful.
+    Our best performing LDA model used 200 topics.
+    We had mixed success with LDA though, and ultimately found our next approach performed slightly better on the document classification evaluation.
+    Agglomerative clustering does not require foreknowledge of the templates, but its success relies on how event pattern similarity is determined.
+    Ideally, we want to learn

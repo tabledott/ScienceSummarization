@@ -1,0 +1,7 @@
+istribution, as the following equations show for the general case: Here e is the event to be predicted, h is the set of conditioning events or history, a is a backoff weight, and h' is the subset of conditioning events used for the less specific backoff distribution.
+    BO is the backoff set of events for which no data are present in the specific distribution P1.
+    In the case of n-gram language modeling, e is the next word to be predicted, and the conditioning events are the n &#8212; 1 preceding words.
+    In our case the specific distribution P1 of the backoff model is Pcw of equation 1, itself a linear interpolation of three empirical distributions from the training data.
+    The less specific distribution P2 of the backoff model is Pcw2 of equation 2, an interpolation of two empirical distributions.
+    The backoff weight a is simply 1 &#8212; A1 in our linear interpolation model.
+    The Seymore/Rosenfeld pruning technique can be used to prune backoff probability models regardless of whether the back

@@ -1,0 +1,9 @@
+Treebank.
+    Evaluation was in terms of Parseval (Black et al., 1991), using a balanced F-score over labelled constituents from section 0 of the Treebank.
+    I The Fscore values are reported for each iteration of cotraining on the development set (section 0 of the Treebank).
+    Since we need to parse all sentences in section 0 at each iteration, in the experiments reported in this paper we only evaluated one of the parsers, the Collins-CFG parser, at each iteration.
+    All results we mention (unless stated otherwise) are F-scores for the Collins-CFG parser.
+    Self-training experiments were conducted in which each parser was retrained on its own output.
+    Self-training provides a useful comparison with co-training because any difference in the results indicates how much the parsers are benefiting from being trained on the output of another parser.
+    This experiment also gives us some insight into the differences between the two parsing models.
+    Self-training was used by Charniak (1997), where a mo

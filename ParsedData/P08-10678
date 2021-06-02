@@ -1,0 +1,8 @@
+e the gold parse may be pruned away due to the limited scope of cand(si).
+    So we define an oracle parse yz to be the candidate that has the highest Parseval F-score with respect to the gold tree y&#8727;i :1 where function F returns the F-score.
+    Now we train the reranker to pick the oracle parses as often as possible, and in case an error is made (line 6), perform an update on the weight vector (line 7), by adding the difference between two feature representations.
+    1If one uses the gold y&#8727;i for oracle yz , the perceptron will continue to make updates towards something unreachable even when the decoder has picked the best possible candidate.
+    Pseudocode 1 Perceptron for Generic Reranking In n-best reranking, since all parses are explicitly enumerated, it is trivial to compute the oracle tree.2 However, it remains widely open how to identify the forest oracle.
+    We will present a dynamic programming algorithm for this problem in Sec.
+    4.1.
+    We also use a refinement called &#8220;aver

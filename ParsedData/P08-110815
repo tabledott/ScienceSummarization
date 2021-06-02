@@ -1,0 +1,6 @@
+configuration c, including the state of the stack Qc, the input buffer ,(ic, and the partially built dependency graph Gc.
+    In particular, many features involve properties of the two target tokens, the token on top of the stack Qc (Q0c) and the first token in the input buffer Qc (Q0c), which are the two tokens that may become connected by a dependency arc through the transition out of c. The full set of features used by the base model MaltParser is described in Nivre et al. (2006).
+    For the guided transition-based model, which we call MaltMST, training instances are extended to triples (c, t, GMST), where GMST is the dependency xx graph predicted by the graph-based MSTParser for the sentence x to which the configuration c belongs.
+    We define m additional guide features, based on properties of GMST x, and extend the feature vector accordingly to f(c, t, GMST x ) E Rk+,.
+    The specific features used by MaltMST are given in table 1.
+    Unlike MSTParser, features are not explicitly defined to conjoin g

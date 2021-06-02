@@ -1,0 +1,9 @@
+.e., the Dirichlet priors exert no influence) the BHMM still performs much better than the MLHMM.
+    This result underscores the importance of integrating over model parameters: the BHMM identifies a sequence of tags that have high probability over a range of parameter values, rather than choosing tags based on the single best set of parameters.
+    The improved results of the BHMM demonstrate that selecting a sequence that is robust to variations in the parameters leads to better performance.
+  
+  
+    In our initial experiments, we experimented with different fixed values of the hyperparameters and reported results based on their optimal values.
+    However, choosing hyperparameters in this way is timeconsuming at best and impossible at worst, if there is no gold standard available.
+    Luckily, the Bayesian approach allows us to automatically select values for the hyperparameters by treating them as additional variables in the model.
+    We augment the model with priors over the hyperparameters (here, we 

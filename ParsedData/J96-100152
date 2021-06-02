@@ -1,0 +1,9 @@
+ collocations that are translated.
+    Such an approach would use lower values of the thresholds, especially of Tf, for smaller corpora or less frequent collocations.
+    In that case, a separate estimation phase is needed to automatically determine the values of the thresholds.
+    The alternative we currently support is to allow the user to replace the default thresholds during the execution of Champollion with values that are more appropriate for the corpus at hand.
+    After all words have been collected in S, the initial set of possible translations P is set equal to S, and Champollion proceeds with the next stage.
+    Stage 2&#8212;Step 2: Scoring of possible translations.
+    In this step, Champollion examines all members of the set P of possible translations.
+    For each member x of P, Champollion computes the Dice coefficient between the source language collocation W and x.
+    If the Dice coefficient is below the threshold Td, X is discarded from further consideration; otherwise, x is saved in a se

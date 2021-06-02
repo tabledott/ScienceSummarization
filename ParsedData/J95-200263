@@ -1,0 +1,7 @@
+by the Inside/Outside algorithm, which is more naturally formulated as a bottom-up algorithm.
+    Both Nakagawa (1987) and Easeler (1988) use a nonprobabilistic Earley parser augmented with &amp;quot;word match&amp;quot; scoring.
+    Though not truly probabilistic, these algorithms are similar to the Viterbi version described here, in that they find a parse that optimizes the accumulated matching scores (without regard to rule probabilities).
+    Prediction and completion loops do not come into play since no precise inner or forward probabilities are computed.
+    Magerman and Marcus (1991) are interested primarily in scoring functions to guide a parser efficiently to the most promising parses.
+    Earley-style top-down prediction is used only to suggest worthwhile parses, not to compute precise probabilities, which they argue would be an inappropriate metric for natural language parsing.
+    Casacuberta and Vidal (1988) exhibit an Earley parser that processes weighted (not necessarily probabilistic) CFGs and

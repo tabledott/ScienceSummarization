@@ -1,0 +1,8 @@
+ into all possible substrings of up to size two: We build a feature vector by coupling substrings from the two sets: We use the observation that transliteration tends to preserve phonetic sequence to limit the number of couplings.
+    For example, we can disallow the coupling of substrings whose starting positions are too far apart: thus, we might not consider a pairing in the above example.
+    In our experiments, we paired substrings if their positions in their respective words differed by -1, 0, or 1.
+    We use the perceptron (Rosenblatt, 1958) algorithm to train the model.
+    The model activation provides the score we use to select best transliterations on line 6.
+    Our version of perceptron takes variable number of features in its examples; each example is a subset of all features seen so far that are active in the input.
+    As the iterative algorithm observes more data, it discovers and makes use of more features.
+    This model is called the infinite attribute model (Blum, 1992) and it follows the

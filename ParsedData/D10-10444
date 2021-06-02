@@ -1,0 +1,11 @@
+imple and effective alternative to setting weights discriminatively to maximize a metric such as BLEU.
+    A similar maximumlikelihood approach was used by Foster and Kuhn (2007), but for language models only.
+    For comparison to information-retrieval inspired baselines, eg (L&#168;u et al., 2007), we select sentences from OUT using language model perplexities from IN.
+    This is a straightforward technique that is arguably better suited to the adaptation task than the standard method of treating representative IN sentences as queries, then pooling the match results.
+    The paper is structured as follows.
+    Section 2 describes our baseline techniques for SMT adaptation, and section 3 describes the instance-weighting approach.
+    Experiments are presented in section 4.
+    Section 5 covers relevant previous work on SMT adaptation, and section 6 concludes.
+  
+  
+    Standard SMT systems have a hierarchical parameter structure: top-level log-linear weights are used to combine a small set of complex featur

@@ -1,0 +1,10 @@
+rom merging when they share only a few high scoring edges.
+    Clustering stops when the merged cluster scores drop below a threshold optimized to extraction performance on the training data.
+    We also begin with two assumptions about syntactic functions and semantic roles.
+    The first assumes that the subject and object of a verb carry different semantic roles.
+    For instance, the subject of sell fills a different role (Seller) than the object (Good).
+    The second assumption is that each semantic role has a high-level entity type.
+    For instance, the subject of sell is a Person or Organization, and the object is a Physical Object.
+    We implement the first assumption as a constraint in the clustering algorithm, preventing two clusters from merging if their union contains the same verb&#8217;s subject and object.
+    We implement the second assumption by automatically labeling each syntactic function with a role type based on its observed arguments.
+    The role types are broad general classes: Per

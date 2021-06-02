@@ -1,0 +1,9 @@
+ly: where the composition sets FC and BC only accept input categories with the appropriate outermost slash direction, for example FC(X/Y:h).
+    We can now define the lexical splits that will be used during learning.
+    For lexical entry w0:n ` A, with word sequence w0:n = hw0, ... , wni and CCG category A, define the set SL of splits to be: where we enumerate all ways of splitting the words sequence w0:n and aligning the subsequences with categories in SC(A), as defined in the last section.
+  
+  
+    The previous section described how a splitting procedure can be used to break apart overly specific lexical items into smaller ones that may generalize better to unseen data.
+    The space of possible lexical items supported by this splitting procedure is too large to explicitly enumerate.
+    Instead, we learn the parameters of a PCCG, which is used both to guide the splitting process, and also to select the best parse, given a learned lexicon.
+    Figure 2 presents the unification-based learning algorithm, UB

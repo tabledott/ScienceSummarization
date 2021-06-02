@@ -1,0 +1,14 @@
+iced that too many unary rules (e.g.
+    &#8220;NPB PRN&#8221;) were used.
+    This is because the reordering probability is always 1.
+    To remedy this, we added CFG probabilities (PCFG) in the decoder search, i.e., it now looks for a tree which maximizes PtrigramPcfgPTM.
+    The CFG probability was obtained by counting the rule frequency in the parsed English side of the training corpus.
+    The middle of Figure 4 is the output for the same sentence.
+    The syntactic structure now looks better, but we found three problems.
+    First, the BLEU score is worse (0.078).
+    Second, the decoded trees seem to prefer noun phrases.
+    In many trees, an entire sentence was decoded as a large noun phrase.
+    Third, it uses more frequent node reordering than it should.
+    The BLEU score may go down because we weighed the LM (trigram and PCFG) more than the TM.
+    For the problem of too many noun phrases, we thought it was a problem with the corpus.
+    Our training corpus contained many dictionary entries, and t

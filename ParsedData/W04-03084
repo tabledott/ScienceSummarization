@@ -1,0 +1,8 @@
+part of speech and each arc labeled with a grammatical function.
+    In the following, we will restrict our attention to unlabeled dependency graphs, i.e. graphs without labeled arcs, but the results will apply to labeled dependency graphs as well.
+    We will also restrict ourselves to projective dependency graphs (Mel&#8217;cuk, 1988).
+    Formally, we define these structures in the following way: We write wz &lt; wj to express that wz precedes wj in the string W (i.e., i &lt; j); we write wz &#8212;* wj to say that there is an arc from wz to wj; we use &#8212;** to denote the reflexive and transitive closure of the arc relation; and we use H and H* for the corresponding undirected relations, i.e. wz H wj iff wz &#8212;* wj or wj &#8212;* wz.
+    2.
+    A dependency graph D = (W, A) is wellformed iff the five conditions given in Figure 2 are satisfied.
+    The task of mapping a string W = w1&#183; &#183; &#183;wn to a dependency graph satisfying these conditions is what we call dependency parsing.
+    For a

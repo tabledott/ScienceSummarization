@@ -1,0 +1,9 @@
+dge posteriors quite easily: z = {zij = 1 : p1(zij = 1  |x)p2(zij = 1  |x) &gt; &#948;}.
+    We noticed a 5.8% relative reduction in AER (for our best model) by using posterior decoding with a validation-set optimized threshold &#948; instead of using hard intersection of Viterbi alignments.
+  
+  
+    We tested our approach on the English-French Hansards data from the NAACL 2003 Shared Task, which includes a training set of 1.1 million sentences, a validation set of 37 sentences, and a test set of 447 sentences.
+    The validation and test sentences have been hand-aligned (see Och and Ney (2003)) and are marked with both sure and possible alignments.
+    Using these alignments, alignment error rate (AER) is calculated as: C1 _ |A n|A ||+ IIsIn P |J x where A is a set of proposed edges, S is the sure gold edges, and P is the possible gold edges.
+    As a preprocessing step, we lowercased all words.
+    Then we used the validation set and the first 100 sentences of the test set as our development set to tune ou

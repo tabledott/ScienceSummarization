@@ -1,0 +1,8 @@
+: POS to the right of child. c-pos-1: POS to the left of child. b-pos: POS of a word in between parent and child nodes. it would typically rule out situations when a noun attached to another noun with a verb in between, which is a very uncommon phenomenon.
+    The second type of feature provides the local context of the attachment, that is, the words before and after the parent-child pair.
+    This feature took the form of a POS 4-gram: The POS of the parent, child, word before/after parent and word before/after child.
+    The system also used back-off features to various trigrams where one of the local context POS tags was removed.
+    Adding these two features resulted in a large improvement in performance and brought the system to state-of-the-art accuracy.
+    Besides performance (see Section 3), the approach to dependency parsing we described has several other advantages.
+    The system is very general and contains no language specific enhancements.
+    In fact, the results we report for English and Czec

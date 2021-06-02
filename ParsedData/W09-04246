@@ -1,0 +1,8 @@
+equired can be a major hindrance to researchers, especially those investigating the effects of tokenization or word segmentation.
+    To alleviate these issues, we extract only a subset of all available rules.
+    Specifically, we follow Callison-Burch et al. (2005; Lopez (2007) and use a source language suffix array to extract only those rules which will actually be used in translating a particular set of test sentences.
+    This results in a vastly smaller rule set than techniques which extract all rules from the training set.
+    The current code requires suffix array rule extraction to be run as a pre-processing step to extract the rules needed to translate a particular test set.
+    However, we are currently extending the decoder to directly access the suffix array.
+    This will allow the decoder at runtime to efficiently extract exactly those rules needed to translate a particular sentence, without the need for a rule extraction pre-processing step.
+    Grammar formalism: Our decoder assumes a probabil

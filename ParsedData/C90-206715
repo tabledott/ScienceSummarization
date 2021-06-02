@@ -1,0 +1,9 @@
+twork finds the correct sense in cases where Lesk's strategy succeeds.
+			For example, if the input consists of pen and sheep, pen 2.1 and sheep 1 are correct ly act ivated.
+			More interestingly, the network selects " the appropriate senses in cases where Lesk's strategy fails.
+			Figures 3 and 4 show the state of the network after being run with pen and goat, and pen and page, respectively.
+			The figures represent only the most activated part of each network after 100 cycles.
+			Over the course of the run, the network reinforces only a small cluster of the most semantically relevant words and senses, and filters out tile rest of the thousands of nodes.
+			The correct sense for each word in each context (pen 2.1 with goat 1, and pen 1.1 withpage 1.1) is the only one activated at the end of the run.
+			This model solves the context-setting problem mentioned above without any use of microfeatures.
+			Sense 1.1 of pen would also be activated if it appeared in the context of a large number of other words--e.g.,

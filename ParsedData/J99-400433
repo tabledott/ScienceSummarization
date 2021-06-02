@@ -1,0 +1,7 @@
+e sentence, given a probabilistic grammar.
+    Elements of this semiring are a pair, a real number v and a derivation forest E, i.e., the set of derivations with score v. We define max, the additive operator, as In typical practical Viterbi parsers, when two derivations have the same value, one of the derivations is arbitrarily chosen.
+    In practice, this is usually a fine solution, and one that could be used in a real-world implementation of the ideas in this paper, but from a theoretical viewpoint, the arbitrary choice destroys the associative property of the additive operator, max.
+    To preserve associativity, we keep derivation forests of all elements that tie for best.
+    The definition for max is only defined for two elements.
+    Since the operator is associative, it is clear how to define max for any finite number of elements, but we also v need infinite summations to be definited.
+    We use the supremum, sup: the supremum of a set is the smallest value at least as large as all elements of the s

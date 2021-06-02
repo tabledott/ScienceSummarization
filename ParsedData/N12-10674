@@ -1,0 +1,9 @@
+ring into another.
+    The Levenshtein distance between a source sentence si = s1i,...,ski and a hypothesis hi = h1i, ... , hl i can be efficiently computed using a two dimensional matrix that is filled using a classic dynamic programming algorithm.
+    We assume that both si and hi have been tokenized.
+    The matrix for the example from Section 1 is shown in Figure 1.
+    By performing a simple breadth-first search, similar to the Viterbi algorithm, we can extract the lattice of all shortest paths that lead from the top-left corner to the bottom-right corner of the Levenshtein matrix.
+    Each vertex in the lattice corresponds to a cell in the Levenshtein matrix, and each edge in the lattice corresponds to an atomic edit operation: inserting a token, deleting a token, substituting a token, or leaving a token unchanged.
+    Each path through the lattice corresponds to a shortest sequence of edits that transform si into hi.
+    We assign a unit cost to each edge in the lattice.
+    We have seen that annotator

@@ -1,0 +1,7 @@
+sentence with head-word and argument (or complement) information using heuristics that are common to most contemporary statistical parsers and easily available for both English and Chinese.
+    Note that we do not use the word alignment information for the decomposition into TAG elementary trees.
+    Once we have a TAG elementary tree per word, we can create several models that score word alignments by exploiting the alignments between TAG elementary trees between source and target.
+    Let tfi and tei be the TAG elementary trees associated with the aligned words fi and ei respectively.
+    We experimented with two models over alignments: unigram model over alignments: ni P(fi, tfi, ei, tei) and conditional model: Hi P(ei, tei  |fi, tfi) &#215; P(fi+1, tfi+1  |fi,tfi) We trained both of these models using the SRI Language Modeling Toolkit using 60K aligned parse trees.
+    We extracted 1300 TAG elementary trees each for Chinese and for English.
+    The unigram model gets a %BLEU score of 31.7 and the conditio

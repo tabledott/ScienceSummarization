@@ -1,0 +1,12 @@
+ as its backbone.
+    Using this algorithm it is trivial to calculate both Zx and each edge expectation.
+    Crucially, the nested property of projective structures allows edge expectations to be computed in O(n3) from the inside-outside values.
+    It is straight-forward to extend the algorithms of Eisner (1996) and Paskin (2001) to the labeled case adding only a factor of O(|L|n2).
+    Table 1 gives an overview of the computational complexity for the three problems considered here for both the projective and non-projective case.
+    We see that the non-projective case compares favorably for all three problems.
+  
+  
+    To motivate the algorithms from Section 3, we present some important situations where each calculation is required.
+    Many learning paradigms can be defined as inference-based learning.
+    These include the perceptron (Collins, 2002) and its large-margin variants (Crammer and Singer, 2003; McDonald et al., 2005a).
+    In these settings, a models parameters are iteratively updated based on

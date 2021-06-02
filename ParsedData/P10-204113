@@ -1,0 +1,5 @@
+ity (even along the same curve) is computed with respect to a different vocabulary, resulting in a different out-of-vocabulary (OOV) rate.
+    OOV tokens in the test data are excluded from the perplexity computation, so the perplexity measurements are not strictly comparable.
+    Out of the 55566 test set tokens, the number of OOV tokens ranges from 418 (0.75%), for the smallest training set based on in-domain crossentropy scoring, to 20 (0.03%), for training on the full Gigaword corpus.
+    If we consider only the training sets that appear to produce the lowest perplexity for each selection method, however, the spread of OOV counts is much narrower, ranging 53 (0.10%) for best training set based on crossentropy difference scoring, to 20 (0.03%), for random selection.
+    To control for the difference in vocabulary, we estimated a modified 4-gram language model for each selection method (other than random selection) using the training set that appeared to produce the lowest perplexity for that selection metho

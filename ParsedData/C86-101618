@@ -1,0 +1,9 @@
+  edges may be added later.
+  This information is passed along on whenever  an exist ing edge is extended to a new one.
+  At the point at which C" is added to the chart,  no checks are necessary because the new edge already has a pointer to every incoming edge at the s tar t ing vertex that  can now perhaps be extended.
+  Let us now consider a situation, in which the chart contains two adjacent edges A(B):C and C".
+  In the course of trying to extend the the active edge with C" to build A", the parser has to unify it with the C" constituent of the active edge.
+  The nature of chart parsing is :inch Chat, whether or not this unificat, ion succeeds, it must not alter the contents of the two operand edges.
+  Both AIB):C and C" must remain on l, he chart because they may be needed later on for some other unification.
+  Because unificaLion is a destructive operation, some of the earl ier implementations of unification-based chart parsing, e.g.
+  Z-PATR, never apply it directly, instead, the feature sets are first 

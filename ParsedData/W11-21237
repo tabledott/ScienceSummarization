@@ -1,0 +1,9 @@
+nds at e +&#8212; |A|&#8722;1.
+    Given a key k, it estimates the position If the estimate is exact (A[pivot] = k), then the algorithm terminates succesfully.
+    If e &lt; b then the key is not found.
+    Otherwise, the scope of the search problem shrinks recursively: if A[pivot] &lt; k then this becomes the new lower bound: l +&#8212; pivot; if A[pivot] &gt; k then u +&#8212; pivot.
+    Interpolation search is therefore a form of binary search with better estimates informed by the uniform key distribution.
+    If the key distribution&#8217;s range is also known (i.e. vocabulary identifiers range from 0 to the number of words), then interpolation search can use this information instead of reading A[0] and A[|A |&#8722; 1] to estimate pivots; this optimization alone led to a 24% speed improvement.
+    The improvement is due to the cost of bit-level reads and avoiding reads that may fall in different virtual memory pages.
+    Vocabulary lookup is a sorted array of 64-bit word hashes.
+    The index in this arr

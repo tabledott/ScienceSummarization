@@ -1,0 +1,6 @@
+r-based language model Charniak (2001), which is used to rescore a set of the most likely analysis obtained using the bigram model.
+    Because the language model is responsible for generating the well-formed sentence X, it is reasonable to expect that a language model that can model more global properties of sentences will lead to better performance, and the results presented here show that this is the case.
+    The channel model is a stochastic TAG-based transducer; it is responsible for generating the repairs in the transcript Y , and it uses the ability of TAGs to straightforwardly model crossed dependencies.
+    Given an observed sentence Y we wish to find the most likely source sentence X, where: This is the same general setup that is used in statistical speech recognition and machine translation, and in these applications syntaxbased language models P(Y ) yield state-of-theart performance, so we use one such model here.
+    The channel model P(YIX) generates sentences Y given a source X.
+    A repair c

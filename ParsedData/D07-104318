@@ -1,0 +1,9 @@
+	portion.
+			Dom?s Q0 measure (Dom, 2001) uses conditional entropy, H(C|K) to calculate the goodness of a clustering solution.
+			That is, given the hypothesized partition, what is the number of bits necessary to represent the true clustering?
+			However, this term ? like the Purity andEntropy measures ? only evaluates the homogene ity of a solution.
+			To measure the completeness of the hypothesized clustering, Dom includes a model cost term calculated using a coding theory argument.
+			The overall clustering quality measure presented is the sum of the costs of representing the data (H(C|K)) and the model.
+			The motivation for this approachis an appeal to parsimony: Given identical condi tional entropies, H(C|K), the clustering solution with the fewest clusters should be preferred.
+			Dom also presents a normalized version of this term, Q2, which has a range of (0, 1] with greater scores being representing more preferred clusterings.
+			Q0(C,K) = H(C|K)+ 1 n |K| ? k=1 log (h(k) + |C| ? 1 |C| ? 1 )where C is

@@ -1,0 +1,8 @@
+the number of words falsely retained or dropped in the incorrect compression relative to the correct one.
+    For instance, if the correct compression of the sentence in Figure 2 is Mary saw Ralph, then the compression Mary saw after lunch would have a loss of 3 since it incorrectly left out one word and included two others.
+    Of course, for a sentence there are exponentially many possible compressions, which means that this optimization will have exponentially many constraints.
+    We follow the method of McDonald et al. (2005b) and create constraints only on the k compressions that currently have the highest score, bestk(x; w).
+    This can easily be calculated by extending the decoding algorithm with standard Viterbi k-best techniques.
+    On the development data, we found that k = 10 provided the best performance, though varying k did not have a major impact overall.
+    Furthermore we found that after only 3-5 training epochs performance on the development data was maximized.
+    The final weight vecto

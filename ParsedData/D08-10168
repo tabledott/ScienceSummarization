@@ -1,0 +1,9 @@
+n our experiments, it is always a log-linear function returning positive values: where &#952; is a learned, finite collection of weights and f is a corresponding collection of feature functions, some of which are used by Fm.
+    (Note that fh is permitted to consult the observed input W. It also sees which factor Fm it is scoring, to support reuse of a single feature function fh and its weight &#952;h by unboundedly many factors in a model.)
+    LINK.
+    A family of unary soft factors that judge the links in a parse A individually.
+    LINKij fires iff Lij = true, and then its value depends on (i, j), W, and &#952;.
+    Our experiments use the same features as McDonald et al. (2005).
+    A first-order (or &#8220;edge-factored&#8221;) parsing model (McDonald et al., 2005) contains only LINK factors, along with a global TREE or PTREE factor.
+    Though there are O(n2) link factors (one per Lij), only n of them fire on any particular parse, since the global factor ensures that exactly n are true.
+    We&#8217;l

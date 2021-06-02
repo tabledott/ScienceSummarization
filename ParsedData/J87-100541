@@ -1,0 +1,11 @@
+ a subexpression of a and p(a) = 0, then p(i3) = 0.
+    We now prove the following theorem, and its corollary which gives the termination of the algorithm.
+    We assume that calls to the auxiliary functions wff, term, wff?, term?, Proof: We first prove the base case, for p(a) = 0.
+    By Lemma 1, a must contain no complex terms.
+    Three of the conditions are easily proved.
+    Condition 2: Since, by Lemma 1, there are no complex terms in a, this condition holds vacuously.
+    Condition 3: Again, the absence of complex terms in a causes the call to apply-terms to return with result a, and p(a) = 0, so the condition holds.
+    Condition 4: Similarly, and p(a) &lt; p(a) trivially.
+    Conditions 1,5, and 6: These conditions follow directly from Lemma 4 given below.
+    Lemma 4 For all expressions a such that p(a) = 0, pull(a,x) and pull-opaque-args(a) terminate with result a.
+    Proof sketch: The proof is by a simple induction on the length of the expression, and uses the base case for conditions 3 and 4 pro

@@ -1,0 +1,8 @@
+gorithm is shown at the recall level obtained by the judges, on average.
+    This is computed as follows for each version of the algorithm: The depth scores are examined in order of their strength.
+    For each depth score, if it corresponds to a true boundary, the count of correct boundaries is incremented, otherwise the count of incorrect boundaries is incremented.
+    Precision and recall are computed after each correct boundary encountered.
+    When the recall equals that of the judges' average recall, the corresponding precision of the algorithm is returned.
+    If the recall level exceeds that of the judges', then the value of the precision is estimated as a linear interpolation between the two precision scores whose recall scores most closely surround that of the judges' average recall.
+    (This assumption of a linear interpolation is justified because in most cases, although not all, precision changes monotonically.)
+    In some cases the algorithm does not produce a recall level as high as that foun

@@ -1,0 +1,7 @@
+nce.
+    A model in which we omit P(s  |ST) turns out to be slightly less optimal than this one.
+    As in most state-of-the-art PBSMT systems, we use GIZA++ to obtain word-level alignments in both language directions.
+    The bidirectional word alignment is used to obtain lexical phrase translation pairs using heuristics presented in (Och &amp; Ney, 2003) and (Koehn et al., 2003).
+    Given the collected phrase pairs, we estimate the phrase translation probability distribution by relative frequency as follows: For each extracted lexical phrase pair, we extract the corresponding supertagged phrase pairs from the supertagged target sequence in the training corpus (cf. section 5).
+    For each lexical phrase pair, there is at least one corresponding supertagged phrase pair.
+    The probability of the supertagged phrase pair is estimated by relative frequency as follows: The supertags usually encode dependency information that could be used to construct an &#8216;almost parse&#8217; with the help of the CCG/LTAG

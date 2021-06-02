@@ -1,0 +1,11 @@
+
+    In order to cover as many words as possible, we use the smallest clique, a single symmetric arc.
+    This creates redundant categories.
+    We enhance the quality of the categories by merging them and by windowing on the corpus.
+    We use two simple merge heuristics.
+    First, if two categories are identical we treat them as one.
+    Second, given two categories Q, R, we merge them iff there&#8217;s more than a 50% overlap between them: (|Q n R |&gt; |Q|/2) n (|Q n R |&gt; |R|/2).
+    = This could be added to the clique-set stage, but the phrasing above is simpler to explain and implement.
+    In order to increase category quality and remove categories that are too context-specific, we use a simple corpus windowing technique.
+    Instead of running the algorithm of this section on the whole corpus, we divide the corpus into windows of equal size (see Section 5 for size determination) and perform the category discovery algorithm of this section on each window independently.
+    Merging is also performed

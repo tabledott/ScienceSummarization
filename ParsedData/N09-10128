@@ -1,0 +1,7 @@
+ t: We can see that &#945;&#175;r acts as a pseudocount of the number of times r&#175; is observed prior to t. To make use of this prior, we use the Variational Bayes (VB) technique for PCFGs with Dirichlet Priors presented by Kurihara and Sato (2004).
+    VB estimates a distribution over &#175;&#952;.
+    In contrast, Expectation Maximization estimates merely a point estimate of &#175;&#952;.
+    In VB, one estimates Q(t, &#175;&#952;), called the variational distribution, which approximates the posterior distribution P(t, &#175;&#952;|s, &#945;) by minimizing the KL divergence of P from Q.
+    Minimizing the KL divergence, it turns out, is equivalent to maximizing a lower bound F of the log marginal likelihood log P(s|&#945;).
+    The negative of the lower bound, &#8722;F, is sometimes called the free energy.
+    As is typical in variational approaches, Kurihara and Sato (2004) make certain independence assumptions about the hidden variables in the variational posterior, which will make estimating it simple

@@ -1,0 +1,6 @@
+ormation, first for non-POS expansions, then for leftmost POS expansions, then for all expansions.
+    All of the conditional probabilities are linearly interpolated.
+    For example, the probability of a rule conditioned on six events is the linear interpolation of two probabilities: (i) the empirically observed relative frequency of the rule when the six events co-occur; and (ii) the probability of the rule conditioned on the first five events (which is in turn interpolated).
+    The interpolation coefficients are a function of the frequency of the set of conditioning events, and are estimated by iteratively adjusting the coefficients so as to maximize the likelihood of a held-out corpus.
+    This was an outline of the conditional probability model that we used for the PCFG.
+    The model allows us to assign probabilities to derivations, which can be used by the parsing algorithm to decide heuristically which candidates are promising and should be expanded, and which are less promising and should be pruned.

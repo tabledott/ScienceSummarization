@@ -1,0 +1,6 @@
+ all, produces the largest improvement, 2.6 BLEU points over the MERT baseline on the full test set.
+    We also tested some of the differences between our training method and Watanabe et al.&#8217;s (2007); the results are shown in Table 2.
+    Compared with local updating (line 2), our method of selecting the oracle translation and negative examples does better by 0.5 BLEU points on the development data.
+    Using lossaugmented inference to add negative examples to local updating (line 3) does not appear to help.
+    Nevertheless, the negative examples are important: for if Setting Dev full 53.6 local updating, no LAI local updating, LAI p = 0.5 oracle, no LAI no sharing of updates 53.1&#8722;&#8722; we use our method for selecting the oracle translation without the additional negative examples (line 4), the algorithm fails, generating very long translations and unable to find a weight setting to shorten them.
+    It appears, then, that the additional negative examples enable the algorithm to reliably learn

@@ -1,0 +1,7 @@
+t, the space of symmetric at-most-one-to-one matchings is #P-hard to sum over exactly (Valiant, 1979).
+    Second, even without matchings to worry about, standard methods for maximizing the above formulation would require summation over pairs of trees, and we want to assume a fairly generic interface to independent monolingual parsers (though deeper joint modeling and/or training is of course a potential extension).
+    As we have chosen to operate in a reranking mode over monolingual k-best lists, we have another issue: our k-best outputs on the data which trains our model may not include the gold tree pair.
+    We therefore make several approximations and modifications, which we discuss in turn.
+    Because summing over alignments a is intractable, we cannot evaluate (2) or its derivatives.
+    However, if we restrict the space of possible alignments, then we can make this optimization more feasible.
+    One way to do this is to stipulate in advance that for each tree pair, there is a canonical alignment a0

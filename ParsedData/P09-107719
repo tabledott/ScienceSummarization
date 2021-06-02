@@ -1,0 +1,10 @@
+Percent-Arg2Money would have a count of 2.
+    This feature is probably genre-dependent.
+    Numbers and percentages often appear in financial texts but would be less frequent in other genres.
+    WSJ-LM: This feature represents the extent to which the words in the text spans are typical of each relation.
+    For each sense, we created unigram and bigram language models over the implicit examples in the training set.
+    We compute each example&#8217;s probability according to each of these language models.
+    The features are the ranks of the spans&#8217; likelihoods according to the various language models.
+    For example, if of the unigram models, the most likely relation to generate this example was Contingency, then the example would include the feature ContingencyUnigram1.
+    If the third most likely relation according to the bigram models was Expansion, then it would include the feature ExpansionBigram3.
+    Expl-LM: This feature ranks the text spans according to language models derived from the exp

@@ -1,0 +1,10 @@
+d by some fsm P. Thus Rel(P) exists as a regular relation.
+    Moreover, it is easy to see that Rel(P) C Ri n R2.
+    This is because every string-pair belonging to the path-relation is accepted by a transducer with a path-string that belongs to the path-languages of both T1 and T2.
+    Thus that pair also belongs to both R1 and R2.
+    The opposite containment does not hold of arbitrary regular relations.
+    Suppose a pair (x, y) belongs to both R1 and R2 but that none of its accepting paths in T1 has the same sequence of transition labels as an accepting path in T2.
+    Then there is no path in Paths(TI) n Paths(T2) corresponding to this pair and it is therefore not contained in Rel(P).
+    This situation can arise when the individual transducers have transitions with &amp;containing labels.
+    One transducer may then accept a particular string pair through a sequence of transitions that does not literally match the transition sequence taken by the other on that same pair of strings.
+    For example, the 

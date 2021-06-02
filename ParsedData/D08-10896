@@ -1,0 +1,8 @@
+Given an input sentence f, which is to be translated into a target sentence e, the decodersearches for the most probable translation e?
+			accord ing to the following decision rule: e?
+			= argmax e { p(e|f) } (1) = argmax e { J ? j=1 ? jh j(f,e) } (2) h j(f,e) are J arbitrary feature functions over sentence pairs.
+			These features include lexicalized re-ordering models, which are parameterized as follows: given an input sentence f, a sequence of target-language phrases e = (e1, . . .
+			,en) currently hypothesized by the decoder, and a phrase alignment a = (a1, . . .
+			,an) that defines a source f ai for eachtranslated phrase ei, these models estimate the prob ability of a sequence of orientations o = (o1, . . .
+			,on) p(o|e, f) = n ? i=1 p(oi|ei, f ai ,ai?1,ai), (3)where each oi takes values over the set of possi ble orientations O = {M,S,D}.1 The probability is conditioned on both ai?1 and ai to make sure that the label oi is consistent with the phrase alignment.
+			Specifically, probabilities in these 

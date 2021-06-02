@@ -1,0 +1,8 @@
+ers, nouns, and auxiliary verbs&#8212;is the correct supertag most of the time.
+    Also, backing off to the part of speech helps in supertagging unknown words, which most often are nouns.
+    The bulk of the errors committed by the unigram model is incorrectly tagged verbs (subcategorization and transformation), prepositions (noun attached vs. verb attached) and nouns (head vs. modifier noun).
+    We first explored the use of trigram model of supertag disambiguation in Joshi and Srinivas (1994).
+    The trigram model was trained on (part-of-speech, supertag) pairs collected from the LTAG derivations of 5,000 WSJ sentences and tested on 100 WSJ sentences.
+    It produced a correct supertag for 68% of the words in the test set.
+    A major drawback of this early work was that it used no lexical information in the supertagging process as the training material consisted of (part-of-speech, supertag) pairs.
+    Since that early work, we have improved the performance of the model by incorporating lexical informati

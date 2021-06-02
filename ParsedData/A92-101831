@@ -1,0 +1,9 @@
+ work in compilation of programming languages.
+    The accepted approach is to specify token classes with regular expressions.
+    These may be compiled into a single deterministic finite state automaton which partitions character streams into labeled tokens [Aho et al., 1986, Lesk, 19751.
+    In the context of tagging, we require at least two token classes: sentence boundary and word.
+    Other classes may include numbers, paragraph boundaries and various sorts of punctuation (e.g., braces of various types, commas).
+    However, for simplicity, we will henceforth assume only words and sentence boundaries are extracted.
+    Just as with programming languages, with text it is not always possible to unambiguously specify the required token classes with regular expressions.
+    However the addition of a simple lookahead mechanism which allows specification of right context ameliorates this [Aho et al., 1986, Lesk, 1975].
+    For example, a sentence boundary in English text might be identified by a period, follow

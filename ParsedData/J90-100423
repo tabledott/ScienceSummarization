@@ -1,0 +1,7 @@
+ node, in the process instantiating the generated string. gen(Cat, String) :- generate(node(Cat, String-[ ])).
+    To generate from a node, we nondeterministically choose a nonchain rule whose left-hand-side will serve as the pivot.
+    For each right-hand-side element, we recursively generate, and then connect the pivot to the root.
+    The connection of a pivot to the root, as noted before, requires choice of a chain rule whose semantic head matches the pivot, and the recursive generation of the remainder of its right-hand side.
+    We assume a predicate applicable_ chain_ rule(SemHead, LHS, Root, RHS) that holds if there is a chain rule admitting a node LHS as the left-hand side, SemHead as its semantic head, and RHS as the remaining right-hand-side nodes, such that the lefthand-side node and the root node Root can themselves be connected.
+    The base case occurs when the root and the pivot are the same.
+    To implement the generator correctly, identity checks like this one must use a sound unification a

@@ -1,0 +1,9 @@
+ar, it is polynomial in the size of the input string.
+    Assuming |T |= O(n), the algorithm is O(n4).
+    The model&#8217;s efficiency, however, comes at a cost.
+    Not only are many independence assumptions made, but many alignments between source and target sentences simply cannot be represented.
+    As a minimal example, take the tree: Of the six possible re-orderings of the three terminals, the two which would involve crossing the bracketing of the original tree (XZY and YZX) are not allowed.
+    While this constraint gives us a way of using syntactic information in translation, it may in many cases be too rigid.
+    In part to deal with this problem, Yamada and Knight (2001) flatten the trees in a pre-processing step by collapsing nodes with the same lexical head-word.
+    This allows, for example, an English subject-verb-object (SVO) structure, which is analyzed as having a VP node spanning the verb and object, to be re-ordered as VSO in a language such as Arabic.
+    Larger syntactic divergences betw

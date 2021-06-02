@@ -1,0 +1,7 @@
+pological order, and finally at the root node TOP, we can compute the best global F-score by maximizing over different numbers of test brackets (line 7).
+    The oracle tree y+ can be recursively restored by keeping backpointers for each ora[v](t), which we omit in the pseudocode.
+    The time complexity of this algorithm for a sentence of l words is O(JEJ &#183; l2(a&#8722;1)) where a is the arity of the forest.
+    For a CKY forest, this amounts to O(l3 &#183; l2) = O(l5), but for general forests like those in our experiments the complexities are much higher.
+    In practice it takes on average 0.05 seconds for forests pruned by p = 10 (see Section 4.2), but we can pre-compute and store the oracle for each forest before training starts.
+    Our forest pruning algorithm (Jonathan Graehl, p.c.) is very similar to the method based on marginal probability (Charniak and Johnson, 2005), except that ours prunes hyperedges as well as nodes.
+    Basically, we use an Inside-Outside algorithm to compute the Viterbi in

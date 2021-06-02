@@ -1,0 +1,6 @@
+be et al., 2002) was implemented to calculate term frequency (raw frequency of a pattern) and document frequency (the number of documents where a pattern appears) for each pattern candidate.
+    The algorithm finds the subtrees appearing more frequently than a given threshold by constructing the subtrees level by level, while keeping track of their occurrence in the corpus.
+    Thus, it efficiently avoids the construction of duplicate patterns and runs almost linearly in the total size of the maximal tree patterns contained in the corpus.
+    The following ranking function was used to rank each pattern candidate.
+    The score of subtree, , is where is the number of times that subtree appears across the documents in the relevant document set, . is the set of subtrees that appear in .is the number of documents in the collection containing subtree, and is the total number of the dependency tree as a bunsetsu, phrasal unit. documents in the collection.
+    The first term roughly corresponds to the term frequency

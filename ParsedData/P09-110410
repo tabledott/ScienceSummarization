@@ -1,0 +1,7 @@
+ than w &#183; &#966;(x, a) + L(a, a&#8727;) for all a in an alignment family, where L(a, a&#8727;) is the loss between a proposed alignment a and the gold alignment a&#8727;.
+    As in Taskar et al. (2005), we utilize a loss that decomposes across alignments.
+    Specifically, for each alignment cell (i, j) which is not a possible alignment in a*, we incur a loss of 1 when azo =6 a*zo; note that if (i, j) is a possible alignment, our loss is indifferent to its presence in the proposal alignment.
+    A simple loss-augmented learning procedure is the margin infused relaxed algorithm (MIRA) (Crammer et al., 2006).
+    MIRA is an online procedure, where at each time step s.t. w &#183; O(x, a*) &#8805; w &#183; O(x, a) + L(a, a*) where a&#65533; = arg max aEA In our data sets, many a* are not in A1-1 (and thus not in AITG), implying the minimum infamily loss must exceed 0.
+    Since MIRA operates in an online fashion, this can cause severe stability problems.
+    On the Hansards data, the simple averaging techniq

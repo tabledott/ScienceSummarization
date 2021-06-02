@@ -1,0 +1,9 @@
+icates the location of the extracted words.
+    We describe this pattern as being doubly-anchored because it is instantiated with both the name of the semantic class as well as a class member.
+    For example, the pattern &#8220;CARS such as FORD and *&#8221; will extract automobiles, and the pattern &#8220;PRESIDENTS such as FORD and *&#8221; will extract presidents.
+    The doubly-anchored nature of the pattern serves two purposes.
+    First, it increases the likelihood of finding a true list construction for the class.
+    Our system does not use part-of-speech tagging or parsing, so the pattern itself is the only guide for finding an appropriate linguistic context.
+    Second, the doubly-anchored pattern virtually eliminates ambiguity because the class name and class member mutually disambiguate each other.
+    For example, the word FORD could refer to an automobile or a person, but in the pattern &#8220;CARS such as FORD and *&#8221; it will almost certainly refer to an automobile.
+    Similarly, the cla

@@ -1,0 +1,7 @@
+ity comes into the system from multiple features firing at once.
+    I.e. to predict that &amp;quot;York&amp;quot; in the name &amp;quot;New York&amp;quot; is the end of a location, we will have two features firing: one predicts location_end when token_i is &amp;quot;new&amp;quot;.
+    The other predicts location_end when tokeno is &amp;quot;york&amp;quot;.
+    Nevertheless, it is possible that compound features would behave differently from two simultaneously firing &amp;quot;atomic&amp;quot; features.
+    We integrated this into the model in an ad hoc manner for the external system features, where we constructed features which essentially query the external system history and the section history simultaneously to determine whether they fire.
+    I.e. a particular feature might fire if Proteus predicts person_start, the current section is &amp;quot;main body of text&amp;quot;, and the future is &amp;quot;person_start&amp;quot;.
+    This allows MENE to assign a lower a to a Proteus prediction in the preamble 

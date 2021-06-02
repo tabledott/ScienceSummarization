@@ -1,0 +1,8 @@
+gh often there is a distinction between primary and optional secondary relations, e.g. in the Danish Dependency Treebank (Kromann, 2003), the Dutch Alpino Treebank (van der Beek et al., 2002b) and the German TIGER treebank (Brants et al., 2002).
+    For this shared task we decided to ignore any additional relations.
+    However the data format could easily be extended with additional optional columns in the future.
+    Cycles do not occur in the shared task data but are scored as normal if predicted by parsers.
+    The character encoding of all data files is Unicode (specifically UTF-8), which is the only encoding to cover all languages and therefore ideally suited for multilingual parsing.
+    While the training data contained all 10 columns (although sometimes only with dummy values, i.e. underscores), the test data given to participants contained only the first 6.
+    Participants&#8217; parsers then predicted the HEAD and DEPREL columns (any predicted PHEAD and PDEPREL columns were ignored).
+    The predi

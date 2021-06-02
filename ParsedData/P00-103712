@@ -1,0 +1,9 @@
+weights.
+    If we think of the x-axis of the standard weight matrix for computing edit distance as corresponding to w (a word in the dictionary), then the vector at each node in the trie corresponds to a column in the weight matrix associated with computing the distance between s and the string prefix ending at that trie node.
+    We store the 4 parameters as a trie of tries.
+    We have one trie corresponding to all strings that appear on the left hand side of some substitution in our parameter set.
+    At every node in this trie, corresponding to a string , we point to a trie consisting of all strings that appear on the right hand side of a substitution in our parameter set with on the left hand side.
+    We store the substitution probabilities at the terminal nodes of the tries.
+    By storing both and strings in reverse order, we can efficiently compute edit distance over the entire dictionary.
+    We process the dictionary trie from the root downwards, filling in the weight vector at each node.
+    To f

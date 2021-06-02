@@ -1,0 +1,7 @@
+ analysis can be obtained if we allow modifiers to compose with the head.
+    For example, regularly has the category (S\NP)\(S\NP) in sentences such as I visit certain places regularly, because it modifies the verb phrase visit certain places, which has the category S[dcl]\NP.
+    But in the corresponding relative clause places that I visit regularly or with heavy NP shift (I visit regularly certain places in Europe), regularly modifies visit, that is, a constituent with category (S[dcl]\NP)/NP.
+    Without function composition, the category of regularly would have to be ((S\NP)/NP)\((S\NP)/NP), but (crossed) composition allows the ordinary category (S\NP)\(S\NP) to also work in this case.
+    Therefore, if the parent (and head) category C is of the form X/$, the algorithm strips off all outermost forward arguments /$ (and syntactic features) from C to obtain C'.
+    Similarly, if C is of the form X\$, all outermost backward arguments \$ (and syntactic features) are stripped off from C to obtain C'.
+    4.3.

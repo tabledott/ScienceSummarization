@@ -1,0 +1,10 @@
+nd in exactly one list, we return the appropriate type.
+    We return unknown if found in multiple lists because the lists are quite comprehensive and may have significant overlap.
+    For common nouns, we look at the hypernym tree for one of the following: person, political unit, location, organization, weapon, vehicle, industrial plant, and facility.
+    If any is found, we return the appropriate type.
+    If multiple are found, we sort as in the above list.
+    For personal pronouns, we recognize the entity as a person; otherwise we specify unknown.
+    This computation is used as part of the following two features.
+    Entity Type Match This feature checks to see whether the predicted entity types match.
+    The result is true if the types are identical, false if they are different, and unknown if at least one type is unknown.
+    Entity Type Conjunctions This feature indicates the presence of the pair of predicted entity types for the two mentions, except that if either word is a pronoun, the word token 

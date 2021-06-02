@@ -1,0 +1,10 @@
+self.
+  A tokenizer searches the input text for collocations that WordNet knows about and when one is found it is made into a unit by connecting its parts with underscores.
+  For exam- ple, if a text contains the collocation "took place," the tok- enizer will convert it to "took_place."
+  ConText can then display the synset for "take place" rather than successive synsets for "take" and "place."
+  Syntactic tags indicate the part of speech of each word in the input text.
+  We have used an automatic syntactic tagger developed by Eric Brill [6] which he generously adapted to our needs.
+  For example, "store" can be a noun or a verb; when the syntactic tagger encounters an instance of "store" it tries to decide from the context whether it is being used as a noun or a verb.
+  ConText then uses this syntactic tag to determine which part of speech to display to the user.
+  Con- Text also uses syntactic tags in order to skip over closed- class words.
+  Since the automatic syntactic tagger sometimes makes mistakes, Co

@@ -1,0 +1,9 @@
+ an augmented parser and extracts syntactic paths from mentions to potential antecedents.
+    Some of these paths can be ruled in or out by deterministic but conservative syntactic constraints.
+    Importantly, the bulk of the work in the syntactic module is in making sure the parses are correctly constructed and used, and this module&#8217;s most important training data is a treebank.
+    Second, a self-contained semantic module evaluates the semantic compatibility of headwords and individual names.
+    These decisions are made from compatibility lists extracted from unlabeled data sources such as newswire and web data.
+    Finally, of the antecedents which remain after rich syntactic and semantic filtering, reference is chosen to minimize tree distance.
+    This procedure is trivial where most systems are rich, and so does not need any supervised coreference data.
+    However, it is rich in important ways which we argue are marginalized in recent coreference work.
+    Interestingly, error analysis from our 

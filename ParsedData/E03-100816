@@ -1,0 +1,7 @@
+sequent changes in performance come from better parameter estimates.
+    Although co-training boosts the performance of the parser using the 500 seed sentences from 75% to 77.8% (the performance level after 100 rounds of co-training), it does not achieve the level of performance of a parser trained on 1,000 seed sentences.
+    Some possible explanations are: that the newly labelled sentences are not reliable (i.e., they contain too many errors); that the sentences deemed reliable are not informative training examples; or a combination of both factors.
+    This experiment examines whether co-training can be used to boost performance when the unlabelled data are taken from a different source than the initial seed data.
+    Previous experiments in Gildea (2001) have shown that porting a statistical parser from a source genre to a target genre is a non-trivial task.
+    Our two different sources were the parsed section of the Brown corpus and the Penn Treebank WSJ.
+    Unlike the WSJ, the Brown corpus does not co

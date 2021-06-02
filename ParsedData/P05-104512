@@ -1,0 +1,10 @@
+dataset is used for testing, there is no development set.
+    We also used their evaluation metric, which is slightly different from the method for CoNLL data.
+    Instead of evaluating precision and recall on a per-entity basis, they are evaluated on a per-token basis.
+    Then, to calculate the overall F1 score, the F1 scores for each class are averaged.
+  
+  
+    Our models of non-local structure are themselves just sequence models, defining a probability distribution over all possible state sequences.
+    It is possible to flexibly model various forms of constraints in a way that is sensitive to the linguistic structure of the data (e.g., one can go beyond imposing just exact identity conditions).
+    One could imagine many ways of defining such models; for simplicity we use the form where the product is over a set of violation types A, and for each violation type A we specify a penalty parameter &#952;&#955;.
+    The exponent #(A, s, o) is the count of the number of times that the violation A occurs in t

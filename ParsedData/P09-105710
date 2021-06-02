@@ -1,0 +1,9 @@
+dentified by IP is not uniquely minimal.
+    For the same word sequence, there exist other minimal grammars having the same size (459 entries).
+    In our experiments, we choose the first solution returned by CPLEX. sequence consistent with the IP grammar (90.3%), it finds a relatively good one.
+    The IP+EM tagging (with 84.5% accuracy) has some interesting properties.
+    First, the dictionary we observe from the tagging is of higher quality (with fewer spurious tagging assignments) than the one we observe from the original EM tagging.
+    Figure 4 shows some examples.
+    We also measure the quality of the two observed grammars/dictionaries by computing their precision and recall against the grammar/dictionary we observe in the gold tagging.4 We find that precision of the observed grammar increases from 0.73 (EM) to 0.94 (IP+EM).
+    In addition to removing many bad tag bigrams from the grammar, IP minimization also removes some of the good ones, leading to lower recall (EM = 0.87, IP+EM = 0.57).
+    In t

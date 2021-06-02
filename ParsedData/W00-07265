@@ -1,0 +1,8 @@
+n be done in the Treebank-to-chunk conversion script2) influences the chunking task.
+    Most PP chunks just consist of one word (the preposition) with the part-of-speech tag IN.
+    This does not mean, though, that finding PP chunks is completely trivial.
+    INs can also constitute an SBAR chunk (see below) and some PP chunks contain more than one word.
+    This is the case with fixed multi-word prepositions such as such as, because of, due to, with prepositions preceded by a modifier: well above, just after, even in, particularly among or with coordinated prepositions: inside and outside.
+    We think that PPs behave sufficiently differently from NPs in a sentence for not wanting to group them into one class (as Ramshaw and Marcus did in their N-type chunks), and that on the other hand tagging all NP chunks inside a PP as I-PP would only confuse the chunker.
+    We therefore chose not to handle the recognition of true PPs (prep.+NP) during this first chunking step.
+    SBAR chunks mostly consist of one wor

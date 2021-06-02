@@ -1,0 +1,8 @@
+), percentage of sentences with no crossing brackets (0 CB), and the percentage of sentences with two crossing brackets or fewer (&lt; 2 CB).
+    In addition, we show the average number of rule expansions considered per word, that is, the number of rule expansions for which a probability was calculated (see Roark and Charniak [2000]), and the average number of analyses advanced to the next priority queue per word.
+    This is an incremental parser with a pruning strategy and no backtracking.
+    In such a model, it is possible to commit to a set of partial analyses at a particular point that cannot be completed given the rest of the input string (i.e., the parser can &amp;quot;garden path&amp;quot;).
+    In such a case, the parser fails to return a complete parse.
+    In the event that no complete parse is found, the highest initially ranked parse on the last nonempty priority queue is returned.
+    All unattached words are then attached at the highest level in the tree.
+    In such a way we predict no new co

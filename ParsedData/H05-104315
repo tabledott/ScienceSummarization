@@ -1,0 +1,13 @@
+n of a word w in the context of an associated feature f and sentence s. We restate this task as follows: Task Given a set of semantic orientation (SO) labels ({positive, negative, neutral}), a set of reviews and a set of tuples (w, f , s), where w is a potential opinion word associated with feature f in sentence s, assign a SO label to each tuple (w, f , s).
+			For example, the tuple (sluggish, driver, ?I am not happy with this sluggish driver?)
+			would be assigned a negative SO label.
+			Note: We use ?word?
+			to refer to a potential opinion word w and ?feature?
+			to refer to the word or phrase which represents the explicit feature f . Solution OPINE uses the 3-step approach below: 1.
+			Given the set of reviews, OPINE finds a SO label for.
+			each word w. 2.
+			Given the set of reviews and the set of SO labels for.
+			words w, OPINE finds a SO label for each (w, f ) pair.
+			1The (S,P,O) tuples in Table 4 are automatically generated from MINIPAR?s output.
+			3.
+			Given the set of SO labels for (w, f ) pa

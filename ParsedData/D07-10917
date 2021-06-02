@@ -1,0 +1,12 @@
+ranslate input factors into output factors, or generate additional output factors from existing output factors.
+			Recall the example of a factored model motivated by morphological analysis and generation.
+			In this model the translation process is broken up into the following three mapping steps: 1.
+			Translate input lemmas into output lemmas.
+			2.
+			Translate morphological and POS factors.
+			3.
+			Generate surface forms given the lemma and.
+			linguistic factorsFactored translation models build on the phrase based approach (Koehn et al, 2003) that breaks up the translation of a sentence into the translation of small text chunks (so-called phrases).
+			This approach implicitly defines a segmentation of the input and output sentences into phrases.
+			See an example in Figure 3.Our current implementation of factored translation models follows strictly the phrase-based ap proach, with the additional decomposition of phrasetranslation into a sequence of mapping steps.
+			Trans lation steps map factors in in

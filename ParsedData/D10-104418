@@ -1,0 +1,10 @@
+ered to retain the top 30 translations for each source phrase using the TM part of the current log-linear model.
+    Table 2 shows results for both settings and all methods described in sections 2 and 3.
+    The 1st block contains the simple baselines from section 2.1.
+    The natural baseline (baseline) outperforms the pure IN system only for EMEA/EP fren.
+    Log-linear combination (loglin) improves on this in all cases, and also beats the pure IN system.
+    The 2nd block contains the IR system, which was tuned by selecting text in multiples of the size of the EMEA training corpus, according to dev set performance.
+    This significantly underperforms log-linear combination.
+    The 3rd block contains the mixture baselines.
+    The linear LM (lin lm), TM (lin tm) and MAP TM (map tm) used with non-adapted counterparts perform in all cases slightly worse than the log-linear combination, which adapts both LM and TM components.
+    However, when the linear LM is combined with a linear TM (lm+lin tm) or MAP TM 

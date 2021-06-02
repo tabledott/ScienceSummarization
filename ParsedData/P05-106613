@@ -1,0 +1,7 @@
+ranslation systems when applied to German to English translation.
+    Typically, reordering models in phrase-based systems are based solely on movement distance.
+    In particular, at each point in decoding a &#8220;cost&#8221; is associated with skipping over 1 or more German words.
+    For example, assume that in translating Ich werde Ihnen die entsprechenden Anmerkungen aushaendigen. we have reached a state where &#8220;Ich&#8221; and &#8220;werde&#8221; have been translated into &#8220;I will&#8221; in English.
+    A potential decoding decision at this point is to add the phrase &#8220;pass on&#8221; to the English hypothesis, at the same time absorbing &#8220;aushaendigen&#8221; from the German string.
+    The cost of this decoding step will involve a number of factors, including a cost of skipping over a phrase of length 4 (i.e., Ihnen die entsprechenden Anmerkungen) in the German string.
+    The ability to penalise &#8220;skips&#8221; of this type, and the potential to model multi-word phrases, are ess

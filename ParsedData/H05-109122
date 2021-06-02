@@ -1,0 +1,7 @@
+for relation detection, which means that all positive rela tion instances are combined into one class.
+			Then the thresholded output of this binary classifier is used as training data for a second multi-class SVM, which is trained for relation classification.
+			The same kernel is used in both stages.
+			We present in Table 5 the performance of our shortest path (SP) dependency kernel on the task ofrelation extraction from ACE, where the dependencies are extracted using either a CCG parser (SP CCG), or a CFG parser (SP-CFG).
+			We also show the results presented in (Culotta and Sorensen, 2004) for their best performing kernel K4 (a sum between a bag-of-words kernel and their dependency kernel) under both scenarios.
+			Method Precision Recall F-measure (S1) SP-CCG 67.5 37.2 48.0 (S1) SP-CFG 71.1 39.2 50.5 (S1) K4 70.3 26.3 38.0 (S2) SP-CCG 63.7 41.4 50.2 (S2) SP-CFG 65.5 43.8 52.5 (S2) K4 67.1 35.0 45.8 Table 5: Extraction Performance on ACE.
+			The shortest-path dependency kernels outperform the dependency k

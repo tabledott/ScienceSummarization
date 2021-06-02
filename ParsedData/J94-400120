@@ -1,0 +1,6 @@
+  For this reason, the greatest score path can be searched for by using dynamic programming method.
+    Calculation is performed column by column going left from a non-zero element in the lowest row in An to the leftmost column in A.
+    For each element in a column, the best partial path reaching it is found by extending the partial paths from the previous column and choosing the greatest score path (the left part of Figure 5).
+    In extending partial paths, elements' points and penalty points are given to paths step by step.
+    Then, among the paths to the leftmost column, the path that has the greatest score becomes the best path from the starting non-zero element (the right part of Figure 5).
+    Of all the best paths from all the non-zero lowest row elements, the path that has the greatest path score (the maximum path) is chosen as defining the scope of the CS; i.e., the series of bunsetsus on the left side of the maximum path (pre-conjunct) and the series of bunsetsus under it (post-conjunct) are conj

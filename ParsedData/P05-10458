@@ -1,0 +1,5 @@
+ty of a hidden state sequence given some observations.
+    In order to facilitate obtaining the conditional probabilities we need for Gibbs sampling, we generalize the CRF model in a way that is consistent with the Markov Network literature (see Cowell et al. (1999)): we create a linear chain of cliques, where each clique, c, represents the probabilistic relationship between an adjacent pair of states2 using a clique potential &#966;c, which is just a table containing a value for each possible state assignment.
+    The table is not a true probability distribution, as it only accounts for local interactions within the clique.
+    The clique potentials themselves are defined in terms of exponential models conditioned on features of the observation sequence, and must be instantiated for each new observation sequence.
+    The sequence of potentials in the clique chain then defines the probability of a state sequence (given the observation sequence) as where &#966;i(si&#8722;1, si) is the element of the clique pot

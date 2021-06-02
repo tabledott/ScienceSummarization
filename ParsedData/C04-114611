@@ -1,0 +1,8 @@
+ similarity between every pair of nouns according to each distributional similarity mea sure.
+			We then generated ranked sets of nearest neighbours (of size k = 200 and where a word is excluded from being a neighbour of itself) for each word and each measure.For a given word, we compute the overlap between neighbour sets using a comparison tech nique adapted from Lin (1998).
+			Given a word w, each word w?
+			in WScomp is assigned a rankscore of k ? rank if it is one of the k near est neighbours of w using measure m and zero otherwise.
+			If NS(w,m) is the vector of such scores for word w and measure m, then theoverlap, C(NS(w,m1),NS(w,m2)), of two neigh bour sets is the cosine between the two vectors: C(NS(w,m1),NS(w,m2)) = ? w? rm1(w ?, w)?
+			rm2(w ?, w) ?k i=1 i2 The overlap score indicates the extent to which sets share members and the extent to whichthey are in the same order.
+			To achieve an over lap score of 1, the sets must contain exactly the same items in exactly the same order.
+			An overlap sco

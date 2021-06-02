@@ -1,0 +1,12 @@
+ption at the expense of CPU and accuracy.
+    These enable much larger models in memory, compensating for lost accuracy.
+    Typical data structures are generalized Bloom filters that guarantee a customizable probability of returning the correct answer.
+    Minimal perfect hashing is used to find the index at which a quantized probability and possibly backoff are stored.
+    These models generally outperform our memory consumption but are much slower, even when cached.
+  
+  
+    In addition to the optimizations specific to each datastructure described in Section 2, we implement several general optimizations for language modeling.
+    Applications such as machine translation use language model probability as a feature to assist in choosing between hypotheses.
+    Dynamic programming efficiently scores many hypotheses by exploiting the fact that an N-gram language model conditions on at most N &#8722; 1 preceding words.
+    We call these N &#8722; 1 words state.
+    When two partial hypotheses have equal state 

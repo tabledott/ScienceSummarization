@@ -1,0 +1,9 @@
+ot;the&amp;quot;, with certainty for the tag AT (we will denote this by &amp;quot;p(the-AT) = CERTAIN)&amp;quot;).
+    Next we stack &amp;quot;man&amp;quot;, and look up the collocational probabilities of all tag pairs between the two words at the top of the stack.
+    In this case they will be p(AT, NN) = 186, and p(AT, VB) = 1.
+    We save the best (in this case only) path to each of man-NN and man-VB.
+    It is sufficient to save a pointer to the tag of &amp;quot;the&amp;quot; which ends each of these paths, making backward-linked lists (which, in this case, converge).
+    Now we stack &amp;quot;still&amp;quot;.
+    For each of its tags (NN, VB, and RB), we choose either the NN or the VB tag of &amp;quot;man&amp;quot; as better. p(still-NN) is the best of: p(man-NN) *p(NN,NN) = 186 *40 = 744 p(man-VB) *p(VB,NN) = 1 *22 = 22 Thus, the best path to still-NN is AT NN NN.
+    Similarly, we find that the best path to still-RB is AT NN RB, and the best path to still-VB is AT NN RB.
+    This shows the (realistica

@@ -1,0 +1,6 @@
+ty of the alignment.
+    The dynamic programming algorithm tries to optimize the correspondence of identical tokens, which represent markup.2 As a side effect, the nonmarkup text chunks are placed in correspondence with one another (e.g., the &#8220;Emergency Exit&#8221; and &#8220;Sortie de Secours&#8221; chunks in the above example).
+    The more such pairings are found, the more likely the candidate documents are to represent a valid translation pair.
+    The remaining two parameters (r and p) quantify the extent to which the corresponding nonmarkup chunks are correlated in length.
+    When two documents are aligned with one another and are valid translations, there is a reliably linear relationship in the length of translated chunks of text: short pieces correspond with short pieces, medium with medium, and long with long.
+    The Pearson correlation coefficient r for the lengths will be closer to one when the alignment has succeeded in lining up translated pieces of text, and the p value quantifies the r

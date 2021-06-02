@@ -1,0 +1,7 @@
+onal entropy of segmentation variations H(V|W) is defined as follows: Now we can look at the overall conditional entropy H(V|W) to compare the consistency of each segmenter.
+    In Table 4, we can see that even though MaxMatch has a much smaller MT lexicon size than CRF-Lex, when we examine the consistency of how MaxMatch segments in context, we find the conditional entropy is much higher than CRF-Lex.
+    We can also see that CRF-basic has a higher conditional entropy than the other two.
+    The conditional entropy H(V|W) shows how consistent each segmenter is, and it correlates with the MT performance in Table 4.
+    Note that consistency is only one of the competing factors of how good a segmentation is for MT performance.
+    For example, a character-based segmentation will always have the best consistency possible, since every word ABC will just have one pattern: cx A B C cy.
+    But from Section 3.1 we see that CharBased performs worse than both MaxMatch and CRF-basic on MT, because having word segmenta

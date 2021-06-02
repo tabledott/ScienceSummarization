@@ -1,0 +1,10 @@
+c.
+			However, one can dramatically reduce the running time by taking advantage of the fact that the feature vector is sparse.
+			By indexing the features, one can retrieve the set of elements that have a given feature.
+			To compute the top similar words of a word w, we first sort w?s features according to their mutual information with w. We only compute pairwise similarities between w and the words that share a high mutual information feature with w. 4.2.
+			Phase II: Find committees.
+			The second phase of the clustering algorithm recursively finds tight clusters scattered in the similarity space.
+			In each recursive step, the algorithm finds a set of tight clusters, called committees, and identifies residue elements that are not covered by any committee.
+			We say a committee covers an element if the element?s similarity to the centroid of the committee exceeds some high similarity threshold.
+			The algorithm then recursively attempts to find more committees among the residue elements.
+			The output of t

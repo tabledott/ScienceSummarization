@@ -1,0 +1,10 @@
+   If the anaphor is a child or nested markable, then its possible antecedents must not be any markable with the same root markable as the current anaphor.
+    However, the possible antecedents can be other root markables and their children that are before the anaphor in document order.
+    For example, consider the two root markables, Mr. Tom's daughter and His daughter's eyes, appearing in that order in a test document.
+    The possible antecedents of His cannot be His daughter or His daughter's eyes, but can be Mr. Tom or Mr. Tom's daughter.
+    .
+    The coreference resolution algorithm considers every markable j starting from the second markable in the document to be a potential candidate as an anaphor.
+    For each j, the algorithm considers every markable i before j as a potential antecedent.
+    For each pair i and j, a feature vector is generated and given to the decision tree classifier.
+    A coreferring antecedent is found if the classifier returns true.
+    The algorithm starts from the immediate

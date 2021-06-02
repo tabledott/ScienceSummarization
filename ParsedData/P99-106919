@@ -1,0 +1,8 @@
+ts onto the correct analyses.
+    This metric seems more relevant to applications where the system needs to estimate how likely it is that the correct analysis lies in a certain set of possible parses; e.g., ambiguitypreserving translation and human-assisted disambiguation.
+    To make the numbers more manageable, we actually present the negative logarithm of the pseudo-likelihood rather than the pseudo-likelihood itself&#8212;so smaller is better.
+    Because of the small size of our corpora we evaluated our estimators using a 10-way crossvalidation paradigm.
+    We randomly assigned sentences of each corpus into 10 approximately equal-sized subcorpora, each of which was used in turn as the test corpus.
+    We evaluated on each subcorpus the parameters that were estimated from the 9 remaining subcorpora that served as the training corpus for this run.
+    The evaluation scores from each subcorpus were summed in order to provide the scores presented here.
+    Table 3 presents the results of the empirical eval

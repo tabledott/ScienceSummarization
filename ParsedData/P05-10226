@@ -1,0 +1,8 @@
+ while retaining the use of dynamic programming: the obvious way and the clever way.
+    The clever way is based upon an algorithm developed by Schwartz and Chow (1990).
+    Recall the key insight in the Viterbi algorithm: in the optimal parse the parsing decisions at each of the choice points that determine a parse must be optimal, since otherwise one could find a better parse.
+    This insight extends to n-best parsing as follows.
+    Consider the secondbest parse: if it is to differ from the best parse, then at least one of its parsing decisions must be suboptimal.
+    In fact, all but one of the parsing decisions in second-best parse must be optimal, and the one suboptimal decision must be the second-best choice at that choice point.
+    Further, the nth-best parse can only involve at most n suboptimal parsing decisions, and all but one of these must be involved in one of the second through the n&#8722;1th-best parses.
+    Thus the basic idea behind this approach to n-best parsing is to first find the bes

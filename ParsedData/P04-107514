@@ -1,0 +1,11 @@
+7000 and K is equal to 50, so the time complexity is about O(106).
+    For efficiency, we may filter the entities in NESet before clustering them, which will be further discussed in Section 3.
+    When selecting a machine-annotated named entity, we compare it with all previously selected named entities in the current batch.
+    If the similarity between them is above a threshold 8, this example cannot be allowed to add into the batch.
+    The order of selecting examples is based on some measure, such as informativeness measure, representativeness measure or their combination.
+    This local selection method is shown in Figure 2.
+    In this way, we avoid selecting too similar examples (similarity value &#8805; 8) in a batch.
+    The threshold 8 may be the average similarity between the examples in NESet.
+    This consideration only requires O(NK+K2) computational time.
+    In one of our experiments (N &#732; 17000 and K = 50), the time complexity is about O(105).
+    It is more efficient than clustering algor

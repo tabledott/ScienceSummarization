@@ -1,0 +1,7 @@
+ concentrated on four subsymbols, which is the true number of symbols in the grammar.
+			troduce a right-branching cascade of new nodes with symbol X . The end result is that each node has at most two children.
+			To cope with unknown words, we replace any word appearing fewer than 5 timesin the training set with one of 50 unknown word to kens derived from 10 word-form features.
+			Our goal is to learn a refined grammar, where eachsymbol in the training set is split into K subsym bols.
+			We compare an ordinary PCFG estimated with maximum likelihood (Matsuzaki et al, 2005) andthe HDP-PCFG estimated using the variational in ference algorithm described in Section 2.6.To parse new sentences with a grammar, we com pute the posterior distribution over rules at each spanand extract the tree with the maximum expected cor rect number of rules (Petrov and Klein, 2007).
+			3.2.1 HyperparametersThere are six hyperparameters in the HDP-PCFG GR model, which we set in the following manner:?
+			= 1, ?T = 1 (uniform distribu

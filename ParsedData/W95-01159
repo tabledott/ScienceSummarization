@@ -1,0 +1,9 @@
+ity of its entries for frequent words can be compared to the quality of its entries for rare words.
+    Likewise, separate evaluations can be performed for each k, 1 &lt; k &lt; N, in N-best lexicons.
+    Figure 2 shows the outline of a BiBLE algorithm for evaluating precision of N-best translation lexicons.
+    The kth cumulative hit rate for a source word S is the fraction of test sentences containing S whose translations contain one of the k best translations of S in the lexicon.
+    For each k, the kth Input: cumulative hit rates are averaged over all the source words in the lexicon, counting words by type.
+    This yields N average cumulative hit rates for the lexicon as a whole.
+    In this study, the average is computed by type and not by token, because translations for the most frequent words are easy to estimate using any reasonable statistical decision procedure, even without any extra information.
+    Token-based evaluation scores would be misleadingly inflated with very little variation.
+    Compu

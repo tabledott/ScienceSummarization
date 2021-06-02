@@ -1,0 +1,7 @@
+s for each potential alignment edge (i, j): z = {zij &#8712; {0, 1} : 1 &#8804; i &#8804; I,1 &#8804; j &#8804; J}.
+    Each z can be thought of as an element in the set of generalized alignments, where any subset of word pairs may be aligned (Och and Ney, 2003).
+    Sequence-based models p(a  |e, f) induce a distribution over p(z  |e, f) by letting p(z  |e, f) = 0 for any z that does not correspond to any a (i.e., if z contains many-to-one alignments).
+    We also introduce the more compact notation x = (e, f) to denote an input sentence pair.
+    We put arbitrary distributions p(e) and p(f) to remove the conditioning, noting that this has no effect on the optimization problem in the next section.
+    We can now think of the two directional sequence-based models as each inducing a distribution over the same space of sentence pairs and alignments (x, z): In the next two sections, we describe how to jointly train the two models using an EM-like algorithm.
+    We emphasize that this technique is quite general a

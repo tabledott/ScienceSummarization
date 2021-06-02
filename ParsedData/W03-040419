@@ -1,0 +1,11 @@
+ized by sentence length.
+    The subjective clues, subjClues, are all sets for which 3-valued features were defined above (except objStems).
+    The objective clues consist only of objStems.
+    For senAvgClueRatesubj to be the average of ClueRate(S) over all sentences S and similarly for AvgClueRateobj.
+    Next, we characterize the number of subjective and objective clues in the previous and next sentences as: higher-than-expected (high), lower-than-expected (low), or expected (medium).
+    The value for ClueRatesubj(S) is high if ClueRatesubj(S) &gt; AvgClueRatesubj * 1.3; low if ClueRatesubj(S) &lt;_ AvgClueRatesubj/1.3; otherwise it is medium.
+    The values for ClueRateobj(S) are defined similarly.
+    Using these definitions we created four features: ClueRatesubj for the previous and following sentences, and ClueRateobj for the previous and following sentences.
+    We also defined a feature for sentence length.
+    Let AvgSentLen be the average sentence length.
+    SentLen(S) is high if length(S) &gt; 

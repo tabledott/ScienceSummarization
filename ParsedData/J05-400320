@@ -1,0 +1,8 @@
+that the most likely English translation of fj is argmaxei{t(fj|ei),t(ei|fj)}.
+    Using both sets of probabilities is likely to help us make a better-informed decision.
+    Using this alignment strategy, we follow (Och and Ney 2003) and compute one alignment for each translation direction (f - 4e and e -4 f), and then combine them.
+    Och and Ney present three combination methods: intersection, union, and refined (a form of intersection expanded with certain additional neighboring links).
+    Thus, for each sentence pair, we compute five alignments (two modified-IBMModel-1 plus three combinations) and then extract one set of general features and five sets of alignment features (as described in the previous section).
+    We create training instances for our classifier from a small parallel corpus.
+    The simplest way to obtain classifier training data from a parallel corpus is to generate all possible sentence pairs from the corpus (the Cartesian product).
+    This generates 5,0002 training instances, out o

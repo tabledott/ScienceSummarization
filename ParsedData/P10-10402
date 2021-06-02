@@ -1,0 +1,7 @@
+bolic ID, which is then transformed into a feature vector using a one-hot representation: The feature vector has the same length as the size of the vocabulary, and only one dimension is on.
+    However, the one-hot representation of a word suffers from data sparsity: Namely, for words that are rare in the labeled training data, their corresponding model parameters will be poorly estimated.
+    Moreover, at test time, the model cannot handle words that do not appear in the labeled training data.
+    These limitations of one-hot word representations have prompted researchers to investigate unsupervised methods for inducing word representations over large unlabeled corpora.
+    Word features can be hand-designed, but our goal is to learn them.
+    One common approach to inducing unsupervised word representation is to use clustering, perhaps hierarchical.
+    This technique was used by a variety of researchers (Miller et al., 2004; Liang, 2005; Koo et al., 2008; Ratinov &amp; Roth, 2009; Huang &amp; Yates, 2009).

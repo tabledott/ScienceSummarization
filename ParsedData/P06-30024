@@ -1,0 +1,8 @@
+ass schemes as tag sets, and the exact amount of word classes is not agreed upon intra- and interlingually, inputting the number of desired clusters beforehand is clearly a drawback.
+    In that way, the clustering algorithm is forced to split coherent clusters or to join incompatible sub-clusters.
+    In contrast, unsupervised part-of-speech induction means the induction of the tag set, which implies finding the number of classes in an unguided way.
+    This work constructs an unsupervised POS tagger from scratch.
+    Input to our system is a considerable amount of unlabeled, monolingual text bar any POS information.
+    In a first stage, we employ a clustering algorithm on distributional similarity, which groups a subset of the most frequent 10,000 words of a corpus into several hundred clusters (partitioning 1).
+    Second, we use similarity scores on neighbouring co-occurrence profiles to obtain again several hundred clusters of medium- and low frequency words (partitioning 2).
+    The combination of both

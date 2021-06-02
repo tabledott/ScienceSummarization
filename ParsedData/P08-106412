@@ -1,0 +1,10 @@
+dering model) when c = 0 and h =1. co-indexing the pairs of non-terminals that rooting the removed source and target parts
+  
+  
+    13: output the hypothesis with the highest score in h[1, J] as the final best translation The decoder is a span-based beam search together with a function for mapping the source derivations to the target ones.
+    Algorithm 2 illustrates the decoding algorithm.
+    It translates each span iteratively from small one to large one (lines 1-2).
+    This strategy can guarantee that when translating the current span, all spans smaller than the current one have already been translated before if they are translatable (line 7).
+    When translating a span, if the usable rule is an initial rule, then the tree sequence on the target side of the rule is a candidate translation (lines 4-5).
+    Otherwise, we replace the nonterminal leaf nodes of the current abstract rule with their corresponding spans&#8217; translations that are already translated in previous steps (line 7).
+    To speed up

@@ -1,0 +1,6 @@
+models and the formulae needed for training them.
+    An English-to-French translation model P with parameters 9 is a formula for calculating a conditional probability, or likelihood, P0 (f I e), for any string f of French words and any string e of English words.
+    These probabilities satisfy where the sum ranges over all French strings f, and failure is a special symbol not in the French vocabulary.
+    We interpret Po (f e) as the probability that a translator will produce f when given e, and P0 (failure I e) as the probability that he will produce no translation when given e. We call a model deficient if P (failure I e) is greater than zero for some e. Log-Likelihood Objective Function.
+    The log-likelihood of a sample of translations (f(s), e(s)), s = 1, 2, ... , S, is Here C(f, e) is the empirical distribution of the sample, so that C(f,e) is 1/S times the number of times (usually 0 or 1) that the pair (f, e) occurs in the sample.
+    We determine values for the parameters 9 so as to maximize this lo

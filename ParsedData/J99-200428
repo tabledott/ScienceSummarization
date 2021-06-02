@@ -1,0 +1,6 @@
+ known as the contextual probability since it indicates the size of the context used in the model and the term Pr(Wj T,) is called the word emit probability since it is the probability of emitting the word W, given the tag Ti.
+    These probabilities are estimated using a corpus where each word is tagged with its correct supertag.
+    The contextual probabilities were estimated using the relative frequency estimates of the contexts in the training corpus.
+    To estimate the probabilities for contexts that do not appear in the training corpus, we used the Good-Turing discounting technique (Good 1953) combined with Katz's back off model (Katz 1987).
+    The idea here is to discount the frequencies of events that occur in the corpus by an amount related to their frequencies and utilize this discounted probability mass in the back off model to distribute to unseen events.
+    Thus, the Good-Turing discounting technique estimates the frequency of unseen events based on the distribution of the frequency of the cou

@@ -1,0 +1,7 @@
+ill be topic-specific, but other terms will be topic-neutral cue phrases that express discourse structure.
+    This idea is implemented by drawing the text at each topic boundary from a special language model &#966;, which is shared across all topics and all documents in the dataset.
+    For sentences that are not at segment boundaries, the likelihood is as before: p(xt|z, o, &#966;) = Q i&#8712;xt &#952;zt,i.
+    For sentences that immediately follow segment boundaries, we draw the first ` words from &#966; instead.
+    Writing x&#65533;`) t for the ` cue words in xt, and Rt for the remaining words, the likelihood for a segment-initial sentence is, We draw &#966; from a symmetric Dirichlet prior &#966;0.
+    Following prior work (Galley et al., 2003; Litman and Passonneau, 1995), we consider only the first word of each sentence as a potential cue phrase; thus, we set ` = 1 in all experiments.
+    To estimate or marginalize the language models o and &#966;, it is necessary to maintain lexical counts for each 

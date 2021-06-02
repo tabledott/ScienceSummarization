@@ -1,0 +1,8 @@
+relate with translation performance (Axelrod, 2006).
+    For this work we follow the procedure of Moore and Lewis (2010), which applies the cosmetic change of using the cross-entropy rather than perplexity.
+    The perplexity of some string s with empirical ngram distribution p given a language model q is: where H(p, q) is the cross-entropy between p and q.
+    We simplify this notation to just HI(s), meaning the cross-entropy of string s according to a language model LMI which has distribution q.
+    Selecting the sentences with the lowest perplexity is therefore equivalent to choosing the sentences with the lowest cross-entropy according to the in-domain language model.
+    For this experiment, we used a language model trained (using the parameters in Section 3.3) on the Chinese side of the IWSLT corpus.
+    Moore and Lewis (2010) also start with a language model LMI over the in-domain corpus, but then further construct a language model LMO of similar size over the general-domain corpus.
+    They then rank 

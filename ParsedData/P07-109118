@@ -1,0 +1,8 @@
+ performance will be shown in our experiments.
+    The data needed by our Pharaoh-like decoder are translation table and language model.
+    Our 5-gram language model is trained by the SRI language modeling toolkit (Stolcke, 2002).
+    The translation table is obtained as described in (Koehn et al., 2003), i.e. the alignment tool GIZA++ is run over the training data in both translation directions, and the two alignment matrices are integrated by the GROW-DIAGFINAL method into one matrix, from which phrase translation probabilities and lexical weights of both directions are obtained.
+    The most important system parameter is, of course, distortion limit.
+    Pilot experiments using the standard phrase-based model show that the optimal distortion limit is 4, which was therefore selected for all our experiments.
+    The baseline of our experiments is the standard phrase-based model, which achieves, as shown by table 2, the BLEU score of 29.22.
+    From the same table we can also see that the clause splitting me

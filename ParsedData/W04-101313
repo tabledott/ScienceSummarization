@@ -1,0 +1,13 @@
+edit to consecutive in-sequence matches.
+    The weighting function f must have the property that f(x+y) &gt; f(x) + f(y) for any positive integers x and y.
+    In other words, consecutive matches are awarded more scores than non-consecutive matches.
+    For example, f(k)=ak &#8211; b when k &gt;= 0, and a, b &gt; 0.
+    This function charges a gap penalty of &#8211;b for each non-consecutive n-gram sequences.
+    Another possible function family is the polynomial family of the form ka where -a &gt; 1.
+    However, in order to normalize the final ROUGE-W score, we also prefer to have a function that has a close form inverse function.
+    For example, f(k)=k2 has a close form inverse function f -1(k)=k1/2.
+    F-measure based on WLCS can be computed as follows, given two sequences X of length m and Y of length n: Where f -1 is the inverse function of f. In DUC, &#223; is set to a very big number (?
+    8 ).
+    Therefore, only Rwlcs is considered.
+    We call the WLCS-based Fmeasure, i.e.
+    Equation 15, ROUG

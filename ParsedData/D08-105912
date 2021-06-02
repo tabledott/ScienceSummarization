@@ -1,0 +1,5 @@
+ to build different parse trees can vary.
+    For example, the three-word sentence &#8220;A B C&#8221; can be parsed by the sequence of three actions &#8220;Shift ArcRight ArcRight&#8221; (B modifies A; C modifies B) or the sequence of four actions &#8220;Shift ArcLeft Shift ArcRight&#8221; (both A and C modifies B).
+    To ensure that all final state items are built by the same number of transition actions, we require that the final state transfer the best items from output to agenda Output: the best item in agenda items must 1) have fully-built parse trees; and 2) have only one root word left on the stack.
+    In this way, popping actions should be made even after a complete parse tree is built, if the stack still contains more than one word.
+    Now because each word excluding the root must be pushed to the stack once and popped off once during the parsing process, the number of actions Inputs: training examples (xi, yi) Initialization: set w&#65533; = 0 needed to parse a sentence is always 2n &#8722; 1, w

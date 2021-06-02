@@ -1,0 +1,7 @@
+ in addition the feature templates (t0, w0, t&#8722;1), (t0, w0, t+1), (t0, w&#8722;1, w0), and (t0, w0, w+1), and includes the improvements in unknown word modeling discussed in section 3.3.9 We call this model BEST.
+    BEST has a token accuracy on the final test set of 97.24% and a sentence accuracy of 56.34% (see Table 4).
+    A 95% confidence interval for the accuracy (using a binomial model) is (97.15%,97.33%).
+    In order to understand the gains from using right context tags and more lexicalization, let us look at an example of an error that the enriched models learn not to make.
+    An interesting example of a common tagging error of the simpler models which could be corrected by a deterministic fixup rule of the kind used in the IDIOMTAG module of (Marshall, 1987) is the expression as X as (often, as far as).
+    This should be tagged as/RB X/{RB,JJ} as/IN in the Penn Treebank.
+    A model using only current word and two left tags (model L+L2 in Table 2), made 87 errors on this expression, tagging i

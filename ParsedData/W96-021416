@@ -1,0 +1,8 @@
+he parsing algorithm is a variation on the Inside-Outside algorithm, developed by Baker (1979) and discussed in detail by Lan and Young (1990).
+    However, while the Inside-Outside algorithm is a grammar re-estimation algorithm, the algorithm presented here is just a parsing algorithm.
+    It is closely related to a similar algorithm used for Hidden Markov Models (Rabiner, 1989) for finding the most likely state at each time.
+    However, unlike in the HMM case where the algorithm produces a simple state sequence, in the PCFG case a parse tree is produced, resulting in additional constraints.
+    A formal derivation of a very similar algorithm is given elsewhere (Goodman, 1996); only the intuition is given here.
+    The algorithm can be summarized as follows.
+    First, for each potential constituent, where a constituent is a non-terminal, a start position, and an end position, find the probability that that constituent is in the parse.
+    After that, put the most likely constituents together to form a pass

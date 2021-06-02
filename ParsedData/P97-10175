@@ -1,0 +1,9 @@
+
+    These techniques rely on probabilities and Bayes' Rule.
+    Suppose we build an English phrase generator that produces word sequences according to some probability distribution P(w).
+    And suppose we build an English pronouncer that takes a word sequence and assigns it a set of pronunciations, again probabilistically, according to some P(plw).
+    Given a pronunciation p, we may want to search for the word sequence w that maximizes P(wfp).
+    Bayes.
+    Rule lets us equivalently maximize P(w) &#8226; P(p(w). exactly the two distributions we have modeled.
+    Extending this notion, we settled down to build five probability distributions: Given a katakana string o observed by OCR, we want to find the English word sequence w that maximizes the sum, over all e, j, and k, of Following (Pereira et al.. 1994; Pereira and Riley, 1996), we implement P(w) in a weighted finite-state acceptor (WFSA) and we implement the other distributions in weighted finite-state transducers (WFSTs).
+    A WFSA is an state/trans

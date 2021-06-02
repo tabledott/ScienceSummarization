@@ -1,0 +1,7 @@
+rpretation by using the patterns observed in the input.
+    We frame our semantic interpretation process as a constrained optimization process, maximizing the objective function defined by Equation 1 which relies on extracting lexical and syntactic features instead of parsing rules.
+    In the remainder of this section we explain the components of our inference model.
+    Following previous work, we capture the semantics of the Geoquery domain using a subset of first-order logic consisting of typed constants and functions.
+    There are two types: entities E in the domain and numeric values N. Functions describe a functional relationship over types (e.g., population : E &#8594; N).
+    A complete logical form is constructed through functional composition; in our formalism this is performed by the substitution operator.
+    For example, given the function next to(x) and the expression const(texas), substitution replaces the occurrence of the free variable x, with the expression, resulting in a new logical form

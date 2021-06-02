@@ -1,0 +1,11 @@
+clus tering conditioned on the other.
+			The VI is the sum of these conditional entropies.
+			Specifically, given a corpus labeled with hidden states and POS tags, if p?(y), p?(t) and p?(y, t) are the empirical probabilities of a hidden state y, a POS tag t, and the cooccurance of y and t respectively, then the mutual information I , entropies H and variation of information VI are defined as follows: H(Y ) = ? ?
+			y p?(y) log p?(y) H(T ) = ? ?
+			t p?(t) log p?(t) I(Y, T ) = ? y,t p?(y, t) log p?(y, t) p?(y)p?(t) H(Y |T ) = H(Y )?
+			I(Y, T ) 297 H(T |Y ) = H(T )?
+			I(Y, T ) VI (Y, T ) = H(Y |T ) +H(T |Y ) As Meila?
+			(2003) shows, VI is a metric on the space of probability distributions whose value reflects the divergence between the two distributions, and only takes the value zero when the two distributions are identical.
+	
+	
+			Expectation-Maximization There are several excellent textbook presentations of Hidden Markov Models and the Forward-Backward algorithm for Expectation-Maximization (Jelinek, 1997

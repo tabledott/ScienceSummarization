@@ -1,0 +1,7 @@
+et us define the set of indices of the partially-established entities to the left of (note that ), and the set of the partially-established entities.
+    Given that has been formed to the left of the active mention ,can take two possible actions: if , then the active mention is said to link with the entity ; Otherwise it starts a new entity .
+    At training time, the action is known to us, and at testing time, both hypotheses will be kept during search.
+    Notice that a sequence of such actions corresponds uniquely to an entity outcome (or a partition of mentions).
+    Therefore, the problem of coreference resolution is equivalent to ranking the action sequences.
+    In this work, a binary model is used to compute the link probability, where , is iff links with ; the random variable is the index of the partial entity to which is linking.
+    Since starting a new entity means that does not link with any entities in , the probability of starting a new entity, , can be computed as Therefore, the probability of

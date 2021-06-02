@@ -1,0 +1,8 @@
+ and xj (&#8712; x) are spins of electrons i and j, matrix W = {wij} represents weights between two electrons.
+    In a spin system, the variable vector x follows the Boltzmann distribution: where Z(W) = Ex exp(&#8722;QE(x, W)) is the normalization factor, which is called the partition function and Q is a constant called the inversetemperature.
+    As this distribution function suggests, a configuration with a higher energy value has a smaller probability.
+    Although we have a distribution function, computing various probability values is computationally difficult.
+    The bottleneck is the evaluation of Z(W), since there are 2N configurations of spins in this system.
+    We therefore approximate P(x|W) with a simple function Q(x; 0).
+    The set of parameters 0 for Q, is determined such that Q(x; 0) becomes as similar to P(x|W) as possible.
+    As a measure for the distance between P and Q, the variational free energy F is often used, which is defined as the difference between the mean energy with respect 

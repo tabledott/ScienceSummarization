@@ -1,0 +1,8 @@
+fts&#8212;as well as three new edit operations: Stem Matches, Synonym Matches and Phrase Substitutions.
+    TERp identifies words in the hypothesis and reference that share the same stem using the Porter stemming algorithm (Porter, 1980).
+    Two words are determined to be synonyms if they share the same synonym set according to WordNet (Fellbaum, 1998).
+    Sequences of words in the reference are considered to be paraphrases of a sequence of words in the hypothesis if that phrase pair occurs in the TERp phrase table.
+    The TERp phrase table is discussed in more detail in Section 4.
+    With the exception of the phrase substitutions, the cost for all other edit operations is the same regardless of what the words in question are.
+    That is, once the edit cost of an operation is determined via optimization, that operation costs the same no matter what words are under consideration.
+    The cost of a phrase substitution, on the other hand, is a function of the probability of the paraphrase and the number of 

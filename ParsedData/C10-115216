@@ -1,0 +1,12 @@
+calendartheNP old calendarthe month Figure 5: Substitution As a result of all the simplification operations, we obtain the following two sentences: s1 = Str(pt1)=?August was the sixth month in the old calendar.?
+			and s2 = Str(pt2)=?The old calendar started in 735BC.?
+			3.4 The Probabilistic Model.
+			Our model can be formalized as a direct translation model from complex to simple P (s|c) multi plied by a language model P (s) as shown in Equ.
+			4.
+			s = argmax s P (s|c)P (s) (4) We combine the parts described in the previous sections to get the direct translation model: P (s|c) = ? ?:Str(?(c))=s (P (seg|c)P (com|seg) (5) ? node P (dp|node)P (ro|node)P (sub|node) ? w (sub|w)).
+			where ? is a sequence of simplification operationsand Str(?(c)) corresponds to the leaves of a simplified tree.
+			There can be many sequences of op erations that result in the same simplified sentence and we sum up all of their probabilities.
+	
+	
+			In this section, we describe how we train the prob abilities in the tables.
+			Fo

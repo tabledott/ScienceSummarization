@@ -1,0 +1,7 @@
+prove word segmentation accuracy in our experiments.
+    In the following feature templates used in our word segmenter, C refers to a Chinese character while W refers to a Chinese word.
+    Templates (a) &#8722; (c) refer to a context of five characters (the current character and two characters to its left and right).
+    C0 denotes the current character, Cn For example, given the character sequence &#8220;&#26032;&#21326;&#31038; &#35760;&#32773;&#8221;, when considering the character &#8220;&#31038;&#8221;, template (a) results in the following features C_2 =&#26032; C_1 =&#21326; C0 =&#31038; C1 =&#35760; C2 =&#32773; to be set to 1, template (b) results in the features W0 C0 :This feature captures the word context in which the current character is found.
+    For example, the character &#8220;&#31038;&#8221; within the word &#8220;&#26032;&#21326;&#31038;&#8221; will have the feature W0 C0=&#26032;&#21326;&#31038;_&#31038; set to 1.
+    This feature helps in recognizing seen words.
+    Pu( C0 ) :A punctuat

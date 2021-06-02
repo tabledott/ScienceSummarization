@@ -1,0 +1,6 @@
+on-line computation of the full set of analyses.
+    The second method involves incremental interaction with the parser during the parse to guide it through the search space of possibilities.
+    This has the advantage of being guaranteed to be computationally tractable but the potential disadvantage of requiring the user to resolve many local syntactic ambiguities that will not be incorporated into a successful analysis.
+    Nevertheless, using LR techniques this problem can be minimized and, because we do not wish to develop a system that must be able to compute all possible analyses (at some stage) in order to return the most plausible one, we have chosen the latter incremental method.
+    The interactive incremental parsing system that we implemented asks the user for a decision at each choice point during the parse.
+    However, to be usable in practice, such a system must avoid, as far as possible, presenting the user with spurious choices that could be ruled out either by using more of the left context

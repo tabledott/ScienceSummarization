@@ -1,0 +1,6 @@
+ string of terminal symbols w = (w1, . . .
+			, wn) where each wi ? T ,and define wi,k = (wi+1, . . .
+			, wk) (i.e., the sub string from wi+1 up to wk).
+			Further, let GA = (T,N,A,R), i.e., a CFG just like G except that the start symbol has been replaced with A, so, PGA(t|?)is the probability of a tree t whose root node is labeled A and PGA(w|?)
+			is the sum of the probabili ties of all trees whose root nodes are labeled A with yield w. The Inside algorithm takes as input a PCFG(G, ?) and a string w = w0,n and constructs a ta ble with entries pA,i,k for each A ? N and 0 ? i &lt; k ? n, where pA,i,k = PGA(wi,k|?), i.e., the probability of A rewriting to wi,k. The table entriesare recursively defined below, and computed by enu merating all feasible i, k and A in any order such that all smaller values of k?i are enumerated before any larger values.
+			pA,k?1,k = ?A?wk pA,i,k = ? A?B C?R ? i&lt;j&lt;k ?A?B C pB,i,j pC,j,k for all A,B,C ? N and 0 ? i &lt; j &lt; k ? n. At the end of the Inside algorithm, PG(w|?

@@ -1,0 +1,9 @@
+ated words lists.
+			The classifiers will be experimented with different feature sets to test the influ ence of different features.
+			Overall, there are about 200; 000 features in the feature space of RelWorddue to the generation of complex features over sim ple feature types.
+			For each question, up to a couple of hundreds of them are active.
+			3.3 Decision Model.
+			For both the coarse and fine classifiers, the same decision model is used to choose class labels for a question.
+			Given a confusion set and a question, SNoW outputs a density over the classes derived from the activation of each class.
+			After ranking the classes in the decreasing order of density values, we have the possible class labels C = fc 1 ; c 2 ; : : : ; c n g, with their densities P = fp 1 ; p 2 ; : : : ; p n g (where, P n 1 p i = 1, 0  p i 1, 1  i  n).
+			As dis cussed earlier, for each question we output the first k classes (1  k  5), c 1 ; c 2 ; : : : c kwhere k satis fies, k = min(argmin t ( t X 1 p i  T ); 5) (1) T is a thres

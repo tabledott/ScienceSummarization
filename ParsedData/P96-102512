@@ -1,0 +1,7 @@
+ech recognition (Jelinek 90), where there are trigram, bigram and unigram estimates.
+    (Jelinek 90) describes a deleted interpolation method which combines these estimates to give a 'smooth' estimate, and the model uses a variation of this idea: (Jelinek 90) describes how to find A values in (15) and (16) which maximise the likelihood of held-out data.
+    We have taken a simpler approach, namely: These A values have the desired property of increasing as the denominator of the more 'specific' estimator increases.
+    We think that a proper implementation of deleted interpolation is likely to improve results, although basing estimates on co-occurrence counts alone has the advantage of reduced training times.
+    The overall model would be simpler if we could do without the baseNP model and frame everything in terms of dependencies.
+    However the baseNP model is needed for two reasons.
+    First, while adjacency between words is a good indicator of whether there is some relationship between them, this indic

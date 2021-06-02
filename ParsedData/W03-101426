@@ -1,0 +1,7 @@
+ify previously unlabeled sentences from the unannotated text collection.
+    The new subjective sentences were then fed back into the Extraction Pattern Learner to complete the bootstrapping cycle depicted by the rightmost dashed line in Figure 1.
+    The Patternbased Subjective Sentence Classifier classifies a sentence as subjective if it contains at least one extraction pattern with 01&gt;5 and 02&gt;1.0 on the training data.
+    This process produced approximately 9,500 new subjective sentences that were previously unlabeled.
+    Since our bootstrapping process does not learn new objective sentences, we did not want to simply add the new subjective sentences to the training set, or it would become increasingly skewed toward subjective sentences.
+    Since HP-Obj had produced roughly 17,000 objective sentences used for training, we used the 9,500 new subjective sentences along with 7,500 of the previously identified subjective sentences as our new training set.
+    In other words, the training set that we u

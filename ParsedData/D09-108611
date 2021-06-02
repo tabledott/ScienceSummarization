@@ -1,0 +1,8 @@
+#8594; x0 E t0, a head-swapping feature fires.
+    If x0 = y0, i.e. x and y align to the same word, the same-word feature fires.
+    Similar features fire when x0 and y0 are in grandparent-grandchild, sibling, c-command, or none-of-the above relationships, or when y aligns to NULL.
+    These alignment classes are called configurations (Smith and Eisner, 2006a, and following).
+    When training is conditioned on the target words (see &#167;3 and &#167;6 below), we conjoin these configuration features with the part of speech and coarse part of speech of one or both of the source and target words, i.e. the feature template has from one to four tags.
+    In conditional training, the exponentiated scores s are normalized by a constant: Z = Et exp[s(t, t', a, w, w')].
+    For the generative model, the locally normalized generative process is explained in &#167;5.3.4.
+    Previous researchers have written fix-up rules to massage the projected links after the fact and learned a parser from the resulting trees (Hwa et

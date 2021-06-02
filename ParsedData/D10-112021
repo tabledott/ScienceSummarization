@@ -1,0 +1,9 @@
+d variational distribution q(z) over dependency structures.
+    Hyperparameters and Training Regimes Unless otherwise stated, in experiments with rule-based constraints the expected proportion of dependencies that must satisfy those constraints is set to 0.8.
+    This threshold value was chosen based on minimal tuning on a single language and ruleset (English with universal rules) and carried over to each other experimental condition.
+    A more detailed discussion of the threshold&#8217;s empirical impact is presented in Section 7.1.
+    Variational approximations to the HDP are truncated at 10.
+    All hyperparameter values are fixed to 1 except &#945; which is fixed to 10.
+    We also conduct a set of No-Split experiments to evaluate the importance of syntactic refinement; in these experiments each coarse symbol corresponds to only one refined symbol.
+    This is easily effected during inference by setting the HDP variational approximation truncation level to one.
+    For each experiment we run 50 iteratio

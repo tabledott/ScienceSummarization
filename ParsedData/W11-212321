@@ -1,0 +1,10 @@
+ad-only and uncached.
+    Memory mapping also allows the same model to be shared across processes on the same machine.
+    Along with IRSTLM and TPT, our binary format is memory mapped, meaning the file and in-memory representation are the same.
+    This is especially effective at reducing load time, since raw bytes are read directly to memory&#8212;or, as happens with repeatedly used models, are already in the disk cache.
+    Lazy mapping reduces memory requirements by loading pages from disk only as necessary.
+    However, lazy mapping is generally slow because queries against uncached pages must wait for the disk.
+    This is especially bad with PROBING because it is based on hashing and performs random lookups, but it is not intended to be used in low-memory scenarios.
+    TRIE uses less memory and has better locality.
+    However, TRIE partitions storage by n-gram length, so walking the trie reads N disjoint pages.
+    TPT has theoretically better locality because it stores ngrams near their suffixes, th

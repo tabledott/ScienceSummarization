@@ -1,0 +1,8 @@
+g not be vastly greater than its reliability on the test set.
+    Otherwise, its weight will be artificially (and detrimentally) high.
+    To ensure that such features are as noisy on the training data as the test data, we split the training into two folds.
+    We then trained the auxiliary classifiers in jacknife fashion on each fold, and using their predictions as features on the other fold.
+    The auxiliary classifiers were then retrained on the entire training set, and their predictions used as features on the development and test sets.
+    We used two such auxiliary classifiers, giving a prediction feature for each span (these classifiers predicted only the presence or absence of a bracket over that span, not bracket labels).
+    The first feature was the prediction of the generative baseline; this feature added little information, but made the learning phase faster.
+    The second feature was the output of a flat classifier which was trained to predict whether single spans, in isolation, were constitue

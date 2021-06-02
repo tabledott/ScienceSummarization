@@ -1,0 +1,9 @@
+e tasks we considered.
+    Hence we do not report them in this paper.
+    The derivation of the algorithm so far has focused on its relationship to LDA.
+    However, Labeled LDA can also be seen as an extension of the event model of a traditional Multinomial Naive Bayes classifier (McCallum and Nigam, 1998) by the introduction of a mixture model.
+    In this section, we develop the analogy as another way to understand L-LDA from a supervised perspective.
+    Consider the case where no document in the collection is assigned two or more labels.
+    Now for a particular document d with label ld, Labeled LDA draws each word&#8217;s topic variable zz from a multinomial constrained to the document&#8217;s label set, i.e. zz = ld for each word position i in the document.
+    During learning, the Gibbs sampler will assign each zz to ld while incrementing Old(wz), effectively counting the occurences of each word type in documents labeled with ld.
+    Thus in the singly labeled document case, the probability of each do

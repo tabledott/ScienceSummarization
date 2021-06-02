@@ -1,0 +1,9 @@
+ulates edge weights going into and out of the cycle.
+			It can be shown that a maximum spanning tree on the contracted graph isequivalent to a maximum spanning tree in the orig inal graph (Leonidas, 2003).
+			Hence the algorithm can recursively call itself on the new graph.
+			Naively,this algorithm runs in O(n3) time since each recur sive call takes O(n2) to find the highest incoming edge for each word and to contract the graph.
+			There are at most O(n) recursive calls since we cannot contract the graph more then n times.
+			However, 525 Tarjan (1977) gives an efficient implementation of the algorithm with O(n2) time complexity for dense graphs, which is what we need here.
+			To find the highest scoring non-projective tree for a sentence, x, we simply construct the graph Gx and run it through the Chu-Liu-Edmonds algorithm.
+			The resulting spanning tree is the best non-projective dependency tree.
+			We illustrate here the application of the Chu-Liu-Edmonds algorithm to dependency parsing on the simple examp

@@ -1,0 +1,10 @@
+in English, it is disambiguated by a method extended from (Fung et al. 1999).
+    This initial step is based on the same &#8220;find-topic-extract-sentence&#8221; principle as in earlier works.
+    The aim of this step is to roughly match the Chinese-English documents pairs that have the same topic, in order to extract parallel sentences from them.
+    Similar to previous work, comparability is defined by cosine similarity between document vectors.
+    Both the glossed Chinese document and English are represented in word vectors, with term weights.
+    We evaluated different combinations of term weighting of each word in the corpus: term frequency (tf); inverse document frequency (idf); tf.idf; and the product of a function of tf and idf.
+    The &#8221;documents&#8221; here are sentences.
+    We find that using idf alone gives the best sentence pair rank.
+    This is probably due to the fact that frequencies of bilingual word pairs are not comparable in a very-non-parallel corpus.
+    Pair-wise similarities 

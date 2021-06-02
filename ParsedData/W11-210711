@@ -1,0 +1,7 @@
+ranslations and decoding a test set using the resulting parameter set.
+    As this task does not provide a devtest set, we select a version of Meteor by exploring the effectiveness of using multiple versions of the metric to tune phrase-based translation systems for the same language pair.
+    We use the 2009 NIST Open Machine Translation Evaluation Urdu-English parallel data (Przybocki, 2009) plus 900M words of monolingual data from the English Gigaword corpus (Parker et al., 2009) to build a standard Moses system (Hoang et al., 2007) as follows.
+    Parallel data is word aligned using the MGIZA++ toolkit (Gao and Vogel, 2008) and alignments are symmetrized using the &#8220;growdiag-final-and&#8221; heuristic.
+    Phrases are extracted using standard phrase-based heuristics (Koehn et al., 2003) and used to build a translation table and lexicalized reordering model.
+    A standard SRI 5-gram language model (Stolke, 2002) is estimated from monolingual data.
+    Using Z-MERT, we tune this system to baseline met

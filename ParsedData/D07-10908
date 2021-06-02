@@ -1,0 +1,12 @@
+es and application examples, the reader is referred to (Dean and Ghemawat, 2004).
+			Our system generates language models in three main steps, as described in the following sections.
+			5.1 Vocabulary Generation.
+			Vocabulary generation determines a mapping ofterms to integer IDs, so n-grams can be stored us ing IDs.
+			This allows better compression than theoriginal terms.
+			We assign IDs according to term fre quency, with frequent terms receiving small IDs for efficient variable-length encoding.
+			All words that 2The value of 0.4 was chosen empirically based on good results in earlier experiments.
+			Using multiple values depending on the n-gram order slightly improves results.
+			occur less often than a pre-determined threshold are mapped to a special id marking the unknown word.
+			The vocabulary generation map function reads training text as input.
+			Keys are irrelevant; values are text.
+			It emits intermediate data where keys are terms and values are their counts in the current section of the text.

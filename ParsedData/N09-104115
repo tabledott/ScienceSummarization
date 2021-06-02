@@ -1,0 +1,10 @@
+ed.
+  
+  
+    Since globally optimizing the KLSUM criterion in equation (equation (2)) is exponential in the total number of sentences in a document collection, we 21We choose &#963; = 0.75 in our experiments. opted instead for a simple approximation where sentences are greedily added to a summary so long as they decrease KL-divergence.
+    We attempted more complex inference procedures such as McDonald (2007), but these attempts only yielded negligible performance gains.
+    All summary sentence ordering was determined as follows: each sentence in the proposed summary was assigned a number in [0, 1] reflecting its relative sentence position in its source document, and sorted by this quantity.
+    All topic models utilize Gibbs sampling for inference (Griffiths, 2002; Blei et al., 2004).
+    In general for concentration parameters, the more specific a distribution is meant to be, the smaller its concentration parameter.
+    Accordingly for TOPICSUM, AG = AD = 1 and AC = 0.1.
+    For HIERSUM we used AG = 0.1 a

@@ -1,0 +1,7 @@
+or the other types of sentence beads.
+    At first, we tried to estimate each A parameter independently, but we found that after training one or two A would be unnaturally small or large in order to specifically model very short or very long sentences.
+    To prevent this phenomenon, we tied the A values for the different types of sentence beads together.
+    We took To model the parameters p(L) representing the probability that the bilingual corpus is L sentence beads in length, we assumed a uniform distribution.'
+    This allows us to ignore this term, since length will not influence the probability of an alignment.
+    We felt this was reasonable becau,se it is unclear what a priori information we have on the length of a corpus.
+    In modeling the frequency of word beads, notice that there are five distinct distributions we need to model: the distribution of 1:0 word beads in 1:0 sentence beads, the distribution of 0:1 word beads in 0:1 sentence beads, and the distribution of all word beads in 1:1, 2:1, a

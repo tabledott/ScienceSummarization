@@ -1,0 +1,8 @@
+ (adding the weights of constituents when they are combined).
+    This way, we perform an exhaustive search for the tree that represents the heaviest combination of constituents that spans the entire sentence as a well-formed tree.
+    A problem with simply considering all constituents and picking the heaviest tree is that this favors recall over precision.
+    Balancing precision and recall is accomplished by discarding every constituent with weight below a threshold t before the search for the final parse tree starts.
+    In the simple case where each constituent starts out with weight 1.0 (before any merging), this means that a constituent is only considered for inclusion in the final parse tree if it appears in at least t of the m initial parse trees.
+    Intuitively, this should increase precision, since we expect that a constituent that appears in the output of more parsers to be more likely to be correct.
+    By changing the threshold t we can control the precision/recall tradeoff.
+    Henderson and Br

@@ -1,0 +1,10 @@
+e agenda size increases the decoding speed, but it could cause loss of accuracy by eliminating potentially good candidates.
+    The agenda size also affects the training time, and resulting model, since the perceptron training algorithm uses the decoder output to adjust the model parameters.
+    Table 3 shows the accuracies with ten different agenda sizes, each used for both training and testing.
+    Accuracy does not increase beyond B = 16.
+    Moreover, the accuracy is quite competitive even with B as low as 4.
+    This reflects the fact that the best segmentation is often within the current top few candidates in the agenda.2 Since the training and testing time generally increases as N increases, the agenda size is fixed to 16 for the remaining experiments.
+    Our CWS model is highly dependent upon word information.
+    Most of the features in Table 1 are related to words.
+    Table 4 shows the accuracy with various features from the model removed.
+    Among the features, vocabulary words (feature 1) and l

@@ -1,0 +1,8 @@
+for W. This is a deficient probability assignment, however useful for justifying the model parameter re-estimation.
+    The two estimates (8) and (10) are both consistent in the sense that if the sums are carried over all possible parses we get the correct value for the word level perplexity of our model.
+    The major problem we face when trying to reestimate the model parameters is the huge state space of the model and the fact that dynamic programming techniques similar to those used in HMM parameter re-estimation cannot be used with our model.
+    Our solution is inspired by an HMM re-estimation technique that works on pruned &#8212; N-best &#8212; trellises(Byrne et al., 1998).
+    Let (W, T(k)), k = 1 .
+    .
+    .
+    N be the set of hypotheses that survived our pruning strategy until the end of the parsing process for sentence W. Each of them was produced by a sequence of model actions, chained together as described in section 2; let us call the sequence of model actions that produced a given (W, T) t

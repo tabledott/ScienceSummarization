@@ -1,0 +1,9 @@
+tain nodes have been packed into one packed node.
+    Although these two nodes have the same category name (e.g., NP), they may have different attribute values.
+    When a certain test in the Lisp function refers to an attribute of the packed node, its value may not be uniquely determined.
+    In this case, the parser can no longer treat the packed node as one node, and the parser will unpack the packed node into two individual nodes again.
+    The question, then, is how often this unpacking needs to take place in practice.
+    The more frequently it takes place, the less significant it is to do local ambiguity packing.
+    However, most of sentence ambiguity comes from such phenomena as PP-attachment and conjunction scoping, and it is unlikely to require unpacking in these cases.
+    For instance, consider the noun phrase: a man in the park with a telescope, which is locally ambiguous (whether telescope modifies man or park).
+    Two NP nodes (one for each interpretation) will be packed into one node, but it

@@ -1,0 +1,7 @@
+tions are needed to represent the same underlying semantic class.
+    For example consider the case where we we need to represent the following selectional preferences for our corpus of relations: (person, location), (person, organization), and (person, crime).
+    Because JointLDA requires a separate pair of multinomials for each topic, it is forced to use 3 separate multinomials to represent the class person, rather than learning a single distribution representing person and choosing 3 different topics for a2.
+    This results in poor generalization because the data for a single class is divided into multiple topics.
+    In order to address this problem while maintaining the sharing of influence between a1 and a2, we next present LinkLDA, which represents a compromise between IndependentLDA and JointLDA.
+    LinkLDA is more flexible than JointLDA, allowing different topics to be chosen for a1, and a2, however still models the generation of topics from the same distribution for a given relation.
+    Figure 2

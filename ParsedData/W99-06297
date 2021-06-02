@@ -1,0 +1,8 @@
+3 1 In the first experiment described in this section, the task is to segment the sentence into chunks and to assign labels to these chunks.
+    This process of chunking and labeling is carried out by assigning a tag to each word in a sentence leftto-right.
+    Ramshaw and Marcus (1995) first assigned a chunk tag to each word in the sentence: I for inside a chunk, 0 for outside a chunk, and B for inside a chunk, but the preceding word is in another chunk.
+    As we want to find more than one kind of chunk, we have to further differentiate the JOB tags as to which kind of chunk (NP, VP, Prep, ADJP or ADVP) the word is in.
+    With the extended JOB tag set at hand we can tag the sentence: After having found Prep-, NP- and other chunks, we collapse Preps and NPs to PPs in a second step.
+    While the GR assigner finds relations between VPs and other chunks (cf.
+    Section 3.2), the PP chunker finds relations between prepositions and NPs 2 in a way similar to OR. assignment (see Section 3.2).
+    In the last chu

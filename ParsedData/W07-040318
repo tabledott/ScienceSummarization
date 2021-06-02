@@ -1,0 +1,10 @@
+elamed, 1998).
+    If we could tell our phrasal aligner the same thing, we could greatly improve the intuitive appeal of our alignments.
+    Again, we can leverage high-confidence links for help.
+    In the high-confidence alignments provided by GIZA++ intersection, each token participates in at most one link.
+    Links only appear when two wordbased IBM translation models can agree.
+    Therefore, they occur at points of high compositionality: the two words clearly account for one another.
+    We adopt an alignment-driven definition of compositionality: any phrase pair containing two or more highconfidence links is compositional, and can be separated into at least two non-compositional phrases.
+    By removing any phrase pairs that are compositional by this definition from our terminal productions, we can ensure that our aligner never creates such phrases during training or alignment.
+    Doing so produces far more intuitive alignments.
+    Aligned with a model trained using this non-compositional constraint

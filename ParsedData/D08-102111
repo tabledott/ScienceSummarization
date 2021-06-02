@@ -1,0 +1,9 @@
+ The number of unique paraphrases dropped from several million to 800,000.
+    The fact that we are able to produce paraphrases for a much smaller set of phrases is a downside to using syntactic constraints as we have initially proposed.
+    It means that we would not be able to generate paraphrases for phrases such as create equal.
+    Many NLP tasks, such as SMT, which could benefit from paraphrases require broad coverage and may need to paraphrases for phrases which are not syntactic constituents.
+  
+  
+    To generate paraphrases for a wider set of phrases, we change our phrase extraction heuristic again so that it produces phrase pairs for arbitrary spans in the sentence, including spans that aren&#8217;t syntactic constituents.
+    We assign every span in a sentence a syntactic label using CCG-style notation (Steedman, 1999), which gives a syntactic role with elements missing on the left and/or right hand sides.
+    The function CCG-labels describes the set of CCGlabels for the phrase spanning positions

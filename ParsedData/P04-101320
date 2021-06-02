@@ -1,0 +1,7 @@
+tion inaccurate, we treat this contribution as zero when training.
+    This means that non-prediction outputs are trained to maximize the same criteria as in the generative case. abilities which are not accurate estimates, but which are good at discriminating correct parses from incorrect parses.
+    It is this feature which gives discriminative training an advantage over generative training.
+    The network does not need to learn an accurate model of the distribution of words.
+    The network only needs to learn an accurate model of how words disambiguate previous parsing decisions.
+    When we apply discriminative training only to the most probable incorrect parses, we train the network to discriminate between the correct parse and those incorrect parses which are the most likely to be mistaken for the correct parse.
+    In this sense our approximate training method results in optimizing the decision boundary between correct and incorrect parses, rather than optimizing the match to the conditional probabili

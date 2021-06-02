@@ -1,0 +1,7 @@
+  rough estimate of the likelihood of pragmatic codes was used.
+    This procedure generates estimates based on counts of types and it is possible that this estimate could be improved by counting tokens, although the problem of polysemy in the training data would have to be overcome in some way.
+    The algorithm relies upon the calculation of probabilities gained from corpus statistics: Yarowsky used the Grolier's Encyclopaedia, which comprised a 10 million word corpus.
+    Our implementation used nearly 14 million words from the non-dialogue portion of the British National Corpus (Burnard 1995).
+    Yarowsky used smoothing procedures to compensate for data sparseness in the training corpus (detailed in Gale, Church, and Yarowsky [1992b]), which we did not implement.
+    Instead, we attempted to avoid this problem by considering only words which appeared at least 10 times in the training contexts of a particular word.
+    A context model is created for each pragmatic code by examining 50 words on either side

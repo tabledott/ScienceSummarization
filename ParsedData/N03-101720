@@ -1,0 +1,9 @@
+ add new alignment points that exist in the union of two word alignments.
+    We also always require that a new alignment point connects at least one previously unaligned word.
+    First, we expand to only directly adjacent alignment points.
+    We check for potential points starting from the top right corner of the alignment matrix, checking for alignment points for the first English word, then continue with alignment points for the second English word, and so on.
+    This is done iteratively until no alignment point can be added anymore.
+    In a final step, we add non-adjacent alignment points, with otherwise the same requirements.
+    Figure 5 shows the performance of this heuristic (base) compared against the two mono-directional alignments (e2f, f2e) and their union (union).
+    The figure also contains two modifications of the base heuristic: In the first (diag) we also permit diagonal neighborhood in the iterative expansion stage.
+    In a variation of this (diag-and), we require in the final step tha

@@ -1,0 +1,10 @@
+s: lower memory consumption, a binary file format with memory mapping, caching to increase speed, and quantization.
+    Our TRIE implementation is designed to improve upon IRSTLM using a reverse trie with improved search, bit level packing, and stateful queries.
+    IRSTLM&#8217;s quantized variant is the inspiration for our quantized variant.
+    Unfortunately, we were unable to correctly run the IRSTLM quantized variant.
+    The developers suggested some changes, such as building the model from scratch with IRSTLM, but these did not resolve the problem.
+    Our code has been publicly available and intergrated into Moses since October 2010.
+    Later, BerkeleyLM (Pauls and Klein, 2011) described ideas similar to ours.
+    Most similar is scrolling queries, wherein left-to-right queries that add one word at a time are optimized.
+    Both implementations employ a state object, opaque to the application, that carries information from one query to the next; we discuss both further in Section 4.2.
+    State is im

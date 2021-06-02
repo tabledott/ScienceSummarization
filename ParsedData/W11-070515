@@ -1,0 +1,8 @@
+tween features and categories of features.
+    Figure 1 shows an example of the tree structure we design.
+    This tree is for a synthesized tweet: @Fernando this isn&#8217;t a great day for playing the HARP!
+    :).
+    We use the following procedure to convert a tweet into a tree representation: Initialize the main tree to be &#8220;ROOT&#8221;.
+    Then tokenize each tweet and for each token: a) if the token is a target, emoticon, exclamation mark, other punctuation mark, or a negation word, add a leaf node to the &#8220;ROOT&#8221; with the corresponding tag.
+    For example, in the tree in Figure 1 we add tag ||T  ||(target) for &#8220;@Fernando&#8221;, add tag &#8220;NOT&#8221; for the token &#8220;n&#8217;t&#8221;, add tag &#8220;EXC&#8221; for the exclamation mark at the end of the sentence and add ||P ||for the emoticon representing positive mood. b) if the token is a stop word, we simply add the subtree &#8220; (STOP (&#8216;stop-word&#8217;))&#8221; to &#8220;ROOT&#8221;.
+    For instance, we add a

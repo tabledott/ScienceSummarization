@@ -1,0 +1,8 @@
+ both may be empty.
+    Each rule in the grammar, ri, is generated from its root symbol, zi, by first choosing a rule type ti E {TERM, NON-TERM} from a Bernoulli distribution, ri &#8212; Bernoulli(-y).
+    We treat -y as a random variable with its own prior, -y &#8212; Beta(aR, aR) and integrate out the parameters, -y.
+    This results in the following conditional probability for ti: where n&#8722;i ri,zi is the number of times ri has been used to rewrite zi in the set of all other rules, r&#8722;i, and n&#8722;i r,zi is the total count of rewriting zi.
+    The Dirichlet (and thus Beta) distribution are exchangeable, meaning that any permutation of its events are equiprobable.
+    This allows us to reason about each event given previous and subsequent events (i.e., treat each item as the &#8216;last&#8217;.)
+    When ti = NON-TERM, we generate a binary or ternary non-terminal production.
+    The nonterminal sequence and alignment are drawn from (z, a) &#8212; ON zi and, as before, we define a prior over the p

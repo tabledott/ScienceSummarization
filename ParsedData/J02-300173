@@ -1,0 +1,6 @@
+t over the argmax expression: This leaves us with an expression in terms of the prior for frame element groups of a particular target word P({r1...n}  |t), the local probability of a frame element given a constituent&#8217;s features P(ri  |fi, t) on which our previous system was based, and the individual priors for the frame elements chosen P(ri  |t).
+    This formulation can be used to assign roles either when the frame element boundaries are known or when they are not, as we will discuss later in this section.
+    Calculating empirical FEG priors from the training data is relatively straightforward, but the sparseness of the data presents a problem.
+    In fact, 15% of the test sentences had an FEG not seen in the training data for the target word in question.
+    Using the empirical value for the FEG prior, these sentences could never be correctly classified.
+    For this reason, we introduce a smoothed estimate of the FEG prior consisting of a linear interpolation of the empirical FEG prior and the produ

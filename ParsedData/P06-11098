@@ -1,0 +1,7 @@
+se trees from the chart (see Bod 2006) and next converts the subtrees from these parse trees into a PCFG-reduction (Goodman 2003).
+    Since the computation of the most probable parse tree is NP-complete (Sima'an 1996), U-DOP estimates the most probable tree from the 100 most probable derivations using Viterbi n-best parsing.
+    We could also have used the more efficient k-best hypergraph parsing technique by Huang and Chiang (2005), but we have not yet incorporated this into our implementation.
+    To give an example of the dependencies that U-DOP can take into account, consider the following subtrees in figure 5 from the trees in probabilities of its distinct derivations.
+    Let tid be the i-th subtree in the derivation d that produces tree T, then the probability of T is given by figure 4 (where we again add words for readability).
+    These subtrees show that U-DOP takes into account both contiguous and non-contiguous substrings.
+    Of course, if we only had the sentence Investors suffered heavy losses

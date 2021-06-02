@@ -1,0 +1,8 @@
+ion in the past (Ortmanns et al., 1997).
+    This method combines both advantages in the following way: a word graph is constructed using a bigram language model and is then rescored with a trigram language model.
+    The rescoring algorithm is based on dynamic programming; a description can be found in (Ortmanns et al., 1997).
+    The results of the comparison of the one-pass and the two-pass search are given in Section 5.
+    We use A* search for finding the N best sentences in a word graph: starting in the root of the graph, we successively expand the sentence hypotheses.
+    The probability of the partial hypothesis is obtained by multiplying the probabilities of the edges expanded for this sentence.
+    As rest cost estimation, we use the probabilities determined in a backward pass as follows: for each node in the graph, we calculate the probability of a best path from this node to the goal node, i.e. the highest probability for completing a partial hypothesis.
+    This rest cost estimation is perfect be

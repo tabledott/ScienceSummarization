@@ -1,0 +1,7 @@
+r changes the number of line segments nor their relative order in the envelope, and therefore it preserves the structure of the convex hull.
+    As a consequence, we can propagate the resulting envelope over an outgoing arc E to a successor node v1~' = headp(E).
+    Other incoming arcs for v1may be associated with different upper envelopes, and all that remains is to merge these envelopes into a single combined envelope.
+    This is, however, easy to accomplish since the combined envelope is simply the convex hull of the union over the line sets which constitute the individual envelopes.
+    Thus, by merging the arrays that store the line segments for the incoming arcs and applying Algorithm 1 to the resulting array we obtain the combined upper envelope for all partial translation candidates that are associated with paths starting at the source node s and ending in v1.
+    The correctness of this procedure is based on the following two observations: again.
+    Proof: Suppose that such a continuation exists, t

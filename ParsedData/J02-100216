@@ -1,0 +1,8 @@
+ger.
+    The penalty will then decrease linearly with Size(A)+Size(B) so long as k &lt; Size(A)+ Size(B) &lt; 2k.
+    To be more exact, the penalty actually decreases linearly as the size of either segment decreases below k. This is intuitively clear from the simple observation that in order to incur a penalty at any range ri for a false negative, it has to be the case that ri &gt; ai.
+    In order for this to be true, both the segment to the left and the segment to the right of the missed boundary have to be of size greater than k; otherwise, the penalty can only be equal to the size of the smaller segment.
+    When Size(A)+Size(B) &lt; k, the penalty disappears completely, since then the probe&#8217;s interval is larger than the combined size of both segments, making it not sensitive enough to detect the false negative.
+    It should be noted that fixing Problem 2 would at least partially fix this bias as well.
+    Now, consider false positives (extraneous boundaries).
+    For average segment size and a uni

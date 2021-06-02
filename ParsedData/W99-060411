@@ -1,0 +1,8 @@
+t that a source word is aligned with two or more target words.
+    Therefore, lexical correspondences like 'Zahnarzttermin' for dentist's appointment cause problems because a single source word must be mapped on two or more target words.
+    To solve this problem for the alignment in training, we first reverse the translation direction, i. e. English is now the source language, and German is the target language.
+    For this reversed translation direction, we perform the usual training and then check the alignment paths obtained in the maximum approximation.
+    Whenever a German word is aligned with a sequence of the adjacent English words, this sequence is added to the English vocabulary as an additional entry.
+    As a result, we have an extended English vocabulary.
+    Using this new vocabulary, we then perform the stan2.3 Extension to Handle Non-Monotonicity Our approach assumes that the alignment is monotone with respect to the word order for the lion's share of all word alignments.
+    For the translat

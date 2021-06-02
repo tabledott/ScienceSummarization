@@ -1,0 +1,8 @@
+ic approach, and then uses the prediction of entities in addition to other local features to learn the relation identifier.
+    Note that although the true labels of entities are known here when training the relation identifier, this may not be the case in general NLP problems.
+    Since only the predicted entity labels are available in testing, learning on the predictions of the entity classifier presumably makes the relation classifier more tolerant to the mistakes of the entity classifier.
+    In fact, we also observe this phenomenon empirically.
+    When the relation classifier is trained using the true entity labels, the performance is much worse than using the predicted entity labels.
+    LP, is our global inference procedure.
+    It takes as input the constraints between a relation and its entity arguments, and the output (the estimated probability distribution of labels) of the basic classifiers.
+    Note that LP may change the predictions for either entity labels or relation labels, while pipeline fu

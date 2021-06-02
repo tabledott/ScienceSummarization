@@ -1,0 +1,6 @@
+o(x,washington), ?y.depart time(y)) &amp; NP argmax(?x.flight(x) ? to(x,washington), ?y.depart time(y))Note that in this case the substring the latest has cat egory NP/N , and this prevents a naive parse wherethe latest first combines with flight, and to washington then combines with the latest flight.
+			The func tional composition rules effectively allow the latest to take scope over flight and to washington, in spite of the fact that the latest appears between the twoother sub-strings.
+			Examples like this are quite fre quent in domains such as ATIS.We add features in the model which track the oc currences of each of these four new combinators.Specifically, we have four new features in the def inition of f; each feature tracks the number of times one of the combinators is used in a CCG parse.
+			Themodel learns parameter values for each of these fea tures, allowing it to learn to penalise these rules to the correct extent.
+			3.2 Additional Rules of Type-Raising.
+			We now describe new CCG operations desi

@@ -1,0 +1,5 @@
+ set of initial parameter estimates can improve Model 1 alignment accuracy, we use a heuristic model based on the loglikelihood-ratio (LLR) statistic recommended by Dunning (1993).
+    We chose this statistic because it has previously been found to be effective for automatically constructing translation lexicons (e.g., Melamed, 2000; Moore, 2001).
+    In our application, the statistic can be defined by the following formula: In this formula t and s mean that the corresponding words occur in the respective target and source sentences of an aligned sentence pair, &#172;t and &#172;s mean that the corresponding words do not occur in the respective sentences, t? and s? are variables ranging over these values, and C(t?, s?) is the observed joint count for the values of t? and s?.
+    All the probabilities in the formula refer to maximum likelihood estimates.1 These LLR scores can range in value from 0 to N &#183;log(2), where N is the number of sentence pairs in the training data.
+    The LLR score for a pair of w

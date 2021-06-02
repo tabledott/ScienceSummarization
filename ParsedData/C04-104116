@@ -1,0 +1,8 @@
+raints, on the size of the packed charts used for model estimation.
+			The disk usage is the space taken on disk by the charts,and the memory usage is the space taken in memory during the estimation process.
+			The training sen tences are parsed using a number of nodes from a 64-node Beowulf cluster.3 The time taken to parse the training sentences depends on the supertagging and parsing constraints, and the number of nodes used, but is typically around 30 minutes.
+			The first row of the table corresponds to using the least restrictive ? value of 0.01, and reverting to ? = 0.05, and finally ? = 0.1, if the chart size exceeds some threshold.
+			The threshold was set at300,000 nodes in the chart.
+			Packed charts are created for approximately 94% of the sentences in sec tions 2-21 of CCGbank.
+			The coverage is not 100%because, for some sentences, the parser cannot pro vide an analysis, and some charts exceed the node limit even at the ? = 0.1 level.
+			This strategy was used in our earlier work (Clark and Curr

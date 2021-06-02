@@ -1,0 +1,8 @@
+can be weakened in certain ways while maintaining polynomial parser runtime (Eisner and Satta, 1999), the same does not happen in the nonprojective case, where finding the highest-scoring tree becomes NP-hard (McDonald and Satta, 2007).
+    Approximate algorithms have been employed to handle models that are not arc-factored (although features are still fairly local): McDonald and Pereira (2006) adopted an approximation based on O(n3) projective parsing followed by a hillclimbing algorithm to rearrange arcs, and Smith and Eisner (2008) proposed an algorithm based on loopy belief propagation.
+  
+  
+    Our approach will build a graph-based parser without the drawback of a restriction to local features.
+    By formulating inference as an ILP, nonlocal features can be easily accommodated in our model; furthermore, by using a relaxation technique we can still make learning tractable.
+    The impact of LP-relaxed inference in the learning problem was studied elsewhere (Martins et al., 2009).
+    A linear program (L

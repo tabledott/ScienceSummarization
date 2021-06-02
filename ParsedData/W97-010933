@@ -1,0 +1,6 @@
+orithm backed-off to a combined frequency count of the occurences of matches on three words only, i.e. on the verb-noun-preposition, verb-prepositiondescription and noun-preposition-description.
+    If no match was found on any of the three words combination, the algorithm backed-off to a combined match on two words, i.e. one of the content words with a Preposition.
+    If there was further no match found on two words, the attachment type was assigned according to the prepositional statistics, or, if the preposition was not present in the training corpus, the quadruple was assigned the adjectival default.
+    There was a substantial decrease of accuracy between the triples and doubles stage.
+    Our algorithm, on the other hand, has substantially reduced the number of classifications based on fewer words.
+    This is because at the top of the decision tree all of the semantic tops of all of the content words of the given quadruple are compared with the semantic generalisations of the training examples represe

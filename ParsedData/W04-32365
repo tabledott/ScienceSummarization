@@ -1,0 +1,5 @@
+ion symbol is usually a good indication of a word boundary.
+    This feature checks whether the current character is a punctuation symbol (such as &#8220;&#12290;&#8221;, &#8220;-&#8221;, &#8220;,&#8221;).
+    T(C )T(C )T(C )T( C )T(C ) :This feature is especially helpful in predicting the word segmentation of dates and numbers, whose exact characters may not have been seen in the training text.
+    Four type classes are defined: numbers represent class 1, dates (&#8220;&#26085;&#8221;, &#8220;&#26376;&#8221;, &#8220;&#24180;&#8221;, the Chinese character for &#8220;day&#8221;, &#8220;month&#8221;, &#8220;year&#8221;, respectively) represent class 2, English letters represent class 3, and other characters represent class 4.
+    For example, when considering the character &#8220;&#24180;&#8221; in the character sequence &#8220;&#20061;&#12295;&#24180;&#20195;W&#8221;, the feature T (C_2) ... T (C2) =11243 will be set to 1 ( &#8220;&#20061;&#8221; and &#8220;&#12295;&#8221; are the Chinese characters for &#8220

@@ -1,0 +1,10 @@
+from the evaluation (but not from training).
+    In contrast, Diab et al. (2004) treat NO FUNC like any other POS tag, but it is unclear whether this is meaningful.
+    Thus, when comparing results from different approaches which make different choices about the data (for example, the NO FUNC cases), one should bear in mind that small differences in performance are probably not meaningful.
+  
+  
+    We now describe how we train classifiers for the morphological features in Figure 2.
+    We train one classifier per feature.
+    We use Yamcha (Kudo and Matsumoto, 2003), an implementation of support vector machines which includes Viterbi decoding.6 As training features, we use two sets.
+    These sets are based on the ten morphological features in Figure 2, plus four other &#8220;hidden&#8221; morphological features, for which we do not train classifiers, but which are represented in the analyses returned by the morphological analyzer.
+    The reason we do not train classifiers for the hidden features is that th

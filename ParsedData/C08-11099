@@ -1,0 +1,7 @@
+osition errors, and our extraneous use filters handle a quarter of that 18%.Thresholding: The final step for the preposi tion error detection system is a set of thresholds that allows the system to skip cases that are likely to result in false positives.
+			One of these is wherethe top-ranked preposition and the writer?s prepo sition differ by less than a pre-specified amount.
+			This was also meant to avoid flagging cases where the system?s preposition has a score only slightly higher than the writer?s preposition score, such as: ?My sister usually gets home around 3:00?
+			(writer: around = 0.49, system: by = 0.51).
+			In these cases, the system?s and the writer?s prepositions both fit the context, and it would be inappropriate to claimthe writer?s preposition was used incorrectly.
+			Another system threshold requires that the probability of the writer?s preposition be lower than a pre specified value in order for it to be flagged as anerror.
+			The thresholds were set so as to strongly fa vor precision ove

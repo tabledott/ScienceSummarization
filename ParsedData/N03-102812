@@ -1,0 +1,8 @@
+er (curvature) information to find search directions.
+    As discussed in the previous section, it is not practical to obtain exact curvature information for CRF training.
+    Limited-memory BFGS (L-BFGS) is a second-order method that estimates the curvature numerically from previous gradients and updates, avoiding the need for an exact Hessian inverse computation.
+    Compared with preconditioned CG, L-BFGS can also handle large-scale problems but does not require a specialized Hessian approximations.
+    An earlier study indicates that L-BFGS performs well in maximum-entropy classifier training (Malouf, 2002).
+    There is no theoretical guidance on how much information from previous steps we should keep to obtain sufficiently accurate curvature estimates.
+    In our experiments, storing 3 to 10 pairs of previous gradients and updates worked well, so the extra memory required over preconditioned CG was modest.
+    A more detailed description of this method can be found elsewhere (Nocedal and Wright, 1999).

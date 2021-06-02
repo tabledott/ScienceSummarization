@@ -1,0 +1,7 @@
+on instances of 7,300 relations between 9 million entities.
+    The intuition of distant supervision is that any sentence that contains a pair of entities that participate in a known Freebase relation is likely to express that relation in some way.
+    Since there may be many sentences containing a given entity pair, we can extract very large numbers of (potentially noisy) features that are combined in a logistic regression classifier.
+    Thus whereas the supervised training paradigm uses a small labeled corpus of only 17,000 relation instances as training data, our algorithm can use much larger amounts of data: more text, more relations, and more instances.
+    We use 1.2 million Wikipedia articles and 1.8 million instances of 102 relations connecting 940,000 entities.
+    In addition, combining vast numbers of features in a large classifier helps obviate problems with bad features.
+    Because our algorithm is supervised by a database, rather than by labeled text, it does not suffer from the problems of ov

@@ -1,0 +1,10 @@
+ complicated cases.
+    For example, unification of {A B} with {C DI yields {(A C) (A D) (B C) (B D)) assuming that the two values in each tuple are compatible.
+    Any pairs that could not be unified are left out.
+    The complex disjunction is added as a positive constraint to all of the values that appear in it.
+    The result of unifying {(A C) (B C)) with {(D F) (E F)} is {(A CD F) (A C E F) (B CD F) (B C E F)), again assuming that no alternative can initially be ruled out.
+    As for generalization, things are considerably simpler.
+    The result of (Generalize A B) inherits both negative and positive constraints of A and B.
+    This follows from the fact that the generalization of A and B is the maximal subgraph of A and B that will unify with either one them.
+    Consequently, it is subject to any constraint that affects A or B.
+    This is analogous to the fact that, in set theory, In our current implementation, negative constraints are dropped as soon as they become redundant as far as unification i

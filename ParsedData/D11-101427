@@ -1,0 +1,10 @@
+ed to randomly initialized word vectors (setting: random word init).
+    This shows that our method can work well even in settings with little training data.
+    We visualize the semantic vectors that the recursive autoencoder learns by listing n-grams that give the highest probability for each polarity.
+    Table 5 shows such n-grams for different lengths when the RAE is trained on the movie review polarity dataset.
+    On a 4-core machine, training time for the smaller corpora such as the movie reviews takes around 3 hours and for the larger EP corpus around 12 hours until convergence.
+    Testing of hundreds of movie reviews takes only a few seconds.
+    In this experiment, we show how the hyperparameter &#945; influences accuracy on the development set of one of the cross-validation splits of the MR dataset.
+    This parameter essentially trade-off the supervised and unsupervised parts of the objective.
+    Fig.
+    5 shows that a larger focus on the supervised objective is important but that a weight of 

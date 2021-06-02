@@ -1,0 +1,7 @@
+inear models, as with most probability estimation methods, require that there be a finite set of features on which the probability is conditioned.
+    The standard way to handle this problem is to hand-craft a finite set of features which provides a sufficient summary of the history (Ratnaparkhi, 1999; Collins, 1999; Charniak, 2000).
+    The probabilities are then assumed to be independent of all the information about the history which is not captured by the chosen features.
+    The difficulty with this approach is that the choice of features can have a large impact on the performance of the system, but it is not feasible to search the space of possible feature sets by hand.
+    In this work we use a method for automatically inducing a finite representation of the derivation history.
+    The method is a form of multi-layered neural network called Simple Synchrony Networks (Lane and Henderson, 2001; Henderson, 2000).
+    The output layer of this network is the log-linear model which computes the function , dis

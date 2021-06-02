@@ -1,0 +1,8 @@
+s a normalization constant and &#946; is the normalized backing-off distribution.
+    To compute the counts, we use the same word alignment matrix as for the extraction of the bilingual phrases.
+    The symbol N(e) denotes the unigram count of a word e and N(f, e) denotes the count of the event that the target language word e is aligned to the source language word f. If one occurrence of e has N &gt; 1 aligned source words, each of them contributes with a count of 1/N.
+    The formula for &#945;(e) is: This formula is a generalization of the one typically used in publications on language modeling.
+    This generalization is necessary, because the lexicon counts may be fractional whereas in language modeling typically integer counts are used.
+    Additionally, we want to allow discounting values d greater than one.
+    One effect of the discounting parameter d is that all lexicon entries with a count less than d are discarded and the freed probability mass is redistributed among the other entries.
+    As backi

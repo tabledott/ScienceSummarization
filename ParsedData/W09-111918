@@ -1,0 +1,8 @@
+related, but not identical, to distributional similarity (for details, see (Brown et al., 1992) and (Liang, 2005)).
+    For example, since the words Friday and Tuesday appear in similar contexts, the Brown algorithm will assign them to the same cluster.
+    Successful abstraction of both as a day of the week, addresses the data sparsity problem common in NLP tasks.
+    In this work, we use the implementation and the clusters obtained in (Liang, 2005) from running the algorithm on the Reuters 1996 dataset, a superset of the CoNLL03 NER dataset.
+    Within the binary tree produced by the algorithm, each word can be uniquely identified by its path from the root, and this path can be compactly represented with a bit string.
+    Paths of different depths along the path from the root to the word provide different levels of word abstraction.
+    For example, paths at depth 4 closely correspond to POS tags.
+    Since word class models use large amounts of unlabeled data, they are essentially a semi-supervised techniq

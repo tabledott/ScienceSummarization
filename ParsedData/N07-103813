@@ -1,0 +1,9 @@
+ctice, we take an uncalibrated agreement model a' and reweight it with a tuning parameter: a = &#945;a'.
+    The value of &#945; is estimated using the development set.
+    We assume that the griefs of the ranking models are comparable since they are jointly trained. as well as the (previously trained) agreement model to determine the predicted rank for each aspect.
+    In concrete terms, for every training instance x, we predict the ranks of all aspects simultaneously (step 2 in Figure 1).
+    Then, for each aspect we make a separate update based on this joint prediction (step 4 in Figure 1), instead of using the individual models&#8217; predictions.
+    Agreement model The agreement model a is assumed to have been previously trained on the same training data.
+    An instance is labeled with a positive label if all the ranks associated with this instance are equal.
+    The rest of the instances are labeled as negative.
+    This model can use any standard training algorithm for binary classification such as P

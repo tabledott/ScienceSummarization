@@ -1,0 +1,8 @@
+ this section, we are concerned with the problem of finding semantic arguments and labeling them with their correct semantic role given raw text as input.
+    In order to perform this task, we parse this raw text using a combination of supertagging and LDA, which is a method that yields partial dependency parses annotated with TAG structures.
+    We perform this task using both SEM-TAG and SYNT-TAG.
+    For the former, after supertagging and LDA, the task is accomplished because the TAG structures are already annotated with semantic role information.
+    For the latter, we use the best performing model from Section 6 in order to find semantic roles given syntactic features from the parse.
+    Supertagging (Bangalore and Joshi (1999)) is the task of assigning a single supertag to each word given raw text as input.
+    For example, given the sentence Prices are falling, a supertagger might return the supertagged sentence in Figure 4.
+    Supertagging returns an almost-parse in the sense that it is performing mu

@@ -1,0 +1,7 @@
+ed by a combinatorial explosion of alignments.
+			The set of alignments is therefore pruned in two ways.
+			First, we keep track at all times of the score of the best alignment we have seen so far, and any new alignment whose overall score is worse than the bestscore so far by more than a fixed difference D is im mediately discarded.
+			Second, for each instance of a particular alignment type, when we have completed creating modified versions of previous alignments toinclude that instance, we merge the set of new align ments that we have created into the set of previous alignments.
+			When we do this merge, the resulting set of alignments is sorted by overall score, and only the N best alignments are kept, for a fixed N . Some details of the search differ between the LLR-based model and the CLP-based model.
+			Onedifference is how we add links to existing align ments.
+			In both cases, if there are no existing links involving any of the words involved in the new link, we simply add it (keeping a copy of the o

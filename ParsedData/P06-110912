@@ -1,0 +1,9 @@
+are next reestimated by the formulas above.
+    We may in principle start out with any initial parameters, including random initializations, but since ML estimation is known to be very sensitive to the initialization of the parameters, it is convenient to start with parameters that are known to perform well.
+    To avoid overtraining, ML-DOP uses the subtrees from one half of the training set to be trained on the other half, and vice versa.
+    This crosstraining is important since otherwise UML-DOP would assign the training set trees their empirical frequencies and assign zero weight to all other subtrees (cf.
+    Prescher et al. 2004).
+    The updated probabilities are iteratively reestimated until the decrease in cross-entropy becomes negligible.
+    Unfortunately, no compact PCFG-reduction of MLDOP is known.
+    As a consequence, parsing with ML-DOP is very costly and the model has hitherto never been tested on corpora larger than OVIS (Bonnema et al. 1997).
+    Yet, we will show that by clever pruning we

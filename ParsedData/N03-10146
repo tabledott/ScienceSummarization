@@ -1,0 +1,5 @@
+ the same configuration (step 9).
+    Each parser action changes the stack and makes an associated specification of a characteristic of the parse tree.
+    The possible parser actions are the following, where is a tag-word pair, are nonterminal labels, and is a stack of zero or more node labels. shift(w) map stack to and specify that is the next word in the sentence (steps 1, 4, and 6) project(Y) map stack to and specify that is the parent of in the tree (steps 2, 3, and 5) attach map stack to and specify that is the parent of in the tree (steps 7, 8, and 9) modify map stack to and specify that is the modifier parent of in the tree (i.e. is Chomsky adjoined to ) (not illustrated) Any valid sequence of these parser actions is a derivation for a phrase structure tree.
+    The neural network estimates the parameters in two stages, first computing a representation of the derivation history and then computing a probability distribution over the possible decisions given that history.
+    For the second stage, compu

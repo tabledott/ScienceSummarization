@@ -1,0 +1,8 @@
+strated that the training set can, in fact, be much smaller than might have been expected.
+    One rule of thumb suggests that the training set needs to be large enough to contain on average ten instances of each type of tag sequence that occurs.
+    This would imply that a tri.-tag model using 47 possible parts of speech would need a bit more than 1 million words of training, if all possible tag sequences occur.
+    However, we found that much less training data is necessary, since many possible sequences do not occur.
+    It can be shown that if the average number of tokens of each tri-gram that has been observed is ten, then the lower bound on the probability of new tri-grams is 1/10.
+    Thus the likelihood of a new tri-gram is fairly low.
+    While theoretically the set of possible events is all permutations of the tags, in practice only a relatively small number of tri-tag sequences actually occur.
+    Out of about 97,000 possible triples, we found only 6,170 unique triples when we trained on 64,000 wor

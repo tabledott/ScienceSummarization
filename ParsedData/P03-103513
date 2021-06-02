@@ -1,0 +1,11 @@
+Chinese counterpart &#8216;noun + &#20204; 4 plural noun&#8217; whereas others (e.g.
+    &#21335; &#29916; &#8216;pumpkins&#8217;) cannot.
+    Second, the operations required by Chinese morphological analysis such as copying in reduplication, merging and splitting, cannot be implemented using the current finite-state networks3.
+    Our solution is the extended lexicalization.
+    We simply collect all morphologically derived word forms of the above five types and incorporate them into the lexicon, called morph lexicon.
+    The procedure involves three steps: (1) Candidate generation.
+    It is done by applying a set of morphological rules to both the word lexicon and a large corpus.
+    For example, the rule &#8216;noun + &#20204; 4 plural noun&#8217; would generate candidates like &#26379;&#21451;&#20204;.
+    (2) Statistical filtering.
+    For each candidate, we obtain a set of statistical features such as frequency, mutual information, left/right context dependency from a large corpus.
+    We then use an i

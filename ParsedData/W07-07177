@@ -1,0 +1,7 @@
+o smaller training corpora), then extracted component-specific relative frequencies for phrase pairs.
+    Lexical probabilities were also derived from the global IBM2 model, and were not adapted.
+    The procedure for training component-specific language models on the target halves of each corpus component is identical to the procedure for the global model described in section 2.
+    In addition to the component models, we also used a large static global model.
+    The most commonly-used framework for mixture models is a linear one: where p(x|h) is either a language or translation model; pc(x|h) is a model trained on component c, and &#955;c is the corresponding weight.
+    An alternative, suggested by the form of the global model, is a loglinear combination: where we write &#945;c to emphasize that in this case the mixing parameters are global weights, like the weights on the other features within the loglinear model.
+    This is in contrast to linear mixing, where the combined model p(x|h) receives a loglin

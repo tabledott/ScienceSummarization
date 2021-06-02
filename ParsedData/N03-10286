@@ -1,0 +1,6 @@
+ variable sequences X and Y have the same length, and use x = x1 &#183; &#183; &#183; xn and y = y1 &#183; &#183; &#183; yn for the generic input sequence and label sequence, respectively.
+    A CRF on (X, Y ) is specified by a vector f of local features and a corresponding weight vector &#57738;.
+    Each local feature is either a state feature s(y, x, i) or a transition feature t(y, y&#57741;, x, i), where y, y&#57741; are labels, x an input sequence, and i an input position.
+    To make the notation more uniform, we also write for any state feature s and transition feature t. Typically, features depend on the inputs around the given position, although they may also depend on global properties of the input, or be non-zero only at some positions, for instance features that pick out the first or last labels.
+    The CRF&#8217;s global feature vector for input sequence x and label sequence y is given by where i ranges over input positions.
+    The conditional probability distribution defined by the CRF is then

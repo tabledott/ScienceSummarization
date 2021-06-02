@@ -1,0 +1,7 @@
+ons of word sense disambiguation, the lack of resources like WordNet, and the lack of general knowledge in a form suitable for automatic inference tasks.To introduce an element of robustness into our ap proach, we use the models as produced by the modelbuilders to measure the ?distance?
+			from an entail ment.
+			The intuition behind it is as follows.
+			If His entailed by T, the model for T+H is not informa tive compared to the one for T, and hence does not introduce new entities.
+			Put differently, the domain size for T+H would equal the domain size of T. Incontrast, if T does not entail H, H normally intro duce some new information (except when it contains negated information), and this will be reflected in the domain size of T+H, which then is larger than the domain size of T. It turns out that this differencebetween the domain sizes is a useful way of measur ing the likelihood of entailment.
+			Large differences are mostly not entailments, small differences mostly are.
+			Consider the following example:

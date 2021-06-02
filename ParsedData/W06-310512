@@ -1,0 +1,7 @@
+mentations, it nonetheless plays a crucial role during training.
+    We will characterize this phenomenon through aggregate statistics and translation examples shortly, but begin by demonstrating the model&#8217;s capacity to overfit the training data.
+    Let us first return to the motivation behind introducing and learning phrases in machine translation.
+    For any language pair, there are contiguous strings of words whose collocational translation is non-compositional; that is, they translate together differently than they would in isolation.
+    For instance, chat in French generally translates to cat in English, but appeler un chat un chat is an idiom which translates to call a spade a spade.
+    Introducing phrases allows us to translate chat un chat atomically to spade a spade and vice versa.
+    While introducing phrases and parameterizing their translation probabilities with a surface heuristic allows for this possibility, statistical re-estimation would be required to learn that chat should never b

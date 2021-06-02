@@ -1,0 +1,8 @@
+xtRels data include a no-relation category which consists of sentences from the same text that are separated by at least three other sentences.
+    To identify features useful for classifying comparison vs other relations, we chose a random sample of 5000 examples for Contrast and 5000 Other relations (2500 each of Cause and No-relation).
+    For the complete set of 10,000 examples, word pair features were computed.
+    After removing word pairs that appear less than 5 times, the remaining features were ranked by information gain using the MALLET toolkit1.
+    Table 1 lists the word pairs with highest information gain for the Contrast vs. Other and Cause vs. Other classification tasks.
+    All contain very frequent stop words, and interestingly for the Con1mallet.cs.umass.edu trast vs. Other task, most of the word pairs contain discourse connectives.
+    This is certainly unexpected, given that word pairs were formed by deleting the discourse connectives from the sentences expressing Contrast.
+    Word pairs 

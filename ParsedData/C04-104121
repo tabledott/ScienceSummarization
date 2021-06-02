@@ -1,0 +1,9 @@
+ closely with the supertagger.
+			In effect, the parser is using the grammar to decide if the categories provided by thesupertagger are acceptable, and if not the parser re quests more categories.
+			The parser uses the 5 levels given in Table 2, starting with ? = 0.1 and moving through the levels to ? = 0.01k=100 . The advantage of this approach is that parsing speeds are much higher.
+			We also show that our new approach slightly increases parsing accuracy over the previous method.
+			This suggests that, given our current parsing model, it is better to rely largely on the supertagger to provide the correct categoriesrather than use the parsing model to select the cor rect categories from a very large derivation space.
+			5.1 Results (Parse Times).
+			The results in this section are all using the best per forming normal-form model in Clark and Curran (2004), which corresponds to row 3 in Table 3.
+			All experiments were run on a 2.8 GHZ Intel Xeon P4 with 2 GB RAM.
+			Table 4 gives parse times for the 2,401 

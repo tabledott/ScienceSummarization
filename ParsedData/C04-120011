@@ -1,0 +1,9 @@
+N as the only possible opinion holders.
+			For sentences with more than one Holder, we chose the one closest to the Topic phrase, for simplicity.
+			This is a very crude step.
+			A more sophisticated approach would employ a parser to identify syntactic relationships between each Holder and all dependent expressions of sentiment.
+			2.2.2 Sentiment Region Lacking a parse of the sentence, we were faced with a dilemma: How large should a region be?
+			We therefore defined the sentiment region in various ways (see Table 3) and experimented with their effectiveness, as reported in Section 3.
+			Window1: full sentence Window2: words between Holder and Topic Window3: window2 ? 2 words Window4: window2 to the end of sentence Table 3: Four variations of region size.
+			2.2.3 Classification Models We built three models to assign a sentiment category to a given sentence, each combining the individual sentiments of sentiment-bearing words, as described above, in a different way.
+			Model 0 simply considers the polarities

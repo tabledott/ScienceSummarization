@@ -1,0 +1,11 @@
+ng being useful (necessary, even) in improving low-level OCR.
+    There are several directions for improving accuracy.
+    The biggest problem is that raw English frequency counts are not the best indication of whether a word is a possible source for transliteration.
+    Alternative data collection methods must be considered.
+    We may also consider changes to the model sequence itself.
+    As we have presented it, our hypothetical human transliterator produces Japanese sounds from English sounds only, without regard for the original English spelling.
+    This means that English homonyms will produce exactly the same katakana strings.
+    In reality, though, transliterators will sometimes key off spelling, so that tonya and tanya produce toonya and taanya.
+    It might pay to carry along some spelling information in the English pronunciation lattices.
+    Sentential context should be useful for determining correct translations.
+    It is often clear from a Japanese sentence whether a katakana phrase is a per

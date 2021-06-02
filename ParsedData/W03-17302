@@ -1,0 +1,10 @@
+ognition with word segmentation and POS tagging.
+    Atom segmentation, the bottom level of HHMM, is an initial step.
+    Here, atom is defined to be the minimal segmentation unit that cannot be split in any stage.
+    The atom consists of Chinese character, punctuation, symbol string, numeric expression and other non-Chinese char string.
+    Any word is made up of an atom or more.
+    Atom segmentation is to segment original text into atom sequence and it provides pure and simple source for its parent HMM.
+    For instance, a sentence like &amp;quot;2002.9,ICTCLAS (6,nEh:gfFApRtti&amp;quot; (The free source codes of ICTCLAS was distributed in September, 2002) would be segmented as atom sequence &amp;quot;2002.9/,/ICTCLAS/&#65533;J/n/Eh/&#65533;/q/fF /44M/M/&#65533;/&amp;quot;.
+    In this HMM, the original symbol is observation while the atom is state.
+    We skip the detail of operation in that it's a simple application on the basis of HMM.
+    POS tagging and role tagging using Viterbi are also skipped bec

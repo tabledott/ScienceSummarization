@@ -1,0 +1,12 @@
+ from 86.6% to 86.1%.
+    We see a similar degradation as NANC data is added to the training set as well.
+    We are not yet able to explain this unusual behavior.
+    We now turn to the scenario where we have some labeled in-domain data.
+    The most obvious way to incorporate labeled in-domain data is to combine it with the labeled out-of-domain data.
+    We have already seen the results (Gildea, 2001) and (Bacchiani et al., 2006) achieve in Table 1.
+    We explore various combinations of BROWN, WSJ, and NANC corpora.
+    Because we are mainly interested in exploring techniques with self-trained models rather than optimizing performance, we only consider weighting each corpus with a relative weight of one for this paper.
+    The models generated are tuned on section 24 from WSJ.
+    The results are summarized in Table 3.
+    While both WSJ and BROWN models benefit from a small amount of NANC data, adding more than 250k NANC sentences to the BROWN or combined models causes their performance to drop.
+    This

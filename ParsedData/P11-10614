@@ -1,0 +1,9 @@
+ly significant improvements.
+    Our final average POS tagging accuracy of 83.4% compares very favorably to the average accuracy of Berg-Kirkpatrick et al.&#8217;s monolingual unsupervised state-of-the-art model (73.0%), and considerably bridges the gap to fully supervised POS tagging performance (96.6%).
+  
+  
+    The focus of this work is on building POS taggers for foreign languages, assuming that we have an English POS tagger and some parallel text between the two languages.
+    Central to our approach (see Algorithm 1) is a bilingual similarity graph built from a sentence-aligned parallel corpus.
+    As discussed in more detail in &#167;3, we use two types of vertices in our graph: on the foreign language side vertices correspond to trigram types, while the vertices on the English side are individual word types.
+    Graph construction does not require any labeled data, but makes use of two similarity functions.
+    The edge weights between the foreign language trigrams are computed using a co-occurence b

@@ -1,0 +1,9 @@
+trees, as done for the entity extraction classi fiers.
+			We encode separate features for Oi and Sj . position: a boolean value indicating whether Sj precedes Oi.distance: the distance between Oi and Sj in numbers of tokens.
+			We use four coarse categories: ad jacent, very near, near, far.dependency path: the path through the depen dency tree from the head of Sj to the head of Oi.
+			For instance, ?subj?verb?
+			or ?subj?verb?obj?.
+			voice: whether the voice of Oi is passive or active.syntactic frame: key intra-sentential relations be tween Oi and Sj . The syntactic frames that we use are: ? [E1:role] [distance] [E2:role], where distance ? {adjacent, very near, near, far}, and Ei:role is the grammatical role of Ei.
+			Either E1 is an opinion entity and E2 is a source, or vice versa.
+			[E1:phrase] [distance] [E2:phrase], where Ei:phrase is the phrasal type of entity Ei.
+			434 ? [E1:phrase] [E2:headword], where E2 must bethe opinion entity, and E1 must be the source en tity (i.e. no lexicalized frames for s

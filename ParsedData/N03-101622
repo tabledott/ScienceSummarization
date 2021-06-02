@@ -1,0 +1,6 @@
+n back-weight probability as in (Mohri, 1997), also shown in figure 5, enabling sub-parts of rare rules to be penalized even before they are completed.8 For all subsequent results, we discuss only the O-trie numbers.
+    Figure 8 lists the overall savings for each context summary estimate, with and without F joined in.
+    We see that the NULL estimate (i.e., uniform cost search) is not very effective &#8211; alone it only blocks 11% of the edges.
+    But it is still better than exhaustive parsing: with it, one stops parsing when the best parse is found, while in exhaustive parsing one continues until no edges remain.
+    Even the simplest non-trivial estimate, S, blocks 40% of the edges, and the best estimate BF blocks over 97% of the edges, a speed-up of over 35 times, without sacrificing optimality or algorithmic complexity.
+    For comparison to previous FOM work, figure 7 shows, for an edge count and an estimate, the proportion of sentences for which a first parse was found using at most that many edges.

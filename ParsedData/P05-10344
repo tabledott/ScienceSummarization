@@ -1,0 +1,8 @@
+    This improves fluency slightly (Charniak et al., 03), but fails to significantly impact overall translation quality.
+    This may be because the parser is applied to MT output, which is notoriously unlike native language, and no additional insight is gained via source language analysis.
+    Lin (04) translates dependency trees using paths.
+    This is the first attempt to incorporate large phrasal SMT-style memorized patterns together with a separate source dependency parser and SMT models.
+    However the phrases are limited to linear paths in the tree, the only SMT model used is a maximum likelihood channel model and there is no ordering model.
+    Reported BLEU scores are far below the leading phrasal SMT systems.
+    MSR-MT (Menezes &amp; Richardson, 01) parses both source and target languages to obtain a logical form (LF), and translates source LFs using memorized aligned LF patterns to produce a target LF.
+    It utilizes a separate sentence realization component (Ringger et al., 04) to turn this in

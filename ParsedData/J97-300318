@@ -1,0 +1,7 @@
+ segments the last (or first) n characters of the shorter word (W)) and stores this in the M element of the rule.
+    Then it tries to segment an affix by subtracting the shorter word (WI) without the mutative ending from the longer word (W1).
+    If the subtraction results in an non-empty string and the mutative segment is not duplicated in the affix, the system creates a morphological rule with the Pos-class of the shorter word (CI) as the I-class, the Pos-class of the longer word (C1) as the R-class and the segmented affix itself in the S field.
+    For example: [booked (ll VBD VBN)] Vo [book (NN VB)] e[&#8212;ed +&amp;quot;&amp;quot; ?
+    (NN VB) &#8212;(11 VBD VBN)] [advisable (JJ)] Vi [advise (NN VB)] el&#8212;able +&amp;quot;e&amp;quot; ?
+    (NN VB) The v operator is applied to all possible pairs of lexical entries sequentially, and, if a rule produced by such an application has already been extracted from another pair, its frequency count (f) is incremented.
+    Thus, prefix and suffix morphological

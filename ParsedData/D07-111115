@@ -1,0 +1,7 @@
+19 English 89.01 89.87 80.95 89.61 Greek 73.58 80.37 70.22 76.31 Hungarian 79.53 83.51 71.49 80.27 Italian 83.91 87.68 78.06 84.40 Turkish 75.91 82.72 70.06 79.81 ALL 79.90 85.29 65.50 80.32 Table 2: Multilingual results.
+	
+	
+			In a similar way as we used multiple LR models in the multilingual track, in the domain adaptation track we first trained two LR models on the out-of 1047domain labeled training data.
+			The first was a forward MaxEnt model, and the second was a back ward SVM model.
+			We used these two models to perform a procedure similar to a single iteration of co-training, except that selection of the newly (au tomatically) produced training instances was done by selecting sentences for which the two models produced identical analyses.
+			On the development data we verified that sentences for which there was perfect agreement between the two models had labeled attachment score just above 90 on average, even though each of the models had accuracy be tween 78 and 79 over the entire development set.

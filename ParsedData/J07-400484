@@ -1,0 +1,8 @@
+culated efficiently using a variant of the forward&#8211;backward algorithm.
+    For each word in the sentence, the multitagger then assigns all those categories whose probability according to Equation (32) is within some factor, &#946;, of the highest probability category for that word.
+    In the implementation used here the forward&#8211;backward sum is limited to those sequences allowed by the tag dictionary.
+    For efficiency purposes, an extra pruning strategy is also used to discard low probability sub-sequences before the forward&#8211; backward algorithm is run.
+    This uses a second variable-width beam of 0.1&#946;.
+    Table 4 gives the per-word accuracy of the supertagger on Section 00 for various levels of category ambiguity, together with the average number of categories per word.7 The SENT column gives the percentage of sentences whose words are all supertagged correctly.
+    The set of categories assigned to a word is considered correct if it contains the correct category.
+    The table give

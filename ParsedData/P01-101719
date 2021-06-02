@@ -1,0 +1,11 @@
+sentences in the test corpus, on 2934, or about 75%, the grammar model assigns a higher probability to the sentence than does the trigram model.
+    One might well ask what went &#8220;wrong&#8221; with the remaining 25%?
+    Why should the grammar model ever get beaten?
+    Three possible reasons come to mind: 1.
+    The grammar model is better but only by a small amount, and due to sparse data problems occasionally the worse model will luck out and beat the better one.
+    2.
+    The grammar model and the trigram model capture different facts about the distribution of words in the language, and for some set of sentences one distribution will perform better than the other.
+    3.
+    The grammar model is, in some sense, always better than the trigram model, but if the parser bungles the parse, then the grammar model is impacted very badly.
+    Obviously the trigram model has no such Achilles&#8217; heel.
+    We ask this question because what we should do to improve performance of our grammar-based language m

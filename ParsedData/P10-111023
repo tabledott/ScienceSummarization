@@ -1,0 +1,6 @@
+n-punctuation words.
+    10Parser combination in Zhang and Clark (2008) achieves a higher word accuracy of 85.77%, but again, it is not directly comparable to our work. that it is not restricted to LR (a special case of shift-reduce), and thus does not require building an LR table, which is impractical for modern grammars with a large number of rules or features.
+    In contrast, we employ the ideas behind GSS more flexibly to merge states based on features values, which can be viewed as constructing an implicit LR table on-the-fly.
+    Second, unlike previous theoretical results about cubic-time complexity, we achieved linear-time performance by smart beam search with prefix cost inspired by Stolcke (1995), allowing for state-of-the-art data-driven parsing.
+    To the best of our knowledge, our work is the first linear-time incremental parser that performs dynamic programming.
+    The parser of Roark and Hollingshead (2009) is also almost linear time, but they achieved this by discarding parts of the CKY cha

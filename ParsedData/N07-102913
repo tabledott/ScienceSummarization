@@ -1,0 +1,10 @@
+al decoder weights, is where is the number of systems and is the number of similarity levels; i.e., free system weights, similarity score weights and two free interpolation weights.
+    The phrasal decoder used in the phrase-level combination is based on standard beam search (Koehn, 2004).
+    The decoder features are: a trigram language model score, number of target phrases, number of target words, phrase distortion, phrase distortion computed over the original translations and phrase translation confidences estimated in Section 4.1.
+    The total score for a hypothesis is computed as a log-linear combination of these features.
+    The feature weights and combination weights (system and similarity) may be tuned using Powell&#8217;s method on -best lists as described in Section 2.
+    The phrase-level combination tuning can be summarized as follows: Testing the phrase-level combination is performed by following steps 1 through 4.
+  
+  
+    The third combination method is based on confusion network decoding.
+ 

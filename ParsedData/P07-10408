@@ -1,0 +1,15 @@
+is computed as follows where is the reference length.
+    The only difference to word error rate is that the TER allows shifts.
+    A shift of a sequence of words is counted as a single edit.
+    The minimum translation edit alignment is usually found through a beam search.
+    When multiple references are provided, the edits from the closest reference are divided by the average reference length.
+    Full test set scores are obtained by accumulating the edits and the average reference lengths.
+    The perfect TER score is 0, and otherwise higher than zero.
+    The TER score may also be higher than 1 due to insertions.
+    Also TER is reported as a percentage in the results section.
+  
+  
+    Confusion network decoding in MT has to pick one hypothesis as the skeleton which determines the word order of the combination.
+    The other hypotheses are aligned against the skeleton.
+    Either votes or some form of confidences are assigned to each word in the network.
+    For example using &#8220;cat sat the mat&#822

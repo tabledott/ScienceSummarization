@@ -1,0 +1,15 @@
+,c with a discounting factor: ( ) ( ) ( ) ( ) ( ) ( ) 11 +???
+			i j ci i j ci c c jF,wFmin jF,wFmin wF wF We compute the similarity between two words wi and wj using the cosine coefficient (Salton and McGill 1983) of their mutual information vectors: ( ) ??
+			= c cw c cw c cwcw ji ji ji mimi mimi w,wsim 22
+	
+	
+			CBC consists of three phases.
+			In Phase I, we compute each element?s top-k similar elements.
+			In our experiments, we used k = 20.
+			In Phase II, we construct a collection of tight clusters, where the elements of each cluster form a committee.
+			The algorithm tries to form as many committees as possible on the condition that each newly formed committee is not very similar to any existing committee.
+			If the condition is violated, the committee is simply discarded.
+			In the final phase of the algorithm, each element is assigned to its most similar cluster.
+			4.1.
+			Phase I: Find top-similar elements.
+			Computing the complete similarity matrix between pairs of elements is obviously quadrati

@@ -1,0 +1,11 @@
+sentence with corresponding POS tags for each word.
+  
+  
+    Our parser employs a basic bottom-up shift-reduce parsing algorithm, requiring only a single pass over the input string.
+    The algorithm considers only trees with unary and binary branching.
+    In order to use trees with arbitrary branching for training, or generating them with the parser, we employ an instance of the transformation/detransformation process described in (Johnson, 1998).
+    In our case, the transformation step involves simply converting each production with n children (where n &gt; 2) into n &#8211; 1 binary productions.
+    Trees must be lexicalized1, so that the newly created internal structure of constituents with previous branching of more than two contains only subtrees with the same lexical head as the original constituent.
+    Additional nonterminal symbols introduced in this process are clearly marked.
+    The transformed (or &#8220;binarized&#8221;) trees may then be used for training.
+    Detransformation is applied to

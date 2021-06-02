@@ -1,0 +1,5 @@
+ation, we could construct a vector representing the relation between these two entities and then measure the relational similarity between this unlabeled vector and each of our labeled training vectors.
+    It would seem that there is a problem here because the training vectors would be relatively dense, since they would presumably be derived from a large corpus, but the new unlabeled vector for John Smith and Hardcom Corporation would be very sparse, since these entities might be mentioned only once in the given document.
+    However, this is not a new problem for the VSM; it is the standard situation when the VSM is used for information retrieval.
+    A query to a search engine is represented by a very sparse vector, whereas a document is represented by a relatively dense vector.
+    There are well-known techniques in information retrieval for coping with this disparity, such as weighting schemes for query vectors that are different from the weighting schemes for document vectors (Salton and Buckley 1988).

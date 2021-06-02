@@ -1,0 +1,7 @@
+m flat text is a hard problem.
+    A common starting point for weighted grammar induction is the Expectation-Maximization (EM) algorithm (Dempster et al., 1977; Baker, 1979).
+    EM&#8217;s mediocre performance (Table 1) reflects two problems.
+    First, it seeks to maximize likelihood, but a grammar that makes the training data likely does not necessarily assign a linguistically defensible syntactic structure.
+    Second, the likelihood surface is not globally concave, and learners such as the EM algorithm can get trapped on local maxima (Charniak, 1993).
+    We seek here to capitalize on the intuition that, at least early in learning, the learner should search primarily for string-local structure, because most structure is local.1 By penalizing dependencies between two words that are farther apart in the string, we obtain consistent improvements in accuracy of the learned model (&#167;3).
+    We then explore how gradually changing S over time affects learning (&#167;4): we start out with a strong preference

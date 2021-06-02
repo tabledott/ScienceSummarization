@@ -1,0 +1,7 @@
+mpute these quantities.
+    Our parsers are easily extended to labeled dependencies.
+    Direct integration of labels into Models 1 and 2 would result in third-order parts composed of three labeled dependencies, at the cost of increasing the time and space complexities by factors of O(L3) and O(L2), respectively, where L bounds the number of labels per dependency.
+    If each word in x has a set of possible &#8220;senses,&#8221; our parsers can be modified to recover the best joint assignment of syntax and senses for x, by adapting methods in Eisner (2000).
+    Complexity would increase by factors of O(54) time and O(53) space, where 5 bounds the number of senses per word.
+    If more vertical context is desired, the dynamicprogramming structures can be extended with additional ancestor indices, resulting in a &#8220;spine&#8221; of ancestors above each span.
+    Each additional ancestor lengthens the vertical scope of the factorization (e.g., from grand-siblings to &#8220;great-grandsiblings&#8221;), while i

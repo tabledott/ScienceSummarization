@@ -1,0 +1,10 @@
+of tuples correctly identified by the parser, while unlabeled precision/recall (UP/UR) is the ratio of wh and wa correctly identified regardless of 7 and a.
+    The F-score is the harmonic mean of LP and LR.
+    The accuracy was measured by parsing test sentences with part-of-speech tags provided by the treebank.
+    The Gaussian prior was used for smoothing (Chen and Rosenfeld, 1999), and its hyper-parameter was tuned for each model to maximize the F-score for the development set.
+    The optimization algorithm was the limited-memory BFGS method (Nocedal and Wright, 1999).
+    All the following experiments were conducted on AMD Opteron servers with a 2.0-GHz CPU and 12-GB memory.
+    Table 3 shows the accuracy for the development/test sets.
+    Features occurring more than twice were included in the model (598,326 features).
+    Filtering was done by the reference distribution method with n = 10 and c = 0.95.
+    The unigram model for filtering was a log-linear model with two feature templates, (WORD, POS, L

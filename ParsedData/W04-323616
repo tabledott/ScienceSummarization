@@ -1,0 +1,7 @@
+uracy.
+    So we next investigate such a one-at-a-time, character-based POS tagger.
+    The features that were used for our word segmenter ((a) &#8722; (f)) in Section 2.1 were yet again applied, with two additional features (g) and (h) to aid POS tag prediction.
+    : This feature refers to the POS tag of the previous character before the current word.
+    For example, in the character sequence &#8220;74 AL MA&#8221;, when considering the character &#8220;A&#8221;, the feature POS(C&#8722;1W0 ) =PN is set to 1 (assuming &#8220;k&#8221; was tagged as PN).
+    C&#8722;2W0 )POS(C&#8722;1W0 ) : For the same example given above, when considering the character &#8220;A&#8221;, the feature POS(C&#8722;2W0 )POS(C&#8722;1W0 ) =P_PN is set to 1 (assuming &#8220;&#23545;&#8221; was tagged as P and &#8220;k&#8221; was tagged as PN).
+    The testing algorithm is similar to that described in Section 3.2, except that the probability of a word being assigned a POS tag t is estimated by the product of the probability of its 

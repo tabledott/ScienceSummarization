@@ -1,0 +1,8 @@
+ linear topic segmentation reporting the most promising results account for term repetitions alone (Choi, 2000; Utiyama and Isahara, 2001).
+    The preprocessing steps of LCseg are common to many segmentation algorithms.
+    The input document is first tokenized, non-content words are removed, and remaining words are stemmed using an extension of Porter&#8217;s stemming algorithm (Xu and Croft, 1998) that conflates stems using corpus statistics.
+    Stemming will allow our algorithm to more accurately relate terms that are semantically close.
+    The core algorithm of LCseg has two main parts: a method to identify and weight strong term repetitions using lexical chains, and a method to hypothesize topic boundaries given the knowledge of multiple, simultaneous chains of term repetitions.
+    A term is any stemmed content word within the text.
+    A lexical chain is constructed to consist of all repetitions ranging from the first to the last appearance of the term in the text.
+    The chain is divided into subc

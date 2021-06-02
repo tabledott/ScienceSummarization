@@ -1,0 +1,10 @@
+plates, we compute these probabilities only for phrases up to a certain maximal length in the source language.
+    Depending on the size of the corpus, the maximal length in the experiments is between four and seven words.
+    In addition, we remove alignment templates that have a probability lower than a certain threshold.
+    In the experiments, we use a threshold of 0.01.
+    It should be emphasized that this algorithm for computing aligned phrase pairs and their associated probabilities is very easy to implement.
+    The joint translation model suggested by Marcu and Wong (2002) tries to learn phrases as part of a full EM algorithm, which leads to very large memory requirements and a rather complicated training algorithm.
+    A comparison of the two approaches can be found in Koehn, Och, and Marcu (2003).
+  
+  
+    To describe our translation model based on the alignment templates described in the previous section in a formal way, we first decompose both the source sentence f1J and the target sentence eI1

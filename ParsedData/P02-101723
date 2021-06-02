@@ -1,0 +1,7 @@
+s.
+    The conditional model of Klein and Manning (2001b) had the drawback that the variance of final F1, and qualitative grammars found, was fairly high, depending on small differences in first-round random parses.
+    The model presented here does not suffer from this: while it is clearly sensitive to the quality of the input tagging, it is robust with respect to smoothing parameters and data splits.
+    Varying the smoothing counts a factor of ten in either direction did not change the overall F1 by more than 1%.
+    Training on random subsets of the training data brought lower performance, but constantly lower over equal-size splits.
+    Moreover, there are no first-round random decisions to be sensitive to; the soft EM procedure is deterministic.
+    Figure 10 shows the overall F1 score and the data likelihood according to our model during convergence.9 Surprisingly, both are non-decreasing as the system iterates, indicating that data likelihood in this model corresponds well with parse accuracy.10 Figur

@@ -1,0 +1,6 @@
+ also present in &#945;c.
+    That is, we write: p(km l ,&#183;&#183;&#183; , k1l , kh, k1r, &#183;&#183;&#183; , knr |&#945;f, l) where kh, kil, kjr (&#8216;k&#8217; for keep) are binary variables that are true if and only if constituents H, Li, Rj (respectively) of the source RHS &#945;f are present in the target side &#945;c.
+    Note that the conditional probability in Equation 5 enables us to estimate Equation 3, since p(&#945;f, &#945;c|l) = p(&#945;c|&#945;f, l) &#183; p(&#945;f|l).
+    We can rely on a state-of-the-art probabilistic parser to effectively compute either p(&#945;f|l) or the probability of the entire tree &#960;f, and need not worry about estimating this term.
+    In the case of sentence compression from the one-best hypothesis of the parser, we can ignore p(&#945;f|l) altogether, since &#960;f is the same for all compressions.
+    We can rewrite Equation 5 exactly using a headdriven infinite-horizon Markovization: where A = (k1l , &#183; &#183; &#183; , kml ) is a term needed by the cha

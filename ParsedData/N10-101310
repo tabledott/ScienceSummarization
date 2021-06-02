@@ -1,0 +1,7 @@
+milarity metrics to measure similarity of isolated words: where d(&#183;, &#183;) is a standard distributional similarity measure.
+    In AvgSim, word similarity is computed as the average similarity of all pairs of prototype vectors; In MaxSim the similarity is the maximum over all pairwise prototype similarities.
+    All results reported in this paper use cosine similarity, 1 We compare across two different feature functions tf-idf weighting and X2 weighting, chosen due to their ubiquity in the literature (Agirre et al., 2009; Curran, 2004).
+    In AvgSim, all prototype pairs contribute equally to the similarity computation, thus two words are judged as similar if many of their senses are similar.
+    MaxSim, on the other hand, only requires a single pair of prototypes to be close for the words to be judged similar.
+    Thus, MaxSim models the similarity of words that share only a single sense (e.g. bat and club) at the cost of lower robustness to noisy clusters that might be introduced when K is large.
+   

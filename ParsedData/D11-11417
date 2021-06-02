@@ -1,0 +1,5 @@
+ring using Jcluster (Goodman, 2001) on 52 million tweets; each word is uniquely represented by a bit string based on the path from the root of the resulting hierarchy to the word&#8217;s leaf.
+    We use the Brown clusters resulting from prefixes of 4, 8, and 12 bits.
+    These clusters are often effective in capturing lexical variations, for example, following are lexical variations on the word &#8220;tomorrow&#8221; from one cluster after filtering out other words (most of which refer to days): T-POS uses Conditional Random Fields5 (Lafferty et al., 2001), both because of their ability to model strong dependencies between adjacent POS tags, and also to make use of highly correlated features (for example a word&#8217;s identity in addition to prefixes and suffixes).
+    Besides employing the Brown clusters computed above, we use a fairly standard set of features that include POS dictionaries, spelling and contextual features.
+    On a 4-fold cross validation over 800 tweets, T-POS outperforms the Stanford ta

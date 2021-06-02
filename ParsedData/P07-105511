@@ -1,0 +1,7 @@
+ problem of finding the The argmax in line 3 can be solved using Viterbi&#8217;s algorithm since yd is fixed. highest scoring sentiment labels for all sentences, given a particular document label yd, can be solved efficiently using Viterbi&#8217;s algorithm.
+    The general inference problem can then be solved by iterating over each possible yd, finding y8 maximizing score((yd, y8), s) and keeping the single best y = (yd, y8).
+    This algorithm is outlined in Figure 2 and has a runtime of O(|Y(d)||Y(s)|2n), due to running Viterbi |Y(d) |times over a label space of size |Y(s)|.
+    The algorithm can be extended to produce exact k-best lists.
+    This is achieved by using k-best Viterbi techniques to return the k-best global labelings for each document label in line 3.
+    Merging these sets will produce the final k-best list.
+    It is possible to view the inference algorithm in Figure 2 as a constrained Viterbi search since it is equivalent to flattening the model in Figure 1 to a sequential model with sente

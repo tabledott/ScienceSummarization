@@ -1,0 +1,7 @@
+man judgements.
+    We manually split the dataset in two parts, as follows.
+    First, two humans classified all pairs as being synonyms of each other, antonyms, identical, hyperonym-hyponym, hyponym-hyperonym, holonym-meronym, meronym-holonym, and noneof-the-above.
+    The inter-tagger agreement rate was 0.80, with a Kappa score of 0.77.
+    This annotation was used to group the pairs in three categories: similar pairs (those classified as synonyms, antonyms, identical, or hyponym-hyperonym), related pairs (those classified as meronym-holonym, and pairs classified as none-of-the-above, with a human average similarity greater than 5), and unrelated pairs (those classified as none-of-the-above that had average similarity less than or equal to 5).
+    We then created two new gold-standard datasets: similarity (the union of similar and unrelated pairs), and relatedness (the union of related and unrelated)7.
+    Table 5 shows the results on the relatedness and similarity subsets of WordSim353 for the different me

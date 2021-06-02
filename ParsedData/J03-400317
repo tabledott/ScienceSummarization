@@ -1,0 +1,8 @@
+to the internal rules, are completely deterministic.
+    They always take the form where P is a part-of-speech tag, h is a word-tag pair (w, t), and the rule rewrites to just the word w. (See Figure 2 for examples of lexical rules.)
+    Formally, we will always take a lexicalized nonterminal P(h) to expand deterministically (with probability one) in this way if P is a part-of-speech symbol.
+    Thus for the parsing models we require the nonterminal labels to be partitioned into two sets: part-of-speech symbols and other nonterminals.
+    Internal rules always have an LHS in which P is not a part-of-speech symbol.
+    Because lexicalized rules are deterministic, they will not be discussed in the remainder of this article: All of the modeling choices concern internal rules.
+    The probability of an internal rule can be rewritten (exactly) using the chain rule of probabilities: (The subscripts h, l and r are used to denote the head, left-modifier, and right-modifier parameter types, respectively.)
+    Next, we 

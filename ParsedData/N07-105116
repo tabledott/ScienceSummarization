@@ -1,0 +1,10 @@
+or pruning as the original grammar estimates which were learned during the hierarchical training.
+    Tab.
+    1 shows the tremendous reduction in parsing time (all times are cumulative) and gives an overview over grammar sizes and parsing accuracies.
+    In particular, in our Java implementation on a 3GHz processor, it is possible to parse the 1578 development set sentences (of length 40 or less) in less than 1200 seconds with an F1 of 91.2% (no search errors), or, by pruning more, in 680 seconds at 91.1%.
+    For comparison, the Feb. 2006 release of the Charniak and Johnson (2005) parser runs in 1150 seconds on the same machine with an F1 of 90.7%.
+  
+  
+    A split PCFG is a grammar G over symbols of the form X-k where X is an evaluation symbol (such as NP) and k is some indicator of a subcategory, such as a parent annotation.
+    G induces a derivation distribution P(T |G) over trees T labeled with split symbols.
+    This distribution in turn induces a parse distribution P(T&#8242;|G) = P(7r(T)|G) over (p

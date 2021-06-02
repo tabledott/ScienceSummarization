@@ -1,0 +1,10 @@
+ word&#8217;s suffix or its capitalization for OOV words.
+    Here, we examine the effects of Compact Patricia Trie classifiers (CPT) trained on prefixes and suffixes.
+    We use the implementation of (Witschel and Biemann, 2005).
+    For OOV words, the category-wise product of both classifier&#8217;s distributions serve as probabilities P(ci|ti): Let w=ab=cd be a word, a be the longest common prefix of w that can be found in all lexicon words, and d be the longest common suffix of w that can be found in all lexicon words.
+    Then
+  
+  
+    We adopt the methodology of (Freitag 2004) and measure cluster-conditional tag perplexity PP as the average amount of uncertainty to predict the tags of a POS-tagged corpus, given the tagging with classes from the unsupervised method.
+    Let be the mutual information between two random variables X and Y.
+    Then the clusterconditional tag perplexity for a gold-standard tagging T and a tagging resulting from clusters C is computed as Minimum PP is 1.0, connoting a perfec

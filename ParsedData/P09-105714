@@ -1,0 +1,11 @@
+p with uniform weights also yields the same tagging improvements as shown in Figure 5.
+    We find that the observed grammar also improves, growing from 459 entries to 603 entries, with precision increasing from 0.94 to 0.96, and recall increasing from 0.57 to 0.76.
+    The figure also shows the model&#8217;s internal grammar and dictionary sizes.
+    Figure 6 and 7 show how the precision/recall of the observed grammar and dictionary varies for different models from Figure 5.
+    In the case of the observed grammar (Figure 6), precision increases at each step, whereas recall drops initially (owing to the grammar minimization) but then picks up again.
+    The precision/recall of the observed dictionary on the other hand, is not affected by much.
+  
+  
+    Multiple random restarts for EM, while not often emphasized in the literature, are key in this domain.
+    Recall that our original EM tagging with a fully-connected 2-gram tag model was 81.7% accurate.
+    When we execute 100 random restarts and select the m

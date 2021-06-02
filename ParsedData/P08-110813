@@ -1,0 +1,7 @@
+res can be extracted also at parsing time.
+    The graph-based model, MSTParser, learns a scoring function s(i, j, l) E R over labeled dependencies.
+    More precisely, dependency arcs (or pairs of arcs) are first represented by a high dimensional feature vector f(i, j, l) E Rk, where f is typically a binary feature vector over properties of the arc as well as the surrounding input (McDonald et al., 2005a; McDonald et al., 2006).
+    The score of an arc is defined as a linear classifier s(i, j, l) = w &#183; f(i, j, l), where w is a vector of feature weights to be learned by the model.
+    For the guided graph-based model, which we call MSTMalt, this feature representation is modified to include an additional argument GMalt x , which is the dependency graph predicted by MaltParser on the input sentence x.
+    Thus, the new feature representation will map an arc and the entire predicted MaltParser graph to a high dimensional feature representation, f(i, j,l, GMalt x ) E Rk+m.
+    These m additional features ac

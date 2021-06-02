@@ -1,0 +1,9 @@
+LM&#8217;s cache made it slightly slower, so results in Table 1 use IRSTLM without caching.
+    Moses sets the cache size parameter to 50 so we did as well; the resulting cache size is 2.82 GB.
+    The results in Table 1 show PROBING is 81% faster than TRIE, which is in turn 31% faster than the fastest baseline.
+    Memory usage in PROBING is high, though SRILM is even larger, so where memory is of concern we recommend using TRIE, if it fits in memory.
+    For even larger models, we recommend RandLM; the memory consumption of the cache is not expected to grow with model size, and it has been reported to scale well.
+    Another option is the closedsource data structures from Sheffield (Guthrie and Hepple, 2010).
+    Though we are not able to calculate their memory usage on our model, results reported in their paper suggest lower memory consumption than TRIE on large-scale models, at the expense of CPU time.
+    This task measures how well each package performs in machine translation.
+    We run the baseline Mo

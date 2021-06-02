@@ -1,0 +1,13 @@
+lary size, i.e. how many word representations were induced.
+    Note that cleaning is applied only to the unlabeled data, not to the labeled data used in the supervised tasks.
+    RCV1 is a superset of the CoNLL03 corpus.
+    For this reason, NER results that use RCV1 word representations are a form of transductive learning.
+  
+  
+    The Brown clusters took roughly 3 days to induce, when we induced 1000 clusters, the baseline in prior work (Koo et al., 2008; Ratinov &amp; Roth, 2009).
+    We also induced 100, 320, and 3200 Brown clusters, for comparison.
+    (Because Brown clustering scales quadratically in the number of clusters, inducing 10000 clusters would have been prohibitive.)
+    Because Brown clusters are hierarchical, we can use cluster supersets as features.
+    We used clusters at path depth 4, 6, 10, and 20 (Ratinov &amp; Roth, 2009).
+    These are the prefixes used in Table 1.
+    The Collobert and Weston (2008) (C&amp;W) embeddings were induced over the course of a few weeks, and trained for a

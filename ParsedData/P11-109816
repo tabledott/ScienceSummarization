@@ -1,0 +1,10 @@
+al preferences.
+    Chambers and Jurafsky (2008) observed that coreferring arguments suggest a semantic relation between two predicates.
+    In the sentence, he ran and then he fell, the subjects of run and fall corefer, and so they likely belong to the same scenario-specific semantic role.
+    We applied this idea to a new vector similarity framework.
+    We represent a relation as a vector of all relations with which their arguments coreferred.
+    For instance, arguments of the relation go off:s were seen coreferring with mentions in plant:o, set off:o and injure:s. We represent go off:s as a vector of these relation counts, calling this its coref vector representation.
+    Selectional preferences (SPs) are also useful in measuring similarity (Erk and Pado, 2008).
+    A relation can be represented as a vector of its observed arguments during training.
+    The SPs for go off:s in our data include {bomb, device, charge, explosion}.
+    We measure similarity using cosine similarity between the vectors in both

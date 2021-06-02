@@ -1,0 +1,8 @@
+ded only to combine the individual supertags to arrive at the parse of the input.
+    Tested on about 1,300 WSJ sentences with each word in the sentence correctly supertagged, the LTAG parser took approximately 4 seconds per sentence to yield a parse (combine the supertags and perform feature unification).
+    In contrast, the same 1,300 WSJ sentences without the supertag annotation took nearly 120 seconds per sentence to yield a parse.
+    Thus the parsing speedup gained by this integration is a factor of about 30.
+    In the XTAG system, we have integrated the trigram supertagger as a front end to an LTAG parser to pick the appropriate supertag for each word even before parsing begins.
+    However, a drawback of this approach is that the parser would fail completely if any word of the input is incorrectly tagged by the supertagger.
+    This problem could be circumvented to an extent by extending the supertagger to produce n-best supertags for each word.
+    Although this extension would increase the load on

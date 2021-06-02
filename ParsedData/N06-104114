@@ -1,0 +1,9 @@
+e model is no longer symmetric, and we no longer require random initialization or post-hoc mapping of labels.
+    Adding prototypes in this way gave an accuracy of 68.8% on all tokens, but only 47.7% on non-prototype occurrences, which is only a marginal improvement over BASE.
+    It appears as though the prototype information is not spreading to non-prototype words.
+    In order to remedy this, we incorporated distributional similarity features.
+    Similar to (Sch&#168;utze, 1995), we collect for each word type a context vector of the counts of the most frequent 500 words, conjoined with a direction and distance (e.g +1,-2).
+    We then performed an SVD on the matrix to obtain a reduced rank approximation.
+    We used the dot product between left singular vectors as a measure of distributional similarity.
+    For each word w, we find the set of prototype words with similarity exceeding a fixed threshold of 0.35.
+    For each of these prototypes z, we add a predicate PROTO = z to each occurrence of w. For ex

@@ -1,0 +1,9 @@
+ed with the current or a future word.
+    The Shift action pushes the current word to the stack and moves the current index to the next word.
+    The ArcRight action adds a dependency link from the stack top to the current word (i.e. the stack top becomes the parent of the current word), pushes the current word on to the stack, and moves the current index to the next word.
+    The ArcLeft action adds a dependency link from the current word to the stack top, and pops the stack.
+    The Reduce action pops the stack.
+    Among the four transition actions, Shift and ArcRight push a word on to the stack while ArcLeft and Reduce pop the stack; Shift and ArcRight read the next input word while ArcLeft and ArcRight add a link to the output.
+    By repeated application of these actions, the parser reads through the input and builds a parse tree.
+    The MaltParser works deterministically.
+    At each step, it makes a single decision and chooses one of the four transition actions according to the current context, inclu

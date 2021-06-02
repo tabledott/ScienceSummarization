@@ -1,0 +1,8 @@
+ the abovementioned models follow the assumption that all 17 tags are valid for the unknown words.
+    In contrast, we restrict the set of allowed tags for an unknown word to open-class tags.
+    Closed class words are expected to be included in a dictionary, even a small one.
+    The practice of allowing only open-class tags for unknown words goes back a long way (Weischedel et al., 1993), and proved highly beneficial also in our case.
+    Notice that even our simplest models, in which the initial p(tjw) distribution for each w is uniform, already outperform most of the other models, and, in the case of the diluted dictionaries, by a wide margin.
+    Similarly, given the p(tjw) estimate, EMHMM training on the smaller dataset (24k) is still very competitive (yet results improve with more unlabeled data).
+    When we use our refined p(tjw) distribution as the basis of EM-HMM training, we get the best results for the complete dictionary case.
+    With the diluted dictionaries, we are outperformed only by LDA+AC

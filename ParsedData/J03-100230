@@ -1,0 +1,10 @@
+M instead of Model 2 in bootstrapping the fertility-based alignment models, the alignment quality can be significantly improved.
+    In the Appendix, we present an efficient training algorithm of the fertilitybased alignment models.
+    When using the EM algorithm on the standard versions of Models 3 and 4, we observe that during the EM iterations more and more words are aligned with the empty word.
+    This results in a poor alignment quality, because too many words are aligned to the empty word.
+    This progressive increase in the number of words aligned with the empty word does not occur when the other alignment models are used.
+    We believe that this is due to the deficiency of Model 3 and Model 4.
+    The use of the EM algorithm guarantees that the likelihood increases for each iteration.
+    This holds for both deficient and nondeficient models.
+    For deficient models, however, as the amount of deficiency in the model is reduced, the likelihood increases.
+    In Models 3 and 4 as defined in Brown, 

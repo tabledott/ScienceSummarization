@@ -1,0 +1,9 @@
+eb crawl of bilingual web sites.
+    These sites came from a variety of sources including the Canadian government, the European Union, the United Nations, and other international organizations.
+    The crawl yielded on the order of 40 million files, consisting of more than 1TB of data.
+    Pairs of translated documents were identified using a set of simple heuristics to transform French URLs into English URLs (for instance, by replacing fr with en).
+    Documents that matched were assumed to be translations of each other.
+    All HTML and PDF documents were converted into plain text, which yielded 2 million French files paired with their English equivalents.
+    Text files were split so that they contained one sentence per line and had markers between paragraphs.
+    They were sentence-aligned in batches of 10,000 document pairs, using a sentence aligner that incorporates IBM Model 1 probabilities in addition to sentence lengths (Moore, 2002).
+    The document-aligned corpus contained 220 million segments wit

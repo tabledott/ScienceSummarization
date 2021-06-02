@@ -1,0 +1,6 @@
+ and 24 of the treebank, using the method of (Yamada and Matsumoto, 2003) to extract dependencies from parse trees from our model.
+    KCC08 unlabeled is from (Koo et al., 2008), a model that has previously been shown to have higher accuracy than (McDonald and Pereira, 2006).
+    KCC08 labeled is the labeled dependency parser from (Koo et al., 2008); here we only evaluate the unlabeled accuracy. derivations from the Penn treebank trees.
+    Note that the mapping from parse trees to derivations is many-to-one: for example, the example trees in section 2.3 have structures that are as &#8220;flat&#8221; (have as few levels) as is possible, given the set D that is involved.
+    Other similar trees, but with more VP levels, will give the same set D. However, this issue appears to be benign in the Penn WSJ treebank.
+    For example, on section 22 of the treebank, if derivations are first extracted using the method described in this section, then mapped back to parse trees using the method described in section 2.3, 

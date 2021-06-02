@@ -1,0 +1,12 @@
+quence alignmentbased translation model.
+    Figs.
+    1 and 3 show how the proposed model works.
+    First, the source sentence is parsed into a source parse tree.
+    Next, the source parse tree is detached into two source tree sequences (the left hand side of rules in Fig.
+    3).
+    Then the two rules in Fig.
+    3 are used to map the two source tree sequences to two target tree sequences, which are then combined to generate a target parse tree.
+    Finally, a target translation is yielded from the target tree.
+    Our model is implemented under log-linear framework (Och and Ney, 2002).
+    We use seven basic features that are analogous to the commonly used features in phrase-based systems (Koehn, 2004): 1) bidirectional rule mapping probabilities; 2) bidirectional lexical rule translation probabilities; 3) the target language model; 4) the number of rules used and 5) the number of target words.
+    In addition, we define two new features: 1) the number of lexical words in a rule to control the model&#82

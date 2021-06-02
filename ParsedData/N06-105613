@@ -1,0 +1,7 @@
+8212;* (4, 4).
+    Then we consider productions whose RHS contains non-terminals, i.e. predicates with arguments.
+    In this case, an extracted pattern consists of the words to which the production is linked, as well as non-terminals showing where the arguments are realized.
+    For example, for the bowner predicate, the extracted rule would be CONDITION &#8212;* (TEAM 1 player UNUM 2 has (1) ball, (bowner TEAM 1 {UNUM 2 })), where (1) denotes a word gap of size 1, due to the unaligned word the that comes between has and ball.
+    A word gap, (g), can be seen as a non-terminal that expands to at most g words in the NL stream, which allows for some flexibility in pattern matching.
+    Rule extraction thus proceeds backward from the end of a linearized MR parse (so that a predicate is processed only after its arguments have all been processed), until rules are extracted for all productions.
+    There are two cases where the above algorithm would not extract any rules for a production r. First is when no descen

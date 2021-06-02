@@ -1,0 +1,8 @@
+f the Zipfian distribution of word frequencies, simple baselines that assign each frequent word to a different class, can score rather highly, as we shall see below.
+    A third evaluation is to use the derived classification in a class-based language model, and to measure the perplexity of the derived model.
+    However it is not clear that this directly measures the linguistic plausibility of the classification.
+    In particular many parts of speech (relative pronouns for example) represent long-distance combinatorial properties, and a simple finite-state model with local context (such as a class n-gram model (Brown et al., 1992)) will not measure this.
+    We can also compare various simple baselines, to see how they perform according to these simple measures.
+    Frequent word baseline take the n &#8212; 1 most frequent words and assign them each to a separate class, and put all remaining words in the remaining class.
+    Word baseline each word is in its own class.
+    We performed experiments on parts 

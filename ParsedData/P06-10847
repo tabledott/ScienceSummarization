@@ -1,0 +1,8 @@
+; indexing for an information retrieval system &#8211; does not require all of the morphological attributes but only the lemma and the PoS of each word.
+    As a result, for this case, 75% of the words remain with one analysis with 95% accuracy, 20% with two analyses and 5% with three analyses.
+    Segal (2000) built a transformation-based tagger in the spirit of Brill (1995).
+    In the first phase, the analyses of each word are ranked according to the frequencies of the possible lemmas and tags in a training corpus of about 5,000 words.
+    Selection of the highest ranked analysis for each word gives an accuracy of 83% of the test text &#8211; which consists of about 1,000 words.
+    In the second stage, a transformation learning algorithm is applied (in contrast to Brill, the observed transformations are not applied, but used for re-estimation of the word couples probabilities).
+    After this stage, the accuracy is about 93%.
+    The last stage uses a bottomup parser over a hand-crafted grammar with 150 r

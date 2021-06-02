@@ -1,0 +1,9 @@
+L.
+    This algorithm steps through the data incrementally and performs two steps for each training example.
+    First, new lexical items are induced for the training instance by splitting and merging nodes in the best correct parse, given the current parameters.
+    Next, the parameters of the PCCG are updated by making a stochastic gradient update on the marginal likelihood, given the updated lexicon.
+    Inputs and Initialization The algorithm takes as input the training set of n (sentence, logical form) pairs {(xi, zi) : i = 1...n} along with an NP list, ANP, of proper noun lexical items such as Texas ` NP:tex.
+    The lexicon, A, is initialized with a single lexical item xi `S :zi for each of the training pairs along with the contents of the NP list.
+    It is possible to run the algorithm without the initial NP list; we include it to allow direct comparisons with previous approaches, which also included NP lists.
+    Features and initial feature weights are described in Section 7.
+    Step 1: Updating t

@@ -1,0 +1,7 @@
+igher weight to terms that occur in answers that receive a higher similarity score to the original query.
+    In our experiments, expansion terms are ranked according to this modified tfidf calculation over the top 20 answers retrieved by the baseline retrieval run, and matched a second time with the field weight vector (0.0, 1.0, 0.0, 0.0, 0.5, 0.2, 0.5, 0.3) that prefers answer fields over question fields.
+    After stopword removal, the average number of expansion terms produced by the local expansion technique was 9.25.
+    The test queries we used for retrieval are taken from query logs of the MetaCrawler search engine4 and were provided to us by Valentin Jijkoun.
+    In order to maximize recall for the comparative evaluation of systems, we selected 60 queries that were well-formed natural language questions without metacharacters and spelling errors.
+    However, for one third of these well-formed queries none of the five compared systems could retrieve an answer.
+    Examples are &#8220;how do you make

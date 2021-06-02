@@ -1,0 +1,6 @@
+fires when a rule&#8217;s source side span in the input sentence matches any of the above-mentioned labels in the input parse, and another which fires when a rule&#8217;s source side span crosses a boundary of one of these labels (e.g., its source side span only partially covers the words in a VP subtree, and it also covers some or all or the words outside the VP subtree).
+    These two features are equivalent to Marton and Resnik&#8217;s XP= and XP' feature combinations, respectively.
+    Fine-grained features We selected the following nonterminal labels that appear more than 100 times in the tuning data: NP, PP, S, VP, SBAR, ADJP, WHNP, PRT, ADVP, PRN, and QP.
+    The labels that were excluded were parts of speech, nonconstituent labels like FRAG, or labels that occurred only two or three times.
+    For each of these labels X, we added a separate feature that fires when a rule&#8217;s source side span in the input sentence matches X, and a second feature that fires when a span crosses a boundary of X.
+    T

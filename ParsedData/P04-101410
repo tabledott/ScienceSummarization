@@ -1,0 +1,7 @@
+ for model estimation and recovery of the highest scoring parse or dependency structure, the features in the model partly determine which entries can be grouped together.
+    In this paper we use features from the dependency structure, and features defined on the local rule instantiations.2 Hence, any two entries with identical category type, identical head, and identical unfilled dependencies are equivalent.
+    Note that not all features are local to a rule instantiation; for example, features encoding long-range dependencies may involve words which are a long way apart in the sentence.
+    For the purposes of estimation and finding the highest scoring parse or dependency structure, only entries which are part of a derivation spanning the whole sentence are relevant.
+    These entries can be easily found by traversing the chart top-down, starting with the entries which span the sentence.
+    The entries within spanning derivations form a feature forest (Miyao and Tsujii, 2002).
+    A feature forest (D is a 

@@ -1,0 +1,9 @@
+candidate list, and it is subsequently ranked at the top.
+    To address cases where neither the correct translation nor any of its sub-phrases can be found in the list of translation candidates, we attempt to search for, instead of generating, translation candidates.
+    This can be done by searching for a document in the target language that is similar to the one being translated from the source language.
+    This is especially useful when translating named entities in news stories of international importance where the same event will most likely be reported in many languages including the target language.
+    We currently do this by repeating the extrapolation procedure described above but this time using contextual information such as the title of the original document to find similar documents in the target language.
+    Ideally, one would use a Cross-Lingual IR system to find relevant documents more successfully.
+  
+  
+    This section presents our evaluation results on the named entity translation task

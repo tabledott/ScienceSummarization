@@ -1,0 +1,10 @@
+TER (Sim et al., 2007).
+    WER alignments do not allow shifts, GIZA++ alignments require careful training and are not always reliable.
+    TER alignments do not guarantee that similar but lexically different words are aligned correctly but TER does not require training new models and allows shifts (Snover et al., 2006).
+    This work extends the approach proposed in (Sim et al., 2007).
+    Due to the varying word order in the MT hypotheses, the decision of confusion network skeleton is essential.
+    The skeleton determines the general word order of the combined hypothesis.
+    One option would be to use the output from the system with the best performance on some development set.
+    However, it was found that this approach did not always yield better combination output compared to the best single system on all evaluation metrics.
+    Instead of using a single system output as the skeleton, the hypothesis that best agrees with the other hypotheses on average may be used.
+    In this paper, the minimum avera

@@ -1,0 +1,8 @@
+enforcing the non-overlapping constraint.
+    When labeling parse tree nodes, previous work has either used greedy algorithms to find a non-overlapping assignment, or the general-purpose ILP approach of Punyakanok et al. (2004).
+    For labeling chunks an exact algorithm based on shortest paths was proposed in Punyakanok and Roth (2001).
+    Its complexity is quadratic in the length of the sentence.
+    Here we describe a faster exact dynamic programming algorithm to find the most likely non-overlapping (consistent) labeling of all nodes in the parse tree, according to a product of probabilities from local models, as in Equation (2).
+    For simplicity, we describe the dynamic program for the case where only two classes are possible: ARG and NONE.
+    The generalization to more classes is straightforward.
+    Intuitively, the algorithm is similar to the Viterbi algorithm for context-free grammars, because we can describe the non-overlapping constraint by a &#8220;grammar&#8221; that disallows ARG nodes having

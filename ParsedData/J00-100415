@@ -1,0 +1,6 @@
+word string input is a special case of word lattice input, we need only describe the case of lattices.
+    We now present a sketch of the transduction algorithm.
+    The algorithm works bottom-up, maintaining a set of configurations.
+    A configuration has the form [fli, n2, w, v, q, c, t] corresponding to a bottom-up partial derivation currently in state q covering an input sequence between nodes n1 and n2 of the input lattice. w and v are the topmost Alshawi, Bangalore, and Douglas Learning Dependency Translation Models nodes in the source and target derivation trees.
+    Only the target tree t is stored in the configuration.
+    The algorithm first initializes configurations for the input words, and then performs transitions and optimizations to develop the set of configurations bottom-up: Such an initial configuration has the form: [n,n' , wo, vo, q',c,vo] (q, 17', w1, vi, &#8212;1,1, c') It is applicable when there are the following head and dependent configurations: where the dependent configuration is

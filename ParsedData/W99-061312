@@ -1,0 +1,6 @@
+ with some known label in the training data.
+    For each label (Per s on, organization and Location), take the n contextual rules with the highest value of Count' (x) whose unsmoothed3 strength is above some threshold pmin.
+    (If fewer than n rules have Precision greater than pin, we 3Note that taking tlie top n most frequent rules already makes the method robut to low count events, hence we do not use smoothing, allowing low-count high-precision features to be chosen on later iterations. keep only those rules which exceed the precision threshold.) pm,n was fixed at 0.95 in all experiments in this paper.
+    Thus at each iteration the method induces at most n x k rules, where k is the number of possible labels (k = 3 in the experiments in this paper). step 3.
+    Otherwise, label the training data with the combined spelling/contextual decision list, then induce a final decision list from the labeled examples where all rules (regardless of strength) are added to the decision list.
+    We can now compare thi

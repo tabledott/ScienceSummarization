@@ -1,0 +1,7 @@
+ representing segmentations (each word either begins, is inside, or is outside of a named entity), and uses Conditional Random Fields for learning and inference.
+    Again we include orthographic, contextual and dictionary features; our dictionaries included a set of type lists gathered from Freebase.
+    In addition, we use the Brown clusters and outputs of T-POS, T-CHUNK and T-CAP in generating features.
+    We report results at segmenting named entities in Table 6.
+    Compared with the state-of-the-art newstrained Stanford Named Entity Recognizer (Finkel et al., 2005), T-SEG obtains a 52% increase in F1 score.
+    Because capitalization in Twitter is less informative than news, in-domain data is needed to train models which rely less heavily on capitalization, and also are able to utilize features provided by T-CAP.
+    We exhaustively annotated our set of 2,400 tweets (34K tokens) with named entities.8 A convention on Twitter is to refer to other users using the @ symbol followed by their unique username

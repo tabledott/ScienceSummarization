@@ -1,0 +1,8 @@
+n decision in the implementation is the representation of a hypothesis.
+    Theoretically, it would be possible to represent search hypotheses only by the associated decision and a back-pointer to the previous hypothesis.
+    Yet this would be a very inefficient representation for the implementation of the operations that have to be performed in the search.
+    The hypothesis representation should contain all information required to perform efficiently the computations needed in the search but should contain no more information than that, to keep the memory consumption small.
+    In search, we produce hypotheses n, each of which contains the following information: We compare in beam search those hypotheses that cover different parts of the input sentence.
+    This makes the comparison of the probabilities problematic.
+    Therefore, we integrate an admissible estimation of the remaining probabilities to arrive at a complete translation.
+    Details of the heuristic function for the alignment templates are pro

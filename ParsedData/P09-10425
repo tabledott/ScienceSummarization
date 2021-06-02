@@ -1,0 +1,7 @@
+d p aligns to word p' in the second language, c aligns to c' in the second language, and p' is the parent of c'.
+    Note that we are not restricting ourselves to one-to-one alignments here; p, c, p', and c' can all also align to other words.
+    After filtering to identify well-behaved sentences and high confidence projected dependencies, we learn a probabilistic parsing model using the posterior regularization framework (Gra&#231;a et al., 2008).
+    We estimate both generative and discriminative models by constraining the posterior distribution over possible target parses to approximately respect projected dependencies and other rules which we describe below.
+    In our experiments we evaluate the learned models on dependency treebanks (Nivre et al., 2007).
+    Unfortunately the sentence in Figure 1(b) is highly unusual in its amount of dependency conservation.
+    To get a feel for the typical case, we used off-the-shelf parsers (McDonald et al., 2005) for English, Spanish and Bulgarian on two bitexts (Ko

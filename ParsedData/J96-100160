@@ -1,0 +1,7 @@
+easing order.
+    We start from the top of this list and work our way downwards until we find a word that fails either of the following tests: Once a word fails one of the above tests, we are guaranteed that all subsequent words in the list (with lower local frequencies) will also fail the same test.
+    By applying these two tests and removing all closed-class words from the list, we greatly reduce the number of words that must be considered.
+    In practice, about 90-98% of the words in the list fail to meet the two tests above, so we dramatically reduce our search space without having to perform any relatively expensive operations.
+    For the remaining words in the list, we need to compute their Dice coefficient value so as to select the best-ranking one-word translation of the source collocation.
+    The first of the above tests is rather obviously valid and easy to apply.
+    For the second test, we compute an upper bound for the Dice coefficient between the word under consideration and the source collo

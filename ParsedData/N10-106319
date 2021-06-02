@@ -1,0 +1,9 @@
+ is a commonly exploited trick elsewhere in machine translation.
+    It is mostly effective here as well, improving all cases except for the Bulgarian-English CRF where the regression is slight.
+    More successful are the Wikipedia features, which provide an auxiliary signal of potential parallelism.
+    The gains from adding the lexicon-based features can be dramatic as in the case of Bulgarian (the CRF model average precision increased by nearly 9 points).
+    The lower gains on Spanish and German may be due in part to the lack of language-specific training data.
+    These results are very promising and motivate further exploration.
+    We also note that this is perhaps the first successful practical application of an automatically induced word translation lexicon.
+    We also present results in the context of a full machine translation system to evaluate the potential utility of this data.
+    A standard phrasal SMT system (Koehn et al., 2003) serves as our testbed, using a conventional set of models: phr

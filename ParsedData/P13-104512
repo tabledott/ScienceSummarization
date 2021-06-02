@@ -1,0 +1,10 @@
+urther details and evaluations of these embeddings, see (Turian et al., 2010; Huang et al., 2012).
+    The resulting X matrix is used as follows.
+    Assume we are given a sentence as an ordered list of m words.
+    Each word w has an index [w] = i into the columns of the embedding matrix.
+    This index is used to retrieve the word&#8217;s vector representation a,,, using a simple multiplication with a binary vector e, which is zero everywhere, except at the ith index.
+    So aw = Lei E Rn.
+    Henceforth, after mapping each word to its vector, we represent a sentence S as an ordered list of (word,vector) pairs: x = ((w1, aw1), ... , (wm, awm)).
+    Now that we have discrete and continuous representations for all words, we can continue with the approach for computing tree structures and vectors for nonterminal nodes.
+    The goal of supervised parsing is to learn a function g : X -+ Y, where X is the set of sentences and Y is the set of all possible labeled binary parse trees.
+    The set of all possible tre

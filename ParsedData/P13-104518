@@ -1,0 +1,9 @@
+ determine what composition function to use for computing the vector of their parents.
+    While not perfect, a dedicated composition function for each rule RHS can well capture common composition processes such as adjective or adverb modification versus noun or clausal complementation.
+    For instance, it could learn that an NP should be similar to its head noun and little influenced by a determiner, whereas in an adjective modification both words considerably determine the meaning of a phrase.
+    The original RNN is parameterized by a single weight matrix W. In contrast, the CVG uses a syntactically untied RNN (SU-RNN) which has a set of such weights.
+    The size of this set depends on the number of sibling category combinations in the PCFG.
+    Fig.
+    3 shows an example SU-RNN that computes parent vectors with syntactically untied weights.
+    The CVG computes the first parent vector via the SU-RNN: where W(B,C) &#8712; Rn&#215;2n is now a matrix that depends on the categories of the two children.
+   

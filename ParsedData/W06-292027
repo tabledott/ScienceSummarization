@@ -1,0 +1,8 @@
+ the scores of all dependency arcs in it.
+    The search for the best parse can then be formalized as the search for the maximum spanning tree (MST) (McDonald et al., 2005b).
+    If the parse has to be projective, Eisner&#8217;s bottom-up-span algorithm (Eisner, 1996) can be used for the search.
+    For non-projective parses, McDonald et al. (2005b) propose using the Chu-Liu-Edmonds (CLE) algorithm (Chu and Liu, 1965; Edmonds, 1967) and McDonald and Pereira (2006) describe an approximate extension of Eisner&#8217;s algorithm.
+    There are also alternatives to MST which allow imposing additional constraints on the dependency structure, e.g.
+    that at most one dependent of a token can have a certain label, such as &#8220;subject&#8221;, see Riedel et al. (2006) and Bick (2006).
+    By contrast, Canisius et al. (2006) do not even enforce the tree constraint, i.e. they allow cycles.
+    In a variant of the &#8220;all pairs&#8221; approach, only those pairs of tokens are considered that are not too distant (Can

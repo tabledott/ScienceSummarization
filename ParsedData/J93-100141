@@ -1,0 +1,7 @@
+character.
+    It would be a perfect code if the source produced each of the 28 = 256 symbols equally often and independently of context.
+    However, English is not like this.
+    For an English source, it is possible to reduce the average length of the code by assigning shorter codes to more frequent symbols (e.g., e, n, s) and longer codes to less frequent symbols (e.g., j, q, z), using a coding scheme such as a Huffman code (Bell, Cleary, and Witten 1990; Section 5.1.2).
+    Other codes, such as Lempel&#8212;Ziv (Welch 1984; Bell, Cleary, and Witten, Chapters 8-9) and n-gram models on words, achieve even better compression by taking advantage of context, though none of these codes seem to perform as well as people do in predicting the next letter (Shannon 1951).
+    The cross entropy, H, of a code and a source is given by: where Pr(s,h I source) is the joint probability of a symbol s following a history h given the source.
+    Pr(s I h, code) is the conditional probability of s given the history (context)

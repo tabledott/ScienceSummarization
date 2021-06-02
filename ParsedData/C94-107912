@@ -1,0 +1,10 @@
+ searched first.
+			If a,n entry for the word is found, the lexical search is done.
+			Oth- erwise, the secondary hash table is searched.
+			The entry retrieved from the secondary LaI)Ie is inserted into the primary one, so, tha,t when the word is encouutered again only in-memory search will be necessary.
+			The primary hash table is lc, aded from a file a.L l;he system start-up.
+			The file also serves as a buffer for changes to the secondary hash tM)le.
+			When a lexical entry is ad(led or \]nc, dified, it is saved in the file for the prhnary hash table.
+			The entry in the se&lt;:(mdary hash tal)le remains unchanged.
+			Since the i)rimary hash tM)le is a lw~ws consulted first, its entrios override the (;orresponditlg entries in the seco\[ldary La})\]C. The reason why the buffer in needed is that the secondary hash table is designed ill such a way that update speed is sacrificed for the sake of ef\[icie.t retriewd.
+			Therefore, updates to the secondary hash tal)le should I&gt;e done in batch and relatively

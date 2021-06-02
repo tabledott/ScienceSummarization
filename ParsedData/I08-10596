@@ -1,0 +1,10 @@
+hine learned (classification) techniques, the other four are based on heuristics.
+			Gerund/infinitive confusion and auxiliary presence/choice each use a single classifier.
+			Preposition and determiner modules each use two classifiers, one to determine whether a preposition/article should be present, and one for the choice of preposition/article.
+			All suggestions from the Suggestion Provider are collected and passed through the Language Model.
+			As a first step, a suggested correction has to have a higher language model score than the original sentence in order to be a candidate for being surfaced to the user.
+			A second set of heuristic thresholds is based on a linear combination of class probability as assigned by the classifier and language model score.
+			The Example Provider queries the web for exemplary sentences that contain the suggested correction.
+			The user can choose to consult this information to make an informed decision about the correction.
+			450 4.1 Suggestion Provider Modules for.
+			

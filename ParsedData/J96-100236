@@ -1,0 +1,9 @@
+ontext into account.
+    That is, the model does not account for surrounding English words when predicting the appropriate French rendering of an English word.
+    As we pointed out in Section 3, this is not how successful translation works.
+    The best French translation of in is a function of the surrounding English words: if a month's time are the subsequent words, pendant might be more likely, but if the fiscal year 1992 are what follows, then dans is more likely.
+    The basic model is blind to context, always assigning a probability of 0.3004 to dans and 0.0044 to pendant.
+    This can yield errors when Candide is called upon to translate a French sentence.
+    Examples of two such errors are shown in Figure 5.
+    In the first example, the system has chosen an English sentence in which the French word superieures has been rendered as superior when greater or higher is a preferable translation.
+    With no knowledge of context, an expert translator is also quite likely to select superior as the English

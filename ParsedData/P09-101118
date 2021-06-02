@@ -1,0 +1,10 @@
+the coIn the annotated data, each text w has been divided into a set of lines.
+    These lines correspond to clauses in the weather domain and sentences in the Robocup and NFL domains.
+    Each line is annotated with a (possibly empty) set of records.
+    Let A be the gold set of these line-record alignment pairs.
+    To evaluate a learned model, we compute the Viterbi segmentation and alignment (argmaxr,f,c p(r, f, c  |w, s)).
+    We produce a predicted set of line-record pairs A' by aligning a line to a record ri if the span of (the utterance corresponding to) ri overlaps the line.
+    The reason we evaluate indirectly using lines rather than using utterances is that it is difficult to annotate the segmentation of text into utterances in a simple and consistent manner.
+    We compute standard precision, recall, and F1 of A' with respect to A.
+    Unless otherwise specified, performance is reported on all scenarios, which were also used for training.
+    However, we did not tune any hyperparameters, but rath

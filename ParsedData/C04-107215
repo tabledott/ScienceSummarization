@@ -1,0 +1,9 @@
+ = (7) Pskip2 )2,( ),(2 nC YXSKIP = (8) Fskip2 2 2 2 22 2 )1( skipskip skipskip PR PR ? ?
+			+ + = (9) Where SKIP2(X,Y) is the number of skip-bigram matches between X and Y, ? = Pskip2/Rskip2 when ?Fskip2/?Rskip2_=_?Fskip2/?Pskip2, and C is the combination function.
+			We call the skip-bigram based F-measure, i.e. Equation 9, ROUGE-S.
+			Using Equation 9 with ? = 1 and S1 as the reference, S2?s ROUGE-S score is 0.5, S3 is 0.167, and S4 is 0.333.
+			Therefore, S2 is better than S3 and S4, and S4 is better than S3.
+			One advantage of skip-bigram vs. BLEU is that it does not require consecutive matches but is still sensitive to word order.
+			Comparing skip-bigram with LCS, skip-bigram counts all in-order matching word pairs while LCS only counts one longest common subsequence.
+			We can limit the maximum skip distance, between two in-order words to control the admission of a skip-bigram.
+			We use skip distances of 1 to 9 with increment of 1 (ROUGE-S1 to 9) and without any skip distance constraint (ROUGE-S*).

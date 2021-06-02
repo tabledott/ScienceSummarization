@@ -1,0 +1,11 @@
+e common leaf nodes and their top nodes are labeled with the same non-terminal symbol.
+    That is to say, a fragment of a sentence is locally ambiguous if the fragment can be reduced to a certain non-terminal symbol in two or more ways.
+    If a sentence has many local ambiguities, the total ambiguity would grow exponentially.
+    To avoid this, we use a technique called local ambiguity packing, which works in the following way.
+    The top nodes of subtrees that represent local ambiguity are merged and treated by higher-level structures as if there were only one node.
+    Such a node is called a packed node, and nodes before packing are called subnodes of the packed node.
+    An example of a shared-packed forest is shown in Figure 3.2.
+    Packed nodes are represented by boxes.
+    We have three packed nodes in Figure 3.2; one with three subnodes and two with two subnodes.
+    Local ambiguity packing can be easily implemented with our parsing algorithm as follows.
+    In the graph-structured stack, if two o

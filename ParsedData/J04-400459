@@ -1,0 +1,9 @@
+rser encounters an unknown word, the first-best tag delivered by Ratnaparkhi&#8217;s (1996) tagger is used.
+    As it happens, the tag dictionary built up when training contains entries for every word observed, even low-frequency words.
+    This means that during decoding, the output of the tagger is used only for those words that are truly unknown, that is, that were never observed in training.
+    For all other words, the chart is seeded with a separate item for each tag observed with that word in training.
+  
+  
+    In this section we present the results of effectively doing a &#8220;clean-room&#8221; implementation of Collins&#8217; parsing model, that is, using only information available in (Collins 1997, 1999), as shown in Table 4.
+    The clean-room model has a 10.6% increase in F-measure error compared to Collins&#8217; parser and an 11.0% increase in F-measure error compared to our engine in its complete emulation of Collins&#8217; Model 2.
+    This is comparable to the increase in error seen when re

@@ -1,0 +1,11 @@
+core hypergraphs produced by a SCFG based MT system.
+    Algorithm 4 is an extension to the MBR decoder on lattices Algorithm 4 MBR Decoding on Hypergraphs hibitive when the maximum n-gram order in MBR does not exceed the order of the n-gram language model used in creating the hypergraph.
+    In the latter case, we will have a small set of unique prefixes and suffixes on the tail nodes.
+  
+  
+    Lattice MBR Decoding (Equation 3) assumes a linear form for the gain function (Equation 2).
+    This linear function contains n + 1 parameters B0, B1, ..., BN, where N is the maximum order of the n-grams involved.
+    Tromble et al. (2008) obtained these factors as a function of n-gram precisions derived from multiple training runs.
+    However, this does not guarantee that the resulting linear score (Equation 2) is close to the corpus BLEU.
+    We now describe how MERT can be used to estimate these factors to achieve a better approximation to the corpus BLEU.
+    We recall that MERT selects weights in a linear model

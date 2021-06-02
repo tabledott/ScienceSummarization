@@ -1,0 +1,6 @@
+n identification.
+    This requires labeling a set of named entities in a text with labels such as person and location, and identifying relations between them such as spouse of and work for.
+    In theory, each of these tasks would likely benefit from utilizing the information produced by the other, but if done as a cascade will be subject to propogation of errors.
+    Roth and Yih thus set this up as problem in which each task is performed separately; their output is used to assign costs associated with indicator variables in an objective function, which is then minimized subject to constraints that relate the two kinds of outputs.
+    These constraints express qualities of what a global assignment of values for these tasks must respect, such as the fact that the arguments to the spouse of relation must be entities with person labels.
+    Importantly, the ILP objective function encodes not only the best label produced by each classifier for each decision; it utilizes the probabilities (or scores) assigned to

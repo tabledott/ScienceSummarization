@@ -1,0 +1,9 @@
+   An explicit rule was written to pretag as old as with the proper tags.
+    According to the tagging scheme of the Brown Corpus, the first as should be tagged as a qualifier, and the second as a subordinating conjunction.
+    In the rule-based tagger, the most common tag for as is subordinating conjunction.
+    So initially, the second as is tagged correctly and the first as is tagged incorrectly.
+    To remedy this, the system acquires the patch: if the current word is tagged as a subordinating conjunction, and so is the word two positions ahead, then change the tag of the current word to gualifier.6 The rule-based tagger has automatically learned how to properly tag this &amp;quot;idiom.&amp;quot; Regardless of the precise rankings of the various taggers, we have demonstrated that a simple rule-based tagger with very few rules performs on par with stochastic taggers.
+    6This was one of the 71 patches acquired by the rule-based tagger.
+  
+  
+    We have presented a simple part of speech tagger which perf

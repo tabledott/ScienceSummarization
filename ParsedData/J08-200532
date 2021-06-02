@@ -1,0 +1,10 @@
+u.
+  This is done by setting u to be a set of indicator variables that correspond to the labels assigned to ar- guments.
+  Specifically, let uic = [S i = c] be the indicator variable that represents whether 268 Punyakanok, Roth, and Yih Importance of Parsing and Inference in SRL or not the argument type c is assigned to Si, and let pic = score(S i = c).
+  Equation (1) can then be written as an ILP cost function as argmax uic?{0,1}:?i?
+  c?P picuic subject to ?
+  c?P uic = 1 ?i ?
+  [1,M] which means that each argument can take only one type.
+  Note that this new constraint comes from the variable transformation, and is not one of the constraints used in the filter function F .
+  Of the constraints listed earlier, constraints 1 through 3 can be evaluated on a per- argument basis and, for the sake of efficiency, arguments that violate these constraints are eliminated even before being given to the argument classifier.
+  Next, we show how to transform the constraints in the filter function into the form of linear

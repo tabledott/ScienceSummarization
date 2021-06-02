@@ -1,0 +1,8 @@
+ treatment of (6&#8211;7) is only pseudo-incremental even in other frameworks.
+    Before we leave the strict bottom-up approach, it can be noted that the algorithm described in this section is essentially the algorithm used by Yamada and Matsumoto (2003) in combination with support vector machines, except that they allow parsing to be performed in multiple passes, where the graph produced in one pass is given as input to the next pass.'
+    The main motivation they give for parsing in multiple passes is precisely the fact that the bottomup strategy requires each token to have found all its dependents before it is combined with its head, which is also what prevents the incremental parsing of structures like (1).
+  
+  
+    In order to increase the incrementality of deterministic dependency parsing, we need to combine bottom-up and top-down processing.
+    More precisely, we need to process left-dependents bottom-up and right-dependents top-down.
+    In this way, arcs will be added to the dependency graph as so

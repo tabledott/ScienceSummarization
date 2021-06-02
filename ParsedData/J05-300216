@@ -1,0 +1,8 @@
+ select a sentence in the input which contains most of the fragments and transform its parsed tree into the fusion lattice by eliminating nonessential information and augmenting it with information from other input sentences.
+    This construction of the fusion lattice targets content selection, but in the process, alternative verbalizations are selected, and thus some aspects of realization are also carried out in this phase.
+    Finally, we generate a sentence from this representation based on a language model derived from a large body of texts.
+    Our task is to identify information shared between sentences.
+    We do this by aligning constituents in the syntactic parse trees for the input sentences.
+    Our alignment process differs considerably from alignment for other NL tasks, such as machine translation, because we cannot expect a complete alignment.
+    Rather, a subset of the subtrees in one sentence will match different subsets of the subtrees in the others.
+    Furthermore, order across trees is 

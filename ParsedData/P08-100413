@@ -1,0 +1,7 @@
+form extraction from natural language text.
+    First, O-CRF only extracts relations that are explicitly mentioned in the text; implicit relationships that could inferred from the text would need to be inferred from OCRF extractions.
+    Second, O-CRF focuses on relationships that are primarily word-based, and not indicated solely from punctuation or document-level features.
+    Finally, relations must occur between entity names within the same sentence.
+    O-CRF was built using the CRF implementation provided by MALLET (McCallum, 2002), as well as part-of-speech tagging and phrase-chunking tools available from OPENNLP.2 Given an input corpus, O-CRF makes a single pass over the data, and performs entity identification using a phrase chunker.
+    The CRF is then used to label instances relations for each possible entity pair, subject to the constraints mentioned previously.
+    Following extraction, O-CRF applies the RESOLVER algorithm (Yates and Etzioni, 2007) to find relation synonyms, the various ways in w

@@ -1,0 +1,8 @@
+ in the manner of Cohn and Lapata (2007) (see Section 5for details) and augment it with a larger grammar obtained from a parallel bilingual corpus.
+			Crucially, our second grammar will not contain com pression rules, just paraphrasing ones.
+			We leave itto the model to learn which rules serve the com pression objective.
+			Our paraphrase grammar extraction method uses bilingual pivoting to learn paraphrases over syntax tree fragments, i.e., STSG rules.
+			Pivoting treats the paraphrasing problem as a two-stage translation process.
+			Some English text is translated to a foreign language, and then translated back into English (Bannard and Callison-Burch, 2005): p(e ? |e) = ? f p(e ? |f)p(f |e) (4) where p(f |e) is the probability of translating an English string e into a foreign string f and p(e ?|f) the probability of translating the same for eign string into some other English string e ? .
+			We.
+			thus obtain English-English translation probabili ties p(e ? |e) by marginalizing out the foreign text.Inste

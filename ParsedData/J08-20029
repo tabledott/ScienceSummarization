@@ -1,0 +1,9 @@
+related to ours, concentrating on methods for incorporating joint information and for increasing robustness to parser error.
+  
+  
+    Gildea and Jurafsky (2002) propose a method to model global dependencies by including a probability distribution over multi-sets of semantic role labels given a predicate.
+    In this way the model can consider the assignment of all nodes in the parse tree and evaluate whether the set of realized semantic roles is likely.
+    If a necessary role is missing or if an unusual set of arguments is assigned by the local model, this additional factor can correct some of the mistakes.
+    The distribution over label multi-sets is estimated using interpolation of a relative frequency and a back-off distribution.
+    The back-off distribution assumes each argument label is present or absent independently of the other labels, namely, it assumes a Bernoulli Naive Bayes model.
+    The most likely assignment of labels according to such a joint model is found approximately using re-scoring o

@@ -1,0 +1,5 @@
+ the issue of adapting an already developed phrase-based translation system in order to work properly on a different domain, for which almost no parallel data are available but only monolingual texts.1 The main components of the SMT system are the translation model, which aims at porting the content from the source to the target language, and the language model, which aims at building fluent sentences in the target language.
+    While the former is trained with bilingual data, the latter just needs monolingual target texts.
+    In this work, a lexicalized re-ordering model is also exploited to control re-ordering of target words.
+    This model is also learnable from parallel data.
+    Assuming some large monolingual in-domain texts are available, two basic adaptation approaches are pursued here: (i) generating synthetic bilingual data with an available SMT system and use this data to adapt its translation and re-ordering models; (ii) using synthetic or provided target texts to also, or only, adapt its langua

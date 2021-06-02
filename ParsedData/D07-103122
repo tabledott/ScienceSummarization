@@ -1,0 +1,7 @@
+tive for HMMinference, since it involves only a minor modification to the M-step of the Forward-Backward algo rithm.
+			MacKay (1997) and Beal (2003) describe Variational Bayesian (VB) inference for HMMs in detail, and Kurihara and Sato (2006) describe VBfor PCFGs (which only involves a minor modifica tion to the M-step of the Inside-Outside algorithm).
+			Specifically, the E-step for VB inference for HMMs is the same as in EM, while theM-step is as follows: ??(`+1)y?|y = f(E[ny?,y] + ?y)/f(E[ny] + s?y) (4) ??(`+1)x|y = f(E[nx,y] + ?x)/f(E[ny] +m?x) f(v) = exp(?(v)) ?(v) = (v &gt; 7) ? g(v ? 12) : (?(v + 1)?
+			1)/v g(x) ? log(x) + 0.04167x?2 + 0.00729x?4 +0.00384x?6 ? 0.00413x?8 . . .
+			(5) 301 P(yi|x,y?i, ?) ?
+			( nxi,yi + ?x nyi +m?x ) ( nyi,yi?1 + ?y nyi?1 + s?y ) ( nyi+1,yi + I(yi?1 = yi = yi+1) + ?y nyi + I(yi?1 = yi) ) Figure 4: The conditional distribution for state yi used in the Gibbs sampler, which conditions on the states y?i for all observations except xi.
+			Here m is the number of possible ob

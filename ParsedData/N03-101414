@@ -1,0 +1,7 @@
+ch is the source of the model&#8217;s soft biases.
+    The bias towards including certain information in the history representation arises from the recency bias in training recursively defined neural networks.
+    The only trained parameters of the mapping are the parameters of the function , which selects a subset of the information from a set of previous history representations and records it in a new history representation.
+    The training process automatically chooses the parameters of based on what information needs to be recorded.
+    The recorded information may be needed to compute the output for the current step, or it may need to be passed on to future history representations to compute a future output.
+    However, the more history representations intervene between the place where the information is input and the place where the information is needed, the less likely the training is to learn to record this information.
+    We can exploit this recency bias in inducing history representations by ens

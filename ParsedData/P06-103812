@@ -1,0 +1,9 @@
+omputed in time linear in the size of the input corpus, since (1) the number of patterns |P |is bounded, (2) vocabulary size |V  |(the total number of graph nodes) is much smaller than corpus size, and (3) the average node degree is much smaller than |V  |(in practice, with the thresholds used, it is a small constant.)
+  
+  
+    After the end of the previous stage we have a set of symmetric patterns.
+    We now use them in order to discover categories.
+    In this section we describe the graph clique-set method for generating initial categories, and category pruning techniques for increased quality.
+    Our approach to category discovery is based on connectivity structures in the all-pattern word relationship graph G, resulting from merging all of the single-pattern graphs into a single unified graph.
+    The graph G can be built in time O(|V  |x |P |x AverageDegree(G(P))) = O(|V |) (we use V rather than Nodes(G) for brevity.)
+    When building G, no special treatment is done when one pattern is contained wit

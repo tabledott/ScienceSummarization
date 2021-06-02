@@ -1,0 +1,8 @@
+ of some node, as well as the more pathological case in which multiple punctuation elements appear along the left or right frontier of a subtree (see Figure 4).
+    Finally, it is not clear what to do with nodes that dominate only punctuation preterminals.
+    Our implementation simply issues a warning in such cases and leaves the punctuation symbols untouched.
+    Head-children are not exempt from being relabeled as arguments.
+    Collins employs a small set of heuristics to mark certain nonterminals as arguments, by appending -A to the nonterminal label.
+    This section reveals three unpublished details about Collins&#8217; argument finding: This step simply involves stripping away all nonterminal augmentations, except those that have been added from other preprocessing steps (such as the -A augmentation for argument labels).
+    This includes the stripping away of all function tags and indices marked by the Treebank annotators.
+    Head moves from right to left conjunct in a coordinated phrase, except whe

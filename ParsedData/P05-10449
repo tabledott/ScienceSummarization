@@ -1,0 +1,8 @@
+aper, each model is a weighted finite-state automaton (WFSA) where states correspond to POS tags.
+    The parameter vector B E Rn specifies a weight for each of the n transitions in the automaton. y is a hidden path through the automaton (determining a POS sequence), and x is the string it emits. u(x, y  |0) is defined by applying exp to the total weight of all transitions in y.
+    This is an example of Eqs.
+    4 and 6 where fj(x, y) is the number of times the path y takes the jth transition.
+    The partition function Z( 0) of the WFSA is found by adding up the u-scores of all paths through the WFSA.
+    For a k-state WFSA, this equates to solving a linear system of k equations in k variables (Tarjan, 1981).
+    But if the WFSA contains cycles this infinite sum may diverge.
+    Alternatives to exact com2These are exemplified by CRFs (Lafferty et al., 2001), which can be viewed alternately as undirected dynamic graphical models with a chain topology, as log-linear models over entire sequences with local fea

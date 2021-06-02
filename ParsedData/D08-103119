@@ -1,0 +1,12 @@
+lain et al., 1995).
+    The MUC F-score is also the harmonic mean of precision and recall.
+    However, the MUC precision counts precision errors by computing the minimum number of links that must be added to ensure that all mentions referring to a given entity are connected in the graph.
+    Recall errors are the number of links that must be removed to ensure that no two mentions referring to different entities are connected in the graph.
+    We train a regularized average perceptron using examples selected as described in Section 2.2.1.
+    The learning rate is 0.1 and the regularization parameter (separator thickness) is 3.5.
+    At training time, we use a threshold of 0.0, but when evaluating, we select parameters to optimize B-Cubed F-Score on a held-out development set.
+    We sample all even integer thresholds from -16 to 8.
+    We choose the number of rounds of training similarly, allowing any number from one to twenty.
+  
+  
+    In Table 4, we compare our performance against a system that is comparab

@@ -1,0 +1,11 @@
+nsists of two components.
+    First, the statistical model assigns a probability to every candidate parse tree for a sentence.
+    Formally, given a sentence S and a tree T, the model estimates the conditional probability P(TIS).
+    The most likely parse under the model is then: Second, the parser is a method for finding Zest.
+    This section describes the statistical model, while section 3 describes the parser.
+    The key to the statistical model is that any tree such as Figure 1(b) can be represented as a set of baseNPs2 and a set of dependencies as in Figure 1(c).
+    We call the set of baseNPs B, and the set of dependencies D; Figure 1(d) shows B and D for this example.
+    For the purposes of our model, S is the sentence with words tagged for part of speech.
+    That is, S =&lt; (to' , ti), (w2,t2)...(w7-4,4,) &gt;.
+    For POS tagging we use a maximum-entropy tagger described in (Ratnaparkhi 96).
+    The tagger performs at around 97% accuracy on Wall Street Journal Text, and is trained on the first 4

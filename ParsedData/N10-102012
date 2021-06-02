@@ -1,0 +1,7 @@
+ei et al., 2003) similar to approaches used recently in summarization (Daum&#180;e III and Marcu, 2006; Haghighi and Vanderwende, 2009).
+    The goal of this extended model is to separate content words from dialogue indicators.
+    Each word in a conversation is generated from one of three sources: The extended model is shown in Figure 3.6 In addition to act emission and transition parameters, the model now includes a conversation-specific word multinomial Bk that represents the topic, as well as a universal general English multinomial OE.
+    A new hidden variable, s determines the source of each word, and is drawn from a conversation-specific distribution over sources Irk.
+    Following LDA conventions, we place a symmetric Dirichlet prior over each of the multinomials.
+    Dirichlet concentration parameters for act emission, act transition, conversation topic, general English, and source become the hyper-parameters of our model.
+    The multinomials Bk, Irk and OE create non-local dependencies in our model

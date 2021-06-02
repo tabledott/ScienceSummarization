@@ -1,0 +1,6 @@
+  We build a lexicon model using an approach similar to ones developed for unsupervised lexicon induction from monolingual or comparable corpora (Rapp, 1999; Koehn and Knight, 2002; Haghighi et al., 2008).
+    We briefly describe the lexicon model and its use in sentence-extraction.
+    The lexicon model is based on a probabilistic model P(wt|ws, T, 5) where wt is a word in the target language, ws is a word in the source language, and T and 5 are linked articles in the target and source languages, respectively.
+    We train this model similarly to the sentenceextraction ranking model, with the difference that we are aligning word pairs and not sentence pairs.
+    The model is trained from a small set of annotated Wikipedia article pairs, where for some words in the source language we have marked one or more words as corresponding to the source word (in the context of the article pair), or have indicated that the source word does not have a corresponding translation in the target article.
+    The word-level an

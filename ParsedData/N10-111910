@@ -1,0 +1,7 @@
+raph encodes co-occurrences over a large, but local context window, it can be noisy for our purposes.
+    In particular, we might see a number of edges between positive and negative sentiment words as well as sentiment words and non-sentiment words, e.g., sentiment adjectives and all other adjectives that are distributionally similar.
+    Larger windows theoretically alleviate this problem as they encode semantic as opposed to syntactic similarities.
+    We note, however, that the graph propagation algorithm described above calculates the sentiment of each phrase as the aggregate of all the best paths to seed words.
+    Thus, even if some local edges are erroneous in the graph, one hopes that, globally, positive phrases will be influenced more by paths from positive seed words as opposed to negative seed words.
+    Section 3, and indeed this paper, aims to measure whether this is true or not.
+    Previous studies on constructing polarity lexicons from lexical graphs, e.g., Rao and Ravichandran (2009), have us

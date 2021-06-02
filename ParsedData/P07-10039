@@ -1,0 +1,8 @@
+r model, and pd is a local distortion model.
+    As in all such models, the lexical component pt is a collection of unsmoothed multinomial distributions over foreign words.
+    The distortion model pd(aj|aj_, j) is a distribution over the signed distance aj &#8722; aj_, typically parameterized as a multinomial, Gaussian or exponential distribution.
+    The implementation that serves as our baseline uses a multinomial distribution with separate parameters for j = 1, j = J and shared parameters for all 1 &lt; j &lt; J. Null alignments have fixed probability at any position.
+    Inference over a requires only the standard forward-backward algorithm.
+    The broad and robust success of the HMM alignment model underscores the utility of its assumptions: that word-level translations can be usefully modeled via first-degree Markov transitions and independent lexical productions.
+    However, its distortion model considers only string distance, disregarding the constituent structure of the English sentence.
+    To al

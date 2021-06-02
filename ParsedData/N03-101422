@@ -1,0 +1,8 @@
+SSN-Tags&#8221;) includes no words in the vocabulary, relying completely on the information provided by the part-of-speech tags of the words.
+    The second model (&#8220;SSN-Freq 200&#8221;) uses all tag-word pairs which occur at least 200 times in the training set.
+    The remaining words were all treated as instances of the unknown-word.
+    This resulted in a vocabulary size of 512 tag-word pairs.
+    The third model (&#8220;SSN-Freq 20&#8221;) thresholds the vocabulary at 20 instances in the training set, resulting in 4242 tag-word pairs.
+    3 We determined appropriate training parameters and network size based on intermediate validation results and our previous experience with networks similar to the models SSN-Tags and SSN-Freq 200.
+    We trained two or three networks for each of the three vocabulary sizes and chose the best ones based on their validation performance.
+    Training times vary but are long, being around 4 days for a SSN-Tags model, 6 days for a SSN-Freq 200 model, and 10 days for a SSN

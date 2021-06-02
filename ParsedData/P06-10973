@@ -1,0 +1,8 @@
+ndard word alignments for small samples of the training data, which we use as the alignment discriminative training set and alignment test set.
+    Translation quality is evaluated by translating a held-out translation test set.
+    An additional translation set called the Maximum BLEU set is employed by the SMT system to train the weights associated with the components of its log-linear model (Och, 2003).
+    The training corpora are publicly available: both the Arabic/English data and the French/English Hansards were released by LDC.
+    We created the manual word alignments ourselves, following the Blinker guidelines (Melamed, 1998).
+    To train our baseline systems we follow a standard procedure.
+    The models were trained two times, first using French or Arabic as the source language and then using English as the source language.
+    For each training direction, we run GIZA++ (Och and Ney, 2003), specifying 5 iterations of Model 1, 4 iterations of the HMM model (Vogel et al., 1996), and 4 iterations of

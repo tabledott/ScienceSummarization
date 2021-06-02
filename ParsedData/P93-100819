@@ -1,0 +1,8 @@
+
+    The open question: should the repairs module be part of the recognizer filter or should it continue to be a post-processing component?
+    The argument for including it in the filter is that without a repairs module, the NL system rejects many sentences with repairs, and will thus disprefer essentially correct recognizer hypotheses.
+    The argument against including it is efficiency and the concern that with recognizer errors present, the repair module's precision may suffer: it may attempt to repair sentences with no repair in them.
+    Our current best guess is that recognizer errors are essentially orthogonal to repairs and that a filter including the repairs module will not suffer from precision problems.
+    But we have not yet performed the experiments to decide this.
+    In Gemini, parse preferences are enforced when extracting syntactically and semantically well-formed parse trees from the chart.
+    In this respect, our approach differs from many other approaches to the problem of parse prefere

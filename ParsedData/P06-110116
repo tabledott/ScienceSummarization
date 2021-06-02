@@ -1,0 +1,5 @@
+ pair feature, we construct a labeled training set of (m, n)cousin relation labels from WordNet 2.1.
+    We define a noun pair (i, j) to be a &#8220;known (m, n)cousin&#8221; if for some senses k E senses(i), l E senses(j), Cmn ij E WordNet; if more than one such relation exists, we assume the relation with smallest sum m + n, breaking ties by smallest absolute difference |m &#8722; n|.
+    We consider all such labeled relationships from WordNet with 0 &lt; m, n &lt; 7; pairs of words that have no corresponding pair of synsets connected in the hypernym hierarchy, or with min(m, n) &gt; 7, are assigned to a single class C'.
+    Further, due to the symmetry of the similarity score, we merge each class Cmn = Cmn U Cnm; this implies that the resulting classifier will predict, as expected given a symmetric input, P(Cmn We find 333,473 noun synset pairs in our training set with similarity score greater than 0.15.
+    We next apply softmax regression to learn a classifier that predicts P(Cmn ij |EC ij), predicting t

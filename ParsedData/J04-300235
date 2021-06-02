@@ -1,0 +1,10 @@
+.
+    The selection procedure is as follows.
+    First, all 1-grams, 2-grams, 3-grams, and 4-grams are extracted from the data.
+    In this work, each constituent of an n-gram is a word-stem, part-of-speech pair.
+    For example, (in-prep the-det can-noun) is a 3-gram that matches trigrams consisting of preposition in, followed by determiner the, and ending with noun can.
+    A subset of the n-grams are then selected based on precision.
+    The precision of an n-gram is the number of subjective instances of that n-gram in the data divided by the total number of instances of that n-gram in the data.
+    An instance of an n-gram is subjective if each word occurs in a subjective element in the data. n-grams are selected based on two criteria.
+    First, the precision of the n-gram must be greater than the baseline precision (i.e., the proportion of all word instances that Wiebe, Wilson, Bruce, Bell, and Martin Learning Subjective Language are in subjective elements).
+    Second, the precision of the n-gram must 

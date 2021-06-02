@@ -1,0 +1,9 @@
+sions to the model in (5)also necessitate changes in the training proce dure.
+			Recall that training the basic model of Cohn and Lapata (2007) requires finding the maximiserof H(y) in (3).
+			Their model uses a chart-based al gorithm for this purpose.
+			As in decoding we also use a beam search for training, thereby avoiding the exponential time complexity of exact search.The beam search requires an estimate of the qual ity for incomplete derivations.
+			We use the margin rescaling objective, H m in (3), and approximatethe loss using the current (incomplete) loss param eter values in each chart cell.
+			We use a wide beam of 200 unique items or 500 items in total to reduce the impact of the approximation.
+			Our loss functions are tailored to the task anddraw inspiration from metrics developed for ex tractive compression but also for summarisation and machine translation.
+			They are based on the Hamming distance over unordered bags of items.
+			This measures the number of predicted items that did not appear

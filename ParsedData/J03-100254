@@ -1,0 +1,9 @@
+t of the time in this procedure is spent on calculating the probability Pr(a'  |e, f) of an alignment a'.
+    In general, this takes about (I + J) operations.
+    Brown, Della Pietra, Della Pietra, and Mercer (1993) describe a method for obtaining Pr(a' | e, f) incrementally from Pr(a  |e, f) if alignment a differs only by moves or swaps from alignment a'.
+    This method results in a constant number of operations that is sufficient to calculate the score of a move or the score of a swap.
+  
+  
+    Analyzing the training program reveals that most of the time is spent on the computation of the costs of moves and swaps.
+    To reduce the number of operations required in such computation, these values are cached in two matrices.
+    We use one matrix for the scores of a move aj := i: and an additional matrix for the scores of a swap of aj and aj&#65533;: During the hill climbing, it is sufficient, after making a move or a swap, to update only those rows or columns in the matrix that are affected by the move or s

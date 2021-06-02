@@ -1,0 +1,11 @@
+t set for evaluating our fast hamming search.
+    We then apply the fast hamming distance search algorithm as described in Section 3.
+    In particular, it involves steps 3 to 6 of the algorithm.
+    We evaluate the hamming distance with respect to two criteria: 1.
+    Number of bit index random permutations functions q; 2.
+    Beam search parameter B.
+    For each vector in the test collection, we take the top N elements from the gold standard similarity list and calculate how many of these elements are actually discovered by the fast hamming distance algorithm.
+    We report the results in Table 3 and Table 4 with beam parameters of (B = 25) and (B = 100) respectively.
+    For each beam, we experiment with various values for q, the number of random permutation function used.
+    In general, by increasing the value for beam B and number of random permutation q , the accuracy of the search algorithm increases.
+    For example in Table 4 by using a beam B = 100 and using 1000 random bit permutations, we are ab

@@ -1,0 +1,8 @@
+to constrain each prototype word to take only its given label(s) at training time.
+    As we show in section 5, this does not work well in practice because this constraint on the model is very sparse.
+    In providing a prototype, however, we generally mean something stronger than a constraint on that word.
+    In particular, we may intend that words which are in some sense similar to a prototype generally be given the same label(s) as that prototype.
+    In syntactic distributional clustering, words are grouped on the basis of the vectors of their preceeding and following words (Sch&#168;utze, 1995; Clark, 2001).
+    The underlying linguistic idea is that replacing a word with another word of the same syntactic category should preserve syntactic well-formedness (Radford, 1988).
+    We present more details in section 5, but for now assume that a similarity function over word types is given.
+    Suppose further that for each non-prototype word type w, we have a subset of prototypes, Sw, which are known to be d

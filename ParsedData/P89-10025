@@ -1,0 +1,9 @@
+&amp;quot; as a generator.
+    Clearly, such a generator may not terminate.
+    For example, consider a grammar that includes the rule s/S --&gt; np/NP, vp(NP)/S.
+    (The intention is that verb phrases like, say, &amp;quot;loves Mary&amp;quot; be associated with a nonterminal vp(X)/love(X, nary).)
+    Once this rule is applied to the goal s/love(john, mary), the subgoal np/NP will be considered.
+    But the generation search space for that goal is infinite and so has infinite branches, because all noun phrases, and thus arbitrarily large ones, match the goal.
+    This is an instance of the general problem known from logic programming that a logic program may not terminate when called with a goal less instantiated than what was intended by the program's designer.
+    Dymetman and Isabelle (1988), noting this problem, propose allowing the grammarwriter to specify a separate goal ordering for parsing and for generation.
+    For the case at hand, the solution is to generate the VP first&#8212;from the goal vp(NP

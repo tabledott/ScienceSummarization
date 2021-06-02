@@ -1,0 +1,6 @@
+include deep syntactic tree annotation, we processed the FrameNet data with Collins&#8217; parser (Collins, 1997), consequently, the experiments on FrameNet relate to automatic syntactic parse trees.
+    The classifier evaluations were carried out with the SVM-light-TK software available at http://ai-nlp.info.uniroma2.it/moschitti/ which encodes ST and SST kernels in the SVMlight software (Joachims, 1999).
+    We used the default linear (Linear) and polynomial (Poly) kernels for the evaluations with the standard features defined in (Gildea and Jurafsky, 2002).
+    We adopted the default regularization parameter (i.e., the average of 1/||x||) and we tried a few cost-factor values (i.e., j E 11, 3, 7, 10, 30,100}) to adjust the rate between Precision and Recall on the validation-set.
+    For the ST and SST kernels, we derived that the best A (see Section 2.2) were 1 and 0.4, respectively.
+    The classification performance was evaluated using the F1 measure3 for the single arguments and the accuracy for the fin

@@ -1,0 +1,6 @@
+ases than Pharaoh&#8217;s trainer with its default settings.
+    And we also used our reimplemented trainer to tune lambdas of Pharaoh to maximize its BLEU score.
+    During decoding, we pruned the phrase table with b = 100 (default 20), pruned the chart with n = 100, a = 10&#8722;5 (default setting), and limited distortions to 4 (default 0).
+    We firstly ran our reordering example extraction algorithm on the bilingual training data without any length limitations to obtain reordering examples and then extracted features from these examples.
+    In the task of NIST MT-05, we obtained about 2.7M reordering examples with the straight order, and 367K with the inverted order, from which 112K lexical features and 1.7M collocation features after deleting those with one occurrence were extracted.
+    In the task of IWSLT-04, we obtained 79.5k reordering examples with the straight order, 9.3k with the inverted order, from which 16.9K lexical features and 89.6K collocation features after deleting those with one occur

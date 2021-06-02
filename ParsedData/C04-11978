@@ -1,0 +1,10 @@
+ global labeling.
+			3.2 First Phase: Find Argument Candidates.
+			The first phase is to predict the argument candidates of a given sentence that correspond to the active verb.
+			Unfortunately, it turns out that it is difficult to predict the exact arguments accurately.
+			Therefore, the goal here is to output a superset of the correct arguments by filtering out unlikely candidates.Specifically, we learn two classifiers, one to de tect beginning argument locations and the otherto detect end argument locations.
+			Each multi class classifier makes predictions over forty-three classes?thirty-two argument types, ten continuousargument types, and one class to detect not begin ning/not end.
+			Features used for these classifiers are: ? Word feature includes the current word, two words before and two words after.
+			Part-of-speech tag (POS) feature includes the POS tags of all words in a window of size two.
+			Chunk feature includes the BIO tags for chunks of all words in a window of size two.
+			Predicate lemma &

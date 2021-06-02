@@ -1,0 +1,6 @@
+rtain configurational constraints.
+    The algorithm chooses as the antecedent of a pronoun P the first NP, in the tree obtained by left-to-right breadth-first traversal of the branches to the left of the path T such that (i) T is the path from the NP dominating P to the first NP or S dominating this NP, (ii) T contains an NP or S node N that contains the NP dominating P. and (iii) N does not contain NP,.
+    If an antecedent satisfying this condition is not found in the sentence containing P. the algorithm selects the first NP obtained by a left-to-right breadth first search of the surface structures of preceding sentences in the text.
+    We have implemented a version of Hobbs' algorithm for Slot Grammar.
+    The original formulation of the algorithm encodes syntactic constraints on pronominal anaphora in the definition of the domain to which the search for an antecedent NP applies.
+    In our implementation of the algorithm, we have factored out the search procedure and substituted RAP's syntactic&#8212;mo

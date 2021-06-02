@@ -1,0 +1,9 @@
+he parameters &#952; can be estimated using maximum likelihood estimation(MLE) on a training corpus(Och and Ney, 2003).
+    The best alignment of the sentence pair, GIZA++ is an implementation of ML estimators for several statistical alignment models, including IBM Model 1 through 5 (Brown et al., 1993), HMM (Vogel et al., 1996) and Model 6 (Och and Ney, 2003).
+    Although IBM Model 5 and Model 6 are sophisticated, they do not give much improvement to alignment quality.
+    IBM Model 2 has been shown to be inferior to the HMM alignment model in the sense of providing a good starting point for more complex models.
+    (Och and Ney, 2003) So in this paper we focus on Model 1, HMM, Model 3 and 4.
+    When estimating the parameters, the EM (Dempster et al., 1977) algorithm is employed.
+    In the E-step the counts for all the parameters are collected, and the counts are normalized in M-step.
+    Figure 1 shows a high-level view of the procedure in GIZA++.
+    Theoretically the E-step requires summing over all th

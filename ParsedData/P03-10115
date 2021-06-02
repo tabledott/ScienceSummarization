@@ -1,0 +1,5 @@
+ probabilities at each node are independent of the choices at any other node.
+    These independence relations are analogous to those of a stochastic context-free grammar, and allow for efficient parameter estimation by an inside-outside Expectation Maximization (EM) algorithm.
+    The computation of inside probabilities Q, outlined below, considers possible reordering of nodes in the original tree in a bottom-up manner: for all nodes &#949;i in input tree T do for all k, l such that 1 &lt; k &lt; l &lt; N do for all orderings &#961; of the children &#949;1...&#949;m of &#949;i do for all partitions of span k, l into k1, l1...km, lm do This algorithm has computational complexity O(|T |Nm+2), where m is the maximum number of children of any node in the input tree T, and N the length of the input string.
+    By storing partially completed arcs in the chart and interleaving the inner two loops, complexity of O(|T|n3m!2m) can be achieved.
+    Thus, while the algorithm is exponential in m, the fan-out of the gramm

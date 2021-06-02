@@ -1,0 +1,9 @@
+( 1I1, eI1, a) such that a provides a oneto-one mapping from &#65533;fI1 to eI1 where all phrase pairs (&#65533;faj, ej) are compatible with the word alignment.
+    This constraint has two important effects.
+    First, we force P(ej |li) = 0 for all phrase pairs not compatible with the word-level alignment for some sentence pair.
+    This restriction successfully reduced the total legal phrase pair types from approximately 250 million to 17 million for 100,000 training sentences.
+    However, some desirable phrases were eliminated because of errors in the word alignments.
+    Second, the time to compute the e-step is reduced.
+    While in principle it is still intractable, in practice we can compute most sentence pairs&#8217; contributions in under a second each.
+    However, some spurious word alignments can disallow all segmentations for a sentence pair, rendering it unusable for training.
+    Several factors including errors in the word-level alignments, sparse word alignments and non-literal translations 

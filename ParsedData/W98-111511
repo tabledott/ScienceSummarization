@@ -1,0 +1,9 @@
+nt of the Earley algorithm.
+    The key observation is that the 'new' non-terminals `01,i' in a CKY parse using a left-factored grammar correspond to the set of non-empty incomplete edges A -4 01,z.
+    13z+1,n in the bottom-up variant of the Earley algorithm, where A -&gt; 131,, is a production of the original grammar.
+    Specifically, the fundamental rule of chart parsing (Kay, 1980), which combines an incomplete edge A --* a &#8226; BO with a complete edge B 7- to yield the edge A -+ a B &#8226; 0, corresponds to the left-factored productions `aB' --+ a B if /3 is non-empty or A 'a' B if i3 is empty.
+    Thus in general a single 'new' non-terminal in a CKY parse using the left-factored grammar abbreviates several incomplete edges in the Earley algorithm.
+  
+  
+    For our experiment, we used a tree-bank grammar induced from sections 2-21 of the Penn Wall Street Journal text (Marcus et al., 1993), with section 22 reserved for testing.
+    All sentences of length greater than 40 were ignored for testing pur

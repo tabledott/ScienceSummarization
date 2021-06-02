@@ -1,0 +1,6 @@
+standard parsing strategy for the stack-based parsers, on the other.
+    Before we turn to the evaluation of efficiency, we will try to analyze some of these differences in a little more detail, starting with the different techniques for capturing non-projective dependencies.
+    First of all, we may observe that the non-projective, list-based parser outperforms its strictly projective counterpart for all languages except Chinese.
+    The result for Chinese is expected, given that it is the only data set that does not contain any non-projective dependencies, but the difference in accuracy is very slight (0.19 percentage points).
+    Thus, it seems that the non-projective parser can also be used without loss in accuracy for languages with very few non-projective structures.
+    The relative improvement in accuracy for the non-projective parser appears to be roughly linear in the percentage of non-projective dependencies found in the data set, with a highly significant correlation (Pearson&#8217;s r = 0.815, p 

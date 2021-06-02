@@ -1,0 +1,9 @@
+ reversed: adjuncts can safely be added, but not dropped.
+    For example, in ID 59, the hypothesis aligns well with the text, but the addition of in Iraq indicates non-entailment.
+    We identify the &#8220;root nodes&#8221; of the problem: the root node of the hypothesis graph and the corresponding aligned node in the text graph.
+    Using dependency information, we identify whether adjuncts have been added or dropped.
+    We then determine the polarity (negative context, positive context or restrictor of a universal quantifier) of the two root nodes to generate features accordingly.
+    Antonymy features.
+    Entailment problems might involve antonymy, as in ID 971.
+    We check whether an aligned pairs of text/hypothesis words appear to be antonymous by consulting a pre-computed list of about 40,000 antonymous and other contrasting pairs derived from WordNet.
+    For each antonymous pair, we generate one of three boolean features, indicating whether (i) the words appear in contexts of matching polarity, (

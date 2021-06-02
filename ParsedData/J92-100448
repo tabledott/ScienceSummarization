@@ -1,0 +1,8 @@
+ two tasks represent very different sentence types.
+    For instance, the overwhelming majority of the TIMIT sentences are statements, whereas the RM task is made up exclusively of questions and requests.
+    The process of conversion to a new grammar involves parsing the new sentences one by one, and adding context-free rules whenever a parse fails.
+    The person entering the rules must be very familiar with the grammar structure, but for the most part it is straightforward to identify and incrementally add missing rules.
+    The parser identifies where in the sentence it fails, and also maintains a record of the successful partial parses.
+    These pieces of information usually are adequate to pinpoint the problem.
+    Once the grammar has been expanded to accomodate the new set of sentences, a subset grammar can be created automatically that only contains rules needed in the new domain, eliminating any rules that were particular to the original domain.
+    It required less than one person-month to convert

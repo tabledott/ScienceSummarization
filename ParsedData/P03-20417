@@ -1,0 +1,11 @@
+s no real advantage for modeling string pairs.3 But STSGs can generate a wider variety of tree pairs, e.g., non-isomorphic ones.
+    So when actual trees are provided for training, STSG can be more flexible in aligning them.
+    1Goodman (2002) presents efficient TSG parsing with unbounded elementary trees.
+    Unfortunately, that clever method does not permit arbitrary models of elementary tree probabilities, nor does it appear to generalize to our synchronous case.
+    (It would need exponentially many nonterminals to keep track of an matching of unboundedly many frontier nodes.)
+  
+  
+    Most statistical MT derives from IBM-style models (Brown et al., 1993), which ignore syntax and allow arbitrary word-to-word translation.
+    Hence they are able to align any sentence pair, however mismatched.
+    However, they have a tendency to translate long sentences into word salad.
+    Their alignment and translation accuracy improves when they are forced to translate shallow phrases as contiguous, potentially idiom

@@ -1,0 +1,8 @@
+ the completion step, which takes 0(12) for each input position, 1 being the length of the current prefix.
+    The total time is therefore 0(13) for an input of length 1, which is also the complexity of the standard Inside/Outside (Baker 1979) and LRI (Jelinek and Lafferty 1991) algorithms.
+    For grammars of bounded ambiguity, the incremental per-word cost reduces to 0(1), 0(12) total.
+    For deterministic CFGs the incremental cost is constant, 0(1) total.
+    Because of the possible start indices each state set can contain 0(1) Earley states, giving 0(12) worst-case space complexity overall.
+    Apart from input length, complexity is also determined by grammar size.
+    We will not try to give a precise characterization in the case of sparse grammars (Appendix B.3 gives some hints on how to implement the algorithm efficiently for such grammars).
+    However, for fully parameterized grammars in CNF we can verify the scaling of the algorithm in terms of the number of nonterminals n, and verify that it has t

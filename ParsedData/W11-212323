@@ -1,0 +1,11 @@
+ies.
+    We compare three hash tables: our probing implementation, GCC&#8217;s hash set, and Boost&#8217;s8 unordered.
+    For sorted lookup, we compare interpolation search, standard C++ binary search, and standard C++ set based on red-black trees.
+    The data structure was populated with 64-bit integers sampled uniformly without replacement.
+    For queries, we uniformly sampled 10 million hits and 10 million misses.
+    The same numbers were used for each data structure.
+    Time includes all queries but excludes random number generation and data structure population.
+    Figure 2 shows timing results.
+    For the PROBING implementation, hash table sizes are in the millions, so the most relevant values are on the right size of the graph, where linear probing wins.
+    It also uses less memory, with 8 bytes of overhead per entry (we store 16-byte entries with m = 1.5); linked list implementations hash set and unordered require at least 8 bytes per entry for pointers.
+    Further, the probing hash table doe

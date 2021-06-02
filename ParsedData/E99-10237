@@ -1,0 +1,13 @@
+In TBL, rules with different context information are used successively for solving different problems.
+    We will use the same context information for all data.
+    The optimal context size will be determined by comparing the results of different context sizes on the training data.
+    Here we will perform four steps.
+    We will start with testing different context sizes of words with their part-ofspeech tag.
+    After this, we will use the classification results of the best context size for determining the optimal context size for the classification tags.
+    As a third step, we will evaluate combinations of classification results and find the best combination.
+    Finally we will examine the influence of an MBL algorithm parameter: the number of examined nearest neighbors.
+  
+  
+    We have used the baseNP data presented in (Ramshaw and Marcus, 1995)2.
+    This data was divided in two parts.
+    The first part was training data and consisted of 211727 words taken from sections 15, 16, 17 and 18 from the W

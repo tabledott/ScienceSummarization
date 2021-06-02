@@ -1,0 +1,11 @@
+results from the previous section show that classification of implicits benefits from information about nearby relations, and so we expected improvements using a sequence model, rather than classifying each relation independently.
+    We trained a CRF classifier (Lafferty et al., 2001) over the sequence of implicit examples from all documents in sections 02 to 20.
+    The test set is the same as used for the 2-way classifiers.
+    We compare against a 6-way4 Naive Bayes classifier.
+    Only word pairs were used as features for both.
+    Overall 6-way prediction accuracy is 43.27% for the Naive Bayes model and 44.58% for the CRF model.
+  
+  
+    We have presented the first study that predicts implicit discourse relations in a realistic setting (distinguishing a relation of interest from all others, where the relations occur in their natural distributions).
+    Also unlike prior work, we separate the task from the easier task of explicit discourse prediction.
+    Our experiments demonstrate that features develo

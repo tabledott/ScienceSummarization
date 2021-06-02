@@ -1,0 +1,6 @@
+es that are consistent with the alignment is constituted by all bilingual phrase pairs in which all words within the source language phrase are aligned only with the words of the target language phrase and the words of the target language phrase are aligned only with the words of the source language phrase.
+    Note that we require that at least one word in the source language phrase be aligned with at least one word of the target language phrase.
+    As a result there are no empty source or target language phrases that would correspond to the &#8220;empty word&#8221; of the word-based statistical alignment models.
+    These phrases can be computed straightforwardly by enumerating all possible phrases in one language and checking whether the aligned words in the other language are consecutive, with the possible exception of words that are not aligned at all.
+    Figure 3 gives the algorithm phrase-extract that computes the phrases.
+    The algorithm takes into account possibly unaligned words at the boundarie

@@ -1,0 +1,5 @@
+f a word (or a lexical representation for the word) with preceding and following context, and the corresponding category for that word in that context.
+    A new sentence is tagged by selecting for each word in the sentence and its context the most similar case(s) in memory, and extrapolating the category of the word from these 'nearest neighbors'.
+    A memorybased approach has features of both learning rule-based taggers (each case can be regarded as a very specific rule, the similarity based reasoning as a form of conflict resolution and rule selection mechanism) and of stochastic taggers: it is fundamentally a form of k-nearest neighbors (k-nn) modeling, a well-known non-parametric statistical pattern recognition technique.
+    The approach in its basic form is computationally expensive, however; each new word in context that has to be tagged, has to be compared to each pattern kept in memory.
+    In this paper we show that a heuristic case base compression formalism (Daelemans et al., 1996), makes the me

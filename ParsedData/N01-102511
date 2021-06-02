@@ -1,0 +1,7 @@
+rds, their part-of-speech tags as well as the chunk labels.
+    More precisely, we give the following features to identify the chunk label for the-th word: Here,is the word appearing at-th position, is the POS tag of, and is the (extended) chunk label for-th word.
+    In addition, we can reverse the parsing direction (from right to left) by using two chunk tags which appear to the r.h.s. of the current token ( ).
+    In this paper, we call the method which parses from left to right as forward parsing, and the method which parses from right to left as backward parsing.
+    Since the preceding chunk labels ( for forward parsing , for backward parsing) are not given in the test data, they are decided dynamically during the tagging of chunk labels.
+    The technique can be regarded as a sort of Dynamic Programming (DP) matching, in which the best answer is searched by maximizing the total certainty score for the combination of tags.
+    In using DP matching, we limit a number of ambiguities by applying beam searc

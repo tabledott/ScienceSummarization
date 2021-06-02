@@ -1,0 +1,6 @@
+wise, scopes its subparts recursively.
+    % No more arguments. pull_opaque_args(_Pred,_ArgIndex,H,H) !.
+    % Current argument position is opaque; scope it. pull_opaque_args(Pred, ArgIndex, Form ==&gt; a wff with in-place complex terms Complete?
+    ==&gt; true iff only full scopings are allowed ScopedForm &lt;== a full or partial scoping of Form Applies one or more terms to the Form alone (not to any embedded forms. apply_terms(Form, _Complete, Form) :not(term(Form,_Term)), !.
+    % apply(Term,Form,NewForm) Term ==&gt; a complex term Form ==&gt; the wff to apply Term to NewForm &lt;== Form with the quantifier wrapped around it apply(term(Quant,Var,Restrict), Body, wff(Quant,[var,PulledRestrict,OutBody])) :pull(Restrict, false, PulledRestrict), subst(Var,term(Quant,Var,Restrict),Body,OutBody).
+    % applicable_term(Form, Term) Form ==&gt; an expression in the logical form language Term &lt;== a top-level term in Form (that is, a term embedded in no other term) which is not free in any variable bound along th

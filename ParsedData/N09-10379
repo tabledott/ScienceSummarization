@@ -1,0 +1,9 @@
+ augmented with named entity information, we add extra copies of that rule to the grammar.
+    We add one copy with all of the named entity information stripped away, and another copy for each other entity type, where the named entity augmentation has been changed to the other entity type.
+    These additions help, but they are not sufficient.
+    Most entities correspond to noun phrases, so we took all rules which had an NP as a child, and made copies of that rule where the NP was augmented with each possible entity type.
+    These grammar additions sufficed to improve overall performance.
+    The lexicon is augmented in a similar manner to the rules.
+    For every part of speech tag seen with a named entity annotation, we also add that tag with no named entity information, and a version which has been augmented with each type of named entity.
+    It would be computationally infeasible to allow any word to have any part of speech tag.
+    We therefore limit the allowed part of speech tags for common words ba

@@ -1,0 +1,9 @@
+;a b c&#8221; and &#8220;x y&#8221; mean the same thing.
+    The model chose to give more weight to the second hypothesis, while preserving some probability mass for the first one.
+    Also note that although the joint distribution puts the second hypothesis at an advantage, the conditional distribution does not.
+    The conditional distribution in Figure 1.e is consistent with our intuitions that tell us that it is reasonable both to translate &#8220;a b c&#8221; into &#8220;x y&#8221;, as well as &#8220;a&#8221; into &#8220;y&#8221;.
+    The conditional distribution mirrors perfectly our intuitions.
+    4 Decoding For decoding, we have implemented a greedy procedure similar to that proposed by Germann et al. (2001).
+    Given a Foreign sentence F, we first produce a gloss of it by selecting phrases inthat the probability .
+    We then tively hillclimb by modifying E and the alignment between E and F so as to maximize the formula .
+    We hillclimb by modifying an existing alignment/translation through a set

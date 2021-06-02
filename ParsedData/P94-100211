@@ -1,0 +1,8 @@
+ms, where membership in a chain is determined by location in the text.
+    The method determines subtopic flow by recording where in the discourse the bulk of one set of chains ends and a new set of chains begins.
+    The core algorithm has three main parts: Tokenization refers to the division of the input text into individual lexical units.
+    For both versions of the algorithm, the text is subdivided into psuedosentences of a pre-defined size w (a parameter of the algorithm) rather than actual syntactically-determined sentences, thus circumventing normalization problems.
+    For the purposes of the rest of the discussion these groupings of tokens will be referred to as token-seguences.
+    In practice, setting w to 20 tokens per token-sequence works best for many texts.
+    The morphologically-analyzed token is stored in a table along with a record of the tokensequence number it occurred in, and how frequently it appeared in the token-sequence.
+    A record is also kept of the locations of the paragraph br

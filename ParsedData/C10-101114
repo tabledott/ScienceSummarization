@@ -1,0 +1,12 @@
+ of the data from the hash table.
+			Therefore, the memory controller has frequently to transfer data from the main memory into the CPU.
+			This procedure is relatively slow.
+			We traced down the high time consumption to the access of the key and the access of the value.
+			Successive accessesto the arrays are fast, but the relative random ac cesses via the hash function are very slow.
+			Thelarge number of accesses to the three arrays, be cause of the negative features, positive features and because of the hash misses multiplied by the time needed to transfer the data into the CPU are the reason for the high time consumption.We tried to solve this problem with Bloom filters, larger hash tables and customized hash func tions to reduce the hash misses.
+			These techniquesdid not help much.
+			However, a substantial im provement did result when we eliminated the hash table completely, and directly accessed the weight vectors ??w and ??v with a hash function.
+			This led us to the use of Hash Kernels.
+	
+	
+			A 

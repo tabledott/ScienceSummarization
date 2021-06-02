@@ -1,0 +1,5 @@
+ models, and calculating the marginals, now has a grammar constant equal Section 2.2 described the use of feature vectors associated with spines used in a derivation, together with first-order, sibling, and grandparent dependencies.
+    The dependency features used in our experiments are closely related to the features described in (Carreras, 2007), which are an extension of the McDonald and Pereira (2006) features to cover grandparent dependencies in addition to first-order and sibling dependencies.
+    The features take into account the identity of the labels l used in the derivations.
+    The features could potentially look at any information in the labels, which are of the form (POS, A, &#951;h, &#951;m, L), but in our experiments, we map labels to a pair (GRM((POS, A, &#951;h, &#951;m, L)), A).
+    Thus the label features are sensitive only to the triple of nonterminals corresponding to the grammatical relation involved in an adjunction, and a binary flag specifiying whether the operation is s-adjunction

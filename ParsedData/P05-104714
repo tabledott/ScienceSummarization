@@ -1,0 +1,9 @@
+hreshold, Q, is used to determine the maximum number of documents in which a pattern can occur since these very frequent patterns are often too general to be useful for IE.
+    Patterns which occur in more than Q x C, where C is the number of documents in the collection, are not learned.
+    For the experiments in this paper we set &#945; to 2 and Q to 0.3.
+  
+  
+    A number of pre-processing stages have to be applied to documents in order for the set of patterns to be extracted before learning can take place.
+    Firstly, items belonging to semantic categories are identified by running the text through the named entity identifier in the GATE system (Cunningham et al., 2002).
+    The corpus is then parsed, using a version of MINIPAR (Lin, 1999) adapted to process text marked with named entities, to produce dependency trees from which SVO-patterns are extracted.
+    Active and passive voice is taken into account in MINIPAR&#8217;s output so the sentences &#8220;COMPANY fired their C.E.O.&#8221; and &#8220;The

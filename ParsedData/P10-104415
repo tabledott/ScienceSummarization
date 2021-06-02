@@ -1,0 +1,7 @@
+ble pairs of multinomials (Qz, -yz), LinkLDA allows the arguments of a given extraction to be generated from IZ12 possible pairs.
+    Thus, instead of imposing a hard constraint that z1 = z2 (as in JointLDA), LinkLDA simply assigns a higher probability to states in which z1 = z2, because both hidden variables are drawn from the same (sparse) distribution 0r.
+    LinkLDA can thus re-use argument classes, choosing different combinations of topics for the arguments if it fits the data better.
+    In Section 4 we show experimentally that LinkLDA outperforms JointLDA (and IndependentLDA) by wide margins.
+    We use LDA-SP to refer to LinkLDA in all the experiments below.
+    For all the models we use collapsed Gibbs sampling for inference in which each of the hidden variables (e.g., zr,i,1 and zr,i,2 in LinkLDA) are sampled sequentially conditioned on a fullassignment to all others, integrating out the parameters (Griffiths and Steyvers, 2004).
+    This produces robust parameter estimates, as it allows computation

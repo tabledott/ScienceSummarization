@@ -1,0 +1,10 @@
+ion needed in Eq.
+    8 requires a sum over a large number of possible sentences, for which we do not know an efficient algorithm.
+    Hence, we approximate this sum by sampling the space of all possible sentences by a large set of highly probable sentences.
+    The set of considered sentences is computed by an appropriately extended version of the used search algorithm (Och et al., 1999) computing an approximate n-best list of translations.
+    Unlike automatic speech recognition, we do not have one reference sentence, but there exists a number of reference sentences.
+    Yet, the criterion as it is described in Eq.
+    11 allows for only one reference translation.
+    Hence, we change the criterion to allow Rs reference translations es,1, ... , es,Rs for the sentence es: We use this optimization criterion instead of the optimization criterion shown in Eq.
+    11.
+    In addition, we might have the problem that no single of the reference translations is part of the nbest list because the search algorithm per

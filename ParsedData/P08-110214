@@ -1,0 +1,7 @@
+in all our experiments) and ending at position i, then we derive all candidate results by attaching each word-POS pair p (of length l) to the tail of each candidate result at the prior position of p (position i&#8722;l), and select for position i a N-best list of candidate results from all these candidates.
+    When we derive a candidate result from a word-POS pair p and a candidate q at prior position of p, we calculate the scores of the word LM, the POS LM, the labelling probability and the generating probability, Algorithm 2 Decoding algorithm. as well as the score of the perceptron model.
+    In addition, we add the score of the word count penalty as another feature to alleviate the tendency of LMs to favor shorter candidates.
+    By equation 2, we can synthetically evaluate all these scores to perform more accurately comparing between candidates.
+    Algorithm 2 shows the decoding algorithm.
+    Lines 3 &#8212; 11 generate a N-best list for each character position i.
+    Line 4 scans words of all possibl

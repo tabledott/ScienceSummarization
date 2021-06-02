@@ -1,0 +1,8 @@
+lem have been promising, our choices will be guided by previous learning-based coreference systems, as described below.
+    Training instance creation methods.
+    A training instance represents two NPs, NP and NP&#9985; , having a class value of COREFERENT or NOT COREFERENT depending on whether the NPs co-refer in the associated text.
+    We consider three previously-proposed methods of creating training instances.
+    In McCarthy and Lehnert&#8217;s method, a positive instance is created for each anaphoric NP paired with each of its antecedents, and a negative instance is created by pairing each NP with each of its preceding non-coreferent noun phrases.
+    Hence, the number of instances created by this method is quadratic in the number of NPs in the associated text.
+    The large number of instances can potentially make the training process inefficient.
+    In an attempt to reduce the training time, Soon et al.&#8217;s method creates a smaller number of training instances than McCarthy and Lehnert&#8217;s.

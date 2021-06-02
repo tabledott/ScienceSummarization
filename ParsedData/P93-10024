@@ -1,0 +1,13 @@
+ (Kay, 1991) and (Catizone et al., 1989).
+    However, to date lexically-based algorithms have not proved efficient enough to be suitable for large corpora.
+    In this paper, we describe a fast algorithm for sentence alignment that uses lexical information.
+    The algorithm constructs a simple statistical word-to-word translation model on the fly during sentence alignment.
+    We find the alignment that maximizes the probability of generating the corpus with this translation model.
+    The search strategy used is dynamic programming with thresholding.
+    Because of thresholding, the search is linear in the length of the corpus so that a corpus need not be subdivided into smaller chunks.
+    The search strategy is robust with respect to large deletions; lexical information allows us to confidently identify the beginning and end of deletions.
+  
+  
+    We use an example to introduce our framework for alignment.
+    Consider the bilingual corpus (C, Y) displayed in Figure 2.
+    Assume that we have constructe

@@ -1,0 +1,7 @@
+s because the pattern matching technique requires that the parser correctly identify large tree fragments that encode long-range dependencies not captured by the parser.
+    If the parser makes a single parsing error anywhere in the tree fragment matched by a pattern, the pattern will no longer match.
+    This is not unlikely since the statistical model used by the parser does not model these larger tree fragments.
+    It suggests that one might improve performance by integrating parsing, empty node recovery and antecedent finding in a single system, in which case the current algorithm might serve as a useful baseline.
+    Alternatively, one might try to design a &#8220;sloppy&#8221; pattern matching algorithm which in effect recognizes and corrects common parser errors in these constructions.
+    Also, it is undoubtedly possible to build programs that can do better than this algorithm on special cases.
+    For example, we constructed a Boosting classifier which does recover *U* and empty complementizers 0 mo

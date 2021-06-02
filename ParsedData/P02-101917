@@ -1,0 +1,9 @@
+ionary for which the product P (r)PCMB(wjr) is maximized.
+    In our experiments we used a uniform source language model over the words in the dictionary.
+    Therefore our spelling correction algorithm selects the word r that maximizes PCMB(wjr).
+    Brill and Moore (2000) showed that adding a source language model increases the accuracy significantly.
+    They also showed that the addition of a language model does not obviate the need for a good error model and that improvements in the error model lead to significant improvements in the full noisy channel model.
+    We build two separate error models, LTR and PH (standing for &#8220;letter&#8221; model and &#8220;phone&#8221; model).
+    The letter-based model estimates a probability distribution PLTR(wjr) over words, and the phone-based model estimates a distribution PPH(pron wjpron r) over pronunciations.
+    Using the PH model and the letter-to-phone model, we derive a distribution PPHL(wjr) in a way to be made precise shortly.
+    We combine the two mod

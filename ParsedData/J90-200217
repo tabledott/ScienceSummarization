@@ -1,0 +1,10 @@
+ge model.
+    Thus, we have one parameter for every pair of words in the source language.
+    We estimate these parameters from the counts of word pairs in a large sample of text from the English part of our Hansard data using a method described by Jelinek and Mercer (1980).
+    In Section 3 we discussed alignments of sentence pairs.
+    If we had a collection of aligned pairs of sentences, then we could estimate the parameters of the translation model by counting, just as we do for the language model.
+    However, we do not have alignments but only the unaligned pairs of sentences.
+    This is exactly analogous to the situation in speech recognition where one has the script of a sentence and the time waveform corresponding to an utterance of it, but no indication of just what in the time waveform corresponds to what in the script.
+    In speech recognition, this problem is attacked with the EM algorithm (Baum 1972; Dempster et al. 1977).
+    We have adapted this algorithm to our problem in translation.
+    I

@@ -1,0 +1,8 @@
+ Additional parses can be found by simply continuing the process.
+    The grammar is built from a set of training sentences, using a bootstrapping procedure.
+    Initially, each sentence is translated by hand into a list of the rules invoked to parse it.
+    After the grammar has built up a substantial knowledge of the language, many new sentences can be parsed automatically, or with minimal intervention to add a few new rules incrementally.
+    The arc probabilities can be incrementally updated after the successful parse of each new sentence.
+    The process of converting the rules to a network form is straightforward.
+    All rules with the same LHS are combined to form a structure describing possible interconnections among children of a parent node associated with the left-hand category.
+    A probability matrix connecting each possible child with each other child is constructed by counting the number of times a particular sequence of two siblings occurred in the RHSs of the common rule set, and normalizin

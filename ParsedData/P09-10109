@@ -1,0 +1,8 @@
+ruct this sequence by repeatedly choosing an action given the current mapping state, and applying that action to advance to a new state.
+    Given a state s = (&#163;, d, j, W), the space of possible next actions is defined by enumerating subspans of unused words in the current sentence (i.e., subspans of the jth sentence of d not in W), and the possible commands and parameters in environment state &#163;.4 We model the policy distribution p(a|s; 0) over this action space in a log-linear fashion (Della Pietra et al., 1997; Lafferty et al., 2001), giving us the flexibility to incorporate a diverse range of features.
+    Under this representation, the policy distribution is: where 0(s, a) E Rn is an n-dimensional feature representation.
+    During test, actions are selected according to the mode of this distribution.
+  
+  
+    During training, our goal is to find the optimal policy p(a|s; &#952;).
+    Since reward correlates with correct action selection, a natural objective is to maximize expected future rewar

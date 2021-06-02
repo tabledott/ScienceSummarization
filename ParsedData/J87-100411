@@ -1,0 +1,9 @@
+tands for *det throughout this paper.
+    Since the sentence is 14-way ambiguous, the stack has been split into 14 stacks.
+    For example, the sixth stack (05 1 *p 6 NP 11 *p 6) is in the status where I saw a man on the bed has been reduced into S, and the apartment has been reduced into NP.
+    From the LR parsing table, we know that the top of the stack, state 6, is expecting *det or *n and eventually a NP.
+    Thus, after a telescope comes in, a PP with a telescope will be formed, and the PP will modify the NP the apartment, and in the apartment will modify the S I saw a man.
+    We notice that some stacks in the stack list appear to be identical.
+    This is because they have reached the current state in different ways.
+    For example, the sixth and seventh stacks are identical, because I saw a man on the bed has been reduced into S in two different ways.
+    A disadvantage of the stack list method is that there are no interconnections between stacks (processes), and there is no way in which a process c

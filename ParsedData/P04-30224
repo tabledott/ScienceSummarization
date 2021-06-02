@@ -1,0 +1,11 @@
+r mention detection and mention chaining modules.
+    In the next section, we describe our extraction system.
+    We present results in section 3, and we conclude after making some general observations in section 4.
+  
+  
+    We built Maximum Entropy models for predicting the type of relation (if any) between every pair of mentions within each sentence.
+    We only model explicit relations, because of poor inter-annotator agreement in the annotation of implicit relations.
+    Table 1 lists the types and subtypes of relations for the ACE RDC task, along with their frequency of occurence in the ACE training data2.
+    Note that only 6 of these 24 relation types are symmetric: &#8220;relative-location&#8221;, &#8220;associate&#8221;, &#8220;other-relative&#8221;, &#8220;other-professional&#8221;, &#8220;sibling&#8221;, and &#8220;spouse&#8221;.
+    We only model the relation subtypes, after making them unique by concatenating the type where appropriate (e.g.
+    &#8220;OTHER&#8221; became &#8220;OTHER-PART&#8221

@@ -1,0 +1,9 @@
+cal translation probability distribution .
+    We estimated it by relative frequency from the same word alignments as the phrase model. count count A special English NULL token is added to each English sentence and aligned to each unaligned foreign word.
+    Given a phrase pair and a word alignment between the foreign word positions and the English word positions , we compute the lexical weight by an alignment and a lexical translation probability distribution See Figure 3 for an example.
+    If there are multiple alignments for a phrase pair , we use the one with the highest lexical weight: We use the lexical weight during translation as a additional factor.
+    This means that the model is extended to The parameter defines the strength of the lexical weight .
+    Good values for this parameter are around 0.25.
+    Figure 4 shows the impact of lexical weighting on machine translation performance.
+    In our experiments, we achieved improvements of up to 0.01 on the BLEU score scale.
+    Again, all phrases co

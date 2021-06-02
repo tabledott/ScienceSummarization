@@ -1,0 +1,8 @@
+en sequence, we identify all sequences of tokens that are found in the phrase clusters.
+    The phrases are allowed to overlap with or be nested in one another.
+    If a phrase belonging to cluster c is found at positions b to e (inclusive), we add the following features to the CRF classifier: where B (before), A (after), S (start), M (middle), and E (end) denote a position in the input sequence relative to the phrase belonging to cluster c. We treat the cluster membership as binary.
+    The similarity between an element and its cluster centroid is ignored.
+    For example, suppose the input sentence is &#8220;... guitar legend Jimi Hendrix was ...&#8221; and &#8220;Jimi Hendrix&#8221; belongs to cluster 183.
+    Figure 1 shows the attributes at different input positions.
+    The cluster features are the cross product of the unigram/bigram labels and the attributes.
+    The phrasal cluster features not only help in resolving the ambiguities of words within a phrase, the B and A features also allow words adjac

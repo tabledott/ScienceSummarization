@@ -1,0 +1,7 @@
+e extremely useful for pushing Viterbi inference away from certain paths by assigning such features negative weight.
+    The use of a prior allows the incorporation of unsupported features, however, doing so often greatly increases the number parameters and thus the memory requirements.
+    Below we experiment with models containing and not containing unsupported features&#8212;both with and without regularization by priors, and we argue that non-supported features are useful.
+    We present here incremental support, a method of introducing some useful unsupported features without exploding the number of parameters with all unsupported features.
+    The model is trained for several iterations with supported features only.
+    Then inference determines the label sequences assigned high probability by the model.
+    Incorrect transitions assigned high probability by the model are used to selectively add to the model those unsupported features that occur on those transitions, which may help improve performance b

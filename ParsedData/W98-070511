@@ -1,0 +1,7 @@
+nset indexing has advantages over plain word sense disambiguation, because it permits matching semantically similar terms.
+    Taking only the first document retrieved for each summary, the disambiguated collection gives a 53.2% success against a 48% of the plain SN1ART query, which represents a 11% improvement.
+    For recall levels higher than 0.85, however, the disambiguated collection performs slightly worse.
+    This may seem surprising, as word sense disambiguation should only increase our knowledge about queries and documents.
+    But we should bear in mind that WordNet 1.5 is not the perfect database for text retrieval, and indexing by word senses prevents some matchings that can be useful for retrieval.
+    For instance, design is used as a noun repeatedly in one of the documents, while its summary uses design as a verb.
+    WordNet 1.5 does not include cross-part-of-speech semantic relations, so this relation cannot be used with word senses, while term indexing simply (and successfully!) does not di

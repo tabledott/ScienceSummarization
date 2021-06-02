@@ -1,0 +1,9 @@
+ewhere in the literature.
+    Unless otherwise mentioned, the experiments use the same protocol: 10 fold cross validation, where eight folds are used for training, one for development, and one for testing.
+    Results are reported in terms of phoneme error rates or tag error rates on the test set.
+    Comparing run-times can be a tricky matter, especially when different software packages are involved.
+    As discussed above, the observed runtimes depend on many small implementation details.
+    As the three algorithms share as much code as possible, we believe the comparison reported hereafter to be fair and reliable.
+    All experiments were performed on a server with 64G of memory and two Xeon processors with 4 cores at 2.27 Ghz.
+    For comparison, all measures of run-times include the cumulated activity of all cores and give very pessimistic estimates of the wall time, which can be up to 7 times smaller.
+    For OWL-QN, we use 5 past values of the gradient to approximate the inverse of the Hessian matrix:

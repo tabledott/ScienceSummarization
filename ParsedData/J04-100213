@@ -1,0 +1,8 @@
+ribution over word classes, but what is observed in the corpus is a distribution over word forms.
+    Resnik&#8217;s algorithm works around this problem by approximating a word class distribution from the word form distribution.
+    For each word form observed filling a case slot, credit is divided evenly among all of that word form&#8217;s possible senses (and their ancestors in WordNet).
+    Although Resnik&#8217;s algorithm makes no explicit attempt at sense disambiguation, greater activation tends to accumulate in those nodes that best characterize a predicate&#8217;s selectional preferences.
+    CorMet uses Resnik&#8217;s algorithm to learn domain-specific selection preferences.
+    It often finds different selectional preferences for predicates whose preferences should, intuitively, be the same.
+    In the MILITARY domain, the object of assault selects strongly for fortification but not social group, whereas the selectional preferences for the object of attack are the opposite.
+    Taking the cosine of 

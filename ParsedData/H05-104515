@@ -1,0 +1,12 @@
+ectional restrictions.Step 3: The patterns are applied to the training corpus and statistics are gathered about their extractions.
+			We count the number of extractions that match annotations in the corpus (cor rect extractions) and the number of extractionsthat do not match annotations (incorrect extrac tions).
+			These counts are then used to estimate the probability that the pattern will extract an opinion source in new texts: P (source | patterni) = correct sources correct sources + incorrect sources This learning process generates a set of extractionpatterns coupled with probabilities.
+			In the next sec tion, we explain how these extraction patterns are represented as features in the CRF model.
+	
+	
+			The extraction patterns provide two kinds of infor mation.
+			SourcePatt indicates whether a wordactivates any source extraction pattern.
+			For exam ple, the word ?complained?
+			activates the pattern?&lt;subj&gt; complained?
+			because it anchors the ex pression.
+			SourceExtr indicates whether a word is

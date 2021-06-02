@@ -1,0 +1,8 @@
+ether the orthographic form and/or tag of the next word (ignoring punctuation) are the same as those of the current word.
+    Ti has a non-NULL value only if the current word is followed by an interregnum string; in that case Ti is the POS tag of the word following that interregnum.
+    As described above, the classifier&#8217;s features are sets of variable-value pairs.
+    Given a tuple of variables, we generate a feature for each tuple of values that the variable tuple assumes in the training data.
+    In order to keep the feature set managable, the tuples of variables we consider are restricted in various ways.
+    The most important of these are constraints of the form &#8216;if Xj is included among feature&#8217;s variables, then so is Xk&#8217;.
+    For example, we require that if a feature contains Pi+1 then it also contains Pi for i &#8805; 0, and we impose a similiar constraint on POS tags.
+    For the purposes of this research the Switchboard corpus, as distributed by the Linguistic Data Consortium

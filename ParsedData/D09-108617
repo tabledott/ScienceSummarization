@@ -1,0 +1,9 @@
+ alignment of the two trees.
+    We again work in a dependency framework, where syntactic nodes are simply lexical items.
+    This allows us to use existing work on word alignment.
+    Hwa et al. (2005) tested the DCA under idealized conditions by obtaining hand-corrected dependency parse trees of a few hundred sentences of Spanish-English and Chinese-English bitext.
+    They also used human-produced word alignments.
+    Since their word alignments could be many-tomany, they gave a heuristic Direct Projection Algorithm (DPA) for resolving them into component dependency relations.
+    It should be noted that this process introduced empty words into the projected target language tree and left words that are unaligned to English detached from the tree; as a result, they measured performance in dependency Fscore rather than accuracy.
+    With manual English parses and word alignments, this DPA achieved 36.8% F-score in Spanish and 38.1% in Chinese.
+    With Collins-model English parses and GIZA++ word alignments,

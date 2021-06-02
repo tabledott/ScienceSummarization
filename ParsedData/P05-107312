@@ -1,0 +1,9 @@
+.
+    Increasing the number of N to 30 results in a very small gain in the upper bound on performance and a large increase in memory requirements.
+    We therefore selected N = 20 as a good compromise.
+    Generation of top N most likely joint assignments We generate the top N most likely nonoverlapping joint assignments of labels to nodes in a parse tree according to a local model PsRL, by an exact dynamic programming algorithm, which is a generalization of the algorithm for finding the top non-overlapping assignment described in section 3.1.
+    We learn log-linear re-ranking models for joint semantic role labeling, which use feature maps from a parse tree and label sequence to a vector space.
+    The form of the models is as follows.
+    Let 4b(t, v, L) E R' denote a feature map from a tree t, target verb v, and joint assignment L of the nodes of the tree, to the vector space R'.
+    Let L1, L2, &#183; &#183; &#183; , LN denote top N possible joint assignments.
+    We learn a loglinear model with a paramet

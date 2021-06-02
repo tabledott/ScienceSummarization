@@ -1,0 +1,10 @@
+y tuning these parameters by language pair.
+    Finally, when baseline model costs are added as an extra feature (mert+b), the number of pairs with gains/no changes/drops is 26/8/5.
+    This shows that this feature can allow MBR decoding to backoff to the MAP translation.
+    When MBR does not produce a higher BLEU score relative to MAP on the development set, MERT assigns a higher weight to this feature function.
+    We see such an effect for 4 systems.
+  
+  
+    We have presented efficient algorithms which extend previous work on lattice-based MERT (Macherey et al., 2008) and MBR decoding (Tromble et al., 2008) to work with hypergraphs.
+    Our new MERT algorithm can work with both lattices and hypergraphs.
+    On lattices, it achieves similar run-times as the implementation System BLEU (%) MAP MBR default mert-b mert+b aren.pb 54.2 54.8 54.8 54.9 aren.hier 52.8 53.3 53.5 53.7 aren.samt 53.4 54.0 54.4 54.0 zhen.pb 40.1 40.7 40.7 40.9 zhen.hier 41.0 41.0 41.0 41.0 zhen.samt 41.3 41.8 41.6 41.7 described in M

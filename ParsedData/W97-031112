@@ -1,0 +1,7 @@
+is,their} mind.&amp;quot; When the gap filling procedure finds two or three possible fillers, the most frequent filler is used, and the rest are ignored in the hope that they will be discovered on the next iteration.
+    When there are more than three possible fillers, the NCC retains the gap.
+    The token fuser (in Steps 2 and 7) knows to shift all words in the NCC to the location of the leftmost word.
+    E.g. an instance of the previous example in the text might be fused as &amp;quot;make_up_&lt; GAP &gt;_mind his.&amp;quot; In principle, the NCC discovery algorithm could iterate until Axy &lt; 0 for all bigrams.
+    This would be a classic case of over-fitting the model to the training data.
+    NCC discovery is more useful if it is stopped at the point where the NCCs discovered so far would maximize the application's objective function on new data.
+    A domain-independent method to find this point is to use held-out data or, more generally, to cross-validate between different subsets of the training da

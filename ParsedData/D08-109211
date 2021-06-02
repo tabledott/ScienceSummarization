@@ -1,0 +1,6 @@
+(t, t0).
+    Of course, we want a0 to reflect actual correspondences between t and t0, so we want a reasonable definition that ensures the alignments are of reasonable quality.
+    Fortunately, it turns out that we can efficiently optimize a given a fixed tree pair and weight vector: This optimization requires only that we search for an optimal alignment.
+    Because all our features can be factored to individual node pairs, this can be done with the Hungarian algorithm in cubic time.4 Note that we do not enforce any kind of domination consistency in the matching: for example, the optimal alignment might in principle have the source root aligning to a target non-root and vice versa.
+    We then define a0(t, t0) as the alignment that maximizes w&gt;0 O(t, a, t0), where w0 is a fixed initial weight vector with a weight of 1 for INSIDEBOTH, -1 for INSRCOUTTRG and INTRGOUTSRC, and 0 for all other features.
+    Then, we simplify (2) by fixing the alignments a0: This optimization has no latent variables and is ther

@@ -1,0 +1,9 @@
+ A very good pattern to generalize from the alignment of these two strings would be Surface is a metal . POS NNP . We use the following notation to denote this alignment: ?_NNP is a (*s*) metal.?, where ?_NNP represents the POS tag NNP?.
+			To perform such alignments we introduce two wildcard operators, skip (*s*) and wildcard (*g*).
+			The skip operator represents 0 or 1 instance of any word (similar to the \w* pattern in Perl), while the wildcard operator represents exactly 1 instance of any word (similar to the \w+ pattern in Perl).
+			4.1 Algorithm.
+			We present an algorithm for learning patterns at multiple levels.
+			Multilevel representation is de fined as the different levels of a sentence such as the lexical level and POS level.
+			Consider two strings a(1, n) and b(1, m) of lengths n and m re spectively.
+			Let a1(1, n) and a2(1, n) be the level 1 (lexical level) and level 2 (POS level) representa tions for the string a(1, n).
+			Similarly, let b1(1, m) and b2(1, m) be the level 1 and level 2 repre

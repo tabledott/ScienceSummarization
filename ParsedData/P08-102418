@@ -1,0 +1,8 @@
+massive ambiguity present in the training data, with fifteen word sentences averaging over 70M reference derivations.
+    Performance is evaluated using cased BLEU4 score on the test set.
+    Although there is no direct relationship between BLEU and likelihood, it provides a rough measure for comparing performance.
+    Derivational ambiguity Table 1 shows the impact of accounting for derivational ambiguity in training and decoding.5 There are two options for training, we could use our latent variable model and optimise the probability of all derivations of the reference translation, or choose a single derivation that yields the reference and optimise its probability alone.
+    The second option raises the difficult question of which one, of the thousands available, we should choose?
+    We use the derivation which contains the most rules.
+    The intuition is that small rules are likely to appear more frequently, and thus generalise better to a test set.
+    In decoding we can search for the maximum probabili

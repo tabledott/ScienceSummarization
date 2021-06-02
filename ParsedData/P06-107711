@@ -1,0 +1,10 @@
+w many TATs are retrieved for each input node, and by a probability threshold (tatTable-threshold) that specify that the TAT probability has to be above some value.
+    On the other hand, instead of keeping the full list of candidates for a given node, we keep a top-scoring subset of the candidates.
+    This can also be done by a fixed limit (stack-limit) or a threshold (stack-threshold).
+    To perform recombination, we combine candidate translations that share the same leading and trailing bigrams in each stack.
+  
+  
+    Our experiments were on Chinese-to-English translation.
+    The training corpus consists of 31,149 sentence pairs with 843,256 Chinese words and 949, 583 English words.
+    For the language model, we used SRI Language Modeling Toolkit (Stolcke, 2002) to train a trigram model with modified Kneser-Ney smoothing (Chen and Goodman, 1998) on the 31,149 English sentences.
+    We selected 571 short sentences from the 2002 NIST MT Evaluation test set as our development corpus, and used the 2005 NI

@@ -1,0 +1,9 @@
+n (S, n|I, T, A&#8746;{(s1, r, n)}).
+    Left in a configuration (s1|S, n|I, T, A), adds an arc from n to s1, pops n from input, pops s1 from the stack and moves it back to I, producing the configuration (S, s1|I, T, A&#8746;{(n, r, s1)}).
+    At each step the parser uses classifiers trained on treebank data in order to predict which action to perform and which dependency label to assign given the current configuration.
+  
+  
+    For handling non-projective relations, Nivre and Nilsson (2005) suggested applying a preprocessing step to a dependency parser, which consists in lifting non-projective arcs to their head repeatedly, until the tree becomes pseudo-projective.
+    A post-processing step is then required to restore the arcs to the proper heads.
+    I adopted a novel approach, which consists in adding six new parsing actions: Right2 in a configuration (s1|s2|S, n|I, T, A), adds an arc from s2 to n and removes s2 from the stack, producing the configuration (s1|S, n|I, T, Au{(s2, r, n)}).
+    Left2 in a co

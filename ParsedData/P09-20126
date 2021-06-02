@@ -1,0 +1,9 @@
+e GX defines the probability of a subtree t as the product of the PCFG rules r E t that constitute it and a geometric distribution Pr$ over the number of those rules, thus encoding a preference for smaller subtrees.3 The parameter &#945; contributes to the probability that previously unseen subtrees will be sampled.
+    All DPs share parameters p$ and &#945;.
+    An entire grammar is then given as g = {gX : X E N}.
+    We emphasize that no head information is used by the sampler.
+    Rather than explicitly consider each segmentation of the parse trees (which would define a TSG and its associated parameters), we use a collapsed Gibbs sampler to integrate over all possible grammars and sample directly from the posterior.
+    This is based on the Chinese Restaurant Process (CRP) representation of the DP.
+    The Gibbs sampler is an iterative procedure.
+    At initialization, each parse tree in the corpus is annotated with a specific derivation by marking each node in the tree with a binary flag.
+    This flag in

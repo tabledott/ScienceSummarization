@@ -1,0 +1,10 @@
+e training examples.
+    Each training sentence is turned into the raw input form, and then decoded with the current parameter vector.
+    The output segmented sentence is compared with the original training example.
+    If the output is incorrect, the parameter vector is updated by adding the global feature vector of the training example and subtracting the global feature vector of the decoder output.
+    The algorithm can perform multiple passes over the same training sentences.
+    Figure 1 gives the algorithm, where N is the number of training sentences and T is the number of passes over the data.
+    Note that the algorithm from Collins (2002) was designed for discriminatively training an HMM-style tagger.
+    Features are extracted from an input sequence x and its corresponding tag sequence y: Our algorithm is not based on an HMM.
+    For a given input sequence x, even the length of different candidates y (the number of words) is not fixed.
+    Because the output sequence y (the segmented sentence) cont

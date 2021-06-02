@@ -1,0 +1,7 @@
+ever, as more constituents are added to the chart, we may find a new way to build up a proposed constituent, i.e., additional evidence for that proposed constituent, so we need to update the 13 for the proposed constituent (and also for affected constituents already in the chart, since these may in turn affect other proposed constituents).
+    These updates can be quite expensive in terms of CPU time.
+    However, many of the updates are quite small, and do not affect the relative ordering of the proposed constituents on the agenda.
+    Instead of propagating every change to 0, then, we only want to propagate those changes that we expect to have an effect on this ordering.
+    What we have done is to have each constituent store not only its # value, but also an increment.
+    Increases to the inside probability are added not to # itself, but to this increment, until the increment exceeds some threshold.
+    Experimentally we have found that we can avoid propagating increments until they exceed 1% of the curre

@@ -1,0 +1,7 @@
+ds of web pages, and resulted in an F1 score of around 90% for FAQ classification.
+    Application of the classifier to the extracted web pages resulted in a classification of 795,483 pages as FAQ pages.
+    The extraction of question-answer pairs from this database of FAQ pages was performed again in a precision-oriented manner.
+    The goal of this step was to extract url, title, question, and answers fields from the question-answer pairs in FAQ pages.
+    This was achieved by using feature functions on punctuations, HTML tags (e.g., &lt;p&gt;, &lt;BR&gt;), listing markers (e.g., Q:, (1)), and lexical cues (e.g., What, How), and an algorithm similar to Joachims (2003) to propagate initial labels across similar text pieces.
+    The result of this extraction step is a database of about 10 million question answer pairs (13.3 pairs per FAQ page).
+    A manual evaluation of 100 documents, containing 1,303 question-answer pairs, achieved a precision of 98% and a recall of 82% for extracting question-answer pairs.

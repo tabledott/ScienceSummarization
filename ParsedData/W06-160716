@@ -1,0 +1,8 @@
+cy estimates in a wordaligned corpus.
+    Our implementation simply uses IBM1 probabilities, which obviate further smoothing.
+    The noisy-or combination stipulates that sj should not appear in s&#732; if it is not the translation of any of the words in &#732;t.
+    The complement of this, proposed in (Koehn et al., 2005), to say that sj should appear in s&#732; if it is the translation of at least one of the words in &#732;t: where Aj is a set of likely alignment connections for sj.
+    In our implementation of this method, we assumed that Aj = {1, ... , &#732;I}, ie the set of all connections, and used IBM1 probabilities for p(s|t).
+    We mentioned earlier that LM ngrams have a naturally-ordered sequence of smoothing distributions, obtained by successively dropping the last word in the context.
+    For phrasetable smoothing, because no word in t&#732; is a priori less informative than any others, there is no exact parallel to this technique.
+    However, it is clear that estimates made by replacing partic

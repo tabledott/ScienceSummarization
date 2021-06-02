@@ -1,0 +1,6 @@
+t in the same way as the other loglinear parameters when performing cross-domain adaptation.
+    Loglinear mixture models were not used for dynamic adaptation.
+    For both adaptive settings, linear mixture weights were set as a function of the distance metrics described in section 3.4.
+    Given a set of metrics {D1, ... , Dm}, let di,c be the distance from the current text to component c according to metric Di.
+    A simple approach to weighting is to choose a single metric Di, and set the weights in (2) to be proportional to the corresponding distances: Because different distance metrics may capture complementary information, and because optimal weights might be a non-linear function of distance, we also experimented with a linear combination of metrics transformed using a sigmoid function: where Qi reflects the relative predictive power of Di, and the sigmoid parametes ai and bi can be set to selectively suppress contributions from components that are far away.
+    Here we assume that Qi absorbs a normali

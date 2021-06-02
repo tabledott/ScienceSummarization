@@ -1,0 +1,8 @@
+ire cluster becomes singular or plural, which allows it to match other mentions that are both singular and plural.
+    Please see (Raghunathan et al., 2010) for more details.
+    The core of our coreference resolution system is an incremental extension of the system described in Raghunathan et al. (2010).
+    Our core model includes two new sieves that address nominal mentions and are inserted based on their precision in a held-out corpus (see Table 1 for the complete list of sieves deployed in our system).
+    Since these two sieves use 3We initialize the clusters as singletons and grow them progressively in each sieve.
+    Ordered sieves simple lexical constraints without semantic information, we consider them part of the baseline model.
+    Relaxed String Match: This sieve considers two nominal mentions as coreferent if the strings obtained by dropping the text following their head words are identical, e.g., [Clinton] and [Clinton, whose term ends in January].
+    Proper Head Word Match: This sieve marks t

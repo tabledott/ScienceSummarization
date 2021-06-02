@@ -1,0 +1,11 @@
+2, but better results can be obtained by setting appropriate weights and adjusting the precision/recall tradeoff.
+    Weights for different types of constituents from each parser can be set in a similar way to configuration 3 in the dependency experiments.
+    However, instead of measuring accuracy for each part-of-speech tag of dependents, we measure precision for each non-terminal label.
+    The parameter t is set using held-out data (from WSJ section 22) and a simple hill-climbing procedure.
+    First we set t to (m + 1)/2 (which heavily favors precision).
+    We then repeatedly evaluate the combination of parsers, each time decreasing the value of t (by 0.01, say).
+    We record the values of t for which precision and recall were closest, and for which f-score was highest.
+    Table 2 shows the accuracy of each individual parser and for three reparsing settings.
+    Setting 1 is the emulation of Henderson and Brill&#8217;s voting.
+    In setting 2, t is set for balancing precision and recall.
+    In setti

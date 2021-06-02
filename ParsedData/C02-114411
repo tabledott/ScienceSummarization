@@ -1,0 +1,7 @@
+r c ? L in sorted order Compute the centroid of c by averaging the frequency vectors of its elements and computing the mutual information vector of the centroid in the same way as we did for individual elements.
+			If c?s similarity to the centroid of each committee previously added to C is be low a threshold ?1, add c to C. Step 4: If C is empty, we are done and return C. Step 5: For each element e ? E If e?s similarity to every committee in C is below threshold ?2, add e to a list of resi dues R. Step 6: If R is empty, we are done and return C. Otherwise, return the union of C and the output of a recursive call to Phase II us ing the same input except replacing E with R. Output: A list of committees.
+			Figure 1.
+			Phase II of CBC.
+			Step 4 terminates the recursion if no committee is found in the previous step.
+			The residue elements are identified in Step 5 and if no residues are found, the algorithm terminates; otherwise, we recursively apply the algorithm to the residue elements.
+			Each committee tha

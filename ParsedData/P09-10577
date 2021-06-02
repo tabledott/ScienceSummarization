@@ -1,0 +1,11 @@
+0.
+    We accomplish this by requiring the sum of the links entering each node to equal to the sum of the links leaving each node.
+    We also create variables for every possible tag bigram and word/tag dictionary entry.
+    We constrain link variable assignments to respect those grammar and dictionary variables.
+    For example, we do not allow a link variable to &#8220;activate&#8221; unless the corresponding grammar variable is also &#8220;activated&#8221;.
+    Finally, we add an objective function that minimizes the number of grammar variables that are assigned a value of 1.
+    Figure 3 shows the IP solution for the example word sequence from Figure 2.
+    Of course, a small grammar size does not necessarily correlate with higher tagging accuracy.
+    For the small toy example shown in Figure 3, the correct tagging is &#8220;PRO AUX V .
+    PRO V&#8221; (with 5 tag pairs), whereas the IP tries to minimize the grammar size and picks another solution instead.
+    For solving the integer program, we use CPL

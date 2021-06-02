@@ -1,0 +1,9 @@
+del, we expect it to perform well in English to SOV language systems.
+    We use the same training data as described in the previous sections for building hierarchical systems.
+    The same 4-gram language models are also used for the 5 SOV languages.
+    We adopt the SAMT package (Zollmann and Venugopal, 2006) and follow similar settings as Zollmann et.al., 2008.
+    We allow each rule to have at most 6 items on the source side, including nonterminals and extract rules from initial phrases of maximum length 12.
+    During decoding, we allow application of all rules of the grammar for chart items spanning up to 12 source words.
+    Since our precedence reordering applies at preprocessing step, we can train a hierarchical system after applying the reordering rules.
+    When doing so, we use exactly the same settings as a regular hierarchical system.
+    The results for both hierarchical systems and those combined with the precedence reordering are shown in Table 4, together with the best normal phrase-based sy

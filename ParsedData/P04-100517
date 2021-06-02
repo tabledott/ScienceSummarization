@@ -1,0 +1,8 @@
+m for R&#57739;i, given that some word is substituted.
+    For example, Pr(Boston|subst, to, Denver) is the probability that Boston is substituted for Denver, given that some word is substituted.
+    Finally, we also estimated a probability distribution Pi(W) over interregnum strings as follows.
+    Our training corpus annotates what we call interregnum expressions, such as uh and I mean.
+    We estimated a simple unigram distribution over all of the interregnum expressions observed in our training corpus, and also extracted the empirical distribution of the number of interregnum expressions in each repair.
+    Interregnums are generated as follows.
+    First, the number k of interregnum expressions is chosen using the empirical distribution.
+    Then k interregnum expressions are independently generated from the unigram distribution of interregnum expressions, and appended to yield the interregnum string W. The weighted TAG that constitutes the channel model is straight forward to define using these conditio

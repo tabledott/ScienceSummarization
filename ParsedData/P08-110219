@@ -1,0 +1,7 @@
+lcke and Andreas, 2002) to train a 3gram word LM with modified Kneser-Ney smoothing (Chen and Goodman, 1998), and a 4-gram POS LM with Witten-Bell smoothing, and we trained a word-POS co-occurrence model simply by MLE without smoothing.
+    To obtain their corresponding weights, we adapted the minimum-error-rate training algorithm (Och, 2003) to train the outside-layer model.
+    In order to inspect how much improvement each feature brings into the cascaded model, every time we removed a feature while retaining others, then retrained the model and tested its performance on the test set.
+    Table 4 shows experiments results.
+    We find that the cascaded model achieves a F-measure increment of about 0.5 points on segmentation and about 0.9 points on Joint S&amp;T, over the perceptron-only model POS+.
+    We also find that the perceptron model functions as the kernel of the outside-layer linear model.
+    Without the perceptron, the cascaded model (if we can still call it &#8220;cascaded&#8221;) performs poorl

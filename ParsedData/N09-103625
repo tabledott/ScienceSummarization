@@ -1,0 +1,6 @@
+le parses with lower posterior probability for the unigram and collocation adaptor grammars (but not for the collocation-syllable adaptor grammar).
+    Figure 1 plots the posterior probabilities of the sample trees t at each iteration for the collocation adaptor grammar, showing that even after 2,000 iterations incremental initialization results in trees that are much less likely than those produced by batch initialization.
+    It seems that with incremental initialization the Gibbs sampler gets stuck in a local optimum which it is extremely unlikely to move away from.
+    It is interesting that incremental initialization results in more accurate word segmentation, even though the trees it produces have lower posterior probability.
+    This seems to be because the most probable analyses produced by the unigram and, to a lesser extent, the collocation adaptor grammars tend to undersegment.
+    Incremental initialization greedily searches for common substrings, and because such substrings are more likely to be 

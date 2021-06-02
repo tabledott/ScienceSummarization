@@ -1,0 +1,7 @@
+ribe how OPINE?s relaxation la beling mechanism is used to find a word?s dominant SO label in a set of reviews.
+			For this task, a word?s neighborhood is defined as the set of words connected to it through conjunctions,disjunctions and all other relationships previously intro duced as sources of constraints.RL uses an update equation to re-estimate the probability of a word label based on its previous probabil ity estimate and the features of its neighborhood (see Neighborhood Features).
+			At iteration m, let q(w,L)(m) denote the support function for label L of w and let P (l(w) = L)(m) denote the probability that L is the label of w. P (l(w) = L)(m+1) is computed as follows: RL Update Equation (Rangarajan, 2000) P (l(w) = L)(m+1) = P (l(w) = L)(m)(1 + ?q(w,L)(m)) P L?
+			P (l(w) = L ?)(m)(1 + ?q(w,L?)(m)) where L?
+			{pos, neg, neutral} and ? &gt; 0 is an experimentally set constant keeping the numerator and probabilities positive.
+			RL?s output is an assignment of dominant SO labels to words.
+			In the f

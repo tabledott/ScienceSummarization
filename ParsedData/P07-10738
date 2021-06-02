@@ -1,0 +1,9 @@
+For any instance x E X from a bag X E X, let &#966;(x) be the (implicit) feature vector representation of x.
+    Then the corresponding SVM optimization problem can be formulated as in Figure 2: minimize: The capacity control parameter C is normalized by the total number of instances L = Lp + Ln = EXEXp |X |+ EXEXn |X|, so that it remains independent of the size of the dataset.
+    The additional non-negative parameter cp (cn = 1&#8722;cp) controls the relative influence that false negative vs. false positive errors have on the value of the objective function.
+    Because not all instances from positive bags are real positive instances, it makes sense to have false negative errors be penalized less than false positive errors (i.e. cp &lt; 0.5).
+    In the dual formulation of the optimization problem from Figure 2, bag instances appear only inside dot products of the form K(x1, x2) = &#966;(x1)&#966;(x2).
+    The kernel K is instantiated to a subsequence kernel, as described in the next section.
+  
+  
+    The 

@@ -1,0 +1,9 @@
+ing is resolving syntactic variations of the same meaning, we also compare with RESOLVER (Yates and Etzioni, 2009), a state-of-the-art unsupervised system based on TextRunner for jointly resolving entities and relations, and DIRT (Lin and Pantel, 2001), which resolves paraphrases of binary relations.
+    Finally, we also compared to an informed baseline based on keyword matching.
+    Keyword: We consider a baseline system based on keyword matching.
+    The question substring containing the verb and the available argument is directly matched with the input text, ignoring case and morphology.
+    We consider two ways to derive the answer given a match.
+    The first one (KW) simply returns the rest of sentence on the other side of the verb.
+    The second one (KW-SYN) is informed by syntax: the answer is extracted from the subject or object of the verb, depending on the question.
+    If the verb does not contain the expected argument, the sentence is ignored.
+    TextRunner: TextRunner inputs text and outputs r

@@ -1,0 +1,7 @@
+ at one of the start-state's successors.
+    The batch rule eventually writes a state at the very end of the string.
+    If that state is in F, the corresponding Final subrule will apply to insert $ at the end of the string.
+    If the last state is not in F,$ will not be inserted and the state will remain as the last symbol in the string.
+    Thus, after the batch rule has completed its application, an input string x will have been translated to an output string consisting of intermixed symbols from Q and E. We can prove by a simple induction that the string of states obtained by ignoring symbols in E U {#,$} corresponds to a sequence of state-to-state moves that the transducer can make on the pair (x, y), where y comes from ignoring $ and all state-symbols in the output string.
+    Two tasks remain: we must filter the output to eliminate any strings whose derivation does not include a Final subrule application, and we must remove all state-symbols and $ to obtain the ultimate output string.
+    If a Final r

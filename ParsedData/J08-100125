@@ -1,0 +1,10 @@
+ids.
+    In previous implementations of entity-based models, classes of coreferent nouns have been extracted manually (Miltsakaki and Kukich 2000; Karamanis et al. 2004; Poesio et al.
+    2004), but this is not an option for our model.
+    An obvious solution for identifying entity classes is to employ an automatic coreference resolution tool that determines which noun phrases refer to the same entity in a document.
+    Current approaches recast coreference resolution as a classification task.
+    A pair of NPs is classified as coreferring or not based on constraints that are learned from an annotated corpus.
+    A separate clustering mechanism then coordinates the possibly contradictory pairwise classifications and constructs a partition on the set of NPs.
+    In our experiments, we employ Ng and Cardie&#8217;s (2002) coreference resolution system.
+    The system decides whether two NPs are coreferent by exploiting a wealth of lexical, grammatical, semantic, and positional features.
+    It is trained on the 

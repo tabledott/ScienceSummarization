@@ -1,0 +1,11 @@
+on all possible derivations for a sentence or a sentence-MR pair.
+    While it is not feasible to enumerate all derivations, a variant of the Inside-Outside algorithm can be used for efficiently collecting the required statistics (Miyao and Tsujii, 2002).
+    Following Zettlemoyer and Collins (2005), only rules that are used in the best parses for the training set are retained in the final lexicon.
+    All other rules are discarded.
+    This heuristic, commonly known as Iiterbi approximation, is used to improve accuracy, assuming that rules used in the best parses are the most accurate.
+  
+  
+    We evaluated WASP in the ROBOCUP and GEOQUERY domains (see Section 2).
+    To build a corpus for ROBOCUP, 300 pieces of coach advice were randomly selected from the log files of the 2003 ROBOCUP Coach Competition, which were manually translated into English (Kuhlmann et al., 2004).
+    The average sentence length is 22.52.
+    To build a corpus for GEOQUERY, 880 English questions were gathered from various sources, w

@@ -1,0 +1,11 @@
+feature tends to occur in a phrase&#8217;s context window.
+    Given two feature vectors, we compute the similarity between two vectors as the cosine function of the angle between the vectors.
+    Note that even though a phrase phr can have multiple tokens, its feature f is always a single-word token.
+    We impose an upper limit on the number of instances of each phrase when constructing its feature vector.
+    The idea is that if we have already seen 300K instances of a phrase, we should have already collected enough data for the phrase.
+    More data for the same phrase will not necessarily tell us anything more about it.
+    There are two benefits for such an upper limit.
+    First, it drastically reduces the computational cost.
+    Second, it reduces the variance in the sizes of the feature vectors of the phrases.
+    K-Means is an embarrassingly parallelizable algorithm.
+    Since the centroids of clusters are assumed to be constant within each iteration, the assignment of elements to clusters (Step ii)

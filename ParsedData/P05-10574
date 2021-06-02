@@ -1,0 +1,7 @@
+ignment.
+    Given a source (&#8217;English&#8217;) sentence e = eI1 = e1, ... , ei, ..., eI and a target language (&#8217;French&#8217;) sentence f = fJ1 = f1, ..., fj, ..., fJ.
+    We define a link l = (i, j) to exist if ei and fj are translation (or part of a translation) of one another.
+    We define the null link l = (i, 0) to exist if ei does not correspond to a translation for any French word in f. The null link l = (0, j) is defined similarly.
+    An alignment a is defined as a subset of the Cartesian product of the word positions: We define the alignment problem as finding the alignment a that maximizes Pr(a  |e, f) given e and f. We directly model the probability Pr(a  |e, f).
+    An especially well-founded framework is maximum entropy (Berger et al., 1996).
+    In this framework, we have a set of M feature functions hm(a, e, f), m = 1, ... , M. For each feature function, there exists a model parameter Am, m = 1, ... , M. The direct (2) This approach has been suggested by (Papineni et al., 1997) for

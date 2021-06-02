@@ -1,0 +1,6 @@
+ to tackle a few technical problems in the actual system.
+    First, we are dealing with tree-to-string transducer rules.
+    We view each left-hand side subtree as a monolithic nonterminal symbol and factor each transducer rule into two SCFG rules: one from the root nonterminal to the subtree, and the other from the subtree to the leaves.
+    In this way we can uniquely reconstruct the tree-to-string derivation using the two-step SCFG deri vation.
+    For example, Algorithm 1 The Linear-time Binarization Algorithm consider the following tree-to-string rule: DT x2:NN the We create a specific nonterminal, say, T859, which is a unique identifier for the left-hand side subtree and generate the following two SCFG rules: Second, besides synchronous nonterminals, terminals in the two languages can also be present, as in the above example.
+    It turns out we can attach the terminals to the skeleton parse for the synchronous nonterminal strings quite freely as long as we can uniquely reconstruct the original rule fr

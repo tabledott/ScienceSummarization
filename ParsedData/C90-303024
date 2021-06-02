@@ -1,0 +1,8 @@
+guities unresolved (in which case constraints were not applied).
+  Parsers based on autonomous grammars tend to work in the oppo- site way (the more ambiguities, the more rules to apply and trees to construct).
+  In CGP, there is precisely one output for each sentence regardless of how many unresolved ambi- guities there might be pending in it.
+  This output is an annotated linear, flat string of word-forms, base- forms, inherent features, morphological features, and syntactic function labels, all of the same formal type.
+  The dependency structure of the sentence is expressed by the pointers and parts of speech of the syntactic labels.There is no proliferation of parse trees, often encountered in other types of parsers, even if morphological and/or syntactic ambiguities are left unresolved.
+  Implementation I have written an interpreter in strict Common Lisp for parsing with constraint grammars.
+  This is what we call the Constraint Grammar Parser (CGP).
+  CGP currently runs on Unix workstations under Lucid 

@@ -1,0 +1,8 @@
+ account the source probabilities.
+    We are given a dictionary D and a set of parameters P, where each parameter is P( 4 ) for some , E E * , meaning the probability that if a string is intended, the noisy channel will produce instead.
+    First note that for a particular pair of strings {s, w} we can use the standard dynamic programming algorithm for finding edit distance by filling a |s|*|w |weight matrix (Wagner and Fisher 1974; Hall and Dowling 1980), with only minor changes.
+    For computing the Damerau-Levenshtein distance between two strings, this can be done in O(|s|*|w|) time.
+    When we allow generic edit operations, the complexity increases to O(|s|2*|w|2).
+    In filling in a cell (i,j) in the matrix for computing DamerauLevenshtein distance we need only examine cells (i,j-1), (i-1,j) and (i-1,j-1).
+    With generic edits, we have to examine all cells (a,b) where a&lt;_ i and b &lt;_ j.
+    We first precompile the dictionary into a trie, with each node in the trie corresponding to a vector of 

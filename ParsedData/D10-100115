@@ -1,0 +1,10 @@
+ d &#8712; D, y(i, j) = d(i, j) for all (i, j) &#8712; Ifirst} This problem has a very similar structure to the problem of integrated parsing and tagging, and we can derive a similar dual decomposition algorithm.
+    The Lagrange multipliers u are a vector in R|Ifirst| enforcing agreement between dependency assignments.
+    The algorithm (omitted for brevity) is identical to the algorithm in figure 1, but with Iuni, Y, Z, Bhead, and Ocfg, and Btag replaced with Ifirst, H, D, Bdep respectively.
+    The algorithm only requires decoding algorithms for the two models, together with simple updates to the Lagrange multipliers.
+  
+  
+    We now give formal guarantees for the algorithms in the previous section, showing that they solve LP relaxations of the problems in Eqs.
+    2 and 3.
+    To make the connection to linear programming, we first introduce the idea of marginal polytopes in section 5.1.
+    In section 5.2, we give a precise statement of the LP relaxations that are being solved by the example algorithms, 

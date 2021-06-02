@@ -1,0 +1,11 @@
+8722; &#948;(e, &#732;e) by cSUB(e, &#732;e).
+    For the PER, it is no longer possible to use a linear time algorithm in the general case.
+    Instead, a modification of the Hungarian algorithm (Knuth, 1993) can be used.
+    The question is now how to define the worddependent substitution costs.
+    We have studied two different approaches.
+    A pragmatic approach is to compare the spelling of the words to be substituted with each other.
+    The more similar the spelling is, the more similar we consider the words to be, and the lower we want the substitution costs between them.
+    In English, this works well with similar tenses of the same verb, or with genitives or plurals of the same noun.
+    Nevertheless, a similar spelling is no guarantee for a similar meaning, because prefixes such as &#8220;mis-&#8221;, &#8220;in-&#8221;, or &#8220;un-&#8221; can change the meaning of a word significantly.
+    An obvious way of comparing the spelling is the Levenshtein distance.
+    Here, words are compared on chara

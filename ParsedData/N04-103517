@@ -1,0 +1,10 @@
+aph.
+    This traversal annotates each node with its span and its complement span.
+    The complement span is computed as the union of the complement span of its parent and the span of all its siblings (siblings are nodes that share the same parent).
+    A node n is in the frontier set iff complement span(n) n closure(span(n)) = 0.
+    Notice that the complement span merely summarizes the spans of all nodes that are neither ancestors nor descendents of n. Since this step requires only a single graph traversal, it runs in linear time.
+    Step 2 can also be computed straightforwardly.
+    For each node n of the frontier set, do the following: expand n, then as long as there is some sink node n' of the resulting graph fragment that is not in the frontier set, expand n'.
+    Note that after computing the minimal graph fragment rooted at each node of the frontier set, every node of the alignment graph has been expanded at most once.
+    Thus this step also runs in linear time.
+    For clarity of exposition and la

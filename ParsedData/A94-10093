@@ -1,0 +1,8 @@
+he sequence of words is determined from the probabilities.
+    Two algorithms are commonly used, known as the Forward-Backward (FB) and Viterbi algorithms.
+    FB assigns a probability to every tag on every word, while Viterbi prunes tags which cannot be chosen because their probability is lower than the ones of competing hypotheses, with a corresponding gain in computational efficiency.
+    For an introduction to the algorithms, see Cutting et at.
+    (1992), or the lucid description by Sharman (1990).
+    There are two principal sources for the parameters of the model.
+    If a tagged corpus prepared by a human annotator is available, the transition and lexical probabilities can be estimated from the frequencies of pairs of tags and of tags associated with words.
+    Alternatively, a procedure called BaumWelch (BW) re-estimation may be used, in which an untagged corpus is passed through the FB algorithm with some initial model, and the resulting probabilities used to determine new values for the lexical and

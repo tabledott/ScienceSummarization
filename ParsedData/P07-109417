@@ -1,0 +1,8 @@
+ corpus with full tag dictionary.
+    Standard deviations in most cases are less than .5. ity of the transition distributions, are stronger than the effects of Q, which determines the probability of the output distributions.
+    The optimal value of .003 for &#945; reflects the fact that the true transition probability matrix for this corpus is indeed sparse.
+    As &#945; grows larger, the model prefers more uniform transition probabilities, which causes it to perform worse.
+    Although the true output distributions tend to be sparse as well, the level of sparseness depends on the tag (consider function words vs. content words in particular).
+    Therefore, a value of Q that accurately reflects the most probable output distributions for some tags may be a poor choice for other tags.
+    This leads to the smaller effect of Q, and suggests that performance might be improved by selecting a different Q for each tag, as we do in the next section.
+    A final point worth noting is that even when &#945; = Q = 1 (i

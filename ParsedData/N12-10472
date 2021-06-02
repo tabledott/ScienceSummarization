@@ -1,0 +1,8 @@
+s optimization is wrapped in an outer loop that iterates between optimizing weights and re-decoding with those weights to enhance the approximation.
+    Our primary contribution is to empirically compare eight tuning algorithms and variants, focusing on methods that work within MERT&#8217;s established outer loop.
+    This is the first comparison to include all three categories of optimizer.
+    Furthermore, we introduce three tuners that have not been previously tested.
+    In particular, we test variants of Chiang et al.&#8217;s (2008) hope-fear MIRA that use k-best or lattice-approximated search spaces, producing a Batch MIRA that outperforms a popular mechanism for parallelizing online learners.
+    We also investigate the direct optimization of hinge loss on k-best lists, through the use of a Structured SVM (Tsochantaridis et al., 2004).
+    We review and organize the existing tuning literature, providing sentence-level loss functions for minimum risk, online and pairwise training.
+    Finally, since ran

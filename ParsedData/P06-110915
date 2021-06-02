@@ -1,0 +1,8 @@
+iments in section 6, we repeated this procedure 200,000 times for each depth.
+    The resulting subtrees are then given to MLDOP's reestimation procedure.
+    Finally, the reestimated subtrees are used to compute the most probable parse trees for all sentences using Viterbi n-best, as described in section 3, where the most probable parse is estimated from the 100 most probable derivations.
+    A potential criticism of (U)ML-DOP is that since we use DOP1's relative frequencies as initial parameters, ML-DOP may only find a local maximum nearest to DOP1's estimator.
+    But this is of course a criticism against any iterative ML approach: it is not guaranteed that the global maximum is found (cf.
+    Manning and Sch&#252;tze 1999: 401).
+    Nevertheless we will see that our reestimation procedure leads to significantly better accuracy compared to U-DOP (the latter would be equal to UML-DOP under 0 iterations).
+    Moreover, in contrast to U-DOP, UML-DOP can be theoretically motivated: it maximizes the likelihood 

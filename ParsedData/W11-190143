@@ -1,0 +1,8 @@
+g mention M, then recall for the mention M is computed as |K&#8745;R| |K| and precision for the same is is computed as |K&#8745;R| |R|.
+    Overall recall and precision are the average of the individual mention scores.
+    CEAF aligns every response entity with at most one key entity by finding the best one-to-one mapping between the entities using an entity similarity metric.
+    This is a maximum bipartite matching problem and can be solved by the Kuhn-Munkres algorithm.
+    This is thus a entity based measure.
+    Depending on the similarity, there are two variations &#8211; entity based CEAF &#8211; CEAF, and a mention based CEAF &#8211; CEAF,.
+    Recall is the total similarity divided by the number of mentions in K, and precision is the total similarity divided by the number of mentions in R. Finally, BLANC uses a variation on the Rand index (Rand, 1971) suitable for evaluating coreference.
+    There are a few other measures &#8211; one being the ACE value, but since this is specific to a restricted set

@@ -1,0 +1,10 @@
+arsing can be seen as an approximation to an admissible technique, where the degree of approximation is controlled by the thresholding parameter.
+  
+  
+    The use of any one of these techniques does not exclude the use of the others.
+    There is no reason that we cannot use beam thresholding, global thresholding, and multiple-pass parsing all at the same time.
+    In general, it wouldn't make sense to use a technique such as multiple-pass parsing without other thresholding techniques; our first pass would be overwhelmingly slow without some sort of thresholding.
+    There are, however, some practical considerations.
+    To optimize a single threshold, we could simply sweep our parameters over a one dimensional range, and pick the best speed versus performance tradeoff.
+    In combining multiple techniques, we need to find optimal combinations of thresholding parameters.
+    Rather than having to examine 10 values in a single dimensional space, we might have to examine 100 combinations in a two dimensional s

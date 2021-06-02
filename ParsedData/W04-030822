@@ -1,0 +1,6 @@
+re than three connected components on the stack.
+    Many violations of incrementality are caused by sentences that cannot be parsed into a wellformed dependency graph, i.e. a single projective dependency tree, but where the output of the parser is a set of internally connected components.
+    In order to test the influence of incomplete parses on the statistics of incrementality, we have performed a second experiment, where we restrict the test data to those 444 sentences (out of 613), for which the parser produces a well-formed dependency graph.
+    The results can be seen in Table 2.
+    In this case, 87.1% of all configurations in fact satisfy the constraints of incrementality, and the proportion of configurations that have no more than three connected components on the stack is as high as 99.5%.
+    It seems fair to conclude that, although strict word-by-word incrementality is not possible in deterministic dependency parsing, the arc-eager algorithm can in practice be seen as a close approximation of inc

@@ -1,0 +1,11 @@
+from Q, and uses it to update P and Q, until a span covering the whole sequence is added to P and Q becomes empty.
+    This is explained in detail below.
+    At each step, we remove from Q the span p' such that the action (not hypothesis) score of its top hypothesis, p'.S.T, is the highest.
+    This represents the labeling action for the next move that we are most confident about.
+    Now we need to update P and Q with the selected span p'.
+    We add p' to P, and remove from P the spans included in p', if any.
+    Let S be the set of removed spans.
+    We remove from Q each span which takes one of the spans in S as context, and replace it with a new candidate span taking p' (and another accepted span) as context.
+    We always maintain B different states for each span.
+    Back to the previous example, after Step 3 is completed, w2 found, w4 book and w5 interesting have been tagged and we have There are two candidate spans in Q, each with its associated hypotheses and most recent actions.
+    More specifical

@@ -1,0 +1,7 @@
+m-up.
+    For example, for the binary-branching node Ai,k in Fig.
+    3, the unit NGramTree instance is for the pair (wj&#8722;1, wj) on the boundary between the two subtrees, whose smallest common ancestor is the current node.
+    Other unit NGramTree instances within this span have already been computed in the subtrees, except those for the boundary words of the whole node, wi and wk&#8722;1, which will be computed when this node is further combined with other nodes in the future.
+    Before moving on to approximate decoding with non-local features, we first describe the algorithm for exact decoding when only local features are present, where many concepts and notations will be re-used later.
+    We will use D(v) to denote the top derivations of node v, where D1(v) is its 1-best derivation.
+    We also use the notation (e, j) to denote the derivation along hyperedge e, using the jith subderivation for tail ui, so (e, 1) is the best derivation along e. The exact decoding algorithm, shown in Pseudocode 2, is 

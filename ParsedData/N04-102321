@@ -1,0 +1,8 @@
+nt kinds of feature combinations: Baseline: The 6 baseline features used in (Och, 2003), such as cost of word penalty, cost of aligned template penalty.
+    Best Feature: Baseline + IBM Model 1 + matched parentheses + matched quotation marks + POS language model.
+    Top Twenty: Baseline + 14 features with individual BLEU score no less than 31.9% with the minimum error training.
+    Large Set: Baseline + 50 features with individual BLEU score no less than 31.7% with the minimum error training.
+    Since the baseline is 31.6% and the 95% confidence range is 0.9%, most of the features in this set are not individually discriminative with respect to the BLEU metric.
+    We apply Algorithm 1 and 2 to the four feature sets.
+    For algorithm 1, the splitting algorithm, we set in the 1000-best translations given by the baseline MT system.
+    For algorithm 2, the ordinal regression algorithm, we set the updating condition as and , which means one&#8217;s rank number is at most half of the other&#8217;s and there are

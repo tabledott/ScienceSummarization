@@ -1,0 +1,9 @@
+mp;quot;terms&amp;quot; if the tag is NNS); this is called the &amp;quot;word emit&amp;quot; probability.
+    This is simply the number of times a particular word appears as part of speech t, divided by the number of times part of speech t appears in the corpus.
+    No matter how large the training corpus, one may not see all pairs or triples of tags, nor all words used in each part of speech possible in the language, nor all words.
+    It seems unwise to assume that the probability of an unseen event is zero.
+    To deal with the previously unseen, one employs one of several estimation techniques called &amp;quot;padding.&amp;quot; Thus far, we have employed the simplest of these techniques for estimating p(t3 I t2t1) if t1t2t3 was not present in the training corpus.
+    Suppose triples beginning with ti t2 appear m times in the corpus.
+    Suppose further that for j distinct tags t, tit2t' was not present in the corpus.
+    Then, we estimate p(t I t2t1) = 1/m (as if it actually had been seen once).
+    So t

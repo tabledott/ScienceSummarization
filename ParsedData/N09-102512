@@ -1,0 +1,6 @@
+ Chiang et al. (2008) introduce a structural distortion model, which we include in our experiment.
+    Our syntax-based baseline includes the generative version of this model already.
+    Word context During rule extraction, we retain word alignments from the training data in the extracted rules.
+    (If a rule is observed with more than one set of word alignments, we keep only the most frequent one.)
+    We then define, for each triple (f, e, f+1), a feature that counts the number of times that f is aligned to e and f+1 occurs to the right of f; and similarly for triples (f, e, f&#8722;1) with f&#8722;1 occurring to the left of f. In order to limit the size of the model, we restrict words to be among the 100 most frequently occurring words from the training data; all other words are replaced with a token &lt;unk&gt;.
+    These features are somewhat similar to features used by Watanabe et al. (2007), but more in the spirit of features used in the word sense disambiguation model introduced by Lee and Ng (2002)

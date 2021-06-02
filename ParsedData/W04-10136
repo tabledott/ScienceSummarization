@@ -1,0 +1,7 @@
+ identifying cognate candidates during construction of N-best translation lexicon from parallel text.
+    Melamed (1995) used the ratio (LCSR) between the length of the LCS of two words and the length of the longer word of the two words to measure the cognateness between them.
+    He used LCS as an approximate string matching algorithm.
+    Saggion et al. (2002) used normalized pairwise LCS to compare similarity between two texts in automatic summarization evaluation.
+    To apply LCS in summarization evaluation, we view a summary sentence as a sequence of words.
+    The intuition is that the longer the LCS of two summary sentences is, the more similar the two summaries are.
+    We propose using LCS-based Fmeasure to estimate the similarity between two summaries X of length m and Y of length n, assuming X is a reference summary sentence and Y is a candidate summary sentence, as follows: Where LCS(X,Y) is the length of a longest common subsequence of X and Y, and &#223; = Plcs/Rlcs when ?Flcs/?Rlcs=?Flcs/?Plcs

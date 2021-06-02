@@ -1,0 +1,9 @@
+ possible translations for an input phrase, now multiple tables have to be consulted and their content combined.
+			In phrase-based models it is easy to identify the entries in the phrase table that may be used for a specific input sentence.
+			These are called translation options.
+			We usually limit ourselves to the top 20 translation options for each input phrase.
+			The beam search decoding algorithm starts withan empty hypothesis.
+			Then new hypotheses are gen erated by using all applicable translation options.These hypotheses are used to generate further hypotheses in the same manner, and so on, until hypotheses are created that cover the full input sentence.
+			The highest scoring complete hypothesis in dicates the best translation according to the model.
+			How do we adapt this algorithm for factored translation models?
+			Since all mapping steps operate on the same phrase segmentation, the expansions of these mapping steps can be efficiently pre-computed prior to the heuristic beam search, and store

@@ -1,0 +1,8 @@
+ations for x.
+    Both the definition of Viterbi parse and its computation are straightforward generalizations of the corresponding notion for Hidden Markov Models (Rabiner and juang 1986), where one computes the Viterbi path (state sequence) through an HMM.
+    Precisely the same approach can be used in the Earley parser, using the fact that each derivation corresponds to a path.
+    The standard computational technique for Viterbi parses is applicable here.
+    Wherever the original parsing procedure sums probabilities that correspond to alternative derivations of a grammatical entity, the summation is replaced by a maximization.
+    Thus, during the forward pass each state must keep track of the maximal path probability leading to it, as well as the predecessor states associated with that maximum probability path.
+    Once the final state is reached, the maximum probability parse can be recovered by tracing back the path of &amp;quot;best&amp;quot; predecessor states.
+    The following modifications to the

@@ -1,0 +1,11 @@
+duced by the best test.
+			The entropy of D is ?2/3 log 2 2/3 ? 1/3 log 2 1/3 = 0.92, the entropy ofD 1 is?1/2 log 2 1/2?1/2 log 2 1/2 = 1, and the entropy of D 2 is ?6/7 log 2 6/7 ? 1/7 log 2 1/7 = 0.59.
+			The information gain is therefore 0.92 ?
+			(8/15 ? 1 ? 7/15 ? 0.59) = 0.11.
+			The resulting score is 75 ? 0.11 = 8.25.
+			Given a threshold of 6, the node is therefore not pruned.
+			We experimented with pre-pruning (where a node is always pruned if the gain is below the 3 We also experimented with a pruning criterion based on binomial tests, which returned smaller trees with a slightly lower accuracy, although the difference in accuracy was neverlarger than 0.1% for any context size.
+			Thus, the simpler prun ing strategy presented here was chosen.
+			779 threshold) as well as post-pruning (where a node is only pruned if its sub-nodes are terminal nodes or pruned nodes).
+			The performance of pre-pruning was slightly better and it was less dependent on the choice of the pruning threshold.
+			A threshol

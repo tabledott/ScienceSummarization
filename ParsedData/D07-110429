@@ -1,0 +1,14 @@
+xt E, and alignment A in memory.
+			As suming that A and E are roughly the size of F , thecost is 4|T |.
+			If we assume that all data use vocabu laries that can be represented using 32-bit integers, then our 27M word corpus can easily be represented in around 500MB of memory.
+			Adding the inverted index for unigrams increases this by 20%.
+			The main additional cost in memory comes from the storage of the precomputed collocations.
+			This is dependentboth on the corpus size and the number of colloca tions that we choose to precompute.
+			Using detailed timing data from our experiments we were able to simulate the memory-speed tradeoff (Fig.
+			3).
+			If we include a trigram model trained on our bitext and the Chinese Gigaword corpus, the overall storage costs for our system are approximately 2GB.
+	
+	
+			All of our experiments were performed on ChineseEnglish in the news domain.
+			We used a large train ing set consisting of over 1 million sentences from various newswire corpora.
+			This corpus is roughly th

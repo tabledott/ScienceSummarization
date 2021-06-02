@@ -1,0 +1,8 @@
+ two-step process.
+    The two models that we use are: We select the most likely trees for each word by examining the local context.
+    The statistical model we use to decide this is the trigram model that was used by B. Srinivas in his SuperTagging model (Srinivas, 1997).
+    The model assigns an n-best lattice of tree assignments associated with the input sentence with each path corresponding to an assignment of an elementary tree for each word in the sentence.
+    (for further details, see (Srinivas, 1997)). where T0 ... Tn is a sequence of elementary trees assigned to the sentence W0 ... Wn.
+    We get (2) by using Bayes theorem and we obtain (3) from (2) by ignore the denominator and by applying the usual Markov assumptions.
+    The output of this model is a probabilistic ranking of trees for the input sentence which is sensitive to a small local context window.
+    Once the words in a sentence have selected a set of elementary trees, parsing is the process of attaching these trees together to give us a

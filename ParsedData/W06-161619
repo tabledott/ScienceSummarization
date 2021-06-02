@@ -1,0 +1,11 @@
+ P contained cnj, for coordination dependencies; and det, for determiner dependencies.
+    One exception was added for the coordination constraint: dependencies can cross when coordinated arguments are verbs.
+    One drawback of hard deterministic constraints is the undesirable effect noisy data can cause.
+    We see this most prominently with coordination argument compatibility.
+    Words ending in &#8220;en&#8221; are typically wrongly tagged and cause our coordination argument constraint to discard correct coordinations.
+    As a workaround we assigned words ending in &#8220;en&#8221; a wildcard POS tag which is compatible with all POS tags.
+  
+  
+    In this section we report our results.
+    We not only present our accuracy but also provide an empirical evaluation of the runtime behaviour of this approach and show how parsing can be accelerated using a simple approximation.
+    An important question to answer when using global constraints is: How much of a performance boost is gained when using global co

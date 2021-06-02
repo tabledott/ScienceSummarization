@@ -1,0 +1,6 @@
+ noted in (Chen and Goodman, 1998), a key difference between interpolation and backoff is that the former approach uses information from the smoothing distribution to modify &#732;p(&#732;s|&#732;t) for higher-frequency events, whereas the latter uses it only for low-frequency events (most often 0frequency events).
+    Since for phrasetable smoothing, better prediction of unseen (zero-count) events has no direct impact&#8212;only seen events are represented in the phrasetable, and thus hypothesized during decoding&#8212;interpolation seemed a more suitable approach.
+    For combining relative-frequency estimates with glass-box smoothing distributions, we employed loglinear interpolation.
+    This is the traditional approach for glass-box smoothing (Koehn et al., 2003; Zens and Ney, 2004).
+    To illustrate the difference between linear and loglinear interpolation, consider combining two Bernoulli distributions p1(x) and p2(x) using each method: where qi(x) = 1 &#8722; pi(x).
+    Setting p2(x) = 0.5 to simulat

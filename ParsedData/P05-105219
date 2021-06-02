@@ -1,0 +1,12 @@
+alid.
+    The reason we propose to use a feature-based kernel is that we can have a clear idea of what syntactic clues it represents and what kind of information it misses.
+    This is important when developing or refining kernels, so that we can make them generate complementary information from different syntactic processing results.
+  
+  
+    Experiments were carried out on the ACE RDR (Relation Detection and Recognition) task using hand-annotated entities, provided as part of the ACE evaluation.
+    The ACE corpora contain documents from two sources: newswire (nwire) documents and broadcast news transcripts (bnews).
+    In this section we will compare performance of different kernel setups trained with SVM, as well as different classifiers, KNN and SVM, with the same kernel setup.
+    The SVM package we used is SVMlight.
+    The training parameters were chosen using cross-validation.
+    One-against-all classification was applied to each pair of entities in a sentence.
+    When SVM predictions conflict on 

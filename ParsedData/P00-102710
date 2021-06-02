@@ -1,0 +1,7 @@
+ cost matrix of the form shown in Table 6 is utilized, with initial distance costs 61=v-v, 62=v+-v+, 63=c- c and 64=c-v+, initially set to (0.5, 0.6, 1.0, 0.98), a relatively arbitrary assignment reflecting this tendency.
+    However, as subsequent algorithm iterations proceed, this matrix is re-estimated with empirically observed character-to-character stem-change probabilities from the algorithm's current best weighted alignments. a o ue m n ... a 0 61.
+    62 64 64 &#8226;&#8226;&#8226; More optimally, the initial state of this matrix could be seeded with values partially borrowed from previously trained matrices from other related languages.
+    Alternately, the initial distances could be set partially sensitive to phonological similarities, with dist(/d/,/t/) &lt; dist(/d/,/f/) for example, although this particular distinction emerges readily via iterative re-estimation from the baseline model.
+  
+  
+    The goal of this research is not only to extract an accurate table of inflection-root alignments, but

@@ -1,0 +1,7 @@
+.
+    Dimensionality reduction Since, for each test set adjective, we need to estimate a regression model for each dimension, we want a compact space with relatively few, dense dimensions.
+    A natural way to do this is to apply the Singular Value Decomposition (SVD) to the co-occurrence matrix, and represent the items of interest with their coordinates in the space spanned by the first n right singular vectors.
+    Applying SVD is independently justified because, besides mitigating the dimensionality problem, it often improves the quality of the semantic space (Landauer and Dumais, 1997; Rapp, 2003; Sch&#168;utze, 1997).
+    To avoid bias in favour of dimensions that capture variance in the test set ANs, we applied SVD to the core vocabulary subset of the co-occurrence matrix (containing only adjective and noun rows).
+    The core 12K 10K matrix was reduced using SVD to a 12K&#215;300 matrix.
+    The other row vectors of the full co-occurrence matrix (including the ANs) were projected onto the same reduced 

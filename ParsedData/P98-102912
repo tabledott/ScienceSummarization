@@ -1,0 +1,10 @@
+ing set.
+    This is done by specifying an order in which fields should be ignored until a match is found.
+    The back-off ordering is learned automatically.
+    We ran two variants of this experiment.
+    In the first case, given an instance in the test set, we find the most specific matching example in the training set, using the prespecified back-off ordering, and see what the most probable tag was in the training set for that environment.
+    This is then chosen as the tag for the word.
+    Note that this method is capable of learning to assign a tag that none of the taggers assigned.
+    For instance, it could be the case that when the Unigram tagger thinks the tag should be X, and the Trigram and Maximum Entropy taggers think it should be Y, then the true tag is most frequently Z.
+    In the second experiment, we use contexts to specify which tagger to trust, rather than which tag to output.
+    Again the most specific context is found, but here we check which tagger has the highest probability of bein

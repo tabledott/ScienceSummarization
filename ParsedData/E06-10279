@@ -1,0 +1,5 @@
+mall set of seed words of known sentiment value (positive or negative).
+			This list is augmented during thefirst pass by adding synonyms, antonyms and hy ponyms of the seed words supplied in WordNet.
+			This step brings on average a 5-fold increase in the size of the original list with the accuracy of the resulting list comparable to manual annotations (78%, similar to HM vs. GI-H4 accuracy).
+			At the second pass, the system goes through all WordNet glosses and identifies the entries that contain in their definitions the sentiment-bearing words from the extended seed list and adds these head words (or rather, lexemes) to the corresponding category ? positive, negative or neutral (the remainder).
+			A third, clean-up pass is then performed to partially disambiguate the identified WordNet glosses with Brill?s part-of-speech tagger (Brill, 1995), which performs with up to 95% accuracy, and eliminates errors introduced into the list by part-of-speech ambiguity of some words acquired in pass 1 and from the seed 

@@ -1,0 +1,9 @@
+l. [1994] address this problem by interpolating between two maximum-likelihood estimates: one of p(cilwi), and one of p(ci).
+    The former measures the desired quantity, but is subject to inaccuracy due to sparse data; the latter provides a robust estimate, but of a potentially irrelevant quantity.
+    Gale et al. interpolate between the two so as to minimize the overall inaccuracy.
+    We have pursued an alternative approach to the problem of estimating the likelihood terms.
+    We start with the observation that there is no need to use every word in the +k-word window to discriminate among the words in the confusion set.
+    If we do not have enough training data for a given word c to accurately estimate p(clwi) for all w, then we simply disregard c, and base our discrimination on other, more reliable evidence.
+    We implement this by introducing a &amp;quot;minimum occurrences&amp;quot; threshold, Trnin.
+    It is currently set to 10.
+    We then ignore a context word c if: where mi and Mi are defined as

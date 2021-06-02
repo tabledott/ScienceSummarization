@@ -1,0 +1,8 @@
+ ... lp and r1 ... rq are left and right modifiers under y|i, and where &#966;L and &#966;R are feature vector definitions.
+    In the grandparent models in our experiments, we use a similar definition with feature vectors &#966;L(x, i, k&#8727;, lk&#8722;1, lk) and &#966;R(x, i, k&#8727;, rk&#8722;1, rk), where k&#8727; is the parent for word i under y|i.
+    We train the model using the averaged perceptron for structured problems (Collins, 2002).
+    Given the i&#8217;th example in the training set, (x(i), y(i)), the perceptron updates are as follows: The first step involves inference over the set Z, rather than Y as would be standard in the perceptron.
+    Thus, decoding during training can be achieved by dynamic programming over head automata alone, which is very efficient.
+    Our training approach is closely related to local training methods (Punyakanok et al., 2005).
+    We have found this method to be effective, very likely because Z is a superset of Y.
+    Our training algorithm is also related to re

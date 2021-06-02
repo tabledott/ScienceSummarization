@@ -1,0 +1,10 @@
+or MT.
+    (ii) a higher F measure segmenter does not necessarily outperforms on the MT task.
+    To understand what factors other than segmentation F measure can affect MT performance, we introduce another CRF segmenter CRF-Lex that includes lexicon-based features by using external lexicons.
+    More details of CRF-Lex will be described in Section 5.1.
+    From Table 3, we see that the segmentation F measure is that CRF-Lex &gt; CRF-basic &gt; MaxMatch.
+    And now we know that the better segmentation F measure does not always lead to better MT BLEU score, because of in terms of MT performance, CRF-Lex &gt; MaxMatch &gt; CRF-basic.
+    In Table 4, we list some statistics of each segmenter to explain this phenomenon.
+    First we look at the lexicon size of the MT training and test data.
+    While segmenting the MT data, CRF-basic generates an MT training lexicon size of 583K unique word tokens, and MaxMatch has a much smaller lexicon size of 39K.
+    CRF-Lex performs best on MT, but the MT training lexicon s

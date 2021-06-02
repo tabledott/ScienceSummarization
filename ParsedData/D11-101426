@@ -1,0 +1,8 @@
+awa et al., 2010), a dependency tree based classification method that uses CRFs with hidden variables.
+    We use the same training and testing regimen (10-fold cross validation) as well as their baselines: majority phrase voting using sentiment and reversal lexica; rule-based reversal using a dependency tree; Bag-of-Features and their full Tree-CRF model.
+    As shown in Table 4, our algorithm outperforms their approach on both datasets.
+    For the movie review (MR) data set, we do not use any handdesigned lexica.
+    An error analysis on the MPQA dataset showed several cases of single words which never occurred in the training set.
+    Correctly classifying these instances can only be the result of having them in the original sentiment lexicon.
+    Hence, for the experiment on MPQA we added the same sentiment lexicon that (Nakagawa et al., 2010) used in their system to our training set.
+    This improved accuracy from 86.0 to 86.4.Using the pre-trained word vectors boosts performance by less than 1% compar

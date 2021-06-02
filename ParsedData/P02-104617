@@ -1,0 +1,10 @@
+ause classifiers do not label all instances, we show precision and recall rather than a single error rate.
+    The contour lines show levels of the F-measure (the harmonic mean of precision and recall).
+    The algorithm is run to convergence, that is, until no atomic rule can be found that decreases cost.
+    It is interesting to note that there is no significant overtraining with respect to F-measure.
+    The final values are 89.2/80.4/84.5 recall/precision/F-measure, which compare favorably with the performance of the Yarowsky algorithm (83.3/84.6/84.0).
+    (Collins and Singer, 1999) add a special final round to boost recall, yielding 91.2/80.0/85.2 for the Yarowsky algorithm and 91.3/80.1/85.3 for their version of the original co-training algorithm.
+    All four algorithms essentially perform equally well; the advantage of the greedy agreement algorithm is that we have an explanation for why it performs well.
+  
+  
+    For Yarowsky&#8217;s algorithm, a classifier again consists of a list of atomic rules.

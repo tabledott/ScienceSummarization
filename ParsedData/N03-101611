@@ -1,0 +1,9 @@
+
+    Our presentation assumes that G is a binarized grammar, and so in general X may be either a complete state like NP that was in an original n-ary grammar, or an intermediate state, like an Earley dotted rule, that is the result of implicit or explicit grammar binarization.
+    For the edge e, its yield in s = 0wn is the sequence of terminals that it spans (iwj).
+    Its context is its state X along with the rest of the terminals of sentence (0wiXjwn).
+    Scores are logprobabilities; lower cost is higher log-probability.
+    So, &#8216;&gt;&#8217; or &#8216;better&#8217; will mean higher log-probability.
+    One way to construct an admissible estimate is to summarize the context in some way, and to find the score of the best parse of any context that fits that summary.
+    Let c(e, s) be the context of e in s. Let u be a summary function of contexts.
+    We can then use the context summary estimate: That is, we return the exact Viterbi outside score for some context, generally not the actual context, whos

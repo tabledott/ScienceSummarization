@@ -1,0 +1,7 @@
+ters, we now have an infinite Q.
+    However, most draws will have weights which decay exponentially quickly in the prior (though not necessarily in the posterior).
+    Therefore, there is a natural penalty for each cluster which is actually used.
+    With Z observed during sampling, we can integrate out Q and calculate P(Zi,j|Z&#8722;i,j) analytically, using the Chinese restaurant process representation: where znew is a new entity index not used in Z&#8722;i,j and nz is the number of mentions that have entity index z.
+    Aside from this change, sampling is identical to the finite mixture case, though with the number of clusters actually occupied in each sample drifting upwards or downwards.
+    This model yielded a 54.5 Fi on our development data.6 This model is, however, hopelessly crude, capturing nothing of the structure of coreference.
+    Its largest empirical problem is that, unsurprisingly, pronoun mentions such as he are given their own clusters, not labeled as coreferent with any non-pronominal men

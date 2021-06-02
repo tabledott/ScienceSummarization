@@ -1,0 +1,13 @@
+; otherwise.
+    We can estimate P(Y ) from the test sample; it contains 186/1000 location instances, giving P(Y ) = .186.
+    Let us treat each feature F as a rule predicting + when F is present and &#8722; otherwise.
+    The precision of F is P(Y |F).
+    The internal feature N:New-York has precision 1.
+    This permits us to compute the precision of various contextual features, as shown in the &#8220;Co-training&#8221; column of Table 1.
+    We note that the numbers do not even look like probabilities.
+    The cause is the failure of view independence to hold in the data, combined with the instability of the estimator.
+    (The &#8220;Yarowsky&#8221; column uses a seed rule to estimate P(Y |F), as is done in the Yarowsky algorithm, and the &#8220;Truth&#8221; column shows the true value of P(Y |F).)
+  
+  
+    Nonetheless, the unreasonableness of view independence does not mean we must abandon theorem 2.
+    In this section, we introduce a weaker assumption, one that is satisfied by the data, and we show th

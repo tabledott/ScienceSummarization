@@ -1,0 +1,8 @@
+subgraph, and its strongly connected components.
+    Items in a strongly connected component (a loop) have an infinite number of derivations, and thus an infinite value.
+    Compute items that depend directly or indirectly on items in loops: these items also have infinite value.
+    Any other items can only be derived in finitely many ways using items in the current bucket, so compute successive generations until the values of these items do not change.
+    The method for solving the infinite summation for the derivation forest semiring depends on the implementation of derivation forests.
+    Essentially, that representation will use pointers to efficiently represent derivation forests.
+    Pointers, in various forms, allow one to efficiently represent infinite circular references, either directly (Goodman 1999), or indirectly (Goodman 1998).
+    Roughly, the algorithm we will use is to compute the derivation subgraph, and then create pointers analogous to the directed edges in the derivation subgraph, includ

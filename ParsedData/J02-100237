@@ -1,0 +1,10 @@
+FP segmentations.
+    Among the FNP segmentations, FNP1 was penalized the most and FNP2 the least.
+    To see why, we examine the results for the FP segmentations.
+    WD penalizes pure false positives the same amount regardless of how close they are to a boundary; the only way false positives are underpenalized is if they occur in bunches.
+    As mentioned earlier, this is most likely to happen in FP3.
+    It is least likely to happen in FP1, since in FP1 there is a maximum of one false positive per segment, and this false positive is not necessarily close to a boundary.
+    In FP2, false positives are also limited to one per segment, but they are also more likely to be close to boundaries.
+    This increases the likelihood that 2 false positives will be within k sentences of each other and thus makes WD give a slightly lower score to the FP2 segmentation than to the FP1 segmentation.
+    Now let us look at the FNP segmentations.
+    FNP3 is penalized less than FNP1 for the same reason described above, and F

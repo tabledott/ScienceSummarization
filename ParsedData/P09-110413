@@ -1,0 +1,7 @@
+tive correspondence between alignments and derivations.
+    There are two ways in which ITG derivations double count alignments.
+    First, n-ary productions are not binarized to remove ambiguity; this results in an exponential number of derivations for diagonal alignments.
+    This source of overcounting is considered and fixed by Wu (1997) and Zens and Ney (2003), which we briefly review here.
+    The resulting grammar, which does not handle null alignments, consists of a symbol N to represent a bitext cell produced by a normal rule and I for a cell formed by an inverted rule; alignment terminals can be either N or I.
+    In order to ensure unique derivations, we stipulate that a N cell can be constructed only from a sequence of smaller inverted cells I. Binarizing the rule N &#8594; I2+ introduces the intermediary symbol N (see Figure 2(a)).
+    Similarly for inverse cells, we insist an I cell only be built by an inverted combination of N cells; binarization of I --* N2+ requires the introduction of the in

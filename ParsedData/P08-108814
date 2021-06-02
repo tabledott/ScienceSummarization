@@ -1,0 +1,5 @@
+learn regular orthographic correspondences between source and target words, which is something edit distance cannot capture (see table 5).
+    Indeed, running our MCCA model with only orthographic features on EN-ESW, labeled ORTHO in table 1, yielded 80.1 p0.33, a 31% error-reduction over EDITDIST in p0.33.
+    While orthographic features are clearly effective for historically related language pairs, they are more limited for other language pairs, where we need to appeal to other clues.
+    One non-orthographic clue that word types s and t form a translation pair is that there is a strong correlation between the source words used with s and the target words used with t. To capture this information, we define context features for each word type w, consisting of counts of nouns which occur within a window of size 4 around w. Consider the translation pair (time, tiempo) illustrated in figure 2.
+    As we become more confident about other translation pairs which have active period and periodico context features, 

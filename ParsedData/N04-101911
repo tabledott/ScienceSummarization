@@ -1,0 +1,9 @@
+   It ranges from 0 to 1, with higher scores indicating that relatively more of the content is as highly weighted as possible.
+    The exact formula we use is computed as follows.
+    Suppose the pyramid has n tiers, Ti, with tier Tn on top and Tl on the bottom.
+    The weight of SCUs in tier Ti will be i.5 Let |Ti |denote the number of SCUs in tier Ti.
+    Let Di be the number of SCUs in the summary that appear in Ti.
+    SCUs in a summary that do not appear in the pyramid are assigned weight zero.
+    The total SCU weight D is: The optimal content score for a summary with X SCUs is: In the equation above, j is equal to the index of the lowest tier an optimally informative summary will draw from.
+    This tier is the first one top down such that the sum of its cardinality and the cardinalities of tiers above it is greater than or equal to X (summary size in SCUs).
+    For example, if X is less than the cardinality of the most highly weighted tier, then j = n and Max is simply X xn (the product of X and the h

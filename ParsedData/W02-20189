@@ -1,0 +1,5 @@
+equivalent, they use slighly different update rules and thus show different numeric properties.
+    Another way of looking at the problem with steepest ascent is that while it takes into account the gradient of the log-likelihood function, it fails to take into account its curvature, or the gradient of the gradient.
+    The usefulness of the curvature is made clear if we consider a second-order Taylor series approximation of L(&#952; +&#948;): where H is Hessian matrix of the log-likelihood function, the d &#215; d matrix of its second partial derivatives with respect to &#952;.
+    If we set the derivative of (4) to zero and solve for &#948;, we get the update rule for Newton&#8217;s method: Newton&#8217;s method converges very quickly (for quadratic objective functions, in one step), but it requires the computation of the inverse of the Hessian matrix on each iteration.
+    While the log-likelihood function for ME models in (2) is twice differentiable, for large scale problems the evaluation of the Hessian 

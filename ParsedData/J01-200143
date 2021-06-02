@@ -1,0 +1,7 @@
+re of the signatures in Figure 2.
+    Logically a signature consists of two lists of pointers, one a list of pointers to stems, the other a list of pointers to suffixes.
+    To specify a list of length N, we must specify at the beginning of the signature that N items will follow, and this requires just slightly more than log2 N bits to do (see Rissanen [1989,33-34] for detailed discussion); I will use the notation A(N) to indicate this function.
+    A pointer to a stem t, in turn, is of length &#8212; log prob (t), a basic principle of information theory (Li and Vitanyi 1997).
+    Hence the length of a signature is the sum of the (inverse) log probabilities of its stems, plus that of its suffixes, plus the number of bits it takes to specify the number of its stems and suffixes, using the A function.
+    We will return in a moment to how we determine the probabilities of the stems and suffixes; looking ahead, it will be the empirical frequency.
+    Let us consider the length of stem list T. As we have already 

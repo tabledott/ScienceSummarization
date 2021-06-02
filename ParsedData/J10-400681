@@ -1,0 +1,8 @@
+e have full access to the results, we use a heuristic bootstrap procedure to obtain confidence intervals around the purities (Efron and Tibshirani 1994).
+    We resample with replacement 10K data sets (clusterassignment+true-label pairs) of the original size.
+    Empirical 95% confidence intervals are then computed from the distribution of the purities in the bootstrapped data sets (for the ESSLLI results, we only perform the procedure for 6-way clustering).
+    The confidence intervals give a rough idea of how stable purity estimates are across small variations of the items in the data sets.
+    The Random models for this task are baselines assigning the concepts randomly to the target clusters, with the constraint that each cluster must contain at least one concept.
+    Random assignment is repeated 10K times, and we obtain means and confidence intervals from the distribution of these simulations.
+    Table 6 reports purity results for the three data sets, comparing our models to those in the literature.
+  

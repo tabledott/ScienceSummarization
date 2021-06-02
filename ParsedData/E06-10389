@@ -1,0 +1,6 @@
+idence for the discriminative learner, which will set the weight of each feature relative to the other (possibly overlapping) features to optimize the models accuracy on the observed data.
+    We define a dynamic programming table C[i] which represents the highest score for any compression that ends at word xi for sentence x.
+    We define a recurrence as follows It is easy to show that C[n] represents the score of the best compression for sentence x (whose length is n) under the first-order score factorization we made.
+    We can show this by induction.
+    If we assume that C[j] is the highest scoring compression that ends at word xj, for all j &lt; i, then C[i] must also be the highest scoring compression ending at word xi since it represents the max combination over all high scoring shorter compressions plus the score of extending the compression to the current word.
+    Thus, since xn is by definition in every compressed version of x (see above), then it must be the case that C[n] stores the score of the

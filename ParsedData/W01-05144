@@ -1,0 +1,11 @@
+ Kan et al., 1998), dynamic programming (Ponte and Croft, 1997; Heinonen, 1998; Utiyama and Isahara, 2001), agglomerative clustering (Yaari, 1997) and divisive clustering (Reynar, 1994; Choi, 2000a) to determine the optimal segmentation.
+    The main difficulty in clustering is automatic termination, i.e. determining the number of topic boundaries in a document.
+  
+  
+    The input to our algorithm is a list of tokenised sentences S = {81,..,8}.
+    Content words are identified by removing punctuation marks and stopwords from S. A term frequency vector f, is then constructed for each sentence i. fij denotes the number of times content word j occurs in s,.
+    The C99 algorithm (Choi, 2000a) uses the cosine metric (van Rijsbergen, 1979) (eq.
+    1) to compute a nxn similarity matrix M for S. represents the similarity between s, and si.
+    The assumption is, two sentences with similar word usage are likely to be about the same topic.
+    This idea has two main problems.
+    First, the estimate is inaccurate fo

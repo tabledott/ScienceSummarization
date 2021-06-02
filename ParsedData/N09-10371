@@ -1,0 +1,7 @@
+ answering and textual entailment, it is essential to first have high quality systems for lower level tasks.
+    A good (deep analysis) question answering system requires the data to first be annotated with several types of information: parse trees, named entities, word sense disambiguation, etc.
+    However, having high performing, lowlevel systems is not enough; the assertions of the various levels of annotation must be consistent with one another.
+    When a named entity span has crossing brackets with the spans in the parse tree it is usually impossible to effectively combine these pieces of information, and system performance suffers.
+    But, unfortunately, it is still common practice to cobble together independent systems for the various types of annotation, and there is no guarantee that their outputs will be consistent.
+    This paper begins to address this problem by building a joint model of both parsing and named entity recognition.
+    Vapnik has observed (Vapnik, 1998; Ng and Jordan, 2002) that 

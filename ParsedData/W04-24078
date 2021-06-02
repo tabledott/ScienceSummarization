@@ -1,0 +1,10 @@
+(wk, r?, wj) ? A Reduce ?wi|S, I, A?
+			?S, I, A?
+			?wj?r(wj , r, wi) ? A Shift ?S,wi|I, A?
+			?wi|S, I, A?
+			Figure 3: Parser transitions 2.3 Guided Parsing.
+			One way of turning a nondeterministic parser into a deter ministic one is to use a guide (or oracle) that can inform the parser at each nondeterministic choice point; cf.
+			Kay (2000), Boullier (2003).
+			Guided parsing is normally used to improve the efficiency of a nondeterministic parser,e.g. by letting a simpler (but more efficient) parser con struct a first analysis that can be used to guide the choice of the more complex (but less efficient) parser.
+			This is the approach taken, for example, in Boullier (2003).In our case, we rather want to use the guide to im prove the accuracy of a deterministic parser, starting from a baseline of randomized choice.
+			One way of doing this is to use a treebank, i.e. a corpus of analyzed sentences, to train a classifier that can predict the next transition (and dependency type) given the current configura

@@ -1,0 +1,6 @@
+nce alignment (MSA) of the sentences in a given cluster.
+    Pairwise MSA takes two sentences and a scoring function giving the similarity between words; it determines the highest-scoring way to perform insertions, deletions, and changes to transform one of the sentences into the other.
+    Pairwise MSA can be extended efficiently to multiple sequences via the iterative pairwise alignment, a polynomial-time method commonly used in computational biology (Durbin et al., 1998).3 The results can be represented in an intuitive form via a word lattice (see Figure 3), which compactly represents (n-gram) structural similarities between the cluster&#8217;s sentences.
+    To transform lattices into generation-suitable patterns requires some understanding of the possible varieties of lattice structures.
+    The most important part of the transformation is to determine which words are actually instances of arguments, and so should be replaced by slots (representing variables).
+    The key intuition is that because the se

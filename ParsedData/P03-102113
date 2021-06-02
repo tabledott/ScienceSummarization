@@ -1,0 +1,9 @@
+the list oftranslations used, but yield worse translation results if these parameters are used in the dynamic programming search.
+    Hence, it is possible that our new search produces translations with more errors on the training corpus.
+    This can happen because with the modified model scaling factors the -best list can change significantly and can include sentences not in the existing-best list.
+    To avoid this problem, we adopt the following solution: First, we perform search (using a manually defined set of parameter values) and compute an-best list, and use this-best list to train the model parameters.
+    Second, we use the new model parameters in a new search and compute a new-best list, which is combined with the existing-best list.
+    Third, using this extended-best list new model parameters are computed.
+    This is iterated until the resulting-best list does not change.
+    In this algorithm convergence is guaranteed as, in the limit, the-best list will contain all possible translations.
+    

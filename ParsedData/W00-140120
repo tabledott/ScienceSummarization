@@ -1,0 +1,9 @@
+ First, we observe that while it is plausible to model human judgments by penalizing long sentences, this seems unmotivated in an accuracy metric: we do not want to give a perfectly generated longer sentence a lower score than a perfectly generated shorter sentence.
+    We therefore use models that just use the simple tree accuracy and the number of substitutions as independent variables.
+    Second, we note that once we have done so, a perfect sentence gets a score of 0.8689 (for understandability) or 0.6639 (for quality).
+    We therefore divide by this score to assure that a perfect sentence gets a score of 1.
+    (As for the previously introduced metrics, the scores may be less than 0.)
+    We obtain the following new metrics: We reevaluated our system and the baseline model using the new metrics, in order to verify whether the more motivated metrics we have developed still show that FERGI:s improves performance Over the baseline.
+    This is indeed the case: the -results are summarized in Table 4.
+  
+

@@ -1,0 +1,8 @@
+h tag.
+    Since NomBank uses a sub-word analysis in some hyphenated words (such as [finger]ARG-[pointing]PRED), the data format represents the parts in hyphenated words as separate tokens (columns 6&#8211;8).
+    However, the format also represents how the parts originally fit together before splitting (columns 2&#8211;5).
+    Padding characters (&#8220; &#8221;) are used in columns 2&#8211;5 to ensure the same number of rows for all columns corresponding to one sentence.
+    All syntactic and semantic dependencies are annotated relative to the split word forms (columns 6&#8211;8).
+    Table 2 shows the columns available to the systems participating in the open challenge: namedentity labels as in the CoNLL-2003 Shared Task (Tjong Kim San and De Meulder, 2003) and from the BBN Wall Street Journal Entity Corpus,2 WordNet supersense tags, and the output of an offthe-shelf dependency parser (Nivre et al., 2007b).
+    Columns 1&#8211;3 were predicted using the tagger of Ciaramita and Altun (2006).
+    Because the

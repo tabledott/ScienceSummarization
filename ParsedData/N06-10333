@@ -1,0 +1,12 @@
+ we were constructing a CFG projected on Chinese out of the SCFG.
+    The only extra work we need to do for decoding is to build corresponding target-language (English) subtrees in parallel.
+    In other words, we build synchronous trees when parsing the source-language input, as shown in Figure 1.
+    To efficiently decode with CKY, we need to binarize the projected CFG grammar.'
+    Rules can be binarized in different ways.
+    For example, we could binarize the first rule left to right or right to left:
+  
+  
+    We call those intermediate symbols (e.g.
+    VPP-VP) virtual nonterminals and corresponding rules virtual rules, whose probabilities are all set to 1.
+    These two binarizations are no different in the translation-model-only decoding described above, just as in monolingual parsing.
+    However, in the source-channel approach to machine translation, we need to combine probabilities from the translation model (an SCFG) with the language model (an ngram), which has been shown to be very important fo

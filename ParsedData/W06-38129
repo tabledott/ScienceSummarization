@@ -1,0 +1,8 @@
+r k steps that can be interpreted as a clustering of G. This is achieved by alternating an expansion step and an inflation step.
+    The expansion step is a matrix multiplication of MG with the current transition matrix.
+    The inflation step is a column-wise non-linear operator that increases the contrast between small and large transition probabilities and normalizes the columnwise sums to 1.
+    The k matrix multiplications of the expansion step of MCL lead to its time-complexity of O(k&#8226;n2).
+    It has been observed in (van Dongen, 2000), that only the first couple of iterations operate on dense matrices &#8211; when using a strong inflation operator, matrices in the later steps tend to be sparse.
+    The author further discusses pruning schemes that keep only some of the largest entries per column, leading to drastic optimization possibilities.
+    But the most aggressive sort of pruning is not considered: only keeping one single largest entry.
+    Exactly this is conducted in the basic CW process.

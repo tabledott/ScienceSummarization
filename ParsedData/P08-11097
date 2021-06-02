@@ -1,0 +1,8 @@
+e given sentence licensed by the grammar G. where The above model is not well-defined over all CFGs.
+    Unary rules of the form Ni &#8212;* Nj can form cycles, leading to infinite unary chains with infinite mass.
+    However, it is standard in the parsing literature to transform grammars into a restricted class of CFGs so as to permit efficient parsing.
+    Binarization of rules (Earley, 1970) is necessary to obtain cubic parsing time, and closure of unary chains is required for finding total probability mass (rather than just best parses) (Stolcke, 1995).
+    To address this issue, we define our model over a restricted class of CFGs which limits unary chains to not have any repeated states.
+    This was done by collapsing all allowed unary chains to single unary rules, and disallowing multiple unary rule applications over the same span.1 We give the details of our binarization scheme in Section 5.
+    Note that there exists a grammar in this class which is weakly equivalent with any arbitrary CFG.
+    Our c

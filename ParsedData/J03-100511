@@ -1,0 +1,7 @@
+ a time in a certain order primarily determined by the distortion probabilities.
+    We will use the following simplified set of translation model parameters: lexicon probabilities p(f  |e) and distortion probabilities p(j  |j',J).
+    Here, j is the currently covered input sentence position and j' is the previously covered input sentence position.
+    The input sentence length J is included, since we would like to think of the distortion probability as normalized according to J.
+    No fertility probabilities or &#8220;null&#8221; word probabilities are used; thus each source word f is translated as exactly one target word e and each target word e is translated as exactly one source word f. The simplified notation will help us to focus on the most relevant details of the DP-based search procedure.
+    The simplified set of parameters leads to an unrealistic assumption about the length of the source and target sentence, namely, I = J.
+    During the translation experiments we will, of course, not make this as

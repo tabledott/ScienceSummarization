@@ -1,0 +1,10 @@
+number of the correct replacements.
+    Replacement rate (rr): rr measures the paraphrase degree on the development set, i.e., the percentage of words that are paraphrased.
+    We define rr as: rr = wdev(r)/wdev(s), where wdev(r) is the total number of words in the replaced units on the development set, and wdev(s) is the number of words of all sentences on the development set.
+    Replacement f-measure (rf): We use rf as the optimization objective function in MERT, which is similar to the conventional f-measure and leverages rp and rr: rf = (2 x rp x rr)/(rp + rr).
+    We estimate parameters for each paraphrase application separately.
+    For each application, we first ask two raters to manually label all possible unit replacements on the development set as correct or incorrect, so that rp, rr, and rf can be automatically computed under each set of parameters.
+    The parameters that result in the highest rf on the development set are finally selected.
+  
+  
+    Our SPG decoder is developed by remodeling Mos

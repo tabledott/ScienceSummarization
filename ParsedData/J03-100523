@@ -1,0 +1,8 @@
+ is the previously covered source sentence position and e', e'' are the predecessor words.
+    The DP equation is evaluated recursively for each hypothesis (e', e, C, j).
+    The resulting algorithm is depicted in Table 2.
+    Some details concerning the initialization and the finding of the best target language string are presented in Section 3.4. p($  |e, e') is the trigram language probability for predicting the sentence boundary symbol $.
+    The complexity of the algorithm is O(E3 &#183; J2 &#183; 2J), where E is the size of the target language vocabulary.
+    The above search space is still too large to translate even a medium-length input sentence.
+    On the other hand, only very restricted reorderings are necessary; for example, for the translation direction German to English, the word order difference is mostly restricted to the German verb group.
+    The approach presented here assumes a mostly monotonic traversal of the source sentence positions from left to right.2 A small number of positions may

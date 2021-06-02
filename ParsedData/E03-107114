@@ -1,0 +1,10 @@
+word performance improves with larger a values at the expense of overall accuracy - and so using separate cy's for different types of contextual predicates may improve performance.
+    A similar approach has been shown to be successful for language modelling (Goodman, p.c.
+    ).
+  
+  
+    The lexical categories for the supertagging experiments were extracted from CCGbank, a CCG version of the Penn Treebank (Hockenmaier and Steedman, 2002).
+    Following Clark (2002), all categories that occurred at least 10 times in the training data were used, resulting in a tagset of 398 categories.
+    Sections 02-21, section 00, and section 23 were used for training, development and testing, as before.
+    Our supertagger used the same configuration as our best performing POS tagger, except that the a parameter was again optimised on the development set.
+    The results on section 00 and section 23 are given in Tables 11 and 12.4 c&amp;c outperforms Clark's supertagger by 0.43% on the test set, a reduction in error rate 

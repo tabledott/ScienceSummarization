@@ -1,0 +1,10 @@
+del described in (Bahl et al., 1983).
+    The language model is trained on the LDC English GigaWord Corpus.
+    The test set used in the experiments in this section is the 2003 NIST MT Evaluation test set (which is not part of the training data).
+    In the experiments in this section, we show the utility of a trigram language model in restoring the correct word order for English.
+    The task is a simplified translation task, where the input is reordered English (English written in Arabic word order) and the output is English in the correct order.
+    The source sentence is a reordered English sentence in the same manner we described in Section 3.
+    The objective of the decoder is to recover the correct English order.
+    We use the same phrase-based decoder we use for our SMT experiments, except that only the language model cost is used here.
+    Also, the phrase dictionary used is a one-to-one function that maps every English word in our vocabulary to itself.
+    The language model we use for the experim

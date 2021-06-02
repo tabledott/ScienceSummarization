@@ -1,0 +1,10 @@
+tminimizes an upper bound of the negative log likeli hood (Jordan et al, 1999): ? log P(x) = ? log ? Q(y, ?, ?) P(x,y, ?, ?) Q(y, ?, ?) dy d?
+			d? ? ?
+			Q(y, ?, ?) log P(x,y, ?, ?) Q(y, ?, ?) dy d?
+			d?(3) The upper bound in (3) is called the Variational Free Energy.
+			We make a ?mean-field?
+			assumption thatthe posterior can be well approximated by a factor ized modelQ in which the state sequence y does not covary with the model parameters ?, ?
+			(this will be true if, for example, there is sufficient data that the posterior distribution has a peaked mode): P(x,y, ?, ?) ?
+			Q(y, ?, ?) = Q1(y)Q2(?, ?) The calculus of variations is used to minimize theKL divergence between the desired posterior distri bution and the factorized approximation.
+			It turnsout that if the likelihood and conjugate prior be long to exponential families then the optimalQ1 andQ2 do too, and there is an EM-like iterative pro cedure that finds locally-optimal model parameters (Bishop, 2006).
+			This procedure is especially attrac

@@ -1,0 +1,8 @@
+ect CCGbank parser would achieve an F-score of only 77.86% when evaluated against DepBank.
+    On inspecting the output, it was clear that a number of general rules could be applied to bring the schemes closer together, which we implemented as a Python postprocessing script.
+    We now provide a description of some of the major changes, to give an indication of the kinds of rules we implemented.
+    We tried to keep the changes as general as possible and not specific to the test set, although some rules, such as the handling of monetary amounts, are genre-specific.
+    We decided to include these rules because they are trivial to implement and significantly affect the score, and we felt that, without these changes, the CCG parser would be unfairly penalized.
+    The first set of changes deals with coordination.
+    One significant difference between DepBank and CCGbank is the treatment of coordinations as arguments.
+    Consider the example The president and chief executive officer said the loss stems from se

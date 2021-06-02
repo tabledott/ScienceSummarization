@@ -1,0 +1,9 @@
+own in Table 2.
+    Finally, we ran the decoder on the test set, pruning the phrase table with b = 100, pruning the chart with b = 100,/3 = 10&#8722;5, and limiting distortions to 4.
+    These are the default settings, except for the phrase table&#8217;s b, which was raised from 20, and the distortion limit.
+    Both of these changes, made by Koehn&#8217;s minimum-error-rate trainer by default, improve performance on the development set.
+    We ran the training process of Section 3 on the same data, obtaining a grammar of 24M rules.
+    When filtered for the development set, the grammar has 2.2M rules (see Figure 2 for examples).
+    We then ran the minimum-error rate trainer with our decoder to tune the feature weights, yielding the values shown in Table 2.
+    Note that Ag penalizes the glue rule much less than App does ordinary rules.
+    This suggests that the model will prefer serial combination of phrases, unless some other factor supports the use of hierarchical phrases (e.g., a better language model s

@@ -1,0 +1,12 @@
+e graph, we tried three threshold values for r (see Eq.
+    7).
+    Because we don&#8217;t have a separate development set, we used the training set to select among them and found 0.2 to work slightly better than 0.1 and 0.3.
+    For seven out of eight languages a threshold of 0.2 gave the best results for our final model, which indicates that for languages without any validation set, r = 0.2 can be used.
+    For graph propagation, the hyperparameter v was set to 2 x 10&#8722;6 and was not tuned.
+    The graph was constructed using 2 million trigrams; we chose these by truncating the parallel datasets up to the number of sentence pairs that contained 2 million trigrams.
+  
+  
+    Table 2 shows our complete set of results.
+    As expected, the vanilla HMM trained with EM performs the worst.
+    The feature-HMM model works better for all languages, generalizing the results achieved for English by Berg-Kirkpatrick et al. (2010).
+    Our &#8220;Projection&#8221; baseline is able to benefit from the bilingual info

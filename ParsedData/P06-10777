@@ -1,0 +1,10 @@
+arser.
+    As we assume that all detachment have the same probability, the hidden variable D is also omitted.
+    As a result, the model we actually adopt for experiments is limited because the parse, detachment, and TAT application sub-models are simplified.
+    For our experiments we use the following seven feature functions 4 that are analogous to default feature set of Pharaoh (Koehn, 2004).
+    To simplify the notation, we omit the dependence on the hidden variables of the model.
+    Therefore, the TAT-based translation model can be decomposed into four sub-models: Figure 2 shows how TATs work to perform translation.
+    First, the input source sentence is parsed.
+    Next, the parse tree is detached into five subtrees with a preorder transversal.
+    For each subtree, a TAT is selected and applied to produce a string.
+    Finally, these strings are combined serially to generate the translation (we use X to denote the non-terminal): 4When computing lexical weighting features (Koehn et al., 2003), we take

@@ -1,0 +1,9 @@
+t.
+    Starting from a dummy start state in which the dot is just to the left of the grammar&#8217;s start symbol, predict adds new states for rules which could expand the start symbol.
+    In these new predicted states, the dot is at the far left-hand side of each rule.
+    After prediction, scan checks the input string: if the symbol immediately following the dot matches the current word in the input, then the dot is moved rightward, across the symbol.
+    The parser has &#8220;scanned&#8221; this word.
+    Finally, complete propagates this change throughout the chart.
+    If, as a result of scanning, any states are now present in which the dot is at the end of a rule, then the left hand side of that rule has been recognized, and any other states having a dot immediately in front of the newly-recognized left hand side symbol can now have their dots moved as well.
+    This happens over and over until no new states are generated.
+    Parsing finishes when the dot in the dummy start state is moved across the g

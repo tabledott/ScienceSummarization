@@ -1,0 +1,8 @@
+t, both learning and parsing are fast.
+    The parser is incremental, using a new link representation for syntactic structure.
+    Incremental parsing was chosen because it considerably restricts the search space for both learning and parsing.
+    The representation the parser uses is designed for incremental parsing and allows a prefix of an utterance to be parsed before the full utterance has been read (see section 3).
+    The representation the parser outputs can be converted into bracketing, thus allowing evaluation of the parser on standard treebanks.
+    To achieve completely unsupervised parsing, standard unsupervised parsers, working from partof-speech sequences, need first to induce the partsof-speech for the plain text they need to parse.
+    There are several algorithms for doing so (Sch&#168;utze, 1995; Clark, 2000), which cluster words into classes based on the most frequent neighbors of each word.
+    This step becomes superfluous in the algorithm I present here: the algorithm collects lists of 

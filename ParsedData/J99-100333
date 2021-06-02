@@ -1,0 +1,10 @@
+ace also enables SIMR to recover chains that were missed because of an inversion in the translation.
+    Nonmonotonic TBM segments result in a characteristic map pattern, as a consequence of the injectivity of bitext maps.
+    SIMR has no problem with small nonmonotonic segments inside chains.
+    However, the expanding rectangle search strategy can miss larger nonmonotonic segments that do not fit inside one chain.
+    In Figure 8, the vertical range of segment j corresponds to a vertical gap in SIMR's first-pass map.
+    The horizontal range of segment j corresponds to a horizontal gap in SIMR's first-pass map.
+    Similarly, any nonmonotonic segment of the TBM will occupy the intersection of a vertical gap and a horizontal gap in the monotonic first-pass map.
+    Furthermore, switched segments are usually adjacent and relatively short.
+    Therefore, to recover nonmonotonic segments of the TBM, SIMR needs only to search gap intersections that are close to the first-pass map.
+    There are usually very few 

@@ -1,0 +1,5 @@
+rst, in supervised models, a head outward process is modeled (Eisner, 1996; Collins, 1999).
+    In such processes, heads generate a sequence of arguments outward to the left or right, conditioning on not only the identity of the head and direction of the attachment, but also on some notion of distance or valence.
+    Moreover, in a head-outward model, it is natural to model stop steps, where the final argument on each side of a head is always the special symbol STOP.
+    Models like Paskin (2002) avoid modeling STOP by generating the graph skeleton G first, uniformly at random, then populating the words of s conditioned on G. Previous work (Collins, 1999) has stressed the importance of including termination probabilities, which allows the graph structure to be generated jointly with the terminal words, precisely because it does allow the modeling of required dependents.
+    We propose a simple head-outward dependency model over word classes which includes a model of valence, which we call DMV (for dependency 

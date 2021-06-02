@@ -1,0 +1,7 @@
+ conTinuation) of a source, and ?-?
+			is a token that is not part of any source.2 A detailed description of CRFs can be found in2This is equivalent to the IOB tagging scheme used in syn tactic chunkers (Ramshaw and Marcus, 1995).
+			356 Lafferty et al (2001).
+			For our sequence tagging problem, we create a linear-chain CRF based on an undirected graph G = (V,E), where V is the set of random variables Y = {Yi|1 ? i ? n}, one for each of n tokens in an input sentence; and E = {(Yi?1, Yi)|1 &lt; i ? n} is the set of n ? 1 edges forming a linear chain.
+			For eachsentence x, we define a non-negative clique poten tial exp( ?K k=1 ?kfk(yi?1, yi, x)) for each edge, and exp(?K?k=1 ??kf ?k(yi, x)) for each node, where fk(...)
+			is a binary feature indicator function, ?k is a weight assigned for each feature function, and K and K ? are the number of features defined for edges and nodes respectively.
+			Following Lafferty et al (2001), the conditional probability of a sequence of labels y given a sequence of tokens x

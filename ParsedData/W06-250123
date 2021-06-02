@@ -1,0 +1,10 @@
+tor measure attempts to overcome this &#8220;exactness&#8221; by using vectors that capture the contextual representation of all words.
+    So even though silverware and spoon do not overlap, their contextual representations would overlap to some extent.
+  
+  
+    (Wilks et al., 1990) describe a word sense disambiguation algorithm that also uses vectors to determine the intended sense of an ambiguous word.
+    In their approach, they use dictionary definitions from LDOCE (Procter, 1978).
+    The words in these definitions are used to build a co&#8211;occurrence matrix, which is very similar to our technique of using the WordNet glosses for our Word Space.
+    They augment their dictionary definitions with similar words, which are determined using the co&#8211; occurrence matrix.
+    Each concept in LDOCE is then represented by an aggregate vector created by adding the co&#8211;occurrence counts for each of the words in the augmented definition of the concept.
+    The next step in their algorithm is to form a 

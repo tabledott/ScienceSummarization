@@ -1,0 +1,8 @@
+l dependency trees.
+    There are also affinities to the system of Attardi (2006), which combines non-adjacent nodes on the stack instead of swapping nodes and is equivalent to a restricted version of our system, where no more than two consecutive SWAP transitions are permitted.
+    This restriction preserves linear worstcase complexity at the expense of completeness.
+    Finally, the algorithm first described by Covington (2001) and used for data-driven parsing by Nivre (2007), is complete but has quadratic complexity even in the best case.
+  
+  
+    We have presented a novel transition system for dependency parsing that can handle unrestricted non-projective trees.
+    The system reuses standard techniques for building projective trees by combining adjacent nodes (representing subtrees with adjacent yields), but adds a simple mechanism for swapping the order of nodes on the stack, which gives a system that is sound and complete for the set of all dependency trees over a given label set but behaves exactly l

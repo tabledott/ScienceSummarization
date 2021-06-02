@@ -1,0 +1,8 @@
+ect context.
+    The two combination blocks are divided into three columns, representing the tag level at which combination is performed, for example, for the Lite column the output of the base taggers is projected to WotanLite tags, which are then used as input for the combiner.
+    We hypothesized beforehand that, in general, the more information a system can use, the better its results are.
+    Unfortunately, even for the base taggers, reality is not that simple.
+    For both MXP and HMM, the Wotan tagger indeed yields a better WotanLite tagging than the WotanLite tagger itself, thus supporting the hypothesis.
+    On the other hand, the results for MBT do not confirm this, as here the WotanLite tagger is more accurate.
+    However, we have already seen that MBT has severe problems in dealing with the complex Wotan data.
+    Furthermore, the lowered accuracy of the MBL combiners when provided with words (see Section 4.3) also indicate that memory-based learning sometimes has problems in coping with a surplu

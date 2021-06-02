@@ -1,0 +1,7 @@
+ine 2 to 15 loops over the remaining mentions ( to ), and for each mention , the algorithm extends each result in (or a path in the Bell tree) by either linking with an existing entity (line 5 to 10), or starting an entity (line 11 to 14).
+    The loop from line 2 to 12 corresponds to creating a new layer of nodes for the active mention in the Bell tree. in line 4 and in line 6 and 11 have to do with pruning, which will be discussed shortly.
+    The last line returns top results, where denotes the result ranked by : Algorithm 1 Search Algorithm The complexity of the search Algorithm 1 is the total number of nodes in the Bell tree, which is , where is the Bell Number.
+    Since the Bell number increases rapidly as a function of the number of mentions, pruning is necessary.
+    We prune the search space in the following places: Local pruning: any children with a score below a fixed factor of the maximum score are pruned.
+    This is done at line 6 and 11 in Algorithm 1.
+    The operation in line 4 is: first ali

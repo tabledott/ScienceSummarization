@@ -1,0 +1,8 @@
+cated.
+    Candidate translations longer than their references are already penalized by the modified n-gram precision measure: there is no need to penalize them again.
+    Consequently, we introduce a multiplicative brevity penalty factor.
+    With this brevity penalty in place, a high-scoring candidate translation must now match the reference translations in length, in word choice, and in word order.
+    Note that neither this brevity penalty nor the modified n-gram precision length effect directly considers the source length; instead, they consider the range of reference translation lengths in the target language.
+    We wish to make the brevity penalty 1.0 when the candidate&#8217;s length is the same as any reference translation&#8217;s length.
+    For example, if there are three references with lengths 12, 15, and 17 words and the candidate translation is a terse 12 words, we want the brevity penalty to be 1.
+    We call the closest reference sentence length the &#8220;best match length.&#8221; One consi

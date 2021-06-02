@@ -1,0 +1,12 @@
+very large multivariate normal distribution with O(t4) covariance parameters.
+    To solve this problem, we suggest a refinement of the class of PLN distributions.
+    Instead of using a single normal vector for all of the multinomials, we use several normal vectors, partition each one and then recombine parts which correspond to the same multinomial, as a mixture.
+    Next, we apply the logisitic transformation on the mixed vectors (each of which is normally distributed as well).
+    Fig.
+    2 gives an example of a non-trivial case of using a SLN distribution, where three multinomials are generated from four normal experts.
+    We now formalize this notion.
+    For a natural number N, we denote by 1:N the set {1, ..., N}.
+    For a vector in v E RN and a set I C_ 1:N, we denote by vI to be the vector created from v by using the coordinates in I.
+    Recall that K is the number of multinomials in the probabilistic grammar, and Nk is the number of events in the kth multinomial.
+    Definition 1.
+    We define

@@ -1,0 +1,11 @@
+rithm could be used in these domains, perhaps maximizing a criterion that is more closely tied to the domain will produce better results.
+    Ideally, we would maximize the Consistent Brackets Recall Rate directly.
+    However, since it is time-consuming to deal with Consistent Brackets, we instead use the closely related Bracketed Recall Rate.
+    For the Bracketed Recall Algorithm, we find the parse that maximizes the expected Bracketed Recall Rate, BINc.
+    (Remember that B is the number of brackets that are correct, and Nc is the number of constituents in the correct parse.)
+    The algorithm for Bracketed Recall parsing is extremely similar to that for Labelled Recall parsing.
+    The only required change is that we sum over the symbols X to calculate max_g, rather than maximize over them.
+  
+  
+    We describe two experiments for testing these algorithms.
+    The first uses a grammar without meaningful nonterminal symbols, and compares the Bracketed Recall Algorithm to the traditional Labelled Tree (Vi

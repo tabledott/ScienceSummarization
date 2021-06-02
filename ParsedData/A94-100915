@@ -1,0 +1,11 @@
+e DO+TO) always does best, even when the test data is from a different source to the training data, as it is for LOB-L.
+    So perhaps it is worth investing effort in hand-tagging training corpora after all, rather than just building a lexicon and letting reestimation sort out the probabilities.
+    But how can we ensure that re-estimation will produce a good quality model?
+    We look further at this issue in the next section.
+  
+  
+    During the first experiment, it became apparent that Baum-Welch re-estimation sometimes decreases the accuracy as the iteration progresses.
+    A second experiment was conducted to decide when it is appropriate to use Baum-Welch re-estimation at all.
+    There seem to be three patterns of behaviour: Classical A general trend of rising accuracy on each iteration, with any falls in accuracy being local.
+    It indicates that the model is converging towards an optimum which is better than its starting point.
+    Initial maximum Highest accuracy on the first iteration, and fallin

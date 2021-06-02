@@ -1,0 +1,7 @@
+ word-segmented input sentence given to the POS tagger may contain word segmentation errors, which can lower the POS tagging accuracy.
+    The following feature templates were chosen.
+    W refers to a word while POS refers to the POS tag assigned.
+    The feature Pu(W0) checks if all characters in the current word are punctuation characters.
+    Feature (e) encodes the class of characters that constitute the surrounding words (similar to feature (f) of the word segmenter in Section 2.1).
+    Four type classes are defined: a word is of class 1 if it is a number; class 2 if the word is made up of only numeric characters followed by &#8220;H&#8221;, &#8220;&#26376;&#8221;,or &#8220;&#24180;&#8221;; class 3 when the word is made up of only English characters The testing procedure is similar to the beam search algorithm of (Ratnaparkhi, 1996), which tags each word one by one and maintains, as it sees a new word, the N most probable POS tag sequence candidates up to that point in the sentence.
+    For our experime

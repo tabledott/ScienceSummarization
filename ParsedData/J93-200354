@@ -1,0 +1,9 @@
+e, when we evaluate expectations for Model 5, we include only the alignments in S as defined in Equation (47).
+    We further trim these alignments by removing any alignment a, for which Pr(a le, f; 4) is too much smaller than Pr (b.'
+    ( V(f I e; 2) le, f; 4).
+    Model 5 is a powerful but unwieldy ally in the battle to align translations.
+    It must be led to the battlefield by its weaker but more agile brethren Models 2, 3, and 4.
+    In fact, this is the raison d'&#234;tre of these models.
+    To keep them aware of the lay of the land, we adjust their parameters as we carry out iterations of the EM algorithm for Model 5.
+    That is, we collect counts for Models 2, 3, and 4 by summing over alignments as determined by the abbreviated S described above, using Model 5 to compute Pr(a I e, f).
+    Although this appears to increase the storage necessary for maintaining counts as we proceed through the training data, the extra burden is small because the overwhelming majority of the storage is devoted to cou

@@ -1,0 +1,10 @@
+word is uniquely identified by its path from the root, and this path can be compactly represented with a bit string, as in Figure 2.
+    In order to obtain a clustering of the words, we select all nodes at a certain depth from the root of the hierarchy.
+    For example, in Figure 2 we might select the four nodes at depth 2 from the root, yielding the clusters {apple,pear}, {Apple,IBM}, {bought,run}, and {of,in}.
+    Note that the same clustering can be obtained by truncating each word&#8217;s bit-string to a 2-bit prefix.
+    By using prefixes of various lengths, we can produce clusterings of different granularities (Miller et al., 2004).
+    For all of the experiments in this paper, we used the Liang (2005) implementation of the Brown algorithm to obtain the necessary word clusters.
+  
+  
+    Key to the success of our approach is the use of features which allow word-cluster-based information to assist the parser.
+    The feature sets we used are similar to other feature sets in the literature (McDonald et al

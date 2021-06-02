@@ -1,0 +1,7 @@
+label sequences, for instance hidden Markov models (HMMs) (Freitag and McCallum, 2000; Kupiec, 1992) or multilevel Markov models (Bikel et al., 1999).
+    The second approach views the sequence labeling problem as a sequence of classification problems, one for each of the labels in the sequence.
+    The classification result at each position may depend on the whole input and on the previous k classifications.
+    1 The generative approach provides well-understood training and decoding algorithms for HMMs and more general graphical models.
+    However, effective generative models require stringent conditional independence assumptions.
+    For instance, it is not practical to make the label at a given position depend on a window on the input sequence as well as the surrounding labels, since the inference problem for the corresponding graphical model would be intractable.
+    Non-independent features of the inputs, such as capitalization, suffixes, and surrounding words, are important in dealing with words unsee

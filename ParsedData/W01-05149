@@ -1,0 +1,11 @@
+orted in descending order.
+    BBT is a word similarity matrix, where the &amp;quot;meaning&amp;quot; of a word to, is expressed in terms of its dot-product with all other words {w1, 1.07,}.
+    As a classification problem, the eigenvectors in U are the principle axes for distinguishing the word feature vectors, or rows, in BBT.
+    In other words, the first k columns of U, or Ak, is the best approximation of BBT in k&#8212;dimensional space.
+    Ak is the k&#8212;dimensional LSA space for A.
+    The i&#8212;th row in Ak, or Ak(i), is the LSA feature vector for word to,.
+    Applying SVD to W has three main benefits.
+    First, Ak is a concise representation of W. Thus, storage and computational complexity of the similarity metric is reduced.
+    Second, words which occur in similar contexts are represented by similar feature vectors in Ak.
+    Finally, noise in W is removed by simply omitting the less salient dimensions in U.
+    A sentence s, is represented by its term frequency vector A, where Li is the fr

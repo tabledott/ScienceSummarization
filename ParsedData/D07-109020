@@ -1,0 +1,9 @@
+, etc. As an example for larger runs reported in the experiments section, we typically request around150,000 n-grams per sentence.
+			The average network latency per batch is 35 milliseconds, yielding a total latency of 0.8 seconds caused by the dis tributed language model for an average sentence of22 words.
+			If a slight reduction in translation qual ity is allowed, then the average network latency perbatch can be brought down to 7 milliseconds by reducing the number of n-grams requested per sen tence to around 10,000.
+			As a result, our system can efficiently use the large distributed language model at decoding time.
+			There is no need for a second pass nor for n-best list rescoring.We focused on machine translation when describ ing the queued language model access.
+			However, it is general enough that it may also be applicable to speech decoders and optical character recognition systems.
+	
+	
+			We trained 5-gram language models on amounts of text varying from 13 million to 2 trillion tokens.The data is

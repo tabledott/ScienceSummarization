@@ -1,0 +1,6 @@
+ word where this prefix occurs, this feature fires and boosts the probability that the next words are aligned.
+			The basic intuition behind this feature is that words inside prepositional phrases tend to align, which is similar to the dependency structure feature of (Cherry and Lin, 2003).At training time, the lattice reduces to the single path provided by the annotation.
+			Since this fea ture tends to suffer from the drag of function words, we insist that the next words that are being linked have at least one feature that applies.
+			All word pairslinked in the training data have lexical features as de scribed above, and if both source and target words are unknown they have a single feature for their link.
+			Applying dynamic features on words that have atleast one other feature prevents words which are completely unrelated from being linked because of a fea ture about the context of the words.
+			Two types of dynamic features are distinguished: (a) English word with Arabic prefix/suffix and (b) English wo

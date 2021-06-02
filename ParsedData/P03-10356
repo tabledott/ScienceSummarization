@@ -1,0 +1,8 @@
+ur system, where words of different types are processed in different ways: In our system, we use a unified approach to detecting and processing the above four types of words.
+    This approach is based on the improved source-channel models described below.
+  
+  
+    Let S be a Chinese sentence, which is a character string.
+    For all possible word segmentations W, we will choose the most likely one W* which achieves the highest conditional probability P(W|S): W* = argmaxw P(W|S).
+    According to Bayes&#8217; decision rule and dropping the constant denominator, we can equivalently perform the following maximization: Following the Chinese word definition in Section 3, we define word class C as follows: (1) Each lexicon word is defined as a class; (2) each morphologically derived word is defined as a class; (3) each type of factoids is defined as a class, e.g. all time expressions belong to a class TIME; and (4) each type of named entities is defined as a class, e.g. all person names belong to a class PN.
+    

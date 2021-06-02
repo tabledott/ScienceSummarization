@@ -1,0 +1,7 @@
+ increases.
+    Based on this observation, we have chosen to stop all algorithms based on their performance on an independent development set, allowing a fair comparison of the overall training time; for OWL-QN, it allowed to divide the total training time by almost 2.
+    It has finally often been found useful to fine tune the non-zero parameters by running a final handful of L-BFGS iterations using only a small E2 penalty; at this stage, all the other features are removed from the model.
+    This had a small impact BCD and SGD&#8217;s performance and allowed them to catch up with OWL-QN&#8217;s performance.
+    As explained in section 4.1, the forward-backward algorithm can be written so as to use the sparsity of the matrix My&#65533;y,&#65533;,,.
+    To evaluate the resulting speed-up, we ran a series of experiments using Nettalk (see Table 2).
+    In this table, the 3-grm- setting corresponds to maximum sparsity for M, and training with the sparse algorithm is three times faster than with the non-sparse v

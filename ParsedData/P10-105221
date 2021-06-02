@@ -1,0 +1,8 @@
+ one is standard and aims at predicting the pronunciation information only.
+    In this setting, the set of observations (X) contains 26 graphemes, and the output label set contains |Y  |= 51 phonemes.
+    The second condition aims at jointly predicting phonemic and prosodic information3.
+    The reasons for designing this new condition are twofold: firstly, it yields a large set of composite labels (|Y  |= 114) and makes the problem computationally challenging.
+    Second, it allows to quantify how much the information provided by the prosodic marks help predict the phonemic labels.
+    Both information are quite correlated, as the stress mark and the syllable openness, for instance, greatly influence the realization of some archi-phonemes.
+    The features used in Nettalk experiments take the form fy,,,, (unigram) and fy0,y,,,, (bigram), where w is a n-gram of letters.
+    The n-grm feature sets (n = 11, 3, 5, 7}) includes all features testing embedded windows of k letters, for all 0 &lt; k &lt; n; the n-gr

@@ -1,0 +1,6 @@
+alues for the action and agents feature: the first agent/action pair, if both are nonzero, otherwise the first agent without an action, otherwise the first action without an agent, if available.
+    In order to determine the level of correctness of agent and action recognition, we had first to evaluate manually the error level of the POS tagging of finite verbs, as our algorithm crucially relies on finite verbs.
+    In a random sample of 100 sentences from our development corpus that contain any finite verbs at all (they happened to contain a total of 184 finite verbs), the tagger (which is part of the TTT software) showed a recall of 95% and a precision of 93%.
+    We found that for the 174 correctly determined finite verbs, the heuristics for negation and presence of modal auxiliaries worked without any errors (100% accuracy, eight negated sentences).
+    The correct semantic verb was determined with 96% accuracy; most errors were due to misrecognition of clause boundaries.
+    Action Type lookup was fully 

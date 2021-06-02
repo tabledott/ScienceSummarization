@@ -1,0 +1,8 @@
+insto, derives/derived from, attribute/has attribute, and topical (but not regional or usage) domain links.
+			By con struction, each edge created from a WordNet relationshipis guaranteed to have a corresponding edge in the oppo site direction.
+			Edges that connect a TokenPOS to the Synsets using it are weighted based on a Bayesian estimate drawn from the SemCor frequency counts included in WordNet but with a non-uniform Dirichlet prior.
+			Our edge weights are the SemCor frequency counts for each target Synset, with pseudo-counts of .1 for all Synsets, 1 for first sense ofeach word, and .1 for the first word in each Synset.
+			Intuitively, this causes the particle to have a higher probabil ity of moving to more common senses of a TokenPOS; for example, the edges from ?dog#n? to ?dog#n#1?
+			(canine) and ?dog#n#5?
+			(hotdog) have un-normalized weights of43.2 and 0.1, respectively.
+			The edges connecting a To ken to the TokenPOS nodes in which it can occur are alsoweighted by the sum of the weights of the o

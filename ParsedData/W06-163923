@@ -1,0 +1,7 @@
+ approach wherein the way we determine the initial individual-document classification score for each speech segment uttered by a person p in a given debate is to run an SVM on the concatenation of all of p&#8217;s speech segments within that debate.
+    (We also ensure that agreement-link information is propagated from speech-segment to speaker pairs.)
+    How does the use of same-speaker links compare to the concatenation of each speaker&#8217;s speech segments?
+    Tables 4 and 5 show that, not surprisingly, the SVM individual-document classifier works better on the concatenated speech segments than on the speech segments in isolation.
+    However, the effect on overall classification accuracy is less clear: the development set favors samespeaker links over concatenation, while the test set does not.
+    But we stress that the most important observation we can make from Table 5 is that once again, the addition of agreement information leads to substantial improvements in accuracy.
+    Recall that in in our 

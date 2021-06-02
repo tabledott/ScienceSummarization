@@ -1,0 +1,8 @@
+ch to break the training set.
+    If the Baum-Welch algorithm is run separately (from the same starting point) on each piece, the resulting trained models must be recombined in some way.
+    One obvious approach is simply to average.
+    However, this fails if any two 'An equivalent approach maintains a mapping from states i to non-zero symbol probabilities and simply avoids, in the inner iteration, computing products which must be zero [Kupiec, 1992]. states are indistinguishable (in the sense that they had the same transition probabilities and the same symbol probabilities at start), because states are then not matched across trained models.
+    It is therefore important that each state have a distinguished role, which is relatively easy to achieve in part-of-speech tagging.
+    Our implementation of the Baum-Welch algorithm breaks up the input into fixed-sized pieces of training text.
+    The Baum-Welch algorithm is then run separately on each piece and the results are averaged together.
+    Running the Vi

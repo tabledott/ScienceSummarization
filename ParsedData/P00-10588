@@ -1,0 +1,10 @@
+enough to parse the whole corpus and obtain a maximum-likelihood estimate by EM.
+    Another approach, taken in (Magerman, 1995) and others for lexicalized PCFGs and (Neumann, 1998; Xia, 1999; Chen and VijayShanker, 2000) for LTAGs, is to use heuristics to reconstruct the derivations, and directly estimate the PTAG parameters from the reconstructed derivations.
+    We take this approach as well.
+    (One could imagine combining the two approaches, using heuristics to extract a grammar but EM to estimate its parameters.)
+  
+  
+    In a lexicalized TAG, because each composition brings together two lexical items, every composition probability involves a bilexical dependency.
+    Given a CFG and headpercolation scheme, an equivalent TAG can be constructed whose derivations mirror the dependency analysis implicit in the headpercolation scheme.
+    Furthermore, there are some dependency analyses encodable by TAGs that are not encodable by a simple head-percolation scheme.
+    For example, for the sentence &amp;quot

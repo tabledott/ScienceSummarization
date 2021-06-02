@@ -1,0 +1,8 @@
+global thresholding and multiple-pass parsing, and one significant variation on traditional beam thresholding.
+    We examine the value of these techniques when used separately, and when combined.
+    In order to examine the combined techniques, we also introduce an algorithm for optimizing the settings comments on earlier drafts, and the anonymous reviewers for their extensive comments. of multiple thresholds.
+    When all three thresholding methods are used together, they yield very significant speedups over traditional beam thresholding, while achieving the same level of performance.
+    We apply our techniques to CKY chart parsing, one of the most commonly used parsing methods in natural language processing.
+    In a CKY chart parser, a two-dimensional matrix of cells, the chart, is filled in.
+    Each cell in the chart corresponds to a span of the sentence, and each cell of the chart contains the nonterminals that could generate that span.
+    Cells covering shorter spans are filled in first, so we also 

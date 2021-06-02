@@ -1,0 +1,8 @@
+consistent model dubbed ML-DOP.
+    However, ML-DOP suffers from overlearning if the subtrees are trained on the same treebank trees as they are derived from.
+    Cross-validation is needed to avoid this problem.
+    But even with cross-validation, ML-DOP is outperformed by the much simpler DOP1 model on both the ATIS and OVIS treebanks (Bod 2000b).
+    Bonnema et al. (1999) observed that another problem with DOP1's subtree-estimation method is that it provides more probability to nodes with more subtrees, and therefore more probability to larger subtrees.
+    As an alternative, Bonnema et al. (1999) propose a subtree estimator which reduces the probability of a tree by a factor of two for each non-root non-terminal it contains.
+    Bod (2001) used an alternative technique which samples a fixed number of subtrees of each depth and which has the effect of assigning roughly equal weight to each node in the training data.
+    Although Bod's method obtains very competitive results on the Wall Street Journal (WSJ)

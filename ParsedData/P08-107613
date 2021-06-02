@@ -1,0 +1,12 @@
+ta used in this paper is detailed in Table 2.
+    Note that the total size of the unlabeled data reaches 1G-words (one billion tokens).
+    We used the same graph structure as the linear chain CRF for JESS-CM.
+    As regards the design of the feature functions fi, Table 3 shows the feature templates used in our experiments.
+    In the table, s indicates a focused token position.
+    Xs_1.s represents the bi-gram of feature X obtained from s &#8722; 1 and s positions.
+    {Xu}Bu&#65533;A indicates that u ranges from A to B.
+    For example, {Xu}s+2 u&#65533;s_2 is equal to five feature templates, {Xs_2i Xs_1i Xsi Xs+1i Xs+2}.
+    &#8216;word type&#8217; or wtp represents features of a word such as capitalization, the existence of digits, and punctuation as shown in (Sutton et al., 2006) without regular expressions.
+    Although it is common to use external resources such as gazetteers for NER, we used none.
+    All our features can be automatically extracted from the given training data.
+    We used first orde

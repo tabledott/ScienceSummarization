@@ -1,0 +1,11 @@
+s corresponding to the entire projection, including the kitchen-specific features &#8220;poorly designed&#8221; and &#8220;awkward to&#8221;.
+    While some rows of the projection matrix 0 are useful for classification, SCL can also misalign features.
+    This causes problems when a projection is discriminative in the source domain but not in the target.
+    This is the case for adapting from kitchen appliances to books.
+    Since the book domain is quite broad, many projections in books model topic distinctions such as between religious and political books.
+    These projections, which are uninformative as to the target label, are put into correspondence with the fewer discriminating projections in the much narrower kitchen domain.
+    When we adapt from kitchen to books, we assign weight to these uninformative projections, degrading target classification accuracy.
+  
+  
+    We now show how to use a small amount of target domain labeled data to learn to ignore misaligned projections from SCL-MI.
+    Using th

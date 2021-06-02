@@ -1,0 +1,11 @@
+ory, which in turn depends solely on the categories of the preceding two words.
+    Two types of training (i.e., parameter estimation) have been used with this model.
+    The first makes use of a tagged training corpus.
+    Derouault and Merialdo use a bootstrap method for training [Derouault and Merialdo, 1986].
+    At first, a relatively small amount of text is manually tagged and used to train a partially accurate model.
+    The model is then used to tag more text, and the tags are manually corrected and then used to retrain the model.
+    Church uses the tagged Brown corpus for training [Church, 1988].
+    These models involve probabilities for each word in the lexicon, so large tagged corpora are required for reliable estimation.
+    The second method of training does not require a tagged training corpus.
+    In this situation the Baum-Welch algorithm (also known as the forward-backward algorithm) can be used [Baum, 1972].
+    Under this regime the model is a Markov model as state transitions (i.e., part

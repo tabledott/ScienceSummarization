@@ -1,0 +1,10 @@
+ed by gains in both precision and recall.
+    This indicates that the invalid span feature is doing more than just ruling out links; perhaps it is de-emphasizing another, less accurate feature&#8217;s role.
+    The SD-ITG overrides the cohesion constraint in only 41 of the 347 test sentences, so we can see that it is indeed a soft constraint: it is obeyed nearly all the time, but it can be broken when necessary.
+    The SD-ITG achieves by far the strongest ITG alignment result reported on this French-English set; surpassing the 0.16 AER reported in (Zhang and Gildea, 2004).
+    Training times for this system are quite low; unsupervised statistics can be collected quickly over a large set, while only the 100-sentence training set needs to be iteratively aligned.
+    Our matching SVM trains in minutes on a single-processor machine, while the SD-ITG trains in roughly one hour.
+    The ITG is the bottleneck, so training time could be improved by optimizing the parser.
+  
+  
+    Several other aligners have used di

@@ -1,0 +1,9 @@
+ken, such as Bashar_Assad.
+    So in a relation example R whose seq is (t1, t2, ..., tn), it is always true that arg1=t1 and arg2=tn.
+    For names, the base form of an entity is its ACE type (person, organization, etc.).
+    To introduce dependencies, we define a dependency token to be a token augmented with a vector of dependency arcs, DT=(word, pos, base, dseq), where dseq = (arc1, ... , arcn ).
+    A dependency arc is ARC = (w, dw, label, e), where w is the current token; dw is a token connected by a dependency to w; and label and e are the role label and direction of this dependency arc respectively.
+    From now on we upgrade the type of tk in arg1 and arg2 to be dependency tokens.
+    Finally, path is a vector of dependency arcs, where l is the length of the path and arci (1&lt;i&lt;l) satisfies arc1.w=arg1.tk, arci+1.w=arci.dw and arcl.dw=arg2.tk.
+    So path is a chain of dependencies connecting the two arguments in R. The arcs in it do not have to be in the same direction.
+    Figure 2 shows a relat

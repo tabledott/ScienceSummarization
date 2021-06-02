@@ -1,0 +1,8 @@
+ recall are only smooth with very large sets of test data.
+    However, because of the large number of experiments we wished to run, using a large set of test data was not feasible.
+    Thus, we looked for a surrogate measure, and decided to use the total inside probability of all parses, which, with no thresholding, is just the probability of the sentence given the model.
+    If we denote the total inside probability with no thresholding by I and the total inside probability with thresholding by IT, then IL is the probability that we did not threshold out the correct parse, given the model.
+    Thus, maximizing IT should maximize correctness.
+    Since probabilities can become very small, we instead minimize entropies, the negative logarithm of the probabilities.
+    Figure 11 shows that with a large data set, entropy correlates well with precision and recall, and that with smaller sets, it is much smoother.
+    Entropy is smoother because it is a function of many more variables: in one experiment, there wer

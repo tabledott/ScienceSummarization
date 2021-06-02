@@ -1,0 +1,12 @@
+he head and mention type are given as part of the mention annotation.
+    For the MUC data, the head was crudely chosen to be the rightmost mention token, and the mention type was automatically detected.
+    We will not assume any other information to be present in the data beyond the text itself.
+    In particular, unlike much related work, we do not assume gold named entity recognition (NER) labels; indeed we do not assume observed NER labels or POS tags at all.
+    Our primary performance metric will be the MUC F1 measure (Vilain et al., 1995), commonly used to evaluate coreference systems on a within-document basis.
+    Since our system relies on sampling, all results are averaged over five random runs.
+  
+  
+    In this section, we present a sequence of generative coreference resolution models for document corpora.
+    All are essentially mixture models, where the mixture components correspond to entities.
+    As far as notation, we assume a collection of I documents, each with Ji mentions.
+    We use ra

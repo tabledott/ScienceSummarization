@@ -1,0 +1,6 @@
+d to construct polarity lexicons using graph propagation over a phrase similarity graph constructed from the web.
+    We construct our lexicon using graph propagation techniques, which have previously been investigated in the construction of polarity lexicons (Kim and Hovy, 2004; Hu and Liu, 2004; Esuli and Sabastiani, 2009; Blair-Goldensohn et al., 2008; Rao and Ravichandran, 2009).
+    We assume as input an undirected edge weighted graph G = (V, E), where wij E [0, 1] is the weight of edge (vi, vj) E E. The node set V is the set of candidate phrases for inclusion in a sentiment lexicon.
+    In practice, G should encode semantic similarities between two nodes, e.g., for sentiment analysis one would hope that wij &gt; wik if vi=good, vj=great and vk=bad.
+    We also assume as input two sets of seed phrases, denoted P for the positive seed set and N for the negative seed set.
+    The common property among all graph propagation algorithms is that they attempt to propagate information from the seed sets to the r

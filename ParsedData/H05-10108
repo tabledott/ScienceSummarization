@@ -1,0 +1,9 @@
+em is a mixture of continuous optimization over w and com binatorial optimization over y i . In order to.
+			transform it into a more standard optimization problem, we need a way to efficiently handle the loss-augmented inference, max ?y i ?Y i [wf i (y? i ) +
+			i (y? i)].
+			This optimization problem has precisely the same form as the prediction prob lem whose parameters we are trying to learn ? max ?y i ?Y i wf i (y? i ) ? but with an additionalterm corresponding to the loss function.
+			Our as sumption that the loss function decomposes over the edges is crucial to solving this problem.
+			In particular, we use weighted Hamming distance, which counts the number of variables in which a candidate solution y?
+			i differs from the target output y i , with different cost for false positives (c+) and false negatives (c-):
+			i (y? i ) = ? jk [ c-y i,jk (1 ? y? i,jk ) + c+y? i,jk (1 ? y i,jk ) ] = ? jk c-y i,jk + ? jk [c+ ?
+			(c- + c+)y i,jk ]y? i,jk . The loss-augmented matching problem can thenbe written as a

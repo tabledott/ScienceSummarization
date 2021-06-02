@@ -1,0 +1,6 @@
+ategy is what Shaw and Hatzivassiloglou (1999) call direct evidence.
+    Given an adjective pair {a,b}, they count how many times (a,b) and (b,a) appear in the corpus and choose the pair with the highest frequency.
+    Unfortunately the direct evidence method performs poorly when a given order is unseen in the training data.
+    To compensate for this, Shaw and Hatzivassiloglou (1999) propose to compute the transitive closure of the ordering relation: if a &#65533; c and c &#65533; b, then a &#65533; b. Malouf (2000) further proposes a back-off bigram model of adjective pairs for choosing among alternative orders (P((a,b) {a,b}) vs. P((b,a) {a,b})).
+    He also proposes positional probabilities as a means of estimating how likely it is for a given adjective a to appear first in a sequence by looking at each pair in the training data that contains the adjective a and recording its position.
+    Finally, he uses memory-based learning as a means to encode morphological and semantic similarities among different a

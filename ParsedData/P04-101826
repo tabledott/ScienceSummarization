@@ -1,0 +1,6 @@
+ model in (Yang et al., 2003) expands the conditioning scope by including a competing candidate.
+    Neither (Soon et al., 2001) nor (Ng and Cardie, 2002) searches for the global optimal entity in that they make locally independent decisions during search.
+    In contrast, our decoder always searches for the best result ranked by the cumulative score (subject to pruning), and subsequent decisions depend on earlier ones.
+    Recently, McCallum and Wellner (2003) proposed to use graphical models for computing probabilities of entities.
+    The model is appealing in that it can potentially overcome the limitation of mention-pair model in which dependency among mentions other than the two in question is ignored.
+    However, models in (McCallum and Wellner, 2003) compute directly the probability of an entity configuration conditioned on mentions, and it is not clear how the models can be factored to do the incremental search, as it is impractical to enumerate all possible entities even for documents with a modera

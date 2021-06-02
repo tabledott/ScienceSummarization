@@ -1,0 +1,9 @@
+defined over two sentences and an automatically computed alignment between them.
+    General features (independent of the word alignment): In order to compute word alignments we need a simple and efficient model.
+    We want to align a large number of sentences, with many out-of-vocabulary words, in reasonable time.
+    We also want a model with as few parameters as possible&#8212;preferably only wordfor-word translation probabilities.
+    One such model is the IBM Model 1 (Brown et al. 1993).
+    According to this model, given foreign sentence (fj1&lt;=j&lt;=m), English sentence (ei1&lt;=i&lt;=l), and translation probabilities t(fj|ei), the best alignment f &#8594; e is obtained by linking each foreign word fj to its most likely English translation argmaxeit(fj|ei).
+    Thus, each foreign word is aligned to exactly one English word (or to a special NULL token).
+    Due to its simplicity, this model has several shortcomings, some more structural than others (see Moore [2004] for a discussion).
+    Thus, we us

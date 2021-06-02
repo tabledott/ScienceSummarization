@@ -1,0 +1,6 @@
+tuples t = (w1, l, w2), such that w1 co-occurs with w2 and l represents the type of this co-occurrence relation.
+    For instance, the tuple (marine, use, bomb) in the toy example reported in Table 1 encodes the piece of distributional information that marine co-occurs with bomb in the corpus, and use specifies the type of the syntagmatic link between these words.
+    Each tuple t has a weight, a real-valued score vt, assigned by a scoring function 6 : W1 x L x W2 - 4R.
+    A weighted tuple structure consists of the set TW of weighted distributional tuples tw = (t,vt) for all t E T and 6(t) = vt.
+    The 6 function encapsulates all the operations performed to score the tuples, for example, by processing an input corpus with a dependency parser, counting the occurrences of tuples, and weighting the raw counts by mutual information.
+    Because our focus is on how tuples, once they are harvested, should be represented geometrically, we gloss over the important challenges of choosing the appropriate W1, L and W2

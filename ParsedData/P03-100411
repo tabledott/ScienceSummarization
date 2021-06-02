@@ -1,0 +1,7 @@
+ our task.
+    There are many subset mining algorithms proposed, however, we will focus on the PrefixSpan algorithm, which is an efficient algorithm for sequential pattern mining, originally proposed by (Pei et al., 2001).
+    The PrefixSpan was originally designed to extract frequent sub-sequence (not subset) patterns, however, it is a trivial difference since a set can be seen as a special case of sequences (i.e., by sorting items in a set by lexicographic order, the set becomes a sequence).
+    The basic idea of the PrefixSpan is to divide the database by frequent sub-patterns (prefix) and to grow the prefix-spanning pattern in a depth-first search fashion.
+    We now modify the PrefixSpan to suit to our feature combination mining.
+    We only enumerate up to subsets of size d. when we plan to apply the Polynomial Kernel of degree d. In the original PrefixSpan, the frequency of each subset does not change by its size.
+    However, in our mining task, it changes (i.e., the frequency of subset s is weighted 

@@ -1,0 +1,6 @@
+supervised learning, using the averaged perceptron algorithm (Collins, 2002), given in Figure 1.
+    1 We take the union of feature templates from the baseline segmentor (Table 1) and POS tagger (Table 2) as the feature templates for the joint system.
+    All features are treated equally and processed together according to the linear model, regardless of whether they are from the baseline segmentor or tagger.
+    In fact, most features from the baseline POS tagger, when used in the joint model, represent segmentation patterns as well.
+    For example, the aforementioned pattern &#8220;number word&#8221; + &#8220;^&#8221;, which is Inputs: training examples (xi, yi) Initialization: set w&#65533; = 0 Algorithm: for t = 1..T, i = 1..N calculate zi = arg maxyEGEN(xi) &#934;(y) - w&#65533; if zi =&#65533; yi useful only for the POS &#8220;number word&#8221; in the baseline tagger, is also an effective indicator of the segmentation of the two words (especially &#8220;^&#8221;) in the joint model.
+    One of the mai

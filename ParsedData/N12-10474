@@ -1,0 +1,9 @@
+where we would say, &#8220;unfortunately, this objective is unfeasible.&#8221; But in SMT, we have been happily optimizing exactly this objective for years using MERT.
+    However, it is now acknowledged that the MERT approach is not feasible for more than 30 or so features.
+    This is due to two main factors: The problems with MERT can be addressed through the use of surrogate loss functions.
+    In this paper, we focus on linear losses that decompose over training examples.
+    Using Ri and Ei, each loss `i(~w) indicates how poorly w~ performs on the i&#65533;h training example.
+    This requires a sentence-level approximation of BLEU, which we re-encode into a cost &#916;i(e) on derivations, where a high cost indicates that e receives a low BLEU score.
+    Unless otherwise stated, we will assume the use of sentence BLEU with add1 smoothing (Lin and Och, 2004).
+    The learners differ in their definition of ` and &#916;, and in how they employ their loss functions to tune their weights.
+    1This is true o

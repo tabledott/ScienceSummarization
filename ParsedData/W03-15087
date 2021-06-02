@@ -1,0 +1,7 @@
+ pin-yin- and character-sets.
+    We note that certain characters are preferentially used in transliteration over others, and the resulting frequency of character-usage is not the same as unrestricted Chinese text.
+    However, there isn&#8217;t a distinct set of characters exclusively for transliteration.
+    For purposes of comparison with the transliteration accuracy reported by Meng et al (2001), we divide this list into 2233 training name-pairs and 1541 test name-pairs.
+    For subsequent CLIR experiments, we create a larger training set of 3625 name-pairs, leaving only 250 names-pairs for intrinsic testing of transliteration performance.
+    The actual training of all translation models proceeds according to a standard recipe recommended in GIZA++, namely 5 iterations of Model 1, followed by 5 of Model 2, 10 HMM-iterations and 10 iterations of Model 4.
+    The GIF language model required for translating English phoneme sequences to GIF sequences is estimated from the training portion of the 3875 Chinese

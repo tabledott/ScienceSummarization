@@ -1,0 +1,7 @@
+r bound is a baseline algorithm that is a simple, reasonable approach to the problem, which can be automated.
+    A simple way to segment the texts is to place boundaries randomly in the document, constraining the number of boundaries to equal that of the average number of paragraph gaps per document assigned as boundaries by judges.
+    In the test data, boundaries are placed in about 39% of the paragraph gaps.
+    A program was written that places a boundary at each potential gap 39% of the time (using a random number generator), and run 10,000 times for each text, and the average of the scores of these runs was found.
+    These scores appear in Table 1.
+    The algorithms are evaluated according to the proportion of &amp;quot;true&amp;quot; or majority boundaries they select out of the total selected (precision) and the proportion of &amp;quot;true&amp;quot; boundaries found out of the total possible (recall) (Salton 1989).
+    Precision also implies the number of extraneous boundaries (or false positives,

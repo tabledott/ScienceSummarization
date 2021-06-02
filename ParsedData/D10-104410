@@ -1,0 +1,8 @@
+is crude in that it imposes a binary distinction between useful and non-useful parts of OUT.
+    Matsoukas et al (2009) generalize it by learning weights on sentence pairs that are used when estimating relative-frequency phrase-pair probabilities.
+    The weight on each sentence is a value in [0, 1] computed by a perceptron with Boolean features that indicate collection and genre membership.
+    We extend the Matsoukas et al approach in several ways.
+    First, we learn weights on individual phrase pairs rather than sentences.
+    Intuitively, as suggested by the example in the introduction, this is the right granularity to capture domain effects.
+    Second, rather than relying on a division of the corpus into manually-assigned portions, we use features intended to capture the usefulness of each phrase pair.
+    Finally, we incorporate the instance-weighting model into a general linear combination, and learn weights and mixing parameters simultaneously. where c&#955;(s, t) is a modified count for pair (s, t)

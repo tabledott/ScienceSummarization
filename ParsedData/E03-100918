@@ -1,0 +1,9 @@
+(Jardino and Adda, 1994; SchUtze, 1997; Clark, 2000) have presented models that account for ambiguity to some extent.
+    The most principled way is to use Hidden Markov Models: these provide the formal and technical apparatus required to train when the tags might be ambiguous.
+    (Murakami et al., 1993) presents this idea together with a simple evaluation on English.
+    We therefore extend our approach to allow ambiguous words, by changing our model from a deterministic to nondeterministic model.
+    In this situation we want the states of the HMM to correspond to syntactic categories, and use the standard ExpectationMaximization (EM) algorithm to train it.
+    To experiment with this we chose fullyconnected, randomly initialized Hidden Markov Models, with determined start and end states.
+    We trained the model on the various sentences in the model, on WSJ data.
+    With 5 substates, 20 iterations corpus, and then tagged the data with the most likely (Viterbi) tag sequence.
+    We then evaluated the cond

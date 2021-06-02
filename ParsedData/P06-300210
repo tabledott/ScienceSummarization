@@ -1,0 +1,9 @@
+ handle more words with reasonable computing time.
+    Combination of partitionings 1 and 2 Now, we have two partitionings of two different, yet overlapping frequency bands.
+    A large portion of these 8,000 words in the overlapping region is present in both partitionings.
+    Again, we construct a graph, containing the clusters of both partitionings as nodes; weights of edges are the number of common elements, if at least two elements are shared.
+    And again, CW is used to cluster this graph of clusters.
+    This results in fewer clusters than before for the following reason: While the granularities of partitionings 1 and 2 are both high, they capture different aspects as they are obtained from different sources.
+    Nodes of large clusters (which usually consist of open word classes) have many edges to the other partitioning&#8217;s nodes, which in turn connect to yet other clusters of the same word class.
+    Eventually, these clusters can be grouped into one.
+    Clusters that are not included in the g

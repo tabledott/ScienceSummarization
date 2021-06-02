@@ -1,0 +1,8 @@
+frequently, and use this mapping to map each HMM state sequence t to a sequence of part-of-speech tags.
+    But as Clark (2003) observes, this approach has several defects.
+    If a system is permitted to posit an unbounded number of states (which is not the case here) it can achieve a perfect score on by assigning each word token its own unique state.
+    We can partially address this by cross-validation.
+    We divide the corpus into two equal parts, and from the first part we extract a mapping from HMM states to the parts-of-speech they co-occur with most frequently, and use that mapping to map the states of the second part of the corpus to parts-of-speech.
+    We call the accuracy of the resulting tagging the crossvalidation accuracy.
+    Finally, following Haghighi and Klein (2006) and Johnson (2007) we can instead insist that at most one HMM state can be mapped to any part-of-speech tag.
+    Following these authors, we used a greedy algorithm to associate states with POS tags; the accuracy of the result

@@ -1,0 +1,9 @@
+tence.
+    To do this we parse every sentence twice, once with a dependency parser (McDonald et al., 2005b) and once with a phrase-structure parser (Charniak, 2000).
+    These parsers have been trained out-of-domain on the Penn WSJ Treebank and as a result contain noise.
+    However, we are merely going to use them as an additional source of features.
+    We call this soft syntactic evidence since the deep trees are not used as a strict goldstandard in our model but just as more evidence for or against particular compressions.
+    The learning algorithm will set the feature weight accordingly depending on each features discriminative power.
+    It is not unique to use soft syntactic features in this way, as it has been done for many problems in language processing.
+    However, we stress this aspect of our model due to the history of compression systems using syntax to provide hard structural constraints on the output.
+    Lets consider the sentence x = Mary saw Ralph on Tuesday after lunch, with correspondin

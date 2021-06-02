@@ -1,0 +1,7 @@
+ish-Russian transliterations.
+    Model trained on these (few) examples chooses other transliterations containing these same substring pairs.
+    In turn, the chosen positive examples contain other characteristic substring pairs, which will be used by the model to select more positive examples on the next round, and so on.
+    On the other hand, if the initial set is too small, too few of the characteristic transliteration features are extracted to select a clean enough training set on the next round of training.
+    In general, one would expect the size of the training set necessary for the algorithm to improve to depend on the level of temporal alignment of the two sides of the corpus.
+    Indeed, the weaker the temporal supervision the more we need to endow the model so that it can select cleaner candidates in the early iterations.
+    We compared the performance of the DFT-based time sequence similarity scoring function we use in this paper to the commonly used cosine (Salton and McGill, 1986) and Pearson

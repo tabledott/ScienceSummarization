@@ -1,0 +1,8 @@
+t performed inference on the hyperparameters.
+    Following Smith and Eisner (2005), we trained on four different corpora, consisting of the first 12k, 24k, 48k, and 96k words of the WSJ corpus.
+    For all corpora, the percentage of ambiguous tokens is 54%-55% and the average number of tags per token is 2.3.
+    Table 2 shows results for the various models and a random baseline (averaged by the various models on different sized corpora.
+    BHMM1 and BHMM2 use hyperparameter inference; CRF/CE uses parameter selection based on an unlabeled development set.
+    Standard deviations (a) for the BHMM results fell below those shown for each corpus size. over 5 random tag assignments).
+    Hyperparameter inference leads to slightly lower scores than are obtained by oracle hyperparameter selection, but both versions of BHMM are still far superior to MLHMM for all corpus sizes.
+    Not surprisingly, the advantages of BHMM are most pronounced on the smallest corpus: the effects of parameter integration and sensible pr

@@ -1,0 +1,7 @@
+ms (Magerman, 1994; Collins, 1999; Yamada and Matsumoto, 2003) is that head&#8211;dependent pairs are created from constituents by selecting one word in each phrase as the head and setting all other as its dependents.
+    The dependency labels are then inferred from the phrase&#8211;subphrase or phrase&#8211;word relations.
+    Our conversion procedure (Johansson and Nugues, 2007) differs from this basic approach by exploiting the rich structure of the constituent format used in Penn Treebank 3: Of the grammatical function tags available in the Treebank, we removed the HLN, NOM, TPC, and TTL tags since they represent structural properties of single phrases rather than binary relations.
+    For compatibility between the WSJ and Brown corpora, we removed the ETC, UNF, and IMP tags from Brown and the CLR tag from WSJ.
+    Algorithms 1 and 2 show the constituent-todependency conversion algorithm and function labeling, respectively.
+    The first steps apply structural transformations to the constituent trees.
+   

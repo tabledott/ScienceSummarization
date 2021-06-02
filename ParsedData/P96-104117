@@ -1,0 +1,8 @@
+mize the cross-entropy of one of the development test sets associated with the given training set.
+    To constrain the search, we searched only those parameters that were found to affect performance significantly, as verified through preliminary experiments over several data sizes.
+    For katz and church-gale, we did not perform the parameter search for training sets over 50,000 sentences due to resource constraints, and instead manually extrapolated parameter values from optimal values found on smaller data sizes.
+    We ran interp-del-int only on sizes up to 50,000 sentences due to time constraints.
+    From these graphs, we see that additive smoothing performs poorly and that methods katz and interp-held-out consistently perform well.
+    Our implementation church-gale performs poorly except on large bigram training sets, where it performs the best.
+    The novel methods new-avg-count and new-one-count perform well uniformly across training data sizes, and are superior for trigram models.
+    Notice that

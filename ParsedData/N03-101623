@@ -1,0 +1,6 @@
+
+    To situate our results, the FOMs used by (Caraballo and Charniak, 1998) require 10K edges to parse 96% of these sentences, while BF requires only 6K edges.
+    On the other hand, the more complex, tuned FOM in (Charniak et al., 1998) is able to parse all of these sentences using around 2K edges, while BF requires 7K edges.
+    Our estimates do not reduce the total edge count quite as much as the best FOMs can, but they are in the same range.
+    This is as much as one could possibly expect, since, crucially, our first parses are al8However, context summary estimates which include the state compensate for this automatically. ways optimal, while the FOM parses need not be (and indeed sometimes are not).9 Also, our parser never needs to propagate score changes upwards, and so may be expected to do less work overall per edge, all else being equal.
+    This savings is substantial, even if no propagation is done, because no data structure needs to be created to track the edges which are supported by each given

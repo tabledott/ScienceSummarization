@@ -1,0 +1,8 @@
+ named entities from , threshold Output: Transliteration model In order to generate time sequence for a word, we divide the corpus into a sequence of temporal bins, and count the number of occurrences of the word in each bin.
+    We then normalize the sequence.
+    We use a method called the F-index (Hetland, 2004) to implement the similarity function on line 8 of the algorithm.
+    We first run a Discrete Fourier Transform on a time sequence to extract its Fourier expansion coefficients.
+    The score of a pair of time sequences is then computed as a Euclidean distance between their expansion coefficient vectors.
+    As we mentioned in the introduction, an NE may map to more than one transliteration in another language.
+    Identification of the entity&#8217;s equivalence class of transliterations is important for obtaining its accurate time sequence.
+    In order to keep to our objective of requiring as little language knowledge as possible, we took a rather simplistic approach for both languages of our cor

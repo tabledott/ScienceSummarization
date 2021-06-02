@@ -1,0 +1,12 @@
+assignments of tags are much like those of CLAWS.
+    However, it embodies several substantive changes.
+    Those features that can be algorithmically defined have been used to the fullest extent.
+    Other add-ons have been minimized.
+    The major differences are outlined below.
+    First, the optimal path is defined to be the one whose component collocations multiply out to the highest probability.
+    The more complex definition applied by CLAWS, using the sum of all paths at each node of the network, is not used.
+    Second, VOLSUNGA overcomes the Non-Polynomial complexity of CLAWS.
+    Because of this change, it is never necessary to resort to a fallback algorithm, and the program is far smaller.
+    Furthermore, testing the algorithm on extensive texts is not prohibitively costly.
+    Third, VOLSUNGA implements Relative Tag Probabilities (RTPs) in a more quantitative manner, based upon counts from the Brown Corpus.
+    Where CLAWS scales probabilities by 1/2 for RTP &lt; 0.1 (i.e., where less than 10% 

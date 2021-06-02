@@ -1,0 +1,14 @@
+- ity restricts the power of example-based trans- lation.
+  In this paper, we concentrate on the implementation of this ability on machine.
+  i 24 7 3 Matching Expression To implenrent the ability to combine some frag- ments of t.ra.nslation example in order to trans- late one sentence, we must determine the fol- lowing: ?
+  how to represent translation examples ?
+  what is a fragment ?
+  how to represe.t he combination of flag- lnent.s 3.1 Trans la t ion  Database The translation database is the collection of translation examples.
+  A t~anslation example consists of three parts: ?
+  an English word-dependency tree (EWD) ?
+  a Japanese word-dependency tree (JWD) ?
+  correspondence links For example, in Prolog, ewd e(  [e l ,  [buy ,v  ] , [e2,[he,pron]], [e3, [notebook,n], [e4,   [a ,det  ]  ]  ]  ] )  .
+  %% He buys a notebook.
+  jwd_e(   [ j I ,  [kau,v] , [ j2 ,   [ha ,p  ]  , [ j3,[kare,pron]]], [ j4 ,  [wo,p] , [ j5 ,  [nouto,n]]]]).
+  %% Kare ha nouto wo kau.
+  c l inks([  [el , j l  ] ,  [e2, j3] ,  [e

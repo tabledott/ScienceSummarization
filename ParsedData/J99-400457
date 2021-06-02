@@ -1,0 +1,7 @@
+   The simplest way to determine the bucketing is to simply enumerate all possible items for the given item-based description, grammar, and input sentence.
+    Then, we compute the strongly connected components and a partial ordering; both steps can be done in time proportional to the number of items plus the number of dependencies (Cormen, Leiserson, and Rivest 1990, Chap.
+    23).
+    For some parsers, this technique has optimal time complexity, although poor space complexity In particular, for the CKY algorithm, the time complexity is optimal, but since it requires computing and storing all possible 0(n3) dependencies between the items, it takes significantly more space than the 0(n2) space required in the best implementation.
+    In general, the brute-force technique raises the space complexity to be the same as the time complexity.
+    Furthermore, for some algorithms, such as Earley's algorithm, there could be a significant time complexity added as well.
+    In particular, Earley's algorithm may not nee

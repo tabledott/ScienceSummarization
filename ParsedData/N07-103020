@@ -1,0 +1,9 @@
+ective function (relative to the probability output by the classifier) while ensuring that the final assignments respect the signifance of what it is to be anaphoric or non-anaphoric.
+  
+  
+    Table 2 summarizes the results for these different systems.
+    Both ILP systems are significantly better than the baseline system COREF-PAIRWISE.
+    Despite having lower precision than COREF-PAIRWISE, the COREF-ILP system obtains very large gains in recall to end up with overall f-score gains of 4.3%, 4.2%, and 3.0% across BNEWS, NPAPER, and NWIRE, respectively.
+    The fundamental reason for the increase in recall and drop in precision is that COREF-ILP can posit multiple antecedents for each mention.
+    This is an extra degree of freedom that allows COREFILP to cast a wider net, with a consequent risk of capturing incorrect antecedents.
+    Precision is not completely degraded because the optimization performed by ILP utilizes the pairwise probabilities of mention pairs as weights in the objective function to make

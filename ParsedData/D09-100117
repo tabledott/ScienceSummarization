@@ -1,0 +1,10 @@
+ general, this is a difficult open problem that only recently has started to receive some attention (Mohammad et al., 2008).
+    Resolving this is not the focus of this paper, but we describe a general heuristic for fixing this problem.
+    We observe that the problem stems from the lack of negative features for discovering meanings in contrast.
+    In natural languages, parallel structures like conjunctions are one such feature.5 We thus introduce an exponential prior with weight &#946; on the number of conjunctions where the two conjunctive parts are assigned to the same cluster.
+    To detect conjunction, we simply used the Stanford dependencies that begin with &#8220;conj&#8221;.
+    This proves very effective, fixing the majority of the errors in our experiments.
+  
+  
+    Given a sentence and the quasi-logical form Q derived from its dependency tree, the conditional probability for a semantic parse L is given by Pr(L|Q) a exp (Ei wini(L, Q)).
+    The MAP semantic parse is simply arg maxL &amp; wini(L, Q

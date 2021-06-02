@@ -1,0 +1,8 @@
+self-trained parser improve the parse with the highest probability vary linearly with sentence length, so we introduced binned sentence length (with each bin of length 10) as a factor.
+    Because the self-trained and baseline parsers produced equivalent output on 3,346 (66%) of the sentences, we restricted attention to the 1,693 sentences on which the self-trained and baseline parsers&#8217; fscores differ.
+    We asked the program to consider the following factors: binned sentence length, number of PPs, number of unknown words, and number of CCs.
+    The results are shown in Table 5.
+    The factor analysis is trying to model the log odds as a sum of linearly weighted factors.
+    I.e, In Table 5 the first column gives the name of the factor.
+    The second the change in the log-odds resulting from this factor being present (in the case of CCs and INs, multiplied by the number of them) and the last column is the probability that this factor is really non-zero.
+    Note that there is no row for either PPs or

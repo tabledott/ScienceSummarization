@@ -1,0 +1,5 @@
+   1 also implies that we multiply several multinomials together in a product-of-experts style (Hinton, 1999), because the exponential of a mixture of normals becomes a product of (unnormalized) probabilities.
+    Our extension to the model in Cohen et al. (2008) follows naturally after we have defined the shared LN distribution.
+    The generative story for this model is as follows: In this work, the partition structure S is known, the sentences x are observed, the trees y and the grammar weights &#952; are hidden, and the parameters of the shared LN distribution &#181; and E are learned.2 Our inference algorithm aims to find the posterior over the grammar probabilities &#952; and the hidden structures (grammar trees y).
+    To do that, we use variational approximation techniques (Jordan et al., 1999), which treat the problem of finding the posterior as an optimization problem aimed to find the best approximation q(&#952;, y) of the posterior p(&#952;, y &#65533; x, &#181;, E, S).
+    The posterior q needs t

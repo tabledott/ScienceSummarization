@@ -1,0 +1,6 @@
+ve speed and quality of the BP approximation?
+    (2) How helpful are such higherorder factors&#8212;particularly for non-projective parsing, where BP is needed to make them tractable?
+    (3) Do our global constraints (e.g., TREE) contribute to the goodness of BP&#8217;s approximation?
+    We built a first-order projective parser&#8212;one that uses only factors PTREE and LINK&#8212;and then compared the cost of incorporating second-order factors, GRAND and CHILDSEQ, by BP versus DP.28 Under DP, the first-order runtime of O(n3) is increased to O(n4) with GRAND, and to O(n5) when we add CHILDSEQ as well.
+    BP keeps runtime down to O(n3)&#8212;although with a higher constant factor, since it takes several rounds to converge, and since it computes more than just the best parse.29 Figures 2&#8211;3 compare the empirical runtimes for various input sentence lengths.
+    With only the GRAND factor, exact DP can still find the Viterbi parse (though not the MBR parse29) faster than ten iterations of the asymptotica

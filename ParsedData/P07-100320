@@ -1,0 +1,8 @@
+g is to improve alignment quality for hard unions.
+    It also impacts rule extraction substantially.
+    While its competitive AER certainly speaks to the potential utility of our syntactic distortion model, we proposed the model for a different purpose: to minimize the particularly troubling alignment errors that cross constituent boundaries and violate the structure of English parse trees.
+    We found that while the HMM and Syntactic models have very similar AER, they make substantially different errors.
+    To investigate the differences, we measured the degree to which each set of alignments violated the supplied parse trees, by counting the frequency of interior nodes that are not null aligned.
+    Figure 4 summarizes the results of the experiment for French: the Syntactic distortion with competitive thresholding reduces tree violations substantially.
+    Interior node frequency is reduced by 56% overall, with the most dramatic improvement observed for clausal constituents.
+    We observed a similar 50

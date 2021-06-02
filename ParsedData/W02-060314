@@ -1,0 +1,10 @@
+he word.
+    &#8220;Dreaming&#8221;.
+    Due to the online learning, as the number of processed words increases, the quality of the set of morphs in the codebook gradually improves.
+    Consequently, words encountered in the beginning of the input data, and not observed since, may have a sub-optimal segmentation in the new model, since at some point more suitable morphs have emerged in the codebook.
+    We have therefore introduced a &#8217;dreaming&#8217; stage: At regular intervals the system stops reading words from the input, and instead iterates over the words already encountered in random order.
+    These words are resegmented and thus compressed further, if possible.
+    Dreaming continues for a limited time or until no considerable decrease in the total cost can be observed.
+    Figure 2 shows the development of the average cost per word as a function of the increasing amount of source text.
+    Figure 2: Development of the average word cost when processing newspaper text.
+    Dreaming, i.e., the re-p

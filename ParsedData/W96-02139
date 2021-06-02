@@ -1,0 +1,8 @@
+ely affects the speed of the tagger.
+    Even though use of the Tag Dictionary gave an apparently insignificant (.12%) improvement in accuracy, it is used in further experiments since it significantly reduces the number of hypotheses and thus speeds up the tagger.
+    The running time of the parameter estimation algorithm is 0(NTA), where N is the training set size, T is the number of allowable tags, and A is the average number of features that are active for a given event (h, t).
+    The running time of the search procedure on a sentence of length N is 0(NTAB), where T, A are defined above, and B is the beam size.
+    In practice, the model for the experiment shown in Table 6 requires approximately 24 hours to train, and 1 hour to test' on an IBM RS/6000 Model 380 with 256MB of RAM.
+  
+  
+    The Maximum Entropy model allows arbitrary binary-valued features on the context, so it can use additional specialized, i.e., word-specific, features to correctly tag the &amp;quot;residue&amp;quot; that the baseline fe

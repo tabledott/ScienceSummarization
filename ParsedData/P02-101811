@@ -1,0 +1,6 @@
+ppose we have a rank-ordered list of patterns (the next subsection describes how to obtain such a list).
+    The procedure that uses these to insert empty nodes into a tree t not containing empty nodes is as follows.
+    We perform a pre-order traversal of the subtrees of t (i.e., visit parents before their children), and at each subtree we find the set of patterns that match the subtree.
+    If this set is non-empty we substitute the highest ranked pattern in the set into the subtree, inserting an empty node and (if required) co-indexing it with its antecedents.
+    Note that the use of a pre-order traversal effectively biases the procedure toward &#8220;deeper&#8221;, more embedded patterns.
+    Since empty nodes are typically located in the most embedded local trees of patterns (i.e., movement is usually &#8220;upward&#8221; in a tree), if two different patterns (corresponding to different non-local dependencies) could potentially insert empty nodes into the same tree fragment in t, the deeper pattern will

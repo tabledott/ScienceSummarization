@@ -1,0 +1,9 @@
+ MERT is a consequence of the performance drop in the first iteration which causes the final weights to be far off from the initial parameter set.
+    This can impair the ability of N-best MERT to generalize to unseen data if the initial weights are already capable of producing a decent baseline.
+    Lattice MERT on the other hand can produce weights sets which are closer to the initial weights and thus more likely to retain the ability to generalize to unseen data.
+    It could therefore be worthwhile to investigate whether a more elaborated version of an initial-weights prior allows for alleviating this effect in case of Nbest MERT.
+    Table 3 shows the effect of optimizing the feature function weights along some randomly chosen directions in addition to the coordinate axes.
+    The different local optima found on the development set by using random directions result in additional gains on the blind test sets and range from 0.1% to 0.6% absolute in terms of BLEU.
+  
+  
+    We presented a novel algorithm th

@@ -1,0 +1,10 @@
+olation and a local model is trained to maximize the conditional likelihood over the training data of that node.
+    At test time, the sequence with the highest product of local conditional scores is calculated and returned.
+    We can always find the exact maximizing sequence, but only in the case of an acyclic net is it guaranteed to be the maximum likelihood sequence.
+  
+  
+    The part of speech tagged data used in our experiments is the Wall Street Journal data from Penn Treebank III (Marcus et al., 1994).
+    We extracted tagged sentences from the parse trees.5 We split the data into training, development, and test sets as in (Collins, 2002).
+    Table 1 lists characteristics of the three splits.6 Except where indicated for the model BEST, all results are on the development set.
+    One innovation in our reporting of results is that we present whole-sentence accuracy numbers as well as the traditional per-tag accuracy measure (over all tokens, even unambiguous ones).
+    This is the quantity that most s

@@ -1,0 +1,11 @@
+tic lexicon, our system generated 137 conceptual case frames.
+    One important question is how to deal with unknown words during extraction.
+    This is especially important in the terrorism domain because many of the extracted items are proper names, which cannot be expected to be in the semantic lexicon.
+    We allowed unknown words to fill all eligible slots and then used a precedence scheme so that each item was instantiated by only one slot.
+    Precedence was based on the order of the roles shown in Figure 4.
+    This is not a very satisfying solution and one of the weaknesses of our current approach.
+    Handling unknown words more intelligently is an important direction for future research.
+    We compared AutoSlog-TS' extraction patterns with the case frames using 100 blind texts6 from the MUC-4 test set.
+    The MUC-4 answer keys were used to score the output.
+    Each extracted item was scored as either correct, mislabeled, duplicate, or spurious.
+    An item was correct if it matched against the 

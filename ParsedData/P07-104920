@@ -1,0 +1,9 @@
+he first adjacency point on that side of x which was not yet used.
+    This means that the adjacency points on each side have to be used one by one, but may be used more than once.
+    The reason is that optional arguments of x usually do not have an adjacency point of their own but have the same labels as obligatory arguments of x and can share their adjacency point.
+    The Axi with the strongest matching label is selected, with a preference for the unused adjacency point.
+    As in the learning process, label matching is blocked between words which are separated by stopping punctuation.
+    The best matching label l = (w, S) from x to y can be either a class (S = 0) or an adjacency (S = 1) label at Axi .
+    If it is a class label, w can be seen as taking the place of x and all words separating it from y (which are already linked to x).
+    If l is an adjacency label, w can be seen to take the place of y.
+    The calculation of the weight Wt(x *d y) of the link from x to y is therefore based on the strengt

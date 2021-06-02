@@ -1,0 +1,6 @@
+on for all possible permutations of features sets, training examples, and learning biases, we demonstrate that TEXTRUNNER itself cannot learn REVERB&#8217;s model even when re-trained using the output of REVERB as labeled training data.
+    The resulting system, TEXTRUNNER-R, uses the same feature representation as TEXTRUNNER, but different parameters, and a different set of training examples.
+    To generate positive instances, we ran REVERB on the Penn Treebank, which is the same dataset that TEXTRUNNER is trained on.
+    To generate negative instances from a sentence, we took each noun phrase pair in the sentence that does not appear as arguments in a REVERB extraction.
+    This process resulted in a set of 67, 562 positive instances, and 356,834 negative instances.
+    We then passed these labeled examples to TEXTRUNNER&#8217;s training procedure, which learns a linear-chain CRF using closedclass features like POS tags, capitalization, punctuation, etc.TEXTRUNNER-R uses the argument-first extraction algor

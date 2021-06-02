@@ -1,0 +1,8 @@
+ies an element-wise nonlinearity function f = tanh to the output vector.
+    The resulting output p(1) is then given as input to compute p(2).
+    In order to compute a score of how plausible of a syntactic constituent a parent is the RNN uses a single-unit linear layer for all i: where v &#8712; Rn is a vector of parameters that need to be trained.
+    This score will be used to find the highest scoring tree.
+    For more details on how standard RNNs can be used for parsing, see Socher et al. (2011b).
+    The standard RNN requires a single composition function to capture all types of compositions: adjectives and nouns, verbs and nouns, adverbs and adjectives, etc.
+    Even though this function is a powerful one, we find a single neural network weight matrix cannot fully capture the richness of compositionality.
+    Several extensions are possible: A two-layered RNN would provide more expressive power, however, it is much harder to train because the resulting neural network becomes very deep and suffers from 

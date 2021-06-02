@@ -1,0 +1,7 @@
+n opinion is assigned the prior polarity that is listed for that word in the lexicon, except that, if the prior polarity is positive or negative, and the instance is modified by a negation word (e.g., &#8220;not&#8221;), then the polarity of that instance is reversed.
+    We use the subjectivity lexicon of (Wilson et al., 2005),2 which contains approximately 8000 words which may be used to express opinions.
+    Each entry consists of a subjective word, its prior polarity (positive (+), negative (&#8722;), neutral (*)), morphological information, and part of speech information.
+    To pair opinions with targets, we built a rulebased system based on dependency parse information.
+    The dependency parses are obtained using the Stanford parser.3 We developed the syntactic rules on separate data that is not used elsewhere in this paper.
+    Table 1 illustrates some of these rules.
+    Note that the rules are constructed (and explained in Table 1) with respect to the grammatical relation notations of the Stanford 

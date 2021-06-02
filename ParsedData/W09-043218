@@ -1,0 +1,8 @@
+ of the tuning parameters.
+    In a preliminary phase, we investigated different settings of the tuning process in order to understand how much development data is required to perform a reliable weight optimization.
+    Our models were trained on the S&#175;E-EP parallel corpus and by using uniform interpolation weights the system achieved a BLEU score of 22.28% on the test set (see Table 3).
+    We assumed to dispose of either a regular in-domain development set of 2,000 sentences (dev2006), or a small portion of it of just 200 sentences.
+    Moreover, we tried to employ either 1,000best or 200-best translation candidates during the mert process.
+    From a theoretical point of view, computational effort of the tuning process is proportional to the square of the number of translation alternatives generated at each iteration times the number of iterations until convergence.
+    Figure 1 reports incremental tuning time and translation performance on the test set at each iteration.
+    Notice that the four tuni

@@ -1,0 +1,6 @@
+between si and wi, based on single character insertions, deletions and substitutions.
+    For instance, given the training pair &lt;akgsual, actual&gt;, this could be aligned as: This corresponds to the sequence of edit operations: a4a c4k 4g t4s u4u a4a l4l To allow for richer contextual information, we expand each nonmatch substitution to incorporate up to N additional adjacent edits.
+    For example, for the first nonmatch edit in the example above, with N=2, we would generate the following substitutions: c 4 k ac 4 ak c 4 kg ac 4 akg ct 4 kgs We would do similarly for the other nonmatch edits, and give each of these substitutions a fractional count.
+    We can then calculate the probability of each substitution 4 as count( 4 )/count( ). count( 4 ) is simply the sum of the counts derived from our training data as explained above.
+    Estimating count( ) is a bit tricky.
+    If we took a text corpus, then extracted all the spelling errors found in the corpus and then used those errors for training, count( )

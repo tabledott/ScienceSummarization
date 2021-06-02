@@ -1,0 +1,7 @@
+ data removing them from the model entirely reduces performance by less than 0.5% on the standard WSJ parsing task.
+    Our selective pruning technique allows for a more fine grained tuning of parser model size, and would be particularly applicable to cases where large amounts of training data are available but memory usage is a consideration.
+    In our implementation, pruning allowed models to run within 256MB that, unpruned, required larger machines.
+    The parsing models of Charniak (2000) and Collins (2000) add more complex features to the parsing model that we use as our baseline.
+    An area for future work is investigation of the degree to which such features apply across corpora, or, on the other hand, further tune the parser to the peculiarities of the Wall Street Journal.
+    Of particular interest are the automatic clusterings of lexical co-occurrences used in Charniak (1997) and Magerman (1995).
+    Cross-corpus experiments could reveal whether these clusters uncover generally applicable semanti

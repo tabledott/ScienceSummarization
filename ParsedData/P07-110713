@@ -1,0 +1,8 @@
+aws are not (all) observed, we must now sample the unobserved ones as well as the entity indices Z.
+    For instance, we could sample Ti,j, the entity type of pronominal mention j in document i, using, P(Ti,j|Z, N, G, H, T&#8722;i,j) &#8733; P(Ti,j|Z)P(Hi,j|T, N, G, H), where the posterior distributions on the right hand side are straightforward because the parameter priors are all finite Dirichlet.
+    Sampling G and N are identical.
+    Of course we have prior knowledge about the relationship between entity type and pronoun head choice.
+    For example, we expect that he is used for mentions with T = PERSON.
+    In general, we assume that for each pronominal head we have a list of compatible entity types, which we encode via the prior on 0.
+    We assume 0 is drawn from a Dirichlet distribution where each pronoun head is given a synthetic count of (1 + AP) for each (t, g, n) where t is compatible with the pronoun and given AP otherwise.
+    So, while it will be possible in the posterior to use he to refer t

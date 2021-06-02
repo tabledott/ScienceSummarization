@@ -1,0 +1,9 @@
+and the extracted instance is underlined: Countries such as China and Laos have been...
+    In the HPLG, an edge e = (China, Laos) would be created because the pattern anchored by China extracted Laos as a new candidate instance.
+    If this pattern extracted Laos from 15 different snippets, then the edge&#8217;s weight would be 15.
+    The in-degree of a node represents its popularity, i.e., the number of instance occurrences that generated it.
+    The graph is constructed dynamically as bootstrapping progresses.
+    Initially, the seed is the only trusted class member and the only vertex in the graph.
+    The bootstrapping process begins by instantiating the doubly-anchored pattern with the seed class member, issuing a web query to generate new candidate instances, and adding these new instances to the graph.
+    A score is then assigned to every node in the graph, using one of several different metrics defined below.
+    The highest-scoring unexplored node is then added to the set of trusted class members,

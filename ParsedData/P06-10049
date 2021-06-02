@@ -1,0 +1,11 @@
+nts.
+    The i-th segment, Aj,k, begins at node uj and ends at node uk.
+    B [i, k] is the back-pointer table from which we recover the optimal sequence of segment boundaries.
+    Equations 3 and 4 capture respectively the condition that the normalized cut value of the trivial segmentation of an empty text into one segment is zero and the constraint that the first segment starts with the first node.
+    The time complexity of the dynamic programming algorithm is O(KN2), where K is the number of partitions and N is the number of nodes in the graph or sentences in the transcript.
+  
+  
+    Clearly, the performance of our model depends on the underlying representation, the definition of the pairwise similarity function, and various other model parameters.
+    In this section we provide further details on the graph construction process.
+    Preprocessing Before building the graph, we apply standard text preprocessing techniques to the text.
+    We stem words with the Porter stemmer (Porter, 1980) to alleviate th

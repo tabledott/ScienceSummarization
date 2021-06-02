@@ -1,0 +1,7 @@
+ucer (Knight and Graehl, 2005).
+    It is obtained from bilingual text that has been word-aligned and whose English side has been syntactically parsed.
+    From this data, we use the the GHKM minimal-rule extraction algorithm of (Galley et al., 2004) to yield rules like: Though this rule can be used in either direction, here we use it right-to-left (Chinese to English).
+    We follow Galley et al. (2006) in allowing unaligned Chinese words to participate in multiple translation rules, and in collecting larger rules composed of minimal rules.
+    These larger rules have been shown to substantially improve translation accuracy (Galley et al., 2006; DeNeefe et al., 2007).
+    We apply Good-Turing discounting to the transducer rule counts and obtain probability estimates: When we apply these probabilities to derive an English sentence e and a corresponding Chinese sentence c, we wind up with the joint probability P(e, c).
+    The baseline model includes log P(e, c), the two n-gram language models log P(e), and ot

@@ -1,0 +1,10 @@
+most of this small corpus, we performed all our evaluations using five-fold cross-validation.
+    Due to the computational expense of bilingual parsing, we produced a sub-corpus of the KTB limiting English sentence length to 10 words, or 27% of the full data.
+    We then randomized the order of sentences and divided the data into five equal test sets of 280 sentences each (&#8776;1,700 Korean words, &#8776;2,100 English words).
+    Complementing each test set, the remaining data were used for training sets of increasing size to simulate various levels of data scarcity.
+  
+  
+    We now describe parameter estimation for the four component models that combine to make our full system (Table 1).
+    Our English syntax model is based on weighted bilexical dependencies.
+    The model predicts the generation of a child (POS tag, word) pair, dependent upon its parent (tag, word) and the tag of the parent&#8217;s most recent child on the same side (left or right).
+    These events correspond quite closely to the parse

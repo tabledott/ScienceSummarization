@@ -1,0 +1,10 @@
+ feature to represent whether there is a strong alignment candidate.
+    The sum of these scores is also used as a feature.
+    Each source word and POS tag pair are used as indicator features which allow the model to learn particular words of tags which tend to commonly (or rarely) align.
+    In order to produce many-to-many alignments we combine the outputs of two models, one for each translation direction.
+    We use the refined method from Och and Ney (2003) which starts from the intersection of the two models&#8217; predictions and &#8216;grows&#8217; the predicted alignments to neighbouring alignments which only appear in the output of one of the models.
+  
+  
+    We have applied our model to two publicly available word aligned corpora.
+    The first is the English-French Hansards corpus, which consists of 1.1 million aligned sentences and 484 wordaligned sentences.
+    This data set was used for the 2003 NAACL shared task (Mihalcea and Pedersen, 2003), where the word-aligned sentences were split into a

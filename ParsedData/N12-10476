@@ -1,0 +1,9 @@
+rforms well.
+    Let ez be the e &#8712; Ei that maximizes `i(~w); the update can be performed in two steps: To improve generalization, the average of all weights seen during learning is used on unseen data.
+    Chiang et al. (2008) take advantage of MIRA&#8217;s online nature to modify each update to better suit SMT.
+    The cost &#916;i is defined using a pseudocorpus BLEU that tracks the n-gram statistics of the model-best derivations from the last few updates.
+    This modified cost matches corpus BLEU better than add-1 smoothing, but it also makes &#916;i time-dependent: each update for an example i will be in the context of a different pseudo-corpus.
+    The oracle ez also shifts with each update to ~w, as it is defined as a &#8220;hope&#8221; derivation, which maximizes w~ &#183; ~hi(e) + BLEUi(e).
+    Hope updating ensures that MIRA aims for ambitious, reachable derivations.
+    In our implementation, we make a number of small, empirically verified deviations from Chiang et al. (2008).
+    These inclu

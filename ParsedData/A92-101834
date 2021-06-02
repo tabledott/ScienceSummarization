@@ -1,0 +1,12 @@
+nd suffix tables are both efficiently implementable as letter trees, or tries [Knuth, 1973], which require that each character of a word be examined only once during a lookup.
+  
+  
+    In this section, we detail how our tagger meets the desiderata that we outlined in section 1.
+    The system is implemented in Common Lisp [Steele, 1990].
+    All timings reported are for a Sun SPARCStation2.
+    The English lexicon used contains 38 tags (M = 38) and 174 ambiguity classes (N = 174).
+    Training was performed on 25,000 words in articles selected randomly from Grolier's Encyclopedia.
+    Five iterations of training were performed in a total time of 115 CPU seconds.
+    Following is a time breakdown by component: Training: average pseconds per token tokenizer lexicon 1 iteration 5 iterations total 640 400 680 3400 4600 Tagging was performed on 115,822 words in a collection of articles by the journalist Dave Barry.
+    This required a total of of 143 CPU seconds.
+    The time breakdown for this was as follows: Ta

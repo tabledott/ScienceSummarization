@@ -1,0 +1,10 @@
+ and incorporated as a submodel of a translation system by Chan et al.
+    (2007); here, we are incorporating some of its features directly into the translation model.
+  
+  
+    For our experiments, we used a 260 million word Chinese/English bitext.
+    We ran GIZA++ on the entire bitext to produce IBM Model 4 word alignments, and then the link deletion algorithm (Fossum et al., 2008) to yield better-quality alignments.
+    For the syntax-based system, we ran a reimplementation of the Collins parser (Collins, 1997) on the English half of the bitext to produce parse trees, then restructured and relabeled them as described in Section 3.2.
+    Syntax-based rule extraction was performed on a 65 million word subset of the training data.
+    For Hiero, rules with up to two nonterminals were extracted from a 38 million word subset and phrasal rules were extracted from the remainder of the training data.
+    We trained three 5-gram language models: one on the English half of the bitext, used by both systems, one on o

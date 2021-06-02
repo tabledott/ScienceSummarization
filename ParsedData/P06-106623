@@ -1,0 +1,11 @@
+tions to the performance improvement but make the total number of features increase greatly.
+    This is a problem for MaxEnt parameter estimation if it is scaled to large bitexts.
+    Therefore, for the integration of MaxEnt-based phrase reordering model in the system trained on large bitexts, we remove collocation features and only use lexical features from the last words of blocks (similar to those from the first words of blocks with similar performance).
+    This time the bilingual training data contain 2.4M sentence pairs (68.1M Chinese words and 73.8M English words) and two trigram language models are used.
+    One is trained on the English side of the bilingual training data.
+    The other is trained on the Xinhua portion of the Gigaword corpus with 181.1M words.
+    We also use some rules to translate numbers, time expressions and Chinese person names.
+    The new Bleu score on NIST MT-05 is 0.291 which is very promising.
+  
+  
+    In this paper we presented a MaxEnt-based phrase reordering model for 

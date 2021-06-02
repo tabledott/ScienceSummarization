@@ -1,0 +1,10 @@
+rely include such features.
+    Instead we rely on the accuracy of POS tags to provide enough evidence.
+    Next we added features over every dropped word in the original sentence between yj&#8722;1 and yj, if there were any.
+    These include the POS of each dropped word, the POS of the dropped words conjoined with the POS of yj&#8722;1 and yj.
+    If the dropped word is a verb, we add a feature indicating the actual verb (this is for common verbs like &#8220;is&#8221;, which are typically in compressions).
+    Finally we add the POS context (bigram and trigram) of each dropped word.
+    These features represent common characteristics of words that can or should be dropped from the original sentence in the compressed version (e.g. adjectives and adverbs).
+    We also add a feature indicating whether the dropped word is a negation (e.g., not, never, etc.).
+    We also have a set of features to represent brackets in the text, which are common in the data set.
+    The first measures if all the dropped words bet

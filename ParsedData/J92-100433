@@ -1,0 +1,7 @@
+l value gets unified with the singular value that had been retained from &amp;quot;each&amp;quot; during the top-down cycle.
+    The unification fails and the parse dies.
+    By splitting off the plural morph, singular and plural nouns can share the bulk of their phonetics, thus reducing greatly the redundancy in the recognizer's matching problem.
+    In theory, morphs could be split off for verbs as well, but due to the large number of irregularities this was not done.
+    Subject-verb agreement gets enforced by default, because the number information that was realized during the parsing of the subject node gets passed along to the predicate and down to the terminal verb node.
+    The lexical item unifies the number information, and the parse fails if the result is zero.
+    Any nonauxiliary verb node blocks the transfer of any predecessor person/number information to its right siblings during the bottom-up cycle, reflecting the fact that verbs agree in person/number with their subject but not their object.

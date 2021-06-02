@@ -1,0 +1,8 @@
+e ambiguous and require different linking in different contexts.
+    To solve these problems, the weight of the link is taken from the values of In and Out on the best matching label between x and y.
+    This label depends on both words and is usually a frequent word with reliable statistics.
+    It serves as a prototype for the relation between x and y.
+    A label l is a matching label between Ax i and AySign(&#8722;i) if Axi(l) &gt; Axi (Stop) and either l = (y, 1) or AySign(&#8722;i)(l&#8722;1) &gt; 0.
+    The best matching label at Axi is the matching label l such that the match strength min(&#65533;Axi (l), &#65533;AySign(&#8722;i)(l&#8722;1)) is maximal (if l = (y, 1) then &#65533;AySign(&#8722;i)(l&#8722;1) is defined to be 1).
+    In practice, as before, only the top 10 labels in Axi and AySign(&#8722;i) are considered.
+    The best matching label from x to y is calculated between Axi and AySign(&#8722;i) such that Axi is on the same side of x as y and was either already used to create a link or is t

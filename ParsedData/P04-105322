@@ -1,0 +1,9 @@
+   We used a relatively small maximum context word length &#8211; 5 words &#8211; making it less likely that noise words appear in common across different relations.
+    The combination of complete linkage and small context word length proved useful for relation discovery.
+    As we set the frequency threshold of NE cooccurrence to 30, we will miss the less frequent NE pairs.
+    Some of those pairs might be in valuable relations.
+    For the less frequent NE pairs, since the context varieties would be small and the norms of context vectors would be too short, it is difficult to reliably classify the relation based on those pairs.
+    One way of addressing this defect would be through bootstrapping.
+    The problem of bootstrapping is how to select initial seeds; we could resolve this problem with our proposed method.
+    NE pairs which have many context words in common in each cluster could be promising seeds.
+    Once these seeds have been established, additional, lower-frequency NE pairs could be added to 

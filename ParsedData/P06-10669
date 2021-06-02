@@ -1,0 +1,11 @@
+tions spanning from i to j are generated.
+    Our algorithm guarantees that any sub-cells within (i, j) have been expanded before cell (i, j) is expanded.
+    Therefore the way to generate derivations in cell (i, j) is to merge derivations from any two neighbor sub-cells.
+    This combination is done by applying the straight and inverted rules.
+    Each application of these two rules will generate a new derivation covering cell (i, j).
+    The score of the new generated derivation is derived from the scores of its two sub-derivations, reordering model score and the increment of the language model score according to the Equation (4).
+    When the whole input sentence is covered, the decoding is over.
+    Pruning of the search space is very important for the decoder.
+    We use three pruning ways.
+    The first one is recombination.
+    When two derivations in the same cell have the same w leftmost/rightmost words on the English yields, where w depends on the order of the language model, they will be recombined

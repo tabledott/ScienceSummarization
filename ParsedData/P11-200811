@@ -1,0 +1,13 @@
+ization with a Beta(0.1, 9.9) prior. data, {thangs thanks thanksss thanx thinks thnx} are mapped to 0NKS, and {lmao lmaoo lmaooooo} map to LM.
+    But it is often too coarse; e.g.
+    {war we&#8217;re wear were where worry} map to WR.
+    We include two types of features.
+    First, we use the Metaphone key for the current token, complementing the base model&#8217;s word features.
+    Second, we use a feature indicating whether a tag is the most frequent tag for PTB words having the same Metaphone key as the current token.
+    (The second feature was disabled in both &#8722;TAGDICT and &#8722;METAPH ablation experiments.)
+  
+  
+    Our evaluation was designed to test the efficacy of this feature set for part-of-speech tagging given limited training data.
+    We randomly divided the set of 1,827 annotated tweets into a training set of 1,000 (14,542 tokens), a development set of 327 (4,770 tokens), and a test set of 500 (7,124 tokens).
+    We compare our system against the Stanford tagger.
+    Due to the differ

@@ -1,0 +1,8 @@
+the problem into pairwise decisions presents at least two related difficulties.
+    First, it is not clear how best to convert the set of pairwise classifications into a disjoint clustering of noun phrases.
+    The problem stems from the transitivity constraints of coreference: If a and b are coreferent, and b and c are coreferent, then a and c must be coreferent.
+    This problem has recently been addressed by a number of researchers.
+    A simple approach is to perform the transitive closure of the pairwise decisions.
+    However, as shown in recent work (McCallum and Wellner, 2003; Singla and Domingos, 2005), better performance can be obtained by performing relational inference to directly consider the dependence among a set of predictions.
+    For example, McCallum and Wellner (2005) apply a graph partitioning algorithm on a weighted, undirected graph in which vertices are noun phrases and edges are weighted by the pairwise score between noun phrases.
+    A second and less studied difficulty is that the p

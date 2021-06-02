@@ -1,0 +1,11 @@
+s (or small vectors) whereas 5, T are sparse highdimensional vectors.
+    We will see exactly this case in our experiments, where our weights (p, r, s, t) denote (probability, risk, gradient of probability, gradient of risk), or (probability, entropy, gradient of probability, gradient of entropy).
+  
+  
+    In Sections 3.2 and 4.1, we saw how our semirings helped find the sum Z of all p(d), and compute expectations r, s, t of r(d), s(d), and r(d)s(d).
+    It turns out that these semirings can also compute first- and second-order partial derivatives of all the above results, with respect to a parameter vector B E Rm.
+    That is, we ask how they are affected when B changes slightly from its current value.
+    The elementary values pe, re, se are now assumed to implicitly be functions of B.
+    Case 1: Recall that Z def = Pd p(d) is computed by INSIDE(HG, R) if each hyperedge e has weight pe.
+    &#8220;Lift&#8221; this weight to (pe, Vpe), where Vpe E Rm is a gradient vector.
+    Now (Z, VZ) will be returned b

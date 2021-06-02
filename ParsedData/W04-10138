@@ -1,0 +1,8 @@
+rty that its value is less than or equal to the minimum of unigram F-measure of X and Y. Unigram recall reflects the proportion of words in X (reference summary sentence) that are also present in Y (candidate summary sentence); while unigram precision is the proportion of words in Y that are also in X. Unigram recall and precision count all cooccurring words regardless their orders; while ROUGE-L counts only in-sequence co-occurrences.
+    By only awarding credit to in-sequence unigram matches, ROUGE-L also captures sentence level structure in a natural way.
+    Consider the following example: S1. police killed the gunman S2. police kill the gunman S3. the gunman kill police We only consider ROUGE-2, i.e.
+    N=2, for the purpose of explanation.
+    Using S1 as the reference and S2 and S3 as the candidate summary sentences, S2 and S3 would have the same ROUGE-2 score, since they both have one bigram, i.e.
+    &#8220;the gunman&#8221;.
+    However, S2 and S3 have very different meanings.
+    In the case of ROU

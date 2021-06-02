@@ -1,0 +1,9 @@
+d clusters for our experiments, we used the Brown clustering algorithm (Brown et al., 1992).
+    We chose to work with the Brown algorithm due to its simplicity and prior success in other NLP applications (Miller et al., 2004; Liang, 2005).
+    However, we expect that our approach can function with other clustering algorithms (as in, e.g., Li and McCallum (2005)).
+    We briefly describe the Brown algorithm below.
+    The input to the algorithm is a vocabulary of words to be clustered and a corpus of text containing these words.
+    Initially, each word in the vocabulary is considered to be in its own distinct cluster.
+    The algorithm then repeatedly merges the pair of clusters which causes the smallest decrease in the likelihood of the text corpus, according to a class-based bigram language model defined on the word clusters.
+    By tracing the pairwise merge operations, one obtains a hierarchical clustering of the words, which can be represented as a binary tree as in Figure 2.
+    Within this tree, each 

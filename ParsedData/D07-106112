@@ -1,0 +1,10 @@
+s by tf-idf scoring might also be inappropriate because such rare words would get extremely high scores,which is an undesirable trait in similarity search.
+			(Haveliwala et al, 2002) and others have shown that a ?non monotonic document frequency?
+			(NMDF) weighting can be more effective in such a setting.
+			Because the frequency of words in the glosses is distributed by a power-law, we weight each word by its distance from the mean word count in log space.
+			Formally, the weight wi for a word appearing ri times is wi = exp ( ?
+			(log(ri)?
+			?)2 2?2 ) where ? and ? are the mean and standard deviation ofthe logs of all word counts.
+			This is a smooth approximation to the high and low frequency stop lists used effectively by other measures such as (Patwardhan and Ped ersen, 2006).
+			We believe that because non-monotonic frequency scaling has no parameters and is data-driven,it could stand to be more widely adopted among gloss based lexical similarity measures.
+			We also add bi-directional edges between 

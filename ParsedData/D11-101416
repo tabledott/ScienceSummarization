@@ -1,0 +1,8 @@
+minimizing the crossentropy error of this softmax layer, the error will backpropagate and influence both the RAE parameters and the word representations.
+    Initially, words such as good and bad have very similar representations.
+    This is also the case for Brown clusters and other methods that use only cooccurrence statistics in a small window around each word.
+    When learning with positive/negative sentiment, the word embeddings get modified and capture less syntactic and more sentiment information.
+    In order to predict the sentiment distribution of a sentence with this model, we use the learned vector representation of the top tree node and train a simple logistic regression classifier.
+    We first describe the new experience project (EP) dataset, results of standard classification tasks on this dataset and how to predict its sentiment label distributions.
+    We then show results on other commonly used datasets and conclude with an analysis of the important parameters of the model.
+    In all exp

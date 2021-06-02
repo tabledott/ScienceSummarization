@@ -1,0 +1,6 @@
+ch could potentially distort the distribution of different types of structures in the data.
+    In section 3.2, we hypothesized that the expected running time of a deterministic parser using the transition system 5,, would be linear, rather than quadratic.
+    To test this hypothesis, we examine how the number of transitions varies as a function of sentence length.
+    We call this the abstract running time, since it abstracts over the actual time needed to compute each oracle prediction and transition, which is normally constant but dependent on the type of classifier used.
+    We first measured the abstract running time on the training sets, using the oracle to derive the transition sequence for every sentence, to see how many transitions are required in the ideal case.
+    We then performed the same measurement on the test sets, using classifiers trained on the oracle transition sequences from the training sets (as described below in Section 4.2), to see whether the trained parsers deviate from the ideal c

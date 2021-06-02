@@ -1,0 +1,8 @@
+d to be 0.
+    The right context similarity, simR(wi,w2,w), is defined equivalently, for /(wi , w) and /(w2, w)4.
+    Using definition 4 for each word w in the lexicon, we get 2 &#8226; 1 similarity values for w1 and w2, where 1 is the size of the lexicon.
+    The general similarity between w1 and w2, termed sim(wi , w2), is defined as a weighted average of these 2 &#8226; 1 values.
+    It is necessary to use some weighting mechanism, since small values of mutual information tend to be less significant and more vulnerable to noisy data.
+    We found that the maximal value involved in computing the similarity relative to a specific word provides a useful weight for this word in computing the average.
+    Thus, the weight for a specific left context similarity value, WL(wi, w2, w), is defined as: WL(wi, w2, w) = max(i(w, wi), /(w, w2)) (5) (notice that this is the same as the denominator in definition 4).
+    This definition provides intuitively appropriate weights, since we would like to give more weight to co

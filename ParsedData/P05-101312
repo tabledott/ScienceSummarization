@@ -1,0 +1,7 @@
+usly tested on Swedish (Nivre et al., 2004) and English (Nivre and Scholz, 2004).
+    The parser builds dependency graphs by traversing the input from left to right, using a stack to store tokens that are not yet complete with respect to their dependents.
+    At each point during the derivation, the parser has a choice between pushing the next input token onto the stack &#8211; with or without adding an arc from the token on top of the stack to the token pushed &#8211; and popping a token from the stack &#8211; with or without adding an arc from the next input token to the token popped.
+    More details on the parsing algorithm can be found in Nivre (2003).
+    The choice between different actions is in general nondeterministic, and the parser relies on a memorybased classifier, trained on treebank data, to predict the next action based on features of the current parser configuration.
+    Table 2 shows the features used in the current version of the parser.
+    At each point during the derivation, the predict

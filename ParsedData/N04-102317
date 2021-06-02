@@ -1,0 +1,11 @@
+ccessfully separate the good translations and the bad translations.
+    Suppose there exists a linear function satisfying (1) and (2), we say is by given and .
+    Furthermore, we can define the splitting margin for the translations of the sentence as follows.
+    The minimal splitting margin, , for given and is defined as follows.
+    Algorithm 1 splitting Require: , and a positive learning margin .
+    Algorithm 1 is a perceptron-like algorithm that looks for a function that splits the training data.
+    The idea of the algorithm is as follows.
+    For every two translations and , if the rank of is higher than or equal to , , the rank of is lower than ,, the weight vector can not successfully separate and with a learning margin , , then we need to update with the addition of .
+    However, the updating is not executed until all the inconsistent pairs in a sentence are found for the purpose of speeding up the algorithm.
+    When sentence is selected, we first compute and store for all .
+    Thus we do not ne

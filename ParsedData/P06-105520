@@ -1,0 +1,9 @@
+robabilities for each span.
+    For example, one span might have a posterior probability of 0.8 of the symbol NP, but e&#8722;10 for PP.
+    Then, we parse with the larger annotated grammar, but, at each span, we prune away any symbols whose posterior probability under the baseline grammar falls below a certain threshold (e&#8722;8 in our experiments).
+    Even though our baseline grammar has a very low accuracy, we found that this pruning barely impacts the performance of our better grammars, while significantly reducing the computational cost.
+    For a grammar with 479 subcategories (4 SM cycles), lowering the threshold to e&#8722;15 led to an F1 improvement of 0.13% (89.03 vs. 89.16) on the development set but increased the parsing time by a factor of 16.
+  
+  
+    So far, we have presented a split-merge method for learning to iteratively subcategorize basic symbols like NP and VP into automatically induced subsymbols (subcategories in the original sense of Chomsky (1965)).
+    This approach gives parsing

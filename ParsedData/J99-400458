@@ -1,0 +1,7 @@
+d to examine all possible items.
+    For certain grammars, Earley's algorithm examines only a linear number of items and a linear number of dependencies, even though there are 0(n2) possible items, and 0(n3) possible dependencies.
+    Thus the brute-force approach would require 0(n3) time and space instead of 0(n) time and space, for these grammars.
+    The next approach to finding the bucketing solves the time complexity problem.
+    In this approach, we first parse in the Boolean semiring, using the agenda parser described by Shieber, Schabes, and Pereira (1995), and then we perform a topological sort.
+    The techniques that Shieber, Schabes, and Pereira use work well for the Boolean semiring, where items only have value TRUE or FALSE, but cannot be used directly for for current := first bucket to last bucket if current is a looping bucket other semirings.
+    For other semirings, we need to make sure that the values of items are not computed until after the values of all items they depend on are computed.

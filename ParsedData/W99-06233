@@ -1,0 +1,8 @@
+ constituent in our hypothesized parse if it appears in the output of a majority of the parsers.
+    In our particular case the majority requires the agreement of only two parsers because we have only three.
+    This technique has the advantage of requiring no training, but it has the disadvantage of treating all parsers equally even though they may have differing accuracies or may specialize in modeling different phenomena.
+    Another technique for parse hybridization is to use a na&#239;ve Bayes classifier to determine which constituents to include in the parse.
+    The development of a na&#239;ve Bayes classifier involves learning how much each parser should be trusted for the decisions it makes.
+    Our original hope in combining these parsers is that their errors are independently distributed.
+    This is equivalent to the assumption used in probability estimation for na&#239;ve Bayes classifiers, namely that the attribute values are conditionally independent when the target value is given.
+    For this

@@ -1,0 +1,9 @@
+k. The most computationally expensive step in the chain recognition process is the insertion of candidate points into the sorted point sequence.
+    The following subsections describe two of the more interesting enhancements in the current SIMR implementation.
+    4.6.1 Overlapping Chains.
+    SIMR's fixed chain size imposes a rather arbitrary fragmentation on the TBM trace.
+    Each chain starts at the top-right corner of the previously found chain, but these chain boundaries are independent of discontinuities or angle variations in the TBM trace.
+    Therefore, SIMR is likely to miss TPCs wherever the TBM is not linear.
+    One way to make SIMR more robust is to start the search rectangle just above the lowest point of the previously found chain, instead of just above the highest point.
+    If the chain size is fixed at k, then each linear stretch of s TPCs will result in s &#8212; k + 1 overlapping chains.
+    Unfortunately, this solution introduces another problem: Two overlapping chains can be inconsiste

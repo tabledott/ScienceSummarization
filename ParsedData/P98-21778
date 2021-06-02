@@ -1,0 +1,9 @@
+hments, respectively.
+    Many of the frequent nounattached (n,p, n2) tuples, such as num to num,3 are incorrect.
+    The prepositional phrase to num is usually attached to a verb such as rise or fall in the Wall St. Journal domain, e.g., Profits rose 46 % to 52 million.
+  
+  
+    While the extracted tuples of the form (n, p, n2) and (v, p, n2) represent unambiguous noun and verb attachments in which either the verb or noun is known, our eventual goal is to resolve ambiguous attachments in the test data of the form (v, n,p, n2), in which both the noun n and verb v are always known.
+    We therefore must use any information in the unambiguous cases to resolve the ambiguous cases.
+    A natural way is to use a classifier that compares the probability of each outcome: We do not currently use n2 in the probability model, and we omit it from further discussion.
+    We can factor Pr(v,n,p, a) as follows: The terms Pr(n) and Pr(v) are independent of the attachment a and need not be computed in c/ (1), but the estima

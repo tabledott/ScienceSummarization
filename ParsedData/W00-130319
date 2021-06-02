@@ -1,0 +1,8 @@
+ifier using all training data, we can make n classifiers dividing all training data by n, and the final result is decided by their voting.
+    This approach would reduce computational overhead.
+    The use of multi-processing computer would help to reduce their training time considerably since all individual training can be carried out in parallel.
+    To investigate the effectiveness of this method, we perform a simple experiment: Dividing all training data (7958 sentences) by 4, the final dependency score is given by a weighted average of each scores.
+    This simple voting approach is shown to achieve the accuracy of 88.66%, which is nearly the same accuracy achieved 5540 training sentences.
+    In this experiment, we simply give an equal weight to each classifier.
+    However, if we optimized the voting weight more carefully, the further improvements would be achieved (Inui and Inui, 2000).
+    Uchimoto (Uchimoto et al., 1999) and Sekine (Sekine et al., 2000) report that using Kyoto University Corpus for 

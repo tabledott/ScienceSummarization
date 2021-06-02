@@ -1,0 +1,9 @@
+cting sentence-specific phrase translation tables from system outputs with alignments to source and running a phrasal decoder with this new translation table.
+    This approach is similar to the multi-engine MT framework proposed in (Frederking and Nirenburg, 1994) which is not capable of re-ordering.
+    The word-level combination is based on consensus network decoding.
+    Translation edit rate (TER) (Snover et al., 2006) is used to align the hypotheses and minimum Bayes risk decoding under TER (Sim et al., 2007) is used to select the alignment hypothesis.
+    All combination methods use weights which may be tuned using Powell&#8217;s method (Brent, 1973) on -best lists.
+    Both sentence and phrase-level combination methods can generate best lists which may also be used as new system outputs in the word-level combination.
+    Experiments on combining six machine translation system outputs were performed.
+    Three systems were phrasal, two hierarchical and one syntaxbased.
+    The systems were evaluated on

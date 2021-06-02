@@ -1,0 +1,11 @@
+er and the HOO scorer adhere to the same score definition and only differ in the way the system edits are computed.
+    We can see that the M2 scorer results in higher scores than the official scorer for all systems, showing that the official scorer missed some valid edits.
+    For example, the M2 scorer finds 155 valid edits for the UI system compared to 141 found by the official scorer, and 83 valid edits for the NU system, compared to 78 by the official scorer.
+    We manually inspect the output of the scorers and find that the M2 scorer indeed extracts the correct edits matching the gold standard where possible.
+    Examples are shown in Table 2.
+  
+  
+    The evaluation framework proposed in this work differs slightly from the one in the HOO shared task.
+    Sentence-by-sentence.
+    We compute the edits between source-hypothesis sentence pairs, while the HOO scorer computes edits at the document level.
+    As the HOO data comes in a sentencesegmented format, both approaches are equivalent, while sentenc

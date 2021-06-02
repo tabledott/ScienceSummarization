@@ -1,0 +1,11 @@
+ncy based estimation.
+  
+  
+    We use the term cooccurrence pair, written as (x, y), to denote a cooccurrence of two words in a sentence within a distance of no more than d words.
+    When computing the distance d, we ignore function words such as prepositions and determiners.
+    In the experiments reported here d = 3.
+    A cooccurrence pair can be viewed as a generalization of a bigram, where a bigram is a cooccurrence pair with d = 1 (without ignoring function words).
+    As with bigrams, a cooccurrence pair is directional, i.e.
+    (x, y) (y, x).
+    This captures some information about the asymmetry in the linear order of linguistic relations, such as the fact that verbs tend to precede their objects and follow their subjects.
+    The mutual information of a cooccurrence pair, which measures the degree of association between the two words (Church and Hanks, 1990), is defined as (Fano, 1961): where P(z) and P(y) are the probabilities of the events x and y (occurrences of words, in our case) and P (x , y

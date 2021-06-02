@@ -1,0 +1,8 @@
+300 translations to minimize expected loss under the Bleu metric.
+    Deterministic Annealing: In this system, instead of using the regular MERT (Och, 2003) whose training objective is to minimize the onebest error, we use the deterministic annealing training procedure described in Smith and Eisner (2006), whose objective is to minimize the expected error (together with the entropy regularization technique).
+    Variational Decoding: Statistical models in machine translation exhibit spurious ambiguity.
+    That is, the probability of an output string is split among many distinct derivations (e.g., trees or segmentations).
+    In principle, the goodness of a string is measured by the total probability of its many derivations.
+    However, finding the best string (e.g., during decoding) is then computationally intractable.
+    Therefore, most systems use a simple Viterbi approximation that measures the goodness of a string using only its most probable derivation.
+    Instead, we develop a variational approximat

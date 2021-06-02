@@ -1,0 +1,7 @@
+  The utterance parser partitions the utterance grammar into equivalence classes and considers each class according to an ordering.
+    Utterance parsing terminates when all constituents satisfying the rules of the current equivalence class are built, unless there are none, in which case the next class is considered.
+    The highest ranked class consists of rules to identify simple complete sentences, the next highest class consists of rules to identify simple isolated sentence fragments, and so on.
+    Thus, the utterance parser allows us to enforce a very coarse form of parse preferences (for example, prefering complete sentences to sentence fragments).
+    These coarse preferences could also be enforced by the parse preference component described in section 2.9, but for the sake of efficiency we choose to enforce them here.
+    The utterance grammar is significantly smaller than the constituent grammar &#8212; only 37 syntactic rules and 43 semantic rules.
+    Grammatical disfluencies occur frequently in s

@@ -1,0 +1,8 @@
+s preliminary analysis highlights two common causes for bad flags.
+    One is that of frequent lower order n-grams that dominate the language model score.
+    Consider the CLEC sentence I get to know the world outside the campus by newspaper and television.
+    The system suggests deleting by.
+    The cause of this bad decision is that the bigram campus newspaper is extremely likely, trumping all other n-grams, and leading to a high probability for the suggested string compared to the original: Log (P(original)) _ -26.2 and Log (P(suggestion)) _ -22.4.
+    This strong imbalance of the language model score causes the metaclassifier to assign a relatively high probability to this being a correct revision, even though the errorspecific classifier is on the right track and gives a relatively high probability for the presence of a preposition and the choice of by.
+    A similar example, but for substitution, occurs in They give discounts to their workers on books.
+    Here the bigram in books has a very high proba

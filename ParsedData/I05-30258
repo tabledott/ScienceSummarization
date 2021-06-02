@@ -1,0 +1,6 @@
+is assigned to each individual character Ci.
+  If we were to just as- sign each character the boundary tag with the highest probability, it is possible that the clas- sifier produces a sequence of invalid tags (e.g., m followed by s).
+  To eliminate such possibil- ities, we implemented a dynamic programming algorithm which considers only valid boundary tag sequences given an input character sequence.
+  At each character position i, the algorithm con- siders each last word candidate ending at posi- tion i and consisting of K characters in length (K = 1, .
+  , 20 in our experiments).
+  To deter- mine the boundary tag assignment to the last word W with K characters, the first character of W is assigned boundary tag b, the last character of W is assigned tag e, and the intervening characters Corpus R P F ROOV RIV AS 0.962 0.950 0.956 0.684 0.975 CITYU 0.967 0.956 0.962 0.806 0.980 MSR 0.969 0.968 0.968 0.736 0.975 PKU 0.968 0.969 0.969 0.838 0.976 Table 1: Our official SIGHAN bakeoff results are assigned tag m. (

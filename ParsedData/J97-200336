@@ -1,0 +1,5 @@
+ast one pair (q, x), with q a final state of ri (lines 7-8).
+    The final output associated to q2 is then the minimum of the final outputs of all the final states in q2 combined with their respective residual weight (line 9).
+    For each input label a such that there exists at least one state q of the subset q2 admitting an outgoing transition labeled with a, one outgoing transition leaving q2 with the input label a is constructed (lines 10-14).
+    The output 0-2(q2, a) of this transition is the minimum of the outputs of all the transitions with input label a that leave a state in the subset q2, when combined with the residual weight associated to that state (line 11).
+    The destination state 62(q2, a) of the transition leaving q2 is a subset made of pairs (q', x'), where q' is a state of Ti that can be reached by a transition labeled with a, and x' the corresponding residual weight (line 12). x' is computed by taking the minimum of all the transitions with input label a that leave a state q of q2 and re

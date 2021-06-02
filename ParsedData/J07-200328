@@ -1,0 +1,8 @@
+aking the LM into account) or something acceptably close to it.
+    5.3.2 Intersection.
+    A more principled solution would be to calculate the LM probabilities online.
+    To do this, we view an m-gram LM as a weighted finite state machine M in which each state corresponds to a sequence of (m &#8722; 1) English terminal symbols.
+    We can then intersect the English side of our weighted CFG G with this finite-state machine to produce a new weighted CFG that incorporates M. Thus PLM would be part of the rule weights (22) just like the other features.
+    (For notational consistency, however, we write the LM probabilities separately from the rule weights.)
+    In principle this method should admit no search errors, though in practice the blow-up in the effective size of the grammar necessitates pruning of the search space, which can cause search errors.
+    The classic construction for intersecting a (non-synchronous) CFG with a finitestate machine is due to Bar-Hillel, Perles, and Shamir (1964), but we use a

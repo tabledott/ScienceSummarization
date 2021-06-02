@@ -1,0 +1,8 @@
+ to (8), if a stem is followed by a potential suffix +m, not present in the training corpus, then it is filtered out as an illegitimate stem.
+    In addition, if a stem is preceded by a prefix and/or followed by a suffix with a significantly higher proportion than that observed in the training corpus, it is filtered out.
+    For instance, the probability for the suffix +A to follow a stem is less than 50% in the training corpus regardless of the stem properties, and therefore, if a candidate stem is followed by +A with the probability of over 70%, e.g. mAnyl +A, then it is filtered out as an illegitimate stem.
+  
+  
+    We present experimental results illustrating the impact of three factors on segmentation error rate: (i) the base algorithm, i.e. language model training and decoding, (ii) language model vocabulary and training corpus size, and (iii) manually segmented training corpus size.
+    Segmentation error rate is defined in (9).
+    Evaluations have been performed on a development test corpus containi

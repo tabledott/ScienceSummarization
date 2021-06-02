@@ -1,0 +1,13 @@
+,d(h,d) 42 l,gp,g+1p,dp,d(h,d) 98 l,dl,sl,d(h,d)?r(h,d) 41 l,?hm,?dm,d(h,d) 43 l,gp,g-1p,dp,d(h,d) Table 4: Features Groups.
+			l represents the label, h the head, d the dependent, s a sibling, and g a grandchild, d(x,y,[,z]) the order of words, and r(x,y) the distance.
+			used cores.
+			The parsing time is 1.9 times fasteron two cores and 3.4 times faster on 4 cores.
+			Hy per threading can improve the parsing times again and we get with hyper threading 4.6 faster parsingtimes.
+			Hyper threading possibly reduces the over head of threads, which contains already our single core version.
+			Algorithm 4: Parallel Feature Extraction A // weight arrays extract-features-and-calc-arrays(xi) data-list?
+			{} // thread-save data list for w1 ? 1 to |xi| for w2 ? 1 to |xi| data-list?
+			data-list ?{(w1, w2)} c?
+			number of CPU cores for t?
+			1 to c Tt ? create-array-thread(t, xi,data-list) start array-thread Tt// start thread t for t?
+			1 to c join Tt// wait until thread t is finished A?
+			A ? collect-result(Tt) re

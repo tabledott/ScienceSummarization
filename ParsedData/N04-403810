@@ -1,0 +1,11 @@
+put: A sequence of (word, POS tag) pairs.
+    Context: A window of -2/+2 tokens centered at the focus token.
+    Features: Word and POS tags that fall in the context along with previous IOB tags within the context.
+  
+  
+    The Arabic TreeBank consists of 4519 sentences.
+    The development set, training set and test set are the same for all the experiments.
+    The sentences are randomly distributed with 119 sentences in the development set, 400 sentences in the test set and 4000 sentences in the training set.
+    The data is transliterated in the Arabic TreeBank into Latin based ASCII characters using the Buckwalter transliteration scheme.6 We used the non vocalized version of the treebank for all the experiments.
+    All the data is derived from the parsed trees in the treebank.
+    We use a standard SVM with a polynomial kernel, of degree 2 and C=1.7 Standard metrics of Accuracy (Acc), Precision (Prec), Recall (Rec), and the F-measure, , on the test set are utilized.8 Results: Table 2 presents the result

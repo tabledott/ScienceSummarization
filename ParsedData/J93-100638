@@ -1,0 +1,9 @@
+e AST.
+    In what follows, we will refer to these sentence pairs as anchors.
+    As before, it is convenient to think of the AST as a rectangular array, even though it is represented more economically in the program.
+    Consider a maximal sequence of empty AST entries, that is, a sequence of sentences in one text for which there are no associated sentences in the other, but which is bounded above and below by an anchor.
+    The new associations that are added lie on and adjacent to the diagonal joining the two anchors.
+    The distance from the diagonal is a function of the distance of the current candidate sentence pair and the nearest anchor.
+    The function is the same one used in the construction of the initial AST.
+    As we said earlier, the basic alignment algorithm treats words as atoms; that is, it treats strings as instances of the same word if they consist of identical sequences of letters, and otherwise as totally different.
+    The effect of this is that morphological variants of a word are no

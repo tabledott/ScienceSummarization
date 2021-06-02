@@ -1,0 +1,11 @@
+
+	Large Language Models in Machine Translation
+		This paper reports on the benefits of largescale statistical language modeling in machine translation.
+		A distributed infrastruc ture is proposed which we use to train on up to 2 trillion tokens, resulting in language models having up to 300 billion n-grams.
+		Itis capable of providing smoothed probabilities for fast, single-pass decoding.
+		We in troduce a new smoothing method, dubbed Stupid Backoff, that is inexpensive to train on large data sets and approaches the quality of Kneser-Ney Smoothing as the amount of training data increases.
+	
+	
+			Given a source-language (e.g., French) sentence f ,the problem of machine translation is to automatically produce a target-language (e.g., English) translation e?.
+			The mathematics of the problem were for malized by (Brown et al, 1993), and re-formulated by (Och and Ney, 2004) in terms of the optimization e?
+			= arg max e M ? m=1 ?mhm(e, f) (1) where {hm(e, f)} is a set of M feature functions and{?m} a set of weigh

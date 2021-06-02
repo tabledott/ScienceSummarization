@@ -1,0 +1,10 @@
+ in a certain position is based on the sum of confidences from each system output having the word in that position.
+    This requires aligning the system outputs to form a consensus network and &#8211; during decoding &#8211; simply finding the highest scoring path through this network.
+    The alignment of speech recognition outputs is fairly straightforward due to the strict constraint in word order.
+    However, machine translation outputs do not have this constraint as the word order may be different between the source and target languages.
+    MT systems employ various re-ordering (distortion) models to take this into account.
+    Three MT system combination methods are presented in this paper.
+    They operate on the sentence, phrase and word level.
+    The sentence-level combination is based on selecting the best hypothesis out of the merged N-best lists.
+    This method does not generate new hypotheses &#8211; unlike the phrase and word-level methods.
+    The phrase-level combination is based on extra

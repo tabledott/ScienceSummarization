@@ -1,0 +1,10 @@
+ration, remove pairs of words from the training corpus that have already been selected so that other alternatives can be identified.
+  We have completed four passes of this algorithm, and selected more than a thousand pairs on each iteration.
+  Iteration Sample Size Number  of Pairs Selected 0 10,000 1223 1 30,000 1537 2 50,000 1692 3 220,000 1967 A few of the selected pairs are shown below.
+  The first column indicates the iteration that the pair was selected on.
+  The second column indicates the number of sentences (aligned regions) that the pair appears in.
+  Note that the most frequent pairs are usually selected first, leaving less important pairs to be picked up on subsequent iterations.
+  Thus, for example, accept/ accepter is selected before accept/accepte.
+  Based on a sample of 1000 pairs, about 98% of the selected pairs of words are translations.
+  Here, as elsewhere, we act to keep our errors of commission low.
+  Iteration Freq English French 2 278 accept accepte 0 1335 accept accepter 3 111 accept

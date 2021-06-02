@@ -1,0 +1,9 @@
+y on both segmentation and Joint S&amp;T.
+    Among other features, the 4-gram POS LM plays the most important role, removing this feature causes F-measure decrement of 0.33 points on segmentation and 0.71 points on Joint S&amp;T.
+    Another important feature is the labelling model.
+    Without it, the F-measure on segmentation and Joint S&amp;T both suffer a decrement of 0.2 points.
+    The generating model, which functions as that in HMM, brings an improvement of about 0.1 points to each test item.
+    However unlike the three features, the word LM brings very tiny improvement.
+    We suppose that the character-based features used in the perceptron play a similar role as the lowerorder word LM, and it would be helpful if we train a higher-order word LM on a larger scale corpus.
+    Finally, the word count penalty gives improvement to the cascaded model, 0.13 points on segmentation and 0.16 points on Joint S&amp;T.
+    In summary, the cascaded model can utilize these knowledge sources effectively, without c

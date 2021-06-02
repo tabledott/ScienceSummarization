@@ -1,0 +1,9 @@
+koff probability model.
+    All that remains is to specify the parameters that guide the iterative use of the probability model to assign roles.
+    The evidence count for each of the conditional probabilities refers to the number of times we have observed the conjunction of its conditioning events.
+    For example, for , this is the number of times the particular combination of verb, slot, and noun have been observed.
+    For a probability to be used, its evidence count must reach a given threshold, .
+    The &#8220;goodness&#8221; of a role assignment is determined by taking the log of the ratio between the probabilities of the top two candidates for a slot (when the evidence of both meet ) (e.g., Hindle and Rooth, 1993).
+    A role is only assigned if the log likelihood ratio is defined and meets a threshold; in this case, the candidate role with highest probability is assigned to the slot.
+    (Note that in the current implementation, we do not allow re-labelling: an assigned label is fixed.)
+    In the a

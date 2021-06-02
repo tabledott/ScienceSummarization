@@ -1,0 +1,9 @@
+.
+    When the element in the top-right corner is produced (5.78), the algorithm is finished, and the associated set of components is the final chart walk result shown in Figure 2.
+    It may seem that the scores should increase towards the top-right corner.
+    This has not generally been the case.
+    While the system produces a number of high-scoring short components, many lowscoring components have to be included to span the entire input.
+    Since the score is a weighted average, these low-scoring components pull the combined score down.
+    A clear example can be seen at position (18,18), which has a score of 15.
+    The scores above and to its right each average this 15 with a 5, for total values of 10.0 (all the lengths happen to be 1), and the score continues to decrease with distance from this point as one moves towards the final score, which does include the component for (18,18) in the cover.
+    The chart-oriented integration of MT engines does not easily support deviations from the linear order 

@@ -1,0 +1,9 @@
+ncy tree.
+    Even an efficient sampler like MC-SAT (Poon and Domingos, 2006), as used in Poon &amp; Domingos (2008), would have a hard time generating accurate estimates within a reasonable amount of time.
+    On the other hand, as already noted in the previous section, the lambda-form distribution is generally sparse.
+    Large lambda-forms are rare, as they correspond to complex expressions that are often decomposable into smaller ones.
+    Moreover, while ambiguities are present at the lexical level, they quickly diminish when more words are present.
+    Therefore, a lambda form can usually only belong to a small number of clusters, if not a unique one.
+    We thus simplify the problem by approximating the sum with the mode, and search instead for the L and 0 that maximize log PB(Q, L).
+    Since the optimal weights and log-likelihood can be derived in closed form given the semantic parses L, we simply search over semantic parses, evaluating them using log-likelihood.
+    Algorithm 2 gives pseudo-code for

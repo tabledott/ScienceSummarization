@@ -1,0 +1,8 @@
+hains when there is a long hiatus of h consecutive sentences with no occurrence of the term, where h is determined experimentally.
+    For each hiatus, a new division is made and thus, we avoid creating weakly linked chains.
+    For all chains that have been identified, we use a weighting scheme that we believe is appropriate to the task of inducing the topical or sub-topical structure of text.
+    The weighting scheme depends on two factors: Frequency: chains containing more repeated terms receive a higher score.
+    Compactness: shorter chains receive a higher weight than longer ones.
+    If two chains of different lengths contain the same number of terms, we assign a higher score to the shortest one.
+    Our assumption is that the shorter one, being more compact, seems to be a better indicator of lexical cohesion.3 We apply a variant of a metric commonly used in information retrieval, TF.IDF (Salton and Buckley, 1988), to score term repetitions.
+    If R1 ... R,,, is the set of all term repetitions collect

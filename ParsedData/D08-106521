@@ -1,0 +1,9 @@
+ctors.
+    These include: 1) better approximation of the corpus BLEU score, 2) larger hypothesis space, and 3) larger evidence space.
+    We now present experiments to tease apart these factors.
+    Our first experiment restricts both the hypothesis and evidence spaces in lattice MBR to the 1000-best list (Table 3).
+    We compare this to N-best MBR with: a) sentence-level BLEU, and b) sentence-level log BLEU.
+    The results show that when restricted to the 1000best list, Lattice MBR performs slightly better than N-best MBR (with sentence BLEU) on aren/enzh while N-best MBR is better on zhen.
+    We hypothesize that on aren/enzh, the linear corpus BLEU gain (Equation 10) is better correlated to the actual corpus BLEU than sentence-level BLEU while the opposite is true on zhen.
+    N-best MBR gives similar results with either sentence BLEU or sentence log BLEU.
+    This confirms that using a log BLEU score does not change the outcome of MBR decoding and further justifies our Taylor-series approximation of the

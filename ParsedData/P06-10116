@@ -1,0 +1,8 @@
+e translations.
+    Although most of its high-probability entries are good translations, there are a lot of entries (of non-negligible probability) where the two words are at most related.
+    As an example, in our GIZA-Ler lexicon, each source word has an average of 12 possible translations.
+    This characteristic is useful for the first two stages of the extraction pipeline, which are not intended to be very precise.
+    Their purpose is to accept most of the existing parallel data, and not too much of the non-parallel data; using such a lexicon helps achieve this purpose.
+    For the last stage, however, precision is paramount.
+    We found empirically that when using GIZA-Ler, the incorrect correspondences that it contains seriously impact the quality of our results; we therefore need a cleaner lexicon.
+    In addition, since we want to distinguish between source words that have a translation on the target side and words that do not, we also need a measure of the probability that two words are not transl

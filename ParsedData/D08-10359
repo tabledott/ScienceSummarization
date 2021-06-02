@@ -1,0 +1,5 @@
+raws from a multinomial language model associated with the segment.
+    Formally, if sentence t is in segment j, then the bag of words xt is drawn from the multinomial language model &#952;j.
+    This is similar in spirit to hidden topic models such as latent Dirichlet allocation (Blei et al., 2003), but rather than assigning a hidden topic to each word, we constrain the topics to yield a linear segmentation of the document.
+    We will assume that topic breaks occur at sentence boundaries, and write zt to indicate the topic assignment for sentence t. The observation likelihood is, where X is the set of all T sentences, z is the vector of segment assignments for each sentence, and &#920; is the set of all K language models.2 A linear segmentation is ensured by the additional constraint that zt must be equal to either zt&#8722;1 (the previous sentence&#8217;s segment) or zt&#8722;1 + 1 (the next segment).
+    To obtain a high likelihood, the language models associated with each segment should concentrate their

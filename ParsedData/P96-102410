@@ -1,0 +1,8 @@
+ld use an algorithm which maximizes the Labelled Recall criterion, rather than the Labelled Tree criterion.
+    The Labelled Recall Algorithm finds that tree TG which has the highest expected value for the Labelled Recall Rate, LINc (where L is the number of correct labelled constituents, and Nc is the number of nodes in the correct parse).
+    This can be written as follows: It is not immediately obvious that the maximization of expression (2) is in fact different from the maximization of expression (1), but a simple example illustrates the difference.
+    The following grammar generates four trees with equal probability: For the first tree, the probabilities of being correct are S: 100%; A:50%; and C: 25%.
+    Similar counting holds for the other three.
+    Thus, the expected value of L for any of these trees is 1.75.
+    On the other hand, the optimal Labelled Recall parse is This tree has 0 probability according to the grammar, and thus is non-optimal according to the Labelled Tree Rate criterion.
+    How

@@ -1,0 +1,7 @@
+rest (Tomita 1987) are packed data structures for context-free parsing.
+    In these data structures, a substring that is recognized as a certain phrase is represented as a single edge or node regardless of how many different readings are possible for this phrase.
+    Since the production rules are context free, it is unnecessary to check the internal structure of an edge when combining it with another edge to form a higher edge.
+    However, this property is true only when the grammar is purely context-free.
+    If one introduces context sensitivity by attaching augmentations and controlling the applicability of the production rules, different readings of the same string with the same nonterminal symbol have to be represented by separate edges, and this may cause a combinatorial explosion.
+    Seo and Simmons (1988) propose a data structure called a syntactic graph as a. packed representation of context-free parsing.
+    A syntactic graph is similar to a constraint network in the sense that it is dependencyo

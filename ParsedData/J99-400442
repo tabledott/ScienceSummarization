@@ -1,0 +1,8 @@
+The strongly connected components of this subgraph correspond to loops that actually occur given the sentence and the grammar, as opposed to loops that might occur for some sentence and grammar, given the parser alone.
+    We call this subgraph the derivation subgraph, and we will say that items in a strongly connected component of the derivation subgraph are part of a loop.
+    Now, we can discuss the counting semiring (integers under + and x).
+    In the counting semiring, for each item, there are three cases: the item can be in a loop; the item can depend (directly or indirectly) on an item in a loop; or the item does not depend on loops.
+    If the item is in a loop or depends on a loop, its value is infinite.
+    If the item does not depend on a loop in the current bucket, then its value becomes fixed after some generation.
+    We can now give the algorithm: first, compute successive generations until the set of items in B does not change from one generation to the next.
+    Next, compute the derivation 

@@ -1,0 +1,10 @@
+ll languages, for both Single Malt and Blended, are available at http://w3.msi.vxu.se/users/jha/conll07/.
+			to improve parsing accuracy for Chinese, while the arc-eager order was maintained for all other languages.
+			2.
+			Stack initialization: In the baseline version.
+			the parser is initialized with an artificial root node (with token id 0) on the stack, so that arcsoriginating from the root can be added explicitly during parsing.
+			But it is also possible to ini tialize the parser with an empty stack, in whichcase arcs from the root are only added implicitly (to any token that remains a root after pars ing is completed).
+			Empty stack initialization (which reduces the amount of nondeterminismin parsing) led to improved accuracy for Cata lan, Chinese, Hungarian, Italian and Turkish.4
+	
+	
+			a single left-to-right pass over the input, but it is possible to allow a second pass where onlyunattached tokens are processed.5 Such post processing was found to improve results for Basque, Catalan, Czech, Greek a

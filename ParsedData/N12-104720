@@ -1,0 +1,10 @@
+e material reserved from other NIST corpora.
+    The NIST 04, 06, and 08 evaluation sets were used for testing.
+    For all language pairs, phrases were extracted with a length limit of 7 from separate word alignments performed by IBM2 and HMM models and symmetrized using diag-and (Koehn et al., 2003).
+    Conditional phrase probabilities in both directions were estimated from relative frequencies, and from lexical probabilities (Zens and Ney, 2004).
+    Language models were estimated with Kneser-Ney smoothing using SRILM.
+    Six-feature lexicalized distortion models were estimated and applied as in Moses.
+    For each language pair, we defined roughly equivalent systems (exactly equivalent for En-Fr and FrEn, which are mirror images) for each of three nested feature sets: Small, Medium, and Big.
+    The Small set defines a minimal 7-feature system intended to be within easy reach of all tuning strategies.
+    It comprises 4 TM features, one LM, and length and distortion features.
+    For the Chinese system,

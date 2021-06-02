@@ -1,0 +1,7 @@
+e 1, the branching variance is considerably high, and the number of tokens varies according to the output path.
+    An example of the label bias is illustrated in Figure 2:(a) where the path is searched by sequential combinations of maximum entropy models (MEMMs), i.e., if MEMMs learn the correct path A-D with independently trained maximum entropy models, the path B-E will have a higher probability and then be selected in decoding.
+    This is because the token B has only the single outgoing token E, and the transition probability for B-E is always 1.0.
+    Generally speaking, the complexities of transitions vary according to the tokens, and the transition probabilities with low-entropy will be estimated high in decoding.
+    This problem occurs because the training is performed only using the correct path, ignoring all other transitions.
+    Moreover, we cannot ignore the influence of the length bias either.
+    By the length bias, we mean that short paths, consisting of a small number of tokens, are preferr

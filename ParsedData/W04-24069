@@ -1,0 +1,8 @@
+s are unordered word pairs that include the target word, whereas bigrams are ordered pairs that may or may not include the target.
+    Both the co&#8211;occurrences and the bigrams must occur in at least two instances in the training data, and the two words must have a log&#8211; likelihood ratio in excess of 3.841, which has the effect of removing co&#8211;occurrences and bigrams that have more than 95% chance of being independent of the target word.
+    After selecting a set of co-occurrences or bigrams from a corpus of training data, a first order context representation is created for each test instance.
+    This shows how many times each feature occurs in the context of the target word (i.e., within 20 positions from the target word) in that instance.
+  
+  
+    A test instance can be represented by a second order context vector by finding the average of the first order context vectors that are associated with the words that occur near the target word.
+    Thus, the second order context representation reli

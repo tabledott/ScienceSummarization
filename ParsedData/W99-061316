@@ -1,0 +1,9 @@
+ 1X21 N and N is a &amp;quot;medium&amp;quot; sized number so that it is feasible to collect 0(N) unlabeled examples.
+    Assume that the two classifiers are &amp;quot;rote learners&amp;quot;: that is, 1.1 and 12 are defined through look-up tables that list a label for each member of X1 or X2.
+    The problem is a binary classification problem.
+    The problem can be represented as a graph with 2N vertices corresponding to the members of X1 and X2.
+    Each unlabeled pair (x1,i, x2,i) is represented as an edge between nodes corresponding to x1,i and X2,i in the graph.
+    An edge indicates that the two features must have the same label.
+    Given a sufficient number of randomly drawn unlabeled examples (i.e., edges), we will induce two completely connected components that together span the entire graph.
+    Each vertex within a connected component must have the same label &#8212; in the binary classification case, we need a single labeled example to identify which component should get which label.
+    (Blum a

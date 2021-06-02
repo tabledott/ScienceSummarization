@@ -1,0 +1,9 @@
+nd thus the system produces the following synthetic reference: For someone born here but has been sentimentally attached to a foreign country far from home, it is hard to believe this kind of changes.
+    The synthetic reference keeps the meaning of the original reference, but has a higher word overlap with the system output.
+    One of the implications of this design is the need to develop a large number of classifiers to test contextual substitutions.
+    For each word to be inserted into a reference sentence, we need to train a separate classifier.
+    In practice, this requirement is not a significant burden.
+    The training is done off-line and only once, and testing for contextual substitution is instantaneous.
+    Moreover, the first filtering step effectively reduces the number of potential candidates.
+    For example, to apply this approach to the 71,520 sentence pairs from the MT evaluation set (described in Section 4.1.2), we had to train 2,380 classifiers.
+    We also discovered that the key to t

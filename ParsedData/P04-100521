@@ -1,0 +1,8 @@
+f the source string using the syntactic parser based language model, is our best estimate of the probability of an analysis.
+    However, there is one additional complication that makes a marked improvement to the model&#8217;s performance.
+    Recall that we use the standard bottom-up dynamic programming TAG parsing algorithm to search for candidate parses.
+    This algorithm has n5 running time, where n is the length of the string.
+    Even though our sentences are often long, it is extremely unlikely that any repair will be longer than, say, 12 words.
+    So to increase processing speed we only compute analyses for strings of length 12 or less.
+    For every such substring that can be analyzed as a repair we calculate the repair odds, i.e., the probability of generating this substring as a repair divided by the probability of generating this substring via the non-repair rules, or equivalently, the odds that this substring constitutes a repair.
+    The substrings with high repair odds are likely to be repai

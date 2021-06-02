@@ -1,0 +1,9 @@
+aged perceptron algorithm of Collins (2002).
+			In that algorithm, the single highest scoring tree (or structure) is used toupdate the weight vector.
+			However, MIRA aggres sively updates w to maximize the margin between 527 the correct tree and the highest scoring tree, which has been shown to lead to increased accuracy.
+			3.2 Factored MIRA.
+			It is also possible to exploit the structure of the output space and factor the exponential number of mar gin constraints into a polynomial number of local constraints (Taskar et al, 2003; Taskar et al, 2004).
+			For the directed maximum spanning tree problem,we can factor the output by edges to obtain the fol lowing constraints: min ? ?w(i+1) ? w(i) ? ?
+			s.t. s(l, j) ? s(k, j) ? 1 ?(l, j) ? yt, (k, j) /?
+			yt This states that the weight of the correct incomingedge to the word xj and the weight of all other in coming edges must be separated by a margin of 1.
+			It is easy to show that when all these constraintsare satisfied, the correct spanning tree and all inco

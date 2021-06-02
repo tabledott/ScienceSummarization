@@ -1,0 +1,8 @@
+will have a class value of 2, and the remaining two will have a class value of 1.
+    After training, the mention-ranking model is applied to rank the candidate antecedents for an active mention in a test text as follows.
+    Given an active mention mk, we follow Denis and Baldridge (2008) and use an independently-trained classifier to determine whether mk is discourse-new.
+    If so, mk will not be resolved.
+    Otherwise, we create test instances for mk by pairing it with each of its preceding mentions.
+    The test instances are then presented to the ranker, and the preceding mention that is assigned the largest value by the ranker is selected as the antecedent of mk.
+    The discourse-new classifier used in the resolution step is trained with 26 of the 37 features2 described in Ng and Cardie (2002a) that are deemed useful for distinguishing between anaphoric and non-anaphoric mentions.
+    These features can be broadly divided into two types: (1) features that encode the form of the mention (e.g., NP type

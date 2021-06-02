@@ -1,0 +1,6 @@
+kups in precomputed matrices.
+    This idea arises in our formulation out of the need to compute probability sums given as infinite series.
+    Graham, Harrison, and Ruzzo (1980) use a nonprobabilistic version of the same technique to create a highly optimized Earley-like parser for general CFGs that implements prediction and completion by operations on Boolean matrices.'
+    The matrix inversion method for dealing with left-recursive prediction is borrowed from the LRI algorithm of Jelinek and Lafferty (1991) for computing prefix probabilities for SCFGs in CNF.18 We then use that idea a second time to deal with the similar recursion arising from unit productions in the completion step.
+    We suspect, but have not proved, that the Earley computation of forward probabilities when applied to a CNF grammar performs a computation that is isomorphic to that of the LRI algorithm.
+    In any case, we believe that the parser-oriented view afforded by the Earley framework makes for a very intuitive solution to the pr

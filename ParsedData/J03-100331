@@ -1,0 +1,8 @@
+e algorithm then branches over all these possibilities.
+    Once a mapping 7r has been found that has exactly as many elements as H has vertices, we have found a subgraph isomorphism.
+    If there are still unmatched vertices in H, or if all possible extensions with vertex y have been checked and no matching can be found, the test for subgraph isomorphism has failed.
+    The algorithm outlined in Figures 6 and 8 has been implemented in Java 2 (J2SE, version 1.4).
+    The implemented version of the algorithm is actually more efficient than the sketch suggests, because various calculations need not be repeated in each iteration (the set of distractors and the set G.neighbors(H), for example).
+    In addition, the user has the possibility of specifying the cost function in whatever way he or she sees fit.
+    A full-fledged performance analysis of the current implementation is beyond the scope of this article.
+    Such an analysis would be complicated by the fact that there are many kinds of graphs (dense, spars

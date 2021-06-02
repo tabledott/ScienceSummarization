@@ -1,0 +1,8 @@
+, y) into p(x, y) = p(y|x)p(x), we can see that pt(x, y) can deviate from ps(x, y) in two different ways, corresponding to two different kinds of domain adaptation: Case 1 (Labeling Adaptation): pt(y|x) deviates from ps(y|x) to a certain extent.
+    In this case, it is clear that our estimation of ps(y|x) from the labeled source domain instances will not be a good estimation of pt(y|x), and therefore domain adaptation is needed.
+    We refer to this kind of adaptation as function/labeling adaptation.
+    Case 2 (Instance Adaptation): pt(y|x) is mostly similar to ps(y|x), but pt(x) deviates from ps(x).
+    In this case, it may appear that our estimated ps(y|x) can still be used in the target domain.
+    However, as we have pointed out, the estimation of ps(y|x) depends on the empirical distribution &#65533;ps(x, y), which deviates from pt(x, y) due to the deviation of ps(x) from pt(x).
+    In general, the estimation of ps(y|x) would be more influenced by the instances with high ps(x, y) (i.e., high J5s(x)).
+  

@@ -1,0 +1,12 @@
+dices, and the words of the sentence.
+    It is well known that constituent length influences parse probability, but PCFGs cannot easily take this information into account.
+    Another benefit of our feature based model is that it effortlessly allows smoothing over previously unseen rules.
+    While the rule may be novel, it will likely contain features which are not.
+    Practicality comes from three sources.
+    We made use of stochastic optimization methods which allow us to find optimal model parameters with very few passes through the data.
+    We found no difference in parser performance between using stochastic gradient descent (SGD), and the more common, but significantly slower, L-BFGS.
+    We also used limited parallelization, and prefiltering of the chart to avoid scoring rules which cannot tile into complete parses of the sentence.
+    This speed-up does not come with a performance cost; we attain an F-score of 90.9%, a 14% relative reduction in errors over previous work on WSJ15.
+  
+  
+    Our pa

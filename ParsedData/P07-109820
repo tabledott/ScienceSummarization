@@ -1,0 +1,9 @@
+d PASN when combined with the question&#8217;s BOW feature alone, i.e. no PT is used.
+    The results, reported in Figure 6, show that this time PASN performs better than PAS.
+    This suggests that the dependencies between the nested PASs are in some way captured by the PT information.
+    Indeed, it should be noted that we join predicates only in case one is subordinate to the other, thus considering only a restricted set of all possible predicate dependencies.
+    However, the improvement over PAS confirms that PASN is the right direction to encode shallow semantics from different sentence predicates.
+    The output of the answer classifier can be used to re-rank the list of candidate answers of a QA system.
+    Starting from the top answer, each instance can be classified based on its correctness with respect to the question.
+    If it is classified as correct its rank is unchanged; otherwise it is pushed down, until a lower ranked incorrect answer is found.
+    We used the answer classifier with the high

@@ -1,0 +1,9 @@
+wever, we see a large improvement from adding reranker-best sentences.
+    One may expect to see a monotonic improvement from this technique, but this is not quite the case, as seen when we add 1,000k sentences.
+    This may be due to some sections of NANC being less similar to WSJ or containing more noise.
+    Another possibility is that these sections contains harder sentences which we cannot parse as accurately and thus are not as useful for self-training.
+    For our remaining experiments, we will only use reranker-best lists.
+    We also attempt to discover the optimal number of sentences to add from NANC.
+    Much of the improvement comes from the addition of the initial 50,000 sentences, showing that even small amounts of new data can have a significant effect.
+    As we add more data, it becomes clear that the maximum benefit to parsing accuracy by strictly adding rerankerbest sentences is about 0.7% and that f-scores will asymptote around 91.0%.
+    We will return to this when we consider the relativ

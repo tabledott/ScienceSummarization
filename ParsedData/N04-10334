@@ -1,0 +1,10 @@
+gnment models using GIZA++ and compute the Viterbi word alignment of the training corpus.
+    This is done for both translation directions.
+    We take the union ofboth alignments to obtain a symmetrized word alignment matrix.
+    This alignment matrix is the starting point for the phrase extraction.
+    The following criterion defines the set of bilingual phrases BP of the sentence pair (fJ1 ; eI1) and the alignment matrix A &#8838; J &#215; I that is used in the translation system.
+    This criterion is identical to the alignment template criterion described in (Och et al., 1999).
+    It means that two phrases are considered to be translations of each other, if the words are aligned only within the phrase pair and not to words outside.
+    The phrases have to be contiguous.
+    To use phrases in the translation model, we introduce the hidden variable S. This is a segmentation of the sentence pair (fJ 1 ; eI 1) into K phrases ( &#732;fK 1 ; &#732;eK1 ).
+    We use a one-toone phrase alignment, i.e. one sourc

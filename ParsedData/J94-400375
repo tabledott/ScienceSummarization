@@ -1,0 +1,7 @@
+ the parameters of a category,' any occurrence of a word that belongs to that category is counted as an occurrence of the category.
+    This means that each occurrence of an ambiguous word is counted as an occurrence of all the categories to which the word belongs and not just the category that corresponds to the specific occurrence.
+    A substantial amount of noise is introduced by this training method, which is a consequence of the circularity problem.
+    To avoid the noise, it would be necessary to tag each occurrence of an ambiguous word with the appropriate category.
+    As explained by Yarowsky, however, this noise can usually be tolerated.
+    The &amp;quot;correct&amp;quot; parameters of a certain class are acquired from all its occurrences, whereas the &amp;quot;incorrect&amp;quot; parameters are distributed through occurrences of many different classes and usually do not produce statistically significant patterns.
+    To reduce the noise further, Yarowsky uses a system of weights that assigns lowe

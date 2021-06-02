@@ -1,0 +1,8 @@
+mata is intended to capture as general language regularities rather than properties of rare or corpusspecific words only.
+    This significantly simplifies training data requirements: we can induce guessing rules from a general-purpose lexicon.'
+    First, we no longer depend on the size or even existence of an annotated training corpus.
+    Second, we do not require any annotation to be done for the training; instead, we reuse the information stated in the lexicon, which we can automatically map to a particular tag set that a tagger is trained to.
+    We also use the actual frequencies of word usage, collected from a raw corpus.
+    This allows for the discrimination between rules that are no longer productive (but have left their imprint on the basic lexicon) and rules that are productive in real-life texts.
+    For guessing rules to capture general language regularities, the lexicon should be as general as possible (i.e., should list all possible POS-tags for a word) and large.
+    The corresponding corpus

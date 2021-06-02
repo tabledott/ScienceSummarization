@@ -1,0 +1,9 @@
+ search is used which may produce sub-optimal solutions.
+    This is not the case when using ILP.
+  
+  
+    Our underlying model is a modified labelled version2 of McDonald et al. (2005b): where x is a sentence, y is a set of labelled dependencies, f(i, j, l) is a multidimensional feature vector representation of the edge from token i to token j with label l and w the corresponding weight vector.
+    For example, a feature f101 in f could be: where t(i) is the word at token i and p(j) the partof-speech tag at token j. Decoding in this model amounts to finding the y for a given x that maximises s(x, y): while fulfilling the following constraints: T1 For every non-root token in x there exists exactly one head; the root token has no head.
+    T2 There are no cycles.
+    Thus far, the formulation follows McDonald et al. (2005b) and corresponds to the Maximum Spanning Tree (MST) problem.
+    In addition to T1 and T2, we include a set of linguistically motivated constraints: A1 Heads are not allowed to have more th

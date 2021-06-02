@@ -1,0 +1,8 @@
+t and reduce the number of errors with very little additional effort by exploiting the disagreement between different language models.
+    Although the approach is applicable to any type of language model, we focus on the case of statistical disambiguators that are trained on annotated corpora.
+    The examples of the task that are present in the corpus and its annotation are fed into a learning algorithm, which induces a model of the desired input-output mapping in the form of a classifier.
+    We use a number of different learning algorithms simultaneously on the same training corpus.
+    Each type of learning method brings its own &amp;quot;inductive bias&amp;quot; to the task and will produce a classifier with slightly different characteristics, so that different methods will tend to produce different errors.
+    We investigate two ways of exploiting these differences.
+    First, we make use of the gang effect.
+    Simply by using more than one classifier, and voting between their outputs, we expect to el

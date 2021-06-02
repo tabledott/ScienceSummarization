@@ -1,0 +1,13 @@
+orm distribution over .
+    We experimented several schemes of approximation, including a uniform distribution, and (4) worked the best and is adopted here.
+    One may consider training directly and use it to score paths in the Bell tree.
+    The problem is that 1) the size of from which takes value is variable; 2) the start action depends on all entities in , which makes it difficult to train directly.
+  
+  
+    As shown in Section 2, the search space of the coreference problem can be represented by the Bell tree.
+    Thus, the search problem reduces to creating the Bell tree while keeping track of path scores and picking the top-N best paths.
+    This is exactly what is described in Algorithm 1.
+    In Algorithm 1, contains all the hypotheses, or paths from the root to the current layer of nodes.
+    Variable stores the cumulative score for a coreference result .
+    At line 1, is initialized with a single entity consisting of mention , which corresponds to the root node of the Bell tree in Figure 1.
+    L

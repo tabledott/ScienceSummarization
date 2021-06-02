@@ -1,0 +1,9 @@
+  as re la t ions 3.1 The L IST type as a data  type A list of words will be defined in a LISP-like fash- ion as either the END of a list or a CONS with two attributes first and rest: LIST = END V CONS[vmsr:WORD, nEsT:LIST].
+  WORD denotes the set of word forms, and the list.
+  of words "John likes Mary" will be encoded as JOHN CONS [Fm.sr: CONS [FroST: LIKES L,-,:ST: LR .&lt;T:  ONS V"ST:  AR*l]t,, sr: j j which is a well-formed list.
+  with respect to the LIST definition.
+  (We shall use in the following a more concise syntax for lists: END will be written as 0; CONS[FIRsT:WORD, nEsr:klST] will be written as (WORD .
+  LIST); lists will be written using the usual abbre- viation for lists: the list of words "John likes Mary" will then be written as (JOHN LIKES MARY}).
+  3.2 The APPEND type as a relation One can also understand feature types as relations much like those in PROLOG.
+  Let us recall the clas- sical PROLOG definition of append: append( [] ,L,L).
+  append( [XlL1] ,L2, [XlL3] ) :-  append(L1,L2,L3).

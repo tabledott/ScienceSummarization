@@ -1,0 +1,7 @@
+olog term wff(p,[arg1',...,argn1) where argi' is the encoding of the subexpression argi.
+    A constant term is represented by the homonymous Prolog constant.
+    A complex term is represented by the Prolog term term(quant,var,restrict') where restrict' is the encoding of the wff that forms the restriction of the quantifier.
+    Form ==&gt; a wff with in-place complex terms Complete?
+    ==&gt; true iff only full scopings are allowed ScopedForm &lt;== a full or partial scoping of Form Applies terms at various level of embedding in Form, including applying to the entire Form, and to opaque argument positions inside Form.
+    Form ==&gt; a term or a wff with in-Place complex terms ScopedForm &lt;== Form with opaque argument positions recursively scoped Scopes arguments of the given Form recursively.
+    % pull_opaque_args(Pred, ArgIndex, Args, ScopedArgs) the wff whose args are being scoped argument currently being scoped ArgIndex on argument positions recursively scoped Scopes a given argument if opaque; other

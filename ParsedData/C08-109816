@@ -1,0 +1,17 @@
+e dropping the factor p(word) has no influence on the ranking of the different tag sequences.
+			6In earlier experiments, we had used a much larger num ber of word classes.
+			Decreasing their number to 4 turned out to be better.
+			780 vided by the number of different POS tags is above a threshold of 1.
+			More precisely, if T ? is the set of POS tags that occurred with suffix ?, |T | is the size of the set T , f ? is the frequency of suffix ?, and p ?
+			(t) is the probability of POS tag t among the words with suffix ?, then the following condition must hold: f a?
+			|T a?
+			| ? t?T a?
+			p a?
+			(t) log p a?
+			(t) p ?
+			(t) &lt; 1 The POS probabilities are recursively smoothedwith the POS probabilities of shorter suffixes us ing Witten-Bell smoothing.
+	
+	
+			Our tagger was first evaluated on data from theGerman Tiger treebank.
+			The results were com pared to those obtained with the TnT tagger (Brants, 2000) and the SVMTool (Gim?enez andM`arquez, 2004), which is based on support vec tor machines.
+			7 T

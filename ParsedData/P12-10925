@@ -1,0 +1,7 @@
+s swith the last word replaced by wordw, and g(?, ?) is the scoring function that represents the neural networks used.
+			We want g(s, d) to be larger than g(sw, d) by a margin of 1, for any other wordw in the vocabulary, which corresponds to the train ing objective of minimizing the ranking loss for each (s, d) found in the corpus: Cs,d = ? w?V max(0, 1?
+			g(s, d) + g(sw, d)) (1)Collobert and Weston (2008) showed that this rank ing approach can produce good word embeddings that are useful in several NLP tasks, and allowsmuch faster training of the model compared to op timizing log-likelihood of the next word.
+			2.2 Neural Network Architecture.
+			We define two scoring components that contribute to the final score of a (word sequence, document) pair.
+			The scoring components are computed by two neural networks, one capturing local context and the other global context, as shown in Figure 1.
+			We now describe how each scoring component is computed.The score of local context uses the local word se quence s. 

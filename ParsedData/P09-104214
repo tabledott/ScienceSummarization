@@ -1,0 +1,10 @@
+ trained on sections 2-21 of the Penn treebank with dependencies extracted using the head rules of Yamada and Matsumoto (2003b).
+    For Bulgarian we trained the Stanford POS tagger (Toutanova et al., 2003) on the Bulgtreebank corpus from CoNLL X.
+    The Spanish Europarl data was POS tagged with the FreeLing language analyzer (Atserias et al., 2006).
+    The discriminative model used the same features as MSTParser, summarized in Table 1.
+    In order to evaluate our method, we a baseline inspired by Hwa et al. (2005).
+    The baseline constructs a full parse tree from the incomplete and possibly conflicting transferred edges using a simple random process.
+    We start with no edges and try to add edges one at a time verifying at each step that it is possible to complete the tree.
+    We first try to add the transferred edges in random order, then for each orphan node we try all possible parents (both in random order).
+    We then use this full labeling as supervision for a parser.
+    Note that this baseline

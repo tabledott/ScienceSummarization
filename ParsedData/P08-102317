@@ -1,0 +1,9 @@
+    This confirms the fact that we need exponentially large kbest lists with the explosion of alternatives, whereas a forest can encode these information compactly.
+    We also conduct experiments on a larger dataset, which contains 2.2M training sentence pairs.
+    Besides the trigram language model trained on the English side of these bitext, we also use another trigram model trained on the first 1/3 of the Xinhua portion of Gigaword corpus.
+    The two LMs have distinct weights tuned by minimum error rate training.
+    The dev and test sets remain the same as above.
+    Furthermore, we also make use of bilingual phrases to improve the coverage of the ruleset.
+    Following Liu et al. (2006), we prepare a phrase-table from a phrase-extractor, e.g.
+    Pharaoh, and at decoding time, for each node, we construct on-the-fly flat translation rules from phrases that match the sourceside span of the node.
+    These phrases are called syntactic phrases which are consistent with syntactic constituents (Chiang, 2005)

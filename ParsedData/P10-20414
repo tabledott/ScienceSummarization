@@ -1,0 +1,6 @@
+ of scoring by perplexity according to an in-domain language model.
+    First, note that selecting segments based on a perplexity threshold is equivalent to selecting based on a cross-entropy threshold.
+    Perplexity and cross-entropy are monotonically related, since the perplexity of a string s according to a model M is simply bHmW, where HM(s) is the cross-entropy of s according to M and b is the base with respect to which the cross-entropy is measured (e.g., bits or nats).
+    However, instead of scoring text segments by perplexity or cross-entropy according to the in-domain language model, we score them by the difference of the cross-entropy of a text segment according to the in-domain language model and the cross-entropy of the text segment according to a language model trained on a random sample of the data source from which the text segment is drawn.
+    To state this formally, let I be an in-domain data set and N be a non-domain-specific (or otherwise not entirely in-domain) data set.
+    Let HI(s) b

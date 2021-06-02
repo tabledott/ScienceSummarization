@@ -1,0 +1,6 @@
+ (left figure) is used to generate the sentence from left to right; the inverted alignment model (right figure) is used to generate the sentence from bottom to top.
+    The following notation is used: ei&#8722;1, ei&#8722;2 are the immediate predecessor target words, ei is the word to be hypothesized, p(ei  |ei&#8722;1,ei&#8722;2) denotes the trigram language model probability, p(fbi  |ei) denotes the lexicon probability for translating the target word ei as source word fbi, and p(bi  |bi&#8722;1,J) is the distortion probability for covering source position bi after source position bi&#8722;1.
+    Note that in equation (2) two products over i are merged into a single product over i.
+    The translation probability p(f1J  |eI1) is computed in the maximum approximation using the distortion and the lexicon probabilities.
+    Finally, p(J  |I) is the sentence length model, which will be dropped in the following (it is not used in the IBM-4 translation model).
+    For each source sentence fJ1 to be translated, we 

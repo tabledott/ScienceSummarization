@@ -1,0 +1,7 @@
+ of tokens.
+    For instance, a first-name-dictionary history view would say that the current token is not a name in over 99% of the cases.
+    Rather than adding features which activate both when the token in question is and when it is not a first name, we only include features which activate when the token is a first name.
+    A feature which activated when a token was not a first name, while theoretically not harmful, would have practical disadvantages.
+    First of all, the feature would probably be redundant, because if the frequency of a future given a first-namedictionary hit is constrained (by equation 4), then the future frequency given a non-hit is also implicitly constrained.
+    Secondly, since this feature would fire on nearly every token, it would slow down run-time performance.
+    Finally, while maximum entropy models are designed to handle feature overlap, a very high degree of overlap requires more iterations of the maximum entropy estimation routine and can lead to numerical difficulties (R

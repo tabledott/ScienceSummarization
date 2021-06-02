@@ -1,0 +1,9 @@
+ acts as a filter.
+    A list of keywords is maintained for each node in a syntactic tree.
+    This list contains all the nouns, verbs, and adjectives that are spanned by a syntactic node.
+    Before merging two nodes, we check to see whether the keyword lists associated with them share words with other nodes.
+    That is, supposed we just merged nodes A and B, and they are expanded with the same syntactic rule into A1A2...An and B1B2...Bn respectively; before we merge each Ai with Bi, we check for each Bi if its keyword list shares common words with any Aj (j =&#65533; i).
+    If they do not, we continue the top-down merging process; otherwise we stop.
+    In our current implementation, a pair of synonyms can not stop an otherwise legitimate merging, but it&#8217;s possible to extend our keyword checking process with the help of lexical resources such as WordNet in future work.
+    Mapping Parse Forests into Finite State Automata.
+    The process of mapping Parse Forests into Finite State Automata is simple.

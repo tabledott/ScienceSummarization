@@ -1,0 +1,6 @@
+he analysis working-s additionally lowers the cost of the stem working.
+    Clearly we would like stems to be in turn analyzable as stems + suffixes.
+    Implementing this suggestion involves the following modifications: (i) Each pointer to a stem (and these are found both in the compressed representation of each individual word in the corpus, and inside the individual signatures of the morphological model) must contain a flag indicating whether what follows is a pointer to a simple member of the stem list (as in the original model), or a triple pointer to a signature, stem, and suffix.
+    In the latter case, which would be the case for the word iwork-ingl-s, the pointer to the stem consists of a triple identical to the signature for the word work-ing.
+    (ii) The number of words in the corpus has now changed, in that the word [work-ingl-s now contains two words, not one.
+    We will need to distinguish between counts of a word w where w is a freestanding word, and counts where it is part of a larger word; 

@@ -1,0 +1,8 @@
+enerative model score as another feature, with some weight in the linear model learned by the perceptron algorithm.
+    This sort of scenario was used in Roark et al. (2004) for training an n-gram language model using the perceptron algorithm.
+    We follow that paper in fixing the weight of the generative model, rather than learning the weight along the the weights of the other perceptron features.
+    The value of the weight was empirically optimized on the held-out set by performing trials with several values.
+    Our optimal value was 10.
+    In order to train this model, we had to provide generative model scores for strings in the training set.
+    Of course, to be similar to the testing conditions, we cannot use the standard generative model trained on every sentence, since then the generative score would be from a model that had already seen that string in the training data.
+    To control for this, we built ten generative models, each trained on 90 percent of the training data, and used each of the te

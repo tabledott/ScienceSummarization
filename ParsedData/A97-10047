@@ -1,0 +1,7 @@
+ are the unknown parameters of the model, and where each aj corresponds to a fi, or a feature.
+    Thus the probability of seeing an actual sentence boundary in the context c is given by p(yes, c).
+    The contextual information deemed useful for sentence-boundary detection, which. we described earlier, must be encoded using features.
+    For example, a useful feature might be: This feature will allow the model to discover that the period at the end of the word Mr. seldom occurs as a sentence boundary.
+    Therefore the parameter corresponding to this feature will hopefully boost the probability p(no, c) if the Prefix is Mr.
+    The parameters are chosen to maximize the likelihood of the training data, using the Generalized Iterative Scaling (Darroch and Ratcliff, 1972) algorithm.
+    The model also can be viewed under the Maximum Entropy framework, in which we choose a distribution p that maximizes the entropy H (p) where /:5(b, c) is the observed distribution of sentenceboundaries and contexts in the traini

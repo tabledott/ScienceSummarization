@@ -1,0 +1,9 @@
+and ivriB are models of A and B at step i. U is a large pool of unlabelled sentences.
+    Ui is a small cache holding subset of U at step i. L is the manually labelled seed data.
+    L'A and LiB are the labelled training examples for A and B at step i. and assign scores to them according to their scoring functions JA and fB.
+    Select new parses {PA} and {PB} according to some selection method S, which uses the scores from fA and fB.
+    LiA+1- is LiA augmented with {PB} L1- is LiB augmented with {PA} data.
+    In the co-training process the two parsers alternate between teacher and student.
+    We use a method which builds on this idea, Stop-n, which chooses those sentences (using the teacher's labels) that belong to the teacher's n-highest scored sentences.
+    For this paper we have used a simple scoring function and selection method, but there are alternatives.
+    Other possible scoring functions include a normalized version of fprob which does not penalize longer sentences, and a scoring function based

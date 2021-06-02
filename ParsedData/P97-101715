@@ -1,0 +1,13 @@
+e ill-formed katakana sequences, possibly proposed by optical character recognition.
+    Perhaps uncharitably, we can view optical character recognition (OCR) as a device that garbles perfectly good katakana sequences.
+    Typical confusions made by our commercial OCR system include for 1- for 1&amp;quot;, 7 for 7 , and 7 for 1.
+    To generate preOCR text, we collected 19,500 characters worth of katakana words, stored them in a file, and printed them out.
+    To generate post-OCR text, we OCR'd the printouts.
+    We then ran the EM algorithm to determine symbol-mapping (&amp;quot;garbling&amp;quot;) probabilities.
+    Here is part of that table: This model outputs a superset of the 81 katakana symbols, including spurious quote marks, alphabetic symbols, and the numeral 7.
+  
+  
+    We can now use the models to do a sample backtransliteration.
+    We start with a katakana phrase as observed by OCR.
+    We then serially compose it with the models, in reverse order.
+    Each intermediate stage is a WFSA that en

@@ -1,0 +1,9 @@
+obal features for each candidate tagged sequence.
+    As input it takes a sentence, along with a proposed segmentation (i.e., an assignment of a tag for each word in the sentence).
+    As output, it produces a set of feature strings.
+    We will use the following tagged sentence as a running example in this section: An example feature type is simply to list the full strings of entities that appear in the tagged input.
+    In this example, this would give the three features WE=Gen Xer WE=The Day They Shot John Lennon WE=Dougherty Arts Center Here WE stands for &#8220;whole entity&#8221;.
+    Throughout this section, we will write the features in this format.
+    The start of the feature string indicates the feature type (in this case WE), followed by =.
+    Following the type, there are generally 1 or more words or other symbols, which we will separate with the symbol .
+    A seperate module in our implementation takes the strings produced by the global-feature for is if begins with a lowercase letter, otherwi

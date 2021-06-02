@@ -1,0 +1,8 @@
+red with the anaphor to form a negative example.
+    For example, if markables a, b, and B1 appear between Al and A2, then the negative examples are a - A2, b - A2, and B1 - A2.
+    Note that a and b do not appear in any coreference chain, while B1 appears in another coreference chain.
+    For an annotated noun phrase in a coreference chain in a training document, the same noun phrase must be identified as a markable by our pipeline of languageprocessing modules before this noun phrase can be used to form a feature vector for use as a training example.
+    This is because the information necessary to derive a feature vector, such as semantic class and gender, is computed by the languageprocessing modules.
+    If an annotated noun phrase is not identified as a markable, it will not contribute any training example.
+    To see more clearly how training examples are generated, consider the following four sentences: Each sentence is shown twice with different noun phrase boundaries.
+    Sentences labeled (1) are o

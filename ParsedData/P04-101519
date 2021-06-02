@@ -1,0 +1,8 @@
+reduce the total number of left-child chains of length greater than 2 by half, while leaving the number of words in the held-out corpus with an unobserved left-child chain (out-of-vocabulary rate &#8211; OOV) to just one in every thousand words.
+    For this paper, we wanted to compare the results of a perceptron model with a generative model for a comparable feature set.
+    Unlike in Roark (2001a; 2004), there is no look-ahead statistic, so we modified the feature set from those papers to explicitly include the lexical item and POS tag of the next word.
+    Otherwise the features are basically the same as in those papers.
+    We then built a generative model with this feature set and the same tree transform, for use with the beam-search parser from Roark (2004) to compare against our baseline perceptron model.
+    To concisely present the baseline feature set, let us establish a notation.
+    Features will fire whenever a new node is built in the tree.
+    The features are labels from the left-context, i.e.

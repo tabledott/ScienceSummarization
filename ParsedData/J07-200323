@@ -1,0 +1,7 @@
+ the initial phrase length limit used in training (as it does in our experiments), but in practice it can be adjusted separately to maximize accuracy or speed.
+    We often want to find not only the best derivation for a French sentence but a list of the k-best derivations.
+    These are used for minimum-error-rate training and for rescoring with a language model (Section 5.3.1).
+    We describe here how to do this using the lazy algorithm of Huang and Chiang (2005).
+    Part of this method will also be reused in our algorithm for fast parsing with a language model (Section 5.3.4).
+    If we conceive of lists as functions from indices to values, we may create a virtual list, a function that computes member values on demand instead of storing all the values statically.
+    The heart of the k-best algorithm is a function MERGEPRODUCTS, which takes a set G of tuples of (virtual) lists with an operator &#8855; and returns a virtual list: Example illustrating MERGEPRODUCTS, where L1 = {1, 2,6, 10} and L2 = {1, 4, 

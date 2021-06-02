@@ -1,0 +1,9 @@
+, thus allowing the implicit modeling of cognates.
+    Our aim is to induce a model which concentrates probability on highly frequent patterns while still allowing for the possibility of those previously unseen.
+    Dirichlet processes are particularly suitable for such conditions.
+    In this framework, we can encode prior knowledge over the infinite sets of possible morpheme strings as well as abstract morphemes.
+    Distributions drawn from a Dirichlet process nevertheless produce sparse representations with most probability mass concentrated on a small number of observed and predicted patterns.
+    Our model utilizes a Dirichlet process prior for each language, as well as for the cross-lingual links (abstract morphemes).
+    Thus, a distribution over morphemes and morpheme alignments is first drawn from the set of Dirichlet processes and then produces the observed data.
+    In practice, we never deal with such distributions directly, but rather integrate over them during Gibbs sampling.
+    In the next se

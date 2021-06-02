@@ -1,0 +1,14 @@
+h content word, Arabic stem).
+			3.2.2 Arabic Segmentation Features An Arabic segmenter similar to (Lee et al, 2003)provides the segmentation features.
+			A small dictionary is used (with 71 rules) to restrict the set of Ara bic segments that can align to English stopwords, for example that ?the?
+			aligns to ?Al#?
+			and that ?for?, ?in?and ?to?
+			align to ?b#?
+			and ?her?
+			aligns with the suffix ?+hA?.
+			Segmentation features also help align un known words, as stems might be seen in the training corpus with other prefixes or suffixes.
+			Additionally, the ability to align the prefix and suffix accurately,tends to ?drag?
+			the unknown stem to its English tar get.
+			91 3.2.3 WordNet Features WordNet features provide normalization on the English words.
+			The feature is instantiated for nouns,adjectives, adverbs and verbs following their definitions in WordNet.
+			If the Arabic word has a seg mentation then the feature is ?(WordNet synset id, Arabic stem), otherwise it is ?(WordNet synset id,Arabic word

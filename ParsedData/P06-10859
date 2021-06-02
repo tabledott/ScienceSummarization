@@ -1,0 +1,7 @@
+ We achieve this goal by basing our model on the Dirichlet process (DP), a distribution used in nonparametric Bayesian statistics.
+    Our unigram model of word frequencies is defined as where the concentration parameter &#945;0 and the base distribution P0 are parameters of the model.
+    Each word wi in the corpus is drawn from a distribution G, which consists of a set of possible words (the lexicon) and probabilities associated with those words.
+    G is generated from a DP(&#945;0, P0) distribution, with the items in the lexicon being sampled from P0 and their probabilities being determined by &#945;0, which acts like the parameter of an infinite-dimensional symmetric Dirichlet distribution.
+    We provide some intuition for the roles of &#945;0 and P0 below.
+    Although the DP model makes the distribution G explicit, we never deal with G directly.
+    We take a Bayesian approach and integrate over all possible values of G. The conditional probability of choosing to generate a word from a particular lexi

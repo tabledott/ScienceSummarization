@@ -1,0 +1,6 @@
+ribution to sample new configurations.
+    The proposal distri4Because the cue phrase language model 0 is used across the entire dataset, transformations affect the likelihood of all documents in the corpus.
+    For clarity, our exposition will focus on the single-document case. bution does not affect the underlying probabilistic model &#8211; Metropolis-Hastings will converge to the same underlying distribution for any non-degenerate proposal.
+    However, a well-chosen proposal distribution can substantially speed convergence.
+    Our basic proposal distribution selects an existing segmentation point with uniform probability, and considers a set of local moves.
+    The proposal is constructed so that no probability mass is allocated to moves that change the order of segment boundaries, or merge two segments; one consequence of this restriction is that moves cannot add or remove segments.5 We set the proposal distribution to decrease exponentially with the move distance, thus favoring incremental transformat

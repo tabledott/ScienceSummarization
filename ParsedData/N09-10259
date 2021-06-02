@@ -1,0 +1,8 @@
+mes the decoder uses questionable rules, for example: This rule is learned from 62 cases in our training data, where the VBN is almost always the word given.
+    However, the decoder misuses this rule with other VBNs.
+    So we can add a feature that penalizes any rule in which a PP dominates a VBN and NP-C.
+    The feature class bad-rewrite comprises penalties for the following configurations based on our analysis of the tuning set: Node count features It is possible that the decoder creates English trees with too many or too few nodes of a particular syntactic category.
+    For example, there may be an tendency to generate too many determiners or past-tense verbs.
+    We therefore add a count feature for each of the 109 (non-split) English nonterminal symbols.
+    For a rule like the feature node-count-NPB gets value 1, nodecount-NNP gets value 2, and all others get 0.
+    Insertion features Among the rules we extract from bilingual corpora are target-language insertion rules, which have a word on the Engli

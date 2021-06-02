@@ -1,0 +1,5 @@
+ar to k-best list generation.
+    The four rules to the left of the grid can be thought of like a 4-best list for a single &#8722;LM rule item (X --&#65533; cong X); the three items above the grid, like a 3-best list for the single &#8722;LM item [X, 6,8]; and the new items to be deduced, like a k-best list for [X, 5, 8], except that we don&#8217;t know what k is in advance.
+    If we could use MERGEPRODUCTS to enumerate the new items best-first, then we could enumerate them until one of them was pruned from the new cell; then the rest of items, which would have a worse score than the pruned item, could be preemptively pruned.
+    MERGEPRODUCTS expects its input lists to be sorted best-first, and the &#174; operator to be monotonic in each of its arguments.
+    For cube pruning, we sort items (both in the inputs to MERGEPRODUCTS and in the priority queue inside MERGEPRODUCTS) according to their +LM score, including the heuristic function h. The &#174; operator we use takes one or more antecedent items and for

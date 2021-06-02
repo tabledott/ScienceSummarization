@@ -1,0 +1,6 @@
+ of many supervised NLP tasks (Koo et al., 2008; Turian et al., 2010; T&#228;ckstr&#246;m et al., 2012, inter alia).
+    We use a similar approach here to improve tagging performance for online conversational text.
+    We also make our induced clusters publicly available in the hope that they will be useful for other NLP tasks in this genre.
+    We obtained hierarchical word clusters via Brown clustering (Brown et al., 1992) on a large set of unlabeled tweets.4 The algorithm partitions words into a base set of 1,000 clusters, and induces a hierarchy among those 1,000 clusters with a series of greedy agglomerative merges that heuristically optimize the likelihood of a hidden Markov model with a one-class-per-lexical-type constraint.
+    Not only does Brown clustering produce effective features for discriminative models, but its variants are better unsupervised POS taggers than some models developed nearly 20 years later; see comparisons in Blunsom and Cohn (2011).
+    The algorithm is attractive for our purpos

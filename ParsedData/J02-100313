@@ -1,0 +1,11 @@
+ relation (e.g., &#8220;being considered by&#8221; or &#8220;being bought by&#8221;) to more than one other company.
+    To see the problems arising from overlapping Values, consider a KB that models which customer bought which types of desks, and where C = {a, b, c, d, e, f}:
+  
+  
+    (Desks of types a, b, and e were bought by Philips, and so on.
+    Note that desks of type a were bought by two different companies.)
+    Suppose a is the target, while the Attribute BOUGHT-BY is more &#8220;preferred&#8221; than COLOR.
+    The Value PHILIPS (being the BestValue of BOUGHT-BY, since it removes more distractors than the Value SONY) is chosen first, reducing the initial set C to {a, b, e}.
+    Now, the algorithm is doomed to end in Failure, since the different Values of COLOR are unable to remove the unwanted b without also sacrificing a.
+    None of this can be corrected, since the algorithm does not use backtracking.
+    Note that a uniquely identifying description of a would have been possible if only SONY had

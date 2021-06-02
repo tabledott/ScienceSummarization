@@ -1,0 +1,6 @@
+the heart of the prefix probability algorithm of Jelinek and Lafferty (1991).
+    The following definitions are relative to a given SCFG G. a) Two nonterminals X and Y are said to be in a left-corner relation b) The probabilistic left-corner relationl&#176; PL -= PL(G) is the matrix of probabilities P(X Y), defined as the total probability of choosing a production for X that has Y as a left corner: d) The probabilistic reflexive, transitive left-corner relation RL = RL(G) is a matrix of probability sums R(X 4L Y).
+    Each R(X Y) is defined as a series where we use the delta function, defined as S(X, Y) = 1 if X = Y, and 6 (X, Y) =0 if X Y.
+    The recurrence for RL can be conveniently written in matrix notation from which the closed-form solution is derived: An existence proof for RL is given in Appendix A.
+    Appendix B.3.1 shows how to speed up the computation of RL by inverting only a reduced version of the matrix I - PL.
+    The significance of the matrix RL for the Earley algorithm is that its elements

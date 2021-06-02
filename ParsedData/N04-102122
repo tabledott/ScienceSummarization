@@ -1,0 +1,8 @@
+ty, to transform one tree into another.
+    However, when training the model, trees for both the source and target languages are provided, in our case from the Chinese and English parsers.
+    We began with the tree-to-tree alignment model presented by Gildea (2003).
+    The model was extended to handle dependency trees, and to make use of the word-level alignments produced by the baseline MT system.
+    The probability assigned by the tree-to-tree alignment model, given the word-level alignment with which the candidate translation was generated, was used as a feature in our rescoring system.
+    We trained the parameters of the tree transformation operations on 42,000 sentence pairs of parallel ChineseEnglish data from the Foreign Broadcast Information Service (FBIS) corpus.
+    The lexical translation probabilities Pt were trained using IBM Model 1 on the 30 million word training corpus.
+    This was done to overcome the sparseness of the lexical translation probabilities estimated while training the tree-t

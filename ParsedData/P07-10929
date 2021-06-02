@@ -1,0 +1,7 @@
+, triangulation will often produce more varied translation distributions than the standard source-target approach.
+    We now formalise triangulation as a generative probabilistic process operating independently on phrase pairs.
+    We start with the conditional distribution over three languages, p(s, i|t), where the arguments denote phrases in the source, intermediate and target language, respectively.
+    From this distribution, we can find the desired conditional over the source-target pair by marginalising out the intermediate phrases:2 where (1) imposes a simplifying conditional independence assumption: the intermediate phrase fully represents the information (semantics, syntax, etc.) in the source phrase, rendering the target phrase redundant in p(s|i, t).
+    Equation (1) requires that all phrases in the intermediate-target bitext must also be found in the source-intermediate bitext, such that p(s|i) is defined.
+    Clearly this will often not be the case.
+    In these situations we could back-off to a

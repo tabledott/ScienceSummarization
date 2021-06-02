@@ -1,0 +1,5 @@
+lacing each local tree in the parse tree with its most frequently occuring Penn II format fragment.
+    This detransformation step is in principle an additional source of error, in that a parser could produce flawless parse trees in its particular tree representation, but the transformation to the corresponding Penn II tree representations might itself introduce errors.
+    For example, it might be that several different Penn II tree representations can correspond to a single parse tree, as is the case with a parser producing flattened tree representations.
+    To determine if detransformation can be done reliably, for each tree transformation, labeled precision and recall measures were calculated comparing the result of applying the transformation and the corresponding detransformation to the test corpus trees with the original trees of the test corpus.
+    In all cases except for the flattening transform these precision and recall measures were always greater than 99.5%, indicating that the transformation/d

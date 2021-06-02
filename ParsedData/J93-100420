@@ -1,0 +1,9 @@
+ifference becomes important when a single element of one sequence is being matched with multiple elements from the other.
+    In trace applications, such as genetic code matching, the single element is matched with just one of the multiple elements, and all of the others will be ignored.
+    In contrast, in time-warp applications such as speech template matching, the single element is matched with each of the multiple elements, and the single element will be used in multiple matches.
+    Interestingly enough, our application does not fit into either of Kruskal and Liberman's classes because our distance measure needs to compare the single element with an aggregate of the multiple elements.
+  
+  
+    It is convenient for the distance measure to be based on a probabilistic model so that information can be combined in a consistent way.
+    Our distance measure is an estimate of &#8212; log Prob(match j 6), where 6 depends on h and /2, the lengths of the two portions of text under consideration.
+    The log is in

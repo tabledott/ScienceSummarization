@@ -1,0 +1,10 @@
+the Stanford CRF-based Named Entity Recognizer (Finkel et al., 2004) for named entity tagging.
+    With these preprocessing components, RECONCILEACL09 uses heuristics to correctly extract approximately 90% of the annotated CEs for the MUC and ACE data sets.
+    Feature Set.
+    To achieve roughly state-of-theart performance, RECONCILEACL09 employs a fairly comprehensive set of 61 features introduced in previous coreference resolution systems (see Bengtson and Roth (2008)).
+    We briefly summarize the features here and refer the reader to Stoyanov et al. (2009) for more details.
+    Lexical (9): String-based comparisons of the two CEs, such as exact string matching and head noun matching.
+    Proximity (5): Sentence and paragraph-based measures of the distance between two CEs.
+    Grammatical (28): A wide variety of syntactic properties of the CEs, either individually or as a pair.
+    These features are based on part-of-speech tags, parse trees, or dependency relations.
+    For example: one feature indicates

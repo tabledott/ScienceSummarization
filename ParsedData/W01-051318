@@ -1,0 +1,9 @@
+e to emphasize n-grams that are semantically non-compositional.
+    Suppose we wanted to determine if C (defined above) were noncompositional.
+    Then given some meaning function, `I', C should satisfy an equation like: where h combines the semantics of C&#8217;s subcomponents and g measures semantic differences.
+    If C were a bigram, then if g(a,b) is defined to be |a-b|, if h(c,d) is the sum of c and d, and if T(e) is set to -log Pe, then equation (1) would become the pointwise mutual information of the bigram.
+    If g(a,b) were defined to be (a-b)/b , and if h(a,b)=ab/N and `I'(X)=fX , we essentially get Zscores.
+    These formulations suggest that several of the probabilistic algorithms we have seen include non-compositionality measures already.
+    However, since the probabilistic algorithms rely only on distributional information obtained by considering juxtaposed words, they tend to incorporate a significant amount of non-semantic information such as syntax.
+    Can semantic-only rescoring help?
+  

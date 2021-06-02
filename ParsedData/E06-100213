@@ -1,0 +1,6 @@
+ion 2.4, each link contains the title name of an en tity, and the proper name (the display string) used to refer to it.
+			We use the term query to denote the occurrence of a proper name inside a Wikipedia article.
+			If there is a dictionary entry matching the proper name in the query q such that the set of denoted entities q:E contains at least two entities, one of them the true answer entity q:e, then the query q is included in the dataset.
+			More exactly, if q:E contains n named entities e 1 , e 2 , ..., e n , then the dataset will be augmented with n pairs hq; e k i represented as follows: hq; e k i = [?(e k ; q:e) j q:T j e k :title] The field q:T contains all words occurring in a limit length window centered on the proper name.
+			The window size is set to 55, which is the value that was observed to give optimum performance in the related task of cross-document coreference (Gooi and Allan, 2004).
+			The Kronecker delta function ?(e k ; q:e) is 1 when e k is the same as the entity q:e referred in the l

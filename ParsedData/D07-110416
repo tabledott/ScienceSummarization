@@ -1,0 +1,7 @@
+cations of source phrase uXv for any pair u and v that both appear on this list.
+			There is alsoa small number of patterns uXv that are very frequent.
+			We cannot easily obtain a list of these in ad vance, but we observe that they always consist of apair u and v of patterns from near the top of the frequency list.
+			Therefore we also precompute the loca tions uXvXw of patterns in which both u and v are among these super-frequent patterns (all unigrams), treating this as the collocation of the frequent pattern uXv and frequent pattern w. We also compute the analagous case for u and vXw.
+			5.2 Fast Intersection.
+			For collocations of frequent and rare patterns, we use a fast set intersection method for sorted sets called double binary search (Baeza-Yates, 2004).
+			6 It is based on the intuition that if one set in a pair of sorted sets is much smaller than the other, thenwe can compute their intersection efficiently by per forming a binary search in the larger data set D for each element of the smaller que

@@ -1,0 +1,5 @@
+racticable.
+    To avoid asking the user about lexical ambiguity, we use the technique of preterminal delaying (Shieber 1983), in which the assignment of an atomic preterminal category to a lexical item is not made until the choice is forced by the use of a particular production in a later reduce action.
+    After shifting an ambiguous lexical item, the parser enters a state corresponding to the union of states that would be entered on shifting the individual lexical categories.
+    (Each union of states will in practice be small, since it being otherwise would imply that the current context was completely failing to constrain the following input).
+    Since, in general, several unification grammar categories for a single word may be subsumed by a single atomic preterminal category, we extend Shieber's technique so that it deals with a grammar containing complex categories by associating a set of alternative analyses with each state (not just one), and letting the choice between them be forced by later reduce

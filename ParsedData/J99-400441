@@ -1,0 +1,8 @@
+semiring, a simple algorithm suffices: keep computing successive generations, until no change is detected in some generation; the result is the supremum.
+    We can perform this computation efficiently if we keep track of items that change value in generation g and only examine items that depend on them in generation g+1.
+    This algorithm is then similar to the algorithm of Shieber, Schabes, and Pereira (1993).
+    For the counting semiring, the Viterbi semiring, and the derivation forest semiring, we need the concept of a derivation subgraph.
+    In Section 2.2 we considered the strongly connected components of the dependency graph, consisting of items that for some sentence could possibly depend on each other, and we put these possibly interdependent items together in looping buckets.
+    For a given sentence and grammar, not all items will have derivations.
+    We will find the subgraph of the dependency graph of items with derivations, and compute the strongly connected components of this subgraph.
+    

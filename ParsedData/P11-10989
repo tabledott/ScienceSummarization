@@ -1,0 +1,8 @@
+s not know how many events exist, and it does not know which documents describe which event (some may describe multiple events).
+    We approach this problem with a three step process: (1) cluster the domain&#8217;s event patterns to approximate the template topics, (2) build a new corpus specific to each cluster by retrieving documents from a larger unrelated corpus, (3) induce each template&#8217;s slots using its new (larger) corpus of documents.
+    We cluster event patterns to create templates.
+    An event pattern is either (1) a verb, (2) a noun in WordNet under the Event synset, or (3) a verb and the head word of its syntactic object.
+    Examples of each include (1) &#8216;explode&#8217;, (2) &#8216;explosion&#8217;, and (3) &#8216;explode:bomb&#8217;.
+    We also tag the corpus with an NER system and allow patterns to include named entity types, e.g., &#8216;kidnap:PERSON&#8217;.
+    These patterns are crucially needed later to learn a template&#8217;s slots.
+    However, we first need an algorithm 

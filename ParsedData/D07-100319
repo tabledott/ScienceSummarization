@@ -1,0 +1,12 @@
+id (?
+			(7) 4.4 Lexical-Semantics Log-Linear Model.
+			The lexical-semantics model plskid is defined by pre dicting a (nonempty) subset of the thirteen classes for the question-side word given the identity ofits aligned answer-side word.
+			These classes in clude WordNet relations: identical-word, synonym,antonym (also extended and indirect antonym), hy pernym, hyponym, derived form, morphological variation (e.g., plural form), verb group, entailment,entailed-by, see-also, and causal relation.
+			In addition, to capture the special importance of Whwords in questions, we add a special semantic re lation called ?q-word?
+			between any word and any Wh-word.
+			This is done through a log-linear model with one feature per relation.
+			Multiple relations may fire, motivating the log-linear model, which permits ?overlapping?
+			features, and, therefore prediction of 5Experiments were run on a 64-bit machine with 2?
+			2.2GHz dual-core CPUs and 4GB of memory.
+			26 any of the possible 213 ? 1 nonempty subsets.
+			It

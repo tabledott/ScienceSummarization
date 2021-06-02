@@ -1,0 +1,7 @@
+of the taggers actually has a chance to win, although in practice the chance to beat a majority is still very slight.
+    Seeing the success of TagPair in the earlier experiments, we decided to try to generalize this stacked probabilistic voting approach to combinations larger than pairs.
+    Among other things, this would let us include word and context features here as well.
+    The method that was eventually developed we have called Weighted Probability Distribution Voting (henceforth WPDV).
+    A WPDV classification model is not limited to pairs of features (such as the pairs of tagger outputs for TagPair), but can use the probability distributions for all feature combinations observed in the training data (Figure 3).
+    During voting, we do not use a fallback strategy (as TagPair does) but use weights to prevent the lower-order combinations from excessively influencing the final results when a higher-order combination (i.e., more exact information) is present.
+    The original system, as used for this p

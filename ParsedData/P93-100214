@@ -1,0 +1,10 @@
+iven in Section 2.3.
+    To evaluate the probabilities of the other sentence beads requires a sum over an exponential number of word beadings.
+    We make the gross approximation that this sum is roughly equal to the maximum term in the sum.
+    For example, with 1:1 sentence beads we have Even with this approximation, the calculation of PaE; FD is still intractable since it requires a search for the most probable beading.
+    We use a greedy heuristic to perform this search; we are not guaranteed to find the most probable beading.
+    We begin with every word in its own bead.
+    We then find the 0:1 bead and 1:0 bead that, when replaced with a 1:1 word bead, results in the greatest increase in probability.
+    We repeat this process until we can no longer find a 0:1 and 1:0 bead pair that when replaced would increase the probability of the beading.
+    We estimate parameters by using a variation of the Viterbi version of the expectation-maximization (EM) algorithm (Dempster et al., 1977).
+    The Viterbi ve

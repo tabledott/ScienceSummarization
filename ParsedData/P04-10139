@@ -1,0 +1,10 @@
+an unbounded lookahead string in the conditional.
+    Because these words have not yet been reached by the parse, we cannot assign them any structure, and thus the estimation process has no way of knowing what words in this string will end up being relevant to the next decision it needs to make.
+    The estimation process has to guess about the future role of an unbounded number of words, which makes the estimate quite difficult.
+    In contrast, the parameters of the generative model only include words which are either already incorporated into the structure, or are the immediate next word to be incorporated.
+    Thus it is relatively easy to determine the significance of each word.
+  
+  
+    The most challenging problem in estimating P(di|d1,...,di&#8722;1, yield(di,...,dm)) and P(di|d1,..., di&#8722;1) is that the conditionals include an unbounded amount of information.
+    Both the parse history d1,..., di&#8722;1 and the lookahead string yield(di,..., dm) grow with the length of the sentence.
+    In orde

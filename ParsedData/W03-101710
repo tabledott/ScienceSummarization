@@ -1,0 +1,7 @@
+) report that this expectation is borne out 75% of the time for opinion documents and 56% of the time for factual documents.
+    Our first approach to classifying sentences as opinions or facts explores the hypothesis that, within a given topic, opinion sentences will be more similar to other opinion sentences than to factual sen'Using the Rainbow implementation, available from www. cs.cmu.edu/&#732;mccallum/bow/rainbow. tences.
+    We used SIMFINDER (Hatzivassiloglou et al., 2001), a state-of-the-art system for measuring sentence similarity based on shared words, phrases, and WordNet synsets.
+    To measure the overall similarity of a sentence to the opinion or fact documents, we first select the documents that are on the same topic as the sentence in question.
+    We obtain topics as the results of IR queries (for example, by searching our document collection for &#8220;welfare reform&#8221;).
+    We then average its SIMFINDER-provided similarities with each sentence in those documents.
+    Then we assign t

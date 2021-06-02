@@ -1,0 +1,9 @@
+2007).
+    ICA is expensive, and the largest vocabulary size used in these works was only 10K.
+    As far as we know, ICA methods have not been used when the size of the vocab W is 100K or more.
+    Explicitly storing cooccurrence matrix F can be memory-intensive, and transforming F to f can be time-consuming.
+    It is preferable that F never be computed explicitly, and that f be constructed incrementally.
+    &#711;Reh&#730;u&#711;rek and Sojka (2010) describe an incremental approach to inducing LSA and LDA topic models over 270 millions word tokens with a vocabulary of 315K word types.
+    This is similar in magnitude to our experiments.
+    Another incremental approach to constructing f is using a random projection: Linear mapping g is multiplying F by a random matrix chosen a priori.
+    This random indexing method is motivated by the Johnson-Lindenstrauss lemma, which states that for certain choices of random matrix, if d is sufficiently large, then the original distances between words in F will be pres

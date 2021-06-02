@@ -1,0 +1,9 @@
+ of N. We show N = 5 and the maximum N (all), i.e. all the available answers.
+    Each measure is the average of the Precision, Recall and F1-measure from cross validation.
+    The F1-measure of Google and YourQA are greatly outperformed by our answer classifier.
+    The last row of Table 2 reports the MRR7 achieved by Google, YourQA (QA) and YourQA after re-ranking (Re-ranker).
+    We note that Google is outperformed by YourQA since its ranks are based on whole documents, not on single passages.
+    Thus Google may rank a document containing several sparsely distributed question words higher than documents with several words concentrated in one passage, which are more interesting.
+    When the answer classifier is applied to improve the YourQA ranking, the MRR reaches 81.1%, rising by about 25%.
+    Finally, it is worth to note that the answer classifier based on Q(BOW)+A(BOW,PT,PAS) model (parameterized as described) gave a 4% higher MRR than the one based on the simple BOW features.
+    As an example, for 

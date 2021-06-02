@@ -1,0 +1,9 @@
+the last bucket; if the sentence is grammatical, the goal item will be in the last bucket, and if it is not grammatical, it will not be.
+    It will be useful to assume that there is a single, variable-free goal item, and that this goal item does not occur as a condition for any rules.
+    We could always add a [old-goal] new goal item [goal] and a rule where [old-goal] is[goal] the goal in the original description.
+    A semiring parser also requires a grammar as input.
+    We will need a list of rules in the grammar, and a function, R(rule), that gives the value for each rule in the grammar.
+    This latter function will be semiring-specific.
+    For instance, for computing the inside and Viterbi probabilities, the value of a grammar rule is just the conditional probability of that rule, or 0 if it is not in the grammar.
+    For the Boolean semiring, the value is TRUE if the rule is in the grammar, FALSE otherwise.
+    R(rule) replaces the set of rules R of a conventional grammar description; a rule is in t

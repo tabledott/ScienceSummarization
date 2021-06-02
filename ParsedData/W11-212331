@@ -1,0 +1,10 @@
+nt memory, though it supports only a single thread.
+    The BerkeleyLM direct-mapped cache is in principle faster than caches implemented by RandLM and by IRSTLM, so we may write a C++ equivalent implementation as future work.
+    RandLM&#8217;s stupid backoff variant stores counts instead of probabilities and backoffs.
+    It also does not prune, so comparing to our pruned model would be unfair.
+    Using RandLM and the documented settings (8-bit values and 1 256 false-positive probability), we built a stupid backoff model on the same data as in Section 5.2.
+    We used this data to build an unpruned ARPA file with IRSTLM&#8217;s improved-kneser-ney option and the default three pieces.
+    Table 4 shows the results.
+    We elected run Moses single-threaded to minimize the impact of RandLM&#8217;s cache on memory use.
+    RandLM is the clear winner in RAM utilization, but is also slower and lower quality.
+    However, the point of RandLM is to scale to even larger data, compensating for this loss in quality.

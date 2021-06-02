@@ -1,0 +1,5 @@
+ner product H(T1) &#183; H(T2) counts the number of matching pairs of subtrees of T1 and T2.
+    Collins and Duffy (2001) describe a method for efficiently computing this dot product without explicitly computing the vectors H, which have dimensionality exponential in the size of the original tree.
+    In order to derive a similarity measure ranging from zero to one, we use the cosine of the vectors H: we can compute the cosine similarity using the kernel method, without ever computing the entire of vector of counts H. Our kernel-based subtree metric TKM is then defined as the maximum of the cosine measure over the references: The advantage of using the tree kernel is that it can capture the similarity of subtrees of different shapes; the weak point is that it can only use the reference trees one by one, while STM can use them simultaneously.
+    The dot product also weights individual features differently than our other measures, which compute overlap in the same way as does BLEU.
+    For example, if the same

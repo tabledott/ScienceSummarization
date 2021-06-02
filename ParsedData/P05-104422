@@ -1,0 +1,9 @@
+equires the model to explain why a given sentence was seen instead of some other sentence of the same length.
+    One way to make this explanation is to manipulate emission weights (i.e., for (tag, word) features): the learner can construct a good class-based unigram model of the text (where classes are tags).
+    This is good for the LENGTH objective, but not for learning good POS tag sequences.
+    In contrast, DELORTRANS1 and TRANS1 do not allow the learner to manipulate emission weights for words not in the sentence.
+    The sentence&#8217;s goodness must be explained in a way other than by the words it contains: namely through the POS tags.
+    To check this intuition, we built local normalized models p(word I tag) from the parameters learned by TRANS1 and LENGTH.
+    For each tag, these were compared by KL divergence to the empirical lexical distributions (from labeled data).
+    For the ten tags accounting for 95.6% of the data, LENGTH more closely matched the empirical lexical distributions.
+    LENGT

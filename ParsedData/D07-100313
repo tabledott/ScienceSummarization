@@ -1,0 +1,8 @@
+also be used, such as reputability of the document the answer came from, grammaticality, etc. Here, aiming for simplicity, we do not aim to use such information.
+			Hence we treat p(a) as uniform over A.3 The second adjustment adds a labeled, directed dependency tree to the question and the answer.The tree is produced by a state-of-the-art depen dency parser (McDonald et al, 2005) trained on the Wall Street Journal Penn Treebank (Marcus et al., 1993).
+			A dependency tree on a sequence w =?w1, ..., wk?
+			is a mapping of indices of words to in dices of their syntactic parents and a label for the syntactic relation, ? : {1, ..., k} ? {0, ..., k} ? L. Each word wi has a single parent, denoted w?(i).par .Cycles are not permitted.
+			w0 is taken to be the invis ible ?wall?
+			symbol at the left edge of the sentence; it has a single child (|{i : ?(i) = 0}| = 1).
+			The label for wi is denoted ?(i).lab.
+			The third adjustment involves a hidden variable X , the alignment between question and answer3The main motivat

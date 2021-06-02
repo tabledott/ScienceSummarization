@@ -1,0 +1,5 @@
+ntence s conditioned on G. For instance, the model of Paskin (2002), which is broadly similar to the semiprobabilistic model in Yuret (1998), first chooses a graph G uniformly at random (such as figure 2), then fills in the words, starting with a fixed root symbol (assumed to be at the rightmost end), and working down G until an entire dependency structure D is filled in (figure 1a).
+    The corresponding probabilistic model is In Paskin (2002), the distribution P(G) is fixed to be uniform, so the only model parameters are the conditional multinomial distributions P(a|h, dir) that encode which head words take which other words as arguments.
+    The parameters for left and right arguments of a single head are completely independent, while the parameters for first and subsequent arguments in the same direction are identified.
+    In those experiments, the model above was trained on over 30M words of raw newswire, using EM in an entirely unsupervised fashion, and at great computational cost.
+    However, as show

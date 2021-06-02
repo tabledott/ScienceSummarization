@@ -1,0 +1,10 @@
+ails as a computational strategy.
+    Running PENMAN 3,456 times is expensive, but nothing compared to the cost of exhaustively exploring all combinations in larger input representations corresponding to sentences typically found in newspaper text.
+    Twenty or thirty choice points typically multiply into millions or billions of potential sentences, and it is infeasible to generate them all independently.
+    This leads us to consider other algorithms.
+  
+  
+    Instead of explicitly constructing all possible renditions of a semantic input and running PENMAN on them, we use a more efficient data structure and control algorithm to express possible ambiguities.
+    The data structure is a word lattice&#8212;an acyclic state transition network with one start state, one final state, and transitions labeled by words.
+    Word lattices are commonly used to model uncertainty in speech recognition (Waibel and Lee, 1990) and are well adapted for use with n-gram models.
+    As we discussed in Section 3, a number of ge

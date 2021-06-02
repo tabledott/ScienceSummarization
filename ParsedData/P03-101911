@@ -1,0 +1,11 @@
+ssible but time consuming.
+    The situation gets even worse when a trigram language model is used.
+    Therefore, pruning techniques are obligatory to reduce the translation time.
+    Pruning is applied to hypotheses that translate the same subsequence fjr jl of the source sentence.
+    We use pruning in the following two ways.
+    The first pruning technique is histogram pruning: we restrict the number of translation hypotheses per sequence fjr jl .
+    For each sequence fjr jl , we keep only a fixed number of translation hypotheses.
+    The second pruning technique is threshold pruning: the idea is to remove all hypotheses that have a low probability relative to the best hypothesis.
+    Therefore, we introduce a threshold pruning parameter q, with 0 &lt; q &lt; 1.
+    Let Q3&#65533;l,jr denote the maximum probability of all translation hypotheses for fjr Applying these pruning techniques the computational costs can be reduced significantly with almost no loss in translation quality.
+    The generation of w

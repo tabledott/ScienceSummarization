@@ -1,0 +1,5 @@
+   This is equivalent to saying that there is a hidden component to the model, and that DOP can be trained using an EM algorithm to determine the maximum likelihood estimate for the training data.
+    The EM algorithm for this ML-DOP model is related to the Inside-Outside algorithm for context-free grammars, but the reestimation formula is complicated by the presence of subtrees of depth greater than 1.
+    To derive the reestimation formula, it is useful to consider the state space of all possible derivations of a tree.
+    The derivations of a parse tree T can be viewed as a state trellis, where each state contains a partially constructed tree in the course of a leftmost derivation of T. st denotes a state containing the tree t which is a subtree of T. The state trellis is defined as follows.
+    The initial state, s0, is a tree with depth zero, consisting of simply a root node labeled with S. The final state, sT, is the given parse tree T. A state st is connected forward to all states stf such that tf = t 

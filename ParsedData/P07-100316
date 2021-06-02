@@ -1,0 +1,7 @@
+terior probabilities of alignments improves AER relative to computing Viterbi alignments.
+    That is, we choose a threshold &#964; (typically &#964; = 0.5), and take Posterior thresholding provides computationally convenient ways to combine multiple alignments, and bidirectional combination often corrects for errors in individual directional alignment models.
+    Liang et al. (2006) suggests a soft intersection of a model m with a reverse model r (foreign to English) that thresholds the product of their posteriors at each position: These intersected alignments can be quite sparse, boosting precision at the expense of recall.
+    We explore a generalized version to this approach by varying the function c that combines pm and pr: a = {(i, j) : c(pm, pr) &gt; &#964;}.
+    If c is the max function, we recover the (hard) union of the forward and reverse posterior alignments.
+    If c is the min function, we recover the (hard) intersection.
+    A novel, high performing alternative is the soft union, which we evalu

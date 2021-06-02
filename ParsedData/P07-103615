@@ -1,0 +1,8 @@
+n line 9, and the new parameter estimation in line 9.
+    The Top-K-Inference is a procedure that returns the K labeled assignments that maximize the new objective function (1).
+    In our case we used the topK elements in the beam, but this could be applied to any other inference procedure.
+    The fact that the constraints are used in the inference procedure (in particular, for generating new training examples) allows us to use a learning algorithm that ignores the constraints, which is a lot more efficient (although algorithms that do take the constraints into account can be used too).
+    We used maximum likelihood estimation of A but, in general, perceptron or quasiNewton can also be used.
+    It is known that traditional semi-supervised training can degrade the learned model&#8217;s performance.
+    (Nigam et al., 2000) has suggested to balance the contribution of labeled and unlabeled data to the parameters.
+    The intuition is that when iteratively estimating the parameters with EM, we disallow the p

@@ -1,0 +1,7 @@
+node, and the context c of the current node.
+    For each unique coarse symbol s we tie together the distributions &#960;ss0z0c for all possible parent and context combinations (i.e., s', z', and c) using a Hierarchical Dirichlet Process (HDP).
+    Specifically, for a single s, each distribution &#960;ss0z0c over subsymbols is drawn from a DP with concentration parameter &#945; and base distribution &#946;s over subsymbols.
+    This base distribution &#946;s is itself drawn from a GEM prior with concentration parameter &#947;.
+    By formulating the generation of z as an HDP, we can share parameters for a single coarse symbol&#8217;s subsymbol distribution while allowing for individual variability based on node parent and context.
+    Note that parameters are not shared across different coarse symbols, preserving the distinctions expressed via the coarse tag annotations.
+    Finally, we generate the word x from a finite multinomial with parameters &#966;sz, where s and z are the symbol and subsymbol of the cu

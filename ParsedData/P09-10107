@@ -1,0 +1,6 @@
+track the state of the document-to-actions mapping over time.
+    A mapping state s is a tuple (&#163;, d, j, W), where &#163; refers to the current environment state; j is the index of the sentence currently being interpreted in document d; and W contains words that were mapped by previous actions for the same sentence.
+    The mapping state s is observed after each action.
+    The initial mapping state s0 for document d is (&#163;d, d, 0, 0); &#163;d is the unique starting environment state for d. Performing action a in state s = (&#163;, d, j, W) leads to a new state s' according to distribution p(s'|s, a), defined as follows: &#163; transitions according to p(&#163;'|&#163;, c, R), W is updated with a&#8217;s selected words, and j is incremented if all words of the sentence have been mapped.
+    For the applications we consider in this work, environment state transitions, and consequently mapping state transitions, are deterministic.
+    Training During training, we are provided with a set D of documents,

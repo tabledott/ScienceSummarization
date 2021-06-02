@@ -1,0 +1,8 @@
+not preserved, there is no natural starting point for alignment, and there are no constraints on crosses.
+    For these reasons we have developed a bottomup local multisequence alignment algorithm that uses words and phrases as anchors for matching.
+    This algorithm operates on the dependency trees for pairs of input sentences.
+    We use a dependency-based representation because it abstracts over features irrelevant for comparison such as constituent ordering.
+    In the subsections that follow, we describe first how this representation is computed, then how dependency subtrees are aligned, and finally how we choose between constituents conveying overlapping information.
+    In this section we first describe an algorithm which, given a pair of sentences, determines which sentence constituents convey information appearing in both sentences.
+    This algorithm will be applied to pairwise combinations of sentences in the input set of related sentences.
+    The intuition behind the algorithm is to compare all 

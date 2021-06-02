@@ -1,0 +1,6 @@
+ subtree occurs 10 times in both the hypothesis and the reference, this contributes a term of 100 to the dot product, rather than 10 in the clipped count used by BLEU and by our subtree metric STM.
+    Dependency trees consist of trees of head-modifier relations with a word at each node, rather than just at the leaves.
+    Dependency trees were found to correspond better across translation pairs than constituent trees by Fox (2002), and form the basis of the machine translation systems of Alshawi et al. (2000) and Lin (2004).
+    We derived dependency trees from the constituent trees by applying the deterministic headword extraction rules used by the parser of Collins (1999).
+    For the example of the reference syntax tree in Figure 2, the whole tree with the root S represents a sentence; and the subtree NP&#8212;*ART N represents a noun phrase.
+    Then for every node in the syntax tree, we can determine its headword by its syntactic structure; from the subtree NP&#8212;*ART N, for example, the headword sel

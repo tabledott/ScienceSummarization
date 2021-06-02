@@ -1,0 +1,8 @@
+are given a set of arguments in t and must label each one with its appropriate semantic role.
+    Formally, let L denote a mapping of the nodes in t to a label set of semantic roles (including NONE) and let Id(L) be the mapping which collapses L&#8217;s non-NONE values into ARG.
+    Then we can decompose the probability of a labeling L into probabilities according to an identification model PID and a classification model PCLS.
+    This decomposition does not encode any independence assumptions, but is a useful way of thinking about the problem.
+    Our local models for semantic role labeling use this decomposition.
+    Previous work has also made this distinction because, for example, different features have been found to be more effective for the two tasks, and it has been a good way to make training and search during testing more efficient.
+    Here we use the same features for local identification and classification models, but use the decomposition for efficiency of training.
+    The identification models

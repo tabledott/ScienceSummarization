@@ -1,0 +1,11 @@
+h use identical features, though are obviously trained on different data.
+    The online learning algorithms themselves are intuitive and easy to implement.
+    The efficient O(n3) parsing algorithm of Eisner allows the system to search the entire space of dependency trees while parsing thousands of sentences in a few minutes, which is crucial for discriminative training.
+    We compare the speed of our model to a standard lexicalized phrase structure parser in Section 3.1 and show a significant improvement in parsing times on the testing data.
+    The major limiting factor of the system is its restriction to features over single dependency attachments.
+    Often, when determining the next dependent for a word, it would be useful to know previous attachment decisions and incorporate these into the features.
+    It is fairly straightforward to modify the parsing algorithm to store previous attachments.
+    However, any modification would result in an asymptotic increase in parsing complexity.
+  
+  
+    We test

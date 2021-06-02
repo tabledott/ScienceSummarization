@@ -1,0 +1,7 @@
+ the LM is a 5-gram trained on the NIST09 Gigaword corpus; for English/French, it is a 4-gram trained on the target half of the parallel Hansard.
+    The Medium set is a more competitive 18-feature system.
+    It adds 4 TM features, one LM, and 6 lexicalized distortion features.
+    For Zh-En, Small&#8217;s TM (trained on both train1 and train2 in table 2) is replaced by 2 separate TMs from these sub-corpora; for En/Fr, the extra TM (4 features) comes from a forced-decoding alignment of the training corpus, as proposed by Wuebker et al. (2010).
+    For Zh-En, the extra LM is a 4-gram trained on the target half of the parallel corpus; for En/Fr, it is a 4-gram trained on 5m sentences of similar parliamentary data.
+    The Big set adds sparse Boolean features to Medium, for a maximum of 6,848 features.
+    We used sparse feature templates that are equivalent to the PBMT set described in (Hopkins and May, 2011): tgt unal picks out each of the 50 most frequent target words to appear unaligned in the phrase table;

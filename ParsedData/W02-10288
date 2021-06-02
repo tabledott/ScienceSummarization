@@ -1,0 +1,11 @@
+become available for consideration.
+    To achieve this effect, we increment the value of N by one after each bootstrapping iteration.
+    This ensures that there is always at least one new pattern contributing words to the candidate word pool on each successive iteration.
+    The next step is to score the candidate words.
+    For each word, Basilisk collects every pattern that extracted the word.
+    All extraction patterns are used during this step, not just the patterns in the pattern pool.
+    Initially, we used a scoring function that computes the average number of category members extracted by the patterns.
+    The formula is: where Pi is the number of patterns that extract wordi, and Fj is the number of distinct category members extracted by pattern j.
+    A word receives a high score if it is extracted by patterns that also have a tendency to extract known category members.
+    As an example, suppose the word &#8220;Peru&#8221; is in the candidate word pool as a possible location.
+    Basilisk finds a

@@ -1,0 +1,10 @@
+ure gap; WordNet information (the synsets and hypernyms of the two most frequent senses of the word); The outputs of three systems (HMM, RRM and MaxEnt) trained on a 32-category named entity data, the output of an RRM system trained on the MUC-6 data, and the output of RRM model identifying 49 categories.
+  
+  
+    This section introduces a novel statistical approach to entity tracking.
+    We choose to model the process of forming entities from mentions, one step at a time.
+    The process works from left to right: it starts with an initial entity consisting of the first mention of a document, and the next mention is processed by either linking it with one of the existing entities, or starting a new entity.
+    The process could have as output any one of the possible partitions of the mention set.8 Two separate models are used to score the linking and starting actions, respectively.
+    Formally, let be mentions in a document.
+    Let be the map from mention index to entity index.
+    For a mention index , l

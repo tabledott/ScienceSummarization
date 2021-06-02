@@ -1,0 +1,6 @@
+are made with the use of a grammar, and the grammar may allow more than one valid action at any single point in the parsing process.
+    When multiple choices are available, a grammar-driven parser may make a decision based on heuristics or statistical models, or pursue every possible action following a search strategy.
+    In our case, both types of decisions are made by a classifier that chooses a unique action at every point, based on the local context of the parsing action, with no explicit grammar.
+    This type of classifierbased parsing where only one path is pursued with no backtracking can be viewed as greedy or deterministic.
+    In order to determine what actions the parser should take given a particular parser configuration, a classifier is given a set of features derived from that configuration.
+    This includes, crucially, the two topmost items in the stack S, and the item in front of the queue W. Additionally, a set of context features is derived from a (fixed) limited number of items below th

@@ -1,0 +1,7 @@
+ each label and attempts to find a global optimum (subject to the constraints).
+    The parallels to our anaphoricity/coreference scenario are straightforward.
+    The anaphoricity problem is like the problem of identifying the type of entity (where the labels are now ANAPH and &#172;ANAPH), and the coreference problem is like that of determining the relations between mentions (where the labels are now COREF or &#172;COREF).
+    Based on these parallels, the JOINT-ILP system brings the two decisions of anaphoricity and coreference together by including both in a single objective function and including constraints that ensure the consistency of a solution for both tasks.
+    Let cAj and cAj be defined analogously to the coreference classifier costs for pA = PA(ANAPH|j), the probability the anaphoricity classifier assigns to a mention j being anaphoric.
+    Also, we have indicator variables yj that are set to 1 if mention j is anaphoric and 0 otherwise.
+    The objective function takes the following form: The s

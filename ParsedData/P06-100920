@@ -1,0 +1,8 @@
+between the two tasks is probably a result of the different proportions of word- to sentencealigned data.
+    For the French data, where a very large lexicon can be estimated from the million sentence alignments, the sparse word pairs learnt on the word aligned sentences appear to lead to overfitting.
+    In contrast, for Romanian, where more word alignments are used to learn the translation pair features and much less sentence aligned data are available, these features have a significant impact on the model.
+    Suprisingly the orthographic features actually worsen the performance in the tasks (incidentally, these features help the trial set).
+    Our explanation is that the other features (eg.
+    Model 1) already adequately model these correspondences, and therefore the orthographic features do not add much additional modelling power.
+    We expect that with further careful feature engineering, and a larger trial set, these orthographic features could be much improved.
+    The Romanian-English language pai

@@ -1,0 +1,10 @@
+e many smoothing algorithms which use techniques more rigorous than a simple count cutoff, they have not yet been investigated in conjunction with this tagger.
+  
+  
+    The test corpus is tagged one sentence at a time.
+    The testing procedure requires a search to enumerate the candidate tag sequences for the sentence, and the tag sequence with the highest probability is chosen as the answer.
+    The search algorithm, essentially a &amp;quot;beam search&amp;quot;, uses the conditional tag probability and maintains, as it sees a new word, the N highest probability tag sequence candidates up to that point in the sentence.
+    Given a sentence {wl.
+    &#8226; &#8226; &#8226; w,}, a tag sequence candidate {ti .
+    &#8226; &#8226; tn} has conditional probability: In addition the search procedure optionally consults a Tag Dictionary, which, for each known word, lists the tags that it has appeared with in the training set.
+    If the Tag Dictionary is in effect, the search procedure, for known words, generates o

@@ -1,0 +1,13 @@
+phrase pairs.
+    This can be easily stored during the extraction of the phrase pairs from the bilingual training corpus.
+    If there are multiple possible alignments for a phrase pair, we use the most frequent one.
+    The notation is introduced using the illustration in Figure 1.
+    There is an example of a left and a right phrase orientation.
+    We assume that we have already produced the three-word phrase in the lower part.
+    Now, the model has to predict if the start position of the next phrase j&#8242; is to the left or to the right of the current phrase.
+    The reordering model is applied only at the phrase boundaries.
+    We assume that the reordering within the phrases is correct.
+    In the remaining part of this section, we will describe the details of this reordering model.
+    The classes our model predicts will be defined in Section 4.2.
+    Then, the feature functions will be defined in Section 4.3.
+    The training criterion and the training events of the maximum entropy model will be de

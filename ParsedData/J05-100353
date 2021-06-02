@@ -1,0 +1,12 @@
+g its weight may lead to efficient algorithms.
+    Appendix B gives a sketch of one such approach, which is based on results from Collins, Schapire, and Singer (2002).
+    We did not test this method; we leave this to future work.
+  
+  
+    We used the Penn Wall Street Journal treebank (Marcus, Santorini, and Marcinkiewicz 1993) as training and test data.
+    Sections 2&#8211;21 inclusive (around 40,000 sentences) were used as training data, section 23 was used as the final test set.
+    Of the 40,000 training sentences, the first 36,000 were used as the main training set.
+    The remaining 4,000 sentences were used as development data and to cross-validate the number of rounds (features) in the model.
+    Model 2 of Collins (1999) was used to parse both the training and test data, producing multiple hypotheses for each sentence.
+    We achieved this by disabling dynamic programming in the parser and choosing a relatively narrow beam width of 1,000.
+    The resulting parser returns all parses that fall within

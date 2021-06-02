@@ -1,0 +1,9 @@
+ parse forest, and halts the process.
+    This subsection gives a trace of the algorithm with the sentence That information is important is doubtful, to demonstrate that our algorithm can handle multi-part-ofspeech words (in this sentence, that) just like multiple entries without any special mechanism.
+    We use the grammar at the right and the parsing table below.
+    At the very beginning, the parse forest contains nothing, and the stack contains only one vertex, labeled 0.
+    The first word of the sentence is that, which can be categorized as *that, *det or *n. The action table tells us that all of these categories are legal.
+    Thus, the algorithm behaves as if a multiple entry is encountered.
+    Three actions, &amp;quot;shift 3&amp;quot;, &amp;quot;shift 4&amp;quot;, and &amp;quot;shift 5&amp;quot;, are to be executed.
+    Note that three different leaf nodes have been created in the parse forest.
+    One of the three possibilities, that as a noun, is discarded immediately after the parser sees the n

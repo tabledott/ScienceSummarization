@@ -1,0 +1,10 @@
+ 2000) and the Alias-I LingPipe Named Entity Recognizer2 is applied to the text in order to identify the noun phrases, which are further taken as referring expressions (REs) to be used for instance generation.
+    Therefore, we use automatically extracted noun phrases, rather than assuming perfect NP chunking.
+    This is in contrast to other related works in coreference resolution (e.g.
+    Luo et al. (2004), Kehler et al.
+    (2004)).
+    Instances are created following Soon et al. (2001).
+    We create a positive training instance from each pair of adjacent coreferent REs.
+    Negative instances are obtained by pairing the anaphoric REs with any RE occurring between the anaphor and the antecedent.
+    During testing each text is processed from left to right: each RE is paired with any preceding RE from right to left, until a pair labeled as coreferent is output, or the beginning of the document is reached.
+    The classifier imposes a partitioning on the available REs by clustering each set of expressions 

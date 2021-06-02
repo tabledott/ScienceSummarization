@@ -1,0 +1,8 @@
+d ending positions i, j in the target language string.
+    For Expectation Maximization training, we compute lexicalized inside probabilities Q(X(e/f),l, m, i, j), as well as unlexicalized inside probabilities Q(X,l, m, i, j), from the bottom up as outlined in Algorithm 1.
+    The algorithm has a complexity of O(N4s N4t ), where Ns and Nt are the lengths of source and target sentences respectively.
+    The complexity of parsing for an unlexicalized ITG is O(N3s N3t ).
+    Lexicalization introduces an additional factor of O(NsNt), caused by the choice of headwords e and f in the pseudocode.
+    Assuming that the lengths of the source and target sentences are proportional, the algorithm has a complexity of O(n8), where n is the average length of the source and target sentences.
+    We need to further restrict the space of alignments spanned by the source and target strings to make the algorithm feasible.
+    Our technique involves computing an estimate of how likely each of the n4 cells in the chart is before c

@@ -1,0 +1,12 @@
+re-ranking setup but with one main difference: the SU-RNN rule score computation at each node still only has access to its child vectors, not the whole tree or other global features.
+    This allows the second pass to be very fast.
+    We use this setup in our experiments below.
+    The full CVG model is trained in two stages.
+    First the base PCFG is trained and its top trees are cached and then used for training the SU-RNN conditioned on the PCFG.
+    The SU-RNN is trained using the objective in Eq.
+    3 and the scores as exemplified by Eq.
+    6.
+    For each sentence, we use the method described above to efficiently find an approximation for the optimal tree.
+    To minimize the objective we want to increase the scores of the correct tree&#8217;s constituents and decrease the score of those in the highest scoring incorrect tree.
+    Derivatives are computed via backpropagation through structure (BTS) (Goller and K&#168;uchler, 1996).
+    The derivative of tree i has to be taken with respect to all para

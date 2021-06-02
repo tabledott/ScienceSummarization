@@ -1,0 +1,8 @@
+od solution for w is to use a gradient-based method, which requires computing the gradient of the log-likelihood with respect to potential parameters wc.
+    It can be shown that this gradient is equal with the difference between the empirical counts of fc and their expectation under the current set of parameters w. This expectation is expensive to compute, since it requires summing over all possible configurations of candidate entity labels from a given document.
+    To circumvent this complexity, we use Collins' voted perceptron approach (Collins, 2002), which approximates the full expectation of fc with the fc counts for the most likely labeling under the current parameters, w. In all our experiments, the perceptron was run for 50 epochs, with a learning rate set at 0.01.
+  
+  
+    We have tested the RMN approach on two datasets that have been hand-tagged for human protein names.
+    The first dataset is Yapexl which consists of 200 Medline abstracts.
+    Of these, 147 have been randomly selected by posing

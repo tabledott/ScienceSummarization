@@ -1,0 +1,6 @@
+to those stored cases that have the same feature value at that feature.
+    Besides restricting search to those memory cases that match only on this feature, the case memory can be optimised by further restricting search to the Procedure BUILD-IG-TREE: Input: second most important feature, followed by the third most important feature, etc.
+    A considerable compression is obtained as similar cases share partial paths.
+    Instead of converting the case base to a tree in which all cases are fully represented as paths, storing all feature values, we compress the tree even more by restricting the paths to those input feature values that disambiguate the classification from all other cases in the training material.
+    The idea is that it is not necessary to fully store a case as a path when only a few feature values of the case make its classification unique.
+    This implies that feature values that do not contribute to the disambiguation of the case classification (i.e., the values of the features with lower 

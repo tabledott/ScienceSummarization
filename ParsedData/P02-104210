@@ -1,0 +1,7 @@
+r is constant for the given category sequence, but not for different category sequences.
+    However, the dependency structures with high enough PCS to be among the highest probability structures are likely to have similar category sequences.
+    Thus we ignore the normalisation factor, thereby simplifying the parsing process.
+    (A similar argument is used by Collins (1996) in the context of his parsing model.)
+    The estimate in equation 10 suffers from sparse data problems, and so a backing-off strategy is employed.
+    We omit details here, but there are four levels of back-off: the first uses both words and both categories; the second uses only one of the words and both categories; the third uses the categories only; and a final level substitutes pos-tags for the categories.
+    One final point is that, in practice, the number of dependencies can vary for a given category sequence (because multiple arguments for the same slot can 5One of the problems with the model is that it is deficient, assigning pr

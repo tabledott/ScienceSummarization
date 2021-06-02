@@ -1,0 +1,9 @@
+ nonparallel corpora.)
+    In most previous work on extraction of parallel sentences from comparable corpora, some coarse document-level similarity is used to determine which document pairs contain parallel sentences.
+    For identifying similar web pages, Resnik and Smith (2003) compare the HTML structure.
+    Munteanu and Marcu (2005) use publication date and vector-based similarity (after projecting words through a bilingual dictionary) to identify similar news articles.
+    Once promising document pairs are identified, the next step is to extract parallel sentences.
+    Usually, some seed parallel data is assumed to be available.
+    This data is used to train a word alignment model, such as IBM Model 1 (Brown et al., 1993) or HMM-based word alignment (Vogel et al., 1996).
+    Statistics from this word alignment model are used to train a classifier which identifies bilingual sentence pairs as parallel or not parallel.
+    This classifier is applied to all sentence pairs in documents which were found to be

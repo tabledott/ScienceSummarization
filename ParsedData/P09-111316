@@ -1,0 +1,12 @@
+ir conjuncts must match exactly.
+    This yields low-recall but high-precision features.
+    With a small amount of data, this approach would be problematic, since most features would only be seen once, rendering them useless to the classifier.
+    Since we use large amounts of data, even complex features appear multiple times, allowing our highprecision features to work as intended.
+    Features for a sample sentence are shown in Table 3.
+  
+  
+    For unstructured text we use the Freebase Wikipedia Extraction, a dump of the full text of all Wikipedia articles (not including discussion and user pages) which has been sentence-tokenized by Metaweb Technologies, the developers of Freebase (Metaweb, 2008).
+    This dump consists of approximately 1.8 million articles, with an average of 14.3 sentences per article.
+    The total number of words (counting punctuation marks) is 601,600,703.
+    For our experiments we use about half of the articles: 800,000 for training and 400,000 for testing.
+    We use Wikipedia b

@@ -1,0 +1,9 @@
+poses as done in both C&amp;C and Goodman (1997).
+    We applied the binarization technique described above to the grammar.
+    We chose to measure the amount of work done by the parser in terms of the average number of edges popped off the agenda before finding a parse.
+    This method has the advantage of being platform independent, as well as providing a measure of &amp;quot;perfection&amp;quot;.
+    Here, perfection is the minimum number of edges we would need to pop off the agenda in order to create the correct parse.
+    For the binarized grammar, where each popped edge is a completed constituent, this number is simply the number of terminals plus nonterminals in the sentence&#8212; on average, 47.5.
+    Our algorithm includes some measures to reduce the number of items on the agenda, and thus (presumably) the number of popped edges.
+    Each time we add a constituent to the chart, we combine it with the constituents on either side of it, potentially creating several new edges.
+    For each of these new

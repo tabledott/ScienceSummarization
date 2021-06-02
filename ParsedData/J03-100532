@@ -1,0 +1,8 @@
+ut: set Succ of successor hypotheses There is an asymmetry between the two reordering states Move and Skip: While in state Move, the algorithm is not allowed to cover the position lmin(C).
+    It must first enter the state Cover to do so.
+    In contrast, for the state Skip, the newly generated hypothesis always remains in the state Skip (until the state Initial is entered.)
+    This is motivated by the word reordering for the German verb group.
+    After the right verbal brace has been processed, no source words may be moved into the verbal brace from later in the sentence.
+    There is a redundancy in the reorderings: The same reordering might be carried out using either the state Skip or Move, especially if widthskip and widthmove are about the same.
+    The additional computational burden is alleviated somewhat by the fact that the pruning, as introduced in Section 3.8, does not distinguish hypotheses according to the states.
+    A complexity analysis for different reordering constraints is given in Tillm

@@ -1,0 +1,6 @@
+d form of X X.POS = Part-of-speech of X X.DEP = Dependency type of X Figure 2: Parser state featuresAfter initialization, the parser is guaranteed to ter minate after at most 2n transitions, given an input string of length n (Nivre, 2003).
+			Moreover, the parser always constructs a dependency graph that isacyclic and projective.
+			This means that the depen dency graph given at termination is well-formed if and only if it is connected (Nivre, 2003).
+			Otherwise, it is a set of connected components, each of which is a well-formed dependency graph for a substring of the original input.The transition system defined above is nondeterministic in itself, since several transitions can often be applied in a given configuration.
+			To con struct deterministic parsers based on this system,we use classifiers trained on treebank data in or der to predict the next transition (and dependency type) given the current configuration of the parser.
+			In this way, our approach can be seen as a form ofhistory-based parsing (Bl

@@ -1,0 +1,7 @@
+or evaluation, use of this normalizer is a suitable preprocessing step for other metrics to improve accuracy when reference sentences are stylistically different from hypotheses.
+    The original Meteor paraphrase tables (Denkowski and Lavie, 2010b) are constructed using the phrase table &#8220;pivoting&#8221; technique described by Bannard and Callison-Burch (2005).
+    Many paraphrases suffer from word accumulation, the appending of unaligned words to one or both sides of a phrase rather than finding a true rewording from elsewhere in parallel data.
+    To improve the precision of the paraphrase tables, we filter out all cases of word accumulation by removing paraphrases where one phrase is a substring of the other.
+    Table 1 lists the number of phrase pairs found in each paraphrase table before and after filtering.
+    In addition to improving accuracy, the reduction of phrase table sizes also reduces the load time and memory usage of the Meteor paraphrase matcher.
+    The tables are a modular resource s

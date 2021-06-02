@@ -1,0 +1,6 @@
+me-consuming to generate, it is often the case that when there is a corpus of manually tagged text available there will also be a much larger amount of untagged text available, a resource not utilized by purely supervised training algorithms.
+    One significant difference between this approach and that taken in using the BaumWelch algorithm is that here the supervision influences the learner after unsupervised training, whereas when using tagged text to bias the initial probabilities for Baum-Welch training, supervision influences the learner prior to unsupervised training.
+    The latter approach has the potential weakness of unsupervised training erasing what was learned from the manually annotated corpus.
+    For example, in [Merialdo, 1995], extracting probability estimates from a 50,000 word manually tagged corpus gave a test set accuracy of 95.4%.
+    After applying ten iterations of the Baum-Welch algorithm, accuracy dropped to 94.4%.
+    Using the transformations learned in the above unsupervised tra

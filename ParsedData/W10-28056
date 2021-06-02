@@ -1,0 +1,10 @@
+spectroscopy, medical chemistry, brain-imaging and marketing (Mevik &amp; Wehrens, 2007).
+  
+  
+    We use a general-purpose vector space extracted from the British National Corpus.
+    We used the Infomap software to collect co-occurrence statistics for lemmas within a rectangular 5L&#8211;5R window.
+    The corpus was pre-processed to represent frequent Adjective-Noun lemma pairs as a single token (e.g. while in the original corpus the A-N phrase nice house consists in two separate lemmas (nice and house), in the processed corpus it appears as a single entry nice_house).
+    The corpus was also processed by stop-word removal.
+    We extracted a list of A-N candidate pairs with simple regex-based queries targeting adjacent sequences composed of [Det/Art&#8211;A&#8211;N] (e.g. that little house).
+    We filtered the candidate list by frequency (&gt; 400) obtaining 1,380 different A-N pairs.
+    The vector space was built with the 40,000 most frequent tokens in the corpus (a cut-off point that included all the

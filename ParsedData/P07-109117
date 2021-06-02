@@ -1,0 +1,9 @@
+side of all corpora are segmented into words by our implementation of (Gao et al., 2003).
+    As mentioned in section 3, the preprocessing module for reordering needs a parser of the SL, a word alignment tool, and a Maximum Entropy training tool.
+    We use the Stanford parser (Klein and Manning, 2003) with its default Chinese grammar, the GIZA++ (Och and Ney, 2000) alignment package with its default settings, and the ME tool developed by (Zhang, 2004).
+    Section 5 mentions that our reordering model can apply to nodes of any branching factor.
+    It is interesting to know how many branching factors should be included.
+    The distribution of parse tree nodes as shown in table 1 is based on the result of parsing the Chinese side of NIST MT-2002 test set by the Stanford parser.
+    It is easily seen that the majority of parse tree nodes are binary ones.
+    Nodes with more than 3 children seem to be negligible.
+    The 3ary nodes occupy a certain proportion of the distribution, and their impact on translation

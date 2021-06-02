@@ -1,0 +1,7 @@
+to] [NP only 1.8 bil lion] [PP in] [NP September] .We can regard chunking as a tagging task by con verting chunks into tags on tokens.
+			There are severalways of representing text chunks (Sang and Veen stra, 1999).
+			We tested the Start/End representation in addition to the popular IOB2 representation since local classifiers can have fine-grained informationon the neighboring tags in the Start/End represen tation.For training and testing, we used the data set pro vided for the CoNLL-2000 shared task.
+			The training set consists of section 15-18 of the WSJ corpus, and the test set is section 20.
+			In addition, we made the development set from section 21 3.
+			We basically adopted the feature set provided in 3We used the Perl script provided on http://ilk.kub.nl/?
+			sabine/chunklink/ Current word wi &amp; ti Previous word wi?1 &amp; ti Word two back wi?2 &amp; ti Next word wi+1 &amp; ti Word two ahead wi+2 &amp; ti Bigram features wi?2, wi?1 &amp; ti wi?1, wi &amp; ti wi, wi+1 &amp; ti wi+1, wi+2 &amp; ti 

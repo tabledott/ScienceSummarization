@@ -1,0 +1,9 @@
+ing technique (Yarowsky, 1995), which starts out aiming for high precision, and gradually improves coverage over time.
+    With strong bias (&#946; &#187; 0), we seek a model that maintains high dependency precision on (non-$) attachments by attaching most tags to $.
+    Over time, as this is iteratively weakened (&#946; -* &#8722;oo), we hope to improve coverage (dependency recall).
+    Bootstrapping was applied to syntax learning by Steedman et al. (2003).
+    Our approach differs in being able to remain partly agnostic about each tag&#8217;s true parent (e.g., by giving 50% probability to attaching to $), whereas Steedman et al. make a hard decision to retrain on a whole sentence fully or leave it out fully.
+    In earlier work, Brill and Marcus (1992) adopted a &#8220;local first&#8221; iterative merge strategy for discovering phrase structure.
+    Experiment: Annealing &#946;.
+    We experimented with different annealing schedules for &#946;.
+    The initial value of &#946;, &#946;0, was one of {&#8722;1

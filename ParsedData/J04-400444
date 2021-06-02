@@ -1,0 +1,7 @@
+ The &#8220;distribution&#8221; sums to less than one (there is no history context in the model for which there are 1019 possible outcomes).25 for computing smoothing weights is where ci is the count of the history context Oi(B) and ui is the diversity of that context.26 The multiplicative constant five is used to give less weight to the back-off levels with more context and was optimized by looking at overall parsing performance on the development test set, Section 00 of the Penn Treebank.
+    We call this constant the smoothing factor and denote it as ff.
+    As it happens, the actual formula for computing smoothing weights in Collins&#8217; implementation is where ft is an unmentioned smoothing term.
+    For every parameter class except the subcat parameter class and Ppriorw, ft = 0 and ff = 5.0.
+    For the subcat parameter class, ft = 5.0 and ff = 0.
+    For Ppriorw, ft = 1.0 and ff = 0.0.
+    This curiously means that diversity is not used at all when smoothing subcat-generation probabilities.27 The sec

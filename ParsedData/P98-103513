@@ -1,0 +1,7 @@
+12; case is that of events which had count zero but get a non-zero count in the next iteration, caused by the &amp;quot;N-best&amp;quot; nature of the re-estimation process.
+    Consider a given sentence in our &amp;quot;development&amp;quot; set.
+    The &amp;quot;N-best&amp;quot; derivations for this sentence are trajectories through the state space of our model.
+    They will change from one iteration to the other due to the smoothing involved in the probability estimation and the change of the parameters &#8212; event counts &#8212; defining our model, thus allowing new events to appear and discarding others through purging low probability events from the stacks.
+    The higher the number of trajectories per sentence, the more dynamic this change is expected to be.
+    The results we obtained are presented in the experiments section.
+    All the perplexity evaluations were done using the left-to-right formula (8) (L2RPPL) for which the perplexity on the &amp;quot;development set&amp;quot; is not guarantee

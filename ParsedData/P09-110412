@@ -1,0 +1,11 @@
+are biased toward only using very high loss alignments in our constraint.
+    This slows learning and prevents us from finding a useful weight vector.
+    Instead, in all the experiments we report here, we begin with A = 0 and slowly increase it to A = 0.5.
+  
+  
+    An alternative to margin-based training is a likelihood objective, which learns a conditional alignment distribution Pw(a|x) parametrized as follows, where the log-denominator represents a sum over the alignment family A.
+    This alignment probability only places mass on members of A.
+    The likelihood objective is given by, Optimizing this objective with gradient methods requires summing over alignments.
+    For AITG and ABITG, we can efficiently sum over the set of ITG derivations in 0(n6) time using the inside-outside algorithm.
+    However, for the ITG grammar presented in Section 2.2, each alignment has multiple grammar derivations.
+    In order to correctly sum over the set of ITG alignments, we need to alter the grammar to ensure a bijec

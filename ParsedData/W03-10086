@@ -1,0 +1,10 @@
+CCGbank (Hockenmaier and Steedman, 2002a), a treebank of CCG derivations obtained from the Penn Treebank, from which we also obtain our training data.
+  
+  
+    Our aim is to use CCG derivations as input to a system for automatically producing the argument labels of PropBank.
+    In order to do this, we wish to correlate the CCG relations above with PropBank arguments.
+    PropBank argument labels are assigned to nodes in the syntactic trees from the Penn Treebank.
+    While the CCGbank is derived from the Penn Treebank, in many cases the constituent structures do not correspond.
+    That is, there may be no constituent in the CCG derivation corresponding to the same sequence of words as a particular constituent in the Treebank tree.
+    For this reason, we compute the correspondence between the CCG derivation and the PropBank labels at the level of head words.
+    For each role label for a verb&#8217;s argument in PropBank, we first find the head word for its constituent according to the the head rules of (C

@@ -1,0 +1,7 @@
+rned model because it is very useful.
+    If we place a prior on the weight for this feature so that a large weight will be penalized, then we can prevent the learned model from relying too much on this domain specific feature.
+    Instance pruning: If we know the instances x for which pt(y|x) is different from ps(y|x), we can actively remove these instances from the training data because they are &#8220;misleading&#8221;.
+    For all the three solutions given above, we need either some prior knowledge about the target domain, or some labeled target domain instances; from only the unlabeled target domain instances, we would not know where and why pt(y|x) differs from ps(y|x).
+    In the case where pt(y|x) is similar to ps(y|x), but pt(x) deviates from ps(x), we may use the (unlabeled) target domain instances to bias the estimate of ps(x) toward a better approximation of pt(x), and thus achieve domain adaptation.
+    We explain the idea below.
+    Our goal is to obtain a good estimate of &#952;t that is optimi

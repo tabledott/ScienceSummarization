@@ -1,0 +1,8 @@
+ form or generation.
+    For instance, in our hypothetical example, the string 'John eats' will be generated for semantics eat(john, banana).
+    The solution is to test at the end of the generation procedure whether the feature structure that is found is complete with respect to the original feature structure.
+    However, because of the way in which top-down information is used, it is unclear what semantic information is derived by the rules themselves, and what semantic information is available because of unifications with the original semantics.
+    For this reason, socalled &amp;quot;shadow&amp;quot; variables are added to the generator that represent the feature structure derived by the grammar itself.
+    Furthermore a copy of the semantics of the original feature structure is made at the start of the generation process.
+    Completeness is achieved by testing whether the semantics of the shadow is subsumed by the copy.
+    We will outline here how to generate from a quantified logical form sentences w

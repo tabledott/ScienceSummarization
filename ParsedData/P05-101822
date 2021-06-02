@@ -1,0 +1,9 @@
+udgments and has been used to analyze discourse structure, and (c) it models an aspect of coherence which is orthogonal to ours (their model is lexicalized).
+    Following Foltz et al. (1998) we constructed vector-based representations for individual words from a lemmatized version of the North American News Text Corpus (350 million words) using a term-document matrix.
+    We used singular value decomposition to reduce the semantic space to 100 dimensions obtaining thus a space similar to LSA.
+    We represented the meaning of a sentence as a vector by taking the mean of the vectors of its words.
+    The similarity between two sentences was determined by measuring the cosine of their means.
+    An overall text coherence measure was obtained by averaging the cosines for all pairs of adjacent sentences.
+    In sum, each text was represented by a single feature, its sentence-to-sentence semantic similarity.
+    During training, the ranker learns an appropriate threshold value for this feature.
+    Model performa

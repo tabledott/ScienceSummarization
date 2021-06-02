@@ -1,0 +1,10 @@
+ algorithm is not completely transparent, it may be useful to work through the deterministic version for a detailed example.
+    The predicate-argument structure of this sentence may be represented as follows: Suppose gen is called with expression (6) as form.
+    Since this is the representation of the whole sentence, pull will be called with complete? equal to true.
+    The call to pullopaque-args will return the original wff unchanged since there are no opaque operators in the wff.
+    We therefore call apply-terms on the wff.
+    In apply-terms, the call to applicable-terms returns a list of all of the unnested complex terms.
+    For (6), there will be two: Each of these complex terms will ultimately yield the wffs in which its variable is the more deeply nested of the two.
+    The function apply is called for each of these complex terms, and inside apply there is a recursive call to pull on the restriction of the complex term.
+    This generates all the possible scopings for the restriction.
+    When app

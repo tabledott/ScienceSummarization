@@ -1,0 +1,6 @@
+ simple application of Bayes rule: During development, however, we found that rather than making these assumptions, using Gibbs Sampling to estimate the posterior distribution over types performs slightly better.
+    In order to make predictions, for each entity we use an informative Dirichlet prior based on Otrain e and perform 100 iterations of Gibbs Sampling holding the hidden topic variables in the training data fixed (Yao et al., 2009).
+    Fewer iterations are needed than in training since the typeword distributions, &#946; have already been inferred.
+    To evaluate T-CLASS&#8217;s ability to classify entity mentions in context, we annotated the 2,400 tweets with 10 types which are both popular on Twitter, and have good coverage in Freebase: PERSON, GEO-LOCATION, COMPANY, PRODUCT, FACILITY, TV-SHOW, MOVIE, SPORTSTEAM, BAND, and OTHER.
+    Note that these type annotations are only used for evaluation purposes, and not used during training T-CLASS, which relies only on distant supervision.
+    In some ca

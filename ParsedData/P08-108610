@@ -1,0 +1,12 @@
+lgorithm.
+    The first difference is that in contrast to the exchange algorithm using a two sided class-based bigram model in its optimization criterion, only two clusters are affected by moving a word.
+    Thus the algorithm scales linearly in the number of classes.
+    The second difference is that B dominates the term B + N&#8222; for most corpora and scales far less than linearly with the vocabulary size, providing a significant performance advantage over the other optimization criterion, especially when large vocabularies are used (Whittaker and Woodland, 2001).
+    For efficiency reasons, an exchange of a word between two clusters is separated into a remove and a move procedure.
+    In each iteration the remove procedure only has to be called once for each word, while for a given word move is called once for every cluster to compute the consequences of the tentative exchanges.
+    An outline of the move procedure is given below.
+    The remove procedure is similar.
+    Procedure MoveWord
+  
+  
+    When

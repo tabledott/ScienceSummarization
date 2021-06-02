@@ -1,0 +1,6 @@
+he morphology method.
+    This information is orthogonal to that extracted from conjunctions: only 12 of the 102 morphologically related pairs have been observed in conjunctions in our corpus.
+    Thus, we add to the predictions made from conjunctions the different-orientation links suggested by morphological relationships.
+    We improve the accuracy of classifying links derived from conjunctions as same or different orientation with a log-linear regression model (Santner and Duffy, 1989), exploiting the differences between the various conjunction categories.
+    This is a generalized linear model (McCullagh and Nelder, 1989) with a linear predictor wTx where x is the vector of the observed counts in the various conjunction categories for the particular adjective pair we try to classify and w is a vector of weights to be learned during training.
+    The response y is non-linearly related to 77 through the inverse logit function, en Note that y E (0, 1), with each of these endpoints associated with one of the

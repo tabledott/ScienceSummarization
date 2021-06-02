@@ -1,0 +1,6 @@
+f ten comprise an entire phrase, e.g., ?is really willing?
+			or ?in my opinion?.
+			As a result, wemark as an opinion the entire chunk that con tains an opinion word.
+			This allows each tokenin the chunk to act as an opinion word for fea ture encoding.After syntactic chunking and opinion word propagation, we create the following dependency tree fea tures for each token xi: ? the grammatical role of its chunk ? the grammatical role of xi?1?s chunk ? whether the parent chunk includes an opinion word ? whether xi?s chunk is in an argument position with respect to the parent chunk ? whether xi represents a constituent boundarySemantic class features We use 7 binary fea tures to encode the semantic class of each word xi: authority, government, human, media, organization or company, proper name,and other.
+			The other class captures 13 seman tic classes that cannot be sources, such as vehicle and time.
+			Semantic class information is derived from named entity and semantic class labels assigned to xi by the Sunda

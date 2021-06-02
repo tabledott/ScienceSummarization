@@ -1,0 +1,6 @@
+at use less of the context, by successively deleting elements from the context at each back-off level.
+    As a simple example, the head parameter class smoothes PH0(H  |P, wh, th) with PH1(H  |P, th) and PH2(H  |P).
+    For some conditional probability p(A  |B), let us call the reduced context at the ith back-off level Oi(B), where typically O0(B) = B.
+    Each estimate in the back-off chain is computed via maximum-likelihood (ML) estimation, and the overall smoothed estimate with n back-off levels is computed using n &#8722;1 smoothing weights, denoted A0, ... , An&#8722;2.
+    These weights are used in a recursive fashion: The smoothed version &#732;ei = &#732;pi(A  |Oi(B)) of an unsmoothed ML estimate ei = &#710;pi(A  |Oi(B)) at back-off level i is computed via the formula So, for example, with three levels of back-off, the overall smoothed estimate would be defined as Each smoothing weight can be conceptualized as the confidence in the estimate with which it is being multiplied.
+    These confidence valu

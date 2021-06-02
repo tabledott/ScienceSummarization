@@ -1,0 +1,8 @@
+n tends to do quite well, and its main problem is that the model tends to pick longer compressions than a human would, it seems reasonable to incorporate the unsupervised version into our supervised model, in the hope of getting more rules to use.
+    In generating new short sentences, if we have compression probabilities in the supervised version, we use those, including the special rules.
+    The only time we use an unsupervised compression probability is when there is no supervised version of the unsupervised rule.
+  
+  
+    Even with the unsupervised constraint from section 3, the fact that we have artificially created our joint rules gives us some fairly ungrammatical compressions.
+    Adding extra constraints improves our unsupervised compressions, and gives us better performance on the supervised version as well.
+    We use a program to label syntactic arguments with the roles they are playing (Blaheta and Charniak, 2000), and the rules for complement/adjunct distinction given by (Collins, 1997) to nev

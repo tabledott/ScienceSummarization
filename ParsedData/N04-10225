@@ -1,0 +1,10 @@
+three loss functions in this category: The BLEU score (Papineni et al., 2001), word-error rate, and the position-independent word-error rate (Och, 2002).
+    Another example of a loss function in this class is the MTeval metric introduced in Melamed et al. (2003).
+    A loss function of this type depends only on information from word strings.
+    BLEU score (Papineni et al., 2001) computes the geometric mean of the precision of-grams of various lengths ( ) between a hypothesis and a reference translation, and includes a brevity penalty ( ) if the hypothesis is shorter than the reference.
+    We use . where is the precision of-grams in the hypothesis .
+    The BLEU score is zero if any of the n-gram precisions is zero for that sentence pair.
+    We note that .
+    We derive a loss function from BLEU score as BLEU .
+    Word Error Rate (WER) is the ratio of the string-edit distance between the reference and the hypothesis word strings to the number of words in the reference.
+    Stringedit distance is measured 

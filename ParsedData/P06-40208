@@ -1,0 +1,6 @@
+ssociated with subanalyses in the forest via those associated with specific actions in cells of the LR table (Inui et al., 1997).
+    The n-best (i.e. most probable) parses can be efficiently extracted by unpacking subanalyses, following pointers to contained subanalyses and choosing alternatives in order of probabilistic ranking.
+    This process backtracks occasionally since unifications are required during the unpacking process and they occasionally fail (see Oepen and Carroll, 2000).
+    The probabilities of actions in the LR table are computed using bootstrapping methods which utilise an unlabelled bracketing of the Susanne Treebank (Watson et al., 2006).
+    This makes the system more easily retrainable after changes in the grammar and opens up the possibility of quicker tuning to in-domain data.
+    In addition, the structural ranking induced by the parser can be reranked using (in-domain) lexical data which provides conditional probability distributions for the SUBCATegorisation attributes of the majo

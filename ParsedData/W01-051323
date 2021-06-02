@@ -1,0 +1,8 @@
+using LSA, suppose we want to rescore a list L whose entries are potential MWUs.
+    For every entry X in L, we seek out all other entries whose sorted order is less than some maximum value (such as 5000) that have all but one word in common.
+    For example, suppose X is &#8220;bachelor_&#8217;_s_degree.&#8221; The only other entry that matches in all but one word is &#8220;master_&#8217;_s_degree.&#8221; If the semantic vectors for &#8220;bachelor&#8221; and &#8220;master&#8221; have a normalized cosine score greater than a threshold of 2.0, we then say that the two MWUs are in each others substitution set.
+    To rescore, we assign a new score to each entry in substitution set.
+    Each element in the substitution set gets the same score.
+    The score is derived using a combination of the previous Z-scores for each element in the substitution set.
+    The combining function may be an averaging, or a computation of the median, the maximum, or something else.
+    The maximum outperforms the average and the 

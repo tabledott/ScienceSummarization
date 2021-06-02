@@ -1,0 +1,7 @@
+e contribution of IN.
+    When OUT is large and distinct, its contribution can be controlled by training separate IN and OUT models, and weighting their combination.
+    An easy way to achieve this is to put the domain-specific LMs and TMs into the top-level log-linear model and learn optimal weights with MERT (Och, 2003).
+    This has the potential drawback of increasing the number of features, which can make MERT less stable (Foster and Kuhn, 2009).
+    Apart from MERT difficulties, a conceptual problem with log-linear combination is that it multiplies feature probabilities, essentially forcing different features to agree on high-scoring candidates.
+    This is appropriate in cases where it is sanctioned by Bayes&#8217; law, such as multiplying LM and TM probabilities, but for adaptation a more suitable framework is often a mixture model in which each event may be generated from some domain.
+    This leads to a linear combination of domain-specific probabilities, with weights in [0, 1], normalized to sum to

@@ -1,0 +1,7 @@
+ is a subset of N, P(s|NI, N) = P(s|NI), and by our assumption about the relationship of I and NI, P(s|NI) = P(s|I).
+    Hence, If we could estimate all the probabilities in the right-hand side of this equation, we could use it to select text segments that have a high probability of being in NI.
+    We can estimate P(s|I) and P(s|N) by training language models on I and a sample of N, respectively.
+    That leaves us only P(NI|N), to estimate, but we really don&#8217;t care what P(NI|N) is, because knowing that would still leave us wondering what threshold to set on P (NI|s, N).
+    We don&#8217;t care about classification accuracy; we care only about the quality of the resulting language model, so we might as well just attempt to find a threshold on P(s|I)/P(s|N) that optimizes the fit of the resulting language model to held-out indomain data.
+    Equivalently, we can work in the log domain with the quantity log(P(s|I)) &#8722; log(P(s|N)).
+    This gets us very close to working with the difference in cross-e

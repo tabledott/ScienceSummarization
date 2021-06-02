@@ -1,0 +1,8 @@
+res on the newsgroup data are not higher than the best system, though.
+    The word-level combination was evaluated in three settings.
+    First, simple confusion network decoding with six systems without system weights was performed (no weights 6 in the tables).
+    Second, system weights were trained for combining six systems (TER/BLEU 6 in the tables).
+    Finally, all six system outputs as well as the sentence and phrase-level combination outputs were combined with system weights (TER/BLEU 8 in the tables).
+    The 6-way combination weights were tuned on merged NIST MT03 and MT04 evaluation sets and the 8-way combination weights were tuned only on NIST MT04 since the sentence and phraselevel combination methods were already tuned on NIST MT03.
+    The word-level combination yields about 2.0%-3.0% gain in TER and 2.0%-4.0% gain in BLEU on the tuning sets.
+    The test set results show that the simple confusion network decoding without system weights yields very good scores, mostly better than either senten

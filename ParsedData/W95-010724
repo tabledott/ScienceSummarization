@@ -1,0 +1,6 @@
+he process of applying rules to be performed without having to search through the corpus.
+    Unfortunately, such complete indexing proved to be too costly in terms of physical memory to be feasible in this application.
+    However, it is possible to construct a limited index that lists for each candidate rule those locations in the corpus at which the static portions of its left-hand-side pattern match.
+    Because this index involves only the stable word identity and part-of-speech tag values, it does not require updating; thus it can be stored more compactly, and it is also not necessary to maintain back pointers from corpus locations to the applicable rules.
+    This kind of partial static index proved to be a significant advantage in the portion of the program where candidate rules with relatively high positive scores are being tested to determine their negative scores, since it avoids the necessity of testing such rules against every location in the corpus.
+    We also investigated a new heuristic to sp

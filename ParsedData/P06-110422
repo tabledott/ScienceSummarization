@@ -1,0 +1,7 @@
+act match between two subtrees, which normally does not occur very frequently.
+    Collins and Duffy (2001) report that in practice, running time for the parse tree kernel is more close to linear (O(JN1J+JN2J), rather than O(JN1J*JN2J ).
+    As a result, using the PC with Intel P4 3.0G CPU and 2G RAM, our system only takes about 110 minutes and 30 minutes to do training on the ACE 2003 (~77k training instances) and 2004 (~33k training instances) data, respectively.
+    (2) Further Improvement: One of the potential problems in the parse tree kernel is that it carries out exact matches between sub-trees, so that this kernel fails to handle sparse phrases (i.e.
+    &#8220;a car&#8221; vs. &#8220;a red car&#8221;) and near-synonymic grammar tags (for example, the variations of a verb (i.e. go, went, gone)).
+    To some degree, it could possibly lead to over-fitting and compromise the performance.
+    However, the above issues can be handled by allowing grammar-driven partial rule matching and other approximate ma

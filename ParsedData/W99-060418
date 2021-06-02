@@ -1,0 +1,10 @@
+bil task (Table 1) the precision of the baseline Viterbi alignments is 83.3 percent with English as source language and 81.8 percent with German as source language.
+    Using this heuristic we get an alignment matrix with a precision of 88.4 percent without loss in recall.
+    3.
+    We estimate a bilingual word lexicon p(f le) by the relative frequencies of the alignment determined in the previous step: Here nA(f,e) is the frequency that the word f is aligned to e and n(e) is the frequency of e in the training corpus.
+    4.
+    We determine word classes for source and target language.
+    A naive approach for doing this would be the use of monolingually optimized word classes in source and target language.
+    Unfortunately we can not expect that there is a direct correspondence between independently optimized classes.
+    Therefore monolingually optimized word classes do not seem to be useful for machine translation.
+    We determine correlated bilingual classes by using the method described in (Och, 1999)

@@ -1,0 +1,8 @@
+sh comparable corpora.
+    We use a dictionary learned from a parallel corpus on 190M English tokens and a classifier trained on instances generated from a parallel corpus of 220k English tokens.
+    We start with a comparable corpus consisting of 500k Chinese articles and 600k English articles.
+    The article selection step (Section 2.1) outputs 7.5M similar article pairs; from each article pair we generate all possible sentence pairs and obtain 2,400M pairs.
+    Of these, less than 1% (17M) pass the candidate selection stage (Section 2.2) and are presented to the ME classifier.
+    The system outputs 430k sentence pairs (9.5M English tokens) that have been classified as parallel (with probability greater than 0.7).
+    The figure also presents, in the lower part, the parameters that control the filtering at each stage. the particular sentence pair to be parallel; the higher the value, the higher the classifier&#8217;s confidence.
+    Thus, in order to obtain higher precision, we can choose to define as par

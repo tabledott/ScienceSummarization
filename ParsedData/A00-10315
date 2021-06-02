@@ -1,0 +1,8 @@
+ Trigram probabilities generated from a corpus usually cannot directly be used because of the sparsedata problem.
+    This means that there are not enough instances for each trigram to reliably estimate the probability.
+    Furthermore, setting a probability to zero because the corresponding trigram never occured in the corpus has an undesired effect.
+    It causes the probability of a complete sequence to be set to zero if its use is necessary for a new text sequence, thus makes it impossible to rank different sequences containing a zero probability.
+    The smoothing paradigm that delivers the best results in TnT is linear interpolation of unigrams, bigrams, and trigrams.
+    Therefore, we estimate a trigram probability as follows: P are maximum likelihood estimates of the probabilities, and A1 + A2 &#177; A3 = 1, SO P again represent probability distributions.
+    We use the context-independent variant of linear interpolation, i.e., the values of the As do not depend on the particular trigram.
+    Contrary

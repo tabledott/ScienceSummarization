@@ -1,0 +1,8 @@
+as led to very effective classification (Boykov, Veksler, and Zabih, 1999).
+    Figure 2 shows a worked example of the concepts in this section.
+    Suppose we have n items x1, ... , xn to divide into two classes C1 and C2, and we have access to two types of information: We would like to maximize each item&#8217;s &#8220;net happiness&#8221;: its individual score for the class it is assigned to, minus its individual score for the other class.
+    But, we also want to penalize putting tightlyassociated items into different classes.
+    Thus, after some algebra, we arrive at the following optimization problem: assign the xis to C1 and C2 so as to minimize the partition cost The problem appears intractable, since there are 2n possible binary partitions of the xi&#8217;s.
+    However, suppose we represent the situation in the following manner.
+    Build an undirected graph G with vertices {v1, ... , vn, s, t}; the last two are, respectively, the source and sink.
+    Add n edges (s, vi), each with weight ind1(xi),

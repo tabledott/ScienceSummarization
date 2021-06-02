@@ -1,0 +1,6 @@
+tunately, for even very simple models such as IBM 1 or 2, computing the normalization constant over this set of alignments is a #P-complete problem, by a reduction from counting matchings in a bipartite graph (Valiant, 1979).
+    We could perhaps attempt to compute q using a variety of approximate probabilistic inference techniques, for example, sampling or variational methods.
+    With efficiency as our main concern, we opted instead for a simple heuristic procedure by letting q be a product of marginals: where each pk(zij  |x; &#952;k) is the posterior marginal probability of the (i, j) edge being present (or absent) in the alignment according to each model, which can be computed separately and efficiently.
+    Now the new E-step only requires simple marginal computations under each of the models.
+    This procedure is very intuitive: edges on which the models disagree are discounted in the Estep because the product of the marginals p1(zij | x; &#952;1)p2(zij  |x; &#952;2) is small.
+    Note that in general

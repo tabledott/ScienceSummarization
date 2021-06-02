@@ -1,0 +1,10 @@
+must be some string e with both P(e) and P(fle) nonzero.
+    The channel model lets us conclude that if P(fle) is nonzero, then e contains the n words el, , en in some order.
+    If P(e) is nonzero, then every bigram in e (including the two boundary bigrams involving eo) has nonzero probability.
+    Because each English word in e corresponds to a unique vertex, we can use the order of words in e to produce an ordering of vertices in G. We append vertex 0 to the beginning and end of this list to produce a Hamilton Circuit.
+    The source model construction guarantees an edge between each vertex and the next.
+    If Ml-DECIDE returns no, then we know that every string e includes at least one zero value in the computation of either P(e) or P(fle).
+    From any proposed Hamilton Circuit&#8212;i.e., some ordering of vertices in G&#8212;we can construct a string e using the same ordering.
+    This e will have P(fle) = 1 according to the channel model.
+    Therefore, P(e) = 0.
+    By the source model, this can only 

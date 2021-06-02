@@ -1,0 +1,6 @@
+f the WordEdges feature (see Figure 2(c) and Section 3.2 for details).
+    Using a machine learning algorithm, the weight vector w can be estimated from the training data where each sentence si is labelled with its correct (&#8220;gold-standard&#8221;) parse y&#8727;i .
+    As for the learner, Collins (2000) uses the boosting algorithm and Charniak and Johnson (2005) use the maximum entropy estimator.
+    In this work we use the averaged perceptron algorithm (Collins, 2002) since it is an online algorithm much simpler and orders of magnitude faster than Boosting and MaxEnt methods.
+    Shown in Pseudocode 1, the perceptron algorithm makes several passes over the whole training data, and in each iteration, for each sentence si, it tries to predict a best parse yi among the candidates cand(si) using the current weight setting.
+    Intuitively, we want the gold parse y&#8727;i to be picked, but in general it is not guaranteed to be within cand(si), because the grammar may fail to cover the gold parse, and becaus

@@ -1,0 +1,9 @@
+ence, (3) Number of ???
+			characters in the sentence, (4) Number of quotes in the sentence, and (5) Number of capitalized/all capitals wordsin the sentence.
+			All these features were normal ized by dividing them by the (maximal observed value times averaged maximal value of the other feature groups), thus the maximal weight of each of these features is equal to the averaged weight of a single pattern/word/n-gram feature.
+			3.2 Classification algorithm.
+			In order to assign a sentiment label to new exam ples in the test set we use a k-nearest neighbors(kNN)-like strategy.
+			We construct a feature vec tor for each example in the training and the test set.
+			We would like to assign a sentiment class toeach example in the test set.
+			For each feature vec tor V in the test set, we compute the Euclidean distance to each of the matching vectors in the training set, where matching vectors are defined as ones which share at least one pattern/n-gram/word feature with v.Let ti, i = 1 . . .
+			k be the k vectors w

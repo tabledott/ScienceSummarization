@@ -1,0 +1,10 @@
+rect logical forms), Precision (percentage of logical forms returned that are correct) and F1 (the harmonic mean of Precision and Recall).
+    Two-Pass Parsing To investigate the trade-off between precision and recall, we report results with a two-pass parsing strategy.
+    When the parser fails to return an analysis for a test sentence due to novel words or usage, we reparse the sentence and allow the parser to skip words, with a fixed cost.
+    Skipping words can potentially increase recall, if the ignored word is an unknown function word that does not contribute semantic content.
+  
+  
+    Tables 1, 2, and 3 present the results for all of the experiments.
+    In aggregate, they demonstrate that our algorithm, UBL, learns accurate models across languages and for both meaning representations.
+    This is a new result; no previous system is as general.
+    We also see the expected tradeoff between precision and recall that comes from the two-pass parsing approach, which is labeled UBL-s. With the ability to s

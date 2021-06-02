@@ -1,0 +1,9 @@
+we limit the training data to 250 examples due to scalability issues.
+    We also prune the search space by limiting the number of logical symbol candidates per word (on average 13 logical symbols per word).
+    Precision and recall are typically used as evaluation metrics in semantic parsing.
+    However, as our model inherently has the ability to map any input sentence into the space of meaning representations the trade off between precision and recall does not exist.
+    Thus, we report accuracy: the percentage of meaning representations which produce the correct response.
+    This is equivalent to recall in previous work (Wong and Mooney, 2007; Zettlemoyer and Collins, 2005; Zettlemoyer and Collins, 2007).
+    Feedback Recall that our learning framework does not require meaning representation annotations.
+    However, we do require a Feedback function that informs the learner whether a predicted meaning representation when executed produces the desired response for a given input sentence.
+    We automatic

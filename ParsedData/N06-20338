@@ -1,0 +1,6 @@
+ same head-table as Yamada and Matsumoto (2003), using sections 02-21 as training data and section 23 as test data, following (McDonald et al., 2005; Nivre &amp; Scholz, 2004; Yamada &amp; Matsumoto, 2003).
+    Dependencies extracted from section 00 were used as held-out data, and section 22 was used as additional development data.
+    For constituent parsing, we used the section splits of the Penn Treebank as described above, as has become standard in statistical parsing research.
+    Six dependency parsers were used in our combination experiments, as described below.
+    The deterministic shift-reduce parsing algorithm of (Nivre &amp; Scholz, 2004) was used to create two parsers2, one that processes the input sentence from left-to-right (LR), and one that goes from right-toleft (RL).
+    Because this deterministic algorithm makes a single pass over the input string with no back-tracking, making decisions based on the parser&#8217;s state and history, the order in which input tokens are considered affects th

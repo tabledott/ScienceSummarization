@@ -1,0 +1,7 @@
+equencies of each pair are higher.
+    Stage one then produces as output a simple list of adjective-adjective pairs that occurred within the same minimal NP and a table with the observed frequencies of every adjective-noun combination.
+    Each row in the table contains the frequencies of modified nouns for a given adjective.
+    This stage currently employs two similarity modules, each of which processes a part of the output of stage one and produces a measure of similarity for each possible pair of adjectives.
+    The first module processes the adjective-noun frequency table; for each possible pair in the table we compare the two distributions of nouns.
+    We use a robust non-parametric method to compute the similarity between the modified noun distributions for any two adjectives, namely Kendall's coefficient (Kendall, 1938) for two random variables with paired observations.
+    In our case, the two random variables are the two adjectives we are comparing, and each paired observation is their frequency of

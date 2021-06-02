@@ -1,0 +1,8 @@
+to optimize their rulebased coreference classifier for clustering-level accuracy, essentially by finding a subset of the learned rules that performs the best on held-out data with respect to the target coreference scoring program.
+    Strube and M&#168;uller (2003) propose a similar idea, but aim instead at finding a subset of the available features with which the resulting coreference classifier yields the best clustering-level accuracy on held-out data.
+    To our knowledge, our work is the first attempt to optimize a ranker for clustering-level accuracy.
+  
+  
+    Our ranking approach operates by first dividing the available training texts into two disjoint subsets: a training subset and a held-out subset.
+    More specifically, we first train each of our pre-selected coreference systems on the documents in the training subset, and then use these resolvers to generate candidate partitions for each text in the held-out subset from which a ranking model will be learned.
+    Given a test text, we use our core

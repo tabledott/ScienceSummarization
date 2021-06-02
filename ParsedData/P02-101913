@@ -1,0 +1,7 @@
+  We trained the letter-to-phone models using the training splits and tested on the test splits.
+    We are reporting accuracy figures only on the NETtalk dataset since this dataset has been used extensively in building letter-to-phone models, and because phone accuracy is hard to determine for the nonphonetically-aligned Microsoft Speech dictionary.
+    For our spelling correction algorithm we use a letterto-phone model learned from the Microsoft Speech dictionary, however.
+    The results for phone accuracy and word accuracy of the initial model and extensions are shown in Table 2.
+    The phone accuracy is the percentage correct of all phones proposed (excluding the empties) and the word accuracy is the percentage of words for which pronunciations were guessed without any error.
+    For our data we noticed that the most specific rule that matches is often not a sufficiently good predictor.
+    By linearly interpolating the probabilities given by the five most specific matching rules we decreased the word e

@@ -1,0 +1,13 @@
+lmann and Xia, 2003).
+    We maximize over all block segmentations with orientation for which the source phrases yield a segmentation of the input sentence.
+    Swapping involves only blocks for which for the successor block , e.g. the blocks and in Fig 1.
+    We tried several thresholds for , and performance is reduced significantly only if .
+    No other parameters are used to control the block swapping.
+    In particular the orientation of the predecessor block is ignored: in future work, we might take into account that a certain predecessor block typically precedes other blocks.
+  
+  
+    The translation system is tested on an Arabic-to-English translation task.
+    The training data comes from the UN news sources: million Arabic and million English words.
+    The training data is sentence-aligned yielding million training sentence pairs.
+    The Arabic data is romanized, some punctuation tokenization and some number classing are carried out on the English and the Arabic training data.
+    As devtest set,

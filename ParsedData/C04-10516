@@ -1,0 +1,10 @@
+icate articles are filtered out of the clusters, many slightly-rewritten variants remain.
+			2.1 Extracting Sentential Paraphrases.
+			Two separate techniques were employed to extract likely pairs of sentential paraphrases from these clusters.
+			The first used string edit distance, counting the number of lexical deletions and insertions needed to transform one string into another.
+			The second relied on a discourse-based heuristic, specific to the news genre, to identify likely paraphrase pairs even when they have little superficial similarity.
+	
+	
+			A simple edit distance metric (Levenshtein 1966) was used to identify pairs of sentences within a cluster that are similar at the string level.
+			First, each sentence was normalized to lower case and paired with every other sentence in the cluster.
+			Pairings that were identical or differing only by punctuation were rejected, as were those where the shorter sentence in the pair was less than two thirds the length of the longer, this latter constraint in effe

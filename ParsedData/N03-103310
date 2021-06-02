@@ -1,0 +1,7 @@
+e those in figure 1, an adaptation of the Viterbi algorithm can be used to find the maximizing sequence in polynomial time.
+    Figure 3 gives pseudocode for the concrete case of the network in figure 1(d); the general case is similar, and is in fact just a max-plus version of standard inference algorithms for Bayes&#8217; nets (Cowell et al., 1999, 97).
+    In essence, there is no difference between inference on this network and a second-order left-to-right CMM or HMM.
+    The only difference is that, when the Markov window is at a position i, rather than receiving the score for P(ti|ti&#8722;1, ti&#8722;2, wi), one receives the score for P(ti&#8722;1|ti, ti&#8722;2, wi&#8722;1).
+    There are some foundational issues worth mentioning.
+    As discussed previously, the maximum scoring sequence need not be the sequence with maximum likelihood according to the model.
+    There is therefore a worry with these models about a kind of &#8220;collusion&#8221; where the model locks onto conditionally consistent but j

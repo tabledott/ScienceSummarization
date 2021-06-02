@@ -1,0 +1,6 @@
+formal evaluation, conducted in the same fashion as the previous experiment, yields the agreement data in Table 2.
+    Using the cases where the two human judgments agree as ground truth, precision of the system is estimated at 79.5%, and recall at 70.3%.
+    A look at STRAND's errors quickly identifies the major source of error as a shortcoming of the language identification module: its implicit assumption that every document is either in English or in French.
+    This assumption was violated by a set of candidates in the test set, all from the same site, that pair Dutch pages with French.
+    The language identification criterion adopted in the previous section requires only that the Dutch pages look more like English than like French, which in most cases is true.
+    This problem is easily resolved by training the existing language identification component with a wider range of languages, and then adopting a stricter filtering criterion requiring that Pr(Englishldi) &gt; Pr(Lidi) for every language L in th

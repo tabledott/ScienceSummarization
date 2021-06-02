@@ -1,0 +1,9 @@
+d led to a 0.38 BLEU point gain on the test data (MT05).
+    Second, we extend the CRF label set of our CRF segmenter to identify proper nouns.
+    This gives 3.3% relative improvement on the OOV recall rate, and a 0.32 improvement in BLEU.
+    Finally, we tune the CRF model to generate shorter or longer words to directly optimize the performance of MT.
+    For MT, we found that it is preferred to have words slightly shorter than the CTB standard.
+    The paper is organized as follows: we describe the experimental settings for the segmentation task and the task in Section 2.
+    In Section 3.1 we demonstrate that it is helpful to have word segmenters for MT, but that segmentation performance does not directly correlate with MT performance.
+    We analyze what characteristics of word segmenters most affect MT performance in Section 3.2.
+    In Section 4 and 5 we describe how we tune a CRF model to fit the &#8220;word&#8221; granularity and also how we incorporate external lexicon and information about named en

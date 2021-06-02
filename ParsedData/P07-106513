@@ -1,0 +1,6 @@
+f memory these models take up on disk and compressed using the gzip utility in parentheses as well as the number of distinct n-grams of each order.
+    We give the gzip compressed size as an optimistic lower bound on the size of any lossless representation of each model.2 2Note, in particular, that gzip compressed files do not support direct random access as required by our application.
+    To create Bloom filter LMs we gathered n-gram counts from both the Europarl (EP) and the whole of the Gigaword Corpus (GW).
+    Table 2 shows the numbers of distinct n-grams in these corpora.
+    Note that we use no pruning for these models and that the numbers of distinct n-grams is of the same order as that of the recently released Google Ngrams dataset (LDC2006T13).
+    In our experiments we create a range of models referred to by the corpus used (EP or GW), the order of the n-gram(s) entered into the filter (1 to 10), whether the model is Boolean (Bool-BF) or provides frequency information (FreqBF), whether or not sub-

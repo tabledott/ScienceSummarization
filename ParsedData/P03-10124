@@ -1,0 +1,10 @@
+ alignments exist as artifacts of which English words generated which French words.
+    Our model does not state that one sentence generates the other.
+    Instead it takes both sentences as given, and uses the sentences to determine an alignment.
+    An alignment A consists of t links {l1, l2, ... , lt}, where each lk = l(eik, fjk) for some ik and jk.
+    We will refer to consecutive subsets of A as lji = {li, li+1, ... , lj}.
+    Given this notation, P(A|E, F) can be decomposed as follows: Here P(lk|eik, fjk) is link probability given a cooccurrence of the two words, which is similar in spirit to Melamed&#8217;s explicit noise model (Melamed, 2000).
+    This term depends only on the words inmodifies the link probability, providing contextsensitive information.
+    Up until this point, we have made no simplifying assumptions in our derivation.
+    Unfortunately, Ck = {E, F, lk&#8722;1 1 } is too complex to estimate context probabilities directly.
+    Suppose FTk is a set of context-related features such that

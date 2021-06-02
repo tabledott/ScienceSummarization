@@ -1,0 +1,9 @@
+ted phrase-table with the standard sourcetarget one.
+    This is desired in order to compensate for the noise incurred by the triangulation process.
+    We used two combination methods, namely linear interpolation (see (2)) and a weighted geometric mean (see (3)).
+    Table 1 reports the results for two translation tasks when triangulating with a single language (es) using three different feature sets, each with different translation features.
+    The interpolation model uses uniform linear interpolation to merge the standard and triangulated phrase-tables.
+    Non-uniform mixtures did not provide consistent gains, although, as expected, biasing towards the standard phrasetable was more effective than against.
+    The indicator model uses the same interpolated distribution along with a series of 0-1 indicator features to identify the source of each event, i.e., if each (s, t) pair is present in phrase-table j.
+    We also tried per-context features with similar results.
+    The separate model has a separate f

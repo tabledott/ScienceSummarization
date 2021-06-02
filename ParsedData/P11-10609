@@ -1,0 +1,9 @@
+er on.
+    In the basic version, d was simply the consistent assignments to the root.
+    Now d contains the consistent joint assignments to the active nodes (which include the root and all marked nodes), as well as information stored about each marked node.
+    Think of d as consisting of n columns, one for each active node according to a pre-order traversal of z.
+    Column 1 always corresponds to the root node.
+    Formally, a denotation is defined as follows (see Figure 5 for an example): Definition 2 (Denotations) Let D be the set of denotations, where each d E D consists of where each store a contains a mark relation a.r E {E, Q, C, 0}, a base denotation a.b E D U{0}, and a child denotation a.c E D U{0}.
+    We write d as ((A; (ri, bi, ci); ... ; (rn, bn, cn))).
+    We use d{ri = x} to mean d with d.ri = d.ai.r = x (similar definitions apply for d{ai = x}, d{bi = x}, and d{ci = x}).
+    The denotation of a DCS tree can now be defined recursively: The base case is defined in (3): if z is a single node wi

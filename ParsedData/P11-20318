@@ -1,0 +1,7 @@
+chasticity of the optimizer.
+    As discussed above, different optimization runs find different local maxima.
+    The noise due to this variable can depend on many number of factors, including the number of random restarts used (in MERT), the number of features in a model, the number of references, the language pair, the portion of the search space visible to the optimizer (e.g.
+    10best, 100-best, a lattice, a hypergraph), and the size of the tuning set.
+    Unfortunately, there is no proxy to estimate this effect as with bootstrap resampling.
+    To control for this variable, we must run the optimizer multiple times to estimate the spread it induces on the development set.
+    Using the n optimizer samples, with mi as the translation quality measurement of 5METEOR version 1.2 with English ranking parameters and all modules. the development set for the ith optimization run, and m is the average of all mis, we report the standard deviation over the tuning set as sdev: (mi &#8722; m)2 n &#8722; 1 A high sdev

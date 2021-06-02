@@ -1,0 +1,9 @@
+s of 28.3M words on the English side, and a trigram language model is trained on the Chinese side.
+    We use the same test set as (Huang et al., 2006), which is a 140-sentence subset of the NIST 2003 test set with 9&#8211;36 words on the English side.
+    The weights for the log-linear model are tuned on a separate development set.
+    We set the decoder phrase-table limit to 100 as suggested in (Koehn, 2004) and the distortion limit to 4.
+    Figure 7(a) compares cube pruning against fullintegration in terms of search quality vs. search efficiency, under various pruning settings (threshold beam set to 0.0001, stack size varying from 1 to 200).
+    Search quality is measured by average model cost per sentence (lower is better), and search efficiency is measured by the average number of hypotheses generated (smaller is faster).
+    At each level of search quality, the speed-up is always better than a factor of 10.
+    The speed-up at the lowest searcherror level is a factor of 32.
+    Figure 7(b) makes a simi

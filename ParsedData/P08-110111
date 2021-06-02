@@ -1,0 +1,5 @@
+ It worked well for word segmentation alone (Zhang and Clark, 2007), even with an agenda size as small as 8, and a simple beam search algorithm also works well for POS tagging (Ratnaparkhi, 1996).
+    However, when applied to the joint model, it resulted in a reduction in segmentation accuracy (compared to the baseline segmentor) even with B as large as 1024.
+    One possible cause of the poor performance of the standard beam search method is the combined nature of the candidates in the search space.
+    In the baseInput: raw sentence sent &#8211; a list of characters Variables: candidate sentence item &#8211; a list of (word, tag) pairs; maximum word-length record maxlen for each tag; the agenda list agendas; the tag dictionary tagdict; start index for current word; end index for current word Initialization: agendas[0] = [&#8220;&#8221;], agendas[i] = [] (i!
+    = 0) Algorithm: for end index = 1 to sent.length: foreach tag: for start index = max(1, end index &#8722; maxlen[tag] + 1) to end index: word = sent

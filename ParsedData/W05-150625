@@ -1,0 +1,12 @@
+D?(v)| &lt; k and |cand[v]| &gt; 0 do 8: ?e, j?
+			D?|D?(v)|(v) . last derivation 9: L???N???(cand[v], e, j, k?)
+			update the heap, adding the successors of last derivation 10: append E??????-M??(cand[v]) to D?(v) . get the next best derivation and delete it from the heap 11: 12: procedure L???N???(cand, e, j, k?)
+			13: for i?
+			1 . . .
+			|e| do . add the |e| neighbors 14: j?
+			j + bi 15: L???K??B???(Ti(e), j?i , k?)
+			recursively solve a sub-problem 16: if j?i ? |D?(Ti(e))| and ?e, j??
+			&lt; cand then . if it exists and is not in heap yet 17: I?????(cand, ?e, j??)
+			add to heap Figure 7: Algorithm 3 58 Algorithm Time Complexity 1-best Viterbi O(E) Algorithm 0 O(Eka log k) Algorithm 1 O(Ek log k) Algorithm 2 O(E + Vk log k) Algorithm 3 O(E + |Dmax|k log k) generalized J&amp;M O(E + |Dmax|k log(d + k)) Table 1: Summary of Algorithms.
+			the k-best derivations of the target vertex (goal item).
+			We can therefore take laziness to an extreme by delaying the whole k-best calculation until after parsing.

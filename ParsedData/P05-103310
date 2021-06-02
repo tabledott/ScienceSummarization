@@ -1,0 +1,7 @@
+guage model is integrated by intersecting the English-side CFG with the language model, which is a weighted finitestate automaton.
+  
+  
+    The training process begins with a word-aligned corpus: a set of triples hf, e, &#8764;i, where f is a French sentence, e is an English sentence, and &#8764; is a (manyto-many) binary relation between positions of f and positions of e. We obtain the word alignments using the method of Koehn et al. (2003), which is based on that of Och and Ney (2004).
+    This involves running GIZA++ (Och and Ney, 2000) on the corpus in both directions, and applying refinement rules (the variant they designate &#8220;final-and&#8221;) to obtain a single many-to-many word alignment for each sentence.
+    Then, following Och and others, we use heuristics to hypothesize a distribution of possible derivations of each training example, and then estimate the phrase translation parameters from the hypothesized distribution.
+    To do this, we first identify initial phrase pairs using the same cr

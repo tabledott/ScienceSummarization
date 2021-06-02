@@ -1,0 +1,9 @@
+own the effect of the MBR scaling factor on the performance of lattice MBR.
+    The scale factor determines the flatness of the posterior distribution over translation hypotheses.
+    A scale of 0.0 means a uniform distribution while 1.0 implies that there is no scaling.
+    This is an important parameter that needs to be tuned on a development set.
+    There has been prior work in MBR speech recognition and machine translation (Goel and Byrne, 2000; Ehling et al., 2007) which has shown the need for tuning this factor.
+    Our MT system parameters are trained with Minimum Error Rate Training which assigns a very high posterior probability to the MAP translation.
+    As a result, it is necessary to flatten the probability distribution so that MBR decoding can select hypotheses other than the MAP hypothesis.
+    Our Lattice MBR implementation is made possible due to the linear approximation of the BLEU score.
+    This linearization technique has been applied elsewhere when working with BLEU: Smith and Eisner (2

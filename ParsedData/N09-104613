@@ -1,0 +1,6 @@
+nerate training data in all the languages we wished to generate segmentation lattices for, we have confined ourselves to features that we expect to be reasonably informative for a broad class of languages.
+    A secondary advantage of this is that we used denser features than are often used in maximum entropy modeling, meaning that we could train our model with relatively less training data than might otherwise be required.
+    The features we used in our compound segmentation model for the experiments reported below are shown in Table 2.
+    Building on the prior work that relied heavily on the frequency of the hypothesized constituent morphemes in a monolingual corpus, we included features that depend on this value, f(si).
+    |si |refers to the number of letters in the ith hypothesized segment.
+    Binary predicates evaluate to 1 when true and 0 otherwise. f(si) is the frequency of the token si as an independent word in a monolingual corpus. p(#|si1 &#183; &#183; &#183; si4) is the probability of a word st

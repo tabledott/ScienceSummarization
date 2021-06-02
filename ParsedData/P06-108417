@@ -1,0 +1,8 @@
+hether `wrk dyn is an MWE.
+    This is another case of uncertain output observation, which can be represented by our text encoding, as done in Fig.
+    1.
+    This representation seems to be expensive in term of the number of emissions per sentence.
+    However, we observe in our data that most of the words have only one or two possible segmentations, and most of the segmentations consist of at most one affix.
+    In practice, we found the average number of emissions per sentence in our corpus (where each symbol is counted as the number of its predecessor emissions) to be 455, where the average number of words per sentence is about 18.
+    That is, the cost of operating over an ambiguous sentence representation increases the size of the sentence (from 18 to 455), but on the other hand, it reduces the probabilistic model by a factor of 10 (as discussed above).
+    Morphological disambiguation over such a sequence of vectors of uncertain morphemes is similar to words extraction in automatic speech recognition (

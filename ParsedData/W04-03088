@@ -1,0 +1,10 @@
+directed arc wi &#8212;* wj and reduces them to the head wi.
+    3.
+    The transition Shift pushes the next input token wi onto the stack.
+    The transitions Left-Reduce and RightReduce are subject to conditions that ensure that the Single head condition is satisfied.
+    For Shift, the only condition is that the input list is non-empty.
+    As it stands, this transition system is nondeterministic, since several transitions can often be applied to the same configuration.
+    Thus, in order to get a deterministic parser, we need to introduce a mechanism for resolving transition conflicts.
+    Regardless of which mechanism is used, the parser is guaranteed to terminate after at most 2n transitions, given an input string of length n. Moreover, the parser is guaranteed to produce a dependency graph that is acyclic and projective (and satisfies the singlehead constraint).
+    This means that the dependency graph given at termination is well-formed if and only if it is connected.
+    We can now define what it mea

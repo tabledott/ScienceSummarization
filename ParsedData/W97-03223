@@ -1,0 +1,10 @@
+e between clusters.
+    All such algorithms begin by placing each observation in a unique cluster, i.e. a cluster of one.
+    The two closest clusters are merged to form a new cluster that replaces the two merged clusters.
+    Merging of the two closest clusters continues until only some specified number of clusters remain.
+    However, our data does not immediately lend itself to a distance&#8212;based interpretation.
+    Our features represent part&#8212;of&#8212;speech (POS) tags, morphological characteristics, and word co-occurrence; such features are nominal and their values do not have scale.
+    Given a POS feature, for example, we could choose noun = 1, verb = 2, adjective = 3, and adverb = 4.
+    That adverb is represented by a larger number than noun is purely coincidental and implies nothing about the relationship between nouns and adverbs.
+    Thus, before we employ either clustering algorithm, we represent our data sample in terms of a dissimilarity matrix.
+    Suppose that we have N observations

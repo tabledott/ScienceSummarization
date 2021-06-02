@@ -1,0 +1,8 @@
+r appears to offer a more difficult modelling problem than the French-English pair.
+    With both the translation score features (Dice and Model 1) removed &#8211; the sentence aligned data are not used &#8211; the AER of the Romanian is more than twice that of the French, despite employing more word aligned data.
+    This could be caused by the lack of possible (P) alignment markup in the Romanian data, which provide a boost in AER on the French data set, rewarding what would otherwise be considered errors.
+    Interestingly, without any features derived from the sentence aligned corpus, our model achieves performance equivalent to Model 3 trained on the full corpus (Och and Ney, 2003).
+    This is a particularly strong result, indicating that this method is ideal for data-impoverished alignment tasks.
+    Up to this point our Hansards model has been trained using only the sure (S) alignments.
+    As the data set contains many possible (P) alignments, we would like to use these to improve our model.
+    Most

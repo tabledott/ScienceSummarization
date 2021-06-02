@@ -1,0 +1,7 @@
+ finite-state machinery (Kumar and Byrne, 2003), which is unable to process nested structures and long-distance dependencies in natural languages.
+    Syntax-based models aim to alleviate this problem by exploiting the power of synchronous rewriting systems.
+    Both Yamada and Knight (2001) and Chiang (2005) use SCFGs as the underlying model, so their translation schemata are syntax-directed as in Fig.
+    1, but their translators are not: both systems do parsing and transformation in a joint search, essentially over a packed forest of parse-trees.
+    To this end, their translators are not directed by a syntactic tree.
+    Although their method potentially considers more than one single parse-tree as in our case, the packed representation of the forest restricts the scope of each transfer step to a one-level contextfree rule, while our approach decouples the sourcelanguage analyzer and the recursive converter, so that the latter can have an extended domain of locality.
+    In addition, our translator also e

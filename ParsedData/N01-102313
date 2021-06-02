@@ -1,0 +1,9 @@
+del and e2 be the backoff level which only uses part of speech information: For both Pinit and Pattach, let c = Count(e1).
+    Then the backoff model is computed as follows: where A(c) = c (c&#65533;D) and D is the diversity of e1 (i.e. the number of distinct counts for e1).
+    For Pattach we further smooth probabilities (10), (11) and (12).
+    We use (10) as an example, the other two are handled in the same way. where k is the diversity of adjunction, that is: the number of different trees that can attach at that node.
+    T' is the set of all trees T' that can possibly attach at Node in tree T. For our experiments, the value of a is set to 1 100;000.
+  
+  
+    We are now in the position to describe the Co-Training algorithm, which combines the models described in Section 4.1 and in Section 4.2 in order to iteratively label a large pool of unlabeled data.
+    We use the following datasets in the algorithm: labeled a set of sentences bracketed with the correct parse trees. cache a small pool of sentences wh

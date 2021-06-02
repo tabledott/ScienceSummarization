@@ -1,0 +1,6 @@
+text string will have one and only one left-context bracket at its beginning, its end, and between any two E symbols, thus permitting a rule application at every position.
+    We now have components for freely introducing and removing context brackets, for rejecting strings with mislocated brackets, and for representing the rewrite action of a rule between appropriate context markers.
+    The regular relation that models the optional application of a rule is formed by composition of these pieces.
+    The order of composition depends on whether the rule is specified as applying iteratively from left to right or from right to left.
+    As noted in Section 4, the difference is that for left-to-right rules, the left-context expression A can match against the output of a previous (that is, leftward) application of the same rule, but the right-context expression p must match against the as yet unchanged input string.
+    These observations are directly modeled by the order in which the various rule components are c

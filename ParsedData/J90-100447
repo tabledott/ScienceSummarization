@@ -1,0 +1,7 @@
+nformation (the empty verb anaphor) is overtly realized in a position where there is enough information (the antecedent).
+    Thus it appears that the problem might be solved if the antecedent is generated before the anaphor.
+    This is the case if the antecedent is the semantic head of the clause; the anaphor will then be instantiated via top-down information through the chained_nodes predicate.
+    However, in the example grammar the antecedent is not necessarily the semantic head of the clause because of the VP modifier rule (12).
+    Typically, there is a relation between the empty anaphor and some antecedent expressed implicitly in the grammar; in the case at hand, it comes about by percolating the information through different rules from the antecedent to the anaphor.
+    We propose to make this relation explicit by defining an empty head with a Prolog clause using the predicate head_gap. head _ gap(v(A,B,ni1)/Sem, v(A,B,v(A,B)/Sem)/Sem).
+    Such a definition can intuitively be understood as follows: 

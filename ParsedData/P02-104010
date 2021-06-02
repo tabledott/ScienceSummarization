@@ -1,0 +1,7 @@
+ this is the same rank order assigned to these &#8220;systems&#8221; by human judges, as we discuss later.
+    While there seems to be ample signal in any single n-gram precision, it is more robust to combine all these signals into a single number metric.
+    2.1.3 Combining the modified n-gram precisions How should we combine the modified precisions for the various n-gram sizes?
+    A weighted linear average of the modified precisions resulted in encouraging results for the 5 systems.
+    However, as can be seen in Figure 2, the modified n-gram precision decays roughly exponentially with n: the modified unigram precision is much larger than the modified bigram precision which in turn is much bigger than the modified trigram precision.
+    A reasonable averaging scheme must take this exponential decay into account; a weighted average of the logarithm of modified precisions satisifies this requirement.
+    BLEU uses the average logarithm with uniform weights, which is equivalent to using the geometric mean of 

@@ -1,0 +1,6 @@
+h document, stem the terms (words) using the Porter stemming algorithm, calculate the local (document) and global (collection) weights, build a comprehensive dictionary of the collection, and create the inverted index file.
+    The number of documents that contain the keywords returned by the Search Engine may be large since only weak Boolean operators were used.
+    A new, more restrictive operator was introduced: PARAGRAPH n. This operator searches like an AND operator for the words in the query with the constraint that the words belong only to some n consecutive paragraphs, where n is a controllable positive integer.
+    The parameter n selects the number of paragraphs, thus controlling the size of the text retrieved from a document considered relevant.
+    The rationale is that most likely the information requested is found in a few paragraphs rather than being dispersed over an entire document.
+    Paragraph ordering is performed by a radix sort that involves three different scores: the largest Same_word

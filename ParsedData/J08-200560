@@ -1,0 +1,8 @@
+tem we used to participate in the CoNLL-2005 shared task is an enhanced version of the system described in Sections 3 and 5.
+  The main difference was that the joint-inference stage was extended to combine six basic SRL systems instead of two.
+  Specifically for this implementation, we first trained two SRL systems that use Collins?s parser and Charniak?s parser, respectively, because of their noticeably dif- ferent outputs.
+  In evaluation, we ran the system that was trained with Charniak?s parser five times, with the top-5 parse trees output by Charniak?s parser.
+  Together we have six different outputs per predicate.
+  For each parse tree output, we ran the first three stages, namely, pruning, argument identification, and argument classification.
+  Then, a joint-inference stage, where each individual system is weighted equally, was used to resolve the inconsistency of the output of argument classification in these systems.
+  Table 12 shows the overall results on the development set and different test sets;

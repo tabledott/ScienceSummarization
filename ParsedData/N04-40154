@@ -1,0 +1,5 @@
+ix +p and the masculine plural suffix +yn are merged into the preceding stems analogous to singular/plural noun distinction in English, e.g. girl vs. girls.
+    We apply part-speech tagging to a symbol tokenized and word segmented Arabic and symbol-tokenized English parallel corpus.
+    We then viterbi-align the part-of-speech tagged parallel corpus, using translation parameters obtained via Model 1 training of word segmented Arabic and symbol-tokenized English, to derive the conditional probability of an English part-of-speech tag given the combination of an Arabic prefix and its part-of-speech or an Arabic suffix and its part-of-speech.1 1 We have used an Arabic part-of-speech tagger with around 120 tags, and an English part-of-speech tagger with around 55 tags.
+    The algorithm utilizes two sets of translation probabilities to determine merge/deletion analysis of a morpheme.
+    We obtain tag-to-tag translation probabilities according to (1), which identifies the most probable part-of-speech correspondenc

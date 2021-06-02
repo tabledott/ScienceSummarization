@@ -1,0 +1,10 @@
+uch as stochastic versions of Earley parsers (Stolcke, 1993), efficiently compute related probabilities, but we won't explore these parsers here.
+    We confess that our real interest is in more complicated grammars, such as those that use head words.
+    Grammars such as these can best be parsed bottom up.
+    That is, we assume independence between the elements of a sequence.
+    The probability of node L, = Nx is just its prior probability times its inside 3,k probability, as before.
+    The most important difference between global thresholding and beam thresholding is that global thresholding is global: any node in the chart can help prune out any other node.
+    In stark contrast, beam thresholding only compares nodes to other nodes covering the same span.
+    Beam thresholding typically allows tighter thresholds since there are fewer approximations, but does not benefit from global information.
+    Global thresholding is performed in a bottom-up chart parser immediately after each length is completed.
+ 

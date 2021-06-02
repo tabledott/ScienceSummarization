@@ -1,0 +1,10 @@
+n various relations to thefirst word?s chosen synset, including hypernyms, hy ponyms, holonyms, meronyms and attributes.
+			We randomly select a word from this set of words as the second word in the pair.
+			We try to repeat the abovetwice to generate two pairs for each word.
+			In addi tion, for words with more than five synsets, we allow the second word to be the same as the first, but with different synsets.
+			We end up with pairs of words as well as the one chosen synset for each word in the pairs.
+			In step 3, we aim to extract a sentence from Wikipedia for each word, which contains the word and corresponds to a usage of the chosen synset.We first find all sentences in which the word oc curs.
+			We then POS tag2 these sentences and filter out those that do not match the chosen POS.
+			To find the 2We used the MaxEnt Treebank POS tagger in the python nltk library.
+			878 Model ??
+			100 C&amp;W-S 57.0 Our Model-S 58.6 Our Model-M AvgSim 62.8 Our Model-M AvgSimC 65.7 tf-idf-S 26.3 Pruned tf-idf-S 62.5 Pr

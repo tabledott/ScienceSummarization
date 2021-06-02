@@ -1,0 +1,8 @@
+in Section 8.
+    Given a CCG lexicon A, there will, in general, be many possible parses for each sentence.
+    We select the most likely alternative using a log-linear model, which consists of a feature vector 0 and a parameter vector 0.
+    The joint probability of a logical form z constructed with a parse y, given a sentence x is Section 7 defines the features used in the experiments, which include, for example, lexical features that indicate when specific lexical items in A are used in the parse y.
+    For parsing and parameter estimation, we use standard algorithms (Clark &amp; Curran, 2007), as described below.
+    The parsing, or inference, problem is to find the most likely logical form z given a sentence x, assuming the parameters 0 and lexicon A are known: where the probability of the logical form is found by summing over all parses that produce it: In this approach the distribution over parse trees y is modeled as a hidden variable.
+    The sum over parses in Eq.
+    3 can be calculated efficiently

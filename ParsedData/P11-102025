@@ -1,0 +1,7 @@
+newswire data, its poor adaptation to this domain is expected.
+    However, given the large amount of training data needed (PEM was trained on 250K ChineseEnglish sentence pairs and 2400 human ratings of paraphrase pairs), it is difficult to use PEM as a general metric.
+    Adapting PEM to a new domain would require sufficient in-domain bilingual data to support paraphrase extraction.
+    In contrast, our approach only requires monolingual data, and evaluation can be performed using arbitrarily small, highly-parallel datasets.
+    Moreover, PEM requires sample human ratings in training, thereby lessening the advantage of having automatic metrics.
+    Since lexical dissimilarity is only desirable when the semantics of the original sentence is unchanged, we also computed correlation between PINC and the human ratings when BLEU is above certain thresholds.
+    As we restrict our attention to the set of paraphrases with higher BLEU scores, we see an increase in correlation between PINC and the human assessments.

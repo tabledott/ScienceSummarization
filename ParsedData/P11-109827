@@ -1,0 +1,13 @@
+, Coup, General Injury, and Pipeline Attack.
+    We see these subtypes as strengths of our algorithm, but it misses the MUC-4 granularity of Attack.
+    We thus show results when we apply the best five learned templates to Attack, rather than just one.
+    The final F1 with these Attack subtypes is .40.
+    Our precision is as good as (and our F1 score near) two algorithms that require knowledge of the templates and/or labeled data.
+    Our algorithm instead learned this knowledge without such supervision.
+  
+  
+    In order to more precisely evaluate each learned template, we also evaluated per-template performance.
+    Instead of merging all slots across all template types, we score the slots within each template type.
+    This is a stricter evaluation than Section 6; for example, bombing victims assigned to attacks were previously deemed correct4.
+    Figure 6 gives our results.
+    Three of the four templates score at or above .42 F1, showing that our lower score from the previous section is mainly due to

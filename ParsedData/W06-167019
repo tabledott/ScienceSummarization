@@ -1,0 +1,8 @@
+this reason, in all obvious cases, we substituted the &#8220;noun.Tops&#8221; label with the more specific supersense label for the noun4.
+    The SEMv dataset only includes supersense labels for verbs.
+    In order to avoid unwanted false negatives, that is, thousands of nouns labeled &#8220;0&#8221;, we applied the following procedure.
+    Rather than using the full sentences from the SEMv dataset, from each sentence we generated the fragments including a verb but no common or proper nouns; e.g., from a sentence such as &#8220;Karns&#8217; ruling pertainedverb.stative to eight of the 10 cases.&#8221; only the fragment &#8220;pertainedverb.stative to eight of the 10&#8221; is extracted and used for training.
+    Sometimes more than one label is assigned to a word, in all data-sets.
+    In these cases we adopted the heuristic of only using the first label in the data as the correct synset/supersense.
+    We leave the extension of the tagger to the multilabel case for future research.
+    As for now, we can ex

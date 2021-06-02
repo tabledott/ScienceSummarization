@@ -1,0 +1,7 @@
+ illustrated in the two trees in Figure 2.
+    We chose to not introduce additional labels of this form, because they might unnecessarily fragment the training data.
+    Our automatic classifiers label constituents with one of the core or modifier semantic role labels, and a simple post-processing rule is applied to the output of the system to determine which constituents that are labeled the same are to be merged as the same argument.
+    The post-processing rule is the following: For every constituent that bears a core argument label ARGX, if there is a preceding constituent with the same label, re-label the current constituent C-ARGX.
+    Therefore, according to our algorithm, all constituents having the same core argument label are part of the same argument, and all constituents having the same modifier labels are separate arguments by themselves.
+    This rule is fairly accurate for core arguments but is not always correct; it fails more often on modifier arguments.
+    An evaluation of this rule using t

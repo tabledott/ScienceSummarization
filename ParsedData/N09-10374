@@ -1,0 +1,9 @@
+spans in the parse tree.
+    For named entities, the joint model should help with boundaries.
+    The internal structure of the named entity, and the structural context in which it appears, can also help with determining the type of entity.
+    Finding the best parse for a sentence can be helped by the named entity information in similar ways.
+    Because named entities should correspond to phrases, information about them should lead to better bracketing.
+    Also, knowing that a phrase is a named entity, and the type of entity, may help in getting the structural context, and internal structure, of that entity correct.
+    After modifying the OntoNotes dataset to ensure consistency, which we will discuss in Section 4, we augment the parse tree with named entity information, for input to our learning algorithm.
+    In the cases where a named entity corresponds to multiple contiguous children of a subtree, we add a new NamedEntity node, which is the new parent to those children.
+    Now, all named entities corr

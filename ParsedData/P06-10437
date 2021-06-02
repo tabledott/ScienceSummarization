@@ -1,0 +1,12 @@
+WSJ trained system, instead looking at the issue of how much of an improvement one gets over a pure Brown system by adding WSJ data (as seen in the last two lines of Table 1).
+    Both systems use a &#8220;model-merging&#8221; (Bacchiani et al., 2006) approach.
+    The different corpora are, in effect, concatenated together.
+    However, (Bacchiani et al., 2006) achieve a larger gain by weighting the in-domain (Brown) data more heavily than the out-of-domain WSJ data.
+    One can imagine, for instance, five copies of the Brown data concatenated with just one copy of WSJ data.
+  
+  
+    We primarily use three corpora in this paper.
+    Selftraining requires labeled and unlabeled data.
+    We assume that these sets of data must be in similar domains (e.g. news articles) though the effectiveness of self-training across domains is currently an open question.
+    Thus, we have labeled (WSJ) and unlabeled (NANC) out-of-domain data and labeled in-domain data (BROWN).
+    Unfortunately, lacking a corresponding corpus

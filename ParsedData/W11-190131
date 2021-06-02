@@ -1,0 +1,7 @@
+ss-validation on other portions of OntoNotes data.
+    As mentioned earlier, there are some portions of the OntoNotes corpus that have not been annotated for coreference but that have been annotated for other layers.
+    For training models for each of the layers, where feasible, we used all the data that we could for that layer from the training portion of the entire OntoNotes release.
+    Parse Trees Predicted parse trees were produced using the Charniak parser (Charniak and Johnson, 2005).12 Some additional tag types used in the OntoNotes trees were added to the parser&#8217;s tagset, including the NML tag that has recently been added to capture internal NP structure, and the rules used to determine head words were appropriately extended.
+    The parser was then re-trained on the training portion of the release 4.0 data using 10-fold crossvalidation.
+    Table 5 shows the performance of the re-trained Charniak parser on the CoNLL-2011 test set.
+    We did not get a chance to re-train the re-ranker, and sin

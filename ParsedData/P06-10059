@@ -1,0 +1,8 @@
+ handled with Binding Theory constitutes only a small portion of the total performance gain using path coreference.
+    In any case, Binding Theory remains a challenge with a noisy parser.
+    Consider: &#8220;Alex gave her money.&#8221; Minipar parses her as a possessive, when it is more likely an object, &#8220;Alex gave money to her.&#8221; Without a correct parse, we cannot rule out the link between her and Alex through Binding Theory.
+    Our algorithm, however, learns that the path &#8220;Noun gave pronoun&#8217;s money,&#8221; is noncoreferent.
+    In a sense, it corrects for parser errors by learning when coreference should be blocked, given any consistent parse of the sentence.
+    We obtain path coreference for millions of paths from our parsed news corpus (Section 4).
+    While Tables 1 and 2 give test set examples, many other interesting paths are obtained.
+    We learn coreference is unlikely between the nouns in &#8220;Bob married his mother,&#8221; or &#8220;Sue wrote her obituary.&#8221; The f

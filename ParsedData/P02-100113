@@ -1,0 +1,7 @@
+ to fall.
+    In the extreme, if each input string is fully observed (not the case if the input is bound by composition to the output of a one-to-many FST), one can succeed by restricting g to each input string in turn; this amounts to manually dividing f(x, y) by g(x). f&#952; on demand (Mohri et al., 1998) can pay off here, since only part of f&#952; may be needed subsequently.)
+    As training data we are given a set of observed (input, output) pairs, (xi, yi).
+    These are assumed to be independent random samples from a joint distribution of the form fe(x, y); the goal is to recover the true &#710;0.
+    Samples need not be fully observed (partly supervised training): thus xi C E*, yi C A* may be given as regular sets in which input and output were observed to fall.
+    For example, in ordinary HMM training, xi = E* and represents a completely hidden state sequence (cf.
+    Ristad (1998), who allows any regular set), while yi is a single string representing a completely observed emission sequence.11 What

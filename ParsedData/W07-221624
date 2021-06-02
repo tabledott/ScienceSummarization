@@ -1,0 +1,6 @@
+ined as in Section 3, but with the weight w(T) replaced by the probability distribution p(x&#945;|T, n&#945;).
+    The above |L|- |E|2 relations represent a nonlinear system of equations.
+    There is no closed form solution in the general case, and one adopts the expectation maximization (EM) method, which is a specialization of the standard fixed-point iteration method for the solution of non-linear systems.
+    We start with some initial assignment of the parameters and at each iteration we use the induced distribution p(x&#945;|T, n&#945;) to compute a refined value for the parameters themselves.
+    We are always guaranteed that the Kullback-Liebler divergence between two approximated distributions computed at successive iterations does not increase, which implies the convergence of the method to some local maxima (with the exception of saddle points).
+    Observe that at each iteration we can compute quantities ((i, j)k)x&#171; and Zx&#171; in polynomial time using the algorithms from Section 3 with pkx

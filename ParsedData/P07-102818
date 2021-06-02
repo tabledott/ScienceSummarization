@@ -1,0 +1,7 @@
+rect estimate of the frequency bias of a similarity metric.
+    Note that the headword actually was more frequent than the confounder in only 36% of all pairs.
+    These first two tests do not yield any explanation for the low performance of Cosine, as the results they show do not separate Cosine from all other metrics.
+    Lines (c) and (d), however, do just that.
+    Line (c) looks at the size of like(S).
+    Since we are using a cutoff of 500 similar words computed per word in S, the size of like(S) can only vary if the same word is suggested as similar for several seen headwords in S. This way, the size of like(S) functions as an indicator of the degree of uniformity or similarity that a similarity metric &#8220;perceives&#8221; among the members of S. To facilitate comparison across frequency bands, line (c) normalizes by the size of S, showwe see that Cosine seems to &#8220;perceive&#8221; considerably less similarity among the seen headwords than any of the other metrics.
+    Line (d) looks at the sets

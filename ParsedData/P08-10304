@@ -1,0 +1,10 @@
+ test procedure, each document is scanned for instances of triggers from the training corpus.
+    When an instance is found, the system tries to match the environment of the trigger against the set of patterns associated with that trigger.
+    This pattern-matching process, if successful, will assign some of the mentions in the sentence as arguments of a potential event mention.
+    The argument classifier is applied to the remaining mentions in the sentence; for any argument passing that classifier, the role classifier is used to assign a role to it.
+    Finally, once all arguments have been assigned, the reportable-event classifier is applied to the potential event mention; if the result is successful, this event mention is reported.
+  
+  
+    In this section we shall present our motivations based on error analysis for the baseline event tagger.
+    Across a heterogeneous document corpus, a particular verb can sometimes be trigger and sometimes not, and can represent different event types.
+    However, for 

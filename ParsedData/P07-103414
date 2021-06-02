@@ -1,0 +1,9 @@
+ine them together.
+    We now formally define our instance weighting framework.
+    Given Ds, Dt,l and Dt,u, to learn a classifier for the target domain, we find a parameter B that optimizes the following objective function: last term, log p(&#952;), is the log of a Gaussian prior distribution of &#952;, commonly used to regularize the complexity of the model.
+    In general, we do not know the optimal values of these parameters for the target domain.
+    Nevertheless, the intuitions behind these parameters serve as guidelines for us to design heuristics to set these parameters.
+    In the rest of this section, we introduce several heuristics that we used in our experiments to set these parameters.
+    Following the intuition that if pt(y|x) differs much from ps(y|x), then (x, y) should be discarded from the training set, we use the following heuristic to set &#945;s.
+    First, with standard supervised learning, we train a model 0t,l from Dt,l.
+    We consider p(y|x; &#65533;&#952;t,l) to be a crude approxim

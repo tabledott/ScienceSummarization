@@ -1,0 +1,9 @@
+ependency trees which we then use in an SVM to classify test instances.
+    A dependency tree is a representation that denotes grammatical relations between words in a sentence (Figure 1).
+    A set of rules maps a parse tree to a dependency tree.
+    For example, subjects are dependent on their verbs and adjectives are dependent the dependency tree. on the nouns they modify.
+    Note that for the purposes of this paper, we do not consider the link labels (e.g.
+    &#8220;object&#8221;, &#8220;subject&#8221;); instead we use only the dependency structure.
+    To generate the parse tree of each sentence, we use MXPOST, a maximum entropy statistical parser1; we then convert this parse tree to a dependency tree.
+    Note that the left-to-right ordering of the sentence is maintained in the dependency tree only among siblings (i.e. the dependency tree does not specify an order to traverse the tree to recover the original sentence).
+    For each pair of entities in a sentence, we find the smallest common subtree in

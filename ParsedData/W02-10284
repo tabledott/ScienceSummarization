@@ -1,0 +1,10 @@
+ndidate words are added to the lexicon, and the process starts over again.
+    In this section, we describe Basilisk&#8217;s bootstrapping algorithm in more detail and discuss related work.
+    The input to Basilisk is a text corpus and a set of seed words.
+    We generated seed words by sorting the words in the corpus by frequency and manually identifying the 10 most frequent nouns that belong to each category.
+    These seed words form the initial semantic lexicon.
+    In this section we describe the learning process for a single semantic category.
+    In Section 3 we will explain how the process is adapted to handle multiple categories simultaneously.
+    To identify new lexicon entries, Basilisk relies on extraction patterns to provide contextual evidence that a word belongs to a semantic class.
+    As our representation for extraction patterns, we used the AutoSlog system (Riloff, 1996).
+    AutoSlog&#8217;s extraction patterns represent linguistic expressions that extract a noun phrase in one of three s

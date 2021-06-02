@@ -1,0 +1,9 @@
+ top(c,v,r), since the chosen hypernym sits at the &#8220;top&#8221; of the similarity class.)
+    Initially, concept c is assigned to a variable top.
+    Then, by working up the hierarchy, successive hypernyms of c are assigned to top, and this process continues until the probabilities associated with the sets of concepts dominated by top and the siblings of top are significantly different.
+    Once a node is reached that results in a significant result for the chi-square test, the procedure stops, and top is returned as top(c,v,r).
+    In cases where a concept has more than one parent, the parent is chosen that results in the lowest value of the chi-square statistic, as this indicates the probabilities are the most similar.
+    The set top(c, v, r) is the similarity class of c for verb v and position r. Figure 1 gives an algorithm for determining top(c,v,r).
+    Figure 2 gives an example of the procedure at work.
+    Here, top((soup), stir, obj) is being determined.
+    The example is based on data from a s

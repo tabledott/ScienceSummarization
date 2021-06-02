@@ -1,0 +1,9 @@
+ morph puu with the label PUU, and the morphs t + alo with the label TALO).
+    The suffix morphs that do not match well with the base form labels will end up aligned somehow with the morphological tags (e.g., the morph ja with the labels PL + PTV).
+    Comparison of methods.
+    In order to compare two segmentation algorithms, the segmentation of each is aligned with the linguistic morpheme labels, and the total distance of the alignment is computed.
+    Shorter total distance indicates better segmentation.
+    However, one should note that the distance measure used favors long morphs.
+    If a particular &#8220;segmentation&#8221; algorithm does not split one single word of the corpus, the total distance can be zero.
+    In such a situation, the single morph that a word is composed of is aligned with all morphemic labels of the word.
+    The morph M, i.e., the word, is unique, which means that all probabilities P(L|M) are equal to one: e.g., the morph puutaloja is always aligned with the labels PUU + TALO +

@@ -1,0 +1,9 @@
+nother distribution (by discarding part, or all, of the conditioning context), however we take a more pragmatic approach and ignore the missing phrases.
+    This problem of missing contexts is uncommon in multi-parallel corpora, but is more common when the two bitexts are drawn from different sources.
+    While triangulation is intuitively appealing, it may suffer from a few problems.
+    Firstly, as with any SMT approach, the translation estimates are based on noisy automatic word alignments.
+    This leads to many errors and omissions in the phrase-table.
+    With a standard source-target phrase-table these errors are only encountered once, however with triangulation they are encountered twice, and therefore the errors will compound.
+    This leads to more noisy estimates than in the source-target phrase-table.
+    Secondly, the increased exposure to noise means that triangulation will omit a greater proportion of large or rare phrases than the standard method.
+    An alignment error in either of the source

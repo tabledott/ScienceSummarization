@@ -1,0 +1,10 @@
+lity that a pre-modifying adjective in English translates into a post-modifier in French.
+    We require a source language dependency parser that produces unlabeled, ordered dependency trees and annotates each source word with a partof-speech (POS).
+    An example dependency tree is shown in Figure 1.
+    The arrows indicate the head annotation, and the POS for each candidate is listed underneath.
+    For the target language we only require word segmentation.
+    To obtain word alignments we currently use GIZA++ (Och &amp; Ney, 03).
+    We follow the common practice of deriving many-to-many alignments by running the IBM models in both directions and combining the results heuristically.
+    Our heuristics differ in that they constrain manyto-one alignments to be contiguous in the source dependency tree.
+    A detailed description of these heuristics can be found in Quirk et al. (04).
+    Given a word aligned sentence pair and a source dependency tree, we use the alignment to project the source structure onto t

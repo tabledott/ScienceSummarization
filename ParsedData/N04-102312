@@ -1,0 +1,11 @@
+ormation of translations of the same class.
+    Maybe knowing that is better than may be useless for training to some extent, but knowing is better than is useful, if .
+    Although we cannot give an affirmative answer at this time, it is at least reasonable to use the ordering information.
+    The problem is how to use the ordering information.
+    In addition, we only want to maintain the order of two candidates if their ranks are far away from each other.
+    On the other hand, we do not care the order of two translations whose ranks are very close, e.g.
+    100 and 101.
+    Thus insensitive ordinal regression is more desirable and is the approach we follow in this paper.
+    However, reranking is not an ordinal regression problem.
+    In reranking evaluation, we are only interested in the quality of the translation with the highest score, and we do not care the order of bad translations.
+    Therefore we cannot simply regard a reranking problem as an ordinal regression problem, since they have different d

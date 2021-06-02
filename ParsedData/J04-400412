@@ -1,0 +1,7 @@
+an NP has been relabeled as NPB, a normal NP node is often inserted as a parent nonterminal.
+    This insertion ensures that NPB nodes are always dominated by NP nodes.
+    The conditions for inserting this &#8220;extra&#8221; NP level are slightly more detailed than is described in Collins&#8217; thesis, however.
+    The extra NP level is added if one of the following conditions holds: In postprocessing, when an NPB is an only child of an NP node, the extra NP level is removed by merging the two nodes into a single NP node, and all remaining NPB nodes are relabeled NP.
+    The insertion of extra NP levels above certain NPB nodes achieves a degree of consistency for NPs, effectively causing the portion of the model that generates children of NP nodes to have less perplexity.
+    Collins appears to have made a similar effort to improve the consistency of the NPB model.
+    NPB nodes that have sentential nodes as their final (rightmost) child are &#8220;repaired&#8221;: The sentential child is raised so that it

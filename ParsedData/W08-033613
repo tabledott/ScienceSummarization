@@ -1,0 +1,10 @@
+ferent contexts, and (ii) reordering: it is easier to move one unit around than having to move two consecutive units at the same time.
+    Having words as the basic units helps the reordering model.
+    For the first advantage, one example is the character &#8220;&#10128;&#8221;, which can both mean &#8220;intelligence&#8221;, or an abbreviation for Chile (&#10128;&#9316;).
+    The comparison between CharBased and MaxMatch is listed in Table 2.
+    The word &#10120;&#10128;&#9991; (dementia) is unknown for both segmenters.
+    However, MaxMatch gave a better translation of the character &#10128;.
+    The issue here is not that the &#8220;&#10128;&#8221;&#8212;*&#8220;intelligence&#8221; entry never appears in the phrase table of CharBased.
+    The real issue is, when &#10128; means Chile, it is usually followed by the character &#9316;.
+    So by grouping them together, MaxMatch avoided falsely increasing the probability of translating the stand-alone &#10128; into Chile.
+    Based on our analysis, this ambig

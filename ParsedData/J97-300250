@@ -1,0 +1,10 @@
+theses that are inconsistent with given constraints.
+    Any entries in the dynamic programming table corresponding to illegal subhypotheses&#8212;i.e., those that would violate the given bracket-nesting or word alignment conditions&#8212;are preassigned negative infinity values during initialization indicating impossibility.
+    During the recursion phase, computation of these entries is skipped.
+    Since their probabilities remain impossible throughout, the illegal subhypotheses will never participate in any ML bibracketing.
+    The running time reduction in this case depends heavily on the domain constraints.
+    We have found this strategy to be useful for incorporating punctuation constraints.
+    Certain punctuation characters give constituency indications with high reliability; &amp;quot;perfect separators&amp;quot; include colons and Chinese full stops, while &amp;quot;perfect delimiters&amp;quot; include parentheses and quotation marks.
+  
+  
+    It is possible to construct a parser that accepts unr

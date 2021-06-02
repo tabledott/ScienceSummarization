@@ -1,0 +1,11 @@
+t clusters non-pronouns by their heads, and attaches a pronoun to the cluster which has no known conflicting type, number, or gender, and contains the closest antecedent for the pronoun.
+    This system can be encoded in an MLN with just four rules.
+    Three of them are the ones for enforcing agreement in type, number, and gender between a cluster and its members, as defined in the base MLN.
+    The fourth rule is With a large but not infinite weight (e.g., 100), this rule has the effect of clustering non-pronouns by their heads, except when it violates the hard rules.
+    The MLN can also include the apposition and predicate-nominal rules.
+    As in the base MLN, we impose the same exponential prior on the number of non-empty clusters and that on the distance between a pronoun and its antecedent.
+    This simple MLN is remarkably competitive, as we will see in the experiment section.
+  
+  
+    Unsupervised learning in Markov logic maximizes the conditional log-likelihood where Z are unknown predicates.
+    

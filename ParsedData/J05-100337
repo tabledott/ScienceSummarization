@@ -1,0 +1,9 @@
+rpreted as a measure of how plausible a parse x is, with higher scores meaning that x is more plausible.
+    Competing parses for the same sentence are ranked in order of plausibility by this function.
+    We can recover the base ranking function&#8212;the log-likelihood L(x)&#8212;by setting a0 to a positive constant and setting all other parameter values to be zero.
+    Our intention is to use the training examples to pick parameter values which improve upon this initial ranking.
+    We now discuss how to set these parameters.
+    First we discuss loss functions Loss(&#175;a) which can be used to drive the training process.
+    We then go on to describe feature selection methods for the different loss functions.
+    8 In the event that multiple parses get the (same) highest score, the parse with the highest value of loglikelihood L under the baseline model is taken as xi,1.
+    In the event that two parses have the same score and the same log-likelihood&#8212;which occurred rarely if ever in our experiments

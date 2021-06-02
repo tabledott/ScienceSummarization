@@ -1,0 +1,6 @@
+nodes in each tree, require O(|T|2).
+    Because we restrict our elementary trees to include at most one child of the root node on either side, choosing elementary trees for a node pair is O(m2), where m refers to the maximum number of children of a node.
+    Computing the alignment between the 2m children of the elementary tree on either side requires choosing which subset of source nodes to delete, O(22m), which subset of target nodes to insert (or clone), O(22m), and how to reorder the remaining nodes from source to target tree, O((2m)!).
+    Thus overall complexity of the algorithm is O(|T|2m242m(2m)!
+    ), quadratic in the size of the input sentences, but exponential in the fan-out of the grammar. is capable of generating the alignment WYXZ.
+    In order to generate the complete target tree, one more step is necessary to choose the structure on the target side, specifically whether the elementary tree has one or two nodes, what labels the nodes have, and, if there are two nodes, whether each child attac

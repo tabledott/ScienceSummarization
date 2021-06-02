@@ -1,0 +1,9 @@
+ur, resulting in 2,400 pairs.
+    In step 5, for each pair A:B, we add B:A, yielding 4,800 pairs.
+    However, some pairs are dropped because they correspond to zero vectors and a few words do not appear in Lin&#8217;s thesaurus.
+    The sparse matrix (step 7) has 4,748 rows and 8,000 columns, with a density of 8.4%.
+    Following Turney and Littman (2005), we evaluate the performance by accuracy and also by the macroaveraged F measure (Lewis 1991).
+    Macroaveraging calculates the precision, recall, and F for each class separately, and then calculates the average across all classes.
+    Microaveraging combines the true positive, false positive, and false negative counts for all of the classes, and then calculates precision, recall, and F from the combined counts.
+    Macroaveraging gives equal weight to all classes, but microaveraging gives more weight to larger classes.
+    We use macroaveraging (giving equal weight to all classes), because we have no reason to believe that the class sizes in the data set 

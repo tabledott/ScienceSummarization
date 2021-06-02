@@ -1,0 +1,9 @@
+ k (log-log).
+			and similar quality to those from (Charniak and Johnson,2005) which has so far the highest F-score after rerank ing, and this might lead to better results in real parse reranking.
+			5.2 Experiment 2: MT decoder.
+			Our second experiment was on a CKY-based decoderfor a machine translation system (Chiang, 2005), imple mented in Python 2.4 accelerated with Psyco 1.3 (Rigo, 2004).
+			We implemented Algorithms 2 and 3 to computek-best English translations of Mandarin sentences.
+			Be cause the CFG used in this system is large to begin with (millions of rules), and then effectively intersected with a finite-state machine on the English side (the language model), the grammar constant for this system is quite large.
+			The decoder uses a relatively narrow beam search for efficiency.
+			We ran the decoder on a 2.8 GHz Xeon with 4 GB of memory, on 331 sentences from the 2002 NIST MTEval test set.
+			We tested Algorithm 2 for k = 2i, 3 ? i ? 10, and Algorithm 3 (offline algorithm) for k = 2i, 3 ? i ? 2

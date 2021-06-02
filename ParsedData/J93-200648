@@ -1,0 +1,8 @@
+word X from the phrase to be attached (intuitively, the notion of attachment distance).
+    For instance, in the example previously discussed, in the town is attached to the verb explode, at a distance of four words; of Yunguyo is attached to the noun town at a distance of one word back, etc.
+    Thus we estimate the probability of attachment as p/ (X I P,0) * p(d).
+    Since a 20,000-word corpus does not constitute enough data to estimate the probability of all triples, we used an extension and generalization of an algorithm (Katz 1987) to automatically move up the hierarchical domain model from X to its parent, and from 0 to its parent.
+    The &amp;quot;backing-off&amp;quot; that was originally proposed for the estimation of probabilities of n-gram sequences of words starts with the most detailed model.
+    In this case we start with the explicit probability of the phrase PO attaching to the word X.
+    If we have no examples of X P 0 in the training set we consider with some penalty a class of X or 0.
+   

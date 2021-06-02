@@ -1,0 +1,5 @@
+iter type) combination methods, a fact which we have recently exploited in bootstrapping a word class tagger for a new corpus from existing taggers with completely different tagsets (Zavrel and Daelemans 2000).
+    One of the best methods for tagger combination in (van Halteren, Zavrel, and Daelemans 1998) is the TagPair method.
+    It looks at all situations where one tagger suggests tagi and the other tag2 and estimates the probability that in this situation the tag should actually be tag,.
+    Although it is presented as a variant of voting in that paper, it is in fact also a stacked classifier, because it does not necessarily select one of the tags suggested by the component taggers.
+    Taking the same example as in the voting section above, if tagger MXPOST suggests DT and tagger TnT suggests CS, we find that the probabilities for the appropriate tag are: CS subordinating conjunction 0.4623 CS22 second half of a two-token subordinating conjunction, e.g., so that 0.0171 DT determiner 0.4966 QL quantifier

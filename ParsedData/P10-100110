@@ -1,0 +1,6 @@
+lgorithm resembles the first-order parser, except that every recursive construction must also set the grandparent indices of the smaller g-spans; fortunately, this can be done deterministically in all cases.
+    For example, Figure 4(a) depicts the decomposition of Cgh,e into an incomplete half and a complete half.
+    The grandparent of the incomplete half is copied from Cgh,e while the grandparent of the complete half is set to h, the head of m as defined by the construction.
+    Clearly, grandchild parts (g, h, m) can be read off of the incomplete g-spans in Figure 4(b,d).
+    Moreover, since each derivation copies the grandparent index g into successively smaller g-spans, grandchild parts will be produced for all grandchildren of g. Model 0 can be parsed by adapting standard top-down or bottom-up chart parsing techniques.
+    For concreteness, Figure 5 provides a pseudocode sketch of a bottom-up chart parser for Model 0; although the sketch omits many details, it suffices for the purposes of illustration.

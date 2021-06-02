@@ -1,0 +1,6 @@
+nt machine learning algorithms, trained on 4000 extracted CN/PN concept-instance pairs, and tested on a validation set of 500.
+    Na&#239;ve Bayes, Support Vector Machine, Decision List and Decision Tree algorithms were all evaluated and the Decision Tree algorithm (which scored highest of all the algorithms) was further tested with Boosting and Bagging meta-learning techniques.
+    The algorithms are compared to a baseline filter that accepts concept-instance pairs if and only if the concept head is a descendent of either the concept &#8220;Human&#8221; or the concept &#8220;Occupation&#8221; in Omega.
+    It is clear from the figure that the Decision Tree algorithm plus Bagging gives the highest precision and overall F-score.
+    All subsequent experiments are run using this technique.1 Since high precision is the most important criterion for the filter, we also examine the performance of the classifier as it is applied with a threshold.
+    Thus, a probability cutoff is set such that only positive classif

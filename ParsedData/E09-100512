@@ -1,0 +1,8 @@
+elevant in GD than the rest of the possible concepts of the context words, which should have less relations on average and be more isolated.
+    As usual, the disambiguation step is performed by assigning to each word Wi the associated concept in Conceptsi which has maximum rank.
+    In case of ties we assign all the concepts with maximum rank.
+    Note that the standard evaluation script provided in the Senseval competitions treats multiple senses as if one was chosen at random, i.e. for evaluation purposes our method is equivalent to breaking ties at random.
+    As mentioned before, personalized PageRank allows us to use the full LKB.
+    We first insert the context words into the graph G as nodes, and link them with directed edges to their respective concepts.
+    Then, we compute the personalized PageRank of the graph G by concentrating the initial probability mass uniformly over the newly introduced word nodes.
+    As the words are linked to the concepts by directed edges, they act as source nodes inject

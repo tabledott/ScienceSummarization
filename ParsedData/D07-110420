@@ -1,0 +1,8 @@
+ difference between contiguous phrase based models and hierarchical phrase-based models is the number of rules that potentially apply to an input sentence.
+			To make this concrete, on our data, with an average of 29 words per sentence, there were on average 133 contiguous phrases of length 5 orless that applied.
+			By comparison, there were on av erage 7557 hierarchical phrases containing up to 5words.
+			These patterns are obviously highly overlap ping and we employ an algorithm to exploit this fact.We first describe a baseline algorithm used for con tiguous phrases (?5.4.1).
+			We then introduce some improvements (?5.4.2) and describe a data structureused by the algorithm (?5.4.3).
+			Finally, we dis cuss some special cases for discontiguous phrases (?5.4.4).
+			5.4.1 The Zhang-Vogel AlgorithmZhang and Vogel (2005) present a clever algorithm for contiguous phrase searches in a suffix ar ray.
+			It exploits the fact that for eachm-length source phrase that we want to look up, we will also want to look up it

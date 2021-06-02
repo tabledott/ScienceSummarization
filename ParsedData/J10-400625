@@ -1,0 +1,8 @@
+ string sets, as well as specifying 6.
+    In this article, we make the further assumption that W1 = W2.
+    This is a natural assumption when the tuples represent (link-mediated) co-occurrences of word pairs.
+    Moreover, we enforce an inverse link constraint such that for any link l in L, there is a k in L such that for each tuple tw = ((wi, l, wj), vt) in the weighted tuple structure TW, the tuple t&#8722;1 w = ((wj, k, wi), vt) is also in TW (we call k the inverse link of l).
+    Again, this seems reasonable in our context: If we extract a tuple (marine, use, gun) and assign it a certain score, we might as well add the tuple (gun, use&#8722;1, marine) with the same score.
+    The two assumptions, combined, lead the matricization process described in Section 3.3 to generate exactly four distinct vector spaces that, as we discuss there, are needed for the semantic analyses we conduct.
+    See Section 6.6 of Turney (2006b) for a discussion of similar assumptions.
+    Still, it is worth emphasizing that the 

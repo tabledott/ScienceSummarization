@@ -1,0 +1,8 @@
+ not yet mentioned, the features used in these models need have no particular independence of one another.
+    This is useful if one is using a loglinear model for smoothing.
+    That is, suppose we want to compute a conditional probability p(a b, c), but we are not sure that we have enough examples of the conditioning event b, c in the training corpus to ensure that the empirically obtained probability P (a I b, c) is accurate.
+    The traditional way to handle this is also to compute P(a b), and perhaps P(a c) as well, and take some combination of these values as one's best estimate for p(a I b, c).
+    This method is known as &amp;quot;deleted interpolation&amp;quot; smoothing.
+    In max-entropy models one can simply include features for all three events f1 (a, b, c), f2 (a, b), and f3(a, c) and combine them in the model according to Equation 3, or equivalently, Equation 4.
+    The fact that the features are very far from independent is not a concern.
+    Now let us note that we can get an equation of exa

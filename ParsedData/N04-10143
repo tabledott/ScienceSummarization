@@ -1,0 +1,8 @@
+t-hand side, and therefore some free choices to make during transduction.
+    An R transducer compactly represents a potentiallyinfinite set of input/output tree pairs: exactly those pairs (T1, T2) for which some sequence of productions applied to T1 (starting in the initial state) results in T2.
+    This is similar to an FST, which compactly represents a set of input/output string pairs, and in fact, R is a generalization of FST.
+    If we think of strings written down vertically, as degenerate trees, we can convert any FST into an R transducer by automatically replacing FST transitions with R productions. and state-based record keeping.
+    It can copy whole subtrees, and transform those subtrees differently.
+    It can also delete subtrees without inspecting them (imagine by analogy an FST that quits and accepts right in the middle of an input string).
+    Variants of R that disallow copying and deleting are called RL (for linear) and RN (for nondeleting), respectively.
+    One advantage of working with tr

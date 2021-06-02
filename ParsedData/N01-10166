@@ -1,0 +1,11 @@
+whether a word token is edited.
+    Our boosting classifier is directly based on the greedy boosting algorithm described by Collins [7].
+    This paper contains important implementation details that are not repeated here.
+    We chose Collins&#8217; algorithm because it offers good performance and scales to hundreds of thousands of possible feature combinations.
+    This section describes the kinds of linear classifiers that the boosting algorithm infers.
+    Abstractly, we regard each word token as an event characterized by a finite tuple of random variables (Y,X1,...,Xm).
+    Y is the the conditioned variable and ranges over {&#8722;1, +1}, with Y = +1 indicating that the word is not edited.
+    X1, ... , Xm are the conditioning variables; each Xj ranges over a finite set Xj.
+    For example, X1 is the orthographic form of the word and X1 is the set of all words observed in the training section of the corpus.
+    Our classifiers use m = 18 conditioning variables.
+    The following subsection describes the c

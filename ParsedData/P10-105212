@@ -1,0 +1,6 @@
+nd to active features in the current observation, (ii) keep track of the cumulated penalty zk that &#952;k should have received, had the gradient been computed exactly, and use this value to &#8220;clip&#8221; the parameter value.
+    This is implemented by patching the update (7) as follows Based on a study of three NLP benchmarks, the authors of (Tsuruoka et al., 2009) claim this approach to be much faster than the orthant-wise approach and yet to yield very comparable performance, while selecting slightly larger feature sets.
+    The coordinate descent approach of Dudik et al. (2004) and Friedman et al.
+    (2008) uses the fact that optimizing a mono-dimensional quadratic function augmented with a `1 penalty can be performed analytically.
+    For arbitrary functions, this idea can be adapted by considering quadratic approximations of the objective around the current value &#952;&#175; Coordinate descent is ported to CRFs in (Sokolovska et al., 2010).
+    Making this scheme practical requires a number of ad

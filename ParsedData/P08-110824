@@ -1,0 +1,7 @@
+ do.
+    The interaction between different decisions may also be part of the explanation why MST benefits more from the feature-based integration than Malt, with significantly higher accuracy for MSTMalt than for MaltMST as a result.
+    Since inference is global (or practically global) in the graph-based model, an improvement in one type of dependency has a good chance of influencing the accuracy of other dependencies, whereas in the transition-based model, where inference is greedy, some of these additional benefits will be lost because of error propagation.
+    This is reflected in the error analysis in the following recurrent pattern: Where Malt does well, MaltMST does only slightly better.
+    But where MST is good, MSTMalt is often significantly better.
+    Another part of the explanation may have to do with the learning algorithms used by the systems.
+    Although both Malt and MST use discriminative algorithms, Malt uses a batch learning algorithm (SVM) and MST uses an online learning algorithm (MIRA)

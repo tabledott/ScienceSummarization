@@ -1,0 +1,10 @@
+not let the selection of potential terms be an arbitrary process&#8212;which is the case when extracting n-grams&#8212;and better capture the idea of keywords having a certain linguistic property, I decided to experiment with noun phrases.
+    In the next set of experiments a partial parserl was used to select all NP-chunks from the documents.
+    Experiments with both unstemmed and stemmed terms were performed.
+    This way of defining the terms is in this paper called the chunking approach.
+  
+  
+    As about half of the manual keywords present in the training data were lost using the chunking approach, I decided to define another term selection approach.
+    This still captures the idea of keywords having a certain syntactic property, but is based on empirical evidence in the training data.
+    A set of POS tag patterns&#8212;in total 56&#8212;were defined, and all (part-of-speech tagged) words or sequences of words that matched any of these were extracted.
+    The patterns were those tag sequences of the 

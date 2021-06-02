@@ -1,0 +1,10 @@
+dependency edge (pi, pi+1) and removes pi+1 from the list.
+    ATTACHRIGHT(i) adds a dependency edge (pi+1, pi) and removes pi from the list.
+    Each action shortens the list of partial structures by 1, and after n&#8722;1 such actions, the list contains the root of a connected projective tree over the sentence.
+    Figure 1 shows an example of parsing the sentence &#8220;a brown fox jumped with joy&#8221;.
+    The pseudocode of the algorithm is given in Algorithm 1.
+    At each step the algorithm chooses a specific action/location pair using a function score(ACTION(i)), which assign scores to action/location pairs based on the partially built structures headed by pi and pi+1, as well as neighbouring structures.
+    The score() function is learned from data.
+    This scoring function reflects not only the correctness of an attachment, but also the order in which attachments should be made.
+    For example, consider the attachments (brown,fox) and (joy,with) in Figure (1.1).
+    While both are correct, the sc

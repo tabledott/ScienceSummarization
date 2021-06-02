@@ -1,0 +1,10 @@
+he polysemous words in the input text are disambiguated in the following steps: Step A. Parse the input text and extract local contexts of each word.
+    Let LC. denote the set of local contexts of all occurrences of w in the input text.
+    Step B.
+    Search the local context database and find words that appeared in an identical local context as w. They are called selectors of w: Step C. Select a sense s of w that maximizes the similarity between w and Selectors.
+    Step D. The sense s is assigned to all occurrences of w in the input text.
+    This implements the &amp;quot;one sense per discourse&amp;quot; heuristic advocated in (Gale, Church, and Yarowsky, 1992).
+    Step C. needs further explanation.
+    In the next subsection, we define the similarity between two word senses (or concepts).
+    We then explain how the similarity between a word and its selectors is maximized.
+    There have been several proposed measures for similarity between two concepts (Lee, Kim, and Lee, 1989; Rada et al., 1989; Resn

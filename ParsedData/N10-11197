@@ -1,0 +1,8 @@
+values.
+    The final polarity of a phrase is then set to poli = pol+i &#8722; Qpol-i, where Q a constant meant to account for the difference in overall mass of positive and negative flow in the graph.
+    Thus, after the algorithm is run, if a phrase has a higher positive than negative polarity score, then its final polarity will be positive, and negative otherwise.
+    There are some implementation details worth pointing out.
+    First, the algorithm in Figure 1 is written in an iterative framework, where on each iteration, paths of increasing lengths are considered.
+    The input variable T controls the max path length considered by the algorithm.
+    This can be set to be a small value in practice, since the multiplicative path weights result in long paths rarely contributing to polarity scores.
+    Second, the parameter -y is a threshold that defines the minimum polarity magnitude a Initialize: poli, pol+i, pol-i = 0, for all i pol+i = 1.0 for all vi E P and pol-i = 1.0 for all vi E N phrase must have to

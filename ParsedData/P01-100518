@@ -1,0 +1,12 @@
+ion words, and used the resulting parses to reestimate model probabilities.
+    Doing so gave a small improvement over just using the manually parsed data.
+    We repeated this experiment with our data, and show the outcome in Table 4.
+    Choosing only the labeled instances most likely to be correct as judged by a committee of classifiers results in higher accuracy than using all instances classified by a model trained with the labeled seed corpus.
+  
+  
+    In applying unsupervised learning to improve upon a seed-trained method, we consistently saw an improvement in performance followed by a decline.
+    This is likely due to eventualy having reached a point where the gains from additional training data are offset by the sample bias in mining these instances.
+    It may be possible to combine active learning with unsupervised learning as a way to reduce this sample bias and gain the benefits of both approaches.
+  
+  
+    In this paper, we have looked into what happens when we begin to take advantage of the 

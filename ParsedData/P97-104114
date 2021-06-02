@@ -1,0 +1,8 @@
+t set using a list of 57472 Chinese words from the NMSU CHSEG segmenter (described in the next section).
+    This greedy algorithm produced an initial score of F=64.4.
+    A sequence of 2897 transformations was learned from the training set; applied to the test set, they improved the score from F=64.4 to 84.9, a 57.8% error reduction.
+    From a simple Chinese word list, the rule-based algorithm was thus able to produce asegmentation score comparable to segmentation algorithms developed with a large amount of domain knowledge (as we will see in the next section).
+    This score was improved further when combining the character-as-word (CAW) and the maximum matching algorithms.
+    In the maximum matching algorithm described above, when a sequence of characters occurred in the text, and no subset of the sequence was present in the word list, the entire sequence was treated as a single word.
+    This often resulted in words containing 10 or more characters, which is very unlikely in Chinese.
+    In this experim

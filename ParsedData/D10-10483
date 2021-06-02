@@ -1,0 +1,8 @@
+to coreference resolution that addresses these is1As we will discuss below, some approaches use an additional component to infer the overall best mention clusters for a document, but this is still based on confidence scores assigned using local information. sues.
+    The approach applies tiers of coreference models one at a time from highest to lowest precision.
+    Each tier builds on the entity clusters constructed by previous models in the sieve, guaranteeing that stronger features are given precedence over weaker ones.
+    Furthermore, each model&#8217;s decisions are richly informed by sharing attributes across the mentions clustered in earlier tiers.
+    This ensures that each decision uses all of the information available at the time.
+    We implemented all components in our approach using only deterministic models.
+    All our components are unsupervised, in the sense that they do not require training on gold coreference links.
+    The contributions of this work are the following: &#8226; We show that

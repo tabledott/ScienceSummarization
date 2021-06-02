@@ -1,0 +1,11 @@
+ective approximation algorithm (McDonald and Pereira, 2006), the passive aggressive support vector machine, and a feature extraction component.
+			The features are listed in Table 4.
+			As in McDonald et al (2005), the parser stores the features of each training example in a file.
+			In each epoch of the training, the feature file is read, and the weights are calculated and stored in an array.
+			This procedure is up to 5 times faster than computing the features each time anew.
+			But the parser has to maintain large arrays: for the weights of the sentence and the training file.
+			Therefore, the parser needs 3GB of main memoryfor English and 100GB of disc space for the train ing file.
+			The parsing time is approximately 20% faster, since some of the values did not have to be recalculated.
+			Algorithm 1 illustrates the training algorithm in pseudo code.
+			is the set of training examples where an example is a pair (xi, yi) of a sentence and the corresponding dependency structure.
+			??wand ??v are weight ve

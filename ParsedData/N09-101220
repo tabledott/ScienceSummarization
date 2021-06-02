@@ -1,0 +1,6 @@
+e argument they generate, i.e. for each argument A &#8712; V&#964;, we have a rule equivalence class {LFb2 &#8594; YA HL  |H &#8712; V&#964;}.
+    We can see that in grammar G&#8242; each N &#8712; B eventually ends up rewriting to one of N&#8217;s expansions Q in G. There are two indirect paths, one through Nb1 and one through Nb2.
+    Thus this defines the probability of N &#8594; Q in G, BN&#8594;&#946;, as the probability of rewriting N as Q in G&#8242; via Nb1 and Nb2.
+    That is: BN&#8594;&#946; = ON&#8594;Nb1 ONb1&#8594;&#946; + ON&#8594;Nb2 ONb2&#8594;&#946; The example in Figure 6 shows the probability that L1 rewrites to Ybig dogL in grammar G. dog Typically when smoothing we need to incorporate the prior knowledge that conditioning events that have been seen fewer times should be more strongly smoothed.
+    We accomplish this by setting the Dirichlet hyperparameters for each N &#8594; Nb1, N &#8594; Nb2 decision to (K, 2K), where K = |RNb1  |is the number of rewrite rules for A.
+    This ensures t

@@ -1,0 +1,11 @@
+ coreference equivalence classes can be merged unless there exist any incompatible NPs in the classes to be merged.
+    It is useful to consider the application of our algorithm to an excerpt from a document: [i The chairman] spoke with [2 Ms. White] yesterday.
+    [3 He] ...
+    The noun phrase instances for this fragment are shown in Table 3.
+    Initially, NPI, NP2, and NP3 are all singletons and belong to coreference classes c2, and c3, respectively.
+    We begin by considering NP3.
+    Dist(N P2,N P3) = oo due to a mismatch on gender, so they are not considered for possible merging.
+    Next, we calculate the distance from NPi to NP3.
+    Pronouns are not expected to match when the words of two noun phrases are compared, so there is no penalty here for word (or head noun) mismatches.
+    The penalty for their difference in position is dependent on the length of the document.
+    For illustration, assume that this is less than r. Thus, dist(NPi, NP3) &lt; r. Their coreference classes, c1 and c3, are then 

@@ -1,0 +1,6 @@
+taching to the parent with an attach action.1 A complete parse consists of a sequence of these actions, d1,..., dm, such that performing d1,..., dm results in a complete phrase structure tree.
+    Because this mapping from phrase structure trees to sequences of decisions about parser actions is one-to-one, finding the most probable phrase structure tree is equivalent to finding the parse d1,..., dm which maximizes P(d1,..., dm|w1,..., wn).
+    This probability is only nonzero if yield(d1,..., dm) = w1,..., wn, so we can restrict attention to only those parses which actually yield the given sentence.
+    With this restriction, it is equivalent to maximize P(d1,..., dm), as is done with our first probability model.
+    The first probability model is generative, because it specifies the joint probability of the input sentence and the output tree.
+    This joint probability is simply P(d1,..., dm), since the 'More details on the mapping to parses can be found in (Henderson, 2003b). probability of the input senten

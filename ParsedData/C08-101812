@@ -1,0 +1,9 @@
+created by applying a se ries of grammar rules, where each rule matches a fragment of the source and creates a fragment of the target tree.
+			A rule in the grammar consists of a pair of elementary trees and a mapping between the variables (frontier non-terminals) in both trees.
+			A derivation is a sequence of rules yielding a target tree with no remaining variables.
+			Cohn and Lapata (2007) extract a STSG froma parsed, word-aligned corpus of source and target sentences.
+			Specifically, they extract the mini mal set of synchronous rules which can describe each tree pair.
+			These rules are minimal in the sensethat they cannot be made smaller (e.g., by replac ing a subtree with a variable) while still honouring the word-alignment.
+			Decoding The grammar allows us to search for all sister trees for a given tree.
+			The decoder maximises over this space: y ? =argmax y:S(y)=x ?(y) (1) where ?(y) = ? r?y ??(r, S(y)), ??
+			(2) Here x is the source (uncompressed) tree, y is a derivation which produces the sourc

@@ -1,0 +1,7 @@
+conflicted they overrode the tags output by the tagger.
+    We also added part of speech (POS) tags to the data using the tagger of Toutanova et al. (2003), and used the tags to decide if mentions were plural or singular.
+    The ACE data is labeled with mention type (pronominal, nominal, and name), but the MUC6 data is not, so the POS and NE tags were used to infer this information.
+    Our feature set was simple, and included many features from (Soon et al., 2001), including the pronoun, string match, definite and demonstrative NP, number and gender agreement, proper name and appositive features.
+    We had additional features for NE tags, head matching and head substring matching.
+    The MUC scorer (Vilain et al., 1995) is a popular coreference evaluation metric, but we found it to be fatally flawed.
+    As observed by Luo et al. (2004), if all mentions in each document are placed into a single entity, the results on the MUC-6 formal test set are 100% recall, 78.9% precision, and 88.2% F1 score &#8211; si

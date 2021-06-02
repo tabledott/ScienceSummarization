@@ -1,0 +1,12 @@
+nk.
+    The data was divided into contiguous parts: sections 0-20 were used for training, sections 21-22 as a development test set, and sections 23-24 as a final test set.
+    The data set sizes are shown below together with numbers of unknown words.
+    The testing procedure uses a beam search to find the tag sequence with maximal probability given a sentence.
+    In our experiments we used a beam of size 5.
+    Increasing the beam size did not result in improved accuracy.
+    The preceding tags for the word at the beginning of the sentence are regarded as having the pseudo-tag NA.
+    In this way, the information that a word is the first word in a sentence is available to the tagger.
+    We do not have a special end-of-sentence symbol.
+    We used a tag dictionary for known words in testing.
+    This was built from tags found in the training data but augmented so as to capture a few basic systematic tag ambiguities that are found in English.
+    Namely, for regular verbs the -ed form can be either a VBD or 

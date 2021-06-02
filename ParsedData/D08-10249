@@ -1,0 +1,7 @@
+ is a parameter that controls how much we are willing to allow some translations to have higher BLEU than e&#8727; if we can better minimize (1).
+    Setting &#181; = 0 would reduce to max-BLEU updating; setting &#181; = &#8734; would never update w at all.
+    Setting &#181; = 0.5 reduces to equation (10).
+    Figure 1 shows the 10-best unique translations for a single input sentence according to equation (11) under various settings of &#181;.
+    The points at far right are the translations that are scored highest according to the model.
+    The p = 0 points in the upper-left corner are typical of oracle translations that would be selected under the max-BLEU policy: they indeed have a very high BLEU score, but are far removed from the translations preferred by the model; thus they would cause violent updates to w. Local updating would select the topmost point labeled p = 1.
+    Our scheme would select one of the p = 0.5 points, which have BLEU scores almost as high as the max-BLEU translations, yet are not 

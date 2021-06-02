@@ -1,0 +1,10 @@
+ction for details).
+    Since each probability look-up is cheap but computing SU-RNN scores requires a matrix product, we would like to reduce the number of SU-RNN score computations to only those trees that require semantic information.
+    We note that labeled F1 of the Stanford PCFG parser on the test set is 86.17%.
+    However, if one used an oracle to select the best tree from the top 200 trees that it produces, one could get an F1 of 95.46%.
+    We use this knowledge to speed up inference via two bottom-up passes through the parsing chart.
+    During the first one, we use only the base PCFG to run CKY dynamic programming through the tree.
+    The k = 200-best parses at the top cell of the chart are calculated using the efficient algorithm of (Huang and Chiang, 2005).
+    Then, the second pass is a beam search with the full CVG model (including the more expensive matrix multiplications of the SU-RNN).
+    This beam search only considers phrases that appear in the top 200 parses.
+    This is similar to a 

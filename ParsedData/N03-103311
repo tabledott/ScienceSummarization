@@ -1,0 +1,9 @@
+ointly unlikely sequences.
+    Consider the two-node network in figure 2(c).
+    If we have the following distribution of observations (in the form ab) h11, 11, 11, 12, 21, 33i, then clearly the most likely state of the network is 11.
+    However, the score of 11 is P(a = 1|b = 1)P(b = 1|a = 1) = 3/4 &#215; 3/4 = 9/16, while the score of 33 is 1.
+    An additional related problem is that the training set loss (sum of negative logarithms of the sequence scores) does not bound the training set error (0/1 loss on sequences) from above.
+    Consider the following training set, for the same network, with each entire data point considered as a label: (11, 22).
+    The relative-frequency model assigns loss 0 to both training examples, but cannot do better than 50% error in regenerating the training data labels.
+    These issues are further discussed in Heckerman et al. (2000).
+    Preliminary work of ours suggests that practical use of dependency networks is not in general immune to these theoretical concerns: a dep

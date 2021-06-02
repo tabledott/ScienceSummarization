@@ -1,0 +1,7 @@
+language model scores and a word count as features for confusion network decoding.
+    Therefore, for an M-way system combination that uses N LMs, a total of M+N+1 decoding parameters, including M-1 system weights, one rank smoothing factor, N language model weights, and one weight for the word count feature, are optimized using Powell&#8217;s method (Brent, 1973) to maximize BLEU score on a development set4 .
+    Two language models are used in our experiments.
+    One is a trigram model estimated from the English side of the parallel training data, and the other is a 5-gram model trained on the English GigaWord corpus from LDC using the MSRLM toolkit (Nguyen et al, 2007).
+    4 The parameters of IHMM are not tuned by maximum-BLEU training.
+    In order to reduce the fluctuation of BLEU scores caused by the inconsistent translation output length, an unsupervised length adaptation method has been devised.
+    We compute an expected length ratio between the MT output and the source sentences on the development

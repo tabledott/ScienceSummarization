@@ -1,0 +1,10 @@
+ministic annealing.
+    Replace each factor Fm(A) with Fm(A)1/T , where T &gt; 0 is a temperature.
+    As T --+ 0 (&#8220;quenches&#8221;), the distribution (1) retains the same mode (the MAP assignment), but becomes more sharply peaked at the mode, and sum-product BP approaches max-product BP.
+    Deterministic annealing runs sum-product BP while gradually reducing T toward 0 as it iterates.
+    By starting at a high T and reducing T slowly, it often manages in practice to find a good local optimum.
+    We may then extract an assignment just as we do for max-product. under equation (1), regularizing only by early stopping.
+    If all variables are observed in training, this objective function is convex (as for any log-linear model).
+    The difficult step in computing the gradient of our objective is finding V&#952; log Z, where Z in equation (1) is the normalizing constant (partition function) that sums over all assignments A.
+    (Recall that Z, like each Fm, depends implicitly on W and 0.)
+    As usual fo

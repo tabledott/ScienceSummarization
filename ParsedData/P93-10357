@@ -1,0 +1,7 @@
+he right paren: This results in the same structural change as deleting a left paren to the right of X in this particular structure.
+    Applying the transformation add a right paren to the right of a noun to the bracketing: ( ( The ( dog barked ) ) . ) will once again result in the correct bracketing: ( ( ( The dog) barked) . )
+    Learning proceeds as follows.
+    Sentences in the training set are first parsed using the naive parser which assigns right linear structure to all sentences, attaching final punctuation high.
+    Next, for each possible instantiation of the twelve transformation templates, that particular transformation is applied to the naively parsed sentences.
+    The resulting structures are then scored using some measure of success that compares these parses to the correct structural descriptions for the sentences provided in the training corpus.
+    The transformation resulting in the best scoring structures then becomes the first transformation of the ordered set of transformations that are

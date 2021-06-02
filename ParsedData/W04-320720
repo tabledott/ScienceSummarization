@@ -1,0 +1,8 @@
+more complex data, we might introduce A&#8727; heuristics or, at the possible expense of optimality, a beam search or pruning techniques.
+    Our agenda discipline is uniform-cost search, which guarantees that the first full parse discovered will be optimal&#8212;if none of the weights are positive.
+    In our case we are maximizing sums of negative weights, as if working with log probabilities.8 When evaluating our parsing output against the test data from the KTB, we do not claim credit for the single outermost bracketing or for unary productions.
+    Since unary productions do not translate well from language to language (Hwa et al., 2002), we collapse them to their lower nodes.
+    We compare our bilingual parser to several baseline systems.
+    The first is the Korean PCFG trained on the small KTB training sets, as described in &#167;3.3.
+    We also consider Wu&#8217;s (1997) stochastic inversion transduction grammar (SITG) as well as strictly left- and right-branching trees.
+    We report the results o

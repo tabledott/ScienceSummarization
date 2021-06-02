@@ -1,0 +1,8 @@
+analytic or efficient numerical way of doing this for a realistic SUBG.
+    Abney (1997) proposes a gradient ascent, based upon a Monte Carlo, procedure for estimating Eo(f3).
+    The idea is to generate random samples of feature structures from the distribution PO(w), where 0 is the current parameter estimate, and to use these to estimate Eo(f3), and hence the gradient of the likelihood.
+    Samples are generated as follows: Given a SUBG, Abney constructs a covering PCFG based upon the SUBG and 0, the current estimate of 0.
+    The derivation trees of the PCFG can be mapped onto a set containing all of the SUBG's syntactic analyses.
+    Monte Carlo samples from the PCFG are comparatively easy to generate, and sample syntactic analyses that do not map to well-formed SUBG syntactic structures are then simply discarded.
+    This generates a stream of syntactic structures, but not distributed according to P(w) (distributed instead according to the restriction of the PCFG to the SUBG).
+    Abney proposes using a 

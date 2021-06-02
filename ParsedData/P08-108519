@@ -1,0 +1,8 @@
+ge portions of the vocabulary are missing.
+    These settings are very different from those used for Hebrew: the tagset is much smaller (17 vs. 3,560) and the dictionaries are either complete or extremely crippled.
+    However, for the sake of comparison, we have reproduced the same experimental settings.
+    We derive dictionaries from the complete WSJ corpus6, and the exact same diluted dictionaries used in SE, TJ and GG. many of the stop words get wrong analyses stemming from tagging mistakes (for instance, the word the has 6 possible analyses in the data-derived dictionary, which we checked manually and found all but DT erroneous).
+    Such noise is not expected in a real world dictionary, and our algorithm is not designed to accomodate it.
+    We corrected the entries for the 20 most frequent words in the corpus.
+    This step could probably be done automatically, but we consider it to be a non-issue in any realistic setting.
+    Syntagmatic Constraints We indirectly incorporated syntagmatic constraints 

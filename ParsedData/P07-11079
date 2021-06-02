@@ -1,0 +1,8 @@
+uld use the EM algorithm with this model, but EM will not extend effectively to the subsequent models.
+    4Here, Z&#8722;i,j denotes Z &#8722; {Zi,j} where nz is the number of elements of Z&#8722;i,j with entity index z.
+    Similarly we have for the contribution of the emissions: where nh,z is the number of times we have seen head h associated with entity index z in (Z, H&#8722;i,j).
+    A clear drawback of the finite mixture model is the requirement that we specify a priori a number of entities K for a document.
+    We would like our model to select K in an effective, principled way.
+    A mechanism for doing so is to replace the finite Dirichlet prior on Q with the non-parametric Dirichlet process (DP) prior (Ferguson, 1973).5 Doing so gives the model in figure 1(b).
+    Note that we now list an infinite number of mixture components in this model since there can be an unbounded number of entities.
+    Rather than a finite Q with a symmetric Dirichlet distribution, in which draws tend to have balanced clus

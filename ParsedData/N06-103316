@@ -1,0 +1,5 @@
+om its binary parse tree.
+    In order to do so we need to keep track of sub-alignments including both aligned nonterminals and neighboring terminals.
+    When binarizing the second rule above, we first run the skeleton algorithm to binarize the underlying permutation (1, 3, 2) to its binarization tree [1, (3, 2)].
+    Then we do a post-order traversal to the skeleton tree, combining Chinese terminals (one at a time) at the leaf nodes and merging English terminals greedily at internal nodes: A pre-order traversal of the decorated binarization tree gives us the following binary SCFG rules: where the virtual nonterminals are: Analogous to the &#8220;dotted rules&#8221; in Earley parsing for monolingual CFGs, the names we create for the virtual nonterminals reflect the underlying sub-alignments, ensuring intermediate states can be shared across different tree-to-string rules without causing ambiguity.
+    The whole binarization algorithm still runs in time linear in the number of symbols in the rule (including b

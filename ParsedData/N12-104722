@@ -1,0 +1,7 @@
+ count bin uniquely bins joint phrase pair counts with upper bounds 1,2,4,8,16,32,64,128,1k,10k,00; word pair fires when each of the 80 most frequent words in each language appear aligned 1-1 to each other, to some other word, or not 1-1; and length bin captures each possible phrase length and length pair.
+    Table 3 summarizes the feature templates, showing the maximum number of features each can generate, and the number of features that received non-zero weights in the final model tuned by MR for each language pair.
+    Feature weights are initialized to 1.0 for each of the TM, LM and distortion penalty features.
+    All other weights are initialized to 0.0.
+    We follow Clark et al (2011), and perform multiple randomized replications of each experiment.
+    However, their method of using different random seeds is not applicable in our context, since randomization does not play the same role for all tuning methods.
+    Our solution was to randomly draw and fix four different sub-samples of each dev set, r

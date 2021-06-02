@@ -1,0 +1,7 @@
+biliare.
+    There are two ways to start this stage, either by tokenizing the text or considering it in raw form.
+    When tokenization is used, each token is inserted in the two morphological tries: one that keeps the letters of the tokens in the normal (prefix) order, another that keeps the letter in the reverse (suffix) order.
+    For each letter on the path, the raw distributions are changed by adding the a priori probability of the token belonging to each class (language dependent information may be used here).
+    For&#8226; example, in the case of Indo-European languages, if the token starts with an upper-case letter, we add 1 full count (all probability mass) to the &amp;quot;questionable&amp;quot; sum, as this entity is initially fully ambiguous.
+    If the token starts with lower-case (and hence is an unlikely name) in this case we add the bulk of the probability mass 5 (e.g.d ?
+    ; 0.9) to &amp;quot;non-entity&amp;quot; and the remainder (1-5) to &amp;quot;questionable&amp;quot; (otherwise unassi

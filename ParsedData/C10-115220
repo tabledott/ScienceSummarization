@@ -1,0 +1,8 @@
+ with the uniform distribution.
+			The binary features, such as SFT and BDFT, are assigned the initial value of 0.5.
+			For DFT and RFT, the initial probability is 1N!
+			, whereN is the number of the children.
+			CFT is initial ized as 0.25.
+			SubFT is initialized as 1.0 for anysubstitution at the first iteration.
+			After each itera tion, the updateProbability function recalculatesthese probabilities based on the cnt for each fea ture.
+			Algorithm 3 calcInsideProb (TrainingTree tt) for each node from level = N to root of tt do if node is a sub node then node.insideProb = P (sub|node); else if node is a mp OR sp node then node.insideProb =Qchild child.insideProb;else node.insideProb =Pchild child.insideProb;end if end for Algorithm 4 calcOutsideProb (TrainingTree tt) for each node from root to level = N of tt do if node is the root then node.outsideProb = 1.0; else if node is a sp res OR mp res node then {COMMENT: father are the fathers of the current node, sibling are the children of father excluding the 

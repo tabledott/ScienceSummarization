@@ -1,0 +1,9 @@
+ clusters): ir(d, c) = r avgm(d, c) if cvg(d, c) &gt; min(3, jcj/4) l 0 otherwise A document d is retrieved for a cluster c if ir(d, c) &gt; 0.4.
+    Finally, we emphasize precision by pruning away 50% of a cluster&#8217;s retrieved documents that are farthest in distance from the mean document of the retrieved set.
+    Distance is the cosine similarity between bag-of-words vector representations.
+    The confidence value of 0.4 was chosen from a manual inspection among a single cluster&#8217;s retrieved documents.
+    Pruning 50% was arbitrarily chosen to improve precision, and we did not experiment with other quantities.
+    A search for optimum parameter values may lead to better results.
+    Having successfully clustered event words and retrieved an IR-corpus for each cluster, we now address the problem of inducing semantic roles.
+    Our learned roles will then extract entities in the next section and we will evaluate their per-role accuracy.
+    Most work on unsupervised role induction focuses on learni

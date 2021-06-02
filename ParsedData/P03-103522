@@ -1,0 +1,10 @@
+guity (OA), and combination ambiguity (CA).
+    Consider a character string ABC, if it can be segmented into two words either as AB/C or A/BC depending on different context, ABC is called an overlap ambiguity string (OAS).
+    If a character string AB can be segmented either into two words, A/B, or as one word depending on different context.
+    AB is called a combination ambiguity string (CAS).
+    To resolve OA, we identify all OASs in the training data and replace them with a single token &lt;OAS&gt;.
+    By doing so, we actually remove the portion of training data that are likely to contain OA errors.
+    To resolve CA, we select 70 high-frequent two-character CAS (e.g.
+    &#25165;&#33021; &#8216;talent&#8217; and &#25165;/&#33021; &#8216;just able&#8217;).
+    For each CAS, we train a binary classifier (which is based on vector space models) using sentences that contains the CAS segmented manually.
+    Then for each occurrence of a CAS in the initial segmented training data, the corresponding classifier

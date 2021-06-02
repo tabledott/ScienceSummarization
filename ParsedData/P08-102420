@@ -1,0 +1,8 @@
+translation model finds a good translation card on the table.
+    This is due to the many rules that enforce monotone ordering around sur la, (X) &#8212;* (X 1 sur, X 1 in) (X) &#8212;* (X 1 sur la X 2, X 1 in the X 2) etc.
+    The scores of these many monotone rules sum to be greater than the reordering rule, thus allowing the model to use the weight of evidence to settle on the correct ordering.
+    Having established that the search for the best translation is effective, the question remains as to how the beam width over partial translations affects performance.
+    Figure 5 shows the relationship between beam width and development BLEU.
+    Even with a very tight beam of 100, max-translation decoding outperforms maximum-derivation decoding, and performance is increasing even at a width of 10k.
+    In subsequent experiments we use a beam of 5k which provides a good trade-off between performance and speed.
+    Regularisation Table 1 shows that the performance of an unregularised maximum likelihood model lag

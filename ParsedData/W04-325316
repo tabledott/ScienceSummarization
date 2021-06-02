@@ -1,0 +1,5 @@
+e features described in 3.3 which make use of topic information, namely the broader PMI derived SO values and the topicsentence Osgood values.
+    Due to the relatively small size of this dataset, test suites were created using 100, 20, 10, and 5-fold cross validation, to maximize the amount of data available for training and the accuracy of the results.
+    Text length normalization appeared to harm performance on this dataset, and so the models reported here for this dataset were not normalized for length.
+    SVMs were built using Kudo&#8217;s TinySVM software implementation.4 Several kernel types, kernel parameters, and optimization parameters were investigated, but no appreciable and consistent benefits were gained by deviating from the the default linear kernel with all parameter values set to their default, so only these results are reported here, with the exception of the Turney Values-only model on the Pitchfork dataset.
+    This single-featured model caused segmentation faults on some partitions wit

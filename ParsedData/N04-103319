@@ -1,0 +1,11 @@
+language model, the phrase translation model and the word-based lexicon model.
+    The latter two feature functions are used for both directions: p(f|e) and p(e|f).
+    Additionally, we use the word and phrase penalty feature functions.
+    The model scaling factors are optimized on the development corpus with respect to mWER similar to (Och, 2003).
+    We use the Downhill Simplex algorithm from (Press et al., 2002).
+    We do not perform the optimization on N-best lists but we retranslate the whole development corpus for each iteration of the optimization algorithm.
+    This is feasible because this system is extremely fast.
+    It takes only a few seconds to translate the whole development corpus for the Verbmobil task and the Xerox task; for details see Section 8.
+    In the experiments, the Downhill Simplex algorithm converged after about 200 iterations.
+    This method has the advantage that it is not limited to the model scaling factors as the method described in (Och, 2003).
+    It is also possible to 

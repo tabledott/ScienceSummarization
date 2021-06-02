@@ -1,0 +1,7 @@
+sing event records.
+    Formally, we have a Markov model over the fields:3 Each record type has a dedicated null field with its own multinomial distribution over words, intended to model words which refer to that record type in general (e.g., the word passes for passing records).
+    We also model transitions into the first field and transitions out of the final field with special START and STOP fields.
+    This Markov structure allows us to capture a few elements of rudimentary syntax.
+    We arrive at the final component of our model, which governs how the information about a particular field of a record is rendered into words.
+    For each field fij, we generate the number of words cij from a uniform distribution over 11, 2,... , Cmax}, where Cmax is set larger than the length of the longest text we expect to see.
+    Conditioned on the fields f, the words w are generated independently:4 where r(k) and f(k) are the record and field responsible for generating word wk, as determined by the segmentation c. Th

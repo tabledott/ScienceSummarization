@@ -1,0 +1,8 @@
+ative model, and are often under-discussed.
+    In our implementation, the variational updates are scheduled as follows: given expected counts, we iteratively update the variational parameters on the region-topics 77 and the base topics &#181;, until convergence.
+    We then update the geographical parameters v and A, as well as the distribution over regions 0.
+    Finally, for each document we iteratively update the variational parameters over 0, z, and r until convergence, obtaining expected counts that are used in the next iteration of updates for the topics and their regional variants.
+    We iterate an outer loop over the entire set of updates until convergence.
+    We initialize the model in a piecewise fashion.
+    First we train a Dirichlet process mixture model on the locations y, using variational inference on the truncated stick-breaking approximation (Blei and Jordan, 2006).
+    This automatically selects the number of regions J, and gives a distribution over each region indicator rd from geograph

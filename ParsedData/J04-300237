@@ -1,0 +1,9 @@
+m (ugen-ngram).
+    Such collocations have placeholders for unique words.
+    As will be seen below, these are our highest-precision features.
+    To find and select such generalized collocations, we first find every word that appears just once in the corpus and replace it with a new word, UNIQUE (but remembering the part of speech of the original word).
+    In essence, we treat the set of single-instance words as a single, frequently occurring word (which occurs with various parts of speech).
+    Precisely the same method used for extracting and selecting n-grams above is used to obtain the potentially subjective collocations with one or more positions filled by a UNIQUE, part-of-speech pair.
+    To test the ugen-n-grams extracted from the subjective-element training data using the method outlined above, we assess their precision with respect to opinion piece data.
+    As with the training data, all unique words in the test data are replaced by UNIQUE.
+    When a ugen-n-gram is matched against the test data,

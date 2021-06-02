@@ -1,0 +1,7 @@
+ion contributes a term in which the rule probability is multiplied by the product of the e variables corresponding to the RHS nonterminals, unless the RHS contains a terminal (in which case the production contributes nothing to ex because it cannot possibly lead to E).
+    The resulting nonlinear system can be solved by iterative approximation.
+    Each variable ex is initialized to P(X -4 6), and then repeatedly updated by substituting in the equation right-hand sides, until the desired level of accuracy is attained.
+    Convergence is guaranteed, since the ex values are monotonically increasing and bounded above by the true values P(X e) &lt; 1.
+    For grammars without cyclic dependencies among &amp;producing nonterminals, this procedure degenerates to simple backward substitution.
+    Obviously the system has to be solved only once for each grammar.
+    The probability ex can be seen as the precomputed inner probability of an expansion of X to the empty string; i.e., it sums the probabilities of all Earle

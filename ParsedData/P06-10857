@@ -1,0 +1,8 @@
+ral and mathematically satisfactory solution is to assume a nonuniform prior, assigning higher probability to hypotheses with fewer parameters.
+    This is in fact the route taken by Brent in his MBDP model, as we shall see in the following section.
+    MBDP assumes a corpus of utterances is generated as a single probabilistic event with four steps: In a final deterministic step, the ordered tokens are concatenated to create an unsegmented corpus.
+    This means that certain segmented corpora will produce the observed data with probability 1, and all others will produce it with probability 0.
+    The posterior probability of a segmentation given the data is thus proportional to its prior probability under the generative model, and the best segmentation is that with the highest prior probability.
+    There are two important points to note about the MBDP model.
+    First, the distribution over L assigns higher probability to models with fewer lexical items.
+    We have argued that this is necessary to avoid mem

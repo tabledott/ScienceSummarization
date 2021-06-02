@@ -1,0 +1,12 @@
+y the trees for mascu line and feminine) consist of a single terminal node in the two subsets.
+			The weight of each subset is proportional to its size.
+			2We did not directly compare the two alternatives (two valued vs. multi-valued tests), because the implementational effort required would have been too large.
+			which returns a probability of 0.3.
+			The third tree for neuter has one non-terminal and two terminalnodes returning a probability of 0.3 and 0.5, re spectively.
+			The sum of probabilities is therefore either 0.9 or 1.1, but never exactly 1.
+			This problem is solved by renormalizing the probabilities.
+			The probability of an attribute (such as ?Nom?)
+			is always conditioned on the respective base POS (such as ?N?)
+			(unless the predicted attribute is thebase POS) in order to make sure that the probabil ity of an attribute is 0 if it never appeared with the respective base POS.
+			All context attributes other than the base POS are always used in combination with the base POS.
+			A typical con

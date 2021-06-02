@@ -1,0 +1,9 @@
+tive weights w cause the jointly optimal parse pair (t, t') to comprise the two top-1 monolingual outputs (the baseline).
+    All other features in our model reference the entire triple (t, a, t').
+    In this work, such features are defined over aligned node pairs for efficiency, but generalizations are certainly possible.
+    Bias: The first feature is simply a bias feature which has value 1 on each aligned node pair (n, n').
+    This bias allows the model to learn a general preference for denser alignments.
+    Alignment features: Of course, some alignments are better than others.
+    One indicator of a good nodeto-node alignment between n and n' is that a good word alignment model thinks that there are many word-to-word alignments in their bispan.
+    Similarly, there should be few alignments that violate that bispan.
+    To compute such features, we define a(v, v') to be the posterior probability assigned to the word alignment between v and v' by an independent word aligner.2 Before defining alignment fe

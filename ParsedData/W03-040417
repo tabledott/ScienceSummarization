@@ -1,0 +1,8 @@
+uld generalize over the set to minimize sparse data problems.
+    We will refer to these as the SubjNoun features.
+    Wiebe, Bruce, &amp; O&#8217;Hara (1999) developed a machine learning system to classify subjective sentences.
+    We experimented with the features that they used, both to compare their results to ours and to see if we could benefit from their features.
+    We will refer to these as the WBO features.
+    WBO includes a set of stems positively correlated with the subjective training examples (subjStems) and a set of stems positively correlated with the objective training examples (objStems).
+    We defined a three-valued feature for the presence of 0, 1, or &gt; 2 members of subjStems in a sentence, and likewise for objStems.
+    For our experiments, subjStems includes stems that appear &gt; 7 times in the training set, and for which the precision is 1.25 times the baseline word precision for that training set. objStems contains the stems that appear &gt; 7 times and for which at least 50% of 

@@ -1,0 +1,7 @@
+e table.
+    The parse table is a nondeterministic finite-state automaton so it is possible to apply Markov modeling techniques to the parse table (in a way analogous to their application to lexical tagging or CFGs).
+    Each row of the parse table corresponds to the possible transitions out of the state represented by that row, and each transition is associated with a particular lookahead item and a parse action.
+    Nondeterminism arises when more than one action, and hence transition, is possible given a particular lookahead item.
+    The most straightforward technique for associating probabilities with the parse table is to assign a probability to each action in the action part of the table (e.g.
+    Wright 1990).5 If probabilities are associated directly with the parse table rather than derived from a probabilistic CFG or equivalent global pairing of probabilities to rules, then the resulting probabilistic model will be more sensitive to parse context.
+    For example, in a derivation for the sentence he

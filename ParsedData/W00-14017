@@ -1,0 +1,12 @@
+es in the order of their likelihood by composing the lattice with a finite-state machine representing a trigram language model.
+    This model has been constructed from the 1.000,0000 words WSJ training corpus.
+    We pick the best path through the lattice resulting from the composition using the Viterbi algorithm, and this top ranking word sequence is the output of the LP Chooser and the generator.
+  
+  
+    We have used four different baseline quantitative metrics for evaluating our generator.
+    The first two metrics are based entirely on the surface string.
+    The next two metrics are based on a syntactic representation of the sentence.
+    We employ two metrics that measure the accuracy of a generated string.
+    The first metric, simple accuracy, is the same string distance metric used for measuring speech recognition accuracy.
+    This metric has also been used to measure accuracy of MT systems (Alshawi et al., 1998).
+    It is based on string edit distance between the output of the generation system

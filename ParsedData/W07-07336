@@ -1,0 +1,8 @@
+, one for each the out-of-domain and the in-domain training data.
+    Language modeling software such as the SRILM toolkit we used (Stolke, 2002) allows the interpolation of these language models.
+    When interpolating, we give the out-of-domain language model a weight in respect to the in-domain language model.
+    Since we want to obtain a language model that gives us the best performance on the target domain, we set this weight so that the perplexity of the development set from that target domain is optimized.
+    We searched for the optimal weight setting by simply testing a set of weights and focusing on the most promising range of weights.
+    Figure 2 displays all the weights we explored during this process and the corresponding perplexity of the resulting language model on the development set (nc-dev2007).
+    The optimal weight can be picked out easily from this very smooth curve.
+    The log-linear modeling approach of statistical machine translation enables a straight-forward combination of the in

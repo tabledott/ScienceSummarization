@@ -1,0 +1,6 @@
+nts: (1) York, (2) - and (3) based.
+    When encoding the semantic dependencies, it was necessary to convert the underlying constituent analysis of PropBank and NomBank into a dependency analysis.
+    Because semantic predicates are already assigned to individual tokens in both PropBank (the version used for the CoNLL2005 shared task) and NomBank, constituent-todependency conversion is thus necessary only for semantic arguments.
+    Conceptually, this conversion can be handled using similar heuristics as described in Section 3.2.1.
+    However, in order to avoid replicating this effort and to ensure compatibility between syntactic and semantic dependencies, we decided to generate semantic dependencies using only argument boundaries and the syntactic dependencies generated in Section 3.2.1, i.e., ignoring syntactic constituents.
+    Given this input, we identify the head of a semantic argument using the following heuristic: The head of a semantic argument is assigned to the token inside the argument boundaries

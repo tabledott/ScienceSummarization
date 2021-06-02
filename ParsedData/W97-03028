@@ -1,0 +1,9 @@
+the inside probability by the outside probability, and normalize.
+    This product would give us the overall probability that the node is part of the correct parse.
+    Unfortunately, there is no good way to quickly compute the outside probability of a node during bottom-up chart parsing (although it can be efficiently computed afterwards).
+    Thus, we instead multiply the inside probability simply by the prior probability of the nonterminal type, P(X), which is an approximation to the outside probability.
+    Our final thresholding measure is P(X)x)3(Nfk).
+    In Section 7.4, we will show experiments comparing insideprobability beam thresholding to beam thresholding using the inside probability times the prior.
+    Using the prior can lead to a speedup of up to a factor of 10, at the same performance level.
+    To the best of our knowledge, using the prior probability in beam thresholding is new, although not particularly insightful on our part.
+    Collins (personal communication) independently observed th

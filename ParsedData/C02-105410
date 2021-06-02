@@ -1,0 +1,17 @@
+?E? ?^??:???
+			76 78 80 82 84 86 88 90 Number of NEs in training data ( ??
+			) Figure 2: F-measures of NE systems and 87.04% respectively when we used 569,994 training vectors.
+			Figure 2 compares NE recognizers in terms ofGENERAL?s F-measures.
+			?SVM?
+			in the figure in dicates F-measures of our system trained by Kudo?s TinySVM-0.073 with S?*?Q?# . It attained 85.04% when we used only CRL data.
+			?ME? indicates our ME system and ?RG+DT?
+			indicates a rule-basedmachine learning system (Isozaki, 2001).
+			According to this graph, ?SVM?
+			is better than the other sys tems.However, SVM classifiers are too slow.
+			Fa mous SVM-Light 3.50 (Joachims, 1999) took 1.2 days to classify 569,994 vectors derived from 2 MB documents.
+			That is, it runs at only 19 bytes/sec.
+			TinySVM?s classifier seems best optimized among publicly available SVM toolkits, but it still works at only 92 bytes/sec.
+	
+	
+			In this section, we investigate the cause of this in efficiency and propose a solution.
+			All experiments are c

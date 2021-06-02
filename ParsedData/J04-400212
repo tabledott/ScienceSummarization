@@ -1,0 +1,8 @@
+ set of unknown parameters &#952; that is learned from training data.
+    To express the dependence of the model on the parameter set, we use the following notation: A detailed description of different specific statistical alignment models can be found in Brown et al. (1993) and Och and Ney (2003).
+    Here, we use the hidden Markov model (HMM) alignment model (Vogel, Ney, and Tillmann 1996) and Model 4 of Brown et al. (1993) to compute the word alignment for the parallel training corpus.
+    To train the unknown parameters &#952;, we are given a parallel training corpus consisting of S sentence pairs j(fs, es): s = 1, ... , Sj.
+    For each sentence pair (fs, es), the alignment variable is denoted by a = aJ1.
+    The unknown parameters &#952; are determined by maximizing the likelihood on the parallel training corpus: This optimization can be performed using the expectation maximization (EM) algorithm (Dempster, Laird, and Rubin 1977).
+    For a given sentence pair there are a large number of alignments.
+   

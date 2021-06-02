@@ -1,0 +1,11 @@
+focus is on the segmentation of transcribed spoken text and broadcast news stories where the presentation format and regular cues can be exploited to improve accuracy.
+  
+  
+    Our segmentation algorithm takes a list of tokenized sentences as input.
+    A tokenizer (Grefenstette and Tapanainen, 1994) and a sentence boundary disambiguation algorithm (Palmer and Hearst, 1994; Reynar and Ratnaparkhi, 1997) or EAGLE (Reynar et al., 1997) may be used to convert a plain text document into the acceptable input format.
+    Punctuation and uninformative words are removed from each sentence using a simple regular expression pattern matcher and a stopword list.
+    A stemming algorithm (Porter, 1980) is then applied to the remaining tokens to obtain the word stems.
+    A dictionary of word stem frequencies is constructed for each sentence.
+    This is represented as a vector of frequency counts.
+    Let fi,i denote the frequency of word j in sentence i.
+    The similarity between a pair of sentences :1:, y For short te

@@ -1,0 +1,13 @@
+r that is too big, still abusing its freedom.
+  
+  
+    Bayesian sparse priors aim to create small models.
+    We take a different tack in the paper and directly ask: What is the smallest model that explains the text?
+    Our approach is related to minimum description length (MDL).
+    We formulate our question precisely by asking which tag sequence (of the 106425 available) has the smallest observed grammar size.
+    The answer is 459.
+    That is, there exists a tag sequence that contains 459 distinct tag bigrams, and no other tag sequence contains fewer.
+    We obtain this answer by formulating the problem in an integer programming (IP) framework.
+    Figure 2 illustrates this with a small sample word sequence.
+    We create a network of possible taggings, and we assign a binary variable to each link in the network.
+    We create constraints to ensure that those link variables receiving a value of 1 form a left-to-right path through the tagging network, and that all other link variables receive a value of 

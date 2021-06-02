@@ -1,0 +1,6 @@
+cross the boundary of an adverbial clause, e.g.
+    &#8220;He studied &lt;Einstein&#8217;s work&gt; when visiting &lt;Germany&gt;.&#8221; The resulting set of labeled examples are described using features that can be extracted without syntactic or semantic analysis and used to train a CRF, a sequence model that learns to identify spans of tokens believed to indicate explicit mentions of relationships between entities.
+    O-CRF first applies a phrase chunker to each document, and treats the identified noun phrases as candidate entities for extraction.
+    Each pair of entities appearing no more than a maximum number of words apart and their surrounding context are considered as possible evidence for RE.
+    The entity pair serves to anchor each end of a linear-chain CRF, and both entities in the pair are assigned a fixed label of ENT.
+    Tokens in the surrounding context are treated as possible textual cues that indicate a relation, and can be assigned one of the following labels: B-REL, indicating the start

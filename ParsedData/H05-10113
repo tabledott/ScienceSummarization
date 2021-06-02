@@ -1,0 +1,8 @@
+nted to add a fertility component to create Models 3, 4, and 5, however, this generative 81story didn?t fit any longer, because it does not in clude how many target language words to align to each source language word as a separate decision.
+			To model this explicitly, they had to come up with a different generative story.
+			In this paper, we take a different approach to word alignment, based on discriminative training of a weighted linear combination of a small number of features.
+			For a given parallel sentence pair, foreach possible word alignment considered, we sim ply multiply the values of each of these features by a corresponding weight to give a score for that feature, and sum the features scores to give an overall score for the alignment.
+			The possible alignment havingthe best overall score is selected as the word align ment for that sentence pair.
+			Thus, for a sentence pair (e, f) we seek the alignment a?
+			such that a?
+			= argmaxa n ? i=1 ?ifi(a, e, f) where the fi are features and the ?i 

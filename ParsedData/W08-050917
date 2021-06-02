@@ -1,0 +1,10 @@
+orpora and models are on a central NFS server.
+    The PGIZA++ uses Condor as its scheduler, splitting the training data into 30 fragments, and ran training in both direction (Ch-En, En-Ch) concurrently.
+    The scheduler assigns 11 CPUs on average to the tasks.
+    We ran 5 iterations of Model 1 training, 5 iteration of HMM, 3 Model 3 iterations and 3 Model 4 iterations.
+    To compare the performance of system, we recorded the total training time and the BLEU score, which is a standard automatic measurement of the translation quality(Papineni et al., 2002).
+    The training time and BLEU scores are shown in Table 4: 5 The results show similar BLEU scores when using GIZA++ and PGIZA++, and a 4 times speed up.
+    Also, we calculated the time used in normalization.
+    The average time of each normalization step is shown in Table 5.
+    As we can see, if we rule out the time spent in normalization, the speed up is almost linear.
+    Higher order models require less time in the normalization step mainly due to

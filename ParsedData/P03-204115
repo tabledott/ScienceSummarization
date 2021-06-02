@@ -1,0 +1,8 @@
+be found by hash lookup if the grammar is stored explicitly, or else by some probabilistic model that analyzes the structure, labels, and states of the elementary tree t to compute its probability.
+    One can mechanically transform this algorithm to compute outside probabilities, the Viterbi parse, the parse forest, and other quantities (Goodman, 1999).
+    One can also apply agenda-based parsing strategies.
+    For a fixed grammar, the runtime and space are only O(n) for a tree of n nodes.
+    The grammar constant is the number of possible fits to a node c of a fixed tree.
+    As noted above, there usually not many of these (unless the states are uncertain) and they are simple to enumerate.
+    As discussed above, an inside-outside algorithm may be used to compute the expected number of times each elementary tree t appeared in the derivation of T. That is the E step of the EM algorithm.
+    In the M step, these expected counts (collected over a corpus of trees) are used to reestimate the parameters &#952;&#

@@ -1,0 +1,6 @@
+s assigned to the associated aspect topic (r = loc, z = a).
+    Instead of having a latent variable yo&#8222;,6 we use a similar model which does not have an explicit notion of yo&#8222;.
+    The distribution of a sentiment rating ya for each rated aspect a is computed from two scores.
+    The first score is computed on the basis of all the ngrams, but using a common set of weights independent of the aspect a.
+    Another score is computed only using n-grams associated with the related topic, but an aspect-specific set of weights is used in this computation.
+    More formally, we consider the log-linear distribution: where w, r, z are vectors of all the words in a document, assignments of context (global or local) and topics for all the words in the document, respectively. bay is the bias term which regulates the prior distribution P(ya = y), f iterates through all the n-grams, Jy,f and Jay,f are common weights and aspect-specific weights for n-gram feature f. pa f,r,z is equal to a fraction of words in n-gra

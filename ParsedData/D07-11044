@@ -1,0 +1,21 @@
+ffixes.
+			This representationenables fast lookup of any contiguous substring us ing binary search.
+			Specifically, all occurrences of a length-m substring can be found in O(m + log |T |) time (Manber and Myers, 1993).
+			1 Callison-Burch et al (2005) and Zhang and Vogel (2005) use suffix arrays as follows.
+			1.
+			Load the source training text F , the suffix array.
+			SAF , the target training text E, and the align ment A into memory.
+			2.
+			For each input sentence, look up each substring.
+			(phrase) f?
+			of the sentence in the suffix array.
+			aligned phrase e?
+			using the phrase extraction method of Koehn et al (2003).
+			4.
+			Compute the relative frequency score p(e?|f?) of.
+			each pair using the count of the extracted pair and the marginal count of f?
+			5.
+			Compute the lexical weighting score of the.
+			phrase pair using the alignment that gives the best score.
+			1Abouelhoda et al (2004) show that lookup can be done in optimal O(m) time using some auxiliaray data structures.
+			Forour purpos

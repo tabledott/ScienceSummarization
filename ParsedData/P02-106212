@@ -1,0 +1,10 @@
+tation marks if they appear in the candidate.
+    Additionally, define to be the index of the last word beginning with a lower case letter, upper case letter, or digit within the quotation marks.
+    The first set of feature templates tracks the values of for the words within quotes:2 Q= Q2= 2We only included these features if , to prevent an explosion in the length of feature strings.
+    , , and .
+    The values for and would be and (these features are derived from The and Lennon, which respectively do and don&#8217;t appear in the capitalization lexicon).
+    This would give QF= and QF2= .
+    At this point, we have fully described the representation used as input to the reranking algorithms.
+    The maximum-entropy tagger gives 20 proposed segmentations for each input sentence.
+    Each candidate is represented by the log probability from the tagger, as well as the values of the global features for .
+    In the next section we describe algorithms which blend these two sources of information, the aim being

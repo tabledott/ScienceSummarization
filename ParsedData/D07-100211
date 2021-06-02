@@ -1,0 +1,6 @@
+s, is to a large ex tent determined by their meaning.
+			We first describe how predicates are identified and then introduce our model for semantic role labeling.
+			Predicate Identification Predicate candidates are identified using a simple look-up procedure whichcompares POS-tagged tokens against FrameNet entries.
+			For efficiency reasons, we make the simplifying assumption that questions have only one predicate which we select heuristically: (1) verbs are pre 14 ferred to other parts of speech, (2) if there is more than one verb in the question, preference is given to the verb with the highest level of embedding in the dependency tree, (3) if no verbs are present, a nounis chosen.
+			For example, in Q: Who beat Floyd Pat terson to take the title away?, beat, take away, and title are identified as predicate candidates and beat is selected the main predicate of the question.
+			Foranswer sentences, we require that the predicate is ei ther identical or semantically related to the question predicate (see Secti

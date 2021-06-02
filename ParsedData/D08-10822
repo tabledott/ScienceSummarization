@@ -1,0 +1,9 @@
+pired by the work of Collins (2003), the generative model builds trees by recursively creating nodes at each level according to a Markov process.
+    This implicit grammar representation leads to flexible learned models that generalize well.
+    In practice, we observe that it can correctly parse a wider range of test examples than previous approaches.
+    The generative model is learned from data that consists of sentences paired with their meaning representations.
+    However, there is no explicit labeling of the correspondence between words and meaning tokens that is necessary for building the hybrid trees.
+    This creates a challenging, hidden-variable learning problem that we address with the use of an insideoutside algorithm.
+    Specifically, we develop a dynamic programming parsing algorithm that leads to O(n3m) time complexity for inference, where n is the sentence length and m is the size of meaning structure.
+    This approach allows for efficient training and decoding.
+    In practice, we observe

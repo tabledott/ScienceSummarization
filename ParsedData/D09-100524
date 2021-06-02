@@ -1,0 +1,7 @@
+ semiring axioms.
+    Second, we can directly apply the inside-outside algorithm there, as we now see.
+    Given a hypergraph weighted by a second-order expectation semiring EP,R,S,T.
+    By recasting this as the first-order expectation semiring EK,X where K = EP,R and X = (5 x T), we can again apply INSIDE-OUTSIDE(HG, K, X) to find the total weight of all derivations.
+    For example, to speed up Section 3.2, we may define (ke, xe) = ((pe,pere), (pese,perese)) for each hyperedge e. Then the inside-outside algorithm of Figure 4 will compute (&#710;k, &#710;x) = ((Z, r), (s, t)), more quickly than the inside algorithm of Figure 2 computed (Z, r, s, t).
+    Figure 4 in this case will run the inside and outside algorithms in the semiring EP,R, so that ke, &#710;k, &#945;, Q, and ke will now be elements of P x R (not just elements of P as in the first-order case).
+    Finally it finds x&#710; = Pe kexe, where xe E 5 x T.9 This is a particularly effective speedup over the inside algorithm when R consists of scalar

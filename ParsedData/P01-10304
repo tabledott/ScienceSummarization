@@ -1,0 +1,9 @@
+h words (including NULL) by French words, according to the table t(f e).
+    Finally, we permute the French words.
+    In permuting, Model 4 distinguishes between French words that are heads (the leftmost French word generated from a particular English word), nonheads (non-leftmost, generated only by very fertile English words), and NULL-generated.
+    Heads.
+    The head of one English word is assigned a French string position based on the position assigned to the previous English word.
+    If an English word e translates into something at French position j, then the French head word of eis stochastically placed in French position k with distortion probability d(k&#8211;jclass(e ), class(f)), where &#8220;class&#8221; refers to automatically determined word classes for French and English vocabulary items.
+    This relative offset k&#8211;j encourages adjacent English words to translate into adjacent French words.
+    If e is infertile, then j is taken from e , etc.
+    If e is very fertile, then j is the ave

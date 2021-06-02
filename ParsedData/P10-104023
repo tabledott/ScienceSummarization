@@ -1,0 +1,10 @@
+We induced embeddings with 100 dimensions over 5-gram windows, and embeddings with 50 dimensions over 5-gram windows.
+    Embeddings were induced over one pass approach using a random tree, not two passes with an updated tree and embeddings re-estimation.
+    Like many NLP systems, the baseline system contains only binary features.
+    The word embeddings, however, are real numbers that are not necessarily in a bounded range.
+    If the range of the word embeddings is too large, they will exert more influence than the binary features.
+    We generally found that embeddings had zero mean.
+    We can scale the embeddings by a hyperparameter, to control their standard deviation.
+    Assume that the embeddings are represented by a matrix E: c- is a scaling constant that sets the new standard deviation after scaling the embeddings. work.
+    In Turian et al. (2009), we were not able to prescribe a default value for scaling the embeddings.
+    However, these curves demonstrate that a reasonable choice of scale fact

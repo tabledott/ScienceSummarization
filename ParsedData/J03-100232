@@ -1,0 +1,7 @@
+bilities, we assume that there is a dependence on the number of letters g(e) of e and estimate a fertility distribution p(&#966;  |g) using the EM algorithm.
+    Typically, longer words have a higher fertility.
+    By making this assumption, the model can learn that the longer words usually have a higher fertility than shorter words.
+    Using an interpolation parameter &#946;, the fertility distribution is then computed as &#65533; p'(&#966;  |e)&#946;0 (e)) &#183; p(&#966;  |e) + 0 (e) &#183; p(&#966;  |g(e)) (38) Here, n(e) denotes the frequency of e in the training corpus.
+    This linear interpolation ensures that for frequent words (i.e., n(e) &#187; &#946;), the specific distribution p(&#966;  |e) dominates, and that for rare words (i.e., n(e) &#171; &#946;), the general distribution p(&#966;  |g(e)) dominates.
+    The interpolation parameters &#945; and &#946; are determined in such a way that the alignment quality on held-out data is optimized.
+    A conventional bilingual dictionary can be considere

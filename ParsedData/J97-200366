@@ -1,0 +1,13 @@
+n paths.
+    Usually, it is not enough to consider the best path of a word lattice.
+    It is also necessary to correct the best path approximation by considering the n best paths, where the value of n depends on the task considered.
+    Notice that in case n is very large, one would need to consider, for the lattice in Figure 18, all 83 million paths.
+    The transducer contains 106 states and 359 transitions.
+    Determinization applies to this lattice.
+    The resulting transducer W2 (Figure 19) is sparser.
+    Recall that it is equivalent to W1, realizing exactly the same function mapping strings to weights.
+    For a given sentence s recognized by WI, there are many different paths with different total weights.
+    W2 contains a path labeled with s and with a total weight equal to the minimum of the weights of the paths of W1.
+    Let us insist on the fact that no pruning, heuristic, or approximation has been used here.
+    The lattice W2 only contains 18 paths.
+    Obviously, the search stage in speech 

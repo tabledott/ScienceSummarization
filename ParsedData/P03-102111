@@ -1,0 +1,8 @@
+ which denote the interval boundaries and a corresponding sequence for the change in error count involved at the corresponding interval boundary Here, denotes the change in the error count at . position to the error count at position .
+    By merging all sequences and for all different sentences of our corpus, the complete set of interval boundaries and error count changes on the whole corpus are obtained.
+    The optimal can now be computed easily by traversing the sequence of interval boundaries while updating an error count.
+    It is straightforward to refine this algorithm to also handle the BLEU and NIST scores instead of sentence-level error counts by accumulating the relevant statistics for computing these scores (n-gram precision, translation length and reference length) .
+  
+  
+    The basic feature functions of our model are identical to the alignment template approach (Och and Ney, 2002).
+    In this translation model, a sentence is translated by segmenting the input sentence into phrases, transla

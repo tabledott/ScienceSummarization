@@ -1,0 +1,9 @@
+onsidered as a backbone.
+    A uniform posteriori probability is assigned to all hypotheses.
+    TER is used as loss function in the MBR computation.
+    Similar to (Rosti et al., 2007), each word in the confusion network is associated with a word posterior probability.
+    Given a system S, each of its hypotheses is assigned with a rank-based score of 1/(1+r)&#951;, where r is the rank of the hypothesis, and &#951; is a rank smoothing parameter.
+    The system specific rank-based score of a word w for a given system S is the sum of all the rank-based scores of the hypotheses in system S that contain the word w at the given position (after hypothesis alignment).
+    This score is then normalized by the sum of the scores of all the alternative words at the same position and from the same system S to generate the system specific word posterior.
+    Then, the total word posterior of w over all systems is a sum of these system specific posteriors weighted by system weights.
+    Beside the word posteriors, we use 

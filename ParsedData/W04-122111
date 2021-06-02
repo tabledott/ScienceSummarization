@@ -1,0 +1,9 @@
+ lexicons contributed to the model identifying these low frequency terms more accurately.
+    Also of note is that, in both experiments, the CRF framework achieves somewhat comparable performance across all entities.
+    In a previous attempt to use a Hidden Markov Model to simultaneously recognize multiple biomedical entities (Collier et al., 2000), HMM performance for a particular entity seemed more or less proportional to its frequency in the data.
+    The advantage of the CRF here may be due to the fact that HMMs are generative models trained to learn the joint probability P(o, l) &#8212; where data for l may be sparse &#8212; and use Bayes rule to predict the best label.
+    CRFs are discriminative models trained to maximize P(l|o) directly.
+  
+  
+    In short, I have presented in detail a framework for recognizing multiple entity classes in biomedical abstracts with Conditional Random Fields.
+    I have shown that a CRF-based model with only simple orthographic features can achieve performance near the 

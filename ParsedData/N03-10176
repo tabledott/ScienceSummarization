@@ -1,0 +1,7 @@
+ Since the future cost estimate is not perfect, this leads to search errors.
+    Our future cost estimate takes into account the estimated phrase translation cost, but not the expected distortion cost.
+    We compute this estimate as follows: For each possible phrase translation anywhere in the sentence (we call it a translation option), we multiply its phrase translation probability with the language model probability for the generated English phrase.
+    As language model probability we use the unigram probability for the first word, the bigram probability for the second, and the trigram probability for all following words.
+    Given the costs for the translation options, we can compute the estimated future cost for any sequence of consecutive foreign words by dynamic programming.
+    Note that this is only possible, since we ignore distortion costs.
+    Since there are only such sequences for a foreign input sentence of length , we can pre-compute these cost estimates beforehand and store them in a table.

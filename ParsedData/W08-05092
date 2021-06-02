@@ -1,0 +1,9 @@
+ is to say that each of these models run for a number of iterations.
+    In each iteration it first calculates the best word alignment for each sentence pairs in the corpus, accumulating various counts, and then normalizes the counts to generate the model parameters for the next iteration.
+    The word alignment stage is the most time-consuming part, especially when the size of training corpus is large.
+    During the aligning stage, all sentences can be aligned independently of each other, as model parameters are only updated after all sentence pairs have been aligned.
+    Making use of this property, the alignment procedure can be parallelized.
+    The basic idea is to have multiple processes or threads aligning portions of corpus independently and then merge the counts and perform normalization.
+    The paper implements two parallelization methods.
+    The PGIZA++ implementation, which is based on (Lin et al, 2006), uses multiple aligning processes.
+    When all the processes finish, a master process start

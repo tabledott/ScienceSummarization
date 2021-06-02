@@ -1,0 +1,9 @@
+ssing anyway.
+    In our model, the trees do not rule out any alignments, but rather softly influence the probability of transitioning between alignment positions.
+    In particular, transition probabilities condition upon paths through the target parse tree, allowing the model to prefer distortions which respect the tree structure.
+    Our model generates word alignments that better respect the parse trees upon which they are conditioned, without sacrificing alignment quality.
+    Using the joint training technique of Liang et al. (2006) to initialize the model parameters, we achieve an AER superior to the GIZA++ implementation of IBM model 4 (Och and Ney, 2003) and a reduction of 56.3% in aligned interior nodes, a measure of agreement between alignments and parses.
+    As a result, our alignments yield more rules, which better match those we would extract had we used manual alignments.
+  
+  
+    In a tree transducer system, as in phrase-based systems, the coverage and generality of the transducer inventory 

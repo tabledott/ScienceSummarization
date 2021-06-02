@@ -1,0 +1,9 @@
+ch iteration, we used the current transliteration model to find a list of 30 best transliteration equivalence classes for each NE.
+    We then computed time sequence similarity score between NE and each class from its list to find the one with the best matching time sequence.
+    If its similarity score surpassed a set threshold, it was added to the list of positive examples for the next round of training.
+    Positive examples were constructed by pairing an NE with the common stem of its transliteration equivalence class.
+    We used the same number of positive and negative examples.
+    We used the Mueller English-Russian dictionary to obtain translations in our multi-word NE experiments.
+    We only considered the first dictionary definition as a candidate.
+    For evaluation, random 727 of the total of 978 NEs were matched to correct transliterations by a language expert (partly due to the fact that some of the English NEs were not mentioned in the Russian side of the corpus).
+    Accuracy was computed as

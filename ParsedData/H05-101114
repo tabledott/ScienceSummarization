@@ -1,0 +1,5 @@
+t.
+			Never theless, we have found a beam-search procedure that seems highly effective in finding good alignments when used with these models.For each sentence pair, we create a list of associa tion types and their corresponding scores, consisting of the associations for which we have determined ascore and for which the words involved in the asso ciation type occur in the sentence pair.3 We sort the resulting list of association types from best to worst according to their scores.
+			Next, we initialize a list of possible alignments with the empty alignment, assigning it a score equalto the number of words in the sentence pair multi plied by the unlinked word weight.
+			We then iterate through our sorted list of association types from best to worst, creating new alignments that add links for all instances of the association type currently beingconsidered to existing alignments, potentially keep ing both the old and new alignments in our set of possible alignments.
+			Without pruning, we would soon be overwhelm

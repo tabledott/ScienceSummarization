@@ -1,0 +1,9 @@
+ 2007; Dyer et al., 2010; Li et al., 2009) perform dynamic programming parametrized by both backward- and forward-looking state.
+    If they knew that the first four words in a hypergraph node would never extend to the left and form a 5-gram, then three or even fewer words could be kept in the backward state.
+    This information is readily available in TRIE where adjacent records with equal pointers indicate no further extension of context is possible.
+    Exposing this information to the decoder will lead to better hypothesis recombination.
+    Generalizing state minimization, the model could also provide explicit bounds on probability for both backward and forward extension.
+    This would result in better rest cost estimation and better pruning.10 In general, tighter, but well factored, integration between the decoder and language model should produce a significant speed improvement.
+  
+  
+    We have described two data structures for language modeling that achieve substantial reductions in time and memor

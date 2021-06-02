@@ -1,0 +1,11 @@
+
+    We now outline the top-down parsing algorithm.
+    This parser is essentially a stochastic version of the top-down parser described in Aho, Sethi, and Ullman (1986).
+    It uses a PCFG with a conditional probability model of the sort defined in the previous section.
+    We will first define candidate analysis (i.e., a partial parse), and then a derives relation between candidate analyses.
+    We will then present the algorithm in terms of this relation.
+    The parser takes an input string 4, a PCFG G, and a priority queue of candidate analyses.
+    A candidate analysis C = (D, 8, PD, F, wn consists of a derivation D, a stack S. a derivation probability PD, a figure of merit F, and a string w7 remaining to be parsed.
+    The first word in the string remaining to be parsed, w1, we will call the look-ahead word.
+    The derivation D consists of a sequence of rules used from G. The stack S contains a sequence of nonterminal symbols, and an end-of-stack marker $ at the bottom.
+    The probability PD is the p

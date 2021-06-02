@@ -1,0 +1,6 @@
+as ADJ and the set of negative seeds as ADJ.
+    We then calculate a modified log-likelihood ratio POS for a word with part of speech POS (&#10018;can be adjective, adverb, noun or verb) as the ratio of its collocation frequency with ADJ and ADJ within a sentence, where Freq&#10007;all POS ADJ represents the collocation frequency of all words&#10007;all of part of speech POS with ADJ and is a smoothing constant ( in our case).
+    We used Brill&#8217;s tagger (Brill, 1995) to obtain part-of-speech information.
+    As our measure of semantic orientation across an entire sentence we used the average per word loglikelihood scores defined in the preceding section.
+    To determine the orientation of an opinion sentence, all that remains is to specify cutoffs and so that sentences for which the average log-likelihood score exceeds are classified as positive opinions, sentences with scores lower than are classified as negative opinions, and sentences with in-between scores are treated as neutral opinions.
+    Optim

@@ -1,0 +1,10 @@
+tions, and the explicit zero-fertility word insertion produced more garbage than expected words.
+    To verify that the pruning was effective, we relaxed the pruning threshold and checked the decoding coverage for the first 92 sentences of the test data.
+    Table 2 shows the result.
+    On the left, the r-table pruning was relaxed from the 95% level to 98% or 100%.
+    On the right, the t-table pruning was relaxed from the top-5 (,) pairs to the top-10 or top-20 pairs.
+    The system r95 and w5 are identical to syn-nozf in Table 1.
+    When r-table pruning was relaxed from 95% to 98%, only about half (47/92) of the test sentences were decoded, others were aborted due to lack of memory.
+    When it was further relaxed to 100% (i.e., no pruning was done), only 20 sentences were decoded.
+    Similarly, when the t-table pruning threshold was relaxed, fewer sentences could be decoded due to the memory limitations.
+    Although our decoder performed better than the if , and LP if , where , , is the system output l

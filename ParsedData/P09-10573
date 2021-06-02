@@ -1,0 +1,6 @@
+ropose a Bayesian LDA-based generative model that in addition to using sparse priors, explicitly groups words into ambiguity classes.
+    They show considerable improvements in tagging accuracy when using a coarser-grained version (with 17-tags) of the tag set from the Penn Treebank.
+    Goldberg et al. (2008) depart from the Bayesian framework and show how EM can be used to learn good POS taggers for Hebrew and English, when provided with good initial conditions.
+    They use language specific information (like word contexts, syntax and morphology) for learning initial P(t|w) distributions and also use linguistic knowledge to apply constraints on the tag sequences allowed by their models (e.g., the tag sequence &#8220;V V&#8221; is disallowed).
+    Also, they make other manual adjustments to reduce noise from the word/tag dictionary (e.g., reducing the number of tags for &#8220;the&#8221; from six to just one).
+    In contrast, we keep all the original dictionary entries derived from the Penn Treebank data f

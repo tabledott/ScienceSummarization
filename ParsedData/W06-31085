@@ -1,0 +1,11 @@
+n be easily integrated into the overall system.
+    The model scaling factors &#955;M1 are trained with respect to the final translation quality measured by an error criterion (Och, 2003).
+    We use a state-of-the-art phrase-based translation system (Zens and Ney, 2004; Zens et al., 2005) including the following models: an n-gram language model, a phrase translation model and a word-based lexicon model.
+    The latter two models are used for both directions: p(f|e) and p(e|f).
+    Additionally, we use a word penalty and a phrase penalty.
+    The reordering model of the baseline system is distancebased, i.e. it assigns costs based on the distance from the end position of a phrase to the start position of the next phrase.
+    This very simple reordering model is widely used, for instance in (Och et al., 1999; Koehn, 2004; Zens et al., 2005).
+  
+  
+    In this section, we will describe the proposed discriminative reordering model.
+    To make use of word level information, we need the word alignment within the 

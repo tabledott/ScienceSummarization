@@ -1,0 +1,12 @@
+eam search that is not (easily) possible with CKY or MST.
+  
+  
+    We first reimplemented the reference shift-reduce parser of Huang et al. (2009) in Python (henceforth &#8220;non-DP&#8221;), and then extended it to do dynamic programing (henceforth &#8220;DP&#8221;).
+    We evaluate their performances on the standard Penn Treebank (PTB) English dependency parsing task7 using the standard split: secs 02-21 for training, 22 for development, and 23 for testing.
+    Both DP and non-DP parsers use the same feature templates in Table 1.
+    For Secs.
+    4.1-4.2, we use abaseline model trained with non-DP for both DP and non-DP, so that we can do a side-by-side comparison of search quality; in Sec.
+    4.3 we will retrain the model with DP and compare it against training with non-DP.
+    To compare parsing speed between DP and nonDP, we run each parser on the development set, varying the beam width b from 2 to 16 (DP) or 64 (non-DP).
+    Fig.
+    5a shows the relationship between search quality (as measured by th

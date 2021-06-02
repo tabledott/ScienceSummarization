@@ -1,0 +1,7 @@
+out probabilities of derivations, strings, and prefixes in terms of the actions performed by Earley's parser.
+    From now on, we will use &amp;quot;derivation&amp;quot; to imply a left-most derivation.
+    Lemma 1 deriving a prefix x0...,_1 of the input. b) There is a one-to-one mapping between partial derivations and Earley paths, such that each production X v applied in a derivation corresponds to a predicted Earley state X &#8212;&gt; .v.
+    (a) is the invariant underlying the correctness and completeness of Earley's algorithm; it can be proved by induction on the length of a derivation (Aho and Ullman 1972, Theorem 4.9).
+    The slightly stronger form (b) follows from (a) and the way possible prediction steps are defined.
+    Since we have established that paths correspond to derivations, it is convenient to associate derivation probabilities directly with paths.
+    The uniqueness condition (b) above, which is irrelevant to the correctness of a standard Earley parser, justifies (probabilistic) counting

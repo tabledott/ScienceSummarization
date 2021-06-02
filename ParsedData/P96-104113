@@ -1,0 +1,9 @@
+ baseline smoothing method, we use an instance of Jelinek-Mercer smoothing where we constrain all Ami-i to be equal to a single value An for We consider two versions of additive smoothing.
+    Referring to equation (2), we fix 6 = 1 in plus-one smoothing.
+    In plus-delta, we consider any b.
+    While the original paper (Katz, 1987) uses a single parameter k, we instead use a different k for each n &gt; 1, kn.
+    We smooth the unigram distribution using additive smoothing with parameter b.
+    (church-gale) To smooth the counts 72, needed for the GoodTuring estimate, we use the technique described by Gale and Sampson (1995).
+    We smooth the unigram distribution using Good-Turing without any bucketing.
+    Instead of the bucketing scheme described in the original paper, we use a scheme analogous to the one described by Bahl, Jelinek, and Mercer (1983).
+    We make the assumption that whether a bucket is large enough for accurate Good-Turing estimation depends on how many n-grams with non-zero counts occur 

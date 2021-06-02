@@ -1,0 +1,10 @@
+   Thus, to decide whether to retain a word as a PSE, we consider the precision not of the individual word, but of the word together with a cluster of words similar to it.
+    Many variants of distributional similarity have been used in NLP (Lee 1999; Lee and Pereira 1999).
+    Dekang Lin&#8217;s (1998) method is used here.
+    In contrast to many implementations, which focus exclusively on verb-noun relationships, Lin&#8217;s method incorporates a variety of syntactic relations.
+    This is important for subjectivity recognition, because PSEs are not limited to verb-noun relationships.
+    In addition, Lin&#8217;s results are freely available.
+    A set of seed words begins the process.
+    For each seed si, the precision of the set {si}UCi,n in the training data is calculated, where Ci,n is the set of n words most similar to si, according to Lin&#8217;s (1998) method.
+    If the precision of {si} U Ci,n is greater than a threshold T, then the words in this set are retained as PSEs.
+    If it is not, neither

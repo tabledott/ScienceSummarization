@@ -1,0 +1,14 @@
+penalty of ??
+			for each non-consecutive n-gram sequences.
+			Another possible function family is the polynomial family of the form k?
+			where -?
+			&gt; 1.
+			However, in order to normalize the final ROUGE-W score, we also prefer to have a function that has a close form inverse function.
+			For example, f(k)-=-k2 has a close form inverse function f -1(k)-=-k1/2.
+			F-measure based on WLCS can be computed as follows, given two sequences X of length m and Y of length n: Rwlcs ???
+			= ? )( ),(1 mf YXWLCSf (4) Pwlcs ???
+			= ? )( ),(1 nf YXWLCSf (5) Fwlcs wlcswlcs wlcswlcs PR PR 2 2 )1( ? ?
+			+ + = (6) f -1 is the inverse function of f. We call the WLCS-based F-measure, i.e. Equation 6, ROUGE W. Using Equation 6 and f(k)-=-k2 as the weighting function, the ROUGE-W scores for sequences Y1 and Y2 are 0.571 and 0.286 respectively.
+			Therefore, Y1 would be ranked higher than Y2 using WLCS.
+			We use the polynomial function of the form k?
+			in the experiments described in Section 4 with the weighting factor ? v

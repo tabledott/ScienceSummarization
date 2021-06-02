@@ -1,0 +1,8 @@
+ypes.
+    The first type of association will provide us with our (cleaner) lexicon, while the second will allow us to estimate probabilities of words not being translations of each other.
+    Before describing our new method more formally, we address the notion of word cooccurrence.
+    In the work of Moore (2004a) and Melamed (2000), two words cooccur if they are present in a pair of aligned sentences in the parallel training corpus.
+    However, most of the words from aligned sentences are actually unrelated; therefore, this is a rather weak notion of cooccurrence.
+    We follow Resnik et. al (2001) and adopt a stronger definition, based not on sentence alignment but on word alignment: two words cooccur if they are linked together in the word-aligned parallel training corpus.
+    We thus make use of the significant amount of knowledge brought in by the word alignment procedure.
+    We compute ,the LLR score for words and , using the formula presented by Moore (2004b), which we do not repeat here due to lack

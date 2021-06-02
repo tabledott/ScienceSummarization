@@ -1,0 +1,10 @@
+ be extracted as target units.
+    However, when a certain application is given, only the source and target units that can achieve the application will be kept.
+    We call this process paraphrase planning, which is formally defined as in Figure 2.
+    An example is depicted in Figure 3.
+    The application in this example is sentence compression.
+    All source and target units are listed below the input sentence, in which the first two source units are phrases, while the third and fourth are a pattern and a collocation, respectively.
+    As can be seen, the first and fourth source units are filtered in paraphrase planning, since none of their paraphrases achieve the application (i.e., shorter in bytes than the source).
+    The second and third source units are kept, but some of their paraphrases are filtered.
+    Our SPG model contains three sub-models: a paraphrase model, a language model, and a usability model, which control the adequacy, fluency, and usability of the paraphrases, respectively1.
+    Parap

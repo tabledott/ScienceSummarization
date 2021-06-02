@@ -1,0 +1,9 @@
+ the words in the vocabulary.
+    Intermediate nodes of the tree correspond to groupings of words intermediate between single words and the entire vocabulary.
+    Words that are statistically similar with respect to their immediate neighbors in running text will be close together in the tree.
+    We have applied this tree-building algorithm to vocabularies of up to 5,000 words.
+    Figure 2 shows some of the substructures in a tree constructed in this manner for the 1,000 most frequent words in a collection of office correspondence.
+    Beyond 5,000 words this algorithm also fails of practicality.
+    To obtain clusters for larger vocabularies, we proceed as follows.
+    We arrange the words in the vocabulary in order of frequency with the most frequent words first and assign each of the first C words to its own, distinct class.
+    At the first step of the algorithm, we assign the (C + 1)st most probable word to a new class and merge that pair among the resulting C + 1 classes for which the loss in average m

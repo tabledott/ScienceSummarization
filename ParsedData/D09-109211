@@ -1,0 +1,6 @@
+osterior topic probability for that tuple will be near to 1.0.
+    If the model assigns topics uniformly, the maximum topic probability will be near 1/T.
+    We compute histograms of these maximum topic probabilities for T &#8712; {50,100, 200, 400, 800}.
+    For clarity, rather than overlaying five histograms, figure 3 shows the histograms converted into smooth curves using a kernel density estimator.1 Although there is a small bump around 1.0 (for extremely short documents, e.g., &#8220;Applause&#8221;), values are generally closer to, but greater than, 1/T.
+    Maximum topic probability in document Although the posterior distribution over topics for each tuple is not concentrated on one topic, it is worth checking that this is not simply because the model is assigning a single topic to the 1We use the R density function. tokens in each of the languages.
+    Although the model does not distinguish between topic assignment variables within a given document tuple (so it is technically incorrect to speak of di

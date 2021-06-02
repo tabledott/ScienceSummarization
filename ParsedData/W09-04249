@@ -1,0 +1,8 @@
+ backoff n-gram models, and thus the decoder can be used independently from the SRILM toolkit.3 We also provide a native code bridge that allows the decoder to use the SRILM toolkit to read and score n-grams.
+    This native implementation is more scalable than the basic Java LM implementation.
+    We have also implemented a Bloom Filter LM in Joshua, following Talbot and Osborne (2007).
+    Johsua&#8217;s MERT module optimizes parameter weights so as to maximize performance on a development set as measuered by an automatic evaluation metric, such as Bleu.
+    The optimization consists of a series of line-optimizations along the dimensions corresponding to the parameters.
+    The search across a dimension uses the efficient method of Och (2003).
+    Each iteration of our MERT implementation consists of multiple weight updates, each reflecting a greedy selection of the dimension giving the most gain.
+    Each iteration also optimizes several random &#8220;intermediate initial&#8221; points in addition to the o

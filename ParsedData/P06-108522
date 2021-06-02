@@ -1,0 +1,10 @@
+pt (w&#8722;i) notation in all cases.
+    The base distribution shared by all bigrams is given by P1, which can be viewed as a unigram backoff where the unigram probabilities are learned from the bigram table labels.
+    We can perform inference on this HDP bigram model using a Gibbs sampler similar to our unigram sampler.
+    Details appear in the Appendix.
+    We used the same basic setup for our experiments with the HDP model as we used for the DP model.
+    We experimented with different values of &#945;0 and &#945;1, keeping p# = .5 throughout.
+    Some results of these experiments are plotted in Figure 5.
+    With appropriate parameter settings, both lexicon and token accuracy are higher than in the unigram model (dramatically so, for tokens), and there is no longer a negative correlation between the two.
+    Only a few collocations remain in the lexicon, and most lexicon errors are on low-frequency words.
+    The best values of &#945;0 are much larger than in the unigram model, presumably because all u

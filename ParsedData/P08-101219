@@ -1,0 +1,12 @@
+n number of iterations.
+    In the end, a Viterbi pass for the phrasal ITG is executed to produce the non-compositional phrasal alignments.
+    From this alignment, phrase pairs are extracted in the usual manner, and a phrase-based translation system is trained.
+    AER
+  
+  
+    The training data was a subset of 175K sentence pairs from the NIST Chinese-English training data, automatically selected to maximize character-level overlap with the source side of the test data.
+    We put a length limit of 35 on both sides, producing a training set of 141K sentence pairs.
+    500 Chinese-English pairs from this set were manually aligned and used as a gold standard.
+    First, using evaluations of alignment quality, we demonstrate the effectiveness of VB over EM, and explore the effect of the prior.
+    Figure 4 examines the difference between EM and VB with varying sparse priors for the word-based model of ITG on the 500 sentence pairs, both after 10 iterations of training.
+    Using EM, because of overfitting, AE

@@ -1,0 +1,10 @@
+consumed in sequence and the Arabic word positions serving as states in the search process.
+			Inorder to take advantage of the transition model de scribed above, a large beam must be maintained.
+			To see this, note that English words often repeat in a sentence and the models will tend to link the wordto all Arabic positions which have the same Ara bic content.
+			In traditional algorithms, the Markov assumption is made and hypothesis are merged if they have the same history in the previous time step.
+			However, here we maintain all hypotheses and merge only if the paths are same for 30 words which is the average sentence length.
+	
+	
+			We have word aligned a portion of the Arabic Tree bank (4300 sentences) and material from the LDC news sources (LDC, 2005) to obtain a total of 10.3K sentence pairs for training.
+			As a test of alignment, we use the first 50 sentences of the MT03 Evaluationtest set which has 1313 Arabic words and 1528 En glish words 2.
+			In terms of annotation guidelines, we use the follow

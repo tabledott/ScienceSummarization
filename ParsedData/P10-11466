@@ -1,0 +1,9 @@
+side of a rule.
+    We might think of it as effectively restructuring the trees by inserting nodes with complex labels.
+    However, it is not possible to represent this restructuring with a single tree (see Figure 4).
+    More formally, let us say that two phrases wi &#183; &#183; &#183; wj&#8722;1 and wi&#8242; &#183; &#183; &#183; wj&#8242;&#8722;1 nest if i &lt; i&#8242; &lt; j&#8242; &lt; j or i&#8242; &lt; i &lt; j &lt; j&#8242;; otherwise, they cross.
+    The two Chinese phrases (4) and (5) cross, and therefore cannot both be constituents in the same tree.
+    In other words, exact tree-to-tree extraction commits to a single structural analysis but fuzzy tree-to-tree extraction pursues many restructured analyses at once.
+    We can strike a compromise by continuing to allow SAMT-style complex categories, but committing to a single analysis by requiring all phrases to nest.
+    To do this, we use a simple heuristic.
+    Iterate through all the phrase pairs (f, e) in the following order: For each phrase 

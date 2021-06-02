@@ -1,0 +1,7 @@
+named entity or not) as a token.
+    Two tries are used for context (left and right) and two for internal morphological patterns of tokens.
+    Figure 1 shows an example of a morphological prefix trie, which stores the characters of tokens from left to right from given starting points (with optional word boundaries indicated by &amp;quot;#&amp;quot;).
+    Suffix tries (typically more informative) have equivalent structure but reversed direction.
+    The left and right context tries have the same structure as well, but the list of links refers now to the tokens which have the particular context represented by the path from the root to the current node.
+    For right context, the letters are introduced in the trie in normal order, for left context they are considered in the reversed order (in our example, &amp;quot;Anda&amp;quot; has as left context &amp;quot;dna#xela#&amp;quot;).
+    Similarly, nodes of the context tries contain links to the tokens that occurred in the particular contexts defined by the paths.

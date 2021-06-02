@@ -1,0 +1,11 @@
+nificantly different.
+    From the resulting corpus, we automatically replace translations.
+    In addition, only sentences with less than 60 words in English and Chinese are used.
+    To improve the translation of Chinese numbers, we use a categorization of Chinese number and date expressions.
+    For the statistical learning, all number and date expressions are replaced with one of two generic symbols, $number or $date.
+    The number and date expressions are subjected to a rule-based translation by simple lexicon lookup.
+    The translation of the number and date expressions is inserted into the output using the alignment information.
+    For Chinese and English, this categorization is implemented independently of the other language.
+    To evaluate MT quality on this task, NIST made available the NIST-09 evaluation tool.
+    This tool provides a modified BLEU score by computing a weighted precision of n-grams modified by a length penalty for very short translations.
+    Table 12 shows the results of the o

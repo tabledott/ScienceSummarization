@@ -1,0 +1,8 @@
+ two binary indicator features: O(p,a,i) for the predicate-argument relation; and O(p,T(a),i) for the predicate argument-type relation.
+    Initialization The weights for the semantic features are initialized to zero.
+    The weights for the lexical features are initialized according to coocurrance statistics estimated with the Giza++ (Och &amp; Ney, 2003) implementation of IBM Model 1.
+    We compute translation scores for (word, constant) pairs that cooccur in examples in the training data.
+    The initial weight for each OL is set to ten times the average score over the (word, constant) pairs in L, except for the weights of seed lexical entries in ANP which are set to 10 (equivalent to the highest possible coocurrence score).
+    We used the learning rate &#945;0 = 1.0 and cooling rate c = 10&#8722;5 in all training scenarios, and ran the algorithm for T = 20 iterations.
+    These values were selected with cross validation on the Geo880 development set, described below.
+    Data and Evaluation We evaluate 

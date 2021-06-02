@@ -1,0 +1,6 @@
+ phrase pair into two smaller phrase pairs on the right-hand side and order them according to one of the two possible permutations.
+    The rewriting process continues until the third rule is invoked.
+    C is our unique pre-terminal for generating terminal multi-word pairs: We parameterize our probabilistic model in the manner of a PCFG: we associate a multinomial distribution with each nonterminal, where each outcome in this distribution corresponds to an expansion of that nonterminal.
+    Specifically, we place one multinomial distribution &#952;X over the three expansions of the nonterminal X, and another multinomial distribution &#952;C over the expansions of C. Thus, the parameters in our model can be listed as where Phi is for the inverted rule, PD for the straight rule, PC for the third rule, satisfying Phi+PD+PC = 1, and where &amp;/f P(e/f) = 1 is a multinomial distribution over phrase pairs.
+    This is our model in a nutshell.
+    We can train this model using a two-dimensional extension of the in

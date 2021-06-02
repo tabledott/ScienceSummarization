@@ -1,0 +1,11 @@
+erent runs, therefore the algorithm outputs different results after each run, even if the evaluation set is fixed, as is the case for the Senseval evaluation.
+    The variance in the results on the SE3 data was measured in this way.
+    The first sense baseline is the supersense of the most frequent synset for a word, according to Wordnet&#8217;s sense ranking.
+    This baseline is very competitive in WSD tasks, and it is extremely hard to improve upon even slightly.
+    In fact, the baseline has been proposed as a good alternative to WSD altogether (cf.
+    (McCarthy et al., 2004)).
+    For this reason we include the first sense prediction as one of the features of our tagging model.
+    We apply the heuristic as follows.
+    First, in each sentence, we identify the longest sequence which has an entry in Wordnet as either noun or verb.
+    We carry out this step using the Wordnet&#8217;s library functions, which perform also morphological simplification.
+    Hence, in Example 1 the entry &#8220;stand up&#822

@@ -1,0 +1,7 @@
+ing is O(n) in the worst case (as well as in the best case).
+    We now consider what happens when we add the fourth transition from Figure 2 to get the extended transition set T,.
+    The SWAP transition updates a configuration with stack [aJi, j] by moving the node i back to the buffer.
+    This has the effect that the order of the nodes i and j in the appended list E+B is reversed compared to the original word order in the sentence.
+    It is important to note that SWAP is only permissible when the two nodes on top of the stack are in the original word order, which prevents the same two nodes from being swapped more than once, and when the leftmost node i is distinct from the root node 0.
+    Note also that SWAP moves the node i back to the buffer, so that LEFT-ARCl, RIGHT-ARCl or SWAP can subsequently apply with the node j on top of the stack.
+    The fact that we can swap the order of nodes, implicitly representing subtrees, means that we can construct non-projective trees by applying to denote the subse

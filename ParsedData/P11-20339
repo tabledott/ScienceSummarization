@@ -1,0 +1,8 @@
+s using the Penn2Malt tool.2 Following Huang and Sagae (2010), we assign POS-tags to the training data using ten-way jackknifing.
+    We used our implementation of the Collins (2002) tagger (with 97.3% accuracy on a standard Penn Treebank test) to perform POS-tagging.
+    For all experiments, we set the beam size to 64 for the parser, and report unlabeled and labeled attachment scores (UAS, LAS) and unlabeled exact match (UEM) for evaluation.
+    Table 3 shows the effect of new features on the development test data for English.
+    We start with the baseline features in Table 1, and incrementally add the distance, valency, unigram, third-order and label set feature templates in Table 2.
+    Each group of new feature templates improved the accuracies over the previous system, and the final accuracy with all new features was 93.14% in unlabeled attachment score.
+    Table 4 shows the final test results of our parser for English.
+    We include in the table results from the pure transition-based parser of Zhang 

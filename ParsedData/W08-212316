@@ -1,0 +1,10 @@
+ The baseline system consists of the SRL pipeline only (P).
+  Adding lin- guistic constraints (C) results in a more precision- oriented system with slightly lower recall, but sig- nificantly higher F1.
+  Even higher performance is obtained when adding the global SRL model (G).
+  System P R F1 P 80.74 77.98 79.33 P+C 82.42 77.66 79.97 P+C+G 83.64 78.14 80.40 Table 6: SRL results on the top-scoring parse trees.
+  5.3 Syntactic?Semantic Integration The final experiment concerned the integration of syntactic and semantic analysis.
+  In this setting, the system chooses the output that maximizes the joint syntactic?semantic score, based on the top N syntactic trees.
+  Table 7 shows the results on the development set.
+  We see that syntactic?semantic integration improves both syntactic accuracy and semantic F1.
+  This holds for the constraint-based SRL system as well as for the full system.
+  Sem model N Syn acc Sem F1 Macro F1 P+C 1 88.33 79.97 84.17 P+C 16 88.42 80.42 84.44 P+C+G 1 88.33 80.40 84.39 P+C+G 16 88.47

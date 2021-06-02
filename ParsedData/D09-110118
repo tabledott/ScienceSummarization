@@ -1,0 +1,8 @@
+oted before, a ranking model imposes a ranking on all the candidate antecedents of an active mention mk.
+    To train a ranker, we use the SVM ranker-learning algorithm from the SVMlZght package.
+    Like the mention-pair model, each training instance i(mj, mk) represents mk and a preceding mention mj.
+    In fact, the features that represent the instance as well as the method for creating training instances are identical to those employed by the mention-pair model.
+    The only difference lies in the assignment of class values to training instances.
+    Assuming that Sk is the set of training instances created for anaphoric mention mk, the class value for an instance i(mj, mk) in Sk is the rank of mj among competing candidate antecedents, which is 2 if mj is the closest antecedent of mk, and 1 otherwise.1 To exemplify, consider our running example.
+    As in the mention-pair model, three training instances will be generated for He: i(Monday, He), i(secretary of state, He), i(his, He).
+    The third instance 

@@ -1,0 +1,9 @@
+nduces a feature space where each dimension corresponds to a sequence of words.
+    Any such sequence that matches a subsequence of words in a sentence example is down-weighted as a function of the total length of the gaps between every two consecutive words.
+    More exactly, let s = w1w2 ... wk be a sequence of k words, and s&#65533; = w1 g1 w2 g2 .
+    .
+    . wk&#8722;1 gk&#8722;1 wk a matching subsequence in a relation example, where gi stands for any sequence of words between wi and wi+1.
+    Then the sequence s will be represented in the relation example as a feature with weight computed as &#964;(s) = &#955;gP).
+    The parameter &#955; controls the magnitude of the gap penalty, where g(s) = Ei |gi |is the total gap.
+    Many relations, like the ones that we explore in the experimental evaluation, cannot be expressed without using at least one content word.
+    We therefore modified the kernel computation to optionally ignore subsequence patterns formed exclusively of stop words and punctuation signs.

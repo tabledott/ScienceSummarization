@@ -1,0 +1,10 @@
+ical relations among nouns, verbs, and adjectives.
+    The acquired selectional preferences are then applied to the noun-verb and noun-adjective pairs in these grammatical constructions for disambiguation.
+    The overall structure of the system is illustrated in Figure 1.
+    We describe the individual components in sections 3.1&#8211;3.3 and 4.
+    The preprocessor consists of three modules applied in sequence: a tokenizer, a partof-speech (POS) tagger, and a lemmatizer.
+    The tokenizer comprises a small set of manually developed finite-state rules for identifying word and sentence boundaries.
+    The tagger (Elworthy 1994) uses a bigram hidden Markov model augmented with a statistical unknown word guesser.
+    When applied to the training data for selectional preference acquisition, it produces the single highest-ranked POS tag for each word.
+    In the run-time phase, it returns multiple tag hypotheses, each with an associated forward-backward probability to reduce the impact of tagging errors.
+    The 

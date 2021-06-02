@@ -1,0 +1,6 @@
+generalized hypernymancestor relation over words P(Hij|EHij ).
+    For the purposes of taxonomy induction, we would prefer an ancestor-distance specific set of classifiers over senses, i.e., for k E senses(i), l E senses(j), the set of classifiers estimating {P(H&#65533; kl|EH ij ), P(Hkl|EHij ), ... }.
+    One problem that arises from directly assigning the probability P(Hn ij|EH ij ) a P(Hij|EHij ) for all n is the possibility of adding a novel hyponym to an overly-specific hypernym, which might still satisfy P(Hn ij|EH ij ) for a very large n. In order to discourage unnecessary overspecification, we penalize each probability P(Hk ij|EH ij ) by a factor Ak&#8722;1 for some A &lt; 1, and renormalize: P(Hkij|EHij ) a Ak&#8722;1P(Hij|EHij ).
+    In our experiments we set A = 0.95.
+    The classifier for learning coordinate terms relies on the notion of distributional similarity, i.e., the idea that two words with similar meanings will be used in similar contexts (Hindle, 1990).
+    We extend this notion to sug

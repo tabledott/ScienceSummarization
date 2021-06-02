@@ -1,0 +1,8 @@
+ased models.
+    If we do not put any constraint on the distribution of phrases, EM overfits the data by memorizing every sentence pair.
+    A sparse prior over a multinomial distribution such as the distribution of phrase pairs may bias the estimator toward skewed distributions that generalize better.
+    In the context of phrasal models, this means learning the more representative phrases in the space of all possible phrases.
+    The Dirichlet distribution, which is parameterized by a vector of real values often interpreted as pseudo-counts, is a natural choice for the prior, for two main reasons.
+    First, the Dirichlet is conjugate to the multinomial distribution, meaning that if we select a Dirichlet prior and a multinomial likelihood function, the posterior distribution will again be a Dirichlet.
+    This makes parameter estimation quite simple.
+    Second, Dirichlet distributions with small, non-zero parameters place more probability mass on multinomials on the edges or faces of the probability simple

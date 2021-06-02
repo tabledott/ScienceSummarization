@@ -1,0 +1,6 @@
+73-sentence development set of stories from the TIPSTER corpus.
+    The intuition is that, when removing constituents from a parse tree, it&#8217;s best to remove smaller portions during each iteration, to avoid producing trees with undesirably few words.
+    PPs tend to represent small parts of the tree while SBARs represent large parts of the tree.
+    Thus we try to reach the threshold by removing small constituents, but if we can&#8217;t reach the threshold that way, we restore the small constituents, remove a large constituent and resume the deletion of small constituents.
+    The impact of these two types of shortening can be seen in the following examples: Parse: [S More oil-covered sea birds were found [PP over the weekend]] Output of PP Removal: More oil-covered sea birds were found.
+    Parse: [S Visiting China Interpol chief expressed confidence in Hong Kong&#8217;s smooth transition [SBAR while assuring closer cooperation after Hong Kong returns]] Output of SBAR Removal: Visiting China Interpol ch

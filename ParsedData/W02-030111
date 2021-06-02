@@ -1,0 +1,8 @@
+he output is the class with the maximum votes.
+    Because the SVM training is a quadratic optimization program, its cost is super-linear to the size of the training samples even with the tailored techniques such as SMO (Platt, 1998) and kernel evaluation caching (Joachims, 1998).
+    Let L be the number of the training samples, then the one-vs-rest method takes time in K &#215; OSVM(L).
+    The BIO formulation produces one training sample per word, and the training with the GENIA corpus involves over 100,000 training samples as can be seen from Table 1.
+    Therefore, it is apparent that the one-vsrest method is impractical with the GENIA corpus.
+    On the other hand, if target classes are equally distributed, the pairwise method will take time in K(K&#8722; 1)/2 &#215; OS VM(2L/K).
+    This method is worthwhile because each training is much faster, though it requires the training of (K &#8722; 1)/2 times more classifiers.
+    It is also reported that the pairwise method achieves higher accuracy than other 

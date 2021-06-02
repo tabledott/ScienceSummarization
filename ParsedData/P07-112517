@@ -1,0 +1,8 @@
+lised (unit length) input vectors to represent each sentence, as this resulted in better performance than using frequency-based weights and concords with our presence/absence feature estimates.
+    The learning model we have presented requires a set of seeds for each class.
+    To generate seeds for the spec class, we extracted all sentences from U containing either (or both) of the terms suggest or likely, as these are very good (though not perfect) hedge cues, yielding 6423 spec seeds.
+    Generating seeds for nspec is much more difficult, as integrity requires the absence of hedge cues, and this cannot be done automatically.
+    Thus, we used the following procedure to obtain a set of nspec seeds: We started with 8830 sentences and after a couple of hours work reduced this down to a (still potentially noisy) nspec seed set of 7541 sentences.
+  
+  
+    As a baseline classifier we use the substring matching technique of (Light et al., 2004), which labels a sentence as spec if it contains one or more of the f

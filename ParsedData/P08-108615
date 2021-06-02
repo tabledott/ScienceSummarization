@@ -1,0 +1,7 @@
+ the size of the full vocabulary is a good balance in this trade-off.
+    We did not observe the algorithm to not converge unless we used fractions above half of the vocabulary size.
+    We typically ran the clustering for 20 to 30 iterations after which the number of words exchanged in each iteration starts to stabilize at less than 5 percent of the vocabulary size.
+    Figure 1 shows the number of words exchanged in each of 34 iterations when clustering the approximately 300,000 word vocabulary of the Arabic side of the English-Arabic parallel training data into 512 and 2,048 clusters.
+    Despite a steady reduction in the number of words exchanged per iteration, we observed the convergence in regards to log-likelihood to be far from monotone.
+    In our experiments we were able to achieve significantly more monotone and faster convergence by employing the following heuristic.
+    As described in Section 5, we start out the first iteration with a random partition of the vocabulary into subsets each assigned

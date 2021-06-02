@@ -1,0 +1,8 @@
+.g., &#8220;++&#8221; for two consecutive positively oriented words).
+    We also include the counts of parts of speech combined with polarity information (e.g., &#8220;JJ+&#8221; for positive adjectives), as well as features encoding the polarity (if any) of the head verb, the main subject, and their immediate modifiers.
+    Syntactic structure was obtained with Charniak&#8217;s statistical parser (Charniak, 2000).
+    Finally, we used as one of the features the average semantic orientation score of the words in the sentence.
+    Our designation of all sentences in opinion or factual articles as opinion or fact sentences is an approximation.
+    To address this, we apply an algorithm using multiple classifiers, each relying on a different subset of our features.
+    The goal is to reduce the training set to the sentences that are most likely to be correctly labeled, thus boosting classification accuracy.
+    Given separate sets of features , we train separate Naive Bayes classifiers , corresponding to each f

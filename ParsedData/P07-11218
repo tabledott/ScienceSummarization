@@ -1,0 +1,9 @@
+erminals in the parent node gives the A-function Ax1.smallest(x2,(state(x1),area(x1,x2))).
+    Applying this A-function to (x1) gives the MR string smallest(x2,(state(x1),area(x1,x2))).
+    Substituting this MR string for the FORM nonterminal in the grandparent node in turn gives the logical form in Figure 1(a).
+    This is the yield of the MR parse tree, since the root node of the parse tree is reached.
+    Given a set of training sentences paired with their correct logical forms, {(ei, fi)}, the main learning task is to find a A-SCFG, G, that covers the training data.
+    Like most existing work on syntax-based SMT (Chiang, 2005; Galley et al., 2006), we construct G using rules extracted from word alignments.
+    We use the K = 5 most probable word alignments for the training set given by GIZA++ (Och and Ney, 2003), with variable names ignored to reduce sparsity.
+    Rules are then extracted from each word alignment as follows.
+    To ground our discussion, we use the word alignment in Figure 4 as an exampl

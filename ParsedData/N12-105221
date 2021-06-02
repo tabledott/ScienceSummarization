@@ -1,0 +1,6 @@
+ized baseline model of McDonald et al. (2011), which only has features derived from universal part-of-speech tags, projected from English with the method of Das and Petrov (2011), to the same model when adding features derived from cross-lingual clusters.
+    In both cases the feature models are the same as those used in Section 3.1, except that they are delexicalized by removing all lexical word-identity features.
+    We evaluate both the PROJECTED CLUSTERS and the X-LINGUAL CLUSTERS.
+    For these experiments we train the perceptron for only five epochs in order to prevent over-fitting, which is an acute problem due to the divergence between the training and testing data sets in this setting.
+    Furthermore, in accordance to standard practices we only evaluate unlabeled attachment score (UAS) due to the fact that each treebank uses a different &#8211; possibly non-overlapping &#8211; label set.
+    In our second set of experiments, we evaluate direct transfer of a NER system trained on EN to DE, ES and NL.

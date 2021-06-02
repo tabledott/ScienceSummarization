@@ -1,0 +1,18 @@
+d to cross if one of k, E is strictly between i and j while the other is strictly outside that range.)
+    EXACTLY1.
+    A family of O(n) hard global constraints, indexed by 1 &lt; j &lt; n. EXACTLY1j requires that j have exactly one parent, i.e., exactly one of the Lij variables must be true.
+    Note that EXACTLY1 is implied by TREE or PTREE.
+    ATMOST1.
+    A weaker version.
+    ATMOST1j requires j to have one or zero parents.
+    NAND.
+    A family of hard binary constraints.
+    NANDij,kt requires that Lij and Lkt may not both be true.
+    We will be interested in certain subfamilies.
+    NOT2.
+    Shorthand for the family of O(n3) binary constraints {NANDij,kj}.
+    These are collectively equivalent to ATMOST1, but expressed via a larger number of simpler constraints, which can make the BP approximation less effective (footnote 30).
+    NO2CYCLE.
+    Shorthand for the family of O(n2) binary constraints {NANDij,ji}.
+    A soft factor Fm acts as a soft constraint that prefers some parses to others.
+    I

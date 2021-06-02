@@ -1,0 +1,10 @@
+this gradient moves the model toward likely derivations, and away from likely derivations that incur high costs.
+  
+  
+    We have reviewed three tuning methods, all of which address MERT&#8217;s weakness with large features by using surrogate loss functions.
+    Additionally, MIRA has the following advantages over PRO and MR: Both of these advantages come at a cost: operating on the true &#163;i sacrifices easy parallelization, while using a fluid pseudo-corpus creates an unstable learning objective.
+    We develop two large-margin tuners that explore these trade-offs.
+    Online training makes it possible to learn with the decoder in the loop, forgoing the need to approximate the search space, but it is not necessarily convenient to do so.
+    Online algorithms are notoriously difficult to parallelize, as they assume each example is visited in sequence.
+    Parallelization is important for efficient SMT tuning, as decoding is still relatively expensive.
+    The parallel online updates suggested by Chiang et

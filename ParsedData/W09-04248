@@ -1,0 +1,9 @@
+s with large target-language vocabularies.
+    In our decoder, we incorporate two pruning techniques: beam and cube pruning (Chiang, 2007).
+    Hypergraphs and k-best extraction: For each source-language sentence, the chart-parsing algorithm produces a hypergraph, which represents an exponential set of likely derivation hypotheses.
+    Using the k-best extraction algorithm (Huang and Chiang, 2005), we extract the k most likely derivations from the hypergraph.
+    Parallel and distributed decoding: We also implement parallel decoding and a distributed language model by exploiting multi-core and multi-processor architectures and distributed computing techniques.
+    More details on these two features are provided by Li and Khudanpur (2008b).
+    In addition to the distributed LM mentioned above, we implement three local n-gram language models.
+    Specifically, we first provide a straightforward implementation of the n-gram scoring function in Java.
+    This Java implementation is able to read the standard ARPA

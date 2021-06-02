@@ -1,0 +1,9 @@
+ordering sub-model that is often used in SMT.
+    Instead, we use the paraphrase patterns to achieve word reordering in paraphrase generation. we find that about 2% of the paraphrase units appear in two or more PTs.
+    In this case, we only count the PT that provides the largest paraphrase score, i.e., k&#710; = arg maxk{&#966;k(&#175;si, &#175;ti)&#955;k}.
+    In addition, note that there may be some units that cannot be paraphrased or prefer to keep unchanged during paraphrasing.
+    Therefore, we have a self-paraphrase table in the K PTs, which paraphrases any separate word w into itself with a constant score c: &#966;self(w, w) = c (we set c = e&#8722;1).
+    Language Model: We use a tri-gram language model in this work.
+    The language model based score for the paraphrase t is computed as: where J is the length of t, tj is the j-th word of t, and &#955;lm is the weight for the language model.
+    Usability Model: The usability model prefers paraphrase units that can better achieve the application.
+    

@@ -1,0 +1,11 @@
+andidate model for coreference resolution is to recast the resolution as a binary classification problem.
+    During training, a set of training instances is generated for each anaphor in an annotated text.
+    An instance is formed by the anaphor and one of its antecedent candidates.
+    It is labeled as positive or negative based on whether or not the candidate is tagged in the same coreferential chain of the anaphor.
+    After training, a classifier is ready to resolve the NPs1 encountered in a new document.
+    For each NP under consideration, every one of its antecedent candidates is paired with it to form a test instance.
+    The classifier returns a number between 0 and 1 that indicates the likelihood that the candidate is coreferential to the NP.
+    The returned confidence value is commonly used as the competition criterion to rank the candidate.
+    Normally, the candidates with confidences less than a selection threshold (e.g.
+    0.5) are discarded.
+    Then some algorithms are applied to choose o

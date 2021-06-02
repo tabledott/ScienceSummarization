@@ -1,0 +1,5 @@
+ssible moment, that is, in the first configuration where i and j are the target tokens.
+    For the arc-standard stack-based parser, this is still true for left dependents (i.e., arcs (i,l, j) such that j &lt; i) but not for right dependents, where an arc (i,l, j) (i &lt; j) should be added only at the point where all arcs of the form (j, l', k) have already been added (i.e., when the dependent j has already found all its dependents).
+    This explains why the results for the two list-based parsers and the arc-eager stackbased parser are so well correlated, but it does not explain why the arc-standard strategy works better for some languages but not for others.
+    The arc-eager strategy has an advantage in that a right dependent j can be attached to its head i at any time without having to decide whether j itself should have a right dependent.
+    By contrast, with the arc-standard strategy it is necessary to decide not only whether j is a right dependent of i but also whether it should be added now or later

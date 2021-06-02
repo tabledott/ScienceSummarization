@@ -1,0 +1,8 @@
+elational triples in the form (R, A1, A2), where R is the relation string, and A1, A2 the argument strings.
+    Given a triple and a question, we first match their relation strings, and then match the strings for the argument that is present in the question.
+    If both match, we return the other argument string in the triple as an answer.
+    We report results when exact match is used (TR-EXACT), or when the triple string can contain the question one as a substring (TR-SUB).
+    RESOLVER: RESOLVER (Yates and Etzioni, 2009) inputs TextRunner triples and collectively resolves coreferent relation and argument strings.
+    On the GENIA data, using the default parameters, RESOLVER produces only a few trivial relation clusters and no argument clusters.
+    This is not surprising, since RESOLVER assumes high redundancy in the data, and will discard any strings with fewer than 25 extractions.
+    For a fair comparison, we also ran RESOLVER using all extractions, and manually tuned the parameters based on eyeballing 

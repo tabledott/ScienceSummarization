@@ -1,0 +1,8 @@
+ used in all of these experiments, as well in the experiments of (PS92, SR093).)
+    When parsing free text, we cannot assume that the text will be tagged with the accuracy of a human annotator.
+    Instead, an automatic tagger would have to be used to first tag the text before parsing.
+    To address this issue, we ran one experiment where we randomly induced a 5% tagging error rate beyond the error rate of the human annotator.
+    Errors were induced in such a way as to preserve the unigram part of speech tag probability distribution in the corpus.
+    The experiment was run for sentences of length 2-15, with a training set of 1000 sentences and a test set of 500 sentences.
+    The resulting bracketing accuracy was 90.1%, compared to 91.6% accuracy when using an unadulterated training corpus.
+    Accuracy only degraded by a small amount when training on the corpus with adulterated part of speech tags, suggesting that high parsing accuracy rates could be achieved if tagging of the input were done automatical

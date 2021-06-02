@@ -1,0 +1,9 @@
+to build five probability distributions: Given a katakana string o observed by OCR, we want to find the English word sequence w that maximizes the sum, over all e, j, and k, of of the models in turn.
+    The result is a large WFSA containing all possible English translations.
+    We have implemented two algorithms for extracting the best translations.
+    The first is Dijkstra's shortest-path graph algorithm (Dijkstra 1959).
+    The second is a recently discovered k-shortest-paths algorithm (Eppstein 1994) that makes it possible for us to identify the top k translations in efficient 0(m + n log n + kn) time, where the WFSA contains n states and m arcs.
+    The approach is modular.
+    We can test each engine independently and be confident that their results are combined correctly.
+    We do no pruning, so the final WFSA contains every solution, however unlikely.
+    The only approximation is the Viterbi one, which searches for the best path through a WFSA instead of the best sequence (i.e., the same sequence 

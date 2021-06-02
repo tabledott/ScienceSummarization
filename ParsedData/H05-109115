@@ -1,0 +1,9 @@
+ 2.
+			?his ? arrival ? in ? Beijing?.
+			Their representation as a sequence of sets of word classes is given by: 1.
+			x = [x1 x2 x3 x4 x5 x6 x7], where x1 = {his, PRP, PERSON}, x2 = {?}, x3 = {actions, NNS, Noun}, x4 = {?}, x5 = {in, IN}, x6 = {?}, x7 = {Brcko, NNP, Noun, LOCATION} 2.
+			y = [y1 y2 y3 y4 y5 y6 y7], where y1 = {his, PRP, PERSON}, y2 = {?}, y3 = {arrival, NN, Noun}, y4 = {?}, y5 = {in, IN}, y6 = {?}, y7 = {Beijing, NNP, Noun, LOCATION} Based on the formula from Equation 1, the kernel is computed as K(x, y) = 3?1?1?1?2?1?3 = 18.
+			We use this relation kernel in conjunction with SVMs in order to find decision hyperplanes that best separate positive examples from negative examples.We modified the LibSVM1 package for SVM learn ing by plugging in the kernel described above, and used its default one-against-one implementation for multiclass classification.
+	
+	
+			We applied the shortest path dependency kernel to the problem of extracting top-level relations from the ACE corpus (NIST, 2000), the ve

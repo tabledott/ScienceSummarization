@@ -1,0 +1,10 @@
+ribution (conditioned on the head word) with the unlexicalized EVG smoothed-skip-head model.
+  
+  
+    Klein and Manning (2004) strongly emphasize the importance of smart initialization in getting good performance from DMV.
+    The likelihood function is full of local maxima and different initial parameter values yield vastly different quality solutions.
+    They offer what they call a &#8220;harmonic initializer&#8221; which initializes the attachment probabilities to favor arguments that appear more closely in the data.
+    This starts EM in a state preferring shorter attachments.
+    Since our goal is to expand the model to incorporate lexical information, we want an initialization scheme which does not depend on the details of DMV.
+    The method we use is to create M sets of B random initial settings and to run VB some small number of iterations (40 in all our experiments) for each initial setting.
+    For each of the M sets, the model with the best free energy of the B runs is then run out until converg

@@ -1,0 +1,10 @@
+ the wff, is a simple consequence of this restriction.
+    The versions of the algorithm given in Appendices A and B define the functions applicable-term and applicable-terms in this way.
+    Given this definition, the algorithm can be shown never to generate unbound variables.
+    (See Appendix C.) A full discussion of heuristic rules for guiding generation of quantifier scopings is outside of the aims of this paper.
+    However, certain ordering heuristics can be incorporated relatively easily into the algorithm merely by controlling the way in which nondeterministic choices are made.
+    We discuss a few examples here, merely to give the flavor for how such heuristics might be added.
+    For instance, suppose we want to favor the original left-to-right order in the sentence.
+    The function applicable-terms should return the complex terms in right-to-left order, since quantifiers are extracted from the inside out.
+    The union in line (3) should return form after scopedforms.
+    If we want to give a nou

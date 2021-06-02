@@ -1,0 +1,5 @@
+he Lexicon In the lexical update step the algorithm first computes the best correct parse tree y* for the current training example and then uses y* as input to the procedure NEW-LEX, which determines which (if any) new lexical items to add to A. NEW-LEX begins by enumerating all pairs (C, wi:j), for i &lt; j, where C is a category occurring at a node in y* and wi:j are the (two or more) words it spans.
+    For example, in the left parse in Figure 1, there would be four pairs: one with the category C = NP\NP:Ax.border(x) and the phrase wi:j =&#8220;ye siniri vardir&#8221;, and one for each non-leaf node in the tree.
+    For each pair (C, wi:j), NEW-LEX considers introducing a new lexical item wi:j `C, which allows for the possibility of a parse where the subtree rooted at C is replaced with this new entry.
+    (If C is a leaf node, this item will already exist.)
+    NEW-LEX also considers adding each pair of new lexical items that is obtained by splitting wi:j`C as described in Section 4, thereby considering m

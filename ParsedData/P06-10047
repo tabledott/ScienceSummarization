@@ -1,0 +1,7 @@
+  Section 4 provides more details on graph construction.
+    We consider the problem of partitioning the graph into two disjoint sets of nodes A and B.
+    We aim to minimize the cut, which is defined to be the sum of the crossing edges between the two sets of nodes.
+    In other words, we want to split the sentences into two maximally dissimilar classes by choosing A and B to minimize: Decoding Papadimitriou proved that the problem of minimizing normalized cuts on graphs is NP-complete (Shi and Malik, 2000).
+    However, in our case, the multi-way cut is constrained to preserve the linearity of the segmentation.
+    By segmentation linearity, we mean that all of the nodes between the leftmost and the rightmost nodes of a particular partition have to belong to that partition.
+    With this constraint, we formulate a dynamic programming algorithm for exactly finding the minimum normalized multiway cut in polynomial time: However, we need to ensure that the two partitions are not only maximally different from e

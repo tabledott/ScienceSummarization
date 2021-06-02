@@ -1,0 +1,5 @@
+e node), this involves summing over all conjunctive node daughters which head subderivations leading to the same set of high scoring dependencies.
+    In practice large numbers of such conjunctive nodes lead to very long parse times.
+    As an alternative to finding the most probable dependency structure, we have developed an algorithm which maximises the expected labelled recall over dependencies.
+    Our algorithm is based on Goodman&#8217;s (1996) labelled recall algorithm for the phrase-structure PARSEVAL measures.
+    Let L, be the number of correct dependencies in 7r with respect to a gold standard dependency structure G; then the dependency structure, 7rmax, which maximises the expected recall rate is: LP LR UP UR cat where S is the sentence for gold standard dependency structure G and &#57737;i ranges over the dependency structures for S. This expression can be expanded further: The final score for a dependency structure &#57737; is a sum of the scores for each dependency &#57744; in &#57737;; and the

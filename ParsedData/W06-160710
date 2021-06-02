@@ -1,0 +1,6 @@
+e uniform smoothing gives ploglin(x) = p1(x)&#945;/(p1(x)&#945; + q1(x)&#945;).
+    This is actually less smooth than the original distribution p1(x): it preserves extreme values 0 and 1, and makes intermediate values more extreme.
+    On the other hand, plinear(x) = &#945;p1(x) + (1 &#8722; &#945;)/2, which has the opposite properties: it moderates extreme values and tends to preserve intermediate values.
+    An advantage of loglinear interpolation is that we can tune loglinear weights so as to maximize the true objective function, for instance BLEU; recall that our translation model is itself loglinear, with weights set to minimize errors.
+    In fact, a limitation of the experiments described in this paper is that the loglinear weights for the glass-box techniques were optimized for BLEU using Och&#8217;s algorithm (Och, 2003), while the linear weights for black-box techniques were set heuristically.
+    Obviously, this gives the glass-box techniques an advantage when the different smoothing techniques are

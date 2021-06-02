@@ -1,0 +1,7 @@
+er, and arbitrary features can be defined over the local subtree, the span/split and the words of the sentence.
+    The insideoutside algorithm is run over the clique potentials to produce the partial derivatives and normalizing constant which are necessary for optimizing the log likelihood.
+    Because of the addition of named entity annotations to grammar rules, if we use the grammar as read off the treebank, we will encounter problems with sparseness which severely degrade performance.
+    This degradation occurs because of CFG 2Note that features can include information about other words, because the entire sentence is observed.
+    The features cannot include information about the labels of those words. rules which only occur in the training data augmented with named entity information, and because of rules which only occur without the named entity information.
+    To combat this problem, we added extra rules, unseen in the training data.
+    For every rule encountered in the training data which has been

@@ -1,0 +1,13 @@
+g terminals (o denotes a sentence boundary).
+    A bracketing of a sentence is a boolean matrix B, which indicates which spans are constituents and which are not.
+    Figure 1 shows a parse of a short sentence, the bracketing corresponding to that parse, and the labels, yields, and contexts of its constituent spans.
+    Figure 2 shows several bracketings of the sentence in figure 1.
+    A bracketing B of a sentence is non-crossing if, whenever two spans cross, at most one is a constituent in B.
+    A non-crossing bracketing is tree-equivalent if the size-one terminal spans and the full-sentence span are constituents, and all size-zero spans are distituents.
+    Figure 2(a) and (b) are tree-equivalent.
+    Tree-equivalent bracketings B correspond to (unlabeled) trees in the obvious way.
+    A bracketing is binary if it corresponds to a binary tree.
+    Figure 2(b) is binary.
+    We will induce trees by inducing tree-equivalent bracketings.
+    Our generative model over sentences S has two phases.
+    First, we

@@ -1,0 +1,14 @@
+g distance closer to each other in the sorted lists.
+    Overall, the algorithm takes O(nk+nlogn) time.
+    However, for noun clustering, we generally have the number of nouns, n, smaller than the number of features, k.
+    (i.e., n &lt; k).
+    This implies logn &lt;&lt; k and nlogn &lt;&lt; nk.
+    Hence the time complexity of our algorithm is O(nk + nlogn) Pz&#65533; O(nk).
+    This is a huge saving from the original O(n2k) algorithm.
+    In the next section, we proceed to apply this technique for generating noun similarity lists.
+  
+  
+    A lot of work has been done in the NLP community on clustering words according to their meaning in text (Hindle, 1990; Lin, 1998).
+    The basic intuition is that words that are similar to each other tend to occur in similar contexts, thus linking the semantics of words with their lexical usage in text.
+    One may ask why is clustering of words necessary in the first place?
+    There may be several reasons for clustering, but generally it boils down to one basic reason

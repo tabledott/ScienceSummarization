@@ -1,0 +1,6 @@
+ probabilistic Earley parser implement the forward phase of the Viterbi computation.
+    Once the final state is reached, a recursive procedure can recover the parse tree associated with the Viterbi parse.
+    This procedure takes an Earley state i : kX A.p as input and produces the Viterbi parse for the substring between k and i as output.
+    (If the input state is not complete (p &#8364;), the result will be a partial parse tree with children missing from the root node.)
+    Viterbi parse (i: kX A.p): Andreas Stolcke Efficient Probabilistic Context-Free Parsing as well as T' = Viterbi-parse(i : Y v.) Adjoin T' to T as the right-most child at the root, and return T. The rule probabilities in a SCFG can be iteratively estimated using the EM (ExpectationMaximization) algorithm (Dempster et al. 1977).
+    Given a sample corpus D, the estimation procedure finds a set of parameters that represent a local maximum of the grammar likelihood function P(D G), which is given by the product of the string probabilities 

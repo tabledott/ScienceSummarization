@@ -1,0 +1,10 @@
+atibility, and path coreference information.
+    We refer to these features as our &#8220;probabilistic features&#8221; (Prob.
+    Features) and run experiments using the full system trained and tested with each absent, in turn (Table 5).
+    We have 29 features in total, including measures of candidate distance, frequency, grammatical role, and different kinds of parallelism between the pronoun and the candidate noun.
+    Several reliable features are used as hard constraints, removing candidates before consideration by the scoring algorithm.
+    All of the parsing, noun-phrase identification, and named-entity recognition are done automatically with Minipar.
+    Candidate antecedents are considered in the current and previous sentence only.
+    We use SVMUght (Joachims, 1999) to learn a linear-kernel classifier on pairwise examples in the training set.
+    When resolving pronouns, we select the candidate with the farthest positive distance from the SVM classification hyperplane.
+    Our training set is the a

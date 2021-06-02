@@ -1,0 +1,9 @@
+ trees produced by the parser.
+    This involves the removal of non-terminals introduced in the transformation process, producing trees with arbitrary branching.
+    An example of transformation/detransformation is shown in figure 1.
+    The parsing algorithm involves two main data structures: a stack S, and a queue W. Items in S may be terminal nodes (POS-tagged words), or (lexicalized) subtrees of the final parse tree for the input string.
+    Items in W are terminals (words tagged with parts-of-speech) corresponding to the input string.
+    When parsing begins, S is empty and W is initialized by inserting every word from the input string in order, so that the first word is in front of the queue.
+    Only two general actions are allowed: shift and reduce.
+    A shift action consists only of removing (shifting) the first item (POS-tagged word) from W (at which point the next word becomes the new first item), and placing it on top of S. Reduce actions are subdivided into unary and binary cases.
+    In a unary

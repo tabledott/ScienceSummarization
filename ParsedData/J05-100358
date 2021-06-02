@@ -1,0 +1,8 @@
+ each value of e, the method was run for 100,000 rounds on the training data.
+    The implementation was such that the feature updates for all 100,000 rounds for each training run were recorded in a file.
+    This made it simple to test the model on development data for all values of N between 0 and 100,000.
+    The different values of &amp; and N were compared on development data through the following criterion: where Score is as defined above, and zi is the output of the model on the ith development set example.
+    The &amp;, N values which maximized this quantity were used to define the final model applied to the test data (section 23 of the treebank).
+    The optimal values were &amp; = 0.0025 and N = 90,386, at which point 11,673 features had nonzero values (note that the feature selection techniques may result in a given feature being updated more than once).
+    The computation took roughly 3&#8211;4 hours on a machine with a 1.6 GHz pentium processor and around 2 GB of memory.
+    Table 1 shows resul

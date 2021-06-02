@@ -1,0 +1,7 @@
+se of parser projection where the word alignments are one-to-one and observed.
+    To test our handling of QG features, we performed experiments in which training saw the correct parse trees in both source and target domains, and the mapping between them was simple and regular.
+    We also performed experiments where the source trees were replaced by the noisy output of a trained parser, making the mapping more complex and harder to learn.
+    We used the subset of the Penn Treebank from the CoNLL 2007 shared task and converted it to dependency representation while varying two parameters: (1) CoNLL vs. Prague coordination style (Figure 1), and (2) preposition the head vs. the child of its nominal object.
+    We trained an edge-factored dependency parser (McDonald et al., 2005) on &#8220;source&#8221; domain data that followed one set of dependency conventions.
+    We then trained an edge-factored parser with QG features on a small amount of &#8220;target&#8221; domain data.
+    The source parser outputs were 

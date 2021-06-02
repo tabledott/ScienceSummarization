@@ -1,0 +1,8 @@
+e same sentence, the same headword can occur with the same tag in multiple nodes, such as sat in Figure 8, which occurs with the tag VBD three times (instead of just once) in the tree shown there.
+    Despite this difference, Collins&#8217; parser uses counts from the (shared) last level of back-off of the PLw and PRw parameters when delivering e1 estimates for the PTOPw parameters.
+    Our parsing engine emulates this &#8220;count sharing&#8221; for PTOPw by default, by sharing counts from our PMw parameter class.
+  
+  
+    Parsing, or decoding, is performed via a probabilistic version of the CKY chartparsing algorithm.
+    As with normal CKY, even though the model is defined in a topdown, generative manner, decoding proceeds bottom-up.
+    Collins&#8217; thesis gives a pseuSince the goal of the decoding process is to determine the maximally likely theory, if during decoding a proposed chart item is equal (or, technically, equivalent) to an item that is already in the chart, the one with the greater score su

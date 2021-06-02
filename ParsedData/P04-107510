@@ -1,0 +1,8 @@
+1999).
+    In our task, we also use it to quantify the similarity between two words.
+    Particularly, the calculation in SVM need be projected to a higher dimensional space by using a certain kernel function K ( w i , w j ) .
+    Therefore, we adapt the cosine-similarity measure to SVM as follows: (wi,wj)=k (wi , wi)k(wj , wj ) where, wi and wj are the feature vectors of the words i and j.
+    This calculation is also supported by (Brinker 2003)&#8217;s work.
+    Furthermore, if we use the linear kernel k(wi, wj) = wi &#8901; w j , the measure is the same as the traditional cosine similarity measgeneral vector-based similarity measure. tities In this part, we compute the similarity between two machine-annotated named entities given the similarities between words.
+    Regarding an entity as a word sequence, this work is analogous to the alignment of two sequences.
+    We employ the dynamic time warping (DTW) algorithm (Rabiner et al. 1978) to find an optimal alignment between the words in the sequences which 

@@ -1,0 +1,8 @@
+, is how a sample walkthrough sentence is passed to the part-of-speech tagger.
+  Note how punctuation has bee n tokenized, and "Mr." has been identified as a title and assigned the part-of-speech NNP (proper noun) .
+  &lt;5&gt;Even so&lt;lex&gt;,&lt;/lex&gt; &lt;LEX pos=NNP ttl=WHOLE&gt;Mr .&lt;/LEX&gt; Dooner is on the prowl for more creative talen t and is interested in acquiring a hot agency&lt;lex&gt; .&lt;/lex&gt;&lt;/5 &gt; The part-of-speech tagger first assigns initial parts-of-speech by consulting a large lexicon .
+  The lexicon maps words to their most frequently occurring tag in the training corpus .
+  Words that do not appear in th e lexicon are assigned a default tag of NN (common noun) or NNP (proper noun), depending on capitalization.
+  For unknown words, after a default tag is assigned, lexical rules apply to improve the initial guess .
+  These rules operate principally by inspecting the morphology of words .
+  For example, an early rule in the lexical rul e sequence retags unknown words endin

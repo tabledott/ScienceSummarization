@@ -1,0 +1,8 @@
+ut when the pattern is classical, the convergence starts from a lower quality model and improves, and in the other cases, it starts from a higher quality one and deteriorates.
+    In the case of early maximum, the few iterations where the accuracy is improving correspond to the creation of entries for unknown words and the fine tuning of ones for known ones, and these changes outweigh those produced by the re-estimation.
+  
+  
+    From the observations in the previous section, we propose the following guidelines for how to train a HMM for use in tagging: able, use BW re-estimation with standard convergence tests such as perplexity.
+    Without a lexicon, some initial biasing of the transitions is needed if good results are to be obtained.
+    Similar results are presented by Merialdo (1994), who describes experiments to compare the effect of training from a hand-tagged corpora and using the Baum-Welch algorithm with various initial conditions.
+    As in the experiments above, BW reestimation gave a decrease i

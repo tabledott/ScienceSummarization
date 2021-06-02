@@ -1,0 +1,9 @@
+ls&#8212;z&#8727; may be a good approximation to y&#8727;.
+    Later we will see that dual decomposition can effectively use MST inference to rule out ill-formed structures.
+    We now give the main assumption underlying sibling models: Assumption 1(Sibling Decompositions) A model f(y) satisfies the sibling-decomposition assumption if: 1) f(y) = Eni=0 fi(y|i) for some set offunctions f0 ... fn.
+    2) For any i E {0 ... n}, for any value of the variables u(i, j) E R for j = 1... n, it is possible to compute The second condition includes additional terms involving u(i, j) variables that modify the scores of individual dependencies.
+    These terms are benign for most definitions of fi, in that they do not alter decoding complexity.
+    They will be of direct use in the dual decomposition parsing algorithm.
+    Example 1: Bigram Sibling Models.
+    Recall that y|i is a binary vector specifying which words are modifiers to the head-word i.
+    Define l1 ... lp to be the sequence of left modifiers to word i under

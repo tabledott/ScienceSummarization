@@ -1,0 +1,8 @@
+sists of a recurrent hidden layer for h(d1,...,di&#8722;1), (for the discriminative model) a recurrent hidden layer for l(yield(di,..., dm)), and an output layer for the log-linear model.
+    Training is applied to this full neural network, as described in the next section.
+  
+  
+    As with many other machine learning methods, training a Simple Synchrony Network involves first defining an appropriate learning criteria and then performing some form of gradient descent learning to search for the optimum values of the network&#8217;s parameters according to this criteria.
+    In all the parsing models investigated here, we use the on-line version of Backpropagation to perform the gradient descent.
+    This learning simultaneously tries to optimize the parameters of the output computation and the parameters of the mappings h(d1,...,di&#8722;1) and l(yield(di,..., dm)).
+    With multi-layered networks such as SSNs, this training is not guaranteed to converge to a global optimum, but in practice a network whose cr

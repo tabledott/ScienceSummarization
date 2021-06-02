@@ -1,0 +1,5 @@
+r was trained, in a round-robin fashion, on 4 fifths of the data and applied on the remaining fifth.
+    This way, the entire training data can be used to estimate the weight parameters Ai (w) and Pi (C|w, Ci) but, at decoding time, the individual classifier outputs Ci are computed by using the entire training data.
+    Table 2 presents the combination results, for different ways of estimating the interpolation parameters.
+    A simple combination method is the equal voting method (van Halteren et al., 2001; Tjong Kim Sang et al., 2000), where the parameters are computed as Ai (w) = 1n and Pi (C|w, Ci) = S (C, Ci), where S is the Kronecker operator (S (x, y) := (x = y?1 : 0)) &#8211; each of the classifiers votes with equal weight for the class that is most likely under its model, and the class receiving the largest number of votes wins.
+    However, this procedure may lead to ties, where some classes receive the same number of votes &#8211; one usually resorts to randomly selecting one of the tied candidates

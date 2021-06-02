@@ -1,0 +1,9 @@
+
+    Words home and place are paraphrases in the sense of &#8220;habitat&#8221;, but in the reference sentence &#8220;place&#8221; occurs in a different sense, being part of the collocation &#8220;take place&#8221;.
+    In this case, the pair (home, place) cannot be used to rewrite the reference sentence.
+    We formulate contextual substitution as a binary classification task: given a context r1 ... ri_1&#10065;ri+1 ... rm, we aim to predict whether wj can occur in this context at position i.
+    For each candidate word wj we train a classifier that models contextual preferences of wj.
+    To train such a classifier, we collect a large corpus of sentences that contain the word wj and an equal number of randomly extracted sentences that do not contain this word.
+    The former category forms positive instances, while the latter represents the negative.
+    For the negative examples, a random position in a sentence is selected for extracting the context.
+    This corpus is acquired automatically, and does not 

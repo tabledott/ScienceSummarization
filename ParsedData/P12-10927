@@ -1,0 +1,6 @@
+pute theweighted average of all word vectors in the docu ment: c = ?k i=1w(ti)di ?k i=1w(ti) (4)where w(?)
+			can be any weighting function that cap tures the importance of word ti in the document.
+			We use idf-weighting as the weighting function.
+			We use a two-layer neural network to compute the global context score, scoreg, similar to the above: a1 (g) = f(W (g)1 [c;xm] + b (g) 1 ) (5) scoreg = W (g) 2 a (g) 1 + b (g) 2 (6) where [c;xm] is the concatenation of the weighted average document vector and the vector of the last word in s, a1(g) ? Rh (g)?1 is the activation of the hidden layer with h(g) hidden nodes, W (g)1 ? Rh (g)?(2n) and W (g)2 ? R 1?h(g) are respectively the first and second layer weights of the neural network, and b(g)1 , b (g) 2 are the biases of each layer.
+			Note that instead of using the document where the sequenceoccurs, we can also specify a fixed k &gt; m that cap tures larger context.
+			The final score is the sum of the two scores: score = scorel + scoreg (7) The local score pr

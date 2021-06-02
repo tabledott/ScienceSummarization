@@ -1,0 +1,8 @@
+appear in training data. known that there are mainly two approaches to extend from a binary classification task to those with K classes.
+    First approach is often used and typical one &amp;quot;one class vs. all others&amp;quot;.
+    The idea is to build K classifiers that separate one class among from all others.
+    Second approach is pairwise classification.
+    The idea is to build K x (K &#8212; 1)/2 classifiers considering all pairs of classes, and final class decision is given by their majority voting.
+    We decided to construct pairwise classifiers for all the pairs of chunk labels, so that the total number of classifiers becomes 2221 2 = 231.
+    The reasons that we use pairwise classifiers are as follows: For the features, we decided to use all the information available in the surrounding contexts, such as the words, their POS tags as well as the chunk labels.
+    More precisely, we give the following for the features to identify chunk label ci at i-th word: (j = i-2, i-1, i, i+1, i+ 2) cj (j = i

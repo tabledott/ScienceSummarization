@@ -1,0 +1,6 @@
+e Smith and Eisner (2005) for an exposition).
+    Similar to supervised maximum entropy problems, the partial derivative of L(&#952;; D) with respect to each parameter &#952;j (associated with feature fj) is given by a difference in feature expectations: The first expectation is the expected count of the feature under the model&#8217;s p(y|x, &#952;) and is again easily computed with the forward-backward algorithm, just as for CRFs or HMMs.
+    The second expectation is the expectation of the feature under the model&#8217;s joint distribution over all x, y pairs, and is harder to calculate.
+    Again assuming that sentences beyond a certain length have negligible mass, we calculate the expectation of the feature for each fixed length ` and take a (truncated) weighted sum: For fixed `, we can calculate Ex,y|`,&#952;fj using the lattice of all inputs of length `.
+    The quantity p(|x |= `) is simply &#710;Z`(&#952;)/ &#710;Z(&#952;).
+    As regularization, we use a diagonal Gaussian prior with variance &#963;2

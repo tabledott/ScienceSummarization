@@ -1,0 +1,6 @@
+ trees T from G, project the samples, and take average counts off of these samples.
+    In the limit, the counts will converge to the desired expectations, provided the grammar is proper.
+    However, we can exploit the structure of our projections to obtain the desired expectations much more simply and efficiently.
+    First, consider the problem of calculating the expected counts of a symbol X in a tree distribution given by a grammar G, ignoring the issue of projection.
+    These expected counts obey the following onestep equations (assuming a unique root symbol): Here, &#945;, &#946;, or both can be empty, and a rule X &#8594; &#947; appears in the sum once for each X it contains.
+    In principle, this linear system can be solved in any way.1 In our experiments, we solve this system iteratively, with the following recurrences: Note that, as in other iterative fixpoint methods, such as policy evaluation for Markov decision processes (Sutton and Barto, 1998), the quantities ck(X) have a useful interpretati

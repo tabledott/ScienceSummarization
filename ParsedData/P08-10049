@@ -1,0 +1,8 @@
+ graphical models to identify relations in text.
+    The remainder of this section describes O-CRF, and compares it to the extraction model employed by TEXTRUNNER, the first Open IE system (Banko et al., 2007).
+    We then describe R1-CRF, a RE system that can be applied in a typical one-relation-at-a-time setting.
+    TEXTRUNNER initially treated Open IE as a classification problem, using a Naive Bayes classifier to predict whether heuristically-chosen tokens between two entities indicated a relationship or not.
+    For the remainder of this paper, we refer to this model as O-NB.
+    Whereas classifiers predict the label of a single variable, graphical models model multiple, interdependent variables.
+    Conditional Random Fields (CRFs) (Lafferty et al., 2001), are undirected graphical models trained to maximize the conditional probability of a finite set of labels Y given a set of input observations X.
+    By making a first-order Markov assumption about the dependencies among the output variables Y , and ar

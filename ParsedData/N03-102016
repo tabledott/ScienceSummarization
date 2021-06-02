@@ -1,0 +1,7 @@
+tter than the best case in which weighted average of variable length n-gram matches is used and is consistent across different data sets.
+    (2) The performance of weighted average n-gram scores is in the range between bi-gram and tri-gram co-occurrence scores.
+    This might suggest some summaries are over-penalized by the weighted average metric due to the lack of longer n-gram matches.
+    For example, given a model string &amp;quot;United States, Japan, and Taiwan&amp;quot;, a candidate string &amp;quot;United States, Taiwan, and Japan&amp;quot; has a unigram score of 1, bi-gram score of 0.5, and trigram and 4-gram scores of 0 when the stopword &amp;quot;and' is ignored.
+    The weighted average n-gram score for the candidate string is 0.
+    (3) Excluding stopwords in computing n-gram cooccurrence statistics generally achieves better correlation than including stopwords.
+    We have shown that simple unigram, Ngram(1,1), or bigram, Ngram(2,2), co-occurrence statistics based on equation 6 outperform the 

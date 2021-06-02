@@ -1,0 +1,8 @@
+02) as the objective function.
+    The phrase translation probabilities were determined using maximum likelihood estimation over phrases induced from word-level alignments produced by performing Giza++ training on each of the three training corpora.
+    We used the Pharaoh beamsearch decoder (Koehn, 2004) to produce the translations after all of the model parameters had been set.
+    When the baseline system encountered unknown words in the test set, its behavior was simply to reproduce the foreign word in the translated output.
+    This is the default behavior for many systems, as noted in Section 2.1.
+    We extracted all source language (Spanish and French) phrases up to length 10 from the test and development sets which did not have translations in phrase tables that were generated for the three training corpora.
+    For each of these phrases we generated a list of paraphrases using all of the parallel corpora from Europarl aside from the Spanish-English and French-English corpora.
+    We used bitexts bet

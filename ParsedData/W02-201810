@@ -1,0 +1,5 @@
+matrix is computationally impractical, and Newton&#8217;s method is not competitive with iterative scaling or first order methods.
+    Variable metric or quasi-Newton methods avoid explicit evaluation of the Hessian by building up an approximation of it using successive evaluations of the gradient.
+    That is, we replace H&#8722;1(&#952;(k)) in (5) with a local approximation of the inverse Hessian B(k): with B(k) a symmatric, positive definite matrix which satisfies the equation: where y(k) = G(&#952;(k)) &#8722; G(&#952;(k&#8722;1)).
+    Variable metric methods also show excellent convergence properties and can be much more efficient than using true Newton updates, but for large scale problems with hundreds of thousands of parameters, even storing the approximate Hessian is prohibitively expensive.
+    For such cases, we can apply limited memory variable metric methods, which implicitly approximate the Hessian matrix in the vicinity of the current estimate of &#952;(k) using the previous m values of y(k) an

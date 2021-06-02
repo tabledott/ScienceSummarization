@@ -1,0 +1,8 @@
+s to achieve the process.
+    Having calculated hr(u) with d random vectors for each of the vectors u, we apply equation 4 to find the cosine distance between two vectors.
+    As we generate more number of random vectors, we can estimate the cosine similarity between two vectors more accurately.
+    However, in practice, the number (d) of random vectors required is highly domain dependent, i.e., it depends on the value of the total number of vectors (n), features (k) and the way the vectors are distributed.
+    Using d random vectors, we can represent each vector by a bit stream of length d. Carefully looking at equation 4, we can observe that Pr[hr(u) = hr(v)] = 1 &#8722; (hamming distance)/d1 .
+    Thus, the above theorem, converts the problem of finding cosine distance between two vectors to the problem of finding hamming distance between their bit streams (as given by equation 4).
+    Finding hamming distance between two bit streams is faster and highly memory efficient.
+    Also worth noting is that this

@@ -1,0 +1,6 @@
+hat makes any graph fulfill the property of being aperiodic and irreducible, and thus guarantees that PageRank calculation converges to a unique stationary distribution.
+    In the traditional PageRank formulation the vector v is a stochastic normalized vector whose element values are all 1N, thus assigning equal probabilities to all nodes in the graph in case of random jumps.
+    However, as pointed out by (Haveliwala, 2002), the vector v can be non-uniform and assign stronger probabilities to certain kinds of nodes, effectively biasing the resulting PageRank vector to prefer these nodes.
+    For example, if we concentrate all the probability mass on a unique node i, all random jumps on the walk will return to i and thus its rank will be high; moreover, the high rank of i will make all the nodes in its vicinity also receive a high rank.
+    Thus, the importance of node i given by the initial distribution of v spreads along the graph on successive iterations of the algorithm.
+    In this paper, we will use tr

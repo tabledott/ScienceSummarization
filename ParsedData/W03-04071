@@ -1,0 +1,5 @@
+ts of co-training, have been applied to a number of NLP problems, including word sense disambiguation (Yarowsky, 1995), named entity recognition (Collins and Singer, 1999), noun phrase bracketing (Pierce and Cardie, 2001) and statistical parsing (Sarkar, 2001; Steedman et al., 2003).
+    In each case, co-training was used successfully to bootstrap a model from only a small amount of labelled data and a much larger pool of unlabelled data.
+    Previous co-training approaches have typically used the score assigned by the model as an indicator of the reliability of a newly labelled example.
+    In this paper we take a different approach, based on theoretical work by Dasgupta et al. (2002) and Abney (2002), in which newly labelled training examples are selected using a greedy algorithm which explicitly maximises the POS taggers&#8217; agreement on unlabelled data.
+    We investigate whether co-training based upon directly maximising agreement can be successfully applied to a pair of part-of-speech (POS) taggers: 

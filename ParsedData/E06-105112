@@ -1,0 +1,8 @@
+l clues for detecting the agent and target of the relation, as well as the presence of the relation itself.
+    As the type is not known, we use the information provided by the two local contexts of the candidate interacting entities, called left and right local context respectively.
+    As typically done in entity recognition, we represent each local context by using the following basic features: Token The token itself.
+    Lemma The lemma of the token.
+    PoS The PoS tag of the token.
+    Orthographic This feature maps each token into equivalence classes that encode attributes such as capitalization, punctuation, numerals and so on.
+    Formally, given a relation example R, a local context L = t_w, ... , t_1, t0, t+1, ... , t+w is represented as a row vector where fi is a feature function that returns 1 if it is active in the specified position of L, 0 otherwise3.
+    The Local Context kernel KLC(R1, R2) is defined as where Kleft and Kright are defined by substituting the embedding of the left and right lo

@@ -1,0 +1,10 @@
+inese phrase without regular reorderings, insertions, and leafword translations.
+    The model was trained using about 780,000 English parse tree-Chinese sentence pairs.
+    There are about 3 million words on the English side, and they were parsed by Collins&#8217; parser.
+    Since the model is computationally expensive, we added some limitations on the model operations.
+    As the base MT system does not produce a translation with a big word jump, we restrict the model not to reorder child nodes when the node covers more than seven words.
+    For a node that has more than four children, the reordering probability is set to be uniform.
+    We also introduced pruning, which discards partial (subtree-substring) alignments if the probability is lower than a threshold.
+    The model gives a sum of all possible alignment probabilities for a pair of a Chinese sentence and an English parse tree.
+    We also calculate the probability of the best alignment according to the model.
+    Thus, we have the folAs the model

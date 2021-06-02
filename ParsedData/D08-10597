@@ -1,0 +1,6 @@
+ngton process.
+    The time complexity of this algorithm is O(n2), where n is the length of the input sentence.
+    During training, the &#8220;early update&#8221; strategy of Collins and Roark (2004) is used: when the correct state item falls out of the beam at any stage, parsing is stopped immediately, and the model is updated using the current best partial item.
+    The intuition is to improve learning by avoiding irrelevant information: when all the items in the current agenda are incorrect, further parsing steps will be irrelevant because the correct partial output no longer exists in the candidate ranking.
+    Table 1 shows the feature templates from the MSTParser (McDonald and Pereira, 2006), which are defined in terms of the context of a word, its parent and its sibling.
+    To give more templates, features from templates 1 &#8211; 5 are also conjoined with the link direction and distance, while features from template 6 are also conjoined with the direction and distance between the child and its sibli

@@ -1,0 +1,9 @@
+   A pair is included in the table at the beginning of a pass if that pair is a candidate for association by the algorithm in that pass.
+    Word Alignment Table (WAT).
+    This is a list of pairs of words, together with similarities and frequencies in their respective texts, that have been aligned by comparing their distributions in the texts.
+    Sentence Alignment Table (SAT).
+    This is a table that records for each pair of sentences how many times the two sentences were set in correspondence by the algorithm.
+    Some additional data structures were used to improve performance in our implementation of the algorithm, but they are not essential to an understanding of the method as a whole.
+    At the beginning of each cycle, an AST is produced that is expected to contain the eventual set of alignments, generally amongst others.
+    It pairs the first and last sentences of the two texts with a small number of sentences from the beginning and end of the other text.
+    Generally speaking, the closer a sente

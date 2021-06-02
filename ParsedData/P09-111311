@@ -1,0 +1,6 @@
+ testing step, entities are again identified using the named entity tagger.
+    This time, every pair of entities appearing together in a sentence is considered a potential relation instance, and whenever those entities appear together, features are extracted on the sentence and added to a feature vector for that entity pair.
+    For example, if a pair of entities occurs in 10 sentences in the test set, and each sentence has 3 features extracted from it, the entity pair will have 30 associated features.
+    Each entity pair in each sentence in the test corpus is run through feature extraction, and the regression classifier predicts a relation name for each entity pair based on the features from all of the sentences in which it appeared.
+    Consider the location-contains relation, imagining that in Freebase we had two instances of this relation: (Virginia, Richmond) and (France, Nantes).
+    As we encountered sentences like &#8216;Richmond, the capital of Virginia&#8217; and &#8216;Henry&#8217;s Edict of Nant

@@ -1,0 +1,8 @@
+in it.
+    Thus, instead of partitioning the space of P(wi_i)P(wi) values in some uniform way as was done by Church and Gale, we partition the space so that at least crnin non-zero n-grams fall in each bucket.
+    Finally, the original paper describes only bigram smoothing in detail; extending this method to trigram smoothing is ambiguous.
+    In particular, it is unclear whether to bucket trigrams according to P(wr_21)P(wi) or P(w:=21)P(wilwi_1).
+    We chose the former; while the latter may yield better performance, our belief is that it is much more difficult to implement and that it requires a great deal more computation.
+    (interp-held-out and interp-del-int) We implemented two versions of Jelinek-Mercer smoothing differing only in what data is used to train the A's.
+    We bucket the .\,._i according to w+i) as suggested by Bahl et al. Similar to our Church-Gale implementation, we choose buckets to ensure that at least c&#8222;,,,,&#8222; words in the data used to train the A's fall in each bucket.
+  

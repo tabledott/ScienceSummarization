@@ -1,0 +1,7 @@
+t-of-speech tags for a given sentence.
+			When estimating tag sequence probabilities, an HMM tagger, such as that described in Merialdo (1991), typically takes into account a history consisting of the previous two tags -- e.g. we compute P(ti | ti-1, ti-2).
+			Kupiec (1992) describes a modified trigram HMM tagger in which he computes word classes for which lexical probabilities are then estimated, instead of computing probabilities for individual words.
+			Words contained within the same equivalence classes are those which possess the same set of possible parts of speech.
+			Another highly-accurate method for part-of speech tagging from unlabelled data is Brill?s unsupervised transformation-based learner (UTBL) (Brill, 1995).
+			Derived from his supervised transformation-based tagger (Brill, 1992), UTBL uses information from the distribution of unambiguously tagged data to make informed labeling decisions in ambiguous contexts.
+			In contrast to the HMM taggers previously described, which make use of contextu

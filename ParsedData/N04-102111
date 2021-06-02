@@ -1,0 +1,5 @@
+tput from our n-best lists sometimes led to unexpected results.
+    Often the tagger tries to &#8220;fix up&#8221; ungrammatical sentences, for example by looking for a verb when none is present: China NNP 14 CD open JJ border NN cities NNS achievements VBZ remarkable JJ Here, although achievements has never been seen as a verb in the tagger&#8217;s training data, the prior for a verb in this position is high enough to cause a present tense verb tag to be produced.
+    In addition to the inaccuracies of the MT system, the difference in genre from the tagger&#8217;s training text can cause problems.
+    For example, while our MT data include news article headlines with no verb, headlines are not included in the Wall Street Journal text on which the tagger is trained.
+    Similarly, the tagger is trained on full sentences with normalized punctuation, leading it to expect punctuation at the end of every sentence, and produce a punctuation tag even when the evidence does not support it: China NNP &#8217;s POS eco

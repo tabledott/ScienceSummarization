@@ -1,0 +1,9 @@
+tAll instantiates relation-specific generic extrac tion patterns into extraction rules which find candidate facts.
+			KnowItAll?s Assessor then assigns a probability to each candidate.
+			The Assessor uses a form of Point-wiseMutual Information (PMI) between phrases that is esti mated from Web search engine hit counts (Turney, 2001).
+			It computes the PMI between each fact and automatically generated discriminator phrases (e.g., ?is a scanner?
+			for the isA() relationship in the context of the Scanner class).
+			Given fact f and discriminator d, the computed PMI score is: PMI(f, d) = Hits(d+ f )Hits(d)?Hits(f ) The PMI scores are converted to binary features for aNaive Bayes Classifier, which outputs a probability asso ciated with each fact (Etzioni et al, 2005).
+			3.1 Finding Explicit Features.
+			OPINE extracts explicit features for the given productclass from parsed review data.
+			First, the system recur sively identifies both the parts and the properties of the given product class and their parts and 

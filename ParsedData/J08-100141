@@ -1,0 +1,9 @@
+nce sequences is close to random.
+    Therefore, we opt to resolve coreference within the original text.
+    Although this design has an oracle feel to it, it is not uncommon in practical applications.
+    For instance, in text generation systems, content planners often operate over fully specified semantic representations, and can thus take advantage of coreference information during sentence ordering.
+    Besides variations in the underlying linguistic representation, our model is also specified by two free parameters: the frequency threshold used to identify salient entities and the length of the transition sequence.
+    These parameters were tuned separately for each data set on the corresponding held-out development set.
+    Optimal saliencebased models were obtained for entities with frequency &gt;2.
+    The optimal transition length was &lt;3.6 In our ordering experiments, we used Joachims&#8217;s (2002) SVMlight package for training and testing with all parameters set to their default values.
+    Comp

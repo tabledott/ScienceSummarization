@@ -1,0 +1,8 @@
+not necessarily deterministic.
+    The one in Figure 1 is not since, for instance, two distinct arcs with output labels b leave the state 0.
+    Sequential transducers are computationally interesting because their use with a given input does not depend on the size of the transducer but only on the size of the input.
+    Since using a sequential transducer with a given input consists of following the only path corresponding to the input string and in writing consecutive output labels along this path, the total computational time is linear in the size of the input, if we consider that the cost of copying out each output label does not depend on its length.
+  
+  
+    More formally, a sequential string-to-string transducer T is a 7-tuple (Q, i, F, E, A, 6 ', a), with: The functions 6 and o- are generally partial functions: a state q E Q does not necessarily admit outgoing transitions labeled on the input side with all elements of the alphabet.
+    These functions can be extended to mappings from Q x E* by the fol

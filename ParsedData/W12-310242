@@ -1,0 +1,8 @@
+pler variant of the system used in (Specia, 2011).
+    The rationale behind having such a strong baseline was to push systems to exploit alternative sources of information and combination / learning approaches.
+    SDLLW (R, S): Both systems use 3 sets of features: the 17 baseline features, 8 systemdependent features from the decoder logs of Moses, and 20 features developed internally.
+    Some of these features made use of additional data and/or resources, such as a secondary MT system that was used as pseudo-reference for the hypothesis, and POS taggers for both languages.
+    Feature-selection algorithms were used to select subsets of features that directly optimize the metrics used in the task.
+    System &#8220;SDLLW M5PbestAvgDelta&#8221; uses a resulting 15-feature set optimized towards the AvgDelta metric.
+    It employs an M5P model to learn a decision-tree with only two linear equations.
+    System &#8220;SDLLW SVM&#8221; uses a 20-feature set and an SVM epsilon regression model with radial basis fu

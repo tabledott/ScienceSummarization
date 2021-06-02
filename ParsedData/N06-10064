@@ -1,0 +1,6 @@
+because overlap models do not account for syntactic or semantic structure, they are easily fooled by examples like ID 2081.
+    A more structured approach is to formulate the entailment prediction as a graph matching problem (Haghighi et al., 2005; de Salvo Braz et al., 2005).
+    In this formulation, sentences are represented as normalized syntactic dependency graphs (like the one shown in figure 1) and entailment is approximated with an alignment between the graph representing the hypothesis and a portion of the corresponding graph(s) representing the text.
+    Each possible alignment of the graphs has an associated score, and the score of the best alignment is used as an approximation to the strength of the entailment: a betteraligned hypothesis is assumed to be more likely to be entailed.
+    To enable incremental search, alignment scores are usually factored as a combination of local terms, corresponding to the nodes and edges of the two graphs.
+    Unfortunately, even with factored scores the problem of

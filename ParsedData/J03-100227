@@ -1,0 +1,12 @@
+ined alignment models, however, namely, Models 3, 4, 5, and 6, maximization over all alignments cannot be efficiently carried out.
+    The corresponding search problem is NP-complete (Knight 1990a).
+    For short sentences, a possible solution could be an A* search algorithm (Och, Ueffing, and Ney 2001).
+    In the work presented here, we use a more efficient greedy search algorithm for the best alignment, as suggested in Brown, Della Pietra, Della Pietra, and Mercer (1993).
+    The basic idea is to compute the Viterbi alignment of a simple model (such as Model 2 or HMM).
+    This alignment is then iteratively improved with respect to the alignment probability of the refined alignment model.
+    (For further details on the greedy search algorithm, see Brown, Della Pietra, Della Pietra, and Mercer [1993].)
+    In the Appendix, we present methods for performing an efficient computation of this pseudo-Viterbi alignment.
+  
+  
+    In this section, we describe our approach to determining the model parameters 0.
+  

@@ -1,0 +1,9 @@
+con.
+    For every application of a rule set to a word, we computed the precision and recall, and then using the total number of guessed words we computed the coverage.
+    We noticed certain regularities in the behavior of the metrics in response to the change of the threshold: recall improves as the threshold increases while coverage drops proportionally.
+    This is not surprising: the higher the threshold, the fewer the inaccurate rules included in the rule set, but at the same time the fewer the words that can be handled.
+    An interesting behavior is shown by precision: first, it grows proportionally along with the increase of the threshold, but then, at high thresholds, it decreases.
+    This means that among very confident rules with very high scores, there are many quite general ones.
+    The best thresholds were obtained in the range of 70-80 points.
+    Table 3 displays the metrics for the best-scored (by aggregate of the three metrics on the training and the test samples) rule sets.
+    As the ba

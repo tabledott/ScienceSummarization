@@ -1,0 +1,9 @@
+ When contextual information is available, AvgSim and MaxSim can be modified to produce more precise similarity computations: where d&#65533;,w,k = d(v(c), 7rk(w)) is the likelihood of context c belonging to cluster 7rk(w), and &#65533;r(w) def= 7rargmax1&lt;k&lt;K dc,w,k(w), the maximum likelihood cluster for w in context c. Thus, AvgSimC corresponds to soft cluster assignment, weighting each similarity term in AvgSim by the likelihood of the word contexts appearing in their respective clusters.
+    MaxSimC corresponds to hard assignment, using only the most probable cluster assignment.
+    Note that AvgSim and MaxSim can be thought of as special cases of AvgSimC and MaxSimC with uniform weight to each cluster; hence AvgSimC and MaxSimC can be used to compare words in context to isolated words as well.
+  
+  
+    We employed two corpora to train our models: 29th, 2009.
+    Wikitext markup is removed, as are articles with fewer than 100 words, leaving 2.8M articles with a total of 2.0513 words.
+    2.
+    The 

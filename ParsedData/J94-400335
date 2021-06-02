@@ -1,0 +1,7 @@
+he criterion for choosing the parameters: if we wish to use small counts, then a should be small, and 6 depends on the required ratio between n1 and n2.
+    The optimal values of the parameters should be determined empirically and might depend on the corpora and parsers we use.
+    In the previous section, we assumed that the source sentence contains only one ambiguous syntactic tuple.
+    In general there may be several ambiguous words that appear in several tuples.
+    We should take advantage of the occurrence patterns of all of the tuples to reach a decision.
+    Since different relations may favor different translations for an ambiguous word, we should devise a strategy for selecting a consistent translation for all words in the sentence.
+    We have used the following constraint propagation algorithm, which receives as input the list of all source tuples along with their alternative translations to target tuples: To illustrate the algorithm, we consider Table 1 using the parameters a = 0.1 and 0 = 0.2.

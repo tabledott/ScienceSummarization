@@ -1,0 +1,12 @@
+e' was counted 20 times, while the other alternatives were not observed at all.
+    These counts are given as input to the statistical model described in the next section, which performs the actual target word selection.
+  
+  
+    Our selection algorithm is based on the following statistical model.
+    Consider first a single relation.
+    The linguistic model provides us with several alternatives as in example (8).
+    We assume that each alternative has a theoretical probability pi to be appropriate for this case.
+    We wish to select the alternative for which pi is maximal, provided that it is significantly larger than the others.
+    We have decided to measure this significance by the odds ratio of the two most probable alternatives P = P1lP2.
+    However, we do not know the theoretical probabilities, therefore we get a bound for p using the frequencies of the alternatives in the corpus.
+    Let pi be the probabilities as observed in the corpus (Pi = flan, where ni is the number of times that alternative

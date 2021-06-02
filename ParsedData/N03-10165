@@ -1,0 +1,6 @@
+rom a classic chart parser is that, like a best-first parser, agenda edges are processed according to a priority.
+    In best-first parsing, this priority is called a figure-of-merit (FOM), and is based on various approximations to P(e|s), the fraction of parses of a sentence s which include an edge e (though see Goodman (1997) for an alternative notion of FOM).
+    Edges which seem promising are explored first; others can wait on the agenda indefinitely.
+    Note that even if we did know P(e|s) exactly, we still would not know whether e occurs in any best parse of s. Nonetheless, good FOMs empirically lead quickly to good parses.
+    Best-first parsing aims to find a (hopefully good) parse quickly, but gives no guarantee that the first parse discovered is the Viterbi parse, nor does it allow one to recognize the Viterbi parse when it is found.
+    In A* parsing, we wish to construct priorities which will speed up parsing, yet still guarantee optimality (that the first parse returned is indeed a best parse).

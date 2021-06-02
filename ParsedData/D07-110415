@@ -1,0 +1,12 @@
+5.
+			5.1 Precomputation.
+			Precomputation of the most expensive collocationscan be done in a single pass over the text.
+			As in put, our algorithm requires the identities of the k 979 most frequent contiguous patterns.
+			5 It then iterates over the corpus.
+			Whenever a pattern from the list is seen, we push a tuple consisting of its identity and current location onto a queue.
+			Whenever the oldest item on the queue falls outside the maximum phrase length window with respect to the current position,we compute that item?s collocation with all succeed ing patterns (subject to pattern length constraints) and pop it from the queue.
+			We repeat this step for every item that falls outside the window.
+			At the end of each sentence, we compute collocations for any remaining items in the queue and then empty it.
+			Our precomputation includes the most frequent n-gram subpatterns.
+			Most of these are unigrams, but in our experiments we found 5-grams among the 1000 most frequent patterns.
+			We precompute the lo

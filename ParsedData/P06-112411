@@ -1,0 +1,7 @@
+, the vector of probabilities of the current word given all but the earliest word in the context.
+    Since we do not know G&#960;(u) either, We recursively place a prior over G&#960;(u) using (3), but now with parameters 0|&#960;(u)|, d|&#960;(u) |and mean vector G&#960;(&#960;(u)) instead.
+    This is repeated until we get to Go, the vector of probabilities over the current word given the empty context 0.
+    Finally we place a prior on G&#8709;: where G0 is the global mean vector, given a uniform value of G0(w) = 1/V for all w E W. Finally, we place a uniform prior on the discount parameters and a Gamma(1,1) prior on the strength parameters.
+    The total number of parameters in the model is 2n.
+    The structure of the prior is that of a suffix tree of depth n, where each node corresponds to a context consisting of up to n&#8212;1 words, and each child corresponds to adding a different word to the beginning of the context.
+    This choice of the prior structure expresses our belief that words appearing ea

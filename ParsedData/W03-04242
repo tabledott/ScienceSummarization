@@ -1,0 +1,10 @@
+scribed in Curran and Clark (2003) .
+    The tagger uses models of the form: where y is the tag, x is the context and the fi(x, y) are the features with associated weights &#955;i.
+    The probability of a tag sequence y1 ... yn given a sentence w1 ... wn is approximated as follows: where xi is the context for word wi.
+    The tagger uses beam search to find the most probable sequence given the sentence.
+    The features are binary valued functions which pair a tag with various elements of the context; for example: &#65533; Generalised Iterative Scaling (GIS) is used to estimate the values of the weights.
+    The tagger uses a Gaussian prior over the weights (Chen et al., 1999) which allows a large number of rare, but informative, features to be used without overfitting.
+  
+  
+    We used three data sets: the English and German data for the CoNLL-2003 shared task (Tjong Kim Sang and De Meulder, 2003) and the Dutch data for the CoNLL2002 shared task (Tjong Kim Sang, 2002).
+    Each word in the data sets is ann

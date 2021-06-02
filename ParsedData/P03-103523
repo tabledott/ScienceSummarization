@@ -1,0 +1,10 @@
+ is used to determine whether or not the CAS should be segmented.
+    For the second problem, though we can simply use the finite-state machines described in Section 5 (extended by using the longest-matching constraint for disambiguation) to detect factoids in the initial segmented corpus, our method of NER in the initial step (i.e. step 1) is a little more complicated.
+    First, we manually annotate named entities on a small subset (call seed set) of the training data.
+    Then, we obtain a context model on the seed set (called seed model).
+    We thus improve the context model which is trained on the initial annotated training corpus by interpolating it with the seed model.
+    Finally, we use the improved context model in steps 2 and 3 of the bootstrapping.
+    Our experiments show that a relatively small seed set (e.g., 10 million characters, which takes approximately three weeks for 4 persons to annotate the NE tags) is enough to get a good improved context model for initialization.
+  
+  
+    To conduct

@@ -1,0 +1,12 @@
+s.
+    Updating of parameters can be incorporated into the computation of outside probabilities efficiently.
+  
+  
+    In the decoding phase, we want to find the optimal MR structure m&#8727; given a new NL sentence w: where T is a possible hybrid tree associated with the m-w pair.
+    However, it is expensive to compute the summation over all possible hybrid trees.
+    We therefore find the most likely hybrid tree instead: P(m, T|w)=arg max max We have implemented an exact top-k decoding algorithm for this task.
+    Dynamic programming techniques similar to those discussed in Section 6 can also be applied when retrieving the top candidates.
+    We also find the Viterbi hybrid tree given a NLMR pair, which can be done in an analogous way.
+    This tree will be useful for reranking.
+    8 Reranking and Filtering of Predictions Due to the various independence assumptions we have made, the model lacks the ability to express some long range dependencies.
+    We therefore postprocess the best candidate predictions

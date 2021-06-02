@@ -1,0 +1,8 @@
+see (4) below.
+    The function H(.) in (4) assigns a value to a split of word w of length 1: w1,, + H does not assign a proper distribution; we use it to assign a probability to the cut of w into w1,, + w,+1,/ as in (5).
+    Clearly the effect of this model is to encourage splits containing relatively long suffixes and stems.
+    21 It is instructive to think about why this should be so.
+    Consider a word such as diplomacy.
+    If we cut the word into the pieces diplomac + y, its probability is freq (diplomac)* freq (y), and constrast that value with the corresponding values of two other analyses: freq (diploma)* freq (cy), and freq (diplom)* freq (acy).
+    Now, the ratio of the frequency of words that begin with diploma and those that begin with diplomac is less than 3, while the ratio of the frequency of words that end in y and those that end in cy is much greater.
+    In graphical terms, we might note that tries (the data structure) based on forward spelling have by far the greatest branching structure

@@ -1,0 +1,9 @@
+ &lt; appears if and only if it is immediately preceded by an instance of A.
+    This basic requirement is satisfied by strings in the regular language P-iff-S(E*A, &lt;E*).
+    The situation is slightly more complicated, however, because of two special circumstances.
+    An instance of A may have prefixes that are also A instances.
+    If A is the expression ab*, then a&lt;b&lt; is an acceptable marking but ab&lt; and a&lt;b are not because the two A-instances are not both followed by &lt;.
+    The brackets that necessarily follow such prefixes must not prevent the longer instances from also being identified and marked, and right-context brackets also must not interfere with left-context identification.
+    The ignore operators in the expression P-if-S (E* &lt; A&lt;, &lt;E*&lt;)&gt; allow for these possibilities.
+    This disregards slightly too many brackets, however: since an instance of A&lt; followed by an &lt; is also an instance of A&lt;, it must be followed by another bracket, and so on.
+    The only

@@ -1,0 +1,6 @@
+urrent word and its partof-speech, a local context of three words to the left and right of the ambiguous word, the parts-ofspeech of the surrounding words, and a global context implemented through sense-specific keywords determined as a list of at most five words occurring at least three times in the contexts defining a certain word sense.
+    This feature set is similar to the one used by (Ng and Lee, 1996), as well as by a number of SENSEVAL systems.
+    The parameters for sense-specific keyword selection were determined through cross-fold validation on the training set.
+    The features are integrated in a Naive Bayes classifier, which was selected mainly for its performance in previous work showing that it can lead to a state-of-the-art disambiguation system given the features we consider (Lee and Ng, 2002).
+    The experiments are performed on the set of ambiguous nouns from the SENSEVAL-3 English lexical sample evaluation (Mihalcea et al., 2004).
+    We use the rule-based subjective sentence classifier 

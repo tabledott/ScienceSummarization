@@ -1,0 +1,9 @@
+see Figure 1), because a Chinese PP always immediately precedes the phrase it is modifying, thus making PP-attachment strictly unambiguous.2 We can thus use Chinese to help parse English, i.e., whenever we have a PPattachment ambiguity, we will consult the Chinese translation (from a bitext), and based on the alignment information, decide where to attach the English PP.
+    On the other hand, English can help Chinese parsing as well, for example in deciding the scope of relative clauses which is unambiguous in English but ambiguous in Chinese.
+    This method is much simpler than joint parsing because it remains monolingual in the backbone, with alignment information merely as soft evidence, rather than hard constraints since automatic word alignment is far from perfect.
+    It is thus straightforward to implement within a monolingual parsing algorithm.
+    In this work we choose shift-reduce dependency parsing for its simplicity and efficiency.
+    Specifically, we make the following contributions:
+  
+  
+   

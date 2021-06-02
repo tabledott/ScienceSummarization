@@ -1,0 +1,8 @@
+ t' from the candidate translation list5 of each child s'.
+    Each such interleaving is scored using the models previously described and added to the candidate translation list for that input node.
+    The resultant translation is the best scoring candidate for the root input node.
+    As an example, see the example dependency tree in Figure 4a and treelet translation pair in 4b.
+    This treelet translation pair covers all the nodes in 4a except the subtrees rooted at software and is.
+    We first compute (and cache) the candidate translation lists for the subtrees rooted at software and is, then construct full translation candidates by attaching those subtree translations to install&#233;s in all possible ways.
+    The order of sur relative to install&#233;s is fixed; it remains to place the translated subtrees for the software and is.
+    Note that if c is the count of children specified in the mapping and r is the count of subtrees translated via recursive calls, then there are (c+r+1)!/(c+1)! orderings.

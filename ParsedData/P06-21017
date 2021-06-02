@@ -1,0 +1,10 @@
+ the objective function to prevent overfitting (&#167;4).
+    We explain how to compute expected loss under some evaluation metrics common in natural language tasks (&#167;5).
+    We then apply this machinery to training log-linear combinations of models for dependency parsing and for machine translation (&#167;6).
+    Finally, we note the connections of minimum risk training to max-margin training and minimum Bayes risk decoding (&#167;7), and recapitulate our results (&#167;8).
+  
+  
+    In this work, we focus on rescoring with loglinear models.
+    In particular, our experiments consider log-linear combinations of a relatively small number of features over entire complex structures, such as trees or translations, known in some previous work as products of experts (Hinton, 1999) or logarithmic opinion pools (Smith et al., 2005).
+    A feature in the combined model might thus be a log probability from an entire submodel.
+    Giving this feature a small or negative weight can discount a submodel that is fooli

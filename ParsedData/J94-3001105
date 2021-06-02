@@ -1,0 +1,7 @@
+ule did not apply, then the last element in the batch output string is a state, not the special character $.
+    We must formulate a rule that will &amp;quot;bleed&amp;quot; the derivation, producing no output at all if its input ends in a state-symbol instead of $.
+    We can achieve this with an anomalous obligatory rule whose output would be infinitely long if its input ever satisfies the conditions for its application.
+    The following rule behaves in this way: It has the effect of filtering strings that do not represent transitions to a final state by forcing indefinitely many insertions of $ when no single $ is present.
+    The output of this rule will be all and only the strings that came from a previous application of a Final rule.
+    The last rule of the grammar is a trivial clean-up rule that produces the grammar's final output strings: This completes the proof of the theorem.
+    We have constructed for any regular relation an ordered sequence of four rules (including a batch rule with finitely m

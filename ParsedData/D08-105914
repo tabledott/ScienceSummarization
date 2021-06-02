@@ -1,0 +1,10 @@
+rs.
+    This observation suggests a combined approach: by using both graph-based information and transition-based information, parsing accuracy can be improved.
+    The beam-search framework we have developed facilitates such a combination.
+    Our graph-based and transition-based parsers share many similarities.
+    Both build a parse tree incrementally, keeping an agenda of comparable state items.
+    Both rank state items by their current scores, and use the averaged perceptron with early update for training.
+    The key differences are the scoring models and incremental parsing processes they use, which must be addressed when combining the parsers.
+    Firstly, we combine the graph-based and the transition-based score models simply by summation.
+    This is possible because both models are global and linear.
+    In particular, the transition-based model can be written as: If we take ET0&#8712;act(y) &#934;(T0, sT0) as the global feature vector &#934;T(y), we have: which has the same form as the graph-base

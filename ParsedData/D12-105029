@@ -1,0 +1,5 @@
+l (Collobert and Weston, 2008) and a representation based on weighted word-link-word tuples arranged into a third-order tensor (Baroni and Lenci, 2010).
+    These representations vary in many respects: the amount of preprocessing and linguistic information involved (the third-order tensor computes semantic representations over parsed corpora), whether the semantic space is the by-product of a learning process (in the neural language model the parameters of the lookup table must be learned), and data requirements (the third-order tensor involves processing billions of words).
+    These representations served as input to three composition methods involving addition, multiplication and a deep recursive autoencoder.
+    Again these methods differ in terms of how they implement compositionality: addition and multiplication are commutative and associative operations and thus ignore word order and, more generally, syntactic structure.
+    In contrast, the recursive autoencoder is syntax-aware as it operates over a p

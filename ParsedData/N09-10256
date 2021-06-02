@@ -1,0 +1,6 @@
+orporate all our new features into a linear model (Och and Ney, 2002) and train them using MIRA (Crammer et al., 2006), following previous work (Watanabe et al., 2007; Chiang et al., 2008).
+    Let e stand for output strings or their derivations, and let h(e) stand for the feature vector for e. Initialize the feature weights w. Then, repeatedly: 10-best translations according to each of: where C = 0.01.
+    This minimization is performed by a variant of sequential minimal optimization (Platt, 1998).
+    Following Chiang et al. (2008), we calculate the sentence B&#63340;&#7431;&#7452; scores in (1), (2), and (3) in the context of some previous 1-best translations.
+    We run 20 of these learners in parallel, and when training is finished, the weight vectors from all iterations of all learners are averaged together.
+    Since the interface between the trainer and the decoder is fairly simple&#8212;for each sentence, the decoder sends the trainer a forest, and the trainer returns a weight update&#8212;it is easy

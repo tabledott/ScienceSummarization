@@ -1,0 +1,9 @@
+.
+    As can be seen in Figure 1, using w = [&#8722;2, 1], Hw(p1) = 9 and Hw(p2) = &#8722;8.
+    The goal of tuning is to learn a weight vector w such that Hw(p) assigns a high score to good policies, and a low score to bad policies.2 To do so, we need information about which policies are good and which are bad.
+    This information is provided by a &#8220;gold&#8221; scoring function G that maps each policy to a real-valued score.
+    Typically this gold function is BLEU (Papineni et al., 2002), though there are several common alternatives (Lavie and Denkowski, 2009; Melamed et al., 2003; Snover et al., 2006; Chiang et al., 2008a).
+    We want to find a weight vector w such that Hw behaves &#8220;similarly&#8221; to G on a candidate space s. We assume a loss function ls(Hw, G) which returns the real-valued loss of using scoring function Hw when the gold scoring function is G and the candidate space is s. Thus, we may say the goal of tuning is to find the weight vector w that minimizes loss.
+  
+  
+    In gene

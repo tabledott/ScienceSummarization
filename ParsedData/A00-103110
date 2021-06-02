@@ -1,0 +1,9 @@
+lexicon that should be used for suffix handling.
+    Should we use all words, or are some of them better suited than others?
+    Accepting that unknown words are most probably infrequent, one can argue that using suffixes of infrequent words in the lexicon is a better approximation for unknown words than using suffixes of frequent words.
+    Therefore, we restrict the procedure of suffix handling to words with a frequency smaller than or equal to some threshold value.
+    Empirically, 10 turned out to be a good choice for this threshold.
+    Additional information that turned out to be useful for the disambiguation process for several corpora and tagsets is capitalization information.
+    Tags are usually not informative about capitalization, but probability distributions of tags around capitalized words are different from those not capitalized.
+    The effect is larger for English, which only capitalizes proper names, and smaller for German, which capitalizes all nouns.
+    We use flags ci that are true if w

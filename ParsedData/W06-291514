@@ -1,0 +1,8 @@
+ has been very effective for classifying topical documents (Joachims, 1998), but also to contrast generative models like NB with discriminative models like SVM.
+    For training SVM, we represent each document as a V-dimensional feature vector, where V is the vocabulary size and each coordinate is the normalized term frequency within the document.
+    We use a linear kernel for SVM and search for the best parameters using grid methods.
+    To evaluate the statistical models, we train them on the documents in the bitterlemons corpus and calculate how accurately each model predicts document perspective in ten-fold cross-validation experiments.
+    Table 2 reports the average classification accuracy across the the 10 folds for each model.
+    The accuracy of a baseline classifier, which randomly assigns the perspective of a document as Palestinian or Israeli, is 0.5, because there are equivalent numbers of documents from the two perspectives.
+    The last column of Table 2 is error reduction relative to SVM.
+   

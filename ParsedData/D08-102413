@@ -1,0 +1,9 @@
+rocessor simultaneously, with each maintaining its own weight vector.
+    A master process distributes different sentences from the tuning set to each of the processors; when each processor finishes decoding a sentence, it transmits the resulting hypotheses, with their losses, to all the other processors and receives any hypotheses waiting from other processors.
+    Those hypotheses were generated from different weight vectors, but can still provide useful information.
+    The sets of hypotheses thus collected are then processed as one batch.
+    When the whole training process is finished, we simply average all the weight vectors from all the processors.
+    Having described our training algorithm, which includes several practical improvements to Watanabe et al.&#8217;s usage of MIRA, we proceed in the remainder of the paper to demonstrate the utility of the our training algorithm on models with large numbers of structurally sensitive features.
+  
+  
+    The first features we explore are based on a line of r

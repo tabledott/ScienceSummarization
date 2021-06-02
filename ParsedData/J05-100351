@@ -1,0 +1,6 @@
+g BestWt(k, &#175;a), BestLoss(k, &#175;a) can be calculated as Loss(k, BestWt(k, &#175;a)).
+    Note that this is only one of a number of methods for finding BestWt(k, &#175;a): Given that this is a one-parameter, convex optimization problem, it is a fairly simple task, and there are many methods which could be used.
+    Unfortunately there does not appear to be an efficient algorithm for LogLoss that is analogous to the ExpLoss algorithm in Figure 4 (at least if the feature selection method is required to pick the feature with highest impact on the loss function at each iteration).
+    A similar observation for LogLoss can be made, in that when the model is updated with a feature/weight pair (k*, d*), many features will have their values for BestWt and BestLoss unchanged.
+    Only those features which co-occur with k* on some example will need to have their values of BestWt and BestLoss updated.
+    However, this observation does not lead to an efficient algorithm: Updating these values is much more expensi

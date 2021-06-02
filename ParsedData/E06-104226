@@ -1,0 +1,10 @@
+ augment the initial clusters.
+    For these runs, we use the classifiers from our initial run as feedback sets.
+    New sentences for clustering are treated like a regular target set.
+    Running TroFi produces new clusters and re-weighted classifiers augmented with newly clustered sentences.
+    There can be as many runs as desired; hence iterative augmentation.
+    We used the iterative augmentation process to build a small example base consisting of the target words from Table 1, as well as another 25 words drawn from the examples of scholars whose work was reviewed in Section 2.
+    It is important to note that in building the example base, we used TroFi with an Active Learning component (see (Birke, 2005)) which improved our average f-score from 53.8% to 64.9% on the original 25 target words.
+    An excerpt from the example base is shown in Figure 2.
+    Each entry includes an ID number and a Nonliteral, Literal, or Unannotated tag.
+    Annotations are from testing or from active learning during example

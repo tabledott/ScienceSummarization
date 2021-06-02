@@ -1,0 +1,8 @@
+ In a standard vector classification problem, there is 0-1 loss: a vector is either classified correctly or it is not.
+    In the structured case, some incorrect structures can be better than others.
+    For example, having the argmax select an alignment missing only one link is better than selecting one with no correct links and a dozen wrong ones.
+    A loss function A(yi, y) quantifies just how incorrect a particular structure y is.
+    Though Tsochantaridis et al. (2004) provide several ways to incorporate loss into the SVM objective, we will use margin re-scaling, as it corresponds to loss usage in another max-margin alignment approach (Taskar et al., 2005).
+    In margin re-scaling, high loss structures must be separated from the correct structure by a larger margin than low loss structures.
+    To allow some misclassifications during training, a soft-margin requirement replaces our maxmargin objective.
+    A slack variable &#65533;i is introduced for each training example xi, to allow the learner to vi

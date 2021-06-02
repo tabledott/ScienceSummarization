@@ -1,0 +1,6 @@
+asks using a probabilistic formulation, giving us a principled approach for combining multiple knowledge sources (using the laws of probability), as well as the ability to derive model parameters automatically from a corpus, using statistical inference techniques.
+    Given all available evidence E about a conversation, the goal is to find the DA sequence U that has the highest posterior probability P(UIE) given that evidence.
+    Applying Bayes' rule we get lihood of U given the evidence.
+    The likelihood is usually much more straightforward to model than the posterior itself.
+    This has to do with the fact that our models are generative or causal in nature, i.e., they describe how the evidence is produced by the underlying DA sequence U. Estimating P(U) requires building a probabilistic discourse grammar, i.e., a statistical model of DA sequences.
+    This can be done using familiar techniques from language modeling for speech recognition, although the sequenced objects in this case are DA labels rather

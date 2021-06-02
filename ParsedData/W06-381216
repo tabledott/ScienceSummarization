@@ -1,0 +1,13 @@
+ions.
+  
+  
+    In this section, some experiments with graphs originating from natural language data are presented.
+    First, we define the notion of cooccurrence graphs, which are used in sections 4.1 and 4.3: Two words co-occur if they can both be found in a certain unit of text, here a sentence.
+    Employing a significance measure, we determine whether their co-occurrences are significant or random.
+    In this case, we use the log-likelihood measure as described in (Dunning 1993).
+    We use the words as nodes in the graph.
+    The weight of an 1 defined for two random variables X and Y as (H(X)+H(Y)H(X,Y))/max(H(X),H(Y)) with H(X) entropy.
+    A value of 0 denotes indepenence, 1 is perfect congruence. edge between two words is set to the significance value of their co-occurrence, if it exceeds a certain threshold.
+    In the experiments, we used significances from 15 on.
+    The entirety of words that are involved in at least one edge together with these edges is called co-occurrence graph (cf.
+    Bie

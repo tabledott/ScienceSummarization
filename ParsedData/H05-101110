@@ -1,0 +1,6 @@
+n the model, but to cut down on the number of alignments we need to consider, we discard any alignments having a non-zero value of the many-to-many feature.
+			the unlinked word feature To control the number of words that get linked to something, we introduce an unlinked word feature that simply counts the total number of unlinked words in both sentences in an aligned sentence pair.
+			2.2 The Conditional-Link-Probability-Based.
+			ModelIn this model we replace the LLR-based word asso ciation statistic with the logarithm of the estimatedconditional probability of two words (or combinations of words) being linked, given that they co occur in a pair of aligned sentences.
+			These estimates are derived from the best alignments according tosome other, simpler model.
+			For example, if for mer occurs 1000 times in English sentences whose French translations contain ancien, and the simpler alignment model links them in 600 of those sentencepairs, we might estimate the conditional link proba bility (CLP) for this wo

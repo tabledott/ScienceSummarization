@@ -1,0 +1,9 @@
+history.
+    Using this type of features makes it possible to directly use the maximum entropy model in the decoding process (Zens and Ney, 2006).
+    The maximum entropy models are trained on all events extracted from training data word alignments using the LBFGS algorithm (Malouf, 2002).
+    Overall for decoding, we use between 20 to 30 features, whose weights are optimized using MERT (Och, 2003), with an implementation based on the lattice MERT (Macherey et.al., 2008).
+    For parallel training data, we use an in-house collection of parallel documents.
+    They come from various sources with a substantial portion coming from the web after using simple heuristics to identify potential document pairs.
+    Therefore, for some documents in the training data, we do not necessarily have the exact clean translations.
+    Table 2 shows the actual statistics about the training data for all five languages we study.
+    For all 5 SOV languages, we use the target side of the parallel data and some more monolingual tex

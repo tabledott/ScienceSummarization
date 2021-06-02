@@ -1,0 +1,9 @@
+by taking the first 100 as ordered lexically.
+    This may have biased the results somewhat towards unreliable web pages, since pages with numeric addresses tend to be newer and more transient.
+    We evaluated two guanularities of feature extraction.
+    The small feature set uses high precision rules to extract occupation (occ), birthday (brthyr), spouse, birth location (brthloc), and school.
+    The large feature set adds higher recall (and therefore noisier) patterns for the previous relationships and as well as parent/child relationships.
+    As can be seen from the table, the highest performing system combines proper nouns, relevant words, and the high precision extracted features (nnp+feat+mi and nnp+feat+tfidf).
+    The extended features (nnp+feat+extfeat+mi) do not give additional benefit to this combination.
+    As can be seen from the table, the large feature set yields better overall performance than the smaller feature set.
+    This suggests that the increased coverage outweighs the introduced no

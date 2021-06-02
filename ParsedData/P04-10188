@@ -1,0 +1,8 @@
+rting probability can be computed using link probabilities (1), as shown now.
+    Since starting a new entity means that does not link with any entities in , the probability of starting ,provided that the marginal is known.
+    In this paper, is approximated as: The linking model (1) and approximated starting model (5) can be used to score paths in the Bell tree.
+    For example, the score for the path (a)-(b2)-(c4) in Figure 1 is the product of the start probability from (a) to (b2) and the linking probability from (b2) to (c4).
+    Since (5) is an approximation, not true probability, a constant is introduced to balance the linking probability and starting probability and the starting probability becomes: (6) If , it penalizes creating new entities; Therefore, is called start penalty.
+    The start penalty can be used to balance entity miss and false alarm.
+    The model depends on all partial entities , which can be very expensive.
+    After making some modeling assumptions, we can approximate it as: From (

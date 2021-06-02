@@ -1,0 +1,11 @@
+ions, such as information extraction, can benefit from subjec- tivity analysis by filtering out opinionated sentences (Riloff et al., 2005).
+  2 OpinionFinder OpinionFinder runs in two modes, batch and inter- active.
+  Document processing is largely the same for both modes.
+  In batch mode, OpinionFinder takes a list of documents to process.
+  Interactive mode pro- vides a front-end that allows a user to query on-line news sources for documents to process.
+  2.1 System Architecture Overview OpinionFinder operates as one large pipeline.
+  Con- ceptually, the pipeline can be divided into two parts.
+  The first part performs mostly general purpose doc- ument processing (e.g., tokenization and part-of- speech tagging).
+  The second part performs the sub- jectivity analysis.
+  The results of the subjectivity analysis are returned to the user in the form of SGML/XML markup of the original documents.
+  2.2 Document Processing For general document processing, OpinionFinder first runs the Sundance partial parser (Rilo

@@ -1,0 +1,6 @@
+ding the next input words, the stack and the existing links.
+    As illustrated in Figure 3, the contextual information consists of the top of stack (ST), the parent (STP) of ST, the leftmost (STLC) and rightmost child (STRC) of ST, the current word (N0), the next three words from the input (N1, N2, N3) and the leftmost child of N0 (N0LC).
+    Given the context s, the next action T is decided as follows: where ACTION = {Shift, ArcRight, ArcLeft, Reduce}.
+    One drawback of deterministic parsing is error propagation, since once an incorrect action is made, the output parse will be incorrect regardless of the subsequent actions.
+    To reduce such error propagation, a parser can keep track of multiple candidate outputs and avoid making decisions too early.
+    Suppose that the parser builds a set of candidates GEN(x) for the input x, the best output F(x) can be decided by considering all actions: Here T0 represents one action in the sequence (act(y)) by which y is built, and sT' represents the corresponding co

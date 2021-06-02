@@ -1,0 +1,7 @@
+ exceptional in Collins&#8217; parsing model.
+    This is partly because the flat structure of base NPs in the Penn Treebank suggested the use of a completely different model by which to generate them.
+    Essentially, the model for generating children of NPB nodes is a &#8220;bigrams of nonterminals&#8221; model.
+    That is, it looks a great deal like a bigram language model, except that the items being generated are not words, but lexicalized nonterminals.
+    Heads of NPB nodes are generated using the normal head-generation parameter, but modifiers are always generated conditioning not on the head, but on the previously generated modifier.
+    That is, we modify expressions (7) and (8) to be Though it is not entirely spelled out in his thesis, Collins considers the previously generated modifier to be the head-child, for all intents and purposes.
+    Thus, the subcat and distance metrics are always irrelevant, since it is as though the current modifier is right next to the head.23 Another consequence of th

@@ -1,0 +1,11 @@
+isambiguation can be handled by including a new kind of operator that splits a cluster into subclusters.
+    We leave this to future work. above a threshold.9 The operation with the highest score is executed, and the parameters are updated with the new optimal values.
+    The QLFs which contain an affected part are reparsed, and operations in the agenda whose score might be affected are re-evaluated.
+    These changes are done very efficiently using inverted indexes.
+    We omit the details here due to space limitations.
+    USP terminates when the agenda is empty, and outputs the current MLN parameters and semantic parses.
+    USP learning uses the same optimization objective as hard EM, and is also guaranteed to find a local optimum since at each step it improves the log-likelihood.
+    It differs from EM in directly optimizing the likelihood instead of a lower bound.
+  
+  
+    Evaluating unsupervised semantic parsers is difficult, because there is no predefined formal language or gold logical forms for the

@@ -1,0 +1,10 @@
+, any model type can be trained using with any of the supported training criteria.
+    The software package includes general function optimization utilities that can be used for discriminative training (&#167;6).
+    These features are implemented without compromising on performance.
+    We show experimentally that cdec uses less memory and time than comparable decoders on a controlled translation task (&#167;7).
+  
+  
+    The decoding pipeline consists of two phases.
+    The first (Figure 1) transforms input, which may be represented as a source language sentence, lattice (Dyer et al., 2008), or context-free forest (Dyer and Resnik, 2010), into a translation forest that has been rescored with all applicable models.
+    In cdec, the only model-specific logic is confined to the first step in the process where an input string (or lattice, etc.) is transduced into the unified hypergraph representation.
+    Since the model-specific code need not worry about integration with rescoring models, it can be made quite 

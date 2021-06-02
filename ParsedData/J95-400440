@@ -1,0 +1,6 @@
+based tagger to return multiple tags for a word by making a simple modification to the contextual transformations described above.
+    The initial-state annotator is the tagging output of the previously described one-best transformation-based tagger.
+    The allowable transformation templates are the same as the contextual transformation templates listed above, but with the rewrite rule: change tag X to tag Y modified to add tag X to tag Y or add tag X to word W. Instead of changing the tagging of a word, transformations now add alternative taggings to a word.
+    When allowing more than one tag per word, there is a trade-off between accuracy and the average number of tags for each word.
+    Ideally, we would like to achieve as large an increase in accuracy with as few extra tags as possible.
+    Therefore, in training we find transformations that maximize the function: Number of corrected errors Number of additional tags In table 3, we present results from first using the one-tag-per-word transformation-base

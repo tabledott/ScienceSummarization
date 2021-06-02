@@ -1,0 +1,10 @@
+ly the sta tistical modeling approach of phrase-based models (in fact, phrase-based models are a special case of factored models).
+			The main difference lies in thepreparation of the training data and the type of mod els learned from the data.
+			5.1 Training.
+			The training data (a parallel corpus) has to be anno tated with the additional factors.
+			For instance, if we want to add part-of-speech information on the input and output side, we need to obtain part-of-speech tagged training data.
+			Typically this involves runningautomatic tools on the corpus, since manually anno tated corpora are rare and expensive to produce.
+			Next, we need to establish a word-alignmentfor all the sentences in the parallel training cor pus.
+			Here, we use the same methodology as in phrase-based models (typically symmetrized GIZA++ alignments).
+			The word alignment methods may operate on the surface forms of words, or on anyof the other factors.
+			In fact, some preliminary ex periments have shown that word alignment based

@@ -1,0 +1,7 @@
+nch side but different English sides, and also because intersecting the language model with the English-side grammar introduces many states into the nonterminal alphabet, which are projected over to the French side.
+    Thus, our decoder&#8217;s search space is many times larger than a monolingual parser&#8217;s would be.
+    To reduce this effect, we apply the following heuristic when filling a cell: if an item falls outside the beam, then any item that would be generated using a lowerscoring rule or a lower-scoring antecedent item is also assumed to fall outside the beam.
+    This heuristic greatly increases decoding speed, at the cost of some search errors.
+    Finally, the decoder has a constraint that prohibits any X from spanning a substring longer than 10 on the French side, corresponding to the maximum length constraint on initial rules during training.
+    This makes the decoding algorithm asymptotically linear-time.
+    The decoder is implemented in Python, an interpreted language, with C++ code fro

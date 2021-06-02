@@ -1,0 +1,11 @@
+ations: we computed thresholds that would give us the maximal number of words, while enabling the pattern access table to reside in main memory.
+    The resulting numbers are 100, 50,20, 100, 100.
+    Corpus window size was determined by starting from a very small window size, defining at random a single window of that size, running the algorithm, and iterating this process with increased window sizes until reaching a desired vocabulary category participation percentage (i.e., x% of the different words in the corpus assigned into categories.
+    We used 5%.)
+    This process has only a negligible effect on running times, because each iteration is run only on a single window, not on the whole corpus.
+    The table below gives some statistics.
+    V is the total number of different words in the corpus.
+    W is the number of words belonging to at least one of our categories.
+    C is the number of categories (after merging and windowing.)
+    A5 is the average category size.
+    Running times are in minutes on 

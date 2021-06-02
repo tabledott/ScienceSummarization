@@ -1,0 +1,9 @@
+s annotated with this grammatical relation in the treebank.
+    A preposition is the head of a PP, a noun of an NP and so on.
+    Defining relations to hold between heads means that the algorithm can, for example, find a subject relation between a noun and a verb without necessarily having to make decisions about the precise boundaries of the subject NP.
+    Suppose we had the POS-tagged sentence shown in Figure 1 and we wanted the algorithm to decide whether, and if so how, Miller (henceforth: the focus) is related to the first verb organized.
+    We then construct an instance for this pair of words by extracting a set of feature values from the sentence.
+    The instance contains information about the verb and the focus: a feature for the word form and a feature for the POS of both.
+    It also has similar features for the local context of the focus.
+    Experiments on the training data suggest an optimal context width of two elements to the left and one to the right.
+    In the present case, elements are w

@@ -1,0 +1,6 @@
+y-valued features if it is multi-valued.
+    Then, for each resulting binaryvalued feature Xb, we create four binary-valued cluster-level features: (1) NONE-Xb is true when Xb is false between mk and each mention in cj; (2) MOST-FALSE-Xb is true when Xb is true between mk and less than half (but at least one) of the mentions in cj; (3) MOST-TRUE-Xb is true when Xb is true between mk and at least half (but not all) of the mentions in cj; and (4) ALL-Xb is true when Xb is true between mk and each mention in cj.
+    Hence, for each Xb, exactly one of these four cluster-level features evaluates to true.
+    Following Yang et al. (2008), we create (1) a positive instance for each discourse-old mention mk and the preceding cluster cj to which it belongs; and (2) a negative instance for mk paired with each partial cluster whose last mention appears between mk and its closest antecedent (i.e., the last mention of cj).
+    Consider again our running example.
+    Three training instances will be generated for He: i({Mo

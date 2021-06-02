@@ -1,0 +1,7 @@
+
+    The word lattice decoder works similarly, only now the decoder keeps track not of the words that have been covered, but of the nodes, given a topological ordering of the nodes.
+    For example, assuming the third lattice in Figure 1 is our input, if the edge with word a is translated, this will cover two untranslated nodes [0,1] in the coverage vector, even though it is only a single word.
+    As with sentencebased decoding, a translation hypothesis is complete when all nodes in the input lattice are covered.
+    The changes described thus far are straightforward adaptations of the underlying phrase-based sentence decoder; however, dealing properly with non-monotonic decoding of word lattices introduces some minor complexity that is worth mentioning.
+    In the sentence decoder, any translation of any span of untranslated words is an allowable extension of a partial translation hypothesis, provided that the coverage vectors of the extension and the partial hypothesis do not intersect.
+    In a non-linear

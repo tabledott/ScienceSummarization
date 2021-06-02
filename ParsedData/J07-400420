@@ -1,0 +1,7 @@
+ parsing, similar to our supertagger.
+    One difference is that we use a Maximum Entropy tagger which allows more flexibility in terms of the features that can be encoded; for example, we have found that using Penn Treebank POS tags as features significantly improves supertagging accuracy.
+    Another difference is that Malouf and van Noord use the random sampling method of Osborne (2000) to allow practical estimation, whereas we construct the complete parse forest but use the supertagger to limit the size of the charts.
+    Their work is also on a somewhat smaller scale, with the Dutch Alpino treebank containing 7,100 sentences, compared with the 36,000 sentences we use for training.
+    Kaplan et al. (2004) present similar work to ours in the context of an LFG grammar for English.
+    The main difference is that the LFG grammar is hand-built, resulting in less ambiguity than an automatically extracted grammar and thus requiring fewer resources for model estimation.
+    One downside of hand-built grammars i

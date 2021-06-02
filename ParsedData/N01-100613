@@ -1,0 +1,7 @@
+onsiderably smaller than the one used to represent the rules.
+    For example, in the case of text chunking task described in section 4, only approximately 30Mb additional memory is required, while the approach of Ramshaw and Marcus (1994) would require approximately 450Mb.
+    As mentioned before, the original algorithm has a number of deficiencies that cause it to run slowly.
+    Among them is the drastic slowdown in rule learning as the scores of the rules decrease.
+    When the best rule has a high score, which places it outside the tail of the score distribution, the rules in the tail will be skipped when the bad counts are calculated, since their good counts are small enough to cause them to be discarded.
+    However, when the best rule is in the tail, many other rules with similar scores can no longer be discarded and their bad counts need to be computed, leading to a progressively longer running time per iteration.
+    Our algorithm does not suffer from the same problem, because the counts are updated

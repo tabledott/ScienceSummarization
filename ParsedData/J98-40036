@@ -1,0 +1,10 @@
+to su, etc.
+    Unfortunately, the correct answer here is ice cream.
+    After initial experiments along these lines, we stepped back and built a generative model of the transliteration process, which goes like this: This divides our problem into five subproblems.
+    Fortunately, there are techniques for coordinating solutions to such subproblems, and for using generative models in the reverse direction.
+    These techniques rely on probabilities and Bayes' theorem.
+    Suppose we build an English phrase generator that produces word sequences according to some probability distribution P(w).
+    And suppose we build an English pronouncer that takes a word sequence and assigns it a set of pronunciations, again probabilistically, according to some P(pi w).
+    Given a pronunciation p, we may want to search for the word sequence w that maximizes P(w Ip).
+    Bayes' theorem lets us equivalently maximize P(w) &#8226; P(plw), exactly the two distributions we have modeled.
+    Extending this notion, we settled down 

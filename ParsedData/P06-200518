@@ -1,0 +1,10 @@
+similarity between the raw SMS text and the normalized English text.
+    The 1st row of Table 5 reports the similarity as 0.5784 in BLEU score, which implies that there are quite a number of English word 3-gram that are common in the raw and normalized messages.
+    The 2nd experiment is carried out using only simple dictionary look-up.
+    Lexical ambiguity is addressed by selecting the highest-frequency normalization candidate, i.e., only unigram LM is used.
+    The performance of the 2nd experiment is 0.6958 in BLEU score.
+    It suggests that the lingo dictionary plus the unigram LM is very useful for SMS normalization.
+    Finally we carry out the 3rd experiment using dictionary look-up plus bi-gram LM.
+    Only a slight improvement of 0.0128 (0.7086-0.6958) is obtained.
+    This is largely because the English words in the lingo dictionary are mostly highfrequency and commonly-used.
+    Thus bi-gram does not show much more discriminative ability than unigram without the help of the phrasebased lexical ma

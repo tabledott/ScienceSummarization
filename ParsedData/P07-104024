@@ -1,0 +1,14 @@
+cores significantly.
+    The combination weights were tuned to optimize three automatic evaluation metrics: TER, BLEU and METEOR.
+    The TER tuning seems to yield very good results on Arabic - the BLEU tuning seems to be better on Chinese.
+    It also seems like METEOR should not be used in tuning due to high insertion rate and low precision.
+    It would be interesting to know which tuning metric results in the best translations in terms of human judgment.
+    However, this would require time consuming evaluations such as human mediated TER post-editing (Snover et al., 2006).
+    The improved confusion network decoding approach allows arbitrary features to be used in the combination.
+    New features may be added in the future.
+    Hypothesis alignment is also very important in confusion network generation.
+    Better alignment methods which take synonymy into account should be investigated.
+    This method could also benefit from more sophisticated word posterior estimation.
+  
+  
+    This work was support

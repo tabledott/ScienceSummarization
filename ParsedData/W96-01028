@@ -1,0 +1,8 @@
+formation from these trees.
+    During the construction of IGTree decision trees, cases are stored as paths of connected nodes.
+    All nodes contain a test (based on one of the features) and a class label (representing the default class at that node).
+    Nodes are connected via arcs denoting the outcomes for the test (feature values).
+    A feature relevance ordering technique (in this case information gain, see Section 2.1) is used to determine the order in which features are used as tests in the tree.
+    This order is fixed in advance, so the maximal depth of the tree is always equal to the number of features, and at the same level of the tree, all nodes have the same test (they are an instance of oblivious decision trees; cf.
+    Langley &amp; Sage, 1994).
+    The reasoning behind this reorganisation (which is in fact a compression) is that when the computation of feature relevance points to one feature clearly being the most important in classification, search can be restricted to matching a test case 

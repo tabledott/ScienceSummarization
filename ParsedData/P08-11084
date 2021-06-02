@@ -1,0 +1,6 @@
+ ... , w, (where w0 = ROOT) is a labeled directed graph G = (V, A) consisting of a set of nodes V = 10, 1, ... , n}1 and a set of labeled directed arcs A C_ V xV xL, i.e., if (i, j, l) E A for i, j E V and l E L, then there is an arc from node i to node j with label l in the graph.
+    A dependency graph G for a sentence x must be a directed tree originating out of the root node 0 and spanning all nodes in V , as exemplified by the graph in figure 1.
+    This is a common constraint in many dependency parsing theories and their implementations.
+    Graph-based dependency parsers parameterize a model over smaller substructures in order to search the space of valid dependency graphs and produce the most likely one.
+    The simplest parameterization is the arc-factored model that defines a real-valued score function for arcs s(i, j, l) and further defines the score of a dependency graph as the sum of the score of all the arcs it contains.
+    As a result, the dependency parsing problem is written: This problem is

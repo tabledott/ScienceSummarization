@@ -1,0 +1,10 @@
+r models.
+    Lastly, we ran our models on the last 347 sentences of the test set to get final AER results.
+    We trained models 1, 2, and HMM on the Hansards data.
+    Following past work, we initialized the translation probabilities of model 1 uniformly over word pairs that occur together in some sentence pair.
+    Models 2 and HMM were initialized with uniform distortion probabilities and model 1 translation probabilities.
+    Each model was trained for 5 iterations, using the same training regimen as in Och and Ney (2003). and joint training across different size training sets and different models, evaluated on the development set.
+    The last column shows the relative reduction in AER.
+    Table 1 shows a summary of the performance of independently and jointly trained models under various training conditions.
+    Quite remarkably, for all training data sizes and all of the models, we see an appreciable reduction in AER, especially on the HMM models.
+    We speculate that since the HMM model provides a 

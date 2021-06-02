@@ -1,0 +1,8 @@
+k for cases in which threading is impossible, such as when two filler-gap dependencies cross.
+    An implementation should be able to handle nested filler-gap dependencies, however.
+    The node labels of sentences with no subjects are transformed from S to SG.
+    This step enables the parsing model to be sensitive to the different contexts in which such subjectless sentences occur as compared to normal S nodes, since the subjectless sentences are functionally acting as noun phrases.
+    Collins&#8217; example of illustrates the utility of this transformation.
+    However, the conditions under which an S may be relabeled are not spelled out; one might assume that every S whose subject (identified in the Penn Treebank with the -SBJ function tag) dominates a null element should be relabeled SG.
+    In actuality, the conditions are much stricter.
+    An S is relabeled SG when the following conditions hold: The latter two conditions appear to be an effort to capture only those subjectless sentences that are base

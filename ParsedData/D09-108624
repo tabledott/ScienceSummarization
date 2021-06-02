@@ -1,0 +1,8 @@
+en generated, conditioned on its parent x, most recent sibling a, and its source analogue y'.
+    As in previous work on grammar induction, we learn the DMV from part-of-speech-tagged targetlanguage text.
+    We use expectation maximization (EM) to maximize the likelihood of the data.
+    Since the likelihood function is nonconvex in the unsupervised case, our choice of initial parameters can have a significant effect on the outcome.
+    Although we could also try many random starting points, the initializer in Klein and Manning (2004) performs quite well.
+    The base dependency parser generates the right dependents of a head separately from the left dependents, which allows O(n3) dynamic programming for an n-word target sentence.
+    Since the QG annotates nonterminals of the grammar with single nodes of t', and we consider two nodes of t' when evaluating the above dependency configurations, QG parsing runs in O(n3m2) for an m-word source sentence.
+    If, however, we restrict candidate senses for a target 

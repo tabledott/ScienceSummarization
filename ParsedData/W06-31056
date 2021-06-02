@@ -1,0 +1,7 @@
+haraoh decoder.
+    Thus, after training, the parameters of the phrase translation model &#966;EM can be used directly for decoding.
+    Significant approximation and pruning is required to train a generative phrase model and table &#8211; such as &#966;EM &#8211; with hidden segmentation and alignment variables using the expectation maximization algorithm (EM).
+    Computing the likelihood of the data for a set of parameters (the e-step) involves summing over exponentially many possible segmentations for each training sentence.
+    Unlike previous attempts to train a similar model (Marcu and Wong, 2002), we allow information from a word-alignment model to inform our approximation.
+    This approach allowed us to directly estimate translation probabilities even for rare phrase pairs, which were estimated heuristically in previous work.
+    In each iteration of EM, we re-estimate each phrase translation probability by summing fractional phrase counts (soft counts) from the data given the current model paramete

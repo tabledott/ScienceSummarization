@@ -1,0 +1,10 @@
+ld) instead of Viterbi decoding, evaluated on the development set. independent training, which gives us a huge boost.
+    The second change, which is more minor and orthogonal, is using posterior decoding instead of Viterbi decoding, which also helps performance for model 2 and HMM, but not model 1.
+    Table 3 quantifies the contribution of each of these two dimensions.
+    Posterior decoding In our results, we have tuned our threshold to minimize AER.
+    It turns out that AER is relatively insensitive to the threshold as Figure 2 shows.
+    There is a large range from 0.2 to 0.5 where posterior decoding outperforms Viterbi decoding.
+    Initialization and convergence In addition to improving performance, joint training also enjoys certain robustness properties.
+    Specialized initialization is absolutely crucial for an independently-trained HMM model.
+    If we initialize the HMM model with uniform translation parameters, the HMM converges to a completely senseless local optimum with AER above 50%.
+    In

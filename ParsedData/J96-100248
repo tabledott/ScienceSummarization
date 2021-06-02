@@ -1,0 +1,9 @@
+.
+    We now describe a maximum entropy model that assigns to each location in a French sentence a score that is a measure of the safety in cutting the sentence at that location.
+    We begin as in the word translation problem, with a training sample of English-French sentence pairs (E, F) randomly extracted from the Hansard corpus.
+    For each sentence pair we use the basic translation model to compute the Viterbi alignment A between E and F. We also use a stochastic part-of-speech tagger as described in Merialdo (1990) to label each word in F with its part of speech.
+    For each position j in F we then construct a (x, y) training event.
+    The value y is rift if a rift belongs at position j and is no-rift otherwise.
+    The context information x is reminiscent of that employed in the word translation application described earlier.
+    It includes a six-word window of French words: three to the left of yi and three to the right of yl.
+    It also includes the part-of-speech tags for these words, and the c

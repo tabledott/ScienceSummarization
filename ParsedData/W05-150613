@@ -1,0 +1,5 @@
+mar G = ?N,T, P, S ? in Chomsky Normal Form (CNF) and an input string w can be represented as a hypergraph of arity 2 as follows.Each item [X, i, j] is represented as a vertex v, corre sponding to the recognition of nonterminal X spanning w from positions i+1 through j. For each production rule X ? YZ in P and three free indices i &lt; j &lt; k, we have a hyperarc ?((Y, i, k), (Z, k, j)), (X, i, k), f ? corresponding tothe instantiation of the inference rule C???????
+			in the de ductive system of (Shieber et al, 1995), and the weight function f is defined as f (a, b) = ab ?Pr(X ? YZ), whichis the same as in (Nederhof, 2003).
+			In this sense, hypergraphs can be thought of as compiled or instantiated ver sions of weighted deductive systems.A parser does nothing more than traverse this hypergraph.
+			In order that derivation values be computed cor rectly, however, we need to traverse the hypergraph in a particular order: Definition 8.
+			The graph projection of a hypergraph H = ?V, E, t,R? is a directed graph 

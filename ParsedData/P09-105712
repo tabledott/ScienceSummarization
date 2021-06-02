@@ -1,0 +1,7 @@
+ar (containing only 459 tag bigrams) during EM training.
+    In the process of minimizing the grammar size, IP ends up removing many good tag bigrams from our grammar set (as seen from the low measured recall of 0.57 for the observed grammar).
+    Next, we proceed to recover some good tag bigrams and expand the grammar in a restricted fashion by making use of the higher-quality dictionary produced by the IP+EM method.
+    We now run EM again on the full grammar (all possible tag bigrams) in combination with this good dictionary (containing fewer entries than the full dictionary).
+    Unlike the original training with full grammar, where EM could choose any tag bigram, now the choice of grammar entries is constrained by the good dictionary model that we provide EM with.
+    This allows EM to recover some of the good tag pairs, and results in a good grammardictionary combination that yields better tagging performance.
+    With these improvements in mind, we embark on an alternating scheme to find better models 

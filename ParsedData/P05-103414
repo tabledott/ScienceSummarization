@@ -1,0 +1,8 @@
+s that the traditional left-to-right decoding approach of string-based systems is inapplicable.
+    Additional challenges are posed by the need to handle treelets&#8212;perhaps discontiguous or overlapping&#8212; and a combinatorially explosive ordering space.
+    Our decoding approach is influenced by ITG (Wu, 97) with several important extensions.
+    First, we employ treelet translation pairs instead of single word translations.
+    Second, instead of modeling rearrangements as either preserving source order or swapping source order, we allow the dependents of a node to be ordered in any arbitrary manner and use the order model described in section 2.4 to estimate probabilities.
+    Finally, we use a log-linear framework for model combination that allows any amount of other information to be modeled.
+    We will initially approach the decoding problem as a bottom up, exhaustive search.
+    We define the set of all possible treelet translation pairs of the subtree rooted at each input node in the following 

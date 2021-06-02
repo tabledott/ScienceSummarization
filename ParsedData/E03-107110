@@ -1,0 +1,10 @@
+seen words (UwoRD), previously unseen word-tag pairs (UTAG) and ambiguous words (AMB), that is, those with more than one tag over the testing, training and development datasets.
+    Note that the unseen word-tag pairs do not include the previously unseen words.
+    We first replicated the results of the MXPOST tagger.
+    In doing so, we discovered a number of minor variations from Ratnaparkhi (1998): MXPOST uses a cutoff of 1 for the current word feature and 5 for other features.
+    However, the current word must have appeared at least 5 times with any tag for the current word feature to be included; otherwise the word is considered rare and morphological features are included instead.
+  
+  
+    Table 4 shows the performance of MXPOST and our reimplementation.3 The third row shows a minor improvement in performance when the correction feature is removed.
+    We also experimented with the default contextual predicate but found it had little impact on the performance.
+    For the remainder of the experiments 

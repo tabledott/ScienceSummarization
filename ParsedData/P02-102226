@@ -1,0 +1,7 @@
+es in order to create new applications.
+    For example, many other NLP tasks might require a sentence splitter and POS tagger, but would not necessarily require resources more specific to IE tasks such as a named entity transducer.
+    The system is in use for a variety of IE and other tasks, sometimes in combination with other sets of application-specific modules.
+    ANNIE consists of the following main processing resources: tokeniser, sentence splitter, POS tagger, gazetteer, finite state transducer (based on GATE's built-in regular expressions over annotations language (Cunningham et al., 2002)), orthomatcher and coreference resolver.
+    The resources communicate via GATE's annotation API, which is a directed graph of arcs bearing arbitrary feature/value data, and nodes rooting this data into document content (in this case text).
+    The tokeniser splits text into simple tokens, such as numbers, punctuation, symbols, and words of different types (e.g. with an initial capital, all upper case, etc.).
+    

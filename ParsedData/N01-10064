@@ -1,0 +1,9 @@
+evaluation set in the order they were learned.
+    The final classification is the one attained when all rules have been applied.
+    As was described in the introductory section, the long training time of TBL poses a serious problem.
+    Various methods have been investigated towards ameliorating this problem, and the following subsections detail two of the approaches.
+    One of the most time-consuming steps in transformation-based learning is the updating step.
+    The iterative nature of the algorithm requires that each newly selected rule be applied to the corpus, and the current state of the corpus updated before the next rule is learned.
+    Ramshaw &amp; Marcus (1994) attempted to reduce the training time of the algorithm by making the update process more efficient.
+    Their method requires each rule to store a list of pointers to samples that it applies to, and for each sample to keep a list of pointers to rules that apply to it.
+    Given these two sets of lists, the system can then easily: These t

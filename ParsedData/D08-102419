@@ -1,0 +1,6 @@
+In some cases, the model will be able to learn a preference for shorter-distance reorderings, as in a phrase-based system, but in the case of a word being reordered across a nonterminal, or two nonterminals being reordered, there is no dependence in the model on the size of the nonterminal or nonterminals involved in reordering.
+    So, for example, if we have rules we might expect that rule (12) is more common in general, but that rule (13) becomes more and more rare as X1 gets larger.
+    The default Hiero features have no way to learn this.
+    To address this defect, we can classify every nonterminal pair occurring on the right-hand side of each grammar rule as &#8220;reordered&#8221; or &#8220;not reordered&#8221;, that is, whether it intersects any other word alignment link or nonterminal pair (see Figure 2).
+    We then define coarse- and fine-grained versions of the structural distortion model.
+    Coarse-grained features Let R be a binaryvalued random variable that indicates whether a nonterminal occ

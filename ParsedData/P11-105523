@@ -1,0 +1,8 @@
+ross relations, precision increases 12 points but recall drops 26 points, for an overall reduction in F1 score from 60.5% to 40.3%.
+    One final advantage of our model is the modest running time.
+    Our implementation of the Riedel et al. (2010) approach required approximately 6 hours to train on NY Times 05-06 and 4 hours to test on the NY Times 07, each without preprocessing.
+    Although they do sampling for inference, the global aggregation variables require reasoning about an exponentially large (in the number of sentences) sample space.
+    In contrast, our approach required approximately one minute to train and less than one second to test, on the same data.
+    This advantage comes from the decomposition that is possible with the deterministic OR aggregation variables.
+    For test, we simply consider each sentence in isolation and during training our approximation to the weighted assignment problem is linear in the number of sentences.
+    The sentential extraction results demonstrates the advantag

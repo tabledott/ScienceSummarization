@@ -1,0 +1,8 @@
+si, ti,j&#192;, where si is the ith sentence in the training data, and ti,j is the jth tree for this sentence).
+    We assume that the parses are distinct, that is, that xi,j 0 xi,j&#182; for j 0 j&#182;.
+    Thus our training data consist of a set of parses, {xi,j : i = 1, ... , n, j = 1, ... , niJ, together with scores Score(xi,j) and log-probabilities L(xi,j).
+    We represent candidate parse trees through m features, hk for k = 1,. .
+    .
+    , m. Each hk is an indicator function, for example, We show that the restriction to binary-valued features is important for the simplicity and efficiency of the algorithms.10 We also assume a vector of m + 1 parameters, a&#175; = {a0, a1, ... , am}.
+    Each ai can take any value in the reals.
+    The ranking function for a parse tree x implied by a parameter vector a&#175; is defined as Given a new test sentence s, with parses xj for j = 1, ... , N, the output of the model is the highest-scoring tree under the ranking function arg max Thus F(x, &#175;a) can be inte

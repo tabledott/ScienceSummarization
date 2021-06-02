@@ -1,0 +1,11 @@
+entical or indistinguishable by the language and translation models.
+    These are recombined by the function Recombine.
+    We expand the search space such that only hypotheses with the same number of target language words are recombined.
+    In the pruning step, we use two different types of pruning.
+    First, we perform pruning relative to the score Q&#710; of the current best hypothesis.
+    We ignore all hypotheses that have a probability lower than log(tp)+&#710;Q, where tp is an adjustable pruning parameter.
+    This type of pruning can be performed when the hypothesis extensions are computed.
+    Second, in histogram pruning (Steinbiss, Tran, and Ney 1994), we maintain only the best Np hypotheses.
+    The two pruning parameters tp and Np have to be optimized with respect to the trade-off between efficiency and quality.
+    In this section, we describe various issues involved in performing an efficient implementation of a search algorithm for the alignment template approach.
+    A very important desig

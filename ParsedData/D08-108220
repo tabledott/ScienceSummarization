@@ -1,0 +1,10 @@
+ined as the output hybrid trees of the top-k (k is set to 50 in our experiments) decoding algorithm, given the learned model parameters.
+    The correct reference hybrid tree is determined by running the Viterbi algorithm on each training NL-MR pair.
+    The feature function is discussed in section 8.2.
+    While conventional perceptron algorithms usually optimize the accuracy measure, we extend it to allow optimization of the F-measure by introducing an explicit separating plane on the feature space that rejects certain predictions even when they score highest.
+    The idea is to find a threshold b after w is learned, such that a prediction with score below b gets rejected.
+    We pick the threshold that leads to the optimal F-measure when applied to the training set.
+    We list in Table 2 the set of features we used.
+    Examples are given based on the hybrid tree in Figure 3.
+    Some of the them are adapted from (Collins and Koo, 2005) for a natural language parsing task.
+    Features 1-5 are indicator f

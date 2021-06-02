@@ -1,0 +1,6 @@
+tions to choose from, and a naive computation of the argmax is O(n), resulting in an O(n2) algorithm.
+    Each performed action changes the partial structures and with it the extracted features and the computed scores.
+    However, these changes are limited to a fixed local context around the attachment point of the action.
+    Thus, we observe that the feature extraction and score calculation can be performed once for each action/location pair in a given sentence, and reused throughout all the iterations.
+    After each iteration we need to update the extracted features and calculated scores for only k locations, where k is a fixed number depending on the window size used in the feature extraction, and usually k &#171; n. Using this technique, we perform only (k + 1)n feature extractions and score calculations for each sentence, that is O(n) feature-extraction operations per sentence.
+    Given the scores for each location, the argmax can then be computed in O(logn) time using a heap, resulting in an O(nlogn

@@ -1,0 +1,9 @@
+ferent features are used to train each binary classifier.
+    In the baseline system, we used the algorithm described by Platt (Platt, 2000) to convert the SVM scores into probabilities by fitting to a sigmoid.
+    When all classifiers used the same set of features, fitting all scores to a single sigmoid was found to give the best performance.
+    Since different feature sets are now used by the classifiers, we trained a separate sigmoid for each classifier.
+    Foster and Stine (2004) show that the pooladjacent-violators (PAV) algorithm (Barlow et al., 1972) provides a better method for converting raw classifier scores to probabilities when Platt&#8217;s algorithm fails.
+    The probabilities resulting from either conversions may not be properly calibrated.
+    So, we binned the probabilities and trained a warping function to calibrate them.
+    For each argument classifier, we used both the methods for converting raw SVM scores into probabilities and calibrated them using a development set.
+    Then, we vis

@@ -1,0 +1,8 @@
+y one-to-many alignments.
+    By enforcing agreement, the two models are effectively restricted to one-to-one (or zero) alignments.
+    Posterior decoding is in principle capable of proposing many-to-many alignments, but these alignments occur infrequently since the posteriors are generally sharply peaked around the Viterbi alignment.
+    In some cases, however, we do get oneto-many alignments in both directions.
+    Another common type of errors are precision errors due to the models overly-aggressively preferring alignments that preserve monotonicity.
+    Our HMM model only uses 11 distortion parameters, which means distortions are not sensitive to the lexical context of the sentences.
+    For example, in one sentence, le is incorrectly aligned to the as a monotonic alignment following another pair of correctly aligned words, and then the monotonicity is broken immediately following le&#8211;the.
+    Here, the model is insensitive to the fact that alignments following articles tend to be monotonic, but alig

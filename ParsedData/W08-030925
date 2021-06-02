@@ -1,0 +1,9 @@
+se 5 items is an insufficient number to get a reliable correlation coefficient and its unclear if averaging over all 6,400 lists would make sense.
+    Furthermore, many of the human judgments of 5 contained ties, further complicating matters.
+    Therefore rather than calculating a correlation coefficient at the sentence-level we instead ascertained how consistent the automatic metrics were with the human judgments.
+    The way that we calculated consistency was the following: for every pairwise comparison of two systems on a single sentence by a person, we counted the automatic metric as being consistent if the relative scores were the same (i.e. the metric assigned a higher score to the higher ranked system).
+    We divided this by the total number of pairwise comparisons to get a percentage.
+    Because the systems generally assign real numbers as scores, we excluded pairs that the human annotators ranked as ties.
+  
+  
+    Tables 8 and 9 report the system-level p for each automatic evaluation metric, aver

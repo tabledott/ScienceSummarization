@@ -1,0 +1,9 @@
+that end of sentence punctuation tends to indicate the end of a field and the beginning of a new one.
+    Grenager et al. (2005) experiment with manually adding boundary states and biasing transitions from these states to not self-loop.
+    We capture this &#8220;boundary&#8221; effect by simply adding a line to our protoype-list, adding a new BOUNDARY state (see figure 2) with a few (hand-chosen) prototypes.
+    Since we utilize a trigram tagger, we are able to naturally capture the effect that the BOUNDARY tokens typically indicate transitions between the fields before and after the boundary token.
+    As a post-processing step, when a token is tagged as a BOUNDARY
+  
+  
+    token it is given the same label as the previous non-BOUNDARY token, which reflects the annotational convention that boundary tokens are given the same label as the field they terminate.
+    Adding the BOUNDARY label yields significant improvements, as indicated by the PROTO+SIM+BOUND setting in Table 5.3, surpassing the best unsupervis

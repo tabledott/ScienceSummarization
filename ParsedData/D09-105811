@@ -1,0 +1,11 @@
+ted as arg max,,v L(w, v; q1) where L(w, v; q1) is defined in an analogous way to L(w, v; q0).
+    Thus w and v are re-estimated to optimize log-likelihood of the labeled examples, with the generative models q1 estimated in step 2.
+    The final output from the algorithm is the set of parameters (w1, v1, q1).
+    Note that it is possible to iterate the method&#8212;steps 2 and 3 can be repeated multiple times (Suzuki and Isozaki, 2008)&#8212;but in our experiments we only performed these steps once.
+  
+  
+    Koo et al. (2008) describe a semi-supervised approach that incorporates cluster-based features, and that gives competitive results on dependency parsing benchmarks.
+    The method is a two-stage approach.
+    First, hierarchical word clusters are derived from unlabeled data using the Brown et al. clustering algorithm (Brown et al., 1992).
+    Second, a new feature set is constructed by representing words by bit-strings of various lengths, corresponding to clusters at different levels of the hierarchy.
+  

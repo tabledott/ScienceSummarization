@@ -1,0 +1,7 @@
+rs the SATs and promotes higher education] (Poon and Domingos, 2008).
+    Role appositive &#8211; the candidate antecedent is headed by a noun and appears as a modifier in an NP whose head is the current mention, e.g., [[actress] Rebecca Schaeffer].
+    This feature is inspired by Haghighi and Klein (2009), who triggered it only if the mention is labeled as a person by the NER.
+    We constrain this heuristic more in our work: we allow this feature to match only if: (a) the mention is labeled as a person, (b) the antecedent is animate (we detail animacy detection in Pass 7), and (c) the antecedent&#8217;s gender is not neutral.
+    Relative pronoun &#8211; the mention is a relative pronoun that modifies the head of the antecedent NP, e.g., [the finance street [which] has already formed in the Waitan district].
+    Acronym &#8211; both mentions are tagged as NNP and one of them is an acronym of the other, e.g., [Agence France Presse] ... [AFP].
+    We use a simple acronym detection algorithm, which marks a men

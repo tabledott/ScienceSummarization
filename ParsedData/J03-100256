@@ -1,0 +1,7 @@
+in the alignment and lexicon probability counts, we introduce the following auxiliary quantities that use the move and swap matrices that are available after performing the hill climbing described above: For the alignment counts c(j  |i; e, f) and the lexicon counts c(f  |e; e, f), we have To obtain the fertility probability counts and the count for p1 efficiently, we introduce the following auxiliary quantities: These quantities do not depend on swaps, since a swap does not change the fertilities of an alignment.
+    For the fertility counts, we have: Using the auxiliary quantities, a count collection algorithm can be formulated that requires about O(max(I, J)2) operations.
+    This is one order of magnitude faster than the straightforward algorithm described above.
+    In practice, we observe that the resulting training is 10&#8211;20 times faster.
+  
+  
+    This work has been partially supported as part of the Verbmobil project (contract number 01 IV 701 T4) by the German Federal Ministry of Education, Sci

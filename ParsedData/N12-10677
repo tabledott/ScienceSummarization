@@ -1,0 +1,9 @@
+t path and let p be the number of matched edits.
+    Assume that there exists another edit sequence e0 with higher total edge weights but p0 &gt; p matching edits.
+    Then we have where q and q0 denote the combined cost of all nonmatching edits in the two paths, respectively.
+    Because p0 &#8722; p &#8805; 1, the right hand side is at most &#8722;(u + 1)|E|.
+    Because q and q0 are positive and bounded by (u + 1)|E|, the left hand side cannot be smaller than or equal to &#8722;(u + 1)|E|.
+    This is a contradiction.
+    Therefore there cannot exist such an edit sequence e0, and e is the sequence with the maximum overlap with the gold-standard annotation.
+    What is left to do is to evaluate the set of edits with respect to the gold standard.
+    This is done by computing precision, recall, and F1 measure (van Rijsbergen, 1979) between the set of system edits {e1, ... , en} and the set of gold edits {g1, ... , gn} for all sentences where we define the intersection between ei and gi as ei &#8745; gi = {e 

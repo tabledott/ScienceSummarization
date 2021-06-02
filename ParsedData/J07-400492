@@ -1,0 +1,8 @@
+y cutoff for features, the &#963; parameter in the Gaussian prior term, the R values used in the supertagger, and so on.
+    All of these were set experimentally using Section 00 as development data.
+  
+  
+    The gold standard for the normal-form model consists of the normal-form derivations in CCGbank.
+    For the dependency model, the gold-standard dependency structures are produced by running our CCG parser over the normal-form derivations.
+    It is essential that the packed charts for each sentence contain the gold standard; for the normalform model this means that our parser must be able to produce the gold-standard derivation from the gold-standard lexical category sequence; and for the dependency model this means that at least one derivation in the chart must produce the goldstandard dependency structure.
+    Not all rule instantiations in CCGbank can be produced by our parser, because some are not instances of combinatory rules, and others are very rare punctuation and type-changing rules which we h

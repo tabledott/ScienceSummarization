@@ -1,0 +1,9 @@
+nt is chosen to be correct.
+    Table 4 show the results when we use SEM-TAG in order to supertag the input and perform LDA.
+    When the boundaries are found, finding the head word additionally does not result in a decrease of performance.
+    However, correctly identifying the head word instead of the boundaries leads to an important increase in performance.
+    Furthermore, note the low recall and high precision of the &#8220;base + arg&#8221; evaluation.
+    In part this is due to the nature of the PropBank corpus that we are using.
+    In particular, because not all predicates in our version of the PropBank are annotated with semantic roles, the supertagger for SEM-TAG will sometimes annotate text without semantic roles when in fact it should contain them.
+    Table 5 shows the results of first supertagging the input with SYNT-TAG and then using a model trained on the DEEP feature set to annotate the resulting syntactic structure with semantic roles.
+    This two-step approach greatly increases performan

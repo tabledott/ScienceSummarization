@@ -1,0 +1,8 @@
+ missile (2), divided by the length of the latter phrase (5).
+    The similarity function Sim is computed using bottom-up dynamic programming, in which the shortest subtrees are processed first.
+    The alignment algorithm returns the similarity score of the trees as well as the optimal mapping between the subtrees of input trees.
+    The pseudocode of this function is presented in the Appendix.
+    In the resulting tree mapping, the pairs of nodes whose NodeSimilarity positively contributed to the alignment are considered parallel.
+    Figure 5 shows two dependency trees and their alignment.
+    As is evident from the Sim definition, we are considering only one-to-one node &#8220;matchings&#8221;: Every node in one tree is mapped to at most one node in another tree.
+    This restriction is necessary because the problem of optimizing many-to-many alignments is NP-hard.7 The subtree flattening performed during the preprocessing stage aims to minimize the negative effect of the restriction on alignment granular

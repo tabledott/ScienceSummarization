@@ -1,0 +1,10 @@
+, then we proceed to compute the similarity s(ti, tj).
+    Thus, restricting nodes by m(ti, tj) is a way to prune the search space of matching subtrees, as shown below.
+    For two dependency trees T1, T2, with root nodes r1 and r2, we define the tree kernel K(T1, T2) as where Kc is a kernel function over children.
+    Let a and b be sequences of indices such that a is a sequence a1 &lt; a2 &lt; ... &lt; an, and likewise for b.
+    Let d(a) = an &#8722; a1 + 1 and l(a) be the length of a.
+    Then we have Kc(ti[c], tj[c]) = The constant 0 &lt; A &lt; 1 is a decay factor that penalizes matching subsequences that are spread out within the child sequences.
+    See Zelenko et al. (2003) for a proof that K is kernel function.
+    Intuitively, whenever we find a pair of matching nodes, we search for all matching subsequences of the children of each node.
+    A matching subsequence of children is a sequence of children a and b such that m(ai, bi) = 1 (bi &lt; n).
+    For each matching pair of nodes (ai, bi) in a mat

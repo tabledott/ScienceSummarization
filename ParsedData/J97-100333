@@ -1,0 +1,6 @@
+3) weighted terms according to tf.idf weights from Information Retrieval (Salton 1989).
+    This weighting function computes, for each word, the number of times it occurs in the document tf, times the inverse of the number of documents that the term occurs in, in a large collection idf, or as in this case, with some normalizing constants.
+    The idea is that terms that commonly occur throughout a collection are not necessarily good indicators of relevance to a query because they are so common, and so their importance is downweighted.
+    Hearst (1993) posited that this argument should also apply to determining which words best distinguish one subtopic from another.
+    However, the estimates of importance that tfidf. makes seem not to be accurate enough within the scope of comparing adjacent pieces of text to justify using this measure, and the results seem more robust weighting the words according to their frequency within the block alone.
+    Another recent analytic technique that makes use of lexical info

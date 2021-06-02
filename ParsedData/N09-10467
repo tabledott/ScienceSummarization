@@ -1,0 +1,8 @@
+d a development and test set by randomly choosing 19 German newspaper articles, identifying all words greater than 6 characters is length, and segmenting each word so that the resulting units could be translated compositionally into English.
+    This resulted in 489 training sentences corresponding to 564 paths for the dev set (which was drawn from 15 articles), and 279 words (302 paths) for the test set (drawn from the remaining 4 articles).
+  
+  
+    We now turn to the problem of modeling word segmentation in a way that facilitates lattice construction.
+    As a starting point, we consider the work of Koehn and Knight (2003) who observe that in most languages that exhibit compounding, the morphemes used to construct compounds frequently also appear as individual tokens.
+    Based on this observation, they propose a model of word segmentation that splits compound words into pieces found in the dictionary based on a variety heuristic scoring criteria.
+    While these models have been reasonably successful (Ko

@@ -1,0 +1,8 @@
+ make sure the categories can connect chained_nodes(Parent, Root).
+    The information needed to guide the generation (given as the predicates chain_rule, non_chain_rule, and chained_nodes) can be computed automatically from the grammar; a program to compile a DCG into these tables has in fact been implemented.
+    The details of the process will not be discussed further.
+    The careful reader will have noticed, however, that no attention has been given to the issue of terminal symbols on the right-hand sides of rules.
+    During the compilation process, the right-hand side of a rule is converted from a list of categories and terminal strings to a list of nodes connected together by the difference-list threading technique used for standard DCG compilation.
+    At that point, terminal strings can be introduced into the string threading and need never be considered further.
+    We turn now to a simple example to give a sense of the order of processing pursued by this generation algorithm.
+    The grammar fragm

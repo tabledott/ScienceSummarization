@@ -1,0 +1,8 @@
+ terminal a. RL is the old left-corner relation.
+    During the prediction step we can ignore incoming states whose RHS nonterminal following the dot cannot have the current input as a left-corner, and then eliminate from the remaining predictions all those whose LHS cannot produce the current input as a left-corner.
+    These filtering steps are very fast, as they involve only table lookup.
+    This technique for speeding up Earley prediction is the exact converse of the &amp;quot;linking&amp;quot; method described by Pereira and Shieber (1987, chapter 6) for improving the efficiency of bottom-up parsers.
+    There, the extended left-corner relation is used for top-down filtering the bottom-up application of grammar rules.
+    In our case, we use linking to provide bottom-up filtering for top-down application of productions.
+    On a test corpus this technique cut the number of generated predictions to almost one-fourth and speeded up parsing by a factor of 3.3.
+    The corpus consisted of 1,143 sentence wit

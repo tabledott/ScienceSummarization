@@ -1,0 +1,20 @@
+ and incor rect translations.
+			Following McDonald et al (2005), only k-best translations are used to form the margins in order to reduce the number of constraints in Eq.
+			3.In the translation task, multiple translations are ac ceptable.
+			Thus, margins for m-oracle translation arecreated, which amount to m ? k large-margin con straints.
+			In this online training, only active features constrained by Eq.
+			3 are kept and updated, unlike offline training in which all possible features have to be extracted and selected in advance.
+			The Lagrange dual form of Eq.
+			3 is: max?(?)?0 ? 1 2 || ? e?,e? ?(e?, e?)
+			( h( f t, e?)
+			h( f t, e?)
+			) ||2 + ? e?,e? ?(e?, e?)L(e?, e?; et) ? ?
+			e?,e? ?(e?, e?)
+			( si( f t, e?)
+			si( f t, e?)
+			) subject to ? e?,e? ?(e?, e?)
+			C (4) with the weight vector update: wi+1 = wi + ? e?,e? ?(e?, e?)
+			( h( f t, e?)
+			h( f t, e?)
+			) (5)Equation 4 is solved using a QP-solver, such as a co ordinate ascent algorithm, by heuristically selecting (e?, e?)
+			and by upda

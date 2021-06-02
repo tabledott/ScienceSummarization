@@ -1,0 +1,12 @@
+ied our proposed method to the test data of CoNLL-2000 shared task, while training with the complete training data.
+    For the kernel function, we use the 2-nd polynomial function.
+    We set the beam width N to 5 tentatively.
+    SVMs training is carried out with the Slight package, which is designed and optimized to handle large sparse feature vector and large numbers of training examples (Joachims, 2000; Joachims, 1999a).
+    It took about 1 day to train 231 classifiers with PC-Linux (Celeron 500Mhz, 512MB).
+    Figure 1 shows the results of our experiments.
+    The all the values of the chunking F-measure are almost 93.5.
+    Especially, our method performs well for the chunk types of high frequency, such as NP, VP and PP.
+  
+  
+    In this paper, we propose Chunk identification analysis based on Support Vector Machines.
+    Although we select features for learning in very straight way &#8212; using all available features such as the words their POS tags without any cut-off threshold for the number of oc

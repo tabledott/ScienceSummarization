@@ -1,0 +1,8 @@
+19 NOCROSSj` must sum over assignments to O(n) neighboring variables {Lij} and {Lk`}.
+    The nonzero summands are assignments where j and E each have exactly one parent.
+    At step 1, 7r def = Qi qLij(false) &#183; Qk qLke(false).
+    At step 2, the marginal belief b(Lij = true) sums over the n nonzero assignments containing i &#8594; j.
+    It is 7r &#183; gLij &#183; Pk &#65533;qLke &#183; PAIRij,k`, where PAIRij,k` is xj` if i &#8594; j crosses k &#8594; E and is 1 otherwise. xj` is some factor value defined by equation (2) to penalize or reward the crossing.
+    Steps 3&#8211;4 are just as in EXACTLY1j.
+    The question is how to compute b(Lij = true) for each i in only O(1) time,20 so that we can propagate each of the O(n2) NOCROSSj` in O(n) time.
+    This is why we allowed xj` to depend only on j, E. We can rewrite the sum b(Lij = true) as crossing k noncrossing k 19A dynamic algorithm could incrementally update the outgoing messages if only a few incoming messages have changed (as in asynchronous BP)

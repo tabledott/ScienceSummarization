@@ -1,0 +1,6 @@
+ses used in the MUC competitions (PERSON, LOCATION, ORGANIZATION), and using the 10 popular Twitter types described earlier.
+    Entity Strings vs.
+    Entity Mentions: DL-Cotrain and LabeledLDA use two different representations for the unlabeled data during learning.
+    LabeledLDA groups together words across all mentions of an entity string, and infers a distribution over its possible types, whereas DL-Cotrain considers the entity mentions separately as unlabeled examples and predicts a type independently for each.
+    In order to ensure that the difference in performance between LabeledLDA and DL-Cotrain is not simply due to this difference in representation, we compare both DL-Cotrain and LabeledLDA using both unlabeled datasets (grouping words by all mentions vs. keeping mentions separate) in Table 11.
+    As expected, DL-Cotrain performs poorly when the unlabeled examples group mentions; this makes sense, since CoTraining uses a discriminative learning algorithm, so when trained on entities and tested 

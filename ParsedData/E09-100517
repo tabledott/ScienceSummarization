@@ -1,0 +1,8 @@
+based WSD.
+    The methods here presented cope with the problem of sequence-labeling, i.e., they disambiguate all the words coocurring in a sequence (typically, all content words of a sentence).
+    All the methods rely on the information represented on some LKB, which typically is some version of WordNet, sometimes enriched with proprietary relations.
+    The results on our datasets, when available, are shown in Table 2.
+    The table also shows the performance of supervised systems.
+    The TexRank algorithm (Mihalcea, 2005) for WSD creates a complete weighted graph (e.g. a graph where every pair of distinct vertices is connected by a weighted edge) formed by the synsets of the words in the input context.
+    The weight of the links joining two synsets is calculated by executing Lesk&#8217;s algorithm (Lesk, 1986) between them, i.e., by calculating the overlap between the words in the glosses of the correspongind senses.
+    Once the complete graph is built, the PageRank algorithm is executed over it and wo

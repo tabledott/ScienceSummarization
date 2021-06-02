@@ -1,0 +1,10 @@
+ound that an initial gain of &#951;0 = 0.1 and batch size between 15 and 30 was optimal for this application.
+  
+  
+    As discussed in Section 5 we performed experiments on both sentences of length &lt; 15 and length &lt; 40.
+    All feature development was done on the length 15 corpus, due to the substantially faster train and test times.
+    This has the unfortunate effect that our features are optimized for shorter sentences and less training data, but we found development on the longer sentences to be infeasible.
+    Our features are divided into two types: lexicon features, which are over words and tags, and grammar features which are over the local subtrees and corresponding span/split (both have access to the entire sentence).
+    We ran two kinds of experiments: a discriminatively trained model, which used only the rules and no other grammar features, and a featurebased model which did make use of grammar features.
+    Both models had access to the lexicon features.
+    We viewed this as equivalent t

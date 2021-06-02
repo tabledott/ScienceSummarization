@@ -1,0 +1,7 @@
+ whether a given OOV word is ill-formed, we form an exemplar for each of its confusion candidates, and extract (word1,word2,position) features.
+    If all its candidates are predicted to be negative by the model, we mark it as correct; otherwise, we treat it as ill-formed, and pass all candidates (not just positively-classified candidates) on to the candidate selection step.
+    For example, given the message way yu lookin shuld be a sin and the OOV word lookin, we would generate context features for each candidate word such as (way,looking,-2), and classify each such candidate.
+    In training, it is possible for the exact same feature vector to occur as both positive and negative exemplars.
+    To prevent positive exemplars being contaminated from the automatic generation, we remove all negative instances in such cases.
+    The (word1,word2,position) features are sparse and sometimes lead to conservative results in illformed word detection.
+    That is, without valid features, the SVM classifier tends to la

@@ -1,0 +1,7 @@
+e which find organizations, thus allowing th e phraser to correctly relabel "Martin Purls" as a person on the basis of a test for common first names.
+  Rule sequences for MUG6 For MUC-6, Alembic relies on three sequences of phraser rules, divided roughly into rules for generatin g NE-specific phrases, those for finding TE-related phrases, and those for ST phrases.
+  The division is only rough , as the NE sequence yields some number of TE-related phrases as a side-effect of searching for named entities .
+  To illustrate this process, consider the following walkthrough sentence, as tagged by the NE rule sequence .
+  But the bragging rights to &lt;org&gt;Coke&lt;/org&gt; s ubiquitous advertising belongs to &lt;org&gt;Creative Artists Agency &lt;/org&gt;, the big &lt;location&gt;Hollywood&lt;/location&gt; talent agency .
+  The org label on "Creative Artists Agency" was set by a predicate that tests for org keywords (like "Agency") .
+  "Coke" was found to be an org elsewhere in the document, and the label was then

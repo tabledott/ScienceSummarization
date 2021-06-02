@@ -1,0 +1,12 @@
+e contain a number of identical words, which serve as a strong clue to the matching process.
+    Alignment is performed using dynamic programming (Gale and Church, 1991) with a weight function based on the number of common words in a sentence pair.
+    This simple method achieves good results for our corpus, because 42% of the words in corresponding sentences are identical words on average.
+    Alignment produces 44,562 pairs of sentences with 1,798,526 words.
+    To evaluate the accuracy of the alignment process, we analyzed 127 sentence pairs from the algorithm&#8217;s output.
+    120(94.5%) alignments were identified as correct alignments.
+    We then use a part-of-speech tagger and chunker (Mikheev, 1997) to identify noun and verb phrases in the sentences.
+    These phrases become the atomic units of the algorithm.
+    We also record for each token its derivational root, using the CELEX(Baayen et al., 1993) database.
+  
+  
+    Given the aforementioned differences between translations, our method builds on

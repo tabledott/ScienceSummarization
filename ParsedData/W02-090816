@@ -1,0 +1,7 @@
+roximation returns a positive result, then the algorithm performs the full comparison.
+    We can do this by introducing another, much shorter vector of canonical attributes, with a bounded length k. If our approximate comparison returns at most p positive results for each term, then the time complexity becomes O(n2k + npm), which, since k is constant, is O(n2 + npm).
+    So as long as we find an approximation function and vector such that p &lt;&lt; n, the system will run much faster and be much more scalable in m, the number of attributes.
+    However, p &lt;&lt; n implies that we are discarding a very large number of potential matches and so there will be a performance penalty.
+    This trade-off is governed by the number of the canonical attributes and how representative they are of the full attribute vector, and thus the term itself.
+    It is also dependent on the functions used to compare the canonical attribute vectors.
+    The canonical vector must contain attributes that best describe the thesaurus 

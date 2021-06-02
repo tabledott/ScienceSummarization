@@ -1,0 +1,5 @@
+cquire SCFG productions, we used Ziff-Davis, a corpus of technical articles and human abstractive summaries.
+    Articles and summaries are paired by document, so the first step was to perform sentence alignment.
+    In the particular case of sentence compression, a simple approach is to just consider compression pairs (f,c), where c is a substring of f. K&amp;M identified only 1,087 such paired sentences in the entire corpus, which represents a recall of 1.75%.
+    For our empirical evaluations, we split the data as follows: among the 1,055 sentences that were taken to train systems described in K&amp;M, we selected the first 32 sentence pairs to be an auxiliary test corpus (for future work), the next 200 sentences to be our development corpus, and the remaining 823 to be our base training corpus (ZD-0), which will be augmented with additional data as explained in the next section.
+    We feel it is important to use a relatively large development corpus, since we will provide in Section 5 detailed analyses o

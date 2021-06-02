@@ -1,0 +1,12 @@
+e 1).
+    Adjectives and PPs.
+    This problem is similar to the previous problem, with the difference being that there are also adjectives preceding the entity.
+    The solution is also similar to the solution to the previous problem.
+    We moved the adjectives from the nested NP into the main NP.
+    These three modifications to the data solved most, but not all, of the inconsistencies.
+    Another source of problems was conjunctions, such as North and South Korea, where North and South are a phrase, but South Korea is an entity.
+    The rest of the errors seemed to be due to annotation errors and other random weirdnesses.
+    We ended up unable to make 0.4% of the entities consistent with the parses, so we omitted those entities from the training and test data.
+    One more change we made to the data was with respect to possessive NPs.
+    When we encountered noun phrases which ended with (POS &#8217;s) or (POS &#8217;), we modified the internal structure of the NP.
+    Originally, these NPs were flat, bu

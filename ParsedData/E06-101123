@@ -1,0 +1,10 @@
+e correct training loss is no longer the Hamming loss.
+    Instead, we use false positives plus false negatives over edge decisions, which balances precision and recall as our ultimate performance metric.
+    As expected, for the basic projective and nonprojective parsers, recall is roughly 5% lower than precision since these models can only pick up at most one parent per word.
+    For the parser that can introduce multiple parents, we see an increase in recall of nearly 3% absolute with a slight drop in precision.
+    These results are very promising and further show the robustness of discriminative online learning with approximate parsing algorithms.
+  
+  
+    We described approximate dependency parsing algorithms that support higher-order features and multiple parents.
+    We showed that these approximations can be combined with online learning to achieve fast parsing with competitive parsing accuracy.
+    These results show that the gain from allowing richer representations outweighs the loss from approxi

@@ -1,0 +1,6 @@
+ent, target word parent is an ancestor of predicate, predicate parent is an ancestor of target word, or otherwise.Because each argument consists of a single be ginning and a single ending, these classifiers can be used to construct a set of potential arguments (by combining each predicted begin with each predicted end after it of the same type).
+			Although this phase identifies typed arguments (i.e. labeled with argument types), the second phasewill re-score each phrase using phrase-based classifiers ? therefore, the goal of the first phase is sim ply to identify non-typed phrase candidates.
+			In thistask, we achieves 98.96% and 88.65% recall (overall, without verb) on the training and the develop ment set, respectively.
+			Because these are the onlycandidates passed to the second phase, the final sys tem performance is upper-bounded by 88.65%.
+			3.3 Second Phase: Argument Classification.
+			The second phase of our system assigns the final argument classes to (a subset) of the argument can didates supplied

@@ -1,0 +1,6 @@
+ algorithms appear to consider the full text of each news article, in addition to temporal cues, to produce sets of topically/temporally related articles.
+    Story content is captured by downloading the HTML and isolating the textual content.
+    A supervised HMM was trained to distinguish story content from surrounding advertisements, etc.2 Over the course of about 8 months, we collected 11,162 clusters, comprising 177,095 articles and averaging 15.8 articles per cluster.
+    The quality of 2 We hand-tagged 1,150 articles to indicate which portions of the text were story content and which were advertisements, image captions, or other unwanted material.
+    We evaluated several classifiers on a 70/30 test train split and found that an HMM trained on a handful of features was most effective in identifying content lines (95% F-measure). these clusters is generally good.
+    Impressionistically, discrete events like sudden disasters, business announcements, and deaths tend to yield tightly focused clusters, whi

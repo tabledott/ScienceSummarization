@@ -1,0 +1,8 @@
+B2n), that is, linear in the length of the input sequence.
+    2.3 Learning Algorithm In this section, we propose guided learning, a Perceptron like algorithm, to learn the weight vector w, as shown in Algorithm 2.
+    We use p'.G to represent the gold standard hypothesis on span p'.
+    For each input sequence Xr and the gold standard sequence of labeling Yr, we first initialize P and Q as in the inference algorithm.
+    Then we select the span for the next move as in Algorithm 1.
+    If p'.S.T, the top hypothesis of the selected span p', is compatible with the gold standard, we update P and Q as in Algorithm 1.
+    Otherwise, we update the weight vector in the Perceptron style, by promoting the features of the gold standard action, and demoting the features of the action of the top hypothesis.
+    Then we re-generate the queue Q with P and the updated weight vector w. Specifically, we first remove all the elements in Q, and then generate hypotheses for all the possible spans based on the context spans in P.

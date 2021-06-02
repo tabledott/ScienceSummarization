@@ -1,0 +1,5 @@
+s domain labels to synsets in WordNet.
+    Since the focus of the WSJ corpus is on business and financial news, we can make use of WordNet Domains to select the set of nouns having at least one synset labeled with a business or finance related domain label.
+    This is similar to the approach taken in (Koeling et al., 2005) where they focus on determining the predominant sense of words in corpora drawn from finance versus sports domains.1 Hence, we select the subset of DSO nouns that have at least one synset labeled with any of these domain labels: commerce, enterprise, money, finance, banking, and economy.
+    This gives a set of 21 nouns: book, business, center, community, condition, field, figure, house, interest, land, line, money, need, number, order, part, power, society, term, use, value.2 For each noun, all the BC examples are used as out-of-domain training data.
+    One-third of the WSJ examples for each noun are set aside as evaluation 1Note however that the coverage of the WordNet Domains resource 

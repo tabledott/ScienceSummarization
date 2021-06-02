@@ -1,0 +1,10 @@
+m a complete constituent analysis of the training sentences to the unparsed corpus used for the original inside-outside algorithm.
+    In the latter case, the new algorithm reduces to the original one.
+    Using a partially parsed corpus has several advantages.
+    First, the the result grammars yield constituent boundaries that cannot be inferred from raw text.
+    In addition, the number of iterations needed to reach a good grammar can be reduced; in extreme cases, a good solution is found from parsed text but not from raw text.
+    Finally, the new algorithm has better time complexity when sufficient bracketing information is provided.
+  
+  
+    Informally, a partially bracketed corpus is a set of sentences annotated with parentheses marking constituent boundaries that any analysis of the corpus should respect.
+    More precisely, we start from a corpus C consisting of bracketed strings, which are pairs c = (w, 8) where w is a string and B is a bracketing of w. For convenience, we will define the length of

@@ -1,0 +1,7 @@
+ar that the graph-based MST model shows a somewhat larger improvement, both on average and for all languages except Czech, German, Portuguese and Slovene.
+    Finally, given that the two base models had the previously best performance for these data sets, the guided models achieve a substantial improvement of the state of the art.
+    While there is no statistically significant difference between the two base models, they are both outperformed by MaltMST (p &lt; 0.0001), which in turn has significantly lower accuracy than MSTMalt (p &lt; 0.0005).
+    An extension to the models described so far would be to iteratively integrate the two parsers in the spirit of pipeline iteration (Hollingshead and Roark, 2007).
+    For example, one could start with a Malt model, use it to train a guided MSTMalt model, then use that as the guide to train a MaltMSTM.,t model, etc.
+    We ran such experiments, but found that accuracy did not increase significantly and in some cases decreased slightly.
+    This was true regardless 

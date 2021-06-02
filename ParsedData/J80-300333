@@ -1,0 +1,7 @@
+ct: KNOW(agent,P) Thus A can INFORM S of P by achieving BsWA(KNOW(S,P)) followed by DECIDE TO BELIEVE(S,A,P).
+    In many cases, agents reason about INFORM acts to be performed (by others or by themselves) where the information for the propositional content is not known at the time of plan construction.
+    For example, A may plan for S to inform A whether P is true.
+    A cannot plan for S to perform INFORM(S,A,P) since this assumes the truth of P. We get around this difficulty by defining INFORMIF, another view of the INFORM act.
+    INFORMIF(speaker, hearer, P) prec: KNOWIF(speaker,P) A W(speaker,INFORMIF(speaker,hearer,P)) effect: KNOWIF(hearer,P) body: B(hearer,W(speaker,KNOWIF(hearer,P))) Similarly, it must be possible for A to plan for S to tell A the referent of a description, without A knowing the referent.
+    This is the role of the INFORMREF act.
+    INFORMREF(speaker, hearer, D(x)) prec: KNOWREF(speaker,D(x)) A W(speaker,INFORMREF(speaker, hearer,D(x))) effect: KNOWREF(hearer,D(x)) body: B(hearer

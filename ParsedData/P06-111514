@@ -1,0 +1,10 @@
+s pseudo-code for KRISP?s training algorithm.
+			KRISP learns a semantic parser it eratively, each iteration improving upon the parserlearned in the previous iteration.
+			In each itera tion, for every production pi of G, KRISP collects positive and negative example sets.
+			In the first iteration, the set P(pi) of positive examples for production pi contains all sentences, si, such thatparse(mi) uses the production pi.
+			The set of nega tive examples,N (pi), for production pi includes all of the remaining training sentences.
+			Using thesepositive and negative examples, an SVM classi fier 2, Cpi, is trained for each production pi usinga normalized string subsequence kernel.
+			Following the framework of Lodhi et al (2002), we de fine a kernel between two strings as the number of common subsequences they share.
+			One difference, however, is that their strings are over characters while our strings are over words.
+			The more the two strings share, the greater the similarity score will be.
+			Normally, SVM cl

@@ -1,0 +1,11 @@
+were found successfully.
+			Our algorithm generates the tree breadth-search along a frontier.
+			In the mth iteration we only searchfor patterns containingm terminal symbols.
+			Regardless of whether we find a particular pattern, we cre ate a node for it in the tree.
+			If the pattern was found in the corpus, its node is marked active.
+			Otherwise, it is marked inactive.
+			For found patterns, we storeeither the endpoints of the suffix array range con taining the phrase (if it is contiguous), or the list oflocations at which the phrase is found (if it is dis contiguous).
+			We can also store the extracted rules.
+			9 Whenever a pattern is successfully found, we add all patterns with m + 1 terminals that are prefixed by it 9Conveniently, the implementation of Chiang (2007) uses aprefix tree grammar encoding, as described in Klein and Manning (2001).
+			Our implementation decorates this tree with addi tional information required by our algorithms.
+			to the frontier for processing in the next iteration.To sear

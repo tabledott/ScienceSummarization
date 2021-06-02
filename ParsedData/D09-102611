@@ -1,0 +1,6 @@
+ere nwi &#8722;i,j is the count of word wi in topic j, that does not include the current assignment zi, a missing subscript or superscript (e.g. n(&#183;) &#8722;i,j)) indicates a summation over that dimension, and 1 is a vector of 1&#8217;s of appropriate dimension.
+    Although the equation above looks exactly the same as that of LDA, we have an important distinction in that, the target topic j is restricted to belong to the set of labels, i.e., j &#8712; X(d).
+    Once the topic multinomials ,C3 are learned from the training set, one can perform inference on any new labeled test document using Gibbs sampling restricted to its tags, to determine its per-word label assignments z.
+    In addition, one can also compute its posterior distribution &#952; over topics by appropriately normalizing the topic assignments z.
+    It should now be apparent to the reader how the new model addresses some of the problems in multi-labeled corpora that we highlighted in Section 1.
+    For example, since there is a one-to-one

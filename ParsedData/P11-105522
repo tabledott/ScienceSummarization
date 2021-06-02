@@ -1,0 +1,8 @@
+   Since, in general, sentences are much more likely to describe a contains relation, this overlap leads to a situation were almost none of the administrate division matches are true ones, and we cannot accurately learn an extractor.
+    However, we can still learn to accurately extract the contains relation, despite the distracting matches.
+    Similarly, the place of birth and place of death relations tend to overlap, since it is often the case that people are born and die in the same city.
+    In both cases, the precision outperforms the labeling accuracy and the recall is relatively high.
+    To measure the impact of modeling overlapping relations, we also evaluated a simple, restricted baseline.
+    Instead of labeling each entity pair with the set of all true Freebase facts, we created a dataset where each true relation was used to create a different training example.
+    Training MULTIR on this data simulates effects of conflicting supervision that can come from not modeling overlaps.
+    On average ac

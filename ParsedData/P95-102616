@@ -1,0 +1,9 @@
+a dictionary definition may be (and typically are) correctly reclassified as iterative training proceeds.
+    The redundancy of language with respect to collocation makes the process primarily self-correcting.
+    However, certain strong collocates may become entrenched as indicators for the wrong class.
+    We discourage such behavior in the training algorithm by two techniques: 1) incrementally increasing the width of the context window after intermediate convergence (which periodically adds new feature values to shake up the system) and 2) randomly perturbing the class-inclusion threshold, similar to simulated annealing.
+  
+  
+    The algorithm performs well using only local collocational information, treating each token of the target word independently.
+    However, accuracy can be improved by also exploiting the fact that all occurrences of a word in the discourse are likely to exhibit the same sense.
+    This property may be utilized in two places, either once at the end of Step 4 after the algorithm ha

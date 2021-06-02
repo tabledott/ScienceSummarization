@@ -1,0 +1,10 @@
+d-Backward (FB) or Baum&#8212;Welch algorithm (Baum and Eagon 1967; Jelinek 1976; Bahl, Jelinek, and Mercer 1983), which iteratively constructs a sequence of models that improve the probability of the training data.
+    The advantage of this approach is that it does not require any tagging of the text, but makes the assumption that the correct model is the one in which tags are used to best predict the word sequence.
+  
+  
+    The Viterbi algorithm is easily implemented using a dynamic programming scheme (Bellman 1957).
+    The Maximum Likelihood algorithm appears more complex at first glance, because it involves computing the sum of the probabilities of a large number of alignments.
+    However, in the case of a hidden Markov model, these computations can be arranged in a way similar to the one used during the FB algorithm, so that the overall amount of computation needed becomes linear in the length of the sentence (Baum and Eagon 1967).
+  
+  
+    The main objective of this paper is to compare RF and ML tra

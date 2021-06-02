@@ -1,0 +1,6 @@
+modification (by &amp;quot;josei-wo&amp;quot;) during the parsing process, which precludes the chunk &amp;quot;kono-honwo&amp;quot; from modifying &amp;quot;sagasiteiru&amp;quot; since there is a strict constraint about double-accusative modification that will be learned from training examples.
+    We decided to take into consideration all such modification information by using functional words or inflection forms of modifiers.
+    Using such information about modifiers in the training phase has no difficulty since they are clearly available in a tree-bank.
+    On the other hand, they are not known in the parsing phase of the test data.
+    This problem can be easily solved if we adopt a bottom-up parsing algorithm and attach the modification information dynamically to the newly constructed phrases (the chunks that become the head of the phrases).
+    As we describe later we apply a beam search for parsing, and it is possible to keep several intermediate solutions while suppressing the combinatorial explosion

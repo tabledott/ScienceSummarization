@@ -1,0 +1,7 @@
+training error is bounded above by Thus, in order to greedily minimize an upper bound on training error, on each iteration we should search for the weak hypothesis ht and the weight at that minimize Z.
+    In our implementation, we make perhaps the simplest choice of weak hypothesis.
+    Each ht is a function that predicts a label (+1 or &#8212;1) on examples containing a particular feature xt, while abstaining on other examples: The prediction of the strong hypothesis can then be written as We now briefly describe how to choose ht and at at each iteration.
+    Our derivation is slightly different from the one presented in (Schapire and Singer 98) as we restrict at to be positive.
+    Zt can be written as follows Following the derivation of Schapire and Singer, providing that W+ &gt; W_, Equ.
+    (4) is minimized by setting Since a feature may be present in only a few examples, W_ can be in practice very small or even 0, leading to extreme confidence values.
+    To prevent this we &amp;quot;smooth&amp;quot; t

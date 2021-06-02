@@ -1,0 +1,12 @@
+another.
+    If two spans do overlap, we call this a crossing.
+    Figure 1 shows an example of an English parse along with the alignment between the English and French words (shown with dotted lines).
+    The English word &#8220;not&#8221; is aligned to the two French words &#8220;ne&#8221; and &#8220;pas&#8221; and thus has a span of [1,3].
+    The main English verb &#8220;change&#8221; is aligned to the French &#8220;modifie&#8221; and has a span of [2,2].
+    The two spans overlap and thus there is a crossing.
+    This definition is asymmetric (i.e. what is a crossing when moving from English to French is not guaranteed to be a crossing when moving from French to English).
+    However, we only pursue translation direction since that is the one for which we have parsed data.
+  
+  
+    To calculate spans, we need aligned pairs of English and French sentences along with parses for the English sentences.
+    Our aligned data comes from a corpus described in (Och and Ney, 2000) which contains 500 sentence pair

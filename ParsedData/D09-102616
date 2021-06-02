@@ -1,0 +1,11 @@
+rpus is highly multiply labeled: almost 90% of of the documents have more than one tag.
+    (For comparison, less than one third of the news documents in the popular RCV1-v2 collection of newswire are multiply labeled).
+    We will refer to this collection of data as the del.icio.us tag dataset.
+  
+  
+    A first question we ask of Labeled LDA is how its topics compare with those learned by traditional LDA on the same collection of documents.
+    We ran our implementations of Labeled LDA and LDA on the del.icio.us corpus described above.
+    Both are based on the standard collapsed Gibbs sampler, with the constraints for Labeled LDA implemented as in Section 2.
+    Figure 2: Comparison of some of the 20 topics learned on del.icio.us by Labeled LDA (left) and traditional LDA (right), with representative words for each topic shown in the boxes.
+    Labeled LDA&#8217;s topics are named by their associated tag.
+    Arrows from right-to-left show the mapping of LDA topics to the closest Labeled LDA topic by cosine

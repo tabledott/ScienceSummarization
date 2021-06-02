@@ -1,0 +1,11 @@
+ariations on our lexical features: (1) omitting all words that are not verbs and (2) omitting all function words.
+    In combination with the other lexical features, they gave a small boost to precision, but not large enough to justify the increased demand on our computational resources.
+    In addition to lexical features we extract a number of features based on syntax.
+    In order to generate these features we parse each sentence with the broad-coverage dependency parser MINIPAR (Lin, 1998).
+    A dependency parse consists of a set of words and chunks (e.g.
+    &#8216;Edwin Hubble&#8217;, &#8216;Missouri&#8217;, &#8216;born&#8217;), linked by directional dependencies (e.g.
+    &#8216;pred&#8217;, &#8216;lex-mod&#8217;), as in Figure 1.
+    For each sentence we extract a dependency path between each pair of entities.
+    A dependency path consists of a series of dependencies, directions and words/chunks representing a traversal of the parse.
+    Part-of-speech tags are not included in the dependency path.
+ 

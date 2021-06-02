@@ -1,0 +1,17 @@
+?bsz ? Dirichlet(?
+			b) [binary symbol productions] ??For each child symbol s?
+			S: ????Uszs?
+			DP(?
+			U ,?s?) [unary subsymbol prod.]
+			??For each pair of children symbols (s?, s??)
+			S ? S: ????Bszs?s??
+			DP(?
+			B ,?s??
+			T s??)
+			[binary subsymbol] For each node i in the parse tree: ?ti ? Multinomial(?Tsizi) [choose rule type] ?If ti = EMISSION: ??xi ? Multinomial(?Esizi) [emit terminal symbol] ?If ti = UNARY-PRODUCTION: ??sL(i) ? Multinomial(?
+			u sizi) [generate child symbol] ??zL(i) ? Multinomial(?
+			U sizisL(i)) [child subsymbol] ?If ti = BINARY-PRODUCTION: ??(sL(i), sR(i)) ? Mult(?sizi) [children symbols] ??(zL(i), zR(i)) ? Mult(?
+			B sizisL(i)sR(i)) [subsymbols] 2.6 Variational inference.
+			We present an inference algorithm for the HDP PCFG model described in Section 2.4, which can also be adapted to the HDP-PCFG-GR model with a bit more bookkeeping.
+			Most previous inference algorithms for DP-based models involve sampling(Escobar and West, 1995; Teh et al, 2006).
+			How ever, we chose

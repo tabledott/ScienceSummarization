@@ -1,0 +1,9 @@
+f merit considers the Model 1 scores of not only the words inside a given cell, but also all the words not included in the source and target spans, as in Moore (2003) and Vogel (2005).
+    Like Zhang and Gildea (2005), it is used to prune bitext cells rather than score phrases.
+    The total score is the product of the Model 1 probabilities for each column; &#8220;inside&#8221; columns in the range [l, m] are scored according to the sum (or maximum) of Model 1 probabilities for [i, j], and &#8220;outside&#8221; columns use the sum (or maximum) of all probabilities not in the range [i, j].
+    Our pruning differs from Zhang and Gildea (2005) in two major ways.
+    First, we perform pruning using both directions of the IBM Model 1 scores; instead of a single figure of merit V , we have two: VF and VB.
+    Only those spans that pass the pruning threshold in both directions are kept.
+    Second, we allow whole spans to be pruned.
+    The figure of merit for a span is VF (i, j) = maxl,m VF (i, j,l, m).
+    Only sp

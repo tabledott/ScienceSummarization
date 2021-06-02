@@ -1,0 +1,10 @@
+04) for the models in both directions.
+    Intersection eliminates the spurious alignments, but at the expense of recall.
+    Intersection after training produces alignments that both models agree on.
+    The joint training procedure we describe below builds on this idea by encouraging the models to agree during training.
+    Consider the output of the jointly trained HMMs in Figure 1 (bottom).
+    The garbage-collecting rare word is no longer a problem.
+    Not only are the individual E&#8212;*F and F&#8212;*E jointly-trained models better than their independently-trained counterparts, the jointlytrained intersected model also provides a significant overall gain over the independently-trained intersected model.
+    We maintain both high precision and recall.
+    Before we introduce the objective function for joint training, we will write the two directional models in a symmetric way so that they share the same alignment spaces.
+    We first replace the asymmetric alignments a with a set of indicator variable

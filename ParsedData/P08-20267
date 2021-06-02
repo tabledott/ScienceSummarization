@@ -1,0 +1,14 @@
+ not provide separate precision and recall numbers.
+    However we can see that the Medline self-trained parser achieves an f-score of 84.3%, which is an absolute reduction in error of 4.1%.
+    This corresponds to an error rate reduction of 20% over the L/C baseline.
+  
+  
+    Prior to the above experiment on the test data, we did several preliminary experiments on development data from the Genia Treebank.
+    These results are summarized in Figure 2.
+    Here we show the f-score for four versions of the parser as a function of number of self-training sentences.
+    The dashed line on the bottom is the raw C/J parser with no self-training.
+    At 80.4, it is clearly the worst of the lot.
+    On the other hand, it is already better than the 80.2% best previous result for biomedical data.
+    This is solely due to the introduction of the 50-best reranker which distinguishes the C/J parser from the preceding Charniak parser.
+    The almost flat line above it is the C/J parser with NANC self-training data.
+    A

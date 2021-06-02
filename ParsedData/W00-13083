@@ -1,0 +1,6 @@
+ for estimating the probability of a tag sequence ti...t&#8222; given a sentence w1.. .w: ,=.
+    As usual, tagging is the process of assigning the maximum likelihood tag sequence to a string of words.
+    The idea of maximum entropy modeling is to choose the probability distribution p that has the highest entropy out of those distributions that satisfy a certain set of constraints.
+    The constraints restrict the model to behave in accordance with a set of statistics collected from the training data.
+    The statistics are expressed as the expected values of appropriate functions defined on the contexts h and tags t. In particular, the constraints demand that the expectations of the features for the model match the empirical expectations of the features over the training data.
+    For example, if we want to constrain the model to tag make as a verb or noun with the same frequency as the empirical model induced by the training data, we define the features: fl(h,t) = 1 iff w = make and t = NN f2(h,t) = 1 iff 

@@ -1,0 +1,7 @@
+ occurrences of swallow and 1 occurrence of crow, and 0 occurrence of all other words, also as part of 100 data for the subject slot of fly.
+    In this case, our method would select the model that stops generalizing at bird, swallow, eagle, etc., because the description length for the same subtree now is 86.22 + 3.32 = 89.54 if generalized, and 55.04 + 33.22 = 88.26 if not generalized.
+    These examples seem to indicate that our MDL-based method would choose to generalize, even when there are relatively large differences in frequencies of words within a class, but knows enough to stop generalizing when the discrepancy in frequencies is especially noticeable (relative to the given sample size).
+  
+  
+    We applied our generalization method to large corpora and inspected the obtained tree cut models to see if they agreed with human intuition.
+    In our experiments, we extracted verbs and their case frame slots (verb, slot _name , slot _value triples) from the tagged texts of the Wall Street Journal corpus (

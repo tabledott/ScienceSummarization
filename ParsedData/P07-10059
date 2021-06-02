@@ -1,0 +1,9 @@
+ing complexity at all because the source string is fixed.
+    In principle we could add features that depend on arbitrary source-side context.
+    To incorporate WSD into Hiero, we use the translations proposed by the WSD system to help Hiero obtain a better or more probable derivation during the translation of each source sentence.
+    To achieve this, when a grammar rule R is considered during decoding, and we recognize that some of the terminal symbols (words) in &#945; are also chosen by the WSD system as translations for some terminal symbols (words) in -y, we compute the following features: a negative weight, rewards rules that use translations suggested by the WSD module.
+    Note that we can take the negative logarithm of the rule/derivation weights and think of them as costs rather than probabilities.
+  
+  
+    Our experiments were for Chinese to English translation.
+    Hence, in the context of our work, a synchronous CFG grammar rule X &#8212;* (-y, &#945;) gathered by Hiero consists of a Chinese p

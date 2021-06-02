@@ -1,0 +1,9 @@
+cmi cmoThey 1 2 - - sold 2 0 - 1 51,200 3 4 - - cars 4 2 - 3 in 5 2 4 - 7the 6 7 - - U.S. 7 5 - 6 Table 1: Higher-order factors for an example sentence.
+			For simplicity, labels of the factors have been omitted.
+			A first-ordermodel considers only ?h, m?.
+			The second-order model of McDonald and Pereira (2006) considers ?h, m, ch?.
+			For the PP attachment decision (factor in row 5), the higher-order model allows us to define features that relate the verb (?sold?)
+			with the content word of the prepositional phrase (?U.S.?).
+			second-order features through a function ?2(x, h, m, c) which maps a head, a modifierand a child in a feature vector in Rd2 . The param eters of the model are a collection of four vectors for each dependency label: wl1 ? Rd1 as in the first-order model; and wlh,wlmi and wlmo, all three in Rd2 and each associated to one of the adjacent dependencies in the factor.
+			The score of a factor is: score2(w,x, ?h, m, l, ch, cmi, cmo?)
+			= ?1(x, h, m) ? wl1 + ?2(x, h, m, ch) ? wlh + ?2(x, 

@@ -1,0 +1,11 @@
+d X2, we assume a set of features F (which can be thought of as binary rules), and take W1 = W2 = F, rule independence reduces to the Naive Bayes independence assumption.
+    The following theorem is not difficult to prove; we omit the proof.
+    Theorem 1 View independence implies rule independence.
+  
+  
+    Blum and Mitchell&#8217;s paper suggests that rules that agree on unlabelled instances are useful in bootstrapping.
+    Note that the agreement rate between rules makes no reference to labels; it can be determined from unlabeled data.
+    The algorithm that Blum and Mitchell describe does not explicitly search for rules with good agreement; nor does agreement rate play any direct role in the learnability proof given in the Blum and Mitchell paper.
+    The second lack is emended in (Dasgupta et al., 2001).
+    They show that, if view independence is satisfied, then the agreement rate between opposing-view rules F and G upper bounds the error of F (or G).
+    The following statement of the theorem is simp

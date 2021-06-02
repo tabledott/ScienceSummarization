@@ -1,0 +1,8 @@
+n that rule choices are independent.
+    Sentences with more than one derivation accumulate the probability of all derivations that generate them.
+    Through recursion, infinite languages can be specified; an important mathematical question in this context is whether or not such a grammar is consistent &#8211; whether it assigns some probability to infinite derivations, or whether all derivations are guaranteed to terminate.
+    Even if a PCFG is consistent, it would appear to have another drawback: it only assigns probabilities to complete sentences of its language.
+    This is as inconvenient for speech recognition as it is for modeling reading times.
+    Stolcke&#8217;s algorithm solves this problem by computing, at each word of an input string, the prefix probability.
+    This is the sum of the probabilities of all derivations whose yield is compatible with the string seen so far.
+    If the grammar is consistent (the probabilities of all derivations sum to 1.0) then subtracting the prefix probability fr

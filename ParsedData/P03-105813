@@ -1,0 +1,11 @@
+s a relatively large difference of 0.231 between P1 and P1-Baseline of sense).
+    This demonstrates that the parallel text alignment approach to acquiring training examples can yield good results.
+    For the remaining nouns (art, authority, channel, church, circuit, facility, grip, spade), the accuracy difference between M1 and P1 is at least 0.10.
+    Henceforth, we shall refer to this set of 8 nouns as &#8220;difficult&#8221; nouns.
+    We will give an analysis of the reason for the accuracy difference between M1 and P1 in the next section.
+  
+  
+    To see why there is still a difference between the accuracy of the two approaches, we first examined the quality of the training examples obtained through parallel text alignment.
+    If the automatically acquired training examples are noisy, then this could account for the lower P1 score.
+    The word alignment output of GIZA++ contains much noise in general (especially for the low frequency words).
+    However, note that in our approach, we only select the 

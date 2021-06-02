@@ -1,0 +1,9 @@
+ condition is weak; for instance, stopwords almost always have a translation on the other side, so if a few of the content For each candidate sentence pair, we need a reliable way of deciding whether the two sentences in the pair are mutual translations.
+    This is achieved by a Maximum Entropy (ME) classifier (described at length in Section 3), which is the core component of our system.
+    Those pairs that are classified as being translations of each other constitute the output of the system.
+  
+  
+    In the Maximum Entropy (ME) statistical modeling framework, we impose constraints on the model of our data by defining a set of feature functions.
+    These feature functions emphasize properties of the data that we believe to be useful for the modeling task.
+    For example, for a sentence pair sp, the word overlap (the percentage of words in either sentence that have a translation in the other) might be a useful indicator of whether the sentences are parallel.
+    We therefore define a feature function f (

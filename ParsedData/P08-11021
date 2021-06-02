@@ -1,0 +1,6 @@
+Entropy Model (ME) (Ratnaparkhi and Adwait, 1996), and Conditional Random Fields (CRFs) (Lafferty et al., 2001).
+    CRFs have the advantage of flexibility in representing features compared to generative ones such as HMM, and usually behaves the best in the two tasks.
+    Another widely used discriminative method is the perceptron algorithm (Collins, 2002), which achieves comparable performance to CRFs with much faster training, so we base this work on the perceptron.
+    To segment and tag a character sequence, there are two strategies to choose: performing POS tagging following segmentation; or joint segmentation and POS tagging (Joint S&amp;T).
+    Since the typical approach of discriminative models treats segmentation as a labelling problem by assigning each character a boundary tag (Xue and Shen, 2003), Joint S&amp;T can be conducted in a labelling fashion by expanding boundary tags to include POS information (Ng and Low, 2004).
+    Compared to performing segmentation and POS tagging one at a time, Joint

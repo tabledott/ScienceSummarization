@@ -1,0 +1,9 @@
+dentify theme intersections, sentences must be compared.
+    To do this, we need a sentence representation that emphasizes sentence features that are relevant for comparison such as dependencies between sentence constituents, while ignoring irrelevant features such as constituent ordering.
+    Since predicateargument structure is a natural way to represent constituent dependencies, we chose a dependency based representation called DSYNT (Kittredge and Mel'aik, 1983).
+    An example of a sentence and its DSYNT tree is shown in Figure 3.
+    Each non-auxiliary word in the sentence has a node in the DSYNT tree, and this node is connected to its direct dependents.
+    Grammatical features of each word are also kept in the node.
+    In order to facilitate comparison, words are kept in canonical form.
+    In order to construct a DSYNT we first run our sentences through Collin's robust, statistical parser (Collins, 1996).
+    We developed a rulebased component that transforms the phrasestructure output of the parser

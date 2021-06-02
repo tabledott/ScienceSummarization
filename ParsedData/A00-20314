@@ -1,0 +1,6 @@
+course, if features 1 through i only co-occur a few times in the training, this value may not be reliable, so the empirical probability is usually smoothed: The values for Ai can then be determined according to the number of occurrences of features 1 through i together in the training.
+    One way to think about equation 1 (and specifically, the notion that j will depend on the values of Ii fn) is as follows: We begin with the prior probability of f. If we have data indicating P(fIfi), we multiply in that likelihood, while dividing out the original prior.
+    If we have data for P( fl f2), we multiply that in while dividing out the P (f in) term.
+    This is repeated for each piece of feature data we have; at each point, we are adjusting the probability we already have estimated.
+    If knowledge about feature fi makes f more likely than with just fi_i, the term where fi is added will be greater than one and the running probability will be adjusted upward.
+    This gives us the new probability shown in equati

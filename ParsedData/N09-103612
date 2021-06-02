@@ -1,0 +1,6 @@
+to generate a fresh Word using the CFG rules expanding Word into a string of Phonemes.
+    We assume for now that all CFG rules RX expanding the nonterminal X &#8712; N have the same probability (although we will explore estimating &#952; below), so the base distribution HWord is a &#8220;monkeys banging on typewriters&#8221; model.
+    That means the unigram adaptor grammar implements the Goldwater et al. (2006a) unigram word segmentation model, and in fact it produces segmentations of similar accuracies, and exhibits the same characteristic undersegmentation errors.
+    As Goldwater et al. point out, because Words are the only units of generalization available to a unigram model it tends to misanalyse collocations as words, resulting in a marked tendancy to undersegment.
+    Goldwater et al. demonstrate that modelling bigram dependencies mitigates this undersegmentation.
+    While adaptor grammars cannot express the Goldwater et al. bigram model, they can get much the same effect by directly modelling collo

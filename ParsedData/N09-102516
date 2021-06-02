@@ -1,0 +1,10 @@
+ in both cases that one-count rules are strongly penalized, as expected.
+    Table 3 shows word-insertion feature weights.
+    The system rewards insertion of forms of be; examples 1&#8211;3 in Figure 1 show typical improved translations that result.
+    Among determiners, inserting a is rewarded, while inserting the is punished.
+    This seems to be because the is often part of a fixed phrase, such as the White House, and therefore comes naturally as part of larger phrasal rules.
+    Inserting the outside these fixed phrases is a risk that the generative model is too inclined to take.
+    We also note that the system learns to punish unmotivated insertions of commas and periods, which get into our grammar via quirks in the MT training data.
+    Table 4 shows weights for rule-overlap features.
+    MIRA punishes the case where rules overlap with an IN (preposition) node.
+    This makes sense: if a rule has a variable that can be filled by any English preposition, there is a risk that an incorrect preposition w

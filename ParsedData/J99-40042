@@ -1,0 +1,8 @@
+me parsers, such as CKY parsers, all of these algorithms (except for the outside parser) strongly resemble each other.
+    For other parsers, such as Earley parsers, the algorithms for computing each value are somewhat different, and a fair amount of work can be required to construct each one.
+    We present a formalism for describing parsers such that a single simple description can be used to generate parsers that compute all of these quantities and others.
+    This will be especially useful for finding parsers for outside values, and for parsers that can handle general grammars, like Earley-style parsers.
+    Although our description format is not limited to context-free grammars (CFGs), we will begin by considering parsers for this common formalism.
+    The input string will be denoted w1 w2.. wn.
+    We will refer to the complete string as the sentence.
+    A CFG G is a 4-tuple (N, E, R, S) where N is the set of nonterminals including the start symbol S. E is the set of terminal symbols, and R is the set

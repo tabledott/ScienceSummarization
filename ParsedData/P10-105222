@@ -1,0 +1,8 @@
+m- setting is similar, but only includes the window of length n; in the n-grm+ setting, we add features for odd-size windows; in the ngrm++ setting, we add all sequences of letters up to size n occurring in current window.
+    For instance, the active bigram features at position t = 2 in the sequence x=&#8217;lemma&#8217; are as follows: the 3grm feature set contains fy,y0, fy,y0,e and fy0,y,lem; only the latter appears in the 3-grm- setting.
+    In the 3-grm+ feature set, we also have fy0,y,le and fy0,y,em.
+    The 3-grm++ feature set additionally includes fy0,y,l and fy0,y,m.
+    The number of features ranges from 360 thousands (1-grm setting) to 1.6 billion (7-grm).
+    3Given the design of the Nettalk dictionary, this experiment required to modify the original database so as to reassign prosodic marks to phonemes, rather than to letters.
+    Our second benchmark is a part-of-speech (POS) tagging task using the PennTreeBank corpus (Marcus et al., 1993), which provides us with a quite different condition.
+ 

@@ -1,0 +1,7 @@
+ one for the left context classifier and one for the labeled data.
+    (The right context classifier behaves similarly to the left, but its performance is slightly worse.)
+    As shown, co-training results in improvement in test accuracy over the initial classifier after about 160 iterations, reducing by 36% the difference in error between the co-training classifier and the goal classifier.
+    Unfortunately, the improvement in test accuracy does not continue as co-training progresses; rather, performance peaks, then declines somewhat before stabilizing at around 92.5%.
+    We hypothesize that this decline is due to degradation in the quality of the labeled data.
+    This hypothesis is supported by Figure 4b, indicating that labeled data accuracy decreases steadily before stabilizing at around 94%.
+    Note that the accuracy of the classifier stabilizes at a point a bit lower than the stable accuracy of the labeled data, as would be expected if labeled data quality hinders further improvement from cotraining.

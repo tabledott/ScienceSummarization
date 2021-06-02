@@ -1,0 +1,10 @@
+sponding pronunciations where m is the number of pronunciations of the correct word r2 in our dictionary.
+    Each of those m samples is the most probable pronunciation of w2 according to our letter-to-phone model paired with one of the possible pronunciations of r2.
+    Using this training set, we run the algorithm of Brill and Moore to estimate a set of substitution probabilities a !
+    , for sequences of phones to sequences of phones.
+    The probability PPH(pron wjpron r) is then computed as a product of the substitution probabilities in the most probable alignment, as Brill and Moore did.
+  
+  
+    We tested our system and compared it to the Brill and Moore model on a dataset of around 10, 000 pairs of misspellings and corresponding correct words, split into training and test sets.
+    The exact data sizes are 7, 385 word pairs in the training set and 1, 812 word pairs in the test set.
+    This set is slightly different from the dataset used in Brill and Moore&#8217;s experiments because we removed from

@@ -1,0 +1,7 @@
+ons: Transitions for the projective, list-based parsing algorithm.
+    The projective, list-based parser uses the same basic strategy as its non-projective counterpart, but skips any pair (i, j) that could give rise to a non-projective dependency arc.
+    The essential differences are the following: The fact that the projective algorithm skips many node pairs that are considered by the non-projective algorithm makes it more efficient in practice, although the worst-case time complexity remains the same.
+    Figure 10 shows the transition sequence needed to parse the English sentence in Figure 2 with the same output as the stack-based sequences in Figures 4 and 6.
+    Theorem 10 The projective, list-based algorithm is correct for the class of projective dependency forests.
+    To show the soundness of the algorithm, we show that the dependency graph defined by the initial configuration, Gc0(x) = (V, &#8709;), is a projective dependency forest, and that every transition preserves this property.
+    We consider 

@@ -1,0 +1,10 @@
+ of space.
+    We then use these values to compute two conditional probability distributions: , the probability that source word trans, i.e. the distribution of given that is present is the same as the distribution of when is not present.
+    The LLR statistic gives a measure of the likelihood of this hypothesis.
+    The LLR score of a word pair is low when these two distributions are very similar (i.e. the words are independent), and high otherwise (i.e. the words are strongly associated).
+    However, high LLR scores can indicate either a positive association (i.e. lates into target word , and , the probability that does not translate into .
+    We obtain the distributions by normalizing the LLR scores for each source word.
+    The whole procedure follows: Word-align the parallel corpus.
+    Following Och and Ney (2003), we run GIZA++ in both directions, and then symmetrize the alignments using the refined heuristic.
+    Compute all LLR scores.
+    There will be an LLR score for each pair of words which are

@@ -1,0 +1,11 @@
+, we just extend one word which is aligned to null on the boundary of target side.
+    If we put some length limitation over the extracted blocks and output them, we get bilingual phrases used in standard phrase-based SMT systems and also in our system.
+    Line 7 updates all links associated with the current block.
+    You can attach the current block to each of these links.
+    However this will increase reordering examples greatly, especially those with the straight order.
+    In our Experiments, we just attach the smallest blocks to the STRAIGHT links, and the largest blocks to the INVERTED links.
+    This will keep the number of reordering examples acceptable but without performance degradation.
+    Line 12 and 14 extract reordering examples.
+    With the extracted reordering examples, we can obtain features for our MaxEnt-based reordering model.
+    We design two kinds of features, lexical features and collocation features.
+    For a block b = (s, t), we use s1 to denote the first word of the source s, 

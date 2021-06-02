@@ -1,0 +1,10 @@
+er, the opaque predicate p outscopes the quantifier q.
+    In the latter, the quantifier q has not been applied yet and the wff will subsequently yield readings in which q has wider scope than p. Second, some or all of the remaining terms are applied to the entire wff.
+    The function apply-terms iteratively (through a tail recursion) chooses a complex term in the wff and applies it.
+    Thus apply-terms acting upon the wff depending on how many quantifiers are applied and in what order.
+    The choice of a complex term is restricted to a subset of the terms in the wff, the so-called applicable terms.
+    The principal restriction on applicable terms is that they not be embedded in any other complex term in the wff.
+    Section 4.1 discusses a further restriction.
+    The function applicable-term returns an applicable term in a given wff.
+    These two stages are manifested in the function pull which generates all partial or full scopings of a wff by invoking pull-opaque-args and apply-terms.
+    Since ultim

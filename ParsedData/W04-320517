@@ -1,0 +1,8 @@
+  If strength is detected, score of similarity is ignored (because strength is more specific than similarity).
+    Of the relations strength, similarity, opposition and enablement which were detected (and not ignored), output the one with highest Sp.
+    If nothing has been output to this point, output unrelated.
+    To exhaustively test the more than 64 million unordered verb pairs for WordNet's more than 11,000 verbs would be computationally intractable.
+    Instead, we use a set of highly associated verb pairs output by a paraphrasing algorithm called DIRT (Lin and Pantel 2001).
+    Since we are able to test up to 4000 verb pairs per day on a single machine (we issue at most 40 queries per test and each query takes approximately 0.5 seconds), we are able to test several dozen associated verbs for each verb in WordNet in a matter of weeks.
+    Lin and Pantel (2001) describe an algorithm called DIRT (Discovery of Inference Rules from Text) that automatically learns paraphrase expressions from text.
+    It is

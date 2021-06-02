@@ -1,0 +1,8 @@
+ starting implementation is intended to follow the K&amp;M model fairly closely.
+    We use the same 1067 pairs of sentences from the Ziff-Davis corpus, with 32 used as testing and the rest as training.
+    The main difference between their model and ours is that instead of using the rather ad-hoc K&amp;M language model, we substitute the syntax-based language model described in (Charniak, 2001).
+    We slightly modify the channel model equation to be P(l  |s) = Pexpand(l  |s)Pdeleted, where Pdeleted is the probability of adding the deleted subtrees back into s to get l. We determine this probability also using the Charniak language model.
+    We require an extra parameter to encourage compression.
+    We create a development corpus of 25 sentences from the training data in order to adjust this parameter.
+    That we require a parameter to encourage compression is odd as K&amp;M required a parameter to discourage compression, but we address this point in the penultimate section.
+    Another difference is that

@@ -1,0 +1,9 @@
+or each component of the translation model instead of one feature function for the whole translation model p(fJ1 |eI1).
+    The feature functions have then not only a dependence on fJ1 and eI1 but also on zK1 , aK1 .
+  
+  
+    So far, we use the logarithm of the components of a translation model as feature functions.
+    This is a very convenient approach to improve the quality of a baseline system.
+    Yet, we are not limited to train only model scaling factors, but we have many possibilities: This corresponds to a word penalty for each produced target word.
+    &#8226; We could use grammatical features that relate certain grammatical dependencies of source and target language.
+    For example, using a function k(&#183;) that counts how many verb groups exist in the source or the target sentence, we can define the following feature, which is 1 if each of the two sentences contains the same number of verb groups: In the same way, we can introduce semantic features or pragmatic features such as the dialogue ac

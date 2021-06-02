@@ -1,0 +1,8 @@
+evel BLEU score (Papineni et al., 2001) which behaves like a gain function: it varies between 0 and 1, and a larger value reflects a higher similarity.
+    We will therefore use Equation 1 as the MBR decoder.
+    We note that &#163; represents the space of translations.
+    For N-best MBR, this space &#163; is the N-best list produced by a baseline decoder.
+    We will investigate the use of a translation lattice for MBR decoding; in this case, &#163; will represent the set of candidates encoded in the lattice.
+    In general, MBR decoding can use different spaces for hypothesis selection and risk computation: argmax and the sum in Equation 1 (Goel, 2001).
+    As an example, the hypothesis could be selected from the N-best list while the risk is computed based on the entire lattice.
+    Therefore, the MBR decoder can be more generally written as follows: where &#163;h refers to the Hypothesis space from where the translations are chosen, and &#163;e refers to the Evidence space that is used for computing the 

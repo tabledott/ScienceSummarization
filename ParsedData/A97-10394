@@ -1,0 +1,14 @@
+tries, and feature defaults.
+    Each module draws on one or several LKBs.
+    The lexicon is an LKB which is used by all components.
+    Figure 3 shows the architecture.
+  
+  
+    As mentioned in Section 3, REALPRO is configured by specifying several LKBs.
+    The system comes with LKBs for English; French is currently under development.
+    Normally, the user need not change the two grammar LKBs (the DSynt and SSynt grammars), unless the grammar of the target sublanguage is not a subset of English (or French).
+    However, the user may want to extend the lexicon if a lexeme with irregular morphology is not in it yet.
+    (Recall that not all words in the input representation need be in the lexicon.)
+    For example, in order to generate saw (rather than the default seed) for the past tense of to see, the following entry would be added to the lexicon.
+    The user may also want to change the defaults.
+    For example if in his/her application all sentences must be in past tense, the user can set the default 

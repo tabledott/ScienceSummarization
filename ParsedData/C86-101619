@@ -1,0 +1,10 @@
+copied and unil ication is then applied to the copies.
+  In this way, the operands are left untouched, us the parsing algorithm requires, but t.he method is computationally inefficient because it involves a great deal of copying.
+  1) PATI{ solves the problem in a novel way.
+  In [)-PATR, unification is implemented so that the original state of the input structures can be restored after the operation has been completed.
+  Whenever a destructive change is about to be nmde in the value of an attribute, the eell and its contents are saved in an array.
+  After unification, all the effects of the operation can be undone by restoring the saved values.
+  I) PATI{ takes advantage of this option in the following way.
+  parser tries to extend A(B): C to A" by unifying C with C", the operation is applied directly to the two feature sets without them being copied in advance.
+  If the unification fails, its effects are simply cancelled by restoring the original feature sets from the save array.
+  If the operation succeeds

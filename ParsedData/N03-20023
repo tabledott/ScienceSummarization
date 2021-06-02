@@ -1,0 +1,11 @@
+he structure learning problem in graphical models (Bilmes, 2003; Friedman and Koller, 2001)).
+  
+  
+    An individual FLM probability model can be seen as a directed graphical model over a set of N + 1 random variables, with child variable F and N parent variables F1 through FN (if factors are words, then F = Wt and Fi = Wt&#8722;i).
+    Two features make an FLM distinct from a standard language model: 1) the variables {F, F1, ... , FN} can be heterogeneous (e.g., words, word clusters, morphological classes, etc.
+    ); and 2) there is no obvious natural (e.g., temporal) backoff order as in standard wordbased language models.
+    With word-only models, backoff proceeds by dropping first the oldest word, then the next oldest, and so on until only the unigram remains.
+    In p(f|f1, f2,.
+    .. , fN), however, many of the parent variables might be the same age.
+    Even if the variables have differing seniorities, it is not necessarily best to drop the oldest variable first.
+    We introduce the notion of a bac

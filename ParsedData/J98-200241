@@ -1,0 +1,6 @@
+ds, in the sense that the training data are merely positive examples for both types of attachments, which could in principle be extracted from pure corpus data with no human intervention.
+    (For example, one could just use unambiguous sentences.)
+    The third approach, on the other hand, is a supervised learning method, which requires labeled data prepared by a human being.
+    The generalization method we propose falls into the second category, although it can also be used as a component in a combined scheme with many of the above methods (see Brill and Resnik [1994], Alshawi and Carter [1994]).
+    We estimate P(noun2 I verb, prep) and P(noun2 I nouni, prep) from training data consisting of triples, and compare them: If the former exceeds the latter (by a certain margin) we attach it to verb, else if the latter exceeds the former (by the same margin) we attach it to nouni.
+    In our experiments, described below, we compare the performance of our proposed method, which we refer to as MDL, against the met

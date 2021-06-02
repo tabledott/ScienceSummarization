@@ -1,0 +1,9 @@
+ed n = 10 joint assignments for training re-ranking models, and n = 15 for testing.
+    The weight &#945; of the local model was set to 1.
+    Using different numbers of joint assignments in training and testing is in general not ideal, but due to memory requirements, we could not experiment with larger values of n for training.
+    Figure 10 shows the summary performance of the local model (LOCAL), repeated from earlier figures, a joint model using only local features (JOINTLOCAL), a joint model using local + whole label sequence features (LABELSEQ), and a joint model using all described types of features (ALLJOINT).
+    The evaluation is on gold-standard parse trees.
+    In addition to performance measures, the figure shows the number of binary features included in the model.
+    The number of features is a measure of the complexity of the hypothesis space of the parametric model.
+    We can see that a joint model using only local features outperforms a local model by .5 points of F-Measure.
+    The joint m

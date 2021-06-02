@@ -1,0 +1,10 @@
+ imposed on the training and decoding setup.
+    During training, long sentences are removed from the training data to speed up the GIZA++ word alignment process.
+    Traditionally, we worked with a sentence length limit of 40.
+    We found that increasing this limit to about 80 gave better results without causing undue problems with running the word alignment (GIZA++ increasingly fails and runs much slower with long sentences).
+    We also tried to increase beam sizes and the limit on the number of translation options per coverage span (ttable-limit).
+    This has shown to be successful in our experiments with Arabic&#8211;English and Chinese&#8211;English systems.
+    Surprisingly, increasing the maximum stack size to 1000 (from 200) and ttable-limit to 100 (from 20) has barely any effect on translation performance.
+    The %BLEU score changed only by less than 0.05, and often worsened.
+    The German&#8211;English language pair is especially challenging due to the large differences in word order.
+    Colli

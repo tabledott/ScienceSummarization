@@ -1,0 +1,5 @@
+t, by definition, Espresso&#8217;s reliable patterns extract instances with high precision (yet often low recall).
+    In a very large corpus, like the Web, we assume that a correct instance will occur in at least one of Espresso&#8217;s reliable pattern even though the patterns&#8217; recall is low.
+    Intuitively, our confidence in a correct instance increases when, i) the instance is associated with many reliable patterns; and ii) its association with the reliable patterns is high.
+    At a given Espresso iteration, where PR represents the set of previously selected reliable patterns, this intuition is captured by the following measure of confidence in an instance i = {x, y}: where T is the sum of the reliability scores r&#960;(p) for each pattern p &#8712; PR, and where pointwise mutual information between instance i and pattern p is estimated with Google as follows: An instance i is rejected if S(i) is smaller than some threshold i.
+    Although this filtering may also be applied to reliable patterns, w

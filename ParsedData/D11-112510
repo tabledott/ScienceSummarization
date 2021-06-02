@@ -1,0 +1,7 @@
+pair of candidate translations e(i, j) and e(i, j'), the local gold function g tells us which is the better translation.
+    Note that this induces a ranking on the candidate translations for each source sentence.
+    We follow the pairwise approach to ranking (Herbrich et al., 1999; Freund et al., 2003; Burges et al., 2005; Cao et al., 2007).
+    In the pairwise approach, the learning task is framed as the classification of candidate pairs into two categories: correctly ordered and incorrectly ordered.
+    Specifically, for candidate translation pair e(i, j) and e(i, j'), we want: g(i,j) &gt; g(i,j') &#8660; hw(i,j) &gt; hw(i,j').
+    We can re-express this condition: Thus optimization reduces to a classic binary classification problem.
+    We create a labeled training instance for this problem by computing difference vector x(i, j) &#8722; x(i, j'), and labeling it as a positive or negative instance based on whether, respectively, the first or second vector is superior according to gold function g. To ensur

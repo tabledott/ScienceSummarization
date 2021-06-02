@@ -1,0 +1,8 @@
+rement that s &#8713; D can be dropped, but it only makes sense to do so in the context of a sufficiently powerful language model.
+    In a probabilistic system, we want to find argmaxw P(w  |s) .
+    Applying Bayes&#8217; Rule and dropping the constant denominator, we get the unnormalized posterior: argmaxw P(s  |w)*P(w) .
+    We now have a noisy channel model for spelling correction, with two components, the source model P(w) and the channel model P(s  |w).
+    The model assumes that natural language text is generated as follows: First a person chooses a word to output, according to the probability distribution P(w).
+    Then the person attempts to output the word w, but the noisy channel induces the person to output string s instead, according to the distribution P(s  |w).
+    For instance, under typical circumstances we would expect P(the  |the) to be very high, P(teh  |the) to be relatively high and P(hippopotamus  |the) to be extremely low.
+    In this paper, we will refer to the channel model as the er

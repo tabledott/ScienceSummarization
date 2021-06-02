@@ -1,0 +1,10 @@
+, {&#8709;}, 0).
+    {&#8709;} denotes the empty set, where no source sentence position is covered.
+    The following recursive equation is evaluated: The search ends in the hypotheses (Initial, {1, ... , J}, j); the last covered position may be in the range j &#8712; {J&#8722;L, ... , J}, because some source positions may have been skipped at the end of the input sentence.
+    {1,. .
+    .
+    , J} denotes a coverage set including all positions from position 1 to position J.
+    The final translation probability QF is where p($  |e,e') denotes the trigram language model, which predicts the sentence boundary $ at the end of the target sentence.
+    QF can be obtained using an algorithm very similar to the one given in Table 2.
+    The complexity of the verb group reordering for the translation direction German to English is O(E3 &#183; J &#183; (R2 &#183; L &#183; R)), as shown in Tillmann (2001).
+    For the translation direction English to German, the word reordering can be restricted in a similar way as fo

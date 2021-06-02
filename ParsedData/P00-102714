@@ -1,0 +1,5 @@
+lignment confidence, and filtering out a &#8212;x /3 changes without a minimum level of support to help reduce noise.
+    The final stem-change probabilities then are an interpolation with the trained model Pi and the initial baseline (P0) model described in Section 6.1: P( c &#8212;x 13 I root, suffix, POS) = Ai P0( a &#8212;x /3 I suffix) + (1 &#8212; Ai) Pi( a &#8212;x /3 I root, suffix, POS) The Levenshtein distance models are reestimated as observed in Section 5, while the context similarity model can be improved through better self-learned lemmatization of the modelled context words.
+    7 Lemma Alignment by Model Combination and the Pigeonhole Principle As shown empirically below, no single model is sufficiently effective on its own.
+    We applied traditional classifier combination techniques to merge the four models' scores, scaling each to achieve compatible dynamic range.
+    The Frequency, Levenshtein and Context similarity models retain equal relative weight as training proceeds, while the Morpho

@@ -1,0 +1,8 @@
+th Of: We can then calculate the BLEU score of hypotheses e in the context of O.
+    But the larger O is, the smaller the impact the current sentence will have on the BLEU score.
+    To correct for this, and to bring the loss function roughly into the same range as typical margins, we scale the BLEU score by the size of the input: which we also simply write as B(e).
+    Finally, the loss function is defined to be: We now describe the selection of e&#8727;.
+    We know of three approaches in previous work.
+    The first is to force the decoder to output the reference sentence exactly, and select the derivation with the highest model score, which Liang et al. (2006) call bold updating.
+    The second uses the decoder to search for the highest-BLEU translation (Tillmann and Zhang, 2006), which Arun and Koehn (2007) call max-BLEU updating.
+    Liang et al. and Arun and Koehn experiment with these methods and both opt for a third method, which Liang et al. call local updating: generate an n-best list of translatio

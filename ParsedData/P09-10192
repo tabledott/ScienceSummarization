@@ -1,0 +1,9 @@
+ been shown to give competitive performance relative to phrase-based SMT.
+    For these systems, a hypergraph or packed forest provides a compact representation for encoding a huge number of translation hypotheses (Huang, 2008).
+    In this paper, we extend MERT and MBR decoding to work on hypergraphs produced by SCFG-based MT systems.
+    We present algorithms that are more efficient relative to the lattice algorithms presented in Macherey et al. (2008; Tromble et al.
+    (2008).
+    Lattice MBR decoding uses a linear approximation to the BLEU score (Papineni et al., 2001); the weights in this linear loss are set heuristically by assuming that n-gram precisions decay exponentially with n. However, this may not be optimal in practice.
+    We employ MERT to select these weights by optimizing BLEU score on a development set.
+    A related MBR-inspired approach for hypergraphs was developed by Zhang and Gildea (2008).
+    In this work, hypergraphs were rescored to maximize the expected count of synchronous const

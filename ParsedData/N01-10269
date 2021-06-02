@@ -1,0 +1,7 @@
+tered, high confidence alignment data.
+    In contrast, the lexical prior models already suffer from sparse data problems and are negatively affected by an order-of-magnitude data reduction, even if the data is of higher quality.
+    The proposed model for identifying high-quality tag sequence data for training considers two different information sources for sentence filtering/weighting.
+    The first is the final Model-3 alignment score for the sentence, indicating a multi-source measure of overall alignment confidence.
+    The second measure more directly targets confidence in the tag sequences themselves.
+    After the lexical prior models have been trained (as above), sentences are also tested to identify those where the directly projected tag sequence (from the automatic alignments) is closely compatible with the estimated lexical prior probabilities for each word.
+    A pseudo-divergence weighting is computed for a sentence of length k by I Ejk_i log P (projected-tag, lw,), penalizing words whose projec

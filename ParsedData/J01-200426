@@ -1,0 +1,7 @@
+om exactly one of its children, and the lexical head of a POS is its terminal item.
+    Thus the rule S NP VP becomes, for instance, S [barks] NP [dog] VP[barks].
+    One way to estimate the probabilities of these rules is to annotate the heads onto the constituent labels in the training corpus and simply count the number of times particular productions occur (relative frequency estimation).
+    This procedure yields conditional probability distributions of constituents on the right-hand side with their lexical heads, given the left-hand side constituent and its lexical head.
+    The same procedure works if we annotate parent information onto constituents.
+    This is how Johnson (1998) conditioned the probabilities of productions: the left-hand side is no longer, for example, S, but rather SI SBAR, i.e., an S with SBAR as parent.
+    Notice, however, that in this case the annotations on the righthand side are predictable from the annotation on the left-hand side (unlike, for example, bilexical grammars), so 

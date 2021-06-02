@@ -1,0 +1,12 @@
+utgoing TokenPOS?Synset links.
+			Hence a walk starting at a com mon word like ?cat?
+			is far more likely to follow a link to ?cat#n? than to rarities like ?cat#v?
+			(to vomit).
+			These edges are uni-directional; no edges are created from a Synset to a TokenPOS that can represent the Synset.
+			In order for our graph construction to incorporatetextual gloss-based information, we also create uni directional edges from Synset nodes to the TokenPOS nodes for the words and collocations used in that synset?s gloss definition.
+			This requires part-of-speech tagging the glosses, for which we use the Stanford maximum entropytagger (Toutanova et al, 2003).
+			It is important to correctly weight these edges, because high-frequency stopwords such as ?by?
+			and ?he?
+			do not convey much in formation and might serve only to smear the probability mass across the whole graph.
+			Gloss-based links to these nodes should therefore be down-weighted or removed.
+			On the other hand, up-weighting extremely rare words such a

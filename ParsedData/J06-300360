@@ -1,0 +1,8 @@
+everal weeks.
+    As mentioned in the introduction, LRA extends the VSM approach of Turney and Littman (2005) by (1) exploring variations on the analogies by replacing words with synonyms (step 1), (2) automatically generating connecting patterns (step 4), and (3) smoothing the data with SVD (step 9).
+    In this subsection, we ablate each of these three components to assess their contribution to the performance of LRA.
+    Table 17 shows the results.
+    Without SVD (compare column 1 to 2 in Table 17), performance drops, but the drop is not statistically significant with 95% confidence, according to the Fisher Exact Test (Agresti 1990).
+    However, we hypothesize that the drop in performance would be significant with a larger set of word pairs.
+    More word pairs would increase the sample size, which would decrease the 95% confidence interval, which would likely show that SVD is making a significant contribution.
+    Furthermore, more word pairs would increase the matrix size, which would give SVD more lev

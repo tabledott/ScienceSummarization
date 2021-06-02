@@ -1,0 +1,6 @@
+n the Penn Treebank versus that in the HUB1 lattices.
+    In particular, contractions (e.g., he are split in the Penn Treebank (he 's) but not in the HUB1 lattices.
+    Splitting of the contractions is critical for parsing, since the two parts oftentimes (as in the previous example) fall in different constituents.
+    We follow Chelba (2000) in dealing with this problem: for parsing purposes, we use the Penn Treebank tokenization; for interpolation with the provided trigram model, and for evaluation, the lattice tokenization is used.
+    If we are to interpolate our model with the lattice trigram, we must wait until we have our model's estimate for the probability of both parts of the contraction; their product can then be interpolated with the trigram estimate.
+    In fact, interpolation in these trials made no improvement over the better of the uninterpolated models, but simply resulted in performance somewhere between the better and the worse of the two models, so we will not present interpolated trials he

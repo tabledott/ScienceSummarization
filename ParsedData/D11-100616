@@ -1,0 +1,8 @@
+ (lines 3-6).
+    This generates a parser that emulates the direct transfer parser, but DP: dependency parser, i.e., DP : x -+ y that are considered &#8216;good&#8217; by some external metric.
+    The algorithm then updates towards that output.
+    In this case &#8216;goodness&#8217; is determined through the pre-specified sentence alignment and how well the target language parse aligns with the English parse.
+    As a result, the model will, ideally, converge to a state where it predicts target parses that align as closely as possible with the corresponding English parses.
+    However, since we seed the learner with the direct transfer parser, we bias the parameters to select parses that both align well and also have high scores under the direct transfer model.
+    This helps to not only constrain the search space at the start of learning, but also helps to bias dependencies between words that are not part of the alignment.
+    So far we have not defined the ALIGN function that is used to score potential par

@@ -1,0 +1,5 @@
+is reached, such as an upper bound on N. Whereas in the loosely coupled system the parser acts as a filter only on completed candidate solutions (Zue et al. 1991), the tightly coupled system allows the parser to discard partial theories that have no way of continuing.
+    Following the Viterbi search, each partial theory is first extended by the parser to specify possible next words, which are then scored by the recognizer.
+    We have not yet made use of TINA'S probabilities in adjusting the recognizer scores on the fly, but we have been able to incorporate linguistic scores to resort N-best outputs, giving a significant improvement in performance (Goodine et al. 1991).
+    Ultimately we want to incorporate TINA's probabilities directly into the A* search, but it is as yet unclear how to provide an appropriate upper bound for the probability estimate of the unseen portion of the linguistic model.
+    &#8226; Once a parser has produced an analysis of a particular sentence, the next step is to convert it to a 

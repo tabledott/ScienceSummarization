@@ -1,0 +1,10 @@
+be asked is how justifiable is the k-best MIRA approximation.
+    Table 4 indicates the accuracy on testing and the time it took to train models with k = 1, 2, 5, 10, 20 for the English data set.
+    Even though the parsing algorithm is proportional to O(k log k), empirically, the training times scale linearly with k. Peak performance is achieved very early with a slight degradation around k=20.
+    The most likely reason for this phenomenon is that the model is overfitting by ensuring that even unlikely trees are separated from the correct tree proportional to their loss.
+  
+  
+    We described a successful new method for training dependency parsers.
+    We use simple linear parsing models trained with margin-sensitive online training algorithms, achieving state-of-the-art performance with relatively modest training times and no need for pruning heuristics.
+    We evaluated the system on both English and Czech data to display state-of-theart performance without any language specific enhancements.
+    Further

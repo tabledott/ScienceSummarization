@@ -1,0 +1,10 @@
+o given input strings.
+    Identical words that appear in both input sentences are potential matches.
+    Since the same word may appear multiple times in the sentence, there are multiple ways to produce an alignment between the two input strings.
+    The goal is to find the alignment that represents the best correspondence between the strings.
+    This alignment is defined as the alignment that has the smallest number of &#8220;crossing edges.
+    The matcher can also consider morphological variants of the same word as potential matches.
+    To simultaneously align more than two sentences, the matcher simply produces alignments for all pair-wise combinations of the set of sentences.
+    In the context of its use within our MEMT approach, the word-alignment matcher provides three main benefits.
+    First, it explicitly identifies translated words that appear in multiple MT translations, allowing the MEMT algorithm to reinforce words that are common among the systems.
+    Second, the alignment information allo

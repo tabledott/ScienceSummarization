@@ -1,0 +1,7 @@
+ 1992); see figure 65.
+    Next, we collected all words in the test corpus tagged as possibly being verbs (giving a total of 356 distinct lemmas) and retrieved all citations of them in the LOB corpus, plus Susanne with the 250 test sentences excluded.
+    We acquired subcategorization and associated frequency information from the citations, in the process successfully parsing 380K words.
+    We then parsed the test set, with each verb subcategorization possibility weighted by its raw frequency score, and using the naive add-one smoothing technique to allow for omitted possibilities.
+    The GEIG measures for the lexicalized parser show a 7% improvement in the crossing bracket score (figure 6).
+    Over the existing test corpus this is not statistically significant at the 95% level (paired t-test, 1.21, 249 df, p = 0.11)&#8212;although if the pattern of differences were maintained over a larger test set of 470 sentences it would be significant.
+    We expect that a more sophisticated smoothing technique, a lar

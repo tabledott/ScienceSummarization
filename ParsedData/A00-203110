@@ -1,0 +1,7 @@
+    The denominator of the accuracy measure should be the maximum possible number we could get correct.
+    In this case, that means excluding those constituents that were already wrong in the parser output; the parser we used attains 89% labelled precision-recall, so roughly 11% of the constituents are excluded from the function tag accuracy evaluation.
+    (For reference, we have also included the performance of our function tagger directly on treebank parses; the slight gain that resulted is discussed below.)
+    Another consideration is whether to count non-tagged constituents in our evaluation.
+    On the one hand, we could count as correct any constituent with the correct tag as well as any correctly non-tagged constituent, and use as our denominator the number of all correctlylabelled constituents.
+    (We will henceforth refer to this as the 'with-null' measure.)
+    On the other hand, we could just count constituents with the correct tag, and use as our denominators the total number of tagged, correc

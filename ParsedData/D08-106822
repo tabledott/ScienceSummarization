@@ -1,0 +1,6 @@
+atically satisfied.
+    By default, MC-SAT treats each ground clause as a separate factor while determining the slice.
+    This can be very inefficient for highly correlated clauses.
+    For example, given a non-pronoun mention m currently in cluster c and with head t, among the mixture prior rules involving m InClust(m, c) is the only one that is satisfied, and among those head-prediction rules involving m, &#172;IsPrn(m)&#8743;InClust(m, c)&#8743;Head(m, t) is the only one that is satisfied; the factors for these rules multiply to = exp(wm, + wm,&#65533;,t), where wm,r is the weight for InClust(m, c), and wm,&#65533;,t is the weight for &#172;IsPrn(m) &#8743; InClust(m, c) &#8743; Head(m, t), since an unsatisfied rule contributes a factor of e0 = 1.
+    We extended MC-SAT to treat each set of mutually exclusive and exhaustive rules as a single factor.
+    E.g., for the above m, MC-SAT now samples u uniformly from (0, 0), and requires that in the next state 0' be no less than u. Equivalently, the new cluster

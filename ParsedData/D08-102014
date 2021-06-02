@@ -1,0 +1,8 @@
+ound corpus.
+    We chose to experiment with two corpora: the entire Wall Street Journal corpus and a collection of general AP news, which is generally more diverse than the financial news found in the WSJ.
+    We predicted that the NEWS vocabulary would be more representative of the types of words our readers would be familiar with.
+    In both cases we used Laplace smoothing over the word frequencies and a stoplist.
+    The vocabulary features we used are article likelihood estimated from a language model from WSJ (F5), and article likelihood according to a unigram language model from NEWS (F6).
+    We also combine the two likelihood features with article length, in order to get a better estimate of the language model&#8217;s influence on readability independent of the length of the article.
+    Both vocabulary-based features (F5 and F6) are significantly correlated with the readability judgments, with p-values smaller than 0.05 (see Table 2).
+    The correlations are positive: the more probable an article 

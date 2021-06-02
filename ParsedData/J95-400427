@@ -1,0 +1,6 @@
+ model typically used for stochastic tagging, state transition probabilities (P(Tag, Tag,_i .Tagi_,,)) express the likelihood of a tag immediately following n other tags, and emit probabilities (P(Wordi I Tag,)) express the likelihood of a word, given a tag.
+    Many useful relationships, such as that between a word and the previous word, or between a tag and the following word, are not directly captured by Markov-model based taggers.
+    The same is true of the nonlexicalized transformation-based tagger, where transformation templates do not make reference to words.
+    To remedy this problem, we extend the transformation-based tagger by adding contextual transformations that can make reference to words as well as part-of-speech tags.
+    The transformation templates we add are: Change tag a to tag b when: 8.
+    The current word is w, the preceding (following) word is w2 and the preceding (following) tag is t. where w and x are variables over all words in the training corpus, and z and t are variables over 

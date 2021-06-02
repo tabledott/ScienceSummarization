@@ -1,0 +1,5 @@
+nd can be applied in many different situations where we want to couple two tractable models over input x and output z.
+    To train two models p1(x, z; 01) and p2(x, z; 02) independently, we maximize the data likelihood HX pk (x; 0k) = HX EZ pk (x, z; 0k) of each model separately, k &#8712; {1, 2}: Above, the summation over x enumerates the sentence pairs in the training data.
+    There are many possible ways to quantify agreement between two models.
+    We chose a particularly simple and mathematically convenient measure &#8212; the probability that the alignments produced by the two models agree on an example x: We add the (log) probability of agreement to the standard log-likelihood objective to couple the two models: We first review the EM algorithm for optimizing a single model, which consists of iterating the following two steps: In the E-step, we compute the posterior distribution of the alignments q(z; x) given the sentence pair x and current parameters 0.
+    In the M-step, we use expected counts wit

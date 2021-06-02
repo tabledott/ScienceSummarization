@@ -1,0 +1,7 @@
+ al. (2005), Ganchev et al.
+    (2009), Smith and Eisner (2009) inter alia.
+    The algorithm is based on the work of Hall et al. (2011) for training extrinsic parser objective functions and borrows heavily from ideas in learning with weak supervision including work on learning with constraints (Chang et al., 2007) and posterior regularization (Ganchev et al., 2010).
+    In our case, the weak signals come from aligned source and target sentences, and the agreement in their corresponding parses, which is similar to posterior regularization or the bilingual view of Smith and Smith (2004) and Burkett et al. (2010).
+    The algorithm is given in Figure 2.
+    It starts by labeling a set of target language sentences with a parser, which in our case is the direct transfer parser from the previous section (line 1).
+    Next, it uses these parsed target sentences to &#8216;seed&#8217; a new parser by training a parameter vector using the predicted parses as a gold standard via standard perceptron updates for J rounds

@@ -1,0 +1,8 @@
+ our problem: at lower grade levels, stopwords make up the majority of token occurrences and removing them may introduce bias.
+    We therefore do not remove stopwords.
+    Another common step is to remove low-frequency types &#8211; typically those that occur less than 2 to 5 times in a model&#8217;s training data.
+    Because we smooth across grade models, we perform a modified version of this step, removing from all models any types occurring less than 3 times in the entire corpus.
+    Unlike the usual text classification scenario, we also wish to avoid some types that are highly grade-specific.
+    For example, a type that is very frequent in the grade 3 model but that never occurs in any other model seems more likely to be site-specific noise than a genuine vocabulary item.
+    We therefore remove any types occurring in less than 3 grade models, no matter how high their frequency.
+    Further study is needed to explore ways to avoid over-fitting the classifier while reducing the expense of removing possi

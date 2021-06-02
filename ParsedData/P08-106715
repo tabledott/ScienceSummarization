@@ -1,0 +1,8 @@
+ where O(JV) is the time for on-the-fly feature extraction for each subtree, which becomes the bottleneck in practice.
+  
+  
+    Recall that the Parseval F-score is the harmonic mean of labelled precision P and labelled recall R: where |y |and |y* |are the numbers of brackets in the test parse and gold parse, respectively, and |y n y*| is the number of matched brackets.
+    Since the harmonic mean is a non-linear combination, we can not optimize the F-scores on sub-forests independently with a greedy algorithm.
+    In other words, the optimal F-score tree in a forest is not guaranteed to be composed of two optimal F-score subtrees.
+    We instead propose a dynamic programming algorithm which optimizes the number of matched brackets for a given number of test brackets.
+    For example, our algorithm will ask questions like, &#8220;when a test parse has 5 brackets, what is the maximum number of matched brackets?&#8221; More formally, at each node v, we compute an oracle function ora[v] : N H N, which maps an in

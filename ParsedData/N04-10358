@@ -1,0 +1,8 @@
+ring the third step of the derivation, thus created(AUX, D) = 3 and created(VP, D) = 3.
+    Given a string S of source symbols and a target tree T, an alignment A with respect to S and T is a relation between the leaves of T and the elements of S. Choose some derivation D from S to T. The alignment A induced by D is created as follows: an element s of S is aligned with a leaf node t of T iff replaced(s, D) = created(t, D).
+    In other words, a source word is aligned with a target word if the target word is created during the same step in which the source word is replaced.
+    Figure 3 shows the alignments induced by the derivations of Figure 2.
+    Now, say that we have a source string, a target tree, and an alignment A.
+    A key observation is that the set of &#8220;good&#8221; derivations according to A is precisely the set of derivations that induce alignments A' such that A is a subalignment of A'.
+    By subalignment, we mean that A C_ A' (recall that alignments are simple mathematical relations).
+    

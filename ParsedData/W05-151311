@@ -1,0 +1,8 @@
+1; 1.
+    Therefore, the number of shift and binary reduce actions is linear with the number of words in the input string.
+    However, the parser as described so far has no limit on the number of unary reduce actions it may take.
+    Although in practice a parser properly trained on trees reflecting natural language syntax would rarely make more than 2n unary reductions, pathological cases exist where an infinite number of unary reductions would be taken, and the algorithm would not terminate.
+    Such cases may include the observation in the training data of sequences of unary productions that cycle through (repeated) non-terminals, such as A-&gt;B-&gt;A-&gt;B.
+    During parsing, it is possible that such a cycle may be repeated infinitely.
+    This problem can be easily prevented by limiting the number of consecutive unary reductions that may be made to a finite number.
+    This may be the number of non-terminal types seen in the training data, or the length of the longest chain of unary productions seen i

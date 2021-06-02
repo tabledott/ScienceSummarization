@@ -1,0 +1,7 @@
+sults in unsupervised dependency structure induction.
+    The simplest version, called Dependency Model with Valence (DMV), has been used in isolation and in combination with other models (Klein and Manning, 2004; Smith and Eisner, 2006b).
+    The DMV generates the right children, and then independently the left children, for each node in the dependency tree.
+    Nodes correspond to words, which are represented by their part-of-speech tags.
+    At each step of generation, the DMV stochastically chooses whether to stop generating, conditioned on the currently generating head; whether it is generating to the right or left; and whether it has yet generated any children on that side.
+    If it chooses to continue, it then 4The contrastive estimation of Smith and Eisner (2005) also used a form of conditional EM, with similar motivation.
+    They suggested that EM grammar induction, which learns to predict w, unfortunately learns mostly to predict lexical topic or other properties of the training sentences that do 

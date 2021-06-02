@@ -1,0 +1,11 @@
+mber of entries.
+    When keys are longer than 64 bits, we conserve space by replacing the keys with their 64-bit hashes.
+    With a good hash function, collisions of the full 64bit hash are exceedingly rare: one in 266 billion queries for our baseline model will falsely find a key not present.
+    Collisions between two keys in the table can be identified at model building time.
+    Further, the special hash 0 suffices to flag empty buckets.
+    The PROBING data structure is a rather straightforward application of these hash tables to store Ngram language models.
+    Unigram lookup is dense so we use an array of probability and backoff values.
+    For 2 &lt; n &lt; N, we use a hash table mapping from the n-gram to the probability and backoff3.
+    Vocabulary lookup is a hash table mapping from word to vocabulary index.
+    In all cases, the key is collapsed to its 64-bit hash.
+    Given counts cn1 where e.g. c1 is the vocabulary size, total memory consumption, in bits, is Our PROBING data structure places al

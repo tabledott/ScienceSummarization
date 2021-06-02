@@ -1,0 +1,8 @@
+n Section 2, in which we also consider the prior probability that each nonterminal is part of the correct parse, can lead to nearly an order of magnitude improvement.
+    The problem with beam search is that it only compares nonterminals to other nonterminals in the same cell.
+    Consider the case in which a particular cell contains only bad nonterminals, all of roughly equal probability.
+    We can't threshold out these nodes, because even though they are all bad, none is much worse than the best.
+    Thus, what we want is a thresholding technique that uses some global information for thresholding, rather than just using information in a single cell.
+    The second kind of thresholding we consider is a novel technique, global thresholding, described in Section 3.
+    Global thresholding makes use of the observation that for a nonterminal to be part of the correct parse, it must be part of a sequence of reasonably probable nonterminals covering the whole sentence.
+    The last technique we consider, multiple

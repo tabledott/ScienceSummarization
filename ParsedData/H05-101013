@@ -1,0 +1,9 @@
+examples and 347 test examples.
+			In all our ex periments, we used a structured loss function
+			(y i , y?
+			i ) that penalized false negatives 3 times more than false positives, where 3 was picked bytesting several values on the validation set.
+			In stead of selecting a regularization parameter ?and running to convergence, we used early stopping as a cheap regularization method, by set ting ? to a very large value (10000) and running the algorithm for 500 iterations.
+			We selected a stopping point using the validation set by simply picking the best iteration on the validation set in terms of AER (ignoring the initial ten iterations, which were very noisy in our experiments).
+			All selected iterations turned out to be in the first 50 iterations, as the algorithm converged fairly rapidly.
+			3.1 Features and Results.
+			Very broadly speaking, the classic IBM mod els of word-level translation exploit four primary sources of knowledge and constraint: association of words (all IBM models), competition betwee

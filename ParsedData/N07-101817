@@ -1,0 +1,9 @@
+?)P(ti|wi, ??)
+			P(ti|wi, t?i, ?)P(t?i|wi, ??)
+			} = min { 1, P(t ? i|t?i, ?)P(ti|wi, ??)
+			P(ti|t?i, ?)P(t?i|wi, ??)
+			} The key advantage of the Hastings sampler over the Gibbs sampler here is that because the acceptance probability is a ratio of probabilities, the difficult to 143 compute P(wi|t?i, ?) is a common factor of boththe numerator and denominator, and hence is not re quired.
+			The P (wi|ti) term also disappears, being 1 for both the numerator and the denominator since our proposal distribution can only generate trees for which wi is the yield.All that remains is to specify the production prob abilities ??
+			of the proposal distribution P(t?i|wi, ??).
+			While the acceptance rule used in the Hastings algorithm ensures that it produces samples from P(ti|wi, t?i, ?) with any proposal grammar ??
+			in which all productions have nonzero probability, the algorithm is more efficient (i.e., fewer proposals are rejected) if the proposal distribution is close to the distribution to be sampled.Given t

@@ -1,0 +1,8 @@
+ructures.
+    OntoNotes coreference distinguishes between identity coreference and appositive coreference, treating the latter separately because it is already captured explicitly by other layers of the OntoNotes annotation.
+    Thus we evaluated systems only on the identity coreference task, which links all categories of entities and events together into equivalent classes.
+    The situation with mentions for OntoNotes is also different than it was for MUC or ACE.
+    OntoNotes data does not explicitly identify the minimum extents of an entity mention, but it does include handtagged syntactic parses.
+    Thus for the official evaluation, we decided to use the exact spans of mentions for determining correctness.
+    The NP boundaries for the test data were pre-extracted from the handtagged Treebank for annotation, and events triggered by verb phrases were tagged using the verbs themselves.
+    This choice means that scores for the CoNLL-2011 coreference task are likely to be lower than for coref evaluations b

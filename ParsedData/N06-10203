@@ -1,0 +1,10 @@
+ that out-of-domain training data can improve parsing accuracy.
+    The unsupervised adaptation experiment by Bacchiani et al. (2006) is the only successful instance of parsing self-training that we have found.
+    Our work differs in that all our data is in-domain while Bacchiani et al. uses the Brown corpus as labelled data.
+    These correspond to different scenarios.
+    Additionally, we explore the use of a reranker.
+    Co-training is another way to train models from unlabeled data (Blum and Mitchell, 1998).
+    Unlike self-training, co-training requires multiple learners, each with a different &#8220;view&#8221; of the data.
+    When one learner is confident of its predictions about the data, we apply the predicted label of the data to the training set of the other learners.
+    A variation suggested by Dasgupta et al. (2001) is to add data to the training set when multiple learners agree on the label.
+    If this is the case, we can be more confident that the data was labelled correctly than if only o

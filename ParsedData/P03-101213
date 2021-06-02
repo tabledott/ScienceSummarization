@@ -1,0 +1,12 @@
+ut violating a constraint.
+    Our goal is to find the terminal state with highest probability.
+    For the purposes of our best-first search, nonterminal states are evaluated according to a greedy completion of the partial alignment.
+    We build this completion by adding valid links in the order of their unmodified link probabilities P(lje, f) until no more links can be added.
+    The score the state receives is the probability of its greedy completion.
+    These completions are saved for later use (see Section 4.2).
+  
+  
+    As was stated in Section 2, our probability model needs an initial alignment in order to create its probability tables.
+    Furthermore, to avoid having our model learn mistakes and noise, it helps to train on a set of possible alignments for each sentence, rather than one Viterbi alignment.
+    In the following subsections we describe the creation of the initial alignments used for our experiments, as well as our sampling method used in training.
+    We produce an initial alignment u

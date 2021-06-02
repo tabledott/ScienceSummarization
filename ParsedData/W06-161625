@@ -1,0 +1,10 @@
+w only consider the q variables in VX with the highest scoring edges.
+    For example, if we set q = 2 the set of variables for a token j will contain two variables, either both for the same head i but with different labels (variables ei,j,l1 and ei,j,l2) or two distinct heads i1 and i2 (variables ei1,j,l1 and ei2,j,l2) where labels l1 and l2 may be identical.
+    Table 3 shows the effect of different q values on solve time for the full corpus cross (roughly 12,000 sentences) and overall accuracy.
+    We see that solve time can be reduced by 80% while only losing a marginal amount of accuracy when we set q to 10.
+    However, we are unable to reach the 20 seconds solve time of the CLE algorithm.
+    Despite this, when we add the time for preprocessing and feature extraction, the CLE system parses a corpus in around 15 minutes whereas our system with q = 10 takes approximately 25 minutes'.
+    When we view the total runtime of each system we see our system is more competitive.
+  
+  
+    While we have presented

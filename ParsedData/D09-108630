@@ -1,0 +1,8 @@
+is model, the experiments in Klein and Manning (2004) and only used sentences of 10 words or fewer, without punctuation, and with gold-standard tags.
+    Punctuation in particular seems to trip up the initializer: since a sentence-final periods appear in most sentences, EM often decides to make it the head. plateaus.
+    Still, this method substantially improves over the baselines and unsupervised EM.
+    Restricting ourselves to fully projected trees seems a waste of information.
+    We can also simply take all one-to-one projected links, impute expected counts for the remaining dependencies with EM, and update our models.
+    This approach (&#8220;hard projection with EM&#8221;), however, performed worse than using only the fully projected trees.
+    In fact, only the first iteration of EM with this method made any improvement; afterwards, EM degraded accuracy further from the numbers in Table 3.
+    The quasi-synchronous model used all of the alignments in re-estimating its parameters and performed signifi

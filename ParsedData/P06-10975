@@ -1,0 +1,10 @@
+baselines motivate our work.
+  
+  
+    We reinterpret the five groups of parameters of Model 4 listed in the first five lines of Table 3 as sub-models of a log-linear model (see Equation 1).
+    Each sub-model hm has an associated weight am.
+    Given a vector of these weights a, the alignment search problem, i.e. the search to return the best alignment a&#65533; of the sentences e and f according to the model, is specified by Equation 2.
+    Log-linear models are often trained to maximize entropy, but we will train our model directly on the final performance criterion.
+    We use 1&#8722;F-measure as our error function, comparing hypothesized word alignments for the discriminative training set with the gold standard.
+    Och (2003) has described an efficient exact one-dimensional error minimization technique for a similar search problem in machine translation.
+    The technique involves calculating a piecewise constant function f,,,(x) which evaluates the error of the hypotheses which would be picked by equa

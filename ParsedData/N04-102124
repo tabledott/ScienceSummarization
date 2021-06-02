@@ -1,0 +1,7 @@
+cribed so far have the following limitations: full parse tree models are expensive to compute for long sentences and for trees with flat constituents and there is limited reordering observed in the n-best lists that form the basis of our experiments.
+    In addition to this, higher levels of parse tree are rarely observed to be reordered between source and target parse trees.
+    In this section we attack these problems using a simple Markov model for tree-based alignments.
+    It guarantees tractability: compared to a coverage of approximately 30% of the n-best list by the unconstrained tree-based models, using the Markov model approach provides 98% coverage of the n-best list.
+    In addition, this approach is robust to inaccurate parse trees.
+    The algorithm works as follows: we start with word alignments and two parameters: n for maximum number of words in tree fragment and k for maximum height of tree fragment.
+    We proceed from left to right in the Chinese sentence and incrementally grow a pair of s

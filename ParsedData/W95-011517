@@ -1,0 +1,7 @@
+
+    Simard et al. used the criterion that the first four characters must be identical for alphabetic tokens to be considered cognates [Sim92].
+    Unfortunately, this criterion produces false negatives for pairs like &amp;quot;government&amp;quot; and &amp;quot;gouvernement&amp;quot;, and false positives for words with a great difference in length, like &amp;quot;conseil&amp;quot; and &amp;quot;conservative.&amp;quot; I used an approximate string matching algorithm to capture a more general notion of cognateness.
+    Whether a pair of words is considered a cognate pair depends on the ratio of the length of their longest (not necessarily contiguous) common subsequence to the length of the longer word.
+    This is called the Longest Common Subsequence Ratio (LCSR).
+    For example, &amp;quot;gouvernement,&amp;quot; which is 12 letters long, has 10 letters that appear in the same order in &amp;quot;government.&amp;quot; So, the LCSR for these two words is 10/12.
+    On the other hand, the LCSR for &amp;quot;con

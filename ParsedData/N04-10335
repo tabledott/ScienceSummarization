@@ -1,0 +1,12 @@
+e phrase is translated by exactly one target phrase.
+    Thus, we obtain: In the preceding step, we used the maximum approximation for the sum over all segmentations.
+    Next, we allow only translations that are monotone at the phrase level.
+    So, the phrase &#732;f1 is produced by &#732;e1, the phrase &#732;f2 is produced by &#732;e2, and so on.
+    Within the phrases, the reordering is learned during training.
+    Therefore, there is no constraint on the reordering within the phrases.
+    Here, we have assumed a zero-order model at the phrase level.
+    Finally, we have to estimate the phrase translation probabilities p(&#732;f|&#732;e).
+    This is done via relative frequencies: Here, N( &#732;f, &#732;e) denotes the count of the event that f&#732; has been seen as a translation of &#732;e.
+    If one occurrence of e&#732; has N &gt; 1 possible translations, each of them contributes to N(&#732;f, &#732;e) with 1/N.
+    These counts are calculated from the training corpus.
+    Using a bigram language mod

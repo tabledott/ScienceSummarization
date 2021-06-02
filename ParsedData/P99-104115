@@ -1,0 +1,10 @@
+e due to the incompleteness of the lexicon used by the parser.
+    For example, &amp;quot;opt&amp;quot; is not listed in the lexicon as a verb.
+    The lexical analyzer guessed it as a noun, causing the erroneous collocation &amp;quot;(to) do opt&amp;quot;.
+    The collocation &amp;quot;trig lock&amp;quot; should be &amp;quot;trigger lock&amp;quot;.
+    The lexical analyzer in the parser analyzed &amp;quot;trigger&amp;quot; as the -er form of the adjective &amp;quot;trig&amp;quot; (meaning wellgroomed).
+    Duplications in the corpus can amplify the effect of a single mistake.
+    For example, the following disclaimer occurred 212 times in the corpus.
+    &amp;quot;Annualized average rate of return after expenses for the past 30 days: not a forecast of future returns&amp;quot; The parser analyzed &amp;quot;a forecast of future returns&amp;quot; as [s [NI:, a forecast of future] [vp returns]].
+    As a result, (return V:subj:N forecast) satisfied the condition (3).
+    Duplications can also skew the mutual inf

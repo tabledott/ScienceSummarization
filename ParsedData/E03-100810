@@ -1,0 +1,7 @@
+w labelled data to re-train the LTAG parser and vice versa.
+    The domains over which the two models operate are quite distinct.
+    The LTAG model uses tree fragments of the final parse tree and combines them together, while the Collins-CFG model operates on a much smaller domain of individual lexicalized non-terminals.
+    This provides a mechanism to bootstrap information between these two models when they are applied to unlabelled data.
+    LTAG can provide a larger domain over which hi-lexical information is defined due to the arbitrary depth of the elementary trees it uses, and hence can provide novel lexical relationships for the Collins-CFG model, while the Collins-CFG model can paste together novel elementary trees for the LTAG model.
+    A summary of the differences between the two models is given in Figure 2, which provides an informal argument for why the two parsers provide contrastive views for the co-training experiments.
+    Of course there is still the question of whether the two parsers rea

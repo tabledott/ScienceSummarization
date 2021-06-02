@@ -1,0 +1,10 @@
+w encodes many more paths.
+    Many-paths generation leads to a new style of incremental grammar building.
+    When dealing with some new construction, we first rather mindlessly overgenerate, providing the grammar with many ways to express the same thing.
+    Then we watch the statistical component make its selections.
+    If the selections are correct, there is no need to refine the grammar.
+    For example, in our first grammar, we did not make any lexical or grammatical case distinctions.
+    So our lattices included paths like Him saw I as well as He saw me.
+    But the statistical model studiously avoided the bad paths, and in fact, we have yet to see an incorrect case usage from our generator.
+    Likewise, our grammar proposes both his box and the box of he/him, but the former is statistically much more likely.
+    Finally, we have no special rule to prohibit articles and possessives from appearing in the same noun phrase, but the bigram the his is so awful that the null article is always selected in 

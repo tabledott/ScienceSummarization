@@ -1,0 +1,6 @@
+e saving to the comb vector representation suggested by Aho, Sethi, and Ullman (1986:244ff) for unambiguous grammars (see Klein and Martin [19891 for a survey of representation techniques).
+    The parse table for the ANLT grammar occupies approximately 360 Kbytes of memory, and so represents each action (shift, reduce, or goto) in an average of less than 2.3 bits.
+    In contrast to conventional techniques, though, we maintain a faithful representation of the parse table, not replacing error entries with more convenient nonerror ones in order to save extra space.
+    Our parsers are thus able to detect failures as soon as theoretically possible, an important efficiency feature when parsing nondeterministically with ambiguous grammars, and a time-saving feature when parsing interactively with them (see next section).
+    Table 1 compares the size of the LALR(1) parse table for the ANLT grammar with others reported in the literature.
+    From these figures, the ANLT grammar is more than twice the size of Tomit

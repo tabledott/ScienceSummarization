@@ -1,0 +1,6 @@
+ill help us bound the complexity.
+    A split head automaton Ha is said to be g-split if its set of flip states, denoted C Qa, has size &lt; g. The languages that can be recognized by g-split HAs are those that can be written as 1..g 1 Li x R, where the Li and Ri are regular languages over VT. Eisner (1997) actually defined (g-split) bilexical grammars in terms of the latter property.6 We now present our result: Figure 3 specifies an 0(n3g2t2) recognition algorithm for a head automaton grammar H in which every H, is g-split.
+    For deterministic automata, the runtime is 0(n3g2t)&#8212;a considerable improvement on the 0(n3g3t2) result of (Eisner, 1997), which also assumes deterministic automata.
+    As in &#167;4, a simple bottom-up implementation will suffice.
+    For a practical speedup, add h\j as an antecedent to the MID rule (and fill in the parse table from right to left).
+    Like our previous algorithms, this one takes two steps (ATTACH, COMPLETE) to attach a child constituent to a parent constituent

@@ -1,0 +1,8 @@
+In our experiments, we compute in every iteration about 200 alternative translations.
+    In practice, the algorithm converges after about five to seven iterations.
+    As a result, error rate cannot increase on the training corpus.
+    A major problem in applying the MMI criterion is the fact that the reference translations need to be part of the provided-best list.
+    Quite often, none of the given reference translations is part of the-best list because the search algorithm performs pruning, which in principle limits the possible translations that can be produced given a certain input sentence.
+    To solve this problem, we define for the MMI training new pseudo-references by selecting from thebest list all the sentences which have a minimal number of word errors with respect to any of the true references.
+    Note that due to this selection approach, the results of the MMI criterion might be biased toward the mWER criterion.
+    It is a major advantage of the minimum error rate training that it is not nec

@@ -1,0 +1,7 @@
+At first glance broadening the hypothesis space to entertain all 2n&#8722;1 possible segmentations may seem expensive.
+    In fact the dynamic programming computation is almost the same as summing or maximizing over connected dependency trees.
+    For the latter, we use an inside-outside algorithm that computes a score for every parse tree by computing the scores of items, or partial structures, through a bottom-up process.
+    Smaller items are built first, then assembled using a set of rules defining how larger items can be built.6 Now note that any sequence of partial trees over x can be constructed by combining the same items into trees.
+    The only difference is that we are willing to consider unassembled sequences of these partial trees as hypotheses, in addition to the fully connected trees.
+    One way to accomplish this in terms of yright(0) is to say that the root, $, is allowed to have multiple children, instead of just one.
+    Here, these children are independent of each other (e.g., generated b

@@ -1,0 +1,6 @@
+In cdec, model-specific code is only required to construct a translation forest (&#167;3).
+    General rescoring (with language models or other models), pruning, inference, and alignment algorithms then apply to the unified data structure (&#167;4).
+    Hence all model types benefit immediately from new algorithms (for rescoring, inference, etc.
+    ); new models can be more easily prototyped; and controlled comparison of models is made easier.
+    Second, existing open source decoders were designed with the traditional phrase-based parameterization using a very small number of dense features (typically less than 10). cdec has been designed from the ground up to support any parameterization, from those with a handful of dense features up to models with millions of sparse features (Blunsom et al., 2008; Chiang et al., 2009).
+    Since the inference algorithms necessary to compute a training objective (e.g. conditional likelihood or expected BLEU) and its gradient operate on the unified data structure (&#167;5)

@@ -1,0 +1,6 @@
+ Models With the availability of ever-increasing amounts of training data, it has become a challenge for machine translation systems to cope with the resulting strain on computational resources.
+    Instead of simply buying larger machines with, say, 12 GB of main memory, the implementation of more efficient data structures in Moses makes it possible to exploit larger data resources with limited hardware infrastructure.
+    A phrase translation table easily takes up gigabytes of disk space, but for the translation of a single sentence only a tiny fraction of this table is needed.
+    Moses implements an efficient representation of the phrase translation table.
+    Its key properare a tree for source words and demand i.e. only the fraction of the phrase table that is needed to translate a sentence is loaded into the working memory of the decoder.
+    179 For the Chinese-English NIST task, the memory requirement of the phrase table is reduced from 1.7 gigabytes to less than 20 mega bytes, with no loss in transl

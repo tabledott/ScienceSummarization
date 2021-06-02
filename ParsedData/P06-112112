@@ -1,0 +1,5 @@
+igned item (here ?) appears only once in the rules of that derivation, as shown inFigure 2 (which satisfies the property).
+			That requirement will prove to be critical when we ad dress the problem of estimating probabilities forour rules: if we allowed in our example to spuri ously generate?s in multiple successive steps of the same derivation, we would not only represent the transformation incorrectly, but also ?-rules would be disproportionately represented, leading to strongly biased estimates.
+			We will now see howto ensure this constraint is satisfied in our rule ex traction and derivation building algorithm.
+			963 2.3 Algorithm.
+			The linear-time algorithm presented in GHKM is only a particular case of the more general one we describe here, which is used to extract all rules, minimal and composed, induced by G. Similarlyto the GHKM algorithm, ours performs a top down traversal of G, but differs in the operations it performs at each node n ? F : we must explore all subtrees rooted at n, find all cons

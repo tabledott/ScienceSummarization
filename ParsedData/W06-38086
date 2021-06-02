@@ -1,0 +1,11 @@
+to be smooth throughout the graph, as we discuss in the next section.
+  
+  
+    With the graph defined, there are several algorithms one can use to carry out semi-supervised learning (Zhu et al., 2003; Delalleau et al., 2005; Joachims, 2003; Blum and Chawla, 2001; Belkin et al., 2005).
+    The basic idea is the same and is what we use in this paper.
+    That is, our rating function f(x) should be smooth with respect to the graph. f(x) is not smooth if there is an edge with large weight w between nodes xi and xj, and the difference between f(xi) and f(xj) is large.
+    The (un)smoothness over the particular edge can be defined as w(f(xi) &#8722; f(xj))2.
+    A small loss implies that the rating of an unlabeled review is close to its labeled peers as well as its unlabeled peers.
+    This is how unlabeled data can participate in learning.
+    The optimization problem is minf L(f).
+    To understand the role of the parameters, we define &#945; = ak + bk' and Q = a, so that L(f) can be written as Thus Q controls t

@@ -1,0 +1,10 @@
+e number of categories in CCGbank is much larger than that of Penn Treebank labels.
+    Analysis of our system&#8217;s output shows that the system trained on the Penn Treebank gold standard obtains 55.5% recall on those relations that require the CCG path feature, whereas the system using CCGbank only achieves 36.9% recall on these.
+    Also, in CCG, the complement-adjunct distinction is represented in the categories for the complement (eg.
+    PP) or adjunct (eg.
+    (S\NP)\(S\NP) and in the categories for the head (eg.
+    (S[dcl]\NP)/PP or S[dcl]\NP).
+    In generating the CCGbank, various heuristics were used to make this distinction.
+    In particular, for PPs, it depends on the &#8220;closely-related&#8221; (CLR) function tag, which is known to be unreliable.
+    The decisions made in deriving the CCGbank often do not match the hand-annotated complementadjunct distinctions in PropBank, and this inconsistency is likely to make our CCGbank-based features less predictive.
+    A possible solution is to reg

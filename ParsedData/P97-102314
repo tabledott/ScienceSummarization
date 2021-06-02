@@ -1,0 +1,8 @@
+ define dissimilarity for same-orientation links as one minus the probability that such a classification link is correct and dissimilarity for different-orientation links as the probability that such a classification is correct.
+    These probabilities are estimated from separate training data.
+    Note that for these prediction models, dissimilarities are identical for similarly classified links.
+    The log-linear model, on the other hand, offers an estimate of how good each prediction is, since it produces a value y between 0 and 1.
+    We construct the model so that 1 corresponds to same-orientation, and define dissimilarity as one minus the produced value.
+    Same and different-orientation links between adjectives form a graph.
+    To partition the graph nodes into subsets of the same orientation, we employ an iterative optimization procedure on each connected component, based on the exchange method, a nonhierarchical clustering algorithm (Sp5,th, 1985).
+    We define an objective function 4) scoring ea

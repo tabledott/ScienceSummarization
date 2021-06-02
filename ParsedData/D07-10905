@@ -1,0 +1,11 @@
+at all work ers need to be contacted for each n-gram request.
+			In our approach, smoothed probabilities are stored and served, resulting in exactly one worker beingcontacted per n-gram for simple smoothing tech niques, and in exactly two workers for smoothing techniques that require context-dependent backoff.
+			Furthermore, suffix arrays require on the order of 8 bytes per token.
+			Directly storing 5-grams is more efficient (see Section 7.2) and allows applying count cutoffs, further reducing the size of the model.
+	
+	
+			State-of-the-art smoothing uses variations of con text-dependent backoff with the following scheme: P (wi|wi?1i?k+1) = { ?(wii?k+1) if (wii?k+1) is found ?(wi?1i?k+1)P (wii?k+2) otherwise (4)where ?(?)
+			are pre-computed and stored probabili ties, and ?(?)
+			are back-off weights.
+			As examples, Kneser-Ney Smoothing (Kneser and Ney, 1995),Katz Backoff (Katz, 1987) and linear interpola tion (Jelinek and Mercer, 1980) can be expressed inthis scheme (Chen and Goodman, 1998).
+			The recursi

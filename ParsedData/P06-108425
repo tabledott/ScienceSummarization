@@ -1,0 +1,8 @@
+sk, the improvement brought by the morpheme model over the word model is less significant, but still consists of a 5% error reduction.
+    Unknown words account for a significant chunk of the errors.
+    Table 5 shows the distribution of errors contributed by unknown words (words that cannot be analyzed by the morphological analyzer).
+    7.5% of the words in the test corpus are unknown: 4% are not recognized at all by the morphological analyzer (marked as [None] in the table), and for 3.5%, the set of analyses proposed by the analyzer does not contain the correct analysis [Missing].
+    We extended the lexicon to include missing and none lexemes of the closed sets.
+    In addition, we modified the analyzer to extract all possible segmentations of unknown words, with all the possible tags for the segmented affixes, where the remaining unknown baseforms are tagged as UK.
+    The model was trained over this set.
+    In the next phase, the corpus was automatically tagged, according to the trained model, in order

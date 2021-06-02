@@ -1,0 +1,8 @@
+calized grammar is done in two steps: Each of these two steps involves ambiguity which can be resolved using a statistical model.
+    By explicitly representing these two steps independently, we can pursue independent statistical models for each step: These two models have to agree with each other on the trees assigned to each word in the sentence.
+    Not only do the right trees have to be assigned as predicted by the first model, but they also have to fit together to cover the entire sentence as predicted by the second model2.
+    This represents the mutual constraint that each model places on the other.
+    For the words that appear in the (unlabeled) training data, we collect a list of part-of-speech labels and trees that each word is known to select in the training data.
+    This information is stored in a POS tag dictionary and a tree dictionary.
+    It is important to note that no frequency or any other distributional information is stored.
+    The only information stored in the dictionary is which tag

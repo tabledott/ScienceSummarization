@@ -1,0 +1,11 @@
+omputation of consensus translations with our approach.
+    In particular, we will present details of the enhanced alignment and reordering procedure.
+    A large set of experimental results on several machine translation tasks is presented in Section 3, which is followed by a summary.
+  
+  
+    The proposed approach takes advantage of multiple translations for a whole test corpus to compute a consensus translation for each sentence in this corpus.
+    Given a single source sentence in the test corpus, we combine M translation hypotheses Ei, ... , EM from M MT engines.
+    We first choose one of the hypotheses Em as the primary one.
+    We consider this primary hypothesis to have the &#8220;correct&#8221; word order.
+    We then align and reorder the other, secondary hypotheses En(n = 1, ..., M; n =&#65533; m) to match this word order.
+    Since each hypothesis may have an acceptable word order, we let every hypothesis play the role of the primary translation once, and thus align all pairs of hypotheses (En, 

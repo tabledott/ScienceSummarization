@@ -1,0 +1,7 @@
+ any of the prefixes, as well as segmenting punctuation characters.
+    In most cases, this simple approach was able to locate only one of the two necessary boundaries for recognizing full words, and the initial score was understandably low, F=29.8.
+    Nevertheless, even from this flawed initial approximation, our rule-based algorithm learned a sequence of 632 transformations which nearly doubled the word recall, improving the score from 29.8 to 53.3, a 33.5% error reduction.
+    Since we had a large amount of English data, we also performed a classic experiment to determine the effect the amount of training data had on the ability of the rule sequences to improve segmentation.
+    We started with a training set only slightly larger than the test set, 872 sentences, and repeated the maximum matching experiment described in Section 3.4.1.
+    We then incrementally increased the amount of training data and repeated the experiment.
+    The results, summarized in Table 3, clearly indicate (not surprisingly) that

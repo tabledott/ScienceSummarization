@@ -1,0 +1,8 @@
+e information from already existing markup and from the lexicon compiled during processing, e.g. containing partial orders of already identified named entities.
+    At this stage the system will mark word sequences which look like person names.
+    For this it uses a grammar of names: if the first capitalized word occurs in a list of first names and the following word(s) are unknown capitalized words, then this string can be tagged as a PERSON.
+    Note that it is only at this late stage that a list of names is used.
+    At this point we are no longer concerned that a person name can refer to a company.
+    If the name grammar had applied earlier in the process, it might erroneously have tagged &amp;quot;Adam Kluver&amp;quot; as a PERSON instead of an ORGANIZATION.
+    But at this point in the chain of NE processing, that is not a problem anymore: &amp;quot;Adam Kluver&amp;quot; will by now already have been identified as an ORGANIZATION by the sure-fire rules or during partial matching.
+    If it hasn't, the

@@ -1,0 +1,9 @@
+ords immediately to its left or right.
+    Disambiguation is then performed by selecting the word in the confusion set with the highest co-occurrence frequency or probability.
+    The web counts were retrieved using literal queries (see Section 2).
+    Ties are resolved by comparing the unigram frequencies of the words in the confusion set and defaulting to the word with the highest one.
+    Table 5 shows the types of collocations we considered and their corresponding accuracy.
+    The baseline (f(t)) in Table 5 was obtained by always choosing the most frequent unigram in the confusion set.
+    We used the same test set (2056 tokens from the Brown corpus) and confusion sets as Golding and Schabes (1996), Mangu and Brill (1997), and Cucerzan and Yarowsky (2002).
+    Table 5 shows that the best result (89.24%) for the webbased approach is obtained with a context of one word to the left and one word to the right of the target word (f (w1,t,w2)).
+    The BNC-based models perform consistently worse than the web-ba

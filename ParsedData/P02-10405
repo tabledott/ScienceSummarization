@@ -1,0 +1,8 @@
+ompute precision, one simply counts up the number of candidate translation words (unigrams) which occur in any reference translation and then divides by the total number of words in the candidate translation.
+    Unfortunately, MT systems can overgenerate &#8220;reasonable&#8221; words, resulting in improbable, but high-precision, translations like that of example 2 below.
+    Intuitively the problem is clear: a reference word should be considered exhausted after a matching candidate word is identified.
+    We formalize this intuition as the modified unigram precision.
+    To compute this, one first counts the maximum number of times a word occurs in any single reference translation.
+    Next, one clips the total count of each candidate word by its maximum reference count,2adds these clipped counts up, and divides by the total (unclipped) number of candidate words.
+    In Example 1, Candidate 1 achieves a modified unigram precision of 17/18; whereas Candidate 2 achieves a modified unigram precision of 8/14.
+ 

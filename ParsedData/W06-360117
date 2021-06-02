@@ -1,0 +1,9 @@
+th the language model and length penalty.
+    Like other instances of dynamic programming, Algorithm 1 can be viewed as a hypergraph search problem.
+    To this end, we use an efficient algorithm by Huang and Chiang (2005, Algorithm 3) that solves the general k-best derivations problem in monotonic hypergraphs.
+    It consists of a normal forward phase for the 1-best derivation and a recursive backward phase for the 2nd, 3rd, ..., kth derivations.
+    Unfortunately, different derivations may have the same yield (a problem called spurious ambiguity), due to multi-level LHS of our rules.
+    In practice, this results in a very small ratio of unique strings among top-k derivations.
+    To alleviate this problem, determinization techniques have been proposed by Mohri and Riley (2002) for finite-state automata and extended to tree automata by May and Knight (2006).
+    These methods eliminate spurious ambiguity by effectively transforming the grammar into an equivalent deterministic form.
+    However, this transfo

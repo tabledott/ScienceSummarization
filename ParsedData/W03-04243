@@ -1,0 +1,10 @@
+otated with a named entity tag plus POS tag, and the words in the German and English data also have a chunk tag.
+    Our system does not currently exploit the chunk tags.
+    There are 4 types of entities to be recognised: persons, locations, organisations, and miscellaneous entities not belonging to the other three classes.
+    The 2002 data uses the IOB-2 format in which a B-XXX tag indicates the first word of an entity of type XXX and I-XXX is used for subsequent words in an entity of type XXX.
+    The tag O indicates words outside of a named entity.
+    The 2003 data uses a variant of IOB-2, IOB-1, in which I-XXX is used for all words in an entity, including the first word, unless the first word separates contiguous entities of the same type, in which case B-XXX is used.
+  
+  
+    Table 1 lists the contextual predicates used in our baseline system, which are based on those used in the Curran and Clark (2003) CCG supertagger.
+    The first set of features apply to rare words, i.e. those which appear less t

@@ -1,0 +1,6 @@
+ly, we can either solve w1 based on the context hypotheses for [2, 2], resulting in span [1, 2], or else solve w3 based on the context hypotheses in [2, 2] and [4, 5], resulting in span [2, 5].
+    The top two states for span [2, 2] are = {h452 = (VB,VB)5 &#8594; JJ} Here (NN,NN)5 &#8594; JJ represents the hypothesis coming from the action of assigning JJ to w5 under the left context state of (NN,NN).
+    (VB,VB)5 &#8594; JJ has a similar meaning.1 We first compute the hypotheses resulting from all possible POS tag assignments to w3, under all possible state combinations of the neighboring spans [2, 2] and [4, 5].
+    Suppose the highest score action consists in the assignment of DT under the left context state (VBD, VBD) and the right context state (NN-JJ, NNJJ).
+    We obtain hypothesis h251 = (VBD,VBD)3 &#8594; DT(NN-JJ, NN-JJ) with Here, features for action h251.A may depend on the left tag VBD and right tags NN-JJ, which have been solved before.
+    More details of the feature functions are given in Sect

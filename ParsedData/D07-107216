@@ -1,0 +1,11 @@
+ s ? S, each one operating at the subsymbol level.
+			While these HDP-PCFGs are independent in the prior, they are coupled through their interactions inthe parse trees.
+			For completeness, we have also in cluded unary productions, which are essentially the PCFG counterpart of transitions in HMMs.
+			Finally,since each node i in the parse tree involves a symbol subsymbol pair (si, zi), each subsymbol needs to specify a distribution over both child symbols and subsymbols.
+			The former can be handled through a finite Dirichlet distribution since all symbols are known and observed, but the latter must be handledwith the Dirichlet process machinery, since the num ber of subsymbols is unknown.
+			HDP-PCFG for grammar refinement (HDP-PCFG-GR) For each symbol s ? S: ??s ? GEM(?)
+			[draw subsymbol weights] ?For each subsymbol z ? {1, 2, . . .
+			}: ???Tsz ? Dirichlet(?
+			T ) [draw rule type parameters] ???Esz ? Dirichlet(?
+			E(s)) [draw emission parameters] ???usz ? Dirichlet(?
+			u) [unary symbol productions] ??

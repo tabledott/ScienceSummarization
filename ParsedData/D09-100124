@@ -1,0 +1,10 @@
+ our algorithm.
+    The input consists of an MLN without weights and the QLFs for the training sentences.
+    Two operators are used for updating semantic parses.
+    The first is to merge two clusters, denoted by MERGE(C1, C2) for clusters C1, C2, which does the following: and there is the local normalization constraint Ef ewc,f = 1.
+    The optimal weights wc,f are easily derived by solving this constrained optimization problem.
+    Here, merging two argument types refers to pooling their argument forms to create a new argument type.
+    Enumerating all possible ways of creating new argument types is intractable.
+    USP approximates it by considering one type at a time and either creating a new type for it or merging it to types already considered, whichever maximizes the loglikelihood.
+    The types are considered in decreasing order of their numbers of occurrences so that more information is available for each decision.
+    MERGE clusters syntactically different expressions whose meanings appear to be th

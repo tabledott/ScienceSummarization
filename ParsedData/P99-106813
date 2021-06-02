@@ -1,0 +1,6 @@
+discriminate languages with accuracy in the high 90% range for many or most language pairs given as little as 50k characters per language as training material.
+    For the language filtering stage of STRAND, the following criterion was adopted: given two documents d1 and d2 that are supposed to be in languages L1 and L2, keep the document pair iff Pr(Lildi) &gt; Pr(L214) and Pr(L21d2) &gt; Pr(Li I d2).
+    For English and Spanish, this translates as a simple requirement that the &amp;quot;English&amp;quot; page look more like English than Spanish, and that the &amp;quot;Spanish&amp;quot; page look more like Spanish than English.
+    Language identification is performed on the plain-text versions of the pages.
+    Character 5-gram models for languages under consideration are constructed using 100k characters of training data from the European Corpus Initiative (Ed), available from the Linguistic Data Consortium (LDC).
+    In a formal evaluation, STRAND with the new language identification stage was run for Eng

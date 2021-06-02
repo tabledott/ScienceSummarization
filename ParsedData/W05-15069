@@ -1,0 +1,9 @@
+based on the Viterbi algorithm, is still appli cable as long as the hypergraph is acyclic, and is used by McDonald et al (2005) to get the k-best parses.
+	
+	
+			Following Klein and Manning (2001), we use weighted directed hypergraphs (Gallo et al, 1993) as an abstraction of the probabilistic parsing problem.Definition 1.
+			An ordered hypergraph (henceforth hy pergraph) H is a tuple ?V, E, t,R?, where V is a finite set of vertices, E is a finite set of hyperarcs, and R is the set of weights.
+			Each hyperarc e ? E is a triple 54 e = ?T (e), h(e), f (e)?, where h(e) ? V is its head andT (e) ? V? is a vector of tail nodes.
+			f (e) is a weight func tion from R|T (e)| to R. t ? V is a distinguished vertex called target vertex.Note that our definition is different from those in previ ous work in the sense that the tails are now vectors rather than sets, so that we can allow multiple occurrences of the same vertex in a tail and there is an ordering among the components of a tail.
+			Definition 2.
+			A hypergraph H

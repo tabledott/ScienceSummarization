@@ -1,0 +1,8 @@
+better alternative to a uniform distribution as the smoothing distribution.
+    It should certainly be better than smoothing with a unigram distribution, since we especially want to benefit from smoothing the translation probabilities for the rarest words, and smoothing with a unigram distribution would assume that rare words are more likely to translate to frequent words than to other rare words, which seems counterintuitive.
+  
+  
+    We address the lack of sufficient alignments of target words to the null source word by adding extra null words to each source sentence.
+    Mathematically, there is no reason we have to add an integral number of null words, so in fact we let the number of null words in a sentence be any positive number.
+    One can make arguments in favor of adding the same number of null words to every sentence, or in favor of letting the number of null words be proportional to the length of the sentence.
+    We have chosen to add a fixed number of null words to each source sentence regardle

@@ -1,0 +1,15 @@
+e size counterbalances the quadratic running time of average-link to make Buckshot efficient: O(K?T?n + nlogn).
+			The parameters K and T are usually considered to be small numbers.
+	
+	
+			Following (Lin 1998), we represent each word by a feature vector.
+			Each feature corresponds to a context in which the word occurs.
+			For example, ?threaten with __?
+			is a context.
+			If the word handgun occurred in this context, the context is a feature of handgun.
+			The value of the feature is the pointwise mutual information (Manning and Sch?tze 1999 p.178) between the feature and the word.
+			Let c be a context and Fc(w) be the frequency count of a word w occurring in context c. The pointwise mutual information between c and w is defined as: ( ) ( ) ( ) N jF N wF N wF cw j c i i c mi ???
+			=, where N = ( )??
+			i j i jF is the total frequency counts of all words and their contexts.
+			A well known problem with mutual information is that it is biased towards infrequent words/features.
+			We therefore multiplied miw

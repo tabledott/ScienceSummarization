@@ -1,0 +1,9 @@
+stics there are for estimating the parameter, the more similar are the parameter values used by different committee members.
+    For models with multiple parameters, parameter estimates for different committee members differ more when they are based on low training counts, and they agree more when based on high counts.
+    Selecting examples on which the committee members disagree contributes statistics to currently uncertain parameters whose uncertainty also affects classification.
+    It may sometimes be difficult to sample P(MIS) due to parameter interdependence.
+    Fortunately, models used in natural language processing often assume independence between most model parameters.
+    In such cases it is possible to generate committee members by sampling the posterior distribution for each independent group of parameters separately.
+  
+  
+    In order to generate committee members for bigram tagging, we sample the posterior distributions for transition probabilities, P(t2-4i), and for lexical probabilities, P

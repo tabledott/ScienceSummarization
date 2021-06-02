@@ -1,0 +1,11 @@
+on C. Figure 2 describes the algorithm.
+			Input: e~ , C~ , contexts containing e~ , contexts containing all Cc ~~ ? ; 1.
+			create a frequency vector )),(,),(),(( 21 mefefef L ),,1(, miEei L=?
+			using contexts containing e~ ; transforming the vector into )),(,),(),(( 21 nEEE cfcfcf L ),,1(, niCci L=?
+			, using a translation dictionary and the EM algorithm; 2.
+			for each ( Cc ~~ ? ){ estimate with Maximum Likelihood Estimation the prior probability )~(cP using contexts containing all Cc ~~ ? ; create a frequency vector )),(,),(),(( 21 ncfcfcf L ),,1(, niCci L=?
+			using contexts containing c~ ; normalize the frequency vector , yielding ),,1(,)),~|(,),~|(),~|(( 21 niCcccPccPccP in LL =?
+			; calculate the posterior probability )|~( DcP with EM-NBC (generally EM-NBC-Ensemble), where ),,1(,)),(,),(),(( 21 niCccfcfcf inEEE LL =?=D 3.
+			Sort Cc ~~ ? in descending order of )|~( DcP ;.
+			Output: the top sorted results Figure 2.
+			Algorithm of EM-NBC-Ensemble Context Information As input data, we use ?contexts?

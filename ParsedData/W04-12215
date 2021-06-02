@@ -1,0 +1,8 @@
+nd suffixes in the character length range [3,5].
+    Words are also assigned a generalized &#8220;word class&#8221; similar to Collins (2002), which replaces capital letters with &#8216;A&#8217;, lowercase letters with &#8216;a&#8217;, digits with &#8216;0&#8217;, and all other characters with &#8216; &#8217;.
+    There is a similar &#8220;brief word class&#8221; feature which collapses consecutive identical characters into one.
+    Thus the words &#8220;IL5&#8221; and &#8220;SH3&#8221; would both be given the features WC=AA0 and BWC=A0, while &#8220;F-actin&#8221; and &#8220;T-cells&#8221; would both be assigned WC=A aaaaa and BWC=A a.
+    To model local context simply, neighboring words in the window [-1,1] are also added as features.
+    For instance, the middle token in the sequence &#8220;human UDG promoter&#8221; would have features WORD=UDG, NEIGHBOR=human and NEIGHBOR=promoter.
+    In addition to orthography, the model could also benefit from generalized semantic word groups.
+    If training sequences

@@ -1,0 +1,8 @@
+ used as the basis for step n+ 1.
+    The process stops when no rule reaches a score above a predefined threshold.
+    In our experiments this has usually yielded several hundreds of rules.
+    Of the four systems, TBL has access to the most features: contextual information (the words and tags in a window spanning three positions before and after the focus word) as well as lexical information (the existence of words formed by the addition or deletion of a suffix or prefix).
+    However, the conjunctions of these features are not all available in order to keep the search space manageable.
+    Even with this restriction, the search is computationally very costly.
+    The most important rule templates are of the form if context = x change tag, to tag) where context is some condition on the tags of the neighbouring words.
+    Hence learning speed is roughly cubic in the tagset size.17 When tagging, the system again starts with a baseline annotation for the new text, and then applies all rules that were derived du

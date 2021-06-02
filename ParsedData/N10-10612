@@ -1,0 +1,9 @@
+ovide little constraint.
+    In general, coreference errors in state-of-theart systems are frequently due to poor models of semantic compatibility (Haghighi and Klein, 2009).
+    In this work, we take a primarily unsupervised approach to coreference resolution, broadly similar to Haghighi and Klein (2007), which addresses this issue.
+    Our generative model exploits a large inventory of distributional entity types, including standard NER types like PERSON and ORG, as well as more refined types like WEAPON and VEHICLE.
+    For each type, distributions over typical heads, modifiers, and governors are learned from large amounts of unlabeled data, capturing type-level semantic information (e.g.
+    &#8220;spokesman&#8221; is a likely head for a PERSON).
+    Each entity inherits from a type but captures entity-level semantic information (e.g.
+    &#8220;giant&#8221; may be a likely head for the Microsoft entity but not all ORGs).
+    Separately from the type-entity semantic module, a log-linear discourse model ca

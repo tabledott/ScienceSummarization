@@ -1,0 +1,11 @@
+ offset at which its extensions begin.
+    Reading the following record&#8217;s offset indicates where the block ends.
+    This technique was introduced by Clarkson and Rosenfeld (1997) and is also implemented by IRSTLM and BerkeleyLM&#8217;s compressed option.
+    SRILM inefficiently stores 64-bit pointers.
+    Unigram records store probability, backoff, and an index in the bigram table.
+    Entries for 2 &lt; n &lt; N store a vocabulary identifier, probability, backoff, and an index into the n + 1-gram table.
+    The highestorder N-gram array omits backoff and the index, since these are not applicable.
+    Values in the trie are minimally sized at the bit level, improving memory consumption over trie implementations in SRILM, IRSTLM, and BerkeleyLM.
+    Given n-gram counts {cn}Nn=1, we use Flog2 c1] bits per vocabulary identifier and Flog2 cn] per index into the table of ngrams.
+    When SRILM estimates a model, it sometimes removes n-grams but not n + 1-grams that extend it to the left.
+    In a model we b

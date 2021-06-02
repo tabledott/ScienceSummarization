@@ -1,0 +1,7 @@
+parser to one or possibly several closely-matching derivations and these are used to derive probabilities for the LR table using (weighted) Laplace estimation.
+    Actions in the table involving rules marked as peripheral are assigned a uniform low prior probability to ensure that derivations involving such rules are consistently lower ranked than those involving only core rules.
+    To improve performance on WSJ text, we examined some parse failures from sections other than section 23 to identify patterns of consistent failure.
+    We then manually modified and extended the grammar with a further 6 rules, mostly to handle cases of indirect and direct quotation that are very common in this dataset.
+    This involved 3 days&#8217; work.
+    Once completed, the parser was retrained on the original data.
+    A subsequent limited inspection of top-ranked parses led us to disable 6 existing rules which applied too freely to the WSJ text; these were designed to analyse auxiliary ellipsis which appears to be rare in

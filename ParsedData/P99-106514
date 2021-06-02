@@ -1,0 +1,5 @@
+oice between using the output of the POS tagger or the human annotator's judgment as to the correct tag.
+    In test data, the correct answer was not available, but the POS tagger output could be used if desired.
+    This turns out to matter only for unknown words, as the parser is designed to do its own tagging, for words that it has seen in training at least 5 times, ignoring any tag supplied with the input.
+    For &amp;quot;unknown&amp;quot; words (seen less than 5 times), the parser can be set either to believe the tag supplied by the POS tagger or to allow equally any of the dictionary-derived possible tags for the word, effectively allowing the parse context to make the choice.
+    (Note that the rich inflectional morphology of Czech leads to a higher rate of &amp;quot;unknown&amp;quot; word forms than would be true in English; in one test, 29.5% of the words in test data were &amp;quot;unknown&amp;quot;) Our tests indicated that if unknown words are treated by believing the POS tagger's suggestion, th

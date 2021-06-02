@@ -1,0 +1,7 @@
+as the estimate for generating the remainder of the sentence by the pruned parses.
+    With this estimate we can calculate the sum of the probabilities for all the pruned parses which originate from that decision.
+    This approach gives us a slight overestimate of the total sum, but because this total sum acts simply as a weighting factor, it has little effect on learning.
+    What is important is that this estimate minimizes the effect of the pruned parses&#8217; probabilities on the part of the training process which occurs after the probabilities of the best parses have been calculated.
+    After estimating P(d1,..., dm|w1,..., wn), training requires that we estimate the first derivative of (the negative log of) this probability with respect to each of the network&#8217;s parameters.
+    The contribution to this derivative of the numerator in the above equation is the same as in the generative case, just scaled by the denominator.
+    The difference between the two learning methods is that we also need to

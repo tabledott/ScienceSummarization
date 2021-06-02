@@ -1,0 +1,9 @@
+ 1027 As mentioned in Section 2.1, we paramaterize the prior for synset i as a vector ?i, which sums to one, and a scale parameter S. The next step, once we?ve selected a topic, is to select a path within that topic.
+			This requires the computation of the path probabilities as specified in Equation 4 for all of the paths wu can take in thesampled topic and then sampling from the path prob abilities.
+			The Gibbs sampler is essentially a randomized hill climbing algorithm on the posterior likelihood as a function of the configuration of hidden variables.
+			The numerator of Equation 1 is proportional to that posterior and thus allows us to track the sampler?s progress.
+			We assess convergence to a local mode of the posterior by monitoring this quantity.
+	
+	
+			In this section, we describe the properties of the topics induced by running the previously described Gibbs sampling method on corpora and how these topics improve WSD accuracy.
+			Of the two data sets used during the course of our evaluation, the prim

@@ -1,0 +1,8 @@
+transition is called the &amp;quot;head transition&amp;quot;.
+    The entries in the parse matrix M are of the form (in, q), where in is a rule-FSM and q a state of it, except for the entries in squares M(i, i), 1 &lt; j&lt; n, which also contain category labels.
+    Let WO &#8226; &#8226; wn be the input word.
+    We initialize the parse matrix as follows.
+    Let C be a category of word wi.
+    First, we add C to M(i, i).
+    Then, we add to M(i, i) every pair (7n, q) such that m is a rule-FSM with a transition labeled C from a start state and q the state reached after that transition.6 Embedded in the usual three loops on i, j, k, we add an entry (mi, q) to M(i, j) if (m1, qi) is in M (k, j), (m2, q2) is in M (i, k+1), q2 is a final state of m2, m2 is a C-rule-FSM, and mi transitions from qi to q on C (a non-head transition).
+    There is a special case for the head transitions in mi: if k = i &#8212; 1, C is in M(i, i), mi is a Crule-FSM, and there is a head transition from qi to q in ml, then we add (mi,

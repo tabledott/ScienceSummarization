@@ -1,0 +1,8 @@
+nText allows the user to change the part of speech that is being displayed, or to tag words that should not have been skipped.
+  After the text has been syntactically tagged, all contiguous strings of proper nouns are joined with an underscore.
+  For example, the string "Mr. Charles C. Carpenter" is output as "Mr._Charles_C._Carpenter."
+  Here, too, the user can manually correct any mistaken concatenations.
+  An example may clarify what is involved in preprocessing.
+  The 109th sentence inpassage k13 of the Brown Corpus is: He went down the hall to Eugenes bathroom, to turn on the hot-water heater, and on the side of the tub he saw a pair of blue wool swimming trunks.
+  After preprocessing, this sentence is passed to ConText in the following form: br-kl3:109: He/PP went_down/VB the/DT hall/NN to/TO Eugene/NP /POS s/NN bathroom/NN J, to/TO turn_on/VB the/DT hot-water/NN heater/NN ,/, and/CC on/IN the/DT side/NN of/IN the/DT tub/NN he/PP saw/VBD a/DT pair/NN of/IN blue/JJ wool/NN swimming_trunks/NN ./.
+  The ve

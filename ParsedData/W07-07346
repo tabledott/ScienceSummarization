@@ -1,0 +1,9 @@
+0 and y = 0.5, based on experimentation performed in early 2004.
+    In the latest release, we tuned these parameters to optimize correlation with human judgments based on more extensive experimentation, as reported in section 4.
+  
+  
+    We have recently expanded the implementation of METEOR to support evaluation of translations in Spanish, French and German, in addition to English.
+    Two main language-specific issues required adaptation within the metric: (1) language-specific wordmatching modules; and (2) language-specific parameter tuning.
+    The word-matching component within the English version of METEOR uses stemming and synonymy modules in constructing a word-to-word alignment between translation and reference.
+    The resources used for stemming and synonymy detection for English are the Porter Stemmer (Porter, 2001) and English WordNet (Miller and Fellbaum, 2007).
+    In order to construct instances of METEOR for Spanish, French and German, we created new languagespecific &#8220;stemming&#8221; 

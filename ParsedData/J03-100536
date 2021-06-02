@@ -1,0 +1,5 @@
+for further consideration only hypotheses with a probability close to the maximum probability.
+    The number of surviving hypotheses is controlled by four kinds of thresholds: For the coverage and the cardinality pruning, the probability Qe,(e, C, j) is adjusted to take into account the uncovered source sentence positions C&#175; = {1, ... , J}\C.
+    To make this adjustment, for a source word f at an uncovered source position, we precompute an upper bound &#175;p(f) for the product of language model and lexicon probability: The above optimization is carried out only over the word trigrams (e, e', e'') that have actually been seen in the training data.
+    Additionally, the observation pruning described below is applied to the possible translations e of a source word f. The upper bound is used in the beam search concept to increase the comparability between hypotheses covering different coverage sets.
+    Even more benefit from the upper bound &#175;p(f) can be expected if the distortion and the fertility pr

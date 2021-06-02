@@ -1,0 +1,7 @@
+the already noted fact that in this model probabilities involve at most two lexical heads.
+    As seen in Table 2, the immediate-bihead model with a perplexity of 144.98 outperforms both previous models, even though they use trigrams of words in their probability estimates.
+    We also interpolated our parsing model with the trigram model (interpolation constant .36, as with the other models) and this model outperforms the other interpolation models.
+    Note, however, that because our parser does not define probabilities for each word based upon previous words (as with trigram) it is not possible to do the integration at the word level.
+    Rather we interpolate the probabilities of the entire sentences.
+    This is a much less powerful technique than the word-level interpolation used by both C&amp;J and Roark, but we still observe a significant gain in performance.
+    While the performance of the grammatical model is good, a look at sentences for which the trigram model outperforms it makes its limitations

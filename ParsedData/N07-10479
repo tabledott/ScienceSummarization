@@ -1,0 +1,8 @@
+simply normalizes the partial counts to create a probability distribution.
+    Normalization can be done over the whole table to create a joint distribution or per grapheme to create a conditional distribution.
+    The Forward-many2many function (Algorithm 3) fills in the table &#945;, with each entry &#945;(t, v) being the sum of all paths through the transducer that generate the sequence pair (xi, y&#65533;&#65533;).
+    Analogously, the Backward-many2many function fills in Q, with each entry Q(t, v) being the sum of all paths through the transducer that generate the sequence pair (xt , yr).
+    The constants DELX and DELY indicate whether or not deletions are allowed on either side.
+    In our system, we allow letter deletions (i.e. mapping of letters to null phoneme), but not phoneme deletions.
+    Expectation-many2many first calls the two functions to fill the &#945; and Q tables, and then uses the probabilities to calculate partial counts for every possible mapping in the sequence pair.
+    The partial 

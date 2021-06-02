@@ -1,0 +1,12 @@
+ (e.g.
+    K) such as the ACE RDC task.
+    For efficiency, we apply the one vs. others strategy, which builds K classifiers so as to separate one class from all others, instead of the pairwise strategy, which builds K*(K-1)/2 classifiers considering all pairs of classes.
+    The final decision of an instance in the multiple binary classification is determined by the class which has the maximal SVM output.
+    Moreover, we only apply the simple linear kernel, although other kernels can peform better.
+    The reason why we choose SVMs for this purpose is that SVMs represent the state-of&#8211;the-art in the machine learning research community, and there are good implementations of the algorithm available.
+    In this paper, we use the binary-class SVMLight2 deleveloped by Joachims (1998).
+  
+  
+    The semantic relation is determined between two mentions.
+    In addition, we distinguish the argument order of the two mentions (M1 for the first mention and M2 for the second mention), e.g.
+    M1-ParentOf-M2 vs. 

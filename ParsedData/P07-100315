@@ -1,0 +1,9 @@
+re-estimate the parameters of the model using the expected counts collected during the E-step.
+    All of the component distributions of our lexical and distortion models are multinomials.
+    Thus, upon assuming these expectations as values for the hidden alignment vectors, we maximize likelihood of the training data simply by computing relative frequencies for each component multinomial.
+    For the distortion model, an expected count c(aj, aj&#8722;) is allocated to all tree transitions along the path &#961;(ai&#8722;,ai,t).
+    These allocations are summed and normalized for each tree transition type to complete re-estimation.
+    The method of re-estimating the lexical model remains unchanged.
+    Initialization of the lexical model affects performance dramatically.
+    Using the simple but effective joint training technique of Liang et al. (2006), we initialized the model with lexical parameters from a jointly trained implementation of IBM Model 1.
+    Liang et al. (2006) shows that thresholding the pos

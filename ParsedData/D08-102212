@@ -1,0 +1,7 @@
+P (x1:NPB x2:VP) &#8594; x1 x2.
+    However, following the other hyperedge e1 IP0, 6 &#8594; NP0, 3 VPB3, 6 will leave the new fragment frag2 = {e1} incomplete with one non-admissible node NP0, 3.
+    We then grow frag2 at this node by choosing hyperedge e3 NP0, 3 &#8594; NPB0, 1 CC1, 2 NPB2, 3 , and spin off anew fragment frag3 = {e1, e3}, which is now complete since all its four leaf nodes are admissible.
+    We then extract a rule with four variables: This procedure is formalized by a breadth-first search (BFS) in Pseudocode 1.
+    The basic idea is to visit each frontier node v, and keep a queue open of actively growing fragments rooted at v. We keep expanding incomplete fragments from open, and extract a rule if a complete fragment is found (line 10).
+    Each fragment is associated with a frontier (variable front in the Pseudocode), being the subset of nonadmissible leaf nodes (recall that expansion stops at admissible nodes).
+    So each initial fragment along hyperedge e is associated with an initial 

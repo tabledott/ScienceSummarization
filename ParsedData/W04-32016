@@ -1,0 +1,8 @@
+log-linear model: where Zw(x) = Ey&#8712;G(x) exp{(w, &#934;(x, y))}, and maximizes the conditional log-likelihood of the sample, Ei log P(yi  |xi), (with some regularization).
+    In this paper, we advocate a different estimation criterion, inspired by the max-margin principle of SVMs.
+    Max-margin estimation has been used for parse reranking (Collins, 2000).
+    Recently, it has also been extended to graphical models (Taskar et al., 2003; Altun et al., 2003) and shown to outperform the standard maxlikelihood methods.
+    The main idea is to forego the probabilistic interpretation, and directly ensure that for all i in the training data.
+    We define the margin of the parameters w on the example i and parse y as the difference in value between the true parse yi and y: where `bi,y = `b(xi, y), and `bi,yz = `b(xi, yi).
+    Intuitively, the size of the margin quantifies the confidence in rejecting the mistaken parse y using the function fw(x), modulo the scale of the parameters ||w||.
+    We would like this 

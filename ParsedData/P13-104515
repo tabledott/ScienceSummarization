@@ -1,0 +1,11 @@
+tegories and each nonterminal node is associated with the same neural network (i.e., the weights across nodes are fully tied).
+    We can represent the binary tree in Fig.
+    2 in the form of branching triplets (p -+ c1c2).
+    Each such triplet denotes that a parent node p has two children and each ck can be either a word vector or a non-terminal node in the tree.
+    For the example in Fig.
+    2, we would get the triples ((p1 -+ bc), (p2 -+ ap1)).
+    Note that in order to replicate the neural network and compute node representations in a bottom up fashion, the parent must have the same dimensionality as the children: p E Rn.
+    Given this tree structure, we can now compute activations for each node from the bottom up.
+    We begin by computing the activation for p1 using the children&#8217;s word vectors.
+    We first concatenate the children&#8217;s representations b, c E Rnx1 into a E R2nx1.
+    Then the composition function multiplies this vector by the parameter weights of the RNN W E Rnx2n and appl

@@ -1,0 +1,7 @@
+he score of creating the edges from hit to with and from hit to ball.
+    The score functions are relative to the left or right of the parent and we never score adjacent edges that are on different sides of the parent (for instance, there is no s(2,1,4) for the adjacent edges from hit to John and ball).
+    This independence between left and right descendants allow us to use a O(n3) second-order projective parsing algorithm, as we will see later.
+    We write s(xi, &#8722;, xj) when xj is the first left or first right dependent of word xi.
+    For example, s(2, &#8722;, 4) is the score of creating a dependency from hit to ball, since ball is the first child to the right of hit.
+    More formally, if the word xi0 has the children shown in this picture, This second-order factorization subsumes the first-order factorization, since the score function could just ignore the middle argument to simulate first-order scoring.
+    The score of a tree for secondorder parsing is now where k and j are adjacent, same-side c

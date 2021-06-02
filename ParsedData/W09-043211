@@ -1,0 +1,7 @@
+a TM is provided as a phrase table, which is a set S = {(&#65533;f, e)} of phrase pairs associated with a given number of features values h(&#65533;f, E; S).
+    In our configuration, 5 features for the TM (the phrase penalty is included) are taken into account.
+    In the first phase of the decoding process, Moses generates translation options for all possible input phrases f through a lookup into S; it simply extracts alternative phrase pairs ( f, E) for a specific f and optionally applies pruning (based on the feature values and weights) to limit the number of such pairs.
+    In the second phase of decoding, it creates translation hypotheses of the full input sentence by combining in all possible ways (satisfying given re-ordering constraints) the prefetched translation options.
+    In this phase the hypotheses are scored, according to all features functions, ranked, and possibly pruned.
+    When more TMs Sj are available, Moses can behave in two different ways in pre-fetching the translation options.
+    

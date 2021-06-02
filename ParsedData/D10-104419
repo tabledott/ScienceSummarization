@@ -1,0 +1,7 @@
+(lm+map TM), the results are much better than a log-linear combination for the EMEA setting, and on a par for NIST.
+    This is consistent with the nature of these two settings: log-linear combination, which effectively takes the intersection of IN and OUT, does relatively better on NIST, where the domains are broader and closer together.
+    Somewhat surprisingly, there do not appear to be large systematic differences between linear and MAP combinations.
+    The 4th block contains instance-weighting models trained on all features, used within a MAP TM combination, and with a linear LM mixture.
+    The iw all map variant uses a non-0 y weight on a uniform prior in p,,(s t), and outperforms a version with y = 0 (iw all) and the &#8220;flattened&#8221; variant described in section 3.2.
+    Clearly, retaining the original frequencies is important for good performance, and globally smoothing the final weighted frequencies is crucial.
+    This best instance-weighting model beats the equivalant model without instan

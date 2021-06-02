@@ -1,0 +1,12 @@
+).
+    When all training data is used (1994-2004), the average ranked position is 1826 for Baseline and 1160 for Protagonist (1 being most confident).
+    The Baseline performs better at first (years 1994-5), but as more data is seen, the Baseline worsens while the Protagonist improves.
+    This verb-only narrative model shows a 36.5% improvement over the baseline trained on all years.
+    Results from the full Typed Deps model, not comparable to the baseline, parallel the Protagonist results, improving as more data is seen (average ranked position of 1908 with all the training data).
+    We also ran the experiment without OpenNLP coreference, and instead used exact and substring matching for coreference resolution.
+    This showed a 5.7% decrease in the verb-only results.
+    These results show that a protagonist greatly assists in narrative judgements.
+  
+  
+    The model proposed in the previous section is designed to learn the major subevents in a narrative chain, but not how these events are ordered.
+   

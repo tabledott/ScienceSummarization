@@ -1,0 +1,9 @@
+rate them out as we did with the rule probabilities &#952;.
+    However, it is possible to perform Bayesian inference by putting a prior on them and sampling their values.
+    Because we have no strong intuitions about the values of these parameters we chose uninformative priors.
+    We chose a uniform Beta(1,1) prior on aX, and a &#8220;vague&#8221; Gamma(10, 0.1) prior on bX = &#945;X (MacKay, 2003).
+    (We experimented with other parameters in the Gamma prior, but found no significant difference in performance).
+    After each Gibbs sweep through the parse trees t we resampled each of the adaptor parameters from the posterior distribution of the parameter using a slice sampler 10 times.
+    For example, we resample each bX from: Here P(t  |bX) is the likelihood of the current sequence of sample parse trees (we only need the factors that depend on bX) and Gamma(bX  |10, 0.1) is the prior.
+    The same formula is used for sampling aX, except that the prior is now a flat Beta(1,1) distribution.
+    In genera

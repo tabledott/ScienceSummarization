@@ -1,0 +1,8 @@
+d punctuation are removed from the training and test data.
+    Two feature sets are selected from the training data based on the top 100 ranked bigrams according to the power divergence statistic and the Dice Coefficient.
+    The bigram must have occurred 5 or more times to be included as a feature.
+    This step filters out a large number of possible bigrams and allows the decision tree learner to focus on a small number of candidate bigrams that are likely to be helpful in the disambiguation process.
+    The training and test data are converted to feature vectors where each feature represents the occurrence of one of the bigrams that belong in the feature set.
+    This representation of the training data is the actual input to the learning algorithms.
+    Decision tree and decision stump learning is performed twice, once using the feature set determined by the power divergence statistic and again using the feature set identified by the Dice Coefficient.
+    The majority classifier simply determines the most

@@ -1,0 +1,11 @@
+nd and pair distortion costs (i..e, Ci(p, n, m, a) and Cp(p, n, m, a)) can be defined in a similar fashion.
+    The above distortion costs are used in conjunction with other cost components used in our decoder.
+    The ultimate word order choice made is influenced by both the language model cost as well as the distortion cost.
+  
+  
+    The phrase-based decoder we use is inspired by the decoder described in (Tillmann and Ney, 2003) and similar to that described in (Koehn, 2004).
+    It is a multistack, multi-beam search decoder with n stacks (where n is the length of the source sentence being decoded) The input is the reordered English in the reference.
+    The 95% Confidence u ranges from 0.011 to 0.016 and a beam associated with each stack as described in (Al-Onaizan, 2005).
+    The search is done in n time steps.
+    In time step i, only hypotheses that cover exactly i source words are extended.
+    The beam search algorithm attempts to find the translation (i.e., hypothesis that covers all source words) w

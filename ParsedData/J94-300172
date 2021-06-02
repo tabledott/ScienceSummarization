@@ -1,0 +1,7 @@
+ombined.
+    For a left-to-right rule, the right context is checked on the input (0) side of the replacement, while the left context is checked on the output (0) side.
+    The regular relation and corresponding transducer for a leftBoth left- and right-context brackets are freely introduced on input strings, strings in which the right-context bracket is mislocated are rejected, and the replacement takes place only between the now-constrained right-context brackets and the still free leftcontext markers.
+    This imposes the restriction on left-context markers that they at least appear before replacements, although they may or may not freely appear elsewhere.
+    The left-context checker ensures that left-context markers do in fact appear only in the proper locations on the output.
+    Finally, all brackets are eliminated, yielding strings in the output language.
+    The context-checking situation is exactly reversed for right-to-left rules: the leftcontext matches against the unchanged input string while the 

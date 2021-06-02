@@ -1,0 +1,13 @@
+f PoS tagging in a pipelined NLP system by incorporating our SCL tagger into a WSJ-trained dependency parser and and evaluate it on MEDLINE data.
+    We use the parser described by McDonald et al. (2005b).
+    That parser assumes that a sentence has been PoStagged before parsing.
+    We train the parser and PoS tagger on the same size of WSJ data.
+    Figure 7 shows dependency parsing accuracy on our 561-sentence MEDLINE test set.
+    We parsed the sentences using the PoS tags output by our source domain supervised tagger, the SCL tagger from subsection 7.1, and the gold PoS tags.
+    All of the differences in this figure are significant according to McNemar&#8217;s test.
+    The SCL tags consistently improve parsing performance over the tags output by the supervised tagger.
+    This is a rather indirect method of improving parsing performance with SCL.
+    In the future, we plan on directly incorporating SCL features into a discriminative parser to improve its adaptation properties.
+  
+  
+    Domain adaptati

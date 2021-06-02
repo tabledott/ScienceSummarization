@@ -1,0 +1,14 @@
+ to regroup conjuncts.
+    Of course, the regrouping of conjuncts requires a good alignment to begin with, and that requires a reasonable ordering of conjuncts in the training data, since the alignment model is sensitive to word order.
+    This suggests an iterative algorithm in which a better grouping of conjuncts leads to a better alignment model, which guides further regrouping until convergence.
+    We did not pursue this, as it is not needed in our experiments so far.
+  
+  
+    In this section, we propose two methods for modeling the target MRL.
+    This is motivated by the fact that many of the errors made by the A-WASP parser can be detected by inspecting the MR translations alone.
+    Figure 7 shows some typical errors, which can be classified into two broad categories: 1.
+    Type mismatch errors.
+    For example, a state cannot possibly be a river (Figure 7(a)).
+    Also it is awkward to talk about the population density of a state&#8217;s highest point (Figure 7(b)).
+    2.
+    Errors that do not i

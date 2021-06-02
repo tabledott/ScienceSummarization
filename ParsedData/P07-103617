@@ -1,0 +1,10 @@
+nly high-confidence samples are added to the labeled data pool.
+    While we include all the samples in the training pool, we could also limit ourselves to the high-confidence samples.
+    The second difference is that each unlabeled example generates K labeled instances.
+    The case of one iteration of top-1 hard EM is equivalent to self training, where all the unlabeled samples are added to the labeled pool.
+    There are several possible benefits to using K &gt; 1 samples.
+    (1) It effectively increases the training set by a factor of K (albeit by somewhat noisy examples).
+    In the structured scenario, each of the top-K assignments is likely to have some good components so generating top-K assignments helps leveraging the noise.
+    (2) Given an assignment that does not satisfy some constraints, using top-K allows for multiple ways to correct it.
+    For example, consider the output 11101000 with the constraint that it should belong to the language 1*0*.
+    If the two top scoring corrections are 1111

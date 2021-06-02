@@ -1,0 +1,9 @@
+entence but depends on which sub string of the sentence it covers, and second, the leaves of the tree are not individual terminals of the grammar but are substrings of words of the NLsentence.
+			The extensions needed for Earley?s al gorithm are straightforward and are described in detail in (Kate, 2005) but due to space limitationwe do not describe them here.
+			Our extended Ear ley?s algorithm does a beam search and attempts to find the ?
+			(a parameter) most probable semanticderivations of an NL sentence s using the probabil ities Ppi(s[i..j]).
+			To make this search faster, it uses a threshold, ?, to prune low probability derivation trees.
+	
+	
+			In this section, we describe how KRISP learns the classifiers which give the probabilities Ppi(u) needed for semantic parsing as described in the previous section.
+			Given the training corpus of NL sentences paired with their MRs {(si,mi)|i = 1..N}, KRISP first parses the MRs using the MRL grammar, G. We represent the parse of MR, mi, by parse(mi).Figure 4 show

@@ -1,0 +1,9 @@
+hown in (Chen and Rosenfeld, 2000) &#8212; and rederived in Appendix A for the non-zero mean case &#8212; the update equations are: In our experiments the variances are tied to &#963;i = &#963; whose value is determined by line search on development data such that it yields the best tagging accuracy.
+  
+  
+    In the adaptation scenario we already have a MaxEnt model trained on the background data and we wish to make best use of the adaptation data by balancing the two.
+    A simple way to accomplish this is to use MAP adaptation using a prior distribution on the model parameters.
+    A Gaussian prior for the model parameters A has been previously used in (Chen and Rosenfeld, 2000) for smoothing MaxEnt models.
+    The prior has 0 mean and diagonal covariance: A &#8764; N(0, diag(&#963;2 i)).
+    In the adaptation scenario, the prior distribution used is centered at the parameter values A0 estimated from the background data instead of 0: A &#8764; N(A0, diag(&#963;2i )).
+    The regularized log-likelihood of t

@@ -1,0 +1,7 @@
+.it/ moschitti/ which encodes tree kernel functions in SVM-light (Joachims, 1999).
+    As a first experiment, we focus on question classification, for which benchmarks and baseline results are available (Zhang and Lee, 2003; Li and Roth, 2005).
+    We design a question multi-classifier by combining n binary SVMs3 according to the ONEvs-ALL scheme, where the final output class is the one associated with the most probable prediction.
+    The PASs were automatically derived by our SRL 3We adopted the default regularization parameter (i.e., the average of 1/||x||) and tried a few cost-factor values to adjust the rate between Precision and Recall on the development set. system which achieves a 76% F1-measure (Moschitti et al., 2005).
+    As benchmark data, we use the question training and test set available at: l2r.cs.uiuc.edu/ &#8764;cogcomp/Data/QA/QC/, where the test set are the 500 TREC 2001 test questions (Voorhees, 2001).
+    We refer to this split as UIUC.
+    The performance of the multi-classifier and the

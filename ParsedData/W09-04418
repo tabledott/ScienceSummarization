@@ -1,0 +1,9 @@
+r might choose the words to shift.
+    For exact details on these constraints, see Snover et al. (2006).
+    There are other automatic metrics that follow the general formulation as TER but address the complexity of shifting in different ways, such as the CDER evaluation metric (Leusch et al., 2006).
+    When TER is used with multiple references, it does not combine the references.
+    Instead, it scores the hypothesis against each reference individually.
+    The reference against which the hypothesis has the fewest number of edits is deemed the closet reference, and that number of edits is used as the numerator for calculating the TER score.
+    For the denominator, TER uses the average number of words across all the references.
+    TER-Plus (TERp) is an extension of TER that aligns words in the hypothesis and reference not only when they are exact matches but also when the words share a stem or are synonyms.
+    In addition, it uses probabilistic phrasal substitutions to align phrases in the hypothesis and 

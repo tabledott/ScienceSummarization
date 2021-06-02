@@ -1,0 +1,5 @@
+ Word lattices have been used to represent ambiguous input to machine translation systems for a variety of tasks, including translating automatic speech recognition transcriptions and translating from morphologically complex languages (Bertoldi et al., 2007; Dyer et al., 2008).
+    The intuition behind using lattices in both approaches is to avoid the error propagation effects that are found when a one-best guess is used.
+    By carrying a certain amount of uncertainty forward in the processing pipeline, information contained in the translation models can be leveraged to help resolve the upstream ambiguity.
+    In our case, we want to propagate uncertainty about the proper segmentation of a compound forward to the decoder, which can use its full translation model to select proper segmentation for translation.
+    Mathematically, this can be understood as follows: whereas the goal in conventional machine translation is to find the sentence &#710;eI1 that maximizes Pr(eI1|fJ1 ), the lattice adds a latent variab

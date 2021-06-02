@@ -1,0 +1,7 @@
+ and X to explain the data, resulting in 8320 effective rules; in contrast, the HDP-PCFG uses only 4 subsymbols for X and 1 forS, resulting in only 68 effective rules.
+			If the thresh old is relaxed from 10?6 to 10?3, then only 20 rules are effective, which corresponds exactly to the true grammar.
+			3.2 Parsing the Penn Treebank.
+			In this section, we show that our variational HDP PCFG can scale up to real-world data sets.
+			We ranexperiments on the Wall Street Journal (WSJ) por tion of the Penn Treebank.
+			We trained on sections 2?21, used section 24 for tuning hyperparameters, and tested on section 22.
+			We binarize the trees in the treebank as follows:for each non-terminal node with symbol X , we in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 0.25 subsymbol pos ter ior 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 0.25 subsymbol pos ter ior standard PCFG HDP-PCFG Figure 7: The posteriors over the subsymbols of thestandard PCFG is roughly uniform, whereas the pos teriors of the HDP-PCFG is

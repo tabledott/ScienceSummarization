@@ -1,0 +1,9 @@
+pic model (see figure 1) which generates a collection of document sets.
+    We assume a fixed vocabulary V :12 11A topic model is a probabilistic generative process that generates a collection of documents using a mixture of topic vocabulary distributions (Steyvers and Griffiths, 2007).
+    Note this usage of topic is unrelated to the summary focus given for document collections; this information is ignored by our models.
+    12In contrast to previous models, stop words are not removed in pre-processing.
+    13DIRICHLET(V,A) represents the symmetric Dirichlet prior distribution over V each with a pseudo-count of A.
+    Concrete pseudo-count values will be given in section 4.
+    4.
+    For each sentence S of each document D, draw a distribution &#968;T over topics (CONTENT, DOCSPECIFIC, BACKGROUND) from a Dirichlet prior with pseudo-counts (1.0, 5.0,10.0).14 For each word position in the sentence, we draw a topic Z from &#968;T, and a word W from the topic distribution Z indicates.
+    Our intent is that &#96

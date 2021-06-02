@@ -1,0 +1,10 @@
+ating English as source language and French as target language or vice versa.
+    A conventional bilingual dictionary can be considered an additional knowledge source.
+    We could use a feature that counts how many entries of a conventional lexicon co-occur in a given alignment between the source sentence and the target sentence.
+    Therefore, the weight for the provided conventional dictionary can be learned.
+    The intuition is that the conventional dictionary is expected to be more reliable than the automatically trained lexicon and therefore should get a larger weight.
+    We define a bilingual dictionary as a set of entries: D = {(e, f, conf)}. e is a source language word, f is a target langauge word, and conf is a positive real-valued number (usually, conf = 1.0) assigned by lexicographers to evaluate the validity of the entry.
+    Therefore, the feature function using a bilingual dictionary is: where
+  
+  
+    We use the GIS (Generalized Iterative Scaling) algorithm (Darroch and Ratcliff, 1972) to t

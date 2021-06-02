@@ -1,0 +1,10 @@
+ then uses this selected parse as a proxy to the gold standard parse to update the parameters (line 11).
+    The intuition is simple.
+    The parser starts with non-random accuracies by emulating the direct transfer model and slowly tries to induce better parameters by selecting parses from its k-best list The notation (i, j) E y indicates that a dependency from head i to modifier j is in tree y.
+    The ALIGN function rewards aligned head-modifier pairs and penalizes unaligned pairs when a possible alignment exists.
+    For all other cases it is agnostic, i.e., when one or both of the modifier or head are not aligned.
+    Figure 3 shows an example of aligned EnglishGreek sentences, the English parse and a potential Greek parse.
+    In this case the ALIGN function returns a value of 2.
+    This is because there are three aligned dependencies: took&#8594;book, book&#8594;the and from&#8594;John.
+    These add 3 to the score.
+    There is one incorrectly aligned dependency: the preposition mistakenly modifies t

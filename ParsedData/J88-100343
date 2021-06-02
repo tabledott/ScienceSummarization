@@ -1,0 +1,15 @@
+z1, since v and z are unambiguous.
+    Now consider the partial spans beginning at v, and ending (respectively) at each of the four remaining words.
+    The partial span network ending at w contains exactly three paths.
+    One of these must be a portion of the optimal path for the entire span.
+    So we save all three: one path to each tag under w. The probability of each path is the value found in the collocation matrix entry for its tag-pair, namely p(v,wi) for i ranging from one to three.
+    Next, consider the three tags under word x.
+    One of these tags must lie on the optimal path.
+    Assume it is xl.
+    Under this assumption, we have a complete span of length 3, for x is unambiguous.
+    Only one of the paths to xi can be optimal.
+    Therefore we can disambiguate v. .
+    . w. .
+    . xi under this assumption, namely, as MAX (p(v,wir p(wi,x I)) for all wi.
+    Now, of course, the assumption that x1 is on the optimal path is unacceptable.
+    However, the key to VOLSUNGA is to notice that by makin

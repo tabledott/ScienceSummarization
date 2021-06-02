@@ -1,0 +1,9 @@
+it to generate predictions as before.
+    Second, when predicting a left corner Y with a production Y Y,_1Y,A, add states for all dot positions up to the first RHS nonterminal that cannot expand to E, say from X &#8212;&gt; .Y1 ... Y,_i Y,A through X &#8212;&gt; Yi_i .Y,A.
+    We will call this procedure &amp;quot;spontaneous dot shifting.&amp;quot; It accounts precisely for those derivations that expand the RHS prefix Y1 ... Y,_1 without consuming any of the input symbols.
+    The forward and inner probabilities of the states thus created are those of the first state X &#8212;&gt; .Y1 ... Y,_1Y,A, multiplied by factors that account for the implied Eexpansions.
+    This factor is just the product [Li ey&#8222; where j is the dot position.
+    4.7.3 Completion with null productions.
+    Modification of the completion step follows a similar pattern.
+    First, the unit production relation has to be extended to allow for unit production chains due to null productions.
+    A rule X Yi &#8226; &#8226; &#8226; Y1-1

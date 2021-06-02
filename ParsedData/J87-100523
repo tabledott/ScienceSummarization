@@ -1,0 +1,10 @@
+e union of its two arguments (both sets).
+    The function cross-product takes a list of sets as its argument and returns the set of lists corresponding to each way of taking an element from each of the sets in order.
+    For example, The function terms(form) returns the set of all complex terms in form.
+    The function applicable-terms(form) returns the set of all complex terms in form that can be applied to form.
+    The deterministic version of the algorithm is identical in structure to the nondeterministic version.
+    Each function operates in the same way as its nondeterministic counterpart, except that they uniformly return sets rather than nondeterministically returning single values.
+    The algorithm is as follows.
+    The function gen (form) returns a set of all valid full scopings of the formula form. function gen (form); return pull(form,true).
+    The function pull returns a set of all valid scopings of the formula form.
+    If complete? is true, only full scopings are returned; otherwise, part

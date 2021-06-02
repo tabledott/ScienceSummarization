@@ -1,0 +1,8 @@
+s 2-order-non-proj-approx(x,s) Sentence x = x0 ... xn, x0 = root Weight function s : (i, k, j) &#8594; R of dependents have been gathered.
+    This allows for the collection of pairs of adjacent dependents in a single stage, which allows for the incorporation of second-order scores, while maintaining cubictime parsing.
+    The Eisner algorithm can be extended to an arbitrary mth-order model with a complexity of O(nm+1), for m &gt; 1.
+    An mth-order parsing algorithm will work similarly to the second-order algorithm, except that we collect m pairs of adjacent dependents in succession before attaching them to their parent.
+    Unfortunately, second-order non-projective MST parsing is NP-hard, as shown in appendix A.
+    To circumvent this, we designed an approximate algorithm based on the exact O(n3) second-order projective Eisner algorithm.
+    The approximation works by first finding the highest scoring projective parse.
+    It then rearranges edges in the tree, one at a time, as long as such rearrangements

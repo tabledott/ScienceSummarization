@@ -1,0 +1,6 @@
+only use join relations can represent arbitrarily complex compositional structures, but they cannot capture higherorder phenomena in language.
+    For example, consider the phrase number of major cities, and suppose that number corresponds to the count predicate.
+    It is impossible to represent the semantics of this phrase with just a CSP, so we introduce a new aggregate relation, notated E. Consider a tree hE:ci, whose root is connected to a child c via E. If the denotation of c is a set of values s, the parent&#8217;s denotation is then a singleton set containing s. Formally: Figure 3(a) shows the DCS tree for our running example.
+    The denotation of the middle node is {s}, where s is all major cities.
+    Having instantiated s as a value, everything above this node is an ordinary CSP: s constrains the count node, which in turns constrains the root node to |s|.
+    A DCS tree that contains only join and aggregate relations can be viewed as a collection of treestructured CSPs connected via aggregate rela

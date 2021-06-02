@@ -1,0 +1,8 @@
+he total number of subtrees that can be extracted from the binary tree set is too large to be fully taken into account.
+    Together with the high computational cost of reestimation we propose even more drastic pruning than we did in Bod (2006) for U-DOP.
+    That is, while for sentences &lt;_ 7 words we use all binary trees, for each sentence &gt;_ 8 words we randomly sample a fixed number of 128 trees (which effectively favors more frequent trees).
+    The resulting set of trees is referred to as the binary tree set.
+    Next, we randomly extract for each subtree-depth a fixed number of subtrees, where the depth of subtree is the longest path from root to any leaf.
+    This has roughly the same effect as the correction factor used in Bod (2003, 2006).
+    That is, for each particular depth we sample subtrees by first randomly selecting a node in a random tree from the binary tree set after which we select random expansions from that node until a subtree of the particular depth is obtained.
+    For our exper

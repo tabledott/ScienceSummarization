@@ -1,0 +1,9 @@
+ reduction, the item on top of S is popped, and a new item is pushed onto S. The new item consists of a tree formed by a non-terminal node with the popped item as its single child.
+    The lexical head of the new item is the same as the lexical head of the popped item.
+    In a binary reduction, two items are popped from S in sequence, and a new item is pushed onto S. The new item consists of a tree formed by a non-terminal node with two children: the first item popped from S is the right child, and the second item is the left child.
+    The lexical head of the new item is either the lexical head of its left child, or the lexical head of its right child.
+    If S is empty, only a shift action is allowed.
+    If W is empty, only a reduce action is allowed.
+    If both S and W are non-empty, either shift or reduce actions are possible.
+    Parsing terminates when W is empty and S contains only one item, and the single item in S is the parse tree for the input string.
+    Because the parse tree is lexicalized, w

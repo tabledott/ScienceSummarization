@@ -1,0 +1,5 @@
+ses.
+    Linear-Context-based p(t|w) approximation The method of Levinger et al. makes use of Hebrew inflection patterns in order to estimate context free approximation of p(t|w) by relating a word to its different inflections.
+    However, the context in which a word occurs can also be very informative with respect to its POS-analysis (Sch&#168;utze, 1995).
+    We propose a novel algorithm for estimating p(t|w) based on the contexts in which a word occurs.3 The algorithm starts with an initial p(t|w) estimate, and iteratively re-estimates: 3While we rely on the same intuition, our use of context differs from earlier works on distributional POS-tagging like (Sch&#168;utze, 1995), in which the purpose is to directly assign the possible POS for an unknown word.
+    In contrast, our algorithm aims to improve the estimate for the whole distribution p(tIw), to be further disambiguated by the EM-HMM learner. where Z is a normalization factor, W is the set of all words in the corpus, C is the set of all contexts, an

@@ -1,0 +1,6 @@
+s, and succeeded in showing that finer-grained soft syntactic constraints yield substantial improvements in BLEU score for both Chinese-English and Arabic-English translation.
+    In addition to adding separate features for different syntactic nonterminals, they introduced a new type of constraint that penalizes rules when the source language side crosses the boundaries of a source syntactic constituent, as opposed to simply rewarding rules when they are consistent with the source-language parse tree.
+    Marton and Resnik optimized their features&#8217; weights using MERT.
+    But since MERT does not scale well to large numbers of feature weights, they were forced to test individual features and manually selected feature combinations each in a separate model.
+    Although they showed gains in translation performance for several such models, many larger, potentially better feature combinations remained unexplored.
+    Moreover, the best-performing feature subset was different for the two language pairs, sugge

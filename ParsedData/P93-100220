@@ -1,0 +1,10 @@
+ord in each of the two parallel corpora.
+    We use dynamic programming to find the probability of the best alignment of these two blocks of sentences.
+    If this probability is sufficiently high we take the candidate location to be the end of the deletion.
+    Because it is extremely unlikely that there are two very similar sets of forty sentences in a corpus, this deletion identification algorithm is robust.
+    In addition, because we key off of rare words in considering ending points, deletion identification requires time linear in the length of the deletion.
+  
+  
+    Using this algorithm, we have aligned three large English/French corpora.
+    We have aligned a corpus of 3,000,000 sentences (of both English and French) of the Canadian Hansards, a corpus of 1,000,000 sentences of newer Hansard proceedings, and a corpus of 2,000,000 sentences of proceedings from the European Economic Community.
+    In each case, we first bootstrapped the translation model by training on 100 previously aligned sentence pa

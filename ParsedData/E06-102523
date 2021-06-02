@@ -1,0 +1,6 @@
+ation (the naive Bayesian learner using the multinomial model (McCallum and Nigam, 1998), support vector machines using linear kernels (Joachims, 1998), the Rocchio learner, and its PrTFIDF probabilistic version (Joachims, 1997)), for Approach III we use their multiclass versions9.
+    Before running our learners we make a pass of feature selection, with the intent of retaining only those features that are good at discriminating our categories, while discarding those which are not.
+    Feature selection is implemented by scoring each feature fk (i.e. each term that occurs in the glosses of at least one training term) by means of the mutual information (MI) function, defined as and discarding the x% features fk that minimize it.
+    We will call x% the reduction factor.
+    Note that the set {c1, ... , cm} from Equation 1 is interpreted differently in Approaches I to III, and always consistently with who the categories at stake are.
+    Since the task we aim to solve is manifold, we will evaluate our classifie

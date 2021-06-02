@@ -1,0 +1,6 @@
+put.
+    For example, in a communication frame, noun phrases headed by &amp;quot;Bill&amp;quot;, &amp;quot;brother&amp;quot;, or &amp;quot;he&amp;quot; are more likely to be the SpEAKER, while those headed by &amp;quot;proposal&amp;quot;, &amp;quot;story&amp;quot;, or &amp;quot;question&amp;quot; are more likely to be the Topic.
+    To predict argument roles in new data, we wish to estimate the probability of each role given these five features and the predicate p: P(rlpt, path, position, voice, hw, p).
+    Due to the sparsity of the data, it is not possible to estimate this probability from the counts in the training.
+    Instead, we estimate probabilities from various subsets of the features, and interpolate a linear combination of the resulting distributions.
+    The interpolation is performed over the most specific distributions for which data are available, which can be thought of as choosing the topmost distributions available from a backoff lattice, shown in We applied the same system, using the same f

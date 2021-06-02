@@ -1,0 +1,12 @@
+l consider various higher-order soft factors: PAIR.
+    The binary factor PAIRij,kt fires with some value iff Lij and Lkt are both true.
+    Thus, it penalizes or rewards a pair of links for being simultaneously present.
+    This is a soft version of NAND.
+    GRAND.
+    Shorthand for the family of O(n3) binary factors {PAIRij,jk}, which evaluate grandparentparent-child configurations, i &#8212;* j &#8212;* k. For example, whether preposition j attaches to verb i might depend on its object k. In non-projective parsing, we might prefer (but not require) that a parent and child be on the same side of the grandparent.
+    SIB.
+    Shorthand for the family of O(n3) binary factors {PAIRij,ik}, which judge whether two children of the same parent are compatible.
+    E.g., a given verb may not like to have two noun children both to its left.6 The children do not need to be adjacent.
+    CHILDSEQ.
+    A family of O(n) global factors.
+    CHILDSEQi scores i&#8217;s sequence of children; hence it consults all variables 

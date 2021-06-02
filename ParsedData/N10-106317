@@ -1,0 +1,6 @@
+s annotated with possible parallel sentences in the target language (the target language was English in all experiments).
+    The pairs were annotated with a quality level: 1 if the sentences contained some parallel fragments, 2 if the sentences were mostly parallel with some missing words, and 3 if the sentences appeared to be direct translations.
+    In all experiments, sentence pairs with quality 2 or 3 were taken as positive examples.
+    The resulting datasets are available at http://research.microsoft.com/enus/people/chrisq/wikidownload.aspx.
+    For our seed parallel data, we used the Europarl corpus (Koehn, 2005) for Spanish and German and the JRC-Aquis corpus for Bulgarian, plus the article titles for parallel Wikipedia documents, and translations available from Wiktionary entries.3 Using 5-fold cross-validation on the 20 document pairs for each language condition, we compared the binary classifier, ranker, and CRF models for parallel sentence extraction.
+    To tune for precision/recall, we used min

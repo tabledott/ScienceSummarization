@@ -1,0 +1,9 @@
+grammar is organized around semantic patterns, it nicely concentrates all of the material required to build word lattices.
+    Unfortunately, it forces us to restate the same syntactic constraint in many places.
+    A second problem is that sequential composition does not allow us to insert new words inside old lattices, as needed to generate sentences like John looked it up.
+    We have extended our notation to allow such constructions, but the full solution is to move to a unification-based framework, in which e-structures are replaced by arbitrary feature structures with syn, sem, and lat fields.
+    Of course, this requires extremely efficient handling of the disjunctions inherent in large word lattices.
+  
+  
+    We implemented a medium-sized grammar of English based on the ideas of the previous section, for use in experiments and in the JAPANGLOSS machine translation system.
+    The system converts a semantic input into a word lattice, sending the result to one of three sentence extraction programs: tio

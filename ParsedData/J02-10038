@@ -1,0 +1,8 @@
+&#8221;) is the set of elements from which r is to be selected.
+    The algorithm iterates through A; for each Attribute Ai, it checks whether specifying a Value for that Attribute would rule out at least one object that has not already been ruled out; if so, the Attribute is added to L, with a suitable Value (FindBestValue, below).
+    C is the set of &#8220;confusables&#8221; at any given stage of the algorithm.2 Objects that are ruled out are removed from C. The process of expanding L and contracting C continues until C = {r}; if and when this condition is met, L is a distinguishing set of properties.
+    For easy generalizability, the algorithm will be cast in set-theoretic terms.
+    We first present a version that focuses on properties, without separating these into Attributes and Values, and assume the properties themselves are ordered in a list P (cf.
+    Reiter and Dale 2000).
+    This version of the algorithm will be called D&amp;RProp, or D&amp;R when there is no risk of confusion.
+    We assume th

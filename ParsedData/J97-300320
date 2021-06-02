@@ -1,0 +1,8 @@
+m another entry in the lexicon, its frequency count (f) is incremented.
+    Then the infrequent rules with f &lt; 19 are eliminated from the endingguessing rule set.
+    After applying the A and v operations to the training lexicon, we obtained rule collections of 40,000-50,000 entries.
+    Filtering out the rules with frequency counts of 1 reduced the collections to 5,000-7,000 entries.
+    Of course, not all acquired rules are equally good at predicting word classes: some rules are more accurate in their guesses and some rules are more frequent in their application.
+    For every rule acquired, we need to estimate whether it is an effective rule worth retaining in the working rule set.
+    To do so, we perform a statistical experiment as follows: we take each rule from the extracted rule sets, one by one, take each wordtype from the training lexicon and guess its Pos-class using the rule, if the rule is applicable to the word.
+    For example, if a guessing rule strips off a particular suffix and a current 

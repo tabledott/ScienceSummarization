@@ -1,0 +1,5 @@
+.
+    To generate a summary of predetermined length, we induce a ranking on the themes and select the n highest.2 This ranking is based on three features of the theme: size measured as the number of sentences, similarity of sentences in a theme, and salience score.
+    The first two of these scores are produced by Simfinder, and the salience score is computed using lexical chains (Morris and Hirst 1991; Barzilay and Elhadad 1997) as described below.
+    Combining different rankings further filters common information in terms of salience.
+    Since each of these scores has a different range of values, we perform ranking based on each score separately, then induce total ranking by summing ranks from individual categories: Rank (theme) = Rank (Number of sentences in theme) + Rank (Similarity of sentences in theme) + Rank (Sum of lexical chain scores in theme) Lexical chains&#8212;sequences of semantically related words&#8212;are tightly connected to the lexical cohesive structure of the text and have been shown 

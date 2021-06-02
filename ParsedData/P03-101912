@@ -1,0 +1,12 @@
+ord graphs for a bottom-top search with the IBM constraints is described in (Ueffing et al., 2002).
+    These methods cannot be applied to the CYK-style search for the ITG constraints.
+    Here, the idea for the generation of word graphs is the following: assuming we already have word graphs for the source sequences fkjl and fjr in monotone or inverted order.
+    Now, we describe this idea in a more formal way.
+    A word graph is a directed acyclic graph (dag) with one start and one end node.
+    The edges are annotated with target language words or phrases.
+    We also allow 2-transitions.
+    These are edges annotated with the empty word.
+    Additionally, edges may be annotated with probabilities of the language or translation model.
+    Each path from start node to end node represents one translation hypothesis.
+    The probability of this hypothesis is calculated by multiplying the probabilities along the path.
+    During the search, we have to combine two word graphs in either monotone or inverted orde

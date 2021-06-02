@@ -1,0 +1,7 @@
+ effect on overall parsing performance, and given that the choice of head is not terribly critical either, one might wonder what power, if any, head-lexicalization is providing.
+    The answer is that even when one removes bilexical dependencies from the model, there are still plenty of lexico-structural dependencies, that is, structures being generated conditioning on headwords and headwords being generated conditioning on structures.
+    To test the effect of such lexicostructural dependencies in our lexicalized PCFGstyle formalism, we experimented with the removal of the head tag th and/or the head word wh from the conditioning contexts of the PMw and PM parameters.
+    The recertainly points to the utility of caching probabilities (the 219 million are tokens, not types).
+    Parsing performance with various models on Section 00 of the Penn Treebank.
+    PM is the parameter class for generating partially lexicalized modifying nonterminals (a nonterminal label and part of speech).
+    PMw is the parameter c

@@ -1,0 +1,7 @@
+hildren of i in the tree y.
+    The second-order model allows us to condition on the most recent parsing decision, that is, the last dependent picked up by a particular word, which is analogous to the the Markov conditioning of in the Charniak parser (Charniak, 2000).
+    For projective MST parsing, the first-order algorithm can be extended to the second-order case, as was noted by Eisner (1996).
+    The intuition behind the algorithm is shown graphically in Figure 3, which displays both the first-order and secondorder algorithms.
+    In the first-order algorithm, a word will gather its left and right dependents independently by gathering each half of the subtree rooted by its dependent in separate stages.
+    By splitting up chart items into left and right components, the Eisner algorithm only requires 3 indices to be maintained at each step, as discussed in detail elsewhere (Eisner, 1996; McDonald et al., 2005b).
+    For the second-order algorithm, the key insight is to delay the scoring of edges until pair

@@ -1,0 +1,11 @@
+f finding grammatical relations (e.g. subject, object, locative) to verbs in text.
+    The CR assigner uses several sources of information step by step such as several types of XP chunks (NP, VP, PP, ADJP and ADVP), and adverbial functions assigned to these chunks (e.g. temporal, local).
+    Since not all of these entities are predicted reliably, it is the question whether each source leads to an improvement of the overall GR assignment.
+    In the rest of this paper we will first briefly describe Memory-Based Learning in Section 2.
+    In Section 3.1, we discuss the chunking classifiers that we later use as steps in the cascade.
+    Section 3.2 describes the basic GR classifier.
+    Section 3.3 presents the architecture and results of the cascaded GR assignment experiments.
+    We discuss the results in Section 4 and conclude with Section 5.
+  
+  
+    Memory-Based Learning (MBL) keeps all training data in memory and only abstracts at classification time by extrapolating a class from the most similar item(s) 

@@ -1,0 +1,9 @@
+the optimal range.
+    On the first iteration, we set the bounds on the search space, /3 min and B., very wide and see where the signal goes.
+    The search will consider matching any byte x in the source file with some byte in the target file between f(x) &#8212; and f(x) + B., where f(x) is the current best estimate of the position in the target file that corresponds to position x in the source file.
+    On subsequent iterations, the bounds are reduced as the algorithm obtains tighter estimates on the dynamic range of the signal.
+    The memory that was saved by shrinking the bounds in this way can now be used to enhance the horizontal resolution.
+    We keep iterating in this fashion as long as it is possible to improve the resolution by tightening the bounds on the signal.
+    We need to allocate an array to hold the dots.
+    Ideally, we would like to have enough memory so that no two points in the search space corresponded to the same cell in the array.
+    That is, we would like to allocate the dotplot

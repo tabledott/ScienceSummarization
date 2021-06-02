@@ -1,0 +1,10 @@
+ver, it cannot be used for discontiguous substrings.
+			Consider the rule aXbXc.
+			If we search for this rule in the followinglogical suffix array fragment, we will find the bold faced matches.
+			... a c a c b a d c a d ... a c a d b a a d b d ... a d d b a a d a b c ... a d d b d a a b b a ... a d d b d d c a a a ...
+			Even though these suffixes are in lexicographicalorder, matching suffixes are interspersed with non matching suffixes.
+			We will need another algorithmto find the source rules containing at least oneX surrounded by nonempty sequences of terminal sym bols.
+			4.1 Baseline Approach.
+			In the pattern-matching literature, words spanned by the nonterminal symbols of Chiang?s grammar are called don?t cares and a nonterminal symbol in a query pattern that matches a sequence of don?t caresis called a variable length gap.
+			The search prob lem for patterns containing these gaps is a variant of approximate pattern matching, which has receivedsubstantial attention (Navarro, 2001).
+			The best algo 

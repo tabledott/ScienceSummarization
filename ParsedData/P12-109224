@@ -1,0 +1,9 @@
+rity scores and human judgments.
+			Table 5 compares different models?
+			results on this dataset.
+			We compare against the following baselines: tf-idf represents words in a word-word matrix capturing co-occurrence counts in all 10-word context windows.
+			Reisinger and Mooney (2010b) found pruning the low-value tf-idf features helps performance.
+			We report the resultof this pruning technique after tuning the thresh old value on this dataset, removing all but the top 200 features in each word vector.
+			We tried the same multi-prototype approach and used sphericalk-means3 to cluster the contexts using tf-idf representations, but obtained lower numbers than single prototype (55.4 with AvgSimC).
+			We then tried using pruned tf-idf representations on contexts with our clustering assignments (included in Table 5), but still got results worse than the single-prototype version of the pruned tf-idf model (60.5 with AvgSimC).
+			This suggests that the pruned tf-idf representations might be more susceptible to noi

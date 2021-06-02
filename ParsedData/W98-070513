@@ -1,0 +1,7 @@
+ state-of-the-art WSD techniques can perform with less than 30% errors, because each technique is evaluated in fairly different settings.
+    Some of the best results on a comparable setting (namely, disambiguating against WordNet, evaluating on a subset of the Brown Corpus, and treating the 191 most frequently occurring and ambiguous words of English) are reported reported in (Ng, 1997).
+    They reach a 58.7% accuracy on a Brown Corpus subset and a 75.2% on a subset of the Wall Street Journal Corpus.
+    A more careful evaluation of the role of WSD is needed to know if this is good enough for our purposes.
+    Anyway, we have only emulated a WSD algorithm that just picks up one sense and discards the rest.
+    A more reasonable approach here could be giving different probabilities for each sense of a word, and use them to weight synsets in the vectorial representation of documents and queries.
+    In Figure 3 we have plot the results of runs with a non-disambiguated version of the queries, both for word sen

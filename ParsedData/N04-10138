@@ -1,0 +1,8 @@
+are presented to the symbolic LFG grammar.
+    The grammar can parse input that has XML delimited named entity markup: &lt;company&gt;Columbia Savings&lt;/company&gt; is a major holder of so-calledjunk bonds.
+    To allow the grammar to parse this markup, the tokenizer includes an additional tokenization of the strings whereby the material between the XML markup is treated as a single token with a special morphological tag (+NamedEntity).
+    As a fall back, the tokenization that the string would have received without that markup is also produced.
+    The named entities have a single multiword predicate.
+    This helps in parsing both because it means that no internal structure has to be built for the predicate and because predicates that would otherwise be unrecognized by the grammar can be parsed (e.g., Cie. Financiere de Paribas).
+    As described in section 5, it was also important to use named entity markup in these experiments to more fairly match the analyses in the PARC 700 dependency bank.
+    To inc

@@ -1,0 +1,6 @@
+s an entry (m, qm, 0) in square M(n, 1) of the parse matrix, where in is a C-rule-FSM for a start category and qm is a final state of M. If we keep backpointers at each step in the algorithm, we have a compact representation of the parse forest.
+    The maximum number of entries in each square of the parse matrix is 0(GQ4), where G is the number of rule-FSMs corresponding to LP rules in the grammar, Q is the maximum number of states in any of the rule-FSMs, and L is the maximum number of states that the lifting rules can be in (i.e., the number of lifting conditions in the grammar multiplied by the maximum number of dot positions of any lifting condition).
+    Note that the exponent is a grammar constant, but this number can be rather small since the lifting rules are not lexicalized - they are construction-specific, not lexemespecific.
+    The time complexity of the algorithm is therefore 0(GQn3+2ILI).
+  
+

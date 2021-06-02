@@ -1,0 +1,12 @@
+).
+    This procedure is equivalent to minimum Bayes risk (MBR) parsing (Goodman, 1996) with a dependency accuracy loss function.
+    Notice that the above decoding approaches do not enforce any hard constraints other than TREE in the final output.
+    In addition, they only recover values of the Lij variables.
+    They marginalize over other variables such as tags and link roles.
+    This solves the problem of &#8220;nuisance&#8221; variables (which merely fragment probability mass among refinements of a parse).
+    On the other hand, it may be undesirable for variables whose values we desire to recover.24
+  
+  
+    Our training method also uses beliefs computed by BP, but at the factors.
+    We choose the weight vector 0 by maximizing the log-probability of training data 24An alternative is to attempt to find the most probable (&#8220;MAP&#8221;) assignment to all variables&#8212;using the max-product algorithm (footnote 13) or one of its recent variants.
+    The estimated marginal beliefs become &#8220;max

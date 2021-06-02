@@ -1,0 +1,9 @@
+n a typical graph-based parser such as MSTParser.
+    The distance between S0 and N0 will correspond to the distance between a pair of head and modifier when an LeftArc action is taken, for example, but not when a Shift action is taken.
+    Valency of S0 and N0 The number of modifiers to a given head is used by the graph-based submodel of Zhang and Clark (2008) and the models of Martins et al. (2009) and Sagae and Tsujii (2007).
+    We include similar information in our model.
+    In particular, we calculate the number of left and right modifiers separately, calling them left valency and right valency, respectively.
+    Left and right valencies are represented by vl and vr in Table 2, respectively.
+    They are combined with the word and POS-tag of S0 and N0 to form new feature templates.
+    Again, the use of valency information in our transition-based parser is different from the aforementioned graph-based models.
+    In our case, valency information is put into the context of the shift-reduce process, and 

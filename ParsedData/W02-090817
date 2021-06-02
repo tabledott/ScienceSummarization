@@ -1,0 +1,9 @@
+term in a bounded number of entries.
+    The obvious first choice is the most strongly weighted attributes from the full vector.
+    Figure 3 shows some of the most strongly weighted attributes for pants with their frequencies and weights.
+    However, these attributes, although strongly correlated with pants, are in fact too specific and idiomatic to be a good summary, because there are very few other words with similar canonical attributes.
+    For example, (adjective, smarty) only appears with two other terms (bun and number) in the entire corpus.
+    The heuristic is so aggressive that too few positive approximate matches result.
+    To alleviate this problem we filter the attributes so that only strongly weighted subject, direct-obj and indirect-obj relations are included in the canonical vectors.
+    This is because in general they constrain the terms more and partake in fewer idiomatic collocations with the terms.
+    So the general principle is the most descriptive verb relations constrain the search 

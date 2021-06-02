@@ -1,0 +1,8 @@
+ystem based on the Maximum Entropy method.
+    For the SVM system, we used the feature set {hw, pre, suf, pos, hmmi[&#8722;3,&#183;&#183;&#183; ,3], lwc3, rwc3, pc[&#8722;2,&#8722;1]}, which is shown to be the best in the previous experiment.
+    The compared system is a maximum entropy tagging model described in (Kazama et al., 2001).
+    Though it supports several character type features such as number and hyphen and some conjunctive features such as word n-gram, we do not use these features to compare the performance under as close a condition as possible.
+    The feature set used in the maximum entropy system is expressed as {hw,pre,suf,pos,hmmi[&#8722;2,&#183;&#183;&#183;,2], pc[&#8722;2,&#8722;1]}.10 Both systems use the BIO representation with splitting.
+    Table 4 shows the accuracies of both systems.
+    For the SVM system, we show the results with the inner product kernel and several polynomial kernels.
+    The row &#8220;All (id)&#8221; shows the accuracy from the view10When the width becomes [&#8

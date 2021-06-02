@@ -1,0 +1,6 @@
+ have developed such a heuristic technique for best-first search of the parse forest which, in practice, makes the recovery of the most probable analyses much more efficient (allowing analysis of sentences containing over 30 words).
+    We noticed during preliminary experiments with our unification LR parser that it was often the case that the same unifications were being performed repeatedly, even during the course of a single reduce action.
+    The duplication was happening in cases where two or more pairs of states in the graph-structured stack had identical complex categories between them (for example due to backbone grammar ambiguity).
+    During a reduction with a given rule, the categories between each pair of states in a backwards traversal of the stack are collected and unified with the appropriate daughters of the rule.
+    Identical categories appearing here between traversed pairs of states leads to duplication of unifications.
+    By caching unification results we eliminated this wasted effort an

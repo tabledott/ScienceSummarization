@@ -1,0 +1,8 @@
+probabilities are conditioned on the state and/or the input, the predicted vector is harder to describe (though usually much easier to compute).13 12IIS is itself iterative; to avoid nested loops, run only one iteration at each M step, giving a GEM algorithm (Riezler,1999).
+    Alternatively, discard EM and use gradient-based optimization.
+    13For per-state conditional normalization, let Dj,a be the set of arcs from state j with input symbol a E E; their weights are normalized to sum to 1.
+    Besides computing c, the E step must count the expected number dj,a of traversals of arcs in each Dj,a.
+    Then the predicted vector given &#952; is Ej,a dj,a &#183;(expected feature counts on a randomly chosen arc in Dj,a).
+    Per-state joint normalization (Eisner, 2001b, &#167;8.2) is similar but drops the dependence on a.
+    The difficult case is global conditional normalization.
+    It arises, for example, when training a joint model of the form f&#952; = &#183; &#183; &#183; (g&#952; o h&#952;) &#183; &#183; &

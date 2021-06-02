@@ -1,0 +1,9 @@
+p d to a sequence of actions a&#65533; = (a0, ... , a,1).
+    Actions are predicted and executed sequentially.2 An action a = (c, R, W') encompasses a command c, the command&#8217;s parameters R, and the words W' specifying c and R. Elements of R refer to objects available in the environment state, as described below.
+    Some parameters can also refer to words in document d. Additionally, to account for words that do not describe any actions, c can be a null command.
+    The Environment The environment state &#163; specifies the set of objects available for interaction, and their properties.
+    In Figure 2, &#163; is shown on the right.
+    The environment state &#163; changes in response to the execution of command c with parameters R according to a transition distribution p(&#163;'J&#163;, c, R).
+    This distribution is a priori unknown to the learner.
+    As we will see in Section 5, our approach avoids having to directly estimate this distribution.
+    State To predict actions sequentially, we need to 

@@ -1,0 +1,7 @@
+ token tags yt, each conditional on the tweet being tagged and the observed previous tag (with a start symbol before the first token in x), We optimize the parameters 3 with OWL-QN, an L1-capable variant of L-BFGS (Andrew and Gao, 2007; Liu and Nocedal, 1989) to minimize the regularized objective where N is the number of tokens in the corpus and the sum ranges over all tagged tweets (x, y) in the training data.
+    We use elastic net regularization (Zou and Hastie, 2005), which is a linear combination of L1 and L2 penalties; here j indexes over all features: Using even a very small L1 penalty eliminates many irrelevant or noisy features.
+  
+  
+    Our POS tagger can make use of any number of possibly overlapping features.
+    While we have only a small amount of hand-labeled data for training, we also have access to billions of tokens of unlabeled conversational text from the web.
+    Previous work has shown that unlabeled text can be used to induce unsupervised word clusters which can improve the performance

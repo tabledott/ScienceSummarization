@@ -1,0 +1,7 @@
+rained with tinued until a stopping condition is met.
+    Note that the SRILM toolkit (Stolcke, 2002); in the experi- we run this algorithm in a transductive setting which ments reported here, we used 4-gram models on the means that the set of sentences U is drawn either NIST data, and a trigram model on EuroParl, (c) from a development set or the test set that will be a distortion model which assigns a penalty based used eventually to evaluate the SMT system or from on the number of source words which are skipped additional data which is relevant to the development when generating a new target phrase, and (d) a word or test set.
+    In Algorithm 1, changing the definition penalty.
+    These different models are combined log- of Estimate, Score and Select will give us the diflinearly.
+    Their weights are optimized w.r.t.
+    BLEU ferent semi-supervised learning algorithms we will score using the algorithm described in (Och, 2003). discuss in this paper.
+    This is done on a development corpus which we will

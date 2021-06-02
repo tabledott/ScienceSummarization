@@ -1,0 +1,9 @@
+ as those Earley's algorithm uses for rules of the form A &#8212;&gt; B and B A.
+    In this case, Equation 8 forms a set of linear equations that can be solved by matrix inversion.
+    In the more general case, as is likely to happen with epsilon rules, we get a set of nonlinear equations, and must solve them by approximation techniques, such as simply computing successive generations for many iterations.'
+    Stolcke (1993) provides an excellent discussion of these cases, including a discussion of sparse matrix inversion, useful for speeding up some computations.
+    5 Note that even in the case where we can only use approximation techniques, this algorithm is relatively efficient.
+    By assumption, in this case, there is at least one deduction rule with two items in the current generation; thus, the number of deduction trees over which we are summing grows exponentially with the number of generations: a linear amount of computation yields the sum of the values of exponentially many trees.
+  
+  
+    The pr

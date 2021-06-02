@@ -1,0 +1,9 @@
+per, we extend our experiments with a new notion of the best parse tree.
+    Most previous notions of best parse tree in DOP1 were based on a probabilistic metric, with Bod (2000b) as a notable exception, who used a simplicity metric based on the shortest derivation.
+    We show that a combination of a probabilistic and a simplicity metric, which chooses the simplest parse from the n likeliest parses, outperforms the use of these metrics alone.
+    Compared to Bod (2001), our results show an 11% improvement in terms of relative error reduction and a speedup which reduces the processing time from 220 to 3.6 seconds per WSJ sentence.
+  
+  
+    DOP1 parses new input by combining treebanksubtrees by means of a leftmost node-subsitution operation, indicated as 0.
+    The probability of a parse tree is computed from the occurrencefrequencies of the subtrees in the treebank.
+    That is, the probability of a subtree t is taken as the number of occurrences of t in the training set, I t I, divided by the total number 

@@ -1,0 +1,7 @@
+l derivation structures.
+    Figures 2 and 4 illustrate the permutations these operators make to derivation trees.
+    The omitted tree structure in these figures denotes the Markov blanket of the operator: the structure which is held constant when enumerating the possible outcomes for an operator.
+    The Split/Join operator iterates through the positions between each source word sampling whether a terminal boundary should exist at that position (Figure 2).
+    If the source position adjacent nodes in a ternary rule can be re-parented as a binary rule, or vice-versa. falls between two existing terminals whose target phrases are adjacent, then any new target segmentation within those target phrases can be sampled, including null alignments.
+    If the two existing terminals also share the same parent, then any possible re-ordering is also a valid outcome, as is removing the terminal boundary to form a single phrase pair.
+    Otherwise, if the visited boundary point falls within an existing terminal, then all 

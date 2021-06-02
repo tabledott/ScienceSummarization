@@ -1,0 +1,8 @@
+v) and p(u, v). p(u, v) is the probability that u and v will be linked when they co-occur.
+    There is never enough data to robustly estimate each p parameter separately.
+    Instead, I shall model all the p's with just two parameters.
+    For u and v that are mutual translations, p(u, v) will average to a relatively high probability, which I will call A. for u and v that are not mutual translations, p(u, v) will average to a relatively low probability, which I will call A. .
+    A+ and Acorrespond to the two peaks of the distribution , which is illustrated in Figure 2.
+    The two parameters can also be interpreted as the rates of true and false positives.
+    If the translation in the bitext is consistent and the translation model is accurate, then A+ will be close to one and A- will be close to zero.
+    To find the most likely values of the auxiliary parameters A+ and A-, I adopt the standard method of maximum likelihood estimation, and find the values that maximize the probability of the link frequency 

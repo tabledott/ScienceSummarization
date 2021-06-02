@@ -1,0 +1,9 @@
+rror rate by 14.3%.
+    The weights for the individual rules in the top five were set to be equal.
+    It seems reasonable to combine the predictions from several rules especially because the choice of which rule is more specific of two is arbitrary when neither is a substring of the other.
+    For example, of the two rules with contexts A.B. and .B.B, where the first has 0 right context and the second has 0 left letter context, one heuristic is to choose the latter as more specific since right context seems more valuable than left (Fisher, 1999).
+    However this choice may not always be the best and it proves useful to combine predictions from several rules.
+    In Table 2 the row labeled &#8220;Interpolation of contexts&#8221; refers to this extension of the basic model.
+    Adding a symbol for interior of word produced a gain in accuracy.
+    Prior to adding this feature, we had features for beginning and end of word.
+    Explicitly modeling interior proved helpful and further decreased our error rate by 

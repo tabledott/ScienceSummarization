@@ -1,0 +1,11 @@
+o be a greedy algorithm for finding the parameters that minimize the loss function where as before, .
+    The theoretical motivation for this algorithm goes back to the PAC model of learning.
+    Intuitively, it is useful to note that this loss function is an upper bound on the number of &#8220;ranking errors&#8221;, a ranking error being a case where an incorrect candidate gets a higher value for than a correct candidate.
+    This follows because for all , , where we define to be for , and otherwise.
+    Hence where .
+    Note that the number of ranking errors is .
+    As an initial step, is set to be and all other parameters for are set to be zero.
+    The algorithm then proceeds for iterations ( is usually chosen by cross validation on a development set).
+    At each iteration, a single feature is chosen, and its weight is updated.
+    Suppose the current parameter values are , and a single feature is chosen, its weight being updated through an increment, i.e., .
+    Then the new loss, after this parameter

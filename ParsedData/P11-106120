@@ -1,0 +1,8 @@
+mber of latent HMM states for each language in our experiments was set to the number of fine tags in the language&#8217;s treebank.
+    In other words, the set of hidden states F was chosen to be the fine set of treebank tags.
+    Therefore, the number of fine tags varied across languages for our experiments; however, one could as well have fixed the set of HMM states to be a constant across languages, and created one mapping to the universal POS tagset.
+    To provide a thorough analysis, we evaluated three baselines and two oracles in addition to two variants of our graph-based approach.
+    We were intentionally lenient with our baselines: bilingual information by projecting POS tags directly across alignments in the parallel data.
+    For unaligned words, we set the tag to the most frequent tag in the corresponding treebank.
+    For each language, we took the same number of sentences from the bitext as there are in its treebank, and trained a supervised feature-HMM.
+    This can be seen as a rough approxi

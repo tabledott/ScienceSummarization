@@ -1,0 +1,7 @@
+ describes mixture-model adaptation; section 4 gives experimental results; section 5 summarizes previous work; and section 6 concludes.
+  
+  
+    Our baseline is a standard phrase-based SMT system (Koehn et al., 2003).
+    Given a source sentence s, this tries to find the target sentence t&#65533; that is the most likely translation of s, using the Viterbi approximation: where alignment a = (91, &#65533;t1, j1), ..., (sK, tK, jK); tk are target phrases such that t = &#65533;t1 ... tK; sk are source phrases such that s = gj1 ... sjK; and 9k is the translation of the kth target phrase tk.
+    To model p(t, a|s), we use a standard loglinear approach: where each fi(s, t, a) is a feature function, and weights &#945;i are set using Och&#8217;s algorithm (Och, 2003) to maximize the system&#8217;s BLEU score (Papineni et al., 2001) on a development corpus.
+    The features used in this study are: the length of t; a single-parameter distortion penalty on phrase reordering in a, as described in (Koehn et al., 2003); ph

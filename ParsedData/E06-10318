@@ -1,0 +1,10 @@
+long jump alignment grid is an NP-hard problem.
+    Our experiments showed that the calculation of exact long jump distances becomes impractical for sentences longer than 20 words.
+    A possible way to achieve polynomial runtime is to restrict the number of admissible block permutations.
+    This has been implemented by (Leusch et al., 2003) in the inversion word error rate.
+    Alternatively, a heuristic or approximative distance can be calculated, as in GTM by (Turian et al., 2003).
+    An implementation of both approaches at the same time can be found in TER by (Snover et al., 2005).
+    In this paper, we will present another approach which has a suitable run-time, while still maintaining completeness of the calculated measure.
+    The idea of the proposed method is to drop some restrictions on the alignment path.
+    The long jump distance as well as the Levenshtein distance require both reference and candidate translation to be covered completely and disjointly.
+    When extending the metric by block mo

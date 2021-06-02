@@ -1,0 +1,7 @@
+re shown in Table 6.
+    In both tables, the following results are reported: Lattice/HGMBR with default parameters (&#8722;5,1.5, 2, 3, 4) computed using corpus statistics (Tromble et al., 2008), Lattice/HGMBR with parameters derived from MERT both without/with the baseline model cost feature (mert&#8722;b, mert+b).
+    For multi-language systems, we only show the # of language-pairs with gains/no-changes/drops for each MBR variant with respect to the MAP translation.
+    We observed in the NIST systems that MERT resulted in short translations relative to MAP on the unseen test set.
+    To prevent this behavior, we modify the MERT error criterion to include a sentence-level brevity scorer with parameter &#945;: BLEU+brevity(&#945;).
+    This brevity scorer penalizes each candidate translation that is shorter than the average length over its reference translations, using a penalty term which is linear in the difference between either length.
+    We tune &#945; on the development set so that the brevity score o

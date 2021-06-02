@@ -1,0 +1,9 @@
+ We initialize the algorithm with the gold standard word alignments (labels) of the word alignment discriminative training set, an initial A, N, and the starting alignments (the iteration 4 HMM Viterbi alignment).
+    In line 2, we make iteration 0 estimates of the 5 sub-models of Model 4 and the 6 heuristic sub-models which are iteration dependent.
+    In line 3, we run discriminative training using the algorithm from Section 3.1.
+    In line 4, we measure the error of the resulting A vector.
+    In the main loop in line 7 we align the full training set (similar to the E-step of EM), while in line 8 we estimate the iteration-dependent sub-models (similar to the M-step of EM).
+    Then we perform discriminative reranking in line 9 and check for convergence in lines 10 and 11 (convergence means that error was not decreased from the previous iteration).
+    The output of the algorithm is new hypothesized alignments of the training corpus.
+    Table 7 evaluates the EMD semi-supervised training algorithm.
+    We 

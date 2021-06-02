@@ -1,0 +1,7 @@
+the named entity for the current word is known.2 The pairwise features, over adjacent labels, are computed at the same time as features over binary rules.
+    Binarization of the tree is necessary for efficient computation, so the trees consist solely of unary and binary productions.
+    Because of this, for all pairs of adjacent words within an entity, there will be a binary rule applied where one word will be under the left child and the other word will be under the right child.
+    Therefore, we compute features over adjacent words/labels when computing the features for the binary rule which joins them.
+    We construct our joint model as an extension to the discriminatively trained, feature-rich, conditional random field-based, CRF-CFG parser of (Finkel and Manning, 2008).
+    Their parser is similar to a chartbased PCFG parser, except that instead of putting probabilities over rules, it puts clique potentials over local subtrees.
+    These unnormalized potentials know what span (and split) the rule is ov

@@ -1,0 +1,9 @@
+ntext when T0 is taken.
+    Our transition-based algorithm keeps B different sequences of actions in the agenda, and chooses the one having the overall best score as the final parse.
+    Pseudo code for the decoding algorithm is shown in Figure 4.
+    Here each state item contains a partial parse tree as well as a stack configuration, and state items are built incrementally by transition actions.
+    Initially the stack is empty, and the agenda contains an empty sentence.
+    At each processing stage, one transition action is applied to existing state items as a step to build the final parse.
+    Unlike the MaltParser, which makes a decision at each stage, our transitionbased parser applies all possible actions to each existing state item in the agenda to generate new items; then from all the newly generated items, it takes the B with the highest overall score and puts them onto the agenda.
+    In this way, some ambiguity is retained for future resolution.
+    Note that the number of transition actions needed

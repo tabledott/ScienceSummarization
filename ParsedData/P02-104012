@@ -1,0 +1,10 @@
+ inflated precisions: the modified unigram precision is 2/2, and the modified bigram precision is 1/1.
+    Traditionally, precision has been paired with recall to overcome such length-related problems.
+    However, BLEU considers multiple reference translations, each of which may use a different word choice to translate the same source word.
+    Furthermore, a good candidate translation will only use (recall) one of these possible choices, but not all.
+    Indeed, recalling all choices leads to a bad translation.
+    Here is an example.
+    The first candidate recalls more words from the references, but is obviously a poorer translation than the second candidate.
+    Thus, naive recall computed over the set of all reference words is not a good measure.
+    Admittedly, one could align the reference translations to discover synonymous words and compute recall on concepts rather than words.
+    But, given that reference translations vary in length and differ in word order and syntax, such a computation is compli

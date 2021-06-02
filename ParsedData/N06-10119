@@ -1,0 +1,8 @@
+tity&#8217;s equivalence class of transliterations is important for obtaining its accurate time sequence.
+    In order to keep to our objective of requiring as little language knowledge as possible, we took a rather simplistic approach to take into account morphological ambiguities of NEs in Russian.
+    Two words were considered variants of the same NE if they share a prefix of size five or longer.
+    At this point, our algorithm takes a simplistic approach also for the English side of the corpus &#8211; each unique word had its own equivalence class although, in principle, we can incorporate works such as (Li et al., 2004) into the algorithm.
+    A cumulative distribution was then collected for such equivalence classes.
+    Unlike most of the previous work to transliteration, that consider generative transliteration models, we take a discriminative approach.
+    We train a linear model to decide whether a word is a transliteration of an NE .
+    The words in the pair are partitioned into a set of substring

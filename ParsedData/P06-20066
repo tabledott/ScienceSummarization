@@ -1,0 +1,12 @@
+w we trained and tuned our current system and describes our limited use of information derived from WSJ text.
+    &#167;4 details the various experiments undertaken with the extended DepBank and gives detailed results.
+    &#167;5 discusses these results and proposes further lines of research.
+  
+  
+    Both the XLE system and Collins&#8217; Model 3 preprocess textual input before parsing.
+    Similarly, our baseline system consists of a pipeline of modules.
+    First, text is tokenized using a deterministic finite-state transducer.
+    Second, tokens are part-ofspeech and punctuation (PoS) tagged using a 1storder Hidden Markov Model (HMM) utilizing a lexicon of just over 50K words and an unknown word handling module.
+    Third, deterministic morphological analysis is performed on each tokentag pair with a finite-state transducer.
+    Fourth, the lattice of lemma-affix-tags is parsed using a grammar over such tags.
+    Finally, the n-best parses are computed from the parse forest using a probabilistic parse s

@@ -1,0 +1,9 @@
+y connected through potential nodes instantiated by global templates, their belief values will propagate in the graph and mutually influence each other, leading in the end to a collective labeling decision.
+    The time complexity of computing messages from a potential node to a label node is exponential in the number of label nodes attached to the potential.
+    Since this &amp;quot;fan-in&amp;quot; can be large for OR potential nodes, this step required optimization.
+    Fortunately, due to the special form of the OR potential, and the normalization before each message-passing step, we were able to develop a linear-time algorithm for this special case.
+    Details are omitted due to limited space.
+  
+  
+    Following a maximum likelihood estimation, we shall use the log-linear representation of potentials: where A is a vector of binary features, one for each configuration of values for X, and K. Let w be the concatenated vector of all potential parameters wc.
+    One approach to finding the maximum-likeliho

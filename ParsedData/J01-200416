@@ -1,0 +1,9 @@
+ the trigram model, i.e., a Markov model of order 2, which can be characterized by the following equation: To smooth the trigram models that are used in this paper, we interpolate the probability estimates of higher-order Markov models with lower-order Markov models (Jelinek and Mercer 1980).
+    The idea behind interpolation is simple, and it has been shown to be very effective.
+    For an interpolated (n + 1)-gram: Here P is the empirically observed relative frequency, and An is a function from Vn to [0, 1].
+    This interpolation is recursively applied to the smaller-order n-grams until the bigram is finally interpolated with the unigram, i.e., Ao = 1.
+  
+  
+    There have been attempts to jump over adjacent words to words farther back in the left context, without the use of dependency links or syntactic structure, for example Saul and Pereira (1997) and Rosenfeld (1996, 1997).
+    We will focus our very brief review, however, on those that use grammars or parsing for their language models.
+    These can b

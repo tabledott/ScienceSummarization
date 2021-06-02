@@ -1,0 +1,9 @@
+her we maintain all variants.
+    For example, our naive number detection assigns singular to the mention a group of students and plural to five students.
+    When these mentions end up in the same cluster, the resulting number attributes becomes the set {singular, plural}.
+    Thus this cluster can later be merged with both singular and plural pronouns.
+    Mention selection &#8211; Traditionally, a coreference model attempts to resolve every mention in the text, which increases the likelihood of errors.
+    Instead, in each of our models, we exploit the cluster information received from the previous stages by resolving only mentions that are currently first in textual order in their cluster.
+    For example, given the following ordered list of mentions, {mi, m2, m3, m4, m5, m6}, where the superscript indicates cluster id, our model will attempt to resolve only m2 and m4.
+    These two are the only mentions that have potential antecedents and are currently marked as the first mentions in their clusters.
+    

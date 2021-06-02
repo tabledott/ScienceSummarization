@@ -1,0 +1,8 @@
+i is the corresponding weight, and Z(x) is a normalisation constant.
+			The context is a 5-word window surrounding the target word.
+			Features are defined for each word in the window and for the POS tag of each word.
+			Curran and Clark(2003) describes the model and explains how Gen eralised Iterative Scaling, together with a Gaussian prior for smoothing, can be used to set the weights.
+			The supertagger in Curran and Clark (2003) finds the single most probable category sequence given the sentence, and uses additional features defined in terms of the previously assigned categories.
+			Theper-word accuracy is between 91 and 92% on un seen data in CCGbank; however, Clark (2002) shows this is not high enough for integration into a parser since the large number of incorrect categories results in a significant loss in coverage.
+			Clark (2002) shows how the models in (1) can be used to define a multi-tagger which can assign more than one category to a word.
+			For each word inthe sentence, the multi-tagger assig

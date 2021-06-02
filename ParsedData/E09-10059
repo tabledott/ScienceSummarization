@@ -1,0 +1,8 @@
+ and a preliminary step.
+    A LKB is formed by a set of concepts and relations among them, and a dictionary, i.e., a list of words (typically, word lemmas) each of them linked to at least one concept of the LKB.
+    Given any such LKB, we build an undirected graph G = (V, E) where nodes represent LKB concepts (vi), and each relation between concepts vi and vj is represented by an undirected edge ei,j.
+    In our experiments we have tried our algorithms using three different LKBs: Given an input text, we extract the list Wi i = 1... m of content words (i.e. nouns, verbs, adjectives and adverbs) which have an entry in the dictionary, and thus can be related to LKB concepts.
+    Let Conceptsi = {v1, ... , vi.} be the im associated concepts of word Wi in the LKB graph.
+    Note that monosemous words will be related to just one concept, whereas polysemous words may be attached to several.
+    As a result of the disambiguation process, every concept in Conceptsi, i = 1, ... , m receives a score.
+    Then, for each

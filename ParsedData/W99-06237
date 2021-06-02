@@ -1,0 +1,9 @@
+ns productions from outside our grammar the machine has no direct method for handling them (e.g. the resulting database query may be syntactically malformed).
+    We have developed a general approach for combining parsers when preserving the entire structure of a parse tree is important.
+    The combining algorithm is presented with the candidate parses and asked to choose which one is best.
+    The combining technique must act as a multi-position switch indicating which parser should be trusted for the particular sentence.
+    We call this approach parser switching.
+    Once again we present both a non-parametric and a parametric technique for this task.
+    First we present the non-parametric version of parser switching, similarity switching: The intuition for this technique is that we can measure a similarity between parses by counting the constituents they have in common.
+    We pick the parse that is most similar to the other parses by choosing the one with the highest sum of pairwise similarities.
+    T

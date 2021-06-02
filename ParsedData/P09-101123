@@ -1,0 +1,7 @@
+also fixed the backoff probability to 0.1 instead of learning it and enforced zero numerical deviation on integer field values.
+    Model 2&#8217; achieved an F1 of 39.9, an improvement over Model 1, which attained 32.8.
+    Inspection of the errors revealed the following problem: The alignment task requires us to sometimes align a sentence to multiple redundant records (e.g., play and score) referenced by the same part of the text.
+    However, our model generates each part of text from only one record, and thus it can only allow an alignment to one record.7 To cope with this incompatibility between the data and our notion of semantics, we used the following solution: We divided the records into three groups by type: play, score, and other.
+    Each group has a copy of the model, but we enforce that they share the same segmentation.
+    We also introduce a potential that couples the presence or absence of records across groups on the same segment to capture regular cooccurrences between redundant records.
+  

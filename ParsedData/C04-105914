@@ -1,0 +1,11 @@
+dered distance operator (#N) with N equals to the number of the words of that phrase, which is denoted as the #phrase operator in InQuery implementation.
+			The 2-grams and 3-grams can be encoded using this operator too.
+			Thus our final structured query model is a sum operator over a set of nodes.
+			Each node corresponds to a source word.
+			Usually each source word has a number of translation candidates (unigrams or phrases).
+			Each node is a weighted sum over all translation candidates weighted by their frequency in the hypothesis set.
+			An example is shown below, where #phrase indicates the use of the ordered distance operator with varying n: #q=#sum( #wsum(2 eu 2 #phrase(european union) ) #wsum(12 #phrase(the united states) 1 american 1 #phrase(an american) ) #wsum(4 are 1 is ) #wsum(8 markets 3 market)) #wsum(7 #phrase(the main) 5 primary ) );
+	
+	
+			Experiments are carried out on a standard statistical machine translation task defined in the NIST evaluation in June 2002.
+			There are 878 test sente

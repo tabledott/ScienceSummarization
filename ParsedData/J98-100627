@@ -1,0 +1,10 @@
+t perfect results on homonyms (95-99%), 72% accuracy for four senses of interest, and 77% on three senses of cone.
+    The training was collected in the following manner.
+    Take a Roget's category&#8212;his examples were TOOL and ANIMAL&#8212;and collect sentences from a corpus (in this case, Grolier's Encyclopedia) using the words in each category.
+    Consider the noun crane, which appears in both the Roget's categories TOOL and ANIMAL.
+    To represent the TOOL category, Yarowsky extracted contexts from Gro/ier's Encyclopedia.
+    For example, contexts with the words adz, shovel, crane, sickle, and so on.
+    Similarly he collected sentences with names of animals from the ANIMAL category.
+    In these samples, crane and drill appeared under both categories.
+    Yarowsky points out that the resulting noise will be a problem only when one of the spurious senses is salient, dominating the training set, and he uses frequency-based weights to minimize these effects.
+    We propose to minimize spurious trainin

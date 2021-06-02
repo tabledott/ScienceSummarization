@@ -1,0 +1,7 @@
+ans that are within some threshold of the unrestricted Model 1 scores VF and VB are kept: Amongst those spans retained by this first threshold, we keep only those bitext cells satisfying both The tic-tac-toe pruning algorithm (Zhang and Gildea, 2005) uses dynamic programming to compute the product of inside and outside scores for all cells in O(n4) time.
+    However, even this can be slow for large values of n. Therefore we describe an improved algorithm with best case n3 performance.
+    Although the worst case performance is also O(n4), in practice it is significantly faster.
+    To begin, let us restrict our attention to the forward direction for a fixed source span (i, j).
+    Pruning bitext spans and cells requires VF (i, j), the score of the best bitext cell within a given span, as well as all cells within a given threshold of that best score.
+    For a fixed i and j, we need to search over the starting and ending points l and m of the inside region.
+    Note that there is an isomorphism between the set

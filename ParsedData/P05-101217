@@ -1,0 +1,9 @@
+ed learner of Nivre and Scholz (2004) and MIRA is the the system we have described.
+    We also implemented an averaged perceptron system (Collins, 2002) (another online learning algorithm) for comparison.
+    This table compares only pure dependency parsers that do identified their parent in the tree.
+    Root is the number of trees in which the root word was correctly identified.
+    For Czech this is f-measure since a sentence may have multiple roots.
+    Complete is the number of sentences for which the entire dependency tree was correct. not exploit phrase structure.
+    We ensured that the gold standard dependencies of all systems compared were identical.
+    Table 2 shows that the model described here performs as well or better than previous comparable systems, including that of Yamada and Matsumoto (2003).
+    Their method has the potential advantage that SVM batch training takes into account all of the constraints from all training instances in the optimization, whereas online training only considers

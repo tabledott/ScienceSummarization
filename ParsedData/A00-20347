@@ -1,0 +1,9 @@
+Where a lemma appears as a synonym in more than one class, its frequency count is divided between all classes for which it has direct membership.
+    The frequency counts from hyponym classes are added to the count for each hypernym class.
+    A root node, created above all the WordNet roots, contains the total frequency count for all the argument head lemmas found within WordNet.
+    The minimum description length principle (MDL) (Rissanen, 1978) is used to find the best TCM by considering the cost (in bits) of describing both the model and the argument head data encoded in the model.
+    The cost (or description length) for a TCM is calculated according to equation 1.
+    The number of parameters of the model is given by k, this is the number of classes in the TCM minus one.
+    S is the sample size of the argument head data.
+    The cost of describing each argument head (n) is calculated using the log of the probability estimate for the classes on the TCM that n belongs to (ca).
+    A small portion of the 

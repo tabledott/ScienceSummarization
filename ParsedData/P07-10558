@@ -1,0 +1,8 @@
+uld be the polarity of the document and ysi would indicate whether sentence si is subjective or objective.
+    The models presented here are compatible with arbitrary sets of discrete output labels.
+    Figure 1 presents a model for jointly classifying the sentiment of both the sentences and the document.
+    In this undirected graphical model, the label of each sentence is dependent on the labels of its neighbouring sentences plus the label of the document.
+    The label of the document is dependent on the label of every sentence.
+    Note that the edges between the input (each sentence) and the output labels are not solid, indicating that they are given as input and are not being modeled.
+    The fact that the sentiment of sentences is dependent not only on the local sentiment of other sentences, but also the global document sentiment &#8211; and vice versa &#8211; allows the model to directly capture the importance of classification decisions across levels in fine-tocoarse sentiment analysis.
+    The local

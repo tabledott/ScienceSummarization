@@ -1,0 +1,8 @@
+ For the small seed set experiments, the seed data was an arbitrarily chosen subset of sections 10&#8211;19 of the WSJ Penn Treebank; the unlabelled training data was taken from 50, 000 sentences of the 1994 WSJ section of the North American News Corpus (NANC); and the unlabelled data used to measure agreement was around 10, 000 sentences from sections 1&#8211;5 of the Treebank.
+    Section 00 of the Treebank was used to measure the accuracy of the taggers.
+    The cache size was 500 sentences.
+    Figure 3 shows the results for self-training, in which each tagger is simply retrained on its own labelled cache at each round.
+    (By round we mean the re-training of a single tagger, so there are two rounds per co-training iteration.)
+    TNT does improve using self-training, from 81.4% to 82.2%, but C&amp;C is unaffected.
+    Re-running these experiments using a range of unlabelled training sets, from a variety of sources, showed similar behaviour.
+    Towards the end of the co-training run, more material is be

@@ -1,0 +1,8 @@
+er problem with precision and recall is that they are not sensitive to near misses.
+    Consider, for example, a reference segmentation and the results obtained by two different text segmentation algorithms, as depicted in Figure 1.
+    In both cases, the algorithms fail to match any boundary precisely; both receive scores of 0 for precision and recall.
+    However, Algorithm A-0 is close to correct in almost all cases, whereas Algorithm A-1 is entirely off, adding extraneous boundaries and missing important boundaries entirely.
+    In some circumstances, it would be useful to have an evaluation metric that penalizes A-0 less harshly than A-1.
+    Beeferman, Berger, and Lafferty (1997) introduce a new evaluation metric that attempts to resolve the problems with precision and recall, including assigning partial credit to near misses.
+    They justify their metric as follows (page 43): Segmentation ... is about identifying boundaries between successive units of information in a text corpus.
+    Two such units a

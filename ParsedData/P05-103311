@@ -1,0 +1,5 @@
+iterion as previous systems (Och and Ney, 2004; Koehn et al., 2003): Definition 1.
+    Given a word-aligned sentence pair hf, e, &#8764;i, a rule hfij, ej0 i0 i is an initial phrase pair of hf, e, &#8764;i iff: Next, we form all possible differences of phrase pairs: Definition 2.
+    The set of rules of hf, e, &#8764;i is the smallest set satisfying the following: is a rule, where k is an index not used in r. The above scheme generates a very large number of rules, which is undesirable not only because it makes training and decoding very slow, but also because it creates spurious ambiguity&#8212;a situation where the decoder produces many derivations that are distinct yet have the same model feature vectors and give the same translation.
+    This can result in nbest lists with very few different translations or feature vectors, which is problematic for the algorithm we use to tune the feature weights.
+    Therefore we filter our grammar according to the following principles, chosen to balance grammar size and

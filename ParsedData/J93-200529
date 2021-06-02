@@ -1,0 +1,9 @@
+ that employed by Hindle (1990) for detecting synonyms.
+    Given a term T, we extract from the phrase database those nouns N, that appear as the head of any phrase in which T is the immediately preceding term.
+    These nouns represent candidate classes of which T may be a member.
+    We then generate the set of verbs that take T as direct object and calculate the mutual information value for each verb/T collocation (cf.
+    Hindle 1990).
+    We do the same for each noun N. Under the assumption that instance and class nouns are likely to co-occur with the same verbs, we compute a similarity score between T and each noun N&#8222; by summing the product of the mutual information values for those verbs occurring with both nouns.
+    (Verbs with negative mutual information values are left out of the calculation.)
+    The noun with the highest similarity score is often the class of which T is an instance, as illustrated by the sample results in Figure 1.
+    For each word displayed in Figure 1, its &amp;quot;clas

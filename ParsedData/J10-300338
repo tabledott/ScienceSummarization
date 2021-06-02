@@ -1,0 +1,8 @@
+    Once the seeding examples are extracted, the next step is to extract contextual features for both the positive and the negative examples.
+    These features take the form of aligned part-of-speech sequences of a given length from the left and the right of the example.
+    For instance, we can extract the contextual feature [(L1 : PRP1,R1 : TO1), (L2 : PRP1,R2 : TO1)] of length 1 for the positive example (tried, tried).
+    This particular contextual feature contains two tuples, one for each sentence.
+    The first tuple (L1 : PRP1,R1 : TO1) indicates that, in the first sentence, the POS tag sequence to the left of the word tried is a personal pronoun (he) and the POS tag sequence to the right of tired is the preposition to.
+    The second tuple is identical for this case.
+    Note that the tags of identical tokens are indicated as such by subscripts on the POS tags.
+    All such features are extracted for both the positive and the negative examples for all lengths less than or equal to some specified leng

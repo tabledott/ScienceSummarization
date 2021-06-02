@@ -1,0 +1,6 @@
+k&#952;k22, where &#961;2 is a regularization parameter.
+    The objective function is then a smooth convex function to be minimized over an unconstrained parameter space.
+    Hence, any numerical optimization strategy may be used and practical solutions include limited memory BFGS (L-BFGS) (Liu and Nocedal, 1989), which is used in the popular CRF++ (Kudo, 2005) and CRFsuite (Okazaki, 2007) packages; conjugate gradient (Nocedal and Wright, 2006) and Stochastic Gradient Descent (SGD) (Bottou, 2004; Vishwanathan et al., 2006), used in CRFsgd (Bottou, 2007).
+    The only caveat is to avoid numerical optimizers that require the full Hessian matrix (e.g., Newton&#8217;s algorithm) due to the size of the parameter vector in usual applications of CRFs.
+    The most significant alternative to `2 regularization is to use a `1 penalty term &#961;1k&#952;k1: such regularizers are able to yield sparse parameter vectors in which many component have been zeroed (Tibshirani, 1996).
+    Using a `1 penalty term thus implicitl

@@ -1,0 +1,8 @@
+r gument classification and argument identification tasks, when added individually to the baseline.
+			Addition ofnamed entities improves the F1 score for adjunctive arguments ARGM-LOC from 59% to ?68% and ARGM TMP from 78.8% to ?83.4%.
+			But, since these arguments are small in number compared to the core arguments, theoverall accuracy does not show a significant improve ment.
+			We found that adding this feature to the NULL vs NON-NULL classifier degraded its performance.
+			It also shows the contribution of replacing the head word and the head word POS separately in the feature where the head of a prepositional phrase is replaced by the head word of the noun phrase inside it.
+			Apparently, a combinationof relative features seem to have a significant improve ment on either or both the classification and identification tasks, and so do the first and last words in the constituent.
+			Features Class ARGUMENT ID Acc.
+			P R F1 Baseline 87.9 93.7 88.9 91.3+ Named entities 88.1 - - + Head POS ?88.6 94.4 90.1 ?92

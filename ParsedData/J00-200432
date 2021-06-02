@@ -1,0 +1,6 @@
+sible assignments: The number of possible assignments grows exponentially with the size of aligned text segments in the bitext.
+    Due to the parameter interdependencies introduced by the one-to-one assumption, we are unlikely to find a method for decomposing the assignments into parameters that can be estimated independently of each other as in Brown et al. [1993b, Equation 26]).
+    Barring such a decomposition method, the MLE approach is infeasible.
+    This is why we must make do with approximations to the EM algorithm.
+    In this situation, Brown et al. (1993b, 293) recommend &amp;quot;evaluating the expectations using only a single, probable alignment.&amp;quot; The single most probable assignment Amax is the maximum a posteriori (MAP) assignment: If we represent the bitext as a bipartite graph and weight the edges by log trans(u, v), then the right-hand side of Equation 26 is an instance of the weighted maximum matching problem and Amax is its solution.
+    For a bipartite graph G = (V1 U V2, E), wit

@@ -1,0 +1,13 @@
+s in the lattice.
+    In the final step, the consensus translation is extracted as the best path from the union of confusion networks.
+    Note that the extracted consensus translation can be different from the original M translations.
+    Alternatively, the N-best hypotheses can be extracted for rescoring by additional models.
+    We performed experiments with both approaches.
+    Since M confusion networks are used, the lattice may contain two best paths with the same probability, the same words, but different word order.
+    We extended the algorithm to favor more well-formed word sequences.
+    We assign a higher probability to each arc of the primary (unreordered) translation in each of the M confusion networks.
+    Experimentally, this extension improved translation fluency on some tasks.
+  
+  
+    The alignment and voting algorithm was evaluated on both small and large vocabulary tasks.
+    Initial experiments were performed on the IWSLT 2004 Chinese-English and Japanese-English tasks (Akiba et al., 20

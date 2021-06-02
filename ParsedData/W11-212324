@@ -1,0 +1,8 @@
+s only one random lookup per query, explaining why it is faster on large data.
+    Interpolation search has a more expensive pivot but performs less pivoting and reads, so it is slow on small data and faster on large data.
+    This suggests a strategy: run interpolation search until the range narrows to 4096 or fewer entries, then switch to binary search.
+    However, reads in the TRIE data structure are more expensive due to bit-level packing, so we found that it is faster to use interpolation search the entire time.
+    Memory usage is the same as with binary search and lower than with set.
+    For the perplexity and translation tasks, we used SRILM to build a 5-gram English language model on 834 million tokens from Europarl v6 (Koehn, 2005) and the 2011 Workshop on Machine Translation News Crawl corpus with duplicate lines removed.
+    The model was built with open vocabulary, modified Kneser-Ney smoothing, and default pruning settings that remove singletons of order 3 and higher.
+    Unlike Germann et al.

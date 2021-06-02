@@ -1,0 +1,10 @@
+ In the process, language-ambiguous words are assigned to only one language, which did not hurt performance due to the high redundancy of the task.
+    However, it would have been possible to use the soft partitioning to acquire a distribution over languages for each word.
+    For the acquisition of word classes, we use a different graph: the second-order graph on neighboring co-occurrences.
+    To set up the graph, a co-occurrence calculation is performed which yields significant word pairs based on their occurrence as immediate neighbors.
+    This can be perceived as a bipartite graph, figure 9a gives a toy example.
+    Note that if similar words occur in both parts, they form two distinct nodes.
+    This graph is transformed into a second-order graph by comparing the number of common right and left neighbors for two words.
+    The similarity (edge weight) between two words is the sum of common neighbors.
+    Figure 9b depicts the secondorder graph derived from figure 9a and its partitioning by CW.
+    The 

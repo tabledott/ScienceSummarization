@@ -1,0 +1,10 @@
+e numeral 7.3 We can now use the models to do a sample back-transliteration.
+    We start with a katakana phrase as observed by OCR.
+    We then serially compose it with the models, in reverse order.
+    Each intermediate stage is a WFSA that encodes many possibilities.
+    The final stage contains all back-transliterations suggested by the models, and we finally extract the best one.
+    We start with the masutaazutoonamento problem from Section 1.
+    Our OCR observes: This string has two recognition errors: (ku) for (t a), and (chi) for (ha).
+    We turn the string into a chained 12-state/11-arc WFSA and compose it with the P(Iclo) model.
+    This yields a fatter 12-state/15-arc WFSA, which accepts the correct spelling at a lower probability.
+    Next comes the POO model, which produces a 28-state/31-arc WFSA whose highest-scoring sequence is: masutaazutoochimento Next comes P(elj), yielding a 62-state/241-arc WFSA whose best sequence is: Next to last comes P(w le), which results in a 2982-state/4601-arc W

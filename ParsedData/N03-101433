@@ -1,0 +1,9 @@
+to estimate its probabilities.
+    Previous work on applying SSNs to natural language parsing (Henderson, 2000) has not been general enough to be applied to the Penn Treebank, so it is not possible to compare results directly to this work.
+  
+  
+    This paper has presented a method for estimating the parameters of a history-based statistical parser which does not require any a priori independence assumptions.
+    A neural network is trained simultaneously to estimate the probabilities of parser actions and to induce a finite representation of the unbounded parse history.
+    The probabilities of parser actions are conditioned on this induced history representation, rather than being conditioned on a set of hand-crafted history features chosen a priori.
+    A beam search is used to search for the most probable parse given the neural network&#8217;s probability estimates.
+    When trained and tested on the standard Penn Treebank datasets, the parser&#8217;s performance (89.1% F-measure) is only 0.6% below the 

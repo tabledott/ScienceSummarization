@@ -1,0 +1,6 @@
+tences.
+    Like sentence fusion, their method aligns parse trees of the input sentences and then uses a language model to linearize the derived lattice.
+    The main difference between the two methods is in the type of the alignment: Our algorithm performs local alignment, while the algorithm of Pang, Knight, and Marcu (2003) performs global alignment.
+    The differences in alignment are caused by differences in input: Pang, Knight, and Marcu&#8217;s method expects semantically equivalent sentences, while our algorithm operates over sentences with only partial meaning overlap.
+    The presence of deletions and insertions in input sentences makes alignment of comparable trees a new and particularly significant challenge.
+    The alignment method described in Section 3 falls into a class of tree comparison algorithms extensively studied in theoretical computer science (Sankoff 1975; Finden and Gordon 1985; Amir and Keselman 1994; Farach, Przytycka, and Thorup 1995) and widely applied in many areas of computer

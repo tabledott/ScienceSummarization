@@ -1,0 +1,7 @@
+l as training examples.
+    We therefore use for training only those pairs from the Cartesian product that are accepted by the word-overlap filter.
+    This has the additional advantage that, since all these pairs have many words in common, the classifier learns to make distinctions that cannot be made based on word overlap alone.
+    To summarize, we prepare our classifier training set in the following manner: starting from a parallel corpus of about 5,000 sentence pairs, we generate all the sentence pairs in the Cartesian product; we discard the pairs that do not fulfill the conditions of the word-overlap filter; if the resulting set is imbalanced, i.e., the ratio of non-parallel to parallel pairs is greater than five, we balance it by removing randomly chosen nonparallel pairs.
+    We then compute word alignments and extract feature values.
+    Using the training set, we compute values for the classifier feature weights using the YASMET4 implementation of the GIS algorithm (Darroch and Ratcliff 1974).
+    

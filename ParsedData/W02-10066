@@ -1,0 +1,11 @@
+converted to lower case and replaced by their morphological root forms.
+    Tokens present in a list of stop words or tokens that do not contain at least an alphabet character (such as numbers and punctuation symbols) are removed.
+    All remaining tokens from all training contexts provided for are gathered.
+    Each remaining token contributes one feature.
+    In a training (or test) example, the feature corresponding to is set to 1 iff the context of in that training (or test) example contains.
+    We attempted a simple feature selection method to investigate if a learning algorithm performs better with or without feature selection.
+    The feature selection method employed has one parameter: .
+    A feature is selected if occurs in some sense of or more times in the training data.
+    This parameter is also used by (Ng and Lee, 1996).
+    We have tried and (i.e., no feature selection) in the results reported in this paper. the POS tag of a null token.
+    For example, if is the word bars and the set of sel

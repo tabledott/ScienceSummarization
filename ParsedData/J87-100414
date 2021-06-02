@@ -1,0 +1,9 @@
+rily have to copy the whole stack: even after different parallel operations on the tree-structured stack, the bottom portion of the stack may remain the same.
+    Only the necessary portion of the stack should therefore be split.
+    When a stack is split, the stack is thus represented as a tree, where the bottom of the stack corresponds to the root of the tree.
+    With the stack combination technique described in the previous subsection, stacks are represented as a directed acyclic graph.
+    Figure 2.5 shows a snapshot of the graph stack.
+    It is easy to show that the algorithm with the graph-structured stack does not parse any part of an input sentence more than once in the same way.
+    This is because, if two processes had parsed a part of a sentence in the same way, they would have been in the same state, and they would have been combined as one process.
+    The graph-structured stack looks very similar to a chart in chart parsing.
+    In fact, one can also view our algorithm as an extended chart par

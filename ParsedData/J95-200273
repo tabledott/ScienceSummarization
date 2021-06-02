@@ -1,0 +1,8 @@
+es corresponding to all productions Y v that are reachable through the left-corner relation Z =L Y.
+    As indicated in equation (13), contributions to the forward probabilities of new states have to be summed when several paths lead to the same state.
+    However, the summation in equation (13) can be optimized if the a values for all old states with the same nonterminal Z are summed first, and then multiplied by R(Z 4L Y).
+    These quantities are then summed over all nonterminals Z, and the result is once multiplied by the rule probability P(Y v) to give the forward probability for the predicted state.
+    B.2 Completion Unlike prediction, the completion step still involves iteration.
+    Each complete state derived by completion can potentially feed other completions.
+    An important detail here is to ensure that all contributions to a state's a and -y are summed before proceeding with using that state as input to further completion steps.
+    One approach to this problem is to insert complete states int

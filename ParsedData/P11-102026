@@ -1,0 +1,8 @@
+    This confirms our intuition that PINC is a more useful measure when semantic content has been preserved.
+    Finally, while we do not believe any single score could adequately describe the quality of a paraphrase outside of a specific application, we experimented with different ways of combining BLEU and PINC into a single score.
+    Almost any simple combination, such as taking the average of the two, yielded decent correlation with the human ratings.
+    The best correlation was achieved by taking the product of PINC and a sigmoid function of BLEU.
+    This follows the intuition that semantic preservation is closer to a binary decision (i.e. a paraphrase either preserves the meaning or it does not, in which case PINC does not matter at all) than a linear function.
+    We used an oracle to pick the best logistic function in our experiment.
+    In practice, some sample human ratings would be required to tune this function.
+    Other more complicated methods for combining BLEU and PINC are also possible wi

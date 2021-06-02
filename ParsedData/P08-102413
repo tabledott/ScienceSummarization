@@ -1,0 +1,10 @@
+ a variant of CYK algorithm over two dimensions, with a time complexity of O(|e|3|f|3).
+    This is an instance of the ITG alignment algorithm (Wu, 1997).
+    This step requires the reference translation for each training instance to be contained in the model&#8217;s hypothesis space.
+    Achieving full coverage implies inducing a grammar which generates all observed source-target pairs, which is difficult in practise.
+    Instead we discard the unreachable portion of the training sample (24% in our experiments).
+    The proportion of discarded sentences is a function of the grammar used.
+    Extraction heuristics other than the method used herein (Chiang, 2007) could allow complete coverage (e.g., Galley et al. (2004)).
+    Accounting for all derivations of a given translation should benefit not only training, but also decoding.
+    Unfortunately marginalising over derivations in decoding is NP-complete.
+    The standard solution is to approximate the maximum probability translation using a single derivation

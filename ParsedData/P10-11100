@@ -1,0 +1,10 @@
+
+  Dynamic Programming for Linear-Time Incremental Parsing
+  
+    Incremental parsing techniques such as shift-reduce have gained popularity thanks to their efficiency, but there remains a problem: the search is only explores a tiny fraction of the whole space (even with beam search) as opposed to dynamic programming.
+    We show that, surprisingly, dynamic programming is in fact possible for many shift-reduce parsers, by merging &#8220;equivalent&#8221; stacks based on feature values.
+    Empirically, our algorithm yields up to a five-fold speedup over a state-of-the-art shift-reduce dependency parser with no loss in accuracy.
+    Better search also leads to better learning, and our final parser outperforms all previously reported dependency parsers for English and Chinese, yet is much faster.
+  
+  
+    In terms of search strategy, most parsing algorithms in current use for data-driven parsing can be divided into two broad categories: dynamic programming which includes the dominant CKY algorithm, and greedy 

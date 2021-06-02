@@ -1,0 +1,7 @@
+he determiner corrections by 50.7%, and increased precision dramatically.
+			The language model alone, however, does not provide sufficient evidence: if we produce a full set of preposition suggestions for each potential preposition location and rank these suggestions by LM score alone, we only achieve 58.36% accuracy on Reuters data.
+			Given that we have multiple pieces of information for a correction candidate, namely the class probability assigned by the classifier and the language model score, it is more effective to combine these into a single score and impose a tunable threshold on the score to maximize precision.
+			Currently, this threshold is manually set by analyzing the flags in a development set.
+			5.3 Human Evaluation.
+			A complete human evaluation of our system would have to include a thorough user study and would need to assess a variety of criteria, from the accuracy of individual error detection and corrections to the general helpfulness of real web based example sentences.
+			For a first 

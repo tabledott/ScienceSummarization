@@ -1,0 +1,6 @@
+the computations for statistical estimation and selection of the most probable analyses are done efficiently by dynamic programming, avoiding the need to unpack the parse forests and enumerate individual analyses.
+    The underlying parsing system also has built-in robustness mechanisms that allow it to parse strings that are outside the scope of the grammar as a shortest sequence of wellformed &#8220;fragments&#8221;.
+    Furthermore, performance parameters that bound parsing and disambiguation work can be tuned for efficient but accurate operation.
+    As part of our assessment, we also measured the parsing speed of the two systems, taking into account all stages of processing that each system requires to produce its output.
+    For example, since the Collins parser depends on a prior part-of-speech tagger (Ratnaparkhi, 1996), we included the time for POS tagging in our Collins measurements.
+    XLE incorporates a sophisticated finite-state morphology and dictionary lookup component, and its time is part of

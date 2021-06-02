@@ -1,0 +1,9 @@
+eference translation from the source.
+    The derivations in this chart are a subset of those in the full derivation chart.
+    Again, we use the inside-outside algorithm to find the &#8216;reference&#8217; feature expectations from this chart.
+    These expectations are analogous to the empirical observation of maximum entropy classifiers.
+    Given these two charts we can calculate the loglikelihood of the reference translation as the insidescore from the sentence spanning cell of the reference chart, normalised by the inside-score of the spanning cell from the full chart.
+    The gradient is calculated as the difference of the feature expectations of the two charts.
+    Clark and Curran (2004) provides a more complete discussion of parsing with a loglinear model and latent variables.
+    The full derivation chart is produced using a CYK parser in the same manner as Chiang (2005), and has complexity O(|e|3).
+    We produce the reference chart by synchronously parsing the source and reference sentences using

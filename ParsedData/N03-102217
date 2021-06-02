@@ -1,0 +1,8 @@
+ar to hyperresolution, paramodulation combines multiple substitution steps into one.
+    All modern theorem provers use hyperresolution and paramodulation inference rules since they allow for a more compact and efficient proof by condensing multiple steps into one.
+    COGEX will continue trying to find a proof until the Set of Support becomes empty, a refutation is found, or the proof score drops below a predefined threshold.
+    Two techniques have been implemented in COGEX to deal with incomplete proofs: For example in question, &#8220;How far is Yaroslavl from Moscow?&#8221; a candidate answer is &#8220;.. Yaroslavl, a city 250 miles north of Moscow.&#8221; By dropping the from predicate in the question makes the proof succeed for the candidate answer.
+  
+  
+    The following example illustrates how all these pieces are put together to generate answer proofs.
+    -(exists e1 x2 x3 x5 x6 ( organization at(x2) &amp; company nn(x2) &amp; create vb(e1,x2,x6) &amp; internet nn(x3) &amp; browser nn(x4) &amp; mo

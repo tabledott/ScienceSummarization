@@ -1,0 +1,10 @@
+h, we used the NIST 2003 Arabic-toEnglish MT evaluation data for training and the NIST 2004 Arabic-to-English evaluation data for testing.
+    For Spanish, German and French we used the evaluation data provided by the shared task at last year&#8217;s WMT workshop.
+    Sizes of various corpora are shown in Table 1.
+    Some, but not all, of these data sets have multiple human judgments per translation hypothesis.
+    To partially address human bias issues, we normalize the human judgments, which transforms the raw judgment scores so that they have similar distributions.
+    We use the normalization method described in (Blatz et al., 2003).
+    Multiple judgments are combined into a single number by taking their average.
+    We performed a &#8220;hill climbing&#8221; search to find the parameters that achieve maximum correlation with human judgments on the training set.
+    We use Pearson&#8217;s correlation coefficient as our measure of correlation.
+    We followed a &#8220;leave one out&#8221; training proced

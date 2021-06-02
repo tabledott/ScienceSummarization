@@ -1,0 +1,7 @@
+coin is biased, we assume a uniform distribution over 0, otherwise 0 = .5.
+    We observe w, the outcomes of 10 coin flips, and we wish to determine whether the coin is biased (i.e. the value of t).
+    Assume that we have a uniform prior on B, with p(B) = 1 for all B &#8712; [0, 1].
+    First, we apply the standard methodology of finding the MAP estimate for B and then selecting the value of t that maximizes P(t|w, B).
+    In this case, an elementary calculation shows that the MAP estimate is B = nH/10, where nH is the number of heads in w (likewise, nT is the number of tails).
+    Consequently, P(t|w, &#65533;B) favors t = 1 for any sequence that does not contain exactly five heads, and assigns equal probability tot = 1 and t = 0 for any sequence that does contain exactly five heads &#8212; a counterintuitive result.
+    In contrast, using some standard results in Bayesian analysis we can show that applying Equation 3 yields approach is sensitive to the robustness of a choice of t to the value of B, as illu

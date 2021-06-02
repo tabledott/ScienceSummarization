@@ -1,0 +1,9 @@
+ource to target, target to source).
+    Figure 2 shows an example of a symmetrized alignment.
+    To solve this problem, we train in both translation directions.
+    For each sentence pair, we compute two Viterbi alignments aJ1 and bI1.
+    Let A1 = f(aj, j)  |aj &gt; 01 and A2 = f(i, bi)  |bi &gt; 01 denote the sets of alignments in the two Viterbi alignments.
+    To increase the quality of the alignments, we can combine (symmetrize) A1 and A2 into one alignment matrix A using one of the following combination methods: alignment A1 or in the alignment A2 if neither fj nor ei have an alignment in A, or if the following conditions both hold: Obviously, the intersection yields an alignment consisting of only one-to-one alignments with a higher precision and a lower recall.
+    The union yields a higher recall and a lower precision of the combined alignment.
+    The refined alignment method is often able to improve precision and recall compared to the nonsymmetrized alignments.
+    Whether a higher precision or a

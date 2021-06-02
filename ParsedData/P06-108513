@@ -1,0 +1,7 @@
+is, we assume a grammar similar to the one shown in Figure 1, with the addition of a symmetric Beta(&#964;2 ) prior over the probability of the U productions,2 and the substitution of the DP for the standard multinomial distribution over the W productions.
+    Having defined our generative model, we are left with the problem of inference: we must determine the posterior distribution of hypotheses given our input corpus.
+    To do so, we use Gibbs sampling, a standard Markov chain Monte Carlo method (Gilks et al., 1996).
+    Gibbs sampling is an iterative procedure in which variables are repeatedly sampled from their conditional posterior distribution given the current values of all other variables in the model.
+    The sampler defines a Markov chain whose stationary distribution is P(h|d), so after convergence samples are from this distribution.
+    Our Gibbs sampler considers a single possible boundary point at a time, so each sample is from a set of two hypotheses, h1 and h2.
+    These hypotheses contain al

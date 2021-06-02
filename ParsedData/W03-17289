@@ -1,0 +1,10 @@
+ransition leaving a given state compete only against all other transitions in the model.
+    They proposed Conditional Random Fields (CRFs) as a solution to address this problem.
+    A partial solution to the LBP is to compute the probability of transitions in both directions.
+    This way we can use two MEMM taggers, one of which scans the input from left to right and the other scans the input from right to left.
+    This strategy has been successfully used in (Shen and Joshi, 2003).
+    In that paper, pairwise voting (van Halteren et al., 1998) has been used to combine the results of two supertaggers that scan the input in the opposite directions.
+    The pairwise voting is not suitable in this application because we must make sure that the LMR tags assigned to consecutive words are compatible.
+    For example, an LM tag cannot immediately follow an MM.
+    Pairwise voting does not use any contextual information, so it cannot prevent incompatible tags from occurring.
+    Therefore, in our experiments descri

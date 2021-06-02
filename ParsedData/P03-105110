@@ -1,0 +1,7 @@
+ct new stem candidates on the basis of a frequency threshold, (ii) filter out new stem candidates containing a sub-string with a high likelihood of being a prefix, suffix, or prefix-suffix.
+    The likelihood of a sub-string being a prefix, suffix, and prefix-suffix of a token is computed as in (5) to (7), (iii) further filter out new stem candidates on the basis of contextual information, as in (8).
+    Stem candidates containing a sub-string with a high prefix, suffix, or prefix-suffix likelihood are filtered out.
+    Example sub-strings with the prefix, suffix, prefix-suffix likelihood 0.85 or higher in a 110K word manually segmented corpus are given in Table 4.
+    If a token starts with the sub-string &#1600;&#65256;&#65201; (sn), and end with &#65166;&#65260;&#1600; (hA), the sub-string's likelihood of being the prefix-suffix of the token is 1.
+    If a token starts with the sub-string &#65246;&#1127;&#65247; (ll), the sub-string's likelihood of being the prefix of the token is 0.945, etc.
+    According

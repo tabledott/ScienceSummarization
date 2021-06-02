@@ -1,0 +1,9 @@
+lations for the chunks e1e2 and e3e4e5, respectively.
+  
+  
+    As mentioned, our experiments were on Chinese to English translation.
+    Similar to (Chiang, 2005), we trained the Hiero system on the FBIS corpus, used the NIST MT 2002 evaluation test set as our development set to tune the feature weights, and the NIST MT 2003 evaluation test set as our test data.
+    Using the English portion of the FBIS corpus and the Xinhua portion of the Gigaword corpus, we trained a trigram language model using the SRI Language Modelling Toolkit (Stolcke, 2002).
+    Following (Chiang, 2005), we used the version 11a NIST BLEU script with its default settings to calculate the BLEU scores (Papineni et al., 2002) based on case-insensitive ngram matching, where n is up to 4.
+    First, we performed word alignment on the FBIS parallel corpus using GIZA++ (Och and Ney, 2000) in both directions.
+    The word alignments of both directions are then combined into a single set of alignments using the &#8220;diag-and&#8221; method of 

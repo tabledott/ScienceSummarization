@@ -1,0 +1,8 @@
+st prepared a preliminary probabilistic model whose estimation did not require the parsing of a treebank.
+    The preliminary model was used to reduce the search space for parsing a training treebank.
+    The preliminary model in this study is a unigram model, &#175;p(t|w) _ fJw&#8712;w p(l|w), where w &#8712; w is a word in the sentence w, and l is a lexical entry assigned to w. This model is estimated by counting the relative frequencies of lexical entries used for w in the training data.
+    Hence, the estimation does not require parsing of a treebank.
+    Actually, we use a maximum entropy model to compute this probability as described in Section 5.
+    The preliminary model is used for filtering lexical entries when we parse a treebank.
+    Given this model, we restrict the number of lexical entries used to parse a treebank.
+    With a threshold n for the number of lexical entries and a threshold c for the probability, lexical entries are assigned to a word in descending order of probability, until the n

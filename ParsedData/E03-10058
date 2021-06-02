@@ -1,0 +1,6 @@
+of occurrences of all subtrees t' with the same root label as t. Let r(t) return the root label of t: The probability of a derivation ti0...0tn is computed by the product of the probabilities of its subtrees ti: = HP (t1) An important feature of DOP1 is that there may be several derivations that generate the same parse tree.
+    The probability of a parse tree T is the sum of the probabilities of its distinct derivations.
+    Let tid be the i-th subtree in the derivation d that produces tree T, then the probability of T is given by Thus DOP1 considers counts of subtrees of a wide range of sizes in computing the probability of a tree: everything from counts of single-level rules to counts of entire trees.
+    A disadvantage of this model is that an extremely large number of subtrees (and derivations) must be taken into account.
+    Fortunately, there exists a compact PCFG-reduction of DOP1 that generates the same trees with the same probabilities, as shown by Goodman (1996, 2002).
+    Here we will only sketch 

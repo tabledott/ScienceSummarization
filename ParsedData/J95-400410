@@ -1,0 +1,7 @@
+ions in turn and score the resulting annotated corpus.'
+    In this example, applying transformation T2 results in the largest reduction of errors, so 12 is learned as the first transformation.
+    T2 is then applied to the entire corpus, and learning continues.
+    At this stage of learning, transformation 13 results in the largest reduction of error, so it is learned as the second transformation.
+    After applying the initial-state annotator, followed by T2 and then T3, no further reduction in errors can be obtained from applying any of the transformations, so learning stops.
+    To annotate fresh text, this text is first annotated by the initial-state annotator, followed by the application of transformation T2 and then by the application of T3.
+    To define a specific application of transformation-based learning, one must specify the following: In cases where the application of a particular transformation in one environment could affect its application in another environment, two additional parameters mu

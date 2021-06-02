@@ -1,0 +1,8 @@
+, i.e., that there exists some context where tokens u and v are generated from the same concept.
+    The relationship between score(u, v) and trans (u, v) can be more or less direct, depending on the model and its estimation method.
+    Each of the models presented below uses a different score formulation.
+    All my methods for estimating the translation parameters trans (u, v) share the following general outline: Under certain conditions, a parameter estimation process of this sort is an instance of the expectation-maximization (EM) algorithm (Dempster, Laird, and Rubin 1977).
+    As explained below, meeting these conditions is computationally too expensive for my models.'
+    Therefore, I employ some approximations, which lack the EM algorithm's convergence guarantee.
+    The maximum likelihood approach to estimating the unknown parameters is to find the set of parameters 6 that maximize the probability of the training bitext (U, V).
+    The probability of the bitext is a sum over the distribution A of pos

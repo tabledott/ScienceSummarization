@@ -1,0 +1,7 @@
+s the normalized weighted cost of detection of specific-only entities in terms of misses, false alarms and substitution errors (entities marked generic are excluded from computation): any undetected entity is considered a miss, system-output entities with no corresponding reference entities are considered false alarms, and entities whose type was mis-assigned are substitution errors.
+    The ACE value computes a weighted cost by applying different weights to each error, depending on the error type and target entity type (e.g.
+    PERSON-NAMEs are weighted a lot more heavily than FACILITY-PRONOUNs) (NIST, 2003a).
+    The cumulative cost is normalized by the cost of a (hypothetical) system that outputs no entities at all &#8211; which would receive an ACE value of .
+    Finally, the normalized cost is subtracted from 100.0 to obtain the ACE value; a value of 100% corresponds to perfect entity detection.
+    A system can obtain a negative score if it proposed too many incorrect entities.
+    In addition, for the

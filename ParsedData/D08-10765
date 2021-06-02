@@ -1,0 +1,15 @@
+ng time and memory.
+    The remainder of this paper is organized as follows.
+    Section 2 briefly reviews N-best MERT and introduces some basic concepts that are used in order to develop the line optimization algorithm for phrase lattices in Section 3.
+    Section 4 presents an upper bound on the complexity of the unsmoothed error surface for the translation hypotheses represented in a phrase lattice.
+    This upper bound is used to prove the space and runtime efficiency of the suggested algorithm.
+    Section 5 lists some best practices for MERT.
+    Section 6 discusses related work.
+    Section 7 reports on experiments conducted on the NIST 2008 translation tasks.
+    The paper concludes with a summary in Section 8.
+  
+  
+    The goal of MERT is to find a weights set that minimizes the unsmoothed error count on a representative training corpus (cf.
+    Eq.
+    (3)).
+    This can be accomplished through a sequence of line minimizations along some vector directionstdM Starting from an initial point &#955;M 1

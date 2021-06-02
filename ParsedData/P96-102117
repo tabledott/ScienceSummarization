@@ -1,0 +1,7 @@
+t or inverted orientation depending on the language pair.
+    As in the original models, the language model heavily influences the remaining ordering decisions.
+    Matters are complicated by the presence of the bigram model in the objective function (which wordalignment models, as opposed to translation models, do not need to deal with).
+    As in our word-alignment model, the translation algorithm optimizes Equation (4) via dynamic programming, similar to chart parsing (Earley, 1970) but with a probabilistic objective function as for HMMs (Viterbi, 1967).
+    But unlike the word-alignment model, to accommodate the bigram model we introduce indexes in the recurrence not only on subtrees over the source Chinese string, but also on the delimiting words of the target English substrings.
+    Another feature of the algorithm is that segmentation of the Chinese input sentence is performed in parallel with the translation search.
+    Conventional architectures for Chinese NLP generally attempt to identify word boun

@@ -1,0 +1,9 @@
+., 1996), and weighted maximum matching alignment all conduct complete searches, but they would not be amenable to monitoring the syntactic interactions of links.
+    The tree-to-string models of (Yamada and Knight, 2001) naturally consider syntax, but special modeling considerations are needed to allow any deviations from the provided tree (Gildea, 2003).
+    The Inversion Transduction Grammar or ITG formalism, described in (Wu, 1997), is well suited for our purposes.
+    ITGs perform string-to-string alignment, but do so through a parsing algorithm that will allow us to inform the objective function of our dependency tree.
+    An ITG aligns bitext through synchronous parsing.
+    Both sentences are decomposed into constituent phrases simultaneously, producing a word alignment as a byproduct.
+    Viewed generatively, an ITG writes to two streams at once.
+    Terminal productions produce a token in each stream, or a token in one stream with the null symbol 0 in the other.
+    We will use standard ITG notation

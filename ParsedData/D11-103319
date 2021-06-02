@@ -1,0 +1,8 @@
+in (Koehn and Schroeder, 2007), passing the two phrase tables directly to the decoder and tuning a system using both phrase tables in parallel.
+    Each phrase table receives a separate set of weights during tuning, thus this combined translation model has more parameters than a normal single-table system.
+    Unlike (Nakov, 2008), we explicitly did not attempt to resolve any overlap between the phrase tables, as there is no need to do so with the multiple decoding paths.
+    Any phrase pairs appearing in both models will be treated separately by the decoder.
+    However, the exact overlap between the phrase tables was tiny, minimizing this effect.
+    Table 4 shows baseline results for the in-domain translation system and the general-domain system, evaluated on the in-domain data.
+    The table also shows that linearly interpolating the translation models improved the overall BLEU score, as expected.
+    However, using multiple decoding paths, and no explicit model merging at all, produced even better result

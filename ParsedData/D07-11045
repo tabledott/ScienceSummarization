@@ -1,0 +1,15 @@
+es O(m + log |T |) is practical, since for the 27M word corpus used to carry out our experiments, log |T | ? 25.
+			6.
+			Use the scored rules to translate the input sen-.
+			tence with a standard decoding algorithm.
+			A difficulty with this approach is step 3, which canbe quite slow.
+			Its complexity is linear in the num ber of occurrences of the source phrase f?
+			Both Callison-Burch et al (2005) and Zhang and Vogel (2005) solve this with sampling.
+			If a source phraseappears more than k times, they sample only k oc currences for rule extraction.
+			Both papers reportthat translation performance is nearly identical to ex tracting all possible phrases when k = 100.
+			2
+	
+	
+			We consider the hierarchical translation model ofChiang (2007).
+			Formally, this model is a syn chronous context-free grammar.
+			The lexicalizedtranslation rules of the grammar may contain a sin gle nonterminal symbol, denoted X . We will use a, b, c and d to denote terminal symbols, and u, v, andw to denote (possibly empty) sequ

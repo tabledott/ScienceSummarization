@@ -1,0 +1,14 @@
+etaining each sentence with a probability of 0.9.
+    For each tuning method and setting, we then optimize on the original dev and all sub-samples.
+    The resulting standard deviations provide an indication of stability.
+  
+  
+    The results of our survey of tuning methods can be seen in Tables 4, 5 and 6.
+    Results are averaged over test sets (2 for Fr/En, 3 for Zh/En), and over 5 subsampled runs per test set.
+    The SD column reports the standard deviation of the average test score across the 5 sub-samples.
+    It may be dismaying to see only small score improvements when transitioning from Medium to Big.
+    This is partially due to the fact that our Big feature set affects only phrase-table scores.
+    Our phrase tables are already strong, through our use of large data or leave-one-out forced decoding.
+    The important baseline when assessing the utility of a method is Medium k-best MERT.
+    In all language pairs, our Big systems generally outperform this baseline by 0.4 BLEU points.
+    It is inte

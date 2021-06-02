@@ -1,0 +1,6 @@
+of Das and Chen (2001), we added the tag NOT to every word between a negation word (&#8220;not&#8221;, &#8220;isn&#8217;t&#8221;, &#8220;didn&#8217;t&#8221;, etc.) and the first punctuation mark following the negation word.
+    (Preliminary experiments indicate that removing the negation tag had a negligible, but on average slightly harmful, effect on performance.)
+    For this study, we focused on features based on unigrams (with negation tagging) and bigrams.
+    Because training MaxEnt is expensive in the number of features, we limited consideration to (1) the 16165 unigrams appearing at least four times in our 1400document corpus (lower count cutoffs did not yield significantly different results), and (2) the 16165 bigrams occurring most often in the same data (the selected bigrams all occurred at least seven times).
+    Note that we did not add negation tags to the bigrams, since we consider bigrams (and n-grams in general) to be an orthogonal way to incorporate context.
+    Initial unigram results The c

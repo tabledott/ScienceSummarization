@@ -1,0 +1,9 @@
+ature score, but a cutoff value that ignores the sentences shorter than the given threshold.
+    Several rerankers are implemented in MEAD.
+    We observed the best results with Maximal Marginal Relevance (MMR) (Carbonell and Goldstein, 1998) reranker and the default reranker of the system based on Cross-Sentence Informational Subsumption (CSIS) (Radev, 2000).
+    All of our experiments shown in Section 4.3 use CSIS reranker.
+    A MEAD policy is a combination of three components: (a) the command lines for all features, (b) the formula for converting the feature vector to a scalar, and (c) the command line for the reranker.
+    A sample policy might be the one shown in Figure 4.
+    This example indicates the three default MEAD features (Centroid, Position, LengthCutoff), and our new LexPageRank feature used in our experiments.
+    Our LexPageRank implementation requires the cosine similarity threshold, in the example, as an argument.
+    Each number next to a feature name shows the relative weight of that fe

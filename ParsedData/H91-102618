@@ -1,0 +1,6 @@
+ acceptons 1 165 acceptable aeceptables 2 101 acceptable inacceptable 155 1 90 acceptance acceptation 1 596 accepted accept6 1 55 accepting acceptant 3 130 accepting accepter 0 62 accepts accepte After a few iterations, it became clear that many of the pairs that were being selected were morphologically related to pairs that had already been selected on a previous iteration.
+  A remarkably simple heuristic seemed to work fairly well to incorporate this observation.
+  That is, assume that two pairs are morphologically related if both words start with the same first 5 characters.
+  Then, select a pair if it is morphologically related to a pair that is already selected and it appears "significantly often" (in many more sentences than you would expect by chance) on any iteration.
+  This very simple heuristic more than doubled the number of pairs that had been selected on the first four iterations, from 6419 to 13,466.
+  As we will see in the next section, these 13 thousand pairs cover more than half of the words 

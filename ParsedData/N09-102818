@@ -1,0 +1,8 @@
+n rules handle unseen children and their order naturally because we have a default precedence weight and order type, and we do not need to match an often too specific condition, but rather just treat all children independently.
+    Therefore, we do not need to use any backoff scheme in order to have a broad coverage.
+    Fourth, we use dependency parse trees rather than constituency trees.
+    There has been some work on syntactic word order model for English to Japanese machine translation (Chang and Toutanova, 2007).
+    In this work, a global word order model is proposed based on features including word bigram of the target sentence, displacements and POS tags on both source and target sides.
+    They build a log-linear model using these features and apply the model to re-rank N-best lists from a baseline decoder.
+    Although we also study the reordering problem in English to Japanese translation, our approach is to incorporate the linguistically motivated reordering directly into modeling and decoding.
+ 

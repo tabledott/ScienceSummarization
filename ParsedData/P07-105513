@@ -1,0 +1,9 @@
+duct:NN, a:DT *:JJ *:NN, etc.
+    Each predicate, p, is then conjoined with the label information to construct a binary feature.
+    For example, if the sentence label set is Y(s) = {subj, obj} and the document set is Y(d) = {pos, neg}, then the system might contain the following feature, { 1 if p E P(si) and y!
+    = obj and ysi = subj and yd = neg 0 otherwise Where f(j) is the jth dimension of the feature space.
+    For each feature, a set of back-off features are included that only consider the document label yd, the current sentence label ysi , the current sentence and document label ysi and yd, and the current and previous sentence labels ysi and ysi&#65533;1.
+    Note that through these back-off features the joint models feature set will subsume the feature set of any individual level model.
+    Only features observed in the training data were considered.
+    Depending on the data set, the dimension of the feature vector f ranged from 350K to 500K.
+    Though the feature vectors can be sparse, the featu

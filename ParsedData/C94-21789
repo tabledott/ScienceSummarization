@@ -1,0 +1,10 @@
+, if we choose too small a K, then the mutual information values will be unreliable.
+			However, we can only increase K up to a point.
+			If we set K to a ridiculously large value, say the size of the English text, then an English word and its translations are likely to fall in slightly different pieces due to random fluctuations and we would miss the signal.
+			For this work, we set K to the square root of the size of the corpus.
+			K should be thought of as a scale parameter.
+			If we use too low a resolution, then everything turns into a blur and it is hard to see anything.
+			But if we use too high a resolution, then we can miss the signal if 7098 it isn't just exactly where we are looking.
+			Ideally, we would like to apply the K-vec algorithm to all pairs of English and French words, but unfortunately, there are too many such pairs to consider.
+			We therefore limited the search to pairs of words in the frequency range: 3-10.
+			This heuristic makes the search practical, and catches many interesting pai

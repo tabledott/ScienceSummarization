@@ -1,0 +1,14 @@
+y given the observation o = o1...on P (t1...tn|o).
+			(1) Observations are typically words and their lexicalfeatures in the task of POS tagging.
+			Sequential clas sification approaches decompose the probability as follows, P (t1...tn|o) = n?
+			i=1 p(ti|t1...ti?1o).
+			(2) This is the left-to-right decomposition.
+			If we make a first-order markov assumption, the equation becomes P (t1...tn|o) = n?
+			i=1 p(ti|ti?1o).
+			(3) Then we can employ a probabilistic classifier trained with the preceding tag and observations in order to obtain p(ti|ti?1o) for local classification.
+			A common choice for the local probabilistic classifier is maximum entropy classifiers (Berger et al, 1996).
+			The best tag sequence can be efficiently computed by using a Viterbi decoding algorithm in polynomial time.
+			t1 (a) t2 t3 o t1 (b) t2 t3 t1 (c) t2 t3 t1 (d) t2 t3 o o o Figure 1: Different structures for decomposition.
+			The right-to-left decomposition is P (t1...tn|o) = n?
+			i=1 p(ti|ti+1o).
+			(4) These two ways of decomp

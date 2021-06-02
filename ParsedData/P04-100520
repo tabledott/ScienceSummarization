@@ -1,0 +1,9 @@
+r generating the source words.
+    However, it is easy to modify the TAG so it does include a bigram model that does generate the source words, since each nonterminal encodes the preceding source word.
+    That is, we multiply the weights of each TAG production given earlier that introduces a source word Ri by Pn(Ri|Ri&#8722;1).
+    The resulting stochastic TAG is in fact exactly the intersection of the channel model TAG with a bigram language model.
+    The standard n5 bottom-up dynamic programming parsing algorithm can be used with this stochastic TAG.
+    Each different parse of the observed string Y with this grammar corresponds to a way of analyzing Y in terms of a hypothetical underlying sentence X and a number of different repairs.
+    In our experiments below we extract the 20 most likely parses for each sentence.
+    Since the weighted grammar just given does not generate the source string X, the score of the parse using the weighted TAG is P(Y |X).
+    This score multiplied by the probability P(X) o

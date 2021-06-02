@@ -1,0 +1,9 @@
+ meaning no learning is needed yet ? we achieve an AER of 29.8, between the Dice with competitive linking result of 34.0 and Model 1 of 25.9 given in Och and Ney (2003).
+			An example of the alignment at this stage is shown in Figure 1(a).
+			Note that most errors lie off the diagonal, for example the often-correct to-a` match.
+			IBM Model 2, as usually implemented, addsthe preference of alignments to lie near the di agonal.
+			Model 2 is driven by the product of a word-to-word measure and a (usually) Gaussian distribution which penalizes distortion from thediagonal.
+			We can capture the same effect using features which reference the relative posi tions j and k of a pair (e j , f k ).
+			In addition to aModel 2-style quadratic feature referencing relative position, we threw in the following proximity features: absolute difference in relative posi tion abs(j/|e|?k/|f |), and the square and squareroot of this value.
+			In addition, we used a con junction feature of the dice coefficient times the proximity.
+		

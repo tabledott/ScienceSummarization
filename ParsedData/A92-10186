@@ -1,0 +1,8 @@
+ in accuracy (discussed in section 5).
+    This also enables a tagger to be reliably trained using only moderate amounts of text.
+    We have produced reasonable results training on as few as 3,000 sentences.
+    Fewer parameters also reduce the time required for training.
+    Relatively few ambiguity classes are sufficient for wide coverage, so it is unlikely that adding new words to the lexicon requires retraining, as their ambiguity classes are already accommodated.
+    Vocabulary independence is achieved by predicting categories for words not in the lexicon, using both context and suffix information.
+    Probabilities corresponding to category sequences that never occurred in the training data are assigned small, non-zero values, ensuring that the model will accept any sequence of tokens, while still providing the most likely tagging.
+    By using the fact that words are typically associated with only a few part-ofspeech categories, and carefully ordering the computation, the algorithms have linear comple

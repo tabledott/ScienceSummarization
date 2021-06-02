@@ -1,0 +1,9 @@
+odels are not yet practical for the wider machine translation community.
+  
+  
+    Our aim is to induce a grammar from a training set of sentence pairs.
+    We use Bayes&#8217; rule to reason under the posterior over grammars, P(g|x) a P(x|g)P(g), where g is a weighted SCFG grammar and x is our training corpus.
+    The likelihood term, P(x|g), is the probability of the training sentence pairs under the grammar, while the prior term, P(g), describes our initial expectations about what consitutes a plausible grammar.
+    Specifically we incorporate priors encoding our preference for a briefer and more succinct grammar, namely that: (a) the grammar should be small, with few rules rewriting each non-terminal; and (b) terminal rules which specify phrasal translation correspondence should be small, with few symbols on their right hand side.
+    Further, Bayesian non-parametrics allow the capacity of the model to grow with the data.
+    Thereby we avoid imposing hard limits on the grammar (and the thorny problem of 

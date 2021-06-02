@@ -1,0 +1,6 @@
+ Proximity in the string is our only indication of relevance.
+    Therefore we compute l(yield(di,...,dm)) by running a recurrent neural network backward over the string, so that the most recent input is the first word in the lookahead string, as discussed in more detail in (Henderson, 2003a).
+    Once it has computed h(d1,..., di&#8722;1) and (for the discriminative model) l(yield(di,..., dm)), the SSN uses standard methods (Bishop, 1995) to estimate a probability distribution over the set of possible next decisions di given these representations.
+    This involves further decomposing the distribution over all possible next parser actions into a small hierarchy of conditional probabilities, and then using log-linear models to estimate each of these conditional probability distributions.
+    The input features for these loglinear models are the real-valued vectors computed by h(d1,..., di&#8722;1) and l(yield(di,..., dm)), as explained in more detail in (Henderson, 2003b).
+    Thus the full neural network con

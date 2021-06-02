@@ -1,0 +1,8 @@
+for the best path through a WFSA instead of the best sequence (i.e., the same sequence does not receive bonus points for appearing more than once).
+  
+  
+    This section describes how we designed and built each of our five models.
+    For consistency, we continue to print written English word sequences in italics (golf ball), English sound sequences in all capitals (G AA I. F B AO 1..).
+    Japanese sound sequences in lower case (g or uhubo or u) and katakana sequences naturally (=* A- 7 7ti &#8212; ) The first model generates scored word sequences, the idea being that ice cream should score higher than Ice creme, which should score higher than aice kreem.
+    We adopted a simple unigram scoring method that multiplies the scores of the known words and phrases in a sequence.
+    Our 262,000-entry frequency list draws its words and phrases from the Wall Street Journal corpus. an online English name list, and an online gazeteer of place names.2 A portion of the WFSA looks like this: An ideal word sequence model

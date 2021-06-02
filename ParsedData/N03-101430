@@ -1,0 +1,6 @@
+se.7 After the head child is attached to a node, the node&#8217;s lexical head is identified and that word is added to the set of features input directly to the node&#8217;s subsequent history representations.
+    This adds an inductive bias towards treating the lexical head as important for post-head parsing decisions.
+    The results show that this inductive bias does improve performance, but not enough to compensate for the degradation caused by having to learn to identify head children.
+    The lack of a large improvement suggests that the SSN-Freq 200 model already learns the significance of lexical heads, but perhaps a different method for incorporating the bias towards con7If a node&#8217;s head child is a word, then that word is the node&#8217;s lexical head.
+    If a node&#8217;s head child is a nonterminal, then the lexical head of the head child is the node&#8217;s lexical head. ditioning on lexical heads could improve performance a little.
+    The third model (head word and child) extends the head

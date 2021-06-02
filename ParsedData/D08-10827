@@ -1,0 +1,9 @@
+s the function symbol p&#945; as well as the child semantic categories Mb and Mc.
+    Next, we generate the hybrid sequence of child nodes w1 Mb w2 Mc, which consists of NL words and semantic categories.
+    After that, two child MR productions mb and mc are generated.
+    These two productions will in turn generate other hybrid sequences and productions, recursively.
+    This process produces a hybrid tree T, whose nodes are either NL words or MR productions.
+    Given this tree, we can recover a NL sentence w by recording the NL words visited in depth-first traversal order and can recover an MR structure m by following a tree-specific traversal order, defined by the hybrid-patterns we introduce below.
+    Figure 3 gives a partial hybrid tree for the training example from Section 3.
+    Note that the leaves of a hybrid tree are always NL tokens.
+    With several independence assumptions, the probability of generating (w, m, T) is defined as: where &#8220;arg&#8221; refers to the position of the child semanti

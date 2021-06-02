@@ -1,0 +1,7 @@
+ecifying a path into the lzt.
+    There is the option of moving to a more general TFS logic but this would require very considerable research to develop reasonable tractability.
+    Since the constraints need not be checked at runtime, it seems better to regard them as metalevel conditions on the description of the grammar, which can anyway easily be checked by code which converts the TFS into the algebraic representation.
+    Because the ERG is large and complex, we have not yet fully completed the exercise of retrospectively implementing the constraints throughout.
+    However, much of the work has been done and the process revealed many bugs in the grammar, which demonstrates the potential for enhanced maintainability.
+    We have modified the grammar to be monotonic, which is important for the chart generator described in Carroll et al (1999).
+    A chart generator must determine lexical entries directly from an input logical form: hence it will only work if all instances of nonmonotonicity can be identif

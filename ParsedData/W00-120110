@@ -1,0 +1,8 @@
+nt is broken off into a separate initial tree, leaving a substitution node, and an adjunct is broken off into a separate modifier tree.
+    A different rule is used for extracting auxiliary trees; see (Chiang, 2000) for details.
+    Xia (1999) describes a similar process, and in fact our rules for the Xinhua corpus are based on hers.
+    The primary language-dependent component that had to be changed in both models was the head table, used to determine heads when training.
+    We modified the head rules described in (Xia, 1999) for the Xinhua corpus and substituted these new rules into both models.
+    The (Chiang, 2000) model had the following additional modifications. was eliminated, causing parts of speech for unknown words to be predicted solely on the head relations in the model.
+    &#8226; The default beam size in the probabilistic CKY parsing algorithm was widened.
+    The default beam pruned away chart entries whose scores were not within a factor of e-5 of the top-ranked subtree; this settings and l

@@ -1,0 +1,6 @@
+ed actions and away from undesired actions, but also provide the parser with means of choosing between several desired actions.
+    We want the parser to be able to defer some desired actions until more structure is available and a more informed prediction can be made.
+    This desire is reflected in our choice of features: some of our features are designed to signal to the parser the presence of possibly &#8220;incomplete&#8221; structures, such as an incomplete phrase, a coordinator without conjuncts, and so on.
+    When considering an action ACTION(i), we limit ourselves to features of partial structures around the attachment point: pi&#8722;2, pi&#8722;1, pi, pi+1, pi+2, pi+s, that is the two structures which are to be attached by the action (pi and pi+1), and the two neighbouring structures on each side3.
+    While these features encode local context, it is local in terms of syntactic structure, and not purely in terms of sentence surface form.
+    This let us capture some, though not all, long-distance 

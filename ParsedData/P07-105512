@@ -1,0 +1,8 @@
+nce labels from the set Y(s) x Y(d).
+    The resulting Viterbi search would then need to be constrained to ensure consistent solutions, i.e., the label assignments agree on the document label over all sentences.
+    If viewed this way, it is also possible to run a constrained forwardbackward algorithm and learn the parameters for CRFs as well.
+    In this section we define the feature representation for each clique, f(yd, ysi_1, ysi , s).
+    Assume that each sentence si is represented by a set of binary predicates P(si).
+    This set can contain any predicate over the input s, but for the present purposes it will include all the unigram, bigram and trigrams in the sentence si conjoined with their part-of-speech (obtained from an automatic classifier).
+    Back-offs of each predicate are also included where one or more word is discarded.
+    For instance, if P(si) contains the predicate a:DT great:JJ product:NN, then it would also have the predicates a:DT great:JJ *:NN, a:DT *:JJ product:NN, *:DT great:JJ pro

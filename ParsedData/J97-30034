@@ -1,0 +1,6 @@
+rainable, the tagging performance on unknown words is reported to be only about 66% correct for English.2 More advanced word-guessing methods use word features such as leading and trailing word segments to determine possible tags for unknown words.
+    Such methods can achieve better performance, reaching tagging accuracy of up to 85% on unknown words for English (Brill 1994; Weischedel et al. 1993).
+    The Xerox tagger (Cutting et al. 1992) comes with a set of rules that assign an unknown word a set of possible POS-tags (i.e., Pos-class) on the basis of its ending segment.
+    We call such rules endingguessing rules because they rely only on ending segments in their predictions.
+    For example, an ending-guessing rule can predict that a word is a gerund or an adjective if it ends with ing.
+    The ending-guessing approach was elaborated in Weischedel et al. (1993), where an unknown word was guessed by using the probability for an unknown word to be of a particular POS-tag, given its capitalization feature 

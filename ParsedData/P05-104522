@@ -1,0 +1,6 @@
+rns, and then add dependencies between these text spans using clique templates.
+    This generates a extremely large number of overlapping candidate entities, which then necessitates additional templates to enforce the constraint that text subsequences cannot both be different entities, something that is more naturally modeled by a CRF.
+    Another disadvantage of this approach is that it uses loopy beliefpropagation and a voted perceptron for approximate learning and inference &#8211; ill-founded and inherently unstable algorithms which are noted by the authors to have caused convergence problems.
+    In the skip-chain CRFs model, the decision of which nodes to connect is also made heuristically, and because the authors focus on named entity recognition, they chose to connect all pairs of identical capitalized words.
+    They also utilize loopy belief propagation for approximate learning and inference.
+    While the technique we propose is similar mathematically and in spirit to the above approaches, it diff

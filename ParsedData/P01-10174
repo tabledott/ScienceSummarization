@@ -1,0 +1,8 @@
+ immediate head of a constituent occurs after it (e.g, in noun-phrases, where the head is typically the rightmost noun) and thus is not available for conditioning by a strict left-to-right parser.
+    There are two reasons why one might prefer strict left-to-right parsing for a language model (Roark [15] and Chelba, personal communication).
+    First, the search procedures for guessing the words that correspond to the acoustic signal works left to right in the string.
+    If the language model is to offer guidance to the search procedure it must do so as well.
+    The second benefit of strict left-to-right parsing is that it is easily combined with the standard trigram model.
+    In both cases at every point in the sentence we compute the probability of the next word given the prior words.
+    Thus one can interpolate the trigram and grammar probability estimates for each word to get a more robust estimate.
+    It turns out that this is a good thing to do, as is clear from Table 1, which gives perplexity resu

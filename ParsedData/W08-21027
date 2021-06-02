@@ -1,0 +1,7 @@
+describes the idea of derivations in our parsing formalism.
+    As in context-free grammars or TAGs, a derivation in our approach is a data structure that specifies the sequence of operations used in combining basic (elementary) structures in a grammar, to form a full parse tree.
+    The parsing formalism we use is related to the tree adjoining grammar (TAG) formalisms described in (Chiang, 2003; Shen and Joshi, 2005).
+    However, an important difference of our work from this previous work is that our formalism is defined to be &#8220;splittable&#8221;, allowing use of the efficient parsing algorithms of Eisner (2000).
+    A derivation in our model is a pair (E, D) where E is a set of spines, and D is a set of dependencies specifying how the spines are combined to form a parse tree.
+    The spines are similar to elementary trees in TAG.
+    Some examples are as follows: These structures do not have substitution nodes, as is common in TAGs.3 Instead, the spines consist of a lexical anchor together with a seri

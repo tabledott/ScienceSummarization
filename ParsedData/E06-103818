@@ -1,0 +1,7 @@
+t these features in many ways mimic the information already present in the noisy-channel and decision-tree models of Knight and Marcu (2000).
+    Our bigram features encode properties that indicate both good and bad words to be adjacent in the compressed sentence.
+    This is similar in purpose to the source model from the noisy-channel system.
+    However, in that system, the source model is trained on uncompressed sentences and thus is not as representative of likely bigram features for compressed sentences, which is really what we desire.
+    Our feature set also encodes dropped words and phrases through the properties of the words themselves and through properties of their syntactic relation to the rest of the sentence in a parse tree.
+    These features represent likely phrases to be dropped in the compression and are thus similar in nature to the channel model in the noisy-channel system as well as the features in the tree-to-tree decision tree system.
+    However, we use these syntactic constraints as 

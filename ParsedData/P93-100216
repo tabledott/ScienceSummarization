@@ -1,0 +1,7 @@
+ers by taking counts on a small body of previously aligned data.
+    To estimate word bead frequencies, we maintain a count c(b) for each word bead that records the number of times the word bead b occurs in the most probable word beading of a sentence bead.
+    We take We initialize the counts c(b) to 1 for 0:1 and 1:0 word beads, so that these beads can occur in beadings with nonzero probability.
+    To enable 1:1 word beads to occur in beadings with nonzero probability, we initialize their counts to a small value whenever we see the corresponding 0:1 and 1:0 word beads occur in the most probable word beading of a sentence bead.
+    To estimate the sentence length parameters A, we divide the number of word beads in the most probable beading of the initial training data by the total number of sentences.
+    This gives us an estimate for A1,0 , and the other A parameters can be calculated using equation (1).
+    We have found that one hundred sentence pairs are sufficient to train the model to a state where it

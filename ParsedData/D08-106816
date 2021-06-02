@@ -1,0 +1,11 @@
+the earliest mention it contains.
+    This helps break the symmetry among mentions, which otherwise produces multiple optima and makes learning unnecessarily harder.
+    To encourage clustering, we impose an exponential prior on the number of non-empty clusters with weight &#8722;1.
+    The above model only clusters mentions with the same head, and does not work well for pronouns.
+    To address this, we introduce the predicate IsPrn(m), which is true iff the mention m is a pronoun, and adapt the head prediction rule as follows: This is always false when m is a pronoun, and thus applies only to non-pronouns.
+    Pronouns tend to resolve with mentions that are semantically compatible with them.
+    Thus we introduce predicates that represent entity type, number, and gender: Type(x, e!
+    ), Number(x, n!
+    ), Gender(x, g!
+    ), where x can be either a cluster or mention, e E {Person,Organization,Location,Other}, n E {Singular,Plural} and g E {Male, Female, Neuter}.
+    Many of these are known for pronouns, 

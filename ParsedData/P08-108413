@@ -1,0 +1,8 @@
+ons A, E, and F. These three distributions are drawn from three separate Dirichlet processes, each with appropriately defined base distributions.
+    The Dirichlet processes ensure that the resulting distributions concentrate their probability mass on a small number of morphemes while holding out reasonable probability for unseen possibilities.
+    Once A, E, and F have been drawn, we model our parallel corpus of short phrases as a series of independent draws from a phrase-pair generation model.
+    For each new phrase-pair, the model first chooses the number and type of morphemes to be generated.
+    In particular, it must choose how many unaligned stray morphemes from language &#163;, unaligned stray morphemes from language F, and abstract morphemes are to compose the parallel phrases.
+    These three numbers, respectively denoted as m, n, and k, are drawn from a Poisson distribution.
+    This step is illustrated in Figure 1 part (a).
+    The model then proceeds to independently draw m language &#163; morph

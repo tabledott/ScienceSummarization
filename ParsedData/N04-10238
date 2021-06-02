@@ -1,0 +1,11 @@
+ne is the PRank algorithm, a variant of the perceptron algorithm, that uses multiple biases to represent the boundaries between every two consecutive ranks (Crammer and Singer, 2001; Harrington, 2003).
+    However, as we will show in section 3.7, the PRank algorithm does not work on the reranking tasks due to the introduction of global ranks.
+    The other approach is to reduce the ranking problem to a classification problem by using the method of pairwise samples (Herbrich et al., 2000).
+    The underlying assumption is that the samples of consecutive ranks are separable.
+    This may become a problem in the case that ranks are unreliable when ranking does not strongly distinguish between candidates.
+    This is just what happens in reranking for machine translation.
+  
+  
+    The reranking approach for MT is defined as follows: First, a baseline system generates -best candidates.
+    Features that can potentially discriminate between good vs. bad translations are extracted from these -best candidates.
+    T

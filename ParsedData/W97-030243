@@ -1,0 +1,11 @@
+eneral, global thresholding works better on simpler grammars.
+    In some complicated grammars we explored in other work, there were systematic, strong correlations between nodes, which violated the independence approximation used in global thresholding.
+    This prevented us from using global thresholding with these grammars.
+    In the future, we may modify global thresholding to model some of these correlations.
+    While global thresholding works better than beam thresholding in general, each has its own strengths.
+    Global thresholding can threshold across cells, but because of the approximations used, the thresholds must generally be looser.
+    Beam thresholding can only threshold within a cell, but can do so fairly tightly.
+    Combining the two offers the potential to get the advantages of both.
+    We ran a series of experiments using the thresholding optimization algorithm of Section 5.
+    Figure 13 gives the results.
+    The combination of beam and global thresholding together is clearly better

@@ -1,0 +1,7 @@
+the time complexity is linear to the beam-size.
+    Computing the bilingual features further slows it down, but only fractionally so (just 1.06 times as slow as the baseline at k=16), which is appealing in practice.
+    By contrast, Burkett and Klein (2008) reported their approach of &#8220;monolingual k-best parsing followed by bilingual k2-best reranking&#8221; to be &#8220;3.8 times slower&#8221; than monolingual parsing.
+    Our final results on the test set (290 sentences) are summarized in Table 9.
+    On both English and Chinese, the addition of bilingual features improves dependency arc accuracies by +0.6%, which is mildly significant using the Z-test of Collins et al. (2005).
+    We also compare our results against the Berkeley parser (Petrov and Klein, 2007) as a reference system, with the exact same setting (i.e., trained on the bilingual data, and testing using gold-standard POS tags), and the resulting trees are converted into dependency via the same headrules.
+    We use 5 iterations of split-me

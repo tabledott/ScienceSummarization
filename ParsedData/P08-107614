@@ -1,0 +1,10 @@
+r HMMs for embedded joint PMs since we assume that they have the same graph structure as JESS-CM as described in Section 2.2.
+    To reduce the required human effort, we simply used the feature templates shown in Table 3 to generate the features of the HMMs.
+    With our design, one feature template corresponded to one HMM.
+    This design preserves the feature whereby each HMM emits a single symbol from a single state (or transition).
+    We can easily ignore overlapping features that appear in a single HMM.
+    As a result, 47, 39 and 79 distinct HMMs are embedded in the potential functions of JESS-CM for POS tagging, chunking and NER experiments, respectively.
+    In our experiments, we selected Gaussian and Dirichlet priors as the prior distributions in G1 and G2, respectively.
+    This means that JESS-CM has two tunable parameters, Q2 and q, in the Gaussian and Dirichlet priors, respectively.
+    The values of these tunable parameters are chosen by employing a binary line search.
+    We used the value fo

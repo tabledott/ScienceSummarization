@@ -1,0 +1,8 @@
+speaker intended to delete only &amp;quot;flights.&amp;quot; In the second experiment we attempted to improve robustness by applying the parser to small substrings of the sentence.
+    When analyzing long word strings, the parser is more likely to fail due to factors unrelated to the repair.
+    For this experiment, the parser was using both syntax and semantics.
+    The phrases used for this experiment were the phrases found by the pattern matcher to contain matching strings of length one, with up to three intervening words.
+    This set was selected because, as can be seen from Table 4, it constitutes a large subset of the data (186 such phrases).
+    Furthermore, pattern matching alone contains insufficient information for reliably correcting these sentences.
+    The relevant substring is taken to be the phrase constituting the matched string plus intervening material plus the immediately preceding word.
+    So far we have used only phrases where the grammatical category of the matched word was either noun

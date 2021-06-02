@@ -1,0 +1,12 @@
+   If we intersect the two alignments, we get a high-precision alignment of high-confidence alignment points.
+    If we take the union of the two alignments, we get a high-recall alignment with additional alignment points.
+    We explore the space between intersection and union with expansion heuristics that start with the intersection and add additional alignment points.
+    The decision which points to add may depend on a number of criteria: In which alignment does the potential alignment point exist?
+    Foreign-English or English-foreign?
+    Does the potential point neighbor already established points?
+    Does &#8220;neighboring&#8221; mean directly adjacent (blockdistance), or also diagonally adjacent?
+    Is the English or the foreign word that the potential point connects unaligned so far?
+    Are both unaligned?
+    What is the lexical probability for the potential point?
+    The base heuristic [Och et al., 1999] proceeds as follows: We start with intersection of the two word alignments.
+    We only

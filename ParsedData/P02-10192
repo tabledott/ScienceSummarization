@@ -1,0 +1,7 @@
+ size.
+    However this model makes residual errors, many of which have to do with word pronunciation.
+    For example, the following are triples of misspelling, correct word and (incorrect) guess that the Brill and Moore model made: edelvise edelweiss advise bouncie bouncy bounce latecks latex lacks In this work we take the approach of modeling phonetic errors explicitly by building a separate error model for phonetic errors.
+    More specifically, we build two different error models using the Brill and Moore learning algorithm.
+    One of them is a letter-based model which is exactly the Brill and Moore model trained on a similar dataset.
+    The other is a phone-sequence-to-phone-sequence error model trained on the same data as the first model, but using the pronunciations of the correct words and the estimated pronunciations of the misspellings to learn phone-sequence-to-phone-sequence edits and estimate their probabilities.
+    At classification time, Nbest list predictions of the two models are combined

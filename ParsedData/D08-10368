@@ -1,0 +1,5 @@
+We insert endmarkers at the beginning and end of the corpus and between sentence boundaries, and constrain the estimators to associate endmarkers with a special HMM state that never appears elsewhere in the corpus (we ignore these endmarkers during evaluation).
+    This means that we can formally treat the training corpus as one long string, yet each sentence can be processed independently by a firstorder HMM.
+    In more detail, the HMM is specified by a pair of multinomials &#952;t and &#966;t associated with each state t, where &#952;t specifies the distribution over states t0 following t and &#966;t specifies the distribution over words w given state t. The Bayesian model we consider here puts a fixed uniform Dirichlet prior on these multinomials.
+    Because Dirichlets are conjugate to multinomials, this greatly simplifies inference.
+    A multinomial &#952; is distributed according to the Dirichlet distribution Dir(&#945;) iff: In our experiments we set &#945; and &#945;0 to the uniform values (i.e., al

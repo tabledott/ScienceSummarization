@@ -1,0 +1,8 @@
+vely removing less probable word alignments until they no longer overlap.
+    If they still overlap after all one/many-to-many alignments have been removed, then the refinement will stop and N, which covers pis, is no longer taken as a training instance.
+    In sum, given a bilingual training corpus, a parser for the SL, and a word alignment tool, we can collect all binary parse tree nodes, each of which may be an instance of the required reordering knowledge.
+    The next question is what kind of reordering knowledge can be formed out of these training instances.
+    Two forms of reordering knowledge are investigated: where Z is the phrase label of a binary node and X and Y are the phrase labels of Z&#8217;s children, and Pr(INVERTED) and Pr(IN-ORDER) are the probability that X and Y are inverted on TL side and that not inverted, respectively.
+    The probability figures are estimated by Maximum Likelihood Estimation.
+    2.
+    Maximum Entropy (ME) Model, which does the binary classification whether a binar

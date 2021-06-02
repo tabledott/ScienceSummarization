@@ -1,0 +1,10 @@
+mber of nodes.
+    It was implemented using the sub-tree counting algorithm proposed by (Abe et al. 02).
+    The patterns are scored based on the relative frequency of the pattern in the retrieved documents (fr) and in the entire corpus (fall).
+    The formula uses the TF/IDF idea (Formula 1).
+    The system ignores very frequent patterns, as those patterns are so common that they are not likely to be important to any particular topic, and also very rare patterns, as most of those patterns are noise.
+    The scoring function sorts all patterns which contain at least one extended NE and the top 100 patterns are selected for later processing.
+    Figure 2 shows examples of the discovered patterns for the &#8220;merger and acquisition&#8221; topic.
+    Chunks are shown in brackets and extended NEs are shown in upper case words.
+    (COM means &#8220;company&#8221; and MNY means &#8220;money&#8221;) The role of the paraphrase discovery component is to link the patterns which mean the same thing for the task.
+    

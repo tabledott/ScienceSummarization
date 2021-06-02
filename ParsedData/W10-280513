@@ -1,0 +1,7 @@
+ to extract similar items from the same space, we decided to relax our test settings by awarding points not only to shared neighbours, but also to the same model&#8217;s predictions of those neighbours.
+    Thus, given a target neighbour such as good_deal, in our second setting we awarded points not only to the gold standard good_deal, but also to the predictions good_deal_ADD, good_deal_MUL and good_deal_PLSR when evaluating each corresponding model.
+    With these settings the compared spaces become less asymmetrical (gold standard: 7,600 neighbours from a pool of just 380 different items plus predictions; prediction space: 11,400 neighbours from a pool of 1,520 items).
+    The obtained results show a great improvement (max. potential score 7,600 points): Once again, the additive model showed the best performance, followed by PLSR.
+    The multiplicative model&#8217;s performance was negligible.
+    While carrying out these experiments, an unexpected fact became evident.
+    Each of the models in turn produ

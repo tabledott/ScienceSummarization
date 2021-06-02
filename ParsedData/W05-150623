@@ -1,0 +1,17 @@
+he overall complexity when a is constant, as we will see.4This can be implemented by a linear-time randomized selection algorithm (a.k.a. quick-select) (Cormen et al, 2001).
+			57 2 2 ? 0 ? ?
+			1 ? 1 2 4 (a) 2 2 ? ?
+			3 ? 0 1 ? ?
+			2 ? 1 2 4 (b) 2 2 ? ?
+			3 ? ?
+			4 0 1 2 ? ?
+			4 1 2 4 (c) Figure 4: An illustration of Algorithm 1 in |e| = 2 dimensions.
+			Here k = 3, ? is the numerical ?, and the monotonic function f is defined as f (a, b) = a + b. Italic numbers on the x and y axes are ai?s and b j?s, respectively.
+			We want to compute the top 3 results from f (ai, b j) with 1 ? i, j ? 3.
+			In each iteration the current frontier is shown in oval boxes, with the bold-face denoting the best element among them.
+			That element will be extracted and replaced by its two neighbors (?
+			and?)
+			in the next iteration.
+			1: function M???(e, k) 2: cand ? {?e, 1?}
+			initialize the heap 3: p?
+			empty list . the result of mult?k 4: while |p| &lt; k and |cand| &gt; 0 do 5: A?????N???(cand,p, k) 6: return p 7: 

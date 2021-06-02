@@ -1,0 +1,9 @@
+hrases, and study their contribution to the accuracy of automatic evaluation.
+  
+  
+    The input to our method consists of a reference sentence R = r1 ... rm and a system-generated sentence W = w1 ... wp whose words form the sets R and W respectively.
+    The output of the model is a synthetic reference sentence SRW that preserves the meaning of R and has maximal word overlap with W. We generate such a sentence by substituting words from R with contextually equivalent words from W. Our algorithm first selects pairs of candidate word paraphrases, and then checks the likelihood of their substitution in the context of the reference sentence.
+    Candidate Selection We assume that words from the reference sentence that already occur in the system generated sentence should not be considered for substitution.
+    Therefore, we focus on unmatched pairs of the form {(r, w) r E R &#8722; W, w E W &#8722; R}.
+    From this pool, we select candidate pairs whose members exhibit high semantic proximity.
+    In our experi

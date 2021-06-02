@@ -1,0 +1,6 @@
+h National Corpus.
+    Let DSW = dsw1, dsw2, ..., dsw,,, be the list of top-ranked distributionally similar words, sorted in decreasing order of their similarity.
+    Next, for each sense wsz of the word w, we determine the similarity with each of the words in the list DSW, using a WordNet-based measure of semantic similarity (wnss).
+    Although a large number of such word-to-word similarity measures exist, we chose to use the (Jiang and Conrath, 1997) measure, since it was found both to be efficient and to provide the best results in previous experiments involving word sense ranking (McCarthy et al., 2004)5.
+    For distributionally similar words that are themselves ambiguous, we use the sense that maximizes the similarity score.
+    The similarity scores associated with each word dswj are normalized so that they add up to one across all possible senses of w, which results in a score described by the following formula: where A selection process can also be applied so that a distributionally similar word bel

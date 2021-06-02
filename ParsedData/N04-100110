@@ -1,0 +1,7 @@
+ed on datasets outside of ACE training data and they identify types of mentions different from the ACE types of mentions.
+    For instance, a pre-existing tagger may identify dates or occupation mentions (not used in ACE), among other types.
+    It could also have a class called PERSON, but the annotation guideline of what represents a PERSON may not match exactly to the notion of the PERSON type in ACE.
+    Our hypothesis &#8211; the combination hypothesis &#8211; is that combining pre-existing classifiers from diverse sources will boost performance by injecting complementary information into the mention detection models.
+    Hence, we used the output of these pre-existing taggers and used them as additional feature streams for the mention detection models.
+    This approach allows the system to automatically correlate the (different) mention types to the desired output.
+    Even if the three languages (Arabic, Chinese and English) are radically different syntacticly, semantically, and even graphically, all 

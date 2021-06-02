@@ -1,0 +1,8 @@
+).
+    Notice that when the objects form independent subsets (in our cases, mentions in each document), we can process them in parallel and then gather sufficient statistics for learning.
+    We developed an efficient parallelized implementation of our unsupervised learning algorithm using the message-passing interface (MPI).
+    Learning in MUC-6 took only one hour, and in ACE-2004 two and a half.
+    To reduce burn-in time, we initialized MC-SAT with the state returned by MaxWalkSAT (Kautz et al., 1997), rather than a random solution to the hard clauses.
+    In the existing implementation in Alchemy (Kok et al., 2007), SampleSAT flips only one atom in each step, which is inefficient for predicates with unique-value constraints (e.g., Head(m, c!)).
+    Such predicates can be viewed as multi-valued predicates (e.g., Head(m) with value ranging over all c&#8217;s) and are prevalent in NLP applications.
+    We adapted SampleSAT to flip two or more atoms in each step so that the unique-value constraints are autom

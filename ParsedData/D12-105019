@@ -1,0 +1,8 @@
+ee by computing the square of the Euclidean distance between the original input and its reconstruction: Socher et al. (2011a) extend the standard recursive autoencoder sketched above in two ways.
+    Firstly, they present an unfolding autoencoder that tries to reconstruct all leaf nodes underneath each node rather than only its direct children.
+    And secondly, instead of transforming the two children directly into a parent p, they introduce another hidden layer inbetween.
+    We obtained three compositional models per representation resulting in nine compositional models overall.
+    Plugging different representations into the additive and multiplicative models is relatively straightforward.
+    The RAE can also be used with arbitrary word vectors.
+    Socher et al. (2011a) obtain best results with 100-dimensional vectors which we also used in our experiments.
+    NLM vectors were trained with this dimensionality on the BNC for 7.9 x 108 iterations (with window size 4 and an embedding learning rate of 10&#8

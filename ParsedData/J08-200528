@@ -1,0 +1,12 @@
+ree.
+  In addition, as defined in the CoNLL-2004 and 2005 shared tasks, the legitimate output of an SRL system must satisfy this constraint.
+  No duplicate argument classes for core arguments, such as A0?A5 and AA.
+  The only exception is when there is a conjunction in the sentence.
+  For example, [A0 I] [V left ] [A1 my pearls] [A2 to my daughter] and [A1 my gold] [A2 to my son].
+  Despite this exception, we treat it as a hard constraint because it almost always holds.
+  If there is an R-arg argument, then there has to be an arg argument.
+  That is, if an argument is a reference to some other argument arg, then this referenced argument must exist in the sentence.
+  This constraint is directly derived from the definition of R-arg arguments.
+  If there is a C-arg argument, then there has to be an arg argument; in addition, the C-arg argument must occur after arg.
+  This is stricter than the previous rule because the order of appearance also needs to be considered.
+  Similarly, this constraint is directly deriv

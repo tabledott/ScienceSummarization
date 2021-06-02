@@ -1,0 +1,10 @@
+output unit representing the desired response has a larger activation than any other output unit.
+  262 Each context is translated into a bit-vector.
+  As with the content vector approach, suffixes are removed to con- flate related word forms to a common stem, and stop- words and punctuation axe removed.
+  Each concept hat appears at least twice in the entire training set is as- signed to a bit-vector position.
+  The resulting vector has ones in positions corresponding to concepts in the con- text and zeros otherwise.
+  This procedure creates vectors with more than 4000 positions.
+  The vectors are, how- ever, extremely sparse; on average they contain slightly more than 17 concepts.
+  Networks are trained until the output of the unit cor- responding to the desired response is greater than the output of any other unit for every training example.
+  For testing, the classification determined by the network is given by the unit with the largest output.
+  Weights in a neural network link vector may be either posit

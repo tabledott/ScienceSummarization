@@ -1,0 +1,10 @@
+ext (global or local) and topics for all the words in the collection except for the considered word at position i in document d; y is the vector of sentiment ratings.
+    The first factor &#951;d,i v,r,z is responsible for modeling co-occurrences on the window and document level and coherence of the topics.
+    This factor is proportional to the conditional distribution used in the Gibbs sampler of the MG-LDA model (Titov and McDonald, 2008).
+    The last factor quantifies the influence of the assignment of the word (d, i) on the probability of the sentiment ratings.
+    It appears only if ratings are known (observable) and equals: where the probability distribution is computed as defined in expression (1), yda is the rating for the ath aspect of review d.
+  
+  
+    In this section we present qualitative and quantitative experiments.
+    For the qualitative analysis we show that topics inferred by the MAS model correspond directly to the associated aspects.
+    For the quantitative analysis we show that the M

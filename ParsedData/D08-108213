@@ -1,0 +1,9 @@
+nce.
+    Therefore model parameters can be directly estimated from the training corpus by counting.
+    However, in our task, the correct correspondence between NL words and MR structures is unknown.
+    Many possible derivations could reach the same NL-MR pair, where each such derivation forms a hybrid tree.
+    The hybrid tree is constructed using hidden variables and estimated from the training set.
+    An efficient inside-outside style algorithm can be used for model estimation, similar to that used in (Yamada and Knight, 2001), as discussed next.
+    In this section, we discuss how to estimate the emission and pattern parameters with the Expectation Maximization (EM) algorithm (Dempster et al., 1977), by using an inside-outside (Baker, 1979) dynamic programming approach.
+    Denote ni &#8801; hmi, wii as the i-th training instance, where mi and wi are the MR structure and the NL sentence of the i-th instance respectively.
+    We also denote nv &#8801; hmv, wvi as an aligned pair of MR substructure and co

@@ -1,0 +1,7 @@
+n becomes worse with resource-poor source languages without enough Treebank data to train a high-accuracy parser.
+    One obvious solution to this problem is to take as input k-best parses, instead of a single tree.
+    This kbest list postpones some disambiguation to the decoder, which may recover from parsing errors by getting a better translation from a non 1-best parse.
+    However, a k-best list, with its limited scope, often has too few variations and too many redundancies; for example, a 50-best list typically encodes a combination of 5 or 6 binary ambiguities (since 25 &lt; 50 &lt; 26), and many subtrees are repeated across different parses (Huang, 2008).
+    It is thus inefficient either to decode separately with each of these very similar trees.
+    Longer sentences will also aggravate this situation as the number of parses grows exponentially with the sentence length.
+    We instead propose a new approach, forest-based translation (Section 3), where the decoder translates a packed forest of exponen

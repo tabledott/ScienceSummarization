@@ -1,0 +1,6 @@
+ast many current probabilistic natural language models as R-type tree transducers.
+    In this section, we implement the translation model of (Yamada and Knight, 2001).
+    Their generative model provides a formula for P(Japanese string  |English tree), in terms of individual parameters, and their appendix gives special EM re-estimation formulae for maximizing the product of these conditional probabilities across the whole tree/string corpus.
+    We now build a trainable xRS tree-to-string transducer that embodies the same P(Japanese string  |English tree).
+    First, we need start productions like these, where q is the start state: - q x:S &#8594; q.TOP.S x - q x:VP &#8594; q.TOP.VP x These set up states like q.TOP.S, which means &#8220;translate this tree, whose root is S.&#8221; Then every q.parent.child pair gets its own set ofthree insert-function-wordproductions, e.g.
+    : - q.TOP.S x &#8594; i x, r x - q.TOP.S x &#8594; r x, i x - q.TOP.S x &#8594; r x - q.NP.NN x &#8594; i x, r x - q.NP.NN x &#8594; 

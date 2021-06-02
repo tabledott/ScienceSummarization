@@ -1,0 +1,7 @@
+dman (1996) and Matsuzaki et al. (2005).
+    Note that contrary to the original labelled recall algorithm, which maximizes the number of correct symbols, this tree only contains rules allowed by the grammar.
+    As a result, the percentage of complete matches with the max-rule parser is typically higher than with the Viterbi parser.
+    (37.5% vs. 35.8% for our best grammar).
+    These posterior rule probabilities are still given by (1), but, since the structure of the tree is no longer known, we must sum over it when computing the inside and outside probabilities: For efficiency reasons, we use a coarse-to-fine pruning scheme like that of Caraballo and Charniak (1998).
+    For a given sentence, we first run the inside-outside algorithm using the baseline (unannotated) grammar, nificantly, while preserving the accuracy and enabling us to do more SM cycles.
+    Parameter smoothing leads to even better accuracy for grammars with high complexity. producing a packed forest representation of the posterior symbol p

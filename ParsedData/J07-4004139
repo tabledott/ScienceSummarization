@@ -1,0 +1,8 @@
+Statistical Parsing in supertagger accuracy by roughly one half.
+    Future work will also look at maintaing the POS tag ambiguity through to the parsing stage.
+    Currently we do not use the probabilities assigned to the lexical categories by the supertagger as part of the parse selection process.
+    These scores could be incorporated as real-valued features, or as auxiliary functions, as in Johnson and Riezler (2000).
+    We would also like to investigate using the generative model of Hockenmaier and Steedman (2002b) in a similar way.
+    Using a generative model&#8217;s score as a feature in a discriminative framework has been beneficial for reranking approaches (Collins and Koo 2005).
+    Because the generative model uses local features similar to those in our log-linear models, it could be incorporated into the estimation and decoding processes without the need for reranking.
+    One way of improving the accuracy of a supertagger is to use the parser to provide large amounts of additional training data

@@ -1,0 +1,11 @@
+e.
+    Finally, to scale up our system, we give a combination of pruning techniques that allows us to sum ITG alignments two orders of magnitude faster than naive inside-outside parsing.
+    All in all, our discriminatively trained, block ITG models produce alignments which exhibit the best AER on the NIST 2002 Chinese-English alignment data set.
+    Furthermore, they result in a 1.1 BLEU-point improvement over GIZA++ alignments in an end-to-end Hiero (Chiang, 2007) machine translation system.
+  
+  
+    In order to structurally restrict attention to reasonable alignments, word alignment models must constrain the set of alignments considered.
+    In this section, we discuss and compare alignment families used to train our discriminative models.
+    Initially, as in Taskar et al. (2005) and Moore et al.
+    (2006), we assume the score a of a potential alignment a) decomposes as where sij are word-to-word potentials and siE and sEj represent English null and foreign null potentials, respectively.
+    We evaluate

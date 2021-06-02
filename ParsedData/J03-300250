@@ -1,0 +1,6 @@
+oric process in the general case.
+    Example of LSS subtraction.
+    We arrived at an algorithmically simple solution that avoids this problem but is still based on the idea of language-specific substrings (LSSs).
+    The idea is to identify a set of language-specific URL substrings that pertain to the two languages of interest, (e.g., based on language names, countries, character codeset labels, abbreviations, etc.).
+    For example, a set of LSSs for English-Arabic might be as follows (those containing numerals correspond to character code sets): 1256, 437, 864, 8859-1, 8859-6, a, ar, ara, arab, arabic, cp1256, cp437, cp864, e, en, eng, english, gb, iso, iso-8859-1, iso-8859-6, latin, latin-1, latin1, uk, us, usa For each URL, we form a &#8220;handle&#8221; by subtracting any substrings that match (insensitive to case) any item on the LSS pattern list.
+    The subtraction process is implemented reasonably efficiently: If there are p patterns with maximum length l, and the URL&#8217;s length in characters i

@@ -1,0 +1,9 @@
+ of the possible alignments flag blocks of ambiguous or idiomatic (or just difficult) phrase level alignments.
+    These many-to-many alignments cannot be modelled with our many-to-one setup.
+    However, a number of possibles flag oneto-one or many-to-one aligments: for this experiment we used these possibles in training to investigate their effect on recall.
+    Using these additional alignments our refined precision decreased from 95.7 to 93.5, while recall increased from 89.2 to 92.4.
+    This resulted in an overall decrease in AER to 6.99.
+    We found no benefit from using many-tomany possible alignments as they added a significant amount of noise to the data.
+    Previous work (Taskar et al., 2005) has demonstrated that by including the output of Model 4 as a feature, it is possible to achieve a significant decrease in AER.
+    We trained Model 4 in both directions on the two language pairs.
+    We added two indicator features (one for each direction) to our CRF which were active if a given word pair w

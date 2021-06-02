@@ -1,0 +1,8 @@
+ase.
+    The first problem of interest is finding the highest weighted tree for a given input sentence x McDonald et al. (2005b) showed that this can be solved in O(n2) for unlabeled parsing using the Chu-Liu-Edmonds algorithm for standard digraphs (Chu and Liu, 1965; Edmonds, 1967).
+    Unlike most exact projective parsing algorithms, which use efficient bottom-up chart parsing algorithms, the ChuLiu-Edmonds algorithm is greedy in nature.
+    It begins by selecting the single best incoming dependency edge for each node j.
+    It then post-processes the resulting graph to eliminate cycles and then continues recursively until a spanning tree (or valid dependency graph) results (see McDonald et al. (2005b) for details).
+    The algorithm is trivially extended to the multidigraph case for use in labeled dependency parsing.
+    First we note that if the maximum directed spanning tree of a multi-digraph Gx contains any edge (i, j)k, then we must have k = k* = argmaxk wkij.
+    Otherwise we could simply substitute 

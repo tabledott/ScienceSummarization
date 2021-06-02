@@ -1,0 +1,9 @@
+is encountered.
+    The recursive instance of the parser is passed any predicted states at that position, processes the input up to the matching right parenthesis, and hands complete states back to the invoking instance.
+    This technique is efficient, as it never explicitly rejects parses not consistent with the bracketing.
+    It is also convenient, as it leaves the basic parser operations, including the left-to-right processing and the probabilistic computations, unchanged.
+    For example, prefix probabilities conditioned on partial bracketings could be computed easily this way.
+    Parsing bracketed inputs is described in more detail in Stolcke (1993), where it is also shown that bracketing gives the expected improved efficiency.
+    For example, the modified Earley parser processes fully bracketed inputs in linear time.
+    In many applications ungrammatical input has to be dealt with in some way.
+    Traditionally it has been seen as a drawback of top-down parsing algorithms such as Earley's that they

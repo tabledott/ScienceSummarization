@@ -1,0 +1,8 @@
+h more plausible than the others.
+			If we knew which deriva tion in each forest was the ?true?
+			derivation, then we could straightforwardly collect rule counts off those derivations.
+			On the other hand, if we had good rule probabilities, we could compute the most likely (Viterbi) derivations for each trainingexample.
+			This is a situation in which we can employ EM training, starting with uniform rule prob abilities.
+			For each training example, we would like to: (1) score each derivation ?i as a product of the probabilities of the rules it contains, (2) compute a conditional probability pi for each derivation ?i(conditioned on the observed training pair) by nor malizing those scores to add to 1, and (3) collect weighted counts for each rule in each ?i, where the weight is pi.
+			We can then normalize the counts to get refined probabilities, and iterate; the corpuslikelihood is guaranteed to improve with each it eration.
+			While it is infeasible to enumerate the millions of derivations in each forest, 

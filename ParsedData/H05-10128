@@ -1,0 +1,12 @@
+nly degrades performance to F=86.9.
+			3.2 Observation Model.
+			The observation model measures the linkage of the source and target using a set of feature functions defined on the words and their context.
+			In Figure 1, an event is a single link from an English word to an Arabic state and the event space is the sentence pair.
+			We use the maximum entropy formulation (e.g.
+			(Berger et al, 1996)), 1We are overloading the word ?state?
+			to mean Arabic word position.
+			f = ?(li) h = [ ti?11 , sK1 ] p(f |h) = 1Z(h) exp ? i ?i?i(h, f), where Z(h) is the normalizing constant, Z(h) = ? f exp ? i ?i?i(h, f).
+			and ?i(h, f) are binary valued feature functions.
+			The function ? selects the Arabic word at the position being linked or in the case of segmentation features,one of the segmentations of that position.
+			We re strict the history context to select from the current English word and words to the left as well as thecurrent word?s WordNet (Miller, 1990) synset as re quired by the features defined below.
+		

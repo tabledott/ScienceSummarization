@@ -1,0 +1,8 @@
+r alignment concept is shown for comparison purposes.
+    Held and Karp (1962) presents a DP approach to solve the TSP, an optimization problem that is defined as follows: Given are a set of cities {1, ... , J} and for each pair of cities j,j' the cost djj, &gt; 0 for traveling from city j to city j'.
+    We are looking for the shortest tour, starting and ending in city 1, that visits all cities in the set of cities exactly once.
+    We are using the notation C for the set of cities, since it corresponds to a coverage set of processed source positions in MT.
+    A straightforward way to find the shortest tour is by trying all possible permutations of the J cities.
+    The resulting algorithm has a complexity of O(J!).
+    DP can be used, however, to find the shortest tour in O(J2 &#183; 2J), which is a much smaller complexity for larger values of J.
+    The approach recursively evaluates the quantity D(C, j): D(C, j) := costs of the partial tour starting in city 1, ending in city j, and visiting all cities in

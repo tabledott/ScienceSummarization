@@ -1,0 +1,7 @@
+ nonrecursive wRTG is a straightforward translation of the above recursive definitions (using memoization to compute each result only once) and is O(|G|) in time and space.
+  
+  
+    Estimation-Maximization training (Dempster, Laird, and Rubin, 1977) works on the principle that the corpus likelihood can be maximized subject to some normalization constraint on the parameters by repeatedly (1) estimating the expectation of decisions taken for all possible ways of generating the training corpus given the current parameters, accumulating parameter counts, and (2) maximizing by assigning the counts to the parameters and renormalizing.
+    Each iteration is guaranteed to increase the likelihood until a local maximum is reached.
+    Algorithm 2 implements EM xR training, repeatedly computing inside-outside weights (using fixed transducer derivation wRTGs for each input/output tree pair) to efficiently sum each parameter contribution to likelihood over all derivations.
+    Each EM iteration takes time linear in the s

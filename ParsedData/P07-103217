@@ -1,0 +1,9 @@
+pBank the relation is between said and consider, whereas in CCGbank the relation is between said and would.
+    We fixed this problem by defining the head of would consider to be consider rather than would, by changing the annotation of all the relevant lexical categories in the CCG lexicon (mainly those creating aux relations).
+    There are more subject relations in CCGbank than DepBank.
+    In the previous example, CCGbank has a subject relation between it and consider, and also it and would, whereas DepBank only has the relation between it and consider.
+    In practice this means ignoring a number of the subject dependencies output by the CCG parser.
+    Another example where the dependencies differ is the treatment of relative pronouns.
+    For example, in Sen. Mitchell, who had proposed the streamlining, the subject of proposed is Mitchell in CCGbank but who in DepBank.
+    Again, we implemented this change by fixing the head annotation in the lexical categories which apply to relative pronouns.
+    To 

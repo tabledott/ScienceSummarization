@@ -1,0 +1,6 @@
+ distribution), the number of iterations required, the number of log-likelihood and gradient evaluations required (algorithms which use a line search may require several function evaluations per iteration), and the total elapsed time (in seconds).2 There are a few things to observe about these results.
+    First, while IIS converges in fewer steps the GIS, it takes substantially more time.
+    At least for this implementation, the additional bookkeeping overhead required by IIS more than cancels any improvements in speed offered by accelerated convergence.
+    This may be a misleading conclusion, however, since a more finely tuned implementation of IIS may well take much less time per iteration than the one used for these experiments.
+    However, even if each iteration of IIS could be made as fast as an iteration of GIS (which seems unlikely), the benefits of IIS over GIS would in these cases be quite modest.
+    Second, note that for three of the four datasets, the KL divergence at convergence is roughly th

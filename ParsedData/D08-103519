@@ -1,0 +1,10 @@
+segment and for the segment boundaries.
+    The counts for &#966; are summed across every segment in the entire dataset, so shifting a boundary will affect the probability of every segment, not only the adjacent segments as before.
+    Thus, the factorization that enabled dynamic programming inference in Section 3.3 is no longer applicable.
+    Instead, we must resort to approximate inference.
+    Sampling-based inference is frequently used in related Bayesian models.
+    Such approaches build a stationary Markov chain by repeatedly sampling among the hidden variables in the model.
+    The most commonly-used sampling-based technique is Gibbs sampling, which iteratively samples from the conditional distribution of each hidden variable (Bishop, 2006).
+    However, Gibbs sampling is slow to converge to a stationary distribution when the hidden variables are tightly coupled.
+    This is the case in linear topic segmentation, due to the constraint that zt E {zt&#8722;1, zt&#8722;1 + 11 (see Section 3).
+    For thi

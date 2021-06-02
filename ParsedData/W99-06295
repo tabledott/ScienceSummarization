@@ -1,0 +1,12 @@
+reated with features as tests, and ordered according to the information gain of the features, as a heuristic approximation of the computationally more expensive IB1 variants.
+    For more references and information about these algorithms we refer to (Daelemans et al., 1998; Daelemans et al., 1999b).
+    For other memory-based approaches to parsing, see (Bod, 1992) and (Sekine, 1998).
+  
+  
+    In this section we describe the stages of the cascade.
+    The very first stage consists of a MemoryBased Part-of-Speech Tagger (MBT) for which we refer to (Daelemans et al., 1996).
+    The next three stages involve determining boundaries and labels of chunks.
+    Chunks are nonrecursive, non-overlapping constituent parts of sentences (see (Abney, 1991)).
+    First, we simultaneously chunk sentences into: NP-, VP: Prep-, ADJP- and APVP-chunks.
+    As these chunks are non-overlapping, no words can belong to more than one chunk, and thus no conflicts can arise.
+    Prep-chunks are the prepositional part of PPs, thus exclu

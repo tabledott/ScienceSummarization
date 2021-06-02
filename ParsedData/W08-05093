@@ -1,0 +1,10 @@
+s to collect the counts and normalizes them to produce updated models.
+    Child processes are then restarted for the new iteration.
+    The PGIZA++ does not limit the number of CPUs being used, whereas it needs to transfer (in some cases) large amounts of data between processes.
+    Therefore its performance also depends on the speed of the network infrastructure.
+    The MGIZA++ implementation, on the other hand, starts multiple threads on a common address space, and uses a mutual locking mechanism to synchronize the access to the memory.
+    Although MGIZA++ can only utilize a single multi-processor computer, which limits the number of CPUs it can use, it avoids the overhead of slow network I/O.
+    That makes it an equally efficient solution for many tasks.
+    The two versions of alignment tools are available online at http://www.cs.cmu.edu/&#732;qing/giza.
+    The paper will be organized as follows, section 2 provides the basic algorithm of GIZA++, and section 3 describes the PGIZA++ implementation.
+   

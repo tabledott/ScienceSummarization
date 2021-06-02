@@ -1,0 +1,8 @@
+to 0.02 and b to 0.1) Table 2 (left side) shows the performance of our model when using only one layer.
+    The layer composed of words co-occurring within a &#177;10-word window (10w), and representing wider, topical, information gives the highest scores on its own.
+    It is followed by the &#177;5 (5w) and &#177;1 (1w) word windows, which represent more immediate, local context.
+    Part-of-speech n-grams (pg) and word ngrams (ng), on their own, achieve lower scores, largely due to over-generalization and data sparseness, respectively.
+    The lowest-scoring single layer is the dependency layer (dp), with performance only slightly above the most-frequent-sense baseline (MFS).
+    Dependency information is very informative when present, but extremely sparse.
+    Table 2 (middle) also shows the results obtained when running the layered model with all but one of the layers as input.
+    We can use this information to determine the contribution of each layer by comparing to the combined model with all layers (

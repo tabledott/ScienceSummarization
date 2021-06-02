@@ -1,0 +1,14 @@
+ase, CHECKlNDEF requires 0(cen log n) time.
+    Step 3.
+    NWISE-CONSISTENCY requires at most 0(2d/2) time.
+    In this step, NWISE-CONSISTENCY is called at most (d/2) &#8212; 1 times.
+    Therefore, the overall complexity of step 3 is 0(2d/2).
+    Discussion.
+    While the worst case complexity of the entire algorithm is 0(2d), an exponential, it is significant that it often terminates before step 3, even when a large number of disjunctions are present in one of the descriptions.
+    Thus, in many practical cases the actual cost of the algorithm is bounded by a polynomial that is at most d2n log it.
+    Since d must be less than n, this complexity function is almost cubic.
+    Even when step 3 must be used, the number of remaining disjunctions is often much fewer than d/2, so the exponent is usually a small number.
+    The algorithm performs well in most cases, because the three steps are ordered in increasing complexity, and the number of disjunctions can only decrease during unification.
+  
+  
+    The alg

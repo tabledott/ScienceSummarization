@@ -1,0 +1,6 @@
+g to the same top classes start at the same node.
+    Each group is further split by the attribute, which provides less heterogeneous splitting (all verb, noun and description attributes are tried for each group and the one by which the current node can be split into the least heterogeneous set of subnodes is selected).
+    Branches that lead to empty subnodes (as a result of not having a matching training example for the given attribute value) are pruned- This process repeats in all the emerging subnodes, using the attribute values which correspond to the WordNet hierarchy, moving from its top to its leaves.
+    When splitting the set of training examples by the attribute A according to its values Avv, the emerging subsets contain those quadruples whose attribute A value is lower, in the WordNet hierarchy, i.e. belongs to the same class.
+    If some quadruples had the attribute value equal to the values of A, an additional subset is added but its further splitting by the same attribute is prohibited.
+    As 

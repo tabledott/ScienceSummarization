@@ -1,0 +1,8 @@
+ and next uses all subtrees from (a large subset of) these trees to compute the most probable parse trees.
+    Bod (2006) reports that U-DOP not only outperforms previous unsupervised parsers but that its performance is as good as a binarized supervised parser (i.e. a treebank PCFG) on the WSJ.
+    A possible drawback of U-DOP, however, is the statistical inconsistency of its estimator (Johnson 2002) which is inherited from the DOP1 model (Bod 1998).
+    That is, even with unlimited training data, U-DOP's estimator is not guaranteed to converge to the correct weight distribution.
+    Johnson (2002: 76) argues in favor of a maximum likelihood estimator for DOP which is statistically consistent.
+    As it happens, in Bod (2000) we already developed such a DOP model, termed ML-DOP, which reestimates the subtree probabilities by a maximum likelihood procedure based on Expectation-Maximization.
+    Although crossvalidation is needed to avoid overlearning, ML-DOP outperforms DOP1 on the OVIS corpus (Bod 2000).
+    

@@ -1,0 +1,9 @@
+fiers only feature, while Pass 5 removes the word inclusion constraint.
+    All in all, these two passes yield an improvement of 1.7 pairwise F1 points, due to recall improvements.
+    Table 2 shows that the word inclusion feature is more precise than compatible modifiers only, but the latter has better recall.
+    This pass relaxes the cluster head match heuristic by allowing the mention head to match any word in the cluster of the candidate antecedent.
+    For example, this heuristic matches the mention Sanders to a cluster containing the mentions {Sauls, the judge, Circuit Judge N. Sanders Sauls}.
+    To maintain high precision, this pass requires that both mention and antecedent be labeled as named entities and the types coincide.
+    Furthermore, this pass implements a conjunction of the above features with word inclusion and not i-within-i.
+    This pass yields less than 1 point improvement in most metrics.
+    With one exception (Pass 2), all the previous coreference models focus on nominal coreference

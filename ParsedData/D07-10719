@@ -1,0 +1,11 @@
+CCG parses for x under some CCG lexicon ?.
+			We will define f(x, y) ? Rd to be a d-dimensional feature?vector that represents a parse tree y pairedwith an input sentence x. In principle, f could include features that are sensitive to arbitrary sub structures within the pair (x, y).
+			We will define w ? Rd to be a parameter vector.
+			The optimal parse for a sentence x under parameters w and lexicon ? is then defined as y?(x) = arg max y?GEN(x;?)
+			w ? f(x, y) . Assuming sufficiently local features3 in f , search fory?
+			can be achieved using dynamic-programming style algorithms, typically with some form of beam search.4 Training a model of this form involves learning the parameters w and potentially also thelexicon ?.
+			This paper focuses on a method for learn ing a (w,?)
+			pair from a training set of sentences paired with lambda-calculus expressions.
+			2.4 Zettlemoyer and Collins 2005.
+			We now give a description of the approach of Zettle moyer and Collins (2005).
+			This method will form the basis f

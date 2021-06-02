@@ -1,0 +1,6 @@
+ The Inside probability is defined as e(s,t, X) = P(X Os) and the Outside probability is f(s,t, X) = P(S 3-1 X n W1 wt-1-1)&#8226; Note that while Baker and others have used these probabilites for inducing grammars, here they are used only for parsing.
+    Let us define a new function, g(s,t, X).
+    Now, the definition of a Labelled Recall Parse can be rewritten as Given the matrix g(s,t, X), it is a simple matter of dynamic programming to determine the parse that maximizes the Labelled Recall criterion.
+    Define loop over nonterminals X let max_g:=maximum of g(s,t,X) loop over r such that s &lt;= r &lt; t let best_split:= max of maxc [s ,r] + maxc [r+1, t] maxc[s, t] := max_g + best_split; It is clear that MAXC(1, n) contains the score of the best parse according to the Labelled Recall criterion.
+    This equation can be converted into the dynamic programming algorithm shown in Figure 1.
+    For a grammar with r rules and k nonterminals, the run time of this algorithm is 0(n3 kn2) since there are two laye

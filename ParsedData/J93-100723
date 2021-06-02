@@ -1,0 +1,10 @@
+ract more functional information.
+    Xtract now works in three stages.
+    The three-stage analysis is described in Sections 6, 7, and 8.
+    In the first stage, described in Section 6, Xtract uses straight statistical measures to retrieve from a corpus pairwise lexical relations whose common appearance within a single sentence are correlated.
+    A pair (or bigram) is retrieved if its frequency of occurrence is above a certain threshold and if the words are used in relatively rigid ways.
+    The output of stage one is then passed to both the second and third stage in parallel.
+    In the second stage, described in Section 7, Xtract uses the output bigrams to produce collocations involving more than two words (or n-grams).
+    It analyzes all sentences containing the bigram and the distribution of words and parts of speech for each position around the pair.
+    It retains words (or parts of speech) occupying a position with probability greater than a given threshold.
+    For example, the bigram &amp;quot;ave

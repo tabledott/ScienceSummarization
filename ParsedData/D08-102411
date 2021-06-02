@@ -1,0 +1,6 @@
+he upper left are not included (and would have no effect even if they were included).
+    The p = oo points in the lower-right are the negative examples: they are poor translations that are scored too high by the model, and the learning algorithm attempts to shift them to the left.
+    To perform the forest rescoring, we need to use several approximations, since an exact search for BLEU-optimal translations is NP-hard (Leusch et al., 2008).
+    For every derivation e in the forest, we calculate a vector c(e) of counts as in Section 2.2 except using unclipped counts of n-gram matches (Dreyer et al., 2007), that is, the number of matches for an ngram can be greater than the number of occurrences of the n-gram in any reference translation.
+    This can be done efficiently by calculating c for every hyperedge (rule application) in the forest: We keep track of n-grams using the same scheme used to incorporate an n-gram language model into the decoder (Wu, 1996; Chiang, 2007).
+    To find the best derivation in the

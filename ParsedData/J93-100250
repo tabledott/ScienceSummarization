@@ -1,0 +1,7 @@
+ompound with a maximum of 5 interactions and any of the 1430 analyses of a 9-word compound with around 13 interactions.
+    In general, resolution of the first indeterminacy in the input will rule out approximately half the potential analyses, resolution of the next, half of the remaining ones, and so on.
+    For 'worst case' CF ambiguities (with 0(n3) complexity) this approach to parse selection appears empirically to involve numbers of interactions that increase at little more than linear rate with respect to the length of the input.
+    It is possible to exploit this insight in two ways.
+    One method would be to compute all possible analyses represented as a (packed) parse forest and ask the user to select between competing subanalyses that have been incorporated into a successful analysis of the input.
+    In this way, only genuine global syntactic ambiguities would need to be considered by the user.
+    However, the disadvantage of this approach is that it relies on a prior (and perhaps CPU-intensive) 

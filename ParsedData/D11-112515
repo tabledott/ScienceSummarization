@@ -1,0 +1,7 @@
+two feature scenarios, and two MT models used for our experiments.
+    For each language pair and each MT model we used MERT, MIRA, and PRO to tune with a standard set of baseline features, and used the latter two methods to tune with an extended set of features.8 At the end of every experiment we used the final feature weights to decode a held-out test set and evaluated it with case-sensitive BLEU.
+    The results are in Table 1.
+    We used two systems, each based on a different MT model.
+    Our syntax-based system (hereafter, SBMT) follows the model of Galley et al. (2004).
+    Our 8MERT could not run to a satisfactory completion in any extended feature scenario; as implied in the synthetic data experiment of Section 3, the algorithm makes poor choices for its weights and this leads to low-quality k-best lists and dismal performance, near 0 BLEU in every iteration. phrase-based system (hereafter, PBMT) follows the model of Och and Ney (2004).
+    In both systems we learn alignments with GIZA++ (Och and Ne

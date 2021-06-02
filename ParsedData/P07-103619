@@ -1,0 +1,11 @@
+ed experiments, 1000 unlabeled examples are used.
+    We report token-based3 accuracy on 100 held-out examples (which do not overlap neither with the training nor with the unlabeled data).
+    We ran 5 experiments in each setting, randomly choosing the training set.
+    The results reported below are the averages over these 5 runs.
+    To verify our claims we implemented several baselines.
+    The first baseline is the supervised learning protocol denoted by sup.
+    The second baseline was a traditional top-1 Hard EM also known as truncated EM4 (denoted by H for Hard).
+    In the third baseline, denoted H&amp;W, we balanced the weight of the supervised and unsupervised models as described in line 9 of Figure 2.
+    We compare these baselines to our proposed protocol, H&amp;W&amp;C, where we added the constraints to guide the H&amp;W protocol.
+    We experimented with two flavors of the algorithm: the top-1 and the top-K version.
+    In the top-K version, the algorithm uses K-best predictions (K=50) for each 

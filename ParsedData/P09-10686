@@ -1,0 +1,11 @@
+nt fills the role of protagonist.
+    Chain learning and clustering is based only on the frequency with which two verbs share arguments, ignoring any features of the arguments themselves.
+    Take this example of an actual chain from an article in our training data.
+    Given this chain of five events, we want to choose other events most likely to occur in this scenario.
+    One of the top scoring event slots is (fly X).
+    Narrative chains incorrectly favor (fly X) because it is observed during training with all five event slots, although not frequently with any one of them.
+    An event slot like (charge X) is much more plausible, but is unfortunately scored lower by the model.
+    Representing the types of the arguments can help solve this problem.
+    Few types of arguments are shared between the chain and (fly X).
+    However, (charge X) shares many arguments with (accuse X), (search X) and (suspect X) (e.g., criminal and suspect).
+    Even more telling is that these arguments are jointly shared (the sa

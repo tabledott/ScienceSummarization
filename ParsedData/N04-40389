@@ -1,0 +1,9 @@
+ns within context.
+    Tag Set: The utilized tag set comprises the 24 collapsed tags available in the Arabic TreeBank distribution.
+    This collapsed tag set is a manually reduced form of the 135 morpho-syntactic tags created by AraMorph.
+    The tag set is as follows: CC, CD, CONJ+NEG PART, DT, FW, IN, JJ, NN, NNP, NNPS, NNS, NO FUNC, NUMERIC COMMA, PRP, PRP$, PUNC, RB, UH, VBD, VBN, VBP, WP, WRB .
+    In this task, we use a setup similar to that of (Kudo and Matsumato, 2000), where 9 types of chunked phrases are recognized using a phrase IOB tagging scheme; Inside I a phrase, Outside O a phrase, and Beginning B of a phrase.
+    Thus the task is a one of 19 classification task (since there are I and B tags for each chunk phrase type, and a single O tag).
+    The training data is derived from the Arabic TreeBank using the ChunkLink software.5.
+    ChunkLink flattens the tree to a sequence of base (non-recursive) phrase chunks with their IOB labels.
+    The following example illustrates the tagging scheme: In

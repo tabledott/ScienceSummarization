@@ -1,0 +1,6 @@
+, n2) since it is 0. n2=get next elem(L2); /*get the head element and move the pointer to the next element*/ Thus, we look for a node pair set Np ={(n1, n2)E NT1 x NT2 : p(n1) = p(n2)1, where p(n) returns the production rule associated with n. To efficiently build Np, we (i) extract the L1 and L2 lists of the production rules from T1 and T2, (ii) sort them in the alphanumeric order and (iii) scan them to find the node pairs (n1, n2) such that (p(n1) = p(n2)) E L1nL2.
+    Step (iii) may require only O(|NT1 |+ |NT2|) time, but, if p(n1) appears r1 times in T1 and p(n2) is repeated r2 times in T2, we need to consider r1 x r2 pairs.
+    The formal algorithm is given in Table 1.
+    Note that: (a) The list sorting can be done only once at the data preparation time (i.e. before training) in O(|NT1 |x log(|NT1|)).
+    (b) The algorithm shows that the worst case occurs when the parse trees are both generated using only one production rule, i.e. the two internal while cycles carry out |NT1|x|NT2 |iterations.
+    In co

@@ -1,0 +1,6 @@
+   In confusion network decoding, the words in all hypotheses are aligned against each other to form a graph with word alternatives (including nulls) for each alignment position.
+    Each aligned word is assigned a score relative to the votes or word confidence scores (Fiscus, 1997; Mangu et al., 2000) derived from the hypotheses.
+    The decoding is carried out by picking the words with the highest scores along the graph.
+    In speech recognition, this results in minimum expected word error rate (WER) hypothesis (Mangu et al., 2000) or equivalently minimum Bayes risk (MBR) under WER with uniform target sentence posterior distribution (Sim et al., 2007).
+    In machine translation, aligning hypotheses is more complicated compared to speech recognition since the target words do not necessarily appear in the same order.
+    So far, confusion networks have been applied in MT system combination using three different alignment procedures: WER (Bangalore et al., 2001), GIZA++ alignments (Matusov et al., 2006) and 

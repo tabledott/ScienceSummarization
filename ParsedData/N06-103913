@@ -1,0 +1,7 @@
+rtant than the others.
+    So we preserved the word order to take into account the location of each sentence.
+    First we computed a word vector from each article: where Vw(A) is a vector element of word w in article A, IDF(w) is the inverse document frequency of word w, and POS(w, A) is a list of w&#8217;s positions in the article. avgwords is the average number of words for all articles.
+    Then we calculated the cosine value of each pair of vectors: We computed the similarity of all possible pairs of articles from the same day, and selected the pairs whose similarity exceeded a certain threshold (0.65 in this experiment) to form a basic cluster.
+    After getting a set of basic clusters, we pass them to an existing statistical parser (Charniak, 2000) and rule-based tree normalizer to obtain a GLARF structure for each sentence in every article.
+    The current implementation of a GLARF converter gives about 75% F-score using parser output.
+    For the details of GLARF representation and its conversion, se

@@ -1,0 +1,13 @@
+or our experiments.
+    The literature omits one other baseline, which is EM with a 2-gram tag model.
+    Here we obtain 81.7% accuracy, which is better than the 3-gram model.
+    It seems that EM with a 3-gram tag model runs amok with its freedom.
+    For the rest of this paper, we will limit ourselves to a 2-gram tag model.
+  
+  
+    We analyze the tag sequence output produced by EM and try to see where EM goes wrong.
+    The overall POS tag distribution learnt by EM is relatively uniform, as noted by Johnson (2007), and it tends to assign equal number of tokens to each tag label whereas the real tag distribution is highly skewed.
+    The Bayesian methods overcome this effect by using priors which favor sparser distributions.
+    But it is not easy to model such priors into EM learning.
+    As a result, EM exploits a lot of rare tags (like FW = foreign word, or SYM = symbol) and assigns them to common word types (in, of, etc.).
+    We can compare the tag assignments from the gold tagging and the EM tagging 

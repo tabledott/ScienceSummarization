@@ -1,0 +1,9 @@
+e translation and alignment hypergraph, and is computed using the INSIDE algorithm.
+    The gradient with respect to a particular feature is the difference in this feature&#8217;s expected value in the translation and alignment hypergraphs, and can be computed using either INSIDEOUTSIDE or the expectation semiring and INSIDE.
+    Since a translation forest is generated as an intermediate step in generating an alignment forest (&#167;2) this computation is straightforward.
+    Since gradient-based optimization techniques may require thousands of evaluations to converge, the batch training pipeline is split into map and reduce components, facilitating distribution over very large clusters.
+    Briefly, the cdec is run as the map function, and sentence pairs are mapped over.
+    The reduce function aggregates the results and performs the optimization using standard algorithms, including LBFGS (Liu et al., 1989), RPROP (Riedmiller and Braun, 1993), and stochastic gradient descent.
+  
+  
+    Table 2 compares the p

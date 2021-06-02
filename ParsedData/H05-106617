@@ -1,0 +1,10 @@
+the correct tree.
+			This is closely related to the Hamming loss that is often used for sequences (Taskar et al, 2003).For arbitrary inputs, there are typically exponen tially many possible parses and thus exponentially many margin constraints in line 4 of Figure 4.
+			3.1 Single-best MIRA.
+			One solution for the exponential blow-up in number of trees is to relax the optimization by using only the single margin constraint for the tree with the highest score, s(x,y).
+			The resulting online update (to be inserted in Figure 4, line 4) would then be: min ? ?w(i+1) ? w(i) ? ?
+			s.t. s(xt,yt) ? s(xt,y?) ? L(yt,y?) where y?
+			= arg maxy?
+			s(xt,y?) McDonald et al (2005) used a similar update with k constraints for the k highest-scoring trees, and showed that small values of k are sufficient toachieve the best accuracy for these methods.
+			However, here we stay with a single best tree because k best extensions to the Chu-Liu-Edmonds algorithm are too inefficient (Hou, 1996).
+			This model is related to the aver

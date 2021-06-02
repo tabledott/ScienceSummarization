@@ -1,0 +1,8 @@
+
+    However, we are really interested in finding parse trees, not just the number of ambiguous interpretations.
+    We could extend the table lookup algorithm to find trees rather than ambiguity coefficients, by modifying the table to store trees instead of numbers.
+    For parsing purposes, Cati can be thought of as a pointer to the ith entry of the table.
+    So, for a sentence in grammar (5a), for example, the machine could count the number of occurrences of &amp;quot;and John&amp;quot; and then retrieve the table entry for that number. index trees [John and [John and John]]] The table would be more general if it did not specify the lexical items at the leaves.
+    Let us replace the table above with index trees and assume the machine can bind the x's to the appropriate lexical items.
+    There is a real problem with this table lookup machine.
+    The parse trees may not be exactly correct because the power series computation assumed that multiplication was associative, which is an appropriate assumption 

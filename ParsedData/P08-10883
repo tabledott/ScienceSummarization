@@ -1,0 +1,10 @@
+ance of the system, in English-Spanish induction with our best feature set, using corpora derived from topically similar but non-parallel sources, the system obtains 89.0% precision at 33% recall.
+  
+  
+    As input, we are given a monolingual corpus S (a sequence of word tokens) in a source language and a monolingual corpus T in a target language.
+    Let s = (s1, ... , snS) denote nS word types appearing in the source language, and t = (t1, ... , tnT) denote word types in the target language.
+    Based on S and T, our goal is to output a matching m between s and t. We represent m as a set of integer pairs so that (i, j) E m if and only if si is matched with tj.
+  
+  
+    We propose the following generative model over matchings m and word types (s, t), which we call matching canonical correlation analysis (MCCA).
+    First, we generate a matching m E M, where M is the set of matchings in which each word type is matched to at most one other word type.2 We take MATCHING-PRIOR to be uniform over M.3 Then, for e

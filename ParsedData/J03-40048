@@ -1,0 +1,5 @@
+lemmatizer (Minnen, Carroll, and Pearce 2001) reduces inflected verbs and nouns to their base forms.
+    It uses a set of finite-state rules expressing morphological regularities and subregularities, together with a list of exceptions for specific (irregular) word forms.
+    The parser uses a wide-coverage unification-based shallow grammar of English POS tags and punctuation (Briscoe and Carroll 1995) and performs disambiguation using a context-sensitive probabilistic model (Briscoe and Carroll 1993), recovering from extra-grammaticality by returning partial parses.
+    The output of the parser is a set of grammatical relations (Carroll, Briscoe, and Sanfilippo 1998) specifying the syntactic dependency between each head and its dependent(s), taken from the phrase structure tree that is returned from the disambiguation phase.
+    For selectional preference acquisition we applied the analysis system to the 90 million words of the written portion of the British National Corpus (BNC); the parser produced complete

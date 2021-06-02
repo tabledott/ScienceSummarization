@@ -1,0 +1,6 @@
+n class distribution, facilitating the further development of an interactive system, while retaining a single probability distribution that simplifies trie architecture and model combination.
+    Incremental learning essentially becomes the process of gradually shifting probability mass from questionable/uncertain to one of the primary categories.
+  
+  
+    The algorithm can be divided into five stages, which are summarized below.
+    Stage 0: build the initial training list of class representatives Stage 1: read the text and build the left and right morphological and context tries Stage 2: introduce the training information in the tries and re-estimate the distributions by bootstrapping Stage 3: identify and classify the named entities in the text using competing classifiers Stage 4: update the entity and context training space, using the new extracted information Stage 0: This stage is performed once for each language/task and consists of defining the classes and filling in the initial class seed data with 

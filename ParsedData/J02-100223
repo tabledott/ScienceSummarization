@@ -1,0 +1,7 @@
+i and j in the text and N represents the number of sentences in the text.
+    This approach clearly eliminates the asymmetry between the false positive and false negative penalties seen in the Pk metric.
+    It also catches false positives and false negatives within segments of length less than k. To understand the behavior of WindowDiff with respect to the other problems, consider again the examples in Figure 5.
+    This metric penalizes Algorithm A-4 (which contains both a false positive and a false negative) the most, assigning it a penalty of about 2k.
+    Algorithms A-0, A-1, and A-2 receive the same penalty (about k), and Algorithm A-3 receives the smallest penalty (2e, where e is the offset from the actual boundary, presumed to be much smaller than k).
+    Thus, although it makes the mistake of penalizing Algorithm A-1 as much as Algorithms A-0 and A-2, it correctly recognizes that the error made by Algorithm A-3 is a near miss and assigns it a smaller penalty than Algorithm A-1 or any of the others.
+ 

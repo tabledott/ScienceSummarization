@@ -1,0 +1,9 @@
+ 10 occurrences in the whole verb class) and thus the negative context of the class was also removed: BETTER SOLUTION, CONTRAST, PRESENTATION, PROBLEM (&#8722; in last column).
+    Again, the removal improved the performance of the Action feature.
+    The algorithm for determining agents and actions relies on finite-state patterns over part-of-speech (POS) tags.
+    Starting from each finite verb, the algorithm collects chains of auxiliaries belonging to the associated finite clause and thus determines the clause&#8217;s tense and voice.
+    Other finite verbs and commas are assumed to be clause boundaries.
+    Once the semantic verb is found, its stem is looked up in the action lexicon.
+    Negation is determined if one of 32 fixed negation words is present in a six-word window to the right of the finite verb.
+    As our classifier requires one unique value for each classified item for each feature, we had to choose one value for sentences containing more than one finite clause.
+    We return the following v

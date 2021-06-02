@@ -1,0 +1,9 @@
+ment (using t and t' to better recover a), grammar induction from bitext (using a to better recover t and t'), parser projection (using t' and a to better recover t), as well as full joint parsing (Smith and Smith, 2004; Burkett and Klein, 2008).
+    In this paper, we condition on the 1-best source tree t'.
+    As for the alignment a, our models either condition on the 1-best alignment or integrate the alignment out.
+    Our models are thus of the form p(t w, w', t', a) or, in the generative case, p(w, t, a w', t').
+    We intend to consider other formulations in future work.
+    So far, this is very similar to the monolingual parser adaptation scenario, but there are a few key differences.
+    Since the source and target sentences in the bitext are in different languages, there is no longer a trivial alignment between the words of the source and target trees.
+    Given word alignments, we could simply try to project dependency links in the source tree onto the target text.
+    A link-by-link projection, howe

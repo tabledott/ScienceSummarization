@@ -1,0 +1,7 @@
+Viterbi scores will be correct, but the propagation destroys the cubic time bound of the parser, since in effect each edge can be processed many times.
+    In order to ensure optimality, it is sufficient that, for any edge e, all edges f which are contained in a best parse of e get removed from the agenda before e itself does.
+    If we have an edge priority which ensures this ordering, we can avoid upward propagation entirely (and omit the data structures involved in it) and still be sure that each edge leaves the agenda scored correctly.
+    If the grammar happens to be in CNF, one way to do this is to give shorter spans higher priority than longer ones; this priority essentially gives the CKY algorithm.
+    Formally, assume we have a PCFG G and a sentence s = 0wn (we place indices as fenceposts between words).
+    An inside parse of an edge e = X:[i, j] is a derivation in G from X to iwj.
+    Let OG(e, s) denote the log-probability of a best inside parse of e (its Viterbi inside score).1 We will drop the G

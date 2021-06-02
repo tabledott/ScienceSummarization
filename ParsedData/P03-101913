@@ -1,0 +1,11 @@
+r.
+    This is done in the following way: we are given two word graphs w1 and w2 with start and end nodes (s1, g1) and (s2,g2), respectively.
+    First, we add an 2-transition (g1, s2) from the end node of the first graph w1 to the start node of the second graph w2 and annotate this edge with the probability of a monotone concatenation pm.
+    Second, we create a copy of each of the original word graphs w1 and w2.
+    Then, we add an 2-transition (g2, s1) from the end node of the copied second graph to the start node of the copied first graph.
+    This edge is annotated with the probability of a inverted concatenation 1 &#8212; pm.
+    Now, we have obtained two word graphs: one for a monotone and one for a inverted concatenation.
+    The final word graphs is constructed by merging the two start nodes and the two end nodes, respectively.
+    Let W(jl, jr) denote the word graph for the source sequence fjr jl .
+    This graph is constructed from the word graphs of all subsequences of (jl, jr).
+    Therefore, we 

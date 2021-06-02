@@ -1,0 +1,5 @@
+nd also ensures that the output sequences are validpermutations of input phrase sequences; we empha size again that the probability distribution induced over reordered phrase sequences is not degenerate.Our reordering models do resemble those of (Till mann, 2004; Tillmann and Zhang, 2005) in that we 167 treat the reordering as a sequence of jumps relativeto the original phrase sequence, and that the likelihood of the reordering is assigned through phrase pair specific parameterized models.
+			We note thatour implementation allows phrase reordering beyond simply a 1-phrase window, as was done by Till mann.
+			More importantly, our model implements a generative model of phrase reordering which can be incorporated directly into a generative model of theoverall translation process.
+			This allows us to per form ?embedded?
+			EM-style parameter estimation, in which the parameters of the phrase reordering model are estimated using statistics gathered under the complete model that will actually be used in translatio

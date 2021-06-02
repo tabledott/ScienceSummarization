@@ -1,0 +1,6 @@
+ulary, and having (word) arcs leaving that state weighted such that for each zal and corresponding arc al leaving s&#8222; the cost on al is the bigram cost of w,wi.
+    (Costs for unseen bigrams in such a scheme would typically be modeled with a special backoff state.)
+    In Section 6 we discuss other issues relating to how higher-order language models could be incorporated into the model.
+    As we have seen, the lexicon of basic words and stems is represented as a WFST; most arcs in this WFST represent mappings between hanzi and pronunciations, and are costless.
+    Each word is terminated by an arc that represents the transduction between c and the part of speech of that word, weighted with an estimated cost for that word.
+    The cost is computed as follows, where N is the corpus size and f is the frequency: Besides actual words from the base dictionary, the lexicon contains all hanzi in the Big 5 Chinese code,' with their pronunciation(s), plus entries for other characters that can be found in Chinese 

@@ -1,0 +1,8 @@
+of adjectives (a partition) according to the combined dissimilarity values computed in the previous stage.
+    We want to find a partition which is optimal, in the sense that adjectives with high dissimilarity are placed in different groups.
+    We use a non-hierarchical clustering algorithm, since such algorithms are in general stronger than hierarchical methods (Kaufman and Rousseeuw, 1990).
+    The number of clusters produced is an input parameter.
+    The algorithm uses the exchange method (Spath, 1985) since the more commonly used Kmeans method (Kaufman and Rousseeuw, 1990) is not applicable; the K-means method, like all centroid methods, requires the measure d between the clustered objects to be a distance; this means, among other conditions, that for any three objects x, y, and z the triangle inequality applies.
+    However, this inequality does not necessarily hold for our dissimilarity measure.
+    If the adjectives x and y were observed in the same minimal NP, their dissimilarity is quite large.
+   

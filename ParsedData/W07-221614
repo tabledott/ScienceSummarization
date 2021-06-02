@@ -1,0 +1,7 @@
+a result, in this work we use O(n3) as the runtime for computing Zx.
+    Since it takes O(|L|n2) to construct the matrix Q, the entire runtime to compute Zx is O(n3 + |L|n2).
+    Another important problem for various learning paradigms is to calculate the expected value of each edge for an input sentence x, where I((i, j)k, T) is an indicator function that is one when the edge (i, j)k is in the tree T. To calculate the expectation for the edge (i, j)k, we can simply eliminate all edges (i', j)k0 =&#65533; (i, j)k from Gx and calculate Zx.
+    Zx will now be equal to the sum of the weights of all trees that contain (i, j)k. A naive implementation to compute the expectation of all |L|n2 edges takes O(|L|n5 + |L|2n4), since calculating Zx takes O(n3 + |L|n2) for a single edge.
+    However, we can reduce this considerably by constructing Q a single time and only making modifications to it when necessary.
+    An algorithm is given in Figure 3.3 that has a runtime of O(n5 + |L|n2).
+    This algorithm works by first

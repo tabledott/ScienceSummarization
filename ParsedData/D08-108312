@@ -1,0 +1,8 @@
+ng procedure (&#167;3.2).
+    To assess the effect of compositional semantics in the learning-based methods, we also experiment with a simple classification approach that does not incorporate compositional semantics (&#167;3.1).
+    The details of these two approaches are elaborated in the following subsections.
+    Given an expression x consisting of n words xi, ..., xn, the task is to determine the polarity y E {positive, negative} of x.
+    In our simple binary classification approach, x is represented as a vector of features f(x), and the prediction y is given by argmaxyw&#183;f(x, y), where w is a vector of parameters learned from training data.
+    In our experiment, we use an online SVM algorithm called MIRA (Margin Infused Relaxed Algorithm) (Crammer and Singer, 2003)7 for training.
+    For each x, we encode the following features: a feature that indicates the dominant polarity of words in the given expression, without considering the effect of negators.
+    For SC-NEGEX, we count the number of conten

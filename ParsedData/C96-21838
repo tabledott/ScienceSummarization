@@ -1,0 +1,13 @@
+the chunks.
+  In this approach, we first tag each word with its part-of-speech.
+  Chunks are then identified nsing a FSG.
+  Each chunk is a word group consisting of a verb phrase or a noun phrase, with some attached modifiers.
+  The noun phrase recognizer also marks the number (singular/plural) of the phrase.
+  The verb phrase recognizer provides some information on tense, voice and aspect.
+  Chunks identified by this mechanism include phrases uch as the extent of Tory ~evolt and have recently bcen finalizcd.
+  The chunked sentences are then simplified using a set of ordered simplification rules.
+  The orderi~g of the rules is decided manually, to take care of more frequent ransformations first, and to avoid unproductive rule interaction.
+  An example rule that simplifies sentences with a relative pronoun is shown in (5).
+  (5) X:tiP, ReXPron Y, Z --* X:tiP Z. X:tiP Y.
+  The rule is interpreted as follows.
+  If a sentence starts with a noun phrase (X:tiP), and is followed by a phrase with a relative pronoun, 

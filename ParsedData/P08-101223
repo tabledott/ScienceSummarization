@@ -1,0 +1,9 @@
+e model trained on the target side of the training data, as well as word count, phrase count, and distortion penalty features.
+    Minimum Error Rate training (Och, 2003) over BLEU was used to optimize the weights for each of these models over the development test data.
+    We used the NIST 2002 evaluation datasets for tuning and evaluation; the 10-reference development set was used for minimum error rate training, and the 4-reference test set was used for evaluation.
+    We trained several phrasal translation systems, varying only the word alignment (or phrasal alignment) method.
+    Table 1 compares the four systems: the GIZA++ baseline, the ITG word-based model, the ITG multiword model using EM training, and the ITG multiword model using VB training.
+    ITG-mwm-VB is our best model.
+    We see an improvement of nearly 2 points dev set and nearly 1 point of improvement on the test set.
+    We also observe the consistent superiority of VB over EM.
+    The gain is especially large on the test data set, indic

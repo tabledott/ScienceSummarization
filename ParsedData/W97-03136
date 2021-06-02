@@ -1,0 +1,9 @@
+t the nouns most strongly associated with the category appear at the top.
+    5.
+    The top five nouns that are not already seed words are added to the seed word list dynamically.
+    We then go back to Step 1 and repeat the process.
+    This bootstrapping mechanism dynamically grows the seed word list so that each iteration produces a larger category context.
+    In our experiments, the top five nouns were added automatically without any human intervention, but this sometimes allows non-category words to dilute the growing seed word list.
+    A few inappropriate words are not likely to have much impact, but many inappropriate words or a few highly frequent words can weaken the feedback process.
+    One could have a person verify that each word belongs to the target category before adding it to the seed word list, but this would require human interaction at each iteration of the feedback cycle.
+    We decided to see how well the technique could work without this additional human interaction, but the potentia

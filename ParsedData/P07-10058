@@ -1,0 +1,7 @@
+een non-terminal symbols.
+    Hiero extracts the synchronous CFG rules automatically from a word-aligned parallel corpus.
+    To translate a source sentence, the goal is to find its most probable derivation using the extracted grammar rules.
+    Hiero uses a general log-linear model (Och and Ney, 2002) where the weight of a derivation D for a particular source sentence and its translation is where Oi is a feature function and Ai is the weight for feature Oi.
+    To ensure efficient decoding, the Oi are subject to certain locality restrictions.
+    Essentially, they should be defined as products of functions defined on isolated synchronous CGF rules; however, it is possible to extend the domain of locality of the features somewhat.
+    A n-gram language model adds a dependence on (n&#8722;1) neighboring target-side words (Wu, 1996; Chiang, 2007), making decoding much more difficult but still polynomial; in this paper, we add features that depend on the neighboring source-side words, which does not affect decod

@@ -1,0 +1,10 @@
+the algorithm considered here actually uses a blend of bottom-up and top-down processing, constructing left-dependencies bottom-up and rightdependencies top-down, in order to achieve incrementality.
+			For a similar but nondeterministic approach to depen dency parsing, see Obrebski (2003).
+			Parser configurations are represented by triples ?S, I, A?, where S is the stack (represented as a list), I is the list of (remaining) input tokens, and A is the (current) arc relation for the dependency graph.
+			Given an inputstring W , the parser is initialized to ?nil,W, ??
+			and termi nates when it reaches a configuration ?S,nil, A?
+			(for any list S and set of arcs A).
+			The input string W is accepted if the dependency graph D = (W,A) given at termination is well-formed; otherwise W is rejected.
+			The behavior of the parser is defined by the transitions defined in Figure 3 (where wi, wj and wk are arbitrary word tokens, and r and r?
+			are arbitrary dependency relations): 1.
+			The transition Left-Arc (LA) adds

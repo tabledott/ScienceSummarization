@@ -1,0 +1,8 @@
+and then use the predictions of that system as the disambiguation context.
+    The advantage of this approach is that unlike (Milne and Witten, 2008b) we use all the available mentions in the document, and unlike (Cucerzan, 2007) we reduce the amount of irrelevant titles in the disambiguation context by taking only the top-ranked disambiguation per mention.
+    Our global features are refinements of previously proposed semantic relatedness measures between Wikipedia titles.
+    We are aware of two previous methods for estimating the relatedness between two Wikipedia concepts: (Strube and Ponzetto, 2006), which uses category overlap, and (Milne and Witten, 2008a), which uses the incoming link structure.
+    Previous work experimented with two relatedness measures: NGD, and Specificity-weighted Cosine Similarity.
+    Consistent with previous work, we found NGD to be the better-performing of the two.
+    Thus we use only NGD along with a well-known Pontwise Mutual Information (PMI) relatedness measure.
+    Given

@@ -1,0 +1,10 @@
+ (Kok et al., 2007) provides implementations of existing algorithms for Markov logic.
+    In Section 5, we develop the first general-purpose unsupervised learning algorithm for Markov logic by extending the existing algorithms to handle hidden predicates.2 1Lowd &amp; Domingos showed that &#945; can be computed more efficiently, without explicitly approximating or storing the Hessian.
+    Readers are referred to their paper for details.
+    2Alchemy includes a discriminative EM algorithm, but it assumes that only a few values are missing, and cannot handle completely hidden predicates.
+    Kok &amp; Domingos (2007) applied Markov logic to relational clustering, but they used hard EM.
+  
+  
+    In this section, we present our MLN for joint unsupervised coreference resolution.
+    Our model deviates from Haghighi &amp; Klein&#8217;s (2007) in several important ways.
+    First, our MLN does not model saliences for proper nouns or nominals, as their influence is marginal compared to other features; for pronoun sa

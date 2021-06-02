@@ -1,0 +1,6 @@
+ document set.
+    We now outline the main steps of the algorithm, followed by the formulas used in these steps.
+    The formula used for scoring candidate patterns in step 3 is similar to that in (Riloff, 1996): where are documents where matched, and the support is computed as the sum of their relevance: Document relevance is computed as in (Yangarber et al., 2000) where is the set of accepted patterns that match ; this is a rough estimate of the likelihood of relevance of , based on the pattern accuracy measure.
+    Pattern accuracy, or precision, is given by the average relevance of the documents matched by : Equation 1 can therefore be written simply as: The two terms in Equation 5 capture the trade-off between precision and recall.
+    As mentioned in Section 2.1, the learner running in isolation will eventually acquire patterns that are too general for the scenario, which will cause it to assign positive relevance to non-relevant documents, and learn more irrelevant patterns.
+    From that point onward 

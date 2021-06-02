@@ -1,0 +1,12 @@
+ GC with s(x, c) = maxx??C [s(x, x?)
+			s(a(x?), x?)
+			+ s(C)] where a(v) is the predecessor of v in C and s(C) = Pv?C s(a(v), v) 5.
+			return GC Figure 3: Chu-Liu-Edmonds algorithm for finding maximum spanning trees in directed graphs.
+			2.2.1 Non-projective Trees To find the highest scoring non-projective tree we simply search the entire space of spanning trees with no restrictions.
+			Well-known algorithms exist for theless general case of finding spanning trees in undi rected graphs (Cormen et al, 1990).
+			Efficient algorithms for the directed case are less well known, but they exist.
+			We will use here the Chu-Liu-Edmonds algorithm (Chu and Liu, 1965;Edmonds, 1967), sketched in Figure 3 follow ing Leonidas (2003).
+			Informally, the algorithm has each vertex in the graph greedily select the incoming edge with highest weight.
+			If a tree results, it must be the maximum spanning tree.
+			If not, there must be a cycle.
+			The procedure identifies a cycle and contracts it into a single vertex and recalc

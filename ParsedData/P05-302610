@@ -1,0 +1,13 @@
+ score.
+    This removes the inherent bias for shorter hypotheses that is present in multiplicative cumulative scores.
+    The basic algorithm works well as long the original translations are reasonably word synchronous.
+    This rarely occurs, so several additional constraints are applied during hypothesis generation.
+    First, the decoder discards unused words in original systems that &#8220;linger&#8221; around too long.
+    Second, the decoder limits how far ahead it looks for an artificial alignment, to prevent incorrect long-range artificial alignments.
+    Finally, the decoder does not allow an artificial match between words that do not share the same part-of-speech.
+  
+  
+    We combined outputs of three Arabic-to-English machine translation systems on the 2003 TIDES Arabic test set.
+    The systems were AppTek&#8217;s rule based system, CMU&#8217;s EBMT system, and Systran&#8217;s web-based translation system.
+    We compare the results of MEMT to the individual online machine translation systems.
+ 

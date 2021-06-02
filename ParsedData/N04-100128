@@ -1,0 +1,6 @@
+ing whether a mention refers to a specific entity or a generic entity requires knowledge of substantially wider context than the window of 5 tokens we currently use in our mention detection systems.
+    One way we plan to improve performance for such cases is to separate the task into two parts: one in which the mention type and level are predicted, followed by a genericitypredicting model which uses long-range features, such as sentence or document level features.
+    Our entity tracking system currently cannot resolve the coreference of pronouns very accurately.
+    Although this is weighted lightly in ACE evaluation, good anaphora resolution can be very useful in many applications and we will continue exploring this task in the future.
+    The Arabic and Chinese EDT tasks were included in the ACE evaluation for the first time in 2003.
+    Unlike the English case, the systems had access to only a small amount of training data (60k words for Arabic and 90k characters for Chinese, in contrast with 340k words 

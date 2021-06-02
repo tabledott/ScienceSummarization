@@ -1,0 +1,8 @@
+ we implement a one-to-one aligner based on the epsilon scattering method (Black et al., 1998).
+    The method applies the EM algorithm to estimate the probability of mapping a letter l to a phoneme p, P(l, p).
+    The initial probability table starts by mapping all possible alignments between letters and phonemes for each word in the training data, introducing all possible null phoneme positions.
+    For example, the word/phoneme-sequence pair abode [ &#10053; b o d ] has five possible positions where a null phoneme can be added to make an alignment.
+    The training process uses the initial probability table P(l, p) to find the best possible alignments for each word using the Dynamic Time Warping (DTW) algorithm (Sankoff and Kruskal, 1999).
+    At each iteration, the probability table P(l, p) is re-calculated based on the best alignments found in that iteration.
+    Finding the best alignments and re-calculating the probability table continues iteratively until there is no change in the probability table.
+ 

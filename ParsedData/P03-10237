@@ -1,0 +1,7 @@
+e the structure of the model in details.
+    Consider an anaphor ana and its candidate set candidate_set, {C1, C2, ..., Ck}, where Cj is closer to ana than Ci if j &gt; i.
+    Suppose positive_set is the set of candidates that occur in the coreferential chain of ana, and negative_set is the set of candidates not in the chain, that is, negative_set = candidate_set - positive_set.
+    The set of training instances based on ana, inst_set, is defined as follows: From the above definition, an instance is formed by an anaphor, one positive candidate and one negative candidate.
+    For each instance, inst(ci, cj, ana), the candidate at the first position, Ci, is closer to the anaphor than the candidate at the second position, Cj.
+    A training instance inst(ci, cj , ana) is labeled as positive if Ci &#8712; positive-set and Cj &#8712; negative-set; or negative if Ci &#8712; negative-set and Cj &#8712; positiveset.
+    See the following example: Any design to link China's accession to the WTO with the missile tests1

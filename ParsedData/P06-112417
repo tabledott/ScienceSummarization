@@ -1,0 +1,6 @@
+ of seating arrangements S and parameters &#920;, and the overall predictive probability is obtained by averaging this with respect to the posterior over S and &#920; (second probability on right).
+    We approximate the integral with samples {S(i), &#920;(i)}Ii=1 drawn from p(S, &#920;|D): where the counts are obtained from the seating arrangement Su in the Chinese restaurant process corresponding to Gu.
+    We use Gibbs sampling to obtain the posterior samples {S, &#920;} (Neal, 1993).
+    Gibbs sampling keeps track of the current state of each variable of interest in the model, and iteratively resamples the state of each variable given the current states of all other variables.
+    It can be shown that the states of variables will converge to the required samples from the posterior distribution after a sufficient number of iterations.
+    Specifically for the hierarchical Pitman-Yor language model, the variables consist of, for each u and each word xul drawn from Gu, the index kul of the draw from G&#960;(

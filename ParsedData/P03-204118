@@ -1,0 +1,9 @@
+.
+    Although this brings the complexity up to O(n2), the real complication is that there can be many fits to (c1, c2).
+    There are still not too many elementary trees t1 and t2 rooted at c1 and c2; but each (t1, t2) pair may be used in many elementary tree pairs t, since there are exponentially many matchings of their frontier nodes.
+    Fortunately, most pairs of frontier nodes have low &#946; values that indicate that their subtrees cannot be aligned well; pairing such nodes in a matching would result in poor global probability.
+    This observation can be used to prune the space of matchings greatly.
+    &#8226; 1-best Alignment (if desired).
+    This is just like training, except that we use the Viterbi algorithm to find the single best derivation of the input tree pair.
+    This derivation can be regarded as the optimal syntactic alignment.7 We then extract the max-probability synchronous derivation and return the T2 that it derives.
+    This algorithm is essentially alignment to an unknown tree T2; 

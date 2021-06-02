@@ -1,0 +1,7 @@
+his retains the class-based flavor of the problem, without the knowledge limitations of the explicit classbased approaches.
+    Probably the closest to our work is a model proposed by Rooth et al. (1999), in which each class corresponds to a multinomial over relations and arguments and EM is used to learn the parameters of the model.
+    In contrast, we use a LinkLDA framework in which each relation is associated with a corresponding multinomial distribution over classes, and each argument is drawn from a class-specific distribution over words; LinkLDA captures co-occurrence of classes in the two arguments.
+    Additionally we perform full Bayesian inference using collapsed Gibbs sampling, in which parameters are integrated out (Griffiths and Steyvers, 2004).
+    Recently, Bergsma et. al.
+    (2008) proposed the first discriminative approach to selectional preferences.
+    Their insight that pseudo-negative examples could be used as training data allows the application of an SVM classifier, which makes use of

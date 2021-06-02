@@ -1,0 +1,10 @@
+present its segmentation and POS.
+    For example, the tag &#8220;b NN&#8221; indicates a character at the beginning of a noun.
+    Using this method, POS features are allowed to interact with segmentation.
+    Since tagging is restricted to characters, the search space is reduced to O((4T)'), and beam search decoding is effective with a small beam size.
+    However, the disadvantage of this model is the difficulty in incorporating whole word information into POS tagging.
+    For example, the standard &#8220;word + POS tag&#8221; feature is not explicitly applicable.
+    Shi and Wang (2007) introduced POS information to segmentation by reranking.
+    N-best segmentation outputs are passed to a separately-trained POS tagger, and the best output is selected using the overall POSsegmentation probability score.
+    In this system, the decoding for word segmentation and POS tagging are still performed separately, and exact inference for both is possible.
+    However, the interaction between POS and segmentation is

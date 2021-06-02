@@ -1,0 +1,9 @@
+punctuation &#8220;.&#8221;.
+    When transforming the sentence to SOV order, we need to move the object noun and the subtree rooted at it to the front of the head verb, but after the subject noun.
+    We can have a simple rule to achieve this.
+    However, in reality, there are many possible children for a verb.
+    These children have some relative ordering that is typically fixed for SOV languages.
+    In order to describe this kind of ordering, we propose precedence reordering rules based on a dependency parse tree.
+    All rules here are based English and Korean examples, but they also apply to other SOV languages, as we will show later empirically.
+    A precedence reordering rule is a mapping from T to a set of tuples {(L, W, O)}, where T is the part-of-speech (POS) tag of the head in a dependency parse tree node, L is a dependency label for a child node, W is a weight indicating the order of that child node and O is the type of order (either NORMAL or REVERSE).
+    The type of order is only used when 

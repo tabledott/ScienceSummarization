@@ -1,0 +1,13 @@
+, ek are entities and rj is the relation between them.
+    For example, TEXTRUNNER might extract the tuple (Edison, invented, light bulbs).
+    On our test corpus (a 9 million document subset of our full corpus), it took less than 68 CPU hours to process the 133 million sentences.
+    The process is easily parallelized, and took only 4 hours to run on our cluster.
+  
+  
+    While full parsing is too expensive to apply to the Web, we use a parser to generate training examples for extraction.
+    Using several heuristic constraints, we automatically label a set of parsed sentences as trustworthy or untrustworthy extractions (positive and negative examples, respectively).
+    The classifier is trained on these examples, using features such as the part of speech tags on the words in the relation.
+    The classifier is then able to decide whether a sequence of POS-tagged words is a correct extraction with high accuracy.
+  
+  
+    Because TEXTRUNNER has no pre-defined relations, it may extract many different string

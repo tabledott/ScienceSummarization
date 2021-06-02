@@ -1,0 +1,7 @@
+ting trick can be applied to infer monolingual hierarchical paraphrase pairs (or paraphrastic patterns).
+    However, the patterns are not the final output and are actually used as rules from a monolingual SCFG grammar in order to define an English-to-English translation model.
+    Features for each monolingual rule are estimated in terms of the features of the bilingual pairs that the rule was inferred from.
+    A sentential paraphrase can then be generated for any given sentence by using this model along with an n-gram language model and a regular SMT decoder to paraphrase (or monolingually translate) any sentence just as one would translate bilingually.
+    The primary advantage of this approach is the ability to produce good quality sentential paraphrases by leveraging the SMT machinery to address the noise issue.
+    However, although the decoder and the language model do serve to counter the noisy word alignment process, they do so only to a degree and not entirely.
+    Again, we must draw a connection 

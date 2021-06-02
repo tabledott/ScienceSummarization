@@ -1,0 +1,7 @@
+ For example, there are two ways to align the pair ( (L OW) &lt;-&gt; (r o o)): We then build a WFST directly from the symbolmapping probabilities: Our WFST has 99 states and 283 arcs.
+    We have also built models that allow individual English sounds to be &amp;quot;swallowed&amp;quot; (i.e., produce zero Japanese sounds).
+    However, these models are expensive to compute (many more alignments) and lead to a vast number of hypotheses during WFST composition.
+    Furthermore, in disallowing &amp;quot;swallowing,&amp;quot; we were able to automatically remove hundreds of potentially harmful pairs from our training set, e.g., ((B AA R B ER SH AA P) (b a a b a a)).
+    Because no alignments are possible, such pairs are skipped by the learning algorithm; cases like these must be solved by dictionary lookup anyway.
+    Only two pairs failed to align when we wished they had&#8212;both involved turning English Y UW into Japanese u, as in ((Y UW K AH L EY L IY) Cu kurere)).
+    Note also that our model translates ea

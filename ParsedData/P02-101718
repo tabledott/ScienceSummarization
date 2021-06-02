@@ -1,0 +1,8 @@
+onstituent classes, using a slightly more complex generative model in which the bracketing generates a labeling which then generates the constituents and contexts.
+    The set of labels for constituent spans and distituent spans are forced to be disjoint.
+    Intuitively, it seems that more classes should help, by allowing the system to distinguish different types of constituents and constituent contexts.
+    However, it seemed to slightly hurt parsing accuracy overall.
+    Figure 8 compares the performance for 2 versus 12 classes; in both cases, only one of the classes was allocated for distituents.
+    Overall F1 dropped very slightly with 12 classes, but the category recall numbers indicate that the errors shifted around substantially.
+    PP accuracy is lower, which is not surprising considering that PPs tend to appear rather optionally and in contexts in which other, easier categories also frequently appear.
+    On the other hand, embedded sentence recall is substantially higher, possibly because of more

@@ -1,0 +1,9 @@
+ive information about the customer who has the problem, specific symptoms of the problem, any actions take by the field engineer to try and correct the problem, and success or failure of such actions.
+    The goal of the text analysis is to automatically generate a data base of maintenance information that can be used to correlate customers to problems, problem types to machines, and so on.
+    The first step in building a domain model for maintenance reports is to build a semantic net-like representation of the type of machine involved.
+    The machine in the example text given below is the B4700.
+    The possible parts of a B4700 and the associated properties of these parts can be represented by an isa hierarchy and a haspart hierarchy.
+    These hierarchies are built using four basic predicates: system,isa,hasprop, haspart.
+    For example the system itself is indicated by system(b4700).
+    The isa predicate associates TYPES with components, such as isa(spindle&amp;quot;motor,motor).
+    Properties are as

@@ -1,0 +1,6 @@
+ the base parser.
+    This method of combining classifiers is sometimes referred to as classifier stacking.
+    The exact form of the guide features depend on properties of the base model and will be discussed in sections 3.2&#8211;3.3 below, but the overall scheme for the feature-based integration can be described as follows.
+    To train a guided version BC of base model B with guide model C and training set T, the guided model is trained, not on the original training set T, but on a version of T that has been parsed with the guide model C under a cross-validation scheme (to avoid overlap with training data for C).
+    This means that, for every sentence x E T, BC has access at training time to both the gold standard dependency graph Gx and the graph GCx predicted by C, and it is the latter that forms the basis for the additional guide features.
+    When parsing a new sentence x' with BC, x' is first parsed with model C (this time trained on the entire training set T) to derive GCx', so that the guide featu

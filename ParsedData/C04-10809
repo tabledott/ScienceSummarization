@@ -1,0 +1,7 @@
+pervised tagging methods, we implemented the HMM taggers described in Merialdo (1991) and Kupiec (1992), as well as the UTBL tagger described in Brill (1995).
+			We also implemented a version of the contextualized HMM using the type of word classes utilized in the Kupiec model.
+			The algorithms were trained and tested using version 3 of the Penn Treebank, using the training, development, and test split described in Collins (2002) and also employed by Toutanova et al (2003) in testing their supervised tagging algorithm.
+			Specifically, we allocated sections 00 18 for training, 19-21 for development, and 22-24 for testing.
+			To avoid the problem of unknown words, each learner was provided with a lexicon constructed from tagged versions of the full Treebank.
+			We did not begin with any estimates of the likelihoods of tags for words, but only the knowledge of what tags are possible for each word in the lexicon, i.e., something we could obtain from a manually-constructed dictionary.
+			4.2 The Effect of Lexico

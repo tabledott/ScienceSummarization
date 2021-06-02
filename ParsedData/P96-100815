@@ -1,0 +1,7 @@
+23 element output vector Y.
+    These vectors have the following interpretations: The 23 elements in vectors X and Y correspond to the 23 possible slots in the frame schema.
+    Each element in X can have one of five values, specifying the relationship between the filler of the corresponding slot in Mp and Ms: INITIAL - slot filled in Ms but not in Mp TACIT - slot filled in Mp but not in Ms REITERATE - slot filled in both MA and Ms; value the same CHANGE - slot filled in both Mp and Ms; value different IRRELEVANT - slot not filled in either Mp or Ms Output vector Y is constructed by directly copying all fields from input vector X except those labeled TACIT.
+    These direct copying operations are assigned probability 1.
+    For fields labeled TACIT, the corresponding field in Y is filled with either INHERITED or NOT-INHERITED.
+    The probability of each of these operations is determined by a statistical decision tree model.
+    The discourse model contains 23 such statistical decision trees, one for each slo

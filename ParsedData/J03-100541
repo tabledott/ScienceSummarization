@@ -1,0 +1,8 @@
+h S = {($, $, {0}, 0)}, where $ denotes the sentence start symbol for the immediate two predecessor words and {0} denotes the empty coverage set, in which no source position is covered yet.
+    For the initial search state, the position last covered is set to 0.
+    A set S of active hypotheses is expanded for each cardinality c using lexicon model, language model, and distortion model probabilities.
+    The newly generated hypotheses are added to the hypothesis set Snew; for hypotheses that are not distinguished according to our DP approach, only the best partial hypothesis is retained for further consideration.
+    This so-called recombination is implemented as a set of simple lookup and update operations on the set Snew of partial hypotheses.
+    During the partial hypothesis extensions, an anticipated pruning is carried out: Hypotheses are discarded before they are considered for recombination and are never added to Snew.
+    (The anticipated pruning is not shown in Table 4.
+    It is based on the pruning

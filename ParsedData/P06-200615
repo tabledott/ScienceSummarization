@@ -1,0 +1,10 @@
+ this genre.
+    We also catalogued incorrect PoS tags from WSJ parse failures and manually modified the tagger lexicon where appropriate.
+    These modifications mostly consisted of adjusting lexical probabilities of extant entries with highly-skewed distributions.
+    We also added some tags to extant entries for infrequent words.
+    These modifications took a further day.
+    The tag transition probabilities were not reestimated.
+    Thus, we have made no use of the PTB itself and only limited use of WSJ text.
+    This method of grammar and lexicon development incrementally improves the overall performance of the system averaged across all the datasets that it has been applied to.
+    It is very likely that retraining the PoS tagger on the WSJ and retraining the parser using PTB would yield a system which would perform more effectively on DepBank.
+    However, one of our goals is to demonstrate that an unlexicalized parser trained on a modest amount of annotated text from other sources, coupled to a tagge

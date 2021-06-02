@@ -1,0 +1,11 @@
+uage processing PCFGs.
+    In particular, we have found that it is more important to threshold productions than nonterminals.
+    That is, rather than just noticing that a particular nonterminal VP spanning the words &amp;quot;killed the rabbit&amp;quot; is very likely, we also note that the production VP -4 V NP (and the relevant spans) is likely.
+    Both the first and second pass parsing algorithms are simple variations on CKY parsing.
+    In the first pass, we now keep track of each production instance associated with a node, i.e.
+    A N no , computing the inside and outside probabilities of each.
+    The second pass requires more changes.
+    Let us denote the descendants of nonterminal X by X1...Xx.
+    In the second pass, for each production 21n this paper, we will assume that each second pass nonterminal can descend from at most one first pass nonterminal in each cell.
+    The grammars used here have this property.
+    If this assumption is violated, multiple-pass parsing is still possible, but some 

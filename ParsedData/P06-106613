@@ -1,0 +1,10 @@
+orithm is a bilingual corpus with high-precision word alignments.
+    We obtain the word alignments using the way of Koehn et al. (2005).
+    After running GIZA++ (Och and Ney, rows from the corners are their links.
+    Corner c1 is shared by block b1 and b2, which in turn are linked by the STRAIGHT links, bottomleft and topright of c1.
+    Similarly, block b3 and b4 are linked by the INVERTED links, topleft and bottomright of c2.
+    2000) in both directions, we apply the &#8220;growdiag-final&#8221; refinement rule on the intersection alignments for each sentence pair.
+    Before we introduce this algorithm, we introduce some formal definitions.
+    The first one is block which is a pair of source and target contiguous sequences of words This definition is similar to that of bilingual phrase except that there is no length limitation over block.
+    A reordering example is a triple of (o, b1, b2) where b1 and b2 are two neighbor blocks and o is the order between them.
+    We define each vertex of block as co

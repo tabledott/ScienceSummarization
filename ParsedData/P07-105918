@@ -1,0 +1,7 @@
+exing of fields, we adopted the settings that were reported to be optimal in Jijkoun and de Rijke (2005).
+    These settings comprise the use of 8 question-answer pair fields, and a weight vector h0.0, 1.0, 0.0, 0.0, 0.5, 0.5, 0.2, 0.3i for fields ordered as follows: (1) full FAQ document text, (2) question text, (3) answer text, (4) title text, (5)-(8) each of the above without stopwords.
+    The second field thus takes takes wh-words, which would typically be filtered out, into account.
+    All other fields are matched without stopwords, with higher weight assigned to document and question than to answer and title fields.
+    We did not use phrase-matching or stemming in our experiments, similar to Jijkoun and de Rijke (2005), who could not find positive effects for these features in their experiments.
+    Expansion terms are taken from those terms in the n-best translations of the query that have not been seen in the original query string.
+    For paraphrasing-based query expansion, a 50-best list of parap

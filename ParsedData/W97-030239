@@ -1,0 +1,8 @@
+resholding, the parser will fail to find any parse at all.
+    We dealt with these cases by restarting the parser with all thresholds lowered by a factor of 5, it,ffating this loosening until a parse could be found.
+    This is why for some tight thresholds, the parser may be slower than with looser thresholds: the sentence has to be parsed twice, once with tight thresholds, and once with loose ones.
+    Next, we needed to choose a measure of time.
+    There are two obvious measures: amount of work done by the parser, and elapsed time.
+    If we measure amount of work done by the parser in terms of the number of productions with non-zero probability examined by the parser, wehave a fairly implementation-independent, machine-independent measure of speed.
+    On the other hand, because we used many different thresholding algorithms, some with a fair amount of overhead, this measure seems inappropriate.
+    Multiple-pass parsing requires use of the outside algorithm; global thresholding uses its own dynamic prog

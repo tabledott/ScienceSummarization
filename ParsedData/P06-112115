@@ -1,0 +1,11 @@
+ursively, and extract new rules from each node at the frontier of the minimal rule rooted at n. Once all nodes of F have been processed, theor-dforest table contains a representation encod ing only valid derivations.
+			3 Probability models.
+			The overall goal of our translation system is to transform a given source-language sentence f into an appropriate translation e in the set E of all possible target-language sentences.
+			In a noisy-channel approach to SMT, we uses Bayes?
+			theorem and choose the English sentence e?
+			E that maximizes:4 e?
+			= argmax e?E { Pr(e) ? Pr(f |e) } (1) Pr(e) is our language model, and Pr(f |e) our translation model.
+			In a grammatical approach to MT, we hypothesize that syntactic information can help produce good translation, and thus introduce dependencies on target-language syntax trees.
+			The function to optimize becomes: e?
+			= argmax e?E { Pr(e) ? ?
+			pi??(e) Pr(f |pi) ?Pr(pi|e) } (2) ?(e) is the set of all English trees that yield thegiven sentence e. Estimating P

@@ -1,0 +1,10 @@
+ilingual resources.
+    As shown in Figure 1, the translation process in our system is carried out in two main steps.
+    Given a named entity in the source language, our translation algorithm first generates a ranked list of translation candidates using bilingual and monolingual resources, which we describe in the Section 3.
+    Then, the list of candidates is re-scored using different monolingual clues (Section 4).
+  
+  
+    Named entity phrases can be identified fairly accurately (e.g., Bikel et al. (1999) report an FMEASURE of 94.9%).
+    In addition to identifying phrase boundaries, named-entity identifiers also provide the category and sub-category of a phrase (e.g., ENTITY NAME, and PERSON).
+    Different types of named entities are translated differently and hence our candidate generator has a specialized module for each type.
+    Numerical and temporal expressions typically use a limited set of vocabulary words (e.g., names of months, days of the week, etc.) and can be translated fairly easily using 

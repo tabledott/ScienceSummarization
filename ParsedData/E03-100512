@@ -1,0 +1,6 @@
+hile Bod (2001) needed to use a very large sample from the WSJ subtrees to do this, Goodman's method can do the same job with a more compact grammar.
+    DOP1 has a serious bias: its subtree estimator provides more probability to nodes with more subtrees (Bonnema et al. 1999).
+    The amount of probability given to two different training nodes depends on how many subtrees they have, and, given that the number of subtrees is an exponential function, this means that some training nodes could easily get hundreds or thousands of times the weight of others, even if both occur exactly once.
+    Bonnema et al. (1999) show that as a consequence too much weight is given to larger subtrees, and that the parse accuracy of DOP1 deteriorates if (very) large subtrees are included.
+    Although this property may not be very harmful for small corpora with relatively small trees, such as the ATIS, Bonnema et al. give evidence that it leads to severe biases for larger corpora such as the WSJ.
+    There are several ways to fix 

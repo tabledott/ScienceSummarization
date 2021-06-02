@@ -1,0 +1,6 @@
+nfiguration (s1|s2|S, n|I, T, A), adds an arc from n to s2, pops n from input, pops s1 from the stack and moves it back to I, producing the configuration (s2|S, s1|I, T, Au{(n, r, s2)}).
+    Right3 in a configuration (s1|s2|s3|S, n|I, T, A), adds an arc from s3 to n and removes s3 from the stack, producing the configuration (s1|s2|S, n|I, T, Au{(s3, r, n)}).
+    Left3 in a configuration (s1|s2|s3|S, n|I, T, A), adds an arc from n to s3, pops n from input, pops s1 from the stack and moves it back to I, producing the configuration (s2|s3|S, s1|I, T, Au{(n, r, s3)}).
+    Extract in a configuration (s1|s2|S, n|I, T, A), move s2 from the stack to the temporary stack, then Shift, producing the configuration (n|s1|S, I, s2|T, A).
+    Insert in a configuration (S, I, s1|T, A), pops s1 from T and pushes it to the stack, producing the configuration (s1|S, I, T, A).
+    The actions Right2 and Left2 are sufficient to handle almost all cases of non-projectivity: for instance the training data for Czech contain 28081 non-p

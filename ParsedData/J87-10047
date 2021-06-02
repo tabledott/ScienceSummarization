@@ -1,0 +1,8 @@
+;quot;re n&amp;quot; indicate the action &amp;quot;reduce constituents on the stack using rule n&amp;quot;.
+    The entry &amp;quot;acc&amp;quot; stands for the action &amp;quot;accept&amp;quot;, and blank spaces represent &amp;quot;error&amp;quot;.
+    The goto table (the right part of the table) decides to what state the parser should go after a reduce action.
+    These operations shall become clear when we trace the algorithm with example sentences in section 4.
+    The exact definition and operation of the LR parser can be found in Aho and Ullman (1977).
+    We can see that there are two multiple entries in the action table; on the rows of state 11 and 12 at the column labeled &amp;quot;prep&amp;quot;.
+    Roughly speaking, this is the situation where the parser encounters a preposition of a PP right after a NP.
+    If this PP does not modify the NP, then the parser can go ahead to reduce the NP into a higher nonterminal such as PP or VP, using rule 6 or 7, respectively (re&amp; and re7 in the multiple en

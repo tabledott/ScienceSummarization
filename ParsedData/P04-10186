@@ -1,0 +1,12 @@
+ge (even for a document with a moderate number of mentions), it is difficult to estimate a distribution over leaves directly.
+    Instead, we choose to model the process from mentions to entities, or in other words, score paths from the root to leaves in the Bell tree.
+    A nice property of the Bell tree representation is that the number of linking or starting steps is the same for all the hypotheses.
+    This makes it easy to rank them using the &#8220;local&#8221; linking and starting probabilities as the number of factors is the same.
+    The Bell tree representation is also incremental in that mentions are added sequentially.
+    This makes it easy to design a decoder and search algorithm.
+  
+  
+    We use a binary conditional model to compute the probability that an active mention links with an infocus partial entity.
+    The conditions include all the partially-formed entities before, the focus entity index, and the active mention.
+    Formally, let be mentions in a document.
+    Mention index represen

@@ -1,0 +1,7 @@
+operties. maximum possible penalty for a false positive in A is less than k, and this number continues to decrease as Size(A) decreases.
+    When Size(A) &lt; k, the false positive penalty disappears, for the same reason that the false negative penalty disappears for smaller segments.
+    Again, fixing Problem 2 would go a long way toward eliminating this bias.
+    Thus, errors in larger-than-average segments increase the penalty slightly (for false positives) or not at all (for false negatives) as compared to average size segments, while errors in smaller-than-average segments decrease the penalty significantly for both types of error.
+    This means that as the variation of segment size increases, the metric becomes more lenient, since it severely underpenalizes errors in smaller segments, while not making up for this by overpenalizing errors in larger segments.
+    Reconsider the segmentation made by Algorithm A-0 in Figure 1.
+    In both cases of boundary assignment, Algorithm A-0 makes both a false posit

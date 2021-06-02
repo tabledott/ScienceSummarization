@@ -1,0 +1,11 @@
+of the data using the statistically consistent EM algorithm.
+  
+  
+    To compare UML-DOP to U-DOP, we started out with the WSJ10 corpus, which contains 7422 sentences &lt;_ 10 words after removing empty elements and punctuation.
+    We used the same evaluation metrics for unlabeled precision (UP) and unlabeled recall (UR) as defined in Klein (2005: 2122).
+    Klein's definitions differ slightly from the standard PARSEVAL metrics: multiplicity of brackets is ignored, brackets of span one are ignored and the bracket labels are ignored.
+    The two metrics of UP and UR are combined by the unlabeled f score F1 which is defined as the harmonic mean of UP and UR: F1 = 2*UP*UR/(UP+UR).
+    For the WSJ10, we obtained a binary tree set of 5.68 * 105 trees, by extracting the binary trees as described in section 5.
+    From this binary tree set we sampled 200,000 subtrees for each subtreedepth.
+    This resulted in a total set of roughly 1.7 * 106 subtrees that were reestimated by our maximum-likelihood procedure.
+    

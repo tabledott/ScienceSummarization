@@ -1,0 +1,6 @@
+ parallel to the three nodes BCD, node B backs off to nodes (EF), C backs off to (E), and D backs off to (F).
+    This can be seen as a generalization of the standard backoff equation.
+    In the two parents case, this becomes: where dN(f,f1,f2) is a standard discount (determining the smoothing method), pML is the maximum likelihood distribution, &#945;(f1, f2) are backoff weights, and g(f, f1, f2) is an arbitrary non-negative backofffunction of its three factor arguments.
+    Standard backoff occurs with g(f, f1, f2) = pBO(f|f1), but the GPB procedures can be obtained by using different g-functions.
+    For example, g(f, f1, f2) = pBO(f|f2) corresponds to a different backoff path, and parallel backoff is obtained by using an appropriate g (see below).
+    As long as g is non-negative, the backoff weights are defined as follows: This equation is non-standard only in the denominator, where one may no longer sum over the factors f only with counts greater than T. This is because g is not necessarily a distribut

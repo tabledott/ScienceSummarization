@@ -1,0 +1,7 @@
+niak&#8217;s model does not represent this information explicitly but instead learns it implicitly through rule probabilities.
+    For example, for an NP PP PP sequence, the preference for a right-branching structure is encoded through a much higher probability for the rule NP &#8594; NP PP than for the rule NP &#8594; NP PP PP.
+    (Note that conditioning on the rule&#8217;s parent is needed to disallow the structure [NP [NP PP] PP]; see Johnson [1997] for further discussion.)
+    This strategy does not encode all of the information in the distance measure.
+    The distance measure effectively penalizes rules NP &#8594; NPB NP PP where the middle NP contains a verb: In this case the PP modification results in a dependency that crosses a verb.
+    Charniak&#8217;s model is unable to distinguish cases in which the middle NP contains a verb (i.e., the PP modification crosses a verb) from those in which it does not.
+    We now make a detailed comparison of our models to the history-based models of Ratnaparkhi (1

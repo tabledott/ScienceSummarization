@@ -1,0 +1,9 @@
+m to one; i.e., there are three free parameters.
+    These weights can balance the total confidence between the number of systems generating the hypothesis (votes), and the sum, maximum and average of the system confidences.
+    The second feature in the GLM is the sentence posterior estimated from the -best list.
+    A sentence posterior may simply be estimated from an -best list by scaling the system scores for all hypotheses to sum to one.
+    When combining several systems based on different translation paradigms and feature sets, the system scores may not be comparable.
+    The total scores may be scaled to obtain more consistent sentence posteriors.
+    The scaled posterior estimated from an -best list may be written as where is the scaling factor for system and is the log-score system assigns to hypothesis .
+    The scaling factors may be tuned to optimize the evaluation metric in the same fashion as the logit model weights in Section 3.1.
+    Equation 4 may be used to assign total posteriors for each 

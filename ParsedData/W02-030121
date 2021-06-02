@@ -1,0 +1,8 @@
+ we compared the change in the training time and the accuracy with and without the class splitting.
+    We used a feature set {hw, pre, suf, sub, posi[&#8722;2,&#183;&#183;&#183;,2],pc[&#8722;2,&#8722;1]} and the inner product kernel.9 The training time was measured on a machine with four 700MHz PentiumIIIs and 16GB RAM.
+    Table 2 shows the results of the experiments.
+    Figure 1 shows the results graphically.
+    We can see that without splitting we soon suffer from super-linearity of the SVM training, while with splitting we can handle the training with over 100,000 samples in a reasonable time.
+    It is very important that the splitting technique does not sacrifice the accuracy for speed, rather improves the accuracy.
+    In this experiment, we see the effect of the word cache feature and the HMM state feature described in Section 3.4.
+    The effect is assessed by the accuracy gain observed by adding each feature set to a base feature set and the accuracy degradation observed by subtracting it from a 

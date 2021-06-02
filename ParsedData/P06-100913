@@ -1,0 +1,8 @@
+&#8217; POS tags will allow simple modelling of such effects.
+    POS can also be useful for less closely related language pairs, such as English and Japanese where English determiners are never aligned; nor are Japanese case markers.
+    For our French-English language pair we POS tagged the source and target sentences with TreeTagger.2 We created indicator features over the POS tags of each candidate source and target word pair, as well as over the source word and target POS (and vice-versa).
+    As we didn&#8217;t have access to a Romanian POS tagger, these features were not used for the Romanian-English language pair.
+    Bilingual dictionary Dictionaries are another source of information for word alignment.
+    We use a single indicator feature which detects when the source and target words appear in an entry of the dictionary.
+    For the English-French dictionary we used FreeDict,3 which contains 8,799 English words.
+    For Romanian-English we used a dictionary compiled by Rada Mihalcea,4 which contai

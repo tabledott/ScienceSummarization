@@ -1,0 +1,10 @@
+tags in our data tend to occur relative to the middle word of the tweet.
+    We see that Twitter-specific tags have strong positional preferences: at-mentions (@) and Twitter discourse markers (&#8212;) tend to occur towards the beginning of messages, whereas URLs (U), emoticons (E), and categorizing hashtags (#) tend to occur near the end.
+  
+  
+    Our tagger is a conditional random field (CRF; Lafferty et al., 2001), enabling the incorporation of arbitrary local features in a log-linear model.
+    Our base features include: a feature for each word type, a set of features that check whether the word contains digits or hyphens, suffix features up to length 3, and features looking at capitalization patterns in the word.
+    We then added features that leverage domainspecific properties of our data, unlabeled in-domain data, and external linguistic resources.
+    TWOxTH: Twitter orthography.
+    We have features for several regular expression-style rules that detect at-mentions, hashtags, and URLs.
+    NAMES: 

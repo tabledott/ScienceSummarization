@@ -1,0 +1,10 @@
+bility and the system incorrectly suggests replacing on with in.
+    An example for insertion is seen in Please send me the letter back writing what happened.
+    Here, the bigram back to causes the bad suggestion of inserting to after back.
+    Since the language model is generally more accurate than the error-specific classifier, the meta-classifier tends to trust its score more than that of the classifier.
+    As a result we see this kind of error quite frequently.
+    Another common error class is the opposite situation: the language model is on the right track, but the classifier makes a wrong assessment.
+    Consider Whatever direction my leg fought to stretch, with the suggested insertion of on before my leg.
+    Here Log (P(original)) _ -31.5 and Log (P(suggestion)) _ -32.1, a slight preference for the original string.
+    The error-specific classifier, however, assigns a probability of 0.65 for a preposition to be present, and 0.80 for that preposition to be on.
+    The contextual features that are i

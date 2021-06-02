@@ -1,0 +1,7 @@
+all parts of speech.
+    Below we list two lexicalized transformations that were learned, training once again on the Wall Street Journal.
+    Change the tag: The Penn Treebank tagging style manual specifies that in the collocation as ...as, the first as is tagged as an adverb and the second is tagged as a preposition.
+    Since as is most frequently tagged as a preposition in the training corpus, the initial-state tagger will mistag the phrase as tall as as: The first lexicalized transformation corrects this mistagging.
+    Note that a bigram tagger trained on our training set would not correctly tag the first occurrence of as.
+    Although adverbs are more likely than prepositions to follow some verb form tags, the fact that P(as I IN) is much greater than P(as I RB), and P(JJ I IN) is much greater than P(JJ RB) lead to as being incorrectly tagged as a preposition by a stochastic tagger.
+    A trigram tagger will correctly tag this collocation in some instances, due to the fact that P(IN I RB JJ) is greater 

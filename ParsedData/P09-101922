@@ -1,0 +1,8 @@
+port results on nist03 set and present three systems for each language pair: phrase-based (pb), hierarchical (hier), and SAMT; Lattice MBR is done for the phrase-based system while HGMBR is used for the other two.
+    We select the MBR scaling factor (Tromble et al., 2008) based on the development set; it is set to 0.1, 0.01, 0.5, 0.2, 0.5 and 1.0 for the aren-phrase, aren-hier, aren-samt, zhen-phrase zhen-hier and zhen-samt systems respectively.
+    For the multi-language case, we train phrase-based systems and perform lattice MBR for all language pairs.
+    We use a scaling factor of 0.7 for all pairs.
+    Additional gains can be obtained by tuning this factor; however, we do not explore that dimension in this paper.
+    In all cases, we prune the lattices/hypergraphs to a density of 30 using forward-backward pruning (Sixtus and Ortmanns, 1999).
+    We consider a BLEU score difference to be a) gain if is at least 0.2 points, b) drop if it is at most -0.2 points, and c) no change otherwise.
+    The results a

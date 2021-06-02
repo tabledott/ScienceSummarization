@@ -1,0 +1,8 @@
+structions.
+    MALT and MST deal with non-projectivity.
+    For the non-directional parser, we projectivize the training set prior to training using the procedure described in (Carreras, 2007).
+    Results are presented in Table 3.
+    While all models suffer from the move to the smaller dataset and the more challenging annotation scheme, the overall story remains the same: the nondirectional parser is better than MALT but not as good as MST in terms of parent-accuracy and root prediction, and is better than both MALT and MST in terms of producing complete correct parses.
+    That the non-directional parser has lower accuracy but more exact matches than the MST parser can be explained by it being a deterministic parser, and hence still vulnerable to error propagation: once it erred once, it is likely to do so again, resulting in low accuracies for some sentences.
+    However, due to the easy-first policy, it manages to parse many sentences without a single error, which lead to higher exact-match scores.
+    

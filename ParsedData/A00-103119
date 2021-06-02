@@ -1,0 +1,11 @@
+d averaging of results while Ratnaparkhi only makes one test run.
+    The accuracy for known tokens is significantly higher than for unknown tokens.
+    For the German newspaper data, results are 8.7% better when the word was seen before and therefore is in the lexicon, than when it was not seen before (97.7% vs. 89.0%).
+    Accuracy for known tokens is high even with very small amounts of training data.
+    As few as 1000 tokens are sufficient to achieve 95%-96% accuracy for them.
+    It is important for the tagger to have seen a word at least once during training.
+    Stochastic taggers assign probabilities to tags.
+    We exploit the probabilities to determine reliability of assignments.
+    For a subset that is determined during processing by the tagger we achieve accuracy rates of over 99%.
+    The accuracy of the complement set is much lower.
+    This information can, e.g., be exploited in an annotation project to give an additional treatment to the unreliable assignments, or to pass selected ambiguitie

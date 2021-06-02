@@ -1,0 +1,11 @@
+versely proportional to the number of occurrences of that particular edge in the scene graph.
+    The algorithm then adds the most discriminating edge (i.e., the one removing most distractors) first.
+    If there are various equally distinguishing edges, the cheapest one is added.
+    This process is then repeated until a distinguishing graph is found.
+    In fact, such a greedy strategy could be used to produce a first nonminimal distinguishing graph.
+    Subsequently we could call findGraph with this graph as initial value of bestGraph, instead of the null graph &#8869;.
+    In this way, we would be able to find minimal graphs more efficiently.
+    The characteristic properties of Dale and Reiter&#8217;s (1995) incremental algorithm can be incorporated into the graph framework as follows.
+    First, the list of preferred attributes can be modeled in terms of the cost function: All type edges should be cheaper than all other edges.
+    In fact, (basic level, see below) type edges could be free.
+    Moreover,

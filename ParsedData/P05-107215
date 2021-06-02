@@ -1,0 +1,12 @@
+ed in the linguistic context.
+    A 5-token sliding window is used for the context.
+    Hacioglu has previously described a chunk based semantic labeling method (Hacioglu et al., 2004).
+    This system uses SVM classifiers to first chunk input text into flat chunks or base phrases, each labeled with a syntactic tag.
+    A second SVM is trained to assign semantic labels to the chunks.
+    The system is trained SVMs were trained for begin (B) and inside (I) classes of all arguments and outside (O) class for a total of 78 one-vs-all classifiers.
+    Again, TinySVM5 along with YamCha6 (Kudo and Matsumoto, 2000; Kudo and Matsumoto, 2001) are used as the SVM training and test software.
+    Table 11 presents the system performances on the PropBank test set for the chunk-based system.
+  
+  
+    We combined the semantic parses as follows: i) scores for arguments were converted to calibrated probabilities, and arguments with scores below a threshold value were deleted.
+    Separate thresholds were used for each parser.

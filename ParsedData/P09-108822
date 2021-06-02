@@ -1,0 +1,10 @@
+these experiments.
+    Firstly we evaluate models trained on a small Chinese-English corpus using a Gibbs sampler on a single CPU.
+    This corpus consists of transcribed utterances made available for the IWSLT workshop (Eck and Hori, 2005).
+    The sparse counts and high reordering for this corpus means the GIZA++ model produces very poor alignments.
+    Table 2 shows the results for the benchmark Moses and Hiero systems on this corpus using both the heuristic phrase estimation, and our proposed Bayesian SCFG model.
+    We can see that our model has a slight advantage.
+    When we look at the grammars extracted by the two models we note that the SCFG model creates considerably more translation rules.
+    Normally this would suggest the alignments of the SCFG model are a lot sparser (more unaligned tokens) than those of the heuristic, however this is not the case.
+    The projected SCFG derivations actually produce more alignment points.
+    However these alignments are much more locally consistent, containin

@@ -1,0 +1,10 @@
+AutoSlog-TS learns patterns for filling an individual slot in an event template, while simultaneously acquiring a set of lexical elements/concepts eligible to fill the slot.
+    AutoSlogTS, does not require a pre-annotated corpus, but does require one that has been split into subsets that are relevant vs. non-relevant subsets to the scenario.
+    (Yangarber et al., 2000) attempts to find extraction patterns, without a pre-classified corpus, starting from a set of seed patterns.
+    This is the basic unsupervised learner on which our approach is founded; it is described in the next section.
+  
+  
+    We first present the basic algorithm for pattern acquisition, similar to that presented in (Yangarber et al., 2000).
+    Section 3.3 places the algorithm in the framework of counter-training.
+    Prior to learning, the training corpus undergoes several steps of pre-processing.
+    The learning algorithm depends on the fundamental redundancy in natural language, and the pre-processing the text is designed to reduce

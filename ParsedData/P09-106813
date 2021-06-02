@@ -1,0 +1,9 @@
+actor and freq(b, b', a) is the corpus count of a filling the arguments of events b and b'.
+    We then score the entire chain for a particular argument: sim((ei, di) , (ej, dj) , a) (3) Using this chain score, we finally extend chainsim to score a new event slot based on the argument that maximizes the entire chain&#8217;s score: The argument is now directly influencing event slot similarity scores.
+    We will use this definition in the next section to build Narrative Schemas.
+    Whereas a narrative chain is a set of event slots, a Narrative Schema is a set of typed narrative chains.
+    A schema thus models all actors in a set of events.
+    If (push X) is in one chain, (Y push) is in another.
+    This allows us to model a document&#8217;s entire narrative, not just one main actor.
+    A narrative schema is defined as a 2-tuple N = (E, C) with E a set of events (here defined as verbs) and C a set of typed chains over the event slots.
+    We represent an event as a verb v and its grammatical argument posit

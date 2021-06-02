@@ -1,0 +1,12 @@
+r experiments, we rescale our projection features to have average L1 norm on the training set five times that of the binary-valued features.
+    Finally, we also make one more change to make optimization faster.
+    We select only half of the ASO features for use in the final model.
+    This is done by running a few iterations of stochastic gradient descent on the PoS tagging problem, then choosing the features with the largest weightvariance across the different labels.
+    This cut in half training time and marginally improved performance in all our experiments.
+  
+  
+    We used sections 02-21 of the Penn Treebank (Marcus et al., 1993) for training.
+    This resulted in 39,832 training sentences.
+    For the unlabeled data, we used 100,000 sentences from a 1988 subset of the WSJ.
+    For unlabeled data we used 200,000 sentences that were chosen by searching MEDLINE for abstracts pertaining to cancer, in particular genomic variations and mutations.
+    For labeled training and testing purposes we use 1061 s

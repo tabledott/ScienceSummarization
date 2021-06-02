@@ -1,0 +1,6 @@
+enerative model.
+    In our notation, he decomposes P(RHSi I LHS) as P(R,,...R1HL1..L, I P,h) x Penn treebank annotation style leads to a very large number of context-free rules, so that directly estimating 'P(R7,...R1HL1..Lin I P, h) may lead to sparse data problems, or problems with coverage (a rule which has never been seen in training may be required for a test data sentence).
+    The complement/adjunct distinction and traces increase the number of rules, compounding this problem.
+    (Eisner 96) proposes 3 dependency models, and gives results that show that a generative model similar to Model 1 performs best of the three.
+    However, a pure dependency model omits non-terminal information, which is important.
+    For example, &amp;quot;hope&amp;quot; is likely to generate a VP (TO) modifier (e.g., I hope [VP to sleep]) whereas &amp;quot;require&amp;quot; is likely to generate an S(TO) modifier (e.g., I require [S Jim to sleep]), but omitting non-terminals conflates these two cases, giving high probabilit

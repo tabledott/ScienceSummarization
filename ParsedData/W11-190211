@@ -1,0 +1,7 @@
+wing the mention head word; (b) select the lowest noun phrase (NP) in the parse tree that includes the mention head word; (c) use the longest proper noun (NNP*) sequence that ends with the head word; (d) select the head word.
+    For example, the query president Bill Clinton, whose term ends in January is successively changed to president Bill Clinton, then Bill Clinton, and finally Clinton.
+    If multiple records are returned, we keep the top two for Wikipedia and Freebase, and all synsets for WordNet.
+    This sieve addresses name aliases, which are detected as follows.
+    Two mentions headed by proper nouns are marked as aliases (and stored in the same entity cluster) if they appear in the same Wikipedia infobox or Freebase record in either the &#8216;name&#8217; or &#8216;alias&#8217; field, or they appear in the same synset in WordNet.
+    As an example, this sieve correctly detects America Online and AOL as aliases.
+    We also tested the utility of Wikipedia categories, but found little gain over mor

@@ -1,0 +1,10 @@
+alogous to context-dependent phone models used in acoustic modeling for speech recognition (e.g.Young, 1999, Section 4.3).
+			3.1 Model Definition.
+			In order to build both left and right-context into an HMM part-of-speech tagger, we reformulate the Figure 1: Graphical Structure of Traditional HMM Tagger (top) and Contextualized HMM Tagger (bottom) trigram HMM model traditionally described as ? = ????
+			?= n i iiiiiiiii twtwtpttwtwwpTWp 1 111111 )..|()...|(),( by replacing the approximation: )|()..|( )|()...|( 1211 1111 ????
+			= = iiiiiiii iiiii tttptwtwtp twptwtwwp with the approximation: )|()..|( )|()...|( 1211 111111 ????
+			= = iiiiiiii iiiiiii tttptwtwtp tttwptwtwwp Given that we are using an increased context size during the estimation of lexical probabilities, thus fragmenting the data, we have found it desirable to smooth these estimates, for which we use a standard absolute discounting scheme (Ney, Essen and Knesser, 1994).
+	
+	
+			4.1 Corpora and Lexicon Construction.
+			For our comparison of unsu

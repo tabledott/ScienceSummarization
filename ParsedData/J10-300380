@@ -1,0 +1,8 @@
+ature.
+    By allowing edges to exist between nodes of all the languages if they are aligned, the pivot can now even be a set of nodes rather than a single node in another language.
+    For example, one could easily find the following path in such a graph: ate lunch &#8594; a&#223;en zu ittag (German) &#8594; aten een hapje (Dutch) &#8594; had a bite In general, each edge is associated with a weight corresponding to the bilingual phrase translation probability.
+    Random walks are then sampled from the graph in such a way that only paths of high probability end up contributing to the extracted paraphrases.
+    Obviously, the alignment errors discussed in the context of simple pivoting will also have an adverse effect on this approach.
+    In order to prevent this, the authors add special feature nodes to the graph in addition to regular nodes.
+    These feature nodes represent domain-specific knowledge of what would make good paraphrases.
+    For example, nodes representing syntactic equivalence classes of t

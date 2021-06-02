@@ -1,0 +1,9 @@
+t probability model.
+    EM training algorithm exhaustively.
+    To estimate the parameters of our model, we apply the algorithm in Figure 2, whose steps are motivated and described below.
+    3.1 Determine high-frequency n-grams in E and F If one assumes from the outset that any phrases can be generated from a cept , one would need a supercomputer in order to store in the memory a table that models the distribution.
+    Since we don&#8217;t have access to computers with unlimited memory, we initially learn t distribution entries only for the phrases that occur often in the corpus and for unigrams.
+    Then, through smoothing, we learn t distribution entries for the phrases that occur rarely as well.
+    In order to be considered in step 2 of the algorithm, a phrase has to occur at least five times in the corpus.
+    3.2 Initialize the t-distribution table Before the EM training procedure starts, one has no idea what word/phrase pairs are likely to share the same meaning.
+    In other words, all alignments th

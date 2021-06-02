@@ -1,0 +1,6 @@
+t any possible complete parse tree T for the input sentence corresponds to exactly one sequence of actions; call this sequence the derivation of T. Each procedure, when given a derivation d = {al an}, predicts some action an&#177;i to create a new derivation d' = {al an+i }.
+    Typically, the procedures postulate many different values for a+1, which cause the parser to explore many different derivations when parsing an input sentence.
+    But for demonstration purposes, figures 1-7 trace one possible derivation for the sentence &amp;quot;I saw the man with the telescope&amp;quot;, using the part-of-speech (POS) tag set and constituent label set of the Penn treebank.
+    The first pass takes an input sentence, shown in figure 1, and uses TAG to assign each word a POS tag.
+    The result of applying TAG to each word is shown in figure 2.
+    The second pass takes the output of the first pass and uses CHUNK to determine the &amp;quot;flat&amp;quot; phrase chunks of the sentence, where a phrase is &amp;quot;flat

@@ -1,0 +1,8 @@
+if cycles are found we add constraints to forbid these cycles; the solver is then run again.
+    This process is repeated until no more violated constraints are found.
+    The same procedure is used for other types of constraints which are too expensive to add in advance (e.g. the constraints of P1).
+    Algorithm 1 outlines our approach.
+    For a sentence x, Bx is the set of constraints that we add in advance and Ix are the constraints we add incrementally.
+    Ox is the objective function and Vx is a set of variables including integer declarations. solve(C, O, V ) maximises the objective function O with respect to the set of constraints C and variables V . violated(y, I) inspects the proposed solution (y) and returns all constraints in I which are violated.
+    The number of iterations required in this approach is at most polynomial with respect to the number of variables (Gr&#168;otschel et al., 1981).
+    In practice, this technique converges quickly (less than 20 iterations in 99% of approximately 12,00

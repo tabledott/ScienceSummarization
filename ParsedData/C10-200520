@@ -1,0 +1,9 @@
+itterSA(cleaning), and other classifiertrained from the original data, TwitterSA(no cleaning).
+			For the polarity detection task, we built a few classifiers to compare theirperformances: TwitterSA(single) and Twit terSA(weights) are two classifiers we trained using combined data from the 3 sources.
+			The only difference is TwitterSA(weights) uses the modification of weighting the priorpolarity of the words based on the training data.
+			TwitterSA(voting) and TwitterSA(maxconf) combine classification out puts from 3 classifiers respectively trained from each source.
+			TwitterSA(voting) usesmajority voting to combine them and TwitterSA(maxconf) picks the one with maxi mum confidence score.We use Weka (Witten and Frank, 2005) to create the classifiers.
+			We tried different learning al gorithms available on Weka and SVM obtainedthe best results for Unigrams and TwitterSA.
+			Experimental results reported in this section are ob tained using SVM.
+			4.2 Subjectivity Detection Evaluation.
+			Table 4 shows the er

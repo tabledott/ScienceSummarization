@@ -1,0 +1,6 @@
+ify specification of parsers: the item-based description is simpler than a procedural description.
+    Second, it will make it easier to generalize parsers across tasks: a single item-based description can be used to compute values for a variety of applications, simply by changing semirings.
+    This will be especially advantageous for parsers that can handle loops resulting from rules like A A and computations resulting from &#8364; productions, both of which typically lead to infinite sums.
+    In these cases, the procedure for computing an infinite sum differs from semiring to semiring, and the fact that we can specify that a parser computes an infinite sum separately from its method of computing that sum will be very helpful.
+    The third use of these techniques is for computing outside probabilities, values related to the inside probabilities that we will define later.
+    Unlike the other quantities we wish to compute, outside probabilities cannot be computed by simply substituting a different semiring

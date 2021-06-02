@@ -1,0 +1,10 @@
+examples are extracted using the parsing algorithm itself.
+    The training examples required for the cascaded chunking model is much smaller than that for the probabilistic model.
+    The model reduces the training cost significantly and enables training using larger amounts of annotated corpus.
+    &#8226; No assumption on the independence between dependency relations The probabilistic model assumes that dependency relations are independent.
+    However, there are some cases in which one cannot parse a sentence correctly with this assumption.
+    For example, coordinate structures cannot be always parsed with the independence constraint.
+    The cascaded chunking model parses and estimates relations simultaneously.
+    This means that one can use all dependency relations, which have narrower scope than that of the current focusing relation being considered, as feature sets.
+    We describe the details in the next section.
+    The cascaded chunking model can be combined with any machine learning algorithm th

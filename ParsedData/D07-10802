@@ -1,0 +1,7 @@
+nslation.
+			In Watanabe et al (2006a), binary features were trained only on a small development set using a variant of voted perceptron for reranking k-best translations.
+			Thus, the improvement is merely relative to the baseline translation system, namely whether or not there is a good translation in their k-best.We present a method to estimate a large num ber of parameters ? of the order of millions ? using an online training algorithm.
+			Although itwas intuitively considered to be prone to overfit ting, training on a small development set ? lessthan 1K sentences ? was sufficient to achieve improved performance.
+			In this method, each train ing sentence is decoded and weights are updated atevery iteration (Liang et al, 2006).
+			When updating model parameters, we employ a memorization variant of a local updating strategy (Liang et al, 2006) in which parameters are optimized toward a set of good translations found in the k-best listacross iterations.
+			The objective function is an ap proximated BLEU (Wa

@@ -1,0 +1,12 @@
+ basic unification procedure can be modified to admit negative and disjunctive values.
+    These ideas have been implemented in the new Texas version of the PATR-II system for features.
+    (I am much indebted to Fernando Pereira for his advice on this topic.)
+    Negative values are created by the following operation.
+    If A and B are distinct, i.e. contain a different value for some feature, then (Negate A B) does nothing to them.
+    Otherwise both nodes acquire a &amp;quot;negative constraint.&amp;quot; In effect, A is marked with -B and B with -A.
+    These constraints prevent the two nodes from ever becoming alike.
+    When A is unified with C, unification succeeds only if the result is distinct from B.
+    The result of (Unify A C) has to satisfy all the negative constraints of both A and C and it inherits all that could fail in some later unification.
+    Disjunction is more complicated.
+    Suppose A, B and C are all simple atomic values.
+    In this situation C unifies with {A B) just in case it i

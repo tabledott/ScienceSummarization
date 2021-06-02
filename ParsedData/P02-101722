@@ -1,0 +1,8 @@
+    These vectors were length-normalized, and then rank-reduced by an SVD, keeping the 50 largest singular vectors.
+    The resulting vectors were clustered into 200 word classes by a weighted k-means algorithm, and then grammar induction operated over these classes.
+    We do not believe that the quality of our tags matches that of the better methods of Sch&#168;utze (1995), much less the recent results of Clark (2000).
+    Nevertheless, using these tags as input still gave induced structure substantially above right-branching.
+    Figure 8 shows the performance with induced tags compared to correct tags.
+    Overall F1 has dropped, but, interestingly, VP and S recall are higher.
+    This seems to be due to a marked difference between the induced tags and the treebank tags: nouns are scattered among a disproportionally large number of induced tags, increasing the number of common NP sequences, but decreasing the frequency of each.
+    Another issue with previous systems is their sensitivity to initial choice

@@ -1,0 +1,8 @@
+ of lexical features, which are often crucial when part-of-speech tagging errors are present.
+    For instance, in the sentence, &#8220;Yahoo To Acquire Inktomi&#8221;, &#8220;Acquire&#8221; is mistaken for a proper noun, and sufficient evidence of the existence of a relationship is absent.
+    The lexicalized R1CRF extractor is able to recover from this error; the presence of the word &#8220;Acquire&#8221; is enough to recognize the positive instance, despite the incorrect partof-speech tag.
+    Another source of recall issues facing O-CRF is its ability to discover synonyms for a given relation.
+    We found that while RESOLVER improves the relative recall of O-CRF by nearly 50%, O-CRF locates fewer synonyms per relation compared to its lexicalized counterpart.
+    With RESOLVER, O-CRF finds an average of 6.5 synonyms per relation compared to R1-CRF&#8217;s 16.25.
+    In light of our findings, the relative tradeoffs of open versus traditional RE are as follows.
+    Open IE automatically offers a high level 

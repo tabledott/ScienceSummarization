@@ -1,0 +1,7 @@
+e tree, using dynamic programming.
+    The probability that a potential constituent occurs in the correct parse tree, P(X ws...wtIS wi...tv&#8222;), will be called g(s,t, X).
+    In words, it is the probability that, given the sentence wi...w., a symbol X generates ws...wt&#8226; We can compute this probability using elements of the Inside-Outside algorithm.
+    First, compute the inside probabilities, e(s,t, X) = P(X Ws.--wt).
+    Second, compute the outside probabilities, f(s,t, X) = P(S Third, compute the matrix g(s,t, X): Once the matrix g(s,t, X) is computed, a dynamic programming algorithm can be used to determine the best parse, in the sense of maximizing the number of constituents expected correct.
+    Figure 5 shows pseudocode for a simplified form of this algorithm.
+    For a grammar with g nonterminals and training data of size T, the run time of the algorithm is 0(Tn2 + gn3 + n3) since there are two layers of outer loops, each with run time at most n, and inner loops, over addresses (training data

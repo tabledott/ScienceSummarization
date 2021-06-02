@@ -1,0 +1,9 @@
+efore convex and straightforward.
+    However, while we did use this as a rapid training procedure during development, fixing the alignments a priori is both unsatisfying and also less effective than a procedure which allows the alignments a to adapt during training.
+    Again, for fixed alignments a, optimizing w is easy.
+    Similarly, with a fixed w, finding the optimal a for any particular tree pair is also easy.
+    Another option is therefore to use an iterative procedure that alternates between choosing optimal alignments for a fixed w, and then reoptimizing w for those fixed alignments according to (3).
+    By iterating, we perform the following optimization: Note that (4) is just (2) with summation replaced by maximization.
+    Though we do not know of any guarantees for this EM-like algorithm, in practice it converges after a few iterations given sufficient training data.
+    We initialize the procedure by setting w0 as defined above.
+    When training our model, we approximate the sets of all trees

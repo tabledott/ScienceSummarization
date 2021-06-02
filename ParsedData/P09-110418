@@ -1,0 +1,12 @@
+lls that have a posterior below 10&#8722;4 in both HMM models.
+    Pruning a one-by-one cell also indirectly prunes larger cells containing it.
+    To take maximal advantage of this indirect pruning, we avoid explicitly attempting to build each cell in the dynamic program.
+    Instead, we track bounds on the spans for which we have successfully built ITG cells, and we only iterate over larger spans that fall within those bounds.
+    The details of a similar bounding approach appear in DeNero et al. (2009).
+    In all, pruning reduces MIRA iteration time from 175 to 5 minutes on the NIST ChineseEnglish dataset with negligible performance loss.
+    Likelihood training time is reduced by nearly two orders of magnitude.
+  
+  
+    We present results which measure the quality of our models on two hand-aligned data sets.
+    Our first is the English-French Hansards data set from the 2003 NAACL shared task (Mihalcea and Pedersen, 2003).
+    Here we use the same 337/100 train/test split of the labeled data as Taskar e

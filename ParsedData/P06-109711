@@ -1,0 +1,8 @@
+he Mstep.
+    This approximation is called Viterbi training.
+    Neal and Hinton (1998) analyze approximate EM training and motivate this type of variant.
+    We extend approximate EM training to perform a new type of training which we call Minimum Error / Maximum Likelihood Training.
+    The intuition behind this approach to semi-supervised training is that we wish to obtain the advantages of both discriminative training (error minimization) and approximate EM (which allows us to estimate a large numbers of parameters even though we have very few gold standard word alignments).
+    We introduce the EMD algorithm, in which discriminative training is used to control the contributions of sub-models (thereby minimizing error), while a procedure similar to one step of approximate EM is used to estimate the large number of sub-model parameters.
+    A brief sketch of the EMD algorithm applied to our extended model is presented in Figure 1.
+    Parameters have a superscript t representing their value at iteration t.

@@ -1,0 +1,9 @@
+ng data for the parser; this self-training appraoch was shown to be quite effective in practice.
+    However, their approach depends on the usage of a high-quality parse reranker, whereas the method described here simply augments the features of an existing parser.
+    Note that our two approaches are compatible in that we could also design a reranker and apply self-training techniques on top of the clusterbased features.
+  
+  
+    In this paper, we have presented a simple but effective semi-supervised learning approach and demonstrated that it achieves substantial improvement over a competitive baseline in two broad-coverage dependency parsing tasks.
+    Despite this success, there are several ways in which our approach might be improved.
+    To begin, recall that the Brown clustering algorithm is based on a bigram language model.
+    Intuitively, there is a &#8220;mismatch&#8221; between the kind of lexical information that is captured by the Brown clusters and the kind of lexical information that is modele

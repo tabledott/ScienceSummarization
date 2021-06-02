@@ -1,0 +1,8 @@
+airwise LCS (NP-LCS) to compare similarity between two texts in automatic summarization evaluation.
+    NP-LCS can be shown as a special case of Equation (6) with &#946; = 1.
+    However, they did not provide the correlation analysis of NP-LCS with human judgments and its effectiveness as an automatic evaluation measure.
+    To apply LCS in machine translation evaluation, we view a translation as a sequence of words.
+    The intuition is that the longer the LCS of two translations is, the more similar the two translations are.
+    We propose using LCS-based F-measure to estimate the similarity between two translations X of length m and Y of length n, assuming X is a reference translation and Y is a candidate translation, as follows: S1. police killed the gunman S2. police kill the gunman S3. the gunman kill police As we have shown earlier, BLEU-2 cannot differentiate S2 from S3.
+    However, S2 has a ROUGE-L score of 3/4 = 0.75 and S3 has a ROUGE-L score of 2/4 = 0.5, with ,B = 1.
+    Therefore S2 is better t

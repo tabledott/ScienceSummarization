@@ -1,0 +1,6 @@
+ture can occur at most once, so features are boolean-valued: 0 if the pattern does not occur, 1 if it does.
+    In the parser we further assume that features are chosen from certain feature schemata and that every feature is a boolean conjunction of sub-features.
+    For example, in computing the probability of the head's pre-terminal t we might want a feature schema f (t, 1) that returns 1 if the observed pre-terminal of c = t and the label of c = 1, and zero otherwise.
+    This feature is obviously composed of two sub-features, one recognizing t, the other 1.
+    If both return 1, then the feature returns 1.
+    Now consider computing a conditional probability p(a H) with a set of features h that connect a to the history H. In a log-linear model the probability function takes the following form: Here the Ai are weights between negative and positive infinity that indicate the relative importance of a feature: the more relevant the feature to the value of the probability, the higher the absolute value of the 

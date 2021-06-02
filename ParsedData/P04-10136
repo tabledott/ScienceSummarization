@@ -1,0 +1,7 @@
+ce is included in the probabilities for the shift(wi) decisions included in d1,..., dm.
+    The probability model is then defined by using the chain rule for conditional probabilities to derive the probability of a parse as the multiplication of the probabilities of each decision di conditioned on that decision&#8217;s prior parse history d1,..., di&#8722;1.
+    The parameters of this probability model are the P (di|d1,..., di&#8722;1).
+    Generative models are the standard way to transform a parsing strategy into a probability model, but note that we are not assuming any bound on the amount of information from the parse history which might be relevant to each parameter.
+    The second probability model is discriminative, because it specifies the conditional probability of the output tree given the input sentence.
+    More generally, discriminative models try to maximize this conditional probability, but often do not actually calculate the probability, as with Support Vector Machines (Vapnik, 1995).
+    We t

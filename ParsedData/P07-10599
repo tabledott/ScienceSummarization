@@ -1,0 +1,6 @@
+ and question-answer pairs, and yet the indexed question-answer pairs showed a serious recall problem in that no answer could be retrieved for many well-formed queries.
+    For our experiment, we decided to prefer precision over recall and to attempt a precision-oriented FAQ and question-answer pair extraction that benefits the training of questionanswer translation models.
+    As shown in Table 1, the FAQ pages used in our experiment were extracted from a 4 billion page subset of the web using the queries &#8220;inurl:faq&#8221; and &#8220;inurl:faqs&#8221; to match the tokens &#8220;faq&#8221; or &#8220;faqs&#8221; in the urls.
+    This extraction resulted in 2.6 million web pages (0.07% of the crawl).
+    Since not all those pages are actually FAQs, we manually labeled 1,000 of those pages to train an online passiveaggressive classificier (Crammer et al., 2006) in a 10-fold cross validation setup.
+    Training was done using 20 feature functions on occurrences question marks and key words in different fiel

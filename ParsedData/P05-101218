@@ -1,0 +1,8 @@
+ constraints from one instance at a time.
+    However, they are fundamentally limited by their approximate search algorithm.
+    In contrast, our system searches the entire space of dependency trees and most likely benefits greatly from this.
+    This difference is amplified when looking at the percentage of trees that correctly identify the root word.
+    The models that search the entire space will not suffer from bad approximations made early in the search and thus are more likely to identify the correct root, whereas the approximate algorithms are prone to error propagation, which culminates with attachment decisions at the top of the tree.
+    When comparing the two online learning models, it can be seen that MIRA outperforms the averaged perceptron method.
+    This difference is statistically significant, p &lt; 0.005 (McNemar test on head selection accuracy).
+    In our Czech experiments, we used the dependency trees annotated in the Prague Treebank, and the predefined training, development and evaluat

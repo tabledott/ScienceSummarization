@@ -1,0 +1,7 @@
+irst, instead of weighing all edits equally, each unique edit has a probability associated with it.
+    Second, insertion and deletion probabilities are conditioned on context.
+    The probability of inserting or deleting a character is conditioned on the letter appearing immediately to the left of that character.
+    The error probabilities are derived by first assuming all edits are equiprobable.
+    They use as a training corpus a set of spacedelimited strings that were found in a large collection of text, and that (a) do not appear in their dictionary and (b) are no more than one edit away from a word that does appear in the dictionary.
+    They iteratively run the spell checker over the training corpus to find corrections, then use these corrections to update the edit probabilities.
+    Ristad and Yianilos (1997) present another algorithm for deriving these edit probabilities from a training corpus, and show that for the problem of word pronunciation, using the learned string edit distance gives one four

@@ -1,0 +1,6 @@
+ data sets all of the Bayesian estimators strongly outperform EM (and, to a lesser extent, VB) with respect to all of our evaluation measures, confirming the results reported in Goldwater and Griffiths (2007).
+    This is perhaps not too surprising, as the Bayesian prior plays a comparatively stronger role with a smaller training corpus (which makes the likelihood term smaller) and the approximation used by Variational Bayes is likely to be less accurate on smaller data sets.
+    But on larger data sets, which Goldwater et al did not study, the results are much less clear, and depend on which evaluation measure is used.
+    Expectation Maximization does surprisingly well on larger data sets and is competitive with the Bayesian estimators at least in terms of cross-validation accuracy, confirming the results reported by Johnson (2007).
+    Variational Bayes converges faster than all of the other estimators we examined here.
+    We found that the speed of convergence of our samplers depends to a large degree up

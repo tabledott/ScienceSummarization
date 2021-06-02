@@ -1,0 +1,7 @@
+p Ei &#955;ihi(s1 , w) (4 ) To simplify inference and to make the lattice representation more natural, we only make use of local feature functions that depend on properties of each segment: The segmentation model just introduced is equivalent to a lattice where each vertex corresponds to a particular coverage (in terms of letters consumed from left to right) of the input word.
+    Since we only make use of local features, the number of vertices in a lattice for word w is |w |&#8722; m, where m is the minimum segment length permitted.
+    In all experiments reported in this paper, we use m = 3.
+    Each edge is labeled with a morpheme s (corresponding to the morpheme associated with characters delimited by the start and end nodes of the edge) as well as a weight, Pi Aihi(s, w).
+    The cost of any path from the start to the goal vertex will be equal to the numerator in equation (4).
+    The value of the denominator can be computed using the forward algorithm.
+    In most of our experiments, s will be identical

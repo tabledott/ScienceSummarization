@@ -1,0 +1,9 @@
+ontext, Table 3 lists current state-of-the art results for the same task.
+    CE+spl is the Contrastive-Estimation CRF method of SE.
+    BHMM is the completely Bayesian-HMM of GG.
+    PLSA+AC, LDA, LDA+AC are the models presented in TJ, LDA+AC is a Bayesian model with a strong ambiguity class (AC) component, and is the current state-of-the-art of this task.
+    The other models are variations excluding the Bayesian components (PLSA+AC) or the ambiguity class.
+    While our models are trained on the unannotated text of the entire WSJ Treebank, CE and BHMM use much less training data (only the 24k words of the test-set).
+    However, as noted by TJ, there is no reason one should limit the amount of unlabeled data used, and in addition other results reported in GG,SE show that accuracy does not seem to improve as more unlabeled data are used with the models.
+    We also report results for training our EM-HMM tagger on the smaller dataset (the p(tjw) estimation is still based on the entire unlabeled WSJ).
+    All

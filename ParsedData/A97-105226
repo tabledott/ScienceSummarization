@@ -1,0 +1,7 @@
+em consists of the following six components which are applied in sequence to sentences containing a specific predicate in order to retrieve a set of subcategorization classes for that predicate: For example, building entries for attribute, and given that one of the sentences in our data was (la), the tagger and lemmatizer return (lb).
+    (lb) is parsed successfully by the probabilistic LR parser, and the ranked analyses are returned.
+    Then the patternset extractor locates the subanalyses containing attribute and constructs a patternset.
+    The highest ranked analysis and pattern for this example are shown in Figure 12.
+    Patterns encode the value of the VSUBCAT feature from the VP rule and the head lemma(s) of each argument.
+    In the case of PP (P2) arguments, the pattern also encodes the value of PSUBCAT from the PP rule and the head lemma(s) of its complement(s).
+    In the next stage of processing, patterns are classified, in this case giving the subcategorization class corresponding to transitive

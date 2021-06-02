@@ -1,0 +1,8 @@
+antially reduces the AER compared to the standard or smoothed model, even without EM re-estimation.
+    The combined model produces an additional substantial reduction in alignment error, using a single iteration of EM.
+    The ablation experiments show how important the different modifications are to the various models.
+    It is interesting to note that the importance of a given modification varies from model to model.
+    For example, the re-estimation null-word weight makes essentially no contribution to the smoothed model.
+    It can be tuned to reduce the error on the trial data, but the improvement does not carry over to the test data.
+    The smoothed model with only the nullword weight and no add-n smoothing has essentially the same error as the standard model; and the smoothed model with add-n smoothing alone has essentially the same error as the smoothed model with both the null-word weight and add-n smoothing.
+    On the other hand, the re-estimation null-word weight is crucial to the combined mod

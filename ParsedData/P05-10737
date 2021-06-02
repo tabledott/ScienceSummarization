@@ -1,0 +1,7 @@
+ produce probability distributions and thus identification A problem with this approach is that a maximizing labeling of the nodes could possibly violate the constraint that argument nodes should not overlap with each other.
+    Therefore, to produce a consistent set of arguments with local classifiers, we must have a way of enforcing the non-overlapping constraint.
+    Here we describe a fast exact dynamic programming algorithm to find the most likely non-overlapping (consistent) labeling of all nodes in the parse tree, according to a product of probabilities from local models, as in Equation 2.
+    For simplicity, we describe the dynamic program for the case where only two classes are possible &#8211; ARG and NONE.
+    The generalization to more classes is straightforward.
+    Intuitively, the algorithm is similar to the Viterbi algorithm for context-free grammars, because we can describe the non-overlapping constraint by a &#8220;grammar&#8221; that disallows ARG nodes to have ARG descendants.
+    Below we

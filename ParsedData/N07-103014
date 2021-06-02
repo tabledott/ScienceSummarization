@@ -1,0 +1,8 @@
+  
+    The results in the previous section demonstrate the limitations of a cascading approach for determining anaphoricity and coreference with separate models.
+    The other thing to note is that the results in general provide a lot of room for improvement &#8212; this is true for other state-of-the-art systems as well.
+    The integer programming formulation we provide here has qualities which address both of these issues.
+    In particular, we define two objective functions for coreference resolution to be optimized with ILP.
+    The first uses only information from the coreference classifier (COREF-ILP) and the second integrates both anaphoricity and coreference in a joint formulation (JOINT-ILP).
+    Our problem formulation and use of ILP are based on both (Roth and Yih, 2004) and (Barzilay and Lapata, 2006).
+    For solving the ILP problem, we use lp solve, an open-source linear programming solver which implements the simplex and the Branch-and-Bound methods.3 In practice, each test document is process

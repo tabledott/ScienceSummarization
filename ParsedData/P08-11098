@@ -1,0 +1,6 @@
+lique potentials take an exponential form.
+    We have a feature function, represented by f(r,s), which returns a vector with the value for each feature.
+    We denote the value of feature fi by fi(r,s) and our model has a corresponding parameter &#952;i for each feature.
+    The clique potential function is then: The log conditional likelihood of the training data D, with an additional L2 regularization term, is then: And the partial derivatives of the log likelihood, with respect to the model weights are, as usual, the difference between the empirical counts and the model expectations: 1In our implementation of the inside-outside algorithm, we then need to keep two inside and outside scores for each span: one from before and one from after the application of unary rules.
+    The partition function Zs and the partial derivatives can be efficiently computed with the help of the inside-outside algorithm.2 Zs is equal to the inside score of ROOT over the span of the entire sentence.
+    To compute the partial d

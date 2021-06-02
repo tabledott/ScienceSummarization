@@ -1,0 +1,9 @@
+y.
+    This leads us to use a distortion model of the following form, where K is a tuning factor optimized on held-out data.
+    As shown in Fig.
+    2, the value of distortion score peaks at d=1, i.e., the monotonic alignment, and decays for non-monotonic alignments depending on how far it diverges from the monotonic alignment.
+    Given an HMM, the Viterbi alignment algorithm can be applied to find the best alignment between the backbone and the hypothesis, However, the alignment produced by the algorithm cannot be used directly to build a confusion network.
+    There are two reasons for this.
+    First, the alignment produced may contain 1-N mappings between the backbone and the hypothesis whereas 1-1 mappings are required in order to build a confusion network.
+    Second, if hypothesis words are aligned to a null in the backbone or vice versa, we need to insert actual nulls into the right places in the hypothesis and the backbone, respectively.
+    Therefore, we need to normalize the alignment produced by

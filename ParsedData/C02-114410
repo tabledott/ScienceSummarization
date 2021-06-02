@@ -1,0 +1,10 @@
+he algorithm is the union of all committees found in each recursive step.
+			The details of Phase II are presented in Figure 1.
+			In Step 1, the score reflects a preference for bigger and tighter clusters.
+			Step 2 gives preference to higher quality clusters in Step 3, where a cluster is only kept if its similarity to all previously kept clusters is below a fixed threshold.
+			In our experiments, we set ?1 = 0.35.
+			Input: A list of elements E to be clustered, a similarity database S from Phase I, thresh olds ?1 and ?2.
+			Step 1: For each element e ? E Cluster the top similar elements of e from S using average-link clustering.
+			For each cluster discovered c compute the following score: |c| ? avgsim(c), where |c| is the number of elements in c and avgsim(c) is the average pairwise simi larity between elements in c. Store the highest-scoring cluster in a list L. Step 2: Sort the clusters in L in descending order of their scores.
+			Step 3: Let C be a list of committees, initially empty.
+			For each cluste

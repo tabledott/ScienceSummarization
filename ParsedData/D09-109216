@@ -1,0 +1,5 @@
+metric analysis, it is vital to be able to track the same topics across all languages.
+    One simple way to achieve this topic alignment is to add a small set of comparable document tuples that provide sufficient &#8220;glue&#8221; to bind the topics together.
+    Continuing with the example above, one might extract a set of connected Wikipedia articles related to the focus of the journal and then train PLTM on a joint corpus consisting of journal papers and Wikipedia articles.
+    In order to simulate this scenario we create a set of variations of the EuroParl corpus by treating some documents as if they have no parallel/comparable texts &#8211; i.e., we put each of these documents in a single-document tuple.
+    To do this, we divide the corpus W into two sets of document tuples: a &#8220;glue&#8221; set G and a &#8220;separate&#8221; set S such that |G |/ |W |= p. In other words, the proportion of tuples in the corpus that are treated as &#8220;glue&#8221; (i.e., placed in G) is p. For every tuple in S, w

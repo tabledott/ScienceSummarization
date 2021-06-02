@@ -1,0 +1,9 @@
+ translation represented by the rule.
+    If the rule is finally chosen as part of the best derivation for translating the Chinese sentence, then all the words in the English side of the rule will appear in the translated English sentence.
+    Hence, we need to match the translations suggested by the WSD system against the English side of the rule.
+    It is for these matching rules that the WSD features will apply.
+    The translations proposed by the WSD system may be more than one word long.
+    In order for a proposed translation to match the rule, we require two conditions.
+    First, the proposed translation must be a substring of the English side of the rule.
+    For example, the proposed translation &#8220;every to&#8221; would not match the chunk &#8220;every month to&#8221;.
+    Second, the match must contain at least one aligned ChineseEnglish word pair, but we do not make any other requirements about the alignment of the other Chinese or English words.1 If there are multiple possible matches, we c

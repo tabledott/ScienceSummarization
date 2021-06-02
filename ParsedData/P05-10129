@@ -1,0 +1,9 @@
+
+    Averaging has been shown to help reduce overfitting (Collins, 2002).
+    Crammer and Singer (2001) developed a natural method for large-margin multi-class classification, which was later extended by Taskar et al. (2003) to structured classification: where L(y, y') is a real-valued loss for the tree y' relative to the correct tree y.
+    We define the loss of a dependency tree as the number of words that have the incorrect parent.
+    Thus, the largest loss a dependency tree can have is the length of the sentence.
+    Informally, this update looks to create a margin between the correct dependency tree and each incorrect dependency tree at least as large as the loss of the incorrect tree.
+    The more errors a tree has, the farther away its score will be from the score of the correct tree.
+    In order to avoid a blow-up in the norm of the weight vector we minimize it subject to constraints that enforce the desired margin between the correct and incorrect trees1.
+    The Margin Infused Relaxed Algorithm (M

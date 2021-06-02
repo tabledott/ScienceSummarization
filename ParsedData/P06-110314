@@ -1,0 +1,9 @@
+ running time, some limited pre-processing was done on the Russian side.
+    All classes, whose temporal distributions were close to uniform (i.e. words with a similar likelihood of occurrence throughout the corpus) were deemed common and not considered as NE candidates.
+    Unique words were thus grouped into 14,781 equivalence classes.
+    Unless mentioned otherwise, the transliteration model was initialized with a set of 20 pairs of English NEs and their Russian transliterations.
+    Negative examples here and during the rest of the training were pairs of randomly selected non-NE English and Russian words.
+    New features were discovered throughout training; all but top 3000 features from positive and 3000 from negative examples were pruned based on the number of their occurrences so far.
+    Features remaining at the end of training were used for NE discovery.
+    Insertions/omissions features were not used in the experiments as they provided no tangible benefit for the languages of our corpus.
+    In ea

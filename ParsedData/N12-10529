@@ -1,0 +1,7 @@
+parsing paradigm (Nivre, 2008).
+    For all languages and settings, we use an arc-eager decoding strategy, with a beam of eight hypotheses, and perform ten epochs of the averaged structured perceptron algorithm (Zhang and Clark, 2008).
+    We extend the state-of-the-art feature model recently introduced by Zhang and Nivre (2011) by adding an additional word cluster based feature template for each word based template.
+    Additionally, we add templates where one or more partof-speech feature is replaced with the corresponding cluster feature.
+    The resulting set of additional feature templates are shown in Table 1.
+    The expanded feature model includes all of the feature templates defined by Zhang and Nivre (2011), which we also use as the baseline model, whereas Table 1 only shows our new templates due to space limitations.
+    For all NER experiments, we use a sequential firstorder conditional random field (CRF) with a unit variance Normal prior, trained with L-BFGS until c-convergence (c = 0.0001, typic

@@ -1,0 +1,8 @@
+.
+    In figure 2, we have graphed percentage correct as a function of the number of transformations that have been applied to the test corpus.
+    As the transformation number increases, overtraining sometimes occurs.
+    In the current implementation of the learner, a transformation is added to the list if it results in any positive net change in the training set.
+    Toward the end of the learning procedure, transformations are found that only affect a very small percentage of training sentences.
+    Since small counts are less reliable than large counts, we cannot reliably assume that these transformations will also improve performance in the test corpus.
+    One way around this overtraining would be to set a threshold: specify a minimum level of improvement that must result for a transformation to be learned.
+    Another possibility is to use additional training material to prune the set of learned transformations. measured as the percentage of constituents in the test set which do not cross any Penn Tre

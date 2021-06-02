@@ -1,0 +1,9 @@
+ al., 2003), which contains bilingual phrase pairs and scores indicating their utility.
+    The surface heuristic is the most popular method for phrase-table construction.
+    It extracts all consistent phrase pairs from word-aligned bitext (Koehn et al., 2003).
+    The word alignment provides bilingual links, indicating translation relationships between words.
+    Consistency is defined so that alignment links are never broken by phrase boundaries.
+    For each token w in a consistent phrase pair p, all tokens linked to w by the alignment must also be included in p. Each consistent phrase pair is counted as occurring once per sentence pair.
+    The scores for the extracted phrase pairs are provided by normalizing these flat counts according to common English or Foreign components, producing the conditional distributions p( f|e) and p(e |f).
+    The surface heuristic can define consistency according to any word alignment; but most often, the alignment is provided by GIZA++ (Och and Ney, 2003).
+    This alignm

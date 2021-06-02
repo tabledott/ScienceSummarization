@@ -1,0 +1,11 @@
+ected and ordered ahead.
+    The process is repeated until the graph is empty.
+    As an example consider again a three sentence text.
+    We illustrate the search for a path through the graph in Figure 2.
+    First we calculate which of the three sentences S1, S2, and S3 is most likely to start the text (during training we record which sentences appear in the beginning of each text).
+    Assuming that P(S2|START) is the highest, we will order S2 first, and ignore the nodes headed by S1 and S3.
+    We next compare the probabilities P(S1|S2) and P(S3|S2).
+    Since P(S3|S2) is more likely than P(S1|S2), we order S3 after S2 and stop, returning the order S2, S3, and S1.
+    As can be seen in Figure 2 for each vertex we keep track of the most probable edge that ends in that vertex, thus setting th beam search width to one.
+    Note, that equation (4) would assign lower and lower probabilities to sentences with large numbers of features.
+    Since we need to compare sentence pairs with varied numbers of features,

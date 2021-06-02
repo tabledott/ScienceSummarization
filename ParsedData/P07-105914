@@ -1,0 +1,5 @@
+e phrases.
+    Translation probabilities for extracted para-phrases can be inferred from bilingual translation probabilities as follows: Given an English para-phrase pair (trg, syn), the probability p(syn|trg) that trg translates into syn is defined as the joint probability that the English phrase trg translates into the foreign phrase src, and that the foreign phrase src translates into the English phrase syn.
+    Under an independence assumption of those two events, this probability and the reverse translation direction p(trg|syn) can be defined as follows: Since the same para-phrase pair can be obtained by pivoting on multiple foreign language phrases, a summation or maximization over foreign language phrases is necessary.
+    In order not to put too much probability mass onto para-phrase translations that can be obtained from multiple foreign language phrases, we maximize instead of summing over src.
+    In our experiments, we employed equation (3) to infer for each para-phrase pair translation model prob

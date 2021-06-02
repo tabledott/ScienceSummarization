@@ -1,0 +1,9 @@
+n and recall scores) of the trees that the parser produced.
+    In practice, we rely on computable scoring functions that approximate the true accuracy scores, such as measures of uncertainty.
+    In this paper we use the probability of the most likely parse as the scoring function: where w is the sentence and V is the set of parses produced by the parser for the sentence.
+    Scoring parses using parse probability is motivated by the idea that parse probability should increase with parse correctness.
+    During the selection phase, we pick a subset of the newly labelled sentences to add to the training sets of both parsers.
+    That is, a subset of those sentences labelled by the LTAG parser is added to the training set of the Collins PCFG parser, and vice versa.
+    It is important to find examples that are reliably labelled by the teacher as training data for the student.
+    The term teacher refers to the parser providing data, and student to the parser receiving A and B are two different parsers.
+    MA 

@@ -1,0 +1,11 @@
+005).
+    Note that in the experiments described in Section 6 we predict the mention types as described there and do not use any gold data.
+    The mention type feature is used in all experiments.
+    String relation features indicate whether two strings share some property, such as one being the substring of another or both sharing a modifier word.
+    Features are listed in Table 1.
+    Modifiers are limited to those occurring before the head.
+    Feature Definition headi substring of headj modi == (headj or modj) Alias acronym(headi) == headj or lastnamei == lastnamej Another class of features captures the semantic relation between two words.
+    Specifically, we check whether gender or number match, or whether the mentions are synonyms, antonyms, or hypernyms.
+    We also check the relationship of modifiers that share a hypernym.
+    Descriptions of the methods for computing these features are described next.
+    Gender Match We determine the gender (male, female, or neuter) of the two phrases, and report

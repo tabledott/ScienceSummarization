@@ -1,0 +1,8 @@
+at projects a word co-occurrence matrix to lower dimensions.
+    This lower dimensional representation is then used with standard similarity measures to cluster the data.
+    Two words are considered to be a paraphrase pair if they appear in the same cluster.
+    We construct 1000 clusters employing the Brown method on 112 million words from the North American New York Times corpus.
+    We keep the top 20 most frequent words for each cluster as paraphrases.
+    To generate LSA paraphrases, we used the Infomap software4 on a 34 million word collection of articles from the American News Text corpus.
+    We used the default parameter settings: a 20,000 word vocabulary, the 1000 most frequent words (minus a stoplist) for features, a 15 word context window on either side of a word, a 100 feature reduced representation, and the 20 most similar words as paraphrases.
+    While we experimented with several parameter settings for LSA and Brown methods, we do not claim that the selected settings are necessarily optimal.

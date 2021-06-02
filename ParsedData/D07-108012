@@ -1,0 +1,12 @@
+r those source wordsthat are aligned with the target side to limit the fea ture size.
+			3.3 Normalization.
+			In order to achieve the generalization capability, the following normalized tokens are introduced for each surface form: ? Word class or POS.
+			4-letter prefix and suffix.
+			For instance, the word Algorithm 1 Online Training Algorithm Training data: T = {( f t, et)}Tt=1 m-best oracles: O = {}Tt=1 i = 0 1: for n = 1, ..., N do 2: for t = 1, ..., T do 3: Ct ? bestk( f t; wi) 4: Ot ? oraclem(Ot ? Ct; et) 5: wi+1 = update wi using Ct w.r.t. Ot 6: i = i + 1 7: end for 8: end for 9: return ?NT i=1 w i NT ?violate?
+			is normalized to ?viol+?
+			and ?+late?
+			by taking the prefix and suffix, respectively.?
+			Digits replaced by a sequence of ?@?.
+			For ex ample, the word ?2007/6/27?
+			is represented as ?@@@@/@/@@?.We consider all possible combination of those token types.
+			For example, the word pair feature (vi olate, tnthk) is normalized and expanded to (viol+, tnthk), (viol+, tnth+), (violate, tnth

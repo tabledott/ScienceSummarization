@@ -1,0 +1,6 @@
+dels, such as Hidden Markov Models (HMMs) (Leek, 1997; Freitag and McCallum, 1999), Conditional Markov Models (CMMs) (Borthwick, 1999), and Conditional Random Fields (CRFs) (Lafferty et al., 2001) are a prominent recent approach to information extraction tasks.
+    These models all encode the Markov property: decisions about the state at a particular position in the sequence can depend only on a small local window.
+    It is this property which allows tractable computation: the Viterbi, Forward Backward, and Clique Calibration algorithms all become intractable without it.
+    However, information extraction tasks can benefit from modeling non-local structure.
+    As an example, several authors (see Section 8) mention the value of enforcing label consistency in named entity recognition (NER) tasks.
+    In the example given in Figure 1, the second occurrence of the token Tanjug is mislabeled by our CRF-based statistical NER system, because by looking only at local evidence it is unclear whether it is a person o

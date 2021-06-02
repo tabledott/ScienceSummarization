@@ -1,0 +1,8 @@
+xi)) = yi for i = 1, , m. In fact, Zco provides a bound on the sum of the classification error of the labeled examples and the number of disagreements between the two classifiers on the unlabeled examples.
+    Formally, let el (62) be the number of classification errors of the first (second) learner on the training data, and let Eco be the number of unlabeled examples on which the two classifiers disagree.
+    Then, it can be verified that We can now derive the CoBoost algorithm as a means of minimizing Zco.
+    The algorithm builds two classifiers in parallel from labeled and unlabeled data.
+    As in boosting, the algorithm works in rounds.
+    Each round is composed of two stages; each stage updates one of the classifiers while keeping the other classifier fixed.
+    Denote the unthresholded classifiers after t &#8212; 1 rounds by git&#8212;1 and assume that it is the turn for the first classifier to be updated while the second one is kept fixed.
+    We first define &amp;quot;pseudo-labels&amp;quot;,-yt, a

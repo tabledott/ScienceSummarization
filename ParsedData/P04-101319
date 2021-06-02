@@ -1,0 +1,5 @@
+ account for the contribution to this derivative of the denominator.
+    Here again we are faced with the problem that there are an exponential number of derivations in the denominator, so here again we approximate this calculation using the most probable parses.
+    To increase the conditional probability of the correct parse, we want to decrease the total joint probabilities of the incorrect parses.
+    Probability mass is only lost from the sum over all parses because shift(wi) actions are only allowed for the correct wi.
+    Thus we can decrease the total joint probability of the incorrect parses by making these parses be worse predictors of the words in the sentence.4 The combination of training the correct parses to be good predictors of the words and training the incorrect parses to be bad predictors of the words results in prediction prob4Non-prediction probability estimates for incorrect parses can make a small contribution to the derivative, but because pruning makes the calculation of this contribu

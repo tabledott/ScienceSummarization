@@ -1,0 +1,8 @@
+ies, this representation will be able to handle them in a natural way.
+    In the given example, we would have a derivation which includes organization &#8594; GPE organization.
+    This information will be helpful for correctly labeling nested entities such as New Jersey Supreme Court, because the model will learn how nested entities tend to decompose.
+    Currently, named entity recognizers are usually constructed using sequence models, with linear chain conditional random fields (CRFs) being the most common.
+    While it is possible for CRFs to have links that are longer distance than just between adjacent words, most of the benefit is from local features, over the words and labels themselves, and from features over adjacent pairs of words and labels.
+    Our joint representation allows us to port both types of features from such a named entity recognizer.
+    The local features can be computed at the same time the features over parts of speech are computed.
+    These are the leaves of the tree, when only 

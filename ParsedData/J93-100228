@@ -1,0 +1,8 @@
+t to reduce, and the appropriate rule of the grammar with which to perform the reduction.
+    The control information is standardly encoded as a parse table with rows representing parse states, and columns terminal and nonterminal symbols of the grammar.
+    This representation defines a finite-state automaton.
+    Figure 2 gives the LALR(1) parse table for Grammar 1.
+    (LALR(1) is the most commonly used variant of LR since it usually provides the best trade-off between directed rule invocation and parse table size.)
+    If the grammar is in the appropriate LR class (a stronger restriction than being an unambiguous CFG), the automaton will be deterministic; however, some algorithms for parse table construction are also able to build nondeterministic automata containing action conflicts for ambiguous CFGs.
+    Parse table construction is discussed further in Section 4.
+    Tomita (1987) describes a system for nondeterministic LR parsing of context-free grammars consisting of atomic categories, in which each 

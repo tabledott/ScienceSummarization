@@ -1,0 +1,9 @@
+the sum over all tree pairs in (T, T0) in the denominator of (6) with a sum over all tree pairs in (Tpruned, T0pruned).
+    The parameter E can be set to any value from 0 to k, with lower values resulting in more efficient training, and higher values resulting in better performance.
+    We set E by empirically determining a good speed/performance tradeoff (see &#167;6.2).
+  
+  
+    At test time, we have a weight vector w and so selecting optimal trees for the sentence pair (s, s0) from a pair of k best lists, (T, T0) is straightforward.
+    We just find: Note that with no additional cost, we can also find the optimal alignment between t&#8727; and t0&#8727;: Because the size of (T, T0) grows as O(k&#65533;), the time spent iterating through all these tree pairs can grow unreasonably long, particularly when reranking a set of sentence pairs the size of a typical MT corpus.
+    To combat this, we use a simple pruning technique to limit the number of tree pairs under consideration.
+    Then, we simply remove all

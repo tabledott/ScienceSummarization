@@ -1,0 +1,10 @@
+ References 2 and 3, &amp;quot;commands&amp;quot; with Reference 1, and finally &amp;quot;of the party&amp;quot; with Reference 2 (all ignoring capitalization).
+    In contrast, Candidate 2 exhibits far fewer matches, and their extent is less.
+    It is clear that a program can rank Candidate 1 higher than Candidate 2 simply by comparing ngram matches between each candidate translation and the reference translations.
+    Experiments over large collections of translations presented in Section 5 show that this ranking ability is a general phenomenon, and not an artifact of a few toy examples.
+    The primary programming task for a BLEU implementor is to compare n-grams of the candidate with the n-grams of the reference translation and count the number of matches.
+    These matches are positionindependent.
+    The more the matches, the better the candidate translation is.
+    For simplicity, we first focus on computing unigram matches.
+    The cornerstone of our metric is the familiar precision measure.
+    To c

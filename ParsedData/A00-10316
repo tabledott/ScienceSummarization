@@ -1,0 +1,9 @@
+ to intuition, this yields better results than the context-dependent variant.
+    Due to sparse-data problems, one cannot estimate a different set of As for each trigram.
+    Therefore, it is common practice to group trigrams by frequency and estimate tied sets of As.
+    However, we are not aware of any publication that has investigated frequency groupings for linear interpolation in part-of-speech tagging.
+    All groupings that we have tested yielded at most equivalent results to contextindependent linear interpolation.
+    Some groupings even yielded worse results.
+    The tested groupings included a) one set of As for each frequency value and b) two classes (low and high frequency) on the two ends of the scale, as well as several groupings in between and several settings for partitioning the classes.
+    The values of A1, A2, and A3 are estimated by deleted interpolation.
+    This technique successively removes each trigram from the training corpus and estimates best values for the As from all other ngra

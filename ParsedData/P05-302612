@@ -1,0 +1,8 @@
+ity of running the oracle system, several practical restrictions were imposed.
+    First, the oracle system only had access to the top 1000 translation hypotheses produced by MEMT for each sentence.
+    While this does not guarantee finding the best translation that the decoder can produce, this method provides a good approximation.
+    We also ran the oracle experiment only on the first 140 sentences of the test sets due to time constraints.
+    All the system performances are measured using the METEOR evaluation metric (Lavie, Sagae et al., 2004).
+    METEOR was chosen since, unlike the more commonly used BLEU metric (Papineni et al., 2002), it provides reasonably reliable scores for individual sentences.
+    This property is essential in order to run our oracle experiments.
+    METEOR produces scores in the range of [0,1], based on a combination of unigram precision, unigram recall and an explicit penalty related to the average length of matched segments between the evaluated translation and its reference.

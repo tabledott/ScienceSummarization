@@ -1,0 +1,9 @@
+ibution over state sequences conditioned on any given input.
+    With such a model M we should be able to compute the conditional probability PM(s|o) of any state sequence s = {s0, ... , sN} given some observed input sequence o = {o0, ... , oN}.
+    One can then sample sequences from the conditional distribution defined by the model.
+    These samples are likely to be in high probability areas, increasing our chances of finding the maximum.
+    The challenge is how to sample sequences efficiently from the conditional distribution defined by the model.
+    Gibbs sampling provides a clever solution (Geman and Geman, 1984).
+    Gibbs sampling defines a Markov chain in the space of possible variable assignments (in this case, hidden state sequences) such that the stationary distribution of the Markov chain is the joint distribution over the variables.
+    Thus it is called a Markov Chain Monte Carlo (MCMC) method; see Andrieu et al. (2003) for a good MCMC tutorial.
+    In practical terms, this means that we can w

@@ -1,0 +1,10 @@
+pect that this solution will simply lower, somewhat, both the baseline and the tagger performance.
+    Finally, we adopted a beginning (B) and continuation of entity (I) plus no label (0), encoding; i.e., the actual class space defines 83 labels.
+    The supersense tagger was trained on the Semcor datasets SEM and SEMv.
+    The only free parameter to set in evaluation is the number of iterations to perform T (cf.
+    Algorithm 1).
+    We evaluated the model&#8217;s accuracy on Semcor by splitting the SEM data randomly in training, development and evaluation.
+    In a 5-fold cross-validation setup the tagger was trained on 4/5 of the SEM data, the remaining data was split in two halves, one used to fix T the other for evaluating performance on test.
+    The full SEMv data was always added to the training portion of SEM.
+    We also evaluated the model on the Senseval-3 data, using the same value for T set by cross-validation on the SEM data5.
+    The ordering of the training instances is randomized across diff

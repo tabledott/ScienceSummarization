@@ -1,0 +1,6 @@
+ to a tagged sequence of words x = ht, wi is the product of a sequence of local portions of the graphical model, one from each time slice.
+    For example, in the left-to-right CMM shown in figure 1(a), That is, the replicated structure is a local model P(t0|t&#8722;1, w0).2 Of course, if there are too many conditioned quantities, these local models may have to be estimated in some sophisticated way; it is typical in tagging to populate these models with little maximum entropy models.
+    For example, we might populate a model for P(t0|t&#8722;1, w0) with a maxent model of the form: In this case, the w0 and t&#8722;1 can have joint effects on t0, but there are not joint features involving all three variables (though there could have been such features).
+    We say that this model uses the feature templates ht0, t&#8722;1i (previous tag features) and ht0, w0i (current word features).
+    Clearly, both the preceding tag t&#8722;1 and following tag t+1 carry useful information about a current tag t0.
+    Unidire

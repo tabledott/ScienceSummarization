@@ -1,0 +1,10 @@
+ers.
+    This might be due to the fact that EM estimation at each intermediate step is not reliable, since we only have a small amount of aligned sentences that are truly parallel.
+    The EM learner is therefore weak when applied to bilingual sentences from very-non-parallel corpus.
+    We decided to try using parallel corpora to initialize the EM estimation, as in Zhao and Vogel (2002).
+    The results are discussed in Section 6.
+    This step augments the earlier matched documents by the &#8220;find-one-get-more&#8221; principle.
+    From the set of aligned sentence pairs, we look for other documents, judged to be dissimilar in the first step, that contain one or more of these sentence pairs.
+    We further find other documents that are similar to each of the monolingual documents found.
+    This new set of documents is likely to be off-topic, yet contains segments that are on-topic.
+    Following our new alignment principle, we believe that these documents might still contain more parallel sentence candid

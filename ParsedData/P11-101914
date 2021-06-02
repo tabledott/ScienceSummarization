@@ -1,0 +1,7 @@
+ough the CLC contains information about the linguistic errors committed (see Section 2), we try to extract an error-rate in a way that doesn&#8217;t require manually tagged data.
+    However, we also use an error-rate calculated from the CLC error tags to obtain an upper bound for the performance of an automated error estimator (true CLC error-rate).
+    In order to estimate the error-rate, we build a trigram language model (LM) using ukWaC (ukWaC LM) (Ferraresi et al., 2008), a large corpus of English containing more than 2 billion tokens.
+    Next, we extend our language model with trigrams extracted from a subset of the texts contained in the CLC (CLC LM).
+    As the CLC contains texts produced by second language learners, we only extract frequently occurring trigrams from highly ranked scripts to avoid introducing erroneous ones to our language model.
+    A word trigram in test data is counted as an error if it is not found in the language model.
+    We compute presence/absence efficiently using a Bloom f

@@ -1,0 +1,10 @@
+ paper.
+    The class of synchronous parsers includes some algorithms for word alignment.
+    A translation lexicon (weighted or not) can be viewed as a degenerate MTG (not in GCNF) where every production has a link of terminals on the RHS.
+    Under such an MTG, the logic of word alignment is the one in Melamed (2003)&#8217;s Parser A, but without Compose inferences.
+    The only other difference is that, instead of a single item, the Goal of word alignment is any set of items that covers all dimensions of the input.
+    This logic can be used with the expectation semiring (Eisner, 2002) to find the maximum likelihood estimates of the parameters of a word-to-word translation model.
+    An important application of Parser C is parameter estimation for probabilistic MTGs (PMTGs).
+    Eisner (2002) has claimed that parsing under an expectation semiring is equivalent to the Inside-Outside algorithm for PCFGs.
+    If so, then there is a straightforward generalization for PMTGs.
+    Parameter estimation is beyond t

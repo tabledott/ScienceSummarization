@@ -1,0 +1,6 @@
+differences in vocabulary, the grammar of tweets is quite different from edited news text.
+    For instance, tweets often start with a verb (where the subject &#8216;I&#8217; is implied), as in: &#8220;watchng american dad.&#8221; To overcome these differences in style and vocabulary, we manually annotated a set of 800 tweets (16K tokens) with tags from the Penn TreeBank tag set for use as in-domain training data for our POS tagging system, T-POS.4 We add new tags for the Twitter specific phenomena: retweets, @usernames, #hashtags, and urls.
+    Note that words in these categories can be tagged with 100% accuracy using simple regular expressions.
+    To ensure fair comparison in Table 2, we include a postprocessing step which tags these words appropriately for all systems.
+    To help address the issue of OOV words and lexical variations, we perform clustering to group together words which are distributionally similar (Brown et al., 1992; Turian et al., 2010).
+    In particular, we perform hierarchical cluste

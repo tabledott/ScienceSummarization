@@ -1,0 +1,10 @@
+del and the parser output.
+  
+  
+    This section describes two parsing models for CCG.
+    The first defines the probability of a dependency structure, and the second&#8212;the normal-form model&#8212;defines the probability of a single derivation.
+    In many respects, modeling single derivations is simpler than modeling dependency structures, as the rest of the article will demonstrate.
+    However, there are a number of reasons for modeling dependency structures.
+    First, for many applications predicate&#8211;argument dependencies provide a more useful output than derivations, and the parser evaluation is over dependencies; hence it would seem reasonable to optimize over the dependencies rather than the derivation.
+    Second, we want to investigate, for the purposes of parse selection, whether there is useful information in the nonstandard derivations.
+    We can test this by defining the probability of a dependency structure in terms of all the derivations leading to that structure, rather than emphas

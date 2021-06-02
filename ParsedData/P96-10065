@@ -1,0 +1,11 @@
+ &amp;quot;falls&amp;quot;), etc.
+    The sense of a morphologically inflected content word is the sense of its uninflected form.
+    LEXAS follows this convention by first converting each word in an input sentence into its morphological root using the morphological analyzer of WORD NET, before assigning the appropriate word sense to the root form.
+  
+  
+    LEXAS performs WSD by first learning from a training corpus of sentences in which words have been pre-tagged with their correct senses.
+    That is, it uses supervised learning, in particular exemplar-based learning, to achieve WSD.
+    Our approach has been fully implemented in the program LEXAS.
+    Part of the implementation uses PEBLS (Cost and Salzberg, 1993; Rachlin and Salzberg, 1993), a public domain exemplar-based learning system.
+    LEXAS builds one exemplar-based classifier for each content word w. It operates in two phases: training phase and test phase.
+    In the training phase, LEXAS is given a set S of sentences in the training corpus in 

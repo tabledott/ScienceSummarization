@@ -1,0 +1,8 @@
+SMT system may learn the internal reordering of specific common phrases, but it cannot generalize to unseen phrases that share the same linguistic structure.
+    In addition, these systems are limited to phrases contiguous in both source and target, and thus cannot learn the generalization that English not may translate as French ne...pas except in the context of specific intervening words.
+  
+  
+    The hope in the SMT community has been that the incorporation of syntax would address these issues, but that promise has yet to be realized.
+    One simple means of incorporating syntax into SMT is by re-ranking the n-best list of a baseline SMT system using various syntactic models, but Och et al. (04) found very little positive impact with this approach.
+    However, an n-best list of even 16,000 translations captures only a tiny fraction of the ordering possibilities of a 20 word sentence; re-ranking provides the syntactic model no opportunity to boost or prune large sections of that search space.
+    Inversio

@@ -1,0 +1,11 @@
+ include zero-one loss (exact match), precision, recall, F1 (specifically EVALB here), and so on.
+    Of course, the naive version of this process is intractable: we have to loop over all (pairs of) possible parses.
+    Additionally, it requires parse likelihoods P(TP |w, G), which are tractable, but not trivial, to compute for split models.
+    There are two options: limit the predictions to a small candidate set or choose methods for which dynamic programs exist.
+    For arbitrary loss functions, we can approximate the minimum-risk procedure by taking the min over only a set of candidate parses TP.
+    In some cases, each parse&#8217;s expected risk can be evaluated in closed form.
+    Exact match (likelihood) has this property.
+    In general, however, we can approximate the expectation with samples from P(T |w, G).
+    The method for sampling derivations of a PCFG is given in Finkel et al. (2006) and Johnson et al.
+    (2007).
+    It requires a single inside-outside computation per sentence and is then ef

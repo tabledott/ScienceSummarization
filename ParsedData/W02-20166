@@ -1,0 +1,9 @@
+c features related to the modifier and modifiee, and the output from the model is either of the tags (D or O).
+    In training, the model simulates the parsing algorithm by consulting the correct answer from the training annotated corpus.
+    During the training, positive (D) and negative (O) examples are collected.
+    In testing, the model consults the trained system and parses the input with the cascaded chunking algorithm.
+    We think this proposed cascaded chunking model has the following advantages compared with the traditional probabilistic models.
+    If we use the CYK algorithm, the probabilistic model requires O(n3) parsing time, (where n is the number of segments in a sentence.).
+    On the other hand, the cascaded chunking model requires O(n2) in the worst case when all segments modify the rightmost segment.
+    The actual parsing time is usually lower than O(n2), since most of segments modify segment on its immediate right hand side.
+    Furthermore, in the cascaded chunking model, the training 

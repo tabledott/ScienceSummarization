@@ -1,0 +1,6 @@
+atures 0(t, m).
+    These features capture the intuition that a given Wikipedia title t is more likely to be referred to by mention m appearing in document d if the Wikipedia page for t has high textual similarity to d, or if the context surrounding hyperlinks to t are similar to m&#8217;s context in d. For each Wikipedia title t, we construct a top200 token TF-IDF summary of the Wikipedia page t, which we denote as Text(t) and a top-200 token TF-IDF summary of the context within which t was hyperlinked to in Wikipedia, which we denote as Context(t).
+    We keep the IDF vector for all tokens in Wikipedia, and given an input mention m in a document d, we extract the TF-IDF representation of d, which we denote Text(d), and a TF-IDF representation of a 100-token window around m, which we denote Context(m).
+    This allows us to define four local features described in Table 1.
+    We additionally compute weighted versions of the features described above.
+    Error analysis has shown that in many cases the summari

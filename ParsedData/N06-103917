@@ -1,0 +1,8 @@
+uisiana&#8217;s coast)&#8221;, &#8220;PER+SBJ:hit (Katrina hit something)&#8221;, and &#8220;PER+SBJ:hit-OBJ:coast (Katrina hit some coast)&#8221;.
+    After taking all the basic patterns from every basic cluster, we compute the Inverse Cluster Frequency (ICF) of each unique basic pattern.
+    ICF is similar to the Inverse Document Frequency (IDF) of words, which is used to calculate the weight of each basic pattern for metaclustering.
+    Finally, we can perform metaclustering to obtain tables.
+    We compute the similarity between each basic cluster pair, as seen in Figure 6.
+    XA and XB are the set of cross-document entities from basic clusters cA and cB, respectively.
+    We examine all possible mappings of relations (parallel mappings of multiple entities) from both basic clusters, and find all the mappings M whose similarity score exceeds a certain threshold. wordsim(cA, cB) is the bag-of-words similarity of two clusters.
+    As a weighting function we used ICF: We then sort the similarities of all po

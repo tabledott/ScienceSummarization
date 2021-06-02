@@ -1,0 +1,9 @@
+lgorithm (not necessarily with the parsing table construction algorithm).
+    The LR paring algorithm is one of the most efficient parsing algorithms.
+    It is totally deterministic, and no backtracking or search is involved.
+    Unfortunately, we cannot directly adopt the LR parsing technique for natural languages, because it is applicable only to a small subset of context-free grammars called LR grammars, and it is almost certain that any practical natural language grammars are not LR.
+    If a grammar is non-LR, its parsing table will have multiple entries;1 one or more of the action table entries will be multiply defined (Shieber 1983).
+    Figures 2.1 and 2.2 show an example of a non-LR grammar and its parsing table.
+    Grammar symbols starting with &amp;quot;s&amp;quot; represent pre-terminals.
+    Entries &amp;quot;sh n&amp;quot; in the action table (the left part of the table) indicate the action &amp;quot;shift one word from input buffer onto the stack, and go to state n&amp;quot;.
+    Entries &amp

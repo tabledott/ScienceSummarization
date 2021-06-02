@@ -1,0 +1,11 @@
+gt; 0 dictates the level of regularization in the model.
+    We define the initial parameters (w0, v0) = arg max,,v L(w, v; q0).
+    These parameters can be found using conventional methods for estimating the parameters of regularized log-likelihood functions (in our case we use LBFGS (Liu and Nocedal, 1989)).
+    Note that the gradient of the log-likelihood function can be calculated using the inside-outside algorithm applied to projective dependency parse structures, or the matrix-tree theorem applied to non-projective structures.
+    Step 2: Estimation of the Generative Models.
+    In this step, expected count vectors r1 ... rk are first calculated, based on the distribution p(y|x; w0, v0, q0).
+    Generative model parameters Oj,a are calculated through the definition in Eq.
+    6; these estimates define updated generative models q1j for j = 1... k through Eq.
+    4.
+    We refer to the new values for the generative models as q1.
+    Step 3: Re-estimation of w and v. In the final step, w1 and v1 are estima

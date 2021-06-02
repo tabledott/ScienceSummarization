@@ -1,0 +1,5 @@
+, 0)}, and Hi(x) = Uh'EHi&#8722;1(x)ADV(h') for i = 1... n. The full set of parses for a sentence x is then GEN(x) = Hn(x) where n is the length of x.
+    Under this definition GEN(x) can include a huge number of parses, and searching for the highest scoring parse, arg maxhEHn(x) &#934;(h) &#183; &#175;&#945;, will be intractable.
+    For this reason we introduce one additional function, FILTER(H), which takes a set of hypotheses H, and returns a much smaller set of &#8220;filtered&#8221; hypotheses.
+    Typically, FILTER will calculate the score &#934;(h) &#183; &#945;&#175; for each h E H, and then eliminate partial analyses which have low scores under this criterion.
+    For example, a simple version of FILTER would take the top N highest scoring members of H for some constant N. We can then redefine the set of partial analyses as follows (we use .77i(x) to denote the set of filtered partial analyses for the first i words of the sentence): The parsing algorithm returns arg maxhEyn &#934;(h) &#183; &#175;&#

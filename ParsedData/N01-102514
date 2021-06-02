@@ -1,0 +1,12 @@
+the voting weights are given by the accuracy of the training data during the iteration of changing the frequency (distribution) of training data.
+    However, we cannot use the accuracy of the training data for voting weights, since SVMs do not depend on the frequency (distribution) of training data, and can separate the training data without any mis-classification by selecting the appropriate kernel function and the soft margin parameter.
+    In this paper, we introduce the following four weighting methods in our experiments:
+  
+  
+    We give the same voting weight to all systems.
+    This method is taken as the baseline for other weighting methods.
+    Dividing training data into portions, we employ the training by using portions, and then evaluate the remaining portion.
+    In this fashion, we will have individual accuracy.
+    Final voting weights are given by the average of these accuracies.
+    .
+    The value of , which represents the smallest diameter enclosing all of the training data, is approximat

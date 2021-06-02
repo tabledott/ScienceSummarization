@@ -1,0 +1,10 @@
+nvolves three steps.
+    (1) Basilisk automatically generates a set of extraction patterns for the corpus and scores each pattern based upon the number of seed words among its extractions.
+    This step is identical to the first step of Meta-Bootstrapping.
+    Basilisk then puts the best patterns into a Pattern Pool.
+    (2) All nouns3 extracted by a pattern in the Pattern Pool are put into a Candidate Word Pool.
+    Basilisk scores each noun based upon the set of patterns that extracted it and their collective association with the seed words.
+    (3) The top 10 nouns are labeled as the targeted semantic class and are added to the dictionary.
+    The bootstrapping process then repeats, using the original seeds and the newly labeled words.
+    The main difference between Basilisk and MetaBootstrapping is that Basilisk scores each noun based on collective information gathered from all patterns that extracted it.
+    In contrast, Meta-Bootstrapping identifies a single best pattern and assumes that everything it 

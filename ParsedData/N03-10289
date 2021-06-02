@@ -1,0 +1,7 @@
+compare those algorithms to generalized iterative scaling (GIS) (Darroch and Ratcliff, 1972), non-preconditioned CG, and voted perceptron training (Collins, 2002).
+    All algorithms except voted perceptron maximize the penalized loglikelihood: &#57738;&#57738; = arg maxa L&#57741;a.
+    However, for ease of exposition, this discussion of training methods uses the unpenalized log-likelihood La.
+    Conjugate-gradient (CG) methods have been shown to be very effective in linear and non-linear optimization (Shewchuk, 1994).
+    Instead of searching along the gradient, conjugate gradient searches along a carefully chosen linear combination of the gradient and the previous search direction.
+    CG methods can be accelerated by linearly transforming the variables with preconditioner (Nocedal and Wright, 1999; Shewchuk, 1994).
+    The purpose of the preconditioner is to improve the condition number of the quadratic form that locally approximates the objective function, so the inverse of Hessian is reasonable precond

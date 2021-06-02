@@ -1,0 +1,10 @@
+he final accuracies for test data.
+    The PKE with a Cubic Kernel tends to make Q large (e.g., |Q |= 2.32 million for JWS, |Q |= 8.26 million for JDP).
+    To reduce the size of Q, we examined simple frequency-based pruning experiments.
+    Our extension is to simply give a prior threshold &#958;(= 1, 2, 3, 4 ...), and erase all subsets which occur in less than &#958; support examples.
+    The calculation of frequency can be similarly conducted by the PrefixSpan algorithm.
+    Tables 5 and 6 show the results of frequency-based pruning, when we fix &#963;=0.005 for JWS, and &#963;=0.0005 for JDP.
+    In JDP, we can make the size of set Q about one third of the original size.
+    This reduction gives us not only a slight speed increase but an improvement of accuracy (89.29%&#8594;89.34%).
+    Frequency-based pruning allows us to remove subsets that have large weight and small frequency.
+    Such subsets may be generated from errors or special outliers in the training examples, which sometimes cause an overfitt

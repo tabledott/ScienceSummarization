@@ -1,0 +1,11 @@
+me we correctly split Grundrechte.
+    By splitting all the words on the German side of the parallel corpus, we acquire a vast amount of splitting knowledge (for our data, this covers 75,055 different words).
+    This knowledge contains for instance, that Grundrechte was split up 213 times, and kept together 17 times.
+    When making splitting decisions for new texts, we follow the most frequent option based on the splitting knowledge.
+    If the word has not been seen before, we use the frequency method as a back-off.
+  
+  
+    A typical error of the method presented so far is that prefixes and suffixes are often split off.
+    For instance, the word folgenden (English: following) is broken off into folgen (English: consequences) and den (English: the).
+    While this is nonsensical, it is easy to explain: The word the is commonly found in English sentences, and therefore taken as evidence for the existence of a translation for den.
+    Another example for this is the word Voraussetzung (English: condition),

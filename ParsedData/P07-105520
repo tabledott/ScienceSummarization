@@ -1,0 +1,9 @@
+del described in Section 2 will be called Joint-Structured.
+    All models use the same basic predicate space: unigram, bigram, trigram conjoined with part-of-speech, plus back-offs of these (see Section 2.1.2 for more).
+    However, due to the structure of the model and its label space, the feature space of each might be different, e.g., the document classifier will only conjoin predicates with the document label to create the feature set.
+    All models are trained using the MIRA learning algorithm.
+    Results for each model are given in the first four rows of Table 2.
+    These results were gathered using 10-fold cross validation with one fold for development and the other nine folds for evaluation.
+    This table shows that classifying sentences in isolation from one another is inferior to accounting for a more global context.
+    A significant increase in performance can be obtained when labeling decisions between sentences are modeled (Sentence-Structured).
+    More interestingly, even further gains ca

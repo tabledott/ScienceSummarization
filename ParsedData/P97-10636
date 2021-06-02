@@ -1,0 +1,6 @@
+ociations can be filtered out by a simple competition heuristic: Whenever several word tokens ui in one half of the bitext co-occur with a particular word token v in the other half of the bitext, the word that is most likely to be v's translation is the one for which the likelihood L(u, v) of translational equivalence is highest.
+    The competitive linking algorithm implements this heuristic: N.B.
+    : A and A- need not sum to 1, because they are conditioned on different events. would be the winners in any competitions involving u or v. The competitive linking algorithm is more greedy than algorithms that try to find a set of link types that are jointly most probable over some segment of the bitext.
+    In practice, our linking algorithm can be implemented so that its worst-case running time is 0(/m), where 1 and m are the lengths of the aligned segments.
+    The simplicity of the competitive linking algorithm depends on the one-to-one assumption: Each word translates to at most one other word.
+    Certainl

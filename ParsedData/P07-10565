@@ -1,0 +1,5 @@
+ high correlation with &#8220;excellent&#8221; and low correlation with &#8220;awful&#8221; on unlabeled data, then we can tentatively align them.
+    After learning a classifier for computer reviews, when we see a cell-phone feature like &#8220;goodquality reception&#8221;, we know it should behave in a roughly similar manner to &#8220;fast dual-core&#8221;.
+    Given labeled data from a source domain and unlabeled data from both source and target domains, SCL first chooses a set of m pivot features which occur frequently in both domains.
+    Then, it models the correlations between the pivot features and all other features by training linear pivot predictors to predict occurrences of each pivot in the unlabeled data from both domains (Ando and Zhang, 2005; Blitzer et al., 2006).
+    The Eth pivot predictor is characterized by its weight vector wt; positive entries in that weight vector mean that a non-pivot feature (like &#8220;fast dualcore&#8221;) is highly correlated with the corresponding pivot (like &#

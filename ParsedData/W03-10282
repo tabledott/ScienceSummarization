@@ -1,0 +1,8 @@
+hes are presented: n-grams; noun phrase (NP) chunks; and terms matching any of a set of part-of-speech (POS) tag sequences.
+    Four different features are used: term frequency, collection frequency, relative position of the first occurrence, and the POS tag(s) assigned to the term.
+  
+  
+    Treating the automatic keyword extraction as a supervised machine learning task means that a classifier is trained by using documents with known keywords.
+    The trained model is subsequently applied to documents for which no keywords are assigned: each defined term from these documents is classified either as a keyword or a non-keyword; or&#8212;if a probabilistic model is used&#8212;the probability of the defined term being a keyword is given.
+    Turney (2000) presents results for a comparison between an extraction model based on a genetic algorithm and an implementation of bagged C4.5 decision trees for the task.
+    The terms are all stemmed unigrams, bigrams, and trigrams from the documents, after stopword removal

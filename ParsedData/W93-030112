@@ -1,0 +1,7 @@
+h the output of char_align because it is more robust than alternative sentence-based methods.
+    This choice, of course, requires certain modifications to the model of Brown et al. to accommodate as input an initial rough alignment (such as produced by char_align) instead of pairs of aligned sentences.
+    It is also useful to reduce the number of parameters that we are trying to estimate, because we have much less data and much more noise.
+    The paragraphs below describe our modifications which are intended to meet these somewhat different requirements.
+    The two major modifications are: (a) replacing the sentence-by-sentence alignment with a single global alignment for the entire corpus, and (b) replacing the set of probabilities a(ijj, in,!) with a small set of offset probabilities.
+    Word_align starts with an initial rough alignment, I, which maps French positions to English positions (if the mapping is partial, we use linear extrapolation to make it complete).
+    Our goal is to find a global alig

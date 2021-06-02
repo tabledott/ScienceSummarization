@@ -1,0 +1,7 @@
+elihood estimation.
+    Phrasal SMT systems often use a model to score the ordering of a set of phrases.
+    One approach is to penalize any deviation from monotone decoding; another is to estimate the probability that a source phrase in position i translates to a target phrase in position j (Koehn et al., 03).
+    We attempt to improve on these approaches by incorporating syntactic information.
+    Our model assigns a probability to the order of a target tree given a source tree.
+    Under the assumption that constituents generally move as a whole, we predict the probability of each given ordering of modifiers independently.
+    That is, we make the following simplifying assumption (where c is a function returning the set of nodes modifying t): Furthermore, we assume that the position of each child can be modeled independently in terms of a head-relative position: Figure 3a demonstrates an aligned dependency tree pair annotated with head-relative positions; Figure 3b presents the same information in an alter

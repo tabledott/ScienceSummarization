@@ -1,0 +1,8 @@
+of the same label in a candidate argument sequence, together with the phrase types of the nodes labeled with that label.
+    For example, (NP-ARG0, WHNP-ARG0) is a common pattern of this form.
+    Variants of this feature template also indicate whether all repeated arguments are sisters in the parse tree, or whether all repeated arguments are adjacent in terms of word spans.
+    These features can provide robustness to parser errors, making it more likely to assign the same label to adjacent phrases that may have been incorrectly split by the parser.
+    In Section 5.4 we report results from the joint model and an ablation study to determine the contribution of each of the types of joint features.
+    Here we describe the application in testing of a joint model for semantic role labeling, using a local model PSRL and a joint re-ranking model PrSRL.
+    The local model PSRL is used to generate N non-overlapping joint assignments L1, ... , LN.
+    One option is to select the best Li according to PrSRL, as in Eq

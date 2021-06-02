@@ -1,0 +1,8 @@
+ic programming states, and then builds fine-grained analyses by splitting the most promising of coarse-grained states.
+    A prime example of this idea is from Goodman (1997), who describes amethod for producing a simple but crude approximate grammar of a standard context-free grammar.
+    He parses a sentence using the approximate grammar, and the results are used to constrain the search for a parse with the full CFG.
+    He finds that total parsing time is greatly reduced.
+    A somewhat different take on this paradigm is seen in the parser we use in this paper.
+    Here the parser first creates a parse forest based upon a much less complex version of the complete grammar.
+    In particular, it only looks at standard CFG features, the parent and neighbor labels.
+    Because this grammar encodes relatively little state information, its dynamic programming states are relatively coarse and hence there are comparatively few of them, so it can be efficiently parsed using a standard dynamic programming bottom-up 

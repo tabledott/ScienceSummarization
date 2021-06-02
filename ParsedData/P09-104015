@@ -1,0 +1,7 @@
+se the behavior of the system is identical to the simpler system 5p.
+    This is important, because it means that the best-case complexity of the deterministic parser is still O(n) and that the we can expect to observe the best case for all sentences with projective dependency trees.
+    The exact number of additional transitions needed to reach a terminal configuration is determined by the number of SWAP transitions.
+    Since SWAP moves one node from E to B, there will be one additional SHIFT for every SWAP, which means that the total number of transitions is 2n + 2k, where k is the number of SWAP transitions.
+    Given the condition that SWAP can only apply in a configuration c = ([a|i, j], B, A) if 0 &lt; i &lt; j, the number of SWAP transitions is bounded by n(n&#65533;1) 2 , which means that 2n + n(n &#8722; 1) = n + n2 is an upper bound on the number of transitions in a terminating sequence.
+    Hence, the worst-case complexity of the deterministic parser is O(n2).
+    The running time of a determinist

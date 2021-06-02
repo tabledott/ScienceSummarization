@@ -1,0 +1,11 @@
+int for our experiments.
+    CCG supertagging is more difficult than POS tagging because the set of &amp;quot;tags&amp;quot; assigned by the supertagger is much larger (398 in this implementation, compared with 45 POS tags).
+    The supertagger assigns CCG lexical categories (Steedman, 2000) which encode subcategorisation information.
+    Table 1 gives some examples.
+    The features used by each tagger are binary valued, and pair a tag with various elements of the context; for example: fi(x ) = { 1 if word(x)= the &amp; y = DT ,y
+  
+  
+    (12) word(x) = the is an example of what Ratnaparkhi calls a contextual predicate.
+    The contextual predicates used by the two taggers are given in Table 2, where w, is the ith word and ti is the ith tag.
+    We insert a special end of sentence symbol at sentence boundaries so that the features looking forwards and backwards are always defined.
+    The supertagger uses POS tags as additional features, which Clark (2002) found improved performance significantly, and does 

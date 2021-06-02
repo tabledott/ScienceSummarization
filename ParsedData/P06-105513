@@ -1,0 +1,7 @@
+ every symbol in two, train, and then measure for each annotation the loss in likelihood incurred when removing it.
+    If this loss is small, the new annotation does not carry enough useful information and can be removed.
+    What is more, contrary to the gain in likelihood for splitting, the loss in likelihood for merging can be efficiently approximated.7 Let T be a training tree generating a sentence w. Consider a node n of T spanning (r, t) with the label A; that is, the subtree rooted at n generates wT:t and has the label A.
+    In the latent model, its label A is split up into several latent labels, Ax.
+    The likelihood of the data can be recovered from the inside and outside probabilities at n: Consider merging, at n only, two annotations A1 and A2.
+    Since A now combines the statistics of A1 and A2, its production probabilities are the sum of those of A1 and A2, weighted by their relative frequency p1 and p2 in the training data.
+    Therefore the inside score of A is: Since A can be produced as A

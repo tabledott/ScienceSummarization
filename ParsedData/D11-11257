@@ -1,0 +1,8 @@
+rbitrary weight vector for the first iteration).
+    For its optimization phase, MERT defines the loss function as follows: In other words, it prefers weight vectors w such that the gold function G scores Hw&#8217;s best policy as highly as possible (if Hw&#8217;s best policy is the same as G&#8217;s best policy, then there is zero loss).
+    Typically the optimization phase is implemented using Och&#8217;s line optimization algorithm (2003).
+    MERT has proven itself effective at tuning candidate spaces with low dimensionality.
+    However, it is often claimed that MERT does not scale well with dimensionality.
+    To test this claim, we devised the following synthetic data experiment: We used line optimization in the standard way, by generating 20 random starting weight vectors and hill-climbing on each independently until no further progress is made, then choosing the final weight vector that minimizes loss.
+    We tried various dimensionalities from 10 to 1000.
+    We repeated each setting three times, ge

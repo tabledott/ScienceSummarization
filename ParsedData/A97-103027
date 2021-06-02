@@ -1,0 +1,11 @@
+e and for person.
+    Names with low or zero scores are first tested as possible variants of names with high positive scores.
+    However, if they are incompatible with any, they are assigned a weak entity type.
+    Thus in the absence of any other evidence in the document, Beverly Hills is classified as a ?PERSON.
+    (?PERSON is preferred over ?PLACE as it tends to be the correct choice most of the time.)
+    This analysis of course can be over-ridden by a name database listing Beverly Hills as a place.
+    Further disambiguation may be possible during aggregation across documents.
+    As mentioned before, during aggregation, linked groups from different documents are merged if their canonical forms are identical.
+    As a rule, their entity types should be identical as well, to prevent a merge of Boston (PLACE) and Boston (ORG).
+    Weak entity types, however, are allowed to merge with stronger entity types.
+    Thus, Jordan Hills (?PERSON) from one document is aggregated with Jordan Hills (PERSON) from an

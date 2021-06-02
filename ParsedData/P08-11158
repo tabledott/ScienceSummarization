@@ -1,0 +1,7 @@
+aking up f into a sequence of phrases f1, where each phrase fz can contain one or more contiguous words and is translated into a target phrase ez of one or more contiguous words.
+    Each word in f must be translated exactly once.
+    To generalize this model to word lattices, it is necessary to choose both a path through the lattice and a partitioning of the sentence this induces into a sequence of phrases f1.
+    Although the number of source phrases in a word lattice can be exponential in the number of nodes, enumerating the possible translations of every span in a lattice is in practice tractable, as described by Bertoldi et al. (2007).
+    We adapted the Moses phrase-based decoder to translate word lattices (Koehn et al., 2007).
+    The unmodified decoder builds a translation hypothesis from left to right by selecting a range of untranslated words and adding translations of this phrase to the end of the hypothesis being extended.
+    When no untranslated words remain, the translation process is complete.

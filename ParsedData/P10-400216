@@ -1,0 +1,11 @@
+sm=scfg grammar=grammar.mt03.scfg.gz add pass through rules=true scfg max span limit=15 feature function=LanguageModel en.3gram.pruned.lm.gz -o 3 feature function=WordPenalty intersection strategy=cube pruning cubepruning pop limit=30 8 Future work C. Dyer.
+    2010.
+    Two monolingual parses are better than one (synchronous parse).
+    In Proc. of HLT-NAACL. cdec continues to be under active development.
+    We are taking advantage of its modular design to study alternative algorithms for language model integration.
+    Further training pipelines are under development, including minimum risk training using a linearly decomposable approximation of BLEU (Li and Eisner, 2009), and MIRA training (Chiang et al., 2009).
+    All of these will be made publicly available as the projects progress.
+    We are also improving support for parallel training using Hadoop (an open-source implementation of MapReduce).
+  
+  
+    This work was partially supported by the GALE program of the Defense Advanced Research Projects Ag

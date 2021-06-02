@@ -1,0 +1,9 @@
+ the sparseness of data, by reducing the effects of phenomena which mask redundancy.
+    Name Factorization: We use a name classifier to tag all proper names in the corpus as belonging to one of several categories&#8212;person, location, and organization, or as an unidentified name.
+    Each name is replaced with its category label, a single token.
+    The name classifier also factors out other out-ofvocabulary (OOV) classes of items: dates, times, numeric and monetary expressions.
+    Name classification is a well-studied subject, e.g., (Collins and Singer, 1999).
+    The name recognizer we use is based on lists of common name markers&#8212;such as personal titles (Dr., Ms.) and corporate designators (Ltd., GmbH)&#8212;and hand-crafted rules.
+    Parsing: After name classification, we apply a general English parser, from Conexor Oy, (Tapanainen and J&#168;arvinen, 1997).
+    The parser recognizes the name tags generated in the preceding step, and treats them as atomic.
+    The parser&#8217;s output is a set 

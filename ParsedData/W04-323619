@@ -1,0 +1,9 @@
+loyed in the character-based POS tagger described in section 4.1, except that features (g) and (h) are replaced with those listed below.
+    In the following templates, B refers to the boundary tag assigned.
+    For example, given the character sequence &#8220;V AL MA&#8221;, when considering the character &#8220;A&#8221;, template (g) results in the feature B(C&#8722;1W 0 )POS(C&#8722;1W 0 )=s_PN to be set to 1.
+    (assuming &#8220;k&#8221; was tagged as PN).
+    Note that this approach is essentially that used by (Luo, 2003), since his parser performs both word segmentation and POS tagging (as well as parsing) in one unified approach.
+    The features we used are similar to his tag features, except that we did not use features with three consecutive characters, since we found that the use of these features did not improve accuracy.
+    We also added additional features (d) &#8722; (f).
+    Beam search algorithm is used with N = 3 during the testing phase.
+    10-fold CV on CTB was carried out again, using 

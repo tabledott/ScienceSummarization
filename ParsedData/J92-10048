@@ -1,0 +1,8 @@
+lexity on a test sentence.
+  
+  
+    This section describes several aspects of the system in more detail, including how the grammar is generated and trained, how the control strategy operates, how constraints (both syntactic and semantic) are enforced, and practical issues having to do with efficiency and ease of debugging.
+    TINA is based on a context-free grammar augmented with a set of features used to enforce syntactic and semantic constraints.
+    The grammar is converted to a network structure by merging common elements on the right-hand side (RHS) of all rules sharing the same left-hand side (LHS) category Each LHS category becomes associated with a parent node whose children are the collection of unique categories appearing in the RHSs of all the rules in the common set.
+    Each parent node establishes a twodimensional array of permissible links among its children, based on the rules.
+    Each child can link forward to all of the children that appear adjacent to that child in any of the shared rule

@@ -1,0 +1,10 @@
+not use the morphological features, since the POS tags provide equivalent information.
+    For the supertagger, t, is the lexical category of the ith word.
+    The conditional probability of a tag sequence y ...y, given a sentence w wn is approximated as follows: where x; is the context of the ith word.
+    The tagger returns the most probable sequence for the sentence.
+    Following Ratnaparkhi, beam search is used to retain only the 20 most probable sequences during the tagging process;2 we also use a &amp;quot;tag dictionary&amp;quot;, so that words appearing 5 or more times in the data can only be assigned those tags previously seen with the word.
+  
+  
+    We develop and test our improved POS tagger (c &amp;c) using the standard parser development methodology on the Penn Treebank WSJ corpus.
+    Table 3 shows the number of sentences and words in the training, development and test datasets.
+    As well as evaluating the overall accuracy of the taggers (Acc), we also calculate the accuracy on previously un

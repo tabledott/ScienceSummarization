@@ -1,0 +1,9 @@
+.berkeley.edu/~taskar/extragradient.pdf for more details.The key subroutine of the algorithm is Eu clidean projection onto the feasible sets Z i . In.
+			case of word alignment, Z i is the convex hull of bipartite matchings and the problem reduces to the much-studied minimum cost quadratic flow problem (Bertsekas et al, 1997).
+			The projection problem P Z i (z? i ) is given by min z ? jk 1 2 (z? i,jk ? z i,jk )2 s.t. ? j z i,jk ? 1, ? k z i,jk ? 1, 0 ? z i,jk ? 1.We can now use a standard reduction of bipar tite matching to min cost flow by introducing a source node connected to all the words in one sentence and a sink node connected to all thewords in the other sentence, using edges of ca pacity 1 and cost 0.
+			The original edges jk have a quadratic cost 1 2 (z? i,jk ? z i,jk )2 and capacity 1.
+			Now the minimum cost flow from the source to the sink computes projection of z?
+			i onto Z i We use standard, publicly-available code for solving this problem (Guerriero and Tseng, 2002).
+	
+	
+			We applied this 

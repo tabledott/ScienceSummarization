@@ -1,0 +1,7 @@
+present the n-best output se quences from the entity extraction classifiers): (1) [The president] s1 walked away from [themeeting] o1, [ [revealing] o2 his disap pointment] o3 with the deal.
+			(2) [The monster] s2 walked away, [revealing] o4 a little box hidden underneath.For these sentences, we construct training in stances for L1,1, L1,2, and L1,3, but not L2,4, which in fact has very similar sentential structureas L1,2, and hence could confuse the learning al gorithm.
+			4.1 Relation extraction features.
+			The training and test instances for each (potential) link Li,j (with opinion candidate entity Oi and source candidate entity Sj) include the following features.
+			opinion entity word: the words contained in Oi.phrase type: the syntactic category of the con stituent in which the entity is embedded, e.g. NP or VP.
+			We encode separate features for Oi and Sj . grammatical role: the grammatical role of the constituent in which the entity is embedded.
+			Grammatical roles are derived from dependencyparse 

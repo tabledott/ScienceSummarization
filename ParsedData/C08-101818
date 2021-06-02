@@ -1,0 +1,8 @@
+o encourage coherence and inform lexical se 140 SNP VP VBZ does RB goHe not ne pasIl va PRP VP NP He Il PRP go vaVP VP VBZ does RB not ne pas VP S NP VP 1 2 1 1 1 2 Figure 2: Tree-to-string grammar extraction using the GHKM algorithm, showing the aligned sentence pair and the resulting rules as tree fragments and their matching strings.
+			The boxed numbers denote variables.
+			VP VBZ does RB not ne pas VP n ' ne ne peut ...
+			VP MD will RB not VB VP VBP do RB not VB 1 1 1 1 1 1 1 Figure 3: Pivoting the [VP does not VP] fragment.
+			lection we incorporate a ngram language model(LM) as a feature.
+			This requires adapting the scor ing function, ?, in (2) to allow features over target ngrams: ?(y) = ? r?y ??(r, S(y)), ??+ ? m?T (y) ??(m,S(y)), ??
+			(5)where m are the ngrams and ? is a new fea ture function over these ngrams (we use only one ngram feature: the trigram log-probability).
+			Sadly, the scoring function in (5) renders the chart-based search used for training and decoding intractable.In order to pr

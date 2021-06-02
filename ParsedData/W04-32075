@@ -1,0 +1,7 @@
+d corpora from which bilingual rewrite probabilities could be estimated; this rules out the possibility of supervised training of the joint rules.
+    Second, separating the probabilities allows separate estimation of the probabilities&#8212;resulting in two well-understood parameter estimation tasks which can be carried out independently.1 This factored modeling approach bears a strong resemblance to the factored monolingual parser of Klein and Manning (2002), which combined an English dependency model and an unlexicalized PCFG.
+    The generative model used by Klein and Manning consisted of multiplying the two component models; the model was therefore deficient.
+    We go a step farther, replacing the deficient generative model with a log-linear model.
+    The underlying parsing algorithm remains the same, but the weights are no longer constrained to sum to one.
+    (Hereafter, we assume weights are additive real values; a log-probability is an example of a weight.)
+    The weights may be estimated using di

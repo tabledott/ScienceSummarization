@@ -1,0 +1,8 @@
+asures their correlation with the source collocation, and keeps the triplets that score above the threshold.
+    This process is repeated until, for some value n &lt; k, no n-word element of 2(S) scores above the threshold.
+    Then Champollion selects the best translation among the top candidates in each group of i words, 1 &lt;i &lt; n &#8212; 1, and determines whether the selected translation is a single word, a flexible collocation, or a rigid collocation.
+    For rigid collocations, Champollion also reports the (fixed) order in which the words in the translation appear in the corpus.
+    Champollion operates in four consecutive stages.
+    Each of these stages corresponds to one step of the algorithm, with the exception of the main iteration stage, which covers steps 2 to 4 of the algorithm.
+    An additional preprocessing stage where indexing structures are created for fast access to the corpus is required when the corpus database is changed.
+    We describe the algorithm below, alternating each step wi

@@ -1,0 +1,9 @@
+ ACE corpus (Phase 2).
+    This corpus is divided into three parts, each corresponding to a different genre: newspaper texts (NPAPER), newswire texts (NWIRE), and broadcasted news transcripts (BNEWS).
+    Each of these is split into a train part and a devtest part.
+    Progress during the development phase was determined by using crossvalidation on only the training set for the NPAPER (COREF-PAIRWISE), the anaphoricity-coreference cascade system (AC-CASCADE), and the oracle which performs perfect linkage (ORACLE-LINK).
+    The first two systems make strictly local pairwise coreference decisions. section.
+    No human-annotated linguistic information is used in the input.
+    The corpus text was preprocessed with the OpenNLP Toolkit2 (i.e., a sentence detector, a tokenizer, a POS tagger, and a Named Entity Recognizer).
+    In our experiments, we consider only the true ACE mentions.
+    This is because our focus is on evaluating pairwise local approaches versus the global ILP approach rather than on building a 

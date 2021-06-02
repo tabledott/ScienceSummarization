@@ -1,0 +1,7 @@
+jedna is the syntactic head of Z, while je is its linear head in the projectivized representation.
+    Unlike Kahane et al. (1998), we do not regard a projectivized representation as the final target of the parsing process.
+    Instead, we want to apply an inverse transformation to recover the underlying (nonprojective) dependency graph.
+    In order to facilitate this task, we extend the set of arc labels to encode information about lifting operations.
+    In principle, it would be possible to encode the exact position of the syntactic head in the label of the arc from the linear head, but this would give a potentially infinite set of arc labels and would make the training of the parser very hard.
+    In practice, we can therefore expect a trade-off such that increasing the amount of information encoded in arc labels will cause an increase in the accuracy of the inverse transformation but a decrease in the accuracy with which the parser can construct the labeled representations.
+    To explore this tradeoff,

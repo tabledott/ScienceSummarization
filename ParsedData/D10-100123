@@ -1,0 +1,7 @@
+ar constraints, by strong duality we have Hence minimizing L(u) will recover the maximum value of the original problem.
+    This leaves open the question of how to recover the LP solution (i.e., the pair (x&#8727;1, x&#8727;2) that achieves this maximum); we discuss this point in section 6.2.
+    The dual L(u) is convex.
+    However, L(u) is not differentiable, so we cannot use gradient-based methods to optimize it.
+    Instead, a standard approach is to use a subgradient method.
+    Subgradients are tangent lines that lower bound a function even at points of non-differentiability: formally, a subgradient of a convex function L : Rn &#8594; R at a point u is a vector gu such that for all v, L(v) &#8805; L(u) + gu &#183; (v &#8722; u).
+    By standard results, the subgradient for L at a point u takes a simple form, gu = Ex* &#8722; Fx2, where The beauty of this result is that the values of xi and x2, and by implication the value of the subgradient, can be computed using oracles for the two arg max sub-problems

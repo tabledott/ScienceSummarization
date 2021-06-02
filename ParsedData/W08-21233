@@ -1,0 +1,8 @@
+ink cost was 0 for a correct de- pendency link with a correct label, 0.5 for a correct link with an incorrect label, and 1 for an incorrect link.
+  A widely used framework for fitting the weight vector is the max-margin model (Taskar et al., 2003), which is a generalization of the well- known support vector machines to general cost- based prediction problems.
+  Since the large num- ber of training examples and features in our case make an exact solution of the max-margin opti- mization problem impractical, we used the on- line passive?aggressive algorithm (Crammer et al., 183 2006), which approximates the optimization pro- cess in two ways: ?
+  The weight vector w is updated incremen- tally, one example at a time.
+  For each example, only the most violated con- straint is considered.
+  The algorithm is a margin-based variant of the per- ceptron (preliminary experiments show that it out- performs the ordinary perceptron on this task).
+  Al- gorithm 1 shows pseudocode for the algorithm.
+  Algorithm 1 The Online

@@ -1,0 +1,7 @@
+ of patterns that appear in two or three of these S-groups is called a cluster core.
+    We now group all patterns in other S-groups that have an overlap of more than 2/3 with the cluster core into a candidate pattern pool P. The set of all patterns in P that appear in at least two S-groups (among those that formed P) pattern cluster.
+    A pattern cluster that has patterns instantiated by at least half of the concept words is said to represent a relation.
+    A relation consists of pairs (S, X) where S is a concept word and X is the target of some S-pattern in a given pattern cluster.
+    Note that for a given S, there might be one or many values of X satisfying the relation.
+    As a final refinement, for each given S, we rank all such X according to pointwise mutual information with S and retain only the highest 2/3.
+    If most values of S have only a single corresponding X satisfying the relation and the rest have none, we try to automatically fill in the missing values by searching the corpus for releva

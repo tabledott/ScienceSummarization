@@ -1,0 +1,11 @@
+ distribution over trees defined by a PCFG.
+			This means that the posterior distribution on ? given a set of parse trees, P(?|t, ?), is also a Dirichlet distribution.
+			Applying Bayes?
+			rule, PG(?|t, ?) ?
+			PG(t|?)
+			PD(?|?)
+			( ? r?R ?fr(t)r )( ? r?R ??r?1r ) = ? r?R ?fr(t)+?r?1r which is a Dirichlet distribution with parameters f(t) + ?, where f(t) is the vector of production counts in t indexed by r ? R. We can thus write: PG(?|t, ?) = PD(?|f(t) + ?)which makes it clear that the production counts com bine directly with the parameters of the prior.
+			2.4 Markov chain Monte Carlo.
+			Having defined a prior on ?, the posterior distribu tion over t and ? is fully determined by a corpusw.
+			Unfortunately, computing the posterior probabil ity of even a single choice of t and ? is intractable,as evaluating the normalizing constant for this dis tribution requires summing over all possible parsesfor the entire corpus and all sets of production probabilities.
+			Nonetheless, it is possible to define al gori

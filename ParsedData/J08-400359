@@ -1,0 +1,5 @@
+d from many previous experiments under similar conditions, using crossvalidation or held-out subsets of the training data for tuning, but in these experiments they were kept fixed for all parsers and languages.
+    In order to reduce training times, the set of training instances derived from a given training set was split into smaller sets, for which separate multi-class classifiers were trained, using FPoS(R[0]), that is, the (finegrained) part of speech of the first node in the buffer, as the defining feature for the split.
+    The seven different parsers for each language were evaluated by running them on the dedicated test set from the CoNLL-X shared task, which consists of approximately 5,000 tokens for all languages.
+    Because the dependency graphs in the gold standard are always trees, each output graph was converted, if necessary, from a forest to a tree by attaching every root node i (i &gt; 0) to the special root node 0 with a default label ROOT.
+    Parsing accuracy was measured by the labeled at

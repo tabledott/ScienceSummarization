@@ -1,0 +1,7 @@
+ when the initial parallel corpus is very small, the amount of extracted data is also quite small.
+    This is due to the low coverage of the dictionary learned from that corpus.
+    Our candidate pair selection step (Section 2.2) discards pairs with too many unknown (or unrelated) words, according to the dictionary; thus, only few sentences fulfill the word-overlap condition of our filter.
+    As mentioned in Section 1, our goal is to use the extracted data as additional MT training data and obtain better translation performance on a given in-domain MT test set.
+    A simple way of estimating the usefulness of the data for this purpose is to measure its coverage of the test set, i.e., the percentage of running n-grams from the test corpus that are also in our corpus.
+    Tables 3 and 4 present the coverage of our extracted corpora.
+    For each initial corpus size, the first column shows the coverage of that initial corpus, and the second column shows the coverage of the initial corpus plus the extracted cor

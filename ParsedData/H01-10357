@@ -1,0 +1,7 @@
+trates six scenarios encountered when projecting POS tags from English to a language such as French.
+  The first two show straightforward 1-to-1 projections, which are encoun- tered in roughly two-thirds of English words.
+  Phrasal (1-to-N) alignments offer greater challenges, as typically only a subset of the aligned words accept the English tag.
+  To distinguish these cases, we initially assign position-sensitive phrasal parts-of-speech via subscripting (e.g.
+  
+  
+  French Induced Tags NN O    ... salon ...Les lois ... DT NNS Tagger Output English ... living room ... VBG NN The laws ... DT NNS ... veterans ... ... anciens combattants ... NNS NNS NNS (JJ) (NNS) ... potatoes ... ... pommes   de     terre ... NNS NNS NNSNNS (IN) (NN)(NNS) Tagger Output English French Induced Tag Correct Tag Les   lois ... NNS (DT) (NNS) O    Laws ... NNS O Les     lois ... Laws ... NNS NNS (DT) (NNS) NNS b a ba bc a Figure 3: French POS tag projection scenarios 4.2 Noise-robust POS Tagger Training Even at the relatively low t

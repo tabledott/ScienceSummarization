@@ -1,0 +1,10 @@
+ch r(e) E I, the set of sentences in E that contain a mention describing r(e).
+    In general, the corpuslevel extraction problem is easier, since it need only make aggregate predictions, perhaps using corpuswide statistics.
+    In contrast, sentence-level extraction must justify each extraction with every sentence which expresses the fact.
+    The knowledge-based weakly supervised learning problem takes as input (1) E, a training corpus, (2) E, a set of entities mentioned in that corpus, (3) R, a set of relation names, and (4), A, a set of ground facts of relations in R. As output the learner produces an extraction model.
+  
+  
+    We define an undirected graphical model that allows joint reasoning about aggregate (corpus-level) and sentence-level extraction decisions.
+    Figure 1(a) shows the model in plate form.
+    There exists a connected component for each pair of entities e = (e1, e2) E E x E that models all of the extraction decisions for this pair.
+    There is one Boolean output variable Y ' for ea

@@ -1,0 +1,8 @@
+th the seen bigrams and the pseudobigrams.
+    The smoothing method is then evaluated by comparing the frequencies it re-creates for both types of bigrams.
+    We evaluated our Web counts by applying the pseudodisambiguation procedure that Rooth et al. (1999), Prescher, Riezler, and Rooth (2000), and Clark and Weir (2001) employed for evaluating re-created verb-object bigram counts.
+    In this procedure, the noun n from a verb-object bigram (v, n) that is seen in a given corpus is paired with a randomly chosen verb v' that does not take n as its object within the corpus.
+    This results in an unseen verb-object bigram (v', n).
+    The seen bigram is now treated as unseen (i.e., all of its occurrences are removed from the training corpus), and the frequencies of both the seen and the unseen bigram are re-created (using smoothing, or Web counts, in our case).
+    The task is then to decide which of the two verbs v and v' takes the noun n as its object.
+    For this, the re-created bigram frequency is used: Th

@@ -1,0 +1,9 @@
+nce-based model during decoding, and syntax-based reordering should focus on global reordering only.
+    The result shows that this hypothesis does not hold.
+    In practice syntax-based reordering also helps local reordering.
+    Consider the translation example of test (a) shown in table 6.
+    Both the baseline model and our model translate in the same way up to the word &#8220;Qq,&#8221; (which is incorrectly translated as &#8220;and&#8221;).
+    From this point, the proposed preprocessing model correctly jump to the last phrase &#8220;Ili T &#255;X/discussed&#8221;, while the baseline model fail to do so for the best translation.
+    It should be noted, however, that there are only four words between &#8220;Qq,&#8221; and the last phrase, and the desired order of decoding is within the capability of the baseline system.
+    With the feature of syntax-based global reordering, a phrase-based decoder performs better even with respect to local reordering.
+    It is because syntaxbased reordering adds more we

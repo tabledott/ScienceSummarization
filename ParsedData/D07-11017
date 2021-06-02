@@ -1,0 +1,8 @@
+ures are: 958 h m h m ecmo l micr+1rhc lFigure 2: Dynamic programming structures used in the pars ing algorithm.
+			The variables in boldface constitute the index of the chart entry for a structure; the other variables constitute the back-pointer stored in the chart entry.
+			Left: an open structure for the chart entry [h, m, l]O ; the algorithm looks for the r, ch and cmi that yield the optimal score for this structure.
+			Right: a closed structure for the chart entry [h, e, m]C ; the algorithm looks for the l and cmo that yield the optimal score.
+			Open structures: For each span from s to e and each label l, the algorithm maintains a chart entry [s, e, l]O associated to the dependency ?s, e, l?.
+			For each entry, the algorithm looks for the optimal splitting point r, sibling ch and grand-child cmi using parameters wl1, wlh and wlmi.
+			This can be done in O(n2) because our features do not consider interactions betweench and cmi.
+			Similar entries [e, s, l]O are main tained for dependencies headed at e. ?

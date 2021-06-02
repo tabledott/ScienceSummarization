@@ -1,0 +1,10 @@
+s the root.
+    In addition, if a constituent is a PP (propositional phrase), its children are also collected.
+    Candidates consisting of only a single punctuation mark are not considered.
+    This heuristic works well with the correct parse trees.
+    However, one of the errors by automatic parsers is due to incorrect PP attachment leading to missing arguments.
+    To attempt to fix this, we consider as arguments the combination of any consecutive NP and PP, and the split of NP and PP inside the NP that was chosen by the previous heuristics.
+    The argument identification stage utilizes binary classification to identify whether a candidate is an argument or not.
+    We train and apply the binary classifiers on the constituents supplied by the pruning stage.
+    Most of the features used in our system are standard features, which include This stage assigns the final argument labels to the argument candidates supplied from the previous stage.
+    A multi-class classifier is trained to classify the types of 

@@ -1,0 +1,11 @@
+t a path through a network generated around a-best from a system with a zero weight will not be chosen.
+    The prior probabilities are estimated by viewing the negative average TER scores between the skeleton and other hypotheses as log-probabilities.
+    These log-probabilities are scaled so that the priors sum to one.
+    There is a concern that the prior probabilities estimated this way may be inaccurate.
+    Therefore, the priors may have to be smoothed by a tunable exponent.
+    However, the optimization experiments showed that the best performance was obtained by having a smoothing factor of 1 which is equivalent to the original priors.
+    Thus, no smoothing was used in the experiments presented later in this paper.
+    An example joint network with the priors is shown in Figure 2.
+    This example has three confusion networks with priors ,and .
+    The total number of nodes in the network is represented by .
+    Similar combination of multiple confusion networks was presented in (Matusov et al., 2006

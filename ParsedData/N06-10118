@@ -1,0 +1,11 @@
+del (line 6).
+    It then uses temporal alignment (with thresholding) to select the best transliteration candidate for the next round of training (lines 8, and 9).
+    Once the training is complete, lines 4 through 10 are executed without thresholding for each NE in to discover its counterpart in .
+    In order to generate time sequence for a word, we divide the corpus into a sequence of temporal bins, and count the number of occurrences of the word in each bin.
+    We then normalize the sequence.
+    We use a method called the F-index (Hetland, 2004) to implement the similarity function on line 8 of the algorithm.
+    We first run a Discrete Fourier Transform on a time sequence to extract its Fourier expansion coefficients.
+    The score of a pair of time sequences is then computed as a Euclidian distance between their expansion coefficient vectors.
+    .
+    As we mentioned earlier, an NE in one language may map to multiple morphological variants and transliterations in another.
+    Identification of the en

@@ -1,0 +1,6 @@
+le (r, w') as an attribute of w. For example, the tuple (dog, direct-obj, walk) indicates that the term dog was the direct object of the verb walk.
+    Our relation extractor begins with a Naive Bayes POS tagger and chunker.
+    After the raw text has been tagged and chunked, noun phrases separated by prepositions and conjunctions are concatenated, and the relation extracting algorithm is run over each sentence.
+    This consists of four passes over the sentence, associating each noun with the modifiers and verbs from the syntactic contexts they appear in: The relation tuple is then converted to root form using the Sussex morphological analyser (Minnen et al., 2000) and the POS tags are removed.
+    The relations for each term are collected together and counted, producing a context vector of attributes and (adjective, good) 2005 (adjective, faintest) 89 (direct-obj, have) 1836 (indirect-obj, toy) 74 (adjective, preconceived) 42 (adjective, foggiest) 15 their frequencies in the corpus.
+    Figure 1 shows some 

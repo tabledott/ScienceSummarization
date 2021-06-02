@@ -1,0 +1,8 @@
+ubtrees, one subtree in Chinese and the other in English, such that each word in the Chinese subtree is aligned to a word in the English subtree.
+    We grow this pair of subtrees until we can no longer grow either subtree without violating the two parameter values n and k. Note that these aligned subtree pairs have properties similar to alignment templates.
+    They can rearrange in complex ways between source and target.
+    Figure 2 shows how subtree-pairs for parameters n = 3 and k = 3 can be drawn for this sentence pair.
+    In our experiments, we use substantially bigger tree fragments with parameters set to n = 8 and k = 9.
+    Once these subtree-pairs have been obtained, we can easily assert a Markov assumption for the tree-to-tree and tree-to-string translation models that exploits these pairings.
+    Let consider a sentence pair in which we have discovered n subtree-pairs which we can call Frag0, ..., Fragn.
+    We can then compute a feature function for the sentence pair using the tree-to-string tr

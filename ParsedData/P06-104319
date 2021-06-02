@@ -1,0 +1,10 @@
+our test conditions.
+    &#8220;BROWN tuned&#8221; indicates that BROWN training data was used to tune the parameters (since the normal held-out section was being used for testing).
+    For &#8220;WSJ tuned,&#8221; we tuned the parameters from section 24 of WSJ.
+    Tuning on BROWN helps the parser, but not for the reranking parser. ment.
+    The reranking parser used the WSJ-trained reranker model.
+    The BROWN parsing model is naturally better than the WSJ model for this task, but combining the two training corpora results in a better model (as in Gildea (2001)).
+    Adding small amounts of NANC further improves the models. test.
+    The WSJ+NANC parser with the WSJ reranker comes close to the BROWN-trained reranking parser.
+    The BROWN reranker provides only a small improvement over its WSJ counterpart, which is not statistically significant. parser with the WSJ reranker and the BROWN parser with the BROWN reranker.
+    Complete match is how often the two reranking parsers returned the exact same parse.

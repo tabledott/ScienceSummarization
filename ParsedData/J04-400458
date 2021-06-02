@@ -1,0 +1,6 @@
+onstraint should effectively not be employed when pursuing theories of an NPB subtree.
+    As it turns out, using the comma constraint also affects accuracy, as shown in Section 8.1.
+    The final form of pruning employed is rather subtle: Within each cell of the chart that contains items covering some span of the sentence, Collins&#8217; parser uses buckets of items that share the same root nonterminal label for their respective derivations.
+    Only 100 of the top-scoring items covering the same span with the same nonterminal label are kept in a particular bucket, meaning that if a new item is proposed and there are already 100 items covering the same span with the same label in the chart, then it will be compared to the lowest-scoring item in the bucket.
+    If it has a higher score, it will be added to the bucket and the lowest-scoring item will be removed; otherwise, it will not be added.
+    Apparently, this type of pruning has little effect, and so we have not duplicated it in our engine.32 When the pa

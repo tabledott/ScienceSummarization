@@ -1,0 +1,11 @@
+0;with my eyes&#8221; should be attached to &#8220;the pizza&#8221; or not before it is allowed to build parts of the outer NP (&#8220;the boy who... &#8221;).
+    In this case, the verb &#8220;saw&#8221; and the noun &#8220;boy&#8221; are both outside of the sight of the parser when deciding on the PP attachment, and it is forced to make a decision in ignorance, which, in many cases, leads to mistakes.
+    The globally optimized MST does not suffer as much from such cases.
+    We plan to address this deficiency in future work.
+  
+  
+    Deterministic shift-reduce parsers are restricted by a strict left-to-right processing order.
+    Such parsers can rely on rich syntactic information on the left, but not on the right, of the decision point.
+    They are forced to commit early, and suffer from error propagation.
+    Our non-directional parser addresses these deficiencies by discarding the strict left-to-right processing order, and attempting to make easier decisions before harder ones.
+    Other methods of de

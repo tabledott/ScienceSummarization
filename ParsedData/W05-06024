@@ -1,0 +1,7 @@
+h gloss: answer(A,count(B,(city(B),loc(B,C), const(C,countryid(usa))),A)) ?How many cities are there in the US??
+	
+	
+			This section describes our basic framework for semantic parsing, which is based on a fairly standard approach to compositional semantics (Juraf sky and Martin, 2000).
+			First, a statistical parseris used to construct a SAPT that captures the se mantic interpretation of individual words and the basic predicate-argument structure of the sentence.Next, a recursive procedure is used to composition ally construct an MR for each node in the SAPT from the semantic label of the node and the MR?s has2 VP?bowner player the ball NN?player CD?unum NP?null NN?null VB?bowner S?bowner NP?player DT?null PRP$?team our Figure 1: An SAPT for a simple CLANG sentence.
+			Function:BUILDMR(N;K) Input: The root node N of a SAPT; predicate-argument knowledge, K, for the MRL.
+			Notation: X MR is the MR of node X . Output: N MR C i := the ith child node of N; 1  i  n C h = GETSEMANTICHEAD(N ) // see Section 3 C h MR

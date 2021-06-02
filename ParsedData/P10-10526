@@ -1,0 +1,7 @@
+er of configurations of xt observed during training.
+    Thus, even in moderate size applications, the number of parameters can be very large, mostly due to the introduction of sequential dependencies in the model.
+    This also explains why it is hard to train CRFs with dependencies spanning more than two adjacent labels.
+    Using only unigram features {fy,x}(y,x)&#8712;Y &#215;X results in a model equivalent to a simple bag-of-tokens positionby-position logistic regression model.
+    On the other hand, bigram features {fy/,y,x}(y,x)&#8712;Y 2&#215;X are helpful in modelling dependencies between successive labels.
+    The motivations for using simultaneously both types of feature functions are evaluated experimentally in Section 5.
+    Given N independent sequences {x(i), y(i)}Ni=1, where x(i) and y(i) contain T(i) symbols, conditional maximum likelihood estimation is based on the minimization, with respect to &#952;, of the negated conditional log-likelihood of the observations This term is usually complem

@@ -1,0 +1,8 @@
+e case where all these history representations are used (SSN-Freq 200).
+    The biggest decrease in performance occurs when the left-corner ancestor is represented with just its label (ancestor label).
+    This implies that more distant top-down constraints and constraints from the left context are playing a big role in the success of the SSN parser, and suggests that parsers which do not include information about this context in their history features will not do well.
+    Another big decrease in performance occurs when the most recent child is represented with just its label (child label).
+    This implies that more distant bottom-up constraints are also playing a big role, probably including some information 6The validation set is used to avoid repeated testing on the standard testing set.
+    Sentences of length greater than 100 were excluded. about lexical heads.
+    There is also a decrease in performance when the left-corner child is represented with just its label (lc-child label).
+    This implies th

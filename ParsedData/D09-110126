@@ -1,0 +1,7 @@
+(4): Determine whether wi IsAllCap, IsInitCap, IsCapPeriod, and IsAllLower (see Bikel et al. (1999)).
+    Morphological (8): wi&#8217;s prefixes and suffixes of length one, two, three, and four.
+    Grammatical (1): The part-of-speech (POS) tag of wi obtained using the Stanford log-linear POS tagger (Toutanova et al., 2003).
+    Semantic (1): The named entity (NE) tag of wi obtained using the Stanford CRF-based NE recognizer (Finkel et al., 2005).
+    Gazetteers (8): Eight dictionaries containing pronouns (77 entries), common words and words that are not names (399.6k), person names (83.6k), person titles and honorifics (761), vehicle words (226), location names (1.8k), company names (77.6k), and nouns extracted from WordNet that are hyponyms of PERSON (6.3k).
+    We employ CRF++5, a C++ implementation of conditional random fields, for training the mention detector, which achieves an F-score of 86.7 (86.1 recall, 87.2 precision) on the test set.
+    These extracted mentions are to be used as system mentions i

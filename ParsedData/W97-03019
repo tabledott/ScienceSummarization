@@ -1,0 +1,6 @@
+ual predicates which look at head words, or especially pairs of head words, may not be reliable predictors for the procedure actions due to their sparseness in the training sample.
+    Therefore, for each lexically based contextual predicate, there also exist one or more corresponding less specific, or &amp;quot;backed-off&amp;quot;, contextual predicates which look at the same context, but omit one or more words.
+    For example, the contexts cons(0, 1*), cons(0*, 1), cons(0*, 1*) are the same as cons(0, 1) but omit references to the head word of the 1st tree, the 0th tree, and both the 0th and 1st tree, respectively.
+    The backed-off contextual predicates should allow the model to provide reliable probability estimates when the words in the history are rare.
+    Backed-off predicates are not enumerated in table 3, but their existence is indicated with a * and t. The contextual predicates derived from the templates of table 3 are used to create the features necessary for the maximum entropy models.
+    The

@@ -1,0 +1,9 @@
+ the Penn Treebank (Marcus et al., 1993) which consists of about 40,000 sentences (one million words) annotated with syntactic information.
+    We use the standard divisions: Sections 2 through 21 are used for training, section 24 for held-out development, and section 23 for final testing.
+    In addition to labeled news data, we make use of a large quantity of unlabeled news data.
+    The unlabeled data is the North American News Corpus, NANC (Graff, 1995), which is approximately 24 million unlabeled sentences from various news sources.
+    NANC contains no syntactic information and sentence boundaries are induced by a simple discriminative model.
+    We also perform some basic cleanups on NANC to ease parsing.
+    NANC contains news articles from various news sources including the Wall Street Journal, though for this paper, we only use articles from the LA Times portion.
+    To use the data from NANC, we use self-training (McClosky et al., 2006).
+    First, we take a WSJ trained reranking parser (i.e. both 

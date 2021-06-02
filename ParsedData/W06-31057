@@ -1,0 +1,8 @@
+rs.
+    This training loop necessitates approximation because summing over all possible segmentations and alignments for each sentence is intractable, requiring time exponential in the length of the sentences.
+    Additionally, the set of possible phrase pairs grows too large to fit in memory.
+    Using word alignments, we can address both problems.4 In particular, we can determine for any aligned segmentation ( 1I1, eI1, a) whether it is compatible with the word-level alignment for the sentence pair.
+    We define a phrase pair to be compatible with a word-alignment if no word in either phrase is aligned with a word outside the other phrase (Zens et al., 2002).
+    Then, ( 1I1, eI1, a) is compatible with the word-alignment if each of its aligned phrases is a compatible phrase pair.
+    The training process is then constrained such that, when evaluating the above sum, only compatible aligned segmentations are considered.
+    That is, we allow P(e, &#65533;fI1 , eI1, aIf) &gt; 0 only for aligned segmentations 

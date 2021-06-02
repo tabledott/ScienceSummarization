@@ -1,0 +1,10 @@
+n a PoS tagger.
+    These two different approaches mean that the length of the potential terms is not limited to something arbitrary, but reflects a linguistic property.
+    The solution to limiting the number of terms&#8212;as the majority of the extracted words or phrases are not keywords&#8212;was to apply a machine learning algorithm to decide which terms are keywords and which are not.
+    The output from the machine learning algorithm is binary (a term is either a keyword or not), consequently the system itself limits the amount of extracted keywords per document.
+    As for the features, a fourth feature was added to the ones used by Frank et al., namely the POS tag(s) assigned to the term.
+    This feature turned out to dramatically improve the results.
+  
+  
+    The collection used for the experiments described in this paper consists of 2 000 abstracts in English, with their corresponding title and keywords from the Inspec database.
+    The abstracts are from the years 1998 to 2002, from journal pape

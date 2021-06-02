@@ -1,0 +1,11 @@
+imum Bayes risk decoding.
+    We define the loss L(T, &#181;) of picking target sentence T when the correct target sentence is &#181; as 0 if r = &#181;, A if 'r = NULL and &#181; =6 NULL, and 1 otherwise.
+    By modifying the null loss A, the precision/recall trade-off can be adjusted.
+    For the CRF model, we used posterior decoding to make the minimum risk decision rule tractable.
+    As a summary measure of the performance of the models at different levels of recall we use average precision as defined in (Ido et al., 2006).
+    We also report recall at precision of 90 and 80 percent.
+    Table 2 compares the different models in all three language pairs.
+    In our next set of experiments, we looked at the effects of the Wikipedia specific features.
+    Since the ranker and CRF are asymmetric models, we also experimented with running the models in both directions and combining their outputs by intersection.
+    These results are shown in Table 3.
+    Identifying the agreement between two asymmetric models

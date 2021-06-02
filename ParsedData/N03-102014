@@ -1,0 +1,8 @@
+ variable length n-gram matches.
+    By taking a log sum of the ngram matches, the Ngram(1,4)n favors match of longer n-grams.
+    For example, if &amp;quot;United States of America&amp;quot; occurs in a reference summary, while one peer summary, A, uses &amp;quot;United States&amp;quot; and another summary, B, uses the full phrase &amp;quot;United States of America&amp;quot;, summary B gets more contribution to its overall score simply due to the longer version of the name.
+    However, intuitively one should prefer a short version of the name in summarization.
+    Therefore, we need to change the weighting scheme to not penalize or even reward shorter equivalents.
+    We conduct experiments to understand the effect of individual n-gram co-occurrence scores in approximating human assessments.
+    Tables 2 and 3 show the results of these runs without and with stopwords respectively.
+    For each set of DUC 2001 data, single document 100word summarization task, multi-document 50, 100, 200, and 400 -word summar

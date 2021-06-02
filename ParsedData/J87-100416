@@ -1,0 +1,8 @@
+til 1982).
+    Thus, one might notice that, even with an efficient parsing algorithm such as the one we described, the parser would take exponential time because exponential time would be required merely to print out all parse trees (parse forest).
+    We must therefore provide an efficient representation so that the size of the parse forest does not grow exponentially.
+    This section describes two techniques for providing an efficient representation: subtree sharing and local ambiguity packing.
+    It should be mentioned that these two techniques are not completely new ideas, and some existing systems (e.g., Earley's (1970) algorithm) have already adopted these techniques, either implicitly or explicitly.
+    If two or more trees have a common subtree, the subtree should be represented only once.
+    For example, the parse forest for the sentence I saw a man in the park with a telescope should be represented as in Figure 3.1.
+    To implement this, we no longer push grammatical symbols on the stack; instea

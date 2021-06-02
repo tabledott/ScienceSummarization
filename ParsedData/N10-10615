@@ -1,0 +1,10 @@
+
+    Br is a unigram distribution of words that are semantically licensed for property r. fr is a &#8220;fertility&#8221; distribution over the integers that characterizes entity list lengths.
+    For example, for the type PERSON, Br for proper heads is quite flat (there are many last names) but fr is peaked at 1 (people have a single last name).
+  
+  
+    We now describe our generative model.
+    At the parameter level, we have one parameter group for the types &#964; = (0, T1, ... , Tt), where 0 is a multinomial prior over a fixed number t of types and the {TZ} are the parameters for each individual type, described in greater detail below.
+    A second group comprises loglinear parameters &#960; over discourse choices, also described below.
+    Together, these two groups are drawn according to P(&#964;|&#955;)P(&#960;|Q2), where &#955; and Q2 are a small number of scalar hyper-parameters described in Section 4.
+    Conditioned on the parameters (&#964;, &#960;), a document is generated as follows: A semanti

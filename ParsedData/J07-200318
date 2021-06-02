@@ -1,0 +1,7 @@
+ word alignment information, which is discarded in the final grammar.
+    If a rule occurs in training with more than one possible word alignment, Koehn, Och, and Marcu take the maximum lexical weight; we take a weighted average.
+    5 This approach is similar to that taken by many parsers, such as SPATTER (Magerman 1995) and its successors, which use heuristics to hypothesize an augmented version of the training data, but it is especially reminiscent of the Data Oriented Parsing method (Bod 1992), which hypothesizes a distribution over many possible derivations of each training example from subtrees of varying sizes.
+  
+  
+    In brief, our decoder is a CKY (Cocke-Kasami-Younger) parser with beam search together with a postprocessor for mapping French derivations to English derivations.
+    Given a French sentence f, it finds the English yield of the single best derivation that has French yield f: &#65533;e&#710; = e arg max P(D) (24) Ds.t.f(D)=f Note that this is not necessarily the highest-probability Engl

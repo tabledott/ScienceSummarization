@@ -1,0 +1,8 @@
+ information can help in cases where syntactic ambiguity can only be resolved with semantic information, such as in the PP attachment of the two sentences: They ate udon with forks. vs.
+    They ate udon with chicken.
+    Previous RNN-based parsers used the same (tied) weights at all nodes to compute the vector representing a constituent (Socher et al., 2011b).
+    This requires the composition function to be extremely powerful, since it has to combine phrases with different syntactic head words, and it is hard to optimize since the parameters form a very deep neural network.
+    We generalize the fully tied RNN to one with syntactically untied weights.
+    The weights at each node are conditionally dependent on the categories of the child constituents.
+    This allows different composition functions when combining different types of phrases and is shown to result in a large improvement in parsing accuracy.
+    Our compositional distributed representation allows a CVG parser to make accurate parsing decisions

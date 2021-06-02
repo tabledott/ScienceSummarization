@@ -1,0 +1,8 @@
+ subtree corresponding to each of the stop words: this, is, and for. c) if the token is an English language word, we map the word to its part-of-speech tag, calculate the prior polarity of the word using the procedure described in section 5 and add the subtree (EW (&#8216;POS&#8217; &#8216;word&#8217; &#8216;prior polarity&#8217;)) to the &#8220;ROOT&#8221;.
+    For example, we add the subtree (EW (JJ great POS)) for the word great.
+    &#8220;EW&#8221; refers to English word. d) For any other token &lt;token&gt; we add subtree &#8220;(NE (&lt;token&gt;))&#8221; to the &#8220;ROOT&#8221;.
+    &#8220;NE&#8221; refers to non-English.
+    The PT tree kernel creates all possible subtrees and compares them to each other.
+    These subtrees include subtrees in which non-adjacent branches become adjacent by excising other branches, though order is preserved.
+    In Figure 1, we show some of the tree fragments that the PT kernel will attempt to compare with tree fragments from other trees.
+    For example, given the 

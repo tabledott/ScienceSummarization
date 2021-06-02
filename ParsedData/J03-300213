@@ -1,0 +1,6 @@
+poorly matched.
+    Second, we required the matching algorithm to be fast, and algorithms for aligning tree structures are more demanding than those for linear structures.
+    Both documents in the candidate pair are run through a markup analyzer that acts as a transducer, producing a linear sequence containing three kinds of token: The chunk length is measured in nonwhitespace bytes, and the HTML tags are normalized for case.
+    Attribute-value pairs within the tags are treated as nonmarkup text (e.g., &lt;FONT COLOR=&amp;quot;BLUE&amp;quot;&gt; produces [START:FONT] followed by [Chunk:12]).
+    The second step is to align the linearized sequences using a standard dynamic programming technique (Hunt and McIlroy 1975).
+    For example, consider two documents that begin as follows: Using this alignment, we compute four scalar values that characterize the quality of the alignment: dp The difference percentage, indicating nonshared material (i.e., alignment tokens that are in one linearized file but not the oth

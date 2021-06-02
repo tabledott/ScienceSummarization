@@ -1,0 +1,7 @@
+y is pseudo-minimal over the training corpus).
+    Such infinite parameter values indicate that the model treats pseudo-maximal features categorically; i.e., any parse with a non-maximal feature value is assigned a zero conditional probability.
+    Of course, a feature which is pseudo-maximal over the training corpus is not necessarily pseudo-maximal for all yields.
+    This is an instance of over fitting, and it can be addressed, as is customary, by adding a regularization term that promotes small values of 0 to the objective function.
+    A common choice is to add a quadratic to the log-likelihood, which corresponds to multiplying the likelihood itself by a normal distribution.
+    In our experiments, we multiplied the pseudo-likelihood by a zero-mean normal in 01, 0,&#8222; with diagonal covariance, and with standard deviation ay for 03 equal to 7 times the maximum value of fi found in any parse in the training corpus.
+    (We experimented with other values for cry, but the choice seems to have little effe

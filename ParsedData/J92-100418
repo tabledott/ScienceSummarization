@@ -1,0 +1,8 @@
+0.
+    This node creates new parse nodes that might have categories such as [statement], [question], and [request], and places them on the queue, prioritized.
+    If [statement] is the most likely child, it gets popped from the queue, and returns nodes indicating [subject], [it], etc., to the queue.
+    When [subject] reaches the top of the queue, it activates units such as [noun phrase], [gerund], and [noun clause].
+    Each node, after instantiating first-children, becomes inactive, pending the return of a successful subparse from a sequence of children.
+    Eventually, the cascade of first-children reaches a terminal node such as [article], Stephanie Seneff TINA: A Natural Language System for Spoken Language Applications which proposes a set of words to be compared with the input stream.
+    If a match with an appropriate word is found, then the terminal node fills its subparse slot with an entry such as ([article] &amp;quot;the&amp;quot;), and activates all of its possible right-siblings.
+    Whenever a t

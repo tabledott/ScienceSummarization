@@ -1,0 +1,7 @@
+ach matched pair of word types (i, j) E m, we need to generate the observed feature vectors of the source and target word types, fS(si) E RdS and fT (tj) E RdT .
+    The feature vector of each word type is computed from the appropriate monolingual corpus and summarizes the word&#8217;s monolingual characteristics; see section 5 for details and figure 2 for an illustration.
+    Since si and tj are translations of each other, we expect fS(si) and fT(tj) to be connected somehow by the generative process.
+    In our model, they are related through a vector zi,j E Rd representing the shared, language-independent concept.
+    Specifically, to generate the feature vectors, we first generate a random concept zi,j &#8212; N(0, Id), where Id is the d x d identity matrix.
+    The source feature vector fS(si) is drawn from a multivariate Gaussian with mean WSzi,j and covariance FS, where WS is a dS x d matrix which transforms the language-independent concept zi,j into a languagedependent vector in the source space.
+    T

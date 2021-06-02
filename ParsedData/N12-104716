@@ -1,0 +1,8 @@
+large.
+    Despite the fact that both algorithms use a structured hinge loss, there are several differences between our SVM and MIRA.
+    The SVM has an explicit regularization term &#955; that is factored into its global objective, while MIRA regularizes implicitly by taking small steps.
+    The SVM requires a stable objective to optimize, meaning that it must forgo the pseudo-corpus used by MIRA to calculate Ai; instead, the SVM uses an interpolated sentence-level BLEU (Liang et al., 2006).4 Finally, MIRA&#8217;s oracle is selected with hope decoding.
+    With a sufficiently large ~w, any e E &#163; can potentially become the oracle.
+    In contrast, the SVM&#8217;s local oracle is selected from a small set &#163;*, which was done to more closely match the assumptions of the Latent SVM.
+    To solve the necessary quadratic programming sub-problems, we use a multiclass SVM similar to LIBLINEAR (Hsieh et al., 2008).
+    Like Batch MIRA and PRO, the actual optimization is very fast, as the cutting plane conver

@@ -1,0 +1,6 @@
+ns approximately 38,000 entries.
+    Markov features Features defined over adjacent aligment labels allow our model to reflect the tendency for monotonic alignments between European languages.
+    We define a real-valued alignment index jump width feature: jump width(t &#8722; 1, t) = abs(at &#8722; at&#8722;1 &#8722; 1) this feature has a value of 0 if the alignment labels follow the downward sloping diagonal, and is positive otherwise.
+    This differs from the GIZA++ hidden Markov model which has individual parameters for each different jump width (Och and Ney, 2003; Vogel et al., 1996): we found a single feature (and thus parameter) to be more effective.
+    We also defined three indicator features over null transitions to allow the modelling of the probability of transition between, to and from null labels.
+    Relative sentence postion A feature for the absolute difference in relative sentence position |&#65533;|)) allows the model to learn a preference for aligning words close to the alignment matrix d

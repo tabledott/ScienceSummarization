@@ -1,0 +1,8 @@
+ayen and Sproat&#8217;s approach as the baseline policy in our word-character hybrid model.
+    In the baseline policy, we first count the frequencies of words3 in the training corpus.
+    We then collect infrequent words that appear less than or equal to r times.4 If these infrequent words are in the correct path, we use character-level nodes to represent them, and hence the characteristics of unknown words can be learned.
+    For example, in Figure 1 we select the character-level nodes of the word &#8220; &#8221; (Chongming) as the correct nodes.
+    As a result, the correct path yt can contain both wordlevel and character-level nodes (marked with asterisks (*)).
+    To discover more statistics of unknown words, one might consider just increasing the threshold value r to obtain more artificial unknown words.
+    However, our experimental results indicate that our word-character hybrid model requires an appropriate balance between known and artificial unknown words to achieve optimal performance.
+    We now 

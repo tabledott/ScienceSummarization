@@ -1,0 +1,7 @@
+aptations, including (i) approximating the second order term in (10), (ii) performing updates in block, where a block contains the |Y  |&#215; |Y + 1 |features &#957;y1,y,x and &#955;y,x for a fixed test x on the observation sequence and (iii) approximating the Hessian for a block by its diagonal terms.
+    (ii) is specially critical, as repeatedly cycling over individual features to perform the update (10) is only possible with restricted sets of features.
+    The block update schemes uses the fact that all features within a block appear in the same set of sequences, which means that most of the computations needed to perform theses updates can be shared within the block.
+    One advantage of the resulting algorithm, termed BCD in the following, is that the update of &#952;k only involves carrying out the forward-backward recursions for the set of sequences that contain symbols x such that at least one {fk(y', y, x)}(y y1)EY 2 is non null, which can be much smaller than the whole training set.
+  
+  
+    Effi

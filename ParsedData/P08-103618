@@ -1,0 +1,11 @@
+AS model induces a distribution over the rated aspects which can be used to accurately predict whether a text fragment is relevant to an aspect or not.
+    To perform qualitative experiments we used a set of reviews of hotels taken from TripAdvisor.com7 that contained 10,000 reviews (109,024 sentences, 2,145,313 words in total).
+    Every review was rated with at least three aspects: service, location and rooms.
+    Each rating is an integer from 1 to 5.
+    The dataset was tokenized and sentence split automatically.
+    We ran the sampling chain for 700 iterations to produce a sample.
+    Distributions of words in each topic were estimated as the proportion of words assigned to each topic, taking into account topic model priors 0gl and 0loc.
+    The sliding windows were chosen to cover 3 sentences for all the experiments.
+    All the priors were chosen to be equal to 0.1.
+    We used 15 local topics and 30 global topics.
+    In the model, the first three local topics were associated to the rating classifiers

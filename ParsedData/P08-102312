@@ -1,0 +1,7 @@
+es hyperedges as well as nodes.
+    Basically, we use an Inside-Outside algorithm to compute the Viterbi inside cost Q(v) and the Viterbi outside cost &#945;(v) for each node v, and then compute the merit &#945;Q(e) for each hyperedge: Intuitively, this merit is the cost of the best derivation that traverses e, and the difference S(e) = &#945;Q(e) &#8722; Q(TOP) can be seen as the distance away from the globally best derivation.
+    We prune away a hyperedge e if S(e) &gt; p for a threshold p. Nodes with all incoming hyperedges pruned are also pruned.
+  
+  
+    We can extend the simple model in Equation 1 to a log-linear one (Liu et al., 2006; Huang et al., 2006): (5) where T is the 1-best parse, e&#955;1|d |is the penalty term on the number of rules in a derivation, Plm(s) is the language model and e&#955;3|3 |is the length penalty term BLEU score on target translation.
+    The derivation probability conditioned on 1-best tree, P(d  |T), should now be replaced by P(d  |Hp) where Hp is the parse forest, which

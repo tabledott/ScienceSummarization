@@ -1,0 +1,8 @@
+y, Chiang et al.&#8217;s (2008) more complex solution may perform better.
+    There may be settings where an explicit regularization parameter is desirable, thus we also make a recommendation among the direct optimizers (PRO, MR and SVM).
+    Though these systems all tend to show a fair amount of variance across language and feature sets (likely due to their use sentence-level BLEU), MR performs the most consistently, and is always within 0.2 of batch lattice MIRA.
+    The SVM&#8217;s performance on Big Zh-En is an intriguing outlier in our results.
+    Note that it not only performs best on the test set, but also achieves the best tuning score by a large margin.
+    We suspect we have simply found a setting where interpolated BLEU and our choice of A work particularly well.
+    We intend to investigate this case to see if this level of success can be replicated consistently, perhaps through improved sentence BLEU approximation or improved oracle selection.
+    One main difference between MIRA and the direct 

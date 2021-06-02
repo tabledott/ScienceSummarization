@@ -1,0 +1,8 @@
+tence actually decreases the BLEU score.
+    Rewriting the input sentence whether using syntactic rules or heuristics makes hard decisions that can not be undone by the decoder.
+    Hence, reordering is better handled during the search algorithm and as part of the optimization function.
+    Phrase-based monotone decoding does not directly address word order issues.
+    Indirectly, however, the phrase dictionary1 in phrase-based decoders typically captures local reorderings that were seen in the training data.
+    However, it fails to generalize to word reorderings that were never seen in the training data.
+    For example, a phrase-based decoder might translate the Arabic phrase AlwlAyAt AlmtHdp2 correctly into English as the United States if it was seen in its training data, was aligned correctly, and was added to the phrase dictionary.
+    However, if the phrase Almmlkp AlmtHdp is not in the phrase dictionary, it will not be translated correctly by a monotone phrase decoder even if the individual units of t

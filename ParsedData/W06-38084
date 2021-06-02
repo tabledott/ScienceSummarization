@@ -1,0 +1,9 @@
+l classification, which differs from standard multi-class classification in that C is endowed with an order.
+    In the following we use &#8216;review&#8217; and &#8216;document,&#8217; &#8216;rating&#8217; and &#8216;label&#8217; interchangeably.
+    We make two assumptions: 1.
+    We are given a similarity measure wij &gt; 0 between documents xi and xj. wij should be computable from features, so that we can measure similarities between any documents, including unlabeled ones.
+    A large wij implies that the two documents tend to express the same sentiment (i.e., rating).
+    We experiment with positive-sentence percentage (PSP) based similarity which is proposed in (Pang and Lee, 2005), and mutual-information modulated word-vector cosine similarity.
+    Details can be found in section 4.
+    2.
+    Optionally, we are given numerical rating predictions yl+1, ... , yn on the unlabeled documents from a separate learner, for instance E-insensitive support vector regression (Joachims, 1999; Smola and Sch&#168;o

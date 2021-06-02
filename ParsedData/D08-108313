@@ -1,0 +1,5 @@
+t-word negators as well as function-word negators to determine whether the final polarity should be flipped.
+    Then we add a conjunctive feature that indicates the dominant polarity together with whether the final polarity should be flipped.
+    For brevity, we refer to SC-VOTE and SC-NEGEX collectively as SC.
+    Notice that in this simple binary classification setting, it is inherently difficult to capture the compositional structure among words in x, because f(x, y) is merely a flat bag of features, and the prediction is governed simply by the dot product of f(x, y) and the parameter vector w. Next, instead of determining y directly from x, we introduce hidden variables z = (zi,..., zn) as intermediate decision variables, where zi E {positive, negative, negator, none}, so that zi represents whether xi is a word with positive/negative polarity, or a negator, or none of the above.
+    For simplicity, we let each intermediate decision variable zi (a) be determined independently from other intermediate decis

@@ -1,0 +1,8 @@
+he partial traceback technique described by Brown, Spohrer, Hochschild, and Baker , [Brown et al., 1982], the time required can be made linear in the length of the sequences, and the space can be made constant.
+    Even so, the computational demand is severe since, in places, the two corpora are out of alignment by as many as 90,000 sentences owing to mislabelled or missing files.
+    This first pass renders the data as a sequence of sections between aligned major anchors.
+    In the second pass, we accept or reject each section in turn according to the population of minor anchors that it contains.
+    Specifically, we accept a section provided that, within the section, both corpora contain the same number of minor anchors in the same order.
+    Otherwise, we reject the section.
+    Altogether, we reject about 10% of the data in each corpus.
+    The minor anchors serve to divide the remaining sections into subsections that range in size from one sentence to several thousand sentences and average about ten sen

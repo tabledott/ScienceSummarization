@@ -1,0 +1,9 @@
+orrect relative order between the alternatives.
+    To carry out the evaluation, we implemented a variant of the disambiguation method of (Dagan et al., 1991), for sense disambiguation in machine translation.
+    We term this method as TWS, for Target Word Selection.
+    Consider for example the Hebrew phrase `laxtorn xoze shalom', which translates as 'to sign a peace treaty'.
+    The word cla.xtom', however, is ambiguous, and can be translated to either 'sign' or 'seal'.
+    To resolve the ambiguity, the TWS method first generates the alternative lexical cooccurrence patterns in the target language, that correspond to alternative selections of target words.
+    Then, it prefers those target words that generate more frequent patterns.
+    In our example, the word 'sign' is preferred upon the word 'seal', since the pattern 'to sign a treaty' is much more frequent than the pattern 'to seal a treaty'.
+    Similarly, the word `xoze' is translated to 'treaty' rather than 'contract', due to the high frequency of th

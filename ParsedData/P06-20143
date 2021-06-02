@@ -1,0 +1,9 @@
+mplete structure that connects two parallel sentences, and a link be one of the word-to-word connections that make up an alignment.
+    All word alignment methods benefit from some set of constraints.
+    These limit the alignment search space and encourage competition between potential links.
+    The IBM models (Brown et al., 1993) benefit from a one-tomany constraint, where each target word has exactly one generator in the source.
+    Methods like competitive linking (Melamed, 2000) and maximum matching (Taskar et al., 2005) use a one-toone constraint, where words in either sentence can participate in at most one link.
+    Throughout this paper we assume a one-to-one constraint in addition to any syntax constraints.
+    Suppose we are given a parse tree for one of the two sentences in our sentence pair.
+    We will refer to the parsed language as English, and the unparsed language as Foreign.
+    Given this information, a reasonable expectation is that English phrases will move together when projected onto 

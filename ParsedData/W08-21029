@@ -1,0 +1,8 @@
+ special root symbol, which we will denote as *.
+    A derivation for the input sentence x consists of a pair (E, D), where: The label l is a tuple (POS, A, &#951;h, &#951;m, L). &#951;h and &#951;m are the head and modifier spines that are being combined.
+    POS specifies which node in &#951;h is being adjoined into.
+    A is a binary flag specifying whether the combination operation being used is sadjunction or r-adjunction.
+    L is a binary flag specifying whether or not any &#8220;previous&#8221; modifier has been r-adjoined into the position POS in &#951;h.
+    By a previous modifier, we mean a modifier m&#8242; that was adjoined from the same direction as m (i.e., such that h &lt; m&#8242; &lt; m or m &lt; m&#8242; &lt; h).
+    It would be sufficient to define l to be the pair (POS, A)&#8212;the inclusion of &#951;h, &#951;m and L adds redundant information that can be recovered from the set E, and other dependencies in D&#8212;but it will be convenient to include this information in the label.
+    In

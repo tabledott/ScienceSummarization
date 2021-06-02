@@ -1,0 +1,6 @@
+aling with these deficiencies were proposed over the years: Several Passes Yamada and Matsumoto&#8217;s (2003) pioneering work introduces a shift-reduce parser which makes several left-to-right passes over a sentence.
+    Each pass adds structure, which can then be used in subsequent passes.
+    Sagae and Lavie (2006b) extend this model to alternate between left-to-right and right-to-left passes.
+    This model is similar to ours, in that it attempts to defer harder decisions to later passes over the sentence, and allows late decisions to make use of rich syntactic information (built in earlier passes) on both sides of the decision point.
+    However, the model is not explicitly trained to optimize attachment ordering, has an O(n2) runtime complexity, and produces results which are inferior to current single-pass shift-reduce parsers.
+    Beam Search Several researchers dealt with the early-commitment and error propagation of deterministic parsers by extending the greedy decisions with various flavors of beam

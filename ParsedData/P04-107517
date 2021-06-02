@@ -1,0 +1,10 @@
+  We add the candidate example NEi to a batch only if NEi is different enough from any previously selected example in the batch.
+    The threshold &#223; is set to the average pair-wise similarity of the entities in NESet.
+  
+  
+    In order to evaluate the effectiveness of our selection strategies, we apply them to recognize protein (PRT) names in biomedical domain using GENIA corpus V1.1 (Ohta et al. 2002) and person (PER), location (LOC), organization (ORG) names in newswire domain using MUC-6 corpus.
+    First, we randomly split the whole corpus into three parts: an initial training set to build an initial model, a test set to evaluate the performance of the model and an unlabeled set to select examples.
+    The size of each data set is shown in Table 1.
+    Then, iteratively, we select a batch of examples following the selection strategies proposed, require human experts to label them and add them into the training set.
+    The batch size K = 50 in GENIA and 10 in MUC-6.
+    Each example is defined as a 

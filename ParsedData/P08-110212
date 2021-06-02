@@ -1,0 +1,5 @@
+te the probability that the word sequence of the labelled result co-exists with its corresponding POS sequence.
+    Using W = w1:m to denote the word sequence, T = t1:m to denote the corresponding POS sequence, P (T |W) to denote the probability that W is labelled as T, and P(W|T) to denote the probability that T generates W, we can define the cooccurrence model as follows: &#955;wt and &#955;tw denote the corresponding weights of the two components.
+    Suppose the conditional probability Pr(t|w) describes the probability that the word w is labelled as the POS t, while Pr(w|t) describes the probability that the POS t generates the word w, then P(T|W) can be approximated by: Pr(w|t) and Pr(t|w) can be easily acquired by Maximum Likelihood Estimates (MLE) over the corpus.
+    For instance, if the word w appears N times in training corpus and is labelled as POS t for n times, the probability Pr(t|w) can be estimated by the formula below: The probability Pr(w|t) could be estimated through the same approach.
+    

@@ -1,0 +1,6 @@
+output distributions: initialize the tags at random, then iteratively resamti|ti&#8722;1 = t,ti&#8722;2 = t&#8242;, &#964;(t,t&#8242;) &#8212; Mult(&#964;(t,t&#8242;)) ple each tag according to its conditional distribution wi|ti = t, &#969;(t) &#8212; Mult(&#969;(t)) given the current values of all other tags.
+    Exchange&#964;(t,t&#8242;)|&#945; &#8212; Dirichlet(&#945;) ability allows us to treat the current counts of the &#969;(t)|&#946; &#8212; Dirichlet(&#946;) other tag trigrams and outputs as &#8220;previous&#8221; obserwhere ti and wi are the ith tag and word.
+    We assume vations.
+    The only complication is that resampling that sentence boundaries are marked with a distin- a tag changes the identity of three trigrams at once, guished tag.
+    For a model with T possible tags, each and we must account for this in computing its condiof the transition distributions &#964;(t,t&#8242;) has T compo- tional distribution.
+    The sampling distribution for ti nents, and each of the output distributions &#

@@ -1,0 +1,11 @@
+.
+    In DUC, &#223; is set to a very big number (?
+    8 ).
+    Therefore, only Rlcs is considered.
+    We call the LCS-based F-measure, i.e.
+    Equation 4, ROUGE-L. Notice that ROUGE-L is 1 when X = Y; while ROUGE-L is zero when LCS(X,Y) = 0, i.e. there is nothing in common between X and Y. Fmeasure or its equivalents has been shown to have met several theoretical criteria in measuring accuracy involving more than one factor (Van Rijsbergen, 1979).
+    The composite factors are LCS-based recall and precision in this case.
+    Melamed et al. (2003) used unigram F-measure to estimate machine translation quality and showed that unigram Fmeasure was as good as BLEU.
+    One advantage of using LCS is that it does not require consecutive matches but in-sequence matches that reflect sentence level word order as n-grams.
+    The other advantage is that it automatically includes longest in-sequence common n-grams, therefore no predefined n-gram length is necessary.
+    ROUGE-L as defined in Equation 4 has the prope

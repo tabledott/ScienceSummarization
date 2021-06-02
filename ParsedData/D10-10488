@@ -1,0 +1,10 @@
+and Manning, 2008) for an analysis of these metrics.
+  
+  
+    Our sieve framework is implemented as a succession of independent coreference models.
+    We first describe how each model selects candidate mentions, and then describe the models themselves.
+    Given a mention mi, each model may either decline to propose a solution (in the hope that one of the subsequent models will solve it) or deterministically select a single best antecedent from a list of previous mentions m1, ..., mi&#8722;1.
+    We sort candidate antecedents using syntactic information provided by the Stanford parser, as follows: Same Sentence &#8211; Candidates in the same sentence are sorted using left-to-right breadth-first traversal of syntactic trees (Hobbs, 1977).
+    Figure 1 shows an example of candidate ordering based on this traversal.
+    The left-to-right ordering favors subjects, which tend to appear closer to the beginning of the sentence and are more probable antecedents.
+    The breadthfirst traversal promotes syntactic sal

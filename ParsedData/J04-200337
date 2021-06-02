@@ -1,0 +1,7 @@
+ p(tf|te), the readings in one language are aligned with readings in the other language.
+    These alignments are applied to the full lemma-tag representation (not only tags in Tf and Te) of the expanded dictionary containing one entry per reading of the original word forms.
+    The highest-ranking aligned readings according to p(tf|te) for each lemma are preserved.
+    The resulting disambiguated dictionary contains two entries for the German word Zimmer: (&#8216;Zimmer-noun-sg.&#8217;|&#8216;room-noun-sg.&#8217;) and (&#8216;Zimmer-noun-pl.&#8217;|&#8216;room-nounpl.&#8217;).
+    The target language part is then reduced to the surface forms: (&#8216;Zimmer-noun-sg.&#8217;| &#8216;room&#8217;) and (&#8216;Zimmer-noun-pl.&#8217;|&#8216;rooms&#8217;).
+    Note that this augmented dictionary, in the following denoted by D', has more entries than D as a result of the step of generating all readings.
+    The two entries (&#8216;beabsichtigt&#8217;|&#8216;intends&#8217;) and (&#8216;beabsichtigt&#8217;|&#8216;inte

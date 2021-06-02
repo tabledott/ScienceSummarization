@@ -1,0 +1,10 @@
+count of the chunk in the data set and the split location in this chunk.
+    A zero split location denotes a leaf node, i.e., a morph.
+    The occurrence counts flow down through the hierachical structure, so that the count of a child always equals the sum of the counts of its parents.
+    The occurrence counts of the leaf nodes are used for computing the relative frequencies of the morphs.
+    To find out the morph sequence that a word consists of, we look up the chunk that is identical to the word, and trace the split indices recursively until we reach the leafs, which are the morphs.
+    Note that the hierarchical structure is used only during model search: It is not part of the final model, and accordingly no cost is associated with any other nodes than the leaf nodes.
+    Adding and removing morphs.
+    Adding new morphs to the codebook increases the codebook cost.
+    Consequently, a new word token will tend to be split into morphs already listed in the codebook, which may lead to local optima.
+    To b

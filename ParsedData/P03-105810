@@ -1,0 +1,7 @@
+ent described in the last section to obtain the training examples from the English side of the parallel texts.
+    Due to the memory size limitation of our machine, we were not able to align all six parallel corpora of 280MB in one alignment run of GIZA++.
+    For two of the corpora, Hong Kong Hansards and Xinhua News, we gathered all English sentences containing the 29 SENSEVAL-2 noun occurrences (and their sentence-aligned Chinese sentence counterparts).
+    This subset, together with the complete corpora of Hong Kong News, Hong Kong Laws, English translation of Chinese Treebank, and Sinorama, is then given to GIZA++ to perform one word alignment run.
+    It took about 40 hours on our 2.4 GHz machine with 2 GB memory to perform this alignment.
+    After word alignment, each 3-sentence context in English containing an occurrence of the noun w that is aligned to a selected Chinese translation then forms a training example.
+    For each SENSEVAL-2 noun w, we then collected training examples from the English si

@@ -1,0 +1,7 @@
+ These trees received trivial modifications to allow them to be read, e.g., adding the missing extra set of parentheses around the complete tree.
+    We trained our classifier on the parsed data files in the training and development sections, and evaluated the classifer on the test section.
+    Section 3 evaluates the parser&#8217;s output in conjunction with this classifier; this section focuses on the classifier&#8217;s performance at the individual word token level.
+    In our complete application, the classifier uses a bitag tagger to assign each word a POS tag.
+    Like all such taggers, our tagger has a nonnegligible error rate, and these tagging could conceivably affect the performance of the classifier.
+    To determine if this is the case, we report classifier performance when trained both on &#8220;Gold Tags&#8221; (the tags assigned by the human annotators of the Switchboard corpus) and on &#8220;Machine Tags&#8221; (the tags assigned by our bitag tagger).
+    We compare these results to a baseline

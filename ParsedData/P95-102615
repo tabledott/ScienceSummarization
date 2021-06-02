@@ -1,0 +1,10 @@
+liable indicators of one of the target word's senses (e.g. flock and bulldozer for &amp;quot;crane&amp;quot;).
+    A human judge must decide which one, but this can be done very quickly (typically under 2 minutes for a full list of 30-60 such words).
+    Co-occurrence analysis selects collocates that span the space with minimal overlap, optimizing the efforts of the human assistant.
+    While not fully automatic, this approach yields rich and highly reliable seed sets with minimal work.
+  
+  
+    Unlike many previous bootstrapping approaches, the present algorithm can escape from initial misclassification.
+    Examples added to the the growing seed sets remain there only as long as the probability of the classification stays above the threshold.
+    IIf their classification begins to waver because new examples have discredited the crucial collocate, they are returned to the residual and may later be classified differently.
+    Thus contexts that are added to the wrong seed set because of a misleading word in 

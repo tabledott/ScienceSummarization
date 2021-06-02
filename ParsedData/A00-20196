@@ -1,0 +1,9 @@
+aera (1982).
+    After the sentences have been preprocessed, ALEK counts sequences of adjacent part-ofspeech tags and function words (such as determiners, prepositions, and conjunctions).
+    For example, the sequence a/AT full-time/I.
+    1 jobINN contributes one occurrence each to the bigrams AT+JJ, JJ+NN, a+JJ, and to the part-of-speech tag trigram AT+JJ+NN.
+    Each individual tag and function word also contributes to its own unigram count.
+    These frequencies form the basis for the error detection measures.
+    From the general corpus, ALEK computes a mutual information measure to determine which sequences of part-of-speech tags and function words are unusually rare and are, therefore, likely to be ungrammatical in English (e.g., singular determiner preceding plural noun, as in *a desks).
+    Mutual information has often been used to detect combinations of words that occur more frequently than we would expect based on the assumption that the words are independent.
+    Here we use this measure for the o

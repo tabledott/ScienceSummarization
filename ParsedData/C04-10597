@@ -1,0 +1,10 @@
+
+			2.2 Bag-of-words Query Models.
+			Different query models are designed to guide the data augmentation efficiently.
+			We first define ?bag-of-words?
+			models, based on different levels of knowledge collected from the hypotheses of the statistical machine translation engine.
+			2.2.1 First-best Hypothesis as a Query Model The first-best hypothesis is the Viterbi path in the search space returned from the statistical machine translation decoder.
+			It is the optimal hypothesis the statistical machine translation system can generate using the given translation and language model, and restricted by the applied pruning strategy.
+			Ignoring word order, the hypothesis is converted into a bag-of-words representation, which is then used as a query: }|),{(),,( 1211 TiiilT VwfwwwwQ ?== L where iw is a word in the vocabulary 1TV of the Top 1 hypothesis.
+			if is the frequency of iw ?s occurrence in the hypothesis.
+			The first-best hypothesis is the actual translation we want to improve, and usually it captures enou

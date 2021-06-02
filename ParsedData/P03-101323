@@ -1,0 +1,9 @@
+ determine which sister-head dependencies are crucial for improving performance of the model.
+    The results of the PP experiment are listed in Table 5.
+    Again, we give results obtained using TnT tags and using perfect tags.
+    The row &#8216;Split PP&#8217; contains the performance figures obtained by including split PPs in both the training and in the testing set.
+    This leads to a substantial increase in LR (6&#8211;7%) and LP (around 8%) for both tagging schemes.
+    Note, however, that these figures are not directly comparable to the performance of the unmodified Collins model: it is possible that the additional brackets artificially inflate LR and LP.
+    Presumably, the brackets for split PPs are easy to detect, as they are always adjacent to a preposition.
+    An honest evaluation should therefore train on the modified training set (with split PPs), but collapse the split categories for testing, i.e., test on the unmodified test set.
+    The results for this evaluation are listed in rows &#8216

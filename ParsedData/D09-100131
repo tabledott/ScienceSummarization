@@ -1,0 +1,10 @@
+of clustering quality.
+    The best result was obtained with 25 rounds of execution and with the entity multiple set to 200 (the default is 30).
+    To answer questions, the only difference from TextRunner is that a question string can match any string in its cluster.
+    As in TextRunner, we report results for both exact match (RS-EXACT) and substring (RS-SUB).
+    DIRT: The DIRT system inputs a path and returns a set of similar paths.
+    To use DIRT in question answering, we queried it to obtain similar paths for the relation of the question, and used these paths while matching sentences.
+    We first used MINIPAR (Lin, 1998) to parse input text using the same dependencies as DIRT.
+    To determine a match, we first check if the sentence contains the question path or one of its DIRT paths.
+    If so, and if the available argument slot in the question is contained in the one in the sentence, it is a match, and we return the other argument slot from the sentence if it is present.
+    Ideally, a fair comparis

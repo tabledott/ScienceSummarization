@@ -1,0 +1,7 @@
+d productions (R+ &#8801; {r &#8712; R  |r &gt; 0}).
+    A production (lhs, rhs, w) is written lhs &#8594;w rhs.
+    Productions whose rhs contains no nonterminals (rhs &#8712; T&#931;) are called terminal productions, and rules of the form A &#8594;w B, for A, B &#8712; N are called &#491;-productions, or epsilon productions, and can be used in lieu of multiple initial nonterminals.
+    Figure 2 shows a sample wRTG.
+    This grammar accepts an infinite number of trees.
+    The tree S(NP(DT(the), N(sons)), VP(V(run))) comes out with probability 0.3.
+    We define the binary relation &#8658;G (single-step derives in G) on T&#931;(N)&#215;(paths&#215;P)*, pairs of trees and derivation histories, which are logs of (location, production used): where (a, h) &#8658;G (b, h &#183; (p, (l, r, w))) iff tree b may be derived from tree a by using the rule l &#8594;w r to replace the nonterminal leaf l at path p with r. For a derivation history h = ((p1, (l1, r1, w1)), ... , (pn, (l1, r1, w1))), the weight of h is w(h) &

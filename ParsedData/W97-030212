@@ -1,0 +1,8 @@
+.
+    On the other hand, because long nodes will tend to have low inside probabilities, taking the minimum of all scores strongly favors sequences of short nodes.
+    Furthermore, their algorithm requires time 0(n3) to run just once.
+    This is acceptable if the algorithm is run only after the first level, but running it more often would lead to an overall run time of 0(0).
+    Finally, we hoped to find an algorithm that was somewhat less heuristic in nature.
+    Our global thresholding technique thresholds out node N if the ratio between the most probable sequence of nodes including node N and the overall most probable sequence of nodes is less than some threshold, T. Formally, denoting sequences of nodes by L, we threshold node N if Now, the hard part is determining P(L), the probability of a node sequence.
+    Unfortunately, there is no way to do this efficiently as part of the intermediate computation of a bottom-up chart parser.'
+    We will approximate P(L) as follows: 'Some other parsing techniques, s

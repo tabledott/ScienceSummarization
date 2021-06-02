@@ -1,0 +1,10 @@
+ng process.
+    The initial model assigns a conditional likelihood of one to each training example (there is a single lexical item for each sentence xi, and it contains the labeled logical form zi).
+    Although the splitting step often decreases the probability of the data, the new entries it produces are less specific and should generalize better.
+    Since we initially assign positive weights to the parameters for new lexical items, the overall approach prefers splitting; trees with many lexical items will initially be much more likely.
+    However, if the learned lexical items are used in too many incorrect parses, the stochastic gradient updates will down weight them to the point where the lexical induction step can merge or re-split nodes in the trees that contain them.
+    This allows the approach to correct the lexicon and, hopefully, improve future performance.
+  
+  
+    Previous work has focused on a variety of different meaning representations.
+    Several approaches have been designed for the vari

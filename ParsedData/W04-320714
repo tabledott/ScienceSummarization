@@ -1,0 +1,9 @@
+21.06% of correct analyses (by token) are not admitted by the FST; 6.85% do not have an FST analysis matching in the first tag and morpheme, 3.63% do not have an FST analysis matching the full tag sequence, and 1.22% do not have an analysis matching the first tag.
+    These do not include the 2.18% of tokens with no analysis at all.
+    When this happened in training, we added the correct analysis to the lattice.
+    To perform inference on new data, we construct a lattice from the FST (adding in any analyses of the word seen in training) and use a dynamic program (essentially the Viterbi algorithm) to find the best path through the lattice.
+    Unseen features are given the weight Bmin.
+    Table 4 shows performance on ambiguous tokens in training and test data (averaged over five folds).
+    Because we are using small training sets, parameter estimates for a lexicalized Korean probabilistic grammar are likely to be highly unreliable due to sparse data.
+    Therefore we use an unlexicalized PCFG.
+    Because

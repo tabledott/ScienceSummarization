@@ -1,0 +1,11 @@
+we use neither the correction nor the default features.
+    The rest of this section considers various combinations of feature cutoffs and Gaussian smoothing.
+    We report optimal results with respect to the smoothing parameter a, where a = No-2 and N is the number of training instances.
+    We found that using a 2 gave the most benefit to our basic tagger, improving performance by about 0.15% on the development set.
+    This result is shown in the first row of Table 5.
+    The remainder of Table 5 shows a minimal change in performance when the current word (w) and previous word (pw) cutoffs are varied.
+    This led us to reduce the cutoffs for all features simultaneously.
+    Table 6 gives results for cutoff values between 1 and 4.
+    The best performance (in row 1) is obtained when the cutoffs are eliminated entirely.
+    Gaussian smoothing has allowed us to retain all of the features extracted from the corpus and reduce overfitting.
+    To get more information into the model, more features must be extrac

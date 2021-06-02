@@ -1,0 +1,9 @@
+ computing a segmentation probability at each potential boundary.
+    This information can be effectively used in the featurebased segmenter to account for lexical cohesion, as described in the next section.
+  
+  
+    In the previous section, we have concentrated exclusively on the consideration of content (through lexical cohesion) to determine the structure of texts, neglecting any influence of form.
+    In this section, we explore formal devices that are indicative of topic shifts, and explain how we use these cues to build a segmenter targeting conversational speech.
+    Topic segmentation is reduced here to a classification problem, where each utterance break Bi is either considered a topic boundary or not.
+    We use statistical modeling techniques to build a classifier that uses local features (e.g. cue phrases, pauses) to determine if an utterance break corresponds to a topic boundary.
+    We chose C4.5 and C4.5rules (Quinlan, 1993), two programs to induce classification rules in the form of decision 

@@ -1,0 +1,5 @@
+).
+    Enumerating all L&#8217;s is intractable.
+    It is also unnecessary, since most partitions will result in parts whose lambda forms have no cluster they can be assigned to.
+    Instead, USP uses a greedy algorithm to search for the MAP parse.
+    First we introduce some definitions: a partition is called A-reducible from p if it can be obtained from the current partition by recursively A-reducing the part containing p with one of its arguments; such a partition is Algorithm 1 USP-Parse(MLN, QLF) Form parts for individual atoms in QLF and assign each to its most probable cluster repeat for all parts p in the current partition do for all partitions that are A-reducible from p and feasible do Find the most probable cluster and argument type assignments for the new part Change to the new partition and assignments with the highest gain in probability until none of these improve the probability return current partition and assignments called feasible if the core form of the new part is contained in some clus

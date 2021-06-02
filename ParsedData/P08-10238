@@ -1,0 +1,9 @@
+V is the consequent node in the deductive step, and tails(e) E V * is the list of antecedent nodes.
+    For example, the hyperedge for deduction (*) is notated: ((NPB0,1, CC1,2, NPB2,3), NP0,3).
+    There is also a distinguished root node TOP in each forest, denoting the goal item in parsing, which is simply S0,l where S is the start symbol and l is the sentence length.
+    Given a parse forest and a translation rule set R, we can generate a translation forest which has a similar hypergraph structure.
+    Basically, just as the depthfirst traversal procedure in tree-based decoding (Figure 2), we visit in top-down order each node v in the
+  
+  
+    translation hyperedge translation rule parse forest, and try to pattern-match each translation rule r against the local sub-forest under node v. For example, in Figure 3(a), at node VP1,6, two rules r3 and r7 both matches the local subforest, and will thus generate two translation hyperedges e3 and e4 (see Figure 3(b-c)).
+    More formally, we define a function matc

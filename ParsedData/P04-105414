@@ -1,0 +1,10 @@
+ching subsequence, we accumulate the result of the similarity function s(ai, bj) and then recursively search for matching subsequences of their children ai[c], bj[c].
+    We implement two types of tree kernels.
+    A contiguous kernel only matches children subsequences that are uninterrupted by non-matching nodes.
+    Therefore, d(a) = l(a).
+    A sparse tree kernel, by contrast, allows non-matching nodes within matching subsequences.
+    Figure 2 shows two relation instances, where each node contains the original text plus the features used for the matching function, 0m(ti) = Igeneralpos, entity-type, relation-argument}.
+    (&#8220;NA&#8221; denotes the feature is not present for this node.)
+    The contiguous kernel matches the following substructures: It0[0], u0[0]}, It0[2], u0[1]}, It3[0], u2[0]}.
+    Because the sparse kernel allows non-contiguous matching sequences, it matches an additional substructure It0[0, *, 2], u0[0, *,1]}, where (*) indicates an arbitrary number of non-matching nodes.
+    Zelenk

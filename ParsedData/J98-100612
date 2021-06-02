@@ -1,0 +1,9 @@
+replaced with its base form.
+    This step normalizes across morphological variants without resorting to the more drastic measure of stemming.
+    Morphological information is not lost, since the part-of-speech tag remains unchanged.
+    Training consists of counting the frequencies of various contextual cues for each sense.
+    Testing consists of taking a new example of the polysemous word and computing the most probable sense, based on the cues present in the context of the new item.
+    A comparison is made to the sense assigned by a human judge, and the classifier's decision is scored as correct or incorrect.
+    TLC uses a Bayesian approach to find the sense s, that is the most probable given the cues ci contained in a context window of &#177;k positions around the polysemous target word.
+    For each s&#8222; the probability is computed with Bayes' rule: As Golding (1995) points out, the term p(c_k,.
+    &#8226; &#8226; s,) is difficult to estimate because of the sparse data problem, but if we assume, 

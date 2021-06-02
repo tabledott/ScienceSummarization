@@ -1,0 +1,7 @@
+ry, the decoder still tries to assign every possible tag.
+    Apart from features, the decoder maintains other types of information, including the tag dictionary, the word frequency counts used when building the tag dictionary, the maximum word lengths by tag, and the character categories.
+    The above data can be collected by scanning the corpus before training starts.
+    However, in both the baseline tagger and the joint POS tagger, they are updated incrementally during the perceptron training process, consistent with online learning.3 The online updating of word frequencies, maximum word lengths and character categories is straightforward.
+    For the online updating of the tag dictionary, however, the decision for frequent words must be made dynamically because the word frequencies keep changing.
+    This is done by caching the number of occurrences of the current most frequent word M, and taking all words currently above the threshold M/5000 + 5 as frequent words.
+    5000 is a rough figure to control 

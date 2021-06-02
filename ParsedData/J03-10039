@@ -1,0 +1,10 @@
+ an animal by its type (is it a dog? is it a cat?).
+    If that does not suffice, first absolute attributes like color are tried, followed by relative ones such as size.
+    In sum: The list of preferred attributes for our example domain would be ( type, color, size ).
+    Essentially, the incremental algorithm iterates through this list, and for each property it encounters, it determines whether adding this property to the properties selected so far would rule out any of the remaining distractors.
+    If so, it is included in the list of selected properties.
+    There is one exception to this general strategy: Type information is always included, even if it rules out no distractors.
+    The algorithm stops when all distractors are ruled out (success) or when the end of the list of preferred attributes is reached (failure).
+    Suppose we apply the incremental algorithm to d1 from Figure 1 with ( type, color, size ) as preferred attributes.
+    The type of d1 listed in the database is dog.
+    This property i

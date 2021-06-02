@@ -1,0 +1,10 @@
+we have multiple children with the same weight, while the weight is used to determine the relative order of the children, going from largest to smallest.
+    The weight can be any real valued number.
+    The order type NORMAL means we preserve the original order of the children, while REVERSE means we flip the order.
+    We reserve a special label self to refer to the head node itself so that we can apply a weight to the head, too.
+    We will call this tuple a precedence tuple in later discussions.
+    In this study, we use manually created rules only.
+    Suppose we have a precedence rule: VB &#8594; (nsubj, 2, NORMAL), (dobj, 1, NORMAL), (self, 0, NORMAL).
+    For the example shown in Figure 2, we would apply it to the ROOT node and result in &#8220;John the ball can hit .&#8221;.
+    Given a set of rules, we apply them in a dependency tree recursively starting from the root node.
+    If the POS tag of a node matches the left-hand-side of a rule, the rule is applied and the order of the sentence is changed

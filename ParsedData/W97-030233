@@ -1,0 +1,7 @@
+d the second technique, since the first technique gets no speedup from most thresholding systems.
+    All experiments were trained on sections 2-18 of the Penn Treebank, version II.
+    A few were tested, where noted, on the first 200 sentences of section 00 of length at most 40 words.
+    In one experiment, we used the first 15 of length at most 40, and in the remainder of our experiments, we used those sentences in the first 1001 of length at most 40.
+    Our parameter optimization algorithm always used the first 31 sentences of length at most 40 words from section 19.
+    We ran some experiments on more sentences, but there were three sentences in this larger test set that could not be parsed with beam thresholding, even with loose settings of the threshold; we therefore chose to report the smaller test set, since it is difficult to compare techniques which did not parse exactly the same sentences.
+    We needed several grammars for our experiments so that we could test the multiple-pass parsing algorithm.

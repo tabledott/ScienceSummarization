@@ -1,0 +1,9 @@
+ic.
+    So from a training set we induce a CFG from the actual mnemonic productions that are elicited in parsing the training corpus.
+    Using the Inside-Outside algorithm, we can estimate P-CFG from a large corpus of text.
+    But since we also have a large corpus of bracketed sentences, we can adapt the Inside-Outside algorithm to reestimate the probability parameters subject to the constraint that only parses consistent with the Treebank (where consistency is as defined earlier) contribute to the reestimation.
+    From a training run of 15,000 sentences we observed 87,704 mnemonic productions, with 23,341 NT mnemonics of which 10,302 were lexical.
+    Running on a test set of 760 sentences 32% of the rule templates were used, 7% of the lexical mnemonics, 10% of the constituent mnemonics, and 5% of the mnemonic productions actually contributed to parses of test sentences.
+  
+  
+    To evaluate the performance of a grammar and an accompanying model, we use two types of measurements: &#8226; the any-consiste

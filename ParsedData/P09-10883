@@ -1,0 +1,7 @@
+ian formulation.
+    The model includes priors to impose a bias towards small grammars with few rules, each of which is as simple as possible (e.g., terminal productions consisting of short phrase pairs).
+    This explicitly avoids the degenerate solutions of maximum likelihood estimation (DeNero et al., 2006), without resort to the heuristic estimator of Koehn et al. (2003).
+    We develop a novel Gibbs sampler to perform inference over the latent synchronous derivation trees for our training instances.
+    The sampler reasons over the infinite space of possible translation units without recourse to arbitrary restrictions (e.g., constraints drawn from a wordalignment (Cherry and Lin, 2007; Zhang et al., 2008b) or a grammar fixed a priori (Blunsom et al., 2008)).
+    The sampler performs local edit operations to nodes in the synchronous trees, each of which is very fast, leading to a highly efficient inference technique.
+    This allows us to train the model on large corpora without resort to punitive length 

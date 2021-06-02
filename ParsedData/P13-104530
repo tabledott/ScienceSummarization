@@ -1,0 +1,13 @@
+th parsers on two similar sentences and then analyze if the parsers correctly transferred the knowledge.
+    The training sentences are He eats spaghetti with a fork. and She eats spaghetti with pork.
+    The very similar test sentences are He eats spaghetti with a spoon. and He eats spaghetti with meat.
+    Initially, both parsers incorrectly attach the PP to the verb in both test sentences.
+    After training, the CVG parses both correctly, while the factored Stanford parser incorrectly attaches both PPs to spaghetti.
+    The CVG&#8217;s ability to transfer the correct PP attachments is due to the semantic word vector similarity between the words in the sentences.
+    Fig.
+    4 shows the outputs of the two parsers. showing that head words dominate the composition.
+    The model learns to not give determiners much importance.
+    The two diagonals show clearly the two blocks that are multiplied with the left and right children, respectively.
+  
+  
+    We introduced Compositional Vector Grammars (CVGs), a pa

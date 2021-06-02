@@ -1,0 +1,10 @@
+riable in t(r).
+    We then collect the resulting target-language strings and plug them into the Chinese-side s(r) of rule r, getting a translation for the subtree T*&#951;.
+    We finally take the best of all translations.
+    With the extended LHS of our transducer, there may be many different rules applicable at one tree node.
+    For example, consider the VP subtree in Fig.
+    3 (c), where both r3 and r6 can apply.
+    As a result, the number of derivations is exponential in the size of the tree, since there are exponentially many decompositions of the tree for a given set of rules.
+    This problem can be solved by memoization (Cormen et al., 2001): we cache each subtree that has been visited before, so that every tree node is visited at most once.
+    This results in a dynamic programming algorithm that is guaranteed to run in O(npq) time where n is the size of the parse tree, p is the maximum number of rules applicable to one tree node, and q is the maximum size of an applicable rule.
+    For a given 

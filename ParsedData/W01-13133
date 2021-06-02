@@ -1,0 +1,12 @@
+ week.
+    Some of the texts were written on the same day.
+    In addition to a description of the May earthquake, these texts contain references to another earthquake that occurred in the same region in February 1998.
+  
+  
+    To divide sentences into event-clauses we use CONTEX (Hermjakob, 1997), a parser that produces a syntactic parse tree augmented with semantic labels.
+    CONTEX uses machine learning techniques to induce a grammar from a given treebanks.
+    A sample output of CONTEX is given in Appendix 1.
+    To divide a sentence into event-clauses the parse tree output by CONTEX is analyzed from left to right (root to leaf).
+    The ::CAT field for each node provides the necessary information about whether the node under consideration forms a part of its upper level event or whether it introduces a new event.
+    ::CAT features that indicate new events are: S-CLAUSE, S-SNT, SSUB-CLAUSE, S-PART-CLAUSE, S-RELCLAUSE.
+    These features mark clauses which contain both subject (one or several NPs) and p

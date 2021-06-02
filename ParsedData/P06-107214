@@ -1,0 +1,7 @@
+rginalizing over its hidden structures, sums up not only over trees, but over segmentations of x.
+    For completeness, we must include a probability model over the number of trees generated, which could be anywhere from 1 to n. The model over the number T of trees given a sentence of length n will take the following log-linear form: where Q E R is the sole parameter.
+    When Q = 0, every value of T is equally likely.
+    For Q &#171; 0, the model prefers larger structures with few breaks.
+    At the limit (Q &#8212;* &#8722;oc), we achieve the standard learning setting, where the model must explain x using a single tree.
+    We start however at Q &#187; 0, where the model prefers smaller trees with more breaks, in the limit preferring each word in x to be its own tree.
+    We could describe &#8220;brokenness&#8221; as a feature in the model whose weight, Q, is chosen extrinsically (and time-dependently), rather than empirically&#8212;just as was done with S. Annealing &#946; resembles the popular bootstrapp

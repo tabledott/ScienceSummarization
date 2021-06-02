@@ -1,0 +1,7 @@
+ and the node re-ordering probabilities are initialized uniformly.
+    Figure 1 shows the viterbi alignment produced by the &#8220;Tree-to-String, Clone&#8221; system on one sentence from our test set.
+    We found better agreement with the human alignments when fixing Pins(left) in the Tree-to-String model to a constant rather than letting it be determined through the EM training.
+    While the model learned by EM tends to overestimate the total number of aligned word pairs, fixing a higher probability for insertions results in fewer total aligned pairs and therefore a better trade-off between precision and recall.
+    As seen for other tasks (Carroll and Charniak, 1992; Merialdo, 1994), the likelihood criterion used in EM training may not be optimal when evaluating a system against human labeling.
+    The approach of optimizing a small number of metaparameters has been applied to machine translation by Och and Ney (2002).
+    It is likely that the IBM models could similarly be optimized to minimize alignmen

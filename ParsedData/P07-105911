@@ -1,0 +1,8 @@
+
+  
+  
+    Our SMT-based query expansion techniques are based on a recent implementation of the phrasebased SMT framework (Koehn et al., 2003; Och and Ney, 2004).
+    The probability of translating a foreign sentence f into English e is defined in the noisy channel model as arg max p(elf) = argmax p(fle)p(e) (1) e e This allows for a separation of a language model p(e), and a translation model p(fle).
+    Translation probabilities are calculated from relative frequencies of phrases, which are extracted via various heuristics as larger blocks of aligned words from best word alignments.
+    Word alignments are estimated by models similar to Brown et al. (1993).
+    For a sequence of I phrases, the translation probability in equation (1) can be decomposed into Recent SMT models have shown significant improvements in translation quality by improved modeling of local word order and idiomatic expressions through the use of phrases, and by the deployment of large n-gram language models to model fluency and lexical c

@@ -1,0 +1,6 @@
+theses are only different from each other in one word or two.
+			This means, there is not so much noise and variance introduced in this query model.
+			2.2.3 Translation Model as a Query Model To fully leverage the available knowledge from the translation system, the translation model can be used to guide the language model adaptation process.
+			As introduced in section 1, the translation model represents the full knowledge of translating words, as it encodes all possible translations candidates for a given source sentence.
+			Thus the query model based on the translation model, has potential advantages over both 1TQ and TNQ . To utilize the translation model, all the n-grams from the source sentence are extracted, and the corresponding candidate translations are collected from the translation model.
+			These are then converted into a bag-of-words representation as follows: }|),{( ),,;;,,( ,2,1,,2,1, 1111 TMiii nsssnsssTM Vwfw wwwwwwQ IIII ?= = LLL where is is a source n-gram, and I is the number of n-grams 

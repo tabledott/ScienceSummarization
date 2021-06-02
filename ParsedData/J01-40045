@@ -1,0 +1,6 @@
+agger based on the Hidden Markov Model (HMM) (Church 1988).
+    Similarly, we built a statistical HMM-based noun phrase identification module that determines the noun phrase boundaries solely based on the part-of-speech tags assigned to the words in a sentence.
+    We also implemented a module that recognizes MUC-style named entities, that is, organization, person, location, date, time, money, and percent.
+    Our named entity recognition module uses the HMM approach of Bikel, Schwartz, and Weischedel (1999), which learns from a tagged corpus of named entities.
+    That is, our part-of-speech tagger, noun phrase identification module, and named entity recognition module are all based on HMMs and learn from corpora tagged with parts of speech, noun phrases, and named entities, respectively.
+    Next, both the noun phrases determined by the noun phrase identification module and the named entities are merged in such a way that if the noun phrase overlaps with a named entity, the noun phrase boundaries will be ad

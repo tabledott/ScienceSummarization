@@ -1,0 +1,8 @@
+ without such efforts.
+    Parallel Training: The training of pairwise SVMs has trivial parallelism, i.e., each SVM can be trained separately.
+    Since computers with two or more CPUs are not expensive these days, parallelization is very practical solution to accelerate the training of pairwise SVMs.
+    Fast Winner Finding: Although the pairwise method reduces the cost of training, it greatly increases the number of classifications needed to determine the class of one sample.
+    For example, for our experiments using the GENIA corpus, the BIO representation with class splitting yields more than 4,000 classification pairs.
+    Fortunately, we can stop classifications when a class gets K &#8212;1 votes and this stopping greatly saves classification time (Kre&#223;el, 1998).
+    Moreover, we can stop classifications when the current votes of a class is greater than the others&#8217; possible votes.
+    Support Vector Caching: In the pairwise method, though we have a large number of classifiers, each classifie

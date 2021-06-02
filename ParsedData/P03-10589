@@ -1,0 +1,8 @@
+3 lists the number of senses of each noun as given in the WordNet 1.7 sense inventory (Miller, 1990).
+    We first lump together two senses s, and s2 of a noun if s, and s2 are translated into the same Chinese word.
+    The number of senses of each noun after sense lumping is given in column 3 of Table 3.
+    For the 7 nouns that are lumped into one sense (i.e., they are all translated into one Chinese word), we do not perform WSD on these words.
+    The average number of senses before and after sense lumping is 5.07 and 3.52 respectively.
+    After sense lumping, we trained a WSD classifier for each noun w, by using the lumped senses in the manually sense-tagged training data for w provided by the SENSEVAL-2 organizers.
+    We then tested the WSD classifier on the official SENSEVAL-2 test data (but with lumped senses) for w. The test accuracy (based on fine-grained scoring of SENSEVAL-2) of each noun obtained is listed in the column labeled M1 in Table 3.
+    We then used our approach of parallel text alignm

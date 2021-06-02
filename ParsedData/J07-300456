@@ -1,0 +1,8 @@
+ to the CCG analysis, we need to transform the tree before we can translate it.
+    During preprocessing, we create a copy of the entire argument cluster which corresponds to the constituent structure of the CCG analysis.
+    During normal category assignment, we use the first conjunct in its original form to obtain the correct categories of all constituents.
+    In a later stage, we use type-raising and composition to combine the constituents within each argument cluster.
+    For a detailed description of this algorithm and a number of variations on the original Treebank annotation that we did not attempt to deal with, the interested reader is referred to the CCGbank manual.
+    There are 226 instances of argument-cluster coordination in the entire Penn Treebank.
+    The algorithm delivers a correct CCG derivation for 146 of these.
+    Translation failures are due to the fact that the algorithm can at present only deal with this construction if the two conjuncts are isomorphic in structure, which is not alwa

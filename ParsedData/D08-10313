@@ -1,0 +1,6 @@
+of grouping the mentions into equivalence classes, so that each equivalence class contains exactly those mentions that refer to the same discourse entity.
+    The number of equivalence classes is not specified in advance, but is bounded by the number of mentions.
+    In this paper, we view coreference resolution as a graph problem: Given a set of mentions and their context as nodes, generate a set of edges such that any two mentions that belong in the same equivalence class are connected by some path in the graph.
+    We construct this entity-mention graph by learning to decide for each mention which preceding mention, if any, belongs in the same equivalence class; this approach is commonly called the pairwise coreference model (Soon et al., 2001).
+    To decide whether two mentions should be linked in the graph, we learn a pairwise coreference function pc that produces a value indicating the probability that the two mentions should be placed in the same equivalence class.
+    The remainder of this section fi

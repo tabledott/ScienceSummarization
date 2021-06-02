@@ -1,0 +1,10 @@
+sily fit into memory.
+    The Moses system implements a data structure for language models that is more efficient than the canonical SRILM (Stolcke 2002) implementation used in most systems.
+    The language model on disk is also converted into this binary format, resulting in a minimal loading time during start-up of the decoder.
+    An even more compact representation of the language model is the result of the quantization of the word prediction and back-off probabilities of the language model.
+    Instead of representing these probabilities with 4 byte or 8 byte floats, they are sorted into bins, resulting in (typically) 256 bins which can be referenced with a single 1 byte index.
+    This quantized language model, albeit being less accurate, has only minimal impact on translation performance (Federico and Bertoldi 2006).
+  
+  
+    This paper has presented a suite of open-source tools which we believe will be of value to the MT research community.
+    We have also described a new SMT decoder which can inco

@@ -1,0 +1,11 @@
+require any manual annotations.
+    We represent context by n-grams and local collocations, features typically used in supervised word sense disambiguation.
+    Both n-grams and collocations exclude the word wj.
+    An n-gram is a sequence of n adjacent words appearing in r1 ... ri&#8722;10ri+1 ... rm.
+    A local collocation also takes into account the position of an n-gram with respect to the target word.
+    To compute local collocations for a word at position i, we extract all n-grams (n = 1... 4) beginning at position i &#8722; 2 and ending at position i + 2.
+    To make these position dependent, we prepend each of them with the length and starting position.
+    Once the classifier3 for wj is trained, we apply it to the context r1 ... ri&#8722;1&#10065;ri+1 ... rm.
+    For positive predictions, we rewrite the string as r1 ... ri&#8722;1wjri+1 ... rm.
+    In this formulation, all substitutions are tested independently.
+    For the example from Table 2, only the pair (difficult, hard) passes this filter, a

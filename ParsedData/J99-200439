@@ -1,0 +1,7 @@
+ the parser, it would certainly improve the chances of arriving at a parse for a sentence.
+    In fact, Table 7 presents the performance of the supertagger that selects, at most, the top three supertags for each word.
+    The optimum number of supertags to output to balance the success rate of the parser against the efficiency of the parser must be determined empirically.
+    A more serious limitation of this approach is that it fails to parse ill-formed and extragrammatical strings such as those encountered in spoken utterances and unrestricted texts.
+    This is due to the fact that the Earley-style LTAG parser attempts to combine the supertags to construct a parse that spans the entire string.
+    In cases where the supertag sequence for a string cannot be combined into a unified structure, the parser fails completely.
+    One possible extension to account for ill-formed and extragrammatical strings is to extend the Earley parser to produce partial parses for the fragments whose supertags can be combined.

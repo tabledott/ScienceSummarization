@@ -1,0 +1,5 @@
+nt types of symbols in tweets: our annotation guidelines differentiate between emoticons, punctuation, and garbage (apparently non-meaningful symbols or tokenization errors).
+    Several Unicode character ranges are reserved for emoji-style symbols (including the three Unicode hearts in G4); however, depending on the user&#8217;s software, characters in these ranges might be rendered differently or not at all.
+    We have found instances where the clustering algorithm groups proprietary iOS emoji symbols along with normal emoticons; for example, the character U+E056, which is interpreted on iOS as a smiling face, is in the same G2 cluster as smiley face emoticons.
+    The symbol U+E12F, which represents a picture of a bag of money, is grouped with the words cash and money.
+    Since Brown clusters are hierarchical in a binary tree, each word is associated with a tree path represented as a bitstring with length &lt; 16; we use prefixes of the bitstring as features (for all prefix lengths E 12, 4, 6,... ,16}).

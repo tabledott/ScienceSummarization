@@ -1,0 +1,7 @@
+l 13,759K 11.24 52.85 10.66 49.81 10.85 48.41 Table 3: Experimental results for varying k-best and m-oracle translations.
+			# features 2003 (dev) 2004 2005 NIST BLEU [%] NIST BLEU [%] NIST BLEU [%] baseline 10.64 46.47 10.83 49.33 10.90 47.03 1-oracle 1-best 8,735K 11.25 52.63 10.82 50.77 10.93 48.11 1-oracle 10-best 10,480K 11.24 53.45 10.55 49.10 10.82 48.49 10-oracle 1-best 8,416K 10.70 47.63 10.83 48.88 10.76 46.00 10-oracle 10-best 13,759K 11.24 52.85 10.66 49.81 10.85 48.41 sentence-BLEU 14,587K 11.10 51.17 10.82 49.97 10.86 47.04 by 10-oracle and 10-best list.
+			When decoding, a 1000-best list is generated to achieve better oracle translations.
+			The training took nearly 1 day using 8cores of Opteron.
+			The translation quality is eval uated by case-sensitive NIST (Doddington, 2002) and BLEU (Papineni et al, 2002)2.
+			The table alsoshows the number of active features in which non zero values were assigned as weights.
+			The addition of prefix/suffix tokens greatly increased the number of active fea

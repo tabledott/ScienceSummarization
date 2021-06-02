@@ -1,0 +1,5 @@
+se, when one of the trees has depth one, NodeCompare(T,T') is defined to be NodeSimilarity(v,v').
+    The similarity score NodeSimilarity(v,v') of atomic nodes depends on whether the corresponding words are identical, paraphrases, or unrelated.
+    The similarity scores for pairs of identical words, pairs of synonyms, pairs of paraphrases, and edges (given in Table 3) are manually derived using a small development corpus.
+    While learning of the similarity scores automatically is an appealing alternative, its application in the fusion context is challenging because of the absence of a large training corpus and the lack of an automatic evaluation function.5 The similarity of nodes containing flattened subtrees,6 such as noun phrases, is computed as the score of their intersection normalized by the length of the longest phrase.
+    For instance, the similarity score of the noun phrases antitank missile and machine gun and antitank missile is computed as a ratio between the score of their intersection antitank

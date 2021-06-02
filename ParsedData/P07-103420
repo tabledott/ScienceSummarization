@@ -1,0 +1,7 @@
+source instances hurt the performance.
+    A possible reason for this is that the set of labeled target instances we use is a biased sample from the target domain, and therefore the model trained on these instances is not always a good predictor of &#8220;misleading&#8221; source instances.
+    The second set of experiments is to add the labeled target domain instances into the training set.
+    This corresponds to setting At,l to some non-zero value, but still keeping At,,, as 0.
+    If we ignore the domain difference, then each labeled target instance is weighted the same as a labeled source instance (Au,l &#65533;s= Cu,l ), which is what happens in regular suCs pervised learning.
+    However, based on our theoretical analysis, we can expect the labeled target instances to be more representative of the target domain than the source instances.
+    We can therefore assign higher weights for the target instances, by adjusting the ratio between At,l and A, In our experiments, we set &#65533;t,l Cs , where a ran

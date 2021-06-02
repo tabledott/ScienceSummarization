@@ -1,0 +1,8 @@
+, in principle, can be solved using standard QP toolkits.
+    However, although the number of variables and constraints in the factored dual is polynomial in the size of the data, the number of coefficients in the quadratic term in the objective is very large: quadratic in the number of sentences and dependent on the sixth power of sentence length.
+    Hence, in our experiments we use an online coordinate descent method analogous to the sequential minimal optimization (SMO) used for SVMs (Platt, 1999) and adapted to structured max-margin estimation in Taskar et al. (2003).
+    We omit the details of the structured SMO procedure, but the important fact about this kind of training is that, similar to the basic perceptron approach, it only requires picking up sentences one at a time, checking what the best parse is according to the current primal and dual weights, and adjusting the weights.
+  
+  
+    We used the Penn English Treebank for all of our experiments.
+    We report results here for each model and setti

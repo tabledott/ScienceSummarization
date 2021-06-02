@@ -1,0 +1,11 @@
+olysemous word plant in a previously untagged corpus.
+  
+  
+    In a large corpus, identify all examples of the given polysemous word, storing their contexts as lines in an initially untagged training set.
+    For example: TIndeed, any supervised classification algorithm that returns probabilities with its classifications may potentially be used here.
+    These include Bayesian classifiers (Mosteller and Wallace, 1964) and some implementations of neural nets, but not Brill rules (Brill, 1993).
+    For each possible sense of the word, identify a relatively small number of training examples representative of that sense.'
+    This could be accomplished by hand tagging a subset of the training sentences.
+    However, I avoid this laborious procedure by identifying a small number of seed collocations representative of each sense and then tagging all training examples containing the seed collocates with the seed's sense label.
+    The remainder of the examples (typically 85-98%) constitute an untagged residual.
+   

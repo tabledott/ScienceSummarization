@@ -1,0 +1,8 @@
+ed, and ?k is a learned weight associated with feature fk.
+			The feature functions can measure any aspect of a statetransition, yt?1 ? yt, and the entire observation se quence, x, centered at the current time step, t. For example, one feature function might have value 1when yt?1 is the state START, yt is the state NOT START, and xt is a word appearing in a lexicon of people?s first names.
+			Large positive values for ?kindicate a preference for such an event; large nega tive values make the event unlikely.
+			The most probable label sequence for an input x, y?
+			= argmaxy P?(y|x),can be efficiently determined using the Viterbi algorithm (Rabiner, 1990).
+			An N -best list of labeling sequences can also be obtained using modi fied Viterbi algorithm and A* search (Schwartz and Chow, 1990).
+			The parameters can be estimated by maximum likelihood?maximizing the conditional probabilityof a set of label sequences, each given their cor responding input sequences.
+			The log-likelihood of training set {(xi, yi) : 

@@ -1,0 +1,7 @@
+inese parser for this purpose.
+    We also note that since all parsing evaluations were performed on Chinese treebank data, the Chinese test sentences were in-domain, whereas the English sentences were very far out-of-domain for the Penn Treebank-trained baseline English parser.
+    Hence, in these evaluations, Chinese scores tend to be higher than English ones.
+    Posterior word alignment probabilities were obtained from the word aligner of Liang et al. (2006) and DeNero and Klein (2007)6, trained on approximately 1.7 million sentence pairs.
+    For our alignment model we used an HMM in each direction, trained to agree (Liang et al., 2006), and we combined the posteriors using DeNero and Klein&#8217;s (2007) soft union method.
+    Unless otherwise specified, the maximum value of k was set to 100 for both training and testing, and all experiments used a value of 25 as the c parameter for training set pruning and a cutoff rank of 500 for test set pruning.
+    To verify that all our features were contributing 

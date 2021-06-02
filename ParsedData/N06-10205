@@ -1,0 +1,8 @@
+-free parser described in (Charniak, 2000) and (Charniak and Johnson, 2005).
+    The parser&#8217;s grammar is a smoothed third-order Markov grammar, enhanced with lexical heads, their parts of speech, and parent and grandparent information.
+    The parser uses five probability distributions, one each for heads, their parts-of-speech, headconstituent, left-of-head constituents, and right-ofhead constituents.
+    As all distributions are conditioned with five or more features, they are all heavily backed off using Chen back-off (the average-count method from Chen and Goodman (1996)).
+    Also, the statistics are lightly pruned to remove those that are statistically less reliable/useful.
+    As in (Charniak and Johnson, 2005) the parser has been modified to produce n-best parses.
+    However, the n-best parsing algorithm described in that paper has been replaced by the much more efficient algorithm described in (Jimenez and Marzal, 2000; Huang and Chang, 2005).
+    The second stage of our parser is a Maximum En

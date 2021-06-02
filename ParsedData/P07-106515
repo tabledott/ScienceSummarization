@@ -1,0 +1,10 @@
+isolation for n-grams of order 1 to 10.
+    We analyse our log-frequency BF scheme in terms of the additional memory it requires and the error rate compared to a non-redundant scheme.
+    The nonredundant scheme involves entering just the exact quantised count for each n-gram and then searching over the range of possible counts at test time starting with the count with maximum a priori probability (i.e.
+    1) and incrementing until a count is found or the whole codebook has been searched (here the size is 16).
+    We also analyse the sub-sequence filtering scheme directly by creating a BF with only 3-grams and a BF containing both 2-grams and 3-grams and comparing their actual error rates when presented with 3-grams that are all known to be negatives.
+  
+  
+    Table 3 shows the results of the baseline (EP-KN3) and other conventional n-gram models trained on larger corpora (AFP-KN-3) and using higher-order dependencies (EP-KN-4).
+    The larger models improve somewhat on the baseline performance.
+    Figure 

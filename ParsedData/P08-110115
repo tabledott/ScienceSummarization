@@ -1,0 +1,11 @@
+acter.
+    All input characters are processed in the same way, and the final output is the best candidate in the final agenda.
+    The time complexity of the algorithm is O(WTBn), with W being the maximum word size, T being the total number of POS tags and n the number of characters in the input.
+    It is also linear in the input size.
+    Moreover, the decoding algorithm gives competent accuracy with a small agenda size of B = 16.
+    To further limit the search space, two optimizations are used.
+    First, the maximum word length for each tag is recorded and used by the decoder to prune unlikely candidates.
+    Because the majority of tags only apply to words with length 1 or 2, this method has a strong effect.
+    Development tests showed that it improves the speed significantly, while having a very small negative influence on the accuracy.
+    Second, like the baseline POS tagger, the tag dictionary is used for Chinese closed set tags and the tags for frequent words.
+    To words outside the tag dictiona

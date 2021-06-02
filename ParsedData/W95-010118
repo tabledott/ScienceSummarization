@@ -1,0 +1,7 @@
+wable tags.
+    The output of this tagger is then passed to the unsupervised learner, which learns an ordered list of transformations.
+    The initialstate annotator and learned unsupervised transformations are then applied to unannotated text, which is then input to the supervised learner, along with the corresponding manually tagged corpus.
+    The supervised learner learns a second ordered list of transformations.
+    Once the system is trained, fresh text is tagged by first passing it through the unsupervised initial state annotator, then applying each of the unsupervised transformations, in order, and then applying each of the supervised transformations, in order.
+    The advantage of combining unsupervised and supervised learning over using supervised 11[Elworthy, 1994] quotes accuracy on ambiguous words, which we have converted to overall accuracy. learning alone is that the combined approach allows us to utilize both tagged and untagged text in training.
+    Since manually tagged text is costly and ti

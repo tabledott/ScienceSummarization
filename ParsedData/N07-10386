@@ -1,0 +1,8 @@
+ceptron Ranking algorithm (or &#8220;PRank algorithm&#8221;), which reacts to incorrect predictions on the training set by updating the weight and boundary vectors.
+    The PRanking model and algorithm were tested on the EachMovie dataset with a separate ranking model learned for each user in the database.
+    An extension of this model is provided by Basilico and Hofmann (2004) in the context of collaborative filtering.
+    Instead of training a separate model for each user, Basilico and Hofmann train a joint ranking model which shares a set of boundaries across all users.
+    In addition to these shared boundaries, userspecific weight vectors are stored.
+    To compute the score for input x and user i, the weight vectors for all users are employed: where 0 &lt; sim(i, j) &lt; 1 is the cosine similarity between users i and j, computed on the entire training set.
+    Once the score has been computed, the prediction rule follows that of the PRanking model.
+    The model is trained using the PRank algorithm, wi

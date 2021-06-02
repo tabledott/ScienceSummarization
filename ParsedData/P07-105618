@@ -1,0 +1,9 @@
+rgent the distributions.
+    Here we make use of the A-distance (BenDavid et al., 2006).
+    The key intuition behind the A-distance is that while two domains can differ in arbitrary ways, we are only interested in the differences that affect classification accuracy.
+    Let A be the family of subsets of Rk corresponding to characteristic functions of linear classifiers (sets on which a linear classifier returns positive value).
+    Then the A distance between two probability distributions is dA(D, D0) = 2 sup |PrD [A] &#8722; PrD, [A] |.
+    A&#8712;A That is, we find the subset in A on which the distributions differ the most in the Li sense.
+    Ben-David et al. (2006) show that computing the A-distance for a finite sample is exactly the problem of minimizing the empirical risk of a classifier that discriminates between instances drawn from D and instances drawn from D0.
+    This is convenient for us, since it allows us to use classification machinery to compute the A-distance.
+    We follow Ben-David et al

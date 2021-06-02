@@ -1,0 +1,5 @@
+quence.
+    The systems defined in Sections 4 and 5 will all be such that, for any input sentence x = (w0, w1, ... , wn), there is always at least one transition sequence for x (and usually more than one).
+    An oracle for a transition system S = (C, T, cs, Ct) is a function o : C - 4T.
+    Given a transition system S = (C, T, cs, Ct) and an oracle o, deterministic parsing can be achieved by the following simple algorithm: It is easy to see that, provided that there is at least one transition sequence in S for every sentence, such a parser constructs exactly one transition sequence C0,m for a sentence x and returns the parse defined by the terminal configuration cm, that is, Gcm = ({0, 1, ... , n}, Acm ).
+    The reason for separating the oracle o, which maps a configuration c to a transition t, from the transition t itself, which maps a configuration c to a new configuration c', is to have a clear separation between the abstract machine defined by the transition system, which determines formal properties su

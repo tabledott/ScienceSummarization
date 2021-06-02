@@ -1,0 +1,10 @@
+d by the large gray arrow shown in Figure 3.
+    Between hotels that are located (even partially) in the same city, we assign an infinite distance in both directions, as travel from one to the other can never be part of a tour.
+    For 6-word French sentences, we normally come up with a graph that has about 80 hotels and 3500 finite-cost travel segments.
+    The next step is to cast tour selection as an integer program.
+    Here we adapt a subtour elimination strategy used in standard TSP.
+    We create a binary (0/1) integer variable for each pair of hotels and. if and only if travel from hotelto hotelis on the itinerary.
+    The objective function is straightforward: This minimization is subject to three classes of constraints.
+    First, every city must be visited exactly once.
+    That means exactly one tour segment must exit each city: Second, the segments must be linked to one another, i.e., every hotel has either (a) one tour segment coming in and one going out, or (b) no segments in and none out.
+    

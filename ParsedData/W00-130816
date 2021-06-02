@@ -1,0 +1,10 @@
+redictors, it provides for free only a simple combination of feature weights, and additional 'interaction terms' are needed to model non-additive interactions (in log-space terms) between features.
+  
+  
+    Two of the most significant sources of classifier errors are the VBN/VBD ambiguity and the VBP/VB ambiguity.
+    As seen in Table 5, VBNNBD confusions account for 6.9% of the total word error.
+    The VBP/VB confusions are a smaller 3.7% of the errors.
+    In many cases it is easy for people (and for taggers) to determine the correct form.
+    For example, if there is a to infinitive or a modal directly preceding the VB/VBP ambiguous word, the form is certainly non-finite.
+    But often the modal can be several positions away from the current position &#8212; still obvious to a human, but out of sight for the baseline model.
+    To help resolve a VB/VBP ambiguity in such cases, we can add a feature that looks at the preceding several words (we have chosen 8 as a threshold), but not across another verb, an

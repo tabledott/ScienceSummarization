@@ -1,0 +1,12 @@
+entence length.
+    In combination with the scaling factor this results in a constant cost per produced target language word.
+    With this feature, we are able to adjust the sentence length.
+    If we set a negative scaling factor, longer sentences are more penalized than shorter ones, and the system will favor shorter translations.
+    Alternatively, by using a positive scaling factors, the system will favor longer translations.
+    Similar to the word penalty, the phrase penalty feature results in a constant cost per produced phrase.
+    The phrase penalty is used to adjust the average length of the phrases.
+    A negative weight, meaning real costs per phrase, results in a preference for longer phrases.
+    A positive weight, meaning a bonus per phrase, results in a preference for shorter phrases.
+    We are using relative frequencies to estimate the phrase translation probabilities.
+    Most of the longer phrases are seen only once in the training corpus.
+    Therefore, pure relative frequencies overesti

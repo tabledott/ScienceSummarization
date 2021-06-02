@@ -1,0 +1,10 @@
+glish texts are tokenized so that a punctuation symbol is separated from its preceding word.
+    For the Chinese texts, we performed word segmentation, so that Chinese characters are segmented into words.
+    The resulting parallel texts are then input to the GIZA++ software (Och and Ney 2000) for word alignment.
+    In the output of GIZA++, each English word token is aligned to some Chinese word token.
+    The alignment result contains much noise, especially for words with low frequency counts.
+    In this step, we will decide on the sense classes of an English word w that are relevant to translating w into Chinese.
+    We will illustrate with the noun channel, which is one of the nouns evaluated in the English lexical sample task of SENSEVAL-2.
+    We rely on two sources to decide on the sense classes of w: (i) The sense definitions in WordNet 1.7, which lists seven senses for the noun channel.
+    Two senses are lumped together if they are translated in the same way in Chinese.
+    For example, sense 1 and

@@ -1,0 +1,10 @@
+ow often the correct relation is one of the top two according to the neural net, and so on.
+    Guessing would yield a result of 0.077.
+    The network had one hidden layer, in which a hyperbolic tangent function was used, and an output layer representing the 18 relations.
+    A logistic sigmoid function was used in the output layer to map the outputs into the interval (0, 1).
+    The number of units of the output layer was the number of relations (18) and therefore fixed.
+    The network was trained for several choices of numbers of hidden units; we chose the best-performing networks based on training set error for each of the models.
+    We subsequently tested these networks on held-out testing data.
+    We compared the results with a baseline in which logistic regression was used on the lexical features.
+    Given the indicator variable representation of these features, this logistic regression essentially forms a table of log-odds for each lexical item.
+    We also compared to a method in which the lexica

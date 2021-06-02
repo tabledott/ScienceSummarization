@@ -1,0 +1,9 @@
+f in distinct stages.
+    First, the source sentence words fJ1 are grouped to phrases &#732;fK1 .
+    For each phrase f&#732; an alignment template z is chosen and the sequence of chosen alignment templates is reordered (according to &#960;K1 ).
+    Then, every phrase f&#732; produces its translation e&#732; (using the corresponding alignment template z).
+    Finally, the sequence of phrases &#732;eK1 constitutes the sequence of words eI1.
+    Our baseline system incorporated the following feature functions: Alignment Template Selection Each alignment template is chosen with probability p(z |&#732;f), estimated by relative frequency.
+    The corresponding feature function in our log-linear model is the log probability of the product of p(z |&#732;f) for all used alignment templates used.
+    Word Selection This feature is based on the lexical translation probabilities p(e|f), estimated using relative frequencies according to the highest-probability wordlevel alignment for each training sentence.
+    A transla

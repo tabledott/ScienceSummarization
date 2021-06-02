@@ -1,0 +1,10 @@
+The treebank contains a small number of inter-sentence and cyclic dependencies and we removed all sentences that contained such structures.
+    The resulting data set contained 5384 sentences.
+    We partitioned the data into contiguous 80/20 training/testing splits.
+    We held out a subset of the training data for development purposes.
+    We compared three systems, the standard second-order projective and non-projective parsing models, as well as our modified second-order non-projective model that allows for the introduction of multiple parents (Section 3).
+    All systems use gold-standard part-of-speech since no trained tagger is readily available for Danish.
+    Results are shown in Figure 3.
+    As might be expected, the nonprojective parser does slightly better than the projective parser because around 1% of the edges are non-projective.
+    Since each word may have an arbitrary number of parents, we must use precision and recall rather than accuracy to measure performance.
+    This also means that th

@@ -1,0 +1,6 @@
+uced by BHMM1 and BHMM2 are more similar to each other than to the results of MLHMM, but the differences are still informative.
+    Recall that BHMM1 learns a single value for Q that is used for all output distributions, while BHMM2 learns separate hyperparameters for each cluster.
+    This leads to different treatments of difficult-to-classify low-frequency items.
+    In BHMM1, these items tend to be spread evenly among all clusters, so that all clusters have similarly sparse output distributions.
+    In BHMM2, the system creates one or two clusters consisting entirely of very infrequent items, where the priors on these clusters strongly prefer uniform outputs, and all other clusters prefer extremely sparse outputs (and are more coherent than in BHMM1).
+    This explains the difference in VI between the two systems, as well as the higher accuracy of BHMM1 for d &gt; 3: the single Q discourages placing lowfrequency items in their own cluster, so they are more likely to be clustered with items that have simila

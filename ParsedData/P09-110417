@@ -1,0 +1,11 @@
+g t.
+  
+  
+    Both discriminative methods require repeated model inference: MIRA depends upon lossaugmented Viterbi parsing, while conditional likelihood uses the inside-outside algorithm for computing cell posteriors.
+    Exhaustive computation of these quantities requires an O(n6) dynamic program that is prohibitively slow even on small supervised training sets.
+    However, most of the search space can safely be pruned using posterior predictions from a simpler alignment models.
+    We use posteriors from two jointly estimated HMM models to make pruning decisions during ITG inference (Liang et al., 2006).
+    Our first pruning technique is broadly similar to Cherry and Lin (2007a).
+    We select high-precision alignment links from the HMM models: those word pairs that have a posterior greater than 0.9 in either model.
+    Then, we prune all bitext cells that would invalidate more than 8 of these high-precision alignments.
+    Our second pruning technique is to prune all one-by-one (word-to-word) bitext ce

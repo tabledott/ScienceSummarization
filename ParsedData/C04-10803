@@ -1,0 +1,9 @@
+mparison of several unsupervised part-of-speech taggers, which is followed by Section 5, in which we present a new method for training with suboptimal lexicons.
+			In section 6, we revisit our new approach to HMM tagging, this time, in the supervised framework.
+	
+	
+			A common formulation of an unsupervised part-of speech tagger takes the form of a hidden Markov model (HMM), where the states correspond to part-of-speech tags, ti, and words, wi, are emitted each time a state is visited.
+			The training of HMM?
+			based taggers involves estimating lexical probabilities, P(wi|ti), and tag sequence probabilities, P(ti | ti-1 ... ti-n).
+			The ultimate goal of HMM training is to find the model that maximizes the probability of a given training text, which can be done easily using the forward-backward, or Baum-Welch algorithm (Baum et al1970, Bahl, Jelinek and Mercer, 1983).
+			These model probabilities are then used in conjunction with the Viterbi algorithm (Viterbi, 1967) to find the most probable sequence of par

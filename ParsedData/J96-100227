@@ -1,0 +1,9 @@
+le.
+    This strategy is implemented in the algorithm below.
+    Compute the model psuf using Algorithm 1 Compute the gain in the log-likelihood from adding this feature using (23) One issue left unaddressed by this algorithm is the termination condition.
+    Obviously, we would like a condition which applies exactly when all the &amp;quot;useful&amp;quot; features have been selected.
+    One reasonable stopping criterion is to subject each proposed feature to cross-validation on a sample of data withheld from the initial data set.
+    If the feature does not lead to an increase in likelihood of the withheld sample of data, the feature is discarded.
+    We will have more to say about the stopping criterion in Section 5.3.
+    Algorithm 2 is not a practical method for incremental feature selection.
+    For each candidate feature f E .T. considered in step 2, we must compute the maximum entropy model p a task that is computationally costly even with the efficient iterative scaling algorithm 'introduced earlier.

@@ -1,0 +1,7 @@
+ds, and we organized a phoneme-tree based WFST from it: E:E Note that we insert an optional PAUSE between word pronunciations.
+    Due to memory limitations, we only used the 50,000 most frequent words.
+    We originally thought to build a general letterto-sound WFST, on the theory that while wrong (overgeneralized) pronunciations might occasionally be generated, Japanese transliterators also mispronounce words.
+    However, our letter-to-sound WFST did not match the performance of Japanese translit2 Availa.ble from the ACL Data Collection Initiative. http://www.speech.cs.cmu.edu/cgi-bin/cmudict. erators, and it turns out that mispronunciations are L OW L OW modeled adequately in the next stage of the cascade.
+    I A /\ r 0 0 r o o Next, we map English sound sequences onto Japanese sound sequences.
+    This is an inherently information-losing process, as English R and L sounds collapse onto Japanese r, the 14 English vowel sounds collapse onto the 5 Japanese vowel sounds, etc.
+    We face two immediate probl

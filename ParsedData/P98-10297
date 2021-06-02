@@ -1,0 +1,7 @@
+t classifiers.
+    If all taggers made the same errors, or if the errors that lower-accuracy taggers made were merely a superset of higheraccuracy tagger errors, then combination would be futile.
+    In addition, a tagger is much more likely to have misclassified the tag for a word in instances where there is disagreement with at least one of the other classifiers than in the case where all classifiers agree.
+    In Figure 3 we see, for instance that while the overall error rate for the Maximum Entropy tagger is 3.17%, in cases where there is disagreement between the four taggers the Maximum Entropy tagger error rate jumps to 27.1%.
+    And discarding the unigram tagger, which is significantly less accurate than the others, when there is disagreement between the Maximum Entropy, Transformation-based and Trigram taggers, the Maximum Entropy tagger error rate jumps up to 43.7%.
+    These cases account for 58% of the total errors the Maximum Entropy tagger makes (4833/8400).
+    Next, we check whether tagger com

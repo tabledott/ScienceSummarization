@@ -1,0 +1,10 @@
+t, may exhibit great differences at the sentence level (reorderings, additions, etc).
+    Therefore, they pose hard problems for the dynamic programming alignment approach.
+    In contrast, our method is more robust.
+    The document pair selection part plays a minor role; it only acts as a filter.
+    We do not attempt to find the best-matching English document for each foreign one, but rather a set of similar documents.
+    And, most importantly, we are able to reliably judge each sentence pair in isolation, without need for context.
+    On the other hand, the dynamic programming approach enables discovery of many-to-one sentence alignments, whereas our method is limited to finding one-toone alignments.
+    The approach of Fung and Cheung (2004) is a simpler version of ours.
+    They match each foreign document with a set of English documents, using a threshold on their cosine similarity.
+    Then, from each document pair, they generate all possible sentence pairs, compute their cosine similarity, and apply

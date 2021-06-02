@@ -1,0 +1,8 @@
+nd also damage the accuracy of the antecedent selection: too many comparisons are made between incorrect candidates.
+    Therefore, in order to reduce the computational cost and data noises, an effective candidate filtering strategy must be applied in our approach.
+    During training, we create the candidate set for each anaphor with the following filtering algorithm: Features describing the two candidates During resolution, we filter the candidates for each encountered pronoun in the same way as during training.
+    That is, we only consider the NPs in the current and the preceding 2 sentences.
+    Such a context window is reasonable as the distance between a pronominal anaphor and its antecedent is generally short.
+    In the MUC-6 data set, for example, the immediate antecedents of 95% pronominal anaphors can be found within the above distance.
+    Comparatively, candidate filtering for nonpronouns during resolution is complicated.
+    A potential problem is that for each non-pronoun under consideration, 

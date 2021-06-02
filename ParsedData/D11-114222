@@ -1,0 +1,10 @@
+threshold, we can measure the precision and recall of the output.
+    Precision is the fraction of returned extractions that are correct.
+    Recall is the fraction of correct extractions in the corpus that are returned.
+    We use the total number of extractions labeled as correct by the judges as our measure of recall for the corpus.
+    In order to avoid double-counting, we treat extractions that differ superficially (e.g., different punctuation or dropping inessential modifiers) as a single extraction.
+    We compute a precision-recall curve by varying the confidence threshold, and then compute the area under the curve (AUC).
+    Figure 2 shows the AUC of each system.
+    REVERB achieves an AUC that is 30% higher than WOEparse and is more than double the AUC of WOEpOs or TEXTRUNNER.
+    The lexical constraint provides a significant boost in performance, with REVERB achieving an AUC 23% higher than REVERB&#8212;Lex.
+    REVERB proves to be a useful source of training data, with TEXTRUNNER-R having an AUC 7

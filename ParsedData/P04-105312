@@ -1,0 +1,11 @@
+rarchical clustering, but we adopt complete linkage because it is conservative in making clusters.
+    The distance between clusters is taken to be the distance of the furthest nodes between clusters in complete linkage.
+    If most of the NE pairs in the same cluster had words in common, the common words would represent the characterization of the cluster.
+    In other words, we can regard the common words as the characterization of a particular relation.
+    We simply count the frequency of the common words in all combinations of the NE pairs in the same cluster.
+    The frequencies are normalized by the number of combinations.
+    The frequent common words in a cluster would become the label of the cluster, i.e. they would become the label of the relation, if the cluster would consist of the NE pairs in the same relation.
+  
+  
+    We experimented with one year of The New York Times (1995) as our corpus to verify our proposed method.
+    We determined three parameters for thresholds and identified the patt

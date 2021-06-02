@@ -1,0 +1,9 @@
+ want to produce (3) a probability estimate for each production in P such that we maximize the probability of the output trees given the input trees.
+    As organized in the rest of this paper, we accomplish this by intersecting the given transducer with each input/output pair in turn.
+    Each such intersection produces a set of weighted derivations that are packed into a regular tree grammar (Sections 3-5), which is equivalent to a tree substitution grammar.
+    The inside and outside probabilities of this packed derivation structure are used to compute expected counts of the productions from the original, given transducer (Sections 6-7).
+    Section 9 gives a sample transducer implementing a published machine translation model; some readers may wish to skip to this section directly.
+  
+  
+    T&#931; is the set of (rooted, ordered, labeled, finite) trees over alphabet E. An alphabet is just a finite set.
+    T&#931;(X) are the trees over alphabet E, indexed by X&#8212; the subset of T&#931;uX where only le

@@ -1,0 +1,8 @@
+;Complete&#8221; show the precision of lexical heads and complete matches, respectively.
+    As can be seen from the table, beam-search reduced the head word accuracy from 91.5%/42.1% (&#8220;MSTParser 2&#8221;) to 91.2%/40.8% (&#8220;Graph [M]&#8221;) with the same features as exact-inference.
+    However, with only two extra feature templates from Table 2, which are not conjoined with direction or distance information, the accuracy is improved to 91.4%/42.5% (&#8220;Graph [MA]&#8221;).
+    This improvement can be seen as a benefit of beam-search, which allows the definition of more global features.
+    The combined parser is tested with various sets of features.
+    Using only graph-based features in Table 1, it gave 88.6% accuracy, which is much lower than 91.2% from the graph-based parser using the same features (&#8220;Graph [M]&#8221;).
+    This can be explained by the difference between the decoders.
+    In particular, the graph-based model is unable to score the actions &#8220;Reduce&#8221; and &#8220

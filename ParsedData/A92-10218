@@ -1,0 +1,12 @@
+ more likely than the past participle verb tag after a proper noun, and is also the more likely tag for the second word of the sentence.4 The third patch states that VBD should be changed to VBN if any of the preceding three words are tagged HVD.
+    Once the list of patches has been acquired, new text can be tagged as follows.
+    First, tag the text using the basic lexical tagger.
+    Next, apply each patch in turn to the corpus to decrease the error rate.
+    A patch which changes the tagging of a word from a to b only applies if the word has been tagged b somewhere in the training corpus.
+    Note that one need not be too careful when constructing the list of patch templates.
+    Adding a bad template to the list will not worsen performance.
+    If a template is bad, then no rules which are instantiations of that template will appear in the final list of patches learned by the tagger.
+    This makes it easy to experiment with extensions to the tagger.
+  
+  
+    The tagger was tested on 5% of the Brown Cor

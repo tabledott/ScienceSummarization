@@ -1,0 +1,9 @@
+ependency trees, more complex kernels become necessary.
+    Haussler (1999) describes convolution kernels, which find the similarity between two structures by summing the similarity of their substructures.
+    As an example, consider a kernel over strings.
+    To determine the similarity between two strings, string kernels (Lodhi et al., 2000) count the number of common subsequences in the two strings, and weight these matches by their length.
+    Thus, Oi(x) is the number of times string x contains the subsequence referenced by i.
+    These matches can be found efficiently through a dynamic program, allowing string kernels to examine long-range features that would be computationally infeasible in a feature-based method.
+    Given a training set S = {xs ... xN}, kernel methods compute the Gram matrix G such that Gij = K(xi,xj).
+    Given G, the classifier finds a hyperplane which separates instances of different classes.
+    To classify an unseen instance x, the classifier first projects x into the feature sp

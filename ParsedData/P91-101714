@@ -1,0 +1,8 @@
+ i appeared in the corpus and n is the total number of times that all the alternatives for the relation appeared in the corpus).
+    For mathematical convenience we bound in p instead of p. Assuming that samples of the alternative relations are distributed normally, we get the following bound with confidence 1 &#8212; a: where Z is the confidence coefficient.
+    We approximate the variance by the delta method (e.g.
+    Johnson and Wichern (1982)): P2 /32 ni n2 We denote the right hand side (the bound) by Ba(ni, n2).
+    In sentences with several relations, we consider the best two alternatives for each relation, and take the relation for which Ba is largest.
+    If this Ba is less than a specified threshold then we do not choose between the alternatives.
+    Otherwise, we choose the most frequent alternative to this relation and select the target words appearing in this alternative.
+    We then eliminate all the other alternative translations for the selected words, and accordingly eliminate all the alternat

@@ -1,0 +1,11 @@
+8226;), Kp(&#8226;,&#8226;) is the polynomial expansion of K(&#8226;,&#8226;) with degree d=2, i.e.
+    Kp(&#8226;,&#8226;) = (K(&#8226;,&#8226;)+1)2 , and &#945; is the coefficient.
+    Evaluation on the development set shows that this composite kernel yields the best performance when &#945; is set to 0.23.
+    The polynomial expansion aims to explore the entity bi-gram features, esp. the combined features from the first and second entities, respectively.
+    In addition, due to the different scales of the values of the two individual kernels, they are normalized before combination.
+    This can avoid one kernel value being overwhelmed by that of another one.
+    The entity kernel formulated by eqn.
+    (1) is a proper kernel since it simply calculates the dot product of the entity feature vectors.
+    The tree kernel formulated by eqn.
+    (3) is proven to be a proper kernel (Collins and Duffy, 2001).
+    Since kernel function set is closed under normalization, polynomial expansion and linear combination (S

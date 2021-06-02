@@ -1,0 +1,7 @@
+moothed phrasetables (these combinations are denoted RF+ZN-IBM1 and KN3+ZN-IBM1).
+    It is apparent from table 1 that any kind of phrase table smoothing is better than using none; the minimum improvement is 0.45 BLEU, and the difference between RF and all other methods is statistically significant.
+    Also, KneserNey smoothing gives a statistically significant improvement over GT smoothing, with a minimum gain of 0.30 BLEU.
+    Using more discounting coefficients does not appear to help.
+    Smoothing relative frequencies with an additional Zens-Ney phrasetable gives about the same gain as KneserNey smoothing on its own.
+    However, combining Kneser-Ney with Zens-Ney gives a clear gain over any other method (statistically significant for all language pairs except en&#8594;es and en&#8594;de) demonstrating that these approaches are complementary.
+    To test the effects of smoothing with larger corpora, we ran a set of experiments for Chinese-English translation using the corpora distributed for the NIST MT

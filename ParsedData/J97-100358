@@ -1,0 +1,6 @@
+c boundary detection.
+    As mentioned above, the plot is smoothed to remove small dips, using average smoothing with a width of size s, as follows: for each token-sequence gap g and a small even number s find the scores of the s/2 gaps to the left of g find the scores of the s/2 gaps to the right of g find the score at g take the average of these scores and assign it to g repeat this procedure n times The choice of smoothing function is somewhat arbitrary; other low-pass filters could be used instead.
+    The algorithm must determine how many segments to assign to a document, since every paragraph is a potential segment boundary.
+    Any attempt to make an absolute cutoff, even one normalized for the length of the document, is problematic since there should be some relationship between the structure and style of the text and the number of segments assigned to it.
+    As discussed above, a cutoff based on a particular valley depth is similarly problematic.
+    Instead, I suggest making the cutoff a function o

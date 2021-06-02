@@ -1,0 +1,9 @@
+ces V is equal to the set of sentences S and each edge u &#57735; v has a weight, the probability P(u|v).
+    Cohen et al. (1999) show that the problem of finding an optimal ordering through a directed weighted graph is NP-complete.
+    Fortunately, they propose a simple greedy algorithm that provides an approximate solution which can be easily modified for our task (see also Barzilay et al. 2002).
+    The algorithm starts by assigning each vertex v &#57736; V a probability.
+    Recall that in our case vertices are sentences and their probabilities can be calculated by taking the product of the probabilities of their features.
+    The greedy algorithm then picks the node with the highest probability and orders it ahead of the other nodes.
+    The selected node and its incident edges are deleted from the graph.
+    Each remaining node is now assigned the conditional probability of seeing this node given the previously selected node (see (4)).
+    The node which yields the highest conditional probability is sel

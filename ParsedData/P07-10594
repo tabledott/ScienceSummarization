@@ -1,0 +1,6 @@
+e read off from the n-best paraphrases of full queries instead of from paraphrases of separate words or phrases.
+    This allows the model to take advantage of the rich context of a large n-gram language model when adding terms from the n-best paraphrases to the original query.
+    In our experimental evaluation we deploy a database of question-answer pairs extracted from FAQ pages for both training a question-answer translation model, and for a comparative evaluation of different systems on the task of answer retrieval.
+    Retrieval is based on the tfidf framework of Jijkoun and de Rijke (2005), and query expansion is done straightforwardly by adding expansion terms to the query for a second retrieval cycle.
+    We compare our global, context-aware query expansion techniques with Jijkoun and de Rijke&#8217;s (2005) tfidf model for answer retrieval and a local query expansion technique (Xu and Croft, 1996).
+    Experimental results show a significant improvement of SMTbased query expansion over both baseline

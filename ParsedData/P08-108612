@@ -1,0 +1,7 @@
+cient updating of the terms in Eq.
+    (10).
+    The initial clustering together with all the required counts is created in an initial iteration by assigning the n-th most frequent word to cluster n mod N,.
+    While (Martinet al., 1998) and (Emami and Jelinek, 2005) observe that the initial clustering does not seem to have a noticeable effect on the quality of the resulting clustering or the convergence rate, the intuition behind this method of initialization is that it is unlikely for the most frequent words to be clustered together due to their high numbers of occurrences.
+    In each subsequent iteration each one of a number of workers is assigned one of the partitions of the words in the vocabulary.
+    After loading the current clustering, it then randomly chooses a subset of these words of a fixed size.
+    For each of the selected words the worker then determines to which cluster the word is to be moved in order to maximize the increase in log likelihood, using the count updating procedures described 

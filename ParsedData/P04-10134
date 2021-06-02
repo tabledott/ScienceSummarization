@@ -1,0 +1,8 @@
+he history of previous decisions in the parse.
+    We use the same mapping for both our probability models, but we use two different ways of conditioning the probabilities, one generative and one discriminative.
+    As we will show in section 6, these two different ways of parameterizing the probability model have a big impact on the ease with which the parameters can be estimated.
+    To define the mapping from phrase structure trees to parses, we use a form of left-corner parsing strategy (Rosenkrantz and Lewis, 1970).
+    In a left-corner parse, each node is introduced after the subtree rooted at the node&#8217;s first child has been fully parsed.
+    Then the subtrees for the node&#8217;s remaining children are parsed in their left-to-right order.
+    Parsing a constituent starts by pushing the leftmost word w of the constituent onto the stack with a shift(w) action.
+    Parsing a constituent ends by either introducing the constituent&#8217;s parent nonterminal (labeled Y ) with a project(Y) action, or at

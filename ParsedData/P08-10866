@@ -1,0 +1,10 @@
+mputed for each of these tentative moves and the exchange leading to the highest increase in the optimization criterion (3) is performed.
+    This procedure is then repeated until the algorithm reaches a local optimum.
+    To be able to efficiently calculate the changes in the optimization criterion when exchanging a word, the counts in Eq.
+    (3) are computed once for the initial clustering, stored, and afterwards updated when a word is exchanged.
+    Often only a limited number of iterations are performed, as letting the algorithm terminate in a local optimum can be computationally impractical.
+    The implementation described in (Martin et al., 1998) uses a memory saving technique introducing a binary search into the complexity estimation.
+    For the sake of simplicity, we omit this detail in the following complexity analysis.
+    We also do not employ this optimization in our implementation.
+    The worst case complexity of the exchange algorithm is quadratic in the number of classes.
+    However, Input

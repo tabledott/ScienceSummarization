@@ -1,0 +1,10 @@
+  We compare Meteor 1.3 results with those from version 1.2 with results shown in Table 6.
+    For both adequacy data sets, Meteor 1.3 significantly outperforms version 1.2 on both tune and test data.
+    The version tuned on MT09 data is selected as the official Adequacy version of Meteor 1.3.
+    H-TER versions either show no improvement or degradation due to overfitting.
+    Examination of the optimal H-TER parameter sets reveals a mismatch between evaluation metric and human judgment type.
+    As H-TER evaluation is ultimately limited by the TER aligner, there is no distinction between content and function words, and words sharing stems are considered nonmatches.
+    As such, these features do not help Meteor improve correlation, but rather act as a source of additional possibility for overfitting.
+  
+  
+    The 2011 WMT Tunable Metrics task consists of using Z-MERT (Zaidan, 2009) to tune a pre-built Urdu-English Joshua (Li et al., 2009) system to a new evaluation metric on a tuning set with 4 reference t

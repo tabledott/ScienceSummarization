@@ -1,0 +1,7 @@
+; parsing, with some function akin to a thresholding function determining what is best.
+    The best comparison of these functions is due to Caraballo and Charniak (1996; 1997), who tried various prioritization methods.
+    Several of their techniques are similar to our beam thresholding technique, and one of their techniques, not yet published (Caraballo and Charniak, 1997), would probably work better.
+    The only technique that Caraballo and Charniak (1996) give that took into account the scores of other nodes in the priority function, the &amp;quot;prefix model,&amp;quot; required 0(n5) time to compute, compared to our 0(n3) system.
+    On the other hand, all nodes in the agenda parser were compared to all other nodes, so in some sense all the priority functions were global.
+    Note that agenda-based PCFG parsers in general require more than 0(n3) run time, because, when better derivations are discovered, they may be forced to propagate improvements to productions that they have previously considered.
+  

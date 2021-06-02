@@ -1,0 +1,7 @@
+to be replicated by chance.
+    Furthermore, since there are relatively few high-frequency words, and they can only contract high similarities with other high-frequency words, the number of possible correspondents for them is lower, and the chance of spurious associations is therefore less on these grounds also.
+    Note that low-frequency words with low similarity (back left corner) have also a low probability of being spuriously associated to some other word.
+    This is because low-frequency words can achieve a low similarity only with words of a high frequency, which in turn are rare in a text, and are therefore unlikely to be associated spuriously.'
+    Our algorithm does not use all the detail in Figure 1, but only a simple discrete heuristic: a word pair whose similarity exceeds some threshold is assigned to one of two or three segments of the WAT, depending on the word frequency.
+    A segment with words of higher frequency is preferred to lower-frequency segments.
+    Within each segment, the entries

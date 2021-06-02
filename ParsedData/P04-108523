@@ -1,0 +1,11 @@
+inferring a model in a non-sequential case.
+    We compute the most probable sequence by performing a left-to-right decoding using a beam search.
+    The algorithm is exactly the same as the one described in (Ratnaparkhi, 1996) to find the most probable part-of-speech sequence.
+    We used a large beam of size =100, which is not computationally prohibitive, since the tagset contains only four elements.
+    Note however that this algorithm can lead to search errors.
+    An alternative would be to use a variant of the Viterbi algorithm, which was successfully used in (McCallum et al., 2000) to decode the most probable sequence in a CMM.
+  
+  
+    We had 8135 spurts available for training and testing, and performed two sets of experiments to evaluate the performance of our system.
+    The tools used to perform the training are the same as those described in section 3.4.
+    In the first set of experiments, we reproduced the experimental setting of (Hillard et al., 2003), a three-way classification (BACKCHANNEL a

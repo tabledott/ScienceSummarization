@@ -1,0 +1,9 @@
+changing [effective/JJ Monday/NNP] to effective [Monday]; changing [the/DT balance/NN due/JJ] to [the balance] due; and changing were/VBP In't/RB the/DT only/RB losers/NNS] to were n't [the only losers].
+    Given these observations, we implemented three local repair heuristics.
+    The first merges consecutive NPs unless either might be a time expression.
+    The second identifies two simple date expressions.
+    The third looks for quantifiers preceding of NP.
+    The first heuristic, for example, merges [household products] [business] to form [household products business], but leaves increased [15 %) [last Friday] untouched.
+    The second heuristic merges [June 5] , [1995] into [June 5, 1995]; and [June] , [1995] into [June, 1995].
+    The third finds examples like some of [the companies] and produces [some] of [the companies].
+    These heuristics represent an initial exploration into the effectiveness of employing lexical information in a post-processing phase rather than during grammar induction and br

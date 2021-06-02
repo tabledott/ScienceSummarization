@@ -1,0 +1,9 @@
+_sequence-score, the largest Distance-score and the smallest Missing_keyword-score.
+    The definition of these scores is based on the notion of paragraphwindow.
+    Paragraph-windows are determined by the need to consider separately each match of the same keyword in the same paragraph.
+    For example, if we have a set of keywords fkl, Id, k3, k41 and in a paragraph kl and Id are matched each twice, whereas k3 is matched only once, and k4 is not matched, we are going to have four different windows, defined by the keywords: [kl-matchl, Id-matchl, k3], [k1-match2,0-match1, k3], [kl-matchl, Idmatch2, k3], and [k1-match2, k2-match, k3].
+    A window comprises all the text between the lowest positioned keyword in the window and the highest position keyword in the window.
+    For each paragraph window we compute the following scores: The radix sorting takes place across all the window scores for all paragraphs.
+  
+  
+    The Answer Processing module identifies and extracts the answer from the paragraphs that conta

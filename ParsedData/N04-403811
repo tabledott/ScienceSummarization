@@ -1,0 +1,9 @@
+s obtained using the current SVM based approach, SVM-TOK, compared against two rule-based baseline approaches, RULE and RULE+DICT.
+    RULE marks a prefix if a word starts with one of five proclitic letters described in Section 4.1.
+    A suffix is marked if a word ends with any of the possessive pronouns, enclitics, mentioned above in Section 4.1.
+    A small set of 17 function words that start with the proclitic letters is explicitly excluded.
+    RULE+DICT only applies the tokenization rules in RULE if the token does not occur in a dictionary.
+    The dictionary used comprises the 47,261 unique non vocalized word entries in the first column of Buckwalter&#8217;s dictStem, freely available with the AraMorph distribution.
+    In some cases, dictionary entries retain inflectional morphology and clitics.
+    Tags: O B-VP B-NP I-NP Translit: w qAlt rwv $wArtz Arabic: Gloss: and said Ruth Schwartz and SVM-TOK is only about 5% better (absolute) than the baseline RULE+DICT.
+    While RULE+DICT could certainly be i

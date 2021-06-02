@@ -1,0 +1,8 @@
+ , and let be the set of possible candidate oriented block sequences that the decoder can generate from .
+    For example, in a monotone decoder, the set contains block sequences that cover the source sentence in the same order.
+    For a decoder with local re-ordering, the candidate set also includes additional block sequences with re-ordered block configurations that the decoder can efficiently search.
+    Therefore depending on the specific implementation of the decoder, the set can be different.
+    In general, is a subset of all possible oriented block sequences that are consistent with input sentence .
+    Given a scoring function and an input sentence , we can assume that the decoder implements the following decoding rule: (2) Let be a set of training sentences.
+    Each sentence is associated with a set of possible translation block sequences that are searchable by the decoder.
+    Each translation block sequence induces a translation, which is then assigned a BLEU score (obtained by comparing against

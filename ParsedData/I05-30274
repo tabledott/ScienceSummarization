@@ -1,0 +1,6 @@
+aining affixes of unknown words, rather than using threshold-filtered affix tables in a separate un known word model as was done in Gao et al (2004), we first extracted rare words from a corpus and then collected the first and last charac ters to construct the prefix and suffix tables.
+			For the table of individual character words, we col lected an individual character word table for each corpus of the characters that always occurred alone as a separate word in the given cor pus.
+			We also collected a list of bi-grams from each training corpus to distinguish known strings from unknown.
+			Adopting all the features together in a model and using the automatically generated morphological tables prevented our system from manually overfitting the Mandarin varieties we are most familiar with.
+			The tables are used in the following ways: 1) C-1+C0 unknown word feature functions were created for each specific pair of characters in the bi-gram tables.
+			Such feature functions are active if the characters in the re

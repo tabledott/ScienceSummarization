@@ -1,0 +1,8 @@
+e notation of Ando and Zhang (2005), we can write the supervised training objective of SCL on the source domain as where y is the label.
+    The weight vector w E Rd weighs the original features, while v E Rk weighs the projected features.
+    Ando and Zhang (2005) and Blitzer et al. (2006) suggest &#955; = 10&#8722;4, &#181; = 0, which we have used in our results so far.
+    Suppose now that we have trained source model weight vectors ws and vs. A small amount of target domain data is probably insufficient to significantly change w, but we can correct v, which is much smaller.
+    We augment each labeled target instance xj with the label assigned by the source domain classifier (Florian et al., 2004; Blitzer et al., 2006).
+    Then we solve Since we don&#8217;t want to deviate significantly from the source parameters, we set &#955; = &#181; = 10&#8722;1.
+    Figure 2 shows the corrected SCL-MI model using 50 target domain labeled instances.
+    We chose this number since we believe it to be a reasonable amou

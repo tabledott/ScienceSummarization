@@ -1,0 +1,9 @@
+ number on the x-axis, we plot token-sequence gap number i.
+    The plot is smoothed with average smoothing; in practice one round of average smoothing with a window size of three works best for most texts.
+    Boundaries are determined by changes in the sequence of similarity scores.
+    The token-sequence gap numbers are ordered according to how steeply the slopes of the plot are to either side of the token-sequence gap, rather than by their absolute similarity score.
+    For a given token-sequence gap i, the algorithm looks at the scores of the token-sequence gaps to the left of i as long are their values are increasing.
+    When the values to the left peak out, the difference between the score at the peak and the score at i is recorded.
+    The same procedure takes place with the token-sequence gaps to the right of i; their scores are examined as long as they continue to rise.
+    The relative height of the peak to the right of i is added to the relative height of the peak to the left.
+    (A gap occurrin

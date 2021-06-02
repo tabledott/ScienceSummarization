@@ -1,0 +1,10 @@
+mplest approach to the task is to train the parser and directly apply it to test sentences.
+			In our experiments we will see that this produces resultswhich have high precision, but somewhat lower recall, due to some test sentences failing to parse (usu ally due to words in the test set which were neverobserved in training data).
+			A simple strategy to alle viate this problem is as follows.
+			If the sentence failsto parse, we parse the sentence again, this time al lowing parse moves which can delete words at some cost.
+			The cost of this deletion operation is optimizedon development data.
+			This approach can significantly improve F-measure on the partial-match cri terion in particular.
+			We report results both with and without this second pass strategy.
+			6.2 Parameters in the Approach.
+			The algorithm in figure 4 has a number of param eters, the set {T, ?, ?, ?}, which we now describe.The values of these parameters were chosen to op timize the performance on development data.
+			T is the number of pa

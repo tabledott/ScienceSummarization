@@ -1,0 +1,10 @@
+ulate includes the threading of string positions explicitly, so that a node description will be of the form node (Syn/Sem, PO-P).
+    The first argument of the node functor is the category, divided into its syntactic and semantic components; the second argument is the difference list encoding of the substring it covers.
+    In summary, a DCG grammar rule will be encoded as the clause node(( syno )1 (semo), PO-P) ---&gt; [node((sym) I (semi), PO-P1), .
+    .
+    .
+    , node((syn&#8222;) I (sem&#8222;)), P&#8222;_1-P].
+    We use the functor `---&gt;' to distinguish this node encoding from the standard one.
+    The right-hand-side elements are kept as a Prolog list for easier manipulation by the interpreters we will build.
+    We turn now to the issue of terminal symbols on the right-hand sides of rules in the node encoding.
+    During the compilation process from the standard encoding to the node encoding, the right-hand side of a rule is converted from a list of categories and terminal strings to a list of n

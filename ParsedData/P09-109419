@@ -1,0 +1,10 @@
+ two baseline methods for comparison: Baseline-1: Baseline-1 follows the method proposed in (Quirk et al., 2004), which generates paraphrases using typical SMT tools.
+    Similar to Quirk et al.&#8217;s method, we extract a paraphrase table for the SMT model from a monolingual comparable corpus (PT-2 described above).
+    The SMT decoder used in Baseline-1 is Moses.
+    Baseline-2: Baseline-2 extends Baseline-1 by combining multiple resources.
+    It exploits all PTs introduced above in the same way as our proposed method.
+    The difference from our method is that Baseline-2 does not take different applications into consideration.
+    Thus it contains no paraphrase planning stage or the usability sub-model.
+    We tune the parameters for the two baselines using the development data as described in Section 3.6 and evaluate them with the test data.
+    Since paraphrase applications are not considered by the baselines, each baseline method outputs a single best paraphrase for each test sentence.
+    The generat

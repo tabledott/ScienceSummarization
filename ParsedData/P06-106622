@@ -1,0 +1,8 @@
+we get the worst performance, even worse than the monotone search.
+    This indicates that our language models were not strong to discriminate between straight orders and inverted orders.
+    The flat and distortion reordering models (Row 3 and 4) show similar performance with Pharaoh.
+    Although they are not dependent on phrases, they really reorder phrases with penalties to wrong orders supported by the language model and therefore outperform the monotone search.
+    In row 6, only lexical features are used for the MaxEnt-based reordering model; while row 7 uses lexical features and collocation features.
+    On both tasks, we observe that various reordering approaches show similar and stable performance ranks in different domains and the MaxEnt-based reordering models achieve the best performance among them.
+    Using all features for the MaxEnt model (lex + col) is marginally better than using only lex features (lex).
+    In the experiments described above, collocation features do not make great contribu

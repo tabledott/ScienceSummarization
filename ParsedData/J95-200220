@@ -1,0 +1,5 @@
+   Hence the sum over the constrained incomplete paths is the sought-after sum over all complete derivations generating the prefix.
+    Since string and prefix probabilities are the result of summing derivation probabilities, the goal is to compute these sums efficiently by taking advantage of the Earley control structure.
+    This can be accomplished by attaching two probabilistic quantities to each Earley state, as follows.
+    The terminology is derived from analogous or similar quantities commonly used in the literature on Hidden Markov Models (HMMs) (Rabiner and Juang 1986) and in Baker (1979).
+    The following definitions are relative to an implied input string x. a) The forward probability a, (kX --&gt; A.A) is the sum of the probabilities of all constrained paths of length i that end in state kX b) The inner probability 7,(kX ).p) is the sum of the probabilities of all paths of length i - k that start in state k: kX .Au and end in kX A.p, and generate the input symbols xk &#8226; &#8226; &#8226; x1-1

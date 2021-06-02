@@ -1,0 +1,7 @@
+p;quot;, &amp;quot;VBG&amp;quot;, &amp;quot;POS&amp;quot;, &amp;quot;NN&amp;quot;, &amp;quot;NNS&amp;quot;, &amp;quot;NNP&amp;quot;, &amp;quot;NNPS&amp;quot;, &amp;quot;CD&amp;quot;, &amp;quot;-&amp;quot;}, and whose last word (the head) is tagged either as a noun, or a number.
+    Candidate extractions consist of base NPs, augmented with all their contiguous subsequences headed by a noun or number.
+    The set of features associated with each candidate is based on the feature templates introduced in (Collins, 2002), used there for training a ranking algorithm on the extractions returned by a maximum-entropy tagger.
+    Many of these features use the concept of word type, which allows a different form of token generalization than POS tags.
+    The short type of a word is created by replacing any maximal contiguous sequences of capital letters with 'A', of lowercase letters with 'a', and of digits with '0'.
+    For example, the word TGF-1 would be mapped to type A-0.
+    Consequently, each token position i in 

@@ -1,0 +1,10 @@
+ificant) than MERT, despite approximating BLEU.17 Did DA help?
+    For both n-best and hypergraph, MR+DA did obtain a better BLEU score than plain MR on the dev set.18 This shows that DA helps with the local minimum problem, as hoped.
+    However, DA&#8217;s improvement on the dev set did not transfer to the test set.
+    MR (with or without DA) is scalable to tune a large number of features, while MERT is not.
+    To achieve competitive performance, we adopt a forest reranking approach (Li and Khudanpur, 2009; Huang, 2008).
+    Specifically, our training has two stages.
+    In the first stage, we train a baseline system as usual.
+    We also find the optimal feature weights for the five features mentioned before, using the method of MR+DA operating on a hypergraph.
+    In the second stage, we generate a hypergraph for each sentence in the training data (which consists of about 40k sentence pairs), using the baseline training scenarios.
+    In the &#8220;small&#8221; model, five features (i.e., one for the la

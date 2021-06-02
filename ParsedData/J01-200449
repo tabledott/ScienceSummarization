@@ -1,0 +1,5 @@
+so, the parser returns a set of candidate parses, from which we have been choosing the top ranked; if we use an oracle to choose the parse with the highest accuracy from among the candidates (which averaged 70.0 in number per sentence), we find an average labeled precision/recall of 94.1, for sentences of length &lt; 100.
+    The parser, thus, could be used as a front end to some other model, with the hopes of selecting a more accurate parse from among the final candidates.
+    While we have shown that the conditioning information improves the efficiency in terms of rule expansions considered and analyses advanced, what does the efficiency of such a parser look like in practice?
+    Figure 6 shows the observed time at our standard base beam of 10-11 with the full conditioning regimen, alongside an approximation of the reported observed (linear) time in Ratnaparkhi (1997).
+    Our observed times look polynomial, which is to be expected given our pruning strategy: the denser the competitors within a narrow prob

@@ -1,0 +1,5 @@
+nce it often co-occurs with words such as watching and premieres in other contexts.9 In order to handle the problem of many infrequent types, we leverage large lists of entities and their types gathered from an open-domain ontology (Freebase) as a source of distant supervision, allowing use of large amounts of unlabeled data in learning.
+    Freebase Baseline: Although Freebase has very broad coverage, simply looking up entities and their types is inadequate for classifying named entities in context (0.38 F-score, &#167;3.2.1).
+    For example, according to Freebase, the mention &#8216;China&#8217; could refer to a country, a band, a person, or a film.
+    This problem is very common: 35% of the entities in our data appear in more than one of our (mutually exclusive) Freebase dictionaries.
+    Additionally, 30% of entities mentioned on Twitter do not appear in any Freebase dictionary, as they are either too new (for example a newly released videogame), or are misspelled or abbreviated (for example &#8216;mbp&

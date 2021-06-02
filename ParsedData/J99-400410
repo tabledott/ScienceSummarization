@@ -1,0 +1,9 @@
+erive a value for an item, we use the additive operator of the semiring to sum them up.
+    Thus, [1, S. 4] = 0.2048.
+    Since [1, S, 4] is the goal item for the CKY parser, we know that the inside value for xxx is 0.2048.
+    The goal item exactly parallels the return statement of the CKY inside algorithm.
+    Many parsers are much more complicated than the CKY parser, and we will need to expand our notation a bit to describe them.
+    Earley's algorithm (Earley 1970) exhibits most of the complexities we wish to discuss.
+    Earley's algorithm is often described as a bottom-up parser with top-down filtering.
+    In a probabilistic framework, the bottomup sections compute probabilities, while the top-down filtering nonprobabilistically removes items that cannot be derived.
+    To capture these differences, we expand our notation for deduction rules, to the following: Ci &#8226; &#8226; CI are side conditions, interpreted nonprobabilistically, while A1 &#8226; Ak are main conditions with values in whichever s

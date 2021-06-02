@@ -1,0 +1,10 @@
+ and a source of inefficiency in the Earley generator, is eliminated.
+    Indeed, the example here was completely deterministic; all rule choices were forced.
+    Finally, even though much of the processing is top-down, left-recursive rules (e.g., rule (3)) are still handled in a constrained manner by the algorithm.
+    For these reasons, we feel that the semantichead-driven algorithm is a significant improvement over top-down methods and the previous bottom-up method based on Earley deduction.
+  
+  
+    We will now outline how the algorithm and the grammar it uses can be extended to encompass some important analyses and constraints.
+    Wedekind (1988) defines completeness and coherence of a generation algorithm as follows.
+    Suppose a generator derives a string w from a logical form s, and the grammar assigns to w the logical form a.
+    The generator is complete ifs always subsumes a and coherent if a always subsumes s. The generator defined in Section 4.1 is not coherent or complete in this sense; it re

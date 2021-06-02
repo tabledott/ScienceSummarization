@@ -1,0 +1,10 @@
+ir nodes.
+    For each such arc A, a category is generated that contains the nodes of all triangles that contain A and at least one additional bidirectional arc.
+    For example, suppose the corpus contains the text fragments &#8216;book and newspaper&#8217;, &#8216;newspaper and book&#8217;, &#8216;book and note&#8217;, &#8216;note and book&#8217; and &#8216;note and newspaper&#8217;.
+    In this case the three words are assigned to a category.
+    Note that a pair of nodes connected by a symmetric arc can appear in more than a single category.
+    For example, suppose a graph G containing five nodes and seven arcs that define exactly three strongly connected triangles, ABC, ABD, ACE.
+    The arc (A, B) yields a category {A, B, C, D}, and the arc (A, C) yields a category {A, C, B, E}.
+    Nodes A and C appear in both categories.
+    Category merging is described below.
+    This stage requires an O(1) computation for each bidirectional arc of each node, so its complexity is O(|V  |x AverageDegree(G)) O(|V |).

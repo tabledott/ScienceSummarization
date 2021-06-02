@@ -1,0 +1,7 @@
+nd level of inference.
+    We call the technique two-stage prediction aggregation.
+    We implemented the token-majority and the entity-majority features discussed in (Krishnan and Manning, 2006); however, instead of document and corpus majority tags, we used relative frequency of the tags in a 1000 token window.
+    Both context aggregation and two-stage prediction aggregation treat all tokens in the text similarly.
+    However, we observed that the named entities in the beginning of the documents tended to be more easily identifiable and matched gazetteers more often.
+    This is due to the fact that when a named entity is introduced for the first time in text, a canonical name is used, while in the following discussion abbreviated mentions, pronouns, and other references are used.
+    To break the symmetry, when using beamsearch or greedy left-to-right decoding, we use the fact that when we are making a prediction for token instance xi, we have already made predictions y1, ... , yi&#8722;1 for token instan

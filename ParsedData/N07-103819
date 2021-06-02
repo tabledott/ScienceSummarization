@@ -1,0 +1,11 @@
+y model (w, b = (b)).
+    Note that w &#183; x1 &lt; b and w &#183; x2 &gt; b together imply that w3 &lt; 0, whereas w &#183; x3 &gt; b and w &#183; x4 &lt; b together imply that w3 &gt; 0.
+    Thus independent ranking models cannot perfectly rank this corpus.
+    The addition of an agreement model, however, can easily yield a perfect ranking.
+    With a = (0, 0, &#8722;5) (which predicts contrast with the presence of the words &#8220;but not&#8221;) and a ranking model for the ambience aspect such as w = (1, &#8722;1, 0), b = (0), the Good Grief decoder will produce a perfect rank.
+  
+  
+    We evaluate our multi-aspect ranking algorithm on a corpus of restaurant reviews available on the website http://www.we8there.com.
+    Reviews from this website have been previously used in other sentiment analysis tasks (Higashinaka et al., 2006).
+    Each review is accompanied by a set of five ranks, each on a scale of 1-5, covering food, ambience, service, value, and overall experience.
+    These ranks are provided by

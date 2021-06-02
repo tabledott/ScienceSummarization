@@ -1,0 +1,8 @@
+utput of the program as a whole.
+    The idea here is to associate sentences that contain words paired in the WAT, giving preference to those word pairs that appear to be more reliable.
+    Multiple associations are recorded.
+    If there are to be further passes of the main body of the algorithm, a new AST is then constructed in light of the associations in the SAT.
+    Associations that are supported some minimum number of times are treated just as the first and last sentences of the texts were initially; that is, as places at which there is known to be a correspondence.
+    Possible correspondences are provided for the intervening sentences by the same interpolation method initially used for all sentences in the middle of the texts.
+    In preparation for the next pass, a new set of corresponding words is now hypothesized using distributions based on the new AST, and the cycle repeats.
+    The main algorithm is a relaxation process that leaves at the end of each pass a new WAT and SAT, each presumably more

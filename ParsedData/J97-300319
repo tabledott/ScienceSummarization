@@ -1,0 +1,8 @@
+ rules together with their frequencies are produced.
+    Next, we cut out the most infrequent rules, which might bias further learning.
+    To do that we eliminate all the rules with frequency f less than a certain threshold 0, which usually is set quite low: 2-4.
+    Such filtering reduces the rule sets more than tenfold.
+    To collect the ending-guessing rules, we set the upper limit on the ending length equal to five characters and thus collect from the lexicon all possible word-endings of length 1, 2, 3, 4, and 5, together with the pos-classes of the words in which these endings appeared.
+    We also set the minimum length of the remaining substring to three characters.
+    We define the unary operator A, which produces a set of ending-guessing rules from a word in the lexicon ([W Cb).
+    For instance, from a lexicon entry [different (JN the operator A will produce five ending-guessing rules: The A operator is applied to each entry in the lexicon, and if a rule it produces has already been extracted fro

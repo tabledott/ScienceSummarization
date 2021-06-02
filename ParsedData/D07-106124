@@ -1,0 +1,6 @@
+sk of deciding similarity be tween two words.
+			Intuitively, if the random walk starting at the first word?s node and the random walk starting at the second word?s node tend to visit the same nodes, wewould like to consider them semantically related.
+			Formally, we measure the divergence of their respective sta tionary distributions, p and q. A wide literature exists on similarity measures betweenprobability distributions.
+			One standard choice is to con sider p and q to be vectors and measure the cosine ofthe angle between them, which is rank equivalent to Eu clidean distance.
+			simcos(p, q) = ? i piqi ?p? ?q? Because p and q are probability distributions, we wouldalso expect a strong contender from the informationtheoretic measures based on Kullback-Leibler diver gence, defined as: DKL(p ? q) = ? i pi log pi qi Unfortunately, KL divergence is undefined if any qi is zero because those terms in the sum will have infinite weight.
+			Several modifications to avoid this issue have been proposed in the litera

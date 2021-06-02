@@ -1,0 +1,7 @@
+onsidering all ways of building the cell by combining smaller subcells.
+    Our figure of merit for a cell involves an estimate of both the inside probability of the cell (how likely the words within the box in both dimensions are to align) and the outside probability (how likely the words outside the box in both dimensions are to align).
+    In including an estimate of the outside probability, our technique is related to A* methods for monolingual parsing (Klein and Manning, 2003), although our estimate is not guaranteed to be lower than complete outside probabity assigned by ITG.
+    Figure 3(a) displays the tic-tac-toe pattern for the inside and outside components of a particular cell.
+    We use IBM Model 1 as our estimate of both the inside and outside probabilities.
+    In the Model 1 estimate of the outside probability, source and target words can align using any combination of points from the four outside corners of the tic-tac-toe pattern.
+    Thus in Figure 3(a), there is one solid cell (correspondi

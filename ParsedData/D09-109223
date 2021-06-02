@@ -1,0 +1,8 @@
+ 69,550 document tuples and a test set of 17,435 document tuples.
+    In order to make the task more difficult, we train a relatively coarse-grained PLTM with 50 topics on the training set.
+    We then use this model to infer topic distributions for each of the 11 documents in each of the held-out document tuples using a method similar to that used to calculate held-out probabilities (Wallach et al., 2009).
+    Finally, for each pair of languages (&#8220;query&#8221; and &#8220;target&#8221;) we calculate the difference between the topic distribution for each held-out document in the query language and the topic distribution for each held-out document in the target language.
+    We use both Jensen-Shannon divergence and cosine distance.
+    For each document in the query language we rank all documents in the target language and record the rank of the actual translation.
+    Results averaged over all query/target language pairs are shown in figure 7 for Jensen-Shannon divergence.
+    Cosine-based rankings are 

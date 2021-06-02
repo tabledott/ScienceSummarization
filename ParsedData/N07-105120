@@ -1,0 +1,11 @@
+e parse.
+    An alternative approach to reranking candidate parses is to work with inference criteria which admit dynamic programming solutions.
+    Fig.
+    3 shows three possible objective functions which use the easily obtained posterior marginals of the parse tree distribution.
+    Interestingly, while they have fairly different decision theoretic motivations, their closed-form solutions are similar.
+    25,000 samples do not improve the numbers appreciably.
+    One option is to maximize likelihood in an approximate distribution.
+    Matsuzaki et al. (2005) present a VARIATIONAL approach, which approximates the true posterior over parses by a cruder, but tractable sentence-specific one.
+    In this approximate distribution there is no derivation / parse distinction and one can therefore optimize exact match by selecting the most likely derivation.
+    Instead of approximating the tree distribution we can use an objective function that decomposes along parse posteriors.
+    The labeled brackets algorithm o

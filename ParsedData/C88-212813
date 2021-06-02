@@ -1,0 +1,5 @@
+ncludes axioms for each word in the string (e.g., [O, sonny, 1] and [1,1eft,2] for the sentence Sonny left) and an initial prediction for each rule whose left- hand side matches the start symbol of the grammar (e.g., [0, S ~- NP VP, 0]).
+  The priority function orders lemmas inversely by.
+  their end posi- tion, and for lemmas with the same end position, in accordance with their addition to the agenda in a first-in-first-out manner.
+  The success criterion is that the lemma be nonconditional, that its start and end positions be thefirst and last positions in the string, respectively, and that the nonterminal be the start nonterminal, s Under this parameterization, the architecture mimics Earleys algo- rithm parsing the sentence in question, and considers uccessful those lemmas that represent proofs of the strings grammaticality with re- spect to the grammar, s Alternatively, by changing the priority function, we can engender different parsing behavior.
+  For instance, if we just order lemmas in a last-in-firs

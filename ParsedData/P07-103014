@@ -1,0 +1,11 @@
+nt S-patterns for the missing values of S. (In our case the corpus is the web, so we perform additional clarifying queries.)
+    Finally, we delete all relations in which all concept words are related to most target words and all relations in which the concept words and the target words are identical.
+    Such relations can certainly be of interest (see Section 7), but are not our focus in this paper.
+    In our implementation we use the Google search engine.
+    Google restricts individual users to 1,000 queries per day and 1,000 pages per query.
+    In each stage we conducted queries iteratively, each time downloading all 1,000 documents for the query.
+    In the first stage our goal was to discover symmetric relationships from the web and consequently discover additional concept words.
+    For queries in this stage of our algorithm we invoked two requirements.
+    First, the query should contain at least two concept words.
+    This proved very effective in reducing ambiguity.
+    Thus of 1,000 documents fo

@@ -1,0 +1,12 @@
+ clustering according to the model.
+    Clustering terminates when there exists no additional merge that improves the probability of the clustering.
+    We refer to the system described in this section as First-Order Uniform.
+  
+  
+    In this section we propose two enhancements to the training procedure for the First-Order Uniform model.
+    First, because each training example consists of a subset of noun phrases, the number of possible training examples we can generate is exponential in the number of noun phrases.
+    We propose an errordriven sampling method that generates training examples from errors the model makes on the training data.
+    The algorithm is as follows: Given initial parameters A, perform greedy agglomerative clustering on training document i until an incorrect cluster is formed.
+    Update the parameter vector according to this mistake, then repeat for the next training document.
+    This process is repeated for a fixed number of iterations.
+    Exactly how to update the parameter vect

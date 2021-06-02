@@ -1,0 +1,8 @@
+of adjacent French phrases in the lattice.
+			The WFST incorporates the translation model P (x|u) and the reordering model P (b|x, u).
+			The score on a self-loop with labels (u, x) is P (x|u) ?
+			(1 ? ?1(x, u)); on a 2-arc path with labels (u1, x1) and (u2, x2), the score on the 1st arc is P (x2|u1) ? ?1(x2, u1) and on the 2nd arc is P (x1|u2).
+			In this example, the input to this transducer is asingle French phrase sequence V : a, b, c. We per form the WFST composition R?V , project the result on the input labels, and remove the epsilons to form the acceptor (R?V )1 which contains the six English phrase sequences (Fig 4).
+			Translation Given a French sentence, a lattice of translations is obtained using the weighted finite state composition: T = G ? W ? R ? ?
+			T . The most-likely translation is obtained as the path with the highest probability in T . Alignment Given a sentence-pair (E,F ), a lattice of phrase alignments is obtained by the finite state composition: B = S ? W ? R ? ?
+			T , where 163 A :

@@ -1,0 +1,8 @@
+.
+    6.5.2 History Mechanism.
+    In our emulation of Collins&#8217; model, we use the history, rather than the dedicated parameter classes PCC and Ppun,, to estimate the joint event of generating a conjunction (or punctuation mark) and its two conjuncts.
+    The first big change that results is that we treat punctuation preterminals and CCs as first-class objects, meaning that they are generated in the same way as any other modifying nonterminal.
+    The second change is a little more involved.
+    First, we redefine the distance metric to consist solely of the vi predicate.
+    Then, we add to the conditioning context a mapped version of the previously generated modifier according to the following where Mi is some modifier Li or Ri.21 So, the maximal context for our modifying nonterminal parameter class is now defined as follows: where side is a boolean-valued event that indicates whether the modifier is on the left or right side of the head.
+    By treating CC and punctuation nodes as first-class nontermi

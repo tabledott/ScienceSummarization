@@ -1,0 +1,6 @@
+pproach comes from the flexibility of the feature-vector representations f(x, y) that can be used in the model.
+    The formalism that we describe allows the incorporation of: (1) basic PCFG-style features; (2) the use of features that are sensitive to bigram dependencies between pairs of words; and (3) features that are sensitive to trigram dependencies.
+    Any of these feature types can be combined with surface features of the sentence x, in a similar way to the use of surface features in conditional random fields (Lafferty et al., 2001).
+    Crucially, in spite of these relatively rich representations, the formalism can be parsed efficiently (in O(n4G) time) using dynamic-programming algorithms described by Eisner (2000) (unlike many other TAGrelated approaches, our formalism is &#8220;splittable&#8221; in the sense described by Eisner, leading to more efficient parsing algorithms).
+    (2) Use of a lower-order model for pruning.
+    The O(n4G) running time of the TAG parser is still too expensive for eff

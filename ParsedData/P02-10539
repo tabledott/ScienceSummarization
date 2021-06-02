@@ -1,0 +1,8 @@
+ Let hits(query) be the number of hits returned, given the query query.
+    The following estimate of SO can be derived from equations (1) and (2) with some minor algebraic manipulation, if cooccurrence is interpreted as NEAR: To avoid division by zero, I added 0.01 to the hits.
+    I also skipped phrase when both hits(phrase NEAR &#8220;excellent&#8221;) and hits(phrase NEAR &#8220;poor&#8221;) were (simultaneously) less than four.
+    These numbers (0.01 and 4) were arbitrarily chosen.
+    To eliminate any possible influence from the testing data, I added &#8220;AND (NOT host:epinions)&#8221; to every query, which tells AltaVista not to include the Epinions Web site in its searches.
+    The third step is to calculate the average semantic orientation of the phrases in the given review and classify the review as recommended if the average is positive and otherwise not recommended.
+    Table 2 shows an example for a recommended review and Table 3 shows an example for a not recommended review.
+    Both are revi

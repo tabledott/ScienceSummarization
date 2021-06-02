@@ -1,0 +1,9 @@
+relations.
+    For a partial structure p, we use wp to refer to the head word form, tp to the head word POS tag, and lcp and rcp to the POS tags of the left-most and right-most child of p respectively.
+    All our prepositions (IN) and coordinators (CC) are lexicalized: for them, tp is in fact wptp.
+    We define structural, unigram, bigram and ppattachment features.
+    The structural features are: the length of the structures (lenp), whether the structure is a word (contains no children: ncp), and the surface distance between structure heads (Apipj).
+    The unigram and bigram features are adapted from the feature set for left-to-right Arc-Standard dependency parsing described in (Huang et al., 2009).
+    We extended that feature set to include the structure on both sides of the proposed attachment point.
+    In the case of unigram features, we added features that specify the POS of a word and its left-most and right-most children.
+    These features provide the nondirectional model with means to prefer som

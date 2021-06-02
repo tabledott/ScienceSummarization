@@ -1,0 +1,9 @@
+ being either positive, negative or neutral in sentiment.
+    Additionally, the system outputs two rankings, the first a ranking of the sentence by positive polarity and the second a ranking of the sentence by negative polarity.
+    Classifying sentences by their sentiment is a subtask of sentiment aggregation systems (Hu and Liu, 2004; Gamon et al., 2005).
+    Ranking sentences by their polarity is a critical sub-task in extractive sentiment summarization (Carenini et al., 2006; Lerman et al., 2009).
+    To classify sentences as being positive, negative or neutral, we used an augmented vote-flip algorithm (Choi and Cardie, 2009), which is given in Figure 3.
+    This intuition behind this algorithm is simple.
+    The number of matched positive and negative phrases from the lexicon are counted and whichever has the most votes wins.
+    The algorithm flips the decision if the number of negations is odd.
+    Though this algorithm appears crude, it benefits from not relying on threshold values for neutral classif

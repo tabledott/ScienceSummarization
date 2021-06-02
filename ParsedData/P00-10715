@@ -1,0 +1,10 @@
+ures of the Zprise IR engine which were not conducive to working within the design of LASSO.
+    Because of this, a new IR engine was generated to support LASSO without the encumbrance of these features.
+    The index creation was, however, kept in its entirety.
+    The Zprise IR engine was built using a cosine vector space model.
+    This model does not allow for the extraction of those documents which include all of the keywords, but extracts documents according to the similarity measure between the document and the query as computed by the cosine of the angle between the vectors represented by the document and the query.
+    This permits documents to be retrieved when only one of the keywords is present.
+    Additionally, the keywords present in one retrieved document may not be present in another retrieved document.
+    LASSO's requirements are much more rigid.
+    LASSO requires that documents be retrieved only when all of the keywords are present in the document.
+    Thus, it became necessary to impleme

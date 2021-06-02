@@ -1,0 +1,9 @@
+ould be infeasibly slow.
+    Our solution is to keep all charts in memory by developing a parallel version of the L-BFGS training algorithm and running it on an 18-node Beowulf cluster.
+    As well as solving the memory problem, another significant advantge of parallelization is the reduction in estimation time: using 18 nodes allows our best-performing model to be estimated in less than three hours.
+    We use the the Message Passing Interface (MPI) standard for the implementation (Gropp et al. 1996).
+    The parallel implementation is a straightforward extension of the BFGS algorithm.
+    Each machine in the cluster deals with a subset of the training data, holding the packed charts for that subset in memory.
+    The key stages of the algorithm are the calculations of the model expectations and the likelihood function.
+    For a singleprocess version these are calculated by summing over all the training instances in one place.
+    For a multi-process version, these are summed in parallel, and at the end of 

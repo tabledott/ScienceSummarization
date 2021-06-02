@@ -1,0 +1,7 @@
+tic evaluation should leave them in.
+    When generalizing, we used the noun taxonomy of WordNet (version 1.4) (Miller 1995) as our thesaurus.
+    The noun taxonomy of WordNet has a structure of directed acyclic graph (DAG), and its nodes stand for a word sense (a concept) and often contain several words having the same word sense.
+    WordNet thus deviates from our notion of thesaurus&#8212;a tree in which each leaf node stands for a noun, each internal node stands for the class of nouns below it, and a noun is uniquely represented by a leaf node&#8212;so we took a few measures to deal with this.
+    First, we modified our algorithm Find-MDL so that it can be applied to a DAG; now, Find-MDL effectively copies each subgraph having multiple parents (and its associated data) so that the DAG is transformed to a tree structure.
+    Note that with this modification it is no longer guaranteed that the output model is optimal.
+    Next, we dealt heuristically with the issue of word-sense ambiguity by equally dividin

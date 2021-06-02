@@ -1,0 +1,11 @@
+nterpretation of the Schr&#168;oder numbers is given in (Knuth, 1973): The number of permutations that can be sorted with an output-restricted doubleended queue (deque) is exactly the large Schr&#168;oder number.
+    Additionally, Knuth presents an approximation for the large Schr&#168;oder numbers: where c is set to 2 &#65533;(3&#8730;2 &#8722; 4)/&#960;.
+    This approximation function confirms the result of Schr&#168;oder, and we obtain Sn &#8712; o((3 + &#8730;8)n), i.e. the Schr&#168;oder numbers grow like (3 + &#8730;8)n &#8776; 5.83n.
+    In this section, we will describe the IBM constraints (Berger et al., 1996).
+    Here, we mark each position in the source sentence either as covered or uncovered.
+    In the beginning, all source positions are uncovered.
+    Now, the target sentence is produced from bottom to top.
+    A target position must be aligned to one of the first k uncovered source positions.
+    The IBM constraints are illustrated in Fig.
+    2.
+    For most of the target positions there are

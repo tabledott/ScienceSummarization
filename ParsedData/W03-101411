@@ -1,0 +1,8 @@
+rn extraction patterns associated with subjectivity, and (3) the learned patterns can be used to grow the training set, allowing this entire process to be bootstrapped.
+    Figure 1 shows the components and layout of the bootstrapping process.
+    The process begins with a large collection of unannotated text and two high precision subjectivity classifiers.
+    One classifier searches the unannotated corpus for sentences that can be labeled as subjective with high confidence, and the other classifier searches for sentences that can be labeled as objective with high confidence.
+    All other sentences in the corpus are left unlabeled.
+    The labeled sentences are then fed to an extraction pattern learner, which produces a set of extraction patterns that are statistically correlated with the subjective sentences (we will call these the subjective patterns).
+    These patterns are then used to identify more sentences within the unannotated texts that can be classified as subjective.
+    The extraction pattern l

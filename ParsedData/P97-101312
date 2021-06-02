@@ -1,0 +1,9 @@
+low analyzer how the surrounding text should be broken into textual units.
+    This information is used by an algorithm that concurrently identifies discourse usages of cue phrases and determines the clauses that a text is made of.
+    The algorithm examines a text sentence by sentence and determines a set of potential discourse markers that occur in each sentence.
+    It then applies left to right the procedures that are associated with each potential marker.
+    These procedures have the following possible effects: &#8226; They can cause an immediate breaking of the current sentence into clauses.
+    For example, when an 1,1 although&amp;quot; marker is found, a new clause, whose right boundary is just before the occurrence of the marker, is created.
+    The algorithm is then recursively applied on the text that is found having a discourse usage.
+    For example, when the cue phrase &amp;quot;Although&amp;quot; is identified, it is also assigned a discourse usage.
+    The decision of whether a cue phrase is

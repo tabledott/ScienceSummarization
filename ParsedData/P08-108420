@@ -1,0 +1,9 @@
+gnments (i.e. possible abstract morpheme pairings and stray morpheme assignments).
+    We also need to marginalize over all possible draws of the distributions A, E, and F from their respective Dirichlet process priors.
+    We achieve these aims by performing Gibbs sampling.
+    Sampling We follow (Neal, 1998) in the derivation of our blocked and collapsed Gibbs sampler.
+    Gibbs sampling starts by initializing all random variables to arbitrary starting values.
+    At each iteration, the sampler selects a random variable Xi, and draws a new value for Xi from the conditional distribution of Xi given the current value of the other variables: P(Xi|X_i).
+    The stationary distribution of variables derived through this procedure is guaranteed to converge to the true joint distribution of the random variables.
+    However, if some variables can be jointly sampled, then it may be beneficial to perform block sampling of these variables to speed convergence.
+    In addition, if a random variable is not of direct int

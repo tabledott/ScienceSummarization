@@ -1,0 +1,9 @@
+ons and one of the parsing algorithms (Eisner&#8217;s) rely on a linear ordering of the vertices, namely the order of the words in the sentence.
+    Restricting scores to a single edge in a dependency tree gives a very impoverished view of dependency parsing.
+    Yamada and Matsumoto (2003) showed that keeping a small amount of parsing history was crucial to improving parsing performance for their locally-trained shift-reduce SVM parser.
+    It is reasonable to assume that other parsing models might benefit from features over previous decisions.
+    Here we will focus on methods for parsing second-order spanning trees.
+    These models factor the score of the tree into the sum of adjacent edge pair scores.
+    To quantify this, consider again the example from Figure 1.
+    In the second-order spanning tree model, the score would be, Here we use the second-order score function s(i, k, j), which is the score of creating a pair of adjacent edges, from word xi to words xk and xj.
+    For instance, s(2, 4, 5) is t

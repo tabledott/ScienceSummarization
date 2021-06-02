@@ -1,0 +1,10 @@
+ilter encoding of the language models (Bloom, 1970).
+    Feature instances of types i and ii are weighted using the tf*idf scheme and normalised by the L2 norm.
+    Feature type iii is weighted using frequency counts, while iii and iv are scaled so that their final value has approximately the same order of magnitude as i and ii.
+    The script length is based on the number of words and is mainly added to balance the effect the length of a script has on other features.
+    Finally, features whose overall frequency is lower than four are discarded from the model.
+  
+  
+    In order to evaluate our AA system, we use two correlation measures, Pearson&#8217;s product-moment correlation coefficient and Spearman&#8217;s rank correlation coefficient (hereafter Pearson&#8217;s and Spearman&#8217;s correlation respectively).
+    Pearson&#8217;s correlation determines the degree to which two linearly dependent variables are related.
+    As Pearson&#8217;s correlation is sensitive to the distribution of data and, due to 

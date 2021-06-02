@@ -1,0 +1,8 @@
+ccessful previous work in first order dependency parsing (McDonald et al, 2005).The most basic feature patterns consider the surface form, part-of-speech, lemma and other morpho syntactic attributes of the head or the modifier of adependency.
+			The representation also considers com plex features that exploit a variety of conjunctionsof the forms and part-of-speech tags of the follow ing items: the head and modifier; the head, modifier, and any token in between them; the head, modifier, and the two tokens following or preceding them.
+			As for the second-order features, we again base our features with those of McDonald and Pereira (2006), who reported successful experiments with second-order models.
+			We add some patterns to their features.
+			Let dir be ?right?
+			if h &lt; m, and ?left?
+			otherwise; let form(xi) and cpos(xi) return the surface form and coarse part-of-speech of token xi, respectively.
+			The definition of ?2(x, h, m, c) is: ? dir ? cpos(xh) ? cpos(xm) ? cpos(xc) ? dir ? cpos(xh) ? cpos(xc)

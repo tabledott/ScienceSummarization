@@ -1,0 +1,10 @@
+ give results on the French-English Europarl data and conclude with prospects for future work.
+  
+  
+    We start with phrase translations on the parallel training data using the techniques and implementation described in (Koehn et al., 2003a).
+    This phrase table provides the purely lexical entries in the final hierarchical rule set that will be used in decoding.
+    We then use Charniak&#8217;s parser (Charniak, 2000) to generate the most likely parse tree for each English target sentence in the training corpus.
+    Next, we determine all phrase pairs in the phrase table whose source and target side occur in each respective source and target sentence pair defining the scope of the initial rules in our SynCFG.
+    Annotation If the target side of any of these initial rules correspond to a syntactic category C of the target side parse tree, we label the phrase pair with that syntactic category.
+    This label corresponds to the left-hand side of our synchronous grammar.
+    Phrase pairs that do not correspo

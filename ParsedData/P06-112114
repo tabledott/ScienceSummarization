@@ -1,0 +1,7 @@
+own traversal.To assign complement spans, we assign the com plement span of any node n to each of its children, and for each of them, add the span of the child to the complement span of all other children.
+			In another traversal of G, we determine the minimal rule extractible from each node in F . We explore all tree fragments rooted at n by maintaining an open and a closed queue of rules extracted from n (qo and qc).
+			At each step, we pick the smallest rule in qo, and for each of itsvariable nodes, try to discover new rules (?succes sor rules?)
+			by means of composition with minimalrules, until a given threshold on rule size or maxi mum number of rules in qc is reached.
+			There may be more that one successor per rule, since we must account for all possible spans than can be assigned to non-lexical leaves of a rule.
+			Once a threshold is reached, or if the open queue is empty, we connecta new OR-node to all rules that have just been ex tracted from n, and add it to or-dforest.
+			Finally, we proceed rec

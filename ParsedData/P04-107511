@@ -1,0 +1,10 @@
+maximize the accumulated similarity degree between the sequences.
+    Here, we adapt it to our task.
+    A sketch of the modified algorithm is as follows.
+    Let NE1 = w11w12...w1n...w1N, (n = 1,..., N) and NE2 = w21w22...w2m...w2M, (m = 1,..., M) denote two word sequences to be matched.
+    NE1 and NE2 consist of M and N words respectively.
+    NE1(n) = w1n and NE2(m) = w2m.
+    A similarity value Sim(w1n ,w2m) has been known for every pair of words (w1n,w2m) within NE1 and NE2.
+    The goal of DTW is to find a path, m = map(n), which map n onto the corresponding m such that the accumulated similarity Sim* along the path is maximized. map n n= A dynamic programming method is used to determine the optimum path map(n).
+    The accumulated similarity SimA to any grid point (n, m) can be recursively calculated as Certainly, the overall similarity measure Sim* has to be normalized as longer sequences normally give higher similarity value.
+    So, the similarity between two sequences NE1 and NE2 is calculated as 

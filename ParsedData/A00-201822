@@ -1,0 +1,7 @@
+bute to this performance gain.
+    The first is simply that if we first guess the pre-terminal, when we go to guess the head the first thing we can condition upon is the pre-terminal, i.e., we compute p(h I t).
+    This quantity is a relatively intuitive one (as, for example, it is the quantity used in a PCFG to relate words to their pre-terminals) and it seems particularly good to condition upon here since we use it, in effect, as the unsmoothed probability upon which all smoothing of p(h) is based.
+    This one &amp;quot;fix&amp;quot; makes slightly over a percent difference in the results.
+    The second major reason why first guessing the pre-terminal makes so much difference is that it can be used when backing off the lexical head in computing the probability of the rule expansion.
+    For example, when we first guess the lexical head we can move from computing p(r I 1,1p, h) to p(r I /, t, /p, h).
+    So, e.g., even if the word &amp;quot;conflating&amp;quot; does not appear in the training corpus (and i

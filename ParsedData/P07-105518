@@ -1,0 +1,11 @@
+ard bottom-up dynamic programming algorithm.
+    Details are omitted Three baseline systems were created, for space reasons.
+    Other models are possible where dependencies occur across non-neighbouring levels, e.g., by inserting edges between the sentence level nodes and the document level node.
+    In the general case, inference is exponential in the size of each clique.
+    Both the models in Figure 1 and Figure 4 have maximum clique sizes of three.
+  
+  
+    To test the model we compiled a corpus of 600 online product reviews from three domains: car seats for children, fitness equipment, and Mp3 players.
+    Of the original 600 reviews that were gathered, we discarded duplicate reviews, reviews with insufficient text, and spam.
+    All reviews were labeled by online customers as having a positive or negative polarity on the document level, i.e., Y(d) _ {pos, neg}.
+    Each review was then split into sentences and every sentence annotated by a single annotator as either being positive, negative or neutral

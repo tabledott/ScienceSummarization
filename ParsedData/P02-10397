@@ -1,0 +1,8 @@
+n English parse tree from a string of English words.
+    Here we need to build an English parse tree from a string of foreign (e.g., French or Chinese) words.
+    To parse in such an exotic way, we start from an English context-free grammar obtained from the training corpus,2 and extend the grammar to incorporate the channel operations in the translation model.
+    For each non-lexical rule in the original English grammar (such as &#8220;VP VB NP PP&#8221;), we supplement it with reordered rules (e.g.
+    &#8220;VP NP PP VB&#8221;, &#8220;VP NP VB PP &#8221;, etc.) and associate them with the original English order and the reordering probability from the r-table.
+    Similarly, rules such as &#8220;VP VP X&#8221; and &#8220;X word&#8221; are added for extra word insertion, and they are associated with a probability from the n-table.
+    For each lexical rule in the English grammar, we add rules such as &#8220;englishWord foreignWord&#8221; with a probability from the t-table.
+    Now we can parse a string of 

@@ -1,0 +1,7 @@
+ dependencies in CCGbank which do not appear in DepBank.
+    Examples include any dependencies in which a punctuation mark is one of the arguments, and so we removed these from the output of the parser.
+    We have made some attempt to fill the subtype slot for some GRs.
+    The subtype slot specifies additional information about the GR; examples include the value obj in a passive ncsubj, indicating that the subject is an underlying object; the value num in ncmod, indicating a numerical quantity; and prt in ncmod to indicate a verb particle.
+    The passive case is identified as follows: Any lexical category which starts S[pss]\NP indicates a passive verb, and we also mark any verbs POS tagged VBN and assigned the lexical category N/N as passive.
+    Both these rules have high precision, but still leave many of the cases in DepBank unidentified.
+    Many of those remaining are POS tagged JJ and assigned the lexical category N/N, but this is also true of many non-passive modifiers, so we did not attempt to ext

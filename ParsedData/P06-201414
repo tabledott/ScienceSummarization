@@ -1,0 +1,7 @@
+olate the margin at a penalty.
+    The magnitude of this penalty to determined by a hand-tuned parameter C. After a few transformations (Tsochantaridis et al., 2004), the soft-margin learning objective can be formulated as a quadratic program: Note how the slack variables &#65533;i allow some incorrect structures to be built.
+    Also note that the loss A(yi, y) determines the size of the margin between structures.
+    Unfortunately, (4) provides one constraint for every possible structure for every training example.
+    Enumerating these constraints explicitly is infeasible, but in reality, only a subset of these constraints are necessary to achieve the same objective.
+    Re-organizing (4) produces: where costi is defined as: Provided that the max cost structure can be found in polynomial time, we have all the components needed for a constraint generation approach to this optimization problem.
+    Constraint generation places an outer loop around an optimizer that minimizes (3) repeatedly for a growing set 

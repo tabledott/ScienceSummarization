@@ -1,0 +1,6 @@
+e partially built dependency graph), and where columns correspond to data fields.
+    The base model contains twenty features, but note that the fields LEMMA, CPOS and FEATS are not available for all languages.
+    We use support vector machines3 to predict the next parser action from a feature vector representing the history.
+    More specifically, we use LIBSVM (Chang and Lin, 2001) with a quadratic kernel K(xZ, xj) = (-yxT xj +r)2 and the built-in one-versus-all strategy for multi-class classification.
+    Symbolic features are converted to numerical features using the standard technique of binarization, and we split values of the FEATS field into its atomic components.4 For some languages, we divide the training data into smaller sets, based on some feature s (normally the CPOS or POS of the next input token), which may reduce training times without a significant loss in accuracy (Yamada and Matsumoto, 2003).
+    To avoid too small training sets, we pool together categories that have a frequency below a c

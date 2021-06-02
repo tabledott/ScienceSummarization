@@ -1,0 +1,9 @@
+e, sentence) tuple, PMI++ ignores the sentence, generates a phrase based on the word and the fea ture (e.g., (clean, room): ?clean room?)
+			and finds its SO label using PMI statistics.
+			If unsure of the label, PMI++ tries to find the orientation of the potential opinion word instead.
+			The search engine queries use domain-specific keywords (e.g., ?scanner?), which are dropped if they 344 lead to low counts.
+			Hu++ is a WordNet-based method for finding a word?s context-independent semantic orientation.
+			It extends Hu?s adjective labeling method in a number of ways in order to handle nouns, verbs and adverbs in addition to adjectives and in order to improve coverage.
+			Hu?s method starts with two sets of positive and negative words and iteratively grows each one by including synonyms andantonyms from WordNet.
+			The final sets are used to pre dict the orientation of an incoming word.
+			Type PMI++ Hu++ OPINE P R P R P R adj 0.73 0.91 +0.02 -0.17 +0.07 -0.03 nn 0.63 0.92 +0.04 -0.24 +0.11 -0.08 vb 0.71 0

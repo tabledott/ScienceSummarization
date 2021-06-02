@@ -1,0 +1,12 @@
+ncies similar to the use of Model probabilities in (Koehn et al., 2003).
+    Additionally, we use distortion features involving relative source word position and -gram features for adjacent target words.
+    These features correspond to the use of a language model, but the weights for theses features are trained on the parallel training data only.
+    For the most complex model, the number of features is about million (ignoring all features that occur only once).
+  
+  
+    Throughout the section, we let .
+    Each block sequence corresponds to a candidate translation.
+    In the training data where target translations are given, a BLEU score can be calculated for each against the target translations.
+    In this set up, our goal is to find a weight vector such that the higher the higher the corresponding BLEU score should be.
+    If we can find such a weight vector, then block decoding by searching for the highest will lead to good translation with high BLEU score.
+    Formally, we denote a source sentence by

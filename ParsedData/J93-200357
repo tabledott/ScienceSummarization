@@ -1,0 +1,9 @@
+ood solution for one of our models, f and e must occur together in at least one of the translations in our training data.
+    This is the case for only 25, 427, 016 pairs, or about one percent of all translation probabilities.
+    On the average, then, each English word appears with about 605 French words.
+    Table 1 summarizes our training computation.
+    At each iteration, we compute the probabilities of the various alignments of each translation using one model, and collect counts using a second (possibly different) model.
+    These are referred to in the table as the In model and the Out model, respectively.
+    After each iteration, we retain individual values only for those translation probabilities that surpass a threshold; the remainder we set to a small value (10-12).
+    This value is so small that it does not affect the normalization conditions, but is large enough that translation probabilities can be resurrected during later iterations.
+    We see in columns 4 and 5 that even though we lower th

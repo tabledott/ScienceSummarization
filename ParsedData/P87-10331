@@ -1,0 +1,7 @@
+e description can be interpreted as a set of structures, each of which contains no disjunction.
+    This method is exemplified by Definite Clause Grammar [8], which eliminates disjunctive terms by expanding each rule containing disjunction into alternative rules.
+    It is also the method used by Kay [7] in parsing FUG.
+    This method works reasonably well for small grammars, but it is clearly unsatisfactory for descriptions containing more than a small number of disjunctions, because the DNF expansion requires an amount of space which is exponential in the number of disjunctions.
+    The second method, developed by Karttunen [2], uses constraints on disjuncts which must be checked whenever a disjunct is modified.
+    Karttunen's method is only applicable to value disjunctions (i.e. those disjunctions used to specify the value of a single feature), and it becomes complicated and inefficient when disjuncts contain non-local dependencies (i.e. values specified by path expressions denoting another feature).
+   

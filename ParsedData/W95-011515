@@ -1,0 +1,7 @@
+one translation pairs was extracted from the Collins French-English MRBD [Cou91].
+    Whenever a candidate translation pair (S,T) appeared in the list of translations extracted from the MRBD, the filter removed all word pairs (S, not T) and (not S, T) that occurred in the same sentence pair.
+    The MRBD Filter is an oracle filter.
+    It is based on the assumption that if a candidate translation pair (S,T) appears in an oracle list of likely translations, then T is the correct translation of S in their sentence pair, and there are no other translations of S or T in that sentence pair.
+    This assumption is stronger than the one made by Brown et al. [Bro94], where the MR.BD was treated as data and not as an oracle.
+    Brown et al. allowed the training data to override information gleaned from the MRBD.
+    The attitude of the present study is &amp;quot;Don't guess when you know.&amp;quot; This attitude may be less appropriate when there is less of an overlap between the vocabulary of the MRBD and the vocabu

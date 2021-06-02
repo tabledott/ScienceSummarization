@@ -1,0 +1,11 @@
+ttern of candidate points of correspondence in a bitext space, after noise filtering.
+    The true points of correspondence trace the true bitext map parallel to the main diagonal. distance of the chain's points from the chain's least-squares line.
+    If this distance exceeds the maximum point dispersal threshold, the chain is rejected.
+    The angle of each chain's least-squares line is compared to the arctangent of the bitext slope.
+    If the difference exceeds the maximum angle deviation threshold, the chain is rejected.
+    In a search rectangle containing n points, there are 211 possible chains&#8212;too many to search by brute force.
+    The properties of TPCs listed above provide two ways to constrain the search.
+    The Linearity property leads to a constraint on the chain size.
+    Chains of only a few points are unreliable, because they often line up straight by coincidence.
+    Chains that are too big will span too long a segment of the TBM to be well approximated by a line.
+    SIMR uses a fixed

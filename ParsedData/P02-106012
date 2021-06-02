@@ -1,0 +1,9 @@
+nt, as shown in Table 5 (n is the word number in the matched NE from the recognized NE list and m is the matched word number between the word string and the matched NE with the corresponding NE type.).
+    This sub-feature is unique to our system.
+    The intuition behind this is the phenomena of name alias.
+    During decoding, the NEs already recognized from the document are stored in a list.
+    When the system encounters a NE candidate, a name alias algorithm is invoked to dynamically determine its relationship with the NEs in the recognized list.
+    Initially, we also consider part-of-speech (POS) sub-feature.
+    However, the experimental result is disappointing that incorporation of POS even decreases the performance by 2%.
+    This may be because capitalization information of a word is submerged in the muddy of several POS tags and the performance of POS tagging is not satisfactory, especially for unknown capitalized words (since many of NEs include unknown capitalized words.).
+    Therefore, POS is 

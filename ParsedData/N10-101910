@@ -1,0 +1,8 @@
+produce 16.5 million training vectors.
+    2 This increases runtime performance because fewer calls need to be made to the language model which resides on a server.
+    In addition, we noticed that overall precision is increased by not considering the less likely suggestions by the classifier.
+    For the meta-classifier we chose to use a decision tree, trained with the WinMine toolkit (Chickering 2002).
+    The motivation for this choice is that decision trees are well-suited for continuously valued features and for non-linear decision surfaces.
+    An obvious alternative would be to use a support vector machine with non-linear kernels, a route that we have not explored yet.
+    The feature set for the meta-classifier consists of the following scores from the primary models, including some arithmetic combinations of scores: Ratio and delta of Log LM score of the original word choice and the suggested revision (2 features) Ratio and delta of the LM entropy for original and suggested revision (2 features).
+   

@@ -1,0 +1,6 @@
+    Otherwise we exit since there are no single edge switches that can improve the score.
+    This algorithm allows for the introduction of non-projective edges because we do not restrict any of the edge changes except to maintain the tree property.
+    In fact, if any edge change is ever made, the resulting tree is guaranteed to be nonprojective, otherwise there would have been a higher scoring projective tree that would have already been found by the exact projective parsing algorithm.
+    It is not difficult to find examples for which this approximation will terminate without returning the highest-scoring non-projective parse.
+    It is clear that this approximation will always terminate &#8212; there are only a finite number of dependency trees for any given sentence and each iteration of the loop requires an increase in score to continue.
+    However, the loop could potentially take exponential time, so we will bound the number of edge transformations to a fixed value M. It is easy to argue that this wil

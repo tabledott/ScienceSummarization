@@ -1,0 +1,6 @@
+ following intuition: Areas of high variability between backbone nodes, that is, several distinct parallel paths, may correspond to template arguments and can be collapsed into one slot that can be filled by these arguments.
+    However, multiple parallel paths may also appear in the lattice because of simple synonymy and those paths must be retained for paraphrase generation to be useful.
+    To differentiate between the two cases, a synonymy threshold s of 30% is used, as shown in Steps 8&#8211;14.
+    The basic idea behind the threshold is that as the number of sentences increases, the number of different arguments will increase faster than the number of synonyms.
+    Figure 7 shows how a very simple word lattice may be generalized into a slotted lattice.
+    Once all the slotted lattices have been constructed for each corpus, Steps 19&#8211;24 try to match the slotted lattices extracted from one corpus to those extracted from the other by referring back to the sentence clusters from which the original lat

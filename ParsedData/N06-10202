@@ -1,0 +1,10 @@
+labeled data to train a new model.
+    This process can be iterated over different sets of unlabeled data if desired.
+    It is not surprising that self-training is not normally effective: Charniak (1997) and Steedman et al. (2003) report either minor improvements or significant damage from using self-training for parsing.
+    Clark et al. (2003) applies self-training to POS-tagging and reports the same outcomes.
+    One would assume that errors in the original model would be amplified in the new model.
+    Parser adaptation can be framed as a semisupervised or unsupervised learning problem.
+    In parser adaptation, one is given annotated training data from a source domain and unannotated data from a target.
+    In some cases, some annotated data from the target domain is available as well.
+    The goal is to use the various data sets to produce a model that accurately parses the target domain data despite seeing little or no annotated data from that domain.
+    Gildea (2001) and Bacchiani et al. (2006) show

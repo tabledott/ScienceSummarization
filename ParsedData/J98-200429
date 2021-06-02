@@ -1,0 +1,10 @@
+# is described in Appendix A.)
+    We strongly recommend this figure of merit as the basis for best-first statistical parsers.
+    The measurements presented here almost certainly underestimate the true benefits of this model.
+    We restricted sentence length to a maximum of 30 words, in order to keep the number of edges in the exhaustive parse to a practical size; however, since the percentage of edges needed by the best-first parse decreases with increasing sentence length, we assume that the improvement would be even more dramatic for sentences longer than 30 words.
+  
+  
+    We compute estimates of the inside probability for each proposed constituent incrementally as new constituents are added to the chart.
+    Initially, # is set to 1 for each terminal symbol, since our input is given as a stream of tags, which are our terminals.
+    When a new proposed constituent is added to the agenda, its [3 estimate is set to its current inside probability according to the constituents already in the chart.
+    How

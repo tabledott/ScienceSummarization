@@ -1,0 +1,7 @@
+ the BIO representation, we require a multi-class classifier.
+    Among several methods for constructing a multi-class SVM (Hsu and Lin, 2002), we use a pairwise method proposed by Kre13el (1998) instead of the one-vs-rest method used in (Yamada et al., 2000), and extend the BIO representation to enable the training with the entire GENIA corpus.
+    Here we describe the one-vs-rest method and the pairwise method to show the necessity of our extension.
+    Both one-vs-rest and pairwise methods construct a multi-class classifier by combining many binary SVMs.
+    In the following explanation, K denotes the number of the target classes. one-vs-rest Construct K binary SVMs, each of which determines whether the sample should be classified as class i or as the other classes.
+    The output is the class with the maximum f(x) in Equation 1. pairwise Construct K(K &#8722; 1)/2 binary SVMs, each of which determines whether the sample should be classified as class i or as class j.
+    Each binary SVM has one vote, and t

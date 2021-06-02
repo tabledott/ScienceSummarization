@@ -1,0 +1,7 @@
+t moves leftto-right through the set of fragments produced by FPP, deciding to attach fragments (or not) based on semantic criteria.
+    To avoid requiring a complete, global analysis, a window two constituents wide is used to find patterns of possible relations among phrases.
+    For example, an S followed by a PP invokes an action of finding all points along the &amp;quot;right edge&amp;quot; of the S tree where a PP could attach, applying the fragment combining patterns at each such spot, and ranking the alternatives.
+    As is evident in Table 2, FPP frequently does not attach punctuation.
+    This is to be expected, since punctuation is used in many ways, and there is no deterministic basis for attaching the constituent following the punctuation to the constituent preceding it.
+    Therefore, if the pair being examined by the combining algorithms ends in punctuation, the algorithm looks at the constituent following it, trying to combine it with the constituent to the left of the punctuation.
+    A simila

@@ -1,0 +1,7 @@
+ the base-level classifiers as features, and the true label as given by the training data.
+    Previous studies (Ting and Witten, 1999; Zenko and Dzeroski, 2002; Sigletos et al., 2005) have shown that the probabilities of each class value as estimated by each base-level algorithm are effective features when training meta-learners.
+    Stacking was shown to be consistently more effective than voting, another popular ensemble-based method in which the outputs of the base-classifiers are combined either through majority vote or by taking the class value with the highest average probability.
+    We used the stacking methodology to build an ensemble-based extractor, referred to as H-CRF.
+    Treating the output of an O-CRF and R1-CRF as black boxes, H-CRF learns to predict which, if any, tokens found between a pair of entities (e1, e2), indicates a relationship.
+    Due to the sequential nature of our RE task, H-CRF employs a CRF as the metalearner, as opposed to a decision tree or regressionbased classifier.
+    

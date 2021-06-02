@@ -1,0 +1,11 @@
+in the source sentence.
+			jsiw , is a candidate target word as translation of is . Thus the translation model is converted into a collection of target words as a bag-of-word query model.
+			There is no decoding process involved to build TMQ . This means TMQ does not incorporate any background language model information at all, while both 1TQ and TNQ implicitly use the background language model to prune the words in the query.
+			Thus TMQ is a generalization, and 1TQ and TNQ are pruned versions.
+			This also means TMQ is subject to more noise.
+	
+	
+			Word proximity and word order is closely related to syntactic and semantic characteristics.
+			However, it is not modeled in the query models presented so far, which are simple bag-of-words representations.
+			Incorporating syntactic and semantic information into the query models can potentially improve the effectiveness of LM adaptation.
+			The word-proximity and word ordering information can be easily extracted from the first best hypothesis, the n-best hypothe

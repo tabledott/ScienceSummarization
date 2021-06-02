@@ -1,0 +1,9 @@
+er, NPi's semantic class is COMPANY, and NP2's class is OBJECT, generating a distance of oo via the semantic class feature.
+    Therefore, dist(NP1,NP2) = oo and the two noun phrases are not considered coreferent.
+    The coreference distance metric is largely contextindependent in that it determines the distance between two noun phrases using very little, if any, of their intervening or surrounding context.
+    The clustering algorithm described below is responsible for coordinating these local coreference decisions across arbitrarily long contexts and, thus, implements a series of context-dependent coreference decisions.
+    The clustering algorithm is given in Figure 2.
+    Because noun phrases generally refer to noun phrases that precede them, we start at the end of the document and work backwards.
+    Each noun phrase is compared to all preceding noun phrases.
+    If the distance between two noun phrases is less than the clustering radius r, then their classes are considered for possible merging.
+    Two

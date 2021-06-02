@@ -1,0 +1,10 @@
+ave not implemented.
+    Hence it is not possible for the parser to produce the gold standard for every sentence in Sections 02&#8211;21, for either the normal-form or the dependency model.
+    These sentences are not used in the training process.
+    For parsing the training data, we ensure that the correct category is a member of the set assigned to each word.
+    (We do not do this when parsing the test data.)
+    The average number of categories assigned to each word is determined by the &#946; parameter in the supertagger.
+    A category is assigned to a word if the category&#8217;s probability is within &#946; of the highest probability category for that word.
+    Hence the value of &#946; has a direct effect on the size of the packed charts: Smaller &#946; values lead to larger charts.
+    For training purposes, the &#946; parameter determines how many incorrect derivations will be used for each sentence for the discriminative training algorithm.
+    We have found that the &#946; parameter can have a l

@@ -1,0 +1,13 @@
+This in dicates that our unknown word features were more useful for corpora with segmentation stan dards that tend to result in longer words.
+			In the HK corpus, when we added in un known word features, our performance dropped.
+			However, we found that the testing data uses different punctuation than the training set.
+			Our system could not distinguish new word characters from new punctuation, since having a com plete punctuation list is considered external knowledge for closed track systems.
+			If the new punctuation were not unknown to us, our per formance on HK data would have gone up to 0.952 F and the unknown word features would have not hurt the system too much.
+			Table 4 present recalls (R), precisions (P), f scores (F) and recalls on both unknown (Roov) and known words (Riv).
+			Table 4 Detailed performances of each corpus R P F Roov Riv AS 0.950 0.943 0.947?
+			0.718?
+			0.960 HK 0.941 0.946 0.943?
+			0.698?
+			0.961 HK (PU-fix) 0.952 0.952 0.952 0.791 0.965 PK 0.946 0.954 0.950?
+			0.787?
+			0.9

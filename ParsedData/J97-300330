@@ -1,0 +1,6 @@
+on seems to be slightly less important since the disambiguator should be able to handle additional noise but obviously not in large amounts.
+    Coverage is a very important measure for a rule set, since a rule set that can guess very accurately but only for a tiny proportion of words is of questionable value.
+    Thus, we will try to maximize recall first, then coverage, and, finally, precision.
+    We will measure the aggregate by averaging over measures per word (micro-average), i.e., for every single word from the test collection the precision and recall of the guesses are calculated, and then we average over these values.
+    To find the optimal threshold (0,) for the production of a guessing rule set, we generated a number of similar rule sets using different thresholds and evaluated them against the training lexicon and the test lexicon of unseen 17,868 hapax words.
+    Every word from the two lexicons was guessed by a rule set and the results were compared with the information the word had in the lexi

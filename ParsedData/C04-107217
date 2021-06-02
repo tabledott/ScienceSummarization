@@ -1,0 +1,15 @@
+t sentence level, we apply the following smoothing technique: Add one count to the n-gram hit and total n gram count for n &gt; 1.
+			Therefore, for candidate translations with less than n words, they can still get a positive smoothed BLEU score from shorter n-gram matches; however if nothing matches then they will get zero scores.
+			We call the smoothed BLEU: BLEUS.
+			For each candidate translation in the 1024-best list and each reference, we compute the following scores: 1.
+			BLEUS1 to 9.
+			2. NIST, PER, and WER.
+			3.
+			ROUGE-L.
+			4.
+			ROUGE-W with weight ranging from 1.1.
+			to 2.0 with increment of 0.1
+	
+	
+			ranging from 0 to 9 (ROUGE-S0 to S9) and without any skip distance limit (ROUGE-S*) We compute the average score of the references and then rank the candidate translations and the references according to these automatic scores.
+			The ORANGE score for each metric is calculated as the average rank of the average reference (oracle) score over the whole corpus (872 sentences) divided by the leng

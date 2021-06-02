@@ -1,0 +1,8 @@
+mbedded this process in a simple bootstrapping loop, which is presented in Figure 1.
+    As input, the user must provide the name of the desired semantic class (Class) and a seed example (Seed), which are used to instantiate the pattern.
+    On the first iteration, the pattern is given to Google as a web query, and new class members are extracted from the retrieved text snippets.
+    We wanted the system to be as language-independent as possible, so we refrained from using any taggers or parsing tools.
+    As a result, instances are extracted using only word boundaries and orthographic information.
+    For proper name classes, we extract all capitalized words that immediately follow the pattern.
+    For common noun classes, we extract just one word, if it is not capitalized.
+    Examples are shown below, with the extracted items underlined: countries such as China and Sri Lanka are ... fishes such as trout and bass can ... One limitation is that our system cannot learn multi-word instances of common noun cate

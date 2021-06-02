@@ -1,0 +1,9 @@
+nstraints are chosen for the optimization.
+    Typically these constraints are the k highest scoring labelings under the current weight vector.
+    However, early experiments showed that the model quickly learned to discard any labeling with an incorrect document label for the instances in the training set.
+    As a result, the constraints were dominated by labelings that only differed over sentence labels.
+    This did not allow the algorithm adequate opportunity to set parameters relative to incorrect document labeling decisions.
+    To combat this, k was divided by the number of document labels, to get a new value k'.
+    For each document label, the k' highest scoring labelings were To this point, we have focused solely on a model for two-level fine-to-coarse sentiment analysis not only for simplicity, but because the experiments in Section 3 deal exclusively with this scenario.
+    In this section, we briefly discuss possible extensions for more complex situations.
+    For example, longer documents might

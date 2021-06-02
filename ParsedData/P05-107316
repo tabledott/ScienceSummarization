@@ -1,0 +1,8 @@
+o come up with a labeling that does not contain an obligatory argument.
+    We added a whole label sequence feature template that extracts the labels of all argument nodes, and preserves information about the position of the predicate.
+    The template also includes information about the voice of the predicate.
+    For example, this template will be instantiated as follows for the example candidate argument sequence: [ voice:active ARG1,PRED,ARG4,ARGM-TMP] We also add a variant of this feature which uses a generic ARG label instead of specific labels.
+    This feature template has the effect of counting the number of arguments to the left and right of the predicate, which provides useful global information about argument structure.
+    As previously observed (Pradhan et al., 2004), including modifying arguments in sequence features is not helpful.
+    This was confirmed in our experiments and we redefined the whole label sequence features to exclude modifying arguments.
+    One important variation of this fea

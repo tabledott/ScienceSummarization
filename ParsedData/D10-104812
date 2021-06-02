@@ -1,0 +1,8 @@
+The intuition behind this heuristic is two-fold.
+    First, early cluster mentions are usually better defined than subsequent ones, which are likely to have fewer modifiers or are pronouns (Fox, 1993).
+    Several of our models use this modifier information.
+    Second, by definition, first mentions appear closer to the beginning of the document, hence there are fewer antecedent candidates to select from, and fewer opportunities to make a mistake.
+    Search Pruning &#8211; Finally, we prune the search space using discourse salience.
+    We disable coreference for first cluster mentions that: (a) are or start with indefinite pronouns (e.g., some, other), or (b) start with indefinite articles (e.g., a, an).
+    One exception to this rule is the model deployed in the first pass; it only links mentions if their entire extents match exactly.
+    This model is triggered for all nominal mentions regardless of discourse salience, because it is possible that indefinite mentions are repeated in a document when concept

@@ -1,0 +1,7 @@
+e just two examples of this capability.
+    The prior of a lexicalized nonterminal M(w, t) is broken down into two separate estimates using parameters from two new classes, Ppriorw and PpriorNT: where &#710;p(M  |w, t) is smoothed with &#710;p(M  |t) and estimates using the parameters of the Ppriorw class are unsmoothed.
+    Many of the parameter classes in Collins&#8217; model&#8212;and indeed, in most statistical parsing models&#8212;define conditional probabilities with very large conditioning contexts.
+    In this case, the conditioning contexts represent some subset of the history of the generative process.
+    Even if there were orders of magnitude more training data available, the large size of these contexts would cause horrendous sparse-data problems.
+    The solution is to smooth these distributions that are made rough primarily by the abundance of zeros.
+    Collins uses the technique of deleted interpolation, which smoothes the distributions based on full contexts with those from coarser models th

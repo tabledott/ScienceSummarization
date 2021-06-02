@@ -1,0 +1,10 @@
+baseline consisted of a translation system trained using Moses, as described above, on the IWSLT corpus.
+    The resulting model had a phrase table with 515k entries.
+    The general-domain baseline was substantially larger, having been trained on 12 million sentence pairs, and had a phrase table containing 1.5 billion entries.
+    The BLEU scores of the baseline single-corpus systems are in Table 1.
+  
+  
+    We present three techniques for ranking and selecting subsets of a general-domain corpus, with an eye towards improving overall translation performance.
+    As mentioned in Section 2.1, one established method is to rank the sentences in the generaldomain corpus by their perplexity score according to a language model trained on the small indomain corpus.
+    This reduces the perplexity of the general-domain corpus, with the expectation that only sentences similar to the in-domain corpus will remain.
+    We apply the method to machine translation, even though perplexity reduction has been shown to not cor

@@ -1,0 +1,9 @@
+bout 50 epochs.
+    One of the difficulties in inducing these embeddings is that there is no stopping criterion defined, and that the quality of the embeddings can keep improving as training continues.
+    Collobert (p.c.) simply leaves one computer training his embeddings indefinitely.
+    We induced embeddings with 25, 50, 100, or 200 dimensions over 5-gram windows.
+    In comparison to Turian et al. (2009), we use improved C&amp;W embeddings in this work: formly in the range [-0.01, +0.01], not [-1,+1].
+    For rare words, which are typically updated only 143 times per epoch2, and given that our embedding learning rate was typically 1e-6 or 1e-7, this means that rare word embeddings will be concentrated around zero, instead of spread out randomly.
+    The HLBL embeddings were trained for 100 epochs (7 days).3 Unlike our Collobert and Weston (2008) embeddings, we did not extensively tune the learning rates for HLBL.
+    We used a learning rate of 1e-3 for both model parameters and embedding parameters.
+    

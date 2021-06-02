@@ -1,0 +1,10 @@
+r of (tree, site) pairs is very high, the data would be too sparse.
+    We therefore generate an elementary tree in two steps: first the tree template (that is, the elementary tree minus its Frequency anchor), then the anchor.
+    The probabilities are decomposed as follows: where Ta is the tree template of a, to is the part-of-speech tag of the anchor, and wa is the anchor itself.
+    The generation of the tree template has two backoff levels: at the first level, the anchor of il is ignored, and at the second level, the POS tag of the anchor as well as the flag f are ignored.
+    The generation of the anchor has three backoff levels: the first two are as before, and the third just conditions the anchor on its POS tag.
+    The backed-off models are combined by linear interpolation, with the weights chosen as in (Bikel et al., 1997).
+  
+  
+    We ran the algorithm given in Section 4.1 on sections 02{21 of the Penn Treebank.
+    The extracted grammar is large (about 73,000 trees, with words seen fewer than four

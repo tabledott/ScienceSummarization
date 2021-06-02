@@ -1,0 +1,5 @@
+nd to a span in the parse tree are given a default category 'X', and can still play a role in the decoding process.
+    In work done after submission to the 2006 data track, we assign such phrases an extended category of the form C1 + C2, C1/C2, or C2\C1, indicating that the phrase pair&#8217;s target side spans two adjacent syntactic categories (e.g., she went: NP+V), a partial syntactic category C1 missing a C2 to the right (e.g., the great: NP/NN), or a partial C1 missing a C2 to the left (e.g., great wall: DT\NP), respectively.
+    Generalization In order to mitigate the effects of sparse data when working with phrase and ngram models we would like to generate generalized phrases, which include non-terminal symbols that can be filled with other phrases.
+    Therefore, after annotating the initial rules from the current training sentence pair, we adhere to (Chiang, 2005) to recursively generalize each existing rule; however, we abstract on a per-sentence basis.
+    The grammar extracted from this evaluatio

@@ -1,0 +1,7 @@
+ntion to one measure of word-to-word similarity, the Wu &amp; Palmer metric.
+    First, the text segments are tokenized, part-ofspeech tagged, and the words are inserted into their corresponding word class sets.
+    The sets obtained for the given text segments are illustrated in Figure 1.
+    Starting with each of the two text segments, and for each word in its word class sets, we determine the most similar word from the corresponding set in the other text segment.
+    As mentioned earlier, we seek a WordNet-based semantic similarity for nouns and verbs, and only lexical matching for adjectives, adverbs, and cardinals.
+    The word semantic similarity scores computed starting with the first text segment are shown in Table 3.
+    Text 1 Text 2 maxSim IDF jurors jurors 1.00 5.80 courtroom jurors 0.30 5.23 questionnaire questionnaire 1.00 3.57 groups questionnaire 0.29 0.85 were were 1.00 0.09 taken asked 1.00 0.28 asked asked 1.00 0.45 fill complete 0.86 1.29 out &#8211; 0 0.06 40 &#8211; 0 1.39 Next, we use e

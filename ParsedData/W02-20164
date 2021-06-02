@@ -1,0 +1,11 @@
+
+    Usually, in a probabilistic model, all possible pairs of segments that are in a dependency relation are used as positive examples, and two segments that appear in a sentence but are not in a dependency relation are used as negative examples.
+    Thus, a total of n&#729;(n &#8722; 1)/2 training examples (where n is the number of segments in a sentence) must be produced per sentence.
+  
+  
+    In the probabilistic model, we have to estimate the probabilities of each dependency relation.
+    However, some machine learning algorithms, such as SVMs, cannot estimate these probabilities directly.
+    Kudo and Matsumoto (2000) used the sigmoid function to obtain pseudo probabilities in SVMs.
+    However, there is no theoretical endorsement for this heuristics.
+    Moreover, the probabilistic model is not good in its scalability since it usually requires a total of n&#729;(n &#8722; 1)/2 training examples per sentence.
+    It will be hard to combine the probabilistic model with some machine learning algorithms, s

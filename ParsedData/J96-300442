@@ -1,0 +1,5 @@
+ist of personal names.&amp;quot; Note that in Chang et al. 's model the p(rule 9) is estimated as the product of the probability of finding G1 in the first position of a two-hanzi given name and the probability of finding G2 in the second position of a two-hanzi given name, and we use essentially the same estimate here, with some modifications as described later on.
+    This model is easily incorporated into the segmenter by building a WFST restricting the names to the four licit types, with costs on the arcs for any particular name summing to an estimate of the cost of that name.
+    This WFST is then summed with the WFST implementing the dictionary and morphological rules, and the transitive closure of the resulting transducer is computed; see Pereira, Riley, and Sproat (1994) for an explanation of the notion of summing WFSTs.12 Conceptual Improvements over Chang et al. 's Model.
+    There are two weaknesses in Chang et al. 's model, which we improve upon.
+    First, the model assumes independence between t

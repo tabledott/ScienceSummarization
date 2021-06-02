@@ -1,0 +1,6 @@
+ither weighted finite-state transducers (FSTs) or weighted synchronous context-free grammars (SCFGs) (Lopez, 2008).
+    Phrase-based models (Koehn et al., 2003), lexical translation models (Brown et al., 1993), and finite-state conditional random fields (Sha and Pereira, 2003) exemplify the former, and hierarchical phrase-based models the latter (Chiang, 2007).
+    We introduce a software package called cdec that manipulates both classes in a unified way.1 Although open source decoders for both phrasebased and hierarchical translation models have been available for several years (Koehn et al., 2007; Li et al., 2009), their extensibility to new models and algorithms is limited by two significant design flaws that we have avoided with cdec.
+    First, their implementations tightly couple the translation, language model integration (which we call rescoring), and pruning algorithms.
+    This makes it difficult to explore alternative translation models without also re-implementing rescoring and pruning logic.
+    

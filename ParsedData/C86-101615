@@ -1,0 +1,9 @@
+ ions  of Earleys a lgor i thm.
+  We consider two cases here.
+  Let us assume that  the parser is in the process of t ry ing to build an instance of the rule A ~ I~ C and that  it has successfully instant ia ted B as B.
+  At this point, it will enter  a part ial  instant iat ion  of the rule on the chart.
+  We designate this active edge as A(B): C. Here the colon marks  the line between daughter  const i tuents  that  have been found and daughters  that  sti l l  need to be instant iated.
+  When an active edge is added to the chart, the parser needs to find all the rules that  match the first un instant ia ted  const i tuent  to the r ight  of the colon.
+  In the case at hand, it needs to match C aga inst  he left-hand sides of all rules to determine what  rules it should now try to instant iate.
+  For example, if there is a rule C ~ D in the grammar  and C is compatible with C, a looping C: I) or C: I) edge should be added to the chart.
+  In the case of an ordinary phrase-structure grammar , this match ing  

@@ -1,0 +1,5 @@
+are not the same, the exact numbers are incomparable, but the difference in direction is important: in the regularized model, performance improves with the inclusion of low support features.
+    Finally, in addition to being significantly more accurate, smoothed models train much faster than unsmoothed ones, and do not benefit from early stopping.
+    For example, the first smoothed model in Table 5 required 80 conjugate gradient iterations to converge (somewhat arbitrarily defined as a maximum difference of 10_4 in feature weights between iterations), while its corresponding unsmoothed model required 335 iterations, thus training was roughly 4 times slower.10 The second pair of models required 134 and 370 iterations respectively.
+    As might be expected, unsmoothed models reach their highest generalization capacity long before convergence and accuracy on an unseen test set drops considerably with further iterations.
+    This is not the case for smoothed models, as their test set accuracy increases almost mo

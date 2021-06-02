@@ -1,0 +1,23 @@
+een every pair of distinct words and fromthe root symbol to every word.
+			It is clear that dependency trees for x and spanning trees for Gx co incide, since both kinds of trees are required to be rooted at the dummy root and reach all the wordsin the sentence.
+			Hence, finding a (projective) depen dency tree with highest score is equivalent to finding a maximum (projective) spanning tree in Gx.
+			Chu-Liu-Edmonds(G, s) Graph G = (V, E) Edge weight function s : E ? R 1.
+			Let M = {(x?, x) : x ? V, x?
+			= arg maxx?
+			s(x?, x)}.
+			2.
+			Let GM = (V, M).
+			4.
+			Otherwise, find a cycle C in GM.
+			5.
+			Let GC = contract(G, C, s).
+			6.
+			Let y = Chu-Liu-Edmonds(GC , s).
+			7.
+			Find a vertex x ? C s. t.
+			(x?, x) ? y, (x??, x) ? C. 8.
+			return y ? C ? {(x??, x)} contract(G = (V, E), C, s) 1.
+			Let GC be the subgraph of G excluding nodes in C. 2.
+			Add a node c to GC representing cycle C. Add edge (c, x) to GC with s(c, x) = maxx??C s(x?, x) 4.
+			For x ? V ? C : ?x??C(x, x?)
+			E. Add edge (x, c) to

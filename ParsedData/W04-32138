@@ -1,0 +1,8 @@
+ portion %Frame of frame slots that can be mapped to a chunked slot, and the portion %Chunks of chunked slots that can be mapped to the frame.
+    The score for each frame is computed by %Frame %Chunks, and only frames having the highest score contribute candidate roles to the chunked slots.
+    An example scoring is shown in Table 2.
+    This frame matching step is very restrictive and greatly reduces potential role ambiguity.
+    Many syntactic slots receive only a single candidate role, providing the initial unambiguous data for our bootstrapping algorithm.
+    Some slots receive no candidate roles, which is an error for argument slots but which is correct for adjuncts.
+    The reduction of candidate roles in general is very helpful in lightening the load on the probability model, but note that it may also cause the correct role to be omitted.
+    In future work, we plan to explore other possible methods of selecting roles from the frames, such as choosing candidates from all frames, or setting a threshold

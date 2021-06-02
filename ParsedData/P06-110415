@@ -1,0 +1,10 @@
+validation on the same subset of the 2004 data, but the 5 partitions may not be the same) for the ACE 2004 data.
+    Both corpora are parsed using Charniak&#8217;s parser (Charniak, 2001).
+    We iterate over all pairs of entity mentions occurring in the same sentence to generate potential relation instances.
+    In this paper, we only measure the performance of relation extraction models on &#8220;true&#8221; mentions with &#8220;true&#8221; chaining of coreference (i.e. as annotated by LDC annotators).
+    Implementation: We formalize relation extraction as a multi-class classification problem.
+    SVM is selected as our classifier.
+    We adopt the one vs. others strategy and select the one with the largest margin as the final answer.
+    The training parameters are chosen using cross-validation (C=2.4 (SVM); &#955; =0.4(tree kernel)).
+    In our implementation, we use the binary SVMLight (Joachims, 1998) and Tree Kernel Tools (Moschitti, 2004).
+    Precision (P), Recall (R) and F-measure (F) are adopted t

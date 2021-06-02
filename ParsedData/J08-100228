@@ -1,0 +1,7 @@
+eaders can fill in the values of suppressed attributes.
+    In our actual implementation of the HPSG grammar, lexical/phrasal signs contain additional attributes that are not defined in the standard HPSG theory but are used by a disambiguation model.
+    Examples include the surface form of lexical heads, and the type of lexical entry assigned to lexical heads, which are respectively used for computing the features WORD and LE introduced in Section 4.5.
+    By incorporating additional attributes into signs, we can straightforwardly compute feature functions for each sign.
+    This allows for a simple mapping between a parsing chart and a feature forest as described subsequently.
+    However, this might increase the size of parse forests and therefore decrease parsing efficiency, because differences between additional attributes interfere with equivalence relations for ambiguity packing.
+    We represent an HPSG parse tree with a set of tuples (m, l, r), where m,l, and r are the signs of the mother, left daugh

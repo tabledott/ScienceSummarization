@@ -1,0 +1,9 @@
+g three such independent assumptions, namely for xl, x2, and x3, we exhaust all possible optimal paths.
+    Only a path which optimally leads to one of x's tags can be part of the optimal path.
+    Thus, when examining the partial span network ending at word y, we need only consider three possibly optimal paths, namely those leading to x1, x2, and x3, and how those three combine with the tags of y.
+    At most one of those three paths can lie along the optimal path to each tag of y; so we have 32, or 9, comparisons.
+    But only three paths will survive, namely, the optimal path to each of the three tags under y.
+    Each of those three is then considered as a potential path to z, and one is chosen.
+    This reduces the algorithm from exponential complexity to linear.
+    The number of paths retained at any stage is the same as the degree of ambiguity at that stage; and this value is bounded by a very small value established by independent facts about the English lexicon.
+    No faster order of speed is possi

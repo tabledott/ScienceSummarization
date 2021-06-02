@@ -1,0 +1,16 @@
+ segmentations.Many errors can be corrected by new word detection.
+			For example, person name ?????
+			hap pens four times.
+			In the first pass of segmentation, two of them are segmented correctly and the other two are mistakenly segmented as ??
+			(they are segmented differently because Viterbi algorithm decodes based on context.).
+			However, ?????
+			is identified as a new word and added to the word list lexicon.
+			In the second pass of segmentation, the other two mistakes are corrected.
+	
+	
+			To make a comprehensive evaluation, we use allfour of the datasets from a recent Chinese word segmentation bake-off competition (Sproat and Emer son, 2003).
+			These datasets represent four different segmentation standards.
+			A summary of the datasets is shown in Table 1.
+			The standard bake-off scoring program is used to calculate precision, recall, F1, and OOV word recall.
+			5.1 Experimental design.
+			Since CTB and PK are provided in the GB encod ing while AS and HK use the Big5 encoding, we convert AS and 

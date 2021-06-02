@@ -1,0 +1,9 @@
+ a mapping between extracted and annotated CEs.
+    We will use the term twin(ce) to refer to the unique annotated/extracted CE to which the extracted/annotated CE is matched.
+    We say that a CE is twinless (has no twin) if no corresponding CE is identified.
+    A twinless extracted CE signals that the resolver extracted a spurious CE, while an annotated CE is twinless when the resolver fails to extract it.
+    Unfortunately, it is unclear how the B3 score should be computed for twinless CEs.
+    Bengtson and Roth (2008) simply discard twinless CEs, but this solution is likely too lenient &#8212; it doles no punishment for mistakes on twinless annotated or extracted CEs and it would be tricked, for example, by a system that extracts only the CEs about which it is most confident.
+    We propose two different ways to deal with twinless CEs for B3.
+    One option, B3all, retains all twinless extracted CEs.
+    It computes the preci4We also experimented with the CEAF score (Luo, 2005), but excluded it due to di

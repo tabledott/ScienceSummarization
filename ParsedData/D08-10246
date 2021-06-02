@@ -1,0 +1,6 @@
+ut we found it most effective to perform BLEU computations in the context of a set O of previously-translated sentences, following Watanabe et al. (2007).
+    However, we don&#8217;t try to accumulate translations for the entire dataset, but simply maintain an exponentially-weighted moving average of previous translations.
+    More precisely: For an input sentence f, let e be some hypothesis translation and let {rk} be the set of reference translations for f. Let c(e; {rk}), or simply c(e) for short, be the vector of the following counts: |e|, the effective reference length mink |rk|, and, for 1 &#8804; n &#8804; 4, the number of n-grams in e, and the number of n-gram matches between e and {rk}.
+    These counts are sufficient to calculate a BLEU score, which we write as BLEU(c(e)).
+    The pseudo-document O is an exponentially-weighted moving average of these vectors.
+    That is, for each training sentence, let e&#710; be the 1-best translation; after processing the sentence, we update O, and its input leng

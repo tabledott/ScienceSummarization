@@ -1,0 +1,8 @@
+   Conjunctions of all pairs of these features are also used.
+    This classifier predicts anaphoricity with about 82% accuracy.
+    We allow our system to learn which pairs of nouns tend to be used to mention the same entity.
+    For example, President and he often refer to Bush but she and Prime Minister rarely do, if ever.
+    To enable the system to learn such patterns, we treat the presence or absence of each pair of final head nouns, one from each mention of an example, as a feature.
+    We predict the entity type (person, organization, geo-political entity, location, facility, weapon, or vehicle) as follows: If a proper name, we check a list of personal first names, and a short list of honorary titles (e.g. mr) to determine if the mention is a person.
+    Otherwise we look in lists of personal last names drawn from US census data, and in lists of cities, states, countries, organizations, corporations, sports teams, universities, political parties, and organization endings (e.g. inc or corp).
+    If fou

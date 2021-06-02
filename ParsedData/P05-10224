@@ -1,0 +1,8 @@
+  
+    The major difficulty in n-best parsing, compared to 1-best parsing, is dynamic programming.
+    For example, n-best parsing is straight-forward in best-first search or beam search approaches that do not use dynamic programming: to generate more than one parse, one simply allows the search mechanism to create successive versions to one&#8217;s heart&#8217;s content.
+    A good example of this is the Roark parser (Roark, 2001) which works left-to right through the sentence, and abjures dynamic programming in favor of a beam search, keeping some large number of possibilities to extend by adding the next word, and then re-pruning.
+    At the end one has a beam-width&#8217;s number of best parses (Roark, 2001).
+    The Collins parser (Collins, 1997) does use dynamic programming in its search.
+    That is, whenever a constituent with the same history is generated a second time, it is discarded if its probability is lower than the original version.
+    If the opposite is true, then the original is discarded.

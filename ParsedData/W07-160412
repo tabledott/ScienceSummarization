@@ -1,0 +1,8 @@
+ (edited, grammatical text) and the testing corpus (ESL essays with errors of various kinds).
+    When the model was used to classify prepositions in the ESL essays, it became obvious, almost immediately, that a number of new performance issues would have to be addressed.
+    The student essays contained many misspelled words.
+    Because misspellings were not in the training, the model was unable to use the features associated with them (e.g., FHword#frinzy) in its decision making.
+    The tagger was also affected by spelling errors, so to avoid these problems, the classifier was allowed to skip any context that contained misspelled words in positions adjacent to the preposition or in its adjacent phrasal heads.
+    A second problem resulted from punctuation errors in the student writing.
+    This usually took the form of missing commas, as in I disagree because from my point of view there is no evidence.
+    In the training corpus, commas generally separated parenthetical expressions, such as from my point 

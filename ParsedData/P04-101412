@@ -1,0 +1,5 @@
+tandard dependency structure.
+    We will refer to such derivations as correct derivations.
+    Figure 1 gives an algorithm for finding nodes in a packed chart which appear in correct derivations. cdeps(c) is the number of correct dependencies on conjunctive node c, and takes the value &#8722;1 if there are any incorrect dependencies on c. dmax(c) is the maximum number of correct dependencies produced by any sub-derivation headed by c, and takes the value &#8722;1 if there are no sub-derivations producing only correct dependencies. dmax(d) is the same value but for disjunctive node d. Recursive definitions for calculating these values are given in Figure 1; the base case occurs when conjunctive nodes have no disjunctive daughters.
+    The algorithm identifies all those root nodes heading derivations which produce just the correct dependencies, and traverses the chart top-down marking the nodes in those derivations.
+    The insight behind the algorithm is that, for two conjunctive nodes in the same equivalence

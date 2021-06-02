@@ -1,0 +1,7 @@
+ayes) was comparable with ME, with SMO trailing it in a few cases (to save space, we report just ME performance).
+    It&#8217;s possible that feature engineering could improve performance, but since this is &#8220;perfect&#8221; data, the result is not encouraging.
+    To expand our training set, we use a temporal closure component SputLink (Verhagen 2004), that takes known temporal relations in a text and derives new implied relations from them, in effect making explicit what was implicit.
+    SputLink was inspired by (Setzer and Gaizauskas 2000) and is based on Allen&#8217;s interval algebra, taking into account the limitations on that algebra that were pointed out by (Vilain et al. 1990).
+    It is basically a constraint propagation algorithm that uses a transitivity table to model the compositional behavior of all pairs of relations in a document.
+    SputLink&#8217;s transitivity table is represented by 745 axioms.
+    An example axiom: If relation(A, B) = BEFORE &amp;&amp; relation(B, C) = INCLUDES the

@@ -1,0 +1,9 @@
+ortantly, we can assume that the word boundaries are similar in French and English.
+    However, the situation is messier with English and Chinese.
+    First, segmentation of the Chinese text into words already introduces some ambiguity of the seed word identities.
+    Secondly, English-Chinese translations are complicated by the fact that the two languages share very little stemming properties, or part-of-speech set, or word order.
+    This property causes every English word to have many Chinese translations and vice versa.
+    In a source-target language translation scenario, the translated text can be &amp;quot;rearranged&amp;quot; and cleaned up by a monolingual language model in the target language.
+    However, the lexicon is not very reliable in establishing &amp;quot;bridges&amp;quot; between nonparallel English-Chinese texts.
+    To compensate for this ambiguity in the seed lexicon, we introduce a confidence weighting to each bilingual word pair used as seed words.
+    If a word ie is the k&#8212;th 

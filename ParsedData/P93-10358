@@ -1,0 +1,10 @@
+ to be learned.
+    That transformation is applied to the right-linear structures, and then learning proceeds on the corpus of improved sentence bracketings.
+    The following procedure is carried out repeatedly on the training corpus until no more transformations can be found whose application reduces the error in parsing the training corpus: 4.
+    Go to 1.
+    ( ( ( The cat) meowed ) . )
+    After a set of transformations has been learned, it can be used to effectively parse fresh text.
+    To parse fresh text, the text is first naively parsed and then every transformation is applied, in order, to the naively parsed text.
+    One nice feature of this method is that different measures of bracketing success can be used: learning can proceed in such a way as to try to optimize any specified measure of success.
+    The measure we have chosen for our experiments is the same measure described in (PS92), which is one of the measures that arose out of a parser evaluation workshop (ea91).
+    The measure is the per

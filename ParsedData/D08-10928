@@ -1,0 +1,8 @@
+nt features: When considering a node pair (n, n'), especially one which dominates a large area, the above measures treat all spanned words as equally important.
+    However, lexical heads are generally more representative than other spanned words.
+    Let h select the headword of a node according to standard head percolation rules (Collins, 2003; Bikel and Chiang, 2000).
+    We also consider features that measure correspondences between the tree structures themselves.
+    Span difference: We expect that, in general, aligned nodes should dominate spans of roughly the same length, and so we allow the model to learn to penalize node pairs whose inside span lengths differ greatly.
+    Number of children: We also expect that there will be correspondences between the rules of the CFGs that generate the trees in each language.
+    To encode some of this information, we compute indicators of the number of children c that the nodes have in t and t'.
+    NUMCHILDREN(|c(n)|, |c(n')|) = 1 For each feature above (except m

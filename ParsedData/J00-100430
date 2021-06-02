@@ -1,0 +1,6 @@
+ter metric as more appropriate for evaluation of translation systems because the simple metric would count a transposition as two errors: an insertion plus a deletion.
+    (This issue does not arise for speech recognizers because these systems do not normally make transposition errors.)
+    For the lowest edit-distance transformation between the reference translation and system output, if we write I for the number of insertions, D for deletions, S for substitutions, and R for number of words in the reference translation string, we can express simple accuracy as simple accuracy = 1 &#8212; (/ + D + S)/R.
+    Similarly, if T is the number of transpositions in the lowest weight transformation including transpositions, we can express translation accuracy as translation accuracy = 1 &#8212; (/' + D' + S + T)/R.
+    Since a transposition corresponds to an insertion and a deletion, the values of I' and D' for translation accuracy will, in general, be different from I and D in the computation of simple accuracy.
+    

@@ -1,0 +1,13 @@
+sp sp_res sp_res dp ro ro_res ro_res sub ro_res subsub dp ro ro_res sub_res sub_res sub_res Figure 6: Training Tree (Left) and Decoding Tree (Right) We illustrate the construction of the training tree with our running example.
+			There are two kinds of nodes in the training tree: data nodes in rectangles and operation nodes in circles.
+			Data nodes contain data and operation nodes execute operations.
+			The training is a supervised learning 1357 process with the parse tree of c as input and the two strings s1 and s2 as the desired output.
+			root stores the parse tree of c and also s1 and s2.
+			sp, ro, mp and sub are splitting, reordering, mapping and substitution operations.
+			sp res and mp res store the results of sp and mp.
+			In our example, sp splits the parse tree into two parse trees pt1 and pt2 (Fig.
+			3).
+			sp res1 contains pt1 and s1.
+			sp res2 contains pt2 and s2.
+			Then dp, ro and mp are iteratively applied to each non-terminal node at each level of pt1 and pt2 from top to down.
+			This pro

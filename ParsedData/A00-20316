@@ -1,0 +1,6 @@
+before the other in a chain will effectively block the second from having any effect, since its information is (uselessly) conditioned on the first one, whose sparseness will completely dilute any gain.
+    What we'd really like is to be able to have a feature tree, whereby we can condition those two sparse features independently on one common predecessor feature.
+    As we said before, equation 3 represents, for each feature the probability of f based on fi and all its predecessors, divided by the probability of f based only on the predecessors.
+    In the chain case, this means that the denominator is conditioned on every feature from 1 to i &#8212; 1, but if we use a feature tree, it is conditioned only on those features along the path to the root of the tree.
+    A notable issue with feature trees as opposed to feature chains is that the terms do not all cancel out.
+    Every leaf on the tree will be represented in the numerator, and every fork in the tree (from which multiple nodes depend) will be repres

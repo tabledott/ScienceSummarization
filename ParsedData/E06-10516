@@ -1,0 +1,9 @@
+ene interactions (LLL challenge).
+    For this data set entity recognition is performed using a dictionary of protein and gene names in which the type of the entities is unknown.
+    We generate examples for all the sentences containing at least two entities.
+    Thus the number of examples generated for each sentence is given by the combinations of distinct entities (N) selected two at a time, i.e.
+    NC2.
+    For example, as the sentence shown in Figure 1 contains three entities, the total number of examples generated is 3C2 = 3.
+    In each example we assign the attribute CANDIDATE to each of the candidate interacting entities, while the other entities in the example are assigned the attribute OTHER, meaning that they do not participate in the relation.
+    If a relation holds between the two candidate interacting entities the example is labeled 1 or 2 (according to the roles of the interacting entities, agent and target, i.e. to the direction of the relation); 0 otherwise.
+    Figure 2 shows the examples

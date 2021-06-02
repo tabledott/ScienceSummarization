@@ -1,0 +1,10 @@
+ classification-based coreference resolver, modeled after the systems of Ng and Cardie (2002b) and Bengtson and Roth (2008).
+    First it classifies pairs of CEs as coreferent or not coreferent, pairing each identified CE with all preceding CEs.
+    The CEs are then clustered into coreference chains2 based on the pairwise decisions.
+    RECONCILE has a pipeline architecture with four main steps: preprocessing, feature extraction, classification, and clustering.
+    We will refer to the specific configuration of RECONCILE used for this paper as RECONCILEACL09.
+    Preprocessing.
+    The RECONCILEACL09 preprocessor applies a series of language analysis tools (mostly publicly available software packages) to the source texts.
+    The OpenNLP toolkit (Baldridge, J., 2005) performs tokenization, sentence splitting, and part-of-speech tagging.
+    The Berkeley parser (Petrov and Klein, 2007) generates phrase structure parse trees, and the de Marneffe et al. (2006) system produces dependency relations.
+    We employ 

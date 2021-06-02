@@ -1,0 +1,8 @@
+o ends of a fixed-length probe, and compares this number with the number of boundaries found in the same window of text for the reference segmentation.
+    This modification addresses all of the problems listed above.
+    WD is only slightly affected by variation of segment size distribution, gives equal weight to the false positive penalty and the false negative penalty, is able to catch mistakes in small segments just as well as mistakes in large segments, and penalizes near-miss errors less than pure false positives of equal magnitude.
+    However, it has some problems of its own.
+    WD penalizes all pure false positives the same amount regardless of how close they are to an actual boundary.
+    It is not clear whether this is a good thing or not, but it seems to be preferable to overpenalizing near misses.
+    The discussion above addresses Problems 1 through 4 but does not address Problem 5: how does one interpret the values produced by the metric?
+    From the tests we have run, it appears that the WD 

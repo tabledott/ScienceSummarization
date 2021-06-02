@@ -1,0 +1,7 @@
+while Czech and German demonstrate overfitting with higher correlation on tune data but lower on test data.
+    This overfitting effect is likely due to the limited number of systems providing translations into these languages and the difficulty of these target languages leading to significantly noisier translations skewing the space of metric scores.
+    We believe that tuning to combined 2009 and 2010 data will counter these issues for the official Ranking version.
+    To evaluate the impact of new features on other evaluation tasks, we follow Denkowski and Lavie (2010a), tuning versions of Meteor to maximize length-weighted sentence-level Pearson&#8217;s r correlation coefficient with adequacy and H-TER (Snover et al., 2006) scores of translations.
+    Data sets include 2008 and 2009 NIST Open Machine Translation Evaluation adequacy data (Przybocki, 2009) and GALE P2 and P3 H-TER data (Olive, 2005).
+    For each type of judgment, metric versions are tuned and tested on each year and scores are compared.
+  

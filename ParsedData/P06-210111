@@ -1,0 +1,5 @@
+d to the task, many systems (especially for language modeling) choose simply to maximize the probability of the gold standard.
+    The log of this likelihood is a convex function of the parameters &#952;: where y&#8727;i is the true analysis of sentence xi.
+    The only wrinkle is that p&#952;(y&#8727;i  |xi) may be left undefined by equation (1) if y&#8727;i is not in our set of Ki hypotheses.
+    When maximizing likelihood, therefore, we will replace y&#8727;i with the min-loss analysis in the hypothesis set; if multiple analyses tie 1Known algorithms are exponential but only in the dimensionality of the feature space (Johnson and Preparata, 1978). for this honor, we follow Charniak and Johnson (2005) in summing their probabilities.2 Maximizing (4) is equivalent to minimizing an upper bound on the expected 0/1 loss Ei(1 &#8722; p&#952;(yi  |xi)).
+    Though the log makes it tractable, this remains a 0/1 objective that does not give partial credit to wrong answers, such as imperfect but useful translations.

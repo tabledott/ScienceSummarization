@@ -1,0 +1,9 @@
+tic content of an utterance is based solely on the unedited words in the word sequence.
+    This assumption is not completely true.
+    For example, Core and Schubert [8] point to counterexamples such as &#8220;have the engine take the oranges to Elmira, um, I mean, take them to Corning&#8221; where the antecedent of &#8220;them&#8221; is found in the EDITED words.
+    However, we believe that the assumption is so close to true that the number of errors introduced by this assumption is small compared to the total number of errors made by the system.
+    In order to evaluate the parser&#8217;s output we compare it with the gold-standard parse trees.
+    For this purpose a very simple third pass is added to the architecture: the hypothesized edited words are inserted into the parser output (see Section 3 for details).
+    To the degree that our fundamental assumption holds, a &#8220;real&#8221; application would ignore this last step.
+    This architecture has several things to recommend it.
+    First, it allow

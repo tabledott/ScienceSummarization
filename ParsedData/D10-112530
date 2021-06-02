@@ -1,0 +1,7 @@
+;(i, j) weights from one model to the other.
+    While the optimization problem remains the same, the algorithms in Figure 1 and 2 will converge at different rates depending on the value for Q.
+    In our experiments we set Q = 0.001, which puts almost all the weight in the head-automata models, but allows weights on spanning tree edges to break ties in MST inference in a sensible way.
+    We suspect this is important in early iterations of the algorithm, when many values for u(i, j) or v(i, j) will be zero, and where with Q = 0 many spanning tree solutions y(k) would be essentially random, leading to very noisy updates to the u(i, j) and v(i, j) values.
+    We have not tested other values for Q.
+  
+

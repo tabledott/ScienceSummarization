@@ -1,0 +1,8 @@
+currence statistics of each word and its context (Turney and Pantel, 2010).
+    Another line of research to learn distributional word vectors is based on neural language models (Bengio et al., 2003) which jointly learn an embedding of words into an n-dimensional feature space and use these embeddings to predict how suitable a word is in its context.
+    These vector representations capture interesting linear relationships (up to some accuracy), such as king&#8722;man+woman &#8776; queen (Mikolov et al., 2013).
+    Collobert and Weston (2008) introduced a new model to compute such an embedding.
+    The idea is to construct a neural network that outputs high scores for windows that occur in a large unlabeled corpus and low scores for windows where one word is replaced by a random word.
+    When such a network is optimized via gradient ascent the derivatives backpropagate into the word embedding matrix X.
+    In order to predict correct scores the vectors in the matrix capture co-occurrence statistics.
+    For f

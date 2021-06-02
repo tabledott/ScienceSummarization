@@ -1,0 +1,9 @@
+re weights will be learned using large-margin techniques that are well known to be robust to large and sparse feature representations.
+    Let Y = Y(d) x Y(s)n be the set of all valid sentence-document labelings for an input s. The weights, w, are set using the MIRA learning algorithm, which is an inference based online largemargin learning technique (Crammer and Singer, 2003; McDonald et al., 2005).
+    An advantage of this algorithm is that it relies only on inference to learn the weight vector (see Section 2.1.1).
+    MIRA has been shown to provide state-of-the-art accuracy for many language processing tasks including parsing, chunking and entity extraction (McDonald, 2006).
+    The basic algorithm is outlined in Figure 3.
+    The algorithm works by considering a single training instance during each iteration.
+    The weight vector w is updated in line 4 through a quadratic programming problem.
+    This update modifies the weight vector so a margin proportional to the loss.
+    The constraint set C can be 

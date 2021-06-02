@@ -1,0 +1,10 @@
+s, which we use for our parsing experiments.
+			To summarize, the parameters of each grammar symbol z consists of (1) a distribution over a finitenumber of rule types ?Tz , (2) an emission distribution ?Ez over terminal symbols, and (3) a binary production distribution ?Bz over pairs of children gram mar symbols.
+			Figure 2 describes the model in detail.Figure 3 shows the generation of the binary pro duction distributions ?Bz . We draw ? B z from a DP centered on ??T , which is the product distribution over pairs of symbols.
+			The result is a doubly-infinitematrix where most of the probability mass is con state right child state left child state right child state left child state ? ?
+			GEM(?)
+			??T ?Bz ? DP(??
+			T )Figure 3: The generation of binary production prob abilities given the top-level symbol probabilities ?.
+			First, ? is drawn from the stick-breaking prior, as in any DP-based model (a).
+			Next, the outer-product ??T is formed, resulting in a doubly-infinite matrix matrix (b).
+			We use this 

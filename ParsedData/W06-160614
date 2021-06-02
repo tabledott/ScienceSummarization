@@ -1,0 +1,7 @@
+eature functions).
+    Given the way all our lexicalized xRS rules have been created, one can safely strip out the syntactic information and end up with phrase-to-phrase translation rules.
+    For example, in string-to-string world, rule r5 in Figure 1 can be rewritten as &#8220;fiance --+ FRANCE&#8221;; and rule r6 can be rewritten as &#8220;fiance and --+ FRANCE AND&#8221;.
+    When one analyzes the lexicalized xRS rules in this manner, it is easy to associate with them any of the submodel probability distributions that have been proven useful in statistical phrase-based MT.
+    The non-lexicalized rules are assigned probability distributions under these submodels as well by simply assuming a NULL phrase for any missing lexicalized source or target phrase.
+    In the experiments described in this paper, we use the following submodels (feature functions): Syntax-based-like submodels: All these models are combined log-linearly during decoding.
+    The weights of the models are computed automatically using a v

@@ -1,0 +1,6 @@
+rch is applied: at each iteration of learning, the transformation is found whose application results in the highest score; that transformation is then added to the ordered transformation list and the training corpus is updated by applying the learned transformation.
+    To define a specific application of transformation-based learning, one must specify the following: Once an ordered list of transformations is learned, new text can be annotated by first applying the initial state annotator to it and then applying each of the learned transformations, in order.
+    In transformation-based part of speech tagging,3 all words are initially tagged with their most likely tag, as indicated in the training corpus.
+    Below are some of the transformation templates used by the learner.4 Change tag a to tag b when: percentage of all possible transformations when searching for the best one.
+    An example of a learned transformation is: Change the tag of a word from VERB to NOUN if the previous word is a DETERMINER.
+    I

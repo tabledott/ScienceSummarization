@@ -1,0 +1,10 @@
+ tokensequences from token-sequence i &#8212; k to i are to the token-sequences from i + 1 to i + k + 1.
+    Note that this moving window approach means that each token-sequence appears in k * 2 similarity computations.
+    The lexical score for the similarity between blocks is calculated by a normalized inner product: given two text blocks b1 and b2, each with k token-sequences, where b1 =- {token-sequence,_k, , token-sequence} and b2 = {token-sequencei+i, .
+    .
+    .
+    , token-sequencei+k+11, W2t,bi Et W2t,b2 where t ranges over all the terms that have been registered during the tokenization step (thus excluding stop words), and Wt,b is the weight assigned to term t in block b.
+    As mentioned in Section 4, in this version of the algorithm, the weights on the terms are simply their frequency within the block.
+    This formula yields a score between 0 and 1, inclusive.
+    These scores can be plotted, token-sequence number against similarity score.
+    However, since similarity is measured between block

@@ -1,0 +1,18 @@
+o extend the algorithm: first,the formation of the derivation ?e, 1?
+			out of |e| best sub derivations (this is a generalization of the binary operator ? in a semiring); second, min?, which chooses the betterof two derivations (same as the ? operator in an idem potent semiring (Mohri, 2002)).
+			We now generalize these two operations to operate on k-best lists.
+			Let r = |e|.
+			The new multiplication operation, mult?k(e), is performed in three steps: 1.
+			enumerate the kr derivations {?e, j1 ? ?
+			jr? | ?i, 1 ? ji ? k}.
+			Time: O(kr).
+			2.
+			sort these kr derivations (according to weight).
+			Time: O(kr log(kr)) = O(rkr log k).
+			3.
+			select the first k elements from the sorted list of kr elements.
+			Time: O(k).
+			So the overall time complexity of mult?k is O(rkr log k).
+			We also have to extend min?
+			to merge?k, which takes two vectors of length k (or fewer) as input and outputs the top k (in sorted order) of the 2k elements.
+			This is similar to merge-sort (Cormen et al, 2001) and can be don

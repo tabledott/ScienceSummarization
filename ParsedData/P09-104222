@@ -1,0 +1,8 @@
+he Bulgarian data is 47.6% with initialization from Klein and Manning (2004) and this result is not stable.
+    Changing the initialization parameters, training sample, or maximum sentence length used for training drastically affected the results, even for samples with several thousand sentences.
+    When we use the transferred information to constrain the learning, EM stabilizes and achieves much better performance.
+    Even setting all parameters equal at the outset does not prevent the model from learning the dependency structure of the aligned language.
+    The top panels in Figure 5 show the results in this setting.
+    We see that performance is still always below the accuracy achieved by supervised training on 20 annotated sentences.
+    However, the improvement in stability makes the algorithm much more usable.
+    As we shall see below, the discriminative parser performs even better than the generative model. u We trained our discriminative parser for 100 iterations of online EM with a Gaussian prior

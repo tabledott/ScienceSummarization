@@ -1,0 +1,9 @@
+  In our bilingual parser, the English and Korean parses are mediated through word-to-word translational correspondence links.
+    Unlike the syntax models, the translation models were trained without the benefit of labeled data.
+    We used the GIZA++ implementation of the IBM statistical translation models (Brown et al., 1993; Och and Ney, 2003).
+    To obtain reliable word translation estimates, we trained on a bilingual corpus in addition to the KTB training set.
+    The Foreign Broadcast Information Service dataset contains about 99,000 sentences of Korean and 72,000 of English translation.
+    For our training, we extracted a relatively small parallel corpus of about 19,000 high-confidence sentence pairs.
+    As noted above, Korean&#8217;s productive agglutinative morphology leads to sparse estimates of word frequencies.
+    We therefore trained our translation models after replacing each Korean word with its first morpheme stripped of its closed-class dependent morphemes, as described in &#167;3.2.
+   

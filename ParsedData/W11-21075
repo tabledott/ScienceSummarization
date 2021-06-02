@@ -1,0 +1,11 @@
+anguage.
+    In addition to common words, punctuation symbols consistently rise to the tops of function word lists.
+  
+  
+    Meteor evaluates translation hypotheses by aligning them to reference translations and calculating sentence-level similarity scores.
+    This section describes our extended version of the metric.
+    For a hypothesis-reference pair, the search space of possible alignments is constructed by identifying all possible matches between the two sentences according to the following matchers: Exact: Match words if their surface forms are identical.
+    Stem: Stem words using a language-appropriate Snowball Stemmer (Porter, 2001) and match if the stems are identical.
+    Synonym: Match words if they share membership in any synonym set according to the WordNet (Miller and Fellbaum, 2007) database.
+    Paraphrase: Match phrases if they are listed as paraphrases in the paraphrase tables described in Section 2.2.
+    All matches are generalized to phrase matches with a start position and phrase leng

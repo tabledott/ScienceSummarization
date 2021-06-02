@@ -1,0 +1,6 @@
+s.
+    Each path corresponds to a unique assignment of tags to all words within a span. paths constitute a network, the path of maximal probability may be taken to contain the &amp;quot;best&amp;quot; tags.
+    (1983) states that CLAWS the most probable sequence of tags, and in the majority of cases the correct tag for each individual word corresponds to the associated tag in the most probable sequence of tags&amp;quot; (p. 142).
+    But a more detailed examination of the Pascal code for CLAWS revealed that CLAWS has a more complex definition of &amp;quot;most probable sequence&amp;quot; than one might expect.
+    A probability called &amp;quot;SUMSUCCPROBS&amp;quot; is predicated of each word.
+    SUMSUCCPROBS is calculated by looping through all tags for the words immediately preceding, at, and following a word; for each tag triple, an increment is added, defined by: DownGrade(GetSucc(Tag2, Tag3), TagMark) * Get3SeqFactor(Tag1, Tag2, Tag3) the collocational probability of a tag either 1, or a special value 

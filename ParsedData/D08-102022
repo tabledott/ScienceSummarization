@@ -1,0 +1,6 @@
+nt sentences in a paragraph, an article with no discourse connectives and only single sentence paragraphs would not contain any annotated discourse relations.
+    Under the unigram model, these articles&#8217; probabilities cannot be computed.
+    Under the multinomial model, the probability of an article with zero relations is estimated as Pr(N = 0), which can be calculated from the corpus.
+    As in the case of vocabulary features, the presence of more relations will lead to overall lower probabilities so we also consider the number of discourse relations (F14) and the log likelihood combined with the number of relations as features.
+    In order to isolate the effect of the type of discourse relation (explicitly expressed by a discourse connective such as &#8220;because&#8221; or &#8220;however&#8221; versus implicitly expressed by adjacency), we also compute multinomial model features for the explicit discourse relations (F15) and over just the implicit discourse relations (F16).
+    The likelihood of dis

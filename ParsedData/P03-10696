@@ -1,0 +1,7 @@
+f how sentences are usually ordered for choosing the most likely ordering.
+    We express the probability of a text made up of sentences S1...Sn as shown in (1).
+    According to (1), the task of predicting the next sentence is dependent on its n &#8722; i previous sentences.
+    We will simplify (1) by assuming that the probability of any given sentence is determined only by its previous sentence: This is a somewhat simplistic attempt at capturing Marcu&#8217;s (1997) local coherence constraints as well as Barzilay et al.&#8217;s (2002) observations about topical relatedness.
+    While this is clearly a naive view of text coherence, our model has some notion of the types of sentences that typically go together, even though it is agnostic about the specific rhetorical relations that glue sentences into a coherent text.
+    Also note that the simplification in (2) will make the estimation of the probabilities P(Si|Si&#8722;1) more reliable in the face of sparse data.
+    Of course estimating P(Si|Si&#8722;1) w

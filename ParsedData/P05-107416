@@ -1,0 +1,8 @@
+ity of automatic alignments would lead to more accurate paraphrases, and that there is room for improvement in limiting the paraphrases by their context.
+    We address these points below.
+    Work in statistical machine translation suggests that, like many other machine learning problems, performance increases as the amount of training data increases.
+    Och and Ney (2003) show that the accuracy of alignments produced by Giza++ improve as the size of the training corpus increases.
+    Since we used the whole of the German-English section of the Europarl corpus, we could not try improving the alignments by simply adding more German-English training data.
+    However, there is nothing that limits our paraphrase extraction method to drawing on candidate paraphrases from a single target language.
+    We therefore re-formulated the paraphrase probability to include multiple corpora, as follows: where C is a parallel corpus from a set of parallel corpora.
+    For this condition we used Giza++ to align the French-

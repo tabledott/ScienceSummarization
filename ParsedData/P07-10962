@@ -1,0 +1,8 @@
+this paper, we will improve upon Collins&#8217; algorithm by introducing a bidirectional searching strategy, so as to effectively utilize more context information at little extra cost.
+    When a bidirectional strategy is used, the main problem is how to select the order of inference.
+    Tsuruoka and Tsujii (2005) proposed the easiest-first approach which greatly reduced the computation complexity of inference while maintaining the accuracy on labeling.
+    However, the easiest-first approach only serves as a heuristic rule.
+    The order of inference is not incorporated into the training of the MaxEnt classifier for individual labeling.
+    Here, we will propose a novel learning framework, namely guided learning, to integrate classification of individual tokens and inference order selection into a single learning task.
+    We proposed a Perceptron like learning algorithm (Collins and Roark, 2004; Daum&#180;e III and Marcu, 2005) for guided learning.
+    We apply this algorithm to POS tagging, a classic sequ

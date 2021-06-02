@@ -1,0 +1,9 @@
+training contexts of .
+    Unlike the case for surrounding words, we do not remove stop words, numbers, or punctuation symbols.
+    Each collocation string is a possible feature value.
+    Feature value selection using , analogous to that used to select surrounding words, can be optionally applied.
+    If a training (or test) context of has collocation , and is a selected feature value, then the feature of has value .
+    Otherwise, it has the value , denoting the null string.
+    Note that each collocation is represented by one feature that can have many possible feature values (the local collocation strings), whereas each distinct surrounding word is represented by one feature that takes binary values (indicating presence or absence of that word).
+    For example, if is the word bars and suppose the set of selected collocations for is a chocolate, the wine, the iron , then the feature value for collocation in the sentence &#8220;Reid saw me looking at the iron bars .&#8221; is the iron.
+    We first parse t

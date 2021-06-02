@@ -1,0 +1,11 @@
+n of fast cosine similarity calculation can be divided into two parts: 1.
+    Developing LSH functions to create signatures; 2.
+    Using fast search algorithm to find nearest neighbors.
+    We describe these two components in greater detail in the next subsections.
+    We first begin with the formal definition of cosine similarity.
+    Definition: Let u and v be two vectors in a k dimensional hyperplane.
+    Cosine similarity is defined as the cosine of the angle between them: cos(0(u, v)).
+    We can calculate cos(0(u, v)) by the following formula: Here 0(u, v) is the angle between the vectors u and v measured in radians.
+    |u.v |is the scalar (dot) product of u and v, and |u |and |v |represent the length of vectors u and v respectively.
+    The LSH function for cosine similarity as proposed by Charikar (2002) is given by the following theorem: Theorem: Suppose we are given a collection of vectors in a k dimensional vector space (as written as Rk).
+    Choose a family of hash functions as follows: Generat

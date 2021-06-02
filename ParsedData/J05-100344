@@ -1,0 +1,5 @@
+n the first step the optimal update for each feature hk is calculated.
+    We define BestWt(k, &#175;a) as the optimal update for the kth feature (it must be calculated for all features k = 1, ... , m): The next step is to calculate the Loss for each feature with its optimal update, which we will call BestLoss(k, &#175;a) = min Loss(Upd(&#175;a, k, d)) = Loss(Upd(&#175;a, k, BestWt(k, &#175;a))) d BestWt and BestLoss for each feature having been computed, the optimal feature/ weight pair can be found: k* =arg min kBestLoss(k, &#175;a), d* = BestWt(k*, &#175;a) The next sections describe how BestWt and BestLoss can be computed for the two loss functions.
+    At the first iteration, a0 is set to optimize ExpLoss (recall that L(xi,j) is the loglikelihood for parse xi,j under the base parsing model): contribution of the log-likelihood feature is well-calibrated with respect to the exponential loss function.
+    In our implementation a0 was optimized using simple bruteforce search.
+    All values of a0 between 0.0

@@ -1,0 +1,11 @@
+re used instead of the ambiguous tag for the focus word.
+    As far as disambiguated tags for left context words are used, these are of course not obtained by retrieval from the lexicon (which provides ambiguous categories), but by using the previous decisions of the tagger.
+  
+  
+    As explained earlier, both case bases are implemented as IGTrees.
+    For the known words case base, paths in the tree represent variable size context widths.
+    The first feature (the expansion of the root node of the tree) is the focus word, then context features are added as further expansions of the tree until the context disambiguates the focus word completely.
+    Further expansion is halted at that point.
+    In some cases, short context sizes (corresponding to bigrams, e.g.) are sufficient to disambiguate a focus word, in other cases, more context is needed.
+    IGTrees provide an elegant way of automatic determination of optimal context size.
+    In the unknown words case base, the trie representation provides an autom

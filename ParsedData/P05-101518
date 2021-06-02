@@ -1,0 +1,9 @@
+tion compares the accuracies of the approaches outlined in Section 3 on the four corpora comprising our scale dataset.
+    (Results usingerror were qualitatively similar.)
+    Throughout, when we refer to something as &#8220;significant&#8221;, we mean statistically so with respect to the paired-test, .
+    The results that follow are based on &#8217;s default parameter settings for SVM regression and OVA.
+    Preliminary analysis of the effect of varying the regression parameterin the four-class case revealed that the default value was often optimal.
+    The notation &#8220;AB&#8221; denotes metric labeling where method A provides the initial label preference function and B serves as similarity measure.
+    To train, we first select the meta-parameters and by running 9-fold cross-validation within the training set.
+    Fixing and to those values yielding the best performance, we then re-train A (but with SVM parameters fixed, as described above) on the whole training set.
+    At test time, the nearest neighb

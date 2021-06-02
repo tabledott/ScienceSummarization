@@ -1,0 +1,12 @@
+he parliament transcripts also included a list of participants&#8217; names.
+    This may cause the LM to prefer noun phrases too much.
+    Also our corpus contains noise.
+    There are two types of noise.
+    One is sentence alignment error, and the other is English parse error.
+    The corpus was sentence aligned by automatic software, so it has some bad alignments.
+    When a sentence was misaligned, or the parse was wrong, the Viterbi alignment becomes an over-reordered tree as it picks up plausible translation word pairs first and reorders trees to fit them.
+    To see if it was really a corpus problem, we selected a good portion of the corpus and re-trained the r-table.
+    To find good pairs of sentences in the corpus, we used the following: 1) Both English and Chinese sentences end with a period.
+    2) The English word is capitalized at the beginning.
+    3) The sentences do not contain symbol characters, such as colon, dash etc, which tend to cause parse errors.
+    4) The Viterbi-ratio8 is more tha

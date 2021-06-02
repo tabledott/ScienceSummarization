@@ -1,0 +1,9 @@
+eam even with left-to-right search in training.
+    This can also explain why the performance of leftto-right search with non-aggressive learning is close to bidirectional search if the beam is large enough.
+    However, with beam width = 1, non-aggressive learning over left-to-right search performs much worse, because in this case it is more likely that the gold-standard tag is not in the beam.
+    This set of experiments show that guided learning is more preferable for tasks with higher ambiguities.
+    In our recent work (Shen and Joshi, 2007), we have applied a variant of this algorithm to dependency parsing, and showed significant improvement over left-to-right non-aggressive learning strategy.
+    Comparison: Table 4 shows the comparison with the previous works on the PTB test sections.
+    According to the experiments shown above, we build our best system by using feature set E with beam width B = 3.
+    The number of iterations on the training data is estimated with respect to the development data.
+  

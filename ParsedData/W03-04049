@@ -1,0 +1,10 @@
+gory.2 MetaBoot then re-scores the extraction patterns, using the original seed words as well as the newly labeled words, and the process repeats.
+    This procedure is called mutual bootstrapping.
+    A second level of bootstrapping (the &#8220;meta-&#8221; bootstrapping part) makes the algorithm more robust.
+    When the mutual bootstrapping process is finished, all nouns that were put into the semantic dictionary are reevaluated.
+    Each noun is assigned a score based on how many different patterns extracted it.
+    Only the five best nouns are allowed to remain in the dictionary.
+    The other entries are discarded, and the mutual bootstrapping process starts over again using the revised semantic dictionary.
+    Basilisk (Thelen and Riloff, 2002) is a more recent bootstrapping algorithm that also utilizes extraction patterns to create a semantic dictionary.
+    Similarly, Basilisk begins with an unannotated text corpus and a small set of seed words for a semantic category.
+    The bootstrapping process i

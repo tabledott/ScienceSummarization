@@ -1,0 +1,9 @@
+d et al., 2005).
+    The parsing model defines a conditional distribution pg(z I x) over each projective parse tree z for a particular sentence x, parameterized by a vector 0.
+    The probability of any particular parse is where z is a directed edge contained in the parse tree z and &#966; is a feature function.
+    In the fully supervised experiments we run for comparison, parameter estimation is performed by stochastic gradient ascent on the conditional likelihood function, similar to maximum entropy models or conditional random fields.
+    One needs to be able to compute expectations of the features &#966;(z, x) under the distribution p&#952;(z  |x).
+    A version of the insideoutside algorithm (Lee and Choi, 1997) performs this computation.
+    Viterbi decoding is done using Eisner&#8217;s algorithm (Eisner, 1996).
+    We also used a generative model based on dependency model with valence (Klein and Manning, 2004).
+    Under this model, the probability of a particular parse z and a sentence with part of s

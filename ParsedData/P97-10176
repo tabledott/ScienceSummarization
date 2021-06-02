@@ -1,0 +1,10 @@
+ition diagram with weights and symbols on the transitions, making some output sequences more likely than others.
+    A WFST is a WFSA with a pair of symbols on each transition, one input and one output.
+    Inputs and outputs may include the empty symbol c. Also following (Pereira and Riley, 1996), we have implemented a general composition algorithm for constructing an integrated model P(xlz) from models P(rly) and P(yjz), treating WFSAs as WFSTs with identical inputs and outputs.
+    We use this to combine an observed katakana string with each of the models in turn.
+    The result is a large WFSA containing all possible English translations.
+    We use Dijkstra's shortest-path algorithm (Dijkstra, 1959) to extract the most probable one.
+    The approach is modular.
+    We can test each engine independently and be confident that their results are combined correctly.
+    We do no pruning, so the final WFSA contains every solution, however unlikely.
+    The only approximation is the Viterbi one, which searches 

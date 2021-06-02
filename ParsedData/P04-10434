@@ -1,0 +1,8 @@
+Bank or Agent and Goal in FrameNet.
+    The standard approach to learn both detection and classification of predicate arguments is summarized by the following steps: For example, in Figure 1, for each combination of the predicate give with the nodes N, S, VP, V, NP, PP, D or IN the instances F&#8221;give&#8221;,a are generated.
+    In case the node a exactly covers Paul, a lecture or in Rome, it will be a positive instance otherwise it will be a negative one, e.g.
+    F&#8221;give&#8221;,&#8221;IN&#8221;.
+    To learn the argument classifiers the T + set can be re-organized as positive T+argi and negative T&#8722;argi examples for each argument i.
+    In this way, an individual ONE-vs-ALL classifier for each argument i can be trained.
+    We adopted this solution as it is simple and effective (Hacioglu et al., 2003).
+    In the classification phase, given a sentence of the test-set, all its Fp ,a are generated and classified by each individargument associated with the maximum value among the scores provided b

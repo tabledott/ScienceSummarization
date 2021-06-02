@@ -1,0 +1,9 @@
+on to MERT.
+    With MERT as a starting point, we have a choice: modify candidate generation, optimization, or both.
+    Although alternative candidate generation methods have been proposed (Macherey et al., 2008; Chiang et al., 2008b; Chatterjee and Cancedda, 2010), we will restrict ourselves to MERT-style candidate generation, in order to minimize divergence from the established MERT tuning architecture.
+    Instead, we focus on the optimization phase.
+    While intuitive, the MERT optimization module focuses attention on Hw&#8217;s best policy, and not on its overall prowess at ranking policies.
+    We will create an optimization module that directly addresses Hw&#8217;s ability to rank policies in the hope that this more holistic approach will generalize better to unseen data.
+    Assume that the gold scoring function G decomposes in the following way: where g(i, j) is a local scoring function that scores the single candidate translation e(i, j).
+    We show an example g in Figure 1.
+    For an arbitrary 

@@ -1,0 +1,7 @@
+r the model in the second row.
+    As there are no tag sequence features in these models, the accuracy drops significantly if a higher cutoff is used (from a per tag accuracy of about 93.7% to only 60.2%).
+    The third row shows a model where a tag is decided solely by the three words centered at the tag position (3W).
+    As far as we are aware, models of this sort have not been explored previously, but its accuracy is surprisingly high: despite having no sequence model at all, it is more accurate than a model which uses standard tag fourgram HMM features ((t0, w0), (t0, t&#8722;1), (t0, t&#8722;1, t&#8722;2), (t0, t&#8722;1, t&#8722;2, t&#8722;3), shown in Table 2, model L+LL+LLL).
+    The fourth and fifth rows show models with bidirectional tagging features.
+    The fourth model (3W+TAGS) uses the same tag sequence features as the last model in Table 2 ((t0, t&#8722;1), (t0, t&#8722;1, t&#8722;2), (t0, t&#8722;1, t+1), (t0, t+1), (t0, t+1, t+2)) and current, previous, and next word.
+    The last model has

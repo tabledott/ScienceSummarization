@@ -1,0 +1,13 @@
+dels above.
+    We use the inside-outside algorithm to sum over all lexicalized trees, similar to the situation in section 3.
+    The tree configurations are shown in figure 4.
+    For each configuration, the relevant scores from each model are multiplied together.
+    For example, consider figure 4(a).
+    From the CCM we must generate isk as a constituent and its corresponding context.
+    From the dependency model, we pay the cost of h taking a as a right argument (PCHOOSE), as well as the cost of choosing not to stop (PSTOP).
+    We then running the inside-outside algorithm over this product model.
+    For the results, we can extract the sufficient statistics needed to reestimate both individual models.10 The models in combination were intitialized in the same way as when they were run individually.
+    Sufficient statistics were separately taken off these individual completions.
+    From then on, the resulting models were used together during re-estimation.
+    Figure 6 summarizes the results.
+    The co

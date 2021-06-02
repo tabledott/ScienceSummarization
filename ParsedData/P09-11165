@@ -1,0 +1,8 @@
+f the simplest and most well-known clustering algorithms.
+    Given a set of elements represented as feature vectors and a number, k, of desired clusters, the K-Means algorithm consists of the following steps: i.
+    Select k elements as the initial centroids for k clusters. ii.
+    Assign each element to the cluster with the closest centroid according to a distance (or similarity) function. iii.
+    Recompute each cluster&#8217;s centroid by averaging the vectors of its elements iv.
+    Repeat Steps ii and iii until convergence Before describing our parallel implementation of the K-Means algorithm, we first describe the phrases to be clusters and how their feature vectors are constructed.
+    To obtain a list of phrases to be clustered, we followed the approach in (Lin et al., 2008) by collecting 20 million unique queries from an anonymized query log that are found in a 700 billion token web corpus with a minimum frequency count of 100.
+    Note that many of these queries are not phrases in the linguistic se

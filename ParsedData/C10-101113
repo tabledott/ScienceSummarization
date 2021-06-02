@@ -1,0 +1,10 @@
+examples positive features and the rest negative features.
+			We counted 5.8 timesmore access to negative features than positive fea tures.We now look more into the implementation details of the used hash table to answer the pre viously asked question.
+			The hash table for the feature?index mapping uses three arrays: one for the keys, one for the values and a status array to indicate the deleted elements.
+			If a program storesa value then the hash function uses the key to cal culate the location of the value.
+			Since the hashfunction is a heuristic function, the predicted lo cation might be wrong, which leads to so-called 2We use the hash tables of the trove library: http://sourceforge.net/projects/trove4j.
+			hash misses.
+			In such cases the hash algorithm has to retry to find the value.
+			We counted 87% hash misses including misses where the hash had to retry several times.
+			The number of hash misseswas high, because of the additional negative fea tures.
+			The CPU cache can only store a small amount

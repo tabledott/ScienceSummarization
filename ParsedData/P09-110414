@@ -1,0 +1,9 @@
+termediary symbol I (see Figure 2(b)).
+    Null productions are also a source of double counting, as there are many possible orders in which to attach null alignments to a bitext cell; we address this by adapting the grammar to force a null attachment order.
+    We introduce symbols N00, N10, and N11 to represent whether a normal cell has taken no nulls, is accepting foreign nulls, or is accepting English nulls, respectively.
+    We also introduce symbols I00, I10, and I11 to represent inverse cells at analogous stages of taking nulls.
+    As Figures 2 (c) and (d) illustrate, the directions in which nulls are attached to normal and inverse cells differ.
+    The N00 symbol is constructed by one or more &#8216;complete&#8217; inverted cells I11 terminated by a no-null I00.
+    By placing I00 in the lower right hand corner, we allow the larger N00 to unambiguously attach nulls.
+    N00 transitions to the N10 symbol and accepts any number of (e, &#183;) English terminal alignments.
+    Then N10 transitions to N11

@@ -1,0 +1,7 @@
+the Table 12 indicates a possible outlier in case of the sapena system.
+    The recall for this system is very high, and precision way lower than any other system.
+    Further investigations uncovered that the reason for this aberrant behavior was that fact that this system opted to keep singletons in the response.
+    By design, the scorer removes singletons that might be still present in the system, but it does so after the mention detection accuracy is computed.
+    The official scores top out in the high 50&#8217;s.
+    While this is lower than the figures cited in previous coreference evaluations, that is as expected, given that the task here includes predicting the underlying mentions and mention boundaries, the insistence on exact match, and given that the relatively easier appositive coreference cases are not included in this measure.
+    The top-performing system (lee) had a score of 57.79 which is about 1.8 points higher than that of the second (sapena) and third (chang) ranking systems, which score

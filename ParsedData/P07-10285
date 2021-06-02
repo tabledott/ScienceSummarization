@@ -1,0 +1,7 @@
+sky's (2002) task-based evaluation has found clusteringbased approaches to have better coverage than WordNet generalization, that is, for a given role there are more words for which they can state a preference.
+  
+  
+    The approach we are proposing makes use of two corpora, a primary corpus and a generalization corpus (which may, but need not, be identical).
+    The primary corpus is used to extract tuples (p, rp, w) of a predicate, an argument position and a seen headword.
+    The generalization corpus is used to compute a corpus-based semantic similarity metric.
+    Let Seen(rp) be the set of seen headwords for an argument rp of a predicate p. Then we model the selectional preference S of rp for a possible headword w0 as a weighted sum of the similarities between w0 and the seen headwords: sim(w0, w) is the similarity between the seen and the potential headword, and wtrp(w) is the weight of seen headword w. Similarity sim(w0, w) will be computed on the generalization corpus, again on the basis of extracte

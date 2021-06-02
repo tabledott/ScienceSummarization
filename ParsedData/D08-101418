@@ -1,0 +1,9 @@
+ier performs worse than SVM, which displays a directly proportional trend between the number of sentences in the data set and the observed F-measure.
+    This trend could be explained by the fact that the SVM classifier is more robust with regard to noisy data, when compared to Naive Bayes.
+  
+  
+    To test the validity of the results on other languages, we ran a portability experiment on Spanish.
+    To build a test dataset, a native speaker of Spanish translated the gold standard of 504 sentences into Spanish.
+    We maintain the same subjectivity annotations as for the Romanian dataset.
+    To create the training data required by the first two experiments, we translate both the MPQA corpus and the SemCor corpus into Spanish using the Google Translation service,2 a publicly available machine translation engine also based on statistical machine translation.
+    We were therefore able to implement all the experiments but the third, which would have required a manually translated version of the SemCor corpus.

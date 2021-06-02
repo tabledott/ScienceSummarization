@@ -1,0 +1,5 @@
+ GoL 0 Co A 0 where 0 represents the acoustic observations, A the acoustic model mapping sequences of acoustic observations to context-dependent phones, C the context-dependency model mapping sequences of context-dependent phones to (context-independent) phones, L a pronunciation dictionary mapping sequences of phones to words, and G a language model or grammar mapping sequences of words to sentences.
+    In general, this cascade of compositions cannot be explicitly expanded, because of the large size of the compositions; an approximation method is required to search it.
+    Often, a beam pruning is used: only paths with weights within the beam (the difference of the weights from the minimum weight so far is less than a certain predefined threshold) are kept during the expansion of the cascade of composition.
+    Furthermore, only the best path or a set of paths of the cascade of transducers with the lowest weights is of interest.
+    A set of paths with the lowest weights can be represented by an acyclic str

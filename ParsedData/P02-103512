@@ -1,0 +1,5 @@
+nditional relation of an analysis given an example is considered relevant, whereas in maximum likelihood estimation the joint probability of the training data to best describe observations is maximized.
+    Since the discriminative task is kept in mind during estimation, discriminative methods can yield improved performance.
+    In our case, discriminative criteria cannot be defined directly with respect to &#8220;correct labels&#8221; or &#8220;gold standard&#8221; parses since the WSJ annotations are not sufficient to disambiguate the more complex LFG parses.
+    However, instead of retreating to unsupervised estimation techniques or creating small LFG treebanks by hand, we use the labeled bracketing of the WSJ training sections to guide discriminative estimation.
+    That is, discriminative criteria are defined with respect to the set ofparses consistent with the WSJ annotations.1 The objective function in our approach, denoted by P(&#955;), is the joint of the negative log-likelihood &#8722;L(&#955;) and 

@@ -1,0 +1,7 @@
+training bags consist of sentences extracted from online documents, using the methodology described in Section 6.
+    Parsing web documents in order to obtain a syntactic analysis often gives unreliable results &#8211; the type of narrative can vary greatly from one web document to another, and sentences with grammatical errors are frequent.
+    Therefore, for the initial experiments, we used a modified version of the subsequence kernel of Bunescu and Mooney (2006), which does not require syntactic information.
+    This kernel computes the number of common subsequences of tokens between two sentences.
+    The subsequences are constrained to be &#8220;anchored&#8221; at the two entity names, and there is a maximum number of tokens that can appear in a sequence.
+    For example, a subsequence feature for the sentence S1 in Figure 1 is s&#65533; = &#8220;(e1) ... bought ... (e2) ... in ... billion ... deal&#8221;, where (e1) and (e2) are generic placeholders for the two entity names.
+    The subsequence kernel i

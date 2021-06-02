@@ -1,0 +1,9 @@
+nerated, not when it is conditioned upon.
+    All the nonterminals have been lexicalized (except for preterminals) to show where the heads are.
+    6.9.2 Unknown-Word Mapping.
+    As mentioned above, instead of mapping every lowfrequency word in the training data to some special +UNKNOWN+ token, Collins&#8217; trainer instead leaves the training data untouched and selectively maps words that appear in the back-off levels of the parameters from the PL. and PR. parameter classes.
+    Rather curiously, the trainer maps only words that appear in the futures of these parameters, but never in the histories.
+    Put another way, low-frequency words are generated as +UNKNOWN+ but are left unchanged when they are conditioned upon.
+    For example, in Figure 11, where we assume Fido is a low-frequency word, the trainer would derive counts for the smoothed parameter the word would not be mapped.
+    This strange mapping scheme has some interesting consequences.
+    First, imagine what happens to words that are truly unk

@@ -1,0 +1,10 @@
+sion is able to provide relatively good results in general.
+    In previous work on the PRank algorithm, ranks are defined on the entire training and test data.
+    Thus we can define boundaries between consecutive ranks on the entire data.
+    But in MT reranking, ranks are defined over every single source sentence.
+    For example, in our data set, the rank of a translation is only the rank among all the translations for the same sentence.
+    The training data includes about 1000 sentences, each of which normally has 1000 candidate translations with the exception of short sentences that have a smaller number of candidate translations.
+    As a result, we cannot use the PRank algorithm in the reranking task, since there are no global ranks or boundaries for all the samples.
+    However, the approach of using pairwise samples does work.
+    By pairing up two samples, we compute the relative distance between these two samples in the scoring metric.
+    In the training phase, we are only interested in whether 

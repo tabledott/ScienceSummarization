@@ -1,0 +1,12 @@
+for the integer program corresponding to this particular test data (24,115 tokens with the 45-tag set).
+    It might be interesting to see how the performance of the IP method (in terms of time complexity) is affected when scaling up to larger data and bigger tagsets.
+    We leave this as part of future work.
+    But we do note that it is possible to obtain less than optimal solutions faster by interrupting the CPLEX solver.
+  
+  
+    Our IP formulation can find us a small model, but it does not attempt to fit the model to the data.
+    Fortunately, we can use EM for that.
+    We still give EM the full word/tag dictionary, but now we constrain its initial grammar model to the 459 tag bigrams identified by IP.
+    Starting with uniform probabilities, EM finds a tagging that is 84.5% accurate, substantially better than the 81.7% originally obtained with the fully-connected grammar.
+    So we see a benefit to our explicit small-model approach.
+    While EM does not find the most accurate 3Note that the grammar i

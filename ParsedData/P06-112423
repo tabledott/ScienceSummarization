@@ -1,0 +1,8 @@
+wed to be positive and optimized over along with the discount parameters using cross-validation.
+    Seating arrangements are Gibbs sampled as in Section 5 with the parameter values fixed.
+    We find that HPYCV performs better than MKN (except marginally worse on small problems), and has best performance overall.
+    Note that the parameter values in HPYCV are still not the optimal ones since they are obtained by cross-validation using IKN, an approximation to a hierarchical Pitman-Yor language model.
+    Unfortunately cross-validation using a hierarchical Pitman-Yor language model inferred using Gibbs sampling is currently too costly to be practical.
+    In Figure 2 (right) we broke down the contributions to the cross-entropies in terms of how many times each word appears in the test set.
+    We see that most of the differences between the methods appear as differences among rare words, with the contribution of more common words being negligible.
+    HPYLM performs worse than MKN on words that occurred only

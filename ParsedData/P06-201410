@@ -1,0 +1,10 @@
+dency tree is maintained.
+    Note that this will not search the exact same alignment space as a cohesion-constrained beam search; instead it uses the union of the cohesion constraint and the weaker ITG constraints (Cherry and Lin, 2006).
+    Transforming this form of the cohesion constraint into a soft constraint is straight-forward.
+    Instead of overriding the parser so it cannot use invalid English spans, we will note the invalid spans and assign the parser a penalty should it use them.
+    The value of this penalty will be determined through discriminative training, as described in Section 4.
+    Since the penalty is available within the dynamic programming algorithm, the parser will be able to incorporate it to find a globally optimal alignment.
+  
+  
+    To discriminatively train our alignment systems, we adopt the Support Vector Machine (SVM) for Structured Output (Tsochantaridis et al., 2004).
+    We have selected this system for its high degree of modularity, and because it has an API freely availa

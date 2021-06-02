@@ -1,0 +1,7 @@
+
+    In the current implementation, the weights were chosen so as to give a lexicographic ordering, preferring first candidates with more covers, then those with covers containing fewer tiles, then those with larger contexts, and finally, when all else is equal, preferring candidates with more overlap between tiles.
+    We plan to investigate in the future a datadriven approach (based on the Winnow algorithm) for optimal selection and weighting of statistical features of the score.
+    We compute a candidate's statistics efficiently by performing a depth-first traversal of the cover graph of the candidate.
+    The cover graph is a directed acyclic graph (DAG) whose nodes represent matching tiles of the candidate, such that an arc exists between nodes n and n', if tile n connects to n'.
+    A special start node is added as the root of the DAG, that connects to all of the nodes (tiles) that contain an open bracket.
+    There is a cover corresponding to each path from the start node to a node (tile) that contain

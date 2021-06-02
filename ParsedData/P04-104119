@@ -1,0 +1,11 @@
+ikely the PRED takes semantic frame s, and how likely the TOPIC, FOCUS or TOPIC-REL is resolved using path p. The algorithm also supports resolution of LDDs where no overt linguistic material introducesa source TOPIC-REL function (e.g. in reduced rela tive clause constructions).
+			We distinguish between passive and active constructions, using the relevant semantic frame type when resolving LDDs.
+	
+	
+			We ran experiments with grammars in both the pipeline and the integrated parsing architectures.
+			The first grammar is a basic PCFG, while A-PCFG includes the f-structure annotations.
+			We apply a parent transformation to each grammar (Johnson, 1999) to give P-PCFG and PA-PCFG.
+			We train on sections 02-21 (grammar, lexical extraction andLDD paths) of the Penn-II Treebank and test on sec tion 23.
+			The only pre-processing of the trees that wedo is to remove empty nodes, and remove all PennII functional tags in the integrated model.
+			We evalu ate the parse trees using evalb.
+			Following (Riezler et al., 

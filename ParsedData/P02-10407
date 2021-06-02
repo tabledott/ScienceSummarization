@@ -1,0 +1,6 @@
+n on a multi-sentence test set?
+    Although one typically evaluates MT systems on a corpus of entire documents, our basic unit of evaluation is the sentence.
+    A source sentence may translate to many target sentences, in which case we abuse terminology and refer to the corresponding target sentences as a &#8220;sentence.&#8221; We first compute the n-gram matches sentence by sentence.
+    Next, we add the clipped n-gram counts for all the candidate sentences and divide by the number of candidate n-grams in the test corpus to compute a modified precision score, pn, for the entire test corpus.
+    4BLEU only needs to match human judgment when averaged over a test corpus; scores on individual sentences will often vary from human judgments.
+    For example, a system which produces the fluent phrase &#8220;East Asian economy&#8221; is penalized heavily on the longer n-gram precisions if all the references happen to read &#8220;economy of East Asia.&#8221; The key to BLEU&#8217;s success is that all systems are 

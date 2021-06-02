@@ -1,0 +1,6 @@
+l SRL models, we ap- plied beam search based on these scores using a beam width of 4.
+  The features used by the classifiers are listed in Tables 1 and 2.
+  In the tables, the features used by the classifiers for noun and verb predicates are indicated by N and V, respectively.
+  We selected the feature sets by greedy forward subset selection.
+  Feature PredId PredDis PREDWORD N,V N,V PREDLEMMA N,V N,V PREDPARENTWORD/POS N,V N,V CHILDDEPSET N,V N,V CHILDWORDSET N,V N,V CHILDWORDDEPSET N,V N,V CHILDPOSSET N,V N,V CHILDPOSDEPSET N,V N,V DEPSUBCAT N,V N,V PREDRELTOPARENT N,V N,V Table 1: Classifier features in predicate identifica- tion and disambiguation.
+  Feature Supp ArgId ArgCl PREDPARENTWORD/POS N N,V CHILDDEPSET N N,V N,V PREDLEMMASENSE N N,V N,V VOICE V V POSITION N N,V N,V ARGWORD/POS N N,V N,V LEFTWORD/POS N N,V RIGHTWORD/POS N N,V N,V LEFTSIBLINGWORD/POS N,V RIGHTSIBLINGWORD/POS N N PREDPOS N N,V V RELPATH N N,V N,V POSPATH N RELPATHTOSUPPORT N N VERBCHAINHASSUBJ V V CONTROLLERHASOBJ V N PREDRELTOPAREN

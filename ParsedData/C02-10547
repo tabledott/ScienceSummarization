@@ -1,0 +1,12 @@
+it is labeled as PERSON SINGLE.
+			If a word does not belong to any namedentities, it is labeled as OTHER.
+			Since IREX de fines eight NE classes, words are classified into 33 ( *UTWVEX!K# ) categories.Each sample is represented by 15 features be cause each word has three features (part-of-speech tag, character type, and the word itself), and two preceding words and two succeeding words are also used for context dependence.
+			Although infrequent features are usually removed to prevent overfitting, we use all features because SVMs are robust.
+			Each sample is represented by a long binary vector, i.e., a sequence of 0 (false) and 1 (true).
+			For instance, ?Bush?
+			in the above example is represented by a 2http://chasen.aist-nara.ac.jp/ vector P*YG[Z\#^]_ G[Z `a] described below.
+			Only 15 elements are 1.
+			bdcfe8ghji // Current word is not ?Alice?
+			bdc klghme // Current word is ?Bush?
+			bdc nghji // Current word is not ?Charlie?
+			: bdcfe^opikpqpghme // Current POS is a proper noun bdcfe^opinipghji /

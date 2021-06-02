@@ -1,0 +1,5 @@
+onfiguration for a sentence x = w1, ... , wn to be cs(x) = ([0], [1, ... , n], 11, 1, 1), where L is the function that is undefined for all arguments, and we take the set Ct of terminal configurations to be the set of all configurations of the form c = ([0], [ ], A, 7r, 6) (for any A, 7r and 6).
+    The tagged dependency tree defined for x by c = (E, B, A, 7r, 6) is the tree (Vx, A) with labeling functions 7r and 6, which we write TREE(x, c).
+    The set T of transitions is shown in Figure 1.
+    The LEFT-ARCd and RIGHT-ARCd transitions both add an arc (with dependency label d) between the two nodes on top of the stack and replaces these nodes by the head node of the new arc (which is the rightmost node for LEFT-ARCd and the leftmost node for RIGHT-ARCd).
+    The SHIFTp transition extracts the first node in the buffer, pushes it onto the stack and labels it with the part-of-speech tag p. The SWAP transition extracts the second topmost node from the stack and moves it back to the buffer, subject to the conditi

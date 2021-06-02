@@ -1,0 +1,7 @@
+that the probabilities of all possible nonterminal sequences sum to 1.
+    2This is the one place where we altered the original model, as the lexical components of the head of the entire sentence were all being estimated incorrectly, causing an inconsistency in the model.
+    We corrected the estimation of th and wh in our implementation. where an element is either a constituent label, a part of speech tag or a word.
+    We obtain maximum-likelihood estimates of the parameters of this model using frequencies gathered from the training data.
+    The model of (Chiang, 2000) is based on stochastic TAG (Resnik, 1992; Schabes, 1992).
+    In this model a parse tree is built up not out of lexicalized phrase-structure rules but by tree fragments (called elementary trees) which are lexicalized in the sense that each fragment contains exactly one lexical item (its anchor).
+    In the variant of TAG we use, there are three kinds of elementary tree: initial, (predicative) auxiliary, and modifier, and three composition op

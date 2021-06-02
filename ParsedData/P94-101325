@@ -1,0 +1,9 @@
+mbine the available evidence in a weighted sum or product.
+    This is done by Bayesian classifiers, neural nets, IR-based classifiers and N-gram part-of-speech taggers.
+    The system reported here is unusual in that it does no such combination.
+    Only the single most reliable piece of evidence matched in the target context is used.
+    For example, in a context of cote containing poisson, ports and atlantique, if the adjacent feminine article la cote (the coast) is present, only this best evidence is used and the supporting semantic information ignored.
+    Note that if the masculine article le cote (the side) were present in a similar maritime context, the most reliable evidence (gender agreement) would override the semantic clues which would otherwise dominate if all evidence was combined.
+    If no gender agreement constraint were present in that context, the first matching semantic evidence would be used.
+    There are several motivations for this approach.
+    The first is that combining all availabl

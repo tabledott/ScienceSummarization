@@ -1,0 +1,9 @@
+roaches &#945; &#8212; 0.5 as c approaches oc, and 0 as c approaches 0.
+    For small values of &#945; the net effect is the opposite of typical smoothing, since it tends to redistribute probably mass away from unlikely events onto more likely ones.
+  
+  
+    ITG is slow mainly because it considers every pair of spans in two sentences as a possible chart element.
+    In reality, the set of useful chart elements is much smaller than the possible scriptO(n4), where n is the average sentence length.
+    Pruning the span pairs (bitext cells) that can participate in a tree (either as terminals or non-terminals) serves to not only speed up ITG parsing, but also to provide a kind of initialization hint to the training procedures, encouraging it to focus on promising regions of the alignment space.
+    Given a bitext cell defined by the four boundary indices (i, j,l, m) as shown in Figure 1a, we prune based on a figure of merit V (i, j,l, m) approximating the utility of that cell in a full ITG parse.
+    The figure o

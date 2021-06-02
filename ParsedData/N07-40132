@@ -1,0 +1,10 @@
+ information extraction uses handlabeled inputs.
+    Corpus Heterogeneity on the Web, which makes tools like parsers and named-entity taggers less accurate because the corpus is different from the data used to train the tools.
+    Scalability and efficiency of the system.
+    Open IE systems are effectively restricted to a single, fast pass over the data so that they can scale to huge document collections.
+    In response to these challenges, TEXTRUNNER includes several novel components, which we now summarize (see (Banko et al., 2007) for details).
+  
+  
+    The TEXTRUNNER extractor makes a single pass over all documents, tagging sentences with part-of-speech tags and nounphrase chunks as it goes.
+    For each pair of noun phrases that are not too far apart, and subject to several other constraints, it applies a classifier described below to determine whether or not to extract a relationship.
+    If the classifier deems the relationship trustworthy, a tuple of the form t = (ei, rj, ek) is extracted, where ei

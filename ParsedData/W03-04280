@@ -1,0 +1,12 @@
+
+  Named Entity Recognition With Character-Level Models
+  
+    We discuss two named-entity recognition models which use characters and character -grams either exclusively or as an important part of their data representation.
+    The first model is a character-level HMM with minimal context information, and the second model is a maximum-entropy conditional markov model with substantially richer context features.
+    Our best model achieves an overall F of 86.07% on the English test data (92.31% on the development data).
+    This number represents a 25% error reduction over the same model without word-internal (substring) features.
+  
+  
+    For most sequence-modeling tasks with word-level evaluation, including named-entity recognition and part-ofspeech tagging, it has seemed natural to use entire words as the basic input features.
+    For example, the classic HMM view of these two tasks is one in which the observations are words and the hidden states encode class labels.
+    However, because of data sparsity, 

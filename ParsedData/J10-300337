@@ -1,0 +1,8 @@
+ts are obtained by performing sentence alignment (Gale and Church 1991) on the corpora to obtain sets of parallel sentences that are then lemmatized, part-of-speech tagged and chunked in order to identify all the verb and noun phrases.
+    The bootstrapping algorithm is then employed to incrementally learn better and better contextual features that are then leveraged to generate semantically similar phrasal correspondences.
+    Figure 4 shows the basic steps of the algorithm.
+    To seed the algorithm, some fake paraphrase examples are extracted by using identical words from either side of the aligned sentence pair.
+    For example, given the following sentence pair: S1: Emma burst into tears and he tried to comfort her.
+    S2: Emma cried and he tried to console her.
+    A bootstrapping algorithm to extract phrasal paraphrase pairs from monolingual parallel corpora.
+    (tried, tried), (her, her) may be extracted as positive examples and (tried, Emma), (tried, console) may be extracted as negative examples.

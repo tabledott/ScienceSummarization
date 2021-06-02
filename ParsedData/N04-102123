@@ -1,0 +1,6 @@
+o-tree model, which was not able to make use of as much training data.
+    As a test of the tree-to-tree model&#8217;s discrimination, we performed an oracle experiment, comparing the model scores on the first sentence in the n-best list with candidate giving highest BLEU score.
+    On the 1000-best list for the 993-sentence development set, restricting ourselves to sentences with no more than 60 words and a branching factor of no more than five in either the Chinese or English tree, we achieved results for 480, or 48% of the 993 sentences.
+    Of these 480, the model preferred the produced over the oracle 52% of the time, indicating that it does not in fact seem likely to significantly improve BLEU scores when used for reranking.
+    Using the probability of the source Chinese dependency parse aligning with the n-best hypothesis dependency parse as a feature function, making use of the word-level alignments, yields a 31.6 %BLEU score &#8212; identical to our baseline.
+    The tree-based feature functions des

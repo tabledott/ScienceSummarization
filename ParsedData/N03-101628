@@ -1,0 +1,7 @@
+
+    On the other hand, no precomputation is needed for NULL.
+    In between is a trade off of space/time requirements for precomputation and the online savings during the parsing of new sentences.
+    Figure 8 shows the average savings versus the precomputation time.10 Where on this curve one chooses to be depends on many factors; 9 hours may be too much to spend computing B, but an hour for SXMLR gives nearly the same performance, and the one minute required for SX is comparable to the I/O time to read the Penn treebank in our system.
+    The grammar projection estimate F had to be recomputed for each sentence parsed, but took less than 1% of the total parse time.
+    Although this method alone was less effective than SX (only 58.3% edge savings), it was extremely effective in combination with the context summary methods.
+    In practice, the combination of F and SX is easy to implement, fast to initialize, and very effective: one cuts out 95% of the work in parsing at the cost of one minute of precomputati

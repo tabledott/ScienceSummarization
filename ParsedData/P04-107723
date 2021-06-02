@@ -1,0 +1,11 @@
+p2 when aFskip2/aRskip2=aFskip2/aPskip2, and C is the combination function.
+    We call the skip-bigram-based Fmeasure, i.e.
+    Equation 15, ROUGE-S.
+    Using Equation 15 with ,B = 1 and S1 as the reference, S2&#8217;s ROUGE-S score is 0.5, S3 is 0.167, and S4 is 0.333.
+    Therefore, S2 is better than S3 and S4, and S4 is better than S3.
+    This result is more intuitive than using BLEU-2 and ROUGE-L. One advantage of skip-bigram vs. BLEU is that it does not require consecutive matches but is still sensitive to word order.
+    Comparing skip-bigram with LCS, skip-bigram counts all in-order matching word pairs while LCS only counts one longest common subsequence.
+    We can limit the maximum skip distance, dskip, between two in-order words that is allowed to form a skip-bigram.
+    Applying such constraint, we limit skip-bigram formation to a fix window size.
+    Therefore, computation time can be reduced and hopefully performance can be as good as the version without such constraint.
+    For example, if we

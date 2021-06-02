@@ -1,0 +1,10 @@
+precision, though recall has also gone up.
+    This indicates that these cohesion constraints are a strong alignment feature.
+    The ITG row shows that the weaker ITG constraints are also valuable, but the cohesion constraint still improves on them.
+    We now test the performance of our SVM ITG with soft cohesion constraint, or SD-ITG, which is described in Section 4.2.2.
+    We will test against two strong baselines.
+    The first baseline, matching is the matching SVM described in Section 4.2.1, which is a re-implementation of the state-of-theart work in (Taskar et al., 2005)3.
+    The second baseline, D-ITG is an ITG aligner with hard cohesion constraints, but which uses the weights trained by the matching SVM to assign link values.
+    This is the most straight-forward way to combine discriminative training with the hard syntactic constraints.
+    The results are shown in Table 2.
+    The first thing to note is that our Matching baseline is achieving scores in line with (Taskar et al., 2005), which repo

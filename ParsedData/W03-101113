@@ -1,0 +1,8 @@
+ic similarity.
+    We will first explain the WordNet-based distance measure (Lin, 1997) and then explain how we determine the similarity between neighbour sets generated using different measures.
+    The similarity of two nouns in WordNet is defined as the similarity of their maximally similar senses.
+    The commonality of two concepts is defined as the maximally specific superclass of those concepts.
+    So, if syn(n) is the set of senses of the noun n in WordNet, sup(c) is the set of (possibly indirect) superclasses of concept c in WordNet and P(c) is the probability that a randomly selected noun refers to an instance of c, then the similarity between ni and n2 can be calculated using the formula for simwn in Figure 1.
+    The probabilities P(c) are estimated by the frequencies of concepts in SemCor (Miller et al., 1994), a sense-tagged subset of the Brown corpus, noting that the occurrence of a concept refers to instances of all the superclasses of that concept (i.e.
+    P(root of tree6) = 1).
+    The k n

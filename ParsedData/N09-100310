@@ -1,0 +1,9 @@
+vre (2006).
+    For each word w we collect a template of the syntactic context.
+    We consider sequences of governing words (e.g. the parent, grand-parent, etc.) as well as collections of descendants (e.g., immediate children, grandchildren, etc.).
+    This information is then encoded as a contextual template.
+    For example, the context template cooks &lt;term&gt; delicious could be contexts for nouns such as food, meals, pasta, etc.
+    This captures both syntactic preferences as well as selectional preferences.
+    Contrary to Pado and Lapata (2007), we do not use the labels of the syntactic dependencies.
+    Once the vectors have been obtained, the frequency for each dimension in every vector is weighted using the other vectors as contrast set, with the k2 test, and finally the cosine similarity between vectors is used to calculate the similarity between each pair of terms.
+    Except for the syntactic dependency approach, where closed-class words are needed by the parser, in the other cases we have rem

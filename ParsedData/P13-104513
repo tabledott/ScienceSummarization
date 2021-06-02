@@ -1,0 +1,7 @@
+es for a given sentence xi is defined as Y (xi) and the correct tree for a sentence is yi.
+    We first define a structured margin loss A(yi, &#710;y) for predicting a tree y&#710; for a given correct tree.
+    The loss increases the more incorrect the proposed parse tree is (Goodman, 1998).
+    The discrepancy between trees is measured by counting the number of nodes N(y) with an incorrect span (or label) in the proposed tree: We set &#954; = 0.1 in all experiments.
+    For a given set of training instances (xi, yi), we search for the function g&#952;, parameterized by &#952;, with the smallest expected loss on a new sentence.
+    It has the following form: where the tree is found by the Compositional Vector Grammar (CVG) introduced below and then scored via the function s. The higher the score of a tree the more confident the algorithm is that its structure is correct.
+    This max-margin, structureprediction objective (Taskar et al., 2004; Ratliff et al., 2007; Socher et al., 2011b) trains the CVG so that 

@@ -1,0 +1,9 @@
+n the number of edges and nodes in the translation hypergraph using cdec&#8217;s semiring framework (&#167;5).
+    Alignment is the process of determining if and how a translation model generates a (source, target) string pair.
+    To compute an alignment under a translation model, the phase 1 translation hypergraph is reinterpreted as a synchronous contextfree grammar and then used to parse the target sentence.2 This results in an alignment forest, which is a compact representation of all the derivations of the sentence pair under the translation model.
+    From this forest, the Viterbi or maximum a posteriori word alignment can be generated.
+    This alignment algorithm is explored in depth by Dyer (2010).
+    Note that if the phase 1 forest has been pruned in some way, or the grammar does not derive the sentence pair, the target intersection parse may fail, meaning that an alignment will not be recoverable.
+  
+  
+    Recent research has proposed a unified representation for the various translation and tagg

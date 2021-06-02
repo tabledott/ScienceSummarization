@@ -1,0 +1,10 @@
+e headword of an NP phrase is the right-most noun.
+			Similarly, the left-most verb/proposition of a VP/PP phrase is extracted as the headword ? Sparse collocation picks one word/tag from the two words before the argument, the first word/tag, the last word/tag of the argument, and one word/tag from the two words after the argument to join as features.
+			Although the predictions of the second-phaseclassifier can be used directly, the labels of argu ments in a sentence often violate some constraints.
+			Therefore, we rely on the inference procedure to make the final predictions.
+	
+	
+			Ideally, if the learned classifiers are perfect, arguments can be labeled correctly according to the classifiers?
+			predictions.
+			In reality, labels assigned to ar guments in a sentence often contradict each other,and violate the constraints arising from the struc tural and linguistic information.
+			In order to resolve the conflicts, we design an inference procedure thattakes the confidence scores of each individual argument

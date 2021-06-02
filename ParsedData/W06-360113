@@ -1,0 +1,6 @@
+Rather than taking the sum, we pick the best tree T* and factors the search into two separate steps: parsing (4) (a well-studied problem) and tree-to-string translation (5) (Section 5): In this sense, our approach can be considered as a Viterbi approximation of the computationally expensive joint search using (3) directly.
+    Similarly, we now marginalize over all derivations that translates English tree T into some Chinese string and apply the Viterbi approximation again to search for the best derivation d*: Assuming different rules in a derivation are applied independently, we approximate Pr(d) as where the probability Pr(r) of the rule r is estimated by conditioning on the root symbol p(t(r)):
+  
+  
+    Following Och and Ney (2002), we extend the direct model into a general log-linear framework in order to incorporate other features: where Pr(c) is the language model and e&#8722;&#955;|c |is the length penalty term based on |c|, the length of the translation.
+    Parameters a, Q, and A are the weights of 

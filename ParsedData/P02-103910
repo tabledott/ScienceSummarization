@@ -1,0 +1,7 @@
+out 10K CFG rules are used in the parsed corpus of English, which results in about 120K non-lexical rules for the decoding grammar (after we expand the CFG rules as described in Section 4).
+    We applied the simple algorithm from Section 4, but this experiment failed &#8212; no complete translations were produced.
+    Even four-word sentences could not be decoded.
+    This is not only because the model size is huge, but also because the decoder considers multiple syntactic structures for the same word alignment, i.e., there are several different decoded trees even when the translation of the sentence is the same.
+    We then applied the following measures to achieve practical decoding.
+    The basic idea is to use additional statistics from the training corpus. beam search: We give up optimal decoding by using a standard dynamic-programming parser with beam search, which is similar to the parser used in (Collins, 1999).
+    A standard dynamicprogramming parser builds upnonterminal, inputsubstring tuples from

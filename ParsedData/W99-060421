@@ -1,0 +1,11 @@
+e simplified decision rule (Eq.
+    (8)) it is used in Eq.
+    (9) P(zlik) instead of p(zI4).
+    Afterwards the actual translation process begins.
+    It has a search organization along the positions of the target language string.
+    In search we produce partial hypotheses, each of which contains the following information: A partial hypothesis is extended by appending one target word.
+    The set of all partial hypotheses can be structured as a graph with a source node representing the sentence start, leaf nodes representing full translations and intermediate nodes representing partial hypotheses.
+    We recombine partial hypotheses which cannot be distinguished by neither language model nor translation model.
+    When the elements 1 - 5 of two partial hypotheses do not allow to distinguish between two hypotheses it is possible to drop the hypothesis with higher costs for the subsequent search process.
+    We also use beam-search in order to handle the huge search space.
+    We compare in beamsearch hypothe

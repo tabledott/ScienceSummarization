@@ -1,0 +1,6 @@
+ the position of an English word aligned to each French word.
+    All three models factor in the following way: where j&#8722; is the position of the last non-null-aligned French word before position j.2 The translation parameters pt(fj  |eaj) are parameterized by an (unsmoothed) lookup table that stores the appropriate local conditional probability distributions.
+    The distortion parameters pd(aj = i0 | aj&#8722; = i) depend on the particular model (we write aj = 0 to denote the event that the j-th French word where p0 is the null-word probability and c(&#183;) contains the distortion parameters for each offset argudepending on the length of the English sentence, which we found to be more effective than using a constant p0.
+    In model 1, the distortion pd(&#183;  |&#183;) specifies a uniform distribution over English positions.
+    In model 2, pd(&#183;  |&#183;) is still independent of aj&#8722;, but it can now depend on j and i0 through c(&#183;).
+    In the HMM model, there is a dependence on aj&#8722

@@ -1,0 +1,8 @@
+			Algorithm 3assumes an initial parsing phase that generates the hyper graph and finds the 1-best derivation of each item; then in the second phase, it proceeds as in Algorithm 2, but starts at the goal item and calls itself recursively only as necessary.
+			The pseudocode for this algorithm is shown inFigure 7.
+			As a side note, this second phase should be applicable also to a cyclic hypergraph as long as its deriva tion weights are bounded.
+			Algorithm 2 has an overall complexity of O(|E| + |V |k log k) and Algorithm 3 is O(|E|+ |Dmax|k log k) where|Dmax| is the size of the longest among all top k deriva tions (for CFG in CNF, |D| = 2n?1 for all D, so |Dmax| isO(n)).
+			These are significant improvements against Algo rithms 0 and 1 since it turns the multiplicative overheadinto an additive overhead.
+			In practice, |E| usually dom inates, as in CKY parsing of CFG.
+			So theoretically the running times grow very slowly as k increases, which is exactly demonstrated by our experiments below.
+			4.5 Summary 

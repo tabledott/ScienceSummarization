@@ -1,0 +1,5 @@
+ping ahead&#8221; should be either 3 or 2, depending on what path is chosen to translate the span [0,3].
+    In large lattices, where a single arc may span many nodes, the possible distances may vary quite substantially depending on what path is ultimately taken, and handling this properly therefore crucial.
+    Although hierarchical phrase-based models do not model distortion explicitly, Chiang (2007) suggests using a span length limit to restrict the window in which reordering can take place.1 The decoder enforces the constraint that a synchronous rule learned from the training data (the only mechanism by which reordering can be introduced) can span maximally A words in f. Like the distortion cost used in phrase-based systems, A is also poorly defined for non-linear lattices.
+    Since we want a distance metric that will restrict as few local reorderings as possible on any path, we use a function &#65533;(a, b) returning the length of the shortest path between nodes a and b.
+    Since this function is not d

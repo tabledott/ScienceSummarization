@@ -1,0 +1,8 @@
+ernel from (Culotta and Sorensen,2004) in both scenarios, with a more significant dif ference for SP-CFG.
+			An error analysis revealed thatCollins?
+			parser was better at capturing local depen dencies, hence the increased accuracy of SP-CFG.
+			Another advantage of our shortest-path dependency kernels is that their training and testing are very fast ? this is due to representing the sentence as a chainof dependencies on which a fast kernel can be com puted.
+			All the four SP kernels from Table 5 take between 2 and 3 hours to train and test on a 2.6GHz Pentium IV machine.
+			To avoid numerical problems, we constrained the dependency paths to pass through at most 10 words(as observed in the training data) by setting the kernel to 0 for longer paths.
+			We also tried the alterna tive solution of normalizing the kernel, however this led to a slight decrease in accuracy.
+			Having longer paths give larger kernel scores in the unnormalizedversion does not pose a problem because, by definition, paths of different

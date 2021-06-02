@@ -1,0 +1,11 @@
+, which counts the number of tail nodes in e. The arity of a hypergraph is the maximum arity over all hyperedges.
+    A CKY forest has an arity of 2, since the input grammar is required to be binary branching (cf.
+    Chomsky Normal Form) to ensure cubic time parsing complexity.
+    However, in this work, we use forests from a Treebank parser (Charniak, 2000) whose grammar is often flat in many productions.
+    For example, the arity of the forest in Figure 1 is 3.
+    Such a Treebank-style forest is easier to work with for reranking, since many features can be directly expressed in it.
+    There is also a distinguished root node TOP in each forest, denoting the goal item in parsing, which is simply S0,l where S is the start symbol and l is the sentence length.
+  
+  
+    We first establish a unified framework for parse reranking with both n-best lists and packed forests.
+    For a given sentence s, a generic reranker selects the best parse y&#65533; among the set of candidates cand(s) according to some scorin

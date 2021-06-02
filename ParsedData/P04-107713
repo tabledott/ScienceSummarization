@@ -1,0 +1,9 @@
+idate sentences with consecutive word matches and to estimate their fluency, it does not consider sentence level structure.
+    For example, given the following sentences: S1. police killed the gunman S2. police kill the gunman1 S3. the gunman kill police We only consider BLEU with unigram and bigram, i.e.
+    N=2, for the purpose of explanation and call this BLEU-2.
+    Using S1 as the reference and S2 and S3 as the candidate translations, S2 and S3 would have the same BLEU-2 score, since they both have one bigram and three unigram matches2.
+    However, S2 and S3 have very different meanings.
+    Third, BLEU is a geometric mean of unigram to N-gram precisions.
+    Any candidate translation without a N-gram match has a per-sentence BLEU score of zero.
+    Although BLEU is usually calculated over the whole test corpus, it is still desirable to have a measure that works reliably at sentence level for diagnostic and introspection purpose.
+    To address these issues, we propose three new automatic evaluation me

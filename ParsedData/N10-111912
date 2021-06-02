@@ -1,0 +1,9 @@
+ll these paths in the label propagation algorithm, whereas only the single path from a seed will influence the polarity of a node in our proposed propagation algorithm &#8211; namely the path with highest weight.
+    The intuition behind label propagation seems justified.
+    That is, if a node has multiple paths to a seed, it should be reflected in a higher score.
+    This is certainly true when the graph is of high quality and all paths trustworthy.
+    However, in a graph constructed from web cooccurrence statistics, this is rarely the case.
+    Our graph consisted of many dense subgraphs, each representing some semantic entity class, such as actors, authors, tech companies, etc.
+    Problems arose when polarity flowed into these dense subgraphs with the label propagation algorithm.
+    Ultimately, this flow would amplify since the dense subgraph provided exponentially many paths from each node to the source of the flow, which caused a reinforcement effect.
+    As a result, the lexicon would consist of lar

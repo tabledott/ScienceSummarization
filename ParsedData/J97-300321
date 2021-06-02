@@ -1,0 +1,6 @@
+word from the lexicon does not have this suffix, we classify that word and the rule as incompatible and the rule as not applicable to that word.
+    If a rule is applicable to a word, we compare the result of the guess with the information listed in the lexicon.
+    If the guessed class is the same as the class stated in the lexicon, we count it as a hit or success, otherwise it is a failure.
+    Then, since we are interested in the application of the rules to word-tokens in the corpus, we multiply the result of the guess by the corpus frequency of the word.
+    If we keep the sample space for each rule separate from the others, we have a binomial experiment.
+    The value of a guessing rule closely correlates with its estimated proportion of success (p), which is the proportion of all positive outcomes (x) of the rule application to the total number of the trials (n), which are, in fact, the number of all the word tokens that are compatible to the rule in the corpus: x: number of successful guesses The p est

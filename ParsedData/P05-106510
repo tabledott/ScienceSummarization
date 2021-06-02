@@ -1,0 +1,6 @@
+ence w is: The parameters of the model are estimated using a maximum likelihood estimate based on the observed frequency in a training corpus and smoothed using modified Kneser-Ney smoothing (Chen and Goodman, 1999).
+    We used the SRI Language Modeling Toolkit (Stolcke, 2002) for language model training.
+    Our first set of classifiers consists of one n-gram language model per class c in the set of possible classes C. For each text document t, we can calculate the likelihood ratio between the probability given by the model for class c and the probabilities given by the other models for the other classes: where we assume uniform prior probabilities P(c).
+    The resulting value can be compared to an empirically chosen threshold to determine if the document is in class c or not.
+    For each class c, a language model is estimated from a corpus of training texts.
+    In addition to using the likelihood ratio for classification, we can use scores from language models as features in another classifier (e.g. an 

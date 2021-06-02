@@ -1,0 +1,8 @@
+ngth n there are exponentially many possible dependency trees.
+    Using a slightly modified version of a lexicalized CKY chart parsing algorithm, it is possible to generate and represent these sentences in a forest that is O(n5) in size and takes O(n5) time to create.
+    Eisner (1996) made the observation that if the head of each chart item is on the left or right periphery, then it is possible to parse in O(n3).
+    The idea is to parse the left and right dependents of a word independently and combine them at a later stage.
+    This removes the need for the additional head indices of the O(n5) algorithm and requires only two additional binary variables that specify the direction of the item (either gathering left dependents or gathering right dependents) and whether an item is complete (available to gather more dependents).
+    Figure 2 shows the algorithm schematically.
+    As with normal CKY parsing, larger elements are created bottom-up from pairs of smaller elements.
+    Eisner showed that his algorith

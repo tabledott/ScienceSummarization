@@ -1,0 +1,10 @@
+he parts of speech of the head word and the content word respectively.
+    These features are called hPos and cPos and are illustrated in Figure 4.
+    Both these features generate an implicit yet simple backoff solution for the lexicalized features HEAD WORD (hw) and CONTENT WORD (cw).
+    Predicate arguments often contain names or other expressions identified by named entity (NE) recognizers, e.g. dates, prices.
+    Thus we believe that this form of semantic information should be introduced in the learning model.
+    In FS2 we added the following features: (a) the named entity class of the content word (cNE); and (b) a set of NE features that can take only Boolean values grouped as BOOLEAN NAMED ENTITY FEATURES and defined in Figure 4.
+    The cNE feature helps recognize the argument roles, e.g.
+    ARGM-LOC and ARGM-TMP, when location or temporal expressions are identified.
+    The Boolean NE flags provide information useful in processing complex nominals occurring in argument constituents.
+    For example

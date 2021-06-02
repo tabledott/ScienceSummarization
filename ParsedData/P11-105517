@@ -1,0 +1,6 @@
+tions, as we will see in more detail later.
+    We use the following metrics.
+    Aggregate Extraction Let De be the set of extracted relations for any of the systems; we compute aggregate precision and recall by comparing De with D. This metric is easily computed but underestimates extraction accuracy because Freebase is incomplete and some true relations in De will be marked wrong.
+    Sentential Extraction Let 5e be the sentences where some system extracted a relation and 5F be the sentences that match the arguments of a fact in D. We manually compute sentential extraction accuracy by sampling a set of 1000 sentences from 5e U 5F and manually labeling the correct extraction decision, either a relation r E R or none.
+    We then report precision and recall for each system on this set of sampled sentences.
+    These results provide a good approximation to the true precision but can overestimate the actual recall, since we did not manually check the much larger set of sentences where no approach predicted ext

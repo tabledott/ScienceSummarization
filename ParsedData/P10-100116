@@ -1,0 +1,7 @@
+ of grandparent-index augmentation has proven fruitful, as it allows us to parse expressive third-order factorizations while retaining an efficient O(n4) runtime.
+    In fact, our thirdorder parsing algorithms are &#8220;optimally&#8221; efficient in an asymptotic sense.
+    Since each third-order part is composed of four separate indices, there are 0(n4) distinct parts.
+    Any third-order parsing algorithm must at least consider the score of each part, hence third-order parsing is Q(n4) and it follows that the asymptotic complexity of Models 1 and 2 cannot be improved.
+    The key to the efficiency of our approach is a fundamental asymmetry in the structure of a directed tree: a head can have any number of modifiers, while a modifier always has exactly one head.
+    Factorizations like that of Carreras (2007) obtain grandchild parts by augmenting spans with the indices of modifiers, leading to limitations on the grandchildren that can participate in the factorization.
+    Our method, by &#8220;inverting&#82

@@ -1,0 +1,7 @@
+, and an integer specifying the distance of the two words.11 This step produces all the sentences containing them in the given position.
+    For example, given the bigram takeover-thwart and the distance 2, this step produces sentences like: &amp;quot;Under the recapitalization plan it proposed to thwart the takeover.&amp;quot; Identical to Stage 1, Step 1.2.
+    We compute the frequency of appearance of each of the collocates of w by maintaining a data structure similar to the one given in Figure 5, Input: Output of Step 2.2.
+    Output: N-grams such as in Figure 8.
+    Discussion: Here, the analyses are simpler than for Stage 1.
+    We are only interested in percentage frequencies and we only compute the moment of order 1 of the frequency distributions.
+    Tables produced in Step 2.2 (such as in Figure 5) are used to compute the frequency of appearance of each word in each position around w. For each of the possible relative distances from w, we analyze the distribution of the words and only keep the words

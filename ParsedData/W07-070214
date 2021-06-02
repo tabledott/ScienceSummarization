@@ -1,0 +1,9 @@
+apply both POS tag and supertag sequence mod els (sw, twps).
+			Supertags are more informative than POS tags as they contain the syntactic context of a word.
+			These experiments were run with the distortion limit set to 6.
+			This means that at most 6 words in 4see http://www.statmt.org/wpt05/ 5see http://www.statmt.org/wpt06/ 12 the source sentence can be skipped.
+			We tried setting the distortion limit to 15 to see if allowing longer distance reorderings with CCG supertag sequence models could further improve performance, however it resulted in a decrease in performance to a BLEU score of 23.84.
+			4.3 Manual Analysis.
+			The BLEU score improvement in Table 1 does not explain how the supertag sequence models affect the translation process.
+			As suggested by Callison-Burch et al(2006) we perform a focussed manual analysis of the output to see what changes have occurred.
+			From the test set, we randomly selected 100 sentences which required reordering of verbs: the Dutch sentences ended with a verb which 

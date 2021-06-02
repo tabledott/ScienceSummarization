@@ -1,0 +1,8 @@
+tribution that is provided to an encoder.
+    The encoder is usually an arithmetic coder; the details of coding are of no relevance to this paper.
+    PPM is an n-gram approach that uses finite-context models of characters, where the previous few (say three) characters predict the upcoming one.
+    The conditional probability distribution of characters, conditioned on the preceding few characters, is maintained and updated as each character of input is processed.
+    This distribution, along with the actual value of the preceding few characters, is used to predict each upcoming symbol.
+    Exactly the same distributions are maintained by the decoder, which updates the appropriate distribution as each character is received.
+    This is what we call adaptive modeling: both encoder and decoder maintain the same models&#8212;not by communicating the models directly, but by updating them in precisely the same way.
+    Rather than using a fixed context length (three was suggested above), the PPM method chooses a ma

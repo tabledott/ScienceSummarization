@@ -1,0 +1,9 @@
+assume an improper uniform prior), and use a single Metropolis-Hastings update (Gilks et al., 1996) to resample the value of each hyperparameter after each iteration of the Gibbs sampler.
+    Informally, to update the value of hyperparameter &#945;, we sample a proposed new value &#945;&#8242; from a normal distribution with p = &#945; and a = .1&#945;.
+    The probability of accepting the new value depends on the ratio between P(t|w, &#945;) and P(t|w, &#945;&#8242;) and a term correcting for the asymmetric proposal distribution.
+    Performing inference on the hyperparameters allows us to relax the assumption that every tag has the same prior on its output distribution.
+    In the experiments reported in the following section, we used two different versions of our model.
+    The first version (BHMM1) uses a single value of Q for all word classes (as above); the second version (BHMM2) uses a separate Qj for each tag class j.
+  
+  
+    In this set of experiments, we used the full tag dictionary (as above), bu

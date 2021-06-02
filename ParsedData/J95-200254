@@ -1,0 +1,7 @@
+ sacrifice &amp;quot;robustness,&amp;quot; i.e., the ability to find partial parses in an ungrammatical input, for the efficiency gained from top-down prediction (Magerman and Weir 1992).
+    One approach to the problem is to build robustness into the grammar itself.
+    In the simplest case one could add top-level productions where X can expand to any nonterminal, including an &amp;quot;unknown word&amp;quot; category.
+    This grammar will cause the Earley parser to find all partial parses of substrings, effectively behaving like a bottom-up parser constructing the chart in left-to-right fashion.
+    More refined variations are possible: the top-level productions could be used to model which phrasal categories (sentence fragments) can likely follow each other.
+    This probabilistic information can then be used in a pruning version of the Earley parser (Section 6.1) to arrive at a compromise between robust and expectation-driven parsing.
+    An alternative method for making Earley parsing more robust is to 

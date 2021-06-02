@@ -1,0 +1,11 @@
+n the average of the pairs which satisfied the first three conditions.
+    Using the selected sentence pairs, we retrained only the r-table and the PCFG.
+    The rightmost tree in Figure 4 is the decoded tree using the re-trained TM.
+    The BLEU score was improved (0.085), and the tree structure looks better, though there are still problems.
+    An obvious problem is that the goodness of syntactic structure depends on the lexical choices.
+    For example, the best syntactic structure is different if a verb requires a noun phrase as object than it is if it does not.
+    The PCFG-based LM does not handle this.
+    At this point, we gave up using the PCFG as a component of the LM.
+    Using only trigrams obtains the best result for the BLEU score.
+    However, the BLEU metric may not be affected by the syntactic aspect of translation quality, and as we saw in Figure 4, we can improve the syntactic quality by introducing the PCFG using some corpus selection techniques.
+    Also, the pruning methods described in 

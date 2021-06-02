@@ -1,0 +1,8 @@
+s up to 25 words.
+    Note that this pruning technique is applicable to both the lexicalized ITG and the conventional ITG.
+    In addition to pruning based on the figure of merit described above, we use top-k pruning to limit the number of hypotheses retained for each cell.
+    This is necessary for lexicalized ITG because the number of distinct hypotheses in the two-dimensional ITG chart has increased to O(N33 N3t ) from O(N23 N2t ) due to the choice one of O(N3) source language words and one of O(Nt) target language words as the head.
+    We keep only the top-k lexicalized items for a given chart cell of a certain nonterminal Y contained in the cell l, m, i, j.
+    Thus the additional complexity of O(N3Nt) will be replaced by a constant factor.
+    The two pruning techniques can work for both the computation of expected counts during the training process and for the Viterbi-style algorithm for extracting the most probable parse after training.
+    However, if we initialize EM from a uniform distribution, al

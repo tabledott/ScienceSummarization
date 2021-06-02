@@ -1,0 +1,7 @@
+raint satisfaction (Van Den Bosch and Canisius, 2006), Hidden Markov Model (Taylor, 2005), decision trees (Black et al., 1998), and neural networks (Sejnowski and Rosenberg, 1987).
+    The training data usually consists of written words and their corresponding phonemes, which are not aligned; there is no explicit information indicating individual letter and phoneme relationships.
+    These relationships must be postulated before a prediction model can be trained.
+    Previous work has generally assumed one-to-one alignment for simplicity (Daelemans and Bosch, 1997; Black et al., 1998; Damper et al., 2005).
+    An expectation maximization (EM) based algorithm (Dempster et al., 1977) is applied to train the aligners.
+    However, there are several problems with this approach.
+    Letter strings and phoneme strings are not typically the same length, so null phonemes and null letters must be introduced to make oneto-one-alignments possible, Furthermore, two letters frequently combine to produce a single phoneme (

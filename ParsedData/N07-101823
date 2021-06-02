@@ -1,0 +1,12 @@
+h trees sampled from (G, ?0) with several different values for the parameters ofthe prior.
+			We experimented with a number of tech niques for speeding convergence of both the IO andHastings algorithms, and two of these were particularly effective on this problem.
+			Annealing, i.e., using P(t|w)1/?
+			in place of P(t|w) where ? is a ?temperature?
+			parameter starting around 5 and slowly adjusted toward 1, sped the convergence of both algo rithms.
+			We ran both algorithms for several thousanditerations over the corpus, and both seemed to con verge fairly quickly once ? was set to 1.
+			?Jittering?
+			the initial estimate of ? used in the IO algorithm also sped its convergence.
+			The IO algorithm converges to a solution where ?Word?
+			V = 1, and every string w ? w is analysed as a single morpheme V.
+			(In fact, in this grammar P(wi|?)
+			is the empirical probability of wi, and it is easy to prove that this ? is the MLE).The samples t produced by the Hastings algo rithm depend on the parameters of the Diri

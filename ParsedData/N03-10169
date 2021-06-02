@@ -1,0 +1,7 @@
+to an inside portion (solid lines) and an outside portion (dashed lines), as indicated in figure 1(a).
+    The outside portion is an outside parse: formally, an outside parse of an edge X:[i, j] in sentence s = 0wn is a derivation from G&#8217;s root symbol to w0iXwjn.
+    We use &#945;G(e, s) to denote the score of a best outside parse of e. Using b(e, s) as the edge priority corresponds to a generalization of uniform cost search on graphs (Russell and Norvig, 1995).
+    In the analogous generalization of A* search, we add to b(e, s) an estimate a(e, s) of the competion cost &#945;G(e, s) (the cost of the dashed outside parse) to focus exploration on regions of the graph which appear to have good total cost.
+    A* search is correct as long as the estimate a satisfies two conditions.
+    First, it must be admissible, meaning that it must not underestimate the actual log-probability required to complete the parse.
+    Second, it must be monotonic, meaning that as one builds up a tree, the combined log-probabi

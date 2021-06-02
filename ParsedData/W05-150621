@@ -1,0 +1,6 @@
+, we get O(|e| log k|e|) time complexity for each iteration.3 Since we are only interested in the top k elements, there are k iterations and the time complexity for a single mult?k is O(k|e| log k|e|), yielding an overall time complexity of O(|E|k log k) and reducing the multiplicative overhead by a factor of O(ka?1) (again, assuming a is constant).
+			In the context of CKY parsing, this reduces the overhead to O(k log k).
+			Figure 5 shows the additional pseudocode needed for this algorithm.
+			It is integrated into the Viterbialgorithm (Figure 3) simply by rewriting line 4 of to in voke the function M???(e, k): 4: D?(v) ? merge?k(D?(v),M???(e, k)) 4.3 Algorithm 2: combine merge?k into mult?k. We can further speed up both merge?k and mult?k by a similar idea.
+			Instead of letting each mult?k generate a full k derivations for each hyperarc e and only then applying merge?k to the results, we can combine the candidate sets for all the hyperarcs into a single candidate set.
+			That is, we initialize C to {?e, 1

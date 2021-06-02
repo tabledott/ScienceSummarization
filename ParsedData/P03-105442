@@ -1,0 +1,14 @@
+ NP[0,5] and VP[5,12] into S[0,12]).
+    Yet, only the labels are used to score the combination. capture this, DOMINATES-V marks all nodes which dominate any verbal node (V*, MD) with a -V. This brought the cumulative F1 to 86.91%.
+    We also tried marking nodes which dominated prepositions and/or conjunctions, but these features did not help the cumulative hill-climb.
+    The final distance/depth feature we used was an explicit attempt to model depth, rather than use distance and linear intervention as a proxy.
+    With RIGHT-REC-NP, we marked all NPs which contained another NP on their right periphery (i.e., as a rightmost descendant).
+    This captured some further attachment trends, and brought us to a final development F1 of 87.04%.
+  
+  
+    We took the final model and used it to parse section 23 of the treebank.
+    Figure 8 shows the results.
+    The test set F1 is 86.32% for &lt; 40 words, already higher than early lexicalized models, though of course lower than the state-of-the-art parsers.
+  
+  
+ 

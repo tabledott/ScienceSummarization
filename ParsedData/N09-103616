@@ -1,0 +1,6 @@
+ds of dealing with the large number of parameters in these models that are both more principled and more practical than the approaches described above.
+    First, we can integrate out &#952;, and second, we can infer values for the adaptor hyperparameters using sampling.
+    These methods (the latter in particular) make it practical to use Pitman-Yor Process adaptors in complex grammars such as the collocation-syllable adaptor grammar, where it is impractical to try to find optimal parameter values by grid search.
+    As we will show, they also improve segmentation accuracy, sometimes dramatically.
+    Johnson et al. (2007a) describe Gibbs samplers for Bayesian inference of PCFG rule probabilities &#952;, and these techniques can be used directly with adaptor grammars as well.
+    Just as in that paper, we place Dirichlet priors on &#952;: here &#952;X is the subvector of &#952; corresponding to rules expanding nonterminal X E N, and &#946;X is a corresponding vector of positive real numbers specifying the hy

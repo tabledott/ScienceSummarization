@@ -1,0 +1,10 @@
+requency.
+    In an extreme case, the function word the appears most frequently in English texts and would have the highest TF in the context of any W. In our HKStandard/Mingpao corpus, Hong Kong is the most frequent content word which appears everywhere.
+    So in the flu example, we would like to reduce the significance of Hong Kong's TF while keeping that of virus.
+    A common way to account for this difference is by using the inverse document frequency(IDF).
+    Among the variants of IDF, we choose the following representation from (Jones, 1979):
+  
+  
+    Next, a ranking algorithm is needed to match the unknown word vectors to their counterparts in the other language.
+    A ranking algorithm selects the best target language candidate for a source language word according to direct comparison of some similarity measures (Frakes and Baeza-Yates, 1992).
+    We modify the similarity measure proposed by (Salton and Buckley, 1988) into the following SO: where maxn = ni the maximum frequency of any word in the 

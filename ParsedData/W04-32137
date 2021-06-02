@@ -1,0 +1,7 @@
+possibly less discriminating data, since each role applies to more general relations.
+    (Indeed, in comparing the use of FrameNet roles to general thematic roles, Gildea and Jurafsky (2002) found very little difference in performance.)
+    We devise a frame matching procedure that uses the verb lexicon to determine, for each instance of a verb, the argument slots and their possible thematic roles.
+    The potential argument slots are subject, object, indirect object, and PP-object, where the latter is specialized by the individual preposition.1 Given chunked sentences with our verbs, the frame matcher uses VerbNet both to restrict the list of candidate roles for each slot, and to eliminate some of the PP slots that are likely not arguments.
+    To initialize the candidate roles precisely, we only choose roles from frames in the verb&#8217;s lexical entry (cf.
+    Table 1) that are the best syntactic matches with the chunker output.
+    We align the slots of each frame with the chunked slots, and compute the

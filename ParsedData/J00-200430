@@ -1,0 +1,7 @@
+fortunately, these parameters cannot be directly inferred from a training bitext, because we don't know which words in one half of the bitext were generated together with which words in the other half.
+    The observable features of the bitext are only the co-occurrence counts cooc(u, v) (see Section 4.1).
+    Methods for estimating translation parameters from co-occurrence counts typically involve link counts links(u, v), which represent hypotheses about the number of times that u and v were generated together, for each u and v in the bitext.
+    A link token is an ordered pair of word tokens, one from each half of the bitext.
+    A link type is an ordered pair of word types.
+    The link counts links(u, v) range over link types.
+    We can always estimate trans (u, v) by normalizing link counts so that E trans (u, v) = 1: For estimation purposes, it is convenient to also employ a separate set of nonprobabilistic parameters score(u, v), which represent the chances that u and v can ever be mutual translations

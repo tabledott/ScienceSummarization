@@ -1,0 +1,10 @@
+?
+			k ?2k 2?2k (2) where ?2k is the variance for feature dimension k. The variance can be feature dependent.
+			However for simplicity, constant variance is often used for all features.
+			We experiment an alternate version ofGaussian prior in which the variance is feature dependent.
+			We bin features by frequency in the train ing set, and let the features in the same bin share the same variance.
+			The discounted value is set to be ?k dck/Me??2 where ck is the count of features, M is the bin size set by held out validation, and dae is the ceiling function.
+			See Peng and McCallum (2004) for more details and further experiments.
+			2.2 State transition features.
+			Varying state-transition structures with different Markov order can be specified by different CRF feature functions, as determined by the number ofoutput labels y examined together in a feature func tion.
+			We define four different state transition feature functions corresponding to different Markov orders.Higher-order features capture more lon

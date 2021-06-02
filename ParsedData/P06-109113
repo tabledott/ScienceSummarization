@@ -1,0 +1,8 @@
+pace is replaced by the relevant set where is a non-negative real-valued loss function (whose specific choice is not critical for the purposes of this paper),and is a regularization parameter.
+    In our experiments, results are obtained using the following convex loss .
+    Each subspace will be significantly smaller than .
+    This is because it only includes those alternatives with score close to one of the selected truth.
+    These are the most important alternatives that are easily confused with the truth.
+    Essentially the lemma says that if the decoder works well on these difficult alternatives (relevant points), then it works well on the whole space.
+    The idea is closely related to active learning in standard classification problems, where we selectively pick the most important samples (often based on estimation uncertainty) for labeling in order to maximize classification performance (Lewis and Catlett, 1994).
+    In the active learning setting, as long as we do well on the actively selected sam

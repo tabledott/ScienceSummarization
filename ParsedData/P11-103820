@@ -1,0 +1,6 @@
+bel uncertain cases as correct rather than ill-formed words.
+    This is arguably the right approach to normalisation, in choosing to under- rather than over-normalise in cases of uncertainty.
+    As the context for a target word often contains OOV words which don&#8217;t occur in the dependency bank, we expand the dependency features to include context tokens up to a phonemic edit distance of 1 from context tokens in the dependency bank.
+    In this way, we generate dependency-based features for context words such as seee &#8220;see&#8221; in (seee, flm, +2) (based on the target word flm in the context of flm to seee).
+    However, expanded dependency features may introduce noise, and we therefore introduce expanded dependency weights wd E 10.0, 0.5, 1.0} to ameliorate the effects of noise: a weight of wd = 0.0 means no expansion, while 1.0 means expanded dependencies are indistinguishable from non-expanded (strict match) dependencies.
+    We separately introduce a threshold td E 11, 2, ...,10} on the number

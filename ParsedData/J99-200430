@@ -1,0 +1,8 @@
+uation 7.
+    For the (word, supertag) pairs that do not appear in the corpus, the word emit probability is estimated as shown in Equation 8.
+    Some of the word features used in our impleBangalore and Joshi Supertagging mentation include prefixes and suffixes of length less than or equal to three characters, capitalization, and digit features.
+    The counts for the (word, supertag) pairs for the words that do not appear in the corpus is estimated using the leaving-one-out technique (Niesler and Woodland 1996; Ney, Essen, and Kneser 1995).
+    A token UNK is associated with each supertag and its count NuNK is estimated by: where N1(TI) is the number of words that are associated with the supertag Tj that appear in the corpus exactly once.
+    N(T1) is the frequency of the supertag Tj and NuNK(TI) is the estimated count of UNK in 7.1.
+    The constant n is introduced so as to ensure that the probability is not greater than one, especially for supertags that are sparsely represented in the corpus.
+    We use w

@@ -1,0 +1,11 @@
+amp; POS tag show the lemma form and POS tag of the active predicate.
+			Voice feature is the voice (active/passive) of the current predicate.
+			This is extracted with a simple rule: a verb is identified as passive if it follows a to-be verb in the same phrase chunk and its POS tag is VBN(past participle) or it immediately follows a noun phrase.
+			Position feature describes if the current word is before or after the predicate.
+			Chunk pattern encodes the sequence of chunks from the current words to the predicate.
+			Clause tag indicates the boundary of clauses.
+			Clause path feature is a path formed from a semi-parsed tree containing only clauses and chunks.
+			Each clause is named with the chunk preceding it.
+			The clause path is the path from predicate to target word in the semi-parse tree.
+			Clause position feature is the position of the target word relative to the predicate in the semi-parse tree containing only clauses.
+			Thereare four configurations ? target word and pred icate share the same par

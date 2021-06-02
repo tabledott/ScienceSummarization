@@ -1,0 +1,9 @@
+hole model, the conditional probability p(o|A1, A2) is calculated.
+    A simple way to compute this probability is to take counts from the training data and then to use the maximum likelihood estimate (MLE) The similar way is used by lexicalized reordering model.
+    However, in our model this way can&#8217;t work because blocks become larger and larger due to using the merging rules, and finally unseen in the training data.
+    This means we can not use blocks as direct reordering evidences.
+    A good way to this problem is to use features of blocks as reordering evidences.
+    Good features can not only capture reorderings, avoid sparseness, but also integrate generalizations.
+    It is very straight to use maximum entropy model to integrate features to predicate reorderings of blocks.
+    Under the MaxEnt model, we have where the functions hi &#8712; {0, 1} are model features and the Bi are weights of the model features which can be trained by different algorithms (Malouf, 2002).
+    The input for the alg

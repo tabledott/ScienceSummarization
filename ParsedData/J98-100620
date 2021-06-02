@@ -1,0 +1,9 @@
+highest is relatively small, the classifier's choice is often incorrect.
+    One way to improve the precision of the classifier, though at the price of reduced recall, is to identify these situations and allow it to respond do not know rather than forcing a decision.
+    What is needed is a measure of the difference in the probabilities of the two senses.
+    Following the approach of Dagan and Itai (1994), we use the log of the ratio of the probabilities In(pi/p2) for this purpose.
+    Based on this value, a threshold e can be set to control when the classifier selects the most probable sense.
+    For example, if e = 2, then ln(pi/p2) must be 2 or greater for a decision to be made.
+    Dagan and Itai (1994) also describe a way to make the threshold dynamic so that it adjusts for the amount of evidence used to estimate pi and p2.
+    The basic idea is to create a one-tailed confidence interval so that we can state with probability 1 &#8212; a that the true value of the difference measure is greater than O.
+  

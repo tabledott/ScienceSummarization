@@ -1,0 +1,7 @@
+ &#163;i [~wt ~hi(e) + BLEUi(e)] et = arg maxeE &#163;i [~wt ~hi(e) &#8722; BLEUi(e)] // Update weights This loss is 0 only if some hypothesis in the oracle set is separated from all others by a margin proportional to their BLEUi differentials.
+    With loss defined in this manner, we can minimize (4) to local minimum by using an alternating training procedure.
+    For each example i, we select a fixed ez E &#65533;&#163;i* that maximizes model score; that is, w~ is used to break ties in BLEU for oracle selection.
+    With the oracle fixed, the objective becomes a standard structured SVM objective, which can be minimized using a cutting-plane algorithm, as described by Tsochantaridis et al. (2004).
+    After doing so, we can drive the loss lower still by iterating this process: re-select each oracle (breaking ties with the new ~w), then re-optimize ~w.
+    We do so 10 times.
+    We were surprised by the impact of these additional iterations on the final loss; for some sentences, &#65533;&#163;i* can be quite 

@@ -1,0 +1,7 @@
+ented with an additional regularization term so as to avoid overfitting (see Section 3.1 below).
+    The gradient of l(&#952;) is where Ep&#952;(y|x) denotes the conditional expectation given the observation sequence, i.e.
+    Although l(&#952;) is a smooth convex function, its optimum cannot be computed in closed form, and l(&#952;) has to be optimized numerically.
+    The computation of its gradient implies to repeatedly compute the conditional expectation in (5) for all input sequences x(i) and all positions t. The standard approach for computing these expectations is inspired by the forward-backward algorithm for hidden Markov models: using the notations introduced above, the algorithm implies the computation of the forward and backward recursions These recursions require a number of operations that grows quadratically with |Y |.
+  
+  
+    The standard approach for parameter estimation in CRFs consists in minimizing the logarithmic loss l(&#952;) defined by (3) with an additional `2 penalty term &#961;22 

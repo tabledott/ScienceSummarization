@@ -1,0 +1,5 @@
+e currently in the process of exploring several further enhancements to the current METEOR metric, which we believe have the potential to significantly further improve the sensitivity of the metric and its level of correlation with human judgments* Our work on these directions is described in further detail in Section 4*
+  
+  
+    The main principle behind IBM's BLEU metric (Papineni et al, 2002) is the measurement of the overlap in unigrams (single words) and higher order n-grams of words, between a translation being evaluated and a set of one or more reference translations* The main component of BLEU is n-gram precision: the proportion of the matched n-grams out of the total number of n-grams in the evaluated translation.
+    Precision is calculated separately for each n-gram order, and the precisions are combined via a geometric averaging* BLEU does not take recall into account directly* Recall &#8212; the proportion of the matched n-grams out of the total number of n-grams in the reference translation, is

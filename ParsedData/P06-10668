@@ -1,0 +1,8 @@
+This is because word order in Chinese and English is usually similar.
+    The last one is the maximum entropy based reordering model proposed by us, which will be described in the next section.
+    We define a derivation D as a sequence of applications of rules (1) &#8722; (3), and let c(D) and e(D) be the Chinese and English yields of D. The probability of a derivation D is where Pr(i) is the probability of the ith application of rules.
+    Given an input sentence c, the final translation e* is derived from the best derivation D* We developed a CKY style decoder that employs a beam search algorithm, similar to the one by Chiang (2005).
+    The decoder finds the best derivation that generates the input sentence and its translation.
+    From the best derivation, the best English e* is produced.
+    Given a source sentence c, firstly we initiate the chart with phrases from phrase translation table by applying the lexical rule.
+    Then for each cell that spans from i to j on the source side, all possible deriva

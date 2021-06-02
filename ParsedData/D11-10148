@@ -1,0 +1,9 @@
+nching triplets of parents with children: (p -+ c1c2).
+    Each child can be either an input word vector xi or a nonterminal node in the tree.
+    For the example in Fig.
+    2, we have the following triplets: ((y1 -+ x3x4), (y2 -+ x2y1), (y1 -+ x1y2)).
+    In order to be able to apply the same neural network to each pair of children, the hidden representations yi have to have the same dimensionality as the xi&#8217;s.
+    Given this tree structure, we can now compute the parent representations.
+    The first parent vector y1 is computed from the children (c1, c2) = (x3, x4): where we multiplied a matrix of parameters W (1) E Rnx2n by the concatenation of the two children.
+    After adding a bias term we applied an elementwise activation function such as tanh to the resulting vector.
+    One way of assessing how well this ndimensional vector represents its children is to try to reconstruct the children in a reconstruction layer: During training, the goal is to minimize the reconstruction errors of this input 

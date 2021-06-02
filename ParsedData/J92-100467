@@ -1,0 +1,6 @@
+dagogical example to parse spoken digit sequences up to three long, as in &amp;quot;three hundred and sixteen.&amp;quot; Included is a set of initial contextfree rules, a set of training sentences, an illustration of how to compute the path probabilities from the training sentences, and an illustration of both parsing and perplexity computation for a test sentence.
+    Since there are only five training sentences, a number of the arcs of the original grammar are lost after training.
+    This is a problem to be aware of in building grammars from example sentences.
+    In the absence of a sufficient amount of training data, some arcs will inevitably be zeroed out.
+    Unless it is desired to intentionally filter these out as being outside of the new domain, one can insert some arbitrarily small probability for these arcs, using, for example, an N-gram back-off model (Katz 1987).
+    (parentheses indicate optional elements) and = [and] The training sentences: (with spoken form) 1: 144 &amp;quot;one hundred and f

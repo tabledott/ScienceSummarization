@@ -1,0 +1,6 @@
+n in Figure 2.
+    We use POS and syntactic chunk information provided by the organizer.
+    As shown in Figure 3, we experiment with auxiliary problems from Ex 3.1 and 3.2: &#8220;Predict current (or previous or next) words&#8221;; and &#8220;Predict top-2 choices of the classifier&#8221; using feature splits &#8216;left context vs. the others&#8217; and &#8216;right context vs. the others&#8217;.
+    For word-prediction problems, we only consider the instances whose current words are either nouns or adjectives since named entities mostly consist of these types.
+    Also, we leave out all but at most 1000 binary prediction problems of each type that have the largest numbers of positive examples to ensure that auxiliary predictors can be adequately learned with a sufficiently large number of examples.
+    The results we report are obtained by using all the problems in Figure 3 unless otherwise specified. with one of three sets of labeled training examples: a small English set (10K examples randomly chosen), t

@@ -1,0 +1,6 @@
+measure was as good as BLEU.
+    One advantage of using LCS is that it does not require consecutive matches but in-sequence matches that reflect sentence level word order as ngrams.
+    The other advantage is that it automatically includes longest in-sequence common n-grams, therefore no predefined n-gram length is necessary.
+    ROUGE-L as defined in Equation 6 has the property that its value is less than or equal to the minimum of unigram F-measure of X and Y. Unigram recall reflects the proportion of words in X (reference translation) that are also present in Y (candidate translation); while unigram precision is the proportion of words in Y that are also in X. Unigram recall and precision count all co-occurring words regardless their orders; while ROUGE-L counts only in-sequence co-occurrences.
+    By only awarding credit to in-sequence unigram matches, ROUGE-L also captures sentence level structure in a natural way.
+    Consider again the example given in Section 2 that is copied here for convenience: Usi

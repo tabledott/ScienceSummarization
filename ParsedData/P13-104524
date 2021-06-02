@@ -1,0 +1,8 @@
+TT .
+    The parameter update at time step t then becomes: where &#945; is the learning rate.
+    Since we use the diagonal of Gt, we only have to store M values and the update becomes fast to compute: At time step t, the update for the i&#8217;th parameter &#952;t,i is: Hence, the learning rate is adapting differently for each parameter and rare parameters get larger updates than frequently occurring parameters.
+    This is helpful in our setting since some W matrices appear in only a few training trees.
+    This procedure found much better optima (by Pz3% labeled F1 on the dev set), and converged more quickly than L-BFGS which we used previously in RNN training (Socher et al., 2011a).
+    Training time is roughly 4 hours on a single machine.
+    In the absence of any knowledge on how to combine two categories, our prior for combining two vectors is to average them instead of performing a completely random projection.
+    Hence, we initialize the binary W matrices with: where we include the bias in the last 

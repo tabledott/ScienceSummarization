@@ -1,0 +1,10 @@
+s: given a directed graph G with vertices labeled 0, , n, does G have a path that visits each vertex exactly once and returns to its starting point?
+    We transform any Hamilton Circuit instance into an M1-DECIDE instance as follows.
+    First, we create a French vocabulary fn, associating word fi with vertex i in the graph.
+    We create a slightly larger English vocabulary eo, 'en, with eo serving as the &amp;quot;boundary&amp;quot; word for source model scoring.
+    Ultimately, we will ask Ml-DECIDE to decode the string fi . fn.
+    We create channel model tables as follows: These tables ensure that any decoding e of fi &#8211;ft, will contain the n words el, &#8226; &#8226; &#8226; , en (in some order).
+    We now create a source model.
+    For every pair (i,j) such that 0 &lt; i,j &lt; n: Finally, we set k to zero.
+    To solve a Hamilton Circuit Problem, we transform it as above (in quadratic time), then invoke Ml-DECIDE with inputs b, e, s, k, and fi .
+    &#8226; If M1-DECIDE returns yes, then there 

@@ -1,0 +1,9 @@
+on the size of the subset and the method used.
+    The Cross-Entropy method was consistently worse than the others, with a best perplexity of 99.4 on 20k sentences, and bilingual MooreLewis was consistently the best, with a lowest perplexity of 76.8.
+    And yet, none of these scores are anywhere near the perplexity of 36.96 according to the LM trained only on in-domain data.
+    From this it can be deduced that the selection methods are not finding data that is strictly indomain.
+    Rather they are extracting pseudo indomain data which is relevant, but with a differing distribution than the original in-domain corpus.
+    As further evidence, consider the results of concatenating the in-domain corpus with the best extracted subcorpora (using the bilingual MooreLewis method), shown in Table 3.
+    The change in both the dev and test scores appears to reflect dissimilarity in the underlying data.
+    Were the two datasets more alike, one would expect the models to reinforce each other rather than cancel out.
+ 

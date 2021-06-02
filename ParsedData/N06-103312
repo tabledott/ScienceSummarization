@@ -1,0 +1,9 @@
+ combines two adjacent sub sequences whenever possible.
+    This procedure produces a left-heavy binarization tree consistent with the unambiguous ITG and runs in O(n2) time since we need n passes in the worst case.
+    We modify this procedure and improve circle in Figure 4), which can be binarized only by analyzing interactions between rules.
+    Below is a simple example: it into a linear-time shift-reduce algorithm that only needs one pass through the sequence.
+    The (unique) binarization tree bi(a) for a binarizable permuted sequence a is recursively defined as follows: For example, the binarization tree for (2, 3, 5, 4) is [[2, 3], (5, 4)], which corresponds to the binarization pattern in Figure 3(a).
+    We use [] and () for straight and inverted combinations respectively, following the ITG notation (Wu, 1997).
+    The rightmost split ensures left-heavy binary trees.
+    The skeleton binarization algorithm is an instance of the widely used left-to-right shift-reduce algorithm.
+    It maintains a stac

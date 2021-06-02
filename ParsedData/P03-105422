@@ -1,0 +1,5 @@
+put trees were annotated or transformed in some way, as in Johnson (1998).
+    Given a set of transformed trees, we viewed the local trees as grammar rewrite rules in the standard way, and used (unsmoothed) maximum-likelihood estimates for rule probabilities.5 To parse the grammar, we used a simple array-based Java implementation of a generalized CKY parser, which, for our final best model, was able to exhaustively parse all sentences in section 23 in 1GB of memory, taking approximately 3 sec for average length sentences.6 The traditional starting point for unlexicalized parsing is the raw n-ary treebank grammar read from training trees (after removing functional tags and null elements).
+    This basic grammar is imperfect in two well-known ways.
+    First, the category symbols are too coarse to adequately render the expansions independent of the contexts.
+    For example, subject NP expansions are very different from object NP expansions: a subject NP is 8.7 times more likely than an object NP to expand as j

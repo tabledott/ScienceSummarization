@@ -1,0 +1,10 @@
+o the more elaborate, smoothed unknown word models that are common in many PCFG parsers, such as (Klein and Manning, 2003; Petrov et al., 2006).
+    We preprocessed the words in the sentences to obtain two extra pieces of information.
+    Firstly, each word is annotated with a distributional similarity tag, from a distributional similarity model (Clark, 2000) trained on 100 million words from the British National Corpus and English Gigaword corpus.
+    Secondly, we compute a class for each word based on the unknown word model of Klein and Manning (2003); this model takes into account capitalization, digits, dashes, and other character-level features.
+    The full set of features, along with an explanation of our notation, is listed in Table 1.
+  
+  
+    For all experiments, we trained and tested on the Penn treebank (PTB) (Marcus et al., 1993).
+    We used the standard splits, training on sections 2 to 21, testing on section 23 and doing development on section 22.
+    Previous work on (non-reranking) discrimi

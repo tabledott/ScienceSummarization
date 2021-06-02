@@ -1,0 +1,6 @@
+0.889 0.934 0.086 CLP 2 0.898 0.947 0.075 Table 1: Discriminative Model Results.
+			Alignment Recall Precision AER E ? F 0.870 0.890 0.118 F ? E 0.876 0.907 0.106 Union 0.929 0.845 0.124 Intersection 0.817 0.981 0.097 Refined 0.908 0.929 0.079 Table 2: IBM Model 4 Results.
+			the LLR-based model (CLP 1), and one with condi tional link probabilities from the heuristic alignment model (CLP 2 ).
+			All parameters were optimized onthe development set.
+			Recall, precision, and align ment error rates on the test set are shown in Table 1.
+			For comparison, we aligned our parallel corpus with IBM Model 4 using Och?s Giza++ softwarepackage (Och and Ney, 2003).4 We used the de fault configuration file included with the version ofGiza++ that we used, which resulted in five itera tions of Model 1, followed by five iterations of the HMMmodel, followed by five iterations of Model 4.We trained the models in both directions, English to-French and French-to-English, and computed the union, intersection, and what Och and Ney

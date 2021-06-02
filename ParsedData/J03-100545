@@ -1,0 +1,9 @@
+everal joined target language words are dealt with as a new lexicon entry.
+    This approach is used for the German-to-English translation experiments presented in this article.
+    In order to deal with the IBM-4 fertility parameters within the DP-based concept, we adopt the distinction between open and closed hypotheses given in Berger et al. (1996).
+    A hypothesis is said to be open if it is to be aligned with more source positions than it currently is (i.e., at least two).
+    Otherwise it is called closed.
+    The difference between open and closed is used to process the input sentence one position a time (for details see Tillmann 2001).
+    The word reordering restrictions and the beam search pruning techniques are directly carried over to the full set of IBM-4 parameters, since they are based on restrictions on the coverage vectors C only.
+    To ensure its correctness, the implementation was tested by carrying out forced alignments on 500 German-to-English training sentence pairs.
+    In a forced al

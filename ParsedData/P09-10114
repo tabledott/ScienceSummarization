@@ -1,0 +1,6 @@
+rio to refer to such a (w, s) pair.
+    The text is simply a sequence of words w = (wi, ... , w|w|).
+    We represent the world state s as a set of records, where each record r E s is described by a record type r.t E T and a tuple of field values r.v = (r.vi, ... , r.vm).1 For example, temperature is a record type in the weather domain, and it has four fields: time, min, mean, and max.
+    The record type r.t E T specifies the field type r.tf E {INT, STR, CAT} of each field value r.vf, f = 1, ... , m. There are three possible field types&#8212;integer (INT), string (STR), and categorical (CAT)&#8212;which are assumed to be known and fixed.
+    Integer fields represent numeric properties of the world such as temperature, string fields represent surface-level identifiers such as names of people, and categorical fields represent discrete concepts such as score types in football (touchdown, field goal, and safety).
+    The field type determines the way we expect the field value to be rendered in words: integer fi

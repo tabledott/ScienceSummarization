@@ -1,0 +1,8 @@
+or is addressed by the second enhancement.
+    We propose modifying the optimization criterion of training to perform ranking rather than classification of clusters.
+    Consider a training example cluster with a negative label, indicating that not all of the noun phrases it contains are coreferent.
+    A classification training algorithm will &#8220;penalize&#8221; all the features associated with this cluster, since they correspond to a negative example.
+    However, because there may exists subsets of the cluster that are coreferent, features representing these positive subsets may be unjustly penalized.
+    To address this problem, we propose constructing training examples consisting of one negative examWe propose augmenting the Pairwise Model to enable classification decisions over sets of noun phrases.
+    Given a set of noun phrases xj = {xi}, let the binary random variable yj be 1 if all the noun phrases xi E xj are coreferent.
+    The features fk and weights Ak are defined as before, but now the feat

@@ -1,0 +1,11 @@
+xt,yi)?F (xi,yp))||??u ||2??w ? ??w + ? ?
+			??u ??v ? ~v + ? ?
+			??u return ??w , ??v al., 2006).
+			The parameters of the function are the weight vectors ??w and ??v , the sentence xi, the gold dependency structure yi, the predicted dependency structure yp, and the update weight ?.
+			The function ? calculates the number ofwrong labeled edges.
+			The update function updates the weight vectors, if at least one edge is la beled wrong.
+			It calculates the difference ??u of the feature vectors of the gold dependency structure ?(xi, yi) and the predicted dependency structure?(xi, yp).
+			Each time, we use the feature represen tation ?, the hash function h maps the features to integer numbers between 1 and |??w |.
+			After that the update function calculates the margin ? and updates ??w and ??v respectively.
+			Algorithm 3 shows the training algorithm forthe Hash Kernel in pseudo code.
+			A main dif ference to the baseline algorithm is that it does not store the features because of the required time which is ne

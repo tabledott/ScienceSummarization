@@ -1,0 +1,8 @@
+ber of syntactically motivated evaluation metrics computed by automatically parsing both reference and hypothesis sentences.
+    Our experiments measure how well these metrics correlate with human judgments, both for individual sentences and over a large test set translated by MT systems of varying quality.
+  
+  
+    In order to give a clear and direct evaluation for the fluency of a sentence, syntax trees are used to generate metrics based on the similarity of the MT hypothesis&#8217;s tree and those of the references.
+    We can&#8217;t expect that the whole syntax tree of the hypothesis can always be found in the references, thus our approach is to be based on the fractions of the subtrees which also appear in the reference syntax trees.
+    This idea is intuitively derived from BLEU, but with the consideration of the sparse subtrees which lead to zero fractions, we average the fractions in the arithmetic mean, instead of the geometric mean used in BLEU.
+    Then for each hypothesis, the fractions of subtr

@@ -1,0 +1,9 @@
+ be a {0,1}-variable, defined to be 1 if and only if variable u is labeled i, where u &#8712; E, i &#8712; GE or u &#8712; R, i &#8712; GR.
+    For example, x{E1,21 = 1 when the label of entity E1 is 2; x{R23,31 = 0 when the label of relation R23 is not 3.
+    Let x{Rij,r,Ei,e11 be a {0,1}-variable indicating whether relation Rij is assigned label r and its first argument, Ei, is assigned label e1.
+    For instance, x{R12,1,E1,21 = 1 means the label of relation R12 is 1 and the label of its first argument, E1, is 2.
+    Similarly, x{Rij,r,Ej,e21 = 1 indicates that Rij is assigned label r and its second argument, Ej, is assigned label e2.
+    With these definitions, the optimization problem can be represented as the following ILP problem (Figure 1).
+    Equations (2) and (3) require that each entity or relation variable can only be assigned one label.
+    Equations (4) and (5) assure that the assignment to each entity or relation variable is consistent with the assignment to its neighboring variables.
+    (6),

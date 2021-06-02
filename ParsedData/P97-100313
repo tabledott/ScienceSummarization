@@ -1,0 +1,10 @@
+d estimates with the context at levels 1, 2 and 3 in the table, and Ai , A2 and A3 are smoothing parameters where 0 &lt; Ai &lt; 1.
+    All words occurring less than 5 times in training data, and words in test data which have never been seen in training, are replaced with the &amp;quot;UNKNOWN&amp;quot; token.
+    This allows the model to robustly handle the statistics for rare or new words.
+    Part of speech tags are generated along with the words in this model.
+    When parsing, the POS tags allowed for each word are limited to those which have been seen in training data for that word.
+    For unknown words, the output from the tagger described in (Ratnaparkhi 96) is used as the single possible tag for that word.
+    A CKY style dynamic programming chart parser is used to find the maximum probability tree for each sentence (see figure 6).
+  
+  
+    The parser was trained on sections 02 - 21 of the Wall Street Journal portion of the Penn Treebank (Marcus et al. 93) (approximately 40,000 sentences), and test

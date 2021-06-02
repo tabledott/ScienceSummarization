@@ -1,0 +1,7 @@
+his very simple scheme guarantees that the final set of dependencies will have as many votes as possible, but it does not guarantee that the final voted set of dependencies will be a well-formed dependency tree.
+    In fact, the resulting graph may not even be connected.
+    Zeman &amp; &#381;abokrtsk&#253; (2005) apply this dependency voting scheme to Czech with very strong results.
+    However, when the constraint that structures must be well-formed is enforced, the accuracy of their results drops sharply.
+    Instead, if we reparse the sentence based on the output of the m parsers, we can maximize the number of votes for a well-formed dependency structure.
+    Once we have obtained the m initial dependency structures to be combined, the first step is to build a graph where each word in the sentence is a node.
+    We then create weighted directed edges between the nodes corresponding to words for which dependencies are obtained from each of the initial structures.1 In cases where more than one dependency st

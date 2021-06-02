@@ -1,0 +1,8 @@
+e Meyers et al. (2001b).
+    In parallel with parsing and GLARFing, we also apply NE tagging and coreference resolution for each article in a basic cluster.
+    We used an HMM-based NE tagger whose performance is about 85% in Fscore.
+    This NE tagger produces ACE-type Named Entities 1: PERSON, ORGANIZATION, GPE, LOCATION and FACILITY 2.
+    After applying singledocument coreference resolution for each article, we connect the entities among different articles in the same basic cluster to obtain cross-document coreference entities with simple string matching.
+    After getting a GLARF structure for each sentence and a set of documents whose entities are tagged and connected to each other, we merge the two outputs and create a big network of GLARF structures whose nodes are interconnected across different sentences/articles.
+    Now we can generate basic patterns for each entity.
+    First, we compute the weight for each cross-document entity E in a certain basic cluster as follows: where e &#8712; E is an ent

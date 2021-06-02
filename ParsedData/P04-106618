@@ -1,0 +1,6 @@
+odel by raising each LLR score to an empirically optimized exponent before summing the resulting scores and scaling them from 0 to 1 as described above.
+    Choosing an exponent less than 1.0 decreases the degree to which low scores are discounted, and choosing an exponent greater than 1.0 increases degree of discounting.
+    We still have to define an initialization of the translation probabilities for the null word.
+    We cannot make use of LLR scores because the null word occurs in every source sentence, and any word occuring in every source sentence will have an LLR score of 0 with every target word, since p(t|s) = p(t) in that case.
+    We could leave the distribution for the null word as the uniform distribution, but we know that a high proportion of the words that should align to the null word are frequently occuring function words.
+    Hence we initialize the distribution for the null word to be the unigram distribution of target words, so that frequent function words will receive a higher probabilit

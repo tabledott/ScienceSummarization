@@ -1,0 +1,9 @@
+nking algorithm, which is a greedy approximation to the MAP approximation: bitext linked to NULL.
+    Otherwise, link all co-occurring token pairs (u, v) in the bitext.
+    (D) The one-to-one assumption implies that linked words cannot be linked again.
+    Therefore, remove all linked word tokens from their respective halves of the bitext.
+    The competitive linking algorithm can be viewed as a heuristic search for the most likely assignment in the space of all possible assignments.
+    The heuristic is that the most likely assignments contain links that are individually the most likely.
+    The search proceeds by a process of elimination.
+    In the first search iteration, all the assignments that do not contain the most likely link are discarded.
+    In the second iteration, all the assignments that do not contain the second most likely link are discarded, and so on until only one assignment remains.&amp;quot; The algorithm greedily selects the most likely links first, and then selects less likely links on

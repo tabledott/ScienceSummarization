@@ -1,0 +1,8 @@
+sed on the Europarl resources (Europarl, 2003).
+			The only change made to these corpora was to convert them to lowercase and to Unicode UTF-8.
+			Phrasetables were produced by symmetrizing IBM2 conditional probabilities as described above.
+			The phrasetables were then used as a list of n,m-grams for which counts C(s?, t?), C(s?), and C(t?) were obtained.
+			Negative-log-p-values under Fisher?s exact test were computed for each of the phrase pairs in the phrasetable and the entry was censored if the negative-log-p-value for the test was below the pruning threshold.
+			The entries that are kept are ones that are highly significant.A number of combinations involving many differ ent pruning thresholds were considered: no pruning,10, ??, ?+, 15, 20, 25, 50, 100, and 1000.
+			In ad dition, a number of different phrasetable smoothing algorithms were used: no smoothing, Good-Turing smoothing, Kneser-Ney 3 parameter smoothing and the loglinear mixture involving two features called Zens-Ney (Foster et al, 2006).
+			3

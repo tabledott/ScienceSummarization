@@ -1,0 +1,7 @@
+th predicate p, then the denotation of z has one column with the tuples w(p) and an empty store.
+    The other six cases handle different edge relations.
+    These definitions depend on several operations (mj,j0, E, Xi, M) which we will define shortly, but let us first get some intuition.
+    Let z be a DCS tree.
+    If the last child c of z&#8217;s root is a join (jj0), aggregate (E), or execute (Xi) relation ((4)&#8211;(6)), then we simply recurse on z with c removed and join it with some transformation (identity, E, or Xi) of c&#8217;s denotation.
+    If the last (or first) child is connected via a mark relation E, C (or Q), then we strip off that child and put the appropriate information in the store by invoking M. We now define the operations mj,j0, E, Xi, M. Some helpful notation: For a sequence v = (v1,... , vn) and indices i = (i1, ... , ik), let vi = (vi1, ... , vik) be the projection of v onto i; we write v&#8722;i to mean v&#65533;1 i.
+    Extending this notation to denotations, let (hA; &#945;ii[i

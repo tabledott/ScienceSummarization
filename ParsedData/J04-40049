@@ -1,0 +1,8 @@
+nt and then generating its head and modifier children; the process terminates when (lexicalized) preterminals are generated.
+    As a way to guarantee the consistency of the model, the model also generates two hidden +STOP+ nonterminals as the leftmost and rightmost children of every parent (see Figure 7).
+  
+  
+    To the casual reader of Collins&#8217; thesis, it may not be immediately apparent that there are quite a few preprocessing steps for each annotated training tree and that these steps are crucial to the performance of the parser.
+    We identified 11 preprocessing steps necessary to prepare training trees when using Collins&#8217; parsing model: The order of presentation in the foregoing list is not arbitrary, as some of the steps depend on results produced in previous steps.
+    Also, we have separated the steps into their functional units; an implementation could combine steps that are independent of one another (for clarity, our implementation does not, however).
+    Finally, we note that the fi

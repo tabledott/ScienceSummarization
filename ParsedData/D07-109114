@@ -1,0 +1,7 @@
+component, each feature function hT is defined over the phrase pairs (f?j , e?j) 871 given a scoring function ? : hT(e, f) = ? j ?(f?j , e?j) (3) For a generation step component, each feature function hG given a scoring function ? is defined over the output words ek only: hG(e, f) = ? k ?(ek) (4) The feature functions follow from the scoring functions (?
+			, ?) acquired during the training oftranslation and generation tables.
+			For instance, re call our earlier example: a scoring function for a generation model component that is a conditional probability distribution between input and output factors, e.g., ?(fish,NN,singular) = p(NN|fish).
+			The feature weights ?i in the log-linear model are determined using a minimum error rate training method, typically Powell?s method (Och, 2003).
+			5.3 Efficient Decoding.
+			Compared to phrase-based models, the decomposi tion of phrase translation into several mapping stepscreates additional computational complexity.
+			In stead of a simple table look-up to obtain the

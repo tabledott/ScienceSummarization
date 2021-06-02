@@ -1,0 +1,8 @@
+anch&#8221; we mean those places in the trie where some splitting occurs.
+    In the case of Figure 2, for example, the branches NULL (empty circle), &#8220;-s&#8221; and &#8220;-ed&#8221; each appear twice.
+    We assemble a list of all trie branches that occur some minimum number of times (T2) and refer to such as potential suffixes.
+    Given this list, we can now find potential prefixes using a similar strategy.
+    Using our original lexicon, we can now strip off all potential suffixes from each word and form a new augmented lexicon.
+    Then, (as we had proposed before) if we reverse the ordering on the words and insert them into a trie, the branches that are formed will be potential prefixes (in reverse order).
+    Before describing the last steps of this procedure, it is beneficial to define a few terms (some of which appeared in our previous work): Our final goal in this first stage of induction is to find all of the possible rules and their corresponding rulesets.
+    We therefore re-evaluate each w

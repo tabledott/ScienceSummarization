@@ -1,0 +1,8 @@
+transition diagram for a transducer that accepts a replacement relation.
+    As before, the start-state is labeled 0 and only transitions are shown from which the final-state is reachable.
+    We must now define relations that guarantee that context-markers do in fact appear on the strings that Replace applies to, and only when sanctioned by instances of A and p. We do this in two stages.
+    First, we use simple relations to construct a Prologue operator that freely introduces the context markers in m: An output string of Prologue is just like the corresponding input except that brackets appear in arbitrary positions.
+    The relation Prologue-I removes all brackets that appear on its input.
+    Second, we define more complex identity relations that pair a string with itself if and only if those markers appear in the appropriate contexts.
+    The P-if-S operator is the key component of these context-identifying predicates.
+    The condition we must impose for the left context is that the left-context bracket

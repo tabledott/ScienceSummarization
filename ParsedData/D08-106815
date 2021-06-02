@@ -1,0 +1,8 @@
+d words).
+    We determined the head of a mention either by taking its rightmost token, or by using the head rules in a parser.
+    We detected pronouns using a list.
+    The main query predicate is InClust(m, c!
+    ), which is true iff mention m is in cluster c. The &#8220;t!&#8221; notation signifies that for each m, this predicate is true for a unique value of c. The main evidence predicate is Head(m, t!
+    ), where m is a mention and t a token, and which is true iff t is the head of m. A key component in our MLN is a simple head mixture model, where the mixture component priors are represented by the unit clause InClust(+m, +c) and the head distribution is represented by the head prediction rule All free variables are implicitly universally quantified.
+    The &#8220;+&#8221; notation signifies that the MLN contains an instance of the rule, with a separate weight, for each value combination of the variables with a plus sign.
+    By convention, at each inference step we name each non-empty cluster after 

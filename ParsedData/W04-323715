@@ -1,0 +1,9 @@
+ capitalizer used a vocabulary of the most likely 100k wds derived from the training data.
+    We first evaluated the in-domain and out-ofdomain relative performance of the 1-gram and the MEMM capitalizers as a function of the amount of training data.
+    The results are presented in Table 3.
+    The MEMM capitalizer performs about 45% better domain (WSJ-test) and out-of-domain (BN-dev) data for various amounts of training data than the 1-gram one when trained and evaluated on Wall Street Journal text.
+    The relative performance improvement of the MEMM capitalizer over the 1gram baseline drops to 35-40% when using out-ofdomain Broadcast News data.
+    Both models benefit from using more training data.
+    We have then adapted the best MEMM model built on 20Mwds on the two BN data sets (CNN/ABC) and compared performance against the 1-gram and the unadapted MEMM models.
+    There are a number of parameters to be tuned on development data.
+    Table 4 presents the variation in model size with different count c

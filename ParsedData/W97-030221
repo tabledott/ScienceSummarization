@@ -1,0 +1,7 @@
+ding, we remove from consideration the descendants of all nodes whose inside-outside probability falls below a threshold.
+    In our pilot experiments, we found that in some cases one technique works slightly better, and in some cases the other does.
+    We therefore ran our experiments using both thresholds together.
+    One nice feature of multiple-pass parsing is that under special circumstances, it is an admissible search technique, meaning that we are guaranteed to find the best solution with it.
+    In particular, if we parse using no thresholding, and our grammars have the property that for every non-zero probability parse in the second pass, there is an analogous non-zero probability parse in the first pass, then multiple-pass search is admissible.
+    Under these circumstances, no non-zero probability parse will be thresholded out, but many zero probability parses may be removed from consideration.
+    While we will almost always wish to parse using thresholds, it is nice to know that multiple-pass p

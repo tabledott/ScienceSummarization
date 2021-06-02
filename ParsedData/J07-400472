@@ -1,0 +1,8 @@
+chart.
+    For each equivalence class, we record the individual entry at the root of the subderivation which has the highest score for the class.
+    The equivalence classes were defined so that any other individual entry cannot be part of the highest scoring derivation for the sentence.
+    The score for a subderivation d is Ei &#955;ifi(d) where fi(d) is the number of times the ith feature occurs in the subderivation.
+    The highest-scoring subderivations can be calculated recursively using the highest-scoring equivalence classes that were combined to create the individual entry.
+    For the dependency model, the highest scoring dependency structure is required.
+    Clark and Curran (2003) outline an algorithm for finding the most probable dependency structure, which keeps track of the highest scoring set of dependencies for each node in the chart.
+    For a set of equivalent entries in the chart (a disjunctive node), this involves summing over all conjunctive node daughters which head sub-derivations lead

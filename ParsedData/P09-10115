@@ -1,0 +1,8 @@
+elds can be numerically perturbed, string fields can be spliced, and categorical fields are represented by open-ended word distributions, which are to be learned.
+    See Section 3.3 for details.
+    In this domain, a Robocup simulator generates the state of a soccer game, which is represented by a set of event records.
+    For example, the record pass(arg1=pink1,arg2=pink5) denotes a passing event; this type of record has two fields: arg1 (the actor) and arg2 (the recipient).
+    As the game is progressing, humans interject commentaries about notable events in the game, e.g., pink] passes back to pink5 near the middle of the field.
+    All of the fields in this domain are categorical, which means there is no a priori association between the field value pink1 and the word pink].
+    This degree of flexibility is desirable because pink] is sometimes referred to as pink goalie, a mapping which does not arise from string operations but must instead be learned.
+    We used the dataset created by Chen and Mooney (

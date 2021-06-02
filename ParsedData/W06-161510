@@ -1,0 +1,9 @@
+fication.
+    We follow Ando and Zhang (2005a) and use the modified Huber loss.
+    Since each instance contains features which are totally predictive of the pivot feature (the feature itself), we never use these features when making the binary prediction.
+    That is, we do not use any feature derived from the right word when solving a right token pivot predictor.
+    The pivot predictors are the key element in SCL.
+    The weight vectors *t encode the covariance of the non-pivot features with the pivot features.
+    If the weight given to the z&#8217;th feature by the E&#8217;th pivot predictor is positive, then feature z is positively correlated with pivot feature E. Since pivot features occur frequently in both domains, we expect non-pivot features from both domains to be correlated with them.
+    If two non-pivot features are correlated in the same way with many of the same pivot features, then they have a high degree of correspondence.
+    Finally, observe that *t is a linear projection of the original 

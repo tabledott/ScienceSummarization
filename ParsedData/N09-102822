@@ -1,0 +1,9 @@
+.
+    For all results reported in this section, we used a maximum allowed reordering distance of 10.
+    In order to see how the lexicalized reordering model performs, we also included systems with and without it (-LR means without it).
+    PR is our proposed approach in this paper.
+    Note that since we apply precedence reordering rules during preprocessing, we can combine this approach with any other reordering models used during decoding.
+    The only difference is that with the precedence reordering, we would have a different phrase table and in the case of LR, different maximum entropy models.
+    In order to implement the precedence rules, we need a dependency parser.
+    We choose to use a deterministic inductive dependency parser (Nivre and Scholz, 2004) for its efficiency and good accuracy.
+    Our implementation of the deterministic dependency parser using maximum entropy models as the underlying classifiers achieves 87.8% labeled attachment score and 88.8% unlabeled attachment score on standard Pe

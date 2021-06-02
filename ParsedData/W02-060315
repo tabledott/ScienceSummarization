@@ -1,0 +1,13 @@
+rocessing of the words encountered so far, takes place five times, which can be seen as sudden drops on the curve.
+  
+  
+    In this case, we use as cost function the likelihood of the data, i.e., P(data|model).
+    Thus, the model cost is not included.
+    This corresponds to MaximumLikelihood (ML) learning.
+    The cost is then where the summation is over all morph tokens in the source data.
+    As before, for p(mi) we use the ML estimate, i.e., the token count of mi divided by the total count of morph tokens.
+    In this case, we utilize batch learning where an EMlike (Expectation-Maximization) algorithm is used for optimizing the model.
+    Moreover, splitting is not recursive but proceeds linearly.
+    Note that the possibility of introducing a random segmentation at step (c) is the only thing that allows for the addition of new morphs.
+    (In the cost function their cost would be infinite, due to ML probability estimates).
+    In fact, without this step the algorithm seems to get seriously stuck in sub

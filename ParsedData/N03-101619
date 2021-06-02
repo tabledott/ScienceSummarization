@@ -1,0 +1,9 @@
+lt in substantial improvement.
+    It is worth explicitly discussing how the F estimate differs from top-down grammar-driven filtering standardly used by top-down chart parsers; in the treebank grammar, there is virtually no top-down filtering to be exploited (again, see Klein and Manning (2001b)).
+    In a left-to-right parse, top-down filtering is a prefix licensing condition; F is more of a sophisticated lookahead condition on suffixes.
+    The relationships between all of these estimates are shown in figure 4.
+    The estimates form a join lattice (figure 4(a)): adding context information to a merged context estimate can only sharpen the individual outside estimates.
+    In this sense, for example S &#65533; SX.
+    The lattice top is TRUE and the bottom is NULL.
+    In addition, the minimum (U) of a set of admissible estimates is still an admissible estimate.
+    We can use this to combine our basic estimates into composite estimates: SXMLR = U (SXL, SXR) will be valid, and a better estimate than either 

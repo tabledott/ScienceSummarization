@@ -1,0 +1,6 @@
+he above heuristic assigns two syntactic heads to ARG1: sales, which modifies expects through an OBJ dependency, and to, which modifies expects through a PRD dependency.
+    These situations are caused by the constituent-to-dependency conversion process described in Section 3.2.1, which in some cases interprets syntax differently than the original Treebank annotation, e.g., the raising phenomenon for the PRD dependency in the above example.
+    In such cases, we split the original argument into a sequence of discontinuous arguments, e.g., the ARG1 in the above example becomes [its U.S. sales]ARG1 [to remain steady at about 1200 cars]C-ARG1.
+    While in the above case we split arguments, there are situations where we can merge arguments that were initially discontinuous in PropBank or NomBank.
+    This typically happens when the PropBank/NomBank predicate is infixed inside one of its arguments.
+    For example, in the text [Milliondollar conferences]ARG1 were [held]PRED [to chew on subjects such as... ]C-ARG1

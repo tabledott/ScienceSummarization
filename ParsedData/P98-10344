@@ -1,0 +1,7 @@
+ annotated text of Figure 1 as our training corpus.
+    To identify base NPs in an unseen text, we could simply search for all occurrences of the base NPs seen during training &#8212; it, time, their biannual powwow, .. .
+    , Hot Springs &#8212; and mark them as base NPs in the new text.
+    However, this method would certainly suffer from data sparseness.
+    Instead, we use a similar approach, but back off from lexical items to parts of speech: we identify as a base NP any string having the same part-of-speech tag sequence as a base NP from the training corpus.
+    The training phase of the algorithm employs two previously successful techniques: like Charniak's (1996) statistical parser, our initial base NP grammar is read from a &amp;quot;treebank&amp;quot; corpus; then the grammar is improved by selecting rules with high &amp;quot;benefit&amp;quot; scores.
+    Our benefit measure is identical to that used in transformation-based learning to select an ordered set of useful transformations (Brill, 1995).

@@ -1,0 +1,7 @@
+theweight for each feature is is incremented by the dif ference between the value of the feature for the best alignment according to the model and the value of the feature for the reference alignment: ?i ? ?i + (fi(aref , e, f)?
+			fi(ahyp, e, f)) The updated feature weights are used to compute ahyp for the next sentence pair.
+			Iterating through the data continues until the weights stop changing, because aref = ahyp foreach sentence pair, or until some other stopping con dition is met.
+			In the averaged perceptron, the feature weights for the final model are the average of the weight values over all the data rather than simply the values after the final sentence pair of the final iteration.
+			We make a few modifications to the procedure as described by Collins.
+			First, we average the weight values over each pass through the data, rather thanover all passes, as we found this led to faster con vergence.
+			After each pass of perceptron learning through the data, we make another pass through thedata with f

@@ -1,0 +1,11 @@
+ results after the TransformationBased Learner is applied.
+    The results show that using Transformation-Based learning only give rise to slight improvements.
+    It seems that the bidirectional approach does not help much for the LMR tagging.
+    Therefore, we only submitted the results of our leftto-right MEMM tagger, retrained on the entire training sets, as our official results.
+    The results on the official test data is similar to what we have got on our development set, except that the F-score on the Beijing Univ. corpus is over 2 lower in absolute accuracy than what we expected.
+    The reason is that in the training data of Beijing University corpus, all the numbers are encoded in GBK, while in the test data many numbers are encoded in ASCII, which are unknown to our tagger.
+    With this problem fixed, the results of the official test data are compatible with the results on our development set.
+    However, we have withdrawn our segmentation results on the Beijing University corpus.
+  
+  
+    Our 

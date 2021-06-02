@@ -1,0 +1,7 @@
+ntiguous NL substring, where the MR substructure rooted by MR production mv will correspond to (i.e., hierarchically generate) the NL substring wv.
+    The symbol h is used to denote a hybrid sequence, and the function Parent(h) gives the unique MR substructure-NL subsequence pair which can be decomposed as h. Parent(nv) returns the set of all possible hybrid sequences under which the pair nv can be generated.
+    Similarly, Children(h) gives the NL-MR pairs that appear directly below the hybrid sequence h in a hybrid tree, and Children(n) returns the set of all possible hybrid sequences that n can be decomposed as.
+    Figure 4 gives a packed tree structure representing the relations between the entities.
+    The formulas for computing inside and outside probabilities as well as the equations for updating parameters are given in Figure 5.
+    We use a CKYstyle parse chart for tracking the probabilities.
+    It is reasonable to believe that different MR productions that share identical function symbols are li

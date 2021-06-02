@@ -1,0 +1,7 @@
+eference to Yamada and Matsumoto (2003), whose parser has to find all children of a token before it can attach that token to its head.
+    We will refer to this as &#8220;bottom-up-trees&#8221;.
+    Another use of &#8220;bottom-up&#8221; is due to Eisner (1996), who introduced the notion of a &#8220;span&#8221;.
+    A span consists of a potential dependency arc r between two tokens i and j and all those dependency arcs that would be spanned by r, i.e. all arcs between tokens k and l with i &lt; k, l &lt; j. Parsing in this order means that the parser has to find all children and siblings on one side of a token before it can attach that token to a head on the same side.
+    This approach assumes projective dependency structures.
+    Eisner called this approach simply &#8220;bottomup&#8221;, while Nivre, whose parser implicitly also follows this order, called it &#8220;top-down/bottom-up&#8221; to distinguish it from the pure &#8220;bottom-up(-trees)&#8221; order of Yamada and Matsumoto (2003).
+    To avoid con

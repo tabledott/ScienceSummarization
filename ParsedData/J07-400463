@@ -1,0 +1,6 @@
+ser could improve the accuracy of a parsing model.
+    In fact, we have found that adding long-range dependencies to any of the models described in this article has no impact on accuracy.
+    One possible explanation is that the long-range dependencies are so rare that a much larger amount of training data would be required for these dependencies to have an impact.
+    Of course the fact that CCG enables recovery of long-range dependencies is still a useful property, even if these dependencies are not currently useful as features, because it improves the utility of the parser output.
+    There is considerable flexibility in defining the features for a parsing model in our log-linear framework, as the long-range dependency example demonstrates, but the need for dynamic programming for both estimation and decoding reduces the range of features which can be used.
+    Any extension to the &#8220;locality&#8221; of the features would reduce the effectiveness of the chart packing and any dynamic programming perform

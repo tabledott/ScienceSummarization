@@ -1,0 +1,7 @@
+In our case however this can make a big difference.We are not just looking up a score for the rule, but must compute all the features, and dot product them with the feature weights, which is far more time consuming.
+    We also have to do an outside pass as well as an inside one, which is sped up by not considering impossible rule applications.
+    Lastly, we iterate through the data multiple times, so if we can compute this information just once, we will save time on all subsequent iterations on that sentence.
+    We do this by doing an insideoutside pass that is just boolean valued to determine which rules are possible at which positions in the chart.
+    We simultaneously compute the features for the possible rules and then save the entire data structure to disk.
+    For all but the shortest of sentences, the disk I/O is easily worth the time compared to recomputation.
+    The first time we see a sentence this method is still about one third faster than if we did not do the prefiltering, and on subsequent 

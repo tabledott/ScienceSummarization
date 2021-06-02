@@ -1,0 +1,8 @@
+ication, which is difficult due to the fact that the polarity scores in the three lexicons are not on the same scale.
+    To rank sentences we defined the purity of a sentence X as the normalized sum of the sentiment scores for each phrase x in the sentence: This is a normalized score in the range [&#8722;1, 1].
+    Intuitively, sentences with many terms of the same polarity will have purity scores at the extreme points of the range.
+    Before calculating purity, a simple negation heuristic was implemented that reversed the sentiment scores of terms that were within the scope of negations.
+    The term 6 helps to favor sentences with multiple phrase matches.
+    Purity is a common metric used for ranking sentences for inclusion in sentiment summaries (Lerman et al., 2009).
+    Purity and negative purity were used to rank sentences as being positive and negative sentiment, respectively.
+    The data used in our initial English-only experiments were a set of 554 consumer reviews described in (McDonald et al., 

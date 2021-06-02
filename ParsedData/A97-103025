@@ -1,0 +1,9 @@
+type (a person, for example) results in a high condifence score (highly confident that this is a person name), we determine that the name unambiguously refers to this type.
+    Otherwise, we choose the highest score obtained by the various heuristics.
+    A few simple indicators can unambiguously determine the entity type of a name, such as Mr. for a person or Inc. for an organization.
+    More commonly, however, several pieces of positive and negative evidence are accumulated in order to make this judgement.
+    We have defined a set of obligatory and optional components for each entity type.
+    For a human name, these components include a professional title (e.g., Attorney General), a personal title (e.g., Dr.), a first name, middle name, nickname, last name, and suffix (e.g., Jr.).
+    The combination of the various components is inspected.
+    Some combinations may result in a high negative score &#8212; highly confident that this cannot be a person name.
+    For example, if the name lacks a personal tit

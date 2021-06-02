@@ -1,0 +1,11 @@
+trument: explosives We focus on these four string-based slots1 from the MUC-4 corpus, as is standard in this task.
+    The corpus consists of 1300 documents, 733 of which are labeled with at least one template.
+    There are six types of templates, but only four are modestly frequent: bombing (208 docs), kidnap (83 docs), attack (479 docs), and arson (40 docs).
+    567 documents do not have any templates.
+    Our learning algorithm does not know which documents contain (or do not contain) which templates.
+    After learning event words that represent templates, we induce their slots, not knowing a priori how many there are, and then fill them in by extracting entities as in the standard task.
+    In our example above, the three bold verbs (use, attack, wound) indicate the Bombing template, and their syntactic arguments fill its slots.
+  
+  
+    Our goal is to learn templates that characterize a domain as described in unclustered, unlabeled documents.
+    This presents a two-fold problem to the learner: it doe

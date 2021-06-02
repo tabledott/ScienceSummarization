@@ -1,0 +1,5 @@
+form distribution of false positives, the average penalty is k2, as described earlier.
+    In general, in large enough segments, the penalty when the false positive is a distance d &lt; k from a boundary is d, and the penalty when the false positive is a distance d &gt; k from a boundary is k. Thus, for larger segments, the average penalty assuming a uniform distribution becomes larger, because there are more places in the segment that are at least k positions away from a boundary.
+    The behavior at the edges of the segments remains the same, though, so the average penalty never reaches k. Now, consider what happens with smaller segments.
+    Suppose we have a false positive in Segment A.
+    As Size(A) decreases from 2k to k, the average false positive penalty decreases linearly with it, because when Size(A) decreases below 2k, the maximum distance any sentence can be from a boundary becomes less than k. Therefore, the A reference segmentation and five different hypothesized segmentations with different pr

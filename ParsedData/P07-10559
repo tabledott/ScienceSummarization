@@ -1,0 +1,6 @@
+ dependencies between sentiment labels on sentences is similar to the work of Pang and Lee (2004) where soft local consistency constraints were created between every sentence in a document and inference was solved using a min-cut algorithm.
+    However, jointly modeling the document label and allowing for non-binary labels complicates min-cut style solutions as inference becomes intractable.
+    Learning and inference in undirected graphical models is a well studied problem in machine learning and NLP.
+    For example, CRFs define the probability over the labels conditioned on the input using the property that the joint probability distribution over the labels factors over clique potentials in undirected graphical models (Lafferty et al., 2001).
+    In this work we will use structured linear classifiers (Collins, 2002).
+    We denote the score of a labeling y for an input s as score(y, s) and define this score as the sum of scores over each clique, where each clique score is a linear combination of features a

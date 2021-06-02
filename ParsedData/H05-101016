@@ -1,0 +1,5 @@
+an already make a stab 77 at word alignment, aligning, say, each English word with the French word (or null) with thehighest Dice value (see (Melamed, 2000)), sim ply as a matching-free heuristic model.
+			With Dice counts taken from the 1.1M sentences, thisgives and AER of 38.7 with English as the tar get, and 36.0 with French as the target (in line with the numbers from Och and Ney (2003)).
+			As observed in Melamed (2000), this use ofDice misses the crucial constraint of competition: a candidate source word with high asso ciation to a target word may be unavailable for alignment because some other target has an even better affinity for that source word.
+			Melameduses competitive linking to incorporate this con straint explicitly, while the IBM-style models get this effect via explaining-away effects in EM training.
+			We can get something much like the combination of Dice and competitive linking by running with just one feature on each pair: the Dice value of that pair?s words.2 With just a Dice feature ?

@@ -1,0 +1,8 @@
+draws the conclusions and mentions future work.
+  
+  
+    WordNet (Fellbaum, 1998) is a lexical database of English, which groups nouns, verbs, adjectives and adverbs into sets of synonyms (synsets), each expressing a distinct concept.
+    Synsets are interlinked with conceptual-semantic and lexical relations, including hypernymy, meronymy, causality, etc.
+    Given a pair of words and a graph-based representation of WordNet, our method has basically two steps: We first compute the personalized PageRank over WordNet separately for each of the words, producing a probability distribution over WordNet synsets.
+    We then compare how similar these two discrete probability distributions are by encoding them as vectors and computing the cosine between the vectors.
+    We represent WordNet as a graph G = (V, E) as follows: graph nodes represent WordNet concepts (synsets) and dictionary words; relations among synsets are represented by undirected edges; and dictionary words are linked to the synsets associated to th

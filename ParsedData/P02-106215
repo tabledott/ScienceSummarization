@@ -1,0 +1,10 @@
+ed as This function assigns a real-valued number to a candidate .
+    It will be taken to be a measure of the plausibility of a candidate, higher scores meaning higher plausibility.
+    As such, it assigns a ranking to different candidate structures for the same sentence, 3In the event that multiple candidates get the same, highest score, the candidate with the highest value of log-likelihood under the baseline model is taken as . and in particular the output on a training or test example is .
+    In this paper we take the features to be fixed, the learning problem being to choose a good setting for the parameters .
+    In some parts of this paper we will use vector notation.
+    Define to be the vector .
+    Then the ranking score can also be written as where is the dot product between vectors and .
+    The first algorithm we consider is the boosting algorithm for ranking described in (Collins 2000).
+    The algorithm is a modification of the method in (Freund et al. 1998).
+    The method can be considered t

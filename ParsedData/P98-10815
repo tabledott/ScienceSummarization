@@ -1,0 +1,9 @@
+for Trigrams), based on context statistics P(ti 14_1, ti_2) and lexical statistics P(tilwi) directly estimated from relative corpus frequencies.
+    The Viterbi algorithm is used to determine the most probable tag sequence.
+    Since this model has no facilities for handling unknown words, a Memory-Based system (see below) is used to propose distributions of potential tags for words not in the lexicon.
+    The second system is the Transformation Based Learning system as described by Brill (19941; henceforth tagger R, for Rules).
+    This 1 Brill's system is available as a collection of C programs and Perl scripts at ftp : //ftp . cs . jhu . edu/pub/brill/Programs/ RULE_BASED_TAGGER_V .
+    1 .
+    14 . tar.
+    Z system starts with a basic corpus annotation (each word is tagged with its most likely tag) and then searches through a space of transformation rules in order to reduce the discrepancy between its current annotation and the correct one (in our case 528 rules were learned).
+    During tagging these ru

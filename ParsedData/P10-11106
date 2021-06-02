@@ -1,0 +1,9 @@
+nhanced with beam search (Zhang and Clark, 2008), where b states develop in parallel.
+    At each step we extend the states in the current beam by applying one of the three actions, and then choose the best b resulting states for the next step.
+    Our dynamic programming algorithm also runs on top of beam search in practice.
+    To train the model, we use the averaged perceptron algorithm (Collins, 2002).
+    Following Collins and Roark (2004) we also use the &#8220;early-update&#8221; strategy, where an update happens whenever the gold-standard action-sequence falls off the beam, with the rest of the sequence neglected.3 The intuition behind this strategy is that later mistakes are often caused by previous ones, and are irrelevant when the parser is on the wrong track.
+    Dynamic programming turns out to be a great fit for early updating (see Section 4.3 for details).
+  
+  
+    The key observation for dynamic programming is to merge &#8220;equivalent states&#8221; in the same beam adapted from Huang et al.

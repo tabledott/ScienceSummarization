@@ -1,0 +1,8 @@
+ion is an important stage that effectively reduces the number of argument candidates after the pruning stage.
+  Given an argument candidate, an argu- ment identifier is a binary classifier that decides whether or not the candidate should be considered as an argument.
+  To evaluate the influence of full parsing information in this stage, the candidate list used here is the outputs of the pruning heuristic applied on the gold-standard parse trees.
+  The heuristic results in a total number of 323,155 positive and 686,887 negative examples in the training set, and 18,988 positive and 39,585 negative examples in the test set.
+  Similar to the argument classification stage, the only difference between full parsing?
+  and shallow parsing?based systems is in the construction of some features.
+  Specifically, phrase type, head word, POS tag of the head word, path, and subcategorization features are approximated using chunks and clauses when the binary classifier is trained using shallow parsing information.
+  Table 4 

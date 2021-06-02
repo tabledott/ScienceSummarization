@@ -1,0 +1,8 @@
+  A dependency tree is a tree where nodes are words and edges are dependency labels.
+    To derive the QLF, we convert each node to an unary atom with the predicate being the lemma plus POS tag (below, we still use the word for simplicity), and each edge to a binary atom with the predicate being the dependency label.
+    For example, the node for Utah becomes Utah(n1) and the subject dependency becomes nsubj(n1, n2).
+    Here, the ni are Skolem constants indexed by the nodes.
+    The QLF for a sentence is the conjunction of the atoms for the nodes and edges, e.g., the sentence above will become borders(n1) &#8743; Utah(n2) &#8743; Idaho(n3) &#8743; nsubj(n1, n2) &#8743; dobj(n1, n3).
+    Given a QLF, a relation or an object is represented by the conjunction of a subset of the atoms.
+    For example, the next-to relation is represented by borders(n1) &#8743; nsubj(n1, n2) &#8743; dobj(n1, n3), and the states of Utah and Idaho are represented by Utah(n2) and Idaho(n3).
+    The meaning composition of two sub-for

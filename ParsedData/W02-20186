@@ -1,0 +1,7 @@
+ve Scaling (GIS), due to Darroch and Ratcliff (1972).
+    An extension of Iterative Proportional Fitting (Deming and Stephan, 1940), GIS scales the probability distribution q(k) by a factor proportional to the where M(x) is the sum of the feature values for an event x in the training data.
+    This is a polynomial in exp(&#948;(k)), and the solution can be found straightforwardly using, for example, the Newton-Raphson method.
+    Iterative scaling algorithms have a long tradition in statistics and are still widely used for analysis of contingency tables.
+    Their primary strength is that on each iteration they only require computation of the expected values Eq(k).
+    They do not depend on evaluation of the gradient of the log-likelihood function, which, depending on the distribution, could be prohibitively expensive.
+    In the case of ME models, however, the vector of expected values required by iterative scaling essentially is the gradient G. Thus, it makes sense to consider methods which use the gradient

@@ -1,0 +1,6 @@
+he storage cost for directly representing one model is proportional to N(N M 1).
+    Running the Baum-Welch algorithm requires storage for the sequence of observations, the a and 3 probabilities, the vector {c}, and copies of the A and B matrices (since the originals cannot be overwritten until the end of each iteration).
+    Hence, the grand total of space required for training is proportional to T +2N(T N M + 1).
+    Since N and M are fixed by the model, the only parameter that can be varied to reduce storage costs is T. Now, adequate training requires processing from tens of thousands to hundreds of thousands of tokens [Kupiec, 1989a].
+    The training set can be considered one long sequence, it which case T is very large indeed, or it can be broken up into a number of smaller sequences at convenient boundaries.
+    In first-order hidden Markov modeling, the stochastic process effectively restarts at unambiguous tokens, such as sentence and paragraph markers, hence these tokens are convenient points at whi

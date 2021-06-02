@@ -1,0 +1,9 @@
+ed given a word class.
+    For example, the character string &#26446;&#20426;&#29983; is more likely to be a person name than &#37324;&#20426;&#29983; &#8216;Li Junsheng&#8217; because &#26446; is a common family name in China while &#37324; is not.
+    So P(S|C) is also referred to as class model afterwards.
+    In our system, we use the improved source-channel models, which contains one context model (i.e., a trigram language model in our case) and a set of class models of different types, each of which is for one class of words, as shown in Figure 2.
+    Although Eq.
+    2 suggests that class model probability and context model probability can be combined through simple multiplication, in practice some weighting is desirable.
+    There are two reasons.
+    First, some class models are poorly estimated, owing to the sub-optimal assumptions we make for simplicity and the insufficiency of the training corpus.
+    Combining the context model probability with poorly estimated class model probabilities according

@@ -1,0 +1,10 @@
+ F(A) only depends on the values in A of F&#8217;s its neighboring variables N(F).
+    So this sum is proportional to a sum over restricted assignments to just those variables.11 For example, computing a message from TAGLINKij &#8212;* Ti only requires iterating over all (boolean, tag, tag) triples.12 The runtime to update that message is therefore O(2 &#183; |T  |&#183; |T |).
+    The above may be tolerable for a ternary factor.
+    But how about global factors?
+    EXACTLY1j has n neighboring boolean variables: surely we cannot iterate over all 2n assignments to these!
+    TREE is even worse, with 2O(n2) assignments to consider.
+    We will give specialized algorithms for handling these summations more efficiently.
+    A historical note is in order.
+    Traditional constraint satisfaction corresponds to the special case of (1) where all factors Fm are hard constraints (with values in {0,1}).
+    In that case, loopy BP reduces to an algorithm for generalized arc consistency (Mackworth, 1977; Bessi`ere and R&

@@ -1,0 +1,7 @@
+ and for an object or a modifier (e.g.
+    &#8216;X s+_ prevent &#65533; Y&#8217;).
+    STEP (2) constructs asample corpus, denoted S, for the pivot template.
+    STEP (2.A) utilizes a Web search engine to initialize S by retrieving sentences containing P. The sentences are parsed by the MINIPAR dependency parser (Lin, 1998), keeping only sentences that contain the complete syntactic template Tp (with all the variables instantiated).
+    STEP (2.B) identifies phrases that are statistically associated with Tp in S. We test all noun-phrases in S , discarding phrases that are too common on the Web (absolute frequency higher than a threshold MAXPHRASEF), such as &#8220;desire&#8221;.
+    Then we select the N phrases with highest tf &#183;idf score1.
+    These phrases have a strong collocation relationship with the pivot P and are likely to indicate topical (rather than anecdotal) occurrences of P. For example, the phrases &#8220;patient&#8221; and &#8220;American Dental Association&#8221;, which indicate contexts

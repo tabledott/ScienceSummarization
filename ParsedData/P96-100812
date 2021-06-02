@@ -1,0 +1,8 @@
+ame as for classifier models, and the distributions at the leaves are often extremely sharp, sometimes consisting of one outcome with probability 1, and all others with probability 0.
+    In the second phase, these distributions are smoothed by mixing together distributions of various nodes in the decision tree.
+    As in (Magerman 1995), mixture weights are determined by deleted interpolation on a separate block of training data.
+    Searching the interpretation model proceeds in two phases.
+    In the first phase, every parse T received from the parsing model is rescored for every possible frame type, computing P(T I F7) (our current model includes only a half dozen different types, so this computation is tractable).
+    Each of these theories is combined with the corresponding prior probability P(FT) yielding P(FT) P(T I PT).
+    The n-best of these theories are then passed to the second phase of the interpretation process.
+    This phase searches the space of slot filling operations using a simple beam se

@@ -1,0 +1,10 @@
+t the LHS of the rule has a gap, there are three ways that the gap can be passed down to the RHS: Head: The gap is passed to the head of the phrase, as in rule (3) in Figure 7.
+    Left, Right: The gap is passed on recursively to one of the left or right modifiers of the head or is discharged as a TRACE argument to the left or right of the head.
+    In rule (2) in Figure 7, it is passed on to a right modifier, the S complement.
+    In rule (4), a TRACE is generated to the right of the head VB.
+    We specify a parameter type Pg(G |P, h, H) where G is either Head, Left, or Right.
+    The generative process is extended to choose among these cases after generating the head of the phrase.
+    The rest of the phrase is then generated in different ways depending on how the gap is propagated.
+    In the Head case the left and right modifiers are generated as normal.
+    In the Left and Right cases a +gap requirement is added to either the left or right SUBCAT variable.
+    This requirement is fulfilled (and removed 

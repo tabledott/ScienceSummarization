@@ -1,0 +1,7 @@
+obabilities, the parse tree is traversed by generating a random number at each node and deciding which arcs to select based on the outcome.
+    The arc probabilities can be used to weigh the alternatives.
+    Occasionally, the generator chooses a path that leads to a dead end, because of unanticipated constraints.
+    Hence we in general need to keep more than one partial theory alive at any given time, to avoid having to backtrack upon a failure condition.
+    We could in fact always choose to sprout two branches at any decision point, although this generally leads to a much larger queue than is really necessary.
+    We found instead that it was advantageous to monitor the size of the queue, and arbitrarily increase the number of branches kept alive from one to two whenever the queue becomes dangerously short, shrinking it back to one upon recovery.
+    We have used generation mode to detect overgeneralizations in the grammar, to build a word-pair language model for use as a simple constraint mechanism in ou

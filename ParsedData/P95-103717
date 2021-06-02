@@ -1,0 +1,8 @@
+d into two sets, approximately 90% for tree growing and 10% for tree smoothing.
+    For each parsed sentence in the tree growing corpus, the correct state sequence is traversed.
+    Each state transition from si to si+i is an event; the history is made up of the answers to all of the questions at state si and the future is the value of the action taken from state si to state s.1.
+    Each event is used as a training example for the decisiontree growing process for the appropriate feature's tree (e.g. each tagging event is used for growing the tagging tree, etc.).
+    After the decision trees are grown, they are smoothed using the tree smoothing corpus using a variation of the deleted interpolation algorithm described in (Magerman, 1994).
+    The parsing procedure is a search for the highest probability parse tree.
+    The probability of a parse is just the product of the probability of each of the actions made in constructing the parse, according to the decision-tree models.
+    Because of the size of the sea

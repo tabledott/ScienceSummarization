@@ -1,0 +1,8 @@
+/3 A-B B-C B-D A-B B-C C-D 3/3 3/3 A-B B-C B-D A-B C-D 2/3 2/2 A-B B-C A-C 1/2 1/1 Table 1: Recall and precision scores for coreference example s EXAMPLES WITH MORE COMPLEXITY The examples so far have been purposefully simplified in that we have only considere d cases that defined one key class and one response class .
+  Let us now consider some more- complex examples where keys and responses dont so neatly overlap .
+  To begin with, imagine that the key and response are as follows .
+  Key: &lt;B-C C-D D-E E-G G-H H-J&gt; ?
+  Response : &lt;A-B B-C D-E E-F G-H-H-I &gt; The key establishes a single equivalence class, while the response defines three : {A B C}, {D E F}, {G H I} .
+  In addition, the key contains the element J, which is missin g entirely from the response .
+  These are shown in the following figure, where the thic k lines denote the key class, and thin ones denote response classes .
+  49 Eyeballing the problem, we note that as there are seven elements in the key, six links must minimally be provi

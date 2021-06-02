@@ -1,0 +1,13 @@
+ength, andis the reference length.
+    IBM system in the BLEU score, the obtained gain was less than what we expected.
+    We have thought the following three reasons.
+    First, the syntax of Chinese is not extremely different from English, compared with other languages such as Japanese or Arabic.
+    Therefore, the TM could not take advantage of syntactic reordering operations.
+    Second, our decoder looks for a decoded tree, not just for a decoded sentence.
+    Thus, the search space is larger than IBM models, which might lead to more search errors caused by pruning.
+    Third, the LM used for our system was exactly the same as the LM used by the IBM system.
+    Decoding performance might be heavily influenced by LM performance.
+    In addition, since the TM assumes an English parse tree as input, a trigram LM might not be appropriate.
+    We will discuss this point in the next section.
+    Phrasal translation worked pretty well.
+    Figure 3 shows the top-20 frequent phrase translations observed in the V

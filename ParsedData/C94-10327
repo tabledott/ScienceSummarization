@@ -1,0 +1,10 @@
+ and a backward A* search.
+  First, a linear time dynamic programming is used for record- ing the scores of all partial paths in a table 3.
+  A back- ward A* algorithm based tree search is then used to extend the partial paths.
+  Partial paths extended in the backward tree search are ranked by their correspond- ing fill path scores, which are cmnputed by adding the scores of backward partial path scores to the cot responding best possihle scores of the remaining paths which are prerecorded in the forward search.
+  Since the score of the incomplete portion of a path is exactly known, the backward search is admissible.
+  That is, the top-N candidates are exact.
+  3.1 The Forward DP Search Table 1 shows the two data structures used in our al- gorithm.
+  The st,t, cture parse stores tile information of a word and the best partial path up to the word.
+  Parse .s ta r t  and parse.end are the indices of tile start and end positions of the word in the sentence.
+  Parse.pos is tile part of speech tag, which is a list

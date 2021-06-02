@@ -1,0 +1,9 @@
+ll three scorers.7 Similar trends can be observed for system mentions, where the F-scores between the two models are statistically indistinguishable across the board.
+    While the insignificant performance difference is somewhat surprising given the improved expressiveness of entitymention models over mention-pair models, similar trends have been reported by Luo et al. (2004).
+    The mention-ranking baseline.
+    Our third baseline is the mention-ranking coreference model, trained using the ranker-learning algorithm in SVMlight.
+    To identify discourse-new mentions, we employ two methods.
+    In the first method, we adopt a pipeline architecture, where we train an SVM classifier for discourse-new detection independently of the mention ranker on the training set using the 26 features described in Section 3.3.
+    We then apply the resulting classifier to each test text to filter discourse-new mentions prior to coreference resolution.
+    Results of the mention ranker are shown in row 3 of Tables 3 and 4.
+ 

@@ -1,0 +1,7 @@
+hrases of the original query was used.
+    For the noisier question-answer translation, expansion terms and phrases were extracted from a 10best list of query translations.
+    Terms taken from query paraphrases were matched with the same field weight vector (0.0, 1.0, 0.0, 0.0, 0.5, 0.5, 0.2, 0.3) as above.
+    Terms taken from question-answer translation were matched with the weight vector (0.0,1.0, 0.0, 0.0, 0.5, 0.2, 0.5, 0.3), preferring answer fields over question fields.
+    After stopword removal, the average number of expansion terms produced was 7.8 for paraphrasing, and 3.1 for question-answer translation.
+    The local expansion technique used in our experiments follows Xu and Croft (1996) in taking expansion terms from the top n answers that were retrieved by the baseline tfidf system, and by incorporating cooccurrence information with query terms.
+    This is done by calculating term frequencies for expansion terms by summing up the tfidf weights of the answers in which they occur, thus giving h

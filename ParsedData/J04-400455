@@ -1,0 +1,8 @@
+P.
+    Curiously, however, Collins&#8217; implementation considers the head label of the NP chart item not to be NPB, but rather the head label of the NPB chart item.
+    In other words, to get the head label of an NP chart item, one must &#8220;peek through&#8221; the NPB and get at the NPB&#8217;s head label.
+    Presumably, this was done as a consideration for the NPB nodes&#8217; being &#8220;extra&#8221; nodes, in some sense.
+    It appears to have little effect on overall parsing accuracy, however.
+    Ideally, every parse theory could be kept in the chart, and when the root symbol has been generated for all theories, the top-ranked one would &#8220;win.&#8221; In order to speed things up, Collins employs three different types of pruning.
+    The first form of pruning is to use a beam: The chart memoizes the highest-scoring theory in each span, and if a proposed chart item for that span is not within a certain factor of the top-scoring item, it is not added to the chart.
+    Collins reports in his thesi

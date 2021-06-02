@@ -1,0 +1,8 @@
+e we use I to denote the identity matrix.
+    Matrix O (whose rows are orthonormal) is the common structure parameter shared by all the problems; wt and vt are weight vectors specific to each prediction problem `.
+    The idea of this model is to discover a common low-dimensional predictive structure (shared by the m problems) parameterized by the projection matrix O.
+    In this setting, the goal of structural learning may also be regarded as learning a good feature map Ox &#8212; a low-dimensional feature vector parameterized by O.
+    In joint ERM, we seekO(and weight vectors) that minimizes the empirical risk summed over all the problems: It can be shown that using joint ERM, we can reliably estimate the optimal joint parameterOas long asmis large (even when eachntis small).
+    This is the key reason why structural learning is effective.
+    A formal PAC-style analysis can be found in (Ando and Zhang, 2004).
+    The optimization problem (2) has a simple solution using SVD when we choose square regulariza

@@ -1,0 +1,6 @@
+s reason, we apply the more general Metropolis-Hastings algorithm, which permits sampling arbitrary transformations of the latent variables.
+    In our framework, such transformations correspond to moves through the space of possible segmentations.
+    A new segmentation z0 is drawn from the previous hypothesized segmentation z based on a proposal distribution q(z0|z).4 The probability of accepting a proposed transformation depends on the ratio of the joint probabilities and a correction term for asymmetries in the proposal distribution: The Metropolis-Hastings algorithm guarantees that by accepting samples at this ratio, our sampling procedure will converge to the stationary distribution for the hidden variables z.
+    When cue phrases are included, the observation likelihood is written: As in Section 3.2, we can marginalize over the language models.
+    We obtain a product of DCM distributions: one for each segment, and one for all cue phrases in the dataset.
+    Metropolis-Hastings requires a proposal dist

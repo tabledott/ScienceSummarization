@@ -1,0 +1,7 @@
+this is rather complicated to implement.
+    3. the &#8220;arc-standard&#8221; scan always succeeds, since at the end we can always reduce with empty queue, whereas the &#8220;arc-eager&#8221; style sometimes goes into deadends where no action can perform (prevented by preconditions, otherwise the result will not be a wellformed tree).
+    This becomes parsing failures in practice (Nivre and Scholz, 2004), leaving more than one fragments on stack.
+    As we will see in Section 5.1, this simpler arc-standard system performs equally well with a state-of-the-art arc-eager system (Zhang and Clark, 2008) on standard English Treebank parsing (which is never shown before).
+    We argue that all things being equal, this simpler paradigm should be preferred in practice.
+    4 We also enhance deterministic shift-reduce parsing with beam search, similar to Zhang and Clark (2008), where k configurations develop in parallel.
+    Pseudocode 1 illustrates the algorithm, where we keep an agenda V of the current active config

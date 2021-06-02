@@ -1,0 +1,8 @@
+ Viterbi search.
+    First, whenever more than one hypothesis words are aligned to one backbone word, we keep the link which gives the highest occupation probability computed via the forward-backward algorithm.
+    The other hypothesis words originally aligned to the backbone word will be aligned to the null associated with that backbone word.
+    Second, for the hypothesis words that are aligned to a particular null on the backbone side, a set of nulls are inserted around that backbone word associated with the null such that no links cross each other.
+    As illustrated in Fig.
+    3 (a), if a hypothesis word e2&#8217; is aligned to the backbone word e2, a null is inserted in front of the backbone word e2 linked to the hypothesis word e1&#8217; that comes before e2&#8217;.
+    Nulls are also inserted for other hypothesis words such as e3&#8217; and e4&#8217; after the backbone word e2.
+    If there is no hypothesis word aligned to that backbone word, all nulls are inserted after that backbone word .3 For a b

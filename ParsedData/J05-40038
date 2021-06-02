@@ -1,0 +1,11 @@
+ we give a high-level overview of our parallel sentence extraction system.
+    In Section 3, we describe in detail the core of the system, the parallel sentence classifier.
+    In Section 4, we discuss several data extraction experiments.
+    In Section 5, we evaluate the extracted data by showing that adding it to out-of-domain parallel data improves the in-domain performance of an out-of-domain MT system, and in Section 6, we show that in certain cases, even larger improvements can be obtained by using bootstrapping.
+    In Section 7, we present examples of sentence pairs extracted by our method and discuss some of its weaknesses.
+    Before concluding, we discuss related work.
+  
+  
+    The general architecture of our extraction system is presented in Figure 2.
+    Starting with two large monolingual corpora (a non-parallel corpus) divided into documents, we begin by selecting pairs of similar documents (Section 2.1).
+    From each such pair, we generate all possible sentence pairs and pass them through a 

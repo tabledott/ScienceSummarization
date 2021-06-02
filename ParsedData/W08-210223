@@ -1,0 +1,7 @@
+the resulting parse trees score 100% precision and 99.81% recall in labeled constituent accuracy, indicating that very little information is lost in this process.
+    Sentences in training, test, and development data are assumed to have part-of-speech (POS) tags.
+    POS tags are used for two purposes: (1) in the features described above; and (2) to limit the set of allowable spines for each word during parsing.
+    Specifically, for each POS tag we create a separate performance of the parser on the development set (1,699 sentences).
+    In each case &#945; refers to the beam size used in both training and testing the model.
+    &#8220;active&#8221;: percentage of dependencies that remain in the beam out of the total number of labeled dependencies (1,000 triple labels times 1,138,167 unlabeled dependencies); &#8220;coverage&#8221;: percentage of correct dependencies in the beam out of the total number of correct dependencies.
+    &#8220;oracle F1&#8221;: maximum achievable score of constituents, given the bea

@@ -1,0 +1,11 @@
+e usefulness of this modification, and Caraballo and Charniak (1996) used a related technique in a best-first parser.
+    We think that the main reason this technique was not used sooner is that beam thresholding for PCFGs is derived from beam thresholding in speech recognition using Hidden Markov Models (HMMs).
+    In an HMM, the forward probability of a given state corresponds to the probability of reaching that state from the start state.
+    The probability of eventually reaching the final state from any state is always 1.
+    Thus, the forward probability is all that is needed.
+    The same is true in some top down probabilistic parsing algorithms, such as stochastic versions of Earley's algorithm (Stolcke, 1993).
+    However, in a bottom-up algorithm, we need the extra factor that indicates the probability of getting from the start symbol to the nonterminal in question, which we approximate by the prior probability.
+    As we noted, this can be very different for different nonterminals.
+  
+  
+    As men

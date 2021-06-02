@@ -1,0 +1,8 @@
+sing with reasonable performance in all models.
+    For the parsers with generative probability models, maximum accuracy is achieved with a post-word beam width of 100.
+  
+  
+    We used the Penn Treebank (Marcus et al., 1993) to perform empirical experiments on the proposed parsing models.
+    In each case the input to the network is a sequence of tag-word pairs.5 We report results for three different vocabulary sizes, varying in the frequency with which tagword pairs must occur in the training set in order to be included explicitly in the vocabulary.
+    A frequency threshold of 200 resulted in a vocabulary of 508 tag-word pairs, a threshold of 20 resulted in 4215 tag-word pairs, and a threshold of 5 resulted in 11,993 tag-word pairs For the generative model we trained networks for the 508 (&#8220;GSSN-Freq&gt;200&#8221;) and 4215 (&#8220;GSSN-Freq&gt;20&#8221;) word vocabularies.
+    The need to calculate word predictions makes training times for the 11,993 word vocabulary very long, and as of this writing

@@ -1,0 +1,6 @@
+r the CoNLL 2007 Shared Task (Brants et al., 2002; Civit Torruella and MartiAntonin, 2002).5 Our training data were subsets of the 2006 Statistical Machine Translation Workshop Shared Task, in particular from the German-English and Spanish-English Europarl parallel corpora (Koehn, 2002).
+    The Shared Task provided prebuilt automatic GIZA++ word alignments, which we used to facilitate replicability.
+    Since these word alignments do not contain posterior probabilities or null links, nor do they distinguish which links are in the IBM Model intersection, we treated all links as equally likely when learning the QG.
+    Target language words unaligned to any source language words were the only nodes allowed to align to NULL in QG derivations.
+    We parsed the English side of the bitext with the projective dependency parser described by McDonald et al. (2005) trained on the Penn Treebank &#167;&#167;2&#8211;20.
+    Much previous work on unsupervised grammar induction has used gold-standard partof-speech tags (S

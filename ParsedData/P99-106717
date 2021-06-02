@@ -1,0 +1,9 @@
+Based on the word co-occurrences in the English corpus, an association matrix was computed whose rows were all word types of the corpus with a frequency of 100 or higher3 and whose columns were all English words occurring as first translations of the German words in the base lexicon!'
+    3.
+    Using the similarity function, each of the German vectors was compared to all vectors of the English matrix.
+    The mapping between vector positions was based on the first translations given in the base lexicon.
+    For each of the German source words, the English vocabulary was ranked according to the resulting similarity value.
+    3 The limitation to words with frequencies above 99 was introduced for computational reasons to reduce the number of vector comparisons and thus speed up the program.
+    (The English corpus contains 657,787 word types after lemmatization, which leads to extremely large matrices.)
+    The purpose of this limitation was not to limit the number of translation candidates considered.
+    Exp

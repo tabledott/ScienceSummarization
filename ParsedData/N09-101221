@@ -1,0 +1,7 @@
+hat the model will only start to ignore the backoff distribuOur first experiments examine smoothing the distributions over an argument in the DMV and EVG models.
+    In DMV we smooth the probability of argument A given head part-of-speech H and direction d with a distribution that ignores H. In EVG, which conditions on H, d and argument position v we back off two ways.
+    The first is to ignore v and use backoff conditioning event H, d. This yields a backoff distribution with the same conditioning information as the argument distribution from DMV.
+    We call this EVG smoothed-skip-val.
+    The second possibility is to have the backoff distribution ignore the head part-of-speech H and use backoff conditioning event v, d. This assumes that arguments share a common distribution across heads.
+    We call this EVG smoothed-skip-head.
+    As we see below, backing off by ignoring the part-ofspeech of the head H worked better than ignoring the argument position v. For L-EVG we smooth the argument part-ofspeech dist

@@ -1,0 +1,8 @@
++ GDF+M1 is forced to conform to a lexicon constraint by dropping any phrase with a frequency lower than 5 from its table, it scores only 29.26, for a reduction of 1.35 BLEU points.
+    Phrases extracted from our non-compositional Viterbi alignments receive the highest BLEU score, but they are not significantly better than GIZA++ GDF.
+    The two methods also produce similarly-sized tables, despite the ITG&#8217;s higher recall.
+    4Unlike our system, the Birch implementation does table smoothing and internal lexical weighting, both of which should help improve their results.
+    The systems also differ in distortion modeling and 0 handling, as described in Section 3.
+    We have presented a phrasal ITG as an alternative to the joint phrasal translation model.
+    This syntactic solution to phrase modeling admits polynomial-time training and alignment algorithms.
+    We demonstrate that the same consistency constraints that allow joint phrasal models to scale also dramatically speed up ITGs, producing an 80-

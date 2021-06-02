@@ -1,0 +1,8 @@
+d to decrease from one iteration to another.
+    However, we believe that our reestimation method should not increase the approximation to perplexity based on (10) (SUM-PPL) &#8212; again, on the &amp;quot;development set&amp;quot;; we rely on the consistency property outlined at the end of section 3.3 to correlate the desired decrease in L2R-PPL with that in SUM-PPL.
+    No claim can be made about the change in either L2R-PPL or SUM-PPL on test data.
+    Each model component &#8212; WORD-PREDICTOR, TAGGER, PARSER &#8212; is trained initially from a set of parsed sentences, after each parse tree (W, T) undergoes: These are the initial parameters used with the reestimation procedure described in the previous section.
+  
+  
+    In order to get initial statistics for our model components we needed to binarize the UPenn Treebank (Marcus et al., 1995) parse trees and percolate headwords.
+    The procedure we used was to first percolate headwords using a context-free (CF) rulebased approach and then binarize the pa

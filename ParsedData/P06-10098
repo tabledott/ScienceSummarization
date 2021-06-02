@@ -1,0 +1,6 @@
+ur CRF alignment model, we must first specify the feature set &#8211; the functions hk in (1).
+    Typically CRFs use binary indicator functions as features; these functions are only active when the observations meet some criteria and the label at (or label pair, (at&#8722;1, at)) matches a pre-specified label (pair).
+    However, in our model the labellings are word indices in the target sentence and cannot be compared readily to labellings at other sites in the same sentence, or in other sentences with a different length.
+    Such naive features would only be active for one labelling, therefore this model would suffer from serious sparse data problems.
+    We instead define features which are functions of the source-target word match implied by a labelling, rather than the labelling itself.
+    For example, from the sentence in Figure 1 for the labelling of f24 = de with a24 = 16 (for e16 = of) we might detect the following feature: h(t, at&#8722;1, at, f, e) = Note that it is the target word indexed by at,

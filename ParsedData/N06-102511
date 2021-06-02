@@ -1,0 +1,8 @@
+r computing semantic relatedness in Wikipedia see Strube &amp; Ponzetto (2006)): given the candidate referring expressions REZ and REj we first pull the pages they refer to.
+    This is accomplished by querying the page titled as the head lemma or, in the case of NEs, the full NP.
+    We follow all redirects and check for disambiguation pages, i.e. pages for ambiguous entries which contain links only (e.g.
+    Lincoln).
+    If a disambiguation page is hit, we first get all the hyperlinks in the page.
+    If a link containing the other queried RE is found (i.e. a link containing president in the Lincoln page), the linked page (President of the United States) is returned, else we return the first article linked in the disambiguation page.
+    Given a candidate coreference pair REZ/j and the Wikipedia pages PREi/j they point to, obtained by querying pages titled as TREi/j, we extract the following features: I/J GLOSS CONTAINS U if no Wikipedia page titled TREi/j is available.
+    Else T if the first paragraph of

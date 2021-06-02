@@ -1,0 +1,7 @@
+eedback function can be used to subsample the space of possible structures (alignments and logical forms (Y &#215; Z)) for a given input x.
+    The feedback mechanism indicates whether the structure is good (+1) or bad (&#8722;1).
+    Using this x: Y: z: r: intuition we can cast the problem of learning a weight vector for Equation (1) as a binary classification problem where we directly consider structures the feedback assigns +1 as positive examples and those assigned &#8722;1 as negative.
+    We represent the input to the binary classifier as the feature vector 4b(x, y, z) normalized by the size of the input sentence1 |x|, and the label as the result from Feedback(x, z).
+    Algorithm 1 outlines the approach in detail.
+    The first stage of the algorithm iterates over all the training input sentences and computes the best logical form z&#65533; and alignment y&#65533; by solving the inference problem (line 4).
+    The feedback function is queried (line 5) and a training example for the binary predictor cre

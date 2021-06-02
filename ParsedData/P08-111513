@@ -1,0 +1,7 @@
+ependent on the exact path chosen, it can be computed in advance of decoding using an allpairs shortest path algorithm (Cormen et al., 1989).
+    We tested the effect of the distance metric on translation quality using Chinese word segmentation lattices (Section 4.1, below) using both a hierarchical and phrase-based system modified to translate word lattices.
+    We compared the shortest-path distance metric with a baseline which uses the difference in node number as the distortion distance.
+    For an additional datapoint, we added a lexicalized reordering model that models the probability of each phrase pair appearing in three different orientations (swap, monotone, other) in the training corpus (Koehn et al., 2005).
+    Table 2 summarizes the results of the phrasebased systems.
+    On both test sets, the shortest path metric improved the BLEU scores.
+    As expected, the lexicalized reordering model improved translation quality over the baseline; however, the improvement was more substantial in the model t

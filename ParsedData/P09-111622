@@ -1,0 +1,8 @@
+ould have outperformed 2/3 of the 37 systems in the KDDCUP and ranked 13th.
+    We made a small modification to the objective function for logistic regression to take into account the prior distribution and to use 50% as a uniform decision boundary for all the classes.
+    Normally, training a logistic regression classifier amounts to solving: where n is the number of training examples and &#227; is the regularization constant.
+    In this formula, 1/n can be viewed as the weight of an example in the training corpus.
+    When training the classifier for a class with p positive examples out of a total of n examples, we change the objective function to: With this modification, the total weight of the positive and negative examples become equal.
+    Since topical information is much more relevant to query classification than categorical information, we use clusters created with 3-word context windows.
+    Moreover, we use soft clustering instead of hard clustering.
+    A phrase belongs to a cluster if the cluste

@@ -1,0 +1,9 @@
+ set of relations names used in the facts of &#916;.
+    These sets define the weak supervision data.
+    We use the set of sentence-level features described by Riedel et al. (2010), which were originally developed by Mintz et al.
+    (2009).
+    These include indicators for various lexical, part of speech, named entity, and dependency tree path properties of entity mentions in specific sentences, as computed with the Malt dependency parser (Nivre and Nilsson, 2004) and OpenNLP POS tagger1.
+    However, unlike the previous work, we did not make use of any features that explicitly aggregate these properties across multiple mention instances.
+    The MULTIR algorithm has a single parameter T, the number of training iterations, that must be specified manually.
+    We used T = 50 iterations, which performed best in development experiments.
+    Evaluation is challenging, since only a small percentage (approximately 3%) of sentences match facts in Freebase, and the number of matches is highly unbalanced across rela

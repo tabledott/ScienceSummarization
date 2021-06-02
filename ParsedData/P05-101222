@@ -1,0 +1,8 @@
+ze the accuracy of the phrase structure and use lexicalization as just an additional source of information.
+    Thus it is not too surprising that the dependencies output by the Collins parser are not as accurate as our system, which is trained and built to maximize accuracy on dependency trees.
+    In complexity and run-time, our system is a huge improvement over the Collins parser.
+    The final system in Table 3 takes the output of Collins-rules and adds a feature to MIRA-Normal that indicates for given edge, whether the Collins parser believed this dependency actually exists, we call this system MIRA-Collins.
+    This is a well known discriminative training trick &#8212; using the suggestions of a generative system to influence decisions.
+    This system can essentially be considered a corrector of the Collins parser and represents a significant improvement over it.
+    However, there is an added complexity with such a model as it requires the output of the O(n5) Collins parser.
+    One question that can 

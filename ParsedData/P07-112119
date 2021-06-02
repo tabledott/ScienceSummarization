@@ -1,0 +1,11 @@
+ Collins (2005) (Z&amp;C), a CCG-based algorithm which uses Prolog logical forms.
+    Table 1 summarizes the results at the end of the learning curves (792 training examples for AWASP, WASP and SCISSOR, 600 for Z&amp;C).
+    A few observations can be made.
+    First, algorithms that use Prolog logical forms as the target MRL generally show better recall than those using FunQL.
+    In particular, A-WASP has the best recall by far.
+    One reason is that it allows lexical items to be combined in ways not allowed by FunQL or the hand-written templates in Z&amp;C, e.g.
+    [smallest [state] [by area]] in Figure 3.
+    Second, Z&amp;C has the best precision, although their results are based on 280 test examples only, whereas our results are based on 10-fold cross validation.
+    Third, A-WASP has the best F-measure.
+    To see the relative importance of each component of the A-WASP algorithm, we performed two ablation studies.
+    First, we compared the performance of A-WASP with and without conjunct regrouping (S

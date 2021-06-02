@@ -1,0 +1,7 @@
+ers in some important ways.
+    Our model is implemented by adding additional constraints into the model at inference time, and does not require the preprocessing step necessary in the two previously mentioned works.
+    This allows for a broader class of long-distance dependencies, because we do not need to make any initial assumptions about which nodes should be connected, and is helpful when you wish to model relationships between nodes which are the same class, but may not be similar in any other way.
+    For instance, in the CMU Seminar Announcements dataset, we can normalize all entities labeled as a start time and penalize the model if multiple, nonconsistent times are labeled.
+    This type of constraint cannot be modeled in an RMN or a skip-CRF, because it requires the knowledge that both entities are given the same class label.
+    We also allow dependencies between multi-word phrases, and not just single words.
+    Additionally, our model can be applied on top of a pre-existing trained sequence mod

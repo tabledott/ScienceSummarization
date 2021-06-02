@@ -1,0 +1,7 @@
+ies log p(t), using Kneser-Ney smoothing as implemented in the SRILM toolkit (Stolcke, 2002).
+    Phrase translation model probabilities are features of the form: ie, we assume that the phrases &#732;sk specified by a are conditionally independent, and depend only on their aligned phrases &#732;tk.
+    The &#8220;forward&#8221; phrase probabilities p(&#732;t|&#732;s) are not used as features, but only as a filter on the set of possible translations: for each source phrase s&#732; that matches some ngram in s, only the 30 top-ranked translations t&#732; according to p(&#732;t|&#732;s) are retained.
+    To derive the joint counts c(&#732;s, &#732;t) from which p(&#732;s|&#732;t) and p(&#732;t|&#732;s) are estimated, we use the phrase induction algorithm described in (Koehn et al., 2003), with symmetrized word alignments generated using IBM model 2 (Brown et al., 1993).
+  
+  
+    Smoothing involves some recipe for modifying conditional distributions away from pure relativefrequency estimates made from joint coun

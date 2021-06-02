@@ -1,0 +1,9 @@
+model selection), but instead allow the model to find a grammar appropriately sized for its training data.
+    Our Bayesian model of SCFG derivations resembles that of Blunsom et al. (2008).
+    Given a grammar, each sentence is generated as follows.
+    Starting with a root non-terminal (z1), rewrite each frontier non-terminal (zi) using a rule chosen from our grammar expanding zi.
+    Repeat until there are no remaining frontier non-terminals.
+    This gives rise to the following derivation probability: where the derivation is a sequence of rules d = (r1, ... , rn), and zi denotes the root node of ri.
+    We allow two types of rules: non-terminal and terminal expansions.
+    The former rewrites a nonterminal symbol as a string of two or three nonterminals along with an alignment, specifying the corresponding ordering of the child trees in the source and target language.
+    Terminal expansions rewrite a non-terminal as a pair of terminal n-grams, representing a phrasal translation pair, where either but not

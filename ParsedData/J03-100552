@@ -1,0 +1,6 @@
+le source language word.
+    Manual lexicon: To account for unseen words in the test sentences and to obtain a greater number of focused translation probabilities p(f  |e), we use a bilingual German-English dictionary.
+    For each word e in the target vocabulary, we create a list of source translations f according to this dictionary.
+    The translation probability pdic(f  |e) for the dictionary entry (f, e) is defined as where Ne is the number of source words listed as translations of the target word e. The dictionary probability pdic(f  |e) is linearly combined with the automatically trained translation probabilities paut(f  |e) to obtain smoothed probabilities p(f  |e): p(f  |e) = (1 &#8722; A) - pdic(f  |e) + A - paut(f  |e) For the translation experiments, the value of the interpolation parameter is fixed at A = 0.5.
+    4.2.3 Effect of the Scaling Factors.
+    In speech recognition, in which Bayes&#8217; decision rule is applied, a language model scaling factor &#945;LM is used; a typical value is &#94

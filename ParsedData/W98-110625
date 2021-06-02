@@ -1,0 +1,7 @@
+uilding conceptual case frames begins with extraction patterns and a semantic lexicon for the domain.
+    The semantic lexicon is a dictionary of words that belong to relevant semantic categories.
+    We used AutoSlog-TS to generate the extraction patterns and a corpus-based algorithm to generate the semantic lexicon.2 The corpus-based algorithm that we used to build the semantic lexicon (Riloff and Shepherd, 1997) requires five &amp;quot;seed words&amp;quot; as input for each semantic category, and produces a ranked list of words that are statistically associated with each category.
+    First, the algorithm looks for all sentences in which a seed word is used as the head noun of a noun phrase.
+    For each such occurrence of a seed word, the algorithm collects a small context window around the seed word.
+    The context window consists of the closest noun to the left of the seed word, and the closest noun to its right.
+    The context windows for all seed words that belong to the same category are then combi

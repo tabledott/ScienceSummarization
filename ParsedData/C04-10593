@@ -1,0 +1,9 @@
+anguage model.
+			To be more specific, the following steps are carried out to do the language model adaptation.
+			First, a baseline statistical machine translation system, using a large general language model, is applied to generate initial translations.
+			Then these translations hypotheses are reformulated as queries to retrieve similar sentences from a very large text collection.
+			A small domain specific language model is build using the retrieved sentences and linearly interpolated with the background language model.
+			This new interpolated language model in applied in a second decoding run to produce the final translations.
+			There are a number of interesting questions pertaining to this approach: ? Which information can and should used to generate the queries: the first-best translation only, or also translation alternatives.
+			How should we construct the queries, just as simple bag-of-words, or can we incorporate more structure to make them more powerful.
+			How many documents should be retrieved

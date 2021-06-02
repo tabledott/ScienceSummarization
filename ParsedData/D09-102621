@@ -1,0 +1,6 @@
+of Labeled LDA&#8217;s credit assignment mechanism is as a means of selecting snippets of a document that best describe its contents from the perspective of a particular tag.
+    Consider again the document in Figure 3.
+    Intuitively, if this document were shown to a user interested in the tag grammar, the most appropriate snippet of words might prefer to contain the phrase &#8220;rules of usage,&#8221; whereas a user interested in the term style might prefer the title &#8220;Elements of Style.&#8221; To quantitatively evaluate Labeled LDA&#8217;s performance at this task, we constructed a set of 29 recently tagged documents from del.icio.us that were labeled with two or more tags from the 20 tag subset, resulting in a total of 149 (document,tag) pairs.
+    For each pair, we extracted a 15-word window with the highest tag-specific score from the document.
+    Two systems were used to score each window: Labeled LDA and a collection of onevs-rest SVMs trained for each tag in the system.
+    L-LDA scored each 

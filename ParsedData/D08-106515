@@ -1,0 +1,9 @@
+ve the following values: We now describe how the n-gram factors (Equation 11) are computed.
+    The factors depend on a set of n-gram matches and counts (cn; n E 10, 1, 2, 3, 4}).
+    These factors could be obtained from a decoding run on a development set.
+    However, doing so could make the performance of lattice MBR very sensitive to the actual BLEU scores on a particular run.
+    We would like to avoid such a dependence and instead, obtain a set of parameters which can be estimated from multiple decoding runs without MBR.
+    To achieve this, we make use of the properties of n-gram matches.
+    It is known that the average ngram precisions decay approximately exponentially with n (Papineni et al., 2001).
+    We now assume that the number of matches of each n-gram is a constant ratio r times the matches of the corresponding n &#8722;1 gram.
+    If the unigram precision is p, we can obtain the n-gram factors (n E 11, 2, 3, 4}) (Equation 11) as a function of the parameters p and r, and the number of unigram

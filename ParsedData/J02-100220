@@ -1,0 +1,10 @@
+a false negative simultaneously.
+    Algorithms A-0 and A-2 follow: they contain a pure false negative and false positive, respectively.
+    Comparing Algorithms A-1 and A-3, we see that Algorithm A-3 is arguably better, because it recognizes that only one boundary is present rather than two.
+    Algorithm A-1 does not recognize this, and inserts an extra segment.
+    Even though Algorithm A-1 actually places a correct boundary, it also places an erroneous boundary, which, although close to the actual one, is still a false positive&#8212;in fact, a pure false positive.
+    For this reason, Algorithm A-3 can be considered better than Algorithm A-1.
+    Now, consider how Pk treats the five types of mistakes above.
+    Again, assume the first and second segments in the reference segmentation are average size segments.
+    Algorithm A-4 is penalized the most, as it should be.
+    The penalty is as much as 2k if the false positive falls in the middle of Segment C, and it is &gt; k as long as the false positive is 

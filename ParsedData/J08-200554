@@ -1,0 +1,10 @@
+unction used in the inference procedure in- troduced in Section 3.4.
+  Formally speaking, the argument classifiers attempt to assign 3 We use the Collins parser implemented by Bikel (2004).
+  276 Punyakanok, Roth, and Yih Importance of Parsing and Inference in SRL Table 10 The impact of removing most constraints in overall system performance.
+  Full Parsing Shallow Parsing Prec Rec F1 Prec Rec F1 Gold 85.07 87.50 86.27 ?
+  0.58 73.19 75.63 74.39 ?
+  0.75 Auto 75.88 75.81 75.84 ?
+  0.75 73.56 67.45 70.37 ?
+  0.80 labels to a set of arguments, S1:M, indexed from 1 toM.
+  Each argument Si can take any label from a set of argument labels, P , and the indexed set of arguments can take a set of labels, c1:M ?
+  If we assume that the argument classifier returns an estimated conditional probability distribution, Prob(Si = ci), then, given a sentence, the inference procedure seeks a global assignment that maximizes the objective function denoted by Equation (2), which can be rewritten as follows, c?1:M = argmax c1:M?F

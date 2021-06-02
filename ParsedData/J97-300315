@@ -1,0 +1,8 @@
+ should also be large enough to obtain reliable estimates of word-frequency distribution for at least 10,000-15,000 words.
+    Since a word can take on several different POS-tags, in the lexicon it can be represented as a [string/Pos-class] record, where the Pos-class is a set of one or more POS-tags.
+    For instance, the entry for the word book, which can be a noun (NN) or a verb (VB) would look like [book (NN VB)].
+    Thus the nth entry of the lexicon (wn) can be represented as [W C], where W is the surface lexical form and C is its Pos-class.
+    Different lexicon entries can share the same Pos-class but they cannot share the same surface lexical form.
+    In our experiments, we used a lexicon derived from CELEX (Burnage 1990), a large multilingual database that includes extensive lexicons of English, Dutch, and German.
+    We constructed an English lexicon of 72,136 word forms with morphological features, which we then mapped into the Penn Treebank tag set (Marcus, Marcinkiewicz, and Santorini 1993).
+  

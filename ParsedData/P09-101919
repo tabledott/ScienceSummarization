@@ -1,0 +1,9 @@
+eam-search decoder (Och and Ney, 2004) using two decoding passes.
+    The first decoder pass generates either a lattice or an N-best list.
+    MBR decoding is performed in the second pass.
+    We also train two SCFG-based MT systems: a hierarchical phrase-based SMT (Chiang, 2007) system and a syntax augmented machine translation (SAMT) system using the approach described in Zollmann and Venugopal (2006).
+    Both systems are built on top of our phrase-based systems.
+    In these systems, the decoder generates an initial hypergraph or an N-best list, which are then rescored using MBR decoding.
+    Table 2 shows runtime experiments for the hypergraph MERT implementation in comparison with the phrase-lattice implementation on both the aren and the zhen system.
+    The first two columns show the average amount of time in msecs that either algorithm requires to compute the upper envelope when applied to phrase lattices.
+    Compared to the algorithm described in (Macherey et al., 2008) which is optimized for phras

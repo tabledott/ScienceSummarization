@@ -1,0 +1,9 @@
+ &#8220;null&#8221; classifier, which never identifies a word as EDITED.
+    Our basic measure of performance is the word misclassification rate (see Section 2.1).
+    However, we also report precision and recall scores for EDITED words alone.
+    All words are assigned one of the two possible labels, EDITED or not.
+    However, in our evaluation we report the accuracy of only words other than punctuation and filled pauses.
+    Our logic here is much the same as that in the statistical parsing community which ignores the location of punctuation for purposes of evaluation [3,5, 6] on the grounds that its placement is entirely conventional.
+    The same can be said for filled pauses in the switchboard corpus.
+    Our results are given in Table 2.
+    They show that our classifier makes only approximately 1/3 of the misclassification errors made by the null classifier (0.022 vs. 0.059), and that using the POS tags produced by the bitag tagger does not have much effect on the classifier&#8217;s performance (e.g.,

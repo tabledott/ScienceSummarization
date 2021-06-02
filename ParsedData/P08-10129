@@ -1,0 +1,6 @@
+vised POS tag learning using HMM structured models, Johnson (2007) shows that VB is more effective than Gibbs sampling in approaching distributions that agree with the Zipf&#8217;s law, which is prominent in natural languages.
+    Kurihara and Sato (2006) describe VB for PCFGs, showing the only need is to change the M step of the EM algorithm.
+    As in the case of maximum likelihood estimation, Bayesian estimation for ITGs is very similar to PCFGs, which follows due to the strong isomorphism between the two models.
+    Specific to our ITG case, the M step becomes: where &#968; is the digamma function (Beal, 2003), s = 3 is the number of right-hand-sides for X, and m is the number of observed phrase pairs in the data.
+    The sole difference between EM and VB with a sparse prior &#945; is that the raw fractional counts c are replaced by exp(&#968;(c + &#945;)), an operation that resembles smoothing.
+    As pointed out by Johnson (2007), in effect this expression adds to c a small value that asymptotically app

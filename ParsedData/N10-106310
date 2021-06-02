@@ -1,0 +1,11 @@
+
+    The above features are all defined on sentence pairs, and are included in the binary classifier and ranking model.
+  
+  
+    In the sequence model, we use additional distortion features, which only look at the difference between the position of the previous and current aligned sentences.
+    One set of features bins these distances; another looks at the absolute difference between the expected position (one after the previous aligned sentence) and the actual position.
+    Features derived from Wikipedia markup Three features are derived from Wikipedia&#8217;s markup.
+    The first is the number of matching links in the sentence pair.
+    The links are weighted by their inverse frequency in the document, so a link that appears often does not contribute much to this feature&#8217;s value.
+    The image feature fires whenever two sentences are captions of the same image, and the list feature fires when two sentences are both items in a list.
+    These last two indicator features fire with a negative value w

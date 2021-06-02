@@ -1,0 +1,7 @@
+reshold of p = 12, and then convert them into translation forests using the algorithm in Section 3.2.
+    To increase the coverage of the rule set, we also introduce a default translation hyperedge for each parse hyperedge by monotonically translating each tail node, so that we can always at least get a complete translation in the end.
+    The BLEU score of the baseline 1-best decoding is 0.2325, which is consistent with the result of 0.2302 in (Liu et al., 2007) on the same training, development and test sets, and with the same rule extraction procedure.
+    The corresponding BLEU score of Pharaoh (Koehn, 2004) is 0.2182 on this dataset.
+    Figure 4 compares forest decoding with decoding on k-best trees in terms of speed and quality.
+    Using more than one parse tree apparently improves the BLEU score, but at the cost of much slower decoding, since each of the top-k trees has to be decoded individually although they share many common subtrees.
+    Forest decoding, by contrast, is much faster and produces c

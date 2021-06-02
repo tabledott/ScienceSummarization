@@ -1,0 +1,10 @@
+all, we do not have to run a GIZA++ aligner.
+    Second, we do not need to worry about non-ITG word alignments, such as the (2, 4, 1, 3) permutation patterns.
+    GIZA++ does not limit the set of permutations allowed during translation, so it can produce permutations that are not reachable using an ITG.
+    Formally, given a word-based ITG alignment, the bootstrapping algorithm finds all the phrase pairs according to the definition of Och and Ney (2004) and Chiang (2005) with the additional constraint that each phrase pair contains at most one word link.
+    Mathematically, let e(i, j) count the number of word links that are emitted from the substring ez...j, and f(l, m) count the number of word links emitted from the substring fl...ry,t.
+    The non-compositional phrase pairs satisfy e(i, j) = f(l, m) G 1.
+    Figure 3 (a) shows all possible non-compositional phrases given the Viterbi word alignment of the example sentence pair.
+  
+  
+    We summarize the pipeline of our system, demonstrating the interaction

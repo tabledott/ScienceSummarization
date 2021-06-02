@@ -1,0 +1,7 @@
+more manageable.
+    We use the algorithm described in (Globerson et al., 2007) to train the conditional log-linear model; this method was found to converge to a good model after 10 iterations over the training data. where &#945; is a constant dictating the beam size that is used (in our experiments we used &#945; = 10&#8722;6).
+    The set 7r(x) is used to restrict the set of possible parses under the full TAG-based model.
+    In section 2.1 we described how the TAG model has dependency labels of the form (POS, A, &#951;h, &#951;m, L), and that there is a function GRM that maps labels of this form to triples of non-terminals.
+    The basic idea of the pruned search is to only allow dependencies of the form (h, m, (POS, A, &#951;h, &#951;m, L)) if the tuple (h, m, GRM((POS, A, &#951;h, &#951;m, L))) is a member of 7r(x), thus reducing the search space for the parser.
+    We now turn to how the marginals &#181;(x, h, m, l) are defined and computed.
+    A simple approach would be to use a conditional log-linear

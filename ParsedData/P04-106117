@@ -1,0 +1,6 @@
+nity to take another, but didn&#8217;t.6 Initialization is important to the success of any local search procedure.
+    We chose to initialize EM not with an initial model, but with an initial guess at posterior distributions over dependency structures (completions).
+    For the first-round, we constructed a somewhat ad-hoc &#8220;harmonic&#8221; completion where all non-ROOT words took the same number of arguments, and each took other words as arguments in inverse proportion to (a constant plus) the distance between them.
+    The ROOT always had a single argument and took each word with equal probability.
+    This structure had two advantages: first, when testing multiple models, it is easier to start them all off in a common way by beginning with an M-step, and, second, it allowed us to point the model in the vague general direction of what linguistic dependency structures should look like.
+    On the WSJ10 corpus, the DMV model recovers a substantial fraction of the broad dependency trends: 43.2% of guessed

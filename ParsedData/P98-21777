@@ -1,0 +1,6 @@
+ignores cases where p = of, since such cases are rarely ambiguous, and we opt to model them deterministically as noun attachments.
+    We will report accuracies (in Section 5) on both cases where p = of and where p 0 of.
+    Also, the heuristic excludes examples with the verb to be from the training set (but not the test set) since we found them to be unreliable sources of evidence.
+    Applying the extraction heuristic to 970K unannotated sentences from the 1988 Wall St. Journal' data yields approximately 910K unique head word tuples of the form (v, p, n2) or (n,p, n2).
+    The extraction heuristic is far from perfect; when applied to and compared with the annotated Wall St. Journal data of the Penn treebank, only 69% of the extracted head word tuples represent correct attachments.2 The extracted tuples are meant to be a noisy but abundant substitute for the information that one might get from a treebank.
+    Tables 2 and 3 list the most frequent extracted head word tuples for unambiguous verb and noun attac

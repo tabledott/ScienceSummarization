@@ -1,0 +1,9 @@
+on 5 the performance of this approximation closely follows the exact collapsed Gibbs sampler.
+    Although we could use our model directly as a decoder to perform translation, its simple hierarchical reordering parameterisation is too weak to be effective in this mode.
+    Instead we use our sampler to sample a distribution over translation models for state-of-the-art phrase based (Moses) and hierarchical (Hiero) decoders (Koehn et al., 2007; Chiang, 2007).
+    Each sample from our model defines a hierarchical alignment on which we can apply the standard extraction heuristics of these models.
+    By extracting from a sequence of samples we can directly infer a distribution over phrase tables or Hiero grammars.
+  
+  
+    Our evaluation aims to determine whether the phrase/SCFG rule distributions created by sampling from the model described in Section 4 impact upon the performance of state-of-theart translation systems.
+    We conduct experiments translating both Chinese (high reordering) and Arabic (low reorde

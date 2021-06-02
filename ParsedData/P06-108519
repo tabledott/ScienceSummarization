@@ -1,0 +1,11 @@
+lower-accuracy collocation solution, but his search algorithm instead finds a higher-accuracy but lower-probability solution.
+    We performed two experiments suggesting that our own inference procedure does not suffer from similar problems.
+    First, we initialized our Gibbs sampler in three different ways: with no utteranceinternal boundaries, with a boundary after every character, and with random boundaries.
+    Our results were virtually the same regardless of initialization.
+    Second, we created an artificial corpus by randomly permuting the words in the true corpus, leaving the utterance lengths the same.
+    The artificial corpus adheres to the unigram assumption of our model, so if our inference procedure works correctly, we should be able to correctly identify the words in the permuted corpus.
+    This is exactly what we found, as shown in Table 1(b).
+    While all three models perform better on the artificial corpus, the improvements of the DP model are by far the most striking.
+  
+  
+    The res

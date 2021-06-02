@@ -1,0 +1,6 @@
+h(r, v) which attempts to pattern-match rule r at node v in the parse forest, and in case of success, returns a list of descendent nodes of v that are matched to the variables in r, or returns an empty list if the match fails.
+    Note that this procedure is recursive and may Pseudocode 1 The conversion algorithm. involve multiple parse hyperedges.
+    For example, which covers three parse hyperedges, while nodes in gray do not pattern-match any rule (although they are involved in the matching of other nodes, where they match interior nodes of the source-side tree fragments in a rule).
+    We can thus construct a translation hyperedge from match(r, v) to v for each node v and rule r. In addition, we also need to keep track of the target string s(r) specified by rule r, which includes target-language terminals and variables.
+    For example, s(r3) = &#8220;held x2 with x1&#8221;.
+    The subtranslations of the matched variable nodes will be substituted for the variables in s(r) to get a complete translation fo

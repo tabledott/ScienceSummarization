@@ -1,0 +1,7 @@
+ similarity to deterministic annealing (DA), a technique used in clustering and classification to smooth out objective functions that are piecewise constant (hence discontinuous) or bumpy (non-concave) (Rose, 1998; Ueda and Nakano, 1998).
+    In unsupervised learning, DA iteratively re-estimates parameters like EM, but begins by requiring that the entropy of the posterior pp(y  |x) be maximal, then gradually relaxes this entropy constraint.
+    Since entropy is concave in O, the initial task is easy (maximize a concave, continuous function).
+    At each step the optimization task becomes more difficult, but the initializer is given by the previous step and, in practice, tends to be close to a good local maximum of the more difficult objective.
+    By the last iteration the objective is the same as in EM, but the annealed search process has acted like a good initializer.
+    This method was applied with some success to grammar induction models by Smith and Eisner (2004).
+    In this work, instead of imposing c

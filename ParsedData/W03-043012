@@ -1,0 +1,7 @@
+ever, the original posterior distribution over states given each token, P&#923;(s|o) = &#945;t(s|o)&#946;t+1(s|o)/Zo, is still calculated by dynamic programming without approximation.)
+    Furthermore, we can calculate the gain of aggregate features irrespective of transition source, g(st, o, t), and expand them after they are selected.
+    (2) In many sequence problems, the great majority of the tokens are correctly labeled even in the early stages of training.
+    We significantly gain efficiency by including in the gain calculation only those tokens that are mislabeled by the current model.
+    Let {o(i) : i = 1...M} be those tokens, and o(i) be the input sequence in which the ith error token occurs at position t(i).
+    Then algebraic simplification using these approximations and previous definitions gives G&#923;(g, &#181;) = where Zo(i)(A, g, &#181;) (with non-bold o) is simply s P&#923;(s|o(i))exp(&#181;g(s,o(i),t(i))).
+    The optimal values of the &#181;&#8217;s cannot be solved in closed form, but N

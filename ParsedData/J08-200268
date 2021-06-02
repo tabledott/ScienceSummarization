@@ -1,0 +1,9 @@
+l have a very hard time guessing the correct labeling.
+    Thus, if the syntactic parser makes errors, these errors influence directly the semantic role labeling system.
+    The theoretically correct way to propagate the uncertainty of the syntactic parser is to consider (sum over) multiple possible parse trees, weighted by their likelihood.
+    In Finkel, Manning, and Ng (2006), this is approximated by sampling parse trees.
+    We implement this idea by an argmax approximation, using the top k parse trees from the parser of Charniak (2000).
+    We use these alternative parses as follows: Suppose t1, ... , tk are trees for sentence s with probabilities P(ti|s) given by the parser.
+    Then for a fixed predicate v, let Li denote the best joint labeling of tree ti, with score scoreSRL(Lilti) according to our final joint model.
+    Then we choose the labeling L which maximizes This method of using multiple parse trees is very simple to implement and factors in the uncertainty of the parser to some extent.
+    Ho

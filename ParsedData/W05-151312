@@ -1,0 +1,8 @@
+n the training data.
+    In our experiments (described in section 3), we limited the number of consecutive unary reductions to three, although the parser never took more than two unary reduction actions consecutively in any sentence.
+    When we limit the number of consecutive unary reductions to a finite number m, the parser makes at most (2n &#8211; 1)m unary reductions when parsing a sentence of length n. Placing this limit not only guarantees that the algorithm terminates, but also guarantees that the number of actions taken by the parser is O(n), where n is the length of the input string.
+    Thus, the parser runs in linear time, assuming that classifying a parser action is done in constant time.
+  
+  
+    As mentioned before, our parser shares similarities with the dependency parsers of Yamada and Matsumoto (2003) and Nivre and Scholz (2004) in that it uses a classifier to guide the parsing process in deterministic fashion.
+    While Yamada and Matsumoto use a quadratic run-time algorithm with multiple 

@@ -1,0 +1,11 @@
+and Discussion of Algorithms.
+			The four algorithms, along with the 1-best Viterbi algo rithm and the generalized Jime?nez and Marzal algorithm, are compared in Table 1.
+			The key difference between our Algorithm 3 and Jime?nez and Marzal?s algorithm is the restriction of top k candidates before making heaps (line 11 in Figure 6, see also Sec.
+			4.3).
+			Without this line Algorithm 3 could be considered as a generalization of the Jime?nez andMarzal algorithm to the case of acyclic monotonic hy pergraphs.
+			This line is also responsible for improving the time complexity from O(|E| + |Dmax|k log(d + k)) (generalized Jime?nez and Marzal algorithm) to O(|E| + |Dmax|k log k), where d = maxv |BS (v)| is the maximumin-degree among all vertices.
+			So in case k &lt; d, our algo rithm outperforms Jime?nez and Marzal?s.
+	
+	
+			We report results from two sets of experiments.
+			For prob abilistic parsing, we implemented Algorithms 0, 1, and3 on top of a widely-used parser (Bikel, 2004) and conducted experiments on p

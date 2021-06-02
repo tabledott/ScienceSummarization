@@ -1,0 +1,7 @@
+rom a foreign language to English, the LM gives a prior probability P and the TM gives a channel translation probability P .
+    These models are automatically trained using monolingual (for the LM) and bilingual (for the TM) corpora.
+    A decoder then finds the best English sentence given a foreign are not simple probability tables but are parameterized models, a decoder must conduct a search over the space defined by the models.
+    For the IBM models defined by a pioneering paper (Brown et al., 1993), a decoding algorithm based on a left-to-right search was described in (Berger et al., 1996).
+    Recently (Yamada and Knight, 2001) introduced a syntax-based TM which utilized syntactic structure in the channel input, and showed that it could outperform the IBM model in alignment quality.
+    In contrast to the IBM models, which are word-to-word models, the syntax-based model works on a syntactic parse tree, so the decoder builds up an English parse tree given a sentencein a foreign language.
+    This paper 

@@ -1,0 +1,6 @@
+different weighting schemes can be used.
+    Once the initial trees have been broken down into constituents, we put all the constituents from all of the m trees into a single list.
+    We then look for each pair of constituents A and B where the label, begin, and end are identical, and merge A and B into a single constituent with the same label, begin, and end, and with weight equal to the weight of A plus the weight of B.
+    Once no more constituent mergers are possible, the resulting constituents are placed on a standard parse chart, but where the constituents in the chart do not contain back-pointers indicating what smaller constituents they contain.
+    Building the final tree amounts to determining these back-pointers.
+    This can be done by running a bottom-up chart parsing algorithm (Allen, 1995) for a weighted grammar, but instead of using a grammar to determine what constituents can be built and what their weights are, we simply constrain the building of constituents to what is already in the chart

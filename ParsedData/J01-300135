@@ -1,0 +1,7 @@
+des. when compared with manually assigned senses.
+    The optimization must be carried out relative to a function that evaluates the suitability of a particular choice of senses.
+    In the Cowie et al. implementation this was done using a simple count of the number of words (tokens) in common between all the definitions for a given choice of senses.
+    However, this method prefers longer definitions, since they have more words that can contribute to the overlap, and short definitions or definitions by synonym are correspondingly penalized.
+    We addressed this problem by computing the overlap in a different way: instead of each word contributing one, we normalized its contribution by the number of words in the definition it came from.
+    In their implementation Cowie et al. also added pragmatic codes to the overlap computation; however, we prefer to keep different knowledge sources separate and use this information in another partial tagger (see Section 4.5).
+    The Cowie et al. implementation returned o

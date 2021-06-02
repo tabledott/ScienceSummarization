@@ -1,0 +1,8 @@
+er semirings described in Figure 5, are not commutative under their multiplicative operator, concatenation.
+    In many parsers, it is conventional to compute parse forests: compact representations of the set of trees consistent with the input.
+    We will use a related concept, derivation forests, a compact representation of the set of derivations consistent with the input, which corresponds to the parse forest for CFGs, but is easily extended to other formalisms.
+    Often, we will not be interested in the set of all derivations, but only in the most probable derivation.
+    The Viterbi-derivation semiring computes this value.
+    Alternatively, we might want the n best derivations, which would be useful if the output of the parser were passed to another stage, such as semantic disambiguation; this value is computed by the Viterbi-n-best derivation semiring.
+    Notice that each of the derivation semirings can also be used to create transducers.
+    That is, we simply associate strings rather than grammar r

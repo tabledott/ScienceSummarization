@@ -1,0 +1,6 @@
+ ).
+    A separate counter is used for each event.
+    Therefore, we need the same number of counters, The model parameters ,, and , that is, the probabilities P , as the number of entries in the probability tables, , , and .
+    The training procedure is the following: where ,, and are the relevant features to , , and , respectively.
+    For example, we saw that the parent node label and the node label were used for , and the syntactic category sequence For all, such that Str , Let cnt = P P Str A straightforward implementation that tries all possible combinations of parameters , is very expensive, since there are possible combinations, where and are the number of possible values for and, respectively ( is uniquely decided when and are given for a particular ).
+    Appendix describes an efficient implementation that estimates the probability in polynomial time.3 With this efficient implementation, it took about 50 minutes per iteration on our corpus (about two thousand pairs of English parse trees and Japane

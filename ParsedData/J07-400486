@@ -1,0 +1,9 @@
+ically assigned POS tags.
+    We show how to maintain some POS ambiguity through to the supertagging phase, using a multi-POS tagger, and also how POS tag probabilities can be encoded as real-valued features in the supertagger.
+    The drop in supertagging accuracy when moving from gold to automatically assigned POS tags is reduced by roughly 50% across the various values of &#946;.
+  
+  
+    The philosophy in earlier work which combined the supertagger and parser (Clark, Hockenmaier, and Steedman 2002; Clark and Curran 2003) was to use an unrestrictive setting of the supertagger, but still allow a reasonable compromise between speed and accuracy.
+    The idea was to give the parser the greatest possibility of finding the correct parse, by initializing it with as many lexical categories as possible, but still retain reasonable efficiency.
+    However, for some sentences, the number of categories in the chart gets extremely large with this approach, and parsing is unacceptably slow.
+    Hence a limit was appli

@@ -1,0 +1,7 @@
+ference between those numbers will be the same, since the discrepancy must be reversed by each path that leads from that state to a final state.
+    Let us define the imbalance characterizing a state to be the difference in the number of u: E and E :v transitions on paths leading to that state.
+    Since an acyclic path cannot produce an imbalance that differs from zero by more than the number of states in the machine, the absolute value of the imbalance is bounded by the machine size.
+    On each iteration our procedure has the effect of removing all states with the maximum imbalance.
+    First, we note that transitions of the form u:v always connect a pair of states with the same imbalance.
+    Such transitions can be eliminated in favor of an equivalent sequence of transitions E: v and U : E through a new state whose imbalance is one less than the imbalance of the original two states.
+    Now suppose that k &gt; 0 is the maximum imbalance for the machine and that all u : v transitions between states of imb

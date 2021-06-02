@@ -1,0 +1,6 @@
+our implementation, for example, we store the rules in a decision tree, which permits base NP identification in time linear in the length of the tagged input text when using the longest match heuristic.
+    Unfortunately, there is an obvious problem with the algorithm described above.
+    There will be many unhelpful rules in the rule set extracted from the training corpus.
+    These &amp;quot;bad&amp;quot; rules arise from four sources: bracketing errors in the corpus; tagging errors; unusual or irregular linguistic constructs (such as parenthetical expressions); and inherent ambiguities in the base NPs &#8212; in spite of their simplicity.
+    For example, the rule (VBG NNS), which was extracted from manufacturing/VBG titans/NNS in the example text, is ambiguous, and will cause erroneous bracketing in sentences such as The execs squeezed in a few meetings before [boarding/VBG buses/NNS] again.
+    In order to have a viable mechanism for identifying base NPs using this algorithm, the grammar must be improved

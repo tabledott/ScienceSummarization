@@ -1,0 +1,9 @@
+ text in the training corpora, was parsed using RASP (Briscoe and Carroll, 2002), to extract part-of-speech tags, lemmas, and dependency information.
+    For instances containing more than one occurrence of the target word, we disambiguate the first occurrence.
+    Instances which were not correctly recognized by the parser (e.g., a target word labeled with the wrong lemma or part-of-speech), were automatically assigned to the largest sensecluster.3
+  
+  
+    Model Selection The framework presented in Section 3 affords great flexibility in modeling the empirical data.
+    This however entails that several parameters must be instantiated.
+    More precisely, our model is conditioned on the Dirichlet hyperparameters &#945; and &#946; and the number of senses S. Additional parameters include the number of iterations for the Gibbs sampler and whether or not the layers are assigned different weights.
+    Our strategy in this paper is to fix &#945; and &#946; and explore the consequences of varying S. The value for

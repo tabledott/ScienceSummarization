@@ -1,0 +1,7 @@
+t of A that only contains the outgoing arcs of the node i. LEFT-ARCl or RIGHT-ARCl to subtrees whose yields are not adjacent according to the original word order.
+    This is illustrated in Figure 3, which shows the transition sequence needed to parse the example in Figure 1.
+    For readability, we represent both the stack E and the buffer B as lists of tokens, indexed by position, rather than abstract nodes.
+    The last column records the arc that is added to the arc set A in a given transition (if any).
+    Given the simplicity of the extension, it is rather remarkable that the system Su = (C, Tu, cs, Ct) is sound and complete for the set of all dependency trees (over some label set L), including all non-projective trees.
+    The soundness part is trivial, since any terminating transition sequence will have to move all the nodes 1, ... , n from B to E (using SHIFT) and then remove them from E (using LEFT-ARCl or RIGHT-ARCl), which will produce a tree with root 0.
+    For completeness, we note first that p

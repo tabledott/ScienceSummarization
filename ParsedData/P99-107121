@@ -1,0 +1,5 @@
+g input phrases to a SURGE syntactic input, the sentence planner tries to determine the semantic type of circumstantial by looking up the preposition (for example: &amp;quot;after&amp;quot; indicates a &amp;quot;time&amp;quot; circumstantial).
+    This allows FUF/SURGE to map the syntactic category of the circumstantial to the semantic and syntactic features expected by SURGE.
+    However, in cases where the preposition is ambiguous (e.g., &amp;quot;in&amp;quot; can indicate &amp;quot;time&amp;quot; or &amp;quot;location&amp;quot;) the generator must rely solely on ordering circumstantials based on ordering found in the input.
+    We have modified SURGE to accept this type of input: in all places SURGE checks the semantic type of the circumstantial before making choices, we verified that the absence of the corresponding input feature would not lead to an inappropriate default being selected.
+    In summary, this new application for syntactic realization highlights the need for supporting hybrid inputs of vari

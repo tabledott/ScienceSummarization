@@ -1,0 +1,7 @@
+nded by the maximum number of transitions Nivre Deterministic Incremental Dependency Parsing in a transition sequence C0,m for a sentence x = (w0, w1, ... , wn).
+    As for the stack-based algorithms, there can be at most n SHIFT&#955; transitions in C0,m.
+    Moreover, because each of the three other transitions presupposes that &#955;1 is non-empty and decreases its length by 1, there can be at most i such transitions between the i &#8722; 1th and the ith SHIFT transition.
+    It follows that the total number of transitions in C0,m is bounded by En The assumption that transitions can be performed in constant time can be justified by the same kind of considerations as for the stack-based algorithms (cf.
+    Remark 1).
+    The only complication is the SHIFT&#955; transition, which involves appending the two lists &#955;1 and &#955;2, but this can be handled with an appropriate choice of data structures.
+    A more serious complication is the need to check the preconditions of LEFT-ARCi and RIGHTARCi , but if 

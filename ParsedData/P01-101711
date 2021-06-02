@@ -1,0 +1,6 @@
+ boundary (barring sentence-final punctuation).
+    Again, with proper attention to details, this can be known at the time the expansion is taking place.
+    This modification is much more complex than the multiplicative &#8220;hack,&#8221; and it is not quite as good (we lose about 0.1% in precision/recall figures), but it does allow us to compute true probabilities.
+    The resulting parser strictly speaking defines a PCFG in that all of the extra conditioning information could be included in the non-terminalnode labels (as we did with the head information in Figure 1).
+    When a PCFG probability distribution is estimated from training data (in our case the Penn tree-bank) PCFGs define a tight (summing to one) probability distribution over strings [5], thus making them appropriate for language models.
+    We also empirically checked that our individual distributions (p(t 1 l, m, u, i), and p(h 1 t,l, m, u, i) from Equation 5 and p(L 1 l, t, h, m, u), p(M 1 l, t, h, m, u), and p(R 1 l, t, h, m, u) from Equa

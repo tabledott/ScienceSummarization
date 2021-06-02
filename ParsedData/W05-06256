@@ -1,0 +1,8 @@
+idates, a1 = &#8220;traders&#8221; and a4 = &#8220;the selling panic in both stocks and futures&#8221;; system B has three argument candidates, b1 = &#8220;traders&#8221;, b2 = &#8220;the selling panic&#8221;, and b3 = &#8220;in both stocks and futures&#8221;.
+    The phantom candidates are created for a2, a3, and b4 of which probability is set to the prior.
+    Specifically for this implementation, we first train two SRL systems that use Collins&#8217; parser and Charniak&#8217;s parser respectively.
+    In fact, these two parsers have noticeably different output.
+    In evaluation, we run the system that was trained with Charniak&#8217;s parser 5 times with the top-5 parse trees output by Charniak&#8217;s parser1.
+    Together we have six different outputs per predicate.
+    Per each parse tree output, we ran the first three stages, namely pruning, argument identification, and argument classification.
+    Then a joint inference stage is used to resolve the inconsistency of the output of argument classificat

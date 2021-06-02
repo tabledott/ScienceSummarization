@@ -1,0 +1,10 @@
+es, and evaluated their F1 on the development set.
+    After choosing hyperparameters to maximize the dev F1, we would retrain the model using these hyperparameters on the full 8936 sentence training set, and evaluate on test.
+    One hyperparameter was l2-regularization sigma, which for most models was optimal at 2 or 3.2.
+    The word embeddings also required a scaling hyperparameter, as described in Section 7.2.
+    NER is typically treated as a sequence prediction problem.
+    Following Ratinov and Roth (2009), we use the regularized averaged perceptron model.
+    Ratinov and Roth (2009) describe different sequence encoding like BILOU and BIO, and show that the BILOU encoding outperforms BIO, and the greedy inference performs competitively to Viterbi while being significantly faster.
+    Accordingly, we use greedy inference and BILOU text chunk representation.
+    We use the publicly available implementation from Ratinov and Roth (2009) (see the end of this paper for the URL).
+    In our baseline experime

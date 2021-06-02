@@ -1,0 +1,10 @@
+using a cutoff increases the average value of m across the terms because it removes low frequency terms with few attributes.
+    For instance, the frequent company appears in 11360 grammatical relations, with a total frequency of 69240 occurrences, whereas the infrequent pants appears in only 401 relations with a total frequency of 655 occurrences.
+    The problem is that for every comparison, the algorithm must examine the length of both attribute vectors.
+    Grefenstette (1994) uses bit signatures to test for shared attributes, but because of the high frequency of the most common attributes, this does not skip many comparisons.
+    Our system keeps track of the sum of the remaining vector which is a significant optimisation, but comes at the cost of increased representation size.
+    However, what is needed is some algorithmic reduction that bounds the number of full O(m) vector comparisons performed.
+  
+  
+    One way of bounding the complexity is to perform an approximate comparison first.
+    If the app

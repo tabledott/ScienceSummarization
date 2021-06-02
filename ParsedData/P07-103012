@@ -1,0 +1,9 @@
+ss generic patterns.
+    We used f2 = 100 occurrences per million words (there is room here for automatic optimization, of course).
+    If S is in fact related to X in some way, there might be a number of S-patterns that capture this relationship.
+    For each X, we group all the S-patterns that have X as a target.
+    (Note that two S-patterns with two different targets might be otherwise identical, so that essentially the same pattern might appear in two different groups.)
+    We now merge groups with large (more than 2/3) overlap.
+    We call the resulting groups, S-groups.
+    If the S-patterns in a given S-group actually capture some relationship between S and the target, then one would expect that similar groups would appear for a multiplicity of concept words S. Suppose that we have S-groups for three different concept words S such that the pairwise overlap among the three groups is more than 2/3 (where for this purpose two patterns are deemed identical if they differ only at S and X).
+    Then the set

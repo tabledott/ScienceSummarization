@@ -1,0 +1,8 @@
+ apparent.
+    The sentences in question have noun phrases like &#8220;monday night football&#8221; that trigram models eats up but on which our bihead parsing model performs less well.
+    For example, consider the sentence &#8220;he watched monday night football&#8221;.
+    The trigram model assigns this a probability of 1.9 &#8226; 10-5, while the grammar model gives it a probability of 2.77 &#8226; 10-7.
+    To a first approximation, this is entirely due to the difference in probability of the noun-phrase.
+    For example, the trigram probability p(football I monday, night) = 0.366, and would have been 1.0 except that smoothing saved some of the probability for other things it might have seen but did not.
+    Because the grammar model conditions in a different order, the closest equivalent probability would be that for &#8220;monday&#8221;, but in our model this is only conditioned on &#8220;football&#8221; so the probability is much less biased, only 0.0306.
+    (Penn tree-bank base noun-phrases are flat

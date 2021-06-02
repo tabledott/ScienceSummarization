@@ -1,0 +1,8 @@
+pose strong independence assumptions between features, making it very difficult to incorporate non-independent features over the sentence pairs.
+    For instance, as well as detecting that a source word is aligned to a given target word, we would also like to encode syntactic and lexical features of the word pair, such as their partsof-speech, affixes, lemmas, etc.
+    Features such as these would allow for more effective use of sparse data and result in a model which is more robust in the presence of unseen words.
+    Adding these non-independent features to a generative model requires that the features&#8217; inter-dependence be modelled explicitly, which often complicates the model (eg.
+    Toutanova et al. (2002)).
+    Secondly, the later IBM models, such as Model 4, have to resort to heuristic search techniques to approximate forward-backward and Viterbi inference, which sacrifice optimality for tractability.
+    This paper presents an alternative discriminative method for word alignment.
+    We use a co

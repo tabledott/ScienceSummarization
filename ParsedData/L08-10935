@@ -1,0 +1,10 @@
+event summarization phase extracting the collocations related to the seed collocations found in a specific time duration.
+			The most important part in the preprocessing phase is collocation extraction.
+			We retrieve the collocations from the sentences in blog posts.
+			The candidates are two terms within a window size.
+			Due to the size of candidates, we have to identify the set of tracking terms for further analysis.
+			In this paper, those candidates containing stopwords or with low change of temporal mutual information are removed.
+			In the event detection phase, we detect events by using the peak of temporal mutual information in time dimension.
+			However, the regular pattern of temporal mutual information may cause problems to our detection.
+			Therefore, we remove the regular pattern by seasonal index, and then detect the plausible events by measuring the unusual peak of temporal mutual information.
+			If a topic is suddenly discussed, the relationship between the related terms will become higher.

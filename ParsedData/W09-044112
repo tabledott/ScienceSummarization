@@ -1,0 +1,9 @@
+idered for phrase substitutions.
+    In addition, the cost for a phrasal substitution is limited to values greater than or equal to 0, i.e., the substitution cost cannot be negative.
+    In addition, the shifting constraints of TERp are also relaxed to allow shifting of paraphrases, stems, and synonyms.
+    In total TERp uses 11 parameters out of which four represent the cost of phrasal substitutions.
+    The match cost is held fixed at 0, so that only the 10 other parameters can vary during optimization.
+    All edit costs, except for the phrasal substitution parameters, are also restricted to be positive.
+    A simple hill-climbing search is used to optimize the edit costs by maximizing the correlation of human judgments with the TERp score.
+    These correlations are measured at the sentence, or segment, level.
+    Although it was done for the experiments described in this paper, optimization could also be performed to maximize document level correlation &#8211; such an optimization would give decreased we

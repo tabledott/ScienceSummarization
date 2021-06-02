@@ -1,0 +1,7 @@
+he focus of the local context.
+    We link the words in the extracted sentence with words in its local context, if they are repetitions, morphologically related, or linked in WordNet through one of the lexical relations.
+    The system then computes an importance score for each word in the extracted sentence, based on the number of links it has with other words and the types of links.
+    The formula for computing the context importance score for a word w is as follows: Here, i represents the different types of lexical relations the system considered, including repetition, inflectional relation, derivational relation, and the lexical relations from WordNet.
+    We assigned a weight to each type of lexical relation, represented by Li in the formula.
+    Relations such as repetition or inflectional relation are considered more important and are assigned higher weights, while relations such as hypernym are considered less important and assigned lower weights.
+    NU (w) in the formula represents the number of a 

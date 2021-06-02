@@ -1,0 +1,6 @@
+e trained on the English training set and evaluated on the English validation set; the same beam value was applied to both training and validation data.
+    Pass = %dependencies surviving the beam in training data, Orac = maximum achievable UAS on validation data, Acc1/Acc2 = UAS of Models 1/2 on validation data, and Time1/Time2 = minutes per perceptron training iteration for Models 1/2, averaged over all 10 iterations.
+    For perspective, the English training set has a total of 39,832 sentences and 950,028 words.
+    A beam of 0.0001 was used in all experiments outside this table. rameters from the iteration that achieves the best score on the validation set.
+    In order to decrease training times, we follow Carreras et al. (2008) and eliminate unlikely dependencies using a form of coarse-to-fine pruning (Charniak and Johnson, 2005; Petrov and Klein, 2007).
+    In brief, we train a log-linear first-order parser11 and for every sentence x in training, validation, and test data we compute the marginal probab

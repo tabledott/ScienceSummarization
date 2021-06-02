@@ -1,0 +1,7 @@
+calculations of 13 can be done in 0(n3) time (see Appendix A), we have been unable to find an algorithm to compute the aL terms faster than 0(n5).
+    When a constituent is removed from the agenda, it only affects the 1 values of its ancestors in the parse trees; however, al., values are propagated to all of the constituent's siblings to the right and all of its descendants.
+    Recomputing the aL terms when a constituent is removed from the agenda can be done in 0(n3) time, and since there are 0(n2) possible constituents, the total time needed to compute the at, terms in this manner is 0(n5).
+  
+  
+    Although the aL-based models seem impractical, the edge-count and constituent-count statistics show that contextual information is useful.
+    We can derive an estimate similar to the prefix estimate but containing a much simpler model of the context as follows: Once again applying the usual independence assumption that given a nonterminal, the tag sequence it generates depends only on that nonterminal, we can

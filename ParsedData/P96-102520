@@ -1,0 +1,11 @@
+system contribute to performance.
+    All tests were made on a Sun SPARCServer 1000E, using 100% of a 60Mhz SuperSPARC processor.
+    The parser uses around 180 megabytes of memory, and training on 40,000 sentences (essentially extracting the co-occurrence counts from the corpus) takes under 15 minutes.
+    Loading the hash table of bigram counts into memory takes approximately 8 minutes.
+    Two strategies are employed to improve parsing efficiency.
+    First, a constant probability threshold is used while building the chart - any constituents with lower probability than this threshold are discarded.
+    If a parse is found, it must be the highest ranked parse by the model (as all constituents discarded have lower probabilities than this parse and could not, therefore, be part of a higher probability parse).
+    If no parse is found, the threshold is lowered and parsing is attempted again.
+    The process continues until a parse is found.
+    Second, a beam search strategy is used.
+    For each span of words

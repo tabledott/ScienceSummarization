@@ -1,0 +1,7 @@
+ers.
+    An initial model is estimated in a supervised fashion using the labeled data, and this supervised model is used to attach labels (or a probability distribution over labels) to the unlabeled data, then a new supervised model is estimated, and this is iterated.
+    If these techniques are applied when there are a small number of labels in relation to the number of parameters used, they will suffer from the &#8220;overconfident pseudo-labeling problem&#8221; (Seeger, 2000), where the initial labels of poor quality assigned to the unlabeled data will dominate the model estimated in the M-step.
+    However, there are tasks with large numbers of parameters where there are sufficient labels.
+    Nigam et al. (2000) addressed a text classification task.
+    They estimate a Naive Bayes classifier over the labeled data and use it to provide initial MAP estimates for unlabeled documents, followed by EM to further refine the model.
+    Callison-Burch et al. (2004) examined the issue of semi-supervised training f

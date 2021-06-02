@@ -1,0 +1,7 @@
+er texts.
+    A probability of zero for a sequence creates problems because any alignment that contains this sequence will get a probability of zero.
+    Therefore, it may happen that, for some sequences of words, all alignments get a probability of zero and the model becomes useless for such sentences.
+    To avoid this, we interpolate these distributions with uniform distributions, i.e.
+    :onsider the interpolated model defined by: where number of words that have the tag t The interpolation coefficient A is computed using the deleted interpolation algorithm (Jelinek and Mercer 1980) (it would also be possible to use two coefficients, one for the interpolation on h, one for the interpolation on k).
+    The value of this coefficient is expected to increase if we increase the size of the training text, since the relative frequencies should be more reliable.
+    This interpolation procedure is also called &amp;quot;smoothing.&amp;quot; Smoothing is performed as follows: It can be noted that more complicated i

@@ -1,0 +1,11 @@
+since all the different multinomials in an HMM are independent.
+    Typically, concept learning problems are formulated such that there is a set of training examples that are independent of each other.
+    When training a bigram model (indeed, any HMM), this is not true, as each word is dependent on that before it.
+    This problem is solved by considering each sentence as an individual example.
+    More generally, it is possible to break the text at any point where tagging is unambiguous.
+    We thus use unambiguous words (those with only one possible part of speech) as example boundaries in bigram tagging.
+    This allows us to train on smaller examples, focusing training more on the truly informative parts of the corpus.
+  
+  
+    Within the committee-based paradigm there exist different methods for selecting informative examples.
+    Previous research in sample selection has used either sequential selection (Seung, Opper, and Sompolinsky, 1992; Freund et al., 1993; Dagan and Engelson, 1995), or batch sele

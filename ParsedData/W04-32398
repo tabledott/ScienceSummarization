@@ -1,0 +1,6 @@
+ and di (EL i=1 di = 1, di &gt; 0) is a normalized weight assigned to xi.
+    Given T, find the optimal rule (&#710;t, &#710;y) that maximizes the gain, i.e., The most naive and exhaustive method, in which we first enumerate all subtrees F and then calculate the gains for all subtrees, is usually impractical, since the number of subtrees is exponential to its size.
+    We thus adopt an alternative strategy to avoid such exhaustive enumeration.
+    The method to find the optimal rule is modeled as a variant of the branch-and-bound algorithm, and is summarized in the following strategies: We will describe these steps more precisely in the following subsections.
+    Abe and Zaki independently proposed an efficient method, rightmost-extension, to enumerate all subtrees from a given tree (Abe et al., 2002; Zaki, 2002).
+    First, the algorithm starts with a set of trees consisting of single nodes, and then expands a given tree of size (k &#8722; 1) by attaching a new node to this tree to obtain trees of size k. Ho

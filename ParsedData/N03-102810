@@ -1,0 +1,11 @@
+itioner.
+    However, this is not applicable to CRFs for two reasons.
+    First, the size of the Hessian is dim(&#57738;)2, leading to unacceptable space and time requirements for the inversion.
+    In such situations, it is common to use instead the (inverse of) the diagonal of the Hessian.
+    However in our case the Hessian has the form
+  
+  
+    Lafferty et al. (2001) used iterative scaling algorithms for CRF training, following earlier work on maximumentropy models for natural language (Berger et al., 1996; Della Pietra et al., 1997).
+    Those methods are very simple and guaranteed to converge, but as Minka (2001) and Malouf (2002) showed for classification, their convergence is much slower than that of general-purpose convex where the expectations are taken with respect to pa(Y |xk).
+    Therefore, every Hessian element, including the diagonal ones, involve the expectation of a product of global feature values.
+    Unfortunately, computing those expectations is quadratic on sequence length, as the forw

@@ -1,0 +1,8 @@
+rather than all the children having to be chosen when the node is first introduced.
+    We also extended the parsing strategy slightly to handle Chomsky adjunction structures (i.e. structures of the form [X [X ] [Y ]]) as a special case.
+    The Chomsky adjunction is removed and replaced with a special &#8220;modifier&#8221; link in the tree (becoming [X [ Y ]]).
+    We also compiled some frequent chains of nonbranching nodes (such as [S [VP ]]) into a single node with a new label (becoming [S-VP ]).
+    All these grammar transforms are undone before any evaluation of the output trees is performed.
+    An example of the ordering of the decisions in a derivation is shown by the numbering on the left in figure 1.
+    To precisely specify this ordering, it is sufficient to characterize the state of the parser as a stack of nodes which are in the process of being parsed, as illustrated on the right in figure 1.
+    The parsing strategy starts with a stack that contains a node labeled ROOT (step 0) and must end in

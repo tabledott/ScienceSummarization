@@ -1,0 +1,9 @@
+o use unlabeled data from both domains for domain adaptation.
+    By using just the unlabeled data from the target domain, however, we can view domain adaptation as a standard semisupervised learning problem.
+    There are many possible approaches for semisupservised learning in natural language processing, and it is beyond the scope of this paper to address them all.
+    We chose to compare with ASO because it consistently outperforms cotraining (Blum and Mitchell, 1998) and clustering methods (Miller et al., 2004).
+    We did run experiments with the top-k version of ASO (Ando and Zhang, 2005a), which is inspired by cotraining but consistently outperforms it.
+    This did not outperform the supervised method for domain adaptation.
+    We speculate that this is because biomedical and financial data are quite different.
+    In such a situation, bootstrapping techniques are likely to introduce too much noise from the source domain to be useful.
+    Structural correspondence learning is most similar to that of 

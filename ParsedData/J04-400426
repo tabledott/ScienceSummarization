@@ -1,0 +1,6 @@
+apping function as gamma.
+    For example: Since gap augmentations are present only in Model 3, the gamma function effectively is the identity function in the context of Models 1 and 2.
+    The head nonterminal is generated conditioning on its parent nonterminal label, as well as the headword and head tag which they share, since parents inherit their lexical head information from their head-children.
+    More specifically, an unlexicalized head nonterminal label is generated conditioning on the fully lexicalized parent nonterminal.
+    We denote the parameter class as follows: When the model generates a head-child nonterminal for some lexicalized parent nonterminal, it also generates a kind of subcategorization frame (subcat) on either side of the head-child, with the following maximal context: A fully lexicalized tree.
+    The VP node is the head-child of S. Probabilistically, it is as though these subcats are generated with the head-child, via application of the chain rule, but they are conditionally indepe

@@ -1,0 +1,11 @@
+ recurrent connections, plus the corresponding weight matrices.
+    The input vector w(t) represents input word at time t encoded using 1-of-N coding, and the output layer y(t) produces a probability distribution over words.
+    The hidden layer s(t) maintains a representation of the sentence history.
+    The input vector w(t) and the output vector y(t) have dimensionality of the vocabulary.
+    The values in the hidden and output layers are computed as follows: where In this framework, the word representations are found in the columns of U, with each column representing a word.
+    The RNN is trained with backpropagation to maximize the data log-likelihood under the model.
+    The model itself has no knowledge of syntax or morphology or semantics.
+    Remarkably, training such a purely lexical model to maximize likelihood will induce word representations with striking syntactic and semantic properties.
+  
+  
+    To understand better the syntactic regularities which are inherent in the learned representation,

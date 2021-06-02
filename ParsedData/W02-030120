@@ -1,0 +1,7 @@
+es/suffixes/substrings.8 The performance is measured by precision, recall, and F-score, which are the standard measures for the named entity recognition.
+    Systems based on the BIO representation may produce an inconsistent class sequence such as &#8220;O B-DNA I-RNA O&#8221;.
+    We interpret such outputs as follows: once a named entity starts with &#8220;B-C&#8221; then we interpret that the named entity with class &#8220;C&#8221; ends only when we see another &#8220;B-&#8221; or &#8220;O-&#8221; tag.
+    We have implemented SMO algorithm (Platt, 1998) and techniques described in (Joachims, 1998) for soft margin SVMs in C++ programming language, and implemented support codes for pairwise classification and parallel training in Java programming language.
+    To obtain POS information required for features and class splitting, we used an English POS tagger described in (Kazama et al., 2001).
+    First, we show the effect of the class splitting described in Section 5.1.
+    Varying the size of training data,

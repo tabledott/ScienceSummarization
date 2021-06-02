@@ -1,0 +1,8 @@
+ummary of these techniques. collection of simple manually-derived heuristics to guess the proper tag for the word.
+    N-gram part of speech taggers (Bahl(1976), Church(1992), Weischedel(1993)) are perhaps the most widely used of tagging algorithms.
+    The basic model is that given a word sequence W, we try to find the tag sequence T that maximizes P(TIW).
+    This can be done using the Viterbi algorithm to find the T that maximizes: P(T)*P(WIT).
+    In our experiments, we use a standard trigram tagger using deleted interpolation (Jelinek (1980)) and used suffix information for handling unseen words (as was done in Weischedel (1993)).
+    In transformation-based tagging (Brill (1995)), every word is first assigned an initial tag, This tag is the most likely tag for a word if the word is known and is guessed based upon properties of the word if the word is not known.
+    Then a sequence of rules are applied that change the tags of words based upon the contexts they appear in.
+    These rules are applied deter

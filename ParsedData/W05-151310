@@ -1,0 +1,8 @@
+ instances that consist of sets of features paired with their classes corresponding to the correct parsing actions.
+    These instances can be obtained by running the algorithm on a corpus of sentences for which the correct parse trees are known.
+    Instead of using the classifier to determine the parser&#8217;s actions, we simply determine the correct action by consulting the correct parse trees.
+    We then record the features and corresponding actions for parsing all sentences in the corpus into their correct trees.
+    This set of features and corresponding actions is then used to train a classifier, resulting in a complete parser.
+    When parsing a sentence with n words, the parser takes n shift actions (exactly one for each word in the sentence).
+    Because the maximum branching factor of trees built by the parser is two, the total number of binary reduce actions is n &#8211; 1, if a complete parse is found.
+    If the input string is rejected, the number of binary reduce actions is less than n &#821

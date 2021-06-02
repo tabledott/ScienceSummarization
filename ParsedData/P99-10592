@@ -1,0 +1,10 @@
+y relying on probabilistic or weighted versions of bilexical grammars (Alshawi, 1996; Eisner, 1996; Charniak, 1997; Collins, 1997).
+    The rationale is that soft selectional restrictions play a crucial role in disambiguation.1 The chart parsing algorithms used by most of the above authors run in time 0(n5), because bilexical grammars are enormous (the part of the grammar relevant to a length-n input has size 0(n2) in practice).
+    Heavy probabilistic pruning is therefore needed to get acceptable runtimes.
+    But in this paper we show that the complexity is not so bad after all: grammars where an 0(n3) algorithm was previously known (Eisner, 1997), the grammar constant can be reduced without harming the 0(n3) property.
+    Our algorithmic technique throughout is to propose new kinds of subderivations that are not constituents.
+    We use dynamic programming to assemble such subderivations into a full parse.
+  
+  
+    The reader is assumed to be familiar with context-free grammars.
+    Our notation follows (

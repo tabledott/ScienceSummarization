@@ -1,0 +1,7 @@
+; no feature engineering was attempted.
+    The features were, for each event in an event-ordering pair, the event-class, aspect, modality, tense and negation (all nominal features); event string, and signal (a preposition/adverb, e.g., reported on Tuesday), which are string features, and contextual features indicating whether the same tense and same aspect are true of both elements in the event pair.
+    For event-time links, we used the above event and signal features along with TIMEX3 time features.
+    For learning, we used an off-the-shelf Maximum Entropy (ME) classifier (from Carafe, available at sourceforge.net/projects/carafe).
+    As shown in the UNCLOSED (ME) column in Table 24, accuracy of the unclosed ME classifier does not go above 77%, though it&#8217;s always better than the majority class (in parentheses).
+    We also tried a variety of other classifiers, including the SMO support-vector machine and the na&#239;ve Bayes tools in WEKA (www.weka.net.nz).
+    SMO performance (but not na&#239;ve B

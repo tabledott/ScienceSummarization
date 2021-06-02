@@ -1,0 +1,10 @@
+llowing the work of Yamada and Knight (2001), we train our model by maximizing P (s|c) over the training corpuswith the EM algorithm described in Alg.
+			2, us ing a constructed graph structure.
+			We develop the Training Tree (Fig.
+			6) to calculate P (s|c).
+			P (s|c) is equal to the inside probability of the root in theTraining Tree.
+			Alg.
+			3 and Alg.
+			4 are used to calculate the inside and outside probabilities.
+			We re fer readers to Yamada and Knight (2001) for more details.
+			Algorithm 2 EM Training (dataset)Initialize all probability tables using the uniform distribu tion; for several iterations do reset al cnt = 0; for each sentence pair &lt; c, s &gt; in dataset do tt = buildTrainingTree(&lt; c, s &gt;); calcInsideProb(tt); calcOutsideProb(tt); update cnt for each conditioning feature in each node of tt: cnt = cnt + node.insideProb ? node.outsideProb/root.insideProb; end for updateProbability(); end for root sp sp_res1 sp_res2 dp ro mp mp_res1 mp_res2 sub mp mp_res subsub dp ro mp_res root 

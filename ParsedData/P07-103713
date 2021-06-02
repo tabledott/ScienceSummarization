@@ -1,0 +1,6 @@
+ome of the benefits of full parsing without imposing the strict connectedness requirements that it demands.
+    We employ the aforementioned supertaggers to enrich the English side of the parallel training corpus with a single supertag sequence per sentence.
+    Then we extract phrase-pairs together with the cooccuring English supertag sequence from this corpus via the same phrase extraction method used in the baseline model.
+    This way we directly extend the baseline model described in section 3 with supertags both in the phrase translation table and in the language model.
+    Next we define the probabilistic model that accompanies this syntactic enrichment of the baseline model.
+    Let 5T represent a supertag sequence of the same length as a target sentence t. Equation (2) changes as follows: The approximations made in this formula are of two kinds: the standard split into components and the search for the most likely joint probability of a target hypothesis and a supertag sequence cooccuring with the so

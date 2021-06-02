@@ -1,0 +1,7 @@
+ an UpperBound MT system, using the initial corpus plus a corpus of in-domain, human-translated data.
+    For each initial corpus, we use the same amount of human-translated data as there is extracted data (see Table 2).
+    Thus, for each language pair and each initial parallel corpus, we compare 3 MT systems: Baseline, PlusExtracted, and UpperBound.
+    All our MT systems were trained using a variant of the alignment template model described in (Och 2003).
+    Each system used two language models: a very large one, trained on 800 million English tokens, which is the same for all the systems; and a smaller one, trained only on the English side of the parallel training data for that particular system.
+    This ensured that any differences in performance are caused only by differences in the training data.
+    The systems were tested on the news test corpus used for the NIST 2003 MT evaluation.5 Translation performance was measured using the automatic BLEU evaluation metric (Papineni et al. 2002) on four refer

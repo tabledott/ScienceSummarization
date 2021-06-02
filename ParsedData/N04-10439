@@ -1,0 +1,15 @@
+ of 16 tags was used to tag 8 name classes (the seven MUC classes plus the additional null class).
+    Two tags were required per class to account for adjacent elements of the same type.
+    For example, the string Betty Mary and Bobby Lou would be tagged as PERSON-START PERSON-START NULL-START PERSON-START PERSON-CONTINUE.
+    Our model uses a total of 19 classes of features.
+    The first seven of these correspond closely to features used in a typical HMM name tagger.
+    The remaining twelve encode cluster membership.
+    Clusters of various granularity are specified by prefixes of the bit strings.
+    Short prefixes specify short paths from the root node and therefore large clusters.
+    Long prefixes specify long paths and small clusters.
+    We used 4 different prefix lengths: 8 bit, 12 bit, 16 bit, and 20 bit.
+    Thus, the clusters decrease in size by about a factor of 16 at each level.
+    The complete set of features is given in Table 2.
+  
+  
+    We implemented the averaged perceptron training We u

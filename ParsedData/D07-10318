@@ -1,0 +1,5 @@
+; Manning and Schu?tze, 1999; Bishop, 2006),so we do not cover them in detail here.
+			Conceptu ally, a Hidden Markov Model generates a sequence of observations x = (x0, . . .
+			, xn) (here, the wordsof the corpus) by first using a Markov model to gen erate a sequence of hidden states y = (y0, . . .
+			, yn)(which will be mapped to POS tags during evalua tion as described above) and then generating each word xi conditioned on its corresponding state yi.
+			We insert endmarkers at the beginning and ending of the corpus and between sentence boundaries, and constrain the estimator to associate endmarkers with a state that never appears with any other observationtype (this means each sentence can be processed in dependently by first-order HMMs; these endmarkers are ignored during evaluation).In more detail, the HMM is specified by multi nomials ?y and ?y for each hidden state y, where ?y specifies the distribution over states following y and ?y specifies the distribution over observations x given state y. yi | y

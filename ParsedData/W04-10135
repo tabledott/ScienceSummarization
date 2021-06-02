@@ -1,0 +1,9 @@
+is adopted since we often need to compare system and human performance and the reference summaries are usually the only human summaries available.
+    Using this procedure, we are able to estimate average human performance by averaging M ROUGE-N scores of one reference vs. the rest M-1 references.
+    Although the Jackknifing procedure is not necessary when we just want to compute ROUGE scores using multiple references, it is applied in all ROUGE score computations in the ROUGE evaluation package.
+    In the next section, we describe a ROUGE measure based on longest common subsequences between two summaries.
+  
+  
+    A sequence Z = [z1, z2, ..., zn] is a subsequence of another sequence X = [x1, x2, ..., xm], if there exists a strict increasing sequence [i1, i2, ..., ik] of indices of X such that for all j = 1, 2, ..., k, we have xij = zj (Cormen et al., 1989).
+    Given two sequences X and Y, the longest common subsequence (LCS) of X and Y is a common subsequence with maximum length.
+    LCS has been used in

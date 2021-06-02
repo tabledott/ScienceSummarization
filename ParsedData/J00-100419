@@ -1,0 +1,8 @@
+tistical measures.
+    For this purpose, a suitable statistical function needs to indicate the strength of cooccurrence correlation between source and target words, which we assume is indicative of carrying the same semantic content.
+    Our preferred choice of statistical measure for assigning the costs is the 0 correlation measure (Gale and Church 1991).
+    We apply this statistic to co-occurrence of the source word with all its possible translations in the data set examples.
+    We have found that, at least for our data, this measure leads to better performance than the use of the log probabilities of target words given source words (cf.
+    Brown et al. 1993).
+    In addition to the correlation measure, the cost for a pairing includes a distance measure component that penalizes pairings proportionately to the difference between the (normalized) positions of the source and target words in their respective sentences.
+    As noted earlier, dependency transduction models are generative probabilistic models; 

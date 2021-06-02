@@ -1,0 +1,10 @@
+ and capture similarities between phrases and sentences.
+    Any PCFG-based parser can be improved with an RNN.
+    We use a simplified version of the Stanford Parser (Klein and Manning, 2003a) as the base PCFG and improve its accuracy from 86.56 to 90.44% labeled F1 on all sentences of the WSJ section 23.
+    The code of our parser is available at nlp.stanford.edu.
+  
+  
+    The CVG is inspired by two lines of research: Enriching PCFG parsers through more diverse sets of discrete states and recursive deep learning models that jointly learn classifiers and continuous feature representations for variable-sized inputs.
+    As mentioned in the introduction, there are several approaches to improving discrete representations for parsing.
+    Klein and Manning (2003a) use manual feature engineering, while Petrov et al. (2006) use a learning algorithm that splits and merges the syntactic categories in order to maximize likelihood on the treebank.
+    Their approach splits categories into several dozen subcategories.

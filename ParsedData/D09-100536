@@ -1,0 +1,10 @@
+o-English translation task (Eck and Hori, 2005), which consists of 40k pairs of sentences.
+    We used a 5-gram language model with modified Kneser-Ney smoothing, trained on the bitext&#8217;s English using SRILM (Stolcke, 2002).
+    We first investigate how minimum-risk training (MR), with and without deterministic annealing (DA), performs compared to regular MERT.
+    MR without DA just fixes T = 0 and &#947; = 1 in (14).
+    All MR or MR+DA uses an approximated BLEU (Tromble et al., 2008) (for training only), while MERT uses the exact corpus BLEU in training.
+    The first five rows in Table 5 present the results by tuning the weights offive features (&#952; &#8712; R5).
+    We observe that MR or MR+DA performs worse than MERT on the dev set.
+    This may be mainly because MR or MR+DA uses an approximated BLEU while MERT doesn&#8217;t.
+    On the test set, MR or MR+DA on an n-best list is comparable to MERT.
+    But our new approach, MR or MR+DA on a hypergraph, does consistently better (statistically sign

@@ -1,0 +1,6 @@
+whether this benefit is complementary to the benefit from features which have traditionally been of use in word level systems, such as syntactic context features, topic features, and so on.
+    To test this, we constructed a maxent classifier which locally classifies single words, without modeling the entity type sequences .4 These local classifiers map a feature representation of each word position to entity types, such as PERSON.5 We present a hill-climb over feature sets for the English development set data in table 2.
+    First, we tried only the local word as a feature; the result was that each word was assigned its most common class in the training data.
+    The overall F-score was 52.29%, well below the official CoNLL baseline of 71.18%.6 We next added -gram features; specifically, we framed each word with special start and end symbols, and then added every contiguous substring to the feature list.
+    Note that this subsumes the entire-word features.
+    Using the substring features alone scored 73.10

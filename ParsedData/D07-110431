@@ -1,0 +1,8 @@
+ect of caching we also ran the algorithm without discarding the prefix tree between sentences, re sulting in full inter-sentence caching.
+			The results are shown in Table 1.
+			11It is clear from the results that each of the op timizations is needed to sufficiently reduce lookuptime to practical levels.
+			Although this is still rela tively slow, it is much closer to the decoding time of 10 seconds per sentence than the baseline.
+			10Python is an interpreted language and our implementations do not use any optimization features.
+			It is therefore reasonable to think that a more efficient reimplementation would result in across-the-board speedups.11The results shown here do not include the startup time re quired to load the data structures into memory.
+			In our Python implementation this takes several minutes, which in principle should be amortized over the cost for each sentence.
+			However,just as Zens and Ney (2007) do for phrase tables, we could com pile our data structures into binary memory-mapped fil

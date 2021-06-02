@@ -1,0 +1,7 @@
+rwise relation.
+    Finally, a global narrative score is built such that all events in the chain provide feedback on the event in question (whether for inclusion or for decisions of inference).
+    Given a list of observed verb/dependency counts, we approximate the pointwise mutual information (PMI) by: where e(w, d) is the verb/dependency pair w and d (e.g. e(push,subject)).
+    The numerator is defined by: where C(e(x, d), e(y, f)) is the number of times the two events e(x, d) and e(y, f) had a coreferring entity filling the values of the dependencies d and f. We also adopt the &#8216;discount score&#8217; to penalize low occuring words (Pantel and Ravichandran, 2004).
+    Given the debate over appropriate metrics for distributional learning, we also experimented with the t-test.
+    Our experiments found that PMI outperforms the t-test on this task by itself and when interpolated together using various mixture weights.
+    Once pairwise relation scores are calculated, a global narrative score can then be b

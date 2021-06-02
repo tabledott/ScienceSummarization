@@ -1,0 +1,7 @@
+an optional PAUSE between word pronunciations.
+    We originally thought to build a general letter-to-sound WFST (Divay and Vitale 1997), on the theory that while wrong (overgeneralized) pronunciations might occasionally be generated, Japanese transliterators also mispronounce words.
+    However, our letter-to-sound WFST did not match the performance of Japanese transliterators, and it turns out that mispronunciations are modeled adequately in the next stage of the cascade.
+    Next, we map English sound sequences onto Japanese sound sequences.
+    This is an inherently information-losing process, as English R and L sounds collapse onto Japanese r, the 14 English vowel sounds collapse onto the 5 Japanese vowel sounds, etc.
+    We face two immediate problems: An obvious target inventory is the Japanese syllabary itself, written down in katakana (e.g., -= ) or a roman equivalent (e.g., ni).
+    With this approach, the English sound K corresponds to one of t (ka), (ki), (ku), (ke), or (ko), depending on its cont

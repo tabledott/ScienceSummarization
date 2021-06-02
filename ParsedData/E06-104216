@@ -1,0 +1,14 @@
+r moving over to the nonliteral feedback set.
+    In our example, this causes L1-L3 to be moved to the nonliteral set.
+    For Learner B, we use phrasal/expression verbs and overlap as indicators to remove problematic synsets.
+    Thus we avoid accidentally contaminating the nonliteral set.
+    However, we do end up throwing away information that could have been used to pad out sparse nonliteral sets.
+    In our example, this causes L1-L3 to be dropped.
+    For Learner C, we remove feature sets from the final literal and nonliteral feedback sets based on overlapping words.
+    In our example, this causes L2 and N4 to be dropped.
+    Learner D is the baseline &#8211; no scrubbing.
+    We simply use the basic algorithm.
+    Each learner has benefits and shortcomings.
+    In order to maximize the former and minimize the latter, instead of choosing the single most successful learner, we introduce a voting system.
+    We use a simple majority-rules algorithm, with the strongest learners weighted more heavily.
+    

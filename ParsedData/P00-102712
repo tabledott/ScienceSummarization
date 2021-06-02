@@ -1,0 +1,6 @@
+, Using statistics such as shown in Table 7, it is thus possible to compute the generation (or alignment) probability for an inflection given root and suffix using the simple interpolated backoff model in (1) where Ai is a function of the relative sample size of the conditioning event, and lastk(root) indicates the final k characters of the root.
+    We only backoff to the extent necessary.
+    Furthermore, note that for English (and most inflections in Spanish), the stem changes observed when adding suffixes are independent of part of speech (i.e.
+    +8 behaves the same on suffixation for both nouns and verbs), so these probabilities can often be further simplified by deleting the conditioning variable POS, as illustrated in (2).
+    We have further generalized these variablelength context models via a full hierarchicallysmoothed trie architecture, allowing robust specialization to very long root contexts if sample sizes are sufficient.
+    6.1 Baseline Model for Morphological Transformation Probabilities O

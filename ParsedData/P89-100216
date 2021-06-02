@@ -1,0 +1,8 @@
+l serve as the pivot.
+    For each right-hand-side element, we recursively generate, and then connect the pivot to the root.
+    The processing within generate_rhs is a simple iteration. generate_rhs(0). generate_rhs([First 1 Rest]) :generate (First) generate_rhs(Rest).
+    The connection of a pivot to the root, as noted before, requires choice of a chain rule whose semantic head matches the pivot, and the recursive generation of the remaining right-handside.
+    We assume a predicate applicable_chain_ rule(SemHead, LHS, Root, RHS) that holds if there is a chain rule admitting a node LHS as the left-hand-side, SemHead as its semantic head, and RHS as the remaining right-hand-side nodes, such that the left-hand-side node and the root node Root can themselves be connected.
+    % generate remaining siblings generate_rhs(RHS), % connect the new parent to the root connect(LHS, Root).
+    The base case occurs when the root and the pivot are the same.
+    Identity checks like this one must be implemented correctly i

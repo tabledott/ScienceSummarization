@@ -1,0 +1,5 @@
+sian LDA-based model using only observed context features to predict tag words (TJ).
+    These sophisticated learning algorithms all outperform the traditional baseline of EM-HMM based methods, while relying on similar knowledge: the lexical context of the words to be tagged and their letter structure (e.g., presence of suffixes, capitalization and hyphenation).1 Our motivation for tackling unsupervised POS tagging is different: we are interested in developing a Hebrew POS tagger.
+    We have access to a good Hebrew lexicon (and a morphological analyzer), and a fair amount of unlabeled training data, but hardly any annotated corpora.
+    We actually report results on full morphological disambiguation for Hebrew, a task similar but more challenging than POS tagging: we deal with a tagset much larger than English (over 3,561 distinct tags) and an ambiguity level of about 2.7 per token as opposed to 1.4 for English.
+    Instead of inventing a new learning framework, we go back to the traditional EM trained HMMs.

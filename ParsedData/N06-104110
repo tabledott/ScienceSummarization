@@ -1,0 +1,8 @@
+brated along with any other features; it was also more successful in our experiments.
+    So far we have ignored the issue of how we learn model parameters &#952; which maximize L(&#952;; D).
+    If our model family were HMMs, we could use the EM algorithm to perform a local search.
+    Since we have a log-linear formulation, we instead use a gradientbased search.
+    In particular, we use L-BFGS (Liu and Nocedal, 1989), a standard numerical optimization technique, which requires the ability to evaluate L(&#952;; D) and its gradient at a given &#952;.
+    The density p(x|&#952;) is easily calculated up to the global constant Z(&#952;) using the forward-backward algorithm (Rabiner, 1989).
+    The partition function is given by sumptions about the clique potentials, but can in all cases be bounded by Where K is a suitably chosen large constant.
+    We can efficiently compute &#710;Z`(&#952;) for fixed ` using a generalization of the forward-backward algorithm to the lattice of all observations x of length ` (se

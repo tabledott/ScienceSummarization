@@ -1,0 +1,10 @@
+ages of PGIZA++ is its scalability, it is not limited by the number of CPUs of a single machine.
+    By adding more nodes, the alignment speed can be arbitrarily fast4.
+    Also, by splitting the corpora into multiple segments, each child process only needs part of the lexicon, which saves memory.
+    The other advantage is that it can adopt different resource management systems, such as Condor and Maui/Torque.
+    By splitting the corpus into very small segments, and submitting them to a scheduler, we can get most out of clusters.
+    However, PGIZA++ also has significant drawbacks.
+    First of all, each process needs to load the models of the previous iteration, and store the counts of the current step on shared storage.
+    Therefore, I/O becomes a bottleneck, especially when the number of child processes is large.
+    Also, the normalization procedure needs to read all the count files from network storage.
+    As the number of child processes increases, the time spent on reading/writing will also increas

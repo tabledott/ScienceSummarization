@@ -1,0 +1,7 @@
+a subgraph of G, then the costs of H, denoted as cost(H), can be given by summing over the costs associated with the vertices and edges of H. Formally: In fact, this is only one possible way to define a cost function.
+    The only hard requirement cost functions have to fulfill is monotonicity.
+    That is, adding an edge e to a graph G should never result in a graph cheaper than G. Formally: dG' C G de E EG: cost(G') &lt; cost(G' + e) The monotonicity assumption helps reduce the search space, since extensions of subgraphs with a cost greater than the best subgraph found up to that point can safely be ignored.
+    Naturally, the costs of the undefined graph (cost(-L)) are not defined.
+    It is worth stressing that the cost function is global: It determines the costs of entire graphs.
+    This implies that the cheapest distinguishing graph is not necessarily the smallest distinguishing graph; a graph consisting of two or more edges may be cheaper than a graph containing one expensive edge.
+    We now illustra

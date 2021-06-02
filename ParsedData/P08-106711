@@ -1,0 +1,8 @@
+ompute fL(e) for each e in a forest.
+    Non-local features, however, can not be precomputed, but we still prefer to compute them as early as possible, which we call &#8220;on-the-fly&#8221; computation, so that our decoder can be sensitive to them at internal nodes.
+    For instance, the NGramTree feature in Fig.
+    2 (d) returns the minimum tree fragement spanning a bigram, in this case &#8220;saw&#8221; and &#8220;the&#8221;, and should thus be computed at the smallest common ancestor of the two, which is the VP node in this example.
+    Similarly, the ParentRule feature in Fig.
+    2 (b) can be computed when the S subtree is formed.
+    In doing so, we essentially factor non-local features across subtrees, where for each subtree y&#8242; in a parse y, we define a unit feature &#65533;f(y&#8242;) to be the part of f(y) that are computable within y&#8242;, but not computable in any (proper) subtree of y&#8242;.
+    Then we have: Intuitively, we compute the unit non-local features at each subtree from botto

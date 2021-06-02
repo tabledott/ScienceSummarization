@@ -1,0 +1,9 @@
+    For each crawled document, we removed paragraphs containing fewer than 50 tokens (as a rough approximation of the narrative part of a webpage) and then removed all duplicate sentences.
+    The resulting corpus consists of over 200 billion words.
+    The Web020 corpus is a random sample of 1/5th of the sentences in Web100 whereas Web004 is a random sample of 1/25th of Web100.
+    For each corpus, we tagged and chunked each sentence as described in Section 3.
+    We then computed the similarity between all noun phrase chunks using the model of Section 3.1.
+    Our proposed optimization for term similarity computation produces exact scores (unlike randomized techniques) for all pairs of terms on a large Web crawl.
+    For our largest corpus, Web100, we computed the pairwise similarity between over 500 million words in 50 hours using 200 four-core machines.
+    Web004 is of similar scale to the largest reported randomized technique (Ravichandran et al. 2005).
+    On this scale, we compute the exact similarity

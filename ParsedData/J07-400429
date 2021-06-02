@@ -1,0 +1,9 @@
+ type, producing a further category of that type.
+    This rule can be implemented by assuming the following category schema for a coordination term: (X\X)/X, where X can be any category.
+    All of the combinatory rules described above are implemented in our parser.
+    Other combinatory rules, such as substitution, have been suggested in the literature to deal with certain linguistic phenomena, but we chose not to implement them.
+    The reason is that adding new combinatory rules reduces the efficiency of the parser, and we felt that, in the case of substitution, for example, the small gain in grammatical coverage was not worth the reduction in speed.
+    Section 9.3 discusses some of the choices we made when implementing the grammar.
+    One way of dealing with the additional ambiguity in CCG is to only consider normal-form derivations.
+    Informally, a normal-form derivation is one which uses typeraising and composition only when necessary.
+    Eisner (1996) describes a technique for eliminating spuriou

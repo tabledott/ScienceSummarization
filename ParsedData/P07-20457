@@ -1,0 +1,9 @@
+ation quality and speed (Zens and Ney 2007).
+    The other large data resource for statistical machine translation is the language model.
+    Almost unlimited text resources can be collected from the Internet and used as training data for language modeling.
+    This results in language models that are too large to easily fit into memory.
+    The Moses system implements a data structure for language models that is more efficient than the canonical SRILM (Stolcke 2002) implementation used in most systems.
+    The language model on disk is also converted into this binary format, resulting in a minimal loading time during start-up of the decoder.
+    An even more compact representation of the model is the result of the the word prediction and back-off probabilities of the language model.
+    Instead of representing these probabilities with 4 byte or 8 byte floats, they are sorted into bins, resulting in (typically) 256 bins which can be referenced with a single 1 byte index.
+    This quantized language model, alb

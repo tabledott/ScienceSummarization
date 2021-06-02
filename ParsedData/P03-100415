@@ -1,0 +1,8 @@
+and Matsumoto, 2002).
+    We use a standard data set (Ramshaw and Marcus, 1995) consisting of sections 15-19 of the WSJ corpus as training and section 20 as testing.
+    Since there are no explicit spaces between words in Japanese sentences, we must first identify the word boundaries before analyzing deep structure of a sentence.
+    Japanese word segmentation is formalized as a simple classification task.
+    Let s = c1c2 &#183; &#183; &#183; cm be a sequence of Japanese characters, t = t1t2 &#183; &#183; &#183; tm be a sequence of Japanese character types 3 associated with each character, and yi &#8712; {+1, &#8722;1}, (i = (1, 2,...,m&#8722; 1)) be a boundary marker.
+    If there is a boundary between ci and ci+1, yi = 1, otherwise yi = &#8722;1.
+    The feature set of example xi is given by all characters as well as character types in some constant window (e.g., 5): {ci&#8722;2, ci&#8722;1, &#183;&#183;&#183; , ci+2, ci+3, ti&#8722;2, ti&#8722;1, &#183;&#183;&#183; , ti+2, ti+3}.
+    Note that we distingu

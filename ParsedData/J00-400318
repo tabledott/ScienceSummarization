@@ -1,0 +1,9 @@
+hors in the text; WordNet is also consulted by the version of the system that attempts to resolve bridging descriptions.
+    The system is implemented in Sicstus Prolog.
+    Input.
+    The texts in the Penn Treebank corpus consist of parsed sentences represented as Lisp lists.
+    During a preprocessing phase, a representation in Prolog list format is produced for each sentence, and the noun phrases it contains are extracted.
+    The output of this preprocessing phase is passed to the system proper.
+    For example, the sentence in (1) is represented in the Treebank as (2) and the input to the system after the preprocessing phase is (3).'
+    Note that all nested NPs are extracted, and that embedded NPs such as the Organization of Petroleum Exporting Countries are processed before the NPs that embed them (in this case, the squabbling within the Organization of Petroleum Exporting Countries).
+    [NP , the , squabbling, [PP, within , [NP ,the, Organization, [PP , of , [NP , Petroleum, Exporting, Countries]]]]]

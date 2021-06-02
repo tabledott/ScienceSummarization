@@ -1,0 +1,6 @@
+has the form of an exponential model: where i indexes all the binary features, fi is a binary indicator function for feature i, ZA is a normalizing constant, and Ai is a weight for feature i.
+    The model is trained by iteratively adding binary features with the largest gain in the probability of the training data, and estimating the weights using a numerical optimization method called improved iterative scaling.
+    The model is constrained by the observed distribution of the features in the training data and has the property of having the maximum entropy of all models that fit the constraints, i.e., all distributions that are not directly constrained by the data are left as uniform as possible.'
+    The maximum entropy combiner takes the same information as the memory-based learner as input, but internally translates all multivalued features to binary indicator functions.
+    The improved iterative scaling algorithm is then applied, with a maximum of one hundred iterations.
+    This algorithm is the same a

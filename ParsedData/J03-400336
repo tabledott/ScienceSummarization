@@ -1,0 +1,8 @@
+follow this rule.
+    The rule has the benefit of improving efficiency by reducing the number of constituents in the chart.
+    It would be preferable to develop a probabilistic analog of this rule, but we leave this to future research.
+    (a) The treebank annotates sentences with empty subjects with an empty -NONE- element under subject position; (b) in training (and for evaluation), this null element is removed; (c) in models 2 and 3, sentences without subjects are changed to have a nonterminal SG.
+  
+  
+    Table 1 shows the various levels of back-off for each type of parameter in the model.
+    Note that we decompose PL(Li(lwi, lti), c, p  |P, H, w, t, &#8710;, LC) (where lwi and lti are the word and POS tag generated with nonterminal Li, c and p are the coord and punc flags associated with the nonterminal, and &#8710; is the distance measure) into the product where e1, e2, and e3 are maximum-likelihood estimates with the context at levels 1, 2, and 3 in the table, and A1, A2 and A3 are smoothing paramet

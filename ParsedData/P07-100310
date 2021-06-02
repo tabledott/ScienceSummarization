@@ -1,0 +1,7 @@
+low syntax-sensitive distortion, we consider a new distortion model of the form pd(aj|aj_, j, t).
+    We condition on t via a generative process that transitions between two English positions by traversing the unique shortest path &#961;(aj_,aj,t) through t from aj_ to aj.
+    We constrain ourselves to this shortest path using a staged generative process.
+    Stage 1 (POP(n), STOP(n)): Starting in the leaf node at aj_, we choose whether to STOP or POP from child to parent, conditioning on the type of the parent node n. Upon choosing STOP, we transition to stage 2.
+    Stage 2 (MOVE(ft, d)): Again, conditioning on the type of the parent n&#65533; of the current node n, we choose a sibling n&#65533; based on the signed distance d = &#966;f,(n) &#8722; &#966;f,(n), where &#966;f,(n) is the index of n in the child list of n. Zero distance moves are disallowed.
+    After exactly one MOVE, we transition to stage 3.
+    Stage 3 (PUSH(n, &#966;n(ii))): Given the current node n, we select one of its children n, condit

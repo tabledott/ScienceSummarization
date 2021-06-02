@@ -1,0 +1,8 @@
+hod described by Koehn (2004).
+    Following this method, we repeatedly &#8212; say, 1000 times &#8212; sample sets of sentences from the output of each system, measure their BLEU score, and use these 1000 BLEU scores as basis for estimating a confidence interval.
+    When dropping the top and bottom 2.5% the remaining BLEU scores define the range of the confidence interval.
+    Pairwise comparison: We can use the same method to assess the statistical significance of one system outperforming another.
+    If two systems&#8217; scores are close, this may simply be a random effect in the test data.
+    To check for this, we do pairwise bootstrap resampling: Again, we repeatedly sample sets of sentences, this time from both systems, and compare their BLEU scores on these sets.
+    If one system is better in 95% of the sample sets, we conclude that its higher BLEU score is statistically significantly better.
+    The bootstrap method has been critized by Riezler and Maxwell (2005) and Collins et al. (2005), as bein

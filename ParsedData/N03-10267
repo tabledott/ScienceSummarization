@@ -1,0 +1,9 @@
+)).
+    It consists of an ordered set of rules that rewrite one f-structure into another.
+    Structures are broken down into flat lists of facts, and rules may add, delete, or change individual facts.
+    Rules may be optional or obligatory.
+    In the case of optional rules, transfer of a single input structure may lead to multiple alternate output structures.
+    The transfer component is designed to operate on packed input from the parser and can also produce packed representations of the condensation alternatives, using methods adapted from parse packing.1 An example rule that (optionally) removes an adjunct is shown below: This rule eliminates an adjunct, Z, by deleting the fact that Z is contained within the set of adjuncts, Y, associated with the expression X.
+    The + before the adjunct(X,Y) fact marks this fact as one that needs to be present for the rule to be applied, but which is left unaltered by the rule application.
+    The in-set(Z,Y) fact is deleted.
+    Two new facts are added. delete-node

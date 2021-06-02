@@ -1,0 +1,9 @@
+nt coverage.
+    To further improve the coverage, we have extracted 16 gazetteers from Wikipedia, which collectively contain over 1.5M entities.
+    Overall, we have 30 gazetteers (available for download with the system), and matches against each one are weighted as a separate feature in the system (this allows us to trust each gazetteer to a different degree).
+    We also note that we have developed a technique for injecting non-exact string matching to gazetteers, which has marginally improved the performance, but is not covered in the paper due to space limitations.
+    In the rest of this section, we discuss the construction of gazetteers from Wikipedia.
+    Wikipedia is an open, collaborative encyclopedia with several attractive properties.
+    (1) It is kept updated manually by it collaborators, hence new entities are constantly added to it.
+    (2) Wikipedia contains redirection pages, mapping several variations of spelling of the same name to one canonical entry.
+    For example, Suker is redirected t

@@ -1,0 +1,6 @@
+s bi and b2, the score's x-axis coordinate falls between token-sequences i and i + 1.
+    Rather than plotting a token-sequence number on the x-axis, the token-sequence gap number i is plotted instead. tion version of scoring is the ratio of new words in an interval divided by the length of that interval.
+    Tokenization is as described above, eliminating stop words and performing morphological analysis.
+    A score is then assigned to a token-sequence gap as follows: the number of never-yet-seen words in the token-sequence to the left of the gap is added to the number of never-yet-seen words in the token-sequence to the right, and this number is divided by the total number of tokens in the two token-sequences, or w * 2.
+    Since in these experiments w is set to 20, this yields an interval length of 40, which is close to the parameter 35 suggested as most useful in (Youmans 1991).
+    As in the block version of the algorithm, the score is plotted at the token-sequence gap, and scores can range from 0 to 1, 

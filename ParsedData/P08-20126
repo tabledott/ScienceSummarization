@@ -1,0 +1,8 @@
+ Equation 2.
+    As noted, these assignments may not be a legal clustering because there is no guarantee of transitivity.
+    The transitive closure happens in an ad-hoc manner after this assignment is found: any two mentions linked through other mentions are determined to be coreferent.
+    Our SOON-STYLE baseline used the same training and testing regimen as Soon et al. (2001).
+    Our D&amp;B-STYLE baseline used the same test time method as Denis and Baldridge (2007), however at training time we created data for all mention pairs.
+    Because of the ad-hoc manner in which transitivity is enforced in our baseline systems, we do not necessarily find the most probable legal clustering.
+    This is exactly the kind of task at which integer linear programming excels.
+    We need to first formulate the objective function which we wish the ILP solver to maximize at test time.2 Let p(i j) = log P(x(i ,j)  |mi, mj; 0), which is the log probability that mi and mj are coreferent according to the pairwise logistic cla

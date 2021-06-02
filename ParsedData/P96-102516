@@ -1,0 +1,12 @@
+re T is the set of all tags.
+    Hence C (a, c) is the number of times that the words a and c occur in the same sentence, ignoring their tags.
+    The other definitions in (13) are similarly redefined, with POS tags only being used when backing off from lexical information.
+    This makes the parser less sensitive to tagging errors.
+    Second, for each word wi the tagger can provide the distribution of tag probabilities P(ti IS) (given the previous two words are tagged as in the best overall sequence of tags) rather than just the first best tag.
+    The score for a parse in equation (20) then has an additional term, nin_i P(tilS), the product of probabilities of the tags which it contains.
+    Ideally we would like to integrate POS tagging into the parsing model rather than treating it as a separate stage.
+    This is an area for future research.
+  
+  
+    The parsing algorithm is a simple bottom-up chart parser.
+    There is no grammar as such, although in practice any dependency with a triple of nontermina

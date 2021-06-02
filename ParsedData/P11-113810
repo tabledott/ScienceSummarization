@@ -1,0 +1,8 @@
+titles Ti that mi may refer to.
+    Considering only a small subset of Wikipedia titles as potential disambiguations is crucial for tractability (we detail which titles are selected below).
+    In the third step, the ranker outputs the most appropriate non-null disambiguation ti for each mention mi.
+    In the final step, the linker decides whether the top-ranked disambiguation is correct.
+    The disambiguation (mi, ti) may be incorrect for several reasons: (1) mention mi does not have a corresponding Wikipedia page, (2) mi does have a corresponding Wikipedia page, but it was not included in Ti, or (3) the ranker erroneously chose an incorrect disambiguation over the correct one.
+    In the below sections, we describe each step of the GLOW algorithm, and the local and global features utilized, in detail.
+    Because we desire a system that can process documents at scale, each step requires trade-offs between accuracy and efficiency.
+    4.1 Disambiguation Candidates Generation The first step in GLOW is to ex

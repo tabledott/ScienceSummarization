@@ -1,0 +1,7 @@
+rmance on a training sample is all very well, but what does this guarantee about how well the algorithm generalizes to newly drawn test examples?
+    Freund and Schapire (1999) discuss how the theory for classification problems can be extended to deal with both of these questions; Collins (2002) describes how these results apply to NLP problems.
+    As a final note, following Collins (2002), we used the averaged parameters from the training algorithm in decoding test examples in our experiments.
+    Say &#175;&#945;ti is the parameter vector after the i&#8217;th example is processed on the t&#8217;th pass through the data in the algorithm in figure 1.
+    Then the averaged parameters &#175;&#945;AV G are defined as &#175;&#945;AV G = Ei,t &#175;&#945;ti/NT.
+    Freund and Schapire (1999) originally proposed the averaged parameter method; it was shown to give substantial improvements in accuracy for tagging tasks in Collins (2002).
+    This section gives a description of the basic incremental parsing approach.

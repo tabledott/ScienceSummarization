@@ -1,0 +1,6 @@
+d by the network.
+    The difficulty with this approach is that there are exponentially many parses for the sentence, so it is not computationally feasible to compute them all.
+    We address this problem by only computing a small set of the most probable parses.
+    The remainder of the sum is estimated using a combination of the probabilities from the best parses and the probabilities 2Cross-entropy error ensures that the minimum of the error function converges to the desired probabilities as the amount of training data increases (Bishop, 1995), so the minimum for any given dataset is considered an estimate of the true probabilities. from the partial parses which were pruned when searching for the best parses.
+    The probabilities of pruned parses are estimated in such a way as to minimize their effect on the training process.
+    For each decision which is part of some unpruned parses, we calculate the average probability of generating the remainder of the sentence by these un-pruned parses, and use this 

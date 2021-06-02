@@ -1,0 +1,5 @@
+ibutional word representations are based upon a cooccurrence matrix F of size WxC, where W is the vocabulary size, each row Fw is the initial representation of word w, and each column Fc is some context.
+    Sahlgren (2006) and Turney and Pantel (2010) describe a handful of possible design decisions in contructing F, including choice of context types (left window? right window? size of window?) and type of frequency count (raw? binary? tf-idf?).
+    Fw has dimensionality W, which can be too large to use Fw as features for word w in a supervised model.
+    One can map F to matrix f of size W x d, where d &lt;&lt; C, using some function g, where f = g(F). fw represents word w as a vector with d dimensions.
+    The choice of g is another design decision, although perhaps not as important as the statistics used to initially construct F. The self-organizing semantic map (Ritter &amp; Kohonen, 1989) is a distributional technique that maps words to two dimensions, such that syntactically and semantically related wor

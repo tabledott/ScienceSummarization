@@ -1,0 +1,16 @@
+ the dependency tree that includes both entities.
+    We choose to use this subtree instead of the entire tree to reduce noise and emphasize the local characteristics of relations.
+    We then augment each node of the tree with a feature vector (Table 3).
+    The relation-argument feature specifies whether an entity is the first or second argument in a relation.
+    This is required to learn asymmetric relations (e.g.
+    X OWNS Y).
+    Formally, a relation instance is a dependency tree T with nodes It0 ... tn}.
+    The features of node ti are given by 0(ti) = Iv1 ... vd}.
+    We refer to the jth child of node ti as ti[j], and we denote the set of all children of node ti as ti[c].
+    We reference a subset j of children of ti by ti[j] C_ ti[c].
+    Finally, we refer to the parent of node ti as ti.p.
+    From the example in Figure 1, t0[1] = t2, t0[I0,1}] = It1, t2}, and t1.p = t0.
+  
+  
+    We now define a kernel function for dependency trees.
+    The tree kernel is a function K(T1, T2) that returns a normali

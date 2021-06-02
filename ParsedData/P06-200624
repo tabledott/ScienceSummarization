@@ -1,0 +1,8 @@
+ nominal heads would be both more semantically-relevant and would also yield higher precision (95.2%).
+    However, recall (48.4%) then suffers against DepBank as noun premodifiers have a num feature.
+    Therefore, in the results presented in Table 1 we have not counted cases where either DepBank or our system assign a premodifier adegree(positive) or num(sg).
+    There are similar issues with other DepBank features and relations.
+    For instance, the form of a subordinator with clausal complements is annotated as a relation between verb and subordinator, while there is a separate comp relation between verb and complement head.
+    The GR representation adds the subordinator as a subtype of ccomp recording essentially identical information in a single relation.
+    So evaluation scores based on aggregated counts of correct decisions will be doubled for a system which structures this information as in DepBank.
+    However, reproducing the exact DepBank subord form relation from the GR ccomp one is non-trivia

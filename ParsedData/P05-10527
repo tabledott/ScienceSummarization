@@ -1,0 +1,10 @@
+esults are essentially based on the output of sentence parsing, which is a deep processing of text.
+    So their approaches are vulnerable to errors in parsing.
+    Collins et al. (1997) addressed a simplified task within a confined context in a target sentence.
+    Zelenko et al. (2003) described a recursive kernel based on shallow parse trees to detect personaffiliation and organization-location relations, in which a relation example is the least common subtree containing two entity nodes.
+    The kernel matches nodes starting from the roots of two subtrees and going recursively to the leaves.
+    For each pair of nodes, a subsequence kernel on their child nodes is invoked, which matches either contiguous or non-contiguous subsequences of node.
+    Compared with full parsing, shallow parsing is more reliable.
+    But this model is based solely on the output of shallow parsing so it is still vulnerable to irrecoverable parsing errors.
+    In their experiments, incorrectly parsed sentences were eliminated.
+  

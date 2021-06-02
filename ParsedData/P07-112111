@@ -1,0 +1,12 @@
+ula smallest(...), so x2 need not be bound by A.
+    On the other hand, x1 appears in Q&#8242;, and it appears outside smallest(...) (as an argument of answer), so x1 must be bound.
+    Rule extraction continues in this manner until the root of the MR parse tree is reached.
+    Figure 3 shows all the rules extracted from Figure 4.1 Since the learned A-SCFG can be ambiguous, a probabilistic model is needed for parse disambiguation.
+    We use the maximum-entropy model proposed in Wong and Mooney (2006), which defines a conditional probability distribution over derivations given an observed NL sentence.
+    The output MR is the yield of the most probable derivation according to this model.
+    Parameter estimation involves maximizing the conditional log-likelihood of the training set.
+    For each rule, r, there is a feature that returns the number of times r is used in a derivation.
+    More features will be introduced in Section 5.
+  
+  
+    We have described the A-WASP algorithm which generates logical forms

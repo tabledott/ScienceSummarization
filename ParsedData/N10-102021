@@ -1,0 +1,7 @@
+generates the word I with high probability, whereas the likely response state Question generates you, followed by Response which again generates I. Qualitative evaluations are both time-consuming and subjective.
+    The above visualization is useful for understanding the Twitter domain, but it is of little use when comparing model variants or selecting parameters.
+    Therefore, we also propose a novel quantitative evaluation that measures the intrinsic quality of a conversation model by its ability to predict the ordering of posts in a conversation.
+    This measures the model&#8217;s predictive power, while requiring no tagged data, and no commitment to an existing tag inventory.
+    Our test set consists of 1,000 randomly selected conversations not found in the training data.
+    For each conversation in the test set, we generate all n! permutations of the posts.
+    The probability of each permutation is then evaluated as if it were an unseen conversation, using either the forward algorithm (EM) or the Ch

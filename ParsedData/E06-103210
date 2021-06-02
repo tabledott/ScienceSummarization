@@ -1,0 +1,7 @@
+tions.
+    One way in which variation can be introduced is by permuting phrases within a hypothesis translation.
+    A simple way of estimating a lower bound on the number of ways that phrases in a hypothesis translation can be reordered is to examine bigram mismatches.
+    Phrases that are bracketed by these bigram mismatch sites can be freely permuted because reordering a hypothesis translation at these points will not reduce the number of matching ngrams and thus will not reduce the overall Bleu score.
+    Here we denote bigram mismatches for the hypothesis translation given in Table 1 with vertical bars: Appeared calm  |when  |he was  |taken | to the American plane  |,  |which will | to Miami, Florida.
+    We can randomly produce other hypothesis translations that have the same Bleu score but are radically different from each other.
+    Because Bleu only takes order into account through rewarding matches of higher order n-grams, a hypothesis sentence may be freely permuted around these bigram mismatch sit

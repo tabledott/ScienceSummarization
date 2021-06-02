@@ -1,0 +1,7 @@
+ We use the same formula for the probability of the data given the model, but include an additional term for the probability of the model, that depends on the strings used in each cluster.
+    We wish to bias the algorithm so that it will put words that are morphologically similar in the same cluster.
+    We can consider thus a generative process that produces sets of clusters as used before.
+    Consider the vocabulary V to be a subset of E* where E is the set of characters or phonemes used, and let the model have for each cluster i a distribution over E* say P. Then we define the probability of the partition (the prior) as ignoring irrelevant normalisation constants.
+    This will give a higher probability to partitions where morphologically similar strings are in the same cluster.
+    The models we will use here for the cluster dependent word string probabilities will be letter Hidden Markov Models (HMMs).
+    We decided to use HMMs rather than more powerful models, such as character trigram models, becaus

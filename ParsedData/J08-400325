@@ -1,0 +1,7 @@
+22; r, i, j) and hence &#928;(p, i, j).
+    Case 2: If tp = LEFT-ARCl (for some l), then there is a node k such that i &lt; k &lt; j, (j, l, k) E Acp, and cp&#8722;1 = (&#963;|i|k,j|&#946;, Acp&#8722; I(j,l,k)}).
+    Because &#8710;(p &#8722; 1) &lt; q, we can use the inductive hypothesis to infer &#928;(p &#8722; 1, k, j) and, from this, &#928;(p, k, j).
+    Moreover, because there has to be an earlier configuration cp&#8722;r (r &lt; &#8710;(p)) such that cp&#8722;r = (&#963;|i,k|&#946;,Acp&#8722;r) and &#8710;(p &#8722; r) &lt; q, we can use the inductive hypothesis again to infer &#928;(p &#8722; r, i, k) and &#928;(p, i, k).
+    &#928;(p, i, k), &#928;(p, k, j) and (j,l, k) E Acp together entail &#928;(p, i, j).
+    Case 3: If the transition tp = SHIFT, then it must have been preceded by a RIGHT-ARCsl transition (for some l), because otherwise i and j would be adjacent.
+    This means that there is a node k such that i &lt; k &lt; j, (i, l, k) E Acp, and cp&#8722;2 = (&#963;|i,k|j|&#946;,Acp &#8722; I(i,

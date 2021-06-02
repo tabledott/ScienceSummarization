@@ -1,0 +1,11 @@
+ Lynx with different feature settings.
+    The 95% confidence intervals were computed using Zhang&#8217;s significance tester (Zhang et al., 2004).
+    We modified it to conform to NIST&#8217;s current definition of the BLEU brevity penalty.
+    For Pharaoh, eight features were used: distortion model d, a trigram language model lm, phrase translation probabilities O(f|e) and O(e|f), lexical weightings lex(f|e) and lex(e|f), phrase penalty pp, and word penalty wp.
+    For Lynx, seven features described in section 2 were used.
+    We find that Lynx outperforms Pharaoh with all feature settings.
+    With full features, Lynx achieves an absolute improvement of 0.006 over Pharaoh (3.1% relative).
+    This difference is statistically significant (p &lt; 0.01).
+    Note that Lynx made use of only 88,066 TATs on test corpus while 221, 453 bilingual phrases were used for Pharaoh.
+    The feature weights obtained by minimum error rate training for both Pharaoh and Lynx are shown in Table 3.
+    We find that &#966;(f|e)

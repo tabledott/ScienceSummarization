@@ -1,0 +1,10 @@
+ node is unlabeled, meaning a hypernym could not be found to describe its descendant nouns.
+    Since the tree's root is labeled, somewhere above this node there is necessarily a node labeled with a hypernym which applies to its descendant nouns, including those which are a descendant of this node.
+    We want to move this node's children directly under the nearest labeled ancestor.
+    We compress the tree using the following very simple algorithm: in depth-first order, examine the children of each internal node.
+    If the child is itself an internal node, and it either has no best hypernym or the same three best hypernyms as its parent, delete this child and make its children into children of the parent instead.
+  
+  
+    There are 20,014 leaves (nouns) and 654 internal nodes in the final tree (reduced from 20,013 internal nodes in the uncompressed tree).
+    The top-level node in our learned tree is labeled &amp;quot;product/analyst/official&amp;quot; .
+    (Recall from the previous discussion that we do 

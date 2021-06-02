@@ -1,0 +1,9 @@
+words (about 280 GB of plain text), consisting of web pages gathered by a web crawler.2 To retrieve phrases from the corpus, weuse Wumpus (Bu?ttcher and Clarke, 2005), an effi cient search engine for passage retrieval from large corpora.3 The next step is to generate patterns from allof the phrases that were found for all of the in put word pairs (from both the training and testingsets).
+			To generate patterns from a phrase, we re place the given word pairs with variables, X and Y , and we replace the remaining words with a wild card symbol (an asterisk) or leave them as they are.
+			1http://www.informatics.susx.ac.uk/research/groups/nlp/ carroll/morph.html.
+			2The corpus was collected by Charles Clarke, University of Waterloo.
+			We can provide copies on request.
+			3http://www.wumpus-search.org/.
+			906 For example, the phrase ?the mason cut the stone with?
+			yields the patterns ?the X cut * Y with?, ?* X * the Y *?, and so on.
+			If a phrase contains n words, then it yields 2(n?2) patterns.Each pattern 

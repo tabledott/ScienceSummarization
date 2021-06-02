@@ -1,0 +1,10 @@
+be greater than the maximum precision of its constituents.
+    This criterion is used to avoid selecting unnecessarily long collocations.
+    For example, scumbag is a strongly subjective clue.
+    If be a scumbag does not have higher precision than scumbag alone, we do not want to select it.
+    Specifically, let (W1, W2) be a bigram consisting of consecutive words W1 and W2.
+    (W1,W2) is identified as a potential subjective element if prec(W1,W2) &#8805; 0.1 and: For trigrams, we extend the second condition as follows.
+    Let (W1, W2, W3) be a trigram consisting of consecutive words W1, W2, and W3.
+    The condition is then The selection of 4-grams is similar to the selection of 3-grams, comparing the 4-gram first with the maximum of the precisions of word W1 and trigram (W2, W3, W4) and then with the maximum of the precisions of trigram (W1,W2,W3) and word W4.
+    We call the n-gram collocations identified as above fixed-n-grams.
+    We also define a type of collocation called a unique generalized n-gra

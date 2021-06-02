@@ -1,0 +1,8 @@
+rds are not marked.
+    Chinese text is provided as a sequence of characters, and it is unclear which characters have to be grouped together to obtain entities that can be interpreted as words.
+    For statistical MT, it would be possible to ignore this fact and treat the Chinese characters as elementary units and translate them into English.
+    Yet preliminary experiments showed that the existing alignment models produce better results if the Chinese characters are segmented in a preprocessing step into single words.
+    We use the LDC segmentation tool.5 For the English corpus, the following preprocessing steps are applied.
+    First, the corpus is tokenized; it is then segmented into sentences, and all uppercase characters are converted to lowercase.
+    As the final evaluation criterion does not distinguish case, it is not necessary to deal with the case information.
+    Then, the preprocessed Chinese and English corpora are sentence aligned in which the lengths of the source and target sentences are sig

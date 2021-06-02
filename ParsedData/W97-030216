@@ -1,0 +1,10 @@
+es not examine states that were deemed unlikely by the first pass.
+    The extra time of running two passes is more than made up for by the time saved in the second pass.
+    The mathematics of multiple-pass recognition is fairly simple.
+    In the first simple pass, we record the forward probabilities, oi(S1), and backward probabilities, /3(51), of each state i at each time t. Now, a(s: xo(sn gives the overall probability of being in state i at time t given the acoustics.
+    Our second pass will use an HMM whose states are analogous to the first pass HMM's states.
+    If a first pass state at some time is unlikely, then the analogous second pass state is probably also unlikely, so we can threshold it out.
+    There are a few complications to multiple-pass recognition.
+    First, storing all the forward and backward probabilities can be expensive.
+    Second, the second pass is more complicated than the first, typically meaning that it has more states.
+    So the mapping between states in the first pass and 

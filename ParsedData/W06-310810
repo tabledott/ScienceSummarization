@@ -1,0 +1,10 @@
+  To train the model parameters &#955;N1 , we use the Generalized Iterative Scaling (GIS) algorithm (Darroch and Ratcliff, 1972).
+    In practice, the training procedure tends to result in an overfitted model.
+    To avoid overfitting, (Chen and Rosenfeld, 1999) have suggested a smoothing method where a Gaussian prior distribution of the parameters is assumed.
+    This method tried to avoid very large lambda values and prevents features that occur only once for a specific class from getting a value of infinity.
+    We train IBM Model 4 with GIZA++ (Och and Ney, 2003) in both translation directions.
+    Then the alignments are symmetrized using a refined heuristic as described in (Och and Ney, 2003).
+    This wordaligned bilingual corpus is used to train the reordering model parameters, i.e. the feature weights &#955;N1 .
+    Each alignment link defines an event for the maximum entropy training.
+    An exception are the oneto-many alignments, i.e. one source word is aligned to multiple target words.
+    In thi

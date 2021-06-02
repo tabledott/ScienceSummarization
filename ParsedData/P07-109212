@@ -1,0 +1,7 @@
+int distribution for triangulated phrase-tables is defined in an analogous way to Equation (1).
+    We expect that the standard phrase-table should be allocated a higher weight than triangulated phrase-tables, as it will be less noisy.
+    The joint distribution is now conditionalised to yield p(s|t) and p(t|s), which are both used as features in the decoder.
+    Note that the resulting conditional distribution will be drawn solely from one input distribution when the conditioning context is unseen in the remaining distributions.
+    This may lead to an over-reliance on unreliable distributions, which can be ameliorated by smoothing (e.g., Foster et al. (2006)).
+    As an alternative to linear interpolation, we also employ a weighted product for phrase-table combination: This has the same form used for log-linear training of SMT decoders (Och, 2003), which allows us to treat each distribution as a feature, and learn the mixing weights automatically.
+    Note that we must individually smooth the component dist

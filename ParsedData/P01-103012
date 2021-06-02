@@ -1,0 +1,5 @@
+French word f with its most likely English translation ef(ef argmaxt(ef)).
+    For example, in translating the French sentence &#8220;Bien entendu , il parle de une belle victoire .&#8221;, the greedy decoder initially assumes that a good translation of it is &#8220;Well heard , it talking a beautiful victory&#8221; because the best translation of &#8220;bien&#8221; is &#8220;well&#8221;, the best translation of &#8220;entendu&#8221; is &#8220;heard&#8221;, and so on.
+    The alignment corresponding to this translation is shown at the top of Figure 2.
+    Once the initial alignment is created, the greedy decoder tries to improve it, i.e., tries to find an alignment (and implicitly translation) of higher probability, by applying one of the following operations: translateOneOrTwoWords( ,e, ,e) changes the translation of one or two French words, those located at positions and , from e and e into eand e. If eis a word of fertility 1 and eis NULL, then eis deleted from the translation.
+    If eis the NULL word, th

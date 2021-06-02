@@ -1,0 +1,10 @@
+nt work, we have replaced this by the TnT system (we will refer to this tagger as HMM below).'
+    TnT is a trigram tagger (Brants 2000), which means that it considers the previous two tags as features for deciding on the current tag.
+    Moreover, it considers the capitalization of the previous word as well in its state representation.
+    The lexical probabilities depend on the identity of the current word for known words and on a suffix tree smoothed with successive abstraction (Samuelsson 1996) for guessing the tags of unknown words.
+    As we will see below, it shows a surprisingly higher accuracy than our previous HMM implementation.
+    When we compare it with the other taggers used in this paper, we see that a trigram HMM tagger uses a very limited set of features (Table 1).
+    On the other hand, it is able to access some information about the rest of the sentence indirectly, through its use of the Viterbi algorithm.
+  
+  
+    The first set of results from our experiments is the measurement of overal

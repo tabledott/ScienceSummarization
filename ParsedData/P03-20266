@@ -1,0 +1,8 @@
+ing of the erroneous part.&#8221;, Ee: &#8220;The word is in the middle or end.&#8221; or C: &#8220;The word is correct.&#8221;) must be applied to each word.
+    Method D was used if N error categories came up and we chose an appropriate one for the word from among 2N+1 categories.
+    &#8220;2N+1 categories&#8221; means that we divided N categories into two groups, i.e., where the word was at the beginning of the erroneous part and where the word was not at the beginning, and we added one more where the word neither needed to be deleted nor replaced.
+    This can be considered the same as attaching one of the 2N+1 labels to each word.
+    To do this, we applied Ramshaw&#8217;s IOB scheme (Lance 1995).
+    If there was more than one error tag attached to the same word, we only referred to the tag that covered the highest number of words.
+    As Fig.
+    4 reveals, 32 pieces of information are referenced to estimate an error category, i.e., the targeted word and the two preceding and following words, their wo

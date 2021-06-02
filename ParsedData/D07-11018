@@ -1,0 +1,10 @@
+ Closed structures: For each span from s to e and each token m ? [s . . .
+			e], the algorithm maintains an entry [s, e, m]C associated to a partial dependency tree rooted at s in which m is the last modifier of s. The algorithm chooses the optimal dependency label l and grand-child cmo in O(nL), using parameters wlmo.
+			Similarentries [e, s, m]C are maintained for dependen cies headed at e. We implemented two variants of the algorithm.The first forces the root token to participate in exactly one dependency.
+			The second allows many dependencies involving the root token.
+			For the singleroot case, it is necessary to treat the root token dif ferently than other tokens.
+			In the experiments, weused the single-root variant if sentences in the train ing set satisfy this property.
+			Otherwise we used the multi-root variant.
+			2.2 Features.
+			The first-order features ?1(x, h, m) are the exactsame implementation as in previous CoNLL sys tem (Carreras et al, 2006).
+			In turn, those featureswere inspired by su

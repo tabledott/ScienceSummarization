@@ -1,0 +1,8 @@
+air I &#8712; T&#931;, O &#8712; T&#916;.
+    Output: derivation wRTG G = (R, N &#8838; Q &#215; pathsI &#215; pathsO, S, P) generating all weighted derivation trees for X that produce O from I.
+    Returns false instead if there are no such trees. if anyrule? then N &#8592; N &#8746; {(q, i, o)} return anyrule?
+    The possible derivations for a given PRODUCEI,O(q, i, o) are constant and need not be computed more than once, so the function is memoized.
+    We have in the worst case to visit all |Q |&#183; |I |&#183; |O| (q, i, o) pairs and have all |R |transducer rules match at each of them.
+    If enumerating rules matching transducer input-patterns and output-subtrees has cost L (constant given a transducer), then DERIV has time complexity O(L &#183; |Q |&#183; |I |&#183; |O |&#183; |R|).
+    Finally, given inside and outside weights, the sum of weights of trees using a particular production is &#947;G((n, r, w) &#8712; P) &#8801; &#945;G(n) &#183; w &#183; &#946;G(r).
+    Computing &#945;G and &#946;G for

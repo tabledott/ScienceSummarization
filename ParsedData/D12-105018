@@ -1,0 +1,6 @@
+h input phrase or sentence.
+    This tree is then used as the basis for a deep recursive autoencoder (RAE).
+    The aim is to construct a vector representation for the tree&#8217;s root bottom-up where the leaves contain word vectors.
+    The latter can in theory be provided by any type of semantic space, however Socher et al. use word embeddings provided by the neural language model (Collobert and Weston, 2008).
+    Given the binary tree input structure, the model computes parent representations p from their children (c1,c2) using a standard neural network layer: where [c1;c2] is the concatenation of the two children, f is an element-wise activation function such as tanh, b is a bias term, and W E Rnx2n is an encoding matrix that we want to learn during training.
+    One way of assessing how well p represents its direct children is to decode their vectors in a reconstruction layer: During training, the goal is to minimize the reconstruction errors of all input pairs at nonterminal nodes p in a given parse tr

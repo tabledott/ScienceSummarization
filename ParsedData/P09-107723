@@ -1,0 +1,9 @@
+ of the connectives are unambiguous.
+    One might expect a different distribution of relation types in the beginning versus further in the middle of a paragraph.
+    We capture paragraphposition information using a feature which indicates if Arg1 begins a paragraph.
+    Word pairs Four variants of word pair models were used in our experiments.
+    All the models were eventually tested on implicit examples from the PDTB, but the training set-up was varied.
+    Wordpairs-TextRels In this setting, we trained a model on word pairs derived from unannotated text (TextRels corpus).
+    Wordpairs-PDTBImpl Word pairs for training were formed from the cross product of words in the textual spans (Arg1 x Arg2) of the PDTB implicit relations.
+    Wordpairs-selected Here, only word pairs from Wordpairs-PDTBImpl with non-zero information gain on the TextRels corpus were retained.
+    Wordpairs-PDTBExpl In this case, the model was formed by using the word pairs from the explicit relations in the sections of the PDTB used fo

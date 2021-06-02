@@ -1,0 +1,10 @@
+iction.
+    Consistent with Imamura [2002], we define a syntactic phrase as a word sequence that is covered by a single subtree in a syntactic parse tree.
+    We collect syntactic phrase pairs as follows: We wordalign a parallel corpus, as described in Section 3.1.
+    We then parse both sides of the corpus with syntactic parsers [Collins, 1997; Schmidt and Schulte im Walde, 2000].
+    For all phrase pairs that are consistent with the word alignment, we additionally check if both phrases are subtrees in the parse trees.
+    Only these phrases are included in the model.
+    Hence, the syntactically motivated phrase pairs learned are a subset of the phrase pairs learned without knowledge of syntax (Section 3.1).
+    As in Section 3.1, the phrase translation probability distribution is estimated by relative frequency.
+    Marcu and Wong [2002] proposed a translation model that assumes that lexical correspondences can be established not only at the word level, but at the phrase level as well.
+    To learn such co

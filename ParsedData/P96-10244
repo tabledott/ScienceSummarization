@@ -1,0 +1,8 @@
+ Nc denote ITc I, the number of nonterminals in the correct parse tree.
+    There are various levels of strictness for determining whether a constituent (element of TG) is &amp;quot;correct.&amp;quot; The strictest of these is Labelled Match.
+    A constituent (s,t, X) E TG is correct according to Labelled Match if and only if (s, t, X) E T. In other words, a constituent in the guessed parse tree is correct if and only if it occurs in the correct parse tree.
+    The next level of strictness is Bracketed Match.
+    Bracketed match is like labelled match, except that the nonterminal label is ignored.
+    Formally, a constituent (s, t, X) E TG is correct according to Bracketed Match if and only if there exists a Y such that (s,t,Y) E T. The least strict level is Consistent Brackets (also called Crossing Brackets).
+    Consistent Brackets is like Bracketed Match in that the label is ignored.
+    It is even less strict in that the observed (s, t, X) need not be in Tc &#8212;it must simply not be ruled out by any (

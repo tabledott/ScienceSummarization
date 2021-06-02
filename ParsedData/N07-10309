@@ -1,0 +1,9 @@
+ hoc constraints based on string matching and extended mention matching which force certain mentions to be resolved as anaphors regardless of the anaphoricity classifier.
+    This allows them to improve overall f-scores by 1-3%.
+    Ng (2004) obtains f-score improvements of 2.8-4.5% by tuning the anaphoricity threshold on held-out data.
+    The task for the anaphoricity determination component is the following: one wants to decide for each mention i in a document whether i is anaphoric or not.
+    That is, this task can be performed using a simple binary classifier with two outcomes: ANAPH and ANAPH.
+    The classifier estimates the conditional probabilities P(ANAPH|i) and predicts ANAPH for i when P(ANAPH|i) &gt; .5.
+    We use the following model for our anaphoricity classifier: This model is trained in the same manner as the coreference classifier, also with a Gaussian prior with a variance of 1000.
+    The features used for the anaphoricity classifier are quite simple.
+    They include information regardi

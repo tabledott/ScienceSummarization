@@ -1,0 +1,8 @@
+   One way to achieve a bucketing with the required ordering constraints (suggested by Fernando Pereira) is to create a graph of the dependencies, with a node for each item, and an edge from each item x to each item b that depends on it.
+    We then separate the graph into its strongly connected components (maximal sets of nodes all reachable from each other), and perform a topological sort.
+    Items forming singleton strongly connected components are associated with their own buckets; items forming nonsingleton strongly connected components are associated with the same looping bucket.
+    See also Section 5.
+    Later, when we discuss algorithms for interpreting an item-based description, we will need another concept.
+    Of all the items associated with a bucket B, we will be able to find derivations for only a subset.
+    If we can derive an item x associated with bucket B, we write x E B, and say that item x is in bucket B.
+    For example, the goal item of a parser will almost always be associated with 

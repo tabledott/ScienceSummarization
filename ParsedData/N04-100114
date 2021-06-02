@@ -1,0 +1,7 @@
+low a threshold (estimated on the development data), is re-merged with its corresponding stem.
+    Only few prefixes and suffixes were merged using these criteria.
+    This is appropriate for the ACE task, since a large percentage of prefixes and suffixes are annotated as pronoun mentions6.
+    In addition to the language-general features described in Section 2.3, the Arabic system implements a feature specifying for each token its original stem.
+    For this system, the gazetteer features are computed on words, not on tokens; the gazetteers consist of 12000 person names and 3000 location and country names, all of which have been collected by few man-hours web browsing.
+    The system also uses features based on the output of three additional mention detection classifiers: a RRM model predicting 48 mention categories, a RRM model and a HMM model predicting 32 mention categories.
+    In Chinese text, unlike in Indo-European languages, words neither are white-space delimited nor do they have capitalization mark

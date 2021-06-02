@@ -1,0 +1,8 @@
+hing parameters are set using grid search on a development set.
+    When performing inference with Gibbs Sampling, we use 1,000 samples for burn-in and take 10 samples at a lag of 100.
+    Although using multiple samples introduces the possibility of poor results due to &#8220;act drift&#8221;, we found this not to be a problem in practice; in fact, taking multiple samples substantially improved performance during development.
+    Recall that we infer hyperparameters using slice sampling.
+    The concentration parameters chosen in this manner were always sparse (&lt; 1), which produced a moderate improvement over an uninformed prior.
+    We are quite interested in what our models can tell us about how people converse on Twitter.
+    To visualize and interpret our competing models, we examined act-emission distributions, posts with highconfidence acts, and act-transition diagrams.
+    Of the three competing systems, we found the Conversation+Topic model by far the easiest to interpret: the 10-act model has 8 a

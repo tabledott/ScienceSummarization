@@ -1,0 +1,7 @@
+ed SMT sys tems tend to be long at training time and short attest time, which has adverse consequences on nonhierarchical reordering models.
+			For instance, in Fig ure 4, the phrase-based reordering model categorizes the block in the near future as discontinuous, though if the sentence pair had been a training example,this block would count as a swap because of the ex tracted phrase on this issue.
+	
+	
+			In our experiments, we use a re-implementationof the Moses decoder (Koehn et al, 2007).
+			Except for lexical reordering models, all other fea tures are standard features implemented almost5Note that the hierarchical phrase hold ... issue is not a well formed syntactic phrase ? i.e., it neither matches the bracketing of the verb phrase hold ... future nor matches the noun phrase consultations ... issue ? yet it enables sensible reordering.
+			exactly as in Moses: four translation features(phrase-based translation probabilities and lexically weighted probabilities), word penalty, phrase penalty, linear distor

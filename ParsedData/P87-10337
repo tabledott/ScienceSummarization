@@ -1,0 +1,16 @@
+FY-DESC (f, g) Returns feature-description: where f and g are feature-descriptions.
+    /.
+    Unify definite components.
+    Let new-def = UNIFY-DGS (f.definite, g.definite).
+    If new-def = TOP, then return (failure).
+    Let desc = a feature-description with: desc.definite = new-def, desc.indefinite = tindefinite U g.indefinite.
+    If desc.indefinite = 0, Then return (desc); Else begin; 2.
+    Check compatibility of indefinite components with new-def.
+    Let new-desc = CHECK-INDEF (desc, new-def).
+    If new-desc = failure, then return (failure); S. Complete ezhau.stiue consistency checking, if necessary.
+    Else if new-desc.indefinite = 0 OR if complete checking is not required, Then return (new-desc); Else begin; Let n = 1.
+    Repeat while n &lt; cardinality of new-desc.indefinite:
+  
+  
+    In this section we will give a complete algorithm for unifying two feature-descriptions, where one or both may contain disjunction.
+    This algorithm is designed so that it can be used as a relatively efficient

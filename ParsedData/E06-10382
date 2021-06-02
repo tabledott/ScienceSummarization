@@ -1,0 +1,8 @@
+t and Marcu (2000) and the rest for training, except that we hold out 20 sentences for the purpose of development.
+    A handful of sentences occur twice but with different compressions.
+    We randomly select a single compression for each unique sentence in order to create an unambiguous training set.
+    Examples from this data set are given in Figure 1.
+    Formally, sentence compression aims to shorten a sentence x = x1 ... xn into a substring y = y1 ... ym, where yi E {x1, ... , xn}.
+    We define the function I(yi) E {1, ... , n} that maps word yi in the compression to the index of the word in the original sentence.
+    Finally we include the constraint I(yi) &lt; I(yi+1), which forces each word in x to occur at most once in the compression y. Compressions are evaluated on three criteria, Typically grammaticality and importance are traded off with compression rate.
+    The longer our compressions, the less likely we are to remove important words or phrases crucial to maintaining grammaticality and the i

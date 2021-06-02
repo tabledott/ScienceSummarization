@@ -1,0 +1,8 @@
+labeled as coreferent into the same coreference chain.
+    Following Ng &amp; Cardie (2002), our baseline system reimplements the Soon et al. (2001) system.
+    The system uses 12 features.
+    Given a potential antecedent REi and a potential anaphor REQ the features are computed as follows3. those; else F. NUMBER T if both REi and REQ agree in number; else F. GENDER U if either REi or REQ have an undefined gender.
+    Else if they are both defined and agree T; else F. PROPER NAME T if both REi and REQ are proper names; else F. APPOSITIVE T if REQ is in apposition with REi; else F. In the baseline system semantic information is limited to WordNet semantic class matching.
+    Unfortunately, a WordNet semantic class lookup exhibits problems such as coverage, sense proliferation and ambiguity4, which make the WN CLASS feature very noisy.
+    We enrich the semantic information available to the classifier by using semantic similarity measures based on the WordNet taxonomy (Pedersen et al., 2004).
+    The measures 

@@ -1,0 +1,6 @@
+ features which can be learned depends on the number of training examples, and since some of our experiments used only a few dozen training examples we did not make heavy use of this feature.
+			6Note that the common word pair features affectedcommon errors and therefore had a particularly large im pact on AER.
+			Model AER Dice (without matching) 38.7 / 36.0 Model 4 (E-F, F-E, intersected) 8.9 / 9.7/ 6.9 Discriminative Matching Dice Feature Only 29.8 + Distance Features 15.5 + Word Shape and Frequency 14.4 + Common Words and Next-Dice 10.7 + Model 4 Predictions 5.4 Figure 3: AER on the Hansards task.
+			also easily incorporate the predictions of Model 4 as additional features.
+			We therefore added three new features for each edge: the prediction of Model 4 in the English-French direction, the prediction in the French-English direction, and the intersection of the two predictions.
+			With these powerful new features, our AER dropped dramatically to 5.4, a 22% improvement over the intersected Model 4 performa

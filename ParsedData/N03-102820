@@ -1,0 +1,7 @@
+CG iteration involves a line search that may require several forward-backward procedures (typically between 4 and 5 in our experiments), we plot the progress of penalized log-likelihood Ga with respect to the number of forward-backward evaluations.
+    The objective function increases rapidly, achieving close proximity to the maximum in a few iterations (typically 10).
+    In contrast, GIS training increases Ga rather slowly, never reaching the value achieved by CG.
+    The relative slowness of iterative scaling is also documented in a recent evaluation of training methods for maximum-entropy classification (Malouf, 2002).
+    In theory, GIS would eventually converge to the Ga optimum, but in practice convergence may be so slow that Ga improvements may fall below numerical accuracy, falsely indicating convergence.
+    Mixed CG training converges slightly more slowly than preconditioned CG.
+    On the other hand, CG without preconditioner converges much more slowly than both preconditioned CG and mixed CG trai

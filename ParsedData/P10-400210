@@ -1,0 +1,8 @@
+slation posterior distribution, and the expected values of feature functions (Li and Eisner, 2009).
+    Since semirings are such a useful abstraction, cdec has been designed to facilitate implementation of new semirings.
+    Table 1 shows the C++ representation used for semirings.
+    Note that because of our representation, built-in types like double, int, and bool (together with their default operators) are semirings.
+    Beyond these, the type prob t is provided which stores the logarithm of the value it represents, which helps avoid underflow and overflow problems that may otherwise be encountered.
+    A generic first-order expectation semiring is also provided (Li and Eisner, 2009).
+    Three standard algorithms parameterized with semirings are provided: INSIDE, OUTSIDE, and INSIDEOUTSIDE, and the semiring is specified using C++ generics (templates).
+    Additionally, each algorithm takes a weight function that maps from hypergraph edges to a value in K, making it possible to use many different semirings

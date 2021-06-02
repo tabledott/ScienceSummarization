@@ -1,0 +1,10 @@
+gnificant.
+    We attribute the dominance of recall over precision primarily to the influence of edit-detector mistakes.
+    First, note that when given the gold standard edits the difference is quite small (0.3%).
+    When using the edit detector edits the difference increases to 1.2%.
+    Our best guess is that because the edit detector has high precision, and lower recall, many more words are left in the sentence to be parsed.
+    Thus one finds more nonterminal constituents in the machine parses than in the gold parses and the precision is lower than the recall.
+  
+  
+    While there is a significant body of work on finding edit positions [1,9,10,13,17,18], it is difficult to make meaningful comparisons between the various research efforts as they differ in (a) the corpora used for training and testing, (b) the information available to the edit detector, and (c) the evaluation metrics used.
+    For example, [13] uses a subsection of the ATIS corpus, takes as input the actual speech signal (and thus has ac

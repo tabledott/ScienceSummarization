@@ -1,0 +1,8 @@
+ous, as determined in Step 1, the correct pattern is printed.
+    Ambiguous words have a table of the possible accent patterns and a pointer to a decision list, either for that specific word or its ambiguity class (as determined in Step 6).
+    This given list is searched for the highest ranking match in the word's context, and a classification number is returned, indicating the most likely of the word's accent patterns given the context'.
+    From a statistical perspective, the evidence at the top of this list will most reliably disambiguate the target word.
+    Given a word in a new context to be assigned an accent pattern, if we may only base the classification on a single line in the decision list, it should be the highest ranking pattern that is present in the target context.
+    This is uncontroversial, and is solidly based in Bayesian decision theory.
+    The question, however, is what to do with the lessreliable evidence that may also be present in the target context.
+    The common tradition is to co

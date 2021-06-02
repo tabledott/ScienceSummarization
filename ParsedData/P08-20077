@@ -1,0 +1,12 @@
+ge set E = {(vj, vl)}, we construct e and f with n words each, and set 0(ej&#8722;1 j, fl&#8722;1 l) = 1 and 0 otherwise.
+    The number of perfect matchings in G is the sum S for this weighted sentence pair.
+    CPM is #P-complete (Valiant, 1979), so S (and hence &#163;) is #P-hard.
+  
+  
+    Although O is NP-hard, we present an approach to solving it using integer linear programming (ILP).
+    Marcu and Wong (2002) describes an approximation to O.
+    Given a weighted sentence pair, high scoring phrases are linked together greedily to reach an initial alignment.
+    Then, local operators are applied to hill-climb A in search of the maximum a.
+    This procedure also approximates &#163; by collecting weighted counts as the space is traversed.
+    DeNero et al. (2006) instead proposes an exponential-time dynamic program to systematically explore A, which can in principle solve either O or &#163;.
+    In practice, however, the space of alignments has to be pruned severely using word alignments to control the r

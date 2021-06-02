@@ -1,0 +1,6 @@
+ The question of the order of two TL phrases is not a trivial one.
+    Since a word alignment matrix usually contains a lot of noises as well as one-to-many and many-to-many alignments, two TL phrases may overlap with each other.
+    For the sake of the quality of reordering knowledge, if T (p1) and T(p2) overlap, then the node N with children N1 and N2 is not taken as a training instance.
+    Obviously it will greatly reduce the amount of training input.
+    To remedy data sparseness, less probable alignment points are removed so as to minimize overlapping phrases, since, after removing some alignment point, one of the TL phrases may become shorter and the two phrases may no longer overlap.
+    The implementation is similar to the idea of lexical weight in (Koehn et al., 2003): all points in the alignment matrices of the entire training corpus are collected to calculate the probabilistic distribution, P(t|s), of some TL word t given some SL word s. Any pair of overlapping T (pi)s will be redefined by iterati

@@ -1,0 +1,7 @@
+ are fulfilled).
+    In our model, each element in each layer is a variable, and is assigned a sense label (see Figure 2, where distinct layers correspond to different representations of the context around the target word).
+    From these assignments, we must determine the sense distribution of the instance as a whole.
+    This is the purpose of the Gibbs sampling procedure.
+    Specifically, in order to derive the update function used in the Gibbs sampler, we must provide the conditional probability of the i-th variable being assigned sense si in layer l, given the feature value fi of the context variable and the current sense assignments of all the other variables in the data (s&#8722;i): p(si|s&#8722;i, f) &#8212; p(fi|s, f &#8722;i,R) &#183; p(si|s&#8722;i,a) (2) The probability of a single sense assignment, si, is proportional to the product of the likelihood (of feature fi, given the rest of the data) and the prior probability of the assignment. smaller ones (e.g.
+    1 word window).
+    Our solution is

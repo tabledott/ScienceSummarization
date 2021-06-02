@@ -1,0 +1,9 @@
+ion networks.
+    The modified Levenshtein alignment as used in TER is more natural than simple edit distance such as word error rate since machine translation hypotheses may have different word orders while having the same meaning.
+    As the skeleton determines the word order, the quality of the combination output also depends on which hypothesis is chosen as the skeleton.
+    Since the modified Levenshtein alignment produces TER scores between the skeleton and the other hypotheses, a natural choice for selecting the skeleton is the minimum average TER score.
+    The hypothesis resulting in the lowest average TER score when aligned against all other hypotheses is chosen as the skeleton as follows where is the number of systems.
+    This is equivalent to minimum Bayes risk decoding with uniform posterior probabilities (Sim et al., 2007).
+    Other evaluation metrics may also be used as the MBR loss function.
+    For BLEU and METEOR, the loss function would be and .
+    It has been found that multiple hypothe

@@ -1,0 +1,9 @@
+tree.
+    The highestprobability derivation for any item can be reconstructed recursively at the end of the parse, provided that each item maintains not only a bit indicating whether it can be derived, but also the probability and instantiated root rule of its highest-probability derivation tree.
+  
+  
+    We now give a variant of the algorithm of &#167;4; the variant has the same asymptotic complexity but will often be faster in practice.
+    Notice that the ATTACH-LEFT rule of Figure 1(b) tries to combine the nonterminal label B[dhd of a previously derived constituent with every possible nonterminal label of the form C[dh].
+    The improved version, shown in Figure 2, restricts C[dh] to be the label of a previously derived adjacent constituent.
+    This improves speed if there are not many such constituents and we can enumerate them in 0(1) time apiece (using a sparse parse table to store the derived items).
+    It is necessary to use an agenda data structure (Kay, 1986) when implementing the declarative al

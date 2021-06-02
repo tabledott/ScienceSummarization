@@ -1,0 +1,5 @@
+ we discuss the specific classification framework that we adopt and the set of mechanisms that we propose for modeling specific types of relationships.
+    Let s1, s2, ... , sn be the sequence of speech segments within a given debate, and let Y and N stand for the &#8220;yea&#8221; and &#8220;nay&#8221; class, respectively.
+    Assume we have a non-negative function ind(s, C) indicating the degree of preference that an individual-document classifier, such as an SVM, has for placing speech-segment s in class C. Also, assume that some pairs of speech segments have weighted links between them, where the non-negative strength (weight) str(`) for a link ` indicates the degree to which it is preferable that the linked speech segments receive the same label.
+    Then, any class assignment c = c(s1), c(s2), ... , c(sn) can be assigned a cost where c(s) is the &#8220;opposite&#8221; class from c(s).
+    A minimum-cost assignment thus represents an optimum way to classify the speech segments so that each one tends not 

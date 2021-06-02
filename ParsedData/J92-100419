@@ -1,0 +1,5 @@
+erminal node has successfully matched an input word, the path probability is reset to 1.0.10 Thus the probabilities that are used to prioritize the queue represent not the total path probability but rather the probability given the partial word sequence.
+    Each path climbs up from a terminal node and back down to a next terminal node, with each new node adjusting the path probability by multiplying by a new conditional probability The resulting conditional path probability for a next word represents the probability of that word in its linguistic role given all preceding words in their linguistic roles.
+    With this strategy, a partial sentence does not become increasingly improbable as more and more words are added.
+    Because of the sharing of common elements on the right-hand side of rules, TINA can automatically generate new rules that were not explicitly provided.
+    For instance, having seen the rule X = ABC and the rule X B C D, the system would automatically generate two new rules, X B C and X = A

@@ -1,0 +1,9 @@
+t each symbol.
+    Consider the closed part-of-speech classes (e.g.
+    DT, CC, IN) or the nonterminal ADJP.
+    These symbols are very common, and certainly do contain subcategories, but there is little to be gained from exhaustively splitting them before even beginning to model the rarer symbols that describe the complex inner correlations inside verb phrases.
+    Our solution is to use a split-and-merge approach broadly reminiscent of ISODATA, a classic clustering procedure (Ball and Hall, 1967).
+    To prevent oversplitting, we could measure the utility of splitting each latent annotation individually and then split the best ones first.
+    However, not only is this impractical, requiring an entire training phase for each new split, but it assumes the contributions of multiple splits are independent.
+    In fact, extra subsymbols may need to be added to several nonterminals before they can cooperate to pass information along the parse tree.
+    Therefore, we go in the opposite direction; that is, we split

@@ -1,0 +1,11 @@
+., 2001) for the experiments, which is a variant of (Ratnaparkhi, 1996) modified to use HMM state features.
+  
+  
+    In the above definitions, k is a relative word position from the word to be classified.
+    A negative value represents a preceding word&#8217;s position, and a positive value represents a following word&#8217;s position.
+    Note that we assume that the classification proceeds left to right as can be seen in the definition of the preceding class feature.
+    For the SVM classification, we does not use a dynamic argmax-type classification such as the Viterbi algorithm, since it is difficult to define a good comparable value for the confidence of a prediction such as probability.
+    The consequences of this limitation will be discussed with the experimental results.
+    Features usually form a group with some variables such as the position unspecified.
+    In this paper, we instantiate all features, i.e., instantiate for all i, for a group and a position.
+    Then, it is convenient to denote a

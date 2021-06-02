@@ -1,0 +1,5 @@
+ely, the time needed by a C++ implementation on a Sun 4/75 was reduced to 1.7 mm for the first pass, 0.8 mm for the second, and 0.5 min for the third pass in an application to this pair of articles.
+    (Initialization, i.e., reading the files and building up the data structures, takes another 0.6 min in the beginning.)
+    It should be noted that a naive implementation of 138 Martin Kay and Martin Roscheisen Text-Translation Alignment the algorithm without using the appropriate data structures can easily lead to times that are a factor of 30 higher and do not scale up to larger texts.
+    The application of our method to a text that we put together from the Hansard corpus had essentially no problem in identifying the correct sentence alignment in a process of five passes.
+    The alignments for the first 1000 sentences of the English text were checked by hand, and seven errors were found; five of them occurred in sentences where sentence boundaries were not correctly identified by the program of periods that

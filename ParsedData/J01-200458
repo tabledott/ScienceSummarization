@@ -1,0 +1,7 @@
+bigram and unigram estimates.
+    Our trigram model performs at almost exactly the same level as theirs does, which is what we would expect.
+    Our parsing model's perplexity improves upon their first result fairly substantially, but is only slightly better than their second result.'
+    However, when we interpolate with the trigram, we see that the additional improvement is greater than the one they experienced.
+    This is not surprising, since our conditioning information is in many ways orthogonal to that of the trigram, insofar as it includes the probability mass of the derivations; in contrast, their model in some instances is very close to the trigram, by conditioning on two words in the prefix string, which may happen to be the two adjacent words.
+    These results are particularly remarkable, given that we did not build our model as a language model per se, but rather as a parsing model.
+    The perplexity improvement was achieved by simply taking the existing parsing model and applying it, with no 

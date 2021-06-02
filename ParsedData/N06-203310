@@ -1,0 +1,7 @@
+d: (1) giving all dependencies the same weight; (2) giving dependencies different weights, depending only on which parser generated the dependency; and (3) giving dependencies different 2 Nivre and Scholz use memory based learning in their experiments.
+    Our implementation of their parser uses support vector machines, with improved results. weights, depending on which parser generated the dependency, and the part-of-speech of the dependent word.
+    Option 2 takes into consideration that parsers may have different levels of accuracy, and dependencies proposed by more accurate parsers should be counted more heavily.
+    Option 3 goes a step further, attempting to capitalize on the specific strengths of the different parsers.
+    The weights in option 2 are determined by computing the accuracy of each parser on the held-out set (WSJ section 00).
+    The weights are simply the corresponding parser&#8217;s accuracy (number of correct dependencies divided by the total number of dependencies).
+    The weights in 

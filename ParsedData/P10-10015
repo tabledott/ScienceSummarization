@@ -1,0 +1,7 @@
+.
+    The first type of parser we describe uses a &#8220;firstorder&#8221; factorization, which decomposes a dependency tree into its individual dependencies.
+    Eisner (2000) introduced a widely-used dynamicprogramming algorithm for first-order parsing; as it is the basis for many parsers, including our new algorithms, we summarize its design here.
+    The Eisner (2000) algorithm is based on two interrelated types of dynamic-programming structures: complete spans, which consist of a headword and its descendents on one side, and incomplete spans, which consist of a dependency and the region between the head and modifier.
+    Formally, we denote a complete span as Ch,e where h and a are the indices of the span&#8217;s headword and endpoint.
+    An incomplete span is denoted as Ih,,,t where h and m are the index of the head and modifier of a dependency.
+    Intuitively, a complete span represents a &#8220;half-constituent&#8221; headed by h, whereas an incomplete span is only a partial half-constituent, since 

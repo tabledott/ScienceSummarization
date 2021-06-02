@@ -1,0 +1,8 @@
+nment scheme provides more accurate alignments, but it is also more complex &#8212; sometimes a prediction model should predict two phonemes for a single letter, while at other times the prediction model should make a prediction based on a pair of letters.
+    In order to distinguish between these two cases, we propose a method called &#8220;letter chunking&#8221;.
+    Once many-to-many alignments are built across graphemes and phonemes, each word contains a set of letter chunks, each consisting of one or two letters aligned with phonemes.
+    Each letter chunk can be considered as a grapheme unit that contains either one or two letters.
+    In the same way, each phoneme chunk can be considered as a phoneme unit consisting of one or two phonemes.
+    Note that the double letters and double phonemes are implicitly discovered by the alignments of graphemes and phonemes.
+    They are not necessarily consistent over the training data but based on the alignments found in each word.
+    In the phoneme generation ph

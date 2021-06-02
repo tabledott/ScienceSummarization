@@ -1,0 +1,6 @@
+r the language model under evaluation was to reconstruct which of (n, vi) and (n, v2) was the original cooccurrence.
+    Note that by construction, (n, vi) was always the correct answer, and furthermore, methods relying solely on unigram frequencies would perform no better than chance.
+    Test-set performance was measured by the error rate, defined as &#8212;1(# of incorrect choices + (# of ties)/2) , where T is the number of test triple tokens in the set, and a tie results when both alternatives are deemed equally likely by the language model in question.
+    To perform the evaluation, we incorporated each similarity function into a decision rule as follows.
+    For a given similarity measure f and neighborhood size k, let Sf,k(n) denote the k most similar words to n according to f. We define the evidence according to f for the cooccurrence (n, vi) as Then, the decision rule was to choose the alternative with the greatest evidence.
+    The reason we used a restricted version of the distance-weighted averagi

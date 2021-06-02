@@ -1,0 +1,6 @@
+subscripts to indicate the reordering of phrases.
+    The phrase-based model is able to order &#8220;diplomatic...Korea&#8221; correctly (using phrase reordering) and &#8220;one...countries&#8221; correctly (using a phrase translation), but does not accomplish the necessary inversion of those two groups.
+    A lexicalized phrase-reordering model like that in use in ISI&#8217;s system (Och et al., 2004) might be able to learn a better reordering, but simpler distortion models will probably not.
+    We propose a solution to these problems that does not interfere with the strengths of the phrasebased approach, but rather capitalizes on them: since phrases are good for learning reorderings of words, we can use them to learn reorderings of phrases as well.
+    In order to do this we need hierarchical phrases that consist of both words and subphrases.
+    For example, a hierarchical phrase pair that might help with the above example is: (5) (yu 1 you 2 , have 2 with 1 ) where 1 and 2 are placeholders for subphrases

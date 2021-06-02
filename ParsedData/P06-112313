@@ -1,0 +1,8 @@
+exts to minimize the chances that alignment errors would lead to an over-estimate of alignment complexity.
+    All of the modifications involved adding links to NULL.
+    Due to our disjunctive treatment of conflicting links, the addition of a link to NULL can decrease but cannot increase the complexity of an alignment.
+    For example, if we added the links (cela, NULL) and (NULL, that) to the alignment in Figure 1, the hierarchical alignment algorithm could use them instead of the link between cela and that.
+    It could thus generate the modified alignment without using a gap.
+    We added NULL links in two situations.
+    First, if a subset of the links in an alignment formed a many-to-many mapping but did not form a bipartite clique (i.e. every word on one side linked to every word on the other side), then we added links from each of these words to NULL.
+    Second, if n words on one side of the bitext aligned to m words on the other side with m &gt; n then we added NULL links for each of the words on th

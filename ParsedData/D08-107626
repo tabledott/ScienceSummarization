@@ -1,0 +1,7 @@
+near combination of 20 to 30 feature functions.
+    In a first experiment, we investigated the convergence speed of lattice MERT and N-best MERT.
+    Figure 2 shows the evolution of the BLEU score in the course of the iteration index on the zhendev1 corpus for either method.
+    In each iteration, the training procedure translates the development corpus using the most recent weights set and merges the top ranked candidate translations (either represented as phrase lattices or N-best lists) into the candidate repositories before the line optimization is performed.
+    For N-best MERT, we used N~50 which yielded the best results.
+    In contrast to lattice MERT, N-best MERT optimizes all dimensions in each iteration and, in addition, it also explores a large number of random starting points before it re-decodes and expands the hypothesis set.
+    As is typical for N-best MERT, the first iteration causes a dramatic performance loss caused by overadapting the candidate repositories, which amounts to more than 27.

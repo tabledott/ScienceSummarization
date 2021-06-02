@@ -1,0 +1,13 @@
+iciencies from the basic algorithm, making it suitable for inclusion in an actual toolkit.
+    Such a toolkit could greatly shorten the development cycle in natural language engineering.
+  
+  
+    Finite-state machines, including finite-state automata (FSAs) and transducers (FSTs), are a kind of labeled directed multigraph.
+    For ease and brevity, we explain them by example.
+    Fig.
+    1a shows a probabilistic FST with input alphabet E = {a, b}, output alphabet A = {x, z}, and all states final.
+    It may be regarded as a device for generating a string pair in E* x A* by a random walk from Q.
+    Two paths exist that generate both input aabb and output xz: Each of the paths has probability .0002646, so the probability of somehow generating the pair (aabb, xz) is .0002646 + .0002646 = .0005292.
+    Abstracting away from the idea of random walks, arc weights need not be probabilities.
+    Still, define a path&#8217;s weight as the product of its arc weights and the stopping weight of its final state.
+    Th

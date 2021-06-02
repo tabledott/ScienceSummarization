@@ -1,0 +1,9 @@
+petition between sources words for a particular target alignment.
+    This feature indicates whether a given alignment has the highest translation score of all the candidate alignments for a given target word.
+    For the example in Figure 1, the words la, de and une all receive a high translation score when paired with the.
+    To discourage all of these French words from aligning with the, the best of these (la) is flagged as the best candidate.
+    This allows for competition between source words which would otherwise not occur.
+    Orthographic features Features based on string overlap allow our model to recognise cognates and orthographically similar translation pairs, which are particularly common between European languages.
+    Here we employ a number of string matching features inspired by similar features in Taskar et al. (2005).
+    We use an indicator feature for every possible source-target word pair in the training data.
+    In addition, we include indicator features for an exact string match, bo

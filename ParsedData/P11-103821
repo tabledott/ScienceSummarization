@@ -1,0 +1,7 @@
+ of positive predictions returned by the detection classifier over the set of normalisation candidates for a given OOV token: the token is considered to be ill-formed iff td or more candidates are positively classified, i.e. predicted to be correct candidates.
+    For OOV words which are predicted to be illformed, we select the most likely candidate from the confusion set as the basis of normalisation.
+    The final selection is based on the following features, in line with previous work (Wong et al., 2006; Cook and Stevenson, 2009).
+    Lexical edit distance, phonemic edit distance, prefix substring, suffix substring, and the longest common subsequence (LCS) are exploited to capture morphophonemic similarity.
+    Both lexical and phonemic edit distance (ED) are normalised by the reciprocal of exp(ED).
+    The prefix and suffix features are intended to capture the fact that leading and trailing characters are frequently dropped from words, e.g. in cases such as ish and talkin.
+    We calculate the ratio of th

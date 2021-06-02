@@ -1,0 +1,7 @@
+ts for the method.
+    The model of Collins (1999) was the base model; the ExpLoss model gave a 1.5% absolute improvement over this method.
+    The method gives very similar accuracy to the model of Charniak (2000), which also uses a rich set of initial features in addition to Charniak&#8217;s (1997) original model.
+    The LogLoss method was too inefficient to run on the full data set.
+    Instead we made some tests on a smaller subset of the data (5,934 sentences, giving 200,000 parse trees) and 52,294 features.15 On an older machine (an order of magnitude or more slower than the machine used for the final tests) the boosting method took 40 minutes for 10,000 rounds on this data set.
+    The LogLoss method took 20 hours to complete 3,500 rounds (a factor of about 85 times slower).
+    This was in spite of various heuristics that were implemented in an attempt to speed up LogLoss: for example, selecting multiple features at each round or recalculating the statistics for only the best K features for some smal

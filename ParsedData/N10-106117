@@ -1,0 +1,9 @@
+nistic syntactic configuration (appositives or predicative nominatives constructions).6 The {ri} factors are heuristically set to place most of their mass on the closest antecedent by tree distance.
+    During training, we proceed in stages, each consisting of 5 iterations: We evaluate our system at the end of stage using the B3All metric on the A05CU development set (see Section 5 for details).
+  
+  
+    We considered the challenging end-to-end system mention setting, where in addition to predicting mention partitions, a system must identify the mentions themselves and their boundaries automatically.
+    Our system deterministically extracts mention boundaries from parse trees (Section 5.2).
+    We utilized no coreference annotation during training, but did use minimal prototype information to prime the learning of entity types (Section 5.3).
+    For evaluation, we used standard coreference data sets derived from the ACE corpora: For all experiments, we evaluated on the dev and test sets above.
+    To train,

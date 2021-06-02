@@ -1,0 +1,9 @@
+ our final results are 88.1/87.5% constituent precision/recall, an average improvement of 2.3% over (Collins 96).
+    Second, the parsers in (Collins 96) and (NIagerman 95; Jelinek et al. 94) produce trees without information about whmovement or subcategorisation.
+    Most NLP applications will need this information to extract predicateargument structure from parse trees.
+    In the remainder of this paper we describe the 3 models in section 2, discuss practical issues in section 3, give results in section 4, and give conclusions in section 5.
+  
+  
+    In general, a statistical parsing model defines the conditional probability, P(T S), for each candidate parse tree T for a sentence S. The parser itself is an algorithm which searches for the tree, Tb&#8222;t, that maximises 'P(T 1 S).
+    A generative model uses the observation that maximising P(T, S) is equivalent to maximising P(T I S): 1 to a top-down derivation of the tree.
+    In a PCFG, for a tree derived by n applications of context-free re-write rules

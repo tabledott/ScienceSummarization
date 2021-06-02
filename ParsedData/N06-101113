@@ -1,0 +1,9 @@
+ords.
+    In each iteration, we used the current transliter= (powell, pauel).
+    We build a feature vector from this example in the following manner: First, we split both words into all possible substrings of up to size two: ation model to find a list of 30 best transliteration equivalence classes for each NE.
+    We then computed time sequence similarity score between NE and each class from its list to find the one with the best matching time sequence.
+    If its similarity score surpassed a set threshold, it was added to the list of positive examples for the next round of training.
+    Positive examples were constructed by pairing each English NE with each of the transliterations from the best equivalence class that surpasses the threshold.
+    We used the same number of positive and negative examples.
+    For evaluation, random 727 of the total of 978 NE pairs matched by the algorithm were selected and checked by a language expert.
+    Accuracy was computed as the percentage of those NEs correctly discove

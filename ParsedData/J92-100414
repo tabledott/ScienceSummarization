@@ -1,0 +1,6 @@
+amp;quot; [NP] [article] [adjective] [adjective] [noun] &amp;quot;the wonderful pudding&amp;quot; [NP] = [article] [adjective] [noun] Illustration of probabilistic network obtained from four rules with the same LHS (NP), as given in the text.
+    A parent node, named [NP], would contain these five nodes as its children, with a probability matrix specifying the network connections.
+    To train the probabilities, a record is kept of the relative counts of each subseqent sibling, with respect to each permissible child of the parent node, in our case, [NP], as they occurred in an entire set of parsed training sentences.
+    In the example, [adjective] is followed three times by [noun] and once by [adjective], so the network shows a probability of 1 / 4 for the self loop and 3/4 for the advance to [noun].
+    Notice that the system has now generalized to include any number of adjectives in a row.
+    Each rule in general would occur multiple times in a given training set, but in addition there is a significant am

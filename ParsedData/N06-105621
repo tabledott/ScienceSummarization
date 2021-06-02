@@ -1,0 +1,7 @@
+r and Collins&#8217;s parser (see Section 1).
+    However, WASP performs quite favorably compared to SILT and COCKTAIL, which use the same training data.
+    In particular, COCKTAIL, a deterministic shift-reduce parser based on inductive logic programming, fails to scale up to the ROBOCUP domain where sentences are much longer, and crashes on larger training sets due to memory overflow.
+    WASP also outperforms SILT in terms of recall, where lexical learning is done by a local bottom-up search, which is much less effective than the wordalignment-based algorithm in WASP.
+    Figure 7 shows the performance of WASP on the multilingual GEOQUERY data set.
+    The languages being considered differ in terms of word order: Subject-Verb-Object for English and Spanish, and Subject-Object-Verb for Japanese and Turkish.
+    WASP&#8217;s performance is consistent across these languages despite some slight differences, most probably due to factors other than word order (e.g. lower recall for Turkish due to a much larger v

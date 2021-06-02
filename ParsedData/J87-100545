@@ -1,0 +1,15 @@
+oved in the proofs of the final two conditions.
+    Condition 5: We must show that pull(a,true) terminates with result g such that p(13) = 0.
+    Let y = pull-opaqueargs(a).
+    By the first condition just proved above, we know this computation terminates and p(y) &lt;n.
+    Now, let E = apply-terms(y,true).
+    Again by the third condition just proved above, this computation terminates with p(E) = 0.
+    Since complete?
+    = true, we return E as 0, so p(P) = 0 as required.
+    Condition 6: We must show that pull(a false) terminates with result /3 such that p([3) &lt; p(a).
+    The argument is similar to that for condition 5.
+    Let y = pull-opaqueargs(a).
+    By the first condition just proved above, we know this computation terminates and p(y) &lt; n. Now, let E = apply-terms(y, false).
+    Again by the fourth condition just proved above, this computation terminates with p(E) &lt; p(y) &lt; n. Since complete?
+    = false, we return either E or a as p. In either case, p(13) &lt; p(a) as rquired.
+    This c

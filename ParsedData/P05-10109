@@ -1,0 +1,9 @@
+hree different approximations, which are empirically compared in the next section.
+    The first method simply limits the number of candidate parse trees compared in Eq.
+    4; we first create N-best parses using a PCFG and then, within the N-best parses, select the one with the highest probability in terms of the PCFG-LA.
+    The other two methods are a little more complicated, and we explain them in separate subsections.
+    The second approximation method selects the best complete tree , that is, (5) We call a Viterbi complete tree.
+    Such a tree can be obtained in time by regarding the PCFG-LA as a PCFG with annotated symbols.1 The observable part of the Viterbi complete tree (i.e., ) does not necessarily coincide with the best observable tree in Eq.
+    4.
+    However, if has some &#8216;dominant&#8217; assignment to its latent annotation symbols such that ,then because and , and thus and are almost equally &#8216;good&#8217; in terms of their marginal probabilities.
+    In the third method, we approxi

@@ -1,0 +1,8 @@
+rojectivity.
+    We designed the tree-based-accuracy -metrics in order to account for this effect.
+    Instead of comparing two strings directly, we relate the two strings to a dependency tree of the reference string.
+    For each treelet (i.e., non-leaf node with all of its daughters) of the reference dependency tree, we construct strings of the head and its dependents in the order they appear in the reference string, and in the order they appear in the result string.
+    We then calculate the number of substitutions, deletions, and insertions as for the simple string accuracy, and the number of substitutions, moves, and remaining deletions and insertions as for the generation string metrics, for all treelets that form the dependency tree.
+    We sum these scores, and then use the values obtained in the formulas given above for the two string-based metrics, yielding the Simple Tree Accuracy and Generation Tree Accuracy.
+    The scores for our example sentence are shown in the last two columns of Table 1.
+   

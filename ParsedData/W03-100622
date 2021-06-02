@@ -1,0 +1,11 @@
+one depends on the kind of grammar that is used.
+    The LDA output using SEM-TAG is already annotated with semantic role information because it is encoded in the grammar itself.
+    On the other hand, the LDA output using SYNT-TAG contains strictly syntactic information.
+    In this case, we use the highest performing model from Section 6 in order to label arguments with semantic roles.
+    Evaluation of prediction of semantic roles takes the following form.
+    Each argument labeled by a semantic role in the test corpus is treated as one trial.
+    Certain aspects of this trial are always checked for correctness.
+    These include checking that the semantic role and the dependency-link are correct.
+    There are other aspects which may or may not be checked, depending on the type of evaluation.
+    One aspect, &#8220;bnd,&#8221; is whether or not the argument&#8217;s bracketing as specified in the dependency tree is correct.
+    Another aspect, &#8220;arg,&#8221; is whether or not the headword of the argume

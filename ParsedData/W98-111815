@@ -1,0 +1,10 @@
+rors which the external system is likely to make.
+    An example of this is that on the evaluation system the feature which predicted person_unique given a tag of person_unique by Proteus had only a 76% higher weight than the feature which predicted person_start given person_unique.
+    In other words, Proteus had a tendency to chop off multi-word names at the first word.
+    MENE learned this and made it easy to override Proteus in this way.
+    In fact, an analysis of the differences between the Proteus output and the MENE + Proteus output turned up a significant number of instances in which MENE extended or contracted name boundaries in this way.
+    Given proper training data, MENE can pinpoint and selectively correct the weaknesses of a handcoded system.
+  
+  
+    MENE currently has no direct ability to learn compound features or &amp;quot;patterns&amp;quot;&#8212;the &amp;quot;history&amp;quot; side of a lexical feature activates based on only a single word, for instance.
+    A sort of pattern-like abil

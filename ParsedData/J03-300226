@@ -1,0 +1,9 @@
+vely low (but perhaps unreliable) difference percentage (dp).
+    That branch handled around 10% of the document set and was prone to overtraining.
+    (The documents handled by this branch were mostly marked &#8220;bad&#8221; by the judges but appear to have been difficult to classify based on the structural features.)
+    Note that the learned classifiers were substantially different from the heuristic threshold used earlier.
+    Without tuning, the manually set parameters result in good document pairs&#8217; being discarded 31% of the time.
+    Our cross-validation results indicate that tuning the parameters cuts that figure in half: Only 16% of the good pairs will be discarded, at a cost of admitting 4 false positives from every 100 candidate pairs.
+    This approach is quite general and uses only a minimum of language-dependent knowledge.
+    The features we are using are the same for any language pair.
+    The tuning process needs to be done only once per language pair and requires only a few hours of a

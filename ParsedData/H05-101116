@@ -1,0 +1,6 @@
+riginal alignment, subject to pruning).If there are existing links involving word instances also involved in the new link, the two mod 3By association type we mean a possible link between a pair of words, or, in the case of the CLP-based models, a possible one-to-many or many-to-one linkage of words.
+			84 els are treated differently.
+			For the CLP-based model, each association score is for a cluster of words that must be disjoint from any other association cluster, so when we add links for a new cluster, we mustremove any other links involving the same word instances.
+			For the LLR-based model, we can add additional links without removing old ones, but the resulting alignment may be worse due to the degra dation in the one-to-many score.
+			We therefore add both an alignment that keeps all previous links, and an additional set of alignments, each of which omits one of the previous links involving one of the word instances involved in the new link.
+			The other difference in how the two models are treated i

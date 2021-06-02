@@ -1,0 +1,10 @@
+st be specified: the order in which transformations are applied to a corpus, and whether a transformation is applied immediately or only after the entire corpus has been examined for triggering environments.
+    For example, take the sequence:
+  
+  
+    and the transformation: If the effect of the application of a transformation is not written out until the entire file has been processed for that one transformation, then regardless of the order of processing the output will be: ABBBBB, since the triggering environment of a transformation is always checked before that transformation is applied to any surrounding objects in the corpus.
+    If the effect of a transformation is recorded immediately, then processing the string left to right would result in: ABABAB, whereas processing right to left would result in: ABBBBB.
+  
+  
+    The technique employed by the learner is somewhat similar to that used in decision trees (Breiman et al. 1984; Quinlan 1986; Quinlan and Rivest 1989).
+    A decision tree is trained on 

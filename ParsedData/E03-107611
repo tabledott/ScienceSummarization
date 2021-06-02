@@ -1,0 +1,12 @@
+ which is split into vor and aussetzung.
+    The word vor translates to many different prepositions, which frequently occur in English.
+    To exclude these mistakes, we use information about the parts-of-speech of words.
+    We do not want to break up a compound into parts that are prepositions or determiners, but only content words: nouns, adverbs, adjectives, and verbs.
+    To accomplish this, we tag the German corpus with POS tags using the TnT tagger [Brants, 2000].
+    We then obtain statistics on the parts-ofspeech of words in the corpus.
+    This allows us to exclude words based on their POS as possible parts of compounds.
+    We limit possible parts of compounds to words that occur most of the time as one of following POS: ADJA, ADJD, ADV, NN, NE, PTKNEG, VVFIN, VVIMP, VVINF, VVIZU, VVPP, VAFIN, VAIMP, VAINF, VAPP, VMFIN, VMINF, VMPP.
+  
+  
+    The training set for the experiments is a corpus of 650,000 noun phrases and prepositional phrases (NP/PP).
+    For each German NP/PP, we have a English trans

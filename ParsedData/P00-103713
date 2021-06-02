@@ -1,0 +1,8 @@
+ind the substitution parameters that are applicable, given a particular node in the trie and a particular position in the input string s (this corresponds to filling in one cell in one vector of a dictionary trie node) we trace up from the node to the root, while tracing down the trie from the root.
+    As we trace down the trie, if we encounter a terminal node, we follow the pointer to the corresponding trie, and then trace backwards from the position in s while tracing down the trie.
+    Note that searching through a static dictionary D is not a requirement of our error model.
+    It is possible that with a different search technique, we could apply our model to languages such as Turkish for which a static dictionary is inappropriate (Oflazer 1994).
+    Given a 200,000-word dictionary, and using our best error model, we are able to spell check strings not in the dictionary in approximately 50 milliseconds on average, running on a Dell 610 500mhz Pentium III workstation.
+  
+  
+    We ran experiments using a 

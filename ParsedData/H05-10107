@@ -1,0 +1,17 @@
+e of matchings appropriate for the sentence pair i.In standard classification problems, we typi cally measure the error of prediction,
+			(y i , y?
+			i ),using the simple 0-1 loss.
+			In structured prob lems, where we are jointly predicting multiple variables, the loss is often more complex.
+			While the F-measure is a natural loss function for this task, we instead chose a sensible surrogate that fits better in our framework: Hamming distance between y i and y?
+			i , which simply counts the number of edges predicted incorrectly.
+			We use an SVM-like hinge upper bound on the loss
+			(y i , y?
+			i ), given by max ?y i ?Y i [wf i (y? i ) +
+			i (y? i ) ? wf i (y i )], where
+			i (y? i ) =
+			(y i , y?
+			i ), and f i (y? i ) = f(x i , y?
+			i ).
+			Minimizing this upper bound encourages the true alignment y i to be optimal with respect to w for each instance i: min ||w||??
+			i max ?y i ?Y i [wf i (y? i ) +
+			i (y? i )] ? wf i (y i ), where ? is a regularization parameter.In this form, the estimation probl

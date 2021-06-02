@@ -1,0 +1,12 @@
+utes on the 1 million words of the Penn Treebank, and tags slightly faster than TNT.
+    Since the taggers share many common features, one might think they are not different enough for effective co-training to be possible.
+    In fact, both taggers are sufficiently different for co-training to be effective.
+    Section 4 shows that both taggers can benefit significantly from the information contained in the other&#8217;s output.
+    The performance of the taggers on section 00 of the WSJ Penn Treebank is given in Table 1, for different seed set sizes (number of sentences).
+    The seed data is taken from sections 2&#8211;21 of the Treebank.
+    The table shows that the performance of TNT is significantly better than the performance of C&amp;C when the size of the seed data is very small.
+  
+  
+    The co-training framework uses labelled examples from one tagger as additional training data for the other.
+    For the purposes of this paper, a labelled example is a tagged sentence.
+    We chose complete sentence

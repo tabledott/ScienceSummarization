@@ -1,0 +1,9 @@
+each bucket.
+    When a collision occurs, linear probing places the entry to be inserted in the next (higher index) empty bucket, wrapping around as necessary.
+    Therefore, a populated probing hash table consists of an array of buckets that contain either one entry or are empty.
+    Non-empty buckets contain an entry belonging to them or to a preceding bucket where a conflict occurred.
+    Searching a probing hash table consists of hashing the key, indexing the corresponding bucket, and scanning buckets until a matching key is found or an empty bucket is encountered, in which case the key does not exist in the table.
+    Linear probing hash tables must have more buckets than entries, or else an empty bucket will never be found.
+    The ratio of buckets to entries is controlled by space multiplier m &gt; 1.
+    As the name implies, space is O(m) and linear in the number of entries.
+    The fraction of buckets that are empty is m&#8722;1 m , so average lookup time is O( m 1) and, crucially, constant in the nu

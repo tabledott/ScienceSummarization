@@ -1,0 +1,7 @@
+et al. (2007b) describe the basic adaptor grammar inference procedure that we use here.
+    That paper leaves unspecified a number of implementation details, which we show can make a crucial difference to segmentation accuracy.
+    The adaptor grammar algorithm is basically a Gibbs sampler of the kind widely used for nonparametric Bayesian inference (Blei et al., 2004; Goldwater et al., 2006b; Goldwater et al., 2006a), so it seems reasonable to expect that at least some of the details discussed below will be relevant to other applications as well.
+    The inference algorithm maintains a vector t = (ti, ... , tr,,) of sample parses, where tz E TS is a parse for the ith sentence wz.
+    It repeatedly chooses a sentence wz at random and resamples the parse tree tz for wz from P(tz  |t&#8722;z, wz), i.e., conditioned on wz and the parses t&#8722;z of all sentences except wz.
+    Sampling algorithms like ours produce a stream of samples from the posterior distribution over parses of the training data.
+    It is st

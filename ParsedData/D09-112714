@@ -1,0 +1,7 @@
+gyuanjin aligned to &#8220;telescope&#8221;, but we tolerate this case for the following reasons.
+    There is a crucial difference between shift and reduce: in a shift, we do not know yet the subtree spans (unlike in a reduce we are always combining two well-formed subtrees).
+    The only thing we are sure of in a shift action is that st and wi will be combined before st&#8722;1 and st are combined (Aho and Ullman, 1972), so we can tolerate any target word aligned to source word still in the queue, but do not allow any target word aligned to an already recognized source word.
+    This explains the notational difference between cR(st, wi) and c(st&#8722;1, st), where subscript &#8220;R&#8221; means &#8220;right contiguity&#8221;.
+    As a final example, in Figure 3(d), Chinese word kandao aligns to &#8220;saw&#8221;, which is already recognized, and this violates the right contiguity.
+    So cR(st, wi) =&#8722;, suggesting that shift is probably wrong.
+    To be more precise, Table 3 shows the formal definiti

@@ -1,0 +1,7 @@
+P, in our probability model.
+    Our combination of slot plus head word provides similar information (head of argument and its syntactic relation to the verb) to that captured by the features of Gildea and Jurafsky (2002) or Thompson et al. (2003).
+    For our first backoff level, we introduce a novel way to generalize over the verb, slot, and noun information of .
+    Here we use a linear interpolation of three probabilities, each of which: (1) drops one source of conditioning information from the most specific probability, and (2) generalizes a second source of conditioning information to a class-based conditioning event.
+    Specifically, we use the following probability formula: where is slot class, is noun class, is verb class, and the individual probabilities are (currently) equally weighted (i.e., all &#8217;s have a value of ).
+    Note that all three component probabilities make use of the verb or its class information.
+    In , the noun component is dropped, and the slot is generalized to the approp

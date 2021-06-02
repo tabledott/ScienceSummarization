@@ -1,0 +1,6 @@
+  The discounted probability mass at the unigram level was added to the probability of &lt;UNK&gt;.
+    A count cutoff of 2 occurrences was applied to the trigrams and 4-grams in estimating these models.
+    We computed the cross-entropy of each sentence in the Gigaword corpus according to both models, and scored each sentence by the difference in cross-entropy, HEp(s)&#8722;HG,,,(s).
+    We then selected subsets of the Gigaword data corresponding to 8 cutoff points in the cross-entropy difference scores, and trained 4-gram models (again using absolute discounting with a discount of 0.7) on each of these subsets and on the full Gigaword corpus.
+    These language models were estimated without restricting the vocabulary or applying count cutoffs, but the only parameters computed were those needed to determine the perplexity of the held-out Europarl test set, which saves a substantial amount of computation in determining the optimal selection threshold.
+    We compared our selection method to three other method

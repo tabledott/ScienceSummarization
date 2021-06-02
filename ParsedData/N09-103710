@@ -1,0 +1,10 @@
+sed on the tags they have been observed with in the training data.
+    We also augment each word with a distributional similarity tag, which we discuss in greater depth in Section 3, and allow tags seen with other words which belong to the same distributional similarity cluster.
+    When deciding what tags are allowed for each word, we initially ignore named entity information.
+    Once we determine what base tags are allowed for a word, we also allow that tag, augmented with any type of named entity, if the augmented tag is present in the lexicon.
+  
+  
+    We defined features over both the parse rules and the named entities.
+    Most of our features are over one or the other aspects of the structure, but not both.
+    Both the named entity and parsing features utilize the words of the sentence, as well as orthographic and distributional similarity information.
+    For each word we computed a word shape which encoded information about capitalization, length, and inclusion of numbers and other non-alphabetic 

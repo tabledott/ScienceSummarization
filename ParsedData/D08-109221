@@ -1,0 +1,9 @@
+evaluation, we used a syntactic system based on Galley et al. (2004) and Galley et al.
+    (2006), which extracts tree-to-string transducer rules based on target-side trees.
+    We trained the system on 150,000 Chinese-English sentence pairs from the training corpus of Wang et al. (2007), and used a large (close to 5 billion tokens) 4-gram lanwith trees output from either baseline monolingual parsers or our joint parser.
+    To facilitate relative comparison, the Moses (Koehn et al., 2007) number listed reflects the default Moses configuration, including its full distortion model, and standard training pipeline. guage model for decoding.
+    We tuned and evaluated BLEU (Papineni et al., 2001) on separate held-out sets of sentences of up to length 40 from the same corpus.
+    The results are in Table 7, showing that joint parsing yields a BLEU increase of 2.4.9
+  
+  
+    By jointly parsing (and aligning) sentences in a translation pair, it is possible to exploit mutual constraints that improve the quality of s

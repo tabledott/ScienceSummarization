@@ -1,0 +1,12 @@
+a relation example, the one with larger margin will be selected as the final answer.
+    The ACE RDR training data contains 348 documents, 125K words and 4400 relations.
+    It consists of both nwire and bnews documents.
+    Evaluation of kernels was done on the training data using 5-fold cross-validation.
+    We also evaluated the full kernel setup with SVM on the official test data, which is about half the size of the training data.
+    All the data is preprocessed by the Charniak parser and GLARF dependency analyzer.
+    Then relation examples are generated based these results.
+    Table 2 shows the performance of the SVM on different kernel setups.
+    The kernel setups in this experiment are incremental.
+    From this table we can see that adding kernels continuously improves the performance, which indicates they provide additional clues to the previous setup.
+    The argument kernel treats the two arguments as independent entities.
+    The link sequence kernel introduces the syntactic connection between

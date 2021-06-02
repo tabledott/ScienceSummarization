@@ -1,0 +1,5 @@
+ we included the text of all documents above, though of course not looking at either their mention boundaries or reference annotations in any way.
+    We also trained on the following much larger unlabeled datasets utilized in Haghighi and Klein (2009): Mention boundaries were automatically detected as follows: For each noun or pronoun (determined by parser POS tag), we associated a mention with the maximal NP projection of that head or that word itself if no NP can be found.
+    This procedure recovers over 90% of annotated mentions on the A05CU dev set, but also extracts many unannotated &#8220;spurious&#8221; mentions (for instance events, times, dates, or abstract nouns) which are not deemed to be of interest by the ACE annotation conventions.
+    Mention properties were obtained from parse trees using the the Stanford typed dependency extractor (de Marneffe et al., 2006).
+    The mention properties we considered are the mention head (annotated with mention type), the typed modifiers of the head, and the 

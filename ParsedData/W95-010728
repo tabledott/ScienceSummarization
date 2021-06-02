@@ -1,0 +1,8 @@
+by words tagged 0 have their tags changed to 0.
+    In Rule 2, determiners that are preceded by two words both tagged I have their own tag changed to B, marking the beginning of a baseNP that happens to directly follow another.
+    (Since the tag B is only used when baseNPs abut, the baseline system tags determiners as I.)
+    Rule 3 takes words which immediately follow determiners tagged I that in turn follow something tagged 0 and changes their tag to also be I.
+    Rules 4-6 are similar to Rule 2, marking the initial words of baseNPs that directly follow another baseNP.
+    Rule 7 marks conjunctions (with part-of-speech tag CC) as I if they follow an I and precede a noun, since such conjunctions are more likely to be embedded in a single baseNP than to separate two baseNPs, and Rules 8 and 9 do the same.
+    (The word &amp;quot;&amp;&amp;quot; in rule 8 comes mostly from company names in the Wall St. Journal source data.)
+    Finally, Rule 10 picks up cases like &amp;quot;including about four million share

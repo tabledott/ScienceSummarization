@@ -1,0 +1,8 @@
+be equivalently labeled as iteration 0.
+    Thus, the first iteration of EM increases the observed likelihood of the training sentences while simultaneously degrading translation performance on the test set.
+    As training proceeds, performance on the test set levels off after three iterations of EM.
+    The system never achieves the performance of its initialization parameters.
+    The pruning of our training regimen accounts for part of this degradation, but not all; augmenting OEM by adding back in all phrase pairs that were dropped during training does not close the performance gap between OEM and OH.
+    Learning OEM degrades translation quality in large part because EM learns overly determinized segmentations and translation parameters, overfitting the training data and failing to generalize.
+    The primary increase in richness from generative wordlevel models to generative phrase-level models is due to the additional latent segmentation variable.
+    Although we impose a uniform distribution over seg

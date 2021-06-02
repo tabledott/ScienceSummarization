@@ -1,0 +1,9 @@
+ the feature functions.
+    Since Model 1 is a bag-of-word translation model and it gives the sum of all possible alignment probabilities, a lexical co-occurrence effect, or triggering effect, is expected.
+    This captures a sort of topic or semantic coherence in translations.
+    As defined by Brown et al. (1993), Model 1 gives a probability of any given translation pair, which is We used GIZA++ to train the model.
+    The training data is a subset (30 million words on the English side) of the entire corpus that was used to train the baseline MT system.
+    For a missing translation word pair or unknown words, where t(fj|ei) = 0 according to the model, a constant t(fj|ei) = 10&#8722;40 was used as a smoothing value.
+    The average %BLEU score (average of the best four among different 20 search initial points) is 32.5.
+    We also tried p(e|f; M1) as feature function, but did not obtain improvements which might be due to an overlap with the word selection feature in the baseline system.
+    The Model 1 scor

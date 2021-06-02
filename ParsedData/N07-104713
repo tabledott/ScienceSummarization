@@ -1,0 +1,12 @@
+k based on its context.
+    Table 1 shows an example of how chunking prediction proceeds for the word longs.
+    Letters li&#8722;2, li&#8722;1, li+1, and li+2 are the context of the bigram li; chunk = 1 if the letter bigram li is a chunk.
+    Otherwise, the chunk simply consists of an individual letter.
+    In the example, the word is decomposed as l|o|ng|s, which can be aligned with its pronunciation [ l  |6  |N  |z ].
+    If the model happens to predict consecutive overlapping chunks, only the first of the two is accepted.
+  
+  
+    Most of the previously proposed techniques for phoneme prediction require training data to be aligned in one-to-one alignments.
+    Those models approach the phoneme prediction task as a classification problem: a phoneme is predicted for each letter independently without using other predictions from the same word.
+    These local predictions assume independence of predictions, even though there are clearly interdependencies between predictions.
+    Predicting each phoneme in a 

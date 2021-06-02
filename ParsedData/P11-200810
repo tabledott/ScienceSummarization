@@ -1,0 +1,8 @@
+n training data is limited, distributional features from unlabeled text can improve performance (Sch&#168;utze and Pedersen, 1993).
+    We used 1.9 million tokens from 134,000 unlabeled tweets to construct distributional features from the successor and predecessor probabilities for the 10,000 most common terms.
+    The successor and predecessor transition matrices are horizontally concatenated into a sparse matrix M, which we approximate using a truncated singular value decomposition: M Pz&#65533; USVT, where U is limited to 50 columns.
+    Each term&#8217;s feature vector is its row in U; following Turian et al. (2010), we standardize and scale the standard deviation to 0.1.
+    METAPH: Phonetic normalization.
+    Since Twitter includes many alternate spellings of words, we used the Metaphone algorithm (Philips, 1990)9 to create a coarse phonetic normalization of words to simpler keys.
+    Metaphone consists of 19 rules that rewrite consonants and delete vowels.
+    For example, in our probability of capital

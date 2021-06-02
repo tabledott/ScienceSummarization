@@ -1,0 +1,8 @@
+ the following extraction algorithm: We check whether a candidate relation phrase r&#8222; satisfies the syntactic constraint by matching it against the regular expression in Figure 1.
+    To determine whether r&#8222; satisfies the lexical constraint, we use a large dictionary D of relation phrases that are known to take many distinct arguments.
+    In an offline step, we construct D by finding all matches of the POS pattern in a corpus of 500 million Web sentences.
+    For each matching relation phrase, we heuristically identify its arguments (as in Step 2 above).
+    We set D to be the set of all relation phrases that take at least k distinct argument pairs in the set of extractions.
+    In order to allow for minor variations in relation phrases, we normalize each relation phrase by removing inflection, auxiliary verbs, adjectives, and adverbs.
+    Based on experiments on a held-out set of sentences, we found that a value of k = 20 works well for filtering out overspecified relations.
+    This results in a

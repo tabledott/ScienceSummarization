@@ -1,0 +1,9 @@
+ately.
+    The calculation of IDF was based on a set of 553 Switchboard dialogues.
+    For every word, we calculated IDF as log(553/N ), with N =number of documents containing the word.
+    For every non-NP-markable, an average TF*IDF value was calculated as the TF*IDF sum of all words comprising the markable, divided by the number of words in the markable.
+    The feature ante ic (24) as an alternative to ante tfidf is based on the same assumptions as the former.
+    The information content of a non-NP-markable is calculated as follows, based on a set of 553 Switchboard dialogues: For each word in the markable, the IC value was calculated as the negative log of the total frequency of the word divided by the total number of words in all 553 dialogues.
+    The average IC value was then calculated as the IC sum of all words in the markable, divided by the number of words in the markable.
+    Finally, the feature wdist ic (25) measures the word-based distance between two expressions.
+    It does so in terms of t

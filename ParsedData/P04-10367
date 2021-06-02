@@ -1,0 +1,9 @@
+urn and obtain a score reflecting the prevalence which is used for ranking.
+    Let be the ordered set of the top scoring neighbours of from the thesaurus with associated distributional similarity scores The thesaurus was acquired using the method described by Lin (1998).
+    For input we used grammatical relation data extracted using an automatic where: .
+    Let be the set of senses of .
+    For each sense of ( ) we obtain a ranking score by summing over the of each neighbour ( ) multiplied by a weight.
+    This weight is the WordNet similarity score ( ) between the target sense ( ) and the sense of ( ) that maximises this score, divided by the sum of all such WordNet similarity scores for and .
+    Thus we rank each sense using: parser (Briscoe and Carroll, 2002).
+    For the experiments in sections 3 and 4 we used the 90 million words of written English from the BNC.
+    For each noun we considered the co-occurring verbs in the direct object and subject relation, the modifying nouns in noun-noun relations

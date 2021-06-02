@@ -1,0 +1,11 @@
+p;quot; variables).
+    The two regressions for understanding and writing show very similar results.
+    Normalized understanding was best modeled as: Normalized understanding = 1.4728*simple tree accuracy - 0.1015*substitutions 0.0228 * length - 0.2127.
+    This model was significant: F(3,19) = 6.62, p &lt; 0.005.
+    The model is plotted in Figure 3. with the data point representing the removed outlier at the top of the diagram.
+    This model is also intuitively plausible.
+    The simple tree metric was designed to measure the quality of a sentence and it has a positive coefficient.
+    A substitution represents a case in the string metrics in which not only a word is in the wrong place, but the word that should have been in that place is somewhere else.
+    Therefore, substitutions,..more than moves or insertions or deletions, represent grave cases of word order anomalies.
+    Thus, it is plausible to penalize them separately.
+    (Note that the simple tree accuracy is bounded by 1, while the number of su

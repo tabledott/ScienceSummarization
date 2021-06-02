@@ -1,0 +1,8 @@
+alignment because it may be better suited to heuristic phraseextraction than word-based models.
+    This section describes how to use our phrasal ITG first as a translation model, and then as a phrasal aligner.
+    We can test our model&#8217;s utility for translation by transforming its parameters into a phrase table for the phrasal decoder Pharaoh (Koehn et al., 2003).
+    Any joint model can produce the necessary conditional probabilities by conditionalizing the joint table in both directions.
+    We use our p(&#175;e/ &#175;f|C) distribution from our stochastic grammar to produce p(&#175;e |&#175;f) and p(&#175;f|&#175;e) values for its phrasal lexicon.
+    Pharaoh also includes lexical weighting parameters that are derived from the alignments used to induce its phrase pairs (Koehn et al., 2003).
+    Using the phrasal ITG as a direct translation model, we do not produce alignments for individual sentence pairs.
+    Instead, we provide a lexical preference with an IBM Model 1 feature pM1 that penalizes unm

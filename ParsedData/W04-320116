@@ -1,0 +1,10 @@
+ed as max&#181;EAm Qm(&#181;).
+    Fortunately, in case of PCFGs, the domain &#916;m can be described compactly with a polynomial number of linear constraints.
+    Essentially, we need to enforce the condition that the expected proportions of parses having particular parts should be consistent with each other.
+    Our marginals track constituent parts hA, s, e, ii and CF-rule-tuple parts hA &#8594; B C, s, m, e, ii The consistency constraints are precisely the insideoutside probability relations: where ni is the length of the sentence.
+    In addition, we must ensure non-negativity and normalization to 1: &#181;i,r &#8805; 0; X &#181;i,A,0,ni = 1.
+    A The number of variables in our factored dual for CFGs is cubic in the length of the sentence, while the number of constraints is quadratic.
+    This polynomial size formulation should be contrasted with the earlier formulation in Collins (2004), which has an exponential number of constraints.
+  
+  
+    We have reduced the problem to a polynomial size QP, which

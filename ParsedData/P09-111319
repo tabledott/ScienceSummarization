@@ -1,0 +1,7 @@
+se.
+    Precision for three different feature sets (lexical features, syntactic features, and both) is reported at recall levels from 10 to 100,000.
+    At the 100,000 recall level, we classify most of the instances into three relations: 60% as location-contains, 13% as person-place-of-birth, and 10% as person-nationality. are in fact related but are wrongly omitted from the Freebase data, we expect that on average these false negatives will have a small effect on the performance of the classifier.
+    For performance reasons, we randomly sample 1% of such entity pairs for use as negative training examples.
+    By contrast, in the actual test data, 98.7% of the entity pairs we extract do not possess any of the top 102 relations we consider in Freebase.
+    We use a multi-class logistic classifier optimized using L-BFGS with Gaussian regularization.
+    Our classifier takes as input an entity pair and a feature vector, and returns a relation name and a confidence score based on the probability of the entity pa

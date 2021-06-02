@@ -1,0 +1,9 @@
+ was found to be significantly better than the word-based approach, at the level of significance 0.01.
+    Assuming a one-at-a-time processing architecture, Chinese POS tagging using a character-based approach gives higher accuracy compared to a word-based approach.
+  
+  
+    Encouraged by the success of character features, we next explored whether a change in processing architecture, from one-at-a-time to all-at-once, while still retaining the use of character features, could give further improvement to POS tagging accuracy.
+    In this approach, both word segmentation and POS tagging will be performed in a combined, single step simultaneously.
+    Each character is assigned both a boundary tag and a POS tag, for example &#8220;b_NN&#8221; (i.e., the first character in a word with POS tag NN).
+    Thus, given 4 possible boundary tags and 32 unique POS tags present in the training corpus, each character can potentially be assigned one of (4&#215;32) classes.
+    The features we used are identical to those emp

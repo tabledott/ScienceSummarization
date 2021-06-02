@@ -1,0 +1,11 @@
+not be modeled well by these TMs.
+    To incorporate structural aspects of the language, our channel model accepts a parse tree as an input, i.e., the input sentence is preprocessed by a syntactic parser.
+    The channel performs operations on each node of the parse tree.
+    The operations are reordering child nodes, inserting extra words at each node, and translating leaf words.
+    Figure 1 shows the overview of the operations of our model.
+    Note that the output of our model is a string, not a parse tree.
+    Therefore, parsing is only needed on the channel input side.
+    The reorder operation is intended to model translation between languages with different word orders, such as SVO-languages (English or Chinese) and SOV-languages (Japanese or Turkish).
+    The word-insertion operation is intended to capture linguistic differences in specifying syntactic cases.
+    E.g., English and French use structural position to specify case, while Japanese and Korean use case-marker particles.
+    Wang (1998) enha

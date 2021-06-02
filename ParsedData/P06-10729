@@ -1,0 +1,9 @@
+onstraints on the entropy of the model, we manipulate bias toward local hypotheses.
+    As &#948; increases, we penalize long dependencies less.
+    We call this structural annealing, since we are varying the strength of a soft constraint (bias) on structural hypotheses.
+    In structural annealing, the final objective would be the same as EM if our final &#948;, &#948;f = 0, but we found that annealing farther (&#948;f &gt; 0) works much better.4 Experiment: Annealing &#948;.
+    We experimented with annealing schedules for &#948;.
+    We initialized at &#948;0 E {&#8722;1, &#8722;0.4, &#8722;0.21, and increased &#948; by 0.1 (in the first case) or 0.05 (in the others) up to &#948;f = 3.
+    Models were trained to convergence at each &#948;epoch.
+    Model selection was applied over the same initialization and regularization conditions as before, &#948;0, and also over the choice of &#948;f, with stopping allowed at any stage along the &#948; trajectory.
+    Trajectories for three languages with three differ

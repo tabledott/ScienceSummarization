@@ -1,0 +1,7 @@
+gn program is based on a very simple statistical model of character lengths.
+    The model makes use of the fact that longer sentences in one language tend to be translated into longer sentences in the other language, and that shorter sentences tend to be translated into shorter sentences.
+    A probabilistic score is assigned to each pair of proposed sentence pairs, based on the ratio of lengths of the two sentences (in characters) and the variance of this ratio.
+    This probabilistic score is used in a dynamic programming framework in order to find the maximum likelihood alignment of sentences.
+    It is remarkable that such a simple approach can work as well as it does.
+    An evaluation was performed based on a trilingual corpus of 15 economic reports issued by the Union Bank of Switzerland (UBS) in English, French and German (N = 14,680 words, 725 sentences, and 188 paragraphs in English and corresponding numbers in the other two languages).
+    The method correctly aligned all but 4% of the sentences.

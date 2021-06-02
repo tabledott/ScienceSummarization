@@ -1,0 +1,12 @@
+ce or phrase-level combination.
+    The system weights seem to yield even higher BLEU scores but not always lower TER scores on both languages.
+    Despite slightly hurting the TER score on Arabic, the TER 8 combination result was considered the best due to the highest BLEU and significantly lower TER compared to any single system.
+    Similarly, the BLEU 8 was considered the best combination result on Chinese.
+    Internal HTER experiments showed that BLEU 8 yielded lower scores after post-editing even though no weights 6 had lower automatic TER score.
+  
+  
+    Three methods for machine translation system combination were presented in this paper.
+    The sentencelevel combination was based on re-ranking a merged -best list using generalized linear models with features derived from each system&#8217;s output.
+    The combination yields slight gains on the tuning set.
+    However, the gains were very small, if any, on the test sets.
+    The re-ranked -best lists were used successfully in the word-level combin

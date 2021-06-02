@@ -1,0 +1,11 @@
+ only terminals into account.
+    If there are no terminals, we set the feature value to 1.
+    We use lex(&#183;) to denote lexical weighting.
+    We denote the number of TATs used for decoding by K and the length of target string by L
+  
+  
+    To extract tree-to-string alignment templates from a word-aligned, source side parsed sentence pair hT (fJ1 ), eI1, Ai, we need first identify TSAs (TreeString-Alignment) using similar criterion as suggested in (Och and Ney, 2004).
+    A TSA is a triple Usually, we can extract a very large amount of TATs from training data using the above rules, making both training and decoding very slow.
+    Therefore, we impose three restrictions to reduce the magnitude of extracted TATs: This constraint requires that both the first and last symbols in the target string must be aligned to some source symbols.
+    Table 1 shows the TATs extracted from the TSA in Figure 3 with h = 2 and c = 2.
+    As we restrict that T(fj2 j1 ) must be a subtree of T(fJ1 ), TATs may be treated as sy

@@ -1,0 +1,11 @@
+ the given sentence by parsing it using the Charniak parser.
+    Then, in Step 1, we classified candidate constituents of frame elements from non-candidates.
+    In Step 2, each selected candidate was thus classified into one of frame element types (e.g.
+    Stimulus, Degree, Experiencer, etc.).
+    As a learning algorithm for our classification model, we used Maximum Entropy (Berger et al., 1996).
+    For system development, we used MEGA model optimization package6, an implementation of ME models.
+    Data: We collected 8256 and 11877 sentences which were associated to opinion bearing frames for verbs and adjectives from FrameNet annotation data.
+    Each sentence in our dataset contained a frame name, a target predicate (a word whose meaning represents aspects of the frame), and frame elements labeled with element types.
+    We divided the data into 90% for training and 10% for test.
+    Features used: Table 2 describes features that we used for our classification model.
+    The target word is an opinion-be

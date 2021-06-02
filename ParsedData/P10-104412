@@ -1,0 +1,7 @@
+ative, we first propose JointLDA, whose graphical model is depicted in Figure 1.
+    The key difference in JointLDA (versus LDA) is that instead of one, it maintains two sets of topics (latent distributions over words) denoted by Q and -y, one for classes of each argument.
+    A topic id k represents a pair of topics, Qk and -yk, that co-occur in the arguments of extracted relations.
+    Common examples include (Person, Location), (Politician, Political issue), etc.
+    The hidden variable z = k indicates that the noun phrase for the first argument was drawn from the multinomial Qk, and that the second argument was drawn from -yk.
+    The per-relation distribution 0r is a multinomial over the topic ids and represents the selectional preferences, both for arg1s and arg2s of a relation r. Although JointLDA has many desirable properties, it has some drawbacks as well.
+    Most notably, in JointLDA topics correspond to pairs of multinomials (Qk, -yk); this leads to a situation in which multiple redundant distribu

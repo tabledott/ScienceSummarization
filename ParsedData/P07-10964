@@ -1,0 +1,10 @@
+ sentence Agatha found that book interesting w1 w2 w3 w4 w5 (Step 0) If we scan from left to right, we may find it difficult to resolve the ambiguity of the label for that, which could be either DT (determiner), or IN (preposition or subordinating conjunction) in the Penn Treebank.
+    However, if we resolve the labels for book and interesting, it would be relatively easy to figure out the correct label for that.
+    Now, we show how bidirectional inference works on this sample.
+    Suppose we use beam search with width of 2, and we use a window of (-2, 2) for context features.
+    For the first step, we enumerate hypotheses for each word.
+    For example, found could have a label VBN or VBD.
+    Suppose that at this point the most favorable action, out of the candidate hypotheses, is the assignment of NN to book, according to the context features defined on words.
+    Then, we resolve the label for book first.
+    We maintain the top two hypotheses as shown below.
+    Here, the second most favorable label fo

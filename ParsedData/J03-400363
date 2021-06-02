@@ -1,0 +1,6 @@
+ Penn Treebank.
+    (See Figure 20 for examples.)
+    Ideally these cases should be differentiated too: We did not implement this change because it is unlikely to make much difference in accuracy, given the relative infrequency of these cases (excluding coordination cases, and looking at the 80,254 instances in sections 2&#8211;21 of the Penn Treebank in which a parent and head nonterminal are the same: 94.5% are the NP case; 2.6% are cases of coordination in which a punctuation mark is the coordinator;18 only 2.9% are similar to those in Figure 20).
+    The parsing approaches we have described concentrate on breaking down context-free rules in the treebank into smaller components.
+    Lexicalized rules were initially broken down to bare-bones Markov processes, then increased dependency on previously generated modifiers was built back up through the distance measure and subcategorization.
+    Even with this additional context, the models are still able to recover rules in test data that have never been seen i

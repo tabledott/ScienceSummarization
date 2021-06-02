@@ -1,0 +1,7 @@
+the order listed, so that in the case of non-disjoint feature-classes, such as containsDigitAndAlpha and containsDigitAndDash, the former will take precedence.
+    The first eight features arise from the need to distinguish and annotate monetary amounts, percentages, times and dates.
+    The rest of the features distinguish types of capitalization and all other words (such as punctuation marks, which are separate tokens).
+    In particular, the f irstWord feature arises from the fact that if a word is capitalized and is the first word of the sentence, we have no good information as to why it is capitalized (but note that allCaps and capPeriod are computed before f irstWord, and therefore take precedence).
+    The word feature is the one part of this model which is language-dependent.
+    Fortunately, the word have a most accurate, most powerful model, which will &amp;quot;back off' to a less-powerful model when there is insufficient training, and ultimately back-off to unigram probabilities.
+    In order to g

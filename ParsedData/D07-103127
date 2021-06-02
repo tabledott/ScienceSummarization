@@ -1,0 +1,8 @@
+infinite HMM of Beal et al.
+			(2002) and Teh et al (2006).
+			EM already performs well in terms of the many-to-1 accuracy, but we wondered if there might be some way to improve its 1-to-1 accuracy and VI score.
+			In section 3 we suggested that one reason for its poorperformance in these evaluations is that the distri butions of hidden states it finds tend to be fairly flat, compared to the empirical distribution of POS tags.
+			As section 4 showed, a suitable Bayesian priorcan bias the estimator towards more peaked distribu tions, but we wondered if there might be a simpler way of achieving the same result.
+			We experimented with dramatic reductions in the number of hidden states in the HMMs estimated by EM.
+			This should force the hidden states to bemore densely populated and improve 1-to-1 accu racy, even though this means that there will be nohidden states that can possibly map onto the less fre quent POS tags (i.e., we will get these words wrong).
+			In effect, we abandon the low-frequency POS tags in

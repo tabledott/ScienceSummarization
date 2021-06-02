@@ -1,0 +1,18 @@
+re 7 shows how to build and use a rudimentary MTSMT system, starting from some multitext and one or more monolingual treebanks.
+    The recipe follows: T1.
+    Induce a word-to-word translation model.
+    T2.
+    Induce PCFGs from the relative frequencies of productions in the monolingual treebanks.
+    T3.
+    Synchronize some multitext, e.g. using the approximations in Section 5.
+    T4.
+    Induce an initial PMTG from the relative frequencies of productions in the multitreebank.
+    T5.
+    Re-estimate the PMTG parameters, using a synchronous parser with the expectation semiring.
+    A1.
+    Use the PMTG to infer the most probable multitree covering new input text.
+    A2.
+    Linearize the output dimensions of the multitree.
+    Steps T2, T4 and A2 are trivial.
+    Steps T1, T3, T5, and A1 are instances of the generalized parsers described in this paper. complexity and generalization error stand in the way of its practical implementation.
+    Nevertheless, it is satisfying to note that all the non-trivial

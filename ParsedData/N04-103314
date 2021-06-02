@@ -1,0 +1,10 @@
+he nonmonotone search cannot generate a sentence pair.
+    This happens if a sentence pair contains a word that occurs only once in the training corpus.
+    All phrases that might produce this singleton are excluded because of the leaving-one-out principle.
+    Note that all these monotonicity consideration are done at the phrase level.
+    Within the phrases arbitrary reorderings are allowed.
+    The only restriction is that they occur in the training corpus.
+    Table 4 shows the percentage of the training corpus that can be generated with monotone and nonmonotone phrase-based search.
+    The number of sentence pairs that can be produced with the nonmonotone search gives an estimate of the upper bound for the sentence error rate of the phrase-based system that is trained on the given data.
+    The same considerations hold for the monotone search.
+    The maximum source phrase length for the Verbmobil task and the Xerox task is 12, whereas for the Canadian Hansards task we use a maximum of 4, because of the 

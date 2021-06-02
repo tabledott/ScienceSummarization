@@ -1,0 +1,9 @@
+revailing polarity of the data.
+    For NEG(1), we first determine the majority polarity vote as above, and then if the expression contains any function-word negator, flip the polarity of the majority vote once.
+    NEG(N) is similar to NEG(1), except we flip the polarity of the majority vote n times after the majority vote, where n is the number of function-word negators in a given expression.
+    NEGEX(1) and NEGEX(N) are defined similarly as NEG(1) and NEG(N) above, except both functionword negators and content-word negators are considered as negators when flipping the polarity of the majority vote.
+    See Table 1 for summary.
+    Note that a word can be both a negator and have a negative prior polarity.
+    For the purpose of voting, if a word is defined as a negator per the voting scheme, then that word does not participate in the majority vote.
+    For brevity, we refer to NEG(1) and NEG(N) collectively as NEG, and NEGEX(1) and NEGEX(N) collectively as NEGEX.
+    Whereas the heuristics above use voting

@@ -1,0 +1,13 @@
+m.
+			Figure 4 describes the algorithm in which we use the same notations as those in EM-NBC-Ensemble.
+			The idf value of a Chinese word c is calculated in advance and as )/)(log()( Fcdfcidf ?= (6) where )cdf( denotes the document frequency of c and F the total document frequency.
+			Input: e~ , C~ , contexts containing e~ , contexts containing all Cc ~~ ? , Cc),cidf( ? ; 1.
+			create a frequency vector )),(,),(),(( 21 mefefef L ),,1(, miEei L=?
+			using contexts containing e~ ; transforming the vector into 21 )),c(f,),c(f),c(f( nEEE L ),,1(, niCci L=?
+			, using a translation dictionary and the EM algorithm; create a TF-IDF vector 11 )),cidf())c(f,),cidf()c(f( nnEE L=A ),,1(, niCci L=?
+			2.
+			for each ( Cc ~~ ? ){ create a frequency vector )),(,),(),(( 21 ncfcfcf L ),,1(, niCci L=?
+			using contexts containing c~ ; create a TF-IDF vector 11 ))cidf())c(f,),cidf()c(f( nnL=B ),,1(, niCc i L=?
+			; calculate ),cos()c~tfidf( BA= ; } 3.
+			Sort Cc ~~ ? in descending order of )c~tfidf( ;.
+			Output: the top sort

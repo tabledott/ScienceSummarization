@@ -1,0 +1,7 @@
+ecords the lexical score of the token-sequence gap 1 to the left of i until the score for 1 &#8212; 1 is smaller than the score for 1 (meaning the top of the peak was found at 1).
+    Similarly, for token sequences to the right of i, the program monitors the score of token-sequence r until the score for r + 1 is less than that of r. Finally, score(r) &#8212; score(i) is added to score(1) &#8212; score(i), and the result is the depth score at i.
+    A potential problem with this scoring method is illustrated in Figure 4(b).
+    Here we see a small valley at gap b4 that can be said to &amp;quot;interrupt&amp;quot; the score for b2.
+    As one safeguard, the algorithm uses smoothing (described below) to help eliminate small perturbations of the kind seen at 174.
+    Additionally, because the distance between Yb3 and yb4 is small in these kinds of cases, this gap is less likely to be marked as a boundary than gaps like b2, which have large peak distances both to the left and the right.
+    This example illustrate

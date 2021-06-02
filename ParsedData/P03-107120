@@ -1,0 +1,6 @@
+ibutions are normalized to form two probability distributions l and r, and significant changes of speakership are detected by computing their Jensen-Shannon divergence: where D(l||r) is the KL-divergence between the two distributions.
+    Lexical cohesion: we also incorporated the lexical cohesion function computed by LCseg as a feature of the multi-source segmenter in a manner similar to the knowledge source combination performed by (Beeferman et al., 1999) and (T&#168;ur et al., 2001).
+    Note that we use both the posterior estimate computed by LCseg and the raw lexical cohesion function as features of the system.
+    For every potential boundary BZ, the classifier analyzes features in a window surrounding BZ to decide whether it is a topic boundary or not.
+    It is generally unclear what is the optimal window size and how features should be analyzed.
+    Windows of various sizes can lead to different levels of prediction, and in some cases, it might be more appropriate to only extract features preceding 

@@ -1,0 +1,9 @@
+ngs to {positive, negative, neutral}, G is the tweet graph, N(d) is a specific assignment of sentiment labels to all immediate neighbors of the tweet, and r is the content of the tweet.
+    We can convert the output scores of a tweet by the subjectivity and polarity classifiers into probabilistic form and use them to approximate p(c |r).
+    Then a relaxation labeling algorithm described in (Angelova and Weikum, 2006) can be used on the graph to iteratively estimate p(c|r,G) for all tweets.
+    After the iteration ends, for any tweet in the graph, the sentiment label that has the maximum p(c |r,G) is considered the final label.
+  
+  
+    Because there is no annotated tweet corpus publicly available for evaluation of target-dependent Twitter sentiment classification, we have to create our own.
+    Since people are most interested in sentiments towards celebrities, companies and products, we selected 5 popular queries of these kinds: {Obama, Google, iPad, Lakers, Lady Gaga}.
+    For each of those queries, we do

@@ -1,0 +1,7 @@
+fied n-gram precision instead of WER&#8217;s more strict string edit distance.
+    Bleu&#8217;s n-gram precision is modified to eliminate repetitions that occur across sentences.
+    For example, even though the bigram &#8220;to Miami&#8221; is repeated across all four reference translations in Table 1, it is counted only once in a hypothesis translation.
+    Table 2 shows the n-gram sets created from the reference translations.
+    Papineni et al. (2002) calculate their modified precision score, pn, for each n-gram length by summing over the matches for every hypothesis sentence S in the complete corpus C as: Counting punctuation marks as separate tokens, the hypothesis translation given in Table 1 has 15 unigram matches, 10 bigram matches, 5 trigram matches (these are shown in bold in Table 2), and three 4-gram matches (not shown).
+    The hypothesis translation contains a total of 18 unigrams, 17 bigrams, 16 trigrams, and 15 4-grams.
+    If the complete corpus consisted of this single sentence peared, as, 

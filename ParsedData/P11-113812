@@ -1,0 +1,7 @@
+e consider only the expressions marked as named entities by the NER tagger, the noun-phrase chunks extracted by the shallow parser, and all sub-expressions of up to 5 tokens of the noun-phrase chunks.
+    To retrieve the disambiguation candidates Ti for a given mention mi in Step 2 of the algorithm, we query the anchor-title index.
+    Ti is taken to be the set of titles most frequently linked to with anchor text mi in Wikipedia.
+    For computational efficiency, we utilize only the top 20 most frequent target pages for the anchor text; the accuracy impact of this optimization is analyzed in Section 6.
+    From the anchor-title index, we compute two local features Oi(m, t).
+    The first, P(tIm), is the fraction of times the title t is the target page for an anchor text m. This single feature is a very reliable indicator of the correct disambiguation (Fader et al., 2009), and we use it as a baseline in our experiments.
+    The second, P(t), gives the fraction of all Wikipedia articles that link to t. local fe

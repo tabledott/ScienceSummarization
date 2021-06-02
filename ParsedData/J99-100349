@@ -1,0 +1,10 @@
+ed between aligned blocks.
+    It is highly likely that at least some of these segments are mutual translations, despite SIMR's failure to find any points of correspondence between them.
+    Therefore, GSA treats all sandwiched empty blocks as aligned blocks.
+    If an empty block is not 1x1, GSA realigns it using Gale and Church's length-based algorithm, just as it would realign any other many-to-many aligned block.
+    The most problematic cases involve an error of omission adjacent to an error of commission, as in blocks (0, (h)) and ((LK), (i)).
+    If the point in cell (J,i) should really be in cell (J,h), then realignment inside the erroneous blocks would not solve the problem.
+    A naive solution is to merge these blocks and then to realign them using a length-based method.
+    Unfortunately, this kind of alignment pattern, i.e., Ox 1 followed by 2 x 1, is surprisingly often correct.
+    Length-based methods assign low probabilities to such pattern sequences and usually get them wrong.
+    Therefore, 

@@ -1,0 +1,11 @@
+ = 0.5, which gave relatively good performance on all tasks.
+  
+  
+    We experimented with prototype-driven learning in three domains: English and Chinese part-of-speech tagging and classified advertisement field segmentation.
+    At inference time, we used maximum posterior decoding,2 which we found to be uniformly but slightly superior to Viterbi decoding.
+    For our English part-of-speech tagging experiments, we used the WSJ portion of the English Penn treebank (Marcus et al., 1994).
+    We took our data to be either the first 48K tokens (2000 sentences) or 193K tokens (8000 sentences) starting from section 2.
+    We used a trigram tagger of the model form outlined in section 4.1 with the same set of spelling features reported in Smith and Eisner (2005): exact word type, character suffixes of length up to 3, initial-capital, contains-hyphen, and contains-digit.
+    Our only edge features were tag trigrams.
+    With just these features (our baseline BASE) the problem is symmetric in the 45 model labels.
+ 

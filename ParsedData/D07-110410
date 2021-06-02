@@ -1,0 +1,7 @@
+ge text is actually acollection of relatively short sentences, and that col located patterns must occur in the same sentence in order to be considered a rule.
+			Therefore, we can use the sentence id of each subpattern occurrence as a kind of hash key.
+			We create a hash table whosesize is exactly the number of sentences in our train ing corpus.
+			Each location of the partially matched pattern w1X...Xwi is inserted into the hash bucket with the matching sentence id. To find collocated patterns wi+1, we probe the hash table with each of the ni+1 locations for that subpattern.
+			When amatch is found, we compare the element with all el ements in the bucket to see if it is within the windowimposed by the phrase length constraints.
+			Theoreti cally, the worst case for this algorithm occurs when all elements of both sets resolve to the same hash bucket, and we must compare all elements of one set with all elements of the other set.
+			This leads to a worst case complexity of O( ?I i=1 [|wi|+ log|T |] +?Ii=1 ni)

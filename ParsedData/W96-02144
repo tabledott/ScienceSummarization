@@ -1,0 +1,10 @@
+ DOP model itself is extremely simple and can be described as follows: for every sentence in a parsed training corpus, extract every subtree.
+    In general, the number of subtrees will be very large, typically exponential in sentence length.
+    Now, use these trees to form a Stochastic Tree Substitution Grammar (STSG).
+    There are two ways to define a STSG: either as a Stochastic Tree Adjoining Grammar (Schabes, 1992) restricted to substitution operations, or as an extended PCFG in which entire trees may occur on the right hand side, instead of just strings of terminals and nonterminals.
+    Given the tree of Figure 1, we can use the DOP model to convert it into the STSG of Figure 2.
+    The numbers in parentheses represent the probabilities.
+    These trees can be combined in various ways to parse sentences.
+    In theory, the DOP model has several advantages over other models.
+    Unlike a PCFG, the use of trees allows capturing large contexts, making the model more sensitive.
+    Since every subtree is

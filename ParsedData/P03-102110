@@ -1,0 +1,12 @@
+escribe a new algorithm for efficient line optimization of the unsmoothed error count (Eq.
+    5) using a log-linear model (Eq.
+    3) which is guaranteed to find the optimal solution.
+    The new algorithm is much faster and more stable than the grid-based line optimization method.
+    Computing the most probable sentence out of a set of candidate translation (see Eq.
+    6) along a line with parameter results in an optimization problem of the following functional form: Here, and are constants with respect to .
+    Hence, every candidate translation in corresponds to a line.
+    The function is piecewise linear (Papineni, 1999).
+    This allows us to compute an efficient exhaustive representation of that function.
+    In the following, we sketch the new algorithm to optimize Eq.
+    5: We compute the ordered sequence of linear intervals constituting for every sentence together with the incremental change in error count from the previous to the next interval.
+    Hence, we obtain for every sentence a sequence

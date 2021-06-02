@@ -1,0 +1,11 @@
+ithm described in Section 2.3.1.
+  
+  
+    In this section, we will study how to combine and strike a proper balance between these criteria, viz. informativeness, representativeness and diversity, to reach the maximum effectiveness on NER active learning.
+    We build two strategies to combine the measures proposed above.
+    These strategies are based on the varying priorities of the criteria and the varying degrees to satisfy the criteria. most informativeness score from NESet to an intermediate set called INTERSet.
+    By this preselecting, we make the selection process faster in the later steps since the size of INTERSet is much smaller than that of NESet.
+    Then we cluster the examples in INTERSet and choose the centroid of each cluster into a batch called BatchSet.
+    The centroid of a cluster is the most representative example in that cluster since it has the largest density.
+    Furthermore, the examples in different clusters may be considered diverse to each other.
+    By this means, we consider r

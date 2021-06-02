@@ -1,0 +1,5 @@
+ more training sentences produce both a longer rule sequence and a larger error reduction in the test data.
+    Upon inspection of the English segmentation errors produced by both the maximum matching algorithm and the learned transformation sequences, one major category of errors became clear.
+    Most apparent was the fact that the limited context transformations were unable to recover from many errors introduced by the naive maximum matching algorithm.
+    For example, because the greedy algorithm always looks for the longest string of characters which can be a word, given the character sequence &amp;quot;economicsituation&amp;quot; , the greedy algorithm first recognized &amp;quot;economics&amp;quot; and several shorter words, segmenting the sequence as &amp;quot;economics it u at io n&amp;quot;.
+    Since our transformations consider only a single character of context, the learning algorithm was unable to patch the smaller segments back together to produce the desired output &amp;quot;economic situation&

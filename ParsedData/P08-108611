@@ -1,0 +1,7 @@
+ training on large corpora, even the modified exchange algorithm would still require several days if not weeks of CPU time for a sufficient number of iterations.
+    To overcome this we introduce a novel distributed exchange algorithm, based on the modified exchange algorithm described in the previous section.
+    The vocabulary is randomly partitioned into sets of roughly equal size.
+    With each word w in one of these sets, all words v preceding w in the corpus are stored with the respective bigram count N(v, w).
+    The clusterings generated in each iteration as well as the initial clustering are stored as the set of words in each cluster, the total number of occurrences of each cluster in the training corpus, and the list of words preceeding each cluster.
+    For each word w in the predecessor list of a given cluster c, the number of times w occurs in the training corpus before any word in c, N(w, c), is also stored.
+    Together with the counts stored with the vocabulary partitions, this allows for effi

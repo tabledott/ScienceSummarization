@@ -1,0 +1,6 @@
+he sentence to the category for which the average is higher (we call this approach the &#8220;score&#8221; variant).
+    Alternatively, for the &#8220;frequency&#8221; variant, we do not use the similarity scores themselves but instead we count how many of them, for each category, exceed a predetermined threshold (empirically set to 0.65).
+    Our second method trains a Naive Bayes classifier (see Section 3), using the sentences in opinion and fact documents as the examples of the two categories.
+    The features include words, bigrams, and trigrams, as well as the parts of speech in each sentence.
+    In addition, the presence of semantically oriented (positive and negative) words in a sentence is an indicator that the sentence is subjective (Hatzivassiloglou and Wiebe, 2000).
+    Therefore, we include in our features the counts of positive and negative words in the sentence (which are obtained with the method of Section 5.1), as well as counts of the polarities of sequences of semantically oriented words (e

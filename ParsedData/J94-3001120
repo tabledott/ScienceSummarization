@@ -1,0 +1,8 @@
+ymbols are ignored, we define a two-level left-context operator so that Leftcontext(Ak , &lt;k) enforces the requirement that every &lt;k pair be preceded by an instance of Ak.
+    This is simpler than the rewriting left-context operator because not every instance of A must be marked&#8212;only the ones that precede T, and those are picked out independently by the iterative union.
+    That is why this uses a one-way implication instead of a biconditional.
+    As in the rewriting case, the ignoring provides for overlapping instances of A.
+    The right-context operator can be defined symmetrically using If-P-then-S or by reversing the left-context operator: Auxiliary marks are freely introduced on the lexical string.
+    Those marks are appropriately constrained so that matching brackets enclose every occurrence of T, and each bracket marks an occurrence of the associated context relation.
+    The marks are removed at the end.
+    Note that there are only same-length relations in the intermediate expression, a

@@ -1,0 +1,9 @@
+   Each thread will ask a provider for the next sentence pair.
+    The sentence provider is synchronized.
+    The request of sentences are queued, and each sentence pair is guaranteed to be assigned to only one thread.
+    The threads do alignment in their own stacks, and read required probabilities from global parameter tables, such as the TTable, which reside on the heap.
+    Because no update on these global tables will be performed during this stage, the reading can be concurrent.
+    After aligning the sentence pairs, the counts need to be collected.
+    For HMMTable and D4Table, which use maps as their data structure, we cannot allow concurrent read/write to the table, because the map structure may be changed when inserting a new entry.
+    So we must either put mutual locks to postpone reading until writing is complete, or duplicate the tables for each thread and merge them afterwards.
+    Locking can be very inefficient because it may block other threads, so the duplicate/merge method is a much better

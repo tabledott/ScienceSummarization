@@ -1,0 +1,9 @@
+HK datasets to GB in order to make cross-training-and-testing possible.
+			Note that this conversion could potentially worsen performance slightly due to a few conversion errors.
+			We use cross-validation to choose Markov-order and perform feature selection.
+			Thus, each training set is randomly split?80% used for training and theremaining 20% for validation?and based on vali dation set performance, choices are made for model structure, prior, and which word lexicons to include.
+			The choices of prior and model structure shown in Table 2 are used for our final testing.
+			We conduct closed and open tests on all four datasets.
+			The closed tests use only material from the training data for the particular corpus being tested.Open tests allows using other material, such as lexicons from Internet.
+			In open tests, we use lexi cons obtained from various resources as described Corpus Abbrev.
+			Encoding #Train words #Test Words OOV rate (%) UPenn Chinese Treebank CTB GB 250K 40K 18.1 Beijing University PK GB 1

@@ -1,0 +1,14 @@
+cal categories.
+			Clark et al (2002) and Clark and Curran (2004) give a detailed description of the dependency structures.
+			3.1 Model Estimation.
+			In Clark and Curran (2004) we describe a discrim inative method for estimating the parameters of a log-linear parsing model.
+			The estimation method maximises the following objective function: L?(?)
+			= L(?)
+			?G(?)
+			(2) = log m ? j=1 P?(d j|S j) ? n ? i=1 ?2i 2?2The data consists of sentences S 1, . . .
+			, S m, to gether with gold standard normal-form derivations, d1, . . .
+			, dm.
+			L(?)
+			is the log-likelihood of model ?, and G(?)
+			is a Gaussian prior term used to avoid overfitting (n is the number of features; ?i is the weight for feature fi; and ? is a parameter of theGaussian).
+			The objective function is optimised using L-BFGS (Nocedal and Wright, 1999), an iterative algorithm from the numerical optimisation lit erature.The algorithm requires the gradient of the objective function, and the value of the objective function, at each iteration.

@@ -1,0 +1,9 @@
+ature (except for LengthCutoff where the number 9 indicates the threshold for selecting a sentence based on the number of the words in the sentence).
+    The reranker in the example is a word-based MMR reranker with a cosine similarity threshold, 0.5.
+    We implemented the Degree and LexPageRank methods, and integrated into the MEAD system as new features.
+    We normalize each feature so that the sentence with the maximum score gets the value 1.
+    We ran MEAD with several policies with different feature weights and combinations of features.
+    We fixed Length cutoff at 9, and the weight of the Position feature at 1 in all of the policies.
+    We did not try a weight higher than 2.0 for any of the features since our earlier observations on MEAD showed that too high feature weights results in poor summaries.
+    Table 2 and Table 3 show the ROUGE scores we have got in the experiments with using LexPageRank, Degree, and Centroid in Tasks 2 and 4, respectively, sorted by ROUGE-1 scores.
+    &#8216;lprXTY&#82

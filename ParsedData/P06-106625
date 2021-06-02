@@ -1,0 +1,9 @@
+e contrary, the MaxEnt-based reordering model is not limited by this constraint since it is based on features of phrase, not phrase itself.
+    It can be easily generalized to reorder unseen phrases provided that some features are fired on these phrases.
+    Another advantage of the MaxEnt-based reordering model is that it can take more features into reordering, even though they are nonindependent.
+    Tillmann et. al (2005) also use a MaxEnt model to integrate various features.
+    The difference is that they use the MaxEnt model to predict not only orders but also blocks.
+    To do that, it is necessary for the MaxEnt model to incorporate real-valued features such as the block translation probability and the language model probability.
+    Due to the expensive computation, a local model is built.
+    However, our MaxEnt model is just a module of the whole log-linear model of translation which uses its score as a real-valued feature.
+    The modularity afforded by this design does not incur any computation p

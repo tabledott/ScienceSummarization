@@ -1,0 +1,9 @@
+ged corpus instead of using random or evenly distributed initial probabilities, and then adjust these probabilities using the Baum-Welch algorithm and an untagged corpus.
+    This approach is described in [Merialdo, 1995; Elworthy, 1994].
+    A tagged corpus can also be used to improve the accuracy of unsupervised transformationbased learning.
+    A transformation-based system is a processor and not a classifier.
+    Being a processor, it can be applied to the output of any initial state annotator.
+    As mentioned above, in the supervised transformation-based tagger described in [Brill, 1994], each word is initially tagged with its most likely tag.
+    Here, we use the trained unsupervised part of speech tagger as the initial state annotator for a supervised learner.
+    Transformations will then be learned to fix errors made by the unsupervised learner.
+    As shown in figure 4, unannotated text is -first passed through the unsupervised initial-state annotator, where each word is assigned a list of all allo

@@ -1,0 +1,14 @@
+ example, the conjunction of the predicate and path features for the predicate assume and the constituent [S who has been elected deputy chairman] in Figure 1 is (S?NP?PP?VP?VBN, assume).
+  3.2.2 Features Used When Only Shallow Parsing is Available.
+  Most features used here are similar to those used by the systemwith full parsing information.
+  However, for features that need full parse trees in their extraction procedures, we either try to mimic them with some heuristic rules or discard them.
+  The details of these features are as follows.
+  
+  
+  
+  This aims to approximate the Path features extracted from the full parse tree.
+  
+  This aims to approximate the Subcategorization feature extracted from the full parse tree.
+  3.3 Argument Classification This stage assigns labels to the argument candidates identified in the previous stage.
+  A multi-class classifier is trained to predict the types of the argument candidates.
+  In addition, to reduce the excessive candidates mistakenly output by the previous st

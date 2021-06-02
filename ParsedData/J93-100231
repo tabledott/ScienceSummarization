@@ -1,0 +1,7 @@
+efining possible phrase structure configurations.
+    Categories consist of sets of feature name-value pairs, with the possibility of variable values, which may be bound within a rule, and of category-valued features.
+    Categories are combined using fixed-arity term unification (Prolog-style).
+    The results and techniques we report below should generalize to many other unification-based formalisms.
+    An example of a possible ANLT object grammar rule is: This rule provides a (simple) analysis of the structure of English clauses, corresponding to S --+ NP VP, using a feature system based loosely on that of GPSG (Gazdar et al. 1985).
+    In Tomita's LR parsing framework, each such rule must be manually converted into a rule of the following form in which some subpart of each category has been replaced by an atomic symbol.
+    Vb[BAR 2, PER x, PLU y, VFORM z] -4 Nn [BAR 2, PER x, PLU y, CASE Nom] Vb [BAR 1, PER x, PLU y, VFORM z] However, it is not obvious which features should be so replaced&#8212;why not 

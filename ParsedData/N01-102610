@@ -1,0 +1,5 @@
+ted tag doesn't match the majority lexical prior.2 Sorting and filtering/weighting by the cumulative normalized score yields a subset of training data where multiple sources essentially concur on the correct tag sequence.
+    While the potential exists that this higher confidence data subset may be biased in the sequence phenomena it contains, the substantial noise reduction in preliminary investigations appears to be a worthwhile tradeoff.
+    Future work will focus on differential confidence weighting of sentence fragments, and iterative (E-M) re-estimation.
+    2The exception is for function words (i.e. the majority lexical prior is not a Noun, Verb, Adjective or Adverb) located in a 1-to-n alignment sequence.
+    Given the very high probability of these raw projections being incorrect, and their prevalence, it is expedient to attempt to correct (rather than weight/filter) these tag instances prior to the first tagsequence-model training, by replacing their raw projection tag with the majority lexical prio

@@ -1,0 +1,6 @@
+for Japanese dependency analysis (Fujio and Matsumoto, 1998; Haruno et al., 1999; Uchimoto et al., 1999; Kanayama et al., 2000; Uchimoto et al., 2000; Kudo and Matsumoto, 2000) are based on a probabilistic model consisting of the following two steps.
+    First, they estimate modification probabilities, in other words, how probable one segment tends to modify another.
+    Second the optimal combination of dependencies is searched from the all candidates dependencies.
+    Such a probabilistic model is not always efficient since it needs to calculate the probabilities for all possible dependencies and creates n&#729;(n&#8722;1)/2 (where n is the number of segments in a sentence) training examples per sentence.
+    In addition, the probabilistic model assumes that each pairs of dependency structure is independent.
+    In this paper, we propose a new Japanese dependency parser which is more efficient and simpler than the probabilistic model, yet performs better in training and testing on the Kyoto University Corpu

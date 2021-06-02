@@ -1,0 +1,7 @@
+oor soon after B is produced.
+  
+  
+    We used the labeled adjacency pairs of 50 meetings and selected 80% of the pairs for training.
+    To train the maximum entropy ranking model, we used the generalized iterative scaling algorithm (Darroch and Ratcliff, 1972) as implemented in YASMET.5 Table 2 summarizes the accuracy of our statistical ranker on the test data with different feature sets: the performance is 89.39% when using all feature sets, and reaches 90.2% after applying Gaussian smoothing and using incremental feature selection as described in (Berger et al., 1996) and implemented in the yasmetFS package.6 Note that restricting ourselves to only backward looking features decreases the performance significantly, as we can see in Table 2.
+    We also wanted to determine if information about dialog acts (DA) helps the ranking task.
+    If we hypothesize that only a limited set of paired DAs (e.g. offer-accept, question-answer, and apologydownplay) can be realized as adjacency pairs, then knowing the DA c

@@ -1,0 +1,6 @@
+ionary, each with a count of one.
+    We took the enhanced dictionary with counts to define a Dirichlet prior, which is the conjugate prior to a multinomial distribution over discrete events (like the distribution p over link types we seek to estimate) (MacKay and Peto 1995).
+    Such a prior is characterized by counts of all such events; when it is used in an EM procedure, these prior counts are added to those produced by the E step on every iteration.
+    Intuitively, if a word pair (x, y) is expected to be a likely lexical word pair in the dictionary and cognate set, then models that make (x, y) probable are more likely (according to the prior).
+    Therefore the expected count of (x, y) is increased at each iteration of training to the extent that the prior favors it.
+    Using the enhanced, weighted lexicon as a Dirichlet prior (containing 77,699 entries and a total count of 85,332), a word-to-word translation model (Melamed 2000) was trained on a verse-aligned Bible (15,548 verses, averaging 25.5 Englis

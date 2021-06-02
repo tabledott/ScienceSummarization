@@ -1,0 +1,9 @@
+es are considered when searching for associations between debate topics and their aspects.
+    Once we have the probabilities collected from the web, we can build our classifier to classify the debate posts.
+    Here again, we use the process described in Section 3.1 to extract polarity-target pairs for each opinion expressed in the post.
+    Let N be the number of instances of polarity-target pairs in the post.
+    For each instance Ij (j = {1...N}), we look up the learned probabilities of Section 3.2 to create two scores, wj and uj: where target&#65533; &#65533; is the polarity-target type of which Ij is an instance.
+    Score wj corresponds to side1 and uj corresponds to side2.
+    A point to note is that, if a target word is repeated, and it occurs in different polarity-target instances, it is counted as a separate instance each time &#8212; that is, here we account for tokens, not types.
+    Via Equations 2 and 3, we interpret the observed polarity-target instance Ij in terms of debate sides.
+    We form

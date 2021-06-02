@@ -1,0 +1,8 @@
+om labeled WSJ data and unlabeled NANC data, they perform extremely well on BROWN development (Table 2).
+    The trends are the same as in (McClosky et al., 2006): Adding NANC data improves parsing performance on BROWN development considerably, improving the f-score from 83.9% to 86.4%.
+    As more NANC data is added, the f-score appears to approach an asymptote.
+    The NANC data appears to help reduce data sparsity and fill in some of the gaps in the WSJ model.
+    Additionally, the reranker provides further benefit and adds an absolute 1-2% to the fscore.
+    The improvements appear to be orthogonal, as our best performance is reached when we use the reranker and add 2,500k self-trained sentences from NANC. training data on parsing performance. f-scores for the parser with and without the WSJ reranker are shown when evaluating on BROWN development.
+    For this experiment, we use the WSJ-trained reranker.
+    The results are even more surprising when we compare against a parser3 trained on the labeled trai

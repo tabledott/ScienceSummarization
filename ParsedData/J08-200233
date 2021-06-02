@@ -1,0 +1,9 @@
+ping which collapses L&#8217;s non-NONE values into ARG.
+    5 The regular expressions look for phrases containing pronouns with part-of-speech tags WDT, WRB, WP, or WP$ (Xavier Carreras, personal communication).
+    Then, like the Gildea and Jurafsky (2002) system, we decompose the probability of a labeling L into probabilities according to an identification model PID and a classification model PCLS.
+    This decomposition does not encode any independence assumptions, but is a useful way of thinking about the problem.
+    Our local models for semantic role labeling use this decomposition.
+    We use the same features for local identification and classification models, but use the decomposition for efficiency of training.
+    The identification models are trained to classify each node in a parse tree as ARG or NONE, and the classification models are trained to label each argument node in the training set with its specific label.
+    In this way the training set for the classification models is smaller.
+    No

@@ -1,0 +1,10 @@
+g., size of training and test dataset) are summarized in Table 1.
+    One of the advantages of CRFs is that they are flexible enough to capture many correlated features, including overlapping and non-independent features.
+    We thus use as many features as possible, which could not be used in HMMs.
+    Table 2 summarizes the set of feature templates used in the KC data.
+    The templates for RWCP are essentially the same as those of KC except for the maximum level of POS subcatgeories.
+    Word-level templates are employed when the words are lexicalized, i.e., those that belong to particle, auxiliary verb, or suffix6.
+    For an unknown word, length of the word, up to 2 suffixes/prefixes and character types are used as the features.
+    We use all features observed in the lattice without any cut-off thresholds.
+    Table 1 also includes the number of features in both data sets.
+    We evaluate performance with the standard Fscore (F&#946;=1) defined as follows: where Recall = # of correct tokens # of tokens 

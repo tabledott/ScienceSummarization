@@ -1,0 +1,9 @@
+ C Subsets of cities C of increasing cardinality c are processed.
+    The algorithm, shown in Table 1, works because not all permutations of cities have to be considered explicitly.
+    During the computation, for a pair (C, j), the order in which the cities in C have been visited can be ignored (except j); only the costs for the best path reaching j has to be stored.
+    For the initialization the costs for starting from city 1 are set: D({k}, k) = d1k for each k E {2,..., |C|}.
+    Then, subsets C of increasing cardinality are processed.
+    Finally, the cost for the optimal tour is obtained in the second-to-last line of the algorithm.
+    The optimal tour itself can be found using a back-pointer array in which the optimal decision for each grid point (C, j) is stored.
+    Figure 4 illustrates the use of the algorithm by showing the &#8220;supergraph&#8221; that is searched in the Held and Karp algorithm for a TSP with J = 5 cities.
+    When traversing the lattice from left to right following the different 

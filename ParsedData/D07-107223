@@ -1,0 +1,9 @@
+ be defined similarly.
+			Inspection of Equations (6) and (9) reveals that the only difference between the maximum likelihood and the mean-fieldupdate is that the latter applies the exp(?(?)) func tion to the counts (Figure 5).
+			When the truncation K is large, ?B?zl?zr is near 0 for most right-hand sides (zl, zr), so exp(?(?)) hasthe effect of downweighting counts.
+			Since this sub traction affects large counts more than small counts,there is a rich-get-richer effect: rules that have al ready have large counts will be preferred.
+			Specifically, consider a set of rules with the same left-hand side.
+			The weights for all these rules only differ in the numerator (Equation (9)), so applying exp(?(?)) creates a local preference for right-hand sides with larger counts.
+			Also note that the rule weights are not normalized; they always sum to at most one and are equal to one exactly when q(?)
+			isdegenerate.
+			This lack of normalization gives an extra degree of freedom not present in maximum like lihood estim

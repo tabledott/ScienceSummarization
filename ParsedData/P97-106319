@@ -1,0 +1,8 @@
+ink correctly; in other cases they were more difficult.
+    Both models made some errors because of this tokenization problem, albeit in different places.
+    The &amp;quot;paraphrase&amp;quot; category covers all link errors that resulted from paraphrases in the translation.
+    Neither IBM's Model 2 nor our model is capable of linking multi-word sequences to multi-word sequences, and this was the biggest source of error for both models.
+    The test sample contained only about 400 content words5, and the links for both models were evaluated post-hoc by only one evaluator.
+    Nevertheless, it appears that our word-to-word model with only two link classes does not perform any worse than IBM's Model 2, even though the word-to-word model was trained on less than one fifth the amount of data that was used to train the IBM model.
+    Since it doesn't store indirect associations, our word-to-word model contained an average of 4.5 French words for every English word.
+    Such a compact model requires relatively li

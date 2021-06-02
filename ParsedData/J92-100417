@@ -1,0 +1,8 @@
+rol strategy is given in Figure 2.
+    At any given time, a set of active parse nodes are arranged on a priority queue.
+    Each parse node contains a pointer to a corresponding grammar node&#8222; and has access to all the information needed to pursue its partial theory.
+    The top node is popped from the queue, and it then creates a number of new nodes (either first children' or right siblings9 depending on its state), and inserts them into the queue according to their probabilities.
+    If the node is an [end] node, it returns control to the parent node, giving that node a completed subparse.
+    As each new node is considered, unifications of syntactic and semantic constraints are performed, and may lead to failure.
+    The process can terminate on the first successful completion of a sentence, or the Nth successful completion if more than one hypothesis is desired.
+    A parse in TINA begins with a single parse node linked to the grammar node [sentence], which is entered on the queue with probability 1.

@@ -1,0 +1,13 @@
+required.
+    The resulting n-bests are quite good, as shown in Table 2.
+    (The results are for all sentences of section 23 of the WSJ tree-bank of length &#8804; 100.)
+    From the 1-best result we see that the base accuracy of the parser is 89.7%.1 2-best and 10-best show dramatic oracle-rate improvements.
+    After that things start to slow down, and we achieve an oracle rate of 0.968 at 50-best.
+    To put this in perspective, Roark (Roark, 2001) reports oracle results of 0.941 (with the same experimental setup) using his parser to return a variable number of parses.
+    For the case cited his parser returns, on average, 70 parses per sentence.
+    Finally, we note that 50-best parsing is only a factor of two or three slower than 1-best.
+  
+  
+    This section describes how each parse y is mapped to a feature vector f(y) = (f1(y), ... , fm(y)).
+    Each feature fj is a function that maps a parse to a real number.
+    The first feature f1(y) = log p(y) is the logarithm of the parse probability p accordin

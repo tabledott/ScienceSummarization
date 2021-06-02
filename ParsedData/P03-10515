@@ -1,0 +1,10 @@
+ction 5.
+    A small morpheme-segmented corpus results in a relatively high out of vocabulary rate for the stems.
+    We describe below an unsupervised acquisition of new stems from a large unsegmented Arabic corpus.
+    However, we first describe the segmentation algorithm.
+    We take the unit of decoding to be a sentence that has been tokenized using white space and punctuation.
+    The task of a decoder is to find the morpheme sequence which maximizes the trigram probability of the input sentence, as in (2): (2) SEGMENTATIONbest = Argmax IIi=1, N p(mi|mi-1mi-2), N = number of morphemes in the input.
+    Search algorithm for (2) is informally described for each word token as follows: Step 1: Compute all possible segmentations of the token (to be elaborated in 3.2.1).
+    Step 2: Compute the trigram language model score of each segmentation.
+    For some segmentations of a token, the stem may be an out of vocabulary item.
+    In that case, we use an &#8220;UNKNOWN&#8221; class in the trigram language model 

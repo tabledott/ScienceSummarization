@@ -1,0 +1,10 @@
+od, based on grouped voting.
+    The most straightforward method to combine the results of multiple taggers is to do an n-way vote.
+    Each tagger is allowed to vote for the tag of its choice, and the tag with the highest number of votes is selected.'
+    The question is how large a vote we allow each tagger (Figure 1).
+    The most democratic option is to give each tagger one vote (Majority).
+    This does not require any tuning of the voting mechanism on training data.
+    However, the component taggers can be distinguished by several figures of merit, and it appears more useful to give more weight to taggers that have proved their quality.
+    For this purpose we use precision and recall, two well-known measures, which can be applied to the evaluation of tagger output as well.
+    For any tag X, precision measures which percentage of the tokens tagged X by the tagger are also tagged X in the benchmark.
+    Recall measures which percentage of the tokens tagged X in the benchmark are also tagged X by the ta

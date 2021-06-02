@@ -1,0 +1,7 @@
+   The performance drop in iteration 1 is also attributed to overfitting the candidate repository.
+    The decline of less than 0.5% in terms of BLEU is, however, almost negligible compared to the performance drop of more than 27% in case of N-best MERT.
+    The vast number of alternative translation hypotheses represented in a lattice also increases the number of phase transitions in the error surface, and thus prevents MERT from selecting a low performing feature weights set at early stages in the optimization procedure.
+    This is illustrated in Figure 3, where lattice MERT and N-best MERT find different optima for the weight of the phrase penalty feature function after the first iteration.
+    Table 2 shows the BLEU score results on the NIST 2008 blind test using the combined dev1+dev2 corpus as training data.
+    While only the aren task shows improvements on the development data, lattice MERT provides consistent gains over N-best MERT on all three blind test sets.
+    The reduced performance for N-best

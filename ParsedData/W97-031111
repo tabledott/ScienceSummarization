@@ -1,0 +1,7 @@
+are translated very inconsistently, and it is difficult to model their translational distributions accurately.
+    To make discovery of NCCs involving function words more likely, I consider content words that are separated by one or two functions words to be adjacent.
+    Thus, NCCs like &amp;quot;blow ... whistle&amp;quot; and &amp;quot;icing ... cake&amp;quot; may contain gaps.
+    Fusing NCCs with gaps may fuse some words incorrectly, when the NCC is a frozen expression.
+    For example, we would want to recognize that &amp;quot;icing ... cake&amp;quot; is an NCC when we see it in new text, but not if it occurs in a sentence like &amp;quot;Mary ate the icing off the cake.&amp;quot; It is necessary to determine whether the gap in a given NCC is fixed or not.
+    Thus, the price for this flexibility provided by NCC gaps is that, before Step 7, the algorithm fills gaps in proposed NCCs by looking through the text.
+    Sometimes, NCCs have multiple possible gap fillers, for example &amp;quot;make up {my,your,h

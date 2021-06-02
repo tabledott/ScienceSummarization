@@ -1,0 +1,14 @@
+e suited to any particular textual en tailment recognition method?
+	
+	
+			We use several shallow surface features to model the text, hypothesis and their relation to each other.
+			Most importantly, we expect some dependencybetween surface string similarity of text and hypothesis and the existence of entailment.
+			Our string sim ilarity measure uses only a form of extended wordoverlap between text and hypothesis, taking into account equality of words, synonymy and morpholog ical derivations.
+			WordNet (Fellbaum, 1998) is usedas the knowledge source for synonymy and deriva tions.
+			The exact procedure is as follows:Both text and hypothesis are tokenised and lem matised.
+			A lemma l1 in the hypothesis is said to be related to a lemma l2 in the text iff l1 and l2 are equal, belong to the same WordNet synset (e.g., ?murder?
+			and ?slay?), are related via WordNet derivations (e.g. ?murder?
+			and ?murderer?)
+			or arerelated via a combination of synonymy and deriva tions (e.g. ?murder?
+			via ?murderer?
+			to

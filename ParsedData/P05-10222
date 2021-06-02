@@ -1,0 +1,6 @@
+ detail, for each string s the n-best parsing algorithm described in section 2 returns the n highest probability parses Y(s) = {y1(s), ... , yn(s)} together with the probability p(y) of each parse y according to the parser&#8217;s probability model.
+    The number n of parses was set to 50 for the experiments described here, but some simple sentences actually received fewer than 50 parses (so n is actually a function of s).
+    Each yield or terminal string in the training, development and test data sets is mapped to such an n-best list of parse/probability pairs; the cross-validation scheme described in Collins (2000) was used to avoid training the n-best parser on the sentence it was being used to parse.
+    A feature extractor, described in section 3, is a vector of m functions f = (fl, ... , fm), where each fj maps a parse y to a real number fj(y), which is the value of the jth feature on y.
+    So a feature extractor maps each y to a vector of feature values f(y) = (f1(y), ..., fm(y)).
+    Our reranking 

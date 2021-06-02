@@ -1,0 +1,6 @@
+e word choice model pw(w I t, v) specifies a distribution over words given the field type t and field value v. This distribution is a mixture of a global backoff distribution over words and a field-specific distribution which depends on the field type t. Although we designed our word choice model to be relatively general, it is undoubtedly influenced by the three domains.
+    However, we can readily extend or replace it with an alternative if desired; this modularity is one principal benefit of probabilistic modeling.
+    Integer Fields (t = INT) For integer fields, we want to capture the intuition that a numeric quantity v is rendered in the text as a word which is possibly some other numerical value w due to stylistic factors.
+    Sometimes the exact value v is used (e.g., in reporting football statistics).
+    Other times, it might be customary to round v (e.g., wind speeds are typically rounded to a multiple of 5).
+    In other cases, there might just be some unexplained error, where w deviates from v by 

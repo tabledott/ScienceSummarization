@@ -1,0 +1,7 @@
+word reorderings that are explored by the search algorithm are controlled by two parameters s and w as described in (Tillmann and Ney, 2003).
+    The first parameter s denotes the number of source words that are temporarily skipped (i.e., temporarily left uncovered) during the search to cover a source word to the right of the skipped words.
+    The second parameter is the window width w, which is defined as the distance (in number of source words) between the left-most uncovered source word and the right-most covered source word.
+    To illustrate these restrictions, let us assume the input sentence consists of the following sequence (f1, f2, f3, f4).
+    For s=1 and w=2, the permissible permutations are (f1,f2, f3, f4), (f2, f1, f3, f4), The experiments reported in this section are in the context of SMT from Arabic into English.
+    The training data is a 500K sentence-pairs subsample of the 2005 Large Track Arabic-English Data for NIST MT Evaluation.
+    The language model used is an interpolated trigram mo

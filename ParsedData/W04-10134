@@ -1,0 +1,10 @@
+e summary that contains words shared by more references is favored by the ROUGE-N measure.
+    This is again very intuitive and reasonable because we normally prefer a candidate summary that is more similar to consensus among reference summaries.
+    So far, we only demonstrated how to compute ROUGE-N using a single reference.
+    When multiple references are used, we compute pairwise summarylevel ROUGE-N between a candidate summary s and every reference, ri, in the reference set.
+    We then take the maximum of pairwise summary-level ROUGE-N scores as the final multiple reference ROUGE-N score.
+    This can be written as follows: This procedure is also applied to computation of ROUGE-L (Section 3), ROUGE-W (Section 4), and ROUGE-S (Section 5).
+    In the implementation, we use a Jackknifing procedure.
+    Given M references, we compute the best score over M sets of M-1 references.
+    The final ROUGE-N score is the average of the M ROUGE-N scores using different M-1 references.
+    The Jackknifing procedure 

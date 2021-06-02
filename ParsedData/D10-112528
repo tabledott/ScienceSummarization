@@ -1,0 +1,12 @@
+er, but it is simple to develop dual decomposition algorithms for this case, using similar methods to those used for the grandparent models.
+    The general approach should be applicable to other lexicalized syntactic formalisms, and potentially also to decoding in syntax-driven translation.
+    In addition, our dual decomposition approach is well-suited to parallelization.
+    For example, each of the head-automata could be optimized independently in a multi-core or GPU architecture.
+    Finally, our approach could be used with other structured learning algorithms, e.g.
+    Meshi et al. (2010).
+  
+  
+    This appendix describes details of the algorithm, specifically choice of the step sizes &#945;k, and use of the -y(i, j) parameters.
+    We have found the following method to be effective.
+    First, define S = f(z(1)) &#8722; f(y(1)), where (z(1), y(1)) is the output of the algorithm on the first iteration (note that we always have S &gt; 0 since f(z(1)) = L(u(1))).
+    Then define &#945;k = S/(1 + 77k), wh

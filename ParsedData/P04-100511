@@ -1,0 +1,6 @@
+strings following the interregnum, and the repair is the string that begins at the end of the interregnum and ends at the closing bracket &#8220;]&#8221;.
+    The interregnum consists of the braced expressions immediately following the interruption point.
+    We used the disfluency tagged version of the corpus for training rather than the parsed version because the parsed version does not mark the interregnum, but we need this information for training our repair channel model.
+    Testing was performed using data from the parsed version since this data is cleaner, and it enables a direct comparison with earlier work.
+    We followed Charniak and Johnson (2001) and split the corpus into main training data, heldout training data and test data as follows: main training consisted of all sw[23]*.dps files, heldout training consisted of all sw4[5-9]*.dps files and test consisted of all sw4[0-1]*.mrg files.
+    We now describe how the weights on the TAG productions described in subsection 2.2 are estimated from this

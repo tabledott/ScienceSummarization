@@ -1,0 +1,8 @@
+rammar.
+    Unlike the standard LR parsing algorithm, it can handle arbitrary context-free grammars, including ambiguous grammars, while most of the LR efficiency is preserved by introducing the concept of a &amp;quot;graph-structured stack&amp;quot;.
+    The graph-structured stack allows an LR shift-reduce parser to maintain multiple parses without parsing any part of the input twice in the same way.
+    We can also view our parsing algorithm as an extended chart parsing algorithm efficiently guided by LR parsing tables.
+    The algorithm is fast, due to the LR table precomputation.
+    In several experiments with different English grammars and sentences, timings indicate a five- to tenfold speed advantage over Earley's context-free parsing algorithm.
+    The algorithm parses a sentence strictly from left to right on-line, that is, it starts parsing as soon as the user types in the first word of a sentence, without waiting for completion of the sentence.
+    A practical on-line parser based on the algorithm 

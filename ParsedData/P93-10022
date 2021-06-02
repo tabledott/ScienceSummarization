@@ -1,0 +1,10 @@
+
+    The general idea is that the closer in length two sentences are, the more likely they align.
+    To perform the search for the best alignment, dynamic programming (Bellman, 1957) is used.
+    Because dynamic programming requires time quadratic in the length of the text aligned, it is not practical to align a large corpus as a single unit.
+    The computation required is drastically reduced if the bilingual corpus can be subdivided into smaller chunks.
+    Brown uses anchors to perform this subdivision.
+    An anchor is a piece of text likely to be present at the same location in both of the parallel corpora of a bilingual corpus.
+    Dynamic programming is used to align anchors, and then dynamic programming is used again to align the text between anchors.
+    The Gale algorithm is similar to the Brown algorithm except that instead of basing alignment on the number of words in sentences, alignment is based on the number of characters in sentences.
+    Dynamic programming is also used to search for the bes

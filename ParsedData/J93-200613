@@ -1,0 +1,8 @@
+hat the probability of tags given ti t2 sum to one, we subtract 1/jm from the probability of each triple that actually was observed in the corpus, i.e., if ti t2ti was observed k times in the corpus, then we estimate p(t' I tit2) = k/m &#8212;1/ jm.
+    Given these probabilities, one can then find the most likely tag sequence for a given word sequence.
+    Using the Viterbi algorithm, we selected the path whose overall probability was highest, and then took the tag predictions from that path.
+    We replicated the earlier results that this process is able to predict the parts of speech with only a 3-4% error rate when the possible parts of speech of each of the words in the corpus are known.
+    This is in fact about the rate of discrepancies among human taggers on the TREEBANK project (Marcus, Santorini, and Magerman 1990).
+    While supervised training is shown here to be very effective, it requires a correctly tagged corpus.
+    How much manually annotated data is required?
+    In our experiments, we demon

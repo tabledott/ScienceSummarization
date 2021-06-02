@@ -1,0 +1,10 @@
+ility model (see Section 3.3).
+    Alternatively, we could also use a simpler distortion model with an appropriate value for the parameter .
+    In order to calibrate the output length, we introduce a factor for each generated English word in addition to the trigram language model LM.
+    This is a simple means to optimize performance.
+    Usually, this factor is larger than 1, biasing longer output.
+    In summary, the best English output sentence best given a foreign input sentence according to our model is For all our experiments we use the same training data, trigram language model [Seymore and Rosenfeld, 1997], and a specialized decoder.
+    The phrase-based decoder we developed for purpose of comparing different phrase-based translation models employs a beam search algorithm, similar to the one by Jelinek [1998].
+    The English output sentence is generated left to right in form of partial translations (or hypotheses).
+    We start with an initial empty hypothesis.
+    A new hypothesis is expanded from 

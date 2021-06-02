@@ -1,0 +1,6 @@
+rd pair as 0.6.
+			We find itbetter, however, to adjust these probabilities by sub tracting a small fixed discount from the link count: LPd(f, e) = links 1 (f, e)?
+			d cooc(f, e) LPd(f, e) represents the estimated conditional link probability for the words f and e, links 1 (f, e) is the number of times they are linked by the simpler alignment model, d is the discount, and cooc(f, e)is the number of times they co-occur.
+			This adjust ment prevents assigning high probabilities to links between pairs of words that rarely co-occur.
+			An important difference between the LLR-based model and CLP-based model is that the LLR-based model considers each word-to-word link separately, but allows multiple links per word, as long as they 83 lead to an alignment consisting only of one-to-one and one-to-many links (in either direction).
+			In the CLP-based model, however, we allow conditional probabilities for both one-to-one and one-to-many clusters, but we require all clusters to be disjoint.For example, we estimate the 

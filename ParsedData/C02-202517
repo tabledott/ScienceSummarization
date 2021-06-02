@@ -1,0 +1,12 @@
+y of the model.
+  We imple- mented an extended PCFG that conditions each node?s expansion on its parent in the phrase structure tree.
+  The extended PCFG (henceforth PCFG-GP) has parameters P(Ak Ai ?
+  The resulting grammar can be viewed as a PCFG whose nonterminals are pairs of the nonterminals of the original PCFG.
+  The combined model scores possible parses using probabilities from the PCFG-GP model together with the probability of the preterminal sequence of the parse tree according to a trigram tag sequence model.
+  More specif- ically, for a tree T , Score(t) = log(PPCFG-GP(T )) + ?
+  log(PTRIG(tags(T )) where PTRIG(tags(T )) is the probability of the sequence of preterminals t1 ?
+  tn in T according to a trigram tag model: PTRIG(t1 ?
+  tn) = ?n i=1 P(ti |ti?1, ti?2) with appropriate treatment of boundaries.
+  The trigram probabilities are smoothed as for the HMM tagger.
+  The combined model is relatively insensitive to the relative weights of the two component models, as specified by ?
+  ; in any case,

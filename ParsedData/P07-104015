@@ -1,0 +1,11 @@
+to generate an -best list from the bi-gram expanded lattice.
+    This -best list is then re-scored with the higher order -gram.
+    The second set of weights is used to find the final-best from the re-scored -best list.
+  
+  
+    As discussed in Section 3, there is a disconnect between the skeleton selection and confidence estimation.
+    To prevent the-best from a system with a low or zero weight being selected as the skeleton, confusion networks are generated for each system and the average TER score in Equation 4 is used to estimate a prior probability for the corresponding network.
+    All confusion networks are connected to a single start node with NULL arcs which contain the prior probability from the system used as the skeleton for that network.
+    All confusion network are connected to a common end node with NULL arcs.
+    The final arcs have a probability of one.
+    The prior probabilities in the arcs leaving the first node will be multiplied by the corresponding system weights which guarantees tha

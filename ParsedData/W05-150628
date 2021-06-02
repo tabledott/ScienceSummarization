@@ -1,0 +1,9 @@
+arsing efficiency and the qual ity of the k-best-lists.
+			We also implemented Algorithms 2 and 3 in a parsing-based MT decoder (Chiang, 2005) and report results on decoding speed.
+			5.1 Experiment 1: Bikel Parser.
+			Bikel?s parser (2004) is a state-of-the-art multilingual parser based on lexicalized context-free models (Collins, 2003; Eisner, 2000).
+			It does support k-best parsing, but, following Collins?
+			parse-reranking work (Collins, 2000)(see also Section 5.1.2), it accomplishes this by sim ply abandoning dynamic programming, i.e., no items are considered equivalent (Charniak and Johnson, 2005).
+			Theoretically, the time complexity is exponential in n (the input sentence length) and constant in k, since, withoutmerging of equivalent items, there is no limit on the num ber of items in the chart.
+			In practice, beam search is used to reduce the observed time.5 But with the standard beamwidth of 10?4, this method becomes prohibitively expen sive for n ? 25 on Bikel?s parser.
+			Collins (2000) used a

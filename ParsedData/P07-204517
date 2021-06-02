@@ -1,0 +1,8 @@
+ible to exploit larger data resources with limited hardware infrastructure.
+    A phrase translation table easily takes up gigabytes of disk space, but for the translation of a single sentence only a tiny fraction of this table is needed.
+    Moses implements an efficient representation of the phrase translation table.
+    Its key properties are a prefix tree structure for source words and on demand loading, i.e. only the fraction of the phrase table that is needed to translate a sentence is loaded into the working memory of the decoder.
+    For the Chinese-English NIST task, the memory requirement of the phrase table is reduced from 1.7 gigabytes to less than 20 mega bytes, with no loss in translation quality and speed (Zens and Ney 2007).
+    The other large data resource for statistical machine translation is the language model.
+    Almost unlimited text resources can be collected from the Internet and used as training data for language modeling.
+    This results in language models that are too large to ea

@@ -1,0 +1,6 @@
+ntransitive subject slot should be similar to the direct object slot (the things that are broken also break), while this should not hold for non-alternating verbs (mincees are very different from mincers).
+    For each verb v in a data set, we extract the corresponding W1LxW2 slot vectors (v, l) whose links are sbj intr, sbj tr, and obj (for LexDM, we sum the vectors with links beginning with one of these three patterns).
+    Then, for each v we build a three-dimensional vector with the cosines between the three slot vectors.
+    These second order vectors encode the profile of similarity across the slots of a verb, and can be used to spot verbs that have comparable profiles (e.g., verbs that have a high similarity between their subj intr and obj slots).
+    We model both experiments as classification tasks using the nearest centroid method on the three-dimensional vectors, with leave-one-out cross-validation.
+    We perform binary classification of the C/I data set (treating non-alternating verbs as negative

@@ -1,0 +1,7 @@
+it call to a sound unification algorithm, is therefore as follows: connect(Pivot, Root) :% trivially connect pivot to root unify(Pivot, Root).
+    Now, we need only define the notion of an applicable chain or nonchain rule.
+    A nonchain rule is applicable if the semantics of the left-hand side of the rule (which is to become the pivot) matches that of the root.
+    Further, we require a top-down check that syntactically the pivot can serve as the semantic head of the root.
+    For this purpose, we assume a predicate chained_ nodes that codifies the transitive closure of the semantic head relation over categories.
+    This is the correlate of the link relation used in left-corner parsers with top-down filtering; we direct the reader to the discussion by Matsumoto et al. (1983) or Pereira and Shieber (1985) for further information.
+    A chain rule is applicable to connect a pivot to a root if the pivot can serve as the semantic head of the rule and the left-hand side of the rule is appropriate for linking to

@@ -1,0 +1,6 @@
+ probability mass to the smoothed back-off estimate, &#732;ei+1.
+    This is a crucial part of the way smoothing is done: If a particular history context &#966;i(B) has never been observed in training, the smoothed estimate using less context, &#966;i+1(B), is simply substituted as the &#8220;best guess&#8221; for the estimate using more context; that is, &#732;ei = &#732;ei+1.28 As mentioned in Section 6.4, fully lexicalized modifying nonterminals are generated in two steps.
+    First, the label and part-of-speech tag are generated with an instance of PL or PR.
+    Next, the headword is generated via an instance of one of two parameter classes, PLw or PRw.
+    The back-off contexts for the smoothed estimates of these parameters are specified in Table 1.
+    Notice how the last level of back-off is markedly different from the previous two levels in that it removes nearly all the elements of the history: In the face of sparse data, the probability of generating the headword of a modifying nonterminal is condit

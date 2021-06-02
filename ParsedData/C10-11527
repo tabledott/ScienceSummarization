@@ -1,0 +1,16 @@
+
+			As shown in Tab.
+			2, PWKP contains more than 108k sentence pairs.
+			The sentences from Wikipedia and Simple Wikipedia are considered as ?complex?
+			and ?simple?
+			respectively.
+			Both the average sentence length and average token length in Simple Wikipedia are shorter than those inWikipedia, which is in compliance with the pur pose of Simple Wikipedia.
+			Avg.
+			Sen. Len Avg.
+			Tok.
+			Len #Sen.Pairscomplex simple complex simple 25.01 20.87 5.06 4.89 108,016 Table 2: Statistics for the PWKP datasetIn order to account for sentence splitting, we al low 1 to n sentence alignment to map one complexsentence to several simple sentences.
+			We first per form 1 to 1 mapping with sentence-level TF*IDF and then combine the pairs with the same complex sentence and adjacent simple sentences.
+	
+	
+			We apply the following simplification operations to the parse tree of a complex sentence: splitting, 1354dropping, reordering and substitution.
+			In this sec tion, we use a running example to illustrate thisproces

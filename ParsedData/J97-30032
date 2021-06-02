@@ -1,0 +1,7 @@
+ on in general and the context in which this word was used.
+    A POS-tag stands for a unique set of morpho-syntactic features, as exemplified in Table 1, and a word can take several Pos-tags, which constitute an ambiguity class or POS-class for this word.
+    Words with their Pos-classes are usually kept in a lexicon.
+    For every input word-token, the tagger accesses the lexicon, determines possible POS-tags this word can take on, and then chooses the most appropriate one.
+    However, some domain-specific words or infrequently used morphological variants of general-purpose words can be missing from the lexicon and thus, their Pos-classes should be guessed by the system and only then sent to the disambiguation module.
+    The simplest approach to Pos-class guessing is either to assign all possible tags to an unknown word or to assign the most probable one, which is proper singular noun for capitalized words and common singular noun otherwise.
+    The appealing feature of these approaches is their extreme s

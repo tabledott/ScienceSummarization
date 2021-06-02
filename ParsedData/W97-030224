@@ -1,0 +1,8 @@
+.
+    We tried an experiment in which we ran beam thresholding with a tight threshold, and then a loose threshold, on all sentences of section 0 of length &lt; 40.
+    For this experiment only, we discarded those sentences which could not be parsed with the specified setting of the threshold, rather than retrying with looser thresholds.
+    We then computed for each of six metrics how often the metric decreased, stayed the same, or increased for each sentence between the two runs.
+    Ideally, as we loosened the -threshold, every sentence should improve on every metric, but in practice, that wasn't the case.
+    As can be seen, the inside score was by far the most nearly strictly increasing metric.
+    Therefore, we should use the inside probability as our metric of performance; however inside probabilities can become very close to zero, so instead we measure entropy, the negative logarithm of the inside probability.
+    Metric decrease same increase We implemented a variation on a steepest descent search tec

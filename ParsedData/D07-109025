@@ -1,0 +1,9 @@
+izes and approximate training times when training on the full target, webnews, and web data sets.
+			The processes run on standard currenthardware with the Linux operating system.
+			Gen erating models with Kneser-Ney Smoothing takes 6 ? 7 times longer than generating models withStupid Backoff.
+			We deemed generation of Kneser Ney models on the web data as too expensive andtherefore excluded it from our experiments.
+			The es timated runtime for that is approximately one week on 1500 machines.
+			864 50 100 150 200 250 300 350 10 100 1000 10000 100000 1e+06 0 0.1 0.2 0.3 0.4 0.5 0.6 Pe rp le xit y Fr ac tio n of c ov er ed 5 -g ra m s LM training data size in million tokens +.022/x2 +.035/x2 +.038/x2 +.026/x2 target KN PP ldcnews KN PP webnews KN PP target C5 +ldcnews C5 +webnews C5 +web C5 Figure 4: Perplexities with Kneser-Ney Smoothing (KN PP) and fraction of covered 5-grams (C5).
+			7.3 Perplexity and n-Gram Coverage.
+			A standard measure for language model quality is perplexity.
+			It is measured on te

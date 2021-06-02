@@ -1,0 +1,10 @@
+ot balance the label priors when picking new labeled examples for addition to the training data.
+    One way to incorporate this into our algorithm would be to incorporate some form of sample selection (or active learning) into the selection of examples that are considered as labeled with high confidence (Hwa, 2000).
+  
+  
+    In this paper, we proposed a new approach for training a statistical parser that combines labeled with unlabeled data.
+    It uses a Co-Training method where a pair of models attempt to increase their agreement on labeling the data.
+    The algorithm takes as input a small corpus of 9695 sentences (234467 word tokens) of bracketed data, a large pool of unlabeled text and a tag dictionary of lexicalized structures for each word in this training set (based on the LTAG formalism).
+    The algorithm presented iteratively labels the unlabeled data set with parse trees.
+    We then train a statistical parser on the combined set of labeled and unlabeled data.
+    We obtained 80.02% and 79.64% 

@@ -1,0 +1,13 @@
+d on a logarithm scale of the difference between the counts of before and after classifications.
+    Formally, the score is calculated as the following: where E is the set of all event pairs, B(i, j) is how many times we classified events i and j as before in Gigaword, and D(i, j) _ |B(i, j) &#8722; B(j,i)|.
+    The relation i0j indicates that i is temporally before j.
+  
+  
+    Out approach gives higher scores to orders that coincide with the pairwise orderings classified in our gigaword training data.
+    The results are shown in figure 5.
+    Of the 69 chains, 6 did not have any ordered events and were removed from the evaluation.
+    We generated (up to) 300 random orderings for each of the remaining 63.
+    We report 75.2% accuracy, but 22 of the 63 had 5 or fewer pairs of ordered events.
+    Figure 5 therefore shows results from chains with more than 5 pairs, and also 10 or more.
+    As we would hope, the accuracy improves the larger the ordered narrative chain.
+    We achieve 89.0% accuracy on the 24 d

@@ -1,0 +1,10 @@
+omponents are: For part-of-speech tags, the mixture components are: Finally, for word features, the mixture components are:
+  
+  
+    Given a sentence to be analyzed, the search program must find the most likely semantic and syntactic interpretation.
+    More precisely, it must find the most likely augmented parse tree.
+    Although mathematically the model predicts tree elements in a top-down fashion, we search the space bottom-up using a chartbased search.
+    The search is kept tractable through a combination of CKY-style dynamic programming and pruning of low probability elements.
+    Whenever two or more constituents are equivalent relative to all possible later parsing decisions, we apply dynamic programming, keeping only the most likely constituent in the chart.
+    Two constituents are considered equivalent if: threshold of the highest scoring constituent are maintained; all others are pruned.
+    For purposes of pruning, and only for purposes of pruning, the prior probability of each constituent cate

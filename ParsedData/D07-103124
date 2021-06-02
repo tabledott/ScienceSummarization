@@ -1,0 +1,7 @@
+ variational parameters (??(`), ??(`)).A comparison between (4) and (2) reveals two dif ferences between the EM and VB updates.
+			First, the Dirichlet prior parameters ? are added to the expected counts.
+			Second, these posterior counts(which are in fact parameters of the Dirichlet pos terior Q2) are passed through the function f(v) = exp?(v), which is plotted in Figure 5.
+			When v  0, f(v) ? v ? 0.5, so roughly speaking, VB for multinomials involves adding ??0.5 to the expected counts when they are much larger than zero, where ? is the Dirichlet prior parameter.
+			Thus VB canbe viewed as a more principled version of the well known ad hoc technique for approximating Bayesian estimation with EM that involves adding ??1 to the expected counts.
+			However, in the ad hoc approach the expected count plus ??1 may be less than zero,resulting in a value of zero for the corresponding parameter (Johnson et al, 2007; Goldwater and Grif fiths, 2007).
+			VB avoids this problem because f(v) is always positive when v  0

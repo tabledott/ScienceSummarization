@@ -1,0 +1,9 @@
+use it in all of the experimental evaluations.
+  
+  
+    We follow the approach of Riedel et al. (2010) for generating weak supervision data, computing features, and evaluating aggregate extraction.
+    We also introduce new metrics for measuring sentential extraction performance, both relation-independent and relation-specific.
+    We used the same data sets as Riedel et al. (2010) for weak supervision.
+    The data was first tagged with the Stanford NER system (Finkel et al., 2005) and then entity mentions were found by collecting each continuous phrase where words were tagged identically (i.e., as a person, location, or organization).
+    Finally, these phrases were matched to the names of Freebase entities.
+    Given the set of matches, define &#931; to be set of NY Times sentences with two matched phrases, E to be the set of Freebase entities which were mentioned in one or more sentences, &#916; to be the set of Freebase facts whose arguments, e1 and e2 were mentioned in a sentence in &#931;, and R to be

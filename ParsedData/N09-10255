@@ -1,0 +1,8 @@
+her features for a total of 25.
+    For example, there is a pair of features to punish rules that drop Chinese content words or introduce spurious English content words.
+    All features are linearly combined and their weights are optimized using MERT.
+    For efficient decoding with integrated n-gram language models, all transducer rules must be binarized into rules that contain at most two variables and can be incrementally scored by the language model (Zhang et al., 2006).
+    Then we use a CKY-style parser (Yamada and Knight, 2002; Galley et al., 2006) with cube pruning to decode new sentences.
+    We include two other techniques in our baseline.
+    To get more general translation rules, we restructure our English training trees using expectationmaximization (Wang et al., 2007), and to get more specific translation rules, we relabel the trees with up to 4 specialized versions of each nonterminal symbol, again using expectation-maximization and the split/merge technique of Petrov et al. (2006).
+    We inc

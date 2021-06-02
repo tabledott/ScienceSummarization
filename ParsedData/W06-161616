@@ -1,0 +1,10 @@
+is an online algorithm that learns by parsing each sentence and comparing the result with a gold standard.
+    Training is complete after multiple passes through the whole corpus.
+    Thus we decode using the Chu-Liu-Edmonds (CLE) algorithm due to its speed advantage over ILP (see Section 5.2 for a detailed comparison of runtimes).
+    The fact that we decode differently during training (using CLE) and testing (using ILP) may degrade performance.
+    In the presence of additional constraints weights may be able to capture other aspects of the data.
+  
+  
+    Our experiments were designed to answer the following questions: Before we try to answer these questions we briefly describe our data, features used, settings for U and P in our parametric constraints, our working environment and our implementation.
+    We use the Alpino treebank (van der Beek et al., 2002), taken from the CoNLL shared task of multilingual dependency parsing3.
+    The CoNLL data differs slightly from the original Alpino treebank as the co

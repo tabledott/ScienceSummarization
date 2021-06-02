@@ -1,0 +1,9 @@
+ive and a false negative error, but places the boundary very close to the actual one.
+    We will call this kind of error a near-miss error, distinct from a false positive or false negative error.
+    Distinguishing this type of error from &#8220;pure&#8221; false positives better reflects the goal of creating a metric different from precision and recall, since it can be penalized less than a false negative or a false positive.
+    Now, consider the algorithm segmentations shown in Figure 5.
+    Each of the five algorithms makes a mistake either on the boundary between the first and second segment of the reference segmentation, or within the second segment.
+    How should these various segmentations be penalized?
+    In the analysis below, we assume an application for which it is important not to introduce spurious boundaries.
+    These comparisons will most likely vary depending on the goals of the target application.
+    Algorithm A-4 is arguably the worst of the examples, since it has a false positive and 

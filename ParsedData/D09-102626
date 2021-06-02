@@ -1,0 +1,7 @@
+worse, the support of &#945;(A(d)) is different for different label assignments.
+    Although we are in the process of developing an efficient sampling algorithm for this inference, for the purposes of this paper we make the simplifying assumption that the model reduces to standard LDA at inference, where the document is free to sample from any of the K topics.
+    This is a reasonable assumption because allowing the model to explore the whole topic space for each document is similar to exploring all possible label assignments.
+    The document&#8217;s most likely labels can then be inferred by suitably thresholding its posterior probability over topics.
+    As a baseline, we use a set of multiple one-vsrest SVM classifiers which is a popular and extremely competitive baseline used by most previous papers (see (Kazawa et al., 2004; Ueda and Saito, 2003) for instance).
+    We scored each model based on Micro-F1 and Macro-F1 as our evaluation measures (Lewis et al., 2004).
+    While the former allows larger cla

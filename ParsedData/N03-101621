@@ -1,0 +1,8 @@
+e tried all estimates described above.
+    Rules were encoded as both inside (I) and outside (O) tries, shown in figure 5.
+    Such an encoding binarizes the grammar, and compacts it.
+    I-tries are as in Charniak et al. (1998), where NP&#8212; DT JJ NN becomes NP &#8212; XDT JJ NN and XDT JJ &#8212; DT JJ, and correspond to dropping the portion of an Earley dotted rule after the dot.7 O-tries, as in Leermakers (1992), turn NP&#8212; DT JJ NN into NP &#8212; XNP&#8594; &#183; NN NN and XNP&#8594; &#183; NN &#8212; DT JJ, and correspond to dropping the portion which precedes the dot.
+    Figure 6 shows the overall savings for several estimates of each type.
+    The I-tries were superior for the coarser estimates, while O-tries were superior for the finer estimates.
+    In addition, only O-tries permit the accelerated version of F, since they explicitly declare their right requirements.
+    Additionally, with I-tries, only the top-level intermediate rules have probability less than 1, while for O-tries, one ca

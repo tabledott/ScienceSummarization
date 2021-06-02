@@ -1,0 +1,9 @@
+pruning corpus begins to drop.
+    The rule set that maximized precision becomes the final rule set.
+    In the experiments below, we compare the thresholding and incremental methods for pruning the NP grammar to a rule set that was pruned by hand.
+    When the training corpus is large, exhaustive review of the extracted rules is not practical.
+    This is the case for our initial rule set, culled from the WSJ corpus, which contains approximately 4500 base NP rules.
+    Rather than identifying and discarding individual problematic rules, our reviewer identified problematic classes of rules that could be removed from the grammar automatically.
+    In particular, the goal of the human reviewer was to discard rules that introduced ambiguity or corresponded to overly complex base NPs.
+    Within our partial parsing framework, these NPs are better identified by more informed components of the NLP system.
+    Our reviewer identified the following classes of rules as possibly troublesome: rules that contain a prepos

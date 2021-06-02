@@ -1,0 +1,7 @@
+ with a discriminative reranking algorithm.
+    The averaged perceptron algorithm (Collins, 2002) has previously been applied to various NLP tasks (Collins, 2002; Collins, 2001) for discriminative reranking.
+    The detailed algorithm can be found in (Collins, 2002).
+    In this section, we extend the conventional averaged perceptron by introducing an explicit separating plane on the feature space.
+    Our reranking approach requires three components during training: a GEN function that defines for each NL sentence a set of candidate hybrid trees; a single correct reference hybrid tree for each training instance; and a feature function (D that defines a mapping from a hybrid tree to a feature vector.
+    The algorithm learns a weight vector w that associates a weight to each feature, such that a score w&#183;(D(T) can be assigned to each candidate hybrid tree T. Given a new instance, the hybrid tree with the highest score is then picked by the algorithm as the output.
+    In this task, the GEN function is def

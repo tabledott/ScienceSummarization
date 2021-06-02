@@ -1,0 +1,5 @@
+uld be While Section 3 will define the model formally, we first proceed with an example translation from English to Chinese (note in particular that the inverted phrases between source and target): 1Throughout this paper, we will use LHS and source-side interchangeably (so are RHS and target-side).
+    In accordance with our experiments, we also use English and Chinese as the source and target languages, opposite to the Foreign-to-English convention of Brown et al. (1993).
+    Figure 3 shows how the translator works.
+    The English sentence (a) is first parsed into the tree in (b), which is then recursively converted into the Chinese string in (e) through five steps.
+    First, at the root node, we apply the rule r1 which preserves the toplevel word-order and translates the English period into its Chinese counterpart: Then, the rule r2 grabs the whole sub-tree for &#8220;the gunman&#8221; and translates it as a phrase: (r2) NP-C ( DT (the) NN (gunman) ) &#8212;* qiangshou Now we get a &#8220;partial Chinese,

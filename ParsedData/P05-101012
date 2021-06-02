@@ -1,0 +1,10 @@
+ chart items and .
+    The outside probability,&#10050;out, is calculated using&#10050;in and PCFG-LA parameters along the packed structure, like the outside probabilities for PCFGs.
+    Once we have computed and , the parse tree that maximizes is found using a Viterbi algorithm, as in PCFG parsing.
+    Several parsing algorithms that also use insideoutside calculation on packed chart have been proposed (Goodman, 1996b; Sima&#180;an, 2003; Clark and Curran, 2004).
+    Those algorithms optimize some evaluation metric of parse trees other than the posterior probability , e.g., (expected) labeled constituent recall or (expected) recall rate of dependency relations contained in a parse.
+    It is in contrast with our approach where (approximated) posterior probability is optimized.
+  
+  
+    We conducted four sets of experiments.
+    In the first set of experiments, the degree of dependency of trained models on initialization was examined because EM-style algorithms yield different results with different initial 

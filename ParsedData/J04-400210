@@ -1,0 +1,7 @@
+yes&#8217; decision rule is referred to as discriminative training (Ney 1995) because we directly take into account the overlap in the probability distributions.
+    The optimization problem under this criterion has very nice properties: There is one unique global optimum, and there are algorithms (e.g. gradient descent) that are guaranteed to converge to the global optimum.
+    Yet the ultimate goal is to obtain good translation quality on unseen test data.
+    An alternative training criterion therefore directly optimizes translation quality as measured by an automatic evaluation criterion (Och 2003).
+    Typically, the translation probability Pr(eI1  |f J1) is decomposed via additional hidden variables.
+    To include these dependencies in our log-linear model, we extend the feature functions to include the dependence on the additional hidden variable.
+    Using for example the alignment aJ1 as hidden variable, we obtain M feature functions of the form hm(eI1,f J 1, aJ1), m = 1, ... , M and the following m

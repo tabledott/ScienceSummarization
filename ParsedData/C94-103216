@@ -1,0 +1,6 @@
+Character trigram probabilities are estimated from the training corpus by computing relative fre- quency of character bigram and trigram that appeared in words tagged as t. Pt(cilci-2, q - i )  = f,(c~l~-=, ?,-~) = Nt(ci_2, Ci_l, ci) N,(c~_.~, i) (lO) where Nt(ci_2,ci_~,ci) is tile total number of times character trigram ci_2ci_~el appears in words tagged as t in the training corpus.
+  Note that the character trigram probabilities reflect the frequency of word to- kens in tile training corpus.
+  Since there are more than 3,000 characters in Japanese, trigram probabilities are smoothed by interpolated estimation to cope with the sparse-data problem.
+  It is ideal to make this character trigram model for all open clmss categories, llowever, the amount of train- ing data is too small for low frequency categories if we divide it by part of speech tags.
+  Therefore, we made trigram models only for tile 4 most frequent parts of speech that are open categories and have no conju~ gation.
+  They are common noun, prope

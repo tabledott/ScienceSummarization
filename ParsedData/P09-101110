@@ -1,0 +1,12 @@
+t al. (2008) perform joint segmentation and word alignment for machine translation, but the nature of that task is different from ours.
+    The model is defined by a generative process, which proceeds in three stages (Figure 2 shows the corresponding graphical model): 1.
+    Record choice: choose a sequence of records r = (r1, ... , r|r|) to describe, where each ri E s. 2.
+    Field choice: for each chosen record ri, select a sequence of fields fi = (fi1, .
+    .
+    .
+    , fi|fi|), where each fij E 11, ... , m}.
+    3.
+    Word choice: for each chosen field fij, choose a number cij &gt; 0 and generate a sequence of cij words.
+    The observed text w is the terminal yield formed by concatenating the sequences of words of all fields generated; note that the segmentation of w provided by c = 1cij} is latent.
+    Think of the words spanned by a record as constituting an utterance with a meaning representation given by the record and subset of fields chosen.
+    Formally, our probabilistic model places a distrib

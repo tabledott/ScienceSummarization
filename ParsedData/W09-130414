@@ -1,0 +1,8 @@
+sible, possibly, postulate, potential, potentially, presumably, probably, propose, putative, should, seem, speculate, suggest, support, suppose, suspect, think, uncertain, unclear, unkwown, unlikely, whether, would In this phase three classifiers predict for all tokens in the sentence whether a token is the first token in the scope sequence (F-scope), the last (L-scope), or neither (NONE).
+    For the sentence in 3, the classifiers assign the class F-scope to indicate, L-scope to NF(P), and NONE to the rest of tokens.
+    A fourth classifier is a metalearner that uses the predictions of the three classifiers to predict the scope classes.
+    An instance represents a pair of a hedge cue and a token from the sentence.
+    This means that all tokens in a sentence are paired with all hedge cues that occur in the sentence.
+    Hedge cues are those that have been classified as such in the previous phase.
+    Only sentences that have hedge cues are selected for this phase.
+    The three object classifiers that provi

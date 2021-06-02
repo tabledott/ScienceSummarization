@@ -1,0 +1,5 @@
+n order to calculate the semantic similarity between the words in a set, we have used a vector space model, with the following three variations: In the bag-of-words approach, for each word w in the dataset we collect every term t that appears in a window centered in w, and add them to the vector together with its frequency.
+    In the context window approach, for each word w in the dataset we collect every window W centered in w (removing the central word), and add it to the vector together with its frequency (the total number of times we saw window W around w in the whole corpus).
+    In this case, all punctuation symbols are replaced with a special token, to unify patterns like, the &lt;term&gt; said to and &#8217; the &lt;term&gt; said to.
+    Throughout the paper, when we mention a context window of size N it means N words at each side of the phrase of interest.
+    In the syntactic dependency approach, we parse the entire corpus using an implementation of an Inductive Dependency parser as described in Ni

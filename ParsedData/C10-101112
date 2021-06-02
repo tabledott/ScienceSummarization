@@ -1,0 +1,7 @@
+ally considered the reason for long parsing times.However, it is not the most time consuming component as proven by the above analysis.
+			There fore, we investigated the question further, askingwhat causes the high time consumption of the fea ture extraction?
+			In our next experiment, we left out the mapping of the features to the index of the weight vectors.The feature extraction takes 88 ms/sentence with out the mapping and 1223 ms/sentence with the mapping.
+			The feature?index mapping needs 93% of the time to extract the features and 91% of thetotal parsing time.
+			What causes the high time con sumption of the feature?index mapping?The mapping has to provide a number as an in dex for the features in the training examples and to filter out the features of examples built, while theparser predicts the dependency structures.
+			The al gorithm filters out negative features to reduce the memory requirement, even if they could improve the parsing result.
+			We will call the features built due to the training 

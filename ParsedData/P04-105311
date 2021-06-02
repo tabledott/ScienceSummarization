@@ -1,0 +1,10 @@
+.
+    Document frequency is the number of documents which include the word.
+    If the norm of the context vector is extremely small due to a lack of content words, the cosine similarity between the vector and others might be unreliable.
+    So, we also define a norm threshold in advance to eliminate short context vectors.
+    The cosine similarity between context vectors and is calculated by the following formula.
+    Cosine similarity varies from to .
+    A cosine similarity of would mean these NE pairs have exactly the same context words with the NEs appearing predominantly in the same order, and a cosine similarity of would mean these NE pairs have exactly the same context words with the NEs appearing predominantly in reverse order.
+    After we calculate the similarity among context vectors of NE pairs, we make clusters of NE pairs based on the similarity.
+    We do not know how many clusters we should make in advance, so we adopt hierarchical clustering.
+    Many clustering methods were proposed for hie

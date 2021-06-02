@@ -1,0 +1,9 @@
+zed incorrectly.
+    In this case, we assign the history a reward of -1.
+    This reward is not guaranteed to penalize all incorrect histories, because there may be false positive matches between the sentence and the environment.
+    When at least one word matches, we assign a positive reward that linearly increases with the percentage of words assigned to non-null commands, and linearly decreases with the number of output actions.
+    This reward signal encourages analyses that interpret all of the words without producing spurious actions.
+    Our second application is to a puzzle game called Crossblock, available online as a Flash game.7 Each of 50 puzzles is played on a grid, where some grid positions are filled with squares.
+    The object of the game is to clear the grid by drawing vertical or horizontal line segments that remove groups of squares.
+    Each segment must exactly cross a specific number of squares, ranging from two to seven depending on the puzzle.
+    Humans players have found this game c

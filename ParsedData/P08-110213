@@ -1,0 +1,9 @@
+To facilitate tuning the weights, we use two components of the co-occurrence model Co(W,T) to represent the co-occurrence probability of W and T, rather than use Co(W, T) itself.
+    In the rest of the paper, we will call them labelling model and generating model respectively.
+  
+  
+    Sequence segmentation and labelling problem can be solved through a viterbi style decoding procedure.
+    In Chinese Joint S&amp;T, the mission of the decoder is to find the boundary-POS labelled sequence with the highest score.
+    Given a Chinese character sequence C1:n, the decoding procedure can proceed in a left-right fashion with a dynamic programming approach.
+    By maintaining a stack of size N at each position i of the sequence, we can preserve the top N best candidate labelled results of subsequence C1:i during decoding.
+    At each position i, we enumerate all possible word-POS pairs by assigning each POS to each possible word formed from the character subsequence spanning length l = L. min(i, K) (K is assigned 20 

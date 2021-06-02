@@ -1,0 +1,9 @@
+p probability ?1(x, u) = P (b = +1|x, u) associated with each phrase-pair (x, u) in the phrase-pair inventory.
+			This is the probability that the phrase-pair (x, u) appears out of order in the transformed phrase sequence.We now describe the MJ-1 WFST.
+			In the presentation, we use upper-case letters to denote the En glish phrases (uk) and lower-case letters to denote the French phrases (xk and yk).
+			The PPI for this example is given in Table 1.
+			English French Parameters u x P (x|u) ?1(x, u) A a 0.5 0.2 A d 0.5 0.2 B b 1.0 0.4 C c 1.0 0.3 D d 1.0 0.8Table 1: Example phrase-pair inventory with trans lation and reordering probabilities.
+			The input to the WFST (Fig 4) is a lattice of French phrase sequences derived from the Frenchsentence to be translated.
+			The outputs are the cor responding English phrase sequences.
+			Note that the reordering is performed on the English side.
+			The WFST is constructed by adding a self-loop for each French phrase in the input lattice, and a 2-arc path for every pair 

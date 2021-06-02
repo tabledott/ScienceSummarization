@@ -1,0 +1,7 @@
+n constraint as defined above.
+    The marginal log-likelihood objective is then modified with a penalty for deviation from the desired set of distributions, measured by KLdivergence from the set Qx, KL(Qx||p&#952;(z|x)) = minqEQX KL(q(z)||p&#952;(z|x)).
+    The generative learning objective is to minimize: For discriminative estimation (Ganchev et al., 2008), we do not attempt to model the marginal distribution of x, so we simply have the two regularization terms: Note that the idea of regularizing moments is related to generalized expectation criteria algorithm of Mann and McCallum (2007), as we discuss in the related work section below.
+    In general, the objectives above are not convex in &#952;.
+    To optimize these objectives, we follow an Expectation Maximization-like scheme.
+    Recall that standard EM iterates two steps.
+    An E-step computes a probability distribution over the model&#8217;s hidden variables (posterior probabilities) and an M-step that updates the model&#8217;s parameters based on

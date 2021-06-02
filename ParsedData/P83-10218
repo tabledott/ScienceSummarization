@@ -1,0 +1,8 @@
+ to t, which will be a passive edge with label X if cri is the last symbol in the right-hand side of the dotted rule; otherwise it will be an active edge with the dot advanced over cri.
+    Second, the parsing strategy must place into the chart, at appropriate points, new empty active edges that will be used to combine existing passive edges.
+    The exact method used determines whether the parsing method is seen as top-down, bottom-up, or a combination of the two, The Earley parsing algorithm can be seen as a special case of chart parsing in which new empty active edges are introduced top-down and, for all k, the edge combinations involving only the first k nodes are done before any combinations that involve later nodes.
+    This particular strategy allows certain simplifications to be made in the general algorithm.
+  
+  
+    We would like to make a few informal observations at this point to clarify the relationship between DCGs and other unification grammar formalisms &#8212; LFG in particular.
+    A more d

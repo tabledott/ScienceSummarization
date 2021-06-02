@@ -1,0 +1,8 @@
+ on this example, odds are two to one that the resulting sentence will be ungrammatical.
+    Or, we could randomly choose two adjacent words and transpose them; none of the results are valid conversational English.
+    The learner we describe here takes into account not only the observed positive example, but also a set of similar but deprecated negative examples.
+    Let x&#65533; = (x1, x2,...), be our observed example sentences, where each xi E X, and let yz E &#65533; be the unobserved correct hidden structure for xi (e.g., a POS sequence).
+    We seek a model, parameterized by 0, such that the (unknown) correct analysis yi is the best analysis for xi (under the model).
+    If yz were observed, a variety of training criteria would be available (see Tab.
+    1), but yi is unknown, so none apply.
+    Typically one turns to the EM algorithm (Dempster et al., 1977), which locally maximizes where X is a random variable over sentences and Y a random variable over analyses (notation is often abbreviated, elimina

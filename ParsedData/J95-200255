@@ -1,0 +1,11 @@
+modify the parser itself so as to accept arbitrary input and find all or a chosen subset of possible substring parses.
+    In the case of Earley's parser there is a simple extension to accomplish just that, based on the notion of a wildcard state where the wildcard ? stands for an arbitrary continuation of the RHS.
+    During prediction, a wildcard to the left of the dot causes the chart to be seeded with dummy states .X for each phrasal category X of interest.
+    Conversely, a minimal modification to the standard completion step allows the wildcard states to collect all abutting substring parses: i: 11( &#8212;&#8250; it.
+    1 i : &#8212;&gt; AY.? j: k for all Y.
+    This way each partial parse will be represented by exactly one wildcard state in the final chart position.
+    A detailed account of this technique is given in Stolcke (1993).
+    One advantage over the grammar-modifying approach is that it can be tailored to use various criteria at runtime to decide which partial parses to follow.
+  
+  
+    I

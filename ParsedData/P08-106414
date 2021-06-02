@@ -1,0 +1,9 @@
+ parser (Klein and Manning, 2003) to parse bilingual sentences on the training set and Chinese sentences on the development and test sets.
+    The evaluation metric is case-sensitive BLEU-4 (Papineni et al., 2002).
+    We used GIZA++ (Och and Ney, 2004) and the heuristics &#8220;grow-diag-final&#8221; to generate m-to-n word alignments.
+    For the MER training (Och, 2003), we modified Koehn&#8217;s MER trainer (Koehn, 2004) for our tree sequence-based system.
+    For significance test, we used Zhang et al&#8217;s implementation (Zhang et al, 2004).
+    We set three baseline systems: Moses (Koehn et al., 2007), and SCFG-based and STSG-based treeto-tree translation models (Zhang et al., 2007).
+    For Moses, we used its default settings.
+    For the SCFG/STSG and our proposed model, we used the same settings except for the parameters d and h (d =1 and h = 2 for the SCFG; d =1 and h = 6 for the STSG; d = 4 and h = 6 for our model).
+    We optimized these parameters on the training and development sets: c =3, &#

@@ -1,0 +1,10 @@
+c module generates a sequence E of entities.
+    E is in principle infinite, though during inference only a finite number are ever instantiated.
+    A discourse module generates a vector Z which assigns an entity index ZZ to each mention position i.
+    Finally, a mention generation module independently renders the sequence of mentions (M) from their underlying entities.
+    The syntactic position and structure of mentions are treated as observed, including the mention forms (pronominal, etc.).
+    We use X to refer to this ungenenerated information.
+    Our model decomposes as follows: We detail each of these components in subsequent sections.
+    The semantic module is responsible for generating a sequence of entities.
+    Each entity E is generated independently and consists of a type indicator T, as well as a collection {Lr}rE7Z of word lists for each property.
+    These elements are generated as follows: Draw entity type T &#8212; 0 For each mention property r E R, Fetch {(fr, Br)} for TT Draw word list 

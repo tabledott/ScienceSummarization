@@ -1,0 +1,9 @@
+ over maximum-likelihood estimation (MLE) for the same model structure.
+    Two factors can explain the improvement.
+    First, integrating over parameter values leads to greater robustness in the choice of tag sequence, since it must have high probability over a range of parameters.
+    Second, integration permits the use of priors favoring sparse distributions, which are typical of natural language.
+    These kinds of priors can lead to degenerate solutions if the parameters are estimated directly.
+    Before describing our approach in more detail, we briefly review previous work on unsupervised POS tagging.
+    Perhaps the most well-known is that of Merialdo (1994), who used MLE to train a trigram hidden Markov model (HMM).
+    More recent work has shown that improvements can be made by modifying the basic HMM structure (Banko and Moore, 2004), using better smoothing techniques or added constraints (Wang and Schuurmans, 2005), or using a discriminative model rather than an HMM (Smith and Eisner, 2005).
+   

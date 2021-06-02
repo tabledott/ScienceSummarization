@@ -1,0 +1,6 @@
+referred to as left-to-right versus right-to-left.
+    However, for multilingual parsing which includes languages that are written from right to left (Arabic) or sometimes top to bottom (Chinese, Japanese) this terminology is confusing because it is not always clear whether a left-to-right parser for Arabic would really start with the leftmost (i.e. last) token of a sentence or, like for other languages, with the first (i.e. rightmost).
+    In general, starting with the first token (&#8220;forward&#8221;) makes more sense from a psycholinguistic point of view but starting with the last (&#8220;backward&#8221;) might be beneficial for some languages (possibly related to them being head-initial versus head-final languages).
+    The parsing order directly determines what information will be available from the history when the next decision needs to be made.
+    Stepwise parsers tend to interleave the prediction of HEAD and DEPREL.
+    All data sets except the Chinese one contain some non-projective dependency ar

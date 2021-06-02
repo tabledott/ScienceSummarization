@@ -1,0 +1,8 @@
+line.
+    One of the great difficulties with current MT pipelines is that these diverse components are often designed by separate groups and have different file format and interaction requirements.
+    This leads to a large investment in scripts to convert formats and connect the different components, and often leads to untenable and non-portable projects as well as hindering repeatability of experiments.
+    To combat these issues, the Joshua toolkit integrates most critical components of the machine translation pipeline.
+    Moreover, each component can be treated as a stand-alone tool and does not rely on the rest of the toolkit we provide.
+    Scalability: Our third design goal was to ensure that the decoder is scalable to large models and data sets.
+    The parsing and pruning algorithms are carefully implemented with dynamic programming strategies, and efficient data structures are used to minimize overhead.
+    Other techniques contributing to scalability includes suffix-array grammar extraction, paral

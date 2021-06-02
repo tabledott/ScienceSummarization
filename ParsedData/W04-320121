@@ -1,0 +1,9 @@
+.44.
+    As a concrete (and particularly clean) example of how these features can sway a decision, consider the sentence The Egyptian president said he would visit Libya today to resume the talks.
+    The generative model incorrectly considers Libya today to be a base NP.
+    However, this analysis is counter to the trend of today being a one-word constituent.
+    Two features relevant to this trend are: (CONSTITUENT n first-word = today n length = 1) and (CONSTITUENT n lastword = today n length = 1).
+    These features represent the preference of the word today for being the first and and last word in constituent spans of length 1.6 In the LEXICAL model, however, these features have quite large positive weights: 0.62 each.
+    As a result, this model makes this parse decision correctly.
+    Another kind of feature that can usefully be incorporated into the classification process is the output of other, auxiliary classifiers.
+    For this kind of feature, one must take care that its reliability on the trainin

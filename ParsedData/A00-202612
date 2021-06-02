@@ -1,0 +1,8 @@
+;quot; when generating the left children, and chl(w) =&amp;quot;from&amp;quot; when generating the right children.
+    As shown in Figure 3, the probability of a dependency tree that expresses an attribute set A can be found by computing, for each word in the tree, the probability of generating its left children and then its right children.'
+    In this formulation, the left children are generated independently from the right children.
+    As in NLG2, NLG3 assumes the uniform distribution for the length probabilities Pr(# of left children = n) and Pr(# of right children = n) up to a certain maximum length M' = 10.
+    The feature patterns for NLG3 are shown in Table 4.
+    As before, the actual features are created by matching the patterns over the training data.
+    The features in NLG3 have access to syntactic information whereas the features in NLG2 do not.
+    Low frequency features involving word n&#8212;grams tend to be unreliable; the NLG3 system therefore only uses features which occur K times or more

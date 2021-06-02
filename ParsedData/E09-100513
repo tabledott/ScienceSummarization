@@ -1,0 +1,5 @@
+ing mass into the concepts they are associated with, which thus become relevant nodes, and spread their mass over the LKB graph.
+    Therefore, the resulting personalized PageRank vector can be seen as a measure of the structural relevance of LKB concepts in the presence of the input context.
+    One problem with Personalized PageRank is that if one of the target words has two senses which are related by semantic relations, those senses reinforce each other, and could thus dampen the effect of the other senses in the context.
+    With this observation in mind we devised a variant (dubbed Ppr w2w), where we build the graph for each target word in the context: for each target word Wi, we concentrate the initial probability mass in the senses of the words surrounding Wi, but not in the senses of the target word itself, so that context words increase its relative importance in the graph.
+    The main idea of this approach is to avoid biasing the initial score of concepts associated to target word Wi, and let the 

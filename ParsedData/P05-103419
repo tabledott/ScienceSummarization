@@ -1,0 +1,8 @@
+the input not covered by that pair.
+    To limit this explosion we vary the size of the n-best list on any recursive call in inverse proportion to the number of subtrees uncovered by the current treelet.
+    This has the intuitive appeal of allowing a more thorough exploration of large treelet translation pairs (that are likely to result in better translations) than of smaller, less promising pairs.
+    Channel model scores and treelet size are powerful predictors of translation quality.
+    Heuristically pruning low scoring treelet translation pairs before the search starts allows the decoder to focus on combinations and orderings of high quality treelet pairs. translation pairs rooted at that node, as ranked first by size, then by MLE channel model score, then by Model 1 score.
+    The impact of this optimization is explored in Table 5.6.
+    The complexity of the ordering step at each node grows with the factorial of the number of children to be ordered.
+    This can be tamed by noting that given a fixed p

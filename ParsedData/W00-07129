@@ -1,0 +1,9 @@
+ent Semantic Analysis (LSA) and is well-described in the literature (Landauer, et al., 1998; Manning and Schiitze, 1999).
+    SVDs seek to decompose a matrix A into the product of three matrices U, D, and VT where U and VT are orthogonal matrices and D is a diagonal matrix containing the singular values (squared eigenvalues) of A.
+    Since SVD's can be performed which identify singular values by descending order of size (Berry, et al., 1993), LSA truncates after finding the k largest singular values.
+    This corresponds to projecting the vector representation of each word into a k-dimensional subspace whose axes form k (latent) semantic directions.
+    These projections are precisely the rows of the matrix product UkDk.
+    A typical k is 300, which is the value we used.
+    However, we have altered the algorithm somewhat to fit our needs.
+    First, to stay as close to the knowledge-free scenario as possible, we neither apply a stopword list nor remove capitalization.
+    Secondly, since SVDs are more desi

@@ -1,0 +1,11 @@
+d using the traditional formula as given in equation 1.
+    For this base comparison system we use the one built by Pantel and Lin (2002).
+    We perform 3 kinds of evaluation: 1.
+    Performance of Locality Sensitive Hash Function; 2.
+    Performance of fast Hamming distance search algorithm; 3.
+    Quality of final similarity lists. function To perform this evaluation, we randomly choose 100 nouns (vectors) from the web collection.
+    For each noun, we calculate the cosine distance using the traditional slow method (as given by equation 1), with all other nouns in the collection.
+    This process creates similarity lists for each of the 100 vectors.
+    These similarity lists are cut off at a threshold of 0.15.
+    These lists are considered to be the gold standard test set for our evaluation.
+    For the above 100 chosen vectors, we also calculate the cosine similarity using the randomized approach as given by equation 4 and calculate the mean squared error with the gold standard test set using the follow

@@ -1,0 +1,9 @@
+tering additional words not in the projection.
+    1 and 3) moves the clustering too far from those that obey the word alignment constraints, which causes the procedure to fail to converge.
+    However, we found that fixing the clustering of the words that are assigned clusters in the projection stages (lines 2 and 4) and only clustering the remaining words works well in practice.
+    Furthermore, we found that iterating the procedure has little effect on performance and set N = 1 for all subsequent experiments.
+  
+  
+    In our first set of experiments on using cross-lingual cluster features, we evaluate direct transfer of our EN parser, trained on Stanford style dependencies (De Marneffe et al., 2006), to the the ten non-EN Indo-European languages listed in Section 3.
+    We exclude KO and ZH as initial experiments proved direct transfer a poor technique when transferring parsers between such diverse languages.
+    We study the impact of using cross-lingual cluster features by comparing the strong delexical

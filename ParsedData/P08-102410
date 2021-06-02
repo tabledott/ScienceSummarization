@@ -1,0 +1,7 @@
+ns by choosing a single &#8216;best&#8217; derivation using a Viterbi or beam search algorithm.
+    In this work we show that it is both tractable and desirable to directly account for derivational ambiguity.
+    Our findings echo those observed for latent variable log-linear models successfully used in monolingual parsing (Clark and Curran, 2007; Petrov et al., 2007).
+    These models marginalise over derivations leading to a dependency structure and splits of non-terminal categories in a PCFG, respectively.
+    The parameters of our model are estimated from our training sample using a maximum a posteriori (MAP) estimator.
+    This maximises the likelihood of the parallel training sentences, D = {(e, f)}, penalised using a prior, i.e., AMAP = arg maxA pA(D)p(A).
+    We use a zero-mean Gaussian prior with the probability density function p0(Ak) a exp (&#8722;A2k/2&#65533;2).2 This results in the following log-likelihood objective and corresponding gradient: In order to train the model, we maximise equation (4

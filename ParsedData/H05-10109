@@ -1,0 +1,10 @@
+n LP similar to Equation 1 (with out the constant term ? jk c-y i,jk ): max z ? jk z i,jk [wf(x i,jk ) + c+ ?
+			(c- + c+)y i,jk ] s.t. ? j z i,jk ? 1, ? k z i,jk ? 1, 0 ? z i,jk ? 1.
+			Hence, without any approximations, we have a continuous optimization problem instead of a combinatorial one: max ?y i ?Y i wf i (y? i )+
+			i (y? i ) = d i +max z i ?Z i (wF i +c i )z i , where d i = ? jk c-y i,jk is the constant term, F i is the appropriate matrix that has a column of features f(x i,jk ) for each edge jk, c i is the vector of the loss terms c+ ?
+			(c- + c+)y i,jk and finally Z i = {z i : ? j z i,jk ? 1, ? k z i,jk ? 1, 0 ? z i,jk ? 1}.
+			Plugging this LP back into our estimation problem, we have min ||w||??
+			max z?Z ? i wF i z i + c i z i ? wF i y i , (2) where z = {z 1 , . . .
+			, z m }, Z = Z 1 ? .
+			.?Z m . In-.
+			stead of the derivation in Taskar et al (2005a), which produces a joint convex optimization problem using Lagrangian duality, here we tackle the problem in its natural saddle-point form.

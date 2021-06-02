@@ -1,0 +1,9 @@
+y.
+    If the lexicons cannot overlap, then we constrain the ability of a category to overstep its bounds.
+    Category C is stopped when it begins to encroach upon the territories of categories B and E because words in those areas have already been claimed.
+    The easiest way to take advantage of multiple categories is to add simple conflict resolution that enforces the &#8220;one sense per domain&#8221; constraint.
+    If more than one category tries to claim a word, then we use conflict resolution to decide which category should win.
+    We incorporated a simple conflict resolution procedure into Basilisk, as well as the metabootstrapping algorithm.
+    For both algorithms, the conflict resolution procedure works as follows.
+    (1) If a word is hypothesized for category A but has already been assigned to category B during a previous iteration, then the category A hypothesis is discarded.
+    (2) If a word is hypothesized for both category A and category B during the same iteration, then it to the &#8220;

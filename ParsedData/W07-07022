@@ -1,0 +1,8 @@
+hrase-based models and syntactic structures.
+			This is done using CCG supertags, which provide a rich source of syntactic information.
+			CCG contains most of the structure ofthe grammar in the lexicon, which makes it possible to introduce CCG supertags as a factor in a factored translation model (Koehn et al, 2006).
+			Fac tored models allow words to be vectors of features:one factor could be the surface form and other fac tors could contain linguistic information.
+			Factored models allow for the easy inclusion of supertags in different ways.
+			The first approach is to generate CCG supertags as a factor in the target and then apply an n-gram model over them, increasing the probability of more frequently seen sequencesof supertags.
+			This is a simple way of including syn tactic information in a phrase-based model, and has also been suggested by Hassan et al (2007).
+			For both Arabic-English (Hassan et al, 2007) and our experiments in Dutch-English, n-gram models over CCG supertags improve the quality of 

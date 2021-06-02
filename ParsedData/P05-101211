@@ -1,0 +1,7 @@
+y possible classes for a sentence.
+    However, that interpretation fails computationally because a general sentence has exponentially many possible dependency trees and thus exponentially many margin constraints.
+    To circumvent this problem we make the assumption that the constraints that matter for large margin optimization are those involving the incorrect trees y' with the highest scores s(x, y').
+    The resulting optimization made by MIRA (see Figure 3, line 4) would then be: reducing the number of constraints to the constant k. We tested various values of k on a development data set and found that small values of k are sufficient to achieve close to best performance, justifying our assumption.
+    In fact, as k grew we began to observe a slight degradation of performance, indicating some overfitting to the training data.
+    All the experiments presented here use k = 5.
+    The Eisner (1996) algorithm can be modified to find the k-best trees while only adding an additional O(k log k) factor to the r

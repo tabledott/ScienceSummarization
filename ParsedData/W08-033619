@@ -1,0 +1,9 @@
+ize and test lexicon OOV rate is still pretty high compared to MaxMatch.
+    Only examining the MT training and test lexicon size still doesn&#8217;t fully explain why CRF-Lex outperforms MaxMatch.
+    MaxMatch generates a smaller MT lexicon and lower OOV rate, but for MT it wasn&#8217;t better than CRF-Lex, which has a bigger lexicon and higher OOV rate.
+    In order to understand why MaxMatch performs worse on MT than CRF-Lex but better than CRF-basic, we use conditional entropy of segmentation variations to measure consistency.
+    We use the gold segmentation of the SIGHAN test data as a guideline.
+    For every work type wi, we collect all the different pattern variations vij in the segmentation we want to examine.
+    For example, for a word &#8220;ABC&#8221; in the gold segmentation, we look at how it is segmented with a segmenter.
+    There are many possibilities.
+    If we use cx and cy to indicate other Chinese characters and to indicate white spaces, &#8220;cx ABC cy&#8221; is the correct segmentat

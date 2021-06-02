@@ -1,0 +1,8 @@
+fault setting.
+    To perform minimum error rate training (Och, 2003) to tune the feature weights to maximize the system&#8217;s BLEU score on development set, we used optimizeV5IBMBLEU.m (Venugopal and Vogel, 2005).
+    We used default pruning settings for Pharaoh except that we set the distortion limit to 4.
+    On the same word-aligned training data, it took us about one month to parse all the 31,149 Chinese sentences using a Chinese parser written by Deyi Xiong (Xiong et al., 2005).
+    The parser was trained on articles 1 &#8722; 270 of Penn Chinese Treebank version 1.0 and achieved 79.4% (F1 measure) as well as a 4.4% relative decrease in error rate.
+    Then, we performed TAT extraction described in section 3 with h = 3 and c = 5 and obtained 350,575 TATs (88,066 used on test corpus).
+    To run our decoder Lynx on development and test corpus, we set tatTable-limit = 20, tatTable-threshold = 0, stack-limit = 100, and stack-threshold = 0.00001.
+    Table 2 shows the results on test set using Pharaoh and

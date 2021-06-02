@@ -1,0 +1,8 @@
+e baseline feature set.
+    Indeed, the MIRA system scores significantly higher on the test set; but if we break the test set down by genre, we see that the MIRA system does slightly worse on newswire and better on newsgroups.
+    (This is largely attributable to the fact that the MIRA translations tend to be longer than the MERT translations, and the newsgroup references are also relatively longer than the newswire references.)
+    When we add more features to the model, the two training methods diverge more sharply.
+    When training with MERT, the coarse-grained pair of syntax features yields a small improvement, but the finegrained syntax features do not yield any further improvement.
+    By contrast, when the fine-grained features are trained using MIRA, they yield substantial improvements.
+    We observe similar behavior for the structural distortion features: MERT is not able to take advantage of the finer-grained features, but MIRA is.
+    Finally, using MIRA to combine both classes of features, 56 in

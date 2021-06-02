@@ -1,0 +1,8 @@
+the subcategorization probabilities are smeared by extraction.
+    In examples (1), (2), and (3), bought is a transitive verb; but without knowledge of traces, example (2) in training data will contribute to the probability of bought&#8217;s being an intransitive verb.
+    Formalisms similar to GPSG (Gazdar et al. 1985) handle wh-movement by adding a gap feature to each nonterminal in the tree and propagating gaps through the tree until they are finally discharged as a trace complement (see Figure 7).
+    In extraction cases the Penn Treebank annotation coindexes a TRACE with the WHNP head of the SBAR, so it is straightforward to add this information to trees in training data.
+    A +gap feature can be added to nonterminals to describe wh-movement.
+    The top-level NP initially generates an SBAR modifier but specifies that it must contain an NP trace by adding the +gap feature.
+    The gap is then passed down through the tree, until it is discharged as a TRACE complement to the right of bought.
+    Given tha

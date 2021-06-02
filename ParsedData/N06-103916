@@ -1,0 +1,6 @@
+e until it reaches any predicative node: noun, verb, or adjective in this case.
+    Since the nodes &#8220;hit&#8221; and &#8220;coast&#8221; can be predicates in this example, we obtain three unique paths &#8220;Louisiana+T-POS:coast (Louisiana&#8217;s coast)&#8221;, &#8220;Katrina+SBJ:hit (Katrina hit something)&#8221;, and &#8220;Katrina+SBJ:hit-OBJ:coast (Katrina hit some coast)&#8221;.
+    To increase the specificity of patterns, we generate extra basic patterns by adding a node that is immediately connected to a predicative node.
+    (From this example, we generate two basic patterns: &#8220;hit&#8221; and &#8220;hit-coast&#8221; from the &#8220;Katrina&#8221; node.)
+    Notice that in a GLARF structure, the type of each argument such as subject or object is preserved in an edge even if we extract a single path of a graph.
+    Now, we replace both entities &#8220;Katrina&#8221; and &#8220;Louisiana&#8221; with variables based on their NE tags and obtain parameterized patterns: &#8220;GPE+T-POS:coast (Lo

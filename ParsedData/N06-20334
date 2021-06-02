@@ -1,0 +1,7 @@
+ent reparsing we deal with labeled constituent trees, or phrase structure trees, such as those in the Penn Treebank (after removing traces, empty nodes and function tags).
+    The general idea is the same as with dependencies.
+    First, m parsers each produce one parse tree for an input sentence.
+    We then use these m initial parse trees to guide the application of a parse algorithm to the input.
+    Instead of building a graph out of words (nodes) and dependencies (edges), in constituent reparsing we use the m initial trees to build a weighted parse chart.
+    We start by decomposing each tree into its constituents, with each constituent being a 4-tuple [label, begin, end, weight], where label is the phrase structure type, such as NP or VP, begin is the index of the word where the constituent starts, end is the index of the word where the constituent ends plus one, and weight is the weight of the constituent.
+    As with dependencies, in the simplest case the weight of each constituent is simply 1.0, but 

@@ -1,0 +1,7 @@
+be an invaluable resource in improving the performance of the supertag models as is discussed in the following sections.
+    Using structural information to filter out supertags that cannot be used in any parse of the input string reduces the supertag ambiguity but obviously does not eliminate it completely.
+    One method of disambiguating the supertags assigned to each word is to order the supertags by the lexical preference that the word has for them.
+    The frequency with which a certain supertag is associated with a word is a direct measure of its lexical preference for that supertag.
+    Associating frequencies with the supertags and using them to associate a particular supertag with a word is clearly the simplest means of disambiguating supertags.
+    Therefore a unigram model is given by: where Thus, the most frequent supertag that a word is associated with in a training corpus is selected as the supertag for the word according to the unigram model.
+    For the words that do not appear in the trainin

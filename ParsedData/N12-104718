@@ -1,0 +1,9 @@
+escribed in this paper, along with two MERT baselines, on three language pairs (French-English (Fr-En), English-French (En-Fr) and Chinese-English (ZhEn)), across three different feature-set sizes.
+    Each setting was run five times over randomized variants to improve reliability.
+    To cope with the resulting large number of configurations, we ran all experiments using an efficient phrase-based decoder similar to Moses (Koehn et al., 2007).
+    All tuning methods that use an approximate &#163; perform 15 iterations of the outer loop and return the weights that achieve the best development BLEU score.
+    When present, A was coarsely tuned (trying 3 values differing by magnitudes of 10) in our largefeature Chinese-English setting.
+    C = 0.01.
+    Online parallelization follows McDonald et al. (2010), using 8 shards.
+    We tested 20, 15, 10, 8 and 5 shards during development. tings that performed well in general.
+    Reported results use MegaM6 with a maximum of 30 iterations (as is done in Moses; the ear

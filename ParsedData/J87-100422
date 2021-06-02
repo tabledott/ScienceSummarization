@@ -1,0 +1,9 @@
+re always executed first, and shift actions are executed only when there is no remaining reduce action to execute.
+    In this way, the parser works strictly from left to right; it does everything that can be done before shifting the next word.
+    After executing &amp;quot;reduce 7&amp;quot;, the stack and the parse forest look like the following.
+    The top vertex labeled &amp;quot;12&amp;quot; is not popped away, because it still has an action not yet executed.
+    Such a top vertex, or more generally, vertices with one or more actions yet to be executed, are called &amp;quot;active&amp;quot;.
+    Thus, we have two active vertices in the stack above: one labeled &amp;quot;12&amp;quot;, and the other labeled &amp;quot;8&amp;quot;.
+    The action &amp;quot;reduce 1&amp;quot; is determined from the action table, and is associated with the latter vertex.
+    After about 20 steps (see below), the action &amp;quot;accept&amp;quot; is finally executed.
+    It returns &amp;quot;25&amp;quot; as the top node of the

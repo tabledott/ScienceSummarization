@@ -1,0 +1,10 @@
+Tz ? DP(?
+			?, ?) [draw transition parameters] For each time step i ? {1, . . .
+			, n}: ?xi ? F (?;?Ezi) [emit current observation] ?zi+1 ? Multinomial(?Tzi) [choose next state]Each state z is associated with emission param eters ?Ez . In addition, each z is also associatedwith transition parameters ?Tz , which specify a distribution over next states.
+			These transition parame ters are drawn from a DP centered on the top-level stick-breaking weights ? according to Equations (2) and (3).
+			Assume that z1 is always fixed to a special START state, so we do not need to generate it.
+			2.4 HDP-PCFG.
+			We now present the HDP-PCFG, which is the focus of this paper.
+			For simplicity, we consider Chomsky normal form (CNF) grammars, which has two typesof rules: emissions and binary productions.
+			We con sider each grammar symbol as a mixture component whose parameters are the rule probabilities for that symbol.
+			In general, we do not know the appropriate number of grammar symbols, so our strategy is to let the

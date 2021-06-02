@@ -1,0 +1,6 @@
+rd vector size.
+    The 25-dimensional vectors provided by Turian et al. (2010) provided the best performance and were faster than 50-,100- or 200dimensional ones.
+    We hypothesize that the larger word vector sizes, while capturing more semantic knowledge, result in too many SU-RNN matrix parameters to train and hence perform worse.
+    The dev set accuracy of the best model is 90.93% labeled F1 on all sentences.
+    This model resulted in 90.44% on the final test set (WSJ section 23).
+    Table 1 compares our results to the two Stanford parser variants (the unlexicalized PCFG (Klein and Manning, 2003a) and the factored parser (Klein and Manning, 2003b)) and other parsers that use richer state representations: the Berkeley parser (Petrov and Klein, 2007), Collins parser (Collins, 1997), SSN: a statistical neural network parser (Henderson, 2004), Factored PCFGs (Hall and Klein, 2012), CharniakSelfTrain: the self-training approach of McClosky et al. (2006), which bootstraps and parses additional large corpora

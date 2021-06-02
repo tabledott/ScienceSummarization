@@ -1,0 +1,7 @@
+njoys a speedup by this decoupling, with each of the two stages having a smaller search space.
+    In fact, the recursive transfer step can be done by a a linear-time algorithm (see Section 5), and the parsing step is also fast with the modern Treebank parsers, for instance (Collins, 1999; Charniak, 2000).
+    In contrast, their decodings are reported to be computationally expensive and Chiang (2005) uses aggressive pruning to make it tractable.
+    There also exists a compromise between these two approaches, which uses a k-best list of parse trees (for a relatively small k) to approximate the full forest (see future work).
+    Besides, our model, as being linguistically motivated, is also more expressive than the formally syntax-based models of Chiang (2005) and Wu (1997).
+    Consider, again, the passive example in rule r3.
+    In Chiang&#8217;s SCFG, there is only one nonterminal X, so a corresponding rule would be ( was X(1) by X(2), bei X(2) X(1) ) which can also pattern-match the English sentence: I was

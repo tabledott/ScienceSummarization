@@ -1,0 +1,9 @@
+a k-best list, whereas in posterior regularization they are used as soft constraints on full model expectations during training.
+    The latter is beneficial as the use of k-best lists does not limit the class of parsers to those whose parameters and search space decompose neatly with the DCA loss function.
+    An empirical comparison to Ganchev et al. (2009) is given in Section 5.
+    Results are given in Table 1 under the column enproj.
+    For all experiments we train the seed-stage perceptron for 5 iterations (J = 5) and we use one hundred times as much parallel data as seed stage non-parallel data (m = 100n).
+    The seed-stage nonparallel data is the training portion of each treebank, stripped of all dependency annotations.
+    After training the projected parser we average the parameters of the model (Collins, 2002).
+    The parsers evaluated using predicted part-of-speech tags use the predicted tags at both training and testing time and are thus free of any target language specific resources.
+    When

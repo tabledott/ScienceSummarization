@@ -1,0 +1,8 @@
+ule to substitute into any site, but let the model learn which substitutions are better than others.
+    To do this, we add the following features to the model: iments.
+    &#8220;Loose source/target&#8221; is the maximum number of unaligned source/target words at the endpoints of a phrase. limit, above which the glue rule must be used.
+    We trained two 5-gram language models: one on the combined English halves of the bitexts, and one on two billion words of English.
+    These were smoothed using modified Kneser-Ney (Chen and Goodman, 1998) and stored using randomized data structures similar to those of Talbot and Brants (2008).
+    The base feature set for all systems was similar to the expanded set recently used for Hiero (Chiang et al., 2009), but with bigram features (source and target word) instead of trigram features (source and target word and neighboring source word).
+    For all systems but the baselines, the features described in Section 3 were added.
+    The systems were trained using MIRA (Cramm

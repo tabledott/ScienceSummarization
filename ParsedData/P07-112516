@@ -1,0 +1,5 @@
+istic (ROC) curves), but for our purposes it provides a clear, abstracted overview of a classifier&#8217;s accuracy given a particular training set.
+    The training and classification models we have presented require the setting of two parameters: the smoothing parameter &#945; and the number of features per sample m. Analysis of the effect of varying &#945; on feature ranking reveals that when &#945; = 0, low frequency terms with spurious class correlation dominate and as &#945; increases, high frequency terms become increasingly dominant, eventually smoothing away genuine low-to-mid frequency correlations.
+    This effect is illustrated in Table 2, and from this analysis we chose &#945; = 5 as an appropriate level of smoothing.
+    We use m=5 based on the intuition that five is a rough upper bound on the number of hedge cue features likely to occur in any one sentence.
+    We use the linear kernel for SVMlight with the default setting for the regularization parameter C. We construct binary valued, L2-norma

@@ -1,0 +1,16 @@
+d of 6 consistently produced optimal or near optimal results for pre-pruning.
+			Thus, pre-pruning with a threshold of 6 was used in the experiments.
+	
+	
+			The tagger treats dots in POS tag labels as attribute separators.
+			The first attribute of a POS tag is the main category.
+			The number of additional attributes is fixed for each main category.
+			The additionalattributes are category-specific.
+			The singular at tribute of a noun and an adjective POS tag are therefore two different attributes.
+			4Each position in the POS tags of a given category corresponds to a feature.
+			The attributes oc curring at a certain position constitute the value set of the feature.
+	
+	
+			Our tagger is a HMM tagger which decomposes the context probabilities into a product of attribute probabilities.
+			The probability of an attribute given the attributes of the preceding POS tags as well as the preceding attributes of the predicted POS tagis estimated with a decision tree as described be fore.
+			The probabilities at the 

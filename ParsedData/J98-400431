@@ -1,0 +1,5 @@
+mparing the parse trees obtained using this PCFG with the trees from the tree bank would be close to zero.
+    One might try to overcome this by applying the same transformation to the test trees as was used to obtain the training trees for the PCFG, but then the resulting precision and recall measures would not be comparable across transformations.
+    For example, as two different Penn II format trees may map to the same flattened tree, the flatten transformation is in general not invertible.
+    Thus a parsing system that produces perfect flat tree representations provides less information than one that produces perfect Penn II tree representations, and one might expect that all else being equal, a parsing system using flat representations will score higher (or at least differently) in terms of precision and recall than an equivalent one producing Penn II representations.
+    The approach developed here overcomes this problem by applying an additional tree transformation step that converts the parse trees 

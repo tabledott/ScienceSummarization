@@ -1,0 +1,8 @@
+d by the parser during the parse of a sentence, after each noun phrase has been parsed.
+    It relies heavily on the domain model for both determining semantic wen formedness and building partial semantic representations of the noun phrases.
+    For example, in the :,etitence, field engineer replaced disk drive at 11/2/0800, the phrase disk drive at 11/2/0800 is a syntactically acceptable noun phrase, (as in participants at the meeting).
+    However, it is not semantically acceptable in that at 11/20/800 is intended to designate the time of the replacement, not a property of the disk drive.
+    Noun phrase semantics will inform the parser that the noun phrase is not semantically acceptable, and the parser can then look for another parse.
+    In order for this capability to be fully utilized, however, an extensive set of domain-specific rules about semantic acceptability is required.
+    At present we have only the minimal set used for the development of the basic mechanism.
+    For example, in the case descri

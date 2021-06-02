@@ -1,0 +1,6 @@
+rt and Casella, 2004).
+			Even though we don?t know the full posterior, the samples can be used to form an empirical estimate of the target distribution.
+			In LDAWN, the samples contain a configuration of the latent semantic states of the system, revealing the hidden topics and paths that likely led to the observed data.Gibbs sampling reproduces the posterior distri bution by repeatedly sampling each hidden variable conditioned on the current state of the other hidden variables and observations.
+			More precisely, the state is given by a set of assignments where each wordis assigned to a path through one of K WORDNET WALK topics: uth word wu has a topic assignment zu and a path assignment ?u. We use z?u and ??u to represent the topic and path assignments of all words except for u, respectively.
+			Sampling a new topic for the word wu requires us to consider all of the paths that wu can take in each topic and the topics of the other words in the document u is in.
+			The probability of wu taking on topic i is 

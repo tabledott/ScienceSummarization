@@ -1,0 +1,7 @@
+(X, w), so that the effect of correlations with X.a1 or X.a2 is eliminated.
+    We still need to compute P(wjX.a1 V X.a2).
+    Because in the definition of P(wjX.a1 V X.a2), the arguments X.a1 and X.a2 were considered independent causes, P(wjX.a1 V X.a2) can be computed with the noisy-or operator (Pearl, 1986): The quantity P(wja) represents the probability that the word w appears in a sentence due only to the presence of a, and it could be estimated using counts on a sufficiently large corpus.
+    For our experimental evaluation, we used the following approximation: given an argument a, a set of sentences containing a are extracted from web documents (details in Section 6).
+    Then P(wja) is simply approximated with the ratio of the number of sentences containing w over the total number of sentences, i.e.
+    P(wja) = C(w, a)/C(a).
+    Because this may be an overestimate (w may appear in a sentence containing a due to causes other than a), and also because of data sparsity, the quantity T(w) may sometimes r

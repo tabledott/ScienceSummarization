@@ -1,0 +1,9 @@
+ and used as the seed for the next bootstrapping iteration.
+    We experimented with three scoring functions for selecting nodes.
+    The In-Degree (inD) score for vertex v is the sum of the weights of all incoming edges (u, v), where u is a trusted class member.
+    Intuitively, this captures the popularity of v among instances that have already been identified as good instances.
+    The Best Edge (BE) score for vertex v is the maximum edge weight among the incoming edges (u, v), where u is a trusted class member.
+    The Key Player Problem (KPP) measure is used in social network analysis (Borgatti and Everett, 2006) to identify nodes whose removal would result in a residual network of minimum cohesion.
+    A node receives a high value if it is highly connected and relatively close to most other nodes in the graph.
+    The KPP score for vertex v is computed as: where d(u, v) is the shortest path between two vertices, where u is a trusted node.
+    For tie-breaking, the distances are multiplied by the weight 

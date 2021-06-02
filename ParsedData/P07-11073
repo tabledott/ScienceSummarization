@@ -1,0 +1,12 @@
+ model of mentions in a document corpus.
+    Our model captures both withinand cross-document coreference.
+    At the top, a hierarchical Dirichlet process (Teh et al., 2006) captures cross-document entity (and parameter) sharing, while, at the bottom, a sequential model of salience captures within-document sequential structure.
+    As a joint model of several kinds of discourse variables, it can be used to make predictions about either kind of coreference, though we focus experimentally on within-document measures.
+    To the best of our ability to compare, our model achieves the best unsupervised coreference performance.
+  
+  
+    We adopt the terminology of the Automatic Context Extraction (ACE) task (NIST, 2004).
+    For this paper, we assume that each document in a corpus consists of a set of mentions, typically noun phrases.
+    Each mention is a reference to some entity in the domain of discourse.
+    The coreference resolution task is to partition the mentions according to referent.
+    Mentions can b

@@ -1,0 +1,8 @@
+the size of thedataset and the distribution of class sizes.
+			There fore, instead of taking the raw conditional entropy, we normalize this value by the maximum reduction in entropy the clustering information could provide, specifically, H(C).
+			Note that H(C|K) is maximal (and equals H(C)) when the clustering provides no new information ? the class distribution within each cluster is equal to the overall class distribiution.
+			H(C|K) is 0 when each cluster contains only members of a single class,a perfectly homogenous clustering.
+			In the degen erate case where H(C) = 0, when there is only a single class, we define homogeneity to be 1.
+			For a perfectly homogenous solution, this normalization, H(C|K) H(C) , equals 0.
+			Thus, to adhere to the conventionof 1 being desirable and 0 undesirable, we define ho mogeneity as: h = { 1 if H(C,K) = 0 1?
+			H(C|K)H(C) else (1) where H(C|K) = ? |K| ? k=1 |C| ? c=1 ack N log ack ?|C| c=1 ack H(C) = ? |C| ? c=1 ?|K| k=1 ack n log ?|K| k=1 ack n Completeness: Completene

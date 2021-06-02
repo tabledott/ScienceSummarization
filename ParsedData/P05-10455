@@ -1,0 +1,6 @@
+alk the Markov chain, occasionally outputting samples, and that these samples are guaranteed to be drawn from the target distribution.
+    Furthermore, the chain is defined in very simple terms: from each state sequence we can only transition to a state sequence obtained by changing the state at any one position i, and the distribution over these possible transitions is just where s&#8722;i is all states except si.
+    In other words, the transition probability of the Markov chain is the conditional distribution of the label at the position given the rest of the sequence.
+    This quantity is easy to compute in any Markov sequence model, including HMMs, CMMs, and CRFs.
+    One easy way to walk the Markov chain is to loop through the positions i from 1 to N, and for each one, to resample the hidden state at that position from the distribution given in Equation 1.
+    By outputting complete sequences at regular intervals (such as after resampling all N positions), we can sample sequences from the conditional di

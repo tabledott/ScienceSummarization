@@ -1,0 +1,7 @@
+r for the remaining pages.
+    By examining the dendrogram in Figure 3, it is clear that the clusters start with documents with matching features, and then the other documents cluster around this core.
+    In addition to improving disambiguation performance, these extracted features help distinguish the different clusters, and provide information about the different people.
+    Another method for using these extracted features is to give higher weight to words which have ever been seen as filling a pattern.
+    For example, if 1756 is extracted as a birth year from a syntactic-based pattern for the polysemous name, then whenever 1756 is observed anywhere in context (outside an extraction pattern), it is given a higher weighting and added to the document vector as a potential biographic feature.
+    In our experiments, we did this only for words which appeared as values for a feature more than a threshold of 4 times.
+    Then, whenever the word was seen in a document, it was given a weight equal to the log of 

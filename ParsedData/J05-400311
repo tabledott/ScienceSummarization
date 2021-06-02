@@ -1,0 +1,7 @@
+ing procedure is both slow (it looks at all possible document pairs, so it is quadratic in the number of documents) and imprecise (due to noise in the dictionary, the query will contain many wrong words).
+    We attempt to fix these problems by using the following heuristic: we consider it likely that articles with similar content have publication dates that are close to each other.
+    Thus, each query is actually run only against English documents published within a window of five days around the publication date of the foreign query document; we retrieve the best 20 of these documents.
+    Each query is thus run against fewer documents, so it becomes faster and has a better chance of getting the right documents at the top.
+    Our experiments have shown that the final performance of the system does not depend too much on the size of the window (for example, doubling the size to 10 days made no difference).
+    However, having no window at all leads to a decrease in the overall performance of the system.
+  

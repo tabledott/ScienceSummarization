@@ -1,0 +1,12 @@
+52;(t)) using L-BFGS until t = T. In all experiments, we set &#955; = 0.01, T = 5, and K = 100.
+    After training, given a new utterance x, our system outputs the most likely y, summing out the latent logical form z: argmaxy p&#952;(T)(y  |x, z &#8712; &#732;ZL,&#952;(T)).
+  
+  
+    We tested our system on two standard datasets, GEO and JOBS.
+    In each dataset, each sentence x is annotated with a Prolog logical form, which we use only to evaluate and get an answer y.
+    This evaluation is done with respect to a world w. Recall that a world w maps each predicate p &#8712; P to a set of tuples w(p).
+    There are three types of predicates in P: generic (e.g., argmax), data (e.g., city), and value (e.g., CA).
+    GEO has 48 non-value predicates and JOBS has 26.
+    For GEO, w is the standard US geography database that comes with the dataset.
+    For JOBS, if we use the standard Jobs database, close to half the y&#8217;s are empty, which makes it uninteresting.
+    We therefore generated a random Jobs databas

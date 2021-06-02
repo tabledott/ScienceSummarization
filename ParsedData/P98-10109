@@ -1,0 +1,10 @@
+ition.
+    The score f (t) of a tile t is a function of its positive and negative counts.
+    The overall score of a situated candidate is generally a function of the scores of all the tiles for the candidate, as well as the relations between the tiles' positions.
+    These relations include tile adjacency, overlap between tiles, the amount of context in a tile, and so on.
+    In our instantiation of the MBSL schema, we define the score f(t) of a tile t as the ratio of its positive count pos(t) and its total count total(t): for a predefined threshold 0.
+    Tiles with a score of 1, and so with sufficient positive evidence, are called matching tiles.
+    Each matching tile gives supporting evidence that a part of the candidate can be a part of a target instance.
+    In order to combine this evidence, we try to cover the entire candidate by a set of matching tiles, with no gaps.
+    Such a covering constitutes evidence that the entire candidate is a target instance.
+    For example, consider the matching tiles 

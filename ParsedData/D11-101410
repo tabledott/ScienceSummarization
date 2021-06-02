@@ -1,0 +1,11 @@
+vectors in x.
+    The goal of our structureprediction RAE is to minimize the reconstruction error of all vector pairs of children in a tree.
+    We define A(x) as the set of all possible trees that can be built from an input sentence x.
+    Further, let T (y) be a function that returns the triplets of a tree indexed by s of all the non-terminal nodes in a tree.
+    Using the reconstruction error of Eq.
+    4, we compute We now describe a greedy approximation that constructs such a tree.
+    Greedy Unsupervised RAE.
+    For a sentence with m words, we apply the autoencoder recursively.
+    It takes the first pair of neighboring vectors, defines them as potential children of a phrase (c1; c2) = (x1; x2), concatenates them and gives them as input to the autoencoder.
+    For each word pair, we save the potential parent node p and the resulting reconstruction error.
+    After computing the score for the first pair, the network is shifted by one position and takes as input vectors (c1, c2) = (x2, x3) and again comp

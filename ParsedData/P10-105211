@@ -1,0 +1,6 @@
+y consists in (i) computing the Newton update in a well-chosen orthant; (ii) performing the update, which might cause some component of the parameter vector to change sign; and (iii) projecting back the parameter value onto the initial orthant, thereby zeroing out those components.
+    In (Gao et al., 2007), the authors show that OWL-QN is faster than the algorithm proposed by Kazama and Tsujii (2003) and can perform model selection even in very high-dimensional problems, with no loss of performance compared to the use of `2 penalty terms.
+    Stochastic gradient (SGD) approaches update the parameter vector based on an crude approximation of the gradient (4), where the computation of expectations only includes a small batch of observations.
+    SGD updates have the following form where &#951; is the learning rate.
+    In (Tsuruoka et al., 2009), various ways of adapting this update to `1penalized likelihood functions are discussed.
+    Two effective ideas are proposed: (i) only update parameters that correspo

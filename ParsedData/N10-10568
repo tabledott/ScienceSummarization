@@ -1,0 +1,6 @@
+MI) between A and a.7 We write RANK(TRev) to denote the PMI-based ranking of A &#8212;* a E TRev, and use SIMPL to denote our most basic ranking method, RANK(R(Seed)).
+    Two ideas for bootstrapping We also considered bootstrapping as a way to be able to utilize revisions whose comments are not in the initial Seed set.
+    Our first idea was to iteratively expand the set of trusted comments to include those that most often accompany already highly ranked simplifications.
+    Unfortunately, our initial implementations involved many parameters (upper and lower commentfrequency thresholds, number of highly ranked simplifications to consider, number of comments to add per iteration), making it relatively difficult to tune; we thus omit its results.
+    Our second idea was to iteratively expand the set of trusted revisions, adding those that contain already highly ranked simplifications.
+    While our initial implementation had fewer parameters than the method sketched above, it tended to terminate quickly, so th

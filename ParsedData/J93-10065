@@ -1,0 +1,8 @@
+ment with each sentence before a pass: the fourth column gives the number of true sentence alignments relative to the total number of candidates in the AST.
+    Recall that the final alignment is always a subset of the hypotheses in the AST in every preceding pass.
+    Figure 5 shows the true sentence alignment for the first 50 sentences (dots), and how the algorithm discovered them: in the first pass, only a few sentences are set into correspondence (circles); after the second pass (crosses) already almost half of the correspondences are found.
+    Note that there are no wrong alignments in the first two passes.
+    In the third pass, almost all of the remaining alignments are found (for the first 50 sentences in the figure: all), and a final pass usually completes the alignment.
+    Our algorithm produces very favorable results when allowed to converge gradually.
+    Processing time in the original LISP implementation was high, typically several hours for each pass.
+    By trading CPU time for memory massiv

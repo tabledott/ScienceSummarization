@@ -1,0 +1,8 @@
+S information for word segmentation, segmentation and POS tagging can be viewed as a single task: given a raw Chinese input sentence, the joint POS tagger considers all possible segmented and tagged sequences, and chooses the overall best output.
+    A major challenge for such a joint system is the large search space faced by the decoder.
+    For a sentence with n characters, the number of possible output sequences is O(2n&#8722;1 &#183; Tn), where T is the size of the tag set.
+    Due to the nature of the combined candidate items, decoding can be inefficient even with dynamic programming.
+    Recent research on Chinese POS tagging has started to investigate joint segmentation and tagging, reporting accuracy improvements over the pipeline approach.
+    Various decoding approaches have been used to reduce the combined search space.
+    Ng and Low (2004) mapped the joint segmentation and POS tagging task into a single character sequence tagging problem.
+    Two types of tags are assigned to each character to re

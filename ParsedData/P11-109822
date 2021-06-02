@@ -1,0 +1,7 @@
+ns (e.g., the subject of release) serve the dual purpose of both inducing the template slots, and extracting appropriate slot fillers from text.
+    A document is labeled for a template if two different conditions are met: (1) it contains at least one trigger phrase, and (2) its average per-token conditional probability meets a strict threshold.
+    Both conditions require a definition of the conditional probability of a template given a token.
+    The conditional is defined as the token&#8217;s importance relative to its uniqueness across all templates.
+    This is not the usual conditional probability definition as IR-corpora are different sizes. where PIR,(w) is the probability of pattern w in the IR-corpus of template t. where Ct(w) is the number of times word w appears in the IR-corpus of template t. A template&#8217;s trigger words are defined as words satisfying P(tIw) &gt; 0.2.
+    Trigger phrases are thus template-specific patterns that are highly indicative of that template.
+    After identifying tr

@@ -1,0 +1,8 @@
+ incorporate simple agreement constraints between coreferent mentions.
+    Since we currently allow proper and nominal mentions to corefer only with matching head mentions, agreement is only a concern for pronouns.
+    Traditional linguistic theory stipulates that coreferent mentions must agree in number, person, gender, and entity type (e.g. animacy).
+    Here, we implement person, number and entity type agreement.6 A number feature is assigned to each mention deterministically based on the head and its POS tag.
+    For entity type, we use NER labels.
+    Ideally, we would like to have information about the entity type of each referential NP, however this information is not easily obtainable.
+    Instead, we opt to utilize the Stanford NER tagger (Finkel et al., 2005) over the sentences in a document and annotate each NP with the NER label assigned to that mention head.
+    For each mention, when its NP is assigned an NER label we allow it to only be compatible with that NER label.7 For pronouns, we determin

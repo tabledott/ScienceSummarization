@@ -1,0 +1,14 @@
+ tokens T: We set p and r to the average values of unigram precision and precision ratio across multiple development sets.
+    Substituting the above factors in Equation 6, we find that the MBR decision does not depend on T; therefore any value of T can be used.
+  
+  
+    Figure 1 shows a toy lattice and the final MBR automaton (Section 4) for BLEU with a maximum ngram order of 2.
+    We note that the MBR hypothesis (bcde) has a higher decoder cost relative to the MAP hypothesis (abde).
+    However, bcde gets a higher expected gain (Equation 6) than abde since it shares more n-grams with the Rank-3 hypothesis (bcda).
+    This illustrates how a lattice can help select MBR translations that can differ from the MAP translation.
+    Substituting the derivatives in Equation 8 gives
+  
+  
+    We now present experiments to evaluate MBR decoding on lattices under the linear corpus BLEU gain.
+    We start with a description of the data sets and the SMT system.
+    We present our experiments on the constrained data tra

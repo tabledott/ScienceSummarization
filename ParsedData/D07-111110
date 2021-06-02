@@ -1,0 +1,10 @@
+ Q0 and prob ability P0 = 1.0.
+			S0 and Q0 are initialized in the same way as S and Q in the deterministic algo rithm.
+			The best-first algorithm then loops while H is non-empty.
+			At each iteration, first a state Tcurrent is popped from the top of H. If Tcurrent corresponds to a final state (Qcurrent is empty and Scurrent contains a single item), we return the single item in Scurrent as the dependency structure corresponding to the input sentence.
+			Otherwise, we get a list of parser actions act0...actn (with associated probabilities Pact0...Pactn) corresponding to state Tcurrent.
+			For each of these parser actions actj, we create a new parser state Tnew by applying actj to Tcurrent, and set the probability Tnew to be Pnew = Pcurrnet * Pactj.
+			Then, Tnew is inserted into the heap H. Once new states have been inserted onto H for each of the n parser actions, we move on to the next iteration of the algorithm.
+	
+	
+			For each of the ten languages for which training data was provided in the multilingual t

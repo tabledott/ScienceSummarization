@@ -1,0 +1,8 @@
+gorithm. essentially the same.
+    The transitions used by list-based parsers are again composed of two types of actions: adding (labeled) arcs to A and manipulating the lists &#955;1 and &#955;2, and the input buffer &#946;.
+    By combining such actions in different ways, we can construct transition systems with different properties.
+    We will now define two such systems, which we call non-projective and projective, respectively, after the classes of dependency graphs that they can handle.
+    A clarification may be in order concerning the use of lists instead of stacks for this family of algorithms.
+    In fact, most of the transitions to be defined subsequently make no essential use of this added flexibility and could equally well have been formalized using two stacks instead.
+    However, we will sometimes need to append two lists into one, and this would not be a constant-time operation using standard stack operations.
+    We therefore prefer to define these structures as lists, even though they will 

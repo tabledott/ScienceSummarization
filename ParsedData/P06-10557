@@ -1,0 +1,6 @@
+ algorithm is linear in the length of the sentence rather than cubic (Pereira and Schabes, 1992).
+    For our lexicon, we used a simple yet robust method for dealing with unknown and rare words by extracting a small number of features from the word and then computing appproximate tagging probabilities.3 EM is only guaranteed to find a local maximum of the likelihood, and, indeed, in practice it often gets stuck in a suboptimal configuration.
+    If the search space is very large, even restarting may not be sufficient to alleviate this problem.
+    One workaround is to manually specify some of the annotations.
+    For instance, Matsuzaki et al. (2005) start by annotating their grammar with the identity of the parent and sibling, which are observed (i.e. not latent), before adding latent annotations.4 If these manual annotations are good, they reduce the search space for EM by constraining it to a smaller region.
+    On the other hand, this pre-splitting defeats some of the purpose of automatically learning lat

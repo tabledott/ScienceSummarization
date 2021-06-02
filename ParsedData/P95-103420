@@ -1,0 +1,8 @@
+n an input semantic pattern, we locate the first grammar rule that matches it, i.e., a rule whose left-hand-side features except :rest are contained in the input pattern.
+    The feature :rest is our mechanism for allowing partial matchings between rules and semantic inputs.
+    Any input features that are not matched by the selected rule are collected in :rest, and recursively matched against other grammar rules.
+    For the remaining features, we compute new estructures using the rule's right-hand side.
+    In this example, the rule gives four ways to make a syntactic S, two ways to make an infinitive, and one way to make an NP.
+    Corresponding word lattices are built out of elements that include: Any failure inside an alternative right-hand side of a rule causes that alternative to fail and be ignored.
+    When all alternatives have been processed, results are collected into a new e-structure.
+    If two or more word lattices can be created from one rule, they are merged with a final or. the Because our 

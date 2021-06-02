@@ -1,0 +1,9 @@
+by cd(|s|)).
+    Here, we process the mining algorithm by assuming that each transaction (support example Xj) has its frequency Cdyj&#945;j, where Cd = max(cd(1), cd(2), ... , cd(d)).
+    The weight w(s) is calculated by w(s) = &#969;(s) x cd(|s|)/Cd, where &#969;(s) is a frequency of s, given by the original PrefixSpan.
+    We first divide the support examples into positive (yi &gt; 0) and negative (yi &lt; 0) examples, and process mining independently.
+    The result can be obtained by merging these two results.
+    In the original PrefixSpan, minimum support is an integer.
+    In our mining task, we can give a real number to minimum support, since each transaction (support example Xj) has possibly non-integer frequency Cdyj&#945;j.
+    Minimum supports &#963;pos and &#963;neg control the rate of approximation.
+    For the sake of convenience, we just give one parameter &#963;, and calculate &#963;pos and &#963;neg as follows After the process of mining, a set of tuples Q = {(s, w(s))I is obtained, where s 

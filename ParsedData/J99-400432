@@ -1,0 +1,8 @@
+ntaining the empty derivation, { }: concatenation with the empty derivation is an identity operation.
+    Derivations need not be complete.
+    For instance, for CFGs, {(X &#8212;&gt; YZ, Y &#8212;&gt; y)} is a valid element, as is {(Y &#8212;&gt; y, X &#8212;&gt; x)}.
+    In fact, { (X &#8212;&gt; A, B &#8212;&gt; b)} is a valid element, although it could not occur in a valid grammar derivation, or in a correctly functioning parser.
+    An example of concatenation Potentially, derivation forests are sets of infinitely many items.
+    However, it is still possible to store them using finite-sized representations.
+    Elsewhere (Goodman 1998), we show how to implement derivation forests efficiently, using pointers, in a manner analogous to the typical implementation of parse forests, and also similar to the work of Billot and Lang (1989).
+    Using these techniques, both union and concatenation can be implemented in constant time, and even infinite unions will be reasonably efficient. probable derivation of th

@@ -1,0 +1,9 @@
+ enough information such that the internal nodes of the structure are irrelevant.
+    The message passing process is initiated by sending initial items externally to lexical nodes (e.g., N, P, ...).
+    The initial items represent the words in the sentence.
+    The attribute values of these items are obtained from the lexicon.
+    In case of lexical ambiguity, each possibility is represented by an item.
+    For example, suppose the input sentence is &amp;quot;I saw a man,&amp;quot; then the word &amp;quot;saw&amp;quot; is represented by the following two items sent to nodes N and V:NP2 respectively: &lt; [1 , 1.]
+    , ( (cat n) -plu (nform norm)), 0&gt; &lt;[1,1], ((cat v) (cform fin) -pas (tense past)), {}&gt; When a node receives an item, it attempts to combine the item with items from other nodes to form new items.
+    Two items The result of the combination is a new item: &lt;[i1j2], unify(Ai, A2), Si U S2&gt;&#8226; The new items represent larger parse trees resulted from combining smaller ones.
+    The

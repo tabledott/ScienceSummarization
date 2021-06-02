@@ -1,0 +1,7 @@
+ty derivation, which is the standard practice in SMT, or for the maximum probability translation which is what we actually want from our model, i.e. the best translation.
+    The results clearly indicate the value in optimising translations, rather than derivations.
+    Maxtranslation decoding for the model trained on single derivations has only a small positive effect, while for the latent variable model the impact is much larger.6 For example, our max-derivation model trained on the Europarl data translates carte sur la table as on the table card.
+    This error in the reordering of card (which is an acceptable translation of carte) is due to the rule (X) &#8212;* (carte X 1, X 1 card) being the highest scoring rule for carte.
+    This is reasonable, as carte is a noun, which in the training data, is often observed with a trailing adjective which needs to be reordered when translating into English.
+    In the example there is no adjective, but the simple hierarchical grammar cannot detect this.
+    The max-

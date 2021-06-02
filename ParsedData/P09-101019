@@ -1,0 +1,12 @@
+ remove.
+    This set of features enables us to match words (e.g., &#8220;row&#8221;) with objects in the environment (e.g., a move that removes a horizontal series of squares).
+    In total, there are 8,094 features.
+    Reward Function For Crossblock it is easy to directly verify task completion, which we use as the basis of our reward function.
+    The reward r(h) is -1 if h ends in a state where the puzzle cannot be completed.
+    For solved puzzles, the reward is a positive value proportional to the percentage of words assigned to non-null commands.
+  
+  
+    Datasets For the Windows domain, our dataset consists of 128 documents, divided into 70 for training, 18 for development, and 40 for test.
+    In the puzzle game domain, we use 50 tutorials, divided into 40 for training and 10 for test.9 Statistics for the datasets are shown below.
+    The data exhibits certain qualities that make for a challenging learning problem.
+    For instance, there are a surprising variety of linguistic constructs &#8212; as

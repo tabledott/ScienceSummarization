@@ -1,0 +1,8 @@
+ value may indicate that the optimizer is struggling with local optima and changing hyperparameters (e.g. more random restarts in MERT) could improve system performance.
+    Overfitting effects stest As with any optimizer, there is a danger that the optimal weights for a tuning set may not generalize well to unseen data (i.e., we overfit).
+    For a randomized optimizer, this means that parameters can generalize to different degrees over multiple optimizer runs.
+    We measure the spread induced by optimizer randomness on the test set metric score stest, as opposed to the overfitting effect in isolation.
+    The computation of stest is identical to sdev except that the mis are the translation metrics calculated on the test set.
+    In Table 1, we observe that stest &gt; sdev, indicating that optimized parameters are likely not generalizing well.
+    Test set selection ssel The final extraneous variable we consider is the selection of the test set itself.
+    A good test set should be representative of the dom

@@ -1,0 +1,11 @@
+eded at train- ing time.
+  The search was constrained to disallow multiple root links.
+  2.2 Handling Nonprojective Links Although only 0.4% of the links in the training set are nonprojective, 7.6% of the sentences contain at least one nonprojective link.
+  Many of these links represent long-range dependencies ?
+  such as wh- movement ?
+  that are valuable for semantic pro- cessing.
+  Nonprojectivity cannot be handled by span-based dynamic programming algorithms.
+  For parsers that consider features of single links only, the Chu-Liu/Edmonds algorithm can be used in- stead.
+  However, this algorithm cannot be gen- eralized to the second-order setting ?
+  McDonald and Pereira (2006) proved that this problem is NP- hard, and described an approximate greedy search algorithm.
+  To simplify implementation, we instead opted for the pseudo-projective approach (Nivre and Nilsson, 2005), in which nonprojective links are lifted upwards in the tree to achieve projectivity, and special trace labels are used to enable reco

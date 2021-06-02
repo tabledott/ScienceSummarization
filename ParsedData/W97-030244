@@ -1,0 +1,9 @@
+ than either alone, in some cases running 40% faster than global thresholding alone, while achieving the same performance level.
+    The combination generally runs twice as fast as beam thresholding alone, although up to a factor of three.
+    Multiple-pass parsing improves even further on our experiments combining beam and global thresholding.
+    Note that we used both beam and global thresholding for both the first and second pass in these experiments.
+    The first pass grammar was the very simple terminal-prime grammar, and the second pass grammar was the usual 6-gram grammar.
+    We evaluated multiple-pass parsing slightly differently from the other thresholding techniques.
+    In the experiments conducted here, our first and second pass grammars were very different from each other.
+    For a given parse to be returned, it must be in the intersection of both grammars, and reasonably likely according to both.
+    Since the first and second pass grammars capture different information, parses which are lik

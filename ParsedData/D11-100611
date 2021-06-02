@@ -1,0 +1,9 @@
+ We evaluate in the latter setting to measure performance in a more realistic scenario &#8211; when no target language resources are available.
+  
+  
+    To simplify discussion, we first focus on the most common instantiation of parser transfer in the literature: transferring from English to other languages.
+    In the next section we expand our system to allow for the inclusion of multiple source languages.
+    We start with the observation that discriminatively trained dependency parsers rely heavily on part-ofspeech tagging features.
+    For example, when training and testing a parser on our English data, a parser with all features obtains an UAS of 89.3%3 whereas a delexicalized parser &#8211; a parser that only has nonlexical features &#8211; obtains an UAS of 82.5%.
+    The key observation is that part-of-speech tags contain a significant amount of information for unlabeled dependency parsing.
+    This observation combined with our universal part-of-speech tagset, leads to the idea of direct transfer, i

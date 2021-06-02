@@ -1,0 +1,11 @@
+ontrast to Carroll and Rooth&#8217;s (1998) approach, the model proposed by Collins (1997) does not compute rule probabilities directly.
+    Rather, they are generated using a Markov process that makes certain independence assumptions.
+    A grammar rule LHS &#57736; RHS can be written as P &#57736; Lm ...L1 H R1 ...Rn where P is the mother and H is the head daughter.
+    Let l(C) be the head word of C and t(C) the tag of the head word of C. Then the probability of a rule is defined as: Here, Ph is the probability of generating the head, and Pl and Pr are the probabilities of generating the nonterminals to the left and right of the head, respectively; d(i) is a distance measure.
+    (L0 and R0 are stop categories.)
+    At this point, the model is still unlexicalized.
+    To add lexical sensitivity, the Ph, Pr and Pl probability functions also take into account head words and their POS tags:
+  
+  
+    This experiment was designed to compare the performance of the three models introduced in the last section.
+  

@@ -1,0 +1,7 @@
+    This gives us a total of 71 machine learning features per word.
+    We specify a window of two words preceding and following the current word, using all 71 features for each word in this 5-word window.
+    In addition, two dynamic features are used, namely the classification made for the preceding two words.
+    For each of the ten classifiers, Yamcha then returns a confidence value for each possible value of the classifier, and in addition it marks the value that is chosen during subsequent Viterbi decoding (which need not be the value with the highest confidence value because of the inclusion of dynamic features).
+    We train on TR1 and report the results for the ten Yamcha classifiers on TE1 and TE2, using all simple tokens,7 including punctuation, in Figure 3.
+    The baseline BL is the most common value associated in the training corpus TR1 with every feature for a given word form (unigram).
+    We see that the baseline for TE1 is quite high, which we assume is due to the fact that when there is amb

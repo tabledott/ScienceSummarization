@@ -1,0 +1,11 @@
+hen emit the aggregated counts instead of emitting ?1?
+			each time an n-gram is encountered.The reduce function is the same as for vocabu lary generation.
+			The subsequent step of language model generation will calculate relative frequencies r(wi|wi?1i?k+1) (see Eq.
+			3).
+			In order to make that step efficient we use a sharding function that places the values needed for the numerator and denominator into the same shard.
+			Computing a hash function on just the first wordsof n-grams achieves this goal.
+			The required n grams wii?n+1 and wi?1i?n+1 always share the same first word wi?n+1, except for unigrams.
+			For that we need to communicate the total count N to all shards.
+			Unfortunately, sharding based on the first word only may make the shards very imbalanced.
+			Someterms can be found at the beginning of a huge num ber of n-grams, e.g. stopwords, some punctuation marks, or the beginning-of-sentence marker.
+			As an example, the shard receiving n-grams starting with the beginning-of-sentence marker t

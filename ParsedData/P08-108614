@@ -1,0 +1,7 @@
+ parameters of each cluster well enough for the algorithm to converge.
+    In (Emami and Jelinek, 2005) the authors observe that only considering a subset of the vocabulary of half the size of the complete vocabulary in each iteration does not affect the time required by the exchange algorithm to converge.
+    Yet each iteration is sped up by approximately a factor of two.
+    The quality of class-based models trained using the resulting clusterings did not differ noticeably from those trained using clusterings for which the full vocabulary was considered in each iteration.
+    Our experiments showed that this also seems to be the case for the distributed exchange algorithm.
+    While considering very large subsets of the vocabulary in each iteration can cause the algorithm to not converge at all, considering only a very small fraction of the words for exchange will increase the number of iterations required to converge.
+    In experiments we empirically determined that choosing a subset of roughly a third of

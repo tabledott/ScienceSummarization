@@ -1,0 +1,10 @@
+it contains less information.
+			This is covered by three numerical features measuring the length of the text, of the hypothesis and the relative length of hypothesis with regard to the text.
+	
+	
+			3.1 Semantic Interpretation.
+			We use a robust wide-coverage CCG-parser (Bos etal., 2004) to generate fine-grained semantic representations for each T/H-pair.
+			The semantic representation language is a first-order fragment of the DRS language used in Discourse Representation Theory(Kamp and Reyle, 1993), conveying argument struc ture with a neo-Davidsonian analysis and includingthe recursive DRS structure to cover negation, dis junction, and implication.
+			Consider for example: Example: 78 (FALSE) T: Clinton?s new book is not big seller here.
+			H: Clinton?s book is a big seller.
+			drs(T): x1 x2 x3 book(x1) book(x2) ? x1=x2 clinton(x3) of(x1,x3) ? e4 x5 big(x5) seller(x5) be(e4) agent(e4,x1) patient(e4,x5) loc(e4,here) drs(H): x1 x2 e3 x4 book(x1) clinton(x2) of(x1,x2) big(x4) seller(x4) be(e3) agent(e3,x1) p

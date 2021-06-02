@@ -1,0 +1,9 @@
+ at the main word class level, i.e., after the removal of all attributes and ditto tag markers.
+    All results are listed in Table 12.
+    The three major horizontal blocks each represent a level at which the correctness of the final output is measured.
+    Within the lower two blocks, the three rows represent the type of tags used by the base taggers.
+    The rows for Wotan and WotanLite represent the actual taggers, as described above.
+    The row for BestLite does not represent a real tagger, but rather a virtual tagger that corresponds to the best tagger from among Wotan (with its output projected to WotanLite format) and WotanLite.
+    This choice for the best granularity is taken once for each system as a whole, not per individual token.
+    This leads to BestLite being always equal to WotanLite for TBL and MBT, and to projected Wotan for MXP and HMM.
+    The three major vertical blocks represent combination strategies: no combination, combination using only the tags, and combination using tags and dir

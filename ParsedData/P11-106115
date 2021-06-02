@@ -1,0 +1,7 @@
+based HMM of Berg-Kirkpatrick et al. (2010).
+    For a sentence x and a state sequence z, a first order Markov model defines a distribution: (9) where Val(X) corresponds to the entire vocabulary.
+    This locally normalized log-linear model can look at various aspects of the observation x, incorporating overlapping features of the observation.
+    In our experiments, we used the same set of features as BergKirkpatrick et al. (2010): an indicator feature based In a traditional Markov model, the emission distribution P&#920;(Xi = xi  |Zi = zi) is a set of multinomials.
+    The feature-based model replaces the emission distribution with a log-linear model, such that: on the word identity x, features checking whether x contains digits or hyphens, whether the first letter of x is upper case, and suffix features up to length 3.
+    All features were conjoined with the state z.
+    We trained this model by optimizing the following objective function: Note that this involves marginalizing out all possible state confi

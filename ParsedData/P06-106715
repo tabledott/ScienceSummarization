@@ -1,0 +1,7 @@
+fashion.
+    So far, our distortion cost is defined in terms of words, not phrases.
+    Therefore, we need to generalize the distortion cost in order to use it in a phrasebased decoder.
+    This generalization is defined in terms of the internal word alignment within phrases (we used the Viterbi word alignment).
+    We illustrate this with an example: Suppose the last position translated in the source sentence so far is n and we are to cover a source phrase p=wlAyp wA$nTn that begins at position m in the source sentence.
+    Also, suppose that our phrase dictionary provided the translation Washington State, with internal word alignment a = (a1 = 2, a2 = 1) (i.e., a=(&lt;Washington,wA$nTn&gt;, &lt;State,wlAyp&gt;), then the outbound phrase cost is defined as: where l is the length of the target phrase, a is the internal word alignment, fn is source word at position n (in the sentence), and fa, is the source word that is aligned to the i-th word in the target side of the phrase (not the sentence).
+    The inbou

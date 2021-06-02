@@ -1,0 +1,9 @@
+ the best result achieved with a transition-based parser and comparable to the state of the art.
+    For the Chinese Treebank, our parser gets a score of 86.0%, the best reported result so far.
+  
+  
+    In a typical transition-based parsing process, the input words are put into a queue and partially built structures are organized by a stack.
+    A set of shiftreduce actions are defined, which consume words from the queue and build the output parse.
+    Recent research have focused on action sets that build projective dependency trees in an arc-eager (Nivre et al., 2006b; Zhang and Clark, 2008) or arc-standard (Yamada and Matsumoto, 2003; Huang and Sagae, 2010) process.
+    We adopt the arc-eager system1, for which the actions are: Further, we follow Zhang and Clark (2008) and Huang et al. (2009) and use the generalized perceptron (Collins, 2002) for global learning and beamsearch for decoding.
+    Unlike both earlier globallearning parsers, which only perform unlabeled parsing, we perform labeled parsing by 

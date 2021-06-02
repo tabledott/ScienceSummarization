@@ -1,0 +1,5 @@
+roposed, the correct subject is available.
+    This handles cases like &amp;quot;I asked Jane to help.&amp;quot; With this mechanism, the two sentences &amp;quot;I want to go&amp;quot; and &amp;quot;I want John to go&amp;quot; can share the same parse node for the verb want.
+    Certain sentences exhibit a structure that superficially resembles the verb-objectinfinitive-phrase pattern but should not be represented this way, such as &amp;quot;I avoid cigarettes to stay healthy.&amp;quot; Here, clearly, &amp;quot;I&amp;quot; is the subject of &amp;quot;stay.&amp;quot; This can be realized in TINA by having a top-level rule, ([statement] [subject] [predicate] [adjunct-why]).
+    The [object] node for &amp;quot;cigarettes&amp;quot; replaces the CURRENT-FOCUS, but the replacement does not get propagated back up to the [predicate] node (since a current-focus is passed only to siblings and children, but not to parents).
+    Thus, the CURRENT-FOCUS &amp;quot;I&amp;quot; is passed on from the predicate to the adjunct,

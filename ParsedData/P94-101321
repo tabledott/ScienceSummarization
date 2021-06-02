@@ -1,0 +1,9 @@
+xample decision lists above (in WEEKDAY and domingo).
+    When lemmas and wordclasses precede their member words in the list, the latter will be ignored and can be pruned.
+    If a bigram is unambiguous, probability distributions for dependent trigrams will not even be generated, since they will provide no additional information.
+    The second, pruning in a cross-validation phase, compensates for the minimal observed over-modeling of the data.
+    Once a decision list is built it is applied to its own training set plus some held-out cross-validation data (not the test data).
+    Lines in the list which contribute to more incorrect classifications than correct ones are removed.
+    This also indirectly handles problems that may result from the omission of the interpolation step.
+    If space is at a premium, lines which are never used in the cross-validation step may also be pruned.
+    However, useful information is lost here, and words pruned in this way may have contributed to the classification of testing

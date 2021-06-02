@@ -1,0 +1,8 @@
+feature space onto R. Since each pivot predictor is a projection onto R, we could create m new real-valued features, one for each pivot.
+    For both computational and statistical reasons, though, we follow Ando and Zhang (2005a) and compute a low-dimensional linear approximation to the pivot predictor space.
+    Let W be the matrix whose columns are the pivot predictor weight vectors.
+    Now let W = UDVT be the singular value decomposition of W, so that 0 = UT[1:h&#65533;:] is the matrix whose rows are the top left singular vectors of W. The rows of 0 are the principal pivot predictors, which capture the variance of the pivot predictor space as best as possible in h dimensions.
+    Furthermore, 0 is a projection from the original feature space onto Rh.
+    That is, 0x is the desired mapping to the (low dimensional) shared feature representation.
+    This is step 3 of Figure 3.
+    To perform inference and learning for the supervised task, we simply augment the original feature vector with features obtained 

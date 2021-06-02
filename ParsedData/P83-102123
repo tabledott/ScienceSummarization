@@ -1,0 +1,10 @@
+erminal string in a finitely ambiguous context-free grammar is linearly bounded by the length of the terminal string.
+    The proof of this fact is omitted for lack of space, but can be found elsewhere (Pereira and Warren.
+    1983).
+    General definite-clause proof procedures need to access the values of variables (bindings) in derived clauses.
+    The structure-sharing method of representation makes the time to access a variable binding at worst linear in the length of the derivation.
+    Furthermore, the number of variables to be looked up in a derivation step is at worst linear in the size of the derivation.
+    Finally, the time (and space) to finish a derivation step, once all the relevant bindings are known, does not depend on the size of the derivation.
+    Therefore, using this method for parsing offline-parsable grammars makes the time complexity of each step at worst o(n2) in the length of the input.
+    Some simplifications are possible that improve that time bound.
+    First, it is possible to u

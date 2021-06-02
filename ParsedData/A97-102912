@@ -1,0 +1,7 @@
+we have not legitimately seen in training.
+    When decoding, if either word of the bigram is unknown, the model used to estimate the probabilities of Equations 3.1-3 is the unknown word model, otherwise it is the model from the normal training.
+    The unknown word&#8211;model can be viewed as a first level of back-off, therefore, since it is used as a backup model when an unknown word is encountered, and is necessarily not as accurate as the bigram model formed from the actual training.
+    3.
+    3.
+    3.2 Further Back-off Models and Smoothing Whether a bigram contains an unknown word or not, it is possible that either model may not have seen this bigram, in which case the model backs off to a less-powerful, less-descriptive model.
+    Table 3.2 shows a graphic illustration of the back-off scheme: The weight for each back-off model is computed onthe-fly, using the following formula: If computing Pr(XIY), assign weight of A to the direct computation (using one of the formulae of &#167;3.3.2) and a weight o

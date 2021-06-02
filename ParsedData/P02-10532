@@ -1,0 +1,9 @@
+ or not recommended.
+    The algorithm takes a written review as input and produces a classification as output.
+    The first step is to use a part-of-speech tagger to identify phrases in the input text that contain adjectives or adverbs (Brill, 1994).
+    The second step is to estimate the semantic orientation of each extracted phrase (Hatzivassiloglou &amp; McKeown, 1997).
+    A phrase has a positive semantic orientation when it has good associations (e.g., &#8220;romantic ambience&#8221;) and a negative semantic orientation when it has bad associations (e.g., &#8220;horrific events&#8221;).
+    The third step is to assign the given review to a class, recommended or not recommended, based on the average semantic orientation of the phrases extracted from the review.
+    If the average is positive, the prediction is that the review recommends the item it discusses.
+    Otherwise, the prediction is that the item is not recommended.
+    The PMI-IR algorithm is employed to estimate the semantic orientation of a 

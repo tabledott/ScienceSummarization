@@ -1,0 +1,8 @@
+oss, ExpLoss, and Error, respectively.
+    The f(z) functions penalize nonpositive margins on training examples.
+    The simplest function, f (z) = Qz &lt; 01, gives a cost of one if a margin is negative (an error is made), zero otherwise.
+    ExpLoss and LogLoss involve definitions for f(z) which quickly tend to zero as z Y oo but heavily penalize increasingly negative margins.
+    Figure 2 shows plots for the three definitions of f (z).
+    The functions f (z) = e&#8212;z and f (z) = log (1 + e&#8212;z) are both upper bounds on the error function, so that minimizing either LogLoss or ExpLoss can be seen as minimizing an upper bound on the number of training errors.
+    (Note that minimizing Error(&#175;&#65533;) itself is known to be at least NP-hard if no parameter settings can achieve zero errors on the training set; see, for example, Hoffgen, van Horn, and Simon [1995].)
+    As z Y oo, the functions f (z) = e&#8212;z and f (z) = log(1 + e&#8212;z) become increasingly similar, because log (1 + e&#8212;z) 

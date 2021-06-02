@@ -1,0 +1,8 @@
+any different ways of reanalyzing the node.
+    This process creates a set of possible new lexicons, where each lexicon expands A in a different way by adding the items from either a single split or a single merge of a node in y*.
+    For each potential new lexicon A', NEW-LEX computes the probability p(y*|xi, zi; B', A') of the original parse y* under A' and parameters B' that are the same as B but have weights for the new lexical items, as described in Section 7.
+    It also finds the best new parse y' = arg maxy p(y|xi, zi; B', A').1 Finally, NEW-LEX selects the A' with the largest difference in log probability between y' and y*, and returns the new entries in A'.
+    If y* is the best parse for every A', NEW-LEX returns the empty set; the lexicon will not change.
+    Step 2: Parameter Updates For each training example we update the parameters B using the stochastic gradient updates given by Eq.
+    4.
+    Discussion The alternation between refining the lexicon and updating the parameters drives the learni

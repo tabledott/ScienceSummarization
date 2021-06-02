@@ -1,0 +1,7 @@
+dologically, our cascading topic model is designed to capture multiple dimensions of variability: topics and geography.
+    Mei et al. (2007) include sentiment as a second dimension in a topic model, using a switching variable so that individual word tokens may be selected from either the topic or the sentiment.
+    However, our hypothesis is that individual word tokens reflect both the topic and the geographical aspect.
+    Sharing this intuition, Paul and Girju (2010) build topic-aspect models for the cross product of topics and aspects.
+    They do not impose any regularity across multiple aspects of the same topic, so this approach may not scale when the number of aspects is large (they consider only two aspects).
+    We address this issue using cascading distributions; when the observed data for a given regiontopic pair is low, the model falls back to the base topic.
+    The use of cascading logistic normal distributions in topic models follows earlier work on dynamic topic models (Blei and Lafferty, 200

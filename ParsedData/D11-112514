@@ -1,0 +1,10 @@
+ those approaches to create a simpler tuning technique that closely mirrors the ubiquitous MERT architecture.
+    Among other simplifications, we abstract away the choice of MIRA as the classification method (our approach can use any classification technique that learns a separating hyperplane), and we eliminate the need for oracle translations.
+    An important observation is that BLEU does not satisfy the decomposability assumption of Equation (1).
+    An advantage of MERT is that it can directly optimize for non-decomposable scoring functions like BLEU.
+    In our experiments, we use the BLEU+1 approximation to BLEU (Liang et al., 2006) to determine class labels.
+    We will nevert heless use BLEU to evaluate the trained systems.
+  
+  
+    We now turn to real machine translation conditions to validate our thesis: We can cleanly replace MERT&#8217;s line optimization with pairwise ranking optimization and immediately realize the benefits of high-dimension tuning.
+    We now detail the three language pairs, 

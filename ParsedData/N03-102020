@@ -1,0 +1,9 @@
+ to our experiments, we found that unigram co-occurrence statistics is a good automatic scoring metric.
+    It consistently correlated highly with human assessments and had high recall and precision in significance test with manual evaluation results.
+    In contrast, the weighted average of variable length n-gram matches derived from IBM BLEU did not always give good correlation and high recall and precision.
+    We surmise that a reason for the difference between summarization and machine translation might be that extraction-based summaries do not really suffer from grammar problems, while translations do.
+    Longer n-grams tend to score for grammaticality rather than content.
+    It is encouraging to know that the simple unigram cooccurrence metric works in the DUC 2001 setup.
+    The reason for this might be that most of the systems participating in DUC generate summaries by sentence extraction.
+    We plan to run similar experiments on DUC 2002 data to see if unigram does as well.
+    If it does, we wil

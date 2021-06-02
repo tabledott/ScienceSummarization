@@ -1,0 +1,10 @@
+ctors, then we need more features to distinguish them.
+			Turney (2006) also selects patterns based on the numberof pairs that generate them, but the number of se lected patterns is a constant (8000), independent of the number of input word pairs.
+			The next step is to generate feature vectors, one vector for each input word pair.
+			Each of the N feature vectors has kN elements, one element for each selected pattern.
+			The value of an element in a vector is given by the logarithm of the frequency in the corpus of the corresponding pattern for the given word pair.
+			For example, suppose the given pair is mason:stone and the pattern is ?* X cut * Y *?.
+			We look at the normalized phrases that we collected for mason:stone and we count how many match this pattern.
+			If f phrases match thepattern, then the value of this element in the fea ture vector is log(f +1) (we add 1 because log(0)is undefined).
+			Each feature vector is then normal ized to unit length.
+			The normalization ensures that features in vec

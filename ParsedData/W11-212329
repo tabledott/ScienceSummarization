@@ -1,0 +1,9 @@
+erent conditions. aLossy compression with the same weights. bLossy compression with retuned weights. ditions make the value appropriate for estimating repeated run times, such as in parameter tuning.
+    Table 2 shows single-threaded results, mostly for comparison to IRSTLM, and Table 3 shows multi-threaded results.
+    Part of the gap between resident and virtual memory is due to the time at which data was collected.
+    Statistics are printed before Moses exits and after parts of the decoder have been destroyed.
+    Moses keeps language models and many other resources in static variables, so these are still resident in memory.
+    Further, we report current resident memory and peak virtual memory because these are the most applicable statistics provided by the kernel.
+    Overall, language modeling significantly impacts decoder performance.
+    In line with perplexity results from Table 1, the PROBING model is the fastest followed by TRIE, and subsequently other packages.
+    We incur some additional memory

@@ -1,0 +1,6 @@
+ As stated above, 0 comprises a collection of multinomials that weights the grammar.
+    Taking the Bayesian approach, we wish to place a prior on those multinomials, and the Dirichlet family is a natural candidate for such a prior because of its conjugacy, which makes inference algorithms easier to derive.
+    For example, if we make a &#8220;mean-field assumption,&#8221; with respect to hidden structure and weights, the variational algorithm for approximately inferring the distribution over 0 and trees y resembles the traditional EM algorithm very closely (Johnson, 2007).
+    In fact, variational inference in this case takes an action similar to smoothing the counts using the exp-&#936; function during the E-step.
+    Variational inference can be embedded in an empirical Bayes setting, in which we optimize the variational bound with respect to the hyperparameters as well, repeating the process until convergence.
+    While Dirichlet priors over grammar probabilities make learning algorithms easy, they are li

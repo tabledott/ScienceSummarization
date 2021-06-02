@@ -1,0 +1,6 @@
+ can align adequately.
+    At this point, we can process unaligned text and use the alignments we produce to further train the model.
+    We update parameters based on the newly aligned text in the same way that we update parameters based on the initial training data.2 To align a corpus in a single pass the model must be fairly accurate before starting or else the beginning of the corpus will be poorly aligned.
+    Hence, after bootstrapping the model on one hundred sentence pairs, we train the algorithm on a chunk of the unaligned target bilingual corpus, typically 20,000 sentence pairs, before making one pass through the entire corpus to produce the actual alignment.
+    It is natural to use dynamic programming to search for the best alignment; one can find the most probable of an exponential number of alignments using quadratic time and memory.
+    Alignment can be viewed as a &amp;quot;shortest distance&amp;quot; problem, where the &amp;quot;distance&amp;quot; associated with a sentence bead is the negati

@@ -1,0 +1,7 @@
+ CCG version of the Penn Treebank.
+    The combination of discriminative training and an automatically extracted grammar leads to a significant memory requirement (up to 25 GB), which is satisfied using a parallel implementation of the BFGS optimization algorithm running on a Beowulf cluster.
+    Dynamic programming over a packed chart, in combination with the parallel implementation, allows us to solve one of the largest-scale estimation problems in the statistical parsing literature in under three hours.
+    A key component of the parsing system, for both training and testing, is a Maximum Entropy supertagger which assigns CCG lexical categories to words in a sentence.
+    The supertagger makes the discriminative training feasible, and also leads to a highly efficient parser.
+    Surprisingly, given CCG&#8217;s &#8220;spurious ambiguity,&#8221; the parsing speeds are significantly higher than those reported for comparable parsers in the literature.
+    We also extend the existing parsing techniques for CCG 

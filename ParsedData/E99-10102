@@ -1,0 +1,7 @@
+ probability Pr(wiev) of a sequence of words wiv = wi 'WN.
+    A simple approximation of Pr(41) is to model it as a product of bigram probabilities: Pr (wPI) = HiN_, p(wi *2_1).
+    If we want to estimate the bigram probabilities p(wlw') using a realistic natural language corpus we are faced with the problem that most of the bigrams are rarely seen.
+    One possibility to solve this problem is to partition the set of all words into equivalence classes.
+    The function C maps words w to their classes C(w).
+    Rewriting the corpus probability using classes we arrive at the following probability model p(wiv IC): In this model we have two types of probabilities: the transition probability p(C1C1) for class C given its predecessor class C' and the membership probability p(wIC) for word w given class C. To determine the optimal classes C for a given number of classes M we perform a maximumlikelihood approach: = arg mrc p(wiv IC) (2) We estimate the probabilities of Eq.
+    (1) by relative frequencies: p(CIC&amp;q

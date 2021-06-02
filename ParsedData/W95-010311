@@ -1,0 +1,13 @@
+h high overall counts.
+    Another obvious method of combination, a simple average2, gives equal weight to the three tuples regardless of their total counts and does not perform as well.
+    The cut-off frequencies must then be chosen.
+    A surprising difference from language modeling is that a cut-off frequency of 0 is found to be optimum at all stages.
+    This effectively means however low a count is, still use it rather than backing off a level.
+    2eg.
+    A simple average for triples would be defined as
+  
+  
+    The figure below shows the results for the method on the 3097 test sentences, also giving the total count and accuracy at each of the backed-off stages.
+    In an effort to reduce sparse data problems the following processing was run over both test and training data: These modifications are similar to those performed on the corpus used by [BR94].
+    The result using this modified corpus was 84.5%, an improvement of 0.4% on the previous result.
+    Results from [RRR94], [BR94] and the backed-

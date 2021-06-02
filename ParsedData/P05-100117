@@ -1,0 +1,11 @@
+ct).
+    Co-training We test co-training since our idea of partially-supervised auxiliary problems is motivated by co-training.
+    Our implementation follows the original work (Blum and Mitchell, 1998).
+    The two (or more) classifiers (with distinct feature maps) are trained with labeled data.
+    We maintain a pool ofq unlabeled instances by random selection.
+    The classifier proposes labels for the instances in this pool.
+    We choosesinstances for each classifier with high confidence while preserving the class distribution observed in the initial labeled data, and add them to the labeled data.
+    The process is then repeated.
+    We exploreq=50K, 100K,s=50,100,500,1K, and commonly-used feature splits: &#8216;current vs. context&#8217; and &#8216;current+left-context vs. current+right-context&#8217;.
+    Self-training Single-view bootstrapping is sometimes called self-training.
+    We test the basic selftraining2, which replaces multiple classifiers in the co-training procedure with a single classifi

@@ -1,0 +1,6 @@
+d (qj , ?q(j).lab | qi, ?q(i), x(i), x(j), ?a) ?p(?
+			jq | qj , ?q(j), x(j), ?a) 4If parsing performance is a concern, we might also treat the question and/or answer parse trees as hidden variables, thoughthat makes training and testing more computationally expen sive.
+			25 Note the recursion in the last line.
+			While the above may be daunting, in practice it boils down only to defining the conditional distribution pkid , since the number of left and right children of each node need not be modeled (the trees are assumed known)?
+			p#kids is included above for completeness, but in the model applied here we do not condition it on qi and therefore do not need to estimate it (since the trees are fixed).
+			pkid defines a distribution over syntactic children of qi and their labels, given (1) the word qi, (2) the parent of qi, (3) the dependency relation between qi and its parent, (4) the answer-word qi is aligned to, (5) the answer-word the child being predicted is aligned to, and (6) the remainder of the answe

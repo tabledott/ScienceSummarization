@@ -1,0 +1,6 @@
+ loss over some test corpus is the sum of the losses on individual sentences, although we will revisit that assumption in &#167;5.
+    One training criterion directly mimics test conditions.
+    It looks at the loss incurred if we choose the best analysis of each xi according to the model: Since small changes in &#952; either do not change the best analysis or else push a different analysis to the top, this objective function is piecewise constant, hence not amenable to gradient descent.
+    Och (2003) observed, however, that the piecewiseconstant property could be exploited to characterize the function exhaustively along any line in parameter space, and hence to minimize it globally along that line.
+    By calling this global line minimization as a subroutine of multidimensional optimization, he was able to minimize (2) well enough to improve over likelihood maximization for training factored machine translation systems.
+    Instead of considering only the best hypothesis for any &#952;, we can minimize risk

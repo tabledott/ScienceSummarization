@@ -1,0 +1,7 @@
+where for t(i) = the ith most frequent tag for w: giving the large majority of the new probability mass to the single highest frequency core tag.
+    Applying this model recursively, the finer grained subtag probabilities (e.g.
+    NN, NNS) are assigned by selecting the two highest frequency subtags for each of the two remaining core tags, and reallocating the core tag probability mass between these two as in the equations above, as illustrated in Table 2.
+    Finally, the issue arises of what to do with the 1-to-n phrasal alignment cases shown in Figure 2 (e.g. potatoes/NNS pommesINNS&#8222; de/NNSb terre/NNS, and Laws/NNS Les/NNS&#8222; /ois/NNSb).
+    The potential seems to be great for function words to inherit substantial spurious probability mass via such data.
+    However, the relatively frequent occurrence of correct 1-to-1 alignments (e.g.
+    TheluN4Les and ofliN-xcle), the diffuse nature of the noise, and the aggressive smoothing towards a single POS tag, prevent these cases from adversely affectin

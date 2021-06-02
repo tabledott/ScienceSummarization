@@ -1,0 +1,8 @@
+ scope as it only considers two-word constructions rather than naturally occurring sentences.
+    Ideally, we would like to augment our evaluation with a task which is based on large quantities of natural data and for which vector composition has practical consequences.
+    For these reasons, we used the Microsoft Research Paraphrase Corpus (MSRPC) introduced by Dolan et al. (2004).
+    The corpus consists of sentence pairs Seni1,Seni2 and labels indicating whether they are in a paraphrase relationship or not.
+    The vector representations obtained from our various compositional models were used as features for the paraphrase classification task.
+    The MSRPC dataset contains 5,801 sentence pairs, we used the standard split of 4,076 training pairs (67.5% of which are paraphrases) and 1,725 test pairs (66.5% of which are paraphrases).
+    In order to judge whether two sentences have the same meaning we employ Fan et al. (2008)&#8217;s liblinear classifier.
+    For each of our three vector sources and three d

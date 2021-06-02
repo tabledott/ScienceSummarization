@@ -1,0 +1,7 @@
+n seen in the training data.
+    Discounting and deleted interpolation methods in language modeling typically are used to assign small, nonzero probability to a predicted variable unseen in the training data even when a specific conditioning event has been seen.
+    In our case, we are perfectly willing to assign zero probability to a specific role (the predicted variable).
+    We are interested only in finding the role with the highest probability, and a role given a small, nonzero probability by smoothing techniques will still not be chosen as the classifier&#8217;s output.
+    The lattice presented in Figure 7 represents just one way of choosing subsets of features for our system.
+    Designing a feature lattice can be thought of as choosing a set of feature subsets: once the probability distributions of the lattice have been chosen, the graph structure of the lattice is determined by the subsumption relations among the sets of conditioning variables.
+    Given a set of N conditioning variables, there are 

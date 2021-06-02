@@ -1,0 +1,9 @@
+ed to define a distinct ILP problem that is then submitted to the solver.
+    Barzilay and Lapata (2006) use ILP for the problem of aggregation in natural language generation: clustering sets of propositions together to create more concise texts.
+    They cast it as a set partitioning problem.
+    This is very much like coreference, where each partition corresponds to an entity in a discourse model.
+    COREF-ILP uses an objective function that is based on only the coreference classifier and the probabilities it produces.
+    Given that the classifier produces probabilities pC = PC(COREF|i, j), the assignment cost of commiting to a coreference link is cC(i,j) = &#8722;log(pC).
+    A complement assignment cost cC(i,j) = &#8722;log(1&#8722;pC) is associated with choosing not to establish a link.
+    In what follows, M denotes the set of mentions in the document, and P the set of possible coreference links over these mentions (i.e., P = {hi, ji|hi, ji &#8712; M &#215; M and i &lt; j}).
+    Finally, we use indica

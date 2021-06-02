@@ -1,0 +1,7 @@
+t of vertices and set of edges , where is a subset of .
+    For a given vertex , let be the set of vertices that point to it (predecessors), and let be the set of vertices that vertex points to (successors).
+    The score of a vertex is defined as follows (Brin and Page, 1998): where is a damping factor that can be set between 0 and 1, which has the role of integrating into the model the probability of jumping from a given vertex to another random vertex in the graph.
+    In the context of Web surfing, this graph-based ranking algorithm implements the &#8220;random surfer model&#8221;, where a user clicks on links at random with a probability , and jumps to a completely new page with probability .
+    The factor is usually set to 0.85 (Brin and Page, 1998), and this is the value we are also using in our implementation.
+    Starting from arbitrary values assigned to each node in the graph, the computation iterates until convergence below a given threshold is achieved 1.
+    After running the algorithm, a score

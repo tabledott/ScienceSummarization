@@ -1,0 +1,7 @@
+ard-backward algorithm can only compute expectations of quantities that are additive along label sequences.
+    We solve both problems by discarding the off-diagonal terms and approximating expectation of the square of a global feature by the expectation of the sum of squares of the corresponding local features at each position.
+    The approximated diagonal term Hf for feature f has the form Hf = Ef(Y , xk)2 If this approximation is semidefinite, which is trivial to check, its inverse is an excellent preconditioner for early iterations of CG training.
+    However, when the model is close to the maximum, the approximation becomes unstable, which is not surprising since it is based on feature independence assumptions that become invalid as the weights of interaction features move away from zero.
+    Therefore, we disable the preconditioner after a certain number of iterations, determined from held-out data.
+    We call this strategy mixed CG training.
+    Newton methods for nonlinear optimization use secondord

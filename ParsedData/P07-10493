@@ -1,0 +1,13 @@
+labels for each word, based on neighboring words, and then directly uses these labels to parse.
+    No clustering is performed, but due to the Zipfian distribution of words, high frequency words dominate these lists and parsing decisions for words of similar distribution are guided by the same labels.
+    Section 2 describes the syntactic representation used, section 3 describes the general parser algorithm and sections 4 and 5 complete the details by describing the learning algorithm, the lexicon it constructs and the way the parser uses this lexicon.
+    Section 6 gives experimental results.
+  
+  
+    The representation of syntactic structure which I introduce in this paper is based on links between pairs of words.
+    Given an utterance and a bracketing of that utterance, shortest common cover link sets for the bracketing are defined.
+    The original bracketing can be reconstructed from any of these link sets.
+    An utterance is a sequence of words (x1, .
+    .
+    .
+    , x,,,) and a bracket is any sub-

@@ -1,0 +1,7 @@
+and a corresponding target string.
+    The recursive decomposition of the training examples results from an algorithm for computing hierarchical alignments of the examples, described in Section 4.2.
+    This alignment algorithm uses dynamic programming search guided by source-target word correlation statistics as described in Section 4.1.
+    Having constructed a hierarchical alignment for the training examples, a set of head transducer transitions are constructed from each example as described in Section 4.3.
+    Finally, the dependency transduction model is constructed by aggregating the resulting head transducers and assigning transition weights, which are log probabilities computed from the training counts by simple maximum likelihood estimation.
+    We have applied this method of training statistical dependency transduction models in experiments on English-to-Spanish and English-to-Japanese translations of transcribed spoken utterances.
+    The results of these experiments are described in Section 5; our

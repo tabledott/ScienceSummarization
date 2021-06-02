@@ -1,0 +1,6 @@
+ft to right, are fast (O(n)), and can make use of rich feature sets, which are based on all the previously derived structures.
+    However, all of their decisions are very local, and the strict left-to-right order implies that, while the feature set can use rich structural information from the left of the current attachment point, it is also very restricted in information to the right of the attachment point: traditionally, only the next two or three input tokens are available to the parser.
+    This limited look-ahead window leads to error propagation and worse performance on root and long distant dependencies relative to graphbased parsers (McDonald and Nivre, 2007).
+    Graph-based parsers, on the other hand, are globally optimized.
+    They perform an exhaustive search over all possible parse trees for a sentence, and find the highest scoring tree.
+    In order to make the search tractable, the feature set needs to be restricted to features over single edges (first-order models) or edges pairs (higher-ord

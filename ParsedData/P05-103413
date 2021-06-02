@@ -1,0 +1,10 @@
+dependency tree, we model the probability of source given target as the product of the individual treelet translation probabilities: we assume a uniform probability distribution over the decompositions of a tree into treelets.
+    Target Model: Given an ordered target language dependency tree, it is trivial to read off the surface string.
+    We evaluate this string using a trigram model with modified Kneser-Ney smoothing.
+    Miscellaneous Feature Functions: The log-linear framework allows us to incorporate other feature functions as &#8216;models&#8217; in the translation process.
+    For instance, using fewer, larger treelet translation pairs often provides better translations, since they capture more context and allow fewer possibilities for search and model error.
+    Therefore we add a feature function that counts the number of phrases used.
+    We also add a feature that counts the number of target words; this acts as an insertion/deletion bonus/penalty.
+  
+  
+    The challenge of tree-based decoding i

@@ -1,0 +1,10 @@
+structure.
+    In the next section, we will explain how to extend categories and states to exploit a dependency language model during decoding.
+  
+  
+    For the dependency tree in Figure 1, we calculate the probability of the tree as follows &#215;PL(will|find-as-head) &#215;PL(boy|will, find-as-head) &#215;PL(the|boy-as-head) &#215;PR(it|find-as-head) &#215;PR(interesting|it, find-as-head) Here PT(x) is the probability that word x is the root of a dependency tree.
+    PL and PR are left and right side generative probabilities respectively.
+    Let wh be the head, and wL1wL2...wLn be the children on the left side from the nearest to the farthest.
+    Suppose we use a tri-gram dependency LM, wh-as-head represents wh used as the head, and it is different from wh in the dependency language model.
+    The right side probability is similar.
+    In order to calculate the dependency language model score, or depLM score for short, on the fly for partial hypotheses in a bottom-up decoding, we need to save more inform

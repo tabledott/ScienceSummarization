@@ -1,0 +1,9 @@
+ies.
+    Under appropriate conditions, we could reconstruct P(a, b) from these quantities using Gibbs sampling, and, in general, that is the best we can do.
+    However, while reconstructing the joint probabilities from these local conditional probabilities may be difficult, estimating the local probabilities themselves is no harder than it is for acyclic models: we take observations of the local environments and use any maximum likelihood estimation method we desire.
+    In our experiments, we used local maxent models, but if the event space allowed, (smoothed) relative counts would do.
+    Cyclic or not, we can view the product of local probabilities from a dependency network as a score: where Pa(xi) are the nodes with arcs to the node xi.
+    In the case of an acyclic model, this score will be the joint probability of the event x, P(x).
+    In the general case, it will not be.
+    However, we can still ask for the event, in this case the tag sequence, with the highest score.
+    For dependency networks lik

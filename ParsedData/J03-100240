@@ -1,0 +1,10 @@
+000 sentences from the Hansards task.
+    For both tasks, we manually aligned a randomly chosen subset of the training corpus.
+    From this subset of the corpus, the first 100 sentences are used as the development corpus to optimize the model parameters that are not trained via the EM algorithm (e.g., the smoothing parameters).
+    The remaining sentences are used as the test corpus.
+    The sequence of models used and the number of training iterations used for each model is referred to in the following as the training scheme.
+    Our standard training scheme on Verbmobil is 15H5334363.
+    This notation indicates that five iterations of Model 1, five iterations of HMM, three iterations of Model 3, three iterations of Model 4, and three iterations of Model 6 are performed.
+    On Hansards, we use 15H10334363.
+    This training scheme typically gives very good results and does not lead to overfitting.
+    We use the slightly modified versions of Model 3 and Model 4 described in Section 3.2 and smooth the fert

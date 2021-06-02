@@ -1,0 +1,7 @@
+rrect of the two).
+    All templates directly extracted from the MUC output are assigned an initial importance value of 100.
+    Currently, with each application of an operator, we lower the value of a contributing individual template by 20 points and give any newly produced template that combines information from already existing contributing templates a value greater than the sum of the values of the contributing templates after those values have been updated.
+    Furthermore, some operators reduce the importance values of existing templates even further (e.g., the refinement operator reduces the importance of chronologically earlier templates by additional increments of 20 points because they contain outdated information).
+    Thus, the final summary will contain only the combined template if there are restrictions on length.
+    Otherwise, text corresponding to the constituent templates will also be generated.
+    The value of the importance of the template corresponds also to the position in the summary 

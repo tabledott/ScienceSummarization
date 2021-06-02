@@ -1,0 +1,8 @@
+ndidates with increasing sentence size.
+    The number increases from O(Tn) for the baseline POS tagger to O(2n&#8722;'Tn) for the joint system.
+    As a result, for an incremental decoding algorithm, the number of possible candidates increases exponentially with the current word or character index.
+    In the POS tagging problem, a new incoming word enlarges the number of possible candidates by a factor of T (the size of the tag set).
+    For the joint problem, however, the enlarging factor becomes 2T with each incoming character.
+    The speed of search space expansion is much faster, but the number of candidates is still controlled by a single, fixed-size beam at any stage.
+    If we assume that the beam is not large enough for all the candidates at at each stage, then, from the newly generated candidates, the baseline POS tagger can keep 1/T for the next processing stage, while the joint model can keep only 1/2T, and has to discard the rest.
+    Therefore, even when the candidate comparison standard is ig

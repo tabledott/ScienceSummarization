@@ -1,0 +1,6 @@
+n the generator by using a sound unification algorithm with the occurs check.
+    (The default unification in most Prolog systems is unsound in this respect.)
+    For example, a grammar with a gap-threading treatment of wh-movement (Pereira, 1981; Pereira and Shieber, 1985) might include the rule np(Agr, [np(Agr)/Seml X)-X)/Sem ---&gt; . stating that an NP with agreement Agr and semantics Sem can be empty provided that the list of gaps in the NP can be represented as the difference list [rip(Agr)/Sem I X] -X, that is the list containing an NP gap with the same agreement features Agr (Pereira and Shieber, 1985, p. 128).
+    Because the above rule is a nonchain rule, it will be considered when trying to generate any nongap NP, such as the proper noun np(3-sing,G-G)/john.
+    The base case of connect will try to unify that term with the head of the rule above, leading to the attempted unification of X with [rip (Agr) /Sem I X] , an occurs-check failure.
+    The base case, incorporating the explicit call to a sou

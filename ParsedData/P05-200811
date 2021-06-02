@@ -1,0 +1,8 @@
+d crossvalidation.
+    The mean accuracy of the Naive Bayes classifier was 61.5%, while the SVM classifier was 70.1%.
+    Using these same classifiers to predict the sentiment of movie reviews in Polarity 1.0 resulted in accuracies of 59.1% (Naive Bayes) and 52.1% (SVM).
+    We repeated the optimisation process using a held-out set of 100 positive and 100 negative reviews from the Polarity 1.0 dataset, as it is possible that this test needs different parameter settings.
+    This revealed an optimum context of a window of 50 tokens taken from a training set of 21,000 articles for the Naive Bayes classifier.
+    Interestingly, the optimum context for the SVM classifier appeared to be a window of only 20 tokens taken from a mere 2,000 training examples.
+    This is clearly an anomaly, as these parameters resulted in an accuracy of 48.9% when testing against the reserved reviews of Polarity 1.0.
+    We attribute this to the presence of noise, both in the training set and in the held-out set, and discuss this belo

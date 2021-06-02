@@ -1,0 +1,10 @@
+ces; using this grammar, sentences in this length range have produced up to 130,000 edges.
+    As a basis for comparison, we measured the CPU time for a non-best-first version of the parser to completely parse all 500 sentences.
+    The CPU time needed by this version of the parser was 4,882 seconds.
+    For a best-first version of the parser to be useful, it must be able to find the most probable parse (or a reasonably good parse, depending on the application) in less than this amount of time.
+    Here, for the best-first parsers, we will use for convenience the time needed to get 95% of the sentence's total probability mass.
+  
+  
+    It seems reasonable to base a figure of merit on the inside probability 0 of the constituent.
+    Inside probability is defined as the probability of the words or tags in the constituent given that the constituent is dominated by a particular nonterminal symbol; see Figure 2.
+    This seems to be a reasonable basis for comparing constituent probabilities, and has the additiona

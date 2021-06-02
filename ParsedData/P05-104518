@@ -1,0 +1,11 @@
+a sum over all hidden state sequences of length N).
+    However, since we are only using the model for Gibbs sampling, we never need to compute the distribution explicitly.
+    Instead, we need only the conditional probability of each position in the sequence, which can be computed as
+  
+  
+    In our experiments we compare the impact of adding the non-local models with Gibbs sampling to our baseline CRF implementation.
+    In the CoNLL named entity recognition task, the non-local models increase the F1 accuracy by about 1.3%.
+    Although such gains may appear modest, note that they are achieved relative to a near state-of-the-art NER system: the winner of the CoNLL English task reported an F1 score of 88.76.
+    In contrast, the increases published by Bunescu and Mooney (2004) are relative to a baseline system which scores only 80.9% on the same task.
+    Our performance is similar on the CMU Seminar Announcements dataset.
+    We show the per-field F1 results that were reported by Sutton and McCallum (2004)

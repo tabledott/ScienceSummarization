@@ -1,0 +1,6 @@
+al LR does not model variable interactions.
+    For these reasons, we ran a second set of experiments with neural networks, which generally do well with a high number of variables because they protect against overfitting.
+    Neural nets also naturally model variable interactions.
+    We used two architectures, a simple perceptron (a two-layer feed-forward network with all input units connected to all output units), and a multi-layer perceptron with all input units connected to all units of the hidden layer, and all units of the hidden layer connected to all output units.
+    For binary decisions, such as determining whether or not a text is NARRATIVE, the output layer consists of one sigmoidal output unit: for polytomous decisions, it consists of four (BRow) or six (GENRE) softmax units (which implement a multinomial response model) (Rumelhart et al., 1995).
+    The size of the hidden layer was chosen to be three times as large as the size of the output layer (3 units for binary decisions, 12 units for BROW,

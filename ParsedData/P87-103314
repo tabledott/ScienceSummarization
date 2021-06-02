@@ -1,0 +1,11 @@
+herefore, it is useful to examine the complexity of each of the three steps independently.
+    Let n represent the total number of symbols in the combined description f A g, and d represent the total number of disjuncts (in both top-level and embedded disjunctions) contained in f A g. Step /.
+    This step performs the unification of two DG structures.
+    Ait-Kaci [1] has shown how this operation can be performed in almost linear time by the UNION/FIND algorithm.
+    Its time complexity has an upper bound of 0(n log n).
+    Since an unknown amount of a description may be contained in the definite component, this step of the algorithm also requires 0(n log it) time.
+    Step 2.
+    For this step we examine the complexity of the function CHECK-INDEF.
+    There are two nested loops in CHECK-INDEF, each of which may be executed at most once for each disjunct in the description.
+    The inner loop checks the compatibility of two DG structures, which requires no more time than unification.
+    Thus, in the worst c

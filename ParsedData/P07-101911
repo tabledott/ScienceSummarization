@@ -1,0 +1,9 @@
+e notation (e, j) to identify the derivation of v via the hyperedge e and the jith best subderivation of antecedent ui (1 &lt; i &lt; |j|).
+    Also, we let 1 stand for a vector whose elements are all 1, and W for the vector whose members are all 0 except for the ith whose value is 1 (the dimensionality of either should be evident from the context).
+    The heart of the algorithm is lines 10&#8211;12.
+    Lines 10&#8211;11 move the best derivation (e, j) from cand to buf , and then line 12 pushes its successors {(e, j + W)  |i E 1... |e|I into cand.
+  
+  
+    Although much faster than full-integration, cube pruning still computes a fixed amount of +LM items at each node, many of which will not be useful for arriving at the 1-best hypothesis at the root.
+    It would be more efficient to compute as few +LM items at each node as are needed to obtain the 1-best hypothesis at the root.
+    This new method, called cube growing, is a lazy version of cube pruning just as Algorithm 3 of Huang and Chiang (2005), is a 

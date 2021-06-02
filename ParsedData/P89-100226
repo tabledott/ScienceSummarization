@@ -1,0 +1,7 @@
+hese sentences for the logical form eat(john, X) (because of its incoherence) and would generate 'John ate' for the logical form eat (john, banana) (because of its incompleteness).
+    Coherence can be achieved by removing the confusion between object-level and metalevel variables mentioned above, that is, by treating logicalform variables as constants at the description level.
+    In practice, this can be achieved by replacing each variable in the semantics from which we are generating by a new distinct constant (for instance with the numbervars predicate built into some implementations of Prolog).
+    These new constants will not unify with any augmentations to the semantics.
+    A suitable modification of our generator would be gen(Cat, String) :cat_semantics(Cat,Sem), numbervars(Sen,0,_), generate(node(Cat,String,0)).
+    This leaves us with the completeness problem.
+    This problem arises when there are phrases whose semantics are not ground at the description level, but instead subsume the goal logical

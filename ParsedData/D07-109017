@@ -1,0 +1,5 @@
+er.We therefore implemented a new decoder archi tecture.
+			The decoder first queues some number of requests, e.g. 1,000 or 10,000 n-grams, and thensends them together to the servers, thereby exploit ing the fact that network requests with large numbers of n-grams take roughly the same time to complete as requests with single n-grams.The n-best search of our machine translation de coder proceeds as follows.
+			It maintains a graph of the search space up to some point.
+			It then extends each hypothesis by advancing one word position inthe source language, resulting in a candidate extension of the hypothesis of zero, one, or more addi tional target-language words (accounting for the fact that variable-length source-language fragments cancorrespond to variable-length target-language frag ments).
+			In a traditional setting with a local languagemodel, the decoder immediately obtains the nec essary probabilities and then (together with scores 862Figure 2: Illustration of decoder graph and batch querying of the la

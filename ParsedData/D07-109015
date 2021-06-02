@@ -1,0 +1,9 @@
+ n grams again to produce these quantities.
+			This can be done similarly to the n-gram counting using a MapReduce (Step 0 in Table 1).
+			The most commonly used variant of Kneser-Ney smoothing is interpolated Kneser-Ney smoothing, defined recursively as (Chen and Goodman, 1998): PKN (wi|wi?1i?n+1) = max(fKN(wii?n+1) ? D, 0) fKN(wi?1i?n+1) + ?(wi?1i?n+1)PKN (wi|wi?1i?n+2), where D is a discount constant and {?(wi?1i?n+1)} are interpolation weights that ensure probabilities sumto one.
+			Two additional major MapReduces are re quired to compute these values efficiently.
+			Table 1 describes their input, intermediate and output keys and values.
+			Note that output keys are always the same as intermediate keys.
+			The map function of MapReduce 1 emits n-gramhistories as intermediate keys, so the reduce func tion gets all n-grams with the same history at the same time, generating unsmoothed probabilities and interpolation weights.
+			MapReduce 2 computes theinterpolation.
+			Its map function emits reversed n grams

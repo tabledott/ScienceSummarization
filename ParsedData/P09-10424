@@ -1,0 +1,10 @@
+roducing a very small number of language-specific constraints that disambiguate arbitrary annotation choices.
+    We evaluate our approach by transferring from an English parser trained on the Penn treebank to Bulgarian and Spanish.
+    We evaluate our results on the Bulgarian and Spanish corpora from the CoNLL X shared task.
+    We see that our transfer approach consistently outperforms unsupervised methods and, given just a few (2 to 7) languagespecific constraints, performs comparably to a supervised parser trained on a very limited corpus (30 - 140 training sentences).
+  
+  
+    At a high level our approach is illustrated in Figure 1(a).
+    A parallel corpus is word-level aligned using an alignment toolkit (Gra&#231;a et al., 2009) and the source (English) is parsed using a dependency parser (McDonald et al., 2005).
+    Figure 1(b) shows an aligned sentence pair example where dependencies are perfectly conserved across the alignment.
+    An edge from English parent p to child c is called conserved if wor

@@ -1,0 +1,12 @@
+anguages.
+    Although their algorithm captures prefix-suffix combinations or circumfixes, it does not handle the multiple affixes per word we observe in Arabic.
+  
+  
+    Given an Arabic sentence, we use a trigram language model on morphemes to segment it into a sequence of morphemes {m1, m2, ...,mn}.
+    The input to the morpheme segmenter is a sequence of Arabic tokens &#8211; we use a tokenizer that looks only at white space and other punctuation, e.g. quotation marks, parentheses, period, comma, etc.
+    A sample of a manually segmented corpus is given below2.
+    Here multiple occurrences of prefixes and suffixes per word are marked with an underline.
+    Many instances of prefixes and suffixes in Arabic are meaning bearing and correspond to a word in English such as pronouns and prepositions.
+    Therefore, we choose a segmentation into multiple prefixes and suffixes.
+    Segmentation into one prefix and one suffix per word, cf.
+    (Darwish 2002), is not very useful for applications like statistical m

@@ -1,0 +1,12 @@
+r placenames in the LDC corpus.
+    In order to obtain a clean corpus of Named Entity transliterations we performed the following steps: 3.
+    We then aligned all the (nearly 1M) training &#8220;sentence&#8221; pairs with this translation model, and extracted roughly a third of the sentences with an alignment score above a certain tunable threshold ().
+    This resulted in the extraction of 346860 name-pairs.
+    4.
+    We divided the set into 343738 pairs for training and 3122 for testing.
+    5.
+    We estimated a pin-yin language model from the training portion above.
+    6.
+    We retrained the statistical MT system on this presumably &#8220;good&#8221; training set and evaluated the pin-yin error rate of the transliteration.
+    The result of this evaluation is reported in Table 3 against the line &#8220;Huge MT (Self),&#8221; where we also report the transliteration performance of the so-called Big MT system of Table 1 on this new test set.
+    We note, again with some dismay, that the additional train

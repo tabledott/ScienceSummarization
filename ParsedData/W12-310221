@@ -1,0 +1,11 @@
+lem of finding a ranking of sports teams, but being only able to have pairwise competitions (think basketball or football).
+    One strategy is to stage playoffs.
+    Let&#8217;s say there are 4 systems: A, B, C, and D. As in well-known play-off fashion, they are first seeded.
+    In our case, this happens randomly, say, 1:A, 2:B, 3:C, 4:D (for simplicity&#8217;s sake).
+    First round: A plays against D, B plays against C. How do they play?
+    We randomly select a sentence on which they were compared (no ties).
+    If A is better according to human judgment than D, then A wins.
+    Let&#8217;s say, A wins against D, and B loses against C. This leads us to the final A against C and the 3rd place game D against B, in which, say, A and D win.
+    The resulting final ranking is ACDB.
+    We repeat this a million times with a different random seeding every time, and compute the average rank, which is then used for overall ranking.
+    In European national football competitions, each team plays against each other

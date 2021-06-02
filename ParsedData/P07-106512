@@ -1,0 +1,8 @@
+us (LDC2003T05; GW) for additional language modelling.
+    Decoding is carried-out using the Moses decoder (Koehn and Hoang, 2007).
+    We hold out 500 test sentences and 250 development sentences from the parallel text for evaluation purposes.
+    The feature functions in our models are optimised using minimum error rate training and evaluation is performed using the BLEU score.
+    Our baseline LM and other comparison models are conventional n-gram models smoothed using modified Kneser-Ney and built using the SRILM Toolkit (Stolcke, 2002); as is standard practice these models drop entries for n-grams of size 3 and above when the corresponding discounted count is less than 1.
+    The baseline language model, EP-KN-3, is a trigram model trained on the English portion of the parallel corpus.
+    For additional comparisons we also trained a smoothed 4-gram model on this Europarl data (EPKN-4) and a trigram model on the Agence France Press section of the Gigaword Corpus (AFP-KN-3).
+    Table 1 shows the amount o

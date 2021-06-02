@@ -1,0 +1,9 @@
+hrase-based statistical machine translation systems use a very simple reordering model: the costs for phrase movements are linear in the distance.
+    This approach is also used in the publicly available Pharaoh decoder (Koehn, 2004).
+    The idea of predicting the orientation is adopted from (Tillmann and Zhang, 2005) and (Koehn et al., 2005).
+    Here, we use the maximum entropy principle to combine a variety of different features.
+    A reordering model in the framework of weighted finite state transducers is described in (Kumar and Byrne, 2005).
+    There, the movements are defined at the phrase level, but the window for reordering is very limited.
+    The parameters are estimated using an EM-style method.
+    None of these methods try to generalize from the words or phrases by using word classes or part-ofspeech information.
+    The approach presented here has some resemblance to the bracketing transduction grammars (BTG) of (Wu, 1997), which have been applied to a phrase-based machine translation system

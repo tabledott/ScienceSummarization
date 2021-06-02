@@ -1,0 +1,9 @@
+ of either the correct parse or the tree returned by the parser, so removing it will do little harm.
+    This technique is called beam thresholding.
+    If we use a loose beam threshold, removing only those nonterminals that are much less probable than the best nonterminal in a cell, our parser will run only slightly faster than with no thresholding, while performance measures such as precision and recall will remain virtually unchanged.
+    On the other hand, if we use a tight threshold, removing nonterminals that are almost as probable as the best nonterminal in a cell, then we can get a considerable speedup, but at a considerable cost.
+    Figure 1 shows the tradeoff between accuracy and time.
+    In this paper, we will consider three different kinds of thresholding.
+    The first of these is a variation on traditional beam search.
+    In traditional beam search, only the probability of a nonterminal generating the terminals of the cell's span is used.
+    We have found that a minor variation, introduced i

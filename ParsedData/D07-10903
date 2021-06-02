@@ -1,0 +1,11 @@
+lihood (ML) probability estimates for the n-grams are given by their relative frequencies r(wi|wi?1i?n+1) = f(wii?n+1) f(wi?1i?n+1) .
+			(3) While intuitively appealing, Eq.
+			(3) is problematic because the denominator and / or numerator mightbe zero, leading to inaccurate or undefined probability estimates.
+			This is termed the sparse data problem.
+			For this reason, the ML estimate must be mod ified for use in practice; see (Goodman, 2001) for a discussion of n-gram models and smoothing.In principle, the predictive accuracy of the language model can be improved by increasing the order of the n-gram.
+			However, doing so further exac erbates the sparse data problem.
+			The present work addresses the challenges of processing an amount of training data sufficient for higher-order n-gram models and of storing and managing the resulting values for efficient use by the decoder.
+	
+	
+			Models The topic of large, distributed language models is relatively new.
+			Recently a two-pass approach hasbeen proposed (Zha

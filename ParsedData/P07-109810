@@ -1,0 +1,8 @@
+SSTK is based on two ideas: first, we change the PAS, as shown in Figure 3.
+    (a) by adding SLOT nodes.
+    These accommodate argument labels in a specific order, i.e. we provide a fixed number of slots, possibly filled with null arguments, that encode all possible predicate arguments.
+    For simplicity, the figure shows a structure of just 4 arguments, but more can be added to accommodate the maximum number of arguments a predicate can have.
+    Leaf nodes are filled with the wildcard character * but they may alternatively accommodate additional information.
+    The slot nodes are used in such a way that the adopted TK function can generate fragments containing one or more children like for example those shown in frames (b) and (c) of Figure 3.
+    As previously pointed out, if the arguments were directly attached to the root node, the kernel function would only generate the structure with all children (or the structure with no children, i.e. empty).
+    Second, as the original tree kernel would generate 

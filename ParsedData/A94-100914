@@ -1,0 +1,7 @@
+ confirm the results: using corpora from the Penn treebank, using equivalence classes to ensure that all lexical entries have a total relative frequency of at least 0.01, and using larger corpora.
+    The specific accuracies were different in the various tests, but the overall patterns remained much the same, suggesting that they are not an artifact of the tagset or of details of the text.
+    The observations we can make about these results are as follows.
+    Firstly, two of the tests, D2+T1 and D3-1-T1, give very poor performance.
+    Their accuracy is not even as good as that achieved by picking the most frequent tag (although this of course implies a lexicon of DO or D1 quality).
+    It follows that if BaumWelch re-estimation is to be an effective technique, the initial data must have either biasing in the transitions (the TO cases) or in the lexical probabilities (cases DO+T1 and D1-FT1), but it is not necessary to have both (D2/D3+TO and DO/Did-T1).
+    Secondly, training from a hand-tagged corpus (cas

@@ -1,0 +1,7 @@
+; Lafferty et al., 2001; Collins, 2002; Altun et al., 2003; Taskar et al., 2004)), the optimal label y* for an input x is where Y(x) is the set of possible labels for the input x; f(x, y) E Rd is a feature vector that represents the pair (x, y); and w is a parameter vector.
+    This paper describes a GLM for natural language parsing, trained using the averaged perceptron.
+    The parser we describe recovers full syntactic representations, similar to those derived by a probabilistic context-free grammar (PCFG).
+    A key motivation for the use of GLMs in parsing is that they allow a great deal of flexibility in the features which can be included in the definition of f(x, y).
+    A critical problem when training a GLM for parsing is the computational complexity of the inference problem.
+    The averaged perceptron requires the training set to be repeatedly decoded under the model; under even a simple PCFG representation, finding the arg max in Eq.
+    1 requires O(n3G) time, where n is the length of the sentenc

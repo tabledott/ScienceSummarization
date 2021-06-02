@@ -1,0 +1,8 @@
+ential.
+    Therefore, training pc on all pairs of mentions within an equivalence class may not lead to a good predictor.
+    Thus, for each mention m we select from m&#8217;s equivalence class the closest preceding mention a and present the pair (a, m) as a positive training example, under the assumption that there is more direct evidence in the text for the existence of this edge than for other edges.
+    This is similar to the technique of Ng and Cardie (2002b).
+    For each m, we generate negative examples (a, m) for all mentions a that precede m and are not in the same equivalence class.
+    Note that in doing so we generate more negative examples than positive ones.
+    Since we never apply pc to a pair where the first mention is a pronoun and the second is not a pronoun, we do not train on examples of this form.
+    We learn the pairwise coreference function using an averaged perceptron learning algorithm (Freund and Schapire, 1998) &#8211; we use the regularized version in Learning Based Java2 (Rizzol

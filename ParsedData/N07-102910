@@ -1,0 +1,6 @@
+unique hypothesis and the weights may be tuned using Powell&#8217;s method on -best lists as described in Section 2.
+    The hypothesis confidence may be log-linearly combined with a 5-gram language model (LM) score to yield the final score as follows where is the number of words in hypothesis .
+    The number of words is commonly used in LM rescoring to balance the LM scores between hypotheses of different lengths.
+    The number of free parameters in the sentence-level combination method is given by where is the number of systems and is the number of features; i.e., system score scaling factors ( ), three free interpolation weights (Equation 4) for the scaling factor estimation, GLM weights ( ), three free interpolation weights (Equation 4) for the hypothesis confidence estimation and two free LM re-scoring weights (Equation 6).
+    All parameters may be tuned using Powell&#8217;s method on -best lists as described in Section 2.
+    The tuning of the sentence-level combination method may be summarized as fo

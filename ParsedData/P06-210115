@@ -1,0 +1,12 @@
+erfitting is to use a quadratic regularizing term, ||&#952;||2 or more generally Ed &#952;2d/2&#963;2d.
+    Keeping this small keeps weights low and entropy high.
+    We may add this regularizer to equation (6) or (7).
+    In the maximum likelihood framework, we may subtract it from equation (4), which is equivalent to maximum a posteriori estimation with a diagonal Gaussian prior (Chen and Rosenfeld, 1999).
+    The variance a2d may reflect a prior belief about the potential usefulness of feature d, or may be tuned on heldout data.
+    Another simple regularization method is to stop cooling before T reaches 0 (cf.
+    Elidan and Friedman (2005)).
+    If loss on heldout data begins to increase, we may be starting to overfit.
+    This technique can be used along with annealing or quadratic regularization and can achieve additional accuracy gains, which we report elsewhere (Dreyer et al., 2006).
+  
+  
+    At each temperature setting of deterministic annealing, we need to minimize the expected loss on the trainin

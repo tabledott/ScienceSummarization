@@ -1,0 +1,10 @@
+  A more efficient algorithm for log-linear models was also proposed.
+    In this work, both the system and feature weights are jointly optimized, so the efficient algorithm for the log-linear models cannot be used.
+  
+  
+    The improved system combination method was compared to a simple confusion network decoding without system weights and the method proposed in (Rosti et al., 2007) on the Arabic to English and Chinese to English NIST MT05 tasks.
+    Six MT systems were combined: three (A,C,E) were phrasebased similar to (Koehn, 2004), two (B,D) were hierarchical similar to (Chiang, 2005) and one (F) was syntax-based similar to (Galley et al., 2006).
+    All systems were trained on the same data and the outputs used the same tokenization.
+    The decoder weights for systems A and B were tuned to optimize TER, and others were tuned to optimize BLEU.
+    All decoder weight tuning was done on the NIST MT02 task.
+    The joint confusion network was expanded with a bi-gram language model and a -best list was gen

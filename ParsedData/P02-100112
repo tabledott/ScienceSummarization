@@ -1,0 +1,12 @@
+tion of other probabilistic FSAs f1, f2,.
+    .
+    .. (This is in fact a log-linear model in which the component FSAs define the features: string x has log fi(x) occurrences of feature i.)
+    In short, weighted finite-state operators provide a language for specifying a wide variety of parameterized statistical models.
+    Let us turn to their training.
+  
+  
+    We are primarily concerned with the following training paradigm, novel in its generality.
+    Let f&#952; : E* xA* &#8212;* R&gt;0 be a joint probabilistic relation that is computed by a weighted FST.
+    The FST was built by some recipe that used the parameter vector 0.
+    Changing 0 may require us to rebuild the FST to get updated weights; this can involve composition, regexp compilation, multiplication of feature strengths, etc.
+    (Lazy algorithms that compute arcs and states of tion cannot be realized by any weighted FST), one can sometimes succeed by first intersecting g with a smaller regular set in which the input being considered is known

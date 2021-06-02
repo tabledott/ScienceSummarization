@@ -1,0 +1,7 @@
+gest that words with similar meanings should be near each other in a semantic taxonomy, and in particular will likely share a hypernym as a near parent.
+    Our classifier for (m, n)-cousins is derived from the algorithm and corpus given in (Ravichandran et al., 2005).
+    In that work an efficient randomized algorithm is derived for computing clusters of similar nouns.
+    We use a set of more than 1000 distinct clusters of English nouns collected by their algorithm over 70 million webpages6, with each noun i having a score representing its cosine similarity to the centroid c of the cluster to which it belongs, cos(B(i, c)).
+    We use the cluster scores of noun pairs as input to our own algorithm for predicting the (m, n)cousin relationship between the senses of two words i and j.
+    If two words i and j appear in a cluster together, with cluster centroid c, we set our single coordinate input feature to be the minimum cluster score min(cos(B(i, c)), cos(B(j, c))), and zero otherwise.
+    For each such noun

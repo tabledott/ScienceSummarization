@@ -1,0 +1,10 @@
+aseline on all categories, with the exception of &#8220;verb.cognition&#8221; and &#8220;noun.person&#8221;.
+    The latter case has a straightforward explanation, named entities (e.g., &#8220;Phil Haney&#8221;, &#8220;Chevron&#8221; or &#8220;Marina District&#8221;) are not annotated in the Senseval data, while they are in Semcor.
+    Hence the tagger learns a different model for nouns than the one used to annotate the Senseval data.
+    Because of this discrepancy the tagger tends to return false positives for some categories.
+    In fact, the other noun categories on which the tagger performs poorly in SE3 are &#8220;group&#8221; and &#8220;location&#8221; (baseline 52.10 tagger 44.72 and baseline 47.62% tagger 47.54% F-score).
+    Naturally, the lower performance on Senseval is also explained by the fact that the evaluation comes from different sources than training.
+  
+  
+    In this paper we presented a novel approach to broad-coverage word sense disambiguation and information extraction.
+    We defined

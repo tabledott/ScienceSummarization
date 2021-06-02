@@ -1,0 +1,11 @@
+ for ?0?).
+  Besides these basic features, we also made use of character normalization.
+  We note that char- acters like punctuation symbols and Arabic dig- its have different character codes in the ASCII, GB, and BIG5 encoding standard, although they mean the same thing.
+  For example, comma ?,?
+  is represented as the hexadecimal value 0x2c in ASCII, but as the hexadecimal value 0xa3ac in GB.
+  In our segmenter, these different character codes are normalized and replaced by the corre- sponding character code in ASCII.
+  Also, all Ara- bic digits are replaced by the ASCII digit ?0?
+  to denote any digit.
+  Incorporating character normal- ization enables our segmenter to be more robust against the use of different encodings to represent the same character.
+  For all the experiments that we conducted, training was done with a feature cutoff of 2 and 100 iterations, except for the AS corpus which had a feature cutoff of 3.
+  A major difficulty faced by a Chinese word segmenter is the presence of out-of-vocabula

@@ -1,0 +1,13 @@
+ints are more or less useless, if they do not allow the maximization of Eq.
+    2 to be performed in an efficient way.
+    Therefore, in this section, we will describe different aspects of the search algorithm for the ITG constraints.
+    First, we will present the dynamic programming equations and the resulting complexity.
+    Then, we will describe pruning techniques to accelerate the search.
+    Finally, we will extend the basic algorithm for the generation of word graphs.
+    The ITG constraints allow for a polynomial-time search algorithm.
+    It is based on the following dynamic programming recursion equations.
+    During the search a table Qjl,jr,eb,et is constructed.
+    Here, Qjl,jr,eb,et denotes the probability of the best hypothesis translating the source words from position jl (left) to position jr (right) which begins with the target language word eb (bottom) and ends with the word et (top).
+    This is illustrated in Fig.
+    3.
+    Here, we initialize this table with monotone translations of IB

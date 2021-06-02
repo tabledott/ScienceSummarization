@@ -1,0 +1,8 @@
+lved using well known combinatorial algo rithms or the following linear program: max z ? jk s jk z jk (1) s.t. ? j z jk ? 1, ? k z jk ? 1, 0 ? z jk ? 1, where the continuous variables z jk correspond to the binary variables y jk . This LP is guaranteed.
+			to have integral (and hence optimal) solutions for any scoring function s(y) (Schrijver, 2003).
+			Note that although the above LP can be used to compute alignments, combinatorial algorithms are generally more efficient.
+			However, we use the LP to develop the learning algorithm below.
+			For a sentence pair x, we denote position pairs by x jk and their scores as s jk . We let.
+			s jk = wf(x jk) for some user provided fea ture mapping f and abbreviate wf(x,y) = ? jk y jk wf(x jk).
+			We can include in the fea ture vector the identity of the two words, their relative positions in their respective sentences, their part-of-speech tags, their string similarity (for detecting cognates), and so on.
+			At this point, one can imagine estimating alinear matching m

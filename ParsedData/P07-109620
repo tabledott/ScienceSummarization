@@ -1,0 +1,12 @@
+rry out experiments on the standard data set of the Penn Treebank (PTB) (Marcus et al., 1994).
+    Following (Ratnaparkhi,1996; Collins, 2002; Toutanova et al., 2003; Tsuruoka and Tsujii, 2005), we cut the PTB into the training, development and test sets as shown in Table 1.
+    We use tools provided by CoNLL-2005 3 to extract POS tags from the mrg files of PTB.
+    So the data set is the same as previous work.
+    We use the development set to select features and estimate the number of iterations in training.
+    In our experiments, we enumerate all the POS tags for each word instead of using a dictionary as in (Ratnaparkhi, 1996), since the size of the tag set is tractable and our learning algorithm is efficient enough.
+  
+  
+    Effect of Features: We first run the experiments to evaluate the effect of features.
+    We use templates to define features.
+    For this set of experiments, we set the beam width B = 3 as a balance between speed and accuracy.
+    The guided learning algorithm usually converges on

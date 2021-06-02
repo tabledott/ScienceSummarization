@@ -1,0 +1,7 @@
+, in our case, X and Y are highly asymmetric; a &amp;quot;1&amp;quot; value (and a 1-1 match) is much more informative than a &amp;quot;0&amp;quot; value (or 0-0 match).
+    Therefore, we should select a similarity measure that is based only on 1-1 matches and mismatches.
+    0-0 matches should be completely ignored; otherwise, they would dominate the similarity measure, given the overall relatively low frequency of any particular word or word group in our corpus.
+    The Dice coefficient satisfies the above requirement of asymmetry: adding 0-0 matches does not change any of the absolute frequencies fxY, fx, and fy, and so does not affect Dice(X,Y).
+    On the other hand, average mutual information depends only on the distribution of X and Y and not on the actual values of the random variables.
+    In fact, I(X, Y) is a completely symmetric measure.
+    If the variables X and Y are transformed so that every &amp;quot;1&amp;quot; is replaced with a &amp;quot;0&amp;quot; and vice versa, the average mutual infor

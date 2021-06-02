@@ -1,0 +1,7 @@
+ses, we combine multiple Freebase types to create a dictionary of entities representing a single type (for example the COMPANY dictionary contains Freebase types /business/consumer company and /business/brand).
+    Because our approach does not rely on any manually labeled examples, it is straightforward to extend it for a different sets of types based on the needs of downstream applications.
+    Training: To gather unlabeled data for inference, we run T-SEG, our entity segmenter (from &#167;3.1), on 60M tweets, and keep the entities which appear 100 or more times.
+    This results in a set of 23,651 distinct entity strings.
+    For each entity string, we collect words occurring in a context window of 3 words from all mentions in our data, and use a vocabulary of the 100K most frequent words.
+    We run Gibbs sampling for 1,000 iterations, using the last sample to estimate entity-type distributions Oe, in addition to type-word distributions &#946;t.
+    Table 7 displays the 20 entities (not found in Freebase)

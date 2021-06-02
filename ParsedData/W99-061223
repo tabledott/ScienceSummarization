@@ -1,0 +1,8 @@
+ix tries, but there's no interference between the two pairs during the bootstrapping stage.
+    Therefore, for each instance of a token in the text, four classifiers are available, a different one given by each trie.
+    The decision with regard to the presence of an entity and its classification is made by combining them.
+    Comparative trials indicate that higher performance is achieved by initially having the classifiers vote.
+    Results indicate that the most accurate classifications are obtained from the two independently bootstrapped morphological tries (they incorporate the morphological information about the token to be classified, and, during the bootstrapping, they also incorporate information from all the contexts in which the token occurred).
+    If the two agree (they have semi-dominants and they are the same) then the corresponding class is returned.
+    Otherwise, agreement is tested between other paired independent classifiers (in order of empirically measured reliability).
+    If no agreeme

@@ -1,0 +1,11 @@
+pment data.
+    We should emphasize that our evaluation is of course per-document and does not reflect cross-document coreference decisions, only the gains through crossdocument sharing (see section 6.2).
+  
+  
+    Up until now, we&#8217;ve discussed Gibbs sampling, but we are not interested in sampling from the posterior P(Z|X), but in finding its mode.
+    Instead of sampling directly from the posterior distribution, we instead sample entities proportionally to exponentiated entity posteriors.
+    The exponent is given by exp ci k&#8722;1, where i is the current round number (starting at i = 0), c = 1.5 and k = 20 is the total number of sampling epochs.
+    This slowly raises the posterior exponent from 1.0 to ec.
+    In our experiments, we found this procedure to outperform simulated annealing.
+    We also found sampling the T, G, and N variables to be particularly inefficient, so instead we maintain soft counts over each of these variables and use these in place of a hard sampling scheme.
+    We also foun

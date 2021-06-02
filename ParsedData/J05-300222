@@ -1,0 +1,7 @@
+ed the paraphrasing dictionary from a large comparable news corpus using the co-training method described in Barzilay and McKeown (2001).
+    The dictionary contains pairs of word-level paraphrases as well as phrase-level paraphrases.4 Several examples of automatically extracted paraphrases are given in Table 2.
+    During alignment, each pair of nonidentical words that do not comprise a synset in WordNet is looked up in the paraphrasing dictionary; in the case of a match, the pair is considered to be a paraphrase.
+    We now give an intuitive explanation of how our tree similarity function, denoted by Sim, is computed.
+    If the optimal alignment of two trees is known, then the value of the similarity function is the sum of the similarity scores of aligned nodes and aligned edges.
+    Since the best alignment of given trees is not known a priori, we select the maximal score among plausible alignments of the trees.
+    Instead of exhaustively traversing the space of all possible alignments, we recursively co

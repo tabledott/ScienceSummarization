@@ -1,0 +1,8 @@
+ir selection algorithm similar to (Koehn et al., 2003; Al-Onaizan et al., 2004), which includes some heuristic filtering to mal statement here.
+    A detailed theoretical investigation of the method will be given in a journal paper. for each data point initialize truth and alternative for each decoding iteration: for each data point increase phrase translation accuracy.
+    Blocks that occur only once in the training data are included as well.
+    The training algorithm in Table 2 is adapted from Table 1.
+    The training is carried out by running times over the parallel training data, each time decoding all the training sentences and generating a single block translation sequence for each training sentence.
+    The top five block sequences with the highest BLEU score are computed up-front for all training sentence pairs and are stored separately as described in Section 2.
+    The score-based decoding of the training sentence pairs is carried out in parallel on -Bit Opteron machines.
+    Here, the monotone de

@@ -1,0 +1,6 @@
+enerated with two boolean flags: coord, indicating that the nonterminal is conjoined to the head via a CC, and punc, indicating that the nonterminal is conjoined to the head via a punctuation mark.
+    When either or both of these flags is true, the intervening punctuation or conjunction is generated via appropriate instances of the Ppun,/PCC parameter classes.
+    For example, the model generates the five children in Figure 9 in the following order: first, the head-child is generated, which is the leftmost NP (short grass), conditioning on the parent label and the headword and tag.
+    Then, since modifiers are always generated from the head outward, the right-sibling of the head, which is the tall trees NP, is generated with both the punc and CC flags false.
+    Then, the rightmost NP (bushy bushes) is generated with both the punc and CC booleans true, since it is considered to be conjoined to the head-child and requires the generation of an intervening punctuation mark and conjunction.
+    Finally, the int

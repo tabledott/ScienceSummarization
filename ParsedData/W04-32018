@@ -1,0 +1,10 @@
+    2.
+    For our problem, just as for SVMs, the dual has important computational advantages, including the &#8220;kernel trick,&#8221; which allows the efficient use of high-dimensional features spaces endowed with efficient dot products (Cristianini and Shawe-Taylor, 2000).
+    Moreover, the dual view plays a crucial role in circumventing the exponential size of the primal problem.
+    In Eq.
+    2, there is a constraint for each mistake y one might make on each example i, which rules out that mistake.
+    For each mistake-exclusion constraint, the dual contains a variable &#945;i,y.
+    Intuitively, the magnitude of &#945;i,y is proportional to the attention we must pay to that mistake in order not to make it.
+    The dual of Eq.
+    2 (after adding additional variables &#945;i,yz and renormalizing by C) is given by: where Ii,y = I(xi, yi, y) indicates whether y is the true parse yi.
+    Given the dual solution &#945;*, the solution to the primal problem w* is simply a weighted linear combination of the f

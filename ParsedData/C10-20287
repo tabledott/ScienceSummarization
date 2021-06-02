@@ -1,0 +1,11 @@
+ of our knowledge, there are no works employing Twitter hashtags to learn a wide range of emotions and the re lations between the different emotions.
+			242
+	
+	
+			Below we propose a set of classification featuresand present the algorithm for sentiment classifica tion.
+			3.1 Classification features.
+			We utilize four basic feature types for sentimentclassification: single word features, n-gram fea tures, pattern features and punctuation features.For the classification, all feature types are com bined into a single feature vector.
+			3.1.1 Word-based and n-gram-based features Each word appearing in a sentence serves as a binary feature with weight equal to the inverted count of this word in the Twitter corpus.
+			We also took each consecutive word sequence containing2?5 words as a binary n-gram feature using a similar weighting strategy.
+			Thus n-gram features al ways have a higher weight than features of their component words, and rare words have a higher weight than common words.
+			Words or n-gramsappear

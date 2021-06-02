@@ -1,0 +1,6 @@
+odifier (SG in (a), the other PP in (b)) is hidden lower in the tree structure.
+    So the model will be unable to differentiate generation of the PP in adjacent versus nonadjacent or non-verb-crossing versus verb-crossing environments, and the structures in Figure 18 will be assigned unreasonably high probabilities.
+    This does not mean that distance preferences cannot be encoded in a binarybranching PCFG.
+    Goodman (1997) achieves this by adding distance features to the nonterminals.
+    The spirit of this implementation is that the top-level rules VP &#8594; VP PP and NP &#8594; NP PP would be modified to VP &#8594; VP(+rverb) PP and NP &#8594; NP(+rmod) PP, respectively, where (+rverb) means a phrase in which the head has a verb in its right modifiers, and (+rmod) means a phrase that has at least one right modifier to the head.
+    The model will learn from training data that P(VP &#8594; VP(+rverb) PP|VP) &#65533; P(VP &#8594; VP(-rverb) PP|VP), that is, that a prepositional-phrase modification is mu

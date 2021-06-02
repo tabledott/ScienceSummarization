@@ -1,0 +1,6 @@
+n, our parameter estimation algorithm can be easily performed in parallel computation.
+    SSL based on a hybrid generative/discriminative approach proposed in (Suzuki et al., 2007) has been defined as a log-linear model that discriminatively combines several discriminative models, pDi , and generative models, pGj , such that: where &#923;={&#955;i}Ii=1, and &#915;={{&#947;i}Ii=1, {&#947;j}I+J j=I+1}.
+    With the hybrid model, if we use the same labeled training data to estimate both &#923; and &#915;, &#947;js will become negligible (zero or nearly zero) since pDi is already fitted to the labeled training data while pGj are trained by using unlabeled data.
+    As a solution, a given amount of labeled training data is divided into two distinct sets, i.e., 4/5 for estimating &#923;, and the remaining 1/5 for estimating F (Suzuki et al., 2007).
+    Moreover, it is necessary to split features into several sets, and then train several corresponding discriminative models separately and preliminarily.
+    In contr

@@ -1,0 +1,6 @@
+stribution LN distribution only permits probabilities within a multinomial to covary.
+    We will generalize the LN to permit covariance among any probabilities in &#952;, throughout the model.
+    For example, the probability of a past-tense verb (VBD) having a noun as a right child might correlate with the probability that other kinds of verbs (VBZ, VBN, etc.) have a noun as a right child.
+    The partitioned logistic normal distribution (PLN) is a generalization of the LN distribution that takes the first step towards our goal (Aitchison, 1986).
+    Generating from PLN involves drawing a random vector from a multivariate normal distribution, but the logistic transformation is applied to different parts of the vector, leading to sampled multinomial distributions of the required lengths from different probability simplices.
+    This is in principle what is required for arbitrary covariance between grammar probabilities, except that DMV has O(t2) weights for a part-of-speech vocabulary of size t, requiring a 

@@ -1,0 +1,10 @@
+h, the direction (generating to the left or right of the head), and the adjacency (whether or not an argument has been generated yet in the current direction, a binary variable).
+    The stopping decision is estimated directly, with no smoothing.
+    If a stop is generated, no more arguments are generated for the current head to the current side.
+    If the current head&#8217;s argument generation does not stop, another argument is chosen using: PCHOOSE(aIh, dir).
+    Here, the argument is picked conditionally on the identity of the head (which, recall, is a word class) and the direction.
+    This term, also, is not smoothed in any way.
+    Adjacency has no effect on the identity of the argument, only on the likelihood of termination.
+    After an argument is generated, its subtree in the dependency structure is recursively generated.
+    Formally, for a dependency structure D, let each word h have left dependents depsD(h,l) and right dependents depsD(h, r).
+    The following recursion defines the probability

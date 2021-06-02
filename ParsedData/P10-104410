@@ -1,0 +1,8 @@
+r relation data.
+    We are given a set R of binary relations and a corpus D = {r(a1, a2)} of extracted instances for these relations.
+    2 Our task is to compute, for each argument ai of each relation r, a set of usual argument values (noun phrases) that it takes.
+    For example, for the relation is headquartered in the first argument set will include companies like Microsoft, Intel, General Motors and second argument will favor locations like New York, California, Seattle.
+    We first describe the straightforward application of LDA to modeling our corpus of extracted relations.
+    In this case two separate LDA models are used to model a1 and a2 independently.
+    In the generative model for our data, each relation r has a corresponding multinomial over topics 0r, drawn from a Dirichlet.
+    For each extraction, a hidden topic z is first picked according to 0r, and then the observed argument a is chosen according to the multinomial 0, Readers familiar with topic modeling terminology can understand our ap

@@ -1,0 +1,7 @@
+ld improve our system.
+    4.1.3 Parse Tree Path.
+    Like the governing-category feature described above, the parse tree path feature (path) is designed to capture the syntactic relation of a constituent to the rest of the sentence.
+    The path feature, however, describes the syntactic relation between the target word (that is, the predicate invoking the semantic frame) and the constituent in question, whereas the gov feature is independent of where the target word appears in the sentence; that is, it identifies all subjects whether they are the subject of the target word or not.
+    The path feature is defined as the path from the target word through the parse tree to the constituent in question, represented as a string of parse tree nonterminals linked by symbols indicating upward or downward movement through the tree, as shown in Figure 3.
+    Although the path is composed as a string of symbols, our system treats the string as an atomic value.
+    The path includes, as the first element of the string, t

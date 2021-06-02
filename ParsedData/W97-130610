@@ -1,0 +1,9 @@
+e, if an antecedent is found, then the appropriate annotations are made to the text and no more rules are tried for that pronoun, otherwise the next rule is tried.
+    If no rules resolve the pronoun, then it is left unresolved.
+    These rules are individually are high precision rules, and collectively they add up to reasonable recall.
+    The precision is 97% (121/125) and the recall is 60% (121/201) for 198 pronouns of training data.
+  
+  
+    The Naive Algorithm [Hobbs 1976] works by specifying a total order on noun phrases in the prior discourse and comparing each noun phrase against the selectional restrictions (i.e. gender, number) of the anaphor, and taking the antecedent to be the first one to satisfy them.
+    The specification of the ordering constitutes a traversal order of the syntax tree of the anaphors clause and from there to embedding clauses and prior clauses.
+    The Winograd sentences, with either verb, would yield the following ordering of possible antecedents: The city council &gt; the w

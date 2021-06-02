@@ -1,0 +1,9 @@
+CFG&amp;quot;.
+    To this end, we used a random 90%/10% division of WSJ40 into a training set and a test set.
+    The ML-PCFG had thus access to the Penn WSJ trees in the training set, while UML-DOP had to bootstrap all structure from the flat strings from the training set to next parse the 10% test set -- clearly a much more challenging task.
+    Table 2 gives the results in terms of f-scores.
+    The table shows that UML-DOP scores better than U-DOP, also for WSJ40.
+    Our results on WSJ10 are somewhat lower than in table 1 due to the use of a smaller training set of 90% of the data.
+    But the most surprising result is that UML-DOP's fscore is higher than the supervised binarized treebank PCFG (ML-PCFG) for both WSJ10 and WSJ40.
+    In order to check whether this difference is statistically significant, we additionally tested on 10 different 90/10 divisions of the WSJ40 (which were the same splits as in Bod 2006).
+    For these splits, UML-DOP achieved an average f-score of 66.9%, while ML-PCFG obtained

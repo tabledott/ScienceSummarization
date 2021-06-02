@@ -1,0 +1,9 @@
+s a score, their product gives the probability of the entire path, and thereby the cost of the transition between string positions.
+    Figure 3 shows an example learned distribution that reflects the structure of the given parse.
+    With these derivation steps in place, we must address a handful of special cases to complete the generative model.
+    We require that the Markov walk from leaf to leaf of the English tree must start and end at the root, using the following assumptions.
+    This model can be simplified by removing all conditioning on node types.
+    However, we found this variant to slightly underperform the full model described above.
+    Intuitively, types carry information about cross-linguistic ordering preferences.
+    Because our model largely mirrors the generative process and structure of the original HMM model, we apply a nearly identical training procedure to fit the parameters to the training data via the Expectation-Maximization algorithm.
+    Och and Ney (2003) gives a detailed expo

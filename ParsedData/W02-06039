@@ -1,0 +1,11 @@
+methods are applied to the segmentation of both Finnish and English words.
+    In Section 5, we compare the results obtained from our methods to results produced by Goldsmith&#8217;s Linguistica on the same data.
+  
+  
+    The task is to find the optimal segmentation of the source text into morphs.
+    One can think of this as constructing a model of the data in which the model consists of a vocabulary of morphs, i.e. the codebook and the data is the sequence of text.
+    We try to find a set of morphs that is concise, and moreover gives a concise representation for the data.
+    This is achieved by utilizing an MDL cost function.
+    The total cost consists of two parts: the cost of the source text in this model and the cost of the codebook.
+    Let M be the morph codebook (the vocabulary of morph types) and D = m1m2 ... mn the sequence of morph tokens that makes up the string of words.
+    We then define the total cost C as The cost of the source text is thus the negative loglikelihood of the morph, summed 

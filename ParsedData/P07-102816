@@ -1,0 +1,8 @@
+ords for Jaccard.
+    For other similarity metrics the result is similar.
+    The weighting schemes wtrp had surprisingly little influence on results.
+    For Jaccard similarity, the model had an error rate of 0.1858 for uniform weights, 0.1874 for frequency weighting, and 0.1806 for discriminativity.
+    For other similarity metrics the results were similar.
+    A cutoff was used in the similarity-based model: For each seen headword, only the 500 most similar words (according to a given similarity measure) were included in the computaof similar words; (b) % of times the more frequent word won; (c) number of distinct similar words per seen headword; (d) avg. size of intersection between roles tion; for all others, a similarity of 0 was assumed.
+    Experiments testing a range of values for this parameter show that error rates stay stable for parameter values &gt; 200.
+    So similarity-based models seem not overly sensitive to the weighting scheme used, the number of seen headwords, or the number of similar w

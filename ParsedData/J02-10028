@@ -1,0 +1,6 @@
+re either related or unrelated by the intent of the document author.
+    A natural way to reason about developing a segmentation algorithm is therefore to optimize the likelihood that two such units are correctly labeled as being related or being unrelated.
+    Our error metric P&#181; is simply the probability that two sentences drawn randomly from the corpus are correctly identified as belonging to the same document or not belonging to the same document.
+    The derivation of P&#181; is rather involved, and a much simpler version is adopted in the later work (Beeferman, Berger, and Lafferty 1999) and by others.
+    This version, referred to as Pk, is calculated by setting k to half of the average true segment size and then computing penalties via a moving window of length k. At each location, the algorithm determines whether the two ends of the probe are in the same or different segments in the reference segmentation and increases a counter if the algorithm&#8217;s segmentation disagrees.
+    The resulting 

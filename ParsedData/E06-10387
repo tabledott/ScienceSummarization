@@ -1,0 +1,9 @@
+ak (2005) presented supervised and semi-supervised versions of the Knight and Marcu noisy-channel model.
+    The resulting systems typically return informative and grammatical sentences, however, they do so at the cost of compression rate.
+    Riezler et al. (2003) present a discriminative sentence compressor over the output of an LFG parser that is a packed representation of possible compressions.
+    Though this model is highly likely to return grammatical compressions, it required the training data be human annotated with syntactic trees.
+  
+  
+    For the rest of the paper we use x = x1 ... xn to indicate an uncompressed sentence and y = y1 ... ym a compressed version of x, i.e., each yj indicates the position in x of the jth word in the compression.
+    We always pad the sentence with dummy start and end words, x1 = -START- and xn = -END-, which are always included in the compressed version (i.e. y1 = x1 and ym = xn).
+    In this section we described a discriminative online learning approach to sentence 

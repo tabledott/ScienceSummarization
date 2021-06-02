@@ -1,0 +1,8 @@
+irst instance (e.g.
+    &amp;quot;Mayor of XXX&amp;quot; or &amp;quot;XXX said&amp;quot;), so in general it is quite difficult to control the actual training information content just by the number of raw seed word types that are annotated.
+    For each of these languages, 5 levels of information sources are evaluated.
+    The baseline case is as previously described for Table 3.
+    The context-only case restricts system training to the two (left and right) contextual tries, ignoring the prefix/suffix morphological information.
+    The morphology only case, in contrast, restricts the system to only the two (prefix and suffix) morphological models.
+    These can be estimated from the 3 training wordlists (150-300 words total), but without an independent source of information (e.g. context) via which bootstrapping can iterate, there is no available path by which these models can learn the behaviour of previously unseen affixes and conquer new territory.
+    Thus the model is entirely static on just the initial 

@@ -1,0 +1,11 @@
+ractable.
+    Therefore, SMT decoders typically limit the number of permutations considered for efficiency reasons by placing reordering restrictions.
+    Reordering restrictions for word-based SMT decoders were introduced by (Berger et al., 1996) and (Wu, 1996).
+    (Berger et al., 1996) allow only reordering of at most n words at any given time.
+    (Wu, 1996) propose using contiguity restrictions on the reordering.
+    For a comparison and a more detailed discussion of the two approaches see (Zens and Ney, 2003).
+    A different approach to allow for a limited reordering is to reorder the input sentence such that the source and the target sentences have similar word order and then proceed to monotonically decode the reordered source sentence.
+    Monotone decoding translates words in the same order they appear in the source language.
+    Hence, the input and output sentences have the same word order.
+    Monotone decoding is very efficient since the optimal decoding can be found in polynomial time.
+    (Ti

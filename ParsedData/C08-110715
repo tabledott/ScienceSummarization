@@ -1,0 +1,11 @@
+at are part of that rule (each unary template is extracted following the same procedure describedin Section 3.2).
+			For example, from ?X find solu tion to Y ? X solve Y ? we generate the unary rules ?X find?
+			X solve?, ?X find solution?
+			Xsolve?, ?solution to Y ? solve Y ? and ?find solu tion to Y ? solve Y ?.
+			The score of each generated rule is set to be the score of the original binary rule.The same unary rule can be derived from different binary rules.
+			For example, ?hire Y ? employ Y ? is derived both from ?X hire Y ? X em ploy Y ? and ?hire Y for Z ? employ Y for Z?, having a different score from each original binary rule.
+			The second step of the algorithm aggregates the different scores yielded for each derived rule to produce the final rule score.
+			Three aggregationfunctions were tested: sum (Derived-Sum), aver age (Derived-Avg) and maximum (Derived-Max).
+	
+	
+			We want to evaluate learned unary and binary rule bases by their utility for NLP applications throughassessing the validity of i

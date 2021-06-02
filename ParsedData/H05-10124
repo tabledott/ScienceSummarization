@@ -1,0 +1,6 @@
+as M links.
+			Define L to be the set of all possible valid link configurations, and L to be a member of that set.
+			We seek to maximize the alignment probability by finding the optimum link configuration Lopt, p(Lopt|S, T ) = argmax L?L p(L|S, T ) = p(lMi |tM1 , sK1 ) = M ? i=0 p(li|tM1 , sK1 , li?11 ).We factor this into a transition model and an obser vation model, p(L|S, T ) = 1Z M ? i=0 p(li|li?1)?p(li|tM1 , sK1 , li?11 )1??.
+			where Z is the normalizing constant.We factor the model as above so that the tran sition model computation, which uses information available on the search hypotheses, is reduced during the search process.
+			In the aligner presented here, ?is always set to 0.5.
+			Next we will describe the tran sition model, then the observation model and finallythe experiments in alignment and machine transla tion.In the IBM Model 1 aligner, the choice of the lan guage to serve as states of the search algorithm is not prescribed, but practically the choice is important asit affects performance.

@@ -1,0 +1,8 @@
+l description that follows assumes the reader is familiar with the basic LDA model (Blei et al., 2003).
+    Let each document d be represented by a tuple consisting of a list of word indices w(d) = (w1, ... , wNd) and a list of binary topic presence/absence indicators &#923;(d) = (l1,...,lK) where each wz E {1, ... , V } and each lk E {0,1}.
+    Here Nd is the document length, V is the vocabulary size and K the total number of unique labels in the corpus.
+    We set the number of topics in Labeled LDA to be the number of unique labels K in the corpus.
+    The generative process for the algorithm is found in Table 1.
+    Steps 1 and 2&#8212;drawing the multinomial topic distributions over vocabulary )3k for each topic k, from a Dirichlet prior 77&#8212;remain the same as for traditional LDA (see (Blei et al., 2003), page 4).
+    The traditional LDA model then draws a multinomial mixture distribution e(d) over all K topics, for each document d, from a Dirichlet prior &#945;.
+    However, we would like to restri

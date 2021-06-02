@@ -1,0 +1,11 @@
+aged parameters&#8221; where the final weight vector is the average of weight vectors after each sentence in each iteration over the training data.
+    This averaging effect has been shown to reduce overfitting and produce much more stable results (Collins, 2002).
+    A key difference between n-best and forest reranking is the handling of features.
+    In n-best reranking, all features are treated equivalently by the decoder, which simply computes the value of each one on each candidate parse.
+    However, for forest reranking, since the trees are not explicitly enumerated, many features can not be directly computed.
+    So we first classify features into local and non-local, which the decoder will process in very different fashions.
+    We define a feature f to be local if and only if it can be factored among the local productions in a tree, and non-local if otherwise.
+    For example, the Rule feature in Fig.
+    2(a) is local, while the ParentRule feature in Fig.
+    2(b) is non-local.
+    It is worth noti

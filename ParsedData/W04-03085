@@ -1,0 +1,9 @@
+ more detailed discussion of dependency graphs and well-formedness conditions, the reader is referred to Nivre (2003).
+  
+  
+    Having defined dependency graphs, we may now consider to what extent it is possible to construct these graphs incrementally.
+    In the strictest sense, we take incrementality to mean that, at any point during the parsing process, there is a single connected structure representing the analysis of the input consumed so far.
+    In terms of our dependency graphs, this would mean that the graph being built during parsing is connected at all times.
+    We will try to make this more precise in a minute, but first we want to discuss the relation between incrementality and determinism.
+    It seems that incrementality does not by itself imply determinism, at least not in the sense of never undoing previously made decisions.
+    Thus, a parsing method that involves backtracking can be incremental, provided that the backtracking is implemented in such a way that we can always maintain a sing

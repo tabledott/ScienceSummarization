@@ -1,0 +1,9 @@
+and each mij = P (sj |hi), that is, mij is the probability of a word having sense jgiven that it has been assigned cluster i. This probability can be computed counting the times an occur rence with sense sj has been assigned cluster hi in the train corpus.
+			The mapping matrix is used to transform any cluster score vector h?
+			= (h1, . . .
+			, hm) returned by the WSID algorithm into a sense score vector s?
+			= (s1, . . .
+			, sn).
+			It suffices to multiply the score vector by M , i.e., s?
+			= h?M . We use the M mapping matrix in order to convert the cluster score vector of each test corpus instance into a sense score vector, and assign the sense with All Nouns Verbs train 22281 14746 9773 test 4851 2903 2427 all 27132 17649 12200 Table 1: Number of occurrences for the 100 target words in the corpus following the train/test split.maximum score to that instance.
+			Finally, the result ing test corpus is evaluated according to the usual precision and recall measures for supervised word sense disambiguation

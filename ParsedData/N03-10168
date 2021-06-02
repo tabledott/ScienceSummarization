@@ -1,0 +1,7 @@
+, s, and even e when context permits.
+    Our parser, like a best-first parser, maintains estimates b(e, s) of O(e, s) which begin at &#8722;oo, only increase over time, and always represent the score of the best parses of their edges e discovered so far.
+    Optimality means that for any e, b(e, s) will equal OG(e, s) when e is removed from the agenda.
+    If one uses b(e, s) to prioritize edges, we show in Klein and Manning (2001a), that the parser is optimal over arbitrary PCFGs, and a wide range of control strategies.
+    This is proved using an extension of Dijkstra&#8217;s algorithm to a certain kind of hypergraph associated with parsing, shown in figure 1(b): parse items are nodes in the hypergraph, hyperarcs take sets of parse items to their result item, and hyperpaths map to parses.
+    Reachability from start corresponds to parseability, and shortest paths to Viterbi parses.
+    The hypergraph shown in figure 1(b) shows a parse of the goal S:[0,3] which includes NP:[0,2].2 This parse can be split in

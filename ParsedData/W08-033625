@@ -1,0 +1,10 @@
+further confirms that segmentation and MT evaluations can yield rather different outcomes.
+    We chose the &#955;0 = 2 on another dev set (MT02).
+    On the test set MT05, &#955;0 = 2 yields 31.47 BLEU, which represents a quite large improvement compared to the unbiased segmenter (30.95 BLEU).
+    Further reducing the average number of characters per token yields gradual drops of performance until character-level segmentation (&#955;0 &gt; 32, 29.36 BLEU).
+    Here are some examples of how setting &#955;0 = 2 shortens the words in a way that can help MT.
+  
+  
+    In Section 3.1 we showed that a statistical sequence model with rich features can generalize better than maximum matching segmenters.
+    However, it also inconsistently over-generates a big MT training lexicon and OOV words in MT test data, and thus causes a problem for MT.
+    To improve a feature-based sequence model for MT, we propose 4 different approaches to deal with named entities, optimal length of word for MT and joint search for segmenta

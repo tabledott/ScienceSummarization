@@ -1,0 +1,14 @@
+y cost.
+    The PROBING model is 2.4 times as fast as the fastest alternative, SRILM, and uses less memory too.
+    The TRIE model uses less memory than the smallest lossless alternative and is still faster than SRILM.
+    These performance gains transfer to improved system runtime performance; though we focused on Moses, our code is the best lossless option with cdec and Joshua.
+    We attain these results using several optimizations: hashing, custom lookup tables, bit-level packing, and state for left-to-right query patterns.
+    The code is opensource, has minimal dependencies, and offers both C++ and Java interfaces for integration.
+  
+  
+    Alon Lavie advised on this work.
+    Hieu Hoang named the code &#8220;KenLM&#8221; and assisted with Moses along with Barry Haddow.
+    Adam Pauls provided a pre-release comparison to BerkeleyLM and an initial Java interface.
+    Nicola Bertoldi and Marcello Federico assisted with IRSTLM.
+    Chris Dyer integrated the code into cdec.
+    Juri Ganitkevitch answered qu

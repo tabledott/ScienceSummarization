@@ -1,0 +1,7 @@
+e 10 shows recursive pseudocode for the SX estimate; the others are similar.
+    To precalculate our A* estimates efficiently, we used a memoization approach rather than a dynamic programming approach.
+    This resulted in code comparable in efficiency, but which was simpler to reason about, and, more importantly, allowed us to exploit sparseness when present.
+    For example with left-factored trie encodings, 76% of (state, right tag) combinations are simply impossible.
+    Tables which mapped arguments to returned results were used to memoize each procedure.
+    In our experiments, we forced these tables to be filled in a precomputation step, but depending on the situation it might be advantageous to allow them to fill as needed, with early parses proceeding slowly while the tables populate.
+    With the optimal forward estimate TRUE, the actual distance to the closest goal, we would never expand edges other than those in best parses, but computing TRUE is as hard as parsing the sentence in the first place.

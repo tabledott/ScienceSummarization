@@ -1,0 +1,7 @@
+ (Koehn et al., 2003).
+    Here we approximate the sum over derivations directly using a beam search in which we produce a beam of high probability translation sub-strings for each cell in the parse chart.
+    This algorithm is similar to the methods for decoding with a SCFG intersected with an n-gram language model, which require language model contexts to be stored in each chart cell.
+    However, while Chiang (2005) stores an abbreviated context composed of the n &#8722; 1 target words on the left and right edge of the target substring, here we store the entire target string.
+    Additionally, instead of maximising scores in each beam cell, we sum the inside scores for each derivation that produces a given string for that cell.
+    When the beam search is complete we have a list of translations in the top beam cell spanning the entire source sentence along with their approximated inside derivation scores.
+    Thus we can assign each translation string a probability by normalising its inside score by the su

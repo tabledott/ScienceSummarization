@@ -1,0 +1,7 @@
+subtreei (n2 ) &#8710;(n1 , n2) can be computed by the following recursive rules: where nc(n1) is the child number of n1, ch(n,j) is the jth child of node n and&#955; (0&lt;&#955; &lt;1) is the decay factor in order to make the kernel value less variable with respect to the subtree sizes.
+    In addition, the recursive rule (3) holds because given two nodes with the same children, one can construct common sub-trees using these children and common sub-trees of further offspring.
+    The parse tree kernel counts the number of common sub-trees as the syntactic similarity measure between two relation instances.
+    The time complexity for computing this kernel is O( |N1  |&#8901;  |N2|) .
+    In this paper, two composite kernels are defined by combing the above two individual kernels in the following ways: is the coefficient.
+    Evaluation on the development set shows that this composite kernel yields the best performance when &#945; is set to 0.4.
+    Here, K&#710;(&#8226;,&#8226;) is the normalizedK(&#8226;,&#

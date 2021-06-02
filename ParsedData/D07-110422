@@ -1,0 +1,11 @@
+ starting range of the binary search, but we can check for the existence of ub to decide whether we even need to search for aub at all.
+			This can help us avoid searches that are guaranteed to be fruitless.
+			Now consider the discontiguous case.
+			As in the analogous contiguous case, a phrase a?b will onlyexist in the text if its maximal prefix a?
+			and maxi mal suffix ?b both exist in the corpus and overlap at specific positions.
+			8 Searching for a?b is potentially very expensive, so we put all available information to work.
+			Before searching, we require that both a?and ?b exist.
+			Additionally, we compute the location of a?b using the locations of both maximal sub phrases.
+			To see why the latter optimization is useful, consider a phrase abXcd.
+			In our baseline algorithm, we would search for ab and cd, and then perform a computation to see whether these subphrases were collocated within an elastic window.
+			However, if weinstead use abXc and bXcd as the basis of the com putation, we gain two ad

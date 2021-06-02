@@ -1,0 +1,11 @@
+n-domain data.
+    We now explore different ways of making use of labeled and unlabeled in-domain data.
+    Bacchiani et al. (2006) applies self-training to parser adaptation to utilize unlabeled in-domain data.
+    The authors find that it helps quite a bit when adapting from BROWN to WSJ.
+    They use a parser trained from the BROWN train set to parse WSJ and add the parsed WSJ sentences to their training set.
+    We perform a similar experiment, using our WSJtrained reranking parser to parse BROWN train and testing on BROWN development.
+    We achieved a boost from 84.8% to 85.6% when we added the parsed BROWN sentences to our training.
+    Adding in 1,000k sentences from NANC as well, we saw a further increase to 86.3%.
+    However, the technique does not seem as effective in our case.
+    While the self-trained BROWN data helps the parser, it adversely affects the performance of the reranking parser.
+    When self-trained BROWN data is added to WSJ training, the reranking parser&#8217;s performance drops

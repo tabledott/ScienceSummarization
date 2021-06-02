@@ -1,0 +1,6 @@
+led through a regexp (to be compiled into E:E/2.7 &#8722;)arcs).
+    A more subtle example is weighted FSAs that approximate PCFGs (Nederhof, 2000; Mohri and Nederhof, 2001), or to extend the idea, weighted FSTs that approximate joint or conditional synchronous PCFGs built for translation.
+    These are parameterized by the PCFG&#8217;s parameters, but add or remove strings of the PCFG to leave an improper probability distribution.
+    Fortunately for those techniques, an FST with positive arc weights can be normalized to make it jointly or conditionally probabilistic: ization, which simply divides each f(x, y) by Ex,,y, f(x', y') (joint case) or by Ey, f(x, y') (conditional case).
+    To implement the joint case, just divide stopping weights by the total weight of all paths (which &#167;4 shows how to find), provided this is finite.
+    In the conditional case, let g be a copy of f with the output labels removed, so that g(x) finds the desired divisor; determinize g if possible (but this fails for some weigh

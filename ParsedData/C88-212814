@@ -1,0 +1,9 @@
+t-out manner (treating the agenda s a stack) we have a "greedy" parsing algorithm, which pursues parsing possibilities depth- first and backtracks when dead-ends occur.
+  An interesting possibility involves ordering lemmas as follows: ?
+  Highest priority are prediction items, then lexical items, then other conditional items, then other nonconditional items.
+  If (1) does not order items, items ending farther to the right have higher priority?
+  If (1) and (2) do not order items, items constructed from the instantiation of longer rules have higher priority.
+  This complex ordering implements a quite simple parsing strategy.
+  The first condition guarantees that no nonconditional items will be added until conditional items have been computed?
+  Thus, items cor- responding to the closure (in the sense of LI~ parsing) of the non- conditional items are always added to the table.
+  Unlike LI~ parsing, 4For formalisms with complex structured nonterminals, the start "symbol" need only be unifiable with the left-haud

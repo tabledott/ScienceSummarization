@@ -1,0 +1,8 @@
+AP combination was used for TM probabilities only, in part due to a technical difficulty in formulating coherent counts when using standard LM smoothing techniques (Kneser and Ney, 1995).3 Motivated by information retrieval, a number of approaches choose &#8220;relevant&#8221; sentence pairs from OUT by matching individual source sentences from IN (Hildebrand et al., 2005; L&#168;u et al., 2007), or individual target hypotheses (Zhao et al., 2004).
+    The matching sentence pairs are then added to the IN corpus, and the system is re-trained.
+    Although matching is done at the sentence level, this information is subsequently discarded when all matches are pooled.
+    To approximate these baselines, we implemented a very simple sentence selection algorithm in which parallel sentence pairs from OUT are ranked by the perplexity of their target half according to the IN language model.
+    The number of top-ranked pairs to retain is chosen to optimize dev-set BLEU score.
+  
+  
+    The sentence-selection approach 

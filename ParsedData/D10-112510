@@ -1,0 +1,12 @@
+ for taking word r as the next dependency, and transitioning from state s to s0.
+    A similar function gL is defined for left modifiers.
+    We define to be the joint score for dependencies y|i, and left and right state sequences s0 ... sq and t0 ... tp.
+    We specify that s0 = t0 = START and sq = tp = END.
+    In this case we define and it follows that argmaxy|i&#8712;Zi fi(y|i) can be computed in O(n|S|2) time using a variant of the Viterbi algorithm, hence the model satisfies the siblingdecomposition assumption.
+  
+  
+    We now describe the dual decomposition parsing algorithm for models that satisfy Assumption 1.
+    Consider the following generalization of the decoding problem from Eq.
+    1, where f(y) = Ei fi(y|i), Although the maximization w.r.t. z is taken over the set i, the constraints in Eq.
+    5 ensure that z = y for some y E Y, and hence that z E Y.
+    Without the z(i, j) = y(i, j) constraints, the objective would decompose into the separate maximizations z&#8727; = argmaxz&#8712;Z f(z), an

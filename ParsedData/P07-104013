@@ -1,0 +1,9 @@
+anslation systems, is the th system weight, is the accumulated confidence for word produced by system between nodes and , and is a weight for the number of NULL links along the hypothesis .
+    The word confidences were increased by if the word aligns between nodes and in the network.
+    If no word aligns between nodes and , the NULL word confidence at that position was increased by .
+    The last term controls the number of NULL words generated in the output and may be viewed as an insertion penalty.
+    Each arc in the confusion network carries the word label and scores .
+    The decoder outputs the hypothesis with the highest given the current set of weights.
+    There are several problems with the previous confusion network decoding approaches.
+    First, the decoding can generate ungrammatical hypotheses due to alignment errors and phrases broken by the where is the language model weight, is the LM log-probability and is the number of words in the hypothesis .
+    The word posteriors are estimated by sc

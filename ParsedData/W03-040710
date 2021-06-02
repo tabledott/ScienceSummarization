@@ -1,0 +1,11 @@
+teration.
+    There are various ways to select the labelled examples for each tagger.
+    A typical approach is to select those examples assigned a high score by the relevant classifier, under the assumption that these examples will be the most reliable.
+    A score-based selection method is difficult to apply in our experiments, however, since TNT does not provide scores for tagged sentences.
+    We therefore tried two alternative selection methods.
+    The first is to simply add all of the cache labelled by one tagger to the training data of the other.
+    We refer to this method as naive co-training.
+    The second, more sophisticated, method is to select that subset of the labelled cache which maximises the agreement of the two taggers on unlabelled data.
+    We call this method agreement-based cotraining.
+    For a large cache the number ofpossible subsets makes exhaustive search intractable, and so we randomly sample the subsets.
+    The pseudo-code for the agreement-based selection method is given in F

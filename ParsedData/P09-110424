@@ -1,0 +1,10 @@
+sHUa (Li and Khudanpur, 2008).
+    The pipeline extracts a Hiero-style synchronous context-free grammar (Chiang, 2007), employs suffix-array based rule extraction (Lopez, 2007), and tunes model parameters with minimum error rate training (Och, 2003).
+    We trained on the FBIS corpus using sentences up to length 40, which includes 2.7 million English words.
+    We used a 5-gram language model trained on 126 million words of the Xinhua section of the English Gigaword corpus, estimated with SRILM (Stolcke, 2002).
+    We tuned on 300 sentences of the NIST MT04 test set.
+    Results on the NIST MT05 test set appear in Table 3.
+    We compared four sets of alignments.
+    The GIZA++ alignments7 are combined across directions with the grow-diag-final heuristic, which outperformed the union.
+    The joint HMM alignments are generated from competitive posterior thresholding (DeNero and Klein, 2007).
+    The ITG Viterbi alignments are the Viterbi output of the ITG model with all features, trained to maximize log likel

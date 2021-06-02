@@ -1,0 +1,11 @@
+ren ETs given the parent ET because: (1) the permutation of the ETs is computationally expensive (2) it is possible that we can resort to simple linguistic treatments on the output dependency tree to order the ETs.
+    Currently, all the ETs are attached to each other at their root nodes.
+    In our implementation, the different decompositions of the input dependency tree are stored in a shared forest structure, utilizing the dynamic programming property of the tree structures explicitly.
+    Suppose the input sentence has n words and the shared forest representation has m nodes.
+    Suppose for each word, there are maximally k different ETs containing it, we have m &lt;_ kn .
+    Let b be the max breadth factor in the packed forest, it can be shown that the decoder visits at most mb nodes during execution.
+    Hence, we have: which is linear to the input size.
+    Combined with a polynomial time parsing algorithm, the whole decoding process is polynomial time.
+  
+  
+    We implemented the above approach for 

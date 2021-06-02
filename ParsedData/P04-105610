@@ -1,0 +1,7 @@
+r graph, which results in faster inference.
+    We could specify the potential for the repeat template in a similar 2-by-2 table, this time leaving the table entries to be learned, given that it is not a hard constraint.
+    However we can do better by noting that the vast majority of cases where a repeated protein name is not also tagged as a protein happens when it is part of a larger phrase that is tagged.
+    For example, 'HDAC1 enzyme' is a protein name, therefore 'HDAC1' is not tagged in this phrase, even though it may have been tagged previously in the abstract where it was not followed by 'enzyme'.
+    We need a potential that allows two entities with the same text to have different labels if the entity with label-value 0 is inside another entity with label-value 1.
+    But a candidate entity may be inside more than one &amp;quot;including&amp;quot; entity, and the number of including entities may vary from one candidate extraction to another.
+    Using the example from Section 5.1, the candidate enti

@@ -1,0 +1,10 @@
+ the ability to sample from the transition distribution, and a reward function r(h).
+    Here, h = (s0, a0, ... , sn&#8722;1, an&#8722;1, sn) is a history of states and actions visited while interpreting one document. r(h) outputs a realvalued score that correlates with correct action selection.3 We consider both immediate reward, which is available after each action, and delayed reward, which does not provide feedback until the last action.
+    For example, task completion is a delayed reward that produces a positive value after the final action only if the task was completed successfully.
+    We will also demonstrate how manually annotated action sequences can be incorporated into the reward.
+    The goal of training is to estimate parameters 0 of the action selection distribution p(a|s, 0), called the policy.
+    Since the reward correlates with action sequence correctness, the 0 that maximizes expected reward will yield the best actions.
+  
+  
+    Our goal is to predict a sequence of actions.
+    We const

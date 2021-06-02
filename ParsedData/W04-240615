@@ -1,0 +1,8 @@
+ery other vector to one of the K clusters whose centroid is closest to that vector.
+    After all vectors are assigned, it recomputes the cluster centroids by averaging all of the vectors assigned to that cluster.
+    This repeats until convergence, that is until no vector changes its cluster across iterations and the centroids stabilize.
+    In similarity space, each instance can be viewed as a node of a fully connected weighted graph whose edges indicate the similarity between the instances they connect.
+    K-means will first select K random nodes that represent the centroids of the initial K clusters.
+    It will then assign every other node I to one of the K clusters such that the edge joining I and the centroid of that cluster has maximum weight among the edges joining I to all centroids.
+    It is generally believed that the quality of clustering by partitional algorithms is inferior to that of the agglomerative methods.
+    However, a recent study (Zhao and Karypis, 2002) has suggested that these conc

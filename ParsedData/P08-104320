@@ -1,0 +1,9 @@
+lid Hebrew entries lacking tags assignment, we assign all possible tags and then simulate a grammatical constraint.
+    Here, all tokeninternal collocations of tags unseen in our training data are pruned away.
+    From now on all lattice arcs are tagged segments and the assignment of probability P(p &#8212;* (s, p)) to lattice arcs proceeds as usual.4 A rather pathological case is when our lexical heuristics prune away all segmentation possibilities and we remain with an empty lattice.
+    In such cases we use the non-pruned lattice including all (possibly ungrammatical) segmentation, and let the statistics (including OOV) decide.
+    We empirically control for the effect of our heuristics to make sure our pruning does not undermine the objectives of our joint task.
+  
+  
+    Previous work on morphological and syntactic disambiguation in Hebrew used different sets of data, different splits, differing annotation schemes, and different evaluation measures.
+    Our experimental setup therefore is designed to ser

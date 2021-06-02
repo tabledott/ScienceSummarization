@@ -1,0 +1,7 @@
+ grammar, of course, the set of all possible left-child chains is infinite.
+    We use two techniques to reduce the number of left-child chains: first, we remove some (but not all) of the recursion from the grammar through a tree transform; next, we limit the left-child chains consisting of more than two non-terminal categories to those actually observed in the training data more than once.
+    Left-child chains of length less than or equal to two are all those observed in training data.
+    As a practical matter, the set of leftchild chains for a terminal x is taken to be the union of the sets of left-child chains for all pre-terminal part-ofspeech (POS) tags T for x.
+    Before inducing the left-child chains and allowable triples from the treebank, the trees are transformed with a selective left-corner transformation (Johnson and Roark, 2000) that has been flattened as presented in Roark (2001b).
+    This transform is only applied to left-recursive productions, i.e. productions of the form A , Ay.
+    The t

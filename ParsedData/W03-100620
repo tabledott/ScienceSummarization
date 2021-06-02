@@ -1,0 +1,10 @@
+l, understandably, because SYNT-TAG is the simpler grammar.
+    LDA is an acronym for Lightweight Dependency Analyzer (Srinivas (1997)).
+    Given as input a supertagged sequence of words, it outputs a partial dependency parse.
+    It takes advantage of the fact that supertagging provides an almost-parse in order to dependency parse the sentence in a simple, deterministic fashion.
+    Basic LDA is a two step procedure.
+    The first step involves linking each word serving as a modifier with the word that it modifies.
+    The second step involves linking each word serving as an argument with its predicate.
+    Linking always only occurs so that grammatical requirements as stipulated by the supertags are satisfied.
+    The version of LDA that is used in this work differs from Srinivas (1997) in that there are other constraints on the linking process.3 In particular, a link is not established if its existence would create crossing brackets or cycles in the dependency tree for the sentence.
+    We perform LDA on 

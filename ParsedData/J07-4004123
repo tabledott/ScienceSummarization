@@ -1,0 +1,7 @@
+ POS tag is CC, is changed to conj.
+    Ampersands are also a significant problem, and occur frequently in WSJ text.
+    For example, the CCGbank analysis of Standard &amp; Poor&#8217;s index assigns the lexical category N/N to both Standard and &amp;, treating them as modifiers of Poor, whereas DepBank treats &amp; as a coordinating term.
+    We fixed this by creating conj GRs between any &amp; and the two words on either side; removing the modifier GR between the two words; and replacing any GRs in which the words on either side of the &amp; are arguments with a single GR in which &amp; is the argument.
+    The ta relation, which identifies text adjuncts delimited by punctuation (Briscoe 2006), is difficult to assign correctly to the parser output.
+    The simple punctuation rules used by the parser, and derived from CCGbank, do not contain enough information to distinguish between the various cases of ta.
+    Thus the only rule we have implemented, which is somewhat specific to the newspaper genre, is to r

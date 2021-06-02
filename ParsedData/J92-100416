@@ -1,0 +1,7 @@
+robably justified only in conjunction with a grammar that contains semantic categories.
+    We have found that, within the restricted domains of specific applications, the first parse is essentially always a correct parse, and often, in fact, the only parse.
+    With only a single parse from each sentence, and with the grammar trained at the sibling-pair level, training probabilities becomes a trivial exercise of counting and normalizing sibling-pair frequencies within the pooled context-free rule sets.
+    Training is localized such that, conditional on the parent, there is an advance from one sibling to some next sibling with probability 1.0.
+    Normalization requires only this locally applied constraint, making it extremely fast to train on a set of parsed sentences.
+    Furthermore, the method could incorporate syntactic and semantic constraints, by simply renormalizing the probabilities at run time, after paths that fail due to constraints have been eliminated.
+    A functional block diagram of the cont

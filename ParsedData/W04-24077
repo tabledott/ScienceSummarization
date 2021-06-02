@@ -1,0 +1,13 @@
+ mechanism is used, the parser is guaranteed to terminate after at most 2n transitions, given an input string of length n (Nivre,2003).
+			This means that as long as transitions can be per formed in constant time, the running time of the parser will be linear in the length of the input.
+			Moreover, the parser is guaranteed to produce a dependency graph that is acyclic and projective (and satisfies the unique-labeland single-head constraints).
+			This means that the depen dency graph given at termination is well-formed if and only if it is connected (Nivre, 2003).
+			Unique label (wi r?wj ? wi r ? ?wj) ? r = r?
+			Single head (wi?wj ? wk?wj) ? wi = wk Acyclic ?(wi?wj ? wj??wi) Connected wi??wj Projective (wi?wk ? wiwjwk) ?
+			(wi??wj ? wk??wj) Figure 2: Well-formedness conditions on dependency graphs Initialization ?nil,W, ??
+			Termination ?S,nil, A?
+			Left-Arc ?wi|S,wj |I, A?
+			?S,wj |I, A ? {(wj , r, wi)}?
+			??wk?r?(wk, r?, wi) ? A Right-Arc ?wi|S,wj |I, A?
+			?wj |wi|S, I, A ? {(wi, r, wj)}?
+			??wk?r?

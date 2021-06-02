@@ -1,0 +1,7 @@
+ forest, we traverse it bottom-up as usual, and for every set of alternative subtranslations, we select the one with the highest score.
+    But here a rough approximation lurks, because we need to calculate B on the nodes of the forest, but B does not have the optimal substructure property, i.e., the optimal score of a parent node cannot necessarily be calculated from the optimal scores of its children.
+    Nevertheless, we find that this rescoring method is good enough for generating high-BLEU oracle translations and low-BLEU negative examples.
+    One convenient property of MERT is that it is embarrassingly parallel: we decode the entire tuning set sending different sentences to different processors, and during optimization of feature weights, different random restarts can be sent to different processors.
+    In order to make MIRA comparable in efficiency to MERT, we must parallelize it.
+    But with an online learning algorithm, parallelization requires a little more coordination.
+    We run MIRA on each p

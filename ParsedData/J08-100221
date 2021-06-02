@@ -1,0 +1,6 @@
+f unpacked trees rooted at n. We define a set o(n) of outside trees rooted at node n &#8712; C &#8746; D as follows.
+    In the definition, &#947;&#8722;1 and &#948;&#8722;1 denote mothers of conjunctive and disjunctive nodes, respectively.
+    Formally, We can derive that the model expectations of a feature forest are computed as the product of the inside and outside &#945;-products.
+    Theorem 1(Model expectation of feature forests) The model expectation &#181;i of a feature forest &#934;(x) = (Cx, Dx, rx, &#947;x, &#948;x) is computed as the product of inside and outside &#945;-products as follows: where Z(x) = &#981;rx This equation shows a method for efficiently computing model expectations by traversing conjunctive nodes without unpacking the forest, if the inside/outside &#945;-products are given.
+    The remaining issue is how to efficiently compute inside/outside &#945;-products.
+    Fortunately, inside/outside &#945;-products can be incrementally computed by dynamic programming without unpacking fe

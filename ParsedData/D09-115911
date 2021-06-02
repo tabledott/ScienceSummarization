@@ -1,0 +1,9 @@
+ased on it, all NPs and VPs are selected as candidate product features.
+    While prepositional phrases (PPs) and adjectival phrases (ADJPs) are excluded.
+    Although it can cover nearly all the true product features, the precision is relatively low.
+    The large amount of noise candidates may confuse the relation extraction classifier.
+    To shrink the size of candidate set, we introduce language model by an intuition that the more likely a phrase to be a product feature, the more closely it related to the product review.
+    In practice, for a certain domain of product reviews, a language model is build on easily acquired unlabeled data.
+    Each candidate NP or VP chunk in the output of shallow parser is scored by the model, and cut off if its score is less than a threshold.
+    Opinion expressions are spans of text that express a comment or attitude of the opinion holder, which are usually evaluative or subjective phrases.
+    We also analyze the labeled corpus for opinion expressions and observe that 

@@ -1,0 +1,11 @@
+t in the dictionary, we take the allowed tags to be either all the open-class POS 7This is the first value we tried, and it seems to work fine.
+    We haven&#8217;t experimented with other values.
+    The same applies for the choice of 4 as the RELC threshold.
+    (uniform(oc)) or the allowed tags according to our simple ambiguity-class guesser (uniform(suf)).
+    All the p(tjw) estimates and HMM models are trained on the entire WSJ corpus.
+    We use the same 24K word test-set as used in SE, TJ and GG, as well as the same diluted dictionaries.
+    We report the results on the same reduced tagsets for comparison, but also include the results on the full 46 tags tagset.
+    Table 2 summarizes the results of our experiments.
+    Uniform initialization based on the simple suffixbased ambiguity class guesser yields big improvements over the uniform all-open-class initialization.
+    However, our refined initial conditions always improve the results (by as much as 40% error reduction).
+    As expected, the linear 

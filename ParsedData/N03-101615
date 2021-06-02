@@ -1,0 +1,7 @@
+ the estimates will have less and less to do with the actual contexts (and hence will become increasingly optimistic).
+    Context summary estimates do not pin down the exact context, but do use the original grammar G. For grammar projection estimates, we use the exact context, but project the grammar to some G' which is so much simpler that it is feasible to first exhaustively parse with G' and then use the result to guide the search in the full grammar G. Formally, we have a projection &#960; which maps grammar states of G (that is, the dotted rules of an Earley-style parser) to some reduced set.
+    This projection of states induces a projection of rules.
+    If a set R = {r} of rules in G collide as the rule r' in G', we give r' the probability P(r') = maxIER P(r).
+    Note that the resulting grammar G' will not generally be a proper PCFG; it may assign more than probability 1 to the set of trees it generates.
+    In fact, it will usually assign infinite mass.
+    However, all that matters for our purpose

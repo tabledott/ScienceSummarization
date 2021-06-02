@@ -1,0 +1,6 @@
+-based inference, those below employ a set of hand-written rules motivated by compositional semantics.
+    Table 2 shows the definition of the rules along with motivating examples.
+    In order to apply a rule, we first detect a syntactic pattern (e.g., [destroyed]uP [the terrorism]NP), then apply the Compose function as defined in Table 2 (e.g., Compose([destroyed], [the terrorism]) by rule #2).3 Compose first checks whether the first argument is a negator, and if so, flips the polarity of the second argument.
+    Otherwise, Compose resolves the polarities of its two arguments.
+    Note that if the second argument is a negator, we do not flip the polarity of the first argument, because the first argument in general is not in the semantic scope of the negation.4 Instead, we treat the second argument as a constituent with negative polarity.
+    We experiment with two variations of the Compose function depending on how conflicting polarities are resolved: COMPOMC uses a Compose function that defaults to the Maj

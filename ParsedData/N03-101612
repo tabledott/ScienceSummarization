@@ -1,0 +1,8 @@
+e summary matches the actual one&#8217;s summary.
+    If the number of summaries is reasonable, we can precompute and store the estimate for each summary once and for all, then retrieve them in constant time per edge at parse time.
+    If we give no information in the summary, the estimate will be constantly 0.
+    This is the trivial estimate NULL, and corresponds to simply using inside estimates b alone as priorities.
+    On the other extreme, if each context had a unique summary, then a(e, s) would be &#945;G(e, s) itself.
+    This is the ideal estimate, which we call TRUE.
+    In practice, of course, precomputing TRUE would not be feasible.3 3Note that our ideal estimate is not P(els) like the ideal FOM, rather it is P(T9,e)/P(Te) (where T9,e is a best parse of the goal g among those which contain e, and Te is a best parse of e over the yield of e).
+    That is, we are not estimating parser choice probabilities, but parse tree probabilities. &#945;G(e', s') &#8805; &#945;G(e, s) We used various intermedia

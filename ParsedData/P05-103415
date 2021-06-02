@@ -1,0 +1,6 @@
+manner: A treelet translation pair x is said to match the input dependency tree S iff there is some connected subgraph S&#8217; that is identical to the source side of x.
+    We say that x covers all the nodes in S&#8217; and is rooted at source node s, where s is the root of matched subgraph S&#8217;.
+    We first find all treelet translation pairs that match the input dependency tree.
+    Each matched pair is placed on a list associated with the input node where the match is rooted.
+    Moving bottomup through the input dependency tree, we compute a list of candidate translations for the input subtree rooted at each node s, as follows: Consider in turn each treelet translation pair x rooted at s. The treelet pair x may cover only a portion of the input subtree rooted at s. Find all descendents s' of s that are not covered by x, but whose parent s&amp;quot; is covered by x.
+    At each such node s&amp;quot; look at all interleavings of the children of s&amp;quot; specified by x, if any, with each translation

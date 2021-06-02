@@ -1,0 +1,9 @@
+ nodein the source tree can be mapped to a node in (and a node in ) using word alignment (and respectively).
+    We denote the subtree of rooted at node by and the subtree of rooted at node by.
+    We will now describe a simple procedure that makes use of the word alignment to construct node-to-node alignment between nodes in the source tree and the target tree.
+    For each nodein the source tree we consider the subtreerooted at.
+    We first read off the source word sequence corresponding to the leaves of.
+    We next consider the subset of words in the target sentence that are aligned to any word in this source word sequence, and select the leftmost and rightmost words from this subset.
+    We locate the leaf nodes corresponding to these two words in the target parse tree, and obtain their closest common ancestor node .
+    This procedure gives us a mapping from a node to a node and this mapping associates one subtree to one subtree .
+    Given the subtree alignment between and, and and, we first identify 

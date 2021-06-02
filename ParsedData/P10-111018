@@ -1,0 +1,8 @@
+y many trees, out of which we can draw longer and better (in terms of oracle) kbest lists than those in the beam (see Fig.
+    6b).
+    The forest itself has an oracle of 98.15 (as if k &#8594; &#8734;), computed a` la Huang (2008, Sec.
+    4.1).
+    These candidate sets may be used for reranking (Charniak and Johnson, 2005; Huang, 2008).8 Another interesting advantage of DP over non-DP is the faster training with perceptron, even when both parsers use the same beam width.
+    This is due to the use of early updates (see Sec.
+    2.3), which happen much more often with DP, because a goldstandard state p is often merged with an equivalent (but incorrect) state that has a higher model score, which triggers update immediately.
+    By contrast, in non-DP beam search, states such as p might still 8DP&#8217;s k-best lists are extracted from the forest using the algorithm of Huang and Chiang (2005), rather than those in the final beam as in the non-DP case, because many derivations have been merged during dynamic pr

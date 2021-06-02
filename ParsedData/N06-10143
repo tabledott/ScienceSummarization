@@ -1,0 +1,9 @@
+ approximation which nonetheless works well in practice.
+    By jointly training two simple HMM models, we obtain 4.9% AER on the standard English-French Hansards task.
+    To our knowledge, this is the lowest published unsupervised AER result, and it is competitive with supervised approaches.
+    Furthermore, our approach is very practical: it is no harder to implement than a standard HMM model, and joint training is no slower than the standard training of two HMM models.
+    Finally, we show that word alignments from our system can be used in a phrasebased translation system to modestly improve BLEU score.
+  
+  
+    We briefly review the sequence-based word alignment models (Brown et al., 1994; Och and Ney, 2003) and describe some of the choices in our implementation.
+    All three models are generative models of the form p(f  |e) = Ea p(a, f  |e), where e = (e1, ... , eI) is the English sentence, f = (f1, ... , fJ) is the French sentence, and a = (a1, ... , aJ) is the (asymmetric) alignment which specifies

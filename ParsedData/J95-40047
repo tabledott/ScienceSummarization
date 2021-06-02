@@ -1,0 +1,8 @@
+Figure 1 illustrates how transformation-based error-driven learning works.
+    First, unannotated text is passed through an initial-state annotator.
+    The initial-state annotator can range in complexity from assigning random structure to assigning the output of a sophisticated manually created annotator.
+    In part-of-speech tagging, various initialstate annotators have been used, including: the output of a stochastic n-gram tagger; labelling all words with their most likely tag as indicated in the training corpus; and naively labelling all words as nouns.
+    For syntactic parsing, we have explored initialstate annotations ranging from the output of a sophisticated parser to random tree structure with random nonterminal labels.
+    Once text has been passed through the initial-state annotator, it is then compared to the truth.
+    A manually annotated corpus is used as our reference for truth.
+    An ordered list of transformations is learned that can be applied to the output of the initial-state annotato

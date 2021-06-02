@@ -1,0 +1,9 @@
+.
+    For example, 5% of the names in our development test set were misspelled.
+    Human translators seem to be able to recover from name misspellings when transliterating a name they are familiar with.
+    Our human subject was able to transliterate the name &amp;quot;,..).4 bwrys&amp;quot; (Boris) correctly, even though it was misspelled as &amp;quot;Lty, brwys.&amp;quot; Therefore, we believe that we need to model misspellings explicitly rather than hope that they will not cause wrong transliterations.
+    We model misspellings by using an additional finite-state machine at the end of the cascade of finite state machines.
+    We would like to estimate the parameters in this model empirically.
+    But since we do not have enough misspellings/correct spelling pairs to train this model, the weights were set manually.
+    The use of this spelling correction model slightly improves our transliterations, as shown in Table 3.
+    As we have described in Section 5, the P(w) model is a combination of a word unigra

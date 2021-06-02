@@ -1,0 +1,9 @@
+unning time of EM.
+    Notably, neither of these inference approaches offers any test to know if the optimal alignment is ever found.
+    Furthermore, they both require small data sets due to computational expense.
+    We cast O as an ILP problem, for which many optimization techniques are well known.
+    First, we introduce binary indicator variables ai,j,k,l denoting whether (eij, fkl) &#8712; a.
+    Furthermore, we introduce binary indicators ei,j and fk,l that denote whether some (eij, &#183;) or (&#183;, fkl) appears in a, respectively.
+    Finally, we represent the weight function 0 as a weight vector in the program: wi,j,k,l = log 0(eij, fkl).
+    Now, we can express an integer program that, when optimized, will yield the optimal alignment of our weighted sentence pair.
+    Sentences per hour on a four-core server Frequency of optimal solutions found Frequency of e-optimal solutions found Using an off-the-shelf ILP solver,4 we were able to quickly and reliably find the globally optimal phrase alignment

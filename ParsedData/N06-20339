@@ -1,0 +1,9 @@
+e result.
+    Therefore, we achieve additional parser diversity with the same algorithm, simply by varying the direction of parsing.
+    We refer to the two parsers as LR and RL.
+    The deterministic parser of Yamada and Matsumoto (2003) uses an algorithm similar to Nivre and Scholz&#8217;s, but it makes several successive leftto-right passes over the input instead of keeping a stack.
+    To increase parser diversity, we used a version of Yamada and Matsumoto&#8217;s algorithm where the direction of each of the consecutive passes over the input string alternates from left-to-right and right-to-left.
+    We refer to this parser as LRRL.
+    The large-margin parser described in (McDonald et al., 2005) was used with no alterations.
+    Unlike the deterministic parsers above, this parser uses a dynamic programming algorithm (Eisner, 1996) to determine the best tree, so there is no difference between presenting the input from left-to-right or right-to-left.
+    Three different weight configurations were considere

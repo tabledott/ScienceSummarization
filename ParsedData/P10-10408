@@ -1,0 +1,9 @@
+her type of word representation is to induce a clustering over words.
+    Clustering methods and distributional methods can overlap.
+    For example, Pereira et al. (1993) begin with a cooccurrence matrix and transform this matrix into a clustering.
+    The Brown algorithm is a hierarchical clustering algorithm which clusters words to maximize the mutual information of bigrams (Brown et al., 1992).
+    So it is a class-based bigram language model.
+    It runs in time O(V&#183;K2), where V is the size of the vocabulary and K is the number of clusters.
+    The hierarchical nature of the clustering means that we can choose the word class at several levels in the hierarchy, which can compensate for poor clusters of a small number of words.
+    One downside of Brown clustering is that it is based solely on bigram statistics, and does not consider word usage in a wider context.
+    Brown clusters have been used successfully in a variety of NLP applications: NER (Miller et al., 2004; Liang, 2005; Ratinov &amp; Roth,

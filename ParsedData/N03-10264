@@ -1,0 +1,7 @@
+a single packed data structure that represents in one place the substructures shared by several different interpretations.
+    The transfer component operates on these packed representations and modifies the parser output to produce reduced f-structures.
+    The reduced f-structures are then filtered by the generator to determine syntactic well-formedness.
+    A stochastic disambiguator using a maximum entropy model is trained on parsed and manually disambiguated f-structures for pairs of sentences and their condensations.
+    Using the disambiguator, the string generated from the most probable reduced f-structure produced by the transfer system is chosen.
+    In contrast to the approaches mentioned above, our system guarantees the grammaticality of generated strings through the use of a constraint-based generator for LFG which uses a slightly tighter version of the grammar than is used by the parser.
+    As shown in an experimental evaluation, summarization quality of our system is high, due to the combinati

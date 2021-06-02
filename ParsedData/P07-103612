@@ -1,0 +1,13 @@
+ is: d(y, 1Ci(x)) = min(y'E1C(.))
+    H(y, y').
+    If the penalty for violating the soft constraint Ci is pi, we write the score function as: We refer to d(y, 1C(x)) as the valuation of the constraint C on (x, y).
+    The intuition behind (1) is as follows.
+    Instead of merely maximizing the model&#8217;s likelihood, we also want to bias the model using some knowledge.
+    The first term of (1) is used to learn from data.
+    The second term biases the mode by using the knowledge encoded in the constraints.
+    Note that we do not normalize our objective function to be a true probability distribution.
+  
+  
+    In this section we present a new constraint-driven learning algorithm (CODL) for using constraints to guide semi-supervised learning.
+    The task is to learn the parameter vector A by using the new objective function (1).
+    While our formulation allows us to train also the coefficients of the constraints valuation, pi, we choose not to do it, since we view this as a way to bias (or enforce) the p

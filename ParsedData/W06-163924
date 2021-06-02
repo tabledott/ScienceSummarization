@@ -1,0 +1,6 @@
+experiments, we created finite-weight agreement links, so that speech segments appearing in pairs flagged by our (imperfect) agreement detector can potentially receive different labels.
+    We also experimented with forcing such speech segments to receive the same label, either through infinite-weight agreement links or through a speech-segment concatenation strategy similar to that described in the previous subsection.
+    Both strategies resulted in clear degradation in performance on both the development and test sets, a finding that validates our encoding of agreement information as &#8220;soft&#8221; preferences.
+    We have seen several cases in which the method that performs best on the development set does not yield the best test-set performance.
+    However, we felt that it would be illegitimate to change the train/development/test sets in a post hoc fashion, that is, after seeing the experimental results.
+    Moreover, and crucially, it is very clear that using agreement information, encoded as pref

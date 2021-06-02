@@ -1,0 +1,10 @@
+e sparsity of word counts through stem equivalence classes.
+    We also remove words matching a prespecified list of stop words.
+    Graph Topology As we noted in the previous section, the normalized cut criterion considers long-term similarity relationships between nodes.
+    This effect is achieved by constructing a fullyconnected graph.
+    However, considering all pairwise relations in a long text may be detrimental to segmentation accuracy.
+    Therefore, we discard edges between sentences exceeding a certain threshold distance.
+    This reduction in the graph size also provides us with computational savings.
+    Similarity Computation In computing pairwise sentence similarities, sentences are represented as vectors of word counts.
+    Cosine similarity is commonly used in text segmentation (Hearst, 1994).
+    To avoid numerical precision issues when summing a series of very small scores, we compute exponentiated cosine similarity scores between pairs of sentence vectors: We further refine our analysis b

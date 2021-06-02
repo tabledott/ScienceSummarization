@@ -1,0 +1,7 @@
+xt to be a word, a nonterminal label, or a parenthesis.
+    This oddity entails that even some relatively short sentences get skipped because they have lots of tree structure.
+    In the standard Wall Street Journal training corpus, Sections 02&#8211;21 of the Penn Treebank, there are 120 such sentences that are skipped.
+    Unless there is something inherently wrong with these trees, one would predict that adding them to the training set would improve a parser&#8217;s performance.
+    As it happens, there is actually a minuscule (and probably statistically insignificant) drop in performance (see Table 5) when these trees are included.
+    5.3.1 The Threshold Problem.
+    Collins mentions in chapter 7 of his thesis that &#8220;[a]ll words occurring less than 5 times in training data, and words in test data which have never been seen in training, are replaced with the &#8216;UNKNOWN&#8217; token (page 186).&#8221; The frequency below which words are considered unknown is often called the unknownword threshold.

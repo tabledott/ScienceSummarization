@@ -1,0 +1,12 @@
+els: and .
+    We compute the unigram probability of a block based on its occurrence count .
+    The blocks are counted from word-aligned training data.
+    We also collect unigram counts with orientation: a left count and a right count .
+    These counts are defined via an enumeration process and are used to define the orientation model : Trigram language model: The block language model score is computed as the probability of the first target word in the target clump of given the final two words of the target clump of .
+    The three models are combined in a log-linear way, as shown in the following section.
+  
+  
+    The basic idea of the orientation model can be illustrated as follows: In the example translation in Fig.
+    1, block occurs to the left of block .
+    Although the joint block consisting of the two smaller blocks and has not been seen in the training data, we can still profit from the fact that block occurs more frequently with left than with right orientation.
+    In our Arabic-English train

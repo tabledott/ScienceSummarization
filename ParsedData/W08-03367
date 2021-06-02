@@ -1,0 +1,10 @@
+tities for better MT performance.
+  
+  
+    For directly evaluating segmentation performance, we train each segmenter with the SIGHAN Bakeoff 2006 training data (the UPUC data set) and then evaluate on the test data.
+    The training data contains 509K words, and the test data has 155K words.
+    The percentage of words in the test data that are unseen in the training data is 8.8%.
+    Detail of the Bakeoff data sets is in (Levow, 2006).
+    To understand how each segmenter learns about OOV words, we will report the F measure, the in-vocabulary (IV) recall rate as well as OOV recall rate of each segmenter.
+    The MT system used in this paper is Moses, a stateof-the-art phrase-based system (Koehn et al., 2003).
+    We build phrase translations by first acquiring bidirectional GIZA++ (Och and Ney, 2003) alignments, and using Moses&#8217; grow-diag alignment symmetrization heuristic.1 We set the maximum phrase length to a large value (10), because some segmenters described later in this paper will result in sho

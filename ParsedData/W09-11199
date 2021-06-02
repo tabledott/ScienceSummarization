@@ -1,0 +1,9 @@
+ design decisions in an NER system.
+  
+  
+    In this section we compare the performance of several inference (decoding) algorithms: greedy leftto-right decoding, Viterbi and beamsearch.
+    It may appear that beamsearch or Viterbi will perform much better than naive greedy left-to-right decoding, which can be seen as beamsearch of size one.
+    The Viterbi algorithm has the limitation that it does not allow incorporating some of the non-local features which will be discussed later, therefore, we cannot use it in our end system.
+    However, it has the appealing quality of finding the most likely assignment to a second-order model, and since the baseline features only have second order dependencies, we have tested it on the baseline configuration.
+    Table 1 compares between the greedy decoding, beamsearch with varying beam size, and Viterbi, both for the system with baseline features and for the end system (to be presented later).
+    Surprisingly, the greedy policy performs well, this phenmenon was also ob

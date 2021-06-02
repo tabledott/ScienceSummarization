@@ -1,0 +1,11 @@
+t available only after the subject has been generated.
+    This nondeterminism can be eliminated by deferring lexical choice to a postprocess.
+    The generator will yield a list of lexical items instead of a list of words.
+    To this list a small phonological front end is applied.
+    BUG uses such a mechanism to eliminate much of the uninteresting nondeterminism in choice of word forms.
+    Of course, the same mechanism could be added to any of the other generation techniques discussed to in this paper.
+  
+  
+    Further enhancements to the algorithm are envisioned.
+    First, any system making use of a tabular link predicate over complex nonterminals (like the chained_nodes predicate used by the generation algorithm and including the link predicate used in the BUP parser (Matsumoto et al., 1983)) is subject to a problem of spurious redundancy in processing if the elements in the link table are not mutually exclusive.
+    For instance, a single chain rule might be considered to be applicable twice because 

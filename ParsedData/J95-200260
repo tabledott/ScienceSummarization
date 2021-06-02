@@ -1,0 +1,5 @@
+y state.
+    Therefore, to ensure that item probabilities are correct independent of input position, item sets would have to be constructed so that their probabilities are unique within each set.
+    However, this may be impossible given that the probabilities can take on infinitely many values and in general depend on the history of the parse.
+    The solution used by Wright (1990) is to collapse items whose probabilities are within a small tolerance E and are otherwise identical.
+    The same threshold is used to simplify a number of other technical problems, e.g., left-corner probabilities are computed by iterated prediction, until the resulting changes in probabilities are smaller than E. Subject to these approximations, then, a probabilistic LR parser can compute prefix probabilities by multiplying successive conditional probabilities for the words it sees.16 As an alternative to the computation of LR transition probabilities from a given SCFG, one might instead estimate such probabilities directly from 

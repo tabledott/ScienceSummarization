@@ -1,0 +1,5 @@
+uracy and the latter performing best at PNO-accuracy.
+    An interesting observation on the learners we have used is that NB, PrTFIDF and SVMs, unlike Rocchio, generate classifiers that depend on P(ci), the prior probabilities of the classes, which are normally estimated as the proportion of training documents that belong to ci.
+    In many classification applications this is reasonable, as we may assume that the training data are sampled from the same distribution from which the test data are sampled, and that these proportions are thus indicative of the proportions that we are going to encounter in the test data.
+    However, in our application this is not the case, since we do not have a &#8220;natural&#8221; sample of training terms.
+    What we have is one human-labelled training term for each category in {Positive,Negative,Objective}, and as many machine-labelled terms as we deem reasonable to include, in possibly different numbers for the different categories; and we have no indication whatsoever as to

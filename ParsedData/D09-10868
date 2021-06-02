@@ -1,0 +1,6 @@
+mple, two nodes can be aligned only if their respective parents are also aligned.)
+    The synchronous model&#8217;s probability mass function is also restricted to decompose in this way, so it makes certain conditional independence assumptions; put another way, it can evaluate only certain properties of the triple (t, a, t0).
+    We instead model (t, a, t0) as an arbitrary graph that includes dependency links among the words of each sentence as well as arbitrary alignment links between the words of the two sentences.
+    This permits non-synchronous and many-to-many alignments.
+    The only hard constraint we impose is that the dependency links within each sentence must constitute a valid monolingual parse&#8212;a directed projective spanning tree.1 Given the two sentences w, w0, our probability distribution over possible graphs considers local features of the parses, the alignment, and both jointly.
+    Thus, we learn what local syntactic configurations tend to occur in each language and how they correspond

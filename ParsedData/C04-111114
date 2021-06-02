@@ -1,0 +1,9 @@
+GB with 50 is-a relationship seeds, we obtain a set of 600 lexico-POS.
+			Following are two of them: 1) X_JJ#NN|JJ#NN#NN|NN _CC Y_JJ#JJ#NN|JJ |NNS|NN|JJ#NNS|NN#NN|JJ#NN|JJ#NN#NN e.g. ?caldera or lava lake?
+			2) X_NNP#NNP|NNP#NNP#NNP#NNP#NNP#CC#NNP |NNP|VBN|NN#NN|VBG#NN|NN ,_, _DT Y_NN#IN#NN|JJ#JJ#NN|JJ|NN|NN#IN#NNP |NNP#NNP|NN#NN|JJ#NN|JJ#NN#NN e.g. ?leukemia, the cancer of ...
+			Note that we store different POS variations of the anchors X and Y. As shown in example 1, the POS variations of the anchor X are (JJ NN, JJ NN NN, NN).
+			The variations for anchor Y are (JJ JJ NN, JJ, etc.).
+			The reason is quite straightforward: we need to determine the boundary of the anchors X and Y and a reasonable way to delimit them would be to use POS information.
+			All the patterns produced by the multi-level pattern learning algo rithm were generated from positive examples.
+			From amongst these patterns, we need to find the most important ones.
+			This is a critical step because frequently occurring patterns have low 

@@ -1,0 +1,6 @@
+es (substructures) as the syntactic structure similarity be tween two parse trees T1 and T2 (Collins and Duffy 2001): ? ??
+			D= 2211 , 2121 ),(),( NnNn C nnTTK (1) where Nj is the set of nodes in tree Tj , and 1 2( , )n nD evaluates the common sub-trees rooted at n1 and n2 2 and is computed recursively as follows: 1) If the context-free productions (Context-Free Grammar(CFG) rules) at 1n and 2n are different, 1 2( , ) 0n nD = ; Otherwise go to 2.
+			2) If both 1n and 2n are POS tags, 1 2( , ) 1n n lD = ? ; Otherwise go to 3.
+			3) Calculate 1 2( , )n nD recursively as: ? = D+=D )(# 1 2121 1 )),(),,((1(),( nch k knchknchnn l (2) where )(# nch is the number of children of node n , ),( knch is the k th child of node n andl (0&lt; l &lt;1) is the decay factor in order to make the kernel value less variable with respect to different sub-tree sizes.
+			This convolution tree kernel has been successfully applied by Zhang et al(2006) in relation extraction.
+			However, there is one problem with this tree kernel: the 

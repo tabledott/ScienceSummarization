@@ -1,0 +1,10 @@
+rpus.
+    They obtain a list of prefixes and suffixes from this corpus, which is apparently augmented by a manually derived list of other affixes.
+    Unfortunately, the full segmentation criteria are not given.
+    Then a trigram model is learned from the segmented training corpus, and this is used to choose among competing segmentations for words in running text.
+    In addition, a huge unannotated corpus (155 million words) is used to iteratively learn additional stems.
+    Lee et al. (2003) show that the unsupervised use of the large corpus for stem identification increases accuracy.
+    Overall, their error rates are higher than ours (2.9% vs. 0.7%), presumably because they do not use a morphological analyzer.
+    There has been a fair amount of work on entirely unsupervised segmentation.
+    Among this literature, Rogati et al. (2003) investigate unsupervised learning of stemming (a variant of tokenization in which only the stem is retained) using Arabic as the example language.
+    Unsurprisingly, the 

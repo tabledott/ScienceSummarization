@@ -1,0 +1,9 @@
+j,wij)&#8712;E edges with weights wij).
+    Vertices represent entities (here: words); the weight of an edge between two vertices indicates their similarity.
+    As the data here is collected in feature vectors, the question arises why it should be transformed into a graph representation.
+    The reason is, that graph-clustering algorithms such as e.g.
+    (van Dongen, 2000; Biemann 2006), find the number of clusters automatically1.
+    Further, outliers are handled naturally in that framework, as they are represented as singleton nodes (without edges) and can be excluded from the clustering.
+    A threshold s on similarity serves as a parameter to influence the number of non-singleton nodes in the resulting graph.
+    For assigning classes, we use the Chinese Whispers (CW) graph-clustering algorithm, which has been proven useful in NLP applications as described in (Biemann 2006).
+    It is time-linear with respect to the number of edges, making its application viable even for graphs with several million node

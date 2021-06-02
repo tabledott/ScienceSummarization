@@ -1,0 +1,7 @@
+French side, and above we have three items with the same category and span, that is, they belong to the same chart cell.
+    Any of the twelve combinations of these rules and items can be used to deduce a new item (whose scores are shown in the grid), and all these new items will go into the same chart cell (partially listed on the right).
+    The intersection method would compute all twelve items and add them to the new chart cell, where most of them will likely be pruned away.
+    In actuality, the grid may be a cube (one dimension for rules and two dimensions for two nonterminals) with up to b3 elements, whereas the target chart cell can hold at most b items (where b is the limit on the size of the cell imposed during pruning).
+    Thus the vast majority of computed items are pruned.
+    But it is possible to compute only a small corner of the cube and preemptively prune the rest of the items without computing them, a method we refer to as cube pruning.
+    The situation pictured in Figure 9a is very simil

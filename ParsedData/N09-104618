@@ -1,0 +1,7 @@
+lities in both directions (Koehn et al., 2003), and a word count feature.
+    For the lattice systems, we also included the unnormalized log p(&#175;f|!9), as it is defined in Section 3, as well as an input word count feature.
+    The feature weights were tuned on a heldout development set so as to maximize an equally weighted linear combination of BLEU and 1-TER (Papineni et al., 2002; Snover et al., 2006) using the minimum error training algorithm on a packed forest representation of the decoder&#8217;s hypothesis space (Macherey et al., 2008).
+    The weights were independently optimized for each language pair and each experimental condition.
+    In this section, we report the results of an experiment to see if the compound lattices constructed using our maximum entropy model yield better translations than either an unsegmented baseline or a baseline consisting of a single-best segmentation.
+    For each language pair, we define three conditions: BASELINE, 1BEST, and LATTICE.
+    In the BASELINE condition,

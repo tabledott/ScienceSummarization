@@ -1,0 +1,10 @@
+ allows the model to do segmentation as well as classification.
+    When using character-level models for word-evaluated tasks, one would not want multiple characters inside a single word to receive different labels.
+    This can be avoided in two ways: by explicitly locking state transitions inside words, or by careful choice of transition topology.
+    In our current implementation, we do the latter.
+    Each state is a pair where is an entity type (such as PERSON, and including an other type) and indicates the length of time the system has been in state .
+    Therefore, a state like (PERSON, 2) indicates the second letter inside a person phrase.
+    The final letter of a phrase is a following space (we insert one if there is none) and the state is a special final state like (PERSON, F).
+    Additionally, once reaches our -gram history order, it stays there.
+    We then use empirical, unsmoothed estimates for statestate transitions.
+    This annotation and estimation enforces consistent labellings in practi

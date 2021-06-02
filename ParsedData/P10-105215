@@ -1,0 +1,6 @@
+f active features per position, which can be much smaller than the number of potentially active features.
+    For BCD, forward-backward can even be made slightly faster.
+    When computing the gradient wrt. features &#955;y,x and &#181;y0,y,x (for all the values of y and y0) for sequence x(&#65533;), assuming that x only occurs once in x(&#65533;) at position t, all that is needed is &#945;0t(y), bt0 &lt; t and &#946;0t(y), bt0 &gt; t. ZB(x) is then recovered as Ey &#945;t(y)&#946;t(y).
+    Forward-backward recursions can thus be truncated: in our experiments, this divided the computational cost by 1,8 on average.
+    Note finally that forward-backward is performed on a per-observation basis and is easily parallelized (see also (Mann et al., 2009) for more powerful ways to distribute the computation when dealing with very large datasets).
+    In our implementation, it is distributed on all available cores, resulting in significant speed-ups for OWL-QN and L-BFGS; for BCD the gain is less acute, as paralleliza

@@ -1,0 +1,11 @@
+ On the other hand, L2regularizer should be chosen when most of given features are relevant.
+    An advantage of L1-based regularizer is that it often leads to sparse solutions where most of Ak are exactly 0.
+    The features assigned zero weight are thought as irrelevant features to classifications.
+    The L2-based regularizer, also seen in SVMs, produces a non-sparse solution where all of Ak have non-zero weights.
+    All features are used with L2-CRFs.
+    The optimal solutions of L2-CRFs can be obtained by using traditional iterative scaling algorithms (e.g., IIS or GIS (Pietra et al., 1997)) or more efficient quasi-Newton methods (e.g., L-BFGS (Liu and Nocedal, 1989)).
+    For L1-CRFs, constrained optimizers (e.g., L-BFGS-B (Byrd et al., 1995)) can be used.
+  
+  
+    We use two widely-used Japanese annotated corpora in the research community, Kyoto University Corpus ver 2.0 (KC) and RWCP Text Corpus (RWCP), for our experiments on CRFs.
+    Note that each corpus has a different POS tagset and details (e.

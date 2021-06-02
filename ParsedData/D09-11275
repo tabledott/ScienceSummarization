@@ -1,0 +1,8 @@
+d A is the set of dependency arcs accumulated so far.3 At each step, we can choose one of the three actions: These actions are summarized in Table 1.
+    The initial configuration is always (0, w1 ... wn, 0) with empty stack and no arcs, and the final configuration is (wj, 0, A) where wj is recognized as the root of the whole sentence, and A encodes a spanning tree rooted at wj.
+    For a sentence of n words, there are exactly 2n &#8722; 1 actions: n shifts and n &#8722; 1 reductions, since every word must be pushed onto stack once, and every word except the root will eventually be popped in a reduction.
+    The time complexity, as other shift-reduce instances, is clearly O(n).
+    Figure 2 shows the trace of this paradigm on the example sentence.
+    For the first two configurations while gray words have been popped from stack.
+    After step (4), the process can take either (5a) or (5b), which correspond to the two attachments (1a) and (1b) in Figure 1, respectively.
+    (0) and (1), only shift is possible 

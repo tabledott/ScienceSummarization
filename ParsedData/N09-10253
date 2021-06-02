@@ -1,0 +1,11 @@
+.
+  
+  
+    Hiero (Chiang, 2005) is a hierarchical, string-tostring translation system.
+    Its rules, which are extracted from unparsed, word-aligned parallel text, are synchronous CFG productions, for example: As the number of nonterminals is limited to two, the grammar is equivalent to an inversion transduction grammar (Wu, 1997).
+    The baseline model includes 12 features whose weights are optimized using MERT.
+    Two of the features are n-gram language models, which require intersecting the synchronous CFG with finite-state automata representing the language models.
+    This grammar can be parsed efficiently using cube pruning (Chiang, 2007).
+    Our syntax-based system transforms source Chinese strings into target English syntax trees.
+    Following previous work in statistical MT (Brown et al., 1993), we envision a noisy-channel model in which a language model generates English, and then a translation model transforms English trees into Chinese.
+    We represent the translation model as a tree transd

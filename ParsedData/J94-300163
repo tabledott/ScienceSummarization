@@ -1,0 +1,6 @@
+at more realistic example, when the rule at the beginning of the paper is applied to the string iNprobable, the preprocessed input string would contain the sequence &lt;i&lt;N&lt;&gt;p&lt;r&lt;o&lt;&gt;b&lt;a&lt;&gt;b&lt;1&lt;e&lt; The left context of the rule is empty, so there is a left-context marker &lt; after every character from the original string.
+    Every labial is an instance of the right context, and accordingly there is a &gt; immediately preceding p's and b's.
+    The rule properly applies to rewrite the N because it is bracketed by &lt; and &gt;.
+    On the other hand, the &gt; is missing and the rule does not apply to the N in the preprocessed version of iNtractable, namely &lt;i&lt;N&lt;t&lt;r&lt;a&lt;c&lt;t&lt;a&lt;&gt;b&lt;1&lt;e&lt; The definition of the Replace operator must be modified in two ways in order to operate on such preprocessed strings.
+    First it must allow the 0 x '0 mapping only between the appropriate context markers.
+    Second, some occurrences of the left and right con

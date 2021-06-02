@@ -1,0 +1,7 @@
+ decoding is probably worth trying when applicable.
+    The Gibbs sampling algorithm is initialized with a set of sample parses t for each sentence in the training data.
+    While the fundamental theorem of Markov Chain Monte Carlo guarantees that eventually samples will converge to the posterior distribution, it says nothing about how long the &#8220;burn in&#8221; phase might last (Robert and Casella, 2004).
+    In practice initialization can make a huge difference to the performance of Gibbs samplers (just as it can with other unsupervised estimation procedures such as Expectation Maximization).
+    There are many different ways in which we could generate the initial trees t; we only study two of the obvious methods here.
+    Batch initialization assigns every sentence a random parse tree in parallel.
+    In more detail, the initial parse tree ti for sentence wi is sampled from P(t I wi, G&#8242;), where G&#8242; is the PCFG obtained from the adaptor grammar by ignoring its last two components A and C (i.e

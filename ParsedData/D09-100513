@@ -1,0 +1,10 @@
+ork to compute the quantities (1)&#8211;(4).
+    Although each is a sum over exponentially many derivations, we will compute it in O(JHGJ) time using Figure 2.
+    In the simplest case, let K = (R, +, x, 0, 1), and define ke = pe for each hyperedge e. Then the algorithm of Figure 2 reduces to the classical inside algorithm (Baker, 1979) and computes Z.
+    Next suppose K is the expectation semiring (Eisner, 2002), shown in Table 1.
+    Define ke = (pe, pere).
+    Then Figure 2 will return (Z, r).
+    Finally, suppose K is our novel second-order expectation semiring, which we introduce in Table 2.
+    Define ke = (pe, pere, pese, perese).
+    Then the algorithm of Figure 2 returns (Z, r, s, t).
+    Note that, to compute t, one cannot simply construct a first-order expectation semiring by defining t(d) def = r(d)s(d) because t(d), unlike r(d) and s(d), is not additively decomposable over the hyperedges in d.5 Also, when r(d) and s(d) are identical, the second-order expectation semiring allows us to compute vari

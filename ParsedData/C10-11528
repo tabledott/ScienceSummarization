@@ -1,0 +1,14 @@
+s.
+			c is the complex sentence to be simpli fied in our example.
+			Fig.
+			1 shows the parse tree of c (we skip the POS level).c: August was the sixth month in the ancient Ro man calendar which started in 735BC.
+			NP VP S August was NPinsixththe SBAR NP NP PP WHNP S VP started PP in 735BC ancient calendar whichthe Roman month Figure 1: Parse Tree of c 3.1 Splitting.
+			The first operation is sentence splitting, which wefurther decompose into two subtasks: (i) segmen tation, which decides where and whether to split a sentence and (ii) completion, which makes the new split sentences complete.
+			First, we decide where we can split a sentence.
+			In our model, the splitting point is judged by the syntactic constituent of the split boundary word in the complex sentence.
+			The decision whether a sentence should be split is based on the length of the complex sentence.
+			The features used in the segmentation step are shown in Tab.
+			3.
+			Word Constituent iLength isSplit Prob.
+			?which?
+			SBAR 1 true 0.0016 

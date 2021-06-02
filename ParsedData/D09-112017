@@ -1,0 +1,6 @@
+l appositive-like pattern that almost surely indicates coreference.
+    Rather than opt to manually create a set of these coreference patterns as in Hearst (1992), we instead opt to automatically extract these patterns from large corpora as in Snow et al. (2004) and Phillips and Riloff (2007).
+    We take a simple bootstrapping technique: given a set of mention pairs extracted from appositives and predicate-nominative configurations, we extract counts over tree fragments between nodes which have occurred in this set of head pairs (see Figure 5); the tree fragments are formed by annotating the internal nodes in the tree path with the head word and POS along with the subcategorization.
+    We limit the paths extracted in this way in several ways: paths are only allowed to go between adjacent sentences and have a length of at most 10.
+    We then filter the set of paths to those which occur more than a hundred times and with at least 10 distinct seed head word pairs.
+    The vast majority of the extracted fragme

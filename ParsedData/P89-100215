@@ -1,0 +1,7 @@
+ no nonterminal children, i.e., it introduces lexical material only.
+    The bottom-up base case occurs when the pivot and root are trivially connected because they are one and the same node.
+    To make the description more explicit, we will develop a Prolog implementation of the algorithm for DCGs, along the way introducing some niceties of the algorithm previously glossed over.
+    In the implementation, a term of the form node (Cat , PO, P) represents a phrase with the syntactic and semantic information given by Cat starting at position PO and ending at position P in the string being generated.
+    As usual for DCGs, a string position is represented by the list of string elements after the position.
+    The generation process starts with a goal category and attempts to generate an appropriate node, in the process instantiating the generated string. gen(Cat , String) : generate (node (Cat , String , 0 ) ) .
+    To generate from a node, we nondeterministically choose a nonchain rule whose left-hand side wil

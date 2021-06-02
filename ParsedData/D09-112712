@@ -1,0 +1,10 @@
+   Here the stack tops are st = Bill, st&#8722;1 = saw, and the queue head is wi = with; underlined texts mark the source and target spans being considered, and wavy underlines mark the allowed spans (Tab.
+    3).
+    Red bold alignment links violate contiguity constraints.
+  
+  
+    As suggested in Section 2.2, shift-reduce conflicts are the central problem we need to address here.
+    Our intuition is, whenever we face a decision whether to combine the stack tops st&#8722;1 and st or to shift the current word wi, we will consult the other language, where the word-alignment information would hopefully provide a preference, as in the running example of PP-attachment (see Figure 1).
+    We now develop this idea into bilingual contiguity features.
+    Informally, if the correct decision is a reduction, then it is likely that the corresponding words of st&#8722;1 and st on the target-side should also form a contiguous span.
+    For example, in Figure 3(a), the source span of a reduction is [saw .. Bill], which m

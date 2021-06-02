@@ -1,0 +1,6 @@
+ed. and word pairs to influence the parse scores, but are distinct from traditional lexical features in several ways.
+    First, there is no notion of headword here, nor is there any modeling of word-toword attachment.
+    Rather, these features pick up on lexical trends in constituent boundaries, for example the trend that in the sentence The screen was a sea of red., the (length 2) span between the word was and the word of is unlikely to be a constituent.
+    These non-head lexical features capture a potentially very different source of constraint on tree structures than head-argument pairs, one having to do more with linear syntactic preferences than lexical selection.
+    Regardless of the relative merit of the two kinds of information, one clear advantage of the present approach is that inference in the resulting model remains cubic, since the dynamic program need not track items with distinguished headwords.
+    With the addition of these features, the accuracy jumped past the generative baseline, to 88

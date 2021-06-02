@@ -1,0 +1,6 @@
+nfiguration now has the form cq = (&#955;cq, [],[],A&#8722;p), where &#955;cq = [0, 1,... , p &#8722; 1].
+    In order to construct a transition sequence C0,m such that Gcm = Gx we instead start from the configuration Non-projective transition sequence for the Czech sentence in Figure 1. c0 = cs(x) and apply exactly the same q transitions, reaching the configuration cq = (Ac , [ ], [p],A&#8722;p).
+    We then perform exactly p transitions, in each case choosingIEFT-ARCn l if the token i at the head of A1 is a dependent of p in Gx (with label l), RIGHT-ARCnl&#65533; if i is the head of p (with label l') and NO-ARCn otherwise.
+    One final SHIFT&#955; transition takes us to the terminal configuration cm = (Acq|p, [ ], [ ],Ax).
+    &#9632; Theorem 8 The worst-case time complexity of the non-projective, list-based algorithm is O(n2), where n is the length of the input sentence.
+    Proof 8 Assuming that the oracle and transition functions can be performed in some constant time, the worst-case running time is bou

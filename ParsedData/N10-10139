@@ -1,0 +1,6 @@
+a mixture of von MisesFisher distributions (movMF) clustering method with first-order unigram contexts (Banerjee et al., 2005).
+    Feature vectors v(c) are composed of individual features I(c, f), taken as all unigrams occurring f E F in a 10-word window around w. Like spherical k-means (Dhillon and Modha, 2001), movMF models semantic relatedness using cosine similarity, a standard measure of textual similarity.
+    However, movMF introduces an additional per-cluster concentration parameter controlling its semantic breadth, allowing it to more accurately model non-uniformities in the distribution of cluster sizes.
+    Based on preliminary experiments comparing various clustering methods, we found movMF gave the best results.
+    The similarity between two words in a multiprototype model can be computed straightforwardly, requiring only simple modifications to standard distributional similarity methods such as those presented by Curran (2004).
+    Given words w and w0, we define two noncontextual clustered si

@@ -1,0 +1,9 @@
+(G).
+    What is less obvious is how the probabilities associated with the rules of G should be mapped.
+    In the case where 7r(G) is more coarse than the treebank originally used to train G, and when that treebank is available, it is easy to project the treebank and directly estimate, say, the maximum-likelihood parameters for 7r(G).
+    This is the approach taken by Charniak et al. (2006), where they estimate what in our terms are projections of the raw treebank grammar from the treebank itself.
+    However, treebank estimation has several limitations.
+    First, the treebank used to train G may not be available.
+    Second, if the grammar G is heavily smoothed or otherwise regularized, its own distribution over trees may be far from that of the treebank.
+    Third, the meanings of the split states can and do drift between splitting stages.
+    Fourth, and most importantly, we may wish to project grammars for which treebank estimation is problematic, for example, grammars which are more refined than the ob

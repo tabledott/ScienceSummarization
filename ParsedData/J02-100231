@@ -1,0 +1,8 @@
+ctual values, we assume the metric is linear with respect to the number of errors (a reasonable assumption, supported by our experiments).
+    Thus, if Pk outputs a penalty of p for 500 false negatives, it would have a penalty of p2 for 250 false negatives.
+    Let a be the penalty for 500 Type A errors, b the penalty for 500 Type B errors, and c the penalty for 500 Type C errors; then the penalty for the FNP segmentation is p = a2 + b2 + c2.
+    Assuming the metric is linear, we know that c = b = 2a (because Pk penalized false negatives twice as much as false positives on average).
+    We can thus substitute either b or 2a for c. We choose to substitute 2a, because Pk is strongly affected by segment size variation for Type A and Type C errors, but not for Type B errors.
+    Thus, replacing c with 2a is more accurate.
+    Performing the substitution, we have p = 3 &#183; a2 + b2.
+    We have a and b from the FP and FN data, respectively, so we can compute p. The results, arranged by segment size variation, ar

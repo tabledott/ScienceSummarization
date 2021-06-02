@@ -1,0 +1,7 @@
+riables and sample each in turn, conditioned on the current assignment to all other variables.
+    Because these variables are continuous, we apply slice sampling (Neal, 2003).
+    Slice sampling is a general technique for drawing samples from a distribution by sampling uniformly from the area under its density function.
+    In Section 4.2 we evaluate our models by comparing their probability on held-out test conversations.
+    As computing this probability exactly is intractable in our model, we employ a recently proposed Chibbstyle estimator (Murray and Salakhutdinov, 2008; Wallach et al., 2009).
+    Chibb estimators estimate the probability of unseen data, P(w) by selecting a high probability assignment to hidden variables h&#8727;, and taking advantage of the following equality which can be easily derived from the definition of conditional probability: As the numerator can be computed exactly, this reduces the problem of estimating P(w) to the easier problem of estimating P(h&#8727;|w).
+    Murray and Sal

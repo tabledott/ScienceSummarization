@@ -1,0 +1,11 @@
+aditional PageRank to refer to the case when a uniform v vector is used in Eq.
+    (1); and whenever a modified v is used, we will call it Personalized PageRank.
+    The next section shows how we define a modified v. PageRank is actually calculated by applying an iterative algorithm which computes Eq.
+    (1) successively until convergence below a given threshold is achieved, or, more typically, until a fixed number of iterations are executed.
+    Regarding PageRank implementation details, we chose a damping value of 0.85 and finish the calculation after 30 iterations.
+    We did not try other damping factors.
+    Some preliminary experiments with higher iteration counts showed that although sometimes the node ranks varied, the relative order among particular word synsets remained stable after the initial iterations (cf.
+    Section 7 for further details).
+    Note that, in order to discard the effect of dangling nodes (i.e. nodes without outlinks) we slightly modified Eq.
+    (1).
+    For the sake of brevity

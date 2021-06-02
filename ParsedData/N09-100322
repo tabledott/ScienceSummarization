@@ -1,0 +1,7 @@
+ gives as an indication of the correlations that could be achieved by choosing for each pair the rank output by the best classifier for that pair.
+    The previous results motivated the use of a supervised approach to combine the output of the different systems.
+    We created a training corpus containing pairs of pairs of words from the datasets, having as features the similarity and rank of each pair involved as given by the different unsupervised systems.
+    A classifier is trained to decide whether the first pair is more similar than the second one.
+    For example, a training instance using two unsupervised classifiers is 0.001364, 31, 0.327515, 64, 0.084805, 57, 0.109061, 59, negative meaning that the similarities given by the first classifier to the two pairs were 0.001364 and 0.327515 respectively, which ranked them in positions 31 and 64.
+    The second classifier gave them similarities of 0.084805 and 0.109061 respectively, which ranked them in positions 57 and 59.
+    The class negative indicates 

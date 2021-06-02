@@ -1,0 +1,9 @@
+stency.
+    The 8 similarity-to-IN features are based on word frequencies and scores from various models trained on the IN corpus: To avoid numerical problems, each feature was normalized by subtracting its mean and dividing by its standard deviation.
+    In addition to using the simple features directly, we also trained an SVM classifier with these features to distinguish between IN and OUT phrase pairs.
+    Phrase tables were extracted from the IN and OUT training corpora (not the dev as was used for instance weighting models), and phrase pairs in the intersection of the IN and OUT phrase tables were used as positive examples, with two alternate definitions of negative examples: The classifier trained using the 2nd definition had higher accuracy on a development set.
+    We used it to score all phrase pairs in the OUT table, in order to provide a feature for the instance-weighting model.
+  
+  
+    We carried out translation experiments in two different settings.
+    The first setting uses the European Medic

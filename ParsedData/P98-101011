@@ -1,0 +1,8 @@
+the candidate being a target instance.
+    We therefore compute the score of a candidate as a function of some statistics of the set of all its covers.
+    For example, if a candidate has many different covers, it is more likely to be a target instance, since many different pieces of evidence can be brought to bear.
+    We have empirically found several statistics of the cover set to be useful.
+    These include, for each cover, the number of tiles it contains, the total number of context tags it contains, and the number of positions which more than one tile covers (the amount of overlap).
+    We thus compute, for the set of all covers of a candidate c, the Each of these items gives an indication regarding the overall strength of the cover-based evidence for the candidate.
+    The score of the candidate is a linear function of its statistics: If candidate c has no covers, we set f(c) = 0.
+    Note that minsize is weighted negatively, since a cover with fewer tiles provides stronger evidence for the candidate.

@@ -1,0 +1,10 @@
+ is computationally expensive, we sorted the n-best list by the sentence length, and processed them from the shorter ones to the longer ones.
+    We used 10 CPUs for about five days, and 273/997 development sentences and 237/878 test sentences were processed.
+    The average %BLEU score (average of the best four among different 20 search initial points) was 31.7 for both hTreeToStringSum and hTreeToStringViterbi.
+    Among the processed development sentences, the model preferred the oracle sentences over the produced sentence in 61% of the cases.
+    The biggest problem of this model is that it is computationally very expensive.
+    It processed less than 30% of the n-best lists in long CPU hours.
+    In addition, we processed short sentences only.
+    For long sentences, it is not practical to use this model as it is.
+    A tree-to-tree translation model makes use of syntactic tree for both the source and target language.
+    As in the tree-to-string model, a set of operations apply, each with some probabili

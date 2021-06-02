@@ -1,0 +1,10 @@
+ne region for each type of named entity plus one for NOTA-NAME.
+    Within each of the regions, a statistical bigram language model is used to compute the likelihood of words occurring within that region (named entity type).
+    The transition probabilities are computed by deleted interpolation (Jelinek, 1997), and the decoding is done through the Viterbi algorithm.
+    The particular implementation we used underperformed consistently all the other classifiers on German, and is not included.
+  
+  
+    The results obtained by each individual classifier, broken down by entity type, are presented in Table 1.
+    Out of the four classifiers, the MaxEnt and RRM classifiers are the best performers, followed by the modified fnTBL classifier and the HMM classifier.
+    The error-based classifiers (RRM and fnTBL) tend to obtain balanced precision/recall numbers, while the other two tend to be more precise at the expense of recall.
+    To facilitate comparison with other classifiers for this task, most reported results

@@ -1,0 +1,9 @@
+e tags and machine-selected tag for each word.
+    In the training portion of the corpus, the correct tag as judged by human annotators was also provided.
+    In the baseline approach, the first letter, or &amp;quot;main part of speech&amp;quot;, of the full POS strings was used as the tag.
+    This resulted in a tagset with 13 possible values.
+    A number of alternative, richer tagsets were explored, using various combinations of character positions from the tag string.
+    The most successful alternative was a two-letter tag whose first letter was always the main POS, and whose second letter was the case field if the main POS was one that displays case, while otherwise the second letter was the detailed POS.
+    (The detailed POS was used for the main POS values D, J, V, and X; the case field was used for the other possible main POS values.)
+    This two-letter scheme resulted in 58 tags, and provided about a 1.1% parsing improvement over the baseline on the development set.
+    Even richer tagsets that al

@@ -1,0 +1,10 @@
+ncies, we introduce two nonmonotonicity features.
+			To find the points of nonmonotonicity of a wordalignment, we arbitrarily designate one of the lan guages as the source and the other as the target.
+			We sort the word pairs in the alignment, first by source word position, and then by target word position.
+			We then iterate through the sorted alignment, looking only at the target word positions.
+			The points of nonmonotonicity in the alignment will be the places where there are backward jumps in this sequence of target word positions.
+			For example, suppose we have the sorted alignment ((1,1)(2,4)(2,5)(3,2)(5,6)).
+			The sequence of target word positions in this sorted alignment is (1,4,5,2,6); hence, there is one point ofnonmonotonicity where target word position 2 fol lows target word position 5.
+			We still need to decide how to measure the degreeof nonmonotonicity of an alignment.
+			Two meth ods immediately suggest themselves.
+			One is to sum the magnitudes of the backward jumps in the targetword s

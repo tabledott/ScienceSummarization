@@ -1,0 +1,5 @@
+earning process is open-ended: additional training text can always be added without having to re-run the learner on previous training data.
+    To define a lexicon update, I extend the definition of an utterance to be U = h&#8709;l, x1,... , xn, &#8709;ri where &#8709;l and &#8709;r are boundary markers.
+    The property of adjacency can now be extended to include the boundary markers.
+    A symbol &#945; &#8712; U is adjacent to a word x relative to a set of links L over U if for every word z between x and &#945; there is a path of links in L from x to z but there is no link from z to &#945;.
+    In the following example, the adjacencies of x1 are &#8709;l, x2 and x3: x1 0 &gt; x2 x3 x4 If a link is added from x2 to x3, x4 becomes adjacent to x1 instead of x3 (the adjacencies of x1 are then 0l, x2 and x4): x1 0 &gt; x2 0 &gt; x3 x4 The positions in the utterance adjacent to a word x are indexed by an index i such that i &lt; 0 to the left of x, i &gt; 0 to the right of x and |i |increases with the distance f

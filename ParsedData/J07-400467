@@ -1,0 +1,6 @@
+d vice versa for the outside scores).
+    This can easily be achieved by ordering the nodes in the bottom-up CKY parsing order.
+    For the dependency model, the computations of the empirical expected values (17) and the log-likelihood function (16) require sums over just those derivations leading to the gold-standard dependency structure.
+    We will refer to such derivations as correct derivations.
+    As far as we know, this problem of identifying derivations in a packed chart which lead to a particular dependency structure has not been addressed before in the NLP literature.
+    Figure 5 gives an algorithm for finding nodes in a packed chart which appear in correct derivations. cdeps(c) returns the number of correct dependencies on conjunctive node c, and returns the incorrect marker * if there are any incorrect dependencies on c; dmax(c) returns the maximum number of correct dependencies produced by any sub-derivation headed by c, and returns * if there are no sub-derivations producing Algorithm for find

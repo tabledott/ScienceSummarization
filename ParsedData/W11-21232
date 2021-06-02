@@ -1,0 +1,12 @@
+d data structures.
+    BerkeleyLM revision 152 (Pauls and Klein, 2011) implements tries based on hash tables and sorted arrays in Java with lossy quantization.
+    Sheffield Guthrie and Hepple (2010) explore several randomized compression techniques, but did not release code.
+    TPT Germann et al. (2009) describe tries with better locality properties, but did not release code.
+    These packages are further described in Section 3.
+    We substantially outperform all of them on query speed and offer lower memory consumption than lossless alternatives.
+    Performance improvements transfer to the Moses (Koehn et al., 2007), cdec (Dyer et al., 2010), and Joshua (Li et al., 2009) translation systems where our code has been integrated.
+    Our open-source (LGPL) implementation is also available for download as a standalone package with minimal (POSIX and g++) dependencies.
+  
+  
+    We implement two data structures: PROBING, designed for speed, and TRIE, optimized for memory.
+    The set of n-grams appearing in a

@@ -1,0 +1,7 @@
+etimes when it occurs in the context of a preposition, whereas in the gold tagging it is always tagged as TO.
+    The model also gets penalized for tagging the word &#8220;U.S.&#8221; as an adjective (JJ), which might be considered valid in some cases such as &#8220;the U.S. State Department&#8221;.
+    In other cases, the model clearly produces incorrect tags (e.g., &#8220;New&#8221; gets tagged incorrectly as NNPS).
+    Our method resembles the classic Minimum Description Length (MDL) approach for model selection (Barron et al., 1998).
+    In MDL, there is a single objective function to (1) maximize the likelihood of observing the data, and at the same time (2) minimize the length of the model description (which depends on the model size).
+    However, the search procedure for MDL is usually non-trivial, and for our task of unsupervised tagging, we have not found a direct objective function which we can optimize and produce good tagging results.
+    In the past, only a few approaches utilizing MDL have been

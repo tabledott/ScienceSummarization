@@ -1,0 +1,11 @@
+column and the random variable is uniformly distributed: E &#8212; U[-0.001, 0.001].
+    The first block is multiplied by the left child and the second by the right child:
+  
+  
+    We evaluate the CVG in two ways: First, by a standard parsing evaluation on Penn Treebank WSJ and then by analyzing the model errors in detail.
+    We used the first 20 files of WSJ section 22 to cross-validate several model and optimization choices.
+    The base PCFG uses simplified categories of the Stanford PCFG Parser (Klein and Manning, 2003a).
+    We decreased the state splitting of the PCFG grammar (which helps both by making it less sparse and by reducing the number of parameters in the SU-RNN) by adding the following options to training: &#8216;-noRightRec dominatesV 0 -baseNP 0&#8217;.
+    This reduces the number of states from 15,276 to 12,061 states and 602 POS tags.
+    These include split categories, such as parent annotation categories like VP&#710;S.
+    Furthermore, we ignore all category splits for the SURNN weig

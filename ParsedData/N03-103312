@@ -1,0 +1,7 @@
+endency network can choose a sequence model that is bidirectionally very consistent but does not match the data very well.
+    However, this problem does not appear to have prevented the networks from performing well on the tagging problem, probably because features linking tags and observations are generally much sharper discriminators than tag sequence features.
+    It is useful to contrast this framework with the conditional random fields of Lafferty et al. (2001).
+    The CRF approach uses similar local features, but rather than chaining together local models, they construct a single, globally normalized model.
+    The principal advantage of the dependency network approach is that advantageous bidirectional effects can be obtained without the extremely expensive global training required for CRFs.
+    To summarize, we draw a dependency network in which each node has as neighbors all the other nodes that we would like to have influence it directly.
+    Each node&#8217;s neighborhood is then considered in is

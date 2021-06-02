@@ -1,0 +1,8 @@
+ Finding one (or all) parses for a sentence according to a context-free grammar requires search.
+    Fortunately, there are well known 0(n3) algorithms for parsing, where n is the length of the sentence.
+    Unfortunately, for large grammars (such as the PCFG induced from the Penn II WSJ corpus, which contains around 1.6 &#8226; 104 rules) and longish sentences (say, 40 words and punctuation), even 0(713) looks pretty bleak.
+    One well-known 0(n3) parsing method (Kay, 1980) is chart parsing.
+    In this approach one maintains an agenda of items remaining to be processed, one of which is processed during each iteration.
+    As each item is pulled off the agenda, it is added to the chart (unless it is already there, in which case it can be discarded) and used to extend and create additional items.
+    In &amp;quot;exhaustive&amp;quot; chart parsing one removes items from the agenda in some relatively simple way (last-in, first-out is common), and continues to do so until nothing remains.
+    A commonly discus

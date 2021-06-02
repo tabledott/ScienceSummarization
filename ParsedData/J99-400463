@@ -1,0 +1,9 @@
+ that could possibly follow w1 wn.
+    Jelinek and Lafferty (1991) and Stolcke (1993) both give algorithms for computing these prefix probabilities.
+    Elsewhere (Goodman 1998), we show how to produce an item-based description of a prefix parser.
+    There are two main advantages to using an item-based description: ease of derivation, and reusability.
+    First, the conventional derivations are somewhat complex, requiring a fair amount of inside-semiring-specific mathematics.
+    In contrast, using item-based descriptions, we only need to derive a parser that has the property that there is one item derivation for each (complete) grammar derivation that would produce the prefix.
+    The value of any prefix given the parser will then automatically be the sum of all grammar derivations that include that prefix.
+    The other advantage is that the same description can be used to compute many values, not just the prefix probability.
+    For instance, we can use this description with the Viterbi-derivation semirin

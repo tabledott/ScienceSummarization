@@ -1,0 +1,8 @@
+
+    The Grammar Our parser looks for the most likely tree spanning a single path through the lattice of which the yield is a sequence of lexemes.
+    This is done using a simple PCFG which is lexemebased.
+    This means that the rules in our grammar are of two kinds: (a) syntactic rules relating nonterminals to a sequence of non-terminals and/or PoS tags, and (b) lexical rules relating PoS tags to lattice arcs (lexemes).
+    The possible analyses of a surface token pose constraints on the analyses of specific segments.
+    In order to pass these constraints onto the parser, the lexical rules in the grammar are of the form pi &#8212;* (si, pi) Parameter Estimation The grammar probabilities are estimated from the corpus using simple relative frequency estimates.
+    Lexical rules are estimated in a similar manner.
+    We smooth Prf(p &#8212;* (s, p)) for rare and OOV segments (s E l, l E L, s unseen) using a &#8220;per-tag&#8221; probability distribution over rare segments which we estimate using relative freq

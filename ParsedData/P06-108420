@@ -1,0 +1,8 @@
+72) which operates over the lattice representation we have defined above.
+    The algorithm starts with a probabilistic model &#181; (which can be chosen randomly or obtained from good initial conditions), and at each iteration, a new model &#181;&#65533; is derived in order to better explain the given output observations.
+    For a given sentence, we define T as the number of words in the sentence, and T as the number of vectors of the output representation O = {ot},1 &lt; t &lt; T, where each item in the output is denoted by olt = (sym, state, prev, next),1 &lt; t &lt; T,1 &lt; l &lt; |ot|.
+    We define a(t, l) as the probability to reach olt at time t, and 0(t, l) as the probability to end the sequence from olt.
+    Fig.
+    3 describes the expectation and the maximization steps of the learning algorithm for a first-order HMM.
+    The algorithm works in O(T) time complexity, where T is the total number of symbols in the output sequence encoding, where each symbol is counted as the size of its prev set.
+  

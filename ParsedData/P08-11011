@@ -1,0 +1,7 @@
+entences do not contain explicitly marked word boundaries, word segmentation is a necessary step before POS tagging can be performed.
+    Typically, a Chinese POS tagger takes segmented inputs, which are produced by a separate word segmentor.
+    This two-step approach, however, has an obvious flaw of error propagation, since word segmentation errors cannot be corrected by the POS tagger.
+    A better approach would be to utilize POS information to improve word segmentation.
+    For example, the POS-word pattern &#8220;number word&#8221; + &#8220;^ (a common measure word)&#8221; can help in segmenting the character sequence &#8220;&#65533;^A&#8221; into the word sequence &#8220;&#65533; (one) ^ (measure word) A (person)&#8221; instead of &#8220;&#65533; (one) ^A (personal; adj)&#8221;.
+    Moreover, the comparatively rare POS pattern &#8220;number word&#8221; + &#8220;number word&#8221; can help to prevent segmenting a long number word into two words.
+    In order to avoid error propagation and make use of PO

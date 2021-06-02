@@ -1,0 +1,8 @@
+ur subtree-based Boosting algorithm (dep/ngram) performs better than the baseline method (bow).
+    This result supports our first intuition that structural information within texts is important when classifying a text by opinions or modalities, not by topics.
+    We also find that there are no significant differences in accuracy between dependency and n-gram (in all cases, p &gt; 0.2).
+    When using the bag-of-words feature, no significant differences in accuracy are observed between Boosting and SVMs.
+    When structural information is used in training and classification, Boosting performs slightly better than SVMs with tree kernel.
+    The differences are significant when we use dependency features in the MOD task.
+    SVMs show worse performance depending on tasks and categories, (e.g., 24.2 F-measure in the smallest category &#8220;opinion&#8221; in the MOD task).
+    When a convolution kernel is applied to sparse data, kernel dot products between almost the same instances become much larger than those 

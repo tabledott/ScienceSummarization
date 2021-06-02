@@ -1,0 +1,12 @@
+ the training process.
+    The methods for compiling the Wikipedia training corpus are given in Section 5.
+    We train the linker as a separate linear Support Vector Machine.
+    Training data for the linker is obtained by applying the ranker on the training set.
+    The mentions for which the top-ranked disambiguation did not match the gold disambiguation are treated as negative examples, while the mentions the ranker got correct serve as positive examples.
+  
+  
+    We evaluate GLOW on four data sets, of which two are from previous work.
+    The first data set, from (Milne and Witten, 2008b), is a subset of the AQUAINT corpus of newswire text that is annotated to mimic the hyperlink structure in Wikipedia.
+    That is, only the first mentions of &#8220;important&#8221; titles were hyperlinked.
+    Titles deemed uninteresting and redundant mentions of the same title are not linked.
+    The second data set, from (Cucerzan, 2007), is taken from MSNBC news and focuses on disambiguating named entities after run

@@ -1,0 +1,9 @@
+is the weight of the ith clause, fz = 1 if the ith clause is true, and fz = 0 otherwise.
+    Markov logic makes it possible to compactly specify probability distributions over complex relational domains.
+    Efficient inference can be performed using MC-SAT (Poon &amp; Domingos, 2006).
+    MC-SAT is a &#8220;slice sampling&#8221; Markov chain Monte Carlo algorithm.
+    Slice sampling introduces auxiliary variables u that decouple the original ones x, and alternately samples u conditioned on x and viceversa.
+    To sample from the slice (the set of states x consistent with the current u), MC-SAT calls SampleSAT (Wei et al., 2004), which uses a combination of satisfiability testing and simulated annealing.
+    The advantage of using a satisfiability solver (WalkSAT) is that it efficiently finds isolated modes in the distribution, and as a result the Markov chain mixes very rapidly.
+    The slice sampling scheme ensures that detailed balance is (approximately) preserved.
+    MC-SAT is orders of magnitude faster 

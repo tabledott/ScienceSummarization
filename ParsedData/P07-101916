@@ -1,0 +1,9 @@
+ search errors.
+    However, the hope is that by choosing the right value of i, these estimates will be accurate enough to affect the search quality only slightly, which is analogous to &#8220;almost admissible&#8221; heuristics in A* search (Soricut, 2006).
+  
+  
+    We test our methods on two large-scale English-toChinese translation systems: a phrase-based system and our tree-to-string system (Huang et al., 2006).
+    We implemented Cubit, a Python clone of the Pharaoh decoder (Koehn, 2004),3 and adapted cube pruning to it as follows.
+    As in Pharaoh, each bin i contains hypotheses (i.e., +LM items) covering i words on the source-side.
+    But at each bin (see Figure 5), all +LM items from previous bins are first partitioned into &#8722;LM items; then the hyperedges leading from those &#8722;LM items are further grouped into hyperedge bundles (Figure 6), which are placed into the priority queue of the current bin.
+    Our data preparation follows Huang et al. (2006): the training data is a parallel corpu

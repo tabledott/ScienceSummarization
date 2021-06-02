@@ -1,0 +1,8 @@
+sterior probability of each n-gram is computed.
+    A new automaton is then created by intersecting each ngram with weight (from Equation 2) to an unweighted lattice.
+    Finally, the MBR hypothesis is extracted as the best path in the automaton.
+    We will refer to this procedure as FSAMBR.
+    The above steps are carried out one n-gram at a time.
+    For a moderately large lattice, there can be several thousands of n-grams and the procedure becomes expensive.
+    We now present an alternate approximate procedure which can avoid this where the posterior probability of an n-gram in the lattice is given by enumeration making the resulting algorithm much faster than FSAMBR.
+    The key idea behind this new algorithm is to rewrite the n-gram posterior probability (Equation 4) as follows: where f(e, w, E) is a score assigned to edge e on path E containing n-gram w: { 1 w &#8712; e,p(e|G) &gt; p(e'|G), e' precedes e on E 0 otherwise In other words, for each path E, we count the edge that contributes n-gram w and 

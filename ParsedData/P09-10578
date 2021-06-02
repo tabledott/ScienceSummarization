@@ -1,0 +1,8 @@
+EX software (a commercial IP solver package).
+    Alternatively, there are other programs such as lp solve, which are free and publicly available for use.
+    Once we create an integer program for the full test corpus, and pass it to CPLEX, the solver returns an sponding grammar sizes for the sample word sequence from Figure 2 using the given dictionary and grammar.
+    The IP solver finds the smallest grammar set that can explain the given word sequence.
+    In this example, there exist two solutions that each contain only 4 tag pair entries, and IP returns one of them. objective function value of 459.3 CPLEX also returns a tag sequence via assignments to the link variables.
+    However, there are actually 104378 tag sequences compatible with the 459-sized grammar, and our IP solver just selects one at random.
+    We find that of all those tag sequences, the worst gives an accuracy of 50.8%, and the best gives an accuracy of 90.3%.
+    We also note that CPLEX takes 320 seconds to return the optimal solution 

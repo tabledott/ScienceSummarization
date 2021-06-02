@@ -1,0 +1,8 @@
+xt is a fairly simple process: The Viterbi search is necessary because simply taking the highest-probability future assigned to each token would result in incompatible assignments.
+    For instance, an assignment of [person-start, location_end] to two consecutive tokens would be invalid.
+    The Viterbi search finds the highest probability path in which there are no two tokens in which the second one cannot follow the first, as defined by a table of all such invalid transitions (a similar approach to (Sekine et al.. 1998)).
+  
+  
+    MENE's maximum entropy training algorithm gives it reasonable performance with moderate-sized training corpora or few information sources, while allowing it to really shine when more training data and information sources are added.
+    Table 2 shows MENE's performance on the MUC-7 &amp;quot;dry run&amp;quot; corpus, which consisted of 25 articles mostly on the topic of aviation disasters.
+    All systems shown were trained on 350 articles on the same domain (this training corpus 

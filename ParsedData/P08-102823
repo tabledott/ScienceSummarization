@@ -1,0 +1,9 @@
+ common context words (excluding a stop list of function words).
+    These components were set to the ratio of the probability of the context word given the target word to the probability of the context word overall.
+    This configuration gave high correlations with the WordSim353 similarity judgments using the cosine measure.
+    In addition, Bullinaria and Levy (2007) found that these parameters perform well on a number of other tasks such as the synonymy task from the Test ofEnglish as a Foreign Language (TOEFL).
+    Our composition models have no additional parameters beyond the semantic space just described, with three exceptions.
+    First, the additive model in (7) weighs differentially the contribution of the two constituents.
+    In our case, these are the subject noun and the intransitive verb.
+    To this end, we optimized the weights on a small held-out set.
+    Specifically, we considered eleven models, varying in their weightings, in steps of 10%, from 100% noun through 50% of both verb and nou

@@ -1,0 +1,10 @@
+e these must be solved by dictionary Alignments between English and Japanese sound sequences, as determined by EM training.
+    Best alignments are shown for the English words biscuit, divider, and filter. lookup anyway.
+    Only two pairs failed to align when we wished they had&#8212;both involved turning English Y UW into Japanese u, as in ((Y UW K AH L EY L 1Y) +-4 (u k urere)).
+    Note also that our model translates each English sound without regard to context.
+    We have also built context-based models, using decision trees recoded as WFSTs.
+    For example, at the end of a word, English T is likely to come out as (t o) rather than (t).
+    However, context-based models proved unnecessary for back-transliteration.
+    They are more useful for English-to-Japanese forward transliteration.
+    To map Japanese sound sequences like (m o ot a a) onto katakana sequences like ), we manually constructed two WFSTs.
+    Composed together, they yield an integrated WFST with 53 states and 303 arcs, producing a kata

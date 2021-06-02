@@ -1,0 +1,6 @@
+size k. For each sentence break, we determine a lexical cohesion function by computing the cosine similarity at the transition between the two windows.
+    Instead of using word counts to compute similarity, we analyze lexical chains that overlap with the two windows.
+    The similarity between windows (A and B) is computed with:5 where The similarity computed at each sentence break produces a plot that shows how lexical cohesion changes over time; an example is shown in Figure 1.
+    The lexical cohesion function is then smoothed using a moving average filter, and minima become potential segment boundaries.
+    Then, in a manner quite similar to (Hearst, 1994), the algorithm determines for every local minimum mi how sharp of a change there is in the lexical cohesion function.
+    The algorithm looks on each side of mi for maxima of cohesion, and once it eventually finds one on each side (l and r), it computes the hypothesized segmentation probability: where LCF(x) is the value of the lexical cohesion functio

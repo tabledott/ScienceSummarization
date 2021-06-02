@@ -1,0 +1,11 @@
+ub and Van Loan 1996).
+    We may think of this matrix UkEkVTk as a &#8220;smoothed&#8221; or &#8220;compressed&#8221; version of the original matrix.
+    In the subsequent steps, we will be calculating cosines for row vectors.
+    For this purpose, we can simplify calculations by dropping V. The cosine of two vectors is their dot product, after they have been normalized to unit length.
+    The matrix XXT contains the dot products of all of the row vectors.
+    We can find the dot product of the ith and jth row vectors by looking at the cell in row i, column j of the matrix XXT.
+    Since VTV = I, we have XXT = UEVT(UEVT)T = UEVTVETUT = UE(UE)T, which means that we can calculate cosines with the smaller matrix UE, instead of using X = UEVT (Deerwester et al. 1990).
+    10.
+    Projection: Calculate UkEk (we use k = 300).
+    This matrix has the same number of rows as X, but only k columns (instead of 2 x num patterns columns; in our experiments, that is 300 columns instead of 8,000).
+    We can compare two wo

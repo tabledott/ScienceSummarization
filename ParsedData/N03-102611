@@ -1,0 +1,7 @@
+generation is passed on to the next system component.
+    In case of fragmentary input to the transfer component, grammaticaliy of the output is guaranteed for the separate fragments.
+    In other words, strings generated from a reduced fragmentary f-structure will be as grammatical as the string that was fed into the parsing component.
+    After filtering by the generator, the remaining fstructures were weighted by the stochastic disambiguation component.
+    Similar to stochastic disambiguation for constraint-based parsing (Johnson et al., 1999; Riezler et al., 2002), an exponential (a.k.a. log-linear or maximumentropy) probability model on transferred structures is estimated from a set of training data.
+    The data for estimation consists of pairs of original sentences y and goldstandard summarized f-structures s which were manually selected from the transfer output for each sentence.
+    For training data I(sj, yj)Imj=1 and a set of possible summarized structures S(y) for each sentence y, the objective w

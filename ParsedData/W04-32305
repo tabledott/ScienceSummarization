@@ -1,0 +1,10 @@
+ morphological analysis can be defined as follows.
+    Let x be an input, unsegmented sentence.
+    Let y be a path, a sequence of tokens where each token is a pair of word wi and its part-of-speech ti.
+    In other words, y = ((w1, t1), ... , (w#y, t#y)) where #y is the number of tokens in the path y.
+    Let Y(x) be a set of candidate paths in a lattice built from the input sentence x and a lexicon.
+    The goal is to select a correct path y&#710; from all candidate paths in the Y(x).
+    The distinct property of Japanese morphological analysis is that the number of tokens y varies, since the set of labels and the set of states are not the same.
+    Japanese part-of-speech (POS) tagsets used in the two major Japanese morphological analyzers ChaSen2 and JUMAN3 take the form of a hierarchical structure.
+    For example, IPA tagset4 used in ChaSen consists of three categories: part-ofspeech, conjugation form (cform), and conjugate type (ctype).
+    The cform and ctype are assigned only to words that conjugate,

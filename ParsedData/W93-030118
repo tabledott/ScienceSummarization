@@ -1,0 +1,9 @@
+at the French position j was connected to the English position i will not increase the probability that j + 1 will be connected to an English position near i.
+    The absence of such dependence can easily confuse the program, mainly in aligning adjacent occurrences of the same word, which are common in technical texts.
+    Brown et al. introduce such dependence in their Model 4.
+    We have selected a simpler alternative defined in terms of offset probabilities.
+    The first step in finding the most probable alignment is to determine the relevant connectzons for each French position.
+    Relevant connections are required to be reasonably likely, that is, their translation probability (t(f le)) should exceed some minimal threshold.
+    Moreover, they are required to fall within a window between 1(j) &#8212; w and 1(j) + w in the English corpus, as in the previous step (parameter estimation).
+    We call a French position relevant if it has at least one relevant connection.
+    Each alignment A then consists o

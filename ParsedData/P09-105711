@@ -1,0 +1,7 @@
+he case of the observed dictionary, using a smaller grammar model does not affect the precision (EM = 0.91, IP+EM = 0.89) or recall (EM = 0.89, IP+EM = 0.89).
+    During EM training, the smaller grammar with fewer bad tag bigrams helps to restrict the dictionary model from making too many bad choices that EM made earlier.
+    Here are a few examples of bad dictionary entries that get removed when we use the minimized grammar for EM training: in FW a SYM of RP In RBR During EM training, the minimized grammar helps to eliminate many incorrect entries (i.e., zero out model parameters) from the dictionary, thereby yielding an improved dictionary model.
+    So using the minimized grammar (which has higher precision) helps to improve the quality of the chosen dictionary (examples shown in Figure 4).
+    This in turn helps improve the tagging accuracy from 81.7% to 84.5%.
+    It is clear that the IP-constrained grammar is a better choice to run EM on than the full grammar.
+    Note that we used a very small IP-gramm

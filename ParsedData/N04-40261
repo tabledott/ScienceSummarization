@@ -1,0 +1,9 @@
+al., 2003; Venugopal et al., 2003) have delivered state-of-the-art performance on standard translation tasks.
+    In this paper, we present a phrase-based unigram system similar to the one in (Tillmann and Xia, 2003), which is extended by an unigram orientation model.
+    The units of translation are blocks, pairs of phrases without internal structure.
+    Fig.
+    1 shows an example block translation using five Arabic-English blocks .
+    The unigram orientation model is trained from word-aligned training data.
+    During decoding, we view translation as a block segmentation process, where the input sentence is segmented from left to right and the target sentence is generated from bottom to top, one block at a time.
+    A monotone block sequence is generated except for the possibility to swap a pair of neighbor blocks.
+    The novel orientation model is used to assist the block swapping: as shown in section 3, block swapping where only a trigram language model is used to compute probabilities between neighbo

@@ -1,0 +1,9 @@
+n challenges for the joint segmentation and POS tagging system is the decoding algorithm.
+    The speed and accuracy of the decoder is important for the perceptron learning algorithm, but the system faces a very large search space of combined candidates.
+    Given the linear model and feature templates, exact inference is very hard even with dynamic programming.
+    Experiments with the standard beam-search decoder described in (Zhang and Clark, 2007) resulted in low accuracy.
+    This beam search algorithm processes an input sentence incrementally.
+    At each stage, the incoming character is combined with existing partial candidates in all possible ways to generate new partial candidates.
+    An agenda is used to control the search space, keeping only the B best partial candidates ending with the current character.
+    The algorithm is simple and efficient, with a linear time complexity of O(BTn), where n is the size of input sentence, and T is the size of the tag set (T = 1 for pure word segmentation).
+   

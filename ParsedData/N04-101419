@@ -1,0 +1,10 @@
+ize of the transducer and linear in the size of the derivation tree grammars for the training examples.
+    The size of the derivation trees is at worst O(|Q|&#183;|I|&#183;|O|&#183;|R|).
+    For a corpus of K examples with average input/output size M, an iteration takes (at worst) O(|Q |&#183; |R |&#183; K &#183; M2) time&#8212;quadratic, like the forward-backward algorithm.
+  
+  
+    We now turn to tree-to-string transducers (xRS).
+    In the automata literature, these were first called generalized syntax-directed translations (Aho and Ullman, 1971) and used to specify compilers.
+    Tree-to-string transducers have also been applied to machine translation (Yamada and Knight, 2001; Eisner, 2003).
+    We give an explicit tree-to-string transducer example in the next section.
+    Formally, a weighted extended-lhs root-to-frontier tree-to-string transducer X is a quintuple (E, A, Q, Qi, R) where E is the input alphabet, and A is the output alphabet, Q is a finite set of states, Qi &#8712; Q is the initial (or s

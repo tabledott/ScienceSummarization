@@ -1,0 +1,6 @@
+;9&#8221; and &#8220;0&#8221; respectively).
+    During testing, the probability of a boundary tag sequence assignment t1... tn given a character sequence c1 ...cn is determined by using the maximum entropy classifier to compute the probability that a boundary tag ti is assigned to each individual character ci.
+    If we were to just assign each character the boundary tag with the highest probability, it is possible that the classifier produces a sequence of invalid tags (e.g., &#8220;m&#8221; followed by &#8220;s&#8221;).
+    To eliminate such possibilities, we implemented a dynamic programming algorithm which considers only valid boundary tag sequences given an input character sequence.
+    At each character position i, the algorithm considers each last word candidate ending at position i and consisting of K characters in length (K = 1, ..., 20 in our experiments).
+    To determine the boundary tag assignment to the last word W with K characters, the first character of W is assigned boundary tag &#8220;b&#8

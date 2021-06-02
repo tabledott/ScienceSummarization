@@ -1,0 +1,12 @@
+ that it does not require consecutive matches but in-sequence matches that reflect sentence level word order as n grams.
+			The other advantage is that it automatically includes longest in-sequence common n-grams, therefore no predefined n-gram length is necessary.
+			By only awarding credit to in-sequence unigram matches, ROUGE-L also captures sentence level structure in a natural way.
+			Consider the following example: S1.
+			police killed the gunman S2.
+			police kill the gunman S3.
+			the gunman kill police Using S1 as the reference translation, S2 has a ROUGE-L score of 3/4 = 0.75 and S3 has a ROUGE L score of 2/4 = 0.5, with ? = 1.
+			Therefore S2 is better than S3 according to ROUGE-L.
+			This example illustrated that ROUGE-L can work reliably at sentence level.
+			However, LCS suffers one disadvantage: it only counts the main in sequence words; therefore, other alternative LCSes and shorter sequences are not reflected in the final score.
+			In the next section, we introduce ROUGE-W.
+			3.2 ROUGE-W: We

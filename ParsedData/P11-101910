@@ -1,0 +1,6 @@
+   This procedure requires a set R consisting of training samples xn and their target rankings rn: such that xi &gt;-R xj when ri &lt; rj, where 1 5 i,j 5 n and i =&#65533; j.
+    A rank preference model is not trained directly on this set of data objects and their labels; rather a set of pair-wise difference vectors is created.
+    The goal of a linear ranking model is to compute a weight vector w that maximises the number of correctly ranked pairs: This is equivalent to solving the following optimisation problem: The factor C allows a trade-off between the training error and the margin size, while &#65533;ij are nonnegative slack variables that measure the degree of misclassification.
+    The optimisation problem is equivalent to that for the classification model on pair-wise difference vectors.
+    In this case, generalisation is achieved by maximising the differences between closely-ranked data pairs.
+    The principal advantage of applying rank preference learning to the AA task is that we explicitly mod

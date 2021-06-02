@@ -1,0 +1,11 @@
+on-terminal alignments in A must be one-to-one.
+    In order to exclude undesirable structures, we only allow 5e whose dependency structure D is well-formed, which we will define below.
+    In addition, the same well-formedness requirement will be applied to partial decoding results.
+    Thus, we will be able to employ shared structures to merge multiple partial results.
+    Based on the results in previous work (DeNeefe et al., 2007), we want to keep two kinds of dependency structures.
+    In one kind, we keep dependency trees with a sub-root, where all the children of the sub-root are complete.
+    We call them fixed dependency structures because the head is known or fixed.
+    In the other, we keep dependency structures of sibling nodes of a common head, but the head itself is unspecified or floating.
+    Each of the siblings must be a complete constituent.
+    We call them floating dependency structures.
+    Floating structures can represent many linguistically meaningful non-constituent structures: for e

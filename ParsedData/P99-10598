@@ -1,0 +1,10 @@
+namic programming.
+    We sketch one such method.
+    For each possible item, as shown in (a), we maintain a bit (indexed by the parameters of the item) that records whether the item has been derived yet.
+    All these bits are initially zero.
+    The algorithm makes a single pass through the possible items, setting the bit for each if it can be derived using any rule in (b) from items whose bits are already set.
+    At the end of this pass it is straightforward to test whether to accept w (see caption).
+    The pass considers the items in increasing order of width, where the width of an item in (a) is defined as max{h, j} &#8212; min{h, j}.
+    Among items of the same width, those of type .L should be considered last.
+    The algorithm requires space proportional to the number of possible items, which is at most n3IVD12.
+    Each of the five rule templates can instantiate its free variables in at most n4p or (for COMPLETE rules) n41VD12 different ways, each of which is tested once and in constant time; so th

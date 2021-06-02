@@ -1,0 +1,7 @@
+
+    We use the same feature models as in the monolingual case, with the exception that we use universal part-of-speech tags for all languages and we remove the capitalization feature when transferring from EN to DE.
+    Capitalization is both a prevalent and highly predictive feature of named-entities in EN, while in DE, capitalization is even more prevalent, but has very low predictive power.
+    Interestingly, while delexicalization has shown to be important for direct transfer of dependency-parsers (McDonald et al., 2011), we noticed in preliminary experiments that it substantially degrades performance for NER.
+    We hypothesize that this is because word features are predictive of common proper names and that these are often translated directly across languages, at least in the case of newswire text.
+    As for the transfer parser, when training the source NER model, we regularize the model more heavily by setting Q = 0.1.
+    Appendix A contains the details of the training, testing, unlabeled and parall

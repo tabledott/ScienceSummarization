@@ -1,0 +1,8 @@
+ow, which can then be used by clustering to perform word sense discrimination (Schu?tze, 1998).
+			In order to learn multiple prototypes, we firstgather the fixed-sized context windows of all occur rences of a word (we use 5 words before and after the word occurrence).
+			Each context is represented by a weighted average of the context words?
+			vectors, where again, we use idf-weighting as the weightingfunction, similar to the document context representation described in Section 2.2.
+			We then use spheri cal k-means to cluster these context representations, which has been shown to model semantic relations well (Dhillon and Modha, 2001).
+			Finally, each wordoccurrence in the corpus is re-labeled to its associated cluster and is used to train the word representa tion for that cluster.Similarity between a pair of words (w,w?) us ing the multi-prototype approach can be computed with or without context, as defined by Reisinger and Mooney (2010b): AvgSimC(w,w?) = 1 K2 k?
+			i=1 k?
+			j=1 p(c, w, i)p(c?, w?, j)d(

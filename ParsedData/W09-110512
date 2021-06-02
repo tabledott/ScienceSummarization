@@ -1,0 +1,9 @@
+ HMMs and other learning approaches.
+    The memory-based learning algorithm was parameterised by using overlap as the similarity metric, gain ratio for feature weighting, using 7 knearest neighbors, and weighting the class vote of neighbors as a function of their inverse linear distance.
+    The SVM was parameterised in the learning phase for classification, cost factor of 1 and biased hyperplane, and it used a linear kernel function.
+    The CRFs classifier used regularization algorithm L2 for training, the hyper-parameter and the cut-off threshold of features were set to 1.
+    An instance represents a pair of a negation signal and a token from the sentence.
+    This means that all tokens in a sentence are paired with all negation signals that occur in the sentence.
+    Negation signals are those that have been classified as such in the previous phase.
+    Only sentences that have negation signals are selected for this phase.
+    We started with a larger, extensive pool of 131 features which encoded inform

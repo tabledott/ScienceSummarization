@@ -1,0 +1,8 @@
+hich links the meaning of terms to their contexts.
+    Models are built by recording the surrounding contexts for each term in a large collection of unstructured text and storing them in a term-context matrix.
+    Methods differ in their definition of a context (e.g., text window or syntactic relations), or by a means to weigh contexts (e.g., frequency, tf-idf, pointwise mutual information), or ultimately in measuring the similarity between two context vectors (e.g., using Euclidean distance, Cosine, Dice).
+    In this paper, we adopt the following methodology for computing term similarity.
+    Our various web crawls, described in Section 6.1, are POStagged using Brill&#8217;s tagger (1995) and chunked using a variant of the Abney chunker (Abney 1991).
+    Terms are NP chunks with some modifiers removed; their contexts (i.e., features) are defined as their rightmost and leftmost stemmed chunks.
+    We weigh each context f using pointwise mutual information (Church and Hanks 1989).
+    Let PMI(w) denote a poin

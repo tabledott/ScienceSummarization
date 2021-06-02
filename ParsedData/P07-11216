@@ -1,0 +1,6 @@
+rincipled mechanism for handling logical variables.
+    In this work, we extend the WASP algorithm by adding a variable-binding mechanism based on &#955;-calculus, which allows for compositional semantics for logical forms.
+    This work is based on an extended version of SCFG, which we call &#955;-SCFG, where each rule has the following form: where &#945; is an NL phrase and &#946; is the MR translation of &#945;.
+    Unlike (1), &#946; is a string of terminals, non-terminals, and logical variables.
+    The variable-binding operator &#955; binds occurrences of the logical variables x1, ... , xk in &#946;, which makes &#955;x1 ... &#955;xk.&#946; a &#955;-function of arity k. When applied to a list of arguments, (xi1, ... , xik), the &#955;function gives &#946;&#963;, where &#963; is a substitution operator, {x1/xi1,..., xk/xik}, that replaces all bound occurrences of xj in &#946; with xij.
+    If any of the arguments xij appear in &#946; as a free variable (i.e. not bound by any &#955;), then those free vari

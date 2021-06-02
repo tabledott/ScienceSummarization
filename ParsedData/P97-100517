@@ -1,0 +1,12 @@
+ 18 units for GENRE).
+    For binary decisions, the simple perceptron fits a logistic model just as LR does.
+    However, it is less prone to overfitting because we train it using three-fold cross-validation.
+    Variables are selected by summing the cross-entropy error over the three validation sets and eliminating the variable that if eliminated results in the lowest cross-entropy error.
+    The elimination cycle is repeated until this summed cross-entropy error starts increasing.
+    Because this selection technique is time-consuming, we only apply it to a subset of the discriminations.
+  
+  
+    Table 1 gives the results of the experiments.
+    For each genre facet, it compares our results using surface cues (both with logistic regression and neural nets) against results using Karlgren and Cutting's structural cues on the one hand (last pair of columns) and against a baseline on the other (first column).
+    Each text in the evaluation suite was tested for each facet.
+    Thus the number 78 for NARRATIVE 

@@ -1,0 +1,5 @@
+the second et, as illustrated below.
+  (The i and j columns give the positions into the English and French sentences, respectively.
+  The column labeled slope indicates the difference between the j values for the current French word and the last previous non-NULL French word.
+  I English j French slope score 1 we 1 nous 1 --0.5 2 took NULL -5.5 3 the NULL -10.5 4 initiative 5 initiative 4 -14.2 5 in NULL -19.2 6 assessing 7 6valuer 2 -21.5 7 and 8 et I -22.0 8 amending 10 modifier 2 -24.2 9 current NULL -29.2 10 legislation NULL -34.2 11 and 13 et 3 -37.3 12 policies 15 politiques 2 -39.6 13 to 22 /t 7 -44.5 14 ensure NULL -49.5 15 that 19 qu -3 -54.1 16 they 20 riles I -54.6 17 reflect NULL -59.6 18 a 23 une 3 --62.7 19 broad NULL -67.7 20 interpretation 24 interprttation 1 -.-68.2 21 of 26 de 2 -70.4 22 the 27 la 1 -70.9 23 charter 28 charte 1 -71.4 24 29 1 -71.9 The matching procedure uses a dynamic programming optimization to find the sequence of j values with the best score.
+  A sequence o f j  values is

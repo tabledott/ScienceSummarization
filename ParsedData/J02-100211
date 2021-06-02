@@ -1,0 +1,10 @@
+ary&#8212;produces a false negative&#8212;it receives k penalties.
+    To see why, suppose S1 and S2 are two segments of length 2k, and the algorithm misses the transition from S1 to S2.
+    When Pk sweeps across S1, if both ends of the probe point to sentences that are inside S1, the two sentences are in the same segment in both the reference and the hypothesis, and no penalty is incurred.
+    When the right end of the probe crosses the reference boundary between S1 and S2, it will start recording nonmatches, since the algorithm assigns the two sentences to the same segment, while the reference does not.
+    This circumstance happens k times, until both ends of the probe point to sentences that are inside S2.
+    (See Figure 2.)
+    This analysis assumes average size segments; variation in segment size is discussed below, but does not have a large effect on this result.
+    An illustration of how the Pk metric handles false positives.
+    Notation is as in Figure 2.
+    Total penalty depends on the distance 

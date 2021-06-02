@@ -1,0 +1,8 @@
+ here, these inputs are the last decision in the derivation, the label or tag of the sub-derivation&#8217;s node top , the tag-word pair for the most recently predicted terminal, and the tag-word pair for top &#8217;s left-corner terminal (the leftmost terminal it dominates).
+    Inputting the last decision is sufficient to provide the SSN with a complete specification of the derivation history.
+    The remaining features were chosen so that the inductive bias would emphasize these pieces of information.
+  
+  
+    Once we have trained the SSN to estimate the parameters of our probability model, we use these estimates to search the space of possible derivations to try to find the most probable derivation.
+    Because we do not make a priori independence assumptions, searching the space of all possible derivations has exponential complexity, so it is important to be able to prune the search space if this computation is to be tractable.
+    The left-corner ordering for derivations allows very severe pruning with

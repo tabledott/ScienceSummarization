@@ -1,0 +1,12 @@
+rce agenda and the target agenda.
+    Initially the source agenda contains an empty sentence and the target agenda is empty.
+    At each processing stage, the decoder reads in a character from the input sentence, combines it with each candidate in the source agenda and puts the generated candidates onto the target agenda.
+    After each character is processed, the items in the target agenda are copied to the source agenda, and then the target agenda is cleaned, so that the newly generated candidates can be combined with the next incoming character to generate new candidates.
+    After the last character is processed, the decoder returns the candidate with the best score in the source agenda.
+    Figure 2 gives the decoding algorithm.
+    For a sentence with length l, there are 2l&#8722;1 different possible segmentations.
+    To guarantee reasonable running speed, the size of the target agenda is limited, keeping only the B best candidates.
+  
+  
+    The feature templates are shown in Table 1.
+    Features 1 a

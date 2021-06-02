@@ -1,0 +1,7 @@
+tion only helps when updating the parameters for a block of features that are occur in many sequences; for SGD, with batches of size one, this parallelization policy is useless.
+    Most existing implementations of CRFs, eg.
+    CRF++ and CRFsgd perform the forwardbackward recursions in the log-domain, which guarantees that numerical over/underflows are avoided no matter the length T(&#65533;) of the sequence.
+    It is however very inefficient from an implementation point of view, due to the repeated calls to the exp() and log() functions.
+    As an alternative way of avoiding numerical problems, our implementation, like crfSuite&#8217;s, resorts to &#8220;scaling&#8221;, a solution commonly used for HMMs.
+    Scaling amounts to normalizing the values of &#945;t and &#946;t to one, making sure to keep track of the cumulated normalization factors so as to compute ZB(x) and the conditional expectations Epo(y|x).
+    Also note that in our implementation, all the computations of exp(x) are vectorized, which prov

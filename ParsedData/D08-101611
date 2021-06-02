@@ -1,0 +1,10 @@
+INK is just an illustrative example.
+    TRIGRAM is a global factor that evaluates the tag sequence T according to a trigram model.
+    It is a product of subfactors, each of which scores a trigram of adjacent tags Ti_2, Ti_1, Ti, possibly also considering the word sequence W (as in CRFs).
+  
+  
+    MacKay (2003, chapters 16 and 26) provides an excellent introduction to belief propagation, a generalization of the forward-backward algorithm that is deeply studied in the graphical models literature (Yedidia et al., 2004, for example).
+    We briefly sketch the method in terms of our parsing task.
+    The basic BP idea is simple.
+    Variable L34 maintains a distribution over values true and false&#8212;a &#8220;belief&#8221;&#8212;that is periodically recalculated based on the current distributions at other variables.8 Readers familiar with Gibbs sampling can regard this as a kind of deterministic approximation.
+    In Gibbs sampling, L34&#8217;s value is periodically resampled based on the current values of ot

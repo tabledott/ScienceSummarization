@@ -1,0 +1,6 @@
+al instance that (1) contains features that solely describe the active mention (i.e., the features shown in the second block of Table 1), and (2) has the highest rank value among competing clusters (i.e., 2) if it is discourse-new and the lowest rank value (i.e., 1) otherwise.
+    The main advantage of jointly learning the two tasks is that it allows the ranking model to evaluate all possible options for an active mention (i.e., whether to resolve it, and if so, which preceding cluster is the best) simultaneously.
+    After training, the resulting cluster ranker processes the mentions in a test text in a left-to-right manner.
+    For each active mention mk, we create test instances for it by pairing it with each of its preceding clusters.
+    To allow for the possibility that mk is discourse-new, we create an additional test instance that contains features that solely describe the active mention (similar to what we did in the training step above).
+    All these test instances are then presented to the ranker.

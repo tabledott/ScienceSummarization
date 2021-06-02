@@ -1,0 +1,7 @@
+ff and Phillips, 2004) to provide semantic class tags, iden- tify Named Entities, and match extraction patterns that correspond to subjective language (Riloff and Wiebe, 2003).
+  Next, OpenNLP1 1.1.0 is used to tok- enize, sentence split, and part-of-speech tag the data, and the Abney stemmer2 is used to stem.
+  In batch mode, OpinionFinder parses the data again, this time to obtain constituency parse trees (Collins, 1997), which are then converted to dependency parse trees (Xia and Palmer, 2001).
+  Currently, this stage is only 1http://opennlp.sourceforge.net/ 2SCOL version 1g available at http://www.vinartus.net/spa/ 34 available for batch mode processing due to the time required for parsing.
+  Finally, a clue-finder is run to identify words and phrases from a large subjective language lexicon.
+  2.3 Subjectivity Analysis The subjectivity analysis has four components.
+  2.3.1 Subjective Sentence Classification The first component is a Naive Bayes classifier that distinguishes between subjective and objectiv

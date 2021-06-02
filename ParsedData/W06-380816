@@ -1,0 +1,10 @@
+ing algorithm.
+    Specifically, we scaled the mutual information values such that the maximum value was one.
+    Then, we used these values as weights for the corresponding words in the word vectors.
+    For words in the movie review data set that did not appear in the snippet data set, we used a default weight of zero (i.e., we excluded them.
+    We experimented with setting the default weight to one, but found this led to inferior performance.)
+    We repeated the experiments described in sections 4.2 and 4.3 with the only difference being that we used the mutual-information weighted word vector similarity instead of PSP whenever a similarity measure was required.
+    We repeated the tuning procedures described in the previous sections.
+    Using this new similarity measure led to the optimal parameters c = 0.1, &#945; = 1.5, k' = 5, and Q = 10.0.
+    The results are reported under &#8216;reg+WV&#8217; and &#8216;SSL+WV,&#8217; respectively.
+    We tested the five algorithms for all four authors using each

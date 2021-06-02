@@ -1,0 +1,7 @@
+   Knight and Marcu (2000) first tackled this problem by presenting a generative noisy-channel model and a discriminative tree-to-tree decision tree model.
+    The noisy-channel model defines the problem as finding the compressed sentence with maximum conditional probability P(y) is the source model, which is a PCFG plus bigram language model.
+    P(x|y) is the channel model, the probability that the long sentence is an expansion of the compressed sentence.
+    To calculate the channel model, both the original and compressed versions of every sentence in the training set are assigned a phrase-structure tree.
+    Given a tree for a long sentence x and compressed sentence y, the channel probability is the product of the probability for each transformation required if the tree for y is to expand to the tree for x.
+    The tree-to-tree decision tree model looks to rewrite the tree for x into a tree for y.
+    The model uses a shift-reduce-drop parsing algorithm that starts with the sequence of words in x and the 

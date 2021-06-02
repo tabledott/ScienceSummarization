@@ -1,0 +1,8 @@
+h respect to q(z; x) in the maximum likelihood update 0 := 0'.
+    To optimize the objective in Equation 3, we can derive a similar and simple procedure.
+    See the appendix for the derivation. where ZX is a normalization constant.
+    The M-step decouples neatly into two independent optimization problems, which lead to single model updates using the expected counts from q(z; x).
+    To compute ZX in the E-step, we must sum the product of two model posteriors over the set of possible zs with nonzero probability under both models.
+    In general, if both posterior distributions over the latent variables z decompose in the same tractable manner, as in the context-free grammar induction work of Klein and Manning (2004), the summation could be carried out efficiently, for example using dynamic programming.
+    In our case, we would have to sum over the set of alignments where each word in English is aligned to at most one word in French and each word in French is aligned to at most one word in English.
+    Unfor

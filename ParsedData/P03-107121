@@ -1,0 +1,7 @@
+or following BZ.
+    We avoided making arbitrary choices of parameters; instead, for any feature F and a set F1, ... , Fn of possible ways to measure the feature (different window sizes, different directions), we picked the FZ that is in isolation the best predictor of topic boundaries (among F1, ... , Fn).
+    Table 4 presents for each feature the analysis mode that is the most useful on the training data.
+    We performed 25-fold cross-validation for evaluating the induced probabilistic classifier, computing the average of Pk and WD on the held-out meetings.
+    Feature selection and decision rule learning is always performed on sets of 24 meetings, while the held-out data is used for testing.
+    Table 5 gives some examples of the type of rules that are learned.
+    The first rule states that if the value for the lexical cohesion (LC) function is low at the current sentence break, there is at least one CUE phrase, there is less than three seconds of silence to the left of the break,10 and a single speaker 

@@ -1,0 +1,12 @@
+; fluency.
+    For example, in the BLEU metric, the overlapping fractions of n-grams with more than one word are considered as a kind of metric for the fluency of the hypothesis.
+    Consider the following simple example:
+  
+  
+    If we use BLEU to evaluate the two sentences, hypothesis 2 has two bigrams a dog and I had which are also found in the reference, and hypothesis 1 has no bigrams in common with the reference.
+    Thus hypothesis 2 will get a higher score than hypothesis 1.
+    The result is obviously incorrect.
+    However, if we evaluate their fluency based on the syntactic similarity with the reference, we will get our desired results.
+    Figure 1 shows syntactic trees for the example sentences, from which we can see that hypothesis 1 has exactly the same syntactic structure with the reference, while hypothesis 2 has a very different one.
+    Thus the evaluation of fluency can be transformed as computing the syntactic similarity of the hypothesis and the references.
+    This paper develops a num

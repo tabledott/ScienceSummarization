@@ -1,0 +1,8 @@
+o extend this decision rule for the word penalty (WP) feature function, we simply obtain an additional term AWP for each word.
+    The class-based 5-gram language model (CLM) can be included like the trigram language model.
+    Note that all these feature functions decompose nicely into contributions for each produced target language word or for each covered source language word.
+    This makes it possible to develop an efficient dynamic programming search algorithm.
+    Not all feature functions have this nice property: For the conventional lexicon feature function (LEX), we obtain an additional term in our decision rule which depends on the full sentence.
+    Therefore, this feature function will not be integrated in the dynamic programming search but instead will be used to rerank the set of candidate translations produced by the search.
+    We have to structure the search space in a suitable way to search efficiently.
+    In our search algorithm, we generate search hypotheses that correspond to prefixes o

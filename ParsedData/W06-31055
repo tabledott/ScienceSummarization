@@ -1,0 +1,6 @@
+mework assumed during phrase-based decoding.
+    The generative process we modeled produces a phrase-aligned English sentence from a French sentence where the former is a translation of the latter.
+    Note that this generative process is opposite to the translation direction of the larger system because of the standard noisy-channel decomposition.
+    The learned parameters from this model will be used to translate sentences from English to French.
+    The generative process modeled has four steps:2 The corresponding probabilistic model for this generative process is: where P(e, &#175;fi , &#175;ei, a|f) factors into a segmentation model &#963;, a translation model &#966; and a distortion model d. The parameters for each component of this model are estimated differently: ing function based on absolute sentence position akin to the one used in IBM model 3.
+    While similar to the joint model in Marcu and Wong (2002), our model takes a conditional form compatible with the statistical assumptions used by the P

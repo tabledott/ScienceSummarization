@@ -1,0 +1,9 @@
+lossary adheres to a single narrow spelling convention.
+    We do not, however, generate all katakana sequences with this model; for example, we do not output strings that begin with a subscripted vowel katakana.
+    So this model also serves to filter out some ill-formed katakana sequences, possibly proposed by optical character recognition.
+    Perhaps uncharitably, we can view optical character recognition (OCR) as a device that garbles perfectly good katakana sequences.
+    Typical confusions made by our commercial OCR system include t: for 71. for , 7 for 7, and 7 for I.
+    To generate pre-OCR text, we collected 19,500 characters worth of katakana words, stored them in a file, and printed them out.
+    To generate post-OCR text, we OCR'd the printouts.
+    We then ran the EM algorithm to determine symbol-mapping (&amp;quot;garbling&amp;quot;) probabilities.
+    Here is part of that table: This model outputs a superset of the 81 katakana symbols, including spurious quote marks, alphabetic symbols, and th

@@ -1,0 +1,6 @@
+vantages.
+			First, the number elements of each set is likely to be smaller then in the former case.
+			Second, the computation becomes simpler, because we now only need to check to see whether the patterns exactly overlap with a starting offset of one, rather than checking within a window of locations.We can improve efficiency even further if we con sider cases where the same substring occurs morethan once within the same sentence, or even in mul tiple sentences.
+			If the computation required to look up a phrase is expensive, we would like to performthe lookup only once.
+			This requires some mecha nism for caching.
+			Depending on the situation, we might want to cache only certain subsets of phrases, based on their frequency or difficulty to compute.We would also like the flexibility to combine on the-fly lookups with a partially precomputed phrase table, as in the online/offline mixture of Zhang and Vogel (2005).We need a data structure that provides this flex ibility, in addition to providing fast access

@@ -1,0 +1,8 @@
+p;quot; can give rise to cyclic completions. where q = 1 - p. Presented with the input a (the only string the grammar generates), after one cycle of prediction, the Earley chart contains the following states.
+    The 1)-1 factors are a result of the left-corner sum 1 &#177; q q2 + &#8226; &#8226; &#8226; = (1 - q) 1.
+    After scanning 0S -&gt; .a, completion without truncation would enter an infinite loop.
+    First oT .S is completed, yielding a complete state oT -4 S., which allows 0S -&gt; .T to be completed, leading to another complete state for S. etc.
+    The nonprobabilistic Earley parser can just stop here, but as in prediction, this would lead to truncated probabilities.
+    The sum of probabilities that needs to be computed to arrive at the correct result contains infinitely many terms, one for each possible loop through the T S production.
+    Each such loop adds a factor of q to the forward and inner probabilities.
+    The summations for all completed states turn out as The approach taken here to

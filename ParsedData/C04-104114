@@ -1,0 +1,9 @@
+stimation.
+			Whilst training theparser, the supertagger can be thought of as supply ing a number of plausible but incorrect categoriesfor each word; these, together with the correct cat egories, determine the parts of the parse space that are used in the estimation process.
+			We would like to keep the packed charts as small as possible, but not lose accuracy in the resulting parser.
+			Section 4.2discusses the use of various settings on the supertag ger.
+			The next section describes how normal-form constraints can further reduce the derivation space.
+			4.1 Normal-Form Constraints.
+			As well as the supertagger, we use two additional strategies for reducing the derivation space.
+			Thefirst, following Hockenmaier (2003), is to only al low categories to combine if the combination hasbeen seen in sections 2-21 of CCGbank.
+			For exam ple, NP/NP could combine with NP/NP accordingto CCG?s combinatory rules (by forward composi tion), but since this particular combination does not appear in CCGbank the parser do

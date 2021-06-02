@@ -1,0 +1,7 @@
+tion over unar ies versus binaries), ?E = 1 (uniform distribution over terminal words), ?u(s) = ?b(s) = 1N(s) , whereN(s) is the number of different unary (binary) righthand sides of rules with left-hand side s in the treebank grammar.
+			The two most important hyperpa rameters are ?U and ?B , which govern the sparsity of the right-hand side for unary and binary rules.
+			We set ?U = ?B although more performance could probably be gained by tuning these individually.
+			It turns out that there is not a single ?B that works for all truncation levels, as shown in Table 1.
+			If the top-level distribution ? is uniform, the value of ?B corresponding to a uniform prior over pairs ofchildren subsymbols is K2.
+			Interestingly, the opti mal ?B appears to be superlinear but subquadratic 695 truncation K 2 4 8 12 16 20 best ?B 16 12 20 28 48 80 uniform ?B 4 16 64 144 256 400 Table 1: For each truncation level, we report the ?B that yielded the highest F1 score on the development set.
+			K PCFG PCFG (smoothed) HDP-PCFG 

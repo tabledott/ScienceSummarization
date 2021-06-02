@@ -1,0 +1,6 @@
+ordering is problematic in phrase-based SMT.
+    For example, the distancebased reordering model (Koehn et al., 2003) allows a decoder to translate in non-monotonous order, under the constraint that the distance between two phrases translated consecutively does not exceed a limit known as distortion limit.
+    In theory the distortion limit can be assigned a very large value so that all possible reorderings are allowed, yet in practise it is observed that too high a distortion limit not only harms efficiency but also translation performance (Koehn et al., 2005).
+    In our own experiment setting, the best distortion limit for ChineseEnglish translation is 4.
+    However, some ideal translations exhibit reorderings longer than such distortion limit.
+    Consider the sentence pair in NIST MT2005 test set shown in figure 1(a): after translating the word &#8220;&#8226;V/mend&#8221;, the decoder should &#8216;jump&#8217; across six words and translate the last phrase &#8220;)&#65533; ,* R /fissures in the relation

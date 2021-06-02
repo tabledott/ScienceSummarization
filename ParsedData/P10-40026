@@ -1,0 +1,7 @@
+ing formalisms that is based on weighted logic programming (Lopez, 2009).
+    In this view, translation (or tagging) deductions have the structure of a context-free forest, or directed hypergraph, where edges have a single head and 0 or more tail nodes (Nederhof, 2003).
+    Once a forest has been constructed representing the possible translations, general inference algorithms can be applied.
+    In cdec&#8217;s translation hypergraph, a node represents a contiguous sequence of target language words.
+    For SCFG models and sequential tagging models, a node also corresponds to a source span and non-terminal type, but for word-based and phrase-based models, the relationship to the source string (or lattice) may be more complicated.
+    In a phrase-based translation hypergraph, the node will correspond to a source coverage vector (Koehn et al., 2003).
+    In word-based models, a single node may derive multiple different source language coverages since word based models impose no requirements on covering all word

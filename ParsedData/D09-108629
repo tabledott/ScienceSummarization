@@ -1,0 +1,8 @@
+cy on held-out test data.
+    We compare performance to simple attach-right and attach left baselines (Table 3).
+    For mostly headfinal German, the &#8220;modify next&#8221; baseline is better; for mostly head-initial Spanish, &#8220;modify previous&#8221; wins.
+    Even after several hundred iterations, performance was slightly, but not significantly better than the baseline for German.
+    EM training did not beat the baseline for Spanish.6 The simplest approach to using the high-precision one-to-one word alignments is labeled &#8220;hard projection&#8221; in the table.
+    We filtered the training corpus to find sentences where enough links were projected to completely determine a target language tree.
+    Of course, we needed to filter more than 1000 sentences of bitext to output 1000 training sentences in this way.
+    We simply perform supervised training with this subset, which is still quite noisy (&#167;4), and performance quickly 6While these results are worse than those obtained previously for th

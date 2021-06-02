@@ -1,0 +1,8 @@
+th with and without vowels, and the edit-distance between the source and target words as a realvalued feature.
+    We also used indicator features to test for matching prefixes and suffixes of length three.
+    As stated earlier, the Dice translation score often erroneously rewards alignments with common words.
+    In order to address this problem, we include the absolute difference in word length as a real-valued feature and an indicator feature testing whether both words are shorter than 4 characters.
+    Together these features allow the model to disprefer alignments between words with very different lengths &#8211; i.e. aligning rare (long) words with frequent (short) determiners, verbs etc.
+    POS tags Part-of-speech tags are an effective method for addressing the sparsity of the lexical features.
+    Observe in Figure 2 that the nounadjective pair Canadian experts aligns with the adjective-noun pair sp&#180;ecialistes canadiens: the alignment exactly matches the parts-of-speech.
+    Access to the words

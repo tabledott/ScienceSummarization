@@ -1,0 +1,12 @@
+, B), we could then choose A over B, or vice-versa.
+    An alternative to this is to forget / and simply score A and B on the basis of fluency.
+    This essentially assumes that our generator produces valid mappings from I, but may be unsure as to which is the correct rendition.
+    At this point, we can make another approximation&#8212; modeling fluency as likelihood.
+    In other words, how often have we seen A and B in the past?
+    If A has occurred fifty times and B none at all, then we choose A.
+    But if A and B are long sentences, then probably we have seen neither.
+    In that case, further approximations are required.
+    For example, does A contain frequent three-word sequences?
+    Does B?
+    Following this reasoning, we are led into statistical language modeling.
+    We built a language model 4See also (Harbusch et al., 1994) for a thorough discussion of defaulting in NLG systems. for the English language by estimating bigram and trigram probabilities from a large collection of 46 million words

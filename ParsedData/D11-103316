@@ -1,0 +1,8 @@
+g less than 1% of the available training data.
+    The results in Table 2 show that all three methods (Cross-Entropy, Moore-Lewis, bilingual MooreLewis) can extract subsets of the general-domain corpus that are useful for the purposes of statistical machine translation.
+    It is tempting to describe these as methods for finding in-domain data hidden in a general-domain corpus.
+    Alas, this does not seem to be the case.
+    We trained a baseline language model on the indomain data and used it to compute the perplexity of the same (in-domain) held-out dev set used to tune the translation models.
+    We extracted the top N sentences using each ranking method, varying N from 10k to 200k, and then trained language models on these subcorpora.
+    These were then used to also compute the perplexity of the same held-out dev set, shown below in Figure 1.
+    Top-ranked general-domain sentences (in k) The perplexity of the dev set according to LMs trained on the top-ranked sentences varied from 77 to 120, depending 

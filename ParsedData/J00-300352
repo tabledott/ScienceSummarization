@@ -1,0 +1,6 @@
+that the DA type U, is generally not known (except maybe in applications where the user interface can be engineered to allow only one kind of DA for a given utterance).
+    Therefore, we need to infer the likely DA types for each utterance, using available evidence E from the entire conversation.
+    This leads to the following formulation: The last step in Equation 12 is justified because, as shown in Figures 1 and 4, the evidence E (acoustics, prosody, words) pertaining to utterances other than i can affect the current utterance only through its DA type U,.
+    We call this the mixture-of-posteriors approach, because it amounts to a mixture of the posterior distributions obtained from DA-specific speech recognizers (Equation 11), using the DA posteriors as weights.
+    This approach is quite expensive, however, as it requires multiple full recognizer or rescoring passes of the input, one for each DA type.
+    A more efficient, though mathematically less accurate, solution can be obtained by combining guesse

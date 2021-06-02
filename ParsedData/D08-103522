@@ -1,0 +1,7 @@
+ions to the segmentation.
+    More formally, let d(z &#8212;* z') &gt; 0 equal the distance that the selected segmentation point is moved when we transform the segmentation from z to z'.
+    We can write the proposal distribution q(z'  |z) a c(z &#8212;* z')d(z &#8212;* z')A, where A &lt; 0 sets the rate of exponential decay and c is an indicator function enforcing the constraint that the moves do not reach or cross existing segmentation points.6 We can also incorporate declarative linguistic knowledge by biasing the proposal distribution in favor of moves that place boundaries near known cue phrase markers.
+    We multiply the unnormalized chance of proposing a move to location z &#8212;* z' by a term equal to one plus the number of candidate cue phrases in the segment-initial sentences in the new configuration z', written num-cue(z').
+    Formally, qling(z'  |z') a (1 + num-cue(z'))q(z'  |z).
+    We use a list of cue phrases identified by Hirschberg and Litman (1993).
+    We evaluate our model with both the

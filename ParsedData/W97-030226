@@ -1,0 +1,11 @@
+s parameter in the correct direction to move towards ET (and possibly overshoot it).
+    A simplified version of the algorithm is given in Figure 5.
+    Figure 6 shows graphically how the algorithm works.
+    There are two cases.
+    In the first case, if we are currently above the goal entropy, then we loosen our thresholds, leading to slower speed and lower entropy.
+    We then wish to get as much entropy reduction as possible per time increase; that is, we want the steepest slope possible.
+    On the other hand, if we are trying to increase our entropy, we want as much time decrease as possible per entropy increase; that is, we want the flattest slope possible.
+    Because of this difference, we need to compute different ratios depending on which side of the goal we are on.
+    There are several subtleties when thresholds are set very tightly.
+    When we fail to parse a sentence because the thresholds are too tight, we retry the parse with lower thresholds.
+    This can lead to conditions that are the opp

@@ -1,0 +1,9 @@
+s in the synchronous grammar.
+    For non-SCFG translation models, there are two kinds of edges.
+    The first have zero tail nodes (i.e., an arity of 0), and correspond to word or phrase translation pairs (with all translation options existing on edges deriving the same head node), or glue rules that glue phrases together.
+    For tagging, word-based, and phrase-based models, these are strictly arranged in a monotone, leftbranching structure.
+  
+  
+    The design of cdec separates the creation of a translation forest from its rescoring with a language models or similar models.3 Since the structure of the unified search space is context free (&#167;3), we use the logic for language model rescoring described by Chiang (2007), although any weighted intersection algorithm can be applied.
+    The rescoring models need not be explicitly represented as FSTs&#8212;the state space can be inferred.
+    Although intersection using the Chiang algorithm runs in polynomial time and space, the resulting rescored forest may

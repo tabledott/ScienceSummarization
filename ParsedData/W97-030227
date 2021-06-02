@@ -1,0 +1,8 @@
+osite of what we expect; for instance, loosening thresholds may lead to faster parsing, because we don't need to parse the sentence, fail, and then retry with looser thresholds.
+    The full algorithm contains additional checks that our thresholding change had the effect we expected (either increased time for decreased entropy or vice versa).
+    If we get either a change in the wrong direction, or a change that makes everything worse, then we retry with the inverse change, hoping that that will have the intended effect.
+    If we get a change that makes both time and entropy better, then we make that change regardless of the ratio.
+    Also, we need to do checks that the denominator when computing Ratio isn't too small.
+    If it is very small, then our estimate may be unreliable, and we don't consider changing this parameter.
+    Finally, the actual algorithm we used also contained a simple &amp;quot;annealing schedule&amp;quot;, in which we slowly decreased the factor by which we changed thresholds.
+    Th

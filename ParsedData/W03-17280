@@ -1,0 +1,9 @@
+
+  Chinese Word Segmentation As LMR Tagging
+  
+    PK F-score &#10099; c the set by the MEMM tagger that scans the input from left to right and the last column is the results after the Transformation- Based Learner is applied.
+    The results show that using Transformation-Based learning only give rise to slight improvements.
+    It seems that the bidirectional approach does not help much for the LMR tagging.
+    Therefore, we only submitted the results of our leftto-right MEMM tagger, retrained on the entire training sets, as our official results.
+    F-score MEMM MEMM+TBL AS 0.9595 0.9603 HK 0.9143 N/A PK 0.9391 0.9398 Table 2: F-score on development data The results on the official test data is similar to we have got on our except that the F-score on the Beijing Univ. corpus is over 2 lower in absolute accuracy than what we expected.
+    The reason is that in the training data of Beijing University corpus, all the numbers are encoded in GBK, while in the test data many numbers are encoded in ASCII, which a

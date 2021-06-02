@@ -1,0 +1,6 @@
+ Table 1.
+    Given the mention m and the top-ranked disambiguation t, the linker attempts to decide whether t is indeed the correct disambiguation of m. The linker includes the same features as the ranker, plus additional features we expect to be particularly relevant to the task.
+    We include the confidence of the ranker in t with respect to second-best disambiguation t&#8242;, intended to estimate whether the ranker may have made a mistake.
+    We also include several properties of the mention m: the entropy of the distribution P(tlm), the percent of Wikipedia titles in which m appears hyperlinked versus the percent of times m appears as plain text, whether m was detected by NER as a named entity, and a Good-Turing estimate of how likely m is to be out-of-Wikipedia concept based on the counts in P(t1m).
+    We train the coefficients for the ranker features using a linear Ranking Support Vector Machine, using training data gathered from Wikipedia.
+    Wikipedia links are considered gold-standard links for

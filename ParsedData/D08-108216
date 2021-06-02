@@ -1,0 +1,9 @@
+tations for dynamic programming, a naive implementation of the inference algorithm will still require O(n6m) time for 1 EM iteration, where n and m are the length of the NL sentence and the size of the MR structure respectively.
+    This is not very practical as in one of the corpora we look at, n and m can be up to 45 and 20 respectively.
+    In this section, we develop an efficient dynamic programming algorithm that enables the inference to run in O(n3m) time.
+    The idea is as follows.
+    Instead of treating each possible hybrid sequence as a separate rule, we efficiently aggregate the already computed probability scores for hybrid sequences that share identical hybrid patterns.
+    Such aggregated scores can then be used for subsequent computations.
+    By doing this, we can effectively avoid a large amount of redundant computations.
+    The algorithm supports both unigram and bigram context assumptions.
+    For clarity and ease of presentation, we primarily make the unigram assumption throughout our di

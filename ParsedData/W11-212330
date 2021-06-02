@@ -1,0 +1,9 @@
+ cost due to storing state in each hypothesis, though this is minimal compared with the size of the model itself.
+    The TRIE model continues to use the least memory of ing (-P) with MAP POPULATE, the default.
+    IRST is not threadsafe.
+    Time for Moses itself to load, including loading the language model and phrase table, is included.
+    Along with locking and background kernel operations such as prefaulting, this explains why wall time is not one-eighth that of the single-threaded case. aLossy compression with the same weights. bLossy compression with retuned weights. the non-lossy options.
+    For RandLM and IRSTLM, the effect of caching can be seen on speed and memory usage.
+    This is most severe with RandLM in the multi-threaded case, where each thread keeps a separate cache, exceeding the original model size.
+    As noted for the perplexity task, we do not expect cache to grow substantially with model size, so RandLM remains a low-memory option.
+    Caching for IRSTLM is smaller at 0.09 GB reside

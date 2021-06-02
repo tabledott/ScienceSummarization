@@ -1,0 +1,10 @@
+han f1 and f0.
+    These two requirements are related to grammar refinement by annotation (Johnson, 1998), where annotations must be bounded and monotonic: for example, one cannot refine a grammar by only remembering the grandparent but not the parent symbol.
+    The difference here is that the annotations are not vertical ((grand-)parent), but rather horizontal (left context).
+    For instance, a context-free rule A &#8212;* B C would become DA &#8212;* DB BC for some D if there exists a rule E &#8212;* &#945;DAQ.
+    This resembles the reduce step in Fig.
+    3.
+    The very high-level idea of the proof is that boundedness is crucial for polynomial-time, while monotonicity is used for the optimal substructure property required by the correctness of DP.
+    Though the DP algorithm runs in polynomialtime, in practice the complexity is still too high, esp. with a rich feature set like the one in Table 1.
+    So we apply the same beam search idea from Sec.
+    2.3, where each step can accommodate only the best 

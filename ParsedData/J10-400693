@@ -1,0 +1,7 @@
+gren (2005).
+    Smoothing consistently improved performance, and we only report the relevant results for the smoothed versions of the models (including our implementation of LRA, to be discussed next).
+    We reimplemented Turney&#8217;s Latent Relational Analysis (LRA) model, training it on our source corpus (LRA is trained separately for each test set, because it relies on a given list of word pairs to find the patterns that link them).
+    We chose the parameter values of Turney&#8217;s main model (his &#8220;baseline LRA system&#8221;).
+    In short (see Turney&#8217;s article for details), for a given set of target pairs we count all the patterns that connect them, in either order, in the corpus.
+    Patterns are sequences of one to three words occurring between the targets, with all, none, or any subset of the elements replaced by wildcards (with the, with *, * the, * *).
+    Only the top 4,000 most frequent patterns are preserved, and a target-pairby-pattern matrix is constructed (with 8,000 dimension

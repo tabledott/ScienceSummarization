@@ -1,0 +1,8 @@
+known, and we have simply extended them from specific parsers (described in Section 7) to the general case, or from one semiring to another.
+    Notice in this section the wide variety of different algorithms, one for each semiring, and some of them fairly complicated.
+    In a conventional system, these algorithms are interweaved with the parsing algorithm, conflating computation of infinite sums with parsing.
+    The result is algorithms that are both harder to understand, and less portable to other semirings.
+    We first examine the simplest case, the Boolean semiring.
+    Notice that whenever a particular item has value TRUE at generation g, it must also have value TRUE at generation g+1, since if the item can be derived in at most g generations then it can certainly be derived in at most g +1 generations.
+    Thus, since the number of TRUE valued items is nondecreasing, and is at most IBI, eventually the values of all items must not change from one generation to the next.
+    Therefore, for the Boolean 

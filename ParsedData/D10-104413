@@ -1,0 +1,9 @@
+ 0) to obtain a MAP combination.
+    We model po(s|t) using a MAP criterion over weighted phrase-pair counts: and from the similarity to (5), assuming y = 0, we see that w&#955;(s, t) can be interpreted as approximating pf(s, t)/po(s, t).
+    The logistic function, whose outputs are in [0, 1], forces pp(s, t) &lt;_ po(s, t).
+    This is not unreasonable given the application to phrase pairs from OUT, but it suggests that an interesting alternative might be to use a plain log-linear weighting function exp(Ei Aifi(s, t)), with outputs in [0, oo].
+    We have not yet tried this.
+    An alternate approximation to (8) would be to let w,\(s, t) directly approximate p&#710;I(s, t).
+    With the additional assumption that (s, t) can be restricted to the support of co(s, t), this is equivalent to a &#8220;flat&#8221; alternative to (6) in which each non-zero co(s, t) is set to one.
+    This variant is tested in the experiments below.
+    A final alternate approach would be to combine weighted joint frequencies rather 

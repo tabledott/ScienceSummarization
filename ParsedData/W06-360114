@@ -1,0 +1,10 @@
+relevant features.
+    Note that positive A prefers longer translations.
+    We use a standard trigram model for Pr(c).
+  
+  
+    We first present a linear-time algorithm for searching the best derivation under the direct model, and then extend it to the log-linear case by a new variant of k-best parsing.
+    Since our probability model is not based on the noisy channel, we do not call our search module a &#8220;decoder&#8221; as in most statistical MT work.
+    Instead, readers who speak English but not Chinese can view it as an &#8220;encoder&#8221; (or encryptor), which corresponds exactly to our direct model.
+    Given a fixed parse-tree T*, we are to search for the best derivation with the highest probability.
+    This can be done by a simple top-down traversal (or depth-first search) from the root of T*: at each node q in T*, try each possible rule r whose Englishside pattern t(r) matches the subtree T*&#951; rooted at q, and recursively visit each descendant node qi in T*&#951; that corresponds to a va

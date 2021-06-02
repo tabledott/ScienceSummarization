@@ -1,0 +1,8 @@
+these is essentially beam thresholding for each rule P R if nonterminal L in left cell if nonterminal R in right cell add P to parent cell; Algorithm One for each nonterminal L in left cell for each&#8226;nonterminal R in right cell for each rule P L R add P to parent cell; without a prior.
+    In the second technique, there is a constant probability threshold.
+    Any nodes with a probability below this threshold are pruned.
+    If the parse fails, parsing is restarted with the constant lowered.
+    We attempted to duplicate this technique, but achieved only negligible performance improvements.
+    Collins (personal communication) reports a 38% speedup when this technique is combined with loose beam thresholding, compared to loose beam thresholding alone.
+    Perhaps our lack of success is due to differences between our grammars, which are fairly different formalisms.
+    When Collins began using a formalism somewhat closer to ours, he needed to change his beam thresholding to take into account the prior, so

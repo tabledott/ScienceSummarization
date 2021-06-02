@@ -1,0 +1,11 @@
+ along the lines of (Barbu and Mitkov, 2001) remains the best way to isolate areas for system improvement.
+    Our pronoun resolution system is part of a larger information retrieval project where resolution accuracy is not necessarily the most pertinent measure of classifier performance.
+    More than one candidate can be useful in ambiguous cases, and not every resolution need be used.
+    Since the SVM ranks antecedent candidates, we can test this ranking by selecting more than the top candidate (Topn) and evaluating coverage of the true antecedents.
+    We can also resolve only those instances where the most likely candidate is above a certain distance from the SVM threshold.
+    Varying this distance varies the precision-recall (PR) of the overall resolution.
+    A representative PR curve for the Top-n classifiers is provided (Figure 2).
+    The corresponding information retrieval performance can now be evaluated along the Top-n / PR configurations.
+  
+  
+    We have introduced a novel feature for pronou

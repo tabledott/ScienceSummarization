@@ -1,0 +1,11 @@
+ higher than its constituents.
+    The basic idea of boosting is to give more weights to misclassified training examples, forcing the new classifier to concentrate on these hard-to-classify examples.
+    A test example is classified by a weighted vote of all trained classifiers.
+    We use the decision stump (decision tree with only the root node) as the weak learner in AdaBoost.
+    WEKA implements AdaBoost.M1.
+    We used 100 iterations in AdaBoost as it gives higher accuracy than the default number of iterations in WEKA (10).
+    The Naive Bayes classifier (Duda and Hart, 1973) assumes the features are independent given the class.
+    During classification, it chooses the class with the highest posterior probability.
+    The default setting uses Laplace (&#8220;add one&#8221;) smoothing.
+    The decision tree algorithm (Quinlan, 1993) partitions the training examples using the feature with the highest information gain.
+    It repeats this process recursively for each partition until all examples in each pa

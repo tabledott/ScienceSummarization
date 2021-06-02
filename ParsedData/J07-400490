@@ -1,0 +1,9 @@
+accuracy nor coverage.
+    Neither of these constraints guarantee a normal-form derivation, but they are both effective at reducing the size of the charts, which can greatly increase parser speed (Clark and Curran 2004a).
+    The constraints are also useful for training.
+    Section 10 shows that having a less restrictive setting on the supertagger, when creating charts for discriminative training, can lead to more accurate models.
+    However, the optimal setting on the supertagger for training purposes can only be used when the constraints are applied, because otherwise the memory requirements are prohibitive.
+    Following Steedman (2000), we place the following constraint on backward crossed composition (for all models): The Y category in (7) cannot be an N or NP category.
+    We also place a similar constraint on backward composition.
+    Both constraints reduce the size of the charts considerably with no impact on coverage or accuracy.
+    Type-raising is performed by the parser for the categories NP, P

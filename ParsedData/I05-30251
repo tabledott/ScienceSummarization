@@ -1,0 +1,5 @@
+uilt is similar to the maximum entropy word segmenter we em- ployed in our previous work (Ng and Low, 2004).
+  Our word segmenter uses a maximum entropy framework (Ratnaparkhi, 1998; Xue and Shen, 2003) and is trained on manually segmented sen- tences.
+  It classifies each Chinese character given the features derived from its surrounding context.
+  Each Chinese character can be assigned one of four possible boundary tags: s for a character that occurs as a single-character word, b for a charac- ter that begins a multi-character (i.e., two or more characters) word, e for a character that ends a multi-character word, and m for a character that is neither the first nor last in a multi-character word.
+  Our implementation used the opennlp maximum entropy package v2.1.0 from sourceforge.1 1.1 Basic Features The basic features of our word segmenter are similar to our previous work (Ng and Low, 2004): (a) Cn(n = ?2,?1, 0, 1, 2) (b) CnCn+1(n = ?2,?1, 0, 1) (c) C?1C1 (d) Pu(C0) (e) T (C?2)T (C?1)T (C0)T (C1)T (C2) In 

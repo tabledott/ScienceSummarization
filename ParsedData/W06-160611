@@ -1,0 +1,6 @@
+omposed model 1, the tree in Figure 2 can be produced, for example, by the following derivation: r15(r9(r7), r14(r12(r5), r12(rs))).
+    In many instances, the tuples (7r, F, A) in our training corpus exhibit alignment patterns that can be easily handled within a phrase-based SMT framework, but that become problematic in the SPMT models discussed until now.
+    Consider, for example, the (7r, F, A) tuple fragment in Figure 3.
+    When using a phrase-based translation model, one can easily extract the phrase pair (THE MUTUAL; the mutual) and use it during the phrase-based model estimation phrase and in decoding.
+    However, within the xRS transducer framework that we use, it is impossible to extract an equivalent syntactified phrase translation rule that subsumes the same phrase pair because valid xRS translation rules cannot be multiheaded.
+    When faced with this constraint, one has several options: Our SPMT Model 2 adopts the third option by rewriting on the fly the English parse tree for each foreign/sou

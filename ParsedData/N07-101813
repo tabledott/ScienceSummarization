@@ -1,0 +1,9 @@
+)
+			= pS,0,n. The second step of the sampling algorithm uses the function SAMPLE, which returns a sample from PG(t|w, ?) given the PCFG (G, ?) and the insidetable pA,i,k. SAMPLE takes as arguments a non terminal A ? N and a pair of string positions 0 ? i &lt; k ? n and returns a tree drawn from PGA(t|wi,k, ?).
+			It functions in a top-down fashion, selecting the production A ? BC to expand the A, and then recursively calling itself to expand B and C respectively.
+			function SAMPLE(A, i, k) : if k ? i = 1 then return TREE(A,wk) (j,B,C) = MULTI(A, i, k) return TREE(A, SAMPLE(B, i, j), SAMPLE(C, j, k))In this pseudo-code, TREE is a function that con structs unary or binary tree nodes respectively, and 142 MULTI is a function that produces samples from a multinomial distribution over the possible ?split?
+			positions j and nonterminal children B and C , where: P(j,B,C) = ?A?BC PGB (wi,j|?)
+			PGC (wj,k|?)PGA(wi,k|?)
+	
+	
+			The Gibbs sampler described in Section 3 hasthe disadvantage that each sample of ? re qui

@@ -1,0 +1,8 @@
+ noun plant.
+    In addition to the named-entity string (Maury Cooper or Georgia), a contextual predictor was also extracted.
+    In the appositive case, the contextual predictor was the head of the modifying appositive (president in the Maury Cooper example); in the second case, the contextual predictor was the preposition together with the noun it modifies (plant_in in the Georgia example).
+    From here on we will refer to the named-entity string itself as the spelling of the entity, and the contextual predicate as the context.
+    Having found (spelling, context) pairs in the parsed data, a number of features are extracted.
+    The features are used to represent each example for the learning algorithm.
+    In principle a feature could be an arbitrary predicate of the (spelling, context) pair; for reasons that will become clear, features are limited to querying either the spelling or context alone.
+    The following features were used: full-string=x The full string (e.g., for Maury Cooper, full- s tring=Ma

@@ -1,0 +1,9 @@
+ntence pairs, containing 64.1 million English words and 56.9 million Chinese words.
+    The English was tokenized and case-normalized; the Chinese was tokenized via a maximum-entropy model (Fung et al. 2004).
+    Phrase translations were extracted via the growdiag-final heuristic.
+    The language model is a 6-gram model trained with Kneser-Ney smoothing using the SRI language modeling toolkit (Stolcke 2002).
+    The test set of Wall Street Journal newswire sentences was randomly extracted from the Chinese-English Bilingual Propbank.
+    Although we did not make use of the Propbank annotations, this would potentially allow other types of analyses in the future.
+    The phrase-based SMT model used for the first pass achieves a BLEU score of 42.99, establishing a fairly strong baseline to begin with.
+    In comparison, the automatically errorcorrected translations that are output by the second pass achieve a BLEU score of 43.51.
+    This represents approximately half a point improvement over the strong baseline

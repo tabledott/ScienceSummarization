@@ -1,0 +1,9 @@
+ng algorithm that takes a training set of (xi, zi) pairs as input, and returns a weighted CCG (i.e., a pair (w,?)) as its output.The algorithm is online, in that it visits each example in turn, and updates both w and ? if neces sary.
+			In Step 1 on each example, the input xi isparsed.
+			If it is parsed correctly, the algorithm im mediately moves to the next example.
+			In Step 2,the algorithm temporarily introduces all lexical en tries seen in GENLEX(xi, zi), and finds the highest scoring parse that leads to the correct semantics zi.
+			A small subset of GENLEX(xi, zi)?namely, only those lexical entries that are contained in the highest scoring parse?are added to ?.
+			In Step 3, a simple perceptron update (Collins, 2002) is performed.
+			The hypothesis is parsed again with the new lexicon, andan update to the parameters w is made if the result ing parse does not have the correct logical form.
+			This algorithm differs from the approach in ZC05in a couple of important respects.
+			First, the ZC05 al gorithm

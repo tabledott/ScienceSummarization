@@ -1,0 +1,12 @@
+
+    It makes sense then to incorporate the local model into our final score.
+    Our final score is given by: where &#945; is a tunable parameter 2 for how much influence the local score has in the final score.
+    Such interpolation with a score from a first-pass model was also used for parse re-ranking in (Collins, 2000).
+    Given this score, at test time we choose among the top N local assignments L1, ... , LN according to: arg max &#945; log P`SRL(L|t, v) + log PrSRL(L|t, v) LE{L1,...,LN}
+  
+  
+    For our experiments we used the February 2004 release of PropBank.
+    3 As is standard, we used the annotations from sections 02&#8211;21 for training, 24 for development, and 23 for testing.
+    As is done in some previous work on semantic role labeling, we discard the relatively infrequent discontinuous arguments from both the training and test sets.
+    In addition to reporting the standard results on individual argument F-Measure, we also report Frame Accuracy (Acc.
+    ), the fraction of sentences for w

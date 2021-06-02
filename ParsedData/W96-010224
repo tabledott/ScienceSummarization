@@ -1,0 +1,8 @@
+ We did 10-fold cross-validation experiments for several sizes of datasets (in steps of 100,000 memory items), revealing the learning curve in Figure 4.
+    Training set size is on the X-axis, generalization performance as measured in a 10-fold cross-validation experiment is on the Y-axis. the 'error' range indicate averages plus and minus one standard deviation on each 10-fold cross-validation experiment.'
+    Already at small data set sizes, performance is relatively high.
+    With increasingly larger data sets, the performance becomes more stable (witness the error ranges).
+    It should be noted that in this experiment, we assumed correctly disambiguated tags in the left context.
+    In practice, when using our tagger, this is of course not the case because the disambiguated tags in the left context of the current word to be tagged are the result of a previous decision of the tagger, which may be a mistake.
+    To test the influence of this effect we performed a third experiment.
+    We performed the comp

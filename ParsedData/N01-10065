@@ -1,0 +1,5 @@
+wo processes are performed multiple times during the update process, and the modification results in a significant reduction in running time.
+    The disadvantage of this method consists in the system having an unrealistically high memory requirement.
+    For example, a transformation-based text chunker training upon a modestly-sized corpus of 200,000 words has approximately 2 million rules active at each iteration.
+    The additional memory space required to store the lists of pointers associated with these rules is about 450 MB, which is a rather large requirement to add to a system.l The ICA system (Hepple, 2000) aims to reduce the training time by introducing independence assumptions on the training samples that dramatically reduce the training time with the possible downside of sacrificing performance.
+    To achieve the speedup, the ICA system disallows any interaction between the learned rules, by enforcing the following two assumptions: 'We need to note that the 200k-word corpus used in this experimen

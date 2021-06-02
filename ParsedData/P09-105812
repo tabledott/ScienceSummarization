@@ -1,0 +1,8 @@
+gorithm terminates when the number of generated paths equals k. In summary, we use k-best MIRA to iteratively update w(i).
+    The final weight vector w is the average of the weight vectors after each iteration.
+    As reported in (Collins, 2002; McDonald et al., 2005), parameter averaging can effectively avoid overfitting.
+    For inference, we can use Viterbi-style decoding to search for the most likely path y* for a given sentence x where: In conventional sequence labeling where the observation sequence (word) boundaries are fixed, one can use the 0/1 loss to measure the errors of a predicted path with respect to the correct path.
+    However, in our model, word boundaries vary based on the considered path, resulting in a different numbers of output tokens.
+    As a result, we cannot directly use the 0/1 loss.
+    We instead compute the loss function through false positives (FP) and false negatives (FN).
+    Here, FP means the number of output nodes that are not in the correct path, and FN means the number

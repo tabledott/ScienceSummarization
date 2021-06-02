@@ -1,0 +1,13 @@
+ EM algorithm, with 141 tit1 tn w1 wi wn ?Aj.
+			.?A1 . . .
+			?A|N| ?A1 . . ..
+			?Aj ?A|N| . . .
+			.Figure 1: A Bayes net representation of dependen cies among the variables in a PCFG.
+			the Expectation step replaced by sampling t and the Maximization step replaced by sampling ?.
+			The dependencies among variables in a PCFG are depicted graphically in Figure 1, which makes clear that the Gibbs sampler is highly parallelizable (just like the EM algorithm).
+			Specifically, the parses ti are independent given ? and so can be sampled in parallel from the following distribution as described in the next section.
+			PG(ti|wi, ?) = PG(ti|?)
+			PG(wi|?)
+			We make use of the fact that the posterior is aproduct of independent Dirichlet distributions in or der to sample ? from PD(?|t, ?).
+			The production probabilities ?A for each nonterminal A ? N are sampled from a Dirchlet distibution with parameters ??A = fA(t) + ?A. There are several methods forsampling ? = (?1, . . .
+			, ?m) from a Dirichlet distri bution 

@@ -1,0 +1,6 @@
+ c; C is the set of conjunctive nodes in the packed chart for sentence S and deps(c) is the set of dependencies on conjunctive node c. The intuition behind the expected recall score is that a dependency structure scores highly if it has dependencies produced by high probability derivations.4 The reason for rewriting the score in terms of individual dependencies is to make use of the packed chart: The score for an individual dependency can be calculated using dynamic programming (as explained previously), and the highest scoring dependency structure can be found using dynamic programming also.
+    The algorithm which finds &#960;max is essentially the same as the Viterbi algorithm described earlier, efficiently finding a derivation which produces the highest scoring set of dependencies.
+  
+  
+    The log-linear modeling framework allows considerable flexibility for representing the parse space in terms of features.
+    In this article we limit the features to those defined over local rule instantiations and si

@@ -1,0 +1,11 @@
+ type of entity and a GPE or LOC entity.
+    In this section we will describe the kernels designed for different syntactic sources and explain the intuition behind them.
+    We define two kernels to match relation examples at surface level.
+    Using the notation just defined, we can write the two surface kernels as follows: KT is a kernel that matches two tokens.
+    I(x, y) is a binary string match operator that gives 1 if x=y and 0 otherwise.
+    Kernel &#936;1 matches attributes of two entity arguments respectively, such as type, subtype and lexical head of an entity.
+    This is based on the observation that there are type constraints on the two arguments.
+    For instance PER-SOC is a relation mostly between two person entities.
+    So the attributes of the entities are crucial clues.
+    Lexical information is also important to distinguish relation types.
+    For instance, in the phrase U.S. president there is an EMP-ORG relation between president and U.S., while in a U.S. businessman there is a GPE-AF

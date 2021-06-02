@@ -1,0 +1,9 @@
+).
+    However, this approach did not include sentence specific prior estimates, word posterior estimates, and did not allow joint optimization of the system and feature weights.
+  
+  
+    The optimization of the system and feature weights may be carried out using -best lists as in (Ostendorf et al., 1991).
+    A confusion network may be represented by a word lattice and standard tools may be used to generate -best hypothesis lists including word confidence scores, language model scores and other features.
+    The -best list may be re-ordered using the sentence-level posteriors from Equation 6 for the th source sentence and the corresponding th hypothesis .
+    The current -best hypothesis given a set of weights may be represented as follows The objective is to optimize the-best score on a development set given a set of reference translations.
+    For example, estimating weights which minimize TER between a set of-best hypothesis and reference translations can be written as This objective function is very com

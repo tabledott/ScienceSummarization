@@ -1,0 +1,8 @@
+ith quantified NPs one of whose readings is the original logical form, that is, how to do quantifier-lowering automatically.
+    For this, we will associate a quantifier store with certain categories and add to the grammar suitable store-manipulation rules.
+    Each category whose constituents may create store elements will have a store feature.
+    Furthermore, for each such category whose semantics can be the scope of a quantifier, there will be an optional nonchain rule to take the top element of an ordered store and apply it to the semantics of the category.
+    For example, here is the rule for sentences: s(Form, GO-G, Store)/quant(Q,X,R,S) ---&gt; s(Form, GO-G, [qterm(Q,X,R)IStore])/S.
+    The term quant (Q,X,R,S) represents a quantified formula with quantifier Q, bound variable X, restriction R and scope S, and qterm(Q,X,R) is the corresponding store element.
+    In addition, some mechanism is needed to combine the stores of the immediate constituents of a phrase into a store for the phrase.
+    For ex

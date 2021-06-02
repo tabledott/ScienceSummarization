@@ -1,0 +1,8 @@
+ extracted A-N pairs).
+    The original dimensions were the 3,000 most frequent content words in the BNC.
+    The vector space was reduced to the first 500 &#8220;latent&#8221; dimensions by SVD as implemented by the Infomap software.
+    Thus, the resulting space consists in a matrix with 40, 000 x 500 dimensions.
+    We then extracted the vector representation for each A-N candidate as well as for each independent constituent, e.g. vectors for nice_house (v3), as well as for nice (v1) and house (v2) were saved.
+    The resulting vector subspace was imported into the R statistical computing environment for the subsequent model building and evaluation.
+    In particular, we produced our regression analysis with the pls package (Mevik &amp; Wehrens, 2007), which implements PLSR and a number of very useful functions for cross-validation, prediction, error analysis, etc.
+    By simply combining the vector representations of the independent Adjectives and Nouns in our data-set (v1 and v2) we built an additive pre

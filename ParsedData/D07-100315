@@ -1,0 +1,9 @@
+pairs in the question and their corre sponding, aligned words in the answer.
+			The hidden variable treatment lets us avoid commitment to any one x mapping, making the method more robust tonoisy parses (after all, the parser is not 100% ac curate) and any wrong assumptions imposed by the model (that |x(i)| = 1, for example, or that syntactic transformations can explain the connection between q and a at all).4 Our model, then, defines p(q, ?q | a, ?a) = ? x p(q, ?q, x | a, ?a) (2) where ?q and ?a are the question tree and answer tree, respectively.
+			The stochastic process defined by our model factors cleanly into recursive steps thatderive the question from the top down.
+			The QG defines a grammar for this derivation; the grammar de pends on the specific answer.
+			Let ? iw refer to the subtree of ?w rooted at wi.
+			The model is defined by: p(?
+			iq | qi, ?q(i), x(i), ?a) = (3) p#kids(|{j : ?q(j) = i, j &lt; i}| | qi, left) ?p#kids(|{j : ?q(j) = i, j &gt; i}| | qi, right) ? ?
+			j:?q(j)=i m?
+			x(j)=0 pki

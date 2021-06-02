@@ -1,0 +1,8 @@
+ase is 1.35 parses/word.
+    This translates to about 23 parses for a 12-word sentence.
+    The unlabeled Viterbi rate stands at 64% and the labeled Viterbi rate is 60%.
+    While we believe that the above Viterbi rate is close if not the state-of-the-art performance, there is room for improvement by using a more refined statistical model to achieve the labeled anyconsistent rate of 90% with this grammar.
+    There is a significant gap between the labeled Viterbi and any-consistent rates: 30 percentage points.
+    Instead of the usual approach where a grammarian tries to fine tune the grammar in the hope of improving the Viterbi rate we use the combination of a large Treebank and the resulting derivation histories with a decision tree building algorithm to extract statistical parameters that would improve the Viterbi rate.
+    The grammarian's task remains that of improving the any-consistent rate.
+    The history-based grammar model is distinguished from the context-free grammar model in that each constituen

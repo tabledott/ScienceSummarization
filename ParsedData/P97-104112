@@ -1,0 +1,8 @@
+st set.
+    A very simple initial segmentation for Chinese is to consider each character a distinct word.
+    Since the average word length is quite short in Chinese, with most words containing only 1 or 2 characters,6 this character-as-word segmentation correctly identified many one-character words and produced an initial segmentation score of F=40.3.
+    While this is a low segmentation score, this segmentation algorithm identifies enough words to provide a reasonable initial segmentation approximation.
+    In fact, the CAW algorithm alone has been shown (Buckley et al., 1996; Broglio et al., 1996) to be adequate to be used successfully in Chinese information retrieval.
+    Our algorithm learned 5903 transformations from the 2000 sentence training set.
+    The 5903 transformations applied to the test set improved the score from F=40.3 to 78.1, a 63.3% reduction in the error rate.
+    This is a very surprising and encouraging result, in that, from a very naive initial approximation using no lexicon except th

@@ -1,0 +1,10 @@
+ctures as being suboptimal.
+    Negative feedback indicates that the structure should not be added to the training pool as it will introduce noise into the learning process.
+    Algorithm 2 outlines the learning in more detail.
+    As before, y&#65533; and z&#65533; are predicted using the current weight vector and feedback received (lines 4 and 5).
+    When positive feedback is received a new training instance for a structured learner is created from the input sentence and prediction (line 7) this training instance replaces any previous instance for the input sentence.
+    When negative feedback is received the training pool Sl is not updated.
+    A weight vector is learned using a structured learner where the training data S contains at most one example per input sentence.
+    In the first iteration of the outer loop the training data S will contain very few examples.
+    In each subsequent iteration the newly learned weight vector allows the algorithm to acquire new examples.
+    This is repeated until no 

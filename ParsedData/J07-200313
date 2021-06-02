@@ -1,0 +1,6 @@
+in k-best lists with very few different translations or feature vectors, which is problematic for the minimum-error-rate training algorithm (see Section 4.3).
+    To avoid this, we filter our grammar according to the following constraints, chosen to balance grammar size and performance on our development set: Glue rules.
+    Having extracted rules from the training data, we could let X be the grammar&#8217;s start symbol and translate new sentences using only the extracted rules.
+    But for robustness and for continuity with phrase-based translation models, we allow the grammar to divide a French sentence into a sequence of chunks and translate one chunk at a time.
+    We formalize this inside a synchronous CFG using the rules (14) and (15), which we call the glue rules, repeated here: These rules analyze an S (the start symbol) as a sequence of Xs which are translated without reordering.
+    Note that if we restricted our grammar to comprise only the glue rules and conventional phrase pairs (that is, rules 

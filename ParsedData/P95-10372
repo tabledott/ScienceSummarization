@@ -1,0 +1,7 @@
+f possible features which can act as disambiguators.
+    The candidate disambiguators are the words in the sentence, relationships among the words, and relationships among constituents already constructed in the parsing process.
+    Since most natural language rules are not absolute, the disambiguation criteria discovered in this work are never applied deterministically.
+    Instead, all decisions are pursued non-deterministically according to the probability of each choice.
+    These probabilities are estimated using statistical decision tree models.
+    The probability of a complete parse tree (T) of a sentence (S) is the product of each decision (c11) conditioned on all previous decisions: Each decision sequence constructs a unique parse, and the parser selects the parse whose decision sequence yields the highest cumulative probability.
+    By combining a stack decoder search with a breadthfirst algorithm with probabilistic pruning, it is possible to identify the highest-probability parse for any sentence 

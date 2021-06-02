@@ -1,0 +1,9 @@
+ pair .
+    The block orientation se&#10097;quence is generated under the restriction that the concatenated source phrases of the blocks yield the input sentence.
+    In modeling a block sequence, we emphasize adjacent block neighbors that have right or left orientation, since in the current experiments only local block swapping is handled (neutral orientation is used for &#8217;detached&#8217; blocks as described in (Tillmann and Zhang, 2005)).
+    This paper focuses on the discriminative training of the weight vector used in Eq.
+    1.
+    The decoding process is decomposed into local decision steps based on Eq.
+    1, but the model is trained in a global setting as shown below.
+    The advantage of this approach is that it can easily handle tens of millions of features, e.g. up to million features for the experiments in this paper.
+    Moreover, under this view, SMT becomes quite similar to sequential natural language annotation problems such as part-of-speech tagging and shallow parsing, and the novel tra

@@ -1,0 +1,10 @@
+iggers, we use the above definition to score a document with a template.
+    A document is labeled with a template if it contains at least one trigger, and its average word probability is greater than a parameter optimized on the training set.
+    A document can be (and often is) labeled with multiple templates.
+    Finally, we label the sentences that contain triggers and use them for extraction in section 5.2.
+    The MUC-4 corpus links templates to documents, allowing us to evaluate our document labels.
+    We treat each link as a gold label (kidnap, bomb, or attack) for that document, and documents can have multiple labels.
+    Our learned clusters naturally do not have MUC labels, so we report results on the four clusters that score highest with each label.
+    Figure 4 shows the document classification scores.
+    The bombing template performs best with an F1 score of .72.
+    Arson occurs very few times, and Attack is lower because it is essentially an agglomeration of diverse events (discussed later).

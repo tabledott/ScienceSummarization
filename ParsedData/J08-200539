@@ -1,0 +1,9 @@
+information is the construction of phrase type, head word, POS tag of the head word, path, subcategorization, and syntactic frame features.
+  As described in Section 3.2.2, most of these features can be approximated using chunks and clauses, with the exception of the syntactic frame feature.
+  It is unclear how this feature can be mimicked because it relies on the internal structure of a full parse tree.
+  Therefore, it does not have a corresponding feature in the shallow parsing case.
+  Table 2 reports the experimental results of argument classification when argument boundaries are known.
+  In this case, because the argument classifier of our SRL system does not overpredict or miss any arguments, we do not need to train with a null class, 271 Computational Linguistics Volume 34, Number 2 Table 2 The accuracy of argument classification when argument boundaries are known.
+  Full Parsing Shallow Parsing Gold 91.50 ?
+  0.45 Auto 90.32 ?
+  0.50 and we can simply measure the performance using accuracy instead of F

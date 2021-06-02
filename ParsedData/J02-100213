@@ -1,0 +1,9 @@
+average increases with segment size, as we will discuss later, and changes if one assumes different distributions of false positives throughout the document.
+    However, this does not change the fact that in most cases, false positives are penalized some amount less than false negatives.
+    This is not an entirely undesirable side effect.
+    This metric was devised to take into account how close an assigned boundary is to the true one, rather than just marking it as correct or incorrect.
+    This method of penalizing false positives achieves this goal: the closer the algorithm&#8217;s boundary is to the actual boundary, the less it is penalized.
+    However, overpenalizing false negatives to do this is not desirable.
+    One way to fix the problem of penalizing false negatives more than false positives is to double the false positive penalty (or halve the false negative penalty).
+    However, this would undermine the probabilistic nature of the metric.
+    In addition, doubling the penalty may not always b

@@ -1,0 +1,13 @@
+orm as an elementary tree pair.
+    The generation process is similar to before.
+    As long as T. m&#175; =&#65533; 0, the process expands some node pair (d1, d2) E T. &#175;m.
+    It chooses an elementary tree pair t such that t.q = T.s(d1, d2).
+    Then for each j = 1, 2, it substitutes tj at dj if non-null.
+    (If dj is null, then t.q must guarantee that tj is the special null tree.)
+    In the probabilistic case, we have a distribution p(t  |q) just as before, but this time t is an elementary tree pair.
+    Several natural algorithms are now available to us: &#8226; Training.
+    Given an unaligned tree pair (T1, T2), we can again find the forest of all possible derivations, with expected inside-outside counts of the elementary tree pairs.
+    This allows EM training of the p(t  |q) model.
+    The algorithm is almost as before.
+    The outer loop iterates bottom-up over nodes c1 of T1; an inner loop iterates bottom-up over c2 of T2.
+    Inside probabilities (for example) now have the form &#946;c1,c2(q)

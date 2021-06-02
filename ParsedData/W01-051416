@@ -1,0 +1,11 @@
+rformed best with an average error rate of 42%.
+    This is the baseline for algorithms that find the e most prominent topic boundaries.
+    B? serves as the baseline for methods that determines the optimal segmentation, i.e. the number of topic segments in a text.
+    The aim is to relate stemming, ranking and the termination procedure in C99 with segmentation accuracy.
+    The algorithm used in this experiment is identical to that presented in (Choi, 2000a) except tokens such as -- and - are recognised as punctuation marks and removed during pre-processing.
+    Test results show this modification reduces error rate by 1%.
+    An analysis of the original algorithm reveals that non-word tokens introduce errors since they are converted into a null string by the stemming algorithm (Porter, 1980).
+    This implementation of C99 has three parameters.
+    +r implies ranking is applied to the similarity matrix prior to divisive clustering.
+    +s shows the stemming algorithm is used in preprocessing.
+    +b means t

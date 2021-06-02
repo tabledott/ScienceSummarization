@@ -1,0 +1,9 @@
+(x, z) pairs.
+    The core problem that arises in this setting is program induction: finding a logical form z (over an exponentially large space of possibilities) that produces the target answer y.
+    Unlike standard semantic parsing, our end goal is only to generate the correct y, so we are free to choose the representation for z.
+    Which one should we use?
+    The dominant paradigm in compositional semantics is Montague semantics, which constructs lambda calculus forms in a bottom-up manner.
+    CCG is one instantiation (Steedman, 2000), which is used by many semantic parsers, e.g., Zettlemoyer and Collins (2005).
+    However, the logical forms there can become quite complex, and in the context of program induction, this would lead to an unwieldy search space.
+    At the same time, representations such as FunQL (Kate et al., 2005), which was used in Clarke et al. (2010), are simpler but lack the full expressive power of lambda calculus.
+    The main technical contribution of this work is a new semantic r

@@ -1,0 +1,9 @@
+nd speed, sky cover, chance of rain, etc., which represent the underlying world state.
+    This world state is summarized by records which aggregate measurements over selected time intervals.
+    For example, one of the records states the minimum, average, and maximum temperature from 5pm to 6am.
+    This aggregation process produced 22,146 scenarios, each containing |s |= 36 multi-field records.
+    There are 12 record types, each consisting of only integer and categorical fields.
+    To annotate the data, we split the text by punctuation into lines and labeled each line with the records to which the line refers.
+    These lines are used only for evaluation and are not part of the model (see Section 5.1 for further discussion).
+    The weather domain is more complex than the Robocup domain in several ways: The text w is longer, there are more candidate records, and most notably, w references multiple records (5.8 on average), so the segmentation of w is unknown.
+    See Table 1 for a comparison of the two da

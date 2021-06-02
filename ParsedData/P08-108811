@@ -1,0 +1,7 @@
+sected alignment model (Liang et al., 2008), adding (s, t) to the lexicon if s was aligned to t at least three times and more than any other word.
+    Also, as in Koehn and Knight (2002), we make use of a seed lexicon, which consists of a small, and perhaps incorrect, set of initial translation pairs.
+    We used two methods to derive a seed lexicon.
+    The first is to use the evaluation lexicon Le and select the hundred most common noun word types in the source corpus which have translations in Le.
+    The second method is to heuristically induce, where applicable, a seed lexicon using edit distance, as is done in Koehn and Knight (2002).
+    Section 6.2 compares the performance of these two methods.
+    We evaluate a proposed lexicon Lp against the evaluation lexicon Le using the Fl measure in the standard fashion; precision is given by the number of proposed translations contained in the evaluation lexicon, and recall is given by the fraction of possible translation pairs proposed.12 Since our model natur

@@ -1,0 +1,7 @@
+.
+    We evaluated translation using BLEU with one reference translation and ngrams up to 4.
+    The minimum risk annealing procedure significantly outperformed maximum likelihood and minimum error training in all three language pairs (p &lt; 0.001, paired-sample permutation test with 1000 replications).
+    Minimum risk annealing generally outperformed minimum error training on the held-out set, regardless of the starting temperature T. However, higher starting temperatures do give better performance and a more monotonic learning curve (Figure 3), a pattern that held up on test data.
+    (In the same way, for minimum error training, 10That is, we run step 4 from several starting points, finishing at several different points; we pick the finishing point with lowest development error (2).
+    This reduces the sensitivity of this method to the starting value of 0.
+    Maximum likelihood is not sensitive to the starting value of 0 because it has only a global optimum; annealed minimum risk is not sensitive to it

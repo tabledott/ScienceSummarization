@@ -1,0 +1,7 @@
+tween scanning steps (since null productions do not have to be matched against one or more input symbols).
+    Our strategy will be to collapse all predictions and completions due to chains of null productions into the regular prediction and completion steps, not unlike the way recursive predictions/completions were handled in Section 4.5.
+    A prerequisite for this approach is to precompute, for all nonterminals X, the probability that X expands to the empty string.
+    Note that this is another recursive problem, since X itself may not have a null production, but expand to some nonterminal Y that does.
+    Computation of P(X E) for all X can be cast as a system of non-linear equations, as follows.
+    For each X, let ex be an abbreviation for P(X z E).
+    For example, let X have productions The semantics of context-free rules imply that X can only expand to E if all the RHS nonterminals in one of X's productions expand to E. Translating to probabilities, we obtain the equation In other words, each product

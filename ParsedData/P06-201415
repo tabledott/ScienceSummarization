@@ -1,0 +1,10 @@
+of constraints.
+    It begins by minimizing (3) with an empty constraint set in place of (4).
+    This provides values for w~ and ~&#958;.
+    The max cost structure is found for i = 1 with the current ~w.
+    If the resulting costi(y; ~w) is greater than the current value of &#958;i, then this represents a violated constraint2 in our complete objective, and a new constraint of the form &#958;i &#8805; costi(y; ~w) is added to the constraint set.
+    The algorithm then iterates: the optimizer minimizes (3) again with the new constraint set, and solves the max cost problem for i = i + 1 with the new ~w, growing the constraint set if necessary.
+    Note that the constraints on &#958; change with ~w, as cost is a function of ~w.
+    Once the end of the training set is reached, the learner loops back to the beginning.
+    Learning ends when the entire training set can be processed without needing to add any constraints.
+    It can be shown that this will occur within a polynomial number of iterations (Tsochantari

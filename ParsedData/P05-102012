@@ -1,0 +1,6 @@
+creation methods discussed above.
+    With three learners, three training instance creation methods, two feature sets, and three clustering algorithms, we can produce 54 coreference systems in total.
+    We train an SVM-based ranker for ranking candidate partitions by means of Joachims&#8217; (2002) SVM package, with all the parameters set to their default values.
+    To create training data, we first generate 54 candidate partitions for each text in the held-out subset as described above and then convert each partition into a training instance consisting of a set of partition-based features and method-based features.
+    Partition-based features are used to characterize a candidate partition and can be derived directly from the partition itself.
+    Following previous work on using global features of candidate structures to learn a ranking model (Collins, 2002), the global (i.e., partition-based) features we consider here are simple functions of the local features that capture the relationship between NP pai

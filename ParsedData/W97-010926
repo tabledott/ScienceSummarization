@@ -1,0 +1,9 @@
+soon as the decision tree is induced, classifying an unseen quadruple is a relatively simple procedure.
+    At first, the word senses of the quadruple are disambiguated by the algorithm described in Chapter 2, which is modified to exclude the SDT iteration cycles.
+    Then a path is traversed in the decision tree, starting at its root and ending at a leaf.
+    At each internal node, we follow the branch labelled by the attribute value which is the semantic ancestor of the attribute value of the quadruple (i.e. the branch attribute value is a semantic ancestori0 of the value of the quadruple attribute).
+    The quadruple is assigned the attachment type associated with the leaf, i.e. adjectival or adverbial.
+    If no match is found for the attribute value of the quadruple at any given node, the quadruple is assigned the majority type of the current node.
+  
+  
+    The training and testing data, extracted from the Penn Tree Bank [MA93], are identical to that used by IRRR94], [C&amp;B951 for comparison purposes&

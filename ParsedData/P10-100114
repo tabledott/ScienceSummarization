@@ -1,0 +1,7 @@
+introduce a new type of dynamic-programming structure: sibling-augmented spans, or s-spans.
+    Formally, we denote an incomplete s-span as Ih,m,s where Ih,m is a normal incomplete span and s is an index lying in the strict interior of the range [h, m], such that (h, m, s) forms a valid sibling part.
+    Figure 7 provides a graphical specification of the Model 2 parsing algorithm.
+    An incomplete s-span is constructed by combining a smaller incomplete s-span, representing the next-innermost pair of modifiers, with a sibling g-span, covering the region between the outer two modifiers.
+    As in Model 1, sibling g-spans are crucial for propagating grandparent indices, while allowing the recovery of tri-sibling parts (h, m, s, t).
+    Figure 7(b) shows how an incomplete s-span can be converted into an incomplete g-span by exchanging the internal sibling index for an external grandparent index; in the process, grand-sibling parts (g, h, m, s) are enumerated.
+    Since every derivation is defined by an augmented

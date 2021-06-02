@@ -1,0 +1,8 @@
+ase Bases are indexed using IGTree.
+    During tagging, each word in the text to be tagged is looked up in the lexicon.
+    If it is found, its lexical representation is retrieved and its context is determined, and the resulting pattern is looked up in the known words case base.
+    When a word is not found in the lexicon, its lexical representation is computed on the basis of its form, its context is determined, and the resulting pattern is looked up in the unknown words case base.
+    In each case, output is a best guess of the category for the word in its current context.
+    In the remainder of this section, we will describe each step in more detail.
+    We start from a training set of tagged sentences T. A lexicon is extracted from T by computing for each word in T the number of times it occurs with each category.
+    E.g. when using the first 2 million words of the Wall Street Journal corpus' as T, the word once would get the lexical definition RB: 330; IN: 77, i.e. once was tagged 330 times as an adver

@@ -1,0 +1,7 @@
+ that distribution.
+    The posterior-regularized EM algorithm leaves the M-step unchanged, but involves projecting the posteriors onto a constraint set after they are computed for each sentence x: arg min KL(q(z) II p&#952;(z|x)) where p&#952;(z|x) are the posteriors.
+    The new posteriors q(z) are used to compute sufficient statistics for this instance and hence to update the model&#8217;s parameters in the M-step for either the generative or discriminative setting.
+    The optimization problem in Equation 3 can be efficiently solved in its dual formulation: Given &#955;, the primal solution is given by: q(z) = p&#952;(z  |x) exp{&#8722;&#955;Tf(x, z)}/Z, where Z is a normalization constant.
+    There is one dual variable per expectation constraint, and we can optimize them by projected gradient descent, similar to log-linear model estimation.
+    The gradient with respect to &#955; is given by: b &#8722; Eq[f(x, z)], so it involves computing expectations under the distribution q(z).
+    This remains tract

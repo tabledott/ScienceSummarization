@@ -1,0 +1,11 @@
+ by varying normalized tokens used with surface form.
+			# features 2003 (dev) 2004 2005 NIST BLEU [%] NIST BLEU [%] NIST BLEU [%] surface form 492K 11.32 54.11 10.57 49.01 10.77 48.05 w/ prefix/suffix 4,204K 12.38 63.87 10.42 48.74 10.58 47.18 w/ word class 2,689K 10.87 49.59 10.63 49.55 10.89 48.79 w/ digits 576K 11.01 50.72 10.66 49.67 10.84 48.39 all token types 13,759K 11.24 52.85 10.66 49.81 10.85 48.41 where ? &gt; 0 is a learning rate for controlling the convergence.
+			4.2 Approximated BLEU.
+			We used the BLEU score (Papineni et al, 2002) as the loss function computed by: BLEU(E; E) = exp ? ?
+			1 N N ? n=1 log pn(E, E) ? ?
+			BP(E, E) (7) where pn(?)
+			is the n-gram precision of hypothesized translations E = {et}Tt=1 given reference translations E = {et}Tt=1 and BP(?)
+			1 is a brevity penalty.
+			BLEUis computed for a set of sentences, not for a single sentence.
+			Our algorithm requires frequent up dates on the weight vector, which implies higher cost in computing the document-wise BLEU.
+			Till

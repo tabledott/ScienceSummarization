@@ -1,0 +1,9 @@
+sed only a rudimentary confidence measure to perform active learning, introducing no additional features beyond those used in training and decoding.
+    The confidence score we assign to a sentence is just the un-normalized difference in perceptron scores between the highest scoring theory and the second highest scoring alternative.
+    To apply active learning, we simply To compute the confidence scores efficiently, we use a combination of the forward Viterbi and backward Viterbi scores at each word.
+    We define the confidence at a word to be the difference between the summed forward and backward scores of the best and second best tags for that word.
+    The confidence for the entire sentence is then just the minimum of the scores at each word position.
+  
+  
+    We performed our experiments using the seven MUC-6 name categories: person, organization, location, date, time, percent, and monetary amount.
+    For annotated data, we used text from Sections 02-23 of the Wall Street Journal Treebank corpus that 

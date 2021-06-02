@@ -1,0 +1,9 @@
+se constraints.
+  The optimization problem (Equation (2)) can be solved using an ILP solver by reformulating the constraints as linear (in)equalities over the indicator variables that represent the truth value of statements of the form [argument i takes label j], as described in detail next.
+  3.4.2 Using Integer Linear Programming.
+  As discussed previously, a collection of po- tential arguments is not necessarily a valid semantic labeling because it may not satisfy all of the constraints.
+  We enforce a legitimate solution using the following inference algorithm.
+  In our context, inference is the process of finding the best (ac- cording to Equation (1)) valid semantic labels that satisfy all of the specified con- straints.
+  We take a similar approach to the one previously used for entity/relation recognition (Roth and Yih 2004), and model this inference procedure as solving an ILP problem.
+  An integer linear program is a linear program with integral variables.
+  That is, the cost function and the (in)equ

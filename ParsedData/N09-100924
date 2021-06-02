@@ -1,0 +1,11 @@
+eights in the two hidden grammars.
+    We first merge the models for English and Chinese by taking a union of the multinomial families of each and the corresponding prior parameters.
+    We then add a normal expert that ties between the parts of speech in the respective partition structures for both grammars together.
+    Parts of speech are matched through the single coarse tagset (footnote 4).
+    For example, with TIEV, let V = VEng U VChi be the set of part-of-speech tags which belong to the verb category for either treebank.
+    Then, we tie parameters for all part-of-speech tags in V .
+    We tested this joint model for each of TIEV, TIEN, TIEV&amp;N, and TIEA.
+    After running the inference algorithm which learns the two models jointly, we use unseen data to test each learned model separately.
+    Table 1 includes the results for these experiments.
+    The performance on English improved significantly in the bilingual setting, achieving highest performance with TIEV&amp;N.
+    Performance with Chinese

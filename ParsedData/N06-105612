@@ -1,0 +1,9 @@
+   Here the second production, CONDITION &#8212;* (bowner TEAM {UNUM}), is the one that rewrites the CONDITION non-terminal in the first production, RULE &#8212;* (CONDITION DIRECTIVE), and so on.
+    Note that the structure of a parse tree is preserved through linearization, and for each MR there is a unique linearized parse, since the MRL grammar is unambiguous.
+    Such alignments can be obtained through the use of any off-the-shelf word alignment model.
+    In this work, we use the GIZA++ implementation (Och and Ney, 2003) of IBM Model 5 (Brown et al., 1993).
+    Assuming that each NL word is linked to at most one MRL production, transformation rules are extracted in a bottom-up manner.
+    The process starts with productions whose RHS is all terminals, e.g.
+    TEAM &#8212;* our and UNUM &#8212;* 4.
+    For each of these productions, X &#8212;* Q, a rule X &#8212;* (&#945;, Q) is extracted such that &#945; consists of the words to which the production is linked, e.g.
+    TEAM &#8212;* (our, our), UNUM &#

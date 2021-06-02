@@ -1,0 +1,9 @@
+nt.
+    The injective property of TBMs implies that whenever two (interpolated) chains overlap in the x or y dimensions, but are not identical in the region of overlap, then one of the chains must be wrong.
+    To resolve such conflicts, SIMR employs a postprocessing algorithm to eliminate conflicting chains one at a time, until all remaining chains are pairwise consistent.
+    The conflict resolution algorithm is based on the heuristic that chains that conflict with a larger number of other chains are more likely to be wrong.
+    The algorithm sorts all chains with respect to how many other chains they conflict with, and eliminates them in this sort order, one at a time, until no conflicts remain.
+    Whenever two or more chains are tied in the sort order, the conflict resolution algorithm eliminates all but the chain with the least point dispersal.
+    4.6.2 Additional Search Passes.
+    To ensure that SIMR rejects spurious chains, the maximum angle deviation threshold must be set low.
+    However, like any

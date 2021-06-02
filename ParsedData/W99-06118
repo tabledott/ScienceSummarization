@@ -1,0 +1,14 @@
+.
+    Proper Name.
+    Proper names are identified by looking for two adjacent capitalized words, optionally containing a middle initial.
+    Semantic Class.
+    Here we use WordNet (Fellbaum, 1998) to obtain coarse semantic information for the head noun.
+    The head noun is characterized as one of TIME, CITY, ANIMAL, HUMAN, or OBJECT.
+    If none of these classes pertains to the head noun, its immediate parent in the class hierarchy is returned as the semantic class, e.g.
+    PAYMENT for the head noun pay in NP6 of Table 1.
+    A separate algorithm identifies NUMBERS, MONEY, and COMPANYS.
+    Gender.
+    Gender (mAsculine, FEMinine, EITHER, or NEUTER) is determined using WordNet and (for proper names) a list of common first names.
+    Animacy.
+    Noun phrases classified as HUMAN or ANIMAL are marked ANIM; all other NPs are considered INANIM.
+    Next, we define the following distance metric between two noun phrases: where F corresponds to the NP feature set described above; incompatibility f is a function 

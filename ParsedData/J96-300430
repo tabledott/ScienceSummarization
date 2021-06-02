@@ -1,0 +1,7 @@
+are shown, with their associated costs, as follows: AB/ nc 4.0 ABC/jj 6.0 CD/vb 5.0 D/nc 5.0 The minimal dictionary encoding this information is represented by the WFST in Figure 2(a).
+    An input ABCD can be represented as an FSA as shown in Figure 2(b).
+    This FSA I can be segmented into words by composing Id(I) with D*, to form the WFST shown in Figure 2(c), then selecting the best path through this WFST to produce the WFST in Figure 2(d).
+    This WFST represents the segmentation of the text into the words AB and CD, word boundaries being marked by arcs mapping between e and part-of-speech labels.
+    Since the segmentation corresponds to the sequence of words that has the lowest summed unigram cost, the segmenter under discussion here is a zeroth-order model.
+    It is important to bear in mind, though, that this is not an inherent limitation of the model.
+    For example, it is well-known that one can build a finite-state bigram (word) model by simply assigning a state s, to each word wi in the vocab

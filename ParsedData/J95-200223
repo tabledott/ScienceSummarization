@@ -1,0 +1,8 @@
+d that forward and inner probabilities can be computed effectively.
+    The following assumes an Earley chart constructed by the parser on an input string x with Ix I = 1. a) Provided that S L x0...k_iXv is a possible left-most derivation of the grammar (for some v), the probability that a nonterminal X generates the substring xk .
+    .
+    . x,_1 can be computed as the sum P(X xk...k_i) = E -yickx &#8212;+ A.) i:kx- A.
+    (sum of inner probabilities over all complete states with LHS X and start index k). b) In particular, the string probability P(S x) can be computed as7 (sum of forward probabilities over all scanned states).
+    The restriction in (a) that X be preceded by a possible prefix is necessary, since the Earley parser at position i will only pursue derivations that are consistent with the input up to position i.
+    This constitutes the main distinguishing feature of Earley parsing compared to the strict bottom-up computation used in the standard inside probability computation (Baker 1979).
+    

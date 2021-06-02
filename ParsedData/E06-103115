@@ -1,0 +1,10 @@
+dit distance (i.e.
+    WER, PER, and CDER) apply fixed costs for the substitution of words.
+    However, this is counter-intuitive, as replacing a word with another one which has a similar meaning will rarely change the meaning of a sentence significantly.
+    On the other hand, replacing the same word with a completely different one probably will.
+    Therefore, it seems advisable to make substitution costs dependent on the semantical and/or syntactical dissimilarity of the words.
+    To avoid awkward case distinctions, we assume that a substitution cost function cSUB for two words e, e&#732; meets the following requirements: 3.
+    The costs of substituting a word e by e&#732; are always equal or lower than those of deleting e and then inserting &#732;e.
+    In short, cSUB &#8804; 2.
+    Under these conditions the algorithms for WER and CDER can easily be modified to use word-dependent substitution costs.
+    For example, the only necessary modification in the CDER algorithm in Equation 1 is to replace 1 &#

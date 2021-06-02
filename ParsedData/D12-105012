@@ -1,0 +1,12 @@
+imized the model&#8217;s parameters on a word similarity task using 4% of the BNC as development data.
+    Specifically, we used WordSim353, a benchmark dataset (Finkelstein et al., 2001), consisting of relatedness judgments (on a scale of 0 to 10) for 353 word pairs.
+    We experimented with vectors of varying dimensionality (ranging from 50 to 200, with a step size of 50).
+    The size of the target word&#8217;s context window was 2, 3 and 4 in turn.
+    The rate at which embeddings were learned ranged from 3.4 x 10&#8722;10 to 6.7 x 10&#8722;10 to 10&#8722;9.
+    We ran each training process for 1.1 x 108 to 2.7 x 108 iterations (ca.
+    2 days).
+    We obtained the best results with 50 dimensions, a context window of size 4, and a embedding learning rate of 10&#8722;9.
+    The NLM with these parameters was then trained for 1.51x109 iterations (ca.
+    2 weeks).
+    Figure 1 illustrates a two-dimensional projection of the embeddings for the 500 most common words in the BNC.
+    We only show two out of the 

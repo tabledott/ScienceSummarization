@@ -1,0 +1,10 @@
+or is such that the embeddings have a standard deviation of 0.1.
+    There are capacity controls for the word representations: number of Brown clusters, and number of dimensions of the word embeddings.
+    Figure 2 shows the effect on the validation F1 as we vary the capacity of the word representations.
+    In general, it appears that more Brown clusters are better.
+    We would like to induce 10000 Brown clusters, however this would take several months.
+    In Turian et al. (2009), we hypothesized on the basis of solely the HLBL NER curve that higher-dimensional word embeddings would give higher accuracy.
+    Figure 2 shows that this hypothesis is not true.
+    For NER, the C&amp;W curve is almost flat, and we were suprised to find the even 25-dimensional C&amp;W word embeddings work so well.
+    For chunking, 50-dimensional embeddings had the highest validation F1 for both C&amp;W and HLBL.
+    These curves indicates that the optimal capacity of the word embeddings is task-specific. gazetteers to the basel

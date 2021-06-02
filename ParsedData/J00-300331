@@ -1,0 +1,6 @@
+ dialogue grammars are able to detect speaker gender with 63% accuracy (over Stolcke et al. Dialogue Act Modeling a 50% baseline) on Switchboard (Ries 1999b), indicating that there are global variables in the DA distribution that could potentially be exploited by a cache dialogue grammar.
+    Clearly, dialogue grammar adaptation needs further research.
+    Second, we built a discourse grammar that incorporated constraints on DA sequences in a nonhierarchical way, using maximum entropy (ME) estimation (Berger, Della Pietra, and Della Pietra 1996).
+    The choice of features was informed by similar ones commonly used in statistical language models, as well our general intuitions about potentially information-bearing elements in the discourse context.
+    Thus, the model was designed so that the current DA label was constrained by features such as unigram statistics, the previous DA and the DA once removed, DAs occurring within a window in the past, and whether the previous utterance was by the same speaker.
+   

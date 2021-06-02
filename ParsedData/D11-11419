@@ -1,0 +1,10 @@
+such as Information Extraction and Named Entity Recognition.
+    Off the shelf shallow parsers perform noticeably worse on tweets, motivating us again to annotate indomain training data.
+    We annotate the same set of 800 tweets mentioned previously with tags from the CoNLL shared task (Tjong Kim Sang and Buchholz, 2000).
+    We use the set of shallow parsing features described by Sha and Pereira (2003), in addition to the Brown clusters mentioned above.
+    Part-of-speech tag features are extracted based on cross-validation output predicted by T-POS.
+    For inference and learning, again we use Conditional Random Fields.
+    We utilize 16K tokens of in-domain training data (using cross validation), in addition to 210K tokens of newswire text from the CoNLL dataset.
+    Table 4 reports T-CHUNK&#8217;s performance at shallow parsing of tweets.
+    We compare against the offthe shelf OpenNLP chunker6, obtaining a 22% reduction in error.
+    A key orthographic feature for recognizing named entities is capitaliz

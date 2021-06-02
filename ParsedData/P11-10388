@@ -1,0 +1,6 @@
+r.
+    We define the task as follows: Given this definition, our first step is to identify candidate tokens for lexical normalisation, where we examine all tokens that consist of alphanumeric characters, and categorise them into in-vocabulary (IV) and out-of-vocabulary (OOV) words, relative to a dictionary.
+    The OOV word definition is somewhat rough, because it includes neologisms and proper nouns like hopeable or WikiLeaks which have not made their way into the dictionary.
+    However, it greatly simplifies the candidate identification task, at the cost of pushing complexity downstream to the word detection task, in that we need to explicitly distinguish between correct OOV words and illformed OOV words such as typos (e.g. earthquak &#8220;earthquake&#8221;), register-specific single-word abbreviations (e.g. lv &#8220;love&#8221;), and phonetic substitutions (e.g.
+    2morrow &#8220;tomorrow&#8221;).
+    An immediate implication of our task definition is that ill-formed words which happen to coincide with

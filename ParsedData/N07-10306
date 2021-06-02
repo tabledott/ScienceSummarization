@@ -1,0 +1,6 @@
+cifically, we estimate parameters with the limited memory variable metric algorithm implemented in the Toolkit for Advanced Discriminative Modeling1 (Malouf, 2002).
+    We use a Gaussian prior with a variance of 1000 &#8212; no attempt was made to optimize this value.
+    Training instances for the coreference classifier are constructed based on pairs of mentions of the form hi, ji, where j and i are the descriptions for an anaphor and one of its candidate antecedents, respectively.
+    Each such pair is assigned either a label COREF (i.e. a positive instance) or a label &#172;COREF (i.e. a negative instance) depending on whether or not the two mentions corefer.
+    In generating the training data, we followed the method of (Soon et al., 2001) creating for each anaphor: (i) a positive instance for the pair hi, ji where i is the closest antecedent for j, and (ii) a negative instance for each pair hi, ki where k intervenes between i and j.
+    Once trained, the classifier is used to create a set of coreferentia

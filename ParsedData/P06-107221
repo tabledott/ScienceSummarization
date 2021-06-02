@@ -1,0 +1,10 @@
+(x).
+    Why doesn&#8217;t CE without segmentation resort to n-gram-like models?
+    Inspection of models trained using the standard CE method (no segmentation) with transposition-based neighborhoods TRANSPOSE1 and DELETEORTRANSPOSE1 did have high rates of length-1 dependencies, while the poorly-performing DELETE1 models found low length-1 rates.
+    This suggests that a bias toward locality (&#8220;n-gram-ness&#8221;) is built into the former neighborhoods, and may partly explain why CE works when it does.
+    We achieved a similar locality bias in the likelihood framework when we broadened the hypothesis space, but doing so under CE over-focuses the model on local structures.
+  
+  
+    We compared errors made by the selected EM condition with the best overall condition, for each language.
+    We found that the number of corrected attachments always outnumbered the number of new errors by a factor of two or more.
+    Further, the new models are not getting better by merely reversing the direction of links ma

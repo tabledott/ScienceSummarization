@@ -1,0 +1,8 @@
+ng techniques (in (Esuli and Sebastiani, 2005) and in the present work, stop words are removed and the remaining words are weighted by cosine-normalized tfidf; no stemming is performed)5.
+    This representation method is based on the assumption that terms with a similar orientation tend to have &#8220;similar&#8221; glosses: for instance, that the glosses of honest and intrepid will both contain appreciative expressions, while the glosses of disturbing and superfluous will both contain derogative expressions.
+    Note that this method allows to classify any term, independently of its POS, provided there is a gloss for it in the lexical resource.
+    Once the vectorial representations for all terms in TrUT e have been generated, those for the terms in Tr are fed to a supervised learner, which thus generates a binary classifier.
+    This latter, once fed with the vectorial representations of the terms in Te, classifies each of them as either Positive or Negative.
+  
+  
+    In this paper we extend the method of

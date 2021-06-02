@@ -1,0 +1,7 @@
+our system, we define ten types of factoid: date, time (TIME), percentage, money, number (NEJM), measure, e-mail, phone number, and WWW. model probability P(S&#8217;|C), where S&#8217; is any substring of S. Second, Viterbi search is used to select (from the lattice) the most probable word segmentation (i.e. word class sequence C*) according to Eq.
+    (2).
+  
+  
+    Given an input string S, all class models in Figure 2 are applied simultaneously to generate word class candidates whose class model probabilities are assigned using the corresponding class models: &#10065; Lexicon words: For any substring S&#8217; &#10065; S, we assume P(S&#8217;|C) = 1 and tagged the class as lexicon word if S&#8217; forms an entry in the word lexicon, P(S&#8217;|C) = 0 otherwise.
+    &#10065; Morphologically derived words: Similar to lexicon words, but a morph-lexicon is used instead of the word lexicon (see Section 5.1).
+    &#10065; Factoids: For each type of factoid, we compile a set of finite-state grammars G, represented 

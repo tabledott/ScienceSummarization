@@ -1,0 +1,12 @@
+e attachment points over others based on the types of structures already built.
+    In English, the left- and rightmost POS-tags are good indicators of constituency.
+    The pp-attachment features are similar to the bigram features, but fire only when one of the structures is headed by a preposition (IN).
+    These features are more lexicalized than the regular bigram features, and include also the word-form of the rightmost child of the PP (rcwp).
+    This should help the model learn lexicalized attachment preferences such as (hit, with-bat).
+    Figure 2 enumerate the feature templates we use.
+  
+  
+    The parsing algorithm (Algorithm 1) begins with n+1 disjoint structures (the words of the sentence + ROOT symbol), and terminates with one connected structure.
+    Each iteration of the main loop connects two structures and removes one of them, and so the loop repeats for exactly n times.
+    The argmax in line 5 selects the maximal scoring action/location pair.
+    At iteration i, there are n &#8722; i loca

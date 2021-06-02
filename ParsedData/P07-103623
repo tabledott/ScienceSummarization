@@ -1,0 +1,12 @@
+ also worked on one of our data sets.
+    Their underlying model, Markov Random Fields, allows more expressive features.
+    Nevertheless, when they use only unary constraints they get 53.75%.
+    When they use their final model, along with a mechanism for extending the prototypes to other tokens, they get results that are comparable to our model with 10 labeled examples.
+    Additionally, in their framework, it is not clear how to use small amounts of labeled data when available.
+    Our model outperforms theirs once we add 10 more examples.
+  
+  
+    This section discusses the importance of using soft constraints rather than hard constraints, the choice of Hamming distance for d(y, 1C(x)) and how we approximate it.
+    We use two constraints to illustrate the ideas.
+    (C1): &#8220;state transitions can only occur on punctuation marks or newlines&#8221;, and (C2): &#8220;the field TITLE must appear&#8221;.
+    First, we claim that defining d(y, 1C(x)) to be the Hamming distance is superior to using a binar

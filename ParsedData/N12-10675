@@ -1,0 +1,9 @@
+s can use longer phrases and that phrases can include unchanged words from the context, e.g., the gold edit from the example in Section 1 is (4, 5, word, {a word, words}).
+    However, it seems unrealistic to allow an arbitrary number of unchanged words in an edit.
+    In particular, we want to avoid very large edits that cover complete sentences.
+    Therefore, we limit the number of unchanged words by a parameter u.
+    To allow for phrase-level edits, we add transitive edges to the lattice as long as the number of unchanged words in the newly added edit is not greater than u and the edit changes at least one word.
+    Let e1 = (a1, b1, C1) and e2 = (a2, b2, C2) be two edits corresponding to adjacent edges in the lattice, with the first end offset b1 being equal to the second start offset a2.
+    We can combine them into a new edit e3 = (a1, b2, C1 + C2), where C1 + C2 is the concatenation of strings C1 and C2.
+    The cost of a transitive edge is the sum of the costs of its parts.
+    The lattice extracted

@@ -1,0 +1,6 @@
+ornia triggers CA.
+    To define the features, we technically need to augment each tree z &#8712; ZL(x) with alignment information&#8212;namely, for each predicate in z, the span in x (if any) that triggered it.
+    This extra information is already generated from the recursive definition in (13).
+    The feature vector &#966;(x, z) is defined by sums of five simple indicator feature templates: (F1) a word triggers a predicate (e.g., [city, city]); (F2) a word is under a relation (e.g., [that, 11]); (F3) a word is under a trace predicate (e.g., [in, loc]); (F4) two predicates are linked via a relation in the left or right direction (e.g., [city,11, loc, RIGHT]); and (F5) a predicate has a child relation (e.g., [city, 11]).
+    Learning Given a training dataset D containing (x, y) pairs, we define the regularized marginal log-likelihood objective O(&#952;) = E(x,y)ED log p&#952;(JzKw = y  |x, z &#8712; ZL(x)) &#8722; &#955;k&#952;k22, which sums over all DCS trees z that evaluate to the target answer y.
+    Ou

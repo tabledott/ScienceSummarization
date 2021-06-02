@@ -1,0 +1,7 @@
+rring entities across the English ACE NWIRE corpus.
+    Note that Bush is the most frequent entity, though his (and others&#8217;) nominal cluster president is mistakenly its own entity.
+    Merging of proper and nominal clusters does occur as can be seen in table 3.
+    We can use our model to for unsupervised NER tagging: for each proper mention, assign the mode of the generating entity&#8217;s distribution over entity types.
+    Note that in our model the only way an entity becomes associated with an entity type is by the pronouns used to refer to it.12 If we evaluate our system as an unsupervised NER tagger for the proper mentions in the MUC-6 test set, it yields a 12Ge et al. (1998) exploit a similar idea to assign gender to proper mentions. per-label accuracy of 61.2% (on MUC labels).
+    Although nowhere near the performance of state-ofthe-art systems, this result beats a simple baseline of always guessing PERSON (the most common entity type), which yields 46.4%.
+    This result is interesting given th

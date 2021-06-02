@@ -1,0 +1,12 @@
+ using the inside-outside algorithm with a CKY-style parsing algorithm.
+    To estimate the parameters themselves, we use stochastic gradient updates (LeCun et al., 1998).
+    Given a set of n sentence-meaning pairs {(xi, zi) : i = 1...n}, we update the parameters 0 iteratively, for each example i, by following the local gradient of the conditional log-likelihood objective Oi = log P(zi|xi; 0, A).
+    The local gradient of the individual parameter 0j associated with feature Oj and training instance (xi, zi) is given by: As with Eq.
+    3, all of the expectations in Eq.
+    4 are calculated through the use of the inside-outside algorithm on a pruned parse chart.
+    In the experiments, each chart cell was pruned to the top 200 entries.
+  
+  
+    Before presenting a complete learning algorithm, we first describe how to use higher-order unification to define a procedure for splitting CCG lexical entries.
+    This splitting process is used to expand the lexicon during learning.
+    We seed the lexical induction w

@@ -1,0 +1,9 @@
+enized document and collecting sequences of capitalized tokens (or words) as well as some special lower-case tokens, such as conjunctions and prepositions.
+    The list of candidate names extracted from the sample document contains: Each candidate name is examined for the presence of conjunctions, prepositions or possessive 's.
+    A set of heuristics is applied to determine whether each candidate name should be split into smaller independent names.
+    For example, Mr. Jordan of Steptoe &amp; Johnson is split into Mr. Jordan and Steptoe &amp; Johnson.
+    Finally, Nominator links together variants that refer to the same entity.
+    Because of standard English-language naming conventions, Mr. Jordan is grouped with Robert Jordan.
+    ABA is grouped with American Bar Association as a possible abbreviation of the longer name.
+    Each linked group is categorized by an entity type and assigned a 'canonical name' as its identifier.
+    The canonical name is the fullest, least ambiguous label that can be used to r

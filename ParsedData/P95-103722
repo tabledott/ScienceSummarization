@@ -1,0 +1,9 @@
+est data in future experiments.
+    The Penn Treebank is already tokenized and sentence detected by human annotators, and thus the test results reported here reflect this.
+    SPATTER parses word sequences, not tag sequences.
+    Furthermore, SPATTER does not simply pre-tag the sentences and use only the best tag sequence in parsing.
+    Instead, it uses a probabilistic model to assign tags to the words, and considers all possible tag sequences according to the probability they are assigned by the model.
+    No information about the legal tags for a word are extracted from the test corpus.
+    In fact, no information other than the words is used from the test corpus.
+    For the sake of efficiency, only the sentences of 40 words or fewer are included in these experiments.4 For this test set, SPATTER takes on average 12 seconds per sentence on an SGI R4400 with 160 megabytes of RAM.
+    To evaluate SPATTER's performance on this domain, I am using the PARSEVAL measures, as defined in (Black et al., 1991): Preci

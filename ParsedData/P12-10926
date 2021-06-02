@@ -1,0 +1,5 @@
+We first represent the word sequence s as 874 an ordered list of vectors x = (x1, x2, ..., xm) where xi is the embedding of word i in the sequence, which is a column in the embedding matrix L ? Rn?|V | where |V | denotes the size of the vocabulary.
+			The columns of this embedding matrix L are the wordvectors and will be learned and updated during train ing.
+			To compute the score of local context, scorel, we use a neural network with one hidden layer: a1 = f(W1[x1;x2; ...;xm] + b1) (2) scorel = W2a1 + b2 (3) where [x1;x2; ...;xm] is the concatenation of the m word embeddings representing sequence s, f is an element-wise activation function such as tanh, a1 ? Rh?1 is the activation of the hidden layer with h hidden nodes, W1 ? Rh?(mn) and W2 ? R1?h are respectively the first and second layer weights of the neural network, and b1, b2 are the biases of each layer.
+			For the score of the global context, we representthe document also as an ordered list of word em beddings, d = (d1, d2, ..., dk).
+			We first com

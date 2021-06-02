@@ -1,0 +1,13 @@
+e dependence is satisfied, proving the theorem.
+  
+  
+    Dasgupta, Littman, and McAllester suggest a possible algorithm at the end of their paper, but they give only the briefest suggestion, and do not implement or evaluate it.
+    I give here an algorithm, the Greedy Agreement Algorithm, that constructs paired rules that agree on unlabeled data, and I examine its performance.
+    The algorithm is given in figure 4.
+    It begins with two seed rules, one for each view.
+    At each iteration, each possible extension to one of the rules is considered and scored.
+    The best one is kept, and attention shifts to the other rule.
+    A complex rule (or classifier) is a list of atomic rules H, each associating a single feature h with a label t. H(x) = t if x has feature h, and H(x) = L otherwise.
+    A given atomic rule is permitted to appear multiple times in the list.
+    Each atomic rule occurrence gets one vote, and the classifier&#8217;s prediction is the label that receives the most votes.
+    In case of a t

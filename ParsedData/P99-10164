@@ -1,0 +1,12 @@
+uires a tremendous amount of memory.
+    With 50,000 nouns, we would initially require a 50,000 x 50,000 array of values (or a triangular array of about half this size).
+    With our current hardware, the largest array we The way we handled this limitation is to process the nouns in batches.
+    Initially 5,000 nouns are read in.
+    We cluster these until we have 2,500 nodes.
+    Then 2,500 more nouns are read in, to bring the total to 5,000 again, and once again we cluster until 2,500 nodes remain.
+    This process is repeated until all nouns have been processed.
+    Since the lowest-frequency nouns are clustered based on very little information and have a greater tendency to be clustered badly, we chose to filter some of these out.
+    By reducing the number of nouns to be read, a much nicer structure is obtained.
+    We now only consider nouns with a vector of length at least 2.
+    There are approximately 20,000 nouns as the leaves in our final binary tree structure.
+    Our next step is to try to label 

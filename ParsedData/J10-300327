@@ -1,0 +1,7 @@
+ the right&#8212;for each candidate paraphrase C and storing the (anchor, candidate) tuple in H. These anchors are taken to constitute the distribution of the words and phrases under inspection.
+    Finally, each occurrence of a pair of potential paraphrases, that is, a pair sharing one or more anchors, is counted.
+    The final set of phrasal paraphrastic pairs is returned.
+    This algorithm embodies the spirit of the hypothesis of distributional similarity: It considers all words and phrases that are distributionally similar&#8212;those that occur with the same sets of anchors (or distributions)&#8212;to be paraphrases of each other.
+    Additionally, the larger the set of shared anchors for two candidate phrases, the stronger the likelihood that they are paraphrases of each other.
+    After extracting the list of paraphrases, less likely phrasal paraphrases are filtered out by using an appropriate count threshold.
+    Pas&#184;ca and Dienes (2005) attempt to make their anchors even more informative by att

@@ -1,0 +1,9 @@
+rors.
+  3.1 SRL Pipeline The SRL pipeline consists of classifiers for predi- cate identification, predicate disambiguation, sup- port identification (for noun predicates), argument identification, and argument classification.
+  We trained one set of classifiers for verb predicates and another for noun predicates.
+  For the pred- icate disambiguation classifiers, we trained one subclassifier for each lemma.
+  All classifiers in the pipeline were L2-regularized linear logistic regres- sion classifiers, implemented using the efficient LIBLINEAR package (Lin et al., 2008).
+  For multi- class problems, we used the one-vs-all binarization 184 method, which makes it easy to prevent outputs not allowed by the PropBank or NomBank frame.
+  Since our classifiers were logistic, their output values could be meaningfully interpreted as prob- abilities.
+  This allowed us to combine the scores from subclassifiers into a score for the complete predicate?argument structure.
+  To generate the can- didate lists used by the globa

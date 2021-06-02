@@ -1,0 +1,6 @@
+he candidate rootlists.
+  Currently the candidate rootlists are derived automatically by applying the projected POS models and selecting any word with the probability of being an uninflected verb greater than a generous threshold and also ending in a canonical verb suf- fix.
+  False positives are easily tolerated (less than 5% of errors are due to spurious non-root competitors), but with missing roots the algorithms are forced either to propose previously unseen roots or align to the closest previously observed root candidate.
+  Thus while no non-English dictionary was used in the computation of these results, it would substantially improve performance to have a dictionary-based inventory of potential roots, increasing coverage and decreasing noise from competing non-roots and spelling errors.
+  Performance in all languages has been significnatly hindered by low-accuracy parallel-corpus word-alignments using the original Model-3 GIZA tools.
+  Use of Och and Ney?s re- cently released and enhanced GIZA++ word-a

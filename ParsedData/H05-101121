@@ -1,0 +1,7 @@
+e weight by an order of magnitude, until we ended with a learning rate of 1.0.
+			At each transition between learning rates, we re-.
+			initialized the weights to the optimum values found with the previous learning rate.We experimented with one other idea for opti mizing the weight values.
+			Perceptron learning does not directly optimize error rate, but we have onlya small number of parameters that we need to op timize.
+			We therefore thought it might be helpful to apply a general optimization procedure directlyto the error rate, starting from the best parame ter values found by perceptron learning, using theN -best alignments found with these parameter values.
+			We experimented with both the downhill sim plex method (Press et al, 2002, Section 10.4) and Powell?s method (Press et al, 2002, Section 10.5), but we obtained slightly better results with a more heuristic method designed to look past minor local minima.
+			We found that using this approach on top of perceptron learning led to slightly lower error

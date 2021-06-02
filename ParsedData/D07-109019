@@ -1,0 +1,6 @@
+uage word was consumed.The n-grams necessary to score these eight hypothe ses are There is lots, There is many, There may be, There are lots, are lots of, etc. These are queued up and their language-model scores requested in a batch manner.
+			After scoring, the decoder prunes this set as indicated by the four black disks at time t + 1, then extends these to form five new nodes (one is shared) at time t + 2.
+			The n-grams necessary to score these hypotheses are lots of people, lots of reasons, There are onlookers, etc. Again, these are sent to the server together, and again after scoring the graph is pruned to four active (most promising) hypotheses.
+			The alternating processes of queuing, waiting and scoring/pruning are done once per word position in a source sentence.
+			The average sentence length in our test data is 22 words (see section 7.1), thus wehave 23 rounds3 per sentence on average.
+			The num ber of n-grams requested per sentence depends onthe decoder settings for beam size, re-ordering win dow

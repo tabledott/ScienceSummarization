@@ -1,0 +1,7 @@
+ures can represent arbitrary attributes over the entire set xj.
+    This allows us to use the full flexibility of first-order logic to construct features about sets of nouns.
+    The First-Order Logic Model is ple and one &#8220;nearby&#8221; positive example.
+    In particular, when agglomerative clustering incorrectly merges two clusters, we select the resulting cluster as the negative example, and select as the positive example a cluster that can be created by merging other existing clusters.1 We then update the weight vector so that the positive example is assigned a higher score than the negative example.
+    This approach allows the update to only penalize the difference between the two features of examples, thereby not penalizing features representing any overlapping coreferent clusters.
+    To implement this update, we use MIRA (Margin Infused Relaxed Algorithm), a relaxed, online maximum margin training algorithm (Crammer and Singer, 2003).
+    It updates the parameter vector with two constraints: (1

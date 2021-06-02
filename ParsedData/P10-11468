@@ -1,0 +1,6 @@
+find the single derivation with the highest probability, they sum over derivations that differ only in their nonterminal labels and try to find the single derivation-class with the highest probability.
+    Still, only derivations that satisfy the matching constraint are included in the summation.
+    But in some cases we may want to soften the matching constraint itself.
+    Some syntactic categories are similar enough to be considered compatible: for example, if a rule rooted in VBD (pasttense verb) could substitute into a site labeled VBZ (present-tense verb), it might still generate correct output.
+    This is all the more true with the addition of SAMT-style categories: for example, if a rule rooted in ADVP * VP could substitute into a site labeled VP, it would very likely generate correct output.
+    Since we want syntactic information to help the model make good translation choices, not to rule out potentially correct choices, we can change the way the information is used during decoding: we allow any r

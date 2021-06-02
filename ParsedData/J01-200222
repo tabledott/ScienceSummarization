@@ -1,0 +1,6 @@
+s the one used in the MXPOST tagger described in Section 3.2.3, but without the beam search used in the tagging application.
+    The third machine learning method we used is c5.0 (Quinlan 1993), an example of top-down induction of decision trees.'
+    A decision tree is constructed by recursively partitioning the training set, selecting, at each step, the feature that most reduces the uncertainty about the class in each partition, and using it as a split. c5.0 uses Gain Ratio as an estimate of the utility of splitting on a feature.
+    Gain Ratio corresponds to the Information Gain measure of a feature, as described above, except that the measure is normalized for the number of values of the feature, by dividing by the entropy of the feature's values.
+    After the decision tree is constructed, it is pruned to avoid overfitting, using a method described in detail in Quinlan (1993).
+    A classification for a test case is made by traversing the tree until either a leaf node is found or all further branches do 

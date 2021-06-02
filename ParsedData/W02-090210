@@ -1,0 +1,10 @@
+e of this, both Rapp and Fung focus on expanding an existing large lexicon to add a few novel terms.
+    Clearly, a seed lexicon to bootstrap these methods is needed.
+    Fortunately, we have outlined in Section 2.1 how such a seed lexicon can be obtained: by finding words spelled identically in both languages.
+    We can then construct context vectors that contain information about how a new unmapped word co-occurs with the seed words.
+    This vector can be translated into the other language, since we already know the translations of the seed words.
+    Finally, we can look for the best matching context vector in the target language, and decide upon the corresponding word to construct a word mapping.
+    Again, as in Section 2.2, we have to compute all possible word &#8211; or context vector &#8211; matches.
+    We collect then the best word matches in a greedy fashion.
+    Table 3 displays the top 15 generated word pairs by this algorithm.
+    The context vectors are constructed in the way proposed by Rapp

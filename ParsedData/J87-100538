@@ -1,0 +1,11 @@
+ludes all but the lowest level of routines.
+    ;;;.
+    ***************************************************************************
+  
+  
+    ;;; A wff of the form 'p(argl,...,argn)' is represented as the ;;; s-expression (p argi' argn') where argi' is the encoding of the ;;; subexpression argi.
+    A constant term is represented by the homonymous LISP atom.
+    A complex term is represented by the s-expression (:term quant ;;; var restrict') where restrict' is the encoding of the wff that forms ;;; the restriction of the quantifier.
+    Implementation notes: ;;; The following simple utility functions are assumed: ;;; map-union -- implements the binary function UNION ;;; cross-product -- implements the function CROSS-PRODUCT opaque -- implements the binary function OPAQUE ;;; integers -- implements the binary function INTEGERS ;;; The infix union is implemented with CL function UNION.
+    ;;; The binary prefix union is implemented under the name MAP-UNION ;;; to avoid conflict with the CL function UNION.
+   

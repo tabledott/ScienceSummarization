@@ -1,0 +1,10 @@
+s.
+    In a na&#239;ve implementation of Step ii of K-Means, one would compute the similarities between a feature vector and all the centroids in order to find the closest one.
+    The kd-tree algorithm (Bentley 1980) aims at speeding up nearest neighbor search.
+    However, it only works when the vectors are low-dimensional, which is not the case here.
+    Fortunately, the high-dimensional and sparse nature of our feature vectors can also be exploited.
+    Since the cosine measure of two unit length vectors is simply their dot product, when searching for the closest centroid to an element, we only care about features in the centroids that are in common with the element.
+    We therefore create an inverted index that maps a feature to the list of centroids having that feature.
+    Given an input feature vector, we can iterate through all of its components and compute its dot product with all the centroids at the same time.
+    In our experiments, we use either 1 or 3 as the size of the context windows.
+    Wi

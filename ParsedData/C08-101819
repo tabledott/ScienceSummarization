@@ -1,0 +1,8 @@
+ovide sufficient context to the chart based algorithm, we must also store in each chart cell the n ? 1 target tokens at the left and right edges of its yield.
+			This is equivalent to using as our grammar the intersection between the original grammar and the ngram LM (Chiang, 2007), and increases the decoding complexity to an infeasible O(SRL 2(n?1)V )whereL is the size of the lexicon.
+			We adopt a popular approach in syntax-inspiredmachine translation to address this problem (Chi ang, 2007).
+			The idea is to use a beam-search overthe intersection grammar coupled with the cube pruning heuristic.
+			The beam limits the number ofitems in a given chart cell to a fixed constant, re gardless of the number of possible LM contexts and non-terminal categories.
+			Cube-pruning furtherlimits the number of items considered for inclu sion in the beam, reducing the time complexity to a more manageable O(SRBV ) where B is the beam size.
+			We refer the interested reader to Chiang (2007) for details.
+			Training The exten

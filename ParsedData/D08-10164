@@ -1,0 +1,13 @@
+l constraint to enforce that the parse is a tree.
+    The tractability of some such global constraints points the way toward applying BP to other computationally intensive NLP problems, such as syntax-based alignment of parallel text.
+  
+  
+    To apply BP, we must formulate dependency parsing as a search for an optimal assignment to the variables of a graphical model.
+    We encode a parse using the following variables: Sentence.
+    The n-word input sentence W is fully observed (not a lattice).
+    Let W = W0W1 &#183; &#183; &#183; Wn, where W0 is always the special symbol ROOT.
+    Tags.
+    If desired, the variables T = T1T2 &#183; &#183; &#183; Tn may specify tags on the n words, drawn from some tagset T (e.g., parts of speech).
+    These variables are needed iff the tags are to be inferred jointly with the parse.
+    Links.
+    The O(n2) boolean variables {Lij : 0 &lt; i &lt; n,1 &lt; j &lt; n, i =&#65533; j} correspond to the possible links in the dependency parse.3 Lij = true is interpreted as meaning

@@ -1,0 +1,7 @@
+d lists &#948;r(Zr, L): The word lists are usually concatenations of the words used in nominal and proper mentions and so are updated together with the assignments for those mentions.
+    Updating the &#948;r(Zr, L) factor involves finding the referring mention entity assignments, Zr, and property word lists L for instantiated entities which maximize ]EQ_ar ln P(T, L, Zr, Ap, M, -r, 7r).
+    We actually only need to optimize over Zr, since for any Zr, we can compute the optimal set of property word lists L. Essentially, for each entity we can compute the Lr which optimizes the probability of the referring mentions assigned to the entity (indicated by Zr).
+    In practice, the optimal Lr is just the set of property words in the assigned mentions.
+    Of course enumerating and scoring all Zr hypotheses is intractable, so we instead utilize a left-to-right sequential beam search.
+    Each partial hypothesis is an assignment to a prefix of mention positions and is scored as though it were a complete hypothesis.
+ 

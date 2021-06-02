@@ -1,0 +1,7 @@
+stem pair from one of the 373 other SAT analogy questions, andwe assume that this new stem pair is a negative ex ample, as shown in Table 3.
+			Word pair Train or test Class label mason:stone train positive tutor:pupil train negative teacher:chalk test hidden carpenter:wood test hidden soldier:gun test hidden photograph:camera test hidden book:word test hidden Table 3: How to fit a SAT analogy question into the framework of supervised pair classification.
+			To answer the SAT question, we use PairClass to estimate the probability that each testing example is positive, and we guess the testing example with the highest probability.
+			Learning from a trainingset with only one positive example and one nega tive example is difficult, since the learned model can be highly unstable.
+			To increase the stability, we repeat the learning process 10 times, using adifferent randomly chosen negative training exam ple each time.
+			For each testing word pair, the 10 probability estimates are averaged together.
+			This is 

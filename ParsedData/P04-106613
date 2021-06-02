@@ -1,0 +1,5 @@
+ss of length, and will leave for another time the question of whether this works better or worse than adding a number of null words proportional to the sentence length.
+    Conceptually, adding extra null words to source sentences is a slight modification to the structure of Model 1, but in fact, we can implement it without any additional model parameters by the simple expedient of multiplying all the translation probabilities for the null word by the number of null words per sentence.
+    This multiplication is performed during every iteration of EM, as the translation probabilities for the null word are re-estimated from the corresponding expected counts.
+    This makes these probabilities look like they are not normalized, but Model 1 can be applied in such a way that the translation probabilities for the null word are only ever used when multiplied by the number of null words in the sentence, so we are simply using the null word translation parameters to keep track of this product pre-computed.
+    In tra

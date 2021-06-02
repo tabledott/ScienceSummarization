@@ -1,0 +1,5 @@
+s case, Y1 should be the better choice than Y2 because Y1 has consecutive matches.
+    To improve the basic LCS method, we can simply remember the length of consecutive matches encountered so far to a regular two dimensional dynamic program table computing LCS.
+    We call this weighted LCS (WLCS) and use k to indicate the length of the current consecutive matches ending at words xi and yj.
+    Given two sentences X and Y, the WLCS score of X and Y can be computed using the following dynamic programming procedure: For (j = 1; j &lt;= n; j++) If xi = yj Then // the length of consecutive matches at // position i-1 and j -1 Where c is the dynamic programming table, c(i,j) stores the WLCS score ending at word xi of X and yj of Y, w is the table storing the length of consecutive matches ended at c table position i and j, and f is a function of consecutive matches at the table position, c(i,j).
+    Notice that by providing different weighting function f, we can parameterize the WLCS algorithm to assign different cr

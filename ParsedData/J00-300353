@@ -1,0 +1,7 @@
+s about the correct DA types directly at the level of the LM.
+    We estimate the distribution of likely DA types for a given utterance using the entire conversation E as evidence, and then use a sentence-level mixture (Iyer, Ostendorf, and Rohlicek 1994) of DA-specific LMs in a single recognizer run.
+    In other words, we replace P(Wi I Ui) in Equation 11 with EP(wilu)p(uilE), a weighted mixture of all DA-specific LMs.
+    We call this the mixture-of-LMs approach.
+    In practice, we would first estimate DA posteriors for each utterance, using the forward-backward algorithm and the models described in Section 5, and then rerecognize the conversation or rescore the recognizer output, using the new posteriorweighted mixture LM.
+    Fortunately, as shown in the next section, the mixture-of-LMs approach seems to give results that are almost identical to (and as good as) the mixtureof-posteriors approach.
+    It is instructive to compare the expanded scoring formulas for the two DA mixture modeling approaches fo

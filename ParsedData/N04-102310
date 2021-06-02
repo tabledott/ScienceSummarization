@@ -1,0 +1,8 @@
+e ranking is defined on the quality of the candidates.
+    In parse reranking, we look for parallel hyperplanes successfully separating and for all the source sentences, but in MT, for each source sentence, we have a set of reference translations instead of a single gold standard.
+    For this reason, it is hard to define which candidate translation is the best.
+    Suppose we have two translations, one of which is close to reference translation ref while the other is close to reference translation ref .
+    It is difficult to say that one candidate is better than the other.
+    Although we might invent metrics to define the quality of a translation, standard reranking algorithms cannot be directly applied to MT.
+    In parse reranking, each training sentence has a ranked list of 27 candidates on average (Collins, 2000), but for machine translation, the number of candidate translations in the -best list is much higher.
+    (SMT Team, 2003) show that to get a reasonable improvement in the BLEU score at least 1

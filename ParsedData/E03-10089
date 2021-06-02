@@ -1,0 +1,6 @@
+ Some code for (re)training this parser was added to make the co-training experiments possible.
+    We refer to this parser as Collins-CFG.
+    In order to perform the co-training experiments reported in this paper, LTAG derivation events Collins-CFG LTAG Bi-lexical dependencies are between Bi-lexical dependencies are between lexicalized nonterminals elementary trees Can produce novel elementary Can produce novel hi-lexical trees for the LTAG parser dependencies for Collins-CFG When using small amounts of seed data, When using small amounts of seed data, abstains less often than LTAG abstains more often than Collins-CFG were extracted from the head-lexicalized parse tree output produced by the Collins-CFG parser.
+    These events were used to retrain the statistical model used in the LTAG parser.
+    The output of the LTAG parser was also modified in order to provide input for the re-training phase in the Collins-CFG parser.
+    These steps ensured that the output of the Collins-CFG parser could be used as ne

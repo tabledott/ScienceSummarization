@@ -1,0 +1,11 @@
+ extend the calculation to the next state.
+    To find the optimal state sequence is simply a matter of recording with each state which incoming transition is associated with the greatest probability, and traversing that path in the reverse direction once the final node is reached.
+    These models can be generated dynamically by proceeding to predict each character in turn.
+    Figure 6(a) shows the beginning of the tree that results.
+    First, the initial node t is expanded into its two children, t. and to.
+    Then, these are expanded in turn.
+    The first has one child, &#8226;o, because a space cannot be followed by another space.
+    The second has two, o&#8226; and ob.
+    Figure 6(b) shows the further expansion of the .o node.
+    However, the two children that are created already exist in the tree, and so the existing versions of these nodes are used instead, as in Figure 6(c).
+    If this procedure is conThe space insertion procedure as implemented. tinued, the graph structure of Figure 5(a) will 

@@ -1,0 +1,8 @@
+ model.
+    For the moment, we are using n-gram models with the usual deleted interpolation for smoothing for the other four components of the model.
+    We have assigned bit strings to the syntactic and semantic categories and to the rules manually.
+    Our intention is that bit strings differing in the least significant bit positions correspond to categories of non-terminals or rules that are similar.
+    We also have assigned bitstrings for the words in the vocabulary (the lexical heads) using automatic clustering algorithms using the bigram mutual information clustering algorithm (see (5)).
+    Given the bitsting of a history, we then designed a decision tree for modeling the probability that a rule will be used for rewriting a node in the parse tree.
+    Since the grammar produces parses which may be more detailed than the Treebank, the decision tree was built using a training set constructed in the following manner.
+    Using the grammar with the P-CFG model we determined the most likely parse that is c

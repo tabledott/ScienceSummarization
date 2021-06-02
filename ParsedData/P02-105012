@@ -1,0 +1,9 @@
+trees usually fail to contain an appropriate grammatical relation for these items.
+    Because they are frequent, the failure to properly account for them significantly hurts performance.
+    Our error analysis led to the conclusion that the correspondence of syntactic relationships would be improved by a better handling of the one-tomany mappings and the unaligned cases.
+    We investigated two ways of addressing this issue.
+    First, we adopted a simple strategy informed by the tendency of languages to have a consistent direction for &amp;quot;headedness&amp;quot;.
+    Chinese and English share the property that they are headinitial for most phrase types.
+    Thus, if an English word aligns to multiple Chinese words cj, , cm, the leftmost word c1 is treated as the head and c2, ..., cm are analyzed as its dependents.
+    If a Chinese empty node was introduced to align with an untranslated English word, it is deleted and its left-most child is promoted to replace it.
+    Looking at language in this non-const

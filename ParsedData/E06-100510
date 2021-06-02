@@ -1,0 +1,9 @@
+blems of this type can in part be solved by the proposed approach, since every translation once plays the role of the primary translation.
+    For each sentence, we obtain a total of M confusion networks and unite them in a single lattice.
+    The consensus translation can be chosen among different alignment and reordering paths in this lattice.
+    The &#8220;voting&#8221; on the union of confusion networks is straightforward and analogous to the ROVER system.
+    We sum up the probabilities of the arcs which are labeled with the same word and have the same start and the same end state.
+    These probabilities are the global probabilities assigned to the different MT systems.
+    They are manually adjusted based on the performance of the involved MT systems on a held-out development set.
+    In general, a better consensus translation can be produced if the words hypothesized by a betterperforming system get a higher probability.
+    Additional scores like word confidence measures can be used to score the arc

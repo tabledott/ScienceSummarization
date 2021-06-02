@@ -1,0 +1,9 @@
+e on coreference in several languages, but for this work we focus on English text.
+    We split the corpus into three sets: Train, Dev, and Test.
+    Our test set contains the same 107 documents as Culotta et al. (2007).
+    Our training set is a random 80% of the 336 documents in their training set and our Dev set is the remaining 20%.
+    For our ablation study, we further randomly split our development set into two evenly sized parts, Dev-Tune and Dev-Eval.
+    For each experiment, we set the parameters of our algorithm to optimize BCubed F-Score using Dev-Tune, and use those parameters to evaluate on the Dev-Eval data.
+    For the experiments in Section 5, following Culotta et al. (2007), to make experiments more comparable across systems, we assume that perfect mention boundaries and mention type labels are given.
+    We do not use any other gold annotated input at evaluation time.
+    In Section 6 experiments we do not use any gold annotated input and do not assume mention types or boundaries are given.

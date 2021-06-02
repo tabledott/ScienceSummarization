@@ -1,0 +1,8 @@
+ not necessarily have a close correspondence to dialogue act inventories manually designed for other corpora.
+    Instead of comparing against human annotations, we present a visualization of the automatically discovered dialogue acts, in addition to measuring the ability of our models to predict post order in unseen conversations.
+    Ideally we would evaluate performance using an end-use application such as a conversational agent; however as this is outside the scope of this paper, we leave such an evaluation to future work.
+    For all experiments we train our models on a set of 10,000 randomly sampled conversations with conversation length in posts ranging from 3 to 6.
+    Note that our implementations can likely scale to larger data by using techniques such as SparseLDA (Yao et al., 2009).
+    We limit our vocabulary to the 5,000 most frequent words in the corpus.
+    When using EM, we train for 100 iterations, evaluating performance on the test set at each iteration, and reporting the maximum.
+    Smoot

@@ -1,0 +1,8 @@
+004 0.4116Table 1: Class distributions of the three orientation mod els, estimated from 12M words of Chinese-English data using the grow-diag alignment symmetrization heuristic implemented in Moses, which is similar to the ?refined?
+			heuristic of (Och and Ney, 2004).
+			u, . . .
+			,v in the source sentence f. All phrase pairs inthis paper are extracted with the phrase-extract algo rithm (Och and Ney, 2004), with maximum length set to 7.Word-based orientation model: This model an alyzes word alignments at positions (s?1,u?1) and (s?1,v+1) in the alignment grid shown in Fig.
+			2(a).
+			Specifically, orientation is set to oi = M if (s? 1,u? 1) contains a word alignment and (s?1,v+1) contains no word alignment.
+			It is set to oi = S if (s?1,u?1) contains no word alignment and (s?1,v+1) contains a word alignment.
+			In all other cases, it is set to oi = D. This procedure is exactly the same as the one implemented in Moses.2 Phrase-based orientation model: The modelpresented in (Tillman, 2004) is similar to th

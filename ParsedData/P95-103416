@@ -1,0 +1,6 @@
+nd specifies a choice point in the search and causes the creation of a state in the lattice; all continuations of alternative lexicalizations for this island become paths that leave this state.
+    Choices between alternative lexical islands for the same concept also become states in the lattice, with arcs leading to the sub-lattices corresponding to each island.
+    Once the semantic input to the generator has been transformed to a word lattice, a search component identifies the N highest scoring paths from the start to the final state, according to our statistical language model.
+    We use a version of the N-best algorithm (Chow and Schwartz, 1989), a Viterbistyle beam search algorithm that allows extraction of more than just the best scoring path.
+    (Hatzivassiloglou and Knight, 1995) has more details on our search algorithm and the method we applied to estimate the parameters of the statistical model.
+    Our approach differs from traditional top-down generation in the same way that top-down and bottom

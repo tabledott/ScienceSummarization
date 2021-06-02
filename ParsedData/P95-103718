@@ -1,0 +1,7 @@
+rch space, (roughly 0(1711N1), where IT1 is the number of part-ofspeech tags, n is the number of words in the sentence, and 'NI is the number of non-terminal labels), it is not possible to compute the probability of every parse.
+    However, the specific search algorithm used is not very important, so long as there are no search errors.
+    A search error occurs when the the highest probability parse found by the parser is not the highest probability parse in the space of all parses.
+    SPATTER's search procedure uses a two phase approach to identify the highest probability parse of a sentence.
+    First, the parser uses a stack decoding algorithm to quickly find a complete parse for the sentence.
+    Once the stack decoder has found a complete parse of reasonable probability (&gt; 10&#8212;s), it switches to a breadth-first mode to pursue all of the partial parses which have not been explored by the stack decoder.
+    In this second mode, it can safely discard any partial parse which has a probability lower

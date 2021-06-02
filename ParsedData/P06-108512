@@ -1,0 +1,6 @@
+ parameter determines the total probability of generating any novel word, a probability that decreases as more data is observed, but never disappears.
+    Finally, the parameter P0 can be used to encode expectations about the nature of the lexicon, since it defines a probability distribution across different novel words.
+    The fact that this distribution is defined separately from the distribution on word frequencies gives the model additional flexibility, since either distribution can be modified independently of the other.
+    Since the goal of this paper is to investigate the role of context in word segmentation, we chose the simplest possible model for P0, i.e. a unigram phoneme distribution: where word w consists of the phonemes m1 ... mn, and p# is the probability of the word boundary #.
+    For simplicity we used a uniform distribution over phonemes, and experimented with different fixed values of p#.1 A final detail of our model is the distribution on utterance lengths, which is geometric.
+    That 

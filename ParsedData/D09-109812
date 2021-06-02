@@ -1,0 +1,9 @@
+ a nonzero ith coordinate where i is the coordinate which is non-zero for the most vectors.
+    In other words, the algorithm is efficient only when the density of the coordinates is low.
+    On our datasets, we observed near linear running time in the corpus size.
+    Bayardo et al. (2007) described a strategy that potentially reduces the cost even further by omitting the coordinates with the highest number of non-zero value.
+    However, their algorithm gives a significant advantage only when we are interested in finding solely the similarity between highly similar terms.
+    In our experiments, we compute the exact similarity between all pairs of terms.
+    The pseudo-code in Figure 1 assumes that A can fit into memory, which for large A may be impossible.
+    Also, as each element of B is processed independently, running parallel processes for nonintersecting subsets of B makes the processing faster.
+    In this section, we outline our MapReduce implementation of Figure 1 deployed using Hadoop1, the open-

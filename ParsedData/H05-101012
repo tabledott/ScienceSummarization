@@ -1,0 +1,7 @@
+matching algorithm to word level alignment using the English-French Hansards data from the 2003 NAACL shared task (Mihalcea and Pedersen, 2003).
+			This corpus consists of 1.1M automatically aligned sentences, and comes with a validation set of 39 sentence pairs and a test set of 447 sentences.
+			The validation and test sentences have been hand-aligned (see Och and Ney (2003)) and are marked with both sure and possible alignments.
+			Using these alignments, alignment error rate (AER) is calculated as: AER(A,S, P ) = 1 ? |A ? S| + |A ? P | |A| + |S| Here, A is a set of proposed index pairs, S is the sure gold pairs, and P is the possible goldpairs.
+			For example, in Figure 1, proposed align ments are shown against gold alignments, with open squares for sure alignments, rounded open squares for possible alignments, and filled black squares for proposed alignments.
+			Since our method is a supervised algorithm, we need labeled examples.
+			For the training data, we split the original test set into 100 training

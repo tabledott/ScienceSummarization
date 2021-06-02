@@ -1,0 +1,7 @@
+f any evaluation metric that considers only the ranking of hypotheses and not their model scores; ie, it is true of all common MT metrics.
+    First employed in SMT by Watanabe et al. (2007), and refined by Chiang et al.
+    (2008; 2009), the Margin Infused Relaxed Algorithm (MIRA) employs a structured hinge loss: where ez is an oracle derivation, and cost is defined as &#916;i(e) = BLEUi(ez) &#8722; BLEUi(e), so that &#916;i(ez) = 0.
+    The loss `i(~w) is 0 only if w~ separates each e &#8712; Ei from ez by a margin proportional to their BLEU differentials.
+    MIRA is an instance of online learning, repeating the following steps: visit an example i, decode according to ~w, and update w~ to reduce `i(~w).
+    Each update makes the smallest change to w~ (subject to a step-size cap C) that will separate the oracle from a number of negative hypotheses.
+    The work of Crammer et al. (2006) shows that updating away from a single &#8220;fear&#8221; hypothesis that maximizes (2) admits a closed-form update that pe

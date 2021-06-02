@@ -1,0 +1,11 @@
+and posit ion can either be head or mod.
+    The position indicates whether word is the head or the modifier in dependency relation.
+    Since a word may be involved in several dependency relationships, each occurrence of a word may have multiple local contexts.
+    The local contexts of the two nouns &amp;quot;boy&amp;quot; and &amp;quot;dog&amp;quot; in (4) are as follows (the dependency relations between nouns and their determiners are ignored): boy (subj chase head) dog (adjn brown mod) (compl chase head) Using a broad coverage parser to parse a corpus, we construct a Local Context Database.
+    An entry in the database is a pair: where lc is a local context and C(lc) is a set of (word frequency likelihood)-triples.
+    Each triple specifies how often word occurred in lc and the likelihood ratio of lc and word.
+    The likelihood ratio is obtained by treating word and /c as a bigram and computed with the formula in (Dunning, 1993).
+    The database entry corresponding to Table 1 is as follows:
+  
+  
+    T

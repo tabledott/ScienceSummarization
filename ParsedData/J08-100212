@@ -1,0 +1,11 @@
+y models, as described in the next section.
+  
+  
+    Our solution to the problem is a dynamic programming algorithm for computing inside/outside &#945;-products.
+    Inside/outside &#945;-products roughly correspond to inside/ outside probabilities in PCFGs.
+    In maximum entropy models, a probability is defined as a normalized product of &#945;fj j(= exp(&#955;jfj)).
+    Hence, similar to the algorithm of computing (&#65533; ) inside/outside probabilities, we can compute exp j &#955;jfj , which we define as the &#945;-product, for each node in a tree structure.
+    If we can compute &#945;-products at a tractable cost, the model expectation &#181;i is also computed at a tractable cost.
+    We first define the notion of a feature forest, a packed representation of a set of an exponential number of tree structures.
+    Feature forests correspond to packed charts in CFG parsing.
+    Because feature forests are generalized representations of forest structures, the notion is not only applicable to syntactic par

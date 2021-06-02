@@ -1,0 +1,5 @@
+ (10), apply will construct the quantified wff (13) some(r, every(d, and(dept(d), in(d, &lt;most c and(rep(r), of(r, d))), see(r, &lt;a-few s samp(s)&gt;)) In apply-terms, the tail recursion turns the remaining complex terms into quantifiers with wide scope.
+    Thus, in (13) c and s will be given wider scope than r and d. For example, one of the readings generated from wff (13) will be Sentence (5), by the way, has 14 different readings.
+    As an example of the operation of the algorithm on a wff with opaque operators, we consider the sentence Everyone isn't here.
+    This has the predicate-argument structure not(here(&lt;every x person(x)&gt;)) where not is an operator opaque in its only argument.
+    The call to pull-opaque-args returns the two scopings not(here(&lt;every x person(x)&gt;)) not(every(x,person(x),here(x))) The call to apply-terms then turns the first of these into every(x,person(x),not(here(x))) Thus, the following two full scopings are generated: every(x,person(x),not(here(x))) not(every(x

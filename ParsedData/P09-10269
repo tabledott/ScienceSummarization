@@ -1,0 +1,10 @@
+parser.
+    As illustrated in the table, it is possible for an opinion to have more than one target.
+    In such cases, the single opinion results in multiple opinion-target pairs, one for each target.
+    Once these opinion-target pairs are created, we mask the identity of the opinion word, replacing the word with its polarity.
+    Thus, the opiniontarget pair is converted to a polarity-target pair.
+    For instance, &#8220;pleasing-interface&#8221; is converted to interface+.
+    This abstraction is essential for handling the sparseness of the data.
+    We observed in our development data that people highlight the aspects of topics that are the bases for their stances, both positive opinions toward aspects of the preferred topic, and negative opinions toward aspects of the dispreferred one.
+    Thus, we decided to mine the web for aspects associated with a side in the debate, and then use that information to recognize the stances expressed in individual posts.
+    Previous work mined web data for aspects as

@@ -1,0 +1,8 @@
+r than just the 1-best tree.
+    Such a forest is usually huge in size, so we use the forest pruning algorithm (Section 3.4) to reduce it to a reasonable size.
+    The pruned parse forest will then be used to direct the translation.
+    In the decoding step, we first convert the parse forest into a translation forest using the translation rule set, by similar techniques of pattern-matching from tree-based decoding (Section 3.2).
+    Then the decoder searches for the best derivation on the translation forest and outputs the target string (Section 3.3).
+    Informally, a packed parse forest, or forest in short, is a compact representation of all the derivations (i.e., parse trees) for a given sentence under a context-free grammar (Billot and Lang, 1989).
+    For example, consider the Chinese sentence in Example (2) above, which has (at least) two readings depending on the part-of-speech of the word y&#711;u, which can be either a preposition (P &#8220;with&#8221;) or a conjunction (CC &#8220;and&#8221;).
+    Th

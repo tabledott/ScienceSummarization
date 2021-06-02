@@ -1,0 +1,9 @@
+nd 2 contain only word information, 3 to 5 contain character and length information, 6 and 7 contain only character information, 8 to 12 contain word and character information, while 13 and 14 contain // append the character to the last word word and length information.
+    Any segmented sentence is mapped to a global feature vector according to these templates.
+    There are 356,337 features with non-zero values after 6 training iterations using the development data.
+    For this particular feature set, the longest range features are word bigrams.
+    Therefore, among partial candidates ending with the same bigram, the best one will also be in the best final candidate.
+    The decoder can be optimized accordingly: when an incoming character is combined with candidate items as a new word, only the best candidate is kept among those having the same last word.
+  
+  
+    Among the character-tagging CWS models, Li et al. (2005) uses an uneven margin alteration of the traditional perceptron classifier (Li et al., 

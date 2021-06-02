@@ -1,0 +1,8 @@
+ing pointers in loops whenever there is a loop in the derivation subgraph (corresponding to an infinite number of derivations).
+    Details are given elsewhere (Goodman 1998).
+    As in the finite case, this representation is equivalent to that of Billot and Lang (1989).
+    For the Viterbi semiring, the algorithm is analogous to the Boolean case.
+    Derivations using loops in these semirings will always have values no greater than derivations not using loops, since the value with the loop will be the same as some value without the loop, multiplied by some set of rule probabilities that are at most 1.
+    Since the additive operation is max, these lower (or at most equal) looping derivations do not change the value of an item.
+    Therefore, we can simply compute successive generations until values fail to change from one iteration to the next.
+    Now, consider implementations of the Viterbi-derivation semiring in practice, in which we keep only a representative derivation, rather than the whole derivation 

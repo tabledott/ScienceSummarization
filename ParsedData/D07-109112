@@ -1,0 +1,10 @@
+) is scored based on relative counts and word-based translation probabilities.
+			The generation distributions are estimated on the output side only.
+			The word alignment plays no role here.
+			In fact, additional monolingual data may be used.
+			The generation model is learned on aword-for-word basis.
+			For instance, for a genera tion step that maps surface forms to part-of-speech, a table with entries such as (fish,NN) is constructed.
+			One or more scoring functions may be defined overthis table, in our experiments we used both condi tional probability distributions, e.g., p(fish|NN) andp(NN|fish), obtained by maximum likelihood esti mation.
+			An important component of statistical machinetranslation is the language model, typically an n gram model over surface forms of words.
+			In theframework of factored translation models, such se quence models may be defined over any factor, or any set of factors.
+			For factors such as part-of-speech tags, building and using higher order n-gram models (7-gram, 9-gr

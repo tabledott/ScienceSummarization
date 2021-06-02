@@ -1,0 +1,9 @@
+utility similarity.pl allows a user to measure specific pairs of concepts when given in word#pos#sense form.
+    For example, car#n#3 refers to the third WordNet noun sense of car.
+    It also allows for the specification of all the possible senses associated with a word or word#pos combination.
+    For example, in Figure 1, the first command requests the value of the lin measure of similarity for the second noun sense of car (railway car) and the first noun sense of bus (motor coach).
+    The second command will return the score of the pair of concepts that have the highest similarity value for the nouns car and bus.
+    In the third command, the &#8211;allsenses switch causes the similarity measurements of all the noun senses of car to be calculated relative to the first noun sense of bus.
+    WordNet::Similarity is implemented with Perl&#8217;s object oriented features.
+    It uses the WordNet::QueryData package (Rennie, 2000) to create an object representing WordNet.
+    There are a number of methods avai

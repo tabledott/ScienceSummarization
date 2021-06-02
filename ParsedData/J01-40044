@@ -1,0 +1,7 @@
+ document, all markables are determined and potential pairs of coreferring markables are presented to the classifier, which decides whether the two markables actually corefer.
+    We give the details of these steps in the following subsections.
+    A prerequisite for coreference resolution is to obtain most, if not all, of the possible markables in a raw input text.
+    To determine the markables, a pipeline of natural language processing (NLP) modules is used, as shown in Figure 1.
+    They consist of tokenization, sentence segmentation, morphological processing, part-of-speech tagging, noun phrase identification, named entity recognition, nested noun phrase extraction, and semantic class determination.
+    As far as coreference resolution is concerned, the goal of these NLP modules is to determine the boundary of the markables, and to provide the necessary information about each markable for subsequent generation of features in the training examples.
+    Our part-of-speech tagger is a standard statistical t

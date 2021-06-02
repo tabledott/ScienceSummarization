@@ -1,0 +1,9 @@
+ from inputs (unsegmented sentences) x E X to outputs (segmented paths) y E Y based on training samples of input-output pairs S = {(xt, yt)}t1.
+    We represent the search space with a lattice based on the word-character hybrid model (Nakagawa and Uchimoto, 2007).
+    In the hybrid model, given an input sentence, a lattice that consists of word-level and character-level nodes is constructed.
+    Word-level nodes, which correspond to words found in the system&#8217;s word dictionary, have regular POS tags.
+    Character-level nodes have special tags where position-of-character (POC) and POS tags are combined (Asahara, 2003; Nakagawa, 2004).
+    POC tags indicate the word-internal positions of the characters, as described in Table 1.
+    Figure 1 shows an example of a lattice for a Chinese sentence: &#8220; &#8221; (Chongming is China&#8217;s third largest island).
+    Note that some nodes and state transitions are not allowed.
+    For example, T and E nodes cannot occur at the beginning of the lattice (marked 

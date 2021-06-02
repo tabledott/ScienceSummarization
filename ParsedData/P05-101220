@@ -1,0 +1,9 @@
+roblematic since it contains some crossing dependencies which cannot be parsed by the Eisner algorithm.
+    One trick is to rearrange the words in the training set so that all trees are nested.
+    This at least allows the training algorithm to obtain reasonably low error on the training set.
+    We found that this did improve performance slightly to 83.6% accuracy.
+    It is well known that dependency trees extracted from lexicalized phrase structure parsers (Collins, 1999; Charniak, 2000) typically are more accurate than those produced by pure dependency parsers (Yamada and Matsumoto, 2003).
+    We compared our system to the Bikel re-implementation of the Collins parser (Bikel, 2004; Collins, 1999) trained with the same head rules of our system.
+    There are two ways to extract dependencies from lexicalized phrase structure.
+    The first is to use the automatically generated dependencies that are explicit in the lexicalization of the trees, we call this system Collinsauto.
+    The second is to take just t

@@ -1,0 +1,10 @@
+e noun phrase, all NBs after a KB are candidates (we call such a candidate bunsetsu a CB).
+    However, our method searches not only for the most plausible EB, but also for the most plausible scope of the CS.
+    We detect the scope of CSs by using a wide range of information before and after a KB.
+    An input sentence is first divided into bunsetsus by conventional morphological analysis.
+    Then we calculate similarities in all pairs of bunsetsus in the sentence.
+    After that, we calculate the similarities between two series of bunsetsus on the left and right of the KB by combining the similarity scores for pairs of bunsetsus.
+    Then, as a final result, we choose the two most similar series of bunsetsus that can reasonably be considered as composing a CS.
+    We will explain this process in detail in the following sections.
+    In detecting CSs, it is necessary to take many factors into consideration, and it is important to give the proper weight to each factor.
+    The scoring system described hereaf

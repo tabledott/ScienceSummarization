@@ -1,0 +1,9 @@
+locality.
+    Locality is needed to allow practical search, but many entailment decisions rely on global features of the alignment, and thus do not naturally factor by nodes and edges.
+    To take just one example, dropping a restrictive modifier preserves entailment in a positive context, but not in a negative one.
+    For example, Dogs barked loudly entails Dogs barked, but No dogs barked loudly does not entail No dogs barked.
+    These more global phenomena cannot be modeled with a factored alignment score.
+    The last issue arising in the graph matching approaches is the inherent confounding of alignment and entailment determination.
+    The way to show that one graph element does not follow from another is to make the cost of aligning them high.
+    However, since we are embedded in a search for the lowest cost alignment, this will just cause the system to choose an alternate alignment rather than recognizing a non-entailment.
+    In ID 152, we would like the hypothesis to align with the first part of t

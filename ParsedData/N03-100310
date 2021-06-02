@@ -1,0 +1,7 @@
+s from which to learn useful patterns; for the multiple-sequence techniques we will use, this means that the sentences within clusters should describe similar events and have similar structure, as in the sentences of Figure 2.
+    This is accomplished by applying hierarchical complete-link clustering to the sentences using a similarity metric based on word n-gram overlap ( ).
+    The only subtlety is that we do not want mismatches on sentence details (e.g., the location of a raid) causing sentences describing the same type of occurrence (e.g., a raid) from being separated, as this might yield clusters too fragmented for effective learning to take place.
+    (Moreover, variability in the arguments of the sentences in a cluster is needed for our learning algorithm to succeed; see below.)
+    We therefore first replace all appearances of dates, numbers, and proper names2 with generic tokens.
+    Clusters with fewer than ten sentences are discarded.
+    In order to learn patterns, we first compute a multipleseque

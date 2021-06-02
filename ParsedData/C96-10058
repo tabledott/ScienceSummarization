@@ -1,0 +1,8 @@
+17 First, the algorithm represents in a lattice the nouns present in the window, their senses and hypernyms (step 1).
+  Then, the program computes the Conceptual Density of each concept in WordNet according to the senses it contains in its subhierarchy (step 2).
+  It selects the concept c with highest Conceptual Density (step 3) and selects the senses below it as the correct senses for the respective words (step 4).
+  The algorithm proceeds then to compute the density for the remaining senses in the lattice, and continues to disambiguate he nouns left in W (back to steps 2, 3 and 4).
+  When no further disambiguation is possible, the senses left for w are processed and the result is presented (step 5).
+  Besides completely disambiguating a word or failing to do so, in some cases the disambiguation algorithm returns everal possible senses for a word.
+  In the experiments we considered these partial outcomes as failure to disambiguate.
+  4 The  Exper iments 4.1 The texts We selected four texts from SemCor at ran

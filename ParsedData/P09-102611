@@ -1,0 +1,9 @@
+for pages containing &#8220;iPhone&#8221; and &#8220;Blackberry.&#8221; We used the Yahoo search API and imposed the search restriction that the pages should contain both topics in the http URL.
+    This ensured that we downloaded relevant pages.
+    An average of 3000 documents were downloaded per debate.
+    We apply the method described in Section 3.1 to the downloaded web pages.
+    That is, we find all instances of words in the lexicon, extract their targets, and mask the words with their polarities, yielding polarity-target pairs.
+    For example, suppose the sentence &#8220;The interface is pleasing&#8221; is in the corpus.
+    The system extracts the pair &#8220;pleasing-interface,&#8221; which is masked to &#8220;positive-interface,&#8221; which we notate as interface+.
+    If the target in a polarity-target pair happens to be one of the topics, we select the polarity-target pairs in its vicinity for further processing (the rest are discarded).
+    The intuition behind this is that, if someone expres

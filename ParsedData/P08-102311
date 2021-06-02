@@ -1,0 +1,7 @@
+ For example, (VP held * Sharon) is an +LM item with its translation starting with &#8220;held&#8221; and ending with &#8220;Sharon&#8221;.
+    This scheme can be easily extended to work with a general n-gram by storing n &#8722; 1 words at both ends (Chiang, 2007).
+    For k-best search after getting 1-best derivation, we use the lazy Algorithm 3 of Huang and Chiang (2005) that works backwards from the root node, incrementally computing the second, third, through the kth best alternatives.
+    However, this time we work on a finer-grained forest, called translation+LMforest, resulting from the intersection of the translation forest and the LM, with its nodes being the +LM items during cube pruning.
+    Although this new forest is prohibitively large, Algorithm 3 is very efficient with minimal overhead on top of 1-best.
+    We use the pruning algorithm of (Jonathan Graehl, p.c.
+    ; Huang, 2008) that is very similar to the method based on marginal probability (Charniak and Johnson, 2005), except that it prun

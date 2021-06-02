@@ -1,0 +1,7 @@
+ifference is that their template extracts contextual information from noun phrases surrounding the predicate, rather than from the sequence of argument nodes.
+    Because our model is joint, we are able to use information about other argument nodes when labeling a node.
+    Here we describe the application in testing of a joint model for semantic role labeling, using a local model P`SRL, and a joint re-ranking model PrSRL.
+    P`SRL is used to generate top N non-overlapping joint assignments L1, ... , LN.
+    One option is to select the best Li according to PrSRL, as in Equation 3, ignoring the score from the local model.
+    In our experiments, we noticed that for larger values of N, the performance of our reranking model PrSRL decreased.
+    This was probably due to the fact that at test time the local classifier produces very poor argument frames near the bottom of the top N for large N. Since the re-ranking model is trained on relatively few good argument frames, it cannot easily rule out very bad frames.

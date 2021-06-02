@@ -1,0 +1,8 @@
+ match at a higher node in t, and hence will be substituted.
+    Since the substitution of one pattern typically destroys the context for a match of another pattern, the shallower patterns no longer match.
+    On the other hand, since shallower patterns contain less structure they are likely to match a greater variety of trees than the deeper patterns, they still have ample opportunity to apply.
+    Finally, the pattern matching process can be speeded considerably by indexing patterns appropriately, since the number of patterns involved is quite large (approximately 11,000).
+    For patterns of the kind described here, patterns can be indexed on their topmost local tree (i.e., the pattern&#8217;s root node label and the sequence of node labels of its children).
+    After relabelling preterminals as described above, patterns are extracted during a traversal of each of the trees in the training corpus.
+    Table 2 lists the most frequent patterns extracted from the Penn Treebank training corpus.
+    The algorit

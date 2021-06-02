@@ -1,0 +1,11 @@
+nday}, He), i({secretary of state}, He), and i({Barack Obama, his}, He).
+    The first two of these instances will be labeled as negative, and the last one will be labeled as positive.
+    As in the mention-pair model, we train an entity-mention classifier using the SVM learner.
+    After training, the resulting classifier is used to identify a preceding cluster for a mention in a test text.
+    Specifically, the mentions are processed in a left-to-right manner.
+    For each active mention mk, a test instance is created between mk and each of the preceding clusters formed so far.
+    All the test instances are then presented to the classifier.
+    Finally, mk will be linked to the closest preceding cluster that is classified as coreferent with mk.
+    If mk is not classified as coreferent with any preceding cluster, it will be considered discoursenew.
+    Note that all partial clusters preceding mk are formed incrementally based on the predictions of the classifier for the first k &#8722; 1 mentions.
+    As n

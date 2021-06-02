@@ -1,0 +1,8 @@
+ repeated until no rules have a score less than R. For our evaluation on the WSJ corpus, this typically requires only four to five iterations.
+    Thresholding provides a very coarse mechanism for pruning the NP grammar.
+    In particular, because of interactions between the rules during bracketing, thresholding discards rules whose score might increase in the absence of other rules that are also being discarded.
+    Consider, for example, the Boca Raton fragments given earlier.
+    In the absence of (NNP NNP , NNP), the rule (NNP NNP) would have received a score of three for correctly identifying all three NPs.
+    As a result, we explored a more fine-grained method of discarding rules: Each iteration of incremental pruning discards the N worst rules, rather than all rules whose rank is less than some threshold.
+    In all of our experiments, we set N = 10.
+    As with thresholding, the process of evaluating, ranking, and discarding rules is repeated, this time until precision of the current rule set on the 

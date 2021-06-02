@@ -1,0 +1,9 @@
+task.
+    Note that this tuning depends on the starting point of the model parameters and is not guaranteed to converge to the global optimum on the training data.
+    As a result, this approach is limited to a very small number of model parameters.
+    An efficient algorithm for performing this tuning for a larger number of model parameters can be found in Och (2003).
+    A standard approach to training the log-linear model parameters of the maximum class posterior probability criterion is the GIS (Generalized Iterative Scaling) algorithm (Darroch and Ratcliff 1972).
+    To apply this algorithm, we have to solve various practical problems.
+    The renormalization needed in equation (3) requires a sum over many possible sentences, for which we do not know of an efficient algorithm.
+    Hence, we approximate this sum by extracting a large set of highly probable sentences as a sample from the space of all possible sentences (n-best approximation).
+    The set of considered sentences is computed by means of an a

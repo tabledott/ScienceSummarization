@@ -1,0 +1,8 @@
+ognizers perform poorly on tweets.
+    For example, applying the Stanford Named Entity Recognizer to one of the examples from Table 1 results in the following output: [Nintendo]LOC announced today that they Will release the [Nintendo]ORG 3DS in north [America]LOC march 27 for $250 The OOV word &#8216;Yess&#8217; is mistaken as a named entity.
+    In addition, although the first occurrence of &#8216;Nintendo&#8217; is correctly segmented, it is misclassified, whereas the second occurrence is improperly segmented &#8211; it should be the product &#8220;Nintendo 3DS&#8221;.
+    Finally &#8220;north America&#8221; should be segmented as a LOCATION, rather than just &#8216;America&#8217;.
+    In general, news-trained Named Entity Recognizers seem to rely heavily on capitalization, which we know to be unreliable in tweets.
+    Following Collins and Singer (1999), Downey et al. (2007) and Elsner et al.
+    (2009), we treat classification and segmentation of named entities as separate tasks.
+    This allows us to mor

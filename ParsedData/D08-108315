@@ -1,0 +1,7 @@
+an automatically construct a reasonably accurate gold standard for z, denoted as z*: as shown in Figure 2, we simply rely on the negator and polarity lexicons.
+    Because z* is not always correct, we allow the training procedure to replace z* with potentially better assignments as learning proceeds: in the event that the soft gold standard z* leads to an incorrect prediction, we search for an assignment that leads to a correct prediction to replace z*.
+    The exact procedure is given in Figure 1, and will be discussed again shortly.
+    Figure 1 shows how we modify the parameter update rule of MIRA (Crammer and Singer, 2003) to reflect the aspect of compositional inference.
+    In the event that the soft gold standard z* leads to an incorrect prediction, we search for zgood, the assignment with highest score that leads to a correct prediction, and replace z* with zgood.
+    In the event of no such zgood being found among the K-best assignments of z, we stick with z*.
+    The second issue is finding the assi

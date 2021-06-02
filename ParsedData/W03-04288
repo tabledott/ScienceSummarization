@@ -1,0 +1,9 @@
+%, already breaking the the phrase-based CoNLL baseline, though lower than the no-context HMM, which better models the context inside phrases.
+    Adding a current tag feature gave a score of 74.17%.
+    At this point, the bulk of outstanding errors were plausibly attributable to insufficient context information.
+    Adding even just the previous and next words and tags as (atomic) features raised performance to 82.39%.
+    More complex, joint context features which paired the current word and tag with the previous and next words and tags raised the score further to 83.09%, nearly to the level of the HMM, still without actually having any model of previous classification decisions.
+  
+  
+    In order to include state sequence features, which allow the classifications at various positions to interact, we have to abandon classifying each position independently.
+    Sequence-sensitive features can be included by chaining our local classifiers together and performing joint inference, i.e., by building a condition

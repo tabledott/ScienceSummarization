@@ -1,0 +1,8 @@
+full decoding algorithm is presented in Algorithm 1.
+    This algorithm can also be used for sequence classification (Williams and Peng, 1990), by converting the activation scores into probabilities (through the soft-max function, for instance) and using the standard dynamic programing search algorithm (also known as Viterbi search).
+    Algorithm 1 The RRM Decoding Algorithm Somewhat similarly, the MaxEnt algorithm has an associated set of weights , which are estimated during the training phase so as to maximize the likelihood of the data (Berger et al., 1996).
+    Given these weights, the model computes the probability distribution of a particular example as follows: where is a normalization factor.
+    After computing the class probability distribution, the assigned class is the most probable one a posteriori.
+    The sketch of applying MaxEnt to the test data is presented in Algorithm 2.
+    Similarly to the RRM model, we use the model to perform sequence classification, through dynamic programing.
+    Wi

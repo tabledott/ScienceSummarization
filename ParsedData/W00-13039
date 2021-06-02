@@ -1,0 +1,8 @@
+oned constraints.
+    If we assume that the dependency probabilities are mutually independent, P(DIB) could be rewritten as: that bi depends on (modifies) bi. fij is an n dimensional feature vector that represents various kinds of linguistic features related with the chunks bi and bj.
+    We obtain Db&#8222;t taking into all the combination of these probabilities.
+    Generally, the optimal solution Db&#8222;t can be identified by using bottom-up algorithm such as CYK algorithm.
+    Sekine suggests an efficient parsing technique for Japanese sentences that parses from the end of a sentence(Sekine et al., 2000).
+    We apply Sekine's technique in our experiments.
+    In order to use SVMs for dependency analysis, we need to prepare positive and negative examples since SVMs is a binary classifier.
+    We adopt a simple and effective method for our purpose: Out of all combination of two chunks in the training data, we take a pair of chunks that are in a dependency relation as a positive example, and two chunks th

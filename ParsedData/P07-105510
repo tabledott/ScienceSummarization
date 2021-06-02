@@ -1,0 +1,8 @@
+nd their weights, score(yd, ysi&#65533;1, ysi , s) = w &#183; f(yd, ysi&#65533;1, ysi , s) (1) and f is a high dimensional feature representation of the clique and w a corresponding weight vector.
+    Note that s is included in each score since it is given as input and can always be conditioned on.
+    In general, inference in undirected graphical models is intractable.
+    However, for the common case of sequences (a.k.a. linear-chain models) the Viterbi algorithm can be used (Rabiner, 1989; Lafferty et al., 2001).
+    Fortunately there is a simple technique that reduces inference in the above model to sequence classification with a constrained version of Viterbi.
+    The inference problem is to find the highest scoring labeling y for an input s, i.e., arg max score(y, s) Y If the document label yd is fixed, then inference in the model from Figure 1 reduces to the sequential case.
+    This is because the search space is only over the sentence labels ysi , whose graphical structure forms a chain.
+    Thus the

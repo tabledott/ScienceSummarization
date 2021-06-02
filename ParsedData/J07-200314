@@ -1,0 +1,7 @@
+without nonterminal symbols on the right-hand side), the model would reduce to a phrase-based model with monotone translation (no phrase reordering).
+    Entity rules.
+    Finally, for each sentence to be translated, we run some specialized translation modules to translate the numbers, dates, numbers, and bylines in the sentence, and insert these translations into the grammar as new rules.3 Such modules are often used by phrase-based systems as well, but here their translations can plug into hierarchical phrases, for example, into the rule allowing it to generalize over numbers of years.
+  
+  
+    Given a French sentence f, a synchronous CFG will have, in general, many derivations that yield f on the French side, and therefore (in general) many possible translations e. We now define a model over derivations D to predict which translations are more likely than others.
+    Following Och and Ney (2002), we depart from the traditional noisy-channel approach and use a more general log-linear model over derivations

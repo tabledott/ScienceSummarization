@@ -1,0 +1,12 @@
+case, given samples (ti, ?i) for i = 1, . . .
+			, ? produced by an MCMC algorithm, we can estimate ? as E?[?]
+			1 ? ?
+			i=1 ?i The remainder of this paper presents two MCMC algorithms for PCFGs.
+			Both algorithms proceed by setting the initial state of the Markov chain to a guess for (t, ?) and then sampling successive states usinga particular transition matrix.
+			The key difference be twen the two algorithms is the form of the transition matrix they assume.
+	
+	
+			The Gibbs sampler (Geman and Geman, 1984) isone of the simplest MCMC methods, in which tran sitions between states of the Markov chain resultfrom sampling each component of the state condi tioned on the current value of all other variables.
+			In our case, this means alternating between sampling from two distributions: P(t|?,w, ?) = n ? i=1 P(ti|wi, ?), and P(?|t,w, ?) = PD(?|f(t) + ?) = ? A?N PD(?A|fA(t) + ?A).
+			Thus every two steps we generate a new sample oft and ?.
+			This alternation between parsing and up dating ? is reminiscent of the

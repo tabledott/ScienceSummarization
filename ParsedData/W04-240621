@@ -1,0 +1,7 @@
+lusters created by an algorithm, we detect the significant clusters by ignoring (throwing out) clusters that contain less than 2% of the total instances.
+    The instances in the discarded clusters are counted as unclustered instances and are subtracted from the total number of instances.
+    Our basic strategy for evaluation is to assign available sense tags to the discovered clusters such that the assignment leads to a maximally accurate mapping of senses to clusters.
+    The problem of assigning senses to clusters becomes one of reordering the columns of a confusion matrix that shows how senses and clusters align such that the diagonal sum is maximized.
+    This corresponds to several well known problems, among them the Assignment Problem in Operations Research, or determining the maximal matching of a bipartite graph in Graph Theory.
+    During evaluation we assign one sense to at most one cluster, and vice versa.
+    When the number of discovered clusters is the same as the number of senses, then there i

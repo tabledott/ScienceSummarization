@@ -1,0 +1,11 @@
+ distribution, though as in Naive Bayes, it can be an excellent estimator for the purpose of ranking alignments.
+    If we have an aligned training corpus, the probabilities needed for the above equation are quite easy to obtain.
+    Link probabilities can be determined directly from |lk |(link counts) and |eik, fj,k| (co-occurrence counts).
+    For any co-occurring pair of words (eik, fjk), we check whether it has the feature ft.
+    If it does, we increment the count of |ft, eik, fjk|.
+    If this pair is also linked, then we increment the count of |ft, lk|.
+    Note that our definition of FTk allows for features that depend on previous links.
+    For this reason, when determining whether or not a feature is present in a given context, one must impose an ordering on the links.
+    This ordering can be arbitrary as long as the same ordering is used in training1 and probability evaluation.
+    A simple solution would be to order links according their French words.
+    We choose to order links according to the

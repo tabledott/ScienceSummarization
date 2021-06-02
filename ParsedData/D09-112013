@@ -1,0 +1,6 @@
+ranian army is not.
+    Again, a full solution would require its own model, here we mark as appositions any NPs immediately to the left of a head child NP where the head child NP is identified as a person by the NER tagger.9 We incorporate NP appositive annotation as a constraint during filtering.
+    Any mention which corresponds to an appositive node has its set of possible antecedents limited to its parent.
+    Along with the appositive constraint, we implement the i-within-i constraint that any non-appositive NP cannot be be coreferent with its parent; this constraint is then propagated to any node its parent is forced to agree with.
+    The order in which these constraints are applied is important, as illustrated by the example in Figure 4: First the list of possible antecedents for the appositive NP is constrained to only its parent.
+    Now that all appositives have been constrained, we apply the i-withini constraint, which prevents its from having the NP headed by brand in the set of possible antecede

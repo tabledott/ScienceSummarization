@@ -1,0 +1,10 @@
+ts to extend).
+    This refinement enables the model to readily handle relation phrases containing multiple verbs.
+    A consequence of this pattern is that the relation phrase must be a contiguous span of words in the sentence.
+    The syntactic constraint eliminates the incoherent relation phrases returned by existing systems.
+    For example, given the sentence Extendicare agreed to buy Arbor Health Care for about US $432 million in cash and assumed debt.
+    TEXTRUNNER returns the extraction (Arbor Health Care, for assumed, debt).
+    The phrase for assumed is clearly not a valid relation phrase: it begins with a preposition and splices together two distant words in the sentence.
+    The syntactic constraint prevents this type of error by simply restricting relation phrases to match the pattern in Figure 1.
+    The syntactic constraint reduces uninformative extractions by capturing relation phrases expressed via LVCs.
+    For example, the POS pattern matched against the sentence &#8220;Faust made a deal w

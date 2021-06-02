@@ -1,0 +1,8 @@
+lgorithm (called findGraph) and a subgraph isomorphism testing algorithm (called matchGraphs).
+    For expository reasons we do not address optimization strategies (but see Section 6).
+    We assume that a scene graph G = (VG, EG) is given.
+    The algorithm systematically tries all relevant subgraphs H of the scene graph G by starting with the subgraph containing only the vertex v (the target object) and expanding it recursively by trying to add edges from G that are adjacent to the subgraph H constructed up to that point.
+    In this way we know that the results will be a connected subgraph.
+    We refer to this set of adjacent edges as the H neighbors in G (denoted as G.neighbors(H)).
+    Formally: The algorithm returns the cheapest (least expensive) distinguishing subgraph H that refers to v, if such a distinguishing graph exists; otherwise it returns the undefined null graph -L. We use cost functions to guide the search process and to give preference to some solutions over others.
+    If H = (VH, EH) is 

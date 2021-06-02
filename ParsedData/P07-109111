@@ -1,0 +1,11 @@
+y node&#8217;s children are inverted or not, based on a set of features over the SL phrases corresponding to the two children nodes.
+    The features that we investigated include the leftmost, rightmost, head, and context words4, and their POSs, of the SL phrases, as well as the phrase labels of the SL phrases and their parent.
+  
+  
+    After learning reordering knowledge, the preprocessing module can apply it to the parse tree, tS, of an SL sentence S and obtain the n-best list of S'.
+    Since a ranking of S' is needed, we need some way to score each S'.
+    Here probability is used as the scoring metric.
+    In this section it is explained 4The context words of the SL phrases are the word to the left of the left phrase and the word to the right of the right phrase. how the n-best reorderings of S and their associated scores/probabilites are computed.
+    Let us first look into the scoring of a particular reordering.
+    Let Pr(p &#8212;* p') be the probability of reordering a phrase p into p'.
+    For a p

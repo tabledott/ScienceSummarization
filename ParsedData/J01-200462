@@ -1,0 +1,6 @@
+re.
+    Table 5 reports the word and sentence error rates for five different models: (i) the trigram model that comes with the lattices, trained on approximately 40M words, with a vocabulary of 20,000; (ii) the best-performing model from Chelba (2000), which was interpolated with the lattice trigram at A -= 0.4; (iii) our parsing model, with the same training and vocabulary as the perplexity trials above; (iv) a trigram model with the same training and vocabulary as the parsing model; and (v) no language model at all.
+    This last model shows the performance from the acoustic model alone, without the influence of the language model.
+    The log of the language model score is multiplied by the language model (LM) weight when summing the logs of the language and acoustic scores, as a way of increasing the relative contribution of the language model to the composite score.
+    We followed Chelba (2000) in using an LM weight of 16 for the lattice trigram.
+    For our model and the Treebank trigram model, the LM 

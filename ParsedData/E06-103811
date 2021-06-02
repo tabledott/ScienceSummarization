@@ -1,0 +1,9 @@
+here are some instances when a static compression rate is preferred.
+    A user may specifically want a 25% compression rate for all sentences.
+    This is not a problem for our decoding algorithm.
+    We simply augment the dynamic programming table and calculate C[i][r], which is the score of the best compression of length r that ends at word xi.
+    This table can be filled in as follows Thus, if we require a specific compression rate, we simple determine the number of words r that satisfy this rate and calculate C[n][r].
+    The new complexity is O(n2r).
+    So far we have defined the score of a compression as well as a decoding algorithm that searches the entire space of compressions to find the one with highest score.
+    This all relies on a score factorization over adjacent words in the compression, s(x, I(yj&#8722;1), I(yj)) = w &#183; f(x, I(yj&#8722;1), I(yj)).
+    In Section 3.3 we describe an online large-margin method for learning w. Here we present the feature representation f(x, I(yj&#8722;1), 

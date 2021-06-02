@@ -1,0 +1,6 @@
+   Lexical weights The lexical translation score is used for smoothing the phrase-table translation estimate.
+    This represents the translation probability of a phrase when it is decomposed into a series of independent word-for-word translation steps (Koehn et al., 2003), and has proven a very effective feature (Zens and Ney, 2004; Foster et al., 2006).
+    Pharaoh&#8217;s lexical weights require access to word-alignments; calculating these alignments between the source and target words in a phrase would prove difficult for a triangulated model.
+    Therefore we use a modified lexical score, corresponding to the maximum IBM model 1 score for the phrase pair: where the maximisation4 ranges over all one-tomany alignments and Z normalises the score by the number of possible alignments.
+    The lexical probability is obtained by interpolating a relative frequency estimate on the sourcetarget bitext with estimates from triangulation, in the same manner used for phrase translations in (1) and (2).
+    The additio

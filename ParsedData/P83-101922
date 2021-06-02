@@ -1,0 +1,9 @@
+r of complete constituents.
+    When the first window position ends with an editing signal and the first and second constituents in the window are of the same type, the first is expunged.
+    For example, in sentence (8) the first of two determiners separated by an editing signal is expunged and the first of two verbs is similarly expunged.
+    (8) I was just that -- the kind of guy that didn't have-like to have people worrying.
+    STACK COPY EDITOR.
+    If the first constituent in the window is preceded by an editing signal, the Stack Copy Editor looks into the stack for a constituent of the same type, and expunges any copy it finds there along with all descendants.
+    (In the current implementation, the Stack Copy Editor is allowed to look at successive nodes in the stack, back to the first COMP node or attention shifting boundary.
+    If it finds a copy, it expunges that copy along with any nodes that are at a shallower level in the stack.
+    If Fidditch were allowed to attach of incomplete constituents

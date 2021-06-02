@@ -1,0 +1,10 @@
+hich cover events relevant to .
+    We presuppose the existence of two generalpurpose, lower-level language tools&#8212;a name recognizer and a parser.
+    These tools are used to extract all potential patterns from the corpus.
+    The user provides a small number of seed patterns for .
+    The algorithm uses the corpus to iteratively bootstrap a larger set of good patterns for .
+    The algorithm/learner achieves this bootstrapping by utilizing the duality between the space of documents and the space of patterns: good extraction patterns select documents relevant to the chosen scenario; conversely, relevant documents typically contain more than one good pattern.
+    This duality drives the bootstrapping process.
+    The primary aim of the learning is to train a strong recognizer for ; is embodied in the set of good patterns.
+    However, as a result of training , the procedure also produces the set of documents that it deems relevant to&#9985;&#8212;the documents selected by .
+    Evaluation: to evaluate the

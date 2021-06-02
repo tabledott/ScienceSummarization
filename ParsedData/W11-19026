@@ -1,0 +1,6 @@
+elations are not annotated in the OntoNotes corpus, e.g., in the text [[Yongkang Zhou], the general manager], only the larger mention is annotated.
+    However, appositive and copulative relations provide useful (and highly precise) information to our coreference sieves.
+    For this reason, we keep these mentions as candidates, and remove them later during post-processing.
+    Once mentions are extracted, we sort them by sentence number, and left-to-right breadth-first traversal order in syntactic trees in the same sentence (Hobbs, 1977).
+    We select for resolution only the first mentions in each cluster,3 for two reasons: (a) the first mention tends to be better defined (Fox, 1993), which provides a richer environment for feature extraction; and (b) it has fewer antecedent candidates, which means fewer opportunities to make a mistake.
+    For example, given the following ordered list of mentions, {mi, m2, m3, m4, m1&#65533;, m6}, where the subscript indicates textual order and the superscript indicates cl

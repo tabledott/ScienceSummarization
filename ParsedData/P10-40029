@@ -1,0 +1,8 @@
+ still be too large to represent completely. cdec therefore supports three pruning strategies that can be used during intersection: full unpruned intersection (useful for tagging models to incorporate, e.g., Markov features, but not generally practical for translation), cube pruning, and cube growing (Huang and Chiang, 2007).
+  
+  
+    Semirings are a useful mathematical abstraction for dealing with translation forests since many useful quantities can be computed using a single linear-time algorithm but with different semirings.
+    A semiring is a 5-tuple (K, &#174;, &#174;, 0,1) that indicates the set from which the values will be drawn, K, a generic addition and multiplication operation, &#174; and &#174;, and their identities 0 and 1.
+    Multiplication and addition must be associative.
+    Multiplication must distribute over addition, and v &#174; 0 must equal 0.
+    Values that can be computed using the semirings include the number of derivations, the expected translation length, the entropy of the tran

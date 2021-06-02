@@ -1,0 +1,10 @@
+ed with labelled dependencies.
+    We use the Briscoe and Carroll (2006) version of DepBank, a 560 sentence subset used to evaluate the RASP parser.
+    Some translation is required to compare our brackets to DepBank dependencies.
+    We map the brackets to dependencies by finding the head of the NP, using the Collins (1999) head finding rules, and then creating a dependency between each other child&#8217;s head and this head.
+    This does not work perfectly, and mismatches occur because of which dependencies DepBank marks explicitly, and how it chooses heads.
+    The errors are investigated manually to determine their cause.
+    The results are shown in Table 2, with the number of agreements before manual checking shown in parentheses.
+    Once again the dependency numbers are higher than those at the NP level.
+    Similarly, when we only look at cases where we have inserted some annotations, we are looking at more difficult cases and the score is not as high.
+    The results of this analysis are quite posi

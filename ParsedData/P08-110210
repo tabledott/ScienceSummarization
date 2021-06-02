@@ -1,0 +1,5 @@
+ linear model, similar to those in SMT, can synthetically utilize different knowledge sources to conduct more accurate comparison between candidates.
+    In this layer, each knowledge source is treated as a feature with a corresponding weight denoting its relative importance.
+    Suppose we have n features gj (j = 1..n) coupled with n corresponding weights wj (j = 1..n), each feature gj gives a score gj(r) to a candidate r, then the total score of r is given by: The decoding procedure aims to find the candidate r* with the highest score: While the mission of the training procedure is to tune the weights wj(j = 1..n) to guarantee that the candidate r with the highest score happens to be the best result with a high probability.
+    As all the sub-models, including the perceptron, are regarded as separate features of the outside-layer linear model, we can train them respectively with special algorithms.
+    In our experiments we trained a 3-gram word language model measuring the fluency of the segmentation resul

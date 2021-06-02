@@ -1,0 +1,10 @@
+the classes we want included in our model are put into a &amp;quot;feature pool&amp;quot;.
+    For instance, if we want lexical features in our model which activate on a range of token_2 . token2, our vocabulary has a size of V, and we have 29 futures, we will add (5.
+    (V +1) &#8226; 29) lexical features to the pool.
+    The V + 1 term comes from the fact that we include all words in the vocabulary plus the unknown word.
+    From this pool, we then select all features which fire at least three times on the training corpus.
+    Note that this algorithm is entirely free of human intervention.
+    Once the modeler has selected the classes of features, MENE will both select all the relevant features and train the features to have the proper weightings.
+    We deviate from this basic algorithm in three ways: 1.
+    We exclude features which activate on some sort of &amp;quot;default&amp;quot; value of a history view.
+    Many history views have some sort of default value which they display for the vast majority

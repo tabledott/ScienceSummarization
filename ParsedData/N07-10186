@@ -1,0 +1,14 @@
+(t, ?|w) ? P(w|t)P(t|?)P(?)
+			= ( n ? i=1 P(wi|ti)P(ti|?)
+			) P(?)
+			with P(wi|ti) = 1 if y(ti) = wi, and 0 otherwise.
+			2.3 Dirichlet priors.
+			The first step towards computing the posterior dis tribution is to define a prior on ?.
+			We take P(?)
+			tobe a product of Dirichlet distributions, with one dis tribution for each non-terminal A ? N . The prior is parameterized by a positive real valued vector ?indexed by productions R, so each production probability ?A??
+			has a corresponding Dirichlet param eter ?A??.
+			Let RA be the set of productions in R 140 with left-hand side A, and let ?A and ?A refer to the component subvectors of ? and ? respectively indexed by productions in RA.
+			The Dirichlet prior PD(?|?)
+			is: PD(?|?)
+			= ? A?N PD(?A|?A), where PD(?A|?A) = 1 C(?A) ? r?RA ??r?1r and C(?A) = ? r?RA ?(?r) ?(?r?RA ?r) (2) where ? is the generalized factorial function andC(?)
+			is a normalization constant that does not de pend on ?A.Dirichlet priors are useful because they are con jugate to the

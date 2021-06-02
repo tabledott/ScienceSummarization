@@ -1,0 +1,7 @@
+word pair.
+			For a given word pair, such as mason:stone, the first step is to generate morphological variations,such as masons:stones.
+			In the following experi ments, we use morpha (morphological analyzer)and morphg (morphological generator) for mor phological processing (Minnen et al, 2001).1 The second step is to search in a large corpus for all phrases of the following form: ?[0 to 1 words] X [0 to 3 words] Y [0 to 1 words]?
+			In this template, X:Y consists of morphologicalvariations of the given word pair, in either order; for example, mason:stone, stone:mason, masons:stones, and so on.
+			A typical phrase for ma son:stone would be ?the mason cut the stone with?.
+			We then normalize all of the phrases that are found, by using morpha to remove suffixes.
+			The template we use here is similar to Turney (2006), but we have added extra context wordsbefore the X and after the Y . Our morpholog ical processing also differs from Turney (2006).In the following experiments, we search in a cor pus of 5 ? 1010 

@@ -1,0 +1,10 @@
+s two new English words.
+    The first has fertility zero, while the second is aligned to a single French word.
+    Extend aligns an additional French word to the most recent English word, increasing its fertility.
+    AddNull aligns a French word to the English NULL element.
+    AddZfert is by far the most expensive operation, as we must consider inserting a zero-fertility English word before each translation of each unaligned French word.
+    With an English vocabulary size of 40,000, AddZfert is 400,000 times more expensive than AddNull!
+    We can reduce the cost of AddZfert in two ways.
+    First, we can consider only certain English words as candidates for zero-fertility, namely words which both occur frequently and have a high probability of being assigned frequency zero.
+    Second, we can only insert a zero-fertility word if it will increase the probability of a hypothesis.
+    According to the definition of the decoding problem, a zero-fertility English word can only make a decoding more likely by i

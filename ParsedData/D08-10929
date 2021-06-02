@@ -1,0 +1,10 @@
+onolingual features), we create label-specific versions by conjoining the label pair (`(n), `(n')).
+    We use both the typed and untyped variants of all features.
+  
+  
+    Recall that our data condition supplies sentence pairs (s, s') along with gold parse pairs (g, g').
+    We do not observe the alignments a which link these parses.
+    In principle, we want to find weights which maximize the marginal log likelihood of what we do observe given our sentence pairs:3 Child labels: In addition, we also encode whether w&#8727; = arg max EP(g,a,g0|s,s0,w) (1) certain label pairs occur as children of matched w a nodes.
+    Let c(n, `) select the children of n with la- = arg max Ea exp(w&gt;&#966;(g, a, g0)) bel `. w &#65533; &#65533;a exp(w&gt;&#966;(t, a, t0)) (2) (t,t') CHILDLABEL(`, `') = |c(n, `) |&#183; |c(n', `')| Note that the corresponding &#8220;self labels&#8221; feature is not listed because it arises in the next section as a typed variant of the bias feature.
+    There are several challenges.
+    Firs

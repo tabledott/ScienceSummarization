@@ -1,0 +1,9 @@
+forest.
+    In this case, loops do not change values, and we use the same algorithm as for the Viterbi semiring.
+    In an implementation of the Viterbi-n-best semiring, in practice, loops can change values, but at most n times, so the same algorithm used for the Viterbi semiring still works.
+    Elsewhere (Goodman 1998), we describe theoretically correct implementations for both the Viterbi-derivation and Viterbin-best semirings that keep all values in the event of ties, preserving addition's associativity.
+    The last semiring we consider is the inside semiring.
+    This semiring is the most difficult.
+    There are two cases of interest, one of which we can solve exactly, and the other of which requires approximations.
+    In many cases involving looping buckets, all deduction rules will be of the form cf7x, where al and b are items in the looping bucket, and x is either a rule, or an item in a previously computed bucket.
+    This case corresponds to the items used for deducing singleton productions, such

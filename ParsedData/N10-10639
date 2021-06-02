@@ -1,0 +1,7 @@
+dicating the corresponding target sentence to which it is aligned (or null).
+    The model is similar to the discriminative CRF-based word alignment model of (Blunsom and Cohn, 2006).
+    Our features can be grouped into four categories.
+    Features derived from word alignments We use a feature set inspired by (Munteanu and Marcu, 2005), who defined features primarily based on IBM Model 1 alignments (Brown et al., 1993).
+    We also use HMM word alignments (Vogel et al., 1996) in both directions (source to target and target to source), and extract the following features based on these four alignments:1 We also define two more features which are independent of word alignment models.
+    One is a sentence length feature taken from (Moore, 2002), which models the length ratio between the source and target sentences with a Poisson distribution.
+    The other feature is the difference in relative document position of the two sentences, capturing the idea that the aligned articles have a similar topic progression.

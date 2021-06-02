@@ -1,0 +1,9 @@
+gram training problems, or more rarely, incorrect or brittle phonetic models.
+    For example, Long occurs much more often than Ron in newspaper text, and our word selection does not exclude phrases like Long Island.
+    So we get long wyden instead of ron wyden.
+    One way to fix these problems is by manually changing unigram probabilities.
+    Reducing P(long) by a factor of ten solves the problem while maintaining a high score for P(long rongu).
+    Despite these problems, the machine's performance is impressive.
+    When word separators (p) are removed from the katakana phrases, rendering the task exceedingly difficult for people, the machine's performance is unchanged.
+    In other words, it offers the same top-scoring translations whether or not the separators are present; however, their presence significantly cuts down on the number of alternatives considered, improving efficiency.
+    When we use OCR, 7% of katakana tokens are misrecognized, affecting 50% of test strings, but translation accuracy onl

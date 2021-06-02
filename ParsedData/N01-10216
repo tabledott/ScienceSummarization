@@ -1,0 +1,9 @@
+om 1.0 gives the total probability of all the analyses the parser has disconfirmed.
+    If the human parser is eager, then the &#8220;work&#8221; done during sentence processing is exactly this disconfirmation.
+  
+  
+    The computation of prefix probabilities takes advantage of the design of the Earley parser (Earley, 1970) which by itself is not probabilistic.
+    In this section I provide a brief overview of Stolcke&#8217;s algorithm but the original paper should be consulted for full details (Stolcke, 1995).
+    Earley parsers work top-down, and propagate predictions confirmed by the input string back up through a set of states representing hypotheses the parser is entertaining about the structure of the sentence.
+    The global state of the parser at any one time is completely defined by this collection of states, a chart, which defines a tree set.
+    A state is a record that specifies An Earley parser has three main functions, predict, scan and complete, each of which can enter new states into the char

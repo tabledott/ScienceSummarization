@@ -1,0 +1,7 @@
+sp), whose value is the word overlap of the sentences in sp.
+    According to the ME principle, the optimal parametric form of the model of our data, taking into account the constraints imposed by the feature functions, is a log linear combination of these functions.
+    Thus, for our classification problem, we have: where ci is the class (c0=&#8221;parallel&#8221;, c1=&#8221;not parallel&#8221;), Z(sp) is a normalization factor, and fij are the feature functions (indexed both by class and by feature).
+    The resulting model has free parameters &#955;j, the feature weights.
+    The parameter values that maximize the likelihood of a given training corpus can be computed using various optimization algorithms (see [Malouf 2002] for a comparison of such algorithms).
+    For our particular classification problem, we need to find feature functions that distinguish between parallel and non-parallel sentence pairs.
+    For this purpose, we compute and exploit word-level alignments between the sentences in each pair.

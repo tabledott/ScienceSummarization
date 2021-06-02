@@ -1,0 +1,9 @@
+d (Nocedal 1980; Nocedal and Wright 1999).
+    The parser was implemented in C++ with the LiLFeS library (Makino et al. 2002), and various speed-up techniques for HPSG parsing were used such as quick check and iterative beam search (Tsuruoka, Miyao, and Tsujii 2004; Ninomiya et al.
+    2005).
+    Other efficient parsing techniques, including global thresholding, hybrid parsing with a chunk parser, and large constituent inhibition, were not used.
+    The results obtained using these techniques are given in Ninomiya et al. A limit on the number of constituents was set for time-out; the parser stopped parsing when the number of constituents created during parsing exceeded 50,000.
+    In such a case, the parser output nothing, and the recall was computed as zero.
+    Features occurring more than twice were included in the probabilistic models.
+    A method of filtering lexical entries was applied to the parsing of training data (Section 4.4).
+    Unless otherwise noted, parameters for filtering were n = 10 and c 

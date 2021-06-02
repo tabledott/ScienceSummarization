@@ -1,0 +1,6 @@
+rent methods for deriving the set of initial frequency estimates.
+    Note also that the costs currently used in the system are actually string costs, rather than word costs.
+    This is because our corpus is not annotated, and hence does not distinguish between the various words represented by homographs, such as 34, which could be 34 lady jiangl 'be about to' or g Inc jiang4 `(military) general'&#8212;as in dNiti xiao3-jiang4 'little general.'
+    In such cases we assign all of the estimated probability mass to the form with the most likely pronunciation (determined by inspection), and assign a very small probability (a very high cost, arbitrarily chosen to be 40) to all other variants.
+    In the case of 34, the most common usage is as an adverb with the pronunciation jiangl, so that variant is assigned the estimated cost of 5.98, and a high cost is assigned to nominal usage with the pronunciation jiang4.
+    The less favored reading may be selected in certain contexts, however; in the case of 34, for exam

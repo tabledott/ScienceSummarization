@@ -1,0 +1,12 @@
+ut differentiated constituent categories.
+    Just as in the baseline system, we rely on the language and translation models to take up the slack in place of an explicit grammar.
+    In this approach, an 0(T7) algorithm similar to the one described later can be constructed to replace A* search.
+    However we do not feel it is worth preserving offset (or alignment or distortion) parameters simply for the sake of preserving the original translation channel model.
+    These parameterizations were only intended to crudely model word-order variation.
+    Instead, the BTG itself can be used directly to probabilistically rank alternative alignments, as described next.
+  
+  
+    The second possibility is to use a stochastic bracketing transduction grammar (SBTG) in the channel model, replacing the translation model altogether.
+    In a SBTG, a probability is associated with each production.
+    Thus for the normal-form BTG, we have: The translation lexicon is encoded in productions of the third kind.
+    The latter 

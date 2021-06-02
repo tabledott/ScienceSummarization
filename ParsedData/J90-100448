@@ -1,0 +1,11 @@
+once there is some node X (the first argument of head_gap), then there could just as well have been the empty node Y (the second argument of head_gap).
+    Note that a lot of information is shared between the two nodes, thereby making the relation between anaphor and antecedent explicit.
+    Such rules can be incorporated in the generator by adding the following clause for connect: connect(Pivot,Root) head_ gap(Pivot,Gap), connect(Gap,Root).
+    Note that the problem is now solved because the gap will only be selected after its antecedent has been built.
+    Some parts of this antecedent are then unified with some parts of the gap.
+    The subcategorization list, for example, will thus be instantiated in time.
+  
+  
+    We mentioned earlier that, although the algorithm as stated is applicable specifically to generation, we expect that it could be thought of as an instance of a uniform architecture for parsing and generation, as the Earley generation algorithm was.
+    Two pieces of evidence point this way.
+  

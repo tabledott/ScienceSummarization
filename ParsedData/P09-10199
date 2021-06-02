@@ -1,0 +1,7 @@
+he incoming edges (Berg et al., 2008).
+    Since the envelopes of the incoming edges are convex hulls, the Minkowski sum provides an upper bound to the number of line segments that constitute the resulting envelope: the bound is the sum over the number of line segments in the envelopes of the incoming edges, i.e.
+    : Algorithm 1 shows the pseudo code for computing the Minkowski sum over multiple envelopes.
+    The line objects E used in this algorithm are encoded as 4-tuples, each consisting of the xintercept with E&#8217;s left-adjacent line stored as E.x, the slope E.m, the y-intercept E.y, and the (partial) derivation tree E.D.
+    At the beginning, the leftmost line segment of each envelope is inserted into a priority queue pq.
+    The priority is defined in terms of a line&#8217;s x-intercept such that lower values imply higher priority.
+    Hence, the priority queue enumerates all line segments from left to right in ascending order of their x-intercepts, which is the order needed to compute the Minkow

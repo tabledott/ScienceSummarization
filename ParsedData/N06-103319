@@ -1,0 +1,11 @@
+n-binarizable rules and did not observe any difference in BLEU scores.
+    So we safely move a step further, focusing on the binarizable rules only.
+    The decoder now works on the binary translation rules supplied by an external synchronous binarizer.
+    As shown in Section 1, this results in a simplified decoder with a polynomial time complexity, allowing less aggressive and more effective pruning based on both translation model and language model scores.
+    We compare the two binarization schemes in terms of translation quality with various pruning thresholds.
+    The rule set is that of the previous section.
+    The test set has 116 Chinese sentences of no longer than 15 words.
+    Both systems use trigram as the integrated language model.
+    Figure 7 demonstrates that decoding accuracy is significantly improved after synchronous binarization.
+    The number of edges proposed during decoding is used as a measure of the size of search space, or time efficiency.
+    Our system is consistently faster and

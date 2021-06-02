@@ -1,0 +1,10 @@
+s designed to jointly perform part-of-speech tagging, name finding, syntactic parsing, and relation finding in a single process.
+    For each constituent, the head is generated first, followed by the modifiers, which are generated from the head outward.
+    Head words, along with their part-of-speech tags and features, are generated for each modifier as soon as the modifier is created.
+    Word features are introduced primarily to help with unknown words, as in (Weischedel et al. 1993).
+    We illustrate the generation process by walking through a few of the steps of the parse shown in Figure 3.
+    At each step in the process, a choice is made from a statistical distribution, with the probability of each possible selection dependent on particular features of previously generated elements.
+    We pick up the derivation just after the topmost S and its head word, said, have been produced.
+    The next steps are to generate in order: In this case, there are none.
+    8.
+    Post-modifier constituents for the PE

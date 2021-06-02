@@ -1,0 +1,8 @@
+s between the three main contributions of this paper: Variational Bayes, tic-tactoe pruning, and word-to-phrase bootstrapping.
+    We start from sentence-aligned bilingual data and run IBM Model 1 in both directions to obtain two translation tables.
+    Then we use the efficient bidirectional tic-tac-toe pruning to prune the bitext space within each of the sentence pairs; ITG parsing will be carried out on only this this sparse set of bitext cells.
+    The first stage of training is word-based ITG, using the standard iterative training procedure, except VB replaces EM to focus on a sparse prior.
+    After several training iterations, we obtain the Viterbi alignments on the training data according to the final model.
+    Now we transition into the second stage &#8211; the phrasal training.
+    Before the training starts, we apply the non-compositional constraints over the pruned bitext space to further constrain the space of phrase pairs.
+    Finally, we run phrasal ITG iterative training using VB for a certai

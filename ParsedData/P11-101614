@@ -1,0 +1,11 @@
+.
+    By using a simple co-reference resolution tool adapted from (Soon et al., 2001), we add all the mentions referring to the target into the extended target set.
+    2.
+    Identifying the top K nouns and noun phrases which have the strongest association with the target.
+    Here, we use Pointwise Mutual Information (PMI) to measure the association.
+    Where p(w,t), p(w), and p(t) are probabilities of w and t co-occurring, w appearing, and t appearing in a tweet respectively.
+    In the experiments, we estimate them on a tweet corpus containing 20 million tweets.
+    We set K = 20 in the experiments based on empirical observations.
+    3.
+    Extracting head nouns of all extended targets, whose PMI values with the target are above some predefined threshold, as new extended targets.
+    For instance, suppose we have found &#8220;Microsoft Technologies&#8221; as the extended target, we will further add &#8220;technologies&#8221; into the extended target set if the PMI value for &#8220;technologies&#8221; an

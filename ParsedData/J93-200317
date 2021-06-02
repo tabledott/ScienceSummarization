@@ -1,0 +1,10 @@
+4(e, f).
+    If e has length 1 and f has length in, there are /m different connections that can be drawn between them because each of the m French words can be connected to any of the 1 English words.
+    Since an alignment is determined by the connections that it contains, and since a subset of the possible connections can be chosen in 2&amp;quot; ways, there are 2&amp;quot; alignments in A(e, f).
+  
+  
+    In this section, we develop a series of five translation models together with the algorithms necessary to estimate their parameters.
+    Each model gives a prescription for computing the conditional probability Pr(f le), which we call the likelihood of the translation (f, e).
+    This likelihood is a function of a large number of free parameters that we must estimate in a process that we call training.
+    The likelihood of a set of translations is the product of the likelihoods of its members.
+    In broad outline, our plan is to guess values for these parameters and then to apply the EM algorithm (Baum 

@@ -1,0 +1,7 @@
+ and other algorithms.
+    Regression implicitly encodes the &#8220;similar items, similar labels&#8221; heuristic, in that one can restrict consideration to &#8220;gradual&#8221; functions.
+    But we can also think of our task as a metric labeling problem (Kleinberg and Tardos, 2002), a special case of the maximum a posteriori estimation problem for Markov random fields, to explicitly encode our desideratum.
+    Suppose we have an initial label preference function , perhaps computed via one of the two methods described above.
+    Also, let be a distance metric on labels, and let denote the nearest neighbors of item according to some item-similarity function .
+    Then, it is quite natural to pose our problem as finding a mapping of instances to labels (respecting the original labels of the training instances) that minimizes learning6 (Atkeson, Moore, and Schaal, 1997).)
+    In a sense, we are using explicit item and label similarity information to increasingly penalize the initial classifier as it assigns m

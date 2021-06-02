@@ -1,0 +1,10 @@
+some other instances of the same word that should be aligned to an actual source language word.
+    For example, we may have an English/French sentence pair that contains two instances of of in the English sentence, and five instances of de in the French sentence.
+    Even if the null word and of have the same initial probabilty of generating de, in iterating EM, this sentence is going to push the model towards estimating a higher probabilty that of generates de and a lower estimate that the null word generates de.
+    This happens because there are are two instances of of in the source sentence and only one hypothetical null word, and Model 1 gives equal weight to each occurrence of each source word.
+    In effect, of gets two votes, but the null word gets only one.
+    We seem to need more instances of the null word for Model 1 to assign reasonable probabilities to target words aligning to the null word.
+  
+  
+    We address the nonstructural problems of Model 1 discussed above by three methods.
+    First, 

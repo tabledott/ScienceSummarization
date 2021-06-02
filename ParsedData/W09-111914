@@ -1,0 +1,7 @@
+ words in the document which contains the current token and the token appears before a company marker such as ltd. elsewhere in text.
+    In this work, we call this type of features context aggregation features.
+    Manually designed context aggregation features clearly have low coverage, therefore we used the following approach.
+    Recall that for each token instance xi, we use as features the tokens in the window of size two around it: ci = (xi&#8722;2, xi&#8722;1, xi, xi+1, xi+2).
+    When the same token type t appears in several locations in the text, say xi1, xi2, ... , xiN, for each instance xis, in addition to the context features cis, we also aggregate the context across all instances within 200 tokens: Context aggregation as done above can lead to excessive number of features.
+    (Krishnan and Manning, 2006) used the intuition that some instances of a token appear in easily-identifiable contexts.
+    Therefore they apply a baseline NER system, and use the resulting predictions as features in a seco

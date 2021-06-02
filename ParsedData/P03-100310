@@ -1,0 +1,15 @@
+tic/semantic node.
+    Here are some of the test cases we consider for the question-answer pair in Figure 1: Q: When did Elvis Presley die ?
+    SA1: Presley died A_PP PP PP , and SNT .
+    Q: When did Elvis Presley die ?
+    SAi: Presley died PP PP in A_DATE, and SNT .
+    Q: When did Elvis Presley die ?
+    SAj: Presley died PP PP PP , and NP return by A_NP NP .
+    If we learned a good model, we would expect it to assign a higher probability to P(Q  |Sai) than to P(Q |Sa1) and P(Q  |Saj).
+  
+  
+    For training, we use three different sets.
+    (i) The TREC9-10 set consists of the questions used at TREC9 and 10.
+    We automatically generate answer-tagged sentences using the TREC9 and 10 judgment sets, which are lists of answer-document pairs evaluated as either correct or wrong.
+    For every question, we first identify in the judgment sets a list of documents containing the correct answer.
+    For every document, we keep only the sentences that overlap with the question terms and contain the correct answ

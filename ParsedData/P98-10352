@@ -1,0 +1,10 @@
+ant to evaluate its potential for speech recognition are presented.
+  
+  
+    Consider predicting the word after in the sentence: the contract ended with a loss of 7 cents after trading as low as 89 cents.
+    A 3-gram approach would predict after from (7, cents) whereas it is intuitively clear that the strongest predictor would be ended which is outside the reach of even 7-grams.
+    Our assumption is that what enables humans to make a good prediction of after is the syntactic structure in the past.
+    The linguistically correct partial parse of the word history when predicting after is shown in Figure 1.
+    The word ended is called the headword of the constituent (ended (with (...))) and ended is an exposed headword when predicting after &#8212; topmost headword in the largest constituent that contains it.
+    The syntactic structure in the past filters out irrelevant words and points to the important ones, thus enabling the use of long distance information when predicting the next word.
+    Our model wil

@@ -1,0 +1,10 @@
+ale [Levinson et al., 1983].
+    That is, one maximizes the log probability of each sequence of state transitions, Care must be taken with zero probabilities.
+    However, this can be elegantly handled through the use of IEEE negative infinity [P754, 1981].
+    As can be seen from equations 1-5, the time cost of training is 0(TN2).
+    Similarly, as given in equation 6, the Viterbi algorithm is also 0(TN2).
+    However, in part-of-speech tagging, the problem structure dictates that the matrix of symbol probabilities B is sparsely populated.
+    That is, 0 if the ambiguity class corresponding to symbol j includes the part-of-speech tag associated with state i.
+    In practice, the degree of overlap between ambiguity classes is relatively low; some tokens are assigned unique tags, and hence have only one non-zero symbol probability.
+    The sparseness of B leads one to consider restructuring equations 1-6 so a check for zero symbol probability can obviate the need for further computation.
+    Equation 1 is alre

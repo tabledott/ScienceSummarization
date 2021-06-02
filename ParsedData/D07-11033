@@ -1,0 +1,10 @@
+ Our Approach to Statistical Machine.
+			TranslationWe define a phrasetable as a set of source phrases (n grams) s?
+			and their translations (m-grams) t?, along with associated translation probabilities p(s?|t?) and p(t?|s?).
+			These conditional distributions are derivedfrom the joint frequencies c(s?, t?)
+			of source / tar get n,m-grams observed in a word-aligned parallel corpus.
+			These joint counts are estimated using the phrase induction algorithm described in (Koehn etal., 2003), with symmetrized word alignments gen erated using IBM model 2 (Brown et al, 1993).
+			Phrases are limited to 8 tokens in length (n,m ? 8).
+			Given a source sentence s, our phrase-based SMT system tries to find the target sentence t?
+			that is the most likely translation of s. To make search more efficient, we use the Viterbi approximation and seek the most likely combination of t and its alignment a with s, rather than just the most likely t: t?
+			= argmax t p(t|s) ? argmax t,a p(t,a|s),where a = (s?1, t?1, j1), ..., (s?K

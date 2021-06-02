@@ -1,0 +1,10 @@
+iors are stronger when less evidence is available from the input.
+    In the limit as corpus size goes to infinity, the BHMM and MLHMM will make identical predictions.
+    In unsupervised learning, it is not always reasonable to assume that a large tag dictionary is available.
+    To determine the effects of reduced or absent dictionary information, we ran a set of experiments inspired by those of Smith and Eisner (2005).
+    First, we collapsed the set of 45 treebank tags onto a smaller set of 17 (the same set used by Smith and Eisner).
+    We created a full tag dictionary for this set of tags from the entire treebank, and also created several reduced dictionaries.
+    Each reduced dictionary contains the tag information only for words that appear at least d times in the training corpus (the 24k corpus, for these experiments).
+    All other words are fully ambiguous between all 17 classes.
+    We ran tests with d = 1, 2, 3, 5, 10, and oc (i.e., knowledge-free syntactic clustering).
+    With standard accuracy

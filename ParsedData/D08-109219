@@ -1,0 +1,8 @@
+   The results are in Table 4.
+    For F1 evaluation, which is on a very small set of sentences, we selected 500 as the value with the best speed/performance tradeoff.
+    However, when reranking our entire MT corpus, we used a value of 200, sacrificing a tiny bit of performance for an extra factor of 2 in speed.8 Since our bitext parser currently operates as a reranker, the quality of the trees is limited by the quality of the k-best lists produced by the baseline parsers.
+    To test this limitation, we evaluated performance on the dev set using baseline k-best lists of varying length.
+    Training parameters were fixed (full training setup with k = 100) and test set pruning was disabled for these experiments.
+    The results are in Table 5.
+    The relatively modest gains with increasing k, even as the oracle scores continue to improve, indicate that performance is limited more by the model&#8217;s reliance on the baseline parsers than by search errors that result from the reranking approach.
+    Our final

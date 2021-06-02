@@ -1,0 +1,10 @@
+e maximum jump is 2 phrases and the reordering happens within awindow of 3 phrases.
+			By insisting that the pro cess start and end at state 1 (Fig 5), we ensure that the model is not deficient.
+			A WFST implementing the MJ-2 model can be easily constructed for bothphrase alignment and translation, following the con struction described for the MJ-1 model.
+	
+	
+			The Translation Template Model relies on an in ventory of target language phrases and their source language translations.
+			Our goal is to estimate the reordering model parameters P (b|x, u) for each phrase-pair (x, u) in this inventory.
+			However, when translating a given test set, only a subset of the phrase-pairs is needed.
+			Although there may be an advantage in estimating the model parameters under an inventory that covers all the training bitext, we fix the phrase-pair inventory to cover only the phrases on the test set.
+			Estimation of the reordering model parameters over the training bitext is then performed under this test-set specific i

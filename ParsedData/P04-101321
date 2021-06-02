@@ -1,0 +1,10 @@
+ty.
+    Modifying the training method to systematically optimize the decision boundary (as in large margin methods such as Support Vector Machines) is an area of future research.
+  
+  
+    The complete parsing system uses the probability estimates computed by the SSN to search for the most probable parse.
+    The search incrementally constructs partial parses d1,..., di by taking a parse it has already constructed d1,..., di&#8722;1 and using the SSN to estimate a probability distribution P(di|d1,..., di&#8722;1, ...) over possible next decisions di.
+    These probabilities are then used to compute the probabilities for d1,..., di.
+    In general, the partial parse with the highest probability is chosen as the next one to be extended, but to perform the search efficiently it is necessary to prune the search space.
+    The main pruning is that only a fixed number of the most probable derivations are allowed to continue past the shifting of each word.
+    Setting this post-word beam width to 5 achieves fast par

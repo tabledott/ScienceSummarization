@@ -1,0 +1,6 @@
+ition probabilities Following Och and Ney (2003), we use a fixed value p0 for the probability of jumping to a null state, which can be optimized on held-out data, and the overall distortion model becomes As suggested by Liang et al. (2006), we can group the distortion parameters {c(d)}, d= i - i', into a few buckets.
+    In our implementation, 11 buckets are used for c(&#8804;-4), c(-3), ... c(0), ..., c(5), c(&#8805;6).
+    The probability mass for transitions with jump distance larger than 6 and less than -4 is uniformly divided.
+    By doing this, only a handful of c(d) parameters need to be estimated.
+    Although it is possible to estimate them using the EM algorithm on a small development set, we found that a particularly simple model, described below, works surprisingly well in our experiments.
+    Since both the backbone and the hypothesis are in the same language, It seems intuitive that the distortion model should favor monotonic alignment and only allow non-monotonic alignment with a certain penalt

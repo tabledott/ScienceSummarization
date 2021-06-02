@@ -1,0 +1,5 @@
+ristic determines that there is one potential noun phrase that could contain an article: teacher.
+			For this possible article position, the article presence/absence classifier determines the probability of the presence of an article, based on a feature vector of pos tags and surrounding lexical items: p(article + teacher) = 0.54 Given that the probability of an article in this position is higher than the probability of not having an article, the second classifier is consulted to provide the most likely choice of article: p(the) = 0.04 p(a/an) = 0.96 Given this probability distribution, a correction suggestion I am teacher from Korea -&gt; I am a teacher from Korea is generated and passed on to evaluation by the language model component.
+			4.2 The Language Model.
+			The language model is a 5-gram model trained on the English Gigaword corpus (LDC2005T12).
+			In order to preserve (singleton) context information as much as possible, we used interpolated Kneser Ney smoothing (Kneser and Ney 1995) without count c

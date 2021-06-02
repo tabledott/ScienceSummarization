@@ -1,0 +1,8 @@
+ of possible parser actions.
+    This sequence is the parse for the phrase structure tree.
+    We can then define a probabilistic model of phrase structure trees by defining a probabilistic model of each parser action in its parse context, and apply machine learning techniques to learn this model of parser actions.
+    Many statistical parsers (Ratnaparkhi, 1999; Collins, 1999; Charniak, 2000) are based on a history-based model of parser actions.
+    In these models, the probability of each parser action is conditioned on the history of previous actions in the parse.
+    But here again we are faced with an unusual situation for machine learning problems, conditioning on an unbounded amount of information.
+    A major challenge in designing a history-based statistical parser is choosing a finite representation of the unbounded parse history from which the probability of the next parser action can be accurately estimated.
+    Previous approaches have used a hand-crafted finite set of features to represent the p

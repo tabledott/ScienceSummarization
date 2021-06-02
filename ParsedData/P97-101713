@@ -1,0 +1,12 @@
+ch English sound without regard to context.
+    We have built also context-based models, using decision trees recoded as WFSTs.
+    For example. at the end of a word, English T is likely to come out as (t o) rather than (t).
+    However, context-based models proved unnecessary case), as learned by estimation-maximization.
+    Only mappings with conditional probabilities greater than 1% are shown, so the figures may not sum to 1. for back-transliteration.'
+    They are more useful for English-to-Japanese forward transliteration.
+    To map Japanese sound sequences like (in o o t a a) onto katakana sequences like &#8212;), we manually constructed two WFSTs.
+    Composed together, they yield an integrated WFST with 53 states and 303 arcs.
+    The first WFST simply merges long Japanese vowel sounds into new symbols aa, uu, ee, and oo.
+    The second WFST maps Japanese sounds onto katakana symbols.
+    The basic idea is to consume a whole syllable worth of sounds before producing any katakana, e.g.
+    : o: 3 This

@@ -1,0 +1,7 @@
+xtensive description given the literature available on it (Jelinek and Mercer, 1980).
+    Since the number of parses for a given word prefix Wk grows exponentially with k,I{Tk}1 0(2k), the state space of our model is huge even for relatively short sentences so we had to use a search strategy that prunes it.
+    Our choice was a synchronous multistack search algorithm which is very similar to a beam search.
+    Each stack contains hypotheses &#8212; partial parses &#8212; that have been constructed by the same number of predictor and the same number of parser operations.
+    The hypotheses in each stack are ranked according to the ln(P(W, T)) score, highest on top.
+    The width of the search is controlled by two parameters: above pruning strategy proved to be insufficient so we chose to also discard all hypotheses whose score is more than the log-probability threshold below the score of the topmost hypothesis.
+    This additional pruning step is performed after all hypotheses in stage k' have been extended wi

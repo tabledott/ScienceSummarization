@@ -1,0 +1,12 @@
+nd IOB chunk tag of 3 tokens to the right and 3 to the left.
+    We use IGTREE as implemented in TiMBL (version 6.1.2) (Daelemans et al., 2007).
+    We also experimented with IB1, but it produced lower results.
+    The classifier was parameterised by using gain ratio for feature weighting.
+    According to the gain ratio scores, the most informative features are the lemma and word of the token in focus, followed by the word of the token to the right and of the token to the left.
+    We performed two experiments.
+    In one, the test file is preprocessed using a list of hedge cues extracted from the training corpus.
+    The list comprises the following hedge cues listed in (4).
+    Instances with these hedge cues are directly assigned their class.
+    The classifier predicts the class of the rest of tokens.
+    In the other experiment we don&#8217;t preprocess the test file.
+    (4) appear, apparent, apparently, believe, either, estimate, hypothesis, hypothesize, if, imply, likely, may, might, or, perhaps, pos

@@ -1,0 +1,6 @@
+ode (except terminals) in a given parse tree enters the queue exactly twice: once during the top-down cycle, during which it enters into the queue all of its possible first children, and once again during the bottom-up cycle, during which it enters all of its possible right siblings, given its parent.
+    The control strategy repeatedly pops the queue, advancing the active hypothesis by exactly one step, and applying the appropriate node-level unifications.
+    Each feature specification for each grammar node contains a feature name, a value or set of values for that feature, a logic function, and a specification as to whether the unification should take place during the top-down or during the bottom-up cycle.
+    All features are associated with nodes (categories) rather than with rules, and each node performs exactly the same unifications without regard to whatever rule it might be a part of.
+    In fact, during the active parse process, a rule is not an explicit entity while it is being formed.
+    Each in

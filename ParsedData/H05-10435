@@ -1,0 +1,10 @@
+ opinion phrases, which are adjec tive, noun, verb or adverb phrases representing customer opinions.
+			Opinions can be positive or negative and vary in strength (e.g., ?fantastic?
+			is stronger than ?good?).
+	
+	
+			This section gives an overview of OPINE (see Figure 1)and describes its components and their experimental eval uation.Goal Given product class C with instances I and reviews R, OPINE?s goal is to find a set of (feature, opin ions) tuples {(f, oi, ...oj)} s.t. f ? F and oi, ...oj ? O, where: a) F is the set of product class features in R. b) O is the set of opinion phrases in R. c) f is a feature of a particular product instance.
+			d) o is an opinion about f in a particular sentence.
+			d) the opinions associated with each feature f are ranked based on their strength.Solution The steps of our solution are outlined in Figure 1 above.
+			OPINE parses the reviews using MINI PAR (Lin, 1998) and applies a simple pronoun-resolution module to parsed review data.
+			OPINE then uses the datato find explic

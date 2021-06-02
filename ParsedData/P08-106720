@@ -1,0 +1,7 @@
+es from the 50-best parses on the training set (sec.
+    02-21), and used a cut-off of 5 to prune away low-count features.
+    There are 0.8M features in our final set, considerably fewer than that of Charniak and Johnson which has about 1.3M features in the updated version.5 However, our initial experiments show that, even with this much simpler feature set, our 50-best reranker performed equally well as theirs (both with an F-score of 91.4, see Tables 3 and 4).
+    This result confirms that our feature set design is appropriate, and the averaged perceptron learner is a reasonable candidate for reranking.
+    The forests dumped from the Charniak parser are huge in size, so we use the forest pruning algorithm in Section 4.2 to prune them down to a reasonable size.
+    In the following experiments we use a threshold of p = 10, which results in forests with an average number of 123.1 hyperedges per forest.
+    Then for each forest, we annotate its forest oracle, and on each hyperedge, pre-compute its local feat

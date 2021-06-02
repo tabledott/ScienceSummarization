@@ -1,0 +1,8 @@
+tely obvious how to use the ITS algorithm to equip attribute-value grammars with probabilities.
+    In brief, the difficulty is that the ITS algorithm requires the computation of the expectations, under random fields, of certain functions; in general, computing these expectations involves summing over all configurations (all possible character sequences, in the orthography application), which is not possible when the configuration space is large.
+    Instead, DD&amp;L use Gibbs sampling to estimate the needed expectations.
+    Gibbs sampling is possible for the application that DD&amp;L consider.
+    A prerequisite for Gibbs sampling is that the configuration space be closed under relabeling of graph nodes.
+    In the orthography application, the configuration space is the set of possible English words, represented as finite linear graphs labeled with ASCII characters.
+    Every way of changing a label, that is, every substitution of one ASCII character for a different one, yields a possible English word.
+   

@@ -1,0 +1,11 @@
+fficulties dealing with the extracted, rather than annotated, CEs.
+    CEAF assigns a zero score to each twinless extracted CE and weights all coreference chains equally, irrespective of their size.
+    As a result, runs with extracted CEs exhibit very low CEAF precision, leading to unreliable scores. sion as above when ce has a twin, and computes the precision as 1/|RCe |if ce is twinless.
+    (Similarly, recall(ce) = 1/|KC  |if ce is twinless.)
+    The second option, B30, discards twinless extracted CEs, but penalizes recall by setting recall(ce) = 0 for all twinless annotated CEs.
+    Thus, B30 presumes that all twinless extracted CEs are spurious.
+    Results.
+    Table 3, box 1 shows the performance of RECONCILEACL09 using a default (0.5) coreference classifier threshold.
+    The MUC score is highest for the MUC6 data set, while the four ACE data sets show much higher B3 scores as compared to the two MUC data sets.
+    The latter occurs because the ACE data sets include singletons.
+    The classification

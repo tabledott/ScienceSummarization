@@ -1,0 +1,8 @@
+  The most direct source of evidence is IV words around an OOV word.
+    Inspired by work on labelled sequential pattern extraction (Sun et al., 2007), we exploit large-scale edited corpus data to construct dependency-based features.
+    First, we use the Stanford parser (Klein and Manning, 2003; de Marneffe et al., 2006) to extract dependencies from the NYT corpus (see Section 3.2).
+    For example, from a sentence such as One obvious difference is the way they look, we would extract dependencies such as rcmod(way-6,look-8) and nsubj(look-8,they-7).
+    We then transform the dependencies into relational features for each OOV word.
+    Assuming that way were an OOV word, e.g., we would extract dependencies of the form (look,way,+2), indicating that look occurs 2 words after way.
+    We choose dependencies to represent context because they are an effective way of capturing key relationships between words, and similar features can easily be extracted from tweets.
+    Note that we don&#8217;t record the dependen

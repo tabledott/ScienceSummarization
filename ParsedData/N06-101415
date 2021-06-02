@@ -1,0 +1,8 @@
+richer family of distributions over alignments than either models 1 or 2, we can learn to synchronize the predictions of the two models, whereas models 1 and 2 have a much more limited capacity to synchronize.
+    Table 2 shows the HMM models compared to model 4 alignments produced by GIZA++ on the test set.
+    Our jointly trained model clearly outperforms not only the standard HMM but also the more complex IBM 4 model.
+    For these results, the threshold used for posterior decoding was tuned on the development set.
+    &#8220;GIZA HMM&#8221; and &#8220;HMM, indep&#8221; are the same algorithm but differ in implementation details.
+    The E&#8594;F and F&#8594;E models benefit a great deal by moving from independent to joint training, and the combined models show a smaller improvement.
+    Our best performing model differs from standard IBM word alignment models in two ways.
+    First and most importantly, we use joint training instead of independent training and posterior decoding (with the optimal thresho

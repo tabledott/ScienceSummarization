@@ -1,0 +1,9 @@
+ncreasing complexity by a factor of O(n).
+    Horizontal context can also be increased by adding internal sibling indices; each additional sibling widens the scope of the factorization (e.g., from grand-siblings to &#8220;grand-tri-siblings&#8221;), while increasing complexity by a factor of O(n).
+  
+  
+    Our method augments each span with the index of the head that governs that span, in a manner superficially similar to parent annotation in CFGs (Johnson, 1998).
+    However, parent annotation is a grammar transformation that is independent of any particular sentence, whereas our method annotates spans with indices into the current sentence.
+    These indices allow the use of arbitrary features predicated on the position of the grandparent (e.g., word identity, POS tag, contextual POS tags) without affecting the asymptotic complexity of the parsing algorithm.
+    Efficiently encoding this kind of information into a sentence-independent grammar transformation would be challenging at best.
+    Eisner (2000) d

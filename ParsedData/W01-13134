@@ -1,0 +1,10 @@
+redicate (VP containing one or several verbs).
+    The above procedure classifies a clause containing more than one verb as a simple clause.
+    Such clauses are treated as one event and only one time-point will be assigned to them.
+    This is fine when the second verb is used in the same tense as the first, but may be wrong in some cases, as in He lives in this house now and will stay here for one more year.
+    There are no such clauses in the analyzed data, so we ignore this complication for the present.
+    The parse tree also gives information about the tense of verbs, used later for time assignment.
+    In order to facilitate subsequent processing, we wish to rephrase relative clauses as full independent sentences.
+    We therefore have to replace pronouns where it is possible by their antecedents.
+    Very often the parser gives information about the referential antecedents (in the example below, Russia).
+    Therefore we introduced the rule: if it is possible to identify the referent, put it into the

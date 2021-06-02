@@ -1,0 +1,11 @@
+e the buckets in reverse order, and we use the formulas for the reverse values, rather than the forward values.
+    Elsewhere (Goodman 1998), we give a simple inductive proof to show that both interpreters compute the correct values.
+    There are two other implementation issues.
+    First, for some parsers, it will be possible to discard some items.
+    That is, some items serve the role of temporary variables, and can be discarded after they are no longer needed, especially if only the forward values are going to be computed.
+    Also, some items do not depend on the input string, but only on the rule value function of the grammar.
+    The values of these items can be precomputed.
+  
+  
+    In this section, we survey other results that are described in more detail elsewhere (Goodman 1998), including examples of formalisms that can be parsed using itembased descriptions, and other uses for the technique of semiring parsing.
+    Nondeterministic finite-state automata (NFAs) and HMMs turn out to be examples of

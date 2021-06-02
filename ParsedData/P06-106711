@@ -1,0 +1,8 @@
+etween any given language pair.
+    This method is based on word-alignments and the BLEU metric.
+    We assume that we have word-alignments for a set of sentence pairs.
+    We first reorder words in the target sentence (e.g., English when translating from Arabic to English) according to the order in which they are aligned to the source words as shown in Table 1.
+    If a target word is not aligned, then, we assume that it is aligned to the same source word that the preceding aligned target word is aligned to.
+    Once the reordered target (here English) sentences are generated, we measure the distortion between the language pair by computing the BLEU3 score between the original target and reordered target, treating the original target as the reference.
+    Table 2 shows these scores for Arabic-English and 3the BLEU scores reported throughout this paper are for case-sensitive BLEU.
+    The number of references used is also reported (e.g., BLEUr1n4c: r1 means 1 reference, n4 means upto 4-gram are considred, c m

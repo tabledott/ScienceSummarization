@@ -1,0 +1,9 @@
+ilities trained from parallel data) for use in the sentence extraction models.
+    Two copies of each feature using the HMM word alignment model are generated: one using the seed data HMM 2We restrict our attention to words with ten or more occurrences, since rare words have poorly estimated distributions.
+    Also we discard the contribution from any context position and word pair that relates to more than 1,000 distinct source or target words, since it explodes the computational overhead and has little impact on the final similarity score. model, and another using this new HMM model.
+    The training data for Bulgarian consisted of two partially annotated Wikipedia article pairs.
+    For German and Spanish we used the feature weights of the model trained on Bulgarian, because we did not have word-level annotated Wikipedia articles.
+  
+  
+    We annotated twenty Wikipedia article pairs for three language pairs: Spanish-English, BulgarianEnglish, and German-English.
+    Each sentence in the source language wa

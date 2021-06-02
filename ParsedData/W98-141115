@@ -1,0 +1,7 @@
+facts (in a way that echoes Marcu's approach to some extent).
+    We have done this by making certain restrictions on the RS trees that we are prepared to build.
+    In particular, we make the following assumptions: With these assumptions, an RS tree is characterised (almost) by the sequence of facts at its leaves.
+    Indeed, we have an algorithm that almost deterministically builds a tree from a sequence of facts, according to these principles.
+    (The algorithm is not completely deterministic, because there may be more than one non-elaboration relation that can be used with two given facts as nucleus and satellite - our evaluation function won't, of course, differentiate between these).
+    The algorithm for building a tree from a sequence essentially makes a tree that can be processed by a reader with minimal short-term memory.
+    The tree will be right-branching and if the reader just remembers the last fact at any point, then they can follow the connection between the text so far and the next fact2 In

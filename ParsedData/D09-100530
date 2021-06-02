@@ -1,0 +1,5 @@
+ of which a linear approximation to BLEU is a special case, provided that we define re = log pe (so that r(d) = EeEd re = log p(d)).
+    Of course, we can compute (Z, r) as explained in Section 3.2.
+    Cross-Entropy and KL Divergence We may be interested in computing the cross-entropy or KL divergence between two distributions p and q.
+    For example, in variational decoding for machine translation (Li et al., 2009b), p is a distribution represented by a hypergraph, while q, represented by a finite state automaton, is an approximation to p. The cross entropy between p and q is defined as 14Unfortunately, it is intractable to compute the entropy of the distribution over strings (each string&#8217;s probability is a sum over several derivations).
+    But Li et al. (2009b, section 5.4) do estimate the gap between derivational and string entropies. where w is an n-gram type, N is a set of n-gram types with n E [1, 4], #w(y) is the number of occurrence of the n-gram w in y, &#948;w(y*) is an indicator to check i

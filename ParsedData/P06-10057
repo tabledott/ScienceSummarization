@@ -1,0 +1,13 @@
+ use Minipar&#8217;s named-entity recognition to replace named-entity nouns by the semantic category of their named-entity, when available.
+    All modifiers not on the direct path, such as adjectives, determiners and adverbs, are not considered.
+    We limit the maximum path length to eight nodes.
+    Tables 1 and 2 give examples of coreferent and non-coreferent paths learned by our algorithm and identified in our test sets.
+    Coreferent paths are defined as paths with a C(p) value (and overall number of occurrences) above a certain threshold, indicating the terminal entities are highly likely Pattern Example Noun left ... to pronoun&#8217;s wife Buffett will leave the stock to his wife.
+    Noun says pronoun intends...
+    The newspaper says it intends to file a lawsuit.
+    Noun was punished for pronoun&#8217;s crime.
+    The criminal was punished for his crime.
+    ... left Noun to fend for pronoun-self They left Jane to fend for herself.
+    Noun lost pronoun&#8217;s job.
+    Dick lost his job.
+    ...

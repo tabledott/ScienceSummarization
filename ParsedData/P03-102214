@@ -1,0 +1,11 @@
+r approach for feature selection (Kohavi &amp; John, 1997).
+    We start with a model based on a set of predefined baseline features.
+    Then we train models combining the baseline with all additional features separately.
+    We choose the best performing feature (fmeasure according to Vilain et al. (1995)), adding it to the model.
+    We then train classifiers combining the enhanced model with each of the remaining features separately.
+    We again choose the best performing classifier and add the corresponding new feature to the model.
+    This process is repeated as long as significant improvement can be observed.
+    In our experiments we split the data in three sets according to the agreement of the anaphor: third person masculine and feminine pronouns (3mf), third person neuter pronouns (3n), and third person plural pronouns (3p).
+    Since only 3n-pronouns have nonNP-antecedents, we were mainly interested in improvements in this data set.
+    We used the same baseline model for each data set.
+    The 

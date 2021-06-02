@@ -1,0 +1,7 @@
+ frowns were held-out as optimising test data.
+    We took increasing amounts of articles from the remaining dataset (from 2,000 to 22,000 in increments of 1,000, an equal number being taken from the positive and negative sets) as optimising training data.
+    For each set of training data we extracted a context of an increasing number of tokens (from 10 to 1,000 in increments of 10) both before and in a window4 around the smile or frown emoticon.
+    The models were trained using this extracted context and tested on the held-out dataset.
+    The optimisation process revealed that the bestperforming settings for the Naive Bayes classifier was a window context of 130 tokens taken from the largest training set of 22,000 articles.
+    Similarly, the best performance for the SVM classifier was found using a window context of 150 tokens taken from 20,000 articles.
+    The classifiers&#8217; performance in predicting the smiles and frowns of article extracts was verified using these optimised parameters and ten-fol

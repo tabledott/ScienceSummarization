@@ -1,0 +1,9 @@
+well-formed parse tree.3 We now define the index set for CFG parsing as Each parse tree is a vector y = {yr : r &#8712; I}, with yr = 1 if rule r is in the parse tree, and yr = 0 otherwise.
+    Hence each parse tree is represented as a vector in {0,1}', where m = |I|.
+    We use Y to denote the set of all valid parse-tree vectors; the set Y is a subset of {0,1}' (not all binary vectors correspond to valid parse trees).
+    In addition, we assume a vector 0 = {0r : r &#8712; I} that specifies a weight for each rule production.4 Each 0r can take any value in the reals.
+    The optimal parse tree is y* = arg maxyEY y &#183; 0 where y &#183; 0 = Er yr0r is the inner product between y and 0.
+    We use yr and y(r) interchangeably (similarly for 0r and 0(r)) to refer to the r&#8217;th component of the vector y.
+    For example 0(A &#8594; B C, i, k, j) is a weight for the rule hA &#8594; B C, i, k, ji.
+    We will use similar notation for other problems.
+    As a second example, in POS tagging the task is to map a 

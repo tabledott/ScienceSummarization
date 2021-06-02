@@ -1,0 +1,9 @@
+b states.
+    To decide the ordering of states in each beam we borrow the concept of prefix cost from Stolcke (1995), originally developed for weighted Earley parsing.
+    As shown in Fig.
+    3, the prefix cost c is the total cost of the best action sequence from the initial state to the end of state p, i.e., it includes both the inside cost v (for Viterbi inside derivation), and the cost of the (best) path leading towards the beginning of state p. We say that a state p with prefix cost c is better than a state p&#8242; with prefix cost c&#8242;, notated p &#65533; p&#8242; in Fig.
+    3, if c &lt; c&#8242;.
+    We can also prove (by contradiction) that optimizing for prefix cost implies optimal inside cost (Nederhof, 2003, Sec.
+    4).
+    5 As shown in Fig.
+    3, when a state q with costs (c, v) is combined with a predictor state p with costs (c&#8242;, v&#8242;), the resulting state r will have costs where the inside cost is intuitively the combined inside costs plus an additional combo cost &#948; from 

@@ -1,0 +1,9 @@
+t al. (2005); we compute external features from the same unlabeled data, 1.1 million sentence pairs.
+    Our second is the Chinese-English hand-aligned portion of the 2002 NIST MT evaluation set.
+    This dataset has 491 sentences, which we split into a training set of 150 and a test set of 191.
+    When we trained external Chinese models, we used the same unlabeled data set as DeNero and Klein (2007), including the bilingual dictionary.
+    For likelihood based models, we set the L2 regularization parameter, U2, to 100 and the threshold for posterior decoding to 0.33.
+    We report results using the simple ITG grammar (ITG-S, Section 2.2) where summing over derivations double counts alignments, as well as the normal form ITG grammar (ITG-N,Section 4.1) which does not double count.
+    We ran our annealed lossaugmented MIRA for 15 iterations, beginning with A at 0 and increasing it linearly to 0.5.
+    We compute Viterbi alignments using the averaged weight vector from this procedure.
+    The French Hansards 

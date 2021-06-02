@@ -1,0 +1,8 @@
+ons like &#8220;Thursday&#8221; in &#8220;the action taken Thursday&#8221;, or bare month names like &#8220;February&#8221; are passed to rules that try to determine the direction of the offset from the reference time.
+    Once the direction is determined, the magnitude of the offset can be computed.
+    The tense of a neighboring verb is used to decide what direction to look to resolve the expression.
+    Such a verb is found by first searching backward to the last TIMEX, if any, in the sentence, then forward to the end of the sentence and finally backwards to the beginning of the sentence.
+    If the tense is past, then the direction is backwards from the reference time.
+    If the tense is future, the direction is forward.
+    If the verb is present tense, the expression is passed on to subsequent rules for resolution.
+    For example, in the following passage, &#8220;Thursday&#8221; is resolved to the Thursday prior to the reference date because &#8220;was&#8221;, which has a past tense tag, is found earl

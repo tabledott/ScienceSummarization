@@ -1,0 +1,5 @@
+ecific words as particles, or adverbs, or prepositions.
+    There are verbs that take particles more than others, and particular words like out are much more likely to be used as a particle in the context of some verb than other words ambiguous between these tags.
+    We added two different feature templates to capture this information, consisting as usual of a predicate on the history h, and a condition on the tag t. The first predicate is true if the current word is often used as a particle, and if there is a verb at most 3 positions to the left, which is &amp;quot;known&amp;quot; to have a good chance of taking the current word as a particle.
+    The verb-particle pairs that are known by the system to be very common were collected through analysis of the training data in a preprocessing stage.
+    The second feature template has the form: The last verb is v and the current word is w and w has been tagged as a particle and the current tag is t. The last verb is the pseudo-symbol NA if there is no verb in th

@@ -1,0 +1,11 @@
+ich is the focus of each iteration of the Co-Training algorithm. unlabeled a large set of unlabeled sentences.
+    The only information we collect from this set of sentences is a tree-dictionary: tree-dict and part-of-speech dictionary: pos-dict.
+    Construction of these dictionaries is covered in Section 3.2.
+    In addition to the above datasets, we also use the usual development test set (termed dev in this paper), and a test set (called test) which is used to evaluate the bracketing accuracy of the parser.
+    The Co-Training algorithm consists of the following steps which are repeated iteratively until all the sentences in the set unlabeled are exhausted.
+    For the experiment reported here, n = 10, and k was set to be n in each iteration.
+    We ran the algorithm for 12 iterations (covering 20480 of the sentences in unlabeled) and then added the best parses for all the remaining sentences.
+  
+  
+    The experiments we report were done on the Penn Treebank WSJ Corpus (Marcus et al., 1993).
+    The vari

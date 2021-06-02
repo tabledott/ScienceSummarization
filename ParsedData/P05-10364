@@ -1,0 +1,10 @@
+example, there might be S &#8594; NP VP PP in the long sentence and S &#8594; NP VP in the short sentence; we count this as one joint event.
+    Non-compressions, where the long version is the same as the short, are also counted.
+    The expansion probability, as used in the channel model, is given by where count(joint(l, s)) is the count of alignments of the long rule and the short.
+    Many compressions do not align exactly.
+    Sometimes the parses do not match, and sometimes there are deletions that are too complex to be modeled in this way.
+    In these cases sentence pairs, or sections of them, are ignored.
+    The K&amp;M model creates a packed parse forest of all possible compressions that are grammatical with respect to the Penn Treebank (Marcus et al., 1993).
+    Any compression given a zero expansion probability according to the training data is instead assigned a very small probability.
+    A tree extractor (Langkilde, 2000) collects the short sentences with the highest score for P(s  |l).
+    Our

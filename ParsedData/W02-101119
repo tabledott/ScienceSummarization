@@ -1,0 +1,6 @@
+o improve our sentiment categorization results; these experiments are reported below.
+    Feature frequency vs. presence Recall that we represent each document d by a feature-count vector (n1(d), ... , n,.(d)).
+    However, the definition of the 9Joachims (1998) used stemming and stoplists; in some of their experiments, Nigam et al. (1999), like us, did not.
+    10We could not perform the natural experiment of attempting topic-based categorization on our data because the only obvious topics would be the film being reviewed; unfortunately, in our data, the maximum number of reviews per movie is 27, too small for meaningful results.
+    MaxEnt feature/class functions Fi,c only reflects the presence or absence of a feature, rather than directly incorporating feature frequency.
+    In order to investigate whether reliance on frequency information could account for the higher accuracies of Naive Bayes and SVMs, we binarized the document vectors, setting ni(d) to 1 if and only feature fi appears in d, and reran Nai

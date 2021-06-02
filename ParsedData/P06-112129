@@ -1,0 +1,7 @@
+ we implemented our decoder as a standard CKY parser with beam search.
+			Its rule binarization is described in (Zhang et al, 2006).
+			We compare our syntax-based system against an implementation of the alignment template (AlTemp) approach to MT (Och and Ney, 2004), which is widely considered to represent the state of the art in the field.
+			We registered both systems in the NIST 2005 evaluation; results are presented in Table 5.
+			With a difference of 6.4 BLEU points for both language pairs, we consider the resultsof our syntax-based system particularly promis ing, since these are the highest scores to date thatwe know of using linguistic syntactic transformations.
+			Also, on the one hand, our AlTemp system represents quite mature technology, and in corporates highly tuned model parameters.
+			On the other hand, our syntax decoder is still work in progress: only one model was used during search, i.e., the EM-trained root-normalized SBTM, and as yet no language model is incorporated in thesearch (whereas 

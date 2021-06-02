@@ -1,0 +1,7 @@
+, our base model includes a single binary identity feature per-rule, equivalent to the p(e|f) parameters defined on each rule in standard models.
+    As previously noted, our model must be able to derive the reference sentence from the source for it to be included in training.
+    For both our discriminative and benchmark (Hiero) we extracted our grammar on the 170K sentence corpus using the approach described in Chiang (2007), resulting in 7.8 million rules.
+    The discriminative model was then trained on the training partition, however only 130K of the sentences were used as the model could not produce a derivation of the reference for the remaining sentences.
+    There were many grammar rules that the discriminative model did not observe in a reference derivation, and thus could not assign their feature a positive weight.
+    While the benchmark model has a positive count for every rule (7.8M), the discriminative model only observes 1.7M rules in actual reference derivations.
+    Figure 1 illustrates the 

@@ -1,0 +1,6 @@
+ consistent bracketing of the sentences.
+    Notation: Let T stand for an elementary tree which is lexicalized by a word: w and a part of speech tag: p. Let Pinit (introduced earlier in 2.1) stand for the probability of being root of a derivation tree defined as follows: including lexical information, this is written as: where the variable top indicates that T is the tree that begins the current derivation.
+    There is a useful approximation for Pinit: Pr(T, w, pjtop = 1) ti Pr(labeljtop = 1) where label is the label of the root node of T. where N is the number of bracketing labels and a is a constant used to smooth zero counts.
+    Let Pattach (introduced earlier in 2.1) stand for the probability of attachment of T' into another T: We decompose (8) into the following components: We do a similar decomposition for (9).
+    For each of the equations above, we use a backoff model which is used to handle sparse data problems.
+    We compute a backoff model as follows: Let e1 stand for the original lexicalized mo

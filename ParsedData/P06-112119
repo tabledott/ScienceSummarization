@@ -1,0 +1,8 @@
+inary choice point).
+			given that the normalization factor |?| is 2, both probabilities p(a?b?c?|pi) and p(b?a?c?|pi) are 0.5.
+			On the other hand, if all rules are extracted andincorporated into our relative-frequency probabil ity model, r1 seriously counterbalances r2 and the probability of a?b?c? becomes: 12 ?( 99 100+1) = .995(since it differs from .99, the estimator remains bi ased, but to a much lesser extent).
+			An alternative to the conditional model of Equation 3 is to use a joint model conditioning on the root node instead of the entire left hand side: p(r|root(r)) = f(r) ? r?:root(r?)=root(r) f(r ?)
+			(6) This can be particularly useful if no parser or syntax-based language model is available, and we need to rely on the translation model to penalize ill-formed parse trees.
+			Section 6 will describe an empirical evaluation based on this estimate.
+			4 EM training.
+			In our previous discussion of parameter estima tion, we did not explore the possibility that onederivation in a forest may be muc

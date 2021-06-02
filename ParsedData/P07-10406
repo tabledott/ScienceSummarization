@@ -1,0 +1,9 @@
+tic MT evaluation metric is the NIST BLEU-4 (Papineni et al., 2002).
+    It is computed as the geometric mean of gram precisions up to-grams between the hypothesis and reference as follows where is the brevity penalty and are the -gram precisions.
+    When multiple references are provided, the -gram counts against all references are accumulated to compute the precisions.
+    Similarly, full test set scores are obtained by accumulating counts over all hypothesis and reference pairs.
+    The BLEU scores are between and, higher being better.
+    Often BLEU scores are reported as percentages and &#8220;one BLEU point gain&#8221; usually means a BLEU increase of .
+    Other evaluation metrics have been proposed to replace BLEU.
+    It has been argued that METEOR correlates better with human judgment due to higher weight on recall than precision (Banerjee and Lavie, 2005).
+    METEOR is based on the weighted harmonic mean of the precision and recall measured on unigram matches as follows where is the total number o

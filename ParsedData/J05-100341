@@ -1,0 +1,7 @@
+ to minimizing the number of ranking errors.11 This follows from the fact that for any x, e&#65533;x &gt; gx &lt; 01, and therefore that We generalize the ExpLoss function slightly, by allowing a weight for each example xi,j, for i = 1, ... , n, j = 2, ... , ni.
+    We use Si,j to refer to this weight.
+    In particular, in some experiments in this article, we use the following definition: where, as defined in section 4.1, Score(xi,j) is some measure of the &#8220;goodness&#8221;of a parse, such as the F-measure (see section 5 for the exact definition of Score used in our experiments).
+    The definition for ExpLoss is modified to be This definition now takes into account the importance, Si,j, of each example.
+    It is an upper bound on the following quantity: which is the number of errors weighted by the factors Si,j.
+    The original definition of ExpLoss in equation (10) can be recovered by setting Si,j = 1 for all i, j (i.e., by giving equal weight to all examples).
+    In our experiments we found that a

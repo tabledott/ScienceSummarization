@@ -1,0 +1,9 @@
+ defines a distribution over feature vectors rj E Rdj.
+    The next section describes how the parameters &#952;j,a are trained on unlabeled data.
+    Given parameters &#952;j,a, we can simply define the functions q1 ... qk to be log probabilities under the generative model: We modify this definition slightly, be introducing scaling factors cj,a &gt; 0, and defining In our experiments, cj,a is simply a count of the number of times the feature indexed by (j, a) appears in unlabeled data.
+    Thus more frequent features have their contribution down-weighted in the model.
+    We have found this modification to be beneficial.
+    We now describe the method for estimating the parameters &#952;j,a of the generative models.
+    We assume initial parameters w, v, q, which define a distribution p(y|x0i; w, v, q) over dependency structures for each unlabeled example x0i.
+    We will re-estimate the generative models q, based on unlabeled examples.
+    The likelihood function on unlabeled data is defined as where q0 j is

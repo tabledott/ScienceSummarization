@@ -1,0 +1,14 @@
+sic idea is to keep the norm of the updates to the weight vector as small as possible, considering a margin at least as large as the loss of the incorrect classification.
+			Line 5 of the weight vector update procedure in Algorithm 1 is replaced by the solution of: w?i+1 = argmin wi+1 ||wi+1 ? wi|| + C ? e?,e? ?(e?, e?)
+			subject to si+1( f t, e?)
+			si+1( f t, e?)
+			+ ?(e?, e?)
+			L(e?, e?; et) ?(e?, e?)
+			0 ?e? ? Ot,?e? ? Ct (3) where si( f t, e) = { wi}T ? h( f t, e).
+			is a non negative slack variable and C ? 0 is a constant to control the influence to the objective function.
+			Alarger C implies larger updates to the weight vec tor.
+			L(?)
+			is a loss function, for instance difference of BLEU, that measures the difference between e?
+			and e?
+			according to the reference translations et. In thisupdate, a margin is created for each correct and in correct translation at least as large as the loss of the incorrect translation.
+			A larger error means a largerdistance between the scores of the correct

@@ -1,0 +1,8 @@
+ tune the parameter values to maximize the precision and recall on the 374 SAT questions.
+    We hypothesized that LRA is relatively insensitive to the values of the parameters.
+    Table 16 shows the variation in the performance of LRA as the parameter values are adjusted.
+    We take the baseline parameter settings (given in Section 5.5) and vary each parameter, one at a time, while holding the remaining parameters fixed at their baseline values.
+    None of the precision and recall values are significantly different from the baseline, according to the Fisher Exact Test (Agresti 1990), at the 95% confidence level.
+    This supports the hypothesis that the algorithm is not sensitive to the parameter values.
+    Although a full run of LRA on the 374 SAT questions takes 9 days, for some of the parameters it is possible to reuse cached data from previous runs.
+    We limited the experiments with num sim and max phrase because caching was not as helpful for these parameters, so experimenting with them required s

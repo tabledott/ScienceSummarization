@@ -1,0 +1,5 @@
+use relational evidence about this pair as if it pertained to (automobile, wheel).
+    This is essentially the way to deal with W1W2xL data sparseness proposed by Turney (2006b), except that he relies on independently harvested attributional and relational spaces, whereas we derive both from the same tensor.
+    More precisely, in the W1W2xL tasks where we know the set of target pairs in advance (Sections 6.2.1 and 6.2.2), we smooth the DM models by combining in turn one of the words of each target pair with the top 20 nearest W1xLW2 neighbors of the other word, obtaining a total of 41 pairs (including the original).
+    The centroid of the W1W2xL vectors of these pairs is then taken to represent a target pair (the smoothed (automobile, wheel) vector is an average of the (automobile, wheel), (car, wheel), (automobile, circle), etc., vectors).
+    The nearest neighbors are efficiently searched in the W1xLW2 matrix by compressing it to 5,000 dimensions via random indexing, using the parameters suggested by Sahl

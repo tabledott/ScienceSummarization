@@ -1,0 +1,11 @@
+ch parsing disambiguation.
+    The typical technique to perform supertagging is the trigram model, akin to models of the same name for partof-speech tagging.
+    This is the technique that we use here.
+    Data sparseness is a significant issue when supertagging with extracted grammar (Chen and Vijay-Shanker (2000)).
+    For this reason, we smooth the emit probabilities P(w1t) in the trigram model using distributional similarity following Chen (2001).
+    In particular, we use Jaccard&#8217;s coefficient as the similarity metric with a similarity threshold of 0.04 and a radius of 25 because these were found to attain optimal results in Chen (2001).
+    Training data for supertagging is Sections 02-21 of the PropBank.
+    A supertagging model based on SEM-TAG performs with 76.32% accuracy on Section 23.
+    The corresponding model for SYNT-TAG performs with 80.34% accuracy.
+    Accuracy is measured for all words in the sentence including punctuation.
+    The SYNT-TAG model performs better than the SEM-TAG mode

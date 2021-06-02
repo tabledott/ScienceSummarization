@@ -1,0 +1,10 @@
+H-CRF uses the probability distribution over the set of possible labels according to each O-CRF and R1-CRF as features.
+    To obtain the probability at each position of a linear-chain CRF, the constrained forward-backward technique described in (Culotta and McCallum, 2004) is used.
+    H-CRF also computes the Monge Elkan distance (Monge and Elkan, 1996) between the relations predicted by O-CRF and R1CRF and includes the result in the feature set.
+    An additional meta-feature utilized by H-CRF indicates whether either or both base extractors return &#8220;no relation&#8221; for a given pair of entities.
+    In addition to these numeric features, H-CRF uses a subset of the base features used by O-CRF and R1-CRF.
+    At each given position i between e1 and e2, the presence of the word observed at i as a feature, as well as the presence of the part-of-speech-tag at i.
+  
+  
+    The following experiments demonstrate the benefits of Open IE for two tasks: open extraction and targeted extraction.
+    Section 5.1,

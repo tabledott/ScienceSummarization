@@ -1,0 +1,7 @@
+ics.
+    Following (Sproat and Emerson, 2003), we also measured the recall on OOV (ROOV) tokens and in-vocabulary (RIV) tokens.
+    These performance measures can be calculated as follows: # of correct tokens # of tokens in test data Our model has three tunable parameters: the number of training iterations N; the number of top k-best paths; and the threshold r for infrequent words.
+    Since we were interested in finding an optimal combination of word-level and characterlevel nodes for training, we focused on tuning r. We fixed N = 10 and k = 5 for all experiments.
+    For the baseline policy, we varied r in the range of [1, 5] and found that setting r = 3 yielded the best performance on the development set for both the small and large training corpus experiments.
+    For the error-driven policy, we collected unidentified unknown words using 10-fold cross validation on the training set, as previously described in Section 3.
+    Table 6 shows the results of our word-character hybrid model using the error-drive

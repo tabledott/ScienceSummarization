@@ -1,0 +1,6 @@
+he context would be truncated because they occur at the beginning of the string).
+    And each state would have variants corresponding to all different ways of inserting space into the four-character string.
+    For example, the states corresponding to the sixth character of tobeornottobe would include beor and e&#8226;or, as well as &#8226;eor, eo.r and .o.r.
+    It is not hard to see that the number of states corresponding to a particular character of the input string increases with model order according to the Fibonnacci series.
+    Figure 5(a) shows two states per symbol for order 1, there are three states per symbol for order 2, five for order 3, eight for order 4, thirteen for order 5, and so on.
+    Given a hidden Markov model like the one in Figure 5(a), where probabilities are supplied for each edge according to an order 1 compression model, the space insertion problem is tantamount to finding the sequence of states through the model, from beginning to end, that maximizes the total probability&#8212;

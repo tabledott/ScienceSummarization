@@ -1,0 +1,10 @@
+ = 3, h &lt; 2 markovization is good on its own, it has a large number of states and does not tolerate further splitting well.
+    Therefore, we base all further exploration on the v &lt; 2, h &lt; 2 grammar.
+    Although it does not necessarily jump out of the grid at first glance, this point represents the best compromise between a compact grammar and useful markov histories.
+  
+  
+    The two major previous annotation strategies, parent annotation and head lexicalization, can be seen as instances of external and internal annotation, respectively.
+    Parent annotation lets us indicate an important feature of the external environment of a node which influences the internal expansion of that node.
+    On the other hand, lexicalization is a (radical) method of marking a distinctive aspect of the otherwise hidden internal contents of a node which influence the external distribution.
+    Both kinds of annotation can be useful.
+    To identify split states, we add suffixes of the form -X to mark internal content

@@ -1,0 +1,9 @@
+ent translators, we expect that the similarity between translations varies from one book to another.
+    This implies that contextual rules should be specific to a particular pair of translations.
+    Therefore, we train the contextual classifier for each pair of translations separately.
+    Training of the paraphrasing classifier Context rules extracted in the previous stage are then applied to the corpus to derive a new set of pairs of positive and negative paraphrasing examples.
+    Applications of the rule performed by searching sentence pairs for subsequences which match the left and right parts of the contextual rule, and are less than tokens apart.
+    For example, applying the first rule from Figure 4 to sentences from Figure 1 yields the paraphrasing pair (&#8220;comfort&#8221;, &#8220;console&#8221;).
+    Note that in the original seed set, the left and right contexts were separated by one token.
+    This stretch in rule application allows us to extract multi-word paraphrases.
+    For each extracted

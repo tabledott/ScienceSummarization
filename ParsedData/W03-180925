@@ -1,0 +1,6 @@
+d prepositions) with a set of 1000 &#8220;content-bearing&#8221; words (we used the 51st to the 1050th most frequent words, the 50 most frequent being taken to have extremely low infomation content).
+    A target word was said to co-occur with a content word if that content word occurred within a window of 5 words to either side of it.
+    These co-occurrence figures were stored as feature vectors.
+    In order to overcome data sparseness, we used techniques borrowed from Latent Semantic Indexing (LSI, Deerwester et al. (1990)).
+    LSI is an information retrieval technique based on Singular Value Decomposition (SVD), and works by projecting a term-document matrix onto a lower-dimensional subspace, in which relationships might more easily be observed between terms which are related but do not co-occur.
+    We used this technique to reduce the feature space for our target words from 1000 to 100, allowing relations to be discovered between target words even if there is not direct match between their context wor

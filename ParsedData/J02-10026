@@ -1,0 +1,9 @@
+t there is an inherent trade-off between precision and recall; improving one tends to cause the score for the other to decline.
+    In the segmentation example, positing more boundaries will tend to improve the recall but at the same time reduce the precision.
+    Some evaluators use a weighted combination of the two known as the F-measure (Baeza-Yates and Ribeiro-Neto 1999), but this is difficult to interpret (Beeferman, Berger, and Lafferty 1999).
+    Another approach is to plot a precision-recall curve, showing the scores for precision at different levels of recall.
+    Two hypothetical segmentations of the same reference (ground truth) document segmentation.
+    The boxes indicate sentences or other units of subdivision, and spaces between boxes indicate potential boundary locations.
+    Algorithm A-0 makes two near misses, while Algorithm A-1 misses both boundaries by a wide margin and introduces three false positives.
+    Both algorithms would receive scores of 0 for both precision and recall.
+    Anoth

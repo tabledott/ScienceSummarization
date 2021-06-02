@@ -1,0 +1,7 @@
+ny item X:[i, j] with sufficiently low posterior probability in the pre-parse triggers the pruning of its lexical variants in a subsequent full parse.
+    Charniak et al. (2006) introduces multi-level coarseto-fine parsing, which extends the basic pre-parsing idea by adding more rounds of pruning.
+    In their work, the extra pruning was with grammars even coarser than the raw treebank grammar, such as a grammar in which all nonterminals are collapsed.
+    We propose a novel multi-stage coarse-tofine method which is particularly natural for our hierarchically split grammar, but which is, in principle, applicable to any grammar.
+    As in Charniak et al. (2006), we construct a sequence of increasingly refined grammars, reparsing with each refinement.
+    The contributions of our method are that we derive sequences of refinements in a new way (Sec.
+    3.2), we consider refinements which are themselves complex, and, because our full grammar is not impossible to parse with, we automatically tune the pruning thre

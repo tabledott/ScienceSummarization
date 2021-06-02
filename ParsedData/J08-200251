@@ -1,0 +1,8 @@
+sponds to the correct assignment in Figure 9 is then: [NP1-ARG1, VBD1-PRED, PP1-ARG4, NP3-ARGM-TMP] Features from Local Models.
+    All features included in the local models are also included in our joint models.
+    In particular, each template for local features is included as a joint template that concatenates the local template and the node label.
+    For example, for the local feature PATH, we define a joint feature template that extracts PATH from every node in the candidate argument sequence and concatenates it with the label of the node.
+    Both a feature with the specific argument label and a feature with the generic back-off ARG label are created.
+    This is similar to adding features from identification and classification models.
+    In the case of the example candidate argument sequence provided, for the node NP1 we have the features: {(NPTSIVPIVBD)-ARG1, (NPTSIVPIVBD)-ARG} When comparing a local and a joint model, we use the same set of local feature templates in the two models.
+    If these we

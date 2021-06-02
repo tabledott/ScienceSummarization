@@ -1,0 +1,10 @@
+red in an I x L table.
+    This auxiliary quantity can then be calculated recursively from DLev(i &#8722; 1, l), DLev(i, l &#8722; 1), and DLev(i &#8722; 1, l &#8722; 1).
+    Consequently, the Levenshtein distance can be calculated in time O(I &#183; L).
+    This algorithm can easily be extended for the calculation of dCD as follows: Again we define an auxiliary quantity D(i, l) as Insertions, deletions, and substitutions are handled the same way as in the Levenshtein algorithm.
+    Now assume that an optimal dCD path has been found: Then, each long jump edge within 2C stands for cover and D for disjoint.
+    We adopted this notion for our measures. this path will always start at a node with the lowest D value in its row3.
+    Consequently, we use the following modification of the Levenshtein recursion: where &#948; is the Kronecker delta.
+    Figure 2 shows the possible predecessors of a grid point.
+    The calculation of D(i, l) requires all values of D(i', l) to be known, even for i' &gt; i.
+    Thus, the 

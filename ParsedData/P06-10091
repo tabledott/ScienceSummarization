@@ -1,0 +1,8 @@
+MT) systems usually break the translation task into two phases.
+    The first phase induces word alignments over a sentence-aligned bilingual corpus, and the second phase uses statistics over these predicted word alignments to decode (translate) novel sentences.
+    This paper deals with the first of these tasks: word alignment.
+    Most current SMT systems (Och and Ney, 2004; Koehn et al., 2003) use a generative model for word alignment such as the freely available GIZA++ (Och and Ney, 2003), an implementation of the IBM alignment models (Brown et al., 1993).
+    These models treat word alignment as a hidden process, and maximise the probability of the observed (e, f) sentence pairs1 using the expectation maximisation (EM) algorithm.
+    After the maximisation process is complete, the word alignments are set to maximum posterior predictions of the model.
+    While GIZA++ gives good results when trained on large sentence aligned corpora, its generative models have a number of limitations.
+    Firstly, they im

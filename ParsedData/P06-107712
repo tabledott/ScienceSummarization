@@ -1,0 +1,5 @@
+ST MT Evaluation test set as our test corpus.
+    We evaluated the translation quality using the BLEU metric (Papineni et al., 2002), as calculated by mteval-v11b.pl with its default setting except that we used case-sensitive matching of n-grams.
+    The baseline system we used for comparison was Pharaoh (Koehn et al., 2003; Koehn, 2004), a freely available decoder for phrase-based translation models: We ran GIZA++ (Och and Ney, 2000) on the training corpus in both directions using its default setting, and then applied the refinement rule &#8220;diagand&#8221; described in (Koehn et al., 2003) to obtain a single many-to-many word alignment for each sentence pair.
+    After that, we used some heuristics, which including rule-based translation of numbers, dates, and person names, to further improve the alignment accuracy.
+    Given the word-aligned bilingual corpus, we obtained 1, 231, 959 bilingual phrases (221, 453 used on test corpus) using the training toolkits publicly released by Philipp Koehn with its de

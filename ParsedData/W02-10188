@@ -1,0 +1,16 @@
+modify slightly the generative process in Model 1 so as to account for distortions.
+    The generative story of Model 2 is this: 1.
+    Generate a bag of concepts.
+    2.
+    Initialize E and F to empty sequences.
+    3.
+    Randomly take a concept and generate a pair of phrases , according to the distribution , whereandeach contain at least one word.
+    Remove then from.
+    4.
+    Append phraseat the end of F. Letbe the start position ofin F. 5.
+    Insert phraseat positionin E provided that no other phrase occupies any of the positions betweenand , wheregives length of the phrase.
+    We hence create the alignment between the two phrasesand with probability is a position-based distortion distribution.
+    6.
+    Repeat steps 3 to 5 untilis empty.
+    In Model 2, the probability to generate a sentence pair (E, F) is given by formula (2), where the position of wordof phrasein sen- F and denotes the position in tence E of the center of mass of phrase.
+    (2) Model 2 implements an absolute position-based dis

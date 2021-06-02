@@ -1,0 +1,9 @@
+andard deviation of the maximum likelihood probabilities for the weights 0, (Samuelsson, 1993).
+    This leaves room for interpretation.
+    We use the longest suffix that we can find in the training set (i.e., for which the frequency is greater than or equal to 1), but at most 10 characters.
+    This is an empirically determined choice.
+    2) We use a context-independent approach for 0&#8222; as we did for the contextual weights A.
+    It turned out to be a good choice to set all 0, to the standard deviation of the unconditioned maximum likelihood probabilities of the tags in the training corpus, i.e., we set for all i = 0 ... m &#8212; 1, using a tagset of s tags and the average (11) This usually yields values in the range 0,03 ... 0.10.
+    3) We use different estimates for uppercase and lowercase words, i.e., we maintain two different suffix tries depending on the capitalization of the word.
+    This information improves the tagging results.
+    4) Another freedom concerns the choice of the words in the 

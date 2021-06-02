@@ -1,0 +1,8 @@
+ach grammar rule for this augmentation.
+    Whenever the parser reduces constituents into a higher-level nonterminal using a phrase structure rule, the Lisp program associated with the rule is evaluated.
+    The Lisp program handles such aspects as construction of a syntax/semantic representation of the input sentence, passing attribute values among constituents at different levels and checking syntactic/semantic constraints such as subject-verb agreement.
+    If the Lisp function returns NIL, the parser does not do the reduce action with the rule.
+    If the Lisp function returns a non-NIL value, then this value is given to the newly created non-terminal.
+    The value includes attributes of the nonterminal and a partial syntactic/semantic representation constructed thus far.
+    Notice that those Lisp functions can be precompiled into machine code by the standard Lisp compiler.
+    A functional structure used in the functional grammar formalisms (Kay 1984, Bresnan and Kaplan 1982, Shieber 1985) is in genera

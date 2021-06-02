@@ -1,0 +1,6 @@
+ thesesequences of hidden states correspond to the gold standard POS tags for the training corpus (here, the PTB POS tags).
+			The chief difficulty is determining the correspondence between the hidden states and the gold-standard POS tags.Perhaps the most straightforward method of es tablishing this correspondence is to deterministically map each hidden state to the POS tag it co-occurs most frequently with, and return the proportion of the resulting POS tags that are the same as the POS tags of the gold-standard corpus.
+			We call this themany-to-1 accuracy of the hidden state sequence be cause several hidden states may map to the same POS tag (and some POS tags may not be mapped to by any hidden states at all).
+			As Clark (2003) points out, many-to-1 accuracy has several defects.
+			If a system is permitted to posit an unbounded number of hidden states (which is notthe case here) then it can achieve a perfect many-to 1 accuracy by placing every word token into its own unique state.
+			Cross-validation, i.e

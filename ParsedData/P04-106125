@@ -1,0 +1,8 @@
+ency model alone, we allow each word to have even probability for either generation order (but in each actual head derivation, only one order occurs).
+    When using the models together, better performance was obtained by releasing the one-side-attaching-first requirement entirely.
+    In figure 6, we give the behavior of the CCM constituency model and the DMV dependency model on both constituency and dependency induction.
+    Unsurprisingly, their strengths are complementary.
+    The CCM is better at recovering constituency, and the dependency model is better at recovering dependency structures.
+    It is reasonable to hope that a combination model might exhibit the best of both.
+    In the supervised parsing domain, for example, scoring a lexicalized tree with the product of a simple lexical dependency model and a PCFG model can outperform each factor on its respective metric (Klein and Manning, 2003).
+    In the combined model, we score each tree with the product of the probabilities from the individual mo

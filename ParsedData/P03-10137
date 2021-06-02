@@ -1,0 +1,6 @@
+r baseline against which to test the lexicalized models.
+    More specifically, we used a standard probabilistic context-free grammar (PCFG; see Charniak 1993).
+    Each context-free rule RHS &#8212;* LHS is annotated with an expansion probability P(RHS|LHS).
+    The probabilities for all rules with the same lefthand side have to sum to one, and the probability of a parse tree T is defined as the product of the probabilities of all rules applied in generating T. The head-lexicalized PCFG model of Carroll and Rooth (1998) is a minimal departure from the standard unlexicalized PCFG model, which makes it ideal for a direct comparison.1 A grammar rule LHS &#8212;* RHS can be written as P &#8212;* C1 ...Cn, where P is the mother category, and C1 ...Cn are daughters.
+    Let l(C) be the lexical head of the constituent C. The rule probability is then defined as (see also Beil et al. 2002): probability that the (non-head) category C has the lexical head l(C) given that its mother is P with lexical head l(P).
+    In c

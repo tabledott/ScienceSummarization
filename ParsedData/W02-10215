@@ -1,0 +1,11 @@
+hey were indistinguishable by translation and language model state.
+  
+  
+    To study the effect of the word graph size on the translation quality, we produce a conservatively large word graph.
+    Then we apply word graph pruning with a threshold t &lt; 1 and study the change of graph error rate (see Section 5).
+    The pruning is based on the beam search concept also used in the single best search: we determine the probability of the best sentence hypothesis in the word graph.
+    All hypotheses in the graph which probability is lower than this maximum probability multiplied with the pruning threshold are discarded.
+    If the pruning threshold t is zero, the word graph is not pruned at all, and if t = 1, we retain only the sentence with maximum probability.
+    In single best search, a standard trigram language model is used.
+    Search with a bigram language model is much faster, but it yields a lower translation quality.
+    Therefore, we apply a twopass approach as it was widely used in speech recognit

@@ -1,0 +1,10 @@
+paths occur with a similar distribution).
+    Our work does not need to store the terminals themselves, only whether they are from the same pronoun group.
+    Different paths are not compared in any way; each path is individually assigned a coreference likelihood.
+  
+  
+    We define a dependency path as the sequence of nodes and dependency labels between two potentially coreferent entities in a dependency parse tree.
+    We use the structure induced by the minimalist parser Minipar (Lin, 1998) on sentences from the news corpus described in Section 4.
+    Figure 1 gives the parse tree of (2).
+    As a short-form, we write the dependency path in this case as &#8220;Noun needs pronoun&#8217;s support.&#8221; The path itself does not include the terminal nouns &#8220;John&#8221; and &#8220;his.&#8221; Our algorithm finds the likelihood of coreference along dependency paths by counting the number of times they occur with terminals that are either likely coreferent or non-coreferent.
+    In the simplest version, w

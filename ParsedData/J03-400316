@@ -1,0 +1,10 @@
+sition to include a step in which subcategorization frames are chosen probabilistically.
+    Model 3 handles wh-movement by adding parameters corresponding to slash categories being passed from the parent of the rule to one of its children or being discharged as a trace.
+  
+  
+    This section describes how the generation of the RHS of a rule is broken down into a sequence of smaller steps in model 1.
+    The first thing to note is that each internal rule in a lexicalized PCFG has the form4 H is the head-child of the rule, which inherits the headword/tag pair h from its parent P. L1(l1) ... Ln(ln) and R1(r1) ... Rm(rm) are left and right modifiers of H. Either n or m may be zero, and n = m = 0 for unary rules.
+    Figure 2 shows a tree that will be used as an example throughout this article.
+    We will extend the left and right sequences to include a terminating STOP symbol, allowing a Markov process to model the left and right sequences.
+    Thus Ln+1 = Rm+1 = STOP.
+    Note that lexical rules, in contrast 

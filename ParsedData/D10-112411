@@ -1,0 +1,7 @@
+ocus to the issues that are unique to the geographic topic model.
+    We place variational distributions over all latent variables of interest: &#952;, z, r, &#977;, &#951;, &#181;, &#963;2, &#957;, and &#923;, updating each of these distributions in turn, until convergence.
+    The variational distributions over &#952; and &#977; are Dirichlet, and have closed form updates: each can be set to the sum of the expected counts, plus a term from the prior (Blei et al., 2003).
+    The variational distributions q(z) and q(r) are categorical, and can be set proportional to the expected joint likelihood&#8212;to set q(z) we marginalize over r, and vice versa.7 The updates for the multivariate Gaussian spatial parameters &#957; and &#923; are described by Penny (2001).
+    The variational region-topic distribution &#951;jk is normal, with uniform diagonal covariance for tractability.
+    Throughout we will write hxi to indicate the expectation of x under the variational distribution Q.
+    Thus, the vector mean of the

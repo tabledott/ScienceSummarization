@@ -1,0 +1,13 @@
+assume, these word graphs have already been produced.
+    For all source positions k with jl &lt; k &lt; jr, we combine the word graphs W (jl, k) and W (k + 1, jr) as described above.
+    Finally, we merge all start nodes of these graphs as well as all end nodes.
+    Now, we have obtained the word graph W(jl, jr) for the source sequence fjr jl .
+    As initialization, we use the word graphs of the monotone IBM4 search.
+    In this section, we will extend the ITG constraints described in Sec.
+    2.1.
+    This extension will go beyond basic reordering constraints.
+    We already mentioned that the use of consecutive phrases within the ITG approach is straightforward.
+    The only thing we have to change is the initialization of the Q-table.
+    Now, we will extend this idea to phrases that are non-consecutive in the source language.
+    For this purpose, we adopt the view of the ITG constraints as a bilingual grammar as, e.g., in (Wu, 1997).
+    For the baseline ITG constraints, the resulting grammar is: A&#82

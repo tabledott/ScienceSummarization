@@ -1,0 +1,7 @@
++ ?(fi(aref , e, f)?
+			fi(ahyp, e, f)) For the CLP-based model, based on the typical feature values we expected to see, we guessed that0.01 might be a good value for the learning rate pa rameter.
+			That seemed to produce good results, so we did not attempt to further optimize the learning rate parameter for this model.
+			The situation with the LLR-based model was more complicated.
+			Our previous experience using LLR scores in statistical NLP applications indicated that with large data sets, LLR values can get very high (upwards of 100000 for our 500000 sentencepair corpus), but small difference could be signifi cant, which led us to believe that the same would be true of the weight values we were trying to learn.
+			That meant that a learning rate small enough to let 85 us converge on the desired weight values might take a very large number of iterations through the data to reach those values.
+			We addressed this problem, by using a progression of learning rates, starting at 1000, reducing each successiv

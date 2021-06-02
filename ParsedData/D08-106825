@@ -1,0 +1,10 @@
+ differing from the previous one in a single aspect.
+    We emphasize that our approach is unsupervised, and thus the data only contains raw text plus true mention boundaries.
+    MLN-1 In this experiment, the base MLN was used, and the head was chosen crudely as the rightmost token in a mention.
+    Our system was run on each test document separately, using a minimum of training data (the document itself).
+    MLN-30 Our system was trained on all 30 test documents together.
+    This tests how much can be gained by pooling information.
+    MLN-H The heads were determined using the head rules in the Stanford parser (Klein &amp; Manning, 2003), plus simple heuristics to handle suffixes such as &#8220;Corp.&#8221; and &#8220;Inc.&#8221; MLN-HA The apposition rule was added.
+    MLN-HAN The predicate-nominal rule was added.
+    This is our full model.
+    We also compared with two rule-based MLNs: RULE chose the head crudely as the rightmost token in a mention, and did not include the apposition rule and predicat

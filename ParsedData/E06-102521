@@ -1,0 +1,6 @@
+ are used as training examples of category Subjective.
+    Approach II is again based on learning two binary classifiers.
+    Here, one of them must discriminate between terms that belong to the Positive category and ones that belong to its complement (not Positive), while the other must discriminate between terms that belong to the Negative category and ones that belong to its complement (not Negative).
+    Terms that have been classified both into Positive by the former classifier and into (not Negative) by the latter are deemed to be positive, and terms that have been classified both into (not Positive) by the former classifier and into Negative by the latter are deemed to be negative.
+    The terms that have been classified (i) into both (not Positive) and (not Negative), or (ii) into both Positive and Negative, are taken to be Objective.
+    In the training phase of Approach II, the terms in TrKn &#8746; TrKo are used as training examples of category (not Positive), and the terms in TrKp &#8746; TrKo are

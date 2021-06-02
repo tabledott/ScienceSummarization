@@ -1,0 +1,8 @@
+oundaries, respectively.
+    For example, ONP= would denote a binary feature that matches whenever the span of f exactly covers an NP in the source-side parse tree, resulting in ANP= being added to the hypothesis score (expression (1)).
+    Similarly, oVP+ would denote a binary feature that matches whenever the span of f crosses a VP boundary in the parse tree, resulting in AVP+ being subtracted from the hypothesis score.7 For readability from this point forward, we will omit 0 from the notation and refer to features such as NP= (which one could read as &#8220;NP match&#8221;), VP+ (which one could read as &#8220;VP crossing&#8221;), etc.
+    In addition to these individual features, we define three more variants: &#8226; For each constituent type, e.g.
+    NP, we define a feature NP_ that ties the weights of NP= and NP+.
+    If NP= matches a rule, the model score is incremented by ANP_, and if NP+ matches, the model score is decremented by the same quantity.
+    &#8226; For each constituent type, e.g.
+    NP

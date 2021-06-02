@@ -1,0 +1,9 @@
+d form of a word is always an initial or a final substring of that word&#8212;no attention is paid to morphographemic or word-internal changes.
+    A word is broken into two parts, one of which becomes the normalized form, if there is evidence that the resulting prefix and suffix belong to a paradigm.
+    In particular, both must occur as prefixes and suffixes of other forms.
+    The algorithm proceeds in two stages.
+    First a data structure, called the trie, is constructed in which information about the occurrences of potential prefixes and suffixes in the text is stored.
+    Second, words are split, where the trie provides evidence for doing so, and one of the resulting parts is chosen as the normalization. information with strings of characters.
+    It is particularly economical in situations where many of the strings of interest are substrings of others in the set.
+    A trie is in fact a tree, with a branch at the root node for every character that begins a string in the set.
+    To look up a string, o

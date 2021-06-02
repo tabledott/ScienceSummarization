@@ -1,0 +1,11 @@
+raph G' = (VG,, EGI) with n vertices and at most m edges.
+    We start from the graph G' = (VG, OG), where OG is the set of looping edges from the scene graph, that is, OG = UvEVG EG(v,v).
+    Next we order the remaining edges from the scene graph RG = EG\OG with respect to their costs; the cheapest one comes first, the more expensive ones come later, in order of increasing expense.
+    For each e E RG, we check whether G' + e is planar (e.g., using the algorithm from Hopcroft and Tarjan [1974]).
+    If it is, e is added to EGI.
+    The algorithm terminates when RG = 0.
+    The result is a maximal planar subgraph G' of the scene graph G that differs from G only possibly in the deletion of certain relatively expensive nonlooping (relational) edges.
+  
+  
+    We would like to thank Dennis van Oort and Denis Gerritsen for their help in the implementation and Alexander Koller and Kees van Deemter for some very useful discussions.
+    Thanks are also due to Paul Piwek, Mari&#168;et Theune, Ielka van der Sluis, and

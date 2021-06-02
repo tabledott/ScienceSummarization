@@ -1,0 +1,8 @@
+ass segmentations of S&#8217;, C, as hidden variables.
+    In principle, the ON class model recovers P(S&#8217;|ON) over all possible C: P(S&#8217;|ON) = &#8721;CP(S&#8217;,C|ON) = &#8721;CP(C|ON)P(S&#8217;|C, ON).
+    Since P(S&#8217;|C,ON) = P(S&#8217;|C), we have P(S&#8217;|ON) = &#8721;CP(C|ON) P(S&#8217;|C).
+    We then assume that the sum is approximated by a single pair of terms P(C*|ON)P(S&#8217;|C*), where C* is the most probable word class segmentation discovered by Eq.
+    2.
+    That is, we also use our system to find C*, but the sourcechannel models are estimated on the ON list.
+    Consider the earlier example.
+    Assuming that C* = LN/&#22269;&#38469;/&#33322;&#31354;/&#20844;&#21496;, where &#20013;&#22269; is tagged as a LN, the probability P(S&#8217;|ON) would be estimated using a word class bigram model as: P(&#20013;&#22269;&#22269;&#38469;&#33322;&#31354;&#20844;&#21496; |ON) &#8776; P(LN/&#22269;&#38469;/&#33322;&#31354;/&#20844;&#21496;|ON) P(&#20013;&#22269;|LN) = P(LN|&lt;ON&gt;)P(&#

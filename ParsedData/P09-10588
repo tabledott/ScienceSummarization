@@ -1,0 +1,8 @@
+describe our new approach to leverage additional examples of unknown words.
+    Intuition suggests that even though the system can handle some unknown words, many unidentified unknown words remain that cannot be recovered by the system; we wish to learn the characteristics of such unidentified unknown words.
+    We propose the following simple scheme: Several types of errors are produced by the baseline model, but we only focus on those caused by unidentified unknown words, which can be easily collected in the evaluation process.
+    As described later in Section 5.2, we measure the recall on out-of-vocabulary (OOV) words.
+    Here, we define unidentified unknown words as OOV words in each validation set that cannot be recovered by the system.
+    After ten cross validation runs, we get a list of the unidentified unknown words derived from the whole training corpus.
+    Note that the unidentified unknown words in the cross validation are not necessary to be infrequent words, but some overlap may exist.
+    Fi

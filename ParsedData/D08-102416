@@ -1,0 +1,7 @@
+sting that this labor-intensive feature selection process would have to be repeated for each new language pair.
+    Here, we use MIRA to optimize Marton and Resnik&#8217;s finer-grained single-category features all at once.
+    We define below two sets of features, a coarsegrained class that combines several constituency categories, and a fine-grained class that puts different categories into different features.
+    Both kinds of features were used by Marton and Resnik, but only a few at a time.
+    Crucially, our training algorithm provides the ability to train all the fine-grained features, a total of 34 feature weights, simultaneously.
+    Coarse-grained features As the basis for coarsegrained syntactic features, we selected the following nonterminal labels based on their frequency in the tuning data, whether they frequently cover a span of more than one word, and whether they represent linguistically relevant constituents: NP, PP, S, VP, SBAR, ADJP, ADVP, and QP.
+    We define two new features, one which 

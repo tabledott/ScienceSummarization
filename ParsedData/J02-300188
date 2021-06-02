@@ -1,0 +1,6 @@
+the dynamic programming chart to have n slots for the best solutions to each subproblem, rather than one.
+    As our grammar forms new constituents from pairs of smaller constituents (that is, it internally uses a binarized grammar), for each pair of constituents considered in a single-best parser, up to n2 pairs would be present in the n-best variant.
+    The beam search used by modern parsers, however, makes the analysis more complex.
+    Lexicalization of parse constituents dramatically increases the number of categories that must be stored in the chart, and efficient parsing requires that constituents below a particular probability threshold be dropped from further consideration.
+    In practice, returning a larger number of parses with our algorithm seems to require increasing the pruning beam size to a degree that makes run times prohibitive.
+    In addition to the robustness of even relatively simple parsing models, one explanation for the modest improvement may be the fact that even our integrated sys

@@ -1,0 +1,12 @@
+ performance on our development set: which simplifies the decoder implementation.
+    Moreover, we prohibit nonterminals that are adjacent on the French side, a major cause of spurious ambiguity.
+    5.
+    A rule must have at least one pair of aligned words, making translation decisions always based on some lexical evidence.
+    Now we must hypothesize weights for all the derivations.
+    Och&#8217;s method gives equal weight to all the extracted phrase occurences.
+    However, our method may extract many rules from a single initial phrase pair; therefore we distribute weight equally among initial phrase pairs, but distribute that weight equally among the rules extracted from each.
+    Treating this distribution as our observed data, we use relativefrequency estimation to obtain P(y  |&#945;) and P(&#945;  |y).
+  
+  
+    Our decoder is a CKY parser with beam search together with a postprocessor for mapping French derivations to English derivations.
+    Given a French sentence f, it finds the best derivation 

@@ -1,0 +1,7 @@
+imize BLEU on the MT02 test set (Och, 2003).
+    To evaluate whether the approximate distributed inference algorithm described in Section 4.4 is effective, we compare the posterior probability of the training corpus when using a single machine, and when the inference is distributed on an eight core machine.
+    Figure 6 plots the mean posterior and standard error for five independent runs for each scenario.
+    Both sets of runs performed hyperparameter inference every twenty passes through the data.
+    It is clear from the training curves that the distributed approximation tracks the corpus probability of the correct sampler sufficiently closely.
+    This concurs with the findings of Newman et al. (2007) who also observed very little empirical difference between the sampler and its distributed approximation.
+    Tables 3 and 4 show the result on the two NIST corpora when running the distributed sampler on a single 8-core machine.5 These scores tally with our initial hypothesis: that the hierarchical structu

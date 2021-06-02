@@ -1,0 +1,11 @@
+irst considering each subsequence of the sentence as a candidate to be a target instance.
+    It computes a score for each candidate by comparing it to the training corpus, which consists of a set of pre-bracketed sentences.
+    The algorithm then finds a consistent bracketing for the input sentence, giving preference to high scoring subsequences.
+    In the remainder of this section we describe the scoring and bracketing methods in more detail.
+    We first describe the mechanism for scoring an individual candidate.
+    The input is a candidate subsequence, along with its context, i.e., the other tags in the input sentence.
+    The method is presented at two levels: a general memory-based learning schema and a particular instantiation of it.
+    Further instantiations of the schema are expected in future work.
+    The MBSL scoring algorithm works by considering situated candidates.
+    A situated candidate is a sentence containing one pair of brackets, indicating a candidate to be a target instance.
+    The 

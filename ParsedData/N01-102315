@@ -1,0 +1,7 @@
+ous settings for the Co-Training algorithm (from Section 5) are as follows: While it might seem expensive to run the parser over the cache multiple times, we use the pruning capabilities of the parser to good use here.
+    During the iterations we set the beam size to a value which is likely to prune out all derivations for a large portion of the cache except the most likely ones.
+    This allows the parser to run faster, hence avoiding the usual problem with running an iterative algorithm over thousands of sentences.
+    In the initial runs we also limit the length of the sentences entered into the cache because shorter sentences are more likely to beat out the longer sentences in any case.
+    The beam size is reset when running the parser on the test data to allow the parser a better chance at finding the most likely parse.
+    We scored the output of the parser on Section 23 of the Wall Street Journal Penn Treebank.
+    The following are some aspects of the scoring that might be useful for comparision wit

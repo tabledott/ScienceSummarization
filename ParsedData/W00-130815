@@ -1,0 +1,7 @@
+und that the prefix features for rare words were having a net negative effect on accuracy.
+    We do not at present have a good explanation for this phenomenon.
+    The addition of the features (1) and (2) and the removal of the prefix features considerably improved the accuracy on unknown words and the overall accuracy.
+    The results on the test set after adding these features are shown below: 96.76% 86.76% Unknown word error is reduced by 15% as compared to the Baseline model.
+    It is important to note that (2) is composed of information already 'known' to the tagger in some sense.
+    This feature can be viewed as the conjunction of two features, one of which is already in the baseline model, and the other of which is the negation of a feature existing in the baseline model &#8212; since for words at the beginning of a sentence, the preceding tag is the pseudo-tag NA, and there is a feature looking at the preceding tag.
+    Even though our maximum entropy model does not require independence among the p

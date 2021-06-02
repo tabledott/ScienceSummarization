@@ -1,0 +1,7 @@
+ shared contribution between the supertagged translation and language models: adding the LTAG TM improves BLEU score by 1.38 points (3.4% relative) over the baseline, with the LTAG LM improving BLEU score by a further 0.59 points (a further 1.4% increase).
+    Outperforming a PBSMT system on small amounts of training data is less impressive than doing so on really large sets.
+    The issue here is scalability as well as whether the PBSMT system is able to bridge the performance gap with the supertagged system when reasonably large sizes of training data are used.
+    To this end, we trained the systems on 2 million sentences of parallel data, deploying LTAG supertags and CCG supertags.
+    Table 5 presents the comparison between these systems and the baseline trained on the same data.
+    The LTAG system improves by 1.17 BLEU points (2.6% relative), but the CCG system gives an even larger increase: 1.91 BLEU points (4.3% relative).
+    While this is slightly lower than the 4.9% relative improvement with the s

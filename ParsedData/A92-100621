@@ -1,0 +1,10 @@
+ from the previous proposition).
+    This fails (since the two clauses have different verbs and different actants), so the current DSyntR is sent to the realizer, which prints out the first sentence.
+    The new DSyntR becomes the current one.
+    Control is returned to the text planner, which processes the third :make-propos it ion command and sends the appropriate proposition to the sentence planner.
+    The sentence planner generates the clausal DSyntR tree shown in Figure 10 (the information is classified).
+    It then attempts to combine the new clause with the &amp;quot;current DSyntR&amp;quot;, first using the adjectival attachment strategy.
+    This succeeds, yielding the tree shown in Figure 11.
+    It then returns control to the text planner, since another clause could be merged with the current DSyntR.
+    The text planner then calls schema conceptual-break.
+    The only effect of this schema is to send a conceptual-break message to the sentence planner, which thereupon sends its current DSyntR to 

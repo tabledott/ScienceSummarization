@@ -1,0 +1,8 @@
+d in our initial experiments.
+    In the modified language models, the unigram model based on the selected training set is smoothed by absolute discounting, and backed-off to an unsmoothed unigram model based on the full Gigaword corpus.
+    This produces language models that are normalized over the same vocabulary as a model trained on the full Gigaword corpus; thus the test set has the same OOVs for each model.
+    Test set perplexity for each of these modifed language models is compared to that of the original version of the model in Table 2.
+    It can be seen that adjusting the vocabulary in this way, so that all models are based on the same vocabulary, yields only very small changes in the measured test-set perplexity, and these differences are much smaller than the differences between the different selection methods, whichever way the vocabulary of the language models is determined.
+  
+  
+    The cross-entropy difference selection method introduced here seems to produce language models that are both a 

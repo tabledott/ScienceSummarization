@@ -1,0 +1,13 @@
+ a chunk.
+    O Current token is outside of any chunk.
+    B Current token is the beginning of a chunk which immediately follows another chunk.
+    Tjong Kim Sang calls this method as IOB1 representation, and introduces three alternative versions &#8212; IOB2,IOE1 and IOE2 (Tjong Kim Sang and Veenstra, 1999).
+    IOB2 A B tag is given for every token which exists at the beginning of a chunk.
+    Other tokens are the same as IOB1.
+    This method has been used for the Japanese named entity extraction task, and requires the following five tags for representing proper chunks(Uchimoto et al., 2000) 1.
+    1Originally, Uchimoto uses C/E/U/O/S representation.
+    However we rename them as B/I/O/E/S for our purpose, since B Current token is the start of a chunk consisting of more than one token.
+    E Current token is the end of a chunk consisting of more than one token.
+    I Current token is a middle of a chunk consisting of more than two tokens.
+    S Current token is a chunk consisting of only one token.
+    O C

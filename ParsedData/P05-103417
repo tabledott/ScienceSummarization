@@ -1,0 +1,7 @@
+
+    Thus (1+2+1)!/(1+1)!
+    = 12 candidate translations are produced for each combination of translations of the software and is.
+    Converting this exhaustive search to dynamic programming relies on the observation that scoring a translation candidate at a node depends on the following information from its descendents: the order model requires features from the root of a translated subtree, and the target language model is affected by the first and last two words in each subtree.
+    Therefore, we need to keep the best scoring translation candidate for a given subtree for each combination of (head, leading bigram, trailing bigram), which is, in the worst case, O(V5), where V is the vocabulary size.
+    The dynamic programming approach therefore does not allow for great savings in practice because a trigram target language model forces consideration of context external to each subtree.
+    To eliminate unnecessary ordering operations, we first check that a given set of words has not been previously ordered

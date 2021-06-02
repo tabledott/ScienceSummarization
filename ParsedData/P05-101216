@@ -1,0 +1,9 @@
+ed our methods experimentally on the English Penn Treebank (Marcus et al., 1993) and on the Czech Prague Dependency Treebank (Haji&#711;c, 1998).
+    All experiments were run on a dual 64-bit AMD Opteron 2.4GHz processor.
+    To create dependency structures from the Penn Treebank, we used the extraction rules of Yamada and Matsumoto (2003), which are an approximation to the lexicalization rules of Collins (1999).
+    We split the data into three parts: sections 02-21 for training, section 22 for development and section 23 for evaluation.
+    Currently the system has 6, 998, 447 features.
+    Each instance only uses a tiny fraction of these features making sparse vector calculations possible.
+    Our system assumes POS tags as input and uses the tagger of Ratnaparkhi (1996) to provide tags for the development and evaluation sets.
+    Table 2 shows the performance of the systems that were compared.
+    Y&amp;M2003 is the SVM-shiftreduce parsing model of Yamada and Matsumoto (2003), N&amp;S2004 is the memory-bas

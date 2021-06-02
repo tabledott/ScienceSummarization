@@ -1,0 +1,9 @@
+ic, we use cosine.
+    A cluster may be represented by a cosine similarity matrix where each entry in the matrix is the similarity between the corresponding sentence pair.
+    Figure 1 shows a subset of a cluster used in DUC 2004, and the corresponding cosine similarity matrix.
+    Sentence ID d s indicates the th sentence in the th document.
+    In the following sections, we discuss two methods to compute sentence prestige using this matrix.
+    In a cluster of related documents, many of the sentences are expected to be somewhat similar to each other since they are all about the same topic.
+    This can be seen in Figure 1 where the majority of the values in the similarity matrix are nonzero.
+    Since we are interested in significant similarities, we can eliminate some low values in this matrix by defining a threshold so that the cluster can be viewed as an (undirected) graph, where each sentence of the cluster is a node, and significantly similar sentences are connected to each other.
+    Figure 2 shows th

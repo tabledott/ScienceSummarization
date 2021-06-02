@@ -1,0 +1,8 @@
+ch possible partition P of the adjectives into two subgroups Ci and C2 as where ICI stands for the cardinality of cluster i, and d(x, y) is the dissimilarity between adjectives x and y.
+    We want to select the partition Pmin that minimizes (I), subject to the additional constraint that for each adjective x in a cluster C, where C is the complement of cluster C, i.e., the other member of the partition.
+    This constraint, based on Rousseeuw's (1987) silhouettes, helps correct wrong cluster assignments.
+    To find Pi we first construct a random partition of the adjectives, then locate the adjective that will most reduce the objective function if it is moved from its current cluster.
+    We move this adjective and proceed with the next iteration until no movements can improve the objective function.
+    At the final iteration, the cluster assignment of any adjective that violates constraint (1) is changed.
+    This is a steepestdescent hill-climbing method, and thus is guaranteed to converge.
+    However, it

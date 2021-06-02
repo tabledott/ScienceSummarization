@@ -1,0 +1,6 @@
+l chart[s, A, s +1] := chart[s, A, s +1] V chart[s,B, s+t] A chart[s+t,C, s +1] A TRUE; larger changes would be necessary to create the inside algorithm.
+    Besides recognition, four other quantities are commonly computed by parsing algorithms: derivation forests, Viterbi scores, number of parses, and outside probabilities.
+    The first quantity, a derivation forest, is a data structure that allows one to efficiently compute the set of legal derivations of the input string.
+    The derivation forest is typically found by modifying the recognition algorithm to keep track of &amp;quot;back pointers&amp;quot; for each cell of how it was produced.
+    The second quantity often computed is the Viterbi score, the probability of the most probable derivation of the sentence.
+    This can typically be computed by substituting x for A and max for V. Less commonly computed is the total number of parses of the sentence, which, like the inside values, can be computed using multiplication and addition; unlike for the ins

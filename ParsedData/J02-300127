@@ -1,0 +1,7 @@
+e of how such a feature can be useful, in the sentence &#8220;He drove the car over the cliff,&#8221; the subject NP is more likely to fill the AGENT role than the other two NPs.
+    We will discuss various grammatical-function features that attempt to indicate a constituent&#8217;s syntactic relation to the rest of the sentence, for example, as a subject or object of a verb.
+    The first such feature, which we call &#8220;governing category,&#8221; or gov, has only two values, S and VP, corresponding to subjects and objects of verbs, respectively.
+    This feature is restricted to apply only to NPs, as it was found to have little effect on other phrase types.
+    As with phrase type, the feature was read from parse trees returned by the parser.
+    We follow links from child to parent up the parse tree from the constituent corresponding to a frame element until either an S or VP node is found and assign the value of the feature according to whether this node is an S or a VP.
+    NP nodes found under S nodes

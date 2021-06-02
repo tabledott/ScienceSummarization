@@ -1,0 +1,9 @@
+d RELc &#8838; C is a set of reliable contexts, defined below. allow(t, w) is a binary function indicating whether t is a valid tag for w. p(c|w) and p(w|c) are estimated via raw corpus counts.
+    Intuitively, we estimate the probability of a tag given a context as the average probability of a tag given any of the words appearing in that context, and similarly the probability of a tag given a word is the averaged probability of that tag in all the (reliable) contexts in which the word appears.
+    At each round, we define RELc, the set of reliable contexts, to be the set of all contexts in which p(t|c) &gt; 0 for at most X different ts.
+    The method is general, and can be applied to different languages.
+    The parameters to specify for each language are: the initial estimation p(t|w), the estimation of the allow relation for known and OOV words, and the types of contexts to consider.
+  
+  
+    In Hebrew, several words combine into a single token in both agglutinative and fusional ways.
+    This results in

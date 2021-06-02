@@ -1,0 +1,7 @@
+ation (Blei et al., 2003), the base topics are selected by a per-token hidden variable z.
+    In the geographical topic model, the next level corresponds to regions, which are selected by a per-author latent variable r. Formally, we draw each level of the cascade from a normal distribution centered on the previous level; the final multinomial distribution over words is obtained by exponentiating and normalizing.
+    To ensure tractable inference, we assume that all covariance matrices are uniform diagonal, i.e., aI with a &gt; 0; this means we do not model interactions between words.
+    The application of cascading topic models to geographical variation is straightforward.
+    Each document corresponds to the entire Twitter feed of a given author during the time period covered by our corpus.
+    For each author, the latent variable r corresponds to the geographical region of the author, which is not observed.
+    As described above, r selects a corrupted version of each topic: the kth basic topic has mean &#

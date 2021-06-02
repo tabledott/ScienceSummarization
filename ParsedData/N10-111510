@@ -1,0 +1,12 @@
+ series of smaller steps, each pushing w&#65533; away from invalid attachments and toward valid ones.
+    This way we integrate the search of confident attachments into the learning process.
+  
+  
+    The function isValid(act(i), gold, arcs) (line 4) is used to decide if the chosen action/location pair is valid.
+    It returns True if two conditions apply: (a) (pi, pj) is present in gold, (b) all edges (&#10065;, pj) in gold are also in arcs.
+    In words, the function verifies that the proposed edge is indeed present in the gold parse and that the suggested daughter already found all its own daughters.2
+  
+  
+    The feature representation for an action can take into account the original sentence, as well as the entire parse history: Oact(i) above is actually O(act(i), sentence, Arcs, pending).
+    We use binary valued features, and each feature is conjoined with the type of action.
+    When designing the feature representation, we keep in mind that our features should not only direct the parser toward desir

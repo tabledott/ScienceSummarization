@@ -1,0 +1,9 @@
+h word is connected to exactly one English word.
+    Word-aligned data is usually not available, but large sets of unaligned bilingual sentence pairs do sometimes exist.
+    A single sentence pair will have rn possible alignments&#8212;for each French word position 1 m, there is a choice of I English positions to connect to.
+    A naive EM implementation will collect n, s, and d counts by considering each alignment, but this is expensive.
+    (By contrast, part-of-speech tagging involves a single alignment, leading to 0(m) training).
+    Lacking a polynomial reformulation, Brown et al. (1993) decided to collect counts only over a subset of likely alignments.
+    To bootstrap, they required some initial idea of what alignments are reasonable, so they began with several iterations of a simpler channel model (called Model 1) that has nicer computational properties.
+    In the following description of Model 1, we represent an alignment formally as a vector al, .
+    . with values al ranging over English word posi

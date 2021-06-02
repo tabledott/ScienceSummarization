@@ -1,0 +1,10 @@
+7}.
+    Numbers are negative log-probabilities.
+    It assumes that the input lists are sorted and returns a sorted list.
+    A naive implementation of MERGEPRODUCTS would simply calculate all possible products and sort; however, if we are only interested in the top part of the result, we can implement MERGEPRODUCTS so that the output values are computed lazily and the input lists are accessed only as needed.
+    To do this, we must assume that the multiplication operator &#174; is monotonic in each of its arguments.
+    By way of motivation, consider the simple case G = {(L1,L2)}.
+    The full set of possible products can be arranged in a two-dimensional grid (see Figure 5a), which we could then sort to obtain MERGEPRODUCTS(G).
+    But because of our assumptions, we know that the first element of MERGEPRODUCTS(G) must be L1[1] &#174; L2[1].
+    Moreover, we know that the second element must be either L1[1] &#174; L2[2] or L1[2] &#174; L2[1].
+    In general (see Figure 5b), if some of the cells have been prev

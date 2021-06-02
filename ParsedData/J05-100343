@@ -1,0 +1,8 @@
+feature selection methods.
+    We define Upd(&#175;a,k,d) to be an updated parameter vector, with the same parameter values as a&#175; with the exception of ak, which is incremented by d: The d parameter can potentially take any value in the reals.
+    The loss for the updated model is Loss(Upd(&#175;a, k,d)).
+    Assuming we greedily pick a single feature with some weight to update the model, and given that the current parameter settings are &#175;a, the optimal feature/weight pair (k*, d*) is Note that this is essentially the idea behind the &#8220;boosting&#8221;approach to feature selection introduced in section 3.3.
+    In contrast, the feature selection method of Berger, Della Pietra, and Della Pietra (1996), also described in section 3.3, would involve updating parameter values for all selected features at step 2b.
+    The main computation for both loss functions involves searching for the optimal feature/weight pair (k*, d*).
+    In both cases we take a two-step approach to solving this problem.
+    I

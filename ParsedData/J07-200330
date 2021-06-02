@@ -1,0 +1,9 @@
+nce piecemeal.
+    For example, let m = 3 and &#8220;c g i s f&#8221; stand for &#8220;colorless green ideas sleep furiously.&#8221; Then Table 1 shows some values of p and q.
+    Then we may extend the &#8722;LM parser as shown in Figure 8 to use p and q to calculate LM probabilities.
+    We call this parser the +LM parser.
+    The items are of the form [X, i, j; e], signifying that a subtree rooted in X has been recognized spanning from i to j on the French side, and its English translation (possibly with parts elided) is e. The theoretical running time of this algorithm is O(n3|T|4(m&#8722;1)), because a deduction can combine up to two starred strings, which each have up to 2(m &#8722; 1) terminal symbols.
+    This is far too slow to use in practice, so we must use beam-search to prune the search space down to a reasonable size.
+    5.3.3 Pruning.
+    The chart is organized into cells, each of which contains all the items standing for X spanning fji+1.
+    The rule items are also organized into cells, each

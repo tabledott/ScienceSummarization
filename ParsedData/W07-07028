@@ -1,0 +1,8 @@
+ependently of words could introduce er rors.
+			Multiple dependencies require some form of backing off to simpler models in order to cover the cases where, for instance, the word has been seen intraining, but not with that particular supertag.
+			Dif ferent backoff paths are possible, and it would beinteresting but prohibitively slow to apply a strat egy similar to generalised parallel backoff (Bilmesand Kirchhoff, 2003) which is used in factored language models.
+			Backoff in factored language models is made more difficult because there is no obvious backoff path.
+			This is compounded for fac tored phrase-based translation models where one has to consider backoff in terms of factors and n-gramlengths in both source and target languages.
+			Fur thermore, the surface form of a word is probably themost valuable factor and so its contribution must al ways be taken into account.
+			We therefore did not use backoff and chose to use a log-linear combination of features and models instead.
+			Our solution is to ext

@@ -1,0 +1,8 @@
+nt of the revision.
+    We therefore sought to use comments to identify &#8220;trusted&#8221; revisions wherein the extracted lexical edit instances (see &#167;3.1) would be likely to be simplifications.
+    Let ik = (rk, ... , rk, ...) be the sequence of revisions for the kth article in SimpleEW, where rk is the set of lexical edit instances (A &#8212;* a) extracted from the ith modification of the document.
+    Let ck be the comment that accompanies rk, and conversely, let R(Set) = {rk|ck E Set}.
+    We start with a seed set of trusted comments, Seed.
+    To initialize it, we manually inspected a small sample of the 700K+ SimpleEW revisions that bear comments, and found that comments containing a word matching the regular expression *simpl* (e.g, &#8220;simplify&#8221;) seem promising.
+    We thus set Seed &#65533;= { * simpl*} (abusing notation).
+    The SIMPL method Given a set of trusted revisions TRev (in our case TRev = R(Seed)), we score each A &#8212;* a E TRev by the point-wise mutual information (P

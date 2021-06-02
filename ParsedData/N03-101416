@@ -1,0 +1,6 @@
+tep.
+    The SSN network then performs the same computation at each position in each sub-derivation.
+    The unbounded nature of phrase structure trees does not pose a problem for this approach, because increasing the number of nodes only increases the number of times the SSN network needs to perform a computation, and not the number of parameters in the computation which need to be trained.
+    For each position in the sub-derivation for a node top , the SSN computes two real-valued vectors, namely and . is computed by applying the function to a set of predefined features of the derivation history plus a small set of previous history representations. rep top where rep is the most recent previous history representation for a node . rep top top is a small set of nodes which are particularly relevant to decisions involving top .
+    This set always includes top itself, but the remaining nodes in top and the features in need to be chosen by the system designer.
+    These choices determine how information flows f

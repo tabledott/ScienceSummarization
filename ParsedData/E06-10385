@@ -1,0 +1,8 @@
+corresponding tree.
+    The algorithm then either shifts (considers new words and subtrees for x), reduces (combines subtrees from x into possibly new tree constructions) or drops (drops words and subtrees from x) on each step of the algorithm.
+    A decision tree model is trained on a set of indicative features for each type of action in the parser.
+    These models are then combined in a greedy global search algorithm to find a single compression.
+    Though both models of Knight and Marcu perform quite well, they do have their shortcomings.
+    The noisy-channel model uses a source model that is trained on uncompressed sentences, even though the source model is meant to represent the probability of compressed sentences.
+    The channel model requires aligned parse trees for both compressed and uncompressed sentences in the training set in order to calculate probability estimates.
+    These parses are provided from a parsing model trained on out-of-domain data (the WSJ), which can result in parse trees with

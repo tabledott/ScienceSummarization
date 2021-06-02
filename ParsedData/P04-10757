@@ -1,0 +1,10 @@
+rs.
+    In SVM, only the support vectors are useful for the classification, which is different from statistical models.
+    SVM training is to get these support vectors and their weights from training set by solving quadratic programming problem.
+    The support vectors can later be used to classify the test data.
+    Intuitively, we consider the informativeness of an example as how it can make effect on the support vectors by adding it to training set.
+    An example may be informative for the learner if the distance of its feature vector to the hyperplane is less than that of the support vectors to the hyperplane (equal to 1).
+    This intuition is also justified by (Schohn and Cohn 2000; Tong and Koller 2000) based on a version space analysis.
+    They state that labeling an example that lies on or close to the hyperplane is guaranteed to have an effect on the solution.
+    In our task, we use the distance to measure the informativeness of an example.
+    The distance of a word&#8217;s feature vector to th

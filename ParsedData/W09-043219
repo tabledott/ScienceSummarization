@@ -1,0 +1,7 @@
+ng configurations are ranked in order of complexity.
+    Table 3 summaries the final performance of each tuning process, after convergence was reached.
+    Notice that decoding time is not included in this plot, as Moses allows to perform this step in parallel on a computer cluster.
+    Hence, to our view the real bottleneck of the tuning process is actually related to the strictly serial part of the mert implementation of Moses.
+    As already observed in previous literature (Macherey et al., 2008), first iterations of the tuning process produces very bad weights (even close to 0); this exceptional performance drop is attributed to an over-fitting on the candidate repository.
+    Configurations exploiting the small development set (c,d) show a slower and more unstable convergence; however, their final performance in Table 3 result only slightly lower than that obtained with the standard dev sets (a, b).
+    Due to the larger number of iterations they needed, both configurations are indeed more time consuming

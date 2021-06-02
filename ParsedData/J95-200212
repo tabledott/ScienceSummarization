@@ -1,0 +1,8 @@
+nding state set, an Earley parser performs all three operations exhaustively, i.e., until no new states are generated.
+    One crucial insight into the working of the algorithm is that, although both prediction and completion feed themselves, there are only a finite number of states that can possibly be produced.
+    Therefore recursive prediction and completion at each position have to terminate eventually, and the parser can proceed to the next input via scanning.
+    To complete the description we need only specify the initial and final states.
+    The parser starts out with 0: o &#8212;.S, where S is the sentence nonterminal (note the empty left-hand side).
+    After processing the last symbol, the parser verifies that 1: 0 has been produced (among possibly others), where 1 is the length of the input x.
+    If at any intermediate stage a state set remains empty (because no states from the previous stage permit scanning), the parse can be aborted because an impossible prefix has been detected.
+    States w

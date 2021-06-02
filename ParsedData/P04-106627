@@ -1,0 +1,5 @@
+eir comparative study of alignment models.
+    The major difference between our model and theirs is that they base theirs on the Dice coefficient, which is computed by the formula4 while we use the log-likelihood-ratio statistic defined in Section 6.
+    Och and Ney find that the standard version of Model 1 produces more accurate alignments after only one iteration of EM than either of the heuristic models they consider, while we find that our heuristic model outperforms the standard version of Model 1, even with an optimal number of iterations of EM.
+    While the Dice coefficient is simple and intuitive&#8212;the value is 0 for words never found together, and 1 for words always found together&#8212;it lacks the important property of the LLR statistic that scores for rare words are discounted; thus it does not address the over-fitting problem for rare words.
+    The list of applications of IBM word-alignment Model 1 given in Section 1 should be sufficient to convince anyone of the relevance of improving the 

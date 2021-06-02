@@ -1,0 +1,9 @@
+hich has the effect that all left dependents are first recognized inside-out, followed by all right dependents, also inside-out, which coincides with the head-driven constituency parsing model of Collins (1999).
+    We use the popular online learning algorithm of structured perceptron with parameter averaging (Collins, 2002).
+    Following Collins and Roark (2004) we also use the &#8220;early-update&#8221; strategy, where an update happens whenever the goldstandard action-sequence falls off the beam, with the rest of the sequence neglected.
+    As a special case, for the deterministic mode, updates always co-occur with the first mistake made.
+    The intuition behind this strategy is that future mistakes are often caused by previous ones, so with the parser on the wrong track, future actions become irrelevant for learning.
+    See Section 5.3 for more discussions. and cR(st, wi) at step (4) in Fig.
+    2 (facing a shiftreduce decision).
+    Bold words are currently on stack while gray ones have been popped.
+ 

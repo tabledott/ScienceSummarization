@@ -1,0 +1,9 @@
+ in the reference, along with a penalty for short output: ? hamming (y ? ,y) = f+max (l ?
+			(t+ f), 0) (6) where t and f are the number of true and falsepositives, respectively, when comparing the pre dicted target, y, with the reference, y ? , and l isthe length of the reference.
+			The second term pe nalises short output, as predicting very little or nothing would otherwise be unpenalised.
+			We have three Hamming loss functions over: 1) tokens, 2) ngrams (n ? 3), or 3) CFG productions.
+			Theselosses all operate on unordered bags and therefore might reward erroneous predictions.
+			For ex ample, a permutation of the reference tokens has zero token-loss.
+			The CFG and ngram losses have overlapping items which encode a partial order, and therefore are less affected.In addition, we developed a fourth loss func tion to measure the edit distance between themodel?s prediction and the reference, both as bags of-tokens.
+			This measures the number of insertionsand deletions.
+			In contrast to the previous loss f

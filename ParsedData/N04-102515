@@ -1,0 +1,11 @@
+.
+    Second, to account for vocabulary variation within longer documents, we partition the document text into passages of 100 tokens each.
+    We then obtain a grade level prediction for each passage.
+    This creates a distribution of grade levels across the document.
+    Previous work (Stenner, 1996, also citing Squires et al., 1983 and Crawford et al., 1975) suggests that a comprehension rate of 75% for a text is a desirable target.
+    We therefore choose the grade level that lies at the 75th-percentile of the distribution, interpolating if necessary, to obtain our final prediction.
+  
+  
+    State-of-the-art performance for this classification task is hard to estimate.
+    The results from the most closely related previous work (Si and Callan, 2001) are not directly comparable to ours; among other factors, their task used a dataset trained on science curriculum descriptions, not text written at different levels of difficulty.
+    There also appear to be few reliable studies of human-human interlabeler a

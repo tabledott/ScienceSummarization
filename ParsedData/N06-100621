@@ -1,0 +1,11 @@
+ category is set apart, while an ordering over the other four categories is defined.
+    The some category also includes definite and indefinite determiners and small cardinal numbers.
+    A crude attempt is made to handle negation by interchanging no and all in the presence of negation.
+    Features are generated given the categories of both hypothesis and text.
+    Number, date, and time features.
+    These are designed to recognize (mis-)matches between numbers, dates, and times, as in IDs 1806 and 231.
+    We do some normalization (e.g. of date representations) and have a limited ability to do fuzzy matching.
+    In ID 1806, the mismatched years are correctly identified.
+    Unfortunately, in ID 231 the significance of over is not grasped and a mismatch is reported.
+    Alignment features.
+    Our feature representation includes three real-valued features intended to represent the quality of the alignment: score is the raw score returned from the alignment phase, while goodscore and badscore try to captur

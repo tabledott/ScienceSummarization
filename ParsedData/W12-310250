@@ -1,0 +1,7 @@
+from the SMT search graph and a few baseline features.
+    &#8220;DFKI cfs-plsreg&#8221; uses a Best First correlation-based feature selection technique, trained with Partial Least Squares Regression, while &#8220;DFKI grcfs-mars&#8221; uses a Greedy Stepwise correlation-based feature selection technique, trained with multivariate adaptive regression splines.
+    DCU-SYMC (R, S): Systems are based on a classification approach using a set of features that includes the baseline features.
+    The manually assigned quality scores provided for each MT output in the training set were rounded in order to apply classification algorithms on a limited set of classes (integer values from 1 to 5).
+    Three classifiers were combined by averaging the predicted classes: SVM using sequential minimal optimization and RBF kernel (parameters optimized by grid search), Naive Bayes and Random Forest.
+    &#8220;DCU-SYMC constrained&#8221; is based on a set of 70 features derived only from the data provided for the task.
+    Thes

@@ -1,0 +1,7 @@
+ the left-corner computation, P' is obtained from P by deleting all rows and columns indexed by nonterminals that do not have productions starting with nonterminals.
+    Let I' be the identity matrix over the same set of nonterminals as P'.
+    Then R can be computed as = I+IV*P. Here R' is the inverse of I' &#8212;P', and * denotes a matrix multiplication in which the left operand is first augmented with zero elements to match the dimensions of the right operand, P. The speedups obtained with this technique can be substantial.
+    For a grammar with 789 nonterminals, of which only 132 have nonterminal productions, the leftcorner matrix was computed in 12 seconds (including the final multiply with P and addition of I).
+    Inversion of the full matrix I &#8212; P took 4 minutes, 28 seconds.21 B.3.2 Linking and bottom-up filtering.
+    As discussed in Section 4.8, the worst-case run-time on fully parameterized CNF grammars is dominated by the completion step.
+    However, this is not necessarily true of sparse

@@ -1,0 +1,10 @@
+ algorithm.
+  
+  
+    Comparison with Baselines Table 1 shows the performance of the Good Grief training algorithm GG TRAIN+DECODE along with various baselines, including the simple MAJORITY baseline mentioned in section 5.
+    The first competitive baseline, PRANK, learns a separate ranker for each aspect using the PRank algorithm.
+    The second competitive baseline, SIM, shares the weight vectors across aspects using a similarity measure (Basilico and Hofmann, 2004).
+    Both of these methods are described in detail in Section 2.
+    In addition, we consider two variants of our algorithm: GG DECODE employs the PRank training algorithm to independently train all component ranking models and only applies Good Grief decoding at test time.
+    GG ORACLE uses Good Grief training and decoding but in both cases is given perfect knowledge of whether or not the true ranks all agree (instead of using the trained agreement model).
+    Our model achieves a rank error of 0.632, compared to 0.675 for PRANK and 0.663 for

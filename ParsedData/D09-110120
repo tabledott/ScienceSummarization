@@ -1,0 +1,10 @@
+, number, definiteness), and (2) features that compare the mention to one of its preceding mentions.
+  
+  
+    In this section, we describe our cluster-ranking approach to NP coreference.
+    As noted before, our approach aims to combine the strengths of entitymention models and mention-ranking models.
+    For ease of exposition, we will describe in this subsection how to train and apply a cluster ranker when it is used in a pipeline architecture, where discourse-new detection is performed prior to coreference resolution.
+    In the next subsection, we will show how the two tasks can be learned jointly.
+    Recall that a cluster ranker ranks a set of preceding clusters for an active mention mk.
+    Since a cluster ranker is a hybrid of a mention-ranking model and an entity-mention model, the way it is trained and applied is also a hybrid of the two.
+    In particular, the instance representation employed by a cluster ranker is identical to that used by an entity-mention model, where each training instance i(c

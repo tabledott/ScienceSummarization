@@ -1,0 +1,9 @@
+cessing.
+    In the first stage, mentions are extracted and relevant information about mentions, e.g., gender and number, is prepared for the next step.
+    The second stage implements the actual coreference resolution of the identified mentions.
+    Sieves in this stage are sorted from highest to lowest precision.
+    For example, the first sieve (i.e., highest precision) requires an exact string match between a mention and its antecedent, whereas the last one (i.e., lowest precision) implements pronominal coreference resolution.
+    Post-processing is performed to adjust our output to the task specific constraints, e.g., removing singletons.
+    It is important to note that the first system stage, i.e., the mention detection sieve, favors recall heavily, whereas the second stage, which includes the actual coreference resolution sieves, is precision oriented.
+    Our results show that this design lead to state-of-the-art performance despite the simplicity of the individual components.
+    This strategy has b

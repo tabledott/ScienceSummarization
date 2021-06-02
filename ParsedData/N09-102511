@@ -1,0 +1,7 @@
+e still local in the sense that no new states need to be added to the decoder.
+    This is because the entire source sentence, being fixed, is always available to every feature.
+    Soft syntactic constraints Neither of our systems uses source-side syntactic information; hence, both could potentially benefit from soft syntactic constraints as described by Marton and Resnik (2008).
+    In brief, these features use the output of an independent syntactic parser on the source sentence, rewarding decoder constituents that match syntactic constituents and punishing decoder constituents that cross syntactic constituents.
+    We use separatelytunable features for each syntactic category.
+    Structural distortion features Both of our systems have rules with variables that generalize over possible fillers, but neither system&#8217;s basic model conditions a rule application on the size of a filler, making it difficult to distinguish long-distance reorderings from short-distance reorderings.
+    To remedy this problem,

@@ -1,0 +1,7 @@
+st translation is obtained by interchanging the two nouns and dropping the de.
+    The French phrase taux d'interet, for example, is best rendered as interest rate.
+    Table 7 gives several examples of NOUN de NOUN phrases together with their most appropriate English translations.
+    In this section we describe a maximum entropy model that, given a French NOUN de NOUN phrase, estimates the probability that the best English translation involves an interchange of the two nouns.
+    We begin with a sample of English-French sentence pairs (E, F) randomly extracted from the Hansard corpus, such that F contains a NOUN de NOUN phrase.
+    For each sentence pair we use the basic translation model to compute the Viterbi alignment A between the words in E and F. Using A we construct an (x, y) training event as follows: We let the context x be the pair of French nouns (NouNL, NouNR).
+    We let y be no-interchange if the English translation is a word-forword translation of the French phrase and y = interchange if the 

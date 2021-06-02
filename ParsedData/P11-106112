@@ -1,0 +1,5 @@
+ bilingual graph described in the previous section, we can use label propagation to project the English POS labels to the foreign language.
+    We use label propagation in two stages to generate soft labels on all the vertices in the graph.
+    In the first stage, we run a single step of label propagation, which transfers the label distributions from the English vertices to the connected foreign language vertices (say, Vf&#65533;) at the periphery of the graph.
+    Note that because we extracted only high-confidence alignments, many foreign vertices will not be connected to any English vertices.
+    This stage of label propagation results in a tag distribution ri over labels y, which encodes the proportion of times the middle word of ui E Vf aligns to English words vy tagged with label y: The second stage consists of running traditional label propagation to propagate labels from these peripheral vertices Vf&#65533; to all foreign language vertices in the graph, optimizing the following objective: 5 POS Induct

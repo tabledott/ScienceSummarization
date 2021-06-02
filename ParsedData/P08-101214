@@ -1,0 +1,10 @@
+en state sequences and spans.
+    This linear time algorithm allows us to compute span pruning in O(n3) time.
+    The same algorithm may be performed using the backward figure of merit after transposing rows and columns.
+    Having cast the problem in terms of finite state automata, we can use finite state algorithms for pruning.
+    For instance, fixing a source span we can enumerate the target spans in decreasing order by score (Soong and Huang, 1991), stopping once we encounter the first span below threshold.
+    In practice the overhead of maintaining the priority queue outweighs any benefit, as seen in Figure 2.
+    An alternate approach that avoids this overhead is to enumerate spans by position.
+    Note that S[m, R] &#183; Qna=m+1 O(a) is within threshold iff there is a span with right boundary m&#8242; &lt; m within threshold.
+    Furthermore if S[m, M] &#183; Qna=m+1 O(a) is within threshold, then m is the right boundary within threshold.
+    Using these facts, we can gradually sweep the right bound

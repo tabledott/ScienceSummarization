@@ -1,0 +1,6 @@
+ords is high if the words have either a strong positive association or a strong negative association.
+    Since we expect translation pairs to be positively associated, we discard any negatively associated word pairs by requiring that p(t, s) &gt; p(t) &#183; p(s).
+    To use LLR scores to obtain initial estimates for the translation probabilities of Model 1, we have to somehow transform them into numbers that range from 0 to 1, and sum to no more than 1 for all the target words associated with each source word.
+    We know that words with high LLR scores tend to be translations, so we want high LLR scores to correspond to high probabilities, and low LLR scores to correspond to low probabilities.
+    The simplest approach would be to divide each LLR score by the sum of the scores for the source word of the pair, which would produce a normalized conditional probability distribution for each source word.
+    Doing this, however, would discard one of the major advantages of using LLR scores as a measure of word 

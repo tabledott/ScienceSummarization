@@ -1,0 +1,5 @@
+ing nodes in correct derivations. only correct dependencies; dmax(d) returns the same value but for disjunctive node d. Recursive definitions of these functions are given in Figure 5; the base case occurs when conjunctive nodes have no disjunctive daughters.
+    The algorithm identifies all those root nodes heading derivations which produce just the correct dependencies, and traverses the chart top-down marking the nodes in those derivations.
+    The insight behind the algorithm is that, for two conjunctive nodes in the same equivalence class, if one node heads a sub-derivation producing more correct dependencies than the other node (and each sub-derivation only produces correct dependencies), then the node with less correct dependencies cannot be part of a correct derivation.
+    The conjunctive and disjunctive nodes appearing in correct derivations form a new feature forest, which we call a correct forest.
+    The correct forest forms a subset of the complete forest (containing all derivations for the sente

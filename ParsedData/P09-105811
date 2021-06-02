@@ -1,0 +1,11 @@
+t vector w by keeping the norm of the change in the weight vector as small as possible.
+    With this framework, we can formulate the optimization problem as follows (McDonald, 2006): where bestk(xt; w(i)) E Yt represents a set of top k-best paths given the weight vector w(i).
+    The above quadratic programming (QP) problem can be solved using Hildreth&#8217;s algorithm (Yair Censor, 1997).
+    Replacing Eq.
+    (2) into line 4 of Algorithm 1, we obtain k-best MIRA.
+    The next question is how to efficiently generate bestk(xt; w(i)).
+    In this paper, we apply a dynamic programming search (Nagata, 1994) to kbest MIRA.
+    The algorithm has two main search steps: forward and backward.
+    For the forward search, we use Viterbi-style decoding to find the best partial path and its score up to each node in the lattice.
+    For the backward search, we use A*style decoding to generate the top k-best paths.
+    A complete path is found when the backward search reaches the beginning node of the lattice, and the al

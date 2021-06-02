@@ -1,0 +1,9 @@
+ Another similar example is using a finite-state head transducer to convert a palindrome of arbitrary length into one of its component halves.
+    This clearly requires the use of an empty string on some of the output transitions.
+  
+  
+    In this section we describe dependency transduction models, which can be used for machine translation and other transduction tasks.
+    These models consist of a collection of head transducers that are applied hierarchically.
+    Applying the machines hierarchically means that a nonhead transition is interpreted not simply as reading an inputoutput pair (w, v), but instead as reading and writing a pair of strings headed by (w, v) according to the derivation of a subnetwork.
+    For example, the head transducer shown in Figure 3 can be applied recursively in order to convert an arithmetic expression from infix to prefix (Polish) notation (as noted by Lewis and Stearns [1968], this transduction cannot be performed by a pushdown transducer).
+    In the case of machine transla

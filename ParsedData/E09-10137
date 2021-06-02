@@ -1,0 +1,9 @@
+a large corpus, however for unsupervised WSD.
+    Here, LDA topics are integrated with McCarthy et al.&#8217;s (2004) algorithm.
+    For each target word, a topic is sampled from the document&#8217;s topic distribution, and a word is generated from that topic.
+    Also, a distributional neighbor is selected based on the topic and distributional similarity to the generated word.
+    Then, the word sense is selected based on the word, neighbor, and topic.
+    Boyd-Graber et al. (2007) extend the topic modeling framework to include WordNet senses as a latent variable in the word generation process.
+    In this case the model discovers both the topics of the corpus and the senses assigned to each of its words.
+    Our own model is also inspired by LDA but crucially performs word sense induction, not disambiguation.
+    Unlike the work mentioned above, we do not rely on a pre-existing list of senses, and do not assume a correspondence between our automatically derived sense-clusters and those of any given inventor

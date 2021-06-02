@@ -1,0 +1,8 @@
+pus has assumed perfect ill-formed word detection and focused only on the candidate selection step, so we evaluate ill-formed word detection for the Twitter data only.
+    For candidate selection, we once again evaluate using token-level precision, recall and F-score.
+    Additionally, we evaluate using the BLEU score over the normalised form of each message, as the SMT method can lead to perturbations of the token stream, vexing standard precision, recall and F-score evaluation.
+    First, we test the impact of the wd and td values on ill-formed word detection effectiveness, based on dependencies from either the Spinn3r blog corpus (Blog: Burton et al. (2009)) or NYT.
+    The results for precision, recall and F-score are presented in Figure 2.
+    Some conclusions can be drawn from the graphs.
+    First, higher detection threshold values (td) give better precision but lower recall.
+    Generally, as td is raised from 1 to 10, the precision improves slightly but recall drops dramatically, with the net effect 

@@ -1,0 +1,11 @@
+ng.
+    Here &#8220;distance&#8221; refers to the difference between word indexes.
+    We apply all these feature templates to the graph-based parser.
+    In addition, we define two extra feature templates (Table 2) that capture information about grandchildren and arity (i.e. the number of children to the left or right).
+    These features are not conjoined with information about direction and distance.
+    They are difficult to include in an efficient dynamic programming decoder, but easy to include in a beam-search decoder.
+  
+  
+    We develop our transition-based parser using the transition model of the MaltParser (Nivre et al., 2006), which is characterized by the use of a stack and four transition actions: Shift, ArcRight, ArcLeft and Reduce.
+    An input sentence is processed from left to right, with an index maintained for the current word.
+    Initially empty, the stack is used throughout the parsing process to store unfinished words, which are the words before the current word that may still be link

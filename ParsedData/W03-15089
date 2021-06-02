@@ -1,0 +1,7 @@
+es.
+    We use the ReWrite decoder provided by ISI, along with the two translation models and their corresponding language models trained, either on 2233 or 3625 name-pairs, as described above, to perform transliteration of English names in the respective test sets with 1541 or 250 name-pairs respectively.
+    A small but important manual setting in the ReWrite decoder is a list of zero fertility words.
+    In the IBM model described earlier, these are the words which may be &#8220;deleted&#8221; by the noisy channel when transforming into .
+    For the decoder, these are therefore the words which may be optionally inserted in even when there is no word in of which they are considered a direct translation.
+    For the usual case of Chinese to English translation, these would usually be articles and other function words which may not be prevalent in the foreign language but frequent in English.
+    For the phoneme-to-GIF translation model, the &#8220;words&#8221; which need to be inserted in this manner are sy

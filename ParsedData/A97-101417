@@ -1,0 +1,6 @@
+l part-of-speech tagging methods (cf. e.g.
+    (Cutting et al., 1992) and (Feldweg, 1995)).
+    For a phrase Q with children of type T&#8222;..., Ta and grammatical functions G&#8222;...,GA., we use the lexical probabilities and the contextual (trigram) probabilities The lexical and contextual probabilities are determined separately for each type of phrase.
+    During annotation, the highest rated grammatical function labels Gi are calculated using the Viterbi algorithm and assigned to the structure, i.e., we calculate argma.x11 PQ (Ti 1Z-1, Ti.-2) PQ (Gi ITi).
+    To keep the human annotator from missing errors made by the tagger, we additionally calculate the strongest competitor for each label G. If its probability is close to the winner (closeness is defined by a threshold on the quotient), the assignment is regarded as unreliable, and the annotator is asked to confirm the assignment.
+    For evaluation, the already annotated sentences were divided into two disjoint sets, one for training (90% of the corp

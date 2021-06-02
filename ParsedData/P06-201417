@@ -1,0 +1,6 @@
+ot have been implemented as loss-augmented matching had we selected one of the other loss objectives presented in (Tsochantaridis et al., 2004) in place of margin rescaling.
+    We use the same feature representation &#968;(l) as (Taskar et al., 2005), with some small exceptions.
+    Let l = (Ej, Fk) be a potential link between the jth word of English sentence E and the kth word of Foreign sentence F. To measure correlation between Ej and Fk we use conditional link probability (Cherry and Lin, 2003) in place of the Dice coefficient: where the link counts are determined by wordaligning 50K sentence pairs with another matching SVM that uses the &#966;2 measure (Gale and Church, 1991) in place of Dice.
+    The 02 measure requires only co-occurrence counts. d is an absolute discount parameter as in (Moore, 2005).
+    Also, we omit the IBM Model 4 Prediction features, as we wish to know how well we can do without resorting to traditional word alignment techniques.
+    Otherwise, the features remain the same, inclu

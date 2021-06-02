@@ -1,0 +1,9 @@
+hoose the longest proposed translation; in the case of a tie, we choose the proposed translation with the highest score according to the WSD model.
+    Define a chunk of a rule to be a maximal substring of terminal symbols on the English side of the rule.
+    For example, in Rule (2), the chunks would be &#8220;go to&#8221; and &#8220;every month to&#8221;.
+    Whenever we find a matching WSD translation, we mark the whole chunk on the English side as consumed.
+    Finally, we compute the feature values for the rule.
+    The feature P,sd(t  |s) is the sum of the costs (according to the WSD model) of all the matched translations, and the feature Pty,sd is the sum of the lengths of all the matched translations.
+    Figure 1 shows the pseudocode for the rule scoring algorithm in more detail, particularly with regards to resolving conflicts between overlapping matches.
+    To illustrate the algorithm given in Figure 1, consider Rule (2).
+    Hereafter, we will use symbols to represent the Chinese and English word

@@ -1,0 +1,7 @@
+ues, including component-wise Gibbs sampling, which is the MCMC technique we used here (Robert and Casella, 2004; Bishop, 2006).
+			In general, MCMCtechniques do not produce a single model that char acterizes the posterior, but instead produce a stream of samples from the posterior.
+			The application of MCMC techniques, including Gibbs sampling, to HMM inference problems is relatively well-known: see Besag (2004) for a tutorial introduction and Goldwater and Griffiths (2007) for an applicationof Gibbs sampling to HMM inference for semi 300 supervised and unsupervised POS tagging.
+			The Gibbs sampler produces state sequences y sampled from the posterior distribution: P(y|x, ?) ?
+			P(x,y|?, ?)P(?|?y)P(?|?x) d?
+			d?Because Dirichlet priors are conjugate to multinomials, it is possible to integrate out the model parameters ? and ? to yield the conditional distribu tion for yi shown in Figure 4.
+			For each observation xi in turn, we resample its state yi conditioned on the states y?i of the other observations

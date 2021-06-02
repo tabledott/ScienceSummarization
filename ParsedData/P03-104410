@@ -1,0 +1,9 @@
+of syntactic dependency trees for each document.
+    Syntactic Normalization: To reduce variation in the corpus further, we apply a tree-transforming program to the parse trees.
+    For every (non-auxiliary) verb heading its own clause, the transformer produces a corresponding active tree, where possible.
+    This converts for passive, relative, subordinate clauses, etc. into active clauses.
+    Pattern Generalization: A &#8220;primary&#8221; tuple is extracted from each clause: the verb and its main arguments, subject and object.
+    The tuple consists of three literals [s,v,o]; if the direct object is missing the tuple contains in its place the subject complement; if the object is a subordinate clause, the tuple contains in its place the head verb of that clause.
+    Each primary tuple produces three generalized tuples, with one of the literals replaced by a wildcard.
+    A pattern is simply a primary or generalized tuple.
+    The pre-processed corpus is thus a many-many mapping between the patterns and the

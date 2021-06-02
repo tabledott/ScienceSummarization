@@ -1,0 +1,8 @@
+ull Boolean descriptions can be generated.
+    This can be done in many different ways depending, among other things, on what form of descriptions are preferred, for example, disjunctions of conjunctions, or conjunctions of disjunctions.
+    We will aim for the latter, while staying as close as possible to the Incremental Algorithm.
+    The algorithm proceeds as follows.
+    First we add negations to the list of atomic properties.
+    Then D&amp;RPlural runs a number of times: first, in Phase 1, the algorithm is performed using all positive and negative literals; if this algorithm ends before C = S, Phase 2 is entered in which further distractors are removed from C by making use of negations of intersections of two literals, and so on, until either C = S (Success) or all combinations have been tried (Failure).
+    Observe that the negation of an intersection comes down to set union, because of De Morgan&#8217;s Law: P1 n &#183; &#183; &#183; n Pn = P1 U &#183; &#183; &#183; U Pn.
+    Thus, Phase 2 of the algo

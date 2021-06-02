@@ -1,0 +1,8 @@
+, disjoint test set.
+    For our machine translation experiments, we trained phrase-based alignment template models of Finnish-English, French-English, and GermanEnglish, as follows.
+    For each language pair, we aligned 100,000 sentence pairs from European Parliament transcripts using GIZA++.
+    We then used Philip Koehn&#8217;s phrase extraction software to merge the GIZA++ alignments and to extract and score the alignment template model&#8217;s phrases (Koehn et al., 2003).
+    The Pharaoh phrase-based decoder uses precisely the setup of this paper.
+    It scores a candidate translation (including its phrasal alignment to the original text) as 0 &#8226; f, where f is a vector of the following 8 features: Our goal was to train the weights 0 of these 8 features.
+    We used the method described above, employing the Pharaoh decoder at step 2 to generate the 200-best translations according to the current 0.
+    As explained above, we compared three procedures at step 4: maximum log-likelihood by gradient asc

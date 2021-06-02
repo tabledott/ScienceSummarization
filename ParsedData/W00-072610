@@ -1,0 +1,9 @@
+ chunk 0 word outside of any chunk This representation type is based on a representation proposed by Ramshaw and Marcus (1995) for noun phrase chunks.
+    The three tag groups are sufficient for encoding the chunks in the data since these are non-overlapping.
+    Using these chunk tags makes it possible to approach the chunking task as a word classification task.
+    We can use chunk tags for representing our example sentence in the following way: The output of a chunk recognizer may contain inconsistencies in the chunk tags in case a word tagged I-X follows a word tagged 0 or I-Y, with X and Y being different.
+    These inconsistencies can be resolved by assuming that such I-X tags start a new chunk.
+    The performance on this task is measured with three rates.
+    First, the percentage of detected phrases that are correct (precision).
+    Second, the percentage of phrases in the data that were found by the chunker (recall).
+    And third, the Fo=1 rate which is equal to (132+1)*precision*recall / (02*preci

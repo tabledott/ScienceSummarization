@@ -1,0 +1,9 @@
+table for program induction.
+    The basic version of DCS restricts R to join and aggregate relations (see Table 1).
+    Let us start by considering a DCS tree z with only join relations.
+    Such a z defines a constraint satisfaction problem (CSP) with nodes as variables.
+    The CSP has two types of constraints: (i) x &#8712; w(p) for each node x labeled with predicate p &#8712; P; and (ii) xj = yj0 (the j-th component of x must equal the j'-th component of y) for each edge (x, y) labeled with j0j &#8712; R. A solution to the CSP is an assignment of nodes to values that satisfies all the constraints.
+    We say a value v is consistent for a node x if there exists a solution that assigns v to x.
+    The denotation JzKw (z evaluated on w) is the set of consistent values of the root node (see Figure 2 for an example).
+    Computation We can compute the denotation JzKw of a DCS tree z by exploiting dynamic programming on trees (Dechter, 2003).
+    The recurrence is as follows: At each node, we compute the set o

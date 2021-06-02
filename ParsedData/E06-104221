@@ -1,0 +1,12 @@
+    If there are no literals, literal recall is 100%; literal precision is 100% if there are no nonliterals in the literal cluster and 0% otherwise.
+    The f-score is defined as (2 &#183; precision &#183; recall) / (precision + recall).
+    Nonliteral precision and recall are defined similarly.
+    Average precision is the average of literal and nonliteral precision; similarly for average recall.
+    For overall performance, we take the f-score of average precision and average recall.
+    We calculated two baselines for each word.
+    The first was a simple majority-rules baseline.
+    Due to the imbalance of literal and nonliteral examples, this baseline ranges from 60.9% to 66.7% with an average of 63.6%.
+    Keep in mind though that using this baseline, the f-score for the nonliteral set will always be 0%.
+    We come back to this point at the end of this section.
+    We calculated a second baseline using a simple attraction algorithm.
+    Each target set sentence is attracted to the feedback set containi

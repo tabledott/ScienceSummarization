@@ -1,0 +1,11 @@
+, d) does not have strong enough similarity with any chain, it creates a new one with base score Q.
+    The Q parameter balances this decision of adding to an existing chain in N or creating a new one.
+    We use equation 5 to build schemas from the set of events as opposed to the set of event slots that previous work on narrative chains used.
+    In Chambers and Jurafsky (2008), narrative chains add the best (e, d) based on the following: where m is the number of seen event slots in the corpus and (vj, gj) is the jth such possible event slot.
+    Schemas are now learned by adding events that maximize equation 5: where |v |is the number of observed verbs and vj is the jth such verb.
+    Verbs are incrementally added to a narrative schema by strength of similarity.
+  
+  
+    Figures 3 and 4 show two criminal schemas learned completely automatically from the NYT portion of the Gigaword Corpus (Graff, 2002).
+    We parse the text into dependency graphs and resolve coreferences.
+    The figures result from learni

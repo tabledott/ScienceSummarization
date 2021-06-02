@@ -1,0 +1,7 @@
+ique of partitioning a set of n-grams into disjoint groups, where each group is characterized independently through a set of parameters.
+    Like Katz, models are defined recursively in terms of lower-order models.
+    Each n-gram is assigned to one of several buckets based on its frequency predicted from lower-order models.
+    Each bucket is treated as a separate distribution and Good-Turing estimation is performed within each, giving corrected counts that are normalized to yield probabilities.
+    The simplest type of smoothing used in practice is additive smoothing (Lidstone, 1920; Johnson, 1932; Jeffreys, 1948), where we take The other smoothing technique besides Katz smoothing widely used in speech recognition is due to Jelinek and Mercer (1980).
+    They present a class of smoothing models that involve linear interpolation, e.g., Brown et al. (1992) take That is, the maximum likelihood estimate is interpolated with the smoothed lower-order distribution, which is defined analogously.
+    Training a dist

@@ -1,0 +1,8 @@
+ramming algorithm; and even beam thresholding has some per-node overhead.
+    Thus, we will give most measurements in terms of elapsed time, not including loading the grammar and other 0(1) overhead.
+    We did want to verify that elapsed time was a reasonable measure, so we did a beam thresholding experiment to make sure that elapsed time and number of productions examined were well correlated, using 200 sentences and an exponential sweep of the thresholding parameter.
+    The results, shown in Figure 10, clearly indicate that time is a good proxy for productions examined.
+    Our first goal was to show that entropy is a good surrogate for precision and recall.
+    We thus tried two experiments: one with a relatively large test set of 200 sentences, and one with a relatively small test set of 15 sentences.
+    Presumably, the 200 sentence test set should be much less noisy, and fairly indicative of performance.
+    We graphed both precision and recall, and entropy, versus time, as we swept the thresholding p

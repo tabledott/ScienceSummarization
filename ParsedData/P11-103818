@@ -1,0 +1,8 @@
+cy type here, because we have no intention of dependency parsing text messages, due to their noisiness and the volume of the data.
+    The counts of dependency forms are combined together to derive a confidence score, and the scored dependencies are stored in a dependency bank.
+    Given the dependency-based features, a linear kernel SVM classifier (Fan et al., 2008) is trained on clean Twitter data, i.e. the subset of Twitter messages without OOV words.
+    Each word is represented by its IV words within a context window of three words to either side of the target word, together with their relative positions in the form of (word1,word2,position) tuples, and their score in the dependency bank.
+    These form the positive training exemplars.
+    Negative exemplars are automatically constructed by replacing target words with highly-ranked candidates from their confusion set.
+    Note that the classifier does not require any hand annotation, as all training exemplars are constructed automatically.
+    To predict

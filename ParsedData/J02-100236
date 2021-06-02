@@ -1,0 +1,8 @@
+and FNP1 the most, with FP3 and FNP3 falling in between.
+    These results are as expected, for the same reasons as for Pk.
+    The difference in the penalty for FP1 and FP3 (and FNP1 vs. FNP3)&#8212;for both Pk and Pk, but especially apparent for Pk&#8212;is interesting.
+    In FP/FNP1, false positive probability is uniformly distributed throughout each segment, whereas in FP/FNP3, false positive probability is uniformly distributed throughout the entire document.
+    Thus, the FP/FNP3 segmentations are more likely to have boundaries that are very close to each other, since they are not segment dependent, while FP/FNP1 are limited to at most one false positive per segment.
+    This results in Pk assigning smaller penalties for FP/FNP3, since groups of false positives close together (to be more exact, within k sentences of each other) would be underpenalized.
+    This difference is also present in the Pk results, but is about half for obvious reasons.
+    WD penalized FP1 the most and FP3 the least among the 

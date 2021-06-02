@@ -1,0 +1,9 @@
+rithm for pattern matching with variable-length gaps in a suffix array is a recent algorithm by Rahman et al (2006).
+			It works on a pattern w1Xw2X...wI consisting of I contiguous substrings w1, w2, ...wI ,each separated by a gap.
+			The algorithm is straight forward.
+			After identifying all ni occurrences of each wi in O(|wi| + log |T |) time, collocations thatmeet the gap constraints are computed using an ef ficient data structure called a stratified tree (van Emde Boas et al, 1977).
+			4 Although we refer the reader to the source text for a full description of this data structure, its salient characteristic is that it implements priority queue operations insert and next-element in O(log log |T |) time.
+			Therefore, thetotal running time for an algorithm to find all con tiguous subpatterns and compute their collocations is O( ?I i=1 [|wi|+ log|T |+ ni log log |T |]).
+			We can improve on the algorithm of Rahman et al.
+			(2006) using a variation on the idea of hashing.
+			We exploit the fact that our lar

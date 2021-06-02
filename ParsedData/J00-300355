@@ -1,0 +1,7 @@
+longer Markovian, and is therefore inconvenient to use in the first decoding stage, or even in lattice rescoring.
+    The baseline for our experiments was obtained with a standard backoff trigram language model estimated from all available training data.
+    The DA-specific language models were trained on word transcripts of all the training utterances of a given type, and then smoothed further by interpolating them with the baseline LM.
+    Each DAspecific LM used its own interpolation weight, obtained by minimizing the perplexity of the interpolated model on held-out DA-specific training data.
+    Note that this smoothing step is helpful when using the DA-specific LMs for word recognition, but not for DA classification, since it renders the DA-specific LMs less discriminative.'
+    Table 11 summarizes both the word error rates achieved with the various models and the perplexities of the corresponding LMs used in the rescoring (note that perplexity is not meaningful in the mixture-of-posteriors approach).
+  

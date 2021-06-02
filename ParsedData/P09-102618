@@ -1,0 +1,9 @@
+ our evaluations.
+    For each of the 4 debates in our test set, we use posts with at least 5 sentences for evaluation.
+    We implemented two baselines: the OpTopic system that uses topic information only, and the OpPMI system that uses topic as well as related word (noun) information.
+    All systems use the same lexicon, as well as exactly the same processes for opinion finding and opinion-target pairing.
+    The OpTopic system This system considers only explicit mentions of the topic for the opinion analysis.
+    Thus, for this system, the step of opinion-target pairing only finds all topic+1 , topic= , topic+2 , topic2 instances in the post (where, for example, an instance of topic+1 is a positive opinion whose target is explicitly topic1).
+    The polarity-topic pairs are counted for each debate side according to the following equations.
+    The post is assigned the side with the higher score.
+    The OpPMI system This system finds opiniontarget pairs for not only the topics, but also for the words in t

@@ -1,0 +1,7 @@
+mann and Zhang (2006) and Liang et al (2006) solved the problem by introducing a sentence-wise BLEU.
+			However, the use of the sentence-wise scoring does not translate directly into the document-wise score because of the n-gram precision statistics and the brevity penalty statistics aggregated for a sentence set.
+			Thus, we use an approximated BLEU score that basically computes BLEU for a sentence set, but accumulates the difference for a particular sentence (Watanabe et al, 2006a).
+			The approximated BLEU is computed as follows: Given oracle translations O for T , we maintain the best oracle translations OT1 = { e?1, ..., e?T } . The ap-.
+			proximated BLEU for a hypothesized translation e?
+			for the training instance ( f t, et) is computed over OT1 except for e?t, which is replaced by e?: BLEU({e?1, ..., e?t?1, e?, e?t+1, ..., e?T }; E)The loss computed by the approximated BLEU measures the document-wise loss of substituting the cor rect translation e?t into an incorrect translation e?.
+			The score can

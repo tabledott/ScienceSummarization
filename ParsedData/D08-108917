@@ -1,0 +1,6 @@
+e last words of the sentence (in the near future), [4-5] is successively merged with [6-12], then [1-3], yielding a stack that contains only [1-12].
+			A nice property of this parsing algorithm is that it does not worsen the asymptotic running time of beam-search decoders such as Moses (Koehn, 2004a).
+			Such decoders run in time O(n2), where n is the length of the input sentence.
+			Indeed, each time a partial translation hypothesis is expanded intoa longer one, the decoder must perform an O(n) op eration in order to copy the coverage set (indicating which foreign words have already been translated) into the new hypothesis.
+			Since this copy operationmust be executed O(n) times, the overall time complexity is quadratic.
+			The incorporation of the shift reduce parser into such a decoder does not worsenoverall time complexity: whenever the decoder expands a given partial translation into a longer hy pothesis, it simply copies its stack into the newlycreated hypothesis (similarly to copying the cover age vect

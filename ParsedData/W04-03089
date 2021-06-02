@@ -1,0 +1,8 @@
+ns for the parsing to be incremental in this framework.
+    Ideally, we would like to require that the graph (W &#8212;I, A) is connected at all times.
+    However, given the definition of Left-Reduce and Right-Reduce, it is impossible to connect a new word without shifting it to the stack first, so it seems that a more reasonable condition is that the size of the stack should never exceed 2.
+    In this way, we require every word to be attached somewhere in the dependency graph as soon as it has been shifted onto the stack.
+    We may now ask whether it is possible to achieve incrementality with a left-to-right bottom-up dependency parser, and the answer turns out to be no in the general case.
+    This can be demonstrated by considering all the possible projective dependency graphs containing only three nodes and checking which of these can be parsed incrementally.
+    Figure 4 shows the relevant structures, of which there are seven altogether.
+    We begin by noting that trees (2&#8211;5) can all be constru

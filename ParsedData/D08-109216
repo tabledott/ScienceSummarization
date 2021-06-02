@@ -1,0 +1,7 @@
+ng setups: rapid and full.
+    In the rapid training setup, only 1000 sentence pairs from the training set were used, and we used fixed alignments for each tree pair rather than iterating (see &#167;4.1).
+    The full training setup used the iterative training procedure on all 2298 training sentence pairs.
+    We used the English and Chinese parsers in Petrov and Klein (2007)5 to generate all k-best lists and as our evaluation baseline.
+    Because our bilingual data is from the Chinese treebank, and the data typically used to train a Chinese parser contains the Chinese side of our bilingual training data, we had to train a new Chinese grammar using only articles 400-1151 (omitting articles 1-270).
+    This modified grammar was used to generate the k-best lists that we trained our model on.
+    However, as we tested on the same set of articles used for monolingual Chinese parser evaluation, there was no need to use a modified grammar to generate k-best lists at test time, and so we used a regularly trained Ch

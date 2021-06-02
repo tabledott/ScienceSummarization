@@ -1,0 +1,6 @@
+hich enables the disambiguation of the noun plant in Q1 to its sense nearest to the noun facility in Q5: dqn(Q1,Q5)=(0+0.3752+1/)2.57 as min(dist(p/antfacifiry)=1:1ist(PLANT-1,FACIUTY-1)=0.375.
+    Similarly, the noun facility in Q6 is disambiguated, whereas the descriptions in both Q1 and Q5 cannot be successfully disambiguated because only a very small set of quadruples was used in this example.
+    In this case, both the description week and inspection would be assigned their most frequent senses, i.e. the first senses of WordNet.
+    In case of a bigger training set, most of the quadruples get disambiguated, however, with increasing SDT the disambiguation quality decreases.
+    The above example shows the importance of iteration, because starting with lower SDT guarantees better results.
+    If, for example, there was no iteration cycle and the algorithm tried to disambiguate the quadruples in the order in which they appear, the quadruple Q1 would be matched with Q6 and all its words would be disambiguate

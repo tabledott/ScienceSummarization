@@ -1,0 +1,7 @@
+ to a DSYNT representation.
+    Functional words (determiners and auxiliaries) are eliminated from the tree and the corresponding syntactic features are updated.
+    The comparison algorithm starts with all sentence trees rooted at verbs from the input DSYNT, and traverses them recursively: if two nodes are identical, they are added to the output tree, and their children are compared.
+    Once a full phrase (a verb with at least two constituents) has been found, it is added to the intersection.
+    If nodes are not identical, the algorithm tries to apply an appropriate paraphrasing rule from a set of rules described in the next section.
+    For example, if the phrases &amp;quot;group of students&amp;quot; and &amp;quot;students&amp;quot; are compared, then the omit empty head rule is applicable, since &amp;quot;group&amp;quot; is an empty noun and can be dropped from the comparison, leaving two identical words, &amp;quot;students&amp;quot;.
+    If there is no applicable paraphrasing rule, then the comparison 

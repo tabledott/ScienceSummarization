@@ -1,0 +1,6 @@
+ of its parent.
+    The remaining two distributions generate the non-head children one after the other.
+    A special #STOP# symbol is generated to terminate the sequence of children for a given parent.
+    Each child is generated in two steps: first its syntactic category C and head tag Cht are chosen given the parent's and head child's features and a function A representing the distance from the head child: Then the new child's head word Chw is chosen: For each of the three distributions, the empirical distribution of the training data is interpolated with less specific backoff distributions, as we will see in Section 5.
+    Further details of the model, including the distance features used and special handling of punctuation, conjunctions, and base noun phrases, are described in Collins (1999).
+    The fundamental features of used in the probability distributions are the lexical heads and head tags of each constituent, the co-occurrences of parent nodes and their head children, and the cooccurrences of chi

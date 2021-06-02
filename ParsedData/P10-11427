@@ -1,0 +1,5 @@
+the acquisition of the mention-pair model concerns the way training instances are created.
+    Specifically, to determine whether a pair of NPs is coreferent or not, the mention-pair model needs to be trained on a data set where each instance represents two NPs and possesses a class value that indicates whether the two NPs are coreferent.
+    Hence, a natural way to assemble a training set is to create one instance from each pair of NPs appearing in a training document.
+    However, this instance creation method is rarely employed: as most NP pairs in a text are not coreferent, this method yields a training set with a skewed class distribution, where the negative instances significantly outnumber the positives.
+    As a result, in practical implementations of the mention-pair model, one needs to specify not only the learning algorithm for training the model and the linguistic features for representing an instance, but also the training instance creation method for reducing class skewness and the clustering al

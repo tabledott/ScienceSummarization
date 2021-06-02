@@ -1,0 +1,8 @@
+nse vectors (the second components of the various &#946;(u)).
+    These vector operations can be slow.
+    A much more efficient approach (usually) is the traditional inside-outside algorithm (Baker, 1979).7 Figure 4 generalizes the inside-outside algorithm to work with any expectation semiring EK,X.8 We are given a hypergraph HG whose edges have weights (ke, xe) in this semiring (so now ke E K denotes only part of the edge weight, not all of it).
+    INSIDE-OUTSIDE(HG, K, X) finds &#174;dED &#174;eEd (ke, xe), which has the form ( &#710;k, &#710;x).
+    But, INSIDE(HG, EK,X) could accomplish the same thing.
+    So what makes the inside-outside algorithm more efficient?
+    It turns out that x&#710; can be found quickly as a single linear combination Ee kexe of just the feature vectors xe that appear on individual hyperedges&#8212;typically a sum of very sparse vectors!
+    And the linear coefficients ke, as well as &#710;k, are computed entirely within the cheap semiring K. They are based on &#946; and &#945

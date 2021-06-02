@@ -1,0 +1,6 @@
+the dep2c model trained on 4k sentences is close to the dep1 model trained on the entire training set (roughly 40k sentences).
+    In our Czech experiments, we considered only unlabeled parsing,15 leaving four different parsing configurations: baseline or cluster-based features and first-order or second-order parsing.
+    Note that our feature sets were originally tuned for English parsing, and except for the use of Czech clusters, we made no attempt to retune our features for Czech.
+    Czech dependency structures may contain nonprojective edges, so we employ a maximum directed spanning tree algorithm (Chu and Liu, 1965; Edmonds, 1967; McDonald et al., 2005b) as our firstorder parser for Czech.
+    For the second-order parsing experiments, we used the Carreras (2007) parser.
+    Since this parser only considers projective dependency structures, we &#8220;projectivized&#8221; the PDT 1.0 training set by finding, for each sentence, the projective tree which retains the most correct dependencies; our second-ord

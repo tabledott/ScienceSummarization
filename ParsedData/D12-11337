@@ -1,0 +1,6 @@
+on that the two top nodes on the stack are still in the order given by the sentence.
+    Except for the addition of a tag parameter p to the SHIFT transition, this is equivalent to the system described in Nivre (2009), which thanks to the SWAP transition can handle arbitrary non-projective trees.
+    The soundness and completeness results given in that paper trivially carry over to the new system.
+    The only thing to note is that, before a terminal configuration can be reached, every word has to be pushed onto the stack in a SHIFTp transition, which ensures that every node/word in the output tree will be tagged.
+    While early transition-based parsers generally used greedy best-first inference and locally trained classifiers, recent work has shown that higher accuracy can be obtained using beam search and global structure learning to mitigate error propagation.
+    In particular, it seems that the globally learned models can exploit a much richer feature space than locally trained classifiers, as shown by 

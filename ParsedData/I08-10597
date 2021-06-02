@@ -1,0 +1,9 @@
+Determiners and Prepositions The SP modules for determiner and preposition choice are machine learned components.
+			Ideally, one would train such modules on large data sets of annotated errors and corrected counterparts.
+			Such a data set, however, is not currently available.
+			As a substitute, we are using native English text for training, currently we train on the full text of the English Encarta encyclopedia (560k sentences) and a random set of 1M sentences from a Reuters news data set.
+			The strategy behind these modules is similar to a contextual speller as described, for example, in (Golding and Roth 1999).
+			For each potential insertion point of a determiner or preposition we extract context features within a window of six tokens to the right and to the left.
+			For each token within the window we extract its relative position, the token string, and its part-of speech tag.
+			Potential insertion sites are determined heuristically from the sequence of POS tags.
+			Based on these features, we train 

@@ -1,0 +1,7 @@
+tatistical CKY-style chart parser, which uses cooccurrence statistics of headmodifier pairs to find the best parse.
+    The maximum entropy parser is a statistical shift-reduce style parser that cannot always access head-modifier pairs.
+    For example, the checkcons(m, n) predicate of the maximum entropy parser may use two words such that neither is the intended head of the proposed consituent that the CHECK procedure must judge.
+    And unlike the bigram parser, the maximum entropy parser cannot use head word information besides &amp;quot;flat&amp;quot; chunks in the right context.
+    The bigram parser uses a backed-off estimation scheme that is customized for a particular task, whereas the maximum entropy parser uses a general purpose modelling technique.
+    This allows the maximum entropy parser to easily integrate varying kinds of features, such as those for punctuation, whereas the bigram parser uses hand-crafted punctuation rules.
+    Furthermore, the customized estimation framework of the bigram par

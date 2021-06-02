@@ -1,0 +1,8 @@
+ole labeling, one possible way is to combine different SRL systems through a joint inference stage, given that the systems are derived using different full parse trees.
+  To test this idea, we first build two SRL systems that use Collins?s parser (Collins 1999)3 and Charniak?s parser (Charniak 2001), respectively.
+  In fact, these two parsers have noticeably different outputs.
+  Applying the pruning heuristics on the output of Collins?s parser produces a list of candidates with 81.05% recall.
+  Although this number is significantly lower than the 86.08% recall produced by Charniak?s parser, the union of the two candidate lists still significantly improves recall to 91.37%.
+  We construct the two systems by implementing the first three stages, namely, pruning, argument identifi- cation, and argument classification.
+  When a test sentence is given, a joint inference stage is used to resolve the inconsistency of the output of argument classification in these two systems.
+  We first briefly review the objective f

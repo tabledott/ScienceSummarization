@@ -1,0 +1,8 @@
+algorithms have been proposed for deriving attributional similarity from WordNet (Resnik 1995; Jiang and Conrath 1997; Budanitsky and Hirst 2001; Banerjee and Pedersen 2003).
+    We use Rohde&#8217;s SVDLIBC implementation of the SVD, which is based on SVDPACKC (Berry 1992).6 In LRA, SVD is used to reduce noise and compensate for sparseness.
+    We will go through each step of LRA, using an example to illustrate the steps.
+    Assume that the input to LRA is the 374 multiple-choice SAT word analogy questions of Turney and Littman (2005).
+    Since there are six word pairs per question (the stem and five choices), the input consists of 2,244 word pairs.
+    Let&#8217;s suppose that we wish to calculate the relational similarity between the pair quart:volume and the pair mile:distance, taken from the SAT question in Table 6.
+    The LRA algorithm consists of the following 12 steps: alternates as follows.
+    For each alternate pair, send a query to the WMTS, to find the frequency of phrases that begin with one 

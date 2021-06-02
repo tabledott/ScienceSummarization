@@ -1,0 +1,8 @@
+table derived from an explicit grammar to determine shift/reduce actions.
+			Instead, we use a classifier with features derived from much of the same information contained in an LR table: the top few items on the stack, and the next few items of lookahead in the remaining input string.
+			Addition ally, following Sagae and Lavie (2006), we extend the basic deterministic LR algorithm with a bestfirst search, which results in a parsing strategy sim ilar to generalized LR parsing (Tomita, 1987; 1990), except that we do not perform Tomita?s stack-merging operations.
+			The resulting algorithm is projective, and nonprojectivity is handled by pseudo-projective trans formations as described in (Nivre and Nilsson, 2005).
+			We use Nivre and Nilsson?s PATH scheme2.
+			For clarity, we first describe the basic variant of the LR algorithm for dependency parsing, which is a deterministic stepwise algorithm.
+			We then show how we extend the deterministic parser into a best first probabilistic parser.
+			2.1 Dependency Par

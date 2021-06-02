@@ -1,0 +1,9 @@
+ation, the distance metric, and the clustering algorithm in turn.
+    Given an input text, we first use the Empire noun phrase finder (Cardie and Pierce, 1998) to locate all noun phrases in the text.
+    Note that Empire identifies only base noun phrases, i.e. simple noun phrases that contain no other smaller noun phrases within them.
+    For example, Chief Financial Officer of Prime Corp. is too complex to be a base noun phrase.
+    It contains two base noun phrases: Chief Financial Officer and Prime Corp. Each noun phrase in the input text is then represented as a set of 11 features as shown in Table 1.
+    This noun phrase representation is a first approximation to the feature vector that would be required for accurate coreference resolution.
+    All feature values are automatically generated and, therefore, are not always perfect.
+    In particular, we use very simple heuristics to approximate the behavior of more complex feature value computations: Individual Words.
+    The words contained in the noun ph

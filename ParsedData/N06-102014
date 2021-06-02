@@ -1,0 +1,8 @@
+ace) increases from 11.959 for the baseline parser, to 14.104 for the final parser.
+    We have seen earlier that this &#8220;confidence&#8221; is deserved, as the first-stage one-best is so much better.
+    To this point we have looked at bulk properties of the data fed to the reranker.
+    It has higher one best and 50-best-oracle rates, and the probabilities are more skewed (the higher probabilities get higher, the lows get lower).
+    We now look at sentence-level properties.
+    In particular, we analyzed the parsers&#8217; behavior on 5,039 sentences in sections 1, 22 and 24 of the Penn treebank.
+    Specifically, we classified each sentence into one of three classes: those where the self-trained parser&#8217;s f-score increased relative to the baseline parser&#8217;s f-score, those where the f-score remained the same, and those where the self-trained parser&#8217;s f-score decreased relative to the baseline parser&#8217;s f-score.
+    We analyzed the distribution of sentences into these classes with re

@@ -1,0 +1,9 @@
+nds locally-optimal model parameters (Bishop, 2006).
+    This procedure is especially attractive for HMM inference, since it involves only a minor modification to the M-step of the Forward-Backward algorithm.
+    MacKay (1997) and Beal (2003) describe Variational Bayesian (VB) inference for HMMs.
+    In general, the E-step for VB inference for HMMs is the same as in EM, while the M-step is as follows: where m0 and m are the number of word types and states respectively, IF is the digamma function and the remaining quantities are as in (2).
+    This means that a single iteration can be performed in O(nm2) time, just as for the EM algorithm.
+    The goal of Markov Chain Monte Carlo (MCMC) algorithms is to produce a stream of samples from the posterior distribution P(t  |w, &#945;).
+    Besag (2004) provides a tutorial on MCMC techniques for HMM inference.
+    A Gibbs sampler is a simple kind of MCMC algorithm that is well-suited to sampling highdimensional spaces.
+    A Gibbs sampler for P(z) where z = (z1, ... 

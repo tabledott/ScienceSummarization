@@ -1,0 +1,7 @@
+ set of features for a group g and a position k as gk (e.g., wk and posk).
+    Using this notation, we write a feature set as {w&#8722;1, w0, pre&#8722;1, pre0, pc&#8722;1}.4 This feature description derives the following input vector.5 In Section 3.3, we described that if target classes are equally distributed, the pairwise method will reduce the training cost.
+    In our case, however, we have a very unbalanced class distribution with a large number of samples belonging to the class &#8220;O&#8221; (see Table 1).
+    This leads to the same situation with the one-vsrest method, i.e., if LO is the number of the samples belonging to the class &#8220;O&#8221;, then the most dominant part of the training takes time in K &#215; OSVM(LO).
+    One solution to this unbalanced class distribution problem is to split the class &#8220;O&#8221; into several subclasses effectively.
+    This will reduce the training cost for the same reason that the pairwise method works.
+    In this paper, we propose to split the non-enti

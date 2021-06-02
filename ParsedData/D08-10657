@@ -1,0 +1,11 @@
+Bayesrisk.
+    We will present experiments (Section 7) to show the relative importance of these two spaces.
+  
+  
+    We now present MBR decoding on translation lattices.
+    A translation word lattice is a compact representation for very large N-best lists of translation hypotheses and their likelihoods.
+    Formally, it is an acyclic Weighted Finite State Acceptor (WFSA) (Mohri, 2002) consisting of states and arcs representing transitions between states.
+    Each arc is labeled with a word and a weight.
+    Each path in the lattice, consisting of consecutive transitions beginning at the distinguished initial state and ending at a final state, expresses a candidate translation.
+    Aggregation of the weights along the path1 produces the weight of the path&#8217;s candidate H(E, F) according to the model.
+    In our setting, this weight will imply the posterior probability of the translation E given the source sentence F: The scaling factor &#945; E [0, oc) flattens the distribution when &#945; &lt; 1, and sh

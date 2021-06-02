@@ -1,0 +1,6 @@
+ed as two rules: one omitting the daughters concerned and one with the daughters being Kleene plus.
+    A new nonterminal category is created for each distinct Kleene plus category, and two extra rules are added to the backbone grammar to form a right-branching binary tree structure for it; a parser can easily be modified to flatten this out during processing into the intended flat sequence of categories.
+    Figure 6 gives an example of what such a backbone tree looks like.
+    Grammars written in other, more low-level unification grammar formalisms, such as PATR-II (Shieber 1984), commonly employ treatments of the type just described to deal with phenomena such as gapping, coordination, and compounding.
+    However, this method both allows the grammar writer to continue to use the full facilities of the ANLT formalism and allows the algorithmic derivation of an appropriate backbone grammar to support LR parsing.
+    The major task of the backbone grammar is to encode sufficient information (in the atomic ca

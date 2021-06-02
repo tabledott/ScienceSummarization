@@ -1,0 +1,13 @@
+.
+    These K sampled translations and their associated source sentences make up the additional training data Ti.
+    Selection using a Threshold: This method compares the score of each single-best translation to a threshold.
+    The translation is considered reliable and added to the set Ti if its score exceeds the threshold.
+    Else it is discarded and not used in the additional training data.
+    The threshold is optimized on the development beforehand.
+    Since the scores of the translations change in each iteration, the size of Ti also changes.
+    Keep All: This method does not perform any filtering at all.
+    It is simply assumed that all translations in the set Xi are reliable, and none of them are discarded.
+    Thus, in each iteration, the result of the selection step will be Ti = Xi.
+    This method was implemented mainly for comparison with other selection methods.
+    3.5 Filtering the Training Data In general, having more training data improves the quality of the trained models.
+    However, 

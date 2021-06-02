@@ -1,0 +1,10 @@
+r the best performance with the development set2.
+    However, it may be computationally unrealistic to retrain the entire procedure several times using 1G-words of unlabeled data.
+    Therefore, these tunable parameter values are selected using a relatively small amount of unlabeled data (17M-words), and we used the selected values in all our experiments.
+    The left graph in Figure 2 shows typical q behavior.
+    The left end is equivalent to optimizing G2 without a prior, and the right end is almost equivalent to considering pj(xj, y) for all j to be a uniform distribution.
+    This is why it appears to be bounded by the performance obtained from supervised CRF.
+    We omitted the influence of Q2 because of space constraints, but its behavior is nearly the same as that of supervised CRF.
+    Unfortunately, G2(O|A0) may have two or more local maxima.
+    Our parameter estimation procedure does not guarantee to provide either the global optimum or a convergence solution in O and A0 space.
+    An example of 

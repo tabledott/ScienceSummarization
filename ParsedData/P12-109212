@@ -1,0 +1,10 @@
+ves over the single prototype approach.
+			We chose Wikipedia as the corpus to train all models because of its wide range of topics andword usages, and its clean organization of docu ment by topic.
+			We used the April 2010 snapshot of the Wikipedia corpus (Shaoul and Westbury, 2010),with a total of about 2 million articles and 990 mil lion tokens.
+			We use a dictionary of the 30,000 most frequent words in Wikipedia, converted to lowercase.
+			In preprocessing, we keep the frequent num bers intact and replace each digit of the uncommon numbers to ?DG?
+			so as to preserve information suchas it being a year (e.g. ?DGDGDGDG?).
+			The converted numbers that are rare are mapped to a NUM BER token.
+			Other rare words not in the dictionary are mapped to an UNKNOWN token.For all experiments, our models use 50 dimensional embeddings.
+			We use 10-word windows of text as the local context, 100 hidden units, and no weight regularization for both neural networks.
+			Formulti-prototype variants, we fix the number of pr

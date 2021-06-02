@@ -1,0 +1,7 @@
+se patterns produced errors in anaphora resolution which were eliminated by processing them first.
+    Hand-designed decision tree for Version 1 and Version 2.
+    &#8226; only then try to interpret the definite description as a bridge (last test).
+    The heuristics for recognizing bridging descriptions are only applied when the other heuristics fail.
+    This is because the performance of these heuristics is very poor and also because some of the heuristics that deal with bridging descriptions are computationally expensive; the idea was to eliminate those cases less likely to be bridging before applying these heuristics.
+    The system does not classify all occurrences of definite descriptions: when none of the tests succeeds, the definite description is not classified.
+    We observed in our first tests that definite descriptions not resolved as direct anaphora and not identified as discourse-new by our heuristics were mostly classified in the standardized annotation as bridging descriptions or discourse-n

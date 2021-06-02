@@ -1,0 +1,7 @@
+equires the implementation of a stochastic objective function.
+    This function, L&#710; is designed to approximate the true function L based off a small subset of the training data represented by Db.
+    Here b, the batch size, means that Db is created by drawing b training examples, with replacement, from the training set D. With this notation we can express the stochastic evaluation of the function as L&#710; (Db;e).
+    This stochastic function must be designed to ensure that: Note that this property is satisfied, without scaling, for objective functions that sum over the training data, as it is in our case, but any priors must be scaled down by a factor of b/|D|.
+    The stochastic gradient, &#65533;L (D(i) b ;e), is then simply the derivative of the stochastic function value.
+    SGD was implemented using the standard update: ek+1 = ek &#8722; gk0L (D(k) And employed a gain schedule in the form where parameter &#964; was adjusted such that the gain is halved after five passes through the data.
+    We f

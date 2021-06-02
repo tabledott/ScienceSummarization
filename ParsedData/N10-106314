@@ -1,0 +1,7 @@
+e in (Haghighi et al., 2008).
+    Context translation probability.
+    This feature looks at all words occurring next to word ws in the article S and next to wt in the article T in a local context window (we used one word to the left and one word to the right), and computes several scoring functions measuring the translation correspondence between the contexts (using the IBM Model 1 trained from seed parallel data).
+    This feature is similar to distributional similarity measures used in previous work, with the difference that it is limited to contexts of words within a linked article pair.
+    Distributional similarity.
+    This feature corresponds more closely to context similarity measures used in previous work on lexicon induction.
+    For each source headword ws, we collect a distribution over context positions o &#8712; {&#8722;2, &#8722;1, +1, +2} and context words vs in those positions based on a count of times a context word occurred at that offset from a headword: P(o, vs|ws) &#8733; weight(o) &#18

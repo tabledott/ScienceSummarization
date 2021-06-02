@@ -1,0 +1,6 @@
+ystem implictly predicts named entities based on consecutive pairs of words rather than based on single words, as is done in MENE, because each type of name has its own bigram language model.
+    In the decoding process, the Viterbi algorithm chooses the sequence of names which yields the highest joint probability of names, words, and features associated with each word.
+    In comparing the maximum entropy and HMMbased approaches to named entity recognition, we are hopeful that M.E. will turn out to be the better method in the end.
+    We think it is possible that some of Identifinder's current advantage can be neutralized by simply adding the just-mentioned features to MENE.
+    On the other hand, we have a harder time seeing how some of MENE's strengths can be integrated into an HMM-based system.
+    It is not clear, for instance, how a wide variety of dictionaries could be added to Identifinder or whether the system could be combined with a handcoded system as was done with our system and the one from LTG.

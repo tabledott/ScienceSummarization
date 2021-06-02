@@ -1,0 +1,11 @@
+g of k-best lists.
+    Despite its lack of parallelization, each call to BatchMIRA() is extremely fast, as SMT tuning sets are small enough to load all of [&#163;]n 1 into memory.
+    We test two Batch MIRA variants, which differ in their representation of &#163;.
+    Pseudo-code that covers both is provided in Algorithm 1.
+    Note that if we set &#163; = &#163;, Algorithm 1 also describes online MIRA.
+    Batch k-best MIRA inherits all of the MERT architecture.
+    It is very easy to implement; the hope-fear decoding steps can by carried out by simply evaluating BLEU score and model score for each hypothesis in the k-best list.
+    Batch Lattice MIRA replaces k-best decoding in step 1 with decoding to lattices.
+    To enable loading all of the lattices into memory at once, we prune to a density of 50 edges per reference word.
+    The hopefear decoding step requires the same oracle lattice decoding algorithms as online MIRA (Chiang et al., 2008).
+    The lattice aggregation in the outer loop can be kept reas

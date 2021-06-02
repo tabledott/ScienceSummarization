@@ -1,0 +1,8 @@
+h other results: No punctuations are scored, including sentence final punctuation.
+    Empty elements are not scored.
+    We used EVALB (written by Satoshi Sekine and Michael Collins) which scores based on PARSEVAL (Black et al., 1991); with the standard parameter file (as per standard practice, part of speech brackets were not part of the evaluation).
+    Also, we used Adwait Ratnaparkhi&#8217;s part-of-speech tagger (Ratnaparkhi, 1996) to tag unknown words in the test data.
+    We obtained 80.02% and 79.64% labeled bracketing precision and recall respectively (as defined in (Black et al., 1991)).
+    The baseline model which was only trained on the 9695 sentences of labeled data performed at 72.23% and 69.12% precision and recall.
+    These results show that training a statistical parser using our Cotraining method to combine labeled and unlabeled data strongly outperforms training only on the labeled data.
+    It is important to note that unlike previous studies, our method of moving towards unsupervised p

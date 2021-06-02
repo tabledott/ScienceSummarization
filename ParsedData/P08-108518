@@ -1,0 +1,9 @@
+ small seed of randomly selected sentences (10K annotated tokens) in order to skew the initial uniform distribution of the state transitions.
+    We initialize the p(tjt_1, t+1) distribution with smoothed ML estimates based on tag trigram and bigram counts (ignoring the tag-word annotations).
+    This small seed initialization (InitTrans) has a great impact on accuracy.
+    Overall, we reach 89.4% accuracy on full morphological and 92.4% accuracy for POS tagging and word segmentation, for the Morph+Linear conditions &#8211; an error reduction of more than 25% from the uniform distribution baseline.
+  
+  
+    We now apply the same technique to English semisupervised POS tagging.
+    Recent investigations of this task use dictionaries derived from the Penn WSJ corpus, with a reduced tag set of 17 tags5 instead of the original 45-tags tagset.
+    They experiment with full dictionaries (containing complete POS information for all the words in the text) as well as &#8220;diluted&#8221; dictionaries, from which lar

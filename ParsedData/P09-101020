@@ -1,0 +1,9 @@
+ Figure 4 shows, in the Windows domain even a simple command is expressed in at least six different ways.
+    Experimental Framework To apply our algorithm to the Windows domain, we use the Win32 application programming interface to simulate human interactions with the user interface, and to gather environment state information.
+    The operating system environment is hosted within a virtual machine,10 allowing us to rapidly save and reset system state snapshots.
+    For the puzzle game domain, we replicated the game with an implementation that facilitates automatic play.
+    As is commonly done in reinforcement learning, we use a softmax temperature parameter to smooth the policy distribution (Sutton and Barto, 1998), set to 0.1 in our experiments.
+    For Windows, the development set is used to select the best parameters.
+    For Crossblock, we choose the parameters that produce the highest reward during training.
+    During evaluation, we use these parameters to predict mappings for the test documents.
+   

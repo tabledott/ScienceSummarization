@@ -1,0 +1,12 @@
+2.
+			If x = x1x2...xm and y = y1y2...yn are two relation examples, where xi denotes the set ofword classes corresponding to position i (as in Fig ure 3), then the number of common features between x and y is computed as in Equation 1.
+			K(x, y) = { 0, m 6= n ?n i=1 c(xi, yi), m = n (1) where c(xi, yi) = |xi?yi| is the number of common word classes between xi and yi.
+			This is a simple kernel, whose computation takes O(n) time.
+			If the two paths have different lengths,they correspond to different ways of expressing a re lationship ? for instance, they may pass through a different number of predicate argument structures.
+			Consequently, the kernel is defined to be 0 in this case.
+			Otherwise, it is the product of the number of common word classes at each position in the two paths.
+			As an example, let us consider two instances of the LOCATED relationship: 1.
+			?his actions in Brcko?, and 2.
+			?his arrival in Beijing?.
+			Their corresponding dependency paths are: 1.
+			?his ? actions ? in ? Brcko?, and

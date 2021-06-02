@@ -1,0 +1,10 @@
+h word.
+    Models 3 and 4 are deficient, a technical concept defined and discussed in Section 4.5.
+    Briefly, this means that they waste some of their probability on objects that are not French strings at all.
+    Model 5 is very much like Model 4, except that it is not deficient.
+    Models 1-4 serve as stepping stones to the training of Model 5.
+    Models 1 and 2 have an especially simple mathematical form so that iterations of the EM algorithm can be computed exactly.
+    That is, we can explicitly perform sums over all possible alignments for these two models.
+    In addition, Model 1 has a unique local maximum so that parameters derived for it in a series of EM iterations do not depend on the starting point for the iterations.
+    As explained below, we use Model 1 to provide initial estimates for the parameters of Model 2.
+    In Model 2 and subsequent models, the likelihood function does not have a unique local maximum, but by initializing each model from the parameters of the model before it, we a

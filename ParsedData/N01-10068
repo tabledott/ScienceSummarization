@@ -1,0 +1,9 @@
+d(r) = jB(r)j.
+    Given a newly learned rule b that is to be applied to S, the goal is to identify the rules r for which at least one of the sets G (r) , B (r) is modified by the application of rule b.
+    Obviously, if both sets are not modified when applying rule b, then the value of the objective function for rule r remains unchanged.
+    2The algorithm was implemented by the the authors, following the description in Hepple (2000).
+    The presentation is complicated by the fact that, in many NLP tasks, the samples are not independent.
+    For instance, in POS tagging, a sample is dependent on the classification of the preceding and succeeding 2 samples (this assumes that there exists a natural ordering of the samples in S).
+    Let V (s) denote the &amp;quot;vicinity&amp;quot; of a sample the set of samples on whose classification the sample s might depend on (for consistency, s 2 V (s)); if samples are independent, then V (s) = fsg.
+    Let s be a sample on which the best rule b applies (i.e.
+    [b (s)

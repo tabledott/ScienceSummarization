@@ -1,0 +1,7 @@
+rk of McDonald et al. (2005b) for online large-margin dependency parsing.
+    As usual for supervised learning, we assume a training set T = {(xt, yt)}Tt=1, consisting of pairs of a sentence xt and its correct dependency representation yt.
+    The algorithm is an extension of the Margin Infused Relaxed Algorithm (MIRA) (Crammer and Singer, 2003) to learning with structured outputs, in the present case dependency structures.
+    Figure 6 gives pseudo-code for the algorithm.
+    An online learning algorithm considers a single training instance for each update to the weight vector w. We use the common method of setting the final weight vector as the average of the weight vectors after each iteration (Collins, 2002), which has been shown to alleviate overfitting.
+    On each iteration, the algorithm considers a single training instance.
+    We parse this instance to obtain a predicted dependency graph, and find the smallest-norm update to the weight vector w that ensures that the training graph outscores the pred

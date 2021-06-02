@@ -1,0 +1,6 @@
+(Xue and Shen, 2003).
+    Our word segmenter uses a maximum entropy framework and is trained on manually segmented sentences.
+    It classifies each Chinese character given the features derived from its surrounding context.
+    Each character can be assigned one of 4 possible boundary tags: &#8220;b&#8221; for a character that begins a word and is followed by another character, &#8220;m&#8221; for a character that occurs in the middle of a word, &#8220;e&#8221; for a character that ends a word, and &#8220;s&#8221; for a character that occurs as a single-character word.
+    Besides implementing a subset of the features described in (Xue and Shen, 2003), we also came up with three additional types of features ((d) &#8722; (f) below) which improved the accuracy of word segmentation.
+    The default feature, boundary tag feature of the previous character, and boundary tag feature of the character two before the current character used in (Xue and Shen, 2003) were dropped from our word segmenter, as they did not im

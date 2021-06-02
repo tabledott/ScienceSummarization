@@ -1,0 +1,9 @@
+cases, but further reduction could be obtained.
+    The second experiment shows the impact of the new search on discriminative reranking of Model 4 (see Table 6).
+    Reduced search errors lead to a better fit of the discriminative training corpus.
+  
+  
+    Intuitively, in approximate EM training for Model 4 (Brown et al., 1993), the E-step corresponds to calculating the probability of all alignments according to the current model estimate, while the M-step is the creation of a new model estimate given a probability distribution over alignments (calculated in the E-step).
+    In the E-step ideally all possible alignments should be enumerated and labeled with p(a|e, f), but this is intractable.
+    For the M-step, we would like to count over all possible alignments for each sentence pair, weighted by their probability according to the model estimated at the previous step.
+    Because this is not tractable, we make the assumption that the single assumed Viterbi alignment can be used to update our estimate in t

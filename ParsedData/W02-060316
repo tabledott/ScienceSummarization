@@ -1,0 +1,11 @@
+optimal solutions.
+    Rejection criteria.
+    (1) Rare morphs.
+    Reject the segmentation of a word if the segmentation contains a morph that was used in only one word type in the previous iteration.
+    This is motivated by the fact that extremely rare morphs are often incorrect.
+    (2) Sequences of one-letter morphs.
+    Reject the segmentation if it contains two or more one-letter morphs in a sequence.
+    For instance, accept the segmentation halua + n (Engl.
+    &#8217;I want&#8217;, i.e. present stem of the verb &#8217;to want&#8217; followed by the ending for the first person singular), but reject the segmentation halu + a + n (stem of the noun &#8217;desire&#8217; followed by a strange sequence of endings).
+    Long sequences of one-letter morphs are usually a sign of a very bad local optimum that may even get worse in future iterations, in case too much probability mass is transferred onto these short morphs3.
+    3Nevertheless, for Finnish there do exist some one-letter morphemes that can occur i

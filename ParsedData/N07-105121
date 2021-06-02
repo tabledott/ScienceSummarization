@@ -1,0 +1,8 @@
+f Goodman (1996) has such an objective function.
+    In its original formulation this algorithm maximizes the number of expected correct nodes, but instead we can use it to maximize the number of correct rules (the MAX-RULE-SUM algorithm).
+    A worrying issue with this method is that it is ill-defined for grammars which allow infinite unary chains: there will be no finite minimum risk tree under recall loss (you can always reduce the risk by adding one more cycle).
+    We implement MAX-RULE-SUM in a CNFlike grammar family where above each binary split is exactly one unary (possibly a self-loop).
+    With this limitation, unary chains are not a problem.
+    As might be expected, this criterion improves bracket measures at the expense of exact match.
+    We found it optimal to use a third approach, in which rule posteriors are multiplied instead of added.
+    This corresponds to choosing the tree with greatest chance of having all rules correct, under the (incorrect) assumption that the rules correctness are i

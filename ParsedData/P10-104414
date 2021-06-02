@@ -1,0 +1,7 @@
+ illustrates the LinkLDA model in the plate notation, which is analogous to the model in (Erosheva et al., 2004).
+    In particular note that each ai is drawn from a different hidden topic zi, however the zi&#8217;s are drawn from the same distribution 0r for a given relation r. To facilitate learning related topic pairs between arguments we employ a sparse prior over the per-relation topic distributions.
+    Because a few topics are likely to be assigned most of the probability mass for a given relation it is more likely (although not necessary) that the same topic number k will be drawn for both arguments.
+    When comparing LinkLDA with JointLDA the better model may not seem immediately clear.
+    On the one hand, JointLDA jointly models the generation of both arguments in an extracted tuple.
+    This allows one argument to help disambiguate the other in the case of ambiguous relation strings.
+    LinkLDA, however, is more flexible; rather than requiring both arguments to be generated from one of IZI possi

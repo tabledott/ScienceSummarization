@@ -1,0 +1,8 @@
+ws the algorithm to ensure that aligned words are not included in a synthetic combination more than once.
+    Third, by allowing long range matches, the synthetic combination generation algorithm can consider different plausible orderings of the matched words, based on their location in the original translations.
+    After the matcher has word aligned the original system translations, the decoder goes to work.
+    The hypothesis generator produces synthetic combinations of words and phrases from the original translations that satisfy a set of adequacy constraints.
+    The generation algorithm is an iterative process and produces these translation hypotheses incrementally.
+    In each iteration, the set of existing partial hypotheses is extended by incorporating an additional word from one of the original translations.
+    For each partial hypothesis, a data-structure keeps track of the words from the original translations which are accounted for by this partial hypothesis.
+    One underlying constraint observ

@@ -1,0 +1,10 @@
+he classifiers seem surprisingly better than the pruning heuristics.
+  Using either the gold-standard data set or the output of automatic parsers, the classifiers achieve higher F1 scores.
+  One possible reason for this phenomenon is that the accuracy of the pruning strategy is limited by the number of agreements between the correct arguments and the constituents of the parse trees.
+  Table 8 summarizes the statistics of the examples seen by both strategies.
+  The pruning strategy needs to decide which are the potential arguments among all con- stituents.
+  This strategy is upper-bounded by the number of correct arguments that agree with some constituent.
+  On the other hand, the classifiers do not have this limitation.
+  The number of examples they observe is the total number of words to be processed, and the positive examples are those arguments that are annotated as such in the data set.
+  Table 7 The performance of pruning using heuristics and classifiers.
+  Full Parsing Classifier Threshold = 0.04 Prec R

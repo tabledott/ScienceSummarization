@@ -1,0 +1,6 @@
+et we generated a pseudo-negative tuple by randomly sampling two noun phrases from the distribution of NPs in both corpora.
+    Our prediction system needs to determine whether a specific relation-argument pair is admissible according to the selectional preferences or is a random distractor (D).
+    Following previous work, we perform this experiment independently for the two relation-argument pairs (r, a1) and (r, a2).
+    We first compute the probability of observing a1 for first argument of relation r given that it is not a distractor, P(a1|r, -,D), which we approximate by its probability given an estimate of the parameters inferred by our model, marginalizing over hidden topics t. The analysis for the second A simple application of Bayes Rule gives the probability that a particular argument is not a distractor.
+    Here the distractor-related probabilities are independent of r, i.e., P(D|r) = P(D), P(a1|D, r) = P(a1|D), etc.
+    We estimate P(a1|D) according to their frequency in the generalization corpus

@@ -1,0 +1,8 @@
+ror model.
+    Two seminal papers first posed a noisy channel model solution to the spelling correction problem.
+    In (Mayes, Damerau et al. 1991), word bigrams are used for the source model.
+    For the error model, they first define the confusion set of a string s to include s, along with all words w in the dictionary D such that s can be derived from w by a single application of one of the four edit operations: Let C be the number of words in the confusion set of d. Then they define the error model, for all s in the confusion set of d, as: This is a very simple error model, where is the prior on a typed word being correct, and the remaining probability mass is distributed evenly among all other words in the confusion set.
+    Church and Gale (1991) propose a more sophisticated error model.
+    Like Mayes, Damerau, et al. (1991), they consider as candidate source words only those words that are a single basic edit away from s, using the same edit set as above.
+    However, two improvements are made.
+    F

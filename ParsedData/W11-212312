@@ -1,0 +1,9 @@
+aving some memory, but still stores full 64-bit pointers.
+    With some minor API changes, namely returning the length of the n-gram matched, it could also be faster&#8212;though this would be at the expense of an optimization we explain in Section 4.1.
+    The PROBING model was designed to improve upon SRILM by using linear probing hash tables (though not arranged in a trie), allocating memory all at once (eliminating the need for full pointers), and being easy to compile.
+    IRSTLM (Federico et al., 2008) is an open-source toolkit for building and querying language models.
+    The developers aimed to reduce memory consumption at the expense of time.
+    Their default variant implements a forward trie, in which words are looked up in their natural left-to-right order.
+    However, their inverted variant implements a reverse trie using less CPU and the same amount of memory7.
+    Each trie node contains a sorted array of entries and they use binary search.
+    Compared with SRILM, IRSTLM adds several feature

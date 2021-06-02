@@ -1,0 +1,8 @@
+ons of the two features.
+    We basically M(&#183;) is maps a source span to the target language, and M&#8722;1(&#183;) is the reverse operation mapping back to the source language. map a source span sp to its target span M(sp), and check whether its reverse image back onto the source language M&#8722;1(M(sp)) falls inside the allowed span ap.
+    For cR(st, wi), the allowed span extends to the right end of the sentence.5 To conclude so far, we have got two alignmentbased features, c(st&#8722;1, st) correlating with reduce, and cR(st, wi) correlating with shift.
+    In fact, the conjunction of these two features, is another feature with even stronger discrimination power.
+    If is a very strong signal for shift.
+    So in total we got three bilingual feature (templates), which in practice amounts to 24 instances (after cross-product with {&#8722;, +} and the three actions).
+    We show in Section 5.3 that these features do correlate with the correct shift/reduce actions in practice.
+    The naive implementio

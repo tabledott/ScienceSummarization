@@ -1,0 +1,6 @@
+es since it scales to large amounts of data.
+    When training on tweets drawn from a single day, we observed time-specific biases (e.g., numerical dates appearing in the same cluster as the word tonight), so we assembled our unlabeled data from a random sample of 100,000 tweets per day from September 10, 2008 to August 14, 2012, and filtered out non-English tweets (about 60% of the sample) using langid.py (Lui and Baldwin, 2012).5 Each tweet was processed with our tokenizer and lowercased.
+    We normalized all atmentions to (@MENTION) and URLs/email addresses to their domains (e.g. http://bit.ly/ dP8rR8 ==&gt;- (URL-bit.ly)).
+    In an effort to reduce spam, we removed duplicated tweet texts (this also removes retweets) before word clustering.
+    This normalization and cleaning resulted in 56 million unique tweets (847 million tokens).
+    We set the clustering software&#8217;s count threshold to only cluster words appearing 40 or more times, yielding 216,856 word types, which took 42 hours to cluster on a

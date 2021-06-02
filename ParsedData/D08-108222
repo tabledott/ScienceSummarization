@@ -1,0 +1,8 @@
+ 1993) for 100 iterations, and then initialize Model I with the learned parameter values.
+    This IBM model is a word-toword alignment model that does not model word order, so we do not have to linearize the hierarchical MR structure.
+    Given this initialization, we train Model I for 100 EM iterations and use the learned parameters to initialize Model II which is trained for another 100 EM iterations.
+    Model III is simply an interpolation of the above two models.
+    As for the reranking phase, we initialize the weight vector with the zero vector 0, and run the averaged perceptron algorithm for 10 iterations.
+    Following Wong (2007) and other previous work, we report performance in terms of Precision (percentage of answered NL sentences that are correct), Recall (percentage of correctly answered NL sentences, out of all NL sentences) and F-score (harmonic mean of Precision and Recall).
+    Again following Wong (2007), we define the correct output MR structure as follows.
+    For the GEOQUERY corpus, a

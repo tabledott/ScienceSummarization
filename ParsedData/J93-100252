@@ -1,0 +1,7 @@
+ or by looking at words yet to be parsed.
+    Our approach goes some way to addressing these points, since the parser is as predictive as the backbone grammar and LR technique allow, and the LALR(1) parse table allows one word lookahead to resolve some ambiguities (although, of course, the resolution of a local ambiguity may potentially involve an unlimited amount of lookahead; e.g.
+    Briscoe 1987:125ff).
+    In fact, LR parsing is the most effectively predictive parsing technique for which an automatic compilation procedure is known, but this is somewhat undermined by our use of features, which will block some derivations so that the valid prefix property will no longer hold (e.g.
+    Schabes 1991b).
+    Extensions to the LR technique, for example those using LR-regular grammars (Culic and Cohen 1973; Bermudez 1991), might be used to further cut down on interactions; however, computation of the parse tables to drive such extended LR parsers may prove intractable for large NL grammars (Hektoen 1991).
+    An

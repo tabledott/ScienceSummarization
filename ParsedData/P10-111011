@@ -1,0 +1,6 @@
+the agenda, it looks for possible sibling states that can combine with it; GSS, however, explicitly maintains these predictor states so that the newlypopped state does not need to look them up.4 We state the main theoretical result with the proof omitted due to space constraints: Theorem 1.
+    The deductive system is optimal and runs in worst-case polynomial time as long as the kernel feature function satisfies two properties: Intuitively, boundedness means features can only look at a local window and can only extract bounded information on each tree, which is always the case in practice since we can not have infinite models.
+    Monotonicity, on the other hand, says that features drawn from trees farther away from the top should not be more refined than from those closer to the top.
+    This is also natural, since the information most relevant to the current decision is always around the stack top.
+    For example, the kernel feature function in Eq.
+    5 is bounded and monotonic, since f2 is less refined t

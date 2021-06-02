@@ -1,0 +1,9 @@
+context vector.
+    The context of the ambiguous word is first augmented using the co&#8211;occurrence matrix, just like the definitions.
+    The context vector is formed by taking the aggregate of the word vectors of the words in the augmented context.
+    To disambiguate the target word, the context vector is compared to the vectors corresponding to each meaning of the target word in LDOCE, and that meaning is selected whose vector is mathematically closest to that of the context.
+    Our approach differs from theirs in two primary respects.
+    First, rather than creating an aggregate vector for the context we compare the vector of each meaning of the ambiguous word with the vectors of each of the meanings of the words in the context.
+    This adds another level of indirection in the comparison and attempts to use only the relevant meanings of the context words.
+    Secondly, we use the structure of WordNet to augment the short glosses with other related glosses.
+    (Niwa and Nitta, 1994) compare dictiona

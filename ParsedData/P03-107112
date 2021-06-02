@@ -1,0 +1,8 @@
+ correspond to actual boundaries.
+    Thus, we ignore all potential boundaries with a probability lower than plimit.
+    For the remaining points, we compute the threshold using the average (&#181;) and standard deviation (&#963;) of the p(mi) values, and each potential boundary mi above the threshold &#181;&#8722;&#945;&#183;&#963; is hypothesized as a real boundary.
+    We evaluate LCseg against two state-of-the-art segmentation algorithms based on lexical cohesion (Choi, 2000; Utiyama and Isahara, 2001).
+    We use the error metric Pk proposed by Beeferman et al. (1999) to evaluate segmentation accuracy.
+    It computes the probability that sentences k units (e.g. sentences) apart are incorrectly determined as being either in different segments or in the same one.
+    Since it has been argued in (Pevzner and Hearst, 2002) that Pk has some weaknesses, we also include results according to the WindowDiff (WD) metric (which is described in the same work).
+    A test corpus of concatenated6 texts extracted from

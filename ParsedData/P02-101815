@@ -1,0 +1,8 @@
+r the empty nodes that were originally present, and reinsert the relevant empty nodes.
+    This blocks the matching of shallower patterns, reducing their match values and hence raising their success probability.
+    (Undoubtedly the &#8220;count&#8221; values are also over-estimated in the same way; however, experiments showed that estimating count values in a similar manner to the way in which match values are estimated reduces the algorithm&#8217;s performance).
+    Finally, we rank all of the remaining patterns.
+    We experimented with several different ranking criteria, including pattern depth, success probability (i.e., c/m) and discounted success probability.
+    Perhaps surprisingly, all produced similiar results on the development corpus.
+    We used pattern depth as the ranking criterion to produce the results reported below because it ensures that &#8220;deep&#8221; patterns receive a chance to apply.
+    For example, this ensures that the pattern inserting an empty NP * and WHNP can apply before t

@@ -1,0 +1,10 @@
+
+    This assumption is based on the success of the Naive Bayes model when applied to supervised word&#8212;sense disambiguation (e.g.
+    (Gale, Church, and Yarowsky, 1992), (Leacock, Towel!, and Voorhees, 1993), (Mooney, 1996), (Pedersen, Bruce, and Wiebe, 1997), (Pedersen and Bruce, 1997a)).
+    There are two potential problems when using the EM algorithm.
+    First, it is computationally expensive and convergence can be slow for problems with large numbers of model parameters.
+    Unfortunately there is little to be done in this case other than reducing the dimensionality of the problem so that fewer parameters are estimated.
+    Second, if the likelihood function is very irregular it may always converge to a local maxima and not find the global maximum.
+    In this case, an alternative is to use the more computationally expensive method of Gibbs Sampling (Geman and Geman, 1984).
+    At the heart of the EM Algorithm lies the Qfunction.
+    This is the expected value of the loglikelihood function for the c

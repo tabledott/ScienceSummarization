@@ -1,0 +1,7 @@
+e system performance on them increases (they become increasingly restricted as to word class).
+    7Except where otherwise stated, a count cutoff of 2 was used for common word features and 35 for rare word features (templates need a support set strictly greater in size than the cutoff before they are included in the model). ing on the previous tag as well (model L, ht0, t&#8722;1i features) gives 95.79%.
+    The reverse, model R, using the next tag instead, is slightly inferior at 95.14%.
+    Model L+R, using both tags simultaneously (but with only the individual-direction features) gives a much better accuracy of 96.57%.
+    Since this model has roughly twice as many tag-tag features, the fact that it outperforms the unidirectional models is not by itself compelling evidence for using bidirectional networks.
+    However, it also outperforms model L+L2 which adds the ht0, t&#8722;2i secondprevious word features instead of next word features, which gives only 96.05% (and R+R2 gives 95.25%).
+    We conclude tha

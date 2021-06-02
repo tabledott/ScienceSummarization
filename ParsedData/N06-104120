@@ -1,0 +1,9 @@
+bed in Grenager et al. (2005) under conditions similar to POS tagging.
+    An important characteristic of this domain (see figure 1(a)) is that the hidden labels tend to be &#8220;sticky,&#8221; in that fields tend to consist of runs of the same label, as in figure 1(c), in contrast with part-of-speech tagging, where we rarely see adjacent tokens given the same label.
+    Grenager et al. (2005) report that in order to learn this &#8220;sticky&#8221; structure, they had to alter the structure of their HMM so that a fixed mass is placed on each diagonal transition.
+    In this work, we learned this structure automatically though prototype similarity features without manually constraining the model (see
+  
+  
+    figure 8), though we did change the similarity function (see below).
+    On the test set of (Grenager et al., 2005), BASE scored an accuracy of 46.4%, comparable to Grenager et al. (2005)&#8217;s unsupervised HMM baseline.
+    Adding the prototype list (see figure 2) without distributional features yiel

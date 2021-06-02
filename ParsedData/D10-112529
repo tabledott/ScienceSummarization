@@ -1,0 +1,7 @@
+ere 77k is the number of times that L(u(k&#65533;)) &gt; L(u(k'&#8722;1)) for k' &lt; k. Hence the learning rate drops at a rate of 1/(1 + t), where t is the number of times that the dual increases from one iteration to the next.
+    A.2 Use of the -y(i, j) Parameters The parsing algorithms both consider a generalized problem that includes -y(i, j) parameters.
+    We now describe how these can be useful.
+    Recall that the optimization problem is to solve argmaxzEZ,yEY f(z) + h(y), subject to a set of agreement constraints.
+    In our models, f(z) can be written as f'(z) + Eij &#945;(i, j)z(i, j) where f'(z) includes only terms depending on higherorder (non arc-factored features), and &#945;(i, j) are weights that consider the dependency between i and j alone.
+    For any value of 0 &lt; Q &lt; 1, the problem argmaxzEZ,yEY f2(z) + h2(y) is equivalent to the original problem, if f2(z) = f'(z) + (1 &#8722; Q) &amp;,j &#945;(i,j)z(i,j) and h2(y) = Q Ei,j &#945;(i, j)y(i, j).
+    We have simply shifted the &#945

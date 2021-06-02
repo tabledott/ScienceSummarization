@@ -1,0 +1,7 @@
+ of strings (Y, X), where Y is the concatenation of the projection of the first components of Z and X is the concatenation of the projection of the second components.
+    For example, the string Z = a:a flight:flight to:0 Boston:0 uh:0 I:0 mean:0 to:to Denver:Denver on:on Friday:Friday corresponds to the observed string Y = a flight to Boston uh I mean to Denver on Friday and the source string X = a flight to Denver on Friday.
+    Figure 3 shows the TAG rules used to generate this example.
+    The nonterminals in this grammar are of the form N,,,x, R,,,y:,,,x and I, where w,, is a word appearing in the source string and wy is a word appearing in the observed string.
+    Informally, the N,,,x nonterminals indicate that the preceding word w,, was analyzed as not being part of a repair, while the R,,,y:,,,x that the preceding words wy and w,, were part of a repair.
+    The nonterminal I generates words in the interregnum of a repair.
+    Encoding the preceding words in the TAGs nonterminals permits the channel m

@@ -1,0 +1,8 @@
+presentation (the parent vector p) which could also be seen as features describing that phrase.
+    We can leverage this representation by adding on top of each parent node a simple softmax layer to predict class distributions: Assuming there are K labels, d E RK is a K-dimensional multinomial distribution and P k=1 dk = 1.
+    Fig.
+    3 shows such a semi-supervised RAE unit.
+    Let tk be the kth element of the multinomial target label distribution t for one entry.
+    The softmax layer&#8217;s outputs are interpreted as conditional probabilities dk = p(kJ[c1; c2]), hence the cross-entropy error is 1For the binary label classification case, the distribution is of the form [1, 0] for class 1 and [0, 1] for class 2.
+    Using this cross-entropy error for the label and the reconstruction error from Eq.
+    6, the final semisupervised RAE objective over (sentences,label) pairs (x, t) in a corpus becomes where we have an error for each entry in the training set that is the sum over the error at the nodes of the 

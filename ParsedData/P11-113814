@@ -1,0 +1,5 @@
+es of the different disambiguation candidates for the same surface form s were very similar.
+    For example, consider the disambiguation candidates of &#8220;China&#8217; and their TF-IDF summaries in Figure 1.
+    The majority of the terms selected in all summaries refer to the general issues related to China, such as &#8220;legalism, reform, military, control, etc.&#8221;, while a minority of the terms actually allow disambiguation between the candidates.
+    The problem stems from the fact that the TF-IDF summaries are constructed against the entire Wikipedia, and not against the confusion set of disambiguation candidates of m. Therefore, we re-weigh the TF-IDF vectors using the TF-IDF scheme on the disambiguation candidates as a adhoc document collection, similarly to an approach in (Joachims, 1997) for classifying documents.
+    In our scenario, the TF of the a token is the original TF-IDF summary score (a real number), and the IDF term is the sum of all the TF-IDF scores for the token within the set of

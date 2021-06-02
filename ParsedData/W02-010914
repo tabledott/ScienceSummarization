@@ -1,0 +1,9 @@
+ner into two pieces; and MergeRule(&#8217;&lt;JJ&gt;&#8217;, &#8217;&lt;JJ&gt;&#8217;) combines two adjacent chunks where the first chunk ends and the second chunk starts with adjectives.
+    The chunking tutorial motivates chunk parsing, describes each rule type, and provides all the necessary code for the assignment.
+    The provided code is responsible for loading the chunked, part-of-speech tagged text using an existing tokenizer, creating an unchunked version of the text, applying the chunk rules to the unchunked text, and scoring the result.
+    Students focus on the NLP task only &#8211; providing a rule set with the best coverage.
+    In the remainder of this section we reproduce some of the cascades created by the students.
+    The first example illustrates a combination of several rule types: ChunkRule(&#8217;&lt;DT&gt;&lt;NN.*&gt;&lt;VB.&gt;&lt;NN.
+    *&gt;&#8217;), ChunkRule(&#8217;&lt;DT&gt;&lt;VB.&gt;&lt;NN.
+    *&gt;&#8217;), ChunkRule(&#8217;&lt;.
+    *&gt;&#8217;), UnChunkRule(&#8217;&lt;IN|

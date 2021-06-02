@@ -1,0 +1,7 @@
+ied by hashing the test item using the same k hash functions.
+    If all bits referenced by the k hash values are 1 then we assume that the item was a member; if any of them are 0 then we know it was not.
+    True members are always correctly identified, but a false positive will occur if all k corresponding bits were set by other items during training and the item was not a member of the training set.
+    This is known as a one-sided error.
+    The probability of a false postive, f, is clearly the probability that none of k randomly selected bits in the filter are still 0 after training.
+    Letting p be the proportion of bits that are still zero after these n elements have been inserted, this gives, As n items have been entered in the filter by hashing each k times, the probability that a bit is still zero is, which is the expected value of p. Hence the false positive rate can be approximated as, f = (1 &#8722; p)k : (1 &#8722; p&#65533;)k : (1 &#8722; e&#8722;kn m)k .
+    By taking the derivative we find t

@@ -1,0 +1,9 @@
+oved stopwords (pronouns, prepositions, determiners and modal and auxiliary verbs).
+    We have used a corpus of four billion documents, crawled from the Web in August 2008.
+    An HTML parser is used to extract text, the language of each document is identified, and non-English documents are discarded.
+    The final corpus remaining at the end of this process contains roughly 1.6 Terawords.
+    All calculations are done in parallel sharding by dimension, and it is possible to calculate all pairwise similarities of the words in the test sets very quickly on this corpus using the MapReduce infrastructure.
+    A complete run takes around 15 minutes on 2,000 cores.
+    In order to calculate similarities in a cross-lingual setting, where some of the words are in a language l other than English, the following algorithm is used: models and distributional models.
+    CW=Context Windows, BoW=bag of words, Syn=syntactic vectors.
+    For Syn, the window size is actually the tree-depth for the governors and descendants.

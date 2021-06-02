@@ -1,0 +1,9 @@
+node is the convex hull over the line segments of all candidate translations that can be derived from the hypergraph.
+    The suggested algorithm has similar properties as the algorithm presented in (Macherey et al., 2008).
+    In particular, it has the same upper bound on the number of line segments that constitute the envelope at the root node, i.e, the size of this envelope is guaranteed to be no larger than the number of edges in the transformed hypergraph.
+  
+  
+    We first review Minimum Bayes-Risk (MBR) decoding for statistical MT.
+    An MBR decoder seeks the hypothesis with the least expected loss under a probability model (Bickel and Doksum, 1977).
+    If we think of statistical MT as a classifier that maps a source sentence F to a target sentence E, the MBR decoder can be expressed as follows: where L(E, E') is the loss between any two hypotheses E and E', P(E|F) is the probability model, and 9 is the space of translations (N-best list, lattice, or a hypergraph).
+    MBR decoding for translation c

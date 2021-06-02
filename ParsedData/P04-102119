@@ -1,0 +1,11 @@
+d target transliterations, is available, it can help reduce error rate by discarding invalid transliterations top-down the N choices.
+    In Table 7, the word error rates for both E2C and C2E are reported which imply potential error reduction by secondary knowledge source.
+    The N-best error rates are reduced significantly at 10-best level as reported in Table 7.
+  
+  
+    It would be interesting to relate n-gram TM to other related framework.
+    In section 4, one observes that contextual information in both source and target languages is essential.
+    To capture them in the modeling, one could think of decision tree, another popular machine learning approach.
+    Under the DOM framework, here is the first attempt to apply decision tree in E2C and C2E transliteration.
+    With the decision tree, given a fixed size learning vector, we used top-down induction trees to predict the corresponding output.
+    Here we implement ID3 (Quinlan, 1993) algorithm to construct the decision tree which contains questions

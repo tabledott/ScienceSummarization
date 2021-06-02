@@ -1,0 +1,6 @@
+#8217; is often used to refer to the &#8220;mac book pro&#8221;).
+    Distant Supervision with Topic Models: To model unlabeled entities and their possible types, we apply LabeledLDA (Ramage et al., 2009), constraining each entity&#8217;s distribution over topics based on its set of possible types according to Freebase.
+    In contrast to previous weakly supervised approaches to Named Entity Classification, for example the CoTraining and Naive Bayes (EM) models of Collins and Singer (1999), LabeledLDA models each entity string as a mixture of types rather than using a single hidden variable to represent the type of each mention.
+    This allows information about an entity&#8217;s distribution over types to be shared across mentions, naturally handling ambiguous entity strings whose mentions could refer to different types.
+    Each entity string in our data is associated with a bag of words found within a context window around all of its mentions, and also within the entity itself.
+    As in standard LDA (Blei

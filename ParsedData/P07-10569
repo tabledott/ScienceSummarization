@@ -1,0 +1,12 @@
+minimize the Huber loss with stochastic gradient descent (Zhang, 3For a description of the construction of the polarity dataset, see http://www.cs.cornell.edu/people/ pabo/movie-review-data/.
+    2004).
+    On the polarity dataset, this model matches the results reported by Pang et al. (2002).
+    When we report results with SCL and SCL-MI, we require that pivots occur in more than five documents in each domain.
+    We set k, the number of singular vectors of the weight matrix, to 50.
+  
+  
+    Each labeled dataset was split into a training set of 1600 instances and a test set of 400 instances.
+    All the experiments use a classifier trained on the training set of one domain and tested on the test set of a possibly different domain.
+    The baseline is a linear classifier trained without adaptation, while the gold standard is an in-domain classifier trained on the same domain as it is tested.
+    Figure 1 gives accuracies for all pairs of domain adaptation.
+    The domains are ordered clockwise from the top 

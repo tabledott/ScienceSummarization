@@ -1,0 +1,9 @@
+of the type targeted by our system.
+			For example, the original choice of preposition made in the native text would serve as supervision for the evaluation of the preposition module.
+			Human evaluation is performed on non native text, with a human rater assessing each suggestion provided by the system.
+			5.1 Individual SP Modules.
+			For evaluation, we split the original training data discussed in section 4.1 into training and test sets (70%/30%).
+			We then retrained the classifiers on this reduced training set and applied them to the held-out test set.
+			Since there are two models, one for preposition/determiner presence and absence (pa), and one for preposition/determiner choice (ch), we report combined accuracy numbers of the two classifiers.
+			Votes(a) stands for the counts of votes for class value = absence from pa, votes(p) stands for counts of votes for presence from pa. Acc(pa) is the accuracy of the pa classifier, acc(ch) the accuracy of the choice classifier.
+			Combined accuracy is defined as

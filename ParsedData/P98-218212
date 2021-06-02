@@ -1,0 +1,14 @@
+ave the same probability, the rightmost noun is chosen.)
+    Once the head of the word is determined, the ratio of count 1 (with the head noun chosen) to count 2 is compared to an empirically set cutoff.
+    If it falls below that cutoff, it is omitted.
+    If it does not fall below the cutoff, then it is kept (provided its head noun is not later omitted).
+  
+  
+    The input to the algorithm is a parsed corpus and a set of initial seed words for the desired category.
+    Nouns are matched with their plurals in the corpus, and a single representation is settled upon for both, e.g. car(s).
+    Co-Occurrence bigrams are collected for head nouns according to the notion of co-occurrence outlined above.
+    The algorithm then proceeds as follows:
+  
+  
+    We ran our algorithm against both the MUC-4 corpus and the Wall Street Journal (WSJ) corpus for a variety of categories, beginning with the categories of vehicle and weapon, both included in the five categories that Rk,S investigated in their paper.
+    Other ca

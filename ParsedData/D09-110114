@@ -1,0 +1,8 @@
+e an adverse effect on model training.
+    As a result, only a subset of mention pairs will be generated for training.
+    Following Soon et al. (2001), we create (1) a positive instance for each discourse-old mention mk and its closest antecedent mj; and (2) a negative instance for mk paired with each of the intervening mentions, mj+1, mj+2, ... , mk&#8722;1.
+    In our running example shown in Figure 1, three training instances will be generated for He: i(Monday, He), i(secretary of state, He), and i(his, He).
+    The first two of these instances will be labeled as negative, and the last one will be labeled as positive.
+    To train a mention-pair classifier, we use the SVM learning algorithm from the SVMlight package (Joachims, 2002), converting all multi-valued features into an equivalent set of binary-valued features.
+    After training, the resulting SVM classifier is used to identify an antecedent for a mention in a test text.
+    Specifically, an active mention mk selects as its antecedent the closest

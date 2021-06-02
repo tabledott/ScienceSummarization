@@ -1,0 +1,9 @@
+ng (1) the mention itself, such as the number of words and whether it is a pronoun, and (2) properties of the potential antecedent set, such as the number of preceding mentions and whether there is a previous mention with a matching string.
+  
+  
+    This section provides the performance of the pairwise coreference classifier, both when used alone (COREF-PAIRWISE) and when used in a cascade where the anaphoricity classifier acts as a filter on which mentions should be resolved (AC-CASCADE).
+    In both systems, antecedents are determined in the manner described in section 2.
+    To demonstrate the inherent limitations of cascading, we also give results for an oracle system, ORACLE-LINK, which assumes perfect linkage.
+    That is, it always picks the correct antecedent for an anaphor.
+    Its only errors are due to being unable to resolve mentions which were marked as nonanaphoric (by the imperfect anaphoricity classifier) when in fact they were anaphoric.
+    We evaluate these systems on the datasets from the

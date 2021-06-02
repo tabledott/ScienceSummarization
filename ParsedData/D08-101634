@@ -1,0 +1,10 @@
+ding it with weaker constraints is asymptotically faster (except for NOT2) but usually harmful.
+    (Parenthetical numbers show that the harm is compounded if the weaker constraints are used in training as well; even though this matches training to test conditions, it may suffer more from BP&#8217;s approximate gradients.)
+    Decoding the TREE model with the even stronger PTREE constraint can actually be helpful for a more projective language.
+    All results use 5 iterations of BP.
+    BP for non-projective languages is much faster and more accurate than the hill-climbing method.
+    Also, hill-climbing only produces an (approximate) 1-best parse, but BP also obtains (approximate) marginals of the distribution over all parses.
+    Given the BP architecture, do we even need the hard TREE constraint?
+    Or would it suffice for more local hard constraints to negotiate locally via BP?
+    We investigated this for non-projective first-order parsing.
+    Table 3 shows that global constraints are indeed important

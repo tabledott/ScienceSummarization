@@ -1,0 +1,9 @@
+ occurs with equal frequency in a corpus, and so the prior probabilities exhibit a uniform, uninformative distribution.
+    Then a corpus with an average polysemy of 5, and 2 senses marked correct on each ambiguous token, will have a baseline not less than 40%.
+    However, one with an average polysemy of 2, and only a single sense on each, will have a baseline of at least 50%.
+    Test corpora in which each ambiguous token has exactly two senses were used by Brown et al. (1991), Yarowsky (1995) and others.
+    Our system was tested using a technique known as 10-fold cross validation.
+    This process is carried out by splitting the available data into ten roughly equal subsets.
+    One of the subsets is chosen as the test data and the TiMBL algorithm is trained on the remainder.
+    This is repeated ten times, so that each subset is used as test data exactly once, and results are averaged across all of the test runs.
+    This technique provides two advantages: first, the best use can be made of the available

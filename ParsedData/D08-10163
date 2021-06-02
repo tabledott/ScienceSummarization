@@ -1,0 +1,8 @@
+s input features from the full 1-best output of another parser.
+    In our method, a first-order parser derives such input features from its own previous full output (but probabilistic output rather than just 1best).
+    This circular process is iterated to convergence.
+    Our method also permits the parse to interact cheaply with other variables.
+    Thus first-order parsing, part-of-speech tagging, and other tasks on a common input could mutually influence one another.
+    Our method and its numerical details emerge naturally as an instance of the well-studied loopy BP algorithm, suggesting several potential future improvements to accuracy (Yedidia et al., 2004; Braunstein et al., 2005) and efficiency (Sutton and McCallum, 2007).
+    Loopy BP has occasionally been used before in NLP, with good results, to handle non-local features (Sutton and McCallum, 2004) or joint decoding (Sutton et al., 2004).
+    However, our application to parsing requires an innovation to BP that we explain in &#167;5&#8212;a globa

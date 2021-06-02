@@ -1,0 +1,6 @@
+CF production may be augmented with a set of tests (which perform similar types of operations to those available in a unification grammar).
+    At parse time, whenever a sequence of constituents is about to be reduced into a higher-level constituent using a production, the augmentation associated with the production is invoked to check syntactic or semantic constraints such as agreement, pass attribute values between constituents, and construct a representation of the higher-level constituent.
+    (This is the standard approach to parsing with attribute grammars).
+    The parser is driven by an LR parse table; however, the table is constructed solely from the CF portion of the grammar, and so none of the extra information embodied in the augmentations is taken into account during its construction.
+    Thus the predictive power of the parser to select the appropriate rule given a specific parse history is limited to the CF portion of the grammar, which must be defined manually by the grammar writer.
+    This r

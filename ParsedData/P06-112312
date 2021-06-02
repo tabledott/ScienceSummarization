@@ -1,0 +1,8 @@
+ext and both sides of each English/English bitext using an off-the-shelf syntactic parser (Bikel, 2004), which was trained on sections 02-21 of the Penn English Treebank (Marcus et al., 1993).
+    Our bilingual bitexts came with manually annotated word alignments.
+    For the monolingual bitexts, we used an automatic word aligner based on a cognate heuristic and a list of 282 function words compiled by hand.
+    The aligner linked two words to each other only if neither of them was on the function word list and their longest common subsequence ratio (Melamed, 1995) was at least 0.75.
+    Words that were not linked to another word in this manner were linked to NULL.
+    For the purposes of this study, a word aligned to NULL is a non-constraint, because it can always be composed without a gap with some constituent that is adjacent to it on just one side of the bitext.
+    The number of automatically induced non-NULL links was lower than what would be drawn by hand.
+    We modified the word alignments in all bit

@@ -1,0 +1,8 @@
+to the next, and less weight to columns that are uniform.
+    Therefore we weight the cell xi,j by wj = 1 &#8722; Hj/ log(m), which varies from 0 when pi,j is uniform to 1 when entropy is minimal.
+    We also apply the log transformation to frequencies, log(xi,j + 1).
+    (Entropy is calculated with the original frequency values, before the log transformation is applied.)
+    For all i and all j, replace the original value xi,j in X by the new value wj log(xi,j + 1).
+    This is an instance of the Term Frequency-Inverse Document Frequency (TF-IDF) family of transformations, which is familiar in information retrieval (Salton and Buckley 1988; Baeza-Yates and Ribeiro-Neto 1999): log(xi,j + 1) is the TF term and wj is the IDF term. approximates the original matrix X, in the sense that it minimizes the &#65533; &#65533; approximation errors.
+    That is, X&#710; = UkEkVT k minimizes &#65533; X&#710; &#8722; X &#65533;F over all matrices X&#710; of rank k, where 11. .
+    .&#65533;F denotes the Frobenius norm (Gol

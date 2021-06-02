@@ -1,0 +1,9 @@
+ramming structures per sentence.
+    The final column gives the value of the function 100*L1.5 where L is the average length of sentences in the bucket.
+    Except for bucket 6, which is abnormally low, it seems that this add-hoc function tracks the number of structures quite well.
+    Thus the number of dynamic programming states does not grow as L2, much less as L3.
+    To put the number of these structures per sentence in perspective, consider the size of such structures.
+    Each one must contain a probability, the nonterminal label of the structure, and a vector of pointers to it&#8217;s children (an average parent has slightly more than two children).
+    If one were concerned about every byte this could be made quite small.
+    In our implementation probably the biggest factor is the STL overhead on vectors.
+    If we figure we are using, say, 25 bytes per structure, the total space required is only 1.25Mb even for 50,000 dynamic programming states, so it is clearly not worth worrying about the memory 

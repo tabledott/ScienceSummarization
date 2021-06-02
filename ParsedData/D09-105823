@@ -1,0 +1,6 @@
+   In addition, Table 4 shows the performance of our proposed method using 3.72 billion tokens of unlabeled data.
+    Note, however, that the gain in performance as unlabeled data is added is not as sharp as might be hoped, with a relatively modest difference in performance for 43.4 million tokens vs. 3.72 billion tokens of unlabeled data.
+    The main computational challenge in our approach is the estimation of the generative models q = (qi ... qk) from unlabeled data, particularly when the amount of unlabeled data used is large.
+    In our implementation, on the 43M token BLLIP corpus, using baseline features, it takes about 5 hours to compute the expected counts required to estimate the parameters of the generative models on a single 2.93GHz Xeon processor.
+    It takes roughly 18 days of computation to estimate the generative models from the larger (3.72 billion word) corpus.
+    Fortunately it is simple to parallelize this step; our method takes a few hours on the larger data set when parallelized across

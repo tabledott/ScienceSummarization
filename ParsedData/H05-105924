@@ -1,0 +1,9 @@
+second-order model is sufficient because further increase of n has little impact on per formance.
+			Thus the training typically takes four or 16 times as much time as it would take for training a single unidirectional tagger, which looks somewhatexpensive.
+			However, because each type of classi fier can be trained independently, the training can be performed completely in parallel and run with the same amount of memory as that for training a single classifier.
+			This advantage contrasts with the case for CRFs which requires substantial amount ofmemory and computational cost if one tries to incor porate higher-order features about tag sequences.
+			Tagging speed is another important factor inbuilding a practical tagger for large-scale text min 473 ing.
+			Our inference algorithm with the easiest-first strategy needs no Viterbi decoding unlike MEMMs and CRFs, and makes it possible to perform very fast tagging with high precision.
+	
+	
+			We have presented a bidirectional inference algo rithm for sequence labe

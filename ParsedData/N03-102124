@@ -1,0 +1,12 @@
+ its minimizing decomposition.
+    The cardinality of a production is bounded by its rank, as Table 1 shows for the 2D case.
+    Finally, the cardinality C(G) of an MTG G is the maximum of the cardinalities of its productions.
+  
+  
+    Parser A is a parser for arbitrary MTGs.
+    It initializes its chart and fires Y inferences just like Parser R2A.
+    It then composes pairs of items into larger items using inference rule A.0 (see below).
+    Just like items in ordinary parsers, Parser A items need to know their positions in the input multitext, but not their internal structure.
+    However, items with discontinuities need to remember all their boundaries, not just the outermost ones.
+    Expanding on Johnson (1985), we define a discontinuous span (or dspan, for short) as a list of zero or more intervals In addition, we say that a d-span is in normal form if all the inequalities between ri and 4+1 are strict, i.e. there is a gap between each pair of consecutive intervals.
+    Now, a hedge item X(a) in Parser

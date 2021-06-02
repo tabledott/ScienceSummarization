@@ -1,0 +1,7 @@
+e n-best candidate translations are the basis for discriminative training of the model parameters and for re-ranking.
+    We used n-best reranking rather than implementing new search algorithms.
+    The development of efficient search algorithms for long-range dependencies is very complicated and a research topic in itself.
+    The reranking strategy enabled us to quickly try out a lot of new dependencies, which would not have been be possible if the search algorithm had to be changed for each new dependency.
+    On the other hand, the use of n-best list rescoring limits the possibility of improvements to what is available in the n-best list.
+    Hence, it is important to analyze the quality of the n-best lists by determining how much of an improvement would be possible given a perfect reranking algorithm.
+    We computed the oracle translations, that is, the set of translations from our n-best list that yields the best BLEU score.1 We use the following two methods to compute the BLEU score of an oracle trans

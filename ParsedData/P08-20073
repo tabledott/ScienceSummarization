@@ -1,0 +1,11 @@
+ framework of Koehn et al.
+    (2003).
+    For a weighted sentence pair (e, f, &#966;), let the score of an alignment be the product of its link scores: Four related problems involving scored alignments arise when training phrase alignment models.
+    OPTIMIZATION, O: Given (e, f, &#966;), find the highest scoring alignment a.
+    DECISION, D: Given (e, f, &#966;), decide if there is an alignment a with &#966;(a) &gt; 1.
+    O arises in the popular Viterbi approximation to EM (Hard EM) that assumes probability mass is concentrated at the mode of the posterior distribution over alignments.
+    D is the corresponding decision problem for O, useful in analysis.
+    EXPECTATION, &#163;: Given a weighted sentence pair (e, f, &#966;) and indices i, j, k,l, compute Ea &#966;(a) over all a E A such that (eij, fkl) E a.
+    SUM, S: Given (e, f, &#966;), compute EaEA &#966;(a).
+    &#163; arises in computing sufficient statistics for re-estimating phrase translation probabilities (Estep) when training models.
+    The e

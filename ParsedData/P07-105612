@@ -1,0 +1,9 @@
+ predictive features from the target domain do not appear in the source domain.
+    To show how SCL deals with those domain mismatches, we look at the adaptation from book reviews to reviews of kitchen appliances.
+    We selected the top 1000 most informative features in both domains.
+    In both cases, between 85 and 90% of the informative features from one domain were not among the most informative of the other domain4.
+    SCL addresses both of these issues simultaneously by aligning features from the two domains.
+    Table 2 illustrates one row of the projection matrix 0 for adapting from books to kitchen appliances; the features on each row appear only in the corresponding domain.
+    A supervised classifier trained on book reviews cannot assign weight to the kitchen features in the second row of table 2.
+    In contrast, SCL assigns weight to these features indirectly through the projection matrix.
+    When we observe the feature &#8220;predictable&#8221; with a negative book review, we update parameter

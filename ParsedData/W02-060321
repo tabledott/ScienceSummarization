@@ -1,0 +1,5 @@
+ught of as the negative logarithm of a conditional probability P(L|M).
+    This indicates the probability that a morph M is a realisation of a morpheme represented by the label L. Put another way, if the unsupervised segmentation algorithm discovers morphs that are allomorphs of real morphemes, a particular allomorph will ideally always be aligned with the same (correct) morphemic label, which leads to a high probability P(L|M), and a short distance d(M, L)4.
+    In contrast, if the segmentation algorithm does not discover meaningful morphs, each of the segments will be aligned with a number of different morphemic labels throughout the corpus, and as a consequence, the probabilities will be low and the distances high.
+    We then utilize the EM algorithm for iteratively improving the alignment.
+    The initial alignment that is used for computing initial distance values is obtained through a string matching procedure: String matching is efficient for aligning the stem of the word with the base form (e.g., the

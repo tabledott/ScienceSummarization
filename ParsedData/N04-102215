@@ -1,0 +1,8 @@
+eni et al., 2001).
+    In case of the other metrics, we consider multiple references in the following way.
+    For each sentence, we compute the error rate of the hypothesis translation with respect to the most similar reference translation under the corresponding loss function.
+    In our experiments, a baseline translation model (JHU, 2003), trained on a Chinese-English parallel corpus (NIST, 2003) ( English words and Chinese words), was used to generate 1000-best translation hypotheses for each Chinese sentence in the test set.
+    The 1000-best lists were then rescored using the different translation loss functions described in Section 2.
+    The English sentences in the -best lists were parsed using the Collins parser (Collins, 1999), and the Chinese sentences were parsed using a Chinese parser provided to us by D. Bikel (Bikel and Chiang, 2000).
+    The English parser was trained on the Penn Treebank and the Chinese parser on the Penn Chinese treebank.
+    Under each loss function, the MBR decoding was 
